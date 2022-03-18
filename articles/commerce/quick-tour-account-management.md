@@ -5,7 +5,7 @@ title: Account management pages overview
 description: This topic provides an overview of account management pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 09/15/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
 # ms.tgt_pltfrm: 
-# ms.custom: 
+
 ms.search.region: Global
 ms.search.industry: 
 ms.author: anupamar
@@ -38,7 +38,7 @@ When a customer signs in and selects **My Account**, the account management land
 
 The following illustration shows an example of the account management landing page.
 
-![Example of an account management landing page](./media/Account-Management.PNG)
+![Example of an account management landing page.](./media/Account-Management.PNG)
 
 ### My profile page
 
@@ -46,7 +46,7 @@ The **My profile** page shows customer's account information, such as name and p
 
 The following illustration shows an example of a **My profile** page that was built by using the module library.
 
-![Example of a My profile page](./media/Account-Management-MyProfile.PNG)
+![Example of a My profile page.](./media/Account-Management-MyProfile.PNG)
 
 ### Addresses page
 
@@ -54,7 +54,7 @@ The **Addresses** page lets the customer add addresses to their account. It also
 
 The following illustration shows an example of the **Addresses** page.
 
-![Example of an Addresses page](./media/Account-Management-Address.png)
+![Example of an Addresses page.](./media/Account-Management-Address.png)
 
 ### Order history and Order details pages
 
@@ -62,11 +62,11 @@ The **Order history** page shows a summary of all orders that the customer has s
 
 The following illustration shows an example of the **Order history** page.
 
-![Example of an Order history page](./media/Account-Management-OrderHistory.PNG)
+![Example of an Order history page.](./media/Account-Management-OrderHistory.PNG)
 
 The following illustration shows an example of the **Order details** page.
 
-![Example of an Order details page](./media/Account-Management-OrderDetails.PNG)
+![Example of an Order details page.](./media/Account-Management-OrderDetails.PNG)
 
 ### Loyalty program page
 
@@ -74,7 +74,7 @@ The **Loyalty program** page lets the customer become a member of a loyalty prog
 
 The following illustration shows an example of a **Loyalty program** page.
 
-![Example of a Loyalty program page](./media/Account-Management-Loyalty.PNG)
+![Example of a Loyalty program page.](./media/Account-Management-Loyalty.PNG)
 
 ### Wishlist page
 
@@ -82,7 +82,7 @@ The **Wishlist** page shows a list of the items that the customer has added to t
 
 The following illustration shows an example of a **Wishlist** page.
 
-![Example of a Wishlist page](./media/Account-Management-Wishlist.PNG)
+![Example of a Wishlist page.](./media/Account-Management-Wishlist.PNG)
 
 For more information about account management modules and how to author them, see [Account Management](account-management.md).
 

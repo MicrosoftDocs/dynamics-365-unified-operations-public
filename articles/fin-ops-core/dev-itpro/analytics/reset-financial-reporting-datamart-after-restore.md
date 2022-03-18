@@ -45,7 +45,7 @@ To find the version of report designer, watch this video: [How to find the versi
 
 To reset the data mart, in Report designer, on the **Tools** menu, select **Reset Data Mart** as shown in the following illustration. The dialog box that appears has two sections: **Statistics** and **Reset**.
 
-[![Reset Data Mart dialog box](./media/Reset-72.jpg)](./media/Reset-72.jpg)
+[![Reset Data Mart dialog box.](./media/Reset-72.jpg)](./media/Reset-72.jpg)
 
 ##### Integration attempts
 
@@ -67,7 +67,7 @@ If you determine that a data mart reset is required, select the **Reset data mar
 - **Restore database** – The database was restored, but the database for the Financial reporting data mart wasn't restored.
 - **Other** – You're resetting the data mart for another reason. If you're concerned that there is an issue, contact Support to identify it.
 
-[![Reset data mart](./media/Integration.png)](./media/Integration.png)
+[![Reset data mart.](./media/Integration.png)](./media/Integration.png)
 
 > [!NOTE]
 > Verify that all data mart reset tasks have completed an initial load before you begin a reset. You can confirm this by looking for a value in the Last Runtime column by selecting **Tools** &gt; **Integration status**.
@@ -80,7 +80,7 @@ When you're ready to start the reset process, select **OK**. You're prompted to 
 
 If you want to review the status of the integration, select **Tools** &gt; **Integration status** to see the last time that the integration was run and the status.
 
-[![View the status of the integration](./media/New-integration.PNG)](./media/New-integration.PNG)
+[![View the status of the integration.](./media/New-integration.PNG)](./media/New-integration.PNG)
 
 > [!NOTE]
 > The reset is finished when all mappings show a status of **RanToCompletion**, and an "Integration complete" message appears in the lower-left corner of the **Integration Status** dialog box.
@@ -559,7 +559,7 @@ Before getting started, be sure that all users close Report designer and exit th
 -- Attempt to delete integrated users
 	DECLARE @userId nvarchar(max)
 	DECLARE removeUserCursor CURSOR LOCAL FAST_FORWARD FOR
-	select UserID from Reporting.SecurityUser su join Reporting.SecurityUserIntegration sui on su.UserID = sui.ID
+	select UserID from Reporting.SecurityUser where UserID <> '00000000-0000-0000-0000-000000000002'
 	OPEN removeUserCursor
 	FETCH NEXT FROM removeUserCursor INTO @userId
 	WHILE @@FETCH_STATUS = 0

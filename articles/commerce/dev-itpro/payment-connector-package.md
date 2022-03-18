@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom:
 ms.assetid:
@@ -50,7 +50,7 @@ To create a payment package that you can deploy, follow the steps in the next se
 
     The model name must be prefixed with (that is, start with) **RetailPaymentConnectors**. After this prefix, add information about the custom model name. For example, the model that you create might be named **RetailPaymentConnectorsCustomConnector**. Only model names that begin with the **RetailPaymentConnectors** prefix will be loaded in the Commerce payment connector options.
 
-    ![Add parameters page in the Create model wizard](./media/CreateModel.png)
+    ![Add parameters page in the Create model wizard.](./media/CreateModel.png)
 
 3. Select the **Create new package** option, and then select **Next**.
 4. Select the required referenced package, and then select **Next**.
@@ -58,7 +58,7 @@ To create a payment package that you can deploy, follow the steps in the next se
 6. In Solution Explorer, select the project, right-click **References**, and then select **Add Reference**.
 7. Add all the payment connector assemblies and their dependencies to the project as references.
 
-    ![Add Reference dialog box](./media/Reference.png)
+    ![Add Reference dialog box.](./media/Reference.png)
     
 [!NOTE]
 > All payment connector dll’s must be portable, having portable and non-portable payment connector dll’s will cause issues when loading the connector.
@@ -83,7 +83,7 @@ https://AOSUrl/resources/styles/Mycss.css
 11. Select the model that you created earlier, specify the location of the package file, and then select **Create**.
 
 
-    ![Create Deployment Package dialog box](./media/Create.png)
+    ![Create Deployment Package dialog box.](./media/Create.png)
 
     Visual Studio builds the model and creates the deployable package.
 

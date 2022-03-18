@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Evaluate the initial customer payment prediction model (preview)
+title: Evaluate the initial customer payment prediction model
 description: This topic describes the steps that you can take to understand the customer payment prediction model and evaluate its effectiveness. 
 author: ShivamPandey-msft
-ms.date: 06/03/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -27,10 +27,9 @@ ms.dyn365.ops.version: AX 10.0.8
 
 ---
 
-# Evaluate the initial customer payment prediction model (preview)
+# Evaluate the initial customer payment prediction model
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic explains how to evaluate a prediction model after you've turned on Finance Insights and then generated and trained your first model. This topic addresses models for predicting customer payments. It describes the steps that you can take to understand the customer payment prediction model and evaluate its effectiveness.
 
@@ -38,32 +37,32 @@ This topic explains how to evaluate a prediction model after you've turned on Fi
 
 On the **Finance Insights parameters** page in Microsoft Dynamics 365 Finance, an **Improve model accuracy** link appears next to the accuracy score.
 
-[![Improve model accuracy link](./media/prediction-model.png)](./media/prediction-model.png)
+[![Improve model accuracy link.](./media/prediction-model.png)](./media/prediction-model.png)
 
 This link takes you to AI Builder, where you can learn more about the current model and also take steps to improve it. The following illustration shows the page that is opened.
 
-[![AI Builder](./media/what-to-predict.png)](./media/what-to-predict.png)
+[![AI Builder.](./media/what-to-predict.png)](./media/what-to-predict.png)
 
 The page that is opened shows the following information:
 
 - In the **Performance** section, the model performance grade provides perspective on the quality of the model. For more information about this grade, see [Prediction model performance](/ai-builder/prediction-performance) in the AI Builder documentation.
 - The **Most influential data** section shows how important different input types of data were for your model. You can evaluate this list and the corresponding percentages to determine whether the information is consistent with what you know about your business and market.
 
-    [![Performance and Most influential data sections for the prediction model](./media/models.png)](./media/models.png)
+    [![Performance and Most influential data sections for the prediction model.](./media/models.png)](./media/models.png)
 
 - In the **Performance** section, select **See details** to learn more about the grade and other considerations. In the following illustration, the details show that the model uses less information than is recommended. Therefore, the system has generated a warning message.
 
-    [![Warnings about the model's performance](./media/details.png)](./media/details.png)
+    [![Warnings about the model's performance.](./media/details.png)](./media/details.png)
 
 ## Digging deeper
 
 Although accuracy is a good starting point for evaluating a model, and the performance grade provides perspective, AI Builder provides more detailed metrics that you can use for your evaluation. To download the details, in the **Performance** section, select the ellipsis button (**...**) next to the **Use model** button, and then select **Download detailed metrics**.
 
-[![Download detailed metrics command](./media/performance.png)](./media/performance.png)
+[![Download detailed metrics command.](./media/performance.png)](./media/performance.png)
 
 The following illustration shows the format that you can download the data in.
 
-[![Format of downloaded data](./media/data-format.png)](./media/data-format.png)
+[![Format of downloaded data.](./media/data-format.png)](./media/data-format.png)
 
 For a deeper analysis of the results, a good starting point is to review the "Confusion Matrix" metric. For example, here is the data that is shown for this metric in the previous illustration.
 

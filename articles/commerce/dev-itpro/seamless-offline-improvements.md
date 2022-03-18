@@ -3,7 +3,7 @@
 
 title: Seamless offline switch for gift card and credit memo operations
 description: This topic provides an overview of improvements that provide a seamless offline switch for specific payment types. 
-author: rubendel
+author: BrianShook
 ms.date: 02/11/2020
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 141393
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 20120-02-28
 ms.dyn365.ops.version: 10.0.8
 
@@ -41,7 +41,7 @@ However, if the POS loses connectivity after a gift card has been added to a tra
 
 To enable the functionality to conclude gift card transactions after switching to offline mode, go to the **Posting** tab on the **Commerce parameters** page. On that tab, locate the **Gift card** fasttab and set **Allow concluding gift card transactions in offline mode** to **Yes**.
 
-![Offline gift card setting](../media/gift.png)
+![Offline gift card setting.](../media/gift.png)
 
 Commerce parameters are typically cached. Therefore, after the setting of this parameter is updated, and the distribution schedule is initiated to sync the change to the channel, the change can take up to 24 hours to take effect. To make the change effective immediately, reset Microsoft Internet Information Services (IIS).
 
@@ -51,7 +51,7 @@ Like internal gift cards, credit memos are centrally maintained in Commerce Head
 
 To enable the functionality to conclude credit memo transactions after switching to offline mode, go to the **Posting** tab on the **Commerce parameters** page. On that tab, locate the **Credit memo** fasttab and set **Allow concluding credit memo transactions in offline mode** to **Yes**.
 
-![Offline credit memo setting](../media/creditmemo.png)
+![Offline credit memo setting.](../media/creditmemo.png)
 
 Commerce parameters are typically cached. Therefore, after the setting of this parameter is updated, and the distribution schedule is initiated to sync the change to the channel, the change can take up to 24 hours to take effect. To make the change effective immediately, reset IIS.
 

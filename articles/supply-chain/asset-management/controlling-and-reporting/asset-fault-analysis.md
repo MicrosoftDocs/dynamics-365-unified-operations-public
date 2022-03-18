@@ -65,7 +65,7 @@ In the screenshot below, only the **Symptom** button is selected.
 - Fault registrations have been made on three fault symptoms: "Air leak", "Blown fuse", and "Equipment jammed".  
 - In the **Probability %** column, all percentages add up to 100%. Probability is based on all **Symptom** registrations in this fault analysis.
 
-![Figure 1](media/06-controlling-and-reporting.png)
+![Figure 1.](media/06-controlling-and-reporting.png)
 
 ### Group by symptoms and time period
 
@@ -74,7 +74,7 @@ In the screenshot below, **Year** and **Month** are added to show how you can vi
 - The fault symptoms are now shown as registrations per year/month.  
 - In the **Probability %** column, if you add all percentages for each month, they add up to 100%. Probability is based on the **Symptom** registrations in this fault analysis. If you have a large number of lines on an asset, but a large percentage stands out on a line, that would be an indication of a fault symptom to examine more closely to find a way to limit the number of registrations for that fault symptom.
 
-![Figure 2](media/07-controlling-and-reporting.png)
+![Figure 2.](media/07-controlling-and-reporting.png)
 
 ### Group by multiple symptoms and assets
 
@@ -89,7 +89,7 @@ In the screenshot below, **Asset** and **Asset type** were added to provide more
 - The fault symptoms are now split up in **Asset** / **Asset type** / **Symptom** combinations.  
 - In the **Probability %** column, if you add all percentages for the combination of **Asset** / **Asset type** / **Symptom** respectively, they each add up to 100%. Probability is based on **Symptom** registrations in this fault analysis. If you have a large number of lines on an asset, but a large percentage stands out on a line, that would be an indication of a fault symptom to examine more closely to find a way to limit the number of registrations for that fault symptom.
 
-![Figure 3](media/08-controlling-and-reporting.png)
+![Figure 3.](media/08-controlling-and-reporting.png)
 
 **Group by two symptoms, asset, and asset type**
 
@@ -97,7 +97,7 @@ In the screenshot below, **Area** was added to **Symptom**, **Asset**, and **Ass
 
 - In the **Probability %** column, if you add all percentages for the combination of **Asset** / **Asset type** / **Symptom** on an asset, they each add up to 100%. Probability is based on the combination of **Symptom** and **Area** in this fault analysis. If you have a large number of lines on an asset, but a large percentage stands out on a line, that would be an indication of a fault area to examine more closely to find a way to limit the number of registrations for that fault area.  
 
-![Figure 4](media/09-controlling-and-reporting.png)
+![Figure 4.](media/09-controlling-and-reporting.png)
 
 **Group by three symptom, asset, and asset type**
 
@@ -105,7 +105,7 @@ In the screenshot below, **Type** was added, and the most detailed calculation i
  
 - In the **Probability %** column, if you add all percentages for the combination of **Asset** / **Asset type** / **Symptom** on an asset, they each add up to 100%. Probability is based on the combination of **Symptom**, **Area**, and **Type** in this fault analysis. If you have a large number of lines on an asset, but a large percentage stands out on a line, that would be an indication of a fault type to examine more closely to find a way to limit the number of registrations on that fault type.
 
-![Figure 5](media/10-controlling-and-reporting.png)
+![Figure 5.](media/10-controlling-and-reporting.png)
 
 
 >[!NOTE]

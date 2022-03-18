@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer 
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 14241
 ms.assetid: c70933b1-3d6a-4e26-b9ef-d9fb1e1b29a3
@@ -38,7 +38,7 @@ This article provides information about the List Page form pattern. A list page 
 A list page presents a set of data on a user interface that is optimized so that you can browse records, find the right record, and then take an action upon that record. The list page lets the user search, filter, and sort the data. FactBoxes on the right side of the grid show related data for the active record. Actions that are relevant to the record are located on the ActionPane at the top of the page. The use of this pattern is now discouraged when there is a 1:1 correspondence between the List Page and Details page. Current guidance is to use this pattern only in other situations, such as when list pages have no backing details pages or have multiple backing details page (for example, when project quotations and sales quotations are shown together in the same List Page).
 
 ## Wireframe
-[![Wireframe](./media/listpage1-1024x576.png)](./media/listpage1.png)
+[![Wireframe.](./media/listpage1-1024x576.png)](./media/listpage1.png)
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
@@ -108,7 +108,7 @@ The verification checklist shows the steps for manually verifying that the form 
 -   **FactBox** guidelines have been consolidated into the [FactBox Form Patterns](factbox-form-patterns.md) document.
 
 ## Examples
-Form: **SalesTableListPage** [![List Page example](./media/listpage2-1024x510.png)](./media/listpage2.png)
+Form: **SalesTableListPage** [![List Page example.](./media/listpage2-1024x510.png)](./media/listpage2.png)
 
 ## Appendix
 ### Frequently asked questions
@@ -140,7 +140,7 @@ This section will have answers to frequently asked questions that are related to
 
 #### AX 2012 example
 
-[![Example](./media/listpage3-1024x671.png)](./media/listpage3.png)
+[![Example.](./media/listpage3-1024x671.png)](./media/listpage3.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

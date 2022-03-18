@@ -20,6 +20,7 @@ audience: Application User
 # ms.assetid:
 ms.search.region: Global
 # ms.search.industry:
+ms.custom: intro-internal
 ms.author: anbichse
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Talent July 2017 update
@@ -33,7 +34,7 @@ By using Microsoft Dynamics 365 Talent: Onboard, you can help your new employees
 
 Onboard lets you quickly create an onboarding guide that will welcome your new hires and make them excited about joining your organization.
 
-[![Onboarding guide](./media/onboard-onboarding-guide.png)](./media/onboard-onboarding-guide.png)
+[![Onboarding guide.](./media/onboard-onboarding-guide.png)](./media/onboard-onboarding-guide.png)
 
 To learn how to get and use the Onboard app, see the following topics:
 

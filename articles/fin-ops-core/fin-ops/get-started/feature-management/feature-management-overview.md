@@ -1,10 +1,10 @@
 ---
 # required metadata
 title: Feature management overview
-description: This topic describes the Feature management feature and how you can use it.
-author: ChrisGarty
-ms.date: 10/05/2020
-ms.topic: article
+description: This topic describes Feature management and how you can use it.
+author: Peakerbl
+ms.date: 01/10/2022
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -15,10 +15,10 @@ audience: IT Pro, Application user
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+
 ms.search.region: Global 
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: cgarty
+ms.author: peakerbl
 ms.search.validFrom: [month/year of release that feature was introduced in, in format yyyy-mm-dd]
 ms.dyn365.ops.version: 10.0.2
 ---
@@ -27,82 +27,116 @@ ms.dyn365.ops.version: 10.0.2
 
 [!include [banner](../../includes/banner.md)]
 
-Features are added and updated in every release. The Feature management experience provides a workspace where you can view a list of features that have been delivered in each release. By default, new features are turned off. You can use the workspace to turn them on and view the documentation for them.
+
+[!INCLUDE [PEAP](../../../../includes/peap-1.md)]
+
+Features are added and updated in every release. The Feature management experience provides a workspace where you can view a list of features that have been delivered in each release. You can then use the workspace to view feature documentation, and to enable or disable features.
 
 ## The Feature management workspace
 
-You can open the **Feature management** workspace by selecting the appropriate tile on the dashboard. You will see a page that shows a list of features for all releases that are supported by the Feature management experience. Over time, Microsoft will enhance the Feature management experience so that it includes more functionality to help you manage features.
+You can open the **Feature management** workspace by selecting the appropriate tile on the dashboard. You will see a page that shows a list of features for all releases that are supported by the Feature management experience. 
 
 The feature list includes the following information:
 
 - **Feature name** – A description of the feature that was added.
-- **Enabled status** – A symbol indicates whether a feature has been turned on (check mark), hasn't been turned on (blank), is scheduled to be turned on (clock), is mandatorily turned on (lock), requires attention before you turn it on (warning), or can't be enabled (X). The setting that is shown is used for all legal entities. Note that even when a feature has been turned on, it's still controlled by security. Therefore, the feature will be available only to users who have access to it, based on their security role. It will also be available only in legal entities that the user has access to.
+- **Status** – A symbol indicates whether a feature is turned on (check mark), is turned off (blank), is scheduled to be turned on (clock), is mandatory (lock), requires attention before you turn it on (warning symbol), or can't be turned on (X). The setting that is shown is used for all legal entities. Note that even when a feature has been turned on, it's still controlled by security. Therefore, the feature will be available only to users who have access to it based on their security role. It will also be available only in legal entities that the user has access to.
 - **Enable date** – The date when the feature was turned on or is scheduled to be turned on.
 - **Feature added** – The date when the feature was added to your environment. This date is automatically entered when you update your environment during the monthly release cycles.
+- **Feature state** – The current lifecycle state of the feature: **Preview**, **Released** (shown as blank), **On by default**, and **Mandatory**. The states are covered in more details later in this topic. 
 - **Module** – The module that is affected by the new feature.
+
+> [!NOTE]
+> The **Feature state** column is included as of version 10.0.21.
 
 When you select a feature, more information appears in the details pane to the right of the feature list. At the top of the pane, you will see the feature name, the date when the feature was added, the module that is affected by the feature, and a **Learn more** link. Select this link to view the documentation for the feature. If documentation isn't available, you're taken to a temporary page. The details pane also includes a **Comments** field where you can add your own comments about the feature.
 
 The **Feature management** workspace also has several tabs, each of which shows a list of features.
 
 - **New** – This tab shows all features that have been added since the last monthly update. If you've skipped any monthly updates, the tab shows all the new features that have been added since the last time that you updated. The newest features appear at the top of the list. The total number of new features is also shown on a tile at the top of the page.
-- **Not enabled** – This tab shows all features that haven't been turned on. The newest features appear at the top of the list. The total number of new features that haven't been turned on is also shown on a tile at the top of the page.
-- **Scheduled** – This tab shows all features that have been scheduled to be turned on in the future. The features that have the earliest scheduled date appear at the top of the list. The total number of schedule new features is also shown on a tile at the top of the page.
+- **Not enabled** – This tab shows all features that aren't turned on. The newest features appear at the top of the list. In addition, a tile at the top of the page shows the total number of new features that are currently off.
+- **Scheduled** – This tab shows all features that have been scheduled to be turned on in the future. The features that have the earliest scheduled date appear at the top of the list. In addition, a tile at the top of the page shows the total number of scheduled features.
 - **All** – This tab shows all features. The newest features appear at the top of the list.
 
-## Turn on a feature
+## Feature states
+Features can transition between several states, from being introduced in Feature management to eventually becoming mandatory in the product. This section describes the valid feature states.
 
-If a feature hasn't been turned on, an **Enable Now** button appears in the details pane. You can use this button to turn on the feature.
+### Preview features (optional)
 
-- Select the feature to turn on, and then, in the details pane, select **Enable Now**. The feature is turned on.
+Product teams can decide to initially start a new feature as a preview feature. Preview features aren't enabled by default, and they are optional. The owning product team will update features to released after they have completed a successful preview period.
 
-Some features can't be turned off after you turn them on. If the feature that you're trying to turn on can't be turned off, you receive a warning. At that point, you can select **Cancel** to cancel the operation and leave the feature turned off. However, if you select **Enable** to turn on the feature, you won't be able to turn it off later.
+> [!NOTE]
+> Preview features are subject to specific preview [terms and conditions](https://go.microsoft.com/fwlink/?linkid=2105274). 
 
-Some features will display a message that provides additional information before you turn them on. These features are indicated by a yellow warning symbol. You should read the additional information carefully to better understand what will happen when the feature is enabled. However, you can still select **Enable** to turn on the feature.
+### Released features (optional)
+
+The **Feature state** column for these features is blank. Features that are initially added as released aren't turned on by default, and enabling them is optional. Features that are updated from preview will keep their enablement status.
+
+### On by default features (optional)
+
+Features that are updated to **On by default** are turned on by default, but they can be disabled. After features that can be disabled have been in the **Released** state for at least six months, they are expected to move to this state in the next major release. Features that transition to **On by default** are expected to be communicated in the [What's new](../whats-new-changed.md) topic for the release. The update is initiated by the owning product team.
+
+> [!NOTE]
+> Because these features will be enabled automatically, it's important that you determine whether your organization is ready to uptake these features, or whether more time is required. If more time is required, it might be necessary to temporarily disable these features. Note that the transition of a feature to **On by default** is typically done in the major release before the feature is targeted to become **Mandatory**. At that point, you won't have the option to disable the feature. 
+
+### Mandatory
+
+**Mandatory** is the expected final state for features. It indicates that the features are turned on, and that you can't disable them without contacting Microsoft. Optional features are expected to become mandatory after two major releases. Critical features can, by exception, be introduced as mandatory.
+
+## Example of expected feature lifecycles
+
+Features that can be disabled, and that were added as released and optional before or as part of the April release, are expected to transition to **On by default** in the following October release. They are then expected to become **Mandatory** in April of the following year.
+
+Feature that can't be disabled, and that were added as released and optional before or as part of the April release, are expected to transition to **Mandatory** in April of the following year.
+
+## Enable a feature
+
+If a feature hasn't been turned on, an **Enable now** button appears in the details pane. You can use this button to enable the feature.
+
+Some features can't be disabled after you enable them. If the feature that you're trying to turn on can't be enabled, you will receive a warning. At that point, you can select **Cancel** to cancel the operation and leave the feature disabled. However, if you select **Enable** to enable the feature, you won't be able to disable it later.
+
+Some features will display a message that provides additional information before you enable them. These features are indicated by a yellow warning symbol. You should read the additional information carefully, to ensure that you understand what will happen when the feature is enabled. However, you can still select **Enable** to enable the feature.
 
 Some features will display a message that the feature can't be enabled until an action is taken. These features are indicated by a red X symbol. You must take the actions described in the description before the feature is enabled. For example, if you can't use a feature until a configuration key is disabled, then you must disable the configuration key first and then return to Feature management to enable the feature.
 
-After a feature is turned on, a message appears below the **Learn more** link in the details pane. This message either states that the feature was turned on or it indicates that the future date when the feature is scheduled to be turned on. It appears every time that you select the feature in the feature list.
+After a feature is enabled, a message appears below the **Learn more** link in the details pane. This message either states that the feature was enabled or indicates the future date when the feature is scheduled to be enabled. It appears every time that you select the feature in the feature list.
 
-Features that are scheduled to be turned on in the future appear on the **Scheduled** tab. A batch process will turn them on at midnight on the specified date, based on the time zone that is represented by the system date.
+Features that are scheduled to be enabled in the future appear on the **Scheduled** tab. A batch process will enable them at midnight on the specified date, based on the time zone that is represented by the system date.
 
 ## Reschedule a feature
 
-If a feature has been scheduled to be turned on in the future, a **Schedule** button appears in the details pane. You can use this button to change the **Enable date** value to a different date.
+If a feature has been scheduled to be enabled in the future, a **Schedule** button appears in the details pane. You can use this button to change the **Enable date** value to a different date.
 
 1. Select the scheduled feature to reschedule, and then, in the details pane, select **Schedule**.
-2. In the dialog box that appears, in the **Enable date** field, specify the new date when the feature should be turned on.
+2. In the dialog box that appears, in the **Enable date** field, specify the new date when the feature should be enabled.
 3. Select **Enable** to reschedule the feature or **Disable** to cancel the schedule.
 
-## Turn off a feature
+## Disable a feature
 
-If a feature has already been turned on, a **Disable** button appears in the details pane. You can use this button to turn off the feature. The **Disable** button isn't available if the feature can't be turned off after it's turned on.
+If a feature has been enabled, a **Disable** button appears in the details pane. You can use this button to disable the feature. The **Disable** button isn't available if the feature can't be disabled. 
 
-- Select the feature to turn off, and then, in the details pane, select **Disable**. The feature is turned off, and the **Enable date** field is cleared.
+After a feature is disabled, a message appears below the **Learn more** link in the details pane. This message states that the feature hasn't been enabled. It appears every time that you select the feature in the feature list. Features that haven't been enabled appear on the **Not enabled** tab.
 
-After a feature is turned off, a message appears below the **Learn more** link in the details pane. This message states that the feature hasn't yet been turned on. It appears every time that you select the feature in the feature list. Features that haven't been turned on appear on the **Not enabled** tab.
+## Features that must be enabled
 
-## Features that must be turned on
-
-Sometimes, a critical feature is delivered that must be turned on automatically when you do an update. These features will be turned on automatically on the date that is specified in the **Enable date** field. For these features, a message appears below the **Learn more** link in the details pane. This message either states that the feature was turned on or indicates the future date when the feature will be turned on. It appears every time that you select the feature in the feature list.
+Sometimes, a critical feature is delivered that must be enabled automatically when you do an update. These features will be enabled automatically on the date that is specified in the **Enable date** field. For these features, a message appears below the **Learn more** link in the details pane. This message either states that the feature was enabled or indicates the future date when the feature will be enabled. It appears every time that you select the feature in the feature list.
 
 ## Enable all features
 
-By default, all features that are added to your environment are turned off. You can enable all features by selecting the **Enable all** button. 
+You can enable all features by selecting the **Enable all** button. 
 
-When you select **Enable all**, an option will appear where you need provide the following information:
+When you select **Enable all**, an option appears where you must provide the following information:
+
 - A list of all features that require confirmation before they can be enabled. If you want to enable the features in the list, select **Yes** for the **Enable features requiring confirmation** button.
 - A list of all features that can't be enabled will be shown. Those features will not be enabled.
 
 All features that can be enabled will be enabled. If a feature is already scheduled to be enabled in the future, the schedule will not change. 
 
-## Turn on all features automatically
+## Enable all features automatically
 
-By default, all features that are added to your environment are turned off, unless they are mandatory features. However, if you want to automatically turn on all new features, you can use the drop-down list under the workspace title to change what occurs when new features are added.
+If you want to automatically enable all new features, you can use the drop-down list under the workspace title to change what occurs when new features are added.
 
-- Select `Enable new features automatically` to automatically turn on all new features when they are added to your environment.
-- Select `Do not enable new features automatically` to default all new features to off when they are added to your environment.
-
+- Select **Enable new features automatically** to automatically enable all new features when they are added to your environment.
+- Select **Do not enable new features automatically** if all applicable new features should be off by default when they are added to your environment.
 
 When you enable all feature automatically, it will enable all of the features that would be enabled when you click the **Enable all** button. It will not enable the features that require confirmation or the features that can't be enabled until an action is taken.
 
@@ -128,20 +162,16 @@ A data entity that is named **Feature management** lets you export the Feature m
 
 The following examples describe what occurs when you use the **Feature management** entity to import data.
 
-- If you change the value of the **Enabled** field to **Yes**, the feature is turned on, and the **Enable date** field is set to the current date.
-- If you change the value of the **Enabled** field to **No** or leave the **EnableDate** field blank, the feature is turned off, and the **Enable date** field is cleared. You can't turn off a mandatory feature or a feature that can't be turned off after it's turned on.
+- If you change the value of the **Enabled** field to **Yes**, the feature is enabled, and the **Enable date** field is set to the current date.
+- If you change the value of the **Enabled** field to **No** or leave the **EnableDate** field blank, the feature is disabled, and the **Enable date** field is cleared. You can't disable a mandatory feature or a feature that can't be disabled after it's enabled.
 - If you change the value of the **EnableDate** field to a future date, the feature is scheduled for that date.
 - If you change the value of the **Enabled** field to **Yes** and change the value of the **EnableDate** field to a future date, the feature is scheduled for that date. 
 - If you change the value of the **Enabled** field to **No**, but you also change the value of the **EnableDate** field to a future date, the feature is scheduled for that date.
-- If a feature is turned on, and you add an **EnableDate** field that is set to a future date, the feature remains turned on. To reschedule the feature, you must change the **Enabled** field to **No**.
+- If a feature is enabled, and you add an **EnableDate** field that is set to a future date, the feature remains enabled. To reschedule the feature, you must change the value of the **Enabled** field to **No**.
 
 ## Feature management and flighting
 
 Feature management lets you control the features that are delivered in each release. Flighting lets Microsoft teams release features to a limited number of customers, so that those features can be tested and validated without affecting all customers. Feature management doesn't control the flighting of any features.
-
-## New features are optional for 12 months
-
-When a new non-critical feature is installed, it will be optional for a 12-month period. This allows you and your organization time to plan ahead for when to uptake a feature and have it tested against your daily operations. For more information, see [One Version service updates FAQ](../one-version.md#what-about-new-features).
 
 ## Using Feature management to turn on ISV features or custom features
 
@@ -150,25 +180,24 @@ Feature management is currently unavailable for features from independent softwa
 ## Frequently asked questions (FAQ)
 
 ### When are features added, removed, or changed? 
-Features are added, removed, and changed through code changes. Environments need to be updated to receive those changes.
+Features are added, removed, and changed through code changes by the owning product teams. Environments must be updated to receive those changes.
 
 ### Does a feature become mandatory automatically? 
-No, a feature becoming mandatory is not an automatic action. The product teams need to make a code change.
-
-### When do features become mandatory? 
-The policy is that all new features will be opt-in for a 12-month period and will not require any change management until you enable the feature. The product teams can choose whether to make a feature mandatory after that period has ended. 
+No, a feature doesn't become mandatory automatically. The owning product team must make a code change.
 
 ### Why isn't there a specific 'mandatory-enabled date'? 
 Update release timing is variable, environment update timing is variable, and customers can opt to skip some updates. As a result, specific dates are difficult to determine. 
 
-### Where's the documentation for features that are being made mandatory? 
-This documentation comes from the application teams. Often, these will be mentioned in [Removed or deprecated features](../../../dev-itpro/migration-upgrade/deprecated-features.md). 
+### Where's the documentation for features that are mandatory? 
+This documentation comes from each Dynamics 365 application team. Often, these features will be mentioned in [Updates to client feature states](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/updates-client-feature-states) or [Removed or deprecated features](../../../dev-itpro/migration-upgrade/deprecated-features.md). 
 
 ### Is there an in-product notification or signal that a feature is going to be mandatory-enabled? 
 A notification mechanism related to making a feature mandatory does not exist today.
 
 ### Do features ever get enabled without the customer knowing about it? 
-Yes, if features don't have a functional impact then they can be enabled by default.
+Yes, features can be enabled without the customer's knowledge in the following situations:
+- A feature is moved to **On by default**. In this state, the feature can still be disabled. 
+- A feature is updated to **Mandatory**. This change will only occur in combination with a major release. Critical features might, by exception, be moved to **Mandatory** at any update.
 
 ### What is feature flighting and how does it relate to feature management? 
 Feature flights are real-time on/off switches that Microsoft controls. They are separate from the customer control provided by Feature Management. 

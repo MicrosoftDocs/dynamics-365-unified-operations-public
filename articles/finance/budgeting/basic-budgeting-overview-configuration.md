@@ -5,7 +5,7 @@ title: Budgeting overview
 description: Almost every company that uses Financials functionality in Microsoft Dynamics 365 Finance will have to be able to create reports of budget vs. actuals. This article explains the minimum configuration that is required in order to create budgets in Finance and Operations or load them from a third-party program.
 author: panolte
 ms.date: 04/29/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
 # ms.tgt_pltfrm: 
-ms.custom: 60113
+ms.custom: ["60113", "intro-internal"]
 ms.assetid: 28a9793e-d376-47af-a345-69046bad17df
 ms.search.region: global
 # ms.search.industry: 
@@ -41,7 +41,7 @@ There are multiple methods for creating budget register entries:
 
 -   Manually enter the document information on the **Budget register entries** page.
 -   Use the Microsoft Excel template that you can open by clicking the **Open in Excel** button on the **Budget register entries** page.
--   Use the **Budget Account Entries** data entity in Data management to import budget register entries. You should consider using this method and turning on the **Set based** **processing **parameter when you must import many budget account entries into the system.
+-   Use the **Budget Account Entries** data entity in Data management to import budget register entries. You should consider using this method and turning on the **Set based processing** parameter when you must import many budget account entries into the system.
 -   If the company uses Budget planning functionality to prepare budget data, you can use the **Generate budget register entry** periodic process.
 
 The budget register entry is considered completed when the budget balances have been updated. On the **Budget register entries** page, click **Update budget balances** for a selected budget register entry or multiple entries. After you update the budget balances, the status of the budget register entry changes to **Completed**. Completed budget register entry can't be re-opened for edits. Therefore, if the budget data must be adjusted, you must create a new budget register entry instead of correcting data in the completed budget register entry.
@@ -53,7 +53,7 @@ Next, if there are policies that govern the approval of budget register entries,
 
 On the **Budgeting dimensions** page, you must select the financial dimensions that are used for budgeting, based on the dimensions that are used in the chart of accounts. You can select all financial dimensions or a subset of them for budgeting.
 
-Define a *budget model *that corresponds to all or some of the budgets. You can use a single budget model for all budget register entries. Alternatively, you can create separate models that are based on the budget type, the geographical location, or some other way that a budget can be classified. 
+Define a *budget model* that corresponds to all or some of the budgets. You can use a single budget model for all budget register entries. Alternatively, you can create separate models that are based on the budget type, the geographical location, or some other way that a budget can be classified. 
 
 > [!NOTE] 
 > If budget control is used, you can associate only one budget model with a specific budget cycle time span. 

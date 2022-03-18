@@ -4,7 +4,7 @@
 title: Messaging APIs - Action center, message bar, and message details
 description: This topic describes the messaging system.
 author: jasongre
-ms.date: 11/17/2020
+ms.date: 10/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 64153
 ms.assetid: b69ec992-9bde-469e-99bb-773feb9489ff
@@ -46,14 +46,14 @@ The **info()**, **warning()**, and **error()** application programming interface
 
 The following illustration shows **info**, **warning**/**checkfailed**, and **error** message bars that correspond to page actions, or synchronous-authored messages that come from **info()**, **warning()**, and **error()**. 
 
-[![Screenshot showing info, warning/checkfailed, and error messages](./media/cli-legacyMessages.png)](./media/cli-legacyMessages.png)
+[![Screenshot showing info, warning/checkfailed, and error messages.](./media/cli-legacyMessages.png)](./media/cli-legacyMessages.png)
 
 > [!NOTE]
 > If these APIs are called from a slider dialog, but that slider dialog is closed before the message appears, the message is shown in a message bar on the slider dialog's parent page. If that slider dialog is closed before the message appears, and there is no parent page, the message is routed to the Action center. The messaging API never fails to show a message. If an appropriate host page isn't found, the message is sent to the Action center.
 
 If **info()**, **warning()**/**checkfailed()**, or **error()** is called from an asynchronous process (for example, a batch), there is no form context to consider, and the messages are sent to the Action center. (To open the Action center, click the **Show messages** button on the navigation bar.) The following illustration shows examples of each type of message in the Action center. 
 
-[![Messages the in Action center](./media/2_api.png)](./media/2_api.png)
+[![Messages the in Action center.](./media/2_api.png)](./media/2_api.png)
 
 > [!NOTE]
 > Use the **Box()** API to express an interrupting error to the user.                                                               
@@ -61,16 +61,16 @@ If **info()**, **warning()**/**checkfailed()**, or **error()** is called from an
 ## Backwards compatibility of SetPrefix() 
 Finance and Operations apps also support the **SetPrefix()** API for backwards compatibility. However, in the messaging system, the results of **SetPrefix()** don't actively interrupt the user; instead, the results are collected and stored (as in previous versions), and a message bar or Action center notification is presented to the user. This notification indicates that the related task has been completed, and that it might have messages that the user should review. The "Notification of results" message actually uses the task's first call to **SetPrefix()** to frame the message. This behavior is similar to the behavior in previous versions, where the first call was the "title" of the results. In this example, "Posting Results" comes from the application's first call to **SetPrefix()**.
 
-[![SetPrefix example](./media/3_api.png)](./media/3_api.png) 
+[![SetPrefix example.](./media/3_api.png)](./media/3_api.png) 
 
 The user can then click **Message details** to open the new **Message details** pane. 
 
-[![Message details pane](./media/4_api.png)](./media/4_api.png)
+[![Message details pane.](./media/4_api.png)](./media/4_api.png)
 
 ## Message() 
 The **Message** API provides some useful messaging capabilities. The **Message()** API gives you more control over the lifecycle of a message by allowing you to explicitly add and remove messages. This API can be useful when validation messages need to be removed at times other than when a save boundary has been crossed, or for displaying informational messages about aspects of the user's experience that aren't necessarily related to data validation. In this example, the message is shown when the current record is displayed.
 
-![Example of the Message::Add API used for informational message](./media/cli-legacyInfo.png)
+![Example of the Message::Add API used for informational message.](./media/cli-legacyInfo.png)
 
 ```xpp
 messageId = Message::Add(MessageSeverity::Informational, "The customer is marked as inactive");
@@ -86,7 +86,7 @@ Starting in version 10.0.10 / Platform update 34, you can use the **Message::Add
 
 In this example, a message is triggered for a system administrator indicating a particular required batch job is not running and exposes an action to go directly to the **Batch jobs** page.  
 
-![Example of the Message:AddAction API used for embedding an action in a message](./media/cli-messageAddAction.png)
+![Example of the Message:AddAction API used for embedding an action in a message.](./media/cli-messageAddAction.png)
 
 ```xpp
 MenuItemMessageAction actionData = new MenuItemMessageAction();
@@ -100,16 +100,20 @@ int64 messageId = Message::AddAction(MessageSeverity::Informational, "The Test b
 The following messaging types are supported: **MessageSeverity::Info**, **MessageSeverity::Warning**, and **MessageSeverity::Error**. Messages that use the **Message()** API are also deterministic. They can be routed to a message bar or the Action center.
 
 ## SystemNotificationsManager() 
-The **SystemNotificationsManager()** API targets notifications designed to be sent to the Action center. This API provides the following features: 
+The **SystemNotificationsManager()** class allows you to send notifications to the Action center. This class provides the following features: 
 
-+ Associating one or more actions to the notification 
-+ Routing a notification to a set of users, or to all the users in one or more security roles
-+ Defining an expiration date for the notification
-+ Tracking the state of the notification (e.g. you can mark a notification as "Completed")  
++ Associating one or more actions to the notification. 
++ Routing a notification to a set of users, or to all the users in one or more security roles.
++ Defining an expiration date for the notification.
++ Tracking the state of the notification (such as, you can mark a notification as "Completed").  
++ Defining what rule or process is raising the notification by RuleID.  
 
 In this example, a notification is raised after an export to Excel is completed by a user. The message will be available in the Action center for the next 48 hours, after which the link to the exported file is no longer available.   
 
-![Example of a message sent using the SystemNotificationsManager API](./media/cli-systemNotification.png)
+> [!NOTE]
+> The **AddNotification()** API was previously used in this example. As of version 10.0.23, that API is deprecated and is replaced by the **AddSystemNotification()** API. The new API rquires that you set RuleID and ExpirationDateTime. 
+
+![Example of a message sent using the SystemNotificationsManager API.](./media/cli-systemNotification.png)
 
 ```xpp
 // Set up the notification 
@@ -131,7 +135,7 @@ actionData.Data(fileName);
 action.Data(FormJsonSerializer::serializeClass(actionData));
 notification.Actions().value(1, action);
 
-SystemNotificationsManager::AddNotification(notification);
+SystemNotificationsManager::AddSystemNotification(notification);
 ```
 
 ## Additional resources

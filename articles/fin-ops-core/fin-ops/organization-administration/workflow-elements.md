@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
 This topic describes the various elements that make up a workflow.
 
 A workflow consists of elements. The sections that follow describe each type of element.
@@ -66,7 +69,7 @@ An *approval process* is a process that consists of separate steps. At each appr
 
 A workflow can be created to process either documents or the line items on a document. For example, you've created an approval workflow for timesheets. (We will refer to this workflow as the *document workflow*.) You can add a *line-item workflow* element to that document workflow. When the line-item element is run, each line item on the document is submitted for processing. You might want all the line items to be processed by the same line-item workflow, or you might want each line item to be processed by a different line-item workflow. Imagine that an employee has submitted a timesheet that resembles the following figure.
 
-![Workflow with line items](./media/workflow_lineitemworkflow.gif)
+![Workflow with line items.](./media/workflow_lineitemworkflow.gif)
 
 In this scenario, you might want to create the following line-item workflows:
 

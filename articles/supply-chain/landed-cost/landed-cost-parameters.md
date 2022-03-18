@@ -2,7 +2,7 @@
 # required metadata
 
 title: Landed cost parameters setup
-description: This topics describes how to set up general information and configuration settings that are used across the Landed cost module for posting, status updates, number sequences, and behavior.
+description: This topic describes how to set up general information and configuration settings that are used across the Landed cost module for posting, status updates, number sequences, and behavior.
 author: sherry-zheng
 ms.date: 12/07/2020
 ms.topic: article
@@ -22,7 +22,7 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-07
-ms.dyn365.ops.version: Release 10.0.17
+ms.dyn365.ops.version: 10.0.17
 ---
 
 # Landed cost parameters setup
@@ -35,7 +35,7 @@ You use the **Landed cost parameters** page to set up general information and co
 
 To work with the parameters, go to **Landed cost \> Setup \> Landed cost parameters**, and then set the fields as described in the following subsections.
 
-![Landed cost parameters page](media/landed-cost-parameters.png "Landed cost parameters page")
+![Landed cost parameters page.](media/landed-cost-parameters.png "Landed cost parameters page")
 
 ## General tab
 

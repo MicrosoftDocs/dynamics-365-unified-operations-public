@@ -5,7 +5,7 @@ title: Asset management overview
 description: This topic describes Asset Management functionality in Dynamics 365 Supply Chain Management.
 author: johanhoffmann
 ms.date: 07/24/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 
+
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -37,7 +37,7 @@ Asset Management is an advanced module for managing assets and maintenance jobs 
 
 The image below is an illustration of the interfaces to other modules in Finance and Operations.
 
-![Overview of how Asset Management integrates](media/overview-integrate2.jpg)
+![Overview of how Asset Management integrates.](media/overview-integrate2.jpg)
 
 Asset Management enables you to efficiently manage and carry out tasks related to managing and servicing many types of equipment in your company, for example, machines, production equipment, and vehicles. Asset Management supports solutions across numerous industries.
 

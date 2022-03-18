@@ -1,26 +1,13 @@
 ---
-
 title: Customize table and column mappings
 description: This topic explains how to customize table and column mappings.
-author: sabinn-msft
+author: nhelgren
 ms.date: 03/20/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: v-douklo
-# ms.tgt_pltfrm: 
-ms.custom:
-ms.assetid: 
+ms.reviewer: tfehr
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: sabinn
+ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -28,8 +15,6 @@ ms.dyn365.ops.version: AX 7.0.0
 # Customize table and column mappings
 
 [!include [banner](../../includes/banner.md)]
-
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
 
@@ -44,22 +29,22 @@ The out-of-box table maps have predefined table and column mappings that enable 
 
 2. On the **Table mappings** tab, you can customize a column by selecting a new or custom column from either the Finance and Operations app or Dataverse.
 
-    ![Customizing a column](media/customize-a-field.png)
+    ![Customizing a column.](media/customize-a-field.png)
 
 3. You can customize the synchronization direction (unidirectional or bidirectional) and add transforms by selecting the map type.
 
-    ![Customizing the synchronization direction and adding transforms](media/customize-sync-direction.png)
+    ![Customizing the synchronization direction and adding transforms.](media/customize-sync-direction.png)
 
     The following table describes the available synchronization directions.
 
     | Symbol | Description |
     |---|---|
-    | ![Equal sign](media/equal-symbol.png) | Bidirectional column assignment |
-    | ![Greater than/less than sign](media/greater-less-symbol.png) | Bidirectional column assignment that uses transforms |
-    | ![Greater than sign](media/greater-than-symbol.png) | Unidirectional column assignment (left to right) |
-    | ![Less than sign](media/less-than-symbol.png) | Unidirectional column assignment (right to left) |
-    | ![Right arrow](media/right-arrow-symbol.png) | Unidirectional column assignment that uses transforms (left to right) |
-    | ![Left arrow](media/left-arrow-symbol.png) | Unidirectional column assignment that uses transforms (right to left) |
+    | ![Equal sign.](media/equal-symbol.png) | Bidirectional column assignment |
+    | ![Greater than/less than sign.](media/greater-less-symbol.png) | Bidirectional column assignment that uses transforms |
+    | ![Greater than sign.](media/greater-than-symbol.png) | Unidirectional column assignment (left to right) |
+    | ![Less than sign.](media/less-than-symbol.png) | Unidirectional column assignment (right to left) |
+    | ![Right arrow.](media/right-arrow-symbol.png) | Unidirectional column assignment that uses transforms (left to right) |
+    | ![Left arrow.](media/left-arrow-symbol.png) | Unidirectional column assignment that uses transforms (right to left) |
 
     The following table describes the available transform types.
 
@@ -72,11 +57,11 @@ The out-of-box table maps have predefined table and column mappings that enable 
 
     The following illustration shows an example where a new **birthdate** column is being added.
 
-    ![Adding a new birthdate column](media/add-new-field.png)
+    ![Adding a new birthdate column.](media/add-new-field.png)
 
 5. When you've finished customizing the column mappings, select **Save**. Then follow the prompts to specify a publisher and a version number.
 
-    ![Specifying a publisher and a version number](media/choose-publisher-version.png)
+    ![Specifying a publisher and a version number.](media/choose-publisher-version.png)
 
 ### Filter your data
 
@@ -84,23 +69,26 @@ Dual-write lets you filter data by using Open Data Protocol (OData) filter expre
 
 1. On the table mapping page, select the filter button (funnel symbol).
 
-    ![Filter button](media/select-filter-icon.png)
+    ![Filter button.](media/select-filter-icon.png)
 
 2. In the **Edit query** dialog box, specify your filters. In this example, the filter that is specified will return only accounts where the account type equals **3**.
 
-    ![Specifying filters](media/specify-filters.png)
+    ![Specifying filters.](media/specify-filters.png)
 
     The following table shows some examples of filter expressions.
 
-    | Dataverse | Finance and Operations apps |
-    |---|---|
-    | Accounttype eq '3' | (accounttype == '3') |
-    | numberofemployees gt 1000 and<br>numberofemployees le 2000 | ((numberofemployees > 1000) &&<br>(numberofemployees <= 2000)) |
+    | Filter | Dataverse | Finance and Operations apps |
+    |---|---|---|
+    |String field like| startswith(name, 'A')|(name like "A*")|
+    |String field not like|not contains(name, 'A')|(!(name like "*A*"))|
+    |Enumeration fields| AccountType == '3'| (AccountType == AccountType::Customer)|
+    |Dates|TransactionDate le '2021-06-23'|(TransactionDate <= 23\06\2021)|
+    |Multiple criteria combined| numberofemployees gt 1000 and<br>numberofemployees le 2000 | ((numberofemployees > 1000) &&<br>(numberofemployees <= 2000)) |
 
     For more examples that show how to use expressions in query ranges, see [Using Expressions in Query Ranges](/dynamicsax-2012/developer/using-expressions-in-query-ranges).
-    
+
     Currently, we do not support nested lookups in dual-write source filter. Only standard filter operators directly against table columns are supported. For more examples, see [Standard filter operators](/powerapps/developer/common-data-service/webapi/query-data-web-api#standard-filter-operators).
-    
+
 ## Add new table maps
 
 Although Microsoft is continuing to add new tables, you can also add standard or custom table maps.
@@ -109,14 +97,14 @@ The following example shows how to add a new table map that is named **Address b
 
 1. In the Finance and Operations app, on the **Dual-write** page, select **Add table map**.
 
-    ![Adding a new table map](media/add-new-entity-map.png)
+    ![Adding a new table map.](media/add-new-entity-map.png)
 
     > [!NOTE]
     > When you [create a new solution](app-lifecycle-management.md#create-new-solution) that uses these modified table maps, you must specify the same publisher.
 
 2. Confirm the table maps that you just modified and added. Be sure to enable and test them, to ensure that they work as you expect.
 
-    ![Confirming the table maps](media/confirm-entity-maps.png)
+    ![Confirming the table maps.](media/confirm-entity-maps.png)
 
 ## Next steps
 

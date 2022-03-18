@@ -20,7 +20,7 @@ ms.reviewer: josaw
 ms.custom: 268444
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Version 1611
 # Change the sort order for merchandising entities
 
 
-[!include [banner](includes/banner.md)]
+[!Include [banner](includes/banner.md)]
 
 Retailers consider product discovery a primary tool for customer interaction across all channels. Various functionality can help customers easily discover products. For example, they can browse categories, search, and filter.
 
@@ -55,9 +55,9 @@ Before you can complete this procedure, demo data must be installed in your envi
 
 The display order for the channel navigation hierarchy will be reflected in HQ for the commerce product hierarchy and released products by category.
 
-![Product hierarchy custom sorted with negative values](./media/RetailProductHierarchyCustomSortedWithNegativeValues.png)
+![Product hierarchy custom sorted with negative values.](./media/RetailProductHierarchyCustomSortedWithNegativeValues.png)
 
-![Released products by category custom sorted based on the product hierarchy](./media/ReleasedProductsByCategoryCustomSortedBasedOnRetailProductHierarchy.png)
+![Released products by category custom sorted based on the product hierarchy.](./media/ReleasedProductsByCategoryCustomSortedBasedOnRetailProductHierarchy.png)
 
 ## Configure the display order for categories in the channel navigation hierarchy
 
@@ -81,11 +81,11 @@ Before you can complete this procedure, demo data must be installed in your envi
 
 The display order for the channel navigation hierarchy is reflected in HQ, catalog, and channels.
 
-![Channel navigation hierarchy custom sorted](./media/ChannelNavCustomSorted.png)
+![Channel navigation hierarchy custom sorted.](./media/ChannelNavCustomSorted.png)
 
-![Catalog navigation hierarchy custom sorted based on the channel navigation hierarchy](./media/CatalogNavHierarchyCustomSortedBasedOnChannelNav.png)
+![Catalog navigation hierarchy custom sorted based on the channel navigation hierarchy.](./media/CatalogNavHierarchyCustomSortedBasedOnChannelNav.png)
 
-![POS with custom sorted categories](./media/POSChannelCategoriesCustomSorted.png)
+![POS with custom sorted categories.](./media/POSChannelCategoriesCustomSorted.png)
 
 > [!NOTE]
 > By default the custom sort order feature is turned off. To learn how to turn on this feature and other features, see [Feature management](/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview).

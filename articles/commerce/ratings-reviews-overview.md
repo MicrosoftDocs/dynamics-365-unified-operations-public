@@ -4,7 +4,7 @@ title: Ratings and reviews overview
 description: This topic covers ratings and reviews in Microsoft Dynamics 365 Commerce. 
 author: gvrmohanreddy 
 ms.date: 10/01/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
 # ms.tgt_pltfrm: 
-ms.custom: 
+
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: 
@@ -27,12 +27,9 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Ratings and reviews overview
 
-
 [!include [banner](includes/banner.md)]
 
 This topic covers ratings and reviews in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 Ratings and reviews are crucial for e-Commerce customers who want to know how other customers perceive a product. They can also help consumers make purchase decisions. In Dynamics 365 Commerce, the ratings and reviews solution lets retailers capture product reviews and ratings from customers. Retailers can then show average ratings and review information across their e-Commerce website.
 
@@ -42,7 +39,7 @@ Ratings and reviews functionality in Dynamics 365 Commerce is an omnichannel sol
 
 The following illustration shows how the ratings and reviews solution works in Dynamics 365 Commerce.
 
-![Ratings and reviews in Dynamics 365 for Commerce](media/Dynamics-365-Commerce-Ratings-and-Reviews-Overview.jpg)
+![Ratings and reviews in Dynamics 365 for Commerce.](media/Dynamics-365-Commerce-Ratings-and-Reviews-Overview.jpg)
 
 The ratings and reviews solution in Dynamics 365 Commerce uses Azure Cognitive Services to offer automatic moderation of profane words in 40 languages. Because human approval isn't required, moderation costs are reduced. The system also offers moderator tools that can be used to respond to customer concerns, feedback, and take-down requests, and to address data requests from users.
 
@@ -59,6 +56,14 @@ The ratings and reviews solution also provides a business intelligence (BI) temp
 [Configure ratings and reviews](configure-ratings-reviews.md)
 
 [Sync product ratings in Dynamics 365 Commerce](sync-product-ratings.md)
+
+[Enable manual publishing of ratings and reviews by a moderator](manual-publish-rating-reviews.md)
+
+[Import and export ratings and reviews](import-export-reviews.md)
+
+[Configure Service-to-Service authentication](service-to-service-auth.md)
+
+[Ratings and reviews FAQ](ratings-reviews-faq.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

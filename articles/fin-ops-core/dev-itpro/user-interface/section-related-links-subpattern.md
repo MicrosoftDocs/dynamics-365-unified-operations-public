@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 29331
 ms.assetid: 984d7c6b-cf0a-4056-88f3-c32c92ca3401
@@ -38,7 +38,7 @@ This article provides information about the Section Related Links subpattern. Th
 The Section Related Links subpattern is used as part of the Operational Workspace pattern, specifically for the last panorama section that contains a set of links to other forms.
 
 ## Wireframe
-[![Section Related Links wireframe](./media/sectionrelatedlinkswireframe.png)](./media/sectionrelatedlinkswireframe.png)
+[![Section Related Links wireframe.](./media/sectionrelatedlinkswireframe.png)](./media/sectionrelatedlinkswireframe.png)
 
 ## Pattern changes for Microsoft Dynamics AX
 This pattern didn't exist for Microsoft Dynamics AX 2012.
@@ -67,7 +67,7 @@ The verification checklist shows the steps for manually verifying that the form 
 ## Examples
 Form: **PurchOrderProcessReceiptsWorkspace** (**All workspaces** &gt; **Purchase order receipt and follow-up** (see the **Links** section) 
 
-[![Section Related Links example](./media/sectionrelatedlinksexample.png)](./media/sectionrelatedlinksexample.png)
+[![Section Related Links example.](./media/sectionrelatedlinksexample.png)](./media/sectionrelatedlinksexample.png)
 
 ## Appendix
 ### Frequently asked questions

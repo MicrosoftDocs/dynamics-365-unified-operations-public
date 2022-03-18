@@ -1,22 +1,13 @@
 ---
-# required metadata
-
 title: Integrate procurement between Supply Chain Management and Field Service
 description: This topic describes how dual-write integration supports purchase order creation and updates from both Supply Chain Management and Field Service.
-author: RichardLuan
+author: RamaKrishnamoorthy
 ms.date: 11/11/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
 audience: Application User
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle 
+ms.author: tfehr 
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: Release 10.0.17
 ---
@@ -33,7 +24,7 @@ This integration supports purchase order creation and, in most cases, updates fr
 
 The following illustration shows the tables in both systems and how they are mapped to each other. Purchase orders in Field Service reference an *account* row, whereas purchase orders in Supply Chain Management reference a *vendor* row. To resolve the integration, dual-write uses a reference to link *vendor* rows with *account* rows. For more information, see [Integrated vendor master](vendor-mapping.md).
 
-![Mappings for procurement](media/scm-field-service-tables.png)
+![Mappings for procurement.](media/scm-field-service-tables.png)
 
 ## Prerequisites
 

@@ -21,7 +21,7 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: Release 10.0.15
+ms.dyn365.ops.version: 10.0.15
 ---
 
 # Manage changes to engineering products
@@ -117,16 +117,19 @@ To review affected transactions, block selected transactions, and send related n
     - **View transaction** – Open the selected transaction record.
     - **Block order** – This button is available only on the **Sales orders** tab. Select it to block the selected sales order.
     - **Block line** – This button is available only on the **Purchase orders** tab. Select it to block the selected purchase order line.
-    - **Notify responsible** – This button is available only on the **Sales orders** tab. Select it to send a change notification to the user who is set as responsible for the selected sales order.
-    - **Notify orderer** – This button is available only on the **Purchase orders** tab. Select it to send a change notification to the user who is set as the orderer for the selected purchase order.
-    - **Notify production** – This button is available only on the **Production orders** tab. Unlike sales orders and purchase orders, production orders don't have a single user who is set as responsible for them from end to end. Instead, various supervisors or planners usually take ownership for a specific site or for a specific part of the production (for example, for specific resources or resource groups). Therefore, when you select this button, all users who are responsible for any resource that is related to the selected production order receive a change notification.
-    - **Notify preparer** – This button is available only on the **Purchase requisition** tab. Select it to send a change notification to the user who is set as the preparer of the selected purchase requisition.
-    - **Notify sales responsible** – This button is available only on the **Quotations** tab. Select it to send a change notification to the user who is set as responsible for the selected quotation.
+    - **Notify responsible** – This button is available only on the **Sales orders** tab. Select it to send a change notification to the user who is set as responsible for the selected sales order. For more information about who can see the notifications and how, see [Review and process change notifications for transactions](#review-notifications).
+    - **Notify orderer** – This button is available only on the **Purchase orders** tab. Select it to send a change notification to the user who is set as the orderer for the selected purchase order. For more information about who can see the notifications and how, see [Review and process change notifications for transactions](#review-notifications).
+    - **Notify production** – This button is available only on the **Production orders** tab. Unlike sales orders and purchase orders, production orders don't have a single user who is set as responsible for them from end to end. Instead, various supervisors or planners usually take ownership for a specific site or for a specific part of the production (for example, for specific resources or resource groups). Therefore, when you select this button, all users who are responsible for any resource that is related to the selected production order receive a change notification. For more information about who can see the notifications and how, see [Review and process change notifications for transactions](#review-notifications).
+    - **Notify preparer** – This button is available only on the **Purchase requisition** tab. Select it to send a change notification to the user who is set as the preparer of the selected purchase requisition. For more information about who can see the notifications and how, see [Review and process change notifications for transactions](#review-notifications).
+    - **Notify sales responsible** – This button is available only on the **Quotations** tab. Select it to send a change notification to the user who is set as responsible for the selected quotation. For more information about who can see the notifications and how, see [Review and process change notifications for transactions](#review-notifications).
     - **Scrap** – This button is available only on the **Inventory** tab. Select it to scrap the selected inventory.
     - **View history** – Open a history of actions that have been taken on the selected transaction by using the **Business impact to open transactions** dialog box. (For example, the history shows whether notifications have been sent or transactions have been blocked.) 
     - **View all transactions** – Open the full list of all transactions, not just the open transactions.
 
-#### Review and process change notifications for transactions
+> [!IMPORTANT]
+> The **Notify production** button is available only if the *Engineering notifications for production* feature is turned on for your system. For instructions on how to turn this feature and its prerequisites on or off, see [Engineering change management overview](product-engineering-overview.md).
+
+#### <a name="review-notifications"></a>Review and process change notifications for transactions
 
 You can read and process the change notifications that you receive in the following ways:
 
@@ -135,6 +138,9 @@ You can read and process the change notifications that you receive in the follow
 - For production orders, you can choose to review only the change notifications that apply to the production resources that you manage. In the **Production floor management** workspace, on the Action Pane, select **Configure my workspace** to filter the page so it shows only information about the production units, groups, and/or resources that you manage. In the **Summary** section, a tile that is named **Production orders with changed products** shows a count of notifications that match your filter settings. Select this tile to open the **Engineering notifications** page, which shows the full list of transactions that meet the criteria of your filter.
 
 As you're reviewing production order notifications on the **Engineering notifications** page, you can follow links to related change orders or production orders by selecting column values or using the related commands on the Action Pane. After you've finished evaluating a change, and after you've canceled or modified production orders as required, you can mark a notification as resolved. Select the notification, and then, on the Action Pane, select **Resolve**. The notification is removed from all users' views.
+
+> [!IMPORTANT]
+> The ability to send notifications for production orders requires that the *Engineering notifications for production* feature be turned on for your system. For instructions on how to turn this feature and its prerequisites on or off, see [Engineering change management overview](product-engineering-overview.md).
 
 ### Create a change order from a change request
 
@@ -215,5 +221,15 @@ Most of the fields on engineering change orders are the same as the fields for r
 
 You can use the **Maintain/copy change information** button to copy change information between affected products.
 
+## Use electronic signatures to approve and active BOMs and routes
+
+To use electronic signatures to approve and/or activate bills of material (BOM) and/or route changes, go to **Organization administration \> Setup \> Electronic signature \> Electronic signature requirements**. Then make sure each of the following items has **Signature required** set to *Yes*:
+
+- Activate engineering change order product bill of materials
+- Activate engineering change order product route
+- Approve engineering change order product bill of materials
+- Approve engineering change order product route
+- Approve engineering version BOM and BOM versions
+- Approve engineering version and route version
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

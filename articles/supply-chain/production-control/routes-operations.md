@@ -3,7 +3,7 @@
 
 title: Routes and operations
 description: This topic provides information about routes and operations. 
-author: sorenva
+author: johanhoffmann
 ms.date: 03/18/2019
 ms.topic: article
 ms.prod: 
@@ -12,7 +12,7 @@ ms.technology:
 # optional metadata
 
 ms.search.form: BOMDesigner, BOMDesignerRouteVersion, Route, RouteInventProd, RouteOpr, RouteOprTable, ProdRouteJob, ProdRouteTrans, ProdRouteOverview, ProdRouteJobOverview, ProdRouteJobListPagePreviewPane, RouteTable, RouteVersionFeasibility, ProdRouteJobCurrent, RouteGroup, RouteProductionOrder, EngChgCaseRouteTablePart, EcoResProductProdTypeFormulaNoActiveRouteFormPart, 
-ms.author: sorenand
+ms.author: johanho
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -49,7 +49,7 @@ A route describes the order of operations that is used to produce a product or p
 
 A simple route is sequential, and there is only one starting point for the route.  
 
-[![Simple route](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
+[![Simple route.](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
 
 If you enable only simple routes in the Production control parameters, Supply Chain Management automatically generates the operation numbers (10, 20, 30, and so on) when you define the route.
 
@@ -57,7 +57,7 @@ If you enable only simple routes in the Production control parameters, Supply Ch
 
 If you enable the more complex route networks in the Production control parameters, you can define routes that have multiple starting points and operations that can be run in parallel.  
 
-[![Route network](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
+[![Route network.](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
 
 > [!NOTE]
 > - Each operation can have only one successor operation, and the entire route must end in a single operation.
@@ -68,7 +68,7 @@ If you enable the more complex route networks in the Production control paramete
 
 Sometimes, a combination of multiple operations resources that have different characteristics is required in order to perform an operation. For example, an assembly operation might require a machine, a tool, and one worker for every two machines to oversee the operation. This example can be modeled by using parallel operations, where one operation is designated as the primary operation and the others are secondary.  
 
-[![Route that has primary and secondary operations](./media/routes-and-operations-3-parallel-operations.png)](./media/routes-and-operations-3-parallel-operations.png)  
+[![Route that has primary and secondary operations.](./media/routes-and-operations-3-parallel-operations.png)](./media/routes-and-operations-3-parallel-operations.png)  
 
 Typically, the primary operation represents the bottleneck resource and dictates the run time for the secondary operations. However, during scheduling that involves finite capacity, the resources that are scheduled for both the primary operation and the secondary operations must be available and have free capacity at the same time.  
 
@@ -227,7 +227,7 @@ When you use this approach, the **Operation relations** page becomes your primar
 If you don't specify an operations resource or resource group as part of the resource requirements for an operation, the applicable resources might operate at different speeds. Therefore, the time that is required in order to process an operation might vary. To resolve this issue, you can use the **Formula** field on the operation relation to specify how the process time is calculated. The following options are available:
 
 - **Standard** – (Default option) The calculation uses only the fields from the operation relation and multiplies the specified run time by the order quantity.
-- **Capacity** – The calculation includes the **Capacity** field from the operations resource. Therefore, the time is resource-dependent. The value that is specified on the operations resource is capacity per hour. The **Process time** is calculated as **Order quantity** divided by **Capacity**.
+- **Capacity** – The calculation includes the **Capacity** field from the operations resource. Therefore, the time is resource-dependent. The value that is specified on the operations resource is capacity per hour. The **Process time** is calculated as **Order quantity** divided by **Capacity**. The capacity value isn't specific to a particular unit of measure and therefore isn't converted based on the **Capacity unit** field, which is just a descriptive field that isn't used in calculations.
 - **Batch** – A batch capacity is calculated by using information from the operation relation. The number of batches and, therefore, the process time can then be calculated based on the order quantity.
 - **Resource batch** – This option is basically the same as the **Batch** option. However, the calculation includes the **Batch capacity** field from the operations resource. Therefore, the time is resource dependent.
 

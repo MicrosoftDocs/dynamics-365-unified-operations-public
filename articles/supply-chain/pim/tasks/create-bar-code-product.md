@@ -3,7 +3,7 @@
  
 title: Create a bar code for a product
 description: This topic shows how to manually create a bar code using the item number M0001 as an example. 
-author: ShylaThompson
+author: t-benebo
 ms.date: 07/08/2019
 ms.topic: business-process 
 ms.prod:  
@@ -19,9 +19,9 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kamaybac
+ms.author: benebotg
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Create a bar code for a product
 
@@ -35,7 +35,7 @@ This topic shows how to manually create a bar code using the item number M0001 a
 1. Select **Bar codes**.
 1. Select **New**.
 1. Mark the selected row that is created in the list below.
-1. In the **Barcode setup** field, enter or select a value.
+1. In the **Bar code setup** field, enter or select a value.
 1. In the **Bar code** field, enter or select a value.
 1. In the **Bar code** field, type a value.  
 1. In the **Quantity** field, enter a number.

@@ -5,7 +5,7 @@ author: RobinARH
 ms.date: 07/24/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 23401
 ms.assetid: 46ed0115-6f8b-4757-b8d2-d4ccb76c733d
 ms.search.region: Global
@@ -35,12 +35,12 @@ Navigate to <https://www.visualstudio.com/> to sign up for Azure DevOps. Click *
 
 2. Create a Azure DevOps organization, and select a URL for your account. You'll use this URL to connect from your development computer when you're configuring source control in Visual Studio. The following image is an example of the account URL.
 
-    ![Select URL for account](./media/accounturl_usingdevotools.png)
+    ![Select URL for account.](./media/accounturl_usingdevotools.png)
 
     When the account is created, you're directed to your account main page where you're prompted to create your first project.
 3. Create a demo **Fleet Management** project.
 
-    ![Create your first project](./media/firstproject_usingdevotools.png)
+    ![Create your first project.](./media/firstproject_usingdevotools.png)
 
 ### Create a Azure DevOps team project
 
@@ -49,7 +49,7 @@ If you already have a Azure DevOps organization, go to your account using Intern
 1. Go to <https://www.visualstudio.com/>.
 2. Under **Recent projects & teams**, click **New** to create a new project.
 
-   ![Create a new project](./media/clicknew_usingdevotools.png)
+   ![Create a new project.](./media/clicknew_usingdevotools.png)
 
 3. In the **Project name** field, enter **Fleet Management**, enter a **Description**, and then click **Create project**.
 
@@ -57,7 +57,7 @@ If you already have a Azure DevOps organization, go to your account using Intern
 
 If you have migrated your code from a previous version using the Lifecycle Services (LCS) automated code upgrade tool, the following folder structure is automatically created in your Azure DevOps team project.
 
-![Default folder structure](./media/vsofolders1.png)
+![Default folder structure.](./media/vsofolders1.png)
 
 The **Metadata** folder contains your source XML files organized by packages and models and the **Projects** folder contains Visual Studio projects. If you are not migrating code and are starting from scratch, create a similar folder structure on the server in your team project before you start development.
 
@@ -76,7 +76,7 @@ The **Metadata** folder contains your source XML files organized by packages and
 
 7. Select the **Fleet Management** check box under **Team projects**, and then click **Connect**.
 
-    ![Connect to Team Foundation Server](./media/connecttfsserver_usingdevotools.png)
+    ![Connect to Team Foundation Server.](./media/connecttfsserver_usingdevotools.png)
 
 ### Map your Azure DevOps project to your local model store and projects folder
 
@@ -89,7 +89,7 @@ Your model store root folder contains source files of all packages and models th
     > [!NOTE]
     > Your model store may be located under I:\\AosService\\PackagesLocalDirectory or another drive, depending on your machine configuration.
 
-    ![Create a workspace mapping](./media/vsofolders21.png)
+    ![Create a workspace mapping.](./media/vsofolders21.png)
 
 4. Click **Map**, and on the next dialog, click **No**.
 5. Similarly, map the **/Trunk/Main/Projects** server folder to the **local projects folder** that will hold your Visual Studio solution and project files.
@@ -117,7 +117,7 @@ This section describes the steps needed to add a solution to Azure DevOps source
     > [!NOTE]
     > If you have already mapped the server Projects folder to a local folder that contains the FleetManagement solution, steps 2 and 3 are omitted.
 
-    ![Folder structure of Team Foundation Server](./media/vsofolders31.png)
+    ![Folder structure of Team Foundation Server.](./media/vsofolders31.png)
 
 4. Click OK.
 5. Go to **Team Explorer &gt; Pending changes**, and then click **Check-in** to check-in your solution and its model element to the Azure DevOps source control.
@@ -133,7 +133,7 @@ All Visual Studio projects belong to models. Models are source code distribution
     > [!NOTE]
     > Your model store may be located under K:\AosService\PackagesLocalDirectory or c:\AosService\PackagesLocalDirectory or another drive, depending on your machine configuration.
 
-    [![Adding FleetManagement.xml to source control](./media/addsourcecontrol_usingdevotools.png)](./media/addsourcecontrol_usingdevotools.png)
+    [![Adding FleetManagement.xml to source control.](./media/addsourcecontrol_usingdevotools.png)](./media/addsourcecontrol_usingdevotools.png)
 
 4. Click **Finish**.
 
@@ -150,7 +150,7 @@ In this section, you'll make minor changes to the **FMRental** table and compare
 2. Double-click **FMRental** to open the designer.
 3. Right-click the **Fields** node, and then click **New &gt; Integer**.
 
-    [![Add new integer](./media/newinteger_usingdevotools.png)](./media/newinteger_usingdevotools.png)
+    [![Add new integer.](./media/newinteger_usingdevotools.png)](./media/newinteger_usingdevotools.png)
 
 4. Right-click **Methods**, and add a new method.
 5. In the X++ code editor, enter a comment in the new method.
@@ -158,12 +158,12 @@ In this section, you'll make minor changes to the **FMRental** table and compare
 7. Save the **FMRental**.
 8. In **Team Explorer**, right-click **FMRental.xml**, and select **Compare with Latest Version**.
 
-    [![Compare versions](./media/compareversions_usingdevotools.png)](./media/compareversions_usingdevotools.png)
+    [![Compare versions.](./media/compareversions_usingdevotools.png)](./media/compareversions_usingdevotools.png)
 
 9. Browse through the differences in the **comparison (Diff)** window.
 10. In **Solution Explorer**, right-click on the **FMRental** table, and select **Source control &gt; Undo &gt; Pending Changes** to revert your changes.
 
-    [![Undo pending changes](./media/undo_usingdevotools.png)](./media/undo_usingdevotools.png)
+    [![Undo pending changes.](./media/undo_usingdevotools.png)](./media/undo_usingdevotools.png)
 
 11. Confirm the undo on the next dialog and close the **diff** window.
 
@@ -174,7 +174,7 @@ In this section, you will synchronize existing models and model elements from yo
 1. In Source Control Explorer, right-click on Metadata and select **Get Latest Version**. Getting the latest version will synchronize you local packages folder with the latest code.
 2. Alternatively you can use the **Advanced** menu to synchronize specific build version or change sets.
 
-    ![Get the latest version](./media/getlatest.png)
+    ![Get the latest version.](./media/getlatest.png)
 
 3. Once synchronization is complete, and if the synchronization leads to synchronizing new models to your environment, you need to refresh your metadata from Visual Studio.
 4. Go to **Dynamics 365 &gt; Model Management &gt; Refresh models**.
@@ -186,27 +186,27 @@ This section describes how you can create a Visual Studio project out of tasks (
 1. In **Solution Explorer**, select **Fleet Management Migrated &gt; Code &gt; Classes &gt; FMDataHelper**, and then double-click **FMDataHelper**. The X++ code editor opens.
 2. Enter a TODO comment (//TODO: my comment) inside any method.
 
-    [![Example of TODO comments](./media/code_usingdevotools.png)](./media/code_usingdevotools.png)
+    [![Example of TODO comments.](./media/code_usingdevotools.png)](./media/code_usingdevotools.png)
 
 3. Open other Fleet Management classes or tables and add more TODO comments.
 4. Rebuild the **FleetManagement Migrated** project.
 5. Select **View &gt; Task List**, to open the Visual Studio **Task List** window.
 
-    [![Opening the Task List](./media/tasklist_usingdevotools.png)](./media/tasklist_usingdevotools.png)
+    [![Opening the Task List.](./media/tasklist_usingdevotools.png)](./media/tasklist_usingdevotools.png)
 
 6. Select **Comments** from the drop-down list.
 
-    [![Viewing comments](./media/tasklistcomments_usingdevotools.png)](./media/tasklistcomments_usingdevotools.png)
+    [![Viewing comments.](./media/tasklistcomments_usingdevotools.png)](./media/tasklistcomments_usingdevotools.png)
 
 7. Select all TODO items, right-click, and select **Add to new project**.
 
-    [![Selecting TODO comments](./media/addnewproject_usingdevotools.png)](./media/addnewproject_usingdevotools.png)
+    [![Selecting TODO comments.](./media/addnewproject_usingdevotools.png)](./media/addnewproject_usingdevotools.png)
 
 8. Adding the items will open the **New project** dialog and enable you to create a new project that contains all of your TODOs.
 9. You can save this project as a working project to manage your TODO list.
 10. When you're finished, undo all of your pending changes in **Team Explorer**.
 
-    [![Undoing all the changes](./media/undoall_usingdevotools.png)](./media/undoall_usingdevotools.png)
+    [![Undoing all the changes.](./media/undoall_usingdevotools.png)](./media/undoall_usingdevotools.png)
 
 11. Click **File &gt; Close Solution**, to close the FleetManagement solution.
 
@@ -220,7 +220,7 @@ This section demonstrates how you can perform meta-data based searches throughou
 2. In the **Metadata search** window, in the **Search** field, enter the following text to find all of the table insert methods in the Application Suite model that contain a cross-company query. `type:table,method name:insert code:"crosscompany" model:"Application Suite"`.
 3. Wait for the search to complete. It may take a while.
 
-   ![Metadata search results](./media/metadatasearchresults_usingdevotools.png)
+   ![Metadata search results.](./media/metadatasearchresults_usingdevotools.png)
 
 4. Double-click a result in the list. The code editor will open and place the cursor at the line that matches your search criteria.
 5. Select several elements in the results list by holding down the Ctrl key for multiple selections, right-click, and then select **Add to new project**. Adding the elements will let you to create a new solution and project containing the selected elements.
@@ -247,7 +247,7 @@ You don't need to wait for the search to complete before you interact with searc
 
 - Use the search bar drop-down menu to access previous searches.
 
-    [![Using the drop-down menu](./media/accessprevious_usingdevotools.png)](./media/accessprevious_usingdevotools.png)
+    [![Using the drop-down menu.](./media/accessprevious_usingdevotools.png)](./media/accessprevious_usingdevotools.png)
 
 ## Navigate to related elements
 
@@ -255,28 +255,28 @@ This section highlights a feature that enables you to move from one element to a
 
 1. Open **Application Explorer**, and switch the view to **Model View**.
 
-    [![Opening Application Explorer in Model View](./media/modelview_usingdevotool1.png)](./media/modelview_usingdevotool1.png)
+    [![Opening Application Explorer in Model View.](./media/modelview_usingdevotool1.png)](./media/modelview_usingdevotool1.png)
 
 2. Under the **Fleet Management** model, click **User Interface &gt; Menu items &gt; Display Menu Items &gt; FMCustomer**.
 
-    [![Selecting FMCustomer in Application Explorer](./media/fmcustomerisv_usingdevotools.png)](./media/fmcustomerisv_usingdevotools.png)
+    [![Selecting FMCustomer in Application Explorer.](./media/fmcustomerisv_usingdevotools.png)](./media/fmcustomerisv_usingdevotools.png)
 
 3. Right-click **FMCustomer**, and then select **Open designer**.
 4. In the **FMCustomer** menu item designer, right-click the root node, and then select **Go to Form FMCustomer**.
 
-    [![Navigating to a form using Application Explorer](./media/goformfmcustomer_usingdevotools.png)](./media/goformfmcustomer_usingdevotools.png)
+    [![Navigating to a form using Application Explorer.](./media/goformfmcustomer_usingdevotools.png)](./media/goformfmcustomer_usingdevotools.png)
 
     The **FMCustomer** form designer will open.
 
 5. In the designer of the **FMCustomer** form, expand **Data sources**, right-click **FMCustomer**, and then select **Go to Table FMCustomer**
 
-    [![Navigating to a table using Application Explorer](./media/gotablefmcustomer_usingdevotools.png)](./media/gotablefmcustomer_usingdevotools.png)
+    [![Navigating to a table using Application Explorer.](./media/gotablefmcustomer_usingdevotools.png)](./media/gotablefmcustomer_usingdevotools.png)
 
     The **FMCustomer** table designer will open.
 
 6. Using the same methodology, you can navigate to the EDT element that a table field references. **Tip**: Press F9 instead of opening the context menu. F9 will open the designer of the referenced element. **Tip**: You can add an element to the current project by right-clicking on the document tab and selecting **Add to project**.
 
-    ![Using Add to project](./media/addtoproject_usingdevotools.png)
+    ![Using Add to project.](./media/addtoproject_usingdevotools.png)
 
 ## Use Application Explorer to create a project from a model
 
@@ -285,11 +285,11 @@ You can use Application Explorer to search for all or some elements of a model a
 1. Make sure the option to organize a project by element type is on. Go to **Dynamics 365** \> **Options** \> **Projects**.
 2. Go to Application Explorer and search for elements in the desired model. For example, enter *model:"fleet management"* and click **Enter**.
 
-    [![Searching for model in Application Explorer](./media/appexplorermodelsearch.jpg)](./media/appexplorermodelsearch.jpg)
+    [![Searching for model in Application Explorer.](./media/appexplorermodelsearch.jpg)](./media/appexplorermodelsearch.jpg)
 
 3. When the search is complete, right-click the AOT root node and select **Add search results to new project.**
 
-    [![Add item to a new model](./media/addsearchresultstonewproject.jpg)](./media/addsearchresultstonewproject.jpg)
+    [![Add item to a new model.](./media/addsearchresultstonewproject.jpg)](./media/addsearchresultstonewproject.jpg)
 
 4. Specify your project properties in the new project dialog and click **OK** to create the project.
 

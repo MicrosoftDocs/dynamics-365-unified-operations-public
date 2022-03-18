@@ -3,7 +3,7 @@
  
 title: Ship orders as direct deliveries
 description: This topic demonstrates how to create a direct delivery for a sales order. 
-author: omulvad  
+author: Henrikan  
 ms.date: 07/11/2019  
 ms.topic: business-process 
 ms.prod:  
@@ -19,9 +19,9 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Ship orders as direct deliveries
 

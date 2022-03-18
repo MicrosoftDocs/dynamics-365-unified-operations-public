@@ -12,7 +12,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 89563
 ms.assetid: 
@@ -40,7 +40,7 @@ With Microsoft Dynamics 365 for Finance and Operations release 8.0, we have seal
 
 The following illustration shows the roadmap we followed as we moved to extensions, away from overlayering.
 
-![Extensibility roadmap](media/extensibility-roadmap.jpg)
+![Extensibility roadmap.](media/extensibility-roadmap.jpg)
 
 > [!NOTE]
 > A soft seal results in a compiler warning upon overlayering. A hard seal results in a compiler error upon overlayering. 

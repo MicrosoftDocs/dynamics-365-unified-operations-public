@@ -5,7 +5,7 @@ title: Office integration overview
 description: This topic reviews Microsoft Office integration concepts and features.
 author: jasongre
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: 25511
+ms.custom: ["25511", "intro-internal"]
 ms.assetid: 36ba2da0-ee9b-4f84-b705-751303ccec33
 ms.search.region: Global
 # ms.search.industry: 
@@ -44,7 +44,7 @@ The Microsoft Office integration capabilities provide users with a productive en
 ## Excel Data Connector add-in
 Microsoft Excel can change and quickly analyze data. The Excel Data Connector app interacts with Excel workbooks and OData services that are created for publicly exposed data entities. The Excel Data Connector add-in enables Excel to become a seamless part of the user experience. The Excel Data Connector add-in is built by using the Office Web add-ins framework. The add-in runs in a task pane. Office Web Add-ins are web applications that run inside an embedded Internet Explorer browser window. 
 
-[![Screenshot of Excel Data Connector app](./media/1_office.png)](./media/1_office.png)
+[![Screenshot of Excel Data Connector app.](./media/1_office.png)](./media/1_office.png)
 
 ### Dynamics AX 2012 architecture vs. Finance and Operations architecture
 
@@ -60,7 +60,7 @@ Excel &gt; Office Web Add-in (JS + HTML) &gt; JavaScript OData API (Olingo) &gt;
 
 ### Office Add-in explained
 
-The Excel Data Connector app is located in a task pane on the right side of a workbook. [![Screen shot showing location of Excel Data Connector app with numbered elements corresponding to table](./media/2_office.png)](./media/2_office.png) The following table describes the parts of the add-in. The numbers correspond to the numbers in the preceding screen shot.
+The Excel Data Connector app is located in a task pane on the right side of a workbook. [![Screen shot showing location of Excel Data Connector app with numbered elements corresponding to table.](./media/2_office.png)](./media/2_office.png) The following table describes the parts of the add-in. The numbers correspond to the numbers in the preceding screen shot.
 
 | Number | Name                             | Description                                                                                                                                                                                                                                                                          |
 |--------|----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -92,7 +92,7 @@ To add a record, either start typing in a row directly below a table, or use the
 ## Workbook Designer
 You can use the **Workbook Designer** page to design an editable custom export workbook that contains an entity and a set of fields. To open the **Workbook Designer** (**ExportToExcelWorkbookDesigner**) page, click **Common &gt; Common &gt; Office Integration &gt; Excel workbook designer**. Before you can publish data edits, all the key fields of the entity must be in the Excel table. Key fields have a key symbol next to them. To successfully create or update a record, it must have all the mandatory fields in the Excel table. Mandatory fields have an asterisk (\*) next to them. 
 
-[![Screen shot showing list of mandatory fields](./media/3_office.png)](./media/3_office.png) 
+[![Screen shot showing list of mandatory fields.](./media/3_office.png)](./media/3_office.png) 
 
 To retrieve the resulting workbook, click **Create workbook** in the app bar. 
 
@@ -101,11 +101,11 @@ Click **View related form** to see the data that the entity exposes. This button
 ## Document management
 Document management supports saving record attachments in Azure Blob storage and SharePoint Online. Database storage is deprecated. Azure Blob storage is equivalent to storage in the database since documents can only be accessed through the application and it provides the added benefit of providing storage that doesn't negatively affect the performance of the database. Azure blob storage is the default and works immediately. SharePoint storage will work immediately if you have an O365 license since we auto-discover the SharePoint tenant e.g. a user on the TenantA.onmicrosoft.com O365/AAD tenant gets TenantA.sharepoint.com as the SharePoint site. If document management has been turned off by the user, turn it on by clicking **Options &gt; General &gt; Miscellaneous** and setting **Document handling active** to **Yes**. 
 
-[![Screen shot showing Document handling active option set to Yes](./media/4_office.png)](./media/4_office.png) 
+[![Screen shot showing Document handling active option set to Yes.](./media/4_office.png)](./media/4_office.png) 
 
 On any page that has data, an **Attach** button will be available in the upper-right corner. 
 
-[![Screen shot showing Attach button](./media/5_office.png)](./media/5_office.png) 
+[![Screen shot showing Attach button.](./media/5_office.png)](./media/5_office.png) 
 
 The **Attachments** page provides a view of the attachments (documents) that are associated with the record that was selected on the previous page. You can add new attachments to the record by clicking the **New** button (**+**) in the app bar. For the **File** and **Image** document types, you will be prompted to provide the associated file.
 

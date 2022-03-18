@@ -5,7 +5,7 @@ title: Sales and marketing overview
 description: You can use Sales and marketing to obtain, store, and use various types of data in the sales flow. This data includes the original sales initiative, future follow-up action, and additional sales.
 author: kfend
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 92303
+ms.custom: ["92303", "intro-internal"]
 ms.assetid: 65ca9992-bbfa-4224-bf0e-067a25c7e6a4
 ms.search.region: Global
 # ms.search.industry: 
@@ -35,18 +35,18 @@ You can use Sales and marketing to obtain, store, and use various types of data 
 
 ## Marketing
 
-You use marketing campaigns and activities to find and build relationships with potential customers, so that initial interactions can develop into sales relationships. The following process flow shows the business process for marketing. [![Business process for marketing](./media/marketing01.jpg)](./media/marketing01.jpg)
+You use marketing campaigns and activities to find and build relationships with potential customers, so that initial interactions can develop into sales relationships. The following process flow shows the business process for marketing. [![Business process for marketing.](./media/marketing01.jpg)](./media/marketing01.jpg)
 
 ### Relationships
 
-In sales and marketing, the initial interactions that you have with potential customers can occur in various situations. For example, you might find a prospective customer while you're attending a trade show, or you might have a possible lead with a customer after your organization runs a mass mailing campaign. It's very important that you understand the flow of a party’s entity before that party becomes a customer. The following graphic shows the flow of entity relationships as a potential customer becomes an actual customer. [![SalesandMarketing01](./media/salesandmarketing01.jpg)](./media/salesandmarketing01.jpg)
+In sales and marketing, the initial interactions that you have with potential customers can occur in various situations. For example, you might find a prospective customer while you're attending a trade show, or you might have a possible lead with a customer after your organization runs a mass mailing campaign. It's very important that you understand the flow of a party’s entity before that party becomes a customer. The following graphic shows the flow of entity relationships as a potential customer becomes an actual customer. [![SalesandMarketing01.](./media/salesandmarketing01.jpg)](./media/salesandmarketing01.jpg)
 
 ### Campaigns
 
 A campaign targets the contacts for prospects, leads, opportunities, and customers that have been selected to participate in the campaign. In Supply Chain Management, you can create several types of campaigns, such as telemarketing, mailing, and email campaigns, to maximize your customer potential. As your campaign progresses and you receive positive responses, you can begin the sales process with those recipients who have responded positively to the campaign.
 
 ## Sales
-You use the sales functionality to create quotations, up-sell and cross-sell to new and existing customers, create sales orders, and create sales invoices for customers. The following process flow shows the business process for sales. [![Business process for sales](./media/sales01.jpg)](./media/sales01.jpg)
+You use the sales functionality to create quotations, up-sell and cross-sell to new and existing customers, create sales orders, and create sales invoices for customers. The following process flow shows the business process for sales. [![Business process for sales.](./media/sales01.jpg)](./media/sales01.jpg)
 
 ### Sales quotations
 

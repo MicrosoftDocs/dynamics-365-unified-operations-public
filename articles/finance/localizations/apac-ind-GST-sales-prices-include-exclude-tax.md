@@ -3,7 +3,7 @@
 
 title: Sales where prices include and exclude tax
 description: This topic provides information about sales where the prices on some order lines include sales tax and the prices on other order lines exclude sales tax.
-author: EricWang
+author: EricWangChen
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: kfend
+ms.author: wangchen
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.4
 
@@ -75,7 +75,7 @@ ms.dyn365.ops.version: 10.0.4
 1. On the Action Pane, on the **Invoice** tab, in the **Journals** group, select **Invoice**.
 2. Select **Voucher**.
 
-![Example](media/Annotation-2019-05-20-153808.png)
+![Example.](media/Annotation-2019-05-20-153808.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

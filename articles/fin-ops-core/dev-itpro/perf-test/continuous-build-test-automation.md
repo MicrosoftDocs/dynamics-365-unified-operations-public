@@ -11,7 +11,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 13171
 ms.assetid: 
@@ -37,7 +37,7 @@ Cloud deployment of virtual machines (VMs) requires a Microsoft Azure DevOps sub
 
 After you configure an Azure DevOps subscription in Microsoft Dynamics Lifecycle Services (LCS), you can use LCS to deploy developer VMs or build/test VMs. LCS configures a developer VM that can be mapped to an Azure DevOps project. LCS also configures a build VM that is automatically mapped to an Azure DevOps project and has a build agent/controller that builds modules from the Azure DevOps project and runs automated tests that have an external endpoint for validation. The following illustration shows a typical workflow.
 
-![Relationship of LCS, Azure DevOps, and VMs](./media/deploy-build-test.png)
+![Relationship of LCS, Azure DevOps, and VMs.](./media/deploy-build-test.png)
 
 This workflow includes an LCS deployment of a developer VM and a build/test VM in Azure.
 
@@ -87,7 +87,7 @@ If you have not already done so, you need to first setup your LCS project to con
 
 As part of code Migration process or development activities, we expect you to check-in your model source files and the associated test model source files into Azure DevOps. If you have migrated your code using the LCS migration service, this is automatically done for you. If you have not checked in any code into Azure DevOps and work on direct check-in, you must follow certain guidelines for the Azure DevOps folder structure. This will help with setting up correct build definition. All modules should be added to root folder **Metadata**. Under each module, there should be two folders. One folder contains all models. The other folder should contain descriptor XML for that module. 
 
-![Azure DevOps folder structure](media/build-trunk-main-metadata.png)
+![Azure DevOps folder structure.](media/build-trunk-main-metadata.png)
 
 ### Deploy a Build environment
 
@@ -116,35 +116,35 @@ When a Build VM is deployed in Developer topology through LCS, it is pre-configu
 
 The build VM contains the vNext build agent which was released as part of **Azure DevOps**. When you deploy the Build VM, the build agent is configured by default to connect and sync with the Azure DevOps project. As a part of the Build VM configuration, the default build definition is also created and configured, as shown below. 
 
-[![Default build definition](./media/build1-1024x488.jpg)](./media/build1.jpg) 
+[![Default build definition.](./media/build1-1024x488.jpg)](./media/build1.jpg) 
 
 Default build definition contains multiple tasks to perform specific operation, as described below.
 
 1.  Configure the predefined variables parameters that will be passed to the build. To set up a clean database for every build execution, provide the name of the database backup file for the **DatabaseBackupToRestore** variable. The packages folder is restored at every build with a copy of a clean package folder.
 
-    [![List of predefined variables pane](./media/build2-1024x678.jpg)](./media/build2.jpg)
+    [![List of predefined variables pane.](./media/build2-1024x678.jpg)](./media/build2.jpg)
 
 2.  Build the solution to discover and build all modules under "Trunk/Main" branch as shown below.
 
-    [![Build the solution pane](./media/build3-1024x456.jpg)](./media/build3.jpg)
+    [![Build the solution pane.](./media/build3-1024x456.jpg)](./media/build3.jpg)
 
 3.  Use "Deploy Report" task to generate reports and deploy on build VM.
 4.  Use "Database Sync" task to synchronize the database to local SQL on build VM.
 5.  After the build is successful, create a deployable package that can be used to update sandbox/ staging environment.
 
-    [![Generate packages pane](./media/build4-1024x462.jpg)](./media/build4.jpg)
+    [![Generate packages pane.](./media/build4-1024x462.jpg)](./media/build4.jpg)
 
 6.  "Copy and publish build artifacts" uploads the deployable package to Azure DevOps artifacts location.
 
-    [![Publish Artifact pane](./media/build5-1024x439.jpg)](./media/build5.jpg)
+    [![Publish Artifact pane.](./media/build5-1024x439.jpg)](./media/build5.jpg)
 
 7.  For test execution, there are three default tasks "Test Setup", "Execute Test" and "Test End".
 
-    [![Execute Tests pane](./media/build7-1024x457.jpg)](./media/build7.jpg)
+    [![Execute Tests pane.](./media/build7-1024x457.jpg)](./media/build7.jpg)
 
 8.  The default build is scheduled to trigger start every day at 5 P.M. You can change trigger as per your team's need to "Continuous" for each check-in.
 
-    [![Default build schedule](./media/build8-1024x491.jpg)](./media/build8.jpg)
+    [![Default build schedule.](./media/build8-1024x491.jpg)](./media/build8.jpg)
 
 You can make changes to the default configuration, and the build VM will be ready to trigger a build.
 
@@ -160,13 +160,13 @@ After you review the default build configuration, you can manually trigger a bui
 
 Success or failure for the build will display, as shown by the following examples. View all builds. 
 
-[![Display of build success or failure](./media/build9-1024x443.jpg)](./media/build9.jpg) 
+[![Display of build success or failure.](./media/build9-1024x443.jpg)](./media/build9.jpg) 
 
 Select specific completed build and view success/ failure details. 
 
-[![View details of build success or failure](./media/build10-1024x446.jpg)](./media/build10.jpg) Click on Test link to visualize test execution failure. 
+[![View details of build success or failure.](./media/build10-1024x446.jpg)](./media/build10.jpg) Click on Test link to visualize test execution failure. 
 
-[![Visualize test execution failure](./media/build11-1024x455.jpg)](./media/build11.jpg)
+[![Visualize test execution failure.](./media/build11-1024x455.jpg)](./media/build11.jpg)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

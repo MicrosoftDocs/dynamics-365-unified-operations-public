@@ -3,9 +3,9 @@
 
 title: Fulfill service agreements overview 
 description: This topic provides an overview of the tasks to fulfill service agreements. 
-author: ShylaThompson
+author: kamaybac
 ms.date: 05/03/2018
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 
+
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -27,10 +27,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 
-# Fulfill service agreements overview 
+# Fulfill service agreements overview
 
 [!include [banner](../includes/banner.md)]
-
 
 This topic provides an overview of the tasks to fulfill service agreements. The topic also lists the forms that are associated with each business process component and discusses the tasks that are associated with each business process component.
 
@@ -46,9 +45,9 @@ The following table lists the forms that support the Fulfill service contracts b
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">

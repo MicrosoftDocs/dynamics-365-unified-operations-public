@@ -54,7 +54,7 @@ For more information, see [Download Electronic reporting configurations from Lif
 7. On the **Sales tax** tab, on the **Yearly tax communication** FastTab, in the **Format mapping** field, select the **Yearly tax communication (IT)** format that you downloaded earlier.
 8. Go to **Tax \> Setup \> Sales tax \> Yearly tax communication setup**.
 
-![Yearly tax communication setup page](media/1_Yearly_tax_communication_setup.png)
+![Yearly tax communication setup page.](media/1_Yearly_tax_communication_setup.png)
 
 > [!NOTE]
 > To view the "Yearly VAT communication" form for the year 2020, and instructions for it, see [Model and instructions - VAT 2020](https://www.agenziaentrate.gov.it/portale/web/guest/iva-2020/modello-e-istruzioni-imprese).
@@ -154,7 +154,7 @@ For more information, see [Download Electronic reporting configurations from Lif
 
 10. For fields where the **Calculation** field is set to **Tax transactions**, on the **Selected tax codes** tab, select **New** to a add a line for each sales tax code that should be available as a field value.
 
-    ![Yearly tax communication setup page, Selected tax codes tab](media/2_Yearly_tax_communication_setup.png)
+    ![Yearly tax communication setup page, Selected tax codes tab.](media/2_Yearly_tax_communication_setup.png)
 
 11. Select **Exceptions** to set up main accounts that should be excluded from the query.
 
@@ -169,7 +169,7 @@ You can do the following additional setup for fields where the **Calculation** f
 13. Select the line where the **Calculation** field is set to **Total**.
 14. On the **Total amount** tab, select **New** to add lines for all fields that should be totaled.
 
-    ![Yearly tax communication setup page, Total amount tab](media/3_Yearly_tax_communication_setup.png)
+    ![Yearly tax communication setup page, Total amount tab.](media/3_Yearly_tax_communication_setup.png)
 
 15. Set the following fields.
 
@@ -208,7 +208,7 @@ In the **Format** column, you can specify a field format. In addition to **NU**a
 1. Go to **Tax \> Declarations \> Sales tax \> Yearly tax communication**.
 2. Select **Create new** to create header information for the **Yearly tax communication** report for the previous year. The number of lines that are created matches the number of Italian sales tax books.
 
-![Yearly tax communication page, Overview tab](media/4_Yearly_tax_communication_setup.png)
+![Yearly tax communication page, Overview tab.](media/4_Yearly_tax_communication_setup.png)
 
 3. On the **General** tab, review the following information.
 
@@ -1107,13 +1107,13 @@ To download example setup for the 2020 declaration, see [IVA example setup 2020]
 1. Go to **Tax \> Setup \> Sales tax \> Yearly tax communication setup**.
 2. Select the **Open in Microsoft Office** button, and then, under **Open in Excel**, select **Yearly tax communication setup (DEMF)**.
 
-    ![Yearly tax communication setup (DEMF) selection](media/6_Export_to_Excel.png)
+    ![Yearly tax communication setup (DEMF) selection.](media/6_Export_to_Excel.png)
 
 3. Select **Download**.
 4. Open the downloaded file, and enable editing.
 5. Copy the data from the file downloaded above and paste the data to the file that is opened, and then select **Publish**.
 
-    ![Publish button](media/5_Export_to_Excel.png)
+    ![Publish button.](media/5_Export_to_Excel.png)
 
 6. Review settings and make necessary updates. For example, set up sales tax codes that exist in the application.
 7. Consider the following information. Some totals are not configured in the example and should be calculated manually using the formula specified in official guidance. These are the following totals:

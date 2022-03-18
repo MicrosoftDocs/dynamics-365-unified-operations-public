@@ -4,7 +4,7 @@
 title: Platform updates for version 10.0.20 of Finance and Operations apps (August 2021)
 description: This topic lists the features that are included in the platform updates for version 10.0.20 of Finance and Operations apps.
 author: sericks007
-ms.date: 05/27/2021
+ms.date: 10/27/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,7 +29,6 @@ ms.dyn365.ops.version: 10.0.20
 # Platform updates for version 10.0.20 of Finance and Operations apps (August 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This topic lists the features that are included in the platform updates for version 10.0.20 of Finance and Operations apps. This version has a build number of 7.0.6060 and is available on the following schedule:
 
@@ -46,7 +45,8 @@ Most of these features must be enabled using [Feature management](../../fin-ops/
 
 | Feature area   | Feature                                                  | More information                                                                    |
 |----------------|----------------------------------------------------------|-------------------------------------------------------------------------------------|
-| System administration | **Internet Explorer end-of-support notifications**<br><br>Users accessing Finance and Operations apps via Internal Explorer (IE) will start seeing notifications about the end of support for that browser. IE users will first see an informational message that IE support is ending on August 17, 2021 (the publicly announced, end-of-support date for IE), followed by a warning that support has officially ended. Organizations are encouraged to keep these notifications live unless IE is mandated for their users, in which case you can choose to suppress these notifications and rely on internal processes for migrating your user base to Microsoft Edge or another modern browser.<br><br>The current target for blocking IE usage with Finance and Operations app is with the April 2022 release. Starting in January 2022, users will start seeing a non-dismissible error message that indicates that IE support will soon be blocked. This error message is not controlled by this feature, and customers will need to contact Microsoft Support if this message needs to be suppressed for their organization. | [System requirements for cloud deployments](../../fin-ops/get-started/system-requirements.md)</br></br>[System requirements for on-premises deployments](../../fin-ops/get-started/system-requirements-on-prem.md) |
+| System administration | [Internet Explorer end-of-support notifications](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/internet-explorer-end-of-support-notifications)| [System requirements for cloud deployments](../../fin-ops/get-started/system-requirements.md)</br></br>[System requirements for on-premises deployments](../../fin-ops/get-started/system-requirements-on-prem.md) |
+| Organization administration | [Document attachment history](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/document-attachment-history) | [Configure document management](../../fin-ops/organization-administration/configure-document-management.md#document-attachment-history) |
 
 ## New and updated documentation resources
 We have recently added or significantly updated the following help topics. They aren't necessarily related to the new features added for this release, as listed in the previous section, but they may help you to get more out of existing features.
@@ -68,7 +68,7 @@ We have recently added or significantly updated the following help topics. They 
 
 ### Bug fixes
 
-For information about the bug fixes that are included in this update, s)ign in to Microsoft Dynamics Lifecycle Services (LCS), and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=586707&dbType=3&qc=d0dad8eee2af234e8c288e2a7df14c579004518673d014be511f900cfed008f8).
+For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services (LCS), and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=586707&dbType=3&qc=d0dad8eee2af234e8c288e2a7df14c579004518673d014be511f900cfed008f8).
 
 ### Dynamics 365: 2021 release wave 1 plan
 

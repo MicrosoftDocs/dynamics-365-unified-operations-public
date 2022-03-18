@@ -46,7 +46,7 @@ The **Maintenance request details** report shows various information that is rel
 
 The following illustration shows an example of the **Maintenance request details** report.
 
-![Maintenance request details report](media/09-manage-maintenance-requests.png)
+![Maintenance request details report.](media/09-manage-maintenance-requests.png)
 
 ## Create a Maintenance request list report
 
@@ -59,7 +59,7 @@ The **Maintenance request list** report shows a list of all maintenance requests
 
 The following illustration shows an example of the **Maintenance request list** report for all active maintenance requests.
 
-![Maintenance request list report](media/10-manage-maintenance-requests.png)
+![Maintenance request list report.](media/10-manage-maintenance-requests.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -5,7 +5,7 @@ title: Shipping discount overview
 description: This topic describes the shipping discount capabilities within Dynamics 365 Commerce and the corresponding setup steps required to start using these discounts.
 author: ShalabhjainMSFT
 ms.date: 01/22/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
 # ms.tgt_pltfrm: 
-ms.custom: 
+
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Retail
@@ -37,11 +37,11 @@ This topic provides an overview of the shipping promotion capability available w
 
 This feature leverages the advanced auto charges capability that was available in the call center and e-Commerce modules but has now been made available in POS. For more information, see [Omni-channel advanced auto charges](/dynamics365/unified-operations/retail/omni-auto-charges). These advanced auto charges need to be enabled for shipping promotion to work. These can be enabled by turning on the "Use advanced auto-charges" configuration on the **Commerce parameters** \> **Customer orders** tab. Retailers can use the advanced auto charges feature to set various types of charges such as handling, installation, and disposal, however, the shipping discount is only applied to the shipping charges. Thus, the retailer needs to specify which of the charges are shipping charges. To specify a shipping charge, go to **Retail and Commerce** \> **Retail and Commerce IT** \> **Channel setup** \> **Charges** \> **Charge codes**. Select the **Shipping charge** check box for the desired charges. This is the only prerequisite for using the shipping threshold discount. 
 
-![Specify a charge as shipping charge](./media/Specify_shipping_charge.png " Specify a charge as shipping charge ")
+![Specify a charge as shipping charge.](./media/Specify_shipping_charge.png " Specify a charge as shipping charge ")
 
 The next step is to configure the shipping discount itself. To do this, go to **Retail and Commerce** \> **Pricing and discounts** \> **shipping discounts** \> **Shipping threshold discount**. You can define the thresholds, set the discount percent that should be applied when the thresholds are met, and choose a mode of delivery for which this discount applies, such as Standard overnight or Two-day shipping.
 
-![Create a retail shipping threshold discount](./media/shipping_discount_setup.png " Create a retail shipping threshold discount ")
+![Create a retail shipping threshold discount.](./media/shipping_discount_setup.png " Create a retail shipping threshold discount ")
 
 Like product discounts, this discount honors all the existing standard discount capabilities, such as allowing the retailer to restrict these discounts with coupons so that only the customers with coupons can get these discounts. Also, these discounts leverage the Price groups capability to determine the eligibility of the discount. For example, the retailer can choose to run these promotions only in the online channels and/or across channels for certain customer groups such as loyalty customers. Lastly, to view the charges applied on the sales lines and the applied promotion, you need to add **Manage charges** on the POS screen. Go to the **Screen layout** page to make those changes. Now run the jobs 1020, 1040, 1090, and 1110 to send the charges, shipping promotion, and screen layout information to the channels. 
 

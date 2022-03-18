@@ -3,7 +3,7 @@
 
 title: Invoice subscription transactions 
 description: Invoice subscription transactions 
-author: ShylaThompson
+author: kamaybac
 ms.date: 05/03/2018
 ms.topic: article
 ms.prod: 

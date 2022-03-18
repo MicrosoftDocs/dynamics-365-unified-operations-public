@@ -1,37 +1,22 @@
 ---
-# required metadata
-
 title: Dual-write overview
 description: This topic provides an overview dual-write, which provides near-real-time interaction between customer engagement apps and Finance and Operations apps.
 author: RamaKrishnamoorthy
 ms.date: 02/06/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
+ms.topic: overview
 audience: Application User, IT Pro
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: global
-ms.search.industry: 
-ms.author: ramasri
-ms.dyn365.ops.version: 
-ms.search.validFrom: 2020-01-06
+ms.reviewer: tfehr
 
+ms.search.region: global
+ms.author: ramasri
+ms.search.validFrom: 2020-01-06
 ---
 
 # Dual-write overview
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 
 
@@ -41,7 +26,7 @@ Dual-write is an out-of-box infrastructure that provides near-real-time interact
 
 Dual-write provides tightly coupled, bidirectional integration between Finance and Operations apps and Dataverse. Any data change in Finance and Operations apps causes writes to Dataverse, and any data change in Dataverse causes writes to Finance and Operations apps. This automated data flow provides an integrated user experience across the apps.
 
-![Data relationship between apps](media/dual-write-overview.jpg)
+![Data relationship between apps.](media/dual-write-overview.jpg)
 
 Dual-write has two aspects: an *infrastructure* aspect and an *application* aspect.
 
@@ -78,17 +63,13 @@ Dual-write creates a mapping between concepts in Finance and Operations apps and
 + Ability to look up on-hand inventory availability and details
 + Project-to-cash experience
 + Ability to handle multiple addresses and roles through the party concept
-+ Single source management for users
-+ Integrated channels for retailing and marketing
-+ Visibility into promotions and discounts
-+ Request-for-service functions
-+ Streamlined service operations
+
 
 ## Top reasons to use dual-write
 
 Dual-write provides data integration across Microsoft Dynamics 365 applications. This robust framework links environments and enables different business applications to work together. Here are the top reasons why you should use dual-write:
 
-+ Dual-write provides tightly coupled, near-real-time, and bidirectional integration between Finance and Operations apps and model-driven apps in Dynamics 365. This integration makes Microsoft Dynamics 365 the one-stop shop for all your business solutions. Customers who use Dynamics 365 Finance and Dynamics 365 Supply Chain Management, but who use non-Microsoft solutions for customer relationship management (CRM), are moving toward Dynamics 365 for its dual-write support.
++ Dual-write provides tightly coupled, near-real-time, and bidirectional integration between finance and operations apps and customer engagement apps. This integration makes Microsoft Dynamics 365 the one-stop shop for all your business solutions. Customers who use Dynamics 365 Finance and Dynamics 365 Supply Chain Management, but who use non-Microsoft solutions for customer relationship management (CRM), are moving toward Dynamics 365 for its dual-write support.
 + Data from customers, products, operations, projects, and the Internet of Things (IoT) automatically flows to Dataverse through dual-write. This connection is useful for businesses that are interested in Power Platform expansions.
 + The dual-write infrastructure follows the no-code/low-code principle. Minimal engineering effort is required to extend the standard table-to-table maps and to include custom maps.
 + Dual-write supports both online mode and offline mode. Microsoft is the only company that offers support for online and offline modes.

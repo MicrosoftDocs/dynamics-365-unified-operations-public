@@ -2,9 +2,9 @@
 # required metadata
 
 title: Manage features in Human Resources
-description: Learn how to turn new features on or off in Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 04/06/2020
+description: This topic describes the Feature management feature and how you can use it.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,13 +21,16 @@ ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
 ---
 
 # Manage features in Human Resources
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -74,7 +77,7 @@ Benefits management replaces functionality in the **Benefits** workspace. When y
 - **Benefit eligibility policies**
 - **Eligibility events**
 
-You can view the information in these forms in read-only mode. If you want to edit the information, you must first disable Benefits management (applicable to **Sandbox** environments only).
+You can view the information in these pages in read-only mode. If you want to edit the information, you must first disable Benefits management (applicable to **Sandbox** environments only).
 
 ## Enable or disable Leave and absence
 

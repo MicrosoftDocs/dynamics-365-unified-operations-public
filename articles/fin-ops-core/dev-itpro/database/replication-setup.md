@@ -43,7 +43,7 @@ The following prerequisites are needed for the **Online Database Migration Toolk
     SELECT @installed; 
      ```
      
-	If the replication components are not installed, follow the steps in [Install SQL Server replication](/sql/database-engine/install-windows/install-sql-server-replication?view=sql-server-ver15). 
+	If the replication components are not installed, follow the steps in [Install SQL Server replication](/sql/database-engine/install-windows/install-sql-server-replication). 
 
 -	SQL Agent should be running in the source database server.
 
@@ -139,7 +139,7 @@ RECONFIGURE WITH OVERRIDE
 
 The following publications will get created in the source database when setting up the replication.
 
-![Publications that will get created in the source database when setting up the replication](media/Replication.png)
+![Publications that will get created in the source database when setting up the replication.](media/Replication.png)
 
 ## Find the replication status and get an exception
 
@@ -161,27 +161,27 @@ To find the replication status configuration and status using SQL Server Managem
 
 - To determine if the replication feature is available and installed on the server, you should see the Replication folder in Object Explorer.
    
-   ![Replication folder](media/Replication1.png)
+   ![Replication folder.](media/Replication1.png)
 
 - After executing the **Replication_03_PublisherTables.ps1** script, you should be able to see the publisher configured under the Replication folder.
     
-    ![See publishers under the Replication folder](media/Replication2.png)
+    ![See publishers under the Replication folder.](media/Replication2.png)
 
 - To determine the replication status, right-click the **Replication** folder and select **Launch Replication Monitor**.
    
-   ![Select Launch Replication Monitor in the menu](media/Replication3.png)
+   ![Select Launch Replication Monitor in the menu.](media/Replication3.png)
 
 - In the **Replication Monitor** window, you can see all the publishers that have been created for replication.
     
-    ![All the publishers that have been created for replication](media/Replication4.png)
+    ![All the publishers that have been created for replication.](media/Replication4.png)
 
 - Select the **Snapshot** tab to see the status of the snapshot.
   
-  ![Select the Snapshot tab to see the status of the snapshot](media/Replication5.png)
+  ![Select the Snapshot tab to see the status of the snapshot.](media/Replication5.png)
 
 - To view the detail log/transaction, double-click the item.
    
-   ![To view the detail log/transaction, double-click on the item](media/Replication6.png)
+   ![To view the detail log/transaction, double-click on the item.](media/Replication6.png)
 
 - To view the data replication to the target, select the **All Subscription** tab and double-click the subscription for the item. 
 
@@ -193,5 +193,6 @@ To find the replication status configuration and status using SQL Server Managem
 | The subscriptions have been marked as inactive and must be reinitialized. NoSync subscriptions will need to be dropped and recreated. (Source: MSSQLServer, Error number: 21074) | 1) Check the status in the source database using the following query and update the status to &quot;2&quot; for the specific publication</br><em><br>Check the status, you can get the srvname from this output query</em></br>**select** * **from** syssubscriptions **WHERE** status != 2</br><em><br>Update only if the status !=2</em></br>**Update** syssubscriptions **SET** status = 2 **where** srvname = 'your target server name'</br><br>2) Check the status in the distributor database with the following query and update the status to &quot;2&quot; for the specific publication</br><em><br>To get the publication_id, use this following query and match this with your publication name</em></br>**SELECT** * **FROM** MSpublications</br><em><br>Check the status using the following query</em></br>**SELECT** * **FROM** MSsubscriptions **WHERE** status !=2 publication_id = &lt;@publicationId&gt;</br><em><br>Update if the status is !-2 for that specific publication_id</em></br>**Update** MSsubscriptions **SET** status = 2 **where** publication_id = &lt;@publicationId&gt; |
 | Error messages:</br><em><br>The process could not execute 'sp_replcmds' on 'replicationsrv\MSSQLSERVER2016'. (Source: MSSQL_REPL, Error number: MSSQL_REPL20011)</em></br><em>Get help: http://help/MSSQL_REPL20011</em></br><em><br>Cannot execute as the database principal because the principal &quot;dbo&quot; does not exist, this type of principal cannot be impersonated, or you do not have permission. (Source: MSSQLServer, Error number: 15517)</em></br><em>Get help: http://help/15517</em></br><em><br>The process could not execute 'sp_replcmds' on 'replicationsrv\MSSQLSERVER2016'. (Source: MSSQL_REPL, Error number: MSSQL_REPL22037)</em></br><em>Get help: http://help/MSSQL_REPL22037</em> | Execute this in the source database and sign in with the credentials that you used to create the publication</br>**EXEC** sp_changedbowner 'sa' |
 | To remove/delete a publication | Execute this stored procedure in the source database;</br><em><br>Clean the subscription:</em></br>**exec** sp_subscription_cleanup @publisher = @publisherServer, @publisher_db = @publisherDb, @publication = @publicationName</br><em><br>Drop the subscription:</em></br>**exec** sp_dropsubscription @publication = @publicationName, @subscriber = N'all', @article = N'all'</br><em><br>Drop the publication:</em></br>**exec** sp_droppublication @publication = @publicationName |
-| To remove an article from the publication, see [sp_dropsubscription (Transact-SQL)](https://docs.microsoft.com/sql/relational-databases/system-stored-procedures/sp-dropsubscription-transact-sql?view=sql-server-ver15) | Execute this stored procedure in the source database:<br><br>**EXEC** sp_dropsubscription</br>@publication = @publication,</br>@article = N'all',</br>@subscriber = @subscriber;</br><em><br>Example: </em></br>**EXEC** sp_dropsubscription @publication = N'OtherObjects_sp', @article = N'MaintainShipCarrierRole', @subscriber = N'SPARTAN-SRV-NAM-D365OPSDEV-D5E38124F9F8.DATABASE.WINDOWS.NET'; |
+| To remove an article from the publication, see [sp_dropsubscription (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-dropsubscription-transact-sql) | Execute this stored procedure in the source database:<br><br>**EXEC** sp_dropsubscription</br>@publication = @publication,</br>@article = N'all',</br>@subscriber = @subscriber;</br><em><br>Example: </em></br>**EXEC** sp_dropsubscription @publication = N'OtherObjects_sp', @article = N'MaintainShipCarrierRole', @subscriber = N'SPARTAN-SRV-NAM-D365OPSDEV-D5E38124F9F8.DATABASE.WINDOWS.NET'; |
+
 

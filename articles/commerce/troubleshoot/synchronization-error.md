@@ -37,7 +37,7 @@ This topic provides troubleshooting guidance that can help fix an error that mig
 
 When you sync an online order, you receive the following error message: "There must be a default payment service to process credit card transactions."
 
-![Missing default payment service error](media/default-payment-method-error.jpg)
+![Missing default payment service error.](media/default-payment-method-error.jpg)
 
 ## Resolution
 

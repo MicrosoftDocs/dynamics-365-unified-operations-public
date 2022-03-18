@@ -18,10 +18,11 @@ audience: Application User
 ms.reviewer: roschlom
 
 # ms.tgt_pltfrm: 
-ms.custom: 4464
+ms.custom: ["4464", "intro-internal"]
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 # ms.search.industry: 
+ms.custom: intro-internal
 ms.author: moaamer
 ms.search.validFrom: 2020-09-24
 ms.dyn365.ops.version: 10.0.14
@@ -40,7 +41,7 @@ For more information regarding accounting standards, refer to the standard docum
 ## Asset leasing elements
 The following diagram shows the main elements of the business process for leases.
 
-[![Asset leasing elements](./media/overview-01.png)](./media/overview-01.png)
+[![Asset leasing elements.](./media/overview-01.png)](./media/overview-01.png)
 
 A leased asset contains the following main components:
 
@@ -59,7 +60,7 @@ Asset leasing maps lease information, payment schedules, starting and ending dat
 
 The following diagram shows the lease book, the lease, calculated payment schedule, the classification tests for leases and lease books, and the corresponding accounting transactions.
 
-[![Leasing, lease book, and payment schedule](./media/overview-02.png)](./media/overview-02.png)
+[![Leasing, lease book, and payment schedule.](./media/overview-02.png)](./media/overview-02.png)
 
 - **Lease book** - The lease book includes all the lease contract information such as lease terms, fair value, and lease payments. It also includes the accounting standard that you're following, the lease type and thresholds that are considered in the lease classification test. The lease book also contains the lease transactions that posted to general ledger. 
   
@@ -122,7 +123,7 @@ The first period will start with period zero, if the annuity type is annuity due
 
 Classification tests include Transfer of ownership, Purchase option, Lease term, Net present value, and Unique asset. The following diagram illustrates the lease classification tests.
 
-[![Lease classification tests](./media/overview-03.png)](./media/overview-03.png)
+[![Lease classification tests.](./media/overview-03.png)](./media/overview-03.png)
 
 Each lease type handles accounting differently for different lease transactions. The transactions include initial recognition, interest expense, lease due payment and lease depreciation, and they’re based on the accounting standards you’re following (IFRS 16 or ASC 842). Ledger accounts are defined under the lease posting profile for each transaction type and accounting framework.
 
@@ -238,7 +239,7 @@ Complete the following steps to create a new lease.
 
    The **Payment schedule** page lists future payment schedules for a lease ID. Select **Confirm schedule** to be able to post the **Initial recognition** transactions. 
 
-[![Initial recognition function](./media/overview-13.png)](./media/overview-13.png)
+[![Initial recognition function.](./media/overview-13.png)](./media/overview-13.png)
 
 8. Select **Initial recognition** to create initial recognition journal. 
 
@@ -252,7 +253,7 @@ Complete the following steps to create a new lease.
 
    The **Asset depreciation schedule** page shows the depreciation transactions for the selected lease ID. 
 
-   [![ROU asset transactions page](./media/overview-20.png)](./media/overview-20.png)
+   [![ROU asset transactions page.](./media/overview-20.png)](./media/overview-20.png)
 
    The **ROU asset transactions** page lists initial recognition, accumulated depreciation, and the asset balance. 
 

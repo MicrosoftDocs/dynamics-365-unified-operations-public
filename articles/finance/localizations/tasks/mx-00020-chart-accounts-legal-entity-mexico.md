@@ -36,7 +36,7 @@ Set up specific parameters in the chart of accounts to allow the generation of e
 3. In the Main account field, type a value.
 4. In the Name field, type a value.
 5. In the DB/CR default field, select an option.
-    * Use this field to specify the typical transaction (debit/credit). This field is used in the XML file to report the government type of main account in the node <Natur>.  Main account type will be used to determine the government type of account when this field is blank.  
+    * Use this field to specify the typical transaction (debit/credit). This field is used in the XML file to report the government type of main account in the node `<Natur>`.  Main account type will be used to determine the government type of account when this field is blank.  
 6. In the Parent account field, click the drop-down button to open the lookup.
     * Example: 110  Use this file to set up the parent main account of the previous level.     Leave this field blank when the main account represents the first level of company in the chart of accounts.    
 7. In the list, find and select the desired record.

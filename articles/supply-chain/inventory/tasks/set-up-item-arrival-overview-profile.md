@@ -3,7 +3,7 @@
  
 title: Set up an item arrival overview profile
 description: This topic focuses on the setup of an arrival overview profile. 
-author: ShylaThompson
+author: yufeihuang
 ms.date: 07/30/2019
 ms.topic: business-process 
 ms.prod:  
@@ -16,16 +16,16 @@ audience: Application User
 # ms.devlang:  
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom: "intro-internal"
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: kamaybac
+ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Set up an item arrival overview profile
 
-[!include [banner](../../includes/banner.md)]]
+[!include [banner](../../includes/banner.md)]
 
 This topic focuses on the setup of an arrival overview profile. The arrival overview profile is a collection of rules that will be applied when the Arrival overview page is opened by a user. You can use this procedure in demo data company USMF. This procedure would typically be carried out by a receiving clerk.
 

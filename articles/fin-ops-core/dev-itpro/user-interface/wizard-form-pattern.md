@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer 
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 14671
 ms.assetid: 564b88d7-85f5-488a-bbbe-19eff7194321
@@ -39,7 +39,7 @@ A wizard is a special form of user assistance that takes the user through a task
 
 ## Wireframe
 
-[![Wireframe for Wizard form](./media/wizard1-1024x574.png)](./media/wizard1.png)
+[![Wireframe for Wizard form.](./media/wizard1-1024x574.png)](./media/wizard1.png)
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
@@ -97,7 +97,7 @@ The verification checklist shows the steps for manually verifying that the form 
 ## Examples
 Form: **WrkCtrBulkResReqEditWizard** 
 
-![Wizard example](./media/wizard2.png)
+![Wizard example.](./media/wizard2.png)
 
 ## Appendix
 ### Frequently asked questions
@@ -117,7 +117,7 @@ This section will have answers to frequently asked questions that are related to
 
 #### AX 2012 example
 
-[![Previous version example](./media/wizard3.png)](./media/wizard3.png)
+[![Previous version example.](./media/wizard3.png)](./media/wizard3.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

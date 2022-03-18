@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Select analytical workspaces from Power BI 
+title: Select analytical workspaces from Power BI  (contains video)
 description: This topic explains how to select a report that is hosted in Power BI and use it for an application workspace.
 author: RichdiMSFT
 ms.date: 07/09/2020
@@ -58,11 +58,11 @@ To replace the standard reports, you must be a member of the System Report Edito
 
 1. Sign in and open the application report that you want to customize. In this example, you will replace the standard analytical report that is embedded in the **Compensation management** workspace.
 
-    ![Compensation management workspace](media/compensation-management-workspace.png)
+    ![Compensation management workspace.](media/compensation-management-workspace.png)
 
 2. Select the **Analytics** tab to access the workspace's embedded analytical report.
 
-    ![Analytics tab in the Compensation management analytical workspace](media/compensation-management-analytics.png)
+    ![Analytics tab in the Compensation management analytical workspace.](media/compensation-management-analytics.png)
 
     By default, you will see the standard analytical workspace solution that is included with your application. The reports in this solution are automatically deployed and configured for your environment during the provisioning process.
 
@@ -71,7 +71,7 @@ To replace the standard reports, you must be a member of the System Report Edito
 
 3. On the Action Pane, on the **Options** tab, in the **Power BI** group, select **Select Analytics** to open the **Power BI Reports** dialog box.
 
-    ![Power BI Reports dialog box](media/select-powerbi-report-analytics.png)
+    ![Power BI Reports dialog box.](media/select-powerbi-report-analytics.png)
 
     This dialog box lets you select among the reports that have been shared on the PowerBI.com service. The reports are organized by workspace.
 
@@ -80,7 +80,7 @@ To replace the standard reports, you must be a member of the System Report Edito
 6. To view the updates to the workspace, you must reload the page. Either move away from the workspace and then return, or refresh your browser.
 7. In the **Compensation management** workspace, select the **Analytics** tab to access the PowerBI.com report that is now embedded in the analytical workspace.
 
-    ![Custom analytical workspace](media/custom-powerbi-report-analytics.png)
+    ![Custom analytical workspace.](media/custom-powerbi-report-analytics.png)
 
 ### Revert to the standard solution
 
@@ -88,7 +88,7 @@ After a PowerBI.com report has been embedded in an application workspace, update
 
 1. On the Action Pane, on the **Options** tab, in the **Power BI** group, select **Restore Analytics**.
 
-    ![Restore Analytics button](media/restore-powerbi-report-analytics.png)
+    ![Restore Analytics button.](media/restore-powerbi-report-analytics.png)
 
 2. To view the updates to the workspace, you must reload the page. Either move away from the workspace and then return, or refresh your browser.
 3. In the **Compensation management** workspace, select the **Analytics** tab to access the standard solution that is now embedded in the analytical workspace.

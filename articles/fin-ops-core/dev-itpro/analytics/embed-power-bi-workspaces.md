@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Analytical Workspaces (using Power BI Embedded)
+title: Analytical Workspaces (using Power BI Embedded) (contains video)
 description: This topic describes how you can use Power BI to deliver rich, interactive reports seamlessly integrated into application workspaces.
 author: RichdiMSFT
 ms.date: 07/23/2019
@@ -42,14 +42,14 @@ The application now delivers interactive reports that seamlessly integrate into 
 
 The following screenshot shows Power BI in a workspace.
 
-![Power BI in a workspace](./media/Power-BI-in-D365-Workspace.png)
+![Power BI in a workspace.](./media/Power-BI-in-D365-Workspace.png)
 
 ## Power BI vs operational workspaces
 Power BI workspaces complement operational views with analytical insights based on near real-time information. The following offers a visual comparison of a Power BI workspace and an operational workspace.
 
 The following screenshot shows an operational workspace.
 
-![Operational workspace](./media/D365-Operational-Workspace.png)
+![Operational workspace.](./media/D365-Operational-Workspace.png)
 
 ## Edit embedded reports in analytical workspaces
 

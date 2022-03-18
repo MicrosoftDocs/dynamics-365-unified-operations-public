@@ -3,9 +3,9 @@
 
 title: Austria overview
 description: This topic provides an overview of Dynamics 365 Finance functionality that is specific to Austria.
-author: ShylaThompson
-ms.date: 07/25/2019
-ms.topic: article
+author: kfend
+ms.date: 03/04/2022
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,10 +16,9 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-# ms.custom
 ms.search.region: Austria
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 
@@ -56,11 +55,16 @@ For information about setting up the value-added tax (VAT) statement for legal e
 
 For general information about the setup of VAT statements, see [VAT reporting for Europe](emea-vat-reporting.md).
 
+## New VAT declaration U30
+Find more details about new design of VAT declaration U30 for Austria in [VAT declaration (Austria)](emea-aut-vat-declaration-austria.md)
+
 ## Reports for Austria
 
 | Report                     | How to get to the report | Additional information                 |
 |----------------------------|--------------------------|----------------------------------------|
 |Cross-border services report|**General ledger** > **Reports** > **External** > **Cross-border services**|This report prints a summary of the incoming and outgoing cross-border services, countries that are the providers or recipients of the cross-border services, and net amounts paid for the services. This report is typically used by accounting managers, accountants, and sales managers to inquire into the status of sales transactions. For more information, see [Cross-border services report](emea-aut-cross-border-services-report.md).|
+|Intrastat report|**Tax** > **Declarations** > **Foreign trade** > **Intrastat**|You can use the Intrastat page to generate and report information about trade among European Union (EU) countries. The Austrian Intrastat declaration contains information about the trade of goods for reporting. For more information, see [Austrian Intrastat](emea-aut-intrastat.md).|
+|EU sales list for Austria|**Tax** > **Declarations** > **Foreign trade** > **EU sales list**|This topic provides information about the European Union (EU) sales list report that is based on form U13. The Austrian EU sales list report contains information about the sale of goods and services. For more information, see [EU sales list for Austria](emea-aut-eu-sales-list.md).|
 
 
 ## Additional resources

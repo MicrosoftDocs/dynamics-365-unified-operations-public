@@ -3,8 +3,8 @@
 
 title: Credit management parameters setup
 description: This topic describes the options that you can use to configure Credit management to meet your business's requirements.
-author: mikefalkner
-ms.date: 08/03/2020
+author: JodiChristiansen
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,13 +15,13 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 
@@ -39,7 +39,7 @@ There are four FastTabs in the **Credit** section where you can change the param
 
 ### Credit holds
 
-- Set the **Allow edit of sales orders value after order hold is released** option to **No** to require that the posting rules be checked again if the sales order value (extended price) has been increased since the sales order was released from the on-hold list. .
+- Set the **Allow edit of sales orders value after order hold is released** option to **No** to require that the posting rules be checked again if the sales order value (extended price) has been increased since the sales order was released from the on-hold list.
 - In the **Reasons for canceled orders** field, select the release reason that will be used by default when a sales order that was on credit management hold is canceled.
 - Set the **Check customer credit groups credit limit** option to **Yes** to check the credit limit of a customer credit group when the customer on a sales order belongs to a customer credit group. The credit limit for the group will be checked, and then, if it's sufficient, the credit limit for the customer will be checked.
 - Set the **Check credit limit when payment terms are increased** option to **Yes** to check the payment terms rankings to determine whether the payment terms on the sales order differ from the default payment terms for the customer. If the new payment terms have a higher rank than the original payment terms, the order is put on credit management hold.
@@ -58,7 +58,8 @@ You can also define the number of grace days before the credit rules are checked
 
 If you don't specify the number of grace days, the credit rules will be checked at every posting step that is set up to run credit management rules. If you release the sales order without posting and then run the same order processing step again, the credit rules will be checked again. For example, an order is put on hold after a confirmation, and you release it either with or without posting. In this case, the order will be put on hold again if you confirm it again. Use grace days if the order should move on to the next processing step without being held again.
 
-You can't specify grace days for some posting checkpoints but not for others. You must set up all posting checkpoints so that they have grace days, or you must set them all up so that they don't have grace days.
+> [!Note]
+> If one posting checkpoint has a grace day entered, all checkpoints that are marked for posting need to have grace days.
 
 - Select the **Posting** check box to run the credit management rules when the posting checkpoint that is shown on the line is run. If you don't select the check box, the rules will be checked only once during the whole posting process.
 - If you select the **Posting** check box, specify the number of grace days that should pass before the blocking rules are checked again. You can't add grace days if the **Posting** check box is cleared.
@@ -80,6 +81,10 @@ Several credit management statistics are included in the **Customer credit manag
 
 - In Credit management, the customer credit limit is shown in the customer's currency. You must define the exchange rate type for the credit limit in the customer's currency. In the **Credit limit exchange rate type** field, select the type of exchange rate that should be used to convert the primary credit limit to the customer's credit limit.
 - Set the **Allow manual editing of credit limits** option to **No** to prevent users from editing credit limits on the **Customer** page. If this option is set to **No**, changes to a customer's credit limit can be made only by posting credit limit adjustment transactions.
+- Set the **Bypass inventory reservations** option to **Yes** to disregard inventory reservations when credit management blocking rules are checked. In this case, the system checks complete line quantities and enables checkpoint grace periods, regardless of the inventory reservation quantity.
+- When Credit management is enabled, the setting of the **Message when exceeding credit limit** field is used to process only free text invoices. Although messages are still added to sales orders when customers have exceeded their credit limit, the presence of those messages won't block confirmation, printing of picking lists and packing slips, or posting of invoices.
+
+    Credit management is enabled by default, but you can disable it. If it's enabled, you use the Credit management blocking rules and checkpoints to identify when customers have exceeded their credit limit. If it's disabled, the messages that are added to sales orders based on the setting of the **Message when exceeding credit limit** field can help you identify when customers have exceeded their credit limit.
 
 ### Number sequences and shared number sequence parameters
 

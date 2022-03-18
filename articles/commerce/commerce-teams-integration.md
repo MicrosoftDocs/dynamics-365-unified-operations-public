@@ -4,7 +4,7 @@ title: Dynamics 365 Commerce and Microsoft Teams integration overview
 description: This topic presents an overview of Microsoft Dynamics 365 Commerce and Microsoft Teams integration.
 author: gvrmohanreddy
 ms.date: 03/31/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 # optional metadata
@@ -15,7 +15,7 @@ audience: Application User
 ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
-# ms.custom: 
+
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: gmohanv
@@ -53,7 +53,7 @@ The following prerequisites must be in place before you can start to use Microso
 
 The following illustration shows the conceptual architecture of Dynamics 365 Commerce and Microsoft Teams integration, using a San Francisco store as an example. Both Teams and the Commerce POS application use Microsoft Planner as a repository so that tasks published from Teams appear in the POS application and ad hoc tasks created by store managers in the POS application appear in Teams, resulting in a seamless task management experience between the applications.    
 
-![Architecture of Commerce and Teams integration](media/d365-commerce-teams-integration-conceptual-architecture.png)
+![Architecture of Commerce and Teams integration.](media/d365-commerce-teams-integration-conceptual-architecture.png)
 
 ## Additional resources
 

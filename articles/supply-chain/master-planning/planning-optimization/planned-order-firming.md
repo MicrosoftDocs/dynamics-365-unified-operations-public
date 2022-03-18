@@ -30,23 +30,21 @@ This topic describes each method in detail.
 
 Most planned order features are available in all standard installations of Microsoft Dynamics 365 Supply Chain Management that use Planning Optimization. However, a few of the features that are described in this topic must be turned on in Feature management before you can use them.
 
-### Enable parallelized firming of planned orders
+### Turn parallelized firming of planned orders on or off
 
-Parallelized firming helps speed up the firming process by parallelizing it across multiple threads. This approach can be useful when many planned orders are firmed.
-
-To make this functionality available in your system, go to [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the *Parallel firming of planned orders* feature.
+Parallelized firming helps speed up the firming process by parallelizing it across multiple threads. This approach can be useful when many planned orders are firmed. To use this functionality, the *Parallel firming of planned orders* feature must be turned on for your system. As of Supply Chain Management version 10.0.21, this feature is turned on by default. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.25, then you can turn this functionality on or off by going to [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and searching for the *Parallel firming of planned orders* feature.
 
 ### Enable planned order firming with filtering
 
 Planned order firming with filtering lets you define logical criteria for selecting which planned orders to firm. You can also preview which planned orders were selected, run the process in the background, and/or schedule it as a batch job.
 
-To make this functionality available in your system, go to [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the *Planned order firming with filtering* feature.
+As of Supply Chain Management version 10.0.25, this feature is turned on by default. Admins can turn this functionality on or off by searching for the *Planned order firming with filtering* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ### Enable auto-firming for Planning Optimization
 
 Automatic firming lets you firm planned orders as part of the master planning process during the time fence for firming. Auto-firming is always supported for the planning engine that is built into Supply Chain Management. However, to use it with Planning Optimization too, you must turn on the feature.
 
-To make this functionality available in your system, go to [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the *Auto-firming for Planning Optimization* feature.
+To make this functionality available in your system, go to [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the *Auto-firming for Planning Optimization* feature. (As of Supply Chain Management version 10.0.21, this feature is turned on by default.)
 
 ## Manually firm planned orders
 
@@ -76,7 +74,10 @@ To manually firm planned orders, you find and select the planned orders that you
     - **Group by period** (in the **Purchase orders** section) – Select the period to group planned purchase orders by. To use this option, you must also select the **Group by vendor** option.
     - **Group by period** (in the **Transfers** section) – Select the period to group planned transfer orders by. The orders will be grouped based on **From warehouse** and **To warehouse** values.
 
-    ![Parameters FastTab in the Firming dialog box](./media/manual-firming.png "Parameters FastTab in the Firming dialog box")
+    > [!NOTE]
+    > Each of the "Group by" options causes the system to convert each planned order to a line in the single purchase order that results from the grouping.
+
+    ![Parameters FastTab in the Firming dialog box.](./media/manual-firming.png "Parameters FastTab in the Firming dialog box")
 
 1. On the **Run in the background** FastTab, set up the job so that it runs in batch mode. However, it doesn't make sense to set up a recurrent schedule when you're doing manual firming. The fields work just as they work for other types of [background jobs](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Supply Chain Management. However, for manual firming, the batch job will process only the currently selected planned orders. It won't process any orders that fit the filters that are currently applied on the page.
 1. Select **OK** to apply your settings and generate the firmed orders.
@@ -119,8 +120,6 @@ If you set all the previously mentioned time fences to *0* (zero), auto-firming 
 
 ## Firm planned orders by using a query
 
-[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
-
 Query-based firming lets you plan firming based on criteria that are defined in advance. Unlike auto-firming, query-based firming allows for automated firming of different subsets of orders at different points in time. Additionally, you can use either manual or automated operations to firm different types of planned orders. You can also preview which firmed orders are selected based on your settings. Therefore, you can confirm that the selection fits your expectations.
 
 You can combine auto-firming with query-based firming. For example, a query-based firming job has a forward time fence that is longer than the time fence for a matching auto-firming coverage configuration. Therefore, the query-based firming job will process its planned orders before the auto-firming is triggered. You can take advantage of this behavior to schedule orders for specific vendors differently than orders for similar products from other vendors.
@@ -137,15 +136,15 @@ To firm a planned order by using the query-based firming process, follow these s
     - **Firming time fence days forward** – Select how far in the future the various requirements and other considerations must be calculated by master planning.
     - **Firming time fence days backward** – Select how far in the past the various requirements and other considerations must be calculated by master planning.
 
-    ![Parameters FastTab in the Planned order firming dialog box](./media/planned-order-firming-main-1.png "Parameters FastTab in the Planned order firming dialog box")
+    ![Parameters FastTab in the Planned order firming dialog box.](./media/planned-order-firming-main-1.png "Parameters FastTab in the Planned order firming dialog box")
 
 1. To specify which records should be included in the order, select the **Filter** button on the **Records to include** FastTab. A standard query dialog appears, where you can define selection criteria, sorting criteria, and joins. The fields work just as they do for other types of queries in Supply Chain Management. The fields here are read-only and show values that are related to your query.
 
-    ![Records to include FastTab on the Planned order firming dialog box](./media/planned-order-firming-main-2.png "Records to include FastTab on the Planned order firming dialog box")
+    ![Records to include FastTab on the Planned order firming dialog box.](./media/planned-order-firming-main-2.png "Records to include FastTab on the Planned order firming dialog box")
 
 1. Select **Preview** to preview the content of your firmed order, based on your settings so far. The list of planned orders that will be firmed is shown as a message. You can then adjust your settings as required until the preview shows the firmed order as you intend it.
 
-    ![Example of a firmed order preview](./media/planned-order-firming-preview.png "Example of a firmed order preview")
+    ![Example of a firmed order preview.](./media/planned-order-firming-preview.png "Example of a firmed order preview")
 
     > [!WARNING]
     > This feature will firm all planned orders that match the filter criteria. Uncritical firming of planned orders can cause massive numbers of unwanted purchase, transfer, and production orders to be created. Before you continue, always use the **Preview** button to validate the records that will be included.

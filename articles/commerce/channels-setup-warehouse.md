@@ -49,7 +49,7 @@ To configure a warehouse site, follow these steps.
 
 The following image shows an example warehouse site.
 
-![Example warehouse site](media/warehouse-site.png)
+![Example warehouse site.](media/warehouse-site.png)
 
 ## Set up a warehouse
 
@@ -102,7 +102,7 @@ To set up warehouse inventory locations for standard, damaged, and returned inve
     
 The following image shows a San Francisco warehouse inventory location setup.
 
-![Example inventory location setup](media/warehouse-inventory-locations.png)
+![Example inventory location setup.](media/warehouse-inventory-locations.png)
     
 ## Complete warehouse setup
 
@@ -125,7 +125,7 @@ To complete warehouse setup, follow these steps.
 
 The following image shows details for a configured warehouse.
 
-![Example configured warehouse](media/warehouse-sample.png)
+![Example configured warehouse.](media/warehouse-sample.png)
 
 ## Additional resources
 

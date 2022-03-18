@@ -41,7 +41,7 @@ The following options, which can be found on the **Commerce** tab of released pr
 > [!NOTE]
 > These settings do not restrict the price override operation, because that sets the base price and is not treated as a discount.
 
-[![Prevent discounts field](./media/prevent-discounts.png)](./media/prevent-discounts.png)
+[![Prevent discounts field.](./media/prevent-discounts.png)](./media/prevent-discounts.png)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,10 +4,10 @@
 title: Record TDS recoverable certificate numbers
 description: This topic explains how to use the Recoverable certificates page to record the certificate numbers and dates for Tax Deducted at Source (TDS) certificates that are received for a specific vendor, customer, or ledger.
 author: kailiang
-mms.date: 02/12/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+
 ms.technology: 
 
 # optional metadata
@@ -39,7 +39,7 @@ Follow these steps to record the TDS certificate numbers and dates.
 
 1. Go to **Tax \> Indirect tax \> Withholding tax \> Recoverable certificates**.
 
-    [![Recoverable certificates page](./media/apac-ind-TDS-49.png)](./media/apac-ind-TDS-49.png) 
+    [![Recoverable certificates page.](./media/apac-ind-TDS-49.png)](./media/apac-ind-TDS-49.png) 
 
 2. On the **Recoverable certificates** page, in the **Tax type** field, select **TDS**.
 3. Select **New** to create a record.

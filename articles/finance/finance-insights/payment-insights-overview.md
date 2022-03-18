@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Customer payment predictions (preview)
+title: Customer payment predictions
 description: This topic describes the payment predictions capability that can help you better understand a customer's typical payment practices. This feature can also help identify circumstances that should cause you to start collection processes earlier than you might otherwise start them.
 author: ShivamPandey-msft
-ms.date: 06/03/2021
-ms.topic: article
+ms.date: 11/03/2021
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
 # ms.tgt_pltfrm: 
-ms.custom: 14151
+ms.custom: ["14151", "intro-internal"]
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 # ms.search.industry: 
@@ -27,10 +27,9 @@ ms.dyn365.ops.version: AX 10.0.8
 
 ---
 
-# Customer payment predictions (preview)
+# Customer payment predictions
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic describes the payment predictions capability that can help you better understand a customer's typical payment practices. This feature can also help identify circumstances that should cause you to start collections processes earlier than you might otherwise start them.
 
@@ -42,7 +41,7 @@ Organizations often find it challenging to predict when customers will pay their
 - Collections processes that start too late
 - Orders that are released to customers who might default on their payment
 
-Customer payment predictions (preview) helps organizations predict when a customer invoice will be paid. Therefore, they can create collections strategies that help increase the likelihood that they will be paid on time.
+Customer payment predictions helps organizations predict when a customer invoice will be paid. Therefore, they can create collections strategies that help increase the likelihood that they will be paid on time.
 
 ## Predictions
 
@@ -58,11 +57,11 @@ For each open invoice, the feature assigns three payment probabilities:
 
 The feature also provides an aggregated view of expected payments.
 
-[![Aggregated view of payment predictions](./media/graphic-payment-reports.png)](./media/graphic-payment-reports.png)
+[![Aggregated view of payment predictions.](./media/graphic-payment-reports.png)](./media/graphic-payment-reports.png)
 
 Each invoice is assigned a probability of on-time payment. Invoices that have a probability of on-time payment that is less than 50 percent are tagged with a red circle to indicate that they might require attention from a collections agent.
 
-[![List of payment probabilities](./media/customer-pymnt-probability-list.png)](./media/customer-pymnt-probability-list.png)
+[![List of payment probabilities.](./media/customer-pymnt-probability-list.png)](./media/customer-pymnt-probability-list.png)
 
 The Customer payment predictions feature also provides contextual information to explain the prediction. This information includes the top factors that influenced the prediction, the current state of business with the customer, and details about the customer's historical payment behavior.
 
@@ -71,11 +70,5 @@ In many businesses, the collections process has been a reactive activity. In oth
 ## Methodology
 
 In the past, it has typically been difficult to develop and deploy an artificial intelligence (AI) solution. The process has required a team that includes data scientists, subject matter experts (SMEs), and engineers, who work over time to formulate, develop, deploy, and maintain a usable AI solution. Customer payment predictions makes it easy to deploy and use an AI solution in Microsoft Dynamics 365 Finance. Microsoft is prepackaging AI solutions that are built on top of Microsoft AI Builder. Therefore, users can deploy the AI solution in a single mouse click to take advantage of the benefits of intelligent predictions. If you aren't satisfied with the accuracy of predictions, a power user can (again, in a single mouse click) enter the AI Builder extension experience, and then select or clear the fields that are used to generate predictions. When you're ready, you can "train" the model and publish the changes. The newly trained model will automatically be picked up to generate predictions in Dynamics 365 Finance.
-
-## Release details
-
-Finance Insights public preview is available to try for deployments in the United States of America, Europe, and United Kingdom. Microsoft is incrementally adding support for additional regions.
-
-Public preview features should be turned on only in Tier 2 sandbox environments. Setup and AI models that are created in a sandbox environment might not be migrated to the production environment. For more information, see [Supplemental Terms of Use for Microsoft Dynamics 365 Previews](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

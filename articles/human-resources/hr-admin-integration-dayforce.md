@@ -2,9 +2,9 @@
 # required metadata
 
 title: Configure integration with Dayforce
-description: The integration between Microsoft Dynamics 365 Human Resources and Ceridian Dayforce relies on several configuration steps that are described in this article. You must configure the integration in both Human Resources and Dayforce before you can process a pay run.
-author: andreabichsel
-ms.date: 02/03/2020
+description: This topic describes the required configuration steps needed for the integration between Microsoft Dynamics 365 Human Resources and Ceridian Dayforce.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
@@ -29,9 +29,12 @@ ms.dyn365.ops.version: Human Resources
 
 # Configure integration with Dayforce
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-The integration between Microsoft Dynamics 365 Human Resources and Ceridian Dayforce relies on several configuration steps that are described in this article. You must configure the integration in both Human Resources and Dayforce before you can process a pay run.
+The integration between Microsoft Dynamics 365 Human Resources and Ceridian Dayforce relies on several configuration steps that are described in this topic. You must configure the integration in both Human Resources and Dayforce before you can process a pay run.
 
 When you use a service such as Dayforce to complete pay runs, you must enable the integration in Human Resources. The integration requires specific data from Human Resources. Therefore, you must verify that data that is mapped to Dayforce is configured in Human Resources in a manner that supports the integration. The integration uses the following broad categories of data:
 
@@ -40,7 +43,7 @@ When you use a service such as Dayforce to complete pay runs, you must enable th
 - Payroll data, such as pay cycles, pay periods, and earning codes
 - Worker data
 
-This article describes the steps that you must follow to enable the integration. It also explains the types of data and the configuration details that the integration requires.
+This topic describes the steps that you must follow to enable the integration and explains the types of data and the configuration details that the integration requires.
 
 ## Enable the integration
 
@@ -55,7 +58,7 @@ To turn on the integration in Human Resources, follow these steps.
 
 When the integration is turned on, the data export package and files are created, and the frequency is set. You can change this frequency as you require.
 
-For more information about Azure storage accounts and Azure Storage connection strings, see the following Azure articles:
+For more information about Azure storage accounts and Azure Storage connection strings, see the following Azure topics:
 
 - [About Azure storage accounts](/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
 - [Configure Azure Storage connection strings](/azure/storage/common/storage-configure-connection-string)
@@ -69,7 +72,6 @@ Turning on the payroll integration has two primary effects:
 
 > [!NOTE]
 > The data package transferred to the SFTP endpoint is encrypted using a key that is unique to the package. The key is in an Azure Key Vault that is accessible only by Ceridian. It is not possible to decrypt and examine the data package contents. If you need to examine the contents of the data package, you need to export the "Payroll integration export" data project manually, download it, and then open it. Manual export will not apply encryption or transfer the package.
-> For instances where the integration files are sent from a Dynamics 365 Human Resources UAT or Sandbox environment to a Ceridian Dayforce Test environment, you can use the following key vault URL: https://payrollintegrationprod.vault.azure.net.
 
 ## Configure your data 
 
@@ -127,7 +129,7 @@ Dayforce creates the following deductions, based on the payroll impact that is d
 | Contribution only          | An employer deduction is created.             |
 | Deduction and contribution | Employee and employer deductions are created. |
 
-For more information about how to define and manage a benefits program, see the following articles:
+For more information about how to define and manage a benefits program, see the following topics:
 
 - [Deliver an employee benefits program](/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
 - [Create a new benefit](/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
@@ -140,7 +142,7 @@ Compensation management is used to control the delivery of base pay and awards. 
 
 Dayforce uses compensation information to calculate an employee's hourly or annual rate. Fixed compensation plans and pay rate conversions are required. Employees must be associated with a fixed compensation plan.
 
-For more information about compensation plans, see the following articles:
+For more information about compensation plans, see the following topics:
 
 - [Create fixed compensation plans](/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
 - [Create variable compensation plans](/dynamics365/unified-operations/talent/create-variable-compensation-plans)
@@ -152,7 +154,7 @@ For more information about compensation plans, see the following articles:
 
 #### Jobs 
 
-A job is a collection of the tasks and responsibilities that are required of a person who performs a job. For more information, see the following articles:
+A job is a collection of the tasks and responsibilities that are required of a person who performs a job. For more information, see the following topics:
 
 - [Setting up the components of a job](/dynamics365/unified-operations/talent/create-job)
 - [Define new jobs](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
@@ -177,7 +179,7 @@ Keep the following data and configuration in mind when you set up positions:
 
 If multiple positions in the same department are associated with the same job, they are consolidated into a single position in Dayforce.
 
-For more information, see the following articles:
+For more information, see the following topics:
 
 - [Organize your workforce using departments, jobs, and positions](/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
 - [Set up positions](/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
@@ -186,7 +188,7 @@ For more information, see the following articles:
 
 A department is an operating unit that represents a category or functional area of an organization. A department is responsible for a specific area of the organization, such as sales, accounting, or human resources. You can use departments to report on functional areas. Departments might have profit and loss responsibility.
 
-For more information, see the following articles:
+For more information, see the following topics:
 
 - [Create a department and associate it with the department hierarchy](/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
 - [Define new departments](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)

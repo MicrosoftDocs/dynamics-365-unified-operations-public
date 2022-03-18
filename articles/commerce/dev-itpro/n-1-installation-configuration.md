@@ -15,7 +15,7 @@ ms.search.form: SysAADClientTable, RetailTransactionServiceProfile
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 44351
 ms.search.region: Global
@@ -54,7 +54,7 @@ The sections in this topic describe the following steps, which you must complete
 
 The following illustration shows a high-level overview of the N-1 setup.
 
-![Phased Rollout (N-1) architecture](media/CDX/N-1/Overview.jpg)
+![Phased Rollout (N-1) architecture.](media/CDX/N-1/Overview.jpg)
 
 ## Verify that the N-1 license key is turned on
 
@@ -338,7 +338,7 @@ Follow these steps to do the actual cutover.
 
 The following illustration is a visual representation of these steps.
 
-![Phased Rollout (N-1) architecture overview](media/CDX/N-1/Cutover.jpg)
+![Phased Rollout (N-1) architecture overview.](media/CDX/N-1/Cutover.jpg)
 
 ## Troubleshooting steps
 

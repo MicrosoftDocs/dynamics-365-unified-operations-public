@@ -59,7 +59,7 @@ Note the following points:
 
 The illustration below shows an example of the **Asset counters** page.
 
-![Figure 1](media/11-work-orders.png)
+![Figure 1.](media/11-work-orders.png)
 
 On the **Asset counters** page (**Asset management** > **Inquiries** > **Assets** > **Asset counters**), you can make counter registrations on several assets at the same time, as you require.
 

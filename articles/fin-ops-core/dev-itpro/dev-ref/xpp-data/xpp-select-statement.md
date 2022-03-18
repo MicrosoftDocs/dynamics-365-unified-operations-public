@@ -1,14 +1,12 @@
 ---
 title: Select statement
 description: This topic describes the select statement in the X++ language.
-author: robinarh
-ms.date: 06/16/2020
-ms.topic: article
+author: tonyafehr
+ms.date: 08/27/2021
 audience: Developer
-ms.reviewer: rhaertle
-ms.custom: 150273
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
 ---
@@ -96,7 +94,7 @@ The following symbols are used in the syntax:
 + **\[\]** – Brackets enclose an optional element.
 + **{}** – Braces enclose an element that can be included zero or more times.
 + **\+** – A plus sign indicates an element that can be included one or more times.
-+ **|** – A bar indicates options. 
++ **|** – A bar indicates options.
 
 | Symbol                | &nbsp;  | Expression |
 |-----------------------|---|------------|
@@ -254,6 +252,32 @@ CustTable custTable;
 container conCompanies = ['dat','dmo'];
 select crossCompany :conCompanies
     * from custTable;
+```
+
+### crossCompany clause can contain arbitrary expressions
+
+The **crossCompany** clause can be used on **select** statements to indicate the companies that the search statement should take into account. The syntax has been enhanced to allow arbitrary expressions (of type container) instead of a single identifier, which is a variable of type container.
+
+This code examples creates a container with the companies.
+
+```xpp
+private void SampleMethod()
+{
+    MyTable t;
+    container mycompanies = ['dat', 'dmo'];
+    select crosscompany: mycompanies t;
+}
+```
+
+This code uses an expression instead of the variable.
+
+```xpp
+private void SampleMethod()
+{
+    MyTable t;
+    container mycompanies = ['dat', 'dmo'];
+    select crosscompany: (['dat'] + ['dmo']) t;
+}
 ```
 
 ## desc keyword
@@ -733,6 +757,5 @@ select * from custTable
     where custTable.accountNum > "100";
 info("AccountNum: " + custTable.AccountNum);
 ```
-
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

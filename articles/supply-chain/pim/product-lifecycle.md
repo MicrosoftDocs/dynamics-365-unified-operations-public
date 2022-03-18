@@ -3,9 +3,9 @@
 
 title: Product lifecycle state overview
 description: A product lifecycle state documents the lifecycle state of a released product or product variant.  
-author: cvocph
+author: t-benebo
 ms.date: 01/06/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,11 +17,11 @@ audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 
+
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: 
-ms.author: kamaybac
+ms.author: benebotg
 ms.dyn365.ops.version: 7.3 
 ms.search.validFrom: 2017-12-31
 

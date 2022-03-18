@@ -1,28 +1,13 @@
 ---
-# required metadata
-
 title: Set up the mapping for the sales order status columns
 description: This topic explains how to set up the sales order status columns for dual-write.
 author:  dasani-madipalli
 ms.date: 06/25/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: 
 ms.author: damadipa
-ms.dyn365.ops.version: 
 ms.search.validFrom: 2020-06-25
 ---
 
@@ -103,7 +88,7 @@ To enable the **IsSOPIntegrationEnabled** attribute, follow these steps.
 1. In a browser, go to `https://<test-name>.crm.dynamics.com/api/data/v9.0/organizations`. Replace **\<test-name\>** with your company's link to Sales.
 2. On the page that is opened, find **organizationid**, and make a note of the value.
 
-    ![Finding organizationid](media/sales-map-orgid.png)
+    ![Finding organizationid.](media/sales-map-orgid.png)
 
 3. In Sales, open the browser console, and run following script. Use the **organizationid** value from step 2.
 
@@ -122,33 +107,33 @@ To enable the **IsSOPIntegrationEnabled** attribute, follow these steps.
     );
     ```
 
-    ![JavaScript code in the browser console](media/sales-map-script.png)
+    ![JavaScript code in the browser console.](media/sales-map-script.png)
 
 4. Verify that **IsSOPIntegrationEnabled** is set to **true**. Use the URL from step 1 to check the value.
 
-    ![IsSOPIntegrationEnabled set to true](media/sales-map-integration-enabled.png)
+    ![IsSOPIntegrationEnabled set to true.](media/sales-map-integration-enabled.png)
 
 To enable the **isIntegrationUser** attribute, follow these steps.
 
 1. In Sales, go to **Setting \> Customization \> Customize the System**, select **User table**, and then open **Form \> User**.
 
-    ![Opening the user form](media/sales-map-user.png)
+    ![Opening the user form.](media/sales-map-user.png)
 
 2. In Field Explorer, find **Integration user mode**, and double-click it to add it to the form. Save your change.
 
-    ![Adding the Integration user mode column to the form](media/sales-map-field-explorer.png)
+    ![Adding the Integration user mode column to the form.](media/sales-map-field-explorer.png)
 
 3. In Sales, go to **Setting \> Security \> Users**, and change the view from **Enabled Users** to **Application Users**.
 
-    ![Changing the view from Enabled Users to Application Users](media/sales-map-enabled-users.png)
+    ![Changing the view from Enabled Users to Application Users.](media/sales-map-enabled-users.png)
 
 4. Select the two entries for **DualWrite IntegrationUser**.
 
-    ![List of application users](media/sales-map-user-mode.png)
+    ![List of application users.](media/sales-map-user-mode.png)
 
 5. Change the value of the **Integration user mode** column to **Yes**.
 
-    ![Changing the value of the Integration user mode column](media/sales-map-user-mode-yes.png)
+    ![Changing the value of the Integration user mode column.](media/sales-map-user-mode-yes.png)
 
 Your sales orders are now mapped.
 

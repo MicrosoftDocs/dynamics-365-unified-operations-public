@@ -4,7 +4,7 @@
 title: Electronic reporting framework API changes for Application update 10.0.19
 description: This topic describes how the APIs of the Electronic reporting (ER) framework have been changed in Microsoft Dynamics 365 Finance version 10.0.19.
 author: NickSelin
-ms.date: 03/29/2021
+ms.date: 06/17/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,7 +31,6 @@ ms.dyn365.ops.version: 10.0.19
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 This topic describes how the application programming interfaces (APIs) of the [Electronic reporting (ER)](general-electronic-reporting.md) framework have been changed in Microsoft Dynamics 365 Finance version 10.0.19.
 
@@ -106,7 +105,7 @@ public interface ERIFormatFileDestinationSettings extends SysPackable
 }
 ```
 
-This interface lets you offer parameters of a custom destination in the ER destinations dialog box, so that they can be set at design time. The configured destination can then be used at runtime to store generated [outbound](general-electronic-reporting.md#FormatComponentOutbound) documents.
+This interface lets you offer parameters of a custom destination in the ER destinations dialog box, so that they can be set at design time. The configured destination can then be used at runtime to store generated outbound documents.
 
 To learn more about this interface, complete the example in [Implement a custom destination for generated documents](er-custom-file-destination.md).
 

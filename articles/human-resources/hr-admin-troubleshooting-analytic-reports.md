@@ -2,9 +2,9 @@
 # required metadata
 
 title: Troubleshoot analytic reports
-description: This article explains what to do if a customer's data changes don't appear in any of the customer's workspaces.
-author: andreabichsel
-ms.date: 02/03/2020
+description: This topic explains how to troubleshoot and diagnose issues if a customer's data changes don't appear in any of the customer's workspaces.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,13 +21,16 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
 ---
 
 # Troubleshoot analytic reports
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -47,7 +50,7 @@ This issue might just be a matter of timing. Follow these steps to start the bat
 1. Find the **Deploy measurement** job in the list.
 1. Select **Edit** at the top of the page, and set the scheduled start date/time to a value that will refresh the analytics closer to the current time.
 
-![Batch jobs](media/batch-jobs.png)
+![Batch jobs.](media/batch-jobs.png)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

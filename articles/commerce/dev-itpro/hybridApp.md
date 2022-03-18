@@ -4,7 +4,7 @@
 title: Set up POS hybrid app on Android and iOS
 description: This topic shows how to set up the POS hybrid app on Android and iOS.
 author: mugunthanm 
-ms.date: 05/18/2020
+ms.date: 09/13/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -61,7 +61,7 @@ After you've installed Xamarin, you must update it to the latest stable version 
 
 1. When installation is complete, launch Visual Studio and sign in with your Microsoft account (this is the same account that you use with Windows). Check for Xamarin updates by clicking **Tools > Options > Xamarin** or **Tools > Options > Xamarin > Other**. Here you'll find a **Check Now** link. If you do not see an option for Xamarin in **Tools > Options**, review your installation, or try restarting Visual Studio. You can also search for Xamarin in the **Options** dialog box. If needed, download and install the latest version.
       
-2.  In the Retail SDK folder, open SampleExtensions\HybridApp\Android\solution. Build and deploy using the emulator and verify that everything appears as it should.
+2.  In the [Retail SDK folder](retail-sdk/retail-sdk-overview.md#download-the-retail-sdk), open SampleExtensions\HybridApp\Android\solution. Build and deploy using the emulator and verify that everything appears as it should.
   
 3.  Using the [Visual Studio Emulator for Android](https://visualstudio.microsoft.com/vs/msft-android-emulator/ "Visual Studio Emulator for Android") or any emulator for Android, launch the POS hybrid app and enter the Commerce Scale Unit URL and save.
   
@@ -85,26 +85,32 @@ For more detailed steps on installing Xamarin on iOS, refer to [Xamarin.iOS inst
   
   ### Build the iOS Retail hybrid app
   
-  1.  In the Retail SDK folder, open SampleExtensions\HybridApp\iOS\solution.
+  1.  In the [Retail SDK folder](/retail-sdk/retail-sdk-overview#download-the-retail-sdk), open SampleExtensions\HybridApp\iOS\solution.
       After connecting to the Mac and building the application in Visual Studio, select the iOS device type and deploy the app on the selected device.
       
-       ![POS iOS app VS setting for deployment](./media/iOSSetting.png)
+       ![POS iOS app VS setting for deployment.](./media/iOSSetting.png)
       
   2.  Using the Emulator, go to **Settings > RetailMPOS**. Enter the Commerce Scale Unit URL.
       
-       ![POS iOS app setting](./media/iOSApp.png)
+       ![POS iOS app setting.](./media/iOSApp.png)
       
-       ![POS iOS app setting for RS URL](./media/iOSRSURL.png)
+       ![POS iOS app setting for RS URL.](./media/iOSRSURL.png)
       
   3.  Launch the MPOS app. You should be able to sign in and activate the device.
 
 
-## Hybrid app distribution
+## Hybrid app signing and distribution
 
-To distribute the Android and iOS app, refer to the following distribution options suggested by the Android and iOS app teams.
+To sign and distribute the Android and iOS app, refer to the following options:
 
+**Android**
+- [Signing the Android Application Package](/xamarin/android/deploy-test/signing/?tabs=windows)
 - [Android app distribution](https://developer.android.com/distribute/marketing-tools/alternative-distribution)
+
+**iOS**
+- [iOS Code Signing](https://developer.apple.com/support/code-signing/)
 - [iOS app distribution](https://developer.apple.com/documentation/xcode/preparing-your-app-for-distribution)
+
 
   
 ## Dedicated hardware station support for the hybrid Android app

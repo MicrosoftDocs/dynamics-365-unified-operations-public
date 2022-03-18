@@ -46,15 +46,15 @@ The following improvements are included in the stock transfer order functionalit
 
 This feature can be enabled through Feature management.
 
-![Feature management module and list of available features](media/gst-feature-management.png)
+![Feature management module and list of available features.](media/gst-feature-management.png)
 
 ### New parameter under Inventory management
 
 The parameter, **Enable stock transfer for master planning** has been added to the **Inventory management parameters** page (**Inventory & warehouse management** > **Setup** > **Parameters**, **Transfer orders** tab) and the **Transfer type** page (**Master planning** > **Parameters** > **Transfer type**).  
 
-![Inventory management parameters page, Transfer orders tab](media/gst-inventory-parameters.png)
+![Inventory management parameters page, Transfer orders tab.](media/gst-inventory-parameters.png)
 
-![Transfer type page](media/gst-master-planning-parameters.png)
+![Transfer type page.](media/gst-master-planning-parameters.png)
 
 ## Critical fixes 
 

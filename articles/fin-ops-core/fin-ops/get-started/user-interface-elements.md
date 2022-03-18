@@ -26,6 +26,9 @@ ms.dyn365.ops.version: 7.3
 
 # User interface elements
 
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
 This topic describes the user interface (UI) elements used in the app. Before users can navigate the interface, it's important to know the names and functions of the elements that make up the interface.
 
 ## Overview
@@ -80,7 +83,7 @@ The following image shows examples of these types of notifications.
 
 - **Message box** - This will appear over the interface and must be interacted with before you can continue to use the product.  
 
-![The following image shows an example of a message box](media/user-interface-07.png)
+![The following image shows an example of a message box.](media/user-interface-07.png)
 
 ## Toolbars, grids, and lists
 

@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro
 ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -53,14 +53,14 @@ The cash out gift card feature is applicable to a scenario where, for example, i
     2. In the **Cash Out Gift Card** field, enter the **Gift card Cash out threshold** amount.
     3. Select **Save**.
 
-    ![Setting the Gift card threshold](./media/GiftCardCashout01.png)
+    ![Setting the Gift card threshold.](./media/GiftCardCashout01.png)
 
 6. Open the **Button grid** page.
 7. In the navigation bar on the left side of the page, search for **F2S1M**, and select the filtered option.
 8. On the **Action Pane**, select **Designer** to download the button designer application.
 9. When the grid designer appears, right-click on an empty (gray) area, and then select **New button**.
 
-    ![New button](./media/07.png)
+    ![New button.](./media/07.png)
 
 10. Right-click the new button, and then select **Button properties**.
 11. Set the **Action**, **Cash out gift card**, and **Text on button** properties according to the following matrix.

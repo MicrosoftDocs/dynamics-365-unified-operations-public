@@ -5,7 +5,7 @@ title: Home page overview
 description: This topic provides an overview of the home page in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 09/15/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
 # ms.tgt_pltfrm: 
-# ms.custom: 
+
 ms.search.region: Global
 ms.search.industry: 
 ms.author: anupamar
@@ -35,7 +35,7 @@ The home page is the default page that shoppers go to when they visit an e-Comme
 
 The following illustration shows an example of a home page that was built by using the module library and the "Fabrikam" theme.
 
-![Example of a home page](./media/Homepage2.PNG)
+![Example of a home page.](./media/Homepage2.PNG)
 
 The top of the home page has a header that shows all the product categories and other pages that the retailer wants customers to browse. The bottom of the home page has a footer that contains quick links to various topics that might interest customers.
 
@@ -45,13 +45,13 @@ The main section of the home page can highlight products, categories, or promoti
 
     The following illustration shows an example of a home page where the first item in the main section is a hero layout of a content block module that is named "New Arrival."
 
-    ![Example of a hero module](./media/Hero.PNG)
+    ![Example of a hero module.](./media/Hero.PNG)
 
 - **Feature** – A feature layout of a content block module is used to market products or promotions by using a combination of images and text. Features layouts can be used independently, or they can be hosted in a carousel module.
 
     The following illustration shows an example of feature layout of a content block module on a home page.
 
-    ![Examples of feature modules](./media/Feature.PNG)
+    ![Examples of feature modules.](./media/Feature.PNG)
 
 - **Tile** – A tile layout of a content block module is used to showcase multiple products or category of products by using a combination of images and text in a multicolumn layout. In the illustration of a home page that appears earlier in this topic, a tile  layout is used for the three-column rendering of the **Shop Women**, **Shop Men**, and **Shop Accessories** items.
 - **Video player** – A video player module can be used to showcase video content on the home page. The illustration of a home page that appears earlier in this topic includes a video player module.
@@ -60,7 +60,7 @@ The main section of the home page can highlight products, categories, or promoti
 
     The following illustration shows an example of product recommendations modules on a home page.
 
-    ![Examples of product recommendations modules](./media/Recommendations.PNG)
+    ![Examples of product recommendations modules.](./media/Recommendations.PNG)
 
 > [!NOTE]
 > All the modules that are listed here can be used on any site page. However, their placement on the home page is important because that page is where customers first interact with your site.

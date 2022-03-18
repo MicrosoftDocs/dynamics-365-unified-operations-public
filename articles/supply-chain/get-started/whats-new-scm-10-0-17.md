@@ -58,6 +58,8 @@ Most of these features must be enabled using [Feature management](../../fin-ops-
 
 - [Packing vs. storage dimensions](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/packing-vs.-storage-dimensions)<br> - For more information, see [Set different dimensions for packing and storage](../warehousing/packing-vs-storage-dimensions.md).
 
+- [Parallel wave allocation](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/parallel-wave-allocation)<br> - For more information, see [Wave allocation](../warehousing/wave-allocation-method.md).
+
 - [Saved views for inventory and logistics](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-inventory-logistics)<br> - For more information, see [Standard saved views for Supply Chain Management](saved-views-scm.md).
 
 - [Schedule warehouse work creation](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-warehouse-work-creation)<br> - For more information, see [Schedule work creation during wave](../warehousing/configure-wave-schedule-work-creation.md).
@@ -102,10 +104,6 @@ Most of these features must be enabled using [Feature management](../../fin-ops-
 
 We have recently added or significantly updated the following help topics. They aren't necessarily related to the new features added for this release, as listed in the previous section, but they may help you to get more out of existing features.
 
-### Cost management
-
-- [Troubleshoot cost management](../cost-management/troubleshoot-costmanagement.md)
-
 ### Asset management
 
 - [Set up the Asset management mobile workspace](../asset-management/set-up-asset-management-mobile.md)
@@ -117,8 +115,6 @@ We have recently added or significantly updated the following help topics. They 
 - [Partial location cycle counting](../warehousing/partial-location-cycle-counting.md)
 
 - [Pick line grouping](../warehousing/pick-line-grouping.md)
-
-- [Troubleshoot inventory operations](../inventory/troubleshoot-inventory-operations.md)
 
 - [Warehouse slotting](../warehousing/warehouse-slotting.md)
 

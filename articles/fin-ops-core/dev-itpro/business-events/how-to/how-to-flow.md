@@ -2,9 +2,9 @@
 # required metadata
 
 title: Business events and Microsoft Power Automate
-description: This topics provides information about the business events that are available for consumption in Microsoft Power Automate using the connector.
+description: This topic provides information about the business events that are available for consumption in Microsoft Power Automate using the connector.
 author: Sunil-Garg
-ms.date: 11/18/2019
+ms.date: 10/18/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -28,12 +28,14 @@ ms.dyn365.ops.version: 2019-6-30
 
 [!include[banner](../../includes/banner.md)]
 
-This topic provides steps detailing how to configure and consume a business event from a Power Automate endpoint.
+This topic explains how to configure and consume a business event from a Microsoft Power Automate endpoint by using the **When a Business Event occurs** trigger of the Finance and Operations connector. 
 
 This topic shows how to perform the following tasks:
 
--   Create a new flow in Power Automate.
--   Trigger a business event.
+- Create a new flow in Power Automate.
+- Trigger a business event.
+
+The steps in this topic show how use the Finance and Operations connector. However, they can also be applied to the process of creating flows in Power Automate for Finance and Operations apps business events and data events in the Microsoft Dataverse connector. For more information about Finance and Operations apps business events and data events that have the **When an action is performed** and **When a row is added, modified or deleted** triggers in the Dataverse connector, see [Business events in Microsoft Power Automate](../business-events-flow.md).
 
 ## Create a new flow in Power Automate
 
@@ -51,7 +53,7 @@ This topic shows how to perform the following tasks:
     > [!TIP]
     > Take advantage of the auto-complete that Power Automate provides by entering only part of the environment instance URL or part of the event name.
 
-    <img alt="Microsoft Power Automate buisness event trigger" src="../../media/BEF-Howto-Flow-04.png" width="50%">
+    <img alt="Microsoft Power Automate business event trigger" src="../../media/BEF-Howto-Flow-04.png" width="50%">
 
 7.  Select the **New Step** button to add a new action.
 
@@ -71,7 +73,7 @@ This topic shows how to perform the following tasks:
 
     <img alt="Parse JSON schema input " src="../../media/BEF-Howto-Flow-09.png" width="70%">
 
-12. Depending on the quality of your sample payload, your generator will not be able to distinguish between an integer and a real number. This is true if the real number is provided as a whole number in the sample payload. Review your generated schema and check if you need to change an “integer” into “number”. (In JSON, a “number” data type means real number).
+12. Depending on the quality of your sample payload, your generator will not be able to distinguish between an integer and a real number. This is true if the real number is provided as a whole number in the sample payload. Review your generated schema and check if you need to change an "integer" into "number". (In JSON, a "number" data type means real number).
 
     <img alt="JSON data types " src="../../media/BEF-Howto-Flow-10.png" width="100%">
 
@@ -97,7 +99,7 @@ Power Automate can configure the application automatically for you. After you sa
 
     <img alt="Microsoft Power Automate buiness event GUID" src="../../media/BEF-Howto-Flow-13.png" width="100%">
 
-5.  If you check the **Active events** tab you can also verify that “**Payment Posted**” is activated for legal entity GBSI.
+5.  If you check the **Active events** tab, you can also verify that "**Payment Posted**" is activated for legal entity GBSI.
 
     <img alt="Active business events " src="../../media/BEF-Howto-Flow-14.png" width="100%">
 

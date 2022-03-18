@@ -5,7 +5,7 @@ title: Accruals overview
 description: This article describes accruals, and provides information about how to set them up and create transactions.
 author: aprilolson
 ms.date: 01/11/2018
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
 # ms.tgt_pltfrm: 
-ms.custom: 14131
+ms.custom: ["14131", "intro-internal"]
 ms.assetid: 0489b59a-37a7-4a78-87bf-4b597e9efad9
 ms.search.region: Global
 # ms.search.industry: 

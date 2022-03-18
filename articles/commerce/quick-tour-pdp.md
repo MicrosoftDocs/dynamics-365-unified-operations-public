@@ -5,7 +5,7 @@ title: Product details pages overview
 description: This topic provides an overview of product details pages (PDPs) in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 01/23/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
 # ms.tgt_pltfrm: 
-# ms.custom: 
+
 ms.search.region: Global
 ms.search.industry: 
 ms.author: anupamar
@@ -34,7 +34,7 @@ A PDP provides detailed information about a product, and lets customers select p
 
 The following illustration shows an example of a PDP.
 
-![Example of a product details page](./media/pdp.PNG)
+![Example of a product details page.](./media/pdp.PNG)
 
 ## Header and footer modules
 

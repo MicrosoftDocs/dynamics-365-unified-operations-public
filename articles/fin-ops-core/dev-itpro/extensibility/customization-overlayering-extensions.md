@@ -11,7 +11,7 @@ ms.technology:
 # ROBOTS:
 audience: Developer
 # ms.devlang:
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm:
 ms.custom: 26961
 ms.assetid: 8a2b3107-247d-4362-8d4d-6ee6257abfcc
@@ -49,7 +49,7 @@ To get started, review or complete this tutorial: [Customize model elements thro
 ## Extension models and packages
 You can create a model that contains only new model elements, new code, or extensions. This model is compiled into its own separate assembly. These assemblies, along with related metadata and runtime artifacts can be packaged (as a deployable package file) and deployed on runtime sandbox or production environment. To create an extension model, go through the Create model wizard and select **Create new package** on the second step.
 
-![./media/1_cust.png](./media/1_cust.png)
+![./media/1_cust.png.](./media/1_cust.png)
 
 Extension models have several advantages, including:
 
@@ -60,7 +60,7 @@ Extension models have several advantages, including:
 
 The following diagram illustrates how extensions get isolated in their assemblies.
 
-![media/ax7customization1.png](media/ax7customization1.png)
+![media/ax7customization1.png.](media/ax7customization1.png)
 
 ## Code extensions
 You can extend source code in 3 ways:
@@ -175,7 +175,7 @@ You can extend a View or Data entity to achieve much of the functionality availa
 ## Enum extensions
 You can extend any Enum that is marked extensible (IsExtensible=True).
 
-[![extensibleenums](./media/extensibleenums-300x158.png)](./media/extensibleenums.png)
+[![extensibleenums.](./media/extensibleenums-300x158.png)](./media/extensibleenums.png)
 
 By extending an Enum, you can add new Enum values to it. It is important to keep the following in mind when dealing with extensible Enums:
 
@@ -205,7 +205,7 @@ You can extend a Menu element to achieve the following:
 1.  Add new menu items, submenus, menu references and tile references to an existing menu.
 2.  Hide an existing menu item, tile, or sub-menu in a menu by setting the **Visible** property to No.
 
-#### [![menuextensions](./media/menuextensions-300x137.png)](./media/menuextensions.png)
+#### [![menuextensions.](./media/menuextensions-300x137.png)](./media/menuextensions.png)
 
 ## Security role and duty extensions
 You can extend a Security Role or a Security Duty to add new duties/privileges to these elements.
@@ -295,11 +295,11 @@ When an event takes place, the delegates described in the sections above get tri
 ## Development tools support
 The development tools in Visual Studio provide integrated features to help you create and work with extensions. For example, when you right-click an element name in **Application Explorer**, you can create an extension for that element.
 
-![Create extension on context menu](./media/3_cust.png)
+![Create extension on context menu.](./media/3_cust.png)
 
 To create an extension, the current project in **Solution Explorer** must belong to a model that references the model of the selected element in **Application Explorer**. To view the model for a particular project, view the project properties.
 
-![Property page for project](./media/4_cust.png)
+![Property page for project.](./media/4_cust.png)
 
 Visual Studio creates the extension file for you, either in the current project or in a new project. You can then work with the extension file either as source code or by using a designer. You package a code-extension model for deployment exactly like you would package any other model. On the **Dynamics 365** menu, point to **Deploy**, click **Create Deployment Package**, and then select the check box for the package name.
 
@@ -307,11 +307,11 @@ Visual Studio creates the extension file for you, either in the current project 
 
 Tables, form data sources, form controls, and other element types that support extension events list the available events (and delegates) under an **Events** collection node. For example, viewing the **Events** node of a table extension shows events that are defined by the framework, and delegate methods that are defined by application developers.
 
-![List of framework events](./media/5_cust.png)
+![List of framework events.](./media/5_cust.png)
 
 **Note**: Events are exposed on the designer on different element and sub-element types, like table events, form events, form data source events, form control events, and others. Open the context menu of an event node to interact with events:
 
-![Copy event handler method on context menu](./media/6_cust.png)
+![Copy event handler method on context menu.](./media/6_cust.png)
 
 - **Copy event handler method**: This option copies a method signature to the clipboard. You can paste it in any X++ code editor to define a method that subscribes to the selected event.
 - **Find event handlers**: Searches and lists all methods subscribed to the selected event.

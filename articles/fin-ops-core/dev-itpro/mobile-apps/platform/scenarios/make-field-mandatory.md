@@ -3,7 +3,7 @@
 
 title: Make fields mandatory by using workspace classes
 description: This topic explains how to use workspace classes to make a field mandatory.
-author: robinarh
+author: tonyafehr
 ms.date: 07/01/2017
 ms.topic: article
 ms.prod: 
@@ -15,13 +15,13 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 255544
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
 
@@ -33,9 +33,9 @@ ms.dyn365.ops.version: Platform update 3
 
 When you use the mobile app designer to select fields for actions, some properties can be inferred. These properties include the field length, the type, and whether the field is mandatory. The workspace classes can be used to update these properties. For example, you might want to specify that the **Name** field is mandatory when a customer record is created, as shown in the following images.
 
-![Action and fields](media/workspace-api/MarkFieldAsMandatoryDesigner.png)
+![Action and fields.](media/workspace-api/MarkFieldAsMandatoryDesigner.png)
 
-![Action that has a mandatory field marked](media/workspace-api/MarkFieldAsMandatoryAction.png)
+![Action that has a mandatory field marked.](media/workspace-api/MarkFieldAsMandatoryAction.png)
 
 Follow these steps to make the **Delivery terms** field mandatory by using the workspace class.
 
@@ -62,7 +62,7 @@ Follow these steps to make the **Delivery terms** field mandatory by using the w
 
 The **Delivery terms** field is now marked as **Mandatory**, as shown in the following illustration.
 
-![Delivery terms field is marked as mandatory](media/workspace-api/MarkFieldAsMandatoryFinal.png)
+![Delivery terms field is marked as mandatory.](media/workspace-api/MarkFieldAsMandatoryFinal.png)
 
 
 [!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

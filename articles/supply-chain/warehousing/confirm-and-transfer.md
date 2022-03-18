@@ -21,7 +21,7 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.8
+ms.dyn365.ops.version: 10.0.8
 ---
 
 # Confirm and transfer
@@ -49,20 +49,17 @@ You can split only loads that meet all the following criteria:
 
 - One or more load lines have picked quantities.
 - The load status is less than loaded.
-- There is no load line data. (This data is created through license plate consolidation on the staging location, and the *Confirm and transfer* feature doesn't support license plate consolidation.)
-- No inventory is currently awaiting packing at a packing location. (The *Confirm and transfer* feature doesn't support inventory that has been picked to the pack station but hasn't yet been packed.)
+- There is no load line data. (This data is created through license plate consolidation on the staging location, and the Confirm and transfer feature doesn't support license plate consolidation.)
+- No inventory is currently awaiting packing at a packing location. (The *Confirm and transfer* feature doesn't support inventory that has been picked to the pack station but hasn't yet been packed unless containers that are packed are placed at staging locations with loading work created.)
 
 > [!NOTE]
 > This functionality differs from the transport load functionality, which should be used in warehouses that can never plan and create loads before picking, but that instead load the available transportation space after picking is completed.
 >
 > Use the *Confirm and transfer* feature in situations where loads are usually planned and created ahead of time, but where exceptions sometimes occur in which the load doesn't fit the available transport (such as a truck).
 
-## Turn on confirm and transfer
+## Turn the confirm and transfer feature on or off
 
-Before you can use the *Confirm and transfer* feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on if it's required. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** *Warehouse management*
-- **Feature name:** *Confirm and transfer*
+To use the functionality described in this topic, the *Confirm and transfer* feature must be turned on for your system. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *Confirm and transfer* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Set up confirm and transfer
 

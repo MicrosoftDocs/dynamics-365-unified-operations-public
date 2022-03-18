@@ -74,7 +74,7 @@ You can create translation group rules to specify all translation settings.
 7. On the **Translation methods** FastTab, select **Methods initialization** to create a list of translation methods.
 8. Select **Add**, and then, in the **Method** field, select **Ledger translation**.
 
-    ![Translation groups](media/translation-groups01.jpg)
+    ![Translation groups.](media/translation-groups01.jpg)
 
 9. On the **Ledger parameters** FastTab, in the **Default currency group** field, select the currency group that should be used by default for the account translation rules.
 10. In the **Default dimension group** field, select the dimension group that should be used by default for the account translation rules.
@@ -119,7 +119,7 @@ Set up currency groups to specify the currency conversion rules that are used du
 > [!NOTE]  
 > You can set up multiple currency conversion rules for one rule group.
 
-![Currency conversion rules](media/currency-groups02.jpg)
+![Currency conversion rules.](media/currency-groups02.jpg)
 
 
 3. Create a currency group.
@@ -171,7 +171,7 @@ Set up currency groups to specify the currency conversion rules that are used du
 
 8. In the **Exchange rate** field, enter the index value that should be used during the index validity period.
 
-![Rules for dimensions FastTab, Exchange rate field](media/inflation-indexes03.jpg)
+![Rules for dimensions FastTab, Exchange rate field.](media/inflation-indexes03.jpg)
 
 9. Select **Save**, and then close the page.
 
@@ -184,7 +184,7 @@ You can use the **Dimension groups** page to set up rules for translating dimens
 > [!NOTE]  
 > You can set up multiple conversion rules for the dimensions of one rule group.
 
-![Rules for dimensions FastTab](media/dimension-groups04.jpg)
+![Rules for dimensions FastTab.](media/dimension-groups04.jpg)
 
 3. Select **New** to create a dimension group.
 4. In the **Dimension group** field, enter a unique code for the dimension group.
@@ -281,7 +281,7 @@ The following table shows examples for the various possible values of the **Main
 > [!NOTE]  
 > The priority determines the order that rules are processed in during translation. The rule that has the lowest priority is processed first. We recommend that you specify the priority if there are several mutually exclusive rules.
 
-![Translation ledger account rules lines](media/translation-ledger-account-rules05.jpg)
+![Translation ledger account rules lines.](media/translation-ledger-account-rules05.jpg)
 
 11. On the **General** tab, in the first **Posting type** field, select a voucher type to translate only transactions that have that voucher type. For example, if you select **Petty cash**, only transactions in the bank module are translated.
 12. In the second **Posting type** field, select a voucher type to translate only transactions that have that voucher type for the offset account.
@@ -289,7 +289,7 @@ The following table shows examples for the various possible values of the **Main
 14. In the **Only reversing entry** field, select **Yes** to translate only reversing transactions, or select **No** to translate only regular transactions. Leave this field blank to translate both regular transactions and reversing transactions.
 15. In the **To posting layer** field, select the posting layer that the translated transactions should be assigned to in the target company.
 
-![Translation ledger account rules fields](media/translation-ledger-account-rules06.jpg)
+![Translation ledger account rules fields.](media/translation-ledger-account-rules06.jpg)
 
 16. Select **Initialize** to automatically create a line that has an account translation rule for all the ledger accounts in the target company. In the **Initialize** dialog box, you can select **Filter** to filter the required accounts.
 17. Select **OK**. The system creates a line that has a rule for each selected ledger account.
@@ -318,30 +318,30 @@ Follow these steps to use the **Translation** wizard to do a single translation.
 3. Select **Translation wizard** to open the **Translation** wizard.
 4. On the **Welcome** page, select **Next**.
 
-![Welcome page](media/welcome07.jpg)
+![Welcome page.](media/welcome07.jpg)
 
 
 5. On the **Consistency check** page, select **Consistency check** to validate the conversion parameters.
 
-![Consistency check translation setup page](media/consistency-check08.jpg)
+![Consistency check translation setup page.](media/consistency-check08.jpg)
 
 6. In the **Consistency check** dialog box, specify the details, and then select **OK**.
 
 > [!NOTE]  
 > If the **Stop on the first error** option on the **Translation** tab of the **General ledger parameters** page is set to **Yes**, you can't move on to the next page of the wizard until the conversion parameters are checked for additional errors.
 
-![Consistency check page](media/consistency-check09.jpg)
+![Consistency check page.](media/consistency-check09.jpg)
 
 7. Select **Next**.
 8. On the **Selection** page, in the **From date** and **To date** fields, define the period that the translation should be done for.
 9. Select **Inquiry** to specify additional transaction selection criteria.
 
-![Selection page](media/selection10.jpg)
+![Selection page.](media/selection10.jpg)
 
 10. Select **Next**.
 11. On the **Transaction processing** page, select **Next** to run the data conversion.
 
-![Transaction processing page](media/translation-processing11.jpg)
+![Transaction processing page.](media/translation-processing11.jpg)
 
 12. Select **Preview** to view the conversion results.
 13. Select **Next** two times to import the translation data into the target company.
@@ -367,11 +367,11 @@ You can configure translation so that it's periodically run according to specifi
 3. Select **Batch translation** to open the **Batch translation** dialog box.
 4. On the **Parameters** FastTab, in the **From date** and **To date** fields, define the period that the batch translation should be done for.
 
-![Batch translation page](media/batch-translation12.jpg)
+![Batch translation page.](media/batch-translation12.jpg)
 
 5. On the **Run in the background** FastTab, select **Recurrence** to open the **Define recurrence** dialog box, where you can set up the recurrence of the batch translation.
 
-![Define recurrency dialog box](media/define-recurrence13.jpg)
+![Define recurrency dialog box.](media/define-recurrence13.jpg)
 
 6. In the **Batch translation** dialog box, select **OK** to do the batch translation.
 

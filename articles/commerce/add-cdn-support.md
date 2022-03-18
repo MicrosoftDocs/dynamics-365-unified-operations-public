@@ -79,11 +79,11 @@ To configure a backend pool in Azure Front Door Service, follow these steps.
 
 The following illustration shows the **Add a backend** dialog box in Azure Front Door Service with the backend host name entered.
 
-![Add a backend pool dialog box](./media/CDN_BackendPool.png)
+![Add a backend pool dialog box.](./media/CDN_BackendPool.png)
 
 The following illustration shows the **Add a backend pool** dialog box in Azure Front Door Service with the default load balancing values.
 
-![Add a backend pool dialog box continued](./media/CDN_BackendPool_2.png)
+![Add a backend pool dialog box continued.](./media/CDN_BackendPool_2.png)
 
 > [!NOTE]
 > Be sure to disable **Health Probes** when setting up your own Azure Front Door service for Commerce.
@@ -112,13 +112,13 @@ If your domain is new and is not a pre-existing live domain, you can add your cu
 
 The following illustration shows the **CNAME configuration** dialog box in Azure Front Door Service.
 
-![CNAME Configuration dialog box](./media/CNAME_Configuration.png)
+![CNAME Configuration dialog box.](./media/CNAME_Configuration.png)
 
 You can use Azure Front Door Service to manage the certificate, or you can use your own certificate for the custom domain.
 
 The following illustration shows the **Custom Domain HTTPS** dialog box in Azure Front Door Service.
 
-![Custom Domain HTTPS dialog box](./media/Custom_Domain_HTTPS.png)
+![Custom Domain HTTPS dialog box.](./media/Custom_Domain_HTTPS.png)
 
 For detailed instructions on adding a custom domain to your Azure Front Door, see [Add a custom domain to your Front Door](/azure/frontdoor/front-door-custom-domain).
 

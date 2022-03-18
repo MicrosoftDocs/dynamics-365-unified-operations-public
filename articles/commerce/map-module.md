@@ -42,7 +42,7 @@ A map module works in conjunction with the store selector module to determine th
 
 The following image shows an example of a map module that is used on a store locations page.
 
-![Example of a store selector module](./media/ecommerce-Storelocator.PNG)
+![Example of a store selector module.](./media/ecommerce-Storelocator.PNG)
 
 ## Module properties
 

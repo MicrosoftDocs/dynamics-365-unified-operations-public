@@ -46,7 +46,7 @@ The Federal Informational Address System (or FIAS) address database might be req
 4. In the **Description** field, enter the official name of the district.
 5. In the **ZIP/postal code** field, select the postal code.
 
-    ![Address setup page District tab](media/1%20Address%20setup.jpg)
+    ![Address setup page District tab.](media/1%20Address%20setup.jpg)
 
 6. Select **Save**.
 
@@ -59,7 +59,7 @@ The Federal Informational Address System (or FIAS) address database might be req
 5. In the **Street** field, enter the official name of the street.
 6. In the **ZIP/postal code** field, select the postal code.
 
-    ![Address setup page Street tab](media/2%20Address%20setup.jpg)
+    ![Address setup page Street tab.](media/2%20Address%20setup.jpg)
 
 7. Select **Save**.
 
@@ -72,7 +72,7 @@ The Federal Informational Address System (or FIAS) address database might be req
 5. In the **Numbers of buildings** field, enter a comma-separated list of the building numbers of the houses in the group.
 6. In the **ZIP/postal code** field, select the postal code.
 
-    ![Address setup page Group of houses tab](media/3%20Address%20setup.jpg)
+    ![Address setup page Group of houses tab.](media/3%20Address%20setup.jpg)
 
 7. Select **Save**.
 
@@ -85,7 +85,7 @@ The Federal Informational Address System (or FIAS) address database might be req
 5. In the **Group of flats** field, enter a comma-separate list of the flat numbers of the flats in the group.
 6. In the **ZIP/postal code** field, select the postal code.
 
-    ![Address setup page Group of flats tab](media/4%20Address%20setup.jpg)
+    ![Address setup page Group of flats tab.](media/4%20Address%20setup.jpg)
 
 7. Select **Save**.
 
@@ -98,7 +98,7 @@ The Federal Informational Address System (or FIAS) address database might be req
 5. In the **Numbers of land plots** field, enter a comma-separated list of the numbers of the land plots.
 6. In the **ZIP/postal code** field, select the postal code.
 
-    ![Address setup page Land plots tab](media/5%20Address%20setup.jpg)
+    ![Address setup page Land plots tab.](media/5%20Address%20setup.jpg)
 
 7. Select **Save**.
 
@@ -107,7 +107,7 @@ The Federal Informational Address System (or FIAS) address database might be req
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
 2. Open a customer record, and then, on the **Addresses** FastTab, select **More options \> Advanced** to open the **Manage addresses** page.
 
-    ![Addresses FastTab on customer record](media/6%20All%20customers.jpg)
+    ![Addresses FastTab on customer record.](media/6%20All%20customers.jpg)
 
 3. On the **Address** FastTab, in the **Country/region** field, select **RUS**.
 4. In the **ZIP/postal code** field, select the postal code. After you select a postal code, the **District** field shows the district code and name.
@@ -118,7 +118,7 @@ The Federal Informational Address System (or FIAS) address database might be req
 9. In the **Group of houses** field, select the group of houses code. The corresponding building numbers are shown.
 10. In the **Group of flats** field, select the group of flats code. The corresponding flat numbers are shown.
 
-    ![Manage addresses page Addresses FastTab](media/7%20Manage%20addresses.jpg)
+    ![Manage addresses page Addresses FastTab.](media/7%20Manage%20addresses.jpg)
 
 11. Select **Save**.
 
@@ -128,12 +128,12 @@ The Federal Informational Address System (or FIAS) address database might be req
 
 1. Download the **RU FIAS – FiasMetadataPackage** file from the **Data package** tab of the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). This package file contains the required data for the import jobs runtime.
 
-    ![Shared asset library in LCS](media/8%20Shared%20asset%20library.jpg)
+    ![Shared asset library in LCS.](media/8%20Shared%20asset%20library.jpg)
 
 2. Go to **System administration** \> **Workspaces** \> **Data management**.
 3. In the **Import / Export** section, select the **Import** tile to create a new import job.
     
-    ![A screenshot of a social media post Description automatically generated](media/9%20Data%20management.jpg)
+    ![Data management workspace, Import/export section, Import tile.](media/9%20Data%20management.jpg)
 
 4. In the **Group name** field, enter **ImportFiasMetadata**.
 5. In the **Description** field, enter a description.
@@ -148,8 +148,6 @@ The Federal Informational Address System (or FIAS) address database might be req
    After you select each file, select **Upload and add**.
 
 7. Select **Save**.
-
-    ![A screenshot of a social media post Description automatically generated](media/10%20Import.jpg)
 
 ### Set up a template to import FIAS data
 
@@ -170,7 +168,7 @@ The Federal Informational Address System (or FIAS) address database might be req
 
 8. Select **Save**.
 
-    ![A screenshot of a social media post Description automatically generated](media/11%20Template.jpg)
+    ![List of entities just added.](media/11%20Template.jpg)
 
 ### Set up a job for a full FIAS import
 
@@ -185,7 +183,7 @@ When you import FIAS data into the system the first time, you should create a jo
 7. In the **Source data format** field, select **VerticalBarSeparated-Unicode**.
 8. Select **OK**, and then select **Save**.
 
-    ![A screenshot of a social media post Description automatically generated](media/12%20Import.jpg)
+    ![Import page, with fias full import job details.](media/12%20Import.jpg)
 
 ### Set up a job to import FIAS delta
 
@@ -201,11 +199,11 @@ To update existing address data, you should create a job to import FIAS delta.
 8. In the **Source data format** field, select **XML-Attribute**.
 9. Select **OK**.
 
-    ![A screenshot of a cell phone Description automatically generated](media/13%20Import.jpg)
+    ![Import page wtih fias delta import job details.](media/13%20Import.jpg)
 
 10. For each entity, select the button in the **View map** column to open the **Map source to staging** page.
 
-    ![A screenshot of a cell phone Description automatically generated](media/14%20Map%20source%20to%20staging.jpg)
+    ![Map source to staging page.](media/14%20Map%20source%20to%20staging.jpg)
 
 11. On the **Transformations** tab, select **New**, and then select **Upload file** to open the **Select a file** dialog box.
 12. Select **Browse**, and select the following transformations:
@@ -230,12 +228,12 @@ Because the full FIAS database contains a very large number of records, some per
 7. If you intend to import houses and steads, set the **Does include houses** option to **Yes**.
 8. If you intend to import rooms, set the **Does include rooms** option to **Yes**.
 
-    ![Import data pane](media/15%20Import%20of%20data.jpg)
+    ![Import data pane.](media/15%20Import%20of%20data.jpg)
 
 9. Select **OK** to start the import.
 10. Select **Refresh** in the upper right of the page to view the line together with the results of the full import.
     
-    ![Options tab](media/16%20Import%20from%20FIAS.jpg)
+    ![Options tab.](media/16%20Import%20from%20FIAS.jpg)
 
 ### Update addresses from FIAS
 
@@ -257,7 +255,7 @@ Try the following procedure:
     - In the **Import threshold record count** field, enter the threshold record count for import.
     - In the **Import task count** field, enter the count of import tasks.
 
-      ![Entity import execution parameters](media/17%20Entity%20import%20execution%20parameters.jpg)
+      ![Entity import execution parameters.](media/17%20Entity%20import%20execution%20parameters.jpg)
 
 When you run a full import job, provide several regions, but not all regions, at the same time.
 

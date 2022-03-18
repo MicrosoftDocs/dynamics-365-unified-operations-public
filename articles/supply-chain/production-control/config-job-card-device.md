@@ -21,7 +21,7 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: johanho
 ms.search.validFrom: 2020-05-29
-ms.dyn365.ops.version: Release 10.0.12
+ms.dyn365.ops.version: 10.0.12
 ---
 
 # Configure job card for devices
@@ -38,21 +38,19 @@ A few of the settings described in this topic must be enabled on your system bef
 
 To make this feature available, enable the following features in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (in order):
 
-1. License plate for reporting as finished added to the Job Card Device
-1. Enable automatic generation of license plate number when reporting as finished in the job card device
+1. *License plate for reporting as finished added to the Job Card Device*<br>(As of Supply Chain Management version 10.0.21, this feature is turned on by default. As of Supply Chain Management version 10.0.25, this feature is mandatory.)
+1. *Enable automatic generation of license plate number when reporting as finished in the job card device*<br>(As of Supply Chain Management version 10.0.25, this feature is mandatory.)
 
 ### Print label
 
 To make this feature available, enable the following features in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (in order):
 
-1. License plate for reporting as finished added to the Job Card Device
-1. Print label from Job Card Device
+1. *License plate for reporting as finished added to the Job Card Device*<br>(As of Supply Chain Management version 10.0.21, this feature is turned on by default. As of Supply Chain Management version 10.0.25, this feature is mandatory.)
+1. *Print label from Job Card Device*<br>(As of Supply Chain Management version 10.0.25, this feature is mandatory.)
 
 ### Allow locking of touch screen
 
-To make this feature available, enable the following feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
-
-- Feature for locking job card device and job card terminal so that they can be sanitized
+As of Supply Chain Management version 10.0.21, this feature is turned on by default. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *Feature for locking job card device and job card terminal so that they can be sanitized* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Manage your device configurations
 
@@ -69,7 +67,7 @@ The **General** FastTab lets you configure each of the various options available
 
 - **Report quantity at clock-out** - Set this to **Yes** to prompt workers to report feedback on jobs in progress when clocking out. When set to **No**, workers won't not be prompted.
 - **Lock employee** -  When this option is set to **No**, each worker will be logged out immediately after they make a registration (such as a new job), and then the device will return to the log-in page. When this option is set to **Yes**, each worker will stay logged in to the job card device. However, the worker will still be able to log out manually to allow another worker to log in while the job card device remains running under the same system user account. For more information about these types of accounts, see [Assigned users](#assigned-users).
-- **Barcode scanner** - Set this to **Yes** to provide an option on the job card device that allows workers register the start of a new job by scanning a bar code.
+- **Bar code scanner** - Set this to **Yes** to provide an option on the job card device that allows workers register the start of a new job by scanning a bar code.
 - **Use the actual time of registration** - Set this to **Yes** to set the time for each new registration to be equal to the exact time that registration was submitted by a worker. Set to **No** to use the log-in time instead. You'll usually want to set this to **Yes** if you have enabled the **Lock employee** and/or **Single worker** options, where workers often remain logged in for longer periods.
 - **Single worker** - Set this option to **Yes** if only one worker uses each job card device where this configuration is active. When this option is selected, the **Lock employee** option is automatically set to **Yes**. In addition, this option removes the requirement (and ability) for the worker to log in using a badge ID (or similar). Instead the worker signs in to Supply Chain Management using a system user account linked to a *time registered worker* (from the *workers* table) and gets logged in to the job card device as that worker at the same time.  For more information about these types of accounts, see [Assigned users](#assigned-users).
 - **Allow workers to set personal filters** - Set this option to **Yes** to allow workers to filter the jobs shown to them on the device. The worker can modify values for any of the three filter criteria: **Production unit**, **Resource group** and **Resource**. Only jobs that are scheduled on resources matching the selected filter criteria will be shown on the device. You can also assign default values for any or all of these criteria, and those will apply even with this option is not selected.

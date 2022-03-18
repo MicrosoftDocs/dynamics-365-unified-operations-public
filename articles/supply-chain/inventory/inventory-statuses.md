@@ -3,7 +3,7 @@
 
 title: Inventory statuses
 description: This article describes how you can use inventory statuses to categorize and keep track of inventory.
-author: MarkusFogelberg
+author: yufeihuang
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod:
@@ -21,7 +21,7 @@ ms.custom: 21331
 ms.assetid: b35f495f-de4f-48a0-9d09-4d06781d7650
 ms.search.region: Global
 # ms.search.industry:
-ms.author: mafoge
+ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -69,7 +69,7 @@ You can change inventory statuses either by using the **On-hand by location** pa
 - To change inventory status as an ad-hoc process, go to **On-hand by location** page, select the relevant records, and then select the **Inventory status change** button.
 
 > [!NOTE]
-> The *Change the inventory status of items controlled by tracking dimensions* feature allows you to change the inventory status of items controlled by tracking dimensions, including the ability to update only selected records. Use [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to enable the feature as needed. When the feature is enabled, you'll be able to do the following:
+> The *Change the inventory status of items controlled by tracking dimensions* feature allows you to change the inventory status of items controlled by tracking dimensions, including the ability to update only selected records. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *Change the inventory status of items controlled by tracking dimensions* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace. If the feature is enabled, you'll be able to do the following:
 >
 > - On the **On-hand by location** page, you can group lines based on shown dimensions using the **Display dimensions** button and change the status for the selected lines.
 > - On the **On-hand by location** page, you can select multiple records and then use the **Inventory status change** button to change all of them at once.

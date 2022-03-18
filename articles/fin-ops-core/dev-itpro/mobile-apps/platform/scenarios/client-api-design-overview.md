@@ -3,9 +3,9 @@
 
 title: Client-side design APIs
 description: This topic provides an overview of the client-side design APIs and includes recommendations for using them.
-author: robinarh
+author: tonyafehr
 ms.date: 07/01/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -15,13 +15,13 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
-ms.custom: 255544
+
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
 
@@ -120,7 +120,7 @@ After a control is created that doesn't have any children or items, the control 
 
 The following illustration shows the customer image, customer name, font, background color, and so on, that preceding code produces.
 
-![Image showing information produced by preceding code](media/detail-page.png)
+![Image showing information produced by preceding code.](media/detail-page.png)
 
 
 [!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

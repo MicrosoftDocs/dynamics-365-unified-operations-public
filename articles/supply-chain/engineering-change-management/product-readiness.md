@@ -2,7 +2,7 @@
 # required metadata
 
 title: Product readiness
-description: This topics explains how you can use readiness checks to ensure that the required master data is completed for a product before it's used in transactions.
+description: This topic explains how you can use readiness checks to ensure that the required master data is completed for a product before it's used in transactions.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -21,18 +21,20 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: Release 10.0.15
+ms.dyn365.ops.version: 10.0.15
 ---
 
 # Product readiness
 
 [!include [banner](../includes/banner.md)]
 
-You can use readiness checks to ensure that all the required master data has been specified for a product before it's used in transactions. When readiness checks are used, a user or team is made responsible for validating specific predefined product-related data. If there is an open readiness check for a product, the product can't be released or used in transactions.
+You can use readiness checks to help ensure that all the required master data has been specified for a product before it's used in transactions. When readiness checks are used, a user or team is made responsible for validating specific predefined product-related data.
 
-The **Active** check box for an engineering product, variant, or version is available only after all the required data has been entered and verified, and after all the readiness checks have been processed. At that point, the product, version, or variant can be released to other companies and used in transactions. You can create readiness checks for new products, new variants, and new engineering versions.
+You can mark the **Active** check box for an engineering product, variant, or version after all the required data has been entered and verified, and after all the readiness checks have been processed. If one or more checks haven't been processed for the product, version, or variant, then when you try to mark the **Active** check box, you will receive a prompt warning you that not all checks have been completed.
 
-You can also apply readiness checks to standard (non-engineering) products. For more information, see the [Readiness checks on standard products](#standard-products) section later in this topic.
+You can create readiness checks for new engineering products, variants, and versions. You can also apply readiness checks to standard (non-engineering) products (see also [Readiness checks on standard products](#standard-products)). 
+
+You can use standard products in transactions even though not all readiness checks have been completed. If you need to block a product from being used in transactions, use its lifecycle state. You can assign a lifecycle state that blocks a product from being used in transactions and then, after all readiness checks have been completed, assign a new lifecycle state that allows the required transactions.
 
 ## Types of readiness checks
 
@@ -162,7 +164,7 @@ For each row that you add, set the following fields.
 
 ## Assign readiness policies to standard and engineering products
 
-When you create a new product based on an engineering category, you create both a *released product* and a related *shared product*. The way that readiness policies are resolved for a released product depends on whether you've turned on the *Product readiness checks* feature. (For more information, see the [Readiness checks on standard products](#standard-products) section later in this topic.)
+When you create a new product based on an engineering category, you create both a *released product* and a related *shared product*. The way that readiness policies are resolved for a released product depends on whether the *Product readiness checks* feature is turned on for your system (see the [Readiness checks on standard products](#standard-products) section later in this topic for details about this feature and how to turn it on or off).
 
 - When the *Product readiness checks* feature is turned *off* on your system, the readiness policy is set and shown only on [engineering category](engineering-versions-product-category.md) records. To learn which policy applies to a released product, the system checks the **Product readiness policy** field for the related engineering category. You can change the readiness policy for an existing product by editing the related engineering category (not the shared product).
 - When the *Product readiness checks* feature is turned *on*, it adds a **Product readiness policy** field to the **Product** page (where shared products are set up) and to the **Released product** page (where the value is read-only and is taken from the related shared product). The system finds the readiness policy for a released product by checking the related shared product. When you use an engineering category to create a new engineering product, the system creates both a shared product and a released product, and copies any **Product readiness policy** setting for the engineering category to the new shared product. You can then change the readiness policy for an existing product by editing the related shared product (not the released engineering category).
@@ -183,34 +185,11 @@ To assign a readiness policy to an engineering category, follow these steps.
 
 ## Readiness checks on standard products
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 You can enable product readiness checks for standard (non-engineering) products by turning on the *Product readiness checks* feature in Feature management. This feature makes a few small changes to the readiness check system so that it supports standard products.
 
-### Enable readiness checks on standard products
+### Enable or disable readiness checks on standard products
 
-To enable your system to do readiness checks on standard products, follow these steps.
-
-- Enable Engineering change management in your system as described in [Engineering change management overview](product-engineering-overview.md).
-- Use [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to turn on the feature that is named *Product readiness checks*.
-
-<!-- KFM: This section requires confirmation before publishing
-
-### How readiness checks are created for standard products
-
-When you create a new non-engineering *released product*, the system determines whether a readiness check policy has been set up for the related shared product. If a policy has been set up, the following events occur:
-
-- Readiness checks are created for the released product, according to the applicable policy.
-- The released product is blocked from being used until all checks are marked as completed.
-
-If a new *variant* is created for a product, the system checks whether readiness checks have been set up on the related shared product. If a readiness check has been set up, the following events occur:
-
-- Readiness checks are created for the released product, according to the applicable policy.
-- The released product is blocked from being used until all checks are marked as completed.
-
-For engineering products, readiness checks are created in the same way that they are created when the *Product readiness checks* feature is turned off. For more information, see the [How readiness checks are created for a new engineering product, variant, or version](#checks-engineering) section earlier in this topic.
-
--->
+This feature requires that both the *Engineering Change Management* and *Product readiness checks* features be turned on for your system. For details about how to turn these features on or off, see [Engineering change management overview](product-engineering-overview.md).
 
 ### Create readiness policies for standard products
 

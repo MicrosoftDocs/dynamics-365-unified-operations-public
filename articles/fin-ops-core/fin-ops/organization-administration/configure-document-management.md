@@ -4,7 +4,7 @@
 title: Configure document management
 description: This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records.
 author: jasongre
-ms.date: 05/26/2021
+ms.date: 01/05/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -55,7 +55,11 @@ To create a new document type, follow these steps.
 
 ## Configure SharePoint storage
 
-Microsoft SharePoint Online is one of the storage locations that are supported natively. Currently, only SharePoint Online is supported. Support for on-premises SharePoint (a local SharePoint server) may be added in the future.
+Microsoft SharePoint Online is one of the storage locations that is supported natively. On-premises SharePoint (a local SharePoint server) is not currently supported. 
+
+> [!IMPORTANT]
+> -  SharePoint storage is only available in Microsoft-managed environments.
+> -  SharePoint managed device policies are incompatible with an integration to Finance and Operations apps
 
 To use SharePoint storage, set the **Location** field for a document type to **SharePoint**. Then, in the **SharePoint Address** field, enter a valid SharePoint address.
 
@@ -68,6 +72,7 @@ To configure SharePoint storage, follow these steps.
 
 4. Optional: Click **Test SharePoint connection** to test the specified SharePoint host name. This verifies that the security and license are working correctly. 
 5. Optional: Click **Open SharePoint** to open the specified SharePoint host name in a browser. Note that this does not verify security, it just opens the SharePoint path in a browser tab for easy exploration.
+6. Optional: On the **General** tab, turn on **Open attachments in new window**. For more information, see the [Other configuration](#other-configuration) section later in this topic. 
 
 ### Troubleshooting SharePoint communication
 
@@ -77,6 +82,8 @@ SharePoint communication works for the current user only if the following condit
 - The user is a typical user on the tenant, not an external user (for example, a user from another tenant).
 - There is a SharePoint site for the tenant (for example, Contoso.SharePoint.com).
 - The SharePoint site is configured to **Allow this site to appear in search results**.
+- The SharePoint site does not use managed device policies. 
+    -  If managed device policies are enabled on the SharePoint instance, the Finance and Operations SharePoint integration will no longer work, meaning users will not be able to download, view, or create documents stored in SharePoint from Finance and Operations. 
 - The user has access to the folder that the document is stored in.
 
 If documents stored in SharePoint don't open or don't display in preview, follow these steps to troubleshoot the issue: 
@@ -120,10 +127,11 @@ Document preview (WOPI) will not work in environments with an IP safe list enabl
 
 ## Other configuration
 
-Here are some other configuration options to consider, although these options are rarely used:
+Here are some other configuration options to consider:
 
-- On the **Document management parameters** page, on the **General** tab, you can use the **Use Document Tables** option to enable the **Active document tables** allow list. If you set this option to **Yes**, you disable attachments on all other tables. Therefore, turn on this option only when it's required.
+- On the **Document management parameters** page, on the **General** tab, you can use the **Use active document tables** option to enable the **Active document tables** allow list. If you set this option to **Yes**, you disable attachments on all other tables. Therefore, turn on this option only when it's required.
 - On the **Document management parameters** page, on the **General** tab, you can use the **Maximum file size in megabytes** field to set the maximum file size for attachments. Note that when SharePoint is used as a document type, users can only upload a document up to a maximum file size of 262 megabytes. 
+- On the **Document management parameters** page, on the **General** tab, you can use the **Open attachments in new window** option to determine if attachments are opened in place or in a new window or tab. You should consider turning on this option especially if you are using SharePoint for storing attachments, as this will prevent the Finance and Operations user session from resetting when opening attachments. Note that this option is available starting in version 10.0.23. 
 - On the **Options** page (**Settings** \> **User options**), on the **Preferences** tab, you can use the **Enable document handling** option to disable document handling (document management).
 
 ## Accessing document management attachments 
@@ -131,19 +139,6 @@ Here are some other configuration options to consider, although these options ar
 Document management appears to users as the **Attach** button at the top of most pages that contain data. When you select the **Attach** button (or when you use the corresponding keyboard shortcut, **Ctrl**+**Shift**+**A**), the **Attachments** page is opened in the context of the data source of the control that is currently selected on the page. This page shows all the attachments that are related to the corresponding data source. 
 
 The **Attach** button also shows a count of the attachments for the currently selected record. Therefore, you can determine whether there are attachments for the current record without having to open the **Attachments** page. The button shows exact counts for zero through nine attachments. If there are more than nine attachments, the button shows **9+** as the count. In this way, the performance impact and visual noise that exact larger counts might cause are reduced.
-
-### Showing related document attachments
-In version 10.0.12, the **Show related document attachments** feature changes the document attachment experience in the following ways. 
-
--  When the feature is enabled, the **Attachments** page no longer shows only attachments that are related to a single data source. Instead, users can see and access attachments from other data sources on the pages that are related to the active record. For this to occur, the data source must: 
-    -  Be directly related to the parent data source by means of an inner or outer join.
-    -  Be directly related to the parent data source by means of an active, delayed, or passive join with either 1:1 or 0:1 cardinality.
-
-    Note that this criteria excludes showing attachments from child collections (such as lines) when looking at attachments on the header record.  
-
-    The count of attachments on the **Attach** button also reflects this change. 
-
--  Users can move and copy attachments between the related data sources on the **Attachments** page.
 
 ## Document attachment history
 
@@ -247,7 +242,7 @@ The following APIs from the `DocumentManagement` class allow developers to speci
 
 If this file content type is not specified correctly, the attached document may not behave as expected. For this reason, if you use these APIs you should consider one of the following courses of action:  
 
--  Pass **null** for the `_fileContentType` parameter in any of the preceeding APIs. Doing so allows the correct content type to be inferred from the file name. 
+-  Pass **null** for the `_fileContentType` parameter in any of the preceding APIs. Doing so allows the correct content type to be inferred from the file name. 
 -  Switch to using one of the following methods that doesn't include a `_fileContentType` parameter. This is to avoid the possibility of passing incorrect file content types.
     -  **attachFileForRecord()**, which replaces attachFileToCommon()
     -  **attachFileForReference()**, which replaces attachFile()
@@ -319,5 +314,12 @@ To extract attachments, an Attachments entity must be built for a specific busin
 
 The files are retrieved from SharePoint using the current user permissions by the WOPI service. Those files are then rendered in HTML to provide a document preview. This means that the current user needs access to the files to be able to preview them or open them.
 
+## Troubleshooting issues
+
+### Issue: When interacting with Document management or Electronic reporting, users receive an error similar to "Invalid length for a Base-64 char array or string"
+
+**Explanation**: Typically, this issue occurs because the token for the Office Web Apps Server is no longer valid.  
+
+**Fix**: The admin needs to select the **Token refresh** button to the right of the **Office Web Apps Server** field on the **Document management parameters** page under the **General** tab.  
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

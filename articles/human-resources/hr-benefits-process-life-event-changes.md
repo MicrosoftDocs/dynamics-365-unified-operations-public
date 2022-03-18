@@ -2,9 +2,9 @@
 # required metadata
 
 title: Process life event changes
-description: Process life event changes in Microsoft Dynamics 365 Human Resources for life event changes.
-author: andreabichsel
-ms.date: 04/06/2020
+description: This topic explains how to process life event changes in Microsoft Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,13 +21,16 @@ ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
 ---
 
 # Process life event changes
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

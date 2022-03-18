@@ -5,7 +5,7 @@ title: Modules overview
 description: This topic provides an overview of module development in Microsoft Dynamics 365 Commerce. It includes best practices about when and how to extend a module's style or features.
 author: samjarawan
 ms.date: 10/20/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,7 +16,7 @@ audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
 # ms.tgt_pltfrm: 
-ms.custom: 
+
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -117,7 +117,7 @@ If you're building custom modules, you can expose style presets so that site aut
 
 The following illustration shows the style presets that are available for the promo banner module. If the background color is changed, the new color will be used for all instances of the module on the site after the change is published.
 
-![Style presets that are available for the promo banner module](media/module-overview-1.png)
+![Style presets that are available for the promo banner module.](media/module-overview-1.png)
 
 #### CSS override file
 
@@ -137,7 +137,7 @@ If you must target a change to one or a few instances of module, but not all of 
 
 The following illustration shows a header module in site builder after publication. The **Custom CSS class name** setting is highlighted.
 
-![Custom CSS class name setting in a header module in site builder](media/module-overview-2.png)
+![Custom CSS class name setting in a header module in site builder.](media/module-overview-2.png)
 
 ### Theme changes
 

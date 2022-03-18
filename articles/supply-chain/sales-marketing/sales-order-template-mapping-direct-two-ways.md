@@ -3,7 +3,7 @@
 
 title: Synchronization of sales orders directly between Sales and Supply Chain Management
 description: The topic discusses the templates and underlying tasks that are used to run synchronization of sales orders directly between Dynamics 365 Sales and Dynamics 365 Supply Chain Management.
-author: ChristianRytt
+author: Henrikan
 ms.date: 05/09/2019
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: 
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update 
 ms.search.validFrom: 2017-07-8
 
@@ -31,7 +31,7 @@ ms.search.validFrom: 2017-07-8
 
 [!include [banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 The topic discusses the templates and underlying tasks that are used to run synchronization of sales orders directly between Dynamics 365 Sales and Dynamics 365 Supply Chain Management.
 
@@ -39,7 +39,7 @@ The topic discusses the templates and underlying tasks that are used to run sync
 
 The Prospect to cash solution uses the Data integration feature to synchronize data across instances of Supply Chain Management and Sales. The Prospect to cash templates that are available with the Data integration feature enable the flow of data for accounts, contacts, products, sales quotations, sales orders, and sales invoices between Supply Chain Management and Sales. The following illustration shows how the data is synchronized between Supply Chain Management and Sales.
 
-[![Data flow in Prospect to cash](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
+[![Data flow in Prospect to cash.](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## Templates and tasks
 
@@ -193,19 +193,19 @@ The following illustrations show an example of a template mapping in Data integr
 
 ### Sales Orders (Supply Chain Management to Sales) - Direct: OrderHeader
 
-[![Template mapping in Data integration](./media/sales-order-direct-template-mapping-data-integrator-1.png)](./media/sales-order-direct-template-mapping-data-integrator-1.png)
+[![Template mapping in Data integration, Sales Orders (Supply Chain Management to Sales) - Direct: OrderHeader.](./media/sales-order-direct-template-mapping-data-integrator-1.png)](./media/sales-order-direct-template-mapping-data-integrator-1.png)
 
 ### Sales Orders (Supply Chain Management to Sales) - Direct: OrderLine
 
-[![Template mapping in Data integration](./media/sales-order-direct-template-mapping-data-integrator-2.png)](./media/sales-order-direct-template-mapping-data-integrator-2.png)
+[![Template mapping in Data integration, Sales Orders (Supply Chain Management to Sales) - Direct: OrderLine.](./media/sales-order-direct-template-mapping-data-integrator-2.png)](./media/sales-order-direct-template-mapping-data-integrator-2.png)
 
 ### Sales Orders (Sales to Supply Chain Management) - Direct: OrderHeader
 
-[![Template mapping in Data integration](./media/sales-order-direct-template-mapping-data-integrator-3.png)](./media/sales-order-direct-template-mapping-data-integrator-3.png)
+[![Template mapping in Data integration, Sales Orders (Sales to Supply Chain Management) - Direct: OrderHeader.](./media/sales-order-direct-template-mapping-data-integrator-3.png)](./media/sales-order-direct-template-mapping-data-integrator-3.png)
 
 ### Sales Orders (Sales to Supply Chain Management) - Direct: OrderLine
 
-[![Template mapping in Data integration](./media/sales-order-direct-template-mapping-data-integrator-4.png)](./media/sales-order-direct-template-mapping-data-integrator-4.png)
+[![Template mapping in Data integration, Sales Orders (Sales to Supply Chain Management) - Direct: OrderLine.](./media/sales-order-direct-template-mapping-data-integrator-4.png)](./media/sales-order-direct-template-mapping-data-integrator-4.png)
 
 ## Related topics
 

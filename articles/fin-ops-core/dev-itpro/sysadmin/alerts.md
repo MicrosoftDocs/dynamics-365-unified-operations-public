@@ -41,11 +41,11 @@ Follow these steps to set up alerts for batch enhanced forms.
 2. Select a batch job in the list, and then, on the Action Pane, select **Alerts**.
 3. In the **Batch job alerts** dialog box, configure the alerts, and then select **OK**.
 
-    ![Configure alerts](./media/Batch-alert-configure.png) 
+    ![Configure alerts.](./media/Batch-alert-configure.png) 
 
 4. Check the Action center for alert notifications.
 
-    ![Alert notification](./media/Batch-alert-notification.png)
+    ![Alert notification.](./media/Batch-alert-notification.png)
 
 ## Set up alerts for batch legacy forms
 
@@ -54,7 +54,7 @@ Follow these steps to set up alerts for batch legacy forms.
 1. Go to **System administration** \> **Inquiries** \> **Batch jobs**.
 2. Select a batch job in the list, and then, on the Action Pane, on the **Batch job** tab, select **Alerts**.
 
-    ![Legacy form](./media/Batch-alert-legacy.png) 
+    ![Legacy form.](./media/Batch-alert-legacy.png) 
 
 3. In the **Batch job alerts** dialog box, configure the alerts, and then select **OK**.
 

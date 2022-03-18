@@ -5,7 +5,7 @@ author: RobinARH
 ms.date: 07/08/2019
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 10254
 ms.assetid: e289504e-a1d9-44b7-8f84-f99f330321d6
 ms.search.region: Global
@@ -35,12 +35,12 @@ To work with the sample, you must install the provided demo data.
 3.  On the dashboard, open the navigation pane and go to **Fleet Management \> Setup\> Fleet setup**. 
 
     > [!div class="mx-imgBorder"]
-    > ![Fleet setup](media/fmt_setup_data.png)
+    > ![Fleet setup.](media/fmt_setup_data.png)
     
 4.  On the **Data setup** tab, select **Create**. 
     
     > [!div class="mx-imgBorder"]
-    > ![Load Demo Data](media/fmt_data_setup_create.png)
+    > ![Load Demo Data.](media/fmt_data_setup_create.png)
 
 5.  If you're prompted to reload the demo data, click **Yes**.
 6.  When the data is finished loading, select **Close**.
@@ -52,39 +52,39 @@ Remember that you’re working with the migrated app in this section. The forms 
 2.  To return to the **Dashboard**, select the product name in the top-left corner of the page.
 
     > [!div class="mx-imgBorder"]
-    > ![Return to dashboard](media/fmt_logo.png)
+    > ![Return to dashboard.](media/fmt_logo.png)
     
     The dashboard is the main working hub. You can see the various tiles, organized into sections, which lead to parts of the application. The dashboard is designed for horizontal scrolling, which is an optimization for working well on modern devices. The button to the right of the dashboard shows the navigation bar.
 3.  From the Dashboard, open the navigation bar and go to **Fleet Management \> Customers \> Customer**. 
 
     > [!div class="mx-imgBorder"]
-    > ![Navigate to customer list](media/fmt_customers_customer.png)
+    > ![Navigate to customer list.](media/fmt_customers_customer.png)
     
     > [!div class="mx-imgBorder"]
-    > ![New customer](media/fmt_new_customer.png)
+    > ![New customer.](media/fmt_new_customer.png)
 
 4.  To switch to the **Details** view, select a value in the **First Name** column. This view shows detailed information for a single customer.
 
     > [!div class="mx-imgBorder"]
-    > ![First name to details view](media/fmt_details_view.png)
+    > ![First name to details view.](media/fmt_details_view.png)
 
 5.  Click **Show list** to show the navigation list. 
 
     > [!div class="mx-imgBorder"]
-    > ![Navigation list](media/fmt_show_list.png)
+    > ![Navigation list.](media/fmt_show_list.png)
 
 6.  Click the various customer names in the navigation list in the side pane, and watch as the detailed information about each customer changes.
 7. Select the customer **Eduardo Cobo**. You'll notice the charts update to indicate Eduardo's previous rental preferences.
 
     > [!div class="mx-imgBorder"]
-    > ![Details view](media/fmt_another_customer.png)
+    > ![Details view.](media/fmt_another_customer.png)
 
 8. Hover over the pie slices to see the details. You'll notice that, in the past, Eduardo has often rented red SUVs. This might give the sales clerk a cue to look for available red SUVs the next time Eduardo makes a reservation. This is a simple example of proactively providing insights.
 9. Add yourself as a customer.
     -   On the Action Pane, click **New**. 
         
         > [!div class="mx-imgBorder"]
-        > ![Add yourself](media/fmt_add_new.png)
+        > ![Add yourself.](media/fmt_add_new.png)
 
     -   Fill in the form to add yourself as a customer. Make sure that you provide your name, a 16-digit number in the credit card field, and address information, at a minimum. **Note**: You don't have to take any action to save a new record.
 
@@ -106,7 +106,7 @@ Remember that you’re working with the migrated app in this section. The forms 
 1. Click the **Home** icon to return to the dashboard.
 
     > [!div class="mx-imgBorder"]
-    > ![Home icon](media/fmt_home_icon.png)
+    > ![Home icon.](media/fmt_home_icon.png)
 
 2. Find the **Reservation Management** tile and select it to open the Reservation Management workspace.
 3. Click **Current rentals**.
@@ -117,7 +117,7 @@ Remember that you’re working with the migrated app in this section. The forms 
 8. On the navigation bar, navigate to **Fleet management** &gt; **Vehicles** &gt; **Vehicle Maintenance**. In the **Vehicle Maintenance** form, the **Status** field shows that your rental is awaiting examination by the service department.
 
     > [!div class="mx-imgBorder"]
-    > ![Vehicle mainenance](media/fmt_vehicle_examination.png)
+    > ![Vehicle mainenance.](media/fmt_vehicle_examination.png)
         
     > [!NOTE]
     > You might need to wait up to two minutes for the batch framework to change the status of the vehicle. On the Action Pane, click **Refresh** periodically to update the view, until you see the status change. Keep in mind that a different person usually handles each step in a workflow; the brief delay introduced by the batch framework is not an issue in a real-world application.
@@ -130,20 +130,20 @@ Remember that you’re working with the migrated app in this section. The forms 
 14. Click **Tracking details** to see the activities. 
 
     > [!div class="mx-imgBorder"]
-    > ![Tracking details](media/fmt_workflow_history.png)
+    > ![Tracking details.](media/fmt_workflow_history.png)
 
 ### To view the setup behind the workflow
 
 1.  On the dashboard, navigate to **Fleet Management** \> **Setup** \> **Workflow setup**. The **Workflow Setup** page shows the list of workflows. 
 
     > [!div class="mx-imgBorder"]
-    > ![Workflow setup](media/fmt_workflow_setup.png)
+    > ![Workflow setup.](media/fmt_workflow_setup.png)
     
 2.  In the **Workflow ID** column, click the ID of your vehicle maintenance workflow.
 3.  Accept any prompts that ask you for permission to run code. After a short wait, the workflow editor opens. This step works on the one-box environment, but not in the cloud. You can view the workflow diagram in the workflow editor. The following illustration shows the workflow.
     
     > [!div class="mx-imgBorder"]
-    > ![Workflow editor](media/fmt_workflow_editor.png)
+    > ![Workflow editor.](media/fmt_workflow_editor.png)
 
 4.  When you are done, close the **Workflow** window.
 
@@ -166,7 +166,7 @@ The web client enables users who have appropriate permissions to modify KPI defi
     | Goal value    | 30                      |
     
     > [!div class="mx-imgBorder"]
-    > ![New KPI](media/fmt_new_kpi.png)
+    > ![New KPI.](media/fmt_new_kpi.png)
 
 6.  Click **Save**. 
 
@@ -185,13 +185,13 @@ The web client enables users who have appropriate permissions to modify KPI defi
 9.  In the application bar, click **Save**. 
     
     > [!div class="mx-imgBorder"]
-    > ![KPI graph](media/fmt_kpi_value.png)
+    > ![KPI graph.](media/fmt_kpi_value.png)
 
 10. Click the form caption to return to the grid view.
 11. Click the **Name** column header, change the filter operator to **contains**, and update the filter field value to **Number**. You will see the new KPI is available in the list.
     
     > [!div class="mx-imgBorder"]
-    > ![KPI list](media/fmt_kpi_list.png)
+    > ![KPI list.](media/fmt_kpi_list.png)
 
 ## Launch an operational report
 In this tutorial, you’ll launch an operational report that contains a list of customers who are currently renting vehicles.
@@ -200,7 +200,7 @@ In this tutorial, you’ll launch an operational report that contains a list of 
 2.  On the right side of the page, under **Reports** click **Customer list**. Do not enter anything in the parameter for **Customer group**. 
     
     > [!div class="mx-imgBorder"]
-    > ![Customer list](media/fmt_customer_list_report.png)
+    > ![Customer list.](media/fmt_customer_list_report.png)
 
 3.  Click **OK** to close the dialog box. The report will be rendered and show the list of customers. The report may take a minute to render.
 
@@ -221,12 +221,12 @@ In this tutorial, you’ll access the system as a user that has been assigned a 
     | Enabled         | Verify that this slider is set to **Yes**.                                                |
 
     > [!div class="mx-imgBorder"]
-    > ![New user record](media/fmt_new_user_record.png)
+    > ![New user record.](media/fmt_new_user_record.png)
 
 4.  Click **Assign Roles**. 
 
     > [!div class="mx-imgBorder"]
-    > ![Assign branch manager](media/fmt_branch_manager.png)
+    > ![Assign branch manager.](media/fmt_branch_manager.png)
 
 5.  Select **Fleet management branch manager**, and then click **OK**.
 6.  Click the user name on the top right, and then click **Sign Out**. You’ll be redirected back to the sign-n page

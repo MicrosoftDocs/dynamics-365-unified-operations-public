@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Create plan types
-description: A plan type in Microsoft Dynamics 365 Human Resources is a high-level grouping of specific types of benefits. Each plan type has a plan type code that determines rules for the plan type.
-author: andreabichsel
-ms.date: 04/06/2020
-ms.topic: article
+title: Plan type overview
+description: A plan type in Microsoft Dynamics 365 Human Resources is a high-level grouping of specific types of benefits. 
+author: twheeloc
+ms.date: 08/24/2021
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -21,23 +21,37 @@ ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Create plan types
+# Plan type overview
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-A plan type in Microsoft Dynamics 365 Human Resources is a high-level grouping of specific types of benefits. Each plan type has a plan type code that determines rules for the plan type. For example, the plan type Basic life would have the plan type code Life because it’s a kind of life insurance plan and must conform to rules established for the Life plan type code. Another plan type might be Supplemental life, also with plan type code Life.
+A plan type is a high-level grouping of specific types of benefits. Each plan type has a plan type code that determines rules for the plan type. For example, the **Basic life** plan type will have the **Life** plan type code, because it's a type of life insurance plan and must conform to rules that have been established for the **Life** plan type code. Another plan type might be **Supplemental life**. This plan type will also have the **Life** plan type code.
 
-Each plan type indicates whether an employee can enroll in one plan of its type or multiple. For example, an employee would likely be able to enroll in both the Basic life and the Supplemental life policies of plan type Life. An employee would likely be allowed to enroll in only one policy of type Medical.
+Each plan type indicates whether an employee can enroll in one plan of its type or multiple. For example, an employee would likely be able to enroll in both the **Basic life** and the **Supplemental life** policies of plan type Life. An employee would likely be allowed to enroll in only one policy of type Medical.
 
-If a plan type involves contacts, the plan type indicates whether contacts are beneficiaries or dependents. For example, a Basic life plan type would have beneficiaries, while a Basic medical plan type would have dependents. In some cases, a plan may not have any personal contacts. For example, a Flexible Spending Account or Parking allowance.
+If a plan type involves contacts, the plan type indicates whether contacts are beneficiaries or dependents. For example, a **Basic life** plan type would have beneficiaries, while a Basic medical plan type would have dependents. In some cases, a plan may not have any personal contacts. For example, a Flexible Spending Account or Parking allowance.
 
-A plan type may define coverage options. The coverage options are defined in the Coverage option form. A coverage option can specify the amount of the benefit or the contacts who are eligible for the plan type. For example, if the contact type is Beneficiary, the coverage option should define the terms of what the beneficiary is eligible to receive when the benefit is utilized. If the contact type is Dependent, the coverage option should define the relationship between the dependent and employee. 
+
+A plan type may define coverage options. The coverage options are defined on the **Coverage options** page. A coverage option can specify the amount of the benefit or the contacts who are eligible for the plan type. For example, if the contact type is **Beneficiary**, the coverage option should define the terms of what the beneficiary is eligible to receive when the benefit is utilized. If the contact type is **Dependent**, the coverage option should define the relationship between the dependent and employee. 
+
+> [!IMPORTANT]
+> The **Plan types** page includes key data that affects the options that are available when a new benefit plan is created:
+>
+> - **Plan type code** – This field affects what is shown on the **Configuration** tab when the actual benefit is set up.  
+> - **Concurrent enrollment** – This field determines whether multiple enrollments are allowed. (For a medical plan, this field is typically set to **One enrollment**.)
+> - **Contact type** – This field enables dependents or beneficiaries to be added to a plan. If it's set to **None**, employees who enroll in benefits won't have the option to select either a beneficiary or a dependent.
+> - **Coverage options** – Use this field to link the coverage options with the plan types. It defines either the individuals who will be covered by this plan type or the coverage amounts that are available for this plan type. For example, you can specify that coverage for a medical plan type will be available to the employee only, the employee and one other person, or the employee and their family.
+
+## Create plan types
 
 1. In the **Benefits management** workspace, under **Setup**, select **Plan types**.
 

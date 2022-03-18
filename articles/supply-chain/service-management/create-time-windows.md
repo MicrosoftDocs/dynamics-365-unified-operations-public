@@ -2,8 +2,8 @@
 # required metadata
 
 title: Create time windows 
-description: You can use time windows to optimize the scheduling of service order lines.
-author: ShylaThompson
+description: This topic provides a procedure that shows how to create time windows.
+author: kamaybac
 ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
@@ -27,13 +27,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Create time windows   
+# Create time windows
 
 [!include [banner](../includes/banner.md)]
 
 You can use time windows to optimize the scheduling of service order lines.
 
-1. Click **Service management** \> **Setup** \> **Service agreements** \> **Time window**.
+1. Go to **Service management** \> **Setup** \> **Service agreements** \> **Time window**.
 2. Press **Alt+N** to create a new time window.
 3. In the **Time window** field, enter a name for the time window.
 4. In the **Description** field, enter a description for the time window.

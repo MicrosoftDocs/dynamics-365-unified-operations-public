@@ -55,7 +55,7 @@ The following example shows how you can set up sales tax codes and post and prin
 1. Go to **Accounts payable** \> **Setup** \> **Accounts payable parameters**. 
 2. On the **Ledger and sales tax** tab, on the **Sales tax** FastTab, set the **Intra-community VAT** option to **Yes**.
 
-![Accounts payable parameters page, Ledger and sales tax tab, Intra-community VAT field](media/1_Intra-community_VAT.png)
+![Accounts payable parameters page, Ledger and sales tax tab, Intra-community VAT field.](media/1_Intra-community_VAT.png)
 
 3. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes** and create a pair of sales tax codes with the same tax percentage for each tax rate. One code must have a positive tax percentage, and the other code must have a negative tax percentage. For codes with negative tax percentage, on the **Calculation** FastTab, set the **Allow negative sales tax percentage** option to **Yes**.
 
@@ -96,7 +96,7 @@ The following example shows how you can set up sales tax codes and post and prin
 
 8.  Verify that there are two lines in the **Sales tax transactions** list.
 
-    ![Sales tax transaction lines](media/2_Sales_tax.png)
+    ![Sales tax transaction lines.](media/2_Sales_tax.png)
 
 9.  Select **Post** to post the transaction and then select **OK**.
 

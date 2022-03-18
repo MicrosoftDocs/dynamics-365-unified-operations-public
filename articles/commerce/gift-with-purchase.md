@@ -30,7 +30,6 @@ ms.dyn365.ops.version: AX 7.0.1
 # Configure gift with purchase promotions
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This topic describes how to configure "gift with purchase" promotions in Microsoft Dynamics 365 Commerce.
 
@@ -42,13 +41,16 @@ As of the Commerce version 10.0.19 release, a new **Discount lines** value is av
 
 The items that are listed on the **Lines** FastTab of the **Threshold discounts** page should be considered the qualifying items for a promotion, whereas the items that are listed on the **Threshold discount lines** FastTab should be considered the discounted items. The threshold amount that is specified on the **Lines** FastTab is checked against the qualifying lines to determine whether the threshold has been met. If the threshold is met, the discount is applied to the items that are listed on the **Threshold discount lines** FastTab. 
 
+> [!NOTE]
+> The discounted items should *not* be included in qualifying items. If they are, from discount calculation perspective, those items are not considered as gifts.
+
 ## Promotion configuration examples
 
 You can use the **Quantity limit** field on the **Threshold discount lines** FastTab to specify (and therefore limit) the number of items that should be discounted when the threshold is met. For example, you want to run a promotion where customers who spend $200 on dress shirts get two ties for free. On the **Threshold discount lines** FastTab, you create a new threshold discount tier. You enter **200.00** in the **Amount** field and select **Discount lines** in the **Discount method** field. Next, on the **Lines** FastTab, you select the **Dress Shirts** category to specify the qualifying items. On the **Threshold discount lines** FastTab, you select the **Ties** category to specify the discounted items. Finally, for the **Ties** category, you enter **100.00** in the **Deal price/Discount percent** field to take 100 percent off the price, and you enter **2.00** in the **Quantity limit** field to limit the number of discounted items to a maximum of two items. Now, when dress shirts that total more than $200 are added to a transaction, and some ties are also added to the transaction, up to two ties will be provided to the customer for free. 
 
 The following illustration shows the configuration for the "spend $200 on dress shirts and get two ties for free" promotion example in Commerce headquarters. 
 
-![Gift with purchase example configuration in Commerce headquarters](./media/gift-with-purchase.png)
+![Gift with purchase example configuration in Commerce headquarters.](./media/gift-with-purchase.png)
 
 As has been mentioned, the **Quantity limit** field on the **Threshold discount lines** FastTab lets you to limit the number of items that should be discounted. If this field is set to **0.00**, there is no limit on the number of items that can be discounted. Therefore, for the previous example, if the **Quantity limit** field for the **Ties** category is set to **0.00**, customers who meet the qualifying threshold can get any number of ties for free. 
 

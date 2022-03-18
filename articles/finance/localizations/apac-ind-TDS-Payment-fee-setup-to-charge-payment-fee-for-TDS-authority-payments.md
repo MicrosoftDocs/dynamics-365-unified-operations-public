@@ -7,7 +7,7 @@ author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+
 ms.technology: 
 
 # optional metadata
@@ -37,7 +37,7 @@ This topic explains how to set up payment fees that are charged for Tax Deducted
 
 1. Go to **Accounts payable \> Payment setup \> Payment fee**.
 
-    [![Payment fee page](./media/apac-ind-TDS-28.png)](./media/apac-ind-TDS-28.png)
+    [![Payment fee page.](./media/apac-ind-TDS-28.png)](./media/apac-ind-TDS-28.png)
 
 2. Select **New** to create a payment fee, and enter the required details.
 3. In the **Fee type** field, select the type of payment fee:
@@ -52,7 +52,7 @@ This topic explains how to set up payment fees that are charged for Tax Deducted
 5. Enter the other required details.
 6. On the Action Pane, select **Payment fee setup** to open the **Payment fee setup** page, where you can set up payment fees for various combinations of banks, methods of payment, payment specifications, currencies, and date intervals.
 
-    [![Payment fee setup page](./media/apac-ind-TDS-21.png)](./media/apac-ind-TDS-21.png)
+    [![Payment fee setup page.](./media/apac-ind-TDS-21.png)](./media/apac-ind-TDS-21.png)
 
 7. On the **Overview** tab, in the **Groupings** field, specify which banks you're setting up the payment fee for:
 
@@ -70,7 +70,7 @@ This topic explains how to set up payment fees that are charged for Tax Deducted
 15. In the **Fee currency** field, specify the currency code for the fee.
 16. Select the **General** tab to view or modify the details for the selected bank account.
 
-    [![General tab](./media/apac-ind-TDS-22.png)](./media/apac-ind-TDS-22.png)
+    [![General tab.](./media/apac-ind-TDS-22.png)](./media/apac-ind-TDS-22.png)
 
 16. In the **Minimum** field, enter the minimum transaction amount that activates the fee.
 17. In the **Maximum** field, enter the maximum transaction amount that activates the fee.
@@ -80,7 +80,7 @@ This topic explains how to set up payment fees that are charged for Tax Deducted
 21. In the **Item sales tax group** field, select the item sales tax group to use to calculate the item sales tax for the fee amount.
 22. Select the **Interval** tab. 
 
-    [![Interval tab](./media/apac-ind-TDS-23.png)](./media/apac-ind-TDS-23.png)
+    [![Interval tab.](./media/apac-ind-TDS-23.png)](./media/apac-ind-TDS-23.png)
 
 23. In the **Days** field, enter the number of days between the posting date (discounting date) of the payment and the due date of the promissory note.
 24. In the **Percentage/Amount** field, select whether the specification is a percentage or a set amount.

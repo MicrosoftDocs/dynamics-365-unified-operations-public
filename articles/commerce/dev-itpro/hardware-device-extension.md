@@ -1,39 +1,49 @@
 ---
-# required metadata
-
-title: Integrate the POS with a new hardware device
-description: This topic explains how to integrate the point of sale (POS) with a new hardware device.
+title: Integrate the POS with a new hardware device and generate the extension installer
+description: This topic explains how to integrate the point of sale (POS) with a new hardware device and generate the extension installer.
 author: mugunthanm
 ms.date: 07/27/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 28021
-ms.assetid: 
+ms.reviewer: tfehr
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 7.3.0, Retail July 2017 update, AX 10.0.11
-
 ---
 
-# Integrate the POS with a new hardware device
+# Integrate the POS with a new hardware device and generate the extension installer
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to integrate the point of sale (POS) with a new hardware device. 
+This topic explains how to integrate the point of sale (POS) with a new hardware device and generate the extension installer. 
 
-To call Hardware station from the POS, you must use a request and a response:
+## Hardware Station overview
+
+Hardware Station is used by Modern POS and Cloud POS to connect to hardware peripherals, such as printers, cash drawers, scanners, and payment terminals. 
+
+![HWS-Local-Traditional](media/hws-local.png)
+
+![Shared Hardware Station](media/hws-shared.png)
+
+## Hardware Station setup
+
+Before you start, use the information in [Configure and install Retail hardware station](../retail-hardware-station-configuration-installation.md) to install Hardware Station, and to get a feel of what hardware is and how it's installed.
+
+## Hardware Station architecture
+
+Hardware Station exposes Web APIs for Hardware Station application programming interfaces (APIs). Hardware Station can be extended either by implementing a new controller for a new device (for example, a cash dispenser) or by overriding an existing controller for an existing device type (for example, a new Audio Jack magnetic stripe reader (MSR) implementation).
+
+![Hardware Station Architecture](media/hardware-station-architecture-1024x764.png)
+
+## Hardware Station extensibility scenarios
+
+Extensibility in Hardware Station is achieved by using the [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/), which is supported by .NET. **Extensibility guideline:** Always write your extension in your own extension assembly. That way, you're writing a true extension, and upgrades will be much easier. There are two basic scenarios for extension:
+
+-   **Adding a new device** – The out-of-box Hardware Station doesn't already support the device (for example, a cash dispenser). Therefore, you must add support for the new device in Hardware Station.
+-   **Adding a new device type for an existing device** – The out-of-box Hardware Station implementation already supports the device (for example, an MSR), but you must add support for a specific device type (for example, an Audio Jack MSR implementation).
+
+To call custom Hardware station APIs from the POS, you must use a request and a response:
 
 + **HardwareStationDeviceActionRequest** – The request that is sent from the POS to Hardware station.
 + **HardwareStationDeviceActionResponse** – The response that the POS receives from Hardware station.
@@ -41,7 +51,6 @@ To call Hardware station from the POS, you must use a request and a response:
 The class that you extend depends on the version of the Retail software development kit (SDK) that you're using.
 
 + For Retail SDK version 10.0.11 or later, you extend the **IController** interface.
-+ For Retail SDK versions that are earlier than version 10.0.11, you extend the **HardwareStationController** and **IHardwareStationController** classes.
 
 ## HardwareStationDeviceActionRequest
 
@@ -96,7 +105,7 @@ The following table describes the parameters.
 
 The follow diagram shows the flow between the POS, Hardware station, and the hardware device.
 
-![Flow diagram](./media/POSDeviceExtension.png)
+![Flow diagram.](./media/POSDeviceExtension.png)
 
 ## Hardware station extension
 
@@ -209,50 +218,6 @@ namespace Contoso
 }
 ```
 
-## Sample code for Retail SDK versions before version 10.0.11
-
-```csharp
-namespace Contoso
-{
-    namespace Commerce.HardwareStation.ISVExtensionDevice
-    {
-        using System;
-        using System.Composition;
-        using System.Web.Http;
-        using Microsoft.Dynamics.Commerce.HardwareStation;
-
-        /// <summary>;
-        /// Fiscal register peripheral web API controller class.
-        /// </summary>
-
-        [Export("ISVEXTENSIONDEVICE", typeof(IHardwareStationController))]
-        [Authorize]
-        public class ISVExtensionDeviceController : HardwareStationController, IHardwareStationController
-        {
-            /// <summary>
-            /// Sample.
-            /// </summary>
-            /// <param name="request">Custom request.<param>
-            /// <returns>Result of Custom response.</returns>
-
-            [HttpPost]
-            public CustomResponse Sample(CustomRequest request)
-            {
-                ThrowIf.Null(request, "request");
-                try
-                {
-                    return null;
-                }
-                catch (Exception ex)
-                {
-                    throw ex;
-                }
-            }
-        }
-    }
-}
-```
-
 ## Sample POS code to call the Hardware station extension
 
 From your POS extension, call the Hardware station by using the following pattern.
@@ -264,5 +229,46 @@ let hardwareStationDeviceActionRequest: HardwareStationDeviceActionRequest<Hardw
 return this.extensionContextRuntime.executeAsync(hardwareStationDeviceActionRequest);
 ```
 
+> [!NOTE]
+> If you are not using the independent POS packaging SDK or sealed HWS installer then follow the steps in [Create deployable packages](retail-sdk/retail-sdk-packaging.md) to generate the package for deployment.
+
+## Package the HWS extension with Modern POS to use local HWS
+
+> [!NOTE]
+> This section is applicable if you are using POS independent packaging SDK with version 10.0.22 or later of Finance and Operations apps.
+ 
+To package the HWS extension with Modern POS to use local HWS, the HWS extension must be packaged with the POS. In the Modern POS JavaScript project, add a reference to your HWS project. Then use the POS installer project to create extension installer. For more information, see the sample JavaScript project in the [Dynamics365Commerce.InStore/src/PosSample/ModernPos/ModernPos.jsproj GitHub repo](https://github.com/microsoft/Dynamics365Commerce.InStore).
+
+If you have only HWS extension, remove all the other unwanted project references from the sample. The **ModernPos.jsproj** project creates the **msix** installer and then the installer project consumes this and creates the **exe** installer. THe HWS extension will be deployed as a UWP app extension.
+
+## Generate an extension installer for the Hardware station
+
+Dynamics 365 Commerce 10.0.18 and later supports sealed installers. You can generate an extension installer separately from the base installer, and the installer can be independently installed and serviced. This will work only if you are using the [sealed self-service installers](enhanced-mass-deployment.md). 
+
+To generate the sealed extension installer for the Hardware station, follow these steps:
+
+1. Download the [sample Hardware station installer project](https://github.com/microsoft/Dynamics365Commerce.InStore/tree/release/9.31/src/HardwareStationSample/HardwareStation.Installer) from GitHub and open the **HardwareStation.Installer.csproj** project in Visual Studio.
+2. Add your Hardware station extension project as a project reference to the **HardwareStation.Installer.csproj** installer project. Remove the existing sample project reference from the **HardwareStation.Installer.csproj** project.
+
+    The installer project consumes the **Microsoft.Dynamics.Commerce.Sdk.Installers.HardwareStation** package to generate the extension installer. The sample installer project class extends the **ExtensionPackageInstallerSetup** class to implement the installation steps.
+
+3. To update the installer name, set the **InstallerName** variable in the sample code.
+4. The sample installer project can be updated to perform additional logic during installation. For example, you could ping a server. To add logic, use the **HardwareStationExtensionPackageInstallerSetup.cs** file in the **HardwareStation.Installer.csproj**.
+5. You can also add pre- and post-steps to the installer by implementing the **IExtensionInstallerStep** interface. To add steps, use the **TestExtensionInstallerPreInstallStep.cs** file and **TestExtensionInstallerPostInstallStep.cs** in the **HardwareStation.Installer.csproj** sample installer project.
+6. Build the extension **HardwareStation.Installer.csproj** project to generate the shared Hardware station extension installer. The output of the project is the extension installer. You can find the generated extension installer path in the Visual Studio Output window after build is finished.
+7. Deploy the shared Hardware station extension for Point of Sale (POS) and test it in your scenario.
+
+    > [!NOTE]
+    > The sealed shared Hardware server installer must be installed before running the extension installer.
+
+8. Run the extension installer generated by using the command prompt. Open the command prompt in admin mode and run the installer with the **install** parameter. To uninstall, run the extension installer with the **uninstall** parameter. For example:
+
+    ```dos
+    C:\HardwareStation.Installer\bin\Debug\net461> .\HardwareStation.Installer.exe install
+    ```
+
+9. Close POS if it's running.
+10. Open POS and configure it to use the shared Hardware station.
+11. Validate the extension hardware station scenario.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

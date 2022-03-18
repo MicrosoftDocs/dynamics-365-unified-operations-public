@@ -4,7 +4,7 @@
 title: Get started with Electronic invoicing for Mexico
 description: This topic provides information that will help you get started with Electronic invoicing for Mexico.
 author: gionoder
-ms.date: 09/22/2020
+ms.date: 12/01/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: 97423
+ms.custom: ["97423", "intro-internal"]
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -38,7 +38,15 @@ This topic provides information that will help you get started with Electronic i
 
 ## Prerequisites
 
-Before you complete the steps in this topic, you must complete the steps in [Get started with Electronic invoicing](e-invoicing-get-started.md).
+Before you complete the steps in this topic, you must complete the steps in [Get started with Electronic invoicing service administration](e-invoicing-get-started-service-administration.md) and [Get started with Electronic invoicing](e-invoicing-get-started.md).
+
+## Set up the Cadena XSLT
+
+To add the Cadena XSLT schema to the globalization feature for CFDI processing, complete the following steps.
+
+1. Download schema from the [SAT web site](http://www.sat.gob.mx/sitio_internet/cfd/3/cadenaoriginal_3_3/cadenaoriginal_3_3.xslt).
+2. Compress the schema to a ZIP file.
+3. Save the xslt file to your Azure Storage account set up in your Service environment for the new container.
 
 ## RCS setup
 
@@ -61,7 +69,7 @@ During the RCS setup, you will complete these tasks:
     > [!NOTE]
     > If you don't see the feature in the list, select **Synchronize**, and then repeat step 3.
 
-![Importing the CFDI invoices (MX) feature](media/e-Invoicing-services-get-started-MEX-Select-Import-CFDI-feature.png)
+![Importing the CFDI invoices (MX) feature.](media/e-Invoicing-services-get-started-MEX-Select-Import-CFDI-feature.png)
 
 When you import the **CFDI invoices (MX)** feature from the Global repository, all the feature settings, including configurations and actions, are also imported.
 
@@ -71,13 +79,13 @@ You can create a new version if, for example, URLs must be updated. For more inf
 
 - On the **e-Invoicing Features** page, on the **Versions** tab, select **New**.
 
-![Adding a new e-Invoicing feature version](media/e-Invoicing-services-get-started-MEX-Select-New-e-Invoicing-feature.png)
+![Adding a new e-Invoicing feature version.](media/e-Invoicing-services-get-started-MEX-Select-New-e-Invoicing-feature.png)
 
 ### Update the configuration version
 
 1. On the **e-Invoicing Features** page, on the **Configurations** tab, select **Add** or **Delete** to manage the configuration versions (ER file format configurations).
 
-    ![Managing e-Invoicing feature configurations](media/e-Invoicing-services-get-started-MEX-Manage-e-Invoicing-feature-Configurations.png)
+    ![Managing e-Invoicing feature configurations.](media/e-Invoicing-services-get-started-MEX-Manage-e-Invoicing-feature-Configurations.png)
 
     When you create a new version, all configurations are inherited from the last published version. To process CFDI invoices, the following configurations are required:
 
@@ -89,17 +97,17 @@ You can create a new version if, for example, URLs must be updated. For more inf
 
 2. In the list, select a configuration version, and then select **Edit** or **View** to open the **Format designer** page, where you can edit or view the configuration.
 
-    ![Opening the Format designer page](media/e-Invoicing-services-get-started-MEX-Configuration-ER-format-designer.png)
+    ![Opening the Format designer page.](media/e-Invoicing-services-get-started-MEX-Configuration-ER-format-designer.png)
 
 3. Use the **Format designer** page to edit and view the ER format file configurations. For more information, see [Create electronic document configurations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md).
 
-    ![Format designer page](media/e-Invoicing-services-get-started-MEX-ER-format-designer.png)
+    ![Format designer page.](media/e-Invoicing-services-get-started-MEX-ER-format-designer.png)
 
 ## Manage the e-Invoicing feature setups
 
 - On the **e-Invoicing Features** page, on the **Setups** tab, select **Add**, **Delete**, or **Edit** to manage the e-Invoicing feature setups.
 
-![Managing the e-Invoicing feature setups](media/e-Invoicing-services-get-started-MEX-Manage-e-Invoicing-feature-Setup.png)
+![Managing the e-Invoicing feature setups.](media/e-Invoicing-services-get-started-MEX-Manage-e-Invoicing-feature-Setup.png)
 
 To submit CFDI invoices for authorization (generate the XML file, submit the XML file, and process the response), the **Sales invoice** feature setup is required.
 
@@ -110,11 +118,11 @@ To submit CFDI invoice cancellation, the **Cancellation** and **Cancel** feature
 1. On the **e-Invoicing Features** page, on the **Setups** tab, in the **Feature setup** column, select **Sales invoice**.
 2. Select **Edit** to configure the actions, applicability rules, and variables.
 
-    ![Editing the e-Invoicing feature setup](media/e-Invoicing-services-get-started-MEX-Edit-e-Invoicing-feature-setup.png)
+    ![Editing the e-Invoicing feature setup.](media/e-Invoicing-services-get-started-MEX-Edit-e-Invoicing-feature-setup.png)
 
 3. On the **Feature version setup** page, select the **Actions** tab to manage the list of actions. Actions define a list of operations that must be run in sequential order to accomplish full execution of the event.
 
-    ![Actions tab](media/e-Invoicing-services-get-started-MEX-Select-Actions.png)
+    ![Actions tab.](media/e-Invoicing-services-get-started-MEX-Select-Actions.png)
 
     | Action ID | Action                   | Action name                                  | Action description                                          |
     |-----------|--------------------------|----------------------------------------------|-------------------------------------------------------------|
@@ -131,6 +139,17 @@ To submit CFDI invoice cancellation, the **Cancellation** and **Cancel** feature
 > [!NOTE]
 > Use the same steps to update the URL for **Call Mexican PAC service** action for the **Cancel** and **Cancelation request** feature setups.
 
+### Set up the path for the Cadena XLST schema
+
+1. On the **Feature version setup** page, on the **Variables** tab, select the variable name, **DigitalSignatureXSLT**.
+2. In the **Values** field enter: {"containerUrl":"https://&lt;AccountStorageName&gt;.blob.core.windows.net/&lt;ContainerName&gt;","path":"&lt;RelativePath&gt;"}
+   
+    where: <RelativePath> = folder\\folder\\filename with double backslashes, ContainerName must denote the container that is used for the service.
+   
+    Example of the variable would be:
+    
+    {"path":"xxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx\\dev\\cadena_xslt","containerUrl":https://yyyyyyyyyy.blob.core.windows.net/containername}
+
 ## Assign the Draft version to an e-Invoicing environment
 
 1. On the **e-Invoicing Features** page, on the **Environments** tab, select **Enable**.
@@ -138,7 +157,7 @@ To submit CFDI invoice cancellation, the **Cancellation** and **Cancel** feature
 3. In the **Effective from** field, select the date when the environment should become effective.
 3. Select **Enable**.
 
-![Enabling an e-Invoicing environment](media/e-Invoicing-services-get-started-MEX-Enable-e-Invoicing-Environment.png)
+![Enabling an e-Invoicing environment.](media/e-Invoicing-services-get-started-MEX-Enable-e-Invoicing-Environment.png)
 
 ## Change the version status to Completed
 
@@ -154,7 +173,7 @@ To submit CFDI invoice cancellation, the **Cancellation** and **Cancel** feature
 1. On the **e-Invoicing Features** page, select the **Versions** tab to manage the status of the **CFDI invoices (MX)** feature.
 2. Select **Change status** to change the status of the feature.
 
-![Changing the status of the e-Invoicing feature](media/e-Invoicing-services-get-started-MEX-Change-status-of-e-Invoicing-feature.png)
+![Changing the status of the e-Invoicing feature.](media/e-Invoicing-services-get-started-MEX-Change-status-of-e-Invoicing-feature.png)
 
 ## Set up Electronic invoicing  integration in Finance
 
@@ -176,7 +195,7 @@ To set up Electronic invoicing in Finance, you will complete these tasks:
 1. Go to **Organization administration \> Setup \> Electronic document parameters**.
 2. On the **Features** tab, select the **Enable** check box in the rows for feature references **MX-00010** and **MX-00016**.
 
-![Turning on the features for processing CFDI invoices](media/e-Invoicing-services-get-started-MEX-Enable-CFDI-feature.png)
+![Turning on the features for processing CFDI invoices.](media/e-Invoicing-services-get-started-MEX-Enable-CFDI-feature.png)
 
 ### Import ER configurations and set up the response types for updating CFDI invoices
 
@@ -226,7 +245,7 @@ After you turn on the **Configurable Electronic invoicing integration** feature,
 2. For the first submission of any document, always set the **Resubmit documents** option to **No**. If you must resubmit a document through the service, set this option to **Yes**.
 3. On the **Records to include** FastTab, select **Filter** to open the **Inquiry** dialog box, where you can build a query to select documents for submission.
 
-![Submitting a CFDI document](media/e-Invoicing-services-get-started-MEX-Submit-CFDI-document.png)
+![Submitting a CFDI document.](media/e-Invoicing-services-get-started-MEX-Submit-CFDI-document.png)
 
 > [!NOTE]
 > During your first attempt to submit a document through the service, you will be prompted to confirm the connection with Electronic invoicing. Select **Click here to connect to Electronic Document Submission Service**.
@@ -242,11 +261,11 @@ After you turn on the **Configurable Electronic invoicing integration** feature,
 1. Go to **Organization administration \> Periodic \> Electronic documents \> Electronic document submission log**.
 2. In the **Document type** field, select **Customer invoice journal** to filter for the required electronic documents.
 
-    ![Selecting a document type to view the submission logs](media/e-Invoicing-services-get-started-MEX-Select-document-type-for-viewing-submission-log.png)
+    ![Selecting a document type to view the submission logs.](media/e-Invoicing-services-get-started-MEX-Select-document-type-for-viewing-submission-log.png)
 
 3. On the Action Pane, select **Inquiries \> Submission details** to view the details of the submission execution logs.
 
-    ![Viewing the submission log details](media/e-Invoicing-services-get-started-MEX-View-submission-log-details.png)
+    ![Viewing the submission log details.](media/e-Invoicing-services-get-started-MEX-View-submission-log-details.png)
 
 The information in the submission logs is divided among three FastTabs:
 
@@ -264,7 +283,7 @@ After you turn on the **ConfigurableElectronic invoicing integration** feature, 
 2. Select a CFDI invoice that was submitted after the **Configurable Electronic invoicing integration** feature was turned on.
 3. On the Action Pane, on the **History** tab, select **Electronic document log**.
 
-![Viewing submission logs from CFDI invoices](media/e-Invoicing-services-get-started-MEX-View-submission-log-from-CFDI-invoice.png)
+![Viewing submission logs from CFDI invoices.](media/e-Invoicing-services-get-started-MEX-View-submission-log-from-CFDI-invoice.png)
 
 > [!NOTE]
 > For CFDI invoices that were submitted before the **Configurable Electronic invoicing integration** feature was turned on, the **History** button is available. The **History** button isn't available for CFDI invoices that were submitted after the **Configurable Electronic invoicing integration** feature was turned on.
@@ -287,11 +306,11 @@ After you turn on the **Configurable Electronic invoicing integration** feature,
 
     The **Related submissions** page shows all related submissions, and their submission status, for a given CFDI invoice. In the following illustration, the first line represents the submission that requested approval of the CFDI invoice. The second line represents the submission that canceled that CFDI invoice.
 
-    ![Viewing the cancellation submission logs](media/e-Invoicing-services-get-started-MEX-View-cancellation-submission-log.png)
+    ![Viewing the cancellation submission logs.](media/e-Invoicing-services-get-started-MEX-View-cancellation-submission-log.png)
 
 4. On the Action Pane, select **Inquiries \> Submission details** to view the details of the submission execution logs.
 
-    ![Viewing the cancellation submission log details](media/e-Invoicing-services-get-started-MEX-View-cancellation-submission-log-details.png)
+    ![Viewing the cancellation submission log details.](media/e-Invoicing-services-get-started-MEX-View-cancellation-submission-log-details.png)
 
 ## Privacy notice
 Enabling the **CFDI Mexican electronic invoice (MX)** feature may require sending limited data, which includes the organization tax registration ID. This will be transmitted to third-party agencies authorized by the tax authority for purposes of sending electronic invoices to this tax authority in the predefined format required for integration with the government’s web service. An administrator can enable and disable the **CFDI Mexican electronic invoice (MX)** feature by navigating to **Organization administration \> Setup \> Electronic document parameters**. Select the **Features** tab, select the rows containing the **CFDI Mexican electronic invoice (MX)** feature, and then make the appropriate selection. Data imported from these external systems into this Dynamics 365 online service are subject to our [privacy statement](https://go.microsoft.com/fwlink/?LinkId=512132). Consult the Privacy notice sections in country-specific feature documentation for more information.

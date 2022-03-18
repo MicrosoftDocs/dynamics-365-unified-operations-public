@@ -68,7 +68,7 @@ You can use the following three transaction types to post a credit or debit note
 1. Go to **Workspaces \> Feature management**.
 2. In the list, find and select the feature that is named **(India) Enable Credit/Debit note against an export invoice**, and then select **Enable**.
 
-![Feature management workspace](media/Credit-Debit-note-EO-001.PNG)
+![Feature management workspace.](media/Credit-Debit-note-EO-001.PNG)
 
 ### Set up a number sequence in the GST reference number sequence group
 
@@ -76,7 +76,7 @@ To maintain a Goods and Services Tax (GST) transaction ID for credit notes again
 
 - Go to **Tax \> Setup \> GST reference number sequence group**.
 
-![GST reference number sequence group page](media/Credit-Debit-note-EO-002.PNG)
+![GST reference number sequence group page.](media/Credit-Debit-note-EO-002.PNG)
 
 ## Post transactions
 
@@ -157,12 +157,12 @@ The following tables show how the export invoice will be posted.
 
 If you review the header information on the **Tax document** page for the credit note, you will see the original export invoice ID, and the shipping bill number and shipping bill date.
 
-![Tax document page](media/Credit-Debit-note-EO-003.PNG)
+![Tax document page.](media/Credit-Debit-note-EO-003.PNG)
 
 After you post the credit note against the export invoice, you can run the monthly ANX-1 offline tool to view the credit note transaction. Go to **Tax \> Inquiries and reports \> Tax reports \> ANX-1 report**. The following illustration shows an example of an ANX-1 report where a credit/debit note was posted against an export invoice.
 
-![ANX-1 report](media/Credit-Debit-note-EO-005.PNG)
+![ANX-1 report.](media/Credit-Debit-note-EO-005.PNG)
 
 A credit/debit note that is issued against an export order can also be viewed in the new GSTR-1 report. The following illustration shows an example of a GSTR-1 report where a credit/debit note was posted against an export invoice.
 
-![New GSTR-1 report](media/Credit-Debit-note-EO-004.PNG)
+![New GSTR-1 report.](media/Credit-Debit-note-EO-004.PNG)

@@ -51,7 +51,7 @@ This functionality is available for legal entities that have their primary addre
     | Before 10.0.16                            | **Ledger transaction export format (BE)** under **Ledger accounting reports** > **Ledger transaction export (BE)** model. |
     | Starting from 10.0.16                     | **General ledger data export (BE)** under **Standard Audit File (SAF-T)** model.                                  |
 
-    > ![ER configurations](media/be-audit-er-configs.png)
+    > ![ER configurations.](media/be-audit-er-configs.png)
 
 2. After import, you must have the following or later versions of ER configurations.
 
@@ -64,13 +64,13 @@ This functionality is available for legal entities that have their primary addre
     > [!NOTE]
     > After all the ER configurations from the preceding table are imported, set the **Default for model mapping** option to **Yes** for the **General ledger data model mapping** configuration on the **Configurations** page.
 
-    > ![Default for model mapping option](media/be-audit-default-mm.png)
+    > ![Default for model mapping option.](media/be-audit-default-mm.png)
 
 3. Starting in version 10.0.16, to use the **General ledger data export (BE)** format, define the ER configuration name in a new General ledger parameter. Go to **General ledger** > **Ledger setup** > **General ledger parameters**. 
 4. Expand the **Electronic reporting** FastTab and then select the **Ledger** tab. 
 5. In the **Ledger transactions export** group, in the **Ledger transactions export** field, select the format **General ledger data export (BE)**, and then save the new setting.
 
-    ![GL parameter](media/be-audit-gl-parameter.png)
+    ![GL parameter.](media/be-audit-gl-parameter.png)
 
 ### Generate the Export ledger transactions report
 
@@ -93,7 +93,7 @@ When neither the accounting or reporting currencies are EURO, and you select **R
 
 In this case, the file that is generated contains the following data.
 
-![Ledger transactions data](media/1_Export_ledger_transactions.png)
+![Ledger transactions data.](media/1_Export_ledger_transactions.png)
 
 Here is an explanation of the columns in this file:
 

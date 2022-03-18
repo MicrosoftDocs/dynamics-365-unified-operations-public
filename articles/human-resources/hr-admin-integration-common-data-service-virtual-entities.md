@@ -2,9 +2,9 @@
 # required metadata
 
 title: Configure Dataverse virtual tables
-description: This topic shows how to configure virtual tables for Dynamics 365 Human Resources. Generate and update existing virtual tables, and analyze generated and available tables. 
-author: andreabichsel
-ms.date: 01/25/2021
+description: This topic shows how to configure, generate, update existing virtual tables, and analyze generated and available tables for Dynamics 365 Human Resources. 
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,16 +21,19 @@ ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
 ---
 
 # Configure Dataverse virtual tables
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Dynamics 365 Human Resources is a virtual data source in Microsoft Dataverse. It provides full create, read, update, and delete (CRUD) operations from Dataverse and Microsoft Power Platform. The data for virtual tables isn't stored in Dataverse, but in the application database.
 
@@ -45,7 +48,7 @@ All Open Data Protocol (OData) entities in Human Resources are available as virt
 
 You can view the list of virtual tables enabled in the environment, and begin working with the tables in [Power Apps](https://make.powerapps.com), in the **Dynamics 365 HR Virtual Tables** solution.
 
-![Dynamics 365 HR Virtual Tables in Power Apps](./media/hr-admin-integration-virtual-entities-power-apps.jpg)
+![Dynamics 365 HR Virtual Tables in Power Apps.](./media/hr-admin-integration-virtual-entities-power-apps.jpg)
 
 ## Virtual tables versus native tables
 
@@ -145,13 +148,16 @@ The next step is to configure the virtual table data source in the Power Apps en
      >[!NOTE]
      >Be sure to include the "**/**" character at the end of the URL to avoid receiving an error.
 
+     >[!NOTE]
+     >The Target URL determines the Human Resources environment that virtual tables will point to for data. If you create a sandbox environment by creating a copy of your production environment, update this value to the namespace URL of your new sandbox environment. This ensures the virtual tables are connected to the sandbox environment data rather than continuing to point to the production environment.
+
    - **Tenant ID**: The Azure Active Directory (Azure AD) tenant ID.
 
    - **AAD Application ID**: The application (client) ID created for the application registered in the Microsoft Azure portal. You received this information earlier during the step [Register the app in Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure).
 
    - **AAD Application Secret**: The client secret created for the application registered in the Microsoft Azure portal. You received this information earlier during the step [Register the app in Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure).
 
-   ![Microsoft HR Data Source](./media/hr-admin-integration-virtual-entities-hr-data-source.jpg)
+   ![Microsoft HR Data Source.](./media/hr-admin-integration-virtual-entities-hr-data-source.jpg)
 
 9. Select **Save & Close**.
 
@@ -191,7 +197,7 @@ When setup completes, you can select the virtual tables you want to generate and
 
 4. Select **Generate/refresh**.
 
-![Dataverse Integraton](./media/hr-admin-integration-dataverse-integration.png)
+![Dataverse Integraton.](./media/hr-admin-integration-dataverse-integration.png)
 
 ## Check table generation status
 

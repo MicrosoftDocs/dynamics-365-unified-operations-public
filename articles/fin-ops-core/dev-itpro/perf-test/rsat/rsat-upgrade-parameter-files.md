@@ -5,7 +5,7 @@ author: FrankDahl
 ms.date: 04/12/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom:
 ms.search.region: Global
 ms.author: fdahl
@@ -58,7 +58,7 @@ To upgrade the parameter files, follow these steps.
 2. Select that test cases that have the parameter files that you want to upgrade.
 3. On the **New** menu, select **Upgrade Parameter files (will auto generate Test Execution files)**.
 
-    ![Upgrade Parameter files (will auto generate Test Execution files) command on the New menu](media/new_dropdown_menu.png)
+    ![Upgrade Parameter files (will auto generate Test Execution files) command on the New menu.](media/new_dropdown_menu.png)
 
 The parameter files for all the selected cases are upgraded.
 
@@ -74,11 +74,11 @@ When the upgrade process is completed, a message box appears that shows a summar
 
 The following illustration shows an example of the summary message box.
 
-![Summary message box](media/upgrade_summary.png)
+![Summary message box.](media/upgrade_summary.png)
 
 For a failed upgrade, you can find more information by selecting the yellow triangular warning symbol next to the test case title. The following illustration shows an example of the message box that appears.
 
-![Warning message box for a failed upgade](media/upgrade_triangle_error.png)
+![Warning message box for a failed upgade.](media/upgrade_triangle_error.png)
 
 > [!IMPORTANT]
 > You can run the upgrade repeatedly. In this case, newly upgraded parameter files will be skipped. However, new partial files will overwrite existing partial files. We recommend that you complete all partial files and rename them before you rerun the upgrade.

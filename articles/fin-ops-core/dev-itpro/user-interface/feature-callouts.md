@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid:
@@ -37,7 +37,7 @@ While documentation is helpful for explaining new features, it’s also importan
 
 In this topic, the APIs that are used to construct feature callouts are discussed in detail.   
 
-![Feature callout for Navigation Pane changes](./media/cli_featureCallout_noLink.png "Feature callout for Navigation Pane changes released in Platform update 22")
+![Feature callout for Navigation Pane changes.](./media/cli_featureCallout_noLink.png "Feature callout for Navigation Pane changes released in Platform update 22")
   
 ## The "Got it" button
 When a feature callout is triggered, the user can simply click the **Got it** button to dismiss the popup. This saves the state of this feature callout in the personalization subsystem, which prevents that specific feature callout from being triggered again. 

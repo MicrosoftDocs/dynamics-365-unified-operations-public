@@ -2,8 +2,8 @@
 # required metadata
 
 title: Fixed assets home page
-description: Fixed assets are items of value are owned by an individual or organization. The items include buildings, vehicles, land, and equipment.
-author: ShylaThompson
+description: This topic provides access to resources that can help you use Fixed assets for Microsoft Dynamics 365 Finance. 
+author: moaamer
 ms.date: 08/31/2017
 ms.topic: index-page
 ms.prod: 
@@ -17,11 +17,11 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
 # ms.tgt_pltfrm: 
-ms.custom: 21481
+ms.custom: ["21481", "intro-internal"]
 ms.assetid: d6bb2f19-73b9-43fa-8042-b530c75896bf
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-Fixed assets are items of value are owned by an individual or organization. The items include buildings, vehicles, land, and equipment. 
+This topic provides access to resources that can help you use Fixed assets for Microsoft Dynamics 365 Finance. Fixed assets are items of value are owned by an individual or organization. The items include buildings, vehicles, land, and equipment. 
 
 You can set up and enter acquisition information for fixed assets, and then manage the assets by depreciating them and setting a 
 capitalization threshold to determine depreciation. You can calculate adjustments to the fixed assets, and also dispose of them. 
@@ -40,7 +40,7 @@ assets are handled must correspond to both international accounting standards an
 Requirements might include rules for recording acquisition and disposal transactions, depreciation, lifetimes, and write-ups and 
 write-downs of fixed assets. The Fixed assets functionality incorporates many of these standards and rules.
 
-[![Business process](./media/FA-process.PNG)](./media/FA-process.PNG)
+[![Business process.](./media/FA-process.PNG)](./media/FA-process.PNG)
 
 
 

@@ -60,11 +60,11 @@ Turnover balance sheets for the customer, vendor, and advance holder let you sho
 14. Set the **Itemize balance** option to **Yes** to show a detailed view of the balance columns.
 15. Set the **Calculate balance** option to **Yes** to calculate and show the balance on the report.
 
-    ![Customer turnover register page, General tab](media/01_Customer_turnover_register.jpg)
+    ![Customer turnover register page, General tab.](media/01_Customer_turnover_register.jpg)
 
 16.  Select **ОК** to generate the report.
 
-![Customer turnover register page](media/02_Customer_turnover_register.jpg)
+![Customer turnover register page.](media/02_Customer_turnover_register.jpg)
 
 >  [!NOTE]
 >
@@ -103,11 +103,11 @@ Turnover balance sheets for the customer, vendor, and advance holder let you sho
 14. Set the **Itemize balance** option to **Yes** to show a detailed view of the balance columns.
 15. Set the **Calculate balance** option to **Yes** to calculate and show the balance on the report.
 
-    ![Vendor turnover register page, General tab](media/04_Vendor_turnover_register.jpg)
+    ![Vendor turnover register page, General tab.](media/04_Vendor_turnover_register.jpg)
 
 16. Select **ОК** to generate the report.
 
-![Vendor turnover register page](media/05_Vendor_turnover_register.jpg)
+![Vendor turnover register page.](media/05_Vendor_turnover_register.jpg)
 
 >  [!NOTE]
 >
@@ -187,11 +187,11 @@ The **General ledger** report is designed to generate turnover on a specified ac
 14. Set the **Show transactions** option to **Yes** to show the accountable person transactions.
 15. Set the **Calculate balance** option to **Yes** to calculate and show the balance on the report.
 
-    ![General ledger turnover balance statement page, General tab](media/7_General_ledger_turnover_balance_sheet.jpg)
+    ![General ledger turnover balance statement page, General tab.](media/7_General_ledger_turnover_balance_sheet.jpg)
 
 16. Select **ОК** to generate the report.
 
-![General ledger turnover balance statement page](media/8_General_ledger.jpg)
+![General ledger turnover balance statement page.](media/8_General_ledger.jpg)
 
 > [!NOTE]
 >
@@ -208,7 +208,7 @@ On the **Report archive** page, you can view reports and download them in Excel 
 2. On the **Turnover and balance statement report archive** page, in the **Report type** field, specify the type of report.
 3. Select the report.
 
-    ![Turnover balance statement report archive page](media/10_Turnover_and_balance_statement_report_archive.jpg)
+    ![Turnover balance statement report archive page.](media/10_Turnover_and_balance_statement_report_archive.jpg)
 
 4. Select **New report** to generate a new report that has the same parameters as the selected report.
 5. Select **Report output** to print the report.
@@ -229,7 +229,7 @@ By pre-calculating transactional data, you can help improve performance.
     - General ledger
     - Advance holder turnover register
 
-    ![Pre-calculate transactional data dialog box](media/11_Pre-calculate_transactional_data.jpg)
+    ![Pre-calculate transactional data dialog box.](media/11_Pre-calculate_transactional_data.jpg)
 
 5. Select **OK** to pre-calculate transactional data.
 

@@ -21,7 +21,7 @@ ms.custom: 19111
 ms.assetid: 56a7c8ba-bf4a-4b1d-918d-56bb96926c4f
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -48,7 +48,7 @@ The following example shows how the values of an inventory object and a cost obj
 
 The following table shows the calculation result for a cost object. You can view the result on the **Cost object** page.
 
-<table style="width:100%;">
+<table>
 <colgroup>
 <col width="14%" />
 <col width="14%" />
@@ -84,7 +84,7 @@ The following table shows the calculation result for a cost object. You can view
 
 The following table shows the calculation result for an inventory object. You can view the result by clicking **Physical quantity** on the **Cost object** page.
 
-<table style="width:100%;">
+<table>
 <colgroup>
 <col width="11%" />
 <col width="11%" />

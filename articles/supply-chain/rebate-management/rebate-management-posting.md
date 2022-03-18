@@ -22,7 +22,7 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
-ms.dyn365.ops.version: Release 10.0.18
+ms.dyn365.ops.version: 10.0.18
 ---
 
 # Rebate management posting setup
@@ -45,7 +45,7 @@ The following table describes the settings that are available in the header sect
 |---|---|
 | Posting profile | Enter a unique name for the profile. |
 | Description | Enter a description of the profile. |
-| Module | Select the type of rebates and royalties that the profile is associated with (*Customer* or *Vendor*). |
+| Module | Select the module that the rebates and royalties of the profile are associated with (*Customer* or *Vendor*). |
 | Type | Select the profile type (*Rebate* or *Royalty*). |
 | Payment type | <p>This field determines the format of the posted rebate output.<p><p>When the **Type** field is set to *Rebate*, the following values are available:</p><ul><li>*Pay using accounts payable* – When you post a customer rebate, a vendor invoice for the remittance vendor that is set up on the rebate customer is created. When you post a vendor rebate, a vendor invoice for the rebate vendor account is created.</li><li>*Customer deductions* – When you post the rebate, a customer deduction journal for the rebate customer is created.</li><li>*Tax invoice customer deductions* – When you post the rebate, a free text invoice for the rebate customer is created.</li><li>*Trade spending* – When you post the rebate, a customer deduction journal for the rebate customer is created.</li><li>*Reporting* – When you post the rebate, a customer deduction journal for the rebate customer is created.</li></ul><p>When the **Type** field is set to *Royalty*, the following values are available:</p><ul><li>*Pay using accounts payable* – When you post the rebate, a vendor invoice for the rebate vendor account is created.</li><li>*Reporting* – When you post the rebate, a vendor invoice for the rebate vendor account is created.</li></ul><p>For more information, see the [Payment types](#payment-types) section that follows. |
 | Company | Select the company (legal entity) that provisions will be accrued to and that claims will be paid by. |
@@ -70,7 +70,7 @@ The following table summarizes how the various settings of the **Payment type** 
 > Consider the following points when you set up [Rebate management deals](rebate-management-deals.md):
 >
 > - For deals where the **Reconcile by** field is set to *Deal*, you can't use the dynamic deal account during posting. You must use a specified customer or vendor account.
-> - For deals where the **Reconcile by** field is set to *Line*, you can use a posting profile that offsets to a dynamic deal account on the deal line, because the customer is set per deal line.
+> - For deals where the **Reconcile by** field is set to *Line*, you can use a posting profile that offsets to a dynamic deal account on the deal line, because the customer or vendor is set per deal line.
 
 ## Posting FastTab
 
@@ -78,15 +78,15 @@ The following table describes the fields that are available on the **Posting** F
 
 | Field | Description |
 |---|---|
-| Credit type | Select whether to credit a ledger account, or a customer or vendor. |
-| Credit account | The account that credit amounts are posted to when rebate provisions are made. This account will also be used as the debit account when the rebate is posted to credit the customer. |
+| Credit type | Select whether to credit a ledger account or a customer. If the **Payment type** field on the header is set to *Tax invoice customer deductions*, this field is set to *Ledger account*. For vendor rebates, this field is set to *Ledger account*. |
+| Credit account | Select the account that credit amounts are posted to when rebate provisions are made. This account will also be used as an offset account when the rebate is posted to credit the customer or debit the vendor. |
 | Name of journal<br>(In the **Provision** section) | Select the name of the journal to use to record the posted provision. |
 | Type | Select whether to post the rebate to a ledger account, or to a customer or vendor. If the **Payment type** field on the header is set to *Tax invoice customer deductions*, this field is set to *Customer/Vendor*. |
-| Use account source | <p>Select one of the following values:</p><ul><li>*None* – If you select this value, you must specify an account in the **Rebate account** field.</li><li>*Deal Account* – Use the customer or vendor account that is specified on the rebate line. You can select this value only for deals where the **Reconcile by** field is set to *Line* and deal lines where the **Account code** field is set to *Table*. It doesn't apply to customer royalty posting profiles.</li></ul> |
+| Use account source | <p>Select one of the following values:</p><ul><li>*Fixed account* – If you select this value, you must specify an account in the **Rebate account** field.</li><li>*Deal line account* – Use the customer or vendor account that is specified on the rebate line. You can select this value only for deals where the **Reconcile by** field is set to *Line* and deal lines where the **Account code** field is set to *Table*. It doesn't apply to customer royalty posting profiles or vendor rebates that are based on sales orders.</li></ul> |
 | Rebate account | The account that actual rebates expense will be posted to. |
-| Name of journal<br>(In the **Rebate management** section) | Select the name of the journal to use to post a credit note for the rebate amount to the customer. This field is unavailable when the **Payment type** field on the header is set to *Tax invoice customer deductions*. |
+| Name of journal<br>(In the **Rebate management** field group) | Select the name of the journal to use to post a credit note for the rebate amount to the customer or vendor. This field is unavailable when the **Payment type** field on the header is set to *Tax invoice customer deductions*. For customer rebates, journal names of the *Daily* journal type will be available. For customer royalties and vendor rebates, journal names of the *Vendor invoice recording* journal type will be available. |
 | Item sales tax group | Specify whether the rebate is taxable. |
-| Name of journal<br>(In the **Write off** section) | If the rebate that is posted doesn't equal the provision, the difference can be written off. Select the name of the journal to use to record the posted write-off. |
+| Name of journal<br>(In the **Write off** field group) | If the rebate that is posted doesn't equal the provision, the difference can be written off. Select the name of the journal to use to record the posted write-off. |
 
 ## Posting by company FastTab
 
@@ -96,6 +96,6 @@ Use the buttons on the toolbar to add companies to the grid and remove them. Eac
 
 Select the row for each company, and then enter the following information by using the fields below the grid:
 
-- **Debit type** – Select whether to debit a ledger account, or a customer or vendor.
+- **Debit type** – Select whether to debit a ledger account or a vendor. For customer rebates and royalties, this field is set to *Ledger account*.
 - **Debit account** – Enter the account that the debit amount is posted to when rebate provisions are made.
 - **Main account** – Select the main account for write-offs.

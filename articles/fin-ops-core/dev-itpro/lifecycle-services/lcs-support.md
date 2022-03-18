@@ -4,7 +4,7 @@
 title: Get support for Finance and Operations apps or Lifecycle Services (LCS)
 description: This topic explains how to get help with Finance and Operations apps or Microsoft Dynamics Lifecycle Services (LCS). 
 author: EricMoos
-ms.date: 09/16/2020
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
+
+[!INCLUDE [PEAP](../../../includes/peap-2.md)]
+
 This topic explains how to get help with Finance and Operations apps or Microsoft Dynamics Lifecycle Services (LCS). 
 
 <table>
@@ -54,7 +57,7 @@ This topic explains how to get help with Finance and Operations apps or Microsof
 <td>In <a href="https://lcs.dynamics.com/">LCS</a>, use the <strong>Issue search</strong> tool to quickly search for Microsoft Knowledge Base (KB) articles, hotfixes, and workarounds for reported issues. You can see which reported issues are in the process of being fixed for a specific functional area, and which issues have already been fixed. For more information, see <a href="issue-search-lcs.md">Issue search (Lifecycle Services, LCS)</a>.</td>
 </tr>
 <tr>
-<td>Get in-app support.</td>
+<td>Get support within your Finance and Operations app.</td>
 <td>Select the <strong>Help</strong> button (<strong>?</strong>) in the upper-right corner of the app, and then select <strong>Support</strong>. Issues are reported on the <strong>Active issues</strong> tab in LCS. There, admins can determine whether they should provide in-house support or submit the issues to Microsoft.</td>
 </tr>
 <tr>

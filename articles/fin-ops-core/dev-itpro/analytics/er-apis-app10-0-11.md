@@ -32,7 +32,7 @@ This topic describes how the application programming interfaces (APIs) of the El
 
 ## API to run a format mapping for the generation of outbound documents
 
-To generate an [outbound document](general-electronic-reporting.md#configuring-data-model-mappings-for-outgoing-documents), you must run an ER [format mapping](general-electronic-reporting.md#FormatComponentInbound). Most ER format mappings contain a data source of the **Data model** type. At runtime, a specific [model mapping](general-electronic-reporting.md#data-model-and-model-mapping-components) must be identified as the implementation of the [data model](general-electronic-reporting.md#data-model-and-model-mapping-components) that the data source has been configured for.
+To generate an [outbound document](general-electronic-reporting.md#configuring-data-model-mappings-for-outgoing-documents), you must run an ER format mapping. Most ER format mappings contain a data source of the **Data model** type. At runtime, a specific model mapping must be identified as the implementation of the data model that the data source has been configured for.
 
 When the [initial](er-apis-app73.md#code-to-run-a-format-mapping-for-data-export) API of the ER framework is used to call an ER format mapping from an execution point in the source code, a model mapping is found that takes into account the settings (the default model mapping flag and country/region codes) of the corresponding ER [configurations](general-electronic-reporting.md#Configuration) that contain a model mapping component. For more information, see [Configure country context dependent ER model mappings](er-country-dependent-model-mapping.md).
 
@@ -40,11 +40,11 @@ In some cases, when an ER format mapping is called from a specific place in the 
 
 To complete this setup, configure your model mapping with an integration point. In the **Data sources** pane, you can select a single data source of your model mapping as the component of this integration point. Then select **Edit** to change the properties of this data source.
 
-![Selecting Edit to change the properties of a selected data source](./media/er-api-ds-integration-point1.png)
+![Selecting Edit to change the properties of a selected data source.](./media/er-api-ds-integration-point1.png)
 
 In the **Data source properties** dialog box, you can set the **Integration point** option to **Yes** to mark the data source as the component of the integration point.
 
-![Setting the Integration point option](./media/er-api-ds-integration-point2.png)
+![Setting the Integration point option.](./media/er-api-ds-integration-point2.png)
 
 You can then use the new API of the ER framework to call an ER format mapping and force it to use a model mapping that has been configured to contain a specific integration point. The following example shows how this new API can be used.
 

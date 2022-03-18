@@ -50,7 +50,7 @@ Two upgrade methods are currently supported:
 1. For each AX 2012 release, update to the most recent cumulative update that is available before you upgrade to the most recent Finance + Operations application release.
 1. Install the pre-upgrade checklist. For more information, see [Installation](prepare-data-upgrade.md#installation).
 1. Go through the data upgrade preparation steps. You can skip the "Set up user mapping" step. This step is relevant only for cloud-hosted upgrades.
-1. Make a backup of your database (MicrosoftDynamicsAX). For more information, see [Create a Full Database Backup](/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server?view=sql-server-2016).
+1. Make a backup of your database (MicrosoftDynamicsAX). For more information, see [Create a Full Database Backup](/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server).
 1. In LCS, go to the Shared asset library by selecting the tile on the right side of the page. Then, under **Select asset type**, select **Downloadable VHD**, and download all parts of the VHD package that most closely matches the version that you will upgrade to in your on-premises environment. The image requires a large amount of disk space. Therefore, be sure to download and extract the package on a drive that has enough free space. 
 1. The files that you downloaded are a self-extracting zip file. Extract the VHD to a location that has a good amount of free space.
 1. Use Hyper-V to start a virtual machine (VM) and attach the VHD. (Note that the VM must be Generation 1.)
@@ -64,7 +64,7 @@ Two upgrade methods are currently supported:
 
 ### Upgrade from inside the VHD
 
-1. Restore the backup that you created to the OneBox VM. For more information, see [Restore a Database Backup Using SSMS](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2016).
+1. Restore the backup that you created to the OneBox VM. For more information, see [Restore a Database Backup Using SSMS](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms).
 1. Optional: If the name of your restored database isn't **AXDB**, open Windows PowerShell as an administrator, and run the following script.
 
     ```powershell
@@ -92,7 +92,7 @@ Two upgrade methods are currently supported:
 
         1. In LCS, go to the Shared asset library.
         1. Under **Select asset type**, select **Model**, and then download **Dynamics 365 Finance + Operations on-premises, Version 10.0.x Demo Data**. Select the version that is closest to the 10.0.x environment that you will deploy as the on-premises baseline.
-        1. Use the restore backup option for SQL Server to create a new database from this file. (Typically, this database is named **AXDB**.) For more information, see [Restore a Database Backup Using SSMS](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017).
+        1. Use the restore backup option for SQL Server to create a new database from this file. (Typically, this database is named **AXDB**.) For more information, see [Restore a Database Backup Using SSMS](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms).
         1. The demo database must be configured. Follow the steps in [Configure the Finance + Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database).
         1. In LCS, set up a new environment, and deploy it with version 10.0.x. For more information, see [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-pu12.md). When you deploy the environment, the name of the database that you specify should be the name of the database that you created earlier (typically **AXDB**).
         1. Apply your own customizations, and ISV and VAR modules, to the newly created 10.0.x environment. Otherwise, when the environment is initially synced with the database, it will delete any customization-related or extension-related data.
@@ -111,8 +111,8 @@ Two upgrade methods are currently supported:
 
 ### Upgrade where the VHD points to your database
 
-1. Back up the database from your on-premises environment (typically **AXDB**). For more information, see [Create a Full Database Backup (SQL Server)](/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server?view=sql-server-2016).
-1. Restore the backup that you just created into the database server, and give it a different name (for example, **AXDBtoupgrade**). For more information, see [Restore a Database Backup Using SSMS](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2016).
+1. Back up the database from your on-premises environment (typically **AXDB**). For more information, see [Create a Full Database Backup (SQL Server)](/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server).
+1. Restore the backup that you just created into the database server, and give it a different name (for example, **AXDBtoupgrade**). For more information, see [Restore a Database Backup Using SSMS](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms).
 1. Open Windows PowerShell as an administrator, and run the following script.
 
     ```powershell
@@ -121,7 +121,7 @@ Two upgrade methods are currently supported:
 
     > [!NOTE]
     > - Replace **\<DB-name\>**, **\<SqlServerName\>**, **\<User\>**, and **\<Password\>** with the values that you require.
-    > - Only SQL Server authentication is officially supported for this upgrade. For more information, see [Create a Database User](/sql/relational-databases/security/authentication-access/create-a-database-user?view=sql-server-2016).
+    > - Only SQL Server authentication is officially supported for this upgrade. For more information, see [Create a Database User](/sql/relational-databases/security/authentication-access/create-a-database-user).
     > - You must add the certificate authority certificate that signed your SQL Server certificate to the trusted certificate authorities store in your Onebox VHD. For more information, see [Installing the trusted root certificate](/skype-sdk/sdn/articles/installing-the-trusted-root-certificate).
     > - Make sure that the database user that you use has the **sysadmin** server role, or at least **All Privileges**, assigned on the database that you want to upgrade. Also make sure that the user has permissions to access tempDB. Step 6 of the upgrade process will fail if these conditions aren't met.
     > - When you install the certificate authority certificate in the OneBox VHD, make sure that you use the fully qualified domain name (FQDN) or IP address to connect to the database that appears there. If you can't access the database by using the domain name, because it doesn't point to that server, edit your hosts file, and add the FQDN and the IP address that the FQDN should be resolved to.
@@ -143,7 +143,7 @@ Two upgrade methods are currently supported:
 
         1. In LCS, go to the Shared asset library.
         1. Under **Select asset type**, select **Model**, and then download **Dynamics 365 Finance + Operations on-premises, Version 10.0.x Demo Data**. Select the version that is closest to the 10.0.x environment that you will deploy as the on-premises baseline.
-        1. Use the restore backup option for SQL Server to create a new database (typically **AXDB**) from this file. For more information, see [Restore a Database Backup Using SSMS](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2016).
+        1. Use the restore backup option for SQL Server to create a new database (typically **AXDB**) from this file. For more information, see [Restore a Database Backup Using SSMS](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms).
         1. The demo database must be configured. Follow the steps in [Configure the Finance + Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database).
         1. In LCS, set up a new environment, and deploy it with version 10.0.x (Redeploy). For more information, see [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-pu12.md). When you deploy the environment, the database that you should specify should be the database that you configured earlier (typically **AXDB**).
         1. Apply your own customizations, and ISV and VAR modules, to the newly created 10.0.x environment. Otherwise, when the environment is initially synced with the database, it will delete any customization-related or extension-related data.

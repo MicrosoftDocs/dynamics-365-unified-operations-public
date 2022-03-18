@@ -57,7 +57,7 @@ You can schedule one work order or work order jobs to one worker using the **Dis
 
 The figure below shows an example of dispatch selections in the **Schedule work order** dialog.
 
-![Figure 1](media/04-work-order-scheduling.png)
+![Figure 1.](media/04-work-order-scheduling.png)
 
 [!NOTE]
 If you want to delete the schedule on a work order, select the work order in **All work orders**, and then click **Delete schedule** on the **General** tab. Remember to manually update the work order lifecycle state if you delete the schedule.

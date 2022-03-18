@@ -4,7 +4,7 @@
 title: i.SAF reporting for Lithuania
 description: This topic explains how to set up and work with the i.SAF report for legal entities in Lithuania.
 author: LizaGolub
-ms.date: 03/22/2021
+ms.date: 11/10/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -168,7 +168,7 @@ For more information about data management, see [Data management](../../fin-ops-
 9. You must now import data from the **LT i.SAF setup for Electronic messages.zip** file into the selected company. In the **Data management** workspace, select **Import**, and set the **Source data format** field to **Package**. 
 10. Select **Upload and add**, select the **LT i.SAF setup for Electronic messages.zip** file on your computer, and upload it.
 
-![Import a package of data entities](media/isaf-data-management.jpg)
+![Import a package of data entities.](media/isaf-data-management.jpg)
 
 You will get a notification in **Messages**, or you can manually refresh the page to see data import progress. When the importing process is complete, you will see the results on **Execution summary** page.
 
@@ -196,7 +196,7 @@ By default, all records from these data sources will be populated to the **Messa
 3. For the **Date** field of the **Vendor invoice journal** table, define the period from which vendor invoices from the selected legal entity must be reported in i.SAF format. You can specify other selection criteria here to reflect specific requirements of your company to the i.SAF report. 
 4. Repeat the same setup for other data sources of the report (Sales invoice journal, Project invoice journal) or delete unnecessary data sources from the list.
 
-![Populate invoices data sources](media/isaf-populate-records.jpg)
+![Populate invoices data sources.](media/isaf-populate-records.jpg)
 
 ## Set up Electronic messaging parameters for i.SAF
 
@@ -219,18 +219,22 @@ After the data entities are imported into the database, complete the following s
 
 ## Set up security roles for electronic message processing
 
-Different groups of users might require access to **i.SAF** precessing. You can limit access to the processing, based on security groups that are defined in the system.
+Different groups of users might require access to **i.SAF** processing. You can limit access to the processing, based on security groups that are defined in the system.
 
 Complete the following steps to limit access to the **i.SAF** processing.
 
 1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**. 
 2. Select the **i.SAF** processing, and add the security groups that must work with this processing. If no security group is defined for the processing, only a system admin can see the processing on the **Electronic messages** page.
 
+## Set up the VAT registration number for the company that is reporting i.SAF
+
+The system retrieves the VAT registration number of the company that is reporting i.SAF from the registration ID that is defined in the properties of the legal entity. For more information, see [Registration type](emea-registration-ids.md#registration-type-creation) and [Registration category](emea-registration-ids.md#supported-registration-categories). The tax registration type must be assigned to the **VAT ID** tax registration category. For a more detailed walkthrough of the prerequisites for VAT ID registration, see [Set up VAT ID](tasks/eur-00015-vat-id.md).
+
 ## Collect data for the i.SAF report
 
 The setup of **i.SAF** processing that is provided by using a package of data entities is shown in the following schema.
 
-![i.SAF electronic messaging process](media/isaf-processing.jpg)
+![i.SAF electronic messaging process.](media/isaf-processing.jpg)
 
 The green boxes on the schema show the general process of i.SAF report generation.
 
@@ -247,7 +251,7 @@ When invoices are successfully populated from data sources to the **Message item
 2. In the **Processing** field, select **i.SAF**. 
 3. Select the **Choose action** check box and select **"Attrib. evaluation"** to start defining the invoice type, or leave the **Choose action** check box cleared and **"Attrib. evaluation"** action will run automatically as the next action from the selected processing. As a result of **"Attrib. evaluation"** action, for all the invoices which have a status of **Populated**, the invoice type will be defined and shown in **Invoice type** field in the **Additional field** group for each invoice.
 
-![i.SAF Invoice type evaluation](media/isaf-invoice-type.jpg)
+![i.SAF Invoice type evaluation.](media/isaf-invoice-type.jpg)
 
 ## Generate the i.SAF report in XML
 
@@ -268,7 +272,7 @@ These parameters must be defined before you start generating the i.SAF report.
 
 If you plan to generate the i.SAF report in batch mode, verify that the **Use parameters** check box is selected with the **Generate message** action for **i.SAF** electronic messages processing.
 
-![Electronic message processing](media/isaf-use-parameters.png)
+![Electronic message processing.](media/isaf-use-parameters.png)
 
 To set up the parameters for the **Generate message** action of **i.SAF** electronic message processing, complete the following steps:
 
@@ -278,7 +282,7 @@ To set up the parameters for the **Generate message** action of **i.SAF** electr
 4. On the **Action** FastTab, on the Action Pane, select **Parameters**.
 5. Define parameters for the i.SAF report that will be used by the system during i.SAF generation. The **Message** parameter field is optional.
 
-![Parameters pane](media/isaf-parameters-setup.png)
+![Parameters pane.](media/isaf-parameters-setup.png)
 
 6.Select **OK**.
 
@@ -292,7 +296,7 @@ To generate the i.SAF report in batch mode, complete the following steps.
 4. Enable the **Choose action** parameter, and in the **Action** field to generate the i.SAF report. 
 5. On the **Run in the background** FastTab, specify the parameters of the batch and then select **OK** to generate the i.SAF report.
 
-![Run processing slider](media/isaf-run-processing.png)
+![Run processing slider.](media/isaf-run-processing.png)
 
   As a result of the **Generate message** action, for each electronic message item with a status of **Evaluated** and that fits in the parameters specified for the report, an electronic message will be created and shown in the **Message** column in relation to each invoice. The **Status** of the message items included in the report will be changed to **Reported**.
 6. To view the file, select the electronic message item, and then select **Attachments** (paperclip icon). 
@@ -317,7 +321,7 @@ If you must regenerate the i.SAF report for some message items, select **Update 
 
 If you want to exclude an invoice from the i.SAF report, select **Update status** on the Action Pane to update the status of the message items to **Excluded**. Invoices with a status of **Excluded** won't be the included in the report. On the **Update status** page, select **i.SAF** processing, select **Exclude message item** in the **Action** field,  and then select **Excluded** in the **New status** field. You can define additional criteria using the **Filter** function, and specify which invoice must be excluded from further processing.
 
-![i.SAF Exclude message item from processing](media/isaf-exclude-message-item.jpg)
+![i.SAF Exclude message item from processing.](media/isaf-exclude-message-item.jpg)
 
 If you want to postpone reporting of an invoice in the i.SAF report, select **Update status** on the Action Pane to update the status of the message items to **Postponed**. Invoices with a status of **Postponed** won't be included into the report. On the **Update status** page, select **i.SAF** processing, select **Update to Postponed** in the **Action** field,  and then select **Postponed** in the **New status** field. You can define additional criteria by using the **Filter** function, to specify reporting of which invoice(s) must be postponed by criteria.
 

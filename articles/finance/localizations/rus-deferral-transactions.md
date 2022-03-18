@@ -42,7 +42,7 @@ You use the **Journal voucher** page to create a receipt transaction for deferra
 
     A transaction of the **Receipt** type is created for the deferral. This transaction has the specified receipt date.
 
-    ![Journal voucher page](media/rus-deferral-transactions-01.png)
+    ![Journal voucher page.](media/rus-deferral-transactions-01.png)
 
 11. On the Action Pane, select **Validate** \> **Validate** and then **Post** \> **Post** to validate and post the journal.
 12. Go to **General ledger** \> **Deferrals** \> **Deferrals** to view the deferrals that are generated. To view the transaction details on the **Deferrals transactions** page, on the Action Pane, select **Deferrals models**, and then select **Transactions**.

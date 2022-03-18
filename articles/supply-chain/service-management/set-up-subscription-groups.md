@@ -3,7 +3,7 @@
 
 title: Set up subscription groups  
 description: Set up subscription groups.
-author: ShylaThompson
+author: kamaybac
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: 

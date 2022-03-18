@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 141573
 ms.assetid: 045bb979-989f-4f72-9eb1-6b963680b65e
@@ -54,7 +54,7 @@ The installer must install the required files in the following structure:
 
 The following illustration shows the file structure for a connector that is named TestConnector. 
 
-[![File structure for TestConnector](./media/paymentconnectorinstaller.png)](./media/paymentconnectorinstaller.png)
+[![File structure for TestConnector.](./media/paymentconnectorinstaller.png)](./media/paymentconnectorinstaller.png)
 
 
 

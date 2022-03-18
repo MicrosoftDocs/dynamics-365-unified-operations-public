@@ -21,7 +21,7 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
-ms.dyn365.ops.version: Release 10.0.8
+ms.dyn365.ops.version: 10.0.8
 ---
 
 # Quality check
@@ -43,12 +43,9 @@ When you use this feature, the arrival and quality check occur in the following 
 
 This process can also be set up so that all scanned license plates are immediately diverted to the quality check location.
 
-## Turn on the Quality check feature
+## Turn the Quality check feature on or off
 
-Before you can use the *Quality check* feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on if it's required. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** *Warehouse management*
-- **Feature name:** *Quality check*
+To use the functionality described in this topic, the *Quality check* feature must be turned on for your system. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *Quality check* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Set up the feature for the example scenario
 
@@ -314,7 +311,7 @@ After the purchase order has been created, it can be received by using the **PO 
 
     The **Quality check** page that appears has no entry fields. It has only the confirmation (check mark) button at the bottom and the Menu button (**≡**) at the top. (The Menu button is sometimes referred to as the hamburger or the hamburger button.) To expedite the quality check process, when the pallet passes the quality check, the user just confirms the **Quality check** page.
 
-    ![Quality check page](media/quality-check.png "Quality check page")
+    ![Quality check page.](media/quality-check.png "Quality check page")
 
 1. Select the confirmation button to pass the quality check for pallet 1 from line 1.
 

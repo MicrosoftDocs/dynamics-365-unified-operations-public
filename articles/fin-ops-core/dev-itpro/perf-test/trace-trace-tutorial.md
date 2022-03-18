@@ -11,7 +11,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 25471
 ms.assetid: 607c1810-f872-4b23-a2c7-ee01522d90e3
@@ -57,7 +57,7 @@ This tutorial requires that you access the environment as an administrator on th
 1. To give a user rights to capture a trace, go to **System administration &gt; Users &gt; Users**.
 2. Select the user and assign the **System tracing user** role. 
 
-    [![Example of assigning trace rights to a user](./media/trace2-284x300.jpg)](./media/trace2.jpg)
+    [![Example of assigning trace rights to a user.](./media/trace2-284x300.jpg)](./media/trace2.jpg)
 
     Remove the user role again once the user is done with tracing to avoid unwanted tracing.
 

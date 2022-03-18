@@ -4,7 +4,7 @@
 title: Update the local agent
 description: This topic explains how to update the local agent.
 author: faix
-ms.date: 10/28/2020
+ms.date: 02/22/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,23 +30,55 @@ ms.dyn365.ops.version: 7.3
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to update the local agent. The latest version of the local agent is version 2.6.0, which was released in October 2020.
+This topic explains how to update the local agent. The latest version of the local agent is version 3.0.0, which was released in November 2021.
+
+> [!IMPORTANT]
+> Do not update the local agent during a servicing operation, even if the preparation phase has completed. 
 
 | Local agent version | Capability | 
 |---------------------|------------|
-| Null                | This initial version deploys Platform update 8. |
-| 1.0.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md) for failed deployments. |
-| 1.1.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md)  for successful deployments, enables multi-model package deployments, and deploys Platform update 8 and 11. | 
-| 2.0.0               | This version enables servicing flows and deploys Platform update 12. |
-| 2.1.0               | This version enables two-phased servicing where **Preparation** and **Update** are two separate steps. |
-| 2.1.1               | This version fixes an issue that occurs when the download fails and the LCS Maintain button is not available. Additional changes include updates to Azure storage libraries to improve communication with Azure storage and enable TLS 1.2.  |
-| 2.1.2               | This version contains updated Azure dependencies for improved download stability and logic to correctly evaluate if files are downloaded. This fixes an issue where files are fully downloaded, but the logic would still consider them as missing a few bytes and therefore fail the download.  |
-| 2.2.0               | This version fixes locked dlls during cleanup and enables prerequisites for supporting Active Directory Federation Services (AD FS) that also is used for Microsoft 365. |
-| 2.3.0               | This version adds support for pre- and post-deployment scripts.  |
-| 2.3.1               | This version fixes orchestration service crashes that may occur during clean up on some environments.<br><br>Deploying version 10.0.5 with Platform update 29 or earlier requires the use of pre-deployment scripts for automatic updating of FinancialReportingDeployer.exe.config. For more information, see [Troubleshoot on-premises deployments](../../dev-itpro/deployment/troubleshoot-on-prem.md#FREntityFramework). |
-| 2.4.0               | This version fixes a deployment issue and upgrades the runtime of the local agent. |
-| 2.5.0               | This version updates dependencies and fixes a cleanup bug. |
+| 3.0.0               | This version includes support for Edge Scale Unit Application Lifecycle Management. |
+| 2.7.2               | This version includes a fix for deploying older application versions. | 
+| 2.7.1               | This version introduces a new deployment option and fixes a bug with a deployment option. |
+| 2.7.0               | Enables deploying or updating to 10.0.21 and later versions. Additionally, this version enables deploying on environments with Microsoft SQL Server 2019 and some bug fixes. |
 | 2.6.0               | This version upgrades the Service Fabric SDK, fixes a bug with refresh state, and increases the application provisioning timeout. |
+| 2.5.0               | This version updates dependencies and fixes a cleanup bug. |
+| 2.4.0               | This version fixes a deployment issue and upgrades the runtime of the local agent. |
+| 2.3.1               | This version fixes orchestration service crashes that may occur during clean up on some environments.<br><br>Deploying version 10.0.5 with Platform update 29 or earlier requires the use of pre-deployment scripts for automatic updating of FinancialReportingDeployer.exe.config. For more information, see [Troubleshoot on-premises deployments](../../dev-itpro/deployment/troubleshoot-on-prem.md#FREntityFramework). |
+| 2.3.0               | This version adds support for pre- and post-deployment scripts.  |
+| 2.2.0               | This version fixes locked dlls during cleanup and enables prerequisites for supporting Active Directory Federation Services (AD FS) that also is used for Microsoft 365. |
+| 2.1.2               | This version contains updated Azure dependencies for improved download stability and logic to correctly evaluate if files are downloaded. This fixes an issue where files are fully downloaded, but the logic would still consider them as missing a few bytes and therefore fail the download.  |
+| 2.1.1               | This version fixes an issue that occurs when the download fails and the Lifecycle Services (LCS) **Maintain** button is not available. Additional changes include updates to Azure storage libraries to improve communication with Azure storage and enable TLS 1.2.  |
+| 2.1.0               | This version enables two-phased servicing where **Preparation** and **Update** are two separate steps. |
+| 2.0.0               | This version enables servicing flows and deploys Platform update 12. |
+| 1.1.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md)  for successful deployments, enables multi-model package deployments, and deploys Platform update 8 and 11. | 
+| 1.0.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md) for failed deployments. |
+| Null                | This initial version deploys Platform update 8. |
+
+## What's new in local agent 3.0.0
+
+- Local agent 3.0.0 includes support for managing the lifecycle of Edge Scale Units through the Scale Unit Management portal. For more information, see [Distributed Hybrid Topology](../../../supply-chain/cloud-edge/cloud-edge-landing-page.md).
+- This release requires the .NET Framework version 4.8 to uptake the newest changes from LCS.
+
+## What's new in local agent 2.7.2
+
+- Local agent 2.7.2 fixes an issue where environments on older versions of the application would fail to deploy.
+
+## What's new in local agent 2.7.1
+
+- Local agent 2.7.1 introduces a new deployment option to [Specify that checking the Certificate Revocation List of a certificate should be skipped](../../dev-itpro/deployment/onprem-localagent-options.md#specify-that-checking-the-certificate-revocation-list-of-a-certificate-should-be-skipped).
+- This release addresses a bug where the **office365AdfsCompatibility** deploymentOption was not being correctly set.
+
+## What's new in local agent 2.7.0
+
+- Local agent 2.7.0 is a prerequisite to deploy or update to 10.0.21 and later releases. 
+- This release introduces the possibility of specifying a limited set of deployment options for environment-specific deployment options. Most notably, this release will allow you to deploy on environments with Microsoft SQL Server 2019. For all possible configurations, see [Local agent deployment configurations](../../dev-itpro/deployment/onprem-localagent-options.md).
+- Additionally, this release addresses an issue where the gMSA account that the local agent executes under will lose permission to the private key for some certificates.
+- The LBDTelemetry-Agent application can start correctly even if the Event Viewer is open. 
+
+> [!IMPORTANT]
+> This release **must be used** to deploy or update to 10.0.21 and later releases.
+> This release requires that a new local agent configuration file be downloaded from LCS. If you encounter issues, refer to [Troubleshoot on-premises deployments](../../dev-itpro/deployment/troubleshoot-on-prem.md). 
 
 ## What's new in local agent 2.6.0
 
@@ -64,7 +96,7 @@ This topic explains how to update the local agent. The latest version of the loc
 
 ## What's new in local agent 2.4.0
 
-- Local agent 2.4.0 now requires .NET Framework 4.8 to uptake the newest changes from Lifecycle Services (LCS). Be sure to run the latest Infrastructure Scripts available in LCS to meet the newest requirements.
+- Local agent 2.4.0 now requires the .NET Framework version 4.7.2 to uptake the newest changes from LCS. To meet the newest requirements, be sure to run the latest infrastructure scripts that are available in LCS.
 - This release also fixes an issue where the deployment of the AXService would fail in slower environments due to a hard-coded timeout.
 
 ## What's new in local agent 2.3.0

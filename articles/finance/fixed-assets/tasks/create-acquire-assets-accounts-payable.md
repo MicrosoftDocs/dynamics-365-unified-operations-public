@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Create and acquire assets from Accounts payable
-description: This task guide will walk through creation and acquisition of a fixed asset with the purchasing process. 
+description: This procedure walks through the creation and acquisition of a fixed asset with the purchasing process. 
 author: saraschi2
 ms.date: 08/13/2019
 ms.topic: business-process 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This task guide will walk through creation and acquisition of a fixed asset with the purchasing process.  It uses the Accountant and Accounts payable clerks and the demo company USMF .
+This procedure walks through the creation and acquisition of a fixed asset with the purchasing process.  It uses the Accountant and Accounts payable clerks and the demo company USMF.
 
 
 ## Set Fixed assets parameters

@@ -54,7 +54,7 @@ To create work orders that are based on your maintenance schedule, follow these 
 
     The **Create work orders** dialog box appears. The **Maintenance forecast hours** field shows the total number of forecast hours for the selected lines.
 
-    ![Create work orders dialog box](media/18-preventive-maintenance.png)
+    ![Create work orders dialog box.](media/18-preventive-maintenance.png)
 
 1. In the **Parameters** section, specify the number of work orders that should be created. Select one of the following options:
 

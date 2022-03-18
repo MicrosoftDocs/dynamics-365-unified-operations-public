@@ -3,7 +3,7 @@
 
 title: ESR customer payments import
 description: This topic provides information about importing customer payments in the ESR format.
-author: ShylaThompson
+author: anasyash
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -20,7 +20,7 @@ ms.reviewer: kfend
 ms.custom: 264584
 ms.search.region: Switzerland
 # ms.search.industry: 
-ms.author: v-lenest
+ms.author: anasyash
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 

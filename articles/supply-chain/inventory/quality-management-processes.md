@@ -3,9 +3,9 @@
 
 title: Quality and nonconformance management overview
 description: This topic introduces the quality and nonconformance management features in Microsoft Dynamics 365 Supply Chain Management and explains how they can help improve product quality in your supply chain.
-author: perlynne
+author: yufeihuang
 ms.date: 03/23/2021
-ms.topic: article
+ms.topic: overview
 ms.prod:
 ms.technology:
 
@@ -17,11 +17,11 @@ audience: Application User
 # ms.devlang:
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm:
-ms.custom: 11574
+ms.custom: ["11574", "intro-internal"]
 ms.assetid: 5ac8a059-5cb4-4cb5-ba14-b944bd08dae9
 ms.search.region: Global
 # ms.search.industry:
-ms.author: perlynne
+ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -67,7 +67,7 @@ Here are some of the ways that you can control the quality management process:
 - Document the cost of managing a nonconformance. This cost can include the items (such as spare parts), miscellaneous charges, and the timesheet hours that are required to correct the nonconformance.
 - Schedule error correction processes by using correction handling that is linked to quality orders.
 
-[![Quality management process](media/quality-management-process-diagram.png)](media/quality-management-process-diagram.png)
+[![Quality management process.](media/quality-management-process-diagram.png)](media/quality-management-process-diagram.png)
 
 ## Product testing and quality orders
 

@@ -254,7 +254,7 @@ This section describes the processing and setup of an advance customer payment s
 2. **CFDI invoice** – After the operation is realized, and the advance payment is applied, the company must issue the CFDI invoice of operation and details of the CFDI advance payment UUID that was issued in step 1.
 3. **CFDI advance payment reverse** – An electronic invoice is issued to reverse the advance payment that was applied.
 
-![Advance payment process](./media/mex-advance-payments-cfdi.png "Diagram that shows the advance payment process")
+![Advance payment process.](./media/mex-advance-payments-cfdi.png "Diagram that shows the advance payment process")
 
 ## Prerequisites
 

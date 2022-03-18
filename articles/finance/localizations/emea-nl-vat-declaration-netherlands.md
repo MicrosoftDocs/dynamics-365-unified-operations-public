@@ -4,7 +4,7 @@
 title: VAT declaration (Netherlands)
 description: This topic provides information about VAT declaration for Netherlands.
 author: anasyash
-ms.date: 05/24/2021
+ms.date: 02/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -25,11 +25,9 @@ ms.dyn365.ops.version:
 
 ---
 
-# VAT declaration for Netherlands (Preview)
+# VAT declaration for Netherlands
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 To automatically generate the VAT declaration, you must create enough sales tax codes to keep a separate VAT accounting for each box on the VAT declaration. Additionally, in the application-specific parameters of the VAT declaration electronic reporting format, you must associate sales tax codes with the lookup result of the lookup for the VAT declaration boxes. For more information about how to set up application-specific parameters, see *Set up application parameters for declaration fields* later in this topic.
 
@@ -382,7 +380,12 @@ To import Electronic reporting (ER) configurations, go to **Workspaces** \> **El
 
 ### Set up application specific parameters for VAT declaration fields
 
-To automatically generate a VAT declaration, associate sales tax codes and report fields in the ER configuration. To set up report fields, follow these steps:
+To automatically generate a VAT declaration, associate sales tax codes and report fields in the ER configuration. 
+
+> [!NOTE]
+> We recommend that you enable the feature, **Use application specific parameters from previous versions of ER formats** in the **Feature management** workspace. When this feature is enabled, parameters that are configured for the earlier version of an ER format automatically become applicable for the later version of the same format. If this feature is not enabled, you must configure application-specific parameters explicitly for each format version. The **Use application specific parameters from previous versions of ER formats** feature is available in the **Feature management** workspace starting in Finance version 10.0.23. For more information about how to set up the parameters of an ER format for each legal entity, see [Set up the parameters of an ER format per legal entity](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
+
+To set up report fields, follow these steps:
 
 1. Go to **Workspaces** > **Electronic reporting**, and then select **Reporting configurations**.
 2. Select the **VAT declaration XML (NL)** configuration, and then select **Configurations** > **Application specific parameters setup**.
@@ -437,7 +440,7 @@ To automatically generate a VAT declaration, associate sales tax codes and repor
 </tbody>
 </table>
 
-![Application-parameters](media/App-parameters-VAT-XML-1.png)
+![Application-parameters.](media/App-parameters-VAT-XML-1.png)
 
 
 #### Set up XSD schema and namespaces
@@ -469,6 +472,11 @@ To set up VAT reporting format, follow these steps:
 
 1. Go to **General ledger** > **Setup** > **General ledger parameters**.
 2. If you configure VAT declaration for multiple VAT registrations, on the tab **Sales tax**, on the **Electronic reporting for countries/regions** FastTab, for the **NLD country/region** line, select the ER format, **VAT Declaration Excel (NL)**.
+3. In the **Feature management** workspace, enable the **VAT statement format reports** feature.
+4.	Go to **General ledger** > **Setup** > **General ledger parameters**.
+5.	On the **Sales tax** tab, on the **Tax options** FastTab, in the **VAT statement format mapping** field, select the **VAT declaration Excel (NL)** ER format. This format will be printed when you run the **Report sales tax for settlement period** report. The format will also be printed when you select **Print** on the **Sales tax payments** page.
+If you configure VAT declaration for multiple VAT registrations, on the **Sales tax** tab, on the **Electronic reporting for countries/regions** FastTab, for the **NLD country/region** line, select the ER format, **VAT Declaration Excel (NL)**.
+4.	On the **Tax authorities** page, select the tax authority, and then, in the **Report layout** field, select **Default**.
 
 ## Preview VAT declaration in Excel
 
@@ -597,7 +605,7 @@ To modify target mapping, follow these steps:
 2. Select the data entity **Action class settings** and then select **Modify target mapping**.
 3. Make sure that the staging field **Action type** is mapped to the target.
 
-    ![Map staging to target](media/map-staging.png)
+    ![Map staging to target.](media/map-staging.png)
 
 4. You can map to the target manually, or on the **Mapping details** tab, select **Generate mapping \> Yes**.
 
@@ -625,7 +633,7 @@ To upload the electronic messages data package, follow these steps:
     - The executable class **NLOBGetStatusFromDidgipoort** has the **Electronic reporting import** action type.
     - The executable class **NLOBSendToDigipoort** has the **Web service** action type.
 
-    ![Executable class settings page](media/electronic-messages-NL.png)
+    ![Executable class settings page.](media/electronic-messages-NL.png)
 
 8.  For each line, select **Parameters**, and then select **NLOB Request ID** in the **Request ID** field.
 
@@ -750,11 +758,11 @@ The following steps are applicable to the example electronic message processing 
    - **Report getting status error (business)**: If Digipoort didn’t acknowledge the report. In this case, the Infolog shows a list of errors received from Digipoort. To review list of errors later, on the **Action log** FastTab, select a line with **Get report status**, and select **Attachments**. Review the list of errors in the **Notes** field.
    - **Report getting status error (technical)**: If a technical error occurred when importing the response from Digipoort.
 
-### Run a VAT declaration for several legal entities
+## Run a VAT declaration for several legal entities
 
 To use the formats to report the VAT declaration for a group of several legal entities, first set up the application-specific parameters of the ER formats for sales tax codes from all required legal entities.
 
-#### Set up electronic messages to collect data from several legal entities
+### Set up electronic messages to collect data from several legal entities
 
 To set up electronic messages to collect data from several legal entities, follow these steps:
 

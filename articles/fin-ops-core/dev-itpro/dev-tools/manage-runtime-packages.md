@@ -5,7 +5,7 @@ author: jorisdg
 ms.date: 05/21/2018
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 26731
 ms.assetid:
 ms.search.region: Global
@@ -34,7 +34,7 @@ After you install the model, follow these steps to add the new model to source c
 3. Right-click the **AOT** root node, and then click **Model view**.
 4. In the list of models, find the new model that you installed. Make a note of the name of the package that contains the model. The package name appears in parentheses after the model name. For example, in the following illustration, the **Tax Books**, **Tax Engine Configuration**, and **Tax Engine Interface** models all belong to the package that is named **TaxEngine**.
 
-    ![Package name for each model](media/appexplorer_modelpackagename.png)
+    ![Package name for each model.](media/appexplorer_modelpackagename.png)
 
 5. Open Source Control Explorer by clicking **View** > **Other Windows** > **Source Control Explorer**.
 6. Navigate to the metadata folder that is mapped on this development VM, such as **MyProject/Trunk/Main/Metadata**.

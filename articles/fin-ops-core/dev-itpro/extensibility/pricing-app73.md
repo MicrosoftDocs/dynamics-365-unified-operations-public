@@ -12,7 +12,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 89563
 ms.assetid: 
@@ -38,7 +38,7 @@ The mapping of fields on the **Customer**, **Vendor**, and **InventTable** table
 
 The following diagram highlights the implementation. Note that the methods show only one of the sub-classes. The implementation needs to be on each sub-class. 
 
-![PriceGroupTypeTradeAgreementMapping](media/PricingFall20171.png)
+![PriceGroupTypeTradeAgreementMapping.](media/PricingFall20171.png)
 
 ## PriceDisc class
 
@@ -48,17 +48,17 @@ The ability to wrap and modify the instantiation of the **PriceDiscParameters** 
 
 In the following diagram, you can see how the **PriceDisc** class can be extended to modify existing searches or to add new search methods that correspond to the extended **PriceType** enum values.
 
-![PriceDiscClass](media/PricingFall20172.png)
+![PriceDiscClass.](media/PricingFall20172.png)
 
 ## Add a new price search
 
 In this scenario, you have extended the **PriceGroupType** enum with a new value **PriceGroupTypeISVExtension**, and two corresponding **PriceType** enum values - **ISVPurchPriceType** and **ISVSalesPriceType**. 
 
-![WalkThrough1](media/PricingFall20173.png)
+![WalkThrough1.](media/PricingFall20173.png)
 
 The following diagram illustrates how a new price search can be added for the **PriceType** and **PriceGroupType** values.
 
-![WalkThrough2](media/PricingFall20174.png)
+![WalkThrough2.](media/PricingFall20174.png)
 
 This example shows the following:
 

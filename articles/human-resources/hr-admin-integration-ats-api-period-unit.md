@@ -26,6 +26,9 @@ ms.dyn365.ops.version: Human Resources
 
 # Period unit
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This topic describes the Period unit option set for Dynamics 365 Human Resources.

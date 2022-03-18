@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 83892
 ms.search.region: Global
@@ -37,7 +37,7 @@ In Cart view, you can add custom controls by using the POS screen layout designe
 
 For example, in the following illustration, three custom controls were added by using the screen layout designer.
 
-![POS screen layout designer in Cart view](media/pos-custom-control-1.png)
+![POS screen layout designer in Cart view.](media/pos-custom-control-1.png)
 
 Currently, only Cart view lets you use the screen layout designer to add custom controls. For all other screens, you should do the layout in the extension project. One advantage of using the screen layout designer is that you can drag the custom control wherever you want on the screen. On other screens, the position is fixed, but you can modify the position by specifying the height and width.
 
@@ -197,7 +197,7 @@ Next, you must add the constructor and initialize the data list with the product
 1. Press F5, and deploy the POS to test your customization.
 2. After the POS is started, sign in. Then search for any product, and open to product details view. You should now see the custom control that you added. Here is an example.
 
-    ![Product availability information in the product details view](media/pos-custom-control-2.png)
+    ![Product availability information in the product details view.](media/pos-custom-control-2.png)
 
 You can copy the full code for this sample from RetailSDK\\Code\\POS\\Extensions\\SampleExtensions\\ViewExtensions\\SimpleProductDetails.
 

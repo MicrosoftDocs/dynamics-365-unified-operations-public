@@ -4,7 +4,7 @@
 title: Configure data import from SharePoint
 description: This topic explains how to import data from Microsoft SharePoint.
 author: NickSelin
-ms.date: 11/19/2020
+ms.date: 01/05/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -52,13 +52,13 @@ Play the **ER Import data from a Microsoft Excel file** task guides, which are p
 - ER model configuration, **1099 Payments model**
 - ER format configuration, **Format for importing vendors' transactions from Excel**
 
-![ER configurations for importing data from SharePoint](./media/GERImportFromSharePoint-01-Configurations.PNG)
+![ER configurations for importing data from SharePoint.](./media/GERImportFromSharePoint-01-Configurations.PNG)
 
 #### Sample of the incoming file for data import
 
 - Excel file **1099import-data.xlsx**, with vendor transactions that should be imported.
 
-![Sample  Excel file for importing from SharePoint](./media/GERImportFromSharePoint-02-Excel.PNG)
+![Sample  Excel file for importing from SharePoint.](./media/GERImportFromSharePoint-02-Excel.PNG)
     
 > [!NOTE]
 > The format for importing vendor transactions is selected as the default model mapping. Therefore, if you run a model mapping of the **1099 Payments model**, and that model mapping is of the **To destination** type, the model mapping runs this format to import data from external files. It then uses that data to update application tables.
@@ -73,7 +73,7 @@ To store electronic report files in a SharePoint location, you must configure ac
      - Files import source (main) (Example shown in screenshot below)
      - Files import source (alternative)
 
-    ![Files import source (main)](./media/GERImportFromSharePoint-04-SharePointFolder1.png)
+    ![Files import source (main).](./media/GERImportFromSharePoint-04-SharePointFolder1.png)
 
 4. (Optional) Create the following folders where the files can be stored after import. 
 
@@ -92,7 +92,7 @@ To store electronic report files in a SharePoint location, you must configure ac
 |SP Warning             |File                |SharePoint     |Files warning folder|
 |SP Error             |File                |SharePoint     |Files error folder|
 
-![SharePoint setting – new document type](./media/GERImportFromSharePoint-06-SharePointDocumentTypesSetup.png)
+![SharePoint setting – new document type.](./media/GERImportFromSharePoint-06-SharePointDocumentTypesSetup.png)
 
 ## Configure ER sources for the ER format
 1. Click **Organization administration** \> **Electronic reporting** \> **Electronic reporting source**.
@@ -101,7 +101,7 @@ To store electronic report files in a SharePoint location, you must configure ac
 4. Change **Sort files before import** to **Do not sort**, if there are several files for import and the import order is not important
 5. Select all SharePoint folders that you created earlier.
 
-    [![ER files source setting](./media/GERImportFromSharePoint-07-FormatSourceSetup.PNG)](./media/GERImportFromSharePoint-07-FormatSourceSetup.PNG)
+    [![ER files source setting.](./media/GERImportFromSharePoint-07-FormatSourceSetup.PNG)](./media/GERImportFromSharePoint-07-FormatSourceSetup.PNG)
 
 > [!NOTE]
 > - The ER *source* is defined for each application company individually. By contrast, ER *configurations* are shared across companies.
@@ -119,7 +119,7 @@ You can also open the **File states for the sources** page by selecting **Organi
 ## Import data from Excel files that are in a SharePoint folder
 1. In SharePoint, upload the Microsoft Excel file **1099import-data.xlsx** that contains vendor transactions to the **Files import source (main)** SharePoint folder that you created earlier.
 
-    [![SharePoint content – Microsoft Excel file for importing](./media/GERImportFromSharePoint-08-UploadFile.png)](./media/GERImportFromSharePoint-08-UploadFile.png)
+    [![SharePoint content – Microsoft Excel file for importing.](./media/GERImportFromSharePoint-08-UploadFile.png)](./media/GERImportFromSharePoint-08-UploadFile.png)
 
 2. On the **File states for the sources** page, select **Refresh** to refresh the page. The Excel file that was uploaded to SharePoint appeared on this page with the status **Ready**. The following statuses are currently supported:
 
@@ -129,31 +129,31 @@ You can also open the **File states for the sources** page by selecting **Organi
     - **Failed** – Assigned automatically by an ER report when the file import completed with errors or exceptions.
     - **On hold** – Assigned manually by user on this page. This status means that the file will not be imported for now. This status can be used to postpone the import of some files.
 
-    [![Refreshed ER file states page for the selected sources](./media/GERImportFromSharePoint-09-FileStatesForm.png)](./media/GERImportFromSharePoint-09-FileStatesForm.png)
+    [![Refreshed ER file states page for the selected sources.](./media/GERImportFromSharePoint-09-FileStatesForm.png)](./media/GERImportFromSharePoint-09-FileStatesForm.png)
 
 ## Import data from SharePoint files
 1. Open the ER configurations tree, select the **1099 Payment model**, and expand the list of ER model components.
 2. Select the name of the model mapping to open the list of model mappings of the selected ER model configuration.
 
-    [![Configuration page](./media/GERImportFromSharePoint-10-SelectModelMapping.PNG)](./media/GERImportFromSharePoint-10-SelectModelMapping.PNG)
+    [![Configuration page.](./media/GERImportFromSharePoint-10-SelectModelMapping.PNG)](./media/GERImportFromSharePoint-10-SelectModelMapping.PNG)
 
 3. Select **Run** to run the selected model mapping. Because you configured file sources for the ER format, you can change the setting of the **File source** option, if needed. If you keep the setting of this option, the .xslx files are imported from the configured sources (the SharePoint folders, in this example).
 
     In this example, you're importing only one file. However, if there are multiple files, they are selected for importing in the order in which they were added to the SharePoint folder. Every run of an ER format imports a single selected file.
 
-    [![Import from SharePoint and run ER model mapping](./media/GERImportFromSharePoint-11-RunModelMapping.PNG)](./media/GERImportFromSharePoint-11-RunModelMapping.PNG)
+    [![Import from SharePoint and run ER model mapping.](./media/GERImportFromSharePoint-11-RunModelMapping.PNG)](./media/GERImportFromSharePoint-11-RunModelMapping.PNG)
 
 4. The model mapping can run [unattended](#limitations) in batch mode. In this case, every time that a batch runs this ER format, a single file is imported from the configured file sources.
 
-    When a file is successfully imported from the SharePoint folder, it's deleted from that folder and moved to folder for successful imported files or to the folder to imported files with warnings. Otherwise it's moved to folder for failed files or stays in this folder if the folder for failed files isn't set up. 
+    When a file is successfully imported from the SharePoint folder, it's deleted from that folder and moved to folder for successful imported files or to the folder to imported files with warnings. Otherwise, it's moved to folder for failed files or stays in this folder if the folder for failed files isn't set up. 
 
 5. Enter the voucher ID, such as **V-00001**, and then select **OK**.
 
-    [![Run ER model mapping](./media/GERImportFromSharePoint-12-ModelMappingRunFinished.PNG)](./media/GERImportFromSharePoint-12-ModelMappingRunFinished.PNG)
+    [![Run ER model mapping.](./media/GERImportFromSharePoint-12-ModelMappingRunFinished.PNG)](./media/GERImportFromSharePoint-12-ModelMappingRunFinished.PNG)
 
 6. On the **File states for the sources** page, select **Refresh** to refresh the page.
 
-    [![ER file states for the sources page](./media/GERImportFromSharePoint-13-FileStatesForm.PNG)](./media/GERImportFromSharePoint-13-FileStatesForm.PNG)
+    [![ER file states for the sources page.](./media/GERImportFromSharePoint-13-FileStatesForm.PNG)](./media/GERImportFromSharePoint-13-FileStatesForm.PNG)
 
 7. In the **Files** section, review the list of files. The **Sources log for the import format** section provides the history of the Excel file import. Because this file was successfully imported, it's marked as **Deleted** in the SharePoint folder.
 8. Review the **Files import source (main)** SharePoint folder. The Excel files that were successfully imported have been deleted from this folder.
@@ -162,12 +162,12 @@ You can also open the **File states for the sources** page by selecting **Organi
 
     The vendor transactions that were imported from the Excel files on SharePoint for voucher **V-00001**, are presented on the page.
 
-    [![1099 vendor transactions page](./media/GERImportFromSharePoint-14-ImportedTransactions.PNG)](./media/GERImportFromSharePoint-14-ImportedTransactions.PNG)
+    [![1099 vendor transactions page.](./media/GERImportFromSharePoint-14-ImportedTransactions.PNG)](./media/GERImportFromSharePoint-14-ImportedTransactions.PNG)
 
 ## Prepare an Excel file for import
 1. Open the Excel file that you previously used. In row 3 column 1, add a vendor code that doesn't exist in the application. Add additional false vendor information to the row.
 
-    [![Sample Microsoft Excel file for importing from SharePoint](./media/GERImportFromSharePoint-15-Excel.PNG)](./media/GERImportFromSharePoint-15-Excel.PNG)
+    [![Sample Microsoft Excel file for importing from SharePoint.](./media/GERImportFromSharePoint-15-Excel.PNG)](./media/GERImportFromSharePoint-15-Excel.PNG)
 
 2. Upload the updated Excel file that contains vendors transactions to the **Files import source (main)** SharePoint folder.
 3. Open the ER configurations tree, select the **1099 Payment model**, and expand the list of ER model components.
@@ -175,7 +175,7 @@ You can also open the **File states for the sources** page by selecting **Organi
 5. Select **Designer**.
 6. On the **Validations** tab, you must change the post-validation action for the validation rule that was configured to evaluate whether the vendor account that is imported exists in the application. Update the value of the **Post-validation action** field to **Stop execution**, save your changes, and close the page.
 
-    [![ER model mapping designer page](./media/GERImportFromSharePoint-16-UpdateModelMapping.PNG)](./media/GERImportFromSharePoint-16-UpdateModelMapping.PNG)
+    [![ER model mapping designer page.](./media/GERImportFromSharePoint-16-UpdateModelMapping.PNG)](./media/GERImportFromSharePoint-16-UpdateModelMapping.PNG)
 
 7. Save your changes, and close the ER model mapping designer.
 8. Select **Run** to run the modified ER model mapping.
@@ -183,11 +183,11 @@ You can also open the **File states for the sources** page by selecting **Organi
 
     The Infolog contains a notification that there's a file in the SharePoint folder that contains incorrect vendor account and can’t be imported.
 
-    [![Finished Run ER model mapping](./media/GERImportFromSharePoint-17-ModelMappingRunFinished.PNG)](./media/GERImportFromSharePoint-17-ModelMappingRunFinished.PNG)
+    [![Finished Run ER model mapping.](./media/GERImportFromSharePoint-17-ModelMappingRunFinished.PNG)](./media/GERImportFromSharePoint-17-ModelMappingRunFinished.PNG)
 
 10. On the **File states for the sources** page, select **Refresh**, and then, in the **Files** section, review the list of files.
 
-    [![ER file states page for the selected sources](./media/GERImportFromSharePoint-18-FileStatesForm.PNG)](./media/GERImportFromSharePoint-18-FileStatesForm.PNG)
+    [![ER file states page for the selected sources.](./media/GERImportFromSharePoint-18-FileStatesForm.PNG)](./media/GERImportFromSharePoint-18-FileStatesForm.PNG)
 
    The **Sources log for the import format** section indicates that the import process failed and that the file is in the Files error SharePoint folder (the **Is deleted** check box is not selected). If you fix this file on SharePoint by adding the proper vendor code and then move it to the Files import source (main) SharePoint folder, you can import the file again.
 
@@ -197,17 +197,21 @@ You can also open the **File states for the sources** page by selecting **Organi
 
 ## <a name="limitations">Limitations</a>
 
-The ER framework doesn't offer the capability to initiate a new batch job that will execute a model mapping in unattended mode for data import. To do this, you must develop new logic so that the configured ER model mapping can be called from the application user interface (UI) to import data from inbound files. Therefore, some engineering work is required. 
+In versions of Dynamics 365 Finance before version 10.0.25, the user interface (UI) of the ER framework doesn't offer the capability to initiate a new batch job that will run a model mapping for data import in unattended mode. Instead, you must develop new logic so that the configured ER model mapping can be called from the application UI to import data from inbound files. To develop this logic, some engineering work is required. 
 
-To learn more about the relevant ER API, see the [Code to run a format mapping for data import](er-apis-app73.md#code-to-run-a-format-mapping-for-data-import) section in the [ER framework API changes for Application update 7.3](er-apis-app73.md) topic.
+For more information about the relevant ER API, see the [Code to run a format mapping for data import](er-apis-app73.md#code-to-run-a-format-mapping-for-data-import) section in [ER framework API changes for Application update 7.3](er-apis-app73.md). Review the code in the `BankImport_RU` class of the `Application Suite` model to see how your custom logic can be implemented. The `BankImport_RU` class extends the `RunBaseBatch` class. In particular, review the `runER()` method, where the `ERIModelMappingDestinationRun` object is created as the runner of an ER model mapping.
 
-Review the code in the `BankImport_RU` class of the `Application Suite` model to see how your custom logic can be implemented. This class extends the `RunBaseBatch` class. In particular, review the `runER()` method where the `ERIModelMappingDestinationRun` object is created as the runner of an ER model mapping.
+In Finance version 10.0.25 and later, the ER framework UI does offer the capability to initiate a new batch job that will run a model mapping for data import in unattended mode. For more information about this process, see [Import data in batch mode from manually selected files](er-configure-data-import-batch.md).
 
 ## Additional resources
 
 [Electronic Reporting overview](general-electronic-reporting.md)
 
 [ER framework API changes for Application update 7.3](er-apis-app73.md)
+
+[ER framework API changes for Application update 10.0.23](er-apis-app10-0-23.md)
+
+[ER framework API changes for Application update 10.0.25](er-apis-app10-0-25.md)
 
 
 

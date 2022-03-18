@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -39,7 +39,7 @@ This topic explains what has changed in the 10.0.11 release of the Retail softwa
 
 ## Retail SDK updated to support Visual Studio 2017
 
-The Retail SDK now runs on Visual Studio 2017. In release 10.0.11 and later, all Retail SDK components, including Modern POS (MPOS), Cloud POS (CPOS), the Commerce runtime (CRT), Retail Server, the proxy, and Hardware station (HWS), can be built and compiled only in Visual Studio 2017. You can't use Visual Studio 2015.
+The Retail SDK now runs on Visual Studio 2017. In release 10.0.11 and later, all Retail SDK components, including Modern POS (MPOS), Cloud POS (CPOS), the Commerce runtime (CRT), Headless Commerce, the proxy, and Hardware station (HWS), can be built and compiled only in Visual Studio 2017. You can't use Visual Studio 2015.
 
 ## References updated to PackageReference
 
@@ -79,7 +79,20 @@ There are two ways to migrate:
         + [sdk-2.1.513-windows-x64-installer](https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-2.1.513-windows-x64-installer)
         + [runtime-2.0.9-windows-x64-installer](https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-2.0.9-windows-x64-installer)
         + [runtime-2.1.17-windows-x64-installer](https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-2.1.17-windows-x64-installer)
-        + Install Typescript version 2.2.2. In Visual Studio, go to **Tools > Get Tools and Features**. Select the **Individual components** tab and select the **TypeScript 2.2 SDK from SDKs, libraries, and frameworks** section and install it. VS 2017 has Typescript 3.1 as default, please include 2.2.2 also because the POS app is built based on Typescript 2.2.2.
+        + Install Typescript version 2.2.2. 
+ 
+In Visual Studio, go to **Tools > Get Tools and Features**. Select the **Individual components** tab and select the **TypeScript 2.2 SDK from SDKs, libraries, and frameworks** section and install it. Visual Studio 2017 has Typescript 3.1 as the default. You also need to include 2.2.2 because the POS app is based on Typescript 2.2.2.
+
+- .NET Developer Pack:
+    +  [.NET Framework 4.5.1](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net451-developer-pack-offline-installer)
+    +  [.NET Framework 4.6.2](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net462-developer-pack-offline-installer)
+    
+- [Web Deploy v3.6 ](https://www.microsoft.com/download/confirmation.aspx?id=43717)
+
+If the SDK compilation fails with the following error message, "The current .NET SDK does not support targeting .NET Standard 2.0", try installing the x86 version of the .NET 2.1 SDK and runtime.
++ [.NET Core 2.1 SDK](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-2.1.524-windows-x86-installer)
++ [.NET Core 2.1 Runtime](https://dotnet.microsoft.com/download/dotnet/thank-you/runtime-2.1.28-windows-x86-installer)
+
 
 ## Build the Retail SDK
 
@@ -89,7 +102,7 @@ Follow these steps to build the Retail SDK.
 2. Merge your extension to the new SDK folder. For information about how to merge extension with the SDK, see [Upgrade the Retail channel extension to the latest Retail SDK](../retailsdk-update.md).
 3. After the extensions have been merged, update all the hard-coded references to PackageReference by using the NuGet packages.
 
-## Update the reference in the CRT and Retail Server extension projects
+## Update the reference in the CRT and Headless Commerce extension projects
 
 1. 1.	Use any of the sample CRT projects in the Retail SDK (..\RetailSDK\SampleExtensions\CommerceRuntime) as a template and migrate your CRT extension to this new format. The new samples uses the Visual Studio 2017 formats for project dependencies (NuGet references).
 2. In the NuGet Package Manager, add the local NuGet repository folder. For information about how to create a local NuGet repository, see [Install and manage packages in Visual Studio using the NuGet Package Manager](/nuget/consume-packages/install-use-packages-visual-studio#package-sources).
@@ -109,11 +122,11 @@ Follow these steps to build the Retail SDK.
 > [!NOTE]
 > PackageReference also supports floating versions, where the version is updated with the floating version number. For more information about floating versions, see [How NuGet resolves package dependencies](/nuget/concepts/dependency-resolution#floating-versions). When the floating version is used, extensions no longer have to update the reference for every update, because NuGet will automatically resolve to the latest version. For example, the package reference might resemble **\<PackageReference Include="Microsoft.Dynamics.Commerce.Runtime" Version="9.21.x" /\>**.
 
-In a similar way, update the references for all the Retail Server, proxy, and Hardware station extension projects. 
+In a similar way, update the references for all the Headless Commerce APIs, proxy, and Hardware station extension projects. 
 
-### Retail Server and Proxy extensions
+### Headless Commerce APIs and Proxy extensions
 
-Migrate the Retail Server and Proxy extensions to the new extension model released in version 10.0.12. Starting in version 10.0.12, the same Retail Server extension library can be used for offline use, no separate C# proxy library is needed, however a client typescript proxy is still required. For more information, see [Create a new Retail Server extension API](../retail-server-icontroller-extension.md). This step is recommended but not required, as the Retail Server and proxy extension libraries will continue to work until the old extension model is deprecated.
+Migrate the Headless Commerce APIs and Proxy extensions to the new extension model released in version 10.0.12. Starting in version 10.0.12, the same Headless Commerce extension library can be used for offline use, no separate C# proxy library is needed, however a client typescript proxy is still required. For more information, see [Create a new Headless Commerce extension API](../retail-server-icontroller-extension.md). This step is recommended but not required, as the Headless Commerce and proxy extension libraries will continue to work until the old extension model is deprecated.
 
 ## What isn't affected
 

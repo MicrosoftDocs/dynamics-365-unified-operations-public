@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Talent
 ---
 # What's new or changed in Dynamics 365 Talent (March 26, 2019)
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 This topic describes features that are either new or changed in Dynamics 365 Talent.
 
@@ -44,7 +44,7 @@ The following enhancements are available in interview scheduling.
 ### Embedded images in activities
 You can now embed images directly into activities. In addition to being able to copy and paste images from the web, you can upload images from your local file system. The size of the activity is limited to 1 MB. If the image is too large, resize and try to upload again.
 
-[![Mapping](./media/embedimages.png)](./media/embedimages.png)
+[![Mapping.](./media/embedimages.png)](./media/embedimages.png)
 
 This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 

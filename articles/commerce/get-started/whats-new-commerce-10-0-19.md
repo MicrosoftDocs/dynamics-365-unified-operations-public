@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.19
 # What's new and changed in Dynamics 365 Commerce 10.0.19 (June 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 This topic lists features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.19. This version has a build number of 10.0.837 and is available on the following schedule:
 
@@ -56,6 +56,8 @@ Dynamics 365 Commerce 10.0.19 includes platform updates. To learn more, see [Pla
 
 ### Bug fixes 
 For information about the bug fixes that are included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=575415&dbType=3&qc=762ace311d670d27275cb0b6e11d811e4222643ffccdc5681a42a580780b8337).
+
+For Commerce-specific breaking changes, view the [Dynamics 365 Commerce online SDK FAQ](../e-commerce-extensibility/sdk-faq.md).
 
 ### Dynamics 365: 2021 release wave 1 plan
 

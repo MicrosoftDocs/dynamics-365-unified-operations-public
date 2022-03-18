@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 72153
 ms.assetid: 24643037-f7a5-4acf-b3d6-9943642b618c
@@ -48,7 +48,7 @@ To request an OANDA test account and receive information about the OANDA exchang
 ## Conceptual/class model
 The following illustration shows the main interfaces and classes that make up the exchange rate provider framework, and the relationships among them. New exchange rate providers should be implemented from the **IExchangeRateProvider** interface. Exchange rate providers are written in X++ or C#. Because X++ is a .NET language, you can easily use the Microsoft .NET Framework. All providers that are written in C# must be wrapped by an X++ class to be recognized as C# providers. For example, the Central Bank of Europe exchange rate provider is a provider that Microsoft wrote in C#. It's wrapped by the **ExchangeRateProviderCBOE** X++ class.
 
-[![Conceptual/class model of the exchange rate provider framework](./media/exchangerates.png)](./media/exchangerates.png)
+[![Conceptual/class model of the exchange rate provider framework.](./media/exchangerates.png)](./media/exchangerates.png)
 
 Here are the interfaces and classes that are shown in the illustration:
 

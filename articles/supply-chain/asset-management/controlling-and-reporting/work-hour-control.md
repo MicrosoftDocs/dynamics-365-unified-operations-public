@@ -71,7 +71,7 @@ The screenshot below shows an example of an **Asset hour control** calculation.
 - The **Actual hours** field shows posted hours on work orders. 
 - The **Committed hours** field shows total amount of hours that your company is committed to in relation to work orders.
 
-![Example of Asset hour control calculation](media/04-controlling-and-reporting.png)
+![Example of Asset hour control calculation.](media/04-controlling-and-reporting.png)
 
 Another way of making an hour calculation is to multi-select assets in **All assets** or **Active assets**. Then you click the **Hour control** button on the **General** FastTab. The selected assets are automatically inserted in the **Asset** field on the **Records to include** FastTab. Click **OK** in the **Asset hour control** dialog, and the calculation for the selected assets is shown. The same procedure can be done for functional locations in **All functional locations** or **Active functional locations**, and for work orders in **All work orders** or **Active work orders**.
 

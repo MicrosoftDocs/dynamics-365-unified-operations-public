@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 11314
 ms.assetid: 20e6b97e-30ed-48d4-b63c-a073f80300b2
@@ -41,7 +41,7 @@ This part of the topic describes the various areas of the dimension framework an
 
 The following illustration shows a model of the various areas of the dimension framework.
 
-[![Dimension framework](./media/DimensionsFrameworkGraph.png)](./media/DimensionsFrameworkGraph.png)
+[![Dimension framework.](./media/DimensionsFrameworkGraph.png)](./media/DimensionsFrameworkGraph.png)
 
 This part of the topic covers the "Dimensions," "Dimension Values," "Categorizations," and "Backing Entities" regions that are highlighted in yellow in the preceding illustration.
 
@@ -53,11 +53,11 @@ When a dimension is created, the user can choose where its values come from. Dim
 
 In the example in the following illustration, there are two dimensions on the **Financial dimensions** page. The Customer dimension represents customers that already exist in the application, and the LicensePlate dimension represents a new custom list.
 
-[![Financial dimensions page](./media/FinancialDimensions.png)](./media/FinancialDimensions.png)
+[![Financial dimensions page.](./media/FinancialDimensions.png)](./media/FinancialDimensions.png)
 
 The data about each dimension is stored in the DimensionAttribute table. The SQL query in the following illustration shows some of the basic information that is associated with each dimension.
 
-[![Query results for DimensionAttribute storage](./media/FinancialDimensionSQL.png)](./media/FinancialDimensionSQL.png)
+[![Query results for DimensionAttribute storage.](./media/FinancialDimensionSQL.png)](./media/FinancialDimensionSQL.png)
 
 The **Type** value indicates whether the dimension is backed by an existing entity in the system or a custom list. The dimension framework doesn't directly reference the backing table for an existing entity, such as CustTable. Instead, a custom view is created to make an entity available in the system, so that it can be used in the dimension framework. By default, 36 existing entities can be used as dimensions.
 
@@ -73,15 +73,15 @@ If the list of values is provided by an existing entity, such as CustTable, the 
 
 The following illustration shows an example of a list of values that is provided by CustTable. In this case, no values are stored in the dimension framework.
 
-[![Financial dimensions values page (existing list)](./media/FinancialDimensionValuesForm.png)](./media/FinancialDimensionValuesForm.png)
+[![Financial dimensions values page (existing list).](./media/FinancialDimensionValuesForm.png)](./media/FinancialDimensionValuesForm.png)
 
 The following illustration shows an example of a list of values that is provided by a custom list. In this case, values are stored in the dimension framework.
 
-[![Financial dimensions page (custom list)](./media/FinancialDimensionValuesFormCustom.png)](./media/FinancialDimensionValuesFormCustom.png)
+[![Financial dimensions page (custom list).](./media/FinancialDimensionValuesFormCustom.png)](./media/FinancialDimensionValuesFormCustom.png)
 
 The following illustration shows the query results from the dimension setup tables for the preceding example.
 
-[![Query results for dimension setup tables](./media/DimensionSetupDataSQL.png)](./media/DimensionSetupDataSQL.png) 
+[![Query results for dimension setup tables.](./media/DimensionSetupDataSQL.png)](./media/DimensionSetupDataSQL.png) 
 
 In both these examples, the **Financial dimension values** page shows the values that exist for the entity, not the values that have been used in the dimension framework. Because the representation of these values in the dimension framework isn't created until these values are used in the framework, it must still hold a reference to the backing value. Therefore, values that haven't yet been used can be deleted. This behavior allows for optimization of storage size and performance.
 
@@ -93,7 +93,7 @@ In a system where nothing has been referenced by the dimension framework, there 
 
 This part of the topic covers the "Dimension Enumerations" and "Default Dimensions" regions that are highlighted in yellow in the following illustration.
 
-[![Sets in the framework](./media/SetsInFramework.png)](./media/SetsInFramework.png)
+[![Sets in the framework.](./media/SetsInFramework.png)](./media/SetsInFramework.png)
 
 Dimension enumerations and default dimensions are two mechanisms that are used to store a set of references to either dimensions or dimension values. Both are typically exposed on a **Financial dimensions** tab on primary data pages, such as **Customers** (CustTable) or **Vendors** (VendTable).
 
@@ -105,15 +105,15 @@ Each set specifies an enumeration type. This enumeration type is the enumeration
 
 The following illustration shows an example of dimension enumerations on a page.
 
-[![Dimension enumerations on a page](./media/DimensionEnumerationsOnForm.png)](./media/DimensionEnumerationsOnForm.png) 
+[![Dimension enumerations on a page.](./media/DimensionEnumerationsOnForm.png)](./media/DimensionEnumerationsOnForm.png) 
 
 For the preceding example, the **DimensionFixed** enumeration is used to constrain the list of values in the drop-down list.
 
-[![Dimension enumeration BaseEnum](./media/DImensionEnumerationBaseEnum.png)](./media/DImensionEnumerationBaseEnum.png) 
+[![Dimension enumeration BaseEnum.](./media/DImensionEnumerationBaseEnum.png)](./media/DImensionEnumerationBaseEnum.png) 
 
 The value that is selected represents one item by using a value of **1** for **EnumerationValue** (= **DimensionFixed::Fixed**) and the other item by using the default value of **0** for **EnumerationValue** (= **DimensionFixed::NotFixed**). The following illustration shows how the DimensionAttributeSet record is stored.
 
-[![Query results for dimension enumeration storage](./media/DimensionENumerationSQL.png)](./media/DimensionENumerationSQL.png) 
+[![Query results for dimension enumeration storage.](./media/DimensionENumerationSQL.png)](./media/DimensionENumerationSQL.png) 
 
 The MainAccountLegalEntity record references the DimensionAttributeSet record by using its **FixedDimensions** field. The DimensionAttributeSet record represents the combination of dimensions for the enumeration type. The DimensionAttributeSetItem records represent each pair of a dimension and an enumeration value in the set. The enumeration value is represented by its integer value.
 
@@ -123,11 +123,11 @@ As dimension enumerations hold a set of dimensions that have associated enumerat
 
 The following illustration shows an example of default dimensions on a page.
 
-[![Default dimensions on a page](./media/DefaultDimensionsOnForm.png)](./media/DefaultDimensionsOnForm.png)
+[![Default dimensions on a page.](./media/DefaultDimensionsOnForm.png)](./media/DefaultDimensionsOnForm.png)
 
 In the preceding example, the user has selected a dimension value to associate with each dimension. The following illustration shows how these values are stored in the DimensionAttributeValueSet and DimensionAttributeValueSetItem tables.
 
-[![Query results for dimension value tables](./media/DImensionValueTablesSQL.png)](./media/DImensionValueTablesSQL.png)
+[![Query results for dimension value tables.](./media/DImensionValueTablesSQL.png)](./media/DImensionValueTablesSQL.png)
 
 The MainAccountLegalEntity record holds a foreign key reference to the DimensionAttributeValueSet table that represents the combination of entered values. Specifically, this table represents the set of pairs of dimensions values that are stored in the DimensionAttributeValueSetItem table.
 
@@ -139,7 +139,7 @@ To get to the source of the values, you can follow the link that is stored in th
 
 This part of the topic covers the "Structures" and "Constraints" regions that are highlighted in yellow in the following illustration.
 
-[![Structures and constraints in the framework](./media/StructuresAndConstraintsInFramework.png)](./media/StructuresAndConstraintsInFramework.png)
+[![Structures and constraints in the framework.](./media/StructuresAndConstraintsInFramework.png)](./media/StructuresAndConstraintsInFramework.png)
 
 As was previously stated, the dimension framework allows for an unlimited number of dimensions. Additionally, when users enter a ledger account combination, they can specify which dimensions to include, and in which order. They can also constrain the values that can be entered for each segment in that ledger account combination.
 
@@ -147,29 +147,29 @@ As was previously stated, the dimension framework allows for an unlimited number
 
 The following illustration shows an example of an account structure.
 
-[![Account structures page](./media/AccountStructureConfigurationForm.png)](./media/AccountStructureConfigurationForm.png)
+[![Account structures page.](./media/AccountStructureConfigurationForm.png)](./media/AccountStructureConfigurationForm.png)
 
 As the following illustration shows, this account structure is stored in the DimensionHierarchy table in the database. It's set up to require that a main account be entered as the first segment of a ledger account combination, and that a customer and license plate number be entered as subsequent segments. This setup is the hierarchical order definition. It's stored in the DimensionHierarchyLevel table in the database.
 
-[![Query results for account structures](./media/StructureSQL.png)](./media/StructureSQL.png)
+[![Query results for account structures.](./media/StructureSQL.png)](./media/StructureSQL.png)
 
 In addition to the order, the constraints must be set up. Constraints are the criteria that define the valid combinations of values. In this example, all segments must have a value for the combination. Otherwise, they aren't considered valid. Any existing value (that is, any value that already exists in the backing entity) can be entered, and there are no specific restrictions on the combinations of values that are valid. This criterion is stored in the DimensionConstraintTree, DimensionConstraintNode, and DimensionConstraintNodeCriteria tables.
 
-[![Query results for simple constraints](./media/SimpleConstraintsQueryResults.png)](./media/SimpleConstraintsQueryResults.png)
+[![Query results for simple constraints.](./media/SimpleConstraintsQueryResults.png)](./media/SimpleConstraintsQueryResults.png)
 
 The example in the preceding illustration shows the most basic constraint tree. An asterisk (\*) constraint criterion is associated with each of the three constraint nodes. This constraint criterion represents any existing value. It's stored as a percent sign (%) in the database and is shown as "\<all values\>" in the UI. These constraints are used both to show the values that can be entered for each segment via a lookup and to validate values that are entered in the segment. Eventually, if incorrect values are entered for a ledger account combination, these constraints will produce validation errors.
 
 The dimension framework allows for much more complex constraint trees, where the value that is entered in one segment drives the valid values that can be entered in the next segment. The following illustration shows an example of the versatility.
 
-[![Constraint builder on the Account structures page](./media/ConstraintbuilderonConfigureAccountStructureForm.png)](./media/ConstraintbuilderonConfigureAccountStructureForm.png)
+[![Constraint builder on the Account structures page.](./media/ConstraintbuilderonConfigureAccountStructureForm.png)](./media/ConstraintbuilderonConfigureAccountStructureForm.png)
 
 The following illustration shows a more complex constraint tree.
 
-[![Advanced constraint tree expanded on a page](./media/AdvancedConstraintTreeExpandedOnForm.png)](./media/AdvancedConstraintTreeExpandedOnForm.png)
+[![Advanced constraint tree expanded on a page.](./media/AdvancedConstraintTreeExpandedOnForm.png)](./media/AdvancedConstraintTreeExpandedOnForm.png)
 
 The following illustration shows the resulting constraint definition.
 
-[![Query results for advanced constraint trees](./media/AdvancedConstraintTreeSQL.png)](./media/AdvancedConstraintTreeSQL.png)
+[![Query results for advanced constraint trees.](./media/AdvancedConstraintTreeSQL.png)](./media/AdvancedConstraintTreeSQL.png)
 
 If a user enters **150-B** for a main account and customer, a specific license plate number must also be entered. However, if the user enters **150-W**, no license plate number is required. In both cases, the user will always see three segments in the ledger account combination, even if one of those segments is left blank. For examples of the effects that these structures, segments, and constraints have when ledger dimension accounts are entered, see the [part 5](#part-5-ledger-dimensions) section of this topic section of this topic that discusses the entry and storage of ledger account combinations.
 
@@ -179,7 +179,7 @@ If a user wants to show trailing segments only when they must be entered, advanc
 
 This part of the topic covers the "Advanced Rules" region that is highlighted in yellow in the following illustration.
 
-[![Advanced rules in framework](./media/AdvancedRulesGraph.png)](./media/AdvancedRulesGraph.png)
+[![Advanced rules in framework.](./media/AdvancedRulesGraph.png)](./media/AdvancedRulesGraph.png)
 
 Account structures and constraints let users build simple to complex trees of valid combinations. However, there is sometimes a business requirement to show a dimension as a segment in a ledger account combination only at specific times, instead of just constraining the valid values that are allowed and showing the dimension all the time. Advanced rules support this requirement.
 
@@ -198,29 +198,29 @@ To set up an advanced rule, you must define a filter that controls when addition
 
 For example, the following account structure is set up.
 
-![Basic structure and constraints for two accounts](./media/BasicStructureAndConstraint.png)
+![Basic structure and constraints for two accounts.](./media/BasicStructureAndConstraint.png)
 
 You configure the following advanced rule to optionally add one or more segments only if the user enters main account 145 and customers G through Q.
 
-[![Advanced rule page](./media/AdvancedRuleForm.png)](./media/AdvancedRuleForm.png)
+[![Advanced rule page.](./media/AdvancedRuleForm.png)](./media/AdvancedRuleForm.png)
 
 After the rule is configured, you must create a structure and constraint definition to define what segments should be added to the ledger account combination. To complete this step, you create the following rule structure. The process for creating a rule structure resembles the process for creating an account structure. These structures aren't immediately bound to the rule. Therefore, they can be shared across multiple rules as you require.
 
-[![Advanced rule structure page](./media/AdvancedRuleStructureForm.png)](./media/AdvancedRuleStructureForm.png)
+[![Advanced rule structure page.](./media/AdvancedRuleStructureForm.png)](./media/AdvancedRuleStructureForm.png)
 
 After the structure is created, you add it to the dimension rule. The account structure is then activated, together with the rule.
 
-[![Added advanced rule structure to rule](./media/AddedAdvancedRuleStructureToRule.png)](./media/AddedAdvancedRuleStructureToRule.png)
+[![Added advanced rule structure to rule.](./media/AddedAdvancedRuleStructureToRule.png)](./media/AddedAdvancedRuleStructureToRule.png)
 
 The storage of this data uses some of the same tables as the storage of the account structures (see [part 3](#part-3-structures-and-constraints)). The DimensionRule, DimensionRuleAppliedHierarchy, and DimensionRuleCriteria tables hold the data that is specific to the definition of the rule. They also hold the link to the definition of the rule structures. The remaining tables are shared with the account structure definition.
 
-[![Query results for the combined structure, rule, and all constraints](./media/CombinesStructureRuleandAllConstraintsSQL.png)](./media/CombinesStructureRuleandAllConstraintsSQL.png)
+[![Query results for the combined structure, rule, and all constraints.](./media/CombinesStructureRuleandAllConstraintsSQL.png)](./media/CombinesStructureRuleandAllConstraintsSQL.png)
 
 ## Part 5: Ledger dimensions
 
 This part of the topic covers the "Ledger Dimensions" region that is highlighted in yellow in the following illustration.
 
-[![Ledger dimension storage in framework](./media/LedgerDimensionStorageInFramework.png)](./media/LedgerDimensionStorageInFramework.png)
+[![Ledger dimension storage in framework.](./media/LedgerDimensionStorageInFramework.png)](./media/LedgerDimensionStorageInFramework.png)
 
 After all the configuration data is set up, ledger account combinations can be entered, validated, and persisted. The primary consumption of the dimension framework occurs when the application uses this area.
 
@@ -230,27 +230,27 @@ To understand ledger dimensions, you must understand how users enter ledger acco
 
 This section uses the account structure and rule setup from [part 4](#part-4-advanced-rules) of this topic, and explains the user interaction with the account entry control when an account is entered. Here is the account structure, as a reminder.
 
-![Basic structure and constraints got My Account Structure](./media/BasicStructureAndConstraintForm.png)
+![Basic structure and constraints got My Account Structure.](./media/BasicStructureAndConstraintForm.png)
 
 A single account rule is associated with the account structure.
 
-[![Single rule added](./media/SingleRuleAdded.png)](./media/SingleRuleAdded.png)
+[![Single rule added.](./media/SingleRuleAdded.png)](./media/SingleRuleAdded.png)
 
 The following illustration shows the structure that was added.
 
-[![Single structure added](./media/SingleStructureAdded.png)](./media/SingleStructureAdded.png)
+[![Single structure added.](./media/SingleStructureAdded.png)](./media/SingleStructureAdded.png)
 
 The following illustration shows what a ledger account field looks like when a user first sees it on a page, and it doesn't have the focus.
 
-[![Empty ledger account field (without focus)](./media/EmptyLedgerAccountField.png)](./media/EmptyLedgerAccountField.png)
+[![Empty ledger account field (without focus).](./media/EmptyLedgerAccountField.png)](./media/EmptyLedgerAccountField.png)
 
 When the user clicks in the field, nothing changes. However, if the user selects the drop-down arrow, the lookup appears and shows the possible segments. In the following illustration, there are two possible segments.
 
-[![In-edit ledger account field with lookup](./media/InEditLedgerAccountFieldWithLookup.png)](./media/InEditLedgerAccountFieldWithLookup.png)
+[![In-edit ledger account field with lookup.](./media/InEditLedgerAccountFieldWithLookup.png)](./media/InEditLedgerAccountFieldWithLookup.png)
 
 For this example, the user enters the combination **150-A**.
 
-![Completed ledger account field with value 150-A](./media/CompletedLedgerAccountField.png)
+![Completed ledger account field with value 150-A.](./media/CompletedLedgerAccountField.png)
 
 As soon as the second segment is entered, and the user presses **Tab** to move out of the control, the dimension framework saves the combination and then validates it, based on the constraints. In this example, the combination is valid. The user can enter segments either as a string or by using the lookup.
 
@@ -263,7 +263,7 @@ For this example, the following information is known about the combination:
 
 Therefore, the two segment values are stored across the four tables, as shown in the following illustration.
 
-![Query results for ledger dimension storage across four tables](./media/LedgerDimensionStorageSQL.png)]
+![Query results for ledger dimension storage across four tables.](./media/LedgerDimensionStorageSQL.png)]
 
 The first table is named **DimensionAttributeValueCombination**. It stores a full multisegment account combination, together with some denormalized information about the combination. For example, it stores the concatenated segments as a single string, a foreign key reference to the account structure, and a foreign key to the main account that was used (150).
 
@@ -281,19 +281,19 @@ To save a single segment in a new combination, at least one record is inserted i
 
 This section builds on the ledger dimension storage example that was started in the previous section. Here, the user changes the values from **150-A** to **145-Q**. As you know from the advanced rules that were previously set up, this change will cause a third segment to be added to the account structure.
 
-[![In-edit ledger account segment (before Tab is pressed)](./media/LedgerAccountSegmentBeforeTab.png)](./media/LedgerAccountSegmentBeforeTab.png)
+[![In-edit ledger account segment (before Tab is pressed).](./media/LedgerAccountSegmentBeforeTab.png)](./media/LedgerAccountSegmentBeforeTab.png)
 
 When the user types a hyphen (–) after the second segment, a third segment is added to the control, and it receives the focus.
 
-[![In-edit ledger account segment (after Tab is pressed)](./media/LedgerAccountSegmentAfterTab.png)](./media/LedgerAccountSegmentAfterTab.png)
+[![In-edit ledger account segment (after Tab is pressed).](./media/LedgerAccountSegmentAfterTab.png)](./media/LedgerAccountSegmentAfterTab.png)
 
 If the user opens the lookup while the third segment has the focus, the possible valid values for the third segment are shown.
 
-[![Lookup while the focus is in the new segment](./media/LookupInSegment.png)](./media/LookupInSegment.png)
+[![Lookup while the focus is in the new segment.](./media/LookupInSegment.png)](./media/LookupInSegment.png)
 
 The user can now enter a license number.
 
-![Completed ledger account field with license number](./media/CompletedLedgerAccountFieldWithAllRules.png)
+![Completed ledger account field with license number.](./media/CompletedLedgerAccountFieldWithAllRules.png)
 
 As soon as a value is entered in the third field, and the user presses **Tab** to move out of the control, the combination is validated. If the combination is valid, it's saved as a Ledger Dimension.
 
@@ -305,7 +305,7 @@ For this example, the following information is known about the new combination:
 - Because the values match the rule for the first two segments, an account rule structure that is named **MyRuleStructure1** was added. Therefore, one additional segment was added.
 - The third segment is the LicensePlate dimension. It has a value of **AAA 111**.
 
-![Query results for ledger dimension storage with value AAA 111](./media/LedgerDimensionValuesStorageSQL.png)]
+![Query results for ledger dimension storage with value AAA 111.](./media/LedgerDimensionValuesStorageSQL.png)]
 
 For this combination, a total of eight rows was inserted across the four tables that store the ledger dimension. The difference between the first ledger account combination that was discussed in the previous post([part 4](#part-4-advanced-rules)) and this ledger account combination is that multiple structures are used to drive the dimensions that make up this ledger account combination. Two records are stored in the DimensionAttributeValueGroupCombination and DimensionAttributeValueGroup tables. Each record represents a structure that is used and joined to the full combination.
 
@@ -315,11 +315,11 @@ Because a new Ledger Dimension is created when a user changes the combination on
 
 When advanced rules are used, optimizations are also made for the storage size and insertion cost. For example, in the following illustration, a new account combination is entered.
 
-[![Changed ledger account field](./media/ChangedLedgerAccountField.png)](./media/ChangedLedgerAccountField.png)
+[![Changed ledger account field.](./media/ChangedLedgerAccountField.png)](./media/ChangedLedgerAccountField.png)
 
 In this case, the only difference between the new combination and the previous combination is that the license plate number that was provided by the advanced rule was changed. The following illustration shows how the data storage of the combination will look. New records are highlighted in white.
 
-[![Query results for additional ledger dimension storage](./media/AdditionalLedgerDimensionStorageQueryResults.png)](./media/AdditionalLedgerDimensionStorageQueryResults.png)
+[![Query results for additional ledger dimension storage.](./media/AdditionalLedgerDimensionStorageQueryResults.png)](./media/AdditionalLedgerDimensionStorageQueryResults.png)
 
 When the new combination is created, the following five records are inserted. (These records are the records that are highlighted in white in the preceding illustration.)
 
@@ -347,7 +347,7 @@ To conclude this topic, this part discusses some advanced topics to explain some
 
 The model in the following illustration shows the various areas in the dimension framework.
 
-[![Overall framework](./media/OverallFramework.png)](./media/OverallFramework.png)
+[![Overall framework.](./media/OverallFramework.png)](./media/OverallFramework.png)
 
 ### Hashes
 

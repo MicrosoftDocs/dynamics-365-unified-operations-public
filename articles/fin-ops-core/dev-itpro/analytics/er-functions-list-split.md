@@ -5,7 +5,6 @@ title: SPLIT ER function
 description: This topic provides information about how the SPLIT Electronic reporting (ER) function is used.
 author: NickSelin
 ms.date: 04/01/2021
-ms.topic: article
 ms.prod: 
 ms.technology: 
 

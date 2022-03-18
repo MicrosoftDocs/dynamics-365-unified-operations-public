@@ -3,9 +3,9 @@
 
 title: Tax engine overview
 description: This topic provides an overview of the Tax engine functionality in Microsoft Dynamics 365 Finance.
-author: yijialuan
+author: kailiang
 ms.date: 12/15/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -14,11 +14,12 @@ ms.technology:
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
+
 ms.search.region: India
 # ms.search.industry: 
-ms.author: riluan
+ms.author: kailiang
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 
@@ -139,7 +140,7 @@ When the tax accounting process affects the Tax sub-ledger, the tax amount must 
 
 The following illustration shows an example of the tax credit pool for India Goods and Services Tax (GST).
 
-![India GST Example](../localizations/media/ind-gst.png)
+![India GST Example.](../localizations/media/ind-gst.png)
 
 When the preceding configuration is used, the tax recoverable amount and the tax payable amount will be accumulated on each tax credit pool.
 

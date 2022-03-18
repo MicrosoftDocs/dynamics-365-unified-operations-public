@@ -3,9 +3,9 @@
 
 title: Requests for quotation (RFQs) overview
 description: This topic provides an overview of requests for quotation (RFQs). Organizations issue RFQs when they want to receive competitive offers from several vendors for the items or services that they must purchase.
-author: kamaybac
+author: Henrikan
 ms.date: 10/05/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,11 +17,11 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 2154
+ms.custom: ["2154", "intro-internal"]
 ms.assetid: 3936996e-d943-46ca-8385-84c042990f1d
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dabourq
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -47,7 +47,7 @@ The RFQ process consists of the following tasks:
 
 The following illustration shows an overview of the RFQ process.
 
-[![RFQ process](./media/rfq-process-458x1024.jpg)](./media/rfq-process.jpg)
+[![RFQ process.](./media/rfq-process-458x1024.jpg)](./media/rfq-process.jpg)
 
 You can create an RFQ case from planned orders, from a purchase requisition, or
 by manual entry. The RFQ case is the base document that you use to issue an RFQ

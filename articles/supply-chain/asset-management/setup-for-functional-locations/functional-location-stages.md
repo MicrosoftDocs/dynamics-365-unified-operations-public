@@ -44,6 +44,7 @@ This topic describes how to set up functional location lifecycle states and life
 5. Select "Yes" on the **Create assets** toggle button if it should be possible to automatically create an asset with the same name as the functional location and install it on the functional location at this state.  
 >[!NOTE]
 >This toggle button relates to the **Asset type** field on the **General** FastTab in the **Functional location types** form (**Asset management** > **Setup** > **Functional locations** > **Functional location types**).
+
 6. Select "Yes" on the **Rename location** toggle button if it should be possible to change the name of the functional location at this state.
 7. Select "Yes" on the **New sub locations** toggle button if it should be possible to add new sub locations to the functional location at this state.
 8. Select "Yes" on the **Install assets** toggle button if it should be possible to install assets on the functional location at this state.
@@ -61,9 +62,9 @@ When you have created the lifecycle states required for your functional location
 1. Select **Asset management** > **Setup** > **Functional locations** > **Lifecycle models**.
 2. Select **New** to create a new lifecycle model.
 3. Insert the lifecycle model ID in the **Lifecycle model** field and a name for the lifecycle model in the **Name** field. In the **Functional location types** and **Lifecycle states** fields, you can see the number of functional location types that uses the lifecycle model and the number of states selected in the lifecycle model.
-4. On the **Lifecycle states** FastTab, select the states that should be included in the model. This is done by clicking on a state in the **Lifecycle states remaining** section and clicking the ![forward arrow](media/02-setup-for-functional-locations.png) button.
-5. If you want to select all the available states for a model, click the ![select all available stages](media/03-setup-for-functional-locations.png) button. All states are transferred to the **Lifecycle states selected** section.
-6. If you want to remove a selected state from the model, select the state in the **Lifecycle states selected** section and then select the ![back arrow](media/04-setup-for-functional-locations.png) button.
+4. On the **Lifecycle states** FastTab, select the states that should be included in the model. This is done by clicking on a state in the **Lifecycle states remaining** section and clicking the ![forward arrow.](media/02-setup-for-functional-locations.png) button.
+5. If you want to select all the available states for a model, click the ![select all available stages.](media/03-setup-for-functional-locations.png) button. All states are transferred to the **Lifecycle states selected** section.
+6. If you want to remove a selected state from the model, select the state in the **Lifecycle states selected** section and then select the ![back arrow.](media/04-setup-for-functional-locations.png) button.
 7. Select **Lifecycle state updates** to define which lifecycle states can follow a selected state.
 
 

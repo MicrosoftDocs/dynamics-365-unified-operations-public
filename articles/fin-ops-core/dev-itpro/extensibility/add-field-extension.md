@@ -12,7 +12,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 268724
 ms.assetid: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 4
 
 To add a new field to an existing table, you must first create a table extension. For example, to add a field that holds the radius of the released product, you must create an extension for the InventTable table in your model, as shown in the following illustration.
 
-![Create an extension](media/TableNewField01.jpg) 
+![Create an extension.](media/TableNewField01.jpg) 
 
 You can now add the field to the extension, just as you would add a field to a table in your model. You can use two methods:
 
@@ -39,15 +39,15 @@ You can now add the field to the extension, just as you would add a field to a t
 
 When you've finished, you can modify the properties of the new field. In the following illustration, only the **Label** property was modified.
 
-![Modify properties of the new field](media/TableNewField02.jpg)
+![Modify properties of the new field.](media/TableNewField02.jpg)
 
 You can now optionally add the new field either to one of the existing field groups or to a new field group that you create. In the following illustration, the **Radius** field was added to the **PhysicalDimensions** field group.
 
-![Add the new field to a field group](media/TableNewField03.jpg)
+![Add the new field to a field group.](media/TableNewField03.jpg)
 
 After compilation and synchronization of the database, you can see and edit the new field in the user interface.
 
-![New field in the user interface](media/TableNewField04.jpg)
+![New field in the user interface.](media/TableNewField04.jpg)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

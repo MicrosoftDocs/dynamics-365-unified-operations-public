@@ -70,7 +70,7 @@ On the **General** tab of the **Electronic reporting parameters** page, set the 
     - Set this option to **No** to allow Microsoft Telemetry to collect information about the average time that is required to process a single incoming or outgoing record as an ER configuration. This information is tracked as a specific health metric of the environment, and it will help Microsoft quickly identify and address issues that affect customers who use the ER framework.
     - Set this option to **Yes** to stop collecting telemetry information.
 
-[![General tab of the Electronic reporting parameters page](./media/er-configure-parameters-main.png)](./media/er-configure-parameters-main.png)
+[![General tab of the Electronic reporting parameters page.](./media/er-configure-parameters-main.png)](./media/er-configure-parameters-main.png)
 
 ## <a name="ManageDocumentsParameters">Parameters to manage documents</a>
 
@@ -88,19 +88,19 @@ On the **Attachments** tab of the **Electronic reporting parameters** page, set 
 
     For more information, see [Backup storage of ER templates](er-backup-storage-templates.md).
 
-[![Attachments tab of the Electronic reporting parameters page](./media/er-configure-parameters-documents.png)](./media/er-configure-parameters-documents.png)
+[![Attachments tab of the Electronic reporting parameters page.](./media/er-configure-parameters-documents.png)](./media/er-configure-parameters-documents.png)
 
 ## LCS parameters
 
 On the **LCS** tab of the **Electronic reporting parameters** page, define the number of parallel threads that should be used to load an ER configuration from repositories in Microsoft Dynamics Lifecycle Services (LCS), so that the configurations are loaded in the most efficient manner. The value can vary from **1** through **15**, depending on the available resources of the current program. Based on this setting and the number of other tasks and their priorities, the real number of threads will be defined automatically.
 
-[![LCS tab of the Electronic reporting parameters page](./media/er-configure-parameters-lcs.png)](./media/er-configure-parameters-lcs.png)
+[![LCS tab of the Electronic reporting parameters page.](./media/er-configure-parameters-lcs.png)](./media/er-configure-parameters-lcs.png)
 
 ## RCS parameters
 
 On the **RCS** tab of the **Electronic reporting parameters** page, sign up for [Configuration service](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
 
-[![RCS tab of the Electronic reporting parameters page](./media/er-configure-parameters-rcs.png)](./media/er-configure-parameters-rcs.png)
+[![RCS tab of the Electronic reporting parameters page.](./media/er-configure-parameters-rcs.png)](./media/er-configure-parameters-rcs.png)
 
 ## Active ER configurations provider
 

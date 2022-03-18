@@ -27,6 +27,9 @@ ms.dyn365.ops.version: Platform update 42
 
 # Reset stuck batch jobs
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 ## Issue
@@ -50,7 +53,7 @@ When a batch job is stuck in an **Executing** or **Canceling** state, you can re
 
 5. On the **Select new status** page, select **Waiting**, and then select **OK**.
 
-   ![Select a new batch job status](./media/hr-admin-reset-batch-job-status.png)
+   ![Select a new batch job status.](./media/hr-admin-reset-batch-job-status.png)
 
 ## See also
 

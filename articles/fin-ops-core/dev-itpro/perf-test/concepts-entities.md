@@ -1,7 +1,7 @@
 ---
 
 title: Entities in the Acceptance test library
-description: This topics discusses the test entity class that represents data and associated behavior.
+description: This topic discusses the test entity class that represents data and associated behavior.
 author: MichaelFruergaardPontoppidan
 ms.date: 03/27/2019
 ms.topic: article
@@ -12,7 +12,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 

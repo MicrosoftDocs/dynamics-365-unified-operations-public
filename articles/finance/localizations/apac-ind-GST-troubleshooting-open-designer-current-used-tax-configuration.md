@@ -7,7 +7,7 @@ author: yungu
 ms.date: 05/06/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+
 ms.technology: 
 
 # optional metadata
@@ -37,26 +37,26 @@ This topic explains how to open the designer for the tax configuration that is c
 1. Go to **Tax** \> **Setup** \> **Tax configuration** \> **Tax setup**.
 2. On the **Companies** FastTab, select the related company, and then select **Setup**.
 
-    [![Setup button on the Companies FastTab of the Tax setup page](./media/open-designer-configuration-Picture1.png)](./media/open-designer-configuration-Picture1.png)
+    [![Setup button on the Companies FastTab of the Tax setup page.](./media/open-designer-configuration-Picture1.png)](./media/open-designer-configuration-Picture1.png)
 
 3. Make a note of the configuration version that is shown in the tree. You will need this information later.
 
-    [![Configuration version in the tree](./media/open-designer-configuration-Picture2.png)](./media/open-designer-configuration-Picture2.png)
+    [![Configuration version in the tree.](./media/open-designer-configuration-Picture2.png)](./media/open-designer-configuration-Picture2.png)
 
 ## Open the designer for the currently used tax configuration
 
 1. Go to **Workspaces** \> **Electronic reporting** \> **Tax configurations**.
 2. Expand the **Taxable Document** node, and then expand **Taxable Document (India)** \> **Tax (India GST)**.
 
-    [![Expanded Taxable Document node on the Configurations page](./media/open-designer-configuration-Picture3.png)](./media/open-designer-configuration-Picture3.png)
+    [![Expanded Taxable Document node on the Configurations page.](./media/open-designer-configuration-Picture3.png)](./media/open-designer-configuration-Picture3.png)
 
 3. Select the tax configuration version that you made a note of earlier.
 
-    [![Current tax configuration selected on the Configurations page](./media/open-designer-configuration-Picture4.png)](./media/open-designer-configuration-Picture4.png)
+    [![Current tax configuration selected on the Configurations page.](./media/open-designer-configuration-Picture4.png)](./media/open-designer-configuration-Picture4.png)
 
 4. Select **Designer**.
 
-    [![Designer button on the Configurations page](./media/open-designer-configuration-Picture5.png)](./media/open-designer-configuration-Picture5.png)
+    [![Designer button on the Configurations page.](./media/open-designer-configuration-Picture5.png)](./media/open-designer-configuration-Picture5.png)
 
 ## Determine whether customization exists
 

@@ -5,7 +5,7 @@ title: Maintenance requests
 description: This topic provides an overview about managing maintenance requests in Asset Management
 author: johanhoffmann
 ms.date: 10/01/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 
+
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -45,7 +45,7 @@ Maintenance requests can be created for any asset in Asset Management. Various t
 
 To view maintenance requests, select **Asset management** \> **Common** \> **Maintenance requests** \> **All maintenance requests**, **Active maintenance requests**, or **My functional location maintenance requests**. Each list page shows some of the information that is related to a maintenance request.
 
-![View maintenance requests](media/01-manage-maintenance-requests.png)
+![View maintenance requests.](media/01-manage-maintenance-requests.png)
 
 > [!NOTE]
 > Use the **My functional location maintenance requests** list page to view a list of maintenance requests that contain either functional locations that you're related to as a worker or assets that are installed on functional locations that you're related to as a worker. (For information about how to set up functional locations on maintenance workers, see [Maintenance workers and worker groups](../setup-for-objects/workers-and-worker-groups.md).)
@@ -54,7 +54,7 @@ To view maintenance requests, select **Asset management** \> **Common** \> **Mai
 
 To open the details view of a record, on the **All maintenance requests** list page, in the grid view, select a link in the **Maintenance request** column.
 
-![View details of maintenance request](media/02-manage-maintenance-requests.png)
+![View details of maintenance request.](media/02-manage-maintenance-requests.png)
 
 The buttons on the Action Pane are organized on tabs. The following table briefly describes the buttons that are related to Asset Management.
 

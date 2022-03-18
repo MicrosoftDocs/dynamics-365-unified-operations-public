@@ -41,7 +41,7 @@ To open the **Environment Monitoring** dashboard, follow the steps listed below:
 
 On the Environment Monitoring dashboard, you will see two tabs: **Overview** and **Activity**.
 
-[![Diagnose Issues](./media/DiagnoseIssues.jpg)](./media/DiagnoseIssues.jpg)
+[![Diagnose Issues.](./media/DiagnoseIssues.jpg)](./media/DiagnoseIssues.jpg)
 
 ## Overview tab
 

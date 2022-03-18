@@ -3,7 +3,7 @@
 
 title: Purchasing cXML Enhancements
 description: The Purchasing cXML Enhancements feature builds on the existing external catalog functionality, PunchOut, that is used for purchase requisitions.
-author: dasani-madipalli
+author: Henrikan
 ms.date: 08/03/2020
 ms.topic: article
 ms.prod: 
@@ -19,9 +19,9 @@ ms.reviewer: kamaybac
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: damadipa
+ms.author: henrikan
 ms.search.validFrom: 2020-08-03
-ms.dyn365.ops.version: Release 10.0.13
+ms.dyn365.ops.version: 10.0.13
 ---
 
 # Purchasing cXML Enhancements
@@ -32,7 +32,7 @@ The _Purchasing cXML Enhancements_ feature builds on the [existing external cata
 
 ## Turn on the Purchasing cXML Enhancements feature
 
-To turn on the feature, open the **[Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** page, and search for the feature that is named *Purchasing cXML Enhancements*. Select the feature, and then select **Enable now** to turn it on.
+To turn on the feature, open the **[Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** page, and search for the feature that is named *Purchasing cXML Enhancements*. Select the feature, and then select **Enable now** to turn it on. (As of Supply Chain Management version 10.0.21, this feature is turned on by default.)
 
 After you turn on the feature, you should configure settings in the following three areas:
 
@@ -42,7 +42,7 @@ After you turn on the feature, you should configure settings in the following th
 
 The following illustration summarizes this configuration.
 
-![Areas for setting up cXML features](media/cxml-settings-areas.png "Areas for setting up cXML features")
+![Areas for setting up cXML features.](media/cxml-settings-areas.png "Areas for setting up cXML features")
 
 In addition, you must set up the [Purchase order request batch job](#po-batch). This batch job is used to send the confirmed purchase orders.
 
@@ -50,7 +50,7 @@ In addition, you must set up the [Purchase order request batch job](#po-batch). 
 
 Use the **cXML parameters** page to make a few global settings that apply to the functionality for sending purchase orders.
 
-![cXML parameters page](media/cxml-parameters.png "cXML parameters page")
+![cXML parameters page.](media/cxml-parameters.png "cXML parameters page")
 
 Go to **Procurement and sourcing \> Setup \> cXML management \> cXML parameters**, and set the following parameters:
 
@@ -71,7 +71,7 @@ Every time that you confirm a purchase order where the **Send purchase order via
 - To set up a vendor so that it automatically uses cXML for all new purchase orders that are created from a requisition, go to **Procurement and sourcing \> Vendors \> All vendors**, and select or create a vendor to open its details page. Then, on the **Purchase order defaults** FastTab, set the **Send purchase order via cXML** option to _Yes_. If cXML should also automatically be used for new purchase orders that are **not** created from a requisition, you must also set the **ENABLEMANUALPO** order property to _True_ for the related external catalog, as described in the [Set the order properties](#set-order-properties) section later in this topic.
 - For individual purchase orders, go to **Procurement and sourcing \> Purchase orders \> All purchase orders**, and select or create a purchase order to open its details page. Switch to the **Header** view, and then, on the **Setup** FastTab, set the **Send purchase order via cXML** option as required.
 
-![Default settings for vendor purchase orders](media/cxml-order-defaults.png "Default settings for vendor purchase orders")
+![Default settings for vendor purchase orders.](media/cxml-order-defaults.png "Default settings for vendor purchase orders")
 
 ## <a name="external-catalog-setup"></a>Set up an external catalog to use cXML
 
@@ -80,7 +80,7 @@ On the **External catalogs** page, for each of your catalogs, you can set up the
 > [!NOTE]
 > When you confirm a purchase order that can be sent via cXML, the system looks up the vendor that is associated with the purchase order and then finds the first active external catalog that is associated with that vendor. The system then uses the settings from that external catalog to send the purchase order. If multiple external catalogs are set up, the system uses only the first external catalog that it finds, based on the vendor on the purchase order. Therefore, we recommend that you create just one external catalog for each vendor.
 
-![External catalog settings](media/cxml-supplier-catalog.png "External catalog settings")
+![External catalog settings.](media/cxml-supplier-catalog.png "External catalog settings")
 
 ### Set the PunchOut protocol type
 
@@ -145,13 +145,13 @@ When you've finished setting up all the properties and configuring other setting
 
 As was mentioned in the [Set the order properties](#set-order-properties) section, if you want your delivered cXML to include text from notes that are attached to the relevant purchase order and/or vendor records, you can set the **POCOMMENTS** and/or **VENDCOMMENTS** property to _TRUE_ in the external catalog setup. This section provides more detail about how the system selects and processes these attachments, if you use them.
 
-To set the types of notes that the system will look for, go to **Procurement and sourcing \> Setup \> Forms \> From setup**. Then, on the **Purchase order** tab, set the **Include documents of type** field to the type of note that you want to be able to include. Only text notes will be included, not document attachments.
+To set the types of notes that the system will look for, go to **Procurement and sourcing \> Setup \> Forms \> Form setup**. Then, on the **Purchase order** tab, set the **Include documents of type** field to the type of note that you want to be able to include. Only text notes will be included, not document attachments.
 
-![Form setup page](media/cxml-form-setup.png "Form setup page")
+![Form setup page.](media/cxml-form-setup.png "Form setup page")
 
 Attachments will be included with a purchase order only if their **Type** field is set to the value that you select in the **Include documents of type** field, and if their **Restriction** field is set to _External_. To create, view, or edit the attachments for a purchase order, go to **Procurement and sourcing \> All purchase orders**, select or create a purchase order, and then select the **Attachments** button (paperclip symbol) in the upper-right corner.
 
-![Attached note that is set up to be sent to a vendor](media/cxml-note-to-vendor.png "Attached note that is set up to be sent to a vendor")
+![Attached note that is set up to be sent to a vendor.](media/cxml-note-to-vendor.png "Attached note that is set up to be sent to a vendor")
 
 ## <a name="message-log"></a>View the cXML cart message log for external catalog PunchOut
 
@@ -159,7 +159,7 @@ When you set the **Punchout protocol type** field to _cXML_ for an external cata
 
 To open the log for an external catalog, select the relevant catalog, and then, on the Action Pane, select **cXML cart message log**. The **cXML cart message log** page shows a list of the carts that have been returned, the XML that is related to those carts, and the lines that were created on the related purchase requisition.
 
-![cXML cart message log page](media/cxml-cart-message-log.png "cXML cart message log page")
+![cXML cart message log page.](media/cxml-cart-message-log.png "cXML cart message log page")
 
 ## Set the extrinsic elements for external catalog PunchOut
 
@@ -182,21 +182,21 @@ To add extrinsic elements to an external catalog, follow these steps.
         - **Lastname** – Use the last name of the contact person who is associated with the user who is accessing the external catalog.
         - **Phone number** – Use the primary phone number of the contact person who is associated with the user who is accessing the external catalog.
 
-![Extrinsic element settings](media/cxml-extrinsics.png "Extrinsic element settings")
+![Extrinsic element settings.](media/cxml-extrinsics.png "Extrinsic element settings")
 
 The user or admin won't see the extrinsic elements, because they aren't added until the user does a PunchOut. They will automatically be inserted between the **BuyerCookie** and **BrowserFromPost** elements in the cXML setup request message. Therefore, you don't have to set them manually in the XML when you set up the external catalog.
 
-![Extrinsic elements added to the XML](media/cxml-extrinsics-xml.png "Extrinsic elements added to the XML")
+![Extrinsic elements added to the XML.](media/cxml-extrinsics-xml.png "Extrinsic elements added to the XML")
 
 ## <a name="create-po"></a>Create and process a purchase order
 
 When you create a purchase order for a vendor, it will inherit the setting of the **Send purchase order via cXML** option from that vendor. However, the setting remains available on the **Setup** FastTab in the **Header** view of the purchase order, so that you can change it later as required.
 
-![Purchase order set to use cXML](media/cxml-purchase-order.png "Purchase order set to use cXML")
+![Purchase order set to use cXML.](media/cxml-purchase-order.png "Purchase order set to use cXML")
 
 When you create a purchase order from a purchase requisition that came from a PunchOut flow, all the required line details will be filled in. You can then manually add purchase order lines or copy them from other purchase orders. Be sure to set all required fields. These required fields include the external reference number, which is the vendor number that will be used in the cXML message.
 
-![Example of an external reference number](media/cxml-line-details.png "Example of an external reference number")
+![Example of an external reference number.](media/cxml-line-details.png "Example of an external reference number")
 
 When you've finished filling in all the details for the purchase order, be sure to confirm it. No message is sent unless the purchase order is confirmed. To confirm a purchase order, on the Action Pane, on the **Purchase** tab, in the **Actions** group, select **Confirm**. 
 
@@ -204,17 +204,17 @@ After the purchase order is confirmed, you can view the status of the confirmati
 
 Each purchase order can have many confirmations. Each confirmation is marked with an incremental number. In the following illustration, the purchase order is *00000275*, and the confirmation is *00000275-1*. This numbering reflects standard Supply Chain Management functionality, where changes in a purchase order, and therefore the type of cXML message that should be sent to the vendor, are identified based on the confirmation. As the illustration shows, the **Purchase order confirmations** page also includes **Order send status** and **Order request vendor status** fields. For more information about the various status values that you might see on this page, see the [Monitor purchase order requests](#monitor-po-requests) section later in this topic.
 
-![Purchase order confirmations page](media/cxml-po-confirmations.png "Purchase order confirmations page")
+![Purchase order confirmations page.](media/cxml-po-confirmations.png "Purchase order confirmations page")
 
 To view more information about the document, select **Purchase order request** above the grid.
 
 The **Purchase order request** page includes two grids. The grid in the upper part of the page has one record for each purchase order that is marked for sending. The grid on the **Purchase order request history** tab in the lower part of the page might have several records for the selected purchase order, to indicate the status of each confirmation. The following illustration shows purchase order 00000275 in the upper grid and document 00000275-1 in the grid on the **Purchase order request history** tab.
 
-![Purchase order request page](media/cxml-po-request.png "Purchase order request page")
+![Purchase order request page.](media/cxml-po-request.png "Purchase order request page")
 
 If the batch job is set up and running, the document will be sent. You can view the status change after the document has been sent. In the following illustration, the **Order send status** field is set to _Sent_. The **Order request vendor status** field is set to _Acknowledged_ to indicate that the vendor received the document, and was able to read it and store it in its system. The grid on the **Purchase order request history** tab shows the time when the document was sent. For more information about the various status values that you might see on this page, see the [Monitor purchase order requests](#monitor-po-requests) section.
 
-![Status messages on the Purchase order request page](media/cxml-po-request-2.png "Status messages on the Purchase order request page")
+![Status messages on the Purchase order request page.](media/cxml-po-request-2.png "Status messages on the Purchase order request page")
 
 ## <a name="po-batch"></a>Schedule the Purchase order request batch job
 
@@ -230,7 +230,7 @@ The process will look for purchase order request documents that have a status of
 
 When orders that can be sent via cXML are confirmed, they go into _Waiting_ status. As was described in the [Create and process a purchase order](#create-po) section, you can view the purchase order status on the **Purchase order request** page. Each purchase order request can have one of several statuses, depending on its parameters and data. This section describes the various status types and the values that they can have. This information can help you manage issues and understand the status of your purchase orders.
 
-![Purchase order status on the Purchase order request page](media/cxml-monitor-po-request.png "Purchase order status on the Purchase order request page")
+![Purchase order status on the Purchase order request page.](media/cxml-monitor-po-request.png "Purchase order status on the Purchase order request page")
 
 The grid in the upper part of the **Purchase order request** page might show the following status values:
 
@@ -266,13 +266,13 @@ The grid on the **Purchase order request history** tab in the lower part of the 
 
 To view the XML for the purchase order request message, select the **Request XML text** tab at the bottom of the **Purchase order request** page. The information on this tab can be helpful during testing or error validation. To make the information easier to read, you can view it as a formatted message. Copy the contents of the tab to a text file, and then view it in an XML editor.
 
-![Request XML text tab](media/cxml-request-xml-text.png "Request XML text tab")
+![Request XML text tab.](media/cxml-request-xml-text.png "Request XML text tab")
 
 ### View the details of the vendor response
 
 To view the content of a vendor acknowledgment or error response, select the **Response XML** tab at the bottom of the **Purchase order request** page.
 
-![Response XML tab](media/cxml-response-xml.png "Response XML tab")
+![Response XML tab.](media/cxml-response-xml.png "Response XML tab")
 
 ## Additional resources
 

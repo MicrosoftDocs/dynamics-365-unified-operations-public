@@ -50,7 +50,7 @@ The following table lists the typical tasks that are completed to set up sales t
 
 You can create reporting codes that might be required for analysis (for example, details of legislation return and/or data disclosure). The following illustration shows examples of reporting codes.
 
-![Examples of sales tax reporting codes](media/apac-sau-sales-tax-reporting-codes.png)
+![Examples of sales tax reporting codes.](media/apac-sau-sales-tax-reporting-codes.png)
 
 ### Sales tax codes, sales tax groups, and item sales tax groups
 
@@ -60,7 +60,7 @@ The same sales tax code might be included in two groups (a sales tax group and a
 
 The following illustration shows one way that sales tax groups can be set up. It also shows how sales tax transactions and sales tax calculation are defined when that setup is used.
 
-![Sales tax group setup](media/apac-sau-sales-tax-groups-diagram.png)
+![Sales tax group setup.](media/apac-sau-sales-tax-groups-diagram.png)
 
 For each sales tax code, enter the following information:
 
@@ -88,7 +88,7 @@ When you print an invoice, if your language differs from the language that is sp
 
 The following illustration shows how data can be collected on the **Sales tax payment by code** report. This report includes only invoices that have tax transactions. The same reporting code can be selected in several sales tax codes, and several reporting codes can be selected in different fields in the same sales tax code.
 
-![Sales tax payment by reporting code](media/apac-sau-sales-tax-diagram.png)
+![Sales tax payment by reporting code.](media/apac-sau-sales-tax-diagram.png)
 
 ### Report setup
 
@@ -102,7 +102,7 @@ Consider the following information before you generate the **Sales tax payment b
 
     The following illustration shows an example of the setup of reporting codes for a sales tax code.
 
-    ![Example of sales tax reporting codes](media/apac-sau-sales-tax-codes.png)
+    ![Example of sales tax reporting codes.](media/apac-sau-sales-tax-codes.png)
 
 ### Generate the Sales tax payment by code report
 
@@ -113,7 +113,7 @@ To generate the **Sales tax payment by code** report, follow these steps.
 
 The following illustration shows an example of the **Sales tax payment by code** report.
 
-![Example of the Sales tax payment by code report](media/apac-sau-report-example.png)
+![Example of the Sales tax payment by code report.](media/apac-sau-report-example.png)
 
 ## Additional resources
 

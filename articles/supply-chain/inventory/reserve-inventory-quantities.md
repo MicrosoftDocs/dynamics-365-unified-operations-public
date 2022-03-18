@@ -3,7 +3,7 @@
 
 title: Reserve inventory quantities
 description: This topic describes the different options that are available for reserving inventory.
-author: perlynne
+author: yufeihuang
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod:
@@ -21,7 +21,7 @@ ms.custom: 207264
 ms.assetid: 47537e4f-cdf6-4813-96fd-c945b2dfe9d4
 ms.search.region: Global
 # ms.search.industry:
-ms.author: perlynne
+ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

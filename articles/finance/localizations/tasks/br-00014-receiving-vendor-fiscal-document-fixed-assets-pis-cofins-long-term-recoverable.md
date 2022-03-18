@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Receive vendor fiscal documents (fixed assets - PIS and COFINS long term recoverable) (Brazil)
-description: You can post a fiscal document that you receive from the acquisition of fixed assets. 
+description: This topic explains how to post a fiscal document received from the acquisition of fixed assets and then recover the PIS and COFINS taxes. 
 author: sndray
 ms.date: 06/24/2017
 ms.topic: business-process 

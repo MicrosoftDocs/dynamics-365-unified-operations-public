@@ -45,7 +45,7 @@ Here are some of the benefits of using data packages instead of a database to de
 
 The demo data packages are designed to be layered on top of each other, as shown in the following illustration.
 
-![Demo data packages](./media/demodatapackages_layers.png)
+![Demo data packages.](./media/demodatapackages_layers.png)
 
 However, the global information for one demo scenario might have completely different requirements than the global information for another demo scenario. For example, the dimensions for one scenario will interfere with the dimensions for another scenario. In this case, a separate global information package will be created, and only packages that are related to that global information can be layered on top of the package.
 

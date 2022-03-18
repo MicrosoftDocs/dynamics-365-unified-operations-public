@@ -3,7 +3,7 @@
  
 title: Create a consignment replenishment order
 description: This topic explains how to create a consignment replenishment order where you can track the expected delivery from a vendor into your consignment inventory. 
-author: sherry-zheng
+author: yufeihuang
 ms.date: 08/19/2019
 ms.topic: business-process 
 ms.prod:  
@@ -19,9 +19,9 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: chuzheng
+ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Create a consignment replenishment order
 

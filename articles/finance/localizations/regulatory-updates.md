@@ -3,8 +3,8 @@
 
 title: Regulatory updates
 description: This topic provides a list of planned and released regulatory updates for Microsoft Dynamics 365 Finance.
-author: ShylaThompson
-ms.date: 02/04/2021
+author: VStamberg
+ms.date: 01/20/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: vastrup
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10.0
 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0
 
 This topic lists the regulatory updates that are planned and released in Dynamics 365 Finance supported localizations. Delivery timelines might change, and projected functionality might be different or might not be released. For more information, see [Microsoft policy](https://go.microsoft.com/fwlink/p/?linkid=2007332). 
 
-Regulatory updates are features that are implemented to support new or changed country-specific legislation. For additional information about planned and released country-specific features, refer to the [Dynamics 365 and Power Platform release plans](/business-applications-release-notes/index).
+Regulatory updates are features that are implemented to support new or changed country-specific legislation. For more information about planned and released country-specific features, see [Dynamics 365 and Power Platform release plans](/business-applications-release-notes/index).
 
 Microsoft strives to implement new regulatory requirements as early as possible. The actual delivery date depends on the law announcement date, availability of the requirement details from the local authorities, the availability of the validation tools, and on the size and complexity of the change.
 
@@ -45,56 +45,41 @@ For the latest regulatory update plans, refer to the following table.
 
 |Country|Release date|Release version|Regulatory update|
 |--------------------|---------------|-------|-------| 
-|      Brazil         |   May 2021, December 2020      | 10.0.20, 10.0.19, 10.0.17      |   NF-e NT2020.006  - Identification of the digital platform intermediary (Layout and validation rules updates)   |
-|      Brazil         |   March 2021         | 10.0.19         |    SPED REINF layout 1.5.1  |
-|      Brazil         |   February 2021         | 10.0.18         |    SPED Fiscal 015 - RS rules |
-|      Brazil         |   March 2021         | 10.0.17 HF       |    NFS-e Brazilian service (city) electronic invoice  |
-|      Brazil         |   April 2021         | 10.0.20        |    SPED ECD Layout 9  |
-|      Brazil         |   May 2021         | 10.0.20         |    SPED Contributions - Version Guide 1.34  |
-|      Egypt         |   February 2021         | 10.0.17         |    VAT return form and reports  |
-|      Egypt        |   February 2021         | 10.0.17         |    Invoice layout configuration  |
-|      Egypt         |   February 2021         | 10.0.17         |    Withholding declaration form 41  |
-|      Egypt         |   February 2021         | 10.0.17         |    Withholding declaration form 11  |
-|      Egypt         |   February 2021         | 10.0.17         |    References to original invoices in creditnotes  |
-|      Europe        |   January 2021       | 10.0.17      |   Brexit - Northern Ireland Protocol impact to Intra-community trade reporting in EU countries  |
-|      France        |   March 2021       | 10.0.18      |   Retail - Certified POS system update - Dynamics 365 Commerce  |
-|      France        |   April 2021       | 10.0.20      |   French data archiving export (FEC) enhancement  |
-|      Germany        |   January 2021       | 10.0.17      |   Changes in ELSTER VAT advance notification XML structure (UstVA)  |
-|      Germany        |   March 2021       | 10.0.19      |   GDPDU extensions for Fixed Assets table and transactions  |
-|      Germany        |   April 2021       | 10.0.20HF      |   Changes in E-invoicing format (xRechnung) in Germany since 2021  |
-|      Global        |   January 2021       | 10.0.17      |   Withholding tax on line level  |
-|      Global        |   January 2021       | 10.0.17      |   Withholding tax payment  |
-|      Global        |   January 2021       | 10.0.17      |   Withholding tax in sales orders  |
-|      Global        |   January 2021       | 10.0.17      |   Withholding tax threshold on invoice amount  |
-|      Global        |   January 2021       | 10.0.17      |   Validation of invoice date issue after packing slip posted made available for all countries  |
-|      Hungary        |   February 2021       | 10.0.17HF, 10.0.18      |   Online invoicing system v.3.0  |
-|      India         |   February 2021      | 10.0.17HF, 10.0.18      |   GST e-invoices: eWay Bill information  |
-|      India         |   March 2021      | 10.0.17HF, 10.0.18HF, 10.0.19      |   GST e-invoices: Export orders, Deemed export, SEZ  |
-|      India         |   March 2021      | 10.0.17HF, 10.0.18HF, 10.0.19      |   Dynamics QR Code on B2C invoice  |
-|      Italy         |   March 2021      | 10.0.19      |   Invoices communication (Esterometro) format changes v.2.1.1  |
-|      Italy        |   May 2021      | 10.0.17HF, 10.0.18HF, 10.0.19      |   Retail - Fiscal printer integration sample update to support XML RT 2.0  |
-|      Italy         |   March 2021      | 10.0.19      |   Retail - Enable retail-specific invoices violiting chronological posting  |
-|      Italy         |   February 2021      | 10.0.19      |   Unique certification - 2021  |
-|      Latvia         |   December 2020      | 10.0.17      |   Intrastat format is updated starting from 2021  |
-|      Lithuania         |   March 2021      | 10.0.18      |   SAF-T report version 2.01  |
-|      Mexico         |   December 2020      | 10.0.17      |   Attribute "Monto" Update |
-|      Netherlands         |   December 2020      | 10.0.17     |   New version of Dutch taxonomy NT15 |
-|      Poland          |   January 2021     | 10.0.17     |   Poland: JPK_KR (SAF Accounting books) clarifications, effective from January 2021 |
-|      Russia          |   January 2021     | 10.0.17    |   A new format of the property tax declaration (technical version 5.07 instead of 5.06) for the 2020 reporting|
-|      Russia          |   March 2021     | 10.0.19    |   The 2020 property tax declaration will have to indicate the average annual value of movable fixed assets|
-|      Russia          |   March 2021     | 10.0.19HF    |   Profit tax declaration version 5.09 for 2020 reporting|
-|      Russia          |   March 2021     | 10.0.19    |   Government decree N 2200 21.12.2020 application 4 new forma for transport invoice is required|
-|      Spain          |   November 2020     | 10.0.17    |   SII update validation and errors v.2.1(bis) from January 1, 2021|
-|      Thailand          |   February 2021     | 10.0.17HF    |   Withholding form Por Ngor Dor 53, 3 and 2 |
-|      United Arab Emirates   |   May 2021     | 10.0.20    |   Posting payment journal with postdated checks to bank account |
-|      United Kingdom         |   December 2020     | 10.0.17    |   Company tax registration in customer invoices (Brexit - Northern Ireland Protocol)|
-|      United Kingdom          |   December 2020     | 10.0.17    |   Brexit - Northern Ireland Protocol impact on companies trading goods in both GB and NI locations|
-|      United Kingdom          |   March 2021     | 10.0.18    |   MTD VAT> wording changes in preview printing layout (boxes 2,8,9) 2021|
+|      Austria         |   August 2021      | 10.0.22      |   VAT declaration in XML and preview in Excel   |
+|      Austria         |   September 2021      | 10.0.22HF      |   Intrastat format is updated starting from 2022 - Country of origin and Partner VAT Id become mandatory on dispatches   |
+|      Belgium        |   October 2021      | 10.0.22HF     |   Intrastat transaction codes will change to 2 digits starting from 2022  |
+|      Brazil         |   August 2021      | 10.0.22      |   NF-e NT2020.006  - Identification of the digital platform intermediary (Layout and validation rules updates)   |
+|      Brazil         |   December 2021         | 10.0.22, 10.0.23, 10.0.24         |    SPED Fiscal layout 2022  |
+|      Czech Republic         |   October 2021         | 10.0.23HF         |     Intrastat format is updated starting from 2022 - Country of origin and Partner VAT Id become mandatory on dispatches  |
+|      Denmark         |   December 2021         | 10.0.22HF         |    Intrastat format is updated starting from 2022  |
+|      Estonia         |   December 2021      | 10.0.22HF      |   Intrastat format is updated starting from 2022 - Country of origin and Partner VAT Id become mandatory on dispatches  |
+|      Finland         |   November 2021         | 10.0.22HF         |    Intrastat format is updated starting from 2022.  |
+|      Germany        |   August 2021       | 10.0.22HF      |   Intrastat format INSTAT XML is updated starting from 2022. Intrastat format TXT is not applicable from 01.07.2021  |
+|      Germany        |   October 2021       | 10.0.23      |   VAT declaration in XML and preview in Excel (new design with amounts in tax code currency, working out of the box with reverse charge feature, can be executed in non-DE legal entities, and can collect tax transaction from several legal entities)  |
+|      Italy         |   November 2021         | 10.0.22HF, 10.0.23HF, 10.0.24         |    Electronic invoicing for cross-border transactions  |
+|      Mexico         |   November 2021      | 10.0.22      |   Carta de Porte complement in CFDI documents   |
+|      Mexico         |   December 2021      | 10.0.24      |   Carta de Porte complement version 2.0  |
+|      Netherlands        |   October 2021      | 10.0.22HF      |   2-digit transaction codes in Intrastat file format from 2022  |
+|      New Zealand         |   August 2021      | 10.0.22    |   GST declaration form GST101A  |
+|      Norway        |   November 2021      | 10.0.24      |   VAT declaration format 2022 with direct submission - Dynamics 365 Finance |
+|      Oman         |   August 2021      | 10.0.22      |   VAT declaration - Version 1 |
+|      Poland          |   October 2021     | 10.0.23, 10.0.24     |   JPK_V7M - new schema version from January 2022 |
+|      Poland          |   November 2021     | 10.0.24HF     |   Annual report on the payment dates in commercial transactions |
+|      Poland          |   October 2021     | 10.0.24     |   Electronic format of EU sales list (VAT-UE) |
+|      Russia          |   October 2021     | 10.0.22HF, 10.0.23, 10.0.24    |   Changes in sales, purchase books and facture journals|
+|      Russia          |   October 2021     | 10.0.24HF    |   Change in formats of VAT declaration with appendixes|
+|      Russia          |   November 2021     | 10.0.24    |   Federal Accounting Standards 6/2020 (Fixed assets)|
+|      Saudi Arabia          |   November 2021     | 10.0.22HF, 10.0.23    |   Electronic invoicing generation in Saudi Arabia - Phase 1|
+|      Saudi Arabia          |   November 2021     | 10.0.22HF, 10.0.23HF, 10.0.24    |   Retail - Electronic invoicing in Saudi Arabia - Phase 1|
+|      Spain          |   October 2021     | 10.0.23    |    VAT declaration model 303 in txt and preview in Excel|
+|      Spain          |   September 2021     | 10.0.22    |    Intrastat format will be updated for 2022 reporting - Partner VAT ID and Country of origin will be mandatory on dispatches|
+|      Sweden          |   October 2021     | 10.0.22HF    |    Intrastat format is updated starting from 2022 - Country of origin and Partner VAT Id become mandatory on dispatches. 2-digit transaction codes will be used.|
+|      United Kingdom          |   August 2021     | 10.0.22    |    UK - MTD fraud prevention 2021)|
 
 
 
 ## Additional resources
-- Find all planned and released regulatory updates on [Lifecycle Service - Issue search](https://lcs.dynamics.com/Logon/Index) (sign in required).
+- For more information about all planned and released country-specific regulatory updates, see [Search for country-specific regulatory updates](search-for-regulatory-updates.md). (Sign-in is required.)
 - For a list of the localizations that are supported, see the [International availability guide](https://aka.ms/dynamics_365_international_availability_deck).
 
 

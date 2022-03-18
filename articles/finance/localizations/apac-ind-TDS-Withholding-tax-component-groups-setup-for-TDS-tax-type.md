@@ -7,7 +7,7 @@ author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+
 ms.technology: 
 
 # optional metadata
@@ -36,7 +36,7 @@ This topic explains how to set up withholding tax component groups, such as **Re
 
 1. Go to **Tax \> Setup \> Withholding tax \> Withholding tax component groups**.
 
-    [![Withholding tax component groups page](./media/apac-ind-TDS-8.png)](./media/apac-ind-TDS-8.png)
+    [![Withholding tax component groups page.](./media/apac-ind-TDS-8.png)](./media/apac-ind-TDS-8.png)
 
 2. In the **Tax type** field, select **TDS** to set up withholding tax component groups for the TDS tax type.
 3. On the Action Pane, select **New** to create a line.

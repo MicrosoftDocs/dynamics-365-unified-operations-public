@@ -3,7 +3,7 @@
 
 title: Sales returns
 description: This topic provides information about the process for return orders. It includes information about customer returns and their effect on costing and on-hand inventory quantities.
-author: omulvad
+author: Mirzaab
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 269384
 ms.assetid: 98a4b517-e606-4036-b55f-1ab248898bdf
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kamaybac
+ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -38,7 +38,7 @@ Customers can return items for various reasons. For example, an item might be de
 ## Return order process
 The following illustration gives an overview of the return order process.  
 
-[![Return order process](./media/salesreturns01.jpg)](./media/salesreturns01.jpg)  
+[![Return order process.](./media/salesreturns01.jpg)](./media/salesreturns01.jpg)  
 
 There are two types of return order process: physical return and credit only.
 
@@ -67,7 +67,7 @@ Return Material Authorization (RMA) processing builds on sales order functionali
 ## Create a return order
 The return order process starts when a customer contacts your organization to return a defective or unwanted product and/or to be credited. After your organization accepts the return, the return is documented by a return order. This return order becomes the focal point of the internal processing of the returned product. The following illustration shows the procedure for creating a return order.  
 
-[![Procedure for creating a return order](./media/salesreturn02.png)](./media/salesreturn02.png)
+[![Procedure for creating a return order.](./media/salesreturn02.png)](./media/salesreturn02.png)
 
 ### Create a return order header
 
@@ -183,7 +183,7 @@ In addition to determining how the returned goods are disposed of, disposition c
 ## Arrival at the warehouse for inspection
 Before you can physically receive returned items into inventory by posting a packing slip, the items must go through arrival registration and an optional inspection. The following illustration gives an overview of the arrival process. The sections that follow describe each step that is shown in the illustration.  
 
-[![Arrival process](./media/salesreturn03.png)](./media/salesreturn03.png)  
+[![Arrival process.](./media/salesreturn03.png)](./media/salesreturn03.png)  
 
 The process has several other variations that aren't covered in this topic. Here are some of these variations:
 
@@ -227,7 +227,7 @@ There are two methods for managing product replacement:
 
 In up-front replacement, the replacement item can be delivered to the customer before the item is returned. This method is useful if, for example, the item is a machine part that can’t be removed unless a spare part is available to take its place, or if you just want your customer to have the replacement product as soon as possible. The up-front replacement order is an independent sales order. The header information is initialized from the customer, and the line information is initialized from the return order. You can edit, process, and delete the replacement order independently of the return order. When you delete a replacement order, you receive a message that the order was created as a replacement order. The following illustration shows the process for up-front replacement.  
 
-![Up-front replacement process](./media/SalesReturn04.png)
+![Up-front replacement process.](./media/SalesReturn04.png)
 
 The return order includes a reference to the replacement order. If an up-front replacement order is created for a return order before the defective item is returned, you can't select disposition codes for replacement after the defective item has been returned.
 
@@ -235,7 +235,7 @@ The return order includes a reference to the replacement order. If an up-front r
 
 If you ship a replacement item to the customer, and you use the **Replace and scrap** or **Replace and credit** disposition action on the return order, use the process that is shown in the following illustration.  
 
-![Replacement process when a disposition code is used](./media/SalesReturn05.png)
+![Replacement process when a disposition code is used.](./media/SalesReturn05.png)
 
 The replacement item will be delivered by using an independent sales order, the replacement sales order. This sales order is created when the packing slip for the return order is generated. The order header uses information from the customer that is referenced on the return order header. The line information is collected from the information that is entered on the **Replacement item** page. The **Replacement item** page must be filled in for lines that have disposition actions that start with the word "replace." However, neither the quantity nor the identity of the replacement item is validated or limited. This behavior allows for cases where the customer wants the same item but in a different configuration or size, and also cases where the customers wants a completely different item. By default, an identical item is entered on the **Replacement item** page. However, you can select a different item, provided that the function has been set up. 
 
@@ -277,7 +277,7 @@ Return orders can be completed between two companies within your organization. T
 
 The following illustration the minimum setup that is required for two companies to participate in an intercompany relation and take advantage of intercompany trade.  
 
-![Minimum setup](./media/SalesReturn06.png)
+![Minimum setup.](./media/SalesReturn06.png)
 
 In the following scenario, CompBuy is the buying company, and CompSell is the selling company. Usually, the selling company ships goods either to the buying company or, in direct delivery shipment scenarios, directly to the end customer. In CompBuy, the vendor IC\_CompSell is defined as an intercompany endpoint that is associated with the company CompSell. At the same time, in CompSell, the customer IC\_CompBuy is defined as an intercompany endpoint that is associated with the company CompBuy. The appropriate action policy details and value mappings must be defined in both companies. In a direct delivery shipment scenario, an intercompany return order, which is also an intercompany sales order, is created in the selling company. The RMA number of the intercompany return order can be picked from the RMA number sequence in CompSell, or it can be copied from the RMA number that is assigned to the original return order in CompBuy. The RMA number settings on the **PurchaseRequisition** action policy in CompBuy determine these actions. If the RMA number is synchronized, you should plan to mitigate the risk of number clashes if the two companies use the same number sequence.
 
@@ -285,7 +285,7 @@ In the following scenario, CompBuy is the buying company, and CompSell is the se
 
 This scenario involves two companies in the same organization, as shown in the following illustration.  
 
-![Simple intercompany return](./media/SalesReturn07.png)
+![Simple intercompany return.](./media/SalesReturn07.png)
 
 The order chain can be established when a vendor return order is created in the buying company or a customer return order is created in the selling company. The corresponding order is created in the other company and makes sure that the header and line information on the vendor return order reflects the settings on the customer return order. The return order that is established can either include or exclude the reference (**Find sales order**) to an existing customer invoice. The packing slips and invoices of the two orders can be processed individually. For example, you don't have to generate a packing slip for the vendor return order before you generate the packing slip for the customer return order.
 
@@ -293,7 +293,7 @@ The order chain can be established when a vendor return order is created in the 
 
 This scenario can be established if a previous sale of the **Direct delivery** type has been completed, and if an invoice against the customer exists in the company that interacts with the customer. In the following illustration, the company CompBuy has previously sold and invoiced products to the customer Extern. The products were shipped directly from the company CompSell to the customer via an intercompany order chain.  
 
-![Direct delivery shipment returns between three parties](./media/SalesReturn08.png)
+![Direct delivery shipment returns between three parties.](./media/SalesReturn08.png)
 
 If the customer Extern wants to return the products, a return order (RMA02) is created for the customer in the company CompBuy. To establish the intercompany chain, the return order must be marked for direct delivery. When you use the **Find sales order** function to pick the customer invoice to return, an intercompany order chain that consists of the following documents is established:
 
@@ -315,7 +315,7 @@ In the examples that follow, the return cost price is represented as **Inv. Cost
 
 The return order doesn't reference a customer invoice. The returned item is credited. The **Credit correction** parameter isn't selected when the return order invoice, or credit note, is generated.  
 
-![Return order doesn't reference a customer invoic](./media/SalesReturn09.png)  
+![Return order doesn't reference a customer invoic.](./media/SalesReturn09.png)  
 
 >[Note!]
 >The item master price is used as the default value for the **Return cost price** parameter. The default price differs from the cost price at the time of inventory issue. Therefore, the implication is that a loss of 3 has been incurred. Additionally, the return order doesn't include the discount that was given to the customer on the sales order. Therefore, an excessive credit occurs.
@@ -324,7 +324,7 @@ The return order doesn't reference a customer invoice. The returned item is cred
 
 Example 2 is the same as example 1, but the **Credit correction** parameter is selected when the return order invoice is generated.  
 
-![Return order where credit correction is selected ](./media/SalesReturn10.png)  
+![Return order where credit correction is selected .](./media/SalesReturn10.png)  
 
 >[Note!] 
 >The ledger postings are entered as negative corrections.
@@ -333,7 +333,7 @@ Example 2 is the same as example 1, but the **Credit correction** parameter is s
 
 In this example, the return order line is created by using the **Find sales order** function. The **Credit correction** parameter isn't selected when the invoice is created.  
 
-![Return order line that is created by using Find sales order ](./media/SalesReturn11.png)  
+![Return order line that is created by using Find sales order .](./media/SalesReturn11.png)  
 
 >[Note!] 
 >**Discount** and **Return cost price** are set correctly. Therefore, an exact reversal of the customer invoice occurs.

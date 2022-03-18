@@ -42,7 +42,7 @@ Although the shipping address module doesn't provide address validation, this fu
 
 The following illustration shows an example of a new shipping address module on a checkout page.
 
-![Example of a shipping address module on a checkout page](./media/ecommerce-shippingaddress.PNG)
+![Example of a shipping address module on a checkout page.](./media/ecommerce-shippingaddress.PNG)
 
 ## Module properties
 

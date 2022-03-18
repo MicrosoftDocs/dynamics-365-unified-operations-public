@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer 
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 15951
 ms.assetid: 6baee22e-2a86-428c-b9e2-178581c57830
@@ -39,7 +39,7 @@ The Dimension Entry Control pattern is used when you have a group or tab page th
 
 ## Wireframe
 
-![Wireframe for Dimension Entry Control subpattern](media/decwireframe.png)
+![Wireframe for Dimension Entry Control subpattern.](media/decwireframe.png)
 
 ## Model
 
@@ -61,7 +61,7 @@ None.
 
 Form: **CustTable (TabFinancialDimensions)**
 
-![Example for CustTable using TabFinancialDimensions](media/decexample.png)
+![Example for CustTable using TabFinancialDimensions.](media/decexample.png)
 
 ## Appendix
 

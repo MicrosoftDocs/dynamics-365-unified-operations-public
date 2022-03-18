@@ -3,7 +3,7 @@
 
 title: Service status and progress field interaction 
 description: In the Service orders form, the Progress field on the header reflects the status of the whole service order, and the Status reports the status of individual service order lines.
-author: ShylaThompson
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
@@ -27,19 +27,18 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 
-# Service status and progress field interaction 
+# Service status and progress field interaction
 
 [!include [banner](../includes/banner.md)]
-
 
 In the **Service orders** form, the **Progress** field on the service order header reflects the status of the whole service order, and the **Status** reports the status of individual service order lines.
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -89,14 +88,8 @@ In the **Service orders** form, the **Progress** field on the service order head
 </tbody>
 </table>
 
-
 The progress of a service order is in process if all lines have the status **Created**; it is still in process if some of the lines have a status of **Canceled** or **Posted**.
 
 If all lines in a service order are marked as **Posted**, the progress of the status order is **Posted**. If some lines are **Posted** and some are **Canceled**, the progress is still **Posted**.
-
-  
-
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

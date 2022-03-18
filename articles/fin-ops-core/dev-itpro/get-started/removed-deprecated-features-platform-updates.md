@@ -4,7 +4,7 @@
 title: Removed or deprecated platform features
 description: This topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
 author: sericks007
-ms.date: 05/26/2021
+ms.date: 03/08/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -38,7 +38,111 @@ This list is intended to help you consider these removals and deprecations for y
 
 Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
 
-## Feature deprecation notice effective May 2021
+## Feature removal effective March 14, 2022
+
+### XSLT scripting in Data management
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The support for XSLT scripting in Data management is deprecated to improve security and data protection within the Finance and Operations apps.  |
+| **Replaced by another feature?**   | No. Customers and ISVs should consider reimplementing their solutions based on X++ language, in place of XSLT scripting. |
+| **Product areas affected**         | Finance and Operations apps. |
+| **Deployment option**              | All. |
+| **Status**                         | Deprecated - planned removal date is March 14, 2022.<br><br>Exception: Customers who are currently using XLST scripting. They can continue to use it until they update to version 10.0.30 or later. Customers with this exception have received a notification in the Message center available in the Microsoft 365 Admin Center. |
+
+## Feature removal effective October 2021
+
+### Microsoft Azure SQL reports in Lifecycle Services (LCS)
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | All activities and monitoring will be performed internally, by the platform, through automation. This will not require any manual intervention.|
+| **Replaced by another feature?**   | Yes, there is now an automated system, which renders these capabilities obsolete. |
+| **Product areas affected**         | SQL reports: Current DTU, Current DTU Details, Get Lock Details, List of Current Plan Guide, Get List of Query ID’s, Get the SQL query plan for a given Plan ID, Get query plans and execution status, Get throttle config, Get wait stats, List most expensive queries |
+| **Deployment option**              | Cloud deployment: Affects Microsoft-managed production environments and Tier 2 through Tier 5 sandbox environments. |
+| **Status**                         | Removed |
+
+### Azure SQL actions in LCS
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | We are deprecating some SQL actions in LCS. All activities and monitoring will be performed internally, by the platform, through automation. This will not require any manual intervention. |
+| **Replaced by another feature?**   | Yes, there is now an automated system, which renders these capabilities obsolete. |
+| **Product areas affected**         | SQL actions: Create a plan guide to force Plan ID, Create a plan guide to add table hints, Remove Plan guide, Disable/Enable page locks and lock escalation, Update statistics on a table, Rebuild Index, Create Index |
+| **Deployment option**              | Cloud deployment: Affects Microsoft-managed production environments and Tier 2 through Tier 5 sandbox environments. |
+| **Status**                         | Removed |
+
+
+## Feature deprecation effective October 2021
+
+### "Show related document attachments" feature
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The feature was returning unexpected results. |
+| **Replaced by another feature?**   | No. Any further plans regarding this functionality will be communicated through our standard release wave disclosure process. |
+| **Product areas affected**         | Web client - Document attachment experience |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated  |
+
+## Platform updates for version 10.0.23 of Finance and Operations apps
+
+### OnDBSynchronize event
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | There is no control to execute this event. |
+| **Replaced by another feature?**   | Yes, move existing methods subscribed to by the **OnDBSynchronize** event to a SysSetup extended class. |
+| **Product areas affected**         | Database synchronization |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated. Planned removal date is October 2022. |
+
+
+### SystemNotificationsManager.AddNotification API
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Microsoft requires additional parameters when adding notifications. |
+| **Replaced by another feature?**   | Yes, the **SystemNotificationsManager.AddSystemNotification()** API. This API requires that you explicitly set ExpirationDateTime and RuleID for generated notifications. |
+| **Product areas affected**         | Web client |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated. Planned removal date is April 2023. |
+
+## Platform updates for version 10.0.21 of Finance and Operations apps
+
+### Skype for Business Online support
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Skype for Business Online has been retired. For more information, see [The Skype for Business Online service has retired](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/the-skype-for-business-online-service-has-retired/ba-p/2596601). |
+| **Replaced by another feature?**   | Not currently, although we may consider adding presence from Teams in the future.|
+| **Product areas affected**         | Web client |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated. The **Skype enabled** setting has been turned off starting in release 10.0.21. The removal of this setting is targeted for April 2022; however, the feature will stop functioning after the Skype team shuts down the service. |
+ 
+## Feature deprecation effective August 2021
+
+### Microsoft Azure SQL reports in Lifecycle Services (LCS)
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | All activities and monitoring will be performed internally, by the platform, through automation. This will not require any manual intervention.|
+| **Replaced by another feature?**   | Yes, there is now an automated system, which renders these capabilities obsolete. |
+| **Product areas affected**         | SQL reports: Current DTU, Current DTU Details, Get Lock Details, List of Current Plan Guide, Get List of Query ID’s, Get the SQL query plan for a given Plan ID, Get query plans and execution status, Get throttle config, Get wait stats, List most expensive queries |
+| **Deployment option**              | Cloud deployment: Affects Microsoft-managed production environments and Tier 2 through Tier 5 sandbox environments. |
+| **Status**                         | Deprecated: Planned removal date is October 2021. |
+
+### Azure SQL actions in LCS
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | We are deprecating some SQL actions in LCS. All activities and monitoring will be performed internally, by the platform, through automation. This will not require any manual intervention. |
+| **Replaced by another feature?**   | Yes, there is now an automated system, which renders these capabilities obsolete. |
+| **Product areas affected**         | SQL actions: Create a plan guide to force Plan ID, Create a plan guide to add table hints, Remove Plan guide, Disable/Enable page locks and lock escalation, Update statistics on a table, Rebuild Index, Create Index |
+| **Deployment option**              | Cloud deployment: Affects Microsoft-managed production environments and Tier 2 through Tier 5 sandbox environments. |
+| **Status**                         | Deprecated: Planned removal date is October 2021. |
+
+## Feature deprecation effective May 2021
 
 ### Globalization portal in Lifecycle Services (LCS)
 
@@ -48,7 +152,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Replaced by another feature?**   | Yes, this feature is replaced by LCS [Issue search](../lifecycle-services/issue-search-lcs.md) and [Dynamics regulatory alert submission service](../lcs-solutions/submit-localization-alerts.md). |
 | **Product areas affected**         | Globalization portal in LCS|
 | **Deployment option**              | Cloud deployment |
-| **Status**                         | Deprecated: Planned removal date in May 2022. |
+| **Status**                         | Deprecated: Planned removal date is May 2022. |
 
 
 ## Feature removed effective January 28, 2021
@@ -97,18 +201,19 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: All EP code is scheduled to be removed in the October 2021 release. |
 
-## Platform updates for version 10.0.15 of Finance and Operations apps
+## Deprecation effective December 2020
 
 ### Internet Explorer 11 support for Dynamics 365 is deprecated
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Effective December 2020, Microsoft Internet Explorer 11 support for all Dynamics 365 products is deprecated, and Internet Explorer 11 won’t be supported after August 2021.<br><br>This will impact customers who use Dynamics 365 products that are designed to be used through an Internet Explorer 11 interface. After August 2021, Internet Explorer 11 won't be supported for such Dynamics 365 products. |
+| **Reason for deprecation/removal** | Effective December 2020, Microsoft Internet Explorer 11 support for all Dynamics 365 products and Dynamics Lifecycle Services (LCS) is deprecated, and Internet Explorer 11 won’t be supported after August 2021.<br><br>This will impact customers who use Dynamics 365 products and LCS that are designed to be used through an Internet Explorer 11 interface. After August 2021, Internet Explorer 11 won't be supported for such Dynamics 365 products and LCS. |
 | **Replaced by another feature?**   | We recommend that customers transition to Microsoft Edge.|
-| **Product areas affected**         | All Dynamics 365 products |
+| **Product areas affected**         | All Dynamics 365 products and LCS |
 | **Deployment option**              | All|
 | **Status**                         | Deprecated: Internet Explorer 11 won’t be supported after August 2021.|
 
+## Platform updates for version 10.0.15 of Finance and Operations apps
 
 ### Visual Studio add-in to apply metadata hotfixes
 
@@ -142,7 +247,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | In general, custom code offers limited benefits while at the same time, requires significant resourcing and compute to support. Custom code is primarily used by report authors to call public methods from a custom code assembly. However, the cloud-hosted service does not support references to custom assemblies for SSRS reports. |
-| **Replaced by another feature?**   | Report authors may choose to continue referencing public .NET APIs for Math, Conversion, and Format operations from any textbox expression. For more information, see [Add Code to a Report (SSRS)](/sql/reporting-services/report-design/add-code-to-a-report-ssrs?view=sql-server-ver15).  |
+| **Replaced by another feature?**   | Report authors may choose to continue referencing public .NET APIs for Math, Conversion, and Format operations from any textbox expression. For more information, see [Add Code to a Report (SSRS)](/sql/reporting-services/report-design/add-code-to-a-report-ssrs).  |
 | **Product areas affected**         | Subset of application report designs defined in RDL that contain custom code. |
 | **Deployment option**              | All |
 | **Status**                         | With version 10.0.13, the compiler will begin issuing a warning for instances where custom code is detected in a SSRS report definition. To fix the issue, open the report design definition and remove all custom code artifacts. This warning will be replaced with a compiler error in a future update.   |
@@ -165,7 +270,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Replaced by another feature?**   | The [new grid control](../..//fin-ops/get-started/grid-capabilities.md) |
 | **Product areas affected**         | Web client |
 | **Deployment option**              | All |
-| **Status**                         | In version 10.0.13, the new grid control is generally available, and customers can optionally turn on this feature. The new grid control will become mandatory in the October 2021 release. When the new grid control becomes mandatory, the **forceLegacyGrid()** API will no longer be honored. |
+| **Status**                         | In version 10.0.13, the new grid control is generally available, and customers can optionally turn on this feature. The new grid control will become on by default with the October 2021 release and is currently targeted to be mandatory in April 2022. When the new grid control becomes mandatory, the **forceLegacyGrid()** API will no longer be honored. |
 
 ### Personalization without saved views 
 

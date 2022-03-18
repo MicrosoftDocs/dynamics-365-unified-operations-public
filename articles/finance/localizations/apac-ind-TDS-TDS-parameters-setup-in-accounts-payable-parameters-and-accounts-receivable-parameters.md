@@ -7,7 +7,7 @@ author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+
 ms.technology: 
 
 # optional metadata
@@ -44,12 +44,12 @@ This topic explains how to set parameters in Accounts payable and Accounts recei
     - **Prompt** – Users receive a message that prompts them to update the TDS group on the order lines.
 4. Select **OK**.
 
-    [![Update order lines dialog box](./media/apac-ind-TDS-26.PNG)](./media/apac-ind-TDS-26.PNG)
+    [![Update order lines dialog box.](./media/apac-ind-TDS-26.PNG)](./media/apac-ind-TDS-26.PNG)
 
 5. Go to **Tax \> Setup \> Parameters \> Accounts payable parameters**.
 6. On the **General** tab, on the **Split based on delivery information** FastTab, set the **Product receipt** option to **Yes** to post and split a product receipt that has different delivery addresses and tax account numbers (TANs). If this option is set to **No**, you can't post a purchase packing slip that has different delivery addresses and TANs.
 7. Set the **Invoice** option to **Yes** to post and split a purchase invoice that has different delivery addresses and TANs.
 
-    [![Split based on delivery information FastTab](./media/apac-ind-TDS-25.png)](./media/apac-ind-TDS-25.png)
+    [![Split based on delivery information FastTab.](./media/apac-ind-TDS-25.png)](./media/apac-ind-TDS-25.png)
 
 8. Close the page.

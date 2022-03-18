@@ -3,7 +3,7 @@
 
 title: Batch attributes
 description: This topic provides information about batch attributes. Batch attributes are characteristics of raw materials and finished products that make up inventory batches. The topic also explains how to assign batch attributes, and how you can search on them when you reserve batches.
-author: ShylaThompson
+author: johanhoffmann
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 19271
 ms.assetid: 41de0250-4a96-412e-a412-aa06615b6b1d
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

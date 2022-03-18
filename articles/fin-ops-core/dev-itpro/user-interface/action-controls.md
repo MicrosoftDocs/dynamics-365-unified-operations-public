@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 55521
 ms.assetid: 93b61e0c-b9bc-48fc-a9b7-874a8b0aeebd
@@ -93,15 +93,15 @@ In general, the **Button Style** property defines how a button is shown in the u
 
 | Style           | Example                                                                                                                                                      | Description                                                                          |
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| Standard (Auto) | [![Example of Standard button style](./media/11_control.png)](./media/11_control.png) | The traditional button appearance                                                    |
-| Command link    | [![Example of Command link button style](./media/12_control.png)](./media/12_control.png) | A combination of a small square block or image on the left, and a label on the right |
-| Link            | [![Example of Link button style](./media/13_control.png)](./media/13_control.png) | A button that has the appearance of a hyperlink                                      |
+| Standard (Auto) | [![Example of Standard button style.](./media/11_control.png)](./media/11_control.png) | The traditional button appearance                                                    |
+| Command link    | [![Example of Command link button style.](./media/12_control.png)](./media/12_control.png) | A combination of a small square block or image on the left, and a label on the right |
+| Link            | [![Example of Link button style.](./media/13_control.png)](./media/13_control.png) | A button that has the appearance of a hyperlink                                      |
 
 ## Standard Action Panes
 The standard Action Pane is the primary location for page-level actions. It consists of both system-defined actions (actions that aren't explicitly modeled but are automatically added by the framework) and developer-defined actions (actions that are explicitly modeled in either Action Pane tabs or Button Groups). Developers can promote the most frequently used actions directly to the standard Action Pane by modeling Button Groups directly under the Action Pane. However, Action Pane tabs can still be used to group actions and provide access via a flyout. The following illustration shows a standard Action Pane that includes system-defined buttons, two promoted developer-defined actions, and a set of Action Pane tabs. 
-[![Illustration of standard Action Pane](./media/1_control.png)](./media/1_control.png) 
+[![Illustration of standard Action Pane.](./media/1_control.png)](./media/1_control.png) 
 The following illustration shows the flyout that appears to show additional commands when an Action Pane tab is clicked. 
-[![Illustration showing Action Pane flyout](./media/control_2.png)](./media/control_2.png)
+[![Illustration showing Action Pane flyout.](./media/control_2.png)](./media/control_2.png)
 
 ### System-defined buttons
 
@@ -109,16 +109,16 @@ Several system-defined buttons are added automatically to pages. The following t
 
 | Button                                                                                                                                                              | Name                     | Comments                                                               |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------|------------------------------------------------------------------------|
-| [![New button](./media/newbutton.png)](./media/newbutton.png)            | New                      | Create a new record for the first master data source.                  |
-| [![Delete button](./media/deletebutton.png)](./media/deletebutton.png)   | Delete                   | Delete the currently selected record for the first master data source. |
-| [![Edit button](./media/editbutton.png)](./media/editbutton.png)         | Edit                     | Switch to **Edit** mode.                                               |
-| [![Filter button](./media/filterbutton.png)](./media/filterbutton.png)   | Show filters             | Open the **Filter** pane.                                              |
-| [![List button](./media/listbutton.png)](./media/listbutton.png)         | Show list                | Toggle visibility of the navigation list on the details pages.         |
-| [![Attach button](./media/attachbutton.png)](./media/attachbutton.png)   | Attach                   | Attach a document.                                                     |
-| [![Refresh button](./media/refreshbutton.png)](./media/refreshbutton.png) | Refresh                  | Update all the data on the page.                                       |
-| [![Close button](./media/closebutton.png)](./media/closebutton.png)      | Close                    | Close the page (equivalent to clicking the browser's **Back** button). |
-| [![Open in Office button](./media/officebutton.png)](./media/officebutton.png)   | Open in Microsoft Office | Open or export to Microsoft Excel. More Office integration is planned. |
-| [![Popout button](./media/popoutbutton.png)](./media/popoutbutton.png)   | Popout                   | Pop out the current form into a new dynalinked window.                 |
+| [![New button.](./media/newbutton.png)](./media/newbutton.png)            | New                      | Create a new record for the first master data source.                  |
+| [![Delete button.](./media/deletebutton.png)](./media/deletebutton.png)   | Delete                   | Delete the currently selected record for the first master data source. |
+| [![Edit button.](./media/editbutton.png)](./media/editbutton.png)         | Edit                     | Switch to **Edit** mode.                                               |
+| [![Filter button.](./media/filterbutton.png)](./media/filterbutton.png)   | Show filters             | Open the **Filter** pane.                                              |
+| [![List button.](./media/listbutton.png)](./media/listbutton.png)         | Show list                | Toggle visibility of the navigation list on the details pages.         |
+| [![Attach button.](./media/attachbutton.png)](./media/attachbutton.png)   | Attach                   | Attach a document.                                                     |
+| [![Refresh button.](./media/refreshbutton.png)](./media/refreshbutton.png) | Refresh                  | Update all the data on the page.                                       |
+| [![Close button.](./media/closebutton.png)](./media/closebutton.png)      | Close                    | Close the page (equivalent to clicking the browser's **Back** button). |
+| [![Open in Office button.](./media/officebutton.png)](./media/officebutton.png)   | Open in Microsoft Office | Open or export to Microsoft Excel. More Office integration is planned. |
+| [![Popout button.](./media/popoutbutton.png)](./media/popoutbutton.png)   | Popout                   | Pop out the current form into a new dynalinked window.                 |
 
 ### Pinning the Action Pane
 The standard Action Pane supports the ability for the user to "pin" or "unpin" the Action Pane as desired. 
@@ -127,16 +127,16 @@ When the Action Pane is pinned open, an Action Pane tab is expanded and pushes t
 
 When the Action Pane is not pinned open, clicking on an Action Pane tab opens it as a flyout on top of the form content. The lower right corner of the Action Pane tab flyout has a pushpin button that can be clicked to pin the Action Pane open. 
 
-![Action Pane pinning](./media/actionPanePinning.png)
+![Action Pane pinning.](./media/actionPanePinning.png)
 
 ### Overflow behavior in the Action Pane
 Standard Action Panes include an overflow feature that adds a responsive element to forms and eliminates the need for a horizontal scrollbar in the Action Pane. When the browser width is insufficient to show the entire Action Pane contents, an overflow menu automatically appears in the Action Pane and includes any buttons and Action Pane tabs that did not fit given the browser width.  Items are added one-by-one starting with the rightmost actions from the Action Pane. Note the system actions on the right side of the Action Pane do not participate in the overflow behavior.  
 
-![Action Pane overflow](./media/actionPaneOverflow.png)
+![Action Pane overflow.](./media/actionPaneOverflow.png)
 
 ## Toolbars
 Toolbars (previously called Action Pane strips) are Actions Panes that have the **Style** property set to **Strip**. They are used for actions that have a specific context and aren't page-level actions. They are primarily used for actions that are specific to a FastTab, tab, or grid. The actions in a Strip-styled Action Pane are shown horizontally in a Toolbar. The following illustration shows a Toolbar that has two buttons for adding and removing lines from this **TransactionDetails** form. 
-[![ActionPaneToolbar](./media/actionpanetoolbar.png)](./media/actionpanetoolbar.png)
+[![ActionPaneToolbar.](./media/actionpanetoolbar.png)](./media/actionpanetoolbar.png)
 
 ### Overflow behavior in Toolbars
 Toolbars have the same overflow feature as standard Action Panes.  See the section above for more details. 

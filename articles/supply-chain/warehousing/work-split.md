@@ -21,10 +21,12 @@ ms.search.region: Global
 ms.search.industry: WHSWorkTableListPage
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-15
-ms.dyn365.ops.version: Release 10.0.8
+ms.dyn365.ops.version: 10.0.8
 ---
 
 # Work split
+
+[!include [banner](../includes/banner.md)]
 
 Work split functionality lets you split large work IDs (that is, work orders that have several lines) into several smaller work IDs that you can then assign to multiple warehouse workers. In this way, the same work creation number can be picked simultaneously by several warehouse workers.
 
@@ -35,7 +37,7 @@ Work split functionality lets you split large work IDs (that is, work orders tha
 
 Before you can use the work split functionality, you must turn on the feature and its prerequisite feature in your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the features and turn them on as required.
 
-First, turn on the prerequisite *Organization-wide work blocking* feature if it isn't already turned on. In the **Feature management** workspace, this feature is listed in the following way:
+First, turn on the prerequisite *Organization-wide work blocking* feature if it isn't already turned on. As of Supply Chain Management version 10.0.21, this feature is mandatory, so it is turned on by default and can't be turned off again. However, the feature is still listed in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) in the following way:
 
 - **Module:** *Warehouse management*
 - **Feature name:** *Organization-wide work blocking*
@@ -55,7 +57,7 @@ The *Work split* feature adds the following two buttons to the **Work** tab on t
 - **Split work** – Split the current work ID into multiple smaller work IDs that can be processed by separate workers.
 - **Cancel work split session** – Cancel the work split session, and make the work available for processing.
 
-![Split work and Cancel work split session buttons](media/Work_split_buttons.png "Split work and Cancel work split session buttons")
+![Split work and Cancel work split session buttons.](media/Work_split_buttons.png "Split work and Cancel work split session buttons")
 
 > [!IMPORTANT]
 > The **Split work** button won't be available if any of the following conditions are met:
@@ -98,7 +100,7 @@ To split work, follow these steps.
 
     The **Work blocking reason** field for the current work will be set to *Split work*, and the work will be blocked.
 
-    ![Blocking reason](media/Blocking_reason.png "Blocking reason")
+    ![Blocking reason.](media/Blocking_reason.png "Blocking reason")
 
 1. Select the lines to remove from the current work ID and add to a new work ID. The following events occur:
 

@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 27021
 ms.assetid: 179b1629-ac90-4cfb-b46a-5bda56c4f451
@@ -39,7 +39,7 @@ Commerce Data Exchange is a system that transfers data between Headquarters and 
 
 Microsoft SQL Server change tracking on the Commerce database is used to determine the data changes that must be sent to channels. Based on a distribution schedule, Headquarters packages that data and saves it to central storage (Azure blob storage). A separate batch process uses the Commerce Data Exchange: Async Client library to insert this data package into the channel database. 
 
-[![Async Service](./media/async-300x239.png)](./media/async.png)
+[![Async Service.](./media/async-300x239.png)](./media/async.png)
 
 ### Commerce scheduler
 
@@ -63,7 +63,7 @@ Commerce Data Exchange: Real-time Service is an integrated service that provides
 - Performing inventory counts
 - Retrieving sales transactions across stores and completing return transactions
 
-[![Real-time Service](./media/rts.png)](./media/rts.png) 
+[![Real-time Service.](./media/rts.png)](./media/rts.png) 
 
 A predefined Real-time Service profile is created.
 

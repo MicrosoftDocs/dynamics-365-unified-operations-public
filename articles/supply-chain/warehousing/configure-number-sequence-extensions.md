@@ -20,7 +20,7 @@ ms.reviewer: kamaybac
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: kamaybac
+ms.author: mirzaab
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.2
 

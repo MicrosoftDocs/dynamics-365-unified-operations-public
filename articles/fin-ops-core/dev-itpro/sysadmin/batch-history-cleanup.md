@@ -38,7 +38,7 @@ Two pages that have been added to the **System administration** module make it e
 - Batch job history clean-up
 - Custom batch job history clean-up
 
-![Periodic tasks in System administration](./media/Menu-Cleanup.png)
+![Periodic tasks in System administration.](./media/Menu-Cleanup.png)
 
 > [!NOTE]
 > We recommend that you regularly clean up the batch job history, and that you do this cleanup outside of business hours.
@@ -51,7 +51,7 @@ Follow these steps to quickly clean up all history entries that are older than a
 2. In the **History limit (days)** field, specify the number of days to keep a history of batch jobs.
 3. Select **OK**.
 
-![Regular job](./media/batch-cleanup-regular.png)
+![Regular job.](./media/batch-cleanup-regular.png)
 
 ## Batch job history clean-up (custom)
 
@@ -62,7 +62,7 @@ The custom batch job lets you to apply additional filtering, based on criteria s
 3. On the **Records to include** FastTab, specify any filter criteria that you require, and then select **OK**.
 4. Select **OK**.
 
-![Custom job](./media/batch-cleanup-custom.png)
+![Custom job.](./media/batch-cleanup-custom.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

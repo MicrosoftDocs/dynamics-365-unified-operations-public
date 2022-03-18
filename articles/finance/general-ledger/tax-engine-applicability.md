@@ -59,11 +59,11 @@ If the applicability rule is always static, you need to use a condition. For exa
 
 Open Tax (India GST) by clicking the **Designer** button. 
 
-![CGST condition](media/gte-tax-document-applicability-cgst.png)
+![CGST condition.](media/gte-tax-document-applicability-cgst.png)
 
 Select the tax component CGST, and click the pencil icon, to check the detailed condition. 
 
-![CGST condition details](media/gte-tax-document-applicability-cgst-condition.png)
+![CGST condition details.](media/gte-tax-document-applicability-cgst-condition.png)
 
 The condition is actually an [Electronic Reporting](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md) expression. It is comprised of the fields on the left in **Data source**, and **Functions** on the right. For a list of supported functions, see [Formula designer in Electronic reporting (ER)](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md). 
 
@@ -128,7 +128,7 @@ If the static applicability rules are complex, or it is a dynamic applicability 
 ### Lookup for static applicability rules
 Select **GST**, click **Lookups**.
 
-![CGST condition for lookups](media/gte-tax-document-applicability-static-lookups.png)
+![CGST condition for lookups.](media/gte-tax-document-applicability-static-lookups.png)
 
 Because a lookup can handle both static applicability rules and dynamic applicability rules, the **Source type** drop-down list is for this purpose. Use **Configuration** for the static applicability rule, which means that the data used in the lookup comes from the configuration. Use **User data** for the dynamic applicability rule, which means that the data used in the lookup comes from the runtime environment.
 
@@ -166,7 +166,7 @@ In India, CESS is applicable for certain goods and services. In Dynamics 365 Fin
 
 Now, let's check how the CGST rate is determined. Select **CGST > Rate**, click **Lookups**.
 
-![Select CGST, Rate, Lookup](media/gte-tax-document-applicability-dynamic-lookups.png)
+![Select CGST, Rate, Lookup.](media/gte-tax-document-applicability-dynamic-lookups.png)
 
 Runtime data is required to determine the tax rate, so the system hides the **Source type**, and the **User data** value.
 
@@ -177,7 +177,7 @@ Different goods can share one HSN code, so the lookup cannot satisfy this scenar
 
 Click **Columns**. On the left side, you can find all of the **Available columns**. The structure is the same as the **Data source** in the formula designer, except that there are no reference models.
 
-![Lookup column](media/gte-tax-document-applicability-change-lookups.png)
+![Lookup column.](media/gte-tax-document-applicability-change-lookups.png)
 
 Select **Item ID** in **Available columns** to uniquely determine the goods. Click the right-arrow icon to add it to the **Selected columns** side. If HSN is not needed, you can select **HSN Code** in **Selected columns**, and click the left-arrow icon to remove it. 
 

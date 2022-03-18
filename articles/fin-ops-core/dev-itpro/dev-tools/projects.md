@@ -5,7 +5,7 @@ author: RobinARH
 ms.date: 09/12/2018
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 31781
 ms.assetid: d0d12e0e-a417-41b1-b2eb-7c69eee5ac61
 ms.search.region: Global
@@ -87,7 +87,7 @@ To use the contents of a project package file, you must import the .axpp file in
 4. Specify whether you want to open the project in the current selection, in a new solution, or not at all.
 5. In the **Details** field, review the elements that will be imported. You can clear the check box next to any elements that you don't want to import.
 
-    [![Import project dialog](./media/17_devotoolsconcept.png)](./media/17_devotoolsconcept.png)
+    [![Import project dialog.](./media/17_devotoolsconcept.png)](./media/17_devotoolsconcept.png)
 
 6. Click **OK** to complete the import process.
 

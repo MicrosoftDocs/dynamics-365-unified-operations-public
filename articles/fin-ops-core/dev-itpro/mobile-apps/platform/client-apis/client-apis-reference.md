@@ -1,28 +1,14 @@
 ---
-# required metadata
-
 title: Client APIs home page
 description: Mobile platform client APIs
-author: robinarh
+author: tonyafehr
 ms.date: 07/23/2019
-ms.topic: article
-ms.prod: 
-ms.technology:
-
-# optional metadata
-
-# ms.search.form:
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-# ms.custom:
+ms.reviewer: tfehr
+ms.custom: "intro-internal"
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 08/09/2017
-ms.dyn365.ops.version:
-
 ---
 
 # Client APIs home page

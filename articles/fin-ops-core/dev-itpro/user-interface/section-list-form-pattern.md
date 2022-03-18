@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 29211
 ms.assetid: 05e02e22-6b71-45f2-bacd-5e3f8ea898fb
@@ -43,11 +43,11 @@ The Form Part Section List form patterns are workspace-specific patterns that ar
 ## Wireframe
 ### Form Part Section List
 
-[![Wireframe for Form Part Section List form pattern](./media/formpartsectionlistwireframe.png)](./media/formpartsectionlistwireframe.png)
+[![Wireframe for Form Part Section List form pattern.](./media/formpartsectionlistwireframe.png)](./media/formpartsectionlistwireframe.png)
 
 ### Form Part Section List - Double
 
-[![Wireframe for Form Part Section List--Double form pattern](./media/formpartsectionlistdoublewireframe.png)](./media/formpartsectionlistdoublewireframe.png)
+[![Wireframe for Form Part Section List--Double form pattern.](./media/formpartsectionlistdoublewireframe.png)](./media/formpartsectionlistdoublewireframe.png)
 
 ## Pattern changes for Finance and Operations
 These patterns did not exist for Microsoft Dynamics AX 2012.
@@ -112,13 +112,13 @@ The verification checklist shows the steps for manually verifying that the form 
 
 Form: **PurchOrderProcessReceiptsWorkspace** &gt; **PurchOrdersWithDelayedReceiptsPart** (**All workspaces** &gt; **Purchase order receipt and follow-up**) 
 
-[![Form Part Section List example](./media/formpartsectionlistexample.png)](./media/formpartsectionlistexample.png)
+[![Form Part Section List example.](./media/formpartsectionlistexample.png)](./media/formpartsectionlistexample.png)
 
 ### Form Part Section List - Double
 
 Form: **BudgetTrackingWorkspace** &gt; **BudgetTransactionPart** (**All workspaces** &gt; **Ledger budgets and forecasts**) 
 
-[![Form Part Section List--Double example](./media/formpartsectionlistdoubleexample.png)](./media/formpartsectionlistdoubleexample.png)
+[![Form Part Section List--Double example.](./media/formpartsectionlistdoubleexample.png)](./media/formpartsectionlistdoubleexample.png)
 
 ## Appendix
 ### Frequently asked questions

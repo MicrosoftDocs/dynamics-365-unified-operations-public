@@ -54,7 +54,7 @@ As mentioned above, automatic counters can be updated from production registrati
 
     The illustration below shows an example of the **Update asset counters** dialog.
 
-    ![Figure 1](media/12-work-orders.png)
+    ![Figure 1.](media/12-work-orders.png)
 
 5. Select **OK**. 
 
@@ -64,7 +64,7 @@ On the **Asset aggregated value** page, you can get an overview of the latest re
 
 The illustration below shows an example of the **Asset aggregated value** page.
 
-![Figure 2](media/13-work-orders.png)
+![Figure 2.](media/13-work-orders.png)
 
 Note the following points:
 

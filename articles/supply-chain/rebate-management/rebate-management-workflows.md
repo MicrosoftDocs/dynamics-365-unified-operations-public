@@ -22,7 +22,7 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
-ms.dyn365.ops.version: Release 10.0.18
+ms.dyn365.ops.version: 10.0.18
 ---
 
 # Rebate management deal workflows
@@ -31,12 +31,12 @@ ms.dyn365.ops.version: Release 10.0.18
 
 To approve rebate deals, Rebate management uses the same workflow platform as other Finance and Operations apps. Two job processes are associated with every workflow:
 
-- One element of the workflow activates the deal so that the user or workflow process can approve the transactions.
 - One element of the workflow approves the deal.
+- One element of the workflow activates the deal so that the user or workflow process can approve the transactions.
 
 Before you can use a rebate deal, it must be active in the **Rebate management** module. To activate a deal, you must first create and configure a *Rebate management deal workflow*.
 
-After a workflow is activated for Rebate management, users can't manually approve deals. The workflow must be always used.
+Users can't manually approve deals. The workflow must always be used.
 
 ## Create and manage Rebate management deal workflows
 
@@ -46,4 +46,17 @@ To work with your Rebate management deal workflows, go to **Rebate management \>
 
 To activate a deal through a workflow, open the deal (for example, on the **All rebate management deals** page). Then, on the Action Pane, select **Workflow \> Submit**. After the new deal has been processed and approved through the workflow, it will be active and ready to use.
 
-After a deal has been activated, you can't change its setup. If you must change an active deal, inactivate it, and then create a new deal. If the new deal will resemble the old deal, you can create it by copying the old deal.
+After a deal has been activated, you can't change most of its setup. If you must change an active deal, first inactivate it, and then create a new deal. If the new deal will resemble the old deal, you can create it by copying the old deal.
+
+You can change the following settings for a deal after it has been activated:
+
+- Reconcile by
+- Cumulative guarantee
+- Posting profile
+- Posting profile for guarantee
+- Document notes
+- Currency
+- From date
+- To date
+
+In addition, rebate lines can be removed.

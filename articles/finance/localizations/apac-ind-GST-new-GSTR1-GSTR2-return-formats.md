@@ -213,7 +213,7 @@ Follow these steps to load the report configuration into workspaces.
 1. Go to **Workspaces \> Electronic reporting**, and select the **Reporting configurations** tile.
 2. On the **Configurations** page, select **Exchange \> Load from XML file**, and import the configuration files in the order that is provided in the first table in the [Import and set up ER configurations](#import-and-set-up-er-configurations) section, earlier in this topic.
 
-![Configurations page](media/New-GSTR-Format-005.PNG)
+![Configurations page.](media/New-GSTR-Format-005.PNG)
 
 ### Map the report configuration in the tax setup
 
@@ -223,7 +223,7 @@ Follow these steps to load the report configuration into workspaces.
     1. Select the **Select** check box.
     2. Select a value in **Report data provider** field.
 
-    ![Report configuration tab on the Configurations page](media/New-GSTR-Format-006.PNG)
+    ![Report configuration tab on the Configurations page.](media/New-GSTR-Format-006.PNG)
 
 3. Select the **Close** button.
 
@@ -243,7 +243,7 @@ Follow these steps to generate a GSTR-1 report in the new format.
 5. In the **Configuration** field, select **GSTR-1 for New Return**.
 6. In the **File name** field, enter **GSTR-1 for New Return**.
 
-    ![GER export to GSTR CSV dialog box for the GSTR-1 report](media/New-GSTR-Format-007.PNG)
+    ![GER export to GSTR CSV dialog box for the GSTR-1 report.](media/New-GSTR-Format-007.PNG)
 
 7. Select **OK** to save the report.
 
@@ -258,6 +258,6 @@ Follow these steps to generate a GSTR-2 report in the new format.
 5. In the **Configuration** field, select **GSTR-2 for New Return**.
 6. In the **File name** field, enter **GSTR-2 for New Return**.
 
-    ![GER export to GSTR CSV dialog box for the GSTR-2 report](media/New-GSTR-Format-008.PNG)
+    ![GER export to GSTR CSV dialog box for the GSTR-2 report.](media/New-GSTR-Format-008.PNG)
 
 7. Select **OK** to save the report.

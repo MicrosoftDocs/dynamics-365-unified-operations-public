@@ -13,7 +13,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom:
 ms.search.region: Global
@@ -38,11 +38,11 @@ Both scheduled processes and polled processes support logging of results and mes
 
 The following illustration shows the result view.
 
-![Status, time, and message for a result](media/execution-results.png)
+![Status, time, and message for a result.](media/execution-results.png)
 
 The following illustration shows the message view. To open this view, select **View log** in the **Log** column in the result view.
 
-![Exception type and message for an individual message](media/execution-message-log.png)
+![Exception type and message for an individual message.](media/execution-message-log.png)
 
 ## ProcessExecutionSourceLink table
 

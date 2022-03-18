@@ -5,7 +5,7 @@ title: Clienteling overview
 description: This topic provides an overview of new clienteling capabilities that are available in the store application.
 author: bebeale
 ms.date: 02/01/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
 # ms.tgt_pltfrm: 
-ms.custom: 260624
+ms.custom: ["260624", "intro-internal"]
 ms.assetid: a4f9d315-9951-451c-8ee6-37f9b3b15ef0
 ms.search.region: global
 ms.search.industry: Retail
@@ -72,7 +72,7 @@ To turn on the clienteling functionality in your environment, follow these steps
 
 1. In the **Feature management** workspace, filter the features by the **Retail and commerce** module.
 
-    ![Clienteling in the list of features for the Commerce module](./media/Enable_clienteling.png "Clienteling in the list of features for the Retail and commerce module")
+    ![Clienteling in the list of features for the Commerce module.](./media/Enable_clienteling.png "Clienteling in the list of features for the Retail and commerce module")
 
 2. Turn on the **Clienteling** feature by selecting **Enable now**.
 3. On the **Commerce Parameters** page, on the **Number sequence** tab, select the **Client book identifier** row. Then, in the **Number sequence code** field, select a number sequence. The system will use this number sequence to assign an ID to client books.
@@ -87,7 +87,7 @@ To turn on the clienteling functionality in your environment, follow these steps
 
 6. On the **Commerce parameters** page, on the **Clienteling** tab, in the **Client book attribute group** field, select the attribute group that you just created.
 
-    ![Client book attribute group selected](./media/Client%20book%20attributes.png "Client book attribute group selected")
+    ![Client book attribute group selected.](./media/Client%20book%20attributes.png "Client book attribute group selected")
 
 7. To capture activities that occur at the POS, define the activity types on the **Activity types** page (**Retail and Commerce \> Customers \> Activity types**).
 
@@ -99,7 +99,7 @@ To turn on the clienteling functionality in your environment, follow these steps
 
 After you've completed this procedure, sales associates can open the customer details page at the POS, and add customers to their client book, view and capture activities and notes for customers, and target customers by using customer and client book attributes to filter the client book. The following illustration shows an example of a client book.
 
-![Example of a client book](./media/client_book.png "Example of a client book")
+![Example of a client book.](./media/client_book.png "Example of a client book")
 
 ## Turn on the integration of Customer Insights with Commerce
 
@@ -127,7 +127,7 @@ Follow these steps to set up the integration.
 - Under **Secrets** section:
     - **Name**: Any name, for example "CISecret".
     - **Description**: Any value.
-    - **Secret**: **vault**://<Name of key vault>/<name of secret>> In this  example it will be "vault://KeyVaultName/SecretName".
+    - **Secret**: **vault**:`//<Name of key vault>/<name of secret>>` In this  example it will be `vault://KeyVaultName/SecretName`.
 
 After you update the fields, select **Validate** to ensure the secret can be accessed by the Commerce application.
 

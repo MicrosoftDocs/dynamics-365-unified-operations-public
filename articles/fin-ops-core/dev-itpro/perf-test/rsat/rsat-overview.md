@@ -1,9 +1,9 @@
 ---
-title: Regression suite automation tool
-description: The Regression suite automation tool lets you record business tasks using the task recorder and convert them into automated tests without writing code.
+title: Regression suite automation tool (RSAT)
+description: The Regression suite automation tool (RSAT) lets you record business tasks using the task recorder and convert them into automated tests without writing code.
 author: FrankDahl
-ms.date: 01/15/2021
-ms.topic: article
+ms.date: 12/07/2021
+ms.topic: overview
 ms.prod:
 ms.technology:
 
@@ -11,9 +11,9 @@ ms.technology:
 # ROBOTS:
 audience: Developer
 # ms.devlang:
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm:
-ms.custom: 21631
+
 ms.search.region: Global
 # ms.search.industry:
 ms.author: fdahl
@@ -22,7 +22,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Regression Suite Automation Tool
+# Regression suite automation tool (RSAT)
 
 [!include [banner](../../includes/banner.md)]
 
@@ -30,19 +30,19 @@ The Regression suite automation tool (RSAT) significantly reduces the time and c
 
 RSAT is fully integrated with Microsoft Azure DevOps for test execution, reporting, and investigation. Test parameters are decoupled from test steps and stored in Microsoft Excel files.
 
-RSAT usage is described in these topics:
+In addition to this topic, RSAT usage is described in these topics:
 
-+ [Regression Suite Automation Tool (this topic)](rsat-overview.md)
-+ [Regression Suite Automation Tool installation and configuration](rsat-install-configure.md)
-+ [Run Regression Suite Automation Tool test cases](rsat-run.md)
-+ [Maintain test cases within Regression suite automation tool](rsat-maintain-test-cases.md)
++ [Regression suite automation tool (RSAT) installation and configuration](rsat-install-configure.md)
++ [Run Regression suite automation tool (RSAT) test cases](rsat-run.md)
++ [Run Regression suite automation tool (RSAT) with parallel execution](rsat-parallel-execution.md)
++ [Maintain test cases within Regression suite automation tool (RSAT)](rsat-maintain-test-cases.md)
 + [Validate expected values](rsat-validate-expected.md)
 + [Chain test cases](rsat-chain-test-cases.md)
 + [Derived test cases](rsat-derived-test-cases.md)
 + [Configure non-administrator users to use RSAT](rsat-configure-nonadmin.md)
 + [Upgrade the parameter files](rsat-upgrade-parameter-files.md)
-+ [Regression Suite Automation Tool best practices](rsat-best-practices.md)
-+ [Troubleshoot the Regression Suite Automation Tool](rsat-troubleshooting.md)
++ [Regression suite automation tool (RSAT) best practices](rsat-best-practices.md)
++ [Troubleshoot the Regression suite automation tool (RSAT)](rsat-troubleshooting.md)
 
 ## Getting started videos
 
@@ -74,9 +74,9 @@ The [Improved Excel experience in RSAT 2.0](https://youtu.be/fcEkSIVQ1Bg) video 
 
 ## End-to-end flow
 
-RSAT is part of the end to end flow described below. RSAT, Microsoft Dynamics Lifecycle Services (LCS), and Azure DevOps provide a set of tools for test case authoring (using Task recorder), distribution, configuration, execution, investigation, and reporting.
+RSAT is part of the end-to-end flow described below. RSAT, Microsoft Dynamics Lifecycle Services (LCS), and Azure DevOps provide a set of tools for test case authoring (using Task recorder), distribution, configuration, execution, investigation, and reporting.
 
-![Author, configure, and execute](media/end-to-end.png)
+![Author, configure, and execute.](media/end-to-end.png)
 
 To learn more about this this process, see [Create and automate user acceptance tests](../../lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md).
 
@@ -86,19 +86,19 @@ You aren't required to use the Business process modeler (BPM) tool in LCS. BPM i
 
 If you are not using BPM, you can manually create test cases in Azure DevOps and attach developer recording files to your Azure DevOps test cases. You can create developer recording files directly from the Task recorder pane.
 
-![Save task recording as developer](media/save-as-developer.png)
+![Save task recording as developer.](media/save-as-developer.png)
 
 You must name the developer recording file **Recording.xml** before attaching it to the Azure DevOps test case. Alternatively, you can name the recording file **-Test Case Title-.xml**, where **-Test Case Title-** is the DevOps title of the test case.
 
-![Add attachment](media/attachments.png)
+![Add attachment.](media/attachments.png)
 
 ## Intended usage and test classification
 
 ### Business cycle (business process) testing
 
-The Regression suite automation tool is intended to be used for business cycle tests and scenario tests (multiple component tests) that usually occur at the end of the development lifecycle. This is also referred to as *user acceptance testing*. Business cycle testing consists of a smaller number of test cases than component or unit testing. This is illustrated in the following graphic.
+RSAT is intended to be used for business cycle tests and scenario tests (multiple component tests) that usually occur at the end of the development lifecycle. This testing is also referred to as *user acceptance testing*. As the following illustration shows, business cycle testing consists of fewer test cases than component testing or unit testing.
 
-![Unit tests, component tests, multiple component tests, business cycle tests](media/business-cycle.png)
+![Unit tests, component tests, multiple component tests, business cycle tests.](media/business-cycle.png)
 
 ### Cloud POS
 
@@ -134,25 +134,25 @@ Use the left navigation pane to navigate between the test plan, settings, Cloud 
 
 The **Test plan** tab is the main tab that allows you to interact with and execute test cases.
 
-![UI Test Plans Tab](media/UI-test-plans-tab.png)
+![UI Test Plans Tab.](media/UI-test-plans-tab.png)
 
 ### Settings
 
-Select the **Settings** tab to configure RSAT settings. Use the top bar to navigate between general, optional and process settings. You do not need to save your settings, settings are automatically saved as soon as you navigate out of the settings page. You can also save your settings in an RSAT settings file or open an existing settings file.
+Select the **Settings** tab to configure RSAT settings. Use the top bar to navigate between general, optional and process settings. You do not need to save your settings. Settings are automatically saved as soon as you navigate out of the settings page. You can also save your settings in an RSAT settings file or open an existing settings file.
 
-![UI Settings Tab](media/UI-settings-tab.png)
+![UI Settings Tab.](media/UI-settings-tab.png)
 
 ### Cloud POS Settings
 
-Select the **Cloud POS Settings** tab to configure RSAT to execute Cloud POS test cases. You do not need to save your settings, settings will automatically be saved as soon as you navigate out of the settings page.
+Select the **Cloud POS Settings** tab to configure RSAT to execute Cloud POS test cases. You do not need to save your settings. Settings will automatically be saved as soon as you navigate out of the settings page.
 
-![UI Cloud POS Tab](media/UI-cloud-POS-tab.png)
+![UI Cloud POS Tab.](media/UI-cloud-POS-tab.png)
 
 ### Useful links
 
 The **Links** tab provides new functionality. Select the **Links** tab to quickly navigate to your Finance and Operations environment, Cloud POS, or go to useful Azure DevOps pages showing recent test runs, the last test run, and current test plan. There is also a link to the RSAT docs page.
 
-![UI Links Tab](media/UI-links-tab.png)
+![UI Links Tab.](media/UI-links-tab.png)
 
 ### Quick navigation to Azure DevOps
 
@@ -164,7 +164,7 @@ When working with your test plan, the **Open** button now provides 3 options.
 
 This tab provides quick access to the most relevant pages in Azure DevOps.
 
-![UI DevOps Navigate](media/UI-DevOps-navigate.png)
+![UI DevOps Navigate.](media/UI-DevOps-navigate.png)
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

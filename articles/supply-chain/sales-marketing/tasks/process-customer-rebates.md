@@ -3,7 +3,7 @@
  
 title: Generate and process customer rebates
 description: This procedure demonstrates how to process customer rebates from claim generation to the point of passing them as accruals to Accounts receivable. 
-author: omulvad
+author: Henrikan
 ms.date: 06/25/2019
 ms.topic: business-process 
 ms.prod:  
@@ -19,9 +19,9 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Generate and process customer rebates
 
@@ -72,7 +72,7 @@ This procedure demonstrates how to process customer rebates from claim generatio
 2. Click **Cumulate**.
 3. In the **Customer** field, enter or select a value.
 4. In the **Start date** field, select today's date.
-5. Click **OK**. As a result of running the **Cumulate** function, the estimated claim amount has now been adjusted to account for the fact that the customer's total sales volume in the relevant period is higher than when the first rebate was generated. More specifically, because the total purchased quantity has reached 100 units, the customer now qualifies for 40 USD per unit (as per the agreement's second quantity break), or 400 USD of total rebate amount. The difference is recorded as a new claim "adjustment" for the additional 800 USD. The status of the rebate claims that were included in the Cumulate update are now set to Calculated. 
+5. Click **OK**. As a result of running the **Cumulate** function, the estimated claim amount has now been adjusted to account for the fact that the customer's total sales volume in the relevant period is higher than when the first rebate was generated. More specifically, because the total purchased quantity has reached 100 units, the customer now qualifies for 40 USD per unit (as per the agreement's second quantity break), or 4,000 USD of total rebate amount. The difference is recorded as a new claim "adjustment" for the additional 800 USD. The status of the rebate claims that were included in the Cumulate update are now set to Calculated. 
 6. In the list, mark all rows.
 7. Click **Approve**.
 8. Click **Process**.

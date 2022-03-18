@@ -7,7 +7,7 @@ author: peter-xu
 ms.date: 04/28/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+
 ms.technology: 
 
 # optional metadata
@@ -37,7 +37,7 @@ If the calculated tax on a business document is incorrect, follow the steps in t
 1. Go to **Tax** \> **Setup** \> **Tax configuration** \> **Tax setup**.
 2. On the **Tax setup** page, select the company that you're working in, and then select **Setup**.
 
-    [![Setup button on the Tax setup page](./media/tax-amount-wrong-Picture1.png)](./media/tax-amount-wrong-Picture1.png)
+    [![Setup button on the Tax setup page.](./media/tax-amount-wrong-Picture1.png)](./media/tax-amount-wrong-Picture1.png)
 
 3. In the tax document, go to the **Header** \> **Lines** \> **GST** \> **CGST** \> **Rate** to find the corresponding rate node.
 4. Based on the conditions, determine whether your transaction uses the correct rate. You can view the transaction details in the tax document by selecting **View tax input**. For more information, see [Tax isn't calculated](apac-ind-GST-troubleshooting-tax-not-calculated.md).
@@ -53,17 +53,17 @@ Follow these steps to verify that the tax base is correct.
     - **Exempt** – If this option is set to **Yes**, GST won't be calculated.
     - **Non-GST** – If this option is set to **Yes**, tax that has a tax type other than GST, such as value-added tax (VAT), will be calculated.
 
-    [![Settings in the Tax information dialog box](./media/tax-amount-wrong-Picture3.png)](./media/tax-amount-wrong-Picture3.png)
+    [![Settings in the Tax information dialog box.](./media/tax-amount-wrong-Picture3.png)](./media/tax-amount-wrong-Picture3.png)
 
 3. Verify that the information on the **Price and discount** tab on the **Line details** FastTab meets your requirements.
 
-    [![Price and discount tab on the Line details FastTab](./media/tax-amount-wrong-Picture4.png)](./media/tax-amount-wrong-Picture4.png)
+    [![Price and discount tab on the Line details FastTab.](./media/tax-amount-wrong-Picture4.png)](./media/tax-amount-wrong-Picture4.png)
 
 ## Verify that the adjustment was applied
 
 Open the tax document, and then, on the **Total** FastTab, compare the values in the **Total of Tax Amount** and **Adjusted total of Tax Amount** fields. If they differ, the adjustment was applied.
 
-[![Totals FastTab on the Tax document page](./media/tax-amount-wrong-Picture5.png)](./media/tax-amount-wrong-Picture5.png)
+[![Totals FastTab on the Tax document page.](./media/tax-amount-wrong-Picture5.png)](./media/tax-amount-wrong-Picture5.png)
 
 ## Determine whether customization exists
 

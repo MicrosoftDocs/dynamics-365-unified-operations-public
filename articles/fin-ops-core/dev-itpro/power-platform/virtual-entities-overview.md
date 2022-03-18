@@ -5,9 +5,10 @@ title: Virtual entities overview
 description: This topic provides general information about virtual entities for Finance and Operations apps.
 author: RamaKrishnamoorthy
 ms.date: 05/14/2021
-ms.topic: article
+ms.topic: overview
 audience: IT Pro
 ms.reviewer: sericks
+
 ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2021-05-31
@@ -28,13 +29,13 @@ All Open Data Protocol (OData) entities in Finance and Operations apps are avail
 
 ## Virtual entities for core Human Resources
 
-Core Human Resources entities can also be virtualized, just as Finance and Operations entities can. For more information, see [Core HR virtual entities](/human-resources/hr-admin-integration-common-data-service-virtual-entities).
+Core Human Resources entities can also be virtualized, just as Finance and Operations entities can. For more information, see [Configure Dataverse virtual tables](../../../human-resources/hr-admin-integration-common-data-service-virtual-entities.md).
 
 ## Architecture
 
 Virtual entities are a Dataverse concept that is useful beyond Finance and Operations apps. The following illustration shows how the Finance and Operations provider for virtual entities is implemented. The provider implements six primary methods. The first five methods are the standard CRUD operations: **Create**, **Update**, **Delete**, **Retrieve**, and **RetrieveMultiple**. The last method, **PerformAction**, is used to call OData actions, as described later in this topic. Calls to the Finance and Operations virtual entity data provider (shown as "virtual entities plug-in" in the illustration) will cause a Secure Sockets Layer (SSL)/Transport Layer Security (TLS) 1.2 secure web call to the CDSVirtualEntityService web API endpoint of Finance and Operations apps. This web service then converts the queries into calls to the associated physical entities in Finance and Operations apps, and invokes CRUD or OData operations on those entities. Because a Finance and Operations entity is directly invoked in all operations, any business logic on the entity or its backing tables is also invoked.
 
-![Architecture of virtual entities for Finance and Operations apps](media/image1.png)
+![Architecture of virtual entities for Finance and Operations apps.](media/image1.png)
 
 During calls, there are two points of translation from Dataverse to Finance and Operations apps. The first point of translation occurs in the VE Plugin, which translates concepts such as entity physical names into Finance and Operations entity names. It also converts some well-known concepts, such as Company references. The web service call still uses the EntityCollection, Entity, and QueryExpression objects to express the operations that are performed, by using the translated entity names and concepts from the VE Plugin. Finally, the CDSVirtualEntityAdapterService web API in Finance and Operations apps completes the translation from QueryExpression to QueryBuildDataSource and other internal Finance and Operations language constructs.
 

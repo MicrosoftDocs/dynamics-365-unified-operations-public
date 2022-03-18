@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 29251
 ms.assetid: 58fea559-4d50-46f3-9a88-4cca1d882d04
@@ -38,7 +38,7 @@ This article provides information about the Section Stacked Chart subpattern. Th
 The Section Stacked Chart subpattern is used as part of the Operational Workspace pattern, specifically for a panorama section that contains one or two charts.
 
 ## Wireframe
-[![Wireframe for Section Stacked Chart](./media/sectionstackedchartwireframe.png)](./media/sectionstackedchartwireframe.png)
+[![Wireframe for Section Stacked Chart.](./media/sectionstackedchartwireframe.png)](./media/sectionstackedchartwireframe.png)
 
 ## Pattern changes for Microsoft Dynamics AX
 This pattern didn't exist for Microsoft Dynamics AX 2012.
@@ -70,7 +70,7 @@ The verification checklist shows the steps for manually verifying that the form 
 ## Examples
 Form: **FmClerkWorkspace** (**All workspaces** &gt; **Reservation Management**) 
 
-[![Section Stacked Chart example](./media/sectionstackedchartexample.png)](./media/sectionstackedchartexample.png)
+[![Section Stacked Chart example.](./media/sectionstackedchartexample.png)](./media/sectionstackedchartexample.png)
 
 ## Appendix
 ### Frequently asked questions

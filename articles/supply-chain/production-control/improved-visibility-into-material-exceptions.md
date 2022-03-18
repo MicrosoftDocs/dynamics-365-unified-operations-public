@@ -40,7 +40,7 @@ An unreleased BOM line or formula line requires attention if the raw material da
 
 In the following figure, the blue bar represents a production job that is scheduled on a resource. The job is scheduled to start on May 1, 2017 (2017/05/01). This date is the raw material date. In other words, the materials that are assigned to the job on the BOM and formula lines must be ready on this date. The other date in the figure, May 6, 2017 (2017/05/06), represents the workspace date. In this example, the raw material date is earlier than the workspace date. Therefore, the date when consumption of the raw material was supposed to start has passed, and the BOM and formula lines meet the criteria for requiring attention.
 
-![Example of a production job where the raw material date is earlier than the workspace date](./media/improved-visibility.png)
+![Example of a production job where the raw material date is earlier than the workspace date.](./media/improved-visibility.png)
 
 ## Unreleased material lines needing attention
 

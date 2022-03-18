@@ -237,7 +237,7 @@ The process for reversing the unrealized purchase VAT varies, depending on when 
 
     7.  On the Action Pane, on the **Reversal journal** tab, in the **Maintain** group, select **Post** to post the journal.
 
-        ![Reversal journal page](media/apac_tha_reversal_journal_page.png)
+        ![Reversal journal page.](media/apac_tha_reversal_journal_page.png)
 
 After you reverse the unrealized purchase VAT, the following tax transactions will be present.
 

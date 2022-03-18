@@ -5,7 +5,7 @@ author: pvillads
 ms.date: 02/06/2019
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 26731
 ms.assetid: 5c2378fe-cb34-4a81-a940-57d4e13eb282
 ms.search.region: Global
@@ -44,10 +44,10 @@ The rental company has had unfortunate events when customers rent cars using cre
 5.  Click **Open**. Loading the solution may take some time.
 6.  Make the **FleetManagement** project the startup project. In **Solution Explorer**, right-click the **Fleet Management** project, and choose **Set as StartUp Project** in the context menu.
 7.  In **Solution Explorer**, double-click the **Fleet Management** project to display its content.
-8.  Double-click the **Code** folder, and then double click the **Classes** folder of the Fleet Management project. Locate the **FMRentailCheckoutProcessor** class. Right-click this class, and then click **Open**. Alternatively, you can use the solution explorer search bar at the top of the solution explorer window. As you enter the name in the search bar, you'll see the corresponding artifacts selected in the solution explorer. You can now see the X++ code for the class. This class has a method named **FinalizeRentalCheckout**.
+8.  Double click the **Classes** folder of the Fleet Management project. Locate the **FMRentalCheckoutProcessor** class. Right-click this class, and then click **Open**. Alternatively, you can use the solution explorer search bar at the top of the solution explorer window. As you enter the name in the search bar, you'll see the corresponding artifacts selected in the solution explorer. You can now see the X++ code for the class. This class has a method named **FinalizeRentalCheckout**.
 9.  Place a breakpoint in this method on the line following the first comment. To do this, click in the margin to the left of the line of code where you want the debugger to pause execution. You can also click anywhere in the line of code, and then press F9. The following illustration shows a breakpoint, which is displayed as a red-filled circle in the margin. 
 
-    [![Breakpoint in FMRentalCheckoutProcessor](./media/redcirclemargin_builddebugproj.png)](./media/redcirclemargin_builddebugproj.png) 
+    [![Breakpoint in FMRentalCheckoutProcessor.](./media/redcirclemargin_builddebugproj.png)](./media/redcirclemargin_builddebugproj.png) 
 
     The FinalizeRentalCheckout method is called when a rental transaction is saved. This method calls the delegate named RentalTransactionAboutTobeFinalizedEvent. You can implement an event handler method, which is called by this delegate. The method that calls the delegate passes a parameter, named RentalConfirmation, which contains a value that indicates whether the rental should be allowed or blocked. If the rental is allowed, the value contains "true"; if it's blocked, the value contains "false". An event handler can change this value, based on any test the developer chooses to implement in code. In this case, we'll modify the code to test the expiration date of the credit card.
 10. Press F5 to start the application for debugging, or, on the **Debug** menu, click **Start Debugging**. It's important that you start the application in one of these ways. If you don't, the Visual Studio debugger won't start, so you won't hit any of the breakpoints you've set. **Note**: The debugger needs to relate code position to source positions. It does this through consuming PDB files produced alongside the assemblies and net modules. The debugger will load symbols from the PDB files as described in the settings in the global tools settings. To open the options page containing the setting that controls which symbols load, go to the **Tools** menu and choose **Options**. In the **Microsoft Dynamics 365 for Finance and Operations** group, select the **Debugging** page. If this option is selected, the system will load symbols from only the PDB files related to the artifacts in the current solution. This reduces the startup time significantly, so be sure it’s selected for this lab. Be aware that when this option is selected, it won’t be possible to see source code from entities outside of the current solution. After a few moments, the browser will start and display the startup object that was selected in the project.
@@ -58,20 +58,20 @@ The rental company has had unfortunate events when customers rent cars using cre
 12. Make a change to any existing rental. For example, click **Edit**, and change the time that the rental period started.
 13. Click **Save** to force a validation of the rental record. The method in which you placed a breakpoint is called. Execution pauses at the line of code that contains the breakpoint. 
 
-    [![Execution paused at breakpoint](./media/forcevalidation_builddebugproj.png)](./media/forcevalidation_builddebugproj.png) 
+    [![Execution paused at breakpoint.](./media/forcevalidation_builddebugproj.png)](./media/forcevalidation_builddebugproj.png) 
     
     While the application is paused at a breakpoint, you can examine the application state. Use the same techniques that you typically would for any application developed with Visual Studio. For example, place the cursor over a variable or a parameter to see its value in a tooltip. 
     
-    [![Tooltip for breakpoint while paused](./media/tooltip_builddebugproj.png)](./media/tooltip_builddebugproj.png)
+    [![Tooltip for breakpoint while paused.](./media/tooltip_builddebugproj.png)](./media/tooltip_builddebugproj.png)
 
 14. The other debugging tools in Visual Studio are available as well. For example, the **Locals** window shows all of the local variables for the location where execution has stopped. Click the **Locals** tab at the bottom of Visual Studio, and expand the **fmrentalrecord** variable. You will see the internal state of the record, showing the values of all the fields in the record. 
 
-    [![Locals window](./media/internalstate_builddebugproj.png)](./media/internalstate_builddebugproj.png) 
+    [![Locals window.](./media/internalstate_builddebugproj.png)](./media/internalstate_builddebugproj.png) 
     
     Notice the value of the **Vehicle** property of the **fmrentalrecord** variable. This property is a foreign key field in the **FMRental** table. The debugger allows us to peek into the related record in the FMVehicle table. It shows values that belong to the **AutoIdentification** field group.
 15. The **Breakpoints** window lists all of the breakpoints that have been set. Click the **Breakpoints** tab to see its content. 
 
-    [![Breakpoints window](./media/breakpoint_builddebugproj.png)](./media/breakpoint_builddebugproj.png)
+    [![Breakpoints window.](./media/breakpoint_builddebugproj.png)](./media/breakpoint_builddebugproj.png)
 
 16. Press F10 a few times to step through the code, line-by-line, and use the full complement of debugger features. Notice that the **Locals** window updates the values of variables immediately with each statement that's executed.
 17. On the toolbar, click **Continue**, or press F5
@@ -199,7 +199,7 @@ The preceding code is straightforward. The method is marked as handler for the r
 11. In the **Customer** drop-down list, select Adrian Lannin from the list, and then click **Save**. Execution pauses at the breakpoint that you set in the event-handler method.
 12. Press F10 three times to step through the code block. 
 
-    [![Stepping through code](./media/stepcodeblock_builddebugproj.png)](./media/stepcodeblock_builddebugproj.png)
+    [![Stepping through code.](./media/stepcodeblock_builddebugproj.png)](./media/stepcodeblock_builddebugproj.png)
     
 13. Press F5 to continue. You'll see that the customer has been disallowed.
 14. In the same rental, change the customer name to Phil Spencer, and then click **Update**. This time, the transaction is allowed.

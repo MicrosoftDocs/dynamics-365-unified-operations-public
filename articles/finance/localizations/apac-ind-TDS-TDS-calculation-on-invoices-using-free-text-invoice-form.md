@@ -7,7 +7,7 @@ author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+
 ms.technology: 
 
 # optional metadata
@@ -37,7 +37,7 @@ This topic explains how to calculate Tax Deducted at Source (TDS) on invoices by
 
 1. Go to **Accounts receivable \> Invoices \> All free text invoices**.
 
-    [![Free text invoice page](./media/apac-ind-TDS-57-1.png)](./media/apac-ind-TDS-57-1.png)
+    [![Free text invoice page.](./media/apac-ind-TDS-57-1.png)](./media/apac-ind-TDS-57-1.png)
 
 2. Select **New** to create a free text invoice, and enter the required details.
 3. Select the **Invoice** tab. In the **Withholding tax group** section, the **Nature of assessee** field shows the nature of assessee category of the customer.

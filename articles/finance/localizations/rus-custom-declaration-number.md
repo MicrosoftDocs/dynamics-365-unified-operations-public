@@ -46,7 +46,7 @@ When goods are received, their customs declaration numbers are manually entered.
 5. On the **Tracking dimensions** FastTab, in the row for **GTD number**, select the **Active** check box.
 6. Select **Save**.
 
-    ![A screenshot of a cell phone Description automatically generated](media/1%20Tracking%20dimension%20groups.jpg)
+    ![A screenshot of a cell phone Description automatically generated.](media/1%20Tracking%20dimension%20groups.jpg)
 
 ## Create a customs declaration number
 
@@ -63,7 +63,7 @@ Before you can register customs declaration numbers for newly received goods, yo
 5. In the **Country/region** field, select the country or region.
 6. Select **Save**.
 
-    ![State custom declaration numbers page](media/2%20State%20custom%20declaration%20numbers.jpg)
+    ![State custom declaration numbers page.](media/2%20State%20custom%20declaration%20numbers.jpg)
 
 ## Specify the customs declaration number in a purchase order
 
@@ -74,18 +74,18 @@ Before you can register customs declaration numbers for newly received goods, yo
 
 2. On the **Line details** FastTab, on the **Product** tab, in the **Tracking dimensions** section, in the **GTD number** field, select the customs declaration number that you created earlier.
 
-    ![Purchase orders page Line details FastTab](media/3%20All%20purchase%20orders.jpg)
+    ![Purchase orders page Line details FastTab.](media/3%20All%20purchase%20orders.jpg)
 
 3. Set other purchase order parameters, and create a facture in the usual way. Column 11 of the facture shows the information about the customs declaration number.
 
-    ![Invoice facture](media/4%20Invoice-facture.jpg)
+    ![Invoice facture for a purchase order.](media/4%20Invoice-facture.jpg)
 
 ## View the customs declaration number in the purchase book
 
 1. After the **Incoming VAT processing** procedure is completed, on the **Purchase books journal** page, on the Action Pane, select **Update** to update the purchase book.
 2. On the Action Pane, select **Lines**, and select the invoice that you just created. On the **General** tab, the **Custom decl. numbers** field shows the information about the facture and the customs declaration number.
 
-    ![Purchase book lines General tab](media/5%20Purchase%20book%20lines.jpg)
+    ![Purchase book lines General tab.](media/5%20Purchase%20book%20lines.jpg)
 
 ## Ship goods that have customs declaration numbers
 
@@ -93,11 +93,11 @@ Before you can register customs declaration numbers for newly received goods, yo
 2. On the **Line details** FastTab, on the **Setup** tab, in the **Reservation** field, select **Automatic**, so that the item is automatically reserved from existing receipts when you create a sales order line.
 3. On the **Product** tab, in the **Tracking dimensions** section, in the **GTD number** field, select the customs declaration number that you created earlier.
 
-    ![Sales order page Line details FastTab](media/6%20Sales%20order.jpg)
+    ![Sales order page Line details FastTab.](media/6%20Sales%20order.jpg)
 
 4. Set other sales order parameters, and create a facture in the usual way. Column 11 of the facture shows the information about the customs declaration number.
 
-    ![Invoice facture](media/7%20Invoice-facture.jpg)
+    ![Invoice facture for a sales order.](media/7%20Invoice-facture.jpg)
 
 
 

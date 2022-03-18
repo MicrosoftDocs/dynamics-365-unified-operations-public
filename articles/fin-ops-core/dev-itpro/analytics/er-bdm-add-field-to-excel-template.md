@@ -55,14 +55,14 @@ The **Free text invoice (Excel)** ER format configuration of this solution conta
 
 For more information about how to import ER configurations, see [Manage the ER configuration lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md).
 
-![LCS Shared asset library page](./media/BDM-AddFldExcel-LCS.png)
+![LCS Shared asset library page.](./media/BDM-AddFldExcel-LCS.png)
 
 ### Edit the ER solution template
 
 1.	Sign in as a user who has access to the **Business document management** workspace.
 2.	Open the **Business document management** workspace.
 
-    ![Business document management workspace](./media/BDM-AddFldExcel-Workspace.png)
+    ![Business document management workspace.](./media/BDM-AddFldExcel-Workspace.png)
 
 3.	In the grid, select the **Free text invoice (Excel)** template.
 4.	In the right pane, select **New template** to create a new template that is based on the selected template.
@@ -71,20 +71,20 @@ For more information about how to import ER configurations, see [Manage the ER c
 
 The BDM template editor page appears. You can use Microsoft 365 to edit the selected template online in the embedded control.
 
-![BDM template editor page](./media/BDM-AddFldExcel-EditableTemplate.png)
+![BDM template editor page.](./media/BDM-AddFldExcel-EditableTemplate.png)
 
 ### Add the label for a new field to the template
 
 1.	On the BDM template editor page, on the Excel ribbon, on the **View** tab, select the **Headings and Gridlines** check boxes for the editable Excel template.
 
-    ![Headings and Gridlines check boxes selected](./media/BDM-AddFldExcel-EditableTemplate2.png)
+    ![Headings and Gridlines check boxes selected.](./media/BDM-AddFldExcel-EditableTemplate2.png)
 
 2.	Select cells **E8:F8**.
 3.	On the Excel ribbon, on the **Home** tab, select **Merge & Center** to merge the selected cells into a new merged **E8:F8** cell.
 4.	In the merged cell **E8:F8**, enter **URL**.
 5.	Select merged cell **E7:F7**, select **Format painter**, and then select merged cell **E8:F8** to format it in the same way as merged cell **E7:F7**.
 
-    ![New field label added to the template](./media/BDM-AddFldExcel-EditableTemplate3.png)
+    ![New field label added to the template.](./media/BDM-AddFldExcel-EditableTemplate3.png)
 
 ### Format the template to reserve space for a new field
 
@@ -92,13 +92,13 @@ The BDM template editor page appears. You can use Microsoft 365 to edit the sele
 2.	On the Excel ribbon, on the **Home** tab, select **Merge & Center** to merge the selected cells into a new merged **G8:H8** cell.
 3.	Select merged cell **G7:H7**, select **Format painter**, and then select merged cell **G8:H8** to format it in the same way as merged cell **G7:H7**.
 
-    ![Space reserved for the new field](./media/BDM-AddFldExcel-EditableTemplate4.png)
+    ![Space reserved for the new field.](./media/BDM-AddFldExcel-EditableTemplate4.png)
 
 4.	In the **Name** box field, select **CompanyInfo**.
 
     The **CompanyInfo** range of the current Excel template holds all the fields that are used to fill the header of a generated report with the details of the current company as a seller party.
 
-    ![CompanyInfo range selected](./media/BDM-AddFldExcel-SelectCompanyInfoRange.png)
+    ![CompanyInfo range selected.](./media/BDM-AddFldExcel-SelectCompanyInfoRange.png)
 
 ### Add a new field to the template
 
@@ -108,7 +108,7 @@ The BDM template editor page appears. You can use Microsoft 365 to edit the sele
     > [!NOTE]
     > You must adjust the section of the template that you want to use as a new field. You already made this adjustment by formatting merged cell **G8:H8**.
 
-    ![Adding a new field to the template](./media/BDM-AddFldExcel-AddCell.png)
+    ![Adding a new field to the template.](./media/BDM-AddFldExcel-AddCell.png)
 
 3.	Select **Excel\Cell** to add a new field as a cell in the template.
 
@@ -119,11 +119,11 @@ The BDM template editor page appears. You can use Microsoft 365 to edit the sele
 4.	In the **Excel range** field, enter **CompanyURL_Value**.
 5.	Select **OK**.
 
-    ![CompanyURL_Value field added to the template structure](./media/BDM-AddFldExcel-EditableTemplate5.png)
+    ![CompanyURL_Value field added to the template structure.](./media/BDM-AddFldExcel-EditableTemplate5.png)
 
 6.	In the **Template structure** pane, select the ellipsis button (...), and then select **Show bindings**.
 
-    ![Show bindings selected](./media/BDM-AddFldExcel-ShowBindings.png)
+    ![Show bindings selected.](./media/BDM-AddFldExcel-ShowBindings.png)
 
     The **Template structure** pane now shows the data sources that are available in the underlying ER format.
 
@@ -131,21 +131,21 @@ The BDM template editor page appears. You can use Microsoft 365 to edit the sele
 8.	In the **Data sources** section of the **Template structure** pane, expand **Model \> InvoiceBase \> CompanyInfo**.
 9.	Under **CompanyInfo**, select the **WebsiteURI** item.
 
-    ![WebsiteURI item selected](./media/BDM-AddFldExcel-BindURL.png)
+    ![WebsiteURI item selected.](./media/BDM-AddFldExcel-BindURL.png)
 
 10.	Select **Bind**.
 11.	In the **Template structure** pane, select **Save**, and then close the BDM template editor page.
 
 In the **Business document management** workspace, the **Template** tab in the right pane shows the updated template. In the grid, notice that the **Status** field for the edited template has been changed to **Draft**, and the **Revision** field is no longer blank. These changes indicate that the process of editing this template has been started.
 
-![Edited template in the Business document management workspace](./media/BDM-AddFldExcel-Workspace2.png)
+![Edited template in the Business document management workspace.](./media/BDM-AddFldExcel-Workspace2.png)
 
 ## Review company settings
 
 1.	Go to **Organization administration \> Organizations \> Legal entities**.
 2.	On the **Contact information** FastTab, verify that the company URL is entered.
 
-![Company URL entered on the Legal entities page](./media/BDM-AddFldExcel-CompanyInfo.png)
+![Company URL entered on the Legal entities page.](./media/BDM-AddFldExcel-CompanyInfo.png)
 
 ## Generate business documents to test the updated template
 
@@ -155,13 +155,13 @@ In the **Business document management** workspace, the **Template** tab in the r
 4.	Under **Free text invoice**, select the **Original document** level to specify the scope of invoices for processing.
 5.	In the right pane, in the **Report format** field, select the **Free text invoice (Excel) Contoso** template for the specified document level.
 
-    ![Free text invoice (Excel) Contoso template selected](./media/BDM-AddFldExcel-PrintMngtSetting.png)
+    ![Free text invoice (Excel) Contoso template selected.](./media/BDM-AddFldExcel-PrintMngtSetting.png)
 
 6.	Press **Esc** to close the current page.
 7.	Select **Print \> Selected**.
 8.	Download the generated document, and open it in Excel.
 
-    ![Free text invoice in Excel](./media/BDM-AddFldExcel-PreviewReport.png)
+    ![Free text invoice in Excel.](./media/BDM-AddFldExcel-PreviewReport.png)
 
 The modified template is used to generate the free text invoice report for the selected item. To analyze how this report is affected by changes that you make to the template, run the report in one application session immediately after you change the template in another application session.
 

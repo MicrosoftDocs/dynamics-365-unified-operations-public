@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 31501
 ms.assetid: 57c0fa59-ef48-4913-9f92-407ff2566c72
@@ -35,11 +35,11 @@ This article is intended as a primer for using check box controls in the tree co
 
 Microsoft Dynamics AX 2012 includes several examples of tree controls that were enhanced so that they both show data in a tree hierarchy and let the user select one or more nodes by using check boxes. In Dynamics AX 2012, the tree control had no built-in support for check box controls. Instead, an image of a check box was added for each node in the tree control. The image state for each node was then toggled as the user clicked the check box. 
 
-![Screen shot of tree controls in previous version](./media/treecontrol_legacycheckbox.png) 
+![Screen shot of tree controls in previous version.](./media/treecontrol_legacycheckbox.png) 
 
 The current version has greatly simplified the experience for the developer. Check box support is now built into the tree control. 
 
-![Screen shot of tree controls in current version](./media/treecontrol_ax7checkbox.png) 
+![Screen shot of tree controls in current version.](./media/treecontrol_ax7checkbox.png) 
 
 You no longer have to use images to include a check box, and you also don't have to explicitly set the state of the check box state when it's selected. The control doesn’t use images, and the check box state is managed in the way that you would expect for a tri-state check box. Examples of tri-state check boxes can be found in most installation scenarios. When tri-state check boxes are used, if the user selects a parent node, all children of that parent also become selected. The check box interaction is independent of the node's expand/collapse functionality. When the parent node is collapsed (no children are visible), a check mark on the parent node indicates that all children are also selected. However, if one child of a parent that has multiple children isn't selected, the appearance of the parent node changes. The check box no longer contains a check mark but is filled in. This state is considered a partial check. Therefore, a parent node has three states:
 
@@ -51,31 +51,31 @@ If the user clicks the check box on a parent node that is in a partial state, th
 
 **Parent node in a partial state** 
 
-![Example of parent node in a partial state](./media/treecontrol_partialparent.png) 
+![Example of parent node in a partial state.](./media/treecontrol_partialparent.png) 
 
 **Parent node and all child nodes in a checked state after the parent node is selected**
 
-![Example of parent node and child nodes in a checked state](./media/treecontrol_parent.png) 
+![Example of parent node and child nodes in a checked state.](./media/treecontrol_parent.png) 
 
 If the user clicks the check box on a parent node that is in a checked state, the state of the parent and all its children changes to unchecked. (The parent node and all its child nodes are now cleared.) 
 
 **Parent node in a checked state** 
 
-![Example of parent node in a checked state](./media/treecontrol_parent.png)
+![Example of parent node in a checked state.](./media/treecontrol_parent.png)
 
 **Parent node and all child nodes in an unchecked state after the parent node is cleared** 
 
-![Example of parent node and child nodes in unchecked state](./media/treecontrol_noparent1.png) 
+![Example of parent node and child nodes in unchecked state.](./media/treecontrol_noparent1.png) 
 
 If the user clicks the check box on a parent node that is in an unchecked state, the state of the parent and all its children changes to checked. (The parent node and all its child nodes are now selected.) 
 
 **Parent node in an unchecked state** 
 
-![Example of parent node in an unchecked state](./media/treecontrol_noparent1.png) 
+![Example of parent node in an unchecked state.](./media/treecontrol_noparent1.png) 
 
 **Parent node and all child nodes in a checked state after the parent node is selected** 
 
-![Example of parent node and child nodes in a checked state](./media/treecontrol_parent.png) 
+![Example of parent node and child nodes in a checked state.](./media/treecontrol_parent.png) 
 
 A child node that has no children (in other words, a child node that isn't a parent itself) has only two states: checked and unchecked. A child node that is the only child in a checked state affects the state of its parent. If a child node is selected, the state of its parent changes to partial. **Note:** A single node in a tree also has a “selected” state to indicate that it's the current node. This state differs from the checked state.
 

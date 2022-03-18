@@ -3,12 +3,10 @@ title: Application Explorer properties
 description: This topic describes the properties that appear in the Properties window of Microsoft Visual Studio for items in Application Explorer.
 author: RobinARH
 ms.date: 11/03/2017
-ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
-ms.custom: 85213
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

@@ -2,9 +2,9 @@
 # required metadata
 
 title: Reporting options
-description: This article explains how to resolve the issue where a customer wants to customize Microsoft Dynamics 365 Human Resources reports or create new reports.
-author: andreabichsel
-ms.date: 02/03/2020
+description: This topic explains how to customize Microsoft Dynamics 365 Human Resources reports or create new reports.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
@@ -29,9 +29,12 @@ ms.dyn365.ops.version: Human Resources
 
 # Reporting options
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 **Environment details**
 

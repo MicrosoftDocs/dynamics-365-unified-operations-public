@@ -3,7 +3,7 @@
 
 title: Merge inventory batches
 description: This article provides information about how to consolidate two or more inventory batches into a merged batch.
-author: sherry-zheng
+author: yufeihuang
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod:
@@ -21,7 +21,7 @@ ms.custom: 39782
 ms.assetid: 07c5e98b-10fd-4f5c-b471-41d2150f47b0
 ms.search.region: Global
 # ms.search.industry:
-ms.author: chuzheng
+ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

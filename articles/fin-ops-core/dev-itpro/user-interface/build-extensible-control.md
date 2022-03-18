@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 24291
 ms.assetid: ccc9c341-a233-4bb0-93e7-399d19fdea18
@@ -65,7 +65,7 @@ Use Visual Studio to import the tutorial project. The tutorial project includes 
 6. In the **Project file location** field, enter **C:\FMLab**.
 7. Select the **Overwrite Elements** check box and the **Current solution** option. The following screen shot shows the completed **Import Project** dialog box. 
 
-   [![Completed Import Project dialog box](./media/ext1.png)](./media/ext1.png)
+   [![Completed Import Project dialog box.](./media/ext1.png)](./media/ext1.png)
 
 8. Click **OK**.
 9. In Solution Explorer, under the **FMTutorial** project, expand **Classes**.
@@ -89,7 +89,7 @@ Before you begin to build the contact control, look at the appearance of the cur
 1.  In Solution Explorer, expand **Forms**, right-click **FMTClerkWorkspace**, and then click **Set as Startup Object**.
 2.  Press Ctrl+F5 to open the **Fleet management clerk** page in Internet Explorer. As the following screen shot shows, the data on this page appears as a simple grid in a list style that contains several string and date controls. 
 
-    [![Screen shot of Fleet management clerk page](./media/ext2-1024x515.png)](./media/ext2.png)
+    [![Screen shot of Fleet management clerk page.](./media/ext2-1024x515.png)](./media/ext2.png)
 
 3.  Exit Internet Explorer.
 
@@ -102,15 +102,15 @@ To see an example of a build class, in Solution Explorer, expand **Classes**, ri
 
 -   **Name** – You can specify the control name that appears in the form designer when you add the control to a form. To specify the name, add a **FormDesignControlAttribute** attribute to the build class declaration of the extensible control. For example, the following declaration of the **FMTBuildContactControl** class shows the attribute. 
 
-    [![Example of FormDesignControlAttribute added to build class declaration](./media/x1.png)](./media/x1.png)
+    [![Example of FormDesignControlAttribute added to build class declaration.](./media/x1.png)](./media/x1.png)
 
 -   **Designer properties** – These are the properties that you see in the property sheet when you add the control to a form. There are several attributes that let you add various types of designer properties. For example, the **FormDesignPropertyAttribute** attribute adds a property to the property sheet, and the property name and the section are supplied as arguments to the attribute. For example, the following code adds the **Action Name** property to the **FMTContactControlAction** class. 
 
-    [![Example of code with Action Name property added](./media/x2.png)](./media/x2.png)
+    [![Example of code with Action Name property added.](./media/x2.png)](./media/x2.png)
 
     The following screen shot shows how this property appears in the **Properties** pane in Visual Studio. 
 
-    [![Screen shot of Properties pane](./media/ext3.png)](./media/ext3.png)
+    [![Screen shot of Properties pane.](./media/ext3.png)](./media/ext3.png)
 
 -   **Child design components** – These are child nodes that you see after you add the control to a form. There are two types of child design components: leaf and leaf collection.
     -   A leaf is defined by using a **FormDesignComponentAttribute** attribute on an X++ method that accepts or returns another build class. The build class determines the properties that the leaf has in the property sheet.
@@ -118,11 +118,11 @@ To see an example of a build class, in Solution Explorer, expand **Classes**, ri
 
     For example, the following code adds a leaf collection that is named **Actions** for the **FMTBuildContactControl** class. 
 
-    [![Example of code with Actions leaf collection added](./media/x3.png)](./media/x3.png) 
+    [![Example of code with Actions leaf collection added.](./media/x3.png)](./media/x3.png) 
 
     The following screen shot shows how the specified child design component appears when you add the control to a form. 
 
-    [![Screen shot after control added to form](./media/ext4.png)](./media/ext4.png)
+    [![Screen shot after control added to form.](./media/ext4.png)](./media/ext4.png)
 
 
 ### Tutorial steps
@@ -131,11 +131,11 @@ To see an example of a build class, in Solution Explorer, expand **Classes**, ri
 2.  Add a child design component to the FMTBuildContactControl class. A child design component lets a developer who places the control in a form to specify the image that appears on the control. In this step, you will add the **FormDesignComponentAttribute** attribute to create a new entry in the property sheet. You will then add the **FormDesignPropertyDataFieldAttribute** attribute, which indicates that the new designer property enables the selection of a data field.
     1.  Add the highlighted code that follows to the declarations for the class. This code adds the **FormBindingDataField** field to the X++ that the **FMTBuildContactControl** class is using. 
 
-        [![Example of code that adds the FormBindingDataField field](./media/x4.png)](./media/x4.png)
+        [![Example of code that adds the FormBindingDataField field.](./media/x4.png)](./media/x4.png)
 
     2.  Add the following code to the **FMTBuildContactControl** class. Add this method after the designer property for the data source. 
 
-        [![Example of code to add to the FMTBuildContactControl class](./media/x5.png)](./media/x5.png)
+        [![Example of code to add to the FMTBuildContactControl class.](./media/x5.png)](./media/x5.png)
 
         > [!NOTE]
         > The child design component will show the properties that are available on the **FormBindingDataField** build class. This is appropriate, because you want to enable image data binding to a data field and data source. This is all that is required to add a designer property to the build class of the contact control.
@@ -146,7 +146,7 @@ To see an example of a build class, in Solution Explorer, expand **Classes**, ri
 6.  In the form designer, expand **Design** &gt; **PickingUpTodayGrid**, and then select and delete the controls that currently appear in the grid.
 7.  Right-click **PickingUpTodayGrid**, point to **New**, and then click **FMTContactControl**. Expand the **FMTContactControl** node, and notice that **Image** appears as a new child design component. The following illustration shows the contact control in the form designer. 
 
-    [![Screen shot of contact control in the form designer](./media/ext5.png)](./media/ext5.png) 
+    [![Screen shot of contact control in the form designer.](./media/ext5.png)](./media/ext5.png) 
 
     You must also update the run-time class for the contact control to consume the design-time changes. You will revisit adding the control to the form and specifying data bindings and property values later.
 8.  Press Ctrl+S to save your changes, and then close the form designer.
@@ -164,7 +164,7 @@ To see an example of the run-time class, in Solution Explorer, expand **Classes*
 
     Run-time properties are declared by using **FormPropertyAttribute** attributes. The following example shows a property declaration in **FMTContactControl**. 
 
-    [![Example of a property declaration in FMTContactControl](./media/x6.png)](./media/x6.png)
+    [![Example of a property declaration in FMTContactControl.](./media/x6.png)](./media/x6.png)
 
     The **FormPropertyAttribute** attribute accepts two arguments:
     -   The first argument indicates to the framework the kind of JavaScript view model property to create.
@@ -177,29 +177,29 @@ To see an example of the run-time class, in Solution Explorer, expand **Classes*
 
 -   **Run-time commands for the control** – Commands enable the client parts of the control to trigger X++ logic, based on client-side user interactions. Commands are declared by using a **FormCommandAttribute** attribute. The single argument specifies the name of the command as it will appear in the JavaScript view model. The following example shows a command declaration in **FMTContactControl**. 
 
-    [![Example of a command declaration in FMTContactControl](./media/x7.png)](./media/x7.png)
+    [![Example of a command declaration in FMTContactControl.](./media/x7.png)](./media/x7.png)
 
 ### Tutorial steps
 
 1.  Verify that the **FMTContactControl** class is open in the code editor. If it isn't, in Solution Explorer, expand **Classes**, right-click **FMTContactControl**, and then click **View Code**.
 2.  Add a run-time property for the image data to **FMTContactControl**. In the **FMTContactControl** class, declare a **FormProperty** that is named **imageFieldProperty**, as shown by the highlighted line in the following example. 
 
-    [![Example of declaration of a FormProperty named imageFieldProperty](./media/x8.png)](./media/x8.png)
+    [![Example of declaration of a FormProperty named imageFieldProperty.](./media/x8.png)](./media/x8.png)
 
 3.  Add the following X++ method after the **parmDataSource** X++ method. The new method will serve as the getter/setter for **imageFieldProperty**.
 
     > [!NOTE]
     > You don't return the value of the image data here, because the framework will let you bind to the data in the client, as you will see later. 
 
-    [![Example of code with added X++ method](./media/x9.png)](./media/x9.png)
+    [![Example of code with added X++ method.](./media/x9.png)](./media/x9.png)
 
 4.  Initialize **imageFieldProperty** by adding the highlighted line in the following example to the new method of **FMTContactControl**. 
 
-    [![Example of initialized imageFieldProperty](./media/x10.png)](./media/x10.png)
+    [![Example of initialized imageFieldProperty.](./media/x10.png)](./media/x10.png)
 
 5.  Now supply the binding to **imageFieldProperty** by adding the highlighted line in the following example to the **applyBuild** method of **FMTContactControl**. 
 
-    [![Example of code that supplies binding to imageFieldProperty](./media/x11.png)](./media/x11.png)
+    [![Example of code that supplies binding to imageFieldProperty.](./media/x11.png)](./media/x11.png)
 
 6.  Press Ctrl+S to save the changes. You've now finished modifying the run-time class. Next, you will update the HTML view to display the image.
 
@@ -210,19 +210,19 @@ The HTML of the contact control is where you add UI elements, such as text boxes
 
 The **bind** attribute, together with the **text** binding handler enables binding to the **text** property of an HTML element. For example, the following HTML uses the **bind** attribute and the **text** binding handler. 
 
-[![Example of HTML code using bind attribute and text binding handler](./media/x12.png)](./media/x12.png) 
+[![Example of HTML code using bind attribute and text binding handler.](./media/x12.png)](./media/x12.png) 
 
 The preceding HTML is equivalent to the following HTML. 
 
-[![Example of equivalent HTML code](./media/x13.png)](./media/x13.png) 
+[![Example of equivalent HTML code.](./media/x13.png)](./media/x13.png) 
 
 You will see the benefits of the binding when you bind to properties or commands. For example, if you have a view model property that is named **FirstName**, you can bind to it as shown in the following example. Here, **$data** is the object that contains the view model properties and commands. 
 
-[![Example of HTML code that binds to properties or commands](./media/x14.png)](./media/x14.png) 
+[![Example of HTML code that binds to properties or commands.](./media/x14.png)](./media/x14.png) 
 
 The HTML output changes, based on the current value of **FirstName**. The following example shows the output if **FirstName** has a value of **John**. 
 
-[**![Example of changed HTML output](./media/x15.png)**](./media/x15.png) 
+[**![Example of changed HTML output.](./media/x15.png)**](./media/x15.png) 
 
 If the value of the **FirstName** property changes for some reason (for example, X++ or JavaScript was run to update the property), the binding is automatically reevaluated, and the HTML output immediately reflects the change. All binding handlers follow this pattern of automatic reevaluation when the binding value changes. The **if** and **foreach** binding handlers are unique in that they perform DOM manipulation based on the binding values.
 
@@ -239,15 +239,15 @@ The following table shows some of the other binding handlers.
 
 In addition to using HTML elements inside the HTML for your control, you can also add framework controls such as CheckBox, Group, Tile, SectionContainer, Label, and List to your control. Instead of binding handlers, each framework control enables binding values to be passed to its view model properties. For example, a **CommandButton** is added by using the **role** attribute. 
 
-[![Code example that adds a CommandButton](./media/x16.png)](./media/x16.png) 
+[![Code example that adds a CommandButton.](./media/x16.png)](./media/x16.png) 
 
 In this case, **ActionCommand** can be supplied with a JavaScript function. 
 
-[![Code example of ActionCommand supplied with JavaScript function](./media/x17.png)](./media/x17.png) 
+[![Code example of ActionCommand supplied with JavaScript function.](./media/x17.png)](./media/x17.png) 
 
 One additional feature of the HTML binding syntax is the context-aware nature of bindings. By default, the context of all HTML elements is set to the JavaScript view model for the control. However, the context changes in certain circumstances. For example, for a **foreach** binding, every child element that is nested inside the hosting element (the element that has the **foreach** binding) obtains the current item in the loop as the context. To access the context of the parent element when you're inside of a **foreach** binding, use the **$parent** object. The following example from FTMContactControl.htm will help make this point clearer. 
 
-[![Code example showing context-aware nature of bindings](./media/x18.png)](./media/x18.png) 
+[![Code example showing context-aware nature of bindings.](./media/x18.png)](./media/x18.png) 
 
 **Actions** is a List property that is available on the control's JavaScript view model. This property was defined in the **FMTContactControl** run-time class. Each action in the **Actions** list has **Data Source**, **Data Field**, and **Action Name** properties. Within the **foreach** loop, **$data** refers to the current action, and **$data.ActionName** cam retrieve the **ActionName** property from the current action in the loop. Within the loop, view model properties on the control aren't accessible via **$data**. Instead, **$parent** can be used to retrieve the view model properties.
 
@@ -258,7 +258,7 @@ Add the HTML for the **ImageField** property that you created in the run-time cl
 1.  In Solution Explorer, expand the **Resources** folder under the **FMTutorial** project, and double-click **FMTContactControlHTM**. The FMTContactControl.htm file opens in the HTML editor.
 2.  Add the following HTML to the FMTContactControl.htm HTML. The gray text is shown just for placement context. 
 
-    [![HTML code to be added](./media/x19.png)](./media/x19.png)
+    [![HTML code to be added.](./media/x19.png)](./media/x19.png)
 
 3.  Press Ctrl+S to save the changes to FMTContactControl.htm.
 
@@ -271,11 +271,11 @@ As was mentioned earlier, for every X++ method that has either a **FormPropertyA
 
 The Control Extensibility Framework offers many functions that help with data bindings and data access. Some of the functions that are used in FMTContactControl.htm, such as **$field** or **$model**, make it easy to access the data source and its fields from the HTML bindings. These functions are functional aliases that are used in the HTML bindings for JavaScript functions that are defined by the framework. Within the extended JavaScript view model, the equivalent, non-aliased functions are **$dyn.getField** and **$dyn.getModel**. You can also use jQuery within the extended JavaScript view model by using the **$** symbol. The following example shows the standard pattern that is used to define a constructor for the extended JavaScript view model. In this example, you save a reference to **this**, apply the base **Control** class behaviors, and then combine the automatically generated properties and commands with the properties and command from the extended view model. 
 
-[![Code example showing standard pattern used to define a constructor for the extended JavaScript view model](./media/x20.png)](./media/x20.png) 
+[![Code example showing standard pattern used to define a constructor for the extended JavaScript view model.](./media/x20.png)](./media/x20.png) 
 
 The **self** variable now contains all properties and commands that are generated from the X++ run-time class. The following example shows how to add a client-only property to extend the view model. 
 
-[![Code example with client-only property added to extend the view model](./media/x21.png)](./media/x21.png) 
+[![Code example with client-only property added to extend the view model.](./media/x21.png)](./media/x21.png) 
 
 The **self** variable will then contain all the properties and commands that are generated from the X++ run-time class, and also the **ActionTypes** property that was added as a client-only property. There are many more topics that are related to building view models for controls, but they are outside the scope of this tutorial. For this tutorial, we don’t need to make any changes to the view model for **FMTContactControl**. Therefore, you can close the FMTContactControl.js file and proceed to the next section.
 

@@ -15,7 +15,7 @@ ms.search.form: SysAADClientTable, RetailTransactionServiceProfile
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 44351
 ms.search.region: Global
@@ -31,7 +31,7 @@ ms.search.validFrom: 2019-03-01
 
 This topic provides an overview of the various Dynamics 365 Commerce in-store topologies. 
 
-<a href="/dynamics365/unified-operations/retail/dev-itpro/media/channel/instore/topology.jpg" rel="some text">![Choose the right store topology](media/CHANNEL/INSTORE/Topology.jpg)</a>
+<a href="/dynamics365/unified-operations/retail/dev-itpro/media/channel/instore/topology.jpg" rel="some text">![Choose the right store topology.](media/CHANNEL/INSTORE/Topology.jpg)</a>
 
 ## Supported capabilities when connectivity is lost
 | Operation | Without connectivity to Commerce Scale Unit<br>(in MPOS Offline Mode) | Without connectivity to HQ<br>(Commerce Scale Unit (self-hosted)) |

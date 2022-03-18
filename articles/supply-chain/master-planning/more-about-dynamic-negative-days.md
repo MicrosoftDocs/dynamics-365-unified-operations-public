@@ -39,7 +39,7 @@ You might get demand either relatively early in your item's lead time or just be
 
 The following illustration shows a graphical view of this scenario.
 
-![Graphical view of scenario 1](./media/negative-days-1.jpg)
+![Graphical view of scenario 1.](./media/negative-days-1.jpg)
 
 ### Case A: Negative days are less than the item's lead time
 
@@ -47,11 +47,11 @@ If you set the negative days to a number that is less than the item's lead time,
 
 The following illustration shows a screenshot of this case.
 
-![Screenshot of case A for scenario 1](./media/negative-days-2.png)
+![Screenshot of case A for scenario 1.](./media/negative-days-2.png)
 
 The following illustration shows a graphical view of what occurs in this case.
 
-![Graphical view of case A for scenario 1](./media/negative-days-3.png)
+![Graphical view of case A for scenario 1.](./media/negative-days-3.png)
 
 If you consider MRP performance and plan nervousness, this case doesn't perform well. MRP must create a new planned order, and must calculate delays and actions. These tasks are time-consuming. This case also adds two more transactions to your plan. On the other hand, the sales order is delayed by only six days, not seven days.
 
@@ -69,11 +69,11 @@ Dynamic negative days time fence = Purchase lead time + Negative days time fence
 
 When dynamic negative days are used, the time fence that MRP looks at for receipts is now 6 + 2 + 0 = 8 days. MRP finds the existing purchase order and pegs the sales order against it. No new planned orders are created. Therefore, the running time for MRP is shorter. The following illustration shows the net requirements for the DemoProduct item.
 
-![Net requirements for case C for scenario 1](./media/negative-days-4.png)
+![Net requirements for case C for scenario 1.](./media/negative-days-4.png)
 
 The following illustration shows a graphical view of what occurs in this case.
 
-![Graphical view of case C for scenario 1](./media/negative-days-5.png)
+![Graphical view of case C for scenario 1.](./media/negative-days-5.png)
 
 ### Case D: Use only dynamic negative days
 
@@ -81,11 +81,11 @@ If you set the negative days to **0** (zero) and use only the dynamic negative d
 
 The following illustration shows a screenshot for this case.
 
-![Screenshot of case D for scenario 1](./media/negative-days-6.png)
+![Screenshot of case D for scenario 1.](./media/negative-days-6.png)
 
 The following illustration shows a graphical view of what occurs in this case.
 
-![Graphical view of case D for scenario 1](./media/negative-days-7.png)
+![Graphical view of case D for scenario 1.](./media/negative-days-7.png)
 
 ### Case E: Use both negative days that are more than the item's lead time and the dynamic negative days time fence
 
@@ -102,7 +102,7 @@ You might get demand sometime during your item's lead time. Here is an example o
 
 The following illustration shows a graphical view of this scenario.
 
-![Graphical view of scenario 2](./media/negative-days-8.png)
+![Graphical view of scenario 2.](./media/negative-days-8.png)
 
 ### Case A: Negative days are less than the item's lead time
 
@@ -110,11 +110,11 @@ If you set the negative days to a number that is less than the item's lead time,
 
 The following illustration shows a screenshot for this case.
 
-![Screenshot of case A for scenario 2](./media/negative-days-9.png)
+![Screenshot of case A for scenario 2.](./media/negative-days-9.png)
 
 The following illustration shows a graphical view of what occurs in this case.
 
-![Graphical view of case A for scenario 2](./media/negative-days-10.png)
+![Graphical view of case A for scenario 2.](./media/negative-days-10.png)
 
 ### Case B: Negative days are more than the item's lead time
 
@@ -126,11 +126,11 @@ This case resembles case C for scenario 1, because dynamic negative days work ju
 
 The following illustration shows a screenshot of this case.
 
-![Screenshot of case C for scenario 2](./media/negative-days-11.png)
+![Screenshot of case C for scenario 2.](./media/negative-days-11.png)
 
 The following illustration shows a graphical view of what occurs in this case.
 
-![Graphical view of case C for scenario 2](./media/negative-days-12.png)
+![Graphical view of case C for scenario 2.](./media/negative-days-12.png)
 
 ### Case D: Use only dynamic negative days
 
@@ -151,7 +151,7 @@ You might get demand after the item's lead time. Here is an example of this scen
 
 The following illustration shows a graphical view of this scenario.
 
-![Graphical view of scenario 3](./media/negative-days-13.png)
+![Graphical view of scenario 3.](./media/negative-days-13.png)
 
 ### Case A: Negative days are less than the item's lead time
 
@@ -159,11 +159,11 @@ If you set the negative days to a number that is less than the item's lead time,
 
 The following illustration shows a screenshot of this case.
 
-![Screenshot of case A for scenario 3](./media/negative-days-14.png)
+![Screenshot of case A for scenario 3.](./media/negative-days-14.png)
 
 The following illustration shows a graphical view of what occurs in this case.
 
-![Graphical view of case A for scenario 3](./media/negative-days-15.png)
+![Graphical view of case A for scenario 3.](./media/negative-days-15.png)
 
 > [!NOTE]
 > In the preceding screenshot, the purchase order requirement date is January 12. Because that screenshot was taken in 2015, when January 11 was a Sunday, MRP moved the requirement date to the next working day, which was Monday, January 12. Nevertheless, the purchase order has a delivery date of January 11.
@@ -174,11 +174,11 @@ If you set the negative days to a number that is more than the item's lead time,
 
 The following illustration shows a screenshot of this case.
 
-![Screenshot of case B for scenario 3](./media/negative-days-16.png)
+![Screenshot of case B for scenario 3.](./media/negative-days-16.png)
 
 The following illustration shows a graphical view of what occurs in this case.
 
-![Graphical view of case B for scenario 3](./media/negative-days-17.png)
+![Graphical view of case B for scenario 3.](./media/negative-days-17.png)
 
 ### Case C: Automatically correlate the item's lead time to the negative days time fence
 
@@ -188,7 +188,7 @@ The dynamic negative days time fence is 6 + 2 – 7 = 1 day. However, in this ca
 
 The following illustration shows a graphical view of what occurs in this case.
 
-![Graphical view of case C for scenario 3](./media/negative-days-18.png)
+![Graphical view of case C for scenario 3.](./media/negative-days-18.png)
 
 ### Case D: Use only dynamic negative days
 
@@ -215,11 +215,11 @@ You might want to set the negative days to a long time fence and then work with 
 
 The following illustration shows a graphical view of what occurs.
 
-![Graphical review of the example](./media/negative-days-19.png)
+![Graphical review of the example.](./media/negative-days-19.png)
 
 MRP produces the following results.
 
-![Results example 1](./media/negative-days-20.png)
+![Results example 1.](./media/negative-days-20.png)
 
 In the preceding screenshot, the sales order requirement date is January 9 instead of January 10. Because that screenshot was taken in 2015, when January 10 was a Saturday, the requirement date of the order should be the previous working day, which was Friday, January 9.
 
@@ -229,7 +229,7 @@ The results aren't wrong, but the running time for MRP might be longer, because 
 
 If you reduce the negative days to a number that's closer to the item's lead time, and you use dynamic negative days, MRP produces the following results.
 
-![Results example 2](./media/negative-days-21.png)
+![Results example 2.](./media/negative-days-21.png)
 
 MRP creates a planned order that is attached to the first sales order. Then, as is expected, the second sales order is pegged against the existing purchase order, based on the negative days setting. This planning result is also correct, and the running time for MRP might be shorter. In this case, it isn't essential that you understand and know how to work with the action messages.
 

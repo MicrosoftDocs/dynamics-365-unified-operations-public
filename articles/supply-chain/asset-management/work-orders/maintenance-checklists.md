@@ -81,7 +81,7 @@ Maintenance checklists are created from the definition on the maintenance job ty
 
 The illustration below shows an example of a maintenance checklist.
 
-![Figure 1](media/14-work-orders.png)
+![Figure 1.](media/14-work-orders.png)
 
 
 

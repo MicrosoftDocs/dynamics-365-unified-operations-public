@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 28021
 ms.assetid: 
@@ -37,7 +37,7 @@ This topic explains how to use the new test recorder tool in Cloud POS to record
 This topic applies to Dynamics 365 Retail and Dynamics 365 Finance version 10.0.5 (October 2019) and later.
 
 > [!NOTE]
-> The test recorder is supported in Cloud POS only when the Google Chrome web browser is used. Support for other web browsers and device types will be added later.
+> The test recorder can be used only in Cloud POS with Google Chrome or Microsoft Edge web browser.
 
 ## Test recorder
 
@@ -79,25 +79,25 @@ To turn on the test recording functionality in POS, follow these steps in Headqu
 
 To open the test recorder, sign in to Cloud POS, and then, on the **Settings** page, in the **Task and Test recorders** section, select **Open test recorder**.
 
-[![Task and Test recorders](./media/CreateTest.png)](./media/CreateTest.png)
+[![Task and Test recorders.](./media/CreateTest.png)](./media/CreateTest.png)
 
 ### Stop a recording session
 
 To end a recording session, select **Stop**. Note that you can't restart a recording session after you end it. Therefore, make sure that the recording session is completed before you end it.
 
-[![Stop button on test recorder](./media/Stop.png)](./media/Stop.png)
+[![Stop button on test recorder.](./media/Stop.png)](./media/Stop.png)
 
 ### Pause a recording session
 
 To temporarily stop (pause) a recording session, select **Pause**. Steps that you perform after you select **Pause** aren't recorded.
 
-[![Pause button on test recorder](./media/Pause.png)](./media/Pause.png)
+[![Pause button on test recorder.](./media/Pause.png)](./media/Pause.png)
 
 ### Continue a recording session
 
 To resume a recording session after you've paused it, select **Recording**.
 
-[![Recording button on test recorder](./media/Recording.png)](./media/Recording.png)
+[![Recording button on test recorder.](./media/Recording.png)](./media/Recording.png)
 
 ### Start and end a task
 
@@ -106,19 +106,19 @@ To help organize your procedures, you can group steps together into tasks. To sp
 Tasks can be nested inside other tasks. In this way, you can better organize very long and complex business processes.
 
 > [!div class="mx-imgBorder"]
-> [![Task](./media/StartTask.png)](./media/Recording.png)
+> [![Task.](./media/StartTask.png)](./media/Recording.png)
 
 ### Add a new task
 
 > [!div class="mx-imgBorder"]
-> [![New task](./media/NewTask.png)](./media/NewTask.png)
+> [![New task.](./media/NewTask.png)](./media/NewTask.png)
 
 ### Add an annotation
 
 An annotation is additional text that you add to a step in a recording. For example, you can use annotations to give the user more context or instructions. You can add an annotation to any step by selecting the **Edit** button (pencil symbol) to the right of the step.
 
 > [!div class="mx-imgBorder"]
-> [![Annotation pencil button on test recorder](./media/Annotation.png)](./media/Annotation.png)
+> [![Annotation pencil button on test recorder.](./media/Annotation.png)](./media/Annotation.png)
 
 ### Add text and notes
 
@@ -132,20 +132,20 @@ You can use the **Text** and **Notes** fields in the annotation dialog box to ad
 You can change user input values that are entered during a recording session. For example, if you added product 0005 during the recording session, the product ID is stored by default in the Recording.xml file. If you want to specify a different product ID, you can change the value here. The value will be shown only if there is user input.
 
 > [!div class="mx-imgBorder"]
-> [![Edit a value and an annotation](./media/EditAnnotation.png)](./media/EditAnnotation.png)
+> [![Edit a value and an annotation.](./media/EditAnnotation.png)](./media/EditAnnotation.png)
 
 ### Hide the test recorder pane
 
 To hide and show the test recorder pane during a recording session, select the collapse button.
 
 > [!div class="mx-imgBorder"]
-> [![Collapse button](./media/Hide.png)](./media/Hide.png)
+> [![Collapse button.](./media/Hide.png)](./media/Hide.png)
 
 ### Test recorder floating control
 
 The test recorder floating control is useful when the test recorder pane is hidden during a recording session. The test recorder pane overrides non-error dialog boxes and/or part of the POS view. Therefore, you must sometimes hide the pane to add validation in the dialog boxes or select controls. If the test recorder pane is hidden, but you must still be able to access test recording functionality (for example, you must turn on validation mode, or pause or continue the recording session), you can use this floating control.
 
-[![Floating control](./media/Floatter.png)](./media/Floatter.png)
+[![Floating control.](./media/Floatter.png)](./media/Floatter.png)
 
 The following sections describe the controls on the floating control.
 
@@ -180,12 +180,12 @@ Follow these steps to create a new recording by using the test recorder:
 
 3. On the **Settings** page, in the **Task and Test recorders** section, select **Open test recorder**.
 
-    [![Task and Test recorders](./media/CreateTest.png)](./media/CreateTest.png)
+    [![Task and Test recorders.](./media/CreateTest.png)](./media/CreateTest.png)
 
 4. Select **Create a new recording**.
 
     > [!div class="mx-imgBorder"]
-    > [![Create a new recording](./media/NewTest.png)](./media/Newtest.png)
+    > [![Create a new recording.](./media/NewTest.png)](./media/Newtest.png)
 
 5. Enter a name and description for the recording, and then select **Start**.
 
@@ -198,7 +198,7 @@ Follow these steps to create a new recording by using the test recorder:
 6. Perform the needed actions in the POS user interface.
 
     > [!div class="mx-imgBorder"]
-    > [![Test recorder steps](./media/Steps.png)](./media/Steps.png)
+    > [![Test recorder steps.](./media/Steps.png)](./media/Steps.png)
 
 ### Validation mode
 
@@ -210,7 +210,7 @@ When you use validation mode during a recording session, users can then validate
     > [!NOTE]
     > While validation mode is turned on, the test recorder will be in a paused state. It will just add validations steps, and POS won't respond to any user actions except the addition of validation steps. For example, in validation mode, you can't open a different POS view or use any POS functionality. To continue the recording session, you must turn off validation mode by setting the **Enable validation mode** option to **No**.
 
-    [![Test recorder validation](./media/Validation.png)](./media/Validation.png)
+    [![Test recorder validation.](./media/Validation.png)](./media/Validation.png)
 
 3. To end the recording session, select **Stop**.
 
@@ -219,7 +219,7 @@ When you use validation mode during a recording session, users can then validate
 After you end a recording session, you can download the recording by selecting **Save to this PC**.
 
 > [!div class="mx-imgBorder"]
-> ![Save test recorder output file](media/Save.png)
+> ![Save test recorder output file.](media/Save.png)
 
 The .axtr file is saved to the local file system. You must manually upload this file to LCS or Azure DevOps and then either delete it from the file system or secure it. 
 
@@ -256,7 +256,7 @@ The following procedure describes the configuration that is required to run the 
    + **Device** – Enter the ID of the device where the test should be run.
    + **Default wait time** – Enter the wait time, in seconds, before the test case fails if any element isn't found. During test execution, the playback engine keeps trying to find element until this default wait time has passed. It then fails the test case and notifies you that the element that was recorded wasn't found or loaded for playback.
 
-    [![Playback environment](./media/Settings.PNG)](./media/Settings.PNG)
+    [![Playback environment.](./media/Settings.PNG)](./media/Settings.PNG)
 
 5. Select the **POS login credentials** tab.
 
@@ -264,11 +264,11 @@ The following procedure describes the configuration that is required to run the 
     
     Therefore, on the **POS login credentials** tab, you must enter all the user name and password information that was used during the recording session, so that the password can be retrieved during test execution. Otherwise, test execution will fail, and you will be notified that sign-in details weren't found.
 
-    [![POS login credentials](./media/PosLogin.png)](./media/PosLogin.png)
+    [![POS login credentials.](./media/PosLogin.png)](./media/PosLogin.png)
 
 6. Select **New**.
 
-    [![POS user](./media/EditPosUser.png)](./media/EditPosUser.png)
+    [![POS user.](./media/EditPosUser.png)](./media/EditPosUser.png)
 
 7. In the **Username** field, enter the user name for sign in to POS.
 8. In the **Password** field, enter the password for sign in to POS.
@@ -287,7 +287,7 @@ This section explains how to load test cases from Azure DevOps, generate automat
 
 In RSAT, select **Load** to download test cases and test case automation files from Azure DevOps. All test cases that belong to the test plan that is specified in the **Settings** dialog box are downloaded.
 
-![Load](./media/RSATLoad.png)
+![Load.](./media/RSATLoad.png)
 
 Test cases are organized by test suite under a common test plan. The test suites are the test suites that you created in your Azure DevOps project. By using RSAT, you can work with one test suite at a time. If RSAT can't load any test case, verify that your test plan was correctly created in Azure DevOps, and that it contains the required test suites and test cases.
 
@@ -300,11 +300,11 @@ To run the tests, generate the following test automation files:
 
 When you select **New**, test automation files are generated in your working directory. The Excel test parameter files appear in the **Parameters File** column in the grid.
 
-![Test parameter file in the Parameters File column](./media/RSATParameter.png)
+![Test parameter file in the Parameters File column.](./media/RSATParameter.png)
 
 For the test recording files, the **Generate Test Execution files only** option is unavailable. Because Cloud POS uses Selenium WebDriver directly to do the playback, no additional script file must be generated.
 
-![Unavailable Generate Test Execution files only option](./media/RSATNewOption.png)
+![Unavailable Generate Test Execution files only option.](./media/RSATNewOption.png)
 
 ### Modify test parameters and validation values
 
@@ -334,7 +334,7 @@ Validation of expected values is an important component of a test case. When you
 
 During the recording session, turn on validation mode. Then, while the test recorder is recording, select all the fields that must be validated. This action becomes a validation step that you can use with RSAT. The validation values will appear, in the order that they were entered in, on the **Variables** tab in the Excel file. You can then modify the values in the Excel file before test execution, and the new values will be used for data entry and validation during test execution.
 
-![Edit values](./media/RSATExcel.png)
+![Edit values.](./media/RSATExcel.png)
 
 ### Run
 

@@ -5,7 +5,7 @@ author: mugunthanm
 ms.date: 04/13/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
@@ -90,7 +90,7 @@ This topic explains how to create a Point of Sale (POS) extension package projec
     2. Search for **json**, and select **TypeScript JSON Configuration File**.
     3. Name the file **tsconfig.json**, and then select **Add**.
 
-        ![Adding the tsconfig.json file](media/json-file.png)
+        ![Adding the tsconfig.json file.](media/json-file.png)
 
     4. Remove all the fields from the JavaScript Object Notation (JSON), and make the file extend from the **pos-tsconfig-base.json** file by adding an **extends** field. When you've finished, the XML file should resemble the following example.
 
@@ -101,6 +101,10 @@ This topic explains how to create a Point of Sale (POS) extension package projec
         ```
 
 10. Build the project to copy the POS dependencies to the project directory.
+
+    > [!NOTE]
+    > When building the empty POS extension project, you may see the following error, "Payload file doesn't exist". Be sure to include at least one .ts file in the project with POS extensions.
+
 11. Create the manifest file for your extension package:
 
     1. In Solution Explorer, select and hold (or right-click) the project, select **Add**, and then **New item**.

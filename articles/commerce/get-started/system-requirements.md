@@ -4,7 +4,7 @@
 title: System requirements for cloud deployments of Dynamics 365 Commerce
 description: This topic lists the system requirements for cloud deployments for the current version of Dynamics 365 Commerce.
 author: jashanno 
-ms.date: 05/11/2021
+ms.date: 03/01/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -37,12 +37,13 @@ This topic lists the system requirements for cloud deployments of the current ve
 The web application can run in any of the following web browsers that run on the specified operating systems:
 
 - Microsoft Edge (latest publicly available version) on Windows 10
-- Internet Explorer 11 on Windows 10, Windows 8.1, or Windows 7
 - Google Chrome (latest publicly available version) 
 - Apple Safari (latest publicly available version)
 
 > [!NOTE]
 > It is possible for the Safari browser to show an error during device activation of a Cloud POS device due to an Azure Active Directory token being unattainable. You can resolve this issue by utilizing the [Microsoft Enterprise SSO plug-in for Apple devices](/azure/active-directory/develop/apple-sso-plugin).
+>
+> As of release 10.0.17, Internet Explorer is no longer a supported web browser.
 
 To find the latest release for each web browser, go to the software manufacturer's website.
 
@@ -56,9 +57,6 @@ To find the latest release for each web browser, go to the software manufacturer
 Cloud point of sale (POS) can run in any of the following web browsers that run on the specified operating systems:
 
 - Microsoft Edge (latest publicly available version) on Windows 10
-- Internet Explorer 11 on Windows 10, Windows 8.1, or Windows 7
-  > [!NOTE]
-  > Beginning with release 10.0.17, Internet Explorer will no longer be supported.
 - Chrome (latest publicly available version) on Windows 10, Windows 8.1, or Windows 7
 
 ## Network requirements
@@ -73,7 +71,7 @@ In general, Commerce is optimized for the internet. The number of round trips fr
 
 ## .NET Framework requirements
 
-Commerce requires Microsoft .NET Framework 4.7.1 or later for all ClickOnce applications, such as the document routing agent. For installation instructions, see [Install the .NET Framework for developers](/dotnet/framework/install/guide-for-developers). 
+Commerce requires the Microsoft .NET Framework version 4.7.1 or later for all ClickOnce applications, such as the document routing agent. For installation instructions, see [Install the .NET Framework for developers](/dotnet/framework/install/guide-for-developers). For Commerce client components (sealed or legacy installers), we recommend that you always use the latest version of the .NET Framework that is available.
 
 ## Supported Microsoft Office applications
 
@@ -86,126 +84,131 @@ The following Microsoft Office applications are supported:
 
 It is critical to perform proper performance testing prior to going live in production. The following are considered minimum system requirements for applications to function. To achieve desired performance, consider concepts like data volumes, transactional load per hour, and customization impact. Proper performance testing both early into implementation and again prior to final testing will allow for any necessary performance improvements to be made and to validate that the base solution meets the expected operation times required.
 
-[!WARNING] The Microsoft Windows 7 operating system is no longer supported for anything other than security-related fixes. As a result, while Dynamics 365 Commerce components may function on Windows 7, there will be no bug fixes that specifically relate to supporting this operating system. Workarounds may be required for components to function properly on Windows 7, so it is highly recommended to upgrade to a supported operating system.
+If the self-service component will use a SQL database, we highly recommend that you review [SQL Server versions and licenses](../dev-itpro/implementation-considerations-cdx.md#sql-server-versions-and-licenses). We recommend that you use a SQL Server version that is currently still within the mainstream support date. You can search for support dates by product in [Search Product and Services Lifecycle Information](/lifecycle/products/). SQL databases for self-service components require SQL Server 2017 or later. The SQL Server version that is used must have the Full-Text Search feature installed. We recommend that you always use the latest version that is available, and that you install all the latest service packs. By following these recommendations, you can help ensure both compatibility and security. The legacy self-service installers also support SQL Server 2016 with Service Pack 2 or later.
 
-## Modern POS for Windows requirements
-
-> [!NOTE]
-> - If Modern POS will use an offline database, the computer must meet all system requirements for Microsoft SQL Server and the system must have no less than 10 GB of disk space available. It is recommended to have no less than 20 GB of disk space available. An offline database for Modern POS requires SQL Server 2014 with Service Pack 3 or later, SQL Server 2016 with Service Pack 2, SQL Server 2017, or newer. The SQL Server version used must have the Full-Text Search feature installed. We recommend that you always use the latest version that is available, and that you install all the latest service packs. By following these recommendations, you can help to ensure both compatibility and security.
-> - Starting August 1, 2019, Modern POS and other client-side components require that the Microsoft .NET Framework version 4.7.1 or later be installed. For installation instructions, see [Install the .NET Framework for developers](/dotnet/framework/install/guide-for-developers).
-
-### Supported Windows operating systems
-
-- Modern POS is a 32-bit application, but it will run on both x86 and x64 architectures.
-- Modern POS is supported on Windows Server 2016, Windows 10 Pro, Windows 10 Enterprise, Windows 10 Enterprise Long Term Service Branch (LTSB), and Windows 10 IOT Enterprise editions. At a minimum, the Windows 10 Anniversary Update (version 1607), build 14393, must be installed.
-- It is not recommended to use Modern POS and other Commerce components on Windows 10 Pro unless within a domain as Windows 10 Pro doesn't allow for advanced management of updates to the operating system.
-- It is not recommended to use Modern POS and any other Commerce component together on the same computer.
-
-### Minimum system requirements
-
-- The minimum supported effective resolution for POS Full layout (PCs and tablets) is 1,024 × 768 (recommended 1366 x 768 or greater)
-- The minimum supported effective resolution for POS Compact layout (phones and small tablets) is 320 x 568 (recommended 360x640 or greater)
-- The computer that Modern POS runs on must meet these requirements:
-
-    - It must have, at a minimum, a dual-core processor that runs at no less than 2 gigahertz (GHz).
-    - It must have, at a minimum, 3 gigabytes (GB) of random-access memory (RAM). When combining with SQL Server for offline, no less than 4 GB of RAM is required.
-    - It must have internet access.
-
-If the terminal will utilize an offline database, it is highly recommended that you review the [SQL Server versions and licenses](../dev-itpro/implementation-considerations-cdx.md#sql-server-versions-and-licenses) section. For SQL Server versions, the recommendation is to use a version that is currently still within the mainstream support date.  Support dates can be searched for, by product, in the [Search Product and Services Lifecycle Information](/lifecycle/products/) article.
-
-## Modern POS for Apple iPhone or iPad requirements
-
-- iOS 11 or later
-
-## Modern POS for Android phone or tablet requirements
-
-- Android OS 6.0 or later
-
-## Retail hardware station requirements
+If the self-service component will use a server certificate, it's critical that you manage certificates for expiration. By default, certificates expire after one calendar year (365 days). Self-service components that use a server certificate include Hardware station or Commerce Scale Unit (self-hosted).
 
 > [!NOTE]
-> Starting August 1, 2019, Retail hardware station and other client-side components require that the .NET Framework version 4.7.1 or later be installed. For installation instructions, see [Install the .NET Framework for developers](/dotnet/framework/install/guide-for-developers).
-> It is critical to note that this component utilizes a server certificate. Server certificates must be managed for expiration. By default, a certificate expires in one calendar year (365 days).
-
-### Supported operating systems
-
-- Retail hardware station is a 32-bit application, but it will run on both x86 and x64 architectures.
-- Retail hardware station is supported on the following operating systems:
-
-    - Windows 8.1 Update 1 Professional, Enterprise, and Embedded editions.
-    - Windows 10 Pro, Enterprise, Enterprise LTSB, and IOT Enterprise editions.
-    - Windows Server 2016 and Windows Server 2019.
-    - It is not recommended to use Retail hardware station and other Commerce components on Windows 10 Pro unless within a domain as Windows 10 Pro doesn't allow for advanced management of updates to the operating system.
-
-### Minimum system requirements
-
-The computer must meet all system requirements for installing and using the following items:
-
-- Microsoft Internet Information Services (IIS)
-- Third-party hardware
-
-## Commerce Scale Unit (self-hosted) requirements
-
-> [!NOTE]
-> Starting August 1, 2019, Commerce Scale Unit and other client-side components require that the .NET Framework version 4.7.1 or later be installed. For installation instructions, see [Install the .NET Framework for developers](/dotnet/framework/install/guide-for-developers).
+> The legacy Commerce Scale Unit (self-hosted) self-service component uses Azure Service to Service authentication. It's critical that you manage both the generated Azure web application keys (formerly called *secrets*) and the server certificate for expiration. By default, a certificate and a generated Azure web application key expire after one calendar year (365 days).
 >
-> It is critical to note that this component utilizes a server certificate in addition to Azure Service to Service authentication.  Both the generated Azure web application keys (formerly called *secrets*) and the server certificate must be managed for expiration.  By default, a certificate and a generated Azure web application key expires in one calendar year (365 days).
-
-Note that the minimum system requirements listed below are the bare minimum necessary to get a Commerce Scale Unit to function in a test scenario. The following is not representative of a realistic production environment. It is critical to perform proper performance testing and validate that the hardware used will meet the needs of the users. For SQL Server versions, the recommendation is to use a version that is currently still within the mainstream support date. Support dates can be searched for, by product, in  [Search Product and Services Lifecycle Information](/lifecycle/products/).
+> The supported versions of the .NET Framework have been updated. Legacy self-service client-side components require that the .NET Framework version 4.7.1 or later be installed. For installation instructions, see [Install the .NET Framework for developers](/dotnet/framework/install/guide-for-developers). For the sealed installers, we recommend that you always have the latest version of the .NET Framework installed on the target computer.
 
 ### Supported operating systems
 
-- Commerce Scale Unit is a 32-bit application, but it will run on both x86 and x64 architectures.
-- Commerce Scale Unit is supported on the following operating systems:
+This section lists the supported operating systems for each Commerce self-service installer.
 
-    - Windows 8.1 Update 1 Professional, Enterprise, and Embedded editions.
-    - Windows 10 Pro, Enterprise, Enterprise LTSB, and IOT Enterprise editions.
-    - Windows Server 2016 and Windows Server 2019.
-    - It is not recommended to use Commerce Scale Unit and other Commerce components on Windows 10 Pro unless within a domain as Windows 10 Pro doesn't allow for advanced management of updates to the operating system.
+> [!WARNING]
+> The Windows 7 operating system isn't supported for anything except security-related fixes. Therefore, although Commerce components might work on Windows 7, there will be no bug fixes that are specifically related to supporting this operating system.
 
-### Minimum system requirements
+#### Modern POS
+
+- Windows 10 (Pro, Enterprise, LTSC, and IOT Enterprise editions) with the latest available updates are supported.
+
+    > [!NOTE]
+    > Windows 10 Pro isn't recommended, except as part of a domain, so that Windows updates can be appropriately scheduled.
+
+- Windows Server 2019 is supported.
+- We don't recommend that you use Modern POS on the same computer as another self-service component (for example, Hardware station or Commerce Scale Unit \[self-hosted\]).
+- The legacy self-service installer also supports Windows Server 2016 and Windows 10 LTSB with the latest available updates.
+- Modern POS for iOS supports iOS version 11 or later.
+- Modern POS for Android supports Android version 6.0 or later.
 
 > [!NOTE]
-> The following are the minimum system requirements for Commerce Scale Unit.  Both these and the recommended requirements are the minimum possible for testing and basic functionality.  It is crucial to perform performance testing and validate that the hardware used for Commerce Scale Unit meets expectations.
+> If Modern POS will use an offline database, the computer must meet all system requirements for SQL Server. Additionally, the system must have at least 15 gigabytes (GB) of available disk space. However, we recommend a minimum of 25 GB of available disk space.
 
-- 4 GB of RAM
-- 1.6 GHz i5 (or equivalent) minimum CPU speed per core (2 cores are the minimum).
-- At least 15 GB of free space (the channel database can require a large amount of space).
-- A supported version of SQL Server.  It is recommended to use a standard license or better for a Commerce Scale Unit (self-hosted), as the Express edition could cause synchronization issues due to its known limitations. For more information, see [SQL Server versions and licenses](../dev-itpro/implementation-considerations-cdx.md#sql-server-versions-and-licenses).
+#### Hardware station and Commerce Scale Unit (self-hosted)
 
-### Recommended system requirements
+- Windows 10 (Pro, Enterprise, LTSC, and IOT Enterprise editions) with the latest available updates are supported.
 
-- 6 GB of RAM
-- 2.4 GHz i7 (or equivalent) minimum CPU speed per core (4 cores are recommended).
-- At least 20 GB of free space (the channel database can require a large amount of space).
-- - A supported version of SQL Server. It is recommended to use a standard license or better for a Commerce Scale Unit (self-hosted), as the Express edition could cause synchronization issues due to its known limitations. For more information, see [SQL Server versions and licenses](../dev-itpro/implementation-considerations-cdx.md#sql-server-versions-and-licenses).
+    > [!NOTE]
+    > Windows 10 Pro isn't recommended, except as part of a domain, so that Windows updates can be appropriately scheduled.
 
-It would be in an organization's best interest to also take the following items into consideration when determining personal hardware needs:
+- Windows Server 2019 is supported.
+- We don't recommend that you use a self-service component on the same computer as another self-service component (for example, Modern POS).
+- The legacy self-service installer also supports Windows Server 2016 and Windows 10 LTSB.
 
-- Number of physical network ports (more ports enhances throughput per second).
-- SQL Server log flush size (this directly impacts SQL Server performance).
-- Data read and write capabilities (this directly impacts SQL Server performance).
-- Number of CPU(s) core, number of simultaneous threads per core, and speed per core (this impacts overall throughput of the system).
-- Whether load balancing will be required.
+### System requirements
 
-## Connector requirements
+Remember that performance testing is crucial to the successful use of Commerce self-service components. Across all components, the following bare-minimum system is supported for the purpose of testing functionality:
+
+- Dual-core processor that runs at no less than 2 gigahertz (GHz) per core.
+- 3 GB of RAM.
+- Internet access and enough network throughput to handle the flow of requests and responses. (Note that this requirement is at both a computer level and a network level.)
+- Component-specific system requirements, such as requirements for SQL Server and Internet Information Services (IIS).
+- At least 10 percent of disk space is available. (We recommend that you have no less than 10 GB of available disk space when SQL Server is used.)
+
+Additionally, as customizations and performance requirements are generated, each component typically requires a more powerful system to meet user needs.
+
+#### Modern POS
+
+- The minimum supported effective resolution for POS Full layout mode (PCs and tablets) is 1,024 × 768. (However, we recommend 1366 × 768 or more.)
+- The minimum supported effective resolution for POS Compact layout mode (phones and small tablets) is 320 x 568. (However, we recommend 360 × 640 or more.)
+- Here are the minimum recommendations for a more performant Modern POS terminal:
+
+    - A minimum of 128 MB of dedicated graphical memory or 256 MB of shared graphical memory are recommended.
+    - 4 GB or more of RAM are recommended. This recommendation requires additional review of SQL Server requirements for offline database support.
+    - SQL Express is often used for offline databases. In these scenarios, it's necessary to keep track of the offline database size. (The maximum possible size is 10 GB.)
+
+#### Hardware station
+
+- The minimum supported system requirements for IIS
+- The minimum supported system requirements for all third-party hardware that is attached and used
+
+#### Commerce Scale Unit (self-hosted)
+
+The minimum system requirements for Commerce Scale Unit (self-hosted) describe the bare minimum that are required to function, typically in a test scenario. The requirements that are described here aren't representative of a realistic production environment. It's critical that you do appropriate performance testing and validate that the computer hardware that is used will meet the demands of Hardware station, Modern POS, Cloud POS, and any third-party components that will access and use the Commerce Scale Unit (self-hosted) component or computer. Furthermore, we highly recommend that you use a standard licensed version of SQL Server or better (for example, Enterprise version) to take advantage of the full capabilities of the processor and RAM.
+
+Here are the additional requirements:
+
+- A minimum of 6 GB of RAM, although 64 GB or more of RAM might be required
+- A 2.4 GHz multi-core CPU, although multiple multi-core CPUs on server-grade hardware might be required (A four-core processor is recommended.)
+- Enough disk space to store the sum total of all Commerce data for all associated stores (channels)
+
+    Disk requirements might be as little as 10 GB to 20 GB, or as much as multiple terabytes.
+
+Additionally, we highly recommend that you consider the following aspects of performance when you're determining system requirements for Commerce Scale Unit (self-hosted):
+
+- The number of physical network ports (More ports enhance throughput per second.)
+- SQL Server log flush size (This factor directly affects SQL Server performance.)
+- Data read and write capabilities (This factor directly affects SQL Server performance.)
+- Will load balancing be required across multiple systems that handle separated Commerce Scale Unit subcomponents (such as multiple Retail Servers or a disaster recovery–enabled system for database failover)
+
+## Dynamics AX 2012 R3 Connector requirements
+
+Given the separated nature and specific usage of previous Dynamics AX 2012 R3 components such as Enterprise POS, the two Connector components have been kept in a separate section.
 
 ### Supported operating systems
 
-- The Connector for Microsoft Dynamics AX has two separate installers, one for Async Server Connector service and one for Real-time service for Microsoft Dynamics AX 2012 R3.
+The Connector for Microsoft Dynamics AX 2012 R3 has two separate installers: one for Async Server Connector service and one for Real-time service for Microsoft Dynamics AX 2012 R3.
+
 - Both components are 32-bit applications, but they will run on both x86 and x64 architectures.
 - Both components are supported on the following operating systems:
 
-    - Windows 8.1 Update 1 Professional, Enterprise, and Embedded editions.
-    - Windows 10 Pro, Enterprise, and Enterprise LTSB editions.
-    - Windows Server 2016 and Windows Server 2019.
-    - It is not recommended to use Commerce components on Windows 10 Pro unless within a domain as Windows 10 Pro doesn't allow for advanced management of updates to the operating system.
+    - Windows 10 Pro, Enterprise, and Enterprise LTSB editions
+
+        > [!NOTE]
+        > Windows 10 Pro isn't recommended, except as part of a domain, so that Windows updates can be appropriately scheduled.
+
+    - Windows Server 2016 and Windows Server 2019
 
 ### Minimum system requirements
 
-- 2 GB of RAM (4 GB of RAM are recommended).
-- 1.6 GHz peak CPU speed per core (2 cores are the minimum).
-- At least 10 GB of free space (the channel database can require a large amount of space).
+As for Commerce Scale Unit (self-hosted), much larger, server-grade hardware is often required to handle the throughput of a whole enterprise architecture of legacy POS systems. Nevertheless, here is the absolute minimum that is required to test functionality:
+
+- 2 GB of RAM (However, 4 GB of RAM are recommended.)
+- 1.6 GHz peak CPU speed per core (Two cores are the minimum.)
+- 15 GB of free space (The channel database can require a large amount of space. The size might even be as much as multiple terabytes.)
+
+## Recommended network exceptions
+
+Often (especially in corporate environments), network-related security requires that specific exceptions be noted. In these security-focused networks, we recommend that you add, at a minimum, the following exceptions to a network-related allow list:
+
+- \*.static.akamaitechnologies.com
+- \*.azure.com
+- \*.dynamics.com
+- \*.microsoft.com
+- \*.visualstudio.com
+- \*.windows.net
 
 ## Requirements for development on local VMs
 
@@ -217,7 +220,12 @@ The only supported collation for Commerce databases in the cloud is **SQL\_Latin
 
 ## Additional resources
 
-[Get an evaluation copy](../../fin-ops-core/dev-itpro/dev-tools/get-evaluation-copy.md)
-
+- [Get an evaluation copy](../../fin-ops-core/dev-itpro/dev-tools/get-evaluation-copy.md)
+- [Dynamics 365 Commerce architecture overview](../commerce-architecture.md)
+- [Select an in-store topology](../dev-itpro/retail-in-store-topology.md)
+- [Device management implementation guidance](../implementation-considerations-devices.md)
+- [Configure, install, and activate Modern POS (MPOS)](../retail-modern-pos-device-activation.md)
+- [Configure and install Commerce Scale Unit (self-hosted)](../dev-itpro/retail-store-scale-unit-configuration-installation.md)
+- [Commerce Data Exchange implementation guidance](../dev-itpro/implementation-considerations-cdx.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

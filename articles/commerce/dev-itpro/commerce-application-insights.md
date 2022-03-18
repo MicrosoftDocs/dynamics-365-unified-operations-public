@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 28021
 ms.assetid: 
@@ -52,7 +52,7 @@ Copy the instrumentation key, which you will use in the CRT. For recent updates 
 1. Create a new C\# class library project, and name it **Contoso.Diagnostic**.
 
     > [!div class="mx-imgBorder"]
-    > ![New Contoso.Diagnostic project](media/VSProject.png)
+    > ![New Contoso.Diagnostic project.](media/VSProject.png)
 
 2. Add the NuGet package references to the following libraries:
 
@@ -127,17 +127,17 @@ Copy the instrumentation key, which you will use in the CRT. For recent updates 
 2. Go to the Application Insights instance, and then, under **Monitoring**, select **Logs (Analytics)** to open a new query editor.
 
     > [!div class="mx-imgBorder"]
-    > ![Log Analytics option](media/AppInsightQuery.png)
+    > ![Log Analytics option.](media/AppInsightQuery.png)
 
 3. On the **Schema** tab, double-click **traces** to add it to the query editor. The default time range is **Last 24 hours**.
 
     > [!div class="mx-imgBorder"]
-    > ![Traces added to the query editor](media/Trace.png)
+    > ![Traces added to the query editor.](media/Trace.png)
 
 4. Select **Run** to run the query. The logged event will appear in the results.
 
     > [!div class="mx-imgBorder"]
-    > ![Log details](media/TraceDetails.png)
+    > ![Log details.](media/TraceDetails.png)
 
 ## Build the deployable package
 

@@ -41,15 +41,15 @@ There are two ways to create a BPM library. You can create a new library that ha
     -   **Corporate libraries** – Custom business processes that someone in your organization has uploaded.
     -   **Global libraries** – Cross-industry standard business processes.
 
-    [![Three types of libraries on the Business process libraries page](./media/bpm_02.png)](./media/bpm_02.png)
+    [![Three types of libraries on the Business process libraries page.](./media/bpm_02.png)](./media/bpm_02.png)
 
 2.  To create a new library, right-click any library, and then, in the lower-left corner of the window, select **Create**. To copy an existing library, right-click that library, and then, in the lower-left corner of the window, select **Copy**.
 
-    [![Location of the Copy button](./media/bpm_03.png)](./media/bpm_03.png)
+    [![Location of the Copy button.](./media/bpm_03.png)](./media/bpm_03.png)
 
     -   **Global libraries** – Cross-industry standard business processes. 
     
-    [![Three types of libraries on the Business process libraries page](./media/bpm_02.png)](./media/bpm_02.png)
+    [![Three types of libraries on the Business process libraries page.](./media/bpm_02.png)](./media/bpm_02.png)
 
 3.  Enter a name for the library.
 
@@ -75,7 +75,7 @@ Follow these steps to change or update the business process lines or hierarchy i
     -   To delete a node, select a business process in the center pane, and then select **Delete** in the right pane.
     -   To create a new node, drag the **New Business Process** flag at the top of the center pane to the place in the hierarchy where the new node should appear.
 
-        [![New Business Process flag](./media/bpm_06.png)](./media/bpm_06.png)
+        [![New Business Process flag.](./media/bpm_06.png)](./media/bpm_06.png)
 
     -   To import business processes from existing business process libraries, follow these steps:
 
@@ -88,7 +88,7 @@ Follow these steps to change or update the business process lines or hierarchy i
 2.  Navigate to the business process line that has a task recording associated with it, and select the link.
 3.  Drag the tiles under **Activities** to manually modify the flow chart.
 
-    [![Manually modifying the flow chart](./media/bpm_09.png)](./media/bpm_09.png)
+    [![Manually modifying the flow chart.](./media/bpm_09.png)](./media/bpm_09.png)
 
 4.  To upload a Microsoft Visio diagram of the modified flow chart, select the **Visio** tab.
 

@@ -3,8 +3,8 @@
 
 title: Data management package REST API
 description: This topic describes the Data management framework's package REST API.
-author: Sunil-Garg
-ms.date: 04/22/2021
+author: peakerbl
+ms.date: 08/16/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -19,7 +19,7 @@ ms.reviewer: sericks
 # ms.tgt_pltfrm: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2017-03-31
 ms.dyn365.ops.version: Platform update 5
 
@@ -380,7 +380,10 @@ The following APIs are used to check status. They are used during both import fl
 
 ### GetExecutionSummaryStatus
 
-The **GetExecutionSummaryStatus** API is used for both import jobs and export jobs. It's used to check the status of a data project execution job. This API is applicable to both cloud deployments and on-premises deployments.
+The **GetExecutionSummaryStatus** API is used for both import jobs and export jobs. It's used to check the status of a data project execution job. This API is applicable to both cloud deployments and on-premises deployments. 
+
+> [!NOTE]
+> The package needs to be created for the API to return the final execution status, such as *Succeeded*.
 
 ```csharp
 POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionSummaryStatus
@@ -447,11 +450,11 @@ BODY
 
 The following illustration shows how the Data management package methods can be used to import data packages.
 
-![Data package file import that uses the Data management package methods](./media/data-package-import.png)
+![Data package file import that uses the Data management package methods.](./media/data-package-import.png)
 
 The following illustration shows how the Data management package methods can be used to export data packages.
 
-![Data package file export that uses the Data management package methods](./media/data-package-export.png)
+![Data package file export that uses the Data management package methods.](./media/data-package-export.png)
 
 A sample console application that showcases the data import and data export methods is available on GitHub. For more information, go to <https://github.com/Microsoft/Dynamics-AX-Integration/tree/master/FileBasedIntegrationSamples/ConsoleAppSamples>.
 

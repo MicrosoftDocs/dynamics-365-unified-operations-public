@@ -17,7 +17,7 @@ audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: 220314
+ms.custom: ["220314", "intro-internal"]
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -111,7 +111,7 @@ To add the standard ER configurations to your current Finance instance, you must
 5. On the **Versions** FastTab, select version **11.2.2**.
 6. Select **Import** to download the selected version from the Global repository.
 
-![Configuration repository page](./media/er-quick-start3-import-solution1.png)
+![Configuration repository page.](./media/er-quick-start3-import-solution1.png)
 
 > [!TIP]
 > If you have trouble accessing the [Global repository](er-download-configurations-global-repo.md), you can [download configurations](download-electronic-reporting-configuration-lcs.md) from Microsoft Dynamics Lifecycle Services (LCS) instead.
@@ -123,9 +123,9 @@ To add the standard ER configurations to your current Finance instance, you must
 3. On the **Configurations** page, expand the **Configuration components** FastTab.
 4. In the configuration tree in the left pane, expand **Invoice model**, and then expand **UBL Sales invoice**.
 
-Notice that, in addition to the selected **Peppol Sales Invoice** ER format, other required ER configurations were imported. Because new versions of ER configurations are constantly published to the Global repository and LCS to keep the corresponding solutions compliant with new requirements, the latest versions of the required [data model](general-electronic-reporting.md#data-model-and-model-mapping-components) configuration and its [model mapping](general-electronic-reporting.md#data-model-and-model-mapping-components) configurations were imported.
+Notice that, in addition to the selected **Peppol Sales Invoice** ER format, other required ER configurations were imported. Because new versions of ER configurations are constantly published to the Global repository and LCS to keep the corresponding solutions compliant with new requirements, the latest versions of the required data model configuration and its model mapping configurations were imported.
 
-![Configurations page](./media/er-quick-start3-imported-solution1a.png)
+![Configurations page.](./media/er-quick-start3-imported-solution1a.png)
 
 To simulate the state that ER configurations in the current Finance instance  would be in if you imported version **11.2.2** of the **Peppol Sales Invoice** ER format in the past (for example, on August 7, 2019), follow these steps.
 
@@ -136,32 +136,32 @@ Then verify that the following configurations are available in the configuration
 
 - **Invoice model** ER data model configuration (initially named **Customer invoice model**):
 
-    - Version 11 contains version 10 of the [data model](general-electronic-reporting.md#data-model-and-model-mapping-components) ER component that represents the data structure of the invoicing business domain. This ER configuration has been imported as an ancestor of the **Peppol Sales Invoice** ER format that was selected for import.
+    - Version 11 contains version 10 of the data model ER component that represents the data structure of the invoicing business domain. This ER configuration has been imported as an ancestor of the **Peppol Sales Invoice** ER format that was selected for import.
     - Version 50 contains version 31 of the data model ER component. This ER configuration has been imported as an ancestor of the August 7, 2019, version of the **Invoice model mapping** ER model mapping configuration.
 
-    ![Invoice model ER data model configuration on the Configurations page](./media/er-quick-start3-imported-solution1b1.png)
+    ![Invoice model ER data model configuration on the Configurations page.](./media/er-quick-start3-imported-solution1b1.png)
 
     > [!TIP]
     > If you don't see version 50 of this data model, open the Global repository, and import version 50.19 of the **Invoice model mapping** ER configuration.
 
 - **Invoice model mapping** ER model mapping configuration (initially named **Customer invoice model mapping**):
 
-    - Version 50.19 has been imported as the latest implementation of version 50 of the **Invoice model** ER data model configuration. It contains two [model mapping](general-electronic-reporting.md#data-model-and-model-mapping-components) ER components that describe how the data model is filled in with application data at runtime.
+    - Version 50.19 has been imported as the latest implementation of version 50 of the **Invoice model** ER data model configuration. It contains two model mapping ER components that describe how the data model is filled in with application data at runtime.
 
-    ![Invoice model mapping ER model mapping configuration on the Configurations page](./media/er-quick-start3-imported-solution1b2.png)
+    ![Invoice model mapping ER model mapping configuration on the Configurations page.](./media/er-quick-start3-imported-solution1b2.png)
 
     > [!TIP]
     > If you don't see version 50.19 of this model mapping, open the Global repository, and import version 50.19 of the **Invoice model mapping** ER configuration.
 
 - **UBL Sales invoice** ER format configuration:
 
-    - Version 11.2 contains the [format](general-electronic-reporting.md#FormatComponentOutbound) and format mapping ER components. The format component specifies the report layout. The format mapping component contains the model data source and specifies how this data source is used to fill in the report layout at runtime. This ER format was configured to generate e-invoices in Universal Business Language (UBL) format. It has been imported as a parent of the **Peppol Sales Invoice** ER format that was selected for import.
+    - Version 11.2 contains the format and format mapping ER components. The format component specifies the report layout. The format mapping component contains the model data source and specifies how this data source is used to fill in the report layout at runtime. This ER format was configured to generate e-invoices in Universal Business Language (UBL) format. It has been imported as a parent of the **Peppol Sales Invoice** ER format that was selected for import.
 
 - **Peppol Sales Invoice** ER format configuration:
 
     - Version 11.2.2 contains the format and format mapping ER components that were configured to generate e-invoices in Pan-European Public Procurement OnLine (PEPPOL) format.
 
-    ![Peppol Sales Invoice ER format configuration on the Configurations page](./media/er-quick-start3-imported-solution1b3.png)
+    ![Peppol Sales Invoice ER format configuration on the Configurations page.](./media/er-quick-start3-imported-solution1b3.png)
 
 ## <a name="ConfigureAR1"></a>Configure the Accounts receivable parameters
 
@@ -169,7 +169,7 @@ Then verify that the following configurations are available in the configuration
 2. On the **Electronic documents** tab, on the **Electronic reporting** FastTab, in the **Sales and Free text invoice** field, select **Peppol Sales Invoice**.
 3. Select **Save**.
 
-![Electronic documents tab on the Accounts receivable parameters page](./media/er-quick-start3-configure-ar1.png)
+![Electronic documents tab on the Accounts receivable parameters page.](./media/er-quick-start3-configure-ar1.png)
 
 ## <a name="ConfigureLE"></a>Configure the legal entity parameters
 
@@ -221,7 +221,7 @@ You can now use the standard ER configurations that you imported to electronical
 
 5. Select **Save**.
 
-![Free text invoice page](./media/er-quick-start3-add-invoice.png)
+![Free text invoice page.](./media/er-quick-start3-add-invoice.png)
 
 For more information, see [Create a free text invoice](../../../finance/accounts-receivable/create-free-text-invoice-new.md).
 
@@ -231,14 +231,14 @@ For more information, see [Create a free text invoice](../../../finance/accounts
 2. On the **Free text invoice** page, on the Action Pane, select **Post**.
 3. In the **Post free text invoice** dialog box, select **OK**.
 
-![Free text invoice details page](./media/er-quick-start3-post-invoice.png)
+![Free text invoice details page.](./media/er-quick-start3-post-invoice.png)
 
 ### Send a posted invoice
 
 1. Go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
 2. On the **Free text invoice** page, on the Action Pane, in the **Document** group, select **Send** \> **Original**.
 
-    ![Preview of the original invoice](./media/er-quick-start3-send-invoice.png)
+    ![Preview of the original invoice.](./media/er-quick-start3-send-invoice.png)
 
 3. Close the **Free text invoice** page.
 
@@ -248,12 +248,12 @@ For more information, see [Create a free text invoice](../../../finance/accounts
 2. On the **Electronic reporting jobs** page, select the initial record that has the task description **Send the eInvoice XML**.
 3. Select **Show files** to access the list of generated files.
 
-    ![Electronic reporting jobs page](./media/er-quick-start3-jobs-list.png)
+    ![Electronic reporting jobs page.](./media/er-quick-start3-jobs-list.png)
 
 4. Select **Open** to download the e-invoice XML file that is generated.
 5. Analyze the e-invoice XML file. Notice that the customer tax schema is currently represented by the **schemeID** and **schemeAgencyID** XML attributes. Also notice that the **cbc:CustomizationID** XML element currently contains the following text: `urn:www.cenbii.eu:transaction:biicoretrdm010:ver1.0:# urn:www.peppol.eu:bis:peppol5a:ver1.0`.
 
-    ![Preview of the generated e-invoice XML file](./media/er-quick-start3-e-invoice1.png)
+    ![Preview of the generated e-invoice XML file.](./media/er-quick-start3-e-invoice1.png)
 
 ## <a name="AddCustomField"></a>Add a custom database field
 
@@ -285,7 +285,7 @@ Follow these steps to do the customization.
 12. In the message box that appears, select **Yes** to confirm that you want to create a new **FederalTaxID** field entry for the **Customers** table.
 13. Select **Insert** to <a name="insert_custom_field"></a>add the **FederalTaxID\_Custom** field to the current page.
 
-    ![All customers page](./media/er-quick-start3-create-new-field.gif)
+    ![All customers page.](./media/er-quick-start3-create-new-field.gif)
 
 14. Close the **All customers** page.
 
@@ -315,7 +315,7 @@ As a user in the Electronic Reporting Functional Consultant role, you can design
 
 You can now use the ER data model designer to edit version 50.1 of the **Invoice model (Litware)** ER configuration in **Draft** [status](general-electronic-reporting.md#component-versioning).
 
-![Version 50.1 of the ER configuration on the Configurations page](./media/er-quick-start3-added-custom-model.png)
+![Version 50.1 of the ER configuration on the Configurations page.](./media/er-quick-start3-added-custom-model.png)
 
 #### Configure a custom data model
 
@@ -331,7 +331,7 @@ You must modify your custom data model by adding a new field to provide the valu
 8. In the **Item type** field, accept the default value, **String**.
 9. Select **Add**, and then select **Save**.
 
-    ![Data model designer page](./media/er-quick-start3-add-data-model-field.png)
+    ![Data model designer page.](./media/er-quick-start3-add-data-model-field.png)
 
     > [!NOTE]
     > The **Label** and **Description** fields describe the purpose of the new field. You can fill in these fields in multiple languages. For more information, see [Design multilingual reports in Electronic reporting](er-design-multilingual-reports.md).
@@ -348,7 +348,7 @@ You must [complete](general-electronic-reporting.md#component-versioning) your w
 
 The status of version 50.1 is changed from **Draft** to **Completed**, and the version becomes read-only. A new editable version, 50.2, is added and has a status of **Draft**. You can use this version to make further changes in your custom ER data model configuration.
 
-![Version 50.1 completed on the Configurations page](./media/er-quick-start3-completed-custom-model1.png)
+![Version 50.1 completed on the Configurations page.](./media/er-quick-start3-completed-custom-model1.png)
 
 ### Customize the model mapping configuration
 
@@ -368,7 +368,7 @@ As a user in the Electronic Reporting Developer role, you can design your custom
 
 7. Select **Create configuration** to add the new ER configuration.
 
-![Adding a custom model mapping configuration on the Configurations page](./media/er-quick-start3-adding-custom-mapping.png)
+![Adding a custom model mapping configuration on the Configurations page.](./media/er-quick-start3-adding-custom-mapping.png)
 
 #### Configure a custom model mapping
 
@@ -379,7 +379,7 @@ You must modify your custom model mapping and specify how the custom **FederalTa
 3. On the Action Pane, select **Designer**.
 4. On the **Model to datasource mapping** page, select the **Customer invoice** mapping.
 
-    ![Model to datasource mapping page](./media/er-quick-start3-select-customer-mapping.png)
+    ![Model to datasource mapping page.](./media/er-quick-start3-select-customer-mapping.png)
 
 5. Select **Designer**.
 6. On the **Model mapping designer** page, in the **Data sources** pane, expand the **CustInvoiceJour** data source that represents the **CustInvoiceJour** application table.
@@ -389,7 +389,7 @@ You must modify your custom model mapping and specify how the custom **FederalTa
 10. In the **Data model** pane, expand **Customer information (Customer)**, and select the **FederalTaxID\_Litware** data model field.
 11. Select **Bind**.
 
-    ![Model mapping designer page](./media/er-quick-start3-customize-model-mapping.gif)
+    ![Model mapping designer page.](./media/er-quick-start3-customize-model-mapping.gif)
 
 12. Select **Save**.
 13. Close the **Model mapping designer** page.
@@ -405,7 +405,7 @@ You must [complete](general-electronic-reporting.md#component-versioning) your w
 
 The status of version 50.19.1 is changed from **Draft** to **Completed**, and the version becomes read-only. A new editable version, 50.19.2, is added and has a status of **Draft**. You can use this version to make further changes in your custom ER model mapping configuration.
 
-![Version 50.19.1 completed on the Configurations page](./media/er-quick-start3-completed-custom-mapping1.png)
+![Version 50.19.1 completed on the Configurations page.](./media/er-quick-start3-completed-custom-mapping1.png)
 
 > [!NOTE]
 > The supported configuration [lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md) doesn't cover the lifecycle of database changes. If you export version 50.19.1 of the **Invoice model mapping (Litware)** configuration from the current Finance instance and try to import it into another instance that doesn't contain the custom **FederalTaxID\_Custom** field in the **CustTable** table, an exception will occur. The exception will state that the imported ER configuration isn't compatible with the metadata of the target Finance instance.
@@ -429,11 +429,11 @@ As a user in the Electronic Reporting Functional Consultant role, you can design
 7. In the **Data model** field, select the **InvoiceCustomer** root definition.
 8. Select **Create configuration** to add the new ER configuration.
 
-![Adding a custom format configuration on the Configurations page](./media/er-quick-start3-adding-custom-format.png)
+![Adding a custom format configuration on the Configurations page.](./media/er-quick-start3-adding-custom-format.png)
 
 You can now use the ER Operations designer to edit version 11.2.2.1 of the **Peppol Sales Invoice (Litware)** ER configuration in **Draft** [status](general-electronic-reporting.md#component-versioning).
 
-![Version 11.2.2.1 of the ER configuration on the Configurations page](./media/er-quick-start3-added-custom-format.png)
+![Version 11.2.2.1 of the ER configuration on the Configurations page.](./media/er-quick-start3-added-custom-format.png)
 
 #### Configure a custom format
 
@@ -449,7 +449,7 @@ You must modify your custom format by adding a new format element to fill in the
 8. In the format tree, under **XMLHeader** \> **Invoice** \> **cac:AccountingCustomerParty** \> **cac:Party** \> **cac:PartyTaxScheme** \> **cac:TaxScheme** \> **cbc:ID**, select **FederalTaxID**.
 9. Select **Move up**.
 
-![New format element on the Format designer page](./media/er-quick-start3-customized-format.png)
+![New format element on the Format designer page.](./media/er-quick-start3-customized-format.png)
 
 #### Configure a custom format mapping
 
@@ -457,7 +457,7 @@ You must modify your custom format by adding a new format element to fill in the
 2. Under **Invoice**, expand **Customer information (Customer)**, and select **FederalTaxID\_Litware**.
 3. Select **Bind**.
 
-    ![Format designer page](./media/er-quick-start3-customized-format-mapping.png)
+    ![Format designer page.](./media/er-quick-start3-customized-format-mapping.png)
 
 4. Select the **Invoice** data source of the **Model** type, and then select **Edit**.
 5. In the **Version** field, select version **1** of your custom data model, and then select **OK**.
@@ -474,7 +474,7 @@ You must [complete](general-electronic-reporting.md#component-versioning) your w
 
 The status of version 11.2.2.1 is changed from **Draft** to **Completed**, and the version becomes read-only. A new editable version, 11.2.2.2, is added and has a status of **Draft**. You can use this version to make further changes in your custom ER format configuration.
 
-![Version 11.2.2.1 completed on the Configurations page](./media/er-quick-start3-completed-custom-format1.png)
+![Version 11.2.2.1 completed on the Configurations page.](./media/er-quick-start3-completed-custom-format1.png)
 
 ## <a name="ConfigureAR2"></a>Configure the Accounts receivable parameters to start to use custom ER configurations
 
@@ -482,7 +482,7 @@ The status of version 11.2.2.1 is changed from **Draft** to **Completed**, and t
 2. On the **Electronic documents** tab, on the **Electronic reporting** FastTab, in the **Sales and Free text invoice** field, select **Peppol Sales Invoice (Litware)**.
 3. Select **Save**.
 
-![Accounts receivable parameters page, Electronic documents tab, Electronic reporting FastTab](./media/er-quick-start3-configure-ar2.png)
+![Accounts receivable parameters page, Electronic documents tab, Electronic reporting FastTab.](./media/er-quick-start3-configure-ar2.png)
 
 ## <a name="ConfigureCustomer2"></a>Update a customer record by adding a federal tax identification code
 
@@ -491,7 +491,7 @@ The status of version 11.2.2.1 is changed from **Draft** to **Completed**, and t
 3. On the **General** FastTab, in the **Federal Tax ID** field, enter **LITWARE-6789**.
 4. Select **Save**.
 
-    ![DE-014 customer details page](./media/er-quick-start3-added-tax-id-value.png)
+    ![DE-014 customer details page.](./media/er-quick-start3-added-tax-id-value.png)
 
 5. Close the **All customers** page.
 
@@ -512,7 +512,7 @@ The status of version 11.2.2.1 is changed from **Draft** to **Completed**, and t
 4. Select **Open** to download the e-invoice XML file that is generated.
 5. Analyze the e-invoice XML file. Notice that, in accordance with your customization, the customer tax schema includes the custom **FederalTaxID** XML attribute in addition to the **schemeID** and **schemeAgencyID** XML attributes. The value of this new XML attribute is specified by the **LITWARE-6789** federal tax ID that was entered for an invoiced customer.
 
-    ![Preview of the generated e-invoice XML file with your customizations](./media/er-quick-start3-e-invoice2.png)
+    ![Preview of the generated e-invoice XML file with your customizations.](./media/er-quick-start3-e-invoice2.png)
 
 ## <a name="ImportERConfigurations2"></a>Import the latest versions of standard ER configurations
 
@@ -525,7 +525,7 @@ To keep the set of standard ER configurations in your Finance instance [up to da
 5. On the **Versions** FastTab, select version **32.6.7** of the selected ER format configuration that has been released to support customer electronic invoices in PEPPOL BIS 3 format. For more information, see [KB4490320](https://support.microsoft.com/help/4490320/an-update-for-european-union-to-support-export-of-customers-electronic).
 6. Select **Import** to download the selected version from the Global repository to the current Finance instance.
 
-![Version 32.6.7 selected on the Configuration repository page](./media/er-quick-start3-import-solution2.png)
+![Version 32.6.7 selected on the Configuration repository page.](./media/er-quick-start3-import-solution2.png)
 
 For information about how this process can be automated, see [Import updated versions of ER configurations](er-download-updated-versions-global-repo.md).
 
@@ -546,13 +546,13 @@ Make sure that the following ER configurations are eventually available in the c
 
     - Version 206 (or later) contains version 24 (or later) of the data model ER component that represents the data structure of the invoicing business domain. This ER configuration has been imported as an ancestor of the latest available **Invoice model mapping** ER model mapping configuration.
 
-    ![Version 206 on the Configurations page](./media/er-quick-start3-imported-solution2b1.png)
+    ![Version 206 on the Configurations page.](./media/er-quick-start3-imported-solution2b1.png)
 
 - **Invoice model mapping** ER model mapping configuration:
 
     - Version 206.132 (or later) has been imported as the latest implementation of version 206 of the **Invoice model** ER data model configuration. It contains several model mapping ER components that describe how the data model is filled in with application data at runtime.
 
-    ![Version 206.132 on the Configurations page](./media/er-quick-start3-imported-solution2b2.png)
+    ![Version 206.132 on the Configurations page.](./media/er-quick-start3-imported-solution2b2.png)
 
 - **UBL Sales invoice** ER format configuration:
 
@@ -562,7 +562,7 @@ Make sure that the following ER configurations are eventually available in the c
 
     - Version 32.6.7 contains the format and format mapping ER components that were configured to generate e-invoices in PEPPOL format.
 
-    ![Version 32.6.7 on the Configurations page](./media/er-quick-start3-imported-solution2b3.png)
+    ![Version 32.6.7 on the Configurations page.](./media/er-quick-start3-imported-solution2b3.png)
 
 ## <a name="RebaseCustomERConfigurations"></a>Adopt the changes to the new standard ER configurations in your custom ER configurations
 
@@ -582,7 +582,7 @@ Make sure that the following ER configurations are eventually available in the c
 
 The status of version 206.2 is changed from **Draft** to **Completed**, and the version becomes read-only. A new editable version, 206.3, is added and has a status of **Draft**. You can use this version to make further changes in your custom ER data model configuration.
 
-![Version 206.2 completed on the Configurations page](./media/er-quick-start3-completed-custom-model2.png)
+![Version 206.2 completed on the Configurations page.](./media/er-quick-start3-completed-custom-model2.png)
 
 ### Adopt your custom ER model mapping
 
@@ -595,12 +595,12 @@ The status of version 206.2 is changed from **Draft** to **Completed**, and the 
 
     Notice that some rebase conflicts were discovered. You must now manually resolve those conflicts.
 
-    ![Rebase conflict message on the Configurations page](./media/er-quick-start3-rebase-conflicts-model-mapping1.png)
+    ![Rebase conflict message on the Configurations page.](./media/er-quick-start3-rebase-conflicts-model-mapping1.png)
 
 5. On the Action Pane, select **Designer**, and then, in the list of mappings, select **Customer Invoice**.
 6. For each rebase conflict, select **Retain own value**, because you must keep the version number of your custom data model for every component that has been mentioned.
 
-    ![Rebase conflicts on the Model mapping designer page](./media/er-quick-start3-rebase-conflicts-model-mapping2.png)
+    ![Rebase conflicts on the Model mapping designer page.](./media/er-quick-start3-rebase-conflicts-model-mapping2.png)
 
 7. Select **Save**, and then close the **Model mapping designer** page.
 8. In the list of mappings, select **Project Invoice**.
@@ -614,7 +614,7 @@ The status of version 206.2 is changed from **Draft** to **Completed**, and the 
 
 The status of version 206.132.2 is changed from **Draft** to **Completed**, and the version becomes read-only. A new editable version, 206.132.3, is added and has a status of **Draft**. You can use this version to make further changes in your custom ER model mapping configuration.
 
-![Version 206.132.2 completed on the Configurations page](./media/er-quick-start3-completed-custom-mapping2.png)
+![Version 206.132.2 completed on the Configurations page.](./media/er-quick-start3-completed-custom-mapping2.png)
 
 ### Adopt your custom ER format
 
@@ -642,7 +642,7 @@ The status of version 206.132.2 is changed from **Draft** to **Completed**, and 
 
 The status of version 32.6.7.2 is changed from **Draft** to **Completed**, and the version becomes read-only. A new editable version, 32.6.7.3, is added and has a status of **Draft**. You can use this version to make further changes in your custom ER format configuration.
 
-![Version 32.6.7.2 completed on the Configurations page](./media/er-quick-start3-completed-custom-format2.png)
+![Version 32.6.7.2 completed on the Configurations page.](./media/er-quick-start3-completed-custom-format2.png)
 
 ## <a name="ProcessInvoice3"></a>Process a customer invoice by using new versions of the custom ER configurations
 
@@ -665,7 +665,7 @@ The status of version 32.6.7.2 is changed from **Draft** to **Completed**, and t
 4. Select **Open** to download the e-invoice XML file that is generated.
 5. Analyze the e-invoice XML file. Notice that, in accordance with your customization, the customer tax schema still contains the custom **FederalTaxID** XML attribute in addition to the **schemeID** and **schemeAgencyID** XML attributes. Additionally, because the changes in the new version of the base **UBL Sales invoice** format were merged with your customization, the text of the **cbc:CustomizationID** XML element has been changed from `urn:www.cenbii.eu:transaction:biicoretrdm010:ver1.0:# urn:www.peppol.eu:bis:peppol5a:ver1.0` to `urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0`.
 
-    ![Preview of the generated e-invoice XML file with customizations](./media/er-quick-start3-e-invoice3.png)
+    ![Preview of the generated e-invoice XML file with customizations.](./media/er-quick-start3-e-invoice3.png)
 
 ## Additional resources
 

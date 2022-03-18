@@ -4,7 +4,7 @@
 title: Optimize data migration for Finance and Operations apps
 description: The topic provides an overview of steps and actions that you can use to optimize data migration for Finance and Operations apps.
 author: skaue-ms
-ms.date: 04/22/2021
+ms.date: 10/20/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -81,7 +81,7 @@ In Platform update 31, the new [priority-based batch scheduling](priority-based-
 
 ## Configure the maximum number of batch threads
 
-To better use parallelism and multithreading, you can configure the maximum number of batch threads per instance of Application Object Server (AOS) by setting the **Maximum batch threads** field on the **Server configuration** page (**System administration \> Setup \> Server configuration**). Be careful about changing the value of this field. A value that is too high can have negative performance implications. Currently, the default value is **4**. You can change the value to **8** as you require. However, you should not set the field to a value that is more than 8 unless you do significant performance testing.
+To better use parallelism and multithreading, you can configure the maximum number of batch threads per instance of Application Object Server (AOS) by setting the **Maximum batch threads** field on the **Server configuration** page (**System administration \> Setup \> Server configuration**). Be careful about changing the value of this field. A value that is too high can have negative performance implications. Currently, the default value is **8**. You can increase the value to **12** or **16**. However, you should not set the field to a value that is more than 16 unless you do significant performance testing.
 
 ## Import in batch mode
 

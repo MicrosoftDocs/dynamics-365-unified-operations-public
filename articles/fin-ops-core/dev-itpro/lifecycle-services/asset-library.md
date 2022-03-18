@@ -35,11 +35,11 @@ The Asset library is a storage location for the various assets that are associat
 
 - **Shared asset library** – The Shared asset library is used by Microsoft and Partners to share assets across multiple tenants, projects, and environments in LCS. This library can be accessed by any user who signs in to LCS. To access the Shared asset library, sign in to LCS, and then click the **Shared asset library** tile.
 
-    [![Shared asset library tile](./media/SharedAssetLibrary.jpg)](./media/SharedAssetLibrary.jpg)
+    [![Shared asset library tile.](./media/SharedAssetLibrary.jpg)](./media/SharedAssetLibrary.jpg)
 
 - **Project-level Asset library** – The project-level Asset library is used to share assets across environments within a project in LCS. This library can be accessed by all users within a project. To access the project-level Asset library, sign in to LCS, and open a project. Then, on the hamburger menu, click **Asset library**.
 
-    [![Opening the project-level Asset library](./media/ProjectAssetLibrary.jpg)](./media/ProjectAssetLibrary.jpg)
+    [![Opening the project-level Asset library.](./media/ProjectAssetLibrary.jpg)](./media/ProjectAssetLibrary.jpg)
     
     > [!NOTE]
     > Uploading versions for the same asset in the project asset library is not supported. 

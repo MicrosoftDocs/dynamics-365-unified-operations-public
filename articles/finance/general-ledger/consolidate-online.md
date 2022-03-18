@@ -37,7 +37,7 @@ After you've completed your setup, you enter the details of the consolidation on
 ## Criteria
 On the **Criteria** tab of the **Consolidate [Online]** page, you define the accounts, the periods, and the type of data that is being consolidated.
 
-![Criteria tab](./media/criteria-consolidate-online.png "Criteria tab")
+![Criteria tab.](./media/criteria-consolidate-online.png "Criteria tab")
 
 Here is an explanation of the various fields on this tab:
 
@@ -63,16 +63,16 @@ Here is an explanation of the various fields on this tab:
 ## Financial dimensions
 On the **Financial dimensions** tab, you define the dimensions that should be included in the consolidation company. To select a dimension, set the **Specification** field to **Dimension**, and then define the order of the dimension in the consolidation company.
 
-![Financial dimensions tab](./media/financial-dimensions-cons.png "Financial dimensions tab")
+![Financial dimensions tab.](./media/financial-dimensions-cons.png "Financial dimensions tab")
 
 Regardless of the order that you define, **Main account** will always be the first segment.
 
 ## Legal entities
 On the **Legal entities** tab, you define the companies that should be included in the consolidation company. You also define the ownership percentage of those companies. If you specify less than 100-percent ownership, the specified percentage will be rolled up to the consolidation company. For any translation differences, the **Account type for conversion differences** field is used to select the main account from the setup on the **Accounts for automatic transactions** page.
 
-![Legal entities tab](./media/legal-entities-cons.png "Legal entities tab")
+![Legal entities tab.](./media/legal-entities-cons.png "Legal entities tab")
 
-![Accounts for automatic transactions page](./media/accounts-for-automatic-cons.png "Accounts for automatic transactions page")
+![Accounts for automatic transactions page.](./media/accounts-for-automatic-cons.png "Accounts for automatic transactions page")
 
 ## Elimination
 On the **Elimination** tab, you have three options for processing eliminations:
@@ -81,7 +81,7 @@ On the **Elimination** tab, you have three options for processing eliminations:
 - Select the elimination rule, and then, in the **Proposal options** field, select **Post only**. This option will process the elimination during the consolidation process and will post everything in one step.
 - Run an elimination proposal separately from the consolidation process by using the elimination journal.
 
-![Elimination tab](./media/elimination-cons-onl.png "Elimination tab")
+![Elimination tab.](./media/elimination-cons-onl.png "Elimination tab")
 
 For more information about eliminations, see [Elimination rules](./elimination-rules.md).
 
@@ -92,7 +92,7 @@ On the **Currency translation** tab, you define the legal entity, account and ex
 - **Transaction date** – The date of each transaction will be used to select an exchange rate. This option is most often used for fixed assets and is often referred to as a historical rate. You can't see a preview of the rate, because there will be many rates for the various transactions in the account range.
 - **User defined rate** – After you select this option, you can enter the exchange rate that you want. This option can be useful for average exchange rates or if you're consolidating against a fixed exchange rate.
 
-![Currency translation tab](./media/currency-translation-cons-online.png "Currency translation tab")
+![Currency translation tab.](./media/currency-translation-cons-online.png "Currency translation tab")
 
 ## Additional resources
 

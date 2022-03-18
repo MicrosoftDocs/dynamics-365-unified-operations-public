@@ -15,7 +15,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 # ms.tgt_pltfrm: 
-ms.custom: 
+ms.custom: "intro-internal"
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -26,16 +26,19 @@ ms.dyn365.ops.version: Human Resources
 
 # Payroll integration API introduction
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This document describes the Dynamics 365 Human Resources Payroll integration API. The API enables streamlined end-to-end integrations between Human Resources and partnering payroll systems. The integrated experience begins in Human Resources with the employee profile, salary and deduction, and contribution information. When you hire an employee and enter the required profile and pay information into Human Resources, the payroll system pulls this information to use when processing payroll. Any updates made to the employee or pay information are also pulled for use in later pay runs.
 
-![Payroll integration flow](media/hr-admin-integration-payroll-api-introduction-flow.png)
+[![Payroll integration flow.](media/hr-admin-integration-payroll-api-introduction-flow.png)](media/hr-admin-integration-payroll-api-introduction-flow-2.png#lightbox)
 
 To enable the integration, Human Resources includes the following components:
 
-- Functionality to mark an employee as ready to pay
-- An integration API opening up the new functionality to integrating applications
+- [Functionality to mark an employee as ready to pay.](hr-compensation-payroll.md)
+- An integration API opening up the new functionality to integrating applications.
 
 ## Microsoft Dataverse
 
@@ -64,7 +67,7 @@ For information on generating the virtual tables for the API, see [Configure Dat
 
 The following diagram illustrates relationships within the API. Several types have foreign keys to other, pre-existing entities in Human Resources that aren't illustrated here. This document provides information on entities that are specific to payroll integration scenarios. However, there are many other entities in the Dataverse Web API for Human Resources that may also be relevant to your integration. Some of these entities are referenced in foreign key relationships or navigation properties.
 
-![Payroll Integration API data model](media/hr-admin-payroll-api-data-model.png)
+[![Payroll Integration API data model.](media/hr-admin-payroll-api-data-model.png)](media/hr-admin-payroll-api-data-model.png#lightbox)
 
 ## Payroll employee and related entities
 
@@ -72,7 +75,8 @@ Entities:
 
 - [Payroll employee](hr-admin-integration-payroll-api-payroll-employee.md)
 - [Payroll worker address](hr-admin-integration-payroll-api-payroll-worker-address.md)
-- [Payroll fixed compensation plan](hr-admin-integration-ats-api-recruiting-request-education.md)
+- [Payroll fixed compensation plan](hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md)
+- [Payroll variable compensation plan](hr-admin-integration-payroll-api-payroll-variable-compensation-plan.md)
 - [Payroll position job](hr-admin-integration-payroll-api-payroll-position-job.md)
 - [Payroll position](hr-admin-integration-payroll-api-payroll-position.md)
 

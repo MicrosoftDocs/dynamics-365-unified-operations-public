@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 10.0.9
 
 ## Overview
 
-You can use the Operations designer of the [Electronic reporting (ER)](general-electronic-reporting.md) framework to [configure](./tasks/er-format-configuration-2016-11.md) the [format component](general-electronic-reporting.md#FormatComponentOutbound) of an ER solution that is used to generate outbound documents in XML format. The hierarchical structure of the configured format component consists of format elements of various types. These format elements are used to fill generated documents with the required information at runtime. By default, when you run an ER format, the format elements are run in the same order as they are presented in the format hierarchy: one by one, from top to bottom. However, at design time, you can change the execution order for any XML elements of the configured format component.
+You can use the Operations designer of the [Electronic reporting (ER)](general-electronic-reporting.md) framework to [configure](./tasks/er-format-configuration-2016-11.md) the format component of an ER solution that is used to generate outbound documents in XML format. The hierarchical structure of the configured format component consists of format elements of various types. These format elements are used to fill generated documents with the required information at runtime. By default, when you run an ER format, the format elements are run in the same order as they are presented in the format hierarchy: one by one, from top to bottom. However, at design time, you can change the execution order for any XML elements of the configured format component.
 
 By turning on the <a name="DeferredXmlElementExecution"></a>**Deferred execution** option for an XML element in the configured format, you can defer (postpone) the execution of that element. In this case, the element isn't run until all other elements of its parent have been run.
 
@@ -95,14 +95,14 @@ Before you begin, you must also download and save the following configuration of
 6. In the configuration tree, expand **Model to learn deferred elements**.
 7. Review the list of imported ER configurations in the configuration tree.
 
-    ![Imported ER configurations on the Configurations page](./media/ER-DeferredXml-Configurations.png)
+    ![Imported ER configurations on the Configurations page.](./media/ER-DeferredXml-Configurations.png)
 
 ### Activate a configuration provider
 
 1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
 2. On the **Localization configurations** page, in the **Configuration providers** section, make sure that the [configuration provider](general-electronic-reporting.md#Provider) for the Litware, Inc. (`http://www.litware.com`) sample company is listed, and that it's marked as active. If this configuration provider isn't listed, or if it isn't marked as active, follow the steps in the [Create a configuration provider and mark it as active](./tasks/er-configuration-provider-mark-it-active-2016-11.md) topic.
 
-    ![Litware, Inc. sample company on the Localization configurations page](./media/ER-DeferredXml-ElectronicReportingWorkspace.png)
+    ![Litware, Inc. sample company on the Localization configurations page.](./media/ER-DeferredXml-ElectronicReportingWorkspace.png)
 
 ### Review the imported model mapping
 
@@ -124,7 +124,7 @@ Review the settings of the ER model mapping component that is configured to acce
     - The **Grouped** data source of the *Group By* type is configured to group filtered tax transactions of the **Filtered** data source.
     - The **TotalSum** aggregation field of the **Grouped** data source is configured to summarize values of the **\$TaxAmount** field of the **Filtered** data source for all filtered tax transactions of that data source.
 
-        ![TotalSum aggregation field on the Edit 'GroupBy' parameters page](./media/ER-DeferredXml-GroupByParameters.png)
+        ![TotalSum aggregation field on the Edit 'GroupBy' parameters page.](./media/ER-DeferredXml-GroupByParameters.png)
 
 9. Review how the configured data sources are bound to the data model, and how they expose accessed data to make it available in an ER format:
 
@@ -132,7 +132,7 @@ Review the settings of the ER model mapping component that is configured to acce
     - The **\$TaxAmount** field of the **Filtered** data source is bound to the **Data.List.Value** field of the data model.
     - The **TotalSum** field of the **Grouped** data source is bound to the **Data.Summary.Total** field of the data model.
 
-    ![Model mapping designer page](./media/ER-DeferredXml-ModelMapping.png)
+    ![Model mapping designer page.](./media/ER-DeferredXml-ModelMapping.png)
 
 10. Close the **Model mapping designer** and **Model mappings** pages.
 
@@ -148,7 +148,7 @@ Review the settings of the ER model mapping component that is configured to acce
     - The **Report \\Message\\Record** XML element is configured to fill the outbound document with a single record node that shows the details of a single tax transaction.
     - The **Report\\Message\\Summary** XML element is configured to fill the outbound document with a single summary node that includes the sum of the tax values from the processed tax transactions.
 
-    ![Message XML element and nested XML elements on the Format designer page](./media/ER-DeferredXml-Format.png)
+    ![Message XML element and nested XML elements on the Format designer page.](./media/ER-DeferredXml-Format.png)
 
 5. On the **Mapping** tab, review the following details:
 
@@ -162,14 +162,14 @@ Review the settings of the ER model mapping component that is configured to acce
     - The **TotalTaxAmount** attribute is bound to **model.Data.Summary.Total** to generate the sum of the tax values of the processed tax transactions.
     - The **ExecutionDateTime** attribute generates the date and time (including milliseconds) when the summary node is added.
 
-    ![Mapping tab on the Format designer page](./media/ER-DeferredXml-Format2.png)
+    ![Mapping tab on the Format designer page.](./media/ER-DeferredXml-Format2.png)
 
 ### Run the imported format
 
 1. On the **Format designer** page, select **Run**.
 2. Download the file that the web browser offers, and open it for review.
 
-    ![Downloaded file of imported format](./media/ER-DeferredXml-Run.png)
+    ![Downloaded file of imported format.](./media/ER-DeferredXml-Run.png)
 
 Notice that the summary node presents the sum of the tax values for the processed transactions. Because the format is configured to use the **model.Data.Summary.Total** binding to return this sum, the sum is calculated by calling the **TotalSum** aggregation of the **Grouped** data source of the *GroupBy* type in the model mapping. To calculate this aggregation, the model mapping iterates over all transactions that have been selected in the **Filtered** data source. By comparing the execution times of the summary node and the last record node, you can determine that calculation of the sum took 12 milliseconds (ms). By comparing the execution times of the first and last record nodes, you can determine that generation of all record nodes took 9 ms. Therefore, a total of 21 ms was required.
 
@@ -183,25 +183,25 @@ If the volume of transaction is much larger than the volume in the current examp
 4. Configure the **Collected data key name** expression as `WsColumn`.
 5. Configure the **Collected data key value** expression as `WsRow`.
 
-    ![Record XML element on the Format designer page](./media/ER-DeferredXml-Format3.png)
+    ![Record XML element on the Format designer page.](./media/ER-DeferredXml-Format3.png)
 
 6. Select the **Report\\Message\\Record\\TaxAmount** attribute.
 7. Configure the **Collected data key name** expression as `SummingAmountKey`.
 
-    ![TaxAmount attribute on the Format designer page](./media/ER-DeferredXml-Format4.png)
+    ![TaxAmount attribute on the Format designer page.](./media/ER-DeferredXml-Format4.png)
 
     You can consider this setting the fulfillment of a virtual worksheet, where the value of cell A1 is appended with the value of the tax amount from every processed tax transaction.
 
 8. Select the **Report\\Message\\Record\\RunningTotal** attribute, and then select **Edit formula**.
 9. Configure the `SUMIF(SummingAmountKey, WsColumn, WsRow)` expression by using the built-in [SUMIF](er-functions-datacollection-sumif.md) ER function, and then select **Save**.
 
-    ![SUMIF expression](./media/ER-DeferredXml-FormulaDesigner.png)
+    ![SUMIF expression.](./media/ER-DeferredXml-FormulaDesigner.png)
 
 10. Close the **Formula designer** page.
 11. Select **Save**, and then select **Run**.
 12. Download and review the file that the web browser offers.
 
-    ![Generated list of tax value with running total](./media/ER-DeferredXml-Run1.png)
+    ![Generated list of tax value with running total.](./media/ER-DeferredXml-Run1.png)
 
     The last record node contains the running total of tax values that is calculated for all processed transactions by using the generated output as a data source. This data source starts from the beginning of the report and continues through the last tax transaction. The summary node contains the sum of the tax values for all processed transactions that are calculated in the model mapping by using the data source of the *GroupBy* type. Notice that these values are equal. Therefore, the output-based summing can be used instead of **GroupBy**. By comparing the execution times of the first record node and the summary node, you can determine that generation of all the record nodes and summing took 11 ms. Therefore, as far as the generation of record nodes and the summing of tax values are concerned, the modified format is approximately two times faster than the original format.
 
@@ -210,7 +210,7 @@ If the volume of transaction is much larger than the volume in the current examp
 15. Select **Save**, and then select **Run**.
 16. Download and review the file that the web browser offers.
 
-    ![Generated list of tax values using edited formula](./media/ER-DeferredXml-Run2.png)
+    ![Generated list of tax values using edited formula.](./media/ER-DeferredXml-Run2.png)
 
     Notice that the running total of tax values in the last record node now equals the sum in the summary node.
 
@@ -223,7 +223,7 @@ If, for example, you must present the sum of tax values in the header of your re
 3. Select **Save**, and then select **Run**.
 4. Download and review the file that the web browser offers.
 
-    ![Downloaded file of tax values for report header](./media/ER-DeferredXml-Run3.png)
+    ![Downloaded file of tax values for report header.](./media/ER-DeferredXml-Run3.png)
 
     Notice that the sum of tax values in the summary node now equals 0 (zero), because this sum is now calculated based on the generated output. When the first record node is generated, the generated output doesn't yet contain record nodes that have transaction details. You can configure this format to defer the execution of the **Report\\Message\\Summary** element until the **Report\\Message\\Record** element has been run for all tax transactions.
 
@@ -232,12 +232,12 @@ If, for example, you must present the sum of tax values in the header of your re
 1. On the **Format designer** page, on the **Format** tab, select the **Report\\Message\\Summary** XML element.
 2. Set the **Deferred execution** option to **Yes**.
 
-    ![Deferred execution option of the Summary XML element on the Format designer page](./media/ER-DeferredXml-Format5.png)
+    ![Deferred execution option of the Summary XML element on the Format designer page.](./media/ER-DeferredXml-Format5.png)
 
 3. Select **Save**, and then select **Run**.
 4. Download and review the file that the web browser offers.
 
-    ![Downloaded file of deferred execution](./media/ER-DeferredXml-Run4.png)
+    ![Downloaded file of deferred execution.](./media/ER-DeferredXml-Run4.png)
 
     The **Report\\Message\\Summary** element is now run only after all other items that are nested under its parent element, **Report\\Message**, have been run. Therefore, it's run after the **Report\\Message\\Record** element has been run for all tax transactions of the **model.Data.List** data source. The execution times of the first and last record nodes, and of the header and summary nodes, reveal this fact.
 

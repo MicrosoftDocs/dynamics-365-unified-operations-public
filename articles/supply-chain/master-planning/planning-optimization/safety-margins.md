@@ -44,7 +44,7 @@ There are three types of safety margins:
 
 The following illustration shows how these safety margins apply over time.
 
-![Safety margins](media/safety-margins-1.png)
+![Safety margins.](media/safety-margins-1.png)
 
 All margins are defined in days. The default value, *0* (zero), indicates that no margin is applied. If you set up multiple margins, they all add to the total time from the supply *order date* to the demand *requirement date*. For example, a setup has no lead time, and all three margin types are set to one day. In this case, there will be three days between the supply order date and the demand requirement date, so if the order date is July 1, the requirement date would be July 4.
 
@@ -54,7 +54,7 @@ The receipt margin is probably the most used of the three safety margins. It's a
 
 The following illustration highlights the receipt margin.
 
-![Receipt margin](media/safety-margins-2.png)
+![Receipt margin.](media/safety-margins-2.png)
 
 The receipt margin is typically used as a buffer to ensure time for warehouse registration or other time-consuming processes that aren't captured as part of the general lead time in the system. For purchases, one benefit is that the *delivery date* of the purchase order is moved forward accordingly. If you  increase the lead time instead of using a safety margin, the vendor will still be asked to deliver at the last minute.
 
@@ -64,23 +64,17 @@ Note that a receipt margin isn't applied when on-hand inventory is used as the s
 
 ### Reorder margin
 
-> [!NOTE]
-> **Coming soon:** This feature isn't yet supported for Planning Optimization. Until it's supported, all values that are entered for **Reorder margin added to item lead time** will be treated as *0* (zero).
-
 The following illustration highlights the reorder margin.
 
-![Reorder margin](media/safety-margins-3.png)
+![Reorder margin.](media/safety-margins-3.png)
 
 The reorder margin is added before the item lead time for all planned orders during master planning. Therefore, it ensures additional time for a supply order to be placed. This margin is typically used as a buffer to ensure time for approval processes or other internal processes that are required during the creation of supply orders. The reorder margin is put between the supply *order date* and *start date*.
 
 ### Issue margin
 
-> [!NOTE]
-> **Coming soon:** This feature isn't yet supported for Planning Optimization. Until it's supported, all values that are entered for **Issue margin deducted from requirement date** will be treated as *0* (zero).
-
 The following illustration highlights the issue margin.
 
-![Issue margin](media/safety-margins-4.png)
+![Issue margin.](media/safety-margins-4.png)
 
 The issue margin is deducted from the demand requirement date during master planning. It helps ensure that you have time to react to and ship incoming demand orders. This margin is typically used as a buffer to ensure time for shipment and related outbound warehouse processes.
 
@@ -168,7 +162,7 @@ The following illustration presents a matrix that summarizes which calendars app
 - **Warehouse (WH):** Yellow
 - **Vendor (V):** Blue
 
-[![Calendar setup overview matrix](media/safety-margins-calendar-matrix.png)](media/safety-margins-calendar-matrix-high.png)
+[![Calendar setup overview matrix.](media/safety-margins-calendar-matrix.png)](media/safety-margins-calendar-matrix-high.png)
 
 ## Calculating delays
 
@@ -176,7 +170,7 @@ All three types of safety margins are included when the system determines whethe
 
 For example, an item has lead time of one day and a receipt margin of three days. A sales order for this item is set as required today. In this case, the delay is calculated as *lead time* + *receipt margin* = four days. Therefore, if today is August 14, the four days of delay produces a delivery on August 18. The following illustration shows this example.
 
-![Delay calculation example](media/safety-margins-delays.png)
+![Delay calculation example.](media/safety-margins-delays.png)
 
 ## Additional resources
 

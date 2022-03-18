@@ -4,7 +4,7 @@
 title: Configure and process an exchange on a return order
 description: This topic explains how to configure an exchange on a return in Dynamics 365 Commerce.
 author: josaw1
-ms.date: 11/12/2018
+ms.date: 07/28/2021
 ms.topic: index-page
 ms.prod: 
 ms.technology: 
@@ -36,7 +36,10 @@ However, functionality has been added to support scenarios where exchanges are d
 
 ## Configure Commerce to support exchanges on return orders
 
-Follow these steps to configure the system to support exchanges on return orders.
+> [!NOTE]
+> In Commerce version 10.0.20 and later, a new feature called "Unified return processing experience in POS" is available. If you enable this feature, the setup steps below are not required. **Process returns as sales orders** becomes a permanently configured setting and you won't be able to change it.
+
+Follow these steps to configure the system to support exchanges on return orders (if you do not have the **Unified return processing experience in POS** feature enabled.
 
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters**. On the **Customer orders** FastTab, set the **Process return orders as sales orders** option to **Yes**.
 2. Run the **Global configuration distribution schedule** job (**1110**).

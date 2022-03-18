@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: When to reset a data mart
-description: This topic lists the circumstances that might be improved by resetting a data mart and circumstances in which resetting your data mart is unlikely to help.
+title: Data mart resets FAQ
+description: This topic provides answers to some frequently asked questions about data mart resets.
 author: jinniew
-ms.date: 05/06/2021
+ms.date: 02/14/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -27,33 +27,43 @@ ms.dyn365.ops.version: 10.0.15
 
 ---
 
-# When to reset a data mart
+# Data mart resets FAQ
 
-Resetting a data mart can be time consuming. Depending on the circumstances, this action may not be the solution that's needed. This topic lists the circumstances that might be improved by resetting a data mart, as well as circumstances in which resetting your data mart is unlikely to help.  
+This topic provides answers to some frequently asked questions about data mart resets. A reset of the data mart can be a time-consuming process and, depending on the circumstances, might not be the solution that is required. Therefore, this topic includes information about circumstances where a data mart reset might help and also circumstances where it's unlikely to help.
 
-## When do I need to do a data mart reset?
-Consider the following questions before resetting a data mart. Answering yes to one or more questions might indicate that your organization can benefit by resetting the data mart.
-
-- Was the application database restored?
-- If you've opened a support incident that and a support engineer has instructed you to reset the data mart as part of a troubleshooting step?
- 
-## When is it not appropriate to reset a data mart?
-There are some circumstances when we don't recommend resetting a data mart. These include the following. 
-
-- You're experiencing performance issues that are associated with a data sync. 
-- If you have a recurring reset pattern due to any of the following reasons: 
-  - **Missing data** 
-  - **Stuck integration state** 
-  - **Stale records** - Stale records by themselves don't necessarily justify resetting the data mart. If you have a large data set, the reset process will take some time to run, but is unlikely to result in improvement.
- 
 ## What is a data mart reset?
-- A reset will only start when existing tasks are complete. This ensures that old data is not inserted. At this point you may see a message such as, “The data mart reset was unable to be processed because of an active task. Please try again later.”
-- The reset will disable the integration tasks and delete all the data mart data. The integration is re-enabled.
 
-## If I reset the data mart, will I lose reports that I've already designed? 
-No, your reports are stored in SQL tables that are not impacted by a reset of the data mart. If you are concerned about losing any reports you've designed, you can back up the designs that you don't want to lose. To back them up, open Report Designer and go to **Company > Companies > Building Blocks > Export**.
+A data mart reset will disable the integration tasks, delete all the data mart data, and then re-enable integration.
+
+To ensure that old data isn't inserted, a data mart reset can be started only after existing tasks are completed. If you try to reset the data mart before all tasks are completed, you might receive a message such as, "The data mart reset was unable to be processed because of an active task. Please try again later."
+
+## When do I have to do a data mart reset?
+
+If one or more of the following statements apply to your situation, your organization can benefit from a data mart reset:
+
+- **The application database was restored**
+- **You opened a support ticket** - A support engineer instructed you to reset the data mart as part of a troubleshooting step.
+- **Large percentage of stale records** - Stale records by themselves don't necessarily justify a data mart reset. High percentages of stale data can degrade the overall report generation and integration performance, and incur extra database space usage. We recommend that you complete a datamart reset to remove the stale data when there is more than 80% stale data in the data mart.
  
-## Is it necessary for all users to exit the system to reset the data mart?
-No, users can continue working in the system during the data mart reset. However, they won’t be able to access any reports that were created with Financial Reporter until the reset is finished. 
+> [!NOTE]
+> The process of resetting a data mart is affected by the number of general ledger and budget transactions in your database. Depending on the number of transactions in your system, a data mart reset can be completed in as little as 15 minutes, or it can take up to four hours. However, if your reset takes longer than four hours, we recommend that you contact Support.
+ 
+## When is a data mart reset inappropriate?
+
+Here are some of the circumstances where we don't recommend that you reset the data mart:
+
+- You're experiencing data integration performance issues.
+- You have a recurring reset pattern for any of the following reasons:
+
+    - **Missing or unexpected data in the report** – If you notice that data is missing, open a support ticket with Microsoft to review your report format and possible data synchronization issues.
+    - **Stuck integration state**
+   
+## If I reset the data mart, will I lose reports that I've already designed?
+
+No. Your reports are stored in SQL tables that aren't affected by a data mart reset. If you're concerned about losing reports that you've designed, you can back up the designs that you don't want to lose. To back up designs, open Report Designer, and go to **Company \> Companies \> Building Blocks \> Export**.
+ 
+## Do all users have to exit the system before I can reset the data mart?
+
+No. Users can continue to work in the system during a data mart reset. However, until the reset is completed, users won't be able to access any reports that were created by using Financial Reporter.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

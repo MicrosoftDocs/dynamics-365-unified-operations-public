@@ -5,7 +5,6 @@ title: LISTJOIN ER function
 description: This topic provides information about how the LISTJOIN Electronic reporting (ER) function is used.
 author: NickSelin
 ms.date: 04/01/2020
-ms.topic: article
 ms.prod: 
 ms.technology: 
 
@@ -71,15 +70,15 @@ You then enter data source **Record 2** of the `Container` type. This data sourc
 - **Amount**: This field contains an expression that returns a value of the `Real` type.
 - **IsValid**: This field contains an expression that returns a value of the `Boolean` type.
 
-![ER model mapping designer page](./media/er-functions-list-listjoin-image1.gif)
+![ER model mapping designer page.](./media/er-functions-list-listjoin-image1.gif)
 
 In this case, the expression `LISTJOIN(LIST('Record 1'), LIST('Record 2'))` returns a new list that contains two records.
 
-![ER model mapping designer page with two records](./media/er-functions-list-listjoin-image2.gif)
+![ER model mapping designer page with two records.](./media/er-functions-list-listjoin-image2.gif)
 
 The structure of this list consists of a single **Amount** field of the `Real` type, because this field is the only field that is presented in every argument of the called function.
 
-![ER model mapping designer page amount field](./media/er-functions-list-listjoin-image3.gif)
+![ER model mapping designer page amount field.](./media/er-functions-list-listjoin-image3.gif)
 
 ## Additional resources
 

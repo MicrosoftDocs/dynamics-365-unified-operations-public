@@ -14,12 +14,12 @@ ms.technology:
 ms.search.form: PSNCanadianHSTTaxFeature
 audience: Application User
 ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Global
 ms.search.industry: public sector
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2020-4-01
 ms.dyn365.ops.version: 10.0.12
 ---
@@ -44,7 +44,8 @@ Note: This functionality does not apply to the Accounts payable Invoice journal.
 
 
 
-### Note: Only the financial dimensions that are used in the current legal entity will be available.
+> [!Note] 
+> Only the financial dimensions that are used in the current legal entity will be available.
 
 ## Set up HST rules
 
@@ -74,7 +75,7 @@ To be applied, the sales tax codes defined here must be present in the HST rule 
 
 The order in which rules are applied are somewhat complex. The following graphic illustrates the principle:
 
-> [![Define HST rules](./media/define-hst-rules.png)](./media/define-hst-rules.png)
+> [![Define HST rules.](./media/define-hst-rules.png)](./media/define-hst-rules.png)
 
 The sales tax codes selected for the dimension line will be following if the transaction uses a Sales tax group and Item sales tax group with all of the tax codes included.
 

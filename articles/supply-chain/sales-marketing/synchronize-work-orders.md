@@ -3,7 +3,7 @@
 
 title: Synchronize work orders with project from Field Service to Supply Chain Management
 description: This topic discusses the templates and underlying task that are used to synchronize work orders with a project number from Dynamics 365 Field Service to Dynamics 365 Supply Chain Management.
-author: ChristianRytt
+author: Henrikan
 ms.date: 03/12/2019
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: 
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: 8.1.3 
 ms.search.validFrom: 2018-12-01
 
@@ -33,7 +33,7 @@ ms.search.validFrom: 2018-12-01
 
 This topic discusses the templates and underlying task that are used to synchronize work orders with a project number from Dynamics 365 Field Service to Dynamics 365 Supply Chain Management.
 
-[![Synchronization of business processes between Supply Chain Management and Field Service](./media/FSSOprojectOW.png)](./media/FSSOprojectOW.png)
+[![Synchronization of business processes between Supply Chain Management and Field Service.](./media/FSSOprojectOW.png)](./media/FSSOprojectOW.png)
 
 The used **Work Orders with Project (Field Service to Supply Chain Management)** template is based on the **Work Orders (Field Service to Supply Chain Management)** template. For more information, see [Synchronize work orders in Field Service to sales orders in Supply Chain Management](/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order).
 
@@ -65,19 +65,19 @@ The following illustrations show the template mapping in Data integration.
 
 ### Work Orders with Project (Field Service to Supply Chain Management): WorkOrderHeader
 
-[![Template mapping in Data integration](./media/FSWOP1.png)](./media/FSWOP1.png)
+[![Template mapping in Data integration, Work Orders with Project (Field Service to Supply Chain Management): WorkOrderHeader.](./media/FSWOP1.png)](./media/FSWOP1.png)
 
 ### Work Orders with Project (Field Service to Supply Chain Management): WorkOrderHeaderProject
 
-[![Template mapping in Data integration](./media/FSWOP2.png)](./media/FSWOP2.png)
+[![Template mapping in Data integration, Work Orders with Project (Field Service to Supply Chain Management): WorkOrderHeaderProject.](./media/FSWOP2.png)](./media/FSWOP2.png)
 
 ### Work Orders with Project (Field Service to Supply Chain Management): WorkOrderProduct
 
-[![Template mapping in Data integration](./media/FSWOP3.png)](./media/FSWOP3.png)
+[![Template mapping in Data integration, Work Orders with Project (Field Service to Supply Chain Management): WorkOrderProduct.](./media/FSWOP3.png)](./media/FSWOP3.png)
 
 ### Work Orders with Project (Field Service to Supply Chain Management): WorkOrderService
 
-[![Template mapping in Data integration](./media/FSWOP4.png)](./media/FSWOP4.png)
+[![Template mapping in Data integration, Work Orders with Project (Field Service to Supply Chain Management): WorkOrderService.](./media/FSWOP4.png)](./media/FSWOP4.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

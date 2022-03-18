@@ -3,7 +3,7 @@
  
 title: Create a product number nomenclature for configured product variants
 description: This procedure shows you how to set up a product number nomenclature for configured product variants, and how it can be attached to a configurable product master. 
-author: ShylaThompson
+author: t-benebo
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
@@ -19,9 +19,9 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kamaybac
+ms.author: benebotg
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Create a product number nomenclature for configured product variants
 

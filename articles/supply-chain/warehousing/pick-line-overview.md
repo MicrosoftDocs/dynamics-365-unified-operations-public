@@ -3,7 +3,7 @@
 
 title: Set up a mobile device menu item to provide a pick line overview
 description: This topic explains how to define when a list of all work lines will be shown to warehouse workers who are processing warehouse work on a mobile device. This capability can be useful for warehouse workers who often require an overview of the pick lines in a work order so that they can optimize their picking sequence.
-author: MarkusFogelberg
+author: Mirzaab
 ms.date: 09/03/2020
 ms.topic: article
 ms.prod: 
@@ -16,12 +16,12 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+ms.custom: "intro-internal"
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: mafoge
+ms.author: mirzaab
 ms.search.validFrom: 2020-09-03
-ms.dyn365.ops.version: Release 10.0.13
+ms.dyn365.ops.version: 10.0.13
 ---
 
 # Set up a mobile device menu item to provide a pick line overview

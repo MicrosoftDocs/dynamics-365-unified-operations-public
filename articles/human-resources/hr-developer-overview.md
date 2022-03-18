@@ -5,7 +5,7 @@ title: Development overview
 description: This Developer Guide provides an API and custom fields reference. It also provides information on integrating with other apps.
 author: andreabichsel
 ms.date: 02/03/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
-ms.custom: 7521
+
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -29,9 +29,12 @@ ms.dyn365.ops.version: Human Resources
 
 # Development overview
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 This Developer Guide provides an API and custom fields reference. It also provides information on integrating with other apps.
 

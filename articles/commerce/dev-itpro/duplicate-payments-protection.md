@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Global
@@ -53,7 +53,7 @@ In order to enable support for duplicate payment protection, the corresponding p
 ## Understanding duplicate payment protection flows
 The Retail POS has been extended to invoke the new requests, `GetTransactionReferencePaymentTerminalDeviceRequest` and `GetTransactionByTransactionReferencePaymentTerminalDeviceRequest` in various scenarios across the POS, such as immediately before an **Authorize** request is issued to the payment connector. The purpose of these new requests is to detect and recover successfully processed payment through the payment connector before a new payment request is issued. The following diagram illustrates a simple scenario where a payment request is successfully processed through the payment connector but the POS has crashed before it can receive the response. Subsequently, the POS is able to recover the previously processed payment through the duplicate payment protection feature. 
 
-![Duplicate Payment Protection Flows](media/PAYMENTS/DUPLICATE-PAYMENT-PROTECTION/DuplicatePaymentProtectionFlow.jpg)
+![Duplicate Payment Protection Flows.](media/PAYMENTS/DUPLICATE-PAYMENT-PROTECTION/DuplicatePaymentProtectionFlow.jpg)
 
 
 ### Supported POS flows

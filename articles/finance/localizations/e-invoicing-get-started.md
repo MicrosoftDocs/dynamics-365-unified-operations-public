@@ -4,7 +4,7 @@
 title: Get started with Electronic invoicing
 description: This topic provides information that will help you get started with Electronic invoicing in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: gionoder
-ms.date: 03/29/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: 97423
+ms.custom: ["97423", "intro-internal"]
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -43,14 +43,14 @@ Before you complete the procedures in this topic, the following prerequisites mu
 ## Import an Electronic invoicing feature from the Microsoft configuration provider 
 
 1. Sign in to your Regulatory Configuration Service (RCS) account.
-2. In the **Globalization feature** workspace, in the **Features** section, select the **Electronic invoicing** tile.
+2. In the **Globalization features** workspace, in the **Features** section, select the **Electronic invoicing** tile.
 3. Select **Import**, and then select **Synchronize**.
 4. Filter the **Configuration provider** column by the term **Microsoft**.
-5. Select the name of an Electronic invoicing feature from the table at the beginning of this topic, and then select **Import**.
+5. Select the name of an Electronic invoicing feature from the table, and then select **Import**.
 
 ## Create an Electronic invoicing feature under your organization provider
 
-1. In RCS, in the **Features** section of the **Globalization feature** workspace, select the **Electronic invoicing** tile.
+1. In RCS, in the **Features** section of the **Globalization features** workspace, select the **Electronic invoicing** tile.
 2. Select **Add** > **Based on existing feature**, and in the **Name** field, enter the name of the Electronic invoicing feature.
 3. In the **Description** field, enter a description of the feature.
 4. In the **Base feature field**, select the imported Electronic invoicing feature from the Microsoft configuration provider.
@@ -60,7 +60,12 @@ Before you complete the procedures in this topic, the following prerequisites mu
 
 Depending on the country or region, the Electronic invoicing feature might require specific configuration. 
 
-For the specific steps, see the "Get started" documentation that is available for your country or region.
+> [!NOTE]
+> When you enable the Electronic invoicing feature for Finland, application-specific parameters in lookups aren't supported. To work around this issue, in the **Electronic reporting** module, review the configurations for the sales invoice and project invoice formats. Manually set up the calculated field for **$PaymentMethodSubstitution** mapping, and then bind that field to the **EpiPaymentMeansCode** field from the sales invoice and project invoice formats.
+>
+> When you enable the Electronic invoicing feature for Italy, application-specific parameters in lookups aren't supported. To work around this issue, in the **Electronic reporting** module, manually set up the calculated field for **$NaturaReverseCharge** mapping.
+>
+> For specific steps that are related to other locations, see the "Get started" documentation that is available for your country or region.
 
 ## Import the model mapping configurations from Electronic reporting
 
@@ -87,6 +92,7 @@ For the specific steps, see the "Get started" documentation that is available fo
 | Norwegian electronic invoice (NO)    | <p>Customer invoice context model</p><p>Invoice model</p> |
 | Spanish electronic invoice (ES)      | <p>Customer invoice context model</p><p>Invoice model</p> |
 | PEPPOL electronic invoice            | <p>Customer invoice context model</p><p>Invoice model</p> |
+| Saudi Arabian electronic invoice (SA)| <p>Customer invoice context model</p><p>Invoice model</p> |
 
 
 ## Configure the application setup
@@ -115,8 +121,9 @@ For the specific steps, see the "Get started" documentation that is available fo
     | Norwegian electronic invoice (NO)    | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice journal</p><p>Project invoice</p> |
     | Spanish electronic invoice (ES)      | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice journal</p><p>Project invoice</p> |
     | PEPPOL electronic invoice            | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice journal</p><p>Project invoice</p> |
+    | Saudi Arabian electronic invoice (SA)| <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice journal</p><p>Project invoice</p> |
 
-7. For each table name you create, select and enter a context value according to the following table.
+6. For each table name you create, select and enter a context value according to the following table.
 
     | Feature name                         | Business document | Context |
     |--------------------------------------|-------------------|---------|
@@ -136,8 +143,9 @@ For the specific steps, see the "Get started" documentation that is available fo
     | Norwegian electronic invoice (NO)    | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p> |
     | Spanish electronic invoice (ES)      | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p> |
     | PEPPOL electronic invoice            | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p> |
+    | Saudi Arabian electronic invoice (SA)| <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p> |
 
-8. For each table name and context, select and enter a business document mapping value according to the following table.
+7. For each table name and context, select and enter a business document mapping value according to the following table.
 
     | Feature name                         | Business document | Business document mapping |
     |--------------------------------------|-------------------|---------------------------|
@@ -157,6 +165,7 @@ For the specific steps, see the "Get started" documentation that is available fo
     | Norwegian electronic invoice (NO)    | <p>Sales invoice</p><p>Project invoice</p> | <p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p> |
     | Spanish electronic invoice (ES)      | <p>Sales invoice</p><p>Project invoice</p> | <p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p> |
     | PEPPOL electronic invoice            | <p>Sales invoice</p><p>Project invoice</p> | <p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p> |
+    | Saudi Arabian electronic invoice (SA)| <p>Sales invoice</p><p>Project invoice</p> | <p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p> |
 
 
 ## Country-specific configuration of application setup
@@ -180,11 +189,11 @@ For the specific steps, see the "Get started" documentation that is available fo
 ## Deploy the Electronic invoicing feature to Connected application
 
 1. On the **Versions** tab, select a version of the Electronic invoicing feature that you want to deploy.
-4. Select **Deploy**.
-5. Set the **Deploy to connected application** option to **Yes**.
-6. On the **Connect application** field, select the connection that is associated with your instance of Finance or Supply Chain Management.
-7. Set the **Deploy to service environment** option to **No**.
-10. Select **OK**.
+2. Select **Deploy**.
+3. Set the **Deploy to connected application** option to **Yes**.
+4. On the **Connect application** field, select the connection that is associated with your instance of Finance or Supply Chain Management.
+5. Set the **Deploy to service environment** option to **No**.
+6. Select **OK**.
 
 ## Turn on the Electronic invoicing feature in Finance or Supply Chain Management
 
@@ -210,13 +219,15 @@ For the specific steps, see the "Get started" documentation that is available fo
     | Norwegian electronic invoice (NO)                     | Norway          |
     | PEPPOL electronic invoice                             | Global          |
     | Spanish electronic invoice (ES)                       | Spain           |
+    | Saudi Arabian electronic invoice (SA)                 | Saudi Arabia    |
+    
 
 4. Select **Save**.
 
 ## Issue electronic invoices
 
 1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**.
-2. On the **Record to include** FastTab, select **Filter**.
+2. On the **Records to include** FastTab, select **Filter**.
 3. Select **Add** to add a table name to the query filter.
 4. Select the table that contains the invoices.
 
@@ -238,6 +249,14 @@ For the specific steps, see the "Get started" documentation that is available fo
 
 3. Select an invoice in the grid, and then select **Inquire** \> **Submission details**.
 
+## Download an electronic document file
+
+1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**.
+2. In the **Document type** field, select the table that contains the invoices.
+3. Select a document in the grid, and then select **Electronic document** \> **Download file**. An archive that contains the electronic document file will be suggested for downloading.
+
+> [!NOTE]
+> Before you can download files, the **Export result** option must be turned on for the related action in the Electronic invoicing feature setup in RCS.
 
 ## Related topics
 
@@ -247,6 +266,7 @@ For the specific steps, see the "Get started" documentation that is available fo
 - [Get started with Electronic invoicing for Mexico](e-invoicing-mex-get-started.md)
 - [Get started with Electronic invoicing for Italy](e-invoicing-ita-get-started.md)
 - [Customer electronic invoices in Egypt](emea-egy-e-invoices.md)
+- [Customer electronic invoices in Saudi Arabia](emea-sau-e-invoices.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

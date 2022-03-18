@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 29171
 ms.assetid: c3c5eea7-f771-41ea-9976-8d0e1f3d3f25
@@ -39,7 +39,7 @@ The Advanced Selection form pattern should be used when the primary user task is
 
 ## Wireframe
 
-[![Advanced Selection pattern wireframe](./media/advancedselection1.png)](./media/advancedselection1.png)
+[![Advanced Selection pattern wireframe.](./media/advancedselection1.png)](./media/advancedselection1.png)
 
 ### Related patterns
 
@@ -63,7 +63,7 @@ Form: **ProcCategoryAddVendor** (Click **Procurement and sourcing** &gt; **Procu
 > [NOTE]
 > This form no longer utilizes this pattern; however, the image shows an example of what a typical Advanced selection form pattern looks like.
 
-[![Example of advanced selection](./media/advancedselectionexample.png)](./media/advancedselectionexample.png)
+[![Example of advanced selection.](./media/advancedselectionexample.png)](./media/advancedselectionexample.png)
 
 
 

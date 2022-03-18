@@ -21,7 +21,7 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-29
-ms.dyn365.ops.version: Release 10.0.16
+ms.dyn365.ops.version: 10.0.16
 ---
 
 # Replenishment strategies
@@ -50,7 +50,7 @@ Before you can use this feature, it must be turned on in your system. Administra
 
 To access the templates, go to **Warehouse management \> Setup \> Replenishment \> Replenishment templates**. In the **Overview** section, select or create a wave demand replenishment template where the **Replenishment type** field is set to *Wave demand*. Then set up the replenishment template lines in the **Replenishment template details** section. For each line, in the **Replenishment strategy** field, select the replenishment strategy that you want to use.
 
-![Replenishment templates page](media/ReplenTempWaveDmdMaxLocCap.png "Replenishment templates page")
+![Replenishment templates page.](media/ReplenTempWaveDmdMaxLocCap.png "Replenishment templates page")
 
 If the **Replenishment strategy** column doesn't appear in the grid in the **Replenishment template details** section, make sure that the feature has been turned on, and that the selected replenishment template has a replenishment type of *Wave demand*.
 
@@ -90,7 +90,7 @@ If you set the replenishment strategy to *Maximum location capacity* instead, yo
 - **Replenishment work 1:** Pick 4 boxes from the bulk location, and put them in location pick-001.
 - **Replenishment work 2:** Pick 5 boxes from the bulk location, and put them in location pick-002.
 
-[![Example 1](media/ReplenTemp_example_1.png "Example 1")](media/ReplenTemp_example_1_large.png)
+[![Example 1.](media/ReplenTemp_example_1.png "Example 1")](media/ReplenTemp_example_1_large.png)
 
 ### Example 2
 
@@ -114,7 +114,7 @@ Depending on the setting of the **Allow split** option on the location directive
 
 The outcomes differ because of the information that is available when you create the work. When the **Allow split** is set to *Yes* on the location directives for replenishment picking, you know that you managed to find 160 pcs. Therefore, you can create work for that quantity. However, when the **Allow split** option is set to *No*, you don't know about the existence of the 160 pcs. Because the extra quantity that you decided to replenish was 3 boxes, you drop that extra quantity and try the original quantity again.
 
-[![Example 2](media/ReplenTemp_example_2.png "Example 2")](media/ReplenTemp_example_2_large.png)
+[![Example 2.](media/ReplenTemp_example_2.png "Example 2")](media/ReplenTemp_example_2_large.png)
 
 Therefore, to get the maximum quantity to the replenished locations, you should set the **Allow split** option to *Yes* on the location directives for replenishment picking.
 

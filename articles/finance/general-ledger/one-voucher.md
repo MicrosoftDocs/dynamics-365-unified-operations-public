@@ -30,6 +30,7 @@ ms.dyn365.ops.version: 8.0.2
 # One voucher
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 
 ## What is One voucher?
@@ -38,18 +39,18 @@ The existing functionality for financial journals (the general journal, fixed as
 
 - Set up the journal name (**General ledger** \> **Journal setup** \> **Journal names**) so that the **New voucher** field is set to **One voucher number only**. Every line that you add to the journal is now included in the same voucher. Therefore, the voucher can be entered as a multiline voucher, as an account/offset account on the same line, or as a combination.
 
-    [![Single line](./media/same-line.png)](./media/same-line.png)
+    [![Single line.](./media/same-line.png)](./media/same-line.png)
 
     > [!IMPORTANT]
     > The definition of One voucher does **not** cover cases where journal names are set up as **One voucher number only**, but the user then enters a voucher that includes only ledger account types. In this topic, One voucher means that there is a single voucher that contains more than one vendor, customer, bank, fixed asset, or project.
 
 - Enter a multiline voucher where there is no offset account.
 
-    [![Multiline voucher](./media/Multi-line.png)](./media/Multi-line.png)
+    [![Multiline voucher.](./media/Multi-line.png)](./media/Multi-line.png)
 
 - Enter a voucher where both the account and the offset account contain a subledger account type, such as **Vendor**/**Vendor**, **Customer**/**Customer**, **Vendor**/**Customer**, or **Bank**/**Bank**.
 
-    [![Subledger voucher](./media/subledger.png)](./media/subledger.png)
+    [![Subledger voucher.](./media/subledger.png)](./media/subledger.png)
 
 ## Issues with One voucher
 
@@ -57,11 +58,11 @@ The One voucher functionality causes issues during settlement, tax calculation, 
 
 For example, you post the following multiline voucher.
 
-[![Example of a multiline voucher](./media/example.png)](./media/example.png)
+[![Example of a multiline voucher.](./media/example.png)](./media/example.png)
 
 You then generate the **Expenses by vendor** report in the **Financial Insights** workspace. On this report, expense account balances are grouped by vendor group and then vendor. When the report is generated, the system can't determine which vendor groups/vendors incurred the expense of 250.00. Because transaction details are missing, the system assumes that the whole 250.00 expense was incurred by the first vendor that is found in the voucher. Therefore, the 250.00 expense, which is included in the balance for main account 600120, is shown under that vendor group/vendor. However, it's very likely that the first vendor in the voucher isn't the correct vendor. Therefore, the report is probably incorrect.
 
-[![Expenses by vendor report](./media/expenses.png)](./media/expenses.png)
+[![Expenses by vendor report.](./media/expenses.png)](./media/expenses.png)
 
 ## The future of One voucher
 
@@ -86,7 +87,7 @@ Based on conversations with customers, Microsoft has compiled the following list
 
 The following scenarios can be accomplished only by using the One voucher functionality. If your organization has any of these scenarios, you must enable multiple transactions to be entered in a voucher by changing the setting of the **Allow multiple transactions within one voucher** parameter on the **General ledger parameters** page. These functional gaps will be filled through other features in later releases.
 
-> [!Note]
+> [!NOTE]
 > [For each of the following scenarios the **Allow multiple transactions within one voucher** field must be set to Yes in the **General** FastTab on the **General ledger parameters** page.]
 
 ### Post vendor or customer payments in summary form to a bank account
@@ -120,15 +121,7 @@ In this scenario, the customers in the single voucher are the same customer, bec
 If the Reimbursement periodic task is run from the Accounts receivable module, it creates a transaction to move the balance from a customer to a vendor. For this scenario, One voucher must be used to reimburse the customer.
 
 ### Fixed asset maintenance: Catch-up depreciation, split asset, calculate depreciation on disposal
-The following fixed asset transactions also create multiple transactions in a single voucher:
-
-- An additional acquisition is made on an asset, and "catch-up" depreciation is calculated.
-- An asset is split.
-- A parameter to calculate depreciation on disposal is turned on, and then the asset is disposed of.
-- An asset's service date is before the acquisition date. Therefore, a depreciation adjustment is posted.
-
-> [!Note]
-> When you are entering transactions, be sure that all the transactions apply to the same fixed asset. The voucher won't be posted if it includes more than one fixed asset, even if the **New Voucher** field is set to One voucher number only on the **Journal names** page in General ledger. If you include more than one fixed asset in the voucher, the message **There can only be one fixed asset transaction per voucher** will be displayed and you won't be able to post the voucher.  
+With version 10.0.21 and later, fixed assets transactions for catch-up depreciation, splitting an asset, and calculating depreciation for the disposal of an asset will be created using different voucher numbers.
 
 ### Bills of exchange and promissory notes
 Bills of exchange and promissory notes require that One voucher be used, because the transactions move the customer or vendor balance from one Accounts receivable/Accounts payable ledger account to another, based on the state of the payment.

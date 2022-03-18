@@ -3,7 +3,7 @@
 
 title: Incremental payment capture  
 description: This topic describes out-of-box support for incremental capture as part of order invoicing in Dynamics 365 Commerce.
-author: rubendel
+author: BrianShook
 ms.date: 3/12/2021
 ms.topic: article
 ms.prod: 
@@ -15,13 +15,13 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
 
@@ -45,7 +45,7 @@ To address these issues, incremental capture support has been introduced for the
 
 The following illustration shows the difference between the different payment capture frameworks when multiple captures are done against a single authorization.
 
-![Current payment capture framework vs. incremental capture](../dev-itpro/media/INC_DIFF.png)
+![Current payment capture framework vs. incremental capture.](../dev-itpro/media/INC_DIFF.png)
 
 Incremental capture support for headquarters invoicing (in other words, any invoicing that occurs as part of order fulfillment in headquarters) was first added to the payments SDK in Commerce version 10.0.13. In Commerce version 10.0.18, incremental capture support through the SDK has been extended to channels outside of headquarters. For the storefront, Modern POS, and call center this extended support means that authorizations created for new orders can be marked as **SupportsMultipleCaptures**. When those orders are later invoiced in headquarters or Modern POS, payments can be captured and the original authorization will be retained and referenced when payments are captured for subsequent invoices. 
 

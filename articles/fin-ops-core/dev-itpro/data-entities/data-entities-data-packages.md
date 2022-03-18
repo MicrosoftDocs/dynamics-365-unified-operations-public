@@ -3,9 +3,9 @@
 
 title: Data management overview
 description: This topic provides information about data management in Finance and Operations.
-author: Sunil-Garg
+author: peakerbl
 ms.date: 04/22/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -18,11 +18,11 @@ audience: Developer, IT Pro
 ms.reviewer: sericks
 
 # ms.tgt_pltfrm: 
-ms.custom: 96283
+ms.custom: ["96283", "intro-internal"]
 ms.assetid: e67f5edc-1087-4867-8955-b2a40d94217f
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 # Data management overview
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 This topic describes how you can use the data management framework to manage data entities and data entity packages in Finance and Operations.
 
@@ -115,7 +118,7 @@ There are two types of sequencing that should be considered when working with da
 
 2. To view or edit a sequence, click the **Entity sequence** button on the Action Pane of the data project.
 
-    ![Entity sequence](./media/dataentitiesdatapackages01.png)
+    ![Entity sequence.](./media/dataentitiesdatapackages01.png)
 
 3. In the Definition group entity sequence, you can see the execution units and the sequence. You can change sequence by selecting the data entity in the list, setting a different Execution unit or Sequence in level, and then clicking **Update selected**. After clicking **Update selected**, the entity will move up or down in the entity list.
 
@@ -123,7 +126,7 @@ There are two types of sequencing that should be considered when working with da
 
 The following screenshot shows the entity sequence that is set for the Sales Tax CodeGroups data package.
 
-![Sales Tax CodeGroups data package sequence](./media/dataentitiesdatapackages02.png)
+![Sales Tax CodeGroups data package sequence.](./media/dataentitiesdatapackages02.png)
 
 In order to successfully import sales tax codes and groups, the sales tax codes and details have to be loaded first, before sales tax groups can be imported. Sales tax codes and groups are all in Execution unit = 1, but the sequences are in the order that they will be imported. Other related sales tax entities that are not dependent upon other data entities being loaded are included in the package. For example, sales tax exempt numbers is set in its own Execution unit = 2. This data entity will start loading immediately because there are no dependencies on other entities loading before it.
 
@@ -138,19 +141,19 @@ The following tables provide more information about the default numbering format
 
 **Module numbers**
 
-[![Module area numbers](./media/dataentitiesdatapackages03.png)](./media/dataentitiesdatapackages03.png)
+[![Module area numbers.](./media/dataentitiesdatapackages03.png)](./media/dataentitiesdatapackages03.png)
 
 **Data type numbers**
 
-[![Data type numbers](./media/dataentitiesdatapackages04.png)](./media/dataentitiesdatapackages04.png)
+[![Data type numbers.](./media/dataentitiesdatapackages04.png)](./media/dataentitiesdatapackages04.png)
 
 **Sequence number**
 
-[![Sequence number](./media/dataentitiesdatapackages05.png)](./media/dataentitiesdatapackages05.png)
+[![Sequence number.](./media/dataentitiesdatapackages05.png)](./media/dataentitiesdatapackages05.png)
 
 Data packages follow the sequence number, followed by the module abbreviation, and then a description. The following example shows General ledger data packages.
 
-[![Numbering example](./media/dataentitiesdatapackages06.png)](./media/dataentitiesdatapackages06.png)
+[![Numbering example.](./media/dataentitiesdatapackages06.png)](./media/dataentitiesdatapackages06.png)
 
 ## Mapping
 When working with data entities, mapping an entity to a source is automatic. The automatic mapping of fields can be overridden if needed.
@@ -164,7 +167,7 @@ We provide mapping visualization view (default) and mapping details view. A red 
 
 The field mapping from source to staging can also be edited after import using the same process.
 
-[![Mapping visualization](./media/dataentitiesdatapackages07.png)](./media/dataentitiesdatapackages07.png)
+[![Mapping visualization.](./media/dataentitiesdatapackages07.png)](./media/dataentitiesdatapackages07.png)
 
 ### Regenerate a map
 If you have extended an entity (added fields) or if the automatic mapping appears to be incorrect, the mapping of the entity can be regenerated in the **Mapping** form.
@@ -178,31 +181,31 @@ If you have extended an entity (added fields) or if the automatic mapping appear
 ### Generate data
 If you have fields in entities that you want the system to generate data for on import, instead of providing the data in the source file, you can use the auto-generated functionality in the mapping details for the entity. For example, if you want to import customers and customer address information, but the address information was not previously imported with the Global Address Book entities, you can have the entity auto-generate the party number upon import and the GAB information will be created. To access this functionality, view the map of the entity and click the **Mapping details** tab. Select the fields that you want to auto-generate. This will change the source field to **Auto**.
 
-[![Generate data](./media/dataentitiesdatapackages18.png)](./media/dataentitiesdatapackages18.png)
+[![Generate data.](./media/dataentitiesdatapackages18.png)](./media/dataentitiesdatapackages18.png)
 
 ### Turn off automatically generated number sequences
 Many entities support automatic generation of identifiers based on number sequence setup. For example, when creating a product, the product number is automatically generated and the form does not allow you to edit values manually.
 
-[![Automatic number sequence.png](./media/dataentitiesdatapackages15-300x213.jpg)](./media/dataentitiesdatapackages15.jpg)
+[![Automatic number sequence.png.](./media/dataentitiesdatapackages15-300x213.jpg)](./media/dataentitiesdatapackages15.jpg)
 
 It is possible to enable manual assignment of number sequences for a specific entity.
 
-[![Enable manual number sequences](./media/dataentitiesdatapackages16-300x153.png)](./media/dataentitiesdatapackages16.png)
+[![Enable manual number sequences.](./media/dataentitiesdatapackages16-300x153.png)](./media/dataentitiesdatapackages16.png)
 
 After you have enabled manual assignment, you can provide manually assigned numbers instead.
 
-[![Provide number sequence](./media/dataentitiesdatapackages17-300x214.png)](./media/dataentitiesdatapackages17.png)
+[![Provide number sequence.](./media/dataentitiesdatapackages17-300x214.png)](./media/dataentitiesdatapackages17.png)
 
 ## Export
 Export is the process of retrieving data from a system using data entities. The export process is done through a project. When exporting, you have a lot of flexibility as to how the export project is defined. You can choose which data entities to export, but also the number of entities, the file format used (there are 14 different formats to choose for export), and apply a filter to each entity to limit what is exported. After the data entities have been pulled into the project, the sequencing and mapping described earlier can be performed for each export project.
 
-[![Export page](./media/dataentitiesdatapackages08-1024x400.png)](./media/dataentitiesdatapackages08.png)
+[![Export page.](./media/dataentitiesdatapackages08-1024x400.png)](./media/dataentitiesdatapackages08.png)
 
 After the project is created and saved you can export the project to create a job. During the export process, you can see a graphical view of the status of the job and the record count. This view shows multiple records so you can review the status of each record prior to downloading the actual files.
 
-[![Execution summary](./media/dataentitiesdatapackages10-1024x280.png)](./media/dataentitiesdatapackages10.png)
+[![Execution summary.](./media/dataentitiesdatapackages10-1024x280.png)](./media/dataentitiesdatapackages10.png)
 
-[![Record counts](./media/dataentitiesdatapackages11.png)](./media/dataentitiesdatapackages11.png)
+[![Record counts.](./media/dataentitiesdatapackages11.png)](./media/dataentitiesdatapackages11.png)
 
 After the job is completed you can choose how to download the files: each data entity can be a separate file, or by combining the files into a package. If there are multiple data entities in the job, choosing the package option will speed up the upload process. The package is a zip file, containing a data file for each entity as well as a package header and manifest. These additional documents are used when importing in order to add the data files to the correct data entities and sequence the import process.
 
@@ -219,7 +222,7 @@ Import is the process of pulling data into a system using data entities. The imp
     2. In the **Source Data Format** field, select **Package**.
     3. Click the **Upload** button and choose the appropriate package file from the location for the data being imported. This will import all the files from the package.
 
-        [![Choose package file](./media/dataentitiesdatapackages12-1024x555.png)](./media/dataentitiesdatapackages12.png)
+        [![Choose package file.](./media/dataentitiesdatapackages12-1024x555.png)](./media/dataentitiesdatapackages12.png)
 
     4. Click **Save**, and then click **Import**.
 
@@ -229,7 +232,7 @@ Use one of the following methods to import multiple data packages.
 - Create a new job for each package, and then repeat steps 4(a) through 4(d) above, for each package. 
 - Create one job to import multiple packages in a sequence. Repeat steps 4(a) through 4(c) above, and then repeat step 4(c) for all packages that need to be imported. After you select the packages, execute step 4(d) to import the data from the selected data packages through a single job.
 
-    [![Multiple data packages](./media/dataentitiesdatapackages13-1024x555.png)](./media/dataentitiesdatapackages13.png)
+    [![Multiple data packages.](./media/dataentitiesdatapackages13-1024x555.png)](./media/dataentitiesdatapackages13.png)
 
 After you click **Import**, the data will be imported through staging tables. The progress of the import can be tracked using the **Refresh** button in the upper-right corner of the screen.
 

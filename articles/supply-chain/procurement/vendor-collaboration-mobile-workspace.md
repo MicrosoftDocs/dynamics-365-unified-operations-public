@@ -3,7 +3,7 @@
 
 title: Vendor collaboration mobile workspace
 description: This topic provides information about the Vendor collaboration mobile workspace. This workspace helps your vendors stay up to date about the purchase orders that have been sent to them for approval. They can also view information about new and updated purchase orders and contacts.
-author: kamaybac 
+author: Henrikan 
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 267074
 ms.assetid: 1d293b3a-2fa2-418d-9347-78c2809d67fe
 ms.search.region: global
 # ms.search.industry: 
-ms.author: dabourq
+ms.author: henrikan
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 
@@ -126,12 +126,12 @@ Download and install the Finance and Operations mobile app:
 4.  The first time that you sign in, you’re prompted for your user name and password. Enter your credentials.
 5.  After you sign in, the available workspaces for your company are shown. Note that if your system administrator publishes a new workspace later, you will have to refresh the list of mobile workspaces.
 
-    [![Pull to refresh](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+    [![Pull to refresh.](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## Use the Vendor collaboration mobile workspace
 When you select the **Vendor collaboration** workspace, you’ll see the following options.
 
-![Vendor collaboration mobile workspace](./media/vendor-collaboration-mobile-app.png)
+![Vendor collaboration mobile workspace.](./media/vendor-collaboration-mobile-app.png)
 
 The **Vendor collaboration** workspace includes the following pages.
 

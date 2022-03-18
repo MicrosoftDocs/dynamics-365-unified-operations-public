@@ -1,37 +1,21 @@
 ---
-# required metadata
-
 title: Company concept in Dataverse
 description: This topic describes the integration of company data between Finance and Operations and Dataverse.
 author: RamaKrishnamoorthy 
 ms.date: 08/04/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: 
 ms.author: ramasri
-ms.dyn365.ops.version: 
-ms.search.validFrom: 2019-07-15
-
+ms.search.validFrom: 2020-01-06
 ---
 
 # Company concept in Dataverse
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 
 In Finance and Operations, the concept of a *company* is both a legal construct and a business construct. It's also a security and visibility boundary for data. Users always work in the context of a single company, and most of the data is striped by company.
@@ -47,7 +31,7 @@ Because business unit and company aren't equivalent concepts, it isn't possible 
 
 The following illustration shows an example of this data setup in Dataverse.
 
-![Data setup in Dataverse](media/dual-write-company-1.png)
+![Data setup in Dataverse.](media/dual-write-company-1.png)
 
 Because of this configuration, any row that is related to the USMF company will be owned by a team that is linked to the USMF business unit in Dataverse. Therefore, any user who has access to that business unit through a security role that is set to business unit–level visibility can now see those rows. The following example shows how teams can be used to provide the correct access to those rows.
 
@@ -56,21 +40,21 @@ Because of this configuration, any row that is related to the USMF company will 
 + The "USMF Sales" team is linked to the USMF business unit that was mentioned earlier.
 + Therefore, members of the "USMF Sales" team can see any account that is owned by the "USMF DW" user, which would have come from the USMF Company table in Finance and Operations.
 
-![How teams can be used](media/dual-write-company-2.png)
+![How teams can be used.](media/dual-write-company-2.png)
 
 As the preceding illustration shows, this 1:1 mapping between business unit, company, and team is just a starting point. In this example, a new "Europe" business unit is manually created in Dataverse as the parent for both DEMF and ESMF. This new root business unit is unrelated to dual-write. However, it can be used to give members of the "EUR Sales" team access to account data in both DEMF and ESMF by setting the data visibility to **Parent/Child BU** in the associated security role.
 
 A final topic to discuss is how dual-write determines which owner team it should assign rows to. This behavior is controlled by the **Default owning team** column on the cdm\_Company row. When a cdm\_Company row is enabled for dual-write, a plug-in automatically creates the associated business unit and owner team (if it doesn't already exist), and sets the **Default owning team** column. The admin can change this column to a different value. However, the admin can't clear the column as long as the table is enabled for dual-write.
 
 > [!div class="mx-imgBorder"]
-![Default owning team column](media/dual-write-default-owning-team.jpg)
+![Default owning team column.](media/dual-write-default-owning-team.jpg)
 
 ## Company striping and bootstrapping
 
 Dataverse integration brings company parity by using a company identifier to stripe data. As the following illustration shows, all company-specific tables are extended so that they have a many-to-one (N:1) relationship with the cdm\_Company table.
 
 > [!div class="mx-imgBorder"]
-![N:1 relationship between a company-specific table and the cdm_Company table](media/dual-write-bootstrapping.png)
+![N:1 relationship between a company-specific table and the cdm_Company table.](media/dual-write-bootstrapping.png)
 
 + For rows, after a company is added and saved, the value becomes read-only. Therefore, users should make sure that they select the correct company.
 + Only rows that have company data are eligible for dual-write between the application and Dataverse.
@@ -102,7 +86,7 @@ There are several ways to auto-populate the company name in customer engagement 
 
 To apply filtering based on the company context on your custom forms or on custom lookup columns added to the standard forms, open the form and use the **Related Records Filtering** section to apply the company filter. You must set this for each lookup column that requires filtering based on the underlying company on a given row. The setting is shown for **Account** in the following illustration.
 
-:::image type="content" source="media/apply-company-context.png" alt-text="Apply company context":::
+:::image type="content" source="media/apply-company-context.png" alt-text="Apply company context.":::
 
 
 

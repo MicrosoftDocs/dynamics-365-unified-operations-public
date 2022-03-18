@@ -4,7 +4,7 @@
 title: Platform updates for version 10.0.12 of Finance and Operations apps (August 2020)
 description: This topic lists the features are included in the platform updates for version 10.0.12 of Finance and Operations apps.
 author: sericks007
-ms.date: 07/08/2020
+ms.date: 10/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.12
 
 [!include [banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 This topic lists the features that are included in the platform updates for version 10.0.12 of Finance and Operations apps. (These updates were formerly referred to as *Platform update 36*.) This version has a build number of 7.0.5688 and is available on the following schedule:
 
@@ -44,7 +44,6 @@ This topic lists the features that are included in the platform updates for vers
 [Personalize the user experience](../../fin-ops/get-started/personalize-user-experience.md). 
 -  [Edit basic control values in task recordings](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/new-task-recorder-capabilities-rsat) – For more information, see [Task recorder resources](../user-interface/task-recorder.md).
 -  [Scanning files and attachments for malicious code](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/scanning-files-attachments-malicious-code) – For more information, see [File upload control](../user-interface/file-upload-control.md) and [Configure document management](../../fin-ops/organization-administration/configure-document-management.md).
--  [Show related document attachments](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/show-related-document-attachments) – For more information, see [Configure document management](../../fin-ops/organization-administration/configure-document-management.md).
 - [Finance and Operations entities in Dataverse as virtual entities](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/finance-operations-entities-common-data-service-as-virtual-entities) – For more information, see [Microsoft Power Platform integration with Finance and Operations](../power-platform/overview.md).
 - Customer and vendor master data can be enabled using Feature Management – For more information, see [Customer and vendor master data sharing](../sysadmin/cross-company-data-sharing.md#customer-and-vendor-master-data-sharing).
 - [Finance and Operations licensing](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/finance-operations-licensing) – The product name, such as Dynamics 365 Finance, Dynamics 365 Supply Chain Management, or Dynamics 365 Commerce, is displayed in the navigation bar and reflects the base license associated with the current user.

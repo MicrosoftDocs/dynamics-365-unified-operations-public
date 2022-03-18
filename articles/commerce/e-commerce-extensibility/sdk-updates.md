@@ -4,7 +4,7 @@
 title: SDK and module library kit updates
 description: This topic covers regular updates that will be released as part of the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
-ms.date: 04/16/2021
+ms.date: 03/11/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -33,19 +33,17 @@ This topic covers regular updates that will be released as part of the Microsoft
 
 Regular updates will be released as part of the Dynamics 365 Commerce online SDK and module library. These updates might include new features or product fixes. Product release notes will be provided for all changes.
 
-## Dependency versions in the packages.json file
+## Dependency versions in the package.json file
 
-The SDK packages.json file that is included in the SDK root directory controls which versions of the SDK, module library, Fabrikam design kit, and Retail Server proxy are downloaded. The specific entries can be found in the **"dependencies"** section, as shown in the following example. Note that the version numbers might differ, depending on when the SDK was acquired.
+The SDK package.json file that is included in the SDK root directory controls which versions of the SDK, module library, Fabrikam design kit, and Retail Server proxy are downloaded. The specific entries can be found in the **"dependencies"** section, as shown in the following example. Note that the version numbers might differ, depending on when the SDK was acquired.
 
 ```json
-...
 "dependencies": {
-    "@msdyn365-commerce-modules/starter-pack": "9.27",
-    "@msdyn365-commerce-modules/fabrikam-design-kit": "9.27",
+    "@msdyn365-commerce-modules/starter-pack": "9.34",
+    "@msdyn365-commerce-modules/fabrikam-design-kit": "9.34",
     "@msdyn365-commerce/bootloader": "^1.0.0",
-    "@msdyn365-commerce/retail-proxy": "9.27",
+    "@msdyn365-commerce/retail-proxy": "9.34",
 }
-...
 ```
 
 - **\@msdyn365-commerce-modules/starter-pack** – This entry represents the module library, which includes the set of starter modules and data actions. The preceding example is configured to pull down only the specified version.
@@ -57,21 +55,11 @@ The version numbers that are used in the preceding example are in the format *X.
 
 SDK dependencies are backward-compatible and can be pulled down at any time. The module library minor versions are dependent on the Commerce Scale Unit. Therefore, they can't be higher than the versions that are shown in the table that follows.
 
-Patch versions won't change dependencies on the Commerce Scale Unit. Therefore, they can be updated at any time. The tilde (\~) symbol can be used with version numbers to ensure that any patch versions that might include software updates are always pulled down. The following example shows how the tilde is used to pull down the latest patch version.
+Patch versions don't change dependencies on the Commerce Scale Unit and can be updated at any time. Since the patch version number is not included for some of the packages in the package.json file such as **starter-pack**, **fabrikam-design-kit**, and **retail-proxy**, running the **yarn** command will pick up any patch releases newer than the current downloaded package.
 
-```json
-...
-"dependencies": {
-    "@msdyn365-commerce-modules/starter-pack": "~9.28.0",
-    "@msdyn365-commerce-modules/fabrikam-design-kit": "~9.28.0",
-    "@msdyn365-commerce/bootloader": "^1.0.0",
-    "@msdyn365-commerce/retail-proxy": "~9.28.0",
-}
-...
-```
 ### Module library versions mapped to Commerce Scale Unit versions 
 
-The following table maps module library versions to Commerce Scale Unit versions. The same module library versions that are mapped to the Commerce Scale Unit should be used for the Retail Server proxy and Fabrikam design kit. The table lists current supported versions as of **April 16, 2021**.
+The following table maps module library versions to Commerce Scale Unit versions. The same module library versions that are mapped to the Commerce Scale Unit should be used for the Retail Server proxy and Fabrikam design kit. The table lists current supported versions as of **January 18th, 2022**.
 
 | Commerce Scale Unit version | Maximum module library version |
 | --------------- | --------------- |
@@ -81,14 +69,24 @@ The following table maps module library versions to Commerce Scale Unit versions
 | 10.0.16 | 9.26.x |
 | 10.0.17 | 9.27.x |
 | 10.0.18 | 9.28.x |
+| 10.0.19 | 9.29.x |
+| 10.0.20 | 9.30.x |
+| 10.0.21 | 9.31.x |
+| 10.0.22 | 9.32.x |
+| 10.0.23 | 9.33.x |
+| 10.0.24 | 9.34.x |
 
 ## Pull updates
 
-The SDK, module library, and other dependency updates are optional and can be pulled down to a local development environment by using the **yarn** command in the SDK source code. When this command is run, the latest dependencies are pulled down, based on the versions that are specified in the packages.json file. Before you run the **yarn** command, you should delete the yarn.lock file from the root directory. Optionally, you can also delete the /node\_modules folder to get a clean set of dependency files.
+The SDK, module library, and other dependency updates are optional and can be pulled down to a local development environment by using the **yarn** command in the SDK source code. When this command is run, the latest dependencies are pulled down, based on the versions that are specified in the package.json file. Before you run the **yarn** command, you should delete the yarn.lock file from the root directory. Optionally, you can also delete the /node\_modules folder to get a clean set of dependency files.
 
 After the latest dependencies are pulled down, you can run **yarn start** to run the Node server on your development environment and test the new SDK and module library components.
 
 When a configuration package is created by using the **yarn msdyn365 pack** command-line interface (CLI) tool, all dependencies are updated to their local versions during the packaging process. The package that is created can then be uploaded to an online site by using Microsoft Dynamics Lifecycle Services (LCS).
+
+### Update SDK with CLI command
+
+We recommend that you keep the online SDK updated to the latest version, regardless of the versions of Commerce Scale Unit and the module library, because the online SDK is backward compatible with all versions. To update to the latest SDK, run the **[yarn msdyn365 update-versions sdk](cli-command-reference.md#update-versions)** CLI command to ensure that the yarn.lock file is deleted before you run yarn to pull down the latest version of the online SDK.
 
 ## Determine the latest released versions of the dependency packages
 
@@ -127,22 +125,22 @@ To deploy a global e-commerce extension, follow these steps.
 
 1. From within your LCS project, select **Asset library**.
 
-    ![LCS project screen with the Asset library tile highlighted](media/module-library-update-1.png)
+    ![LCS project screen with the Asset library tile highlighted.](media/module-library-update-1.png)
 
 1. On the **Asset library** page, select the **e-Commerce package** tab, and then select **Import**.
 
-    ![LCS Asset library page with the e-Commerce package tab and Import button highlighted](media/module-library-update-2.png)
+    ![LCS Asset library page with the e-Commerce package tab and Import button highlighted.](media/module-library-update-2.png)
 
 1. In the **Pick a e-Commerce package** dialog box, select the package to import, and then select **Pick**. It may take 15-30 minutes for the package to be available. 
 
     The naming convention for the global e-commerce extension file has the Commerce release version and the module library release version to help you pick the correct version. In the following example image, the file name is for Commerce release 10.0.16 and includes module library version 9.26.15. Only general availability versions will be made available.
     
-    ![Pick an e-Commerce package dialog box with the package name and Pick button highlighted](media/module-library-update-3.png)
+    ![Pick an e-Commerce package dialog box with the package name and Pick button highlighted.](media/module-library-update-3.png)
 
 1. After the package has been imported, it can be deployed into an e-commerce environment. Select the environment to be updated, and then select **Manage**.  
 1. Select the **e-Commerce** tab, and then select **Apply extension** to display the **Update e-Commerce** dialog box. Select the extension you want to deploy, and then select **Update**. The deployment may take from 15-30 minutes to complete.
 
-    ![Update e-Commerce dialog box with an extension highlighted](media/module-library-update-4.png)
+    ![Update e-Commerce dialog box with an extension highlighted.](media/module-library-update-4.png)
 
 For more information about how to upload an extension package, see [Package configurations and deploy them to an online environment](package-deploy.md).
 

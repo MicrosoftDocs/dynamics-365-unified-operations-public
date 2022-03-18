@@ -3,8 +3,8 @@
 
 title: Credit management setup
 description: This topic describes the setup that is required for Credit management.
-author: mikefalkner
-ms.date: 09/04/2019
+author: JodiChristiansen
+ms.date: 02/15/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,13 +15,13 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ---
@@ -46,7 +46,7 @@ You can put a sales order on hold if the payment terms on the order don't match 
 
 If the rankings for payment terms are active, and if the payment terms on the order have a higher rank than the default payment terms for the customer, the sales order will be put on hold.
 
-To set up the payment terms ranking go to **Credit and collections \> Setup \> Credit management setup \>Rank payment terms**  
+To set up the payment terms ranking go to **Credit and collections \> Setup \> Credit management setup \>Rank payment terms**.  
 
 ### Ranking settlement discounts
 
@@ -93,7 +93,7 @@ You can create account statuses on the **Account statuses** page (**Credit and c
 
 ## Scoring groups
 
-You can set up scoring groups to define risk factors and the criteria that are used to measure them. When information about a customer is applied to a scoring group, a score is calculated for each risk factor and used to put the customer in a risk group. The risk group can be used to identify credit worthiness and calculate automatic credit limits.
+You can set up **Scoring groups** to define risk factors and the criteria that are used to measure them. When information about a customer is applied to a scoring group, a score is calculated for each risk factor and used to put the customer in a risk group. The risk group can be used to identify credit worthiness and calculate automatic credit limits.
 
 You can create scoring groups on the **Scoring groups** page (**Credit and collections \> Setup \> 
 Credit management setup \> Risk \> Scoring groups**).

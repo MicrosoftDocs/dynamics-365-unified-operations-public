@@ -4,23 +4,11 @@ description: This topic explains how to use the Performance software development
 author: hasaid
 ms.date: 03/22/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jujoh
 ms.search.validFrom: 2018-XX-XX
 ms.dyn365.ops.version: Platform update 19
-
 ---
 
 # Performance SDK and multiuser testing in on-premises environments
@@ -59,7 +47,7 @@ This topic explains how to use the Performance software development kit (SDK) to
 3. Select **Dynamics 365** &gt; **Addins** &gt; **Create C# perf test from recording**.
 4. In the **Import Task Recording** dialog box, enter the required details, and then select **Import**.
 
-    [![Import Task Recording dialog box](./media/perf103a.png)](./media/perf103a.png)
+    [![Import Task Recording dialog box.](./media/perf103a.png)](./media/perf103a.png)
 
     A C# test is generated in the Generated folder for the project that you selected.
 
@@ -73,12 +61,12 @@ Follow these steps in the development environment.
 
 1. In Control Panel in Microsoft Windows, select **System and Security** &gt; **System** &gt; **Advanced System Settings**. Verify that the **TestRoot** environment variable is set to the path of the PerfSDK folder.
 
-    [![TestRoot environment variable](./media/EnvironmentVariable.PNG)](./media/EnvironmentVariable.PNG)
+    [![TestRoot environment variable.](./media/EnvironmentVariable.PNG)](./media/EnvironmentVariable.PNG)
 
 2. Download the **selenium-dotnet-strongnamed-2.42.0.zip** and **IEDriverServer\_Win32\_2.42.0.zip** files from [https://selenium-release.storage.googleapis.com/index.html?path=2.42/](https://selenium-release.storage.googleapis.com/index.html?path=2.42/), and extract the files.
 3. Copy the dynamic-link libraries (DLLs) from the **selenium-dotnet-strongnamed-2.42.0.zip\net40** folder to the **PerfSDK\\Common\\External\\Selenium** folder. Also copy the **IEDriverServer.exe** from the **IEDriverServer\_Win32\_2.42.0.zip** to the **PerfSDK\\Common\\External\\Selenium** folder.
 
-    [![DLLs in the PerfSDK\Common\External\Selenium folder](./media/perf103d.png)](./media/perf103d.png)
+    [![DLLs in the PerfSDK\Common\External\Selenium folder.](./media/perf103d.png)](./media/perf103d.png)
 
 4. Generate a certificate to use for authentication for the tests. To generate a certificate file, open a Command Prompt window as an administrator, and run the following commands. When you're prompted for a private key password, select **None**.
 
@@ -208,7 +196,7 @@ Follow these steps on each Application Object Server (AOS) VM in the on-premises
 
 7. In Service Fabric Explorer, find the **Code** package for the AOS node, select the ellipse button (**...**), and then select **Restart** to restart the application.
 
-    ![Restarting Finance and Operations from Service Fabric Explorer](./media/ServiceFabricExplorerRestart.png)
+    ![Restarting Finance and Operations from Service Fabric Explorer.](./media/ServiceFabricExplorerRestart.png)
 
 ### Run the single-user test
 
@@ -221,7 +209,7 @@ Follow these steps on each Application Object Server (AOS) VM in the on-premises
     }
     ```
 
-    [![Lines commented out in PurchaseReq.cs](./media/perf103e.png)](./media/perf103e.png)
+    [![Lines commented out in PurchaseReq.cs.](./media/perf103e.png)](./media/perf103e.png)
 
 2. Select **Test** &gt; **Test settings**, set the **Default processor architecture** field to **x64**, and then build the solution.
 3. Select **Test** &gt; **Windows** &gt; **Test Explorer** to view the list of tests.
@@ -303,7 +291,7 @@ Make sure that the values that you entered when you made the task recording are 
         - C:\\PerfSDK\\MS.Dynamics.Test.Team.Foundation.WebClient.InteractionService.dll.config
         - C:\\PerfSDK\\Visual Studio Online\\
 
-        [![Additional files and directories to deploy field](./media/PerfSDKOnlineTestSettings.PNG)](./media/PerfSDKOnlineTestSettings.PNG)
+        [![Additional files and directories to deploy field.](./media/PerfSDKOnlineTestSettings.PNG)](./media/PerfSDKOnlineTestSettings.PNG)
 
         > [!NOTE]
         > Your PerfSDK folder might differ.
@@ -312,15 +300,15 @@ Make sure that the values that you entered when you made the task recording are 
 9. On the **Hosts** tab, select **Run tests in 64 bit process on 64 bit machine**.
 10. To run the test, open the **SampleLoadTest.loadtest** file, and select **Run Load Test**.
 
-    [![Run Load Test](./media/perf103u.png)](./media/perf103u.png)
+    [![Run Load Test.](./media/perf103u.png)](./media/perf103u.png)
 
     When the test has finished running, you should see a summary that shows transaction results. Here is an example.
 
-    [![Transaction results](./media/perf103v.png)](./media/perf103v.png)
+    [![Transaction results.](./media/perf103v.png)](./media/perf103v.png)
 
 11. To view various indicators for the test controller and test scenario, you can switch to the **Graphs** view.
 
-    [![Graphs view](./media/perf103w.png)](./media/perf103w.png)
+    [![Graphs view.](./media/perf103w.png)](./media/perf103w.png)
 
     > [!NOTE]
     > While tests are being run, information about your system isn't available in this view. To access this information, you must use Microsoft Dynamics Lifecycle Services (LCS) to monitor the CPU and memory usage of your AOS machine. Alternatively, you can set up perfmon directly on the AOS machine and set up the Microsoft Azure portal to monitor Microsoft SQL Server usage of Database Transaction Units (DTUs).
@@ -367,7 +355,7 @@ You might receive the error message for several reasons:
 
 - The certificate thumbprint that you copied into the CloudEnvironment.Config and wif.config files includes invisible Unicode characters. To determine whether the thumbprint contains invisible Unicode characters, paste it into a Unicode code converter, and see whether extra characters appear in the **HTML/XML** field. For example, you can use the Unicode converter that is available at [https://r12a.github.io/apps/conversion/](https://r12a.github.io/apps/conversion/).
 
-    ![Unicode code converter](./media/sdk_unicode_code_converter.jpg)
+    ![Unicode code converter.](./media/sdk_unicode_code_converter.jpg)
 
 - The certificate wasn't installed correctly on the AOS machine. To verify that the certificate can be found on the AOS machine, run the following Windows PowerShell script.
 
@@ -380,7 +368,7 @@ You might receive the error message for several reasons:
 
 - If this issue occurs when you run load tests, the setup scripts might not have installed the corresponding .pfx file correctly. Verify that the password that is specified in the CloudCtuFakeACSInstall.cmd file matches the password that was set when the certificate was created.
 
-    ![Password in the CloudCtuFakeACSInstall.cmd file](./media/set_cloudctufakeacsinstall.jpg)
+    ![Password in the CloudCtuFakeACSInstall.cmd file.](./media/set_cloudctufakeacsinstall.jpg)
 
 ### No endpoint is listening
 
@@ -419,7 +407,7 @@ Two scenarios can cause this error:
 
 - The user who is specified as **SelfMintingAdminUser** in the CloudEnvironment.Config file must have the System Administrator role. This issue occurs when the System Administrator role isn't assigned to the user who is specified as **SelfMintingAdminUser**. To verify that you've specified the correct user, you can sign in to the endpoint and view the user's roles.
 
-    ![Admin user](./media/sdk_admin.png)
+    ![Admin user.](./media/sdk_admin.png)
 
 - An incorrect **NetworkDomain** value was specified for the user who is specified as **SelfMintingAdminUser** in the CloudEnvironment.Config file. You can find the correct value by running the following SQL query against the **AXDB** database of your on-premises deployment.
 
@@ -485,7 +473,7 @@ This issue occurs when the CloudEnvironment.Config file isn't present when the t
 
 If the file is missing, add it to the deployment items in the test settings.
 
-![Test settings](./media/test-settings.png)
+![Test settings.](./media/test-settings.png)
 
 ### InteractiveClientId wasn't specified in the settings
 

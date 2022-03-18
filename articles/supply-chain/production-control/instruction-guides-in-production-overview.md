@@ -3,7 +3,7 @@
 
 title: Provide mixed-reality Guides for workers in production
 description: This topic explains how to integrate the production management module in Microsoft Dynamics 365 Supply Chain Management with Dynamics 365 Guides.
-author: cabeln
+author: johanhoffmann
 ms.date: 11/13/2020
 ms.topic: article
 ms.prod: 
@@ -17,11 +17,11 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 61943
+ms.custom: ["61943", "intro-internal"]
 ms.assetid: a3847f07-fca4-4140-a26f-d83c6ac68dde
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: cabeln
+ms.author: johanho
 ms.search.validFrom: 2020-08-01
 ms.dyn365.ops.version: AX 10.0.15
 
@@ -29,7 +29,8 @@ ms.dyn365.ops.version: AX 10.0.15
 
 # Provide mixed-reality Guides for workers in production
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+[!include [banner](../includes/banner.md)]
+
 
 Workers in production processes will benefit from relevant instructions that are provided at the right time in the context of their work. *Instructions* apply in several domains of work, including: assembly, service, operations, certification, and safety. Across all of these core business functions, ongoing training instructions can help empower workers to achieve more and work better.
 
@@ -61,7 +62,7 @@ The following subsections describe a few selected scenarios where companies acro
 
 ### Assembly
 
-![Use Guides in assembly tasks](media/instruction-guides-hero-assembly.png "Use Guides in service tasks")
+![Use Guides in assembly tasks.](media/instruction-guides-hero-assembly.png "Use Guides in service tasks")
 
 Instructions in assembly operations show workers the tools and parts they need and how to use them in real work situations.
 
@@ -69,7 +70,7 @@ Production managers can create and assign Guides, for example, for [production r
 
 ### Service
 
-![Use Guides in service tasks](media/instruction-guides-hero-service.png "Use Guides in service tasks")
+![Use Guides in service tasks.](media/instruction-guides-hero-service.png "Use Guides in service tasks")
 
 Equip technicians with guided instructions at the job site, eliminating the need to schedule additional visits.
 
@@ -77,7 +78,7 @@ Service managers can assign Guides, for example, to specific [products](../../co
 
 ### Quality
 
-![Use Guides in quality assurance tasks](media/instruction-guides-hero-quality.png "Use Guides in quality assurance tasks")
+![Use Guides in quality assurance tasks.](media/instruction-guides-hero-quality.png "Use Guides in quality assurance tasks")
 
 Rollout new processes and ensure increased consistency by turning employee knowledge into a repeatable tool.
 
@@ -85,13 +86,13 @@ Quality assurance managers can assign guides, for example, to [products](../../c
 
 ### Certifications
 
-![Use Guides for certification related tasks](media/instruction-guides-hero-certification.png "Use Guides for certification related tasks")
+![Use Guides for certification related tasks.](media/instruction-guides-hero-certification.png "Use Guides for certification related tasks")
 
 Ensure every employee meets high standards by quickly identifying who needs help and where.
 
 ### Safety
 
-![Use Guides in work safety instructions](media/instruction-guides-hero-safety.png "Use Guides in work safety instructions")
+![Use Guides in work safety instructions.](media/instruction-guides-hero-safety.png "Use Guides in work safety instructions")
 
 Provide instructions that walk through dangerous procedures virtually before attempting in the physical environment. With a mixed reality approach, workers can experience dangerous procedures virtually.
 
@@ -123,7 +124,7 @@ To make the feature available on your system, you must enable its configuration 
 
 To configure how Guides appear on the shop floor, go to **Mixed Reality \> Dynamics 365 Guides \> Configure Guides integration**.
 
-![Configure Guide integration for manufacturing](media/instruction-guides-configure-integration.png "Configure Guide integration for manufacturing")
+![Configure Guide integration for manufacturing.](media/instruction-guides-configure-integration.png "Configure Guide integration for manufacturing")
 
 Set the following fields:
 
@@ -140,7 +141,7 @@ Set the following fields:
 
 Use the **All Guides** page to see the list of all available Guides in your organization and all assignments to your production processes and resources. To open it, go to **Mixed reality \> Guides \> All Guides**. The list at the top shows all the available Guides and you can use the field here to filter the list. The list at the bottom shows all Guide assignments and provides a toolbar for managing them.
 
-![Manage Guides](media/instruction-guides-allguides.png "Manage Guides")
+![Manage Guides.](media/instruction-guides-allguides.png "Manage Guides")
 
 The following sections describe the types of objects that you can assign Guides to. Each assigned guide provides instructions that are automatically attached to the respective production jobs and will be available on the shop floor.
 
@@ -161,7 +162,7 @@ To add a Guide to a resource:
 1. Expand the **Associated Guides** FastTab.
 1. Select **Add** from the **Associated Guides** toolbar. A new line is added to the grid.
 1. For the new line, use the drop-down list in the **Name** column to choose the Guide you want to assign. If you have a large number of Guides, then you can filter the list to find the one you are looking for.
-    ![Manage Guides](media/instruction-guides-allguides.png "Manage Guides")
+    ![Manage Guides.](media/instruction-guides-allguides.png "Manage Guides")
 
 ## <a name="resource-groups"></a>Associate a Guide to a resource group
 
@@ -182,7 +183,7 @@ To add a Guide to a resource group:
 1. Expand the **Associated Guides** FastTab.
 1. Select **Add** from the **Associated Guides** toolbar. A new line is added to the grid.
 1. For the new line, use the drop-down list in the **Name** column to choose the Guide you want to assign. If you have a large number of Guides, then you can filter the list to find the one you are looking for.
-    ![Adding a Guide to a resource group](media/instruction-guides-resourcegroup.png "Adding a Guide to a resource group")
+    ![Adding a Guide to a resource group.](media/instruction-guides-resourcegroup.png "Adding a Guide to a resource group")
 
 ## <a name="released-products"></a>Associate a Guide to a released product
 
@@ -202,7 +203,7 @@ To add a Guide to a released product:
 1. The **Associated Guides** page opens for your selected product.
 1. Select **Add** on the Action Pane to add a new line to the grid. 
 1. For the new line, use the drop-down list in the **Name** column to choose the Guide you want to assign.
-    ![Adding a Guide to a released product](media/instruction-guides-ReleasedProduct-AddGuides.png "Adding a Guide to a released product")
+    ![Adding a Guide to a released product.](media/instruction-guides-ReleasedProduct-AddGuides.png "Adding a Guide to a released product")
 
 ## <a name="formulas"></a>Associate a Guide to a formula
 
@@ -227,7 +228,7 @@ To add a Guide to a formula:
 1. Expand the **Associated Guides** FastTab.
 1. Select **Add** from the **Associated Guides** toolbar. A new line is added to the grid.
 1. For the new line, use the drop-down list in the **Name** column to choose the Guide you want to assign.
-    ![Adding a Guide to a formula](media/instruction-guides-Formula.png "Adding a Guide to a formula")
+    ![Adding a Guide to a formula.](media/instruction-guides-Formula.png "Adding a Guide to a formula")
 
 ## <a name="formula-versions"></a>Associate a Guide to a formula version
 
@@ -252,11 +253,11 @@ To add a Guide to a formula version:
 1. Open the **Header** tab above the top FastTab.
 1. On the **Formula versions** FastTab, select the version you want to assign a Guide to.
 1. On the **Formula versions** toolbar, select **Associated Guides**.
-    ![Open the Guides associated with a selected formula version](media/instruction-guides-FormulaVersion.png "Open the Guides associated with a selected formula version")
+    ![Open the Guides associated with a selected formula version.](media/instruction-guides-FormulaVersion.png "Open the Guides associated with a selected formula version")
 1. The **Associated Guides** page opens for your formula version.
 1. Select **Add** on the Action Pane to add a new line to the grid. 
 1. For the new line, use the drop-down list in the **Name** column to choose the Guide you want to assign.
-    ![Adding a Guide to a formula version](media/instruction-guides-FormulaVersionAddGuide.png "Adding a Guide to a formula version")
+    ![Adding a Guide to a formula version.](media/instruction-guides-FormulaVersionAddGuide.png "Adding a Guide to a formula version")
 
 ## <a name="bom"></a>Associate a Guide to a bill of materials
 
@@ -279,7 +280,7 @@ To add a Guide to a bill of material:
 1. Expand the **Associated Guides** FastTab.
 1. Select **Add** from the **Associated Guides** toolbar. A new line is added to the grid.
 1. For the new line, use the drop-down list in the **Name** column to choose the Guide you want to assign.
-    ![Adding a Guide to a BOM](media/instruction-guides-BOM.png "Adding a Guide to a BOM")
+    ![Adding a Guide to a BOM.](media/instruction-guides-BOM.png "Adding a Guide to a BOM")
 
 ## <a name="bom-versions"></a>Associate a Guide to a bill of materials version
 
@@ -301,11 +302,11 @@ To add a Guide to a bill of materials version:
 1. Open the **Header** tab above the top FastTab.
 1. On the **BOM versions** FastTab, select the version you want to assign a Guide to.
 1. On the **BOM versions** toolbar, select **Associated Guides**.
-    ![Open the Guides associated with a selected BOM version](media/instruction-guides-BOMVersion.png "Open the Guides associated with a selected BOM version")
+    ![Open the Guides associated with a selected BOM version.](media/instruction-guides-BOMVersion.png "Open the Guides associated with a selected BOM version")
 1. The **Associated Guides** page opens for your BOM version.
 1. Select **Add** on the Action Pane to add a new line to the grid.
 1. For the new line, use the drop-down list in the **Name** column to choose the Guide you want to assign.
-    ![Adding a Guide to a BOM version](media/instruction-guides-BOMVersionAddGuide.png "Adding a Guide to a BOM version")
+    ![Adding a Guide to a BOM version.](media/instruction-guides-BOMVersionAddGuide.png "Adding a Guide to a BOM version")
 
 ## <a name="routes"></a>Associate a Guide to a route
 
@@ -326,7 +327,7 @@ To add a Guide to a route:
 1. Expand the **Associated Guides** FastTab.
 1. Select **Add** from the **Associated Guides** toolbar. A new line is added to the grid.
 1. For the new line, use the drop-down list in the **Name** column to choose the Guide you want to assign.
-    ![Adding a Guide to a route](media/instruction-guides-Route.png "Adding a Guide to a route")
+    ![Adding a Guide to a route.](media/instruction-guides-Route.png "Adding a Guide to a route")
 
 ## <a name="route-versions"></a>Associate a Guide to a route version
 
@@ -344,11 +345,11 @@ To add a Guide to a route version:
 1. Open the route that you want to assign a Guide to.
 1. On the **Versions** FastTab, select the version you want to assign a Guide to.
 1. On the **Versions** toolbar, select **Associated Guides**.
-    ![Open the Guides associated with a selected route version](media/instruction-guides-RouteVersion.png "Open the Guides associated with a selected route version")
+    ![Open the Guides associated with a selected route version.](media/instruction-guides-RouteVersion.png "Open the Guides associated with a selected route version")
 1. The **Associated Guides** page opens for your BOM version.
 1. Select **Add** on the Action Pane to add a new line to the grid.
 1. For the new line, use the drop-down list in the **Name** column to choose the Guide you want to assign.
-    ![Adding a Guide to a route version](media/instruction-guides-RouteVersionAddGuide.png "Adding a Guide to a route version")
+    ![Adding a Guide to a route version.](media/instruction-guides-RouteVersionAddGuide.png "Adding a Guide to a route version")
 
 ## <a name="route-operation-relations"></a>Associate a Guide to a route operation relation
 
@@ -371,9 +372,9 @@ To add a Guide to a route operation relation:
 1. The **Route details** page opens for your selected rout.
 1. In the top grid, select the operation you want to provide guidance for.
 1. In the bottom grid, select a specific relation (or the generic **All** relation).
-    ![Select an operation and then a relation](media/instruction-guides-RouteOperationRelation.png "Select an operation and then a relation")
+    ![Select an operation and then a relation.](media/instruction-guides-RouteOperationRelation.png "Select an operation and then a relation")
 1. Above the bottom gird, open the **Associated Guides** tab.
-    ![The Associated Guides tab](media/instruction-guides-RouteOperationRelation-AddGuide.png "The Associated Guides tab")
+    ![The Associated Guides tab.](media/instruction-guides-RouteOperationRelation-AddGuide.png "The Associated Guides tab")
 1. Select **Add** from the toolbar at the top of the bottom grid to add a new line to the grid.
 1. For the new row, use the drop-down list in the **Name** column to choose the Guide you want to assign. In the rest of the row, select the check box for each context where the selected Guide should be available.
 
@@ -384,11 +385,11 @@ To add a Guide to a route operation relation:
 
 When a worker opens a job list on the shop floor execution interface, Supply Chain Management finds the relevant guides for the jobs shown. Use the **Guides** button to view the relevant guides.
 
-![Guides button in the shop floor execution interface](media/instruction-guides-Shopfloor1.png "Guides button in the shop floor execution interface")
+![Guides button in the shop floor execution interface.](media/instruction-guides-Shopfloor1.png "Guides button in the shop floor execution interface")
 
 Then put on a HoloLens and access the respective guide by glancing at the QR code and activating the respective Guide.
 
-![QR code to access guides using a HoloLens](media/instruction-guides-Shopfloor2.png "QR code to access guides using a HoloLens")
+![QR code to access guides using a HoloLens.](media/instruction-guides-Shopfloor2.png "QR code to access guides using a HoloLens")
 
 ## <a name="logic"></a>Resolving the logic for selecting Guides
 
@@ -411,7 +412,7 @@ When Supply Chain Management generates the jobs for the production floor, it wil
 - If you attach a route version to a production order, then any Guides attached to this version, and also the Guides attached to the parent route of that version, will be shown on the job.
 - If you define several route operation relations that include the *All* relation and assign Guides to those, only the Guides from the most specific relation will be shown for the job.  
 
-![Diagram on resolving the relevant Guides](media/instruction-guides-Resolve.png "Diagram on resolving the relevant Guides")
+![Diagram on resolving the relevant Guides.](media/instruction-guides-Resolve.png "Diagram on resolving the relevant Guides")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

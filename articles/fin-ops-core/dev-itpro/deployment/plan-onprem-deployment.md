@@ -4,7 +4,7 @@
 title: Plan and prepare for on-premises deployments
 description: This topic will help you plan and prepare for your on-premises deployment.
 author: PeterRFriis
-ms.date: 03/18/2021
+ms.date: 01/26/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -36,7 +36,7 @@ Dynamics 365 Finance + Operations (on-premises) supports running business proces
 This topic will help you plan and prepare for your on-premises deployment.
 
 > [!IMPORTANT]
-> Dynamics 365 Finance + Operations (on-premises) is not supported on any public cloud infrastructure, including Microsoft Azure Cloud services. However, it is supported to run on [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/) services.
+> Dynamics 365 Finance + Operations (on-premises) is not supported on any public cloud infrastructure, including Microsoft Azure Cloud services. However, it is supported to run on [Microsoft Azure Stack HCI](https://azure.microsoft.com/products/azure-stack/hci/) and [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/).
 
 ## Differences between cloud deployments and on-premises deployments
 The features in cloud deployments and on-premises deployments differ. These differences will affect your planning. The differences are described in the following topics:
@@ -70,9 +70,9 @@ At a minimum, an on-premises sandbox environment requires:
 - 3 machines running Environment Orchestrator
 - 2 machines running Application Object Servers (AOS)
 - 1 machine running Management Reporter (MR)
-- 1 machine running SQL Server Reporting Services (SSRS)
+- 1 machine running SQL Server Reporting Services (SSRS) with a local SQL Server (Database Engine)
 - 1 machine running Active Directory
-- 1 machine running SQL Server
+- 1 machine running SQL Server (Database Engine)
 
 ### Production environment
 The production environment is the live deployment that your users and customers have access to. To deploy a production environment, see [Set up and deploy on-premises environments home page](setup-deploy-on-premises-environments.md).
@@ -81,8 +81,8 @@ At a minimum, an on-premises production environment requires:
 - 3 machines running Environment Orchestrator
 - 3 machines running Application Object Servers (AOS)
 - 1 machine running Management Reporter (MR)
-- 1 machine running SQL Server Reporting Services (SSRS)
-- 2 or more machines running SQL Server
+- 1 machine running SQL Server Reporting Services (SSRS) with a local SQL Server (Database Engine)
+- 2 or more machines running SQL Server (Database Engine)
 - 2 or more machines running Active Directory
 
 ## Service Fabric
@@ -96,7 +96,7 @@ An on-premises deployment has a standalone cluster for each sandbox environment 
 
 The following diagram shows the node types deployed in a Service Fabric standalone cluster.
 
-![Node types deployed in a Service Fabric standalone cluster](media/on-premises-overview-01.png)
+![Node types deployed in a Service Fabric standalone cluster.](media/on-premises-overview-01.png)
 
 ### Service Fabric resources
 To learn more about Service Fabric, see the following topics:
@@ -121,7 +121,7 @@ The core factors that affect sizing are:
 
 The more detailed data that you collect, the more precisely you can estimate sizing. Hardware sizing, without supporting data, is likely to be inaccurate. The minimum data that you need to collect is the peak transaction line load per hour. The factors that affect sizing are shown in the following diagram.
 
-![Sizing factors](media/sizing-factors.png)
+![Sizing factors.](media/sizing-factors.png)
 
 From left to right, the first and most important factor needed to accurately estimate sizing is a transaction profile or a transaction characterization. It’s important to find the peak transactional volume per hour. If there are multiple peak periods, then these periods need to be accurately defined.
 

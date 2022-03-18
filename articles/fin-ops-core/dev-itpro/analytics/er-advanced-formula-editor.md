@@ -4,7 +4,7 @@
 title: Electronic reporting advanced formula editor
 description: This topic describes how the advanced formula editor can be used to configure expressions in Electronic reporting (ER) model mapping and format components.
 author: NickSelin
-ms.date: 04/10/2020
+ms.date: 06/17/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -50,16 +50,29 @@ Complete the following steps to start using the advanced formula editor in your 
 2.  On the **Configurations** page, on the Action Pane, on the **Configurations** tab, in the **Advanced settings** group, select **User parameters**.
 3.  In the **User parameters** dialog box, in the **Execution tracing** section, set the **Enable advanced formula editor** parameter to **Yes**.
 
-[![ER configurations page](./media/ER-AdvEditor-Activate.png)](./media/ER-AdvEditor-Activate.png)
+[![User parameters dialog box, Enable advanced formula editor parameter highlighted.](./media/ER-AdvEditor-Activate.png)](./media/ER-AdvEditor-Activate.png)
 
 > [!NOTE]
 > Be aware that this parameter is user specific and company specific.
+
+Starting in Microsoft Dynamics 365 Finance version 10.0.19, you can control what ER formula editor is offered by default. Complete the following steps to enable the advanced formula editor for all users and companies of the current Finance instance.
+
+1.  Open the **Feature management** workspace.
+2.  Find and select the feature **Set the ER advanced formula editor as the default one for all users** in the list, and then select **Enable now**.
+3.  Go to **Organization administration** > **Electronic reporting** > **Configurations**.
+4.  On the **Configurations** page, on the Action Pane, on the **Configurations** tab, in the **Advanced settings** group, select **User parameters**.
+5.  In the **User parameters** dialog box, find the **Disable advanced formula editor** parameter and verify that it is set to **No**.
+
+[![User parameters dialog box, Disable advanced formula editor parameter highlighted.](./media/ER-AdvEditor-Activate2.png)](./media/ER-AdvEditor-Activate2.png)
+
+> [!NOTE]
+> The values of the parameters **Enable advanced formula editor** and **Disable advanced formula editor** are kept separate for each user and offered on the **User parameters** dialog box depending on the status of the **Set the ER advanced formula editor as the default one for all users** feature.
 
 ## <a name="Autoformatting">Code autoformatting</a>
 
 When you write a complex expression that consists of multiple rows of code, the indentation of a new entered line will be automatic based on the indentation of the previous row. You can select lines and change their indentation by typing **Tab** or **Shift+Tab**.
 
-[![ER formula editor](./media/ER-AdvEditor-Indentation.gif)](./media/ER-AdvEditor-Indentation.gif)
+[![ER formula editor gif showing selecting lines and changing the indentation.](./media/ER-AdvEditor-Indentation.gif)](./media/ER-AdvEditor-Indentation.gif)
 
 Autoformatting allows you to keep the entire expression well formatted to make further maintenance easier and to simplify understanding of the configured logic.
 
@@ -67,7 +80,7 @@ Autoformatting allows you to keep the entire expression well formatted to make f
 
 The editor provides word completion to help you write expression faster and avoid typos. When you start adding new text, the editor automatically offers a list of functions supported in ER functions that contain the characters you have entered. You can also trigger IntelliSense in any place of a configured expression by typing **Ctrl+Space**.
 
-[![ER formula editor](./media/ER-AdvEditor-Intelisense.gif)](./media/ER-AdvEditor-Intelisense.gif)
+[![ER formula editor gif showing triggering IntelliSense.](./media/ER-AdvEditor-Intelisense.gif)](./media/ER-AdvEditor-Intelisense.gif)
 
 ## <a name="CodeCompletion">Code completion</a>
 
@@ -77,7 +90,7 @@ The editor automatically provides code completion by:
 - Inserting the second quotation symbol when the first one is entered, keeping the cursor inside the quotations.
 - Inserting the second double quotation symbol when the first one is entered, keeping the cursor inside the quotations.
 
-[![ER formula editor](./media/ER-AdvEditor-CodeCompletion.gif)](./media/ER-AdvEditor-CodeCompletion.gif)
+[![ER formula editor gif showing the editor automatically providing code completion.](./media/ER-AdvEditor-CodeCompletion.gif)](./media/ER-AdvEditor-CodeCompletion.gif)
 
 When you point to the typed bracket, the second bracket of this pair is automatically highlighted to show the construct that they support.
 
@@ -93,7 +106,7 @@ For example, to jump to line **8**, do the following:
 
 - Press **F1**, type **G**, select **Go to line**, enter the value **8**, and the press **Enter**.
 
-[![ER formula editor](./media/ER-AdvEditor-Goto.gif)](./media/ER-AdvEditor-Goto.gif)
+[![ER formula editor gif showing how to locate parts of an expression using the command palette.](./media/ER-AdvEditor-Goto.gif)](./media/ER-AdvEditor-Goto.gif)
 
 ## <a name="CodeStructuring">Code structuring</a>
 
@@ -115,7 +128,7 @@ To unfold all regions, do the following:
   
 - Press **F1**, type **UN**, select **Unfold all**, and then press **Enter**
 
-[![ER formula editor](./media/ER-AdvEditor-ToggleFold.gif)](./media/ER-AdvEditor-ToggleFold.gif)
+[![ER formula editor gif showing code being unfolded.](./media/ER-AdvEditor-ToggleFold.gif)](./media/ER-AdvEditor-ToggleFold.gif)
 
 ## <a name="FindAndReplace">Find and replace</a>
 
@@ -143,13 +156,13 @@ To change all occurrences of a certain text, select the text in your expression,
   
 - Press **F1**, type **C**, and then select the required option to change the selected text. Enter the alternative text.
 
-[![ER formula editor](./media/ER-AdvEditor-Find.gif)](./media/ER-AdvEditor-Find.gif)
+[![ER formula editor gif showing find and replace.](./media/ER-AdvEditor-Find.gif)](./media/ER-AdvEditor-Find.gif)
 
 ## <a name="DataPasting">Data sources and functions pasting</a>
 
 You can select **Add data source**, which pastes to the current expression a data source that is currently selected on the **Data source** left panel. Simlilarly, you can select **Add function**, which pastes to the current expression a function that is currently selected on the **Functions** right panel. If you use the ER formula editor, a selected function or a selected data source will always be pasted to the end of the configured expression. When you use the advanced ER formula editor, a selected function or a selected data source can be pasted to any part of the configured expression. You will need to use the cursor to specify where you want to paste the data.
 
-[![ER formula editor](./media/ER-AdvEditor-PasteValue.gif)](./media/ER-AdvEditor-PasteValue.gif)
+[![ER formula editor gif showing adding a data source and pasting a function.](./media/ER-AdvEditor-PasteValue.gif)](./media/ER-AdvEditor-PasteValue.gif)
 
 ## <a name="SyntaxColorization">Syntax colorization</a>
 
@@ -157,7 +170,7 @@ Currently, different colors are used to highlight the following parts of express
 
 - The text in double brackets that can represent a label ID of a text constant.
 
-[![ER formula editor](./media/ER-AdvEditor-SyntaxColorization.png)](./media/ER-AdvEditor-SyntaxColorization.png)
+[![ER formula editor.](./media/ER-AdvEditor-SyntaxColorization.png)](./media/ER-AdvEditor-SyntaxColorization.png)
 
 ## Limitations
 

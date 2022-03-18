@@ -26,6 +26,8 @@ ms.dyn365.ops.version: 10.0.15
 
 # Load templates
 
+[!include [banner](../../includes/banner.md)]
+
 When you create a new load, you can assign a load template. The load template contains information about equipment, and about measures such as the height, width, depth, and volume of the load.
 
 This topic describes how to set up load templates, and how to associate a load template with a new load.

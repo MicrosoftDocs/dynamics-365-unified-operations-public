@@ -37,7 +37,7 @@ ms.dyn365.ops.version: 8.1
 6. Set the **Don't match** option to **Yes** if the inventory profile doesn't have to participate in the automatic selection of inventory profiles from on-hand inventory when you create sales order lines by selecting **Create lines**.
 7. On the **Matching priority** FastTab, use the **Up** and **Down** buttons to set the order that inventory profiles are automatically selected in when you create sales order lines by selecting **Add lines**.
 
-    ![Inventory profiles page, Matching priority FastTab](media/1_Inventory_profiles.png)
+    ![Inventory profiles page, Matching priority FastTab.](media/1_Inventory_profiles.png)
 
 8. Select **Save**.
 
@@ -61,7 +61,7 @@ ms.dyn365.ops.version: 8.1
 
 4. Select **Save**.
 
-![Inventory profile page, Compatible inventory profiles FastTab](media/2_Inventory_profiles.png)
+![Inventory profile page, Compatible inventory profiles FastTab.](media/2_Inventory_profiles.png)
 
 ## Set up an inventory profile in tracking dimension groups
 
@@ -75,7 +75,7 @@ ms.dyn365.ops.version: 8.1
 
 6. Select **Save**.
 
-![Tracking dimensions page](media/3_Tracking_dimension_groups.png)
+![Tracking dimensions page.](media/3_Tracking_dimension_groups.png)
 
 ## Activate transaction combinations for inventory profiles
 
@@ -89,7 +89,7 @@ ms.dyn365.ops.version: 8.1
 
 4. Select **Save**.
 
-![Transaction combinations page](media/4_Transaction_combinations.png)
+![Transaction combinations page.](media/4_Transaction_combinations.png)
 
 ## Set up inventory posting in the context of an inventory profile
 
@@ -127,7 +127,7 @@ ms.dyn365.ops.version: 8.1
 6. Set the **Vendor posting profile** and **Customer posting profile** fields.
 7. Select **Save**.
 
-![Inventory profile-posting profile page](media/5_Inventory_profile_-_posting_profile.png)
+![Inventory profile-posting profile page.](media/5_Inventory_profile_-_posting_profile.png)
 
 ## Set up a default kind of activity and inventory profile for vendors, customers, agreements, and warehouses
 
@@ -255,11 +255,11 @@ On the **Procurement and sourcing parameters** page, you can select a default in
 1. Go to **Procurement and sourcing \> Setup \> Procurement and sourcing parameters**.
 2. On the **General** tab, on the **Default values and parameters** FastTab, in the **Inventory profile** field, select the inventory profile that should automatically be used in purchase orders.
 
-    ![Procurement and sourcing parameters page, General tab](media/6_Procurement_and_sourcing_parameters.png)
+    ![Procurement and sourcing parameters page, General tab.](media/6_Procurement_and_sourcing_parameters.png)
 
 3. Select **Update order lines** to open the **Update order lines** dialog box.
 
-    ![Update order lines dialog](media/7_Update_order_lines.png)
+    ![Update order lines dialog.](media/7_Update_order_lines.png)
 
 4. In the **Inventory profile** section, in the **Updating Inventory profile** field, select one of the following values to set up the rules that are used to update the **Inventory profile** field on purchase order lines when the corresponding field in the purchase order header is changed:
 
@@ -273,7 +273,7 @@ On the **Procurement and sourcing parameters** page, you can select a default in
     - Set the option in the **Posting profile** column to **Yes** if you want to split purchase order product receipts by the vendor posting profiles that are specified on the purchase order lines.
     - Set the option in the **Kind of activity** column to **Yes** if you want to split purchase order packing slips by the kinds of activity that include the inventory profiles that are specified on the purchase order lines.
 
-![Procurement and sourcing parameters page, Summary update tab](media/8_Procurement_and_sourcing_parameters.png)
+![Procurement and sourcing parameters page, Summary update tab.](media/8_Procurement_and_sourcing_parameters.png)
 
 > [!NOTE]
 > The **Invoice** option in both the **Posting profile** column and the **Kind of activity** column is always set to **Yes** and can't be changed. Therefore, purchase order invoices are always split by vendor posting profiles and kinds of activity.
@@ -287,12 +287,12 @@ On the **Accounts receivable parameters** page, you can select a default invento
 3. Set the **Use compatible inventory profiles** option to **Yes** if compatible inventory profiles should automatically be used in sales orders.
 4. Set the **Split order lines by inventory profiles** option to **Yes** to automatically split sales order lines by the inventory profiles when **Create lines** is used from the available physical quantity.
 
-    ![Accounts receiveable parameters page, General tab](media/9_Accounts_receivable_parameters.png)
+    ![Accounts receiveable parameters page, General tab.](media/9_Accounts_receivable_parameters.png)
 
 5. On the **Summary update** tab, on the **Split based on** FastTab, set the **Posting profile** option in the **Packing slip** column to **Yes** to split sales order packing slips by the customer posting profiles that are specified on the sales order lines.
 6. Set the **Kind of activity** option in the **Packing slip** column to **Yes** to split sales order packing slips by the kinds of activity that the inventory profiles that are specified on the sales order lines correspond to.
 
-    ![Accounts receivable parameters page, Summary update tab ](media/10_Accounts_receivable_parameters.png)
+    ![Accounts receivable parameters page, Summary update tab .](media/10_Accounts_receivable_parameters.png)
 
     > [!NOTE]
     > In the **Invoice** column, the **Posting profile** and **Kind of activity** options are always set to **Yes** and can't be changed. Therefore, sales order invoices are always split by customer posting profiles and kinds of activity.
@@ -304,7 +304,7 @@ On the **Accounts receivable parameters** page, you can select a default invento
     - **Always** – The inventory profile on the order lines should always automatically be updated when the inventory profile in the order header is changed.
     - **Prompt** – The system should prompt you to update the inventory profile on the order lines when you change the inventory profile in the order header.
 
-![Update order lines page](media/11_Update_order_lines.png)
+![Update order lines page.](media/11_Update_order_lines.png)
 
 ## Set up a default inventory profile for transfer orders
 
@@ -314,7 +314,7 @@ On the **Inventory and warehouse management parameters** page, you can select a 
 2. On the **General** tab, in the **Inventory profile** section, in the **Inventory profile** field, select the inventory profile that should automatically be used in transfer orders.
 3. Set the **Use compatible inventory profiles** option to **Yes** if the **Use compatible inventory profiles** option in transfer orders should be set to **Yes** by default.
 
-    ![Inventory and warehouse management parameters page, General tab](media/12_Inventory_and_warehouse_management_parameters.png)
+    ![Inventory and warehouse management parameters page, General tab.](media/12_Inventory_and_warehouse_management_parameters.png)
 
 4. On the **Bills of materials** tab, in the **Inventory profile** field, select the inventory profile that should be used by default when BOMs are created and exploded, and when reporting as finished is processed, if an inventory profile isn't specified on the BOM lines.
 

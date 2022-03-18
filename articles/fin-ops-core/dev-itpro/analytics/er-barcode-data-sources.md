@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 10.0.13
 
 [!include[banner](../includes/banner.md)]
 
-You can use the [Electronic reporting (ER)](general-electronic-reporting.md) framework to design [ER format components](general-electronic-reporting.md#FormatComponentOutbound) that you can run to generate electronic and printable outbound documents that you require. To generate an outbound document in Microsoft Office format, you must specify the layout of the report by using either a Microsoft Excel document or a Microsoft Word document as a report template. The [ER Operations designer](general-electronic-reporting.md#building-a-format-that-uses-a-data-model-as-a-base) lets you attach an Excel or Word document as a template for an ER format. The following named elements in the attached template are associated with the elements of the configured format component:
+You can use the [Electronic reporting (ER)](general-electronic-reporting.md) framework to design ER format components that you can run to generate electronic and printable outbound documents that you require. To generate an outbound document in Microsoft Office format, you must specify the layout of the report by using either a Microsoft Excel document or a Microsoft Word document as a report template. The [ER Operations designer](general-electronic-reporting.md#building-a-format-that-uses-a-data-model-as-a-base) lets you attach an Excel or Word document as a template for an ER format. The following named elements in the attached template are associated with the elements of the configured format component:
 
 - Content controls in Word
 - Named sheets, ranges, cells, shapes, and images in Excel
@@ -121,21 +121,21 @@ If you haven't yet completed the example in the [Embed images and shapes in docu
 
 | Content description         | File name                   |
 |-----------------------------|-----------------------------|
-| ER data model configuration | Model for cheques.xml       |
-| ER format configuration     | Cheques printing format.xml |
+| ER data model configuration | [Model for cheques.xml](https://download.microsoft.com/download/6/e/a/6ea166fd-1382-4fdb-8dcb-0f13379f9c8e/Modelforcheques.xml)      |
+| ER format configuration     | [Cheques printing format.xml](https://download.microsoft.com/download/1/7/c/17c301e3-c4ee-4886-ae75-440fcc002c8c/Chequesprintingformat.xml) |
 
 Additionally, download the following Excel file that contains the modified template for the provided ER solution.
 
 | Content description | File name                 |
 |---------------------|---------------------------|
-| Report template     | Check template Excel.xlsx |
+| Report template     | [Check template Excel.xlsx](https://download.microsoft.com/download/3/b/d/3bd3b944-da8f-43b4-8533-3c1292a4c3ef/CheckTemplateExcel.xlsx) |
 
 ### <a name="ExampleProvider"></a>Activate a configuration provider
 
 1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
 2. On the **Localization configurations** page, in the **Configuration providers** section, make sure that the [configuration provider](general-electronic-reporting.md#Provider) for the **Litware, Inc.** sample company is listed, and that it's marked as active. If it isn't listed, or if it isn't marked as active, follow the steps in the [Create a configuration provider and mark it as active](tasks/er-configuration-provider-mark-it-active-2016-11.md) topic.
 
-![Setting the sample company to active on the Localization configurations page](./media/er-barcode-data-source-active-provider.png)
+![Setting the sample company to active on the Localization configurations page.](./media/er-barcode-data-source-active-provider.png)
 
 ### <a name="ExampleImportSolution"></a>Import the provided ER solution
 
@@ -165,14 +165,14 @@ Additionally, download the following Excel file that contains the modified templ
 7. On the Action Pane, select **Print test**.
 8. In the dialog box, set the **Negotiable check format** option to **Yes**, and then select **OK**.
 
-    ![Check layout - print test dialog box](./media/er-barcode-data-source-check-layout.png)
+    ![Check layout - print test dialog box.](./media/er-barcode-data-source-check-layout.png)
 
 ### <a name="ExampleReviewGeneratedCheque"></a>Review the generated payment check
 
 - Open the generated check in Excel.
 2. Review the generated check.
 
-    ![Generated payment check in Excel](./media/er-barcode-data-source-cheque1.png)
+    ![Generated payment check in Excel.](./media/er-barcode-data-source-cheque1.png)
 
 ### <a name="ExampleModifyFormat"></a>Modify the format of the provided ER solution
 
@@ -180,7 +180,7 @@ Additionally, download the following Excel file that contains the modified templ
 
 You can use the Excel desktop application to open the **Cheque template Excel.xlsx** file that you imported earlier. Notice that this template differs from the template that you used to generate a payment check in the provided ER solution. In addition, it includes an **AmountBarcode** element for the bar code image.
 
-![AmountBarcode element in the Excel template](./media/er-barcode-data-source-cheque2.png)
+![AmountBarcode element in the Excel template.](./media/er-barcode-data-source-cheque2.png)
 
 You must now modify the ER solution and then [reapply](modify-electronic-reporting-format-reapply-excel-template.md) the modified template.
 
@@ -191,7 +191,7 @@ You must now modify the ER solution and then [reapply](modify-electronic-reporti
 5. In the ER Operations designer, select the **Mapping** tab on the right side of the page, and then, in the format tree pane on the left, select **Expand/collapse**.
 6. Notice that all cell format elements are bound to the appropriate data sources.
 
-    ![Binding of cell format elements to data sources in the ER Operations designer](./media/er-barcode-data-source-cells-bound.png)
+    ![Binding of cell format elements to data sources in the ER Operations designer.](./media/er-barcode-data-source-cells-bound.png)
 
 7. Select the **Format** tab on the right side of the page.
 8. On the Action Pane, select the ellipsis (**...**), and then select **Import**.
@@ -200,7 +200,7 @@ You must now modify the ER solution and then [reapply](modify-electronic-reporti
 11. Select the **Mapping** tab on the right side of the page, and then, in the format tree pane on the left, select **Expand/collapse**.
 12. Notice that the **AmountBarcode** cell element has been added to the format. This element is associated with the **AmountBarcode** element that has been added to the modified Excel template as a placeholder for a bar code image.
 
-    ![AmountBarcode cell element added to the format in the ER Operations designer](./media/er-barcode-data-source-cell-added.png)
+    ![AmountBarcode cell element added to the format in the ER Operations designer.](./media/er-barcode-data-source-cell-added.png)
 
 #### <a name="ExampleModifyFormatAddDataSource"></a>Add a new Barcode data source
 
@@ -209,14 +209,14 @@ Next, you must add a new data source of the **Barcode** type.
 1. In the ER Operations designer, on the **Mapping** tab on the right side of the page, select the **print** data source.
 2. Select **Add**, and then, in the **Functions** group, select the **Barcode** data source type.
 
-    ![Selecting the Barcode data source type](./media/er-barcode-data-source-add.png)
+    ![Selecting the Barcode data source type.](./media/er-barcode-data-source-add.png)
 
 3. In the dialog box, in the **Name** field, enter **barcode**.
 4. In the **Barcode format**, select **Code 128**.
 5. In the **Width** field, enter **500**.
 6. Select **OK**.
 
-    ![Data source properties dialog box](./media/er-barcode-data-source-add2.png)
+    ![Data source properties dialog box.](./media/er-barcode-data-source-add2.png)
 
 #### <a name="ExampleModifyFormatBindFormatElement"></a>Bind a new format element
 
@@ -227,7 +227,7 @@ Next, you must bind the new format element to the data source that you just adde
 3. On the Action Pane, select **Show details**.
 4. Notice that, because the **Barcode** data source is represented in the binding as a function that contains a single parameter, the name of the bound format element has been automatically taken as the argument of that parameter.
 
-    ![Details of the Barcode data source in the ER Operations designer](./media/er-barcode-data-source-bind1.png)
+    ![Details of the Barcode data source in the ER Operations designer.](./media/er-barcode-data-source-bind1.png)
 
 5. Select **Edit formula** to adjust the binding.
 
@@ -237,7 +237,7 @@ Next, you must bind the new format element to the data source that you just adde
 7. Select **Save**, and then close the [ER Formula designer](general-electronic-reporting-formula-designer.md).
 8. Notice that the binding has been adjusted.
 
-    ![Adjusted binding in the ER Operations designer](./media/er-barcode-data-source-bind2.png)
+    ![Adjusted binding in the ER Operations designer.](./media/er-barcode-data-source-bind2.png)
 
 9. Select **Save**, and then close the ER Operations designer.
 
@@ -282,7 +282,7 @@ The draft version of the selected format is marked as available for use when the
 6. Select **OK**.
 7. Review the generated check. Notice that a bar code has been generated to encode the payable amount of the check.
 
-    ![Generated payment check with bar code in Excel](./media/er-barcode-data-source-cheque3.png)
+    ![Generated payment check with bar code in Excel.](./media/er-barcode-data-source-cheque3.png)
 
 > [!IMPORTANT]
 > An exception is thrown if the argument of a **Barcode** data source doesn't comply with the appropriate requirements that are specific to the bar code format. For example, when the **Barcode** data source is called to generate an [EAN-8](https://wikipedia.org/wiki/EAN-8) bar code for the provided text, an exception is thrown if the length of the text exceeds seven characters.
@@ -293,7 +293,7 @@ As described in the [Generate printable FTI forms](er-generate-printable-fti-for
 
 However, when you use the **Barcode** data source to produce bar codes, the rendering of those bar codes doesn't depend on any font. Therefore, you can easily convert documents that contain the bar codes to PDF format. The following illustration shows the preview of a generated payment check that has been [converted](electronic-reporting-destinations.md#OutputConversionToPDF) to a PDF, based on the setting of the configured ER [destination](electronic-reporting-destinations.md).
 
-![Preview of the PDF of a payment check](./media/er-barcode-data-source-cheque4.png)
+![Preview of the PDF of a payment check.](./media/er-barcode-data-source-cheque4.png)
 
 ## Limitations
 

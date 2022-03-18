@@ -3,7 +3,7 @@
 
 title: Accounts receivable home page
 description: Use Accounts receivable to track customer invoices and incoming payments.
-author: ShylaThompson
+author: roschlom
 ms.date: 08/18/2017
 ms.topic: index-page
 ms.prod: 
@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
 # ms.tgt_pltfrm: 
-ms.custom: 20671
+ms.custom: ["20671", "intro-internal"]
 ms.assetid: 1040678e-ffcb-47fb-a1bc-626db8046504
 ms.search.region: Global
 # ms.search.industry: 
@@ -41,7 +41,7 @@ to record payments in a single legal entity on behalf of the other legal entitie
 
 **Business processes**
 
-[![Business process](./media/AR-process.PNG)](./media/AR-process.PNG)
+[![Business process.](./media/AR-process.PNG)](./media/AR-process.PNG)
 
 ## Set up Accounts receivable
 

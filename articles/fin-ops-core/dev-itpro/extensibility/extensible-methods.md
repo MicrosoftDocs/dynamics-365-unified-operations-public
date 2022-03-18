@@ -12,7 +12,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 268724
 ms.assetid: 
@@ -74,11 +74,11 @@ Here are some guidelines to follow when you write extensible code:
 
     **Refactoring logic within a while loop**
 
-    ![Refactoring a while block (before)](media/ExtensibleMethods1.png)
+    ![Refactoring a while block (before).](media/ExtensibleMethods1.png)
 
     **Extensible method after refactoring**
 
-    ![Refactoring a while block (after)](media/ExtensibleMethods2.png)
+    ![Refactoring a while block (after).](media/ExtensibleMethods2.png)
 
 + **If..else statements**
 
@@ -100,11 +100,11 @@ Here are some guidelines to follow when you write extensible code:
 
     **If condition refactored out to a protected method**
 
-    ![Throw (before)](media/ExtensibleMethods3.png)
+    ![Throw (before).](media/ExtensibleMethods3.png)
 
     **Extensible method after refactoring**
 
-    ![Throw (after)](media/ExtensibleMethods4.png)
+    ![Throw (after).](media/ExtensibleMethods4.png)
 
 + **Create, read, update and delete (CRUD) statements**
 

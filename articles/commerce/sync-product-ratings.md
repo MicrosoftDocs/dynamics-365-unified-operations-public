@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic describes how to sync product ratings in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 To consume product ratings in omnichannels, such as at the point of sale (POS) and in call centers, product ratings from the ratings and reviews service must be imported into the Commerce channel database. When product ratings are made available in omnichannels, they can help customers indirectly during their interactions with sales associates.
 
 This topic describes following tasks:
@@ -63,7 +61,7 @@ To verify that the **RetailProductRating** subjob exists, follow these steps.
 
 The following illustration shows an example of the subjob details in Commerce.
 
-![Details of the RetailProductRating subjob](media/rnr-hq-ratings-sub-job.png)
+![Details of the RetailProductRating subjob.](media/rnr-hq-ratings-sub-job.png)
 
 > [!NOTE]
 > If you don't find the **RetailProductRating** subjob, you might already have run the **Sync product ratings** job and the **1040 CDX** job before you initialized the Commerce scheduler. In this case, follow these steps to run the **Full data sync** job.
@@ -87,7 +85,7 @@ To import product ratings into Commerce from the ratings and reviews service, fo
 
 The following illustration shows an example of batch job configuration in Commerce.
 
-![Configuration of the Sync product ratings batch job](media/rnr-hq-batchjob-recurrence.png)
+![Configuration of the Sync product ratings batch job.](media/rnr-hq-batchjob-recurrence.png)
 
 ## Verify that the batch job for product rating synchronization was successful
 
@@ -99,7 +97,7 @@ To verify that the **Sync product ratings** batch job was successful, follow the
 
 The following illustration shows an example of the batch job details in Commerce when the batch job is scheduled to run at two-hour intervals.
 
-![Details of the Sync product rating batch job](media/rnr-hq-batchjob-status-checking.png)
+![Details of the Sync product rating batch job.](media/rnr-hq-batchjob-status-checking.png)
 
 ## Make product ratings available at the POS
 
@@ -117,15 +115,15 @@ To turn on product ratings at the POS, follow these steps.
 
 The following illustration shows an example of the configuration of the Commerce parameters to turn on product ratings at the POS.
 
-![Configuration of Commerce parameters for product ratings at the POS](media/rnr-hq-enable-ratings-in-pos.png)
+![Configuration of Commerce parameters for product ratings at the POS.](media/rnr-hq-enable-ratings-in-pos.png)
 
 The following illustration shows an example of product ratings at the POS.
 
-![Product ratings at the POS](media/rnr-pos-catalog-ratings.png)
+![Product ratings at the POS.](media/rnr-pos-catalog-ratings.png)
 
 The following illustration shows an example of product ratings in call center channels.
 
-![Product ratings in a call center channel](media/rnr-call-center-ratings.png)
+![Product ratings in a call center channel.](media/rnr-call-center-ratings.png)
 
 ## Additional resources
 
@@ -136,6 +134,16 @@ The following illustration shows an example of product ratings in call center ch
 [Manage ratings and reviews](manage-reviews.md)
 
 [Configure ratings and reviews](configure-ratings-reviews.md)
+
+[Sync product ratings](sync-product-ratings.md)
+
+[Enable manual publishing of ratings and reviews by a moderator](manual-publish-rating-reviews.md)
+
+[Import and export ratings and reviews](import-export-reviews.md)
+
+[Configure Service-to-Service authentication](service-to-service-auth.md)
+
+[Ratings and reviews FAQ](ratings-reviews-faq.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

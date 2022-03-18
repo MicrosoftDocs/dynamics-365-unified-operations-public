@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
 # ms.tgt_pltfrm: 
-ms.custom: 256254
+ms.custom: ["256254", "intro-internal"]
 ms.assetid: e1b0a6e3-0c72-4a7d-90e1-20f870c6dbad
 ms.search.region: Global
 # ms.search.industry: 
@@ -35,13 +35,13 @@ ms.dyn365.ops.version: Version 1611
 
 The following learning map shows the major concepts and tasks that make up the framework of the Cost accounting module. Click the links in the [Quick links](#quick-links) section to learn how to use the module.
 
-[![Learning map for cost accounting](./media/cost-accounting-map.png)](./media/cost-accounting-map.png)
+[![Learning map for cost accounting.](./media/cost-accounting-map.png)](./media/cost-accounting-map.png)
 
 ## Quick links
 
 | &nbsp; | &nbsp;  |
 |------|---|
-|  [Configure base entities (eLearning)](https://mbspartner.microsoft.com/Home) (requires CustomerSource account)  |[Cost element dimensions](cost-elements.md)  |
+|  [Get started with cost accounting (Learn)](https://docs.microsoft.com/learn/modules/get-started-cost-accounting-dyn365-finance/)  |[Cost element dimensions](cost-elements.md)  |
 |  [Dimension hierarchy](dimension-hierarchy.md)  |[Define cost control units](./tasks/define-cost-control-units.md)| 
 | [Allocation bases](allocation-bases.md)|[Create and assign a cost allocation policy to a cost control unit](./tasks/create-assign-cost-allocation-policy-cost-control-unit.md) | 
 | [Manage a data source for the cost accounting ledger](./tasks/manage-data-source-cost-accounting-ledger.md) |                                           [Process and trace source data](./tasks/process-trace-source-data.md)     | 

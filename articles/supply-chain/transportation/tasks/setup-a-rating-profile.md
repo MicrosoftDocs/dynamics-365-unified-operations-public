@@ -21,10 +21,12 @@ ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: henrikan
 ms.search.validFrom: 2020-10-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Rating profiles
+
+[!include [banner](../../includes/banner.md)]
 
 A rating profile resembles a logistics contract (but not a legal contract). It's used to determine transportation tariffs for loads. 
 

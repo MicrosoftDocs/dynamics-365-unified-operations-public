@@ -183,7 +183,7 @@ From Kibana, Microsoft had to define index patterns on the **Management** tab. B
 
 Microsoft set the runtime-\* index pattern as the default pattern. When you're looking at the index patterns on the **Management** tab, click the asterisk (\*). The index pattern will then appear on the **Discover** tab.
 
-[![Runtime index pattern](./media/runtime-index-patter.png)](./media/runtime-index-patter.png)
+[![Runtime index pattern.](./media/runtime-index-patter.png)](./media/runtime-index-patter.png)
 
 Microsoft ran Kibana as a service in the same manner as Logstash, so that Kibana is started at OS startup. Unlike Logstash, kibana.bat doesn't need the path of the configuration files. Therefore, you can just install an NSSM service that points to C:\\ELK\\Kibana\\6.2.4\\bin\\kibana.bat.
 
@@ -195,12 +195,12 @@ The following sample queries can help you start probing the diagnostic data. If 
 - **Find slow database queries:** Enter **slow** in the search field to find events that have the word "slow" somewhere in the event data. If you want to be more precise, you can find events that have a task name of **AosDatabaseSlowQuery** and then enter **TaskName:AosDatabaseSlowQuery** in the search field.
 - **Find recent exceptions:** Enter **exception** in the search field to find events that have either thrown an exception, or handled an exception and logged it. In the upper-right corner of Kibana, you can select the time frame that the search should be limited to. The time frame that you set there is persisted between tabs. Therefore, the data on the **Visualize** tab will reflect the selected time frame.
 
-    [![Search time frame](./media/time-visualize.png)](./media/time-visualize.png) 
+    [![Search time frame.](./media/time-visualize.png)](./media/time-visualize.png) 
 
 - **Find events from an AOS node:** Enter **host:AOS1** in the search field to find all events from that node.
 - **Find events with proximity, in time, to another:** When you've found an event that you're interested in, click **View surrounding documents** next to the header of that event to find events that occurred at the same time. If you see events that occurred at around the same time but from different AOS nodes, you can add additional filtering to view only events from the node that you want.
 
-    [![View surrounding documents](./media/events-with-proximity.PNG)](./media/events-with-proximity.PNG)
+    [![View surrounding documents.](./media/events-with-proximity.PNG)](./media/events-with-proximity.PNG)
 
 #### Thirty-day data retention
 To keep its hard disks free from stale data, Microsoft used Curator v5.5 to clean up indexes that were older than 30 days.

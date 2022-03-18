@@ -4,7 +4,7 @@
 title: Commerce runtime (CRT) extensibility
 description: This topic describes various ways that you can extend the commerce runtime (CRT) and Retail Server.
 author: mugunthanm
-ms.date: 01/21/2021
+ms.date: 03/16/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: josaw
 # ms.tgt_pltfrm: 
 ms.custom: 104593
 ms.assetid: 1397e679-8cd5-49f3-859a-83d342fdd275
@@ -217,6 +217,10 @@ Implement the following classes for a new CRT service:
 
 For serialization to work, the new request type must implement the **\[DataContract\]** and **\[DataMember\]** attributes.
 
+> [!NOTE]
+> We recommend that for the extension code, you use ConfigureAwait(false) when executing the request.
+
+
 ### Request class
 
 ```csharp
@@ -409,7 +413,9 @@ In some cases, the request and response types are sufficient, but you must chang
 
 Additionally, registration in the **commerceRuntime.ext.Config** file must precede registration of the service that should be overridden. This registration order is important because of the way that the Managed Extensibility Framework (MEF) loads the extension dynamic-link libraries (DLLs). The types that are higher in the file take precedence.
 
-To override any CRT request, follow the pattern in the following example that overrides the out-of-box **CreateOrUpdateCustomerDataRequest** request.
+To override the handler, implement the `SingleAsyncRequestHandler<TRequest>` or **INamedRequestHandlerAsync** if the handler is executed based on the handler name.
+
+### Sample code that shows how to override CreateOrUpdateCustomerDataRequest using the SingleAsyncRequestHandler 
 
 ```csharp
 namespace Contoso
@@ -445,6 +451,49 @@ namespace Contoso
 }
 ```
 
+### Sample code on how to Override the handlers which are implemented based on handler name, implement the INamedRequestHandlerAsync: 
+
+```C#
+    public class SampleGetProductSearchResultshandler : INamedRequestHandlerAsync
+    {
+        /// <summary>
+        /// Gets the supported requests types.
+        /// </summary>
+        public IEnumerable<Type> SupportedRequestTypes
+        {
+            get
+            {
+                return new[] { typeof(GetProductSearchResultsServiceRequest), };
+            }
+        }
+
+        public string HandlerName
+        {
+            get
+            {
+                return "CommerceProductSearch";
+            }
+        }
+
+        public async Task<Response> Execute(Request request)
+        {
+            ThrowIf.Null(request, nameof(request));
+            Type requestType = request.GetType();
+            Response response = null;
+
+            if (requestType == typeof(GetProductSearchResultsServiceRequest))
+            {
+                //Implement the logic here
+            }
+
+            return response;
+        }
+    }
+
+```
+
+
+
 ## Run the base handler in the extension
 
 ### Executing the Next CRT handler - Chain of handlers
@@ -469,7 +518,7 @@ public sealed class CreateOrUpdateCustomerDataRequestHandler : SingleAsyncReques
         ThrowIf.Null(request, "request");
 
         using (var databaseContext = new DatabaseContext(request.RequestContext))
-        using (var transactionScope = new TransactionScope())
+        using (var transactionScope = new TransactionScope(TransactionScopeAsyncFlowOption.Enabled))
         {
             // Execute original functionality to save the customer.
             var response = await this.ExecuteNextAsync<SingleEntityDataServiceResponse<Customer>>(request).ConfigureAwait(false);
@@ -510,7 +559,7 @@ protected override async Task<Response> Process(SaveSalesTransactionDataRequest 
     NullResponse response;
 
     using (var databaseContext = new DatabaseContext(request.RequestContext))
-    using (var transactionScope = CreateReadCommittedTransactionScope())
+    using (var transactionScope = CreateReadCommittedTransactionScope(TransactionScopeAsyncFlowOption.Enabled))
     {
         // Execute original logic.
         var requestHandler = request.RequestContext.Runtime.GetNextAsyncRequestHandler(request.GetType(), this);
@@ -855,7 +904,7 @@ namespace Contoso
                 ThrowIf.Null(request, "request");
 
                 using (var databaseContext = new DatabaseContext(request.RequestContext))
-                using (var transactionScope = new TransactionScope())
+                using (var transactionScope = new TransactionScope(TransactionScopeAsyncFlowOption.Enabled))
                 {
                     // Execute original functionality to save the customer.
                     var requestHandler = new Microsoft.Dynamics.Commerce.Runtime.DataServices.SqlServer.CustomerSqlServerDataService();

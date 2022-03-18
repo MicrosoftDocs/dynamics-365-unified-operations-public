@@ -3,9 +3,9 @@
 
 title: Develop and establish service agreements overview
 description: Service agreements let you define the resources that are used in a typical service visit and how those resources are invoiced to the customer.
-author: ShylaThompson
+author: kamaybac
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 
+
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 

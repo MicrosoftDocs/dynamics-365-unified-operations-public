@@ -4,8 +4,8 @@
 title: India overview
 description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for India. 
 author: kfend
-ms.date: 04/06/2021
-ms.topic: article
+ms.date: 06/29/2021
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: 
+
 ms.search.region: India
 # ms.search.industry: 
 ms.author: kfend
@@ -37,21 +37,23 @@ This topic provides links to documentation resources for India.
 
 ## What's new or changed for India localization
 
-- [What's new or changed for India GST in 10.0.0 (April 2019)](apac-ind-news-letter-10-0-00.md)
-- [What's new or changed for India GST in 10.0.1 (April 2019)](apac-ind-news-letter-10-0-01.md)
-- [What's new or changed for India GST in 10.0.2 (May 2019)](apac-ind-news-letter-10-0-02.md)
-- [What's new or changed for India GST in 10.0.3 (June 2019)](apac-ind-news-letter-10-0-03.md)
-- [What's new or changed for India GST in 10.0.4 (July 2019)](apac-ind-news-letter-10-0-04.md)
-- [What's new or changed for India GST in 10.0.5 (October 2019)](apac-ind-news-letter-10-0-05.md)
-- [What's new or changed for India GST in 10.0.6 (November 2019)](apac-ind-news-letter-10-0-06.md)
-- [What's new or changed for India GST in 10.0.7 (January 2020)](apac-ind-news-letter-10-0-07.md
-- [What's new or changed for India GST in 10.0.8 (February 2020)](apac-ind-news-letter-10-0-08.md)
-- [What's new or changed for India GST in 10.0.9 (April 2020)](apac-ind-news-letter-10-0-09.md)
-- [What's new or changed for India GST in 10.0.10 (May 2020)](apac-ind-news-letter-10-0-10.md)
-- [What's new or changed for India GST in 10.0.11 (July 2020)](apac-ind-news-letter-10-0-11.md)
-- [What's new or changed for India GST in 10.0.12 (July 2020)](apac-ind-news-letter-10-0-12.md)
-- [What's new or changed for India GST in 10.0.13 (September 2020)](ind-news-letter-10-0-13.md)
+- [What's new or changed for India GST in 10.0.15 - 10.0.19](ind-news-letter-10-0-15-19.md) 
 - [What's new or changed for India GST in 10.0.14 (October 2020)](apac-ind-news-letter-10-0-14.md)
+- [What's new or changed for India GST in 10.0.13 (September 2020)](ind-news-letter-10-0-13.md)
+- [What's new or changed for India GST in 10.0.12 (July 2020)](apac-ind-news-letter-10-0-12.md)
+- [What's new or changed for India GST in 10.0.11 (July 2020)](apac-ind-news-letter-10-0-11.md)
+- [What's new or changed for India GST in 10.0.10 (May 2020)](apac-ind-news-letter-10-0-10.md)
+- [What's new or changed for India GST in 10.0.9 (April 2020)](apac-ind-news-letter-10-0-09.md)
+- [What's new or changed for India GST in 10.0.8 (February 2020)](apac-ind-news-letter-10-0-08.md)
+- [What's new or changed for India GST in 10.0.7 (January 2020)](apac-ind-news-letter-10-0-07.md)
+- [What's new or changed for India GST in 10.0.6 (November 2019)](apac-ind-news-letter-10-0-06.md)
+- [What's new or changed for India GST in 10.0.5 (October 2019)](apac-ind-news-letter-10-0-05.md)
+- [What's new or changed for India GST in 10.0.4 (July 2019)](apac-ind-news-letter-10-0-04.md)
+- [What's new or changed for India GST in 10.0.3 (June 2019)](apac-ind-news-letter-10-0-03.md)
+- [What's new or changed for India GST in 10.0.2 (May 2019)](apac-ind-news-letter-10-0-02.md)
+- [What's new or changed for India GST in 10.0.1 (April 2019)](apac-ind-news-letter-10-0-01.md)
+- [What's new or changed for India GST in 10.0.0 (April 2019)](apac-ind-news-letter-10-0-00.md)
+
   
 ## Indirect taxes
 

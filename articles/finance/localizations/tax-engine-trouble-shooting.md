@@ -3,7 +3,7 @@
 
 title: Troubleshoot GTE 
 description: This topic provides information about some of the issues that you might encounter while you use the tax engine (GTE), and explains how to fix them.
-author: yijialuan
+author: EricWangChen
 ms.date: 03/18/2020
 ms.topic: article
 ms.prod:
@@ -18,7 +18,7 @@ ms.reviewer: kfend
 # ms.tgt_pltfrm:
 ms.search.region: India
 # ms.search.industry:
-ms.author: riluan
+ms.author: wangchen
 ms.search.validFrom: 07/30/2019
 ms.dyn365.ops.version: 7.3
 ---
@@ -40,11 +40,11 @@ Familiarity with the tax engine's debug mode can help you to identify the root c
 
 To turn on debug mode, add **&debug=vs%2CconfirmExit&** to the end of the URL for Microsoft Dynamics 365 Finance.
 
-![Turning on debug mode](media/GTE-debug-mode.png)
+![Turning on debug mode.](media/GTE-debug-mode.png)
 
 After debug mode is turned on, when you open the tax document, the system generates a dump file that contains runtime details.
 
-![Dump tax engine runtime information](media/GTE-debug-mode-download-file.png)
+![Dump tax engine runtime information.](media/GTE-debug-mode-download-file.png)
 
 The structure of the dump file is shown here. The **Data model mapping mismatch** section is available only if the **Check model mapping discrepancies** option is set to **Yes**.
 
@@ -84,7 +84,7 @@ This issue can occur after you extend the GST configuration by adding or modifyi
 
 In the current design, each tax component has a set of posting profiles to handle all possible tax postings. At runtime, the tax engine picks up the first matched posting profile.
 
-![GST posting profiles](media/GST-posting-profiles.png)
+![GST posting profiles.](media/GST-posting-profiles.png)
 
 Sometimes, if you add or modify posting profiles without carefully handling the condition of each, unexpected posting profiles might be picked up at runtime.
 
@@ -94,7 +94,7 @@ When debug mode is turned on, you can find the selected posting profiles in the 
 
 To work correctly, the tax engine relies on input from taxable documents, such as sales and purchase invoices. If you extend the configuration by adding new fields, fields might be incorrectly mapped, or the writing to the data provider might be incorrect. To identify the issue, set the **Check model mapping discrepancies** option to **Yes**. You can view an additional section to show the discrepancies.
 
-![Check model mapping discrepancies option](media/GTE-model-mapping-deprepancies.png)
+![Check model mapping discrepancies option.](media/GTE-model-mapping-deprepancies.png)
 
 ### Incorrect tax component
 
@@ -116,7 +116,7 @@ To work around this issue, follow these steps.
 
 1. Add a newer version to the current sales tax hierarchies, select **Synchronize**, and then activate the new version.
 
-    ![Add a new version of the sales tax hierarchies](media/IND-GST-add-new-hierarchy.png)
+    ![Add a new version of the sales tax hierarchies.](media/IND-GST-add-new-hierarchy.png)
 
 2. On the **Maintain setoff hierarchy profiles** page, make the new version available by following the steps in [Set up a sales tax hierarchy](apac-ind-GST-set-up-activate-tax-hierarchy-tree.md).
 

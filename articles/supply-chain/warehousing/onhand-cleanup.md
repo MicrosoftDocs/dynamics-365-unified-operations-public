@@ -21,10 +21,12 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: perlynne
 ms.search.validFrom: 2020-04-03
-ms.dyn365.ops.version: Release 10.0.12
+ms.dyn365.ops.version: 10.0.12
 ---
 
 # Warehouse management on-hand entries cleanup job
+
+[!include [banner](../includes/banner.md)]
 
 The performance of queries that are used to calculate on-hand inventory is affected by the number of records in the tables that are involved. One way to help improve the performance is to reduce the number of records that the database must consider.
 
@@ -60,10 +62,7 @@ However, the performance improvement that the cleanup job provides should make u
 
 ## <a name="max-execution-time"></a>Make the Maximum execution time setting available
 
-By default, the **Maximum execution time** setting isn't available. If you want to use it, you must use [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to turn on the related feature in your system. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** *Warehouse management*
-- **Feature name:** *Maximum execution time for the warehouse management on-hand entries cleanup job*
+The **Maximum execution time** setting is only available when the *Maximum execution time for the warehouse management on-hand entries cleanup job* feature is turned on. As of Supply Chain Management version 10.0.25, this feature is turned on by default. Admins can turn this functionality on or off by searching for the *Maximum execution time for the warehouse management on-hand entries cleanup job* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

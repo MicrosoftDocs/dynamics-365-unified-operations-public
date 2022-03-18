@@ -4,7 +4,7 @@
 title: How workers use the production floor execution interface
 description: This topic describes how to use the production floor execution interface from a worker's point of view.
 author: johanhoffmann
-ms.date: 10/05/2020
+ms.date: 01/24/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
-ms.dyn365.ops.version: Release 10.0.15
+ms.dyn365.ops.version: 10.0.24
 ---
 
 # How workers use the production floor execution interface
@@ -36,7 +36,7 @@ Before workers can start to use the device, a supervisor or technical staff must
 
 After the device has been prepared, the sign-in page appears on it. This page shows information about the status of jobs for the local work cell. This information is updated periodically. On the page, workers use their badge IDs to sign. Although workers don't have to have a user account for Supply Chain Management, they must have a *time registered worker* account that they can use when they sign in.
 
-![Production floor execution interface sign-in page](media/pfei-sign-in-page.png "Production floor execution interface sign-in page")
+![Production floor execution interface sign-in page.](media/pfei-sign-in-page.png "Production floor execution interface sign-in page")
 
 The remaining sections of this topic describe how workers interact with the interface.
 
@@ -44,7 +44,7 @@ The remaining sections of this topic describe how workers interact with the inte
 
 The **All jobs** tab provides a job list that shows all the production jobs that have a status of *Not started*, *Stopped*, or *Started*. (This tab name is customizable and may be different for your system.)
 
-![All jobs tab](media/pfei-all-jobs-tab.png "All jobs tab")
+![All jobs tab.](media/pfei-all-jobs-tab.png "All jobs tab")
 
 The job list has the following columns. The numbers correspond to the numbers in the previous illustration.
 
@@ -63,7 +63,7 @@ The job list has the following columns. The numbers correspond to the numbers in
 
 The **Active jobs** tabs shows a list of all jobs that the signed-in worker has already started. (This tab name is customizable and may be different for your system.)
 
-![Active jobs tab](media/pfei-active-jobs-tab.png "Active jobs tab")
+![Active jobs tab.](media/pfei-active-jobs-tab.png "Active jobs tab")
 
 The active jobs list has the following columns:
 
@@ -76,11 +76,23 @@ The active jobs list has the following columns:
 - **Scrapped** – This column shows the quantity that has already been scrapped for a job.
 - **Remaining** – This column shows the quantity that remains to be completed for a job.
 
+## My jobs tab
+
+The **My jobs** tab lets workers easily view all unstarted and unfinished jobs that are assigned specifically to them. It's useful in companies where jobs are sometimes or always assigned to specific workers (human resources) instead of other types of resources (such as machines). 
+
+The scheduling system automatically assigns each production job to a specific resource record, and each resource record has a type (such as machine or human). When you set up an employee as a production worker, you can associate the worker account with a unique human resource record. 
+
+The **My jobs** tab lists all unstarted and unfinished jobs that have been assigned to the human resource record of the signed-in worker, if any worker is signed in. It never lists jobs that have been assigned to a machine or other type of resource, even if the signed-in worker has started to work on those jobs.
+
+To view all jobs that have been started by the signed-in worker, regardless of the type of resource that each job is assigned to, use the **Active jobs** tab. To view all unfinished jobs that match the configuration of the local job filter, regardless of the worker or start status, use the **All jobs** tab.
+
+![My jobs tab.](media/pfei-my-jobs-tab.png "My jobs tab")
+
 ## My machine tab
 
 The **My machine** tab lets workers select an asset that is connected to a machine resource within the filter set on the **All jobs** tab. The worker can then view the state and health of the selected asset by reading values for up to four selected counters and lists of recent maintenance requests and registered downtimes. The worker can also request maintenance for the selected asset and register and edit machine downtime. (This tab name is customizable and may be different for your system.)
  
-![The My machine tab](media/pfei-my-machine-tab.png "The My machine tab")
+![The My machine tab.](media/pfei-my-machine-tab.png "The My machine tab")
 
 The **My machine** tab has the following columns. The numbers correspond to the numbers in the previous illustration.
 
@@ -91,18 +103,17 @@ The **My machine** tab has the following columns. The numbers correspond to the 
 
 1. **Settings** – Select the gear icon to open a dialog box where you can choose which counters to view for the selected machine asset. Values for these counters are shown at the top of the **Asset management** tab. The **Settings** menu (shown in the following screenshot) lets you enable up to four counters. For each counter that you want to enable, use the lookup field at the top of the tile to select a counter. The lookup field lists all of the counters associated to the asset selected at the top of the **Asset management** page. Set each counter to monitor either the **Aggregated** value or the latest **Actual** value for the counter. For example, if you set a counter that tracks how many hours the machine has been running, then you should set it to **Aggregated**. If you set a counter to measure the latest updated temperature or pressure, then you should set it to **Actual**. Select **OK** to save your settings and close the dialog box.
 
-    ![The My machine tab settings](media/pfei-my-machine-tab-settings.png "The My machine tab settings")
+    ![The My machine tab settings.](media/pfei-my-machine-tab-settings.png "The My machine tab settings")
 
 1. **Request maintenance** – Select this button to open a dialog box where you can create a maintenance request. You'll be able to provide description and a note. The request will be brought to the attention of a Supply Chain Management user, who will then be able to convert the maintenance request to a maintenance work order.
 1. **Register downtime** – Select this button to open a dialog box where you can register machine downtime. You'll be able to select a reason code and enter a date/time span for the downtime. The machine downtime registration is used for calculating the efficiency of the machine asset.
 1. **View or edit** – Select this button to open a dialog box where you can edit or view existing downtime records.
 
-
 ## Starting and completing production jobs
 
 Workers start a production job by selecting a job on the **All jobs** tab and then selecting **Start job** to open the **Start job** dialog box.
 
-![Start job dialog box](media/pfei-start-job-dialog.png "Start job dialog box")
+![Start job dialog box.](media/pfei-start-job-dialog.png "Start job dialog box")
 
 Workers use the **Start job** dialog box to confirm the production quantity and then start the job. Workers can adjust the quantity by selecting the **Quantity** field and then using the numeric keyboard that appears. Workers then select **Start** to start to work on the job. The **Start job** dialog box is closed, and the job is added to the **Active jobs** tab.
 
@@ -112,13 +123,112 @@ Workers can start a job that is in any status. When a worker starts a job that h
 
 When a worker completes or partially completes a job, they can report good quantities that were produced by selecting a job on the **Active jobs** tab and then selecting **Report progress**. Then, in the **Report progress** dialog box, the worker enters the good quantity by using the numeric keyboard. The quantity is blank by default. After a quantity is entered, the worker can update the status of the job to *In progress*, *Stopped*, or *Completed*.
 
-![Report progress dialog box](media/pfei-report-progress-dialog.png "Report progress dialog box")
+![Report progress dialog box.](media/pfei-report-progress-dialog.png "Report progress dialog box")
+
+## Reporting good quantities on batch orders that have co-products and by-products
+
+Workers can use the production floor execution interface to report progress on batch orders. This reporting includes reporting on co-products and by-products.
+
+Some manufacturers, especially in process industries, use batch orders to manage their production processes. Batch orders are created from formulas, and those formulas can be defined so that they have co-products and by-products as output. When feedback about those batch orders is reported, the amount of output must be registered on the formula item, and also on the co-products and by-products.
+
+When a worker completes or partially completes a job on a batch order, they can report good or scrap quantities for each product that is defined as output for the order. Products that are defined as output for a batch order can be of the *Formula*, *Co-product*, or *By-product* type.
+
+To report good quantities on the products, a worker selects a job on the **Active jobs** tab and then selects **Report progress**.
+
+Then, in the **Report progress** dialog box, the worker can select among the products that are defined as output for the batch order to report on. The worker can select one or many products in the list, and then select **Report progress**. For each product, the quantity is blank by default, and the worker can use the numeric keyboard to enter the quantity. The worker can use the **Previous** and **Next** buttons to move between the selected products. After the quantity is entered for each product, the worker can update the status of the job to *In progress*, *Stopped*, or *Completed*.
+
+![Report co-products and by-products.](media/report-co-by-products.png "Report co-products and by-products")
+
+### Reporting on batch orders for planning items
+
+When a worker completes a job on a batch order for a planning item, they will report quantities only on co-products and by-products, because planning items don't contain an item of the *Formula* type.
+
+### Reporting co-product variation
+
+If a batch order is created from a formula version where the **Co-products variations** option is set to *Yes*, the worker can report on co-products that aren't part of the definition for the batch orders. This functionality is used in scenarios where unexpected product output can occur in the production process.
+
+In this case, the worker can specify the co-product and quantity to report by selecting **Co-products variations** in the report progress dialog box. The worker can then select among all the released products that are defined as co-products.
+
+### Reporting catch weight items
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until further notice -->
+
+Workers can use the production floor execution interface to report progress on batch orders that are created for catch weight items. Batch orders are created from formulas, which can be defined to have catch weight items as formula items, co-products, and by-products. A formula can also be defined to have formula lines for ingredients that are defined for catch weight. Catch weight items use two units of measure to track inventory: catch weight quantity and inventory quantity. For example, in the food industry, boxed meat can be defined as a catch weight item, where the catch weight quantity is used to track the number of boxes and the inventory quantity is used to track the weight of the boxes.
 
 ## Reporting scrap
 
 When a worker completes or partially completes a job, they can report scrap by selecting a job on the **Active jobs** tab and then selecting **Report scrap**. Then, in the **Report scrap** dialog box, the worker enters the scrap quantity by using the numeric keyboard. The worker also selects a reason (*None*, *Machine*, *Operator*, or *Material*).
 
-![Report scrap dialog box](media/pfei-report-scrap-dialog.png "Report scrap dialog box")
+![Report scrap dialog box.](media/pfei-report-scrap-dialog.png "Report scrap dialog box")
+
+## Adjust material consumption and make material reservations
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until further notice -->
+
+Workers can adjust material consumption for each production job. This functionality is used in scenarios where the actual quantity of materials that was consumed by a production job was more or less than the planned quantity. Therefore, it must be adjusted to keep the inventory levels current.
+
+Workers can also make reservations on the batch and serial numbers of materials. This functionality is used in scenarios where a worker must manually specify which material batch or serial numbers were consumed, to meet material traceability requirements.
+
+Workers can specify the quantity to adjust by selecting **Adjust material**. This button is available in the following locations:
+
+- In the **Report scrap** dialog box
+- In the **Report progress** dialog box
+- On the toolbar on the right
+
+### Adjust material consumption from the Report scrap and Report progress dialog boxes
+
+After a worker enters the quantity to report in the **Report progress** or **Report scrap** dialog box, the **Adjust material** button becomes available. When the user selects this button, the **Adjust material** dialog box appears. This dialog box lists the items that are planned to be consumed when the good or scrapped quantity is reported for the job.
+
+The list in the dialog box shows the following information:
+
+- **Product number** – The product master and product variant.
+- **Product name** – The name of the product.
+- **Proposal** – The estimated quantity of material that will be consumed when progress or scrap is reported for the specified quantity for the job.
+- **Consumption** – The actual quantity of material that will be consumed when progress or scrap is reported for the specified quantity for the job.
+- **Reserved** – The quantity of material that has been physical reserved in inventory.
+- **Unit** – The bill of materials (BOM) unit.
+
+The right side of the dialog box shows following information:
+
+- **Product number** – The product master and product variant.
+- **Estimated** – The estimated quantity to consume.
+- **Started** – The quantity that has been started on the production job.
+- **Remaining quantity** – Of the estimated quantity, the quantity that remains to be consumed.
+- **Released quantity** – The quantity that has been consumed.
+
+The following actions can be performed:
+
+- The worker can specify the quantity to adjust for a material by selecting **Adjust consumption**. After the quantity is confirmed, the quantity in the **Consumption** column is updated with the adjusted quantity.
+- When the worker selects **Adjust material**, a production picking list journal is created. This journal contains the same items and quantities as the **Adjust material** list.
+- When the worker adjusts a quantity in the **Adjust material** dialog box, the **Proposal** field on the corresponding journal line is updated with the same quantity. If the worker selects **Cancel** in the **Adjust material** dialog box, the picking list is deleted.
+- If the worker selects **OK**, the picking list isn't deleted. It will be posted when the job is reported in the **Report scrap** or **Report progress** dialog box.
+- If the worker selects **Cancel** in the **Report progress** or **Report scrap** dialog box, the picking list is deleted.
+
+### Adjust material from the toolbar on the right
+
+The **Adjust material** button can be configured so that it appears on the toolbar on the right. (For more information, see [Design the production floor execution interface](production-floor-execution-tabs.md).) A worker can select **Adjust material** for a production job that is in progress. In this case, the **Adjust material** dialog box appears, where the worker can make the desired adjustments. When the dialog box is opened, a production picking list that contains lines for the adjusted quantities is created for the production order. If the worker selects **Post now**, the adjustment is confirmed, and the picking list is posted. If the worker selects **Cancel**, the picking list is deleted, and no adjustment is made.
+
+### Adjust material consumption for catch weight items
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until further notice -->
+
+Workers can adjust material consumption for catch weight items. This functionality is used in scenarios where the actual quantity of a catch weight material that was consumed by a production job was more or less than the planned quantity. Therefore, it must be adjusted to keep the inventory levels current. When a worker adjusts consumption of a catch weight item, they can adjust both the catch weight quantity and the inventory quantity. For example, if a production job is planned to consume five boxes that have an estimated weight of 2 kilograms per box, the worker can adjust both the number of boxes to consume and the weight of the boxes. The system will validate that the specified weight of the boxes is within the defined minimum and maximum threshold that defined on the released product.
+
+### Reserve materials
+
+In the **Adjust material** dialog box, a worker can make and adjust material reservations by selecting **Reserve material**. The **Reserve material** dialog box that appears shows the physically available inventory for the item for each storage and tracking dimension.
+
+If the material is enabled for the advanced warehouse processes, the list shows only the physically available inventory for the production input location for the material. The production input location is defined on the resource where the production job is planned. If the item number is batch or serial number controlled, the full list of physically available batch and serial numbers is shown. To specify a quantity to reserve, the worker can select **Reserve material**. To remove an existing reservation, the worker can select **Remove reservation**.
+
+For more information about how to set up the production input location, see the following blog post: [Setting up the production input location](/archive/blogs/axmfg/deliver-picked-materials-to-the-locations-where-the-materials-are-consumed-by-operations-in-production).
+
+> [!NOTE]
+> Reservations that a worker makes in the **Reserve material** dialog box will remain when the worker selects **Cancel** in the **Report progress** or **Report scrap** dialog box.
+>
+> It isn't possible to adjust reservations for catch weight items.
 
 ## Completing a job and starting a new job
 

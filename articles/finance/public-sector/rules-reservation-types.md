@@ -38,7 +38,7 @@ Public sector entities often use general budget reservations to set aside or ear
 
 The following illustration shows how to set up the system to use general budget reservations. Each numbered step corresponds to a section of this topic.
 
-![Setup for general budget reservation](media/gbr-rules-reservations-process.jpg "Setup for general budget reservation")
+![Setup for general budget reservation.](media/gbr-rules-reservations-process.jpg "Setup for general budget reservation")
 
 ## Prerequisites
 

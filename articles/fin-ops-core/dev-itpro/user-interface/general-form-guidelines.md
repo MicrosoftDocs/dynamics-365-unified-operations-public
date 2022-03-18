@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 14701
 ms.assetid: 02d48414-6b6e-4bbd-bff9-2d33726dbd63
@@ -63,7 +63,7 @@ The verification checklist shows the steps for manually verifying that the form 
 - No UX guidelines are violated when country/region codes are applied.
 - Two fields can share a single label. Group the fields into a group, and set the **FrameType** property of the group to **GroupedFieldsLabel**.
 
-  [![Example of two fields sharing a single label](./media/generalform1.jpg)](./media/generalform1.jpg)
+  [![Example of two fields sharing a single label.](./media/generalform1.jpg)](./media/generalform1.jpg)
 
 ## Other form guidelines
 -   Use a StaticText control instead of StringEdit for multi-line read-only text. StringEdit controls are semantically incorrect for informational text, because they can never be edited. Additionally, StringEdit controls typically have a border and different layout characteristics than StaticText controls, and these differences negatively affect the user experience.
@@ -133,7 +133,7 @@ Mandatory fields are fields that the user must supply values for to guarantee da
 ## FastTabs guidelines
 -   The fields in groups should flow across the FastTab. 
 
-    [![Example of fields flowing across FastTab](./media/generalform2.jpg)](./media/generalform2.jpg)
+    [![Example of fields flowing across FastTab.](./media/generalform2.jpg)](./media/generalform2.jpg)
 
 -   The content of the first FastTab should be fully visible without scrolling. FastTabs should never horizontally scroll when the fields are displayed.
 -   The first FastTab should contain the most important fields for this entity (the fields that will be edited most often).
@@ -164,7 +164,7 @@ Mandatory fields are fields that the user must supply values for to guarantee da
 ## Check box and toggle guidelines
 Toggle buttons are typically used instead of traditional check boxes. 
 
-[![Image of a check box and a toggle](./media/checkboxtoggle.jpg)](./media/checkboxtoggle.jpg)  
+[![Image of a check box and a toggle.](./media/checkboxtoggle.jpg)](./media/checkboxtoggle.jpg)  
 
 -   Follow all [standard Microsoft guidelines for check boxes.](/windows/desktop/uxguide/ctrl-check-boxes) Specifically, observe these guidelines:
     -   By default, use toggle buttons instead of check boxes in forms. The label must follow the Microsoft guidelines for check box labels.

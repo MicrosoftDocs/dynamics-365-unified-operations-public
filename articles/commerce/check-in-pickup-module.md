@@ -31,7 +31,6 @@ ms.dyn365.ops.version: 10.0.19
 # Check-in for pickup module
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic covers the check-in for pickup module and explains how to configure it in Microsoft Dynamics 365 Commerce.
 

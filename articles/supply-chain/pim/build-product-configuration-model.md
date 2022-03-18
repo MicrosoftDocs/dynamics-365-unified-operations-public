@@ -3,9 +3,9 @@
 
 title: Product configuration overview
 description: The need to configure products to meet special requirements is becoming the rule rather than the exception, in both business-to-business and business-to-consumer relationships.
-author: cvocph
+author: t-benebo
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,11 +17,11 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 75083
+ms.custom: ["75083", "intro-internal"]
 ms.assetid: f08072b8-cb0b-43aa-9509-f5ec32caecd9
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -146,7 +146,7 @@ The API is implemented by using a set of **PCAdaptor** classes that expose the d
 
 The following API flow diagram outlines the process.  
 
-[![Flow diagram](./media/product_configuration_2.png)](./media/product_configuration_2.png)  
+[![Flow diagram.](./media/product_configuration_2.png)](./media/product_configuration_2.png)  
 
 ## Configure products
 

@@ -102,7 +102,7 @@ For information about the configuration steps, see [Setting up time and attendan
         </tbody>
         </table>
 
-        [![Time Clock States](./media/timeclockstates.png)](./media/timeclockstates.png)
+        [![Time Clock States.](./media/timeclockstates.png)](./media/timeclockstates.png)
 
 - View the confirmation message, and validate that the current activity time is correct.
 - Logbook:

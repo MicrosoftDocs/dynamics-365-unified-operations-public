@@ -60,11 +60,11 @@ Follow these steps to add a .pbix file as a Visual Studio project artifact.
 3. In the **Add New Item** dialog box, under **Operations Artifacts**, select the **Resource** template.
 4. Enter a name that will be used to reference the report in X++ metadata, and then click **Add**.
 
-    ![Add New Item dialog box](media/analytical-workspace-add.png)
+    ![Add New Item dialog box.](media/analytical-workspace-add.png)
 
 5. Find the .pbix file that contains the definition of the analytical report, and then click **Open**.
 
-    ![Select a Resource file dialog box](media/analytical-workspace-select-resource.png)
+    ![Select a Resource file dialog box.](media/analytical-workspace-select-resource.png)
 
 Now that you've added the .pbix file as a Dynamics 365 resource, you can embed the reports in workspaces and add direct links by using menu items.
 
@@ -73,7 +73,7 @@ In this example, we will extend the **Reservation management** workspace in the 
 
 The following illustration shows what the **FMClerkWorkspace** form looks like in the designer in Microsoft Visual Studio.
 
-![FMClerkWorkspace form before changes](media/analytical-workspace-definition-before.png)
+![FMClerkWorkspace form before changes.](media/analytical-workspace-definition-before.png)
 
 Follow these steps to extend the form definition for the **Reservation management** workspace.
 
@@ -98,7 +98,7 @@ Follow these steps to extend the form definition for the **Reservation managemen
 
 The following illustration shows what the design looks like after these changes are applied.
 
-![FMClerkWorkspace after changes](media/analytical-workspace-definition-after.png)
+![FMClerkWorkspace after changes.](media/analytical-workspace-definition-after.png)
 
 Now that you've added the form controls that will be used to embed the workspace report, you must define the size of the parent control so that it accommodates the layout. By default, both the **Filters Pane** page and the **Tab** page will be visible on the report. However, you can change the visibility of these controls as appropriate for the target consumer of the report.
 
@@ -148,7 +148,7 @@ Follow these steps to add business logic that initializes the report viewer cont
 
 You've now completed the task of adding business logic to initialize the embedded report viewer control. The following illustration shows what the workspace looks like after these changes are applied.
 
-![Report embedded in the workspace](media/analytical-workspace-final.png)
+![Report embedded in the workspace.](media/analytical-workspace-final.png)
 
 > [!NOTE]
 > You can access the existing operational view by using the workspace tabs below the page title.

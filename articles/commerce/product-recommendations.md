@@ -5,7 +5,7 @@ title: Product recommendations overview
 description: This topic provides general information about product recommendations. Product recommendations let customers easily and quickly find products that they want, and even products that they didn't originally intend to buy.
 author: Moonma
 ms.date: 05/26/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
 # ms.tgt_pltfrm: 
-ms.custom: 
+
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Retail
@@ -37,6 +37,9 @@ Product recommendations allow customers to easily and quickly find products that
 
 In e-Commerce, product recommendations are powered by Microsoft Recommendations machine learning technologies on a large scale.
 
+This service is an add-on to Dynamics 365 Commerce. For more information, download the latest [Microsoft Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
+
+
 ## Recommendation service
 
 The product recommendations service utilizes artificial intelligence and machine learning (AI-ML) technologies in the following way:
@@ -51,7 +54,7 @@ Product recommendations are available for the following scenarios:
 - **On any store page for browsing or landing page in e-Commerce:** If customers or store associates visit a store page, the recommendation engine can suggest products in the **New**, **Best Selling**, and **Trending** lists.
 - **On the Product details page:** If customers or store associates visit a **Product details** page, the recommendation engine suggests additional items that are also likely to be purchased. These items appear in the **People also like** list.
 - **On the Transaction page or the checkout page:** The recommendation engine suggests items, based on the whole list of items in the basket. These items appear in the **Frequently bought together** list.
-- **Personalized recommendations:** Merchandizers can provide signed-in customers a personalized **picks for you** list, in addition to new functionality that allows for existing list scenarios to be personalized based on that customer. To learn more, see [Enable personalized recommendations.](personalized-recommendations.md).
+- **Personalized recommendations:** Merchandisers can provide signed-in customers a personalized **picks for you** list, in addition to new functionality that allows for existing list scenarios to be personalized based on that customer. To learn more, see [Enable personalized recommendations.](personalized-recommendations.md).
 
 ### Types of product recommendations
 

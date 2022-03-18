@@ -22,7 +22,7 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
-ms.dyn365.ops.version: Release 10.0.18
+ms.dyn365.ops.version: 10.0.18
 ---
 
 # Containerization
@@ -112,6 +112,8 @@ To set up a container build template, follow these steps.
 
       - **Pack into all open containers** – The system evaluates whether the allocation line will fit in any container that was created during the containerization cycle.
       - **Pack into current container only** – The system only evaluates whether the allocation line will fit in the most recently created container.
+
+    For more information and examples that show how to work with container packing strategies, see [Container packing strategies](container-packing-strategy-overview.md).
 
 1. To set up rules for packing allocation lines in containers, select **Mixing Logic Breaks**. For example, you can create a rule that will allow workers to pack allocation lines for two different items in the same container. To define a mixing rule, follow these steps:
 

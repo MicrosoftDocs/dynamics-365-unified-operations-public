@@ -5,7 +5,7 @@ title: Task management overview
 description: This topic provides an overview of task management for managers and workers in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 02/10/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
 # ms.tgt_pltfrm: 
-# ms.custom: 
+
 ms.search.region: Global
 ms.search.industry: 
 ms.author: gmohanv
@@ -40,7 +40,7 @@ Store managers can use task management to assign tasks to individual workers, se
 
 The following illustration shows the conceptual architecture of task management in Commerce.
 
-![Task management conceptual architecture](media/Tasks-management-conceptual-architecture.png)
+![Task management conceptual architecture.](media/Tasks-management-conceptual-architecture.png)
 
 ## Additional resources
 

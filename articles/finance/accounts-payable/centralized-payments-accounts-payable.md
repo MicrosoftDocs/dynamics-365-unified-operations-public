@@ -2,9 +2,9 @@
 # required metadata
 
 title: Centralized payments for Accounts payable
-description: Organizations that include multiple legal entities can create and manage payments by using a single legal entity that handles all payments. Therefore, the same payments don't have to be entered in multiple legal entities. This article provides examples that show how posting for centralized payments is handled in various scenarios.
+description: Organizations that include multiple legal entities can create and manage payments by using a single legal entity that handles all payments. Therefore, the same payments don't have to be entered in multiple legal entities. This topic provides examples that show how posting for centralized payments is handled in various scenarios.
 author: abruer
-ms.date: 02/12/2017
+ms.date: 02/15/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 14341
 ms.assetid: 7bd02e32-2416-4ac6-8a60-85525267fdb7
@@ -31,9 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-Organizations that include multiple legal entities can create and manage payments by using a single legal entity that handles all payments. Therefore, the same payments don't have to be entered in multiple legal entities. This article provides examples that show how posting for centralized payments is handled in various scenarios.
-
-Organizations that include multiple legal entities can create and manage payments by using a legal entity that handles all payments. Therefore, the same payments don't have to be entered in multiple legal entities. Additionally, the organization saves time, because the payment process is streamlined.
+Organizations that include multiple legal entities can create and manage payments by using a single legal entity that handles all payments. Therefore, the same payments don't have to be entered in multiple legal entities. This topic provides examples that show how posting for centralized payments is handled in various scenarios.
 
 In a centralized payments organization, there are many legal entities for operations, and each operating legal entity manages its own vendor invoices. Payments for all the operating legal entities are generated from a single legal entity, which is known as the legal entity of the payment. During the settlement process, the applicable due-to and due-from transactions are generated. You can specify which legal entity in the organization receives the realized gain or realized loss transactions, and how cash discount transactions that are related to a cross-company payment are handled. On the centralized payment journal line, the **Account type** should be set to Vendor. The **Offset account typ**e should be set to Bank or Ledger. The bank account should be in the current company. 
 

@@ -3,7 +3,7 @@
 
 title: Calculation of tax exemption
 description: This topic describes functionality for tax exemption calculations in the point of sale (POS) and call center. 
-author: rubendel
+author: BrianShook
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
 
@@ -46,7 +46,7 @@ Microsoft Dynamics 365 Commerce version 10.0.13 and later includes a feature cal
 
 This setting is also supported for orders that are created in the call center and stores.
 
-![Setting the Calculate price inclusive tax exempt option to adjust prices in tax-exempt scenarios](media/CalcPriceInc.png)
+![Setting the Calculate price inclusive tax exempt option to adjust prices in tax-exempt scenarios.](media/CalcPriceInc.png)
 
 ## Set up price reductions for tax exemptions
 

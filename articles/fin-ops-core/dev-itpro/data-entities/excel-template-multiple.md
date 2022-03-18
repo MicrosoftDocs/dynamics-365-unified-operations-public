@@ -3,7 +3,7 @@
 
 title: Data templates with multiple worksheets
 description: This topic describes how to import data using Excel data entity templates into Finance and Operations.
-author: Sunil-Garg
+author: peakerbl
 ms.date: 01/01/2018
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
 
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Platform update 13
 
 [!include [banner](../includes/banner.md)]
 
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
 Data management in the application supports Microsoft Excel-based templates for data entities. These templates can contain one or more worksheets. Templates with multiple worksheets are often used when it is convenient to manage data in a single file and import it to multiple data entities. An example would be sites and warehouses.
 
 ## Upload a file once and map it to all entities
@@ -38,13 +41,13 @@ Let's take an example where there is one Excel file with worksheets called **Sit
 
 If you add the second entity **Warehouses** without leaving the **Add file** form, the worksheet lookup will let you select the **Warehouses** worksheet without having to upload the file again. The only reason to upload a new file would be if the **Warehouses** data was in a different file.
 
-![Multiple worksheets](./media/AddFileMultipleWorkSheets.png)
+![Multiple worksheets.](./media/AddFileMultipleWorkSheets.png)
 
 ## Fix worksheet to entity mapping
 
 The mapping of the worksheet to a data entity in the import job can be fixed from the grid. The **Worksheet** column in the grid shows the worksheets from the file that was mapped. You can choose a different worksheet from the drop-down menu. If the chosen worksheet is already mapped to an entity in the data project, the system asks you to confirm the change. We recommend that you fix all mappings in the grid.
 
-![Update worksheet mapping](./media/UpdateMappings.png)
+![Update worksheet mapping.](./media/UpdateMappings.png)
 
 ## Re-map to a new file
 

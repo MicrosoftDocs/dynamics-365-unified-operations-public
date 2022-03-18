@@ -41,7 +41,7 @@ A **Cost element** corresponds to a cost-relevant item in the chart of accounts.
 
 The following diagram illustrates the dimensions that are used in Cost accounting.
 
-[![Cost accounting dimensions](./media/cost-eos-dimensions.png)](./media/cost-eos-dimensions.png)
+[![Cost accounting dimensions.](./media/cost-eos-dimensions.png)](./media/cost-eos-dimensions.png)
 
 After the data is imported into Cost accounting, you can use it to build various perspectives that provide insights to managers at all levels of the organization. The following topics provide information about creating dimensions and importing dimension members. 
 

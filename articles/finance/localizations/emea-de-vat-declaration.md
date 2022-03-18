@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom: 
 ms.search.region: Germany
 # ms.search.industry: 
-ms.author: v-lenest
+ms.author: anasyash
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.0
 
@@ -765,7 +765,7 @@ Set up sales tax codes by following the instructions in [Sales tax codes for VAT
 
 8. Select **OK**. A new line is created on the **Electronic tax declaration log** page (**Tax** \> **Declarations** \> **Sales tax** \> **Electronic tax declaration log**).
 
-![Electronic tax declaration log page](media/1_Electronic_tax_declaration_log.png)
+![Electronic tax declaration log page.](media/1_Electronic_tax_declaration_log.png)
 
 ## Preview the XML file
 
@@ -840,16 +840,16 @@ The following table shows how to assign the sales tax reporting codes to sales t
 11. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Electronic tax declaration log**, and select the required line.
 12. On the **Electronic tax declaration log** page, select the **General** tab, and review the general information.
 
-![Electronic tax declaration log page, General tab](media/2_Electronic_tax_declaration_log.png)
+![Electronic tax declaration log page, General tab.](media/2_Electronic_tax_declaration_log.png)
 
 13. Select the **Preview** tab, and review the reported values.
 
-![Preview of the Electronic tax declaration log](media/3_Electronic_tax_declaration_log.png)
+![Preview of the Electronic tax declaration log.](media/3_Electronic_tax_declaration_log.png)
 
 14. Select the paper clip symbol in the upper-right corner.
 15. Select **Open** at the top of the page, and review the XML file.
 
-![XML file](media/4_XML_file.png)
+![XML file.](media/4_XML_file.png)
 
 ### Correction transactions
 
@@ -871,14 +871,14 @@ The following table shows how to assign the sales tax reporting codes to sales t
 7. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Electronic tax declaration log**, and select the required line.
 8. Select the **Preview** tab, and review the reported values.
 
-    ![Preview of Electronic tax declaration log](media/5_Electronic_tax_declaration_log.png)
+    ![Preview of Electronic tax declaration log.](media/5_Electronic_tax_declaration_log.png)
 
     A correction transaction is added to the declaration in codes **86** and **83**.
 
 9. Select the paper clip symbol in the upper-right corner.
 10. Select **Open** at the top of the page, and review the XML file.
 
-    ![XML file to review](media/6_XML_file.png)
+    ![XML file to review.](media/6_XML_file.png)
 
     A correction transaction is added to the declaration in codes **86** and **83**.
 
@@ -904,9 +904,9 @@ At the end of the VAT reporting period, calculate the sales tax amounts for the 
 
 If you post transactions as described in step 5 of the [example](#example) earlier in this topic, you will see the following data.
 
-![Generated German sales tax report, page 1](media/7_Sales_tax_reporting.png)
+![Generated German sales tax report, page 1.](media/7_Sales_tax_reporting.png)
 
-![Generated German sales tax report, page 2](media/8_Sales_tax_reporting.png)
+![Generated German sales tax report, page 2.](media/8_Sales_tax_reporting.png)
 
 ### Print a sales tax payment report from a sales tax payment
 

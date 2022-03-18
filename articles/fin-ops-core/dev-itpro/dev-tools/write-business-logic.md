@@ -5,7 +5,7 @@ author: pvillads
 ms.date: 02/07/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 26821
 ms.search.region: Global
 ms.author: pvillads
@@ -41,7 +41,7 @@ You can create a reference from a project to the C\# class library, or to any ot
 2.  In the **Open Project** dialog box, in the **File name** text box, type the following path, and then press **Enter**: *C:\\users\\public\\desktop\\FleetManagement*.
 3.  Select the file named FleetManagement.sln, and then click **Open**. If the solution file is not on your computer, the steps to create it are listed in [Tutorial: Create a Fleet Management solution file out of the Fleet Management models in the AOT](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/05/19/tutorial-create-a-fleet-management-solution-file-out-of-the-fleet-management-models-in-the-aot).
 
-    [![OpenProject\_LinqC](./media/openproject_linqc2.png)](./media/openproject_linqc2.png)
+    [![OpenProject\_LinqC.](./media/openproject_linqc2.png)](./media/openproject_linqc2.png)
 
 4.  Right-click the **FleetManagement** solution, and then click **Add** &gt; **New Project**. The **Add New Project** dialog is displayed.
 5.  In the left pane, click **Visual C\#**, and then in the middle pane, click **Class Library**.
@@ -50,12 +50,12 @@ You can create a reference from a project to the C\# class library, or to any ot
 8.  Verify that your project is set to “.NET Framework 4.5” in the drop-down list at the top.
 9.  Click **OK** to create the project. 
 
-    [![AddNewProject\_LinqC](./media/addnewproject_linqc2.png)](./media/addnewproject_linqc2.png)
+    [![AddNewProject\_LinqC.](./media/addnewproject_linqc2.png)](./media/addnewproject_linqc2.png)
 
 10. In **Solution Explorer**, under the DriversLicenseEvaluator project, right-click the file name Class1.cs and rename it DriversLicenseChecker.cs.
 11. Click **Yes**, when prompted to rename all references to the class. 
 
-    [![RenameClass\_LinqC](./media/renameclass_linqc1.png)](./media/renameclass_linqc1.png)
+    [![RenameClass\_LinqC.](./media/renameclass_linqc1.png)](./media/renameclass_linqc1.png)
 
 ## Write a C\# method named CheckDriversLicense
 In this section, you add C\# code for a method named CheckDriversLicense. The method must validate the driver’s license. To do this, the method must retrieve the driver’s license number, which is stored in the customer table. The method is given the RecId value for the customer record that contains the information required by the method. Your C\# code uses the LINQ provider to read from the customer table. For LINQ to work, you must first add references pointing to the LINQ assemblies. You add these references to the C\# project named DriversLicenseEvaluator.
@@ -70,7 +70,7 @@ In this section, you add C\# code for a method named CheckDriversLicense. The me
     -   Microsoft.Dynamics.AX.Framework.Linq.Data.Interface.dll
     -   Microsoft.Dynamics.AX.Framework.Linq.Data.Msil.dll
 
-    [![SelectReferences\_LinqC](./media/selectreferences_linqc1.png)](./media/selectreferences_linqc1.png)
+    [![SelectReferences\_LinqC.](./media/selectreferences_linqc1.png)](./media/selectreferences_linqc1.png)
     
 4.  You must also add the support assemblies that contain the Common type that you'll use in the code below. Click **Browse** again, and then type the following file name into the field:
     -   Microsoft.Dynamics.AX.Xpp.Support.dll
@@ -205,19 +205,19 @@ Create a reference from the X++ project named **FleetManagement Migrated** to th
 
 1.  Right-click the FleetManagement Migrated project, click **Add**, and then click **Reference**. Select the row for the DriversLicenseEvaluator project in the **Projects** references tab, and then click **OK**. 
 
-    ![AddReference\_LinqC](./media/addreference_linqc1.png)
+    ![AddReference\_LinqC.](./media/addreference_linqc1.png)
 
 2.  Under the FleetManagement Migrated project, expand the **References** node, and there you see new reference to the **DriversLicenseEvaluator** project.
 
-    ![SolutionExplorerReferences\_LinqC](./media/solutionexplorerreferences_linqc2.png)
+    ![SolutionExplorerReferences\_LinqC.](./media/solutionexplorerreferences_linqc2.png)
 
 #### Build sequence
 
 Your C\# DriversLicenseEvaluator project will be built before the FleetManagement Migrated project is built. This is because the added reference makes the Fleet project dependent on your project. The build sequence is easy to see if you right-click the FleetManagement solution, click **Project Build Order**, and then click **Dependencies**.
 
-![ProjectDependencies1\_LinqC](./media/projectdependencies1_linqc2.png)
+![ProjectDependencies1\_LinqC.](./media/projectdependencies1_linqc2.png)
 
-![ProjectDependencies2\_LinqC](./media/projectdependencies2_linqc1.png)
+![ProjectDependencies2\_LinqC.](./media/projectdependencies2_linqc1.png)
 
 ### Add your event handler to a delegate
 
@@ -261,7 +261,7 @@ In this section, you set breakpoints and run the Fleet application under the Vis
 
 For this test, we'll be debugging the C\# code that we've written. To do this, we need to inform Visual Studio to load the symbols for the assembly that contains the C\# code. Go to **Dynamics 365 &gt; Options &gt; Debugging** and verify that the **Load symbols only for items in the solution** check box is not selected. 
 
-![Options\_LinqC](./media/options_linqc2.png)
+![Options\_LinqC.](./media/options_linqc2.png)
 
 > [!TIP] 
 > If you're unable to get to the breakpoint in the C\# code, you may want to open the **Modules** window (**Debug &gt; Windows &gt; Modules**), find the C\# module and load it explicitly.
@@ -275,7 +275,7 @@ For this test, we'll be debugging the C\# code that we've written. To do this, w
 7.  Find the variable customer a few lines above your breakpoint.
 8.  Right-click the customer variable, and then click **QuickWatch**. Any long integer value proves that your LINQ query worked. 
 
-    ![QuickWatch\_LinqC](./media/quickwatch_linqc2.png)
+    ![QuickWatch\_LinqC.](./media/quickwatch_linqc2.png)
 
 9.  Press **F5** to complete the **Save** operation.
 

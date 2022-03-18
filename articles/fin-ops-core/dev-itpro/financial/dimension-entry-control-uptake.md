@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS:
 audience: Developer
 # ms.devlang:
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm:
 ms.custom: 25551
 ms.assetid: dbc5c0af-ae97-463e-b5ff-9bfd242529ff
@@ -45,12 +45,12 @@ The design goal is to encapsulate the control implementation and not require the
 -   In Dynamics AX 2012, parmAttributeSetDataSource and parmAttributeValueSetDataSource were used to set the datasource and datasource field associated with the Default Dimensions control.  Typically these were set in the init method of the form, immediately after constructing the DimensionDefaultingController instance.  All calls to parmAttributeSetDataSource and parmAttributeValueSetDataSource will be removed after upgrade.  The values from these calls are used to populate metadata on the upgraded control.  After upgrade the form should be checked to verify that it is working as expected after the removal of all these calls.
 -   Dimension Entry controls are now modelled on form design. To find a Dimension Entry control, expand the design elements or search for “DimensionEntry” on the form design. Here is what the new control will look like at design time.
 
-[![New project dialog](./media/1.png)](./media/1.png)
+[![New project dialog.](./media/1.png)](./media/1.png)
 
 ## Properties
 The custom properties for the Dimension Entry control are found under the **Controller** group.
 
-[![Properties for controller](./media/capture1.png)](./media/capture1.png)
+[![Properties for controller.](./media/capture1.png)](./media/capture1.png)
 
 #### Details on the properties
 
@@ -79,9 +79,9 @@ The table provided below gives details about each controller.
 
 Some Dimension Entry controls might not have the controller property set. The controller is inferred from the EDT of the control’s Value Data Field in these cases. A set of Dimension Entry control specific properties is provided below. These properties are for the Dimension Entry control selected in the General Approach section above (DimensionEntryControlHeader) on the PurchTable form. This Dimension Entry control is using the DefaultDimension field on the PurchTable table. The Extended Data Type property of the DefaultDimension field on PurchTable is set to LedgerDefaultDimensionValueSet (shown below). At runtime, this EDT will be mapped to the LedgerDefaultDimensionEntryController. So the DimensionEntryControlHeader control uses the LedgerDefaultDimensionEntryController in this case. The following example shows the EDTs and the controllers they are mapped to.
 
-![Add new item](./media/3.png)
+![Add new item.](./media/3.png)
 
-![Select a resource file](./media/4.png)
+![Select a resource file.](./media/4.png)
 
 #### Extended data types and the controllers they are mapped to
 

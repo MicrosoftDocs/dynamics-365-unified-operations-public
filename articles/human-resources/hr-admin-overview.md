@@ -2,10 +2,10 @@
 # required metadata
 
 title: Administration overview
-description: This Administrator Guide helps you set up, manage, and troubleshoot Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 02/03/2020
-ms.topic: article
+description: This topic provides a list of the help topics and other resources to set up, manage, and troubleshoot Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/11/2021
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,11 +17,11 @@ audience: Application User
 # ms.devlang: 
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
-ms.custom: 7521
+
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
@@ -29,11 +29,14 @@ ms.dyn365.ops.version: Human Resources
 
 # Administration overview
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-This Administrator Guide helps you set up, manage, and troubleshoot Dynamics 365 Human Resources.
+
+This topic provides a list of the help topics and other resources to set up, manage, and troubleshoot Dynamics 365 Human Resources.
 
 - [System requirements](hr-admin-system-requirements.md)
 
@@ -100,6 +103,15 @@ This Administrator Guide helps you set up, manage, and troubleshoot Dynamics 365
   - [Human Resources doesn't appear in Dynamics 365 apps](hr-admin-troubleshooting-not-in-apps.md)
   - [Reporting options](hr-admin-troubleshooting-reporting.md)
   - [Integration FAQ](hr-admin-troubleshooting-integration.md)
+
+## Additional resources
+
+### eLearning courses
+For online courses and training, check out [Dynamics 365 Human Resources on Microsoft Learn](//learn/browse/?products=dynamics-human-resources&resource_type=learning%20path).
+
+### Videos
+
+Check out the how-to videos that are now available on the [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
 
 ## See also
 

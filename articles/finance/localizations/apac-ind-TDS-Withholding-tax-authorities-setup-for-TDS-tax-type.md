@@ -7,7 +7,7 @@ author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+
 ms.technology: 
 
 # optional metadata
@@ -37,7 +37,7 @@ This topic explains how to set up Tax Deducted at Source (TDS) authorities.
 
 1. Go to **Tax \> Indirect taxes \> Withholding tax authorities**.
 
-    [![Withholding tax authorities page](./media/apac-ind-TDS-12.png)](./media/apac-ind-TDS-12.png)
+    [![Withholding tax authorities page.](./media/apac-ind-TDS-12.png)](./media/apac-ind-TDS-12.png)
 
 2. In the **Tax type** field, select **TDS** to set up withholding tax authorities for the TDS tax type.
 3. On the Action Pane, select **New** to create a line.

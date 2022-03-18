@@ -1,28 +1,12 @@
 ---
-# required metadata
-
 title: ContainerControlDesign type
 description: Container control design object has properties specific to all container controls.
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-# ms.custom:
+ms.reviewer: tfehr
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: rhaertle
-ms.search.validFrom:
-ms.dyn365.ops.version:
-
+ms.author: tfehr
 ---
 
 # ContainerControlDesign type
@@ -96,7 +80,7 @@ The background color of the container.
 Consider modifying the color attribute in the same container so that fonts overlaying the background color will appear appropriately.
 Note: if background is set to "theme", the theme color of the app will be used.
 The following colors are available: <br>
-![Image showing available colors](../../../media/colors.PNG)
+![Image showing available colors.](../../../media/colors.PNG)
 
 
 ### bindings
@@ -126,7 +110,7 @@ This will modify the color of all headers, items, labels, and icons within the c
 Consider setting the background color at the same time as necessary when setting this attribute.<br>
 Note: if color is set to "theme", the theme color of the app will be used.<br>
 The following colors are available: <br>
-![Image showing available colors](../../../media/colors.PNG)
+![Image showing available colors.](../../../media/colors.PNG)
 
 > Inherited from [Design](view-model-ipage-idesign.md).[color](view-model-ipage-idesign.md#color)
 

@@ -3,7 +3,7 @@
 
 title: Template BOMs  
 description: A template bill of materials (BOM) provides a standardized list of components for service objects that are serviced regularly. 
-author: ShylaThompson
+author: kamaybac
 ms.date: 09/19/2018
 ms.topic: article
 ms.prod: 
@@ -26,18 +26,16 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# Template BOMs    
+# Template BOMs
 
 [!include [banner](../includes/banner.md)]
-
 
 A template bill of materials (BOM) provides you with a standardized list of components for service objects that are serviced regularly. The components that are listed in the template BOM represent the individual subcomponents of the service object. By applying a template BOM to a service object, you can keep a record of the subcomponents that have been replaced on the service object.
 
 To apply a template BOM to a service agreement or a service order, you attach it to a service object relation.
 
-
 > [!NOTE]
-> <P>You can apply only one template BOM to a service object.</P>
+> You can apply only one template BOM to a service object.
 
 ## Create a template BOM
 
@@ -45,8 +43,8 @@ The following table contains information about the various methods that you can 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -74,7 +72,6 @@ The following table contains information about the various methods that you can 
 </tbody>
 </table>
 
-
 ## Apply the template BOM to a service agreement or service order
 
 You can apply a template BOM to a service agreement, a service order, or both. The service agreement usually covers a long-term relationship with a customer. The history of replacements that is recorded in the service BOM is useful data to have for the service agreement.
@@ -85,7 +82,7 @@ You can also apply a template BOM to a service order to record the history of th
 
 You can copy the history of a service BOM line from one service agreement to another service agreement. By copying the service history between service agreements, you can preserve the record of replacements for an item.
 
-**Example**
+### Example
 
 You have set up a three-year service agreement for a customer's car. During that period, the customer becomes accustomed to the good service that the company provides. Therefore, after the agreement expires, the customer wants to set up a new one. You are now able to negotiate a more favorable agreement for the company. Because the record of replaced components might be useful in the future, you copy the history of the service BOM to the new agreement.
 
@@ -103,26 +100,18 @@ You can change the way that information on the BOM line is displayed for all tem
 
 To use template BOMs, you must set up two number sequences. Set up one number sequence for the template BOM and one for the BOM history line number.
 
-
 > [!NOTE]
-> <P>Number sequences are used to allocate identifiers to records that require them. Before you can assign a number sequence to a template BOM or a BOM history line number, you must set up number sequences codes.</P>
-
+> Number sequences are used to allocate identifiers to records that require them. Before you can assign a number sequence to a template BOM or a BOM history line number, you must set up number sequences codes.
 
 ## Set up number sequences
 
-1.  On the **Number sequences** list page, create number sequences for template BOMs and the BOM history line number. 
-
-2.  Click **Service management** \> **Setup** \> **Service management parameters**.
-
-3.  Click **Number sequences**, and then select a number sequence code for the number sequence references that you created in the **Number sequences** form.
-
-4.  Close the form to save your changes.
-
+1. On the **Number sequences** list page, create number sequences for template BOMs and the BOM history line number.
+1. Select **Service management** \> **Setup** \> **Service management parameters**.
+1. Select **Number sequences**, and then select a number sequence code for the number sequence references that you created in the **Number sequences** form.
+1. Close the form to save your changes.
 
 > [!NOTE]
-> <P>The BOM history line number is used by the system to associate the transactions in the BOM history with a service agreement or service order. The number is not displayed in the user interface.</P>
-
-
+> The BOM history line number is used by the system to associate the transactions in the BOM history with a service agreement or service order. The number is not displayed in the user interface.
 
 ## See also
 
@@ -131,10 +120,5 @@ To use template BOMs, you must set up two number sequences. Set up one number se
 [Manage template BOMs on object relations](manage-template-boms-on-object-relations.md)
 
 [Modify a Service BOM](modify-service-bom.md)
-
- 
-
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

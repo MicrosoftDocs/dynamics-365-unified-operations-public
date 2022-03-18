@@ -5,7 +5,7 @@ author: RobinARH
 ms.date: 10/01/2018
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 20451
 ms.assetid: 9eb3be56-6382-43df-a247-eae0dcaf46b8
 ms.search.region: Global
@@ -60,7 +60,7 @@ If you install a model on a development environment that contains customizations
 2. In the dialog box, select the model to check for conflicts. This is the model that contains customizations to elements in the newly installed baseline model.
 3. Click **Create project**. A project is generated that contains only the elements in that model that have conflicts. 
 
-    [![AddUpdate\_MetaHotfix](./media/addupdate_metahotfix.png)](./media/addupdate_metahotfix.png)
+    [![AddUpdate\_MetaHotfix.](./media/addupdate_metahotfix.png)](./media/addupdate_metahotfix.png)
 
 4. Open the designer for the conflicting element to view and resolve conflicts by using the tools that are provided. 
 

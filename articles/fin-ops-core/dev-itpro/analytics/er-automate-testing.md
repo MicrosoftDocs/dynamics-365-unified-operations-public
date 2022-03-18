@@ -66,7 +66,7 @@ Before you can complete the tasks in this topic, you must complete the following
 - Deploy a topology that supports test automation. You must have access to the instance of this topology for the **System administrator** role. This topology must contain the demo data that will be used in this example. For more information, see [Deploy and use an environment that supports continuous build and test automation](../perf-test/continuous-build-test-automation.md).
 - To run user acceptance and integration tests automatically, you must install RSAT in the topology that you're using and configure it in the appropriate manner. For information about how to install and configure RSAT and configure it to work with Finance and Operations apps and Azure DevOps, see [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Pay attention to the prerequisites for using the tool. The following illustration shows an example of the RSAT settings. The blue rectangle encloses the parameters that specify access to Azure DevOps. The green rectangle encloses the parameters that specify access to the instance.
 
-    ![RSAT settings](media/GER-Configure.png "Screenshot of the RSAT Settings dialog box")
+    ![RSAT settings.](media/GER-Configure.png "Screenshot of the RSAT Settings dialog box")
 
 - To organize test cases in suites to help guarantee the correct execution sequence, so that you can collect logs of test executions for further reporting and investigation, you must have access to Azure DevOps from the deployed topology.
 - To complete the example in this topic, we recommend that you download [ER usage for RSAT tests](https://go.microsoft.com/fwlink/?linkid=874684). This zip file contains the following task guides:
@@ -85,7 +85,7 @@ Before you can complete the tasks in this topic, you must complete the following
     - **Payment model mapping 1611** ER model mapping configuration
     - **BACS (UK)** ER format configuration
 
-    ![Electronic reporting configurations](media/GER-Configurations.png "Screenshot of the Configurations page in Electronic reporting")
+    ![Electronic reporting configurations.](media/GER-Configurations.png "Screenshot of the Configurations page in Electronic reporting")
 
 3. Select the **GBSI** demo data company, which has a country/region context in Great Britain.
 4. Configure Accounts payable parameters:
@@ -97,7 +97,7 @@ Before you can complete the tasks in this topic, you must complete the following
         1. On the **File formats** FastTab, set the **Generic electronic Export format** option to **Yes**.
         2. In the **Export format configuration** field, select **BACS (UK)**.
 
-    ![Methods of payment page](media/GER-APParameters.png "Screenshot of the Methods of payment page")
+    ![Methods of payment page.](media/GER-APParameters.png "Screenshot of the Methods of payment page")
 
     > [!NOTE]
     > If you have the derived version of this ER format that was created to support customizations, you can select this configuration in the **Electronic** method of payment.
@@ -107,7 +107,7 @@ Before you can complete the tasks in this topic, you must complete the following
     1. Go to **Accounts payable \> Payments \> Payment journal**.
     2. Make sure that you haven't posted the payment journal.
 
-        ![Payment journal page](media/GER-APJournal.png "Screenshot of the Payment journal page")
+        ![Payment journal page.](media/GER-APJournal.png "Screenshot of the Payment journal page")
 
     3. Select **Lines**, and enter a line that has the following information.
 
@@ -120,7 +120,7 @@ Before you can complete the tasks in this topic, you must complete the following
         | Offset account      | GBSI OPER       |
         | Method of payment   | Electronic      |
 
-    ![Vendor payments page](media/GER-APJournalLines.png "Screenshot of the Vendor payments page")
+    ![Vendor payments page.](media/GER-APJournalLines.png "Screenshot of the Vendor payments page")
 
 ## Prepare the ER framework to test vendor payment processing
 
@@ -129,7 +129,7 @@ Before you can complete the tasks in this topic, you must complete the following
 1. Go to **Organization administration \> Electronic reporting \> Electronic reporting parameters**.
 2. On the **Attachments** tab, in the **Baseline** field, select **File** as the document type that the Document management (DM) framework uses to keep documents that are related to the baseline feature as DM attachments.
 
-    ![Electronic reporting parameters page](media/GER-ERParameters.png "Screenshot of the Electronic reporting parameters page")
+    ![Electronic reporting parameters page.](media/GER-ERParameters.png "Screenshot of the Electronic reporting parameters page")
 
 ### Generate baseline copies of vendor payment–related documents
 
@@ -146,7 +146,7 @@ Before you can complete the tasks in this topic, you must complete the following
     - **File** payment file in text format
     - **ERVendOutPaymControlReport** control report file in XLSX format
 
-    ![Extracted files](media/GER-APJournalProcessed.png "Screenshot of extracted file names in Windows explorer")
+    ![Extracted files.](media/GER-APJournalProcessed.png "Screenshot of extracted file names in Windows explorer")
 
 ### Turn on the ER baseline feature
 
@@ -184,7 +184,7 @@ By turning on the **Run in debug mode** parameter, you force the ER framework to
     3. Browse to select the locally saved **ERVendOutPaymControlReport** control report file in XLSX format.
     4. In the **Description** field, enter **Payment XLSX control report**.
 
-    ![Baselines for the vendor payment file and control report](media/GER-BaselineAttachments.png "Screenshot of the Configurations page with the Payment XLSX control report selected")
+    ![Baselines for the vendor payment file and control report.](media/GER-BaselineAttachments.png "Screenshot of the Configurations page with the Payment XLSX control report selected")
 
 8. Close the page.
 9. On the **Baselines** FastTab, select **New** to configure a baseline for the payment file:
@@ -203,7 +203,7 @@ By turning on the **Run in debug mode** parameter, you force the ER framework to
     4. In **File name mask** field, enter **\*.XLSX** to apply this baseline only to outputs of the **ERVendOutPaymControlReport** format component that have the **.xslx** file name extension.
     5. In the **Baseline** field, select **Payment XLSX control report** so that this baseline is used for comparison with the generated output.
 
-    ![Baselines FastTab on the Configurations page](media/GER-BaselineRules.png "Screenshot of the Baselines FastTab on the Configurations page")
+    ![Baselines FastTab on the Configurations page.](media/GER-BaselineRules.png "Screenshot of the Baselines FastTab on the Configurations page")
 
 ## Record tests to validate vendor payment processing
 
@@ -233,15 +233,15 @@ This task recording performs the following actions:
 
 1. Set the status of the processed payment line to **None**.
 
-    ![Task recording steps 3 through 4](media/GER-Recording1Review1.png "Screenshot of task recording steps 3 through 4")
+    ![Task recording steps 3 through 4.](media/GER-Recording1Review1.png "Screenshot of task recording steps 3 through 4")
 
 2. Turn on the **Run in debug mode** ER user parameter.
 
-    ![Task recording steps 9 through 10](media/GER-Recording1Review2.png "Screenshot of task recording steps 9 through 10")
+    ![Task recording steps 9 through 10.](media/GER-Recording1Review2.png "Screenshot of task recording steps 9 through 10")
 
 3. Clean up the ER debug log that contains the results of the comparison of generated files to baselines.
 
-    ![Task recording steps 13 through 15](media/GER-Recording1Review3.png "Screenshot of task recording steps 13 through 15")
+    ![Task recording steps 13 through 15.](media/GER-Recording1Review3.png "Screenshot of task recording steps 13 through 15")
 
 ### Record the steps to test vendor payment processing
 
@@ -260,21 +260,21 @@ This task recording performs the following actions:
 1. Start vendor payment processing.
 2. Select the correct runtime parameters, and turn on generation of a control report.
 
-    ![Task recording steps 3 through 8](media/GER-Recording2Review1.png "Screenshot of task recording steps 3 through 8")
+    ![Task recording steps 3 through 8.](media/GER-Recording2Review1.png "Screenshot of task recording steps 3 through 8")
 
 3. Access the ER debug log to record the results of the comparison of generated outputs to corresponding baselines.
 
     In the ER debug log, the results of the comparison appear in the **Generated text** field. The **Format component** and **Format path that caused a log entry** fields refer to the file component for which the generated output has been compared to the baseline.
 
-    ![Entries on the Electronic reporting run logs page](media/GER-ERDebugLog.png "Screenshot of entries on the Electronic reporting run logs page")
+    ![Entries on the Electronic reporting run logs page.](media/GER-ERDebugLog.png "Screenshot of entries on the Electronic reporting run logs page")
 
 4. The comparison of the current output to the baseline is recorded by using the **Validate** Task recorder option and selecting  **Current Value**.
 
-    ![Using the Validate option for comparison with the current value](media/GER-TRRecordValidation.png "Screenshot of using the Validate option for comparison with the current value")
+    ![Using the Validate option for comparison with the current value.](media/GER-TRRecordValidation.png "Screenshot of using the Validate option for comparison with the current value")
 
     The following illustration shows what the recorded validation steps look like in the task recording.
 
-    ![Task recording steps 13 and 15](media/GER-Recording2Review2.png "Screenshot of task recording steps 13 and 15")
+    ![Task recording steps 13 and 15.](media/GER-Recording2Review2.png "Screenshot of task recording steps 13 and 15")
 
 ## Add the recorded tests to Azure DevOps
 
@@ -291,7 +291,7 @@ This task recording performs the following actions:
     1. Name the test case **Test processing of vendor payments by using ER format BACS (UK)**.
     2. Attach the **Recording.xml** file from the **Process** folder that you downloaded earlier.
 
-    ![New test cases for the selected test plan](media/GER-RSAT-DevOps-Tests-Passed.png "Screenshot of the new test cases for the selected test plan")
+    ![New test cases for the selected test plan.](media/GER-RSAT-DevOps-Tests-Passed.png "Screenshot of the new test cases for the selected test plan")
 
 > [!NOTE]
 > Pay attention to the correct execution order of the tests that are added.
@@ -303,14 +303,14 @@ This task recording performs the following actions:
 1. Open the local RSAT application in the current topology.
 2. Select **Load** to load the tests that currently reside in Azure DevOps into RSAT.
 
-    ![Tests loaded into RSAT](media/GER-RSAT-RSAT-Tests-Loaded.png "Screenshot of the tests loaded into RSAT")
+    ![Tests loaded into RSAT.](media/GER-RSAT-RSAT-Tests-Loaded.png "Screenshot of the tests loaded into RSAT")
 
 ### Create automation and parameters files
 
 1. In RSAT, select the tests that you loaded from Azure DevOps.
 2. Select **New** to create RSAT automation and parameters files.
 
-    ![RSAT automation and parameters files created in RSAT](media/GER-RSAT-RSAT-Tests-Initiated.png "Screenshot of the RSAT automation and parameters files created in RSAT")
+    ![RSAT automation and parameters files created in RSAT.](media/GER-RSAT-RSAT-Tests-Initiated.png "Screenshot of the RSAT automation and parameters files created in RSAT")
 
 ### Modify the parameters files
 
@@ -322,7 +322,7 @@ This task recording performs the following actions:
 6. In the Excel workbook that is opened, on the **General** worksheet, change the company code to **GBSI**.
 7. On the **ERFormatMappingRunLogTable** worksheet, notice that cells A:3 and C:3 contain the text of the fields in the ER debug log table that are used to validate the results of the comparison of the output to the baseline. These texts will be used to evaluate ER debug log records that are created during test execution.
 
-    ![ERFormatMappingRunLogTable worksheet](media/GER-RSAT-RSAT-ExcelParameters.png "Screenshot of the ERFormatMappingRunLogTable worksheet")
+    ![ERFormatMappingRunLogTable worksheet.](media/GER-RSAT-RSAT-ExcelParameters.png "Screenshot of the ERFormatMappingRunLogTable worksheet")
 
 ## Run the tests and analyze the results
 
@@ -337,11 +337,11 @@ Notice that test cases are automatically run in the application by using a web b
 
 The results of the test execution are stored in RSAT. Notice that both tests were passed.
 
-![Tests that passed in RSAT](media/GER-RSAT-RSAT-Tests-Passed.png "Screenshot of tests that passed in RSAT")
+![Tests that passed in RSAT.](media/GER-RSAT-RSAT-Tests-Passed.png "Screenshot of tests that passed in RSAT")
 
 Notice that the results of the test execution are also sent to Azure DevOps so that you can do further analysis.
 
-![Results of test execution in Azure DevOps](media/GER-RSAT-DevOps-Tests-Added.png "Screenshot of the results of test execution in Azure DevOps")
+![Results of test execution in Azure DevOps.](media/GER-RSAT-DevOps-Tests-Added.png "Screenshot of the results of test execution in Azure DevOps")
 
 ### Simulate a situation where tests fail
 
@@ -364,15 +364,15 @@ Notice that test cases are automatically run in the application by using a web b
 
 The results of the test execution are stored in RSAT. Notice that the second test failed during the second execution.
 
-![Failed test results in RSAT](media/GER-RSAT-RSAT-Tests-Failed.png "Screenshot of the failed test results in RSAT")
+![Failed test results in RSAT.](media/GER-RSAT-RSAT-Tests-Failed.png "Screenshot of the failed test results in RSAT")
 
 Notice that the results of the test execution are also sent to Azure DevOps so that you can do further analysis.
 
-![Failed test results in Azure DevOps](media/GER-RSAT-DevOps-Tests-Failed.png "Screenshot of the failed test results in Azure DevOps")
+![Failed test results in Azure DevOps.](media/GER-RSAT-DevOps-Tests-Failed.png "Screenshot of the failed test results in Azure DevOps")
 
 You can access the status of each test. You can also access the execution log so that you analyze the reasons for any failure. In the following illustration, the execution log shows that the failure occurred because of the difference in content between the generated payment file and its baseline.
 
-![Execution log for analyzing failure in Azure DevOps](media/GER-RSAT-DevOps-Tests-Failed-Log.png "Screenshot of the execution log for analyzing failure in Azure DevOps")
+![Execution log for analyzing failure in Azure DevOps.](media/GER-RSAT-DevOps-Tests-Failed-Log.png "Screenshot of the execution log for analyzing failure in Azure DevOps")
 
 Therefore, as you've seen, the functioning of any ER format can be evaluated automatically by using RSAT as the testing platform and by using Task recorder-based test cases that use the ER baseline feature.
 

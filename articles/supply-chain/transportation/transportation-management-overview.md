@@ -3,9 +3,9 @@
 
 title: Transportation management overview
 description: This topic gives an overview of the transportation management functionality in Supply Chain Management.
-author: MarkusFogelberg
+author: Henrikan
 ms.date: 06/20/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,11 +17,11 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 30251
+ms.custom: ["30251", "intro-internal"]
 ms.assetid: d4e3550c-bca8-469c-82df-56ac0083e4ac
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mafoge
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -72,17 +72,17 @@ Transportation management lets you use your company’s transportation, and also
 ## Planning transportation in Supply Chain Management
 In Transportation management, transportation planning can be based either on orders or on the shipments that are created based on those orders. The shipments always exist at some point in time but aren't required for transportation planning. Transfer orders are part of the outbound scenario and can be planned together with sales orders. 
 
-![Load drawing](./media/Load-drawing1-1024x477.jpg)
+![Load drawing.](./media/Load-drawing1-1024x477.jpg)
 
 ## Inbound transportation
 When you order items from a vendor, and the items must be delivered to your warehouse, you might want to arrange the transport of the items yourself. You can use Supply Chain Management to plan the transportation and receipt of the inbound load. The following illustration shows the business process flow for planning transportation for an inbound load. 
 
-![Business process flow for inbound load transportation](./media/Businessprocessflowforinboundloadtransportation.jpg)
+![Business process flow for inbound load transportation.](./media/Businessprocessflowforinboundloadtransportation.jpg)
 
 ## Outbound transportation
 You can plan and process an outbound load to ship specific items from a company’s warehouse to a customer. You can use Supply Chain Management to plan the transportation and shipping of an outbound load. The following illustration shows the business process flow for planning and processing outbound loads for shipping. 
 
-![Planning and processing outbound loads](./media/Planningandprocessingoutboundloads.jpg)
+![Planning and processing outbound loads.](./media/Planningandprocessingoutboundloads.jpg)
 
 ## Load building
 Supply Chain Management provides a load building strategy that is named the Volume-based load building strategy. This strategy lets you use the maximum values that are specified for height and weight in the load template, or you can override the settings by entering new values. To use this strategy, select it in the **Load building strategy** field on the **Setup** FastTab on the **Load building workbench** page. In addition, you can add your own load-building strategies by creating a new class in the Application Object Tree (AOT).

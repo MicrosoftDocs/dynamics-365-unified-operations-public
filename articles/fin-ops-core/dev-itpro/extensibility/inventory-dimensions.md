@@ -12,7 +12,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 89563
 ms.assetid: 
@@ -63,7 +63,7 @@ The VAR provides the binding between the physical data model and logical impleme
 ## Details
 The first half of the solution is straight forward. A new class hierarchy is introduced. Each new dimension must be implemented in a new class deriving from either InventProductDimension or InventTrackingDimension. Currently, there is no support for storage dimensions. With this, ISVs can introduce new dimensions without having to change any of the logic on the InventDim table. 
 
-![InventDimensionClassHierarchy](media/InventDimensions1.png)
+![InventDimensionClassHierarchy.](media/InventDimensions1.png)
 
 To reference the new dimension in a strongly-typed fashion, the ISV introduces a table extension class to the InventDim table. The extension classes for Style, Color, and Size can be used as templates.
  
@@ -125,7 +125,7 @@ The VAR's job is to wire the ISV solutions to the available dimension fields on 
 - Extend the ProductDimensions or TrackingDimensions field groups on InventDim, and a few other tables, depending on the type of dimension.
 - Extend relations and index as needed on InventDim.
 
-![InventDimensionISVVARExtensions](media/InventDimensions4.png)
+![InventDimensionISVVARExtensions.](media/InventDimensions4.png)
 
 ## Known issues
 
@@ -148,7 +148,7 @@ The application supports many end-to-end business scenarios, for example creatin
 
 If needed, please log issues directly in GitHub, and feel free to contribute to the sample application to provide additional coverage.
  
-![InventDimensionFlavorScreenshot](media/InventDimensions5.jpg)
+![InventDimensionFlavorScreenshot.](media/InventDimensions5.jpg)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

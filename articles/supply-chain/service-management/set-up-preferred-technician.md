@@ -3,7 +3,7 @@
 
 title: Set up a preferred technician   
 description: You can select any worker as a preferred technician for a service agreement or service order. 
-author: ShylaThompson
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 

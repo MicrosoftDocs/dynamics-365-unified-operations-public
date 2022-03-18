@@ -42,7 +42,7 @@ This topic provides information about how to analyze and manage security permiss
 
 4. In the **User ID** field, select a user. If the user does not have permissions for some menu items, the **Missing permissions** field will update to **Yes**.
   
-  ![Security menu item details page](../media/Security-Menu-Item-Details.png)
+  ![Security menu item details page.](../media/Security-Menu-Item-Details.png)
 
 5. Select **Add Reference** to see a list of the security objects, including roles, duties, and privileges that grant the missing permission.
 6. Select a security object from the list:

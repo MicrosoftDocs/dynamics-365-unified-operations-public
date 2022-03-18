@@ -17,10 +17,11 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: 97423
+ms.custom: ["97423", "intro-internal"]
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
+ms.custom: intro-internal
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
@@ -58,7 +59,7 @@ Complete these steps before you deploy the application setup to your Finance or 
 
 This section complements the **Country-specific configuration of Application setup** section in the topic, [Get started with Electronic invoicing](e-invoicing-get-started.md).
 
-1. In RCS, in the **Features** section of the **Globalization feature** workspace, select the **Electronic invoicing* tile.
+1. In RCS, in the **Features** section of the **Globalization feature** workspace, select the **Electronic invoicing** tile.
 2. On the **Electronic invoicing Features** page, verify that the **Brazilian NF-e (BR)** Electronic invoicing feature is selected.
 3. On the **Versions** tab, verify that the **Draft** version is selected.
 4. On the **Setups** tab, select **Application setup** and in the **Connected application** field, select the application to where you want to deploy.

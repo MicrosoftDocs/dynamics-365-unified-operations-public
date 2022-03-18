@@ -39,13 +39,13 @@ This topic describes functional locations and assets in Asset Management. Asset 
 
 Asset Management is integrated seamlessly with several modules with other Finance and Operations apps. The following illustration shows the interfaces with other modules.
 
-![Diagram showing how Asset Management interfaces with other modules](media/01-overview-image.png)
+![Diagram showing how Asset Management interfaces with other modules.](media/01-overview-image.png)
 
 Asset Management lets you efficiently manage and perform all tasks that are related to managing and servicing many types of equipment in your company. This equipment includes machines, production equipment, and vehicles. Asset Management also supports solutions across numerous industries.
 
 The following illustration shows an overview of the main functionality that is covered by Asset Management.
 
-![Diagram showing the main functionality in Asset Management](media/02-overview-image.png)
+![Diagram showing the main functionality in Asset Management.](media/02-overview-image.png)
 
 ## Functional locations and assets
 
@@ -55,11 +55,11 @@ Asset costs always follow the location of the asset. In other words, if you inst
 
 The way that you build your hierarchy of functional locations depends on your company's requirements for maintaining internal equipment or servicing customer equipment. The following figure shows an example of functional locations that are based on geographical locations.
 
-![Diagram showing functional locations based on geographical locations](media/03-overview-image.png)
+![Diagram showing functional locations based on geographical locations.](media/03-overview-image.png)
 
 The following figure shows an example of functional locations that are based on customers.
 
-![Diagram showing functional locations based on customers](media/04-overview-image.png)
+![Diagram showing functional locations based on customers.](media/04-overview-image.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

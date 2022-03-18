@@ -59,7 +59,7 @@ To turn on the reset, follow these steps.
 1. In the **Reset receipt type** field, select **One time only** or **Yearly**.
 1. Select **OK**.
 
-![Selecting a receipt reset date](media/Enable_receipt_reset.png "Selecting a receipt reset date")
+![Selecting a receipt reset date.](media/Enable_receipt_reset.png "Selecting a receipt reset date")
 
 After you select a date, it appears in the **Next receipt number reset date** column. The reset date is applicable to all receipt transaction types. Therefore, the receipt number sequence will be reset for all receipt types.
 

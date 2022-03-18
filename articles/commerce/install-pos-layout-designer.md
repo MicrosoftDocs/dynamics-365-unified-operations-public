@@ -44,7 +44,7 @@ The graphical design interface for MPOS or Cloud POS is controlled by the till l
 5. After the installation is completed, on the **Sign in** page, enter your Commerce user name and password, and then click **Sign in** to start the designer.
 6. After your credentials are validated and the designer starts, you can design your own layout or modify the existing layout.
 
-    [![Layout in the one-click designer](./media/screenlayoutdesign_mposdownload-1024x664.png)](./media/screenlayoutdesign_mposdownload.png)
+    [![Layout in the one-click designer.](./media/screenlayoutdesign_mposdownload-1024x664.png)](./media/screenlayoutdesign_mposdownload.png)
 
 ## Troubleshoot the installation of the Layout designer
 

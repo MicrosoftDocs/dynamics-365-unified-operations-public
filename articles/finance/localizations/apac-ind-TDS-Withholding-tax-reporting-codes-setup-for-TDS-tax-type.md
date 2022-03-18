@@ -7,7 +7,7 @@ author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+
 ms.technology: 
 
 # optional metadata
@@ -37,7 +37,7 @@ Withholding tax reporting codes are used to generate Form 26Q and Form 27Q state
 
 1. Go to **Tax \> Setup \> Withholding tax \> Withholding tax reporting codes**.
 
-    [![Withholding tax reporting codes page](./media/apac-ind-TDS-16.png)](./media/apac-ind-TDS-16.png)
+    [![Withholding tax reporting codes page.](./media/apac-ind-TDS-16.png)](./media/apac-ind-TDS-16.png)
 
 2. In the **Tax type** field, select **TDS** to define withholding tax reporting codes for the TDS tax type.
 3. In the **Withholding tax component** field, select the TDS component to that you're defining the withholding tax reporting code for. The **Withholding tax component group** field shows the TDS component group that was defined for the TDS component that you're defining.

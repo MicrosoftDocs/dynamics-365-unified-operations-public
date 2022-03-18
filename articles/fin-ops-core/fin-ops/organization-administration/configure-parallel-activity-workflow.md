@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
 To configure a parallel activity, complete the following procedures in the workflow editor.
 
 A parallel activity consists of workflow branches that run at the same time.
@@ -51,7 +54,7 @@ Follow these steps to add and configure the branches of this parallel activity.
 1. Double-click the parallel activity to display the branches of the parallel activity.
 2. To add a branch, drag the **Branch** element from the **Workflow elements** area to an insertion point on the canvas. The following figure shows an insertion point.
 
-    ![Insertion point](./media/workflow_insertionpoint.gif)
+    ![Insertion point.](./media/workflow_insertionpoint.gif)
 
     > [!NOTE]
     > The order of the branches is not important because all the branches of a parallel activity run at the same time.

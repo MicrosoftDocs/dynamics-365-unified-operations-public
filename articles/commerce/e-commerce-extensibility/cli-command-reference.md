@@ -4,7 +4,7 @@
 title: CLI command reference
 description: This topic covers the command-line interface (CLI) commands that are available in the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
-ms.date: 03/09/2021
+ms.date: 03/11/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -196,6 +196,24 @@ The **--verbose** option is used to provide more verbose debugging output in the
 yarn msdyn365 clone content-block super-content-block --verbose
 ```
 
+## create-request-hook 
+
+**Usage**
+
+``` bash
+yarn msdyn365 create-request-hook <--verbose>
+```
+
+This command creates a request pipeline plug-in hook file (**src/requestHooks/initialRequest.hook.ts**). That file provides the ability to intercept the rendering request that is sent to the root/src/modules folder on the Node server.
+
+The **--verbose** option is used to provide more verbose debugging output in the command prompt window.
+
+**Example**
+
+``` bash
+yarn msdyn365 create-request-hook --verbose
+```
+
 ## pack
 
 **Usage**
@@ -239,16 +257,20 @@ yarn msdyn365 packages
 **Usage**
 
 ```bash
-yarn msdyn365 update-versions <tag>
+yarn msdyn365 update-versions <entity>
 ```
 
-This command updates the SDK versions to the latest alpha/rc/release, based on the tag. The default tag is **latest**.
+This command updates the entity (SDK, module library, or retail proxy) versions to the latest release.
 
-**Example**
+**Examples**
 
 ```bash
-yarn msdyn365 update-versions latest
+yarn msdyn365 update-versions module-library
+yarn msdyn365 update-versions retail-proxy
+yarn msdyn365 update-versions sdk
 ```
+
+The **--verbose** option is used to provide more verbose debugging output in the command prompt window.
 
 ## validate
 

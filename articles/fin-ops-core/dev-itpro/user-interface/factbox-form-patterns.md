@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer 
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 14721
 ms.assetid: b3d527bf-6b56-42fb-a135-493a62eb1435
@@ -46,11 +46,11 @@ In general, FactBoxes are used to provide “related information” for a record
 ## Wireframe
 ### Form Part FactBox Grid
 
-[![Illustration of Form Part FactBox grid](./media/factbox1.png)](./media/factbox1.png)
+[![Illustration of Form Part FactBox grid.](./media/factbox1.png)](./media/factbox1.png)
 
 ### Form Part FactBox Card
 
-[![Illustration of Form Part FactBox card](./media/factbox2.png)](./media/factbox2.png)
+[![Illustration of Form Part FactBox card.](./media/factbox2.png)](./media/factbox2.png)
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
@@ -117,13 +117,13 @@ The verification checklist shows the steps for manually verifying that the form 
 
 Form: **CustTable** &gt; **ContactsInfoPart** 
 
-[![Example of Form Part FactBox grid](./media/factbox3.png)](./media/factbox3.png)
+[![Example of Form Part FactBox grid.](./media/factbox3.png)](./media/factbox3.png)
 
 ### Form Part FactBox Card
 
 Form: **CustTable** &gt; **CustStatisticsStatistics** 
 
-[![Example of Form Part FactBox card](./media/factbox4.png)](./media/factbox4.png)
+[![Example of Form Part FactBox card.](./media/factbox4.png)](./media/factbox4.png)
 
 ## Appendix
 ### Frequently asked questions
@@ -160,7 +160,7 @@ This section will have answers to frequently asked questions that are related to
 
 **CustTable** &gt; **ContactsInfoPart** 
 
-[![Example of FactBox](./media/factbox5.png)](./media/factbox5.png)
+[![Example of FactBox.](./media/factbox5.png)](./media/factbox5.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

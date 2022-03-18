@@ -2,9 +2,9 @@
 # required metadata
 
 title: Client disconnects
-description: This article explains what to do if the customer is disconnected from the environment and doesn't know why.
-author: andreabichsel
-ms.date: 02/03/2020
+description: This topic explains what to do if the customer is disconnected from the environment.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,13 +21,16 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
 ---
 
 # Client disconnects
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

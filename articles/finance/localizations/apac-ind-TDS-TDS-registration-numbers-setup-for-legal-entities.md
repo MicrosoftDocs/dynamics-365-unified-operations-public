@@ -7,7 +7,7 @@ author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+
 ms.technology: 
 
 # optional metadata
@@ -36,7 +36,7 @@ This topic explains how to set up Tax Deducted at Source (TDS) registration numb
 
 1. Go to **Organization administration \> Organizations \> Legal entities**.
 
-    [![Legal entities page](./media/apac-ind-TDS-4.png)](./media/apac-ind-TDS-4.png)
+    [![Legal entities page.](./media/apac-ind-TDS-4.png)](./media/apac-ind-TDS-4.png)
 
 2. On the **Tax information** FastTab, in the **Permanent account number** field, enter the permanent account number (PAN) of the legal entity.
 3. In the **Circle number** field, enter the circle number of the TDS authority.
@@ -46,11 +46,11 @@ This topic explains how to set up Tax Deducted at Source (TDS) registration numb
 7. On the Action Pane, select **Registration IDs** to open the **Manage addresses** page.
 8. On the **Tax information** FastTab, select **Add** or **Edit** to open the **Manage tax information** page, where you can maintain the tax registration entry.
 
-    [![Manage addresses page](./media/apac-ind-TDS-5.png)](./media/apac-ind-TDS-5.png)
+    [![Manage addresses page.](./media/apac-ind-TDS-5.png)](./media/apac-ind-TDS-5.png)
 
 9. On the **Withholding tax** FastTab, in the **Tax Account Number (TAN)** field, enter the registration number. This number must consist of four alphabetic characters, then five numeric characters, and then one alphabetic character. Here is an example: **AXDF87645F**.
 10. In the **Name or description** field, enter a description of the withholding tax registration number.
 
-    [![Manage tax information page](./media/apac-ind-TDS-5-1.png)](./media/apac-ind-TDS-5-1.png)
+    [![Manage tax information page.](./media/apac-ind-TDS-5-1.png)](./media/apac-ind-TDS-5-1.png)
 
 11. Close the page.

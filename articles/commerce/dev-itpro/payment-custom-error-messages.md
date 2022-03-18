@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Global
@@ -121,7 +121,7 @@ namespace Contoso.Commerce.HardwareStation.PaymentSample
 
 The following illustration shows how the custom error message appears in the POS.
 
-![Custom payment error message in the POS](media/PAYMENTS/CUSTOM-ERRORS/POS-Custom-Payment-Error.jpg)
+![Custom payment error message in the POS.](media/PAYMENTS/CUSTOM-ERRORS/POS-Custom-Payment-Error.jpg)
 
 ## Create localized error messages
 
@@ -131,7 +131,7 @@ To return localized error messages from the payment connector to the POS, you mu
 1. In Microsoft Visual Studio, right-click the connector project (or a subfolder, as required), and then select **Add \> New Item**.
 2. In the new **Add New Item** dialog box, select **Visual C# Items** in the left pane and **Resource File** in the center pane.
 
-    ![Create new resource file in Visual Studio](media/PAYMENTS/CUSTOM-ERRORS/VisualStudio-New-Resource-File.jpg)
+    ![Create new resource file in Visual Studio.](media/PAYMENTS/CUSTOM-ERRORS/VisualStudio-New-Resource-File.jpg)
 
 Note that a culture-specific postfix (for example, **en-us**) is required in the file name of every resource file that you create, so that localized satellite assemblies can be generated.
 
@@ -139,16 +139,16 @@ When you've finished, the following resource files should be present in your pro
 
 Make sure that a culture-neutral resources file (**Messages.resx** in this example) is defined. This file is used as a fallback if the file for a specific culture is missing.
 
-![Resource files in Visual Studio](media/PAYMENTS/CUSTOM-ERRORS/VisualStudio-Layout-Resource-File.jpg)
+![Resource files in Visual Studio.](media/PAYMENTS/CUSTOM-ERRORS/VisualStudio-Layout-Resource-File.jpg)
 
 You must also make sure that the correct properties are set for the resource files in Visual Studio, as shown in the following illustration.
 
-![Properties of a new resource file in Visual Studio](media/PAYMENTS/CUSTOM-ERRORS/VisualStudio-Properties-Resource-File.jpg)
+![Properties of a new resource file in Visual Studio.](media/PAYMENTS/CUSTOM-ERRORS/VisualStudio-Properties-Resource-File.jpg)
 
 ### Create custom localized error messages
 Every resource file must contain every error message that you want to customize and localize. The following illustration shows an example of a resource file. Notice that the **CustomPaymentConnector_Decline** entry is referenced in the code to retrieve the appropriate message for a specific locale. Every resource file for every locale should have an identical set of localized messages.
 
-![Content of a resource file in Visual Studio](media/PAYMENTS/CUSTOM-ERRORS/VisualStudio-Content-Resource-File.jpg)
+![Content of a resource file in Visual Studio.](media/PAYMENTS/CUSTOM-ERRORS/VisualStudio-Content-Resource-File.jpg)
 
 ### Load the localized message in the connector code
 The following example shows how you can use the resource files that you created earlier in your payment connector code to load a localized message. The process consists of two steps:

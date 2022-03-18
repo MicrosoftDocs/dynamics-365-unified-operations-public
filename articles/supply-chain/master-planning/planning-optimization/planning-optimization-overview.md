@@ -5,7 +5,7 @@ title: Planning Optimization overview
 description: This topic provides an overview of the Planning Optimization functionality.
 author: ChristianRytt
 ms.date: 10/31/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 
+
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -36,7 +36,7 @@ To use Planning Optimization, you must install the Planning Optimization Add-in 
 
 The following illustration shows the advantage of running Planning Optimization during office hours.
 
-![Advantage of running Planning Optimization during office hours](media/PlanningOptimization1.png)
+![Advantage of running Planning Optimization during office hours.](media/PlanningOptimization1.png)
 
 ## Improved performance
 
@@ -65,7 +65,7 @@ If the Planning Optimization Add-in is uninstalled, all related data in the Plan
 
 The following illustration shows the data flow.
 
-![Data flow for regeneration runs](media/PlanningOptimization2.png)
+![Data flow for regeneration runs.](media/PlanningOptimization2.png)
 
 ## Related resources
 

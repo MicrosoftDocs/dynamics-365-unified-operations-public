@@ -127,7 +127,7 @@ Corrective and revision factures can be created on the basis of documents (invoi
 8.	In the **Facture** field, select the facture that requires correction or revision.
 9.	In the **Facture date** field, select the facture date.
  
-  ![Facture date field](media/revision-facture-01.png)
+  ![Facture date field.](media/revision-facture-01.png)
  
 10.	Select **Update facture** to post the corrective or revision facture.
 
@@ -175,7 +175,7 @@ This example shows the process of automatic correction distribution for an origi
 1.	Go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
 2.	Create a free text invoice that has three lines. For the first two lines, set the item sales tax group to **VAT18**. For the third, set it to **VAT10**.
 
-  ![Free text invoice lines](media/revision-facture-02.png)
+  ![Free text invoice lines.](media/revision-facture-02.png)
  
 3.	Post the invoice and update facture in the usual way.
 4.	Go to **General ledger** \> **Journal entries** \> **General journal**.
@@ -184,12 +184,12 @@ This example shows the process of automatic correction distribution for an origi
 7.	Create tax transactions in the usual way. On the **List** tab, set the **Account**, **Credit**, and **Offset account** fields.
 8.	On the **General** tab, set the **Sales tax code** field.
 
-  ![Journal voucher page](media/revision-facture-03.png)
+  ![Journal voucher page.](media/revision-facture-03.png)
  
 > [!NOTE]
 > Depending on the setup of the Ledger posting group account that you selected in the **Sales tax code** field, you must select values in the **Account** and **Offset account** fields.
 >
-> ![Journal voucher lines](media/revision-facture-04.png)
+> ![Journal voucher lines.](media/revision-facture-04.png)
  
 9.	Select **Post** to post the journal.
 10.	Select **Functions** \> **Sales book** to open the **Update facture** page. (For a purchase facture correction based on a tax transaction, select **Functions** \> **Purchase book**.).
@@ -197,13 +197,13 @@ This example shows the process of automatic correction distribution for an origi
 12.	In the **Facture** field, select the number of the facture that requires correction or revision. The Facture date field is automatically set.
 13.	In the **Distribution** field, select **Automatic**.
 
-  ![Upate facture page](media/revision-facture-05.png)
+  ![Upate facture page.](media/revision-facture-05.png)
  
 14.	In the lower part of the page, use the To facture check box to select the journal.
 15.	Select **Posting** \> **Update and print** to update and print the facture.
 16.	Go to **Accounts receivable** \> **Inquires and reports** \> **Facture**. The upper part of the **Facture journal** page shows the facture that was created. The lower part of the page shows only two lines of the facture, where the item sales tax group equals **VAT18**. Facture lines show the amounts of deviations that are calculated as a result of the distribution.
  
-  ![Facture journal](media/revision-facture-06.png)
+  ![Facture journal.](media/revision-facture-06.png)
  
 ## Revise a facture header on the Facture journal page
 Use the **Revise header** button to correct the header fields of the facture.
@@ -228,7 +228,7 @@ Use the **Revise header** button to correct the header fields of the facture.
 
 2.	Select the **Show correction history** check box to view the history of all facture corrections or revisions. The original facture and the associated corrective or revision factures are shown.
  
-  ![Facture journal corrections](media/revision-facture-07.png) 
+  ![Facture journal corrections.](media/revision-facture-07.png) 
  
  In the upper part of the page, documents are sorted by the **Date of the registration** value, in descending order.
  The **Facture** and **Revision number** fields on the left side of the grid show information about the current document. The **Facture** and **Revision number** fields on the right side of the grid show information about the original document.

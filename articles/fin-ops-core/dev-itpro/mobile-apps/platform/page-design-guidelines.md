@@ -1,30 +1,16 @@
 ---
-# required metadata
-
 title: Page design guidelines
-description: This topic provides in-depth information on designing mobile apps.
-author: robinarh
+description: This topic provides page design guidelines for mobile apps.
+author: tonyafehr
 ms.date: 04/23/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 255544
-ms.assetid: 
+ms.reviewer: tfehr
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: rhaertle
+ms.custom: intro-internal
+ms.author: tfehr
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-
 ---
 
 # Page design guidelines
@@ -64,7 +50,7 @@ If you want just a details view for an entity, it's likely that the entity is a 
 3.  Make sure that the form that is used for the details view can be filtered on a unique key field by using the filter pane.
 4.  In the designer, make sure that the list view page is linked to the details view page. Click the list, open the properties, and then set the details view page by using the lookup. 
 
-    ![Linking the list view page to the details view page](media/listtodetailsdesigner.png)
+    ![Linking the list view page to the details view page.](media/listtodetailsdesigner.png)
 
 ### How do I add a reference field that enables navigation to a related entity?
 
@@ -72,13 +58,13 @@ If you want just a details view for an entity, it's likely that the entity is a 
 2.  Make sure that the page contains the reference field from the entity that is being referenced.
 3.  Make sure that the referenced field is bound to the referenced entity’s data source, and that the referenced entity is *outer joined* (1-0..1) or *inner joined* (1-1) to the data source for the entity that contains the reference. For example, in the following illustration, FMRental is the entity that contains the reference, and FMVehicle is the referenced entity.
 
-    ![Binding the referenced field to the referenced entity’s data source](media/relatedentityform.png)
+    ![Binding the referenced field to the referenced entity’s data source.](media/relatedentityform.png)
 
 4.  Make sure that you've created a separate details view page for the entity that is being referenced.
 5.  Make sure that the reference field has been added to the page.
 6.  In the designer, make sure that the reference field has been linked to the details view for the referenced entity. For example, in the following illustration, Vehicle-details is the details view page for the referenced entity.
 
-     ![Linking the reference field to the details view for the referenced entity](media/referencepagedesigner.png)
+     ![Linking the reference field to the details view for the referenced entity.](media/referencepagedesigner.png)
 
 ### How do I add a list that contains items from a related entity to a details view page?
 

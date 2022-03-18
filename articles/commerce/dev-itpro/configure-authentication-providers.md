@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 31241
 ms.assetid: fef883f3-981a-4bba-9a41-d9dde63b0cd0
@@ -35,7 +35,7 @@ This topic provides an overview of the process for configuring a new OpenID auth
 
 The E-Commerce platform uses industry-standard [OpenID Connect](https://openid.net/connect/) as the mechanism for authentication. This article covers the pages that you use to register the OpenID providers that are used in an online store. Commerce Scale Unit uses OpenID Connect as the mechanism to support authenticated customers. OpenID Connect is a universally accepted standard that acts as simple and evolved identity provider on top of OAuth 2.0. Commerce Scale Unit can be integrated with both ready-to-use OpenID providers through the Microsoft Azure Access Control service and other independently available providers. In addition, any custom providers that support OpenID connect can be integrated and registered. The following illustration shows the step-by-step handshake that occurs between the Commerce Scale Unit and the E-Commerce front-end server to pass the authentication token for subsequent calls. 
 
-[![OpenId](./media/openid-1024x540.png)](./media/openid.png) 
+[![OpenId.](./media/openid-1024x540.png)](./media/openid.png) 
 
 Here is a walkthrough of the process for registering OpenID providers so that they can be used in Commerce Scale Unit.
 

@@ -1,11 +1,11 @@
 ---
-author: robinarh
+author: tonyafehr
 ms.topic: include
-ms.date: 3/4/2021
-ms.author: rhaertle
+ms.date: 6/28/2021
+ms.author: tfehr
 ---
 
-Finance and Operations app | Customer engagement app | Description 
+Finance and Operations app | Customer engagement app | Description
 ---|---|---
 [All products](#138) | msdyn_globalproducts |
 [Asset management asset lifecycle models](#119) | msdyn_assetlifecyclemodels |

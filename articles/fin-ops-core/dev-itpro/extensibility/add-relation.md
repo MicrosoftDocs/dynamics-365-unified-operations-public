@@ -13,7 +13,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 268724
 ms.assetid: 
@@ -43,7 +43,7 @@ In the following example, a new field, **MyInventLocationId**, is added to the I
 
 The following illustration shows the new relation.
 
-![New relation](media/AddRelationToExistingTable.jpg)
+![New relation.](media/AddRelationToExistingTable.jpg)
 
 ## Troubleshooting
 

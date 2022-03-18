@@ -3,7 +3,7 @@
 
 title: Data task automation
 description: This topic explains how you can use data task automation to repeat many types of data tasks and validate the outcome of each task.
-author: Sunil-Garg
+author: peakerbl
 ms.date: 05/06/2021
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,7 @@ audience: Developer
 ms.reviewer: sericks
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform update 16
 
@@ -26,6 +26,9 @@ ms.dyn365.ops.version: Platform update 16
 # Data task automation
 
 [!include[banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Data task automation lets you easily repeat many types of data tasks and validate the outcome of each task. Data task automation is very useful for projects that are in the implementation phase. For example, you can automate the creation and configuration of data projects. You can also configure and trigger the execution of import/export operations, such as the setup of demo data and golden configuration data, and other tasks that are related to data migration. You can also create automated testing of data entities by using task outcome validation.
 

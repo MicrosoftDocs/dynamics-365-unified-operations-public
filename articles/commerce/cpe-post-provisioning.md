@@ -4,7 +4,7 @@
 title: Configure a Dynamics 365 Commerce evaluation environment
 description: This topic explains how to configure a Microsoft Dynamics 365 Commerce evaluation environment after it's provisioned.
 author: psimolin
-ms.date: 07/16/2020
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -43,6 +43,7 @@ After your Commerce evaluation environment has been provisioned end to end, addi
 1. Select your environment in the list.
 1. In the environment information on the right, select **Log on to environment**. You will be sent to Commerce headquarters.
 1. Make sure that the **USRT** legal entity is selected in the upper-right corner.
+2. Go to **Commerce parameters > Configuration parameters** and make sure there's an entry for **ProductSearch.UseAzureSearch** set to **true**. If this entry is missing, you can add this entry and run **Channel Database > Full Sync** for the Commerce Scale unit associated with your eCommerce website.
 
 During post-provisioning activities in Commerce headquarters, make sure that the **USRT** legal entity is always selected.
 
@@ -110,6 +111,12 @@ To enable jobs in Commerce, follow these steps.
     1. On the Action Pane, on **Batch job** tab, select **Change status**.
     1. Select **Canceling**, and then select **OK**.
 
+1. If the status of the job is **Withheld**, follow these steps:
+
+    1. Select the record.
+    1. On the Action Pane, on **Batch job** tab, select **Change status**.
+    1. Select **Waiting**, and then select **OK**.
+
 Optionally, you can also set the recurrence interval to one (1) minute for the following jobs:
 
 * Process retail order email notification job
@@ -132,7 +139,7 @@ To run full data synchronization in Commerce, follow these steps in Commerce hea
 To perform test transactions on the site, you can use the following test credit card information:
 
 - **Card number:** 4111-1111-1111-1111
-- **Expiration date:** 10/20
+- **Expiration date:** 10/30
 - **Card verification value (CVV) code:** 737
 
 > [!IMPORTANT]
@@ -143,6 +150,9 @@ To perform test transactions on the site, you can use the following test credit 
 After the provisioning and configuration steps are completed, you can start to use your evaluation environment. Use the Commerce site builder URL to go to the authoring experience. Use the Commerce site URL to go to the retail customer site experience.
 
 To configure optional features for your Commerce evaluation environment, see [Configure optional features for a Commerce evaluation environment](cpe-optional-features.md).
+
+> [!NOTE]
+> Commerce evaluation environments come with a preloaded Azure Active Directory (Azure AD) business-to-consumer (B2C) tenant for demonstration purposes. Configuring your own Azure AD B2C tenant is not required for evaluation environments. However, if you are configuring the evaluation environment to use your own Azure AD B2C tenant, please make sure to add ``https://login.commerce.dynamics.com/_msdyn365/authresp`` as a reply URL in the Azure AD B2C application via the Azure Portal.
 
 ## Additional resources
 
@@ -163,6 +173,8 @@ To configure optional features for your Commerce evaluation environment, see [Co
 [Microsoft Azure portal](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce website](https://aka.ms/Dynamics365CommerceWebsite)
+
+[Set up a B2C tenant in Commerce](set-up-B2C-tenant.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

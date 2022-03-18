@@ -11,7 +11,7 @@ ms.technology:
 # ROBOTS:
 audience: Developer
 # ms.devlang:
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm:
 ms.custom: 21631
 ms.search.region: Global
@@ -65,7 +65,7 @@ Cannot access Finance and Operations environment. Verify your settings and make 
 
 If you have selected Internet Explorer as your browser, your desktop resolution should be set to 100% to run the tests successfully. To change the settings, use Windows **Display settings > Scale and layout**, as shown in the following image:
 
-![Setting screen resolution](media/screen-resolution.png)
+![Setting screen resolution.](media/screen-resolution.png)
 
 ## Test playback errors
 
@@ -98,7 +98,7 @@ You may receive the following error when running a test case, or the error detai
 <Message>Could not enumerate AX users</Message>  (InnerError)`
 ```
 
-![Enumerate error message box](media/cannot-enumerate.png)
+![Enumerate error message box.](media/cannot-enumerate.png)
 
 To resolve this error, verify the **Admin user name** specified in the RSAT settings dialog box. The **Admin user name** must be the email address of a user that belongs to the System Administrator role on the Finance and Operations test environment that RSAT is connecting to. The user account (e-mail address) must also belong to the same tenant as the test environment. For example, if your test environment's tenant is **contoso.com**, the admin user must end with **\@constoso.com**.
 

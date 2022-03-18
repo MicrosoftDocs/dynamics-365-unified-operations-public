@@ -21,7 +21,7 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-19
-ms.dyn365.ops.version: Release 10.0.7
+ms.dyn365.ops.version: 10.0.7
 ---
 
 # Putaway clusters
@@ -30,12 +30,9 @@ ms.dyn365.ops.version: Release 10.0.7
 
 Putaway clusters offer a way to pick multiple license plates at the same time and then take them for putaway in different locations. This process is often referred to as a *milk run*. Putaway clusters can be very useful for retail businesses, where license plates typically aren't full pallets of inventory. 
 
-## Turn on the cluster putaway feature
+## Turn the cluster putaway feature on or off
 
-Before you can use this feature, it must be turned on in your system. Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
-
-- **Module:** *Warehouse management*
-- **Feature name:** *Cluster putaway feature*
+To use the functionality described in this topic, the *Cluster putaway feature* feature must be turned on for your system. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *Cluster putaway feature* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Setup for the example scenario
 
@@ -289,7 +286,7 @@ Before the items in the cluster can be put away, the cluster must be closed.
 
     You have the standard options to override or pass this step.
 
-    ![Cluster putaway: Put page](media/Cluster_putaway-Put.png "Cluster putaway: Put page")
+    ![Cluster putaway: Put page.](media/Cluster_putaway-Put.png "Cluster putaway: Put page")
 
 1. Select **OK** to confirm the putaway of the cluster.
 

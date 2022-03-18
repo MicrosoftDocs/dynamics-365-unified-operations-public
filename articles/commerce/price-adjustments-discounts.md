@@ -4,7 +4,7 @@
 title: Price adjustments and discounts
 description: This article provides information about price adjustments and discounts in Dynamics 365 Commerce.
 author: scott-tucker
-ms.date: 04/09/2021
+ms.date: 06/11/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -54,9 +54,11 @@ There are many types of discounts:
 Both price adjustments and discounts can be associated with price groups. Price groups can then be associated with channels, catalogs, affiliations, and loyalty programs.
 
 > [!NOTE]
-> The mix and match discount and the threshold discount have properties named **Count non-discountable products** and **Count non-discountable products towards threshold**, respectively. If these properties are enabled, an item that is not eligible for any discount (or any further discount) can still help qualify a transaction for the discount, but the ineligible item will not get the discount. 
+> The mix and match discount and the threshold discount have properties named "Count non-discountable products" and "Count non-discountable products towards threshold", respectively. If these properties are enabled, an item that is not eligible for any discount can still help qualify a transaction for the discount, but the ineligible item will not get the discount. 
 > 
-> For example, if you create a mix and match discount with two lines, A and B, where a customer should get 10% off on both items, but there is already an exclusive 5% discount applied to item A, this would typically stop item A from being included in the discount. However, if the **Count non-discountable products** property is enabled, then item A can be used to qualify for the mix and match discount, with the 10% discount only being applied to item B. Similar logic applies to the threshold discount.
+> For example, if you create a mix and match discount with two lines, A and B, where a customer should get 10% off on both items, but item A has the configuration "Prevent all discounts" checked, then this would typically stop item A from being included in the discount. However, if the "Count non-discountable products" property is enabled, then item A can be used to qualify for the mix and match discount, but the 10% discount will only be applied to item B. Similar logic applies to the threshold discount. 
+>
+> However, the property "Count non-discountable products towards threshold" has an additional capability when compared to the "Count non-discountable products" property of the mix and match discounts. If the threshold discount is enabled, and if there is an item that has an existing discount which would prevent the item from any other discounts, then  the price paid for this item would qualify towards meeting the threshold, but this item will not get the additional discount.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

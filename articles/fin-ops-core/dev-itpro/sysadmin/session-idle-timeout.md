@@ -29,7 +29,6 @@ ms.dyn365.ops.version: Platform update 29
 # Set the session inactivity timeout
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 The session inactivity timeout setting represents the amount of time a user can be inactive before the user's session times out and closes. It only affects user browser sessions.
 

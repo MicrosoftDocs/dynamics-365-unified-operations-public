@@ -3,7 +3,7 @@
 
 title: Set up mobile devices for warehouse work
 description: This topic describes how to configure the menu items that warehouse workers use to perform work on a mobile device.
-author: MarkusFogelberg
+author: Mirzaab
 ms.date: 03/23/2020
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 29941
 ms.assetid: 6dff6313-dc6e-4f06-9c0c-dab24eefe4da
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mafoge
+ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -229,7 +229,7 @@ In addition to setting up menu items to create warehouse work, you can set up me
 </tr>
 <tr class="even">
 <td>System directed</td>
-<td>Supply Chain Management controls the type of work that is assigned to a worker and the order that the worker performs the work in. When you select this option, you can sekect <strong>System-directed work</strong> on the Action Pane to open the <strong>System-directed sorting order</strong> page, where you can set up sorting criteria for the work. The sorting criteria control the order that the worker performs the work in. You can add as many criteria as you require.</td>
+<td>Supply Chain Management controls the type of work that is assigned to a worker and the order that the worker performs the work in. When you select this option, you can select <strong>System-directed work</strong> on the Action Pane to open the <strong>System-directed sorting order</strong> page, where you can set up sorting criteria for the work. The sorting criteria control the order that the worker performs the work in. You can add as many criteria as you require.</td>
 </tr>
 <tr class="odd">
 <td>User directed</td>

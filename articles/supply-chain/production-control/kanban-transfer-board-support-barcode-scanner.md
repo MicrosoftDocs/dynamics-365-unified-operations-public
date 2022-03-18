@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Kanban transfer board support for barcode scanners
-description: The Kanban transfer board supports scanner input from a widget barcode scanner to Select, Start, Complete, and Empty a kanban job.
-author: ChristianRytt
+title: Kanban transfer board support for bar code scanners
+description: The Kanban transfer board supports scanner input from a widget bar code scanner to Select, Start, Complete, and Empty a kanban job.
+author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -21,17 +21,17 @@ ms.custom: 19391
 ms.assetid: a426f645-d59b-4c98-8d78-eba8d64a562e
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Kanban transfer board support for barcode scanners
+# Kanban transfer board support for bar code scanners
 
 [!include [banner](../includes/banner.md)]
 
-The Kanban transfer board supports scanner input from a widget barcode scanner to Select, Start, Complete, and Empty a kanban job.
+The Kanban transfer board supports scanner input from a widget bar code scanner to Select, Start, Complete, and Empty a kanban job.
 
 ## Registration modes
 

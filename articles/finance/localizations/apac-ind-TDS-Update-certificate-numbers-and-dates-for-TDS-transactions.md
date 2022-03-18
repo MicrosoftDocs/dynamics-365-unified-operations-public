@@ -7,7 +7,7 @@ author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+
 ms.technology: 
 
 # optional metadata
@@ -39,7 +39,7 @@ Follow these steps to update certificate numbers and dates for TDS transactions.
 
 1. Go to **Tax \> Declarations \> Withholding tax \> Update certificate**.
 
-    [![Update certificate page](./media/apac-ind-TDS-45.png)](./media/apac-ind-TDS-45.png)
+    [![Update certificate page.](./media/apac-ind-TDS-45.png)](./media/apac-ind-TDS-45.png)
 
 2. On the **Update certificate** page, in the **Select** section, in the **Tax type** field, select **TDS**.
 3. In the **Certificate number** field, select the customer's or vendor's TDS certificate number.
@@ -66,4 +66,4 @@ Follow these steps to update certificate numbers and dates for TDS transactions.
 8. Select **Update** to update the **Certificate number** and **Certificate date** fields for TDS transactions in the lower grid.
 10. Go to **Tax \> Indirect taxes \> Withholding tax \> Recoverable certificate**, and select **Inquiry** to view the updated transaction lines that have the new certificate numbers on the **Certificate transactions** page.
 
-    [![Certificate transactions page](./media/apac-ind-TDS-46.png)](./media/apac-ind-TDS-46.png)
+    [![Certificate transactions page.](./media/apac-ind-TDS-46.png)](./media/apac-ind-TDS-46.png)

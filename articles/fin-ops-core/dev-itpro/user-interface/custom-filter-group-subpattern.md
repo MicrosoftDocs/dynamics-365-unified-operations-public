@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 28231
 ms.assetid: 1838c10d-9172-4853-aa49-17710adf8bc1
@@ -50,11 +50,11 @@ Two patterns are described in this document. The only difference between these p
 ## Wireframes
 ### Custom Filters
 
-[![Custom filters group 1](./media/customfiltergroup1.png)](./media/customfiltergroup1.png)
+[![Custom filters group 1.](./media/customfiltergroup1.png)](./media/customfiltergroup1.png)
 
 ### Custom and Quick Filters
 
-![Custom and quick filters group 2](./media/customfiltergroup2.png)
+![Custom and quick filters group 2.](./media/customfiltergroup2.png)
 
 ## Model
 ### Custom Filters – High-level structure
@@ -111,13 +111,13 @@ The verification checklist shows the steps for manually verifying that the form 
 
 Form: **LedgerJournalTable (TopFields)** 
 
-![Custom filters group 3](./media/customfiltergroup3.png)
+![Custom filters group 3.](./media/customfiltergroup3.png)
 
 ### Custom and Quick Filters
 
 Form: **CustTable** **(CustomFilterGroup)** 
 
-[![Custom and quick filters group 4](./media/customfiltergroup4.png)](./media/customfiltergroup4.png)
+[![Custom and quick filters group 4.](./media/customfiltergroup4.png)](./media/customfiltergroup4.png)
 
 ## Resources
 ### Typically used by form patterns
@@ -155,7 +155,7 @@ This section will have answers to frequently asked questions that are related to
 
 #### AX 2012 example
 
-[![Example](./media/customfiltergroup5.png)](./media/customfiltergroup5.png)
+[![Example.](./media/customfiltergroup5.png)](./media/customfiltergroup5.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
 This article describes the architecture of the workflow system.
 
 The workflow infrastructure consists of two components that are hosted on the Application Object Server (AOS): the X++ workflow runtime and the managed workflow runtime.
@@ -49,7 +52,7 @@ Logically, the workflow infrastructure is an extension and is transparent to use
 
 The following figure shows the high-level architecture of the workflow infrastructure.
 
-[![workflow\_architecturediagram2016](./media/workflow_architecturediagram2016.png)](./media/workflow_architecturediagram2016.png)
+[![workflow\_architecturediagram2016.](./media/workflow_architecturediagram2016.png)](./media/workflow_architecturediagram2016.png)
 
 Users can use workflow pages and controls to participate in business processes.
 

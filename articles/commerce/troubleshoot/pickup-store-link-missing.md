@@ -39,7 +39,7 @@ The **Pick this up** button doesn't appear on the cart page or product details p
 
 The following illustration shows an example of a page that includes the **Pick this up** button.
 
-![Pick this up button](media/pickup-button-missing.jpg)
+![Pick this up button.](media/pickup-button-missing.jpg)
 
 ## Resolution
 

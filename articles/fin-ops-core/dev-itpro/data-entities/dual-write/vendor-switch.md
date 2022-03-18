@@ -1,37 +1,21 @@
 ---
-# required metadata
-
 title: Switch between vendor designs
 description: This topic describes how to switch vendor data integration between Finance and Operations apps and Dataverse.
 author: RamaKrishnamoorthy 
 ms.date: 09/20/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: 
 ms.author: ramasri
-ms.dyn365.ops.version: 
-ms.search.validFrom: 2019-09-20
-
+ms.search.validFrom: 2020-01-06
 ---
 
 # Switch between vendor designs
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 
 
@@ -52,14 +36,14 @@ To create new workflow processes by using the workflow process templates, follow
 
 1. Create a workflow process for the **Vendor** table, and select the **Create Vendors in Accounts Table** workflow process template. Then select **OK**. This workflow handles the vendor creation scenario for the **Account** table.
 
-    ![Create Vendors in Accounts Table workflow process](media/create_process.png)
+    ![Create Vendors in Accounts Table workflow process.](media/create_process.png)
 
 2. Create a workflow process for the **Vendor** table, and select the **Update Vendors in Accounts Table** workflow process template. Then select **OK**. This workflow handles the vendor update scenario for the **Account** table.
 3. Create a workflow process for the **Account** table, and select the **Create Vendors in Vendors Table** workflow process template.
 4. Create a workflow process for the **Account** table, and select the **Update Vendors in Vendors Table** workflow process template.
 5. You can configure the workflows as either real-time workflows or background workflows, depending on your requirements. To configure a workflow as a background workflow, select **Convert to a background workflow**.
 
-    ![Convert to a background workflow button](media/background_workflow.png)
+    ![Convert to a background workflow button.](media/background_workflow.png)
 
 6. Activate the workflows that you created for the **Account** and **Vendor** tables to start to use the **Account** table to store information for vendors of the **Organization** type.
 

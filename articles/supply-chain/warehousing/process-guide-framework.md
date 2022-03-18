@@ -3,7 +3,7 @@
 
 title: Process guide framework
 description: This topic provides information about the process guide framework for developers who are extending our warehouse mobile processes in X++.
-author: MarkusFogelberg
+author: Mirzaab
 ms.date: 11/01/2018
 ms.topic: article
 ms.prod: 
@@ -13,7 +13,7 @@ ms.technology:
 
 # ms.search.form: 
 # ROBOTS: 
-audience: Developer
+audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
@@ -21,7 +21,7 @@ ms.reviewer: kamaybac
 # ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: mafoge
+ms.author: mirzaab
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8.0
 
@@ -53,7 +53,7 @@ The container is then returned to the translator, which then serializes the XML,
 
 The following sequence diagram shows an overview of the execution flow. Note that the diagram is more of a schematic overview and is not a 1:1 representation of the actual code.
 
-![Schematic overview of the process](media/schematic-overview.png)	
+![Schematic overview of the process.](media/schematic-overview.png)	
 
 ### Reason for the redesign
 
@@ -76,7 +76,7 @@ The name for the new framework is “ProcessGuide”. This is because the aim of
 
 To identify the components, the first step is to look at the Production Start process (**WhsWorkExecuteDisplayProdStart** class). Here is a schematic of the process.
 
-![Image of schematic process](media/production-start-process-schematic.png)
+![Image of schematic process.](media/production-start-process-schematic.png)
 
 Looking at the control flow, the following are components needed:
 
@@ -89,7 +89,7 @@ Looking at the control flow, the following are components needed:
 
 In the process flow diagram above, if you begin at step 1 and start processing the data from the previous step, and then end with building a UI, data would continue to be processed in the next step. This introduces a tight coupling between consecutive steps, as a result, our new high-level schematic would look like the following:
 
-![Image of high-level schematic process](media/high-level-schematic.png)
+![Image of high-level schematic process.](media/high-level-schematic.png)
 
 The following are the key components in the redesigned process:
 
@@ -126,7 +126,7 @@ would return with a **ProcessGuidePage** object, which is a virtual representati
 
 The following sequence diagram explains this control flow. Note that this is the most common control flow, simplified for explaining the design.
 
-![Control flow simplified](media/control-flow.png)
+![Control flow simplified.](media/control-flow.png)
 
 When the user takes an action on the mobile device by clicking a button (or scanning a value – which typically triggers the default action) – the request arrives at the **createResponse()** method in the **ProcessGuideController** class through the same route. This time, however, the controller knows from the session state information which step the user is in. Accordingly, it instantiates the appropriate **ProcessGuideStep** class and invokes the execute method. The **ProcessGuideStep**, in turn, reads the action name invoked by the user and then instantiates the appropriate **ProcessGuideAction** class and calls
 **execute()**.
@@ -140,7 +140,7 @@ The other exception is the cancellation action, implemented in the **ProcessGuid
 
 After the step is completed, if the status of the step is set to **Completed**, then the controller instantiates the **ProcessGuideNavigationAgent**, which returns the name of the next step. The controller then instantiates this step and invokes the **execute()** method – and the cycle continues. Most commonly, the new step invokes the corresponding **ProcessGuidePageBuilder** to build the user interface for the next screen to be presented to the user, which is then sent back. This flow is depicted in the lower half of the sequence diagram below.
 
-![sequence diagram](media/sequence-diagram.png)
+![sequence diagram.](media/sequence-diagram.png)
 
 ## Building a new process using the ProcessGuide framework
 
@@ -150,7 +150,7 @@ The best way to explain the control flow is by using an example that exists in t
 
 Let’s start by understanding the process flow. In the first step, the user is prompted for production order ID.
 
-![Prompt for production ID](media/production-id-prompt.png)
+![Prompt for production ID.](media/production-id-prompt.png)
 
 When the user enters the production order ID, the order number is validated. Some of the validations that are run are based on whether the order is in the same warehouse as the user is signed in to, and the status of the order. If the validation fails, the user is shown an error message. If the validation succeeds, then the user is shown details of the production order and item.
 

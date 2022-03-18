@@ -34,7 +34,7 @@ To enable this functionality, turn the **Improved Recall order operation in POS*
 
 The configuration of the **Recall order** operation button allows organizations to deploy the operation with a pre-defined display.
 
-![Button grid configuration](media/recallorderbuttongrid.png)
+![Button grid configuration.](media/recallorderbuttongrid.png)
 
 The display options are as follows.
 - **None** – This option deploys the operation with no specific display. When a user opens the operation with this configuration, they will be prompted to search and find orders or choose from a pre-defined order filter.
@@ -47,11 +47,11 @@ When launching the **Recall order** operation from POS, if the display is config
 - Select **Search orders** or **Search and filter** icon on the AppBar to use the filtering mechanism to locate orders that meet the filter criteria.
 - Choose from a pre-defined filter from the **Show Orders** drop-down menu (orders to fulfill, orders to pick up, or orders to ship).
 
-![RecallOrderMainMenu](media/recallordermain.png)
+![RecallOrderMainMenu.](media/recallordermain.png)
 
 After search criteria are applied, the application will display a list of matching sales orders. It's important to note that when using the search/filter options, the orders retrieved do not have to be orders linked to the user's current store. This search process will retrieve and display any customer order that matches the search criteria, even if the order was created or set to be fulfilled by another store/channel or warehouse location.
 
-![RecallOrderDetail](media/orderrecalldetail.png)
+![RecallOrderDetail.](media/orderrecalldetail.png)
 
 A user can select an order on the list to view additional details. The information panel on the right side of the screen displays specifics on the selected order, including order line details, delivery details, and fulfillment details.
 

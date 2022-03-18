@@ -2,9 +2,9 @@
 # required metadata 
  
 title: Manage benefit expiration dates
-description: This procedure shows how you can expire or extend a benefit, and manage the enrollment dates of workers that are enrolled in the benefit. 
-author: andreabichsel
-ms.date: 02/03/2020
+description: This procedure shows how benefits can expire or be extended, and manage the enrollment dates of workers. 
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: business-process 
 ms.prod:  
 ms.technology:  
@@ -19,7 +19,7 @@ ms.search.scope: Human Resources
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
 
@@ -27,9 +27,12 @@ ms.dyn365.ops.version: Version 7.0.0, Human Resources
 
 # Manage benefit expiration dates
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This procedure shows how you can expire or extend a benefit, and manage the enrollment dates of workers that are enrolled in the benefit. The demo data company used to create this procedure is USMF.
+This procedure shows how benefits can expire or be extended, and manage the enrollment dates of workers. The demo data company used to create this procedure is USMF.
 
 ## Benefit expiration dates
 

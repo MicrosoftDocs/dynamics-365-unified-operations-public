@@ -1,24 +1,12 @@
 ---
-# required metadata
 title: PageLinkDesign type
 description: Pagelink design object type.
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-# optional metadata
-# ms.search.form:
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-# ms.custom:
+ms.reviewer: tfehr
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: rhaertle
-ms.search.validFrom:
-ms.dyn365.ops.version:
+ms.author: tfehr
 ---
 
 # PageLinkDesign type
@@ -85,7 +73,7 @@ background: string (optional)
 
 Sets the background color.
 If "theme" is used, then the color will match the app's theme color. <br>
-![Image of available background colors](../../../platform/media/colors_pagelink.PNG)
+![Image of available background colors.](../../../platform/media/colors_pagelink.PNG)
 
 
 ### bindings
@@ -115,7 +103,7 @@ This will modify the color of all headers, items, labels, and icons within the c
 Consider setting the background color at the same time as necessary when setting this attribute.<br>
 Note: if color is set to "theme", the theme color of the app will be used.<br>
 The following colors are available: <br>
-![Image of available foreground colors](../../../media/colors.PNG)
+![Image of available foreground colors.](../../../media/colors.PNG)
 
 > Inherited from [Design](view-model-ipage-idesign.md).[color](view-model-ipage-idesign.md#color)
 

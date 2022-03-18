@@ -20,7 +20,7 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.7
+ms.dyn365.ops.version: 10.0.7
 ---
 
 # Planned cross-docking
@@ -120,6 +120,9 @@ Planned cross-docking is implemented as a load posting method. After you turn on
     - **Sequence number:** *1*
     - **Supply source:** *Purchase order*
 
+> [!NOTE]
+> You can set up a query to control when a specific cross docking template is used. The query for cross docking templates has only the *InventTable* (items) table and the inner-joined *WHSInventTable* (WHS items) table. If you want to add other tables to the query, you can join them by using only *exist joins* or *not exist joins*. When you filter on the joined tables, a record from the main table is retrieved for each matching record in the joined table. If the join type is *exist join*, the search ends after the first match has been found. For example, if you join the sales order line table to the items table, the system validates and returns items for which at least one sales order line has the defined condition. Essentially, the data is fetched from the parent (items) table, not from the child (sales order line) table. Therefore, filtering by source documents such as sales order lines or customers can't be done out of the box.
+
 ### Create a work class
 
 1. Go to **Warehouse management \> Setup \> Work \> Work classes**.
@@ -154,6 +157,9 @@ Planned cross-docking is implemented as a load posting method. After you turn on
     - **Work class ID:** *CrossDock*
 
 1. Select **Save**, and confirm that the **Valid** check box is selected for the *51 Cross Dock* template.
+1. Optional: Select **Edit query** if you want to set criteria to control when and where the work template is used.
+
+    You can set up a query to control when a specific work template is used. For example, you can specify that a template can be used for work only at a specific location. If you want the cross docking work template to be applied at a specific location, you must filter on the **Start location** field, not the **Location** field, because work creation for the inbound processes (purchase, cross docking, and replenishment) starts from the put line. When work is created, the location directive sets the **Location** field to the put location. However, the pick location is stored in the **Start location** field.
 
 > [!NOTE]
 > The work class IDs for the *Pick* and *Put* work types must be the same.
@@ -321,7 +327,7 @@ Currently, both work IDs have the same target license plate. To complete the nex
 
 The following illustration shows how the completed cross-docking work might appear in Microsoft Dynamics 365 Supply Chain Management.
 
-![Cross-docking work completed](media/PlannedCrossDockingWork.png "Cross-docking work completed")
+![Cross-docking work completed.](media/PlannedCrossDockingWork.png "Cross-docking work completed")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

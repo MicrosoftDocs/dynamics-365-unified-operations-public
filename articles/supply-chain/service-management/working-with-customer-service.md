@@ -3,9 +3,9 @@
 
 title: Work with customer service overview 
 description: Customer service supports professional, service-based companies and manufacturing service organizations.
-author: ShylaThompson
+author: kamaybac
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 

@@ -3,7 +3,7 @@
 
 title: Support for external gift cards
 description: This topic provides information about the support for external gift cards that is now available in Microsoft Dynamics 365 Commerce.
-author: rubencdelgado 
+author: BrianShook 
 ms.date: 02/03/2021
 ms.topic: article
 ms.prod:
@@ -15,7 +15,7 @@ ms.technology:
  # ROBOTS: 
 audience: Developer
 ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -90,7 +90,7 @@ In the following example, if the first four digits of a card number are **6036**
 
 9. On the **Posting** FastTab, set the **Gift card item number** field to **0010**.
 
-    ![Setting the Gift card item number field](./media/05_02.png)
+    ![Setting the Gift card item number field.](./media/05_02.png)
 
 10. Select **Save**.
 11. Select **Card setup**, then select **New** to map the gift card payment method to the newly created external gift card payment method for the San Francisco store.
@@ -104,7 +104,7 @@ In the following example, if the first four digits of a card number are **6036**
 4. On the **EFT service** FastTab, in the **Connectors** grid, select the first entry, **TestConnector**.
 5. In the **Supported Tender Types** field, add **GiftCard**.
 
-    ![Adding GiftCard to the list of supported tender types](./media/01.png)
+    ![Adding GiftCard to the list of supported tender types.](./media/01.png)
 
 6. Select **Save**.
 
@@ -118,7 +118,7 @@ In the following example, if the first four digits of a card number are **6036**
 3. On the Action Pane, select **Designer** to download the button designer application.
 4. When the grid designer appears, right-click on an empty (gray) area, and then select **New button**.
 
-    ![New button](./media/07.png)
+    ![New button.](./media/07.png)
 
 5. Right-click the new button, and then select **Button properties**.
 6. Set the **Action**, **Payment type**, and **Text on button** properties according to the following matrix.
@@ -132,7 +132,7 @@ In the following example, if the first four digits of a card number are **6036**
 
     When you've finished, your button layout should resemble the following illustration.
 
-    ![Completed button layout](./media/10.png)
+    ![Completed button layout.](./media/10.png)
 
 7. Close the designer.
 8. Search for **Distribution Schedule**.
@@ -255,7 +255,7 @@ In the back office, on the **Payment services** page, configure the payment serv
 
 ## Online store payments setup
 
-To configure the payment accounts for your online store to use Adyen for external gift card processing, please refer to the [e-Commerce setup section](adyen-connector.md?tabs=8-1-3#e-commerce) of the documentation for the Adyen connector. 
+To configure the payment accounts for your online store to use Adyen for external gift card processing, see [Configure additional information for the Adyen connector](adyen-connector-setup.md#configure-additional-information-for-the-connector). 
 
 
 #### Test connector external gift card setup
@@ -282,13 +282,13 @@ The following procedure shows how to set up an external gift card by using produ
 14. Select **Product variants**, select **Variant suggestions**, and edit the gift card variant numbers as you require.
 15. Select **Create**.
 
-    ![External gift card product variants](media/VariantSuggestions.png)
+    ![External gift card product variants.](media/VariantSuggestions.png)
 
 16. Select **Release products**, select **Next** two times, select a company (for example, **USRT**), and then select **Next**. Finally select **Next** to release the product master.
 17. Search for **Modes of delivery** to open the **Modes of delivery** page.
 18. Select the **Electronic** mode of delivery, and add the **Email** gift card variant. Make sure that applicable call centers and online channels are included.
 
-    ![Electronic mode of delivery](media/EmailMoD.png)
+    ![Electronic mode of delivery.](media/EmailMoD.png)
 
 19. Select **Save**.
 20. Search for **Process delivery modes** to open the **Process delivery modes** dialog box.
@@ -382,7 +382,7 @@ For gift cards that are issued via email, the value of the **Retail email notifi
 3. Select the external gift card payment method, and enter the number and PIN, if applicable. For the test connector, **61234** can be used as the number, and the PIN isn't validated.
 4. Use a percentage amount or a payment amount to define the payment amount.
 
-    ![External gift card payment in the call center](media/PayinCallCenter.png)
+    ![External gift card payment in the call center.](media/PayinCallCenter.png)
 
 5. Select **OK**.
 6. Select **Submit** to complete the order.

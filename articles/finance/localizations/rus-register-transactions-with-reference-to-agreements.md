@@ -48,7 +48,7 @@ As an example, the following procedure shows how to register a payment to a vend
 
 The **Document title** field is automatically set to the title of the agreement.
 
-![Vendor payments page](media/10_Vendor_payments.png)
+![Vendor payments page.](media/10_Vendor_payments.png)
 
 The transaction for the counterparty will have a link to the agreement number.
 
@@ -70,7 +70,7 @@ You can also register accounts receivable or accounts payable on the **Free text
 
     The **Document title** field is automatically set to the title of the agreement.
 
-    ![Free text invoice page](media/11_Free_text_invoice.png)
+    ![Free text invoice page.](media/11_Free_text_invoice.png)
 
 3. Specify other details, and post the invoice.
 
@@ -82,7 +82,7 @@ You can also register accounts receivable or accounts payable on the **Free text
 
     The **Document title** field is automatically set to the title of the agreement.
 
-    ![Journal voucher page](media/12_Journal_voucher.png)
+    ![Journal voucher page.](media/12_Journal_voucher.png)
 
 4. Specify other details, and then, on the Action Pane, select **Post** to post the transaction.
 
@@ -95,7 +95,7 @@ For more information about dimension control for settlements, see [Set up dimens
 1. Go to **Accounts receivable \> Customers \> All customers**.
 2. On the **Collect** tab, in the **Settle** section, select **Facture and payment settlement**.
 
-    ![Facture and payment settlement page](media/13_Facture_and_payment_settlement.png)
+    ![Facture and payment settlement page.](media/13_Facture_and_payment_settlement.png)
 
 3. In the upper and lower panes, set the following options to select transactions:
 

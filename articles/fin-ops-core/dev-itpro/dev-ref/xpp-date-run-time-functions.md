@@ -3,12 +3,10 @@ title: X++ date runtime functions
 description: This topic describes the date run-time functions.
 author: RobinARH
 ms.date: 11/03/2017
-ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
-ms.custom: 31341
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -182,7 +180,7 @@ endMth(0221989); //Returns the date 2821989.
 ```
 
 ## mkDate
-Creates a date, based on three integers that indicate the day, month, and year, respectively.
+Creates a date, based on three integers that indicate the day, month, and year, respectively. "Shorthand" values for the year argument, for example, "y", are not supported.
 
 ```xpp
 date mkDate(int day, int month, int year)

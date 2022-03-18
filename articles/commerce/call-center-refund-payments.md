@@ -38,11 +38,14 @@ Call center logic determines the payment method for the refund payment line, bas
 
 The call center uses the payment method of the original order to determine the payment method that should be applied to a return order. Here is how this process works for the following original payment methods:
 
-- **Normal** (cash) or **Check** – When a return order that is created references an original order that was paid for by using the normal (cash) or check payment type, the call center application references configurations on the **Call center refund methods** page. This page enables organizations to define, by order currency, how refunds are issued to customers for orders that were originally paid for by using the normal or check payment type. The **Call center refund methods** page also enables organizations to select whether a system-generated refund check is sent to the customer, or whether a customer account credit is created against the internal customer account balance. In these scenarios, call center logic references the currency of the return order and then uses the **Retail payment method** value for that currency to create a refund payment line on the return sales order. Later, an accounts receivable (AR) customer payment journal that uses the mapped AR payment method is linked to the currency.
+- **Normal** (cash) or **Check** – When a return order that is created references an original order that was paid for by using the normal (cash) or check payment type, the call center application references configurations on the **Call center refund methods** page. This page enables organizations to define, by order currency, how refunds are issued to customers for orders that were originally paid for by using the normal or check payment type. The **Call center refund methods** page also enables organizations to select if a system-generated refund check should be sent to the customer. In these scenarios, call center logic references the currency of the return order and then uses the **Retail payment method** value for that currency to create a refund payment line on the return sales order. Later, an accounts receivable (AR) customer payment journal that uses the mapped AR payment method is linked to the currency.
 
     The following illustration shows the configuration for a scenario where a customer returns products from a sales order that is linked to the USD currency, and that was originally paid for by using the normal or check payment type. In this scenario, a refund will be issued to the customer through a system-generated refund check. The **REF-CHK** AR payment method has been configured as a refund check payment type.
 
-    ![Configuration of call center refund methods for normal and check original payments](media/callcenterrefundmethods.png)
+    ![Configuration of call center refund methods for normal and check original payments.](media/callcenterrefundmethods.png)
+
+    > [!NOTE]
+    > Customer account is not a supported refund method for cash or check payments.
 
 - **Credit card** – When a return order that is created references an original order that was paid for by using a credit card, call center logic for refund payments applies the same original credit card to the return order.
 - **Loyalty card** – When a return order that is created references an original order that was paid for by using a customer loyalty card, call center logic for refund payments applies the refund to the same loyalty card.
@@ -53,7 +56,7 @@ If the original order payment type is unknown for any reason, or if multiple pay
 
 The following illustration shows the **Payment method** field on the **RMA/Return** tab of the **Call center parameters** page.
 
-![Payment method field on the RMA/Return tab of the Call center parameters page](media/callcenterrefundparameters.png)
+![Payment method field on the RMA/Return tab of the Call center parameters page.](media/callcenterrefundparameters.png)
 
 > [!NOTE]
 > The refund processing rules that are described earlier also apply to orders or order lines that a call center user cancels in Commerce headquarters. If the cancellation of an order or specific order lines causes any overpayments, the same rules will be used to generate refund payment lines.
@@ -87,7 +90,7 @@ A setting of **Yes** for the **Apply credit** option is applicable only when the
 > [!NOTE]
 > For a return order that has no linked replacement order, a setting of **Yes** for the **Apply credit** option will have no effect on the return order payment logic, because this setting applies only to replacement orders.
 
-![Apply credits payment method field on the RMA/Return tab of the Call center parameters page](media/callcenterrefundparameters1.png)
+![Apply credits payment method field on the RMA/Return tab of the Call center parameters page.](media/callcenterrefundparameters1.png)
 
 > [!IMPORTANT]
 > If users who create replacement orders plan to use the **Apply credit** option, they should not run the **Complete** function on the return order before they set the **Apply credit** option to **Yes**. After the **Complete** function is run, the refund payment is calculated and applied to the return sales order. Any attempt to set the **Apply credit** option to **Yes** after a refund payment has already been calculated and applied won't trigger a recalculation of the refund payment, and the payment method that is selected in the **Apply credits payment method** field won't be applied. If the **Apply credit** option must be used in this context, the user must delete the replacement order and the RMA, and then start over and create a new RMA. This time, the user must ensure that the **Apply credit** option is set to **Yes** before the **Complete** function is run.
@@ -96,14 +99,14 @@ A setting of **Yes** for the **Apply credit** option is applicable only when the
 
 Although call center logic systematically determines the refund payment method in the manner that is described earlier in this topic, users might sometimes want to override those payments. For example, a user might edit or remove existing refund payment lines, and apply new payment lines. System-calculated refund payments can be changed only by users who have the correct override permissions. These permissions can be configured on the **Override permissions** page in Retail and Commerce. To do a refund payment override, the user must be linked to a security role where the **Allow alternate payment** option is set to **Yes** on the **Override permissions** page.
 
-![Allow alternate payment option on the Override permissions page](media/overridepermissions.png)
+![Allow alternate payment option on the Override permissions page.](media/overridepermissions.png)
 
 Alternatively, an organization can set the **Allow payment override** option to **Yes** on the **RMA/Return** tab of the **Call center parameters** page. In this case, a security override code must be selected in the **Security Override Code** field. The security override code is an alphanumeric code that must be externally managed, because users can't view it in Commerce headquarters after it's set. The security override code should be known by only a few key, trusted people in an organization. When the **Allow payment override** option is set to **Yes**, if any users who don't have the correct role permissions try to change the method of payment on a return order, they will have the option to enter the security override code. If they don't know it, or if a manager or supervisor can't enter it on the page for them, they won't be able to override the return payment method.
 
 > [!NOTE]
 > If the security override code is lost or forgotten, the organization will have to reset it by defining a new security override code in the **Security Override Code** field on the **RMA/Return** tab of the **Call center parameters** page.
 
-![Payment override parameters on the RMA/Return tab of the Call center parameters page](media/overridepaymentparameter.png)
+![Payment override parameters on the RMA/Return tab of the Call center parameters page.](media/overridepaymentparameter.png)
 
 > [!IMPORTANT]
 > Before organizations try to override refund payments that use credit card payment types, they should verify that their credit card processor allows for unlinked returns. Many processors require that refunds be posted back to the original card. Any attempt to issue a refund to a card that has no previous captures might cause posting failures with the processor.

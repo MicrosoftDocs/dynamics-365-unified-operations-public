@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic explains how to manage ratings and reviews in Microsoft Dynamics 365 Commerce site builder.
 
-## Overview
-
 Dynamics 365 Commerce uses Microsoft Azure Cognitive Service to automatically moderate review text by redacting profane words. In addition, moderators can use Dynamics 365 Commerce site builder to implement the following manual tasks:
 
 - Moderate reviews by responding to them or removing them.
@@ -49,7 +47,7 @@ To read to a review in Commerce site builder, follow these steps.
 
 Additional filters let you limit the reviews by period, rating, channel, or concern status (taken down, responded, or reported).
 
-![Moderation home page](media/rnr-moderation-home.png) 
+![Moderation home page.](media/rnr-moderation-home.png) 
 
 ## Respond to a review 
 
@@ -63,7 +61,7 @@ To respond to a review in Commerce site builder, follow these steps.
 1. Enter the response text and the name that should be shown for the responder. The default responder name is **Moderator**.
 1. When you've finished, select **Post response**.
 
-![Responding to a review](media/rnr-moderation-response.png) 
+![Responding to a review.](media/rnr-moderation-response.png) 
 
 ## Take down a review 
 
@@ -86,7 +84,7 @@ To find and delete customer data in Commerce site builder, follow these steps.
 1. If the customer has any review activity (for example, review submissions, votes about the helpfulness of another customer's reviews, or comments about another customer's review), the results are shown. For each item, there is a **Delete** button.
 1. For each item that must be deleted, select **Delete**. When you're prompted for confirmation, select **Yes**. 
 	
-![Deleting customer data](media/rnr-moderation-delete-reviews.png) 
+![Deleting customer data.](media/rnr-moderation-delete-reviews.png) 
 
 > [!NOTE]
 > - It can take up to seven days for data to be completely removed from the system. Moderators should notify customers about this delay.
@@ -110,19 +108,19 @@ To view ratings and reviews trends in Commerce site builder, follow these steps.
 1. Go to **Home \> Reviews \> Reporting**.
 1. Select **PowerBI template** to download the template.
 
-    ![Download the Power BI template](media/rnr-moderation-reports.png) 
+    ![Download the Power BI template.](media/rnr-moderation-reports.png) 
 
 1. Open the downloaded template by using the Power BI app. Close the **Access to web content** dialog box that appears, and then close the "Refresh" error message that appears.
 1. Go to **Home**, select **Edit queries**, and then select **Data source settings**.
 1. In the **Data source settings** dialog box, select **Change Source**.
 1. In the **URL** field, enter the path of the reviews data that you downloaded in the previous procedure (for example, **c:\\reviews\\ReviewsData.csv**).
 
-    ![URL field in the Comma-Separated Values dialog box](media/rnr-powerbi-datasource-settings.png) 
+    ![URL field in the Comma-Separated Values dialog box.](media/rnr-powerbi-datasource-settings.png) 
 
 1. Select **OK**, and then select **Apply changes**. It will take one to two minutes to apply your changes to the data source.
 1. Select **Trends sheet** to view ratings and reviews trends.
 
-    ![Ratings and reviews trends](media/rnr-powerbi-dashboard-template.png) 
+    ![Ratings and reviews trends.](media/rnr-powerbi-dashboard-template.png) 
     
 ## Additional resources
 
@@ -133,6 +131,14 @@ To view ratings and reviews trends in Commerce site builder, follow these steps.
 [Configure ratings and reviews](configure-ratings-reviews.md)
 
 [Sync product ratings in Dynamics 365 Retail](sync-product-ratings.md)
+
+[Enable manual publishing of ratings and reviews by a moderator](manual-publish-rating-reviews.md)
+
+[Import and export ratings and reviews](import-export-reviews.md)
+
+[Configure Service-to-Service authentication](service-to-service-auth.md)
+
+[Ratings and reviews FAQ](ratings-reviews-faq.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,8 +2,8 @@
 # required metadata
 
 title: Consume external web services
-description: This topic describes how to consume external web services in Microsoft Dynamics 365 Finance and Operations apps.
-author: Sunil-Garg
+description: This topic describes how to consume external web services in Finance and Operations apps.
+author: peakerbl
 ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 21311
 ms.assetid: 5ff7fd93-1bb8-4883-9cca-c8c42ddc1746
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

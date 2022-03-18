@@ -3,7 +3,7 @@
 
 title: View the status of service orders 
 description: You can use the Dispatch board form to view the status of service activities in service orders.
-author: ShylaThompson
+author: kamaybac
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: 

@@ -61,7 +61,7 @@ Only work orders with a work order lifecycle state that allows scheduling can be
 
 *Example:* In the figure below, the formula inserted in the **Expected start** field will generate work order scheduling for all work orders with expected start date a week from now and later. This formula may be useful when you run work order scheduling on an ongoing basis, but you want to make sure the work orders scheduled for the next 5-6 days are not rescheduled.
 
-![Figure 1](media/03-work-order-scheduling.png)
+![Figure 1.](media/03-work-order-scheduling.png)
 
 The work order type related to work orders may set up scheduling for one maintenance worker (**Asset management** > **Setup** > **Work orders** > **Work order types** > **One maintenance worker** toggle button set to "Yes"). This means that if the work order type is used on a work order, the **One maintenance worker** toggle button is automatically set to "Yes" on the **All work orders** details page > **Header** view > **Schedule** FastTab. During work order scheduling, all work order jobs created on the work order will subsequently be scheduled to the same maintenance worker. If required, you can edit the selection on the **One maintenance worker** toggle button in **All work orders** to allow scheduling of several workers or one worker on the work order jobs.
 

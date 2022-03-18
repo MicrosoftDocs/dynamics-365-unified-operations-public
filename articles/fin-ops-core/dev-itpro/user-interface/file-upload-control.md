@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 54311
 ms.assetid: 82f47d4d-912c-4f85-81f9-b09c723f72fc
@@ -38,7 +38,7 @@ This topic provides information about the file upload control. This control lets
 
 The file upload control lets users upload a file. It also lets developers control the upload process and manage the file that is uploaded, based on their requirements. 
 
-[![Illustration of file upload control](./media/fileupload001.png)](./media/fileupload001.png) 
+[![Illustration of file upload control.](./media/fileupload001.png)](./media/fileupload001.png) 
 
 The file upload control can have three styles. You control the style by using the **Style** property.
 
@@ -68,7 +68,7 @@ The framework provides a default upload strategy class that is named **FileUploa
 ## Sequence diagram
 The file upload control accepts the file and upload strategy in the client, and sends them to the file services. The file services start a new session, create an instance of a strategy class, and call the **uploadFile** method. When the **uploadFile** method has finished storing the file in the data source, a file upload result class returns to the file services. This class is sent back to the client, which might trigger the **OnUploadCompleted** event to deal with the post-process. 
 
-[![File upload sequence diagram](./media/fileuploadcontrolusageanddesign1.png)](./media/fileuploadcontrolusageanddesign1.png)
+[![File upload sequence diagram.](./media/fileuploadcontrolusageanddesign1.png)](./media/fileuploadcontrolusageanddesign1.png)
 
 ## Scanning uploaded files for viruses and malicious code
 Before you upload a file into the system, you might want to scan it for viruses or malicious code. Therefore, in version 10.0.12 and later, an extension point is available so that customers can integrate the file scanning software of their choice into the file upload process. Similar extension points are also available for scanning attachments. For more information about those extension points, see [Configure document management](../../fin-ops/organization-administration/configure-document-management.md). 

@@ -3,7 +3,7 @@
 
 title: Purchases from registered vendors
 description: This topic explains how to work with purchases that are made by registered vendors.
-author: EricWang
+author: EricWangChen
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: kfend
+ms.author: wangchen
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.4
 
@@ -38,7 +38,7 @@ ms.dyn365.ops.version: 10.0.4
 5. Close the message that you receive.
 6. Close the **Request for quotation details** page.
 
-![Request for quotation case page](media/Annotation-2019-05-15-171525.png)
+![Request for quotation case page.](media/Annotation-2019-05-15-171525.png)
 
 ## Request for quotation replies
 
@@ -48,15 +48,15 @@ ms.dyn365.ops.version: 10.0.4
 4. On the Action Pane, on the **Reply** tab, in the **Process** group, select **Copy data to reply**.
 5. On the **Purchase quotation lines** FastTab, select **Tax information**.
 
-    ![Tax information dialog box](media/Annotation-2019-05-15-171959.png)
+    ![Tax information dialog box.](media/Annotation-2019-05-15-171959.png)
 
 6. Select the **GST** FastTab.
 
-    ![GST FastTab](media/Annotation-2019-05-15-172049.png)
+    ![GST FastTab.](media/Annotation-2019-05-15-172049.png)
 
 7. Select the **Vendor tax information** FastTab.
 
-    ![Vendor tax information FastTab](media/Annotation-2019-05-15-172136.png)
+    ![Vendor tax information FastTab.](media/Annotation-2019-05-15-172136.png)
 
 8. Select **OK**.
 
@@ -84,15 +84,15 @@ ms.dyn365.ops.version: 10.0.4
 3. On the Action Pane, on the **Purchase order** tab, in the **Maintain** group, select **Edit**.
 4. On the **Purchase order lines** FastTab, select **Tax information**.
 
-    ![Tax information dialog box](media/Annotation-2019-05-15-171959.png)
+    ![Tax information dialog box.](media/Annotation-2019-05-15-171959.png)
 
 5. Select the **GST** FastTab.
 
-    ![GST FastTab](media/Annotation-2019-05-15-172049.png)
+    ![GST FastTab.](media/Annotation-2019-05-15-172049.png)
 
 6. Select the **Vendor tax information** FastTab.
 
-    ![Vendor tax information FastTab](media/Annotation-2019-05-15-172136.png)
+    ![Vendor tax information FastTab.](media/Annotation-2019-05-15-172136.png)
 
 7. Select **OK**.
 
@@ -120,31 +120,31 @@ ms.dyn365.ops.version: 10.0.4
 
 The following illustration shows the financial entry for the purchase of goods.
 
-![Financial entry for the purchase of goods](media/Annotation-2019-05-15-173233.png)
+![Financial entry for the purchase of goods.](media/Annotation-2019-05-15-173233.png)
 
 The following illustration shows the financial entry for the purchase of services.
 
-![Financial entry for the purchase of services](media/Annotation-2019-05-15-173325.png)
+![Financial entry for the purchase of services.](media/Annotation-2019-05-15-173325.png)
 
 The following illustration shows the financial entry for the purchase of goods where the ITC category is set to **Others**.
 
-![Financial entry for the purchase of goods where the ITC category is set to Others](media/Annotation-2019-05-15-173406.png)
+![Financial entry for the purchase of goods where the ITC category is set to Others.](media/Annotation-2019-05-15-173406.png)
 
 The following illustration shows the financial entry for the purchase of services where the service category is set to **Others**.
 
-![Financial entry for the purchase of services where the service category is set to Others](media/Annotation-2019-05-15-173457.png)
+![Financial entry for the purchase of services where the service category is set to Others.](media/Annotation-2019-05-15-173457.png)
 
 The following illustration shows the financial entry for the purchase of goods where the load on inventory is set to 100 percent.
 
-![Financial entry for the purchase of goods where the load on inventory is set to 100 percent](media/Annotation-2019-05-15-173548.png)
+![Financial entry for the purchase of goods where the load on inventory is set to 100 percent.](media/Annotation-2019-05-15-173548.png)
 
 The following illustration shows the financial entry for the purchase of goods where the reverse charge is set to 100 percent.
 
-![Financial entry for the purchase of goods where the reverse charge is set to 100 percent](media/Annotation-2019-05-15-173632.png)
+![Financial entry for the purchase of goods where the reverse charge is set to 100 percent.](media/Annotation-2019-05-15-173632.png)
 
 The following illustration shows the financial entry for the purchase of goods where the reverse charge is set to 70 percent and the ITC category is set to **Others**.
 
-![Financial entry for the purchase of goods where the reverse charge is set to 70 percent and the ITC category is set to Others](media/Annotation-2019-05-15-173734.png)
+![Financial entry for the purchase of goods where the reverse charge is set to 70 percent and the ITC category is set to Others.](media/Annotation-2019-05-15-173734.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

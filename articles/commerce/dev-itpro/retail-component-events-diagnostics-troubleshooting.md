@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 85493
 ms.assetid: a22c9493-c000-4514-bb0d-b3cc674439d9
@@ -50,7 +50,7 @@ However, for most other cases, and especially when you don't have access to Even
 
 To start Event Viewer on a computer, right-click the **Start** button, and then click **Event Viewer**.
 
-[![Event Viewer command on the shortcut menu for the Start button](./media/launch-event-viewer.png)](./media/launch-event-viewer.png)
+[![Event Viewer command on the shortcut menu for the Start button.](./media/launch-event-viewer.png)](./media/launch-event-viewer.png)
 
 All Commerce-specific event logs can be found under the following path in Event Viewer: Application and Services Logs\\Microsoft\\Dynamics We provide the following Commerce-specific event logs:
 
@@ -64,7 +64,7 @@ Currently, some of the events that are logged by various components are sent to 
 
 - Right-click a debug log, and then click **Enable Log**.
 
-![Enable Log command on the shortcut menu for a debug log](./media/enable-debugging-log.png)
+![Enable Log command on the shortcut menu for a debug log.](./media/enable-debugging-log.png)
 
 ## Viewing events by using the (F12) browser developer tools console
 
@@ -76,7 +76,7 @@ Because Retail Cloud POS and E-Commerce modules are browser-based components, yo
 2. Press F12, and then click the **Console** tab.
 3. As you perform operations on Retail Cloud POS or on your E-Commerce website, events are logged in the console. You can filter by event severity to view events that have different severity levels.
 
-[![Console tab in the browser developer tools](./media/browser-console-1024x522.png)](./media/browser-console.png)
+[![Console tab in the browser developer tools.](./media/browser-console-1024x522.png)](./media/browser-console.png)
 
 ## Correlating events
 
@@ -102,7 +102,7 @@ Whenever a POS client makes a call to the Commerce Scale Unit, the AppSessionID 
 
 Every event that is logged as part of a Commerce Scale Unit request has the same ActivityID as the initial event that was logged for the initial incoming request event (Event ID 5000). These events are available in both Event Viewer and LCS Log Search.
 
-[![Data flow between a POS client and Commerce Scale Unit](./media/event-log-data-flow1-1018x1024.png)](./media/event-log-data-flow1.png)
+[![Data flow between a POS client and Commerce Scale Unit.](./media/event-log-data-flow1-1018x1024.png)](./media/event-log-data-flow1.png)
 
 ### Finding Retail Modern POS events in Event Viewer
 
@@ -113,7 +113,7 @@ Every event that is logged by Retail Modern POS includes the following data poin
 
 You can find the AppSessionID and UserSessionID values on the **Details** tab in Event Viewer on the machine where Retail Modern POS is installed.
 
-[![Details tab in Event Viewer](./media/correlation-1024x672.png)](./media/correlation.png)
+[![Details tab in Event Viewer.](./media/correlation-1024x672.png)](./media/correlation.png)
 
 ### Finding incoming Commerce Scale Unit request events in Event Viewer
 
@@ -168,7 +168,7 @@ You can filter by the following criteria to refine your query:
 - POS user session ID
 - Severity level
 
-![Search results on the Environment monitoring page](./media/log-search-results.png)
+![Search results on the Environment monitoring page.](./media/log-search-results.png)
 
 ### E-Commerce events
 

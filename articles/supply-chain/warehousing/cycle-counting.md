@@ -3,7 +3,7 @@
 
 title: Cycle counting
 description: This article describes how you can use cycle counting with the warehousing solution that is available in Warehouse management. This article doesn't apply to the warehousing solution that's available in Inventory management.
-author: MarkusFogelberg
+author: Mirzaab
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 50671
 ms.assetid: 49f5c431-b043-4170-aa24-b7d5d1ee063e
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mafoge
+ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -39,7 +39,7 @@ Cycle counting is a warehouse process that you can use to audit on-hand inventor
 2.  **Process the cycle count** – After cycle counting work is created, you do the cycle counting work by counting items in a warehouse location and then using a mobile device to enter the result in Dynamics 365 Supply Chain Management. Alternatively, you can count items in a warehouse location without creating cycle counting work. This process is referred to as *spot cycle counting*.
 3.  **Resolve differences in the counted value** – After a cycle count, any items that have differences in the counted value will have a work status of **Pending review** on the **All work** page. You can resolve these differences on the **Cycle count work pending review** page.
 
-The following illustration shows the cycle counting process. ![Process flow for cycle counting](./media/performcyclecountinginawarehouselocation.jpg)
+The following illustration shows the cycle counting process. ![Process flow for cycle counting.](./media/performcyclecountinginawarehouselocation.jpg)
 
 ## Cycle counting prerequisites
 The following table shows the prerequisites that must be in place before you can use cycle counting.

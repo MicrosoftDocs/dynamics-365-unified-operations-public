@@ -5,7 +5,6 @@ title: INDEX ER function
 description: This topic provides information about how the INDEX Electronic reporting (ER) function is used.
 author: NickSelin
 ms.date: 05/20/2021
-ms.topic: article
 ms.prod: 
 ms.technology: 
 

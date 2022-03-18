@@ -5,7 +5,7 @@ title: Business document management overview
 description: This topic provides information about how to use the Business document management feature of the ER framework.
 author: NickSelin
 ms.date: 04/23/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: 
+
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -62,7 +62,7 @@ To learn more about this feature, complete the example in this topic.
 
 Because Business document management is built on top of the ER framework, you must configure the ER parameters to start working with Business document management. To do this, you need to set up the ER parameters as described in [Configure the Electronic reporting (ER) framework](electronic-reporting-er-configure-parameters.md). You also need to add a new configuration provider as described in [Create configuration providers and mark them as active](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
-![ER workspace](./media/BDM-Overview-ERSetting.png)
+![ER workspace.](./media/BDM-Overview-ERSetting.png)
 
 ## Import ER solutions
 
@@ -97,11 +97,11 @@ Use the following procedure to import each file. Import the ER *data model* conf
 4. Select **Browse** to load the required XML file.
 5. Select **OK** to confirm configuration's import.
 
-![ER configurations page confirming configuration import](./media/BDM-Overview-ERSolutions.png)
+![ER configurations page confirming configuration import.](./media/BDM-Overview-ERSolutions.png)
 
 Alternatively, you can import the officially published ER format configurations from Microsoft Dynamics Lifecycle Service (LCS). For example, to complete this procedure you can import the latest version of the **Free text invoice (Excel)** ER format configuration. The corresponding ER data model and ER model mapping configurations will be imported automatically.
 
-![LCS shared asset library content page](./media/BDM-Overview-SharedAssetLibrary.png)
+![LCS shared asset library content page.](./media/BDM-Overview-SharedAssetLibrary.png)
 
 For more information about importing ER configurations, see [Manage the ER configuration lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md).
 
@@ -119,7 +119,7 @@ Use the following procedure to enable Business document management functionality
 > [!NOTE]
 > For more information about using the new document user interface in Business document management, see [New document user interface in Business document management](er-business-document-management-new-template-ui.md).
 
-![Feature management workspace](./media/BDM-Overview-FMEnabling.png)
+![Feature management workspace.](./media/BDM-Overview-FMEnabling.png)
 
 For more information about activating new features, see [Feature management overview](../../fin-ops/get-started/feature-management/feature-management-overview.md).
 
@@ -141,7 +141,7 @@ For this document type, the following attribute values must be selected.
 
 For information about how to set up the required document management parameters and document types, see [Configure document management](../../fin-ops/organization-administration/configure-document-management.md).
 
-![Set up Document management document type](./media/BDM-Overview-DMSetting.png)
+![Set up Document management document type.](./media/BDM-Overview-DMSetting.png)
 
 ### <a name="SetupBdmParameters"></a>Set up parameters
 
@@ -159,7 +159,7 @@ Use the following procedure to set up the basic parameters for all legal entitie
 > [!NOTE]
 > Only document types that are configured using a SharePoint location are available for this parameter.
 
-![Set up of Business document management parameters](./media/BDM-Overview-BDMSetting.png)
+![Set up of Business document management parameters.](./media/BDM-Overview-BDMSetting.png)
 
 The selected document type is company-specific and will be used when the user is working with Business document management in the company for which the selected document type is configured. When the user is working with Business document management in another company, the same selected document type will be used if one has not been configured for this company. When a document type has been configured, it will be used instead of the one selected in the **SharePoint document type** field.
 
@@ -170,7 +170,7 @@ The selected document type is company-specific and will be used when the user is
 
 By default, when access to Business document management permissions is not enabled, every user with access to the Business document management workspace will see all of the ER solution templates that are available. The Business document management workspace will show only those templates that reside in ER format configurations and that are marked by a **Business document type** tag.
 
-![ER configurations page with Business document type tag](./media/BDM-Overview-ERFormatTags.png)
+![ER configurations page with Business document type tag.](./media/BDM-Overview-ERFormatTags.png)
 
 The list of templates available in the Business document management workspace can be restricted by configuring access permissions. This may be important when different templates are used to produce business documents for different business domains (functional areas), and you want to allow specific users access to different templates for editing in the Business document management workspace.
 
@@ -186,19 +186,19 @@ Use the following procedure to set up the access Business document management pe
 
     Pay attention to the notification informing you that the usage of access permissions for Business document management is currently not enabled.
 
-    ![Configurator of Business document management access permissions page](./media/BDM-Overview-TemplatesAccess1.png)
+    ![Configurator of Business document management access permissions page.](./media/BDM-Overview-TemplatesAccess1.png)
 
     With this setting, every user assigned to any security role that is configured to perform the **Manage Business document templates** (AOT name **ERBDManageTemplates**) duty is able to open the Business document management workspace and can edit any template that is available.
 
     The following graphic shows what is available in the Business document management workspace for users assigned to the **Accounts receivable clerk** role. With the current access permissions setting, the user can edit business document templates from different functional areas including invoicing, regulatory reporting, and payments.
 
-    ![Business document management workspace page for Accounts receivable clerk](./media/BDM-Overview-TemplatesForAlice1.png)
+    ![Business document management workspace page for Accounts receivable clerk.](./media/BDM-Overview-TemplatesForAlice1.png)
 
 3. On the **Configurator of access permissions** page, select **Access permissions setting**.
 4. In the **Settings of access permissions to edit templates** dialog box, enable the **Apply configured access permissions** option.
 5. Select **OK** to confirm that Business document management access permissions have been enabled.
 
-    ![Confirm Business document management access permissions](./media/BDM-Overview-TemplatesAccess2.png)
+    ![Confirm Business document management access permissions.](./media/BDM-Overview-TemplatesAccess2.png)
 
 6. Select **Add** to enter a new business role for which permissions to access Business document management templates must be configured.
 7. In the **Security roles** dialog box, select the **Accounts receivable clerk** role and then select **OK** to confirm the role selection.
@@ -210,7 +210,7 @@ Use the following procedure to set up the access Business document management pe
 
 11. Switch the **Related information** pane from the right side of the current page. The **Related information** pane shows how the configured access permissions will be applied, including what ER configuration templates will be available for users that are assigned to the **Accounts receivable clerk** role.
 
-    ![Related information pane on Configurator of access permissions page](./media/BDM-Overview-TemplatesAccess3.png)
+    ![Related information pane on Configurator of access permissions page.](./media/BDM-Overview-TemplatesAccess3.png)
 
 12. On the **Access permissions per configurations** tab, select the **Add** option.
 13. In the **Select configuration** dialog box, mark the **Intrastat report** ER format configuration.
@@ -221,11 +221,11 @@ The current setting means that for any user assigned to the **Accounts receivabl
 - Templates that have the value, **Invoicing** for the **Functional area** tag.
 - Templates from ER format configurations that are listed on the **Access permissions per configurations** tab (templates from the **Intrastat report** format configuration of the **Statutory reporting** domain in this example).
 
-![Access permissions FastTabs on the Configurator of access persmissions page](./media/BDM-Overview-TemplatesAccess4.png)
+![Access permissions FastTabs on the Configurator of access persmissions page.](./media/BDM-Overview-TemplatesAccess4.png)
 
 The following graphic shows what the Business document management workspace provides to a user assigned to the **Accounts receivable clerk** role. With the current Business document management access permissions setting, the user can edit business document templates from the **Invoicing** domain and the **Intrastat report** ER format configuration. Templates from the **Payments** domain are not accessible for the **Accounts receivable clerk** role.
 
-![Editing business document templates on the Business document management workspace page](./media/BDM-Overview-TemplatesForAlice2.png)
+![Editing business document templates on the Business document management workspace page.](./media/BDM-Overview-TemplatesForAlice2.png)
 
 > [!NOTE]
 > The **Access permissions per configurations** rules are stored by using the unique identification ID of an ER format configuration. This means that these rules will not be deleted when an ER configuration that refers to them are deleted. When you import deleted configurations back to this instance, these rules will refer to them again. There is no need to set up the rules again after the deleted configurations are imported again.
@@ -247,7 +247,7 @@ When the **Office-like UI experience for Business document management** feature 
 - Templates that are owned by your ER configuration provider (that is, the provider that is currently marked as active in the **Electronic reporting** workspace). After you select one of these templates, you can select **Edit template** to start or continue to edit it.
 - Templates that are owned by other ER configuration providers. After you select one of these templates, you can select **New document** to create a copy of it that is owned by your ER configuration provider, and then start to edit the copy.
 
-![Template listings on the Business document management workspace page](./media/BDM-Overview-EditingTemplate1.png)
+![Template listings on the Business document management workspace page.](./media/BDM-Overview-EditingTemplate1.png)
 
 The **Template** tab presents the content of the selected template. Select the **Details** tab to review details of the selected template as well as details of an ER format configuration this template resides in. Notice that all of the templates have a status of **Published**, and contain no details in the **Revision** column. This means that these templates are not currently being edited.
 
@@ -260,7 +260,7 @@ To work with templates that are owned by other ER configuration providers, selec
 1. In the Business document management workspace, select the **Cheques printing format** template in the list.
 2. Select the **Details** tab.
 
-![Business document management workspace page, Details tab](./media/BDM-Overview-EditingTemplate2.png)
+![Business document management workspace page, Details tab.](./media/BDM-Overview-EditingTemplate2.png)
 
 The **Edit template** option is available for the selected template. This option is always available for a template in an ER format configuration that is owned by the active ER configuration provider (**Litware, Inc.** in this example). When **Edit template** is selected, the existing template from the draft version of the underlying ER format configuration will be available to edit.
 
@@ -268,24 +268,24 @@ The **Edit template** option is available for the selected template. This option
 
 1. In the Business document management workspace, select the document that you want to use as a template.
 
-    ![Select a document on the Business document management workspace page](./media/BDM-Overview-EditingTemplate3.png)
+    ![Select a document on the Business document management workspace page.](./media/BDM-Overview-EditingTemplate3.png)
 
 2. Select **New document**, and in the **Title** field, change the title of the editable template if needed. The text will be used to name the ER format configuration that is automatically created. Note that the draft version of this configuration (**Customer FTI report (GER) Copy**) that will contain the edited template will automatically be marked to run this ER format for the current user. At the same time, the non-modified original template from the base ER format configuration will be used to run this ER format for any other user.
 3. In the **Name** field, change the name of the first revision of the editable template that will be created automatically.
 4. In the **Comment** field, change the comment for the automatically created revision of the editable template.
 5. Select **OK** to confirm the start of the editing process.
 
-![Confirm the start of the editing process to create a new template](./media/BDM-Overview-EditingTemplate4.png)
+![Confirm the start of the editing process to create a new template.](./media/BDM-Overview-EditingTemplate4.png)
 
 If there is no any provider it will be offered to create. If there is no active provider it will be offered to choose it for activate.
 
 To create a provider, change the name of the provider in the **Name** field, update the internet address of the new provider in the **Internet address** field, and select **OK** to confirm.
 
-   ![Create new provider in BDM](./media/bdm_create_provider.png)
+   ![Create new provider in BDM.](./media/bdm_create_provider.png)
 
 To activate existing provider, choose the name of the provider in the **Configuration provider** field, and select **OK** to set the provider as active.
 
-   ![Activate provider in BDM](./media/bdm_choose_provider.png)
+   ![Activate provider in BDM.](./media/bdm_choose_provider.png)
 
 > [!NOTE]
 > Each BDM template refers to the provider as the author of the configuration. This is why an active provider is required for the template.
@@ -301,19 +301,19 @@ The **New document** option is always available for a template in an ER format c
 2. In the **Name** field, change the name of the first revision of the editable template that will be created automatically.
 3. In the **Comment** field, change the remark for the automatically created revision of the editable template.
 
-    ![Editing a template on teh Business document management workspace page](./media/BDM-Overview-EditingTemplate5.png)
+    ![Editing a template on teh Business document management workspace page.](./media/BDM-Overview-EditingTemplate5.png)
 
 4. Select **OK** to confirm the start of the editing process.
 
 The **BDM template editor** page will open. The selected template will be available for online editing by using Microsoft 365.
 
-![Business document management template editor page](./media/BDM-Overview-EditingLayout1.png)
+![Business document management template editor page.](./media/BDM-Overview-EditingLayout1.png)
 
 ### <a name="EditInOffice365"></a>Edit a template in Microsoft 365
 
 You can modify the template using Microsoft 365. For example, in Office online, change the font of the field prompts in the template header from **Regular** to **Bold**. These changes are automatically stored in the editable template that is stored in the primary template's storage (by default, the Azure blob storage). This is configured for the ER framework.
 
-![Changing font to bold in the template header on the Business document management template editor page](./media/BDM-Overview-EditingLayout2.png)
+![Changing font to bold in the template header on the Business document management template editor page.](./media/BDM-Overview-EditingLayout2.png)
 
 ### <a name="EditInOfficeDesktopApp"></a>Edit a template in the Office desktop application
 
@@ -323,15 +323,15 @@ You can modify the template using Microsoft 365. For example, in Office online, 
 1. Select the **Open in Desktop App** option to modify the template by using the functionality of the Office desktop application (Excel in this example). The editable template is copied from the permanent storage to the temporary storage configured in the Business document management parameters as a SharePoint folder.
 2. Confirm that you want to open the template from the temporary file storage in the Office desktop Excel application.
 
-    ![Template opened in desktop Excel application](./media/BDM-Overview-EditingLayout3.png)
+    ![Template opened in desktop Excel application.](./media/BDM-Overview-EditingLayout3.png)
 
 3. Modify the template. For example, change the font of the fields prompts in the template header by updating color from **Black** to **Blue**.
 
-    ![Modify the font color in the template header using the desktop Excel application](./media/BDM-Overview-EditingLayout4.png)
+    ![Modify the font color in the template header using the desktop Excel application.](./media/BDM-Overview-EditingLayout4.png)
 
 4. Select **Save** in the Excel desktop application to store the template changes in the temporary storage.
 
-    ![Save changes to the Business document management template editor page using the desktop Excel application](./media/BDM-Overview-EditingLayout5.png)
+    ![Save changes to the Business document management template editor page using the desktop Excel application.](./media/BDM-Overview-EditingLayout5.png)
 
 5. Close the Excel desktop application.
 6. Select **Sync stored copy** to synchronize the temporary template storage to the permanent template storage.
@@ -345,13 +345,13 @@ You can modify the template using Microsoft 365. For example, in Office online, 
 2. Select **Show format** to view the current structure of the format from the base ER format configuration that must be aligned with the editable template. 
 3. Select **Hide format** to close the pane.
 
-    ![BDM BDM template editor page](./media/BDM-Overview-EditingTemplate6.png)
+    ![BDM BDM template editor page.](./media/BDM-Overview-EditingTemplate6.png)
 
 4. Close the **BDM template editor** page.
 
 The updated template is shown on the **Template** tab. Notice that the status of the edited template is now **Draft** and the current revision is no longer empty. This means that the process of this template's editing has been started.
 
-![View the updated template on the Business document management workspace page](./media/BDM-Overview-EditingTemplate5.png)
+![View the updated template on the Business document management workspace page.](./media/BDM-Overview-EditingTemplate5.png)
 
 ### Test the modified template 
 
@@ -361,13 +361,13 @@ The updated template is shown on the **Template** tab. Notice that the status of
 4. Select the **Module - accounts receivable** \> **Documents** \> **Free text invoice** \> **Original document** level to specify the scope of invoices for processing.
 5. In the **Report format** field, select the **Customer FTI report (GER) Copy** ER format for the specified document level.
 
-    ![Print management setting page](./media/BDM-Overview-TestRun1.png)
+    ![Print management setting page.](./media/BDM-Overview-TestRun1.png)
 
 6. Press **Escape** to close the current page.
 7. Select **Print**, and then select **Selected**.
 8. Download the document and open it using the Excel desktop application.
 
-![Free text invoices page](./media/BDM-Overview-TestRun2.png)
+![Free text invoices page.](./media/BDM-Overview-TestRun2.png)
 
 The modified template is used to generate the free text invoice report for the selected item. To analyze how this report is affected by the changes that you introduced to the template, you can run this report in one application session right after you modified the template in another application session.
 
@@ -378,7 +378,7 @@ The modified template is used to generate the free text invoice report for the s
 3. If needed, in the **Name** field, change the name of the second revision and base it on the currently active first revision.
 4. If needed, in the **Comment** field, change the remark for the automatically created revision of the editable template.
 
-    ![Create revisions to the template on the Business document management workspace page](./media/BDM-Overview-AddRevision.png)
+    ![Create revisions to the template on the Business document management workspace page.](./media/BDM-Overview-AddRevision.png)
 
     You created a new revision of your template that has been stored in the permanent template's storage. Now you can continue editing the template of the second revision that is currently selected as active.
 
@@ -396,7 +396,7 @@ The modified template is used to generate the free text invoice report for the s
 
 When you edit the template from an ER format that is owned by the current active provider, you will be offered the option to revoke changes introduced for the template.
 
-![Reject changes to the template on the Business document management workspace page](./media/BDM-Overview-RevokeChanges.png)
+![Reject changes to the template on the Business document management workspace page.](./media/BDM-Overview-RevokeChanges.png)
 
 1. On the **BDM template editor** page, select the **Template** tab.
 2. Select **Undo**.
@@ -442,7 +442,7 @@ Most likely you signed in to the current instance of the app of the Azure AD dom
 
 The [list](general-electronic-reporting.md#list-of-configurations) of ER configurations for Finance is constantly updated. Open the [Global repository](er-download-configurations-global-repo.md) to review the list of ER configurations that are currently supported. You can [filter](../../../finance/localizations/enhanced-filtering-global-repo.md) the Global repository to review the list of ER configurations that are used to support configurable business documents.
 
-![Filtering the content of the Global repository on the Configuration repository page](./media/bdm-overview-filterglobalrepo.gif)
+![Filtering the content of the Global repository on the Configuration repository page.](./media/bdm-overview-filterglobalrepo.gif)
 
 The following table shows the list of ER configurations that support configurable business documents and that have been released in Finance up until December 2020.
 

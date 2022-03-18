@@ -43,18 +43,18 @@ Before you create your data package, plan out what it should include. In this wa
 7.  On the Action Pane, click **Export**.
 8.  Click **Download**. The package is saved to the **Downloads** folder of the computer where the browser session is running. When you work with data packages, you must plan for and consider any prerequisites for the entities that will be included in the packages. For example, the customer groups are required in order to create customers. Therefore, you should either import the customer groups into a package before you import customers, or sequence customer groups within a data package that will be completed before customers are imported. For example, in the following illustration, sequencing is set within the data package. As you can see, the Customer groups entity and Customers entity are part of the Customers data project. 
 
-    [![Customers data project containing Customer groups and Customers entities](./media/pdp_03.png)](./media/pdp_03.png)
+    [![Customers data project containing Customer groups and Customers entities.](./media/pdp_03.png)](./media/pdp_03.png)
 
     To automatically create a data package when you export the data project, set the **Generate data package** option to **Yes**. If you don't set this option, you can create a data package at the time of export.
 
 9.  On the Action Pane, select **Export**.
 10.  Select **Download**. The package is saved to the **Downloads** folder of the computer where the browser session is running. When you work with data packages, you must plan for and consider any prerequisites for the entities that will be included in the packages. For example, customer groups are required in order to create customers. Therefore, you should either import the customer groups into a package before you import customers, or sequence customer groups within a data package that will be completed before customers are imported. For example, in the following illustration, sequencing is set in the data package. As you can see, the Customer groups entity and Customers entity are part of the Customers data project.
 
-   [![Customers data project that contains Customer groups and Customers entities](./media/pdp_03.png)](./media/pdp_03.png)
+   [![Customers data project that contains Customer groups and Customers entities.](./media/pdp_03.png)](./media/pdp_03.png)
 
 11.  On the Action Pane, select **Entity sequence** to open the **Definition group entity sequence** page. Based on the current setup, the Customer groups entity and Customers entity are run at the same level. However, this sequence might not be ideal.
 
-   [![Customer groups and Customers entities at the same execution level](./media/pdp_04.png)](./media/pdp_04.png)
+   [![Customer groups and Customers entities at the same execution level.](./media/pdp_04.png)](./media/pdp_04.png)
 
 12. To create a better sequence, select the **Customers** entity, and then update the value of the **Execution unit** field from **1** to **2**. This change helps guarantee that customer groups are imported before the Customers entity is run. 
 
@@ -62,19 +62,19 @@ Microsoft Dynamics Lifecycle Services (LCS) contains multiple base data packages
 
 -   Module/area number 
 
-    [![Module/area number](./media/pdp_06.png)](./media/pdp_06.png)
+    [![Module/area number.](./media/pdp_06.png)](./media/pdp_06.png)
 
 -   Data type numbering 
 
-    [![Data type numbering](./media/pdp_07.png)](./media/pdp_07.png)
+    [![Data type numbering.](./media/pdp_07.png)](./media/pdp_07.png)
 
 -   Numbering format 
 
-    [![Numbering format](./media/pdp_08.png)](./media/pdp_08.png)
+    [![Numbering format.](./media/pdp_08.png)](./media/pdp_08.png)
 
 The names of data packages include the numbering format, which is followed by the module abbreviation and then a description. For example, the following illustration shows the General ledger data packages. 
 
-[![General ledger data packages](./media/pdp_09.png)](./media/pdp_09.png)
+[![General ledger data packages.](./media/pdp_09.png)](./media/pdp_09.png)
 
 ## Process data packages
 A process data package (PDP) consolidates Data import/export framework (DIXF) data packages into a unified bundle. The PDP is then used to configure a business process or a group of business processes in one business process library. Together, DIXF data packages, dependencies between those packages, and business processes that require the packages for their configuration make up a PDP. This section describes how to create a PDP for your LCS solution package. To create a PDP, you must have the following items and knowledge:
@@ -123,7 +123,7 @@ Follow these steps to consume the PDP.
 ### Review and approve BPMs
 -   For step 1, "Review business process," review the business process models (BPMs), and then select **Mark as reviewed**. The review status is updated for all dependent processes, and a green bar appears to the right of them. The **Reviewed by** and **Completed on** fields are also updated for each business process.
 
-    [![Reviewed business processes with a green bar and updated Reviewed by and Completed on values](./media/pdplcssolutions_04.jpg)](./media/pdplcssolutions_04.jpg)
+    [![Reviewed business processes with a green bar and updated Reviewed by and Completed on values.](./media/pdplcssolutions_04.jpg)](./media/pdplcssolutions_04.jpg)
 
 ### Review and approve data packages that are associated with a BPM
 
@@ -139,7 +139,7 @@ Follow these steps to consume the PDP.
 2.  Select the business process, and then, in the right pane, select **Apply Data Packages**.
 3.  On the **Consume process data package** page, select a package, and then select **Apply**.
 4.  Select the destination company in the target environment that is linked to the PDP, and then select **Apply**.
--   For step 1, "Review business process," review the business process models (BPMs), and then click **Mark as reviewed**. The review status is updated for all dependent processes, and a green bar appears to the right of them. The **Reviewed by** and **Completed on** fields are also updated for each business process.[![Reviewed business processes with a green bar and updated Reviewed by and Completed on values](./media/pdplcssolutions_04.jpg)](./media/pdplcssolutions_04.jpg)
+-   For step 1, "Review business process," review the business process models (BPMs), and then click **Mark as reviewed**. The review status is updated for all dependent processes, and a green bar appears to the right of them. The **Reviewed by** and **Completed on** fields are also updated for each business process.[![Reviewed business processes with a green bar and updated Reviewed by and Completed on values.](./media/pdplcssolutions_04.jpg)](./media/pdplcssolutions_04.jpg)
 
 ### Review and approve data packages that are associated with a BPM
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Customize embedded reports in analytical workspaces
+title: Customize embedded reports in analytical workspaces (contains video)
 description: This topic describes how power users can customize the application reports that are embedded in analytical workspaces.
 author: RichdiMSFT
 ms.date: 09/11/2020
@@ -62,15 +62,15 @@ Here are some important points to note about this service capability:
 
 ## Customize an analytical workspace
 
-To customize the embedded application solutions, a user must be a member of the System Report Editors security group. Members of this security group can do customizations by using the buttons on the **Options** tab on the Action Pane of the application workspaces. This example shows how to customize one of the standard analytical workspaces that are bundled with the application suite.
+To customize the embedded application solutions, a user must be assigned the **System report editor** security role. Users assigned this security role can do customizations by using the buttons on the **Options** tab on the Action Pane of the application workspaces. This example shows how to customize one of the standard analytical workspaces that are bundled with the application suite.
 
 1. Sign in and open the application workspace that you want to customize. In this example, you will replace the standard analytical report that is embedded in the **Compensation management** workspace.
 
-    ![Compensation management workspace](media/compensation-management-workspace.png)
+    ![Compensation management workspace.](media/compensation-management-workspace.png)
 
 2. Select the **Analytics** tab to access the workspace's embedded analytical report.
 
-    ![Analytics tab in the Compensation management analytical workspace](media/compensation-management-analytics.png)
+    ![Analytics tab in the Compensation management analytical workspace.](media/compensation-management-analytics.png)
 
     By default, you see the standard analytical workspace solution that is packaged with your application. The reports in this solution are automatically deployed and configured for your environment during the provisioning process.
 
@@ -79,11 +79,11 @@ To customize the embedded application solutions, a user must be a member of the 
 
 3. On the Action Pane, on the **Options** tab, in the **Power BI** group, select **Edit Analytics**.
 
-    ![Edit Analytics button](media/analytical-workspace-edit-entry.png)
+    ![Edit Analytics button.](media/analytical-workspace-edit-entry.png)
 
     The analytical workspace is opened in edit mode, and you have direct access to the Power BI web designer tools.
 
-    ![Analytical workspace report editor](media/analytical-workspace-edit-view.png)
+    ![Analytical workspace report editor.](media/analytical-workspace-edit-view.png)
 
 4. Use the Power BI web designer tools to customize the report canvas. The intuitive web controls let you perform typical actions such as adding and removing visuals, changing visual types, and formatting the content. You can also inspect the source of the report visualizations to make sure that decisions are based on the most relevant data that is available in the system. For more information, see [Add visualizations to a Power BI report](/power-bi/visuals/power-bi-report-add-visualizations-i).
 5. After you've completed your report customizations, select the **Save** button to promote the report edits. Customizations to the report are reflected immediately in the service. Therefore, users in your organization have access to the latest innovations.

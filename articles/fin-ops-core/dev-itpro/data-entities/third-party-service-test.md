@@ -3,7 +3,7 @@
 
 title: Test services by using third-party utilities
 description: This topic describes how to set up third-party utilities to test services.
-author: Sunil-Garg
+author: peakerbl
 ms.date: 12/05/2019
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 24841
 ms.assetid: 7137b0a0-1473-4134-b769-ede5e07fd6f5
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -30,6 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 # Test services by using third-party utilities
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 At <https://github.com/Microsoft/Dynamics-AX-Integration>, Microsoft provides sample code for consuming services. However, there are many scenarios where the other endpoint in an integration might not use a Microsoft stack. Even when the other endpoint does use, for example, the Open Data Protocol (OData) client code that Microsoft makes available, you might find it useful to perform the following actions:
 
@@ -72,11 +75,11 @@ Postman (<https://www.getpostman.com/postman>) is a tool that is often used to i
 
     You can use a URL parameter that refers to the **tenant\_id** environment variable, such as `https://login.microsoftonline.com/:tenant_id/oauth2/token`.
 
-    ![Retrieve an Azure AD token](./media/postman6.png)
+    ![Retrieve an Azure AD token.](./media/postman6.png)
 
 9. On the **Body** tab, add body elements as request parameters that refer to the environment variables that you created earlier. Select **Bulk Edit**, enter the keys from the previous table, enter a colon (:), and then enter the key name again but enclose it in double braces ({{}}). Enter one request parameter per line. For example, enter **grant\_type:{{grant\_type}}**. Here is an example.
 
-    ![Body elements](./media/postman8.png)
+    ![Body elements.](./media/postman8.png)
 
 10. On the **Tests** tab, create a test that validates that the response is reasonable, and that stores the returned authorization token in an environment variable. Here is an example.
 
@@ -89,11 +92,11 @@ Postman (<https://www.getpostman.com/postman>) is a tool that is often used to i
 11. Select **Save**, enter a name and collection for the request, and then select **Save** again.
 12. Select **Send** to make the authorization request. The **Body** tab should now contain an Azure AD token together with other response details.
 
-    ![Azure AD token](./media/postman11.png)
+    ![Azure AD token.](./media/postman11.png)
 
 13. Because of the test code, the token is now in an environment variable. You can see that the token is an environment variable by selecting the **Environment quick look** button (the eye button).
 
-    ![Environment quick look](./media/postman12.png)
+    ![Environment quick look.](./media/postman12.png)
 
 14. Create a request to perform create, read, update, or delete (CRUD) operations on the desired data entity via the OData service. Create the URL according to your requirements. For more information, see [Open Data Protocol (OData)](odata.md). You might find it useful to parameterize the request by using a variable that is stored in the environment, as shown earlier. The following example of a GET query uses a **Customer Account** parameter. The query returns name and address details for the customer account that is specified in the environment variable. Note that special characters must be correctly URL-encoded.
 
@@ -103,7 +106,7 @@ Postman (<https://www.getpostman.com/postman>) is a tool that is often used to i
 
 15. Add an Authorization header that refers to the authorization token that was retrieved earlier and stored in the **bearerToken** environment variable. The token must be prefixed by **Bearer** in the header.
 
-    ![Bearer token](./media/postman13.png)
+    ![Bearer token.](./media/postman13.png)
 
 16. Create a test to help validate the response. The following example tests that non-empty, JSON-formatted data is returned in the response body.
 
@@ -114,7 +117,7 @@ Postman (<https://www.getpostman.com/postman>) is a tool that is often used to i
 
 17. Save and send the request, and then verify the result. You must ensure that the user account being used is set to a default company that has data. Alternatively, you can also specify cross-company=true as the query parameter in the OData request.
 
-    ![Result](./media/postman15.png)
+    ![Result.](./media/postman15.png)
 
 In our example, we have now successfully authenticated and then used the OData service to read a customer record.
 
@@ -134,7 +137,7 @@ SoapUI (<https://www.soapui.org/>) is a tool that is often used to interact with
 
         Because you selected to create sample requests, one sample request is created for each service operation that is available.
 
-        ![Sample requests](./media/soapui3.png)
+        ![Sample requests.](./media/soapui3.png)
 
 3. Right-click the new project, and then select **New TestSuite** to create a test suite. This test suite will generate a POST request for an Azure AD authorization token.
 4. Right-click the test suite, and then select **New TestCase**.
@@ -158,7 +161,7 @@ SoapUI (<https://www.soapui.org/>) is a tool that is often used to interact with
 
 12. The SOAP request is now ready. Select **Play**, and validate the result on the right.
 
-    ![Validate the results](./media/soapui8.png)
+    ![Validate the results.](./media/soapui8.png)
 
 In our example, we have now successfully authenticated and then queried UserSessionService via SOAP.
 

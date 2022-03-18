@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 50401
 ms.assetid: ce9d2312-c02e-4649-a7e4-33c3a06dfbd4
@@ -65,7 +65,7 @@ The transaction on voucher do not balance.
 
 ### Presentation
 
-![Screenshot of message bars](./media/messaging_messagebartypes.jpg)
+![Screenshot of message bars.](./media/messaging_messagebartypes.jpg)
 
 ### Action center – Messages from asynchronous tasks
 The Action center is located in the navigation bar. It contains messages that don't require any immediate action by the user and aren't required for the current task to continue. Typical examples include feedback from background processes such as a batch job or report completion. The Action center can express **info**, **warning**, and **error** statuses. Before it's opened, the Action center indicates the number of messages that have been received since last time that it was opened.
@@ -92,7 +92,7 @@ An error message should include the following two components:
 
 ### Presentation
 
-![Example of error message](./media/messaging_boxapi.jpg) 
+![Example of error message.](./media/messaging_boxapi.jpg) 
 
 Messages of the **error** type block the user’s interaction by overlaying the current page with a modal “light box” that contains the message.
 
@@ -110,7 +110,7 @@ In earlier versions of Finance and Operations apps, the **info**, **warning** (*
 ## Should this message interrupt the user?
 If a task (batch job or other operation) fails, it's often appropriate to notify the user passively. Because the user can correct the issue and retry the operation at any time, the user doesn't have to be notified immediately. In these cases, the **error()** API is appropriate, and the user doesn't receive an interrupting dialog. However, in other cases, the user can't proceed until the issue is corrected. For example, if the user tries to save a page that still has invalid data, the client interrupts the user by presenting an error dialog. In these cases where it's more appropriate to interrupt the user by presenting a dialog, the **box::** API should be used. 
 
-![Example of Box API](./media/messaging_boxapi.jpg)
+![Example of Box API.](./media/messaging_boxapi.jpg)
 
 
 ## Will my message end up in a message bar or in the Action center? 
@@ -159,15 +159,15 @@ If the developer needs more control over when a message needs to be removed from
 ## How to create a collection of related messages?  
 You use **SetPrefix()** to create collections of related messages [See the [Messaging APIs](messaging-api-center-bar-details.md) for more details on **SetPrefix()**. This API is largely backward compatible but is presented in a non-interrupting manner. A results window isn't opened directly; instead, the user is passively notified by either an Action center message or a message bar on the page that started the task that used the **SetPrefix()** API to group the result messages into a collection. The message severity shown to the user reflects the severity of the most critical message in the collection. For example, if the collection contains no errors or warnings, the message bar is of the **info** type. 
 
-![Example of info type message bar](./media/messaging_messagedetailsmessagebar.jpg) 
+![Example of info type message bar.](./media/messaging_messagedetailsmessagebar.jpg) 
 
 If the collection contains one or more calls to **warning()**, the message bar is of the **warning** type. 
 
-![Example of warning type message bar](./media/messaging_messagedetailswarningmessagebar.jpg) 
+![Example of warning type message bar.](./media/messaging_messagedetailswarningmessagebar.jpg) 
 
 If the collection contains one or more calls to **error()**, the message bar is of the **error** type. 
 
-![Example of error type message bar](./media/messaging_messagedetailserrormessagebar.jpg) 
+![Example of error type message bar.](./media/messaging_messagedetailserrormessagebar.jpg) 
 
 The use of **SetPrefix()** is also deterministic. In other words, if you use **SetPrefix()**, and there is no page context (for example, an asynchronous batch operation), the notification of results is sent to the Action center, which isn't associated with any page.
 

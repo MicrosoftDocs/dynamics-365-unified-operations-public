@@ -35,7 +35,7 @@ When a general budget reservation is set up to use a workflow, the document must
 
 The following illustration shows how to set up a workflow for general budget reservations. Each numbered step corresponds to a section of this topic.
 
-![Setup of a general budget reservation workflow](media/gbr-workflow-process.jpg "Setup of a general budget reservation workflow")
+![Setup of a general budget reservation workflow.](media/gbr-workflow-process.jpg "Setup of a general budget reservation workflow")
 
 ## Optional: Set up reviewers for general budget reservations
 

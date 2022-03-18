@@ -1,30 +1,16 @@
 ---
-# required metadata
-
 title: Form design requirements
-description: This topic provides in-depth information on designing mobile apps.
-author: robinarh
+description: This topic provides form design requirements for mobile apps.
+author: tonyafehr
 ms.date: 08/14/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 255544
-ms.assetid: 
+ms.reviewer: tfehr
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: rhaertle
+ms.custom: intro-internal
+ms.author: tfehr
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-
 ---
 
 # Form design requirements
@@ -44,7 +30,7 @@ This section provides valuable guidelines for building forms that work well with
 -   Each form must work with the data source filters.
     -   After you open the form in the web client, open the filter pane by using the **Show filters** button. 
     
-        ![Show filters button](media/filterpane.png) 
+        ![Show filters button.](media/filterpane.png) 
         
         Then click **Add a filter field**, and verify that the Master Root Data Source appears as the table for fields in the list of available fields. Other tables can also appear, but the Master Root Data Source **must** appear in this list. Otherwise, the mobile app won't enable searches and navigation that uses context.
     -   Searching: The mobile app does online searches against data by using the Filters framework behind the scenes.

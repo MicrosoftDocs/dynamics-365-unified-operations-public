@@ -1,30 +1,15 @@
 ---
-# required metadata
-
 title: Navigation concepts
 description: This articles describes the primary navigation concepts including the dashboard, the new navigation search feature, the navigation pane, workspaces, and tiles.
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 105091
-ms.assetid: 26f373fa-13b7-4f1b-ad16-95499d19874f
+ms.reviewer: tfehr
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Navigation concepts
@@ -43,7 +28,7 @@ The primary navigation concepts are:
 -   Tiles
 -   Navigation search
 
-The dashboard is a new concept, whereas the navigation pane and workspaces are updates to existing concepts. To implement the navigation concepts, the user interface model uses several standard page types. When you create an application, you should follow the conventions for these pages to present a consistent experience for the user. The following diagram shows an overview of the standard page types and how they fit together. [![Diagram of standard page types](./media/1_nav.png)](./media/1_nav.png)The following sections provide more detail about the pages that underlie these concepts. They include information about the modeling of these and other types of pages.
+The dashboard is a new concept, whereas the navigation pane and workspaces are updates to existing concepts. To implement the navigation concepts, the user interface model uses several standard page types. When you create an application, you should follow the conventions for these pages to present a consistent experience for the user. The following diagram shows an overview of the standard page types and how they fit together. [![Diagram of standard page types.](./media/1_nav.png)](./media/1_nav.png)The following sections provide more detail about the pages that underlie these concepts. They include information about the modeling of these and other types of pages.
 
 ## Dashboard
 The dashboard is the first page that users see when they access the client. The dashboard contains tiles that show important details from the system. Content that was previously displayed in Cues on Role Center pages in Microsoft Dynamics AX 2012 is now available on the dashboard. You can return to the dashboard at any time by clicking **Dynamics 365** on the navigation bar at the top of the application frame. 
@@ -53,7 +38,7 @@ The dashboard primarily consists of a large section of workspace tiles. There mi
 ## Navigation pane
 The navigation pane provides access to workspaces, main menu elements, recently opened forms, and user-defined favorites.  The user can open the navigation pane by clicking the **Show navigation pane** button under the navigation bar. The navigation pane consists of four collapsible sections. The **Favorites** section provides quick access to the list of forms the user has explicitly marked as a favorite. Marking a form as a favorite is accomplished by clicking the star icon next to the form in the navigation pane. The **Recent** section lists the forms the user has most recently visited. The set of workspaces a user has access to is conveniently shown in the **Workspaces** section. Finally, the **Modules** section provides the full list of modules. Clicking on a module will open the right side of the navigation pane, where the user can navigate to the desired page in that module. **Note:** In this screenshot, **All customers** has been marked as a favorite, and therefore it will appear in the **Favorites** list. 
 
-[![Expanded navigation pane](./media/navpaneexpanded-1024x532.png)](./media/navpaneexpanded.png) 
+[![Expanded navigation pane.](./media/navpaneexpanded-1024x532.png)](./media/navpaneexpanded.png) 
 
 Like the workspace tiles on the dashboard, the elements that are listed in the navigation pane are generated at runtime, based on a menu structure. The same root menu (**NavPaneMenu**) that defines the set of workspaces on the dashboard also defines the navigation pane. Here's an example of the logical structure for the navigation pane:
 
@@ -71,10 +56,10 @@ Windows 8 introduced the concept of tiles, and you will see them used in the cli
 
 | Type     | Example                                                                                                                                                           | Description                                                                                                                                  |
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Standard |  [![Example of Standard tile](./media/5_nav_table.png)](./media/5_nav_table.png) | This type of tile does not show any business data.                                                                                           |
-| Count    |  [![Example of Count tile](./media/6_nav_table.png)](./media/6_nav_table.png) | This type of tile shows a count of the items in the referenced form’s query. Note that the tile in this example uses the **ShortWide** size. |
-| KPI      |  [![Example of KPI tile](./media/7_nav_table.png)](./media/7_nav_table.png) | This type of tile shows a summary of data from a KPI.                                                                                        |
-| Link     |  [![Example of Link tile](./media/8_nav_table.png)](./media/8_nav_table.png) | This type of tile points to a URL. The tile has the same appearance as a tile of the **Standard** type.                                      |
+| Standard |  [![Example of Standard tile.](./media/5_nav_table.png)](./media/5_nav_table.png) | This type of tile does not show any business data.                                                                                           |
+| Count    |  [![Example of Count tile.](./media/6_nav_table.png)](./media/6_nav_table.png) | This type of tile shows a count of the items in the referenced form’s query. Note that the tile in this example uses the **ShortWide** size. |
+| KPI      |  [![Example of KPI tile.](./media/7_nav_table.png)](./media/7_nav_table.png) | This type of tile shows a summary of data from a KPI.                                                                                        |
+| Link     |  [![Example of Link tile.](./media/8_nav_table.png)](./media/8_nav_table.png) | This type of tile points to a URL. The tile has the same appearance as a tile of the **Standard** type.                                      |
 
 For modeling, you first create a tile element, which is an abstract element. The tile element is then referenced on a form by a tile button element. Multiple tile button elements can refer to a single tile. Tiles are defined first by the **Type** property (which has valid values of **Standard**, **Count**, **KPI**, and **Link**). After you specify the type, you specify the following minimum properties for each type:
 
@@ -113,13 +98,14 @@ The following are the valid options and corresponding behaviors for the **Tile D
 -   The image that you specify isn't resized. Therefore, you must create an image of the appropriate size to guarantee that it fills the tile correctly. Currently, a standard-sized tile is a square that is 130 pixels on each side.
 
 ## Navigation search
+
 There is a convenient search mechanism for finding and navigating to forms and workspaces that appear in the navigation pane and on the dashboard. For example, a search on the keywords "all sales order" returns a list of navigation elements that match those keywords. 
 
-[![Example of keyword search](./media/navsearchexample.png)](./media/navsearchexample.png) 
+[![Example of keyword search using "all sales orders".](./media/navsearchexample.png)](./media/navsearchexample.png) 
 
 The search keywords are matched not only to the caption of the navigation elements but also to the corresponding path. For example, a search on the keywords "ven bal report" returns results that match "vendor balance" in the caption and "report" in the path. 
 
-[![Example of keyword search](./media/navsearchexample2.png)](./media/navsearchexample2.png)
+[![Example of keyword search.](./media/navsearchexample2.png)](./media/navsearchexample2.png)
 
 
 

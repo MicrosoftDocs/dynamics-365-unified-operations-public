@@ -5,8 +5,8 @@ author: RobinARH
 ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
-ms.custom: 23441
+ms.reviewer: tfehr
+ms.custom: "intro-internal"
 ms.assetid: ba523585-bab1-49c9-b6c9-6db1403494d9
 ms.search.region: Global
 ms.author: jorisde
@@ -48,11 +48,11 @@ This tutorial requires you to access the environment using Remote Desktop and to
    - Forms, menus, and other GUI elements are under **User Interface**.
    - Business intelligence components are under **Analytics**.
 
-       [![Application Explorer opened to Analytics](./media/aot_introvisualstudio.png)](./media/aot_introvisualstudio.png)
+       [![Application Explorer opened to Analytics.](./media/aot_introvisualstudio.png)](./media/aot_introvisualstudio.png)
 
 2. In **Application Explorer**, right-click **AOT**, and then click **Model view**.
 
-   [![Open Model View for Fleet Management](./media/filterquery_introvisualstudio.png)](./media/filterquery_introvisualstudio.png)
+   [![Open Model View for Fleet Management.](./media/filterquery_introvisualstudio.png)](./media/filterquery_introvisualstudio.png)
 
    Model view organizes programmable objects according to their model. For these tutorials, the application suite models have been removed. The core foundation and platform components have been separated from the application suite. This separation is what allowed the application suite models to be removed.
 3. Double-click **Fleet Management**, or click the arrow to expand the model's tree node. Model view provides a familiar way to work with a set of programmable objects. It's similar to what you saw in Classic view, but the tree displays only the objects that are part of that particular model.
@@ -66,7 +66,7 @@ This tutorial requires you to access the environment using Remote Desktop and to
 
 This section of the tutorial describes the Fleet management projects and solution. Projects enable you to build your model elements (compile, synchronize the database, generate RDL files, etc.), test your application, and debug your code. We recommend that you don't make a change to a model element unless it's a part of a project; otherwise, your changes may not be compiled until you do a full build of your models, which can be a lengthy operation. In **Solution Explorer**, you can see the sample projects, two of which are named **FleetManagement Discounts** and **FleetManagement Migrated**. These projects are contained in a single Visual Studio solution, named **FleetManagement**.
 
-[![Solution Explorer for FleetManagement](./media/solutionexplorer_introvisualstudio.png)](./media/solutionexplorer_introvisualstudio.png)
+[![Solution Explorer for FleetManagement.](./media/solutionexplorer_introvisualstudio.png)](./media/solutionexplorer_introvisualstudio.png)
 
 1. In **Solution Explorer**, right-click **Fleet Management Migrated**, and then click **Properties**.
 2. In the **Property Pages** dialog box, review the listed properties. In the **Startup Object** field, you can see the name of the first form that runs when you run or debug your project. You can see that the **Startup Object type** field is set to **Form**. You can also view the model name and its layer. A project always belongs to one model.
@@ -81,33 +81,33 @@ The code in a solution is stored as XML. The following instructions show you how
 3. In the list of classes, double-click **FMDataHelper** to open the code editor. Here, you can see the implementation of the **FMDataHelper** X++ class.
 4. Scroll down in the code to locate the **main** method. **Tip**: You can also go the main method using the method navigation menu located on the top right of the code editor window.
 
-    [![Source menu](./media/main_introvisualstudio.png)](./media/main_introvisualstudio.png)
+    [![Source menu.](./media/main_introvisualstudio.png)](./media/main_introvisualstudio.png)
 
     If this class is set as the startup object of the project, the **main** method will be the execution entry point when you run or debug the project.
 
-    [![Source code for FmDataHelper](./media/fmdatahelper_introvisualstudio.png)](./media/fmdatahelper_introvisualstudio.png)
+    [![Source code for FmDataHelper.](./media/fmdatahelper_introvisualstudio.png)](./media/fmdatahelper_introvisualstudio.png)
 
 5. In Windows, open **File Explorer**, and then browse to the following folder: C:\\Packages\\FleetManagement\\FleetManagement\\AxClass
 6. Double-click the file named FMDataHelper.xml. If you're prompted to choose a program to open the file with, click **More options**, and then click **Internet Explorer**. Otherwise, open it in Notepad.
 
-    [![Browser view of source code](./media/notepad_introvisualstudio.png)](./media/notepad_introvisualstudio.png)
+    [![Browser view of source code.](./media/notepad_introvisualstudio.png)](./media/notepad_introvisualstudio.png)
 
     In this file, you can see XML code that contains the metadata that describes the **FMDataHelper** class. For example, you can see that the class named **FMDataHelper** contains a set of methods. You can see the code that implements the **intializeNumberSequence** method for example, which is contained by an XML element. The &lt;!\[CDATA\]&gt; tag ensures that the contained text isn't interpreted or changed by the XML parser. This metadata contains the source code that you viewed in the Visual Studio code window. When you develop a solution, you always work with code that's stored as XML. This means that the code files are stored on your computer, not in the database. There isn't an active connection to an application object server (AOS) while you develop your application. To avoid data loss, we recommend that you maintain your project files in a source code control system, such as Visual Studio Team Foundation Server. Although it's helpful to know how and where the source code files are stored, don't modify the XML files directly. **Always use Visual Studio to modify the source code for your projects.**
 7. Close the window that**FMDataHelper.xml** file.
 8. In **Solution Explorer**, double-click **Label Files** in the **FleetManagement Migrated** project to open the folder to view the labels for the project, and then double-click on the **FLM\_en-US** node to open the label editor.
 
-    [![Label files](./media/flm_en-us_introvisualstudio.png)](./media/flm_en-us_introvisualstudio.png)
+    [![Label files.](./media/flm_en-us_introvisualstudio.png)](./media/flm_en-us_introvisualstudio.png)
 
     In the label editor **Search** box, enter "rental." As you type, you'll see the list of labels for the Fleet Management sample that contain the word "rental." You can double-click in any cell that can be edited to change its contents, and then save the label file.
 
-    [![List of labels](./media/search-rental_introvisualstudio.png)](./media/search-rental_introvisualstudio.png)
+    [![List of labels.](./media/search-rental_introvisualstudio.png)](./media/search-rental_introvisualstudio.png)
 
 ## Build the FleetManagement migrated project
 
 1. In the **Solution Explorer**, right-click **Fleet Management Migrated**, and then click **Rebuild**.
 2. In the **Output** window, in the **Show output from** list, click **Build**. Verify that the build completed without compilation errors. Wait for the build to complete. The final build message in the **Output** window says, "... build completed." the final build message in the status bar (at the bottom left corner of Visual Studio) says "Ready."
 
-    [![Build output](./media/output_introvisualstudio.png)](./media/output_introvisualstudio.png)
+    [![Build output.](./media/output_introvisualstudio.png)](./media/output_introvisualstudio.png)
 
 3. On the **View** menu, click **Error List** to see the list of best-practice warnings. We've deliberately left some warnings in the build to demonstrate this feature.
 4. Double-click any warning message to view the code or resource that caused the warning.

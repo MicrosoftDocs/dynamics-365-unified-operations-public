@@ -5,7 +5,7 @@ author: RobinARH
 ms.date: 04/30/2019
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 31751
 ms.assetid: 6a5811cc-a551-4e4d-824c-d760460b3223
 ms.search.region: Global
@@ -42,7 +42,7 @@ The application stack is divided into several models: Application Platform, Appl
 
 The left side of the following diagram shows how the application stack has been split into distinct models. The right side shows how the key components are stacked in the server. 
 
-[![Architecture drawing](./media/ArchitectureDrawing1.png)](./media/ArchitectureDrawing1.png)   
+[![Architecture drawing.](./media/ArchitectureDrawing1.png)](./media/ArchitectureDrawing1.png)   
 
 The Finance and Operations applications use an entry point security model. A form allows read-only access if the menu item used for navigation to that form has only Read Permissions. However, navigation to that same form through another menu item that provides Create Permissions, Delete Permissions, or Update Permissions allows write operations on the form. This behavior simplifies the development experience, because developers can specify the behavior for a form through a given entry point.
 
@@ -58,7 +58,7 @@ Many features of the Azure platform are used, such as Microsoft Azure Storage, n
 ## Development environment
 The architecture of the development environment resembles the architecture of the cloud instance. It also includes the software development kit (SDK), which consists of the Visual Studio development tools and other components. Source control through Team Foundation Server or Visual Studio Online enables multiple-developer scenarios, where each developer uses a separate development environment. Deployment packages can be compiled and generated on a development environment and deployed to cloud instances by using LCS. The following diagram shows how the key components interact in a development environment.
 
-![Development architecture, Visual Studio, local runtime, and cloud deployment](./media/dev-environ.png)
+![Development architecture, Visual Studio, local runtime, and cloud deployment.](./media/dev-environ.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

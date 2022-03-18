@@ -1,30 +1,15 @@
 ---
-# required metadata
-
 title: Tabular Fields subpattern
 description: This article provides information about the Tabular Fields subpattern. This subpattern is used to show information efficiently in a tabular format. 
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer 
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 14761
-ms.assetid: a2c38c58-b312-44b1-bf48-c40dc8518011
+ms.reviewer: tfehr
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Tabular Fields subpattern
@@ -41,11 +26,12 @@ This subpattern is used to show information efficiently in a tabular format. The
 -   Group control
 
 ## Wireframes
-### [![Wireframe for Tabular Fields](./media/tabularfields1.png)](./media/tabularfields1.png)
+
+[![Wireframe for Tabular Fields using grid.](./media/tabularfields1.png)](./media/tabularfields1.png)
 
 Structural wireframe
 
-[![Wireframe for Tabular Fields](./media/tabularfields2.png)](./media/tabularfields2.png)
+[![Wireframe for Tabular Fields.](./media/tabularfields2.png)](./media/tabularfields2.png)
 
 ## Pattern changes
 In previous releases of Microsoft Dynamics AX, there was no formally accepted way to model this pattern. Therefore, this pattern was modeled in many inconsistent ways that must be modified to match the current pattern. The most common way to model this pattern was to use groups for columns. However, groups are now used for the rows. The primary reason for this change was to better match the HTML/CSS constructs, and it also helps keep the tab sequence and semantics of a table.
@@ -86,7 +72,7 @@ No manual verification is required.
 ## Examples
 Form: **LedgerJournalTransVendPaym** **(Balances)** (**Accounts payable** &gt; **Journals** &gt; **Payment journal** &gt; **Lines**) 
 
-[![Example of Tabular Fields](./media/tabularfields3.png)](./media/tabularfields3.png)
+[![Example of Tabular Fields.](./media/tabularfields3.png)](./media/tabularfields3.png)
 
 ## Resources
 ### Typically used by patterns

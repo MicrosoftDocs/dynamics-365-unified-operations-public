@@ -3,7 +3,7 @@
 
 title: Rule-based tax settlement
 description: This topic explains how to set up and work with rule-based tax settlements.
-author: EricWang
+author: EricWangChen
 ms.date: 06/05/2019
 ms.topic: article
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: kfend
+ms.author: wangchen
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.4
 
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.4
 1. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Settle and post sales tax**.
 2. Enter the appropriate values, and then select **OK**.
 
-![Sales tax settlement including corrections dialog box](media/Capture2019052109_upd.png)
+![Sales tax settlement including corrections dialog box.](media/Capture2019052109_upd.png)
 
 ## Validate tax settlement voucher entries
 
@@ -43,7 +43,7 @@ ms.dyn365.ops.version: 10.0.4
 3. Verify that the settlement for the selected registration for the period is successfully posted.
 4. Select **Print report**.
 
-![Sales tax payments report](media/Capture2019052110_upd.png)
+![Sales tax payments report.](media/Capture2019052110_upd.png)
 
 ## GST authority payment
 

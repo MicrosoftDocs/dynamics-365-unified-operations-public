@@ -1,30 +1,15 @@
 ---
-# required metadata
-
 title: Build the Customer form
 description: In this lab you’ll create a Master Details form and apply form pattern and subpatterns. A Master Details form shows primary data that has many fields.
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 20401
-ms.assetid: 78199ae8-0631-4cf4-b206-b952f09b92a9
+ms.reviewer: tfehr
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Build the Customer form
@@ -40,9 +25,10 @@ For this tutorial, you will need to access the environment using Remote Desktop,
 ## Overview
 To create the form, you’ll start from the existing form, **FmtCustomer**. The form represents the old Master Details template. As a part of the tutorial, you’ll apply the Master Details pattern, which will enforce a consistent structure for this form type. The following illustration shows the **FmtCustomer** starting artifact. 
 
-[![Screen shot of FmtCustomer starting artifact](./media/custform1.png)](./media/custform1.png)
+[![Screen shot of FmtCustomer starting artifact.](./media/custform1.png)](./media/custform1.png)
 
 ## Key concepts
+
 -   Create a Master Details form.
 -   Apply a form pattern to a form.
 -   Use the Visual Studio pattern add-ins to get information about form/model pattern coverage.
@@ -51,6 +37,7 @@ To create the form, you’ll start from the existing form, **FmtCustomer**. The 
 -   Determine the amount of remaining patterns work in a model.
 
 ## Setup
+
 ### Import the tutorial project and transactional data
 
 Use Visual Studio to import the tutorial project. The tutorial project includes the artifacts you will use to complete this tutorial. Use Visual Studio to open the FMTutorial project and load the data for the tutorial. You will use the FMTDataHelper class to load data for the Fleet Management tutorial. If this is the first tutorial you are working on, review [Access Instances](../dev-tools/access-instances.md) and make sure you provision your administrator user if you’re working on a local VM.
@@ -63,7 +50,7 @@ Use Visual Studio to import the tutorial project. The tutorial project includes 
 6.  In the **Project file location** text box, enter **C:\FMLab**.
 7.  Select the **Overwrite Elements** option and the **Current solution** radio button. The following illustration shows the completed **Import Project** dialog box. 
 
-    ![Completed Import Project dialog box](./media/custform2.png)
+    ![Completed Import Project dialog box.](./media/custform2.png)
 
 8.  Click **OK**.
 9.  In **Solution Explorer**, expand **Classes**, and under the **FMTutorial** project, right-click **FMTDataHelper**, and then click **Set as Startup Object**.
@@ -102,7 +89,7 @@ Use Visual Studio to create the **FmtCustomer** form. You’ll use a template to
 
     2.  Drag the highlighted fields to **Design** &gt; **GridDetailsTab**&gt; **TabPageGrid** &gt; **MainGrid**. The following illustration shows the grid after expanding the grid node and adding the fields. 
 
-        ![Screen shot showing grid after expanding node and adding fields](./media/custform3.png)     
+        ![Screen shot showing grid after expanding node and adding fields.](./media/custform3.png)     
 
 8.  Click **Save**.
 9.  Click **Design** &gt; **GridDetailsTab** &gt; **TabPageDetails** &gt; **TitleGroup** to add the record header to the details view.
@@ -129,7 +116,7 @@ Run the form to verify that it loads correctly.
 1.  In **Solution Explorer**, right-click **FmtCustomer**, and then click **Set as Startup Object**.
 2.  Press **Ctrl+F5**. The grid view should render like the following illustration. 
 
-    [![Illustration of grid view](./media/custform4-1024x567.png)](./media/custform4.png)
+    [![Illustration of grid view with customers.](./media/custform4-1024x567.png)](./media/custform4.png)
 
 3.  On the application bar, click **Open in Microsoft Office** &gt; **Export to Excel &gt; Customers** to send the information in the grid view to a Microsoft Excel spreadsheet. (If a dialog appears asking if you’re sure you want to leave the page, click “Leave this page”.) When asked, click **Open** to view the data in Excel.
 4.  Close Excel.
@@ -137,13 +124,14 @@ Run the form to verify that it loads correctly.
 6.  Click **Close**  (or the browser Back button) to go back to the grid view.
 
 ## Apply a pattern to the form
+
 Use Visual Studio to apply the Master Details form pattern to the **Customer** form. Applying a form pattern ensures your form has the expected structure. It also simplifies the design experience by automatically setting the values of properties in the nodes that are part of the pattern.
 
 1.  Right-click **Design**, point to **Apply pattern,** and then click **Details Master**.
 
-    [![Apply Details Master form pattern](./media/custform6.png)](./media/custform6.png)
+    [![Apply Details Master form pattern.](./media/custform6.png)](./media/custform6.png)
 
-    [![Screen shot showing missing Navigation List group](./media/custform7.png)](./media/custform7.png)
+    [![Screen shot showing missing Navigation List group.](./media/custform7.png)](./media/custform7.png)
 
 2.  Add the missing Navigation List group. The red highlighting in the Patterns Information Panel indicates that this control is missing.
     1.  Right-click **Design**, point to **New**, and then click **Group**.
@@ -152,15 +140,15 @@ Use Visual Studio to apply the Master Details form pattern to the **Customer** f
 
 3.  Click **Design** again. The yellow highlighting around the **Navigation List** and the **Panel Tab** indicate that there are problems that need to be resolved under each of these nodes before the pattern can be successfully applied.
 
-    [![Click Design again](./media/custform8.png)](./media/custform8.png)
+    [![Click Design again.](./media/custform8.png)](./media/custform8.png)
 
-    [![Screen shot showing nodes with yellow highlighting](./media/custform9.png)](./media/custform9.png)
+    [![Screen shot showing nodes with yellow highlighting.](./media/custform9.png)](./media/custform9.png)
 
 4.  In the Patterns Information Panel, click **SidePanel**.
 
-    [![SidePanel selected in Information Panel](./media/custform10.png)](./media/custform10.png)
+    [![SidePanel selected in Information Panel.](./media/custform10.png)](./media/custform10.png)
 
-    [![SidePanel showing missing controls](./media/custform11.png)](./media/custform11.png)
+    [![SidePanel showing missing controls.](./media/custform11.png)](./media/custform11.png)
 
 5.  Add the missing controls.
     1.  Right-click **SidePanel**, point to **New**, and then click **QuickFilter**.
@@ -192,39 +180,39 @@ Use Visual Studio to apply the Master Details form pattern to the **Customer** f
 
 7.  Click **SidePanel**. Notice the **Patterns Information Panel** is now indicating that the controls in this subtree are in full compliance with the pattern.
 
-    ![Patterns Information Panel](./media/custform12.png)
+    ![Patterns Information Panel, design.](./media/custform12.png)
 
-    ![Patterns Information Panel](./media/custform13.png)
+    ![Patterns Information Panel, navigation list.](./media/custform13.png)
 
 8.  Click **Design** &gt; **GridDetailsTab**. The yellow highlighting around the subnodes indicates that there are problems that need to be resolved under both nodes before the form pattern can be successfully applied.
 
-    [![GridDetailsTab](./media/custform14.png)](./media/custform14.png)
+    [![GridDetailsTab.](./media/custform14.png)](./media/custform14.png)
 
-    [![Yellow highlighting around subnodes](./media/custform15.png)](./media/custform15.png)
+    [![Yellow highlighting around subnodes.](./media/custform15.png)](./media/custform15.png)
 
 9.  Notice that the pattern expects the **Grid Panel** to be after the **Details Panel.** Click **TabPageGrid** and press **Alt+Down** to move that tab below the **Details Panel**.
 10. Click **GridDetailsTab**. The **TabPageDetails** tab page now adheres to the pattern. However, the **TabPageGrid** tab page needs additional attention.
 
-    [![GridDetailsTab](./media/custform16.png)](./media/custform16.png)
+    [![GridDetailsTab in design.](./media/custform16.png)](./media/custform16.png)
 
-    [![TabPageGrid tab page needs additonal attention](./media/custform17.png)](./media/custform17.png)
+    [![TabPageGrid tab page needs additonal attention.](./media/custform17.png)](./media/custform17.png)
 
 11. Click **TabPageGrid**. Focus in the designer is now on **TabPageGrid**, and the **Patterns Information Panel** has been updated.
 
-    [![Focus on TabPageGrid](./media/custform18.png)](./media/custform18.png)
+    [![Focus on TabPageGrid.](./media/custform18.png)](./media/custform18.png)
 
-    [![Patterns Information Panel](./media/custform19.png)](./media/custform19.png)
+    [![Patterns Information Panel.](./media/custform19.png)](./media/custform19.png)
 
 12. The **Patterns Information Panel** now indicates a missing Group control at the top of the **TabPageGrid** container.
     1.  Right-click **TabPageGrid**, point to **New**, and then click **Group**.
     2.  Press **Alt+Up** two times to position the group as the first control in the group.
-    3.  In the **Properties** window, in the **Name** property, enter **GridCustomFilterGroup**. [![Enter GridCustomFilterGroup](./media/custform20.png)](./media/custform20.png)
+    3.  In the **Properties** window, in the **Name** property, enter **GridCustomFilterGroup**. [![Enter GridCustomFilterGroup.](./media/custform20.png)](./media/custform20.png)
 
 13. The pattern is looking for a subpattern to be applied to **GridCustomFilterGroup**. Right-click **GridCustomFilterGroup,** point to **Apply pattern**, and then click **Custom and Quick Filters**.
 
-    [![Click Custom and Quick Filters](./media/custform21.png)](./media/custform21.png)
+    [![Click Custom and Quick Filters.](./media/custform21.png)](./media/custform21.png)
 
-    [![Custom and Quick Filters](./media/custform22.png)](./media/custform22.png)
+    [![Custom and Quick Filters.](./media/custform22.png)](./media/custform22.png)
 
 14. The **Custom and Quick Filters** subpattern requires a QuickFilter control.
     1.  Right-click **GridCustomFilterGroup**, point to **New**, and then click **QuickFilter**.
@@ -243,13 +231,13 @@ Run the form to see the Details view and the Grid view.
 
 1.  Press **Ctrl+F5** to run the project. The following illustration shows how the grid view appears.
 
-    [![Illustration of grid view](./media/custform23-1024x599.png)](./media/custform23.png)
+    [![Illustration of grid view.](./media/custform23-1024x599.png)](./media/custform23.png)
 
 2.  Click **Phil** to go to the details view for that record. 
 
 3.  Click the **Show list** button on the left side of the form to open the navigation list. 
 
-    [![Form opened to show navigation list](./media/custform25-1024x597.png)](./media/custform25.png)
+    [![Form opened to show navigation list.](./media/custform25-1024x597.png)](./media/custform25.png)
 
 4.  To go back to the grid view, click **Close** (or the browser Back button).
 5.  Return to Visual Studio.
@@ -257,33 +245,33 @@ Run the form to see the Details view and the Grid view.
 ## Add subpatterns
 1.  In Visual Studio, in the Form designer, right-click **FmtCustomer**, point to **Addins**, and then select **Form statistics**. 
 
-    [![Form statistics selected in Form designer](./media/custform26.png)](./media/custform26.png) 
+    [![Form statistics selected in Form designer.](./media/custform26.png)](./media/custform26.png) 
 
     The **Form Statistics** add-in provides several useful data points about the state of the form. This includes:
     -   **Pattern=Unspecified count** – The number of nodes for which no form pattern or subpattern has been applied.
     -   **Pattern=Custom count** – The number of nodes for which a custom pattern was applied, meaning the structure did not fit with any existing pattern.
     -   **Pattern coverage** – The percentage of controls on the form that are covered by the form pattern or a subpattern. A value of 100% indicates a fully covered form. 
 
-        [![Dialog box showing data about the form](./media/custform27.png)](./media/custform27.png)
+        [![Dialog box showing data about the form.](./media/custform27.png)](./media/custform27.png)
 
 2.  To complete pattern coverage for this form, the Pattern=Unspecified count should be zero. Use the Visual Studio form search to find all instances of “unspecified “in the form. 
 
-    [![Example of Visual Studio from search](./media/custform28.png)](./media/custform28.png)
+    [![Example of Visual Studio from search.](./media/custform28.png)](./media/custform28.png)
 
 3.  Because the **General** tab page contains only input controls and no custom layout is required for this FastTab, the Fields and Field Groups pattern should be applied to guarantee a responsive layout. Right-click **General**, point to **Apply pattern**, and then select **Fields and Field Groups**.
 4.  On the far right of the screen, click **Clear search**. 
 
-    [![Screen shot showing Clear search option on the far right of screen](./media/custform29.png)](./media/custform29.png)
+    [![Screen shot showing Clear search option on the far right of screen.](./media/custform29.png)](./media/custform29.png)
 
 5.  Press **Ctrl+S** to save the form.
 6.  Repeat step 1 to run the **Form Statistics** add-in a second time to verify the form is fully covered by patterns. 
 
-    [![Dialog box showing 100% pattern coverage](./media/custform30.png)](./media/custform30.png)
+    [![Dialog box showing 100% pattern coverage.](./media/custform30.png)](./media/custform30.png)
 
 7.  Press **Ctrl+F5** to run the project and see the updated form.
 8.  Click **Adrian** to go to the details view. The following illustration shows how the details view now appears after applying the Fields and Field Groups subpattern so that the fields lay out responsively. By changing the browser width, you’ll see how the field layout adjusts to better fill the width of the browser. 
 
-    [![Details view after applying Fields and Field Groups subpattern](./media/custform31-1024x674.png)](./media/custform31.png)
+    [![Details view after applying Fields and Field Groups subpattern.](./media/custform31-1024x674.png)](./media/custform31.png)
 
 9.  Return to Visual Studio
 
@@ -292,14 +280,14 @@ Run the form to see the Details view and the Grid view.
 
     A notification dialog will be shown when the form patterns report has been generated. 
 
-    [![Dialog box that says the report has been generated](./media/custform33.png)](./media/custform33.png)
+    [![Dialog box that says the report has been generated.](./media/custform33.png)](./media/custform33.png)
 
 2.  Open the PatternsReport file in Excel.
 3.  Filter the report to the Fleet Management Tutorial model.
     1.  Click **Data** &gt; **Filter**.
     2.  Filter the **Model** column to FleetMgmntTutorial. 
 
-        [![Screen shot of filtered report](./media/custform34-1024x422.png)](./media/custform34.png)
+        [![Screen shot of filtered report.](./media/custform34-1024x422.png)](./media/custform34.png)
 
 
 The report shows pattern-related information regarding the forms in this model including the top-level form pattern currently applied, and the percentage of controls on the form covered by patterns. This can be used to track the remaining patterns work in one or more models.  

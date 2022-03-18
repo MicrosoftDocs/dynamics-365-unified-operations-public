@@ -3,12 +3,10 @@ title: API, class, and table resources
 description: This topic describes where to find API documentation in Visual Studio and on the Microsoft docs site.
 author: RobinARH
 ms.date: 07/23/2019
-ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
-ms.custom: 63853
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -68,6 +66,8 @@ Documentation for the classes and functions that are listed under **System Docum
 ## System classes
 
 The reference documentation for the system classes is in the .NET API browser.
+
+[API reference for finance and operations apps](/dotnet/api/fin-ops-api-landing)
 
 [Microsoft.Dynamics.Ax.Xpp namespace](/dotnet/api/microsoft.dynamics.ax.xpp)
 

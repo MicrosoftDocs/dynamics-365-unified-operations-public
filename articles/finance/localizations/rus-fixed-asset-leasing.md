@@ -4,7 +4,7 @@
 title: Create a fixed asset lease and a return from lease transaction (Russia)
 description: This topic explains how to the lease of a fixed asset and the subsequent return of the leased asset in Microsoft Dynamics 365 Finance in Russia.
 author: ShylaThompson
-ms.date: 01/18/2019
+ms.date: 07/28/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -83,6 +83,15 @@ You can register the return of a leased fixed asset in the same way that you reg
 
 > [!TIP]
 > Lease and return-from-lease transactions are reversed in the same way as acquisition transactions.
+
+## Reverse fixed asset lease and return lease from transactions
+By default, when you reverse transactions, the reversal date is equal to the original transaction date. However, you can specify a different reversal date.
+
+1. Go to **Fixed assets (Russia)** > **Fixed assets**, and on the Action Pane, select **Value models**.
+2. On the **FA value models** page, on the Action Pane, select **Transactions**.
+3. On the **FA transactions** page, select and transaction and on the Action Pane, select **Reverse transaction**.
+4. In the **Reverse transactions** dialog box, change the transaction reversal date as needed and then select **OK**. A transaction to reverse the original transaction is created and added to the **FA transactions** page.
+5. Select **Voucher**, and on the **Voucher transactions** page, view the transactions in the ledger.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

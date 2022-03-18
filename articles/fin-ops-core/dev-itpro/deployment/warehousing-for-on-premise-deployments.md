@@ -78,7 +78,7 @@ To enable Finance + Operations to use your AD FS application, you must create a 
     
     c.  Assign the warehouse mobile device user role, as shown in the example screenshot.
 
-    ![Create and configure a user](media/wmapp-users.png)
+    ![Create and configure a user.](media/wmapp-users.png)
 
 2.  Associate your AD FS application with the Warehousing app user.
 
@@ -88,7 +88,7 @@ To enable Finance + Operations to use your AD FS application, you must create a 
     
     c.  Enter the client ID that you obtained when you created an application entry in AD FS (step 2 in "Create an application entry in AD FS"). Enter a name, and select the Warehousing app user.
 
-    ![Azure Active Drectory applications ](media/azure-active-directory.png)
+    ![Azure Active Drectory applications .](media/azure-active-directory.png)
 
 ## Certificates 
 

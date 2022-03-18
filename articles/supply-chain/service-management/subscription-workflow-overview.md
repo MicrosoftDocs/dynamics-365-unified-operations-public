@@ -3,9 +3,9 @@
 
 title: Subscription workflow overview 
 description: This topic provides an overview of subscription workflow. 
-author: ShylaThompson
+author: kamaybac
 ms.date: 05/07/2018
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 
+
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 

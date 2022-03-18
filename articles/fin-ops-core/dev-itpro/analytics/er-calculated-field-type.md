@@ -4,7 +4,7 @@
 title: Support parameterized calls of ER data sources of the Calculated field type
 description: This topic provides information about how to use the Calculated field type for ER data sources.
 author: NickSelin
-ms.date: 08/06/2020
+ms.date: 01/04/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -52,10 +52,10 @@ You must also download and locally store the following files.
 
 | **Content**                           | **File name**                                        |
 |---------------------------------------|------------------------------------------------------|
-| Sample ER data model configuration    | [Model to learn parameterized calls.version.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)     |
-| Sample ER metadata configuration      | [Metadata to learn parameterized calls.version.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)  |
-| Sample ER model mapping configuration | [Mapping to learn parameterized calls.version.1.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Sample ER format configuration        | [Format to learn parameterized calls.version.1.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)  |
+| Sample ER data model configuration    | [Model to learn parameterized calls.version.1.xml](https://download.microsoft.com/download/e/5/c/e5c0d3f9-1818-47c7-ae75-46efcbb1314f/Modeltolearnparameterizedcallsversion.1.xml)     |
+| Sample ER metadata configuration      | [Metadata to learn parameterized calls.version.1.xml](https://download.microsoft.com/download/8/3/a/83a910a5-bf65-4509-bec4-6737a81ecc45/Metadatatolearnparameterizedcalls.version.1.xml)  |
+| Sample ER model mapping configuration | [Mapping to learn parameterized calls.version.1.1.xml](https://download.microsoft.com/download/b/f/d/bfd8cbd8-0370-44d1-a1b1-66d021c580ca/Mappingtolearnparameterizedcalls.version.1.1.xml) |
+| Sample ER format configuration        | [Format to learn parameterized calls.version.1.1.xml](https://download.microsoft.com/download/8/1/d/81deb6d8-a768-4fcf-bbbe-8f84d2dac3eb/Formattolearnparameterizedcalls.version.1.1.xml)  |
 
 ## Sign in to your RCS instance
 In this example, you will create a configuration for the sample company, Litware, Inc. First, in RCS, you must complete the steps in the [Create configuration providers and mark them as active](tasks/er-configuration-provider-mark-it-active-2016-11.md) procedure:
@@ -92,7 +92,7 @@ In this example, you will create a configuration for the sample company, Litware
 
     The model mapping in this configuration implements the base data model for any of the ER formats created for this model and executed in Finance and Operations. As a result, the content of the **Tax** and **Gr** data sources is exposed for ER formats such as abstract data sources.
 
-    ![Model mapping designer page showing Tax and Gr data sources](media/er-calculated-field-type-01.png)
+    ![Model mapping designer page showing Tax and Gr data sources.](media/er-calculated-field-type-01.png)
 
 5.  Close the **Model mapping designer** page.
 6.  Close the **Model mapping** page.
@@ -107,21 +107,21 @@ In this example, you will create a configuration for the sample company, Litware
     - Present the following levels of taxation in the tax statement: regular, reduced, and none.
     - Present multiple details at each taxation level, having a different number of details in each level.
 
-    ![Format designer page](media/er-calculated-field-type-02.png)
+    ![Format designer page.](media/er-calculated-field-type-02.png)
 
 4. Select **Mapping**.
 5. Expand the **Model**, **Data,** and **Summary** items. 
 
     The calculated field **Model.Data.Summary.Level** contains the expression that returns the code of the taxation level (**Regular**, **Reduced**, **None,** or **Other**) as a text value for any tax code that can be retrieved from the **Model.Data.Summary** data source at run time.
 
-    ![Format designer page showing details of the Data model Model to learn parameterized calls](media/er-calculated-field-type-03.png)
+    ![Format designer page showing details of the Data model Model to learn parameterized calls.](media/er-calculated-field-type-03.png)
 
 6. Expand the **Model**.**Data2** item.
 7. Expand the **Model**.**Data2.Summary2** item.
    
     The **Model**.**Data2.Summary2** data source is configured to group the **Model.Data.Summary** data source transaction details by taxation level (returned by the **Model.Data.Summary.Level** calculated field) and compute the aggregations.
 
-    ![Format designer page showing details of the Model.Data2.Summary2 data source](media/er-calculated-field-type-04.png)
+    ![Format designer page showing details of the Model.Data2.Summary2 data source.](media/er-calculated-field-type-04.png)
 
 8. Review the calculated fields **Model**.**Data2.Level1**, **Model**.**Data2.Level2**, and **Model**.**Data2.Level3.** These calculated fields are used to filter the **Model**.**Data2.Summary2** records list and return only records that represent a particular taxation level.
 9. Close the **Format designer** page.
@@ -161,7 +161,7 @@ You can improve the provided format by adding one calculated field to filter the
 
     The maximum number of parameters that can be specified for a single calculated field is 8.
 
-    ![Parameter data source list](media/er-calculated-field-type-05.png)
+    ![Parameter data source list.](media/er-calculated-field-type-05.png)
 
 5. Select **OK**.
 
@@ -171,7 +171,7 @@ By adding this parameter, you specify the condition that must be in place to cal
 
    The configured parameter is available in the list of data sources for this calculated field. You can add the parameter to the configured expression by selecting **Add data source**.
 
-   ![Data source fields](media/er-calculated-field-type-06.png)
+   ![Data source fields.](media/er-calculated-field-type-06.png)
 
 ### Define an expression for adding a calculated field
 
@@ -187,7 +187,7 @@ By adding this parameter, you specify the condition that must be in place to cal
 
 5. Select **Save**.
 
-    ![Data source field information](media/er-calculated-field-type-07.png)
+    ![Data source field information.](media/er-calculated-field-type-07.png)
 
 6. Close the **Formula designer** page.
 
@@ -197,7 +197,7 @@ By adding this parameter, you specify the condition that must be in place to cal
 
 On the **Format designer** page, the configured parameterized calculated field **Levels** requires a **String** argument.
 
-![Expanded list of calculated field levels](media/er-calculated-field-type-08.png)
+![Expanded list of calculated field levels.](media/er-calculated-field-type-08.png)
 
 ### Use the configured calculated field for binding format elements
 
@@ -226,7 +226,7 @@ Recurrent calls of any parameterized calculated field are not supported.
 
 You can select **Edit formula**, and change the applied-by-default argument of the parameterized calculated field in the selected binding. If this argument is missing, it can cause errors at run time — users are informed about such a situation when the current format is validated.
 
-![Validation warning notification](media/er-calculated-field-type-10.png)
+![Validation warning notification.](media/er-calculated-field-type-10.png)
 
 ## Configure a parameterized calculated field to return a record
 When a parameterized calculated field returns a record, you need to support binding of individual fields of this record to format elements. In such cases there will be no parent binding that contains the value of an argument to call a parameterized calculated field — this value must be defined in the binding of a single record’s field.
@@ -278,7 +278,7 @@ When a parameterized calculated field returns a record, you need to support bind
 8. Select **Edit formula**.
 9. Change the expression to **Model.Data2.LevelRecord("None").aggregated.Base**.
 
-![Updated expression](media/er-calculated-field-type-11.png)
+![Updated expression.](media/er-calculated-field-type-11.png)
 
 ## Remove calculated fields that are not used
 

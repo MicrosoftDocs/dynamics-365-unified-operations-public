@@ -52,7 +52,7 @@ Follow these steps to verify that the configuration that you want to share has a
 
 1. In the **Electronic reporting** workspace, select **Repositories** for your configuration provider.
 
-    ![Configuration providers](media/1_RCS_Repo_for_config_provider.JPG)
+    ![Configuration providers.](media/1_RCS_Repo_for_config_provider.JPG)
 
 2. Select **Global repository** \> **Open**.
 3. Search for the configuration that you want to share. You can use the filter field to narrow your search. If you can't find the configuration in the Global repository, follow the steps in [Create and upload a new version of an Electronic reporting (ER) configuration](rcs-global-repo-upload.md).
@@ -66,11 +66,11 @@ After a configuration has been created under your configuration provider, you ca
 3. Select the configuration that you want to share.
 4. On the **Shared with** FastTab, select **Organization**.
 
-    ![Shared with FastTab](media/1_RCS_Repo_for_Share_with_org.JPG)
+    ![Shared with FastTab.](media/1_RCS_Repo_for_Share_with_org.JPG)
 
 5. In the dialog box, enter the domain name for the external organization, and then select **OK**.
 
-    ![Share configuration version with external organization dialog box](media/1_RCS_Repo_for_Share_with_form.JPG)
+    ![Share configuration version with external organization dialog box.](media/1_RCS_Repo_for_Share_with_form.JPG)
 
 The configuration is shared with the external organization and is available to that organization in the Global repository. From there, it can be imported into the organization's instance of RCS or into its instances of Finance and Operations apps.
 

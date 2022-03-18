@@ -32,27 +32,27 @@ This tutorial describes the steps that you must follow to make business events w
 
 1. In Azure portal, create an Active Directory application registration. Make a note of the application ID.
 
-    ![Application (client) ID value](../../media/BE_EH_aad.PNG)
+    ![Application (client) ID value.](../../media/BE_EH_aad.PNG)
 
 2. Give the app, permission to the Azure Key Vault application programming interface (API).
 
-    ![Giving the app permission to the Azure Key Vault API](../../media/BE_EH_api.png)
+    ![Giving the app permission to the Azure Key Vault API.](../../media/BE_EH_api.png)
 
 3. In the app registration, create an application secret. Make a note of the value.
 
-    ![Creating an application secret](../../media/BE_EH_secret.jpg)
+    ![Creating an application secret.](../../media/BE_EH_secret.jpg)
 
 4. In the key vault, give permission to the new app registration.
 
-    ![Giving the key vault permission to the app registration](../../media/BE_EH_permission.jpg)
+    ![Giving the key vault permission to the app registration.](../../media/BE_EH_permission.jpg)
 
 5. In the key vault, create a new secret. The value of this secret must be the connection string to your event hub. Make a note of the value.
 
-    ![Connection string](../../media/BE_EH_connectionstring.jpg)
+    ![Connection string.](../../media/BE_EH_connectionstring.jpg)
 
 6. Create an endpoint configuration for the event hub. Go to **System administration \> Setup \> Business events \> Business events catalog**, and then, on the **Endpoints** tab, select **New** to open the **Configure new endpoint** wizard.
 
-    ![Configure new endpoint wizard](../../media/BE_EH_endpointconfig.jpg)
+    ![Configure new endpoint wizard.](../../media/BE_EH_endpointconfig.jpg)
 
 7. In the **Endpoint type** field, select **Azure Event Hub**.
 8. Select **Next**.

@@ -100,11 +100,11 @@ Receiving a 500 error when accessing the application URL is an indication that t
 ## AD FS
 The second part of the authentication process is AD FS itself. On the AD FS server if you open AD FS Management ((from **Control Panel > System and Security > Administrative Tools**), and go to **Application groups**, you'll find a group called **Microsoft Dynamics 365 for Operations On-premises**. Within this group, the settings for AD FS for your Dynamics 365 application are stored.
 
-![AD FS application group setup](media/ADFS.png)
+![AD FS application group setup.](media/ADFS.png)
 
 AD FS uses the client ID and the URLs to determine whether the request for access should be honored. You will notice that the client ID from the screenshot above matches the IDs specified in the OfficeApps and OpenIDConnect sections from earlier. If both the client ID and the redirect URL don't match what the AOS is requesting, then AD FS will deny the request to authenticate. If that happens, you'll find an error in the event log on the AD FS server. There's a special event log for AD FS under **Application and Services logs > AD FS > Admin**.
 
-![AD FS event log error](media/ADFSredirectwrong.png)
+![AD FS event log error.](media/ADFSredirectwrong.png)
 
 If any of the AD FS application group setup is incorrect, you're likely see an error in the event log that explains the value it was looking for, so you can determine what is set incorrectly.
 

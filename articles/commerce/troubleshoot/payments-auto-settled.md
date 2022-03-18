@@ -48,7 +48,7 @@ To configure manual capture for e-commerce payments in the Adyen portal, follow 
 1. On the top navigation, select **Account**, and then select **Settings**.
 1. In the **Capture Delay** field, select **manual**.
 
-    ![Capture Delay setting in the Adyen portal](media/adyen-capture-delay.jpg)
+    ![Capture Delay setting in the Adyen portal.](media/adyen-capture-delay.jpg)
 
 ## Additional resources
 

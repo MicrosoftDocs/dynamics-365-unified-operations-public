@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 This topic describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3557. The numbers in parentheses next to some features refer to Lifecycle Services (LCS) support numbers for reference.
 
@@ -105,9 +105,9 @@ This feature also promotes the workflow options that appear in the personnel act
 
 - [Organization and personnel management workflow experience enhancements](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) in the Dynamics 365 2020 release wave 2 plan
 
-![Work items assigned to me](./media/hr-workflow-work-items-assigned-to-me.png)
+![Work items assigned to me.](./media/hr-workflow-work-items-assigned-to-me.png)
 
-![Workflow items quick access](./media/hr-workflow-quick-access.png)
+![Workflow items quick access.](./media/hr-workflow-quick-access.png)
 
 ### Leave and absence calendar
 

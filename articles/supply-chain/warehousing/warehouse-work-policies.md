@@ -21,7 +21,7 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
-ms.dyn365.ops.version: Release 10.0.13
+ms.dyn365.ops.version: 10.0.13
 ---
 
 # Work policies
@@ -204,7 +204,7 @@ The purchase order is now received, but no work is associated with it. The on-ha
 
 In the following example, there are two production orders, *PRD-001* and *PRD-002*. Production order *PRD-001* has an operation that is named *Assembly*, where product *SC1* is being reported as finished to location *001*. Production order *PRD-002* has an operation that is named *Painting* and consumes product *SC1* from location *001*. Production order *PRD-002* also consumes raw material *RM1* from location *001*. Raw material *RM1* is stored in warehouse location *BULK-001* and will be picked to location *001* by warehouse work for raw material picking. The picking work is generated when production *PRD-002* is released.
 
-[![Warehouse work policies](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png)
+[![Warehouse work policies.](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png)
 
 When you're planning to configure a warehouse work policy for this scenario, you should consider the following points:
 

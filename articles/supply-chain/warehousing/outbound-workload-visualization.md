@@ -21,7 +21,7 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
 ms.search.validFrom: 2020-08-28
-ms.dyn365.ops.version: Release 10.0.13
+ms.dyn365.ops.version: 10.0.13
 ---
 
 # Outbound workload visualization
@@ -32,12 +32,9 @@ Advanced setup capabilities that are accessible from the **Outbound workload vis
 
 This functionality can be used to track the progress of picking work. The feature is integrated with labor management, and if labor management is set up, outbound workload visualizations can show a calculation of the number of hours that remain for the picking work that is shown (filtered).
 
-## Turn on the Outbound workload visualization feature
+## Turn the Outbound workload visualization feature on or off
 
-Before you can use this feature, it must be turned on in your system. Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** *Warehouse management*
-- **Feature name:** *Outbound workload visualization*
+As of Supply Chain Management version 10.0.25, this feature is turned on by default. Admins can turn this functionality on or off by searching for the *Outbound workload visualization* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Set up outbound workload visualizations
 
@@ -65,7 +62,7 @@ To set up an outbound workload visualization, follow these steps.
     - **Days to include** – Enter the number of days in the past that the chart should be generated for.
     - **Work order type** – Select the outbound work order types to filter on.
 
-    ![Configure filters page](media/work-viz-filters-1.png "Configure filters page")
+    ![Configure filters page.](media/work-viz-filters-1.png "Configure filters page")
 
 1. Close the **Configure filters** page to return to the **Outbound workload visualizations** page.
 
@@ -75,11 +72,11 @@ To set up an outbound workload visualization, follow these steps.
     - **Last refreshed** – This field shows the date and time when the information in the chart was last updated.
     - **Estimated/actual time** – If labor standards are set up in your system, set this option to *Yes* to show accumulated estimated picking times at the top of each column in the chart. If you aren't using labor standards, this option is unavailable.
 
-    ![Example visualization](media/work-viz-chart.png "Example visualization")
+    ![Example visualization.](media/work-viz-chart.png "Example visualization")
 
 1. Select any bar in the chart to view the associated work line details.
 
-    ![Work line details](media/work-viz-work-details.png "Work line details")
+    ![Work line details.](media/work-viz-work-details.png "Work line details")
 
 ## Example: Outbound workload visualization for zones
 
@@ -97,7 +94,7 @@ For this example, you want to set up a visualization that shows work lines for e
 
 The following illustration shows an example of the resulting chart.
 
-![Zone vs. work status visualization](media/work-viz-chart.png "Zone vs. work status visualization")
+![Zone vs. work status visualization.](media/work-viz-chart.png "Zone vs. work status visualization")
 
 This chart shows two zones that are named **FLOOR** and **BULK**, plus a zone that is named **Blank**. The **Blank** zone represents all work lines that aren't members of any zones. The chart always shows all unrelated filtered data as **Blank**, to provide as much visibility as possible. In the **FLOOR** zone, the chart shows three closed lines and four open lines. In the **BULK** zone, the chart shows four closed lines, one open line, and 24 canceled lines. Finally, the chart shows eight closed lines that aren't part of any zone and are therefore listed as **Blank**.
 

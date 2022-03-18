@@ -15,7 +15,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 # ms.tgt_pltfrm: 
-ms.custom: 
+ms.custom: "intro-internal"
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -26,11 +26,14 @@ ms.dyn365.ops.version: Human Resources
 
 # Applicant Tracking System integration API introduction
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This topic describes the Dynamics 365 Human Resources Applicant Tracking System (ATS) integration API. The intent of the API is to enable streamlined integrations between Dynamics 365 Human Resources and partnering ATSs.
 
-![ATS integration flow](media/hr-admin-integration-ats-api-introduction-flow.png)
+![ATS integration flow.](media/hr-admin-integration-ats-api-introduction-flow.png)
 
 The integrated experience begins in Human Resources when a hiring manager creates a recruiting request. When the request is activated, the ATS pulls the detail for the request to create a recruiting project. Then it follows the recruiting pipeline to select and hire a candidate for the position(s). Finally, the ATS completes the round-trip integration by sending the selected candidate’s record into Human Resources. The candidate record can then go through more onboarding validations and workflows to create the employee record.
 
@@ -73,7 +76,7 @@ The data model is centered around two main entities:
 
 The following diagram illustrates relationships within the API. Several types have foreign keys to other, pre-existing entities in Human Resources that aren't illustrated here. This document provides information on entities that are specific to recruiting integration scenarios. However, there are many other entities in the Dataverse Web API for Dynamics 365 Human Resources that may also be relevant to your integration. For example, you may also need detail for workers, jobs, positions, or other entities not defined here. Many of these entities are referenced in foreign key relationships or navigation properties.
 
-![ATS Integration API data model](media/hr-admin-integration-ats-api-data-model.png)
+![ATS Integration API data model.](media/hr-admin-integration-ats-api-data-model.png)
 
 ## Recruiting request and related entities and option sets
 

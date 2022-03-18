@@ -38,7 +38,7 @@ The withdrawal kanban can be used to move a kanban of a single item between ware
 
 The following scenario shows a pull-based replenishment system where a pull signal triggers the creation of a kanban to replenish material for a production process. 
 
-[![Pull signal triggers the creation of a kanban to replenish material for a production process](./media/material-replenishment-with-withdrawal-kanban.png)](./media/material-replenishment-with-withdrawal-kanban.png)
+[![Pull signal triggers the creation of a kanban to replenish material for a production process.](./media/material-replenishment-with-withdrawal-kanban.png)](./media/material-replenishment-with-withdrawal-kanban.png)
 
 1.  Withdrawal kanban
 2.  Kanban “from” location and put location for warehouse work
@@ -75,7 +75,7 @@ If the distance between the warehouse locations and the production input locatio
 
 In the following scenario, the transfer activity of the withdrawal kanban is configured to transfer between two locations in the same warehouse. The transfer activity of the withdrawal kanban is set up so that it’s completed automatically. 
 
-[![Transfer activity is automatically completed when kanban picking work is processed](./media/transfer-activities-when-processing-kanban-picking.png)](./media/transfer-activities-when-processing-kanban-picking.png)
+[![Transfer activity is automatically completed when kanban picking work is processed.](./media/transfer-activities-when-processing-kanban-picking.png)](./media/transfer-activities-when-processing-kanban-picking.png)
 
 1.  Shared warehouse for raw materials and production
 2.  Warehouse locations for raw materials

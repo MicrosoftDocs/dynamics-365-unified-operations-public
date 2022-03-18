@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 13671
 ms.assetid: 9b4f244c-f058-416c-b3c2-6f4ca29c8db8
@@ -40,7 +40,7 @@ For this tutorial, you’ll need to access the environment using Remote Desktop,
 ## Overview
 To create the form, you’ll start from the existing form, **FmtChargeType**. This form uses the Simple List pattern. The following illustration shows the **FmtChargeType** form with the required controls from the Simple List pattern. 
 
-[![Screen shot of FmtChargeType form](./media/rentalcharge1.png)](./media/rentalcharge1.png) 
+[![Screen shot of FmtChargeType form.](./media/rentalcharge1.png)](./media/rentalcharge1.png) 
 
 Adhering to the form pattern ensures that this Simple List form has the same structure and layout as other Simple List forms.
 
@@ -63,7 +63,7 @@ Use Visual Studio to import the tutorial project. The tutorial project includes 
 6.  In the **Project file location** text box, enter C:\FMLab.
 7.  Select the **Overwrite Elements** option, and the **Current solution** radio button. The following illustration shows the completed **Import Project** dialog box. 
 
-    [![Screen shot of completed Import Project dialog box](./media/rentalcharge2.png)](./media/rentalcharge2.png)
+    [![Screen shot of completed Import Project dialog box.](./media/rentalcharge2.png)](./media/rentalcharge2.png)
 
 8.  Click **OK**.
 9.  In **Solution Explorer**, expand **Classes, and** under the **FMTutorial** project, right-click **FMTDataHelper**, and then click **Set as Startup Object**.
@@ -94,7 +94,7 @@ Use Visual Studio to create the **FmtChargeType** form. You’ll use a template 
 
     The following illustration shows **Data Sources** after you add the **FMTChargeType** table. 
 
-    [![Screen shot of Data Sources after you add FMTChargeType table](./media/rentalcharge3.png)](./media/rentalcharge3.png)
+    [![Screen shot of Data Sources after you add FMTChargeType table.](./media/rentalcharge3.png)](./media/rentalcharge3.png)
 
 6.  In the Form designer, click **Design**. In the **Properties** window, populate the following properties with the specified values.
 
@@ -111,7 +111,7 @@ Use Visual Studio to create the **FmtChargeType** form. You’ll use a template 
 
 10. Drag the selected fields to **Design** &gt; **Grid** in the right pane. The following illustration shows the grid after the grid node is expanded and the two fields are added. 
 
-    [![Screen shot showing grid after the grid node is expanded](./media/rentalcharge4.png)](./media/rentalcharge4.png)
+    [![Screen shot showing grid after the grid node is expanded.](./media/rentalcharge4.png)](./media/rentalcharge4.png)
 
 11. In the Form designer, click **Design &gt; CustomFilterGroup &gt; QuickFilter**.
 12. In the **Properties** window, click **TargetControl**, and then select **Grid** to bind the **QuickFilter** control to the grid on the form.
@@ -132,7 +132,7 @@ Use Visual Studio to build and run the **FmtChargeType** form.
 5.  In the Action Pane, click **Save**.
 6.  Refresh the browser to see the new record in the list. The following illustration shows how the form should look.
 
-    [![Screen shot of how the form should look](./media/rentalcharge5.png)](./media/rentalcharge5.png)
+    [![Screen shot of how the form should look.](./media/rentalcharge5.png)](./media/rentalcharge5.png)
 
 7.  The form opens in view mode. Click **Edit** in the Action Pane to switch the form into edit mode. To return to view mode, click **Options** and then **Read mode**.
 

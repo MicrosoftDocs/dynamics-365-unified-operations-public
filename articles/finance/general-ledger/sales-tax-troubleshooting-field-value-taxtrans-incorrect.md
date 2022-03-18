@@ -3,7 +3,7 @@
 
 title: Incorrect field value in TaxTrans
 description: This topic provides information about troubleshooting incorrect field values in TaxTrans.
-author: bijian
+author: EricWangChen
 ms.date: 04/27/2021
 ms.topic: article
 ms.prod: 

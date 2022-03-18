@@ -41,7 +41,7 @@ The **Work order purchase requisition** list page (**Asset management** > **Comm
 
 The illustration below shows an example of the **Work order purchase requisition** list page.
 
-![Figure 1](media/08-work-orders.png)
+![Figure 1.](media/08-work-orders.png)
 
 
 The **Work order purchase** list page (**Asset management** > **Common** > **Procurement** > **Work order purchase**) shows a list of purchase orders that are related to work orders. When you select a work order job on this page, you can use the buttons in the **Show** group on the **Work order purchase** tab of the Action Pane to perform various actions:
@@ -52,7 +52,7 @@ The **Work order purchase** list page (**Asset management** > **Common** > **Pro
 
 The illustration below shows an example of the **Work order purchase** list page.
 
-![Figure 2](media/09-work-orders.png)
+![Figure 2.](media/09-work-orders.png)
 
 
 On both the **Work order purchase** list page and the **Work order purchase requisition** list page, a symbol that is related to delivery date control appears on the right side of each line. If the symbol is an exclamation point in a red circle, delivery of the related purchase order or purchase requisition might be delayed.
@@ -98,7 +98,7 @@ To view or enter the activity number that is related to a purchase order line, o
 
 The illustration below shows an example of the **Purchase order** page, with focus on the **Activity number**.
 
-![Figure 3](media/10-work-orders.png)
+![Figure 3.](media/10-work-orders.png)
 
 Likewise, to view or enter the activity number that is related to a work order purchase requisition line, on the **Work order purchase requisition** list page, select the purchase requisition record, and then, in the **Purchase requisition** column, select the link for the purchase requisition. You can find the **Activity number** field on the **Project** tab of the **Line details** FastTab.
 

@@ -2,9 +2,9 @@
 # required metadata
 
 title: Human Resources virtual tables FAQ
-description: This topic is a list of frequently asked questions about Human Resources virtual entities.
+description: This topic provides answers to some frequently asked questions about Human Resources virtual entities.
 author: jaredha
-ms.date: 05/26/2021
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -26,9 +26,12 @@ ms.dyn365.ops.version: 10.0.12
 
 # Human Resources virtual tables FAQ
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This topic is a collection of frequently asked questions about virtual tables in Dynamics 365 Human Resources.
+This topic provides answers to some frequently asked questions about virtual tables in Dynamics 365 Human Resources.
 
 > [!NOTE]
 > For more information about Dataverse (formerly Common Data Service) and terminology updates, see [What is Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)
@@ -123,7 +126,7 @@ If the **Install virtual table app** action on the **Microsoft Dataverse integra
 
 The installation takes a few minutes. When it completes, the **Finance and Operations Virtual Data Source Configurations** entity is generated in the environment.
 
-![Install the Dynamics 365 HR Virtual Table app from the Power Platform admin center](media/hr-admin-integration-virtual-entities-power-platform-install.jpg)
+![Install the Dynamics 365 HR Virtual Table app from the Power Platform admin center.](media/hr-admin-integration-virtual-entities-power-platform-install.jpg)
 
 ### Can I generate virtual tables for HR from my Power Apps environment?
 

@@ -4,7 +4,7 @@
 title: Design ER configurations to fill in PDF templates
 description: This topic provides information about how to design an Electronic reporting (ER) format to fill in a PDF template.
 author: NickSelin
-ms.date: 03/24/2021
+ms.date: 02/28/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -123,11 +123,11 @@ In any PDF viewer, open the PDF templates that you downloaded. Notice that each 
 
 The following illustration shows the PDF template for the first page of the report.
 
-![Template 1](media/rcs-ger-filloutpdf-template1.png)
+![Template 1.](media/rcs-ger-filloutpdf-template1.png)
 
 The following illustration shows the PDF template for other pages of the report.
 
-![Template 2](media/rcs-ger-filloutpdf-template2.png)
+![Template 2.](media/rcs-ger-filloutpdf-template2.png)
 
 1. On the **Configurations** page, select **Designer**.
 2. Select **Add root**.
@@ -154,7 +154,7 @@ The following illustration shows the PDF template for other pages of the report.
 
 12. Select **OK**.
 
-    ![Import from PDF dialog box](media/rcs-ger-filloutpdf-importtemplate.png)
+    ![Import from PDF dialog box.](media/rcs-ger-filloutpdf-importtemplate.png)
 
 13. In the tree, expand **Output**.
 
@@ -184,7 +184,7 @@ The following illustration shows the PDF template for other pages of the report.
 
     Notice that the imported PDF document is attached to the edited ER format.
 
-    ![PDF attachment preview](media/rcs-ger-filloutpdf-attachedtemplate.png)
+    ![PDF attachment preview.](media/rcs-ger-filloutpdf-attachedtemplate.png)
 
 19. Continue to design this format by importing the second PDF template, adding necessary bindings to data sources, and so on.
 20. Select **Save**.
@@ -223,7 +223,7 @@ Next, you will import the sample ER format that you previously downloaded to gen
 1. On the **Format designer** page, select the **Mapping** tab.
 2. In the tree, expand **Paging \> Pages**.
 
-    ![Formula designer page where the model tree is expanded](media/rcs-ger-filloutpdf-reviewformat.png)
+    ![Formula designer page where the model tree is expanded.](media/rcs-ger-filloutpdf-reviewformat.png)
 
     Note the following details:
 
@@ -246,7 +246,7 @@ Next, you will import the sample ER format that you previously downloaded to gen
 
     Notice that the **Name** attribute of this format element is defined as **Correction 1**. Also notice that the **Name** expression of the format element is defined as **Paging.FldName("Correction",\@.Number)**.
 
-![Format designer where a mapping is selected](media/rcs-ger-filloutpdf-reviewformat2.png)
+![Format designer where a mapping is selected.](media/rcs-ger-filloutpdf-reviewformat2.png)
 
 Note that the **Field** format element is used to fill in an individual field of a fillable PDF document that is defined as a template of the parent **PDF File** format element. The binding of the **PDF File** format element or its nested elements, if it has any nested elements, specifies the value that is entered in corresponding PDF fields. Different properties of the **Field** format element can be used to specify which PDF field is filled in by an individual format element:
 
@@ -283,7 +283,7 @@ Next, you will load the **Intrastat (import from Excel)** sample ER format. This
 
     When the **Default for model mapping** option is set to **Yes**, the imported **Intrastat (import from Excel)** ER format is assigned as the default data source for the **Intrastat report (PDF)** format configuration. Then, when the **Intrastat report (PDF)** format configuration is run, the content of the Excel workbook that is parsed by the **Intrastat (import from Excel)** ER format will simulate foreign trade transactions that must be reported. The following illustration shows an example of an Excel workbook.
 
-    ![Excel workbook that has sample data](media/rcs-ger-filloutpdf-excelworkbook.png)
+    ![Excel workbook that has sample data.](media/rcs-ger-filloutpdf-excelworkbook.png)
 
 ### Run the format configuration
 
@@ -297,11 +297,25 @@ Next, you will load the **Intrastat (import from Excel)** sample ER format. This
 
 The follow illustration shows an example of the first page of the report that is generated.
 
-![First page of the generated report](media/rcs-ger-filloutpdf-generatedreport.png)
+![First page of the generated report.](media/rcs-ger-filloutpdf-generatedreport.png)
 
 The follow illustration shows an example of another page of the report that is generated.
 
-![Other page of the generated report](media/rcs-ger-filloutpdf-generatedreport2.png)
+![Other page of the generated report.](media/rcs-ger-filloutpdf-generatedreport2.png)
+
+## Limitations
+
+The names of fillable fields should be unique in the PDF form that you plan to use as a report template. For every such field, an individual format element with the corresponding name is created in the editable ER format when a PDF form is imported. If a PDF form contain several fields with the same name, a single format element is created for the fields that doesn't allow them to be individually filled in at runtime.
+
+## Frequently asked questions
+
+### When I run the ER format to generate a report in PDF format, why do I get the following errors:  **Cannot handle iref streams. The current implementation of PDFSharp cannot handle this PDF feature introduced with Acrobat 6.** and **A PDF name must start with a slash (/).**
+
+The ER framework uses version 1.5 of the PDFSharp library to generate these PDF reports. Some features of PDF 1.5 (Adobe Reader 6.0) are not yet implemented in this library. Therefore, PDFSharp can't yet open some files that are marked as **for PDF 1.5 or higher** and can result in the errors received. Use one of the following solutions to resolve the issue:
+
+-   When you use your own PDF template: Downgrade the template to an earlier Adobe version and start using a new template in your ER format.
+-   When you use an ER format template that was shared with you by another configuration provider as part of an ER solution: Contact the owner of this ER solution and provide a description of the issue.
+-   When you use the ISV solution that contains an earlier version of the PDFSharp library: Contact the owner of the solution and suggest an upgrade to the newer PDFSharp version.
 
 ## Additional resources
 

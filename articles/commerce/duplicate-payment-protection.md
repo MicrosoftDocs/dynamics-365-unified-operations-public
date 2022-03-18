@@ -3,7 +3,7 @@
 
 title: Duplicate payments prevention
 description: This topic describes how Dynamics 365 Commerce helps to prevent duplicate payments in the Modern POS.
-author: rubendel
+author: BrianShook
 ms.date: 10/23/2020
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2018-11-01
 ms.dyn365.ops.version: AX 7.0.1
 
@@ -98,7 +98,7 @@ If there is an unrecovered payment and the cashier takes one of the following ac
 - Attempts to void the transaction.
 - Attempts to suspend the transaction.
 
-![Recover Payment](media/Payments/Duplicate-Payment-Protection/Recover-Payment.png)
+![Recover Payment.](media/Payments/Duplicate-Payment-Protection/Recover-Payment.png)
 
 When the cashier clicks **OK**, the payment is recovered and added as a payment line to the cart.
 
@@ -120,7 +120,7 @@ In some cases, the cashier might explicitly choose to skip the duplicate payment
 
     A new dialog box will appear indicating that a recovered payment is available. Click **Ignore** to skip the payment recovery.
 
-![Skip Payment Recovery](media/Payments/Duplicate-Payment-Protection/Void-Transaction.png)
+![Skip Payment Recovery.](media/Payments/Duplicate-Payment-Protection/Void-Transaction.png)
 
 ### What to do if the customer leaves the store
 

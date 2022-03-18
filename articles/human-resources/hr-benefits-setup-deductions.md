@@ -3,8 +3,8 @@
 
 title: Configure deductions
 description: Use deductions in Microsoft Dynamics 365 Human Resources to determine how much, if any, to deduct from an employee’s paycheck for each benefit.
-author: andreabichsel
-ms.date: 04/06/2020
+author: twheeloc
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,13 +21,16 @@ ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
 ---
 
 # Configure deductions
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -50,7 +53,7 @@ Use deductions in Microsoft Dynamics 365 Human Resources to determine how much, 
    | **Amount heading** | The heading code from the payroll system that this deduction amount will use for the employee portion of the deduction when processing the benefits to payroll. This is normally used when you use a third-party payroll provider. |
    | **Can delete** | Specifies whether an exported value from Dynamics 365 for Finance and Operations can cause the value to be deleted in the payroll system. |
    | **Paired columns** | Specifies whether to export heading and deduction amount in paired adjacent columns to the payroll system. |
-   | **Change effective date** | The date when the benefit deduction change will become effective. On this date, the system automatically changes the benefit deduction and updates all benefit plans associated with this deduction, as long as you run **Deduction change update** processing. |
+   | **Change effective date** | The date when the benefit deduction change will become effective. On this date, the benefit deduction changes and all benefit plans associated with this deduction are updated, as long as you run **Deduction change update** processing. |
    | **Deduction change completed** | The **Deduction change completed** check box will be automatically selected once the benefit deduction changes have been completed by Deduction update change processing. |
    
 4. To track and maintain changes to the benefit rate setup, select **Actions**, and then select **Maintain versions**.

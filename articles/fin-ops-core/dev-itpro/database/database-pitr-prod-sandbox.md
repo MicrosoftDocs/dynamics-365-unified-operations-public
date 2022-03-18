@@ -4,7 +4,7 @@
 title: Point-in-time restore of the production database to a sandbox environment
 description: This topic describes how to use Microsoft Dynamics Lifecycle Services to do a point-in-time restore of the production database.
 author: LaneSwenka
-ms.date: 05/24/2021
+ms.date: 11/01/2021
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -67,6 +67,7 @@ When you refresh a production environment to a sandbox environment, or a sandbox
 * All batch jobs will be set to **Withhold** status.
 * All users will have their partition value reset to the "initial" partition record ID.
 * All Microsoft-encrypted fields will be cleared, because they can't be decrypted on a different database server. An example is the **Password** field in the SysEmailSMTPPassword table.
+* Dual-write configuration.  To setup a new link on the target environment after this operation is successful, see [Dual-write environment linking](../data-entities/dual-write/link-your-environment.md).
 
 Some of these elements aren't copied because they are environment-specific. Examples include BatchServerConfig and SysCorpNetPrinters records. Other elements aren't copied because of the volume of support tickets. For example, duplicate emails might be sent because SMTP is still turned on in the UAT environment, invalid integration messages might be sent because batch jobs are still enabled, and users might be enabled before admins can perform post-refresh cleanup activities.
 
@@ -100,7 +101,11 @@ Here is the list of requirements and conditions of operation for a database refr
 
 ## Known issues
 
-### Restore is denied for environments that run Platform update 20 or earlier
+### The Restore operation fails if the sandbox customizations are incompatible with production data
+
+Even if a customization is successfully added to the sandbox environment (that is, the customer's AOT deployable package is successfully installed via LCS), it might not succeed for production data. For example, a customer adds a unique index on **Vendor Name** to the VendTable table. This customization can be successfully installed if there are no duplicate vendor names in the sandbox environment. However, when the production database is brought in as part of the Restore operation, installation might fail if there are duplicates in the dataset that is inbound to the sandbox environment. Duplicates in this dataset aren't supported. Therefore, you must remove the customization before you can have a successful Restore operation.
+
+### The Restore operation is denied for environments that run Platform update 20 or earlier
 
 The database refresh process can't currently be completed if the environment is running Platform update 20 or earlier. For more information, see the [list of currently supported platform updates](../migration-upgrade/versions-update-policy.md).
 
@@ -134,7 +139,7 @@ Conversely, if your production environment is newer than your target sandbox env
 
 ### The source and target are on different infrastructure (Microsoft-managed vs. self-Service)
 
-The PITR process is not supported between Microsoft-managed and self-service environments across different regions. For example, if the production environment is Microsoft-managed and in East US2 and a PITR is needed to the sandbox environment, which is self-service and in East US, PITR is not supported. The alternative is to move the production environment to self-service or opt for a regular database refresh instead.
+The PITR process is not supported between a Microsoft-managed environment as a source and a self-service environment as a destination. For example, if the production environment is Microsoft-managed and in East US, and a PITR is needed for the sandbox environment, which is self-service and in East US. PITR is not supported. The alternative is to move the production environment to self-service or opt for a regular database refresh instead.
 
 ### Point in time restore between source and target that are both on self-Service, in different regions
 The PITR process is not supported between self-service environments across different regions. For example, if the production environment is in East US and a PITR is needed for the sandbox environment, which is self-service and in West Europe, PITR is not supported. The alternative is to get both the environments in the same region or opt for a regular database refresh instead.

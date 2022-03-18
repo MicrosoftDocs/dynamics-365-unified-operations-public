@@ -23,7 +23,7 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: Release 10.0.17
+ms.dyn365.ops.version: 10.0.17
 ---
 
 # Manage standard cost updates
@@ -46,8 +46,6 @@ The following example illustrates how the one-version and two-version approaches
 This example used one additional costing version for managing updates throughout the year 2020. More than one additional costing version can be used, such as a separate version for each batch of updates. When more than one additional costing is used, the fallback must be expressed as the active costs, because the active costs are spread over multiple costing versions.
 
 ## Financial dimensions for the standard cost revaluation
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Activating a new standard price will typically revaluate the on-hand inventory value by standard cost revaluation transactions. Usually, the financial dimensions of the item are then posted on the transactions. However, if you would like to control whether and how the financial dimensions are posted, use [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to turn on the feature named *Options of defaulting financial dimensions for inventory standard cost revaluation*. After enabling this feature, go to **Cost management > Inventory accounting policies setup > Parameters** and set the new **Origin of financial dimension** drop-down list to one of the following values:
 

@@ -41,7 +41,7 @@ On pages that have product category context, such as PDPs and category pages, br
 
 The following image shows an example of a breadcrumb module that shows the category hierarchy on a PDP.
 
-![Example of a breadcrumb module](./media/ecommerce-breadcrumb.PNG)
+![Example of a breadcrumb module.](./media/ecommerce-breadcrumb.PNG)
 
 ## Breadcrumb module settings
 
@@ -85,7 +85,7 @@ To add a breadcrumb module to a PDP and set the required properties, follow thes
 
 [Navigation menu module](nav-menu-module.md)
 
-[Site selector module](site-selector.md)
+[Site picker module](site-selector.md)
 
 [Overview of default category landing page and search results page](category-search-page-overview.md)
 

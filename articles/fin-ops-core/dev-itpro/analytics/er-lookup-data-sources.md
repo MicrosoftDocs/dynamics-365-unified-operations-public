@@ -4,7 +4,7 @@
 title: Configure Lookup data sources to use ER application-specific parameters
 description: This topic explains how you can configure Lookup data sources in Electronic reporting (ER) formats to use ER application-specific parameters.
 author: NickSelin
-ms.date: 04/02/2021
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -49,38 +49,38 @@ You can configure the following types of **Lookup** data sources depending on th
 
 The following illustration shows how a format enumeration can be configured in the sample ER format.
 
-   ![Showing a format enumeration as a base for the configured lookup data source](./media/er-lookup-data-sources-img1.gif)
+   ![Showing a format enumeration as a base for the configured lookup data source.](./media/er-lookup-data-sources-img1.gif)
 
 The following illustration shows the format components that were configured to report different type of taxes in a different section of a generated report.
 
-   ![Showing the format sections to separately report different type of taxes](./media/er-lookup-data-sources-img2.png)
+   ![Showing the format sections to separately report different type of taxes.](./media/er-lookup-data-sources-img2.png)
 
 The following illustration shows how the ER Operations designer allows the addition of a data source of the **Format enumeration\Lookup** type.  The added data source is configured as returning a value of the `List of taxation levels` format enumeration.
 
-   ![Adding an ER data source of the Format enumeration\Lookup type](./media/er-lookup-data-sources-img3.gif)
+   ![Adding an ER data source of the Format enumeration\Lookup type.](./media/er-lookup-data-sources-img3.gif)
 
 The following illustration shows how the added data source is configured to use the **Code** field of the **Model.Data.Tax** record list of the **Model** data source as a parameter that must be specified for every configured rule.
 
-![Configuring parameters of the added data source of the Format enumeration\Lookup type](./media/er-lookup-data-sources-img4.gif)
+![Configuring parameters of the added data source of the Format enumeration\Lookup type.](./media/er-lookup-data-sources-img4.gif)
 
 The added `Model.Data.Tax` data source is configured to specify a tax code for every configured rule by accessing records of the **TaxTable** application table.
 
-   ![Review of the single-company lookup data source of the Format enumeration\Lookup type](./media/er-lookup-data-sources-img5.gif)
+   ![Review of the single-company lookup data source of the Format enumeration\Lookup type.](./media/er-lookup-data-sources-img5.gif)
 
 You can set up the lookup rules for the selected ER format by using the UI that is automatically aligned with the structure of the configured data source. Currently, this UI requires that for each rule, you specify the returned value as the `List of taxation levels` format enumeration value as well as the tax code as a parameter.
 
-   ![Set up the rules for the configured data source](./media/er-lookup-data-sources-img6.gif)
+   ![Set up the rules for the configured data source.](./media/er-lookup-data-sources-img6.gif)
 
 The following illustration shows how the `Model.Data.Summary.LevelByLookup` data source of the **Calculated field** type can be configured to call the configured **Lookup** data source providing the required parameters. To process this call at runtime, ER goes through the list of configured rules in the defined sequence to locate the first rule that satisfies the provided conditions. In this example, it's the rule that contains the tax code that matches the provided one. As the result, the most appropriate rule is found and the enumeration value that is configured for the found rule is returned by this data source.
 
 > [!NOTE]
-> An exception is thrown when no applicable rule is found. To prevent these exceptions, configure additional rules at the end of the rules list to handle cases when a non-configured value or no value is provided. Use the **\*Not blank*** and **\*Blank*** options accordingly.  
+> An exception is thrown when no applicable rule is found. To prevent these exceptions, configure additional rules at the end of the rules list to handle cases when a non-configured value or no value is provided. Use the **\*Not blank**\* and **\*Blank**\* options accordingly.  
 >
-> ![Add a data source to call the configured Lookup data source](./media/er-lookup-data-sources-img7.png)
+> ![Add a data source to call the configured Lookup data source.](./media/er-lookup-data-sources-img7.png)
 
 When you set the **Cross-company** option to **Yes** for the editable lookup data source, you add a new required **Company** parameter to the set of parameters of this data source. The value of the **Company** parameter must be specified at runtime when the lookup data source is called. When the company code is specified at runtime, the rules configured for this company are used to find the most appropriate rule, and the corresponding value is returned. The following illustration shows how you can do this and how the set of parameters of the editable data source is changed.
 
-   ![Review the cross-company lookup data source of the Format enumeration\Lookup type](./media/er-lookup-data-sources-img8.gif)
+   ![Review the cross-company lookup data source of the Format enumeration\Lookup type.](./media/er-lookup-data-sources-img8.gif)
 
 > [!NOTE]
 > Select every company seperately to configure the set of rules for this lookup data source of the editable ER format. An exception is thrown at runtime when the cross-company lookup is called with the code of the company for which the lookup setting was not completed.
@@ -89,7 +89,7 @@ When you set the **Cross-company** option to **Yes** for the editable lookup dat
 
 Starting in version 10.0.19, the extended capabilities of the **Lookup** data sources are available. When you set the **Extended** option to **Yes** for the editable lookup data source, the configured lookup data source is transformed to the structured data source that offers the additional capabilities to analyze the configured set of rules. The following illustration shows this transformation.
 
-   ![Review of the structured lookup data source of the Format enumeration\Lookup type](./media/er-lookup-data-sources-img9.gif)
+   ![Review of the structured lookup data source of the Format enumeration\Lookup type.](./media/er-lookup-data-sources-img9.gif)
 
 - The **Lookup** sub-item is designed as a function to find the most appropriate rule from the set of configurable rules based on the provided set of parameters.
 - The **IsLookupResultSet** sub-item is designed as a function to accept the provided value of the base enumeration data source and return the *Boolean* value of **True** when the set of rules contain at least one rule for which the provided enumeration value was configured as a returned value. This function returns the *Boolean* value of **False** when there are no rules configured to return the provided enumeration value.

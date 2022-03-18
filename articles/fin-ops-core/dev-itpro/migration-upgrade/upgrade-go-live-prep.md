@@ -4,7 +4,7 @@
 title: Upgrade from AX 2012 - Prepare for go-live
 description: This topic describes how you can help ensure that the source Dynamics AX 2012 system and the upgrade process remain stable and consistent for go-live.
 author: tariqbell
-ms.date: 01/31/2018
+ms.date: 02/17/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -50,6 +50,11 @@ After no further code or setup changes will occur, run a final cutover test to m
 
 > [!NOTE]
 > You must complete this step even if you freeze code and setup changes at the beginning of the upgrade project, because the data itself changes every day. This final cutover test also validates that the current data is upgraded successfully.
+
+Complete an end-to-end data upgrade test. 
+
+> [!WARNING]
+> It is critical that you have completed at least one final test data upgrade, and that this was tested again in the live AX 2012 Production Environment to ensure the replication process works with the active transactional database. Testing replication against a copy of production is not the same, as active transactions in the SQL database affect how the replication works. Also, this test run should be within a short time frame, such as a few weeks of the actual go live. Leaving a large time between the final test run and the go-live could invalidate the testing if the data volume has increased significantly.
 
 Make sure that functional testing is performed against this last upgraded copy.
 

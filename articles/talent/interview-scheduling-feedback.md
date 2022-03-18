@@ -37,7 +37,7 @@ To send an email to candidates requesting their availability, select the **Reque
 
 To send the availability request, click **Send request**, choose the available dates and an email template, and then send the mail to the candidate.
 
-[![Attract recruiter view to send candidate availability request](./media/scheduler-candidate-request.png)](./media/scheduler-candidate-request.png)
+[![Attract recruiter view to send candidate availability request.](./media/scheduler-candidate-request.png)](./media/scheduler-candidate-request.png)
 
 When the candidate receives an email to respond to the request, they can sign in to their candidate portal, choose the dates that match their availability, and click **Submit**.
 
@@ -45,7 +45,7 @@ When the candidate receives an email to respond to the request, they can sign in
 There are multiple configurations available for the interview scheduler to use and quickly create and send the interview loop to the interviewers and the candidate.
 
 1. Click **Create schedule**, and in the **Add interviewers** box, list all the interviewers that are going to be part of the interview loop.
-[![Attract recruiter view to start scheduling an interview loop](./media/schedule-start-over.png)](./media/schedule-start-over.png)   
+[![Attract recruiter view to start scheduling an interview loop.](./media/schedule-start-over.png)](./media/schedule-start-over.png)   
     If the candidate had responded to the interview request availability, the **Interview date** column will be pre-populated with their selection. You can select a different date if needed.
     
     If you select the **Make this a panel interview** column, the group of interviewers on the left are moved in to a single panel loop to create the interview. You will then need to define a specific sequence for the interviews.
@@ -75,7 +75,7 @@ There are multiple configurations available for the interview scheduler to use a
 
     Interviewer responses are captured and shown in Attract. If an interviewer declines the invite, you will be notified to make a change. To view their response in the **Scheduler** grid view, click the bubble icon.
 
-[![Attract recruiter view of an interviewer's response](./media/schedule-interviewer-response2.png)](./media/schedule-interviewer-response2.png)
+[![Attract recruiter view of an interviewer's response.](./media/schedule-interviewer-response2.png)](./media/schedule-interviewer-response2.png)
 
 7. After the interview schedule is ready to be shared with the candidate, click **Send to candidate**. You can choose to hide or show the interviewer names and slots with the candidate.
 

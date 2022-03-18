@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom:
 ms.assetid: 
@@ -168,6 +168,7 @@ The following table lists the columns that are pre-extended.
 | LOGISTICSADDRESSZIPCODE       | STATE                                                                        | nvarchar(60)  |                       |                                     |
 | LOGISTICSADDRESSZIPCODE       | ZIPCODE                                                                        | nvarchar(60)  |                       |                                     |
 | LOGISTICSADDRESSSTATE        | STATEID                                                                        | nvarchar(60)  |                       |                                     |
+| LOGISTICSELECTRONICADDRESS   | COUNTRYREGIONCODE                                                              | nvarchar(10)  |   ValidateElectronicAddressServiceRequest                    |                                     |
 | RETAILASYNCADDRESS            | STREET                                                                        | nvarchar(400) |                       |                                     |
 | RETAILASYNCADDRESS            | COUNTY                                                                        | nvarchar(60)  |                       |                                     |
 | RETAILASYNCCUSTOMER           | STREET                                                                        | nvarchar(400) |                       |                                     |

@@ -1,30 +1,15 @@
 ---
-# required metadata
-
 title: Table of Contents form pattern
 description: This article provides information about the Table of Contents form pattern, which is used when two or more related forms are required for setup configuration. 
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 14621
-ms.assetid: 1785880c-d729-43b7-bd78-9ae03bac4043
+ms.reviewer: tfehr
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Table of Contents form pattern
@@ -39,7 +24,7 @@ The Table of Contents pattern should be used when two or more logically related 
 
 ## Wireframe
 
-[![Table of Contents wireframe](./media/toc1.png)](./media/toc1.png)
+[![Table of Contents wireframe.](./media/toc1.png)](./media/toc1.png)
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
@@ -110,7 +95,7 @@ The verification checklist shows the steps for manually verifying that the form 
 ## Examples
 Form: **CustParameters** 
 
-[![Table of Contents example](./media/toc2.png)](./media/toc2.png)
+[![Table of Contents example.](./media/toc2.png)](./media/toc2.png)
 
 ## Appendix
 ### Frequently asked questions
@@ -128,9 +113,9 @@ This section will have answers to frequently asked questions that are related to
 
 ### AX 2012 content
 
-[![Example](./media/toc3.png)](./media/toc3.png)
+[![Example for Accounts receivable parameters.](./media/toc3.png)](./media/toc3.png)
 
-[![Example](./media/toc4.png)](./media/toc4.png)
+[![Example of Benefit elements.](./media/toc4.png)](./media/toc4.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

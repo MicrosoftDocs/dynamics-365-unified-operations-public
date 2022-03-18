@@ -3,7 +3,7 @@
 
 title: Product-related translations FAQ
 description: This topic describes how to manage translations for products, product dimension values, and product attributes. 
-author: cvocph
+author: t-benebo
 ms.date: 08/06/2020
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 201853
 ms.assetid: c0286bba-f54b-42de-904c-81fd796bdd1d
 ms.search.region: global
 ms.search.industry: Product information
-ms.author: kamaybac
+ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 28891
 ms.assetid: 9cf9949a-7787-4b2c-b248-fff7d038cda5
@@ -116,7 +116,7 @@ To find container controls in the form that must still have a pattern applied, s
 
 To determine whether more pattern work must be done on an open form, right-click the form in the designer, and then select **Addins** &gt; **Form statistics**. If the **Pattern=Unspecified** count is more than 0 (zero), the form still has containers that must have a pattern applied. Ideally, every form should also have a **Pattern=Custom** count of 0 (zero) and a **Pattern coverage** value of 100 percent. These values indicate that the form is fully covered by patterns. 
 
-![Dialog box with values that indicate a form is fully covered by patterns](media/formstatistics.png)
+![Dialog box with values that indicate a form is fully covered by patterns.](media/formstatistics.png)
 
 ### Why isn’t static text allowed inside the Fields and Field Groups subpattern? Isn’t static text allowed in forms any longer? What do I do with the static text that the Fields and Field Groups subpattern doesn’t accept? How can I show user Help instead of static text?
 
@@ -146,7 +146,7 @@ Your current options for scenarios where a manually sized control is needed incl
 
 Groups and controls appear as “unmatched” in the **Pattern Information** panel if they, or any controls inside them, aren’t allowed by the pattern. 
 
-![Example of unmatched controls](media/formfaq5.png)
+![Example of unmatched controls.](media/formfaq5.png)
 
 There are two typical reasons why groups appear as "unmatched" in the Fields and Field Groups subpattern:
 

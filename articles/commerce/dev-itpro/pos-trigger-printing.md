@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 83892
 ms.search.region: Global
@@ -122,6 +122,7 @@ The following table lists the available triggers and denotes whether they can be
 | PostPaymentTrigger      | Non-cancelable | Executed after all the payment processing is done.  |
 | PreVoidPaymentTrigger   | Cancelable     | Executed before the payment line is voided in POS.  |
 | PostVoidPaymentTrigger  | Non-cancelable | Executed after the payment line is voided in POS.   |
+| PreTenderPaymentTrigger (10.0.21)  | Cancelable | Executed after the tender amount is selected in the payment view.   |
 
 ## Printing Triggers
 

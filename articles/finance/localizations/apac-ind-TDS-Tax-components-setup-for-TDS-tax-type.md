@@ -7,7 +7,7 @@ author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+
 ms.technology: 
 
 # optional metadata
@@ -38,7 +38,7 @@ Follow these steps to set up TDS components.
 
 1. Go to **Tax \> Setup \> Withholding tax \> Withholding tax components**.
 
-    [![Withholding tax components page](./media/apac-ind-TDS-9.png)](./media/apac-ind-TDS-9.png)
+    [![Withholding tax components page.](./media/apac-ind-TDS-9.png)](./media/apac-ind-TDS-9.png)
 
 2. In the **Tax type** field, select **TDS** to set up withholding tax components for the TDS tax type.
 3. On the Action Pane, select **New** to create a line.
@@ -55,7 +55,7 @@ Follow these steps to set up TDS components.
 
     For example, if the exception threshold amount is 5,000, TDS is calculated on a specific invoice line if the invoice line amount exceeds 5,000 (in other words, if it's 5,001 or more).
 
-    [![Threshold page](./media/apac-ind-TDS-10.png)](./media/apac-ind-TDS-10.png)
+    [![Threshold page.](./media/apac-ind-TDS-10.png)](./media/apac-ind-TDS-10.png)
 
     > [!NOTE]
     > The exception threshold amount must be less than or equal to the threshold amount.
@@ -71,6 +71,6 @@ Follow these steps to set up TDS components.
 
 14. Select **OK** to copy and create TDS components for the other TDS component group on the **Withholding tax components** page.
 
-    [![Copy withholding tax components dialog box](./media/apac-ind-TDS-11.png)](./media/apac-ind-TDS-11.png)
+    [![Copy withholding tax components dialog box.](./media/apac-ind-TDS-11.png)](./media/apac-ind-TDS-11.png)
 
 15. Close the page.

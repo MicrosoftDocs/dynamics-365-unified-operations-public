@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Global
@@ -42,7 +42,7 @@ This topic describes how to write a payment integration for Microsoft Dynamics 3
 ## Overview
 The following illustration shows a high-level overview of the payment terminal integration through the POS. Although this illustration assumes that a local Hardware Station is used to communicate with the payment terminal, the same patterns apply to a shared Hardware Station.
 
-![Payment connector integration overview](media/PAYMENTS/PAYMENT-TERMINAL/Overview.jpg)
+![Payment connector integration overview.](media/PAYMENTS/PAYMENT-TERMINAL/Overview.jpg)
 
 This topic describes the following steps that are required to create an end-to-end payment integration for a payment terminal:
 
@@ -55,7 +55,7 @@ This section describes how to write a new payment connector.
 ### Understanding the payment flows
 The following illustration shows a high-level overview of several payment flows (Begin Transaction, Update Cart Lines, Authorize, Capture, and End Transaction) across the POS, Hardware Station, and payment connector.
 
-![Payment flow overview](media/PAYMENTS/PAYMENT-TERMINAL/PaymentFlow.jpg)
+![Payment flow overview.](media/PAYMENTS/PAYMENT-TERMINAL/PaymentFlow.jpg)
 
 ### Implement a payment connector
 This section below describes how to implement a new payment connector. The examples that are shown here can be found in the **PaymentDeviceSample** class that is located under the **SampleExtensions\HardwareStation\Extension.PaymentSample** folder in the Retail software development kit (SDK).
@@ -624,7 +624,7 @@ To help guarantee that the Hardware Station loads the payment connector, you mus
 ### Configure the payment connector on the POS hardware profile page in the client
 To determine the correct payment connector that should be loaded on the POS, you must set the value of the **PaymentTerminalDevice** property in the **Device name** field on the **PIN pad** FastTab of the **POS hardware profile** page in the client, as shown in the following illustration.
 
-![Configure payment connector on the POS hardware profile page in the client](media/PAYMENTS/PAYMENT-TERMINAL/SamplePaymentDeviceConfigurInAx.jpg)
+![Configure payment connector on the POS hardware profile page in the client.](media/PAYMENTS/PAYMENT-TERMINAL/SamplePaymentDeviceConfigurInAx.jpg)
 
 ## Write a payment processor
 Payment processes are usually used only if a direct connection to a payment gateway is established. This scenario most often occurs in card-not-present sales transactions or more complex card-present scenarios. Additionally, the payment processor is used to process the merchant properties that are configured through the **POS hardware profile** page in the client.
@@ -638,12 +638,12 @@ The following sections describe how the merchant properties are set on the **POS
 #### Set merchant properties on the POS hardware profile page in the client
 The following illustration shows how the merchant properties are set through the **POS hardware profile** page in the client. To enable the merchant properties to be set, the **IPaymentProcessor** interface that is defined in the **Microsoft.Dynamics.Retail.PaymentSDK** library must be implemented. Two interface methods are required: **GetMerchantAccountPropertyMetadata** and **ValidateMerchantAccount**.
 
-![Setting merchant properties on the POS hardware profile page in the client](media/PAYMENTS/PAYMENT-TERMINAL/MerchantPropertiesAXFlow.jpg)
+![Setting merchant properties on the POS hardware profile page in the client.](media/PAYMENTS/PAYMENT-TERMINAL/MerchantPropertiesAXFlow.jpg)
 
 #### Set merchant properties on payment connector during POS sales transaction
 The following illustration shows how the merchant properties are retrieved from the database through the Commerce Scale Unit and passed to the payment connector during the **BeginTransactionPaymentTerminalDeviceRequest** request.
 
-![Setting merchant properties on the payment connector during POS payment flows](media/PAYMENTS/PAYMENT-TERMINAL/MerchantPropertiesPOSFlow.jpg)
+![Setting merchant properties on the payment connector during POS payment flows.](media/PAYMENTS/PAYMENT-TERMINAL/MerchantPropertiesPOSFlow.jpg)
 
 ### Implement the IPaymentProcessor interface
 To handle merchant properties that are related to payment flows, the **IPaymentProcessor** interface that is defined in the **Microsoft.Dynamics.Retail.PaymentSDK** library must be implemented. The following example shows how to implement the two required interface methods, **GetMerchantAccountPropertyMetadata** and **ValidateMerchantAccount**. Other interface methods can be left blank (for example, they can return **FeatureNotSupportedException**).

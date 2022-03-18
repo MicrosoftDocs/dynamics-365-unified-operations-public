@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 50211
 ms.assetid: 0a774c73-9e5d-4faa-8716-61476c1a9b6e
@@ -39,7 +39,7 @@ This document describes the API, HTML, and JavaScript support for creating exten
 This document contains small code snippets that show how to use each API that is documented. More complete examples of finished controls that leverage many of these APIs can be found on Github. [Extensible Control Examples on Github](https://github.com/Microsoft/Dynamics-AX-Extensible-Control-Samples)
 
 ## Control block diagram
-This high-level diagram illustrates the key components of an extensible control and how they interact with each other. Your extensible control solution will contain two X++ classes that implement your control. The runtime class implements the runtime data, presentation, and behavior of your control. The build class defines how your control is displayed in Form Designer, Property Window, and Application Explorer. [![Extensibility architecture](./media/extensibilityarchitecture.png)](./media/extensibilityarchitecture.png)
+This high-level diagram illustrates the key components of an extensible control and how they interact with each other. Your extensible control solution will contain two X++ classes that implement your control. The runtime class implements the runtime data, presentation, and behavior of your control. The build class defines how your control is displayed in Form Designer, Property Window, and Application Explorer. [![Extensibility architecture.](./media/extensibilityarchitecture.png)](./media/extensibilityarchitecture.png)
 
 ## X++
 
@@ -1126,7 +1126,7 @@ For advanced layout scenarios we encourage using Flexbox. Flexbox is compatible 
 ## Control Lifecycle Diagrams
 
 ### Control Instantiation
-[![Extensibility process](./media/extensibilityprocess-951x1024.png)](./media/extensibilityprocess.png)
+[![Extensibility process.](./media/extensibilityprocess-951x1024.png)](./media/extensibilityprocess.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -49,7 +49,7 @@ To turn off CSP for a site, follow these steps.
 1. Select **Site settings**, and then select the **Extensions** tab.
 1. On the **Content security policy** tab, select the **Disable content security policy** check box.
 
-    ![Disable content security check box on the Content Security Policy tab](media/content-security-policy-disable.png)
+    ![Disable content security check box on the Content Security Policy tab.](media/content-security-policy-disable.png)
 
 1. Select **Save and publish**.
 
@@ -99,7 +99,7 @@ The following example procedure shows how to configure a CSP directive so that a
 1. Select **Site settings**, and then select the **Extensions** tab.
 1. On the **Content security policy** tab, under **script-src**, select **Add**, and then enter the full URL of the external script that should be called.
 
-    ![URL for an external script on the Content Security Policy tab](media/content-security-policy.png)
+    ![URL for an external script on the Content Security Policy tab.](media/content-security-policy.png)
 
 1. Select **Save and publish**.
 
@@ -109,7 +109,7 @@ When you first configure CSP for a site, some pages probably won't be loaded at 
 
 The following illustration shows an example of CSP errors in a web browser's developer tools.
 
-![CSP errors in a web browser's developer tools](media/content-security-policy-errors.png)
+![CSP errors in a web browser's developer tools.](media/content-security-policy-errors.png)
 
 There are two CSP errors in this example:
 
@@ -118,7 +118,7 @@ There are two CSP errors in this example:
 
 The following screenshot shows what the fixed settings look like on the **Content Security Policy** tab in Commerce.
 
-![Fixed settings on the Content Security Policy tab](media/content-security-policy-fixed.png)
+![Fixed settings on the Content Security Policy tab.](media/content-security-policy-fixed.png)
 
 ## Update page mocks that use CSP
 

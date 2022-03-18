@@ -3,7 +3,7 @@
 
 title: Set up consignment
 description: This topic explains how to use the inbound consignment inventory processes.
-author: perlynne
+author: yufeihuang
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod:
@@ -21,7 +21,7 @@ ms.custom: 220834
 ms.assetid: 3c9d6de4-45d4-459a-aef7-0d9ad2c22b3a
 ms.search.region: Global
 # ms.search.industry:
-ms.author: perlynne
+ms.author: yufeihuang
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -66,7 +66,7 @@ A consignment replenishment order is a document that is used to request and keep
 
 The **Owner** dimension is used to separate information about which inventory is owned by the vendor and which is owned by the receiving legal entity. Consignment replenishment order lines have an **Open order** status as long as the full quantity of the lines has not been received or cancelled. When the full quantity has been received or canceled, the status is changed to **Completed**. The physical on-hand inventory that’s related to a consignment replenishment order can be recorded using a Registration process as well as a Product receipt update process. Registration can be done as part of the item arrival process or by manually updating the order lines. When the Product receipt update process is used, a record is made in the product receipt journal, which can be used to acknowledge the receipt of goods to the vendors.
 
-[![Consignment replenishment orders](./media/consignment-replenishment-order.png)](./media/consignment-replenishment-order.png)
+[![Consignment replenishment orders.](./media/consignment-replenishment-order.png)](./media/consignment-replenishment-order.png)
 
 ## Inventory ownership change journal
 
@@ -79,7 +79,7 @@ The only inventory transactions created are those that relate to a posted journa
 
 It’s not possible to update the quantity on consignment purchase order lines after the order has been created.
 
-[![Inventory ownership change journal](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
+[![Inventory ownership change journal.](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
 
 ## Vendor collaboration in consignment processes
 
@@ -95,13 +95,13 @@ For more information about setting up vendors to use vendor collaboration, see [
 
 In order to record physical inbound consignment inventory, you need to define a vendor owner. This is done on the **Inventory owner** page. When you select a **Vendor account** this generates default values for the **Name** and **Owner** fields. The value in the **Owner** field will be visible to the vendor, so you might want to change it if your vendor account names aren’t easy for external people to recognize. It’s possible to edit the **Owner** field, but only up to the point when you save the **Inventory owner** record. The **Name** field is populated with the name of the party that the vendor account is associated with, and this cannot be changed.
 
-[![Inventory owners](./media/inventory-owners.png)](./media/inventory-owners.png)
+[![Inventory owners.](./media/inventory-owners.png)](./media/inventory-owners.png)
 
 ## Tracking dimension group
 
 Items that are going to be used in consignment processes must be associated with a **Tracking dimension group** where the **Owner** dimension is set to **Active**. The Owner dimension always has the **Physical inventory** and **Financial inventory** options selected. The **Coverage plan by dimension** is never selected.
 
-[![Tracking dimension group](./media/tracking-dimension-group.png)](./media/tracking-dimension-group.png)
+[![Tracking dimension group.](./media/tracking-dimension-group.png)](./media/tracking-dimension-group.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

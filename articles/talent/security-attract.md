@@ -79,7 +79,7 @@ Users who are assigned to the Read-only role have read-only access to all data i
 
     You will see which roles you have for Attract in the window that appears:
 
-    ![View your Attract license type](media/attract-license-types.png)
+    ![View your Attract license type.](media/attract-license-types.png)
     
 ## Delegated roles
 

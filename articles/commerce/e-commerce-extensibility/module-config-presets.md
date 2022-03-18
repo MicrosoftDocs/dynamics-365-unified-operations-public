@@ -28,7 +28,6 @@ ms.dyn365.ops.version: Release 10.0.18
 # Module configuration presets
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This topic covers module configuration presets and how to configure them in Microsoft Dynamics 365 Commerce.
 
@@ -46,7 +45,7 @@ Themes can contain module configuration preset files that are used when a theme 
 
 ## JSON preview file structure
 
-The JSON preview file is configured like a [module mock file](module-mock-file.md), except for images (see the note later in this topic). Here's an example of a JSON preview file.
+The JSON preview file is configured similar to a [module mock file](module-mock-file.md), except for images (see the note later in this topic) and the **id** must be set to the module name. Here's an example of a JSON preview file.
 
 ```json
 {

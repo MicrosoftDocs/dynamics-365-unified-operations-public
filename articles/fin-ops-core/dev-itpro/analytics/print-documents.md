@@ -5,7 +5,7 @@ title: Document printing overview
 description: You can print documents by using either a local printer or a network-connected device. This article provides an overview of how documents are printed.
 author: RichdiMSFT
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: IT Pro, Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: 69161
+ms.custom: ["69161", "intro-internal"]
 ms.assetid: 7815bddd-c4f4-4bc3-a29b-315458065374
 ms.search.region: Global
 # ms.search.industry: 
@@ -75,7 +75,7 @@ The client-based solution lets customers manage the scale of their printing need
 
 The following diagram shows the basic components that help support network printing operations.
 
-[![service-components-for-network-printing\_2016](./media/service-components-for-network-printing_2016.png)](./media/service-components-for-network-printing_2016.png)
+[![service-components-for-network-printing\_2016.](./media/service-components-for-network-printing_2016.png)](./media/service-components-for-network-printing_2016.png)
 
 Note that a single printer can be registered with multiple Document Routing Agents. To resolve the printer preferences, the hosted service uses the network path that uniquely identifies every network printer. As a result, even when a printer is registered by multiple clients, it appears as a single selection in the list of printers available in applications.
 

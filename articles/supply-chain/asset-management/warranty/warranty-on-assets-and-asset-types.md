@@ -52,7 +52,7 @@ This topic explains how to set up warranties on assets and asset types in Asset 
     > [!IMPORTANT]
     > If a date is selected in the **Warranty start** field on a work order, the warranty becomes valid for the work order on that date. When you create a work order, the **Warranty start** field is automatically set to the date of creation. However, you can change the date so that it corresponds to, for example, the start date of a warranty agreement.
     >
-    > ![Work order page](media/02-warranty.png)
+    > ![Work order page.](media/02-warranty.png)
 
 > [!NOTE]
 > When you create a work order for an asset that is covered by a vendor warranty, if the work order has an expected start date during the warranty period, you receive a notification about the warranty agreement. You can then cancel the work order, as you require.

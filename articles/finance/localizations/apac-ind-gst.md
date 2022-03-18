@@ -5,7 +5,7 @@ title: India Goods and Services Tax (GST) overview
 description: This topic provides detailed information about India Goods and Services Tax (GST) for Microsoft Dynamics 365 Finance.
 author: yijialuan
 ms.date: 05/20/2021
-ms.topic: article
+ms.topic: overview
 ms.prod:
 ms.technology:
 
@@ -17,7 +17,7 @@ audience: IT Pro, Application User
 ms.reviewer: kfend
 # ms.suite:
 # ms.tgt_pltfrm:
-ms.custom: 1587884
+ms.custom: ["1587884", "intro-internal"]
 ms.search.region: India
 # ms.search.industry:
 ms.author: ralin
@@ -199,20 +199,20 @@ Follow the process in the topic, [Tax engine import configuration](../general-le
 8. Select the ellipsis button (**...**), and then select **Synchronize**.
 9. Select **Activate**. The activated configuration is updated as the current configuration.
 
-   ![Current configuration](media/apac-ind-gst-Current-Configuration.png)
+   ![Current configuration.](media/apac-ind-gst-Current-Configuration.png)
 
 10. On the **Report configuration** FastTab, under **Select report configurations**, select the **Select** checkbox.
 11. In the **Report controller** field, select a value.
 12. Repeat step 10 and 11, to map the report configurations.
 
-    ![Report configuration](media/apac-ind-gst-Reportconfiguration2-configuration.png)
+    ![Report configuration.](media/apac-ind-gst-Reportconfiguration2-configuration.png)
 
 13. Close the page.
 14. On the **Companies** FastTab, create a record.
 15. In the **Companies** field, select a value, and then select **Save**.
 16. On the **Companies** FastTab, select **Activate**. The tax setup is now active for the selected company.
 
-    ![Tax setup status](media/apac-ind-gst-tax-setup-status.png)
+    ![Tax setup status.](media/apac-ind-gst-tax-setup-status.png)
 
 ## Update the configuration version
 
@@ -221,7 +221,7 @@ Follow the process in the topic, [Tax engine import configuration](../general-le
 3. On the **Companies** FastTab, select **Deactivate**.
 4. Repeat steps 2 through 13 in the previous section, [Import the configuration and deploy it to a specific company](#import-the-configuration-and-deploy-it-to-a-specific-company), to load the configuration, deploy it to the company, and synchronize the new version.
 
-   ![Two configurations](media/apac-ind-gst-Available2-configuration.png)
+   ![Two configurations.](media/apac-ind-gst-Available2-configuration.png)
 
 5. Select the new version, and then select **Activate**.
 6. Complete the tasks in the **Tax setup** section to update data for the new version.
@@ -309,7 +309,7 @@ This section walks you through defining the GST and Customs tax setup.
    7. Close the message.
    8. Select **View**. The **Sales tax hierarchy designer** page shows the tax type and tax components, based on the configuration.
 
-      ![Sales tax hierarchy designer](media/apac-ind-gst-salestaxdesigner.png)
+      ![Sales tax hierarchy designer.](media/apac-ind-gst-salestaxdesigner.png)
 
    9. Select **Setoff rules for sales tax hierarchy**.
    10. Select **New**.
@@ -319,7 +319,7 @@ This section walks you through defining the GST and Customs tax setup.
    14. On the **Payable** FastTab, select the tax components, and then adjust the **Priority** values.
    15. Define the setoff rules according to the legal requirement.
 
-       ![Setoff rule](media/apac-ind-gst-View-Setoffrule.png)
+       ![Setoff rule.](media/apac-ind-gst-View-Setoffrule.png)
 
    16. Select **Close**.
    17. Close the **Sales tax hierarchy designer** page.

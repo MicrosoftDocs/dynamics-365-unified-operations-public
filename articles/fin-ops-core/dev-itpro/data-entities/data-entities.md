@@ -3,9 +3,9 @@
 
 title: Data entities overview
 description: This topic describes data entities, the scenarios that they support, the categories that are used for them, and the methods for creating them.
-author: Sunil-Garg
+author: peakerbl
 ms.date: 04/20/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,11 +17,11 @@ audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: 22051
+ms.custom: ["22051", "intro-internal"]
 ms.assetid: 89ee656f-3a91-42cd-a189-11744cd2415b
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -30,6 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 # Data entities overview
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 This topic defines and provides an overview of data entities. It includes information about the capabilities of data entities, the scenarios that they support, the categories that are used for them, and the methods for creating them.
 
@@ -46,15 +49,15 @@ A data entity has the following capabilities:
 - It becomes the primary mechanism for exporting and importing data packages for Application Lifecycle Management (ALM) and demo data scenarios.
 - It can be exposed as OData services, and then used in tabular-style synchronous integration scenarios and Microsoft Office integrations.
 
-[![Data entity architecture](./media/over1.png)](./media/over1.png)
+[![Data entity architecture.](./media/over1.png)](./media/over1.png)
 
 ### Entity example
 
 A consumer wants to access data that is related to a customer object, but this data is currently scattered across multiple normalized tables, such as DirParty, CustTable, LogisticPostalAddress, and LogisticElectronicAddress. Therefore, the process of reading and writing customer data is very tedious. Instead, the following customer entity can be designed to encapsulate the entire underlying physical schema into a single de-normalized view. This enables simpler read/write operations and also enables abstraction of any internal interaction between the tables.
 
-[![Denormalized tables](./media/over2.png)](./media/over2.png)
+[![Denormalized tables.](./media/over2.png)](./media/over2.png)
 
-[![Normalized entity](./media/over3.png)](./media/over3.png)
+[![Normalized entity.](./media/over3.png)](./media/over3.png)
 
 ### Supported scenarios
 
@@ -85,7 +88,7 @@ Data entities also support asynchronous integration through a data management pi
 
 Besides integration and business intelligence (BI) scenarios, data entities also initially support two critical ALM scenarios. The following two progressive levels of an ALM scenario show the scope of coverage by data entities.
 
-[![Entities and lifecycle management](./media/over4.png)](./media/over4.png)
+[![Entities and lifecycle management.](./media/over4.png)](./media/over4.png)
 
 ##### Configuration data provisioning
 
@@ -134,7 +137,7 @@ Entities are categorized based on their functions and the type of data that they
 ### Transaction
 
 - The operational transaction data of the business.
-- Posted transactions. These are non idempotent items such as posted invoiced and balances. Typically, these items are excluded during a full dataset copy to reduce the volume of data that is copied/migrated. Migrating completed transactions can also lead to further complexity in trying to preserve the referential integrity of related data in the new system. In general, transactions from a completed business process are not migrated in detail but in summary.
+- Posted transactions. These are non idempotent items such as posted invoices and balances. Typically, these items are excluded during a full dataset copy to reduce the volume of data that is copied/migrated. Migrating completed transactions can also lead to further complexity in trying to preserve the referential integrity of related data in the new system. In general, transactions from a completed business process are not migrated in detail but in summary.
 - Examples include pending invoices.
 
 ## Building an entity
@@ -170,7 +173,7 @@ When you complete the wizard, it produces the following items:
 
 You can quickly create an entity from a table, and then customize the properties, data sources, and fields later. Right-click the table, and then select **Addins** &gt; **Create data entity**.
 
-[![Create data entity](./media/over5.png)](./media/over5.png)
+[![Create data entity.](./media/over5.png)](./media/over5.png)
 
 ## Entity list refresh
 Entities in an environment must be refreshed using the following guidelines.
@@ -209,24 +212,24 @@ The following table summarizes how configuration key values, on the different ar
 ### Entity list refresh
 When the entity list is refreshed, the data management framework builds the configuration key metadata for runtime use. This metadata is built using the logic described above. We strongly recommend that you wait for the entity list refresh to complete before using jobs and entities in the data management framework. If you don't wait, the configuration key metadata may not be up to date and could result in unexpected outcomes. When the entity list is being refreshed, the following message is shown in the entity list page.
 
-![Entity list refresh](./media/Entity_refresh_list.png)
+![Entity list refresh.](./media/Entity_refresh_list.png)
 
 ### Data entity list page
 The data entity list page in the **Data management** workspace shows the configuration key settings for the entities. Start from this page to understand the impact of configuration keys on the data entity.
 
 This information is shown using the metadata that is built during entity refresh. The configuration key column shows the name of the configuration key that is associated with the data entity. If this column is blank it means that there is no configuration key associated with the data entity. The configuration key status column shows the state of the configuration key. If it has a checkmark, it means the key is enabled. If it is blank, it means either the key is disabled or there is no key associated.
 
-![Entity list page](./media/Data_entity_list_page.png)
+![Entity list page.](./media/Data_entity_list_page.png)
 
 ### Target fields
 The next step is to drill into the data entity to view the impact of configuration keys on tables and fields. The target fields form for a data entity shows the configuration key and the key status information for the related tables and fields in the data entity. If the data entity itself has its configuration key disabled, a warning message is shown informing that the tables and fields in the target fields form for this entity will not be available, regardless of their configuration key status.
 
-![Target fields](./media/Target_fields_1.png)
+![Target fields.](./media/Target_fields_1.png)
 
 ### Child entities 
 Certain entities have other entities as data sources, or are composite data entities: configuration key information for these entities is shown in the **Child entities** form. Use this form in the similar way to the entities list page described above. The target fields form for the child entity also behaves like what is described above.
 
-![Target fields](./media/Target_fields_2.png)
+![Child entities.](./media/Target_fields_2.png)
 
 ### Run time validations for configuration keys
 Using the configuration key metadata built during entity refresh list, run time validations are performed in the following use cases.
@@ -245,7 +248,7 @@ Using the configuration key metadata built during entity refresh list, run time 
 ### Managing configuration key changes
 Anytime that you update configuration keys at the entity, table, or field level, the entity list in the data management framework must be refreshed. This process ensures that the framework picks up the latest configuration key settings. Until the entity list is refreshed, the following warning will be shown in the entity list page. The updated configuration key changes will take effect immediately after the entity list is refreshed. We recommend that you validate existing data projects and jobs to make sure that they function as expected after the configuration keys changes are put in effect.
 
-![Target fields](./media/Target_fields_3.png)
+![Configuration keys.](./media/Target_fields_3.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

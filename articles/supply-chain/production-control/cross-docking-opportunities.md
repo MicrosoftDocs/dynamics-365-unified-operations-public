@@ -46,7 +46,7 @@ A product is reported as finished to the production output location (3) and a f
 -   If a trailer is already assigned to the bay door, the truck driver will be directed to load the product directly to the trailer.
 -   If there is no planned activity for transferring the product, the fork lift driver will be directed to put the product away to a location in the internal warehouse (5).
 
-[![opportunistic cross-docking](./media/scenario1.png)](./media/scenario1.png)
+[![opportunistic cross-docking.](./media/scenario1.png)](./media/scenario1.png)
 
 ## Configure cross-docking
 You configure the cross-docking process in **work policies**. A work policy includes a work order type, location, and product. In the following example, cross-docking is configured for product X and location Y.

@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer 
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 14634
 ms.assetid: 38cb1058-ed69-4ffa-9bfd-4b65cc8d2a49
@@ -38,7 +38,7 @@ This article provides information about the Task Single form pattern. This patte
 This type of form was used when you wanted to present data that users will perceive as originating from a single data source with multiple records. This isn't a recommended pattern for new forms. No new forms should be created that use this pattern. This pattern will provide structure and stability for legacy forms, and will also provide a migration path to more modern form patterns.
 
 ## Wireframe
-[![Wireframe for Task Single form](./media/tasksingle1-1024x577.png)](./media/tasksingle1.png)
+[![Wireframe for Task Single form.](./media/tasksingle1-1024x577.png)](./media/tasksingle1.png)
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
@@ -102,9 +102,9 @@ The verification checklist shows you the steps for manually verifying that the f
 ## Examples
 Form: **LedgerJournalTable** 
 
-[![Task Single example 1](./media/tasksingle2-1024x669.png)](./media/tasksingle2.png) 
+[![Task Single example 1.](./media/tasksingle2-1024x669.png)](./media/tasksingle2.png) 
 
-[![Task Single example 2](./media/tasksingle3-1024x424.png)](./media/tasksingle3.png)
+[![Task Single example 2.](./media/tasksingle3-1024x424.png)](./media/tasksingle3.png)
 
 ## Appendix
 ### Frequently asked questions
@@ -117,7 +117,7 @@ This section will have answers to frequently asked questions that are related to
 
 ### AX 2012 content
 
-[![Previous version visual example](./media/tasksingle4.png)](./media/tasksingle4.png)
+[![Previous version visual example.](./media/tasksingle4.png)](./media/tasksingle4.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

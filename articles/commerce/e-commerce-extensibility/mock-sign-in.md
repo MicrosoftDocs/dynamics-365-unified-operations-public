@@ -4,7 +4,7 @@
 title: Mock the signed-in state during local development
 description: This topic describes how to mock a signed-in user in a Dynamics 365 Commerce online local development environment.
 author: samjarawan
-ms.date: 04/06/2021
+ms.date: 01/31/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -28,6 +28,7 @@ ms.dyn365.ops.version: Release 10.0.5
 # Mock the signed-in state during local development
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 This topic describes how to mock a signed-in user in a Dynamics 365 Commerce online local development environment.
 
@@ -62,7 +63,7 @@ You have now created a new ROPC policy to enable local sign-in. Under **Run user
 
 In the following example image, the endpoint URL listed under **Run user flow** is ```https://commerceonboardingb2c.b2clogin.com/commerceonboardingb2c.onmicrosoft.com/v2.0/.well-known/openid-configuration?p=B2C_1_ROPC_Auth```.
 
-![Run user flow example](media/local-sign-in-01.png)
+![Run user flow example.](media/local-sign-in-01.png)
 
 From the example above, you can obtain values for the `ropcUserFlowName`, `loginDomain`, and `b2cTenant` properties as follows:
 
@@ -83,7 +84,7 @@ Next, you will create a native application meant to represent the Node applicati
 1.	Leave all other default values as is, and select **Register**.
 1.	Select the new application, and then copy and save the **Application (client) ID** value, as this ID will be used later as the `nativeApplicationId` property value in your credentials.json file.
 
-    ![Local Node app](media/local-sign-in-02.png)
+    ![Local Node app.](media/local-sign-in-02.png)
 
 1.	In the left navigation pane under **Manage**, select **Authentication**.
 1.	Select **Try out the new experience** (if shown).
@@ -92,7 +93,7 @@ Next, you will create a native application meant to represent the Node applicati
 1.	In the left navigation pane under **Manage**, select **Manifest** to open the manifest editor.
 1.	Set the **oauth2AllowImplicitFlow** attribute to **true**, and then select **Save**.
 
-    ![Local Node app manifest](media/local-sign-in-03.png)
+    ![Local Node app manifest.](media/local-sign-in-03.png)
 
 You have now created a new native application that will be used to represent your local Node application. 
 
@@ -111,14 +112,14 @@ From the examples above, you have now obtained the following information:
 1.	Open the application that is currently being used by the e-commerce rendering application. In the Azure portal, this is the application whose client ID is used in the Azure AD B2C configuration for your site. If Azure AD B2C is already configured, the application ID used for your e-commerce site can be found in Commerce headquarters at **Commerce Shared Parameters \> Identity Providers** in the **ClientId** field under **Relying Parties**. The application ID can also be found in Commerce site builder at **Tenant Settings \> B2C Settings** as the **Client GUID** within the B2C application configuration used for your site.
 1.	In the left navigation pane under **Manage**, select **Expose an API** and verify that a **user_impersonation** scope exists. If one does not exist, select **Add a scope** to create one. When prompted for an **Application ID URI**, leave the application ID URI as is and then add "user_impersonation" for the **Scope name**. Then enter friendly values for **Admin consent display name** and **Admin consent description**.
 
-    ![Expose an API](media/local-sign-in-04.png)
+    ![Expose an API.](media/local-sign-in-04.png)
 
 1.	Copy and save the full scope value, as this information will be used late as the `userImpersonationScopeURL` property value in your credentials.json file.
 1.	Return to the native application you just created, and in the left navigation pane under **Manage**, select **API permissions**.
 1.	Select **Add a permission**, and then select the **APIs my organization uses** tab.
 1.	Search for your e-Commerce rendering application that was created above, and then select it and add **user_impersonation** as a permission.
 
-    ![API permissions](media/local-sign-in-05.png)
+    ![API permissions.](media/local-sign-in-05.png)
 
 1.	Select **Add permissions**.
 1.	Select **Grant admin consent for** (this name will contain your domain), and then select **Yes** to apply the consent. You should now see a green checkmark under **Status** for **user_impersonation**.
@@ -163,7 +164,7 @@ The credentials will live under the `secrets/` directory in your Node applicatio
 }
 ```
 
-![Example credentials.json file](media/local-sign-in-06.png)
+![Example credentials.json file.](media/local-sign-in-06.png)
 
 > [!NOTE]
 > Everything under the `secrets/` directory should be added to your .gitignore file to help prevent credentials from being leaked online.
@@ -172,6 +173,35 @@ After using the information collected in the Azure setup steps to populate your 
 
 - **defaultUser**: The default user that will be used when the **mockUser** query parameter is set to **true**. The name value should be **default**.
 - **additionalUsers**: An array of user objects that allows you to configure additional users to test with. Each entry in this array should be an object with a name, email address, password, and customer account number. To sign in as one of these users, use the query parameter **mockUser=\<name>**.
+
+### Mock a signed-in B2B user 
+
+If you need to mock a signed-in business-to-business (B2B) user, you can use the **isB2bUser** property for a user credential and set it to **true**, as shown in the following example.
+
+```json
+{
+    "loginDomain": "commerceonboardingb2c.b2clogin.com",
+    "b2cTenant": "commerceonboardingb2c",
+    "nativeApplicationId": "25f6742d-f8b8-44d9-a6a0-f06d2854ac5f",
+    "ropcUserFlowName": "B2C_1_ROPC_Auth",
+    "userImpersonationScopeURL": "https://commerceonboardingb2c.onmicrosoft.com/b7ad3e87-d8b0-4c83-b08d-7c34c19f7933/user_impersonation",
+    "defaultUser": {
+        "name": "default",
+        "email": "",
+        "password": "",
+        "customerAccountNumber": "",
+        "isB2bUser": true
+    },
+    "additionalUsers":[ 
+        {
+            "name": "test-user-1",
+            "email": "test-user-1@example.com",
+            "password": "password",
+            "customerAccountNumber": ""
+        }
+    ]
+}
+```
 
 ## Mock sign-in status
 

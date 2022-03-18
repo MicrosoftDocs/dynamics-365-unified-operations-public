@@ -3,7 +3,7 @@
 
 title: Vendor workflow
 description: Modify vendor information and use workflow to approve it.
-author: mikefalkner
+author: sunfzam
 ms.date: 08/24/2018
 ms.topic: article
 ms.prod: 

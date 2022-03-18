@@ -1,30 +1,15 @@
 ---
-# required metadata
-
 title: Commerce Scale Unit customer and consumer APIs
 description: This topic provides an overview of the APIs that are available across various roles, and that can be used by various clients.
 author: mugunthanm
 ms.date: 06/02/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 84383
-ms.assetid:
+ms.reviewer: tfehr
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
 ---
 
 # Commerce Scale Unit customer and consumer APIs
@@ -90,6 +75,13 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 | GetSalesOrderDetailsBy- TransactionId                    | string transactionId, int searchLocationValue                                                                                                      | SalesOrder                     | Employee, Customer        | Gets the sales order details by transaction id.                                                         |
 | GetSalesOrderDetailsBy- SalesId                          | string salesId                                                                                                                                     | SalesOrder                     | Employee, Customer        | Gets the sales order details by sales id.                                                               |
 | GetSalesOrderDetailsBy- QuotationId                      | string quotationId                                                                                                                                 | SalesOrder                     | Employee, Customer        | Gets the sales order details by Quotation id.                                                           |
+| GetEntityByKey                     | string transactionId                                                                                                                                | SalesOrder                     | Employee        | Gets the sales order matching the transaction identifier.                                                          |
+| CreateEntity                      | SalesOrder entity                                                                                                                                 | SalesOrder                     | Employee, Application        | Uploads a booked sales order with tender lines.                                                          |
+| CheckInForOrderPickup                      | long channelId, string packingSlipId, string channelReferenceId, IEnumerable\<CommerceProperty\> extensionProperties                                                                                                                                | CheckInForOrderPickupConfirmation                     | Anonymous, Customer        | The check-in operation for the order pickup.                                                           |
+| GetInvoiceDetails                      | InvoiceDetailsSearchCriteria invoiceDetailsSearchCriteria                                                                                                                                | SalesInvoice                     | Employee, Customer, Application        | Gets the invoice details (lines, charges, taxes) by invoice search criteria.                                                          |
+| SearchSalesTransactionsByReceiptId                      | string receiptId, QueryResultSettings settings                                                                                                                                | PagedResult\<SalesOrder\>                     | Employee        | Searches sales transactions by receipt identifier.                                                           |
+| SendReceipt                      | SearchReceiptCriteria searchReceiptCriteria, IEnumerable\<ElectronicAddress\> recipientAddresses                                                                                                                               | NullResponse                    | Employee        | Sends transaction receipt satisfying the specified criteria to up to three specified electronic addresses.
+  | GetOrderByChannelReferenceLookupCriteria                      | ChannelReferenceLookupCriteria channelReferenceLookupCriteria                                                                                                                               | SalesOrder                    | Employee, Customer, Application, Anonymous       | Gets a sales order for given channel reference id and additional lookup criteria.   |
 
 ## Cart controller
 
@@ -399,6 +391,22 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 | GetProductRatings                 | IEnumerable\<long\> productIds, QueryResultSettings settings                                                                                                                                                                                                            | PageResult\<ProductRating\>            | Employee, Customer, Anonymous,  Application              | Gets a collection of product ratings based on product identifiers.                                                                        |
 | GetEstimatedAvailability                            | InventoryAvailabilitySearchCriteria searchCriteria                                                                                                                                                                                        | ProductWarehouseInventoryInformation  | Employee, Customer, Anonymous, Application               | Get estimated product availability based on search criteria.                                                                                               |
 | GetEstimatedProductWarehouseAvailability                            | InventoryAvailabilitySearchCriteria searchCriteria                                                                                                                                                                                        | IEnumerable\<ProductWarehouse\>                 | Employee, Customer, Anonymous, Application               | Get estimated product availability for specific product warehouse pairs.                                                                                               |
+
+## Product lists controller
+
+| API                        | Parameter                               | Return value                             | Supported Commerce Roles | Description                                   |
+|----------------------------|-----------------------------------------|------------------------------------------|--------------------------|-----------------------------------------------|
+| Search     | ProductListSearchCriteria productListSearchCriteria, QueryResultSettings queryResultSettings               | PagedResult\<ProductList\>                          | Employee, Customer, Anonymous                 | Gets the product lists filtered by search criteria.                  |
+| AddProductListLines | string productListId, IEnumerable\<ProductListLine\> productListLines | PagedResult\<ProductListLine\> | Employee, Customer, Anonymous                 | Creates the product list lines for product list. |
+| UpdateProductListLines | string productListId, IEnumerable\<ProductListLine\> productListLines | PageResult\<ProductListLine\> | Employee, Customer, Anonymous                 | Updates the product list lines. |
+| GetProductListLines | string productListId, string searchText, QueryResultSettings queryResultSettings | PagedResult\<ProductListLine\> | Employee, Customer, Anonymous            | Gets the product list lines. |
+| RemoveProductListLines | string productListId, IEnumerable\<ProductListLine\> lines| NullResponse | Employee, Customer, Anonymous                 | Removes lines from the product list. |
+| CopyCartToProductList | string cartId, string destinationProductListId, bool isRewrite, bool isQuantityAggregate | ProductList | Employee, Customer                 | Copies the cart content to product list lines. |
+| GetEntityByKey | string productListId    | ProductList  | Employee, Customer                 | Gets a single product list by id. |
+| CreateEntity   | ProductList productList | ProductList  | Employee, Customer                 | Creates the product list. |
+| PatchEntity    | ProductList productList | ProductList  | Employee, Customer                 | Updates the product list properties. Used for partial updates.|
+| UpdateEntity   | ProductList productList | ProductList  | Employee, Customer                 | Updates the product list properties. Used for partial updates. |
+| DeleteEntity   | string productListId    | NullResponse | Employee, Customer                | Deletes the product list. |
 
 ## Sales orders fulfillment controller
 

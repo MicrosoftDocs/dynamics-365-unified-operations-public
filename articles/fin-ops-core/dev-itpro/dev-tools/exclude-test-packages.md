@@ -5,7 +5,7 @@ author: jorisdg
 ms.date: 05/15/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 26731
 ms.assetid:
 ms.search.region: Global
@@ -26,11 +26,11 @@ The new feature exposes a new optional parameter for the package creation step i
 
 1. In Microsoft Azure DevOps, on the **Build & Release** page, under **Builds**, on the **All Definitions** tab, find your build definition. Click the ellipsis (…), and then click **Edit**.
 
-    ![Edit the build definition](media/builddef_edit.png)
+    ![Edit the build definition.](media/builddef_edit.png)
 
 1. On the **Variables** tab, notice that the new build definition has a variable that is named **PackagingExclusions**.
 
-    ![PackagingExclusions variable](media/builddef_packexclvariable.png)
+    ![PackagingExclusions variable.](media/builddef_packexclvariable.png)
 
 1. In the **PackagingExclusions** variable, specify a comma-separated list of the names of packages that should not be packaged into the deployable package.
 
@@ -39,7 +39,7 @@ The new feature exposes a new optional parameter for the package creation step i
 
     For example, you have one package that is named MyCompanysAwesomeTests and another package that is named ContosoTaskRecordingTests, and you want to exclude both these packages from the deployable package. In this case, the value for the **PackagingExclusions** variable will look like this.
 
-    ![PackagingExclusions example](media/builddef_packexclexample.png)
+    ![PackagingExclusions example.](media/builddef_packexclexample.png)
 
     After you complete this setup, the build process will still build the code and run any tests that the packages contain. However, the deployable package that the build creates won't include those packages.
 
@@ -57,7 +57,7 @@ To use the new feature, you must manually update any existing build definitions 
 
     The **Arguments** text box should now look like this.
 
-    ![Generate Packages task](media/builddef_generatepack.png)
+    ![Generate Packages task.](media/builddef_generatepack.png)
 
 1. Click **Save**.
 

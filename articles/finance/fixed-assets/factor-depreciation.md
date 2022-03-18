@@ -3,7 +3,7 @@
 
 title: Factor depreciation
 description: This article gives an overview of the factor depreciation method.
-author: ShylaThompson
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 13831
 ms.assetid: 2b6c4fe4-02ff-4191-bcad-32f1f34c15f2
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article gives an overview of the factor depreciation method.
 
-Factors are the percentages that are used to depreciate assets. When you set up a fixed asset depreciation profile and select **Factor** in the **Method** field on the **Depreciation profiles** page, you can set up progressive, digressive, or straight line depreciation:
+Factors are the percentages that are used to depreciate assets. When you set up a fixed asset depreciation profile and select **Factor** in the **Method** field on the **Depreciation profiles** page, you can set up progressive, digressive, or straight line depreciation.
 
 -   In progressive depreciation, the amount of depreciation increases each depreciation period.
 -   In digressive depreciation, the amount of depreciation per period decreases over time.

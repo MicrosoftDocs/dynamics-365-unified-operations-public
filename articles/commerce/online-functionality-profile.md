@@ -46,7 +46,7 @@ The following procedure explains how to create an online functionality profile f
 
 The following image shows an example online functionality profile.
   
-![Online functionality profile example](media/online-functionality-profile.png)
+![Online functionality profile example.](media/online-functionality-profile.png)
 
 ## Functions
 

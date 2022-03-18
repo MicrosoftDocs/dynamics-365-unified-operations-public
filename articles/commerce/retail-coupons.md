@@ -2,9 +2,9 @@
 # required metadata
 
 title: Set up coupons for retail sales
-description: This topic provides an overview of coupons and explains how to set them up.
-author: scott-tucker
-ms.date: 06/04/2020
+description: This topic provides an overview of coupons and explains how to set them up in Dynamics 365 Commerce.
+author: josaw1
+ms.date: 10/05/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -23,7 +23,7 @@ ms.reviewer: josaw
 ms.custom: 
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: scotttuc
+ms.author: josaw
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 
@@ -47,6 +47,8 @@ To create a coupon, you create the discount and the coupon separately. You then 
 > After a coupon is linked to a discount, several fields on the discount page in Commerce become read-only, because they are managed by the coupon's settings. These fields include the fields for the status and standard date ranges.
 > 
 > While using the coupon in the call center channel, you need to select the **Recalculate** button **(Sell tab > Calculate > Recalculate)** in order for the discount associated to the coupon to get applied. This additional step will be removed in a future release.
+
+To apply a coupon to a sales transaction in point of sale (POS), you can use **Coupon code** or **Coupon bar code**. To use **Coupon code**, the **Add coupon code** operation must be configured in the POS **Transaction** [screen layout](pos-screen-layouts.md). Select **Add coupon code** and enter the coupon code. Alternatively, to use **Coupon bar code**, scan the bar code or enter the bar code using the numeric keyboard on the **Transaction** screen.
 
 ### Limited-use coupons
 

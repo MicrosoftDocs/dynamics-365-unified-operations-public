@@ -44,7 +44,7 @@ If multiple items are selected for pickup across multiple stores, the pickup inf
 
 The following illustration shows an example of time slot selection through the pickup information module on a checkout page.
 
-![Example of a pickup information module on a checkout page](./dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
+![Example of a pickup information module on a checkout page.](./dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
 
 ## Module properties
 
@@ -60,7 +60,7 @@ For instructions about how to add a pickup information module to a checkout page
 
 The following illustration shows an example of an e-Commerce checkout page that includes time slots for pickup line items.
 
-![Example of an e-Commerce checkout page that includes time slots for pickup line items](./dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
+![Example of an e-Commerce checkout page that includes time slots for pickup line items.](./dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
 
 ## Additional resources
 

@@ -4,7 +4,7 @@
 title: Online invoicing system
 description: This topic describes how to set up Electronic reporting (ER) configurations, and how to set up and use electronic messaging (EM) functionality for RTIR.
 author: anasyash
-ms.date: 05/27/2021
+ms.date: 09/20/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -41,6 +41,8 @@ The topic includes information about how to complete the following tasks:
 - Set up EM functionality.
 - Work with EM functionality for RTIR.
 
+Online invoicing system of Hungary require the use of TLS 1.2. For more information about how to enable TLS 1.2, see [How to enable TLS 1.2](/mem/configmgr/core/plan-design/security/enable-tls-1-2). 
+
 ## Import ER configurations
 
 To prepare your Microsoft Dynamics 365 Finance application for RTIR, you must import the following ER configurations.
@@ -70,6 +72,9 @@ For more information about how to download ER configurations from the Microsoft 
 The format that is used to report invoice data to the Hungarian Online Invoicing System requires specific values from enumerated lists for some elements (for example, units of measure or line expression indicators). For these elements, before you start to use RTIR, you must set up application-specific parameters that the **RTIR Invoice Data (HU)** format will use.
 
 When you've finished setting up conditions, change the value of the **State** field to **Completed**, save your changes, and close the page.
+
+> [!NOTE]
+> We recommend that you enable the feature, **Use application specific parameters from previous versions of ER formats** in the **Feature management** workspace. When this feature is enabled, parameters that are configured for the earlier version of an ER format automatically become applicable for the later version of the same format. If this feature is not enabled, you must configure application-specific parameters explicitly for each format version. The **Use application specific parameters from previous versions of ER formats** feature is available in the **Feature management** workspace starting in Finance version 10.0.23. For more information about how to set up the parameters of an ER format for each legal entity, see [Set up the parameters of an ER format per legal entity](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
 
 ### Line expression indicator
 
@@ -216,13 +221,13 @@ The process of setting up the EM functionality for RTIR has many steps. Because 
 10. Select **Upload and add**, select the **HU RTIR setup.zip** file on your computer, and upload it.
 11. After the data entities are uploaded, on the Action Pane, select **Import**.
 
-![Data management workspace](media/1_Setup_EM.png)
+![Data management workspace.](media/1_Setup_EM.png)
 
 You will receive a notification in **Messages**, or you can manually refresh the page to view the data import progress. When the import process is completed, the **Execution summary** page shows the results.
 
 The HU RTIR setup.zip package provides the setup for **Online invoicing** processing in the EM functionality that supports interoperation with the Hungarian Online invoicing system. The following illustration shows the schema for **Online invoicing** processing.
 
-![Online invoicing processing diagram](media/2_Scema.png)
+![Online invoicing processing diagram.](media/2_Scema.png)
 
 The following table describes the processing actions of **Online invoicing** processing.
 
@@ -255,12 +260,12 @@ After the data entities are imported into the database, follow these steps to ma
 2. On the Action Pane, select **Parameters**.
 3. In the dialog box, on the **Records to include** FastTab, define values for the parameters of the query.
 
-    ![Add new electronic message items dialog box](media/3_emea-hun-exec-class.png)
+    ![Add new electronic message items dialog box.](media/3_emea-hun-exec-class.png)
 
 4. Select **OK**.
 5. On the **Executable class settings** page, select the **Additional fields evaluation** executable class that is associated with the **EMAdditionalFieldsEvaluationController_HU** executable class name, select **Parameters** on the Action Pane, and then, in the dialog box, define values for the parameters of the executable class.
 
-    ![Additional fields evaluation parameters dialog box](media/4_Additional_fields.png)
+    ![Additional fields evaluation parameters dialog box.](media/4_Additional_fields.png)
 
     The following values must be set for the parameters.
 
@@ -284,7 +289,7 @@ After the data entities are imported into the database, follow these steps to ma
 7. Go to **System administration** \> **Setup** \> **System parameters**, and set the **Use advanced certificate store** option to **No** to store sensitive data locally. Set the option to **Yes** to use Key Vault storage. For more information about how to set up Key Vault, see [Setting up Azure Key Vault Client](https://support.microsoft.com/help/4040305/setting-up-azure-key-vault-client) and [Maintaining Azure Key Vault storage](https://support.microsoft.com/help/4040294/maintaining-azure-key-vault-storage).
 8. If you set the **Use advanced certificate store** option to **Yes** on the **System parameters** page, you must set up the Key Vault parameters at **System administration** \> **Setup** \> **Key Vault parameters**.
 
-    ![Key Vault parameters page](media/5_Key_Vault.png)
+    ![Key Vault parameters page.](media/5_Key_Vault.png)
 
 9. Go to **Tax** \> **Setup** \> **Parameters** \> **Online invoicing system parameters**, and specify the following information:
 
@@ -295,11 +300,11 @@ After the data entities are imported into the database, follow these steps to ma
 
 10. If you set the **Use advanced certificate store** option to **Yes** on the **System parameters** page, select related secrets on the **General** tab of the **Online invoicing system parameters** page.
 
-    ![Online invoicing system parameters where Use advance certificate store option is set to yes](media/6_Key_Vault.png)
+    ![Online invoicing system parameters where Use advance certificate store option is set to yes.](media/6_Key_Vault.png)
 
     Alternatively, if you set the **Use advanced certificate store** option to **No**, manually enter the technical user name and password, signature key, and replacement key that you obtained for interoperation with the Hungarian Online invoicing system. For more information, see the [information about the registration procedure](https://onlineszamla-test.nav.gov.hu/tajekoztatas_a_regisztraciorol).
 
-    ![Online invoicing system parameters where Use advance certificate store option is set to no](media/7_system_parameters.png)
+    ![Online invoicing system parameters where Use advance certificate store option is set to no.](media/7_system_parameters.png)
 
 11. Go to **Tax** \> **Setup** \> **Parameters** \> **Electronic messages** \> **Web service settings**, and enter the following information to define the internet address for web services.
 
@@ -315,7 +320,7 @@ After the data entities are imported into the database, follow these steps to ma
 13. In the **Number of message items per export** field, define the number of message items that can be included in one message. This number should not exceed 100.
 14. In the **Items attached compression type** field, specify **None**, and set the **Attach files from output archive to items** option to **Yes**.
 
-    ![Message processing actions page, Generate EM tab](media/8_actions.png)
+    ![Message processing actions page, Generate EM tab.](media/8_actions.png)
 
 15. Set up security roles for online invoicing processing. Different groups of users might require access to online invoicing processing. You can limit access to the processing, based on security groups that are defined in the system. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**, select **Online invoicing**, and add the security groups that must work with this processing. If no security group is defined for the processing, only a system admin can see the processing on the **Electronic messages** page.
 

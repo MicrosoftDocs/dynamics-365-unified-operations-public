@@ -76,29 +76,29 @@ People often have questions about the order that the various components run in. 
 
 The following illustration shows the fixed default dimension that is set on main account 401100.
 
-[![Default financial dimensions](./media/default-dimensions.png)](./media/default-dimensions.png)
+[![Default financial dimensions.](./media/default-dimensions.png)](./media/default-dimensions.png)
 
 For this very basic example, we will enter a general journal where the Department dimension is set to use the default value **023** (Operations). We will enter and post a ledger account. The following illustration shows the default financial dimension on the general ledger header.
 
-[![General journals](./media/general-journal.png)](./media/general-journal.png)
+[![General journals.](./media/general-journal.png)](./media/general-journal.png)
 
 The default dimension on the journal header will cause department 023 to be applied by default on the sales account line. The following illustration shows the general journal line, where the **023** default dimension value from the header is applied.
 
-[![Journal voucher](./media/journal-voucher.png)](./media/journal-voucher.png)
+[![Journal voucher.](./media/journal-voucher.png)](./media/journal-voucher.png)
 
 However, when the line is posted, the fixed dimension is applied, and the line is posted to department 022. The following illustration shows the posted voucher, where the fixed dimension is applied for the sales account.
 
-[![Voucher transactions with fixed dimension applied](./media/voucher-transactions.png)](./media/voucher-transactions.png)
+[![Voucher transactions with fixed dimension applied.](./media/voucher-transactions.png)](./media/voucher-transactions.png)
 
 ### Example 2
 
 This example uses the same setup as the first example. However, we will add a second component and use the Department dimension as a balancing dimension. In the following illustration, **Department** is set as the balancing financial dimension for the USMF ledger.
 
-[![Illustration showing Deparatment as the balancing financial dimension](./media/ledger.png)](./media/ledger.png)
+[![Illustration showing Deparatment as the balancing financial dimension.](./media/ledger.png)](./media/ledger.png)
 
 When the same journal header setup is used, and the same transaction is posted, the fixed dimension is applied first. Then the balancing logic is applied to help guarantee that every department has a balanced entry. The following illustration shows voucher transactions that include the balancing entry after the fixed dimension is applied.
 
-[![Voucher transactions after the balancing entry is applied](./media/voucher-transactions2.png)](./media/voucher-transactions2.png)
+[![Voucher transactions after the balancing entry is applied.](./media/voucher-transactions2.png)](./media/voucher-transactions2.png)
 
 ### Example 3
 
@@ -106,11 +106,11 @@ In this example, we will add an advanced rule. The advanced rule specifies that 
 
 This example is important because of the order. The account structure is determined after the main account is entered. If you refer to the account structure setup, the system can determine that the main account, business unit, department, and cost center are relevant. At this point, the advanced rule hasn't been triggered, because fixed dimensions aren't applied until default dimensions have been applied for the journal voucher during posting. In the following illustration, the Customer segment isn't present, because the criteria for the advanced rule haven't been met.
 
-[![Ledger account](./media/drop-down.png)](./media/drop-down.png)
+[![Ledger account.](./media/drop-down.png)](./media/drop-down.png)
 
 The posting won't be successful, because the fixed dimension was applied at the end of the process. Dimension validation determines that the Customer segment is required if the main account is 401100 and the department is 022. Posting can't occur because of the validation error. The following illustration shows the message that appears after dimension validation determines that Customer is a required segment.
 
-[![Message details](./media/message.png)](./media/message.png)
+[![Message details.](./media/message.png)](./media/message.png)
 
 In this example, you must overwrite the default value so that the advanced rule is triggered and you can enter the Customer segment. However, this solution isn't always possible, and some users aren't even aware of the posting rules. Therefore, it's important that you understand the order that default dimensions are applied in when you set up your chart of accounts.
 

@@ -5,7 +5,7 @@ title: Regulatory Configuration Service
 description: This topic provides an overview of the capabilities of Regulatory Configuration Service (RCS) and explains how to access the service.
 author: JaneA07
 ms.date: 06/04/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: 97423
+ms.custom: ["97423", "intro-internal"]
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -45,12 +45,15 @@ RCS provides the following capabilities:
 
 You can sign up for or sign in to RCS from the [Regulatory Configuration Service page](https://marketing.configure.global.dynamics.com/).
 
-![RCS sign-up/sign-in](media/202103_RCS%20Marketing%20page_updated_1.jpg)
+![RCS sign-up/sign-in.](media/202103_RCS%20Marketing%20page_updated_1.jpg)
 
 On the **Regulatory Configuration Service** page, review and accept the supplemental terms and conditions for use of the service, and then select one of the following buttons:
 
 - **Sign up** if you're a first-time user of the service, and you're using a business email address to provision your organization a service environment
 - **Sign in** if you've previously signed up for the service, and you want to access your organization environment
+
+> [!NOTE] 
+> After you sign up, we recommend that you add an additional SysAdmin user to the RCS environment. This user will be provisioned as the co-admin for the environment. This will help to provide stability for access to the RCS environment, as the SysAdmin role is to manage users for that environment. You can add users using **RCS workspace > System Administration**.
 
 ## Regional availability
 
@@ -95,7 +98,7 @@ For more information about related components, see the following topics:
 
 When you sign up for RCS from the service page, you might encounter an issue that is related to Azure Active Directory (Azure AD). The error message that you receive indicates that sign-up for RCS is currently turned off and must be turned on before you can complete the sign-up process.
 
-![RCS sign-up error message](media/01_RCSSignUpError.jpg)
+![RCS sign-up error message.](media/01_RCSSignUpError.jpg)
 
 The issue occurs because you're blocked from signing up for ad-hoc subscriptions, and the `AllowAdHocSubscriptions` property must be enabled in your tenant. 
 

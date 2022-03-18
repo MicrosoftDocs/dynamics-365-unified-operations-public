@@ -3,7 +3,7 @@
  
 title: Set up attribute-based pricing for configurable products
 description: This topic explains how to set up attribute-based pricing. 
-author: ShylaThompson
+author: t-benebo
 ms.date: 08/20/2019
 ms.topic: business-process 
 ms.prod:  
@@ -19,9 +19,9 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kamaybac
+ms.author: benebotg
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Set up attribute-based pricing for configurable products
 

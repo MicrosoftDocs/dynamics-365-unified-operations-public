@@ -14,7 +14,7 @@ ms.search.form:
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -38,7 +38,7 @@ When you update an environment, you should also consider moving the whole databa
 
 Other updates are code updates. The environment page in Microsoft Dynamics Lifecycle Services (LCS) tracks the updates that have been applied and the updates that must be applied. The following illustration shows an environment that has 79 outstanding X++ fixes, 14 outstanding binary updates, and nine outstanding platform binary updates.
 
-![LCS environment page](./media/17-LCS-environment-page.png)
+![LCS environment page.](./media/17-LCS-environment-page.png)
 
 Platform code is at a very low level, and no Microsoft Dynamics 365 Commerce features are implemented in the platform. Therefore, stand-alone platform binary updates don't require that you retest any Commerce-specific code. Examples of features that are implemented in the platform are the Data Import/Export Framework (DIXF) and the batch framework.
 
@@ -88,7 +88,7 @@ Another approach is to take all hotfixes frequently and run only part of the UAT
 
 Just as the branching strategy is dictated by project, team, or other constraints, your project has flexibility about how the changes are propagated through the branches. The following illustration shows an example of the process. However, this example might be too simple for some projects and too complex for other projects. The important point is that a project should have a plan. Different persons in the team will have different responsibilities (development, deployment, code merges, sign-off, and so on), and the role ownership should be clearly defined.
 
-![Branch diagram](./media/1-1-diagram.png)
+![Branch diagram.](./media/1-1-diagram.png)
 
 ### Steps 1–3: Obtain and apply updates
 
@@ -104,7 +104,7 @@ For the X++ code, developers just synchronize the Metadata folder and do a full 
 
 If major new changes have been checked in by other members of the team (for example new files, configuration changes, or a new Retail SDK), it isn't enough to synchronize and build the new files. Remember that a few web applications that are installed on the developer machine won't be updated through a compilation. Those web applications must be deployed. Use the LCS package deployment to deploy the commerce package that can be produced at an MSBuild command prompt. For smaller code changes, new package deployments aren't required in order to keep the dev environments in sync if the incremental changes are dropped to the install locations. 
 
-![Environment change history](./media/1-2-environment-change-history.png)
+![Environment change history.](./media/1-2-environment-change-history.png)
 
 ### Step 4: Move changes from the Dev branch to the Main branch
 
@@ -114,19 +114,19 @@ In this example, the Dev and Main branches have been separated to provide an opp
 
 Use your build environment to produce officially built packages from the code in the Main branch.
 
-![Build Definitions Unified Operations](./media/1-3-build-definition-unified-operations.png)
+![Build Definitions Unified Operations.](./media/1-3-build-definition-unified-operations.png)
 
 When the build is completed, find the packages that were built, download them, and rename them according to your naming conventions.
 
-![Artifacts Explorer](./media/1-4-artifacts-explorer.png)
+![Artifacts Explorer.](./media/1-4-artifacts-explorer.png)
 
 Then upload the packages to the LCS Asset library.
 
-![Asset library](./media/1-5-asset-library.png)
+![Asset library.](./media/1-5-asset-library.png)
 
 Finally, deploy the packages to your test environments.
 
-![Environment change history UAT](./media/1-6-environment-change-history-UAT.png)
+![Environment change history UAT.](./media/1-6-environment-change-history-UAT.png)
 
 ### Step 4.3: Deploy packages to the production environment
 
@@ -146,7 +146,7 @@ You should always deploy binary updates and platform updates by using LCS packag
 
 Finance and Commerce customization packages should not be deployed to a build environment.
 
-![Environment change history build](./media/1-7-environment-change-history-build.png)
+![Environment change history build.](./media/1-7-environment-change-history-build.png)
 
 ## Compare LCS tile counts
 
@@ -159,7 +159,7 @@ Environments that are used for work of the same release should also have the sam
 
 Notice that after you've finished updating an environment, the tile counts for the available updates are significantly lower than they were when you started.
 
-![LCS Dev Environment](./media/LCSDevEnvironmentpage.png)
+![LCS Dev Environment.](./media/LCSDevEnvironmentpage.png)
 
 ## Move to a new version
 

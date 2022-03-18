@@ -35,7 +35,7 @@ This topic shows how to create a custom report design for an existing applicatio
 
 Microsoft Dynamics 365 Finance includes an expanded set of tools to support custom solutions. This topic focuses on the steps for creating a custom report design for an existing application business document by using a pure extension model. Follow the steps later in this topic to associate a custom report design with an instance of an application document. When you've finished, users can configure Print management settings to select the custom design whenever it's appropriate, based on transaction details. The following illustration shows a typical application customization.
 
-[![extendingprintmgt](./media/extendingprintmgt1.png)](./media/extendingprintmgt1.png)
+[![extendingprintmgt.](./media/extendingprintmgt1.png)](./media/extendingprintmgt1.png)
 
 ## What's important to know?
 Here are some important points that you should be aware of before you apply this solution:
@@ -50,13 +50,13 @@ The following walkthrough shows the process of introducing a custom report desig
 1. **Create a new model for your application customizations.** For more information about extension models, see [Customize through extension and overlayering](../extensibility/customization-overlayering-extensions.md). For this example, you add a model that is named **Application Suite Extensions**, and that references the Application Suite, Application Platform, and Application Foundation packages.
 2. **Create a new project in Microsoft Visual Studio.** Make sure that the project is associated with your extension model. The following illustration shows the project settings.
 
-    [![Project settings in Visual Studio](./media/app-extension-vs-project-settings.png)](./media/app-extension-vs-project-settings.png)
+    [![Project settings in Visual Studio.](./media/app-extension-vs-project-settings.png)](./media/app-extension-vs-project-settings.png)
 
 3. **Create a custom report design for the business document.** You must make sure that your custom solution consumes the correct report data contract. Find the existing Application Suite report in Application Explorer. This report is named **SalesConfirm**. Right-click it, and then click **Duplicate in project** to create the custom solution.
 4. **Rename the report so that it has a meaningful name.** For this example, name the custom report **SalesConfirmExt** to distinguish it from the standard solution. Compile the project, and deploy the report to verify that the changes have no errors.
 5. **Use the free-form designer to customize the report design.** Select the report design that is named **Report**, right-click it, and open the precision designer. Customize the design to satisfy the organization’s business requirements. The following illustration shows a custom design definition for the **Sales confirmation** report.
 
-    [![Custom design definition for the Sales confirmation report](./media/app-extension-report-designer-1024x613.png)](./media/app-extension-report-designer.png)
+    [![Custom design definition for the Sales confirmation report.](./media/app-extension-report-designer-1024x613.png)](./media/app-extension-report-designer.png)
 
 6. **Add a new X++ class that extends the standard report controller.** Give the class a name that appropriately describes that it's a handler for an existing application report. For this example, rename the class **SalesConfirmControllerExt** to distinguish it from other report controllers.
 7. **Use the extended class to load the custom design.** Add a **main** method that refers to the custom report design. (You can just copy the **main** method from the standard solution and add references to the new **Controller** class.) Here is the code that extends the standard solution.
@@ -103,7 +103,7 @@ The following walkthrough shows the process of introducing a custom report desig
 10. **Extend the menu item for the application report.** Find the existing Application Suite menu item in Application Explorer. This menu item is named **SalesConfirmation**. Right-click it, and then click **Create extension**. Open the new extension object in the designer, and set the value of the **Object** property to **SalesConfirmControllerExt** to redirect user navigations to the extended solution.
 11. **Update the Print management settings to use the custom business document.** For this example, go to **Accounts receivable** &gt; **Setup** &gt; **Forms** &gt; **Form setup**. Click **Print Management**, find the document configuration settings, and then select the custom design. The following illustration shows the Print management settings after the changes have been compiled.
 
-    [![Print Management settings after compilation](./media/app-extension-print-mgt-after-1024x608.png)](./media/app-extension-print-mgt-after.png)
+    [![Print Management settings after compilation.](./media/app-extension-print-mgt-after-1024x608.png)](./media/app-extension-print-mgt-after.png)
 
 You’ve now finished customizing the business document. Users will now be presented with the custom report design for the business document when they process transactions in the application.
 

@@ -1,13 +1,13 @@
 ---
 title: User-specified team owner
 description: This topic explains how set a user-specified team owner instead of using the default team owner.  
-author: sabinn-msft
+author: nhelgren
 ms.date: 04/26/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: sabinn
+ms.author: nhelgren
 ms.search.validFrom: 2021-04-26
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 In Finance and Operations apps, global tables are not associated with a company or legal entity. For these tables, you can specify a team and not use a default team as owner when writing to Microsoft Dataverse using dual-write. 
 
@@ -26,7 +26,7 @@ By default, when you enable dual-write, the root business unit’s default team 
 
 When you select a global table map such as **Global Products**, under **Table mappings**, you can view the list of teams in the **Update owning team** section. By default, dual-write uses the default team, which is indicated by a blank value. After you create a new map with a new version, you change the default behavior by picking a new team from the owning team list and then save the new value. The **Owning team** field is shown in the following screenshot.
 
-:::image type="content" source="media/owning-team-1.png" alt-text="Update owning team":::
+:::image type="content" source="media/owning-team-1.png" alt-text="Update owning team.":::
   
 >[!NOTE]
 > After you set the owning team, it works across both initial and live sync. 
@@ -36,6 +36,6 @@ When you select a global table map such as **Global Products**, under **Table ma
 
 After you run the initial sync, the owner is shown in the integrated records. In the following screenshot, the owner has changed from **dwteam** to **Sales** for the integrated records in **Global Product** table map.
   
-:::image type="content" source="media/owning-team-2.png" alt-text="Initial sync with default and user specified team":::
+:::image type="content" source="media/owning-team-2.png" alt-text="Initial sync with default and user specified team.":::
   
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

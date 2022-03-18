@@ -37,7 +37,7 @@ As part of the requirements for LCS solutions for localization &amp; translation
 
 Localization independent software vendor (ISV) solution providers must create a new project in Microsoft Dynamics Lifecycle Services (LCS) to record regulatory alerts.
 
-[![LCS create project](./media/lcs-create-project-300x138.png)](./media/lcs-create-project.png)
+[![LCS create project.](./media/lcs-create-project-300x138.png)](./media/lcs-create-project.png)
 
 Follow these steps to set up the project.
 
@@ -60,11 +60,11 @@ Invite participants that should have access to the project, so that they can sub
 1.  In your LCS project, scroll to the right side of the page, and then, under **More tools**, click **Localization and translation**.
 
 
-    [![Loc & translation tile](./media/loc-translation-tile-300x185.jpg)](./media/loc-translation-tile.jpg)
+    [![Loc & translation tile.](./media/loc-translation-tile-300x185.jpg)](./media/loc-translation-tile.jpg)
 
 2.  Select **Dynamics Regulatory Alert Submission**, and then click **Enter**. The **Dynamics Regulatory Alert Submission** page opens. Use this page to view any previous alerts that have been submitted by you or your organization.
 
-    [![Reg alert service](./media/reg-alert-service-300x170.jpg)](./media/reg-alert-service.jpg)
+    [![Reg alert service.](./media/reg-alert-service-300x170.jpg)](./media/reg-alert-service.jpg)
 
 ## Submit a regulatory alert
 To enter a new regulatory alert, click the plus sign (**+**) at the top of the form, above the filter. The **Submit regulatory alert** wizard starts. Follow these steps to complete the wizard.
@@ -75,7 +75,7 @@ To enter a new regulatory alert, click the plus sign (**+**) at the top of the f
     3.  You can narrow down the search results by using the filter/criteria that are available.
     4.  If you don't find the regulatory feature that you're searching for, you can submit a regulatory alert by clicking **Submit regulatory alert** on the bottom ribbon.
 
-    [![Submit alert](./media/submit-alert1-300x174.jpg)](./media/submit-alert1.jpg)
+    [![Submit alert.](./media/submit-alert1-300x174.jpg)](./media/submit-alert1.jpg)
     
 2.  On the **Attach business processes** page, follow these steps:
     1.  In the **Global business process libraries** field, you can select business process libraries.
@@ -84,7 +84,7 @@ To enter a new regulatory alert, click the plus sign (**+**) at the top of the f
     4.  When you've finished, click **Continue** to go to the next page in the wizard. When you receive a confirmation message, click **Yes**. If no relevant business processes are found, you can skip this page in the wizard.
     5.  You receive a message that asks whether you want to add the selected business processes to the alert. You can click either **Yes** or **Cancel**.
 
-    [![BP capture](./media/bp-capture-300x156.jpg)](./media/bp-capture.jpg)
+    [![BP capture.](./media/bp-capture-300x156.jpg)](./media/bp-capture.jpg)
     
 3.  On the **Describe the alert** page, follow these steps:
     1.  Enter information for the alert in the appropriate fields. Required fields are indicated by a red asterisk (\*).
@@ -112,25 +112,25 @@ To enter a new regulatory alert, click the plus sign (**+**) at the top of the f
     2.  When you've finished adding all the required fields, you must provide appropriate consent by selecting the consent check box: **By creating this alert I allow Microsoft to contact me in the future for any further information related to this alert. Read the Microsoft Dynamics Lifecycle Services privacy statement for more information.**
     3.  After you select the check box, the **Submit** button becomes available. Click **Submit** to submit the alert. If you've partially completed an alert, you can save the information that you've already entered for later completion or review. Click **Save** before you submit the alert.
     
-        [![Alert details](./media/alert-details-300x152.jpg)](./media/alert-details.jpg)
+        [![Alert details.](./media/alert-details-300x152.jpg)](./media/alert-details.jpg)
 
     4.  When you receive a confirmation message that states that the alert has been successfully submitted, click **Done** to exit the wizard. If you chose to save the alert before you submitted it, an alert ID is generated, and you are notified that the alert has been saved.
     
-        [![submission confirmation](./media/submission-confirmation-300x166.png)](./media/submission-confirmation.png)
+        [![submission confirmation.](./media/submission-confirmation-300x166.png)](./media/submission-confirmation.png)
 
 ## Review regulatory alerts that have been entered into the project
 To view the regulatory alerts that have been entered into your alerting project, use the alert grid. This grid provides a high-level list view of the alerts that have been submitted, and shows the alert title, country/region, law enforced date, and so on.
 
-[![Alert grid](./media/alert-grid-300x117.png)](./media/alert-grid.png) 
+[![Alert grid.](./media/alert-grid-300x117.png)](./media/alert-grid.png) 
 
 You can search the contents of the grid by using the filter/search field and then selecting from the default search options. You can drill into the detail of an alert by clicking the alert ID, which is a hyperlink. The completed alert submission page opens, where you can review the alert details, and also any comments and attachments.
 
-[![Review alert](./media/review-alert-300x195.png)](./media/review-alert.png)
+[![Review alert.](./media/review-alert-300x195.png)](./media/review-alert.png)
 
 ## Process submitted alerts options
 After an alert has been submitted to the LCS alert project, you can process it from the grid view by clicking the alert ID hyperlink. Project owners can then change the status of the alert to notify project members whether action will continue to be taken for the alert. Options appear when you drill into details of the alert.
 
-[![Alert processing](./media/alert-processing-300x172.png)](./media/alert-processing.png)
+[![Alert processing.](./media/alert-processing-300x172.png)](./media/alert-processing.png)
 
 The following table describes the processing options that are available for alerts.
 

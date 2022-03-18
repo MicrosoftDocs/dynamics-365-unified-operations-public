@@ -4,7 +4,7 @@
 title: Partial fixed asset disassembly (liquidation)
 description: This topic provides information about partial fixed asset disassembly or liquidation for Russia.
 author: v-oloski
-ms.date: 09/14/2018
+ms.date: 07/28/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -265,6 +265,16 @@ The component depreciated cost is calculated as the difference between the compo
 A partial take-down transaction has an indirect effect on the fixed asset balance. A partial take-down transaction creates value and depreciation revaluation transactions. These transactions, in turn, are already considered in the fixed asset balance.
 
 As a result of the calculation, a balance value, a balance depreciation, and a market value that equals the depreciated cost are created.
+
+## Reverse partial dismantlement transactions
+By default, when you reverse transactions, the reversal date is equal to the original transaction date. However, you can specify a different reversal date.
+
+1. Go to **Fixed assets (Russia)** > **Fixed assets**, and on the Action Pane, select **Value models**.
+2. On the **FA value models** page, on the Action Pane, select **Transactions**. 
+3. On the **FA transactions** page, select and transaction and on the Action Pane, select **Reverse transaction**. 
+4. In the **Reverse transactions** dialog box, change the transaction reversal date as needed and then select **OK**. A transaction to reverse the original transaction is created and added to the **FA transactions** page. 
+5. Select **Voucher** and on the **Voucher transactions** page, view the transactions in the ledger. 
+
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

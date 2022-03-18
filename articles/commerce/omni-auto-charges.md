@@ -47,7 +47,7 @@ With the advanced auto charges feature, POS users can have systematic calculatio
 
 On the **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters** page, go to the **Customer orders** tab. On the **Charges** FastTab, set **Use advanced auto-charges** to **Yes**.
 
-![Advanced auto-charges parameter](media/advancedchargesparameter.png)
+![Advanced auto-charges parameter.](media/advancedchargesparameter.png)
 
 When advanced auto charges are enabled, users are no longer prompted to manually enter a shipping charge at the POS terminal when creating a ship-all or ship-selected customer order. POS order charges are systematically calculated and added to the POS transaction (if a corresponding auto charges table that matches the criterion of the order being created are found). Users can also add or maintain header or line-level charges manually through newly added POS operations that can be added to the POS screen layouts.
 
@@ -90,7 +90,7 @@ Configure two different header-level auto charges. Configure one for the "Ground
 
 For the ground delivery charges, in the lines section of the **Auto-charges** page, define a charge that will be applied for orders between $.01 and $100 as $10.00. Create another charges line to indicate orders over $100.01 will have no charges.
 
-![Two auto charges tables example](media/headerchargesexample.png)
+![Two auto charges tables example.](media/headerchargesexample.png)
 
 For the air delivery charges, in the lines section of the auto charges form, define a charge of $20.00 that will be applied to all orders (between a value of $.01 to $9,999,999).
 
@@ -120,7 +120,7 @@ Go to **Accounts Receivable \> Charges setup \> Auto charges**.
 
 Set the **Level** drop-down menu to **Line**, and create a new auto charges record for all customers and for the specific product or product group where the setup fees will be charged.
 
-![One line-level auto charges table example](media/linechargesexample.png)
+![One line-level auto charges table example.](media/linechargesexample.png)
 
 Send the charges to the Commerce Scale Unit/Channel DB so that the POS can utilize them by running the **1040 distribution schedule** job.
 
@@ -140,7 +140,7 @@ A retailer is making an exception to typical processes by offering to provide a 
 
 Ensure the charges code that will be used in this scenario has been properly configured by going to **Accounts Receivable \> Charges setup \> Charges** to define an appropriate charges code for the scenario.
 
-![Charges example](media/chargesexample.png)
+![Charges example.](media/chargesexample.png)
 
 If the charge should be considered a "shipping" related charge for the purpose of shipping related discounts or promotions, set **Shipping charge** on the charges code to **Yes**. If this charge is also allowed to be systematically refunded during the processing of a return transaction in the POS application, set **Refundable** to **Yes**. The **Refundable** flag is only applicable when the **Use advanced auto-charges** parameter is set to **Yes**.
 

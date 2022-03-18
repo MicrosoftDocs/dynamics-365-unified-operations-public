@@ -3,7 +3,7 @@
 
 title: Configure fields for the Warehouse Management mobile app
 description: This topic describes how to define and configure names and priorities of fields shown in the Warehouse Management mobile app. 
-author: MarkusFogelberg
+author: Mirzaab
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 269434
 ms.assetid: 6cf3d7da-29bb-4d3d-aaf5-544ca9cc2980
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: mafoge
+ms.author: mirzaab
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -54,7 +54,7 @@ When you use Warehousing on your mobile device, you can configure how metadata s
 <tbody>
 <tr class="odd">
 <td>Preferred input mode</td>
-<td>This option defines whether a scanning field or a manual entry input field should be shown for the selected field name. This is useful to distinguish fields depending on if barcodes are used for the field. <strong>Note:</strong> For field names with preferred input mode set to <strong>Scanning</strong>, you can enter information manually if the barcode is unreadable or damaged.</td>
+<td>This option defines whether a scanning field or a manual entry input field should be shown for the selected field name. This is useful to distinguish fields depending on if bar codes are used for the field. <strong>Note:</strong> For field names with preferred input mode set to <strong>Scanning</strong>, you can enter information manually if the bar code is unreadable or damaged.</td>
 </tr>
 <tr class="even">
 <td>Input type</td>

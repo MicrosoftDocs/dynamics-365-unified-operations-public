@@ -5,7 +5,7 @@ title: Standard Audit File for Tax (SAF-T) for Norway
 description: This topic explains how to set up and generate the Standard Audit File for Tax (SAF-T) for legal entities that have their primary address in Norway. 
 author: liza-golub
 ms.author: elgolu
-ms.date: 04/27/2020
+ms.date: 09/20/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,60 +31,45 @@ ms.dyn365.ops.version:
 
 This topic includes country-specific information about how to set up the Standard Audit File for Tax (SAF-T) for legal entities that have their primary address in Norway.
 
-## Introduction
-
 Beginning January 2020, all companies in Norway are required by the Norwegian Tax Administration to provide SAF-T Financial data. This requirement is in accordance with version 1.4 of the documentation, which was published on July 8, 2019, and version 1.3 of the technical documentation, which was published on March 23, 2018, in the form of an XML report. The publication of these pieces of documentation coincided with version 1.1 of the "Norwegian SAF-T Financial data" XML Schema Definition (XSD) schema that was developed by the SAF-T Working group, Skatteetaten, and based on "OECD Standard Audit File - Taxation 2.00," which was modified on February 2, 2018.
-
-## Overview
-
-To support the **Norwegian SAF-T Financial data** report, your Microsoft Dynamics 365 Finance application must be one of the following versions or later.
-
-| Version of Finance | Build number       |
-|--------------------|--------------------|
-| 10.0.6             | 10.0.234.**20020** |
-| 10.0.7             | 10.0.283.**10012** |
-| 10.0.8             | 10.0.319.**12**    |
-| 10.0.9             | 10.0.328.**20020** |
-
-When your Finance application version is suitable, import the following versions or later of these Electronic reporting (ER) configurations from Microsoft Dynamics Lifecycle Services (LCS).
-
-| ER configuration name              | Configuration type | Version |
-|------------------------------------|--------------------|---------|
-| Standard Audit File (SAF-T)        | Model              | 32      |
-| SAF-T Financial data model mapping | Model mapping      | 32.30   |
-| SAF-T Format (NO)                  | Format (exporting) | 32.41   |
-
-Import the latest versions of the configurations. The version description usually includes the number of the Microsoft Knowledge Base (KB) article that explains the changes that the configuration version introduced.
-
-> [!NOTE]
-> After you've finished importing all the ER configurations from the preceding table, set the **Default for model mapping** option to **Yes** for the **SAF-T Financial data model mapping** configuration.
->
-> ![Default for model mapping option set to Yes](media/nor-saf-default-model-mapping.jpg)
-
-
-![Upload and add button](media/nor-saf-default-model-mapping.jpg)
-
-For more information about how to download ER configurations from Microsoft Dynamics Lifecycle Services (LCS), see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
-
 
 ## Setup
 
-To start to use the **Norwegian SAF-T Financial data** report in Finance, you must complete the following setup:
+To use the **Norwegian SAF-T Financial data** report in Dynamics 365 Finance, complete the following setup tasks:
 
-- **General ledger parameters:** Set up the ER format on the **General ledgers parameters** page.
-- **Sales tax codes:** Associate sales tax codes with Norwegian standard value-added tax (VAT) tax codes.
-- **Main accounts:** Associate main accounts with Norwegian standard accounts.
+1. [Import Electronic reporting (ER) configurations](#import).
+2. [Set up the ER format on the **General ledgers parameters** page](#parameters).
+3. [Associate sales tax codes with Norwegian standard value-added tax (VAT) tax codes](#sales).
+4. [Associate main accounts with Norwegian standard accounts](#main).
+5. [Enable features in Feature management](#features).
 
-The following sections explain how to do each part of this setup.
+### <a name="import"></a>Import Electronic reporting (ER) configurations
 
-### General ledger parameters
+In Finance, import the following Electronic reporting (ER) configurations from the Global repository.
+
+| ER configuration name              | Configuration type |
+|------------------------------------|--------------------|
+| Standard Audit File (SAF-T)        | Model              |
+| SAF-T Financial data model mapping | Model mapping      |
+| SAF-T Format (NO)                  | Format (exporting) |
+
+For more information about how to download ER configurations, see [Download ER configurations from the Global repository](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
+
+Import the most recent versions of the configurations. The version description usually includes the number of the Microsoft Knowledge Base (KB) article that explains the changes that were introduced in the configuration version.
+
+> [!NOTE]
+> After you import all the ER configurations from the preceding table, set the **Default for model mapping** option to **Yes** for the **SAF-T Financial data model mapping** configuration.
+>
+> ![Default for model mapping option set to Yes.](media/nor-saf-default-model-mapping.jpg)
+
+### <a name="parameters"></a>Set up the ER format 
 
 1. In Finance, go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
 2. On the **General ledger parameters** page, on the **Standard Audit File for Tax (SAF-T)** tab, in the **Standard Audit File for Tax (SAF-T)** field, select **SAF-T Format (NO)**.
 
-![Standard Audit File for Tax (SAF-T) field on the General ledger parameters page](media/nor-saf-gl-parameters.jpg)
+![Standard Audit File for Tax (SAF-T) field on the General ledger parameters page.](media/nor-saf-gl-parameters.jpg)
 
-### Sales tax codes
+### <a name="sales"></a>Associate sales tax codes with Norwegian standard value-added tax (VAT) tax codes
 
 As the documentation explains, in Norwegian SAF-T Financial data, sales tax codes that are used in Finance must be associated with Norwegian standard VAT tax codes (\<StandardTaxCode\>) for the purpose of SAF-T reporting. The Norwegian standard VAT tax codes are available at <https://github.com/Skatteetaten/saf-t>.
 
@@ -93,13 +78,13 @@ To associate sales tax codes that are used in Finance with Norwegian standard VA
 1. In Finance, go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
 2. On the **Sales tax code** page, select the **Sales tax code** record, and then, on the Action Pane, on the **Sales tax code** tab, in the **Sales tax code** group, select **External codes**.
 
-    ![External codes button on the Action Pane of the Sales tax code page](media/nor-saf-standard-tax-codes.jpg)
+    ![External codes button on the Action Pane of the Sales tax code page.](media/nor-saf-standard-tax-codes.jpg)
 
 3. On the **External codes** page, specify the Norwegian standard VAT tax codes that should be used for the selected sales tax code record for the purpose of SAF-T reporting. On the **External codes** page, in the **Overview** section, in the **Code** field, select the identifier for the external code definition and enter a standard tax code that corresponds to the selected **Sales tax code** in **Value** field in **Value** section.
 
-    ![Setup Standard tax code for the selected Sales tax code](media/not-saf-external-codes-tax.png)
+    ![Setup Standard tax code for the selected Sales tax code.](media/not-saf-external-codes-tax.png)
 
-### Main accounts
+### <a name="main"></a>Associate main accounts with Norwegian standard accounts
 
 As the documentation explains, in Norwegian SAF-T Financial data, main accounts that are used in Finance must be associated with Norwegian standard accounts for the purpose of SAF-T reporting. The Norwegian standard accounts are available at <https://github.com/Skatteetaten/saf-t>.
 
@@ -116,15 +101,28 @@ To associate **Main accounts** that are used in Finance with Norwegian standard 
 6. Select the value, **NA** as the last condition in the list. It must be set to **\*Not blank\*** in **Main account** column. Verify the value in the **Line** column that **“NA”** is the last condition in the table.
 7. When you've finished setting up conditions, change the value of the **State** field to **Completed**, save your changes, and close the page.
 
-![Standard account field on the Main accounts page](media/nor-saf-standard-main-accounts-appsppar.jpg)
+![Standard account field on the Main accounts page.](media/nor-saf-standard-main-accounts-appsppar.jpg)
 
 You can easily export the setup of application-specific parameters from one version of a report and import it into another version by selecting **Export** or **Import** on the Action Pane. You can also export the setup from one report and import it into the same report in another company if the Main accounts are the same in both companies.
+
+> [!NOTE]
+> We recommend that you enable the feature, **Use application specific parameters from previous versions of ER formats** in the **Feature management** workspace. When this feature is enabled, parameters that are configured for the earlier version of an ER format automatically become applicable for the later version of the same format. If this feature is not enabled, you must configure application-specific parameters explicitly for each format version. The **Use application specific parameters from previous versions of ER formats** feature is available in the **Feature management** workspace starting in Finance version 10.0.23. For more information about how to set up the parameters of an ER format for each legal entity, see [Set up the parameters of an ER format per legal entity](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
+
+### <a name="features"></a>Enable features in Feature management
+
+1. Go to **Feature management** > **All**.
+2. In the feature list, find and select the following features:
+
+    - **Optimization of query data source creation time during execution of ER reports**
+    - **Optimize datasets memory consumption at ER reports runtime**
+
+3. Select **Enable now**.
 
 ## Generate the Norwegian SAF-T Financial data report
 
 To generate the **Norwegian SAF-T Financial data** report, follow these steps.
 
-1. In Finance, go to **General ledger** \> **Inquiries and reports** \> **Standard Audit File for Tax (SAF-T)** \> **Standard Audit File for Tax (SAF-T)**.
+1. In Finance, go to **General ledger** > **Inquiries and reports** > **Standard Audit File for Tax (SAF-T)** > **Standard Audit File for Tax (SAF-T)**.
 2. In the dialog box for the report, in the **From date** and **To date** fields, specify the start and end dates of the period that you want to generate the report for.
 3. Select the check boxes for **Customers**, **Vendors**, and **Financial dimensions** to include all the records from the related tables on the report.
 
@@ -192,5 +190,14 @@ In accordance with these requirements, the **SAF-T Format (NO)** ER format is im
 
 After the report is generated, if more than one XML file is generated, the user must manually number the generated files in the zip archive by adding **\_\<file number of total files\>** to the file names. The user must also make sure that there are no more than 10 XML files in the same zip archive. If there are more than 10 XML files in an archive, the user must manually split it into several archives, each of which has a maximum of 10 XML files.
 
+## Implementation details
+
+### \<AnalysisType\> and \<AnalysisTypeDescription\> nodes
+
+The SAF-T report for Norway must include information about the **AnalysisTypeTable** under the **MasterFiles** node of the report. **AnalysisTypeTable** must represent a table with the analysis code identifiers that are used for further specification of transaction data. In Finance, **Financial dimensions** is the data source for the **AnalysisTypeTable** node. When you set up **Financial dimensions** in your legal entity, use the **ReportColumnName** field of the **Financial dimension** data source for the value that will be reported in the \<AnalysisType\> node. Use the **Dimension name** field of the **Financial dimension** data source for the value that will be reported in the \<AnalysisTypeDescription\> node.
+
+### SAF-T report and One voucher
+
+Using the One voucher functionality introduces a limitation of further SAF-T reporting for data if one voucher was applied. We recommend that you set the **Allow multiple transactions within one voucher** parameter on the **General ledger parameters** page to **No** in your legal entity if you post transactions that are part of the SAF-T report. For information about One voucher functionality, see [One voucher](../general-ledger/one-voucher.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

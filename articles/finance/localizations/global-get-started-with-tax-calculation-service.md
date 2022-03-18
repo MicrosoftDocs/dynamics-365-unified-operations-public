@@ -4,20 +4,20 @@
 title: Get started with Tax Calculation
 description: This topic explains how to set up Tax Calculation.
 author: wangchen
-ms.date: 05/17/2021
+ms.date: 01/05/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
 
 # optional metadata
 
-ms.search.form:
+ms.search.form: TaxIntegrationTaxServiceParameters
 audience: Application user
 # ms.devlang: 
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-ms.custom: 
+ms.custom: "intro-internal"
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: wangchen
@@ -27,35 +27,86 @@ ms.dyn365.ops.version: 10.0.18
 ---
 
 
-# Get started with the Tax Calculation (Preview)
+# Get started with Tax Calculation
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
+This topic provides information about how to get started with Tax Calculation. The sections in this topic guide you through the high-level design and configuration steps in Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS), Dynamics 365 Finance, and Dynamics 365 Supply Chain Management. 
 
-This topic provides information about how to get started with Tax Calculation. It first guides you through the configuration steps in Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS), and Dynamics 365 Finance and Dynamics 365 Supply Chain Management. It then reviews the common process for using Tax Calculation capabilities in Finance and Supply Chain Management transactions.
+The setup consists of three main steps.
 
-The setup consists of four main steps:
-
-1. In LCS, install Tax Calculation.
+1. In LCS, install the Tax Calculation add-in.
 2. In RCS, set up the Tax Calculation feature. This setup isn't specific to a legal entity. It can be shared across legal entities in Finance and Supply Chain Management.
 3. In Finance and Supply Chain Management, set up the Tax Calculation parameters by legal entity.
-4. In Finance and Supply Chain Management, create transactions such as sales orders, and use Tax Calculation to determine and calculate taxes.
+
+## High-level design
+
+### Runtime design
+
+The following illustration shows the high-level runtime design of Tax Calculation. Because Tax Calculation can be integrated with multiple Dynamics 365 apps, the illustration uses the integration with Finance as an example.
+
+1. A transaction, such as a sales order or purchase order, is created in Finance.
+2. Finance automatically uses the default values of the sales tax group and the item sales tax group.
+3. When the **Sales tax** button is selected on the transaction, the tax calculation is triggered. Finance then sends the payload to the Tax Calculation service.
+4. The Tax Calculation Service matches the payload with predefined rules in the tax feature to find a more accurate sales tax group and item sales tax group simultaneously.
+
+    - If the payload can be matched with the **Tax Group Applicability** matrix, it overrides the sales tax group value with the matched tax group value in the applicability rule. Otherwise, it continues to use the sales tax group value from Finance.
+    - If the payload can be matched with the **Item Tax Group Applicability** matrix, it overrides the item sales tax group value with the matched item tax group value in the applicability rule. Otherwise, it continues to use the item sales tax group value from Finance.
+
+5. The Tax Calculation Service determines the final tax codes by using the intersection of the sales tax group and the item sales tax group.
+6. The Tax Calculation Service calculates tax, based on the final tax codes that it determined.
+7. The Tax Calculation Service returns the tax calculation result to Finance.
+
+![Tax Calculation runtime design.](media/tax-calculation-runtime-logic.png)
+
+### High-level configuration
+
+The following steps provide a high-level overview of the configuration process for the Tax Calculation Service.
+
+1. In LCS, install the **Tax Calculation** add-in in your LCS project.
+2. In RCS, create the **Tax Calculation** feature.
+3. In RCS, set up the **Tax Calculation** feature:
+
+    1. Select the tax configuration version.
+    2. Create tax codes.
+    3. Create a tax group.
+    4. Create an item tax group.
+    5. Optional: Create tax group applicability if you want to override the default sales tax group that is entered from customer or vendor master data.
+    6. Optional: Create item group applicability if you want to override the default item sales tax group that is entered from the item master data.
+
+4. In RCS, complete and publish the **Tax Calculation** feature.
+5. In Finance, select the published **Tax Calculation** feature.
+
+After you complete these steps, the following setups are automatically synced from RCS to Finance.
+
+- Sales tax codes
+- Sales tax groups
+- Item sales tax groups
+
+The remaining sections in this topic provide more detailed configuration steps.
 
 ## Prerequisites
 
-Before you can complete the procedures in this topic, the following prerequisites must be in place:
+Before you can complete the remaining procedures in this topic, the following prerequisites must be met:<!--TO HERE-->
 
-- You have access to your LCS account, and you've deployed an LCS project with a Tier 2 (or above) environment that runs Dynamics 365 version 10.0.18 with [KB4616360](https://fix.lcs.dynamics.com/Issue/Details?kb=4616360&bugId=568738&dbType=3&qc=1f1c04ff39adad74ef871f539e8d73e14c1893ef7cc4b6e3f7d5c5864ec2781a), or later.
-- You have access to your RCS account.
-- You've contacted Microsoft to enable the flighting in your deployed Finance or Supply Chain Management environment.
+- You must have access to your LCS account, and you must have a deployed LCS project that has a Tier 2 or above environment that runs Dynamics 365 version 10.0.21 or later.
+- You must create an RCS environment for your organization, and you must have access to your account. For more information about how to create a RCS environment, see [Regulatory Configuration Service Overview](rcs-overview.md).
+- The following features must be turned on in the **Feature management** workspace of your deployed Finance or Supply Chain Management environment, based on your business needs:
+
+    - Tax Calculation Service
+    - Support multiple VAT registration numbers
+    - Tax in transfer order
+
+- The following features must be turned on in the **Feature management** workspace of your deployed RCS environment.
+
+    - Globalization features
 
 ## Set up Tax Calculation in LCS
 
 1. Sign in to [LCS](https://lcs.dynamics.com)
 2. Complete the setup for Microsoft Power Platform integration. For more information, see [Add-ins overview](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md).
-3. Select one of your deployed non-production environments, and then select **Install a new add-in**.
-4. Select **Tax Calculation (preview)**.
+3. Select one of your deployed environments, and then select **Install a new add-in**.
+4. Select **Tax Calculation**.
 5. Read and agree to the terms and conditions, and then select **Install**.
 
 ## Set up Tax Calculation in RCS
@@ -69,8 +120,8 @@ The steps in this section aren't related to a specific legal entity. You must co
 5. In the **Type** field, select **Global**.
 6. Select **Open**.
 7. Go to **Tax Data Model**, expand the file tree, and then select **Tax Configuration**.
-8. Select the latest version, and then select **Import**.
-9. Return to the **Globalization features (Preview)** workspace, select **Features**, select the **Tax Calculation** tile, and then select **Add**.
+8. Select the correct [tax configuration version](global-tax-calcuation-service-overview.md#versions), based on you Finance version, and then select **Import**.
+9. In the **Globalization features** workspace, select **Features**, select the **Tax Calculation** tile, and then select **Add**.
 10. Select one of the following feature types:
 
     - **New feature** – Create a feature setup that has blank content.
@@ -78,20 +129,28 @@ The steps in this section aren't related to a specific legal entity. You must co
 
 11. Enter a name and description for the feature, and then select **Create feature**.
 
-    After the feature is created, a draft version of it is automatically created.
+    After the feature is created, a draft version of it is automatically created. You can select **Get this version** to rebase the draft version on any completed version.
 
 12. Select the draft version of the feature, and then select **Edit**. The **Tax Calculation setup** page is filled in.
 13. Select **Configuration version**. You should see the configuration version that you imported in step 8.
 
-    Microsoft provides a default tax configuration for the tax calculation add-in. This configuration covers most of the requirements for tax calculation behaviors. It will be updated based on market feedbacks. If you must extend the configuration to meet specific requirements, see [How to build extension in tax service](./tax-service-add-data-fields-tax-integration-by-extension.md) for information about how to generate and select your own tax configuration.
+    Microsoft provides a default tax configuration for tax calculation. This configuration covers most of the requirements for tax calculation behaviors. It will be updated based on market feedbacks. If you must extend the configuration to meet specific requirements, see [How to build extension in tax service](./tax-service-add-data-fields-tax-integration-by-extension.md) for information about how to generate and select your own tax configuration.
 
-    After you select **Configuration version**, several additional tabs appear:
+14. After you select **Configuration version**, several additional tabs appear. Follow the order that is shown here to complete the mandatory tab setup.
 
-    - **Tax codes** – This tab is mandatory. It's used to maintain master data for tax codes. All tax codes that are created on this tab are automatically synced to Finance when you enable the current version of the tax feature setup in the legal entity.
-    - **Tax codes applicability** – This tab is mandatory. It's used to define a matrix that determines the tax code, tax group, and item tax group. The tax code that is determined is used to calculate the tax amount. The values of the **Tax code**, **Tax group**, and **Item tax group** fields are returned to Finance.
-    - **Customer tax registration number applicability** – This tab is optional. If you have multiple tax registration numbers for one customer, Tax Calculation can automatically determine the correct tax registration number. In the matrix on this tab, you define the rules that the uses to make the determination. Otherwise, Finance and Supply Chain Management will continue to use the default tax registration number on taxable documents for sales transactions.
-    - **Vendor tax registration number applicability** – This tab is optional. If you have multiple tax registration numbers for one vendor, Tax Calculation can automatically determine the correct tax registration number. In the matrix on this tab, you define the rules that the uses to make the determination. Otherwise, Finance and Supply Chain Management will continue to use the default tax registration number on taxable documents for purchase transactions.
-    - **List code applicability** – This tab is optional. It can help automatically determine the value of the **List code** field through more flexible and configurable rules. In the matrix on this tab, you can define the rules that the uses to make the determination. Otherwise, Finance and Supply Chain Management will continue to use the default code on taxable documents.
+    **Mandatory setup**
+
+    - **Tax codes** – Maintain master data for tax codes. All tax codes that are created on this tab are automatically synchronized to Finance when you enable the current version.
+    - **Tax group** – Define the tax group master data and the tax codes under the group.
+    - **Item tax group** – Define the item tax group master data and the tax codes under the group.
+
+    **Optional setup**
+
+    - **Tax group applicability** – Define a matrix that determines the tax group. If no applicability rules in this matrix match the taxable document from Dynamics 365, Tax Calculation uses the default value on the taxable document line.
+    - **Item tax group applicability** – Define a matrix that determines the item tax group. If no applicability rules in this matrix match the taxable document from Dynamics 365, Tax Calculation uses the default value on the taxable document line.
+    - **Customer tax registration number applicability** – If you have multiple tax registration numbers for one customer, Tax Calculation can automatically determine the correct tax registration number. In the matrix on this tab, define the rules that should be used to make the determination. Otherwise, Finance and Supply Chain Management will continue to use the default tax registration number on taxable documents for sales transactions.
+    - **Vendor tax registration number applicability** – If you have multiple tax registration numbers for one vendor, Tax Calculation can automatically determine the correct tax registration number. In the matrix on this tab, define the rules that should be used to make the determination. Otherwise, Finance and Supply Chain Management will continue to use the default tax registration number on taxable documents for purchase transactions.
+    - **List code applicability** – Automatically determine the value of the **List code** field through more flexible and configurable rules. In the matrix on this tab, define the rules that should be used to make the determination. Otherwise, Finance and Supply Chain Management will continue to use the default code on taxable documents.
 
 14. On the **Tax codes** tab, select **Add**, and enter the tax code and a description.
 15. Select **Tax component**. The tax component is a group of methods that were defined in the previous version of the selected tax configuration. The following tax components are available:
@@ -105,86 +164,88 @@ The steps in this section aren't related to a specific legal entity. You must co
 16. Select **Save**. More fields become available, based on the tax component that you selected.
 17. Use the following options to identify the nature of the tax code:
 
-    - Is Exempt
-    - Is Use tax
-    - Is Reverse Charge
-    - Exclude from Base Amount Calculation
+    - Is exempt
+    - Is use tax
+    - Is reverse charge
+    - Exclude from base amount calculation
 
-    For a use tax scenario, set up a single tax code that has a positive tax rate, and mark it as **Is Use tax**.
+    For a use tax scenario, set up a single tax code that has a positive tax rate, and mark it as **Is use tax**.
 
     For a reverse charge scenario, set up two tax codes, one of which has a positive tax rate, and the other of which has a negative tax rate but the same rate value. Mark the negative tax code as **Is reverse charge**. For more information about the reverse charge solution in Finance, see [Reverse charge mechanism for VAT/GST scheme](emea-reverse-charge.md).
-    
-    For some tax types which should be excluded in the tax base amount calculation for price inclusive transactions, like custom duty in some countries, select the **Exclude from Base Amount Calculation** check box.
+
+    For some tax types that should be excluded from the calculation of the tax base amount for price-inclusive transactions (for example, custom duty in some countries or regions), select the **Exclude from Base Amount Calculation** checkbox. For more information about this parameter, see [Calculating tax on top of price when Prices include taxes is enabled](global-exclude-from-tax-base-amount-calculation.md).
 
     Maintain tax rates and the tax amount limits for this tax code.
 
 18. Repeat steps 14 through 17 to add all other tax codes that are required.
-19. On the **Tax codes applicability** tab, select the columns that are required to determine the correct tax code, and then select **Add**.
-20. Enter or select values for each column. The **Tax code**, **Tax group**, and **Item tax group** fields will be the output of this matrix.
-21. Repeat steps 19 through 20 to set up the applicability of customer tax registration numbers, vendor tax registration numbers, and list codes.
-22. Select **Save**, and then close the page.
-23. Select **Change status** \> **Complete**. After the status is changed to **Complete**, the version can no longer be edited.
-24. Select **Change status** \> **Publish**. This version of the tax feature setup will be pushed to the global repository and will be visible to each legal entity in Finance.
+19. On the **Tax group** tab, select the **Tax group** column, add it to the matrix as the input condition, and then add lines to maintain the tax group master data.
 
-## Dynamics 365 setup
+    Here is an example.
 
-After you complete the setup in RCS, as described in the previous section, you will have a published version of the tax feature. Follow these steps to set up Tax Calculation in Finance.
+    | Tax group    | Tax codes           |
+    | ------------ | ------------------- |
+    | DEU_Domestic | DEU_VAT19; DEU_VAT7 |
+    | DEU_EU       | DEU_Exempt          |
+    | BEL_Domestic | BEL_VAT21; BEL_VAT6 |
+    | BEL_EU       | BEL_Exempt          |
+
+20. On the **Item tax group** tab, select **Item tax group** column, add it to the matrix as the input condition, and then add lines to maintain the item tax group master data.
+
+    Here is an example.
+
+    | Item tax group | Tax codes                                    |
+    | -------------- | -------------------------------------------- |
+    | Full           | DEU_VAT19; BEL_VAT21; DEU_Exempt; BEL_Exempt |
+    | Reduced        | DEU_VAT7; BEL_VAT6; DEU_Exempt; BEL_Exempt   |
+
+21. On the **Tax group applicability** tab, select the columns that are required to determine the correct tax group, and then select **Add**. Enter or select values for each column. The **Tax group** field will be the output of this matrix. If this tab isn't configured, the sales tax group on the transaction line will be used.
+
+    Here is an example.
+
+    | Business process | Ship from | Ship to | Tax group    |
+    | ---------------- | --------- | ------- | ------------ |
+    | Sales            | DEU       | DEU     | DEU_Domestic |
+    | Sales            | DEU       | FRA     | DEU_EU       |
+    | Sales            | BEL       | BEL     | BEL_Domestic |
+    | Sales            | BEL       | FRA     | BEL_EU       |
+
+22. On the **Item tax group applicability** tab, select the columns that are required to determine the correct tax code, and then select **Add**. Enter or select values for each column. The **Item tax group** field will be the output of this matrix. If this tab isn't configured, the item sales tax group on the transaction line will be used.
+
+    Here is an example.
+
+    | Item code | Item tax group |
+    | --------- | -------------- |
+    | D0001     | Full           |
+    | D0003     | Reduced        |
+
+    For more information about how tax codes are determined in Tax Calculation, see [Sales tax group and item sales tax group determination logic](global-sales-tax-group-determination.md).
+
+23. Set up the applicability of customer tax registration numbers, vendor tax registration numbers, and list codes based on the business needs.
+24. Select **Save**, and then close the page.
+25. Select **Change status** \> **Complete**. After the status is changed to **Complete**, the version can no longer be edited.
+26. Select **Change status** \> **Publish**. This version of the tax feature setup will be pushed to the global repository and will be visible to each legal entity in Finance.
+
+## Set up Tax Calculation in Dynamics 365
+
+After you complete the setup in RCS, you will have a published version of the tax feature. Follow these steps to set up Tax Calculation in Finance.
 
 The setup in this section is done by legal entity. You must configure it for each legal entity that you want to enable Tax Calculation for in Finance.
 
-1. In Finance, go to **Tax** \> **Setup** \> **Tax configuration** \> **Tax calculation setup (Preview)**.
+1. In Finance, go to **Tax** \> **Setup** \> **Tax configuration** \> **Tax calculation parameters**.
 2. On the **General** tab, set the following fields:
 
-    - **Enable Tax Calculation** – Select this check box to enable Tax Calculation add-in for the legal entity. If it isn't enabled for the current legal entity, the legal entity will continue to use the existing tax engine to determine and calculate tax.
+    - **Enable Tax Calculation Service** – Select this checkbox to enable Tax Calculation for the legal entity. If it isn't enabled for the current legal entity, the legal entity will continue to use the existing tax engine to determine and calculate tax.
     - **Feature setup** – Select a published tax feature setup and version for the legal entity. For more information about how to set up and complete a published tax feature, see the previous section of this topic.
     - **Business Process** – Select the business processes to enable.
-    - **Enable tax code adjustment** – Set this option to **Yes** to enable tax code adjustments on the sales tax page.
 
-3. On the **Calculation** tab, define the expected rounding rule for the legal entity.
-4. On the **Error handling** tab, define the expected error handling method for the legal entity. Three options are available for each result code:
+3. On the **Calculation** tab, define the expected rounding rule for the legal entity. For more information about the rounding logic, see [Tax calculation rounding rules](https://go.microsoft.com/fwlink/?linkid=2166988).
+4. On the **Error handling** tab, define the expected error handling method for the legal entity. Three options are available:
 
     - No
     - Warning
     - Error
 
-5. Save the setup.
-6. Repeat steps 1 through 5 for each additional legal entity.
+    You can set up an error handling method for each result code in the **Details** section. Alternatively, if some result codes aren't synchronized from the tax calculation service, you can set up a default method in the **General** section.
 
-## Transaction processing
-
-After you've completed all the setup procedures, you can use Tax Calculation to determine and calculate tax in Finance. The steps to process transactions remain the same. The following transactions are supported in Finance version 10.0.18:
-
-- Sales process
-
-    - Sales quotation
-    - Sales order
-    - Confirmation
-    - Picking list
-    - Packing slip
-    - Sales invoice
-    - Credit note
-    - Return order
-    - Header charge
-    - Line charge
-
-- Purchase process
-
-    - Purchase order
-    - Confirmation
-    - Receipts list
-    - Product receipt
-    - Purchase invoice
-    - Header charge
-    - Line charge
-    - Credit note
-    - Return order
-    - Purchase requisition
-    - Purchase requisition line charge
-    - Request for quotation
-    - Request for quotation header charge
-    - Request for quotation line charge
-
-- Inventory process
-
-    - Transfer order – ship
-    - Transfer order - receive
+5. On the **Multiple VAT registration** tab, you can turn on VAT declaration, EU Sales List, and Intrastat separately to work under a multiple VAT registrations scenario. For more information about tax reporting for multiple VAT registrations, see [Reporting for multiple VAT registrations](emea-reporting-for-multiple-vat-registrations.md).
+6. Save the setup, and repeat the previous steps for each additional legal entity. When a new version is published, and you want it to be applied, set the **Feature setup** field on the **General** tab of the **Tax calculation parameters** page (see step 2).

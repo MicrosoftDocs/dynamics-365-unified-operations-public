@@ -2,10 +2,10 @@
 # required metadata
 
 title: Compensation plans
-description: Compensation and Benefits Managers can use Compensation management to maintain and process fixed and variable compensation plans for the organization's employees.
-author: andreabichsel
-ms.date: 06/20/2017
-ms.topic: article
+description: This topic describes how to use compensation management to manage and process compensation plans.
+author: twheeloc
+ms.date: 08/25/2021
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,11 +17,11 @@ audience: Application User
 # ms.devlang: 
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
-ms.custom: 7521
+
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
@@ -29,9 +29,12 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 # Compensation plans
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Compensation and Benefits Managers can use Compensation management to maintain and process fixed and variable compensation plans for the organization's employees.
+Compensation and benefits managers can use **Compensation management** to maintain and process fixed and variable compensation plans for the organization's employees.
 
 ### Introduction
 
@@ -48,7 +51,7 @@ The following table lists components of the compensation process that can be int
 <thead>
 <tr class="header">
 <th>Component</th>
-<th>More information…</th>
+<th>More information</th>
 </tr>
 </thead>
 <tbody>
@@ -94,7 +97,7 @@ The following table lists components of the compensation process that can be int
 </tr>
 <tr class="even">
 <td>Control point</td>
-<td>The control point defines what you consider to be the ideal pay rate for all employees at a compensation level. For grade plan structures, control points are typically the midpoint of the ranges. Band structures rarely use control points. You can specify the control point for a fixed compensation plan in the Fixed compensation plans form.</td>
+<td>The control point defines what you consider to be the ideal pay rate for all employees at a compensation level. For grade plan structures, control points are typically the midpoint of the ranges. Band structures rarely use control points. You can specify the control point for a fixed compensation plan in the **Fixed compensation plans** page.</td>
 </tr>
 <tr class="odd">
 <td>Job functions</td>

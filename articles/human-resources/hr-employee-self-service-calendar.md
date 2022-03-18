@@ -3,8 +3,8 @@
 
 title: Create a team calendar
 description: View and create team calendars in Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 11/02/2020
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
@@ -29,13 +29,16 @@ ms.dyn365.ops.version: Human Resources
 
 # View team and company calendars
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 You can view team and company calendars in Dynamics 365 Human Resources. Team calendars only display direct reports, as defined in the line hierarchy.
 
 ## View your team calendar as an employee
 
-1. In the **Employee self service** workspace, select **Team absence calendar** under **Summary**.
+- In the **Employee self service** workspace, select **Team absence calendar** under **Summary**.
 
 ## View your team calendar as a manager
 
@@ -44,6 +47,21 @@ You can view team and company calendars in Dynamics 365 Human Resources. Team ca
 2. Select **Leave and absence**, and then select **View manager absence calendar**.
 
 Managers can also access the team calendar from **Pending time off requests from my team**, **Approved time off**, and **Time off requests**. 
+
+## View your absence manager calendar as the absence manager
+
+> [!NOTE]
+> To view the absence manager calendar, you must first turn on the **(Preview) Absence manager to manage leave** feature in Feature management. For more information about how to turn on preview features, see [Manage features](hr-admin-manage-features.md).
+
+Users in the Absence manager role can view time-off requests in their calendar. Follow these steps to access the leave calendar.
+
+1. In the **Employee self service** workspace, select **Leave management** and then **Absence manager calendar**.
+
+2. In the **Date** field, enter the desired dates.
+
+3. Update the view options as required.
+
+The absence manager calendar shows all the records for the employees who report to the absence manager in the Leave hierarchy.
 
 ## View a company calendar
 
@@ -65,17 +83,15 @@ Calendars now contain additional filters and options. All calendars include view
 - Time-off requests 
 - Leave of absence requests
 
-Calendar configuration in Leave and absence parameters determine available view options.
+Calendar configuration on the **Leave and absence parameters** page determines the available view options.
 
 You can also filter calendars by manager or department. The primary position assignment determines the employees displayed when these filters are set. 
 
->[!IMPORTANT]
->Viewing leave and absence across companies is currently in preview. You'll need to enable it in your **Sandbox** environment. For more information about enabling preview features, see [Manage features](hr-admin-manage-features.md).<br><br>
->Then you must enable the feature in **Human resources shared parameters** to display the legal entity filter in calendars. For more information, see [Configure leave and absence parameters](hr-leave-and-absence-parameters.md).<br><br>
->You can filter the calendar by legal entity. If you want to see all employees regardless of legal entity, clear the filter box and select enter. 
+> [!IMPORTANT]
+> You can turn on the **Cross company leave view** feature in Feature management. You must then enable the feature on the **Human resources shared parameters** page to show the legal entity filter in calendars. For more information, see [Configure leave and absence parameters](hr-leave-and-absence-parameters.md).
+> 
+> You can filter the calendar by legal entity. To view all employees, regardless of legal entity, clear the filter field, and then select **Enter**. 
 
 For information about calendar settings, see [Configure calendar parameters](hr-leave-and-absence-parameters.md?configure-calendar-parameters).
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

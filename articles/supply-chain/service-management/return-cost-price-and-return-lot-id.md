@@ -3,7 +3,7 @@
 
 title: Return cost price and return lot ID    
 description: You might want the cost of the returned products to equal the cost of the products at the time when you sold the products to the customer. You can do this by using the **Return lot ID**.
-author: ShylaThompson
+author: kamaybac
 ms.date: 04/30/2018
 ms.topic: article
 ms.prod: 

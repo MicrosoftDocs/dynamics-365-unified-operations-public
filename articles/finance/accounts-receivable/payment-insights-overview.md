@@ -5,7 +5,7 @@ title: Customer payment insights (Preview)
 description: This topic describes the payment insights capability that helps improve understanding of individual customers' typical payment practices. The feature can help you identify circumstances that justify initiating collection processes earlier than you might have done otherwise.
 author: ShivamPandey-msft
 ms.date: 11/06/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
 # ms.tgt_pltfrm: 
-ms.custom: 14151
+ms.custom: ["14151", "intro-internal"]
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 # ms.search.industry: 
@@ -52,11 +52,11 @@ For each open invoice, Customer payment insights (Preview) can predict three pay
 
 Customer payment insights (Preview) also provides an aggregated view of expected payments, which can help organizations understand the total payment amount they can expect from a customer in one of the three buckets, On time, Late and Very late.
 
-[![Aggregated view of payment predictions](./media/graphic-payment-reports.png)](./media/graphic-payment-reports.png)
+[![Aggregated view of payment predictions.](./media/graphic-payment-reports.png)](./media/graphic-payment-reports.png)
 
 Also, each invoice is assigned a probability of payment on time. If the probability of payment on time is less than 50%, the invoices are tagged with a red circle to  indicate that these invoices may require collections attention. 
 
-[![List of payment probabilities](./media/customer-pymnt-probability-list.png)](./media/customer-pymnt-probability-list.png)
+[![List of payment probabilities.](./media/customer-pymnt-probability-list.png)](./media/customer-pymnt-probability-list.png)
 
 Customer Payment Insights (Preview) also provides contextual information to explain the prediction, such as the top factors that influenced the predictions, the current state of business with the customer, and details about the historical customer payment behavior. 
 In many businesses, the collections process has been a reactive activity; the collections process doesn’t start until invoices come due. 

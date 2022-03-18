@@ -1,14 +1,12 @@
 ---
 title: Insert data
 description: This topic describes how to insert data into tables by using X++.
-author: robinarh
+author: tonyafehr
 ms.date: 06/16/2020
-ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
-ms.custom: 150273
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
 
@@ -46,8 +44,8 @@ The following example inserts a new record into the CustGroup table. The **CustG
 ```xpp
 CustGroup custGroup;
 ttsBegin;
-    custGroup.CustGroup = '41';
-    custGroup.insert();
+custGroup.CustGroup = '41';
+custGroup.insert();
 ttsCommit;
 ```
 
@@ -99,7 +97,7 @@ The following example shows that the **insert\_recordset** statement can insert 
 
 In this example, one new record is inserted into the NameValuePair table. This record has an **Id** value of **1**, a **Name** value of **Name1**, and a **Value** value of **1**.
 
-```X++
+```xpp
 NameValuePair nameValuePair;
 CustTable custTable;
 
@@ -117,7 +115,7 @@ The following example shows a join of three tables on an **insert\_recordset** s
 
 In this example, there is an **insert\_recordset** statement for the tabEmplProj5 table. One of the target fields is named **Description**, and its data comes from the local **sDescriptionVariable** variable. The **insert\_recordset** statement succeeds even when the configuration key for the **Description** field is turned off. The system ignores both the **Description** field and the **sDescriptionVariable** variable. Therefore, this code provides an example of *configuration key automation*. Configuration key automation occurs when the system can automatically adjust the behavior of an **insert\_recordset** statement that inserts data into fields that the configuration key is turned off for.
 
-```X++
+```xpp
 static void InsertJoin42Job(Args _args)
 {
     GmTabDepartment tabDept2;
@@ -125,33 +123,25 @@ static void InsertJoin42Job(Args _args)
     GmTabProject tabProj4;
     GmTabEmployeeProject tabEmplProj5;
     str 64 sDescriptionVariable = "From variable.";
-    DELETE_FROM tabEmplProj5;
-    INSERT_RECORDSET tabEmplProj5
-        (
-        Description
+    delete_from tabEmplProj5;
+    insert_recordset tabEmplProj5
+        (  Description
         , EmployeeRecId
         , ProjectRecId
         )
-    Select
-        sDescriptionVariable
-        , RecId
-    from
-        tabEmpl3
-        join
-            tabDept2
+    select sDescriptionVariable, RecId
+    from tabEmpl3
+        join tabDept2
             where tabEmpl3 .DepartmentGuid == tabDept2 .DepartmentGuid
-        join RecId
-            from tabProj4
-            where tabDept2 .DepartmentGuid == tabProj4 .DepartmentGuid
-    info(int642str(tabEmplProj5 .rowCount())
-        + " ==Number of rows inserted.");
-    WHILE SELECT *
-        from
-            tabEmplProj5
-            join tabEmpl3
-                where tabEmplProj5 .EmployeeRecId == tabEmpl3 .RecId
-            join tabProj4
-                where tabEmplProj5 .ProjectRecId == tabProj4 .RecId
+        join RecId from tabProj4
+            where tabDept2 .DepartmentGuid == tabProj4 .DepartmentGuid;
+    info(strFmt("%1 == Number of rows inserted.", tabEmplProj5.rowCount()));        
+    
+    while select tabEmplProj5
+        join tabEmpl3
+            where tabEmplProj5.EmployeeRecId == tabEmpl3.RecId
+        join tabProj4
+            where tabEmplProj5.ProjectRecId == tabProj4.RecId
     {
         info(
             tabEmpl3 .EmployeeName
@@ -181,7 +171,7 @@ This example depends on two tables: SourceTable and DestinationTable. Each table
 ```xpp
 static void JobDuplicKeyException44Job(Args _args)
 {
-    SourceTable sourceTable; // Must have at least one record.
+    SourceTable      sourceTable; // Must have at least one record.
     DestinationTable destinationTable;
     int countTries = 0;
     int numberAdjust = 0;
@@ -203,7 +193,8 @@ static void JobDuplicKeyException44Job(Args _args)
     {
         countTries++;
         notes += strFmt("Inside the try block, try count is %1.", countTries);
-        while select * from sourceTable order by SourceKeyField asc
+        while select sourceTable 
+            order by SourceKeyField asc
         {
             destinationTable.clear();
             newKey = sourceTable.SourceKeyField + numberAdjust;

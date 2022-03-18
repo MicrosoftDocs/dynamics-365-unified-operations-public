@@ -13,7 +13,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom:
 ms.search.region: Global
@@ -43,7 +43,7 @@ An instance of **ProcessScheduleOccurrenceCardBuilderContract** is passed into e
 
 The **ProcessScheduleOccurrenceCard** class lets you customize the appearance of an occurrence card that is shown in the calendar view. The first two lines are controlled by the process automation framework and can't be modified. In the following illustration, the subheader is the **Completed at** phrase, and the status message is the word **Completed** that has a blue background.
 
-![Default occurrence card that shows the status and time](media/uptake-schedule.png)
+![Default occurrence card that shows the status and time.](media/uptake-schedule.png)
 
 | Method | Description |
 |---|---|

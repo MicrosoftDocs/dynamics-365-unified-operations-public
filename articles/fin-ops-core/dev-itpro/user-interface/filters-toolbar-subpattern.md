@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 29191
 ms.assetid: 8e32ba2f-6cc1-4bfd-9c79-42a8392fa812
@@ -52,11 +52,11 @@ Two subpatterns are described in this article:
 ## Wireframe
 ### Filters and Toolbar - Inline
 
-[![Wireframe for filters and toolbar--inline](./media/filtertoolbarinlinewireframe.png)](./media/filtertoolbarinlinewireframe.png)
+[![Wireframe for filters and toolbar--inline.](./media/filtertoolbarinlinewireframe.png)](./media/filtertoolbarinlinewireframe.png)
 
 ### Filters and Toolbar - Stacked
 
-[![Wireframe for filter and toolbar--stacked](./media/filtertoolbarstackedwireframe.png)](./media/filtertoolbarstackedwireframe.png)
+[![Wireframe for filter and toolbar--stacked.](./media/filtertoolbarstackedwireframe.png)](./media/filtertoolbarstackedwireframe.png)
 
 ## Model
 ### Filters and Toolbar - Inline: High-level structure
@@ -110,13 +110,13 @@ The verification checklist shows the steps for manually verifying that the form 
 
 Form: **HcmWorkforceManagement**  &gt; **HcmOpenPositionsPart** (**All workspaces** &gt; **Workforce management**) 
 
-[![Example of filter and toolbar--inline](./media/filtertoolbarinline.png)](./media/filtertoolbarinline.png)
+[![Example of filter and toolbar--inline.](./media/filtertoolbarinline.png)](./media/filtertoolbarinline.png)
 
 ### Filters and Toolbar - Stacked
 
 Form: **HcmWorkforceManagement** &gt; **HcmWorkerOnLeaveListPart** (**All workspaces** &gt; **Workforce management**) 
 
-[![Example of filter and toolbar--stacked](./media/filtertoolbarstacked.png)](./media/filtertoolbarstacked.png)
+[![Example of filter and toolbar--stacked.](./media/filtertoolbarstacked.png)](./media/filtertoolbarstacked.png)
 
 ## Appendix
 ### Frequently asked questions

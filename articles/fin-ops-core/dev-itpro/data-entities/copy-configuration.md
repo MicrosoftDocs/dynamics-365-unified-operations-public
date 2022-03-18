@@ -3,9 +3,9 @@
 
 title: Copy configuration data between companies or legal entities overview
 description: This topic describes how to use a data project and data templates to move configuration data for a company or legal entity between app instances.
-author: mikefalkner
+author: rcarlson
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: 77523
+ms.custom: ["77523", "intro-internal"]
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: sericks
@@ -28,6 +28,9 @@ ms.dyn365.ops.version: Platform update 7
 # Copy configuration data between companies or legal entities overview
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 There are two options for copying configuration data in Finance and Operations:
 

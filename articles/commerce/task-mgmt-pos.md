@@ -49,11 +49,11 @@ Store workers can perform the following task operations in the POS application b
 
 The following illustration shows the **My tasks** tab in the Commerce POS application.
 
-![My tasks tab in the Commerce POS application](media/POS-task-management.png)
+![My tasks tab in the Commerce POS application.](media/POS-task-management.png)
 
 The following illustration shows the **Task lists** tab.
 
-![Task lists tab in the Commerce POS application](media/POS-task-lists-management.png)
+![Task lists tab in the Commerce POS application.](media/POS-task-lists-management.png)
 
 ## Additional resources
 

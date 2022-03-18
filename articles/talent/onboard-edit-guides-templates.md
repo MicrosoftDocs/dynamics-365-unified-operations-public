@@ -42,19 +42,19 @@ After you create an onboarding guide or template in Microsoft Dynamics 365 Talen
 
 If you create an onboarding guide from a template, or if you import activities from one template into another, you'll notice a **Lock** button on the imported activities. These are called *managed activities*.
 
-[![Managed activities](./media/onboard-edit-guide-managed-activities.png)](./media/onboard-edit-guide-managed-activities.png)
+[![Managed activities.](./media/onboard-edit-guide-managed-activities.png)](./media/onboard-edit-guide-managed-activities.png)
 
 When you select a managed activity, you can see the source template at the top of the activity.
 
-[![Managed activity source](./media/onboard-edit-guide-managed-activity-source.png)](./media/onboard-edit-guide-managed-activity-source.png)
+[![Managed activity source.](./media/onboard-edit-guide-managed-activity-source.png)](./media/onboard-edit-guide-managed-activity-source.png)
 
 If you edit an activity in a template, Onboard will push the changes to all templates and unsent guides that are based on that template. If you select an unsent guide based on a template you edited and then select the **Activities** tab in the guide, you will see a notice that your guide has changed. To dismiss the notification, select **OK**. 
 
-[![Change notification](./media/onboard-edit-guide-change-notification.png)](./media/onboard-edit-guide-change-notification.png)
+[![Change notification.](./media/onboard-edit-guide-change-notification.png)](./media/onboard-edit-guide-change-notification.png)
 
 You'll see a black dot next to the updated activities.
 
-[![Changed activity](./media/onboard-edit-guide-changed-activity.png)](./media/onboard-edit-guide-changed-activity.png)
+[![Changed activity.](./media/onboard-edit-guide-changed-activity.png)](./media/onboard-edit-guide-changed-activity.png)
 
 You can't edit managed activities outside of the original template, except to add an assignee, due date, or other information in the right-hand section of the activity.
 
@@ -77,11 +77,11 @@ You can import activities from one or more templates into a guide or template.
 
 3. Select the **Import** tab in the section on the right.
 
-   [![Import activities](./media/onboard-edit-guide-import-activities.png)](./media/onboard-edit-guide-import-activities.png)
+   [![Import activities.](./media/onboard-edit-guide-import-activities.png)](./media/onboard-edit-guide-import-activities.png)
 
 4. To preview the tasks in a new tab in your browser, select the **Open in new tab** button on any template.
 
-   [![Preview activities](./media/onboard-edit-guide-preview-activities.png)](./media/onboard-edit-guide-preview-activities.png)
+   [![Preview activities.](./media/onboard-edit-guide-preview-activities.png)](./media/onboard-edit-guide-preview-activities.png)
 
 5. Drag and drop the desired template to the place in your guide template where you want the activities to appear. Continue editing your guide or template.
 
@@ -93,7 +93,7 @@ If you edit a template that contains activities that are used in other templates
 
 If you're not sure whether your template's activities are used in other templates or guides, select the **Used in** tab to view where those activities appear.
 
-   [![View guides and templates activities are used in](./media/onboard-edit-guide-view-used-in.png)](./media/onboard-edit-guide-view-used-in.png)
+   [![View guides and templates activities are used in.](./media/onboard-edit-guide-view-used-in.png)](./media/onboard-edit-guide-view-used-in.png)
 
 To push your changes:
 
@@ -106,7 +106,7 @@ To push your changes:
 
 1. On the **Introduction** tab, enter a title for your guide and an opening message. To use the sample text, select **Use this message**.
 
-    [![Introduction tab in an Onboard template](./media/onboard-template-introduction.png)](./media/onboard-template-introduction.png)
+    [![Introduction tab in an Onboard template.](./media/onboard-template-introduction.png)](./media/onboard-template-introduction.png)
 
 2. Use the formatting buttons to call out text as you require, or to add images or links.
 3. Select **Save** to save your work.
@@ -116,11 +116,11 @@ To push your changes:
 1. On the **Activities** tab, drag items from the right to the editing area.
 2. To organize your guide into sections, drag the **New section** item to the editing area, and enter a name and an optional description for the section.
 
-    ![[Adding a new section to an onboarding guide or template](./media/onboard-edit-add-section.png)](./media/onboard-edit-add-section.png)
+    ![[Adding a new section to an onboarding guide or template.](./media/onboard-edit-add-section.png)](./media/onboard-edit-add-section.png)
 
 3. To add activities for your new hire to complete, drag the **New activity** item to the editing area, and enter a name and description for the activity.
 
-    ![[Adding a new activity to an onboarding guide or template](./media/onboard-edit-add-activity.png)](./media/onboard-edit-add-activity.png)
+    ![[Adding a new activity to an onboarding guide or template.](./media/onboard-edit-add-activity.png)](./media/onboard-edit-add-activity.png)
 
 4. Add rich content to your onboarding guide:
 
@@ -131,11 +131,11 @@ To push your changes:
     - To add a Microsoft Forms form, drag the **Microsoft Forms** item to the editing area, enter a name and description for the activity, enter the URL for the Microsoft Forms form, and specify the size of the screen area.
     - To add an iframe that contains web content, drag the **Web Content (iframe)** item to the editing area, enter a name and description for the activity, enter the URL for the web content, and specify the size of the screen area.
 
-    ![[Adding rich content to an onboarding guide or template](./media/onboard-edit-add-rich-content.png)](./media/onboard-edit-add-rich-content.png)
+    ![[Adding rich content to an onboarding guide or template.](./media/onboard-edit-add-rich-content.png)](./media/onboard-edit-add-rich-content.png)
 
 2. Optional: In the area on the right of each activity, assign the activity to a specific person or role, add a due date and contact person, and assign a category color. When you assign an activity to a person or role, a task is created for each individual. This task appears on the **Tasks** menu in Onboard.
 
-    [![Assigning an activity in an onboarding guide or template](./media/onboard-assign-activity.png)](./media/onboard-assign-activity.png)
+    [![Assigning an activity in an onboarding guide or template.](./media/onboard-assign-activity.png)](./media/onboard-assign-activity.png)
 
 3. Select **Save** to save your work.
 
@@ -150,7 +150,7 @@ You can add contact people who can help your new hire succeed from day one. Thes
 1. On the **Contacts** tab, select **New contact**.
 2. In the **Add team member** dialog box, enter the contact person's name or email address, enter a short description that explains how the contact person can help the new hire, and then select **Add**. 
 
-    ![[Adding contacts to an onboarding guide or template](./media/onboard-edit-add-contact.png)](./media/onboard-edit-add-contact.png)
+    ![[Adding contacts to an onboarding guide or template.](./media/onboard-edit-add-contact.png)](./media/onboard-edit-add-contact.png)
 
     Alternately, you can select one or more contacts under **Suggestions**.
 
@@ -171,7 +171,7 @@ You can add useful files, maps, and links to the **Resources** section of your o
     - To add a link, select the **Link** tab, enter a name and address for the link, and then select **Add**.
     - To add a map, select the **Map** tab, enter a name and address for the map, and then select **Add**. Onboard will include a map of the address that you specify.
 
-    ![[Adding a resource to an onboarding guide or template](./media/onboard-edit-add-resource.png)](./media/onboard-edit-add-resource.png)
+    ![[Adding a resource to an onboarding guide or template.](./media/onboard-edit-add-resource.png)](./media/onboard-edit-add-resource.png)
 
 3. Select **Save** to save your work.
 

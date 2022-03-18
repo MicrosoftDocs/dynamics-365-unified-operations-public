@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Create and manage Customer portal users
+title: Create and manage Customer portal users (contains video)
 description: This topic explains how to create Customer portal user accounts and set permissions for them.
-author: dasani-madipalli
+author: Henrikan
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: 
@@ -19,14 +19,15 @@ ms.reviewer: kamaybac
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: damadipa
+ms.author: henrikan
 ms.search.validFrom: 2020-04-22
-ms.dyn365.ops.version: Release 10.0.13
+ms.dyn365.ops.version: 10.0.13
 ---
 
 # Create and manage Customer portal users
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+[!include [banner](../includes/banner.md)]
+
 
 In the out-of-box implementation, there is no way for users to self-register for websites that are created by using the Customer portal. To sign in and use a website, users must be invited by the admin. Microsoft has intentionally blocked the ability of users to self-register.
 
@@ -43,7 +44,7 @@ The [Invite customers to register and use your customer portal](https://youtu.be
 
 Contacts in Power Apps portals are stored as records in the **Contacts** table in Microsoft Dataverse. Dual-write then syncs these records to Microsoft Dynamics 365 Supply Chain Management as required.
 
-![System diagram for Customer portal contacts](media/customer-portal-contacts.png "System diagram for Customer portal contacts")
+![System diagram for Customer portal contacts.](media/customer-portal-contacts.png "System diagram for Customer portal contacts")
 
 Before you start to invite new customers, make sure that you've enabled the **Contact** table mapping in dual-write.
 

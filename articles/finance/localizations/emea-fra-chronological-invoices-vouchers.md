@@ -56,7 +56,7 @@ In some countries, there is a legal requirement that all invoices and related vo
 
 On the **Accounts receivable parameters** page, on the **Number sequences** tab, select one of the supported references, such as **Free text invoice**. Then click the **Chronological numbering setup** button that will be available for the supported references. On the **Chronological numbering setup** page, define the date-effective number sequences that have valid periods.
 
-![Chronological numbers setup](media/emea-chronological-numbering.jpg)
+![Chronological numbers setup.](media/emea-chronological-numbering.jpg)
 
 ### Number sequence groups
 

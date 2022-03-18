@@ -59,7 +59,7 @@ These enhancements make it more efficient to label cartons before palletization.
 
 ## Turn on the Wave label printing feature
 
-Before you can use the *Wave label printing* feature, it must be turned on in your system. Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
+As of Supply Chain Management version 10.0.21, this feature is mandatory, so it is turned on by default and can't be turned off again. However, the feature is still listed in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) in the following way:
 
 - **Module:** *Warehouse management*
 - **Feature name:** *Wave label printing*
@@ -512,7 +512,7 @@ You can reprint these wave labels by going to **Warehouse management \> Inquirie
 
 ## Scenario 3: Wave label printing for multi-tiered labels
 
-This scenario shows how to use the wave label printing functionality when the warehousing processes require several tiers of shipping labels. For example, separate labels might have to be printed for cartons and pallets, and a break label might have to be printed for a whole shipment. Break labels are a separate type of label that can be used as a divider between rolls and containers, such as labels for the shipment ID and a barcode, so that the labels can easily be sorted after they are printed.
+This scenario shows how to use the wave label printing functionality when the warehousing processes require several tiers of shipping labels. For example, separate labels might have to be printed for cartons and pallets, and a break label might have to be printed for a whole shipment. Break labels are a separate type of label that can be used as a divider between rolls and containers, such as labels for the shipment ID and a bar code, so that the labels can easily be sorted after they are printed.
 
 The main difference between the configuration of this scenario and the configuration of scenario 1, besides the fact that break labels are enabled, is that multiple wave label types must be associated with wave label templates and unit sequence group lines. To accomplish this configuration, you set up the following elements for this scenario:
 
@@ -939,5 +939,6 @@ For most of these pages, you can find the relevant function by selecting **Wave 
 ## Additional resources
 
 - [Reprint and void wave labels](reprint-and-void-wave-labels.md)
+- [Schedule wave label printing during wave](configure-task-based-wave-label-printing.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

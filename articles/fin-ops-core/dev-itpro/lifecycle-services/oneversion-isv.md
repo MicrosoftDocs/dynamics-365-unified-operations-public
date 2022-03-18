@@ -13,12 +13,12 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2019-4-12 
 ms.dyn365.ops.version: Platform update 24 
 ---
@@ -121,7 +121,7 @@ We recommend that you follow a similar approach for your ISV solutions. You will
 
 As the following illustration shows, the frequency of your new releases can be independent of Microsoft releases. You should consider adopting a strategy for source code branching, as described in the [Branches and builds](#branches-and-builds) section of this topic.
 
-![Branching strategy](media/oneversion-isv-branch.png)
+![Branching strategy.](media/oneversion-isv-branch.png)
 
 What is essential is the quality of every update that is released. Although testing helps guarantee quality, quality must also be built in during the design and implementation phases. In the One Version model, there are some new dimensions to consider, as described in the following sections.
 

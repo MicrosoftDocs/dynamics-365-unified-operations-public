@@ -2,9 +2,9 @@
 # required metadata
 
 title: Save task guides to LCS and replay them
-description: This article explains how to save task guides to Microsoft Dynamics Lifecycle Services (LCS) and then replay them.
-author: andreabichsel
-ms.date: 02/03/2020
+description: This topic explains how to save task guides to Microsoft Dynamics Lifecycle Services (LCS) and then replay them.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,13 +21,16 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
 ---
 
 # Save task guides to LCS and replay them
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -58,7 +61,7 @@ Follow these steps to save a task recording to LCS.
 10. Create a task recording.
 11. When you've finished, select **Save to Lifecycle Services**.
 
-    ![Save to Lifecycle Services](media/task-guides.png)
+    ![Save to Lifecycle Services.](media/task-guides.png)
 
 12. Select the BPM library and node to save the task recording to.
 

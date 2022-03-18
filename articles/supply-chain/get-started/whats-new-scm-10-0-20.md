@@ -1,11 +1,11 @@
 ---
-title: Preview of Dynamics 365 Supply Chain Management 10.0.20 (August 2021) 
+title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.20 (August 2021) 
 description: This topic describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.20. 
 author: kamaybac
 ms.date: 05/28/2021
 ms.topic: article
 # ms.search.form:  [Operations AOT form name to tie this topic to]
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: kamaybac
@@ -13,29 +13,28 @@ ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
 ---
 
-# Preview of Dynamics 365 Supply Chain Management 10.0.20 (August 2021)
+# What's new or changed in Dynamics 365 Supply Chain Management 10.0.20 (August 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management preview of version 10.0.20. This version has a build number of 10.0.886 and is available as follows:
+This topic lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management version 10.0.20. This version has a build number of 10.0.886 and is available as follows:
 
 - **Preview of release:** May 2021
 - **General availability of release (self-update):** July 2021
-- **General availability of release (auto-update):** July 2021
-
+- **General availability of release (auto-update):** August 2021
 
 ## Features included in this release
 
 The following table lists the features included in this release. The *Feature* column provides links to the [release plan](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features), where you can see the official release dates for each feature. The *More information* column provides more details and/or links to related documentation.
 
-Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them. Some of the listed features are still in preview, while others may already be generally available.
+Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
 | Feature area | Feature | More information |
 |---|---|---|
 | Inventory&nbsp;and&nbsp;logistics | [Sales order details performance enhancement](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-order-details-performance-enhancement) | This feature makes the user interface more responsive when opening sales orders, especially orders that include many lines. |
 | Manufacturing | [Invoke process automation flows to create quality orders](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/invoke-process-automation-flows-create-quality-orders) | [Invoke process automation flows to create quality orders](../production-control/process-automation-quality-orders.md ) |
 | Manufacturing | [Enhanced production floor execution interface for manufacturing](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-manufacturing) | [Configure the production floor execution interface](../production-control/production-floor-execution-configure.md) |
+| Planning | [Infinite capacity scheduling for Planning Optimization](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-infinite-capacity-support-planning-optimization) | [Scheduling with infinite capacity](../master-planning/planning-optimization/infinite-capacity-planning.md) |
 | Product information management | [Manage changes in formulas and their ingredients](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/engineering-change-management-support-process-manufacturing) | [Manage changes in formulas and their ingredients](../engineering-change-management/manage-formula-changes.md) |
 | Product information management | [Product readiness checks](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/product-readiness-checks) | [Product readiness](../engineering-change-management/product-readiness.md) |
 
@@ -43,9 +42,8 @@ Most of these features must be enabled using [Feature management](../../fin-ops-
 
 The following table lists the feature enhancements included in this release. Each of these provides an incremental improvement to an existing feature. Because they are only enhancements, they are not listed in the [release plan](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features). However, to ensure that these enhancements won't conflict with your existing customizations or preferences, each of them is turned off by default (unless otherwise noted). If you want to use any of these features, you must explicitly enable them in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-| Feature area | Feature&nbsp;name&nbsp;in feature&nbsp;management | More information |
+| Module | Feature&nbsp;name&nbsp;in feature&nbsp;management | More information |
 |---|---|---|
-| Master planning | Negative days for Planning Optimization	| This preview feature enables Planning Optimization to consider delay tolerance based on the **Negative days** parameter defined in coverage groups. |
 | Master planning | Parallel authorizing of adjusted demand forecast | This feature allows parallel authorizing of adjusted demand forecast from the **Adjusted demand forecast** page. The intent of this feature is to increase performance when a high number of forecasts are being authorized. When authorizing, the user can specify the **Number of threads** in the authorizing dialog. |
 | Master planning | (Preview) Batchable firming and consolidation for planned bulk and pack batch orders | This feature lets you use batch jobs to firm and consolidate planned bulk and pack orders. |
 | Production control | Copy generic routes | This feature enhances the copy route function to allow users to copy routes that aren't item specific. It enables the system to update all relevant information (such as site, route group, resource requirements, and various times) after the copy route function has been used to overwrite a route that is not yet assigned to an item. |
@@ -71,7 +69,7 @@ We have recently added or significantly updated the following help topics. They 
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.20 includes platform updates. To learn more, see [Platform updates for version 10.0.20 of Finance and Operations apps (July 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20.md). <!-- KFM: Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.20 includes platform updates. To learn more, see [Platform updates for version 10.0.20 of Finance and Operations apps (July 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20.md).
 
 ### Bug fixes
 

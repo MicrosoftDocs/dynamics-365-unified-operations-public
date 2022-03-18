@@ -4,7 +4,7 @@
 title: Manage the Electronic reporting (ER) configuration lifecycle
 description: This topic describes how to manage the lifecycle of Electronic reporting (ER) configurations for Dynamics 365 Finance.
 author: NickSelin
-ms.date: 04/13/2021
+ms.date: 07/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -85,22 +85,36 @@ For the following ER-related reasons, we recommend that you design ER configurat
 
 ER configurations that are designed in the development environment can be [uploaded](#data-persistence-consideration) to the test environment for the configuration evaluation (proper process integration, correctness of results, and performance) and quality assurance, such as correctness of role-driven access rights and segregation of duties. The features that enable ER configuration interchange can be used for this purpose. Proven ER configurations can be uploaded to LCS to share them with service subscribers, or they can be [imported](#data-persistence-consideration) to the production environment for internal use.
 
-![ER configuration lifecycle](./media/ger-configuration-lifecycle.png)
+![ER configuration lifecycle.](./media/ger-configuration-lifecycle.png)
 
-## <a name="data-persistence-consideration" />Data persistence consideration
+## Data persistence consideration
 
 You can individually [import](tasks/er-import-configuration-lifecycle-services.md) different [versions](general-electronic-reporting.md#component-versioning) of an ER [configuration](general-electronic-reporting.md#Configuration) to your Finance instance. When a new version of an ER configuration is imported, the system controls the content of the draft version of this configuration:
 
-   - When the imported version is lower than the highest version of this configuration in the current Finance instance, the content of the draft version of this configuration remains unchanged.
-   - When the imported version is higher than any other version of this configuration in the current Finance instance, the content of the imported version is copied to the draft version of this configuration to let you continue editing the last completed version.
+- When the imported version is lower than the highest version of this configuration in the current Finance instance, the content of the draft version of this configuration remains unchanged.
+- When the imported version is higher than any other version of this configuration in the current Finance instance, the content of the imported version is copied to the draft version of this configuration to let you continue editing the last completed version.
 
 If this configuration is owned by the configuration [provider](general-electronic-reporting.md#Provider) that is currently activated, the draft version of this configuration is visible to you on the **Versions** FastTab of the **Configurations** page (**Organization administration** > **Electronic reporting** > **Configurations**). You can select the draft version of the configuration and [modify](er-quick-start2-customize-report.md#ConfigureDerivedFormat) its content by using the relevant ER designer. When you have edited the draft version of an ER configuration, its content no longer matches the content of the highest version of this configuration in the current Finance instance. To prevent the loss of your changes, the system displays an error that the import is unable to continue because the version of this configuration is higher than the highest version of this configuration in the current Finance instance. When this happens, for example with the format configuration **X**, the **Format 'X' version is not completed** error is displayed.
 
 To undo the changes that you introduced in the draft version, select the highest completed or shared version of your ER configuration in Finance on the **Versions** FastTab, and then select the **Get this version** option. The content of the selected version is copied to the draft version.
 
+## Applicability consideration
+
+When you design a new version of an ER configuration, you can define its [dependency](tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md) on other software components. This step is considered a prerequisite for controlling the download of this configuration's version from an ER repository or an external XML file, and for any further use of the version. When you try to import a new version of an ER configuration, the system uses the configured prerequisites to control whether the version can be imported.
+
+In some cases, you might require that the system ignore the configured prerequisites when you import new versions of ER configurations. To have the system ignore the prerequisites during import, follow these steps.
+
+1. Go to **Organization administration** \> **Electronic reporting** \> **Configurations**.
+2. On the **Configurations** page, on the Action Pane, on the **Configurations** tab, in the **Advanced settings** group, select **User parameters**.
+3. Set the **Skip product updates and version prerequisite check during import** option to **Yes**.
+
+    > [!NOTE]
+    > This parameter is user-specific and company-specific.
+
 ## Additional resources
 
 [Electronic reporting (ER) overview](general-electronic-reporting.md)
 
+[Define the dependency of ER configurations on other components](tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

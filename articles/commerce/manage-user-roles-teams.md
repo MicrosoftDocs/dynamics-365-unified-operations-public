@@ -33,7 +33,7 @@ As you create a team for each store or channel in Teams, a group membership that
 
 The following illustration shows an example of a list of team members and their user roles in the Microsoft Teams admin center.
 
-![Team members and user roles in the Microsoft Teams admin center](media/d365-commerce-teams-integration-user-roles.png)
+![Team members and user roles in the Microsoft Teams admin center.](media/d365-commerce-teams-integration-user-roles.png)
 
 For more information, see [Assign team owners and members in Microsoft Teams](/microsoftteams/assign-roles-permissions).
 

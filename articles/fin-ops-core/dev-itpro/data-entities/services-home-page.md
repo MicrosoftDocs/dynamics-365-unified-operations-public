@@ -3,9 +3,9 @@
 
 title: Service endpoints overview
 description: This topic describes the service endpoints that are available.
-author: Sunil-Garg
+author: peakerbl
 ms.date: 06/22/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,11 +17,10 @@ audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: 21311
 ms.assetid: 5ff7fd93-1bb8-4883-9cca-c8c42ddc1746
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -69,11 +68,11 @@ For more information, see:
 
 The following illustration describes how authorization must be configured for Authorization code grant flow.
 
-![Authorization code grant flow](./media/services-authentication.png)
+![Authorization code grant flow.](./media/services-authentication.png)
 
 And below is the illustration describes how authorization works for Service to service calls using client credentials (shared secret or certificate).
 
-![Service to service calls using client credentials](./media/S2SAuth.jpg)
+![Service to service calls using client credentials.](./media/S2SAuth.jpg)
 
 ### Register a web application with AAD
 

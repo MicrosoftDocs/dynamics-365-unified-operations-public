@@ -39,6 +39,9 @@ Organizations that pay vendors on a recurring schedule can now automate the proc
 
 Payment proposal automations don't automatically post the payments. Therefore, you can continue to use any validation and workflow processes that you currently use to approve the payments that are created.
 
+> [!NOTE]
+> The **Vendor payment proposal automation** feature must be enabled in Feature management to utilize this functionality. 
+
 ## Define the occurrence of vendor payment proposals
 
 Vendor payment proposal automations use the Process automation framework. Different business processes use this framework to define the recurrence of a selected process. For vendor payment proposals, the automation can be accessed at **Accounts payable \> Payment setup \> Process automation**.
@@ -103,11 +106,11 @@ We recommend that you evaluate whether the automation will be beneficial to your
 
 After the vendor payment proposal automation series is created, the occurrences for each payment are shown in the process automation weekly view. For vendor payments, the process automation weekly view has been added to both the **Vendor payments** workspace and the **Process automation** page.
 
-[![Process automation weekly view in the Vendor payments workspace](./media/vendor-payment-proposal-1.png)](./media/vendor-payment-proposal-1.png)
+[![Process automation weekly view in the Vendor payments workspace.](./media/vendor-payment-proposal-1.png)](./media/vendor-payment-proposal-1.png)
 
 The process automation weekly view in the **Vendor payments** workspace shows only vendor payment proposal automations. It shows all occurrences of payments for the current week, for all legal entities that the signed-in user has security permissions to. For example, if the AP payment clerk is responsible for payments in the USMF and USSI companies, they will see the occurrences of the vendor payment proposal automation for those two companies but not for other companies.
 
-[![Process automation weekly view for the USMF and USSI companies](./media/vendor-payment-proposal-2.png)](./media/vendor-payment-proposal-2.png)
+[![Process automation weekly view for the USMF and USSI companies.](./media/vendor-payment-proposal-2.png)](./media/vendor-payment-proposal-2.png)
 
 Each occurrence shows the company that the payment journal was or will be created in. If payments are created by using centralized payments, the company that is shown is the company that payments will be created in. The occurrence doesn't necessarily show which companies' invoices will be paid.
 

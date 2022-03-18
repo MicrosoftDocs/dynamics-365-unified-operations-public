@@ -22,7 +22,7 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
-ms.dyn365.ops.version: Release 10.0.18
+ms.dyn365.ops.version: 10.0.18
 ---
 
 # Wave creation and processing
@@ -46,7 +46,7 @@ You can specify which of these production order options to use by default using 
 
 The following diagram shows the flow for how shipping waves are created, processed, and released. The numbers correspond to the sections later in this section.
 
-![Process for creating a wave](media/wave-processing-diagram.png "Process for creating a wave")
+![Process for creating a wave.](media/wave-processing-diagram.png "Process for creating a wave")
 
 ### Prerequisites
 
@@ -162,7 +162,7 @@ When the *Schedule work creation* functionality is enabled, wave processing will
 
 The following flowchart shows how planned work is created during wave processing.
 
-![Schedule work creation](media/schedule-work-creation-process.png)
+![Schedule work creation.](media/schedule-work-creation-process.png)
 
 ### Planned work
 
@@ -194,9 +194,9 @@ If needed, you can cancel a wave that has been processed. To cancel a wave, and 
 
 Use the **Wave batch job details** page to inspect the batch jobs and related tasks associated with any wave. This is especially useful for troubleshooting a wave that has failed. Without this feature, only administrators will typically have access to batch job details. The **Wave batch job details** page can be made available to non-admin users and provides a read-only view of batch jobs and related tasks.
 
-### Enable the Wave batch job details page
+### Turn the Wave batch job details page on or off
 
-If your system doesn't already include the **Wave batch job details** page, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the *Wave batch job details* feature.
+As of Supply Chain Management version 10.0.25, the **Wave batch job details** page is turned on by default. Admins can turn this functionality on or off by searching for the *Wave batch job details* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ### Use the Wave batch job details page
 

@@ -3,8 +3,8 @@
  
 title: Create performance reviews
 description: This topic explains how to create a performance review and describes the purpose for each section of the review. 
-author: andreabichsel
-ms.date: 05/05/2020
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: business-process 
 ms.prod:  
 ms.technology:  
@@ -19,11 +19,14 @@ ms.search.scope: Human Resources
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Create performance reviews
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -68,17 +71,17 @@ This topic explains how to create a performance review and describes the purpose
 30. Select the **Ratings** tab.  
 
     - The **Rating details** FastTab allows employees to rate themselves and the manager to rate the employee. If weights are used, the weight value of the scores will be calculated automatically.  
-    - To view this section, enable the parameter settings for showing employee ratings.  
+    - To view this section, enable the parameter settings for showing employee ratings on the **Human resources shared parameters** page.  
 
-31. Select the **Sign offs** tab. If the review uses workflow, then the signoffs will appear only after the workflow is complete. If no workflow is used, then both the worker and the manager are listed here. The required check box is selected based on the settings of the review type.  
+31. Select the **Sign offs** tab. If the review uses workflow, then the signoffs will appear only after the workflow is complete. If no workflow is used, then both the worker and the manager are listed here. The **Required** check box for **Sign offs** is selected based on the settings of the review type.  
 32. Select the **General** tab.
 
     - The performance period creates the default start and end dates. Those dates are editable.  
-    - The statuses control the access to the review. The **Not started** status allows everyone to edit the review. The **In progress** status allows only the employee to view and edit the review. **Ready for review** allows only the manager to view and edit the review. **Final review** status allows both the employee and manager to view the review and also edit it if set up in the review type. The **Completed** and **Canceled** statuses make the review read only. If a review is **Rejected** and sent back to the employee, both the employee and manager can make necessary edits so the employee can resubmit.
+    - The statuses control the access to the review. The **Not started** status allows everyone to edit the review. The **In progress** status allows only the employee to view and edit the review. **Ready for review** allows only the manager to view and edit the review. **Final review** status allows both the employee and manager to view and edit the review if the **Allow edit in final review** option is selected in the review type. The **Completed** and **Canceled** statuses make the review read only. If a review is **Rejected** and sent back to the employee, both the employee and manager can make necessary edits so the employee can resubmit.
 
 33. In the **Overview** field, type a value.
 34. Select the **Review** tab. As the review moves through the statuses, the employee and manager can add comments for each goal or competency.  
-35. Select the **Sign offs** tab. The worker and manager can sign off on the review. When all required signoffs are complete, the status is changed to **Completed** and no more changes can be made.  
+35. Select the **Sign offs** tab. The worker and manager can sign off on the review. When all required sign offs are complete, the status is changed to **Completed** and no more changes can be made.  
 
 
 

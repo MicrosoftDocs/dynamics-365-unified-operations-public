@@ -5,7 +5,7 @@ title: Create workflows overview
 description: This topic explains how to create a workflow.
 author: ChrisGarty
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: 195583
+ms.custom: ["195583", "intro-internal"]
 ms.assetid: 836ddd01-cc34-45c3-a4b0-20647357dbc6
 ms.search.region: Global
 # ms.search.industry: 
@@ -30,6 +30,9 @@ ms.dyn365.ops.version: Platform update 2
 # Create workflows overview
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 This topic explains how to create a workflow.
 

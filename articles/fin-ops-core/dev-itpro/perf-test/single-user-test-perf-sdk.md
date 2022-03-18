@@ -11,7 +11,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 9954
 ms.assetid: 7b605810-e4da-4eb8-9a26-5389f99befcf
@@ -63,7 +63,7 @@ Before you run a single-user test, you must work with your business team to defi
 
 4. Under your **PerfSDK** folder, create a folder that is named **Common\\External\\Selenium**.
 
-    [![New PerfSDK folder](./media/single-user-test-03.png)](./media/single-user-test-03.png)
+    [![New PerfSDK folder.](./media/single-user-test-03.png)](./media/single-user-test-03.png)
 
 5. Copy the following files, and save them to the folder **Common\\External\\Selenium** that you created in the previous step:
 
@@ -78,11 +78,11 @@ When you've finished recording the end-to-end scenario, you must generate a C\# 
 1. In a development environment, open Microsoft Visual Studio as an admin.
 2. From your **PerfSDK** folder, open the **PerfSDKSample** solution. In a tier-1 sandbox or a cloud-hosted-environment, the PerfSDK folder is typically in \<Service volumne\>:\\PerfSDK\\PerfSDKLocalDirectory.
 
-    [![PerfSDK directory](./media/single-user-test-05.png)](./media/single-user-test-05.png)
+    [![PerfSDK directory.](./media/single-user-test-05.png)](./media/single-user-test-05.png)
 
 3. Add a reference to the WebDriver.dll file in the Common\\External\\Selenium folder.
 
-    [![PerfSDKSample references](./media/single-user-test-06.png)](./media/single-user-test-06.png)
+    [![PerfSDKSample references.](./media/single-user-test-06.png)](./media/single-user-test-06.png)
 
 4. On the **Dynamics 365** menu, point to **Addins**, and then select **Create C\# perf test from recording**.
 5. In the **Import Task Recording** dialog box, enter the following required details:
@@ -93,7 +93,7 @@ When you've finished recording the end-to-end scenario, you must generate a C\# 
     
 6. When you've finished, select **Import**. A new C\# class is created under the **Generated** folder of your PerfSDKSample project.
 
-    [![New C# class in the Generated folder](./media/single-user-test-09.png)](./media/single-user-test-09.png)
+    [![New C# class in the Generated folder.](./media/single-user-test-09.png)](./media/single-user-test-09.png)
 
 7. Build the solution.
 
@@ -106,7 +106,7 @@ When you've finished recording the end-to-end scenario, you must generate a C\# 
     - In each **AuthenticatorConfiguration** element under the **AuthenticatorConfigurationCollection** element, replace **AadAuthenticator** with **SelfMintedTokenAuthenticator**.
     - Comment out the **AzureActiveDirectoryConfiguration** and **KeyVaultConfigurations** elements.
 
-    [![Updated and commented code sample](./media/single-user-test-10.png)](./media/single-user-test-10.png)
+    [![Updated and commented code sample.](./media/single-user-test-10.png)](./media/single-user-test-10.png)
 
 2. In Visual Studio, on the **Test** menu, point to **Windows**, and then select **Test Explorer**.
 3. Right-click your test case, and then select **Run selected tests**.

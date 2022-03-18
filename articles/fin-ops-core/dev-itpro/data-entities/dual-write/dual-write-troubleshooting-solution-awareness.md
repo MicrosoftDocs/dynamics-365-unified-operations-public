@@ -1,37 +1,21 @@
 ---
-# required metadata
-
 title: Troubleshoot issues related to solution awareness
 description: This topic provides troubleshooting information that can help you fix issues that are related to solution awareness.
 author: RamaKrishnamoorthy 
 ms.date: 03/16/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: 
 ms.author: ramasri
-ms.dyn365.ops.version: 
-ms.search.validFrom: 2020-03-16
-
+ms.search.validFrom: 2020-01-06
 ---
 
 # Troubleshoot issues related to solution awareness
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 
 

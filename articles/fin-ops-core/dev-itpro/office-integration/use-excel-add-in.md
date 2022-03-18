@@ -4,7 +4,7 @@
 title: View and update entity data with Excel 
 description: This topic explains how to open entity data in Microsoft Excel, and then view, update, and edit the data by using the Microsoft Dynamics Excel add-in. 
 author: jasongre
-ms.date: 01/22/2021
+ms.date: 10/01/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [applies to](../includes/applies-to-commerce-finance-scm.md)]
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 
 This topic explains how to open entity data in Microsoft Excel, and then view, update, and edit the data by using the Microsoft Dynamics Excel add-in. To open entity data, you can start from either Excel or Finance and Operations apps.
@@ -66,7 +69,7 @@ The Excel add-in automatically reads the data for the entity that you selected. 
 
 6. Select **OK**, and then select **Yes** to confirm the change. The Excel add-in is restarted and loads metadata.
 
-    The **Design** button is now available. If the Excel add-in has a **Load applets** button, you probably aren't signed in as the correct user. For more information, see "The Load applets button is shown" in the [Troubleshooting](../office-integration/use-excel-add-in.md#troubleshooting) section of this topic.
+    The **Design** button is now available. If the Excel add-in has a **Load applets** link, you likely aren't signed in as the correct user. For more information on addressing this issue, see the [Load applets](../office-integration/office-integration-troubleshooting.md#issue-the-excel-add-in-loads-but-instead-of-showing-data-it-displays-load-applets-in-the-task-pane) troubleshooting entry.
 
 7. Select **Design**. The Excel add-in retrieves entity metadata.
 8. Select **Add table**. A list of entities appears. The entities are listed in "Name - Label" format.
@@ -142,7 +145,7 @@ The data that is read into the workbook from one environment can be copied to an
 ## Troubleshooting
 There are a few issues that can be resolved through some easy steps.
 
-- **The Load applets button is shown** – If the Excel add-in has a **Load applets** button after sign-in, you probably aren't signed in as the correct user. To resolve this issue, verify that the correct user name appears in the upper-right corner of the Excel add-in. If an incorrect user name appears, select it, sign out, and then sign back in.
+- **The "Load applets" link is shown** – For more information on this issue, see [Load applets](../office-integration/office-integration-troubleshooting.md#issue-the-excel-add-in-loads-but-instead-of-showing-data-it-displays-load-applets-in-the-task-pane) troubleshooting entry. 
 - **You receive a "Forbidden" message** – If you receive a "Forbidden" message while the Excel add-in is loading metadata, the account that is signed in to the Excel add-in doesn't have permission to use the targeted service, instance, or database. To resolve this issue, verify that the correct user name appears in the upper-right corner of the Excel add-in. If an incorrect user name appears, select it, sign out, and then sign back in.
 - **A blank webpage is shown over Excel** – If a blank webpage is opened during the sign-in process, the account requires AD FS, but the version of Excel that is running the Excel add-in isn't recent enough to load the sign-in dialog box. To resolve this issue, update the version of Excel that you're using. To update the version of Excel when you're in an enterprise that is on the deferred channel, use the [Office deployment tool](/deployoffice/overview-office-deployment-tool) to [move from the deferred channel to the current channel](/deployoffice/overview-update-channels).
 - **You receive a time-out while you publish data changes** – If you receive time-out messages while you're trying to publish data changes to an entity, consider reducing the publish batch size for the affected workbook. Entities that trigger larger amounts of logic on record changes might require updates to be sent in smaller batches to help prevent time-outs.

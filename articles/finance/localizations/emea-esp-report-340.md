@@ -4,7 +4,7 @@
 title: Report 340 for Spain
 description: This topic provides information about how to set up and generate Report 340 for Spain.
 author: anasyash
-ms.date: 07/23/2020
+ms.date: 03/03/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -58,7 +58,7 @@ For more information, see [Download Electronic reporting configurations from Lif
 
 2.  Go to **Tax \> Setup \> Sales tax \> Spanish VAT books**.
 
-![Spanish VAT books page](media/1_Spanish_VAT_book.png)
+![Spanish VAT books page.](media/1_Spanish_VAT_book.png)
 
 3.  In the **VAT book** and **Description** fields, enter a name and description for the VAT book.
 4.  In **Book type** field select a book type: **Sales tax payable**, **Sales tax receivable**, or **All the books**.
@@ -86,13 +86,13 @@ For more information, see [Download Electronic reporting configurations from Lif
 | Start numbering (in the **Manual numbering** section) | Enter the first line number.                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | Template   (in the **Manual numbering** section)        | Enter the template for the line   number. For example, enter #####.                                                                                                                                                                                                                                                                                                                                                                                                       |
 | Replacement   declaration                               | Set this option to **Yes** to   replace the previous declaration.                                                                                                                                                                                                                                                                                                                                                                                                         |
-| Rprevious   declaration number                          | Enter the 13-digit number of the   previous declaration. This field can be edited only if the **Replacement   declaration** option is set to **Yes**.                                                                                                                                                                                                                                                                                                                     |
-| Minimum   payment account in cash                       | Enter the minimum cash payment   amount that should be reported in the declaration.                                                                                                                                                                                                                                                                                                                                                                                       |
+| Previous   declaration number                          | Enter the 13-digit number of the   previous declaration. This field can be edited only if the **Replacement   declaration** option is set to **Yes**.                                                                                                                                                                                                                                                                                                                     |
+| Minimum   payment account in cash                       | Enter the minimum cash payment   amount that should be reported in the declaration. If you don't need to include cash payments in the report, enter 9999999999 in this field.                                                                                                                                                                                                                                                                                                                                                                                      |
 
 10.  Select **OK** to create a line on the **Spanish VAT reports** page, based on the criteria that you defined in the previous step.
 11.  Review the line that is created.
 
-![Spanish VAT reports page](media/2_Spanish_VAT_report.png)
+![Spanish VAT reports page.](media/2_Spanish_VAT_report.png)
 
 > [!NOTE]
 > You can't change the values in the **Settlement period**, **Method of numbering**, and **From date** fields on the **Spanish VAT reports** page.
@@ -110,7 +110,7 @@ For more information, see [Download Electronic reporting configurations from Lif
 
 13.  Select **VAT report lines** to open the **VAT report lines** page. On this page, you can view the details of the VAT transactions that are transferred to the VAT report. If any of the lines that are automatically transferred don't have to be reported, you can edit or delete them.
 
-![VAT report lines page](media/3_VAT_report_lines.png)
+![VAT report lines page.](media/3_VAT_report_lines.png)
 
 14.  Select **Posted sales tax** to open **Posted sales tax** page. On this page, you can review the posted sales tax transactions.
 15.  Close the **Posted sales tax** and **VAT report lines** pages.
@@ -166,7 +166,7 @@ For more information, see [Download Electronic reporting configurations from Lif
 -   EUS
 -   VAT 10
 
-![Spanish VAT books page, Setup FastTab](media/4_Spanish_VAT_book.png)
+![Spanish VAT books page, Setup FastTab.](media/4_Spanish_VAT_book.png)
 
 8.  Select **Spanish VAT reports**.
 9.  Select **Create new**.
@@ -178,13 +178,13 @@ For more information, see [Download Electronic reporting configurations from Lif
 
 11.  Select **VAT report lines**, and review the generated data.
 
-![Generated data on VAT report lines page](media/5_VAT_report_lines.png)
+![Generated data on VAT report lines page.](media/5_VAT_report_lines.png)
 
 12.  Select **Output \> Print**.
 13.  In **Format mapping** field, select the **VAT register book (ES)** format that you downloaded earlier.
 14.  Select **OK**, open the downloaded file, and review the data.
 
-![Spanish VAT register book data](media/6_Spanish_VAT_register_book.png)
+![Spanish VAT register book data.](media/6_Spanish_VAT_register_book.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

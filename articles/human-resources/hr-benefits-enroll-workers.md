@@ -2,9 +2,9 @@
 # required metadata 
  
 title: Enroll and remove benefits from workers
-description: This procedure demonstrates how a single worker can be enrolled in one or more benefits, as well as multiple workers can be enrolled in a benefit. 
-author: andreabichsel
-ms.date: 02/03/2020
+description: This procedure shows how to enroll a single worker in one or more benefits, as well as enrolling multiple workers in a benefit. 
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: business-process 
 ms.prod:  
 ms.technology:  
@@ -19,17 +19,20 @@ ms.search.scope: Human Resources
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources 
 ---
 # Enroll and remove benefits from workers
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
-This procedure demonstrates how a single worker can be enrolled in one or more benefits, as well as multiple workers can be enrolled in a benefit. The demo data company used to create this procedure is USMF.
+This procedure shows how to enroll a single worker in one or more benefits, as well as enrolling multiple workers in a benefit. The demo data company used to create this procedure is USMF.
 
 
 ## Enroll a single worker in benefits

@@ -5,7 +5,7 @@ author: FrankDahl
 ms.date: 03/09/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom:
 ms.search.region: Global
 ms.author: fdahl
@@ -32,7 +32,7 @@ To enable non-administrator RSAT use, you need two PowerShell scripts and a new 
 1. Open Windows PowerShell as Administrator.
 2. Change the folder to **Enable non admin** in the RSAT installation folder. The installation folder is named according to the localized Windows running on the machine, for example **C:\Program Files (x86)\Regression Suite Automation Tool\Enable non admin**.
 
-    ![List of files in PowerShell](media/config-file-list.png)
+    ![List of files in PowerShell.](media/config-file-list.png)
 
 3. In the folder **Enable non admin** you will find these files:
 

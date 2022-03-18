@@ -4,7 +4,7 @@
 title: Cookie compliance
 description: This topic describes considerations for cookie compliance and the default policies that are included in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 05/21/2021
+ms.date: 03/10/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -38,26 +38,32 @@ To learn more about the basic principles that Microsoft uses for cookie complian
 
 The following table shows the current reference list of cookies placed by Dynamics 365 Commerce sites.
 
-| Cookie name                               | Usage                                                        |
-| ------------------------------------------- | ------------------------------------------------------------ |
-| .AspNet.Cookies                             | Store Microsoft Azure Active Directory (Azure AD) authentication cookies for single sign-on (SSO). Stores encrypted user principal information (name, surname, email). |
-| &#95;msdyn365___cart&#95;                           | Store cart ID used to obtain list of products added to cart instance. |
-| &#95;msdyn365___ucc&#95;                            | Cookie compliance consent tracking.                          |
-| ai_session                                  | Detects how many sessions of user activity have included certain pages and features of the app. |
-| ai_user                                     | Detects how many people used the app and its features. Users are counted using anonymous IDs. |
-| b2cru                                       | Stores redirect URL dynamically.                              |
-| JSESSIONID                                  | Used by payment connector Adyen to store user session.       |
-| OpenIdConnect.nonce.&#42;                       | Authentication                                               |
-| x-ms-cpim-cache:.&#42;                          | Used for maintaining the request state.                      |
-| x-ms-cpim-csrf                              | Cross-site request forgery (CRSF) token used for protection from CRSF.     |
-| x-ms-cpim-dc                                | Used to route requests to the appropriate production authentication server instance. |
-| x-ms-cpim-rc.&#42;                              | Used to route requests to the appropriate production authentication server instance. |
-| x-ms-cpim-slice                             | Used to route requests to the appropriate production authentication server instance. |
-| x-ms-cpim-sso:rushmoreb2c.onmicrosoft.com_0 | Used for maintaining the SSO session.                        |
-| x-ms-cpim-trans                             | Used for tracking transactions (the number of open tabs authenticating against a business-to-consumer (B2C) site), including the current transaction. |
-| \_msdyn365___muid_                            | Used if Experimentation is activated for the environment; utilized as a userId for experimentation purposes. |
-| \_msdyn365___exp_                             | Used if Experimentation is activated for the environment; used to measure performance load balancing.         |
-| d365mkt                                       | Used if location-based detection to track a user's IP address for store location suggestions is enabled in Commerce site builder at **Site Settings > General > Enable location based store detection**.      |
+| Cookie name                               | Usage                                                        | Lifetime |
+| ------------------------------------------- | ------------------------------------------------------------ |  ------- |
+| .AspNet.Cookies                             | Store Microsoft Azure Active Directory (Azure AD) authentication cookies for single sign-on (SSO). Stores encrypted user principal information (name, surname, email). | Session |
+| \_msdyn365___cart_                           | Store cart ID used to obtain list of products added to cart instance. | Session |
+| \_msdyn365___checkout_cart_                           | Store checkout cart ID used to obtain list of products added to checkout cart instance. | Session |
+| \_msdyn365___ucc_                            | Cookie compliance consent tracking.                          | 1 year |
+| ai_session                                  | Detects how many sessions of user activity have included certain pages and features of the app. | 30 minutes |
+| ai_user                                     | Detects how many people used the app and its features. Users are counted using anonymous IDs. | 1 year |
+| b2cru                                       | Stores redirect URL dynamically.                              | Session |
+| JSESSIONID                                  | Used by payment connector Adyen to store user session.       | Session |
+| OpenIdConnect.nonce.&#42;                       | Authentication                                               | 11 minutes |
+| x-ms-cpim-cache:.&#42;                          | Used for maintaining the request state.                      | Session |
+| x-ms-cpim-csrf                              | Cross-site request forgery (CRSF) token used for protection from CRSF.     | Session |
+| x-ms-cpim-dc                                | Used to route requests to the appropriate production authentication server instance. | Session |
+| x-ms-cpim-rc.&#42;                              | Used to route requests to the appropriate production authentication server instance. | Session |
+| x-ms-cpim-slice                             | Used to route requests to the appropriate production authentication server instance. | Session |
+| x-ms-cpim-sso:rushmoreb2c.onmicrosoft.com_0 | Used for maintaining the SSO session.                        | Session |
+| x-ms-cpim-trans                             | Used for tracking transactions (the number of open tabs authenticating against a business-to-consumer (B2C) site), including the current transaction. | Session |
+| \_msdyn365___muid_                            | Used if experimentation is activated for the environment; used as a user ID for experimentation purposes. | 1 year |
+| \_msdyn365___exp_                             | Used if experimentation is activated for the environment; used to measure performance load balancing.         | 1 hour |
+| d365mkt                                       | Used if location-based detection to track a user's IP address for store location suggestions is enabled in Commerce site builder at **Site Settings \> General \> Enable location based store detection**.      | 1 hour |
+| \_msdyn365___tuid_                           | Used only if experimentation activated for an environment; generates a GUID to serve as a user identifier. Value will change if a user's sign-in status changes.      | 1 year |
+| \_msdyn365___aud_0                          | Stores segment values used by targeting and is only employed if targeting is configured on a page or fragment requested by a site user. The cookie is placed only when the segment values come from a third-party segmentation provider.      | 7 days |
+| \_msdyn365___aud_1                           | Stores segment values used by targeting and is only employed if targeting is configured on a page or fragment requested by a site user. The cookie is placed only when the segment values come from a third-party segmentation provider.      | 7 days |
+| \_msdyn365___aud_2                           | Stores segment values used by targeting and is only employed if targeting is configured on a page or fragment requested by a site user. The cookie is placed only when the segment values come from a third-party segmentation provider.      | 7 days |
+| d365gi                                       | This cookie stores geographical location data when a third-party geolocation service is used.      | 1 day |
 
 If a site user selects any social media links within a site, the cookies in the following table will also be tracked on their browser.
 
@@ -65,12 +71,12 @@ If a site user selects any social media links within a site, the cookies in the 
 | Domain                      | Cookie               | Description                                                  | Source                                          |
 | --------------------------- | ------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | .linkedin.com                | UserMatchHistory         | LinkedIn Ads ID syncing                                      | LinkedIn Feed and Insight tag                                |
-| .linkedin.com               | li_sugr                  | Browser identifier                                           | LinkedIn Insight tag if IP address is not in a designated country |
+| .linkedin.com               | li_sugr                  | Browser identifier                                           | LinkedIn Insight tag if IP address isn't in a designated country |
 | .linkedin.com               | BizographicsOptOut       | Determines opt-out status for third-party tracking.              | LinkedIn guest controls and industry opt-out pages           |
 | .linkedin.com               | \_guid                    | Browser identifier for Google Ads.                            | LinkedIn Feed                                                |
 | .linkedin.com               | li_oatml                 | Member indirect identifier for conversion tracking, retargeting, and analytics. | LinkedIn Ads and Insight tags                                |
 | Various first-party domains | li_fat_id                | Member indirect identifier for conversion tracking, retargeting, and analytics. | LinkedIn Ads and Insight tags                                |
-| .adsymptotic.com            | U                        | Browser identifier                                           | LinkedIn Insight tag if IP address is not in a Designated Country |
+| .adsymptotic.com            | U                        | Browser identifier                                           | LinkedIn Insight tag if IP address isn't in a Designated Country |
 | .linkedin.com                | bcookie                  | Browser ID cookie                                            | Requests to LinkedIn                                         |
 | .linkedin.com                | bscookie                 | Secure browser cookie                                        | Requests to LinkedIn                                         |
 | .linkedin.com               | lang                     | Sets default locale and language.                                 | Requests to LinkedIn                                         |
@@ -106,9 +112,9 @@ If a site user selects any social media links within a site, the cookies in the 
 | .pinterest.com              | Service Workers          |                                                              |  Pinterest                                                            |
 
 
-## Site user cookie consent on an e-Commerce site 
+## Site user cookie consent on an e-commerce site 
 
-If an e-Commerce site feature or module uses a non-essential cookie, a site user's consent must be obtained before the cookie is tracked. To allow site users to provide cookie consent on the e-Commerce site, a site author must add and configure a cookie consent module in the page's header module to ensure that the consent is prompted for and received. Site user consent must be given before a feature or module using a non-essential cookie can be rendered on a site page.
+If an e-commerce site feature or module uses a non-essential cookie, a site user's consent must be obtained before the cookie is tracked. To allow site users to provide cookie consent on the e-commerce site, a site author must add and configure a cookie consent module in the page's header module to ensure the consent is prompted for and received. Site user consent must be given before a feature or module using a non-essential cookie can be rendered on a site page.
 
 ## Additional resources
 

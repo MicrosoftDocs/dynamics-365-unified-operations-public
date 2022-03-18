@@ -1,12 +1,12 @@
 # Testing the new code owners feature in GitHub. Please contact DAX Content Publishing FTEs if you have questions.
 
 /articles/fin-ops-core/dev-itpro	@sericks007
-/articles/fin-ops-core/dev-itpro/analytics	@kfend
+/articles/fin-ops-core/dev-itpro/analytics	@sericks007
 /articles/fin-ops-core/dev-itpro/business-events @sericks007
 /articles/fin-ops-core/dev-itpro/data-entities	@sericks007
 /articles/fin-ops-core/dev-itpro/data-entities/dual-write	@robinarh
 /articles/fin-ops-core/dev-itpro/database	@sericks007
-/articles/fin-ops-core/dev-itpro/deployment	@sericks007 @kfend
+/articles/fin-ops-core/dev-itpro/deployment	@sericks007 
 /articles/fin-ops-core/dev-itpro/dev-ref @robinarh
 /articles/fin-ops-core/dev-itpro/dev-tools @robinarh
 /articles/fin-ops-core/dev-itpro/extensibility @robinarh
@@ -30,7 +30,7 @@
 /articles/fin-ops-core/fin-ops @robinarh
 /articles/fin-ops-core/fin-ops/get-started @sericks007
 /articles/fin-ops-core/fin-ops/hr @andreabichsel
-/articles/fin-ops-core/fin-ops/imp-lifecycle @kfend
+/articles/fin-ops-core/fin-ops/imp-lifecycle @sericks007
 /articles/fin-ops-core/fin-ops/includes @sericks007
 /articles/fin-ops-core/fin-ops/organization-administration @sericks007
 /articles/finance	@roschlom

@@ -1,30 +1,14 @@
 ---
-# required metadata
-
 title: Guidance for dual-write setup
 description: This topic describes the scenarios that are supported for dual-write setup.
 author: RamaKrishnamoorthy
 ms.date: 10/12/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: 
 ms.author: ramasri
-ms.dyn365.ops.version: 
 ms.search.validFrom: 2020-01-06
-
 ---
 
 # Guidance for dual-write setup
@@ -33,7 +17,7 @@ ms.search.validFrom: 2020-01-06
 
 [!include [preview-banner](../../includes/preview-banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 You can set up a dual-write connection between a Finance and Operations environment and a Dataverse environment.
 

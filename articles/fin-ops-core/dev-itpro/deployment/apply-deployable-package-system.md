@@ -4,7 +4,7 @@
 title: Apply updates to cloud environments
 description: This topic explains how to use Lifecycle Services (LCS) to apply a binary update or an application (AOT) deployable package to a cloud environment.
 author: laneswenka
-ms.date: 11/06/2019
+ms.date: 06/08/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -36,7 +36,7 @@ This topic describes how you can use Microsoft Dynamics Lifecycle Services (LCS)
 > Updates are applied using deployable packages. Applying updates causes system downtime. All relevant services will be stopped, and you won't be able to use your environments while the package is being applied. You should plan accordingly.
 
 ## Supported environments
-All environments deployed through Lifecycle Services are supported. 
+All customer-managed and Microsoft-managed environments deployed through Lifecycle Services are supported. For more information about self-service environments, see [Update an environment](updateenvironment-newinfrastructure.md).
 
 > [!NOTE]
 > If you have a build environment, you can only use LCS to apply Binary updates and Data upgrade packages. You can't use LCS to apply an Application Deployable package.
@@ -76,9 +76,12 @@ Before you begin, you should understand *deployable packages*, *runbooks*, and t
 
 - **Make sure that the package is applied in a sandbox environment before it's applied in the production environment.** To help ensure that the production environment is always in a good state, we want to make sure that the package is tested in a sandbox environment before it's applied in the production environment. Therefore, before you request that the package be applied in your production environment, make sure that it has been applied in your sandbox environment by using the automated flows.
 - **If you want to apply multiple packages, create a merged package that can be applied first in a sandbox environment and then in the production environment.** Application of a single package in an average environment requires about 5 hours of downtime. To avoid additional hours of downtime when you must apply multiple packages, you can create a single combined package that contains one package of each type. If you select a binary package and an application deployable package in the Asset library, a **Merge** button becomes available on the toolbar. By clicking this button, you can merge the two packages into a single package and therefore reduce the total downtime by half.
-- **Make sure that the Application binary update package is applied to your dev/build environment before it is applied to your sandbox and production environment** - If the application binary package is applied directly to your Tier 2+ sandbox environment but is not applied on your dev/build environment, the next time you move an AOT package from dev/build box (which does not have the same application binaries as your sandbox environment) to sandbox, some of the application binaries will be overwritten with what is in your dev/build environment. This could result in a regression of the version of your sandbox environment. 
+- **Make sure that the application binary update package is applied to your dev/build environment AFTER it is applied to your sandbox and production environment** - If the application binary package is applied on your dev/build environment and this raises the platform build version to be higher than your target sandbox or production environment, you will be blocked from applying any AOT packages that are produced from this dev/build environment. To apply AOT packages produced from a dev/build environment, your dev/build instance must be equal to or lower than your target environments.
 
 ## Apply a package to a non-production environment by using LCS
+
+> [!NOTE]
+> For self-service type environments, see [Update an environment](updateenvironment-newinfrastructure.md).
 
 Before you begin, verify that the deployable package has been uploaded to the Asset library in LCS.
 
@@ -91,7 +94,7 @@ Before you begin, verify that the deployable package has been uploaded to the As
 
 ## Apply a package to a production environment by using LCS
 
-In a production environment, customers can schedule a downtime for when they want the update to be applied.  
+In a production environment, customers can schedule a downtime for when they want the update to be applied. For self-service type environments, see [Update an environment](updateenvironment-newinfrastructure.md).  
 
 > [!IMPORTANT]
 > An important prerequisite for applying a package to a production environment is that the package must be successfully applied to at least one sandbox environment in the same project. 
@@ -112,7 +115,7 @@ In a production environment, customers can schedule a downtime for when they wan
 
 ## Troubleshoot package deployment failures
 
-If package deployment fails, see the [Troubleshoot package application issues](deployable-package-troubleshooting.md) topic.
+If package deployment fails, see [Troubleshoot package application issues](deployable-package-troubleshooting.md).
 
 ## Applying updates and extensions
 
@@ -126,11 +129,11 @@ Deployable packages, runbooks, and the AXUpdateInstaller are the tools you use t
 
 **Deployable package** – A deployable package is a unit of deployment that can be applied in an environment. A deployable package can be a binary update to the platform or other runtime components, an updated application (AOT) package, or a new application (AOT) package. Deployable packages downloaded from LCS or created in a development environment cannot be applied across product types. For example, a Finance deployable package cannot be applied in a Commerce app environment, and vice versa. If you have an existing customization for a Finance and Operations app that is compatible with the Commerce app, and you would like to apply it to a Commerce environment, you will need to re-package your source code in a Commerce development environment, and conversely if moving in the other direction.   
 
-[![Example of a deployable package](./media/applypackage_deployablepackage.jpg)](./media/applypackage_deployablepackage.jpg)
+[![Example of a deployable package.](./media/applypackage_deployablepackage.jpg)](./media/applypackage_deployablepackage.jpg)
 
 **Runbook** – The deployment runbook is a series of steps that are generated in order to apply the deployable package to the target environment. Some steps are automated, and some steps are manual. AXUpdateInstaller lets you run these steps one at a time and in the correct order.
 
-[![Example of a deployment runbook](./media/applypackage_runbook-1024x528.jpg)](./media/applypackage_runbook.jpg)
+[![Example of a deployment runbook.](./media/applypackage_runbook-1024x528.jpg)](./media/applypackage_runbook.jpg)
 
 **AXUpdateInstaller** – When you create a customization package from Microsoft Visual Studio or a Microsoft binary update, the installer executable is bundled together with the deployable package. The installer generates the runbook for the specified topology. The installer can also run steps in order, according to the runbook for a specific topology.
 

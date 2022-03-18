@@ -7,7 +7,7 @@ author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+
 ms.technology: 
 
 # optional metadata
@@ -37,7 +37,7 @@ This topic lists the steps for calculating Tax Deducted at Source (TDS) on journ
 
 Begin by opening the **General journals** page (**General ledger > Journal entries > General journals**).
 
-[![General journals](./media/apac-ind-TDS-57.png)](./media/apac-ind-TDS-57.png)
+[![General journals.](./media/apac-ind-TDS-57.png)](./media/apac-ind-TDS-57.png)
 
 1. Create journal lines using the journal forms that are listed in the table. Select the account type and offset account type and enter the amount for the transaction. 
 
@@ -71,6 +71,6 @@ Begin by opening the **General journals** page (**General ledger > Journal entri
 
 8. Enter the other required details. Validate and post the journal. The TDS amount that's calculated on purchase invoices is posted to the payable account. The TDS amount that's calculated on sales invoices is posted to the receivable account that is defined for each TDS tax code in the TDS group. The payable accounts or receivable accounts for TDS tax codes are defined on the **Withholding tax codes** page.
 
-9. Select **Posted withholding tax** to open the **Withholding** **tax** **transactions** page. In the **Value** field, the total percentage used to calculate TDS for the transaction is displayed.
+9. Select **Posted withholding tax** to open the **Withholding tax transactions** page. In the **Value** field, the total percentage used to calculate TDS for the transaction is displayed.
 
    The fields on the **Overview**, **General**, and **Amount** tabs in the Withholding tax transactions page display the calculated TDS amount and adjusted TDS amount details for each TDS tax code attached to the TDS group.

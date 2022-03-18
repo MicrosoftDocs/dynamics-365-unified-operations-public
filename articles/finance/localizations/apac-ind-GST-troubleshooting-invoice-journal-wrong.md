@@ -7,7 +7,7 @@ author: yungu
 ms.date: 06/08/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+
 ms.technology: 
 
 # optional metadata
@@ -49,11 +49,11 @@ Follow these steps to determine whether the tax amount in the tax document is co
 
 1. On the **Tax document** page, on the **Tax details** FastTab, review the field values on the **Overview** and **Details** tabs.
 
-    [![Overview tab on the Tax details FastTab of the Tax document page](./media/field-value-invoice-journal-voucher-Picture1.png)](./media/field-value-invoice-journal-voucher-Picture1.png)
+    [![Overview tab on the Tax details FastTab of the Tax document page.](./media/field-value-invoice-journal-voucher-Picture1.png)](./media/field-value-invoice-journal-voucher-Picture1.png)
 
 2. In the **Lines** view, select **View tax input** to review the values of additional fields, such as **Transaction date**, **Invoice date**, and **Tax direction**.
 
-    [![View tax input button on the Tax document page](./media/field-value-invoice-journal-voucher-Picture2.png)](./media/field-value-invoice-journal-voucher-Picture2.png)
+    [![View tax input button on the Tax document page.](./media/field-value-invoice-journal-voucher-Picture2.png)](./media/field-value-invoice-journal-voucher-Picture2.png)
 
 3. If the tax document is incorrect, see [Tax amount is wrong after calculation](apac-ind-GST-troubleshooting-tax-amount-wrong-after-calculation.md) If it's correct, move on to the next section..
 
@@ -61,7 +61,7 @@ Follow these steps to determine whether the tax amount in the tax document is co
 
 In the tax document, select **Voucher** to determine whether the amount is posted to another account. If the amount is posted to another account, see [Incorrect ledger account in the voucher](apac-ind-GST-troubleshooting-ledger-account-voucher-wrong.md). If it isn't posted to another account, move on to the next section.
 
-[![Voucher transactions page](./media/field-value-invoice-journal-voucher-Picture3.png)](./media/field-value-invoice-journal-voucher-Picture3.png)
+[![Voucher transactions page.](./media/field-value-invoice-journal-voucher-Picture3.png)](./media/field-value-invoice-journal-voucher-Picture3.png)
 
 ## Debug the code to analyze the logic
 
@@ -70,31 +70,31 @@ In the tax document, select **Voucher** to determine whether the amount is poste
 
     1. Set a breakpoint in **TaxAccountingPostTaxTransHandlerBase**.
 
-        [![Breakpoint in TaxAccountingPostTaxTransHandlerBase](./media/field-value-invoice-journal-voucher-Picture4.png)](./media/field-value-invoice-journal-voucher-Picture4.png)
+        [![Breakpoint in TaxAccountingPostTaxTransHandlerBase.](./media/field-value-invoice-journal-voucher-Picture4.png)](./media/field-value-invoice-journal-voucher-Picture4.png)
 
     2. In **TaxAccountingPostTaxTransHandler**, set breakpoints where the incorrect value is assigned. For example, set breakpoints for **taxTrans.TaxAmount**.
 
-        [![Breakpoints for taxTrans.TaxAmount when incorrect value is assigned](./media/field-value-invoice-journal-voucher-Picture5.png)](./media/field-value-invoice-journal-voucher-Picture5.png)
+        [![Breakpoints for taxTrans.TaxAmount when incorrect value is assigned.](./media/field-value-invoice-journal-voucher-Picture5.png)](./media/field-value-invoice-journal-voucher-Picture5.png)
 
 - If the field in **TaxDocumentRowTransaction** is incorrect, set breakpoints, and review the logic:
 
     1. Set a breakpoint in **TaxAccountingPostTaxTransHandlerBase**.
 
-        [![Breakpoint for TaxAccountingPostTaxTransHandlerBase](./media/field-value-invoice-journal-voucher-Picture6.png)](./media/field-value-invoice-journal-voucher-Picture6.png)
+        [![Breakpoint for TaxAccountingPostTaxTransHandlerBase.](./media/field-value-invoice-journal-voucher-Picture6.png)](./media/field-value-invoice-journal-voucher-Picture6.png)
 
     2. In **TaxAccountingPostTaxRowTransHandler**, set breakpoints where the incorrect value is assigned. For example, set breakpoints for **taxDocumentRowTransaction.BaseAmountCur**.
 
-        [![Breakpoints for taxDocumentRowTransaction.BaseAmountCur](./media/field-value-invoice-journal-voucher-Picture7.png)](./media/field-value-invoice-journal-voucher-Picture7.png)
+        [![Breakpoints for taxDocumentRowTransaction.BaseAmountCur.](./media/field-value-invoice-journal-voucher-Picture7.png)](./media/field-value-invoice-journal-voucher-Picture7.png)
 
 - If the field in **TaxDocumentComponentTransaction** is incorrect, set breakpoints, and review the logic:
 
     1. Set a breakpoint in **TaxAccountingPostTaxTransHandlerBase**.
 
-        [![Breakpoint at TaxAccountingPostTaxTransHandlerBase](./media/field-value-invoice-journal-voucher-Picture8.png)](./media/field-value-invoice-journal-voucher-Picture8.png)
+        [![Breakpoint at TaxAccountingPostTaxTransHandlerBase.](./media/field-value-invoice-journal-voucher-Picture8.png)](./media/field-value-invoice-journal-voucher-Picture8.png)
 
     2. In **TaxAccountingPostTaxCompTransHandler**, set breakpoints where the incorrect value is assigned. For example, set breakpoints for **taxDocumentComponentTransaction.TaxAmount**.
 
-        [![Breakpoints for taxDocumentComponentTransaction.TaxAmount](./media/field-value-invoice-journal-voucher-Picture9.png)](./media/field-value-invoice-journal-voucher-Picture9.png)
+        [![Breakpoints for taxDocumentComponentTransaction.TaxAmount.](./media/field-value-invoice-journal-voucher-Picture9.png)](./media/field-value-invoice-journal-voucher-Picture9.png)
 
 ## Determine whether customization exists
 

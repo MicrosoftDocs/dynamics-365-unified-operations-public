@@ -29,11 +29,10 @@ ms.dyn365.ops.version: 10.0.19
 # Message processor messages
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Message processor messages are used when running cloud and edge scale units for [manufacturing workloads](cloud-edge-workload-manufacturing.md) and [warehouse management workloads](cloud-edge-workload-warehousing.md).
 
-A large amount of data is exchanged between the hub and scale unit deployment environments to keep them in sync, but only a few of these data exchanges will be processed by the *message processor*. You can view the messages processed by the message processor by going to **System administration > Message processor > Message processor messages**.
+The hub and scale unit deployment environments exchange a large amount of data to remain in sync. Some of the exchanged data will trigger additional logic in the *message processor*. You can view the messages that have been processed by the message processor by going to **System administration > Message processor > Message processor messages**.
 
 ## Message grid columns and filters
 
@@ -48,7 +47,7 @@ You can use the fields at the top of the **Message processor messages** page to 
   - *Queued* – The message is ready to be processed by the message processor.
   - *Processed* – The message was successfully processed by the message processor.
   - *Canceled* – The message was processed, but processing failed.
-- **Message content** – This filter does a full-text search of message content. (Message content is not shown in the grid.) The filter treats most special symbols (such as "-") as spaces, and treats all space characters as Boolean OR operators. T=For example, this means if you search for a specific `journalid` value equal "USMF-123456", the system will find all messages that contain "USMF" or "123456", which is likely to be a long list. Therefore, it would be better to enter just "123456" alone because that will return more specific results.
+- **Message content** – This filter does a full-text search of message content. (Message content is not shown in the grid.) The filter treats most special symbols (such as "-") as spaces, and treats all space characters as Boolean OR operators. For example, this means if you search for a specific `journalid` value equal "USMF-123456", the system will find all messages that contain "USMF" or "123456", which is likely to be a long list. Therefore, it would be better to enter just "123456" alone because that will return more specific results.
 
 ## Example message type: Request inventory adjustment financial update
 
@@ -69,7 +68,7 @@ The toolbar on the **Log** tab includes the following buttons:
 
 ## Message processor batch job
 
-When running a cloud and edge deployment, the *Message processor* batch job will automatically be evoked when a new message is created for processing, so you should not need to schedule this job manually.
+When running a distributed hybrid topology with scale units, the *Message processor* batch job will automatically be evoked when a new message is created for processing, so you should not need to schedule this job manually.
 
 If necessary, you can access the batch job by going to **System administration > Message  processor > Message processor**.
 
@@ -92,15 +91,15 @@ In this example, use **When a Business Event occurs** with *Microsoft Power Auto
 
 1. In [Power Automate](https://preview.flow.microsoft.com), create a new automated cloud flow for the flow trigger **When a Business Event occurs - Fin & Ops App (Dynamics 365)** followed by the **Parse JSON** and **Send an email** steps, as shown in the following illustration.
 
-    :::image type="content" source="./media/cloud-edge-power-automate-example1.png" alt-text="Power Automate automated cloud flow":::
+    :::image type="content" source="./media/cloud-edge-power-automate-example1.png" alt-text="Power Automate automated cloud flow.":::
 
 1. In the **When a Business Event occurs** step, you can look up or enter the hub **Instance** following the **Category** and then the **Business event** *Message processor message processed*, as shown in the following illustration.
 
-    :::image type="content" source="./media/cloud-edge-power-automate-example2.png" alt-text="Power Automate When a Business Event occurs step":::
+    :::image type="content" source="./media/cloud-edge-power-automate-example2.png" alt-text="Power Automate When a Business Event occurs step.":::
 
 1. For the **Parse JSON** step, enter a **Schema** that defines the extended fields. You can use the *Download schema* option on the **Business events catalog** page in Supply Chain Management or start by pasting in the example schema text. This example text is provided after the following illustration.
 
-    :::image type="content" source="./media/cloud-edge-power-automate-example3.png" alt-text="Power Automate Parse JSON step":::
+    :::image type="content" source="./media/cloud-edge-power-automate-example3.png" alt-text="Power Automate Parse JSON step.":::
 
     ```json
     {
@@ -187,7 +186,7 @@ In this example, use **When a Business Event occurs** with *Microsoft Power Auto
 
 1. In the **Send an email** step, you can select the individual fields or start by pasting the email body example into the **Body** field. This example is provided after the following illustration.
 
-    :::image type="content" source="./media/cloud-edge-power-automate-example4.png" alt-text="Power Automate send an email step":::
+    :::image type="content" source="./media/cloud-edge-power-automate-example4.png" alt-text="Power Automate send an email step.":::
 
     ```plaintext
     Message queue: @{body('Parse_JSON')?['MessageQueue']}

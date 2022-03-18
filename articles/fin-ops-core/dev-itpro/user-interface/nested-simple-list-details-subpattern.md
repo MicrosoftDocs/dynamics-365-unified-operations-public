@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 14741
 ms.assetid: f71aa535-8480-4ed8-b0c9-404f3e6285dd
@@ -43,7 +43,7 @@ This article describes a variant of the Simple List and Details (SL+D) pattern t
 
 ## Wireframe
 
-![Wireframe for Simple List and Details pattern](./media/nestedsimplelistanddetails1.png)
+![Wireframe for Simple List and Details pattern.](./media/nestedsimplelistanddetails1.png)
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
@@ -98,7 +98,7 @@ The verification checklist shows the steps for manually verifying that the form 
 
 ## Examples
 Form: **HcmJob** (**TaskTabPage**) 
-[![Nested Simple List and Details sub-pattern example](./media/nestedsimplelistanddetails2.png)](./media/nestedsimplelistanddetails2.png)
+[![Nested Simple List and Details sub-pattern example.](./media/nestedsimplelistanddetails2.png)](./media/nestedsimplelistanddetails2.png)
 
 ## Resources
 ### Typically used by patterns
@@ -120,7 +120,7 @@ This section will have answers to frequently asked questions that are related to
 
 ### AX 2012 content
 
-[![Example](./media/nestedsimplelistanddetails3.png)](./media/nestedsimplelistanddetails3.png)
+[![Example.](./media/nestedsimplelistanddetails3.png)](./media/nestedsimplelistanddetails3.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,37 +1,21 @@
 ---
-# required metadata
-
 title: Note integration
 description: This topic describes the integration of note data in dual-write.
 author: RamaKrishnamoorthy 
 ms.date: 02/22/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: 
 ms.author: ramasri
-ms.dyn365.ops.version: 
-ms.search.validFrom: 2021-02-22
-
+ms.search.validFrom: 2020-01-06
 ---
 
 # Note integration
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 During business processes, Microsoft Dynamics 365 users often gather information about their customers. This information is recorded as activities and notes. This topic describes the integration of note data in dual-write.
 
@@ -55,23 +39,23 @@ To create a note in a customer engagement app and then sync it to a Finance and 
 1. In the customer engagement app, open the account record for a customer.
 2. In the **Timeline** pane, select the plus sign (**+**), and then select **Note** to create a note.
 
-    ![Creating a note in the customer engagement app](media/notes-ce-1.png)
+    ![Creating a note in the customer engagement app.](media/notes-ce-1.png)
 
 3. Enter a title and description, and then select **Add note**.
 
-    ![Entering a title and description](media/notes-ce-2.png)
+    ![Entering a title and description.](media/notes-ce-2.png)
 
     The new note is added to the customer timeline.
 
-    ![New note on the customer timeline](media/notes-ce-3.png)
+    ![New note on the customer timeline.](media/notes-ce-3.png)
 
 4. Sign in to the Finance and Operations app, and open the same customer record. Notice that the **Attachments** button (paperclip symbol) in the upper-right corner indicates that the record has an attachment.
 
-    ![Notification about an attachment](media/notes-ce-4.png)
+    ![Notification about an attachment.](media/notes-ce-4.png)
 
 5. Select the **Attachments** button to open the **Attachments** page. You should find the note that you created in the customer engagement app.
 
-    ![Note from the customer engagement app](media/notes-ce-5.png)
+    ![Note from the customer engagement app.](media/notes-ce-5.png)
 
 Any updates to the note are synced back and forth between the Finance and Operations app and the customer engagement app.
 
@@ -83,21 +67,21 @@ To create a note in a Finance and Operations app and then sync it to a customer 
 
 1. In the Finance and Operations app, on the **Attachments** page, select **New** \> **Note**.
 
-    ![Creating a note in the Finance and Operations app](media/notes-fo-1.png)
+    ![Creating a note in the Finance and Operations app.](media/notes-fo-1.png)
 
 2. Enter a title and a brief set of instructions, and then select **Save**.
 
-    ![Entering a title and instructions](media/notes-fo-2.png)
+    ![Entering a title and instructions.](media/notes-fo-2.png)
 
 3. In the customer engagement app, update the record. You should find the new note on the timeline.
 
-    ![New note on the timeline in the customer engagement app](media/notes-fo-3.png)
+    ![New note on the timeline in the customer engagement app.](media/notes-fo-3.png)
 
 You can classify a note as either internal or external.
 
 - In the Finance and Operations app, on the **Attachments** page, open the note, and then, in the **Restriction** field, select **Internal** or **External**.
 
-    ![Restriction field](media/notes-fo-4.png)
+    ![Restriction field.](media/notes-fo-4.png)
 
 You can also create a URL.
 
@@ -105,13 +89,13 @@ You can also create a URL.
 2. Enter a title and the URL.
 3. In the **Restriction** field, select **Internal** or **External**.
 
-    ![Creating a URL in the Finance and Operations app](media/notes-fo-5.png)
+    ![Creating a URL in the Finance and Operations app.](media/notes-fo-5.png)
 
 4. Select **Save**.
 
     Because customer engagement apps don't have a URL type, the URL is integrated with dual-write as a note.
 
-    ![URL appearing as a note in the customer engagement app](media/notes-ce-6.png)
+    ![URL appearing as a note in the customer engagement app.](media/notes-ce-6.png)
 
 > [!NOTE]
 > File attachments aren't supported.

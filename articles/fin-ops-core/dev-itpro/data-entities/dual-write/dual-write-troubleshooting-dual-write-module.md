@@ -1,37 +1,21 @@
 ---
-# required metadata
-
 title: Troubleshoot dual-write issues in Finance and Operations apps
 description: This topic provides troubleshooting information that can help you fix issues with the Dual-write module in Finance and Operations apps.
 author: RamaKrishnamoorthy 
-ms.date: 03/16/2020
+ms.date: 08/10/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: 
 ms.author: ramasri
-ms.dyn365.ops.version: 
 ms.search.validFrom: 2020-03-16
-
 ---
 
 # Troubleshoot dual-write issues in Finance and Operations apps
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 This topic provides troubleshooting information for dual-write integration between Finance and Operations apps and Dataverse. Specifically, it provides information that can help you fix issues with the **Dual-write** module in Finance and Operations apps.
 
@@ -48,8 +32,7 @@ If you can't open the **Dual-write** page by selecting the **Dual Write** tile i
 
 You might receive the following error message when you try to configure a new table for dual-write. The only user that can create a map is the user who setup the dual-write connection.
 
-*Response status code does not indicate success: 401 (Unauthorized)*
-
+*Response status code does not indicate success: 401 (Unauthorized).*
 
 ## Error when you open the dual-write user interface
 
@@ -65,9 +48,11 @@ To fix the issue, sign in by using an InPrivate window in Microsoft Edge, an inc
 
 You might encounter the following error when linking or creating maps:
 
-*Response status code does not indicate success: 403 (tokenexchange).<br>
-Session ID: \<your session id\><br>
-Root activity ID: \<your root activity id\>*
+```dos
+Response status code does not indicate success: 403 (tokenexchange).
+Session ID: \<your session id\>
+Root activity ID: \<your root activity\> id
+```
 
 This error can occur if you don't have sufficient permissions to link dual-write or create maps. This error can also occur if the Dataverse environment was reset without unlinking dual-write. Any user with system administrator role in both Finance and Operations apps and Dataverse can link the environments. Only the user who setup the dual-write connection can add new table maps. After setup, any user with system administrator role can monitor the status and edit the mappings.
 
@@ -84,16 +69,29 @@ This error occurs when the linked Dataverse environment isn't available.
 
 To fix the issue, create a ticket for the Data Integration team. Attach the network trace so that the Data Integration team can mark the maps as **Not running** in the back end.
 
-## Error while trying to start a table mapping
+## Errors while trying to start a table mapping
 
-You might receive an error like the following when you try to set that state of a mapping to **Running**:
+### Unable to complete initial data sync
+
+You might receive an error like the following when you try to run the initial data sync:
 
 *Unable to complete initial data sync. Error: dual-write failure - plugin registration failed: Unable to build dual-write lookup metadata. Error object reference not set to an instance of an object.*
 
-The fix for this error depends on the cause of the error:
+When you try to set that state of a mapping to **Running**, you might receive this error. The fix depends on the cause of the error:
 
 + If the mapping has dependent mappings, then make sure to enable the dependent mappings of this table mapping.
 + The mapping might be missing source or destination columns. If a column in the Finance and Operations app is missing, then follow the steps in the section [Missing table columns issue on maps](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps). If a column in Dataverse is missing, then click **Refresh tables** button on the mapping so that the columns are automatically populated back into the mapping.
 
+### Version mismatch error and upgrading dual-write solutions
+
+You might receive the following error messages when you try to run the table mappings:
+
++ *Customer groups (msdyn_customergroups) : Dual write failure - Dynamics 365 for Sales solution 'Dynamics365Company' has version mismatch. Version: '2.0.2.10' Required version: '2.0.133'*
++ *Dynamics 365 for Sales solution 'Dynamics365FinanceExtended' has version mismatch. Version: '1.0.0.0' Required version: '2.0.227'*
++ *Dynamics 365 for Sales solution 'Dynamics365FinanceAndOperationsCommon' has version mismatch. Version: '1.0.0.0' Required version: '2.0.133'*
++ *Dynamics 365 for Sales solution 'CurrencyExchangeRates' has version mismatch. Version: '1.0.0.0' Required version: '2.0.133'*
++ *Dynamics 365 for Sales solution 'Dynamics365SupplyChainExtended' has version mismatch. Version: '1.0.0.0' Required version: '2.0.227'*
+
+To fix the issues, update the dual-write solutions in Dataverse. Make sure to upgrade to latest solution that matches the required solution version.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

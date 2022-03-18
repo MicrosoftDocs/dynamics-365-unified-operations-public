@@ -39,7 +39,7 @@ You can move your subscriptions and your Microsoft Dynamics Lifecycle Services (
 
 The process for moving your subscriptions and all related artifacts has four main steps, as shown in the following illustration.
 
-![Process for moving subscriptions](./media/move-subscription-process.png)
+![Process for moving subscriptions.](./media/move-subscription-process.png)
 
 ## Activate subscriptions on the new tenant
 

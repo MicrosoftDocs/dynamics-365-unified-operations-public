@@ -3,7 +3,7 @@
 
 title: Synchronize project list from Supply Chain Management to Field Service
 description: This topic discusses the templates and underlying tasks that are used to synchronize projects from Dynamics 365 Supply Chain Management to Dynamics 365 Field Service.
-author: ChristianRytt
+author: Henrikan
 ms.date: 03/13/2019
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: 
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: 8.1.3 
 ms.search.validFrom: 2018-12-01
 
@@ -33,7 +33,7 @@ ms.search.validFrom: 2018-12-01
 
 This topic discusses the templates and underlying tasks that are used to synchronize projects from Dynamics 365 Supply Chain Management to Dynamics 365 Field Service.
 
-[![Synchronization of business processes between Supply Chain Management and Field Service](./media/FSProjectOW.png)](./media/FSProjectOW.png)
+[![Synchronization of business processes between Supply Chain Management and Field Service.](./media/FSProjectOW.png)](./media/FSProjectOW.png)
 
 ## Templates and tasks
 The following template and underlying tasks are used to run synchronization of projects from Supply Chain Management to Field Service.
@@ -67,7 +67,7 @@ Enable change tracking for Data entity projects.
 
 ### Projects (Supply Chain Management to Field Service): Projects
 
-[![Template mapping in Data integration](./media/FSProject1.png)](./media/FSProject1.png)
+[![Template mapping in Data integration.](./media/FSProject1.png)](./media/FSProject1.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

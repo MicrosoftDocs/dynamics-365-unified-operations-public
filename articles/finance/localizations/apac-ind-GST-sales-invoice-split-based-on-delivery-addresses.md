@@ -3,7 +3,7 @@
 
 title: Sales invoices that are split based on delivery addresses
 description: This topic provides information about sales invoices that are split based on delivery addresses.
-author: EricWang
+author: EricWangChen
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: kfend
+ms.author: wangchen
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.4
 
@@ -81,13 +81,13 @@ ms.dyn365.ops.version: 10.0.4
 2. Select a record that has an invoice amount of **12,100.00**.
 3. Select **Voucher**.
 
-    ![Financial entries for the record that has an invoice amount of 12,100.00](media/Annotation-2019-05-20-163117.png)
+    ![Financial entries for the record that has an invoice amount of 12,100.00.](media/Annotation-2019-05-20-163117.png)
 
 4. Select **Close**.
 5. Select a record that has an invoice amount of **6,050.00**.
 6. Select **Voucher**.
 
-    ![Financial entries for the record that has an invoice amount of 6,050.00](media/Annotation-2019-05-20-163156.png)
+    ![Financial entries for the record that has an invoice amount of 6,050.00.](media/Annotation-2019-05-20-163156.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

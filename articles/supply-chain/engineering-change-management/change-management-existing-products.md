@@ -21,7 +21,7 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: benebotg
 ms.search.validFrom: 2021-05-02
-ms.dyn365.ops.version: Release 10.0.17
+ms.dyn365.ops.version: 10.0.17
 ---
 
 # Enable change management on existing products
@@ -32,12 +32,9 @@ This topic explains how you can enable change management for existing products. 
 
 When you enable change management for an existing product, you can create versions of that product and trace changes that are made to it throughout its life. Therefore, you can track those changes by using change orders. To enable change management, you must convert the relevant products to *engineering items* (also referred to as engineering products). Engineering products are products that are versioned and managed through change management. A wizard is provided to guide you through the conversion process.
 
-## Turn on the feature in your system
+## Turn this feature on or off
 
-To use this capability, you must complete the following tasks:
-
-1. Enable the Engineering change management feature and its configuration key as described in [Engineering change management overview](product-engineering-overview.md).
-1. Turn on the *Enable change management on existing products* feature in feature management. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+The functionality described in this topic requires that both the *Engineering Change Management* and *Enable change management on existing products* features be turned on for your system. For details about how to turn these features on or off, see [Engineering change management overview](product-engineering-overview.md).
 
 ## Restrictions and limitations
 
@@ -52,7 +49,9 @@ Therefore, if you have a distinct product, you can change it only to an engineer
 
 An *engineering product category* must be assigned to every engineering product. You will do this assignment when you run the **Convert to engineering product** wizard. Engineering product categories must exist for all relevant standard products *before* you can convert those products.
 
-The engineering product category provides a basis for creating an engineering product, and it establishes a set of default values and policies. The engineering product category must match the product that you assign it to. For example, the product type and dimension group must match both the product and its engineering product category. For more information, see [Engineering versions and engineering product categories](engineering-versions-product-category.md).
+The engineering product category provides a basis for creating an engineering product, and it establishes a set of default values and policies. Engineering attributes and their default values (as defined for the engineering category) are also applied to the resulting engineering product. You can edit the attribute values and/or add more engineering attributes to the resulting product as needed.
+
+The engineering product category must match the product that you assign it to. For example, the product type and dimension group must match both the product and its engineering product category. For more information, see [Engineering versions and engineering product categories](engineering-versions-product-category.md).
 
 > [!IMPORTANT]
 > The **Convert to engineering product** wizard can convert product only to engineering products where the version isn't tracked in transactions. Therefore, the **Track version in transactions** option must be set to *No* for engineering product categories that you create to convert existing products.

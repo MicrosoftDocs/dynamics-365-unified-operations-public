@@ -2,13 +2,13 @@
 # required metadata
 
 title: Tax isn't calculated
-description: This topic provides troubleshooting information that can help when when tax isn't calculated on tax documents.
+description: This topic provides troubleshooting information that can help when tax isn't calculated on tax documents.
 author: peter-xu
 manager: beya
 ms.date: 04/29/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+
 ms.technology: 
 
 # optional metadata
@@ -40,11 +40,11 @@ For more information about the Tax engine (also referred to as GTE) or component
 1. Open the designer for the current tax configuration. 
 2. If there are no tax document lines, select the **Header** node, and then, on the **Lookups** tab, verify that the condition is correct.
 
-    [![Condition field on the Lookups tab for the Header node on the Tax document page](./media/tax-not-calculated-Picture1.png)](./media/tax-not-calculated-Picture1.png)
+    [![Condition field on the Lookups tab for the Header node on the Tax document page.](./media/tax-not-calculated-Picture1.png)](./media/tax-not-calculated-Picture1.png)
 
 3. If there are no tax component lines, verify that the condition is correct on the **Lookups** tab for the **Lines**, **Tax type**, and **Tax component** nodes.
 
-    [![Condition field on the Lookups tab for the Lines node](./media/tax-not-calculated-Picture2.png)](./media/tax-not-calculated-Picture2.png)
+    [![Condition field on the Lookups tab for the Lines node.](./media/tax-not-calculated-Picture2.png)](./media/tax-not-calculated-Picture2.png)
 
 ## Compare transaction details with other conditions
 
@@ -52,12 +52,12 @@ For more information about the Tax engine (also referred to as GTE) or component
 2. Select **View tax input** to view the transaction header details.
 3. Verify that all the fields are correctly set for tax calculation.
 
-    [![Purchase order header](./media/tax-not-calculated-Picture3.png)](./media/tax-not-calculated-Picture3.png)
+    [![Purchase order header.](./media/tax-not-calculated-Picture3.png)](./media/tax-not-calculated-Picture3.png)
 
 4. Select the **Line** node, and then select **View tax input** to view the transaction line details.
 5. Verify that all the fields are correctly set for tax calculation.
 
-    [![Purchase order lines](./media/tax-not-calculated-Picture4.png)](./media/tax-not-calculated-Picture4.png)
+    [![Purchase order lines.](./media/tax-not-calculated-Picture4.png)](./media/tax-not-calculated-Picture4.png)
 
 6. Compare the transaction fields at **Tax document** \> **View tax input** with the conditions that you found in the previous section.
 7. Verify that all the fields match the corresponding conditions or lookups.
@@ -73,12 +73,12 @@ To prevent a transaction from being posted if GST hasn't been calculated, follow
 1. Go to **Workspaces** \> **Feature management**.
 2. Find the **\[India\] GTE calculation validation** feature, and then select **Enable now**.
 
-    [![Enable now button in the Feature management workspace](./media/tax-not-calculated-Picture5.png)](./media/tax-not-calculated-Picture5.png)
+    [![Enable now button in the Feature management workspace.](./media/tax-not-calculated-Picture5.png)](./media/tax-not-calculated-Picture5.png)
 
 3. Go to **Tax** \> **Setup** \> **Tax configuration** \> **Tax setup**.
 4. Select the company to enable the validation for, and then select **Parameters**.
 
-    [![Parameters button on the Tax setup page](./media/tax-not-calculated-Picture6.png)](./media/tax-not-calculated-Picture6.png)
+    [![Parameters button on the Tax setup page.](./media/tax-not-calculated-Picture6.png)](./media/tax-not-calculated-Picture6.png)
 
 5. In the **Tax setup parameters** dialog box, in the **Validation** section, in the **Empty tax component** and **Zero tax** fields, select one of the following values. Then select **OK** to complete the setup.
 
@@ -86,7 +86,7 @@ To prevent a transaction from being posted if GST hasn't been calculated, follow
     - **Warning** – A warning message is shown, but the posting operation isn't blocked.
     - **Error** – An error message is shown, and the posting operation is blocked.
 
-    [![Validation section in the Tax setup parameters dialog box](./media/tax-not-calculated-Picture7.png)](./media/tax-not-calculated-Picture7.png)
+    [![Validation section in the Tax setup parameters dialog box.](./media/tax-not-calculated-Picture7.png)](./media/tax-not-calculated-Picture7.png)
 
     For this example, both fields are set to **Error**. Therefore, if someone tries to post a transaction, but GST hasn't been calculated, one of the following error messages is shown:
 

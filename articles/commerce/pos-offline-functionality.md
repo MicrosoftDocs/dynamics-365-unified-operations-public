@@ -42,13 +42,13 @@ During a sales transaction, if a data request doesn't succeed within the time-ou
 
 The status header in Modern POS indicates the current connection status, and the **Connection status** window shows the status of the last attempt to sync with the offline database.
 
-[![Connection status](./media/status.png)](./media/status.png)
+[![Connection status.](./media/status.png)](./media/status.png)
 
 ### Creating a button to manually switch between online and offline modes
 
 You can add a button to Modern POS to manually switch between online and offline modes. Create a button for POS operation **917 – Database connection status**. The name of this button is **Disconnect** when the POS is connected to the Commerce Scale Unit and **Connect** when it is disconnected. You can use this button to view the connection, and to disconnect from the Commerce Scale Unit or connect to it.
 
-[![Disconnect button in Retail Modern POS](./media/details-1024x537.png)](./media/details.png)
+[![Disconnect button in Retail Modern POS.](./media/details-1024x537.png)](./media/details.png)
 
 ## Setup
 
@@ -58,7 +58,7 @@ To enable offline support for a POS device (register), set the **Support offline
 
 The Commerce scheduler is used to send master data to the offline database. By default, when a distribution schedule is run, data changes are sent to both the channel database and the offline database. Modern POS includes the async sync library, which downloads any available data packages and inserts them into the offline database. If any transactions are created offline, the POS uploads them to the Commerce Scale Unit, so that they can be inserted into the channel database. Offline data synchronization can occur only if Modern POS is running.
 
-[![Offline synchronization](./media/offline-sync-1024x521.png)](./media/offline-sync.png)
+[![Offline synchronization.](./media/offline-sync-1024x521.png)](./media/offline-sync.png)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -3,7 +3,7 @@
 
 title: Extend tax engine configurations
 description: This topic provides information about extending tax engine configurations.
-author: yijialuan
+author: kailiang
 ms.date: 05/24/2021
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.technology:
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: riluan
+ms.author: kailiang
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 
@@ -55,7 +55,7 @@ Before you can complete the example scenarios, complete the following tasks, [Ta
 3. Create a new configuration provider and close the page.
 4. Click **...** > **Set active** on the configuration provider that you created.
 
-![Active solution](media/gte-extension-active-solution.png)
+![Active solution.](media/gte-extension-active-solution.png)
 
 ## Scenario 1: Extend the Tax engine configuration for UTGST
 
@@ -112,7 +112,7 @@ Complete the following steps to add the **IntraStateInUnionTerritory** flag to *
     -   **Name:** IntraStateInUnionTerritory
     -   **Item type:** Enum
 
-    ![Create a new node](media/gte-create-node-tax-document.png)
+    ![Create a new node.](media/gte-create-node-tax-document.png)
 
  4. Click **Add**.
  5. On the **Node** FastTab, click **Switch item reference**.
@@ -120,7 +120,7 @@ Complete the following steps to add the **IntraStateInUnionTerritory** flag to *
  7. Save the configuration, and close the designer.
  8. With **Taxable Document (India Contoso)** still selected in the tree, click **Change status** > **Complete** in the **Versions** list.
 
-    ![Update the configuration status](media/gte-change-configuration-status.png)
+    ![Update the configuration status.](media/gte-change-configuration-status.png)
 
  9. Enter a description such as **UTGST**, and then click **OK**.
  10. If there are any errors, open the designer, click **Validate**, and fix the errors.
@@ -140,7 +140,7 @@ Before you use this method, be sure to read about [Tax engine integration](tax-e
     1. Go to **Organization administration** > **Global address book** > **Addresses** > **Address setup**. 
     2. Right-click the **Union territory** column, and then click **Form information** > **Form Name: LogisticsAddressSetup**. For this example, notice that the system name for the column is **LogisticsAddressState.UnionTerritory_IN**.
 
-    ![GTE extension of union territory](media/gte-extension-union-territory-form-info.png)
+    ![GTE extension of union territory.](media/gte-extension-union-territory-form-info.png)
 
 2. Add a tax engine model field for intrastate transactions in a union territory.
 
@@ -192,23 +192,23 @@ Before you use this method, be sure to read about [Tax engine integration](tax-e
 3. Complete the data binding in the Designer.
    1. Navigate to the **Taxable Document (India Contoso)** configuration, and then click **Designer**.
 
-      ![Tax configuration designer](media/gte-extension-tax-configuration-designer.png)
+      ![Tax configuration designer.](media/gte-extension-tax-configuration-designer.png)
 
    2. Click **Map model to datasource**
    3. You will find there are lots of data mapping for each taxable document and reference model, like purchase order or sales order. You need to do your data mapping per your business requirement. For example:
       1. Select a sales order document line.
       2. Click **Designer**.
 
-         ![Data mapping](media/gte-extension-data-mapping.png)
+         ![Data mapping.](media/gte-extension-data-mapping.png)
 
    4. After completing steps 1-5, you should be able to find the field **IntraStateInUnionTerritory** in the data source under **Sales order** > **Header** > **Lines**. You can bind this field to the **IntraStateInUnionTerritory:Enumeration** value in the taxable document.
 
-      ![Data binding](media/gte-extension-data-binding.png)
+      ![Data binding.](media/gte-extension-data-binding.png)
 
    5. Save the configuration, and close the designer.
    6. In the **Configurations** workspace, click **Change status** > **Complete**.
 
-      ![Chang configuration status](media/gte-change-configuration-status.png)
+      ![Chang configuration status.](media/gte-change-configuration-status.png)
 
    7. Enter a description such as **UTGST**, and then click **OK**.
    8. If there are any errors, open the designer, click **Validate**, and fix the errors.
@@ -217,21 +217,21 @@ Before you use this method, be sure to read about [Tax engine integration](tax-e
 Before you use this method, be sure that you are familiar with ER and the table relation, class, and method for purchase orders. 
 1. Open the model mapping designer for a purchase order, add table records **PurchLine** as a root data source.
 
-   ![Purchline extension](media/gte-extension-purchline.png)
+   ![Purchline extension.](media/gte-extension-purchline.png)
 
 2. Add Data model\Enumeration **YesNo Global** and Dynamics 365 for Operations\Enumeration **NoYes**.
 
-   ![Add enumerations](media/gte-extension-add-enumerations.png)
+   ![Add enumerations.](media/gte-extension-add-enumerations.png)
 
 3. In the **Data Source** tree, add a calculated field **$PurchLine** under **purchase order** > **lines**  to build the connection between the existing taxable document **purchase order** and the table records **PurchLine**. Click **Edit formula**.
 
-   ![Edit formula](media/gte-extension-edit-formula.png)
+   ![Edit formula.](media/gte-extension-edit-formula.png)
 
 4. Input the formula that describe the relationship between **PurchLine** and **purchase order**: 
 
    ```FIRST(FILTER(PurchLine, PurchLine.RecId='purchase order'.Header.Lines.RecId))```
 
-   ![Add formula](media/gte-extension-add-formula.png)
+   ![Add formula.](media/gte-extension-add-formula.png)
 
 5. Click **Save** and close the page.
 6. Add the calculated field **\$IsIntraStateInUnionTerritory** in **$PurchLine**, and use the following formula. 
@@ -245,7 +245,7 @@ Before you use this method, be sure that you are familiar with ER and the table 
    2. In the **Data Model**, select **IntraStateInUnionTerritory**.
    3. Click **Edit**.
 
-      ![Edit data mapping](media/gte-extension-data-binding2.png)
+      ![Edit data mapping.](media/gte-extension-data-binding2.png)
 
    4. Input the following formula to convert the Boolean value to the enumeration value, which is used by the extended taxable document field **IntraStateInUnionTerritory**.
 
@@ -258,7 +258,7 @@ Before you use this method, be sure that you are familiar with ER and the table 
 8. Save the configuration, and close the designer.
 9. In the **Configurations** workspace, click **Change status** > **Complete**.
 
-	![Change configuration status](media/gte-change-configuration-status.png)
+	![Change configuration status.](media/gte-change-configuration-status.png)
 
 10. Enter a description such as **UTGST**, and then click **OK**.
 11. If there are any errors, open the designer, click **Validate**, and fix the errors.
@@ -268,7 +268,7 @@ Before you use this method, be sure that you are familiar with ER and the table 
 1. Go to the **Tax (India GST Contoso)** configuration and then click **Designer**.
 2. Click **Tax document**, and then select **Taxable Document (India Contoso)** as the data model, and select **1** as the data model version.
 
-	![Tax document](media/gte-tax-document-designer.png)
+	![Tax document.](media/gte-tax-document-designer.png)
 
 3. Click **Save** to save the configuration.
 
@@ -293,7 +293,7 @@ Before you use this method, be sure that you are familiar with ER and the table 
    2. Click **Add**, and then select **Tax measure**.
    3. All the logic, such as properties, lookups, formulas, postings, and accounting, except applicability of UTGST, is the same as it is for SGST. Therefore, select all the tax measures that SGST uses in the **Name** list and then click **OK**. 
 
-      ![Listed measures](media/gte-utgst-list.png)
+      ![Listed measures.](media/gte-utgst-list.png)
 
 4. Configure rate/percentage lookups.
 	1. Expand the **UTGST** tax component node.
@@ -310,7 +310,7 @@ Before you use this method, be sure that you are familiar with ER and the table 
    2. Click **Edit** (the pencil icon) next to **Condition**.
    3. Enter the same condition that SGST uses.
 
-      ![SGST condition](media/gte-sgst-condition.png)
+      ![SGST condition.](media/gte-sgst-condition.png)
 
    4. Save the tax document.
 
@@ -361,7 +361,7 @@ Before you use this method, be sure that you are familiar with ER and the table 
 1. Go to **Tax document** > **Header** > **Lines**. Click the **Formulas** tab.
 2. Change any formulas that contain the **Base Amount**, **Line tax amount**, and **Tax amount included in price** measures, so that the formulas reflect UTGST. For example, change the **Tax amount inclusive** formula as shown here.
 
-   ![Tax amount inclusive formula](media/gte-tax-amount-inclusive.png)
+   ![Tax amount inclusive formula.](media/gte-tax-amount-inclusive.png)
 	
 3. Save the tax document.
 4. Close the designer.
@@ -377,7 +377,7 @@ Before you use this method, be sure that you are familiar with ER and the table 
 1. Go to **Tax** > **Setup** > **Tax configuration** > **Tax setup**.
 2. Create a new record and define tax setup.
 
-    ![New tax setup](media/gte-extension-new-tax-setup.png)
+    ![New tax setup.](media/gte-extension-new-tax-setup.png)
 
 3. Click **Configurations**.
 
@@ -387,18 +387,18 @@ Before you use this method, be sure that you are familiar with ER and the table 
 	> [!NOTE]
 	> The configuration that is added to tax gets listed on the **Available configuration** tab
 	
-    ![New configuration](media/gte-extension-new-configuration2.png)
+    ![New configuration.](media/gte-extension-new-configuration2.png)
 
 6. Select the required configuration, such as **Tax (India GST)**. Click **Save**.
 7. Click **Synchronize**.
 
-    ![Synchronize configuration](media/gte-extension-synchronize-configuration.png)
+    ![Synchronize configuration.](media/gte-extension-synchronize-configuration.png)
 
 8. Click **Activate**.
 
-    ![Activate configuration](media/gte-extension-activate-configuration.png)
+    ![Activate configuration.](media/gte-extension-activate-configuration.png)
 
-    ![Active configuration](media/gte-extension-active-configuration.png)
+    ![Active configuration.](media/gte-extension-active-configuration.png)
 
 9. Click **Close**.
 10. Click the **Companies** FastTab.
@@ -406,7 +406,7 @@ Before you use this method, be sure that you are familiar with ER and the table 
 12. Click **Save**.
 13. Click **Activate** to activate the configuration for the company.
 
-    ![Activate configuration for the company](media/gte-extension-activate-configuration-to-company.png)
+    ![Activate configuration for the company.](media/gte-extension-activate-configuration-to-company.png)
 
 14. Click **Setup** to set up data for the new version.
 
@@ -461,7 +461,7 @@ After you update the status to be **Complete**, the configuration is ready for d
 	4. Select a table.
 	5. Click **OK**.
 	
-    ![Add table records](media/gte-extension-add-table-records.png)
+    ![Add table records.](media/gte-extension-add-table-records.png)
 
 7. Bind the table.
 
@@ -469,7 +469,7 @@ After you update the status to be **Complete**, the configuration is ready for d
 	2. In the **Date model** tree, select **Countries of Origin: Record list**.
 	3. Click **Bind**.
 	
-    ![Bind table](media/gte-extension-bind-table.png)
+    ![Bind table.](media/gte-extension-bind-table.png)
 
 8. Bind the field.
 
@@ -477,7 +477,7 @@ After you update the status to be **Complete**, the configuration is ready for d
 	2. In the **Date model** tree, select **Country of Origin: String**.
 	3. Click **Bind**.
 
-    ![Bind field](media/gte-extension-bind-field.png)
+    ![Bind field.](media/gte-extension-bind-field.png)
 
 9. Click **Save**.
 
@@ -509,15 +509,15 @@ After the status is updated to **Complete**, the configuration is ready for depl
 1. Go to **Extension configuration**, and then select **Rebase**. 
 2. In the **Rebase** dialog box, in the **Target version** field, change the target version to latest Microsoft version.
 
-	[![Rebase step 1](./media/extend-tax-engine-configurations-rebase1.png)](./media/extend-tax-engine-configurations-rebase1.png)
+	[![Rebase step 1.](./media/extend-tax-engine-configurations-rebase1.png)](./media/extend-tax-engine-configurations-rebase1.png)
 
 	If there is a conflict, you will receive a warning message.
 	
-	[![Rebase step 2](./media/extend-tax-engine-configurations-rebase2.png)](./media/extend-tax-engine-configurations-rebase2.png)
+	[![Rebase step 2.](./media/extend-tax-engine-configurations-rebase2.png)](./media/extend-tax-engine-configurations-rebase2.png)
 
 3. To resolve the conflict, select **Designer** to open the rebased extension configuration.
 
-	[![Rebase step 3](./media/extend-tax-engine-configurations-rebase3.png)](./media/extend-tax-engine-configurations-rebase3.png)
+	[![Rebase step 3.](./media/extend-tax-engine-configurations-rebase3.png)](./media/extend-tax-engine-configurations-rebase3.png)
 
 4. Select one of the following three ways to resolve the conflict:
 
@@ -527,6 +527,6 @@ After the status is updated to **Complete**, the configuration is ready for depl
 
 5. After you resolve the conflict, the **Resolved** check box is marked.
 
-	[![rebase step 4](./media/extend-tax-engine-configurations-rebase4.png)](./media/extend-tax-engine-configurations-rebase4.png)
+	[![rebase step 4.](./media/extend-tax-engine-configurations-rebase4.png)](./media/extend-tax-engine-configurations-rebase4.png)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

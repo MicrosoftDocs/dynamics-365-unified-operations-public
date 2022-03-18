@@ -17,7 +17,7 @@ audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: 220314
+ms.custom: ["220314", "intro-internal"]
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -147,7 +147,7 @@ To add the standard ER configurations to your current instance of Microsoft Dyna
 5. On the **Versions** FastTab, select version **1.1** of the selected ER format configuration.
 6. Select **Import** to download the selected version from the Global repository to the current Finance instance.
 
-![Configuration repository page](./media/er-quick-start2-import-solution1.png)
+![Configuration repository page.](./media/er-quick-start2-import-solution1.png)
 
 > [!TIP]
 > If you have trouble accessing the [Global repository](er-download-configurations-global-repo.md), you can [download configurations](download-electronic-reporting-configuration-lcs.md) from Microsoft Dynamics Lifecycle Services (LCS) instead.
@@ -159,11 +159,11 @@ To add the standard ER configurations to your current instance of Microsoft Dyna
 3. On the **Configurations** page, in the configuration tree in the left pane, expand **Payment model**.
 4. Notice that, in addition to the selected **BACS (UK)** ER format, other required ER configurations were imported. Make sure that the following ER configurations are available in the configuration tree:
 
-    - **Payment model** – This configuration contains the [data model](general-electronic-reporting.md#data-model-and-model-mapping-components) ER component that represents the data structure of the payment business domain.
-    - **Payment model mapping 1611** – This configuration contains the [model mapping](general-electronic-reporting.md#data-model-and-model-mapping-components) ER component that describes how the data model is filled in with application data at runtime.
-    - **BACS (UK)** – This configuration contains the [format](general-electronic-reporting.md#FormatComponentOutbound) and format mapping ER components. The format component specifies the report layout. The format mapping component contains the model data source and specifies how the report layout is filled in by using this data source at runtime.
+    - **Payment model** – This configuration contains the data model ER component that represents the data structure of the payment business domain.
+    - **Payment model mapping 1611** – This configuration contains the model mapping ER component that describes how the data model is filled in with application data at runtime.
+    - **BACS (UK)** – This configuration contains the format and format mapping ER components. The format component specifies the report layout. The format mapping component contains the model data source and specifies how the report layout is filled in by using this data source at runtime.
 
-![Configurations page](./media/er-quick-start2-imported-solution1.png)
+![Configurations page with specified ER configurations available in the tree.](./media/er-quick-start2-imported-solution1.png)
 
 ## <a id="PrepareVendorPayment"></a>Prepare a vendor payment for processing
 
@@ -182,7 +182,7 @@ You must add bank information for a vendor account that will be referred to late
     5. In the **IBAN** field, enter **GB33BUKB20201555555555**.
     6. In the **Routing number** field, keep the default value, <a id="DefineRoutingNumber"></a>**123456**.
 
-    ![Vendor bank accounts page](./media/er-quick-start2-bank-account.png)
+    ![Vendor bank accounts page.](./media/er-quick-start2-bank-account.png)
 
 4. Select **Save**.
 5. Close the page.
@@ -190,7 +190,7 @@ You must add bank information for a vendor account that will be referred to late
 7. On the vendor details page, select **Edit** to make the page editable, if required.
 8. On the **Payment** FastTab, in the **Bank account** field, select **GBP OPER**.
 
-    ![Vendor details page](./media/er-quick-start2-bank-account-reference.png)
+    ![Vendor details page.](./media/er-quick-start2-bank-account-reference.png)
 
 9. Select **Save**.
 10. Close the page.
@@ -207,11 +207,11 @@ You must enter a new vendor payment by using a [payment proposal](../../../finan
 6. In the **Vendor payment proposal** dialog box, configure conditions to filter for records for the **GB_SI_000001** vendor account only, and then select **OK**.
 7. Select the line for the **00000007_Inv** invoice, and then select **Create payment**.
 
-    ![Vendor payment proposal dialog box](./media/er-quick-start2-payment-proposal.png)
+    ![Vendor payment proposal dialog box.](./media/er-quick-start2-payment-proposal.png)
 
 8. Verify that the payment that is entered is configured to use the **Electronic** method of payment.
 
-    ![Vendor payments page](./media/er-quick-start2-payment-line.png)
+    ![Vendor payments page.](./media/er-quick-start2-payment-line.png)
 
 ## <a id="ProcessVendorPayment1"></a>Process a vendor payment by using the standard ER format
 
@@ -225,7 +225,7 @@ You must configure the electronic method of payment so that it uses the imported
 4. On the **File formats** FastTab, set the **General electronic Export format** option to **Yes**.
 5. In the **Export format configuration** field, select the **BACS (UK)** format configuration.
 
-    ![Methods of payment - vendors page](./media/er-quick-start2-method-of-payment1.png)
+    ![Methods of payment - vendors page to set up electronic payment method to process vendor payments using a standard format.](./media/er-quick-start2-method-of-payment1.png)
 
 6. Select **Save**.
 
@@ -242,7 +242,7 @@ You must configure the electronic method of payment so that it uses the imported
 5. Select **OK**.
 6. In the **Electronic report parameters** dialog box, set the **Print control report** option to **Yes**, and then select **OK**.
 
-    ![Electronic report parameters dialog page](./media/er-quick-start2-payment-dialog1.png)
+    ![Electronic report parameters dialog page.](./media/er-quick-start2-payment-dialog1.png)
 
     > [!NOTE]
     > In addition to the payment file, you can now generate the control report.
@@ -254,7 +254,7 @@ You must configure the electronic method of payment so that it uses the imported
 
         Notice that, in accordance with the [structure](#PositionRoutingNumber) of the provided ER format, the payment line in the generated file starts with the routing number that was [defined](#DefineRoutingNumber) for the configured bank account.
 
-        ![Payment file in TXT format](./media/er-quick-start2-payment-file1.png)
+        ![Payment file in TXT format.](./media/er-quick-start2-payment-file1.png)
 
 ## <a id="CustomizeProvidedFormat"></a>Customize the standard ER format
 
@@ -270,13 +270,13 @@ In this case, as the representative of Litware, Inc., you must create (derive) a
 4. In the **New** field group, select the **Derive from Name: BACS (UK), Microsoft** option.
 5. In the **Name** field, enter **BACS (UK custom)**.
 
-    ![Create configuration drop-down dialog box](./media/er-quick-start2-add-derived-format.png)
+    ![Create configuration drop-down dialog box.](./media/er-quick-start2-add-derived-format.png)
 
 6. Select **Create configuration**.
 
 Version 1.1.1 of the **BACS (UK custom)** ER format configuration is created. This version has a [status](general-electronic-reporting.md#component-versioning) of **Draft** and can be edited. The current content of your custom ER format matches the content of the format that is provided by Microsoft.
 
-![Configurations page](./media/er-quick-start2-derived-format-configuration1.png)
+![Configurations page with Version 1.1.1 of the BACS (UK custom) ER format configuration.](./media/er-quick-start2-derived-format-configuration1.png)
 
 ### <a id="ConfigureDerivedFormat"></a>Edit a custom format
 
@@ -296,7 +296,7 @@ You must configure your custom format so that it meets bank-specific requirement
 
 7. Select the **transaction** element.
 
-    ![Transaction element in the ER Operations designer](./media/er-quick-start2-derived-format0.png)
+    ![Transaction element in the ER Operations designer.](./media/er-quick-start2-derived-format0.png)
 
     > [!NOTE]
     > The provided report is configured so that <a id="PositionRoutingNumber"></a>every payment line starts with the bank routing number. The **vendBankRouteNum** format element is used for this purpose. 
@@ -314,13 +314,13 @@ You must configure your custom format so that it meets bank-specific requirement
 9. In the format structure tree, select **vendBankSWIFT**.
 10. Select **Move up** to move the selected format element up one level. Repeat this step until the **vendBankSWIFT** element is the <a id="PositionSWIFTCode"></a>first element under the parent **transaction** element.
 
-    ![VendBankSWIFT as the first element under transaction in the ER Operations designer](./media/er-quick-start2-derived-format1.png)
+    ![VendBankSWIFT as the first element under transaction in the ER Operations designer.](./media/er-quick-start2-derived-format1.png)
 
 11. While the **vendBankSWIFT** is still selected in the format structure tree, select the **Mapping** tab, and then expand the **model** data source.
 12. Expand **model.Payment** \> **model.Payment.CreditorAgent**, and select the **model.Payment.CreditorAgent.BICFI** data source field. This data source field exposes the SWIFT code of a vendor bank that is assigned the agent role in the processed vendor payment.
 13. Select **Bind**. The **vendBankSWIFT** format element is now bound with the **model.Payment.CreditorAgent.BICFI** data source field, so that SWIFT codes will be entered in generated payment files.
 
-    ![vendBankSWIFT format element bound with the model.Payment.CreditorAgent.BICFI data source field in the ER Operations designer](./media/er-quick-start2-derived-format2.png)
+    ![vendBankSWIFT format element bound with the model.Payment.CreditorAgent.BICFI data source field in the ER Operations designer.](./media/er-quick-start2-derived-format2.png)
 
 14. Select **Save**.
 15. Close the designer page.
@@ -338,7 +338,7 @@ To use the draft version of an ER format, you must explicitly mark the ER format
 5. In the configuration tree in the left pane, select **BACS (UK custom)**.
 6. Set the **Run Draft** option to **Yes**.
 
-    ![Run Draft option on the Configurations page](./media/er-quick-start2-derived-format-configuration2.png)
+    ![Run Draft option on the Configurations page.](./media/er-quick-start2-derived-format-configuration2.png)
 
 ## <a id="ProcessVendorPayment2"></a>Process a vendor payment by using the custom ER format
 
@@ -352,7 +352,7 @@ You must configure the electronic method of payment so that your custom ER forma
 4. On the **File format** FastTab, set the **General electronic export format** option to **Yes**.
 5. In the **Export format configuration** field, select the **BACS (UK custom)** format configuration.
 
-    ![Methods of payment - vendors page](./media/er-quick-start2-method-of-payment2.png)
+    ![Methods of payment - vendors page to set up electronic payment method to process vendor payments using a custom format.](./media/er-quick-start2-method-of-payment2.png)
 
 6. Select **Save**.
 
@@ -381,7 +381,7 @@ You must configure the electronic method of payment so that your custom ER forma
 
         Notice that, in accordance with the structure of your custom ER format, the payment line in the generated file now [starts](#PositionSWIFTCode) with the SWIFT code that was [entered](#DefineSWIFTCode) for the bank account of the vendor whose payment has been processed.
 
-        ![Payment file in TXT format](./media/er-quick-start2-payment-file2.png)
+        ![Payment file in TXT format used to process the vendor payment.](./media/er-quick-start2-payment-file2.png)
 
 ## <a id="ImportERSolution2"></a>Import new versions of the standard ER format configurations
 
@@ -398,7 +398,7 @@ To add new versions of the ER configurations to the current Finance instance, yo
 5. On the **Versions** FastTab, select version **3.3** of the selected ER format configuration.
 6. Select **Import** to download the selected version from the Global repository to the current Finance instance.
 
-![Configuration repository page](./media/er-quick-start2-import-solution2.png)
+![Configuration repository page, Versions FastTab, Import button.](./media/er-quick-start2-import-solution2.png)
 
 > [!TIP]
 > If you have trouble accessing the [Global repository](er-download-configurations-global-repo.md), you can [download configurations](download-electronic-reporting-configuration-lcs.md) from LCS instead.
@@ -413,7 +413,7 @@ To add new versions of the ER configurations to the current Finance instance, yo
 6. On the **Format designer** page, expand the **BACSReportsFolder** format element.
 7.  Notice that version 3.3 contains the **PaymentAdviceReport** format element that is used to generate a payment advice report when a vendor payment is processed.
 
-    ![PaymentAdviceReport format element in the ER Operations designer](./media/er-quick-start2-imported-solution2.png)
+    ![PaymentAdviceReport format element in the ER Operations designer.](./media/er-quick-start2-imported-solution2.png)
 
 8. Close the designer page.
 
@@ -439,14 +439,14 @@ To start to use the new functionality of version 3.3 of the **BACS (UK)** format
 3. On the **Versions** FastTab, select version **1.1.2**, and then select **Rebase**.
 4. In the **Rebase** dialog box, in the **Target version** field, select version **3.3** of the base configuration to apply it as the new base and use it to update the configuration.
 
-    ![Rebase dialog box](./media/er-quick-start2-rebase1.png)
+    ![Rebase dialog box.](./media/er-quick-start2-rebase1.png)
 
 5. Select **OK**.
 6. Notice that the number of the draft version has been changed from **1.1.2** to **3.3.2** to reflect the change in the base version.
 
     When the custom version and a new base version are merged, some conflicts might be discovered because of format changes that can't be merged automatically.
 
-    ![Rebased configuration with conflicts on the Configurations page](./media/er-quick-start2-rebase2.png)
+    ![Rebased configuration with conflicts on the Configurations page.](./media/er-quick-start2-rebase2.png)
 
     If conflicts are discovered, they must be manually resolved in the format designer.
 
@@ -454,13 +454,13 @@ To start to use the new functionality of version 3.3 of the **BACS (UK)** format
 8. Select **Designer**.
 9. On the **Format designer** page, on the **Details** FastTab, select a rebase conflict record, and then select **Apply base value**.
 
-    ![Rebase conflict record in the ER Operations designer](./media/er-quick-start2-rebase3.png)
+    ![Rebase conflict record in the ER Operations designer.](./media/er-quick-start2-rebase3.png)
 
 10. Select **Save**.
 
     The rebase conflict record should no longer appear on the **Details** FastTab.
 
-    ![Conflict resolved in the ER Operations designer](./media/er-quick-start2-rebase4.png)
+    ![Conflict resolved in the ER Operations designer.](./media/er-quick-start2-rebase4.png)
 
     > [!NOTE]
     > You resolved the conflict by confirming that version 3 of the base model must be used in this ER format.
@@ -468,7 +468,7 @@ To start to use the new functionality of version 3.3 of the **BACS (UK)** format
 11. Expand **BACSReportsFolder** \> **file** \> **transactions** \> **transaction**.
 12. On the **Mapping** tab, notice that version 3.3.2 of your custom ER format contains both your customization (the **vendBankSWIFT** format element and its binding) and the new functionality of version 3.3 of the base ER format that was provided by Microsoft (the **PaymentAdviceReport** format element together with its nested elements and configured bindings). In just a few mouse clicks, you adopted the modifications of a new base version by merging them with your customization.
 
-    ![Merged format in the ER Operations designer](./media/er-quick-start2-rebase5.png)
+    ![Merged format in the ER Operations designer.](./media/er-quick-start2-rebase5.png)
 
 13. Close the designer page.
 
@@ -493,7 +493,7 @@ To start to use the new functionality of version 3.3 of the **BACS (UK)** format
     - Set the **Print control report** option to **Yes**.
     - Set the **Print payment advice** option to **Yes**.
 
-    ![Electronic report parameters dialog box](./media/er-quick-start2-payment-dialog2.png)
+    ![Electronic report parameters dialog box.](./media/er-quick-start2-payment-dialog2.png)
 
     > [!NOTE]
     > In addition to the payment file, you can now generate both the control report and the payment advice report.
@@ -504,13 +504,13 @@ To start to use the new functionality of version 3.3 of the **BACS (UK)** format
     - The control report in Excel format
     - The payment advice report in Excel format
 
-        ![Payment advice report in Excel format](./media/er-quick-start2-payment-advice-report.png)
+        ![Payment advice report in Excel format.](./media/er-quick-start2-payment-advice-report.png)
 
     - The payment file in TXT format
 
         Notice that the payment line in the generated file starts  with the SWIFT code that was entered for the bank account of a vendor whose payment has been processed.
 
-        ![Payment file in TXT format](./media/er-quick-start2-payment-file3.png)
+        ![Payment file in TXT format used to process the vendor payment using a rebased ER format.](./media/er-quick-start2-payment-file3.png)
 
 ## <a id="References"></a>Additional resources
 

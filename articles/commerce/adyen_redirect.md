@@ -3,7 +3,7 @@
 
 title: Strong Customer Authentication (SCA) using the Adyen connector
 description: This topic describes Strong Customer Authentication (SCA) in the storefront checkout.
-author: rubendel
+author: BrianShook
 ms.date: 05/21/2020
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
 
@@ -52,7 +52,7 @@ Support for SCA is provided by the out-of-box [Dynamics 365 Payment Connector fo
 
 ## Setup
 
-Setup details will vary by payment connector. For setup details related to the out-of-box Adyen connector, see the [e-Commerce section](./dev-itpro/adyen-connector.md?tabs=8-1-3#e-commerce) of the Adyen connector topic. 
+Setup details will vary by payment connector. For setup details related to the out-of-box Adyen connector, see [Configure additional information for the Adyen connector](./dev-itpro/adyen-connector-setup.md#configure-additional-information-for-the-connector). 
 
 ## Functional experience
 

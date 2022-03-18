@@ -5,7 +5,7 @@ author: mugunthanm
 ms.date: 04/13/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
@@ -16,60 +16,54 @@ ms.dyn365.ops.version: AX 10.0.18
 
 [!include [banner](../../../includes/banner.md)]
 
-To create the extension installer for a Modern POS extension, follow these steps:
+To create the extension installer for a Modern POS extension, follow these steps.
 
-1. Open Visual studio 2017, create a new console application (.NET Core), and name it **ModernPos.Installer**.
-
-2. Edit the **.proj** file and change the **Target Framework** to **.NET Framework 4.6.1**. The Xml is shown here:
+1. In Microsoft Visual Studio 2017, create a new console application (.NET Core), and name it **ModernPos.Installer**.
+2. Edit the .proj file, and change the target framework to the .NET Framework version 4.6.1, as shown in the following XML.
 
     ```Javascript
     <Project Sdk="Microsoft.NET.Sdk">
-      <PropertyGroup>
-        <OutputType>Exe</OutputType>
-        <TargetFramework>net461</TargetFramework>
-      </PropertyGroup>
+        <PropertyGroup>
+            <OutputType>Exe</OutputType>
+            <TargetFramework>net461</TargetFramework>
+        </PropertyGroup>
     </Project>
     ```
 
-3. Delete the generated **Program.cs** file.
+3. Delete the **Program.cs** file that was generated.
+4. Add a reference to the **Microsoft.Dynamics.Commerce.Sdk.Installers.ModernPos** NuGet Package:
 
-4. Add a reference to the **Microsoft.Dynamics.Commerce.Sdk.Installers.ModernPos** NuGet Package.
+    1. In Solution Explorer, select and hold (or right-click) the project, and then select **Manage NuGet packages**.
+    2. In the **NuGet Package Manager** window, on the **Browse** tab, search for **Microsoft.Dynamics.Commerce.Sdk.Installers.ModernPos**.
+    3. Select the package, and then select **Install**.
+    4. Select the version that matches your go-live version.
 
-    1. Right-click the project in Solution Explorer and select **Manage NuGet packages**.
-    2. Select the **Browse** tab in the NuGet Package Manager window.
-    3. Search for **Microsoft.Dynamics.Commerce.Sdk.Installers.ModernPos**.
-    4. Select the package and then select **Install**.
-    5. select the version that matches your go-live version.
+5. Add a reference to the **Modern POS** project that you created earlier:
 
-5. Add a reference from your Modern POS project to the **ModernPos.Installer** project created above.
+    1. In Solution Explorer, select and hold (or right-click) the project, and then select **Add &gt; Reference**.
+    2. In Reference Manager, on the **Projects** tab on the left, select the **Modern POS** project that you created earlier.
 
-    1. Right-click the Modern POS project in Solution Explorer and select **Add -&gt; Reference**.
-    2. Select the **Projects** tab on the left side of the Reference Manager.
-    3. Select the **ModernPos.Installer** project created above.
+6. **For offline channel database extension script projects only:** Add a reference from the Modern POS project to the channel database project:
 
-6. For \[Offline channel database extension script projects only\]: add a reference from the Modern POS project to the Channel database project.
-
-    1. Right-click the Modern POS project in Solution Explorer and select **Add -&gt; Reference**.
-    2. Select the **Projects** tab on the left side of the Reference Manager.
-    3. Select the Channel database extension project created above.
+    1. In Solution Explorer, select and hold (or right-click) the Modern POS project, and then select **Add &gt; Reference**.
+    2. In Reference Manager, on the **Projects** tab on the left, select the channel database extension project that you created earlier.
 
 7. Compile and build the project. The output of this project contains the Modern POS extension installer.
-
-8. To manually install the extension, open PowerShell in administrator mode and navigate to the extension installer folder. Run the install command to install the extensions.
+8. To manually install the extension, open Windows PowerShell in administrator mode, go to the extension installer folder, and run the **install** command.
 
     ```powershell
     PS C:\ModernPos.Installer\bin\Debug\net461> .\ModernPos.Installer.exe install
     ```
 
-    To uninstall the extension:
+    To uninstall the extension, run the **uninstall** command.
 
     ```powershell
     PS C:\ModernPos.Installer\bin\Debug\net461> .\ModernPos.Installer.exe uninstall
     ```
 
     > [!NOTE]
-    > Before installing the extension installer, install the sealed Modern POS first.
+    > Before you install the extension installer, install the sealed Modern POS.
 
-9. After installing the extension, close Modern POS if it's running. Launch Modern POS from the **Install/Update Modern POS** desktop shortcut icon to load the extension. The extension .appx file will be installed after clicking the desktop icon. The previous steps copy the .appx and files to the correct location.
+9. After you've finished installing the extension, close Modern POS if it's running. Then, to load the extension, open Modern POS by using the **Install/Update Modern POS** icon on the desktop. The extension's .appx file will be installed. The previous steps copy the .appx file and other files to the correct location.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

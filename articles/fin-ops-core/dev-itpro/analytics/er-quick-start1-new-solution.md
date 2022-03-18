@@ -17,7 +17,7 @@ audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: 220314
+ms.custom: ["220314", "intro-internal"]
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -128,15 +128,15 @@ In this example, you will create a new ER solution for the [Questionnaire](../..
 
 1. To run the existing report, go to **Questionnaire** \> **Design** \> **Questionnaires report**.
 
-    ![Selecting the Questionnaires report menu item in the Questionnaire module to run the existing SSRS report](./media/er-quick-start1-application-menu-origin.png)
+    ![Selecting the Questionnaires report menu item in the Questionnaire module to run the existing SSRS report.](./media/er-quick-start1-application-menu-origin.png)
 
 2. In the **Questionnaires report** dialog box, specify selection criteria. Apply a filter so that the report includes only the **SBCCrsExam** questionnaire.
 
-    ![Specifying selection criteria in the Questionnaires report dialog box](./media/er-quick-start1-ssrs-report-dialog.png)
+    ![Specifying selection criteria in the Questionnaires report dialog box.](./media/er-quick-start1-ssrs-report-dialog.png)
 
 The following illustration shows the generated version of the SSRS report for the **SBCCrsExam** questionnaire.
 
-![Generated SSRS report](./media/er-quick-start1-ssrs-report.png)
+![Generated SSRS report.](./media/er-quick-start1-ssrs-report.png)
 
 ## <a name="ConfigureFramework"></a>Configure the ER framework
 
@@ -184,13 +184,13 @@ For more information about ER configuration providers, see [Create configuration
 
 ## <a name="DesignModel"></a>Design a domain-specific data model
 
-You must create a new ER configuration that contains a [data model](general-electronic-reporting.md#data-model-and-model-mapping-components) component for the **Questionnaire** business domain. This data model will later be used as a data source when you design an ER format to generate the **Questionnaire** report.
+You must create a new ER configuration that contains a data model component for the **Questionnaire** business domain. This data model will later be used as a data source when you design an ER format to generate the **Questionnaire** report.
 
 By completing the steps in the [Import a new data model configuration](#ImportDataModel) section, you can import the required data model from the provided XML file. Alternatively, you can complete the steps in the [Create a new data model configuration](#DesignDataModel) section to design this data model from scratch.
 
 ### <a name="ImportDataModel"></a>Import a new data model configuration
 
-1. Download the [Questionnaires model.version.1.xml](https://go.microsoft.com/fwlink/?linkid=851448) file, and save it to your local computer.
+1. Download the [Questionnaires model.version.1.xml](https://download.microsoft.com/download/b/6/3/b633bd34-d200-4422-96d9-8f62eb5218f8/Questionnaires_model.version.1.xml) file, and save it to your local computer.
 2. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
 3. In the **Electronic reporting** workspace, select **Reporting configurations**.
 4. On the Action Pane, select **Exchange** \> **Load from XML file**.
@@ -276,7 +276,7 @@ To continue, skip the next procedure, [Create a new data model configuration](#D
 
     The following illustration shows the completed editable data model on the **Data model designer** page.
 
-    ![Configured data model in the ER data model designer](./media/er-quick-start1-model2.png)
+    ![Configured data model in the ER data model designer.](./media/er-quick-start1-model2.png)
 
 7. Save your changes.
 8. Close the **Data model designer** page.
@@ -290,7 +290,7 @@ To continue, skip the next procedure, [Create a new data model configuration](#D
 
 The status of version 1 of this configuration is changed from **Draft** to **Completed**. Version 1 can no longer be changed. This version contains the configured data model and can be used as the basis for other ER configurations. Version 2 of this configuration is created and has a status of **Draft**. You can edit this version to adjust the **Questionnaire** data model.
 
-![Versions of the editable ER configuration on the Configurations page](./media/er-quick-start1-model-configuration.png)
+![Versions of the editable configuration on the Configurations page.](./media/er-quick-start1-model-configuration.png)
 
 For more information about versioning for ER configurations, see [Electronic reporting (ER) overview](general-electronic-reporting.md#component-versioning).
 
@@ -299,13 +299,13 @@ For more information about versioning for ER configurations, see [Electronic rep
 
 ## <a name="DesignMapping"></a>Design a model mapping for the configured data model
 
-As a user in the Electronic Reporting Developer role, you must create a new ER configuration that contains a [model mapping](general-electronic-reporting.md#data-model-and-model-mapping-components) component for the **Questionnaire** data model. Because this component implements the configured data model for Finance, it's Finance-specific. You must configure the model mapping component to specify the application objects that must be used to fill in the configured data model with application data at runtime. To complete this task, you must be aware of the implementation details of the data structure of the **Questionnaire** business domain in Finance.
+As a user in the Electronic Reporting Developer role, you must create a new ER configuration that contains a model mapping component for the **Questionnaire** data model. Because this component implements the configured data model for Finance, it's Finance-specific. You must configure the model mapping component to specify the application objects that must be used to fill in the configured data model with application data at runtime. To complete this task, you must be aware of the implementation details of the data structure of the **Questionnaire** business domain in Finance.
 
 By completing the steps in the [Import a new model mapping configuration](#ImportModelMapping) section that follows, you can import the required model mapping configuration from the provided XML file. Alternatively, you can complete the steps in the [Create a new model mapping configuration](#CreateModelMapping) section to design this model mapping from scratch.
 
 ### <a name="ImportModelMapping"></a>Import a new model mapping configuration
 
-1. Download the [Questionnaires mapping.version.1.1.xml](https://go.microsoft.com/fwlink/?linkid=851448) file, and save it to your local computer.
+1. Download the [Questionnaires mapping.version.1.1.xml](https://download.microsoft.com/download/7/b/2/7b258e4e-4bd5-46a4-8114-27419ae4acd8/Questionnaires_mapping.version.1.1.xml) file, and save it to your local computer.
 2. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
 3. In the **Electronic reporting** workspace, select **Reporting configurations**.
 4. On the Action Pane, select **Exchange** \> **Load from XML file**.
@@ -371,7 +371,7 @@ You must configure data sources to access the application tables that contain qu
     2. Select **Add**.
     3. In the dialog box, in the **Name** field, enter **\$ResultGroup**.
     4. Select **Edit formula**.
-    5. In the [ER formula editor](general-electronic-reporting-formula-designer.md), in the **Formula** field, enter **FIRSTORNULL(\@.'\<Relations'.KMQuestionResultGroup)** to use the [path](er-formula-language.md#paths) of the one-to-many relation between the KMCollection and KMQuestionResultGroup tables.
+    5. In the [ER formula editor](general-electronic-reporting-formula-designer.md), in the **Formula** field, enter **FIRSTORNULL(\@.'\<Relations'.KMQuestionResultGroup)** to use the [path](er-formula-language.md#Paths) of the one-to-many relation between the KMCollection and KMQuestionResultGroup tables.
     6. Select **Save**, and close the formula editor.
     7. Select **OK** to add the new calculated field.
 
@@ -444,7 +444,7 @@ You can add ER labels to configure some of your data sources to return values th
 5. Close the **Text translation** dialog box.
 6. Select **Cancel**.
 
-![Adding ER labels for the editable model mapping](./media/er-quick-start1-adding-labels.png)
+![Adding ER labels for the editable model mapping.](./media/er-quick-start1-adding-labels.png)
 
 You've entered ER labels only for the default language. For information about how ER labels can be translated into other languages, see [Design multilingual reports](er-design-multilingual-reports.md).
 
@@ -478,7 +478,7 @@ Because you must transform the results of the comparison between enumeration val
     8. Select **Save**, and close the formula editor.
     9. Select **OK** to add the new data source.
 
-![Configured model mapping in the ER model mapping designer](./media/er-quick-start1-added-data-sources.png)
+![Configured model mapping in the ER model mapping designer.](./media/er-quick-start1-added-data-sources.png)
 
 #### <a name="AddMmBindings1"></a>Bind data sources to data model fields
 
@@ -529,7 +529,7 @@ You must bind the configured data sources to the fields of the data model to spe
 
     The following illustration shows the final state of the configured model mapping on the **Model mapping designer** page.
 
-    ![Fully configured model mapping in the ER model mapping designer](./media/er-quick-start1-mapping2.png)
+    ![Fully configured model mapping in the ER model mapping designer.](./media/er-quick-start1-mapping2.png)
 
 7. Save your changes.
 8. Close the **Model mapping designer** page.
@@ -543,7 +543,7 @@ You must bind the configured data sources to the fields of the data model to spe
 
 The status of version 1.1 of this configuration is changed from **Draft** to **Completed**. Version 1.1 can no longer be changed. This version contains the configured model mapping and can be used as the basis for other ER configurations. Version 1.2 of this configuration is created and has a status of **Draft**. You can edit this version to adjust the **Questionnaire mapping** configuration.
 
-![Versions of the editable ER configuration on the Configurations page](./media/er-quick-start1-mapping-configuration.png)
+![Versions of the editable ER configuration on the Configurations page.](./media/er-quick-start1-mapping-configuration.png)
 
 > [!NOTE]
 > The configured model mapping is your Finance-specific implementation of the abstract data model that represents the **Questionnaire** business domain.
@@ -552,32 +552,32 @@ The status of version 1.1 of this configuration is changed from **Draft** to **C
 
 The ER framework uses predefined templates to generate reports in Microsoft Office formats (Excel workbooks or Word documents). While the required report is being generated, a template is filled in with required data according to the configured dataflow. Therefore, you must first design a template for your custom report. This template must be designed as an Excel workbook, the structure of which represents the layout of a custom report. You must name every Excel item that you plan to fill in with required data.
 
-1. Download the [Questionnaires report template.xslx](https://go.microsoft.com/fwlink/?linkid=851448) file, and save it to your local computer.
+1. Download the [Questionnaires report template.xlsx](https://download.microsoft.com/download/3/8/2/382c3cf0-87bb-473f-b7bb-3015b4facb74/Questionnaires_report_template.xlsx) file, and save it to your local computer.
 2. Open the file in Excel, and review the structure of the workbook.
 
 As the following illustration shows, the downloaded template has been designed to print specified questionnaires that present a questionnaire's questions together with appropriate answers.
 
-![Excel template to print specified questionnaires](./media/er-quick-start1-template-layout.png)
+![Excel template to print specified questionnaires.](./media/er-quick-start1-template-layout.png)
 
 Excel names have been added to this template to fill in the questionnaire details. You can use Name Manager to review the Excel names.
 
-![Using Name manager to review Excel names in the provided Excel template](./media/er-quick-start1-template-names.png)
+![Using Name manager to review Excel names in the provided Excel template.](./media/er-quick-start1-template-names.png)
 
 Report labels have been added as fixed text in the English language. You can replace the report labels with new Excel names that fill in the labels with language-dependent text by using the ER format [labels](#AddMmLabels), as you did for language-dependent expressions in the configured model mapping. In this case, ER labels must be added in the editable ER format.
 
 As the following illustration shows, the custom report header has been specified to enable Excel to do paging.
 
-![Custom report header in the provided Excel template](./media/er-quick-start1-template-header.png)
+![Custom report header in the provided Excel template.](./media/er-quick-start1-template-header.png)
 
 ## <a name="DesignFormat"></a>Design a format
 
-As a user in the Electronic Reporting Functional Consultant role, you must create a new ER configuration that contains a [format](general-electronic-reporting.md#FormatComponentOutbound) component. You must configure the format component to specify how a report template will be filled in with required data at runtime.
+As a user in the Electronic Reporting Functional Consultant role, you must create a new ER configuration that contains a format component. You must configure the format component to specify how a report template will be filled in with required data at runtime.
 
 By completing the steps in the [Import a designed format configuration](#FormatImport) section, you can import the required format from the provided XML file. Alternatively, you can complete the steps in the [Create a new format configuration](#FormatCreate) section to design this format from scratch.
 
 ### <a name="FormatImport"></a>Import a designed format configuration
 
-1. Download the [Questionnaires format.version.1.1.xml](https://go.microsoft.com/fwlink/?linkid=851448) file, and save it to your local computer.
+1. Download the [Questionnaires format.version.1.1.xml](https://download.microsoft.com/download/1/b/a/1ba39ec2-257a-44d8-972f-25bf7d18fb41/Questionnaires_format.version.1.1.xml) file, and save it to your local computer.
 2. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
 3. In the **Electronic reporting** workspace, select **Reporting configurations**.
 4. On the Action pane, Select **Exchange** \> **Load from XML file**.
@@ -617,11 +617,11 @@ To continue, skip the next procedure, [Create a new format configuration](#Forma
     2. Find and select the locally saved **Questionnaires report template.xslx** file, and then select **Open**.
     3. Select **OK** to import the template.
 
-    ![Importing a report template](./media/er-quick-start1-template-import.png)
+    ![Importing a report template.](./media/er-quick-start1-template-import.png)
 
 The **Excel\\File** format element is automatically added to the editable format as a root element. Additionally, either the **Excel\\Range** format element or the **Excel\\Cell** format element is automatically added for every recognized Excel name of the imported template. The **Excel\\Header** format that has the nested **String** element is automatically added to reflect the header settings of the imported template.
 
-![Format structure that includes automatically added elements in the ER Operation designer](./media/er-quick-start1-template-import2.png)
+![Format structure that includes automatically added elements in the ER Operation designer.](./media/er-quick-start1-template-import2.png)
 
 #### <a name="ConfigureFormat"></a>Configure a format
 
@@ -632,12 +632,12 @@ The **Excel\\File** format element is automatically added to the editable format
 
     For information about how to specify the language and culture contexts for an ER process, see [Design multilingual reports](er-design-multilingual-reports.md).
 
-    ![Configuring language and culture settings for the designed report in the ER Operation designer](./media/er-quick-start1-template-format-structure1.png)
+    ![Configuring language and culture settings for the designed report in the ER Operation designer.](./media/er-quick-start1-template-format-structure1.png)
 
 5. In the format tree, expand the root node, and then select **ResultsGroup**.
 6. On the **Format** tab, in the **Replication direction** field, select **No replication**, because you don't expect to have multiple result groups for a single questionnaire.
 
-    ![Defining the replication direction for Range format elements in the ER Operation designer](./media/er-quick-start1-template-format-structure2.png)
+    ![Defining the replication direction for Range format elements in the ER Operation designer.](./media/er-quick-start1-template-format-structure2.png)
 
 7. Select **Save**.
 
@@ -657,7 +657,7 @@ You must specify a data binding for a format element that is used to fill in the
 
 5. Close the formula editor.
 
-    ![Configuring the binding to fill in the title of a generated report](./media/er-quick-start1-add-report-title-label.png)
+    ![Configuring the binding to fill in the title of a generated report.](./media/er-quick-start1-add-report-title-label.png)
 
 You can use this technique to make all other labels of the current template language-dependent. For information about how the added labels of a single ER configuration can be translated into all supported languages, see [Design multilingual reports](er-design-multilingual-reports.md).
 
@@ -667,7 +667,7 @@ You can use this technique to make all other labels of the current template lang
 2. Select **Edit**.
 3. Review the information in the **Data source properties** dialog box. This data source represents version 1 of the **Questionnaires** data model component that resides in the **Questionnaires model** ER configuration.
 
-![Properties of the model data source in the ER Operation designer](./media/er-quick-start1-model-data-source.png)
+![Properties of the model data source in the ER Operation designer.](./media/er-quick-start1-model-data-source.png)
 
 #### <a name="BindFormatElements"></a>Bind format elements to data source fields
 
@@ -683,11 +683,11 @@ To specify how a template is filled in at runtime, you must bind every format el
 
     The **Questionnaire** range format element is configured as vertically replicated. When it's bound to a data source of the **Record list** type, the appropriate **Questionnaire** range of the Excel template is repeated for every record of the bound data source.
  
-    ![Binding the Questionnaire range format element to the appropriate Record list data sources in the ER Operation designer](./media/er-quick-start1-bindings1.png)
+    ![Binding the Questionnaire range format element to the appropriate Record list data sources in the ER Operation designer.](./media/er-quick-start1-bindings1.png)
 
     Because the **Questionnaire** range of the Excel template is defined between rows 5 through 14, these rows are repeated for every reported questionnaire.
 
-    ![Rows in the Excel template that will be repeated in a generated report for every record of the Record list data sources](./media/er-quick-start1-template-questionnaire-range.png)
+    ![Rows in the Excel template that will be repeated in a generated report for every record of the Record list data sources.](./media/er-quick-start1-template-questionnaire-range.png)
 
 8. Configure similar bindings for the remaining format elements, as described in the following table.
 
@@ -723,7 +723,7 @@ To specify how a template is filled in at runtime, you must bind every format el
 
 The following illustration shows the final state of the configured data bindings on the **Format designer** page.
 
-![Configured data bindings in the ER Operation designer](./media/er-quick-start1-bindings2.png)
+![Configured data bindings in the ER Operation designer.](./media/er-quick-start1-bindings2.png)
 
 > [!IMPORTANT]
 > The whole collection of specified data sources and bindings represents a format mapping component of the configured format. This format mapping is called when you run the configured format for report generation.
@@ -743,9 +743,9 @@ You can now run a designed format for testing purposes from the **Configurations
 
 By [default](electronic-reporting-destinations.md#default-behavior), a generated report is delivered as an Excel file that you can download. The following illustrations show two pages of the generated report in Excel format.
 
-![Example of a generated report in Excel format, page 1](./media/er-quick-start1-report1a.png)
+![Example of a generated report in Excel format, page 1.](./media/er-quick-start1-report1a.png)
 
-![Example of a generated report in Excel format, page 2](./media/er-quick-start1-report1b.png)
+![Example of a generated report in Excel format, page 2.](./media/er-quick-start1-report1b.png)
 
 ## <a name="TuneFormat"></a>Tune a designed format
 
@@ -766,7 +766,7 @@ The questions aren't correctly ordered in a generated report. You can change the
 1. On the **Format designer** page, select the **Report** root item.
 2. On the **Mapping** tab, in the format tree, expand **Report\\Questionnaire\\Question**.
 
-    ![Question format element of the Range type in the ER Operation designer](./media/er-quick-start1-bindings3.png)
+    ![Question format element of the Range type in the ER Operation designer.](./media/er-quick-start1-bindings3.png)
 
 3. On the **Mapping** tab, select **model.Questionnaire**.
 4. Select **Add** \> **Functions\\Calculated field**, and then, in the **Name** field, enter **OrderedQuestions**.
@@ -779,7 +779,7 @@ The questions aren't correctly ordered in a generated report. You can change the
 11. Select **Bind**, and then confirm that the current **model.Questionnaire.Questions** path is replaced by the new **model.Questionnaire.OrderedQuestions** path in all bindings of nested elements.
 12. Select **Save**.
 
-![Binding the Question format element to the configured OrderedQuestions data source in the ER Operation designer](./media/er-quick-start1-bindings4.png)
+![Binding the Question format element to the configured OrderedQuestions data source in the ER Operation designer.](./media/er-quick-start1-bindings4.png)
 
 ### <a name="RunFormatFromER2"></a>Run a modified format from ER
 
@@ -793,7 +793,7 @@ You can now run a modified format for testing purposes from the ER framework.
 
 The following illustration shows a generated report in Excel format where the questions are correctly ordered.
 
-![Generated report in Excel format that has correctly ordered questions](./media/er-quick-start1-report2.png)
+![Generated report in Excel format that has correctly ordered questions.](./media/er-quick-start1-report2.png)
 
 ### <a name="CompleteFormat"></a>Complete the format design
 
@@ -804,7 +804,7 @@ The following illustration shows a generated report in Excel format where the qu
 
 The status of version 1.1 of this configuration is changed from **Draft** to **Completed**. Version 1.1 can no longer be changed. This version contains the configured format and can be used to print your custom report. Version 1.2 of this configuration is created and has a status of **Draft**. You can edit this version to adjust the format of your **Questionnaire** report.
 
-![Versions of the editable ER configuration on the Configurations page](./media/er-quick-start1-format-configuration.png)
+![Editable ER configuration on the Configurations page.](./media/er-quick-start1-format-configuration.png)
 
 > [!NOTE]
 > The configured format is your design of the **Questionnaire** report and contains no relations to the Finance-specific artefacts.
@@ -1054,7 +1054,7 @@ Build your project to make a new menu item available to users.
 
 1. Go to **Questionnaire** \> **Design** \> **Questionnaires report (powered by ER)**.
 
-    ![Selecting the Questionnaires report (powered by ER) menu item in the Questionnaire module to run the configured ER format](./media/er-quick-start1-application-menu-modified.png)
+    ![Selecting the Questionnaires report (powered by ER) menu item in the Questionnaire module to run the configured ER format.](./media/er-quick-start1-application-menu-modified.png)
 
 2. In the dialog box, in the **Format mapping** field, select **Questionnaires report**.
 3. Select **OK**.
@@ -1062,7 +1062,7 @@ Build your project to make a new menu item available to users.
 5. Select **OK** to confirm the filtering option.
 6. Select **OK** to run the report.
 
-    ![Specifying the selection criteria in the Electronic report dialog box](./media/er-quick-start1-report-run-dialog-page.png)
+    ![Specifying the selection criteria in the Electronic report dialog box.](./media/er-quick-start1-report-run-dialog-page.png)
 
 7. Review the generated report.
 
@@ -1087,7 +1087,7 @@ You can modify the configured ER solution so that it uses the data provider clas
 
 The added data source provides information about the record ID of the running ER format mapping.
 
-![Added data source in the ER model mapping designer](./media/er-quick-start1-mapping3.png)
+![Added data source in the ER model mapping designer.](./media/er-quick-start1-mapping3.png)
 
 #### <a name="AddDataSource2"></a>Add a data source to access ER format mapping records
 
@@ -1122,7 +1122,7 @@ Continue to edit the selected model mapping so that the name of the running ER f
 
 Because you used the **FormatName** field, the configured model mapping now exposes the name of an ER format that calls this model mapping during execution.
 
-![Binding the data model field to the method of the added data source in the ER model mapping designer](./media/er-quick-start1-mapping4.png)
+![Binding the data model field to the method of the added data source in the ER model mapping designer.](./media/er-quick-start1-mapping4.png)
 
 #### <a name="CompleteModelMapping2"></a>Complete the design of the model mapping
 
@@ -1159,7 +1159,7 @@ You can modify the configured ER format so that its name is shown in the footer 
 
 The configured format has now been modified so that its name will be entered in the footer of a generated report by using the **Footer\\String** element.
 
-![Adding the Footer format element to the configured format in the ER Operation designer](./media/er-quick-start1-template-format-structure3.png)
+![Adding the Footer format element to the configured format in the ER Operation designer.](./media/er-quick-start1-template-format-structure3.png)
 
 #### <a name="CompleteFormat2"></a>Complete the format design
 
@@ -1181,7 +1181,7 @@ The status of version 1.2 of this configuration is changed from **Draft** to **C
 
 Notice that the footer of the generated report contains the name of the ER format that was used to generate it.
 
-![Generated report in Excel format](./media/er-quick-start1-report4.png)
+![Generated report in Excel format.](./media/er-quick-start1-report4.png)
 
 ### <a name="RunFormatFromER3"></a>Run a format from ER
 
@@ -1202,7 +1202,7 @@ Notice that the footer of the generated report doesn't contain the name of ER fo
 3. On the **File destination** FastTab, set up the **Screen** [destination](er-destination-type-screen.md) for the **Report** format component that has been [added](#AddFormatRootElement) as the root element of the configured **Questionnaire report** ER format.
 4. On the **PDF conversion settings** FastTab, configure the destination to convert a report to [PDF format](electronic-reporting-destinations.md#OutputConversionToPDF) that uses the **Landscape** page orientation.
 
-![Configuring the custom Screen destination for the ER format on the Electronic reporting destination page](./media/er-quick-start1-destination.png)
+![Configuring the custom Screen destination for the ER format on the Electronic reporting destination page.](./media/er-quick-start1-destination.png)
 
 ### <a name="RunFormatFromApp3"></a>Run a format from the application to preview it as a PDF document
 
@@ -1214,12 +1214,12 @@ Notice that the footer of the generated report doesn't contain the name of ER fo
 
     On the **Destinations** FastTab, notice that the **Output** field is set to **Screen**. If you want to change the configured destination, select **Change**.
 
-    ![ER report runtime dialog box where you can change the configured destination](./media/er-quick-start1-run-settings.png)
+    ![ER report runtime dialog box where you can change the configured destination.](./media/er-quick-start1-run-settings.png)
 
 6. Select **OK** to run the report.
 7. Review the generated report in PDF format.
 
-    ![On-screen preview of the generated report in PDF format](./media/er-quick-start1-preview-PDF.png)
+    ![On-screen preview of the generated report in PDF format.](./media/er-quick-start1-preview-PDF.png)
 
 ## <a name="References"></a>Additional resources
 

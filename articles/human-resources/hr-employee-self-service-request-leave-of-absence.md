@@ -29,6 +29,9 @@ ms.dyn365.ops.version: Human Resources
 
 # Request a leave of absence
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 You can submit a request for a leave of absence and see the status of your leave requests in Dynamics 365 Human Resources.
@@ -53,6 +56,10 @@ You can submit a request for a leave of absence and see the status of your leave
 1. In the **Employee self service** workspace, select **More** (...) in the **Time Off Balances** tile.
 
 2. To view your leave of absence requests, select **View leave of absence**.
+
+## Importing leave requests from other systems or older systems
+
+To import leave requests from another system, you must go through the regular workflow to create the appropriate leave transactions. Alternatively, you can import the leave bank transactions and the leave requests in a completed state. Note that the leave bank transactions aren't automatically created if you import only the leave requests.
 
 ## See also
 

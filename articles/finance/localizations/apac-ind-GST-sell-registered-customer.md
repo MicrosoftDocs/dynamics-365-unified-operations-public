@@ -3,7 +3,7 @@
 
 title: Sales to registered customers
 description: This topic provides information about sales to registered customers.
-author: EricWang
+author: EricWangChen
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: kfend
+ms.author: wangchen
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.4
 
@@ -36,15 +36,15 @@ ms.dyn365.ops.version: 10.0.4
 3. Save the record.
 4. Select **Tax information**.
 
-    ![Tax information dialog box](media/Capture06.PNG)
+    ![Tax information dialog box.](media/Capture06.PNG)
 
 5. On the **GST** FastTab, validate the default values.
 
-    ![GST FastTab](media/Capture07.PNG)
+    ![GST FastTab.](media/Capture07.PNG)
 
 6. Select the **Customer tax information** FastTab.
 
-    ![Customer tax information FastTab](media/Capture08.PNG)
+    ![Customer tax information FastTab.](media/Capture08.PNG)
 
     > [!NOTE]
     > - The company address and the customer address are in the same state. Therefore, this transaction is an intrastate transaction.
@@ -60,7 +60,7 @@ ms.dyn365.ops.version: 10.0.4
     - **CGST:** 10 percent
     - **SGST:** 10 percent
 
-    ![Tax document page](media/Capture09_upd.png)
+    ![Tax document page.](media/Capture09_upd.png)
 
 10. Select **Close**.
 11. On the Action Pane, on the **Quotation** tab, in the **Generate** group, select **Send quotation**.
@@ -74,20 +74,20 @@ ms.dyn365.ops.version: 10.0.4
 2. Select a record, and then, on the Action Pane, on the **Sales order** tab, in the **Maintain** group, select **Edit**.
 3. Select **Tax information**.
 
-    ![Tax information dialog box](media/Capture06.PNG)
+    ![Tax information dialog box.](media/Capture06.PNG)
 
 4. Select the **GST** FastTab.
 
-    ![GST FastTab](media/Capture07.PNG)
+    ![GST FastTab.](media/Capture07.PNG)
 
 5. Select the **Customer tax information** FastTab.
 
-    ![Customer tax information FastTab](media/Capture08.PNG)
+    ![Customer tax information FastTab.](media/Capture08.PNG)
 
 6. Select **OK**.
 7. On the Action Pane, on the **Sell** tab, in the **Tax** group, select **Tax document** to review the calculated taxes.
 
-    ![Tax document page](media/Capture09_upd.png)
+    ![Tax document page.](media/Capture09_upd.png)
 
 8. Select **Close**.
 
@@ -105,7 +105,7 @@ ms.dyn365.ops.version: 10.0.4
 
 The following illustration shows the financial entries for both the intrastate transactions and the interstate transactions.
 
-![Financial entries for intrastate and interstate transactions](media/Annotation-2019-05-20-133425.png)
+![Financial entries for intrastate and interstate transactions.](media/Annotation-2019-05-20-133425.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

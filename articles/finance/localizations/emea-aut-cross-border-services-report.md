@@ -107,7 +107,7 @@ The following example shows how you can set up and generate the **Cross-border s
     4. In the **Table**, **Derived table**, and **Field** fields, select **Main account**.     
     5. In the **Criteria** field enter **700001, 700002**. For more information, see [Advanced filtering and query  syntax](../../fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md).
 
-    ![cross-border-services-report-country](media/emea-aut-cross-border-services-report-country-region.png)
+    ![cross-border-services-report-country.](media/emea-aut-cross-border-services-report-country-region.png)
 
 14. Go to **Tax** > **Inquiries and reports** > **Sales tax reports** > **Cross-border services**, and follow these steps:
 
@@ -119,4 +119,4 @@ The following example shows how you can set up and generate the **Cross-border s
 
 15. Select **OK**, and review the report results.
 
-    ![cross-border-services-report-service](media/emea-aut-cross-border-services-report-service.png)
+    ![cross-border-services-report-service.](media/emea-aut-cross-border-services-report-service.png)

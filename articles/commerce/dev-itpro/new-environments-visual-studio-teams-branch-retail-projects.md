@@ -15,7 +15,7 @@ ms.search.form:
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -101,7 +101,7 @@ There is no single best strategy for creating branches. The strategy depends on 
 
 The following illustration shows three code branches: Dev, Main, and ProdRel1. The numbers indicate the order of setup.
 
-![Branch creation](./media/1-Three-Code-Branch.png)
+![Branch creation.](./media/1-Three-Code-Branch.png)
 
 Here is an explanation of the setup. The numbers in brackets refer to the numbers in the preceding illustration:
 
@@ -109,7 +109,7 @@ Here is an explanation of the setup. The numbers in brackets refer to the number
 - The **Main** branch \[1\] is for changes that meet a certain quality bar and are ready for testing by other people. This testing might include user acceptance tests, performance tests, integration tests, and sanity tests after hotfixes. Deployable packages for this branch must be created by a build environment. As a best practice, you should not generate X++ packages in a Tier 1 environment and then deploy those packages into an official test or production environment. Otherwise, uncommitted source changes could be included. The correct approach is always to deploy packages that were built on official build environments.
 - The **ProdRel1** branch \[3\] holds all source code exactly as it's deployed in a production environment at any given point. A build environment can be used but isn't required. If packages from the Main branch are deployed to a production environment, the code should be merged (from Main to ProdRel1) after a production deployment. By having a branch for production, you can generate official builds later if you require them.
 - All three branches hold both X++ code (extensions and hotfixes in Metadata folders) and a copy of the Retail software development kit (SDK) in **RetailSdk** folders \[5, 6, 7\]. The Retail SDK includes base Microsoft code and code extensions. This base code and the code extensions can differ in each branch.
-- The **RetailSdk-mirror** folder \[4\] is used to bring in Microsoft changes to the Retail SDK. It isn't used for development or build purposes. It should be updated only when a new version or hotfix is used. For a detailed description of the process, see this [cheat sheet](https://dynamicsnotes.com/dynamics-365-for-finance-and-operations-hotfix-and-deployment-cheat-sheet/).
+- The **RetailSdk-mirror** folder \[4\] is used to bring in Microsoft changes to the Retail SDK. It isn't used for development or build purposes. It should be updated only when a new version or hotfix is used.
 
 For small projects, it's acceptable to have only two branches (Main = Dev branch). However, developers must be more disciplined, because any code submissions can immediately affect the quality of test builds. 
 
@@ -135,31 +135,31 @@ Use the LCS portal to deploy a new build environment. We recommend that you use 
 
 Start by creating a new Azure DevOps project if you don't already have one. In your Azure DevOps account, select **New project**.
 
-![VSTS project](./media/2-VSTS-project.png)
+![VSTS project.](./media/2-VSTS-project.png)
 
 After you create the new Azure DevOps project, you must give Azure DevOps access to it. First, create a new personal access token on the Azure DevOps account. Then configure the LCS project with the correct URL and personal access token.
 
-![LCS project](./media/3-LCS-project.png)
+![LCS project.](./media/3-LCS-project.png)
 
 After the LCS project is linked to Azure DevOps, you're ready to deploy.
 
 Add a new environment, select the version, select **DEVTEST** as the topology, and select a build environment. On the next page, enter a meaningful name for the environment. Then enter a similar name for the build agent.
 
-![Build agent](./media/4-build-agent.png)
+![Build agent.](./media/4-build-agent.png)
 
 Next, under **Customize virtual machine names**, enter a unique name, and then deploy the VM.
 
 The build box is deployed, and the build definition and Main branch are created, as shown in the following illustration. This process might take a couple of hours.
 
-![Build box main branch](./media/5-build-box-main-branch.png)
+![Build box main branch.](./media/5-build-box-main-branch.png)
 
 The build appears in the list of build definitions.
 
-![Build definitions](./media/19-build-definitions.png)
+![Build definitions.](./media/19-build-definitions.png)
 
 The build definition appears in the **Agents for pool Default** grid.
 
-![Agents for the Default pool](./media/20-agents-for-pool-default.png)
+![Agents for the Default pool.](./media/20-agents-for-pool-default.png)
 
 ## Deploy a development environment
 
@@ -174,7 +174,7 @@ Because there is currently no Dev branch, you can skip the process of mapping Az
 
 As previously mentioned, you must have a branch that holds changes that are often made but less often tested. You must also have a branch that holds the source code for production. The following illustration shows the expected hierarchy.
 
-![Main branch hierarchy](./media/6-main-branch-hierarchy.png)
+![Main branch hierarchy.](./media/6-main-branch-hierarchy.png)
 
 Follow these steps to create the branches.
 
@@ -190,7 +190,7 @@ Follow these steps to create the branches.
 
 At this point, Source Depot Explorer in Visual Studio resembles the following illustration.
 
-![Source Depot Explorer](./media/7-source-depot-explorer.png)
+![Source Depot Explorer.](./media/7-source-depot-explorer.png)
 
 ## Add the Retail SDK
 
@@ -202,14 +202,14 @@ The mirror branch or folder is only required one time per project.
 
 1. Find the unchanged Retail SDK that has the exact version that you want to start your development with. This Retail SDK can be found on every development machine on the service drive, or in every downloaded hotfix. You can uniquely identify a version of the Retail SDK by inspecting the Microsoft-version.txt file. This file should not be changed, except by an update to the Retail SDK mirror folder.
 
-    ![Retail SDK](./media/8-retail-sdk.png)
+    ![Retail SDK.](./media/8-retail-sdk.png)
 
 2. In Source Control Explorer, right-click the **Trunk** folder, and then select **Add Items to Folder**.
 3. Select the top folder in the Retail SDK, and then select **Next**.
 4. Visual Studio shows the number of files that will be added. Make sure that the **RetailSdk** folder is under the **Trunk** folder.
 5. Make sure that there are 0 (zero) excluded items by selecting items and then selecting **Include items**.
 
-    ![Source control](./media/9-source-control.png)
+    ![Source control.](./media/9-source-control.png)
 
 6. Select **Finish**. This process will take a few minutes.
 7. When the process is completed, rename the folder **RetailSdk-mirror**.
@@ -219,7 +219,7 @@ Next, you must branch to each branch. Follow the same path that the code changes
 1. Select the folder for the mirror branch, right-click, and then select **Branching and Merging** \> **Branch**.
 2. Go to the **Dev** branch, append **/RetailSdk** to the name, and then select **OK**.
 
-    ![Branch change](./media/10-branch-change.png)
+    ![Branch change.](./media/10-branch-change.png)
 
 3. Use **Pending Changes**, and submit the changes.
 4. Follow the same steps to branch the **RetailSdk** folder of the **Dev** branch to the **Main** branch.
@@ -227,7 +227,7 @@ Next, you must branch to each branch. Follow the same path that the code changes
 
 At this point, you have the code branches and code locations for the X++ and Commerce extensions setup. In Source Control Explorer, the file structure should resemble the following illustration.
 
-![Source Control Explorer](./media/11-source-control-explorer.png)
+![Source Control Explorer.](./media/11-source-control-explorer.png)
 
 You should also change the version of the Commerce customization. This version should differ in the Dev, Main, and ProdRel1 branches. Either change the Customization.settings file, or add a new global.props file in the **RetailSdk\\BuildTools** folder. For example, you can number Dev as 1.0.0.x, Main as 1.0.1.x, and ProdRel1 as 1.0.2.x.
 
@@ -240,7 +240,7 @@ You can now prepare the development environment for Commerce development tasks. 
 
 To map X++ and the Retail SDK, you must edit the current workspace. Select **Pending Changes** \> **Actions** \> **Workspaces**, and update the current workspace so that it resembles the following illustration. As was previously mentioned, you should map the Metadata folder of the branch to the PackagesLocalDirectory folder and the RetailSdk folder to a short folder of your choice.
 
-![Edit current workspace](./media/12-edit-current-workspace.png)
+![Edit current workspace.](./media/12-edit-current-workspace.png)
 
 The download of the files can take a few minutes.
 
@@ -302,15 +302,15 @@ Currently, the build environment must be on the same platform and binary hotfix 
 
 First, create a new Azure DevOps agent queue.
 
-![VSTS agent queue](./media/13-VSTS-agent-queue.png)
+![VSTS agent queue.](./media/13-VSTS-agent-queue.png)
 
 When you deploy from LCS, use **PRODREL1** as the name of the agent pool.
 
-![Queue name in LCS](./media/14-queue-name-lcs.png)
+![Queue name in LCS.](./media/14-queue-name-lcs.png)
 
 Next, on the **Customize virtual machine names** tab, enter a unique name, and then deploy the new build. The process of deploying a new build and creating a new agent queue can take a couple of hours.
 
-![New agent queue](./media/15-new-agent-queue.png)
+![New agent queue.](./media/15-new-agent-queue.png)
 
 ## Prepare the build definitions
 

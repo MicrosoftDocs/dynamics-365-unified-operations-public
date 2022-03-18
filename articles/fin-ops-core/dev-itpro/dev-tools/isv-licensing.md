@@ -1,15 +1,15 @@
 ---
 title: Independent software vendor (ISV) licensing
 description: This topic describes the independent software vendor (ISV) licensing feature. 
-author: jorisdg
+author: peakerbl
 ms.date: 05/08/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 70381
 ms.assetid: 90ae4ae6-f19a-4ea5-8bd9-1d45729b0636
 ms.search.region: Global
-ms.author: jorisde
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -48,10 +48,10 @@ ISVs can create two types of license: **Boolean** and **Number**. ISVs can assoc
 When an ISV license becomes invalid after import, the ISV solution continues to run until the server is restarted. (After the server is restarted, the solution is disabled.) An error is thrown when the instance of the Application Object Server (AOS) starts. The error is written to the event log.
 
 ## Implementing ISV licensing in a solution
-ISVs must have a valid Authenticode certificate (X.509) from a certificate authority (CA). Microsoft doesn't recommend any particular CA. However, many companies offer these certificates. Authenticode certificates come in various key sizes. The ISV licensing feature supports certificates of both 1024-bit and 2048-bit key sizes. By default, many providers use the 2048-bit key size, and we recommend that ISVs use this bit key size, because it provides stronger encryption. However, if an ISV already has an existing 1024-bit key size, that key size works with the ISV licensing feature. 
+ISVs must have a valid Authenticode certificate (X.509) from a certificate authority (CA). Microsoft doesn't recommend any particular CA. However, many companies offer these certificates. Authenticode certificates come in various key sizes. The ISV licensing feature supports certificates of both 1024-bit and 2048-bit key sizes. 3072-bit and 4096-bit code signing certificates are supported beginning with platform updates for version 10.0.20. We recommend that ISVs use the larger bit key size because it provides stronger encryption. However, if an ISV already has a valid 1024-bit or 2048-bit key size, that key size works with the ISV licensing feature. 
 
 > [!NOTE]
-> The ISV licensing feature doesn't support 4096-bit key sizes. Authenticode certificates can have various cryptographic service providers. The ISV licensing feature uses Enhanced Cryptographic Provider (which also covers Base Cryptographic Provider). There are many independent providers that you can purchase an Authenticode certificate from. Microsoft doesn't recommend any particular provider. Some providers that are often used are Symantec VeriSign, Thawte, and Go Daddy.
+> Authenticode certificates can have various cryptographic service providers. The ISV licensing feature uses Enhanced Cryptographic Provider (which also covers Base Cryptographic Provider). There are many independent providers that you can purchase an Authenticode certificate from. Microsoft doesn't recommend any particular provider. Some providers that are often used are Symantec VeriSign, and Thawte.
 
 ## Certificate import and export
 The certificate is used to sign your customer license files and validate the license files at the time of import. Authenticode certificates support four file formats. For the ISV licensing feature, you must have the certificate files in two formats:
@@ -66,64 +66,64 @@ Follow these steps to enable licensing for your solution.
 
 1. Create an ISV solution. In Visual Studio, click **File \> New project**. In the **New Project** dialog, click **Installed > Templates > Dynamics 365**.  Create a **Finance Operations** project. In this example, we named the project **NewISVSolution**.
 
-    ![Creating an ISV solution](media/isv_new_isv_project.png)
+    ![Creating an ISV solution.](media/isv_new_isv_project.png)
 
 2. Add the certificate's public key (.cer file) to your project as a resource. To create a certificate for testing, see [Appendix: Create self-signed certificates for test purposes](#appendix-create-self-signed-certificates-for-test-purposes).
 
     1. Right-click the project in Solution Explorer, then click **Add \> New item**. 
     2. Under **Installed \> Dynamics 365 Items**, click **Labels And Resources**, and then select **Resource**. Name the resource. In this example, we named the resource **ISVCert**.
 
-        ![Clicking Resource](media/isv_new_resource.png)
+        ![Clicking Resource.](media/isv_new_resource.png)
 
     3. Click **Add** and select the certificate's public key file (.cer file).
 
-        ![Selecting the certificate's public key as the resource](media/isv_select_cer.png)
+        ![Selecting the certificate's public key as the resource.](media/isv_select_cer.png)
 
     4. Click **Open** to add the certificate.
 
-        ![Adding the certificate as a resource](media/isv_resource_cer.png)
+        ![Adding the certificate as a resource.](media/isv_resource_cer.png)
 
 3. Create a license code. Right-click the project in Solution Explorer, then click **Add \> New item**. Under **Installed \> Dynamics 365 Items**, choose **Configuration**. In the list, choose **License Code** and name the license code. In this example, we named the license code **ISVLicenseCode**. Click **Add**.
 
-    ![Creating a license code](media/isv_new_license_code.png)
+    ![Creating a license code.](media/isv_new_license_code.png)
 
 4. Map the certificate to the license code. In the Properties window for the license code, set the **Certificate** property to your certificate resource. In this example, we set **Certificate** to **ISVCert**.
 
-    ![Mapping the certificate to the license code](media/isv_map_license_cert.png)
+    ![Mapping the certificate to the license code.](media/isv_map_license_cert.png)
 
 5. Create one or more configuration keys. Right-click the project in Solution Explorer, then click **Add \> New item**. Under **Installed \> Dynamics 365 Items**, choose **Configuration**. In the list, choose **Configuration Key**. Name the key and click **Add**. In this example, we named the configuration key **ISVConfigurationKey1**.
 
-    ![Creating a configuration key](media/isv_new_configuration_key.png)
+    ![Creating a configuration key.](media/isv_new_configuration_key.png)
 
 6. Associate the license code with the configuration key. In Solution Explorer, double-click the configuration key to open the Properties window. In the Properties window, set the **LicenseCode** property to your license code. In this example, we set the **LicenseCode** to **ISVLicenseCode**.
 
-    [![Associating the license code with the configuration keys](media/isv_select_license_code.png)
+    [![Associating the license code with the configuration keys.](media/isv_select_license_code.png)
 
 7. Associate a configuration key to an element in your solution. For example, create a new form. Right-click the project in Solution Explorer, then click **Add \> New item**. Under **Installed \> Dynamics 365 Items**, choose **User Interface**. In the list, choose **Form** and give it a name. In this example, we named the form **ISVForm**.
 
-    ![Creating a new form](media/isv_new_form.png)
+    ![Creating a new form.](media/isv_new_form.png)
 
 8. Add a button to the form. Double-click the form in the Solution Explorer. In the Design window, right-click and select **New**, and then **Button**. Set the **Text** property to **ISVButton**.
 
-    ![Adding a button to the new form](media/isv_button_designtime.png)
+    ![Adding a button to the new form.](media/isv_button_designtime.png)
 
     At runtime, the button is visible because it isn't controlled by a configuration key at first. 
 
-    ![New button is visible when it's first added](media/isv_button_visible_runtime.png)
+    ![New button is visible when it's first added.](media/isv_button_visible_runtime.png)
 
 9.  Associate a configuration key with the button. In the Properties window for the button, set the **Configuration Key** property to your configuration. In this example, we set the **Configuration Key** to **ISVConfigurationKey1**.
 
-    ![Associating a configuration key with the button](media/isv_select_key_for_button.png) 
+    ![Associating a configuration key with the button.](media/isv_select_key_for_button.png) 
 
     At runtime, the button is not visible because the configuration key must be available and enabled. 
 
-    ![Button is no longer visible](media/isv_button_invisible_runtime.png)
+    ![Button is no longer visible.](media/isv_button_invisible_runtime.png)
 
 
 ## Create a package and generate a customer-specific license
 1.  Collect the tenant name and ID for the customer to issue the license to. You can find this information at **Settings \> Help \& Support \> About** on the **Licenses** tab. 
 
-    ![Customer's tenant name and ID](./media/isv_tenant_id.png)
+    ![Customer's tenant name and ID.](./media/isv_tenant_id.png)
 
 2.  Generate a license for the customer (tenant ID and name), and sign the license by using the certificate's private key. You must pass the following parameters to the **axutil genlicense** command to create the license file.
 
@@ -169,13 +169,13 @@ Follow these steps to enable licensing for your solution.
 
 4.  The corresponding configuration key will be available and enabled on the **License configuration** page. By default, the configuration is enabled. For example, see the **ISVConfigurationKey1** configuration key in the following screenshot. 
 
-    ![ISVConfigurationKey1 configuration key enabled on the License configuration page](media/isv_license_configuration_page.png)
+    ![ISVConfigurationKey1 configuration key enabled on the License configuration page.](media/isv_license_configuration_page.png)
 
 5.  In non-production installations, you must start the database synchronization process from Visual Studio.
 
 After the configuration key is enabled, the button becomes visible, as shown in the following screenshot. 
 
-![Button is visible after the configuration key is enabled](media/isv_button_visible_runtime.png)
+![Button is visible after the configuration key is enabled.](media/isv_button_visible_runtime.png)
 
 ## Protection best practices
 Solutions can be delivered in two forms:
@@ -185,13 +185,13 @@ Solutions can be delivered in two forms:
 
 To protect your configuration keys and license codes, we recommend that you release them in binary form, by using a deployable package. Customers will then be able to install and interact with those elements in Visual Studio. Although customers will be able to refer to items in the deployable package, they won't be able to access source code or make modifications to the items. (However, they can create extensions.) More details about the capability to release solutions in binary form will be available soon. The deployable package (binary) can also include classes and other logic that your customer doesn't require access to and should not be able to customize. 
 
-![Protected vs. unprotected ISV solutions](./media/isv_protected_solution.png)
+![Protected vs. unprotected ISV solutions.](./media/isv_protected_solution.png)
 
 ## Production environments
 To install ISV licenses in production systems, you must use a deployable package through LCS. You can find a template package for configuration mode at the following location in all installations: \<PackagesFolder\>\\bin\\CustomDeployablePackage\\ImportISVLicense.zip (Packages folder is typically under j:\\AOSService\\PackagesLocalDirectory or c:\\AOSService\\PackagesLocalDirectory\\) 
 
 > [!div class="mx-imgBorder"]
-> ![Location of the template package for configuration mode](media/isv_template_location.png)
+> ![Location of the template package for configuration mode.](media/isv_template_location.png)
 
 1.  Make a copy of the package template.
 2.  Put the license file in the following folder within the package template: ImportISVLicense.zip\\AosService\\Scripts\\License

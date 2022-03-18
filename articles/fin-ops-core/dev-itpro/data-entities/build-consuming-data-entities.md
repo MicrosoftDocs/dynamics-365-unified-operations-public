@@ -3,8 +3,8 @@
 
 title: Build and consume data entities
 description: This tutorial shows how to build an entity and how to consume some out-of-band (OOB) entities in an integration scenario.
-author: Sunil-Garg
-ms.date: 05/26/2020
+author: peakerbl
+ms.date: 03/01/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.custom: 77523
 ms.assetid: 1de997fb-d5c4-4668-9759-0758d141a3eb
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
 This tutorial shows how to build an entity and how to consume some out-of-band (OOB) entities in an integration scenario. You will also preview how these data entities will be consumed in various integrations scenarios, such as data import and export, integration, and OData services.
 
 When you are ready to build your first entity for production, you will need to:
@@ -38,7 +41,7 @@ When you are ready to build your first entity for production, you will need to:
 - Create a new project and set the model property to the one that you just created.
 
 ## Prerequisites
-This tutorial requires that you access an environment by using Remote Desktop, and that you be provisioned as an administrator on the instance.
+This tutorial requires that you access an environment by using Remote Desktop, and that you are provisioned as an administrator on the instance.
 
 Throughout this tutorial, baseUrl refers to the base URL of the instance.
 
@@ -66,7 +69,7 @@ FMLabCustomerEntity
 | Name          | Mapping                     |
 |---------------|-----------------------------|
 | CellPhone     | FMCustomer.CellPhone        |
-| DriverLicense | FMCustomer.DriverLicense    |
+| DriversLicense | FMCustomer.DriversLicense    |
 | Email         | FMCustomer.Email            |
 | FirstName     | FMCustomer.FirstName        |
 | LastName      | FMCustomer.LastName         |
@@ -80,7 +83,7 @@ FMLabCustomerEntity
 
 #### Corresponding staging table
 
-Staging tables are used in import/export scenarios to provide intermediary storage during file parsing and transformation. These tables are also used in connector integration scenarios. In many cases, staging table are mapped 1:1 to an entity. The staging table that corresponds to the **FMLabCustomerEntity** entity is named FMLabCustomerStaging.
+Staging tables are used in import/export scenarios to provide intermediary storage during file parsing and transformation. These tables are also used in connector integration scenarios. In many cases, staging tables are mapped 1:1 to an entity. The staging table that corresponds to the **FMLabCustomerEntity** entity is named FMLabCustomerStaging.
 
 ### Create a new project
 
@@ -97,18 +100,18 @@ Staging tables are used in import/export scenarios to provide intermediary stora
     > [!NOTE]
     > The name of an entity must not have '\_' or any numeric digits (0…9). Using these characters may result in mapping errors later.
 
-    [![Data Entity Wizard](./media/data-entity-wizard.png)](./media/data-entity-wizard.png)
+    [![Data Entity Wizard.](./media/data-entity-wizard.png)](./media/data-entity-wizard.png)
 
 5. Click **Next**. For more information about the function of each property, see "Categories of entities" and "Building an entity" in [Data entities overview](data-entities.md).
 6. Add fields to the new entity from your data source, as shown in the following image. You can add fields from the primary data source, **FMCustomer**. For this entity, clear the check box for the **Image** and **LicenseImage** container types to simplify testing.
 7. Rename the data entity fields to reflect public data contract standards, or click **Convert labels to field names** to generate names from the existing labels.
-8. On the line for the **DriverLicense** field, select the **Is mandatory** check box. This field will be used as the natural key for the entity.
+8. On the line for the **DriversLicense** field, select the **Is mandatory** check box. This field will be used as the natural key for the entity.
 
-    [![Data Entity Wizard 2](./media/data-entity-wizard-2.png)](./media/data-entity-wizard-2.png)
+    [![Data Entity Wizard 2.](./media/data-entity-wizard-2.png)](./media/data-entity-wizard-2.png)
 
 9. In the **Data source** field, select **PrimaryAddress**. Notice that the **PrimaryAddress** data source is automatically added because of automatic expansion or the surrogate foreign key replacement of **AddressID**.
 
-    [![Steps and add fields](./media/steps-and-add-fields.png)](./media/steps-and-add-fields.png)
+    [![Steps and add fields.](./media/steps-and-add-fields.png)](./media/steps-and-add-fields.png)
 
 10. Select the fields from the **PrimaryAddress** data source that you want to be part of your entity. Additionally, rename the following fields to reflect proper public data contract naming:
 
@@ -119,11 +122,11 @@ Staging tables are used in import/export scenarios to provide intermediary stora
     - PrimaryAddress \_ZipCode &gt; ZipCode
     - PrimaryAddress \_Country &gt; Country
 
-    ![Data entity wizard](./media/data-entity-wizard-3.png)
+    ![Data entity wizard.](./media/data-entity-wizard-3.png)
 
 11. Click **Finish**. A data entity item and staging table are added to the project.
 
-    [![Solution explorer](./media/solution-explorer.png)](./media/solution-explorer.png)
+    [![Solution explorer.](./media/solution-explorer.png)](./media/solution-explorer.png)
 
 ### Build your project
 
@@ -133,7 +136,7 @@ Staging tables are used in import/export scenarios to provide intermediary stora
     > [!NOTE]
     > Entities are created as views in Microsoft SQL Server, and staging tables are also added. Therefore, you must sync a database when you build entities.
 
-    ![Property pages](./media/property-pages.png)
+    ![Property pages.](./media/property-pages.png)
 
 3. On the Visual Studio toolbar, click **Build** &gt; **Build Solution** to build the project.
 4. Verify that the build doesn't contain any errors. At this point in the tutorial, warnings are allowed.
@@ -144,24 +147,24 @@ Staging tables are used in import/export scenarios to provide intermediary stora
 2. Validate the properties of the **FMLabCustomerEntity** entity. Select the entity in Solution Explorer, and compare the **Properties** pane values to the following image.
 3. Set the **Label** property to **Fleet Lab Customers**.
 
-    [![FMLabCustomerEntity - Properties](./media/fmlabcustomerentity-properties.png)](./media/fmlabcustomerentity-properties.png)
+    [![FMLabCustomerEntity - Properties.](./media/fmlabcustomerentity-properties.png)](./media/fmlabcustomerentity-properties.png)
 
 4. In the left pane, click **Data Sources** &gt; **FMCustomer** &gt; **Data Sources** &gt; **FMAddressTable**.
 5. Change the **Is Read Only** property to **No**. This is a known issue. Eventually, the value will be set to **Yes** or **No** automatically, based on the type of join. The value should be **Yes** for composition scenarios, and **No** for associations (surrogate foreign key expansions). This property enables the data source to be read/write.
 
-    [![FMLabCustomerEntity - Properties2](./media/fmlabcustomerentity-properties2.png)](./media/fmlabcustomerentity-properties2.png)
+    [![FMLabCustomerEntity - Properties2.](./media/fmlabcustomerentity-properties2.png)](./media/fmlabcustomerentity-properties2.png)
 
 6. In the **FMLabCustomerEntity** designer, click **Keys** &gt; **EntityKey**, and then expand the **Fields** node. Verify that the list of fields matches the following image.
 
-    [![FMLabCustomerEntity](./media/fmlabcustomerentity.png)](./media/fmlabcustomerentity.png)
+    [![FMLabCustomerEntity.](./media/fmlabcustomerentity.png)](./media/fmlabcustomerentity.png)
 
 7. To visually validate the staging table that will be used for import/export, open the **FMLabCustomerStaging** table in the designer, and then select the **FMLabCustomerStaging** node.
 
-    [![fMLabCustomerStaging - Properties](./media/fmlabcustomerstaging-properties.png)](./media/fmlabcustomerstaging-properties.png)
+    [![fMLabCustomerStaging - Properties.](./media/fmlabcustomerstaging-properties.png)](./media/fmlabcustomerstaging-properties.png)
 
 8. Click **FMLabCustomerStaging** &gt; **Fields**. In the following image, the standard fields of the staging tables are selected. All entity staging tables have these standard fields. The image also shows the data fields that belong on this data entity.
 
-    [![FMLabCustomerStaging](./media/fmlabcustomerstaging.png)](./media/fmlabcustomerstaging.png)
+    [![FMLabCustomerStaging.](./media/fmlabcustomerstaging.png)](./media/fmlabcustomerstaging.png)
 
 9. In Solution Explorer, right-click your project, and then select **Rebuild** to rebuild and synchronize the project.
 
@@ -188,21 +191,21 @@ One of the most common ways of interacting with data entities is through X++, by
         customer.clear();
         customer.FirstName = "Bob";
         customer.LastName = "Smith";
-        customer.DriverLicense = license;
+        customer.DriversLicense = license;
         customer.insert();
 
         info(strfmt("Tried to insert customer '%1 %2' with license %3", 
-            customer.FirstName, customer.LastName, customer.DriverLicense));
+            customer.FirstName, customer.LastName, customer.DriversLicense));
 
         //Display newly created record
-        select forupdate customer where customer.DriverLicense==license;
+        select forupdate customer where customer.DriversLicense==license;
         info(strfmt("Found newly created customer '%1 %2' with license %3", 
-            customer.FirstName, customer.LastName, customer.DriverLicense));
+            customer.FirstName, customer.LastName, customer.DriversLicense));
 
         //Now delete the record from the entity
         customer.delete();
-        select customer where customer.DriverLicense==license ;
-        info(strfmt("Deleted customer does not exist: license- %1", customer.DriverLicense));
+        select customer where customer.DriversLicense==license ;
+        info(strfmt("Deleted customer does not exist: license- %1", customer.DriversLicense));
     }
     ```
 
@@ -226,7 +229,7 @@ After you create your data entity, you can validate import/export.
 3. In the **Data Management** workspace, click the **Import** tile.
 4. On the **Import** page, enter the import details, as shown in the following image.
 
-    ![Import new record](./media/import-new-record.png)
+    ![Import new record.](./media/import-new-record.png)
 
 5. Click the **Upload data** button next to the **Upload file for entity** field, and select the CSV file that you created.
 6. After the file is uploaded, you will notice that the entity is added to the middle section. You will also receive an error that states that the mapping isn't valid. A few fields aren't mapped correctly between the source file and the target entity.
@@ -236,11 +239,11 @@ After you create your data entity, you can validate import/export.
     - AddressLine1 – Address1
     - AddressLine2 – Address2
 
-    [![Map source to staging](./media/map-source-to-staging.png)](./media/map-source-to-staging.png)
+    [![Map source to staging.](./media/map-source-to-staging.png)](./media/map-source-to-staging.png)
 
 9. Click the **Back** button in your browser to go back to the **Import job** page. The check mark in the entities list indicates that the entity is now ready for import.
 
-    [![Import new record 2](./media/import-new-record-2.png)](./media/import-new-record-2.png)
+    [![Import new record 2.](./media/import-new-record-2.png)](./media/import-new-record-2.png)
 
 10. Click **Import Now**. After the import is completed, the job status page opens.
 
@@ -284,12 +287,12 @@ You will review the existing **FleetRental** entity and then create a relationsh
 
     | Property      | Value                                                                         |
     |---------------|-------------------------------------------------------------------------------|
-    | Field         | **CustomerDriverLicense**This is the foreign key field on **FMRentalEntity**. |
-    | Related Field | **DriverLicense**This is the unique key on **FMCustomerEntity**.              |
+    | Field         | **CustomerDriversLicense** - This is the foreign key field on **FMRentalEntity**. |
+    | Related Field | **DriversLicense** - This is the unique key on **FMCustomerEntity**.              |
 
     The following image shows the relation in Visual Studio.
 
-    [![FMRentalEntity - Solution explorer](./media/fmrentalentity-solution-explorer.png)](./media/fmrentalentity-solution-explorer.png)
+    [![FMRentalEntity - Solution explorer.](./media/fmrentalentity-solution-explorer.png)](./media/fmrentalentity-solution-explorer.png)
 
 13. On the **BUILD** menu, click **Build Solution** to save your changes and build the project. You can view the build progress in the **Output** window.
 14. To update the OData endpoint with the changes, you must run an **iisreset** command. Open a **Command Prompt** window as an administrator, and enter **iisreset**.
@@ -314,7 +317,7 @@ You can now use Internet Explorer to explore some OData URIs.
 
 2. In the browser, find **FleetRental**. The following image shows the metadata of the **FleetRental** entity, together with the new relationship, **NavigationProperty**.
 
-    [![FleetRental metadata](./media/fleetrental-metadata.png)](./media/fleetrental-metadata.png)
+    [![FleetRental metadata.](./media/fleetrental-metadata.png)](./media/fleetrental-metadata.png)
 
 3. To view all the customers in the Fleet Management application in JSON format, enter the following URL into the address bar of your browser: \[baseURL\]/data/FleetCustomer
 
@@ -334,7 +337,7 @@ You can now use Internet Explorer to explore some OData URIs.
     {  
         { 
             "@odata.etag":"W/"JzEsNTYzNzE0NDU3NjsxLDU2MzcxNDQ1NzY7MTc4NjA2OTg1Niw1NjM3MTQ0NjA1Jw=="",
-            "Comments":"","StartMileage":0,"VehicleRatePerDay":40,"CustomerDriverLicense":
+            "Comments":"","StartMileage":0,"VehicleRatePerDay":40,"CustomerDriversLicense":
             "S468-3184-6541","VehicleRateTotal":280,"VehicleId":"Litware_LitwareFour_1",
             "RentalId":"000001",
             "StartFuelLevel":"Full","StartDate":"2010-04-09T00:00:00Z","CustomerLastName":"Spencer",
@@ -345,7 +348,7 @@ You can now use Internet Explorer to explore some OData URIs.
 
             {"@odata.etag":"W/"JzEsNTYzNzE0NDU3NjsxLDU2MzcxNDQ1NzYn"",
             "CellPhone":"(999) 555-0100",
-            "DriverLicense":"S468-3184-6541","AddressLine2":"",
+            "DriversLicense":"S468-3184-6541","AddressLine2":"",
             "State":"FL","Country":"US","FirstName":"Phil",
             "Email":"phil.spencer@adatum.com","CustomerGroup":
             "adv_mem_1","AddressLine1":"167 BBN Way","City":"Orlando",
@@ -404,11 +407,11 @@ In this section, you will use a console application to consume the OData endpoin
 
     1. Start Internet Explorer, and enter the following URL in the address bar: \[baseURL\]/?mi=FMRental The **FMRental** page shows the list of rentals.
 
-        [![Rental list](./media/rental-list.png)](./media/rental-list.png)
+        [![Rental list.](./media/rental-list.png)](./media/rental-list.png)
 
     2. At the bottom of the list, click **Next** to view the next page. On this page, you can see that the reservation was created for the new customer that you added.
 
-        [![customer reservation](./media/customer-reservation.png)](./media/customer-reservation.png)
+        [![customer reservation.](./media/customer-reservation.png)](./media/customer-reservation.png)
 
 This completes the walkthrough, where you've seen an external client interacting with the Fleet Management model by using OData endpoint.
 

@@ -11,7 +11,7 @@ ms.technology:
 # ROBOTS:
 audience: Developer
 # ms.devlang:
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm:
 ms.custom: 21631
 ms.search.region: Global
@@ -32,7 +32,7 @@ This topic explains how to load test cases from Azure DevOps, generate automatio
 
 In RSAT, select the **Test Plans** tab and then select **Load** to download test cases and test case automation files. All test cases (and their corresponding attachments) belonging to the test plan specified in the **Settings** tab are downloaded to the local working directory.
 
-![Load test cases](media/load-test-cases.png)
+![Load test cases.](media/load-test-cases.png)
 
 Test cases are organized by test suites under a common test plan. These are test suites you created in your Azure DevOps project. Using this tool, you can work with one test suite at a time.
 
@@ -47,13 +47,13 @@ A test case requires the following attachments for successful execution:
 
 When you select **New**, test automation files are generated in your working directory. The Excel test parameter files will appear on the grid under **Parameters File**.
 
-![List of test cases that were loaded](media/rsat-test-cases.png)
+![List of test cases that were loaded.](media/rsat-test-cases.png)
 
 You can also generate **test execution files** only, without overwriting your parameter files. Select **New \> Generate Execution Files** to regenerate only execution files and leave Excel files unaffected.
 
 You must generate test execution files when you install a new version of the tool, and when you modify or load a new version of the recording file. In this way, you update your execution files but also preserve the test parameter files.
 
-![Generate Test Execution files only menu item](media/generate-execution-files.png)
+![Generate Test Execution files only menu item.](media/generate-execution-files.png)
 
 ## Modify test parameters
 
@@ -63,11 +63,11 @@ In addition to the **General** tab, the Excel parameter file contains a **Messag
 
 Select the **TestCaseSteps** tab to configure input and validation parameters of your test case. Input and validation parameters are placed directly next to their corresponding test case step, enabling test authors with context and a simple experience. When you modify parameters, it is clear what steps of the test case you are affecting. You can enter values or formulas in context. Color coding differentiates input parameters from validation steps.
 
-![Test case steps](media/test-case-steps.PNG)
+![Test case steps.](media/test-case-steps.PNG)
 
 Reusable variables that are copied while recording the test case are also shown in context of the test case step. You can easily locate a variable and copy it to use in subsequent steps and formulas. For more information, see [Copy variables to chain test cases](rsat-chain-test-cases.md).
 
-![Test case steps variables](media/test-case-steps-rsat-var.png)
+![Test case steps variables.](media/test-case-steps-rsat-var.png)
 
 Save the Excel files when you are done making edits.
 
@@ -75,7 +75,7 @@ Save the Excel files when you are done making edits.
 
 By default, tests are executed using the admin role. If you want to run the test as a specific security role, specify the email address of a user under the **Test User** parameter in the **General** tab of the Excel parameter file. The **Test User** must be a valid user of the environments you are connecting to. The test will run under the security roles that the specific user belongs to. You need version 1.200 or newer for this feature to be functional.
 
-![General tab of the Excel parameter file](media/rsat-excel-general-tab.png)
+![General tab of the Excel parameter file.](media/rsat-excel-general-tab.png)
 
 ### Run a test in the context of a specific company
 
@@ -85,7 +85,7 @@ The **General** tab of the Excel parameter file also allows you to specify the n
 
 You can insert a pause between specific test steps. Navigate to the **TestCaseSteps** tab of the Excel parameters file and insert a value (in seconds) in the pause column of a test step. This will pause test cases execution after the test step is completed.
 
-![Pause set for Customer account field](media/Pause-after-specific-step.png)
+![Pause set for Customer account field.](media/Pause-after-specific-step.png)
 
 If you don’t see the **Pause** column, you are using an older version of the Excel parameters file and need to regenerate it. Select the desired test case, then go to **New > Generate Test Execution and Parameter Files**. This may override edits you have made to the parameters file, so you should back up the existing Excel file first.
 
@@ -105,7 +105,7 @@ You can enter messages in this tab under **Message Validation**. After a test ca
 
 You can specify any expected messages including error messages. Any message specified in this section will cause a test case to fail unless it is found in the Infolog during execution. Two operators are available: **Equals** and **Contains**. If you use **Equals**, then RSAT performs a string comparison with all messages in the Infolog and fails validation if the full message is not found. If you use **Contains**, then RSAT will validate that at least one message in the Infolog contains the string you specify.
 
-![Message validation example](media/message-validation.png)
+![Message validation example.](media/message-validation.png)
 
 You can configure whether string comparison is case sensitive or not in the **Optional** page of the **Settings** tab.
 
@@ -127,7 +127,7 @@ When a test run is in progress, you can select the **Stop** button on the toolba
 
 Optionally, you can turn on a setting that validates whether your test cases are ready for execution. This setting prevents unknown errors related to the validity of recordings and test automation files. This option is available as of RSAT version 1.210. You can enable this by selecting the **Settings** tab and then selecting the **Optional** tab.
 
-![Setting for Enable local file validation rules](media/enable-local-file-validation-rules.png)
+![Setting for Enable local file validation rules.](media/enable-local-file-validation-rules.png)
 
 When enabled, a background process continuously validates the following for each test case.
 
@@ -140,7 +140,7 @@ when you install a new version of RSAT.
 
 The Valid column in the grid indicates the result of the validation process. If validation fails, click on the **X** in the **Valid** column to view the error and recommended action.
 
-![Valid column grid](media/enable-local-file-validation-rules-2.png)
+![Valid column grid.](media/enable-local-file-validation-rules-2.png)
 
 ## Investigate results
 
@@ -148,29 +148,29 @@ When all test cases complete execution, **Pass** or **Fail** will be populated i
 
 Additional investigation details are available in Azure DevOps. To view this information, from your Azure DevOps project page, go to **Test > Runs**.
 
-![Test results](media/test-results.png)
+![Test results.](media/test-results.png)
 
 Select the desired test run. It will include the results of all tests that were executed during that run.
 
-![Outcome pie chart](media/outcome-pie-chart.png)
+![Outcome pie chart.](media/outcome-pie-chart.png)
 
-![Results for each test](media/pass-fail.png)
+![Results for each test.](media/pass-fail.png)
 
 You can open a failed test result and review the **ErrorMessage** section for information about the failure.
 
-![Error message information](media/error-message.png)
+![Error message information.](media/error-message.png)
 
-All error messages are also available locally under **C:\Users\$YourUserName\AppData\Roaming\regressionTool\errormsg-<TestCaseId>.txt**.
+All error messages are also available locally under `C:\Users\$YourUserName\AppData\Roaming\regressionTool\errormsg-<TestCaseId>.txt`.
 
 ### Test response times
 
 In addition to execution logs, the duration of a test case is also available in the test result.
 
-![Duration of a test case](media/test-duration.png)
+![Duration of a test case.](media/test-duration.png)
 
 You can also review the response time of each step of the test case by opening the **BaseTime.xml** file attached to the test result.
 
-![Response time file](media/response-time.png)
+![Response time file.](media/response-time.png)
 
 You need version 1.200 or newer for response times to be available.
 
@@ -186,7 +186,7 @@ If you are unsure what test cases to select, and you want to commit all changes 
 
 RSAT provides capabilities for managing the readiness of test cases. It also provides a sign-off process for test runs. This is configurable in the **Process** tab under Settings.
 
-![Process compliance file](media/rsat-process-compliance-settings.png)
+![Process compliance file.](media/rsat-process-compliance-settings.png)
 
 ### Enforce test case readiness
 

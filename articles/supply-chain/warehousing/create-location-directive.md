@@ -21,7 +21,7 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
-ms.dyn365.ops.version: Release 10.0.15
+ms.dyn365.ops.version: 10.0.15
 ---
 # Work with location directives
 
@@ -54,7 +54,7 @@ Before you can create a location directive, you must follow these steps to make 
 
 Many of the fields that can be set for location directives are common to all work order types. However, other fields are specific to particular work order types.
 
-![Location directives work order types](media/Location_Directives_Work_Order_Types.png "Location directives work order types")
+![Location directives work order types.](media/Location_Directives_Work_Order_Types.png "Location directives work order types")
 
 > [!NOTE]
 > Two work order types, *Canceled work* and *Cycle counting*, are used only by the system. Location directives can't be created for these work order types.
@@ -167,7 +167,7 @@ The fields on the **Location directives** FastTab are specific to the work order
     > [!NOTE]
     > This field is available only for selected work order types where replenishment is permitted. For a complete list, see the [Fields that are specific to work order types](#fields-specific-types) section earlier in this topic.
 
-- **Locate by** – Specify whether the putaway quantity should be the whole quantity on the license plate, or whether it should be item by item. Use this field to help ensure that all the contents on a license plate is put into one location, and that the system doesn't suggest that you split the contents into several locations for **ASN** (license plate receiving), **Mixed license plate** receiving, and **Cluster** receiving processes. (The **Cluster** receiving process requires that the *Cluster putaway feature* feature be turned on.) The behavior of the location directive query, the lines, and the location directive actions will vary, depending on the value that you select. The **Lines** FastTab is only used when the **Locate by** is set to *Item*.
+- **Locate by** – Specify whether the putaway quantity should be the whole quantity on the license plate, or whether it should be item by item. Use this field to help ensure that all the contents on a license plate is put into one location, and that the system doesn't suggest that you split the contents into several locations for **ASN** (license plate receiving), **Mixed license plate** receiving, and **Cluster** receiving processes. (The **Cluster** receiving process requires that the [Cluster putaway feature](putaway-clusters.md) feature be turned on.) The behavior of the location directive query, the lines, and the location directive actions will vary, depending on the value that you select. The **Lines** FastTab is only used when the **Locate by** is set to *Item*.
 
     > [!NOTE]
     > This field is available only for selected work order types where replenishment is permitted. For a complete list, see the [Fields that are specific to work order types](#fields-specific-types) section.

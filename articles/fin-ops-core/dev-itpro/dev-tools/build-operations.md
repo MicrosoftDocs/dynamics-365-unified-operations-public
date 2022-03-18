@@ -5,7 +5,7 @@ author: RobinARH
 ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 76764
 ms.assetid: f061b6cf-16f7-440e-94b9-f40666dd7431
 ms.search.region: Global
@@ -69,7 +69,7 @@ You might want to build all the elements in a specific model. To do this, you mu
 
 3. If you want to build the dependent packages first, select **Build referenced packages**. Any dependent package that must be built will be listed.
 
-    [![Build models dialog](./media/buildmodelsdialog.png)](./media/buildmodelsdialog.png)
+    [![Build models dialog.](./media/buildmodelsdialog.png)](./media/buildmodelsdialog.png)
 
 4. On the **Options** tab, review the options for the build process. The following options are available.
 
@@ -89,11 +89,11 @@ You might want to build all the elements in a specific model. To do this, you mu
 
 After a build operation is completed, you will see the results in Microsoft Visual Studio. The **Output** pane in Visual Studio shows the status of the build. You can use the **Show output from** field to switch between the standard build information and the build details.
 
-[![Output window](./media/27_devotoolsconcept.png)](./media/27_devotoolsconcept.png)
+[![Output window.](./media/27_devotoolsconcept.png)](./media/27_devotoolsconcept.png)
 
 The **Error List** pane in Visual Studio shows the build errors and warning that occurred during the build process. If you see any build errors, you must fix them and then build again, so that valid assemblies can be created for the application. Many of the warnings that appear in the **Error List** pane are best practice checks that inform you of revisions that you should make to your application so that it conforms to the best practices for application development. Ideally, you should address all the best practice warnings for an application.
 
-[![Error list](./media/28_devotoolsconcept.png)](./media/28_devotoolsconcept.png)
+[![Error list.](./media/28_devotoolsconcept.png)](./media/28_devotoolsconcept.png)
 
 You can double-click most errors and warnings to see the source of the issue. The element designer or code editor will open, where you can see what property setting or code is causing the error or warning. The **Task List** pane in Visual Studio shows tasks that have been flagged with "TODO" comments in code. For example, the following comment indicates that some object references still require validation.
 
@@ -103,11 +103,11 @@ You can double-click most errors and warnings to see the source of the issue. Th
 
 When the code is built, these "TODO" comments appear in the **Task List** pane. To view the **Task List** pane, on the **View** menu, click **Task List**.
 
-[![Task list](./media/29_devotoolsconcept.png)](./media/29_devotoolsconcept.png)
+[![Task list.](./media/29_devotoolsconcept.png)](./media/29_devotoolsconcept.png)
 
 To make resolution easier, you can add the elements that are affected by the error or task to the current project or to a new project. In the **Error List** pane or the **Task List** pane, select the rows for the errors or tasks that you want to fix, right-click, and then click **Add to project** or **Add to new project**. This saves you the effort of finding the affected elements in the application.
 
-[![Selecting rows](./media/30_devotoolsconcept.png)](./media/30_devotoolsconcept.png)
+[![Selecting rows.](./media/30_devotoolsconcept.png)](./media/30_devotoolsconcept.png)
 
 ## Additional resources
 

@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 261064
 ms.assetid: f3ab87ab-ee8b-462c-bb6f-4d98e0030513
@@ -99,7 +99,7 @@ The only value that is present on Microsoft Excel templates after installation i
     DimensionCombinationEntity.DimensionIntegration.Department==DimAttributeOMDepartmentEntity.Value
     ```
 
-    ![Relation properties in Visual Studio](./media/lookupwiki.png)
+    ![Relation properties in Visual Studio.](./media/lookupwiki.png)
 
 9.  Build the project and then synchronize it with the database.
 

@@ -7,7 +7,7 @@ author: yungu
 ms.date: 06/08/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+
 ms.technology: 
 
 # optional metadata
@@ -43,7 +43,7 @@ To determine whether the issue is related to Microsoft Excel, see [Details for i
 1. Go to **Tax** \> **Setup** \> **Tax configuration** \> **Tax setup** \> **Configurations**.
 2. On the **Report configurations** tab, verify that the correct report controller is selected.
 
-    [![Report controller field on the Report configurations tab of the Configurations page](./media/field-value-incorrect-in-GSTR-report-result-Picture1.png)](./media/field-value-incorrect-in-GSTR-report-result-Picture1.png)
+    [![Report controller field on the Report configurations tab of the Configurations page.](./media/field-value-incorrect-in-GSTR-report-result-Picture1.png)](./media/field-value-incorrect-in-GSTR-report-result-Picture1.png)
 
 3. If the incorrect controller is selected, select the correct controller. If the correct controller is already selected, move on to the next section.
 
@@ -63,7 +63,7 @@ To determine whether the issue is related to Microsoft Excel, see [Details for i
     > [!NOTE]
     > In the last line of the query, replace **xx** with the invoice number from your GSTR report.
     >
-    > [![Invoice number in a generated GSTR report](./media/field-value-incorrect-in-GSTR-report-result-Picture2.png)](./media/field-value-incorrect-in-GSTR-report-result-Picture2.png)
+    > [![Invoice number in a generated GSTR report.](./media/field-value-incorrect-in-GSTR-report-result-Picture2.png)](./media/field-value-incorrect-in-GSTR-report-result-Picture2.png)
 
 1. If the value is incorrect, the issue is related to posting. To fix the issue, see [Incorrect field value in an invoice journal or voucher](./apac-ind-GST-troubleshooting-invoice-journal-wrong.md). If the value is correct, move on to the next section.
 
@@ -73,15 +73,15 @@ To determine whether the issue is related to Microsoft Excel, see [Details for i
 2. Select the configuration, and then select **Format designer**.
 3. On the **Format designer** page, select the **Mapping** tab.
 
-    [![Mapping tab on the Format designer page](./media/field-value-incorrect-in-GSTR-report-result-Picture3.png)](./media/field-value-incorrect-in-GSTR-report-result-Picture3.png)
+    [![Mapping tab on the Format designer page.](./media/field-value-incorrect-in-GSTR-report-result-Picture3.png)](./media/field-value-incorrect-in-GSTR-report-result-Picture3.png)
 
 4. In the tree, find the report name, expand **\<Report name\>** \> **Sequence** \> **Lines** \> **Sequence**, and verify that the field mapping is correct. In this example, the field mapping should be **parmPlaceOfSupply**.
 
-    [![Field mapping in the expanded tree](./media/field-value-incorrect-in-GSTR-report-result-Picture4.png)](./media/field-value-incorrect-in-GSTR-report-result-Picture4.png)
+    [![Field mapping in the expanded tree.](./media/field-value-incorrect-in-GSTR-report-result-Picture4.png)](./media/field-value-incorrect-in-GSTR-report-result-Picture4.png)
 
 5. Go to the **TaxGSTRReportContract_IN** class, and search in the report configuration to determine whether the field mapping exists. In this example, search for **parmPlaceOfSupply** in the **TaxGSTRReportContract_IN** class.
 
-    [![Field mapping in the TaxGSTRReportContract_IN class](./media/field-value-incorrect-in-GSTR-report-result-Picture5.png)](./media/field-value-incorrect-in-GSTR-report-result-Picture5.png)
+    [![Field mapping in the TaxGSTRReportContract_IN class.](./media/field-value-incorrect-in-GSTR-report-result-Picture5.png)](./media/field-value-incorrect-in-GSTR-report-result-Picture5.png)
 
 6. If the field mapping doesn't exist, report the issue to Microsoft. If the field mapping exists, move on to the next section.
 
@@ -90,7 +90,7 @@ To determine whether the issue is related to Microsoft Excel, see [Details for i
 1. Find references of the method as explained earlier in the topic.
 2. Set breakpoints in the places where the method is called, and then debug it.
 
-    [![Breakpoints in references](./media/field-value-incorrect-in-GSTR-report-result-Picture6.png)](./media/field-value-incorrect-in-GSTR-report-result-Picture6.png)
+    [![Breakpoints in references.](./media/field-value-incorrect-in-GSTR-report-result-Picture6.png)](./media/field-value-incorrect-in-GSTR-report-result-Picture6.png)
 
 ## Determine whether customization exists
 

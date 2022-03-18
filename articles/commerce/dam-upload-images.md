@@ -4,7 +4,7 @@
 title: Upload images
 description: This topic describes how to upload images in Microsoft Dynamics 365 Commerce site builder.
 author: psimolin
-ms.date: 03/03/2020
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -45,7 +45,8 @@ When uploading an image, the following information can be specified.
 - **Publish assets after upload**: When this check box is selected, the image or images are published immediately after upload.
 
 > [!NOTE]
-> Image assets with a category assigned are also automatically tagged with the category as a keyword to aid searching for assets of a specific category.
+> - Image assets with a category assigned are also automatically tagged with the category as a keyword to aid searching for assets of a specific category.
+> - Product detail pages dynamically generate the **Alt Text** using the product name, so changing the **Alt Text** for a product image will have no impact on the rendered image.
 
 ### Naming conventions for omni-channel images 
 
@@ -56,10 +57,17 @@ The default naming convention varies based on the category:
 - Category images should be named "**/Categories/\{CategoryName\}.png**"
 - Customer images should be named "**/Customers/\{CustomerNumber\}.jpg**"
 - Employee images should be named "**/Workers/\{WorkerNumber\}.jpg**"
-- Product images should be named "**/Products/\{ProductNumber\}_000_001.png**"
+- Product images should be named "**/Products/\{ProductNumber\}\_000_001.png**"
     - 001 is the sequence of the image and it can be 001, 002, 003, 004 or 005
 - Product variant images should be named "**/Products/\{ProductNumber\} \^ \{Style\} \^ \{Size\} \^ \{Color\} \^\_000_001.png**"
-    - For example: 93039 \^ \^ 2 \^ Black \^_000_001.png
+    - For example: 93039 \^ &nbsp;\^ 2 \^ Black \^\_000_001.png
+- Product variant images with configuration dimension should be named "**/Products/\{ProductNumber\} \^ \{Configuration\}\_000_001.png**"
+    - For example: 93039 \^ LB8017_000_001.png
+
+> [!NOTE]
+> For product variant images, if the dimension value is empty there must be two whitespaces between the carets in the file name.
+
+The examples above use the default configuration. The separator character and dimensions are configurable and the exact naming required may vary between deployments. One method of identifying the exact naming convention required is to use the developer console of the browser to inspect the product variant image requests while changing the product dimensions on the storefront product details page (PDP).
 
 ## Upload an image
 

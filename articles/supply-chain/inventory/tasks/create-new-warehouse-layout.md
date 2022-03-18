@@ -3,7 +3,7 @@
  
 title: Create a new warehouse layout
 description: This topic describes how to set up information about the locations in a warehouse. 
-author: perlynne
+author: yufeihuang
 ms.date: 07/29/2019
 ms.topic: business-process 
 ms.prod:  
@@ -19,9 +19,9 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: perlynne
+ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Create a new warehouse layout
 

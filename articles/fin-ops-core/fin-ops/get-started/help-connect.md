@@ -4,7 +4,7 @@
 title: Configure the Help experience for Finance and Operations apps
 description: This topic provides information about the components of the Help system for some Microsoft Dynamics 365 apps.
 author: margoc
-ms.date: 05/11/2020
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,20 +31,23 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
 In this topic, you will find an overview of the components of the Help system for Finance and Operations apps, such as Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce, and Dynamics 365 Human Resources. The topic also explains how to connect these components and provides a summary of the process for creating custom Help.
 
 ## Help architecture
 
-Finance and Operations apps include conceptual overviews and other topics that are published to the [https://docs.microsoft.com/dynamics365](/dynamics365/) site. This content can then be accessed from the in-product **Help** pane. The following illustration shows the parts of the Help system.
+Finance and Operations apps include conceptual overviews and other topics that are published to the [Microsoft Dynamics 365 documentation](/dynamics365/) site. This content can then be accessed from the in-product **Help** pane. The following illustration shows the parts of the Help system.
 
-[![Help architecture](./media/help-architecture.png)](./media/help-architecture.png)
+[![Help architecture.](./media/help-architecture.png)](./media/help-architecture.png)
 
 The in-product Help system pulls articles from docs.microsoft.com and other connected websites. It also pulls in task guides that are stored in Business process modeler (BPM) in Microsoft Dynamics Lifecycle Services (LCS).
 
 ## Adding task guides
 
 > [!NOTE]
-> The **Task guides** tab isn't currently available in Human Resources or Commerce. <!--We are currently working to enable this functionality in a future release.--> However, the task guides in the Getting Started experience in Human Resources remain available to cover basic functionality. For both Human Resources and Commerce, procedural Help is available on the [https://docs.microsoft.com/dynamics365](/dynamics365/) site.
+> The **Task guides** tab isn't currently available in Human Resources or Commerce. <!--We are currently working to enable this functionality in a future release.--> However, the task guides in the Getting Started experience in Human Resources remain available to cover basic functionality. For both Human Resources and Commerce, procedural Help is available on the [Microsoft Dynamics 365 documentation](/dynamics365/) site.
 
 On the **System parameters** page, system admins can configure access to the relevant task guide libraries for an implementation.
 
@@ -52,14 +55,14 @@ On the **System parameters** page, system admins can configure access to the rel
 > - To configure Help, you must sign in by using an account in the same tenant as the tenant where the app is deployed.
 > - An LCS library can't be connected from an instance of the app that is running on a local virtual hard drive (VHD).
 
-[![System Parameters form with Help settings](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png)
+[![System Parameters form with Help settings.](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png)
 
 To configure task guides for a solution, follow these steps on the **System parameters** page.
 
 > [!IMPORTANT]
 > The first time that you open the **Help** tab, you must connect to Lifecycle Services. Be sure to select the link in the middle of the form, wait for the connection, close the dialog box, and then select **OK** to get to the **System Parameters** page.
 >
-> [![Connect to LCS](./media/connect-to-lcs-crop-1024x365.png "Connect to LCS")](./media/connect-to-lcs-crop.png)
+> [![Connect to LCS](./media/connect-to-lcs-crop-1024x365.png "Connect to LCS.")](./media/connect-to-lcs-crop.png)
 
 1. Select the Lifecycle Services project to connect to.
 2. Select the BPM libraries (within the selected project) to retrieve task recordings from.

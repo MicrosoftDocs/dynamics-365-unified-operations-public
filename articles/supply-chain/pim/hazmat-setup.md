@@ -3,7 +3,7 @@
 
 title: Set up hazardous materials
 description: This topic explains how to set up the data that is required to classify items as hazardous materials. When you create a sales order that includes an item that is classified as a hazardous material, the system generates hazardous material documentation for that sales order when it's shipped.
-author: dasani-madipalli
+author: t-benebo
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: 
@@ -19,9 +19,9 @@ ms.reviewer: kamaybac
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: damadipa
+ms.author: benebotg
 ms.search.validFrom: 2020-06-10
-ms.dyn365.ops.version: Release 10.0.11
+ms.dyn365.ops.version: 10.0.11
 ---
 
 # Set up hazardous materials
@@ -32,7 +32,7 @@ To use hazardous materials functionality, you must first set up the data that is
 
 ## Turn on the hazardous materials feature for your system
 
-Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
+As of Supply Chain Management version 10.0.21, this feature is turned on by default. Administrators can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to check the feature status and enable or disable it if needed. Here, the feature is listed as:
 
 - **Module:** *Product information management*
 - **Feature name:** *Hazardous materials product information and shipping documentation*

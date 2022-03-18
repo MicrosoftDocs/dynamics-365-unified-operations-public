@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
 ## Overview
 
 Entity store refresh is automated and managed by the system. Administrators do not need to schedule or monitor the Entity store refresh with the system batch schedules. The refresh operation is based on anticipated latency. This functionality is enabled in Platform update 23. As an administrator you do need to opt-in to use this feature.
@@ -49,7 +52,7 @@ Complete the following steps to enable automated Entity store refresh.
 
 You will now see the new experience.
 
-![New UI experience](./media/entity-store-data-lake-3.JPG)
+![New UI experience.](./media/entity-store-data-lake-3.JPG)
 
 After the new experience is turned on, you can define the refresh for each aggregate measurement. The following refresh options are available:
 

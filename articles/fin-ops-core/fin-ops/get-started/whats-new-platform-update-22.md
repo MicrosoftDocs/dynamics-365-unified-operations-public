@@ -65,11 +65,11 @@ The personalization toolbar has been restyled in Platform Update 22 to help user
 
 The following image shows how the personalization toolbar appeared before Platform update 22.
 
-![Personalization toolbar before Platform Update 22](media/oldPersonalizationToolbar.png "Personalization toolbar before Platform Update 22")
+![Personalization toolbar before Platform Update 22.](media/oldPersonalizationToolbar.png "Personalization toolbar before Platform Update 22")
 
 The following image shows how the personalization toolbar appears in Platform update 22 and later.
 
-![Personalization toolbar in Platform Update 22 and later](media/restyledPersonalizationToolbar.png "Personalization toolbar in Platform Update 22 and later]")
+![Personalization toolbar in Platform Update 22 and later.](media/restyledPersonalizationToolbar.png "Personalization toolbar in Platform Update 22 and later]")
 
 ## Optimized "is one of" filtering experience
 

@@ -3,7 +3,7 @@
 
 title: Mobile device user settings
 description: This topic explains how to manage mobile device user settings for warehouse workers.
-author: MarkusFogelberg
+author: Mirzaab
 ms.date: 02/09/2021
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: global
 # ms.search.industry: 
-ms.author: mafoge
+ms.author: mirzaab
 ms.search.validFrom: 2021-02-09
 ms.dyn365.ops.version: 10.0.17
 
@@ -44,12 +44,9 @@ This feature can help workers get started more quickly whenever they begin to us
 > [!IMPORTANT]
 > The *mobile device user settings* feature applies only to the new Warehouse Management mobile app. It doesn't work with the old warehouse app.
 
-## Turn on the mobile device user settings feature
+## Turn the mobile device user settings feature on or off
 
-Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** *Warehouse management*
-- **Feature name:** *User settings, icons, and step titles for the new warehouse app*
+To use the functionality described in this topic, the *User settings, icons, and step titles for the new warehouse app* feature must be turned on for your system. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *User settings, icons, and step titles for the new warehouse app* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Create and manage user settings
 
@@ -59,7 +56,7 @@ You can also define a settings profile that applies to all device brands, device
 
 Follow these steps to create and manage user settings for your mobile devices.
 
-1. Go to **Warehouse management \> Mobile device \> Mobile device user settings**.
+1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device user settings**.
 1. Select an existing user settings profile in the list pane to open its record. Alternatively, select **New** on the Action Pane to create a new profile.
 
     Each profile in the list pane is labeled to indicate the brand, model, and/or user ID that the profile applies to. More general profiles have a value of *All* for some or all of these characteristics.
@@ -88,7 +85,7 @@ Use the **Mobile device brands** page to view, create, and manage the device bra
 
 Follow these steps to create and manage your mobile device brands and models.
 
-1. Go to **Warehouse management \> Mobile device \> Mobile device brands**.
+1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device brands**.
 1. In the list pane, select a mobile device brand to open its record. Alternatively, select **New** on the Action Pane to create a new brand.
 1. In the header section of the record for the new or selected device brand, set the following fields:
 

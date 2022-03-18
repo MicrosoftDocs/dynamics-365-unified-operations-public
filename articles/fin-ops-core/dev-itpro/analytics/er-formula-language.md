@@ -1,30 +1,15 @@
 ---
-# required metadata
-
 title: Electronic reporting formula language
 description: This topic provides information about how to use the formula language in Electronic reporting (ER).
 author: NickSelin
 ms.date: 05/04/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 58771
-ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Electronic reporting formula language
@@ -43,13 +28,13 @@ ER expressions can contain any or all of the following elements:
 - [Paths](#Paths)
 - [Functions](#Functions)
 
-## <a name="Constants">Constants</a>
+## <a name="Constants"></a>Constants
 
 When you design expressions, you can use text and numeric constants (that is, values that aren't calculated). For example, the expression `VALUE ("100") + 20` uses the numeric constant **20** and the string constant **"100"**, and it returns the numeric value **120**.
 
 The ER formula designer supports escape sequences. Therefore, you can specify an expression string that should be handled differently. For example, the expression `"Leo Tolstoy ""War and Peace"" Volume 1"` returns the text string **Leo Tolstoy "War and Peace" Volume 1**.
 
-## <a name="Operators">Operators</a>
+## <a name="Operators"></a>Operators
 
 The following table shows the arithmetic operators that you can use to do basic mathematical operations, such as addition, subtraction, multiplication, and division.
 
@@ -93,9 +78,9 @@ The order in which the parts of a compound expression are evaluated is important
 
 If an expression includes multiple consecutive operators that have the same precedence, those operations are evaluated from left to right. For example, the expression `1 + 6 / 2 \* 3 > 5` returns **true**. We recommend that you use parentheses to explicitly indicate the desired order of operations in expressions, so that the expressions are easier to read and maintain.
 
-## <a name="References">References</a>
+## <a name="References"></a>References
 
-All data sources of the current ER component that are available during the design of an expression can be used as named references. The current ER component can be either a model mapping or a format. For example, the current ER model mapping contains the **ReportingDate** data source, which returns a value of the *DateTime* data type. To correctly format that value in the generating document, you can reference the data source in the expression as `DATETIMEFORMAT (ReportingDate, "dd-MM-yyyy")`.
+All data sources of the current ER component that are available during the design of an expression can be used as named references. The current ER component can be either a model mapping or a format. For example, the current ER model mapping contains the **ReportingDate** data source, which returns a value of the [*DateTime*](er-formula-supported-data-types-primitive.md#datetime) data type. To correctly format that value in the generating document, you can reference the data source in the expression as `DATETIMEFORMAT (ReportingDate, "dd-MM-yyyy")`.
 
 All characters in the name of a referencing data source that don't represent a letter of the alphabet must be preceded by a single quotation mark ('). If the name of a referencing data source contains at least one symbol that doesn't represent a letter of the alphabet, the name must be enclosed in single quotation marks. For example, these non-alphabetic symbols can be punctuation marks or other written symbols. Here are some examples:
 
@@ -104,7 +89,7 @@ All characters in the name of a referencing data source that don't represent a l
 
 If the methods of application data sources have parameters, the following syntax is used to call those methods:
 
-- If the **isLanguageRTL** method of the **System** data source has an **EN-US** parameter of the *String* data type, this method must be referred to in an ER expression as `System.isLanguageRTL("EN-US")`.
+- If the **isLanguageRTL** method of the **System** data source has an **EN-US** parameter of the [*String*](er-formula-supported-data-types-primitive.md#string) data type, this method must be referred to in an ER expression as `System.isLanguageRTL("EN-US")`.
 - Quotation marks aren't required when a method name contains only alphanumeric symbols. However, they are required for a method of a table if the name includes brackets.
 
 When the **System** data source is added to an ER mapping that refers to the **Global** application class, the expression `System.isLanguageRTL("EN-US ")` returns the *Boolean* value **FALSE**. The modified expression `System.isLanguageRTL("AR")` returns the *Boolean* value **TRUE**.
@@ -112,9 +97,9 @@ When the **System** data source is added to an ER mapping that refers to the **G
 You can limit the way that values are passed to the parameters of this type of method:
 
 - Only constants can be passed to methods of this type. The values of the constants are defined at design time.
-- Only primitive (basic) data types are supported for parameters of this type. The primitive data types include *Integer*, *Real*, *Boolean*, and *String*.
+- Only [primitive](er-formula-supported-data-types-primitive.md) (basic) data types are supported for parameters of this type. The primitive data types include *Integer*, *Real*, *Boolean*, and *String*.
 
-## <a name="Paths">Paths</a>
+## <a name="Paths"></a>Paths
 
 When an expression references a structured data source, you can use the path definition to select a specific primitive element of that data source. A dot character (.) is used to separate individual elements of a structured data source. For example, the current ER model mapping contains the **InvoiceTransactions** data source, and this data source returns a list of records. The **InvoiceTransactions** record structure contains the **AmountDebit** and **AmountCredit** fields, and both these fields return numeric values. Therefore, you can design the following expression to calculate the invoiced amount: `InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit`. The `InvoiceTransactions.AmountDebit` construction in this expression is the path that is used to access the **AmountDebit** field of the **InvoiceTransactions** data source of the *Record list* type.
 
@@ -122,19 +107,19 @@ When an expression references a structured data source, you can use the path def
 
 If the path of a structured data source starts with an "at" sign (@), it's a relative path. The "at" sign is shown instead of the remaining part of the absolute path of the hierarchical tree structure that is used. The following illustration shows an example. Here, the absolute path `Ledger.'accountingCurrency()'` indicates that the accounting currency value from the **Ledger** data source is entered in the **AccountingCurrency** field of the data model.
 
-![Example of an absolute path on the ER model mapping designer page](./media/ER-FormulaLanguage-AbsolutePath.png)
+![Example of an absolute path on the ER model mapping designer page.](./media/ER-FormulaLanguage-AbsolutePath.png)
 
 The example in the following illustration shows how a relative path is used. The relative path `@.AccountNum` indicates that the **AccountNum** field of the **Intrastat** data source (which appears one level above the **AccountNum** field in the data model's hierarchical tree) is used to enter the customer or vendor account number in the data model's **AccountNum** field.
 
-![Example of a relative path on the ER model mapping designer page](./media/ER-FormulaLanguage-RelativePath1.png)
+![Example of a relative path on the ER model mapping designer page.](./media/ER-FormulaLanguage-RelativePath1.png)
 
 The remaining part of the absolute path is also shown in the [ER formula editor](general-electronic-reporting-formula-designer.md).
 
-![Remaining part of the absolute path on the ER formula designer page](./media/ER-FormulaLanguage-RelativePath2.png)
+![Remaining part of the absolute path on the ER formula designer page.](./media/ER-FormulaLanguage-RelativePath2.png)
 
 For more information, see [Use a relative path in data bindings of ER models and formats](relative-path-data-bindings-er-models-format.md).
 
-## <a name="Functions">Functions</a>
+## <a name="Functions"></a>Functions
 
 ER built-in functions can be used in ER expressions. All data sources of the expression context (that is, the current ER model mapping or ER format) can be used as parameters of calling functions, in accordance with the list of arguments for calling functions. Constants can also be used as parameters of calling functions. For example, the current ER model mapping contains the **InvoiceTransactions** data source, and this data source returns a list of records. The **InvoiceTransactions** record structure contains the **AmountDebit** and **AmountCredit** fields, and both these fields return numeric values. Therefore, to calculate the invoiced amount, you can design the following expression that uses the built-in ER rounding function: `ROUND (InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit, 2)`.
 
@@ -178,5 +163,8 @@ IF(COUNT (IntrastatTotals)=0, 0.0, IntrastatTotals.aggregated.'$AmountMSTRounded
 
 [Extend the list of Electronic reporting functions](general-electronic-reporting-formulas-list-extension.md)
 
+[Supported primitive data types](er-formula-supported-data-types-primitive.md)
+
+[Supported composite data types](er-formula-supported-data-types-composite.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

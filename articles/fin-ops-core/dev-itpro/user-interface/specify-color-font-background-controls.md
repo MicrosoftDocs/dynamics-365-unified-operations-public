@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 90513
 ms.assetid: 84e06ee2-be1c-443b-b595-9309eaea84c5
@@ -119,7 +119,7 @@ public FormControl editControl(int column, int row)
 }
 ```
 
-[![Example of a table control that has colored cells](./media/tablecontrol_withcolor.png)](./media/tablecontrol_withcolor.png)
+[![Example of a table control that has colored cells.](./media/tablecontrol_withcolor.png)](./media/tablecontrol_withcolor.png)
 
 ## Using color in a grid control
 

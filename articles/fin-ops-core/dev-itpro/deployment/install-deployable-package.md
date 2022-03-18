@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 24191
 ms.assetid: 42d238d6-ff03-41b6-b2d5-c94bcdc37576
@@ -94,7 +94,7 @@ An AOT deployable package is a package that contains customizations and extensio
 
      When you've finished specifying the VM name and the installed components, the DefaultTopologyData.xml file should resemble the following illustration.
     
-     ![Topology configuration data](./media/defaulttopology.png)
+     ![Topology configuration data.](./media/defaulttopology.png)
 
 5. Repeat steps 1 through 4 for every other VM that is listed on the **Environment** page.
 
@@ -122,7 +122,7 @@ Based on the topology information in the DefaultTopologyData.xml file, you must 
 
 The runbook provides the sequence of steps that must be run to update the environment. The following illustration shows an example of a runbook file. Each step in a runbook is associated with an ID, a machine name, and step execution details.
 
-[![Example of a runbook file](./media/runbook-steps-1024x624.jpg)](./media/runbook-steps.jpg)
+[![Example of a runbook file.](./media/runbook-steps-1024x624.jpg)](./media/runbook-steps.jpg)
 
 ## Install a deployable package
 1. On the first machine (VM) that is listed in the runbook file, follow these steps:
@@ -196,7 +196,7 @@ The runbook provides the sequence of steps that must be run to update the enviro
 
 2. View the runbook to see the completed steps. Here is an example of a runbook file where the steps have been completed.
 
-    [![Example of completed steps in a runbook](./media/image013-1024x978.png)](./media/image013.png)
+    [![Example of completed steps in a runbook.](./media/image013-1024x978.png)](./media/image013.png)
 
 ## Backup the runbook file
 - After all the steps in the runbook are completed and you've exported the runbook, save the file outside the computer for future reference. For example, you might have to use the runbook file in these situations:

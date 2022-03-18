@@ -47,7 +47,7 @@ You must also have access to the development environment for this topology.
 
 In the current topology, [create a new ER format](tasks/er-format-configuration-2016-11.md) to generate documents that you plan to add a custom storage location for. Alternatively, [import an existing ER format into this topology](general-electronic-reporting-manage-configuration-lifecycle.md).
 
-![Format designer page](media/er-extend-file-storages-format.png)
+![Format designer page.](media/er-extend-file-storages-format.png)
 
 > [!IMPORTANT]
 > The ER format that you create or import must contain at least one of the following format elements:
@@ -66,7 +66,7 @@ To specify how documents that an ER format generates are routed, you must config
 3. In the **Class** field, specify **Attach file**.
 4. In the **Group** field, specify **File**.
 
-![Document types page](media/er-extend-file-storages-document-type.png)
+![Document types page.](media/er-extend-file-storages-document-type.png)
 
 > [!NOTE]
 > Document types are company-specific. To use an ER format with a configured destination in multiple companies, you must configure a separate document type in each company.
@@ -121,14 +121,14 @@ The **AttachingFile()** event is raised when the following ER destinations are p
 - **Archive** – When this destination is used, a new record for the ER format that is run is created in the ERFormatMappingRunJobTable table. The **Archived** field in this record is set to **False**. If the ER format is successfully run, the generated document is attached to this record, and the **AttachingFile()** event is raised. The document type that is selected in this ER destination determines the storage location for the attached file (Microsoft Azure Storage or a Microsoft SharePoint folder).
 - **Job archive** – When this destination is used, a new record for the ER form that is run is created in the ERFormatMappingRunJobTable table. The **Archived** field in this record is set to **True**. If the ER format is successfully run, the generated document is attached to this record, and the **AttachingFile()** event is raised. The document type that is configured in the ER parameters determines the storage location for the attached file (Azure Storage or a SharePoint folder).
 
-![Electronic reporting parameters page](media/er-extend-file-storages-parameters.png)
+![Electronic reporting parameters page.](media/er-extend-file-storages-parameters.png)
 
 ## Configure an ER destination
 
 1. Configure the archived destination for one of the previously mentioned elements (file, folder, merger, or attachment) of the ER format that you created or imported. For guidance, see [ER Configure destinations](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-destinations-2016-11).
 2. Use the document type that you added earlier for the configured destination. (For the example in this topic, the document type is **FileX**.)
 
-![Destination settings dialog box](media/er-extend-file-storages-destination.png)
+![Destination settings dialog box.](media/er-extend-file-storages-destination.png)
 
 ## Modify source code
 

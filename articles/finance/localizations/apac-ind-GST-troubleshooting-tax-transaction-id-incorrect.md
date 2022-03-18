@@ -7,7 +7,7 @@ author: shaoling
 ms.date: 04/29/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+
 ms.technology: 
 
 # optional metadata
@@ -38,7 +38,7 @@ Complete the steps in this topic to resolve this issue.
 
 1. The code logic to generate transaction ID is in **TaxGSTInvoiceHelper_IN::generateGSTTransID()**. Set a breakpoint there, and start debugging.
 
-    [![Breakpoint for debugging](./media/tax-transaction-id-incorrect-Picture2.png)](./media/tax-transaction-id-incorrect-Picture2.png)
+    [![Breakpoint for debugging.](./media/tax-transaction-id-incorrect-Picture2.png)](./media/tax-transaction-id-incorrect-Picture2.png)
 
 2. If the issue isn't resolved after completing step 1, determine whether customization exists. If no customization exists, contact Microsoft Support for further assistance. If possible, provide the trace file for the posting step.
 

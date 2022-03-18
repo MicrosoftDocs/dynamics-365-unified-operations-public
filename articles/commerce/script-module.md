@@ -36,7 +36,7 @@ External and inline script modules let you add client-side JavaScript scripts to
 
 The following illustration shows an example where external and inline script modules have been added to the various supported slots in a template.
 
-![Script modules in different slots of a template](media/script-modules-1.png)
+![Script modules in different slots of a template.](media/script-modules-1.png)
 
 ## External script module properties
 
@@ -64,15 +64,15 @@ To add a script module to a template, follow these steps.
 1. Select a template, and then select **Edit**.
 1. In the **Body Begin** slot, select the ellipsis (**...**), and then select **Add module**.
 
-    ![Adding a new module](media/script-modules-2.png)
+    ![Adding a new module.](media/script-modules-2.png)
 
 1. In the **Add Module** dialog box, select either the **External script** module or the **Inline script** module, and then select **OK**.
 
-    ![Adding a script module](media/script-modules-3.png)
+    ![Adding a script module.](media/script-modules-3.png)
 
 After the script module is added, it should resemble the example in the following illustration. The module can now be configured, and the template can be saved and published.
 
-![Inline script module added](media/script-modules-4.png)
+![Inline script module added.](media/script-modules-4.png)
 
 ## Additional resources
 

@@ -54,11 +54,11 @@ The Retail channel performance PowerBI.com solution lets you quickly build your 
 8. To sign in, enter a Microsoft 365 account that has permission to access your Dynamics AX environment.
 9. After data is successfully pulled from Dynamics AX into Power BI, you can view your personal **Retail channel performance** dashboard in Power BI by clicking **Retail channel performance dashboard** in the left navigation pane.
 
-    [![Retail channel performance dashboard](./media/rcmpbidashboard-1024x679.png)](./media/rcmpbidashboard.png)
+    [![Retail channel performance dashboard.](./media/rcmpbidashboard-1024x679.png)](./media/rcmpbidashboard.png)
 
 10. You can then take advantage of the Q&A feature in Power BI to query your Dynamics AX sales data by using natural language.
 
-    [![Q&A feature in Power BI](./media/qnapbiretailchannelperformance.png)](./media/qnapbiretailchannelperformance.png)
+    [![Q&A feature in Power BI.](./media/qnapbiretailchannelperformance.png)](./media/qnapbiretailchannelperformance.png)
 
 ## View a list of reports
 By clicking through any of the pinned tiles on the dashboard, you can navigate the following list of reports that provide insights into retail channel performance:
@@ -72,31 +72,31 @@ By clicking through any of the pinned tiles on the dashboard, you can navigate t
 
 For example, you might want to do a deeper analysis of geographical sales distribution.
 
-[![Geographical sales distribution report](./media/slicendicegeographicalsalesdata-1024x715.png)](./media/slicendicegeographicalsalesdata.png)
+[![Geographical sales distribution report.](./media/slicendicegeographicalsalesdata-1024x715.png)](./media/slicendicegeographicalsalesdata.png)
 
 ## Modify an existing report in the PowerBI.com solution to make it self-authored
 Here's an example that shows how easy it is to modify an existing report in the PowerBI.com solution to make it self-authored. In this example, we will modify an existing report that is named **Category & product performance** by adding **Category level 1** to the **Total amount by Month/Year** chart on that report.
 
 1. Click the **CategoryProductPerformance** tab at the bottom of the window to open the **Category & product performance** report, and then click **Edit report**.
 
-    [![Edit report](./media/editreport-1024x580.png)](./media/editreport.png)
+    [![Edit report.](./media/editreport-1024x580.png)](./media/editreport.png)
 
 2. Select the chart that is named **Total amount by Month/Year**. Then, on the right side of the window, in the **Fields** pane, expand the **Default Retail Product Category Hierarchy** node.
 
-    [![Default Retail Product Category Hierarchy node for the Total amount by Month/Year chart](./media/editreportstep2-1024x624.png)](./media/editreportstep2.png)
+    [![Default Retail Product Category Hierarchy node for the Total amount by Month/Year chart.](./media/editreportstep2-1024x624.png)](./media/editreportstep2.png)
 
 3. In the list of category levels for this hierarchy, select **Category Level 1**. The name of the chart that you selected this attribute for changes to **Total amount by Month/Year and Category level 1**, and the chart now shows the share of sales in each category for each month.
 
-    [![Total amount by Month/Year and Category level 1 chart](./media/editreportstep3-1024x625.png)](./media/editreportstep3.png)
+    [![Total amount by Month/Year and Category level 1 chart.](./media/editreportstep3-1024x625.png)](./media/editreportstep3.png)
 
 4. Finally, try to change the visualization itself. Select the **Total amount by Month/Year and Category level 1** chart, and then, in the **Visualizations** pane, click **Area chart** or **Stacked area chart**, and see the effect.
 
-    [![Changing the visualization of the Total amount by Month/Year and Category level 1 chart](./media/editreportstep4-1024x630.png)](./media/editreportstep4.png)
+    [![Changing the visualization of the Total amount by Month/Year and Category level 1 chart.](./media/editreportstep4-1024x630.png)](./media/editreportstep4.png)
 
 ## Get a glimpse of the actual data model
 The data model that is included in the PowerBI.com solution for the Dynamics AX data entities and aggregated data entities lets you slice and dice across various measures by using different dimensions.
 
-[![Data model](./media/datamodeltomakeslicingndicingpossibleinrcm-1024x600.png)](./media/datamodeltomakeslicingndicingpossibleinrcm.png)
+[![Data model.](./media/datamodeltomakeslicingndicingpossibleinrcm-1024x600.png)](./media/datamodeltomakeslicingndicingpossibleinrcm.png)
 
 ## Additional resources
 

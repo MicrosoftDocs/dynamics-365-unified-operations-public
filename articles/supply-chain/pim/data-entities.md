@@ -3,7 +3,7 @@
 
 title: Product data entities 
 description: This topic provides information about the different entities that can be used to import and export product data. 
-author: cvocph
+author: t-benebo
 ms.date: 01/07/2020
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: 
-ms.author: kamaybac
+ms.author: benebotg
 ms.dyn365.ops.version: 7.3 
 ms.search.validFrom: 2019-12-1
 
@@ -45,8 +45,8 @@ To import and export product data, you must use data entities. The following tab
 | Sellable released products | `EcoResSellableReleasedProductEntity` | This entity is used to export only sellable products. Sellable products are products that have the information that they require in order to be used in a sales order. The same rules apply when a product is validated by using the **Validate** function on the **Released products** page. |
 | Released Distinct products V2 | `EcoResDistinctProductV2Entity` | This entity is used to export distinct products. Those distinct products can be products, subtype products, and product variants. |
 | Released products masters V2 | `EcoResProductMasterV2Entity` | This entity is used to import and export product masters. It isn't enabled for data management. |
-| Item - barcode | `EcoResProductBarcodeEntityV3` | This entity is used to export products and bar codes. This entity doesn't allow change tracking, updates, or deletes. To use change tracking, updates, or deletes on barcodes, use the **Item - barcode association** entity. |
-| Item - barcode association | `EcoResProductBarcodeAssociationEntity` | This entity is used to export products and bar codes. It allows change tracking, updates, and deletes. To use the entity, the feature *Item - barcode improvements* must be enabled in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Its entity key is `AssociationID`, which creates the association between the barcode and the product. To add support for this key, the table `InventitemBarcodeAssociation` will be populated for existing item barcode data when you turn on the feature. The table is populated using a batch job and if your barcode table has a large number of records, it could take significant time to run the batch job. Therefore, we recommend that you plan to enable the feature (and therefore run the batch job) at a time that fits your business schedule. |
+| Item - barcode | `EcoResProductBarcodeEntityV3` | This entity is used to export products and bar codes. This entity doesn't allow change tracking, updates, or deletes. To use change tracking, updates, or deletes on bar codes, use the **Item - barcode association** entity. |
+| Item - barcode association | `EcoResProductBarcodeAssociationEntity` | This entity is used to export products and bar codes. It allows change tracking, updates, and deletes. To use the entity, the feature *Item - barcode improvements* must be enabled in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Its entity key is `AssociationID`, which creates the association between the bar code and the product. To add support for this key, the table `InventitemBarcodeAssociation` will be populated for existing item bar code data when you turn on the feature. The table is populated using a batch job and if your bar code table has a large number of records, it could take significant time to run the batch job. Therefore, we recommend that you plan to enable the feature (and therefore run the batch job) at a time that fits your business schedule. |
 | Product lifecycle states | `EcoResProductLifecycleSateEntity` | This entity is used to import and export the different product lifecycle states that can be assigned to a product. |
 
 > [!NOTE]

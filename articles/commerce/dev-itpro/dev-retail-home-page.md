@@ -1,30 +1,16 @@
 ---
-# required metadata
-
 title: Commerce for IT pros and developers
 description: This page lists the resources that are available for IT pros and developers who support Commerce.
 author: RobinARH
-ms.date: 06/02/2020
+ms.date: 08/26/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 24411
-ms.assetid: af9a7622-665e-4ed9-89ad-954d4705abfd
+ms.reviewer: tfehr
+ms.custom: "intro-internal"
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
 ---
 
 # Commerce for IT pros and developers
@@ -44,6 +30,10 @@ This page lists the resources that are available for IT pros and developers who 
 - [Headless commerce engine architecture](retail-server-architecture.md)
 - [Publish an online store channel](retail-online-store-publishing-architecture.md)
 - [Retail channel performance PowerBI.com solution](../../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
+
+## Development
+
+- [Set up a local development environment](setup-local-dev-env.md)
 
 ## Deployment
 
@@ -119,7 +109,6 @@ This page lists the resources that are available for IT pros and developers who 
 ## Hardware station
 
 - [Configure and install Retail hardware station](../retail-hardware-station-configuration-installation.md)
-- [Hardware Station extensibility](hardware-station-extensibility.md)
 - [Integrate POS with a new hardware device](hardware-device-extension.md)
 
 ## Commerce Runtime
@@ -134,16 +123,15 @@ This page lists the resources that are available for IT pros and developers who 
 
 ## Retail SDK
 
+- [Migrate to the Commerce SDK](retail-sdk/migrate-commerce-sdk.md)
 - [Retail software development kit (SDK) architecture](retail-sdk/retail-sdk-overview.md)
-- [Upcoming changes in the Retail SDK](UpcomingSDKChanges.md)
-- [Development and ALM changes from version 10.0.10 to 10.0.13](dev-changes-10-13.md)
 - [Set up a build pipeline for the independent-packaging SDK](build-pipeline.md)
 - [Create deployable packages](retail-sdk/retail-sdk-packaging.md)
-- [Merge the build systems for Commerce and Finance](retail-sdk/integrate-retail-sdk-continuous-build.md)
 - [Migrate the Retail SDK from Visual Studio 2015 to Visual Studio 2017](retail-sdk/migrate-sdk.md)
 - [Retail software development kit (SDK) samples](retail-sdk/retail-sdk-samples.md)
 - [Download samples and packages from GitHub and NuGet](retail-sdk/sdk-github.md)
 - [Channel database extensions](channel-db-extensions.md)
+- [Remove Cloud Scale Unit extensions](retail-sdk/remove-csu-package.md)
 - [Enable custom Commerce Data Exchange synchronization via extension](cdx-extensibility.md)
 - [Define and set order attributes](order-attributes.md)
 - [Customer attributes](customer-attributes.md)
@@ -160,7 +148,6 @@ This page lists the resources that are available for IT pros and developers who 
 - [Set up Commerce SDK build pipeline](retail-sdk/SDK-build-pipeline.md)
 - [Retail SDK FAQ](retail-sdk/sdk-faq.md)
 - [Create Retail Server extension API (Retail SDK version 10.0.11 and later)](retail-server-icontroller-extension.md)
-- [Create new Retail Server extension API (Retail SDK version 10.0.11 and earlier)](retail-server-extension.md)
 - [Consume Retail Server APIs in external applications](consume-retail-server-api.md)
 
 ## eCommerce
@@ -175,6 +162,5 @@ This page lists the resources that are available for IT pros and developers who 
 - [Create Windows installers for payment connectors](create-windows-installer-payment-connector.md)
 - [Deploy payment connectors](deploy-payment-connector.md)
 - [Create Commerce payment packaging for Finance and Operations deployment](payment-connector-package.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -37,7 +37,7 @@ The invoice automation solution enables a standard interface that can accept inv
 
 The following illustration shows a sample integration scenario where Contoso has partnered with an OCR service provider for vendor invoice processing. Contoso’s vendors send invoices to the service provider by email. Through OCR processing, the service provider generates invoice metadata (header and/or lines) and a scanned image of the invoice. An integration layer then transforms these artifacts so that they can be consumed.
 
-![Sample integration scenario](media/vendor_invoice_automation_01.png)
+![Sample integration scenario.](media/vendor_invoice_automation_01.png)
 
 Several variations of the preceding scenario are possible if invoice integration is required. Data migration is another use case where this interface can be used to create invoices and attachments.
 
@@ -95,7 +95,7 @@ In scenarios where vendor invoices come into Finance and Operations via integrat
 
 The new list page for invoice exceptions is available at **Accounts payable** > **Invoices** > **Import failures** > **Vendor invoices that failed to import**. This page shows all the vendor invoice header records from the staging table of the Vendor invoice header data entity. Note that you can view the same records from the **Data management** workspace. You can also perform the same actions that are provided in the exception handling feature from the **Data management** workspace. The exception handling feature has been optimized for a functional user, which makes it easier to use.
 
-![Exceptions list page](media/vendor_invoice_automation_02.png)
+![Exceptions list page.](media/vendor_invoice_automation_02.png)
 
 This list page includes the following fields that come in via the feed:
 
@@ -139,7 +139,7 @@ The exceptions list page supports the standard security constructs that the **Da
 + By user
 + By legal entity
 
-![Import job that is secured by user role and legal entity](media/vendor_invoice_automation_04.png)
+![Import job that is secured by user role and legal entity.](media/vendor_invoice_automation_04.png)
 
 If security is configured for the invoice import job, the exceptions list page honors those settings. Users will be able to see only the invoice exception records that this setup allows them to see.
 

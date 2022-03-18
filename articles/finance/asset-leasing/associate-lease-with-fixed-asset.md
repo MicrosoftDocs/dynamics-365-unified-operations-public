@@ -30,6 +30,7 @@ ms.dyn365.ops.version: 10.0.14
 # Associate fixed assets with leases
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 The topic explains how to associate an existing fixed asset with a new lease. When you associate a fixed asset with a lease, the right-of-use (ROU) asset value at initial recognition will be the acquisition cost of the fixed asset.
 
@@ -54,8 +55,18 @@ After you post the initial recognition journal entry, the transaction appears as
 
 The fixed asset can now be depreciated by using the standard depreciation functionality in Fixed assets. For more information about depreciation, see [Depreciation methods and conventions](../fixed-assets/depreciation-methods-conventions.md).
 
+When a lease is associated with a fixed asset, the **Service life** field on the fixed asset book will be updated to align with the smallest value from the following criteria: 
+
+ - The asset’s useful life
+ - The lease term from the associated lease book
+
+If the **Transfer of ownership** field is set to **Yes** for the lease book, the value in the **Service life** field will always be the asset’s useful life. 
+ 
+The Service life will be updated every time the lease is adjusted to ensure that the right-of-use asset is depreciated over the term lease, as if it were depreciated in Asset leasing.
+
 > [!NOTE]
 > If you associate a fixed asset with a lease, the **Asset depreciation** and **Lease impairment** buttons are disabled in Asset leasing. You can view asset depreciation and lease impairment transactions from Fixed assets. The **Asset transactions** button, which opens an inquiry form is also disabled. You can also open the **Asset transactions** inquiry form in Fixed assets.  
 
+The **Fixed assets** and **Fixed asset book** pages will display the lease ID that is associated with a fixed asset. If a fixed asset is associated with a lease, the lease ID and lease description will be displayed on the **Lease information** FastTab on the **Fixed assets** page. For fixed asset books that are associated with lease books, the **Lease ID**, **Lease description**, and **Book type** fields will display information for the selected fixed asset book on the **Lease information** FastTab, to indicate that it's associated with a lease book.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

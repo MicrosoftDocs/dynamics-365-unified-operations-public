@@ -29,11 +29,13 @@ ms.dyn365.ops.version: 10.0.15
 # Manufacturing execution workloads for cloud and edge scale units
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-> [!WARNING]
-> The manufacturing execution workload is available in preview at this point in time.
+> [!IMPORTANT]
+> The manufacturing execution workload is currently available only in preview.
+>
 > Some business functionality isn't fully supported in the public preview when workload scale units are used.
+>
+> You can't run the preview manufacturing execution workload on a scale unit where the warehouse execution workload is also installed.
 
 In manufacturing execution, scale units deliver the following capabilities:
 
@@ -48,7 +50,7 @@ This topic describes how manufacturing execution workloads work with cloud and e
 
 As the following illustration shows, the manufacturing lifecycle is divided into three phases: *Plan*, *Execute*, and *Finalize*.
 
-[![Manufacturing execution phases when a single environment is used](media/mes-phases.png "Manufacturing execution phases when a single environment is used")](media/mes-phases-large.png)
+[![Manufacturing execution phases when a single environment is used](media/mes-phases.png "Manufacturing execution phases when a single environment is used.")](media/mes-phases-large.png)
 
 The _Plan_ phase includes product definition, planning, order creation and scheduling, and release. The release step indicates the transition from the _Plan_ phase to the _Execute_ phase. When a production order is released, the production order jobs will be visible on the production floor and ready for execution.
 
@@ -58,7 +60,7 @@ When a production job is marked as completed, it moves from the _Execute_ phase 
 
 As the following illustration shows, when scale units are used, the _Execute_ phase is split out as a separate workload.
 
-[![Manufacturing execution phases when scale units are used](media/mes-phases-workloads.png "Manufacturing execution phases when scale units are used")](media/mes-phases-workloads-large.png)
+[![Manufacturing execution phases when scale units are used](media/mes-phases-workloads.png "Manufacturing execution phases when scale units are used.")](media/mes-phases-workloads-large.png)
 
 The model now goes from a single-instance installation to a model that is based on the hub and scale units. The _Plan_ and _Finalize_ phases run as back-office operations on the hub, and the manufacturing execution workload runs on the scale units. Data is transferred asynchronously between the hub and scale units.
 
@@ -91,7 +93,7 @@ Although the job usually runs automatically, you can run it manually at any time
 
 To review the registration processing log, sign in to the hub, and go to **Production control \> Periodic tasks \> Backoffice workload management \> Raw registration processing log**. The **Raw registration processing log** page shows a list of processed raw registrations and the status of each registration.
 
-![Raw registration processing log page](media/mes-processing-log.png "Raw registration processing log page")
+![Raw registration processing log page.](media/mes-processing-log.png "Raw registration processing log page")
 
 You can work on any registration in the list by selecting it and then selecting one of the following buttons on the Action Pane:
 
@@ -132,6 +134,22 @@ In the current release, report as finished and putaway operations (for finished 
 ### Customize report as finished and putaway functionality
 
  -->
+
+## Enable and use the start operation on a scale unit
+
+In the current release, the start operation for production and batch orders is supported by the [warehouse execution workload](cloud-edge-workload-warehousing.md) (not the manufacturing execution workload). Therefore, to use this functionality when you're connected to a scale unit, you must complete these tasks:
+
+- Install both the warehouse execution workload and the manufacturing execution workload on your scale unit.
+- Enable the *Start production order on warehouse management workload for the cloud and edge scale unit* feature in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- Use the Warehouse Management mobile app to start the production or batch order.
+
+## Enable and use material consumption on a scale unit
+
+In the current release, the flow in the Warehouse Management mobile app for registering material consumption is supported by the [warehouse execution workload](cloud-edge-workload-warehousing.md) (not the manufacturing execution workload). Therefore, to use this functionality when you're connected to a scale unit, you must complete these tasks:
+
+- Install both the warehouse execution workload and the manufacturing execution workload on your scale unit.
+- Enable the *Register material consumption on the mobile app on a scale unit* feature in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- Use the Warehouse Management mobile app to register material consumption.
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 

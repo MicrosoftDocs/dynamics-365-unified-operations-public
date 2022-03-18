@@ -5,7 +5,7 @@ title: Production order lifecycle overview
 description: When a production order is created, a request is initiated to start producing an item. The production order contains information about what will be produced, the quantity to produce, and the planned finish date. It also contains information about which materials to consume and which process to follow to produce the item.
 author: johanhoffmann
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 19741
+ms.custom: ["19741", "intro-internal"]
 ms.assetid: bbb6e69d-479c-45fc-a0a8-66da5df16c7f
 ms.search.region: Global
 ms.search.industry: Manufacturing

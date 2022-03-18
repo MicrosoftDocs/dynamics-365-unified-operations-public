@@ -3,7 +3,7 @@
 
 title: Hazardous materials in products, orders, shipments, and loads
 description: This topic explains how to set hazardous material properties for released products, how to put stock limits on hazardous items, and how to include hazardous materials in a sales order, shipment, or load.
-author: dasani-madipalli
+author: t-benebo
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: 
@@ -19,9 +19,9 @@ ms.reviewer: kamaybac
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: damadipa
+ms.author: benebotg
 ms.search.validFrom: 2020-06-10
-ms.dyn365.ops.version: Release 10.0.11
+ms.dyn365.ops.version: 10.0.11
 ---
 
 # Hazardous materials in products, orders, shipments, and loads

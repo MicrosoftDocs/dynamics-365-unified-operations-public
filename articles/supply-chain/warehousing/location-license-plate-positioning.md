@@ -20,7 +20,7 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.7
+ms.dyn365.ops.version: 10.0.7
 ---
 
 # Location license plate positioning
@@ -33,12 +33,9 @@ The feature adds a sequence number to each license plate that is put into a stor
 
 This topic presents a scenario that shows how to set up and use the feature.
 
-## Turn on the Location license plate positioning feature
+## Turn the Location license plate positioning feature on or off
 
-Before you can use license plate location positioning, the feature must be turned on in your system. Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
-
-- **Module:** *Warehouse management*
-- **Feature name:** *Location license plate positioning*
+To use the functionality described in this topic, the *Location license plate positioning* feature must be turned on for your system. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *Location license plate positioning* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Example scenario
 
@@ -91,7 +88,7 @@ The feature must be turned on in the location profile for every location where i
 1. While **License plate** is still selected, select **Add table join**.
 1. In the list of tables that appears, in the **Relation** column, select **Location license plate positioning (License plate)**. Then select **Select** to add **Location license plate positioning** to the **Inventory dimensions** table join.
 
-    ![Table joins](media/LpTableJoin.png "Table joins")
+    ![Table joins.](media/LpTableJoin.png "Table joins")
 
 1. Select **OK** to confirm the updated joined tables and close the query editor.
 1. On the **Location Directive Actions** FastTab, select **Edit query** again to reopen to the query editor.
@@ -103,7 +100,7 @@ The feature must be turned on in the location profile for every location where i
     - **Field:** *LP Position*
     - **Criteria:** *1*
 
-    ![New range](media/LpPositionCriteria.png "New range")
+    ![New range.](media/LpPositionCriteria.png "New range")
 
 1. Select **OK** to confirm your changes and close the query editor.
 
@@ -278,7 +275,7 @@ Now that the *Location license plate positioning* feature has been set up, and t
 1. On the **Scan a work ID / license plate ID** page, select the **ID** field, and then enter the work ID from the sales line.
 1. Notice that the picking work directs you to pick item *A0002* from location *01A01R1S2B*. You receive this instruction because item *A0002* is on a license plate that is in position *1* in that location.
 
-    ![Position 1 location](media/LocationLicensePlatePositioning.png "Position 1 location")
+    ![Position 1 location.](media/LocationLicensePlatePositioning.png "Position 1 location")
 
 1. Enter the license plate ID that you created for the location, and then follow the prompts to pick the sales order.
 

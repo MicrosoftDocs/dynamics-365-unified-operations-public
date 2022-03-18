@@ -5,7 +5,7 @@ author: laneswenka
 ms.date: 01/21/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-08-30
@@ -54,7 +54,7 @@ For example, if you apply a binary hotfix or platform update to a build VM, the 
 
 For test automation, concentrate on unit tests (use the SysTest framework) that are data independent or create their own data. Use a smaller number of functional scenario tests (based on Task Recorder) that rely on test data to execute. Scenario tests are more expensive to maintain. Unit tests can then be executed on any development environment easily and quickly. Review the [Test Automation Pyramid](/archive/blogs/dave_froslie/test-automation-pyramid) blog article and refer to [Automated testing guidance](/archive/blogs/axdevalm/automated-testing-guidance-for-ax-7).
 
-![media/testautomationpyramid1.png](media/testautomationpyramid1.png) Some key concepts to keep in mind:
+![media/testautomationpyramid1.png.](media/testautomationpyramid1.png) Some key concepts to keep in mind:
 
 - Write tests that run independently and do not assume any kind of ordering.
 - Task recorder tests should be limited to functional scenarios tests.
@@ -77,7 +77,7 @@ Create and manage your test database as follows:
 
 On a build environment, copy this backup over to the I:\\DynamicsBackupDatabases (on some environment it may be a different drive than i:). This database will be restored at the beginning of every build. This step is executed as part of the first step of the build definition called **Prepare for build**.
 
-![media/prepareforbuild.png](media/prepareforbuild.png)
+![media/prepareforbuild.png.](media/prepareforbuild.png)
 
 ### How do I distribute my application to customers?
 
@@ -135,7 +135,7 @@ If you are a Microsoft partner developing code for more than one customer, we re
 
 ### How many sandbox environments do I need within an LCS customer implementation project?
 
-A customer subscription comes with three environments by default: a dev or build environment, a tier-2 sandbox environment, and a production environment. You can use the tier-2 sandbox environment as a configuration and a UAT environment before the application goes live in production. After configuring the sandbox with the code and data that you need to go live (also known as your *gold configuration*), you can run your validation on the same environment. When your validation passes, restore your sandbox database to the point in time of its gold configuration. You can then deploy your code to production and copy the sandbox database to your production environment. You can also choose to have more than one sandbox environment that is tier-2 or higher, especially after your application is live. One sandbox can be used as a pre-production UAT environment, and the other sandboxes can be used for configuration, upgrade or other scenarios. You can purchase additional tier-2 or higher sandboxes.
+A customer subscription comes with two environments by default: a tier-2 sandbox environment and a production environment. You can use the tier-2 sandbox environment as a configuration and a UAT environment before the application goes live in production. After configuring the sandbox with the code and data that you need to go live (also known as your *gold configuration*), you can run your validation on the same environment. When your validation passes, restore your sandbox database to the point in time of its gold configuration. You can then deploy your code to production and copy the sandbox database to your production environment. You can also choose to have more than one sandbox environment that is tier-2 or higher, especially after your application is live. One sandbox can be used as a pre-production UAT environment, and the other sandboxes can be used for configuration, upgrade or other scenarios. You can purchase additional tier-2 or higher sandboxes.
 
 The following servicing requests and tools are supported by LCS, which may help you decide whether one tier-2 sandbox is sufficient for your implementation.
 

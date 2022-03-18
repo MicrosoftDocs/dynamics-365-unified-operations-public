@@ -3,7 +3,7 @@
 
 title: Credit limits for customers
 description: This article provides an overview of how credit limits work in Dynamics 365 Supply Chain Management.
-author: omulvad
+author: Henrikan
 ms.date: 09/15/2017
 ms.topic: article
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: kamaybac
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0 
 ---

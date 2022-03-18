@@ -5,7 +5,7 @@ title: Finance and Operations application architecture
 description: This topic provides an overview of the architecture of Finance and Operations applications.
 author: ClaudiaBetz-Haubold
 ms.date: 04/24/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: 56551
+ms.custom: ["56551", "intro-internal"]
 ms.assetid: d876e8de-d547-43e5-9259-f095821dc758
 ms.search.region: Global
 # ms.search.industry: 
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 The Finance and Operations application cloud architecture contains all the elements that are common to all Microsoft cloud offerings, as described in [Subscriptions, licenses, accounts, and tenants for Microsoft's cloud offerings](/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings). Beyond this, it also includes services that automate software deployment and provisioning, operational monitoring and reporting, and seamless application lifecycle management.
 
-![Cloud architecture](./media/cloud-architecture.png)
+![Cloud architecture.](./media/cloud-architecture.png)
 
 The cloud architecture consists of these conceptual areas:
 

@@ -45,7 +45,7 @@ In a one-box environment, developers can create, modify, and preview reports, fr
 
 The enhanced report viewing experience that provides for end users is the same as the report preview experience in Microsoft Visual Studio. You no longer use a separate design preview in Visual Studio. Instead, just press Ctrl+F5 to build and preview the report in an Internet Explorer window. The report appears exactly as it would appear in the client. Even the user's parameter experience is the same. The following image shows an example of a report preview that is opened from Visual Studio.
 
-[![Example of a report preview](./media/2_report.png)](./media/2_report.png)
+[![Example of a report preview.](./media/2_report.png)](./media/2_report.png)
 
 ## Service administration prerequisites
 The following table compares the service administration prerequisites for Microsoft Dynamics AX 2012 and the current version of the application.

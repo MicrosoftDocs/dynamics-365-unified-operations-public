@@ -71,7 +71,7 @@ You can make a calculation for a specific item to get an overview of where in As
 
 In the screenshot below, you see an example of an item-where-used calculation for item number "1000".
 
-![Example of item where used calculation](media/12-controlling-and-reporting.png)
+![Example of item where used calculation.](media/12-controlling-and-reporting.png)
 
 
 

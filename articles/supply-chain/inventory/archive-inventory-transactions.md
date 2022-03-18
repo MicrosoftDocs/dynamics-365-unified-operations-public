@@ -3,7 +3,7 @@
 
 title: Archive inventory transactions
 description: This topic describes how to archive inventory transaction data to help improve system performance.
-author: sherry-zheng
+author: yufeihuang
 ms.date: 03/01/2021
 ms.topic: article
 ms.prod: 
@@ -19,9 +19,9 @@ ms.reviewer: kamaybac
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: chuzheng
+ms.author: yufeihuang
 ms.search.validFrom: 2021-03-01
-ms.dyn365.ops.version: Release 10.0.18
+ms.dyn365.ops.version: 10.0.18
 ---
 # Archive inventory transactions
 
@@ -67,7 +67,7 @@ To archive inventory transactions, follow these steps.
 
     The **Inventory transactions archive** page appears and shows a list of archived process records.
 
-    ![Inventory transactions archive page](media/archive-inventory-empty.png "Inventory transactions archive page")
+    ![Inventory transactions archive page.](media/archive-inventory-empty.png "Inventory transactions archive page")
 
 1. On the Action Pane, select **Inventory transactions archive** to create an inventory transaction archive.
 1. In the **Inventory transactions archive** dialog box, on the **Parameters** FastTab, set the following fields:
@@ -75,7 +75,7 @@ To archive inventory transactions, follow these steps.
     - **From date in closed ledger period** – Select the earliest transaction date to include in the archive.
     - **To date in closed ledger period** – Select the latest transaction date to include in the archive.
 
-    ![Inventory transactions archive dialog box](media/archive-inventory-dates.png "Inventory transactions archive dialog box")
+    ![Inventory transactions archive dialog box.](media/archive-inventory-dates.png "Inventory transactions archive dialog box")
 
     > [!NOTE]
     > Only periods that meet the [prerequisites](#prerequisites) will be available for selection.
@@ -90,7 +90,7 @@ To archive inventory transactions, follow these steps.
 
 The **Inventory transactions archive** page shows your full archiving history. Each row in the grid shows information such as the date when the archive was created, the user who created it, and its status.
 
-![Archiving history on the Inventory transactions archive page](media/archive-inventory-full.png "Archiving history on the Inventory transactions archive page")
+![Archiving history on the Inventory transactions archive page.](media/archive-inventory-full.png "Archiving history on the Inventory transactions archive page")
 
 In the drop-down list at the top of the page select one of the following values to filter the archives that are shown in the grid:
 
@@ -112,7 +112,7 @@ The toolbar above the grid provides the following buttons that you can use to wo
 
 - **Archived transactions** – View the full details of the selected archive. The **Archived transactions** page that appears shows all the transactions in the archive.
 
-    ![Archived transactions page](media/archive-inventory-transactions.png "Archived transactions page")
+    ![Archived transactions page.](media/archive-inventory-transactions.png "Archived transactions page")
 
     To view more information about a specific transaction on the **Archived transactions** page, select it in the grid, and then, on the Action Pane, select **Archived transaction details**. The **Archived transaction details** page that appears shows information such as the ledger posting, related subledger references, and financial dimensions.
 

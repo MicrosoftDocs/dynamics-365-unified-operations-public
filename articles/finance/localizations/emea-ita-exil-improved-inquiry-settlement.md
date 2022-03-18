@@ -49,11 +49,11 @@ The grid in the upper part of the page shows the customer invoices or vendor inv
 
 The grid in the lower part of the page shows the debit and credit transactions of the selected customer or vendor. These transaction types include invoices, payments, and foreign currency revaluation transactions. Any non-zero balance for invoices is highlighted in red.
 
-![Invoice/payments list page](media/emea-ita-exil-DC-inquiry-vendor-invoice-payment.png)
+![Invoice/payments list page.](media/emea-ita-exil-DC-inquiry-vendor-invoice-payment.png)
 
 On the Action Pane, select **Parameters** to set a filter so that the **Invoice/payments** list page shows only specific data.
 
-![Parameters drop-down dialog box](media/emea-ita-exil-DC-inquiry-parameters.png)
+![Parameters drop-down dialog box.](media/emea-ita-exil-DC-inquiry-parameters.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

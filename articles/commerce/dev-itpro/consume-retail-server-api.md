@@ -4,7 +4,7 @@
 title: Consume Retail Server APIs in external applications
 description: This topic describes how to consume the Retail Server APIs in external applications.
 author: mugunthanm
-ms.date: 03/02/2021
+ms.date: 01/11/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 28021
 ms.assetid: 
@@ -104,13 +104,13 @@ The client secret is also known as an *application password*. It's a string valu
 3. Add a description for your client secret.
 4. Select a duration.
 5. Select **Add**.
-6. Be sure to record the secret's value so that you can use it in your client application code. **The secret's value is never displayed again after you leave this page.**
+6. Be sure to record the secret's value so that you can use it in your client application code. 
 
 ## Register the app in the Finance and Operations app so that Retail Server trusts it
 
 1. In Commerce Headquarters, go to **Retail and Commerce** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Commerce shared parameters**.
-2. On the **Identity providers** FastTab, select the provider that begins with `HTTPS://sts.windows.net/`. The values on the **Relying parties** FastTab are set based on your selection.
-3. On the **Relying parties** FastTab, select **Add**. Enter the client ID that was generated during the Retail server app registration in Azure. Set the **Type** field to **Confidential** and the **UserType** field to **Application**.
+2. On the **Identity providers** FastTab, select the provider with type `Azure Active Directory`. The values on the **Relying parties** FastTab are set based on your selection.
+3. On the **Relying parties** FastTab, select **Add**. Enter the client ID that was generated during the client app registration (not the headless Commerce app). Set the **Type** field to **Confidential** and the **UserType** field to **Application**.
 4. On the Action Pane, select **Save**.
 5. Select the new relying party, and then on the **Server resource IDs** FastTab, select **Add**. In the **Server Resource ID** column, enter the Application ID URI (this is the API URI generated during the Retail Server app registration).
 6. On the Action Pane, select **Save**.
@@ -144,9 +144,9 @@ For the full list of APIs, see [Commerce Scale Unit customer and consumer APIs](
     | Key            | Value                                                              |
     |----------------|--------------------------------------------------------------------|
     | grant\_type    | **client\_credentials**                                            |
-    | client\_id     | The client ID that was generated during Azure Retail Server app registration.     |
-    | client\_secret | The client secret that was generated during Azure Retail Server app registration. |
-    | resource       | Enter the Application ID URI (this is the API URI generated during the Retail Server app registration).       |
+    | client\_id     | The client ID that was generated during the client app registration.     |
+    | client\_secret | The client secret (the secret value, not the secret ID) that was generated during the client app registration. |
+    | resource       | Enter the Application ID URI (this is the API URI generated during the headless Commerce app registration).       |
 
 2. After the request has finished running, the **access\_token** value will be generated in the response body. Copy this token value. You will use it to connect to the Retail Server.
 
@@ -189,8 +189,8 @@ After the request has finished running, the response body will contain the custo
 
     ```xml
     <appSettings>
-        <add key="aadClientId" value="client id generated during Retail server app registration in Azure" />
-        <add key="aadClientSecret" value="client secret generated during Retail server app registration in Azure" />
+        <add key="aadClientId" value="client id generated during the client app registration in Azure" />
+        <add key="aadClientSecret" value="client secret generated during the client app registration in Azure" />
         <add key="aadAuthority" value="https://sts.windows.net/tenant id/" />
         <add key="retailServerUrl" value="https://RetailserverURL/Commerce" /> 
         <add key="resource" value="api://2fxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" /> <!-- //Application ID URI generated during the Retail Server app registration -->
@@ -202,7 +202,7 @@ After the request has finished running, the response body will contain the custo
 
 1. Use the NuGet package manager for the project to add the following NuGet packages.
 
-    + Microsoft.IdentityModel.Clients.ActiveDirectory
+    + Microsoft.Identity.Client
     + Microsoft.Dynamics.Commerce.RetailProxy
 
     The **Microsoft.Dynamics.Commerce.RetailProxy** NuGet package can be added from the **RetailSDK\\pkgs** folder. In the NuGet manager, add a local repository for the **RetailSDK\\pkgs** folder.
@@ -237,7 +237,7 @@ After the request has finished running, the response body will contain the custo
     ```C#
     private static async Task<ManagerFactory> CreateManagerFactory()
     {
-        Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext authenticationContext = new   Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext(authority.ToString(), false);
+        Microsoft.Identity.Client.AuthenticationContext authenticationContext = new   Microsoft.Identity.Client.AuthenticationContext(authority.ToString(), false);
         AuthenticationResult authResult = null;
         authResult = await authenticationContext.AcquireTokenAsync(resource, new ClientCredential(clientId, clientSecret));
 

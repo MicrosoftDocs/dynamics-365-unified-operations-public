@@ -5,7 +5,7 @@ title: General ledger and Financial reporting overview
 description: Use General ledger to define and manage the legal entity’s financial records.  
 author: ShylaThompson
 ms.date: 08/14/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
 # ms.tgt_pltfrm: 
-ms.custom: 65431
+ms.custom: ["65431", "intro-internal"]
 ms.assetid: d2c604df-daae-42cd-82d9-c80e3dee4a60
 ms.search.region: Global
 # ms.search.industry: 
@@ -45,7 +45,7 @@ currency amounts. At the end of a fiscal year, you must generate closing transac
 - [General ledger account balances](general-ledger-account-balances.md)
 - [Financial dimensions](financial-dimensions.md)
 
-[![Business process](./media/GL-process.PNG)](./media/GL-process.PNG)
+[![Business process.](./media/GL-process.PNG)](./media/GL-process.PNG)
 
 ## Sales tax
 Every company collects and pays taxes to various tax authorities. The rules and rates vary by country/region, state, county, and city.

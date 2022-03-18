@@ -5,7 +5,7 @@ title: Record templates overview
 description: This article introduces the concept of record templates and explains how they can be used to create records that share information.
 author: pvillads
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: 16101
+ms.custom: ["16101", "intro-internal"]
 ms.assetid: 61ada2d8-84c3-44bc-b4c5-516b1aeac3d1
 ms.search.region: Global
 # ms.search.industry: 

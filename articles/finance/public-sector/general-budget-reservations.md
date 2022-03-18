@@ -3,8 +3,8 @@
 
 title: General budget reservations
 description: This topic provides information about general budget reservations for Public sector.
-author: AlexRenney
-ms.date: 04/25/2019
+author: TaylorVH
+ms.date: 08/29/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -47,6 +47,13 @@ Private sector entities use the term *budget reservation* to talk about encumbra
 You can create different types of general budget reservation to specify various characteristics and requirements, based on your purchasing needs. The characteristics include the workflow that is used for the reservation, and default values. For example, you create three reservation types. You use one type for purchase requisitions, another type for purchase orders, and another type for vendor invoices.
 
 In the general budget reservation, you can also view accounting distributions and subledger journal lines for the transaction.
+
+> [!NOTE]
+> Ledger accounts used on general budget reservations must be included in budget control. If those accounts aren't included in budget control, the following will occur. 
+>- General budget reservation and their consuming documents won't be encumbered or pre-encumbered. 
+>- Carry-forward transactions won't create budget register entries. 
+>- Canceling and finalizing general budget reservations won't reduce carry-forward budget.
+>- Ledger accounts won't be included on the budget analysis and budget control statistics inquiries.
 
 If you use project accounting, you can turn on tracking of committed costs for general budget reservations.
 

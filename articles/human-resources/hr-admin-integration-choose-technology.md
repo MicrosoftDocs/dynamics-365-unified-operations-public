@@ -2,9 +2,9 @@
 # required metadata
 
 title: Choose a data integration technology
-description: This article provides information about integrating with data managed by Human Resources. It describes different integration technologies to help you decide which technologies best fit your needs.
-author: andreabichsel
-ms.date: 02/28/2020
+description: This topic provides information about integrating with data managed by Human Resources. 
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,29 +29,29 @@ ms.dyn365.ops.version: Human Resources
 
 # Choose a data integration technology
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-This article provides information for integrating with data managed by Dynamics 365 Human Resources. It describes different integration technologies to help you decide which technologies best fit your needs.
+
+This topic provides information for integrating with data managed by Dynamics 365 Human Resources. It describes different integration technologies to help you decide which technologies best fit your needs.
 
 ## Data integration background
 
 Business data is a key asset that makes your company unique. Your business's data is highly valuable. You can use the relationships between data gathered throughout your business to improve business processes and business intelligence across your organization. We strive to provide easy, secure, and stable access to your business data whatever system it comes from.
 
-Historically, integrating data between multiple systems has been difficult.
-Microsoft is taking steps to make data integration easier, and a large step
+Historically, integrating data between multiple systems has been difficult. Microsoft is taking steps to make data integration easier, and a large step
 toward that goal is realized through [Dataverse](/powerapps/maker/common-data-service/data-platform-intro).
 
-Human Resources is making Dataverse the preferred
-public interface for Human Resources data. Over time, we expect that all the most important data managed by Human Resources will be exposed in Dataverse. We recommend Dataverse as the technology of choice for most integrating applications.
+Human Resources is making Dataverse the preferred public interface for Human Resources data. Over time, we expect that all the most important data managed by Human Resources will be exposed in Dataverse. We recommend Dataverse as the technology of choice for most integrating applications.
 
 We realize Dataverse might not yet contain all the data your application requires. We also realize your project timeline might require an alternative technology. Be sure to let us know when Dataverse doesn't meet your integration needs.
 
 ## Integration technologies
 
-The following sections describe the different data integration technologies
-available for use with Human Resources.
+The following sections describe the different data integration technologies available for use with Human Resources.
 
 ### Dataverse tables
 
@@ -114,9 +114,7 @@ DMF additionally provides a powerful feature (known as [Bring Your Own Database]
 
 BYOD is mainly a read-only solution. While you can manipulate and store whatever data you want in the Azure SQL database (such as for data mashups), data stored in the Azure SQL database isn't synchronized to Human Resources.
 
-BYOD is appropriate for reporting solutions, data integrations, data mashups, as
-a data source for an [Azure Data
-Factory](/azure/data-factory/) pipeline.
+BYOD is appropriate for reporting solutions, data integrations, data mashups, as a data source for an [Azure Data Factory](/azure/data-factory/) pipeline.
 
 > [!NOTE]
 > BYOD is not available for Attract and Onboard.
@@ -125,16 +123,13 @@ Factory](/azure/data-factory/) pipeline.
 
 Most DMF entities are also enabled for access through the Human Resources data service (OData). The documentation provided for the [Finance and Operations OData service](/dynamics365/unified-operations/dev-itpro/data-entities/odata) applies to Human Resources, except for creating your own OData-exposed entities.
 
-While Dataverse and the OData implementation provided by Dataverse (through the [Dynamics 365 Web
-API](/previous-versions/dynamicscrm-2016/developers-guide/mt593051(v=crm.8))) is preferred over the Human Resources data service, the Human Resources data service currently has more complete entity coverage for the Human Resources data.
+While Dataverse and the OData implementation provided by Dataverse (through the [Dynamics 365 Web API](/previous-versions/dynamicscrm-2016/developers-guide/mt593051(v=crm.8))) is preferred over the Human Resources data service, the Human Resources data service currently has more complete entity coverage for the Human Resources data.
 
 ### Excel Add-in
 
 The [Excel Add-in](/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json) makes use of OData-enabled entities beneath the surface. It provides a convenient way for an end user to retrieve and modify Human Resources data through the familiar Excel UI.
 
-The Excel Add-in is appropriate for ad-hoc data imports/exports by business
-domain experts. For a recurring data integration that requires programmatic
-automation, another integration technology will be more appropriate.
+The Excel Add-in is appropriate for ad-hoc data imports/exports by business domain experts. For a recurring data integration that requires programmatic automation, another integration technology will be more appropriate.
 
 ### Data Integrator
 

@@ -29,9 +29,12 @@ ms.dyn365.ops.version: Human Resources
 
 # Optimize Dataverse virtual table queries
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 ## Issue
 
@@ -55,11 +58,11 @@ An example where you may see this impact is in queries against the Worker (**msh
 - **Query timeout**: The query may time out and return the following error: "A token was obtained to call Finance and Operations, but Finance and Operations returned an error of type InternalServerError."
 - **Unexpected error**: The query may return an error type 400 with the following message: "An unexpected error occurred."
 
-  ![Error type 400 on HcmWorkerBaseEntity](./media/HcmWorkerBaseEntityErrorType400.png)
+  ![Error type 400 on HcmWorkerBaseEntity.](./media/HcmWorkerBaseEntityErrorType400.png)
 
 - **Throttling**: The query may overuse server resources, and become subject to throttling. In this case, the query returns the following error: "A token was obtained to call Finance and Operations, but Finance and Operations returned an error of type 429." For more information in throttling in Human Resources, see [Throttling FAQ](./hr-admin-integration-throttling-faq.md).
 
-  ![Error type 429 on HcmWorkerBaseEntity](./media/HcmWorkerBaseEntityErrorType429.png)
+  ![Error type 429 on HcmWorkerBaseEntity.](./media/HcmWorkerBaseEntityErrorType429.png)
 
 ## Resolution
 
@@ -101,7 +104,7 @@ If you experience any of the aforementioned indications of slow performance when
 2. In the **Get Data** window, enter **Common Data Service** in the search box, select the **Common Data Service** connector, and select **Connect**.
 3. In the **Server Url** field of the Common Data Service window, enter the organization URI for your Dataverse environment, and select **OK**.
   
-   ![Enter the URI for your Dataverse environment](./media/PowerBIDataverseURLSetup.png)
+   ![Enter the URI for your Dataverse environment.](./media/PowerBIDataverseURLSetup.png)
   
 4. In the Navigator window, expand the **Entities** node.
 5. In the search box, enter **mshr_hcmworkerbaseentity**, and select the entity.
@@ -118,7 +121,7 @@ If you experience any of the aforementioned indications of slow performance when
    in
      selectedWorkerBaseEntityColumns
    ```
-   ![Update the query in the Advanced Editor for Power Query Editor](./media/HcmWorkerBaseEntityPowerQueryEditor.png)
+   ![Update the query in the Advanced Editor for Power Query Editor.](./media/HcmWorkerBaseEntityPowerQueryEditor.png)
 
 9. Select **Done**.
 
@@ -143,7 +146,7 @@ For example, if one of the data fields included on a page in the app references 
 
 You can use the [Power Apps Monitor](/powerapps/maker/monitor-overview) to ensure that only the columns you need are being included in the query to get the data for the Power App. You can view the URL constructed for the getRows operation to ensure the columns you have selected for your app will be optimal for retrieving the data.
 
-![Use Power Apps Monitor to analyze the getData operation](./media/HcmWorkerBaseEntityPowerAppsMonitor.png)
+![Use Power Apps Monitor to analyze the getData operation.](./media/HcmWorkerBaseEntityPowerAppsMonitor.png)
 
 ### Filtering the data query
 

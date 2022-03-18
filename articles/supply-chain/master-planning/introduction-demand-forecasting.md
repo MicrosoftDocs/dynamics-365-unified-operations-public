@@ -3,9 +3,9 @@
 
 title: Demand forecasting overview
 description: Demand forecasting is used to predict independent demand from sales orders and dependent demand at any decoupling point for customer orders. The enhanced demand forecast reduction rules provide an ideal solution for mass customization.
-author: roxanadiaconu
+author: ChristianRytt
 ms.date: 07/07/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,11 +17,11 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 72004
+ms.custom: ["72004", "intro-internal"]
 ms.assetid: 916707c9-1333-460f-a0fa-4e95f6fda2ad
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -36,7 +36,9 @@ Demand forecasting is used to predict independent demand from sales orders and d
 To generate the baseline forecast, a summary of historical transactions is passed to Microsoft Azure Machine Learning hosted on Azure. Because this service isn't shared among users, it can easily be customized to meet industry-specific requirements. You can use Supply Chain Management to visualize the forecast, adjust the forecast, and view key performance indicators (KPIs) about forecast accuracy.
 
 > [!NOTE]
-> Microsoft Azure Machine Learning Studio (classic) is required for forecast generation with machine learning. As of January 2021, it is available in Japan East, South Central US, Southeast Asia, West Central US, and West Europe. For updated information about current availability, see [Azure Products by Region.](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=machine-learning-studio)
+> Microsoft Azure Machine Learning Studio (classic) is required for forecast generation with machine learning. As of December 1, 2021, you will not be able to create new Machine Learning Studio (classic) resources. However, you will be able to continue to use your existing Machine Learning studio (classic) resources until August 31, 2024. For updated information, see [Azure Machine Learning Studio](/azure/machine-learning/overview-what-is-machine-learning-studio#ml-studio-classic-vs-azure-machine-learning-studio).
+> 
+> Dynamics 365 Supply Chain Management version 10.0.23 and later support the new Azure Machine Learning Studio.
 
 ## Key features of demand forecasting
 
@@ -65,7 +67,7 @@ Three major themes are implemented in demand forecasting:
 
 The following diagram shows the basic flow in demand forecasting.
 
-[![demand forecasting introduction diagram](./media/demand-forecasting-introduction.png)](./media/demand-forecasting-introduction.png)
+[![demand forecasting introduction diagram.](./media/demand-forecasting-introduction.png)](./media/demand-forecasting-introduction.png)
 
 Demand forecast generation starts in Supply Chain Management. Historical transactional data from the Supply Chain Management transactional database is gathered and populates a staging table. This staging table is later fed to a Machine Learning service. By performing minimal customization, you can plug various data sources into the staging table. The data sources can include Microsoft Excel files, comma-separated value (CSV) files, and data from Microsoft Dynamics AX 2009 and Microsoft Dynamics AX 2012. Therefore, you can generate demand forecasts that consider historical data that is spread among multiple systems. However, the master data, such as item names and units of measure, must be the same across the various data sources.
 

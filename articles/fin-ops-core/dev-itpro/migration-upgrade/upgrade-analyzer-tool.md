@@ -43,7 +43,7 @@ To access the Upgrade analyzer report, go to https://diag.lcs.dynamics.com/Upgra
 
 The following illustration shows an overview of the procedure for using Upgrade analyzer.
 
-![Upgrade analyzer process](media/upgradeAnalyzerProcess.png)
+![Upgrade analyzer process.](media/upgradeAnalyzerProcess.png)
 
 If you already use the System diagnostic service in your AX 2012 environment, you must configure a new instance of the service on a machine that differs from the existing machine.
 

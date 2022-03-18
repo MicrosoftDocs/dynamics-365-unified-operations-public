@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -39,7 +39,7 @@ This section describes what each package status means.
 - **Failed** – The extension package wasn't successfully loaded.
 - **Skipped** – The package was skipped and wasn't loaded. In the extension manifest, you can specify that a package should be loaded for a specific locale, such as **en-fr**, but skipped for all the other locales.
 
-[![Extension packages section in the POS Settings view](./media/ExtensionPackage.png)](./media/ExtensionPackage.png)
+[![Extension packages section in the POS Settings view.](./media/ExtensionPackage.png)](./media/ExtensionPackage.png)
 
 > [!NOTE]
 > Cloud POS will not display the extension version in the Customization.settings file under the **About** section on the **POS settings** page, it will only show the Microsoft app package version. Extension package versions can only be viewed from the **Extension details** section.

@@ -37,7 +37,7 @@ To collect and submit tax statements that report on performance, a Brazilian leg
 
 A Brazilian legal entity is organized by fiscal establishments that function in the same way and are in the same operations of a branch. There is a primary fiscal establishment that is considered the Matriz, and related fiscal establishments that are located in other states or outside Brazil. The following illustration shows the structure of a Brazilian legal entity and related fiscal establishments. 
 
-[![structure of a Brazilian legal entity and related fiscal establishments](./media/bralegalentity-236x300.png)](./media/bralegalentity.png)
+[![structure of a Brazilian legal entity and related fiscal establishments.](./media/bralegalentity-236x300.png)](./media/bralegalentity.png)
 
 ## Fiscal establishments
 A fiscal establishment is a physical location of a legal entity, such as a subsidiary, branch, plant, distribution center, warehouse, or store, that requires a Cadastro Nacional da Pessoa Jurídica (CNPJ) or Inscrição Estadual (IE) tax registration number. A legal entity can have multiple fiscal establishments. Fiscal establishments issue and receive fiscal documents, and assess and pay taxes. You can perform the following tasks:

@@ -50,7 +50,7 @@ When you create a work order, you might want to define the service levels for it
 8. To set an end time for the work order, in addition to an end date, set the **Set end time** option to **Yes**. Then enter the end time in the **End time** field. If you set the option to **No**, the current time of day is used.
 9. Select **Save**.
 
-![Work orders service level page](media/19-setup-for-work-orders.png)
+![Work orders service level page.](media/19-setup-for-work-orders.png)
 
 ## Create a description
 

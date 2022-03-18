@@ -5,7 +5,7 @@ author: mugunthanm
 ms.date: 05/17/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 05-17-2020
@@ -39,7 +39,7 @@ This topic applies to version 10.0.19 and later of the Retail SDK. The steps tha
     > The YAML file looks for a solution file in the repo, builds the solution, and then looks for the CloudScaleUnitExtensionPackage.zip package. Therefore, make sure that your extension and packaging projects are linked to a solution. For information about how to model your extension projects, see the samples in the [Dynamics365Commerce.ScaleUnit GitHub repo](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/tree/release/9.29).
 
 7. Save your changes, and add the build to the queue.
-8. When the build is completed, you can download the **CloudScaleUnitExtensionPackage.zip** package from **Published Artifacts**.
+8. When the build is completed, you can download the **ScaleUnitPackage_(Build.BuildNumber).zip** package from **Published Artifacts**.
 
 ## Set up a release pipeline for the Cloud Scale Unit extension package
 

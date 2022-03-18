@@ -3,7 +3,7 @@
  
 title: Count inventory in a warehouse
 description: This topic describes the process of creating and posting an inventory counting journal in order to count a specific item at a location in the warehouse. 
-author: MarkusFogelberg
+author: yufeihuang
 ms.date: 07/09/2019
 ms.topic: business-process 
 ms.prod:  
@@ -19,9 +19,9 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: mafoge
+ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Count inventory in a warehouse
 

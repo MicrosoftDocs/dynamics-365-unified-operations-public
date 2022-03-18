@@ -1,14 +1,34 @@
 ---
+# required metadata
+
 title: Rated expenses registers
 description: This topic provides information about some expense types of which only a part within the established standard is accepted for tax accounting in the current period.
-ms.date: 03/31/2021
+ms.date: 08/16/2021
 ms.topic: article
+ms.prod: 
 author: akroshkina
-ms.author: anasyash
+ms.technology: 
+manager: anayash
 
+# optional metadata
+
+#ms.search.form:
+audience: IT Pro, Application User
+# ms.devlang: 
+ms.reviewer: kfend
+# ms.suite: 
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: 
+# ms.search.industry: 
+ms.author: anasyash
+ms.dyn365.ops.version: 
+ms.search.validFrom: 
 ---
 
 # Rated expenses registers
+
+[!include [banner](../includes/banner.md)]
 
 ## Overview
 
@@ -39,7 +59,7 @@ When used in counters, rates must be pre-configured. To set up rates, complete t
     - In the **Start date** field, enter the date from which the value of the rate will be used in the sequence of calculation.
     - In the **Value** field, enter the ratio value that will be used in the sequence of calculation.
 
-      ![Values FastTab, Start date and Value fields](media/values-fast-tab.png)
+      ![Values FastTab, Start date and Value fields.](media/values-fast-tab.png)
 
 6. If you selected **Interval**, on the **Values** FastTab, do the following:
 
@@ -57,7 +77,7 @@ The sequence of calculation contains counters that implement several arithmetic 
 
 Complete the following steps to create a sequence of calculation for rated expenses.
 
-1. Create and set up the tax register **Standard expenses in current period** as described in Profit tax registers journal topic.
+1. Create and set up the tax register **Standard expenses in current period** as described in the topic, [Create tax registers and the tax register journal](rus-profit-tax-registers.md#create-a-tax-register).
 2. Create expense codes for normalization. For more information, see [Expense and income codes](rus-expense-and-income-codes.md#create-an-expense-or-income-code).
 3. Go to **Tax** > **Setup** > **Profit Tax** > **Sequence of calculation**.
 4. On the Action Pane, select **New** to create a new sequence.
@@ -75,7 +95,7 @@ Complete the following steps to create a sequence of calculation for rated expen
     - **Ratio**: The calculated amount using the ratio for the expense code from the sequences of calculation.
     - **Deferral amount**: The difference between the total amount and normalized amount accounted for in the expenses of the future period.
 
-     ![Values available in the Register field column](media/register-field-column.png)
+     ![Values available in the Register field column.](media/register-field-column.png)
 
 ### Assign calculation sequences to the register
 
@@ -83,15 +103,15 @@ Complete the following steps to create a sequence of calculation for rated expen
 2. Select the **Standard expenses in current period** tax register from the list.
 3. On the **Parameters** FastTab, in the **Value** column, choose the numbers of the calculation sequences to form the register from the list.
 
-    ![Parameters FastTab, Value column](media/parameters-fast-tab.PNG)
+    ![Parameters FastTab, Value column.](media/parameters-fast-tab.PNG)
 
 ## Standard expenses in current period register
 
-Calculate the tax register as described in Profit tax registers journal.
+Calculate the tax register as described in the topic, [Create tax registers and the tax register journal](rus-profit-tax-registers.md#calculate-and-print-tax-registers).
 
 The **Standard expenses in current period** register reflects information about the expenses of the current period, their rated part, and the part that exceeds the standard.
 
-![Standard expenses in current period register](media/standard-expenses-current-period.png)
+![Standard expenses in current period register.](media/standard-expenses-current-period.png)
 
 View the following information on the register lines:
 
@@ -102,3 +122,6 @@ View the following information on the register lines:
    - **Document date**: Transaction date
 
 These fields are the result of calculating the respective sequence of calculation: **Amount**, **Quantity**, **Price**, **Normalized amount**, **Ratio**, and **Deferral amount**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

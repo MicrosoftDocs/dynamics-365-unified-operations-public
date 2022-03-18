@@ -5,7 +5,6 @@ title: TODAY ER function
 description: This topic provides information about how the TODAY Electronic reporting (ER) function is used.
 author: NickSelin
 ms.date: 12/05/2019
-ms.topic: article
 ms.prod: 
 ms.technology: 
 

@@ -1,41 +1,22 @@
 ---
-title: Publish an online store channel
+title: Publish an online store catalog
 description: This topic contains conceptual information to understand how catalogs are published from the Commerce module to an online store.
 author: mugunthanm
 ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: AX 10.0.10
 ---
 
-# Publish an online store channel
+# Publish an online store catalog
 
 [!include [banner](../includes/banner.md)]
 
 This topic contains conceptual information to understand how catalogs are published from the Commerce module to an online store.
-
-## Publish an online store channel
-
-When you publish a Commerce online store channel, you replicate the basic structure of your online store between Microsoft Dynamics 365 Commerce and Microsoft SharePoint. You create the basic structure of your online store channel in the **Commerce** module. Before you can publish an online store channel, you must complete the following setup tasks:
-
-1. Add the online store to the organization hierarchy.
-2. Create the online store and configure properties.
-3. Configure the category hierarchy of your site.
-
-After you've completed these steps, you're ready to publish the product schema to the online store.
-
-1. You create the online store and publish it from the **Online stores** page. The status is changed from **Draft** to **In progress**.
-2. Finances and Operations takes a snapshot of the category hierarchies (the Commerce hierarchy) and properties.
-3. Commerce Data Exchange: Async Server reads information about the online store, hierarchies, and properties in the Commerce store database, and sends that information to the commerce runtime (CRT).
-4. Async Server synchronizes the tables in the channel database.
-5. The Commerce publishing job runs from the CRT application programming interface (API) and creates hierarchies for the site that you created in the online store.
-6. Commerce Data Exchange: Real-time Service receives the status of the publishing job actions from the CRT API and publishes that status. The status is either **Published** or **Error**.
-
-For the specific procedures to publish a channel, see [Set up an online store](/dynamicsax-2012/appuser-itpro/set-up-an-online-store). After you've published the channel, you can publish a catalog.
 
 ## Publish an online store catalog
 

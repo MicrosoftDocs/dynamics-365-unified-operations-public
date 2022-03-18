@@ -4,7 +4,7 @@
 title: Set up and deploy on-premises environments (Platform updates 12 through 40)
 description: This topic provides information about how to plan, set up, and deploy Dynamics 365 Finance + Operations (on-premises) with Platform updates 12 through 40.
 author: PeterRFriis
-ms.date: 04/21/2021
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -97,7 +97,7 @@ If you are using VMWare, you must implement the fixes that are documented on the
 - [Several issues with vmxnet3 virtual adapter](https://vinfrastructure.it/2016/05/several-issues-vmxnet3-virtual-adapter)
 
 > [!IMPORTANT]
-> Dynamics 365 Finance + Operations (on-premises) is not supported on any public cloud infrastructure, including Microsoft Azure Cloud services. However, it is supported to run on [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/) services.
+> Dynamics 365 Finance + Operations (on-premises) is not supported on any public cloud infrastructure, including Microsoft Azure Cloud services. However, it is supported to run on [Microsoft Azure Stack HCI](https://azure.microsoft.com/products/azure-stack/hci/) and [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/).
 
 The hardware configuration includes the following components:
 
@@ -151,7 +151,7 @@ The following prerequisite software is installed on the VMs by the infrastructur
 
 | Node type | Component | Details |
 |-----------|-----------|---------|
-| AOS       | SNAC – ODBC driver 13 | <https://docs.microsoft.com/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#131> |
+| AOS       | SNAC – ODBC driver 13 | [ODBC driver 13.1](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#131) |
 | AOS       | SNAC – ODBC driver 17 | This driver is needed for upgrading to PU15 or higher: <https://aka.ms/downloadmsodbcsql> |
 | AOS       | The Microsoft .NET Framework version 2.0–3.5 (CLR 2.0) | **Windows features:** NET-Framework-Features, NET-Framework-Core, NET-HTTP-Activation, NET-Non-HTTP-Activ |
 | AOS       | The Microsoft .NET Framework version 4.0–4.6 (CLR 4.0) | **Windows features:** NET-Framework-45-Features, NET-Framework-45-Core, NET-Framework-45-ASPNET, NET-WCF-Services45, NET-WCF-TCP-PortSharing45 |
@@ -335,7 +335,7 @@ We have provided several scripts to help improve the setup experience. Follow th
 
 1. Sign in to [LCS](https://lcs.dynamics.com/v2).
 2. On the dashboard, select the **Shared asset library** tile.
-3. On the **Model** tab, in the grid, select the **Dynamics 365 for Operations on-premises - Deployment scripts** row.
+3. On the **Model** tab, in the grid, select the row for **Microsoft Dynamics 365 Finance + Operations (on-premises), Deployment scripts**.
 4. Select **Versions**, and then download the latest version of the zip file for the scripts.
    >[!Note] 
    > If you need the older version for Platform update 8 or Platform update 11, download version 1.
@@ -457,9 +457,9 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
 
     | Component | Download link | Expected file name |
     |-----------|---------------|--------------------|
-    | SNAC – ODBC driver 13 | <https://docs.microsoft.com/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#131> | msodbcsql.msi |
+    | SNAC – ODBC driver 13 | [ODBC driver 13.1](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#131) | msodbcsql.msi |
     | SNAC – ODBC driver 17 | <https://aka.ms/downloadmsodbcsql> | msodbcsql\_17.msi |
-    | Microsoft SQL Server Management Studio 17.5 | <https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms> | SSMS-Setup-\*.exe |
+    | Microsoft SQL Server Management Studio 17.5 | [SSMS 17.5](/sql/ssms/download-sql-server-management-studio-ssms) | SSMS-Setup-\*.exe |
     | Microsoft Visual C++ Redistributable Packages for Microsoft Visual Studio 2013 | <https://support.microsoft.com/help/3179560> | vcredist\_x64.exe |
     | Microsoft Visual C++ Redistributable Packages for Microsoft Visual Studio 2017 | Go to <https://lcs.dynamics.com/V2/SharedAssetLibrary>, select **Model** as the asset type, and then select **VC++ 17 Redistributables**. | vc\_redist.x64\_14\_16\_27024.exe |
     | Microsoft Access Database Engine 2010 Redistributable | <https://www.microsoft.com/download/details.aspx?id=13255> | AccessDatabaseEngine\_x64.exe |
@@ -912,7 +912,7 @@ Finance + Operations requires additional configuration beyond the default out-of
 
 2. You should disable Windows Integrated Authentication (WIA) for intranet authentication connections, unless you've configured AD FS for mixed environments. For more information about how to configure WIA so that it can be used with AD FS, see [Configure browsers to use Windows Integrated Authentication (WIA) with AD FS](/windows-server/identity/ad-fs/operations/configure-ad-fs-browser-wia).
 
-   This command is related to using forms authentication upon signing into the Finance + Operations client. Other options, such as single sign-on, may be available which require additional setup.
+   This command is related to using forms authentication upon signing into the Finance + Operations client. Other options, such as single sign-on, are not supported.
 
     ```powershell
     Set-AdfsGlobalAuthenticationPolicy -PrimaryIntranetAuthenticationProvider FormsAuthentication, MicrosoftPassportAuthentication
@@ -941,7 +941,7 @@ For more information about how to use the script, see the documentation that is 
 .\Publish-ADFSApplicationGroup.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com'
 ```
 
-![Application group properties](./media/OPSetup_05_ApplicatioGroupProperties.png)
+![Application group properties.](./media/OPSetup_05_ApplicatioGroupProperties.png)
 
 Finally, make sure that you can access the AD FS OpenID Configuration URL on a Service Fabric node of the **AOSNodeType** type. To perform this check, try to open `https://<adfs-dns-name>/adfs/.well-known/openid-configuration` in a web browser. If you receive a message that states that the site isn't secure, you haven't added your AD FS SSL certificate to the Trusted Root Certification Authorities store. This step is described in the AD FS deployment guide, and if you are using remoting, you can use the following script to install the certificate on all nodes in the Service Fabric cluster:
 
@@ -959,13 +959,13 @@ You've now completed the setup of the infrastructure. The following sections des
 1. Sign in to [LCS](https://lcs.dynamics.com/), and open the on-premises implementation project.
 2. On the hamburger menu, select **Project settings**.
 
-    ![Project settings command](./media/OPSetup_06_ProjectSettings.png)
+    ![Project settings command.](./media/OPSetup_06_ProjectSettings.png)
 
 3. Select **On-premises connectors**.
 4. Select **Add** to create a new connector. 
 5. On the **Setup host infrastructure** tab, download the agent installer.
 
-    ![Download agent installer button on the Setup host infrastructure tab](./media/OPSetup_07_DownloadAgentInstaller.png)
+    ![Download agent installer button on the Setup host infrastructure tab.](./media/OPSetup_07_DownloadAgentInstaller.png)
     
 6. Verify that the zip file is unblocked. Right-click the file, and then select **Properties**. In the dialog box, select **Unblock**.
 7. Unzip the agent installer on one of the Service Fabric nodes of the **OrchestratorType** type.
@@ -977,7 +977,7 @@ You've now completed the setup of the infrastructure. The following sections des
 
 9. Save the configuration, and then select **Download configurations** to download the localagent-config.json configuration file.
 
-    ![Download configurations button on the Configure agent tab](./media/OPSetup_08_DownloadConfigurations.png)
+    ![Download configurations button on the Configure agent tab.](./media/OPSetup_08_DownloadConfigurations.png)
 
 10. Copy the localagent-config.json file to the machine where the agent installer package is located.
 11. In a **Command Prompt** window, run the following command by navigating to the folder that contains the agent installer.
@@ -992,7 +992,7 @@ You've now completed the setup of the infrastructure. The following sections des
 12. After the local agent is successfully installed, navigate back to your on-premises connector in LCS.
 13. On the **Validate setup** tab, select **Message agent** to test for LCS connectivity to your local agent. When a connection is successfully established, the page will resemble the following illustration.
 
-    ![Validate the agent](./media/ValidateAgent.PNG)
+    ![Validate the agent.](./media/ValidateAgent.PNG)
 
 ### <a name="teardowncredssp"></a> 20. Tear down CredSSP, if remoting was used
 
@@ -1014,7 +1014,7 @@ If the previous remoting PowerShell window was accidentally closed and CredSSP w
 
 2. For new deployments, select your environment topology, and then complete the wizard to start your deployment.
 
-    ![Deploy your environment](./media/Deploy.png)
+    ![Deploy your environment.](./media/Deploy.png)
 
 3. If you have an existing Platform update 8 or Platform update 11 deployment: 
     - Update the local agent. See [Update the local agent](../lifecycle-services/update-local-agent.md) for more details.
@@ -1022,25 +1022,25 @@ If the previous remoting PowerShell window was accidentally closed and CredSSP w
     - Deploy Platform update 12 while going through the steps in [Reconfigure environments to take a new platform or topology](../lifecycle-services/reconfigure-environment.md).
 4. LCS will assemble the Service Fabric application packages for your environment during the preparation phase. It then sends a message to the local agent to start deployment. You will notice the **Preparing** status as below.
 
-    ![Preparation phase](./media/Preparing.png)
+    ![Preparation phase.](./media/Preparing.png)
 
     Click **Full details** to take you to the environment details page, as shown below.
 
-    ![Environment details page](./media/Details_Preparing.png)
+    ![Environment details page.](./media/Details_Preparing.png)
 
 5. The local agent will now pick up the deployment request, start the deployment, and communicate back to LCS when the environment is ready. When deployment starts, the status will change to **Deploying**, as shown.
 
-    ![Status changes to Deploying](./media/Deploying.png)
+    ![Status changes to Deploying.](./media/Deploying.png)
 
-    ![Environment is deploying](./media/Details_Deploying.png)
+    ![Environment is deploying.](./media/Details_Deploying.png)
 
     If the deployment fails, the **Reconfigure** button will become available for your environment in LCS, as shown below. Fix the underlying issue, click **Reconfigure**, update any configuration changes, and click **Deploy** to retry the deployment.
 
-    ![Reconfigure button is available](./media/Failed.png)
+    ![Reconfigure button is available.](./media/Failed.png)
 
     See the [Reconfigure environments to take a new platform or topology](../lifecycle-services/reconfigure-environment.md) topic for details about how to reconfigure. The following graphic shows a successful deployment.
 
-    ![Environment successfully deployed](./media/Deployed.png)
+    ![Environment successfully deployed.](./media/Deployed.png)
 
 ### <a name="connect"></a> 22. Connect to your Finance + Operations environment
 In your browser, navigate to https://[yourD365FOdomain]/namespaces/AXSF, where yourD365FOdomain is the domain name that you defined in the [Plan your domain name and DNS zones](#plandomain) section of this topic.
@@ -1076,7 +1076,10 @@ To work around this error, remove "-Test:$Test" in line 56, 61 and 66 of Complet
 This error occurs because of an OpenID scope **allatclaims** that is required by the D365FO-OP-ADFSApplicationGroup, but it might be missing in some Windows Server 2016 installation. To work around this error, add the scope description **allatclaims** through AD FS Management\Service\Scope Descriptions.
 
 ### Error "ADMIN0077: Access control policy does not exist: Permit everyone" when running the Publish-ADFSApplicationGroup cmdlet
-When your AD FS is installed with a non-English version of Windows Server 2016, the permit everyone access control policy is created with your local language. Invoke the cmdlet by specifying AccessControlPolicyName parameter as: .\Publish-ADFSApplicationGroup.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com' -AccessControlPolicyName '<Permit everyone access control policy in your language>'. 
+When your AD FS is installed with a non-English version of Windows Server 2016, the permit everyone access control policy is created with your local language. Invoke the cmdlet by specifying AccessControlPolicyName parameter as: 
 
+```powershell
+.\Publish-ADFSApplicationGroup.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com' -AccessControlPolicyName '<Permit everyone access control policy in your language>'. 
+```
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

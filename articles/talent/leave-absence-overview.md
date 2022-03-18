@@ -5,7 +5,7 @@ title: Leave and absence management
 description: This topic provides an overview of the Leave and absence management module. 
 author: andreabichsel
 ms.date: 08/01/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,7 +16,7 @@ ms.search.form: LeaveAbsenceWorkspace
 audience: Application User
 # ms.devlang: 
 # ms.tgt_pltfrm: 
-ms.custom: 7521
+
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
 # ms.search.industry: 

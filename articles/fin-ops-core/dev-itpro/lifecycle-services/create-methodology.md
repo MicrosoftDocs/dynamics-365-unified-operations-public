@@ -51,10 +51,10 @@ A partner or a project administrator can create new methodologies or make change
 1.  On the Lifecycle Services dashboard, on the right side of the screen, click **Manage methodologies**.
 2.  On the **Manage methodologies **page, click the plus sign (+).
 3.  In the **New methodology** pane, enter a name and description for the new methodology. Click **Confirm**.
-4.  **Optional:** After you have confirmed the methodology, you can promote it to the organization level by selecting the methodology in the grid, and then selecting **Promote**. [![promotemethodology](./media/promotemethodology-1024x506.jpg)](./media/promotemethodology.jpg) **Note:** You must be an admin in your organization to promote a methodology to the organization level.
+4.  **Optional:** After you have confirmed the methodology, you can promote it to the organization level by selecting the methodology in the grid, and then selecting **Promote**. [![promotemethodology.](./media/promotemethodology-1024x506.jpg)](./media/promotemethodology.jpg) **Note:** You must be an admin in your organization to promote a methodology to the organization level.
 
 ### Change or update a methodology
-There are two ways to make changes to a methodology. You can append an existing methodology or you can make changes to a methodology in the scope of a project. From the LCS project dashboard, select the methodology that you want to update, and then select **Edit methodology** or **Append methodology**. [![projectlevelmethodology](./media/projectlevelmethodology-1024x494.jpg)](./media/projectlevelmethodology.jpg) If you select to edit the methodology, you can make the following changes:
+There are two ways to make changes to a methodology. You can append an existing methodology or you can make changes to a methodology in the scope of a project. From the LCS project dashboard, select the methodology that you want to update, and then select **Edit methodology** or **Append methodology**. [![projectlevelmethodology.](./media/projectlevelmethodology-1024x494.jpg)](./media/projectlevelmethodology.jpg) If you select to edit the methodology, you can make the following changes:
 
 -   Add a new phase.
 -   Add a new task.

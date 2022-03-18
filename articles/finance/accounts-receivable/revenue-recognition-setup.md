@@ -4,7 +4,7 @@
 title: Revenue recognition setup 
 description: This topic describes the setup options for Revenue recognition, and their implications.
 author: kweekley
-ms.date: 08/24/2018
+ms.date: 11/24/2021
 ms.topic: index-page
 ms.prod: 
 ms.technology: 
@@ -31,9 +31,9 @@ ms.dyn365.ops.version: 8.0.4
 A new **Revenue recognition** module has been added that includes menu items for all the setup that is required. This topic describes the setup options and their implications.
 
 > [!NOTE]
-> The Revenue recognition feature can't be turned on through Feature management. Currently, you must use configuration keys to turn it on.
-
-> Revenue recognition, including bundle functionality, isn't supported for use in Commerce channels (e-commerce, POS, call center). Items configured with revenue recognition should not be added to orders or transactions created in Commerce channels.
+> The Revenue recognition feature is now enabled by default through Feature management. If your organization doesn't use this feature, you can turn it off in the **Feature management** workspace.
+>
+> Revenue recognition, including bundle functionality, isn't supported in Commerce channels (e-commerce, POS, and call center). Items that are configured for revenue recognition should not be added to orders or transactions that were created in Commerce channels.
 
 The **Revenue recognition** module has the following setup options:
 
@@ -45,12 +45,16 @@ The **Revenue recognition** module has the following setup options:
     - Item groups and released products
     - Defining revenue schedule
     - Defining revenue price
+    - Inventory setup
 
-        - Posting profiles
-        - Bundles
+        - Defining revenue schedule
+        - Defining revenue price
 
-    - Bundle components
-    - Bundle item
+    - Posting profiles
+    - Bundles
+
+        - Bundle components
+        - Bundle item
 
 - Project setup
 
@@ -62,7 +66,7 @@ The first scenario occurs after all the contractual obligations are met, when th
 
 The second scenario occurs when a journal is created after reallocation occurs. Reallocation occurs when a sales order line is added to a previously invoiced sales order, or when a new sales order is created that includes a line that is part of the original contract. If an invoice was posted before the new sales order line is added, a correcting accounting entry must be created for the posted customer invoice.
 
-The journal is set up on the **Journal names** page (**Revenue recognition \> Setup \> Journal names**). The journal type must be set to **Revenue recognition**. The revenue recognition journal lets you select the posting layer to post to.
+The journal is set up on the **Journal names** page (**Revenue recognition \> Setup \> Journal names**). The journal type must be set to **Revenue recognition**. 
 
 ## Parameters for revenue recognition
 
@@ -77,7 +81,7 @@ Revenue recognition settings are configured on the **Revenue recognition** tab o
     - Set this option to **No** to limit posting of the correcting transaction to General ledger. When this option is set to **No**, no additional documents are created in Accounts receivable for the internal accounting correction. When the invoice is paid, the settlement process uses the old accounting entry to post any cash discounts, or any realized gains or losses.
     - Set this option to **Yes** to automatically create a reversing document and new invoice for the correcting transaction in Accounts receivable. Because this correction is an internal accounting correction, the new documents aren't sent or communicated to the customer. The reversing document is settled to the original invoice, and the new corrected invoice is paid by the customer. Note that all three documents are shown on reports, such as the customer statement.
 
-[![Setup information](./media/revenue-recognition-setup-info.png)](./media/revenue-recognition-setup-info.png)
+[![Setup information.](./media/revenue-recognition-setup-info.png)](./media/revenue-recognition-setup-info.png)
 
 ## Revenue schedules
 
@@ -87,7 +91,7 @@ If you recognize revenue by milestone, we recommend that you create a revenue re
 
 Revenue schedules are created on the **Revenue schedules** page (**Revenue recognition \> Setup \> Revenue schedules**).
 
-[![Revenue schedules](./media/revenue-recognition-revenue-schedules.png)](./media/revenue-recognition-revenue-schedules.png)
+[![Revenue schedules.](./media/revenue-recognition-revenue-schedules.png)](./media/revenue-recognition-revenue-schedules.png)
 
 Enter descriptive values in the **Revenue schedule** and **Description** fields. The following additional settings are used to create the revenue schedule when the invoice is posted.
 
@@ -96,20 +100,27 @@ Enter descriptive values in the **Revenue schedule** and **Description** fields.
 - **Automatic contract terms** – Select this check box if the contract start and end dates should automatically be set. These dates are automatically set only for released products of the **Post contract support** revenue type. The contract start date is automatically set to the sales order line's requested ship date, and the contract end date is automatically set to the start date plus the number of months or occurrences that is defined in the setup of the revenue schedule. For example, the product on the sales order line is for a one-year warranty. The default revenue schedule is **12M** (12 months), and the **Automatic contract terms** check box is selected for this revenue schedule. If the sales order line has a requested ship date of December 16, 2019, the default contract start date is December 16, 2019, and the default contract end date is December 15, 2020.
 - **Recognition basis** – The recognition basis determines how the revenue price is allocated across the occurrences.
 
-    - **Monthly by dates** – The amount is allocated based on the actual days in each month.
+    - **Monthly by days** – The amount is allocated based on the actual days in each calendar month.
     - **Monthly** – The amount is allocated equally across the number of months that is defined in the occurrences.
     - **Occurrences** – The amount is allocated equally across the occurrences, but it can include an extra period if you select **Actual start date** as the recognition convention.
+    - **Fiscal period by days** – The amount is allocated based on the actual days in each fiscal period. 
 
-- **Recognition convention** – The recognition convention determines the default dates that are set on the revenue schedule for the invoice.
+    The results of **Monthly by days** and **Fiscal period by days** will be the same when the fiscal periods follow calendar months. The only exception is when the recognition convention is set to **End of month/period**, and the **Contract start date** and **End date** fields are left blank on a sales order line.
+
+- **Recognition convention** – The recognition convention determines the dates that are set on the revenue schedule for the invoice.
 
     - **Actual start date** – The schedule is created by using either the contract start date (for post contract support \[PCS\] items) or the invoice date (for essential and nonessential items).
-    - **1st of month** – The date on the first schedule line is the contract start date (or invoice date). However, all subsequent schedules lines are created for the first of the month.
+    - **1st day of month/period** – The date on the first schedule line is the contract start date (or invoice date). However, all subsequent schedules lines are created for the first of the month or fiscal period.
     - **Mid-month split** – The date on the first schedule line depends on the invoice date. If the invoice is posted on the first through fifteenth of the month, the revenue schedule is created by using the first day of the month. If the invoice is posted on the sixteenth or later, the revenue schedule is created by using the first day of the next month.
-    - **1st of next month** – The date on the schedule is the first day of the next month.
 
-Select the **Revenue schedule details** button to view the general periods and the percentages that are recognized in each period. By default, the **Recognize percentage** value is equally divided across the number of periods. If the recognition basis is set to either **Monthly** or **Occurrences**, the recognition percentage can be changed. As you change the recognition percentage, a warning message notifies you that the total doesn't equal 100 percent. If you receive the message, you can continue to edit lines. However, the total percentage must equal 100 before you close the page.
+        **Mid-month split** can't be selected if the recognition basis is set to **Fiscal period by days**.
 
-[![Revenue schedule details](./media/revenue-recognition-revenue-schedule-details.png)](./media/revenue-recognition-revenue-schedule-details.png)
+    - **1st day of next month/period** – The date that the schedule begins on is the first day of the next month or fiscal period.
+    - **End of month/period** – The date on the first schedule line is the contract start date (or invoice date). However, all subsequent schedule lines are created for the last day of the month or fiscal period. 
+
+Select the **Revenue schedule details** button to view the general periods and the percentages that are recognized in each period. By default, the **Recognize percentage** value is equally divided across the number of periods. If the recognition basis is set to **Monthly**, the recognition percentage can be changed. As you change the recognition percentage, a warning message notifies you that the total doesn't equal 100 percent. If you receive that message, you can continue to edit lines. However, the total percentage must equal 100 before you close the page.
+
+[![Revenue schedule details.](./media/revenue-schedule-details-2nd-scrn.png)](./media/revenue-schedule-details-2nd-scrn.png)
 
 ## Inventory setup
 
@@ -144,7 +155,7 @@ Item groups and released products can be set up by using either the median price
 
 After you've finished configuring the settings for the released product, you must manually define the revenue price by entering the fair value price or the median price (if you're using median price method) on the **Revenue prices** page (go to **Revenue recognition \> Setup \> Inventory setup \> Released products**, and then, on the Action Pane, on the **Sell** tab, in the **Revenue recognition** group, select **Revenue prices**).
 
-[![Revenue prices](./media/revenue-recognition-revenue-prices.png)](./media/revenue-recognition-revenue-prices.png)
+[![Revenue prices.](./media/revenue-recognition-revenue-prices.png)](./media/revenue-recognition-revenue-prices.png)
 
 The revenue price that is manually defined on this page is used to determine the revenue price allocation on each sales order, based on the criteria that are defined. Each criterion is matched to the sales order line to determine the revenue price that should be used in the allocation process.
 
@@ -186,7 +197,7 @@ When you set up a bundle item, you must set two fields on the **Released product
 
 The components must be then assigned to the bundle/BOM parent item on the **BOM versions** page (go to **Revenue recognition \> Setup \> Inventory and product setup \> Released products**, and then, on the Action Pane, on the **Engineer** tab, in the **BOM** group, select **BOM versions**). For more information, see the setup documentation for BOMs.
 
-[![Released products, BOM schedules](./media/revenue-recognition-bom-scheduleds.jpg)](./media/revenue-recognition-bom-scheduleds.jpg)
+[![Released products, BOM schedules.](./media/revenue-recognition-bom-scheduleds.jpg)](./media/revenue-recognition-bom-scheduleds.jpg)
 
 If the bundle parent item and bundle components are set to allocate, the bundle revenue price will be distributed to the components, based on their revenue contribution percentages.
 

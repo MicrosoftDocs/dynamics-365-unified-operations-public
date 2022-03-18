@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 10.0.6
 
 [!include [banner](../includes/banner.md)]
 
-To generate reports as Microsoft Word documents, you must design a template for the reports as a Word document. This template must contain Word content controls as placeholders for data that will be filled in at runtime. To use the Word document that is created as a template for your reports, you can [configure](er-design-configuration-word.md) a new [Electronic reporting (ER)](general-electronic-reporting.md) [solution](er-quick-start1-new-solution.md). The solution must include an ER [configuration](general-electronic-reporting.md#Configuration) that contains an ER [format](general-electronic-reporting.md#FormatComponentOutbound) component. This ER format must be configured to use the designed template for report generation.
+To generate reports as Microsoft Word documents, you must design a template for the reports as a Word document. This template must contain Word content controls as placeholders for data that will be filled in at runtime. To use the Word document that is created as a template for your reports, you can [configure](er-design-configuration-word.md) a new [Electronic reporting (ER)](general-electronic-reporting.md) [solution](er-quick-start1-new-solution.md). The solution must include an ER [configuration](general-electronic-reporting.md#Configuration) that contains an ER format component. This ER format must be configured to use the designed template for report generation.
 
 In version 10.0.6 and later of Dynamics 365 Finance, you can configure formulas in your ER format to suppress some Word content controls in generated documents.
 
@@ -67,7 +67,7 @@ You must also download and save the following template for the sample report:
     > [!NOTE]
     > The repeating content control is tagged by the **SummaryLines** key that matches the field of the custom XML part that it has been mapped to.
 
-    ![Word template layout](./media/er-design-configuration-word-suppress-controls-image1.gif)
+    ![Word template layout.](./media/er-design-configuration-word-suppress-controls-image1.gif)
 
 ## Select the existing ER report configuration
 
@@ -102,7 +102,7 @@ Currently, the SampleVendPaymDocReportBounded.docx file is used as a template to
 7. Select **OK**.
 8. In the **Electronic report parameters** dialog box, select **OK**, and analyze the generated output.
 
-    ![Payments for processing on the Vendor payments page](./media/er-design-configuration-word-suppress-controls-image2.gif)
+    ![Payments for processing on the Vendor payments page.](./media/er-design-configuration-word-suppress-controls-image2.gif)
 
     The output is presented in Word format and contains the summary section.
 
@@ -153,7 +153,7 @@ If you want to suppress the summary section in a generated document, based on th
 
 9. Select **Save** to save your changes to the editable format.
 
-    ![The generated output in Word format](./media/er-design-configuration-word-suppress-controls-image3.gif)
+    ![The generated output in Word format.](./media/er-design-configuration-word-suppress-controls-image3.gif)
 
 ## Run the modified format to create Word output
 
@@ -167,7 +167,7 @@ If you want to suppress the summary section in a generated document, based on th
 8. In the **Electronic report parameters** dialog box, in the **Suppress summary section** field, select **Yes**.
 9. Select **OK**, and analyze the generated output.
 
-    ![Generated output in Word format](./media/er-design-configuration-word-suppress-controls-image4.gif)
+    ![Generated output in Word format.](./media/er-design-configuration-word-suppress-controls-image4.gif)
 
     Notice that the output doesn't contain the summary section, because it has been suppressed.
 

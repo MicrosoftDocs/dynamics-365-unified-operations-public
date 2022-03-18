@@ -3,7 +3,7 @@
 
 title: Customize and use the Customer portal
 description: This topic explains how to customize the Customer portal after it has been added to your system.
-author: dasani-madipalli
+author: Henrikan
 ms.date: 04/22/2020
 ms.topic: article
 ms.prod: 
@@ -19,20 +19,21 @@ ms.reviewer: kamaybac
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: damadipa
+ms.author: henrikan
 ms.search.validFrom: 2020-04-22
-ms.dyn365.ops.version: Release 10.0.13
+ms.dyn365.ops.version: 10.0.13
 ---
 
 # Customize and use the Customer portal
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+[!include [banner](../includes/banner.md)]
+
 
 This topic describes the different pages that available in the Customer portal out of the box. It explains what the pages do and how you can customize them.
 
 The Customer portal offers a few webpages and actions out of the box. The following site map provides an overview of those webpages and actions, and the roles that can perform the actions.
 
-![Customer portal site map](media/customer-portal-site-map.png "Customer portal site map")
+![Customer portal site map.](media/customer-portal-site-map.png "Customer portal site map")
 
 ## Typical customizations
 
@@ -66,12 +67,12 @@ Here are the standard steps for submitting an order from the Customer portal.
     - **Requisition number** – Enter the requisition number of the order. This field isn't required.
     - **Ship to country/region** – Enter the country or region that the items will be delivered to. This field is automatically set for non-admin users.
 
-    ![Order information page](media/customer-portal-order-information.png "Order information page")
+    ![Order information page.](media/customer-portal-order-information.png "Order information page")
 
 1. Select **Next**.
 1. On the **Items** page, select **Add Item**.
 
-    ![Items page](media/customer-portal-items.png "Items page")
+    ![Items page.](media/customer-portal-items.png "Items page")
 
 1. In the **Item Information** dialog box, set the following fields:
 
@@ -80,14 +81,14 @@ Here are the standard steps for submitting an order from the Customer portal.
     - **Unit** – Specify the unit of measure (for example, **ea.**, **kgs**, or **box**).
     - **Estimated net amount** – The value is calculated as the estimated price of the item × the quantity for the selected unit.
 
-    ![Item Information dialog box](media/customer-portal-item-information.png "Item Information dialog box")
+    ![Item Information dialog box.](media/customer-portal-item-information.png "Item Information dialog box")
 
 1. Select **Submit** to add the item to the order.
 1. Repeat steps 4 through 6 until you've added all the items that you want to order.
 1. When you've finished adding items, select **Next** on the **Items** page.
 1. The **Order Information** page provides a summary of the order. Review the order contents and delivery details. If everything looks correct, select **Submit** to submit the order.
 
-    ![Completed order information page](media/customer-portal-order-submit.png "Completed order information page")
+    ![Completed order information page.](media/customer-portal-order-submit.png "Completed order information page")
 
 ### Standard data setup
 
@@ -152,19 +153,19 @@ All the controls in the Customer portal are built-in Power Apps portals controls
 
 The only custom control that is included in the Customer portal template is used to create the tiles on the home page.
 
-![Tiles on the home page](media/customer-portal-home-page-tiles.png "Tiles on the home page")
+![Tiles on the home page.](media/customer-portal-home-page-tiles.png "Tiles on the home page")
 
 To modify the tiles, follow these steps.
 
 1. Open the [Portal Management app](/powerapps/maker/portals/configure/configure-portal).
 1. In the navigation pane on the left, select **Page Templates**.
 
-    ![Portal Management navigation pane](media/customer-portal-nav.png "Portal Management navigation pane")
+    ![Portal Management navigation pane.](media/customer-portal-nav.png "Portal Management navigation pane")
 
 1. Select the page template that is named **Home**.
 1. In the **Web Template** field, select the **Home** link to open the source code for that page.
 
-    ![Web Template field](media/customer-portal-web-template.png "Web Template field")
+    ![Web Template field.](media/customer-portal-web-template.png "Web Template field")
 
 1. You should now see all the source code for the home page and can modify it as you require.
 

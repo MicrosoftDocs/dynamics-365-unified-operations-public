@@ -38,13 +38,13 @@ The purchase of digital gift cards is supported in the Dynamics 365 Commerce 10.
 
 The following illustration shows an example of the product details page (PDP) for a digital gift card on the Fabrikam e-commerce site.
 
-![Example of a digital gift card PDP on the Fabrikam e-commerce site](./media/GiftcardPDP.PNG)
+![Example of a digital gift card PDP on the Fabrikam e-commerce site.](./media/GiftcardPDP.PNG)
 
 ## Turn on the digital gift card feature in Commerce headquarters
 
 For the purchase flow for digital gift cards to work in Dynamics 365 Commerce, the **Purchasing gift card on e-Commerce feature** feature must be turned on in Commerce headquarters. You can find the feature in the **Feature management** workspace in Commerce headquarters, as shown in the following illustration.
 
-![Feature management workspace in Commerce headquarters](./media/Featureflag.PNG)
+![Feature management workspace in Commerce headquarters.](./media/Featureflag.PNG)
 
 ## Configure a digital gift card in Commerce headquarters
 
@@ -53,16 +53,16 @@ Digital gift card products should be configured in Commerce headquarters. The pr
 - When you configure digital gift card products in the **New product** dialog box, set the **Product type** field to **Service**. (To open the dialog box, go to **Retail and commerce \> Products and categories \> Products by category**, and select **New**.) Products of the **Service** type aren't checked for available inventory before an order is placed. For more information, see [Create a new product](create-new-product-commerce.md#create-a-new-product).
 - On the **Commerce parameters** page, on the **Posting** tab, the **Gift card product** field must be set to **Digital Gift Card**, as shown in the following illustration. If the product is an external gift card, see [Support for external gift cards](./dev-itpro/gift-card.md) for more information.
 
-    ![Gift card product field in Commerce headquarters](./media/PostGiftcard.png)
+    ![Gift card product field in Commerce headquarters.](./media/PostGiftcard.png)
 
 - If a gift card must support multiple predefined amounts (for example, $25, $50, and $100), the **Size** dimension should be used to set up those predefined amounts. Each predefined amount will be a variant. For more information, see [Product dimensions](../supply-chain/pim/product-dimensions.md?toc=%2fdynamics365%2fretail%2ftoc.json).
 - If customers must be able to specify a custom amount for a gift card, first set up a variant that allows for a custom amount. Next, open the product from the **Released products in category** page, and then, on the **Commerce** FastTab, set the **Key in price** field to **Must key in new price**, as shown in the following illustration. This setting ensures that customers can enter a price when they browse the product on a PDP.
 
-    ![Key in price field in Commerce headquarters](./media/KeyInPrice.png)
+    ![Key in price field in Commerce headquarters.](./media/KeyInPrice.png)
 
 - The mode of delivery for a digital gift card must be set to **Electronic**. On the **Modes of delivery** page (**Retail and commerce \> Channel setup \> Modes of delivery**), select the **Electronic** mode of delivery in the list pane, and then add the digital gift card product to the grid on the **Products** FastTab, as shown in the following illustration. For more information, see [Set up modes of delivery](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
 
-    ![Digital gift card products on the Mode of delivery page in Commerce headquarters](./media/ElectronicMode.PNG)
+    ![Digital gift card products on the Mode of delivery page in Commerce headquarters.](./media/ElectronicMode.PNG)
 
 - Make sure that an online functionality profile has been created and associated with your online store in Commerce headquarters. In the functionality profile, set the **Aggregate products** option to **Yes**. This setting ensures that all items except gift cards are aggregated. For more information, see [Create an online functionality profile](online-functionality-profile.md).
 - To ensure that customers receive an email after a gift card is invoiced, create a new email notification type on the **Email notification profiles** page, and set the **Email notification type** field to **Issue gift card**. For more information, see [Set up an email notification profile](email-notification-profiles.md).

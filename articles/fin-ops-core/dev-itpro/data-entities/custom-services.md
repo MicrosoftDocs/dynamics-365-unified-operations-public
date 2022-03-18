@@ -3,7 +3,7 @@
 
 title: Custom service development
 description: This topic describes how to create a custom service.
-author: Sunil-Garg
+author: peakerbl
 ms.date: 02/07/2020
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 21311
 ms.assetid: 5ff7fd93-1bb8-4883-9cca-c8c42ddc1746
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -68,7 +68,7 @@ The JSON Endpoint is at `https://host_uri/api/services/service_group_name/servic
 
 **Example**
 
-`https://usnconeboxax1aos.cloud.onebox.dynamics.com/en/api/services/UserSessionService/AifUserSessionService/GetUserSessionInfo`
+`https://usnconeboxax1aos.cloud.onebox.dynamics.com/api/services/UserSessionService/AifUserSessionService/GetUserSessionInfo`
 
 Code examples for consuming JSON services are available in the [Microsoft Dynamics AX Integration GitHub repository](https://github.com/Microsoft/Dynamics-AX-Integration/tree/master/ServiceSamples/JsonConsoleApplication).
 

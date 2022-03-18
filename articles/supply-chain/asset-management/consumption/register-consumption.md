@@ -59,7 +59,7 @@ In some cases, you may be able to add or delete forecast lines on a work order. 
 
 The screenshot below shows an example of hour and item registrations on a work order in **Work order journals**.
 
-![Figure 1](media/01-consumption.png)
+![Figure 1.](media/01-consumption.png)
 
 
 ## Split hours on work orders with several work order jobs
@@ -78,13 +78,13 @@ If a work order contains several work order jobs, you can register work hours us
 
 6. Insert number of work hours to be split in the **Hours** field.
 
-    ![Figure 2](media/02-consumption.png)
+    ![Figure 2.](media/02-consumption.png)
 
 7. Click **OK**.
 
 *Example:* In the screenshot below, journal lines for a work order containing three work order jobs are shown. The first line, containing three work hours, has been split, and one work hour is registered on each work order job. After the three hour registration lines have been created, you decide what to do with the original hour registration line (the first line in the example). You can keep it as is or delete it. 
 
-![Figure 3](media/03-consumption.png)
+![Figure 3.](media/03-consumption.png)
 
 ## Financial dimensions on consumption registrations
 

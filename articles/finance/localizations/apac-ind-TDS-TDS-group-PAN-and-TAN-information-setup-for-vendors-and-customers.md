@@ -7,7 +7,7 @@ author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+
 ms.technology: 
 
 # optional metadata
@@ -37,7 +37,7 @@ This topic explains how to set up information about the Tax Deducted at Source (
 
 1. Go to **Accounts payable \> Vendors \> All vendors** or **Accounts receivable \> Customers \> All customers**.
 
-    [![All vendors page](./media/apac-ind-TDS-55.png)](./media/apac-ind-TDS-55.png)
+    [![All vendors page.](./media/apac-ind-TDS-55.png)](./media/apac-ind-TDS-55.png)
 
 2. On the Action Pane, select **New** to create a vendor or customer, and enter the required details. Alternatively, select an existing vendor or customer.
 3. On the **Invoice and delivery** FastTab, in the **Withholding tax** section, set the **Calculate withholding tax** option to **Yes** to calculate withholding tax, TDS, or Tax Collected at Source (TCS) for the vendor or customer.
@@ -66,7 +66,7 @@ This topic explains how to set up information about the Tax Deducted at Source (
     - Local authority
     - Others
 
-    [![Tax information FastTab](./media/apac-ind-TDS-56.png)](./media/apac-ind-TDS-56.png)
+    [![Tax information FastTab.](./media/apac-ind-TDS-56.png)](./media/apac-ind-TDS-56.png)
 
 9. On the Action Pane, on the **Vendor** tab, in the **Registration** group, select **Registration IDs** to open the **Manage addresses** page.
 10. On the **Manage addresses** page, on the **Tax information** FastTab, select **Add** or **Edit** to open the **Manage tax information** page, where you can maintain the tax registration entry.

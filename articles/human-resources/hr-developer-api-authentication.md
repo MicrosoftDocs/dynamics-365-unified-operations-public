@@ -29,6 +29,9 @@ ms.dyn365.ops.version: Human Resources
 
 # Authentication
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This article provides overview information about how to authenticate with the Microsoft Dynamics 365 Human Resources data application programming interface (API).
@@ -92,7 +95,7 @@ GET https://{cluster}.hr.talent.dynamics.com/namespaces/{namespace_guid}/data/Jo
 
 6. Select **Register**.
 
-   [![Registering a new app in the Azure portal](media/api-new-app-registration-expanded.png)](media/api-new-app-registration-expanded.png#lightbox)
+   [![Registering a new app in the Azure portal.](media/api-new-app-registration-expanded.png)](media/api-new-app-registration-expanded.png#lightbox)
 
 Azure AD assigns a unique application ID (client ID) to your app, and takes you to the **Overview** page for your app. To add more capabilities to your app, you can select other configuration options, such as options for branding and for certificates and secrets.
 

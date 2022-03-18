@@ -5,7 +5,7 @@ title: Cart and checkout pages overview
 description: This topic provides an overview of the cart and checkout pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 09/15/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
 # ms.tgt_pltfrm: 
-# ms.custom: 
+
 ms.search.region: Global
 ms.search.industry: 
 ms.author: anupamar
@@ -40,7 +40,7 @@ The cart page serves as the shopping bag and includes all the items that have be
 
 The following illustration show an example of a cart page that was built by using the module library and the "Fabrikam" theme.
 
-![Example of a cart page](./media/cart2.PNG)
+![Example of a cart page.](./media/cart2.PNG)
 
 The main body of the cart page shows all the items that the customer has added to the cart. All applicable discounts are showcased. These discounts include complex discounts. Examples include "Buy 3 items and get 10% off" or "Buy a bottle and a backpack to get 10% off." The order summary module shows the amount that is due after discounts, shipping, taxes, and so on, have been applied. There is also a promo code module that lets the customer apply or remove promotional codes.
 
@@ -56,7 +56,7 @@ The checkout page is where customers enter the information that is required to p
 
 The following illustration show an example of a checkout page that was built by using the module library.
 
-![Example of a checkout page](./media/Checkout.PNG)
+![Example of a checkout page.](./media/Checkout.PNG)
 
 The main body of the checkout page is where all the order information is collected. This information includes the shipping address, delivery options, and payment information. Checkout has a step-by-step flow, because the information must be entered in a specific order to be processed. For example, the shipping address must be entered before the shipping costs can be calculated and the payment can be authorized.
 

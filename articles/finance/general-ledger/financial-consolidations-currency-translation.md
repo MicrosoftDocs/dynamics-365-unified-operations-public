@@ -3,9 +3,9 @@
 
 title: Financial consolidations and currency translation overview
 description: This topic describes financial consolidations and currency translation in General ledger.
-author: aprilolson
-ms.date: 07/25/2019
-ms.topic: article
+author: jiwo
+ms.date: 10/07/2021
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
 # ms.tgt_pltfrm: 
-# ms.custom: 
+
 # ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -72,13 +72,13 @@ Here are some of the consolidation scenarios that Consolidate online supports:
 ## Legal entity setup
 Before you process a consolidation, you must set up the legal entity. You can run consolidation as many times as you require, and all data will be translated from the source company's accounting currency to the currency that is defined for the consolidation company. Therefore, for the following organizational structure, if you must translate all North American companies first to US dollars (USD) and then to euros (EUR), the currency of the parent company, you must have at least two consolidation companies.
 
-![Organizational structure](./media/organizational-structure.png "Organizational structure")
+![Organizational structure.](./media/organizational-structure.png "Organizational structure")
 
 In the preceding organizational structure, you must have a legal entity for the North American consolidation, because consolidations always consolidate from the accounting currency of the source company to the currency of the consolidation company. In the example, if all companies are included in a single consolidation, the Mexican subsidiary will be translated from Mexican pesos (MXN) to EUR, not from MXN to USD to EUR.
 
 When you create the legal entity, you can specify whether the company is used for both the consolidation process and the elimination process, or for just one of those processes. In the following illustration, the company is used for both processes. Note that you can't post daily journals in a consolidation company, but you can post them in an elimination company. Therefore, you might want to have a separate elimination company.
 
-![Legal entity that is used for both consolidation and elimination](./media/sep-elimination-company.png "Legal entity that is used for both consolidation and elimination")
+![Legal entity that is used for both consolidation and elimination.](./media/sep-elimination-company.png "Legal entity that is used for both consolidation and elimination")
 
 ## Main accounts and consolidation account groups
 One choice that you must make is how you want to consolidate your chart of accounts. During the consolidation process, you have three options for consolidating main accounts.
@@ -87,11 +87,11 @@ The first option is to use the main accounts from the source companies. In this 
 
 The second option is to specify a default consolidation account on the **Main accounts** page. The account will then be mapped to the consolidation account. This option can be helpful when you have different charts of accounts or must map to a chart that is defined by the headquarters.
 
-![Default consolidation account specified on the Main accounts page](./media/main-accounts.png "Default consolidation account specified on the Main accounts page")
+![Default consolidation account specified on the Main accounts page.](./media/main-accounts.png "Default consolidation account specified on the Main accounts page")
 
 The third option is to use consolidation account groups. You can define as many consolidation account groups as you require. Then, on the **Additional consolidation accounts** page, you just map the main account from the chart of accounts to the account that you require for that group.
 
-![Mapping on the Additional consolidation accounts page](./media/additional-consolidation-accounts.png "Mapping on the Additional consolidation accounts page")
+![Mapping on the Additional consolidation accounts page.](./media/additional-consolidation-accounts.png "Mapping on the Additional consolidation accounts page")
 
 ## Consolidating online
 To learn how to enter details of consolidations online, see [Online financial consolidations](./consolidate-online.md).
@@ -103,7 +103,7 @@ To view the results of the consolidation, you have multiple options:
 - Review the **Trial balance** list page in the consolidation company.
 - In the list of consolidation transactions on the **Consolidations** page, view the balances that are created by date for every source company for every period.
 
-    ![Consolidation transactions on the Consolidations page](./media/managing-consolidation-transactions.png "Consolidation transactions on the Consolidations page")
+    ![Consolidation transactions on the Consolidations page.](./media/managing-consolidation-transactions.png "Consolidation transactions on the Consolidations page")
 
 To run the consolidation again, you can just process the consolidation. Alternatively, you can first select **Remove the transactions** on the **Consolidations** page.
 In the event, the balances on your consolidated account are not accurate, these balances can be corrected using the **Closing period adjustments** page.
@@ -124,7 +124,7 @@ You can find the setup for eliminations in the **Setup** area of the **Consolida
 
 You can set the date when the elimination rule becomes effective and the date when it expires, as you require. If you want the elimination rule to be available in the elimination proposal process, you must set the **Active** option to **Yes**. Select a journal name of the **Elimination** type.
 
-![Basic properties of an elimination rule](./media/ledger-elimination-rule-journal.png "Basic properties of an elimination rule")
+![Basic properties of an elimination rule.](./media/ledger-elimination-rule-journal.png "Basic properties of an elimination rule")
 
 After you've defined the basic properties, select **Lines** to define the actual processing rules. There are two options for eliminations: you can eliminate the net change amount or define a fixed amount.
 
@@ -132,7 +132,7 @@ Select the source accounts. You can use an asterisk (\*) as a wildcard character
 
 After you've selected the source accounts, use the **Account specification** field to specify the account that is used from the destination company. Select **Source** to use the same main account that is defined in the source account. If you select **User defined**, you must specify a destination account.
 
-![Ledger elimination rule line page](./media/ledger-elimination-rule-line.png "Ledger elimination rule line page")
+![Ledger elimination rule line page.](./media/ledger-elimination-rule-line.png "Ledger elimination rule line page")
 
 The **Dimension specification** field works like the **Account specification** field. Select **Source** to use the same dimensions in the destination company and the source company. If you select **User defined**, you must specify the dimensions in the destination company by selecting **Destination dimensions**. Then select source dimensions and the financial dimensions and values that are used as a source of the elimination.
 
@@ -187,5 +187,17 @@ Here are some of the consolidation scenarios that Financial reporting supports:
 ## Generating consolidated financial statements
 For information about scenarios where you might generate consolidate financial statements, see [Generate consolidated financial statements](./generating-consolidated-financial-statements.md).
 
+## Performance enhancement for large consolidations
+
+Environments that have many general ledger transactions might run more slowly than is optimal. To fix this issue, you can set up parallel processing of batches that uses a user-defined number of dates. To ensure that the solution works as intended, add an extension point to the consolidation to return a container of date ranges. The base implementation should contain one date range for the start state and end date of the consolidation. Date ranges in the base implementation will be validated to ensure that they don't contain gaps or overlap. The date ranges will be used to create parallel batch bundles for each company.
+
+You can customize the number of date ranges to meet your organization's requirements. By customizing the number of date ranges, you can help simplify testing and minimize the impact on existing code, because there is no allocation logic. The only new tests that are required validate the creation of batch bundles, validate date ranges, and test a subset of date ranges to verify that the batches can be brought together for the final batch task. 
+
+This feature enhances the consolidation process in General ledger when the process is run in a batch. The enhancement improves the performance of the general ledger consolidation process by splitting the consolidation into multiple tasks that can be processed in parallel. In the default method of running a consolidation, each task processes eight days' worth of general ledger activity. However, an extension point has been added that lets you customize the number tasks that are created.
+
+Before you can use this feature, it must be turned on in your system. Admins can use the **Feature management** workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
+
+- **Module:** General ledger
+- **Feature name:** Performance enhancement for large consolidations
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 29291
 ms.assetid: 3f8b00ff-54f0-4e32-bd7f-b94a74785537
@@ -38,7 +38,7 @@ This article provides information about the Section Tabbed List subpattern. This
 The Section Tabbed List subpattern is used as part of the Operational Workspace pattern, specifically for a panorama section that contains a set of vertical tabs, each of which contains a filtered list of data.
 
 ## Wireframe
-[![Section Tabbed List wireframe](./media/sectiontabbedlistwireframe.png)](./media/sectiontabbedlistwireframe.png)
+[![Section Tabbed List wireframe.](./media/sectiontabbedlistwireframe.png)](./media/sectiontabbedlistwireframe.png)
 
 ## Pattern changes for Microsoft Dynamics AX
 This pattern didn't exist for Microsoft Dynamics AX 2012.
@@ -73,7 +73,7 @@ The verification checklist shows the steps for manually verifying that the form 
 ## Examples
 Form: **PurchOrderMaintainWorkspace** (**All workspaces** &gt; **Purchase order preparation**) 
 
-[![Tabbed List Section example](./media/tabbedlistsectionexample.png)](./media/tabbedlistsectionexample.png)
+[![Tabbed List Section example.](./media/tabbedlistsectionexample.png)](./media/tabbedlistsectionexample.png)
 
 ## Appendix
 ### Frequently asked questions

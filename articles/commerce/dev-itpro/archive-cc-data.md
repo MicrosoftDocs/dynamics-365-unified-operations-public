@@ -3,7 +3,7 @@
 
 title: Archive credit card transaction data
 description: This topic describes an archival job in Microsoft Dynamics 365 Commerce that can help free up space in the database by archiving credit card transactions.
-author: rubendel
+author: BrianShook
 ms.date: 01/28/2021
 ms.topic: article
 ms.prod: 
@@ -22,7 +22,7 @@ ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
 
@@ -68,18 +68,18 @@ In addition to the **Minimum transaction age in days** field, the **Archive cred
 
 The following illustration shows an example of parameter settings in the **Archive credit card transaction data** dialog box.
 
-![Parameter settings in the Archive credit card transaction data dialog box](media/PAYMENTS/Batch1.png)
+![Parameter settings in the Archive credit card transaction data dialog box.](media/PAYMENTS/Batch1.png)
 
 After the **Minimum transaction age in days** field and batch details have been set, select **Next** to view a sample of the data that will be exported. The following illustration shows an example. Although the data in this sample is limited, all data that is subject to archiving can be exported.
 
-![Sample of data that will be exported](media/PAYMENTS/Batch2.png)
+![Sample of data that will be exported.](media/PAYMENTS/Batch2.png)
 
 > [!IMPORTANT]
 > The data that is subject to archiving includes personally identifiable customer information such as the name of the cardholder. This sensitive data should be handled according to your local regulatory requirements.
 
 After you confirm the parameters for data that must be archived, you're prompted to confirm that you understand that the data that is being archived can't easily be restored, as shown in the following illustration.
 
-![Confirmation message box](media/PAYMENTS/Batch3.png)
+![Confirmation message box.](media/PAYMENTS/Batch3.png)
 
 After you select **Yes**, the archival job becomes active, and all XML data about credit card authorizations that is older than the **Minimum transaction age in days** value will be subject to archiving.
 

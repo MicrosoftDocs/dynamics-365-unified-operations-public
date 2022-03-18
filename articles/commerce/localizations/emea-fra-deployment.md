@@ -1,10 +1,11 @@
 ---
 # required metadata
 
-title: Deployment guidelines for cash registers for France
+title: Deployment guidelines for cash registers for France (legacy)
 description: This topic is a deployment guide for the Commerce localization for France.
-author: AlexChern0v
-ms.date: 10/06/2020
+author: EvgenyPopovMBS
+manager: annbe
+ms.date: 08/10/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -24,9 +25,12 @@ ms.search.validFrom: 2018-4-13
 ms.dyn365.ops.version: 7.3.2
 
 ---
-# Deployment guidelines for cash registers for France
+# Deployment guidelines for cash registers for France (legacy)
 
 [!include [banner](../includes/banner.md)]
+
+> [!IMPORTANT]
+> This sample fiscal integration functionality doesn't take advantage of the [fiscal integration framework](./fiscal-integration-for-retail-channel.md) and will be deprecated in later updates. You should use the [functionality that is based on the fiscal integration framework](./emea-fra-fi-deployment.md) instead.
 
 This topic is a deployment guide that shows how to enable the Dynamics 365 Commerce localization for France. The localization consists of several extensions of components. For example, the extensions let you print custom fields on receipts, register additional audit events, sales transactions, and payment transactions in Point of Sale (POS), digitally sign sales transactions, and print X and Z reports in local formats. For more information about the localization for France, see [Cash register functionality for France](./emea-fra-cash-registers.md).
 
@@ -99,22 +103,19 @@ In Commerce version 10.0.15 and later, you can use the [User-defined certificate
 To apply the new feature in the CRT extension, follow these steps.
 
 1. Create a new CRT extension project (C# class library project type). Use the sample templates from the Retail software development kit (SDK) (RetailSDK\SampleExtensions\CommerceRuntime).
-
 2. Add custom handler for CertificateSignatureServiceRequest in the SequentialSignatureRegister project.
-
 3. To read a secret call, GetUserDefinedSecretCertificateServiceRequest using a constructor with profileId parameter. That will start the functionality working with settings from Certificate profiles. Based on the settings, the certificate will be retrieved either from Azure Key Vault or local machine storage.
-	
+
+	``` csharp
 	GetUserDefinedSecretCertificateServiceRequest getUserDefinedSecretCertificateServiceRequest = new GetUserDefinedSecretCertificateServiceRequest(profileId: "ProfileId", secretName: null, thumbprint: null, expirationInterval: null);
 	GetUserDefinedSecretCertificateServiceResponse getUserDefinedSecretCertificateServiceResponse = request.RequestContext.Execute<GetUserDefinedSecretCertificateServiceResponse>(getUserDefinedSecretCertificateServiceRequest);
 	
 	X509Certificate2 Certificate = getUserDefinedSecretCertificateServiceResponse.Certificate;
-	
+	```
+
 4. When the certificate is retrieved, proceed with data signing.
-
 5. Build the CRT extension project.
-
 6. Copy the output class library and paste it into ...\RetailServer\webroot\bin\Ext for manual testing.
-
 7. In the CommerceRuntime.Ext.config file, update the extension composition section with the custom library information.
 
 ## Specifying application attributes that will be printed on receipts

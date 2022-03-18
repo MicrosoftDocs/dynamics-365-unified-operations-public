@@ -21,7 +21,7 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: johanho
 ms.search.validFrom: 2020-12-01
-ms.dyn365.ops.version: Release 10.0.16
+ms.dyn365.ops.version: 10.0.16
 ---
 
 # Design the production floor execution interface
@@ -36,7 +36,7 @@ On the **Configure production floor execution** page, you can create and configu
 
 Each tab is divided into four sections, as shown in the following illustration.
 
-![Tab layout](media/pfe-tab-layout.png "Tab layout")
+![Tab layout.](media/pfe-tab-layout.png "Tab layout")
 
 The following elements are shown in the illustration:
 
@@ -51,19 +51,19 @@ To create and configure a new tab, follow these steps:
 
 1. Select **Design tabs** on the Action Pane to open the **Design tabs** page.
 
-    ![The Design tabs page](media/pfe-design-tabs.png "The Design tabs page")
+    ![The Design tabs page.](media/pfe-design-tabs.png "The Design tabs page")
 
 1. Select **New** on the Action Pane.
 
 1. Make the following settings in the header of the page:
 
-    - **Tab name** - Specify a name for the tab.
-    - **Main view** - Select between the two pre-defined job lists (*Active jobs*, *All jobs*, or *My machine*).
-    - **Details view** - Select between a blank value or **Job details**. If you select the blank value, there will be no detailed view in the tab. If you select **Job details**, the detailed view will contain a detailed description of the job selected in the job list in the main view.
+    - **Tab name** – Specify a name for the tab.
+    - **Main view** – Select among the predefined job lists (*Active jobs*, *All jobs*, *My jobs*, and *My machine*).
+    - **Details view** – Select between a blank value or **Job details**. If you select the blank value, there will be no detailed view in the tab. If you select **Job details**, the detailed view will contain a detailed description of the job selected in the job list in the main view.
 
 1. In the **Primary toolbar** section, choose which buttons should be available in the primary toolbar. The **Available actions** column shows a list of all the buttons that can be added. The **Selected actions** columns shows a list of all the buttons that are included in the current configuration. Use the buttons between the columns to move selected items between the columns as needed. Use the up and down buttons next to the **Selected actions** column to control the order in which the buttons are presented in the user interface.
 
-1. In the **Secondary** **toolbar** section, choose which buttons should be available in the secondary toolbar. The **Available actions** column shows a list of all the buttons that can be added. The **Selected actions** columns shows a list of all the buttons that are included in the current configuration. Use the buttons between the columns to move selected items between the columns as needed. Use the up and down buttons next to the **Selected actions** column to control the order in which the buttons are presented in the user interface.
+1. In the **Secondary toolbar** section, choose which buttons should be available in the secondary toolbar. The **Available actions** column shows a list of all the buttons that can be added. The **Selected actions** columns shows a list of all the buttons that are included in the current configuration. Use the buttons between the columns to move selected items between the columns as needed. Use the up and down buttons next to the **Selected actions** column to control the order in which the buttons are presented in the user interface.
 
 ## Associate a tab with a configuration
 
@@ -71,7 +71,7 @@ After you designed all the tabs you need, you can associate them with a configur
 
 1. Go to **Production control \> Setup \> Manufacturing execution \> Configure production floor execution**.
 
-    ![Configure production floor execution](media/pfe-config-prod-floor-execution.png "Configure production floor execution")
+    ![Configure production floor execution.](media/pfe-config-prod-floor-execution.png "Configure production floor execution")
 
 1. On the **Tab selection** FastTab, select **Add**.
 

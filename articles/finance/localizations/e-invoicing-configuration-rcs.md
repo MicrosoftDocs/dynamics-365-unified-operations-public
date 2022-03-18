@@ -4,7 +4,7 @@
 title: Configure Electronic invoicing in Regulatory Configuration Services (RCS)
 description: This topic explains how to configure Electronic invoicing in Dynamics 365 Regulatory Configuration Services (RCS). 
 author: gionoder
-ms.date: 05/19/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 10.0.12
 
 This topic provides information about the configuration capabilities of Electronic invoicing in Dynamics 365 Regulatory Configuration Services (RCS).
 
-It is through the configuration capabilities that Electronic invoicing helps you meet business and regulatory requirements of electronic invoices without having to do any coding. And in the scenarios where electronic invoices must be electronically approved by a web services, the configuration capabilities also help you meet the requirements for exchanging messages with a web services, without doing any code.
+It is through the configuration capabilities that Electronic invoicing helps you meet business and regulatory requirements of electronic invoices without having to do any coding. And in the scenarios where electronic invoices must be electronically approved by a web service, the configuration capabilities also help you meet the requirements for exchanging messages with a web service, without doing any code.
 
 ## Electronic reporting
 
@@ -51,21 +51,13 @@ The features also support scenarios where compliance with file format specificat
 
 Finally, the features support the exchange of messages with external web services that are hosted either by the tax authority or by some accredited party, and requests for authorization or an approval stamp in the electronic invoice.
 
-### Availability of electronic invoicing features
+## Availability of electronic invoicing features
 
 Availability of the electronic invoicing features depends on the country or region. Although some features are generally available, others are in preview.
 
-#### Generally available features
+### Generally available features
 
 The following table shows the electronic invoicing features that are generally available.
-
-| Country/region | Feature name                         | Business document |
-|----------------|--------------------------------------|-------------------|
-| Egypt          | Egyptian electronic invoice (EG) | Sales invoices and project invoices |
-
-#### Preview features
-
-The following table shows the electronic invoicing features that are currently in preview.
 
 | Country/region | Feature name                         | Business document |
 |----------------|--------------------------------------|-------------------|
@@ -73,29 +65,40 @@ The following table shows the electronic invoicing features that are currently i
 | Belgium        | Belgian electronic invoice (BE)      | Sales invoices and project invoices |
 | Brazil         | Brazilian NF-e (BR)                  | Fiscal document model 55, correction letters, cancellations, and discards |
 | Brazil         | Brazilian NFS-e ABRASF Curitiba (BR) | Service fiscal documents |
+| Brazil         | Brazilian NF-e import from e-mail (BR) | Fiscal document model 55 |
 | Denmark        | Danish electronic invoice (DK)       | Sales invoices and project invoices |
+| Egypt          | Egyptian electronic invoice (EG)     | Sales invoices and project invoices |
 | Estonia        | Estonian electronic invoice (EE)     | Sales invoices and project invoices |
 | Finland        | Finnish electronic invoice (FI)      | Sales invoices and project invoices |
 | France         | French electronic invoice (FR)       | Sales invoices and project invoices |
 | Germany        | German electronic invoice (DE)       | Sales invoices and project invoices |
 | Italy          | FatturaPA (IT)                       | Sales invoices and project invoices |
-| Mexico         | Mexican CFDI (MX)                    | Sales invoices, packing slips, inventory transfers, payment complements, and cancellations |
 | Netherlands    | Dutch electronic invoice (NL)        | Sales invoices and project invoices |
 | Norway         | Norwegian electronic invoice (NO)    | Sales invoices and project invoices |
 | Spain          | Spanish electronic invoice (ES)      | Sales invoices and project invoices |
 | Europe         | PEPPOL electronic invoice            | PEPPOL sales invoices and project invoices |
+| Europe         | PEPPOL vendor invoice                | PEPPOL import vendor invoices |
+| Saudi Arabia   | Saudi Arabian electronic invoice (SA)| Sales invoices and project invoices |
+
+### Preview features
+
+The following table shows the electronic invoicing features that are currently in preview.
+
+| Country/region | Feature name                         | Business document |
+|----------------|--------------------------------------|-------------------|
+| Mexico         | Mexican CFDI (MX)                    | Sales invoices, packing slips, inventory transfers, payment complements, and cancellations |
 
 ### Configurable components of electronic invoicing features
 
 The electronic invoicing features consist of the following groups of configurable components:
 
-- **Formats** – Formats let you configure what Electronic invoicing must generate when an electronic document becomes an electronic invoice. Formats include the format configuration for the electronic invoice, and for files and messages that are used to submit requests and receive responses when communication with an external web service is required.
-- **Actions** – Actions let you configure how Electronic invoicing generates the transformation of an electronic document that Finance and Supply Chain Management submitted into an electronic invoice.
-- **Applicability rules** – Applicability rules let you configure the context that Electronic invoicing must consider to process an electronic invoicing feature.
-- **Variables** – Variables let you configure the support for the construction of the configuration logic. Variables can work as the input of values to perform a specific action. Alternatively, they can work as an exchange of values between Finance and Supply Chain Management and Electronic invoicing.
-- **Electronic document model mapping** – The electronic document model mapping lets you configure the ER model mapping. The model mapping defines the data mapping of the abstract invoice that is integrated into Electronic invoicing when electronic documents are submitted.
-- **Invoice context model** – The invoice context model lets you configure the ER invoice context model and define the context of an electronic invoicing feature.
-- **Response types** – Response types let you configure what Electronic invoicing must update in Finance and Supply Chain Management as a result of the electronic invoice processing.
+- **Formats**: Formats let you configure what Electronic invoicing must generate when an electronic document becomes an electronic invoice. Formats include the format configuration for the electronic invoice, and for files and messages that are used to submit requests and receive responses when communication with an external web service is required.
+- **Actions**: Actions let you configure how Electronic invoicing generates the transformation of an electronic document that Finance and Supply Chain Management submitted into an electronic invoice.
+- **Applicability rules**: Applicability rules let you configure the context that Electronic invoicing must consider to process an electronic invoicing feature.
+- **Variables**: Variables let you configure the support for the construction of the configuration logic. Variables can work as the input of values to perform a specific action. Alternatively, they can work as an exchange of values between Finance and Supply Chain Management and Electronic invoicing.
+- **Electronic document model mapping**: The electronic document model mapping lets you configure the ER model mapping. The model mapping defines the data mapping of the abstract invoice that is integrated into Electronic invoicing when electronic documents are submitted.
+- **Invoice context model**: The invoice context model lets you configure the ER invoice context model and define the context of an electronic invoicing feature.
+- **Response types**: Response types let you configure what Electronic invoicing must update in Finance and Supply Chain Management as a result of the electronic invoice processing.
 
 ### Formats
 
@@ -200,6 +203,11 @@ The following lists show the ER format configurations that are available for the
 - Sales invoice (ES)
 - Project invoice (ES)
 
+#### Saudi Arabian (SA) electronic invoice: Sales and project invoices for Saudi Arabia
+
+- Sales e-invoice (SA)
+- Project e-invoice (SA)
+
 In addition to the ER format configurations that are available out of the box to use with the Electronic Invoicing service, you can also create your own ER format configurations. However, the format configurations that are created to use with Electronic Invoicing features don't support direct reference to Finance or Supply Chain Management tables or any of the corresponding metadata. Only references to the ER model mapping are supported.
 
 ### Actions
@@ -209,10 +217,10 @@ The following table lists the available actions, and whether they are currently 
 | Action                                        | Description                                                                  | Availability         |
 |-----------------------------------------------|------------------------------------------------------------------------------|----------------------|
 | Transform document                            | Run Electronic Reporting format to transform the document.                   | Generally available  |
-| Sign xml document                             | Sign xml documents with digital signature.                                   | In preview           |
+| Sign xml document                             | Sign xml documents with digital signature.                                   | Generally available  |
 | Sign json document for Egyptian Tax Authority | Sign json documents with digital signature for Egyptian Tax Authority.       | Generally available  |
 | Integrate with Egyptian ETA service           | Communicate with Egyptian Tax Authority.                                     | Generally available  |
-| Call Brazilian SEFAZ Service                  | Integrate with Brazilian SEFAZ service for fiscal document submission.       | In preview           |
+| Call Brazilian SEFAZ Service                  | Integrate with Brazilian SEFAZ service for fiscal document submission.       | Generally available  |
 | Call Mexican PAC Service                      | Integrate with Mexican PAC service for CFDI submission.                      | In preview           |
 | Process response                              | Analyze the response received from the web service call.                     | Generally available  |
 | Use MS Power Automate                         | Integrate with flow built in Microsoft Power Automate.                       | In preview           |
@@ -277,7 +285,7 @@ Logic operators:
 - And
 - Or
 
-Operators types:
+Operator types:
 - Equal
 - Not equal
 - Greater than
@@ -299,7 +307,7 @@ The example looks like this.
 
 | Electronic invoicing feature | Applicability rules        |
 |------------------------------|--------------------------- |
-| C                            | <p>Country = BR</p><p>and</p><p>( Legal entity = BRMF</p><p>or</p><p>Model=55)</p>  |
+| C                            | <p>Country = BR</p><p>and</p><p>(Legal entity = BRMF</p><p>or</p><p>Model=55)</p>  |
 
 
 ## Configuration providers

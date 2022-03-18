@@ -52,7 +52,7 @@ Some steps in this topic require execution of an ER format. In some cases, execu
 
 Follow the steps in [Appendix 1](#appendix1) of this topic to design the required ER components. You now have the **Mapping (General)** model mapping configuration that contains the model mapping for the **Entry point 1** definition.
 
-![ER configurations page](./media/RCS-Context-specific-mapping-Tree.PNG)
+![ER configurations page, Format to learn mappings configuration.](./media/RCS-Context-specific-mapping-Tree.PNG)
 
 ### Run the configured format
 
@@ -65,7 +65,7 @@ Notice that the web browser offers to download the text file that was generated 
 
 Follow the steps in [Appendix 2](#appendix2) of this topic to design the required ER components. You now have **Mapping (General)** and **Mapping (General) custom** model mapping configurations, each of which contains the model mapping for the **Entry point 1** definition.
 
-![ER configurations page](./media/RCS-Context-specific-mapping-TreeCustom.PNG)
+![ER configurations page, Mapping general custom configuration.](./media/RCS-Context-specific-mapping-TreeCustom.PNG)
 
 ### Run the configured format
 
@@ -75,7 +75,7 @@ Follow the steps in [Appendix 2](#appendix2) of this topic to design the require
 
 Notice that execution of the selected ER format is unsuccessful. An error message informs you that more than one model mapping exists for the **Model to learn mappings** model and the **Entry point 1** definition in the **Mapping (General)** and **Mapping (General) custom** model mapping configurations. The message also recommends that you select one of those configurations as the default configuration.
 
-![ER configurations page](./media/RCS-Context-specific-mapping-FormatRunCustomFailed.PNG)
+![ER configurations page with error message.](./media/RCS-Context-specific-mapping-FormatRunCustomFailed.PNG)
 
 ### Define a default mapping configuration
 
@@ -86,7 +86,7 @@ Follow these steps to define the **Mapping (General) custom** model mapping conf
 3.	Set the **Default for model mapping** option to **Yes**.
 4.	Select **Save**.
 
-![ER configurations page](./media/RCS-Context-specific-mapping-MappingsCustomDefault.PNG)
+![ER configurations page, Default for model mapping slider set to Yes.](./media/RCS-Context-specific-mapping-MappingsCustomDefault.PNG)
 
 ### Run the configured format
 
@@ -105,7 +105,7 @@ Follow the steps in [Appendix 3](#appendix3) of this topic to design the require
 
 Notice that version 1 of the **Mapping (FR)** model mapping configuration is configured so that it applies only to ER formats of the **Model to learn mappings** model that are run in Finance companies that have French country/region context.
 
-![ER configurations page](./media/RCS-Context-specific-mapping-TreeFR.PNG)
+![ER configurations page, Model mapping (FR) configuration.](./media/RCS-Context-specific-mapping-TreeFR.PNG)
 
 ### Run the configured format
 
@@ -125,7 +125,7 @@ Follow these steps to define the custom **Mapping (FR)** model mapping configura
 3.	Set the **Default for model mapping** option to **Yes**.
 4.	Select **Save**.
 
-![ER configurations page](./media/RCS-Context-specific-mapping-TreeFRDefault.PNG)
+![ER configurations page, Mapping (FR) configuration, Default for model mapping slider set to Yes.](./media/RCS-Context-specific-mapping-TreeFRDefault.PNG)
 
 ### Run the configured format
 
@@ -199,7 +199,7 @@ In the table, a plus sign (+) indicates the presence of a model mapping configur
 1.	In the navigation pane, go to **Modules \> Organization administration \> Electronic reporting \> Configuration debug log**.
 2.	Select the **Reload this page** button.
 
-![ER run logs page](./media/RCS-Context-specific-mapping-DebugLog.PNG)
+![ER run logs page.](./media/RCS-Context-specific-mapping-DebugLog.PNG)
 
 Notice that a new record has been added to the ER debug log for the executed ER format. Because the **Level** field of this record is set to **Info**, the record is informational. Because the Format component field is set to **Mapping configuration**, the record informs you about a model mapping that was used during execution of the **Format to learn mappings** ER format (selected in the **Configuration name** field). The content of the **Generated text** field informs you that the **Mapping (FR)** mapping component that resides in the **Mapping (FR)** configuration has been used to run this report.
 
@@ -240,7 +240,7 @@ Notice that draft version 1 of this ER configuration is ready for editing. This 
 14.	In the drop-down dialog box, in the **Name** field, enter **Functionality description**.
 15.	Select **Add**.
 
-    ![ER data model designer page](./media/RCS-Context-specific-mapping-Model.PNG)
+    ![ER data model designer page.](./media/RCS-Context-specific-mapping-Model.PNG)
 
 16.	Select **Save**.
 17.	Close the page.
@@ -280,7 +280,7 @@ Notice that draft version 1 of this ER configuration is ready for editing. This 
 5.	Select **Save**.
 6.	Close the **Formula designer** page.
 
-    ![ER model mapping designer page](./media/RCS-Context-specific-mapping-Mapping1.PNG)
+    ![ER model mapping designer page, Entry point 1 definition.](./media/RCS-Context-specific-mapping-Mapping1.PNG)
 
 7.	Select **Save**.
 8.	Close the **Model mapping designer** page.
@@ -293,12 +293,12 @@ Notice that draft version 1 of this ER configuration is ready for editing. This 
 15.	Select **Save**.
 16.	Close the **Formula designer** page.
 
-    ![ER model mapping designer page](./media/RCS-Context-specific-mapping-Mapping2.PNG)
+    ![ER model mapping designer page, Entry point 2 definition.](./media/RCS-Context-specific-mapping-Mapping2.PNG)
 
 17.	Select **Save**.
 18.	Close the **Model mapping designer** page.
 
-    ![ER model mappings page](./media/RCS-Context-specific-mapping-Mappings.PNG)
+    ![ER model mappings page with entry point definitions.](./media/RCS-Context-specific-mapping-Mappings.PNG)
 
 19.	Close the **Model mappings** page.
 
@@ -339,7 +339,7 @@ Notice that draft version 1 of this ER configuration is ready for editing. This 
 2.	Select the **Functionality description** field.
 3.	Select **Bind**.
 
-    ![ER format designer page](./media/RCS-Context-specific-mapping-Format.PNG)
+    ![ER format designer page.](./media/RCS-Context-specific-mapping-Format.PNG)
 
 4.	Select **Save**.
 5.	Close the page.
@@ -373,7 +373,7 @@ Notice that draft version 1 of this ER configuration is ready for editing.
 6.	Select **Save**.
 7.	Close the page.
 
-    ![ER model mapping designer page](./media/RCS-Context-specific-mapping-Mapping1Custom.PNG)
+    ![ER model mapping designer page, Generic functionality 1 custom formula.](./media/RCS-Context-specific-mapping-Mapping1Custom.PNG)
 
 8.	Select **Save**.
 9.	Close the page.
@@ -384,12 +384,12 @@ Notice that draft version 1 of this ER configuration is ready for editing.
 14.	Select **Save**.
 15.	Close the page.
 
-    ![ER model mapping designer page](./media/RCS-Context-specific-mapping-Mapping2Custom.PNG)
+    ![ER model mapping designer page, Generic functionality 2 custom formula.](./media/RCS-Context-specific-mapping-Mapping2Custom.PNG)
 
 16.	Select **Save**.
 17.	Close the page.
 
-    ![ER model mappings page](./media/RCS-Context-specific-mapping-MappingsCustom.PNG)
+    ![ER model to datasource mapping page for Mapping (General) copy mapping.](./media/RCS-Context-specific-mapping-MappingsCustom.PNG)
 
 18.	Close the page.
 
@@ -436,7 +436,7 @@ Notice that draft version 1 of this ER configuration is ready for editing.
 7.	Select **Save**.
 8.	Close the page.
 
-    ![ER model mapping designer page](./media/RCS-Context-specific-mapping-Mapping1FR.PNG)
+    ![ER model mapping designer page, FR functionality 1 formula.](./media/RCS-Context-specific-mapping-Mapping1FR.PNG)
 
 9.	Select **Save**.
 10.	Close the page.
@@ -448,12 +448,12 @@ Notice that draft version 1 of this ER configuration is ready for editing.
 16.	Select **Save**.
 17.	Close the page.
 
-    ![ER model mapping designer page](./media/RCS-Context-specific-mapping-Mapping2FR.PNG)
+    ![ER model mapping designer page, FR functionality 2 formula.](./media/RCS-Context-specific-mapping-Mapping2FR.PNG)
 
 18.	Select **Save**.
 19.	Close the page.
 
-    ![ER model mappings page](./media/RCS-Context-specific-mapping-MappingsFR.PNG)
+    ![ER model to data source mapping page.](./media/RCS-Context-specific-mapping-MappingsFR.PNG)
 
 20.	Close the page.
 

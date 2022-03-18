@@ -3,7 +3,7 @@
 
 title: Find information about standard data entities
 description: This topic describes how to get information about the standard data entities that are available and how to download the scripts to run the reports.
-author: robinarh
+author: tonyafehr
 ms.date: 09/18/2020
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 202654
 ms.assetid: 6ec8ea87-ea1e-4a10-9d67-2b6565c5c62e
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 
@@ -30,6 +30,9 @@ ms.dyn365.ops.version: Platform update 1
 # Find information about standard data entities
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 The application ships with many default data entities. Data entities are frequently updated, so for documentation, we rely on the data entity templates to indicate which order data entities should be imported in, and on reports for a list of data entities that ship with each release.
 

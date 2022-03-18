@@ -43,7 +43,7 @@ The following entities hold the customized, role-based security (that is, privil
 3. In the **Group name** field, enter a name for the group.
 4. Set the **Generate data package** option to **Yes**.
 
-    ![Setting the Generate data package option](media/cb4da5cdf487ee4c55f931f1e220cdf9.png)
+    ![Setting the Generate data package option.](media/cb4da5cdf487ee4c55f931f1e220cdf9.png)
 
 5. Select **Add multiple** to open the drop-down dialog box.
 6. Filter the entities by setting the following fields:

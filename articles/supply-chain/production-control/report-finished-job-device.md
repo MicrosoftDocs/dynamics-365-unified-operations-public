@@ -21,7 +21,7 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: johanho
 ms.search.validFrom: 2020-05-18
-ms.dyn365.ops.version: Release 10.0.13
+ms.dyn365.ops.version: 10.0.13
 ---
 
 # Report as finished from the job card device
@@ -89,13 +89,13 @@ To allow for manually assigned batch numbers, follow these steps to set up a tra
 1. Create or select the tracking number group to set up.
 1. On the **General** FastTab, set the **Manual** option to **Yes**.
 
-    ![A tracking number group for manual batch numbers](media/tracking-number-group-manual.png "A tracking number group for manual batch numbers")
+    ![A tracking number group for manual batch numbers.](media/tracking-number-group-manual.png "A tracking number group for manual batch numbers")
 
 1. Set other values as you require, and then select this tracking number group as the batch number group for released products that you want to use this scenario for.
 
 When you use this scenario, the **Batch number** field that the **Report progress** page on the job card device provides is a text box where workers can enter any value.
 
-![Report progress page with a field for manual batch numbers](media/job-card-device-batch-manual.png "Report progress page with a field for manual batch numbers")
+![Report progress page with a field for manual batch numbers.](media/job-card-device-batch-manual.png "Report progress page with a field for manual batch numbers")
 
 ### Set up a tracking number group that provides a list of predefined batch numbers
 
@@ -106,13 +106,13 @@ To provide a list of predefined batch numbers, follow these steps to set up a tr
 1. On the **General** FastTab, set the **Only for inventory transactions** option to **Yes**.
 1. Use the **Per qty** field to split batch numbers per quantity, based on the value that you enter. For example, you have a production order for ten pieces, and the **Per qty** field is set to *2*. In this case, five batch numbers will be assigned to the production order when it's created.
 
-    ![A tracking number group for predefined batch numbers](media/tracking-number-group-predefined.png "A tracking number group for predefined batch numbers")
+    ![A tracking number group for predefined batch numbers.](media/tracking-number-group-predefined.png "A tracking number group for predefined batch numbers")
 
 1. Set other values as you require, and then select this tracking number group as the batch number group for released products that you want to use this scenario for.
 
 When you use this scenario, the **Batch number** field that the **Report progress** page on the job card device provides is a drop-down list where workers must select a predefined value.
 
-![Report progress page with a list of predefined batch numbers](media/job-card-device-batch-predefined.png "Report progress page with a list of predefined batch numbers")
+![Report progress page with a list of predefined batch numbers.](media/job-card-device-batch-predefined.png "Report progress page with a list of predefined batch numbers")
 
 ### Set up a tracking number group that automatically assigns batch numbers
 
@@ -123,13 +123,13 @@ If batch numbers should be assigned automatically, without worker input, follow 
 1. On the **General** FastTab, set the **Only for inventory transactions** option to **No**.
 1. Set the **Manual** option to **No**.
 
-    ![A tracking number group for fixed batch numbers](media/tracking-number-group-fixed.png "A tracking number group for fixed batch numbers")
+    ![A tracking number group for fixed batch numbers.](media/tracking-number-group-fixed.png "A tracking number group for fixed batch numbers")
 
 1. Set other values as you require, and then select this tracking number group as the batch number group for released products that you want to use this scenario for.
 
 When you use this scenario, the **Batch number** field that the **Report progress** page on the job card device provides shows a value, but workers can't edit it.
 
-![Report progress page with a fixed batch number](media/job-card-device-batch-fixed.png "Report progress page with a fixed batch number")
+![Report progress page with a fixed batch number.](media/job-card-device-batch-fixed.png "Report progress page with a fixed batch number")
 
 ## Report serial-controlled items as finished
 
@@ -169,7 +169,7 @@ To allow for manually assigned serial numbers, follow these steps to set up a tr
 1. Create or select the tracking number group to set up.
 1. On the **General** FastTab, set the **Manual** option to **Yes**.
 
-    ![Tracking number groups page, serial numbers](media/tracking-number-group-manual-serial.png "Tracking number groups page, serial numbers")
+    ![Tracking number groups page, serial numbers.](media/tracking-number-group-manual-serial.png "Tracking number groups page, serial numbers")
 
 1. Set other values as you require, and then select this tracking number group as the serial number group for released products that you want to use this scenario for.
 
@@ -178,7 +178,7 @@ When you use this scenario, the **Serial number** field that the **Report progre
 - To mark a serial number as scrapped, select the **Scrap** button for the appropriate row. The worker will be prompted to provide an **Error cause**.
 - To delete a serial number, select the **Delete** button for the appropriate row.
 
-![Report progress page with a field for manual serial numbers](media/job-card-device-serial-manual.png "Report progress page with a field for manual serial numbers")
+![Report progress page with a field for manual serial numbers.](media/job-card-device-serial-manual.png "Report progress page with a field for manual serial numbers")
 
 ### Set up a tracking number group that provides a list of predefined serial numbers
 
@@ -189,13 +189,13 @@ To provide a list of predefined serial numbers, follow these steps to set up a t
 1. On the **General** FastTab, set the **Only for inventory transactions** option to **Yes**.
 1. Use the **Per qty** field to split serial numbers per quantity of one.
 
-    ![A tracking number group for predefined serial numbers](media/tracking-number-group-predefined-sn.png "A tracking number group for predefined serial numbers")
+    ![A tracking number group for predefined serial numbers.](media/tracking-number-group-predefined-sn.png "A tracking number group for predefined serial numbers")
 
 1. Set other values as you require, and then select this tracking number group as the serial number group for released products that you want to use this scenario for.
 
 When you use this scenario, the **Serial number** field that the **Report progress** page on the job card device provides is a drop-down list where workers must select a predefined value.
 
-![Report progress page with a list of predefined serial numbers](media/job-card-device-serial-predefined.png "Report progress page with a list of predefined serial numbers")
+![Report progress page with a list of predefined serial numbers.](media/job-card-device-serial-predefined.png "Report progress page with a list of predefined serial numbers")
 
 ### Set up a tracking number group that automatically assigns serial numbers
 
@@ -206,13 +206,13 @@ If a serial number should be assigned automatically, without worker input, follo
 1. On the **General** FastTab, set the **Only for inventory transactions** option to **No**.
 1. Set the **Manual** option to **No**.
 
-    ![A tracking number group for fixed serial numbers](media/tracking-number-group-fixed-sn.png "A tracking number group for fixed serial numbers")
+    ![A tracking number group for fixed serial numbers.](media/tracking-number-group-fixed-sn.png "A tracking number group for fixed serial numbers")
 
 1. Set other values as you require, and then select this tracking number group as the serial number group for released products that you want to use this scenario for.
 
 When you use this scenario, the **Serial number** field that the **Report progress** page on the job card device provides shows a value, but workers can't edit it. This scenario is only relevant when a production order is created for a quantity of one piece of a serial number-controlled item.
 
-![Report progress page with a fixed serial number](media/job-card-device-serial-fixed.png "Report progress page with a fixed serial numbers")
+![Report progress page with a fixed serial number.](media/job-card-device-serial-fixed.png "Report progress page with a fixed serial numbers")
 
 ## Report as finished to a license plate
 
@@ -222,9 +222,9 @@ Advanced warehouse processes can use the license plate dimension to track invent
 
 To use the features that are described in this section, you must use [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to turn on the following features (in this order):
 
-1. License plate for reporting as finished added to the Job Card Device
-1. Enable automatic generation of license plate number when reporting as finished in the job card device
-1. Print label from Job Card Device
+1. *License plate for reporting as finished added to the Job Card Device*<br>(As of Supply Chain Management version 10.0.21, this feature is turned on by default. As of Supply Chain Management version 10.0.25, this feature is mandatory.)
+1. *Enable automatic generation of license plate number when reporting as finished in the job card device*<br>(As of Supply Chain Management version 10.0.25, this feature is mandatory.)
+1. *Print label from Job Card Device*<br>(As of Supply Chain Management version 10.0.25, this feature is mandatory.)
 
 ### Set up reporting as finished to a license plate
 
@@ -236,7 +236,7 @@ To control whether workers should reuse an existing license plate or generate a 
     - **Generate license plate** – Set this option to **Yes** to generate a new license plate for each report as finished. Set it to **No** if an existing license plate should be used for each report as finished.
     - **Print label** – Set this option to **Yes** if the worker must print a license plate label for each report as finished. Set it to **No** if no label is required. 
 
-![Configure job card for devices page](media/config-job-card-raf.png "Configure job card for devices page")
+![Configure job card for devices page.](media/config-job-card-raf.png "Configure job card for devices page")
 
 > [!NOTE]
 > To configure the label, go to **Warehouse management \> Setup \> Document routing \> Document routing**. For more information, see [Enable license plate label printing](../warehousing/tasks/license-plate-label-printing.md).

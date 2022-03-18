@@ -1,29 +1,15 @@
 ---
-# required metadata
-
 title: Initialize company data
 description: This topic explains how to initialize data with company information before you enable a dual-write connection.
 author: RamaKrishnamoorthy 
 ms.date: 12/01/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 31301
+ms.reviewer: tfehr
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Initialize company data
@@ -32,7 +18,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [preview-banner](../../includes/preview-banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 If you have an existing Microsoft Dataverse instance or Finance and Operations app instance that has business data, you might want to enable a dual-write connection against it. In this case, you must initialize the Dataverse data or Finance and Operations app data with company information before you enable dual-write. This initialization process is sometimes referred to as *bootstrapping*.
 
@@ -49,7 +35,7 @@ Consider the **Customers** table in a Finance and Operations app, and the **Acco
 
 The following illustration shows the workflow.
 
-:::image type="content" source="media/boot-process-flow.png" alt-text="High-level flow":::
+:::image type="content" source="media/boot-process-flow.png" alt-text="High-level flow.":::
 
 This scenario is based on the following assumptions:
 
@@ -76,7 +62,7 @@ This scenario is based on the following assumptions:
 
 If you don't have an Azure storage account, follow these steps in [Create an Azure storage account](/azure/storage/common/storage-account-create?tabs=azure-portal#create-a-storage-account) to create one. In your storage account, create one container that is named **ce-data**. This container will store all data files. You can change the container in your datasets and pipelines as you require. Go to **Access keys**, and copy the **Connection string** value, as shown in the following illustration. This value is required when you import the Azure Data Factory template.
 
-:::image type="content" source="media/boot-storage-account.png" alt-text="Setting up access keys":::
+:::image type="content" source="media/boot-storage-account.png" alt-text="Setting up access keys.":::
 
 ### Deploy an Azure Data Factory template
 
@@ -100,7 +86,7 @@ If you don't have an Azure storage account, follow these steps in [Create an Azu
 7. Select **Load file**, and find and select the ARM template file that you downloaded earlier. Then select **Save**.
 8. Provide the required parameters, select **Review**, and then select **Create**.
 
-    :::image type="content" source="media/boot-custom-deployment.png" alt-text="Customizing a template":::
+    :::image type="content" source="media/boot-custom-deployment.png" alt-text="Customizing a template.":::
 
 9. After deployment, you will see **Pipelines**, **Datasets**, and **Data flows** sections in the list pane.
 
@@ -110,7 +96,7 @@ If you don't have an Azure storage account, follow these steps in [Create an Azu
 
 1. In the Finance and Operations app, use the Data management framework to export data in CSV format. For more information, see [Data management overview](../data-entities-data-packages.md). In this template, customer data was exported from the **CustCustomerV3Entity** table. Set up **CustCustomerV3Entity**, and remove the **FullPrimaryAddress** field map from the mapping. Add the **DataAreaId** field to the CSV file. Rename the exported file **01-CustomersV3Export-Customers V3.csv**, and upload it to the Azure storage account that you named **ce-data**.
 
-    :::image type="content" source="media/boot-customer-file.png" alt-text="Finance and Operations customer file":::
+    :::image type="content" source="media/boot-customer-file.png" alt-text="Finance and Operations customer file.":::
 
 2. Download the [sample customer file](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Bootstrapping/01-CustomersV3Export-Customers%20V3.csv).
 

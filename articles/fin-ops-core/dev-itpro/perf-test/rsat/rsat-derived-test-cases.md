@@ -11,7 +11,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 21631
 ms.search.region: Global
@@ -31,11 +31,11 @@ The Regression suite automation tool (RSAT) lets you use the same task recording
 
 In the following image, a derived test case has been created from a test case named **Create a Sales Order and Validate - v2**. The derived test case has been renamed (in Azure DevOps) to **Create a Sales Order and Validate - v2 (Fail validation)**.
 
-![Example of derived test case](media/derived-test-case.png)
+![Example of derived test case.](media/derived-test-case.png)
 
 In Azure DevOps, a derived test case is a child item of the **Create a Sales Order and Validate - v2** test case and is tagged with the special keyword **RSAT:DerivedTestSteps**.
 
-![Example of derived test case that is automatically created](media/derived-1.png)
+![Example of derived test case that is automatically created.](media/derived-1.png)
 
 When you run a derived test case, it will use the recording of its parent test case and its own copy of the Excel parameters file. This will allow you to run the same test with different parameters without the need to maintain more than one recording.
 

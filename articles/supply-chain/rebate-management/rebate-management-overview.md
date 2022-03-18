@@ -5,7 +5,7 @@ title: Rebate management module overview
 description: This topic provides an overview of the Rebate management module for Microsoft Dynamics 365 Supply Chain Management.
 author: sherry-zheng
 ms.date: 02/19/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,12 +17,12 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
-ms.dyn365.ops.version: Release 10.0.18
+ms.dyn365.ops.version: 10.0.18
 ---
 
 # Rebate management module overview
@@ -75,7 +75,7 @@ Rebates can be configured based on many different parameters. For example, they 
 
 Rebate calculation results can also be reduced by other rebates, depending on whether the rebate is set up to calculate based on the net amount.
 
-On the vendor side, rebates can calculate the price based on a first in, first out (FIFO) rule, the latest purchase price, the average purchase price, or the sales price.
+On the vendor side, rebates that are based on sales orders can calculate the price based on a first in, first out (FIFO) rule, the latest purchase price, the average purchase price, or the sales price.
 
 ## Rebate target transactions
 
@@ -89,15 +89,15 @@ Item outputs create a free item sales order for customer rebates and a purchase 
 
 The combination of the associated deals, the frequency of the calculations, the calculation basis, and the calculation method that is selected determines the accuracy and precision of rebate calculations. Rebate provisions can be used to accrue posted and claimed values.
 
-Provisions can be managed daily or monthly. However, the functionality can allocate or pay the rebate, or receive payment of it, at any defined frequency. Users can easily adjust a plan or payment amounts at any time during the payout.
+Provisions can be managed daily, weekly, monthly, or according to a custom period. However, the functionality can allocate or pay the rebate, or receive payment of it, at any defined frequency that is the same length as or longer than the provision frequency. Write-off uses the same frequency as the rebate. Users can easily adjust a plan or payment amounts at any time during the payout.
 
-Users no longer have to handle deals or provisions in two steps. Provisions and write-offs are posted directly to the ledger. Additionally, credit notes can be created automatically. Therefore, there is full integration with accounts payable and accounts receivable. During processing, the calculations consider settlement discounts, paid invoices, trade discounts, and existing credit notes to ensure that amounts and values are accurately calculated.
+Users no longer have to handle deals or provisions in two steps. Provisions and write-offs are posted directly to the ledger. Additionally, credit notes can be created automatically. Therefore, there is full integration with accounts payable and accounts receivable. During processing, the calculations can consider settlement discounts, paid invoices, trade discounts, and existing credit notes to ensure that amounts and values are accurately calculated.
 
-When rebates are calculated, the process creates transactions that can be reviewed before posting occurs. A journal, credit note, or debit transaction can then be created. A separate process posts rebate and deduction transactions. Reporting statements and transaction listings can be obtained to ensure compliance, effectiveness, and transparency.
+When rebates are calculated, the process creates transactions that can be reviewed before posting occurs. A separate process posts rebate management transactions. A journal, credit note, or debit transaction can then be created during posting to proposed transactions. Reporting statements and transaction listings can be obtained to ensure compliance, effectiveness, and transparency.
 
 ## Guaranteed royalty payments
 
-In Rebate management, automatic payment generation enables royalties to be handled quickly and easily, even when guaranteed minimums apply. 
+In Rebate management, automatic payment generation enables royalties to be handled quickly and easily, even when guaranteed minimums apply.
 
 ## Maximizing spend versus rebates
 

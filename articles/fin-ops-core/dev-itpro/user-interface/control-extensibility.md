@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS:
 audience: Developer
 # ms.devlang:
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm:
 ms.custom: 27461
 ms.assetid: f03f1fc6-4f8f-4f42-8e38-5ecba8eac413
@@ -48,7 +48,7 @@ The client-side behavior for the control is defined by using HTML and JavaScript
 
 ## Control extensibility architecture overview
 
-The following diagram shows the artifacts that are involved and their relation to each other. [![Control extensibility architecture](./media/extensibilitycontrolarchitecture.png)](./media/extensibilitycontrolarchitecture.png)
+The following diagram shows the artifacts that are involved and their relation to each other. [![Control extensibility architecture.](./media/extensibilitycontrolarchitecture.png)](./media/extensibilitycontrolarchitecture.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

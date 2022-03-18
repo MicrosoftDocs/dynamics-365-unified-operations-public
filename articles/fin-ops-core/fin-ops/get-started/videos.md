@@ -4,7 +4,7 @@
 title: Videos
 description: This page lists Microsoft-created "how-to" and Tech talk videos relating to Finance and Operations apps that are available on YouTube and other sites.
 author: sericks007
-ms.date: 04/12/2021
+ms.date: 09/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -40,7 +40,6 @@ On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/
 
 ### Data integration
 
-- [Prospect to cash integration](https://youtu.be/AVV9x5x-XCg)
 - [Synchronize a work order between Dynamics 365 for Field Service and Finance and Operations apps](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
 
 ### Data management

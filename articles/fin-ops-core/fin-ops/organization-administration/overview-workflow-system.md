@@ -5,7 +5,7 @@ title: Workflow system overview
 description: This topic describes the workflow system.
 author: ChrisGarty
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: 56381
+ms.custom: ["56381", "intro-internal"]
 ms.assetid: 20b78595-e1d9-439a-ae1c-a776a3438919
 ms.search.region: Global
 # ms.search.industry: 
@@ -30,6 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 # Workflow system overview
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 This topic describes the workflow system.
 
@@ -45,7 +48,7 @@ Workflow is a system that runs on the Application Object Server (AOS). The workf
 
 A workflow represents a business process. It defines how a document flows, or moves, through the system by showing who must complete a task, make a decision, or approve a document. For example, the following illustration shows a workflow for expense reports.
 
-![Workflow with elements that are assigned to users](./media/workflow_user.gif)
+![Workflow with elements that are assigned to users.](./media/workflow_user.gif)
 
 To better understand this workflow, suppose that Sam submits an expense report for USD 7,000. In this scenario, Ivan must review the receipts that Sam routes to him. Then Frank and Sue must approve the expense report. Now suppose that Sam submits an expense report for USD 11,000. In this scenario, Ivan must review the receipts, and Frank, Sue, and Ann must approve the expense report.
 

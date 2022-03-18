@@ -3,9 +3,9 @@
 
 title: Inventory management overview
 description: This topic provides an overview of Inventory management.
-author: ShylaThompson
+author: yufeihuang
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod:
 ms.technology:
 
@@ -17,11 +17,11 @@ audience: Application User
 # ms.devlang:
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm:
-ms.custom: 2094
+ms.custom: ["2094", "intro-internal"]
 ms.assetid: 1968e32f-eff9-4c17-8f7f-a870f0c38fbc
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: perlynne
+ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -44,7 +44,7 @@ You can use Inventory management to perform the following tasks:
 The following learning map shows the major concepts and tasks that make up the framework of the Inventory management module. Click the learning map below to expand it. This learning map will help you get started.
 
 
-[![Inventory learning map](./media/inventory-learning-map.png)](./media/inventory-learning-map.png)
+[![Inventory learning map.](./media/inventory-learning-map.png)](./media/inventory-learning-map.png)
 
 ## Additional resources
 

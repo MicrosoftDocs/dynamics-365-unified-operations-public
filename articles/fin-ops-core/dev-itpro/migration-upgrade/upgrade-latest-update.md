@@ -4,7 +4,7 @@
 title: Process for moving to the latest update of Finance and Operations
 description: This topic explains the process for moving to the latest update of Finance and Operations.
 author: laneswenka
-ms.date: 10/09/2019
+ms.date: 11/01/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -43,7 +43,7 @@ For information about One Version service updates, see the [One Version service 
 ## Definitions
 
 - **Upgrade** – The process of moving from one official release of Finance and Operations to the next release, for source environments prior to version 8.0. Some examples are the move from 7.1 to 7.3, or from 7.3 to 10.0.1. The process involves setup of a free sandbox environment, code upgrade, and data upgrade.
-- **Update** – The process of applying a binary package to an environment to move it from one official release of Finance and Operations to the next release, for source environments starting with version 8.0. This process has lower downtime requirements and doesn't involve data upgrade.
+- **Update** – The process of applying a binary package to an environment to move it from one official release of Finance and Operations to the next release, for source environments starting with version 8.0. This process has lower downtime requirements and doesn't involve data upgrade. For more information, see the [Rebuild and update](upgrade-latest-update.md#rebuild-and-update) section later in this topic.
 
 ## Paths to One Version
 <img src="../migration-upgrade/media/OneVersion_Paths.png" width="600px" alt="Paths to One Version" />
@@ -54,12 +54,15 @@ There are three primary paths to get to the latest version of Finance and Operat
 *Scope: Complex*<br/>
 This path involves code refactoring to Extensions, and Data Upgrade in a DevTest, Sandbox, and eventually a Production environment. 
 
+> [!NOTE]
+> This process is now deprecated.
+
 [Self-service upgrade to the latest version](../migration-upgrade/self-service-upgrade.md).
 
 ### Rebuild and update
 *Applicable starting version: Microsoft Dynamics 365 for Finance and Operations 8.0*<br/>
 *Scope: Moderate*<br/>
-This path involves removing Microsoft X++ hotfixes, and creating a merged update package.
+This path involves removing Microsoft X++ hotfixes and creating a merged update package.
 
 [Update environments from version 8.0 to 10.0.X](../migration-upgrade/appupdate-80-81.md).
 

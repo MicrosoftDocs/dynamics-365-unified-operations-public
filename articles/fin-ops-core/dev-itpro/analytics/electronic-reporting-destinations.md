@@ -4,7 +4,7 @@
 title: Electronic reporting (ER) destinations
 description: This topic provides information about the management of Electronic reporting destinations, the types of supported destinations, and security considerations.
 author: nselin
-ms.date: 05/19/2021
+ms.date: 09/16/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -67,7 +67,7 @@ If you set the **Batch processing** option to **Yes**, an ER format is run in [b
 > [!NOTE]
 > The job description informs you about the run of an ER format mapping. It also contains the name of the ER component that is run.
 
-[![Running an ER format](./media/ER_Destinations-RunInBatchMode.png)](./media/ER_Destinations-RunInBatchMode.png)
+[![Running an ER format.](./media/ER_Destinations-RunInBatchMode.png)](./media/ER_Destinations-RunInBatchMode.png)
 
 You can find information about this job in several places:
 
@@ -79,17 +79,17 @@ You can find information about this job in several places:
 
 - On the **Electronic reporting jobs** page, select **Show files** to view the list of any errors and warnings that were generated during job execution.
 
-    [![Reviewing the ER jobs list](./media/ER_Destinations-ReviewERJobs.png)](./media/ER_Destinations-ReviewERJobs.png)
+    [![Reviewing the ER jobs list.](./media/ER_Destinations-ReviewERJobs.png)](./media/ER_Destinations-ReviewERJobs.png)
 
 ### User-configured behavior
 
 On the **Electronic reporting destination** page, you can override the default behavior for a configuration. Imported configurations aren't shown on this page until you select **New** and then, in the **Reference** field, select a configuration to create destination settings for.
 
-[![Selecting a configuration in the Reference field](./media/ER_Destinations-SelectFormat.png)](./media/ER_Destinations-SelectFormat.png)
+[![Selecting a configuration in the Reference field.](./media/ER_Destinations-SelectFormat.png)](./media/ER_Destinations-SelectFormat.png)
 
 After you create a reference, you can create a file destination for each **Folder** or **File** output component of the referenced ER format.
 
-[![Creating a file destination](./media/ER_Destinations-ConfigureElementDestination.png)](./media/ER_Destinations-ConfigureElementDestination.png)
+[![Creating a file destination.](./media/ER_Destinations-ConfigureElementDestination.png)](./media/ER_Destinations-ConfigureElementDestination.png)
 
 Next, in the **Destination settings** dialog box, you can enable and disable individual destinations for the file destination. The **Settings** button is used to control all the destinations for a selected file destination. In the **Destination settings** dialog box, you can control each destination separately by setting the **Enabled** option for it.
 
@@ -97,7 +97,7 @@ In versions of Finance **before version 10.0.9**, you can create **one file dest
 
 For example, you can use this capability to configure file destinations for a file component that is used to generate an outbound document in Excel format. One destination ([Archive](er-destination-type-archive.md)) can be configured to store the original Excel file in the ER jobs archive, and another destination ([Email](er-destination-type-email.md)) can be configured to simultaneously [convert](#OutputConversionToPDF) the Excel file to PDF format and send the PDF file by email.
 
-[![Configuring multiple destinations for a single format element](./media/ER_Destinations-SampleDestinations.png)](./media/ER_Destinations-SampleDestinations.png)
+[![Configuring multiple destinations for a single format element.](./media/ER_Destinations-SampleDestinations.png)](./media/ER_Destinations-SampleDestinations.png)
 
 When you run an ER format, all destinations that were configured for components of the format are always run. In addition, in Finance **version 10.0.17 and later**, the ER destinations functionality has been improved and now lets you configure different sets of destinations for a single ER format. This configuration marks each set as configured for a particular user action. The ER API has been [extended](er-apis-app10-0-17.md) so that an action can be provided that the user performs by running an ER format. The action code that is provided is passed to ER destinations. You can run different destinations of an ER format, depending on the action code that is provided. For more information, see [Configure action-dependent ER destinations](er-action-dependent-destinations.md).
 
@@ -121,11 +121,11 @@ You can set up destinations only for ER configurations that have been imported, 
 
 When you configure file destinations for a selected format, you configure them for the whole format.
 
-[![Configuration link](./media/ER_Destinations-ConfigurationLink.png)](./media/ER_Destinations-ConfigurationLink.png)
+[![Configuration link.](./media/ER_Destinations-ConfigurationLink.png)](./media/ER_Destinations-ConfigurationLink.png)
 
 At the same time, you might have multiple [versions](general-electronic-reporting.md#component-versioning) of the format that have been imported into the current Finance instance. You can view them if you select the **Configuration** link that is offered when you select the **Reference** field.
 
-[![Configuration versions](./media/ER_Destinations-ConfigurationVersions.png)](./media/ER_Destinations-ConfigurationVersions.png)
+[![Configuration versions.](./media/ER_Destinations-ConfigurationVersions.png)](./media/ER_Destinations-ConfigurationVersions.png)
 
 By default, configured destinations are applied only when you run an ER format version that has a status of either **Completed** or **Shared**. However, you must sometimes use configured destinations when the draft version of an ER format is run. For example, you modify a draft version of your format, and you want to use configured destinations to test how generated output will be delivered. Follow these steps to apply destinations for an ER format when the draft version is run.
 
@@ -133,7 +133,7 @@ By default, configured destinations are applied only when you run an ER format v
 2. On the **Configurations** page, on the Action Pane, on the **Configurations** tab, in the **Advanced settings** group, select **User parameters**.
 3. Set the **Use destinations for draft status** option to **Yes**.
 
-[![Use destinations for draft status option](./media/ER_Destinations-UserSetting1.png)](./media/ER_Destinations-UserSetting1.png)
+[![Use destinations for draft status option.](./media/ER_Destinations-UserSetting1.png)](./media/ER_Destinations-UserSetting1.png)
 
 To use the draft version of an ER format, you must mark the ER format accordingly.
 
@@ -141,11 +141,11 @@ To use the draft version of an ER format, you must mark the ER format accordingl
 2. On the **Configurations** page, on the Action Pane, on the **Configurations** tab, in the **Advanced settings** group, select **User parameters**.
 3. Set the **Run setting** option to **Yes**.
 
-[![Run setting option](./media/ER_Destinations-UserSetting2.png)](./media/ER_Destinations-UserSetting2.png)
+[![Run setting option.](./media/ER_Destinations-UserSetting2.png)](./media/ER_Destinations-UserSetting2.png)
 
 After you complete this setup, the **Run draft** option becomes available for ER formats that you modify. Set this option to **Yes** to start to use the draft version of the format when the format is run.
 
-[![Run draft option](./media/ER_Destinations-FormatSetting.png)](./media/ER_Destinations-FormatSetting.png)
+[![Run draft option.](./media/ER_Destinations-FormatSetting.png)](./media/ER_Destinations-FormatSetting.png)
 
 ## <a name="DestinationFailure"></a>Destination failure handling
 
@@ -153,7 +153,7 @@ Usually, an ER format is run within the scope of a specific business process. Ho
 
 For example, you configure vendor payment processing so that the **ISO20022 Credit Transfer** ER format is run to generate the payment file and supplementary documents (for example, the covering letter and control report). If a payment should be considered successfully processed only if the covering letter is successfully delivered by email, you must select the **Stop processing on failure** check box for the **CoveringLetter** component in the appropriate file destination, as shown in the following illustration. In this case, the status of the payment that is selected for processing will be changed from **None** to **Sent** only when the covering letter that is generated is successfully accepted for delivery by an email provider that is configured in the Finance instance.
 
-[![Configuring process handling for file destination failure](./media/ER_Destinations-StopProcessingAtDestinationFailure.png)](./media/ER_Destinations-StopProcessingAtDestinationFailure.png)
+[![Configuring process handling for file destination failure.](./media/ER_Destinations-StopProcessingAtDestinationFailure.png)](./media/ER_Destinations-StopProcessingAtDestinationFailure.png)
 
 If you clear the **Stop processing on failure** check box for the **CoveringLetter** component in the destination, a payment will be considered successfully processed even if the covering letter isn't successfully delivered by email. The status of the payment will be changed from **None** to **Sent** even if the covering letter can't be sent because, for example, the email address of the recipient or sender is missing or incorrect.
 
@@ -165,16 +165,16 @@ You can use the PDF conversion option to convert output in Microsoft Office (Exc
 
 To make the PDF conversion option available in the current Finance instance, open the **Feature management** workspace, and turn on the **Convert Electronic Reporting outbound documents from Microsoft Office formats to PDF** feature.
 
-[![Turning on the PDF conversion of outbound documents feature in Feature management](./media/ER_Destinations-EnablePdfConversionFeature.png)](./media/ER_Destinations-EnablePdfConversionFeature.png)
+[![Turning on the PDF conversion of outbound documents feature in Feature management.](./media/ER_Destinations-EnablePdfConversionFeature.png)](./media/ER_Destinations-EnablePdfConversionFeature.png)
 
 ### Applicability
 
-The PDF conversion option can be turned on only for file components that are used to generate output in Office (Excel or Word) format (**Excel file**). When this option is turned on, output that is generated in Office format is automatically converted to PDF format. In versions of Finance **before version 10.0.18**, you can turn on this option only for components of the **Excel\\File** type that are used to generate output in [Excel](er-fillable-excel.md) or [Word](er-design-configuration-word.md) format. However, in **version 10.0.18 and later**, you can also turn on this option for components of the **Common\\File** type.
+In versions of Finance **before version 10.0.18**, the PDF conversion option can be turned on only for **Excel\\File** components that are used to generate output in Office (Excel or Word) format. When this option is turned on, output that is generated in Office format is automatically converted to PDF format. However, in **version 10.0.18 and later**, you can also turn on this option for components of the **Common\\File** type.
 
 > [!NOTE]
 > Pay attention to the warning message that you receive when you turn on the PDF conversion option for an ER component of the **Common\\File** type. This message informs you that there is no way to guarantee, at design time, that the selected file component will expose the content in PDF format or the PDF-convertible content at runtime. Therefore, you should turn on the option only if you're sure that the selected file component was configured to expose the content in PDF format or the PDF-convertible content at runtime.
 > 
-> If you turn on the PDF conversion option for a component of the **Excel\\File** type, if that component exposes content in a format other than PDF, and if the exposed content can't be converted to PDF format, an exception will occur at runtime. The message that you receive informs you that the generated content can't be converted to PDF format.
+> If you turn on the PDF conversion option for a format component, if that component exposes content in a format other than PDF, and if the exposed content can't be converted to PDF format, an exception will occur at runtime. The message that you receive informs you that the generated content can't be converted to PDF format.
 
 ### Limitations
 
@@ -190,20 +190,30 @@ Only the common system fonts of the Window operating system are used to convert 
 
 To turn on PDF conversion for a file destination, select the **Convert to PDF** check box.
 
-[![Turning on PDF conversion for a file destination](./media/ER_Destinations-TurnOnPDFConversion.png)](./media/ER_Destinations-TurnOnPDFConversion.png)
+[![Turning on PDF conversion for a file destination.](./media/ER_Destinations-TurnOnPDFConversion.png)](./media/ER_Destinations-TurnOnPDFConversion.png)
 
 ### <a name="SelectPdfPageOrientation">Select a page orientation for PDF conversion</a>
 
-If you generate an ER configuration in Excel format and want to convert it to PDF format, you can specify the page orientation of the PDF document. When you select the **Convert to PDF** check box to turn on PDF conversion for a file destination that produces an output file in Excel format, the **Page orientation** field becomes available on the **PDF conversion settings** FastTab. In the **Page orientation** field, select the preferred orientation.
+If you generate an ER configuration in Excel format and want to convert it to PDF format, you can explicitly specify the page orientation of the PDF document. When you select the **Convert to PDF** check box to turn on PDF conversion for a file destination that produces an output file in Excel format, the **Page orientation** field becomes available on the **PDF conversion settings** FastTab. In the **Page orientation** field, select the preferred orientation.
 
-[![Selecting a page orientation for PDF conversion](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
+[![Selecting a page orientation for PDF conversion.](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
 
-> [!NOTE]
-> To have the option to select the PDF page orientation, you must install Finance version 10.0.10 or later.
->
-> The selected page orientation is applied to all ER configurations that are generated in Excel format and then converted to PDF format.
->
-> If an ER configuration in Word format is converted to PDF format, the page orientation of the PDF document is taken from the Word document.
+To have the option to select the PDF page orientation, install Finance version 10.0.10 or later. In versions of Finance **before version 10.0.23**, this option offers the following page orientation options:
+
+- Portrait
+- Landscape
+
+The selected page orientation is applied to all pages of an outbound document that is generated in Excel format and then converted to PDF format.
+
+However, in **version 10.0.23 and later**, the list of page orientation options has been extended as follows:
+
+- Portrait
+- Landscape
+- Worksheet specific
+
+When you select the **Worksheet specific** option, every worksheet of a generated Excel workbook is converted to PDF by using page orientation that has been configured for this worksheet in the used Excel template. So, you might have a final PDF document containing portrait and landscape pages. 
+
+If an ER configuration in Word format is converted to PDF format, the page orientation of the PDF document is always taken from the Word document.
 
 ## Output unfolding
 
@@ -227,7 +237,7 @@ On the **General** FastTab, in the **Send folder as** field, select one of the f
     > [!NOTE]
     > When you select **Separate files**, the generated output is collected in memory in a zipped state. Therefore, the maximum [file size limit](er-compress-outbound-files.md) is applied for zipped output when the real file size might exceed this limit. We recommend that you select this value when you expect the size of the generated output too be quite large.
 
-[![Configuring a destination for a Folder format component](./media/er_destinations-set-unfolding-option.png)](./media/er_destinations-set-unfolding-option.png)
+[![Configuring a destination for a Folder format component.](./media/er_destinations-set-unfolding-option.png)](./media/er_destinations-set-unfolding-option.png)
 
 ### Limitations
 

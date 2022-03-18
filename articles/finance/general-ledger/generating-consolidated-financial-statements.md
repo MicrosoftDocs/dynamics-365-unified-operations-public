@@ -44,19 +44,19 @@ The simplest method for consolidating by using Financial reporting is to use rep
 
 The following illustration shows how you can use a reporting tree definition in Financial reporting to identify each company that you will consolidate.
 
-![Reporting tree definition](./media/reporting-tree-definition.png "Reporting tree definition")
+![Reporting tree definition.](./media/reporting-tree-definition.png "Reporting tree definition")
 
 As the consolidated report in the following illustration shows, when you use the reporting tree together with a report definition, you can view each company separately. The consolidated amounts are shown at the summary level.
 
-![Consolidate amount summary level](./media/consolidate-amount-summary-level.png "Consolidate amount summary level")
+![Consolidate amount summary level.](./media/consolidate-amount-summary-level.png "Consolidate amount summary level")
 
 You can also create a multilevel reporting tree that includes as many levels as you require. The following illustration shows a multilevel reporting tree definition that has roll-ups by worldwide region.
 
-![Multilevel reporting tree definition with roll ups by region](./media/multilevel-reporting-tree-definition-roll-ups-worldwide-region.png "Multilevel reporting tree definition with roll ups by region")
+![Multilevel reporting tree definition with roll ups by region.](./media/multilevel-reporting-tree-definition-roll-ups-worldwide-region.png "Multilevel reporting tree definition with roll ups by region")
 
 The following illustration shows a multilevel reporting tree definition that has roll-ups by function.
 
-![Multilevel reporting tree definition with roll ups by function](./media/multilevel-reporting-tree-definition-roll-ups-by-function.png "Multilevel reporting tree definition with roll ups by function")
+![Multilevel reporting tree definition with roll ups by function.](./media/multilevel-reporting-tree-definition-roll-ups-by-function.png "Multilevel reporting tree definition with roll ups by function")
 
 ### Viewing companies side by side
 Many customers prefer reports where the companies appear side by side, and where a column shows the consolidated total. This format is easy to achieve after you've created the reporting tree. Here are the high-level steps to view companies side by side on consolidated financial statements.
@@ -67,19 +67,19 @@ Many customers prefer reports where the companies appear side by side, and where
 
 The following illustration shows a column definition in a side-by-side format.
 
-![Column definition in a side-by-side format](./media/column-definition-side-by-side-format.png "Column definition in a side-by-side format")
+![Column definition in a side-by-side format.](./media/column-definition-side-by-side-format.png "Column definition in a side-by-side format")
 
 ## Consolidations that use organization structures that are created from legal entities
 Organization hierarchies that contain dimensions or legal entities dynamically create reporting tree definitions in Financial reporting. An easy way to streamline consolidations is to add an organization hierarchy to your report in Financial reporting. Based on the report date, Financial reporting will select the organization hierarchy on or before the effective date, as shown in the following illustration.
 
-![Dynamically create reporting tree definition](./media/dynamically-create-reporting-tree-definitions.png "Dynamically create reporting tree definition")
+![Dynamically create reporting tree definition.](./media/dynamically-create-reporting-tree-definitions.png "Dynamically create reporting tree definition")
 
 ## Consolidations that involve eliminations
 Elimination transactions are a common part of the consolidation process. In this example, five accounts are eliminated during consolidation: 142600, 211400, 401420, 401180, and 510820. Companies might set up their intercompany accounts differently. For example, some companies set the last digit to 9 if the account is used in intercompany transactions. Regardless of the method, if you know the intercompany accounts, you can show eliminations on your consolidated financial statements.
 
 The following illustration shows a column definition for a consolidated income statement. Three profit and loss intercompany accounts are defined for each company by using the dimension filter. Columns F, G, and H include the elimination accounts only for the USMF, USRT, and DEMF companies. These columns are set up so that they are **not** printed on the financial statement.
 
-![Column definition consolidated income statement](./media/column-definition-consolidated-income-statement.png "Column definition consolidated income statement")
+![Column definition consolidated income statement.](./media/column-definition-consolidated-income-statement.png "Column definition consolidated income statement")
 
 When the report is generated, the elimination amounts are calculated in columns F, G, and H, and they are totaled in column I. Column J shows the consolidated amounts. These consolidation amounts exclude eliminations for the USMF, USRT, and DEMF companies.
 
@@ -88,7 +88,7 @@ When the report is generated, the elimination amounts are calculated in columns 
 
 The following illustration shows the consolidated report.
 
-![Consolidated report income statement](./media/consolidated-report-income-statement.png "Consolidated report income statement")
+![Consolidated report income statement.](./media/consolidated-report-income-statement.png "Consolidated report income statement")
 
 Whether you use accounts, dimensions, or both, Financial reporting lets you filter out the elimination entries by using the dimension filtering capabilities.
 
@@ -101,20 +101,20 @@ In the reporting tree definition, enter the percentage of ownership in the **Rol
 > [!NOTE]
 > You can apply this ownership percentage to any reporting unit, not just at the company level. 
 
-![Using reporting tree definition percentage](./media/Using-reporting-tree-definition-percentage.png "Using reporting tree definition percentage")
+![Using reporting tree definition percentage.](./media/Using-reporting-tree-definition-percentage.png "Using reporting tree definition percentage")
 
 When the report is generated, the Contoso Germany report will show 100 percent of the sales amount, and 80 percent of the amount will be allocated and rolled up to the consolidated level for sales.
 
 If you own less than 1 percent of a company, you can select the **Allow rollup less than 1%** check box on the **Additional Options** tab of the **Report Settings** page, as shown in the following illustration. In this case, values in the **Rollup %** column in the reporting tree will be treated as less than 1 percent. For example, if you enter **.8**, 0.8 percent will be rolled up to the consolidated level, not 80 percent. Alternatively, you can achieve the same result by leaving the **Allow rollup less than 1%** check box cleared and entering **.008** in the **Rollup %** column.
 
-![Reporting setting options](./media/reporting-setting-options.png "Reporting setting options")
+![Reporting setting options.](./media/reporting-setting-options.png "Reporting setting options")
 
 ### Showing ownership as a separate row on the consolidated report
 Another option for minority interest is to show 100 percent of the subsidiary for every line on the report but subtract the non-controlling interest from the net income.
 
 As the following illustration shows, an **IF THEN ELSE** statement and column restriction in the row definition can be used to calculate minority interest on financial reports.
 
-![Showing ownership as a separate row on the consolidated report](./media/Showing-ownership-separate-row-consolidated-report.png "Showing ownership as a separate row on the consolidated report")
+![Showing ownership as a separate row on the consolidated report.](./media/Showing-ownership-separate-row-consolidated-report.png "Showing ownership as a separate row on the consolidated report")
 
 ## Multiple charts of accounts across legal entities
 Often, different legal entities have different charts of accounts but still want to produce consolidated financial statements. In this situation, Financial reporting can be used to consolidate the data, so that you can generate consolidated financial reports. Here are the high-level steps to consolidate when different charts of accounts exist across legal entities.
@@ -128,11 +128,11 @@ Multiple links to financial dimensions can be added to each row in the row defin
 > [!TIP]
 > For more information about the **Link to Financial Dimensions** cell, see Specify Link to Financial Dimensions cell.
 
-![Set accounts first link to financial dimensions](./media/set-accounts-first-Link-to-Financial-Dimensions.png "Set accounts first link to financial dimensions")
+![Set accounts first link to financial dimensions.](./media/set-accounts-first-Link-to-Financial-Dimensions.png "Set accounts first link to financial dimensions")
 
 You can use a reporting tree to define which link to financial dimensions from the row definition is used with each company. Select the row definition in column E, and then select the appropriate row link in column F, as shown in the following illustration.
 
-![Link financial dimensions row definition used](./media/link-financial-dimensions-row-definition-used.png "Link financial dimensions row definition used")
+![Link financial dimensions row definition used.](./media/link-financial-dimensions-row-definition-used.png "Link financial dimensions row definition used")
 
 > [!TIP]
 > When you create links to financial dimensions, use the description to identify the companies that each link applies to. In this way, you can more easily select the correct company when you create a reporting tree. In the column definition, the **Reporting Unit** field lets you restrict each column to a unit of the reporting tree, so that you can view the data side by side. If you don't indicate a specific company for a column, consolidated data for all companies will be shown.
@@ -152,16 +152,16 @@ When you're designing the column definition for multiple companies that have dif
 
 In the following illustration, the USMF company is specified in the **Company name** field in the report definition. Therefore, the USMF company's fiscal calendar will be used as the base fiscal calendar. In this example, when a report is generated for June 30, 2018, the USMF company will use the BASE period, which is defined as period 12 in the report definition. The INMF company will use BASE–6, which is period 6. Both columns will include data for June 2018.
 
-![Report base period](./media/report-base-period.png "Report base period")
+![Report base period.](./media/report-base-period.png "Report base period")
 
 The following illustration shows the options in the report definition that let you select whether the period number or the period end date is used for the consolidation.
 
-![Options report definition period number](./media/options-report-definition-period-number.png "Options report definition period number")
+![Options report definition period number.](./media/options-report-definition-period-number.png "Options report definition period number")
 
 ## Business unit consolidations
 This topic has focused on using reporting tree definitions and organization hierarchies in Financial reporting for consolidation purposes. You can also use the reporting tree to create business unit consolidation reports, such as reports about worldwide sales or operations. These reports are a common requirement. To create them, select a company and a dimension for each unit that you want to consolidate on. For example, in the following illustration, the business unit roll-up is accomplished by repeating each company in the **Company** column (column A) and identifying a group of Department dimension values per company in the **Dimensions** column (column D).
 
-![Business unit consolidation reports](./media/business-unit-consolidation-reports.png "Business unit consolidation reports")
+![Business unit consolidation reports.](./media/business-unit-consolidation-reports.png "Business unit consolidation reports")
 
 ## Consolidations that involve multiple reporting currencies
 Financial reporting offers increased flexibility when you view actual, budget, budget control, and budget planning data in multiple currencies. By bringing across key setup data, you don't have to do any additional setup in Financial reporting to view any report, in any currency, at any time, for any user.
@@ -174,7 +174,7 @@ On the main account, the **Financial reporting exchange rate type** and **Curren
 - In the **Financial reporting exchange rate type** field, select the exchange rate type that contains the currencies and exchange rates to apply to the account. This table of currencies and exchange rates will be applied to actual data in Financial reporting.
 - In the **Currency translation type** field, select the method that is used to calculate the exchange rate for the account. This currency method is used for both actual and budget data in Financial reporting.
 
-![Financial reporting main accounts](./media/Financial-reporting-main-accounts.png "Financial reporting main accounts")
+![Financial reporting main accounts.](./media/Financial-reporting-main-accounts.png "Financial reporting main accounts")
 
 For budget, budget control, and budget planning data, the exchange rate type is defined in the **Ledger** page. That table will be used to pull the exchange rates, and the currency translation type that is assigned to the account will be used.
 
@@ -205,15 +205,15 @@ The currency translation adjustment (CTA) is the difference between the rates th
 
 - Use the **Rounding Adjustments** page in the row definition, as shown in the following illustration.
 
-    ![Currency translation adjustment rounding adjustments](./media/Currency-translation-adjustment-rounding-adjustments.png "Currency translation adjustment rounding adjustments")
+    ![Currency translation adjustment rounding adjustments.](./media/Currency-translation-adjustment-rounding-adjustments.png "Currency translation adjustment rounding adjustments")
 
     When you specify the row that should show the rounding adjustment (CTA), the total assets row, the total liabilities and equity row, and the threshold that you're comfortable with, Financial reporting will calculate the difference and put it on the desired row. A line that is named **Rounding Adjustment** will be created and shown upon drill-down, as shown in the following illustration.
 
-    ![Rounding adjustment drill down](./media/rounding-adjustment-drill-down.png "Rounding adjustment drill down")
+    ![Rounding adjustment drill down.](./media/rounding-adjustment-drill-down.png "Rounding adjustment drill down")
 
 - Put all the accounts in a range, from assets to expenses. As shown in the following illustration, the difference will be the same amount as the rounding adjustment (CTA). Therefore, you can use it as a check total to make sure that the rounding adjustment page doesn't include any account balances that were missed.
 
-    ![Rounding adjustment form check](./media/rounding-adjustment-form-check.png "Rounding adjustment form check")
+    ![Rounding adjustment form check.](./media/rounding-adjustment-form-check.png "Rounding adjustment form check")
 
 ### Balance calculation approach
 To get correctly translated amounts when currencies are used, Financial reporting uses the following calculation methods for the balances:

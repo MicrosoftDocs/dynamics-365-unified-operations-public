@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer 
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 14651
 ms.assetid: 9f28e5f9-efec-48c5-aaa6-b68a505c4df3
@@ -39,7 +39,7 @@ This type of form has previously been used when you wanted to present parent/chi
 
 ## Wireframe
 
-![Task Double form wireframe](./media/patterntaskdouble.png)]
+![Task Double form wireframe.](./media/patterntaskdouble.png)]
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
@@ -110,7 +110,7 @@ The verification checklist shows the steps for manually verifying that the form 
 ## Example
 Form: **HRMAbsenceTableHistory** 
 
-[![Task Double example](./media/taskdouble2-1024x639.png)](./media/taskdouble2.png)
+[![Task Double example.](./media/taskdouble2-1024x639.png)](./media/taskdouble2.png)
 
 ## Appendix
 ### Frequently asked questions
@@ -123,7 +123,7 @@ This section will have answers to frequently asked questions that are related to
 
 ### AX 2012 content
 
-[![AX 2012 visual example](./media/taskdouble3.png)](./media/taskdouble3.png)
+[![AX 2012 visual example.](./media/taskdouble3.png)](./media/taskdouble3.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -8,7 +8,7 @@ manager: beya
 ms.date: 04/30/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+
 ms.technology: 
 
 # optional metadata
@@ -43,7 +43,7 @@ Complete the steps in this topic if after posting tax there are records missing 
 1. Check the posting profile of the expected measure. Select the posting type in the **Debit/Credit** column, and then select **Edit**. 
 2. Check the value of tax accounting provider.
 
-    ![Tax accounting provider value](./media/taxtrans-voucher-notgenerated-Picture3.png)
+    ![Tax accounting provider value.](./media/taxtrans-voucher-notgenerated-Picture3.png)
 
   The following is the rule for posting tax transactions and vouchers that are decided by the tax accounting provider. Correct the configuration if it's not working as expected.
 
@@ -58,14 +58,14 @@ Complete the steps in this topic if after posting tax there are records missing 
 1. Select **Condition** to open the formula. 
 2. Check the condition, and correct the tax configuration if it's not working as expected.
 
-  ![Condition field](./media/taxtrans-voucher-notgenerated-Picture4.png)
+  ![Condition field.](./media/taxtrans-voucher-notgenerated-Picture4.png)
 
-  ![Formula](./media/taxtrans-voucher-notgenerated-Picture5.png)
+  ![Formula.](./media/taxtrans-voucher-notgenerated-Picture5.png)
 
 ## Check the posting code logic
 Set a breakpoint in **TaxAccountingPostFacade::post()**, and debug for the logic of generating tax transaction and voucher. 
 
-  ![Breakpoint](./media/taxtrans-voucher-notgenerated-Picture6.png)
+  ![Breakpoint.](./media/taxtrans-voucher-notgenerated-Picture6.png)
 
 ## Determine whether customization exists
 

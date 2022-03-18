@@ -3,7 +3,7 @@
 
 title: Process credit cards without a hardware station
 description: This topic describes how to configure the point of sale (POS) to process "card not present" transactions in POS clients that don't include a hardware station.
-author: rubendel
+author: BrianShook
 ms.date: 09/03/2020
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2020-08-31
 ms.dyn365.ops.version: AX 7.0.1
 
@@ -82,7 +82,7 @@ The configuration to turn on this feature is completed at the register level.
 2. Select the relevant register, and then select **Edit**.
 3. On the **General** FastTab, in the **Card not present processing** field, select **Use retail server**. (By default, this field is set to **Use hardware station**.)
 
-    ![Card not present processing field](media/PAYMENTS/CNP-POS.png)
+    ![Card not present processing field.](media/PAYMENTS/CNP-POS.png)
 
 4. Select **Save**.
 5. After the change is saved, run the **1090** distribution schedule to sync the changes to the POS.

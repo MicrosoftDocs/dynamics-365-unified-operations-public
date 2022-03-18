@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create Open in Excel experiences
+title: Open in Excel experiences FAQ
 description: Learn about creating Open in Office experiences for Excel and Word.
 author: jasongre
 ms.date: 11/17/2020
@@ -27,11 +27,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Create Open in Excel experiences
+# Open in Excel experiences FAQ
 
 [!include [applies to](../includes/applies-to-commerce-finance-hr-scm.md)]
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Learn about creating Open in Office experiences for Excel and Word.
 
@@ -45,7 +48,7 @@ Open in Excel experiences are:
 
 The following image shows the **Excel Add-in** being used for Journal entry.
 
-[![Example of Excel add-in](./media/off101a.png)](./media/off101a.png)
+[![Example of Excel add-in.](./media/off101a.png)](./media/off101a.png)
 
 ## Where are the Open in Excel experiences?
 Open in Excel experiences are usually found under in the Open in Excel section of the Open in Microsoft Office menu, but an explicit button can be added for these experiences.
@@ -58,7 +61,7 @@ The Export to Excel options and experiences are both found in the Open in Micros
 
 The following image shows the **Open in Microsoft Office** menu on the **Fleet Customers** form with a template **Open in Excel** option, a generated **Open in Excel** option, and a static **Export to Excel** option.
 
-[![Open in Microsoft Office menu](./media/off101b.png)](./media/off101b.png)
+[![Open in Microsoft Office menu.](./media/off101b.png)](./media/off101b.png)
 
 ## When will an entity show as an Open in Excel option?
 When an entity has the same root datasource (table) as a form, it will be added as an option in the Open in Excel section of the Open in Microsoft Office menu. This is referred to as a “generated” option.
@@ -66,12 +69,12 @@ When an entity has the same root datasource (table) as a form, it will be added 
 ## What fields will be shown in the workbook?
 The default fields that will be added into the workbook are the key and mandatory fields of the entity. If a different set of fields should be provided by default, then those fields can be added into the **AutoReport field group** on the entity. The following image shows the Visual Studio view of the AutoReport field group for the FMCustomerEntity.
 
-[![Visual Studio view of AutoReport field group](./media/off101c.png)](./media/off101c.png)
+[![Visual Studio view of AutoReport field group.](./media/off101c.png)](./media/off101c.png)
 
 ## What fields will be shown when an entity is the target of a lookup?
 When a relationship is defined between two entities, if the identifier for one entity is shown on the other entity, then the fields that will be shown in that lookup are either the key fields, or the fields in the **AutoLookup field group** if it is not empty. Relationship lookups are not currently supported, but they will eventually be displayed in the app in a similar way to the enumeration lookups. The Excel Add-in with an enumeration lookup is shown below.
 
-[![Excel Add-in with an enumeration lookup](./media/off101d.png)](./media/off101d.png)
+[![Excel Add-in with an enumeration lookup.](./media/off101d.png)](./media/off101d.png)
 
 ## What should be done to make an entity ready for use in Excel?
 Define the AutoReport and AutoLookup field groups and test them using the Excel App design experience.
@@ -127,14 +130,14 @@ The Excel Add-in is injected into a workbook when a generated Open in Excel expe
 
 The following image shows the **Excel workbook designer** form.
 
-[![Excel workbook designer form](./media/off101e.png)](./media/off101e.png) 
+[![Excel workbook designer form.](./media/off101e.png)](./media/off101e.png) 
 
 After obtaining a workbook containing the Excel Add-in, additional datasources can be added using the **Design** button. Currently, datasources cannot be removed. 
 
 ## When will a template show as an Open in Excel option?
 When a template listed in the **Common** &gt; **Common** &gt; **Office integration** &gt; **Document templates** form (DocuTemplate) has ShowInOpenInOfficeMenu set to Yes and has the same root datasource (table) as the current form, it will be added as an option in the Open in Excel section of the Open in Microsoft Office menu. The following image shows the **Document templates** form.
 
-[![Document templates form](./media/off101g.png)](./media/off101g.png)
+[![Document templates form.](./media/off101g.png)](./media/off101g.png)
 
 ## Will a filter be added to the template?
 In the **Document Templates** form, the standard filter for “current record” can be turned on and off. If the filter is on, when the template is invoked as an Open in Excel option, then a filter for the current record will be added to the workbook. The filter will be the key fields and their values.
@@ -151,7 +154,7 @@ The LedgerJournalLineEntryTemplateRegistration and FMTemplateRegistrations class
 ## How do templates get loaded into a fresh deployment?
 To load system defined templates, click the **Reload system templates** button in the **Common** &gt; **Common** &gt; **Office integration** &gt; **Document templates** form, as shown below.
 
-[![Reload system templates button](./media/off101h.png)](./media/off101h.png) 
+[![Reload system templates button.](./media/off101h.png)](./media/off101h.png) 
 
 In the future, we will do the equivalent of clicking that button during deployment.
 
@@ -237,7 +240,7 @@ class OpenLinesInExcel
 
 The following image shows the **General ledger** &gt; **Journals** &gt; **General journal** form with the **Open lines in Excel** button highlighted. 
 
-[![Highlighted Open lines in Excel button](./media/off101i.png)](./media/off101i.png)
+[![Highlighted Open lines in Excel button.](./media/off101i.png)](./media/off101i.png)
 
 To programmatically add generated and template Open in Excel options, Open in Excel options can be added by implementing the ExportToExcelIGeneratedCustomExport and ExportToExcelITemplateCustomExport interfaces. This allows the addition of options to forms where the entity or template doesn’t have the same table as the root datasource. An example of when you would use this capability is on forms without a datasource, potentially containing only a collection of form parts. The following example adds generated and template Open in Excel options programmatically to the **FMRental** form.
 
@@ -312,11 +315,11 @@ _settingsEditor.SetFilterExpressionByPublicName(dictDataEntity.publicEntityName(
 
 After a filter has been added programmatically, the resulting filter can be viewed in the Excel Add-in using the **Filter** button. The following image shows the Excel Add-in with the **Filter** button highlighted.
 
-[![Highlighted Filter button](./media/off101j.png)](./media/off101j.png) 
+[![Highlighted Filter button.](./media/off101j.png)](./media/off101j.png) 
 
 The following image shows the Excel Add-in with the **Filter** dialog box opened.
 
-[![Filter dialog box opened](./media/off101k.png)](./media/off101k.png)
+[![Filter dialog box opened.](./media/off101k.png)](./media/off101k.png)
 
 ## How do I enable relationship lookups in Excel?
 To enable relationship lookups in the Excel Data Connector, you must ensure that the following metadata is set.
@@ -412,13 +415,13 @@ To resolve this, change the binding information in the affected template so that
 2.  Find the affected template.
 3.  Change the file extension on the template from .xlsx to .zip.
 
-    [![Rename dialog box](./media/off101m.png)](./media/off101m.png)
+    [![Rename dialog box.](./media/off101m.png)](./media/off101m.png)
     
 4.  The file to be changed will be one of the webextension\*.xml files in the xlwebextensions directory, such as 2015-05-25-FleetCustomersWithLocations.zipxlwebextensionswebextension2.xml.
 5.  Open the file to ensure that you have the correct location.
 6.  Find the DataEntity.Name,  such as FMCustomerEntity.
 
-    [![Find DataEntity.Name](./media/off101n.png)](./media/off101n.png)
+    [![Find DataEntity.Name.](./media/off101n.png)](./media/off101n.png)
     
 7.  Extract the zip file.
 8.  Open the webextension xml file.

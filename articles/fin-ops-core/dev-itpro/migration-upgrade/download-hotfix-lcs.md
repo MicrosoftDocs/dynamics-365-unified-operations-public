@@ -101,7 +101,7 @@ To download binary updates, follow these steps in LCS.
    > [!NOTE]
    > You will not be able to select Knowledge Base (KB) articles to be saved because binary updates will automatically save all KBs in an update package.        
    
-   ![Save Binary Package](./media/ReviewAndSaveBinaryPackage.jpg)
+   ![Save Binary Package.](./media/ReviewAndSaveBinaryPackage.jpg)
 
 3. On the **Review and save updates** page, select **Save package**.
 

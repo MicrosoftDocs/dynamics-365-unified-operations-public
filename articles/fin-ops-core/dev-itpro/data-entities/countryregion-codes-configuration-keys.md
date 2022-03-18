@@ -3,7 +3,7 @@
 
 title: Country/region codes and configuration keys
 description: This article provides scenarios that are applicable from an implementation perspective for both configuration keys and country/region.
-author: Sunil-Garg
+author: peakerbl
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 4644
 ms.assetid: 86eda511-b1a6-46d2-bd0f-f9991b727f1a
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -30,6 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 # Country/region codes and configuration keys
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 This article provides scenarios that are applicable from an implementation perspective for both configuration keys and country/region.
 

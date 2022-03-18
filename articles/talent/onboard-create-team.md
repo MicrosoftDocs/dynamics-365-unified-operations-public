@@ -37,7 +37,7 @@ In Microsoft Dynamics 365 Talent: Onboard, you can create hiring teams. You can 
 2. Under **Teams**, select the **Add** (plus sign \[**+**\]) tile.
 3. In the **Create a new team** dialog box, under **Team name**, enter a name for the hiring team.
 
-    ![[Creating a new team in Onboard](./media/onboard-create-team.png)](./media/onboard-create-team.png)
+    ![[Creating a new team in Onboard.](./media/onboard-create-team.png)](./media/onboard-create-team.png)
 
 4. Under **Choose team members**, enter the name or email address of each team member.
 
@@ -53,11 +53,11 @@ In Microsoft Dynamics 365 Talent: Onboard, you can create hiring teams. You can 
 2. Select the team.
 3. On the **Guides** tab, select **Add guides**.
 
-    ![[Adding onboarding guides to a team](./media/onboard-add-guides-to-team.png)](./media/onboard-add-guides-to-team.png)
+    ![[Adding onboarding guides to a team.](./media/onboard-add-guides-to-team.png)](./media/onboard-add-guides-to-team.png)
 
 4. Select the check box for each onboarding guide that you want to assign to the team, and then select **Add**.
 
-    ![[Selecting the onboarding guides to add to the team](./media/onboard-select-guides.png)](./media/onboard-select-guides.png)
+    ![[Selecting the onboarding guides to add to the team.](./media/onboard-select-guides.png)](./media/onboard-select-guides.png)
 
 ## Assign onboarding templates to a hiring team
 
@@ -65,11 +65,11 @@ In Microsoft Dynamics 365 Talent: Onboard, you can create hiring teams. You can 
 2. Select the team.
 3. On the **Templates** tab, select **Add templates**.
 
-    ![[Adding templates to a team](./media/onboard-add-templates-to-team.png)](./media/onboard-add-templates-to-team.png)
+    ![[Adding templates to a team.](./media/onboard-add-templates-to-team.png)](./media/onboard-add-templates-to-team.png)
 
 4. Select the check box for each template that you want to assign to the team, and then select **Add**.
 
-    ![[Selecting the templates to add to the team](./media/onboard-select-templates.png)](./media/onboard-select-templates.png)
+    ![[Selecting the templates to add to the team.](./media/onboard-select-templates.png)](./media/onboard-select-templates.png)
 
 ### See also
 

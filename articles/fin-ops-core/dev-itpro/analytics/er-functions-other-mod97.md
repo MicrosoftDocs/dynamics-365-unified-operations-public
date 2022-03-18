@@ -5,7 +5,6 @@ title: MOD_97 ER function
 description: This topic provides information about how the MOD_97 Electronic reporting (ER) function is used.
 author: NickSelin
 ms.date: 12/17/2019
-ms.topic: article
 ms.prod: 
 ms.technology: 
 

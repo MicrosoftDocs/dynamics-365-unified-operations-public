@@ -5,7 +5,7 @@ title: Batch processing overview
 description: This topic provides an overview of batch processing.
 author: Peakerbl
 ms.date: 07/23/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: 62333
+ms.custom: ["62333", "intro-internal"]
 ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
 ms.search.region: Global
 # ms.search.industry: 

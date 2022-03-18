@@ -5,7 +5,7 @@ title: Human resources overview
 description: Human resources streamlines routine recordkeeping tasks, automates processes related to staffing your organization, and provides a framework for human resources staff to manage areas of oversight.
 author: andreabichsel
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
-ms.custom: 20931
+ms.custom: ["20931", "intro-internal"]
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: anbichse

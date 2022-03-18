@@ -2,9 +2,9 @@
 # required metadata
 
 title: Generate Affordable Care Act reports in Benefits management
-description: This topics describes how Benefits management helps you track information that is reported on Form 1095-B and Form 1095-C for the Affordable Care Act (ACA) employer mandate.
-author: andreabichsel
-ms.date: 12/28/2020
+description: This topic describes how Benefits management tracks information that is reported on Form 1095-B and Form 1095-C for the Affordable Care Act (ACA) employer mandate.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-12-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
@@ -29,9 +29,12 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 # Generate ACA reports in Benefits management
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Benefits management helps you track information that is reported on Form 1095-B and Form 1095-C for the Affordable Care Act (ACA) employer mandate. Like the ACA reporting capability in the old **Benefits** workspace, this functionality applies only to legal entities in the United States.
+Benefits management tracks information that is reported on Form 1095-B and Form 1095-C for the Affordable Care Act (ACA) employer mandate. Like the ACA reporting capability in the old **Benefits** workspace, this functionality applies only to legal entities in the United States.
 
 To use this functionality, you must first turn on **Advanced Benefits Management**. For more information, including important caveats about Benefits management, see [Enable or disable Benefits management](hr-admin-manage-features.md#enable-or-disable-benefits-management).
 
@@ -54,11 +57,11 @@ Affordable Care coverage groups help you manage this information for multiple em
 
 1. In the **Benefits management** workspace, select **Affordable Care coverage group**.
 
-    ![Selecting Affordable Care coverage group](./media/hr-benefits-management-aca-coverage-group.png)
+    ![Selecting Affordable Care coverage group.](./media/hr-benefits-management-aca-coverage-group.png)
 
 2. Select **New** to create a new Affordable Care coverage group or **Edit** to change an existing group.
 
-    ![Selecting New or Edit](./media/hr-benefits-management-aca-new.png)
+    ![Selecting New or Edit.](./media/hr-benefits-management-aca-new.png)
 
 3. Set the following fields.
 
@@ -73,7 +76,7 @@ Affordable Care coverage groups help you manage this information for multiple em
     | Group valid from | The first date when this record is valid. |
     | Group valid through | The last date when this record is valid. If there is no expiration date, enter **Never**. |
 
-    ![Creating a coverage group](./media/hr-benefits-management-aca-new-group.png)
+    ![Creating a coverage group.](./media/hr-benefits-management-aca-new-group.png)
 
 4. Select **Save**.
 
@@ -83,11 +86,11 @@ Affordable Care coverage groups help you manage this information for multiple em
 2. Select the group to assign employees to.
 3. Select **Mass assignment**.
 
-    ![Selecting Mass assignment](./media/hr-benefits-management-aca-mass-assignment.png)
+    ![Selecting Mass assignment.](./media/hr-benefits-management-aca-mass-assignment.png)
 
 4. Select employees in the list, and then select **Assign**.
 
-    ![Assigning selected employees to a group](./media/hr-benefits-management-aca-assign-coverage-group.png)
+    ![Assigning selected employees to a group.](./media/hr-benefits-management-aca-assign-coverage-group.png)
 
 ## Maintain multiple versions of coverage options
 
@@ -117,12 +120,12 @@ To enter exceptions for any values of an Affordable Care coverage group, follow 
 2. Select the employee in the list.
 3. On the **Employment** tab, in the **More information** section, select **Affordable Care coverage**.
 
-    ![Changing options for one employee](./media/hr-benefits-management-aca-change-single-employee.png)
+    ![Changing options for one employee.](./media/hr-benefits-management-aca-change-single-employee.png)
 
 4. Select **Edit**.
 5. For each month that requires changes, select the **Override default** check box, and then change the other values as required.
 
-    ![Overriding default values](./media/hr-benefits-management-aca-override-default.png)
+    ![Overriding default values.](./media/hr-benefits-management-aca-override-default.png)
 
 6. Select **Save**.
 
@@ -137,7 +140,7 @@ To indicate whether a benefit plan must be reported, follow these steps.
 3. Select **Edit**.
 4. Set the **Reported under the Affordable Care Act** option to **Yes**.
 
-    ![Reporting health care coverage](./media/hr-benefits-management-aca-report-coverage.png)
+    ![Reporting health care coverage.](./media/hr-benefits-management-aca-report-coverage.png)
 
 5. Select **Save**.
 
@@ -151,25 +154,25 @@ You can generate ACA 1095-B and 1095-C forms, and then distribute them to each o
 2. Change the parameters as required, and then select **OK**.
 
     > [!NOTE]
-    > If you're printing 1095-C forms for more than 500 employees, you will receive more than one PDF file. We recommend that you increase the value of the **Maximum file size in megabytes** field on the **Document management parameters** page to **150**. (To quickly open that page, you can use the search field on the navigation bar.)
+    > If you're printing 1095-C forms for more than 500 employees, you will receive more than one PDF file. We recommend that you increase the value of the **Maximum file size in megabytes** field on the **Document management parameters** page to **150**. (To quickly open that page, use the search field on the navigation bar.)
     >
-    > ![Changing the maximum file size](./media/hr-benefits-management-aca-maximum-file-size.png)
+    > ![Changing the maximum file size.](./media/hr-benefits-management-aca-maximum-file-size.png)
 
 3. To check the status of your reports and view them, use the search field on the navigation bar to open the **Electronic reporting jobs** page.
 
-    ![Searching for the Electronic reporting jobs page](./media/hr-benefits-management-aca-search-electronic-reporting-jobs.png)
+    ![Searching for the Electronic reporting jobs page.](./media/hr-benefits-management-aca-search-electronic-reporting-jobs.png)
 
 4. Select the report to view, and then select **Show files**.
 
-    ![Showing files](./media/hr-benefits-management-aca-show-files.png)
+    ![Showing files.](./media/hr-benefits-management-aca-show-files.png)
 
 5. Select **Open**.
 
-    ![Opening a file](./media/hr-benefits-management-aca-open-file.png)
+    ![Opening a file.](./media/hr-benefits-management-aca-open-file.png)
 
 6. From the Notification bar that appears at the bottom of the browser window, open the zip file, and then select the report. You can view or print the PDF file.
 
-    ![Sample 1095-C form](./media/hr-benefits-management-aca-1095-c-form.png)
+    ![Sample 1095-C form.](./media/hr-benefits-management-aca-1095-c-form.png)
 
 ## View ACA coverage information
 
@@ -184,7 +187,7 @@ To view this information, follow these steps.
 1. In the **Benefits management** workspace, select **Worker Affordable Care coverage**.
 2. In the **Group name** field, select a group.
 
-    ![Viewing ACA coverage](./media/hr-benefits-management-aca-view-coverage.png)
+    ![Viewing ACA coverage.](./media/hr-benefits-management-aca-view-coverage.png)
 
 If any default values from the Affordable Care coverage group have been overridden, an asterisk appears next to the value that was changed. If the values for all 12 months are the same and haven't been overridden, the value appears in the **All 12 months** column.
 
@@ -204,11 +207,11 @@ To export any of the lists to Microsoft Excel, follow these steps.
 
 If you must report covered individuals because you provide self-insured coverage, you can view dependents who are covered under benefit plans that are marked as **ACA reportable**. On the Action Pane, select **View Dependent coverage**.
 
-![Viewing dependent coverage](./media/hr-benefits-management-aca-view-dependent-coverage.png)
+![Viewing dependent coverage.](./media/hr-benefits-management-aca-view-dependent-coverage.png)
 
 Coverage information for the employee's dependents is shown.
 
-![Dependent coverage](./media/hr-benefits-management-aca-dependents.png)
+![Dependent coverage.](./media/hr-benefits-management-aca-dependents.png)
 
 > [!NOTE]
 > The page shows only benefits plans that are marked as **ACA reportable**.

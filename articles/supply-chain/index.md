@@ -4,7 +4,7 @@
 title: Supply Chain Management home page
 description: This page provides a list of the help topics and other resources for Supply Chain Management features.   
 author: kamaybac
-ms.date: 01/08/2021
+ms.date: 09/15/2021
 ms.topic: index-page
 ms.prod: 
 ms.technology: 
@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 
+ms.custom: "intro-internal"
 ms.assetid: ad2a889a-acfd-4b59-a3b3-4017dd374c7b
 ms.search.region: global
 ms.search.industry: 
@@ -67,7 +67,6 @@ This short video summarize the new supply chain management features added to Mic
 
 These short videos summarize the new supply chain management features added to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (December 2017).
 
-- [Prospect to cash integration](https://youtu.be/AVV9x5x-XCg) 
 - [Optimization advisor](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [Use warehouse template to copy configuration](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
@@ -86,7 +85,7 @@ The following tech conference recordings discuss supply chain management functio
 - **Master planning:**
   - [Extend the demand forecasting functionality](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
   - [Master planning - tips and tricks for troubleshooting performance](https://youtu.be/7v8BPmEs9Dg)
-  - [Help! MRP is slow!](https://youtu.be/RLXybx20B5o)
+  - [MRP performance tuning](https://youtu.be/RLXybx20B5o)
 - **Product information management:**
   - [Product configurator in Microsoft Dynamics AX](https://youtu.be/zotrj3SbCl4)
 - **Warehouse management:**

@@ -50,7 +50,7 @@ Follow these steps to set up the functionality for the invoice issue deadline.
 2. On the **Date intervals** page, create a date interval.
 3. On the **General** FastTab, in the **Interval start** and **Interval end** sections, set the fields to appropriate values.
 
-    ![Date intervals page](media/gcc-invoice-issue-deadline-date-interval.jpg)
+    ![Date intervals page.](media/gcc-invoice-issue-deadline-date-interval.jpg)
 
     > [!NOTE]
     > The preceding illustration shows an interval of 15 days. If the date interval is set up in this way, the deadline for issuing the invoice will be the fifteenth day of the month after the month when the packing slip is issued. If you leave the **To date period type** and **To date Start/End** fields in the **Interval end** section blank, the deadline for issuing the invoice will be the fifteenth day after the packing slip is issued.
@@ -59,7 +59,7 @@ Follow these steps to set up the functionality for the invoice issue deadline.
 5. On the **Foreign trade parameters** page, on the **Country/region properties** tab, select **New**.
 6. On the line for the new record, in the **Party country/region** field, select a country or region. Then, in the **Country/region type** field, select the type of country or region. For example, select **Domestic**.
 
-    ![Foreign trade parameters page](media/gcc-invoice-issue-deadline-Foreign-trade-parameters.jpg)
+    ![Foreign trade parameters page.](media/gcc-invoice-issue-deadline-Foreign-trade-parameters.jpg)
 
 7. Go to **Accounts receivable** \> **Setup** \> **Set up calculation for invoice issue date** or **Accounts payable** \> **Setup** \> **Set up calculation for invoice issue date**.
 8. On the **Set up calculation for invoice issue due date** page, create a record.
@@ -67,7 +67,7 @@ Follow these steps to set up the functionality for the invoice issue deadline.
 
     In the following illustration, the validation for the invoice issue deadline is applicable to posted packing slips or product receipts that have a domestic address.
 
-    ![Set up calculation for invoice issue due date page](media/gcc-invoice-issue-deadline-calculation-for-invoice-issue-deadline.jpg)
+    ![Set up calculation for invoice issue due date page.](media/gcc-invoice-issue-deadline-calculation-for-invoice-issue-deadline.jpg)
 
 10. Go to **Accounts receivable** \> **Setup** \> **Parameters**.
 11. On the **Accounts receivable parameters** page, on the **Updates** tab, on the **Invoice date control** FastTab, in the **Invoice date control** field, select one of the following values:
@@ -79,7 +79,7 @@ Follow these steps to set up the functionality for the invoice issue deadline.
     > [!NOTE]
     > If you select **Warning** or **Error**, the validation is applicable to sales invoices that were posted based on packing slips.
 
-    ![Accounts receivable parameters page](media/gcc-invoice-issue-deadline-ar-parameters.jpg)
+    ![Accounts receivable parameters page.](media/gcc-invoice-issue-deadline-ar-parameters.jpg)
 
 Based on the settings, the system enters a value in the **Invoice issue due date** field in the packing slip journal and the product receipt journal. You can view all the packing slips that aren't yet invoiced by going to **Sales and marketing** \> **Sales orders** \> **Order shipping** \> **Packing slip not invoiced**. You can view all the product receipts that aren't yet invoiced by going to **Procurement and sourcing** \> **Purchase orders** \> **Receiving products** \> **Product receipt not invoiced**.
 

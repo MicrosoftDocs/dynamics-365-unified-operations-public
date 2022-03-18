@@ -4,7 +4,7 @@
 title: Email ER destination type
 description: This topic explains how to configure an email destination for each FOLDER or FILE component of an Electronic reporting (ER) format.
 author: NickSelin
-ms.date: 12/03/2020
+ms.date: 08/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -47,23 +47,56 @@ You can also [group](#grouping) several **Folder** or **File** components togeth
 
 Multiple groups of components can be configured for a single ER format configuration. In this way, you can configure an email destination for every group of components and an email destination for every component.
 
+## Enable an email destination
+
+To send one or more output files by email, follow these steps.
+
+1. On the **Electronic reporting destination** page, on the **File destination** FastTab, select a component or group of components in the grid.
+2. Select **Settings**, and then, in the **Destination settings** dialog box, on the **Email** tab, set the **Enabled** option to **Yes**.
+
+[![Setting the Enabled option to Yes for an email destination.](./media/ER_Destinations-EnableSingleDestination.png)](./media/ER_Destinations-EnableSingleDestination.png)
+
 ## Configure an email destination
 
-To send an output file or several output files by email, on the **Electronic reporting destination** page, on the **File destination** FastTab, select a component or group of components in the grid, and then select **Settings**. In the **Destination settings** dialog box that appears, on the **Email** tab, set the **Enabled** option to **Yes**. You can then specify email recipients, and edit the subject and body of the email message. You can either set up constant text for the email subject and body, or use ER [formulas](er-formula-language.md) to dynamically create email texts.
+### Email content
 
-You can configure email addresses for ER in two ways. The configuration can be completed in the same way that the Print Management feature completes it, or you can resolve an email address by using a direct reference to the ER configuration through a formula.
+You can edit the subject and body of the email message.
 
-[![Setting the Enabled option to Yes for an email destination](./media/ER_Destinations-EnableSingleDestination.png)](./media/ER_Destinations-EnableSingleDestination.png)
+In the **Subject** field, enter the text of the email subject that should appear in the subject field of an electronic message that is generated at runtime. In the **Body** field, enter the text of the email body that should appear in the body field of an electronic message. You can set up constant text for the email subject and body, or you can use ER [formulas](er-formula-language.md) to dynamically create email text at runtime. The configured formula must return a value of the [String](er-formula-supported-data-types-primitive.md#string) type.
+
+The body of your email is composed in TEXT or HTML format, depending on the email client. You can use any layout, styling, and branding that HTML and inline Cascading Style Sheets (CSS) allow for.
+
+> [!NOTE]
+> Email clients impose layout and style limitations that might require adjustments to the HTML and CSS that you use for the message body. We recommend that you familiarize yourself with the best practices for creating HTML that the most popular email clients will support.
+>
+> Use the correct encoding to implement a carriage return, depending on the body formatting. For more information, see the definition of the [String](er-formula-supported-data-types-primitive.md#string) data type.
+
+### Email addresses
+
+You can specify the email sender and email recipients. By default, email is sent on behalf of the current user. To specify a different email sender, you must configure the **From** field.
+
+> [!NOTE]
+> When an email destination is configured, the **From** field is visible only to users who have the `ERFormatDestinationSenderEmailConfigure` security privilege, **Configure the sender email address for ER format destinations**.
+>
+> When an email destination is offered for modification at [runtime](electronic-reporting-destinations.md#security-considerations), the **From** field is visible only to users who have the `ERFormatDestinationSenderEmailMaintain` security privilege, **Maintain the sender email address for ER format destination**.
+>
+> When the **From** field is configured to use an email address other than the current user's, either the **Send as** or **Send on behalf** permission must be correctly [set](/microsoft-365/solutions/allow-members-to-send-as-or-send-on-behalf-of-group) in advance. Otherwise, the following exception is thrown at runtime: "Unable to send email as \<from email account\> from the \<current user account\> account, please check the 'Send as' permissions on the \<from email account\>."
+
+You can configure the **From** field to return more than one email address. In this case, the first address in the list is used as an email sender address.
+
+To specify email recipients, you must configure the **To** and **Cc** (optional) fields.
+
+You can configure email addresses for ER in two ways. The configuration can be completed in the same way as the Print Management feature, or you can resolve an email address by using a direct reference to the ER configuration through a formula.
 
 ## Email address types
 
-If you select **Edit** next to the **To** or **Cc** field in the **Destination settings** dialog box, the **Email to** dialog box appears. Select **Add**, and then select the type of email address to use. Two types are currently supported: **Print Management email** and **Configuration email**.
+If you select **Edit** next to the **From**, **To**, or **Cc** field in the **Destination settings** dialog box, the appropriate **Email from**, **Email to**, or **Email cc** dialog box appears. There, you can configure the email sender and email recipients. Select **Add**, and then select the type of email address to use. Two types are currently supported: **Print Management email** and **Configuration email**.
 
-[![Selecting the type of email address](./media/ER_Destinations-EmailSelectAddressType.png)](./media/ER_Destinations-EmailSelectAddressType.png)
+[![Selecting the type of email address.](./media/ER_Destinations-EmailSelectAddressType.png)](./media/ER_Destinations-EmailSelectAddressType.png)
 
 ### Print Management email
 
-If you select **Print Management email** as the email address type, you can enter fixed email addresses in the **Email to** dialog box by setting the following fields:
+If you select **Print Management email** as the email address type, you can enter fixed email addresses in the **Email from**, **Email to**, or **Email cc** dialog box by setting the following fields:
 
 - In the **Email source** field, select **None**.
 - In the **Additional email addresses, separated by ";"** field, enter the fixed email addresses.
@@ -79,6 +112,7 @@ Alternatively, you can obtain email addresses from the contact details of the pa
 - Applicant
 - Prospective vendor
 - Disallowed vendor
+- Legal entity
 
 For example, to configure an email destination for an ER format that is used to process vendor payments, select the **Vendor** role.
 
@@ -89,7 +123,7 @@ After you select the desired role, select the **Bind** button (chain symbol) nex
 
 On the **Formula designer** page, in the **Formula** field, enter a document-specific reference to a supported role. Instead of typing the reference, in the **Data source** pane, find and select the data source node that represents an account of the configured role, and then select **Add data source** to update the formula. For example, if you configure the email destination for the **ISO 20022 Credit Transfer** configuration that is used to process vendor payments, the node that represents a vendor account is `'$PaymentsForCoveringLetter'.Creditor.Identification.SourceID`.
 
-![Configuring an email source account](./media/er_destinations-emaildefineaddresssource.gif)
+![Configuring an email source account.](./media/er_destinations-emaildefineaddresssource.gif)
 
 If the account numbers of the configured role are unique for the whole instance of Microsoft Dynamics 365 Finance, the **Company of email source** field in the **Email to** dialog box can remain blank.
 
@@ -111,9 +145,9 @@ To specify the type of email addresses that must be used at runtime, in the **Em
 
 ### Configuration email
 
-Select **Configuration email** as the email address type if the configuration that you use has a node in the data sources that returns either a single email address or multiple email addresses that are separated by semicolons (;). You can use [data sources](general-electronic-reporting.md#FormatComponentOutbound) and [functions](er-formula-language.md#functions) in the formula designer to get a correctly formatted email address or correctly formatted email addresses that are separated by semicolons. For example, if you use the **ISO 20022 Credit Transfer** configuration, the node that represents the primary email address of a vendor from the vendor contact details that the covering letter should be sent to is `'$PaymentsForCoveringLetter'.Creditor.ContactDetails.Email`.
+Select **Configuration email** as the email address type if the configuration that you use has a node in the data sources that returns either a single email address or multiple email addresses that are separated by semicolons (;). You can use data sources and [functions](er-formula-language.md#Functions) in the formula designer to get a correctly formatted email address or correctly formatted email addresses that are separated by semicolons. For example, if you use the **ISO 20022 Credit Transfer** configuration, the node that represents the primary email address of a vendor from the vendor contact details that the covering letter should be sent to is `'$PaymentsForCoveringLetter'.Creditor.ContactDetails.Email`.
 
-[![Configuring an email address source](./media/ER_Destinations-EmailDefineAddressSource2.png)](./media/ER_Destinations-EmailDefineAddressSource2.png)
+[![Configuring an email address source.](./media/ER_Destinations-EmailDefineAddressSource2.png)](./media/ER_Destinations-EmailDefineAddressSource2.png)
 
 ## <a id="grouping"></a>Group format components
 
@@ -131,11 +165,11 @@ To ungroup format components, on the **File destination** FastTab, select a reco
 
 The following illustration shows the structure of an ER format that was configured to produce a zipped outbound file that contains a collection letter note and appropriate customer invoices in PDF format.
 
-[![Structure of an ER format that generates outbound documents](./media/ER_Destinations-Email-Grouping1.png)](./media/ER_Destinations-Email-Grouping1.png)
+[![Structure of an ER format that generates outbound documents.](./media/ER_Destinations-Email-Grouping1.png)](./media/ER_Destinations-Email-Grouping1.png)
 
 The following illustration shows the process, as described in this topic, of grouping individual components and enabling the **Email** destination for the new group, so that a collection letter note is sent together with appropriate customer invoices as email attachments.
 
-[![Grouping individual components and enabling the Email destination](./media/ER_Destinations-Email-Grouping2.gif)](./media/ER_Destinations-Email-Grouping2.gif)
+[![Grouping individual components and enabling the Email destination.](./media/ER_Destinations-Email-Grouping2.gif)](./media/ER_Destinations-Email-Grouping2.gif)
 
 ## Additional resources
 

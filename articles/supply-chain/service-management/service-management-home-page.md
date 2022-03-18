@@ -3,9 +3,9 @@
 
 title: Service management overview
 description: Use Service management to establish service agreements and service subscriptions, handle service orders and customer inquiries, and to manage and analyze the delivery of services to customers. 
-author: ShylaThompson
+author: kamaybac
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 
+
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -51,7 +51,7 @@ Use the reporting tools to monitor service order margins and subscription transa
 
 The following diagram illustrates the high level business processes for **Service management**, and shows where service processes integrate with other modules.
 
-[![Service management business process diagram](./media/sm_home_page.gif)](./media/sm_home_page.gif)
+[![Service management business process diagram.](./media/sm_home_page.gif)](./media/sm_home_page.gif)
 
 ## Service management at a glance
 

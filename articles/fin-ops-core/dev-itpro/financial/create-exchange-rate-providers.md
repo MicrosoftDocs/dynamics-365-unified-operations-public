@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 72153
 ms.assetid: 24643037-f7a5-4acf-b3d6-9943642b618c
@@ -45,7 +45,7 @@ This topic describes the steps that are required in order to set up an exchange 
 ## Conceptual/class model
 The following illustration shows the main interfaces and classes that make up the exchange rate provider framework, and the relationships among them. New exchange rate providers should be derived from the **IExchangeRateProvider** interface. Exchange rate providers are written in X++. Because X++ is a .NET language, it's easy to use the Microsoft .NET Framework in our provider. 
 
-[![Conceptual/class model of the exchange rate provider framework](./media/exchangerates.png)](./media/exchangerates.png) 
+[![Conceptual/class model of the exchange rate provider framework.](./media/exchangerates.png)](./media/exchangerates.png) 
 
 Here are the interfaces and classes that are shown in the illustration:
 
@@ -504,7 +504,6 @@ Code examples are taken from the **ExchangeRateProviderOanda** class. Follow the
 Because there are no limits to the method that the exchange rate providers use to get exchange rates, the framework enables some interesting scenarios. Here are some ideas that you might want to explore:
 
 -   **Providers that retrieve exchange rates from other exchange rate types** – This scenario would enable synchronization of exchange rates among various exchange rate types. This functionality could be useful in situations where many exchange rate types exist, to maintain isolation between different ledgers.
--   **Providers that use Extensible Stylesheet Language Transformations (XSLT) to transform any format for an exchange rate service into an instance of the ExchangeRateResponse class** – If this scenario were implemented, users could add the XSLT transform that is required for their exchange rate service, and the application would support the service. Provider-specific code wouldn't be required.
 -   **Some exchange rate provider services charge for every rate that is consumed** – Consider combining the first idea in this list with a limit on the number of rates that you retrieve from the service, for scenarios where you're charged for each rate that is consumed from the service.
 
 

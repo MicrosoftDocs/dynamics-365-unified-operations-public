@@ -22,7 +22,7 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-04
-ms.dyn365.ops.version: Release 10.0.17
+ms.dyn365.ops.version: 10.0.17
 ---
 
 # Material handling equipment interface (MHAX)
@@ -33,7 +33,7 @@ You can use the *material handling equipment interface* (MHAX) to connect extern
 
 The following illustration shows the various elements and the order that processes occur in when you use MHAX integration.
 
-![MHAX components and interactions](media/mhax-components.png "MHAX components and interactions")
+![MHAX components and interactions.](media/mhax-components.png "MHAX components and interactions")
 
 Here is an explanation of the interactions that are shown in the previous illustration:
 

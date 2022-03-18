@@ -3,7 +3,7 @@
 
 title: Install and connect the warehouse app
 description: This topic explains how to install the warehouse app on each of your mobile devices and configure it to connect to your Microsoft Dynamics 365 Supply Chain Management environment. You can configure each device manually, or you can import connection settings through a file or by scanning a QR code.
-author: MarkusFogelberg
+author: Mirzaab
 ms.date: 05/25/2020
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 267694
 ms.assetid: d95d43b2-13ff-4189-a71a-3a1fb57d55ed
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: mafoge
+ms.author: mirzaab
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -68,28 +68,28 @@ To enable the warehouse app to interact with a specific Supply Chain Management 
 1. Enter the name and password of the user who has access to the Azure subscription.
 1. In the Azure portal, in the left navigation pane, select **Azure Active Directory**.
 
-    ![Azure Active Directory](media/app-connect-azure-aad.png "Azure Active Directory")
+    ![Azure Active Directory.](media/app-connect-azure-aad.png "Azure Active Directory")
 
 1. Make sure that you're working with the instance of Azure AD that is used by Supply Chain Management.
 1. In the **Manage** list, select **App registrations**.
 
-    ![App registrations](media/app-connect-azure-register.png "App registrations")
+    ![App registrations.](media/app-connect-azure-register.png "App registrations")
 
 1. On the toolbar, select **New registration** to open the **Register an application** wizard.
 1. Enter a name for the application, select the **Accounts in this organizational directory only** option, and then select **Register**.
 
-    ![Register an application wizard](media/app-connect-azure-register-wizard.png "Register an application wizard")
+    ![Register an application wizard.](media/app-connect-azure-register-wizard.png "Register an application wizard")
 
 1. Your new app registration is opened. Make a note of the **Application (client) ID** value, because you will need it later. This ID will be referred to later in this topic as the *client ID*.
 
-    ![Application (client) ID](media/app-connect-azure-app-id.png "Application (client) ID")
+    ![Application (client) ID.](media/app-connect-azure-app-id.png "Application (client) ID")
 
 1. In the **Manage** list, select **Certificate & secrets**. Then select one of the following buttons, depending on how you want to configure the app for authentication. (For more information, see the [Authenticate by using a certificate or client secret](#authenticate) section later in this topic.)
 
     - **Upload certificate** – Upload a certificate to use as a secret. We recommend this approach, because it's more secure and can also be automated more completely. If you're running the warehouse app on Windows devices, make a note of the **Thumbprint** value that is shown after you upload the certificate. You will need this value when you configure the certificate on Windows devices.
     - **New client secret** – Create a key by entering a key description and a duration in the **Passwords** section, and then select **Add**. Make a copy of the key, and store it securely.
 
-    ![Certificate & secrets](media/app-connect-azure-authentication.png "Certificate & secrets")
+    ![Certificate & secrets.](media/app-connect-azure-authentication.png "Certificate & secrets")
 
 For more information about how to set up web service applications in Azure AD, see the following resources:
 
@@ -109,7 +109,7 @@ To enable Supply Chain Management to use your Azure AD application, follow these
     1. Create a user.
     1. Assign the warehousing mobile device user.
 
-    ![Assign the warehousing mobile device user](media/app-connect-app-users.png "Assign the warehousing mobile device user")
+    ![Assign the warehousing mobile device user.](media/app-connect-app-users.png "Assign the warehousing mobile device user")
 
 1. Associate your Azure AD application with the warehouse app user:
 
@@ -117,7 +117,7 @@ To enable Supply Chain Management to use your Azure AD application, follow these
     1. Create a line.
     1. Enter the client ID that you made a note of in the previous section, give it a name, and select the user that you just created. We recommend that you tag all your devices. Then, if they are lost, you can easily remove their access to Supply Chain Management from this page.
 
-    ![Azure Active Directory applications](media/app-connect-aad-apps.png "Azure Active Directory applications")
+    ![Azure Active Directory applications.](media/app-connect-aad-apps.png "Azure Active Directory applications")
 
 ## <a name="authenticate"></a>Authenticate by using a certificate or client secret
 
@@ -140,7 +140,7 @@ You can import connection settings from either a file or a QR code. For both app
 | ConnectionName | Specify the name of the connection setting. The maximum length is 20 characters. Because this value is the unique identifier for a connection setting, make sure that it's unique in the list. If a connection that has the same name already exists on the device, it will be overridden by the settings from the imported file. |
 | ActiveDirectoryClientAppId | Specify the client ID that you made a note of while you were setting up Azure AD in the [Create a web service application in Azure Active Directory](#create-service) section. |
 | ActiveDirectoryResource | Specify the root URL of Supply Chain Management. |
-| ActiveDirectoryTenant | Specify the Azure AD tenant that you're using with the Supply Chain Management server. This value has the form `https://login.windows.net/<your-Azure-AD-tenant-ID>`. Here is an example: `https://login.windows.net/contosooperations.onmicrosoft.com`. |
+| ActiveDirectoryTenant | Specify the Azure AD domain name that you're using with the Supply Chain Management server. This value has the form `https://login.windows.net/<your-Azure-AD-domain-name>`. Here is an example: `https://login.windows.net/contosooperations.onmicrosoft.com`. For more information about how to find your Azure AD domain name, see [Locate important IDs for a user](/partner-center/find-ids-and-domain-names). |
 | Company | Specify the legal entity in Supply Chain Management that you want the application to connect to. |
 | ConnectionType | (Optional) Specify whether the connection setting should use a certificate or a client secret to connect to an environment. Valid values are *"certificate"* and *"clientsecret"*. The default value is *"certificate"*.<p>**Note:** Client secrets can't be imported.</p> |
 | IsEditable | (Optional) Specify whether the app user should be able to edit the connection setting. Valid values are *"true"* and *"false"*. The default value is *"true"*. |
@@ -205,26 +205,26 @@ Follow these steps to import connection settings from a file or a QR code.
 1. Go to **Connection settings**.
 1. Set the **Use demo mode** option to _No_.
 
-    ![Use demo mode option](media/app-connect-app-demo-mode.png "Use demo mode option")
+    ![Use demo mode option.](media/app-connect-app-demo-mode.png "Use demo mode option")
 
 1. Select **Select file** or **Scan QR code**, depending on how you want to import the settings:
 
     - If you're importing the connection settings from a file, the app might already have found the file if the default name and the default location were used when it was saved. Otherwise, select **Select file**, browse to the file on your local device, and select it. If you select a custom location, the app will store it and automatically use it the next time.
     - If you're importing the connection settings by scanning a QR code, select **Scan QR code**. The app prompts you for permission to use the device's camera. After you give permission, the camera is started, so that you can use it for scanning. Depending on the quality of the device's camera and the complexity of the QR code, you might find it difficult to get a correct scan. In that case, try to reduce the complexity of the QR code by generating only one connection per QR code. (Currently, you can use only the device's camera to scan the QR code.)
 
-    ![Import connection settings](media/app-connect-app-select-file.png "Import connection settings")
+    ![Import connection settings.](media/app-connect-app-select-file.png "Import connection settings")
 
 1. When the connection settings are successfully loaded, select the **Back** (left arrow) button in the upper-left corner of the page.
 
-    ![Connection settings loaded](media/app-connect-app-settings-loaded.png "Connection settings loaded")
+    ![Connection settings loaded.](media/app-connect-app-settings-loaded.png "Connection settings loaded")
 
 1. If you're using an Android device and are using a certificate for authentication, the device prompts you to select the certificate.
 
-    ![Choose certificate prompt on an Android device](media/app-connect-app-choose-cert.png "Choose certificate prompt on an Android device")
+    ![Choose certificate prompt on an Android device.](media/app-connect-app-choose-cert.png "Choose certificate prompt on an Android device")
 
 1. The app connects to your Supply Chain Management server and shows the sign-in page.
 
-    ![Sign-in page](media/app-connect-sign-in.png "Sign-in page")
+    ![Sign-in page.](media/app-connect-sign-in.png "Sign-in page")
 
 ## <a name="config-manually"></a>Manually configure the application
 
@@ -234,11 +234,11 @@ You can manually configure the app on the device so that it connects to the Supp
 1. Go to **Connection settings**.
 1. Set the **Use demo mode** option to _No_.
 
-    ![Demo mode turned off](media/app-connect-app-select-file.png "Demo mode turned off")
+    ![Demo mode turned off.](media/app-connect-app-select-file.png "Demo mode turned off")
 
 1. Tap in the **Select connection** field to expand the settings that are required to manually enter the connection details.
 
-    ![Manual connection fields](media/app-connect-manual-connect.png "Manual connection fields")
+    ![Manual connection fields.](media/app-connect-manual-connect.png "Manual connection fields")
 
 1. Enter the following information:
 
@@ -252,7 +252,7 @@ You can manually configure the app on the device so that it connects to the Supp
         > [!NOTE]
         > Don't end this value with a slash (/).
 
-    - **Active directory tenant** – Enter the Azure AD tenant that you're using with the Supply Chain Management server. This value has the form `https://login.windows.net/<your-Azure-AD-tenant-ID>`. Here is an example: `https://login.windows.net/contosooperations.onmicrosoft.com`.
+    - **Active directory tenant** – Enter the Azure AD domain name that you're using with the Supply Chain Management server. This value has the form `https://login.windows.net/<your-Azure-AD-domain-name>`. Here is an example: `https://login.windows.net/contosooperations.onmicrosoft.com`. For more information about how to find your Azure AD domain name, see [Locate important IDs for a user](/partner-center/find-ids-and-domain-names).
 
         > [!NOTE]
         > Don't end this value with a slash (/).

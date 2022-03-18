@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 16242
 ms.assetid: 4c5ae424-86fe-43f1-8f94-71dfe2edfaa7
@@ -48,7 +48,7 @@ Three patterns are described in this document:
 
 ## Wireframe
 
-[![Simple list and details wireframe](./media/simplelistanddetails1-1024x575.png)](./media/simplelistanddetails1.png)
+[![Simple list and details wireframe.](./media/simplelistanddetails1-1024x575.png)](./media/simplelistanddetails1.png)
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
@@ -129,19 +129,19 @@ The verification checklist shows the steps for manually verifying that the form 
 
 Form: **PaymTerm** 
 
-[![Simple List and Details – List Grid example](./media/sldSimpleListExample.png)](./media/sldSimpleListExample.png)
+[![Simple List and Details – List Grid example.](./media/sldSimpleListExample.png)](./media/sldSimpleListExample.png)
 
 ### Simple List and Details – Tabular Grid
 
 Form: **ExchangeRate** 
 
-[![Simple List and Details - Tabular Grid example](./media/sldGridExample.png)](./media/sldGridExample.png)
+[![Simple List and Details - Tabular Grid example.](./media/sldGridExample.png)](./media/sldGridExample.png)
 
 ### Simple List and Details – Tree
 
 Form: **CaseCategorySetup** 
 
-[![Simple List and Details – Tabular Grid example](./media/sldTreeExample.png)](./media/sldTreeExample.png)
+[![Simple List and Details – Tabular Grid example.](./media/sldTreeExample.png)](./media/sldTreeExample.png)
 
 ## Appendix
 ### Frequently asked questions
@@ -164,7 +164,7 @@ This section will have answers to frequently asked questions that are related to
 
 ### AX 2012 content
 
-[![AX 2012 example](./media/simplelistanddetails5.png)](./media/simplelistanddetails5.png)
+[![AX 2012 example.](./media/simplelistanddetails5.png)](./media/simplelistanddetails5.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

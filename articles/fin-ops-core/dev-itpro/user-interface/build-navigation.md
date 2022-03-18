@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 26031
 ms.assetid: ad8ba47b-becb-4d13-a5af-8aca46075e82
@@ -84,7 +84,7 @@ First, we will add a new tile to the form FMTClerkWorkspace.
 
 After you build and run the project, the Fleet management clerk workspace will launch. The new tile named, **Test tile**, that you created will be included in the first section of the workspace, at the end of the set of tiles. 
 
-[![Screen shot of set of tiles](./media/nav1.png)](./media/nav1.png) 
+[![Screen shot of set of tiles.](./media/nav1.png)](./media/nav1.png) 
 
 > [!NOTE]
 > The tile will not navigate anywhere when clicked. To enable this, you can define a Menu Item Name on FMTAllCustomersTile, under **Tiles** in **Solution Explorer**.
@@ -128,11 +128,11 @@ Next, we will add the FMTClerkWorkspace form to the navigation pane. We will do 
 6.  Right-click **FMTutorial**, and then click **Rebuild**.
 7.  Press **Ctrl+F5** to run the project. After you build and run the project, the navigation pane will contain a link to the new workspace. Open the navigation pane by clicking the navigation pane button (three lines) at the top right of the application window. 
 
-    [![Screen shot of navigation pane button](./media/nav2.png)](./media/nav2.png)
+    [![Screen shot of navigation pane button.](./media/nav2.png)](./media/nav2.png)
 
 8.  When you open the navigation pane, select **All workspaces**, and scroll down in the list after it opens. You should see the following new Reservation management tutorial workspace in the list. 
 
-    [![Screen shot showing Reservation management tutorial in list](./media/nav3.png)](./media/nav3.png)
+    [![Screen shot showing Reservation management tutorial in list.](./media/nav3.png)](./media/nav3.png)
 
 ### Add the form to the main menu structure
 
@@ -176,11 +176,11 @@ Now you’ll add a new main menu section that contains a tile that points to the
 18. Press **Ctrl+F5** to run the project.
 19. Go to the main menu section you just modified. Open the navigation pane and scroll down until you see the new top-level **Fleet management tutorial** menu. You may need to clear your browser cache by pressing **Ctrl+F5**. 
 
-    [![Screen shot of Fleet management tutorial menu in navigation pane](./media/nav4.png)](./media/nav4.png)
+    [![Screen shot of Fleet management tutorial menu in navigation pane.](./media/nav4.png)](./media/nav4.png)
 
 20. Click **Fleet management tutorial** &gt; **Workspaces** to expand that submenu. Your navigation pane should look like the following. 
 
-    [![Screen shot of navigation pane](./media/nav5.png)](./media/nav5.png) 
+    [![Screen shot of navigation pane.](./media/nav5.png)](./media/nav5.png) 
 
     If you click on the **Common** submenu, you will see the menu item that you modeled there. You can click either of these links to check that you have set up the references correctly. If you have set up the references correctly, the tutorial workspace you’re working on should open when clicked on.
 
