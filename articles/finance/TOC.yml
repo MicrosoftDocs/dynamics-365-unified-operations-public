@@ -417,9 +417,9 @@
         - name: Recurring contract billing
           items:
           - name: Create billing schedules
-            href: accounts-receivable/sb-billing-schedules-items.md
+            href: accounts-receivable/sb-billing-schedules.md
           - name: Copy a billing schedule
-            href: accounts-receivable/sb-copy-schedules.md
+            href: accounts-receivable/sb-copy-schedules-items.md
           - name: Billing schedule features
             href: accounts-receivable/sb-billing-features.md
           - name: Milestone billing
