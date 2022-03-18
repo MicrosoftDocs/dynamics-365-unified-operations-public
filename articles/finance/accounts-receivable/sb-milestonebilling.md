@@ -92,7 +92,7 @@ After you've created the milestone templates, billing schedule groups, and items
 
 To set up a billing schedule that uses milestones, follow these steps.
 
-1. In the **All/Active billing schedules** list, select **New**.
+1. From the **All/Active billing schedules** list on the **Billing schedules** page, select **New**.
 2. On the **All billing schedules** page, create a new billing schedule, and specify a customer account and a start date.
 3. In the **Billing schedule lines** section, select **Add line**. Then add an item number, and set the **Item type** field to **Milestone**.
 
@@ -107,7 +107,7 @@ To set up a billing schedule that uses milestones, follow these steps.
 
 To edit milestone allocation on a billing schedule line, follow these steps.
 
-1. In the list of all billing schedules, in the **Schedule number** field, select the schedule number of the billing schedule.
+1. On the **Billing schedules** page > **All or active billing schedules**, in the **Schedule number** field, select the schedule number of the billing schedule.
 2. In the **Billing schedule lines** section, enter an item, specify **Milestone** as the item, and select **Milestone allocation**.
 3. In the **Milestone template** field, select a milestone template.
 4. Select **Process**. The milestone template lines are automatically added to the billing schedule lines.
@@ -124,7 +124,7 @@ The **Milestone allocation** page contains the following fields.
 | Template description | The description of the milestone template. |
 | Allocation method | The allocation method that is used for the milestone template. |
 | **Lines** | The default values for all lines are based on the selected milestone template. You can change them as required. |
-| Item number | The item number for the item number for the milestone allocation template. |
+| Item number | The item number for the milestone allocation template. |
 | Product name | The product name. |
 | Percentage | <p>The allocation percentage for the line. The sum of all the percentages must equal 100.</p><p>If you change the **Percentage** value for the line, the **Net amount** value is updated. Conversely, if you change the **Net amount** value, the **Percentage** is updated.</p> |
 | Net amount | <p>The allocation amount for the line. The sum of net amounts for all lines must equal the **Extended price** value that is specified on the header.</p><p>If you change the **Net amount** value for the line, the **Percentage** value is updated. Conversely, if you change the **Percentage** value, the **Net amount** value is updated.</p> |
