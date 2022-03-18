@@ -4,7 +4,7 @@
 title: Design ER configurations to fill in PDF templates
 description: This topic provides information about how to design an Electronic reporting (ER) format to fill in a PDF template.
 author: NickSelin
-ms.date: 02/28/2022
+ms.date: 03/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -260,16 +260,15 @@ Because both properties are optional for a **Field** format element, the followi
 - If the **Name** attribute is defined, and the **Name** expression is configured, the PDF field that the same name as the value that is returned by the **Name** expression of the format element is filled in.
 
 > [!NOTE]
-> When a check box of the PDF template does not belong to a group of check boxes, it is represented in the editable ER format as the **Field** element that is nested under the **PDF File** element. Such a PDF check box can be filled in as selected in the following ways:
+> When a check box in the PDF template doesn't belong to a group of check boxes, it's represented in the editable ER format as the **Field** element that's nested under the **PDF File** element. This type of PDF check box can be filled in as selected in the following ways:
 >
-> - When the corresponding **Field** format element is bound to a data source field of the *[Boolean](er-formula-supported-data-types-primitive.md#boolean)* data type that has the **True** value
-> - When the corresponding **Field** format element contains a nested **String** format element that is bound to a data source field that has a text value of **1**, **True**, or **Yes**
+> - When the corresponding **Field** format element is bound to a data source field of the *[Boolean](er-formula-supported-data-types-primitive.md#boolean)* data type that has the **True** value.
+> - When the corresponding **Field** format element contains a nested **String** format element that is bound to a data source field that has a text value of **1**, **True**, or **Yes**.
 
 > [!NOTE]
-> Your template can contain a group of check boxes the only one of which can be ticked. Those check boxes are represented in a PDF template as multiple form fields of the CHECKBOX type each of which has the same name and different export values. When you import such a template to the editable ER format, each of such check boxes will be represented in the format hierarchical structure as the
-**Check box group item** element that is nested under the same **Check box group** element. The name of such a **Check box group** element will be equal to the name of those check box fields in a PDF template. The name of each **Check box group item** element will be equal to the export value of the corresponding check box field in a PDF template.
+> Your template can contain a group of check boxes the only one of which can be ticked. Those check boxes are represented in a PDF template as multiple form fields of the CHECKBOX type. Each of the fields have the same name and different export values. When you import a template to the editable ER format, each of the check boxes will be represented in the format hierarchical structure as the **Check box group item** element that is nested under the same **Check box group** element. The name of the **Check box group** element will be equal to the name of those check box fields in the PDF template. The name of each **Check box group item** element will be equal to the export value of the corresponding check box field in the PDF template.
 >
-> Notice that you can bind a **Check box group item** element to the only data source field of the *Boolean* data type.
+> You can bind a **Check box group item** element to the only data source field of the *Boolean* data type.
 
 ## Run the format configuration
 
