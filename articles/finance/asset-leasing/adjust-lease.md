@@ -140,5 +140,13 @@ If a lease has been adjusted, you can view the different versions of it. You can
 2. To view historical schedules, open the modified lease from the **Lease summary** page, select the desired book, and then, on the Action Pane, select **Book version history**.
 3. On the **Book version** page, select a version and a schedule to view.
 
+## Adjust lease book
+
+If you want to adjust a lease book only, you can go to "Lease book" form and select "Adjust book". In case of using "Adjust book" function you will need to make sure to follow this sequence after starting the book adjustment process, remove the payment schedule lines first, then change "Lease modification date", and consider removing all additional asset/liability considerations if any (initial direct cost, lease incentive, lease prepayment, dismantling cost and residual value guarantee). Then enter the modification date, add payment schedule lines represent the new payment dates that match modification date. This is important steps to avoid inaccurate calcuulation for the lease adjustment. 
+
+ > [!NOTE] 
+ > Adjustment wizard is the recommended was to adjust lease as it reduce manual steps, preview balances after adjustment and give you ability to change amounts before
+ > posting.
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
