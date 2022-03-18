@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 This topic describes how to set up and use the extended logon capability of the Microsoft Dynamics 365 Commerce point of sale (POS) application.
 
-Cloud POS (CPOS) and Modern POS (CPOS) provide extended logon capability for retail store workers to log into the POS application by scanning a barcode or swiping a card with a magnetic stripe reader (MSR).
+Cloud POS (CPOS) and Modern POS (CPOS) provide extended logon capability for retail store workers to sign in to the POS application by scanning a barcode or swiping a card with a magnetic stripe reader (MSR).
 
 ## Set up extended logon
 
@@ -63,7 +63,7 @@ When extended logon is configured, and a worker has been assigned a bar code or 
 
 ## Extend extended logon
 
-The out-of-the-box implementation of extended logon has a minimal length requirement of six characters for a credential and enforces that the first five characters (the credential ID) must be unique. It was originally intended to be a sample that developers could customize to fit the specific needs of a particular implementation, for example supporting more characters or using different security verification rules. For detailed instructions about how to build extensions for extended logons, see [Extending the Extended Logon functionality for MPOS and Cloud POS](https://cloudblogs.microsoft.com/dynamics365/no-audience/2018/12/14/extending-the-extended-logon-functionality-for-mpos-and-cloud-pos/).
+The out-of-the-box implementation of the extended logon capability has a minimal length requirement of six characters for a credential where the first five characters (the credential ID) must be unique. It was originally intended to be a sample that developers could customize to fit the specific needs of a particular implementation, for example supporting more characters or using different security verification rules. For detailed instructions about how to build extensions for extended logons, see [Extending the extended logon functionality for MPOS and Cloud POS](https://cloudblogs.microsoft.com/dynamics365/no-audience/2018/12/14/extending-the-extended-logon-functionality-for-mpos-and-cloud-pos/).
 
 The logon service can also be extended to support additional extended logon devices, such as palm scanners. For more information, see the POS extensibility documentation.
 
