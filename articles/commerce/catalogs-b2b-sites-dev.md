@@ -2,8 +2,8 @@
 
 # required metadata
 
-title: Development impact of Commerce catalogs for B2B
-description: This topic describes the development impact of the Commerce catalogs for B2B feature in Microsoft Dynamics 365 Commerce.
+title: Extensibility impact of Commerce catalogs for B2B customizations
+description: This topic describes the extensibility impact of the Commerce catalogs for B2B feature in Microsoft Dynamics 365 Commerce.
 author: ashishmsft
 ms.date: 03/17/2022
 ms.topic: article
@@ -14,13 +14,13 @@ ms.author: asharchw
 ms.search.validFrom: 2022-02-28
 ---
 
-# Development impact of Commerce catalogs for B2B 
+# Extensibility impact of Commerce catalogs for B2B customizations 
 
 [!include [banner](includes/banner.md)]
 
-This topic describes the development impact of the Commerce catalogs for B2B feature in Microsoft Dynamics 365 Commerce.
+This topic describes the extensibility impact of the Commerce catalogs for B2B feature in Microsoft Dynamics 365 Commerce.
 
-If you are interested in extending catalog context to custom scenarios, your customizations made need to be updated. This follows the standard process customers need to follow since after upgrades their customizations may not automatically support the latest features. If your customizations include any new feature or bug fixes in their experiences, it is recommended that you update the customization code accordingly. This is similar to the changes Microsoft may have made for the core code. 
+If you are interested in extending catalog context to custom scenarios, your customizations may need to be updated. This follows the standard process customers need to follow since after upgrades their customizations may not automatically support the latest features. If your customizations include any new feature or bug fixes in their experiences, it is recommended that you update the customization code accordingly. This is similar to the changes Microsoft may have made for the core code. 
 
 Review the customization cases below to determine if your customizations must be updated. 
 
@@ -49,3 +49,9 @@ The following customization cases require development updates:
 - **Case 5**: A customer has a data action that retrieves information for multiple products that could be from different catalogs. Required update steps: 
     -  Split the API calls by catalog ID. For example, for cart APIs the cart may contain products from different catalogs. The product lines should be grouped by catalog ID and call the API for each catalog separately, as shown in the following example illustration.
 ![Updated data action that groups product lines by catalog ID](./media/customization5.png)
+
+## Additional resources
+
+[Create Commerce catalogs for B2B sites](catalogs-b2b-sites.md)
+
+[Commerce catalogs for B2B FAQ](catalogs-b2b-sites-FAQ.md)
