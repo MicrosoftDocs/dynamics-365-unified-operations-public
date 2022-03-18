@@ -1,3 +1,35 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@kamaybac 
+MicrosoftDocs
+/
+Dynamics-365-Operations
+Private
+Code
+Issues
+Pull requests
+131
+Actions
+Projects
+3
+Security
+Insights
+Settings
+Dynamics-365-Operations/articles/supply-chain/toc.yml
+@kamaybac
+kamaybac Merge pull request #13397 from MicrosoftDocs/scm-tsg-data-diff
+…
+Latest commit 26234ab 22 hours ago
+ History
+ 16 contributors
+@kamaybac@josaw1@sericks007@kfend@RobinARH@edupont04@roschlom@tonyafehr@twheeloc@MargoC@EvgenyPopovMBS@yufei-huang
+ 4017 lines (4017 sloc)  257 KB
+   
 - name: Dynamics 365 Supply Chain Management
   items:
   - name: Dynamics 365 Supply Chain Management
@@ -3737,7 +3769,7 @@
           href: troubleshooting/procurement/consolidate-multiple-receipts.md
         - name: Default tax group and cash discount aren't filled in from the invoice account
           href: troubleshooting/procurement/default-tax-group-and-discount.md
-        - name: The delivery name isn't synced after changing a purchase order delivery address
+        - name: The delivery name isn't synced after changing a purchase order delivery address
           href: troubleshooting/procurement/delivery-name-isnt-synced.md
         - name: An exception occurs during vendor invoice posting
           href: troubleshooting/procurement/invocation-target-exception.md
@@ -3859,10 +3891,6 @@
           href: troubleshooting/transportation/reconciliation-reaso.md
       - name: Warehouse management
         items:
-<<<<<<< WHS_19Feb2022
-        - name: Can't post packing slip for a stopped a sales order line
-          href: troubleshooting/warehousing/unable-to-post-packi.md
-=======
         - name: Warehouse mobile app
           items:
           - name: Unexpected difference between request and session data during testing
@@ -3871,6 +3899,8 @@
             href: troubleshooting/warehousing/certification-path-app-connection-error.md
           - name: Trust anchor for certification path not found when updating and migrating to WMS
             href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md
+        - name: Can't post packing slip for a stopped a sales order line
+          href: troubleshooting/warehousing/unable-to-post-packi.md
         - name: Processing issues occur after installing a scale unit warehouse workload
           href: troubleshooting/warehousing/Scale-unit-warehouse-workload-installation-issues.md
         - name: Auto-reservation prompt for batch number is shown even with available inventory
@@ -3973,7 +4003,6 @@
           href: troubleshooting/warehousing/quantity-exceeds-rec-del.md
         - name: Quantity exceeds under-delivery percentage during packing slip generation
           href: troubleshooting/warehousing/quantity-exceeds-under-pack-slip.md
->>>>>>> main
         - name: An error occurs when choosing the location during picking list registration
           href: troubleshooting/warehousing/error-cannot-update.md
         - name: Packing station doesn't show product notes
@@ -4020,3 +4049,29 @@
     href: ../commerce/index.md
   - name: Dynamics 365 Human Resources
     href: ../human-resources/index.md
+Microsoft Open Source
+Docs
+Portal
+GitHub @ MSFT
+Support Options
+Release Guide
+Microsoft Open Source
+Microsoft Open Source
+Docs
+Portal
+GitHub @ MSFT
+Support Options
+Release Guide
+© 2022 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Loading complete
