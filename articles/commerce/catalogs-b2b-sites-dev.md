@@ -17,6 +17,7 @@ ms.search.validFrom: 2022-02-28
 # Extensibility impact of Commerce catalogs for B2B customizations 
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This topic describes the extensibility impact of the Commerce catalogs for B2B feature in Microsoft Dynamics 365 Commerce.
 
