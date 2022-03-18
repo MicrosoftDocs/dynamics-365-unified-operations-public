@@ -4,7 +4,7 @@
 title: Set up default descriptions for posting of Tax fiscal documents
 description: This topic explains how to set up default descriptions for voucher transactions that are posted from Tax fiscal documents.
 author: gionoder
-ms.date: 01/31/2022
+ms.date: 03/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,11 +31,9 @@ ms.dyn365.ops.version: 10.0.25
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
-
 Follow these steps to set up default descriptions for voucher transactions that are posted from Tax fiscal documents.
 
-1. Go to **Organization administration** \> **Setup** \> **Default descriptions**.
+1. Go to **Organization administration** > **Setup** > **Default descriptions**.
 2. Select **New**.
 3. In the **Description** field, select **Tax fiscal document**.
 4. In the **Language** field, select a language.
