@@ -29,9 +29,7 @@ ms.dyn365.ops.version: Human Resources
 
 # Create links from Human Resources to another Finance environment
 
-A customer may have two Dynamics 365 environments that they're working in. This was a common scenario when a customer was using Dynamics 365 Human Resources 
-standalone and also using a Dynamics 365 Finance environment. With the infrastructure merge into Dynamics 365 Finance, this situation may still occur. 
-
+A customer may have two Dynamics 365 environments that they're working in. 
 As an example, a customer may have a Dynamics 365 Human Resources environment on the Finance infrastructure, and also need to connect to another Dynamics 365 Finance environment. This new navigation functionality allows you to link from a Human Resources page to another Finance environment, giving you direct navigation into specific pages. When links are configured, you can specify the name and group of the link, where the link should surface in Human Resources, and the target page to be opened within the other environment.
 
 > [!Note] 
@@ -39,11 +37,11 @@ As an example, a customer may have a Dynamics 365 Human Resources environment on
 
 ## Configure target systems
 
-In Human Resources, system administrators can define links that will surface in Human Resources pages. Part of the configuration are Finance environments that you would like to navigate to as the target of the link. 
+In Human Resources, system administrators can define links that will surface in Human Resources pages. Parts of the configuration are Finance environments that you would like to navigate to as the target of the link. 
 
 To configure the target system:
 1. On the **Configure links** page, select **Configure target system** button.  
-2. Enter the target system name and provide the URL of the Finance environment. After you have configured your target systems, you can define your links.
+2. Enter the target system name and provide the URL of the Finance environment. After you've configured your target systems, you can define your links.
 
 ## Configure links
 
@@ -52,7 +50,7 @@ Each link that is created will have the following information defined.
 **Enable this link** - Set to **Yes** if you want to display the link to users of Human Resources.
 **Display name** - Enter the name that will appear as a link to the secondary environment. 
 **Surface link on form** - Choose which page you would like to display the link on.  Links can only be surfaced on the **Employee self service** workspace, **Job**, **Position**, **Worker**, and **Streamlined Worker** pages.
-**Group** - Groups are not required, but if you want to organize your links using groups, select an existing group or create a new one using the **Group** column.
+**Group** - Groups aren't required, but if you want to organize your links using groups, select an existing group or create a new one using the **Group** column.
 **Target system** - Select the target system that was created using the **Configure target system** option. This will be the secondary environment that will be used when navigating using the link.
 **Use user's current Company** - Select **Yes** if you would like to use the User's current company context when navigating to Finance. If **No** is selected, then you can select the company that should be used.
 **Target** menu item - Enter the menu item from Finance that the link should use when navigating. Menu items that you can directly navigate to are available. 
