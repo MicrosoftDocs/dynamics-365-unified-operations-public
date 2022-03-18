@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Billing schedule overview
+title: Create billing schedules
 description: This topic explains how to create, delete, and edit billing schedules.
 author: JodiChristiansen
 ms.date: 02/09/2022
