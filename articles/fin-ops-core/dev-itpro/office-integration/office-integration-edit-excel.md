@@ -405,7 +405,7 @@ If a formula is needed in a table, then add a formula column. When in the field 
 
 This issue occurs when the user selects an Excel template from an **Open in Excel** button and receives the following error: `Record for Id {guid} not found`
 
-The error occurs when a custom Excel template cannot be found. One scenario that could cause this is moving the Finance and Operations database between environments, but not copying the Excel templates.  
+The error occurs when a custom Excel template cannot be found. One scenario that could cause this error is moving the Finance and Operations database between environments, but not copying the Excel templates.  
 
 To resolve this issue, delete the database entry for the template from the **Common > Common > Office integration > Document templates** page and then reload the template. 
 
