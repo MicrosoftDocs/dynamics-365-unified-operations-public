@@ -30,14 +30,10 @@ For more information about WHS and the Warehouse management module in Supply Cha
 
 <!--KFM: A better heading is needed. What is this section, more specially, about? -->
 
-The Advanced WHS feature for Inventory Visibility focuses on on-hand quantity calculations based on on-hand queries. The feature isn't intended to allow you to use Inventory Visibility to manage warehouse processing activities in general. Specifically, the following WHS features aren't supported by Inventory Visibility:
-
-- Warehouse work
-- Loads
-- Waves
-- Transportation management <!--KFM: Are you referring to the Transportation management module? That isn't part of WHS anyway, is it? -->
-
+The Advanced WHS feature for Inventory Visibility focuses on on-hand quantity calculations based on on-hand queries. The feature isn't intended to allow you to use Inventory Visibility to manage warehouse processing activities in general.
+<!--KFM: Are you referring to the Transportation management module? That isn't part of WHS anyway, is it? -->
 <!--KFM: Can we combine the previous list with the following list? They seem similar and repetitive, especially the last point below. -->
+<!--Jiacheng: The second list contains the first one so we remove the first one -->
 
 Inventory Visibility does not expose warehouse-specific concepts to its users. Such concepts include:
 
@@ -48,7 +44,8 @@ Inventory Visibility does not expose warehouse-specific concepts to its users. S
 
 Inventory Visibility infers such information based on the data sent from Supply Chain Management. The WHS-specific data (in other words, data from the `WHSInventReserve` table) is not visible to users.
 
-When you use the Advanced WHS feature for Inventory Visibility, all query results will be identical to those from queries made directly in Supply Chain Management, but not the same as warehouse mobile apps. <!--KFM: How are they different, and why? Which mobile app do you mean? (*Warehouse Management mobile app* or the *Finance and Operations (Dynamics 365) mobile app*, or some other app? Why do we mention this?) -->
+When you use the Advanced WHS feature for Inventory Visibility, all query results will be identical to those from queries made directly in Supply Chain Management, but not the same with Warehouse Management mobile app. <!--KFM: How are they different, and why? Which mobile app do you mean? (*Warehouse Management mobile app* or the *Finance and Operations (Dynamics 365) mobile app*, or some other app? Why do we mention this?) --> 
+<!--Jiacheng: Updated the name as warehouse mobile APP. Mentioning because these two endpoints possesses different calculation logic and hence showing different values.-->
 
 ## When to use this feature
 
@@ -71,7 +68,7 @@ To enable the Advanced WHS feature for Inventory Visibility, follow these steps.
 1. Go to **Inventory Management \> Setup \> Inventory Visibility integration parameters**.
 1. Open the **Enable WHS Items** tab and set **Enable WHS Items** to *Yes*.
 1. Sign in to Power Apps.
-1. Open the **Configuration** page in Power Apps, and then, on the **Feature Management** tab, turn on the *Advanced* feature. <!--KFM: Is this really the name of the feature? Should it maybe be "AdvancedWHS"? -->
+1. Open the **Configuration** page in Power Apps, and then, on the **Feature Management** tab, turn on the *AdvancedWHS* feature. <!--KFM: Is this really the name of the feature? Should it maybe be "AdvancedWHS"? --> <!--Jiacheng: Updated>
 1. Go back to Supply Chain Management.
 1. Go to **Inventory Management \> Periodic Tasks \> Inventory Visibility integration**.
 1. On the Action Pane, select **Disable** to temporarily disable Inventory Visibility.
@@ -92,17 +89,17 @@ The rest of the physical measures are the same as when the Advanced WHS feature 
 
 For a detailed explanation of how on-hand calculations for WHS items work, see the [Reservations in Warehouse management](https://www.microsoft.com/download/details.aspx?id=43284) white paper
 
-The on-hand most specific background service <!-- KFM: What service is this? Is that the right name? We don't mention this anywhere else. --> isn't yet able to update the quantities for WHS items. The on-hand most specific results <!-- KFM: What do we mean by "on-hand most specific"? It might be the right term, but we don't use it anywhere else. --> are correct both for non-WHS items and for those quantities not affected by WHS logic (that is, measures excluding `AvailPhysical`, `AvailOrdered`, `ReservPhysical` and `ReservOrdered` in the `fno` data source).
+The data entities exported to Data Verse <!-- KFM: What service is this? Is that the right name? We don't mention this anywhere else. --> isn't yet able to update the quantities for WHS items. The quantities shown in the data entities <!-- KFM: What do we mean by "on-hand most specific"? It might be the right term, but we don't use it anywhere else. --> are correct both for non-WHS items and for those quantities not affected by WHS logic (that is, measures excluding `AvailPhysical`, `AvailOrdered`, `ReservPhysical` and `ReservOrdered` in the `fno` data source). <!-- Jiacheng: I was referring to the data entities exported to data verse, so describing them explicitly. -->
 
-Changing WHS-item quantities related to <!--KFM: is "related to" really the right word here? Do we mean "stored in"? --> Supply Chain Management is prohibited. As with other features of Inventory Visibility, changing data related to <!--KFM: is "related to" really the right word here? Do we mean "stored in"? --> Supply Chain Management isn't allowed to avoid conflicts.
+Changing WHS-item quantities stored in the data source of <!--KFM: is "related to" really the right word here? Do we mean "stored in"? --> <!--Jiacheng: updated to "stored in the data source of", representing where the data comes from in IV's perspective--> Supply Chain Management is prohibited. As with other features of Inventory Visibility, changing data stored in the data source of <!--KFM: is "related to" really the right word here? Do we mean "stored in"? --> Supply Chain Management isn't allowed to avoid conflicts.
 
 ## Soft reservations on WHS items in Inventory Visibility
 
 [Soft reservations](inventory-visibility-reservations.md) on WHS items are generally supported. You can include WHS-related physical measures in soft reservation calculations. 
 
-There is a known limitation that the *available for reservation* calculation is not currently supported for WHS items. As a result, when there is reservation above the current dimensions where a soft reservation is taking place, the *available for reservation* calculation is incorrect. Soft reservations won't be affected when the  **Check available for reservation** option is disabled. <!--KFM: Where is this option? It appears to be undocumented. What does this option do? What do we mean by "won't be affected..."? -->
+There is a known limitation that the *available for reservation* calculation is not currently supported for WHS items. As a result, when there is reservation above the current dimensions where a soft reservation is taking place, the *available for reservation* calculation is incorrect. Soft reservations won't be affected when the  **ifCheckAvailForReserv** option is disabled in the  [soft reservation API.](inventory-visibility-api.md#create-one-reservation-event). <!--KFM: Where is this option? It appears to be undocumented. What does this option do? What do we mean by "won't be affected..."? --> <!--Jiacheng: I added a link to the API that I was referring to. -->
 
-This also applies to features and customizations based on soft reservations (such as allocation). <!--KFM: What are we referring to by "this"? -->
+This constraint also applies to features and customizations based on soft reservations (such as allocation). <!--KFM: What are we referring to by "this"? --> <!--Jiacheng: This constraint -->
 
 ## Calculate available to promise quantities
 
