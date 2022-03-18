@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Extended logon
-description: This topic describes how to set up and use extended logon capability in POS application.
+title: Set up and use extended logon
+description: This topic describes how to set up and use the extended logon capability of the Microsoft Dynamics 365 Commerce point of sale (POS) application.
 author: boycez
-ms.date: 03/16/2022
+ms.date: 03/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -25,41 +25,45 @@ ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
-
 ---
 
-# Extended logon
+# Set up and use extended logon capability
 
 [!include [banner](includes/banner.md)]
 
-Cloud POS (CPOS) and Modern POS (CPOS) provide extended logon capability for retail store workers to log in POS application by scanning a barcode or swipping a card with a magnetic stripe reader (MSR). This topic describes how to set up and use this capability.
+This topic describes how to set up and use the extended logon capability of the Microsoft Dynamics 365 Commerce point of sale (POS) application.
 
-## Setting up extended logon
+Cloud POS (CPOS) and Modern POS (CPOS) provide extended logon capability for retail store workers to log into the POS application by scanning a barcode or swiping a card with a magnetic stripe reader (MSR).
 
-To set up extended logon for POS registers in a retail store, in Commerce headquarters, find the functionality profile that is associated with the retail store, in the **Functions** FastTab, set **Additional logon authentication options** appriopriately. 
+## Set up extended logon
 
-- **Staff bar code logon**. Use this option if you want your workers to log in POS by scanning barcode. 
-- **Staff bar code logon requires password**. Use this option if you want your workers to log in POS by scanning barcode, plus entering their password.
-- **Staff card logon**. Use this option if you want your workers to log in POS by swiping a card.
-- **Staff card logon requires password**. Use this option if you want your workers to log in POS by swiping a card, plus entering their password.
+To set up extended logon for POS registers in a retail store, follow these steps.
 
-The barcode or card is associated with a credential that could be assigned to a worker. Out of the box, a credential must have at least **six** characters. The first **five** characters combined is considered **credential ID**, used to lookup worker, and must be unique. The rest characters are used for security verification. For example, if you have two cards with IDs "12345DGYDEYTDW" and "12345EWUTBDAJH", they have the same credential ID "12345", therefore one of them cannot be successfully assigned to a worker if the other is already assigned.
+1. In Commerce headquarters, go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. 
+2. In the left navigation pane, select the functionality profile that is associated with the retail store.
+3. On the **Functions** FastTab under **Additional logon authentication options**, set the following options to **Yes** or **No** as appropriate. 
+    - **Staff bar code logon**. Set this option to **Yes** if you want your workers to sign in to POS by scanning a barcode. 
+    - **Staff bar code logon requires password**. Set this option to **Yes** if you want your workers to enter a password when they sign in to POS by scanning a barcode.
+    - **Staff card logon**. Set this option to **Yes** if you want your workers to sign in to POS by swiping a card.
+    - **Staff card logon requires password**. Set this option to **Yes** if you want your workers to enter a password when they sign in to POS by swiping a card.
 
-## Assigning extended logon
+The barcode or card is associated with credentials that can be assigned to a worker, and credentials must have at least six characters. The string containing the first five characters must be unique and is considered a *credential ID* that is used to look up a worker. The rest of the characters are used for security verification. For example, if you have two cards with the credentials "12345DGYDEYTDW" and "12345EWUTBDAJH", they both have the same credential ID "12345" and can't both be successfully assigned to workers.
+
+## Assign extended logon
 
 By default, only managers can assign extended logon to workers. To assign extended logon, go to **Extended log on** in POS. Then search for a worker by entering the worker's operator ID in the search field. Select the worker, and then click **Assign**. On the next page, swipe or scan the extended logon to assign to the worker. If the swipe or scan is successfully read, the **OK** button becomes available. Click **OK** to save the extended logon for that worker.
 
-## Deleting extended logon
+## Delete extended logon
 
 To delete the extended logon that is assigned to a worker, search for the worker by using the **Extended log on** operation. Select the worker, and then click **Unassign**. All extended logon credentials that are associated with that worker are removed.
 
-## Using extended logon
+## Use extended logon
 
 When extended logon is configured, and a worker has been assigned a bar code or magnetic stripe, the worker just has to swipe or scan the worker's card while the POS logon page is displayed. If a password is also required before logon can proceed, the worker is prompted to enter the worker's password.
 
-## Extending extended logon
+## Extend extended logon
 
-As described earlier, the out-of-the-box implementation of extended logon has minimal length requirement on credential (six characters minimal) and hard-coded logic on credential ID (first five characters to be unique). It was originally intended to be a sample upon which developers could customize to fit the specific needs of a particular implementation. For example, support more characters, or leverage different security verification rule. For detailed instructions about how to build extensions on extended logon, please check [Extending the Extended Logon functionality for MPOS and Cloud POS](https://cloudblogs.microsoft.com/dynamics365/no-audience/2018/12/14/extending-the-extended-logon-functionality-for-mpos-and-cloud-pos/).
+The out-of-the-box implementation of extended logon has a minimal length requirement of six characters for a credential and enforces that the first five characters (the credential ID) must be unique. It was originally intended to be a sample that developers could customize to fit the specific needs of a particular implementation, for example supporting more characters or using different security verification rules. For detailed instructions about how to build extensions for extended logons, see [Extending the Extended Logon functionality for MPOS and Cloud POS](https://cloudblogs.microsoft.com/dynamics365/no-audience/2018/12/14/extending-the-extended-logon-functionality-for-mpos-and-cloud-pos/).
 
 The logon service can also be extended to support additional extended logon devices, such as palm scanners. For more information, see the POS extensibility documentation.
 
