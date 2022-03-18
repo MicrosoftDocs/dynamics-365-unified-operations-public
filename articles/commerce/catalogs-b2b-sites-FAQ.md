@@ -5,7 +5,7 @@
 title: Commerce catalogs for B2B FAQ
 description: This topic provides answer to frequently asked questions about Microsoft Dynamics 365 Commerce catalogs.
 author: ashishmsft
-ms.date: 03/17/2022
+ms.date: 03/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -14,7 +14,6 @@ ms.author: asharchw
 ms.search.validFrom: 2022-02-28
 ---
 
-  
 # Commerce catalogs for B2B FAQ 
 
 [!include [banner](includes/banner.md)]
@@ -79,3 +78,5 @@ No, catalog source codes are supported only for call center channels.
 ## Additional resources
 
 [Create Commerce catalogs for B2B sites](catalogs-b2b-sites.md)
+
+[Extensibility impact of Commerce catalogs for B2B customizations](catalogs-b2b-sites-dev.md)
