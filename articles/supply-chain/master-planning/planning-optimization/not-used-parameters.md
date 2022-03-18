@@ -60,18 +60,6 @@ Planning Optimization doesn't use the following parameters or options on the **C
   - **Use the specified BOM or formula version** – Pending *Formula versions with Co/By product* support.
   - **Use the specified route version** – Pending *Demand with specific BOM or route requirements defined* support.
 
-- **Action** FastTab:
-
-  - **Action message** – Pending *Actions* support.
-  - **Action time fence** – Pending *Actions* support.
-  - **Postpone margin** – Pending *Actions* support.
-  - **Advance margin** – Pending *Actions* support.
-  - **Basis date** – Pending *Actions* support.
-  - **Advance** – Pending *Actions* support.
-  - **Postpone** – Pending *Actions* support.
-  - **Decrease** – Pending *Actions* support.
-  - **Increase** – Pending *Actions* support.
-  - **Derived actions** – Pending *Actions* support.
 
 - **Other** FastTab:
 
@@ -144,7 +132,6 @@ Planning Optimization doesn't use the following parameters or options on the **M
   - **Forecast plan** – Pending additional *Forecast* support.
   - **Capacity** – Pending *Scheduling* support.
   - **Continuity plan** – Pending *Continuity scheduling* support.
-  - **Action message** – Pending *Actions* support.
   - **Calculated delays** – Pending additional *Calculated delays* support.
   - **Sequencing** – Pending *Production* support.
 
