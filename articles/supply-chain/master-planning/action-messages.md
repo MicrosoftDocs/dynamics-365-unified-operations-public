@@ -64,7 +64,7 @@ Suppose you have the following situation:
 - Final good *FG* of type *production* has a BOM that includes the raw material *RM*.
 - Today's date is Jan 21.
 - A sales order for FG is created today (Jan 21).
-- Master planning creates a production order for FG for Jan 25.  <!-- KFM: To cover the sales order? -->
+- Master planning creates a production order for FG for Jan 25.  <!-- KFM: To cover the sales order? Is this really the date you mean? -->
 - Jan 21 is closed for the RM calendar, but Jan 20 and Jan 22 are open
 
 When master planning is run, it will generate advance actions that suggest the following:
@@ -73,4 +73,4 @@ When master planning is run, it will generate advance actions that suggest the f
 - A BOM line for RM for Jan 21. <!-- KFM: What does this mean? -->
 - Move the planned purchase order for RM to Jan 22 (respecting the calendar but not advancing to earlier than Jan 21).
 
-Therefore, you must apply the action on the purchase order for RM first and then run master planning, which will suggest to postpone the production order to Jan 22.
+Therefore, you must apply the action on the purchase order for RM first and then run master planning, which will suggest to postpone the production order to Jan 22. <!-- KFM: But it's already set for Jan 25? -->
