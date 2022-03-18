@@ -407,7 +407,7 @@ This issue occurs when the user selects an Excel template from an **Open in Exce
 
 The error occurs when a custom Excel template cannot be found. One scenario that could cause this error is moving the Finance and Operations database between environments, but not copying the Excel templates.  
 
-To resolve this issue, delete the database entry for the template from the **Common > Common > Office integration > Document templates** page and then reload the template. 
+To resolve this issue, delete the database entry for the template from the **Document templates** page (**Common > Common > Office integration > Document templates**) and then reload the template. 
 
 ### Refresh doesn’t automatically occur in old templates
 
