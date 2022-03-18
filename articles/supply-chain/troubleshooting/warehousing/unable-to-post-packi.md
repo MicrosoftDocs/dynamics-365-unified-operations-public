@@ -28,7 +28,7 @@ When you are trying to post a packing slip for a load, the system displays the f
 
 One or more of the related sales order lines may be stopped, which means that the system will prevent further processing of that sales order. Among other things, this means that the system won't post a packing slip for the order.
 
-For example, a user may have decided to stop one or more order lines because the customer called back and cancelled their order. However, if the outbound shipment had already been confirmed, then the shipment containing the sales order would have already physically left the warehouse, which means that stopping the sales order lines won't have any effect. Because it's no longer possible to physically stop the shipment, you may as well unstop lines so you can post the packing slip. You will then need to handle the cancelled order as a return.
+For example, a user may have decided to stop one or more order lines because the customer called back and canceled their order. However, if the outbound shipment had already been confirmed, then the shipment containing the sales order would have already physically left the warehouse, which means that stopping the sales order lines won't have any effect. Because it's no longer possible to physically stop the shipment, you may as well unstop lines so you can post the packing slip. You will then need to handle the canceled order as a return.
 
 ## Resolution
 
