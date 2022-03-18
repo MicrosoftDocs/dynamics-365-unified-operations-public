@@ -79,11 +79,11 @@ To specify time-effective and expiration dates for a catalog, select the top nod
 
 #### Add and categorize products
 
-To configure products to add to the catalog, in headquarters go to **Retail and Commerce /> Catalogs and assortments /> All catalogs**, and then on the **Catalogs** tab select **Add products**. Alternatively, you can select a node in the navigation hierarchy, which will change the screen presentation and allow you to add products directly to a category within the catalog.
+To configure products to add to the catalog, in headquarters go to **Retail and Commerce \> Catalogs and assortments \> All catalogs**, and then on the **Catalogs** tab select **Add products**. Alternatively, you can select a node in the navigation hierarchy, which will change the screen presentation and allow you to add products directly to a category within the catalog.
 
 #### Associate price groups
 
-To configure catalog-specific prices, you must link one or more price groups to the catalog. To associate price groups with a catalog, in headquarters go to **Retail and Commerce /> Catalogs and assortments /> All catalogs**, and then on the **Catalogs** tab under **Pricing** select **Price groups**. All trade agreements, price adjustment journals, and advanced discounts (threshold, quantity, mix and match) that have been linked to the same price group will be applied when customers order from this catalog.
+To configure catalog-specific prices, you must link one or more price groups to the catalog. To associate price groups with a catalog, in headquarters go to **Retail and Commerce \> Catalogs and assortments \> All catalogs**, and then on the **Catalogs** tab under **Pricing** select **Price groups**. All trade agreements, price adjustment journals, and advanced discounts (threshold, quantity, mix and match) that have been linked to the same price group will be applied when customers order from this catalog.
 
 For more information on price groups, see [Price groups](price-management.md#price-groups).
 
@@ -93,15 +93,15 @@ For more information on price groups, see [Price groups](price-management.md#pri
 
 #### Associate customer hierarchy
 
-To associate customer hierarchies, in headquarters go to **Retail and Commerce /> Catalogs and assortments /> All catalogs**, and then on the **Catalogs** tab under **Customer hierarchy** select **Assign hierarchies** to link one or more customer hierarchies to the catalog.
+To associate customer hierarchies, in headquarters go to **Retail and Commerce \> Catalogs and assortments \> All catalogs**, and then on the **Catalogs** tab under **Customer hierarchy** select **Assign hierarchies** to link one or more customer hierarchies to the catalog.
 
 #### Associate default dimension attribute group for refiners like size, style, color
 
-To associate a default dimension attribute group for refiners like size, style, color, in headquarters go to **Retail and Commerce /> Catalogs and assortments /> All catalogs**, and then on the **Catalogs** tab under **Attributes** select **Attribute groups**. 
+To associate a default dimension attribute group for refiners like size, style, color, in headquarters go to **Retail and Commerce \> Catalogs and assortments \> All catalogs**, and then on the **Catalogs** tab under **Attributes** select **Attribute groups**. 
 
 #### Set attribute metadata
 
-To configure attribute metadata, in headquarters go to **Retail and Commerce /> Catalogs and assortments /> All catalogs**, and then on the **Catalogs** tab under 
+To configure attribute metadata, in headquarters go to **Retail and Commerce \> Catalogs and assortments \> All catalogs**, and then on the **Catalogs** tab under 
 **Attributes** select **Set attribute metadata**. To choose which attributes are supposed to be viewable and refinable, select a category from the associated catalog-specific navigation hierarchy and then under **Catalog product attributes** select an attribute and then select **Show attribute on channel**. By default, all viewable attributes are also searchable. Then, to optionally make attributes refinable, select **Can be refined**. 
 
 ### Validate the catalog
