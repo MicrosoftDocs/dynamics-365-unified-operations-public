@@ -75,7 +75,7 @@ A billing schedule with the following information exists:
 When the credit adjustment is processed, all future billing periods (August to December) are removed from the **View billing detail** page. A credit adjustment line is added after the July billing period. 
 - June 16 - July 31 with credit amount 150.00
 
-Also, if unbilled revenue feature is used, the **Unbilled Revenue Journal Entry Audit** is updated with the termination entry.
+If the unbilled revenue feature is used, the **Unbilled Revenue Journal Entry Audit** will be updated with the termination entry.
 
 ## Terminate without Credit
 
@@ -85,17 +85,17 @@ To terminate a billing schedule or billing schedule line without a credit, follo
 3. Select the **Reason code** and if needed type any **Termination notes**. 
 4. Select **Terminate**. 
 
-When the termination is processed, all billing detail lines after the termination date (including the line that contains the termination date) are removed. Invoices for these lines cannot be created. If the termination is removed, all terminated lines are added back to View billing details, and become available for invoicing. 
+When the termination is processed, all billing detail lines after the termination date (including the line that contains the termination date) are removed. Invoices for these lines cannot be created. If the termination is removed, all terminated lines are added back to **View billing details** page, and become available for invoicing. 
 
 ## Fields
 
-This page contains the following fields: 
+The **View billing details page** contains the following fields: 
 
 | Field| Description|
 | :------------- |:-------------| 
 |**Termination date**|Select the date on which you want to terminate a billing schedule or billing schedule line. |
-|**Termination type**|Select the termination type: <br />- **Adjust schedule**: Cuts off the billing periods for the line at the termination date and changes the status of the line to **Last Billing**. If a deferral schedule exists for the line item, it is also adjusted by reversing the amount that no longer must be recognized. When the billing start date is after the termination date, the remaining billing periods are removed.<br />- **Bill remaining**: Adds any remaining amount for the billing period to the termination period and changes the status of the line to **Last Billing**.  If a deferral schedule exists for the line item, the deferral end date is also updated. When the billing start date is after the termination date, the total amount of all remaining billing periods is added to the billing period and the remaining billing periods are removed. <br />- **No adjustment**: Terminates the billing periods for the line at the termination date specified. No adjustments are made. When selected, **Credit option** is set to **No credit** and **Prorate daily** is set to **No**. Both options become read-only and cannot be changed. |
-|**Credit option**|When terminating a billing schedule line, select how the credit is applied: <br />* **Credit adjustment**: Creates a credit adjustment for a billing schedule when a line is terminated. The credit adjustment appears in a future billing period for the billing schedule and automatically adjusts the invoice amount for the next billing period until the credit is finished being applied to the billing schedule.  <br />- **Issue credit**: Creates a credit note when a billing schedule or billing schedule line is terminated. <br />- **No credit**: No credit adjustment or note is created upon termination of a billing schedule or billing schedule line. Available only when terminating a billing schedule using the **No adjustment** option. <br />The default option is from the **Recurring contract billing parameters** page. |
+|**Termination type**|Select the termination type: <br />- **Adjust schedule**: Cuts off the billing periods for the line at the termination date and changes the status of the line to **Last Billing**. If a deferral schedule exists for the line item, it is also adjusted by reversing the amount that no longer must be recognized. When the billing start date is after the termination date, the remaining billing periods are removed.<br />- **Bill remaining**: Adds any remaining amount for the billing period to the termination period and changes the status of the line to **Last Billing**. If a deferral schedule exists for the line item, the deferral end date is also updated. When the billing start date is after the termination date, the total amount of all remaining billing periods is added to the billing period and the remaining billing periods are removed. <br />- **No adjustment**: Terminates the billing periods for the line at the termination date specified. No adjustments are made. When selected, **Credit option** is set to **No credit** and **Prorate daily** is set to **No**. Both options become read-only and can't be changed. |
+|**Credit option**|When terminating a billing schedule line, select how the credit is applied: <br />* **Credit adjustment**: Creates a credit adjustment for a billing schedule when a line is terminated. The credit adjustment appears in a future billing period for the billing schedule. The adjustment also automatically adjusts the invoice amount for the next billing period until the credit is finished being applied to the billing schedule.  <br />- **Issue credit**: Creates a credit note when a billing schedule or billing schedule line is terminated. <br />- **No credit**: No credit adjustment or note is created upon termination of a billing schedule or billing schedule line. Available only when terminating a billing schedule using the **No adjustment** option. <br />The default option is from the **Recurring contract billing parameters** page. |
 |**Reason code**|Select the reason code for the termination. |
 |**Reason description**|Displays the reason code description. |
 |**Termination notes**|Type any notes regarding the termination. |
