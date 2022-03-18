@@ -5,7 +5,7 @@
 title: Create Commerce catalogs for B2B sites
 description: This topic describes how to create Commerce catalogs for Microsoft Dynamics 365 Commerce business-to-business (B2B) sites.
 author: ashishmsft
-ms.date: 03/17/2022
+ms.date: 03/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -79,13 +79,11 @@ To specify time-effective and expiration dates for a catalog, select the top nod
 
 #### Add and categorize products
 
-To configure products to add to the catalog, on the **Catalogs** menu tab of the **Catalog setup** page select **Add products**. Alternatively, you can select a node in the navigation hierarchy, which will change the screen presentation and allow you to add products directly to a category within the catalog.
-
-<!--NEED CATEGORIZATION STEPS-->
+To configure products to add to the catalog, in headquarters go to **Retail and Commerce /> Catalogs and assortments /> All catalogs**, and then on the **Catalogs** tab select **Add products**. Alternatively, you can select a node in the navigation hierarchy, which will change the screen presentation and allow you to add products directly to a category within the catalog.
 
 #### Associate price groups
 
-<!--NEED INTRO, STEPS-->
+To configure catalog-specific prices, you must link one or more price groups to the catalog. To associate price groups with a catalog, in headquarters go to **Retail and Commerce /> Catalogs and assortments /> All catalogs**, and then on the **Catalogs** tab under **Pricing** select **Price groups**. All trade agreements, price adjustment journals, and advanced discounts (threshold, quantity, mix and match) that have been linked to the same price group will be applied when customers order from this catalog.
 
 For more information on price groups, see [Price groups](price-management.md#price-groups).
 
@@ -95,19 +93,16 @@ For more information on price groups, see [Price groups](price-management.md#pri
 
 #### Associate customer hierarchy
 
-<!--NEED INTRO, STEPS-->
+To associate customer hierarchies, in headquarters go to **Retail and Commerce /> Catalogs and assortments /> All catalogs**, and then on the **Catalogs** tab under **Customer hierarchy** select **Assign hierarchies** to link one or more customer hierarchies to the catalog.
 
 #### Associate default dimension attribute group for refiners like size, style, color
 
-Associate default dimension attribute group for refiners like size, style, color through attribute groups from top-ribbon. 
-
-<!--NEED STEPS-->
+To associate a default dimension attribute group for refiners like size, style, color, in headquarters go to **Retail and Commerce /> Catalogs and assortments /> All catalogs**, and then on the **Catalogs** tab under **Attributes** select **Attribute groups**. 
 
 #### Set attribute metadata
 
-Choose which attributes are supposed to be viewable and refinable. By default, all viewable attributes are searchable as well.
-
-<!--NEED STEPS-->
+To configure attribute metadata, in headquarters go to **Retail and Commerce /> Catalogs and assortments /> All catalogs**, and then on the **Catalogs** tab under 
+**Attributes** select **Set attribute metadata**. To choose which attributes are supposed to be viewable and refinable, select a category from the associated catalog-specific navigation hierarchy and then under **Catalog product attributes** select an attribute and then select **Show attribute on channel**. By default, all viewable attributes are also searchable. Then, to optionally make attributes refinable, select **Can be refined**. 
 
 ### Validate the catalog
 
@@ -136,5 +131,7 @@ When the catalog is in an **Approved** status, to publish the catalog select **P
 > You can publish a catalog that contains products that have warnings, but those products won't appear in the online store.
 
 ## Additional resources
+
+[Extensibility impact of Commerce catalogs for B2B customizations](catalogs-b2b-sites-dev.md)
 
 [Commerce catalogs for B2B FAQ](catalogs-b2b-sites-FAQ.md)
