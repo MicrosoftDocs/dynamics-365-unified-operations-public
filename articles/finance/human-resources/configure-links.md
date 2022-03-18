@@ -46,14 +46,14 @@ To configure the target system:
 ## Configure links
 
 Each link that is created will have the following information defined.
-**Link** - Name of the link and is used for identification only.
-**Enable this link** - Set to **Yes** if you want to display the link to users of Human Resources.
-**Display name** - Enter the name that will appear as a link to the secondary environment. 
-**Surface link on form** - Choose which page you would like to display the link on.  Links can only be surfaced on the **Employee self service** workspace, **Job**, **Position**, **Worker**, and **Streamlined Worker** pages.
-**Group** - Groups aren't required, but if you want to organize your links using groups, select an existing group or create a new one using the **Group** column.
-**Target system** - Select the target system that was created using the **Configure target system** option. This will be the secondary environment that will be used when navigating using the link.
-**Use user's current Company** - Select **Yes** if you would like to use the User's current company context when navigating to Finance. If **No** is selected, then you can select the company that should be used.
-**Target** menu item - Enter the menu item from Finance that the link should use when navigating. Menu items that you can directly navigate to are available. 
+ - **Link** - Name of the link and is used for identification only.
+ - **Enable this link** - Set to **Yes** if you want to display the link to users of Human Resources.
+ - **Display name** - Enter the name that will appear as a link to the secondary environment. 
+ - **Surface link on form** - Choose which page you would like to display the link on.  Links can only be surfaced on the **Employee self service** workspace, **Job**, **Position**, **Worker**, and **Streamlined Worker** pages.
+ - **Group** - Groups aren't required, but if you want to organize your links using groups, select an existing group or create a new one using the **Group** column.
+ - **Target system** - Select the target system that was created using the **Configure target system** option. This will be the secondary environment that will be used when navigating using the link.
+ - **Use user's current Company** - Select **Yes** if you would like to use the User's current company context when navigating to Finance. If **No** is selected, then you can select the company that should be used.
+ - **Target** menu item - Enter the menu item from Finance that the link should use when navigating. Menu items that you can directly navigate to are available. 
 
 To find the menu item required, 
 1. Open Finance and open the page that is the target of the navigation. 
