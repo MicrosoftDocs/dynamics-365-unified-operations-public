@@ -416,7 +416,7 @@
           href: accounts-receivable/subscription-billing-summary.md
         - name: Recurring contract billing
           items:
-          - name: Create billing schedules
+          - name: Create billing schedule
             href: accounts-receivable/sb-billing-schedules.md
           - name: Copy a billing schedule
             href: accounts-receivable/sb-copy-schedules-items.md
