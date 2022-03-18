@@ -2,7 +2,7 @@
 # required metadata
 
 title: Refundable charges are not calculated based on the quantity returned
-description: This topic provides troubleshooting guidance that can help when cashiers are shown incorrect refundable charges in point of sale (POS) based on the quantity of items returned.
+description: This topic provides troubleshooting guidance that can help when cashiers see incorrect refundable charges in point of sale (POS) based on the quantity of items returned.
 author: gvrmohanreddy
 ms.date: 03/18/2022
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.validFrom: 2017-06-20
 
 [!include [banner](../../includes/banner.md)]
 
-This topic provides troubleshooting guidance that can help when cashiers are shown incorrect refundable charges in point of sale (POS) based on the quantity of items returned.
+This topic provides troubleshooting guidance that can help when cashiers see incorrect refundable charges in point of sale (POS) based on the quantity of items returned.
 
 ## Description
 
