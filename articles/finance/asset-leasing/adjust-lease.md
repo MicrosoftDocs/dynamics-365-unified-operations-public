@@ -4,7 +4,7 @@
 title: Adjust leases
 description: The topic explains how to adjust a lease. Adjustment might be required if the lease terms are modified, the lease is extended, or other circumstances change.
 author: moaamer
-ms.date: 03/09/2022
+ms.date: 03/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -142,11 +142,17 @@ If a lease has been adjusted, you can view the different versions of it. You can
 
 ## Adjust lease book
 
-If you want to adjust a lease book only, you can go to "Lease book" form and select "Adjust book". In case of using "Adjust book" function you will need to make sure to follow this sequence after starting the book adjustment process, remove the payment schedule lines first, then change "Lease modification date", and consider removing all additional asset/liability considerations if any (initial direct cost, lease incentive, lease prepayment, dismantling cost and residual value guarantee). Then enter the modification date, add payment schedule lines represent the new payment dates that match modification date. This is important steps to avoid inaccurate calcuulation for the lease adjustment. 
+Complete the following steps to adjust a lease book only.
+
+1. Go to **Asset leasing** > **Leases** > **Lease summary**.
+2. Select and open a lease and on the **Lease details** page, select **Books**.
+3. On the **Books details** page, on the Action Pane, in the **Maintain** group, select **Adjust book**. 
+4. Remove the payment schedule lines.
+5. In the **Lease modification date**, enter the modification date and then consider removing all additional asset/liability considerations if any (initial direct cost, lease incentive, lease prepayment, dismantling cost and residual value guarantee). 
+6. Add new payment schedule lines for the new payment dates that match modification date to avoid inaccurate calculation for the lease adjustment. 
 
  > [!NOTE] 
- > Adjustment wizard is the recommended was to adjust lease as it reduce manual steps, preview balances after adjustment and give you ability to change amounts before
- > posting.
+ > We recommend that you use the Adjustment wizard to adjust a lease as the wizard reduces the amount of manual steps, provides a preview of balances after adjustment, and provides ability to change amounts before posting.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
