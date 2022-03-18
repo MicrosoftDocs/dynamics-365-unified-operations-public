@@ -52,7 +52,7 @@ Once Consumer price index schedules are setup, they can be used for **Escalation
 
 ---
 
-# Consumer price index calculation
+## Consumer price index calculation
 
 In this example, the period is January 01, 2020, to December 31, 2022. On January 01, 2021, the current Consumer price index is 110.5, and the base Consumer price index rate is 105.65 (the Consumer price index value at the time the contract starts).
 
