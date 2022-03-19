@@ -16,7 +16,6 @@ ms.search.validFrom: 2018-04-30
 # Improvements to statement posting functionality
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic describes the first set of improvements that have been made to the statement posting feature. These improvements are available in Microsoft Dynamics 365 for Finance and Operations 7.3.2.
 
