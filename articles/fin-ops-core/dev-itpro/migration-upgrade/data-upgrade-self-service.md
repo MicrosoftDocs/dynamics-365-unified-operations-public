@@ -32,7 +32,9 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
 2. Create a self-service environment in LCS. The environment should be in a **Deployed** state. It must be a Microsoft-managed environment. Cloud-hosted, development environments can be used only for the [Upgrade from AX 2012 - Data upgrade in development environments](data-upgrade-2012.md) procedure.
 
 > [!NOTE]
-> The AX 2012 upgrade process should be run on the sandbox environment, not the production environment.
+> 1. The AX2012 upgrade process should be run on the sandbox environment, not the production environment.
+> 2. Make sure you download the latest version of the **AX 2012 Database Upgrade Toolkit for Dynamics 365** from LCS portal.
+> 3. Do not use/deploy **linked Power Platform environment** for AX2012 data upgrade. this can be linked after the dataupgrade is completed.
 
 4. Download and install the [.NET Framework version 4.7.1](https://dotnet.microsoft.com/download/dotnet-framework/net471) if it isn't already installed.
 5. Make sure that the replication feature is installed and enabled for the source SQL Server instance. To determine whether replication is enabled, run the following SQL script.
@@ -286,6 +288,7 @@ You can use the following options to review the reports of the replication valid
 - **Clear:** Clear the environment setup activity. All information is cleared from the cache, such as the **project-Id** value, **Environment-Id** value, and source database details.
 - **Help:** Show the data upgrade migration options with the updated status.
 - **Exit:** Close the application.
+- **Set-failed:** If you want to delete the environment and if the environment is any one of these state (PreparingForReplication, ReadyForReplication, Replicating & Replicated), use this option to Set Environment State to Failed and then environment can be deleted from the LCS portal.
 
 ## Troubleshooting
 
