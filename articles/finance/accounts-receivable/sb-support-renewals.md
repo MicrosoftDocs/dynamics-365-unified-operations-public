@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.24
 # Support and renewals 
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+
 
 This topic explains how to enter detailed information about the support or renewal item when entering sales orders. This information is used to calculate the charge amount for the original support contract and/or the renewal amount for creating a billing schedule in Subscription billing. For example, your company sells a copier to a customer and you offer to provide a support contract for the first year of service with the option to renew that support contract yearly. The support item is the support contract for the first year and the Renewal item is the renewal every year after that. You can enter the support or renewal contract information, or both. When you enter the support contract information, only the support item is added to the sales order. When you enter the renewal contract information, the renewal item is used to create a billing schedule.
 
