@@ -340,7 +340,7 @@ In the Receipt format designer, add the following custom fields to the appropria
     - **NF 525 Certificate** – This field prints the category and number of the certificate of compliance that an authorized body issued per the NF 525 certification requirements.
 
         > [!NOTE]
-        > By default, the certificate category and number that are assigned to [Finance](#certification-information) are printed. If you're implementing Commerce, you must override the certificate category and number.
+        > By default, the certificate category and number that are assigned to **[Finance](#certification-information)** are printed. If you're implementing **Commerce**, you must either override the custom field to print the certificate category and number for **Commerce**, or add a static text to print the certificate category and number for **Commerce** instead of the custom field. The static text should contain the identification of the certification and the certificate category and number concatenated in one word, for example: *(NF525) B0203*.
 
     - **Text** – Add a text field, and specify the version of the software that was certified per the NF 525 certification requirements and that is used to produce receipts (for example, **Microsoft Dynamics 365 Finance v.10** or **Microsoft Dynamics 365 Commerce v.10**).
 
