@@ -209,6 +209,31 @@ The information that is included on X and Z reports is based on French requireme
 
 The totals are also stored in the closed shift record and transferred to Commerce headquarters.
 
+It is possible to export a Z report from a closed shift in Commerce headquarters. An exported Z report is an XML file that includes the totals for the closed shift. Specifically, the file includes the following data:
+
+| Element/Node                     | Comment |
+|----------------------------------|---------|
+| RegisterNumber                   | The identification of the register that the shift was opened on. |
+| Date                             | The date of the shift. |
+| TotalCashSales                   | The total amount of sales, including tax, for the shift. |
+| TotalCashReturns                 | The absolute value of the total amount of returns, including tax, for the shift. |
+| GrandTotal                       | The total amount of sales, including tax, minus the absolute value of the total amount of returns, including tax, for the shift. |
+| PerpetualGrandTotal              | The cumulative perpetual grand total for the shift. In other words, the cumulative perpetual grand total for the previous shift of the same register, plus the total amount of sales, including tax, for the shift, minus the absolute value of the total amount of returns, including tax, for the shift. |
+| PerpetualGrandTotalAbsoluteValue | The cumulative perpetual grand total for the shift. In other words, the cumulative perpetual grand total for the previous shift of the same register, plus the total amount of sales, including tax, for the shift, plus the absolute value of the total amount of returns, including tax, for the shift. |
+| ShiftLines                       | A collection of grand total amounts per tax rate. |
+| ShiftLine                        | A node for the grand total amount for a tax rate. |
+| TotalInclTax                     | The grand total amount for the shift for the tax rate. |
+| TaxRate                          | The tax rate. |
+| TaxAmount                        | The grand total amount of tax for the tax rate. |
+| SequentialNumber                 | The sequential number of the signed shift for the register. |
+| DataToSign                       | The string that was [built from the elements of the shift record](./emea-fra-cash-registers.md#digital-signing-of-closed-shifts) and used for signing. |
+| DataToSignFormatVersion          | The internal version of the format of data that was used for signing. |
+| Signature                        | The digital signature of the shift record. |
+| HashAlgorithm                    | The hash algorithm that was used to hash the data before signing. |
+| CertificateThumbprint            | The thumbprint of the certificate that was used for signing. |
+
+The exported Z report file is digitally signed, and the signature is contained in a separate file.
+
 ### Period grand total journal
 
 Period grand total journals summarize sales totals per store and fiscal period (for example, per month). In addition, an annual journal summarizes sales totals per store and fiscal year.
@@ -250,6 +275,12 @@ To use the France-specific functionality, you must complete these tasks:
 - Set the **ISO code** field to **FR** (France) in the POS functionality profile of every store that is located in France.
 
 You must also specify the following settings for France. Note that you must run appropriate distribution jobs after you complete the setup.
+
+### Enable features for France
+
+You must enable the following features in the **Feature management** workspace:
+
+- (France) Enable exporting Z-Report to file
 
 ### Set up the legal entity
 
@@ -438,15 +469,19 @@ Finally, on the **Commerce parameters** page (**Retail and Commerce \> Headquart
 > [!NOTE]
 > The following hash functions aren't acceptable: CRC16, CRC32, SHA-1, and MD5. Commerce supports only the SHA256, SHA384, and SHA512 hash functions. If you want to use a different hash function, you must implement a customization.
 
-### Configure the archive export format
+### Configure the Z report and archive export formats
 
-You can download the ER configuration for the archive from Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Import electronic reporting configurations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md). You must download the following versions, or later versions, of the configurations:
+You can download the ER configurations for the Z report and archive from Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Import electronic reporting configurations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md). You must download the following versions, or later versions, of the configurations:
 
 - **Retail channel data.version.2** data model
 - **Archiving DMM.version.2.3** data model mapping
 - **Retail data archive FR .version.2.5** format
+- **Retail Z-Report (FR)** format
 
-After you import the configurations, in the **Retail data archive export format** field on the **Electronic documents** tab of the **Commerce parameters** page, select the **Retail data archive FR .version.2.5** format or the format that you downloaded earlier.
+After you import the configurations, select ER formats for the Z report and archive in the **Retail data archive export format** field on the **Electronic documents** tab of the **Commerce parameters** page, select the format or the format that you downloaded earlier.
+
+- **Z-Report export format**: select the **Retail Z-Report (FR)** format or the format that you downloaded earlier.
+- **Retail data archive export format**: select the **Retail data archive FR .version.2.5** format or the format that you downloaded earlier.
 
 ### Reinitialize Commerce components
 
