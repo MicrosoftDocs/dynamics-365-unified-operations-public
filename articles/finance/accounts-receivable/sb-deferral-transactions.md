@@ -26,16 +26,15 @@ ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
 
 ---
-# Transaction deferrals in Revenue and expense deferrals
+# Transaction deferrals in revenue and expense deferrals
 
 This topic describes the transactions that allow for revenue and expense deferrals. Deferral schedules are always based on and are dependent on an underlying originating document or billing schedule. Deferral schedules are created based on defaults and can't be entered or created separately.
 
-## Sales Order Transaction Deferral
+## Sales order transaction deferral
 
 Modules > Accounts receivable > Orders > All sales orders > [edit sales order] > [click a sales order line] > [click Deferrals]
 
 Modules > Accounts receivable > Orders > All sales orders > [edit sales order] > [click a sales order line] > [click Create credit note]
-
 
 Use this page to enter or edit the deferral parameters for a sales order line. 
 
@@ -47,12 +46,12 @@ Use this page to enter or edit the deferral parameters for a sales order line.
 Edit deferral options for a line: 
 1. Create a sales order transaction. 
 1. If needed, you can edit the settings for the deferral item. Select the line and click **Deferrals**. 
-1. On the **Transaction Deferral** page, you can review all the deferral options. The **Deferred** option needs to be **Yes**, and edit any other boxes as needed. 
+1. On the **Transaction deferral** page, you can review all the deferral options. The **Deferred** option needs to be **Yes**, and edit any other boxes as needed. 
 1. To view a preview of the deferral schedule, click **Preview**. 
 1. If you made any changes to the transaction deferral, select **OK**, and return to the transaction page. 
 1. Commit and post the transaction. 
 
-After the transaction is posted, open the deferral **All deferral schedules** page to view the deferral schedule. 
+After the transaction is posted, open the **All deferral schedules** page to view the deferral schedule. 
 
 ### Create Credit Note
 
@@ -66,11 +65,47 @@ To create a credit note, follow these steps:
 1. Select **OK**.
 1. Finish posting the sales order transaction.
 
+## Purchase order and Purchasing invoice
 
+If you want to use the deferral functionality for a purchase order, you must generate the invoice, and then use the **Pending vendor invoices** to edit or add deferral items. You cannot edit or add deferrals directly on a purchase order.
 
+Modules > Accounts payable > Invoices > Pending vendor invoices > [click Edit]
+
+Use this page to enter a vendor invoice. When you enter a line, the deferral is automatically set for the item or procurement category selected based on the deferral setup on the **Deferral defaults** pages. The deferrals can be edited or added at the distribution level. On the purchasing line select Financials and then Distribute amounts. Select Deferrals for each distribution amount. When the invoice is posted, a deferral schedule is created for each distribution that has a deferral set.
+
+### Tax
+
+In some cases, the tax amount can be fully or partially non-recoverable. When the tax amount of a deferrable line contains a non-recoverable amount, the non-recoverable tax amount is included in the deferrable schedule amount when the invoice is posted.
+
+### Variance
+
+If a difference between the vendor invoice line amount and the purchase order line amount exists, variance distributions are created. If the line is deferred, the ledger account for these distributions is set to the deferral account and the amounts are included in the deferrable schedule amount when the invoice is posted. These distributions are **Price variance** and **Cost variance**.
+
+## General journal and Invoice journal
+
+Modules > General ledger > Journal entries > General journals > [click Lines] > [click Deferrals]
+
+Modules > Accounts payable > Invoices > Invoice journal > [click Lines] > [click Deferrals]
+
+Use this page to enter the deferral parameters for a journal voucher line. You can also see a preview of the deferral schedule for straight line deferrals. When you enter a line, the deferral is automatically set based on the deferral accounts setup on the **Deferral Defaults** page. You can manually change the deferral options for each line. When the journal voucher is posted, the deferral schedule is created. 
+
+### Post and transfer
+
+When you post the journal voucher, use the **Post and transfer** menu item. The deferral options will follow the line to which it applies. For vouchers that do not have errors, a deferral schedule is created if it is deferred. For vouchers that have errors and are transferred, any deferral options are also transferred with it. 
+
+### Tax
+
+In some cases, the tax amount can be fully or partially non-recoverable. When the tax amount of a deferrable line contains a non-recoverable amount, the non-recoverable tax amount is included in the deferrable schedule amount when the invoice is posted.
+
+## Free Text Invoice Transaction Deferral
+
+Modules > Accounts receivable > Invoices > All free text invoices > [edit free text invoice] > [click Distribute amounts] > [click Deferrals]
+
+Use this page to enter the deferral parameters for a free text invoice line distribution.  When a distribution is entered, the deferral is automatically set based on the deferral settings on the **Deferral defaults** page. 
+ 
 ## Fields
 
-This page contains the following fields: 
+The Transaction deferral page displays these fields, depending on the transaction. 
 
 | Field| Description|
 | :------- |:------| 
