@@ -48,8 +48,8 @@ The **Revenue and expense deferral parameters** page contains the following fiel
 |**Sales discount deferral option**|Select if separate deferral schedules are created for the discount and the sales order amounts: <br /> **Separate schedule for discount**: Discount amount is kept separate from revenue amount. <br />When a sales order is created and then posted, two deferral schedules are created. The discount and revenue amounts will be posted to different deferral accounts. <br />**Merge discount with revenue**: Discount amount is combined with revenue amount. One deferral schedule is created and both the discount and revenue amounts are posted to the same deferral account. <br />When a sales order is created and then posted, one deferral schedule is created. Both the discount and revenue amounts are posted to the same deferral account. <br />**Note:** To apply discounts to items that use the unbilled revenue feature, select the **Separate schedule for discount** option. This will allow discounts to be applied to all items, regardless if the unbilled revenue feature is used or not. If the **Merge discount with revenue** option is selected, discounts can't be applied to items that use the unbilled revenue feature. |
 |**Purchasing discount deferral option**|Select whether separate deferral schedules are created for the discount and the purchase order amounts: <br /> **Separate schedule for discount**: Discount amount is kept separate from the expense amount. <br />When a purchase order is created and then posted, two deferral schedules are created. The discount and expense amounts are posted to different deferral accounts. <br /> **Merge discount with revenue**: Discount amount is combined with expense amount. One deferral schedule is created and both the discount and expense amounts are posted to the same deferral account. <br />When a purchase order is created and then posted, one deferral schedule is created. Both the discount and expense amounts are posted to the same deferral account. |
 |**Consolidate prior periods**|Select whether to consolidate deferral schedule lines for prior periods. <br />**Yes**: If the deferral start date is in a period before the transaction date. All amounts up to and including the period of the transaction date are combined into a single deferral schedule line. <br />**No**: The amounts from all periods will be in separate deferral schedule lines. <br />If the deferral start date is in the same or later period as the transaction date, this option has no effect. <br />This setting can be updated at the transaction level. |
-|**Default deferral start date**|Select which rule that will be used to determine the start date for the deferral schedule: <br /> **Transaction date**: Use the transaction date as the start date.<br /> **Beginning of current month**: Use the first of the current month as the start date. If the transaction date is the first of any month, then the first of the current month is the start date. <br />**Beginning of next month**: Use the first of the next month as the start date. If the transaction date is on the first, the transaction date is used, otherwise the first of the following month is used. <br />**Rule of 15**: If the transaction date is between the first and the 15<sup>th</sup>, use the first of the current month as the start date. If the transaction date is the 16<sup>th</sup>or later, uses the first of the next month as the start date. <br />You can update this setting at the transaction level. |
-|**Short-term deferral method**|Select the short-term deferral method: **None**, **Rolling periods**, or **Fixed year**. <br />For information om how these settings work, see **Short-Term deferral calculation**. |
+|**Default deferral start date**|Select which rule that will be used to determine the start date for the deferral schedule: <br /> **Transaction date**: Use the transaction date as the start date.<br /> **Beginning of current month**: Use the first of the current month as the start date. If the transaction date is the first of any month, then the first of the current month is the start date. <br />**Beginning of next month**: Use the first of the next month as the start date. If the transaction date is on the first, the transaction date is used, otherwise the first of the following month is used. <br />**Rule of 15**: If the transaction date is between the first and the 15<sup>th</sup>, use the first of the current month as the start date. If the transaction date is the 16<sup>th</sup>or later, use the first of the next month as the start date. <br />You can update this setting at the transaction level. |
+|**Short-term deferral method**|Select the short-term deferral method: **None**, **Rolling periods**, or **Fixed year**. <br />For information on how these settings work, see **Short-Term deferral calculation**. |
 |**Deferral posting method**|Select the method used to create deferral transactions: <br />**Balance sheet**: Use the balance sheet posting method to create deferral transactions. <br />**Profit and loss**: Use the profit and loss posting method to create deferral transactions. When transactions are posted, you can review the invoice voucher to see the extra entries for balancing the initial recognition and recognition offset amounts. |
 |**Reverse profit and loss on credit**|Available when the **Deferral posting method** is **Profit and Loss**. <br />Select whether the profit and loss amounts are reversed when a reversal, termination, or refund is applied to a billing schedule or sales order. <br />**Yes**: Reverses the profit and loss amounts and applies a credit adjustment amount to the deferral schedule. <br />If the reversal occurs halfway through a billing period, the amounts are prorated. <br />**No**: No reversal transaction for the profit and loss is created when a reversal, termination, or refund is applied to a billing schedule or sales order. |
 |**Recognition**|
@@ -112,7 +112,7 @@ To specify the deferral default values for sales orders, follow these steps:
    b. Select the **Item code**, which determines how the deferral default values are applied. 
       * If the **Item code** is **Table** or **Group**, select the **Item relation**. 
       * If the **Item code** is **Category**, select the **Category relation**. 
-      * If the **Item code** is **All**, the default value applies to all applicable records. 
+      * If the **Item code** is **All**, the default values apply to all applicable records. 
    c. Select how the **Account code** is applied. 
       * If the **Account code** is **Table** or **Group**, select **Account relation**. 
       * If the **Item code** is **All**, the account will apply to all records. 
@@ -124,7 +124,7 @@ To specify the deferral default values for sales orders, follow these steps:
    b. Select the **Item code**, which determines how the deferral default values are applied. 
       * If the **Item code** is **Table** or **Group**, select the **Item relation**. 
       * If the **Item code** is **Category**, select the **Category relation**. 
-      * If the **Item code** is **All**, the default values applies to all applicable records.
+      * If the **Item code** is **All**, the default values apply to all applicable records.
    c. Select how the **Account code** is applied. 
       * If the **Account code** is **Table** or **Group**, select the **Account relation**. 
       * If the **Item code** is **All**, the account applies to all applicable records.
@@ -140,7 +140,7 @@ To specify the deferral default values for purchase orders, follow these steps:
    b. Select the **Item code**. 
       * If the **Item code** is **Table** or **Group**, select the **Item relation**. 
       * If the **Item code** is **Category**, select the **Category relation**. 
-      * If the **Item code** is **All**, the default values applies to all applicable records. 
+      * If the **Item code** is **All**, the default values apply to all applicable records. 
    c. Select how the **Account code** is applied. 
       * If the **Account code** is **Table** or **Group**, select the **Account relation**. 
       * If the **Item code** is **All**, the account applies to all applicable records.
@@ -152,7 +152,7 @@ To specify the deferral default values for purchase orders, follow these steps:
    b. Select the **Item code**. 
       * If the **Item code** is **Table** or **Group**, select the **Item relation**. 
       * If the **Item code** is **Category**, select the **Category relation**. 
-      * If the **Item code** is **All**, the default values applies to all applicable records. 
+      * If the **Item code** is **All**, the default values apply to all applicable records. 
    c. Select how the **Account code** is applied. 
       * If the **Account code** is **Table** or **Group**, select the **Account relation**. 
       * If the **Item code** is **All**, the account applies to all applicable records.
