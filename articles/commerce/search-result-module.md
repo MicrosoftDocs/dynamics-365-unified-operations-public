@@ -4,7 +4,7 @@
 title: Search results module
 description: This topic covers search results modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 10/15/2021
+ms.date: 03/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Release 10.0.8
 # Search results module
 
 [!include [banner](includes/banner.md)]
-
+[!include [banner](includes/preview-banner.md)]
 
 This topic covers search results modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
@@ -97,21 +97,21 @@ Customers generally expect the e-commerce website to be inventory-aware througho
 - Show out-of-stock products at the end of the product list.
 - Filter products in search results by inventory level.
 
-To enable these experiences, you must firstly enable the **Enhanced e-Commerce product discovery to be inventory-aware** feature in the **Feature management** workspace.
+To enable these experiences, you must first enable the **Enhanced e-Commerce product discovery to be inventory-aware** feature in the **Feature management** workspace.
 
 > [!NOTE]
 > The **Enhanced e-Commerce product discovery to be inventory-aware** feature is available in Commerce version 10.0.20 release and later.
 
-The inventory-aware product search is leveraging product attributes to source inventory availability information. Therefore, dedicated product attributes need to be created, populated with inventory data, and added to the online channel as prerequisite. 
+The inventory-aware product search uses product attributes to source inventory availability information. As a prerequisite for the feature to work, dedicated product attributes must be created, populated with inventory data, and added to the online channel. 
 
 To create dedicated product attributes to support inventory-aware search results module, follow these steps.
 
 1. Go to **Retail and Commerce \> Retail and Commerce IT \> Products and inventory**.
 1. Select and open **Populate product attributes with inventory level**.
-1. In the prompted dialog, enter needed information:
+1. In the dialog box, enter the following information:
     1. In the **Product attribute and type name** field, specify a name for the dedicated product attribute that will be created to capture inventory data.
-    1. In the **Inventory availability based on** field, select the quantity type that the inventory level calculation should be based on (for example, Available physical). 
-1. Run the job in the background. Given the products’ inventory constantly changes in omnichannel environment, we strongly recommend that you schedule this job as a batch process.
+    1. In the **Inventory availability based on** field, select the quantity type that the inventory level calculation should be based on (for example, **Available physical**). 
+1. Run the job in the background. Since product inventory constantly changes in an omnichannel environment, it is strongly recommended that you schedule this job as a batch process.
 
 > [!NOTE]
 > For consistent inventory level calculation across pages and modules on your e-commerce website, be sure to select the same quantity type for both the **Inventory availability based on** setting in Commerce headquarters and the **Inventory level based on** setting in Commerce site builder. For more information about inventory settings in site builder, see [Apply inventory settings](inventory-settings.md).
@@ -120,9 +120,9 @@ To configure the product attributes for an online channel, follow these steps.
 
 - Go to **Retail and Commerce \> Channel setup \> Channel categories and product attributes**.
 - Select an online channel that you want to enable inventory-aware search results module.
-- Select and open an associated attribute group, add the newly created product attribute to it.
-- For Commerce version before 10.0.27 release, select **Set attribute metadata**, then select the newly added product attribute, and turn on the **Show attribute on channel**, **Retrievable**, **Can be refined**, and **Can be queried** options.
-- Go to **Retail and Commerce \> Retail and Commerce IT > Distribution schedule**, and run **1150 (Catalog)** job. If you schedule the **Populate product attributes with inventory level** job as batch process, it’s recommended to also schedule 1150 job as batch run with the same frequency.
+- Select and open an associated attribute group, and then add the newly created product attribute to it.
+- For Commerce versions prior to the 10.0.27 release, select **Set attribute metadata**, select the newly added product attribute, and then turn on the **Show attribute on channel**, **Retrievable**, **Can be refined**, and **Can be queried** options.
+- Go to **Retail and Commerce \> Retail and Commerce IT > Distribution schedule** and run the **1150 (Catalog)** job. If you schedule the **Populate product attributes with inventory level** job as a batch process, it is recommended to also schedule 1150 job as a batch run with the same frequency.
 
 > [!NOTE]
 > For products that are shown in the search results module, the inventory level is displayed at the master product level instead of the individual variant level. It has only two possible values: "available" and "out of stock". The actual label for the value is retrieved from the [inventory level profile](inventory-buffers-levels.md) definition. A master product is considered out of stock only when all its variants are out of stock.
