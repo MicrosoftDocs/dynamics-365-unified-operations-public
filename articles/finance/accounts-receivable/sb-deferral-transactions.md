@@ -99,7 +99,7 @@ Use the **Deferrals** page to enter the deferral parameters for a free text invo
 
 The **Transaction deferral** page contains the following fields: 
 
-| Field| Description|
+|Field| Description|
 | :------- |:------| 
 |**Deferred**|Select if the line is a deferral: <br />**Yes**: The line is a deferral. <br />**No**: The line is not a deferral. <br />When set to **Yes**, the **Adjust existing schedule** option isn't available. For items and charges already set up as deferred, this option is set to **Yes**. For items and charges that aren't set as deferred by default, change the option to **Yes**. |
 |**Adjust existing schedule**|Select if the line is an adjustment to an existing deferral schedule: <br />**Yes**: The new sales line is an adjustment to an existing deferral schedule. When selected, you can then select the **Adjust schedule**. <br />**No**: The new sales line isn't an adjustment to an existing deferral schedule. <br />When set to **Yes**, the **Deferred** option isn't available. |
