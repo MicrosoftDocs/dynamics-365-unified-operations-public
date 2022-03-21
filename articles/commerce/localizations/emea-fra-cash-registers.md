@@ -67,6 +67,7 @@ The following POS localization features that are available to customers in all c
     - Ending offline mode
     - Applying a manager override
     - Voiding a transaction 
+    - Voiding a transaction line
     - Cleanup of transactions from the channel database
     - Applying a major update of the software with compliance impact
 
