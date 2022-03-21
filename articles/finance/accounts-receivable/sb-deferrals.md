@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Revenue and expense deferrals
+title: This topic describes how to setup Revenue and expense deferrals in Subscription billing.
 description: This topic 
 author: JodiChristiansen
 ms.date: 11/04/2021
@@ -253,23 +253,23 @@ Use this page to define event-based deferral templates for use in deferral trans
 ### Create Event-Based Template
 
 Create an event-based deferral template:
-  1. Select **New**. 
-  2. Specify a unique **Template** name and **Description**. 
-  3. Select the **Allocation type**. 
-     a. **Variable amount** allocates a specific amount for each line entered.
-     b. **Equal amount** allocates the same amount for each line entered. 
-     c. **Percentage allocates** an amount based on the percentage value entered for each line.
-     d. **Percentage of completion** allocates a cumulative completion value for each line entered.
-     e. **Variable quantity** allocates a specific quantity for each line entered.
-  4. Select whether to **Create separate events per unit**. Select **Yes** if you want each event line to be split evenly by the number of units on the invoice transaction. Select **No** to not split the event lines.
-  5. Select the **Expiration account**.
-  6. To add a line, select **Add** to add the line to the top of the lines, or select **Append** to add a line to the bottom of the lines. For each line, do the following: 
-    a. Specify a **Description** for the event. 
-    b. If **Allocation type** is **Percentage**, specify the **Allocation percentage**. The percentage must be between zero (0) and 100. An empty percentage is considered zero. The sum of all percentages must equal 100 as shown in the **Total percentage** field at the bottom.
-    c. Specify the **Months to expiration**. The expiration date on the transaction deferral is automatically entered based on this value.
-    d. Select the **Recognize when posted** checkbox to automatically recognize revenue when the transaction is posted. If not checked the revenue must be manually recognized.
-    e. Select the **Recognition account** for the event (if the account is different from the entire deferral schedule). This is used with the Recognize when posted above.
-    f. Select **Save**.
+1. Select **New**. 
+2. Specify a unique **Template** name and **Description**. 
+3. Select the **Allocation type**. 
+   a. **Variable amount** allocates a specific amount for each line entered.
+   b. **Equal amount** allocates the same amount for each line entered. 
+   c. **Percentage allocates** an amount based on the percentage value entered for each line.
+   d. **Percentage of completion** allocates a cumulative completion value for each line entered.
+   e. **Variable quantity** allocates a specific quantity for each line entered.
+4. Select whether to **Create separate events per unit**. Select **Yes** if you want each event line to be split evenly by the number of units on the invoice transaction. Select **No** to not split the event lines.
+5. Select the **Expiration account**.
+6. To add a line, select **Add** to add the line to the top of the lines, or select **Append** to add a line to the bottom of the lines. For each line, do the following:
+   a.Specify a **Description** for the event.
+   b.If **Allocation type** is **Percentage**, specify the **Allocation percentage**. The percentage must be between zero (0) and 100. An empty percentage is considered zero. The sum of all percentages must equal 100 as shown in the **Total percentage** field at the bottom.
+   c.Specify the **Months to expiration**. The expiration date on the transaction deferral is automatically entered based on this value.
+   d.Select the **Recognize when posted** checkbox to automatically recognize revenue when the transaction is posted. If not checked the revenue must be manually recognized.
+   e.Select the **Recognition account** for the event (if the account is different from the entire deferral schedule). This is used with the Recognize when posted above.
+   f.Select **Save**.
 
   
 
