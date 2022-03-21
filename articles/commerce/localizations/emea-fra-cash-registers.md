@@ -475,13 +475,13 @@ You can download the ER configurations for the Z report and archive from Microso
 
 - **Retail channel data.version.2** data model
 - **Archiving DMM.version.2.3** data model mapping
-- **Retail data archive FR .version.2.5** format
-- **Retail Z-Report (FR)** format
+- **Retail Z-Report (FR).version.24.23.2** format
+- **Retail data archive (FR).version.2.5** format
 
-After you import the configurations, select ER formats for the Z report and archive in the **Retail data archive export format** field on the **Electronic documents** tab of the **Commerce parameters** page, select the format or the format that you downloaded earlier.
+After you import the configurations, select ER formats for the Z report and archive in the following fields on the **Electronic documents** tab of the **Commerce parameters** page:
 
-- **Z-Report export format**: select the **Retail Z-Report (FR)** format or the format that you downloaded earlier.
-- **Retail data archive export format**: select the **Retail data archive FR .version.2.5** format or the format that you downloaded earlier.
+- **Z-Report export format**: select the **Retail Z-Report (FR).version.24.23.2** format or the format that you downloaded earlier.
+- **Retail data archive export format**: select the **Retail data archive (FR).version.2.5** format or the format that you downloaded earlier.
 
 ### Reinitialize Commerce components
 
