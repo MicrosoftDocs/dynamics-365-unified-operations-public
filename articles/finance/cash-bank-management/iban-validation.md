@@ -3,7 +3,7 @@
 
 title: Manage International Bank Account Number (IBAN) account validation
 description: This topic explains how to manage International Bank Account Number (IBAN) account validation.
-author: roschlom
+author: twheeloc
 ms.date: 08/24/2018
 ms.topic: article
 ms.prod: 
@@ -14,12 +14,12 @@ ms.technology:
 # ms.search.form:  
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global 
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
 
@@ -31,13 +31,13 @@ ms.dyn365.ops.version: 8.0.4
 
 International Bank Account Number (IBAN) validation increases the amount of validation that is done when you add an IBAN to a bank account.
 
-Information about the structure of the IBAN is stored in Microsoft Dynamics 365 Finance. That information is automatically loaded when you first use the IBAN on bank accounts. It contains the length of the IBAN, the starting positions of the bank account number and the routing number, and the length of the bank account number and routing number.
+Information about the structure of the IBAN is stored in Microsoft Dynamics 365 Finance and is automatically loaded when you first use the IBAN on bank accounts. It contains the length of the IBAN, the starting positions of the bank account number and the routing number, and the length of the bank account number and routing number.
 
 ## Set up IBAN structures
 
 1. Go to **Cash and bank management \> Setup \> IBAN structures**.
 2. Notice that the IBAN structures for each country or region have been set up automatically.
-3. If you want to customize the structures for a specific country or region, you can edit them.
+3. Select the **Edit** button if the structure needs to be updated for a specific country or region.
 4. The structure definitions will be a part of each new release. You can use the **Reset structures** menu to load the latest definitions after each update.
 
 ## Validate the IBAN structure in a bank account

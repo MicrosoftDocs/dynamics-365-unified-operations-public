@@ -4,7 +4,7 @@
 title: JPK-V7M reporting
 description: This topic explains how to run a VAT declaration with registers (also known as a JPK-V7M, VDEK) in Poland. 
 author: liza-golub
-ms.date: 10/26/2021
+ms.date: 03/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -57,7 +57,7 @@ The following table shows an example of sales tax reporting codes and their mapp
 | K_18             | The value of output VAT for the supply of goods or services in Poland at a 7-percent or 8-percent VAT rate, including correction that is based on article 89a, sections 1 and 4 of the VAT Act. | 10403, 10406 |
 | K_19             | The taxable amount of the supply of goods or services in Poland at a 22-percent or 23-percent VAT rate, including correction that is based on article 89a, sections 1 and 4 of the VAT Act. | 10301, 10304 |
 | K_20             | The value of output VAT for the supply of goods or services in Poland at a 22-percent or 23-percent VAT rate, including correction that is based on article 89a, sections 1 and 4 of the VAT Act. | 10303, 10306 |
-| K_21             | The taxable amount of the intra-community supply of goods that is mentioned in article 13, sections 1 and 3 of the VAT Act. | 10807 |
+| K_21             | The taxable amount of the intra-community supply of goods that is mentioned in article 13, sections 1 and 3 of the VAT Act. | 10801 |
 | K_22             | The taxable amount of the export of goods. | 10901, 10905 |
 | K_23             | The taxable amount of the intra-community acquisition of goods. | 10810, 10811 (Reverse change) |
 | K_24             | The value of output VAT for the intra-community acquisition of goods. | 10812 |
