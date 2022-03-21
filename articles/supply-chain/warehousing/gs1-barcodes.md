@@ -35,16 +35,16 @@ GS1 General Specifications specify which symbologies can be used for GS1 bar cod
 
 The symbologies (bar code formats) that are used by GS1 bar codes are:
 
-* Linear or 1D bar codes: GS1-128 and GS1 DataBar
-* 2D bar codes: GS1 DataMatrix, GS1 QR Code and GS1 Dotcode
+- Linear or 1D bar codes: GS1-128 and GS1 DataBar
+- 2D bar codes: GS1 DataMatrix, GS1 QR Code and GS1 Dotcode
 
 Notice that there are special mentions of GS1 in GS1-128, which is a special case of the ordinary Code-128 linear bar code, GS1 DataMatrix and GS1 QR Code. The difference between the GS1 version and the non-GS1 version is the presence of a special character (FNC1) as the first character in the bar code data. The presence of this FNC1 character is an indication that the data in the bar code should be formatted using GS1 specification.
 
 The data in the bar code itself is composed of multiple data elements, all of them identified by an Application Identifier (AI) at the start of the field. Usually, the data is also represented under the bar code in a human readable format with the AI shown in parenthesis, for example: (01) 09521101530001 (17) 210119 (10) AB-123. This bar code contains three elements:
 
-* AI 01 - the GS1 Global Trade Item Number (GTIN) of the item
-* AI 17 - expiration date
-* AI 10 - the batch number
+- AI 01 - the GS1 Global Trade Item Number (GTIN) of the item
+- AI 17 - expiration date
+- AI 10 - the batch number
 
 Elements might have a predefined length or non-predefined (variable) length of data. There is a fixed list of Application Identifiers that have predefined lengths, with the reset of them having variable length, with the maximum length and format of data specified by GS1 AI list. For example, AI 01 has a predefined length of 16 characters (2 for the AI and 14 for the GTIN), AI 17 has a predefined length of 8 characters (again, 2 for the AI and 6 for the date), while AI 10 has a format of 2 numbers for the AI and up to 20 alphanumeric characters.
 
@@ -60,12 +60,12 @@ Some data elements contain decimal numbers, for example AIs 3100, 3101 ... 3105 
 
 An example of a string "123456" with different AIs:
 
-* **3100**123456 -> 123456 (integer number)
-* **3101**123456 -> 12345.6
-* **3102**123456 -> 1234.56
-* **3103**123456 -> 123.456
-* **3104**123456 -> 12.3456
-* **3105**123456 -> 1.23456
+- **3100**123456 -> 123456 (integer number)
+- **3101**123456 -> 12345.6
+- **3102**123456 -> 1234.56
+- **3103**123456 -> 123.456
+- **3104**123456 -> 12.3456
+- **3105**123456 -> 1.23456
 
 ## How GS1 bar code scanning works with the Warehouse Mobile Application and Supply Chain Management
 
@@ -75,18 +75,18 @@ In order to scan GS1 bar codes, the warehouse worker uses a scanner built into o
 
 In order for Supply Chain Management to properly recognize and decode GS1 bar codes, the hardware scanner or supporting software should be configured to:
 
-* add a prefix to the scanned bar codes that can be used by the system to recognize a GS1 bar code, and
-* to convert the non-printable ASCII GS character (ASCII code 29 or hexadecimal 1D) to a printable character (for example, a tilde ~)
+- add a prefix to the scanned bar codes that can be used by the system to recognize a GS1 bar code, and
+- to convert the non-printable ASCII GS character (ASCII code 29 or hexadecimal 1D) to a printable character (for example, a tilde ~)
 
 While you can choose to add any prefix to the scanned bar code, one option is to add an ISO/IEC 15424 symbology identifier, also known as AIM identifier. This is a three character identifier which starts with `]`, then one character identifying the symbology used and a number as a further modifier. For example, the AIM identifier `]C1` specifies a Code 128 bar code (because of the character `C`), with the modifier `1` specifying that there is a FNC1 character in the first position of the data. On the other hand, `]C0` is a Code 128 bar code with any other character as the first character of the data.
 
 The five symbology identifiers that correspond to GS1 bar codes with AI elements are:
 
-* `]C1` - Code 128 (`C`) with FNC1 in first position (`1`), also known as GS1-128
-* `]e0` - GS1 DataBar
-* `]d2` - DataMatrix (`d`) with ECC 200 and FNC1 in first position (`2`), also known as GS1 DataMatrix
-* `]Q3` - QR Code (`Q`) Model 2 symbol with FNC1 in first position (`3`), also known as GS1 QR Code
-* `]J1` - GS1 DotCode
+- `]C1` - Code 128 (`C`) with FNC1 in first position (`1`), also known as GS1-128
+- `]e0` - GS1 DataBar
+- `]d2` - DataMatrix (`d`) with ECC 200 and FNC1 in first position (`2`), also known as GS1 DataMatrix
+- `]Q3` - QR Code (`Q`) Model 2 symbol with FNC1 in first position (`3`), also known as GS1 QR Code
+- `]J1` - GS1 DotCode
 
 If you choose to use these identifiers. then, in order to be compatible with non-GS1 bar codes, the scanners or scanning software should be configured to remove any identifiers that do not correspond to the GS1 identifiers. For example, scanning a "normal" Code 39 bar code would result in a prefix `]A0` being added. Since the system will not understand this prefix as one of the GS1 prefixes, it will interpret it as a data with unexpected results.
 
@@ -107,18 +107,18 @@ After the data has been parsed from the bar code, it will be fed into the mobile
 
 Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
 
-* **Module:** *Warehouse management*
-* **Feature name:** *Scan GS1 bar codes*
+- **Module:** *Warehouse management*
+- **Feature name:** *Scan GS1 bar codes*
 
 ## Turn on the Enhanced GS1 Parser feature
 
 In addition to the *Scan GS1 bar codes*, administrators can turn on the feature *Enhanced GS1 Parser*. This feature enables the use of an improved implementation of the GS1 bar code parser, which has the following improvements:
 
-* Follows the GS1 General Specification algorithm for symbol data parsing and validates that the data in the symbol is valid as per GS1 General Specifications.
-* Does not require the setup of "maximum length of AI" and uses longest prefix matching from configured AIs.
-* Easier configuration of decimal AIs by using "n" in the configuration to match any number, for example using configuration AI 310n instead of separate 3101, 3102, 3103... AIs.
-* Solves the issue of incorrectly encoded data to be interpreted as field data.
-* Comes as a separate class that can be reused in other contexts and enables the use of an extensibility point to manipulate scanned data before filling the flow fields.
+- Follows the GS1 General Specification algorithm for symbol data parsing and validates that the data in the symbol is valid as per GS1 General Specifications.
+- Does not require the setup of "maximum length of AI" and uses longest prefix matching from configured AIs.
+- Easier configuration of decimal AIs by using "n" in the configuration to match any number, for example using configuration AI 310n instead of separate 3101, 3102, 3103... AIs.
+- Solves the issue of incorrectly encoded data to be interpreted as field data.
+- Comes as a separate class that can be reused in other contexts and enables the use of an extensibility point to manipulate scanned data before filling the flow fields.
 
 ## Set up global GS1 options
 
@@ -129,9 +129,9 @@ To set up global GS1 options, follow these steps.
 1. Go to **Warehouse management \> Setup \> Warehouse management parameters**.
 1. On the **Bar codes** FastTab, set the following fields:
 
-    * **FNC1 Character**, **Datamatrix character**, **QR code character** - Specify characters that should be interpreted as a prefix for a GS1 bar code.
-    * **Group separator** – Specify the character that replaces the ASCII Group Separator character.
-    * **Maximum length of identifier** – Specify the maximum number of characters that is permitted for the application identifier. Not needed if **Enhanced GS1 Parser** feature is enabled.
+    - **FNC1 Character**, **Datamatrix character**, **QR code character** - Specify characters that should be interpreted as a prefix for a GS1 bar code.
+    - **Group separator** – Specify the character that replaces the ASCII Group Separator character.
+    - **Maximum length of identifier** – Specify the maximum number of characters that is permitted for the application identifier. Not needed if **Enhanced GS1 Parser** feature is enabled.
 
 > [!NOTE]
 > Prefixes tell the system that a bar code is encoded according to the GS1 standard. Up to three prefixes (**FNC1 Character**, **Datamatrix character**, and **QR code character**) can be used simultaneously and for various purposes.
@@ -167,17 +167,17 @@ To set up and customize your GS1 own application identifiers, follow these steps
 1. Go to **Warehouse management \> Setup \> GS1 \> GS1 application identifiers**.
 1. Follow one of these steps:
 
-    * To create a new identifier: On the Action Pane, select **New**.
-    * To edit an existing identifier: Select the identifier, and then, on the Action Pane, select **Edit**.
+    - To create a new identifier: On the Action Pane, select **New**.
+    - To edit an existing identifier: Select the identifier, and then, on the Action Pane, select **Edit**.
 
 1. Set the following fields for the new or selected identifier:
 
-    * **Application identifier** – Enter the identification code for the application identifier. Typically, this code is a two-digit integer, but it can be longer. For decimal values, the last digit indicates the number of decimal places. For more information, see the description of the **Decimal** checkbox later in this list. If the **Enhanced GS1 Parser** feature is enabled, then you can create a single application identifier for all decimal place variants by putting the letter *n* as the last character in the application identifier.
-    * **Description** – Enter a short description of the identifier.
-    * **Fixed length** – Select this checkbox if values that are scanned by using this application identifier have a fixed number of characters. Clear this checkbox if the length of values is variable. In this case, you must indicate the end of the value by using the group separator character that you specified on the **Warehouse management parameters** page.
-    * **Length** – Enter the maximum number of characters that can appear in the values that are scanned by using this application identifier. If the **Fixed length** checkbox is selected, exactly this number of characters is expected.
-    * **Type** – Select the type of value that is scanned by using this application identifier (*Numeric*, *Alphanumeric*, or *Date*). Refer also to [Dates and decimal numbers](#dates-and-decimal-numbers) for more information on how dates and numbers are represented in bar code data.
-    * **Decimal** – Select this checkbox if the value includes an implied decimal point. If this box is selected, the system will use the last digit of the application identifier to determine the number of decimal places. Refer also to [Dates and decimal numbers](#dates-and-decimal-numbers) for more information on how dates and numbers are represented in bar code data.
+    - **Application identifier** – Enter the identification code for the application identifier. Typically, this code is a two-digit integer, but it can be longer. For decimal values, the last digit indicates the number of decimal places. For more information, see the description of the **Decimal** checkbox later in this list. If the **Enhanced GS1 Parser** feature is enabled, then you can create a single application identifier for all decimal place variants by putting the letter *n* as the last character in the application identifier.
+    - **Description** – Enter a short description of the identifier.
+    - **Fixed length** – Select this checkbox if values that are scanned by using this application identifier have a fixed number of characters. Clear this checkbox if the length of values is variable. In this case, you must indicate the end of the value by using the group separator character that you specified on the **Warehouse management parameters** page.
+    - **Length** – Enter the maximum number of characters that can appear in the values that are scanned by using this application identifier. If the **Fixed length** checkbox is selected, exactly this number of characters is expected.
+    - **Type** – Select the type of value that is scanned by using this application identifier (*Numeric*, *Alphanumeric*, or *Date*). Refer also to [Dates and decimal numbers](#dates-and-decimal-numbers) for more information on how dates and numbers are represented in bar code data.
+    - **Decimal** – Select this checkbox if the value includes an implied decimal point. If this box is selected, the system will use the last digit of the application identifier to determine the number of decimal places. Refer also to [Dates and decimal numbers](#dates-and-decimal-numbers) for more information on how dates and numbers are represented in bar code data.
 
 > [!WARNING]
 > While the system will allow setting the **Fixed length** checkbox for any application identifier, it should only be used for the subset of application identifiers that have a predefined length as per GS1 General Specifications. The enhanced GS1 parser already contains the list of all application identifiers with predefined lengths.
@@ -209,13 +209,12 @@ To customize the generic GS1 setup, follow these steps.
 1. Go to **Warehouse management \> Setup \> GS1 \> GS1 generic setup**.
 1. Follow one of these steps:
 
-    * To create a new mapping: On the Action Pane, select **New**.
-    * To edit an existing mapping: Select the mapping, and then, on the Action Pane, select **Edit**.
+    - To create a new mapping: On the Action Pane, select **New**.
+    - To edit an existing mapping: Select the mapping, and then, on the Action Pane, select **Edit**.
 
-1. Set the following fields for the new or selected mapping:
-
-    * **Field** – Select or enter the mobile app input field that the incoming value should be assigned to. The value isn't the display name that workers see. Instead, it's the key name that is assigned to the field in the underlying code. The default setup provides a collection of fields that are likely to be useful, and includes intuitive key names for each field and matching programmed functionality. However, you might have to talk to your development partners to find the correct selections for your implementation.
-    * **Application identifier** – Select the applicable application identifier, as defined on the **GS1 application identifiers** page. The identifier establishes how the bar code will be interpreted and stored as a value for the named field. After you select an application identifier, the **Description** field shows the description of it.
+1. Set the following fields for the new or selected mapping:-
+    - **Field** – Select or enter the mobile app input field that the incoming value should be assigned to. The value isn't the display name that workers see. Instead, it's the key name that is assigned to the field in the underlying code. The default setup provides a collection of fields that are likely to be useful, and includes intuitive key names for each field and matching programmed functionality. However, you might have to talk to your development partners to find the correct selections for your implementation-
+    - **Application identifier** – Select the applicable application identifier, as defined on the **GS1 application identifiers** page. The identifier establishes how the bar code will be interpreted and stored as a value for the named field. After you select an application identifier, the **Description** field shows the description of it.
 
 ## Set up GS1 policies that you can assign to mobile device menu items
 
@@ -245,19 +244,19 @@ To set up and customize your GS1 policies, follow these steps.
 1. Go to **Warehouse management \> Setup \> GS1 \> GS1 policy**.
 1. Follow one of these steps:
 
-    * To create a new policy: On the Action Pane, select **New**.
-    * To edit an existing policy: Select the policy in the list pane.
+    - To create a new policy: On the Action Pane, select **New**.
+    - To edit an existing policy: Select the policy in the list pane.
 
 1. On the header of the new or selected policy, set the following fields:
 
-    * **Policy name** – Enter a name for the policy.
-    * **Description** – Enter a short description of the policy.
+    - **Policy name** – Enter a name for the policy.
+    - **Description** – Enter a short description of the policy.
 
 1. On the FastTab below the header, map field names to application identifiers as required for the current policy. Use the buttons on the toolbar to add or remove rows as you require. For each row, set the following fields:
 
-    * **Field** – Select or enter the mobile app input field that the incoming value should be assigned to. The value isn't the display name that workers see. Instead, it's the key name that is assigned to the field in the underlying code. The default setup provides a collection of fields that are likely to be useful, and includes intuitive key names for each field and matching programmed functionality. However, you might have to talk to your development partners to find the correct selections for your implementation.
-    * **Application identifier** – Select the applicable application identifier, as defined on the **GS1 application identifiers** page. The identifier establishes how the bar code will be interpreted and stored as a value for the named field. After you select an application identifier, the **Description** field shows the description of it.
-    * **Sorting** – Each multi-value bar code includes a series of application identifiers, each of which is followed by a value. The applicable GS1 policy identifies which application identifier is mapped to each database field. However, if a bar code uses the same application identifier more than once, the system uses the order in which application identifiers appear in the code to map them to fields. For rows that share an application identifier with one or more other rows, use this field to establish the order that the matching rows are processed in. The row that has the lowest sorting value will be processed first.
+    - **Field** – Select or enter the mobile app input field that the incoming value should be assigned to. The value isn't the display name that workers see. Instead, it's the key name that is assigned to the field in the underlying code. The default setup provides a collection of fields that are likely to be useful, and includes intuitive key names for each field and matching programmed functionality. However, you might have to talk to your development partners to find the correct selections for your implementation.
+    - **Application identifier** – Select the applicable application identifier, as defined on the **GS1 application identifiers** page. The identifier establishes how the bar code will be interpreted and stored as a value for the named field. After you select an application identifier, the **Description** field shows the description of it.
+    - **Sorting** – Each multi-value bar code includes a series of application identifiers, each of which is followed by a value. The applicable GS1 policy identifies which application identifier is mapped to each database field. However, if a bar code uses the same application identifier more than once, the system uses the order in which application identifiers appear in the code to map them to fields. For rows that share an application identifier with one or more other rows, use this field to establish the order that the matching rows are processed in. The row that has the lowest sorting value will be processed first.
 
 > [!NOTE]
 > For bar codes that include more than one identical application identifier, you *must* use the **Sorting** field to establish the order of the fields.
@@ -274,12 +273,12 @@ By default, all mobile device menu items provide input fields where workers can 
 
 This example applies to a system where the GS1 options are set up in the following way:
 
-* On the **Warehouse management parameters** page, the following global settings are established:
+- On the **Warehouse management parameters** page, the following global settings are established:
 
-  * **FNC1 character:** *\]C1*
-  * **Group separator:** *\~*
+  - **FNC1 character:** *\]C1*
+  - **Group separator:** *\~*
 
-* On the **GS1 application identifiers** page, the following application identifiers are relevant to this example.
+- On the **GS1 application identifiers** page, the following application identifiers are relevant to this example.
 
     | Application identifier | Description | Fixed length | Length | Type | Decimal |
     |---|---|---|---|---|---|
@@ -288,13 +287,13 @@ This example applies to a system where the GS1 options are set up in the followi
     | 17 | Expiry date | Selected | 6 | Date | Cleared |
     | 30 | Receiving quantity | Cleared | 8 | Numeric | Cleared |
 
-* On the **GS1 generic setup** page, the following settings for the generic GS1 policy are relevant to this example.
+- On the **GS1 generic setup** page, the following settings for the generic GS1 policy are relevant to this example.
 
     | Field | Application identifier | Description |
     |---|---|---|
     | ItemId | 01 | GTIN |
 
-* On the **GS1 policy** page, there is policy where the **Policy name** field is set to *Purchase receiving*. This policy includes the following lines.
+- On the **GS1 policy** page, there is policy where the **Policy name** field is set to *Purchase receiving*. This policy includes the following lines.
 
     | Field | Application identifier | Description | Sorting |
     |---|---|---|---|
@@ -302,7 +301,7 @@ This example applies to a system where the GS1 options are set up in the followi
     | InventBatchId | 10 | Batch number | 0 |
     | Qty | 30 | Receiving quantity | 0 |
 
-* On the **Mobile device menu items** page, there is a menu item that is named *Purchase receiving*. Its **GS1 policy** field is set to *Purchase receiving*.
+- On the **Mobile device menu items** page, there is a menu item that is named *Purchase receiving*. Its **GS1 policy** field is set to *Purchase receiving*.
 
 After goods for a purchase order arrive at the warehouse, the worker follows these steps.
 
