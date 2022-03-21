@@ -123,7 +123,7 @@ The new feature introduces the following key changes:
 7. Review the assessable value for each BOE line.
 
    > [NOTE]
-   > You can still edit charges on teh BOE lines.
+   > You can still edit charges on the BOE lines.
 
 8. Save your changes, and then post the BOE.
 
