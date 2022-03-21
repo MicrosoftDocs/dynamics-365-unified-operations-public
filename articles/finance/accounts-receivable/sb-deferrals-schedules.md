@@ -44,11 +44,11 @@ Deferral schedules are created after a transaction has been posted.
 1. Go to the **All deferral schedules** page, in the **Schedule lines** grid, select the lines you want to recognize, and click **Recognize**. 
 2. On the **Recognition processing** page, set **Recognition action** to **Create recognition journal** and select the **Cutoff date**. The **Cutoff date** is the date until which to include lines. Only the lines that have an end date earlier or the same as the **Cutoff date** are included in the processing. 
 3. Click **Filter** and add data filters so that the correct range of records are displayed in the list. Select **View preview** to see the lines. 
-4. From the lines list, select the lines that you do not want to process, and click **Remove**.
+4. From the lines list, select the lines that you don't want to process, and click **Remove**.
 5. Select if you want to summarize the recognition journal entry.  
 6. In the **Transaction date** section, select to override the transaction date with a specific date to process the transaction. The transaction date can be specified for closed periods.  
 7. To process as part of a batch, click **Batch**, which opens the **Batch processing** page. Complete the parameters for the batch and click **OK** to return back to the **Recognition processing** page. The revenue recognition is processed at a later time when the batch is processed. 
-8. Select **Process**. If you did not add this transaction to a batch, all lines are processed immediately.  
+8. Select **Process**. If you didn't add this transaction to a batch, all lines are processed immediately.  
 
 ## Modify schedule
 
@@ -74,7 +74,7 @@ If a template is used then the skipped periods are ignored, and the template is 
 
 For an event based deferral schedule, all unrecognized lines can be modified. 
 
-If recognized or externally posted lines exist, the template and allocation type for the deferral schedule cannot be modified. When modifying an existing deferral schedule, you can't change the value for **Create separate events per unit**. 
+If recognized or externally posted lines exist, the template and allocation type for the deferral schedule can't be modified. When modifying an existing deferral schedule, you can't change the value for **Create separate events per unit**. 
 
 If a line is recognized or externally posted, the **Recognized** check box is selected.
 
@@ -135,13 +135,13 @@ To cancel an entire deferral schedule, follow these steps:
 1. On the **All deferral schedules** page in the **Lines** grid, select the lines you want to unrecognize, and click **Reverse**. 
 2. On the **Recognition processing** page, set **Recognition action** to **Reverse recognition journal** and select the **Cutoff date**. The **Cutoff date** is the date until which to include lines. Only the lines that have an end date earlier or the same as the **Cutoff date** are included in the processing. 
 3. Click **Filter** and add data filters so that only the range of records that you want appears in the list. Select **View preview** to see the lines.
-4. From the lines list, select the lines that you do not want to process, and click **Remove**.
+4. From the lines list, select the lines that you don't want to process, and click **Remove**.
 5. The journal **Name** and **Description** are automatically updated with the default values. If needed change the values. You can select whether to summarize the recognition journal entry. 
 6. For the **Transaction date** section, select whether to override the transaction date with a specific date to process the transaction and specify the transaction date for closed periods. 
 7. To  process as part of a batch, click **Batch** to open the **Batch processing** page.   
 Complete the parameters for the batch and click **OK** to return back to the **Recognition processing** page.   
 The reverse revenue recognition is processed at a later time when the batch is processed.
-8. Select **OK**.  If you did not add this transaction to a batch, all lines are processed immediately. Otherwise, the lines are processed when the batch is processed. 
+8. Select **OK**.  If you didn't add this transaction to a batch, all lines are processed immediately. Otherwise, the lines are processed when the batch is processed. 
 
 
 ## Apply or Unapply a Credit Note
