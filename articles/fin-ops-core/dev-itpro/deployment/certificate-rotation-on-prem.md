@@ -70,7 +70,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
     > Self-signed certificates should never be used in production environments. If you're using publicly trusted certificates, manually update the values of those certificates in the ConfigTemplate.xml file.
 
     ```powershell
-    # Export Pfx files into a directory VMs\<VMName>, all the certs will be written to infrastructure\Certs folder
+    # Exports .pfx files into a directory VMs\<VMName>. All the certs will be written to the infrastructure\Certs folder.
     .\Export-PfxFiles.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
@@ -79,7 +79,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
     1. Export the scripts that must be run on each VM.
     
         ```powershell
-        # Export the script files to be executed on each VM into a directory VMs\<VMName>
+        # Exports the script files to be executed on each VM into a directory VMs\<VMName>.
         .\Export-Scripts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
         ```
 
@@ -98,8 +98,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
         # If remoting, only execute
         # .\Complete-PreReqs-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml 
 
-        .\Import-PfxFiles.ps1
-        .\Set-CertificateAcls.ps1
+        .\Complete-PreReqs.ps1
         ```       
 	
     4. Run the following script to validate the VM setup.

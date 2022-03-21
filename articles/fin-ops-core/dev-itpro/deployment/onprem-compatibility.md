@@ -83,7 +83,7 @@ Your Service Fabric cluster should always be on a supported version according to
 
 | Minimum version            | Required since |
 |----------------------------|----------------|
-| Service Fabric runtime 8.0 | 10.0.26        |
+| Service Fabric runtime 8.0 | 10.0.24        |
 | Service Fabric runtime 7.2 | 10.0.17        |
 | Service Fabric runtime 7.1 | 10.0.14        |
 
