@@ -46,11 +46,11 @@ You can use one of the following pricing methods to calculate the unit price of 
 
 When the flat pricing method is used, the unit price for a billing schedule line item on the **All billing schedules** page can be edited to any value you want. The **Price unit** is always 1 and as a result, the **Unit price** and the **Net amount** for an item are the same. 
 
-### Standard price  (no trade agreement)
+### Standard price  (without a trade agreement)
 
 When the standard pricing method (without a trade agreement) is used, the unit price for a billing schedule line item is set up on the **Release product details** page > **Product information management**. The unit price is in the **Base sales price** section and is calculated as: **Price** / **Price quantity**.
 
-### Standard Price (with Trade Agreement)
+### Standard Price (with a trade agreement)
 
 Below is an example of the standard pricing calculations when a trade agreement exists. You can create trade agreements from the **Release product details** page.
 
@@ -62,10 +62,10 @@ An item has the following price brackets:
 |100|200 |Each|1.25|1|
 |200|999999|Each|1.00|1|
 
-Using the price brackets, assume the invoice quantity is 250. With the standard pricing method, the unit price is calculated below: 
+For the example, assume the invoice quantity is 250. With the standard pricing method, the unit price is calculated below: 
 
 Quantity 250 is in the price quantity range 200 - 99999, so the unit price is 1.00
-Net amount = (Quantity * Price) / Price unit = (250 * 1.00) / 100 = 2.50 
+Net amount = (Quantity x Price) / Price unit = (250 x 1.00) / 100 = 2.50 
 
 An example for an invoice quantity of 100. With the standard pricing method, the unit price is calculated as: 
 Unit price = 1.50, which uses the price level that has the quantity of 100 
@@ -75,7 +75,7 @@ Unit price = 1.50, which uses the price level that has the quantity of 100
 
 Net amount = (100 x 1.50) / 1 = 150
 
-### Tier Price 
+### Tier price 
 
 An item has the following price brackets: 
 
@@ -94,7 +94,7 @@ The prices of the items based on the pricing brackets: 
 - Use the net amount and quantity to obtain the unit price. 
 - Unit price = 32.50 / 250 = .13
 
-### Flat Tier Price 
+### Flat tier price 
 
 The price brackets are: 
 
@@ -112,9 +112,7 @@ The invoices below show the unit prices with the different quantities purchased.
 |3|50|2.00 / 50 = 0.04|100 / 50 = 2.00|
 |4|60|0.75 / 60 = 0.0125 = 0.01|150 / 200 = 0.75|
 
-<table class="drcr"><col><col><col><col><thead><tr class="heading"><td>Invoice</td><td>Quantity Purchased</td><td>Unit Price</td><th>Net Amount</th></tr></thead><tbody><tr><td>1</td><td>25</td><td>2 / 25 = 0.08</td><td>100 / 50 = 2</td></tr><tr><td>2</td><td>20</td><td>2 / 20 = 0.1</td><td>100 / 50 = 2</td></tr><tr><td>3</td><td>50</td><td>2 / 50 = 0.04</td><td>100 / 50 = 2</td></tr><tr><td>4</td><td>60</td><td>0.75 / 60 = 0.0125 = 0.01</td><td>150 / 200 = 0.75</td></tr></tbody></table><div>
-
-## Escalation and discount
+### Escalation and discount
  
 An escalation is a price increase for a future billing period where the invoice hasn't yet been created.
 A discount is a price reduction for a future billing period where the invoice hasn't yet been created.
@@ -144,18 +142,18 @@ To apply an escalation or discount to a billing schedule:
 
 ### Fields
 
-This page contains the following fields: 
+The **Billing schedule lines** page contains the following fields: 
 
 |Field|Description|
 |:-----|:-----|
 |**Item number**|Item number for the billing schedule line. Available when this page is opened for a billing schedule line item. |
 |**Consumer price index calculation**|Select to determine the method used for the Consumer price index escalation calculation:<br />* **Prior consumer price index**: Uses the previous Consumer price index value for the escalation calculation.<br />* **Base consumer price index**: Uses the base Consumer price index value for the escalation calculation.|
 **Line Grid**|
-|**Discount**|Select whether the change in the amount is an escalation or discount:<br />* **Selected**: The change is to apply a discount to the billing schedule or billing schedule line. <br />* **Cleared**: The change is to apply an escalation to a billing schedule or a schedule line. <br />This field can't be edited for items that use the unbilled revenue feature. Also, discounts can't be applied to items that use revenue splitting. |
+|**Discount**|Select whether the change in the amount is an escalation or discount:<br /> **Selected**: The change is to apply a discount to the billing schedule or billing schedule line. <br /> **Cleared**: The change is to apply an escalation to a billing schedule or a schedule line. <br />This field can't be edited for items that use the unbilled revenue feature. Also, discounts can't be applied to items that use revenue splitting. |
 |**Start date**|Select the start date for the escalation or discount. |
 |**Frequency**|Select the frequency of the escalation or discount: **None**, **Monthly**, **Quarterly**, **Semiannually**, or **Annually**. |
-|**Percentage**|Type the percentage for the escalation or discount. |
-|**Amount**|Type the escalation or discount amount.|
+|**Percentage**|The percentage for the escalation or discount. |
+|**Amount**|The escalation or discount amount.|
 |**Consumer price index schedule**|Select the Consumer price index schedule that is used for the calculations. |
 |**End date**|Select the end date for the escalation or discount. <br />This is required for items that use the unbilled revenue feature. |
 |**Deferral schedule number**|The deferral schedule number. <br />Available only when this page is opened from the billing schedule line. |
@@ -168,7 +166,7 @@ This page contains the following fields:
   
 ## Proration examples
 
-Calculations for proration, which can be based on the number of days or number of months. The method used for the proration calculation is set on the **Recurring contract billing parameters** page. The proration method affects how the amounts are calculated for a billing schedule in the following situations: 
+Calculations for proration can be based on the number of days or number of months. The method used for the proration calculation is set on the **Recurring contract billing parameters** page. The proration method affects how the amounts are calculated for a billing schedule in the following situations: 
 - Initial creation
 - Application of an escalation or discount
 - Termination
@@ -176,7 +174,6 @@ Calculations for proration, which can be based on the number of days or number o
 - Addition of support or renewal 
 
 The proration method also affects the calculations in the monthly recurring revenue (MRR) report. 
-</div><div>
 
 ### Example 1 proration
 
@@ -209,7 +206,7 @@ The annual amount of a billing schedule is $12,000. The start date is August 1, 
 
 A billing schedule has only one line: 
 - Billed monthly for 12 months from January to December. 
-- Invoices have been created for all periods up to April (for example, the **Billed** check box is marked on the **View billing detail** page). 
+- Invoices have been created for all periods up to April. 
 
 You want to reverse the invoice for the April billing period. 
 
@@ -223,15 +220,15 @@ Because an invoice for the April billing period has been created, the **Billed**
 Optionally, you can select the option to post the invoice as well. 
 
 When you review the line for the billing schedule, the new line has a link to the credit note.   
-Also, the original line still has a link to the original April invoice. 
+The original line will still have a link to the original April invoice. 
 
 > [!Note] 
-> If the sales invoice had not been created for the April billing period, you could simply delete the sales order. The **Billed** status would be cleared. If an invoice has already been created, a credit note must be created. 
+> If the sales invoice had not been created for the April billing period, you could delete the sales order. The **Billed** status would be cleared. If an invoice has already been created, a credit note must be created. 
 
  
 ## Split item group examples
 
-The setup is as follows: 
+For this example: 
 - On the **Recurring Contract Billing Parameters** page, **Split by item group** is selected and **Unique schedule type** is **Customer**. 
 - These item groups have been created: PREFIX, DATAHUB, and SPP. 
 - Customer US-001 has multiple billing schedules where the item group is PREFIX or DATAHUB. 
