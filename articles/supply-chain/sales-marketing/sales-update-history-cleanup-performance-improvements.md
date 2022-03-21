@@ -1,5 +1,5 @@
 ---
-title: Clean up sales history data
+title: Schedule sales history data cleanup
 description: This topic describes how to improve your system performance by scheduling the Sales update history cleanup periodic task to run at a regular interval
 author: myvakalo
 ms.date: 03/21/2022
@@ -13,7 +13,7 @@ ms.search.validFrom: 2021-09-29
 ms.dyn365.ops.version: 10.0.19
 ---
 
-# Clean up sales history data
+# Schedule sales history data cleanup
 
 [!include [banner](../includes/banner.md)]
 
