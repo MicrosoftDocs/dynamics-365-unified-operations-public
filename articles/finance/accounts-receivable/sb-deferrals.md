@@ -33,7 +33,9 @@ This topic describes how to setup and use revenue and expense deferrals. Deferra
 
 Revenue and expense deferrals can be used as a stand-alone module or it can be used along with Recurring contract billing.
 
-## Revenue and expense parameters
+## Revenue and expense deferral parameters
+
+Modules > Subscription billing > Revenue and expense deferrals > Setup > Revenue and expense deferral parameters
 
 |Field| Description|
 | :------- |:-------| 
@@ -54,3 +56,128 @@ Revenue and expense deferrals can be used as a stand-alone module or it can be u
 |**Number sequences**|Use this tab to set the default values for lease number sequences. Number sequences are automatically generated and assigned using the number sequence generation wizard. You do not need to change the number sequence unless you want to make manual changes on top of the generated number sequences.|
 |**Schedule number**|Displays the number sequence used for deferral schedules. |
 
+  ## Deferral templates
+
+  ## Deferral defaults
+
+Modules > Subscription billing > Revenue and expense deferrals > Setup > Deferral defaults
+
+Use this page to set up default deferral accounts for items and assign default templates to deferrable items. You can also set up deferral accounts for charges and assign templates to the deferrable charges.
+
+**Defer by Item**
+
+For transactions with an item (for example, sales orders), you can assign accounts and templates to specific items and customers. These settings become the default values used when a transaction is deferred. To make the transaction deferrable by default, the items must also be set in the **Deferrable Items** page.
+
+**Defer by Account**
+
+For transactions without items (for example, general journals), you can specify the deferral accounts. When these accounts are used in a transaction line, the transaction is automatically marked as deferred, and the corresponding template and recognition account is assigned to the transaction line.
+  
+**All transaction types (Sales Order, Purchasing, General Journal, etc. tabs)**
+
+The accounts on this page are the main accounts without financial dimensions. The financial dimensions of the recognition account are from the customer or item based on standard functionality.
+
+Each template line must have either a straight line template or an event based template, but not both.
+
+
+### For Sales Orders
+
+To specify the deferral default values for sales orders, follow these steps: 
+1. Select the **Sales order** tab. 
+2. Select the deferral type (e.g., revenue, discount),  and add a line as follows: 
+   a. Select **Add**. 
+   b. Select the **Item code**, which determines how the deferral default values are applied. 
+      * If **Item code** is **Table** or **Group**, select the **Item relation**. 
+      * If **Item code** is **Category**, select the **Category relation**. 
+      * If **Item code** is **All**, you do not need to select the additional relation because the default value applies to all applicable records. 
+   c. Select how the **Account code** is applied. 
+      * If **Account code** is **Table** or **Group**, select the **Account relation**. 
+      * If **Item code** is **All**, you do not need to select the additional relation because the account applies to all applicable records. 
+   d. Select the **Main account** for the deferral. 
+   e. If on the **Revenue and expense deferrals parameters** page **Deferral posting method** is **Profit and loss**, select the **Initial revenue account** and **Revenue offset account**. 
+   f. If on the **Revenue and expense deferrals parameters** page **Short-term deferral method** is **Rolling periods** or **Fixed year**, select the **Short-term deferral account**.
+3. For a template, add a line as follows: 
+   a. Select **Add**. 
+   b. Select the **Item code**, which determines how the deferral default values are applied. 
+      * If **Item code** is **Table** or **Group**, select the **Item relation**. 
+      * If **Item code** is **Category**, select the **Category relation**. 
+      * If **Item code** is **All**, you do not need to select the additional relation because the default values applies to all applicable records.
+   c. Select how the **Account code** is applied. 
+      * If **Account code** is **Table** or **Group**, select the **Account relation**. 
+      * If **Item code** is **All**,  you do not need to select the additional relation because the account applies to all applicable records.
+   d. Select the **Straight line template** or the **Event based template**. 
+4. Select **Save**. 
+
+### For Purchasing
+
+To specify the deferral default values for purchase orders, follow these steps:
+1. Select the **Purchasing** tab. 
+2. Select the deferral type (e.g., expense, discount), add a line as follows: 
+   a. Select **Add**. 
+   b. Select the **Item code**. 
+      * If **Item code** is **Table** or **Group**, select the **Item relation**. 
+      * If **Item code** is **Category**, select the **Category relation**. 
+      * If **Item code** is **All**, you do not need to select the additional relation because the default values applies to all applicable records. 
+   c. Select how the **Account code** is applied. 
+      * If **Account code** is **Table** or **Group**, select the **Account relation**. 
+      * If **Item code** is **All**, you do not need to select the additional relation because the account applies to all applicable records.
+   d. Select the **Main account** for the deferral. 
+   e. If on the **Revenue and expense deferrals parameters** page **Deferral posting method** is **Profit and loss**, select the **Initial revenue account** and **Revenue offset account**.
+   1. If on the **Revenue and expense deferrals parameters** page **Short-term deferral method** is **Rolling periods** or **Fixed year**, select the **Short-term deferral account**.
+3. For **Template**, add a line as follows: 
+   a. Select **Add**. 
+   b. Select the **Item code**. 
+      * If **Item code** is **Table** or **Group**, select the **Item relation**. 
+      * If **Item code** is **Category**, select the **Category relation**. 
+      * If **Item code** is **All**, you do not need to select the additional relation because the default values applies to all applicable records. 
+   c. Select how the **Account code** is applied. 
+      * If **Account code** is **Table** or **Group**, select the **Account relation**. 
+      * If **Item code** is **All**, you do not need to select the additional relation because the account applies to all applicable records.
+   d. Select the **Straight line template** or **Event based template**. 
+4. Select **Save**. 
+
+## For General Journal 
+
+To specify the deferral default values for general journal entries, follow these steps: 
+1. Select the **General journal** tab. 
+2. For **Deferral**, add a line as follows: 
+   1. Select **Add**. 
+   1. If on the **Revenue and expense deferrals parameters** page **Short-term deferral method** is **Rolling periods** or **Fixed year**, select the **Short-term deferral account**.
+   1. Select the **Deferral account**.
+   1. Select the **Recognition account**. 
+   1. If on the **Revenue and expense deferrals parameters** page **Deferral posting method** is **Profit and loss**, select the **Initial revenue account** and **Revenue offset account**.
+   1. Select the **Straight line template** or **Event based template**. 
+3. Select **Save**.
+
+## For Free Text Invoice
+
+To specify the deferral default values for free text invoices, follow these steps:
+1. Select the **Free text invoice** tab. 
+2. For **Deferral**, add a line as follows: 
+   a. Select **Add**. 
+   b. Select how the **Account code** is applied. 
+      * If **Account code** is **Table** or **Group**, select the **Account relation**. 
+      * If **Item code** is **All**, you do not need to select the additional relation because the account code applies to all applicable records. 
+   c. Select the **Deferral account**.
+   d. If on the **Revenue and expense deferrals parameters** page **Short-term deferral method** is **Rolling periods** or **Fixed year**, select the **Short-term deferral account**.
+   e.  Select the **Recognition account**. 
+   f. If on the **Revenue and expense deferrals parameters** page **Deferral posting method** is **Profit and loss**, select the **Initial revenue account** and **Revenue offset account**.
+   g. Select the **Straight line template** or **Event based template**.
+3. Select **Save**.
+
+## For Invoice Journals
+
+To specify the deferral default values for invoice journal entries, follow these: 
+1. Select the **Invoice journal** tab. 
+2. For **Deferral**, add a line as follows: 
+   a. Select **Add**. 
+   b. Select how the **Account code** is applied. 
+      * If **Account code** is **Table** or **Group**, select the **Account relation**. 
+      * If **Item code** is **All**, you do not need to select the additional relation because the account code applies to all applicable records. 
+   c. Select the **Deferral account**.
+   d. If on the **Revenue and expense deferrals parameters** page **Short-term deferral method** is **Rolling periods** or **Fixed year**, select the **Short-term deferral account**.
+   e.  Select the **Recognition account**. 
+   f. If on the **Revenue and expense deferrals parameters** page **Deferral posting method** is **Profit and loss**, select the **Initial revenue account** and **Revenue offset account**.
+   g. Select the **Straight line template** or **Event based template**.
+3. Select **Save**.
+
+  
