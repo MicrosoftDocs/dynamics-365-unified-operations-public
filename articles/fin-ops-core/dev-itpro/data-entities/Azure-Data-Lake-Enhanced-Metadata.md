@@ -2,7 +2,7 @@
 # required metadata
 
 title: Data and metadata stored in Azure Data Lake
-description: This topic explains how data and metadata are stored in Azure Data Lake.
+description: This topic explains how data and metadata are stored in Microsoft Azure Data Lake.
 author: MilindaV2
 ms.date: 03/16/2022
 ms.topic: overview
@@ -18,110 +18,109 @@ ms.search.validFrom: 2021-11-30
 
 [!include [banner](../includes/banner.md)]
 
-## How is the data stored in the lake?
+## How data is stored in the data lake
 
-Data in Azure Data Lake is stored as CSV files in a folder structure maintained by the system. The folder structure is based on data organization in Finance and Operations apps. For example, you will see folders with names such as **Finance**, **Supply Chain**, **Commerce**, and within these folders you will see sub-folders with names such as **Accounts Receivable** or **Accounts Payable**. Further down the hierarchy, you will see folders that contain the actual data for each table. Within a table-level folder, you will see one or more CSV files as well as metadata files that describe the format of the data. 
+Data in Microsoft Azure Data Lake is stored as comma-separated values (CSV) files in a folder structure that is maintained by the system. This folder structure is based on the organization of data in Finance and Operations apps. For example, you will find folders that have names such as **Finance**, **Supply Chain**, and **Commerce**. Inside these folders, you will find sub-folders that have names such as **Accounts Receivable** and **Accounts Payable**. Further down the hierarchy, you will find folders that contain the actual data for each table. Inside these table-level folders, you will find one or more CSV files, and also metadata files that describe the format of the data.
 
-When data in Finance and Operations apps gets updated, corresponding data rows in CSV files in the table folders are updated. When a new row is added to a table in Finance and Operations apps, or an existing row is deleted, new rows are added or deleted from corresponding CSV files. The number of CSV files in the lake depends on the size of data rows. The system makes an effort to keep each CSV file around 200 MB in size to optimize read and write operations. In case data size in a CSV file exceeds 200 MB, the system may split the data into multiple files.   
+When data in Finance and Operations apps is updated, corresponding data rows are updated in CSV files inside the table-level folders. When a new row is added to a table in Finance and Operations apps, or an existing row is deleted, new rows are added or existing rows are deleted in corresponding CSV files.
 
-Data files do not contain field headers or any other information. You will need to read metadata to understand the structure of the files. 
+The number of CSV files in the data lake depends on the size of data rows. The system tries to keep the size of each CSV file at about 200 megabytes (MB) to optimize read and write operations. If the size of a CSV file exceeds 200 MB, the system might split the data into multiple files.
 
-## How is metadata stored in the data lake?
+Data files don't contain field headers or any other information. You will have to read the metadata to understand the structure of the files.
 
-Metadata describes the names, data type, size, and nature of data. Along with data files in the lake, you will notice metadata files at a folder-level corresponding to data files. Metadata in the lake is written using a machine-readable format described by the [Common Data Model standard (CDM)](/common-data-model/sdk/overview). When you install the Export to Data lake feature and choose data to be added to the data lake, the system writes metadata files, in addition to data. 
+## How metadata is stored in the data lake
 
-Tools from Microsoft and others that understand Common Data Model metadata format make it easy to work with data in the lake. Using Azure Synapse Analytics serverless SQL pools, you can consume data in the lake using Transact-SQL language (T-SQL). T-SQL language is widely supported by many tools. You can define a Synapse workspace over the data in the lake and use T-SQL, Spark, or Synapse Pipelines as if you are consuming data from a database. To create a Synapse workspace over your data in the lake, you can use [FastTrack Solutions for Dynamics 365 - CDMUtilSolution](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/CDMUtilSolution). This solution creates external table definitions in Azure Synapse Analytics serverless SQL pools using metadata in the lake.
+Metadata describes the name, data type, size, and nature of data. In addition to the data files in the data lake, you will notice metadata files at a folder level that corresponds to the data files. Metadata in a data lake is written in a machine-readable format that is described by the [Common Data Model (CDM) standard](/common-data-model/sdk/overview). When you install the Export to Data Lake feature and select data to add to the data lake, the system writes metadata files in addition to the data.
 
-If you choose the **Enhanced metadata (preview)** option when installing Export to Data Lake, the system adds even more metadata.
+Both Microsoft and third parties provide tools that understand the CDM metadata format. These tools make it easy to work with data in the data lake. Azure Synapse Analytics serverless SQL pools let you use the Transact-SQL (T-SQL) language to consume data in the data lake. T-SQL is widely supported by many tools. You can define a Synapse workspace over the data in the data lake, and then use T-SQL, Spark, or Synapse Pipelines as though you're consuming data from a database. To create a Synapse workspace over your data in the data lake, you can use [FastTrack Solutions for Dynamics 365 - CDMUtilSolution](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/CDMUtilSolution). This solution creates external table definitions in Azure Synapse Analytics serverless SQL pools by using metadata in the data lake.
+
+If you select the **Enhanced metadata (preview)** option when you install Export to Data Lake, the system adds even more metadata.
 
 > [!NOTE]
-> Preview features aren't complete. However, they are made available on a preview basis, so that customers can get early access and provide feedback. Preview features might have limited or restricted functionality, they aren't meant for production use, and they might be available only in selected geographic areas.
+> Preview features aren't completed. However, they are made available on a preview basis, so that customers can get early access and provide feedback. Preview features might have limited or restricted functionality, they aren't meant for production use, and they might be available only in selected geographic areas.
 >
 > By enabling preview features, you agree to the [Supplemental Terms of Use](../../fin-ops/get-started/public-preview-terms.md).
 
 ## Enhanced metadata (preview)
-If you are familiar with Dynamics 365 applications such as Finance and Supply Chain, you may be familiar with the rich metadata structures present in the applications. In addition to basic types, enhanced metadata includes: 
 
--   **Extended Data Types (EDTs)** that offer richer data types that describe behavior and business rules applicable to "Business data types" such as Bank Accounts, Ledger Account and Phone numbers. 
--   You may also be familiar with **descriptive names – along with translated labels available in many languages**.
--   **Relationships** between tables enables you to navigate thru data easily (these relationships are not implemented in the underlying relational database).
--   Higher-level data abstractions such as **Entity definitions**.
+If you're familiar with Dynamics 365 applications such as Dynamics 365 Finance and Dynamics 365 Supply Chain Management, you might be familiar with the rich metadata structures that are present in them. In addition to basic types, enhanced metadata includes the following types:
 
-When you enable the **Enhanced metadata (preview)** option, the system writes additional metadata derived from Dynamics into the data lake. Client tools that can understand and work with these additional metadata properties can provide a better experience to users.
+- **Extended data types (EDTs)**, which offer richer data types that describe behavior and business rules that are applicable to "business data types," such as bank accounts, ledger accounts, and telephone numbers.
+- **Descriptive names**, together with **translated labels** that are available in many languages.
+- **Relationships between tables**, so that you can easily navigate data. These relationships aren't implemented in the underlying relational database.
+- Higher-level data abstractions, such as **entity definitions**.
 
-### Pre-requisites for enabling Enhanced metadata (preview)
-1. The Finance and Operations application version needs to be higher than the following versions:
+When you enable the **Enhanced metadata (preview)** option, the system writes additional metadata that is derived from Dynamics 365 into the data lake. Client tools that can understand and work with the additional metadata properties can then provide a better experience to users.
 
-- Version 10.0.22 with latest updates (version 10.0.995.146 or higher).
-- Version 10.0.23 with lates updates (version 10.0.1037.133 or higher).
-- Version 10.0.24 with latest updates (10.0.1084.89 or higher).
-- Version 10.0.25 and later.
+### Prerequisites for enabling the Enhanced metadata (preview) feature
 
-2. Your administrator needs to choose the **Enable enhanced metadata (preview)** option when installing the Export to Data lake add-in. You can't enable the enhanced metadata feature without choosing this option at the installation stage. 
+1. The Finance and Operations app version must be later than the following versions:
 
-3. You need to choose the **Republish metadata** option in the Export to Data lake form, Manage options. in the Finance and Operations app for the first time. You need to perform this operation only once. The system will continue to republish metadata as changes happen. In version 10.0.23 and later, the system auto triggers this option when you open the form for the first time.
+    - Version 10.0.22 with the latest updates (version 10.0.995.146 or later)
+    - Version 10.0.23 with the latest updates (version 10.0.1037.133 or later)
+    - Version 10.0.24 with the latest updates (10.0.1084.89 or later)
+    - Version 10.0.25 and later
 
-### Changes introduced by Enhanced metadata (preview) feature
-If you are currently using the Export to Data lake feature, you will notice the folder structure and metadata in the lake. When you enable the **Enhanced metadata (preview)** feature by re-installing the add-in, you may notice several changes. More details of the changes are explained in relevant sections below.
+2. When your administrator installs the Export to Data Lake add-in, they must select the **Enable enhanced metadata (preview)** option. You can't enable the enhanced metadata feature unless this option is selected during the installation stage.
+3. In the Finance and Operations app, you must select **Republish metadata** on the **Manage** tab on the Action Pane of the **Export to Data Lake** page the first time that you open it. You have to complete this step only once. The system will then continue to republish metadata as changes happen.
 
-1. Data previously contained in the **Custom** folder may be moved to a folder structure within subject areas based on the metadata defined in Dynamics 365. If you are using the metadata files to navigate and locate data, you will be able to navigate to the correct folder structure. However, if you had hard coded the folder sturcture into consuming tools, you may need to revise them.
-2. In some cases, folder structure under the **Custom** folder will remain along with metadata files. No data files will be present in this folder. 
+   > [!NOTE]
+   > In version 10.0.23 and later, the system automatically runs the **Republish metadata** command the first time that you open the **Export to Data Lake** page.
+
+### Changes introduced by the Enhanced metadata (preview) feature
+
+If you're currently using the Export to Data Lake feature, you will notice the folder structure and metadata in the data lake. When you enable the Enhanced metadata (preview) feature by reinstalling the add-in, you might notice several changes. These changes are described in more detail later in this topic.
+
+- Data that was previously stored in the Custom folder might be moved to a folder structure that consists of subject areas. These subject areas are based on the metadata that is defined in Dynamics 365. If you're using the metadata files to navigate and find data, you will be able to go to the correct folder structure. However, if you hard-coded the folder structure in consuming tools, you might have to update those tools.
+- In some cases, the folder structure under the Custom folder will remain, together with metadata files. No data files will be present in this folder.
 
 ## Folder structure in the data lake
-Finance and Operations apps have over 10,000 tables and over 2,500 entities (the number including extensions and customizations far exceeds this). To enable securing data in the lake in a granular way, tables and entities are organized within modules representing application areas. This organization is reflected in the data lake in a folder structure that mimics organization of application areas in Dynamics 365.
+
+Finance and Operations apps have over 10,000 tables and over 2,500 entities. (If extensions and customizations are included, the numbers are much larger.) To help secure data in the data lake in a granular way, tables and entities are organized into modules that represent application areas. In the data lake, this organization is reflected in a folder structure that mimics the organization of application areas in Dynamics 365.
 
 ### Table folder structure
-Table folder structure is 3 levels deep:
 
-1.  **Application area (ex. Finance)** is a grouping of modules in Finance and Operations apps.
+The table folder structure is three levels deep:
 
-2.  **Module (ex. General Ledger)** is derived using a table level metadata property **Module** in Finance and Operations apps. 
-    
-3.  **Table type (ex. Main)** is derived using existing **TableGroup** metadata property.
+1. **Application area** – This level is a grouping of modules in Finance and Operations apps. For example, a folder at this level might be named **Finance**.
+2. **Module** – This level is derived by using a table-level **Module** metadata property in Finance and Operations apps. For example, a folder at this level might be named **General Ledger**.
+3. **Table type** – This level is derived by using the existing **TableGroup** metadata property. For example, a folder at this level might be named **Main**.
 
-You can see the Application \> Module \> Table type hierarchy for tables that are part of Finance and Operations apps [here](/common-data-model/schema/core/operationscommon/tables/overview).
+You can [view the application area \> module \> table type hierarchy](/common-data-model/schema/core/operationscommon/tables/overview) for tables that are part of Finance and Operations apps.
 
 > [!NOTE]
+> When the Enhanced metadata (preview) feature is enabled, tables that are introduced by system integrators and partners (*custom tables*) will follow the same structure, provided that the same metadata properties are added to tables in Finance and Operations apps. If the Enhanced metadata (preview) feature isn't enabled, all custom tables will be put in the Custom folder.
 >
-> When you enable the **Enhanced metadata (preview)** feature, tables introduced by system integrators and partners (sometimes referred to as **Custom Tables**) will follow the same structure as long as the same metadata properties are added to tables in Finance and Operations apps. If you do not have the **Enhanced metadata (preview)** feature enabled, all **Custom tables** will be placed in the custom folder. 
+> The table-level **Module** metadata property is backed by an extensible enumeration (enum) that is named **ModuleAxapta**. This enum contains predefined modules that are released by Microsoft. However, you can extend the enum by adding your own module definitions. In this way, you can use your own modules in addition to the predefined modules. The Export to Data Lake feature will put custom tables in appropriate folders, based on the table-level **Module** property.
 >
-> Table-level module property is backed by an **extensible Enum** called **ModuleAxapta**, the enum contains pre-defined modules shipped by Microsoft. You can extend this enum by adding your own module definitions in addition to using the pre-defined modules defined by Microsoft. Depending on the module property defined at the table level, custom tables will be placed in respective folders by the Export to Data lake feature.
+> The mapping of application areas to modules is defined in Finance and Operations apps and can't currently be modified. If you define a new **Module** property, it probably won't be reflected in the application area–to–module mapping. In this case, the Export to Data Lake feature will put the table in an application area folder that is named **Custom**.
 >
-> Application area to module mapping is defined within Finance and Operations apps, and can’t be modified at this point in time. If you define a new module property
-(that likely won’t be reflected in the application to module mapping), the Export to Data lake feature will place the table in an application area folder called
-**Custom**.
+> Systems integrators and partners can't modify the **Module** property for tables that are released by Microsoft. Although you can modify the **Module** property for custom tables, we recommend that you avoid frequent modifications. Modification of the **Module** property causes the location of the table in the data lake to change. Therefore, consuming applications that assume a specific location for data files might be affected every time that you modify the **Module** property.
 >
-> The Module property in tables shipped by Microsoft can’t be modified by a systems integrator or a partner. While you can modify the Module property in custom
-tables as you wish, frequent changes must be avoided. The module property will change, resulting location of the table in the data lake. Consuming applications
-that may assume a certain location for data files and these applications may be impacted each time you make a change in the module property.
-> 
-> If a custom table doesn’t have the module table metadata property defined, it will also be placed in the Custom folder.
+> If the **Module** property isn't defined for a custom table, that table will be put in the Custom folder.
 
 ### Entity folder structure
 
-There are fewer entities compared to tables, and Finance and Operations apps organize entity folder structure into two levels:
+There are fewer entities than tables in Finance and Operations apps. The entity folder structure is only two levels deep:
 
-1.  **Application area (ex. Finance)** is a grouping of modules within Finance and Operations apps. The grouping is similar to tables.
+1. **Application area** – This level is a grouping of modules in Finance and Operations apps. The grouping is similar to the grouping for tables. For example, a folder at this level might be named **Finance**.
+2. **Module** – This level is derived by using an entity-level **Module** metadata property in Finance and Operations apps. For example, a folder at this level might be named **General Ledger**.
 
-2.  **Module (ex. General Ledger)** is derived using a entity-level metadata  property **Module** in Finance and Operations apps. 
-
-Similar to the Module property added to tables, the **Module property** in entities can be extended by systems integrators and partners building custom entities. Module property in entities is also backed by the same **extensible Enum, ModuleAxapta**.
-
+Just as systems integrators and partners can extend the table-level **Module** property by introducing custom tables, they can extend the entity-level **Module** property by introducing custom entities. The entity-level **Module** property is backed by the same **ModuleAxapta** extensible enum that backs the table-level **Module** property.
 
 ## Changes to metadata
-Metadata in Finance and Operations apps can change with new software updates. A developer may add a new field to an existing table or an entity. In some less frequent cases, the developer may remove a field from a table or perhaps change the data type of an existing field.
 
-When a table or entity structure changes, consuming applications may need to change. This is especially the case when a field is removed from a table or an entity. The Export to Data Lake feature is designed to minimize the downstream impact while reflecting metadata changes in the lake. Let’s understand how metadata changes are reflected in the data lake.
+New software updates can cause metadata in Finance and Operations apps to change. For example, a developer might add a new field to an existing table or entity. In less frequent cases, a developer might remove an existing field from a table or change the data type of an existing field.
+
+If the structure of a table or entity is changed, and especially if a field is removed from the table or entity, consuming applications might have to be updated. The Export to Data Lake feature is designed to minimize the downstream impact but also reflect metadata changes in the data lake. This section explains how metadata changes are reflected in the data lake.
 
 > [!NOTE]
-> There are built-in governance processes and developer tools within Finance and Operations apps where such changes and the resulting impact is highlighted to the developer. However, your users consuming data in the lake, say, by authoring and running a Power BI report, may not be aware of changes in Finance and Operations apps.
+> Finance and Operations apps include governance processes and developer tools that help developers learn about such changes and their impact. However, users who consume data in the date lake by creating and running a Power BI report, for example, might not be aware of changes in Finance and Operations apps.
 
-When a new field is added to a table, metadata files in the lake are updated to reflect the change. All the records in the CSV files with newly added data contains the new field. If a CSV file is not modified or no new rows are added, the file does not contain the newly added field. This behavior is adopted to minimize the data writes to the lake. Most data pipeline tools, especially the ones that understand the Common Data Model standard, are able to support a feature known as *Schema drift* that can adapt to changes. 
+When a new field is added to a table, metadata files in the data lake are updated to reflect the change. All the records in the CSV files that include the newly added data will contain the new field. If a CSV file isn't modified, or no new rows are added, the file won't contain the new field. This behavior helps minimize the data writes to the data lake. Most data pipeline tools, and especially those tools that understand the CDM standard, support a feature that can adapt to changes. This feature is known as *schema drift*.
 
-The system may repopulate the entire table folder (all the CSV files) in case the data structure change is destructive. For example, in case a field is removed from a table in a Finance and Operations app, a rare but more destructive scenario, the entire table folder is repopulated along with the updated metadata. Desctrucive changes may require changes to downstream reports especially if the report is expecting the removed data field.  
+If the change to the data structure is destructive, the system might repopulate the whole table folder (that is, all the CSV files). For example, in a rare but destructive change, a field might be removed from a table in a Finance and Operations app. In this case, the whole table folder is repopulated, together with the updated metadata. Destructive changes might require changes to downstream reports, especially if the report is expecting a data field that was removed.
 
-## Any questions, feedback? 
+## Any questions, feedback?
+
 We are actively working on this and other features. Do you want to stay in touch and ask questions of the product team or your fellow customers or partners? Do you want to provide feedback directly to the product team? If you do, you can join the [Preview Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all). You can then attend weekly online "office hours" meetings and use the Yammer online forums to stay in touch and ask questions.
-
-
-
