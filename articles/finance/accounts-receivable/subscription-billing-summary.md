@@ -30,7 +30,6 @@ ms.dyn365.ops.version: 10.0.25
 # Subscription billing overview
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Subscription billing enables organizations to manage subscription revenue opportunities and recurring billing through billing schedules. Complex pricing and billing models and revenue allocation are easily managed, and are billed and recognized at the line level. Multi-element revenue allocation enables allocation of revenue to comply with International Accounting Standards (International Financial Reporting Standard 15 \[IFRS 15\]) and Generally Accepted Accounting Principles (US GAAP) standards (Accounting Standards Codification Topic 606 \[ASC 606\]).
 
