@@ -4,7 +4,7 @@
 title: Country/region picker module
 description: This topic covers the country/region picker module and describes how to configure it in Microsoft Dynamics 365 Commerce. 
 author: stuharg
-ms.date: 09/01/2021
+ms.date: 03/21/2022
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -38,13 +38,13 @@ For example, a customer in Canada requests a site URL that is associated with a 
 
 ## How it works
 
-When geo detection and redirection is enabled for a site and a customer requests a site URL, their detected country and the URL they requested are used to determine whether the URL they requested is mapped to the country they're in. That mapping between URLs and countries is defined in the **Channels** page within Site settings in site builder. 
+When geo detection and redirection are enabled for a site and a customer requests a site URL, their detected country and the URL they requested are used to determine whether the requested URL is mapped to the country they're in. That mapping between URLs and countries is defined in site builder on the **Site settings \> Channels** page. 
 
-If the request URL does not match any URL mapped to the customer's country, the list of one or more URLs that *are* mapped to their country are returned in the response. The country/region picker compares each URL in that list to the URLs that have been configured in the country/region module. For every exact match found, the country/region picker renders the display heading, subheading and image for that URL, and hyperlinks those elements with the URL.
+If the request URL does not match any URL mapped to the customer's country, the list of one or more URLs that are mapped to their country is returned in the response. The country/region picker compares each URL in that list to the URLs that have been configured in the country/region module. For every exact match found, the country/region picker renders the display heading, subheading, and image for that URL, and hyperlinks those elements with the URL.
 
-When a customer clicks on an option in the country/region picker, they are taken to the hyperlinked URL that URL is written to the **\_msdyn365\_\_\_site\_**  cookie and used as the customer's site preference. The next time they request the URL that isn't associated with their country or region, they are automatically redirected to their preferred country. For this reason, we recommend also using the [site picker module](site-selector.md) on your e-commerce site so that customers have a way to override and/or update their site preference. 
+When a customer selects on an option in the country/region picker, they are taken to the hyperlinked URL and that URL is written to the **\_msdyn365\_\_\_site\_** cookie to be used as the customer's site preference. The next time they request the URL that isn't associated with their country or region, they are automatically redirected to their preferred country. For this reason, it is also recommended to use the [site picker module](site-selector.md) on your e-commerce site so that customers have a way to override or update their site preference. 
 
-If the customer excuses the country/region picker by clicking the 'X' at the top of the dialog box, no cookie is written and they stay on the current site. 
+If a customer closes the country/region picker dialog box, no cookie is written and they stay on the current site. 
 
 The following illustration shows an example of the country/region picker dialog box.
 
@@ -59,7 +59,7 @@ The following illustration shows an example of the country/region picker dialog 
 | Country: Display string    | Text        | The display name for a URL option (for example, "Canada").   |
 | Country: Display substring | Text        | An optional display substring for a URL option (for example, "English" or "French"). |
 | Country: Country image     | Media asset | An optional image that is associated with a URL option (for example, an image of the Canadian flag). |
-| Country: Country URL       | Text        | The site URL for the country/region being configured. This URL must exactly match the URL that you specified on the **Channels** page in Commerce site builder (**Site settings \> Channels**) for this country/region.  Additionally, the domain in the URL must be the custom domain that you selected in the **Match domain** dropdown when adding or editing a locale on the Channels page, and not the working address for the site (e.g. https://yourcompany.commerce.dynamics.com/) that is provided by Commerce when you create your e-commerce environment. |
+| Country: Country URL       | Text        | The site URL for the country/region being configured. This URL must exactly match the URL that you specified on the site builder **Site settings \> Channels** page for this country/region. Additionally, the domain in the URL must be the custom domain that is specified in the **Match domain** drop-down list on the **Channels** page, and not the working address for the site (for example, the `https://<yourcompany>.commerce.dynamics.com/`) URL that is provided by Commerce when you create your e-commerce environment. |
 | Action link                | Action link | An optional link that appears at the bottom of the dialog box. For example, this link can point to an internal page that provides a list of all countries and regions that the site supports. |
 
 ## Add a country/region picker module to a page
