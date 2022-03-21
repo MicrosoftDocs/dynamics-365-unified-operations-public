@@ -42,9 +42,10 @@ To add a Consumer price index schedule:
 6. Enter the **Consumer price index schedule** value. 
 7. Select **Save**. 
 
-To delete a **Consumer price index schedule** date, select one or more lines that you want to delete and select **Remove**. To delete the entire **Consumer price index schedule** select **Delete** in the Action pane. If the **Consumer price index schedule** is associated with any billing schedule, you can't delete it.
+To delete a **Consumer price index schedule** date, select one or more lines that you want to delete and select **Remove**. To delete the entire **Consumer price index schedule**, select **Delete** in the Action pane. If the **Consumer price index schedule** is associated with any billing schedule, you can't delete it.
 
 Select the **Process** button in the Action pane to update the billing schedules that use the selected **Consumer price index schedule**. The billing schedule prices will update using the latest consumer price index dates and schedule amounts. 
+
 The **Consumer price index process** fasttab displays the **Billing schedule number**, **Item number**, **Billing start date**, **Billing end date**, **Escalation date** and **Escalation frequency** that were updated. 
 
 Once Consumer price index schedules are setup, they can be used for **Escalation and discount** price changes on billing schedules.
