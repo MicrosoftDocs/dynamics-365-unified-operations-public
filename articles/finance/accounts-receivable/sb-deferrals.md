@@ -57,6 +57,32 @@ Modules > Subscription billing > Revenue and expense deferrals > Setup > Revenue
 |**Schedule number**|Displays the number sequence used for deferral schedules. |
 
   ## Deferral templates
+  
+  Modules > Subscription billing > Revenue and expense deferrals > Setup > Deferral templates
+
+Use this page to define straight-line templates that are used for deferral schedules. 
+
+Advantages of using a template include the following: 
+* Automatically calculate the length of the deferral 
+* Allow deferral schedules that have periods where the recognition is skipped
+* Automate deferrals by assigning the template to product, product group, product category, customers, or customer group.   
+The template assignment is done from the **Deferral defaults** page. 
+
+A template can have a period frequency of daily, monthly, or fiscal periods. 
+
+The template lines consist of the type **Recognized** or **Skipped**, and the period length. Skipped lines have an amount of zero (0) on the deferral schedule lines. This can be used if you want to not recognize revenue in all periods.
+
+
+### Create a deferral template
+
+To create a deferral template, follow these steps: 
+1. Select **New**. 
+2. Specify a unique **Template** name and a **Description**. 
+3. Select the **Period frequency**. 
+4. To add a line (or period), select **Add** to add the line to the top of the lines, or select **Append** to add a line to the bottom of the lines. For each line, select the period **Type** and ppecify the **Period length**. 
+5. Repeat the previous step to add more lines for the template. 
+6. Select **Save**.
+
 
   ## Deferral defaults
 
@@ -135,20 +161,20 @@ To specify the deferral default values for purchase orders, follow these steps:
    d. Select the **Straight line template** or **Event based template**. 
 4. Select **Save**. 
 
-## For General Journal 
+### For General Journal 
 
 To specify the deferral default values for general journal entries, follow these steps: 
 1. Select the **General journal** tab. 
 2. For **Deferral**, add a line as follows: 
-   1. Select **Add**. 
-   1. If on the **Revenue and expense deferrals parameters** page **Short-term deferral method** is **Rolling periods** or **Fixed year**, select the **Short-term deferral account**.
-   1. Select the **Deferral account**.
-   1. Select the **Recognition account**. 
-   1. If on the **Revenue and expense deferrals parameters** page **Deferral posting method** is **Profit and loss**, select the **Initial revenue account** and **Revenue offset account**.
-   1. Select the **Straight line template** or **Event based template**. 
+   a. Select **Add**. 
+   b. If on the **Revenue and expense deferrals parameters** page **Short-term deferral method** is **Rolling periods** or **Fixed year**, select the **Short-term deferral account**.
+   c. Select the **Deferral account**.
+   d. Select the **Recognition account**. 
+   e. If on the **Revenue and expense deferrals parameters** page **Deferral posting method** is **Profit and loss**, select the **Initial revenue account** and **Revenue offset account**.
+   f. Select the **Straight line template** or **Event based template**. 
 3. Select **Save**.
 
-## For Free Text Invoice
+### For Free Text Invoice
 
 To specify the deferral default values for free text invoices, follow these steps:
 1. Select the **Free text invoice** tab. 
@@ -164,7 +190,7 @@ To specify the deferral default values for free text invoices, follow these step
    g. Select the **Straight line template** or **Event based template**.
 3. Select **Save**.
 
-## For Invoice Journals
+### For Invoice Journals
 
 To specify the deferral default values for invoice journal entries, follow these: 
 1. Select the **Invoice journal** tab. 
@@ -180,4 +206,70 @@ To specify the deferral default values for invoice journal entries, follow these
    g. Select the **Straight line template** or **Event based template**.
 3. Select **Save**.
 
+  ## Items deferred by default
   
+  Modules > Subscription billing > Revenue and expense deferrals > Setup > Items deferred by default
+
+Use this page to define which items are deferrable by default. You can set up for which types of transactions the items are deferrable. Also, you can specify whether a single item or and entire item groups or categories are deferrable. 
+
+When setting items as deferrable, ensure that you also set the default accounts and templates on the **Deferral defaults** page. If the accounts and templates are not set, any transaction line entered with these items are not deferred by default.
+
+For items that are deferrable based on the sales or purchasing category to which they are associated, the deferral settings are based on the category. However, if the category is not selected in the in the **Category relation**, the deferral settings of the category that is higher in rank is used. For example, you add a sales category for **Home video**, but not for **Television**. When you add a deferral item that is associated with the **Television** category, the deferral settings of the **Home video** are used for the item. 
+
+### Set deferrable items
+
+To set items that are deferrable by default, follow these steps: 
+1. Select the tab you want: **Sales order** or **Purchasing**. 
+2. For each line you add, select **Add**, then select the **Item Code**.
+      * If **Item Code** is **Group** or **Table**, select the **Item relation**. 
+      * If **Item Code** is **Category**, select the **Category relation**. 
+3. Select **Save**. 
+
+## Deferrable Charges
+
+Modules > Subscription billing > Revenue and expense deferrals > Setup > Deferral charges
+
+Use this page to define which charges are deferrable by default. 
+
+**Note:** Currently, deferrable charges are available for sales orders only. 
+* Charges can be deferred at the line level only. To defer a charge at the sales order header level, the charge can be set up as a deferrable item as a separate line in the sales order. 
+* To defer a charge for a free text invoice, the charge must be entered as a separate deferrable invoice line. 
+* This functionality is not available for support charges and revenue split functionality. 
+
+
+### Set Up Deferrable Charges
+
+To set deferrable charges, follow these steps: 
+1. For each line you add select **Add**, then select the **Charge Code**, and the **Charge relation**.  
+2. Select **Save**.
+  
+## Event Based Deferral Templates
+
+Modules > Subscription billing > Revenue and expense deferrals > Setup > Event based deferral templates
+
+Use this page to define event-based deferral templates for use in deferral transactions and to assign in the **Deferral Defaults** page.
+
+
+### Create Event-Based Template
+
+Create an event-based deferral template:
+  1. Select **New**. 
+  2. Specify a unique **Template** name and **Description**. 
+  3. Select the **Allocation type**. 
+     a. **Variable amount** allocates a specific amount for each line entered.
+     b. **Equal amount** allocates the same amount for each line entered. 
+     c. **Percentage allocates** an amount based on the percentage value entered for each line.
+     d. **Percentage of completion** allocates a cumulative completion value for each line entered.
+     e. **Variable quantity** allocates a specific quantity for each line entered.
+  4. Select whether to **Create separate events per unit**. Select **Yes** if you want each event line to be split evenly by the number of units on the invoice transaction. Select **No** to not split the event lines.
+  5. Select the **Expiration account**.
+  6. To add a line, select **Add** to add the line to the top of the lines, or select **Append** to add a line to the bottom of the lines. For each line, do the following: 
+    a. Specify a **Description** for the event. 
+    b. If **Allocation type** is **Percentage**, specify the **Allocation percentage**. The percentage must be between zero (0) and 100. An empty percentage is considered zero. The sum of all percentages must equal 100 as shown in the **Total percentage** field at the bottom.
+    c. Specify the **Months to expiration**. The expiration date on the transaction deferral is automatically entered based on this value.
+    d. Select the **Recognize when posted** checkbox to automatically recognize revenue when the transaction is posted. If not checked the revenue must be manually recognized.
+    e. Select the **Recognition account** for the event (if the account is different from the entire deferral schedule). This is used with the Recognize when posted above.
+    f. Select **Save**.
+
+  
+
