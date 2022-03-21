@@ -27,10 +27,9 @@ ms.dyn365.ops.version: 10.0.24
 
 ---
 
-# Milestone templates
+# Milestone billing
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic explains how to define templates for the milestone billing functionality in Subscription billing. For each line in the milestone template, you can define the allocation percentage or amount. You can then assign the milestone template to billing schedule items that use the milestone billing functionality.
 
