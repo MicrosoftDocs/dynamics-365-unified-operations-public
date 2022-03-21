@@ -113,7 +113,7 @@ To specify the deferral default values for sales orders, follow these steps:
    b. Select the **Item code**, which determines how the deferral default values are applied. 
       * If the **Item code** is **Table** or **Group**, select the **Item relation**. 
       * If the **Item code** is **Category**, select the **Category relation**. 
-      * If the **Item code** is **All**, you don't need to select the additional relation because the default value applies to all applicable records. 
+      * If the **Item code** is **All**, the default value applies to all applicable records. 
    c. Select how the **Account code** is applied. 
       * If the **Account code** is **Table** or **Group**, select **Account relation**. 
       * If the **Item code** is **All**, the account will apply to all records. 
@@ -125,10 +125,10 @@ To specify the deferral default values for sales orders, follow these steps:
    b. Select the **Item code**, which determines how the deferral default values are applied. 
       * If the **Item code** is **Table** or **Group**, select the **Item relation**. 
       * If the **Item code** is **Category**, select the **Category relation**. 
-      * If the **Item code** is **All**, you do not need to select the additional relation because the default values applies to all applicable records.
+      * If the **Item code** is **All**, the default values applies to all applicable records.
    c. Select how the **Account code** is applied. 
       * If the **Account code** is **Table** or **Group**, select the **Account relation**. 
-      * If the **Item code** is **All**,  you do not need to select the additional relation because the account applies to all applicable records.
+      * If the **Item code** is **All**, the account applies to all applicable records.
    d. Select the **Straight line template** or the **Event based template**. 
 4. Select **Save**. 
 
@@ -141,10 +141,10 @@ To specify the deferral default values for purchase orders, follow these steps:
    b. Select the **Item code**. 
       * If the **Item code** is **Table** or **Group**, select the **Item relation**. 
       * If the **Item code** is **Category**, select the **Category relation**. 
-      * If the **Item code** is **All**, you do not need to select the additional relation because the default values applies to all applicable records. 
+      * If the **Item code** is **All**, the default values applies to all applicable records. 
    c. Select how the **Account code** is applied. 
       * If the **Account code** is **Table** or **Group**, select the **Account relation**. 
-      * If the **Item code** is **All**, you do not need to select the additional relation because the account applies to all applicable records.
+      * If the **Item code** is **All**, the account applies to all applicable records.
    d. Select the **Main account** for the deferral. 
    e. If the **Deferral posting method** is **Profit and loss**, select the **Initial revenue account** and **Revenue offset account**.
    1. If the **Short-term deferral method** is **Rolling periods** or **Fixed year**, select the **Short-term deferral account**.
@@ -153,10 +153,10 @@ To specify the deferral default values for purchase orders, follow these steps:
    b. Select the **Item code**. 
       * If the **Item code** is **Table** or **Group**, select the **Item relation**. 
       * If the **Item code** is **Category**, select the **Category relation**. 
-      * If the **Item code** is **All**, you do not need to select the additional relation because the default values applies to all applicable records. 
+      * If the **Item code** is **All**, the default values applies to all applicable records. 
    c. Select how the **Account code** is applied. 
       * If the **Account code** is **Table** or **Group**, select the **Account relation**. 
-      * If the **Item code** is **All**, you do not need to select the additional relation because the account applies to all applicable records.
+      * If the **Item code** is **All**, the account applies to all applicable records.
    d. Select the **Straight line template** or **Event based template**. 
 4. Select **Save**. 
 
@@ -181,7 +181,7 @@ To specify the deferral default values for free text invoices, follow these step
    a. Select **Add**. 
    b. Select how the **Account code** is applied. 
       * If **Account code** is **Table** or **Group**, select the **Account relation**. 
-      * If **Item code** is **All**, you do not need to select the additional relation because the account code applies to all applicable records. 
+      * If **Item code** is **All**, the account code applies to all applicable records. 
    c. Select the **Deferral account**.
    d. If the **Short-term deferral method** is **Rolling periods** or **Fixed year**, select the **Short-term deferral account**.
    e. Select the **Recognition account**. 
@@ -197,7 +197,7 @@ To specify the deferral default values for invoice journal entries, follow these
    a. Select **Add**. 
    b. Select how the **Account code** is applied. 
       * If the **Account code** is **Table** or **Group**, select the **Account relation**. 
-      * If the **Item code** is **All**, you do not need to select the additional relation because the account code applies to all applicable records. 
+      * If the **Item code** is **All**, the account code applies to all applicable records. 
    c. Select the **Deferral account**.
    d. If the **Short-term deferral method** is **Rolling periods** or **Fixed year**, select the **Short-term deferral account**.
    e.  Select the **Recognition account**. 
