@@ -15,7 +15,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 26181
@@ -46,7 +46,7 @@ You can maintain your vendor account in the **Vendor information** workspace. Th
 - Expiration date
 - Comments (optional)
 
-If the legal entity is outside the United States, the dialog box also includes fields for the SWIFT code and the International Bank Account Number (IBAN).
+SWIFT and the International Bank Account Number (IBAN) codes are required for all non-US based companies. You can update the SWIFT and IBAN requirements parameter on the **Accounts payable parameters** page after the feature is enabled.
 
 If there are any documents that are related to the specific certification, you can attach them by selecting **Document**.
 
