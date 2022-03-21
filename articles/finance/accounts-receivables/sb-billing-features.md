@@ -30,7 +30,6 @@ ms.dyn365.ops.version: 10.0.24
 # Billing schedule features
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic explains the features of a billing schedule and billing schedule lines. The different methods used for pricing, how to use **Escalation and discount**, examples of proration calculations, as well as how to reverse a billing period and examples of split item group. 
 
