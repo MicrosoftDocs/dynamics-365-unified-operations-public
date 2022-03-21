@@ -1,8 +1,8 @@
 ---
 title: GS1 bar code scanning
 description: This topic describes how to set up GS1 bar codes and QR codes so that labels can be scanned in a warehouse.
-author: Mirzaab, bogolob
-ms.date: 08/02/2021
+author: Mirzaab
+ms.date: 03/21/2022
 ms.topic: article
 ms.search.form:
 audience: Application User
@@ -10,7 +10,7 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-02
-ms.dyn365.ops.version: 10.0.21
+ms.dyn365.ops.version: 10.0.25
 ---
 
 # GS1 bar code scanning
@@ -69,7 +69,7 @@ An example of a string "123456" with different AIs:
 
 ## How GS1 bar code scanning works with the Warehouse Mobile Application and Supply Chain Management
 
-In order to scan GS1 bar codes, the warehouse worker uses a scanner built into or connected to a mobile device they use to execute their warehouse work. The scanner needs to transmit the scanned bar code to the WMA as keyboard events. This mode of operation is also known as a "keyboard wedge" or "wedge". The mobile application will then send the received text as-is to the SCM system. Upon receiving any input data, the system first checks whether the data begins with one of the configured prefixes which indicates to the system that the data is actually a GS1 bar code (see the Set up global GS1 options section for further details). If so, the system will use a GS1 parser to parse the scanned data and extract individual data elements according to their Appliction Identifiers. After the data has been parsed, either the current input field or multiple fields will be populated by the scanned data.
+In order to scan GS1 bar codes, the warehouse worker uses a scanner built into or connected to a mobile device they use to execute their warehouse work. The scanner needs to transmit the scanned bar code to the WMA as keyboard events. This mode of operation is also known as a "keyboard wedge" or "wedge". The mobile application will then send the received text as-is to the SCM system. Upon receiving any input data, the system first checks whether the data begins with one of the configured prefixes which indicates to the system that the data is actually a GS1 bar code (see the Set up global GS1 options section for further details). If so, the system will use a GS1 parser to parse the scanned data and extract individual data elements according to their Application Identifiers. After the data has been parsed, either the current input field or multiple fields will be populated by the scanned data.
 
 ### Configuration of bar code scanner hardware and software
 
