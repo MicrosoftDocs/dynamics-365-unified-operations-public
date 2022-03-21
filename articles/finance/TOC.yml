@@ -412,8 +412,18 @@
         items:
         - name: Subscription billing overview
           href: accounts-receivable/subscription-billing-summary.md
-        - name: Set up billing schedules
-          href: accounts-receivable/sb-billing-schedules.md
+        - name: Recurring contract billing
+          items:
+          - name: Create billing schedules
+            href: accounts-receivable/sb-billing-schedules.md
+          - name: Copy a billing schedule
+            href: accounts-receivable/sb-copy-schedules-items.md
+          - name: Milestone billing
+            href: accounts-receivable/sb-milestonebilling.md
+        - name: Revenue and expense deferrals
+          items:
+        - name: Multi-element revenue allocation
+          items:
       - name: Payments and settlements
         items:
         - name: Customer payment overview
@@ -2560,6 +2570,8 @@
                   href: localizations/apac-ind-GST-import-goods-gst.md
                 - name: Import services that have GST
                   href: localizations/apac-ind-import-services-gst.md
+                - name: Charges allocation on Bill of entry page for import orders
+                  href: localizations/apac-ind-charge-allocation-boe-page-import-orders.md
                 - name: Export goods that have zero-rated tax
                   href: localizations/apac-ind-GST-export-goods-zero-rated-tax.md
                 - name: Export services that have zero-rated tax
