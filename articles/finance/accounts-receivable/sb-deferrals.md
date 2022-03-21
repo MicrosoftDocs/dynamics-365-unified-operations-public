@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.24
 
 # Revenue and expense deferrals
 
-This topic describes how to set up and use revenue and expense deferrals. Deferral schedules are always based on and are dependent on an underlying originating document or billing schedule. Deferral schedules are created based on setup defaults and cannot be entered or created separately. 
+This topic describes how to set up and use revenue and expense deferrals. Deferral schedules are always based on and are dependent on an underlying originating document or billing schedule. Deferral schedules are created based on defaults and can't be entered or created separately. 
 
  - On the **Revenue and expense parameters** page, you can define the company preferences. 
  - On the **Deferral defaults** page, you can set up the default accounts and templates to use for the deferral schedules. 
@@ -44,11 +44,11 @@ The **Revenue and expense deferral parameters** page contains the following fiel
 |Field| Description|
 | :------- |:-------| 
 |**Schedule**|
-|**Equal per period**|Specify whether the number of days in a period is taken into consideration when calculating the amount in each period for a deferral schedule.<br />* **Yes**: The amount for each period is the same regardless of the number of days in the period, except for partial periods (such as at the beginning or end of a deferral schedule) which will be prorated. <br />* **No**: The amount is calculated based on the number of days in each period. <br />You can override this setting at the transaction level. |
-|**Sales discount deferral option**|Select whether separate deferral schedules are created for the discount and the sales order amounts: <br />* **Separate schedule for discount**: Discount amount is kept separate from revenue amount. <br />When a sales order is created and then posted, two deferral schedules are created, and the discount and revenue amounts are posted to different deferral accounts. <br />* **Merge discount with revenue**: Discount amount is combined with revenue amount. One deferral schedule is created and both the discount and revenue amounts are posted to the same deferral account. <br />When a sales order is created and then posted, one deferral schedule is created and both the discount and revenue amounts are posted to the same deferral account. <br />**Note:** To apply discounts to items that use the unbilled revenue feature, select the **Separate schedule for discount** option. This option allows discounts to be applied to all items, regardless if the unbilled revenue feature is used or not. If the **Merge discount with revenue** option is selected, discounts cannot be applied to items that use the unbilled revenue feature. |
-|**Purchasing discount deferral option**|Select whether separate deferral schedules are created for the discount and the purchase order amounts: <br /> **Separate schedule for discount**: Discount amount is kept separate from the expense amount. <br />When a purchase order is created and then posted, two deferral schedules are created, and the discount and expense amounts are posted to different deferral accounts. <br /> **Merge discount with revenue**: Discount amount is combined with expense amount. One deferral schedule is created and both the discount and expense amounts are posted to the same deferral account. <br />When a purchase order is created and then posted, one deferral schedule is created and both the discount and expense amounts are posted to the same deferral account. |
-|**Consolidate prior periods**|Select whether to consolidate deferral schedule lines for prior periods. <br />* **Yes**: If the deferral start date is in a period before the transaction date, all amounts up to and including the period of the transaction date are combined into a single deferral schedule line. <br />**No**: The amounts from all periods are in separate deferral schedule lines regardless of the date. <br />If the deferral start date is in the same or later period as the transaction date, this option has no effect. <br />This setting can be updated at the transaction level. |
-|**Default deferral start date**|Select the rule to apply to the transaction date to get the start date for the deferral schedule: <br /> **Transaction date**: Uses the transaction date as the start date. Default.<br /> **Beginning of current month**: Uses the  1<sup>st</sup> of the current month as the start date. If the transaction date is the 1<sup>st</sup> of any month, then the 1<sup>st</sup> of the current month is the start date. <br />**Beginning of next month**: Uses the  1<sup>st</sup> of the next month as the start date. If the transaction date is on the 1<sup>st</sup>, the transaction date is used, otherwise the 1<sup>st</sup> of the following month is used. <br />**Rule of 15**: If the transaction date is between the 1<sup>st</sup>and the 15<sup>th</sup>, uses the 1<sup>st</sup> of the current month as the start date. If the transaction date is the 16<sup>th</sup>or later, uses the 1<sup>st</sup> of the next month as the start date. <br />You can update this setting at the transaction level. |
+|**Equal per period**|Specify if the number of days in a period is taken into consideration when calculating the amount in each period for a deferral schedule.<br />* **Yes**: The amount for each period is the same regardless of the number of days in the period. Partial periods (such as at the beginning or end of a deferral schedule) will be prorated. <br />* **No**: The amount is calculated based on the number of days in each period. <br />You can override this setting at the transaction level. |
+|**Sales discount deferral option**|Select if separate deferral schedules are created for the discount and the sales order amounts: <br /> **Separate schedule for discount**: Discount amount is kept separate from revenue amount. <br />When a sales order is created and then posted, two deferral schedules are created. The discount and revenue amounts will be posted to different deferral accounts. <br />**Merge discount with revenue**: Discount amount is combined with revenue amount. One deferral schedule is created and both the discount and revenue amounts are posted to the same deferral account. <br />When a sales order is created and then posted, one deferral schedule is created. Both the discount and revenue amounts are posted to the same deferral account. <br />**Note:** To apply discounts to items that use the unbilled revenue feature, select the **Separate schedule for discount** option. This option allows discounts to be applied to all items, regardless if the unbilled revenue feature is used or not. If the **Merge discount with revenue** option is selected, discounts cannot be applied to items that use the unbilled revenue feature. |
+|**Purchasing discount deferral option**|Select whether separate deferral schedules are created for the discount and the purchase order amounts: <br /> **Separate schedule for discount**: Discount amount is kept separate from the expense amount. <br />When a purchase order is created and then posted, two deferral schedules are created. The discount and expense amounts are posted to different deferral accounts. <br /> **Merge discount with revenue**: Discount amount is combined with expense amount. One deferral schedule is created and both the discount and expense amounts are posted to the same deferral account. <br />When a purchase order is created and then posted, one deferral schedule is created. Both the discount and expense amounts are posted to the same deferral account. |
+|**Consolidate prior periods**|Select whether to consolidate deferral schedule lines for prior periods. <br />**Yes**: If the deferral start date is in a period before the transaction date, all amounts up to and including the period of the transaction date are combined into a single deferral schedule line. <br />**No**: The amounts from all periods are in separate deferral schedule lines regardless of the date. <br />If the deferral start date is in the same or later period as the transaction date, this option has no effect. <br />This setting can be updated at the transaction level. |
+|**Default deferral start date**|Select the rule that will be applied to the transaction date to get the start date for the deferral schedule: <br /> **Transaction date**: Uses the transaction date as the start date.<br /> **Beginning of current month**: Uses the  1<sup>st</sup> of the current month as the start date. If the transaction date is the 1<sup>st</sup> of any month, then the 1<sup>st</sup> of the current month is the start date. <br />**Beginning of next month**: Uses the  1<sup>st</sup> of the next month as the start date. If the transaction date is on the 1<sup>st</sup>, the transaction date is used, otherwise the 1<sup>st</sup> of the following month is used. <br />**Rule of 15**: If the transaction date is between the 1<sup>st</sup>and the 15<sup>th</sup>, uses the 1<sup>st</sup> of the current month as the start date. If the transaction date is the 16<sup>th</sup>or later, uses the 1<sup>st</sup> of the next month as the start date. <br />You can update this setting at the transaction level. |
 |**Short-term deferral method**|Select the short-term deferral method: **None** (default), **Rolling periods**, or **Fixed year**. <br />For information on how these settings work, see **Short-Term deferral calculation**. |
 |**Deferral posting method**|Select the method used to create deferral transactions: <br />* **Balance sheet**: Uses the balance sheet posting method to create deferral transactions. <br />**Profit and loss**: Uses the profit and loss posting method to create deferral transactions. When transactions are posted, you can review the invoice voucher to see the extra entries for balancing the initial recognition and recognition offset amounts. |
 |**Reverse profit and loss on credit**|Available when the **Deferral posting method** is **Profit and Loss**. <br />Select whether the profit and loss amounts are reversed when a reversal, termination, or refund is applied to a billing schedule or sales order. <br />**Yes**: Reverses the profit and loss amounts and applies a credit adjustment amount to the deferral schedule. <br />If the reversal occurs halfway through a billing period, the amounts are prorated. <br />**No**: No reversal transaction for the profit and loss is created when a reversal, termination, or refund is applied to a billing schedule or sales order. |
@@ -86,7 +86,7 @@ To create a deferral template, follow these steps:
 6. Select **Save**.
 
 
-  ## Deferral defaults
+## Deferral defaults
 
 Use the **Deferral defaults** page to set up default deferral accounts for items and assign default templates to deferrable items. You can also set up deferral accounts for charges and assign templates to the deferrable charges.
 
@@ -96,7 +96,7 @@ For transactions with an item (for example, sales orders), you can assign accoun
 
 **Defer by account**
 
-For transactions without items (for example, general journals), you can specify the deferral accounts. When these accounts are used in a transaction line, the transaction is automatically marked as deferred, and the corresponding template and recognition account is assigned to the transaction line.
+For transactions without items (for example, general journals), you can specify the deferral accounts. When these accounts are used in a transaction line, the transaction is automatically marked as deferred. The corresponding template and recognition account will be assigned to the transaction line.
   
 **All transaction types** (Sales Order, Purchasing, General Journal, etc. tabs)
 
@@ -108,18 +108,18 @@ Each template line must have either a straight line template or an event based t
 
 To specify the deferral default values for sales orders, follow these steps: 
 1. Select the **Sales order** tab. 
-2. Select the deferral type (e.g., revenue, discount),  and add a line: 
+2. Select the deferral type, and add a line: 
    a. Select **Add**. 
    b. Select the **Item code**, which determines how the deferral default values are applied. 
       * If the **Item code** is **Table** or **Group**, select the **Item relation**. 
       * If the **Item code** is **Category**, select the **Category relation**. 
-      * If the **Item code** is **All**, you do not need to select the additional relation because the default value applies to all applicable records. 
+      * If the **Item code** is **All**, you don't need to select the additional relation because the default value applies to all applicable records. 
    c. Select how the **Account code** is applied. 
       * If the **Account code** is **Table** or **Group**, select **Account relation**. 
       * If the **Item code** is **All**, the account will apply to all records. 
    d. Select the **Main account** for the deferral. 
-   e. If on the **Revenue and expense deferrals parameters** page, **Deferral posting method** is **Profit and loss**, select the **Initial revenue account** and **Revenue offset account**. 
-   f. If on the **Revenue and expense deferrals parameters** page, **Short-term deferral method** is **Rolling periods** or **Fixed year**, select the **Short-term deferral account**.
+   e. If the **Deferral posting method** is **Profit and loss**, select the **Initial revenue account** and **Revenue offset account**. 
+   f. If the **Short-term deferral method** is **Rolling periods** or **Fixed year**, select the **Short-term deferral account**.
 3. For a template, you can add a line: 
    a. Select **Add**. 
    b. Select the **Item code**, which determines how the deferral default values are applied. 
@@ -136,7 +136,7 @@ To specify the deferral default values for sales orders, follow these steps:
 
 To specify the deferral default values for purchase orders, follow these steps:
 1. Select the **Purchasing** tab. 
-2. Select the deferral type (e.g., expense, discount) and add a line: 
+2. Select the deferral type and add a line: 
    a. Select **Add**. 
    b. Select the **Item code**. 
       * If the **Item code** is **Table** or **Group**, select the **Item relation**. 
@@ -146,8 +146,8 @@ To specify the deferral default values for purchase orders, follow these steps:
       * If the **Account code** is **Table** or **Group**, select the **Account relation**. 
       * If the **Item code** is **All**, you do not need to select the additional relation because the account applies to all applicable records.
    d. Select the **Main account** for the deferral. 
-   e. If on the **Revenue and expense deferrals parameters** page, **Deferral posting method** is **Profit and loss**, select the **Initial revenue account** and **Revenue offset account**.
-   1. If on the **Revenue and expense deferrals parameters** page, **Short-term deferral method** is **Rolling periods** or **Fixed year**, select the **Short-term deferral account**.
+   e. If the **Deferral posting method** is **Profit and loss**, select the **Initial revenue account** and **Revenue offset account**.
+   1. If the **Short-term deferral method** is **Rolling periods** or **Fixed year**, select the **Short-term deferral account**.
 3. For **Template**, add a line as follows: 
    a. Select **Add**. 
    b. Select the **Item code**. 
@@ -166,10 +166,10 @@ To specify the deferral default values for general journal entries, follow these
 1. Select the **General journal** tab. 
 2. For **Deferral**, add a line as follows: 
    a. Select **Add**. 
-   b. If on the **Revenue and expense deferrals parameters** page, **Short-term deferral method** is **Rolling periods** or **Fixed year**, select the **Short-term deferral account**.
+   b. If the **Short-term deferral method** is **Rolling periods** or **Fixed year**, select the **Short-term deferral account**.
    c. Select the **Deferral account**.
    d. Select the **Recognition account**. 
-   e. If on the **Revenue and expense deferrals parameters** page, **Deferral posting method** is **Profit and loss**, select the **Initial revenue account** and **Revenue offset account**.
+   e. If the **Deferral posting method** is **Profit and loss**, select the **Initial revenue account** and **Revenue offset account**.
    f. Select the **Straight line template** or **Event based template**. 
 3. Select **Save**.
 
@@ -183,9 +183,9 @@ To specify the deferral default values for free text invoices, follow these step
       * If **Account code** is **Table** or **Group**, select the **Account relation**. 
       * If **Item code** is **All**, you do not need to select the additional relation because the account code applies to all applicable records. 
    c. Select the **Deferral account**.
-   d. If on the **Revenue and expense deferrals parameters** page **Short-term deferral method** is **Rolling periods** or **Fixed year**, select the **Short-term deferral account**.
-   e.  Select the **Recognition account**. 
-   f. If on the **Revenue and expense deferrals parameters** page **Deferral posting method** is **Profit and loss**, select the **Initial revenue account** and **Revenue offset account**.
+   d. If the **Short-term deferral method** is **Rolling periods** or **Fixed year**, select the **Short-term deferral account**.
+   e. Select the **Recognition account**. 
+   f. If the **Deferral posting method** is **Profit and loss**, select the **Initial revenue account** and **Revenue offset account**.
    g. Select the **Straight line template** or **Event based template**.
 3. Select **Save**.
 
@@ -199,13 +199,13 @@ To specify the deferral default values for invoice journal entries, follow these
       * If the **Account code** is **Table** or **Group**, select the **Account relation**. 
       * If the **Item code** is **All**, you do not need to select the additional relation because the account code applies to all applicable records. 
    c. Select the **Deferral account**.
-   d. If on the **Revenue and expense deferrals parameters** page, **Short-term deferral method** is **Rolling periods** or **Fixed year**, select the **Short-term deferral account**.
+   d. If the **Short-term deferral method** is **Rolling periods** or **Fixed year**, select the **Short-term deferral account**.
    e.  Select the **Recognition account**. 
-   f. If on the **Revenue and expense deferrals parameters** page, **Deferral posting method** is **Profit and loss**, select the **Initial revenue account** and **Revenue offset account**.
+   f. If the **Deferral posting method** is **Profit and loss**, select the **Initial revenue account** and **Revenue offset account**.
    g. Select the **Straight line template** or **Event based template**.
 3. Select **Save**.
 
-  ## Items deferred by default
+### Items deferred by default
   
 Use the **Items deferred by default** page to define which items are deferred by default. You can set up which types of transactions that the items will be deferred. You can specify whether a single item or and entire item groups or categories are deferred. 
 
