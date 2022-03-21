@@ -29,7 +29,6 @@ ms.dyn365.ops.version: 10.0.24
 
 # Deferral schedules
 
-
 Use the **All deferral**  or the **Active deferral schedules** page to review the details about a deferral schedule. The information that displays the deferral schedule lines and the total amounts for the deferral schedule. You can use this page to modify the deferral schedule. 
 
 The details that are shown depend on whether the deferral schedule is a straight line or event based deferral schedule, and also on the transaction type.
@@ -175,11 +174,7 @@ The **All deferral schedules** page contains the following fields:
 | :------- |:------| 
 |**Header**
 |**Schedule**|
-|**Deferral schedule number**|The deferral schedule number. |
-|**Schedule status**|The status of the deferral schedule. |
-|**Schedule type**|The deferral schedule type. |
 |**Allocation type**|For event-based deferrals, displays the allocation type: **Percentage** or **Amount**. |
-|**Description**|A description for the deferral schedule. |
 |**Reclassification date**|The most recent date that the short-term reclassification for a deferral schedule was processed. This date is updated each time the **Event short-term reclassification** is used for the deferral schedule. Available only when the short-term deferral method used is rolling periods or fixed year. |
 |**Account**
 |**Deferral account**|The account used for the deferral amount. |
@@ -196,23 +191,20 @@ The **All deferral schedules** page contains the following fields:
 |**Billing schedule number**|Displays the number of the corresponding billing schedule. |
 |**Billing line status**|Displays the status of corresponding the billing schedule line item. |
 |**External references**|Displays information for external references from the billing schedule: **External** and **Line number**. |
-|**Totals**|Displays amount totals for the deferral schedule: <br />* Long-term (sum total of the long-term deferred amounts)  <br />Available when **Short-term deferral method** is **None** on the **Revenue and expense deferrals parameters** page, or the short-term amount is greater than zero. <br />Short-term (sum total of the short-term deferred amounts)  <br />Available when **Short-term deferral method** is **None** on the **Revenue and expense deferrals parameters** page, or the short-term amount is greater than zero.<br />Unrecognized (sum total of the unrecognized amount for all lines)<br />Stubbed (sum total of the externally posted amount for all lines)<br />Recognized (sum total of the recognized amount for all lines.)<br />Externally posted and recognized (sum total of the externally posted and recognized amount for all lines).<br />Total amount (sum total of the amount for all lines)|
+|**Totals**|Displays amount totals for the deferral schedule: <br />Long-term (sum total of the long-term deferred amounts)  <br />Available when **Short-term deferral method** is **None** on the **Revenue and expense deferrals parameters** page, or the short-term amount is greater than zero. <br />Short-term (sum total of the short-term deferred amounts)  <br />Available when **Short-term deferral method** is **None** on the **Revenue and expense deferrals parameters** page, or the short-term amount is greater than zero.<br />Unrecognized (sum total of the unrecognized amount for all lines)<br />Stubbed (sum total of the externally posted amount for all lines)<br />Recognized (sum total of the recognized amount for all lines.)<br />Externally posted and recognized (sum total of the externally posted and recognized amount for all lines).<br />Total amount (sum total of the amount for all lines)|
 |**Schedule lines**|
 |**Line**|Displays the line sequence number. |
 |**Deferral start date**|The start date of the deferral schedule. |
-|**Deferral  end date**|The end date of the deferral schedule. |
-|**Amount**|Displays he deferral amount. |
-|**Externally posted**|Displays whether the line has been externally posted or not. |
-|**Recognized**|Displays whether the line has been recognized or not. |
-|**Recognition date**|Displays the recognition date. |
+|**Deferral end date**|The end date of the deferral schedule. |
+|**Amount**|The deferral amount. |
+|**Externally posted**|Displays if the line has been externally posted or not. |
+|**Recognized**|Displays if the line has been recognized or not. |
 |**Journal batch number**|Displays the batch number in which the amount was recognized. |
-|**Voucher**|Displays the voucher number for the line. |
 |**Event Description**|Displays a description of the event. Available for event-based deferral schedules. |
 |**Credit adjustments**|
 |**Invoice**|Displays the invoice number.<br />This invoice for the credit note adjustment that has already been applied to the deferral schedule. |
 |**Applied amount**|Displays the credit adjustment amount that has already been applied to the deferral schedule. |
 |**Applied date**|Displays the date on which the credit adjustment was applied. |
-|**User**|Displays the user ID who performed the transaction. |
 |**Adjustment**|The adjustment values appear only if a credit memo was processed for the deferral schedule. If no credit note is processed, these values are hidden. |
 |**Adjustment amount**|Displays a sum total of the adjustment amount, calculated as follows: original amount - schedule amount. |
 |**Original end date**|Displays the original end date for the deferral schedule.|
