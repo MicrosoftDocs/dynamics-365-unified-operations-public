@@ -30,7 +30,6 @@ ms.dyn365.ops.version: 10.0.24
 # Terminate billing schedules
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic explains how to terminate a billing schedule line in Subscription billing. When you terminate a billing schedule, the billing schedule must have a status of **Active**. It can't have a status of **On hold**. The line must also have a status of **Active** when you terminate a billing schedule line. The header section of the billing schedule is not affected when terminating a billing schedule ine. 
 
