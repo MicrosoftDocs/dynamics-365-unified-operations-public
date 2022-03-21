@@ -43,12 +43,14 @@ To set up and schedule the *Sales history cleanup* periodic task, follow these s
 1. Analyze your business needs to find out how many days of historic sales order posting data you need to keep. We usually recommend running the cleanup task every 3 months, with a maximum of every 6 months.
 1. Go to **Sales and marketing > Period tasks > Cleanup > Sales update history cleanup**.
 1. The **Clean up sales update history** dialog opens. Make the following settings on the **Parameters** FastTab:
-    - **Clean up** – <!-- KFM: Description needed --> Select one of the following values:
+    - **Clean up** – Choose which types of records to clean up. Select one of the following values:
         - **Executed** – <!-- KFM: Description needed -->
         - **Executed and erroneous** – <!-- KFM: Description needed -->
-        - **All** –  <!-- KFM: Description needed -->
-    - **Created until** –<!-- KFM: Description needed -->
-    - **Retain records based on age** –<!-- KFM: Description needed -->
-    - **Maximum age** – <!-- KFM: Description needed -->
+        - **All** – <!-- KFM: Description needed -->
+    - **Retain records based on age** – Choose whether to clean up records based on their age on the day the task runs, or instead to delete records created before a fixed date. If you are scheduling this cleanup as a recurring task, then you should set this option to *Yes* because the age is always calculated relative to the date the task is run.
+        - Set to *Yes* to enable the **Maximum age** setting, which establishes the maximum age of records to keep each time the task runs (ignores the **Created until** setting).
+        - Set to *No* to enable the **Created until** setting, which sets a specific date for the oldest records to keep (ignores the **Maximum age** setting).
+    - **Created until** – This setting only applies when **Retain records based on age** is set to *No*. Set the oldest creation date of records to keep after the task runs. Records created before this date will be deleted.
+    - **Maximum age** – This setting only applies when **Retain records based on age** is set to *Yes*. Set the maximum age (in days) of records to keep each time the task runs. Older records will be deleted.
 1. On the **Run in the background** FastTab, specify how, when, and how often to run the task. Use these settings to implement the schedule you decided on in step 1. The fields work just as they do for other types of [batch jobs](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Supply Chain Management.
 1. Select **OK** to apply your settings and close the dialog.
