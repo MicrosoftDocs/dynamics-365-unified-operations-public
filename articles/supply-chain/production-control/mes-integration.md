@@ -114,13 +114,13 @@ The following table shows the fields that each line in the `ReportFinishedLines`
 | `ReportedGoodQuantity` | Optional | Real|
 | `ReportedErrorCatchWeightQuantity` | Optional | Real |
 | `ReportedGoodCatchWeightQuantity` | Optional | Real |
-| `AcceptError` | Optional | Enum (Yes | No) |
+| `AcceptError` | Optional | Enum (Yes \| No) |
 | `ErrorCause` | Optional | Enum (None \| Material \| Machine \| OperatingStaff), extensible |
 | `ExecutedDateTime` | Optional | DateTime |
 | `ReportAsFinishedDate` | Optional | Date |
 | `AutomaticBOMConsumptionRule` | Optional | Enum (FlushingPrincip \| Always \| Never) |
 | `AutomaticRouteConsumptionRule` | Optional |Enum (RouteDependent \| Always \| Never) |
-| `RespectFlushingPrincipleDuringOverproduction` | Optional | Enum (Yes | No) |
+| `RespectFlushingPrincipleDuringOverproduction` | Optional | Enum (Yes \| No) |
 | `ProductionJournalNameId` | Optional | String |
 | `PickingListProductionJournalNameId` | Optional | String|
 | `RouteCardProductionJournalNameId` | Optional | String |
@@ -128,11 +128,11 @@ The following table shows the fields that each line in the `ReportFinishedLines`
 | `ToOperationNumber` | Optional | Integer|
 | `InventoryLotId` | Optional | String |
 | `BaseValue` | Optional | String |
-| `EndJob` | Optional | Enum (Yes | No) |
-| `EndPickingList` | Optional | BEnum (Yes | No) |
-| `EndRouteCard` | Optional | Enum (Yes | No) |
-| `PostNow` | Optional | Enum (Yes | No) |
-| `AutoUpdate` | Optional | Enum (Yes | No) |
+| `EndJob` | Optional | Enum (Yes \| No) |
+| `EndPickingList` | Optional | BEnum (Yes \| No) |
+| `EndRouteCard` | Optional | Enum (Yes \| No) |
+| `PostNow` | Optional | Enum (Yes \| No) |
+| `AutoUpdate` | Optional | Enum (Yes \| No) |
 | `ProductColorId` | Optional | String|
 | `ProductConfigurationId` | Optional | String |
 | `ProductSizeId` | Optional | String |
@@ -176,7 +176,7 @@ The following table shows the fields that each line in the `PickingListLines` se
 | `OperationNumber` | Optional | Integer |
 | `LineNumber` | Optional | Real |
 | `PositionNumber` | Optional | String |
-| `IsConsumptionEnded` | Optional | Enum (Yes | No) |
+| `IsConsumptionEnded` | Optional | Enum (Yes \| No) |
 | `ErrorCause` | Optional | Enum (None \| Material \| Machine \| OperatingStaff), extensible |
 | `InventoryLotId` | Optional | String |
 
@@ -212,9 +212,9 @@ The following table shows the fields that each line in the `RouteCardLines` sect
 | `ConsumptionDate` | Optional | Date |
 | `TaskType` | Optional | Enum (QueueBefore \| Setup \| Process \| Overlap \| Transport \| QueueAfter \| Burden) |
 | `ErrorCause` | Optional | Enum (None \| Material \| Machine \| OperatingStaff), extensible |
-| `OperationCompleted` | Optional | Enum (Yes | No) |
-| `BOMConsumption` | Optional | Enum (Yes | No) |
-| `ReportAsFinished` | Optional | Enum (Yes | No) |
+| `OperationCompleted` | Optional | Enum (Yes \| No) |
+| `BOMConsumption` | Optional | Enum (Yes \| No) |
+| `ReportAsFinished` | Optional | Enum (Yes \| No) |
 
 ### End production order message
 
@@ -225,9 +225,9 @@ For the *end production order* message, the `_messageType` value is `ProdProduct
 | `ProductionOrderNumber` | Mandatory | String |
 | `ExecutedDateTime` | Optional | DateTime |
 | `EndedDate` | Optional | Date |
-| `UseTimeAndAttendanceCost` | Optional | Enum (Yes | No) |
-| `AutoReportAsFinished` | Optional | Enum (Yes | No) |
-| `AutoUpdate` | Optional | Enum (Yes | No) |
+| `UseTimeAndAttendanceCost` | Optional | Enum (Yes \| No) |
+| `AutoReportAsFinished` | Optional | Enum (Yes \| No) |
+| `AutoUpdate` | Optional | Enum (Yes \| No) |
 
 ## Receive feedback about the state of a message
 
