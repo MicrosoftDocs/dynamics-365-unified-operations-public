@@ -4,7 +4,7 @@
 title: Prepare your environment to interoperate with ID-porten and Altinn web services
 description: This topic explains how to prepare your environment to interoperate with ID-porten and Altinn web services.
 author: liza-golub
-ms.date: 01/20/2022
+ms.date: 03/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -97,7 +97,7 @@ Application-specific parameters for the **VAT Declaration XML (NO)** and **VAT D
 | [StandardTaxCodes_Lookup](#standard-tax-code) | The VAT code that is provided by the Norwegian Tax Administration. | During the runtime of the report, this lookup field is used to find the standard tax code for the sales tax code that is used in sales tax posting in Finance, and to report it in the `<mvaKode>` tag of the report. |
 
 > [!NOTE]
-> We recommend that you enable the **Accelerate the ER labels storage** feature in the **Feature management** workspace. This feature helps improve network bandwidth utilization and overall system performance because, in most cases, ER labels of a single language are used when you work with a single ER configuration. The **Accelerate the ER labels storage** feature is available in the **Feature management** workspace as of Finance version 10.0.25. For more information about how to set up the parameters of an ER format for each legal entity, see [Design multilingual reports in Electronic reporting \> Performance](../../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports#performance).
+> We recommend that you enable the **Accelerate the ER labels storage** feature in the **Feature management** workspace. This feature helps improve network bandwidth utilization and overall system performance because in most cases, ER labels of a single language are used when you work with a single ER configuration. The **Accelerate the ER labels storage** feature is available in the **Feature management** workspace as of Finance version 10.0.25. For more information about how to set up the parameters of an ER format for each legal entity, see [Design multilingual reports in Electronic reporting \> Performance](../../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports#performance).
 
 Follow these steps to set up the application-specific parameters for the **VAT Declaration XML (NO)** and **VAT Declaration Excel (NO)** ER formats.
 
@@ -264,14 +264,14 @@ The following table shows the lookup results for **StandardTaxCodes_Lookup**.
 > The reverse charge mechanism enables a document to be posted that has two tax transactions: one where the direction is **Sales tax payable**, and one where it's **Sales tax receivable**. Those transactions are then reported in the VAT return as two lines.
 
 > [!NOTE]
-> Purchases of goods and services from abroad without deduction entitlement that are subject to the following `mvaKode` values must be reported in the VAT return by using one line where the direction is **Sales tax payable**. We recommend that you post these documents by using the [reverse charge mechanism for the VAT/GST scheme](emea-reverse-charge.md) where the sales tax code set up with positive tax rate has non-deductible percent equal to 100.
+> Purchases of goods and services from abroad without deduction entitlements that are subject to the following `mvaKode` values must be reported in the VAT return by using one line where the direction is **Sales tax payable**. We recommend that you post these documents by using the [reverse charge mechanism for the VAT/GST scheme](emea-reverse-charge.md) where the sales tax code set up with positive tax rate has non-deductible percent equal to 100.
 >
 > - **82** – Purchases of goods from abroad without deduction entitlement (standard rate).
 > - **84** – Purchases of goods from abroad without deduction entitlement (middle rate).
 > - **87** – Purchases of services from abroad without deduction entitlement (standard rate).
 > - **89** – Purchases of services from abroad without deduction entitlement (low rate). 
 >
-> The reverse charge mechanism enables a document to be posted that has two tax transactions: one where the direction is **Sales tax payable**, and one where it's **Sales tax receivable**. Transaction where the direction is **Sales tax payable** then reported in the VAT return and transaction where the direction is **Sales tax receivable** will not be reported in the VAT return.
+> The reverse charge mechanism enables a document to be posted with two tax transactions: one where the direction is **Sales tax payable**, and one where it's **Sales tax receivable**. The transaction where the direction is **Sales tax payable** is then reported in the VAT return. The transaction where the direction is **Sales tax receivable** isn't reported in the VAT return.
 
 ## <a id="em-setup"></a>Import a package of data entities that includes a predefined EM setup
 
