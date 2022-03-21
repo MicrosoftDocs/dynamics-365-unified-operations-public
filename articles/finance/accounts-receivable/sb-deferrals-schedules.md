@@ -43,103 +43,123 @@ Deferral schedules are created after a transaction has been posted.
 
 ## Recognize Revenue
 
-To recognize revenue for a deferral schedule, follow these steps: 
-1. From the **[Schedules](#)** page in the **Lines** grid, select the lines you want to recognize, and click **Recognize**. 
-1. On the **[Recognition Processing](RecogProc.md)** page, set **Recognition action** to **Create recognition journal** and select the **Cutoff date**. <br />The **Cutoff date** is the date until which to include lines. Only the lines that have an end date earlier or the same as the **Cutoff date** are included in the processing. 
-1. Click **Select** and add data filters so that only the range of records that you want appears in the list.
+To recognize revenue for one deferral schedule follow step 1. To recognize revenue for multiple schedules start with step 2. 
+1. From the **All deferral schedules** page in the **Schedule lines** grid, select the lines you want to recognize, and click **Recognize**. 
+1. On the **Recognition Processing** page, set **Recognition action** to **Create recognition journal** and select the **Cutoff date**. The **Cutoff date** is the date until which to include lines. Only the lines that have an end date earlier or the same as the **Cutoff date** are included in the processing. 
+1. Click **Filter** and add data filters so that only the range of records that you want appears in the list. Select **View preview** to see the lines. 
 1. From the lines list, select the lines that you do not want to process, and click **Remove**.
 1. The journal **Name** and **Description** are automatically updated with the default values. If needed change the values.   
 You can select whether to summarize the recognition journal entry.  
 1. For the **Transaction date** section, select whether to override the transaction date with a specific date to process the transaction. And you can specify the transaction date for closed periods.  
-1. To  process as part of a batch, click **Batch**, which opens the **Batch processing** page.   
-Complete the parameters for the batch and click **OK** to return back to the **[Recognition Processing](RecogProc.md)** page.   
-The revenue recognition is processed at a later time when the batch is processed. 
-1. Select **OK**.  <br />If you did not add this transaction to a batch, all lines are processed immediately. Otherwise, the lines are processed when the batch is processed. 
+1. To  process as part of a batch, click **Batch**, which opens the **Batch processing** page. Complete the parameters for the batch and click **OK** to return back to the **Recognition Processing** page. The revenue recognition is processed at a later time when the batch is processed. 
+1. Select **Process**. If you did not add this transaction to a batch, all lines are processed immediately. Otherwise, the lines are processed when the batch is processed. 
 
 ## Modify Schedule
 
 To modify a deferral schedule, follow these steps: 
-1. From the **[All Deferral Schedules](ComSchedList.md)** list or the **[Schedules](#)** form, select the deferral schedule you want, and click **Accounting > Modify schedule**. 
-1. On the **[Modify Schedule](ComModSched.md)** page, edit any of the options that you want to change. <br />Depending on the deferral schedule, you can edit only some of the options. 
+1. From the **All deferral schedules** page, select the deferral schedule you want, and click **Accounting > Modify schedule**. 
+1. On the **Modify Schedule** page, edit any of the options that you want to change. Depending on the deferral schedule, you can edit only some of the options. 
 1. Click **Preview** to review the changes of the deferral schedule, and then close the preview. 
 1. Select **OK**.
 
-## Modify Deferral or Recognition Account
+### Straight line
+
+If the deferral schedule has no recognized or externally posted lines, the whole deferral schedule, including the start date, can be modified. 
+
+If the deferral schedule has any recognized or externally posted lines and you modify the deferral schedule, the resulting behavior of the deferral schedule depends on the **Recalculation date** and the deferral end date of recognized lines. This defaults to the first period not recognized. To use the date of recognition select **Start of schedule** and the first recognition date will populate in **Recalculation date**.   
+* **Catch up**: The amount after all recognized lines is recalculated.
+* **Reversal**: Any lines after the recalculation date are reversed using the specified journal name and posting date. The amount after the recalculation date is then recalculated. 
+
+If a template is used then the skipped periods are ignored, and the template is used only to calculate the end date.
+
+### Event-Based
+
+For an event-based deferral schedule, all unrecognized lines can be modified. The validation used on the **Transaction Deferral** page is the same validation that is used to validate the lines on this form. 
+
+If recognized or externally posted lines exist, the template and allocation type for the deferral schedule cannot be modified. Also, when modifying an existing deferral schedule, you cannot change the value for **Create separate events per unit**. 
+
+If a line is recognized or externally posted, the **Recognized** check box is selected.
+
+
+## Modify deferral or recognition account
 
 To modify the deferral or recognition account for a deferral schedule, follow these steps: 
-1. From the **[All Deferral Schedules](ComSchedList.md)** list or the **[Schedules](#)** form, select the deferral schedule you want, and click **Accounting > Modify account**. 
-1. On the **[Modify Account](ComSchedReclass.md)** page, select the account you want to change  (deferral, short-term, or recognition). 
+1. From the **All deferral schedules** page, select the deferral schedule you want, and click **Accounting > Modify account**. 
+1. On the **Modify Account** page, select the account you want to change (deferral, short-term, or recognition). 
 1. Select the **New account**. 
 1. Select whether changing the account creates adjustment journal entries. If you select yes, select the **Journal name** and specify the **Transaction date**. 
 1. Select **OK**.
 
-## Put Schedule on Hold
+## Put deferral schedule on Hold
 
 To put a deferral schedule on hold, follow these steps: 
-1. From the **[All Deferral Schedules](ComSchedList.md)** list or the **[Schedules](#)** form, select the deferral schedule you want, and click **Hold > Place hold**. 
-1. On the **[Place Hold](ComSchedHoldPlace.md)** page, select whether you want to  transfer the balance from the deferral account ot the hold account. 
+1. From the **All deferral schedules** page, select the deferral schedule you want, and click **Hold > Place hold**. 
+1. On the **Place Hold** page, select whether you want to transfer the balance from the deferral account ot the hold account. 
 1. If you select to transfer the balance, select the **Journal name** and the **On hold account**, and specify the **Transaction date**. 
 1. Select **OK**.
 
-## Remove Hold from Schedule
+## Remove hold from deferral schedule
 
 Remove a deferral schedule from a hold: 
-1. From the **[All Deferral Schedules](ComSchedList.md)** list  or the **[Schedules](#)** form, select the deferral schedule you want, and click **Hold > Remove hold**. <br />The **[Remove Hold](ComSchedHoldRmv.md)** page opens. 
+1. From the **All deferral schedules** list, select the deferral schedule you want, and click **Hold > Remove hold**. The **Remove Hold** page opens. 
 1. When this page opens, do the following: 
    1. Select the **Journal name**. 
    1. Specify the **Transaction date**. 
    1. Select **OK**.
 
-## Cancel Unrecognized Amounts
+## Cancel unrecognized amounts
+
+**Note** Any lines that have already been recognized or posted externally are excluded from this process. 
 
 To cancel unrecognized amounts on a deferral schedule, follow these steps: 
-1. From the **[All Deferral Schedules](ComSchedList.md)** list  or the **[Schedules](#)** form, select the deferral schedule you want, and click **Cancel > Unrecognized amounts**. 
-1. On the **[Cancel Unrecognized Amount](ComSchedCnclUnregnz.md)** page, select whether to **Create cancellation entries**. 
+1. From the **All deferral schedules** page, select the deferral schedule you want, and click **Cancel > Unrecognized amounts**. 
+1. On the **Cancel unrecognized amount** page, select whether to **Create cancellation entries**. 
 1. If you choose to create cancellation entries, select  the **Journal name** and the **Cancellation account**, and specify the **Transaction date**. 
 1. Select **OK**.
 
-## Cancel Entire Schedule
 
-to cancel an entire deferral schedule, follow these steps: 
-1. From the **[All Deferral Schedules](ComSchedList.md)** list  or the **[Schedules](#)** form, select the deferral schedule you want, and click **Cancel > Entire Schedule**. 
-1. On the **[Cancel Entire Schedule](ComSchedCnclEntire.md)** page, select whether to **Create cancellation entries**. 
+## Cancel complete schedule
+
+Use this page to reverse any recognized or externally posted amounts and cancel the deferral schedule to prevent further recognition. 
+
+To cancel an entire deferral schedule, follow these steps: 
+1. From the **All deferral schedules** page, select the deferral schedule you want, and click **Cancel > Complete schedule**. 
+1. On the **Cancel complete schedule** page, select whether to **Create cancellation entries**. 
 1. If you select to create cancellation entries, select  the **Journal name** and the **Cancellation account**. Also, specify the **Transaction date**. 
 1. Select **OK**.
 
 ## Reverse Transactions
 
-To reverse transactions for a deferral schedule, follow these steps: 
-1. From the **[Schedules](#)** page in the **Lines** grid, select the lines you want to recognize, and click **Reverse**. 
-1. On the **[Recognition Processing](RecogProc.md)** page, set **Recognition action** to **Reverse recognition journal** and select the **Cutoff date**.<br />The **Cutoff date** is the date until which to include lines. Only the lines that have an end date earlier or the same as the **Cutoff date** are included in the processing. 
-1. Click **Select** and add data filters so that only the range of records that you want appears in the list.
+To reverse transactions for one deferral schedule, follow step 1.To reverse transactions for multiple schedules start with step 2. 
+1. From the **All deferral schedules** page in the **Lines** grid, select the lines you want to unrecognize, and click **Reverse**. 
+1. On the **Recognition processing** page, set **Recognition action** to **Reverse recognition journal** and select the **Cutoff date**. The **Cutoff date** is the date until which to include lines. Only the lines that have an end date earlier or the same as the **Cutoff date** are included in the processing. 
+1. Click **Filter** and add data filters so that only the range of records that you want appears in the list. Select **View preview** to see the lines.
 1. From the lines list, select the lines that you do not want to process, and click **Remove**.
-1. The journal **Name** and **Description** are automatically updated with the default values. If needed change the values.   
-You can select whether to summarize the recognition journal entry. 
-1. For the **Transaction date** section, select whether to override the transaction date with a specific date to process the transaction. And you can specify the transaction date for closed periods. 
-1. To  process as part of a batch, click **Batch**, which opens the **Batch processing** page.   
-Complete the parameters for the batch and click **OK** to return back to the **[Recognition Processing](RecogProc.md)** page.   
-The revenue recognition is processed at a later time when the batch is processed.
-1. Select **OK**.  <br />If you did not add this transaction to a batch, all lines are processed immediately. Otherwise, the lines are processed when the batch is processed. 
-
+1. The journal **Name** and **Description** are automatically updated with the default values. If needed change the values. You can select whether to summarize the recognition journal entry. 
+1. For the **Transaction date** section, select whether to override the transaction date with a specific date to process the transaction and specify the transaction date for closed periods. 
+1. To  process as part of a batch, click **Batch** to open the **Batch processing** page.   
+Complete the parameters for the batch and click **OK** to return back to the **Recognition processing** page.   
+The reverse revenue recognition is processed at a later time when the batch is processed.
+1. Select **OK**.  If you did not add this transaction to a batch, all lines are processed immediately. Otherwise, the lines are processed when the batch is processed. 
 
 
 ## Apply or Unapply a Credit Note
 
 To apply a credit note, follow these steps: 
 
-In most situations, these steps are not needed. When you create a credit note from the [Sales Order Transaction Deferral](TransSalesOrderDef.md) page, and set **Adjust existing schedule** to **Yes**, the credit not is automatically applied to the schedule when the credit note is posted. 
-1. From the **[All Deferral Schedules](ComSchedList.md)** list  or the **[Schedules](#)** form, select the deferral schedule you want. 
+In most situations, these steps are not needed. When you create a credit note from the **Sales order transaction deferral** page and set **Adjust existing schedule** to **Yes**, the credit note is automatically applied to the schedule when the credit note is posted. 
+1. From the **All deferral schedules** page, select the deferral schedule you want. 
 1. In the **Credit adjustments** lines, select a line and click **Apply**. 
-1. On the **[Apply Credit Note (Deferrals)](ApplyCrNote.md)** page, specify the **Recalculation date** and **End date** as needed. 
+1. On the **Apply credit note (deferrals)** page, specify the **Recalculation date** and **End date** as needed. 
 1. In the **Header** list, select the **Sales order** that has credit notes you want to review and process. 
 1. In the **Lines** list, select the line you want to process. 
 1. Select **OK**.
 1. When you are asked to confirm the action, select **Yes**.
 
-![Note icon](../../../Resources/images/icons/iAXnote.gif)**Note:** To apply a credit note to several individual items from different invoices, you must repeat these steps. 
+**Note:** To apply a credit note to several individual items from different invoices, you must repeat these steps. 
 
 To unapply a credit note, follow these steps: 
-1. From the [All Deferral Schedules](ComSchedList.md) list  or the [Schedules](#) page, select the deferral schedule you want. 
+1. From the **All deferral schedules** page, select the deferral schedule you want. 
 1. In the **Credit adjustments** lines, select the **Invoice** you want and click **Unapply**. 
 1. When you are asked to confirm the action, select **Yes**.
 
@@ -159,29 +179,29 @@ This page contains the following fields:
 |**Schedule type**|Displays the deferral schedule type. |
 |**Allocation type**|For event-based deferrals, displays the allocation type: **Percentage** or **Amount**. |
 |**Description**|Displays a description for the deferral schedule. |
-|**Reclassification date**|Displays the most recent date on which the short-term reclassification for a deferral schedule is processed. This date is updated each time the [Event Short-Term Reclassification Processing](ShrtTrmRecalcProc.md) is used for the deferral schedule. <br />Available only when the short-term deferral method used is rolling periods or fixed year. |
+|**Reclassification date**|Displays the most recent date on which the short-term reclassification for a deferral schedule is processed. This date is updated each time the Event short-term reclassification processing is used for the deferral schedule. Available only when the short-term deferral method used is rolling periods or fixed year. |
 |**Account**
 |**Deferral account**|Displays the account used for the deferral amount. |
 |**Recognition account**|Displays the account used for the recognition amount. |
 |**Recognition type**|Displays the recognition type. |
-|**Distribution type**|Displays the distribution type.  For information purposes only.|
+|**Distribution type**|Displays the distribution type. For information purposes only.|
 |**Transaction**|
 |**Creation source**|Displays the source from which the transaction was created. |
 |**Transaction type**|Displays the transaction type. |
 |**Sales order**|Displays the sales order number. |
 |**Invoice**|Displays the invoice number.|
-|**Item *|Displays the item number. |
+|**Item**|Displays the item number. |
 |**Billing Schedule**|
-|**Billing schedule number**|Displays the number of the corresponding billing schedule. Select the link to view the [Billing Schedules](../../AX_ARCB/enduser/BillSched.md) page. |
+|**Billing schedule number**|Displays the number of the corresponding billing schedule. |
 |**Billing line status**|Displays the status of corresponding the billing schedule line item. |
 |**External references**|Displays the information for external references from the billing schedule: **External** and **Line number**. |
-|**Totals**|Displays the following amount totals for the deferral schedule: <br />* Long-term (sum total of the long-term deferred amounts)  <br />Available when **Short-term deferral method** is **None** on the [Advanced Revenue &amp; Expense Deferrals Parameters](../setup/Parameter.md) page, or the short-term amount is greater than zero. <br />* Short-term ( sum total of the short-term deferred amounts)  <br />Available when **Short-term deferral method** is **None** on the [Advanced Revenue &amp; Expense Deferrals Parameters](../setup/Parameter.md) page, or the short-term amount is greater than zero.<br />* Unrecognized (sum total of the unrecognized amount for all lines)<br />* Stubbed (sum total of the stubbed amount for all lines)<br />* Recognized (sum total of the recognized amount for all lines.)<br />* Stubbed and recognized (sum total of the stubbed and recognized amount for all lines. )<br />* Total amount ( sum total of the amount for all lines)|
+|**Totals**|Displays the following amount totals for the deferral schedule: <br />* Long-term (sum total of the long-term deferred amounts)  <br />Available when **Short-term deferral method** is **None** on the **Revenue and expense deferrals parameters** page, or the short-term amount is greater than zero. <br />* Short-term ( sum total of the short-term deferred amounts)  <br />Available when **Short-term deferral method** is **None** on the **Revenue and expense deferrals parameters** page, or the short-term amount is greater than zero.<br />* Unrecognized (sum total of the unrecognized amount for all lines)<br />* Stubbed (sum total of the externally posted amount for all lines)<br />* Recognized (sum total of the recognized amount for all lines.)<br />* Externally posted and recognized (sum total of the externally posted and recognized amount for all lines. )<br />* Total amount ( sum total of the amount for all lines)|
 |**Schedule lines**|
 |**Line**|Displays the line sequence number. |
 |**Deferral start date**|Displays the start date of the deferral schedule. |
 |**Deferral  end date**|Displays the end date of the deferral schedule. |
 |**Amount**|Displays the deferral amount. |
-|**Stubbed**|Displays whether the line has been stubbed or not. |
+|**Externally posted**|Displays whether the line has been externally posted or not. |
 |**Recognized**|Displays whether the line has been recognized or not. |
 |**Recognition date**|Displays the recognition date. |
 |**Journal batch number**|Displays the batch number in which the amount was recognized. |
