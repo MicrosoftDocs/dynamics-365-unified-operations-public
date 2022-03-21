@@ -38,7 +38,7 @@ A fiscal archive can be exported from a closed period grand total journal. (For 
 
 You can verify the integrity of the fiscal archive and its data by using the [Fiscal archive integrity verification tool](#fiscal-archive-integrity-verification-tool).
 
-The XML format of the fiscal archive is implemented by using [Electronic reporting (ER)](../../dev-itpro/analytics/general-electronic-reporting.md). For information about how to import and apply the ER configurations that are required to export fiscal archives, see [Configure the archive export format](./emea-fra-cash-registers.md#configure-the-archive-export-format).
+The XML format of the fiscal archive is implemented by using [Electronic reporting (ER)](../../dev-itpro/analytics/general-electronic-reporting.md). For information about how to import and apply the ER configurations that are required to export fiscal archives, see [Configure the Z report and archive export formats](./emea-fra-cash-registers.md#configure-the-z-report-and-archive-export-formats).
 
 ## Fiscal archive structure
 
