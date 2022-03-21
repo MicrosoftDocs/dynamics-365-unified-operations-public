@@ -110,9 +110,9 @@ Before you can use this feature, it must be turned on in your system. Admins can
 - **Module:** *Warehouse management*
 - **Feature name:** *Scan GS1 bar codes*
 
-## Turn on the Enhanced GS1 Parser feature
+### Turn on the Enhanced parser for GS1 barcodes feature
 
-In addition to the *Scan GS1 bar codes*, administrators can turn on the feature *Enhanced GS1 Parser*. This feature enables the use of an improved implementation of the GS1 bar code parser, which has the following improvements:
+In addition to the *Scan GS1 bar codes*, administrators can turn on the feature *Enhanced parser for GS1 barcodes*. This feature enables the use of an improved implementation of the GS1 bar code parser, which has the following improvements:
 
 - Follows the GS1 General Specification algorithm for symbol data parsing and validates that the data in the symbol is valid as per GS1 General Specifications.
 - Does not require the setup of "maximum length of AI" and uses longest prefix matching from configured AIs.
@@ -172,7 +172,7 @@ To set up and customize your GS1 own application identifiers, follow these steps
 
 1. Set the following fields for the new or selected identifier:
 
-    - **Application identifier** – Enter the identification code for the application identifier. Typically, this code is a two-digit integer, but it can be longer. For decimal values, the last digit indicates the number of decimal places. For more information, see the description of the **Decimal** checkbox later in this list. If the **Enhanced GS1 Parser** feature is enabled, then you can create a single application identifier for all decimal place variants by putting the letter *n* as the last character in the application identifier.
+    - **Application identifier** – Enter the identification code for the application identifier. Typically, this code is a two-digit integer, but it can be longer. For decimal values, the last digit indicates the number of decimal places. For more information, see the description of the **Decimal** checkbox later in this list. If the **Enhanced parser for GS1 barcodes** feature is enabled, then you can create a single application identifier for all decimal place variants by putting the letter *n* as the last character in the application identifier.
     - **Description** – Enter a short description of the identifier.
     - **Fixed length** – Select this checkbox if values that are scanned by using this application identifier have a fixed number of characters. Clear this checkbox if the length of values is variable. In this case, you must indicate the end of the value by using the group separator character that you specified on the **Warehouse management parameters** page.
     - **Length** – Enter the maximum number of characters that can appear in the values that are scanned by using this application identifier. If the **Fixed length** checkbox is selected, exactly this number of characters is expected.
