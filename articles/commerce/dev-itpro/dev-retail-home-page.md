@@ -25,7 +25,7 @@ This page lists the resources that are available for IT pros and developers who 
 
 ## Components and architecture
 
-- [Commerce components](/dynamics365/commerce/dev-itpro/commerce-architecture)
+- [Commerce components](/dynamics365/commerce/commerce-architecture)
 - [Modern POS (MPOS) architecture](retail-modern-pos-architecture.md)
 - [Headless commerce engine architecture](retail-server-architecture.md)
 - [Publish an online store channel](retail-online-store-publishing-architecture.md)
