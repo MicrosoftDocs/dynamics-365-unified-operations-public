@@ -1,7 +1,7 @@
 ---
 # required metadata
-title: This topic explains how to set up revenue and expense deferrals in Subscription billing.
-description: This topic 
+title: Revenue and expense deferrals in Subscription billing.
+description: This topic explains how to set up revenue and expense deferrals in Subscription billing.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
