@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 10.0.24
 
 ---
 
-# Billing schedule overview
+# Create billing schedules
 
 [!include [banner](../includes/banner.md)]
 
