@@ -290,7 +290,7 @@ You can use the following options to review the reports of the replication valid
 - **Clear:** Clear the environment setup activity. All information is cleared from the cache, such as the **project-Id** value, **Environment-Id** value, and source database details.
 - **Help:** Show the data upgrade migration options with the updated status.
 - **Exit:** Close the application.
-- **Set-failed:** If you want to delete the environment and if the environment is any one of these state (PreparingForReplication, ReadyForReplication, Replicating & Replicated), use this option to Set Environment State to Failed and then environment can be deleted from the LCS portal.
+- **Set-failed:** If you want to delete the environment--and if the environment is in the **PreparingForReplication**, **ReadyForReplication**, or **Replicating & Replicated)** state--use this option to set the environment state to **Failed**, and then the environment can be deleted from  LCS.
 
 ## Troubleshooting
 
