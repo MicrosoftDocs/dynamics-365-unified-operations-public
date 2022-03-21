@@ -132,7 +132,7 @@ follow these steps.
 
 Electronic messaging (EM) functionality is provided to maintain the different processes that are used in electronic reporting for different document types. For more information about electronic messages, see [Electronic messaging](../general-ledger/electronic-messaging.md).
 
-#### Download and import the data package that has example settings for electronic messages
+#### <a name="import-em"></a>Download and import the data package that has example settings for electronic messages
 
 The process of setting up the Electronic messages functionality to generate the VAT declaration for Finland in TXT format and preview it in Excel has many steps. Because the data of some entities is used in the ER configurations, use a set of predefined values that are delivered in a package of data entities for the related tables. You can extend these settings or create your own.
 
