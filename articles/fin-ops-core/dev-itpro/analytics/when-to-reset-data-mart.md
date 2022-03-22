@@ -53,6 +53,10 @@ If one or more of the following statements apply to your situation, your organiz
 Here are some of the circumstances where we don't recommend that you reset the data mart:
 
 - You're experiencing data integration performance issues.
+- Your integration Financial Reporter integration is disabled. 
+
+    - This means that General Ledger data is no longer being synchronized to your Financial Reporting datamart. Your Financial Reporter may not be getting the up-to-date numbers for your financial reports. This typically occurs if you have not use Financial Reporter for a long time.
+    - You will be prompted to re-enable integration by resetting the data mart. You can proceed by clicking yes here. You may also choose to reset the data mart at a later time. Once integration is re-enabled, your general ledger data will be synchronized in Financial Reporter once again. 
 - You have a recurring reset pattern for any of the following reasons:
 
     - **Missing or unexpected data in the report** – If you notice that data is missing, open a support ticket with Microsoft to review your report format and possible data synchronization issues.
