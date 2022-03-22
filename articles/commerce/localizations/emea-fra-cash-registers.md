@@ -103,7 +103,7 @@ The signature is created and recorded in the channel database at the same time t
 
 ### Digital signing of sales and return transactions
 
-Only transactions for cash sales or returns are signed. Here are some examples of transactions that are excluded from the signing process:
+Only transactions for cash sales and returns are signed. Here are some examples of transactions that are excluded from the signing process:
 
 - Prepayments (customer account deposits)
 - Quotations
@@ -123,7 +123,7 @@ The data that is signed for a sales or return transaction is a text string that 
 - The previous signature for the same register. A blank value is used for the first signed sales or return transaction.
 
 > [!NOTE]
-> Return transactions are considered regular sales transactions for digital signing purposes. This means that the signing process and the sequence of signatures for return transactions is the same as for sales transactions. The total amount of return is negative, that is, it includes the minus sign when it is added to the text string that is signed.
+> Return transactions are considered regular sales transactions for digital signing purposes. This means that the signing process for return transactions is the same as for sales transactions, and return transactions are included in the same sequence of signatures as sales transactions. The total amount of return is negative, that is, it includes the minus sign when it is added to the text string that is signed.
 
 You can view the transaction signature and the transaction data that was used to generate it on the **Fiscal transactions** FastTab of the **Store transactions** page in Commerce headquarters. By selecting **Extended data**, you can view specific properties of the fiscal transaction, such as the signature, sequential number, certificate thumbprint, and hash algorithm identification. 
 
