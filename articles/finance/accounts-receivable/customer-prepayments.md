@@ -91,4 +91,4 @@ You can use the **Customer payments** workspace to easily find and settle paymen
 4. Select the **Mark** check box for the invoice and the payment that will be settled.
 5. Select **Post**.
 
-For more information about how to settle open transactions, see [Settlement overview](/cash-bank-management/settlement-overview.md).
+For more information about how to settle open transactions, see [Settlement overview](/dynamics365/finance/cash-bank-management/settlement-overview).
