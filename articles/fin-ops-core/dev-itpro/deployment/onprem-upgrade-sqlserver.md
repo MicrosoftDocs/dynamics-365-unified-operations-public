@@ -16,7 +16,7 @@ ms.search.validFrom: 2021-11-29
 
 # Upgrade or replace the SQL Server instance of Microsoft Dynamics 365 Finance + Operations (on-premises) environments
 
-This topic explains how to upgrade the Microsoft SQL Server instance or cluster that your environment is using. You must complete this process if you want to upgrade from one major version of SQL Server to another but don't want to do an [in-place upgrade](/sql/database-engine/install-windows/choose-a-database-engine-upgrade-method.md). If you choose to do an in-place upgrade, you can still follow the guidance in this topic although some of the steps won't apply.
+This topic explains how to upgrade the Microsoft SQL Server instance or cluster that your environment is using. You must complete this process if you want to upgrade from one major version of SQL Server to another but don't want to do an [in-place upgrade](/sql/database-engine/install-windows/choose-a-database-engine-upgrade-method). If you choose to do an in-place upgrade, you can still follow the guidance in this topic although some of the steps won't apply.
 
 ## Prerequisites for upgrading the SQL Server version
 

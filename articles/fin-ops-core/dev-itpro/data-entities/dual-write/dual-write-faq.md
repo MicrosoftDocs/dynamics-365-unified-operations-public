@@ -116,7 +116,7 @@ Number sequences for Finance and Operations apps and customer engagement apps ar
 + In the Finance and Operations app, use **F0001, F0002, F0003**. In the customer engagement app, use **C0001, C0002, C0003**.
 + In the Finance and Operations app, use **US0001 to US4999**. In the customer engagement app, use **US5000 to US9999**.
 
-If a table is created in only one system, set up the number sequence in the source app only. For more information, see [Autonumber columns](/powerapps/maker/common-data-service/autonumber-columns).
+If a table is created in only one system, set up the number sequence in the source app only. For more information, see [Autonumber columns](/powerapps/maker/data-platform/autonumber-fields).
 
 ### Can I map a company-specific table in a customer engagement app with a global table in a Finance and Operations app, or a global table in a customer engagement app with a company-specific table in a Finance and Operations app?
 
