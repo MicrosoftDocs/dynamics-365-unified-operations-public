@@ -156,7 +156,7 @@ The **Receipt** node of a fiscal archive contains the following elements.
 | TaxRate                 | The tax rate. |
 | TaxAmount               | The total amount of tax for the tax rate. |
 | SequentialNumber        | The sequential number of the signed sales transaction for the register. |
-| DataToSign              | The string that was [built from the elements of the sales transaction record](./emea-fra-cash-registers.md#digital-signing-of-sales-transactions) and used for signing. |
+| DataToSign              | The string that was [built from the elements of the sales transaction record](./emea-fra-cash-registers.md#digital-signing-of-sales-and-return-transactions) and used for signing. |
 | DataToSignFormatVersion | The internal version of the format of data that was used for signing. |
 | Signature               | The digital signature of the sales transaction record. |
 | HashAlgorithm           | The hash algorithm that was used to hash the data before signing. |
