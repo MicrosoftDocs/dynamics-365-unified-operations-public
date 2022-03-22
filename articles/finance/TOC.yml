@@ -1543,7 +1543,7 @@
             - name: Finland reporting 
               items: 
               - name: VAT declaration
-                href: localizations/emea-fin-vat-declaration-mult-tax-id
+                href: localizations/emea-fin-vat-declaration-mult-tax-id.md
             - name: France reporting
               items: 
               - name: VAT declaration
