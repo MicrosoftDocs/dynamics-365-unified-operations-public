@@ -4,7 +4,7 @@
 title: Sales tax report for Finland
 description: This topic provides information about how to set up and generate the sales tax report for legal entities in Finland. 
 author: anasyash
-ms.date: 03/23/2020
+ms.date: 03/16/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -32,6 +32,9 @@ ms.dyn365.ops.version:
 This topic explains how to set up and generate the sales tax report for legal entities in Finland.
 
 For general information about how to set up the value-added tax (VAT) statement, see [VAT reporting for Europe](emea-vat-reporting.md).
+
+> [!NOTE]
+> Deprecated: By March 1, 2023, we will no longer support the Sales tax report for Finland (Finish report layout). New **VAT declaration TXT (FI**) and **VAT declaration Excel (FI)** Electronic reporting (ER) formats are introduced under the **Tax declaration** model. The Sales tax report for Finland design was based on reporting codes and the Finnish report layout. This design will be replaced by a new VAT declaration design, [VAT declaration for Finland](emea-fin-vat-declaration.md).
 
 ## Set up the report layout for sales tax authorities
 
