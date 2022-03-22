@@ -35,7 +35,7 @@ This topic explains how to terminate billing schedules and billing schedule line
 
 To terminate a billing schedule or billing schedule line, go to one of the following places:
 
-- The **All/Active billing schedules** list
+- The **All/Active billing schedules** list page
 - A specific billing schedule on the **All billing schedules** page
 - A specific billing schedule line on the **All billing schedules** page
 
@@ -70,7 +70,7 @@ A billing schedule has the following information:
 
 - The start date is January 1, 2020.
 - The end date is December 31, 2020.
-- The billing period is 100.00 per month.
+- The billing period amount is 100.00 per month.
 - Invoices have been created for billing periods from January through July.
 - The contract termination date is June 15, 2020.
 
