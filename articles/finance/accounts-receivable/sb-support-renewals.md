@@ -15,7 +15,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 539093
@@ -32,17 +32,18 @@ ms.dyn365.ops.version: 10.0.24
 [!include [banner](../includes/banner.md)]
 
 
-This topic explains how to enter detailed information about the support or renewal item when entering sales orders. This information is used to calculate the charge amount for the original support contract and/or the renewal amount for creating a billing schedule in Subscription billing. For example, your company sells a copier to a customer and you offer to provide a support contract for the first year of service with the option to renew that support contract yearly. The support item is the support contract for the first year and the Renewal item is the renewal every year after that. You can enter the support or renewal contract information, or both. When you enter the support contract information, only the support item is added to the sales order. When you enter the renewal contract information, the renewal item is used to create a billing schedule.
+This topic explains how to enter support or renewal items when entering sales orders. This information is used to calculate the charge amount for the original support contract and/or the renewal amount for creating a billing schedule in Subscription billing. For example, your company sells a copier to a customer and you offer to provide a support contract for the first year of service with the option to renew that support contract yearly. The **Support item** is the support contract for the first year and the **Renewal item** is the renewal every year after that. You can enter the support or renewal contract information, or both. When you enter the support contract information, only the support item is added to the sales order. When you enter the renewal contract information, the renewal item is used to create a billing schedule.
 
 When a customer allows a support contract to lapse, you are asked if you want to make the billing schedule active again. 
 
-When you want to make a sale that includes the first year of support only, without an automatic renewal of the support contract, clear the **Renewal** checkbox so that when you post the sales transaction, a recurring billing schedule is not created.
+When you want to create a sales order that includes the first year of support only, without an automatic renewal of the support contract, clear the **Renewal** checkbox so that when you post the sales transaction, a recurring billing schedule is not created.
 
-**Note:** The support and renewal process is available only for the sales order and has no other association with the existing billing schedule. When adding support and renewal to a sales order you can create a new billing schedule or add the renewal item to an existing billing schedule. 
+> [!Note] 
+> The support and renewal process is available only for the sales order and has no other association with the existing billing schedule. When adding support and renewal to a sales order you can create a new billing schedule or add the renewal item to an existing billing schedule. 
 
 ## Support and renewal setup
 
-This topic explains how to set up different support levels for support and renewal items by navigating to Subscription billing > Recurring contract billing > Setup > Support and renewal levels. The support or renewal can be a percentage of the original item amount or it can be a standard amount. 
+On the **Support and renewal levels** page you can set up different support levels for support and renewal items. The support or renewal can be a percentage of the original item amount or it can be a standard amount. 
 
 You can select the default support levels on the **Recurring contract billing parameters** page. 
 
@@ -75,28 +76,26 @@ Edit a support or renewal level:
 
 ### Fields
 
-This page contains the following fields: 
+The **Support and renewal levels** page page contains the following fields: 
 
 | Field| Description|
 | :------------- |:-------------| 
 | **Support level**| Specify a unique identifier for the support or renewal level (for example, Gold or Silver). | 
-| **Description**| Specify a description for the support or renewal level.|  
+| **Description**| Enter a description for the support or renewal level.|  
 | **Support calculation method**| Select the support calculation method for the level: **Percent** or **Standard amount**. |  
 | **Support percentage**|Specify a percentage to be used for calculating the support item price. If standard amount is selected, the amount is specified at the time the transaction is created.  | 
 | **Renewal calculation method**| Select the support calculation method for the level: **Percent** or **Standard amount**.|  
 | **Renewal percentage**| Specify a percentage to be used for calculating the renewal item price. If standard amount is selected, the amount is specified at the time the transaction is created. |      
 
-
 ---
 
 ### Support and renewal audit
 
-Modules > Recurring contract billing > All billing schedules or Active billing schedules > [click a billing schedule] >[select a billing schedule line] > [click Support and renewal] 
 
-The support and renewal audit allows you to review the details of the billing schedule lines created from the renewal item on a sales order. This is only available when the billing schedule line item is a support or renewal item. 
+The **Support and renewal** audit allows you to review the details of the billing schedule lines created from the renewal item on a sales order. This is only available when the billing schedule line item is a support or renewal item. 
 
 To edit support and renewal information for a billing schedule line, follow these steps: 
-1. In the list of all billing schedules, click the **Schedule number** of the billing schedule.  
+1. On the **Support and renewal levels** page, click the **Schedule number** of the billing schedule.  
 2. In the **Billing schedule lines** section, select a line and click **Support and renewal**. 
 3. Review all the information for the support or renewal item. 
 4. If needed, change the support level or renewal percentage or amount, and type a **Reason code**. 
@@ -132,23 +131,27 @@ This page contains the following fields:
 
 ## Support and renewal process
 
-This topic lists the steps for using the support and renewal functionality in Subscription billing to apply different support levels to items and to update renewal information.
+The **Support and renewal** functionality can apply different support levels to items and update renewal information in Subscription billing.
 
 Ensure a system administrator completes the setup tasks:
 1. Create at least one support or renewal level in **Support and renewal levels**.
 2. Associate an item with support and renewal items using **Item Setup**.
 3. Specify the default support and renewal settings for new billing schedules in **Recurring contract billing paramaters**. 
 
-To use the support and renewal functionality where you can apply different support levels to items and update renewal information, follow this steps.
+To apply different support levels to items and update renewal information, follow this steps.
 
 1. On the **Sales Order** page, create a sales order. 
-2. In the **Sales order lines** FastTab, add an item and edit any of the values as needed. 
-3. In the header of the sales order, select the **Invoice** tab, and then select **Add support and renewal** under **Support and renewal**. On the **Support and Renewal Process** page the header section is automatically updated with the default settings from the **Recurring Contract Billing Parameters** and can be changed as needed. These values apply to all the support and renewal items (for example, if the billing frequency is Annually, all sales lines that have a renewal item are created with the annual frequency). <br />To associate the sales order with an existing billing schedule, select a **Billing schedule number**.To change the support or renewal start date, set **Override start date** to **Yes**. 
-4. On the **Support and renewal Process** page select **OK** to return to the sales order.
-5. Select **Invoice** under the **Generate** tab. When the sales order is posted, the billing schedule is created. A notification with the billing schedule information appears in the **Message details**. Make note of the billing schedule number. 
-6. Open the **All/Active billing schedules** list and select the billing schedule number to review the details of the billing schedule on the **Billing Schedules** page. 
-   - To review the details of the lines created, go to the **Billing schedule lines** FastTab and select **Support and renewal**. The **Support and renewal audit** page opens. 
-   - After you are done reviewing the information, close the window. **Note:**  If the renewal start date for a billing schedule line needs to be changed, you can edit the **Start date** for the line on the **Billing schedules** page. When you select the **View billing detail** page for the line, the **Billing start date** is updated with the new date and the **Billing end date** is recalculated based on the billing frequency. The renewal start date can be updated only if the first invoice for the renewal billing schedule has not yet been created and posted. After the first invoice is created and posted, the start date cannot be edited. 
+2. On the **Sales order lines** FastTab, add an item and edit any of the values as needed. 
+3. Select the **Invoice** tab > **Add support and renewal** under **Support and renewal**. 
+4. On the **Support and Renewal Process** page the header section is automatically updated with the default settings from the **Recurring Contract Billing Parameters**. These values apply to all the support and renewal items (for example, if the billing frequency is Annually, all sales lines that have a renewal item are created with the annual frequency). <br />To associate the sales order with an existing billing schedule, select a **Billing schedule number**. 
+5. To change the support or renewal start date, set **Override start date** to **Yes**. 
+6. On the **Support and renewal Process** page select **OK**.
+7. Select **Invoice** under the **Generate** tab. When the sales order is posted, the billing schedule is created. A notification with the billing schedule information appears in the **Message details**. 
+8. Open the **All/Active billing schedules** list and select the billing schedule number to review the details of the billing schedule on the **Billing Schedules** page. 
+   - To review the details of the lines created, go to the **Billing schedule lines** FastTab and select **Support and renewal**. 
+
+> [!Note]
+> If the renewal start date for a billing schedule line needs to be changed, you can edit the **Start date** for the line on the **Billing schedules** page. When you select the **View billing detail** page for the line, the **Billing start date** is updated with the new date and the **Billing end date** is recalculated based on the billing frequency. The renewal start date can be updated only if the first invoice for the renewal billing schedule has not yet been created and posted. After the first invoice is created and posted, the start date cannot be edited. 
 
 
 ## Additional resources
