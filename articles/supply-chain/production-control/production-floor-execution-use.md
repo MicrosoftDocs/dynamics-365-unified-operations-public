@@ -284,9 +284,9 @@ A worker can register as an assistant on the **All jobs** tab by selecting **Ass
 
 <!-- KFM: Johan will add this. -->
 
-### Team assigns a new pilot
+### Assign a new pilot for an existing team
 
-When a team wants to select a new pilot, the current pilot must nominate a new worker in the team as the new pilot. The pilot does that by selecting **Assistant** to open the **Change pilot dialog** box. In the dialog box, the worker can now select the pilot from a list of workers already on the team. When the previous pilot has confirmed the selection, that worker is no longer a member of the team, but can rejoin the team if needed.
+When a team wants to select a new pilot, the current pilot must nominate a new worker in the team as the new pilot. The pilot does that by selecting **Assistant** to open the **Change pilot** dialog. In the dialog, the worker can now select the new pilot from a list of workers already on the team. When the previous pilot has confirmed the selection, that previous pilot is dropped from the team entirely, but can rejoin if needed.
 
 ### Assistant clocks out
 

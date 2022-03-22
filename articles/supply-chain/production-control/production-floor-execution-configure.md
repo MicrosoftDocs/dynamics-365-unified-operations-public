@@ -146,7 +146,7 @@ Next, configure the various settings for the selected configuration. The followi
 - **Generate license plate** – Set this option to *Yes* to generate a new license plate every time that a worker uses the production floor execution interface to report as finished. The license plate number is generated from a number sequence that is set up on the **Warehouse management parameters** page. When this option is set to *No*, workers must specify an existing license plate when they report as finished.
 - **Print label** – Set this option to *Yes* to print a license plate label when a worker uses the production floor execution interface to report as finished. The configuration of the label is set up in document routing, as described in [Document routing layout for license plate labels](../warehousing/document-routing-layout-for-license-plates.md).
 - **Tab selection**  – Use the settings in this section to choose which tabs should be displayed by the production floor execution interface when the current configuration is active. You can design as many tabs as you need and then add and arrange them here as required. For details about how to design tabs and work with the settings here, see [Design the production floor execution interface](production-floor-execution-tabs.md).
-- **Default remaining quantity** - Set this to *Yes* to pre-fill the expected remaining quantity for a production job on the **Report progress** dialog.
+- **Default remaining quantity** - To find this setting, expand the **Report progress** FastTab. Set **Default remaining quantity** to *Yes* to pre-fill the expected remaining quantity for a production job on the **Report progress** dialog.
 
 ## Clean up job configurations
 
