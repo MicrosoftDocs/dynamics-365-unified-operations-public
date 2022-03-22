@@ -18,7 +18,7 @@ ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Finland
-ms.author: liza-golub
+ms.author: elgolu
 # ms.search.industry: 
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
@@ -46,7 +46,7 @@ The VAT declaration for Finland contains the following fields that are used to r
 | 305 | Tax on goods purchased from other EU member states. | Vero tavaraostoista muista EU-maista | <p>GoodsPurchasedFromEU</p><p>GoodsPurchasedFromEUUseTax (when the **Use tax** option is used)</p> |
 | 306 | Tax on services purchased from other EU member states. | Vero palveluostoista muista EU-maista | <p>ServicesPurchasedFromEU</p><p>ServicesPurchasedFromEUUseTax (when the **Use tax** option is used)</p> |
 | 307 | Tax deductible for the tax period. | Verokauden vähennettävä vero | <p>Deductible</p><p>When the **Use tax** option is used:</p><ul><li>GoodsPurchasedFromEUUseTax</li><li>ImportsOfGoodsUseTax</li><li>PurchasesReverseChargeUseTax</li><li>ServicesPurchasedFromEUUseTax</li></ul> |
-| **308** | **Tax payable/Negative tax that qualifies for refund (‒)**. | **Maksettava vero / Palautukseen oikeuttava vero (-)** | **Not applicable. The amount is automatically calculated.** |
+| 308 | Tax payable/Negative tax that qualifies for refund (‒). | Maksettava vero / Palautukseen oikeuttava vero (-) | Not applicable. The amount is automatically calculated. |
 | 309 | Turnover taxable at a VAT rate of 0 (zero). | 0-verokannan alainen liikevaihto | TaxableSalesZero |
 | 310 | Imports of goods from outside the EU. | Tavaroiden maahantuonnit EU:n ulkopuolelta | <p>ImportsOfGoods</p><p>ImportsOfGoodsUseTax (when the **Use tax** option is used)</p> |
 | 311 | Sales of goods to other EU member states. | Tavaroiden myynnit muihin EU-maihin | EUSalesOfGoods |
