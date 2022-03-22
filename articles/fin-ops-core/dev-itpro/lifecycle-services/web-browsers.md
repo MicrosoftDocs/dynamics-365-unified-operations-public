@@ -29,8 +29,5 @@ Users can access Microsoft Dynamics Lifecyle Services (LCS) by using the most re
   > [!Note]
   > Support for Internet Explorer 11 was deprecated in December 2020, with end of support for the browser occurring in August 2021. For more information, see [Internet Explorer deprecation announcement](../get-started/removed-deprecated-features-platform-updates.md#platform-updates-for-version-10015-of-finance-and-operations-apps).
 
-To find the latest release for each web browser, go to the software manufacturer's website.
-
-> [!NOTE]
-> For optimal performance and an optimal experience, we recommend that you use the latest version of a modern browser, especially Microsoft Edge. 
+To find the latest release for each web browser, go to the software manufacturer's website. For optimal performance and an optimal experience, we recommend that you use the latest version of a modern browser, especially Microsoft Edge. 
 
