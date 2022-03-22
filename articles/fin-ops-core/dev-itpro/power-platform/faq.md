@@ -137,7 +137,7 @@ Although the automatic virtual entity configuration will be used for the Power P
 
 ### Can I use Dataverse virtual entities as a data source with the Data Integrator?
 
-No. Virtual entities are not supported as a source for data integration with the [Data Integrator](/power-platform/admin/data-integrator.md). Technical limitations prevent the Data Integrator from getting the deltas in the source data to push data to the destination environment.
+No. Virtual entities are not supported as a source for data integration with the [Data Integrator](/power-platform/admin/data-integrator). Technical limitations prevent the Data Integrator from getting the deltas in the source data to push data to the destination environment.
 
 ### I'm getting an error that paging is not supported. How do I work around this?
 

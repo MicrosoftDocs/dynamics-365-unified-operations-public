@@ -16,7 +16,6 @@ ms.dyn365.ops.version: 10.0.23
 # Priority-based planning
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
 
 This topic describes the priority-based planning feature of Microsoft Dynamics 365 Supply Chain Management. The feature adds support for demand-driven planning, which is one step of Demand Driven Material Requirements Planning (DDMRP). Priority-based planning enables Planning Optimization to generate planned orders that are driven by planning priorities instead of requirement dates.
 

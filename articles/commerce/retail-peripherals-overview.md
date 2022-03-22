@@ -18,7 +18,6 @@ ms.search.validFrom: 2016-11-30
 # Peripherals
 
 [!include[banner](includes/banner.md)]
-[!include[banner](includes/preview-banner.md)]
 
 This topic explains the concepts that are related to store peripherals. It describes the various ways that peripherals can be connected to the point of sale (POS) and the components that are responsible for managing the connection with the POS.
 
