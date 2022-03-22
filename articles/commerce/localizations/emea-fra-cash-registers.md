@@ -5,7 +5,7 @@ title: Cash register functionality for France
 description: This topic provides an overview of the cash register functionality that is available for France. It also provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
 manager: annbe
-ms.date: 09/14/2021
+ms.date: 03/22/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -79,7 +79,7 @@ The following France-specific POS features are enabled when the primary address 
 
 The following types of records (transactions and events) are digitally signed in POS:
 
-- Sales transactions
+- Sales and return transactions
 - Copies of receipts
 - Closed shifts/Z reports
 - Audit events
@@ -101,9 +101,9 @@ The signature is created and recorded in the channel database at the same time t
 >
 > You can use either a digital certificate that is issued by an accredited body or a self-signed certificate for digital signing. Only certificates that have RSA-2048-bit or Elliptic Curve Digital Signature Algorithm (ECDSA) 224-bit minimum private keys are acceptable. Commerce supports only RSA-2048-bit or longer keys. If you want to use an ECDSA key, you must implement a customization.
 
-### Digital signing of sales transactions
+### Digital signing of sales and return transactions
 
-Only transactions for cash sales are signed. Here are some examples of transactions that are excluded from the signing process:
+Only transactions for cash sales or returns are signed. Here are some examples of transactions that are excluded from the signing process:
 
 - Prepayments (customer account deposits)
 - Quotations
@@ -111,16 +111,19 @@ Only transactions for cash sales are signed. Here are some examples of transacti
 - Issuing a gift card and adding funds to a gift card
 - Non-sales transactions (float entry, tender removal, and so on)
 
-The data that is signed for a sales transaction is a text string that consists of the following data fields:
+The data that is signed for a sales or return transaction is a text string that consists of the following data fields:
 
-- The total amount of sales, including tax per tax rate.
-- The total amount of sales, including tax.
+- The total amount of sales or return, including tax per tax rate.
+- The total amount of sales or return, including tax.
 - The date and time of the transaction, in YYYYMMDDHHMMSS format.
 - The register number.
-- The sequential number of the signed sales transaction for the register.
-- The type of sales transaction.
-- A value (Y/N) that indicates whether the transaction is the first signed sales transaction for the register.
-- The previous signature for the same register. A blank value is used for the first signed sales transaction.
+- The sequential number of the signed sales or return transaction for the register.
+- The type of sales or return transaction.
+- A value (Y/N) that indicates whether the transaction is the first signed sales or return transaction for the register.
+- The previous signature for the same register. A blank value is used for the first signed sales or return transaction.
+
+> [!NOTE]
+> Return transactions are considered regular sales transactions for digital signing purposes. This means that the signing process and the sequence of signatures for return transactions is the same as for sales transactions. The total amount of return is negative, that is, it includes the minus sign when it is added to the text string that is signed.
 
 You can view the transaction signature and the transaction data that was used to generate it on the **Fiscal transactions** FastTab of the **Store transactions** page in Commerce headquarters. By selecting **Extended data**, you can view specific properties of the fiscal transaction, such as the signature, sequential number, certificate thumbprint, and hash algorithm identification. 
 
