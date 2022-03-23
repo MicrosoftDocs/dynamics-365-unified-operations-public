@@ -420,6 +420,8 @@
             href: accounts-receivable/sb-copy-schedules-items.md
           - name: Milestone billing
             href: accounts-receivable/sb-milestonebilling.md
+          - name: Terminate billing schedules
+            href: accounts-receivable/terminate-billing-schedule.md
         - name: Revenue and expense deferrals
           items:
         - name: Multi-element revenue allocation
