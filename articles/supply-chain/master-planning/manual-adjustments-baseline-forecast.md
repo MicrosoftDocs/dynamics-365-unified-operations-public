@@ -3,7 +3,7 @@
 
 title: Make manual adjustments to the baseline forecast
 description: This topic explains how you can make manual adjustments to a baseline forecast and view details of the forecast. 
-author: ChristianRytt
+author: t-benebo
 ms.date: 01/07/2020
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 72704
 ms.assetid: e7c5d44e-07bc-40b1-a4b3-8ba46483ef9e
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

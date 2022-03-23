@@ -3,7 +3,7 @@
 
 title: Planning Optimization fit analysis
 description: This topic explains how to verify your current setup and data against the capabilities of the Planning Optimization functionality. 
-author: ChristianRytt
+author: t-benebo
 ms.date: 07/07/2021
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
 

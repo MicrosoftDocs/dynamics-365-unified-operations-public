@@ -1,14 +1,14 @@
 ---
 title: Supply schedule
 description: This topic provides information about the Supply schedule page and its capabilities.
-author: ChristianRytt
+author: t-benebo
 ms.date: 9/3/2021
 ms.topic: article
 ms.search.form: ReqSupplyDemandSchedule, ReqSupplyDemandScheduleFilters, ReqSupplyDemandItemDetails, ReqTransFuturesActionsPart, ReqSupplyDemandOverviewLegendPart
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.22
 ---
