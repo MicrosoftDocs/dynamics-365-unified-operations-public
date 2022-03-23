@@ -116,7 +116,9 @@ Follow these steps to set up the tax that is involved in a transfer order. In th
 6. Define the applicability of the item tax group.
 
     1. Select **Manage columns**, and then select columns that should be used to build the applicability table.
-    2. Add applicability rules. Don't leave the **Item Tax group** field blank.
+    2. Add applicability rules.
+        > [!NOTE]
+        > If the item sales tax group defaulted on your taxable document lines is already correct, you can leave this matrix blank. See details in the Runtime design section of this article.
         
         Add a new rule for transfer order shipment and receipt.
         1. On the **Applicability rules** page, select **Add**.
