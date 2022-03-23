@@ -39,7 +39,7 @@ If there is a conflict with the chart of accounts, the chart of accounts delimit
 - If the only conflict is with the project/subproject ID format, you can change that value in **Project management and accounting parameters** > **General** > **Modify subproject format**. 
 
 ### Other considerations
-Similar to project/subproject ID, any other master data records used as financial dimensions such as vendors or customers should not have account ID values that use the same character as the chart of accounts delimiter. 
+Similar to project/subproject ID, any other master data records used as financial dimensions, such as vendors or customers, should not have account ID values that use the same character as the chart of accounts delimiter. 
 
 ## How to determine if your environment requires updated delimiters 
 If delimiters in your upgraded environment are conflicting, you may experience instability when entering values in a segmented entry control or dimension entry control. This means that you will need to always use lookups or a flyout menu when entering account and dimension combinations.
