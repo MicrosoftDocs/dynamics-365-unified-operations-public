@@ -4,7 +4,7 @@
 title: Microsoft Dynamics 365 Finance + Operations (on-premises) supported software
 description: This topic explains which software component versions are compatible with Microsoft Dynamics 365 Finance + Operations (on-premises).
 author: faix
-ms.date: 01/24/2022
+ms.date: 03/23/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -83,7 +83,7 @@ Your Service Fabric cluster should always be on a supported version according to
 
 | Minimum version            | Required since |
 |----------------------------|----------------|
-| Service Fabric runtime 8.0 | 10.0.26        |
+| Service Fabric runtime 8.0 | 10.0.24        |
 | Service Fabric runtime 7.2 | 10.0.17        |
 | Service Fabric runtime 7.1 | 10.0.14        |
 
