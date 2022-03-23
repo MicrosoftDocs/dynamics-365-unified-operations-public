@@ -26,7 +26,7 @@ ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
 
 ---
-# Multiple element revenue allocation 
+# Set up multiple element revenue allocation 
 
 Multiple element revenue allocation allows you to set up different templates to calculate and allocate revenue across multiple items. This can help you meet ASC 606 and/or IFRS 15 compliance.
 
