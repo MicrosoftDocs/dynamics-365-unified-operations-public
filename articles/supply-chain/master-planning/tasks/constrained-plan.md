@@ -3,7 +3,7 @@
  
 title: Generate a constrained plan
 description: This topic explains how to create a plan that takes into account both material and capacity constraints. 
-author: ChristianRytt
+author: t-benebo
 ms.date: 08/02/2019
 ms.topic: business-process 
 ms.prod:  
@@ -19,7 +19,7 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---

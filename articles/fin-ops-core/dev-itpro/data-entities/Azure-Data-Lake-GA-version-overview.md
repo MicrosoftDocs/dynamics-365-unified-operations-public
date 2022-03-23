@@ -4,7 +4,7 @@
 title: Export to Azure Data Lake overview
 description: This topic explains how you can connect your Finance and Operations environment to a data lake to unlock insights that are hidden in your data.
 author: MilindaV2
-ms.date: 03/16/2022
+ms.date: 03/23/2022
 ms.topic: overview
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -62,7 +62,7 @@ Microsoft will add more business events to the service in the coming months. For
 
 ## Enhanced Metadata (preview)
 
-Besides data, the data lake contains metadata that describes the name, data type, and size of data. In the lake, you will notice, in addition to data files, metadata files at a folder level that corresponds to the data files. When you install the Export to Data Lake feature and select data to add to the data lake, the system writes metadata files in addition to data. If you select the **Enhanced metadata (preview)** option when you install Export to Data Lake, the system adds even more metadata. 
+Besides data, the data lake contains metadata that describes the name, data type, and size of data. In the lake, you will notice, in addition to data files, metadata files at a folder level that corresponds to the data files. When you install the Export to Data Lake feature and select data to add to the data lake, the system writes metadata files in addition to data. If you select the **Enhanced metadata (preview)** option when you install Export to Data Lake, the system adds even more metadata. For more information about metadata and the Enhanced Metadata (preview) feature, see [Data and metadata stored in Azure Data Lake](Azure-Data-Lake-Enhanced-Metadata.md).
 
 ## Frequently asked questions
 
