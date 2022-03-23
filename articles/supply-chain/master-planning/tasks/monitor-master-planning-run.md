@@ -3,7 +3,7 @@
  
 title: Monitor a master planning run
 description: This topic explains how the production planner can see whether a master planning run is in progress. 
-author: ChristianRytt
+author: t-benebo
 ms.date: 11/04/2019
 ms.topic: business-process 
 ms.prod:  
@@ -19,7 +19,7 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---

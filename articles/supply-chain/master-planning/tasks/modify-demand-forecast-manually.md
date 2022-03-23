@@ -1,14 +1,14 @@
 ---
 title: "Guide: Modify a demand forecast manually"
 description: This topic describes how to modify the forecast for an item
-author: ChristianRytt
+author: t-benebo
 ms.date: 08/12/2019
 ms.topic: business-process
 ms.search.form: EcoResProductDetailsExtended, ForecastSales   
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---

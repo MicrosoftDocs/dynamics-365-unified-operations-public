@@ -3,7 +3,7 @@
 
 title: Cancel a planning job
 description: This topic explains how to cancel an active planning job that uses the Planning optimization functionality.
-author: ChristianRytt
+author: t-benebo
 ms.date: 02/18/2020
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
 

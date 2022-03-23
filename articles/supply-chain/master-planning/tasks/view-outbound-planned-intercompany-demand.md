@@ -3,7 +3,7 @@
  
 title: View outbound planned intercompany demand
 description: This topic provides a procedure that shows how to view outbound planned intercompany demand. 
-author: ChristianRytt
+author: t-benebo
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
@@ -19,7 +19,7 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---

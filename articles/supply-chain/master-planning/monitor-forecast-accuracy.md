@@ -3,7 +3,7 @@
 
 title: Monitor forecast accuracy
 description: This topic describes the types of forecast accuracy that Dynamics 365 Supply Chain Management calculates, and explains how you can view the accuracy values.
-author: ChristianRytt
+author: t-benebo
 ms.date: 01/07/2020
 ms.topic: article
 ms.prod: 
@@ -20,7 +20,7 @@ ms.custom: 72863
 ms.assetid: 810a0d63-f4c6-4167-b2b3-a178b74ead89
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
