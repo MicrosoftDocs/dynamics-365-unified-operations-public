@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: tax code cannot be determined
-description: This topic explains how to troubleshoot error "tax code cannot be determined" in Tax Calculation service.
+title: No matching result could be found
+description: This topic explains how to troubleshoot error "No matching result could be found" in Tax Calcualtion service.
 author: hangwan
 ms.date: 03/23/2022
 ms.topic: business-process
@@ -25,12 +25,12 @@ ms.dyn365.ops.version: Version 10.0.21
 ---
 
 
-# Tax code cannot be determined
+# No matching result could be found
 
-This topic explains how to troubleshoot error "tax code cannot be determined" in Tax Calculation service.
+This topic explains how to troubleshoot error "No matching result could be found" in Tax Calcualtion service.
 
 ## Symptom 
-Facing the error like - "Header/Lines - 1, Tax group, no matching result could be found in feature XXX."
+Facing the error like - "Header/Lines - 1, Tax group, no matching result could be found".
 
 ```json
     ======================Tax service calculation result JSON:===========================
