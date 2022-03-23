@@ -45,36 +45,26 @@ For the latest regulatory update plans, refer to the following table.
 
 |Country|Release date|Release version|Regulatory update|
 |--------------------|---------------|-------|-------| 
-|      Austria         |   August 2021      | 10.0.22      |   VAT declaration in XML and preview in Excel   |
-|      Austria         |   September 2021      | 10.0.22HF      |   Intrastat format is updated starting from 2022 - Country of origin and Partner VAT Id become mandatory on dispatches   |
-|      Belgium        |   October 2021      | 10.0.22HF     |   Intrastat transaction codes will change to 2 digits starting from 2022  |
-|      Brazil         |   August 2021      | 10.0.22      |   NF-e NT2020.006  - Identification of the digital platform intermediary (Layout and validation rules updates)   |
-|      Brazil         |   December 2021         | 10.0.22, 10.0.23, 10.0.24         |    SPED Fiscal layout 2022  |
-|      Czech Republic         |   October 2021         | 10.0.23HF         |     Intrastat format is updated starting from 2022 - Country of origin and Partner VAT Id become mandatory on dispatches  |
-|      Denmark         |   December 2021         | 10.0.22HF         |    Intrastat format is updated starting from 2022  |
-|      Estonia         |   December 2021      | 10.0.22HF      |   Intrastat format is updated starting from 2022 - Country of origin and Partner VAT Id become mandatory on dispatches  |
-|      Finland         |   November 2021         | 10.0.22HF         |    Intrastat format is updated starting from 2022.  |
-|      Germany        |   August 2021       | 10.0.22HF      |   Intrastat format INSTAT XML is updated starting from 2022. Intrastat format TXT is not applicable from 01.07.2021  |
-|      Germany        |   October 2021       | 10.0.23      |   VAT declaration in XML and preview in Excel (new design with amounts in tax code currency, working out of the box with reverse charge feature, can be executed in non-DE legal entities, and can collect tax transaction from several legal entities)  |
-|      Italy         |   November 2021         | 10.0.22HF, 10.0.23HF, 10.0.24         |    Electronic invoicing for cross-border transactions  |
-|      Mexico         |   November 2021      | 10.0.22      |   Carta de Porte complement in CFDI documents   |
+|      Brazil         |   December 2021         | 10.0.24, 10.0.25         |    SPED Fiscal layout 2022  |
+|      Brazil         |   March 2022    | 10.0.24HF, 10.0.25HF         |    ICMS-DIFAL collection in operations aimed at non-tax taxpayers (Complementary Law No. 190/22)  |
+|      Denmark         |   January 2022  | 10.0.25HF         |    VAT declaration preview in Excel |
+|      France   |   November 2021 | 10.0.25         |    French data archiving export (FEC) - "Missing numbers justification" annex |
+|      Italy         |   November 2021         | 10.0.24         |    Electronic invoicing for cross-border transactions  |
+|      Italy         |   February 2022 | 10.0.24HF, 10.0.25HF| Unique Certification - 2022 in Dynamics 365 Finance  |
+|      Lithuania|   February 2022 | 10.0.24HF, 10.0.25HF | i.SAF changes from 2022-01-01 in Dynamics 365 Finance  |
 |      Mexico         |   December 2021      | 10.0.24      |   Carta de Porte complement version 2.0  |
-|      Netherlands        |   October 2021      | 10.0.22HF      |   2-digit transaction codes in Intrastat file format from 2022  |
-|      New Zealand         |   August 2021      | 10.0.22    |   GST declaration form GST101A  |
 |      Norway        |   November 2021      | 10.0.24      |   VAT declaration format 2022 with direct submission - Dynamics 365 Finance |
-|      Oman         |   August 2021      | 10.0.22      |   VAT declaration - Version 1 |
-|      Poland          |   October 2021     | 10.0.23, 10.0.24     |   JPK_V7M - new schema version from January 2022 |
+|      Poland          |   October 2021     | 10.0.24     |   JPK_V7M - new schema version from January 2022 |
 |      Poland          |   November 2021     | 10.0.24HF     |   Annual report on the payment dates in commercial transactions |
 |      Poland          |   October 2021     | 10.0.24     |   Electronic format of EU sales list (VAT-UE) |
-|      Russia          |   October 2021     | 10.0.22HF, 10.0.23, 10.0.24    |   Changes in sales, purchase books and facture journals|
+|      Russia          |   October 2021     | 10.0.24    |   Changes in sales, purchase books and facture journals|
 |      Russia          |   October 2021     | 10.0.24HF    |   Change in formats of VAT declaration with appendixes|
 |      Russia          |   November 2021     | 10.0.24    |   Federal Accounting Standards 6/2020 (Fixed assets)|
-|      Saudi Arabia          |   November 2021     | 10.0.22HF, 10.0.23    |   Electronic invoicing generation in Saudi Arabia - Phase 1|
-|      Saudi Arabia          |   November 2021     | 10.0.22HF, 10.0.23HF, 10.0.24    |   Retail - Electronic invoicing in Saudi Arabia - Phase 1|
-|      Spain          |   October 2021     | 10.0.23    |    VAT declaration model 303 in txt and preview in Excel|
-|      Spain          |   September 2021     | 10.0.22    |    Intrastat format will be updated for 2022 reporting - Partner VAT ID and Country of origin will be mandatory on dispatches|
-|      Sweden          |   October 2021     | 10.0.22HF    |    Intrastat format is updated starting from 2022 - Country of origin and Partner VAT Id become mandatory on dispatches. 2-digit transaction codes will be used.|
-|      United Kingdom          |   August 2021     | 10.0.22    |    UK - MTD fraud prevention 2021)|
+|      Russia          |   January 2022     | 10.0.24HF, 10.0.25    |   Enable Electronic reporting (ER) destination for storing Russian accounting documents (primary documents and accounting reports)|
+|      Russia          |   December 2021     | 10.0.25    |   Integration Fixed asset (Russia) module with Asset management module|
+|      Russia          |   February 2022     | 10.0.24HF, 10.0.25    |  New format of transport invoice (Government decree N 2116 30.11.2021)|
+|      Saudi Arabia          |   November 2021     | 10.0.24    |   Retail - Electronic invoicing in Saudi Arabia - Phase 1|
+|      Spain      |   March 2022| 10.0.24HF, 10.0.25HF | Spain: VAT declaration Model 303 changes January 1, 2022 in Dynamics 365 Finance|
 
 
 
