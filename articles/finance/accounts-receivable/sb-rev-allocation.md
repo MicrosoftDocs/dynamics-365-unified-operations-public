@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Terminate schedule lines
-description: This topic 
+title: Revenue allocation 
+description: This topic explains how to use revenue allocation in Subscription billing.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -29,9 +29,9 @@ ms.dyn365.ops.version: 10.0.24
 
 # Revenue allocation
 
-Modules > Advanced recurring contract billing > Billing schedules > All or Active billing schedules > [select a billing schedule line] > [select Revenue allocation]
+Modules > Subscription billing > Recurring contract billing > Billing schedules > All or Active billing schedules > [select a billing schedule line] > [select Revenue allocation]
 
-Modules > Advanced recurring contract billing > Billing schedules > All or Active billing schedules > [select a billing schedule] > [select Revenue allocation]
+Modules > Subscription billing > Recurring contract billing > Billing schedules > All or Active billing schedules > [select a billing schedule] > [select Revenue allocation]
 
 This topic describes how to enter the revenue allocation parameters for a billing schedule. The revenue allocation can be set up and only edited when the billing schedule is created. When viewing this page for an active or terminated billing schedule, all values are read-only. 
 
@@ -39,12 +39,10 @@ This topic describes how to enter the revenue allocation parameters for a billin
 ## Specify Revenue Allocation
 
 To specify the revenue allocation for a billing schedule, follow these steps: 
-1. Select a billing schedule or a billing schedule line: 
-   - From the  [All/Active Billing Schedules](BillSchedActiv.md) list, select a billing schedule
-   - When you are in the [Billing Schedules](BillSched.md) page reviewing a specific billing schedule
-2. Select **Revenue allocation**. 
-3. Select the **MEA type**. 
-4. Specify the **MEA number** and the **Deferred contract revenue account**. <br /> - If the **MEA type** is **Single**, the same **MEA number** and **Deferred contract revenue account** applies to each line. <br />   - If the **MEA type** is **Multiple**, you can apply a different **MEA number** and **Deferred contract revenue account** to each line. <br />  The MEA number can only be assigned to two or more items. In other words, a single line cannot have its own MEA number.
+1. Select a billing schedule or a billing schedule line from **All/Active Billing Schedules** list.
+2. Select **Revenue allocation** from the Revenue allocation tab at the top of the page. 
+3. Select the **Multiple element allocation type**. 
+4. Specify the **Multiple element allocation number** and the **Deferred contract revenue account**. If the **Multiple element allocation type** is **Single**, the same **Multiple element allocation number** and **Deferred contract revenue account** applies to each line. If the **Multiple element allocation type** is **Multiple**, you can apply a different **Multiple element allocation number** and **Deferred contract revenue account** to each line. The multiple element allocation number can only be assigned to two or more items. In other words, a single line cannot have its own multiple element allocation number.
 5. Select **Save**. 
 
 ## Fields
