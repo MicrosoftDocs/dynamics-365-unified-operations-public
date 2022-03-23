@@ -1,7 +1,7 @@
 ---
 title: Action messages
 description: An action message is a system-generated suggestion to change an existing planned or firmed order.
-author: benebotg
+author: t-benebo
 ms.date: 03/18/2022
 ms.topic: article
 ms.search.form: ReqGroup, MCRSalesOrderMessages, MCRSalesTableDetailedStatus, TAMItemVendRebateGroup, TAMVendRebate, TAMVendRebateAgreementLineInfoPart, TAMVendRebateGroup, TAMVendRebateTable, TAMVendRebateTrans, ReqTransActionListPage
