@@ -47,7 +47,7 @@ The merge will provide consistency for Human Resources users in the following wa
 
     For more information about the extension options that are available, see [Overview of extensibility in Dynamics 365](../fin-ops-core/dev-itpro/extensibility/extensibility-home-page.md).
 
-- [Create one set of human resources capabilities in Dynamics 365.]/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/create-one-set-human-resources-capabilities-within-dynamics-365.md)
+- [Create one set of human resources capabilities in Dynamics 365.](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/create-one-set-human-resources-capabilities-within-dynamics-365)
 
     In the 10.0.25 release, functional capabilities that existed only in Human Resources have been made available on the Finance and Operations infrastructure. For customers to take advantage of these capabilities in a Finance and Operations environment, the following Human Resources features must be enabled in Feature Management.
 
