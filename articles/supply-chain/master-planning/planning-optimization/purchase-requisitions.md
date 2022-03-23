@@ -3,7 +3,7 @@
 
 title: Purchase requisitions
 description: This topic describes how purchase requisitions are supported in Planning Optimization.
-author: ChristianRytt
+author: t-benebo
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.16
 
