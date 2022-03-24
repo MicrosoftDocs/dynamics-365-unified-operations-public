@@ -188,10 +188,7 @@ To create and configure a new build pipeline in Azure DevOps, follow these steps
     
 **Note:** if you are building a version of the online SDK version 10.0.27 or earlier it requires Node.js version 12.x, to support this on the agent, add the **Node Tool Installer** task ahead of the powershell task specifying version 12.x as shown below.
 
-  ![Add the Node task to install version 12](media/code-sharing-25.png) 
-    
-
-![Azure DevOps showing running job with s](media/code-sharing-25.png)
+  ![Add the Node task to install version 12](media/code-sharing-25.png)   
 
 1. Monitor the agent job logs to learn when the job is completed.
 
