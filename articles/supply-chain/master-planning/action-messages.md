@@ -64,7 +64,7 @@ For example, suppose you have the following situation:
 
 - Final good *FG* of type *production* has a BOM that includes the raw material *RM*.
 - Today's date is January 21.
-- There is an existing, released production order for *FG* for January 25.
+- There is an existing, released production order for *FG* scheduled for January 25.
 - To support the existing production order, master planning has created a planned purchase order for the required *RM*, also with a requirement date of January 25.
 - A new sales order for *FG* is created today, with a requirement date of today (January 21).
 - January 21 is closed for delivery on the *RM* calendar, but January 22 is open.
@@ -74,4 +74,4 @@ When master planning runs, it generates advance action messages suggesting that 
 - To meet the new demand, it suggests to move the production order for *FG* up to January 21 (it makes this suggestion without considering the closed date for *RM*).
 - The raw material *RM* is still required for the production order, so it suggests to advance the planned purchase order too. But this time it checks the *RM* calendar and therefore suggests moving the planned purchase order for *RM* to January 22 (because January 21 is closed).
 
-As you can see, the required raw material *RM* will now arrive too late for the scheduled production of *FG*. Therefore, you must apply the advance action to the planned purchase order for *RM* first and then run master planning again, which will generate a new action message that suggests postponing the production order for *FG* to January 22.
+As you can see, the required raw material *RM* will now arrive too late for the scheduled production of *FG*. Therefore, you must apply the advance action to the planned purchase order for *RM* first and then run master planning again, which will generate a new action message that suggests moving the production order for *FG* to January 22.
