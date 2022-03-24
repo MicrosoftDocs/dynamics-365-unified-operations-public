@@ -240,6 +240,30 @@ Starting in Dynamics 365 Finance version 10.0.24, you can change the default beh
 
 When the import is completed, in addition to the changes that were just described, the state of the imported application-specific parameters is changed to **In progress**. A warning message informs you that the automatically adjusted application-specific parameters must be manually edited.
 
+#### Replicate parameters
+
+In version 10.0.27 and later, you can copy parameters that you configured in one company to multiple other companies at once.
+
+To copy parameters, complete the following steps:
+
+1.  Go to **Organization administration \> Workspaces \> Electronic reporting**.
+2.  Select **Reporting configurations**.
+3.  In the configurations tree, select the **Format to learn how to lookup LE data** format.
+4.  On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
+5.  Select version **1.1.1** of the ER format.
+6.  On the Action Pane, select **Replicate**.
+7.  On the **Replicate** dialog, in the **Companies** tab, select the desired companies to which you want to copy parameters.
+
+    > [!NOTE]
+    > Be aware that the list of target companies will be offered for the only users playing a security [role](../sysadmin/role-based-security.md#security-roles) that was configured to grant access to all organizations.
+
+8.  Select **OK**.
+
+    > [!NOTE]
+    > Notice that the confirmation dialog will inform you whether some target companies contain already configured parameters for the selected version of an ER format. Select **Yes** when you want to override them by copying parameters from the current company.
+
+    The configured set of application-specific parameters has now been copied to the selected companies.
+
 ### Reuse existing parameters
 
 Starting in Dynamics 365 Finance version 10.0.23, you can reuse application-specific parameters that have been configured for one version of an ER format, when you run a higher version of the same format. To do this, enable the **Use application specific parameters from previous versions of ER formats** feature in the **Feature management** workspace. When this feature is enabled and you run one version of an ER format that is trying to read application-specific parameters, ER will try to find application-specific parameters that have been configured for the running version of this format. Or, when they aren't available, for the nearest lower version of this format.
