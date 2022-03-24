@@ -50,9 +50,9 @@ As an example, suppose you have an item that has the following settings on its *
 
 If there's a demand for quantity 60 of this item, master planning will create a planned purchase order of quantity 60. If demand is increased by 30, master planning will suggest an increase of 40 because it will respect the multiple of 20 and never lead to undersupply.
 
-## Actions for orders related to safety stock
+## Action messages for orders related to safety stock
 
-Actions for orders supplying safety stock will never suggest decreasing the quantity below the quantity needed for the safety stock. In other words, given an order that is supplying safety stock and customer demand, if the demand is decreased or canceled, master planning will suggest decreasing the planned order by the decreased demand, but will never suggest a value lower than the needed safety stock.
+Action messages for orders supplying safety stock will never suggest decreasing the quantity below the quantity needed for the safety stock. In other words, given an order that is supplying safety stock and customer demand, if the demand is decreased or canceled, master planning will suggest decreasing the planned order by the decreased demand, but will never suggest a value lower than the needed safety stock.
 
 The system won't suggest postponing actions for supplying safety stock because it's assumed that the safety stock must be supplied on the required time and date.
 
@@ -60,18 +60,18 @@ The system won't suggest postponing actions for supplying safety stock because i
 
 Actions related to components of bills of material (BOMs) must be applied before the actions of their parent items because further orders related to higher level BOMs may be affected. Then you must run master planning again to recalculate and suggest appropriate actions accordingly.
 
-Suppose you have the following situation:
+For example, suppose you have the following situation:
 
 - Final good *FG* of type *production* has a BOM that includes the raw material *RM*.
 - Today's date is January 21.
-- A sales order for FG is created today (January 21).
-- Master planning creates a production order for FG for January 25.  <!-- KFM: To cover the sales order? Is this really the date you mean? -->
-- January 21 is closed for the RM calendar, but January 20 and January 22 are open
+- There is an existing, released production order for *FG* for January 25.
+- To support the existing production order, master planning has created a planned purchase order for the required *RM*, also with a requirement date of January 25.
+- A new sales order for *FG* is created today, with a requirement date of today (January 21).
+- January 21 is closed for delivery on the *RM* calendar, but January 22 is open.
 
-When master planning is run, it will generate advance actions that make the following suggestions:
+When master planning runs, it generates advance action messages suggesting that you move up the already scheduled production so you can fulfil today's order.
 
-- Move the production order to January 21 (without considering the closed date for RM).
-- A BOM line for RM for January 21. <!-- KFM: What does this mean? -->
-- Move the planned purchase order for RM to January 22 (respecting the calendar but not advancing to earlier than January 21).
+- To meet the new demand, it suggests to move the production order for *FG* up to January 21 (it makes this suggestion without considering the closed date for *RM*).
+- The raw material *RM* is still required for the production order, so it suggests to advance the planned purchase order too. But this time it checks the *RM* calendar and therefore suggests moving the planned purchase order for *RM* to January 22 (because January 21 is closed).
 
-Therefore, you must apply the action on the purchase order for RM first and then run master planning, which will suggest postponing the production order to January 22. <!-- KFM: But it's already set for January 25? -->
+As you can see, the required raw material *RM* will now arrive too late for the scheduled production of *FG*. Therefore, you must apply the advance action to the planned purchase order for *RM* first and then run master planning again, which will generate a new action message that suggests postponing the production order for *FG* to January 22.
