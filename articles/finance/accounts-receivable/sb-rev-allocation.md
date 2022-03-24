@@ -45,7 +45,7 @@ To specify the revenue allocation for a billing schedule, follow these steps:
 This page contains the following fields: 
 
 | Field| Description|
-| :------------- |:-------------| 
+|:------------- |:-------------| 
 |**Multiple element arrangement type**|The multiple element arrangement (MEA) type for the transaction: <br />- **Multiple**: Select this type when some line items   on the transaction are part of the multiple element arrangement, or if more than one arrangement exists.<br />- **None**: Select this type for a standard transaction without any revenue allocation.<br />- **Single**: Select this type when all items on the transaction are part of a single multiple element arrangement. |
 |**Multiple element arrangement number**|Displays the multiple element arrangement number for a line. Available when **Multiple element arrangement type** is **Multiple**. <br />When this field is blank and you assign a multiple element arrangement number, the **Standalone selling price origin** and **Standalone selling price** are automatically updated based on the values from the **Item standalone selling price** page. Only the multiple element arrangement numbers that are assigned to other lines in the sales order are available. |
 |**Deferred contract revenue account**|Specify the account you want to use for journal entries when a multiple element arrangement (MEA) contract invoice is created. Available when Recurring contract billing is used. |
