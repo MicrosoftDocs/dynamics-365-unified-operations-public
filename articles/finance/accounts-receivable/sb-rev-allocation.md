@@ -43,7 +43,6 @@ To specify the revenue allocation for a billing schedule, follow these steps:
 ### Fields
 
 This page contains the following fields: 
-
 |Field        |Description           |
 |:------------- |:-------------| 
 |**Multiple element arrangement type**|The multiple element arrangement (MEA) type for the transaction: <br />- **Multiple**: Select this type when some line items   on the transaction are part of the multiple element arrangement, or if more than one arrangement exists.<br />- **None**: Select this type for a standard transaction without any revenue allocation.<br />- **Single**: Select this type when all items on the transaction are part of a single multiple element arrangement. |
