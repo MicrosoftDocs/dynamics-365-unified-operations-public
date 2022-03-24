@@ -1,3 +1,19 @@
+---
+# required metadata
+
+title: Dynamics 365 Translation Service DevOps Extension Tutorial
+description: This tutorial explains in depth how to integrate the Dynamics 365 Translation Service DevOps extension into your Azure DevOps workflow.
+author: joshsantana
+ms.date: 03/24/2022
+ms.topic: article
+audience: IT Pro
+ms.reviewer: sericks
+ms.search.region: Global
+ms.author: joshsantana
+ms.search.validFrom: 03-24-2022
+
+---
+
 # **Dynamics 365 Translation Service DevOps Extension Tutorial**
 
 The Dynamics 365 Translation Service (DTS) Azure DevOps (ADO) extension provides several tasks for pipeline integration. Use this extension to conveniently translate your Dynamics 365 solutions ­from Azure DevOps.
