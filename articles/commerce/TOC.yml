@@ -2608,9 +2608,11 @@
             href: dev-itpro/pos-payment-extension.md
         - name: Packaging and deployment
           items:
-          - name: Create an MPOS extension package
+          - name: Create a Modern POS extension Package
+          - href: dev-itpro/pos-extension/create-pos-extension-appx.md
+          - name: Create a Modern POS extension package installer
             href: dev-itpro/pos-extension/mpos-extension-packaging.md
-          - name: Code signing an MPOS (MSIX) extension package
+          - name: Code signing a Modern POS (MSIX) extension package
             href: dev-itpro/pos-extension/mpos-extension-signing.md 
           - name: Create a Cloud POS extension package
             href: dev-itpro/pos-extension/cpos-extension-package.md
