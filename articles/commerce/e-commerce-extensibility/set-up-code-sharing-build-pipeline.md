@@ -188,16 +188,15 @@ To create and configure a new build pipeline in Azure DevOps, follow these steps
     
 **Note:** if you are building a version of the online SDK version 10.0.27 or earlier it requires Node.js version 12.x, to support this on the agent, add the **Node Tool Installer** task ahead of the powershell  task specifying version 12.x as shown below.
 
-    ![Adding the Node task to install version 12](media/code-sharing-25.png)
-    
+    ![Add the Node task to install version 12](media/code-sharing-25.png) 
 
 1. Monitor the agent job logs to learn when the job is completed.
 
-    ![Azure DevOps showing running job with agent job logs.](media/code-sharing-21.png)
+    ![Azure DevOps showing running job with agent job logs](media/code-sharing-25.png)
 
 1. After the job is completed, in the left navigation pane, under **Pipelines**, select **Pipelines**. Then, on the **Runs** tab, under **All pipeline runs**, select the pipeline run to download the deployable package.
 
-    ![[Azure DevOps "Pipelines" page with "Runs" tab and pipeline run highlighted](media/code-sharing-22.png)
+    ![Azure DevOps "Pipelines" page with "Runs" tab and pipeline run highlighted](media/code-sharing-22.png)
 
 1. Under **Summary**, under **Artifacts**, select **1 published**.
 
