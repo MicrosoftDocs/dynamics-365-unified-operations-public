@@ -33,10 +33,10 @@ In this exercise you will:
 
 Open your favorite web browser and navigate to the [Visual Studio marketplace](https://marketplace.visualstudio.com/). Switch to the Azure DevOps tab and search for "Dynamics 365 Translation Service".
 
-![](./media2/dts-ado-tutorial-image1.png)
+![](media/dts-ado-tutorial-image1.png)
 
 Find the **Dynamics Translation Tasks** extension and open it. From the extension page, select **Get it free**.
-![](./media2/dts-ado-tutorial-image2.png)
+![](media/dts-ado-tutorial-image2.png)
 
 The installation page will open. You can choose to either install the extension to a DevOps organization or to download the vsix package for server installation. Once the extension is installed, you can use it from any pipeline in the organization.
 
@@ -46,23 +46,23 @@ To consume the Dynamics 365 Translation Service API, the extension needs to acqu
 
 1. Sign into the Azure Portal by using a work or school account, or a personal Microsoft account.
 2. In the search bar, begin typing "App registrations", then select it.
-3. From the **App registrations** page, select **New**  **registration**. ![](./media2/dts-ado-tutorial-image3.png)
+3. From the **App registrations** page, select **New**  **registration**. ![](media/dts-ado-tutorial-image3.png)
 4. When the  **Register an application**  page appears, enter your application's registration information.
    1. **Name** – Enter a meaningful name.
    2. **Supported Account Types** – Select the types of accounts the app should support.
    3. **Redirect URI** – This field is optional and not necessary for our use case. 
-5. ![](./media2/dts-ado-tutorial-image4.png)
+5. ![](media/dts-ado-tutorial-image4.png)
 6. Select the **API permissions** menu item and then select **Add a permission**.
-7. ![](./media2/dts-ado-tutorial-image5.png)
+7. ![](media/dts-ado-tutorial-image5.png)
 8. Switch to the **APIs my organization**** uses** tab.
 9. Search for Dynamics Lifecycle Services.
    1. Check the **user\_impersonation** permission to grant your application access to the Dynamics Lifecycle Services API.
    2. Select **Add permissions.** 
-   3. ![](./media2/dts-ado-tutorial-image6.png)
+   3. ![](media/dts-ado-tutorial-image6.png)
 10. In the left navigation pane, under  **Manage** , select  **Authentication**.
-11. On the  **Authentication**  page, under  **Advanced settings** , select  **Yes**  to enable the option to  **Allow public client flows**. Select save after enabling this setting. ![](./media2/dts-ado-tutorial-image7.png)
+11. On the  **Authentication**  page, under  **Advanced settings** , select  **Yes**  to enable the option to  **Allow public client flows**. Select save after enabling this setting. ![](media/dts-ado-tutorial-image7.png)
 12. In the left navigation pane, select  **Overview**. The overview page for your app registration shows the client ID.
-13. On the overview page, you can select  **Endpoints**  to find the authentication endpoint. Note the OAuth 2.0 token endpoint for use with the extension service connection. ![](./media2/dts-ado-tutorial-image9.png)
+13. On the overview page, you can select  **Endpoints**  to find the authentication endpoint. Note the OAuth 2.0 token endpoint for use with the extension service connection. ![](media/dts-ado-tutorial-image9.png)
 
 
 ### Create a Dynamics Lifecycle Services Connection
@@ -72,10 +72,10 @@ Now that you have an app registered with Dynamics Lifecycle Services (LCS) API c
 **Note:** LCS authentication requires Azure Active Directory (Azure AD) accounts where multi-factor authentication (MFA) is turned off and that aren't backed by federated sign-ons. We recommend using a separate account with limited permissions for the service connection.
 
 1. In your Azure DevOps project, at the bottom of the left menu, select  **Project settings**.
-2. In the  **Project Settings**  pane, under  **Pipelines** , find and select  **Service connections**. Then select  **Create service connection**.  ![](./media2/dts-ado-tutorial-image10.png)
-3. In the  **New service connection**  dialog box, search for and select the  **Dynamics Lifecycle Services**  service connection type. Select  **Next**. ![](./media2/dts-ado-tutorial-image11.png)
+2. In the  **Project Settings**  pane, under  **Pipelines** , find and select  **Service connections**. Then select  **Create service connection**.  ![](media/dts-ado-tutorial-image10.png)
+3. In the  **New service connection**  dialog box, search for and select the  **Dynamics Lifecycle Services**  service connection type. Select  **Next**. ![](media/dts-ado-tutorial-image11.png)
 4. Enter the information for the service connection. Use the client ID and authentication endpoint from the registered app. The name that you select for this service will be used as input for the DTS DevOps extension tasks.
-5. ![](./media2/dts-ado-tutorial-image12.png)
+5. ![](media/dts-ado-tutorial-image12.png)
 
 ### Conclusion
 
@@ -116,7 +116,7 @@ Commit the new file to your repository.
 1. From the left-hand menu, select **Pipelines** and then select the **New pipeline** button.
 2. Follow the wizard by selecting your repository, and create a **Starter pipeline**.
 3. Expand the **Show assistant** menu item and search for the **DTS Translation** task **.** 
-   - ![](./media2/dts-ado-tutorial-image14.png)
+   - ![](media/dts-ado-tutorial-image14.png)
 4. Configure the **DTS Translation** task.
    1. From the LCS service connection dropdown, select the service connection you created earlier.
    2. Enter any request name.
@@ -127,7 +127,7 @@ Commit the new file to your repository.
    7.  Enter the path to the resource file you created earlier: **$(Build.SourcesDirectory)/\*.label.txt**.
    8.  Enter **$(Build.ArtifactStagingDirectory)** as the output path.
 5.  Select **Add** to add the task to your pipeline.
-6.   ![](./media2/dts-ado-tutorial-image15.png)
+6.   ![](media/dts-ado-tutorial-image15.png)
 7.  Expand the **Show assistant** menu item and search for the **Publish Pipeline Artifacts** task **.**
     1. Set "File or directory path" to **$(Build.ArtifactStagingDirectory).**
     2.  Enter any artifact name and keep the publish location to **Azure Pipelines.**
@@ -138,7 +138,7 @@ Commit the new file to your repository.
 
 After saving the pipeline, an automatic run should be triggered. If the pipeline doesn't automatically run, you can manually run it from the **Pipelines** menu.
 
- ![](./media2/dts-ado-tutorial-image17.png)
+ ![](media/dts-ado-tutorial-image17.png)
 
 ### Review pipeline output
 
@@ -146,15 +146,15 @@ After running the pipeline in the previous step, you will be redirected to the s
 
 The translation ID identifies the job and corresponds to the same ID found in the DTS dashboard within the Lifecycle Services web portal. You will need this ID later in the exercise for when you regenerate the translations.
 
-![](./media2/dts-ado-tutorial-image18.png)
+![](media/dts-ado-tutorial-image18.png)
 
 The Publish Pipeline Artifact task will allow you to download the translation output from the Pipeline summary page. Select the back arrow to navigate back to the summary page. Select **1 published** under the **Related** menu.
 
- ![](./media2/dts-ado-tutorial-image20.png)
+ ![](media/dts-ado-tutorial-image20.png)
 
 Open the **For translation review** folder and download the .xlf file.
 
- ![](./media2/dts-ado-tutorial-image21.png)
+ ![](media/dts-ado-tutorial-image21.png)
 
 
 ### Review and edit the translations
@@ -166,7 +166,7 @@ After downloading the translations, you may want to review and make any necessar
 3. After you've reviewed and edited the translations and are confident that they are of expected quality, mark them as **Translated** , **Final** , or **Signed off** so that they can be used for future requests.
 4. Make some arbitrary change to any of the strings and save the file. In the next step, we will use it to regenerate the resource files.
 
- ![](./media2/dts-ado-tutorial-image23.png)
+ ![](media/dts-ado-tutorial-image23.png)
 
 
 ### Regenerate the translation
@@ -182,7 +182,7 @@ After you've finished reviewing and editing the translations in XLIFF, you will 
    3. Set **Translation ID** to the ID you noted from the translation pipeline output.
    4. Set the **Output Path** to **$(Build.ArtifactStagingDirectory)**
 5. Add the task to your pipeline, it should look like this:
-6.  ![](./media2/dts-ado-tutorial-image24.png)
+6.  ![](media/dts-ado-tutorial-image24.png)
 7.  Expand the **Show assistant** menu item and search for the Publish Pipeline Artifacts task.
     1. Set **File or directory path** to **$(Build.ArtifactStagingDirectory)**.
     2. Enter any artifact name and keep the publish location to Azure Pipelines.
@@ -213,7 +213,7 @@ After translation, you may be interested in saving the localized files to your p
    2. Create branch
    3. Read
 
-![](./media2/dts-ado-tutorial-image27.png)
+![](media/dts-ado-tutorial-image27.png)
 ### Add Git scripts to Pipeline
 
 Before running Git commands, you'll want to allow the script to access the system token. You can do so by adding a **checkout** step with **persistCredentials** set to **true**.
@@ -298,7 +298,7 @@ Commit both files to your repository.
    7.  For the **Target file** , enter **$(Build.SourcesDirectory)/res.label.fr.txt**.
    8.  Enter **$(Build.ArtifactStagingDirectory)** as the **Output path**.
    9.  Add the task to your pipeline, it should look like this:
-   10.  ![](./media2/dts-ado-tutorial-image29.png)
+   10.  ![](media/dts-ado-tutorial-image29.png)
 4.  Expand the **Show assistant** menu item and search for the **Publish Pipeline Artifacts** task.
     1.  Set **File or directory path** to **$(Build.ArtifactStagingDirectory)**.
     2.  Enter any artifact name and keep the publish location to Azure Pipelines.
