@@ -180,11 +180,12 @@ To create and configure a new build pipeline in Azure DevOps, follow these steps
 
     !["Save and queue" highlighted on the toolbar](media/code-sharing-19.png)
 
-1. In the **Run pipeline** dialog box, make sure that the **Agent Specification** field is set to **vs2017-win2016**, and then select **Save and run**.
+1. In the **Run pipeline** dialog box, make sure that the **Agent Specification** field is set to **windows-2019**, and then select **Save and run**.
 
     !["Run pipeline" dialog box with "Agent specification" field and "Save and run" button highlighted](media/code-sharing-20.png)
 
-    Tools that you typically use to build, test, and run JavaScript apps (such as npm, Node, Yarn, and Gulp) are preinstalled on Microsoft-hosted agents in Azure Pipelines. For the exact versions of Node.js and npm that are preinstalled, see the Microsoft-hosted agents. To install a specific version of these tools on Microsoft-hosted agents, add the **Node Tool Installer** task to the beginning of your process. Yarn is preinstalled on VS2017-win2016.
+    Tools that you typically use to build, test, and run JavaScript apps (such as npm, Node, Yarn, and Gulp) are preinstalled on Microsoft-hosted agents in Azure Pipelines. For the exact versions of Node.js and npm that are preinstalled, see the Microsoft-hosted agents. To install a specific version of these tools on Microsoft-hosted agents, add the **Node Tool Installer** task to the beginning of your process. Yarn is preinstalled on the windows-2019 agent.  Node.js version 16.x is preinstalled on the windows-2019 agent, however if you are building a version of the online SDK version 10.0.27 or earlier it requires Node.js version 12.x so ensure you add the **Node Tool Installer** task ahead of the powershell  task specifying version 12.x as shown below.
+    ![Adding the Node task to install version 12](media/code-sharing-25.png)
 
 1. Monitor the agent job logs to learn when the job is completed.
 
