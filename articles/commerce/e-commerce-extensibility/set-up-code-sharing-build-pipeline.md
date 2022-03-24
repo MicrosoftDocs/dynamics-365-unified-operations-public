@@ -167,7 +167,7 @@ To create and configure a new build pipeline in Azure DevOps, follow these steps
 
 1. In the **Add tasks** pane on the right, search for "publish," and then, in the **Publish Pipeline Artifacts** task, select **Add**.
 
-    ![[Azure DevOps "Add tasks" pane with search box and "Publish Pipeline Artifacts" task "Add" button highlighted](media/code-sharing-17.png)
+    ![Azure DevOps "Add tasks" pane with search box and "Publish Pipeline Artifacts" task "Add" button highlighted](media/code-sharing-17.png)
 
 1. In the main part of the page, select the **Publish Pipeline Artifacts** task. Then, in the **Publish Pipeline Artifacts** pane on the right, follow these steps:
 
