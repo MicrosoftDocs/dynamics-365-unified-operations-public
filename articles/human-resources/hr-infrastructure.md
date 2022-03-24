@@ -39,7 +39,7 @@ The merge will provide consistency for Human Resources users in the following wa
     - There is a single code base, where new functionality for Human Resources is released as part of the regular One Version update process.
     - The way that upgrades, updates, and hotfixes are applied to environments is consistent.
 
-- [Extensibility options are improved.](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/improve-extensibility-options.md)
+- [Extensibility options are improved.](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/improve-extensibility-options)
 
     - You can continue to use Microsoft Power Platform tools to extend as required.
     - You can extend functionality via forms, tables, methods, and application programming interfaces (APIs).
