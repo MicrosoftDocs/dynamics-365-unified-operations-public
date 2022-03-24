@@ -4,7 +4,7 @@
 title: VAT reporting for Europe
 description: This topic provides general information about setting up and generating the value-added tax (VAT) statement for some European countries.
 author: ShylaThompson
-ms.date: 06/20/2017
+ms.date: 03/24/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -46,13 +46,13 @@ This topic provides a generic approach to setting up and generating the VAT stat
 -   Sweden
 
 > [!IMPORTANT]
-  > Features described in this topic for Austria, Czech Republic, Germany, Netherlands, Sweden) are deprecated, please see more details in [Removed and deprecated features](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/removed-deprecated-features-finance).
-> You can learn more about new design of VAT declarations in the countries in the table below:
+> Features described in this topic for Austria, Czech Republic, Germany, Netherlands, and Sweden are deprecated. For more information, see [Removed and deprecated features](../get-started/removed-deprecated-features-finance.md).
+> Use the links in the following table to learn more about the new design of VAT declarations in the corresponding countries.
 > 
 >
 > | Country        | Additional information                                                          |
 > |----------------|---------------------------------------------------------------------------------|
-> | Austria        | [VAT declaration (Austria)](emea-aut-vat-declaration-austria.md)       |                                                                           |
+> | Austria        | [VAT declaration (Austria)](emea-aut-vat-declaration-austria.md)       |                                                                           
 > | Czech Republic | [VAT declaration (Czech Republic](emea-cze-vat-declaration-tax-declaration-model.md) |
 > | Denmark        | [VAT declaration (Denmark)](emea-dnk-vat-declaration-denmark.md)         |
 > | France         | [VAT declaration (France)](emea-fra-vat-declaration-preview-france.md)       |
