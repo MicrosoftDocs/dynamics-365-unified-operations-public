@@ -183,7 +183,7 @@ To create and configure a new build pipeline in Azure DevOps, follow these steps
     Tools that you typically use to build, test, and run JavaScript apps (such as npm, Node, Yarn, and Gulp) are preinstalled on Microsoft-hosted agents in Azure Pipelines. For the exact versions of Node.js and npm that are preinstalled, see the Microsoft-hosted agents. To install a specific version of these tools on Microsoft-hosted agents, add the **Node Tool Installer** task to the beginning of your process. Yarn and Node.js version 16.x are both preinstalled on the windows-2019 agent.
     
     > [!NOTE]
-    > Version 10.0.26 and earlier of the online SDK requires Node version 12.x. To support this on the agent, add the **Node Tool Installer** task ahead of the powershell task specifying version 12.x, as shown in the following example illustration.
+    > Version 10.0.26 and earlier of the online SDK requires Node version 12.x. To support this on the agent, add the Node tool installer task specifying version 12.x ahead of the PowerShell task, as shown in the following illustration.
 
     ![Add the Node task to install version 12](media/code-sharing-25.png)   
 
