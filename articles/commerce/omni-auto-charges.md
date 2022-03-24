@@ -4,7 +4,7 @@
 title: Omni-channel advanced auto charges
 description: This topic describes capabilities for managing other order charges for Commerce channel orders using advanced auto charges features.
 author: hhaines
-ms.date: 03/18/2022
+ms.date: 03/24/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
