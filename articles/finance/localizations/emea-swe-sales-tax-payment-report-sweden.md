@@ -4,7 +4,7 @@
 title: Sales tax report for Sweden
 description: This topic explains how to set up and generate the sales tax report for legal entities in Sweden.
 author: anasyash
-ms.date: 03/13/2020
+ms.date: 03/24/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,8 +31,8 @@ ms.dyn365.ops.version: Version 1611
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-  > This feature is deprecated, please see more details in [Removed and deprecated features](https://docs.microsoft.com//dynamics365/finance/get-started/removed-deprecated-features-finance#sales-tax-report-for-sweden-design-based-on-reporting-codes).
-  > Learn more about VAT declaration in [VAT declaration (Sweden)](https://docs.microsoft.com//dynamics365/finance/localizations/emea-swe-vat-declaration-sweden)
+  > This feature is deprecated. For more information, see [Removed and deprecated features](../get-started/removed-deprecated-features-finance.md#sales-tax-report-for-sweden-design-based-on-reporting-codes).
+  > For more information about VAT declaration, see [VAT declaration (Sweden)](emea-swe-vat-declaration-sweden.md)
   
 For general information about how to set up the value-added tax (VAT) statement, see [VAT reporting for Europe](emea-vat-reporting.md).
 
