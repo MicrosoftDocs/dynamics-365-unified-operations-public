@@ -5,7 +5,7 @@ title: Inbound inventory operation in POS
 description: This topic describes capabilities of the point of sale (POS) inbound inventory operation.
 author: hhaines
 
-ms.date: 09/17/2020
+ms.date: 03/23/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -167,7 +167,7 @@ Users can't add new products to the purchase order during POS receiving if purch
 
 The functionality that enables adding lines can't be used as a workaround for receiving additional quantities of products already on the purchase order. Over-receiving is managed through the standard [over-receiving](#over-receiving-validations) settings for the product line on the purchase order.
 
-When a user is receiving with the **Inbound operation** in POS, if the user scans or keys a product barcode or product number that isn't recognized as an item on the current purchase order, but is recognized as a valid item, the user receives a message about adding the item to the purchase order. If the user adds the item to the purchase order, the quantity entered in **Receiving now** is considered the ordered quantity for the purchase order line.
+When a user is receiving with the **Inbound operation** in POS, if the user scans or keys a product barcode or product number that is recognized as a valid item but isn't recognized as an item on the current purchase order, the user receives a message prompting them to add the item to the purchase order. If the user adds the item to the purchase order, the quantity entered in **Receiving now** is considered the ordered quantity for the purchase order line.
 
 When the purchase order receipt is complete and submitted to HQ for processing, the added lines are created on the purchase order master document. On the purchase order line in HQ, there will be an **Added by POS** flag on the **General** tab of the purchase order line. The **Added by POS** flag indicates that the purchase order line was added by the POS receiving process and was not a line that was on the purchase order prior to receiving.
 
