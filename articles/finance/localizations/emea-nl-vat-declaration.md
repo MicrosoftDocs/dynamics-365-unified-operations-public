@@ -4,7 +4,7 @@
 title: VAT declaration for the Netherlands
 description: This topic explains how to set up and generate the value-added tax (VAT) declaration for legal entities in the Netherlands. 
 author: anasyash
-ms.date: 07/19/2021
+ms.date: 03/24/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,7 +30,8 @@ ms.dyn365.ops.version:
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> A new feature for VAT declaration in Netherlands is available. For more information, see [VAT declaration (Netherlands)](emea-nl-vat-declaration-netherlands.md).
+  > This feature is deprecated. For more information, see [Removed and deprecated features](../get-started/removed-deprecated-features-finance.md#ob-declaration-for-netherlands-design-based-on-reporting-codes).
+  > For more information about VAT declaration, see [VAT declaration (Netherlands)](emea-nl-vat-declaration-netherlands.md)
 
 This topic explains how to set up and generate the value-added tax (VAT) declaration for legal entities in the Netherlands. For general information about how to set up the VAT statement, see [VAT reporting for Europe](emea-vat-reporting.md).
 
