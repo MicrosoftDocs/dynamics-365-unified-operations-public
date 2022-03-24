@@ -59,7 +59,7 @@ The following table describes the set of supported authentication methods for AP
 | Customer | Third-party e-Commerce authentication flows | Site user authentication by using an external identity provider that supports OpenID Connect | In Commerce headquarters, add the external identity provider to the accepted list of identity providers. | [Configure authentication providers](/dynamics365/commerce/dev-itpro/configure-authentication-providers) |
 | Application | Third-party app or service authentication flows | Azure AD service-to-service authentication/application authentication | In Commerce headquarters, add the external identity provider to the accepted list of identity providers. | |
 
-\* Sign-in to POS requires device activation for each terminal. For more information, see [Point of Sale (POS) device activation](/dev-itpro/retail-device-activation.md).
+\* Sign-in to POS requires device activation for each terminal. For more information, see [Point of Sale (POS) device activation](dev-itpro/retail-device-activation.md).
 
 ### Unsupported authentication flows
 
@@ -95,7 +95,7 @@ The following illustration shows third-party application authentication flows in
 
 [Dynamics 365 Commerce architecture overview](commerce-architecture.md)
 
-[Commerce Scale Unit customer and consumer APIs](/dev-itpro/retail-server-customer-consumer-api.md)
+[Commerce Scale Unit customer and consumer APIs](dev-itpro/retail-server-customer-consumer-api.md)
 
 [POS worker logon](retail-modern-pos-device-activation.md#create-a-worker)
 
@@ -107,9 +107,9 @@ The following illustration shows third-party application authentication flows in
 
 [Set up custom pages for user sign-ins](custom-pages-user-logins.md)
 
-[Configure authentication providers](/dev-itpro/configure-authentication-providers.md)
+[Configure authentication providers](dev-itpro/configure-authentication-providers.md)
 
-[Point of Sale (POS) device activation](/dev-itpro/retail-device-activation.md)
+[Point of Sale (POS) device activation](dev-itpro/retail-device-activation.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
