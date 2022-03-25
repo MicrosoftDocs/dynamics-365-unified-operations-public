@@ -1,10 +1,10 @@
 ---
 # required metadata 
 
-title: Enable debug mode in Tax Calculation service
-description: This topic explains how to enable debug mode of Tax Calculation service to investigate issues. 
+title: Enable debug mode in the Tax Calculation service
+description: This topic explains how to enable debug mode in the Tax Calculation service to investigate issues. 
 author: hangwan
-ms.date: 03/23/2022
+ms.date: 03/25/2022
 ms.topic: business-process 
 ms.prod:  
 ms.technology:  
@@ -23,13 +23,15 @@ ms.author: hangwan
 ms.search.validFrom: 03/23/2022
 ms.dyn365.ops.version: Version 10.0.21 
 ---
+
 # Enable debug mode
 
-This topic explains how to enable debug mode of Tax Calculation service to investigate issues.
+[!include [banner](../includes/banner.md)]
 
-- Append **&debug=vs%2CconfirmExit&** to the URL of AOS, then refresh the page
-- A `TXT` file named `TaxServiceTroubleshootingLog` will present when clicking `Sales tax` button to calculate tax
-- The TaxServiceTroubleshootingLog.txt contains taxabledocument, calculation parameter, the result returned from tax service and exceptions information for troubleshooting.
+This topic explains how to enable the debug mode of the Tax Calculation service to investigate issues.
+
+1. Add **&debug=vs%2CconfirmExit&** to the URL of AOS and then refresh the page. 
+2. When you select **Sales tax** to calculate the sale tax, a TXT file named T**axServiceTroubleshootingLog** will open. The **TaxServiceTroubleshootingLog.txt** file contains **taxabledocument** and the calculation parameter. These results are returned from tax service and exceptions information for troubleshooting.
 
 ## Sample
 
@@ -84,3 +86,5 @@ This topic explains how to enable debug mode of Tax Calculation service to inves
 =============================CorrelationId:==============================
 "21f3a8a1-ee9a-477b-b44e-b8ec79e74d16"
 ```
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
