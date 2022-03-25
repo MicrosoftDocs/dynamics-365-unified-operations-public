@@ -153,6 +153,6 @@ Follow these steps to adjust a lease book only.
 7. To help prevent inaccurate calculations for the lease adjustment, add new payment schedule lines for the new payment dates that match the modification date. 
 
 > [!NOTE] 
-> We recommend that you use the Adjustment wizard to adjust a lease. The wizard reduces the number of manual steps, provides a preview of balances after the adjustment, and lets you change amounts before posting.
+> We recommend that you use the **Lease adjustment** wizard to adjust a lease. The wizard reduces the number of manual steps, provides a preview of balances after the adjustment, and lets you change amounts before posting.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
