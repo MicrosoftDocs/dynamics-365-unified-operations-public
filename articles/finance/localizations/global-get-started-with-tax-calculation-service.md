@@ -229,10 +229,10 @@ The steps in this section aren't related to a specific legal entity. You must co
     | D0001     | Full           |
     | D0003     | Reduced        |
 
-> [!NOTE]
-> If the default item sales tax group  on your taxable document lines is correct,  leave this matrix blank. For more information, see the [Runtime design](#runtime) section in this topic.
+   > [!NOTE]
+   > If the default item sales tax group  on your taxable document lines is correct,  leave this matrix blank. For more information, see the [Runtime design](#runtime) section in this topic.
 
-    For more information about how tax codes are determined in Tax Calculation, see [Sales tax group and item sales tax group determination logic](global-sales-tax-group-determination.md).
+   For more information about how tax codes are determined in Tax Calculation, see [Sales tax group and item sales tax group determination logic](global-sales-tax-group-determination.md).
 
 23. Set up the applicability of customer tax registration numbers, vendor tax registration numbers, and list codes based on the business needs.
 24. Select **Save**, and then close the page.
