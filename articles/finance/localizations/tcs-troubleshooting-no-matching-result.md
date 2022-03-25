@@ -35,6 +35,7 @@ This topic explains the troubleshooting steps you can take when you receive the 
 You might receive the following error, **Header/Lines - 1, Tax group, no matching result could be found.**
 
 ```json
+======================Tax service calculation result JSON:===========================
     {
       "taxDocument": {
         "Header": [
@@ -70,7 +71,7 @@ The issue occurs when the feature setup is incorrect in the Regulatory Configura
 2. Compare the tax service calculation input with the feature setup to fix the setup issue, The following example uses Tax calculation input.
 
     ```json
-
+    ===============================Tax service calculation input JSON:=====================================
     {
         "TaxableDocument": {
         "Header": [
