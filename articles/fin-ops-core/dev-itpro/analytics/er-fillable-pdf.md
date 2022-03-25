@@ -260,15 +260,14 @@ Because both properties are optional for a **Field** format element, the followi
 - If the **Name** attribute is defined, and the **Name** expression is configured, the PDF field that the same name as the value that is returned by the **Name** expression of the format element is filled in.
 
 > [!NOTE]
-> When a check box in the PDF template doesn't belong to a group of check boxes, it's represented in the editable ER format as the **Field** element that's nested under the **PDF File** element. This type of PDF check box can be filled in as selected in the following ways:
+> When a checkbox in the PDF template doesn't belong to a group of checkboxes, it's represented in the editable ER format as a **Field** element that is nested under the **PDF File** element. This type of PDF checkbox can be set as selected in the following ways:
 >
-> - When the corresponding **Field** format element is bound to a data source field of the *[Boolean](er-formula-supported-data-types-primitive.md#boolean)* data type that has the **True** value.
-> - When the corresponding **Field** format element contains a nested **String** format element that is bound to a data source field that has a text value of **1**, **True**, or **Yes**.
-
-> [!NOTE]
-> Your template can contain a group of check boxes the only one of which can be ticked. Those check boxes are represented in a PDF template as multiple form fields of the CHECKBOX type. Each of the fields have the same name and different export values. When you import a template to the editable ER format, each of the check boxes will be represented in the format hierarchical structure as the **Check box group item** element that is nested under the same **Check box group** element. The name of the **Check box group** element will be equal to the name of those check box fields in the PDF template. The name of each **Check box group item** element will be equal to the export value of the corresponding check box field in the PDF template.
+> - The corresponding **Field** format element is bound to a data source field of the *[Boolean](er-formula-supported-data-types-primitive.md#boolean)* data type that has a value of **True**.
+> - The corresponding **Field** format element contains a nested **String** format element that is bound to a data source field that has a text value of **1**, **True**, or **Yes**.
 >
-> You can bind a **Check box group item** element to the only data source field of the *Boolean* data type.
+> Your template can contain a group of checkboxes where only one checkbox can be selected at a time. Those checkboxes are represented in a PDF template as multiple form fields of the *CHECKBOX* type. Each field has the same name but a different export value. When you import the template into the editable ER format, each checkbox will be represented in the format hierarchical structure as a **Check box group item** element that is nested under the same **Check box group** element. The name of the **Check box group** element will equal the name of the checkbox fields in the PDF template. The name of each **Check box group item** element will equal the export value of the corresponding checkbox field in the PDF template.
+>
+> You can bind a **Check box group item** element to a data source field of the *Boolean* data type only.
 
 ## Run the format configuration
 
