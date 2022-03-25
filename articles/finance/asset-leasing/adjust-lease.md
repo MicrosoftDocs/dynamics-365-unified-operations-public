@@ -140,19 +140,19 @@ If a lease has been adjusted, you can view the different versions of it. You can
 2. To view historical schedules, open the modified lease from the **Lease summary** page, select the desired book, and then, on the Action Pane, select **Book version history**.
 3. On the **Book version** page, select a version and a schedule to view.
 
-## Adjust lease book
+## Adjust a lease book
 
-Complete the following steps to adjust a lease book only.
+Follow these steps to adjust a lease book only.
 
-1. Go to **Asset leasing** > **Leases** > **Lease summary**.
-2. Select and open a lease and on the **Lease details** page, select **Books**.
-3. On the **Books details** page, on the Action Pane, in the **Maintain** group, select **Adjust book**. 
-4. Remove the payment schedule lines.
-5. In the **Lease modification date**, enter the modification date and then consider removing all additional asset/liability considerations if any (initial direct cost, lease incentive, lease prepayment, dismantling cost and residual value guarantee). 
-6. Add new payment schedule lines for the new payment dates that match modification date to avoid inaccurate calculation for the lease adjustment. 
+1. Go to **Asset leasing** \> **Leases** \> **Lease summary**.
+2. Select and open a lease.
+3. On the **Lease details** page, select **Books**.
+4. On the **Books details** page, on the Action Pane, in the **Maintain** group, select **Adjust book**. 
+5. Remove the payment schedule lines.
+6. In the **Lease modification date** field, enter the modification date. Then consider removing all additional asset/liability considerations (initial direct cost, lease incentive, lease prepayment, dismantling cost, and residual value guarantee), if there are any. 
+7. To help prevent inaccurate calculations for the lease adjustment, add new payment schedule lines for the new payment dates that match the modification date. 
 
- > [!NOTE] 
- > We recommend that you use the Adjustment wizard to adjust a lease as the wizard reduces the amount of manual steps, provides a preview of balances after adjustment, and provides ability to change amounts before posting.
-
+> [!NOTE] 
+> We recommend that you use the Adjustment wizard to adjust a lease. The wizard reduces the number of manual steps, provides a preview of balances after the adjustment, and lets you change amounts before posting.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
