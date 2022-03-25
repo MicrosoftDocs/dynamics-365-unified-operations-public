@@ -48,4 +48,4 @@ To approve a vendor for a product, follow these steps.
     - **Effective date** – Select the first date that the vendor is approved for.
     - **Expiration date** – Select the last date that the vendor is approved for.
 
-For more information, see [Approve vendors for specific products](/dynamics365/supply-chain/procurement/tasks/approve-vendors-specific-products.md).
+For more information, see [Approve vendors for specific products](../../procurement/tasks/approve-vendors-specific-products.md).

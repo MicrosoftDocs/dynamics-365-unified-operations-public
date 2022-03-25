@@ -21,4 +21,4 @@ The **Inventory aging report** shows different values when viewed at different s
 
 ## Resolution
 
-For more information about the reporting logic, see [Inventory aging report examples and logic](/dynamics365/supply-chain/cost-management/inventory-aging-report.md).
+For more information about the reporting logic, see [Inventory aging report examples and logic](../../cost-management/inventory-aging-report.md).
