@@ -25,7 +25,7 @@ This version introduces the following new features, fixes, and improvements:
 
 - Fixed several crashing issues.
 - Fixed an issue where incorrect values would be shown on cards on the **Work list** page.
-- Improved the scrolling experience and eliminated scrolling jitter on the **Work list** and **Item Inquiry** pages in Android.
+- Improved the scrolling experience and eliminated scrolling jitter on the **Work list** and **Item inquiry** pages in Android.
 - Added an exit button to the sign-in page, which quits the application.
 
 ## Version 2.0.19.0
