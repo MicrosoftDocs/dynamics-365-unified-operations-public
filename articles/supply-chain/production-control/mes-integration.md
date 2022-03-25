@@ -60,6 +60,8 @@ You can enable any or all of the following processes for integration.
 ## Monitor incoming messages
 
 To monitor the incoming messages to the system, open the **Manufacturing execution systems integration** page. There, you can view, process, and troubleshoot issues.
+All messages for a specific production order are processed in the order they are received. However, messages for different production orders may not be processed in the received order, as they may be parallelized in the batch processing. In case of failure, the batch job will attempt to process the message three times before it goes on Failed state.
+
 
 ## Call the API
 
@@ -129,7 +131,7 @@ The following table shows the fields that each line in the `ReportFinishedLines`
 | `InventoryLotId` | Optional | String |
 | `BaseValue` | Optional | String |
 | `EndJob` | Optional | Enum (Yes \| No) |
-| `EndPickingList` | Optional | BEnum (Yes \| No) |
+| `EndPickingList` | Optional | Enum (Yes \| No) |
 | `EndRouteCard` | Optional | Enum (Yes \| No) |
 | `PostNow` | Optional | Enum (Yes \| No) |
 | `AutoUpdate` | Optional | Enum (Yes \| No) |
@@ -229,6 +231,10 @@ For the *end production order* message, the `_messageType` value is `ProdProduct
 | `AutoReportAsFinished` | Optional | Enum (Yes \| No) |
 | `AutoUpdate` | Optional | Enum (Yes \| No) |
 
+## Other production information 
+
+The messages are supporting actions or events happening in the shop floor. These are processed using the Manufacturing execution systems integration framework described in this topic. For other reference information, such as the Bill of Materials or route (with its specific setup and configuration times) used in a specific production order or product related information, it is expected that this information is retrieved from the system using data data entities and shared with the MES via the file or using OData. 
+
 ## Receive feedback about the state of a message
 
 After the MES has sent a message to Supply Chain Management, it might be relevant for Supply Chain Management to return feedback about the state of the message. Here are some examples of cases where this behavior might be relevant:
@@ -247,3 +253,4 @@ For example, you might set up the following alerts to provide feedback about the
 
 - Create a business event ("Send externally") that is used when a message is *Failed*.
 - Send a notification and email to the IT admin or production floor manager.
+
