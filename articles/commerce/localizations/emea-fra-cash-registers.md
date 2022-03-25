@@ -206,8 +206,8 @@ The information that is included on X and Z reports is based on French requireme
 
 - **Total sales** for the shift. This information includes amounts only for cash sales transactions. Prepayments and operations for issuing a gift card are excluded.
 - **Total returns** for the shift.
-- **Cumulative perpetual grand total**. This amount is calculated as the cumulative grand total amount of the previous shift, plus the total sales amount of this shift, minus the absolute value of the total return amount of this shift.
-- **Cumulative perpetual grand total (absolute value)**. This amount is calculated as the cumulative perpetual grand total amount of the previous shift, plus the total sales amount of this shift, plus the absolute value of the total return amount of this shift.
+- **Cumulative perpetual grand total**. This amount is calculated as the cumulative perpetual grand total amount of the previous shift, plus the total sales amount of this shift, minus the absolute value of the total return amount of this shift.
+- **Cumulative perpetual grand total (absolute value)**. This amount is calculated as the cumulative perpetual grand total (absolute value) amount of the previous shift, plus the total sales amount of this shift, plus the absolute value of the total return amount of this shift.
 - Value-added tax (VAT) amounts per tax rate.
 
 The totals are also stored in the closed shift record and transferred to Commerce headquarters.
@@ -229,7 +229,7 @@ It is possible to export a Z report from a closed shift in Commerce headquarters
 | TaxRate                          | The tax rate. |
 | TaxAmount                        | The grand total amount of tax for the tax rate. |
 | SequentialNumber                 | The sequential number of the signed shift for the register. |
-| DataToSign                       | The string that was [built from the elements of the shift record](./emea-fra-cash-registers.md#digital-signing-of-closed-shifts) and used for signing. |
+| DataToSign                       | The string that was [built from the elements of the shift record](#digital-signing-of-closed-shifts) and used for signing. |
 | DataToSignFormatVersion          | The internal version of the format of data that was used for signing. |
 | Signature                        | The digital signature of the shift record. |
 | HashAlgorithm                    | The hash algorithm that was used to hash the data before signing. |
@@ -478,12 +478,12 @@ You can download the ER configurations for the Z report and archive from Microso
 
 - **Retail channel data.version.2** data model
 - **Archiving DMM.version.2.3** data model mapping
-- **Retail Z-Report (FR).version.24.23.2** format
+- **Retail Z-Report (FR).version.24.23.3** format
 - **Retail data archive (FR).version.2.5** format
 
 After you import the configurations, select ER formats for the Z report and archive in the following fields on the **Electronic documents** tab of the **Commerce parameters** page:
 
-- **Z-Report export format**: select the **Retail Z-Report (FR).version.24.23.2** format or the format that you downloaded earlier.
+- **Z-Report export format**: select the **Retail Z-Report (FR).version.24.23.3** format or the format that you downloaded earlier.
 - **Retail data archive export format**: select the **Retail data archive (FR).version.2.5** format or the format that you downloaded earlier.
 
 ### Reinitialize Commerce components
