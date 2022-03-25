@@ -73,7 +73,7 @@ The **Support and renewal levels** page contains the following fields:
 The **Support and renewal** functionality can apply different support levels to items and update renewal information in Subscription billing.
 
 The following tasks must be completed first:
-1. Create at least one support or renewal level in **Support and renewal levels**.
+1. Create at least one support or renewal level on **Support and renewal levels** page.
 2. Associate an item with support and renewal items using **Item setup**. This is only required if you want to set up default values for support and/or renewal items.
 3. Specify the default support and renewal settings for new billing schedules in **Recurring contract billing parameters**. 
 
@@ -82,7 +82,7 @@ To apply different support levels to items and update renewal information, follo
 1. On the **All sales orders** page, create a sales order. 
 2. On the **Sales order lines** FastTab, add an item. 
 3. On the **Invoice** tab > **Support and renewal > Add support and renewal**. 
-4. On the **Support and renewal process** page, the header section is updated with the settings from the **Recurring contract billing parameters**. These values apply to all the support and renewal items (for example, if the billing frequency is **Annually**, all sales lines that have a renewal item are created with the annual frequency). To associate the sales order with an existing billing schedule, select a **Billing schedule number**. 
+4. On the **Support and renewal process** page, the header section is updated with the settings from the **Recurring contract billing parameters**. These values apply to all the support and renewal items (for example, if the billing frequency is **Annually**, all sales lines that have a renewal item are created with an annual frequency). To associate the sales order with an existing billing schedule, select a **Billing schedule number**. 
 5. To change the support or renewal start date, set **Override start date** to **Yes**. 
 6. To add or edit the support item, mark the **Support** checkbox and enter a **Support item**. This item is added to the sales order. 
 7. To add or edit the renewal item, mark the **Renewal** checkbox and enter a **Renewal item**. A billing schedule will be created with this item when the sales order is invoiced.
@@ -91,7 +91,7 @@ To apply different support levels to items and update renewal information, follo
 10. Open the **All/Active billing schedules** list and select the billing schedule number to review the details of the billing schedule on the **Billing schedules** page. To review the details of the lines created, go to the **Billing schedule lines** FastTab and select **Support and renewal**. 
 
 > [!Note]
-> If the renewal start date for a billing schedule line needs to be changed, you can edit the **Start date** for the line on the **Billing schedules** page. When you select the **View billing detail** page for the line, the **Billing start date** is updated with the new date and the **Billing end date** is recalculated based on the billing frequency. The renewal start date can be updated only if the first invoice for the renewal billing schedule has not been created and posted. After the first invoice is created and posted, the start date can't be edited. 
+> If the renewal start date for a billing schedule line needs to be changed, you can edit the **Start date** for the line on the **Billing schedules** page. When you select the **View billing detail** page for the line, the **Billing start date** is updated with the new date. The **Billing end date** will be recalculated based on the billing frequency. The renewal start date can be updated only if the first invoice for the renewal billing schedule has not been created and posted. After the first invoice is created and posted, the start date can't be edited. 
 
 The support and renewal process is available for the sales order only. When adding support and renewal to a sales order, you can create a new billing schedule or add the renewal item to an existing billing schedule. 
 
