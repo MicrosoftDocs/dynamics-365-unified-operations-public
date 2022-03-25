@@ -39,6 +39,7 @@ POS views support the following extension points and patterns:
 - **Custom app bar buttons** – Add custom buttons to the app bar on selected pages.
 - **Custom column sets** – Replace the grid columns with custom columns on selected pages.
 - **Custom controls** – Add new controls to selected pages.
+- **Custom filters** – Add custom filters to selected pages.
 
 ## POS views that currently support extensions
 
@@ -57,7 +58,7 @@ The following table shows the POS views that currently support extensions. It al
 | InventoryLookupView             | No                            | Yes                          | Yes                                  |
 | ShowJournalView                 | No                            | Yes                          | Yes                                  |
 | SimpleProductDetailsView        | Yes                           | No                           | Yes                                  |
-| AddressAddEditView              | Yes                           | No                           | Yes                                    |
+| AddressAddEditView              | Yes                           | No                           | Yes                                  |
 | PaymentView                     | No                            | No                           | Yes                                  |
 | PriceCheckView                  | Yes                           | No                           | Yes                                   |
 | PriceCheckViewPhone             | No                            | No                           | Yes                                   |
@@ -91,7 +92,20 @@ The following table shows the POS views that currently support extensions. It al
 
 ## Custom filter extension
 
-Custom filter extensions are supported in **Show journal view**, **Search order view**, **FulfillmentLine view**, and **Inventory Document Shipping and Receiving view**. **Search order views** also supports setting default parameters for search in the user interface (UI) using extensions. For example, if you want to add a default store search parameter you can do that by using an extension and showing that in the UI. 
+Custom filter extensions are supported in the below POS views.
+**Search order views** also supports setting default parameters for search in the user interface (UI) using extensions. For example, if you want to add a default store search parameter you can do that by using an extension and showing that in the UI. 
+
+| POS view                                   | Custom Filters are supported  | Default filter parameters    | Release |
+|--------------------------------------------|-------------------------------|-----------------------------|--------------------------------|
+| ShowJournalView                            | Yes                           | No                          |                                |
+| SearchOrdersView                           | Yes                           | Yes                         |                                |
+| FulfillmentLineView                        | Yes                           | No                          |                                |
+| InventoryDocumentListView                  | Yes                           | No                          | 10.0.23                        |
+| InventoryDocumentShippingAndReceivingView  | Yes                           | No                          | 10.0.25                        |
+| InventoryAdjustmentDocumentListView        | Yes                           | No                          | 10.0.25                        |
+| InventoryAdjustmentDocumentWorkingView     | Yes                           | No                          | 10.0.25                        |
+| InventoryDocumentStockCountingListView     | Yes                           | No                          | 10.0.25                        |
+| InventoryDocumentStockCountingWorkingView  | Yes                           | No                          | 10.0.25                        |
 
 Sample code for custom filter extensions are available in the Retail SDK (...\RetailSDK\Code\POS\Extensions\SampleExtensions\ViewExtensions\SearchOrders\SampleOrderSearchTextFilter.ts).
 
