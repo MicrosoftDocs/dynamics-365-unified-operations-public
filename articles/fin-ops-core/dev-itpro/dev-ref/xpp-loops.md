@@ -126,7 +126,7 @@ The **break** statement within a loop is used to terminate that loop. Execution 
 
 ### Example of a break statement
 
-This example is uses a **break** statement within a **while** loop. When used within a loop, the loop is terminated and execution continues from the statement following the loop. This works for **do... while** and **for** loops as well. 
+This example uses a **break** statement within a **while** loop. When used within a loop, the loop is terminated and execution continues from the statement following the loop. This works for **do... while** and **for** loops as well. 
 
 ```xpp
 var mainMenu = SysDictMenu::newMainMenu();
