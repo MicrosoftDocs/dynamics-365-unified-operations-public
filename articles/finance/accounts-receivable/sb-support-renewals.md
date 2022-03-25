@@ -2,7 +2,7 @@
 # required metadata
 
 title: Support and renewal levels
-description: This topic explains how to set up and use the support and renewal process on sales orders which will create a billing schedule for renewal items.
+description: This topic explains how to set up and use the support and renewal process on sales orders that will create a billing schedule for renewal items.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -33,7 +33,7 @@ This topic explains how to enter support or renewal items when entering sales or
 
 ## Support and renewal setup
 
-On the **Support and renewal levels** page you can set up different support levels for support and renewal items. The support or renewal can be a percentage of the original item amount or it can be a standard amount. 
+On the **Support and renewal levels** page, you can set up different support levels for support and renewal items. The support or renewal can be a percentage of the original item amount or it can be a standard amount. 
 
 You can select the default support levels on the **Recurring contract billing parameters** page. 
 
@@ -57,7 +57,7 @@ Create a support or renewal level:
 
 ### Fields
 
-The **Support and renewal levels** page page contains the following fields: 
+The **Support and renewal levels** page contains the following fields: 
 
 | Field| Description|
 | :------------- |:-------------| 
@@ -75,9 +75,9 @@ The **Support and renewal** functionality can apply different support levels to 
 The following tasks must be completed first:
 1. Create at least one support or renewal level in **Support and renewal levels**.
 2. Associate an item with support and renewal items using **Item setup**. This is only required if you want to set up default values for support and/or renewal items.
-3. Specify the default support and renewal settings for new billing schedules in **Recurring contract billing paramaters**. 
+3. Specify the default support and renewal settings for new billing schedules in **Recurring contract billing parameters**. 
 
-To apply different support levels to items and update renewal information, follow this steps.
+To apply different support levels to items and update renewal information, follow these steps:
 
 1. On the **All sales orders** page, create a sales order. 
 2. On the **Sales order lines** FastTab, add an item. 
@@ -93,7 +93,7 @@ To apply different support levels to items and update renewal information, follo
 > [!Note]
 > If the renewal start date for a billing schedule line needs to be changed, you can edit the **Start date** for the line on the **Billing schedules** page. When you select the **View billing detail** page for the line, the **Billing start date** is updated with the new date and the **Billing end date** is recalculated based on the billing frequency. The renewal start date can be updated only if the first invoice for the renewal billing schedule has not been created and posted. After the first invoice is created and posted, the start date can't be edited. 
 
-The support and renewal process is available for the sales order only. When adding support and renewal to a sales order you can create a new billing schedule or add the renewal item to an existing billing schedule. 
+The support and renewal process is available for the sales order only. When adding support and renewal to a sales order, you can create a new billing schedule or add the renewal item to an existing billing schedule. 
 
 
 ## Support and renewal audit
