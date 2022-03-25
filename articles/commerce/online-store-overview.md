@@ -91,7 +91,7 @@ The **default** and **fabrikam** sites include preconfigured templates, fragment
 For information about how to manage your site settings, see the following topics:
 
 - [Manage e-commerce users and roles](manage-ecommerce-users-roles.md)
-- [Search engine optimization (SEO) considerations for your site](/search-engine-optimization-considerations.md)
+- [Search engine optimization (SEO) considerations for your site](search-engine-optimization-considerations.md)
 - [Manage Content Security Policy (CSP)](manage-csp.md)
 - [Select a site theme](select-site-theme.md)
 

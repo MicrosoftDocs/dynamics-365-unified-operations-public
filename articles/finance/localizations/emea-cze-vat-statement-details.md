@@ -4,7 +4,7 @@
 title: VAT statement for the Czech Republic
 description: Set up and generate the VAT statement for users in legal entities located in the Czech Republic.
 author: ShylaThompson
-ms.date: 06/20/2017
+ms.date: 03/24/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,6 +29,10 @@ ms.dyn365.ops.version: AX 7.0.1
 # VAT statement for the Czech Republic
 
 [!include [banner](../includes/banner.md)]
+
+  > [NOTE!]
+  > This feature is deprecated. For more information, see [Removed and deprecated features](../get-started/removed-deprecated-features-finance.md#vat-declaration-cz-and-control-statement-export-cz-electronic-reporting-formats-for-czech-republic).
+  > For more information about VAT declaration, see [VAT declaration (Czech Republic)](emea-cze-vat-declaration-tax-declaration-model.md)
 
 Set up and generate the VAT statement for users in legal entities located in the Czech Republic.
 
