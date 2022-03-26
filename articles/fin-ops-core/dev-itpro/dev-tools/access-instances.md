@@ -197,10 +197,17 @@ On a VM, you can find most of the application configuration by opening the web.c
     - **Aos.AppRoot** – This key points to the root folder of the Application Object Server (AOS) web application.
 
 ### Commerce configuration
-
 The software development kit (SDK) is available at C:\RetailSDK. For more information about how to use and customize applications, see the following topics:
 - [Retail software development kit (SDK) architecture](../../../commerce/dev-itpro/retail-sdk/retail-sdk-overview.md)
 - [Point of sale (POS) device activation](../../../commerce/dev-itpro/retail-device-activation.md)
+
+#### Remove Pre-existing Encrypted data from Headquarters
+The Commerce configuration for the VHD environment will require the manual removal of the merchant properties from the deployed environment. In AOS of your VHD enviornment, search for and remove the SECUREMERCHANTPROPERTIES from the following tables:
+ - RETAILHARWAREPROFILE (removes pre-loaded properties from the hardware profile form)
+ - RETAILCHANNELPAYMENTCONNECTORLINE (removes pre-loaded properties from the online store form)
+ - CREDITCARDACCOUNTSETUP (removes pre-loaded properties from they payments service form)
+
+Once deleted, use the forms in Headquarters to set yep your payment gateway merchant details in the hardware profile, online store channel, or the payments service forms appropriate for the environment.
 
 ## Redeploying or restarting the runtime on the VM
 To restart the local runtime and redeploy all the packages, follow these steps.
