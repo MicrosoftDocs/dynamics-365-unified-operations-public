@@ -66,7 +66,7 @@ public final class Attribute
 ```
 
 ## Overriding a method
-The methods in a class are inherited by any class that extends the class. To change the functionality of an inherited method, you create a method in the subclass, and then give that method the same name and parameters as the method in the superclass. This process is known as *overriding* the method. In the following example, **ColorAttribute** is a subclass of **Attribute** and therefore inherits the **methodAttr** method. However, because **ColorAttribute** defines a method that has the same name and the same number of arguments, the method in the superclass is overridden.
+The methods in a class are inherited by any class that extends the class. To change the functionality of an inherited method, you create a method in the subclass, and then give that method the same name and parameters as the method in the superclass. This process is known as *overriding* the method. 
 
 When you instantiate the subclass, you can assign the reference to either a variable of the superclass type or the subclass type. Regardless of the type of the variable, the overridden method is called. 
 

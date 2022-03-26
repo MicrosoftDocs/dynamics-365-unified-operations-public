@@ -125,7 +125,7 @@ To configure the abandoned cart connector sample app, modify the **appSettings.j
 
 ### AzureCosmosOptions
 
-The abandoned cart retrieval job status, cart IDs, and modified timestamps are stored in Azure Cosmos DB. By default, the settings in the configuration file point to the local emulator instance of Azure Cosmos DB. When you deploy the connector to production, you must update these settings so that they point to the Azure Cosmos DB instance in your Azure subscription. For local or sandbox testing, you can use the [Azure Cosmos Emulator](/azure/cosmos-db/local-emulator).
+The abandoned cart retrieval job status, cart IDs, and modified timestamps are stored in Azure Cosmos DB. By default, the settings in the configuration file point to the local emulator instance of Azure Cosmos DB. When you deploy the connector to production, you must update these settings so that they point to the Azure Cosmos DB instance in your Azure subscription. For local or sandbox testing, you can use the [Azure Cosmos DB Emulator](/azure/cosmos-db/local-emulator).
 
 | Property    | Description |
 | ----------- | ----------- |
