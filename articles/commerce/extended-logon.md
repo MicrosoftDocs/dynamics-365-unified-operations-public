@@ -66,6 +66,6 @@ After extended logon is configured, and a bar code or magnetic stripe is assigne
 
 The out-of-box implementation of the extended logon capability requires that credentials have a minimum length of six characters, and that the first five characters (the credential ID) be unique. It was originally intended as a sample that developers could customize to meet the requirements of a specific implementation. (For example, it could be customized to support more characters or use different security verification rules.) For detailed information about how to build extensions for extended logon, see [Extending the extended logon functionality for MPOS and Cloud POS](https://cloudblogs.microsoft.com/dynamics365/no-audience/2018/12/14/extending-the-extended-logon-functionality-for-mpos-and-cloud-pos/).
 
-The logon service can also be extended to support additional extended logon devices, such as palm scanners. For more information, see the POS extensibility documentation.
+The logon service can also be extended to support additional extended logon devices, such as palm scanners. For more information, see the [POS extensibility documentation](dev-itpro/pos-extension/pos-extension-overview.md).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
