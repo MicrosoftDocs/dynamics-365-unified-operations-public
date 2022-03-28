@@ -55,7 +55,7 @@ The billing schedule is set up with the following:
 
 The first renewal amount is shorter than one year. 
 
-![Alignment Scenario2](../_images/Align02.png)
+![Alignment Scenario2](../_images/Alignment2.png)
 
 ## Scenario 3: Extended Alignment
 
