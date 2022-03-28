@@ -1,64 +1,65 @@
 ---
 # required metadata
 
-title: Dynamics 365 Translation Service DevOps Extension Tutorial
-description: This tutorial explains in depth how to integrate the Dynamics 365 Translation Service DevOps extension into your Azure DevOps workflow.
+title: Dynamics 365 Translation Service DevOps extension tutorial
+description: This tutorial explains how to integrate the Dynamics 365 Translation Service DevOps extension into your Azure DevOps workflow.
 author: joshsantana
-ms.date: 03/24/2022
+ms.date: 03/28/2022
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: joshsantana
-ms.search.validFrom: 03-24-2022
+ms.search.validFrom: 03-28-2022
 
 ---
 
-# **Dynamics 365 Translation Service DevOps Extension Tutorial**
+# Dynamics 365 Translation Service DevOps extension tutorial
 
-The Dynamics 365 Translation Service (DTS) Azure DevOps (ADO) extension provides several tasks for pipeline integration. Use this extension to conveniently translate your Dynamics 365 solutions ­from Azure DevOps.
+The Dynamics 365 Translation Service (DTS) Azure DevOps extension provides several tasks for pipeline integration. Use this extension to conveniently translate your Dynamics 365 solutions from Azure DevOps.
 
 ## Learning Objectives
 
 In this tutorial, you will:
 
-- Learn about the functionality and features of the Dynamics 365 Translation Service Azure DevOps extension.
-- Submit translation requests through an Azure DevOps Pipeline.
+- Learn about the functionality and features of the DTS Azure DevOps extension.
+- Submit translation requests through an Azure DevOps pipeline.
 - Revise and regenerate new translations.
 - Submit alignment requests to create translation memory from previously translated files.
 
 ## Prerequisites
 
 - General knowledge of Azure DevOps
-- General understanding of Dynamics Lifecycle Services
+- General understanding of Dynamics Lifecycle Services (LCS)
 
 
-## Install and configure Dynamics 365 Translation Service Azure DevOps Extension
+## Install and configure Dynamics 365 Translation Service Azure DevOps extension
 
 ### Before you begin
 
-For this exercise, you will need access to an Azure DevOps project, along with a repo you can run pipelines on. You will also need access to Dynamics 365 Lifecycle Services.
+For this exercise, you will need access to an Azure DevOps project, along with a repo on which you can run pipelines. You will also need access to LCS.
 
 In this exercise you will:
 
-- Install the Dynamics 365 Translation Service extension to your Azure DevOps Organization.
-- Register an application for use with the Dynamics Lifecycle Services (LCS) API.
-- Create a LCS service connection.
+- Install the DTS extension to your Azure DevOps organization.
+- Register an application for use with the LCS API.
+- Create an LCS service connection.
 
-### Install the Dynamics 365 Translation Service Azure DevOps Extension
+### Install the DTS Azure DevOps extension
 
-Open your favorite web browser and navigate to the [Visual Studio marketplace](https://marketplace.visualstudio.com/). Switch to the Azure DevOps tab and search for "Dynamics 365 Translation Service".
+Open a web browser and navigate to the [Visual Studio marketplace](https://marketplace.visualstudio.com/). Switch to the Azure DevOps tab and search for **Dynamics 365 Translation Service**.
 
 ![](media/dts-ado-tutorial-image1.png)
 
 Find the **Dynamics Translation Tasks** extension and open it. From the extension page, select **Get it free**.
+
 ![](media/dts-ado-tutorial-image2.png)
 
-The installation page will open. You can choose to either install the extension to a DevOps organization or to download the vsix package for server installation. Once the extension is installed, you can use it from any pipeline in the organization.
+The installation page will open. You can choose to either install the extension to a DevOps organization or download the .vsix package for server installation. Once the extension is installed, you can use it from any pipeline in the organization.
 
 ### Register an application
 
-To consume the Dynamics 365 Translation Service API, the extension needs to acquire an access token from the Microsoft identity platform. A service connection to Dynamics Lifecycle Services (LCS) provides the extension with the necessary configuration for obtaining API permissions. This service connection will make use of a registered application that you will configure with LCS permissions.
+To consume the Dynamics 365 Translation Service API, the extension needs to acquire an access token from the Microsoft identity platform. A service connection to LCS provides the extension with the necessary configuration for obtaining API permissions. This service connection will make use of a registered application that you will configure with LCS permissions.
 
 1. Sign into the Azure Portal by using a work or school account, or a personal Microsoft account.
 2. In the search bar, begin typing "App registrations", then select it.
@@ -71,8 +72,8 @@ To consume the Dynamics 365 Translation Service API, the extension needs to acqu
 6. Select the **API permissions** menu item and then select **Add a permission**.
 7. ![](media/dts-ado-tutorial-image5.png)
 8. Switch to the **APIs my organization**** uses** tab.
-9. Search for Dynamics Lifecycle Services.
-   1. Check the **user\_impersonation** permission to grant your application access to the Dynamics Lifecycle Services API.
+9. Search for LCS.
+   1. Check the **user\_impersonation** permission to grant your application access to the LCS API.
    2. Select **Add permissions.** 
    3. ![](media/dts-ado-tutorial-image6.png)
 10. In the left navigation pane, under  **Manage** , select  **Authentication**.
@@ -81,9 +82,9 @@ To consume the Dynamics 365 Translation Service API, the extension needs to acqu
 13. On the overview page, you can select  **Endpoints**  to find the authentication endpoint. Note the OAuth 2.0 token endpoint for use with the extension service connection. ![](media/dts-ado-tutorial-image9.png)
 
 
-### Create a Dynamics Lifecycle Services Connection
+### Create an LCS connection
 
-Now that you have an app registered with Dynamics Lifecycle Services (LCS) API connections, you can create an LCS service connection. This service connection allows the extension to obtain LCS permissions through the registered application.
+Now that you have an app registered with the LCS API connections, you can create an LCS service connection. This service connection allows the extension to obtain LCS permissions through the registered application.
 
 **Note:** LCS authentication requires Azure Active Directory (Azure AD) accounts where multi-factor authentication (MFA) is turned off and that aren't backed by federated sign-ons. We recommend using a separate account with limited permissions for the service connection.
 
@@ -103,7 +104,7 @@ The Dynamics 365 Translation Service (DTS) Extension provides a task for automat
 
 ### Before you begin
 
-For this exercise you will need access to a DevOps organization with the Dynamics 365 Translation Service extension installed and an Dynamics Lifecycle Services (LCS) service connection configured. Consult the **Install and Configure Dynamics 365 Translation Service ADO Extension** exercise for guidance on the prerequisites.
+For this exercise you will need access to a DevOps organization with the Dynamics 365 Translation Service extension installed and an LCS service connection configured. Consult the **Install and Configure Dynamics 365 Translation Service ADO Extension** exercise for guidance on the prerequisites.
 
 In this exercise, you will:
 
@@ -160,7 +161,7 @@ After saving the pipeline, an automatic run should be triggered. If the pipeline
 
 After running the pipeline in the previous step, you will be redirected to the summary page. Select the job in the Jobs menu, which should have a state of queued or running. You should see the DTS translation task in the Jobs output pane. Select it to view the results.
 
-The translation ID identifies the job and corresponds to the same ID found in the DTS dashboard within the Lifecycle Services web portal. You will need this ID later in the exercise for when you regenerate the translations.
+The translation ID identifies the job and corresponds to the same ID found in the DTS dashboard within the LCS web portal. You will need this ID later in the exercise for when you regenerate the translations.
 
 ![](media/dts-ado-tutorial-image18.png)
 
