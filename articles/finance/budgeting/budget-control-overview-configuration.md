@@ -4,7 +4,7 @@
 title: Budget control overview
 description: This topic introduces the budget control feature and provides information to help you configure budget control to optimize management of your organization's financial resources.
 author: panolte
-ms.date: 11/08/2021
+ms.date: 03/28/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic introduces the budget control feature and provides information to help you configure budget control to optimize management of your organization's financial resources.
 
-Budget control supports management of an organization's financial resources through the chart of accounts, workflows, user groups, source documents and journals, configurable calculation of available funds, budget cycles, and thresholds. When controls are in place, an organization can plan, measure, manage, and forecast its financial resources throughout its fiscal year. 
+Budget control supports the management of an organization's financial resources through the chart of accounts, workflows, user groups, source documents and journals, configurable calculation of available funds, budget cycles, and thresholds. When controls are in place, an organization can plan, measure, manage, and forecast its financial resources throughout its fiscal year. 
 
 After budgets have been approved in the system, you can use budget plans to generate budget register entries to record the expenditure budget for an organization. Alternatively, you can create or import budget register entries from a third-party program instead of using budget planning functionality. 
 
@@ -83,9 +83,9 @@ Next, on the **Budget funds available** tab, you can define the formula that is 
 > [!NOTE]
 > If the calculation is modified during a budget cycle, the changes won't affect any documents that previously passed the budget control checks and were posted or completed. A feature that is named **Only track amounts in the budget funds available calculation** lets you change what data is tracked in the BudgetSourceTracking tables. When this feature is turned on, amounts are stored only if they are selected to be used in the available budget funds calculation. For more information, see [Budget funds available](budget-funds-available.md).
 
-### Documents and Journals
+### Documents and journals
 
-Next, on the **Documents and journals** tab, you can select which source documents and journals will be subject to budget control checks, and whether the checks will occur at the level of the line entry or the whole document. In additon, a new feature called **Budget control document filtering enhancement** is available starting with application version 10.0.27 release. This feature introduces the ability to specify which budget control documents are budget checked by providing a query based filter option for each document included in budget control. This allows for only a subset of a document type to be budget checked. e.g. It will allow you to only check Purchase Orders with Pool = “01”. A new column is added to this tab to indicate if a query is defined for the document type selected. Two additional buttons also exist above the document grid to add/edit filtering or delete filtering. 
+On the **Documents and journals** tab, you can select which source documents and journals will be subject to budget control checks, and whether the checks will occur at the line entry level or for the whole document. In additon, a new feature called **Budget control document filtering enhancement** is available starting in Finance version 10.0.27. This feature introduces the ability to specify which budget control documents are budget checked by providing a query-based filter option for each document included in budget control. This allows for only a subset of a document type to be budget checked. For example, you can check only Purchase Orders with **Pool** = **01**. A new column is added to this tab to indicate if a query is defined for the document type selected. Two additional buttons also exist above the document grid to add or edit filtering or to delete filtering. 
 
 You should match the source documents that are selected with the check boxes for balances that are included in the calculation of available budget funds. For example, if you selected **Budget reservations for encumbrances**, you should select the **Purchase orders** option. When a budget check is performed for the amounts and accounts on a purchase line, the budget control category that is assigned to the reservation is **Encumbrance**. When a budget check is performed for the amounts and accounts on a purchase requisition, the budget control category that is assigned to the reservation is **Pre-encumbrance**. 
 
