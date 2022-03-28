@@ -515,7 +515,7 @@ The `groupByValues` parameter should follow your configuration for indexing. For
 The `returnNegative` parameter controls whether the results contain negative entries.
 
 > [!NOTE]
-> If you have enabled the on-hand change schedule and available to promise features, then your query can also include the `QueryATP` Boolean parameter, which controls whether or not the query results should include available to promise (ATP) information. For more information and examples, see [Inventory Visibility on-hand change schedule and available to promise](inventory-visibility-available-to-promise.md)
+> If you've enabled the on-hand change schedule and available-to-promise (ATP) features, your query can also include the `QueryATP` Boolean parameter, which controls whether the query results include ATP information. For more information and examples, see [Inventory Visibility on-hand change schedules and available to promise](inventory-visibility-available-to-promise.md).
 
 The following example shows sample body content.
 
@@ -575,6 +575,6 @@ Here is a sample get URL. This get request is exactly the same as the post sampl
 
 ## Available to promise
 
-It is possible to set up Inventory Visibility to let you schedule future on-hand changes and calculate available-to-promise (ATP) quantities. ATP is the quantity of an item that is available and can be promised to a customer in the next period of time, and making use of this calculation can greatly increase your order fulfillment capability. For instructions about how to enable this feature, and how to interact with Inventory Visibility through its API after the feature is enabled, see [Inventory Visibility on-hand change schedule and available to promise](inventory-visibility-available-to-promise.md).
+You can set up Inventory Visibility to let you schedule future on-hand changes and calculate ATP quantities. ATP is the quantity of an item that is available and can be promised to a customer in the next period. Use of the ATP calculation can greatly increase your order fulfillment capability. For information about how to enable this feature, and how to interact with Inventory Visibility through its API after the feature is enabled, see [Inventory Visibility on-hand change schedules and available to promise](inventory-visibility-available-to-promise.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
