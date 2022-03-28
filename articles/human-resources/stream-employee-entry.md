@@ -2,7 +2,7 @@
 # required metadata
 
 title: Streamlined employee entry and navigation
-description: Data entry for workers in Dynamics 365 Human Resources has been enhanced to allow quick entry for all employees, past, active or future.
+description: Data entry for workers in Dynamics 365 Human Resources provides quick entry for all employees, past, active or future.
 author: twheeloc
 ms.date: 01/31/2022
 ms.topic: article
@@ -35,8 +35,6 @@ Dynamics 365 Human Resources allows efficient entry of employee and employment d
 You can use **View options** on the **Worker** page to select any combination of employees and contractors from a single list. These options allow you to view workers across legal entities or for the legal entity you're currently signed into. You can also view active, pending, and exited workers, and you can restrict results based on the type of worker (employee or contractor). If advanced security is enabled, you will only see those employees and contractors in the legal entities you have access to.
 
 Columns in the list view change based on your selections. For example, when viewing exited employees, the termination date and reason codes display as additional columns in the list. 
-
-[![View options.](./media/Worker-view-option.png)](./media/worker-view-option.png)
 
 ## Navigation and banner
 
