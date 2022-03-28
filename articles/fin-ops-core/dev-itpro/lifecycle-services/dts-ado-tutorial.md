@@ -117,7 +117,7 @@ The DTS extension provides a task for automating DTS translation requests as a p
 
 ### Before you begin
 
-For this exercise you will need access to a DevOps organization with the DTS extension installed and an LCS service connection configured. Consult the **Install and Configure Dynamics 365 Translation Service ADO Extension** exercise for guidance on the prerequisites.
+For this exercise you will need access to a DevOps organization with the DTS extension installed and an LCS service connection configured. For more information, see [Install and configure the DTS Azure DevOps extension](dts-ado-tutorial.md#install-and-configure-the-dts-azure-devops-extension).
 
 In this exercise, you will:
 
@@ -145,24 +145,22 @@ Commit the new file to your repository.
 
 1. From the left-hand menu, select **Pipelines** and then select the **New pipeline** button.
 2. Follow the wizard by selecting your repository, and create a **Starter pipeline**.
-3. Expand the **Show assistant** menu item and search for the **DTS Translation** task **.** 
-   - ![](media/dts-ado-tutorial-image14.png)
+3. Expand the **Show assistant** menu item, and search for the **DTS Translation** task.
 4. Configure the **DTS Translation** task.
    1. From the LCS service connection dropdown, select the service connection you created earlier.
    2. Enter any request name.
    3. Select **Finance and Operations** as the product.
    4. Select **English** as the source language.
    5. Select a target language, the language you will be translating into.
-   6.  Select **User Interface** as the translation type.
+   6.  Select **User interface** as the translation type.
    7.  Enter the path to the resource file you created earlier: **$(Build.SourcesDirectory)/\*.label.txt**.
    8.  Enter **$(Build.ArtifactStagingDirectory)** as the output path.
 5.  Select **Add** to add the task to your pipeline.
-6.   ![](media/dts-ado-tutorial-image15.png)
-7.  Expand the **Show assistant** menu item and search for the **Publish Pipeline Artifacts** task **.**
-    1. Set "File or directory path" to **$(Build.ArtifactStagingDirectory).**
-    2.  Enter any artifact name and keep the publish location to **Azure Pipelines.**
-8.  Select **Add** to add the task to your pipeline.
-9.  Save the pipeline.
+6.  Expand the **Show assistant** menu item and search for the **Publish Pipeline Artifacts** task.
+    1. Set **File or directory path** to **$(Build.ArtifactStagingDirectory)**.
+    2.  Enter any artifact name and keep the publish location to **Azure Pipelines**.
+7.  Select **Add** to add the task to your pipeline.
+8.  Save the pipeline.
 
 ### Run the translation pipeline
 
@@ -172,19 +170,23 @@ After saving the pipeline, an automatic run should be triggered. If the pipeline
 
 ### Review pipeline output
 
-After running the pipeline in the previous step, you will be redirected to the summary page. Select the job in the Jobs menu, which should have a state of queued or running. You should see the DTS translation task in the Jobs output pane. Select it to view the results.
+After running the pipeline in the previous section, you will be redirected to the summary page. 
 
-The translation ID identifies the job and corresponds to the same ID found in the DTS dashboard within the LCS web portal. You will need this ID later in the exercise for when you regenerate the translations.
+1. Select the job in the **Jobs** menu, which should have a state of queued or running. 
+2. You should see the DTS translation task in the **Jobs output** pane. 
+3. Select it to view the results.
+4. The translation ID identifies the job and corresponds to the same ID found in the DTS dashboard within the LCS portal. You will need this ID later in the exercise for when you regenerate the translations.
 
-![](media/dts-ado-tutorial-image18.png)
+   ![](media/dts-ado-tutorial-image18.png)
 
-The Publish Pipeline Artifact task will allow you to download the translation output from the Pipeline summary page. Select the back arrow to navigate back to the summary page. Select **1 published** under the **Related** menu.
+5. The Publish Pipeline Artifact task will allow you to download the translation output from the Pipeline summary page. Select the back arrow to navigate back to the summary page. 
+6. Select **1 published** under the **Related** menu.
 
- ![](media/dts-ado-tutorial-image20.png)
+   ![](media/dts-ado-tutorial-image20.png)
 
-Open the **For translation review** folder and download the .xlf file.
+7. Open the **For translation review** folder and download the .xlf file.
 
- ![](media/dts-ado-tutorial-image21.png)
+   ![](media/dts-ado-tutorial-image21.png)
 
 
 ### Review and edit the translations
@@ -201,23 +203,25 @@ After downloading the translations, you may want to review and make any necessar
 
 ### Regenerate the translation
 
-After you've finished reviewing and editing the translations in XLIFF, you will need to regenerate the translated native formats. The Dynamics 365 Translation Service extension provides a task for automating the regeneration process.
+After you've finished reviewing and editing the translations in XLIFF, you will need to regenerate the translated native formats. The DTS extension provides a task for automating the regeneration process.
 
 1. Upload the edited .xlf file to your repo.
 2. Create a new starter pipeline for your repo from the **Pipelines** page, just as before.
-3. In the editor, expand the **Show assistant** menu item and search for the **DTS Regeneration** task **.**
+3. In the editor, expand the **Show assistant** menu item and search for the **DTS Regeneration** task.
 4. Configure the regeneration task.
    1. From the LCS service connection dropdown, select the service connection you created earlier.
    2. For **Regenerate File** , use the path to the recently edited .xlf file. If you placed it at the root of your repo it will be **$(Build.SourcesDirectory)/res.fr.label.txt.xlf**.
    3. Set **Translation ID** to the ID you noted from the translation pipeline output.
-   4. Set the **Output Path** to **$(Build.ArtifactStagingDirectory)**
+   4. Set the **Output Path** to **$(Build.ArtifactStagingDirectory)**.
 5. Add the task to your pipeline, it should look like this:
-6.  ![](media/dts-ado-tutorial-image24.png)
-7.  Expand the **Show assistant** menu item and search for the Publish Pipeline Artifacts task.
+
+   ![](media/dts-ado-tutorial-image24.png)
+   
+6.  Expand the **Show assistant** menu item and search for the Publish Pipeline Artifacts task.
     1. Set **File or directory path** to **$(Build.ArtifactStagingDirectory)**.
     2. Enter any artifact name and keep the publish location to Azure Pipelines.
-8.  Add the task to your Pipeline, it should look like this:
-9.  Save the pipeline.
+7.  Add the task to your pipeline.
+8.  Save the pipeline.
 
 ### Run the regeneration pipeline
 
@@ -226,7 +230,12 @@ After saving the pipeline, an automatic run should be triggered. If the pipeline
 
 ### Review pipeline output
 
-After running the pipeline in the previous step, you will be redirected to the summary page. Select the Job in the Jobs menu, which should have a state of queued or running. After the execution is complete, select **1 published** under the **Related** menu to view and download the regenerated resource files and translation memory. Any edits made to the .xlf translation memory during review will be reflected in the new resource files.
+After running the pipeline in the previous section, you will be redirected to the summary page. 
+
+1. Select the job in the **Jobs** menu, which should have a state of queued or running. 
+2. After the execution is complete, select **1 published** under the **Related** menu to view and download the regenerated resource files and translation memory. 
+
+Any edits made to the .xlf translation memory during review will be reflected in the new resource files.
 
 ### (Optional) Commit changes to Git
 
@@ -239,11 +248,12 @@ After translation, you may be interested in saving the localized files to your p
 3. Within **Project Settings** , select **Repositories**. Select the repository you are using for this exercise.
 4. Select the **Security** tab to edit the security settings.
 5. Search for the **Project Collection Build Service** user. Grant the permissions needed for the Git commands you want to run. You'll likely want to grant:
-   1. Contribute
-   2. Create branch
-   3. Read
+   - Contribute
+   - Create branch
+   - Read
 
 ![](media/dts-ado-tutorial-image27.png)
+
 ### Add Git scripts to Pipeline
 
 Before running Git commands, you'll want to allow the script to access the system token. You can do so by adding a **checkout** step with **persistCredentials** set to **true**.
