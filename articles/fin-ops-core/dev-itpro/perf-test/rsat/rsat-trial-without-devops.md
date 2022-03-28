@@ -1,6 +1,6 @@
 ---
 title: Trial mode without Azure DevOps
-description: This topic describes how to use the Regression suite automation tool (RSAT) in trial mode without Azure DevOps.
+description: This topic describes how to use the Regression suite automation tool (RSAT) in trial mode without Microsoft Azure DevOps.
 author: FrankDahl
 ms.date: 03/18/2022
 ms.topic: article
@@ -26,98 +26,98 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-The Regression suite automation tool (RSAT) can be used in a trial mode. The benefit of this is that it does not require connections with Azure DevOps.
+The Regression suite automation tool (RSAT) can be used in a trial mode. The benefit of trial mode is that it doesn't require connections to Microsoft Azure DevOps.
 
-Organizations that are new to RSAT will be able to explore the tool without having to commit to subscribing to Azure DevOps. This enables you to experience the value of test automation, decide whether RSAT is the right tool for you, and then add Azure DevOps with Test Plan subscriptions to users if this makes sense for your organization. The RSAT trial mode is not time limited. For example, you could decide to continue using the RSAT trial mode alone, without an Azure subscription, if this covers your needs well.
+Organizations that are new to RSAT will be able to explore the tool without having to commit to subscribing to Azure DevOps. In this way, you can experience the value of test automation, decide whether RSAT is the right tool for you, and then add Azure DevOps and Test Plan subscriptions to users if this approach makes sense for your organization.
 
-The RSAT trial mode is based upon the *Normal* RSAT, as known from earlier versions. In fact, it is the same binary application just called differently to run in the new trial mode. Consider the trial mode as trim down of the functionality available in normal RSAT into a more simplified application, plus of course the fact that trial mode will not require an Azure DevOps to run.
+It's important to note that trial mode isn't time limited. If you find a long-term use for trial mode, keep it installed. Some organizations might even be fully satisfied with what trial mode offers, so that they continue to use it without ever subscribing to Azure DevOps and integrating RSAT with it.
 
-The RSAT in trial model is limited in some ways. For more information, see [How does RSAT in trial mode differ from RSAT *Normal* mode?](rsat-trial-without-devops.md#how-does-rsat-run-in-trial-mode-differ-from-rsat-normal-mode).
+RSAT in trial mode is based on the RSAT in Normal mode that is known from earlier versions. In fact, the binary application is the same, but the name differs when it runs in the new trial mode. You can think of trial mode as a trimmed-down version of the functionality that is available in Normal mode to produce a simplified application that doesn't require Azure DevOps to run.
 
-You select which of the two RSAT modes you want to be available by selecting this during the installation process. Both will be installed each with their own shortcut on the desktop. Both modes can be installed on the same machine and can be used interchangeably.
+RSAT in trial model is limited in some ways. For more information, see the [Differences when RSAT is run in trial mode instead of Normal mode](#differences) section later in this topic.
 
-RSAT will continue to work exactly like it used to when run under the normal mode.
+During the installation process, you select which of the RSAT modes you want to be available. Both modes will be installed, and each will have its own shortcut on the desktop. Both modes can be installed on the same machine, and they can be used interchangeably.
 
-RSAT running in trial mode operates without any form of integration with RSAT in normal mode. The trial mode isolates all test suites and cases under a single dedicated test plan called "Local Test Plan", and there is no supported exchange of test suites or cases between the two modes. In other words, the two modes are not connected in any way. This will change with the RSAT 2.5 release where a new action is planned that will allow export and import of test suites with cases. With that new action test suites and cases can be transferred between the two RSAT modes, and even taken from one environment to another.
+RSAT will continue to work exactly as it used to work when it was run in Normal mode.
 
-It is important to stress that trial mode is not time limited. In fact, if you find a long-term use of trial mode then keep it installed. There can even be organizations that will be fully satisfied with what trial mode offers and stick with using this without ever integrating to Azure DevOps.
+Trial mode isolates all test suites and cases under a single dedicated test plan that is named **Local Test Plan**. Currently, no exchange of test suites or cases between trial mode and Normal mode is supported. In other words, when RSAT is run in trial mode, it works without any type of integration with RSAT in Normal mode. However, in the RSAT 2.5 release, a new function that is planned will enable export and import of test suites together with cases. When this function is implemented, you will be able to transfer test suites and cases between the two RSAT modes. You will even be able to transfer them from one environment to another.
 
 ## Install RSAT in trial mode
 
-The RSAT installer program now includes an extra page where you select which RSAT modes you want to have available to use. This will be prefilled with typical selection that install only RSAT in **Normal** mode, but here you can select also to install the trial mode and unselect **Normal** mode if this is not needed. The installation program will create shortcuts for the selections you make to the environment. Notice as earlier installation is done for the full environment, and shortcuts are created as shared for all users on this environment.
+The RSAT installer program now includes an extra page where you select which RSAT modes you want to be available. By default, this page is configured so that only Normal mode is installed. However, you can select to install trial mode too. You can also clear the selection of Normal mode if it isn't required. The installation program will create a shortcut for each selected mode in the environment. Note that the installation is done for the full environment, and the shortcuts that are created are shared by all users in that environment.
 
-![Selecting Regression Suite Automation Tool modes to install](media/install-rsat.png)
+![Selecting which RSAT modes to install.](media/install-rsat.png)
 
-Icons appear on the desktop as shortcuts to call RSAT in the modes that we selected. Notice there is a new icon with a band that has the word "Trial" across to indicate this is the trial mode. Below is how this will appear if both modes were selected and installed. Simply click the RSAT shortcut that matches the mode you want to run from here.
+Icons that appear on the desktop act as shortcuts that call RSAT in the selected modes. Just select the shortcut for the mode that you want to run. Notice that the icon for trial mode includes a band that has the word "Trial." The following illustration shows the icons that appear if both modes are selected and installed. 
 
-![Regression Suite Automation Tool desktop icons](media/rsat-icons.png)
+![RSAT desktop icons.](media/rsat-icons.png)
 
-## How does RSAT run in trial mode differ from RSAT *Normal* mode?
+## <a name="differences"></a>Differences when RSAT is run in trial mode instead of Normal mode
 
-Running RSAT in trial mode means a user experience that is trimmed down compared to RSAT run in *normal* mode. Actions and settings related to Azure DevOps are removed from the experience when running under trial mode.
+When RSAT is run in trial mode instead of Normal mode, the user experience is trimmed down. Actions and settings that are related to Azure DevOps are removed from the user experience.
 
-![Regresssion Suite Automation Tool in trial mode](media/rsat-trial.png)
+![Running RSAT in trial mode.](media/rsat-trial.png)
 
-Here is a summary of actions and settings which are **not available** under trial mode:
+The following table summarizes the features (commands, settings, and links) that are **not** available in trial mode.
 
-| Type     | Name                                                                                                                                          |
-|----------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| Action   | Load menu is not available as there is no connected Azure DevOps.                                                                             |
-| Action   | New menu the item Create derived test case. Derived test cases are not supported under trial mode.                                            |
-| Action   | Upload menu is not available as there is no connected Azure DevOps.                                                                           |
-| Action   | Open menu is not available as there is no connected Azure DevOps.                                                                             |
-| Action   | New Test Case menu the action Add existing Test Case. Adding test cases by referencing an existing case ID is not supported under trial mode. |
-| Settings | The paragraph for Azure DevOps is not available under trial mode settings                                                                     |
-| Settings | Enable upload to Azure DevOps – this optional setting is not available under trial mode.                                                      |
-| Links    | Azure DevOps section with links, is not available under trial mode.                                                                           |
+| Feature | Reason why it isn't available |
+|---------|-------------------------------|
+| **Load** menu | There is no connection to Azure DevOps in trial mode. |
+| **Create derived test case** command on the **New** menu | Trial mode doesn't support derived test cases. |
+| **Upload** menu | There is no connection to Azure DevOps in trial mode. |
+| **Open** menu | There is no connection to Azure DevOps in trial mode. |
+| **Add existing test case** command on the **New test case** menu | Trial mode doesn't support adding test cases by referencing an existing case ID. |
+| Paragraph for Azure DevOps in the trial mode settings | |
+| **Enable upload to Azure DevOps** optional setting | |
+| **Azure DevOps** section with links | |
 
-Another limitation is that trial mode does not support running against test environments run on OneBox developer Virtual Hard Disks (VHDs). This is not supported and will not be supported under trial mode. If this is required, then you will need to continue running RSAT under **Normal** mode. RSAT in trial mode can run againt cloud-hosted Dev Boxes just fine though. The far typical use of RSAT trial mode is considered using cloud-hosted sandbox environments (Tier-2).
+RSAT in trial mode can't run against test environments that run on OneBox developer Virtual Hard Disks (VHDs). If this capability is required, you must run RSAT in Normal mode. However, RSAT in trial mode can run against cloud-hosted developer boxes. Typically, RSAT in trial mode uses cloud-hosted sandbox (Tier-2) environments.
 
-Some functions were provided by Azure DevOps that now needs to be available directly within RSAT trial mode.
+Some functions that are provided by Azure DevOps had to be made available directly in RSAT in trial mode.
 
-When a new test case is created then the assigned ID is determined from the next available folder name under the trial directory.
+When a new test case is created, the ID that is assigned is determined based on the next available folder name in the trial directory.
 
-There is only a single test plan available when running under trial mode. This is automatically named as "Local Test Plan". This is a limitation with trial mode and multiple test plans will only be supported when running RSAT in **Normal** mode with Azure DevOps.
+When RSAT runs in trial mode, only one test plan is available. This test plan is automatically named **Local Test Plan**. Multiple test plans are supported only when RSAT runs in Normal mode and there is a connection to Azure DevOps.
 
-Test suites are no longer created in DevOps under trial mode, so a new action is added in the toolbar called "New Test Suite", which opens a form to specify the name of the suite to create.
+When RSAT runs in trial mode, test suites aren't created in Azure DevOps. Therefore, the RSAT toolbar includes a new command that is named **New test suite**. This command opens a dialog box where you can specify the name of the suite to create.
 
-![Regression Suite Automation Tool - Create new test suites](media/new-suite.png)
+![Dialog box for specifying the name of the test suite to create.](media/new-suite.png)
 
-Notice there is only support for adding test suites directly with the Local Test Plan, and the action is only available when the test plan node has been selected in the tree, as shown in the following image.
+Note that, in trial mode, you can add test suites directly to the **Local Test Plan** test plan only. Additionally, the **New test suite** command is available only when the node for that test plan has been selected in the tree on the left, as shown in the following illustration.
 
-![Regression Suite Automation Tool - Test plan](media/trial-plan.png)
+![Node for Local Test Plan selected in the test tree.](media/trial-plan.png)
 
-There is also new **Delete Test Suite** action available for remove suites. This action will only allow deleting suites where there are no test cases within though. If you have test cases within the test suite, then you will need to delete these individually first before deleting the suite.
+Another new command that is named **Delete test suite** lets you remove test suites. However, you can use this command only for test suites that contain no test cases. If a test suite contains test cases, you must delete those cases individually before you can delete the suite.
 
-The actions for saving and loading settings available under **Settings** with the actions **Save as** and **Open** will save and load all available RSAT settings also Azure DevOps settings that are hidden under trial mode. This can be practical because you may reuse settings from **Normal** mode and share with another user then can open under trial mode for instance.
+The **Save as** and **Open** commands that are available under **Settings** let you save and load all available RSAT settings, even Azure DevOps settings that are hidden in trial mode. These commands can be useful, because they let you reuse settings from Normal mode and share them with other users, who can open them in trial mode, for example.
 
 ## Using RSAT in trial mode
 
-You start the RSAT in trial mode by clicking the shortcut with the **Trial** band after you installed this mode. The application will seem very familiar to how you work with this only with a few less actions available.
+To open RSAT in trial mode, select the desktop shortcut that has a "Trial" band on the icon. If you've used previous versions of RSAT, the application will seem very familiar. However, fewer commands will be available.
 
-The trial mode operates without a connection to Azure DevOps and tests are maintained exclusively by local files. Running RSAT in trial mode means you run an installation as a single user. There is no exchange of tests you make with other users. We recommend that you do not share working directories between users.
+Trial mode works without a connection to Azure DevOps, and tests are maintained exclusively by local files. When you run RSAT in trial mode, you run an installation as a single user. Tests that you make aren't exchanged with other users. We recommend that you not share working directories between users.
 
-The RSAT 2.5 release plan includes adding a function that will allow exporting and importing suites. This is how exchange of test suites and cases becomes an option.
+The RSAT 2.5 release plan includes the addition of a function that will enable test suites to be exported and imported. In this way, you will be able to exchange test suites and cases.
 
-When you open RSAT in trial mode the first time, then there are no test suites or cases shown only a single test plan called **Local Test Plan**. The test cases for trial mode are placed under the working directly you have specified in RSAT settings, within a subfolder named **Trial**. Test cases each have their own folder under there with the ID of the case.
+When you open RSAT in trial mode for the first time, no test suites or cases are shown. There is just a single test plan that is named **Local Test Plan**. The test cases for trial mode are in a **Trial** folder under the working directory that you specified in RSAT settings. Each test case has its own subfolder in the **Trial** folder. The name of the subfolder indicates the ID of the case.
 
-You can add one or more test suites under that test plan by using the **New Test Suite** action. It is highly advisable that you create suites and add test cases into these, and not add test cases directly to the test plan. Tests are always added to the current select node select on the left-hand control, like below where the suite **Purchase order** is selected.
+You can add one or more test suites under the **Local Test Plan** test plan by using the **New test suite** command. Although you can add test cases to the test plan, we highly recommend that you create test suites instead, and then add test cases to them. Tests are always added to the node that is currently selected in the tree on the left. For example, in the following illustration, tests will be added to the **Purchase order** test suite.
 
-![Regression Suite Automation Tool - Test tree](media/trial-tree.png)
+![Node for the Purchase order test suite selected in the test tree.](media/trial-tree.png)
 
-How do you then add test cases, edit, and delete them? Well, this is done using the exact same actions that were added earlier with RSAT release 2.2 for RSAT in **Normal** mode. For more informaiton, see [Maintain test cases within Regression suite automation tool (RSAT)](rsat-maintain-test-cases.md).
+To add, edit, and delete test cases, you use the same commands that were available in release 2.2 of RSAT in Normal mode. For more information, see [Maintain test cases within Regression suite automation tool (RSAT)](rsat-maintain-test-cases.md).
 
-There are very few things that are different about maintaining test cases under trial mode. There are mainly these two limitations: 
+Maintenance of test cases in trial mode differs from maintenance in Normal mode in very few ways. Basically, there are two limitations in trial mode:
 
-- Derived test cases are not available.
-- Test cases cannot be added as linked to an existing test case.
+- Derived test cases aren't available.
+- Test cases can't be added as linked to an existing test case.
 
-What is important to know is that you cannot just add new files to the file system to add tests into RSAT trail mode. In fact, interacting with files directly is not advised. This is because RSAT maintains an internal database over all files used, and changes made outside of RSAT directly in the file system cannot be catalogued correctly. Therefore, use functions available in the RSAT user experience only to add new test cases and attachment. On a similar note, do interact with parameter files using the action available in RSAT to open this.
+It's important to note that, in trial mode, you can't add new tests just by adding new files to the file system. In fact, direct interaction with files isn't advised, because RSAT maintains an internal database for all files that are used. Therefore, any changes that are made outside RSAT, directly in the file system, can't be cataloged correctly. Instead, you should always use the commands that are available in RSAT to add new test cases and attachments. Likewise, to open and interact with parameter files, use the command that is available in RSAT.
 
-Running tests under trial mode is done using the **Run** action on the RSAT toolbar. The results are presented only to the user running test by the results in the list with test cases, and this is not saved anywhere. These results are only available while RSAT is left open, and not visible anymore after restarting RSAT. Trial mode does not provide a way to share results with others like how Azure DevOps saves results from test runs. If this information is important, then consider using RSAT in the **Normal** mode.
+To run a test in trial mode, select **Run** on the RSAT toolbar. The results are presented only to the user who is running the test. They appear only in the list that shows test cases and aren't saved anywhere. Additionally, the results are available only while RSAT is left open. If RSAT is closed and reopened, the results will no longer be visible. Although Azure DevOps lets users save results from test runs, so that those results can be shared with other users, RSAT in trial mode doesn't provide a way to share results. If you must share results of test runs, consider using RSAT in Normal mode.
 
-Settings for RSAT in trial mode are shared with RSAT in **Normal** mode. There only real difference is the specific settings for connecting to Azure DevOps are hidden under trial mode. Saving and opening setting files will include all settings in RSAT, and it is not important which mode you run when saving or applying these.
+Settings for RSAT in trial mode are shared with RSAT in Normal mode. The only real difference is that the specific settings for connecting to Azure DevOps are hidden in trial mode. Nevertheless, if you save and open setting files, they will include all settings in RSAT. It doesn't matter which mode you run when you save or apply setting files.
 
-The RSAT in trial mode adds two new actions that enable creating and deleting test suites directly within RSAT. These actions are only available for trial mode with this release. We have noted feedback that these are requested even for **Normal** mode use, and this will be considered that we add these for **Normal** mode too with upcoming releases.
+RSAT in trial mode includes two new commands that let you create and delete test suites directly in RSAT. For the current release, these commands are available only in trial mode. However, Microsoft has received feedback that requests these commands for Normal mode too. We will consider adding them to Normal in an upcoming release.
 
-The new feature to create test suites. Currently unique for trial mode but may become available in **Normal** mode later. You can add cases directly under test plan, but good practice is to organize your tests under suites. This will further help enable later that you can export tests and exchange these with **Normal** mode or other users or other organizations even.
+As has been mentioned, although you can add test cases directly to the test plan, the recommended approach is to organize your tests under test suites. This approach will ensure that you can export tests and exchange them with RSAT in Normal mode, with other users, or even with other organizations.
