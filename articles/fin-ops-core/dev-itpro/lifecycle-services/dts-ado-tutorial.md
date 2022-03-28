@@ -33,7 +33,7 @@ In this tutorial, you will:
 - General understanding of Dynamics Lifecycle Services (LCS)
 
 
-## Install and configure Dynamics 365 Translation Service Azure DevOps extension
+## Install and configure the DTS Azure DevOps extension
 
 ### Before you begin
 
@@ -47,64 +47,77 @@ In this exercise you will:
 
 ### Install the DTS Azure DevOps extension
 
-Open a web browser and navigate to the [Visual Studio marketplace](https://marketplace.visualstudio.com/). Switch to the Azure DevOps tab and search for **Dynamics 365 Translation Service**.
+1. Open a web browser and navigate to the [Visual Studio marketplace](https://marketplace.visualstudio.com/). 
+2. Switch to the **Azure DevOps** tab and search for **Dynamics 365 Translation Service**.
+3. Find the **Dynamics Translation Tasks** extension and open it. 
+4. From the extension page, select **Get it free**.
 
-![](media/dts-ado-tutorial-image1.png)
+   ![Select "Get it free".](media/dts-ado-tutorial-image2.png)
 
-Find the **Dynamics Translation Tasks** extension and open it. From the extension page, select **Get it free**.
+The installation page will open. You can choose to either install the extension to a DevOps organization or download the .vsix package for server installation. 
 
-![](media/dts-ado-tutorial-image2.png)
-
-The installation page will open. You can choose to either install the extension to a DevOps organization or download the .vsix package for server installation. Once the extension is installed, you can use it from any pipeline in the organization.
+Once the extension is installed, you can use it from any pipeline in the organization.
 
 ### Register an application
 
-To consume the Dynamics 365 Translation Service API, the extension needs to acquire an access token from the Microsoft identity platform. A service connection to LCS provides the extension with the necessary configuration for obtaining API permissions. This service connection will make use of a registered application that you will configure with LCS permissions.
+To consume the DTS API, the extension needs to acquire an access token from the Microsoft identity platform. A service connection to LCS provides the extension with the necessary configuration for obtaining API permissions. This service connection will make use of a registered application that you will configure with LCS permissions.
 
 1. Sign into the Azure Portal by using a work or school account, or a personal Microsoft account.
-2. In the search bar, begin typing "App registrations", then select it.
-3. From the **App registrations** page, select **New**  **registration**. ![](media/dts-ado-tutorial-image3.png)
-4. When the  **Register an application**  page appears, enter your application's registration information.
+1. In the search bar, begin typing "App registrations", then select it.
+1. From the **App registrations** page, select **Newmregistration**. 
+1. When the  **Register an application**  page appears, enter your application's registration information.
    1. **Name** – Enter a meaningful name.
-   2. **Supported Account Types** – Select the types of accounts the app should support.
+   2. **Supported account types** – Select the types of accounts the app should support.
    3. **Redirect URI** – This field is optional and not necessary for our use case. 
-5. ![](media/dts-ado-tutorial-image4.png)
-6. Select the **API permissions** menu item and then select **Add a permission**.
-7. ![](media/dts-ado-tutorial-image5.png)
-8. Switch to the **APIs my organization**** uses** tab.
-9. Search for LCS.
+1. Select the **API permissions** menu item and then select **Add a permission**.
+   
+   ![Select "Add a permission".](media/dts-ado-tutorial-image5.png)
+   
+1. Switch to the **APIs my organization uses** tab.
+1. Search for LCS.
    1. Check the **user\_impersonation** permission to grant your application access to the LCS API.
    2. Select **Add permissions.** 
-   3. ![](media/dts-ado-tutorial-image6.png)
-10. In the left navigation pane, under  **Manage** , select  **Authentication**.
-11. On the  **Authentication**  page, under  **Advanced settings** , select  **Yes**  to enable the option to  **Allow public client flows**. Select save after enabling this setting. ![](media/dts-ado-tutorial-image7.png)
-12. In the left navigation pane, select  **Overview**. The overview page for your app registration shows the client ID.
-13. On the overview page, you can select  **Endpoints**  to find the authentication endpoint. Note the OAuth 2.0 token endpoint for use with the extension service connection. ![](media/dts-ado-tutorial-image9.png)
-
+   
+      ![](media/dts-ado-tutorial-image6.png)
+      
+1. In the left navigation pane, under  **Manage** , select  **Authentication**.
+1. On the  **Authentication**  page, under  **Advanced settings** , select  **Yes**  to enable the option to  **Allow public client flows**. 
+   
+   ![Allow public client flows.](media/dts-ado-tutorial-image7.png)
+   
+1. Select save after enabling this setting. 
+1. In the left navigation pane, select  **Overview**. The overview page for your app registration shows the client ID.
+1. On the overview page, you can select  **Endpoints**  to find the authentication endpoint. Note the OAuth 2.0 token endpoint for use with the extension service connection. 
+   ![Note the OAuth 2.0 token endpoint.](media/dts-ado-tutorial-image9.png)
 
 ### Create an LCS connection
 
 Now that you have an app registered with the LCS API connections, you can create an LCS service connection. This service connection allows the extension to obtain LCS permissions through the registered application.
 
-**Note:** LCS authentication requires Azure Active Directory (Azure AD) accounts where multi-factor authentication (MFA) is turned off and that aren't backed by federated sign-ons. We recommend using a separate account with limited permissions for the service connection.
+> [!Note]
+> LCS authentication requires Azure Active Directory (Azure AD) accounts where multi-factor authentication is turned off, and that aren't backed by federated sign-ons. We recommend using a separate account with limited permissions for the service connection.
 
 1. In your Azure DevOps project, at the bottom of the left menu, select  **Project settings**.
-2. In the  **Project Settings**  pane, under  **Pipelines** , find and select  **Service connections**. Then select  **Create service connection**.  ![](media/dts-ado-tutorial-image10.png)
-3. In the  **New service connection**  dialog box, search for and select the  **Dynamics Lifecycle Services**  service connection type. Select  **Next**. ![](media/dts-ado-tutorial-image11.png)
-4. Enter the information for the service connection. Use the client ID and authentication endpoint from the registered app. The name that you select for this service will be used as input for the DTS DevOps extension tasks.
-5. ![](media/dts-ado-tutorial-image12.png)
+1. In the  **Project Settings**  pane, under  **Pipelines** , find and select  **Service connections**. Then select  **Create service connection**.  
+   !["Create service connection" button](media/dts-ado-tutorial-image10.png)
+   
+1. In the  **New service connection**  dialog box, search for and select the **Dynamics Lifecycle Services** service connection type. Select  **Next**. 
+   ![](media/dts-ado-tutorial-image11.png)
+   
+1. Enter information for the service connection. Use the client ID and authentication endpoint from the registered app. The name that you select for this service will be used as input for the DTS DevOps extension tasks.
+   ![](media/dts-ado-tutorial-image12.png)
 
 ### Conclusion
 
-In this exercise, you set up the Dynamics 365 Translation Service Extension in your DevOps organization. You are now ready to create new pipelines for automated translation, regeneration, and alignment tasks.
+In this exercise, you set up the DTS extension in your DevOps organization. You are now ready to create new pipelines for automated translation, regeneration, and alignment tasks.
 
 ## Create a translation pipeline
 
-The Dynamics 365 Translation Service (DTS) Extension provides a task for automating DTS translation requests as a part of your development process. The translation task may be configured to collect resource files and upload them to DTS for localization. The localized files and translation memories can then be reviewed and adjusted as necessary.
+The DTS extension provides a task for automating DTS translation requests as a part of your development process. The translation task may be configured to collect resource files and upload them to DTS for localization. The localized files and translation memories can then be reviewed and adjusted as necessary.
 
 ### Before you begin
 
-For this exercise you will need access to a DevOps organization with the Dynamics 365 Translation Service extension installed and an LCS service connection configured. Consult the **Install and Configure Dynamics 365 Translation Service ADO Extension** exercise for guidance on the prerequisites.
+For this exercise you will need access to a DevOps organization with the DTS extension installed and an LCS service connection configured. Consult the **Install and Configure Dynamics 365 Translation Service ADO Extension** exercise for guidance on the prerequisites.
 
 In this exercise, you will:
 
