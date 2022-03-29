@@ -3,13 +3,13 @@
 
 title: Supported web browsers for Lifecycle Services 
 description: This topic lists the web browsers that are supported for Lifecyle Services.
-author: sericks007
-ms.date: 03/22/2022
+author: laneswenka
+ms.date: 03/29/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: sanketv
+ms.author: laswenka
 ms.search.validFrom: 03/22/2022
 ms.search.form:
 
