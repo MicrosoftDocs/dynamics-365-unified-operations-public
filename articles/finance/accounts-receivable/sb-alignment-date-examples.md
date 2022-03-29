@@ -43,7 +43,7 @@ The billing schedule is set up with the following:
 - End date: December 31, 2024
 - Amount: $1,000
 
-![Alignment Scenario1](../_images/Alignment1.png)
+![Alignment Scenario1](../_media/Alignment1.png)
 
 ## Scenario 2: Shortened Alignment
 
