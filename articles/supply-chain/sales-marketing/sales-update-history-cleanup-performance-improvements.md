@@ -57,9 +57,9 @@ To set up and schedule the *Sales history cleanup* periodic task, follow these s
 1. Go to **Sales and marketing > Period tasks > Cleanup > Sales update history cleanup**.
 1. The **Clean up sales update history** dialog opens. Make the following settings on the **Parameters** FastTab:
     - **Clean up** – Choose which types of records to clean up. Select one of the following values:
-        - **Executed** – <!-- KFM: Description needed -->
-        - **Executed and erroneous** – <!-- KFM: Description needed -->
-        - **All** – <!-- KFM: Description needed -->
+        - **Executed** – Only delete records that have been fully processed. It is unlikely that you have any further use of these, so this is the safest option.
+        - **Executed and erroneous** – Delete both fully processed records and records where an error has occurred. This is the most commonly used option. It could be that you would rather inspect and possibly fix erroneous records rather than clean them up automatically, but many companies choose to clean these up too after a month or so because by then they are probably no longer relevant.
+        - **All** – Delete executed, erroneous, and waiting records. Waiting records are valid but not yet fully processed, so in most cases you probably don't want to delete them automatically, but you may choose to do so in some situations after a certain amount of time has passed.
     - **Retain records based on age** – Choose whether to clean up records based on their age on the day the task runs, or instead to delete records created before a fixed date. If you are scheduling this cleanup as a recurring task, then you should set this option to *Yes* because the age is always calculated relative to the date the task is run.
         - Set to *Yes* to enable the **Maximum age** setting, which establishes the maximum age of records to keep each time the task runs (ignores the **Created until** setting).
         - Set to *No* to enable the **Created until** setting, which sets a specific date for the oldest records to keep (ignores the **Maximum age** setting).
