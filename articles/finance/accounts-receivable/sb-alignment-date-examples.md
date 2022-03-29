@@ -34,7 +34,7 @@ This topic provides examples of how alignment dates function in Subscription bil
 
 Suppose a billing detail for a billing schedule has the alignment date of October 31, 2019. The first billing detail for the line ends on October 31, 2019 and is prorated accordingly. The line is automatically renewed with the renewal start date of November 11.
 
-**Note:**  The year is relevant because it can cause the alignment date to be shorter or longer than a year. 
+**Note:**  The year is relevant because it can cause the alignment date to be shorter or longer than a year. The proration method is set to Monthly in **Recurring contract billing parameters**. If this is set to Daily some partial amounts will be different. 
 
 ## Scenario 1: No Alignment
 
@@ -67,7 +67,7 @@ The billing schedule is set up with the following:
 
 The first renewal amount is longer than one year. 
 
-![Alignment Scenario3](../_images/Align03.png)
+![Alignment Scenario3](../_images/Alignment3.png)
 
 ## Scenario 4: Alignment with Different End Month
 
@@ -77,21 +77,21 @@ The billing schedule is set up with the following:
 * End date: October 31, 2024
 * Amount: $1000
 
-![Note icon](../../../Resources/images/icons/iAXnote.gif)**Note:**  Not a common scenario. 
+**Note:**  This is not a common scenario. 
 
-![Alignment Scenario4](../_images/Align04.png)
+![Alignment Scenario4](../_images/Alignment4.png)
 
 ## Scenario 5: Single Partial Year
 
 The billing schedule is set up with the following: 
 * Start date: May 1, 2019
 * Alignment Date: December 31, 2019
-* End date: December 31, 2024
+* End date: December 31, 2019
 * Amount: $1000
 
 In this scenario, the alignment date is not needed. This scenario can be common for automatic renewals. 
 
-!![Alignment Scenario5](../_images/Align05.png)
+!![Alignment Scenario5](../_images/Alignment5.png)
 
 ## Scenario 6: Calculated Dates
 
@@ -101,7 +101,7 @@ The support and renewal is set up with the following:
 * Invoice posting date: June 22, 2019
 * Alignment date: December 31, 2020
 
-![Alignment Scenario6](../_images/Align06.png)
+![Alignment Scenario6](../_images/Alignment6.png)
 
 ## Scenario 7: Calculated Dates, Future Posting
 
@@ -113,7 +113,7 @@ The support and renewal is set up with the following:
 
 For this scenario, the Alignment date is changed to December 31, 2021
 
-![Alignment Scenario7](../_images/Align07.png)
+![Alignment Scenario7](../_images/Alignment7.png)
 
 ## Scenario 8: Manual Dates, Multiple Years
 
@@ -123,7 +123,7 @@ The support and renewal is set up with the following:
 * Renewal end date: December 31, 2024
 * Alignment date: December 31, 2021
 
-![Alignment Scenario8](../_images/Align08.png)
+![Alignment Scenario8](../_images/Alignment8.png)
 
 ## Scenario 9: Manual Dates, Multiple Years, Different End Month
 
@@ -133,7 +133,7 @@ The support and renewal is set up with the following:
 * Renewal end date: October 31, 2024
 * Alignment date: December 31, 2021
 
-![Alignment Scenario9](../_images/Align09.png)
+![Alignment Scenario9](../_images/Alignment9.png)
 
 ## Scenario 10: Alignment Without Proration 
 
@@ -146,8 +146,4 @@ The renewal start and the alignment dates are adjusted so that both start dates 
 * Renewal start date: January 1, 2020
 * Renewal end date: December 31, 2020
 
-##### See also
 
-[Alignment by Item Group: Examples](exAlignItmGrp.md)
-
-[Split by Item Group: Examples](exSplitItemGrp.md)
