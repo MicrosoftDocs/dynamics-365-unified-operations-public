@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Alignment date examples
+title: Alignment date scenarios
 description: This topic provides examples of how alignment dates function in Subscription billing.  
   
 author: JodiChristiansen
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.24
 
 ---
 
-# Alignment date examples
+# Alignment date scenarios
 
 This topic provides examples of how alignment dates function in Subscription billing. Review the following examples to better understand how the alignment dates work. 
 
