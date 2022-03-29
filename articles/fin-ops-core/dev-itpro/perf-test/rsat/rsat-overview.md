@@ -43,6 +43,7 @@ In addition to this topic, RSAT usage is described in these topics:
 + [Upgrade the parameter files](rsat-upgrade-parameter-files.md)
 + [Regression suite automation tool (RSAT) best practices](rsat-best-practices.md)
 + [Troubleshoot the Regression suite automation tool (RSAT)](rsat-troubleshooting.md)
++ [Integrate RSAT with Azure DevOps Pipelines](rsat-devops-extension.md)
 
 ## Getting started videos
 
