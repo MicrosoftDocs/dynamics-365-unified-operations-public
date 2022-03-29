@@ -99,13 +99,16 @@ Now that you have an app registered with the LCS API connections, you can create
 > LCS authentication requires Azure Active Directory (Azure AD) accounts where multi-factor authentication is turned off, and that aren't backed by federated sign-ons. We recommend using a separate account with limited permissions for the service connection.
 
 1. In your Azure DevOps project, at the bottom of the left menu, select  **Project settings**.
-1. In the  **Project Settings**  pane, under  **Pipelines** , find and select  **Service connections**. Then select  **Create service connection**.  
+1. In the  **Project Settings**  pane, under  **Pipelines** , find and select  **Service connections**. Then select  **Create service connection**.
+  
    !["Create service connection" button](media/dts-ado-tutorial-image10.png)
    
 1. In the  **New service connection**  dialog box, search for and select the **Dynamics Lifecycle Services** service connection type. Select  **Next**. 
+
    ![](media/dts-ado-tutorial-image11.png)
    
 1. Enter information for the service connection. Use the client ID and authentication endpoint from the registered app. The name that you select for this service will be used as input for the DTS DevOps extension tasks.
+
    ![](media/dts-ado-tutorial-image12.png)
 
 ### Conclusion
@@ -199,7 +202,7 @@ After downloading the translations, you may want to review and make any necessar
 3. After you've reviewed and edited the translations and are confident that they are of expected quality, mark them as **Translated** , **Final** , or **Signed off** so that they can be used for future requests.
 4. Make some arbitrary change to any of the strings and save the file. In the next step, we will use it to regenerate the resource files.
 
- ![](media/dts-ado-tutorial-image23.png)
+   ![](media/dts-ado-tutorial-image23.png)
 
 
 ### Regenerate the translation
@@ -253,7 +256,7 @@ After translation, you may be interested in saving the localized files to your p
    - Create branch
    - Read
 
-![](media/dts-ado-tutorial-image27.png)
+   ![](media/dts-ado-tutorial-image27.png)
 
 ### Add Git scripts to pipeline
 
@@ -296,7 +299,7 @@ git push --set-upstream origin localized
 
 The DTS alignment task can be used to create translation memory files. When you have previously translated files along with the corresponding source files, the alignment task can be used to generate an XLIFF file.
 
-### Before You begin
+### Before you begin
 
 For this exercise you will need access to a DevOps organization with the DTS extension installed and a configured LCS service connection. See the [Install and configure the DTS Azure DevOps extension](dts-ado-tutorial.md#install-and-configure-the-dts-azure-devops-extension) exercise for guidance on the prerequisites.
 
@@ -310,21 +313,22 @@ In this exercise you will:
 1. Open your Azure DevOps project and navigate to your repository. 
 2. Create a new file named **res.label.txt** in the root of your repository with the following content:
 
-```
-Greeting=Hello
+   ```
+   Greeting=Hello
 
-Farewell=Goodbye
+   Farewell=Goodbye
 
-InvalidFileHelpText=The specified file is invalid. Please try again.
-```
-Next, create a new file named **res.label.fr.txt** with the following content:
-```
-Greeting=Bonjour
+   InvalidFileHelpText=The specified file is invalid. Please try again.
+   ```
+3. Next, create a new file named **res.label.fr.txt** with the following content:
 
-Farewell=Au revoir
+   ```
+   Greeting=Bonjour
 
-InvalidFileHelpText=Le fichier spécifié n'est pas valide. Veuillez réessayer.
-```
+   Farewell=Au revoir
+
+   InvalidFileHelpText=Le fichier spécifié n'est pas valide. Veuillez réessayer.
+   ```
 4. Commit both files to your repository.
 
 ### Define an alignment pipeline
