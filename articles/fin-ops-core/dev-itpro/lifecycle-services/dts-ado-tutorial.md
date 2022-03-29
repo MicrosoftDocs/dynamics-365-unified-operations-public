@@ -4,7 +4,7 @@
 title: Dynamics 365 Translation Service DevOps extension tutorial
 description: This tutorial explains how to integrate the Dynamics 365 Translation Service DevOps extension into your Azure DevOps workflow.
 author: joshsantana
-ms.date: 03/28/2022
+ms.date: 03/29/2022
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
@@ -88,6 +88,7 @@ To consume the DTS API, the extension needs to acquire an access token from the 
 1. Select save after enabling this setting. 
 1. In the left navigation pane, select  **Overview**. The overview page for your app registration shows the client ID.
 1. On the overview page, you can select  **Endpoints**  to find the authentication endpoint. Note the OAuth 2.0 token endpoint for use with the extension service connection. 
+
    ![Note the OAuth 2.0 token endpoint.](media/dts-ado-tutorial-image9.png)
 
 ### Create an LCS connection
@@ -166,7 +167,7 @@ Commit the new file to your repository.
 
 After saving the pipeline, an automatic run should be triggered. If the pipeline doesn't automatically run, you can manually run it from the **Pipelines** menu.
 
- ![](media/dts-ado-tutorial-image17.png)
+![](media/dts-ado-tutorial-image17.png)
 
 ### Review pipeline output
 
@@ -254,7 +255,7 @@ After translation, you may be interested in saving the localized files to your p
 
 ![](media/dts-ado-tutorial-image27.png)
 
-### Add Git scripts to Pipeline
+### Add Git scripts to pipeline
 
 Before running Git commands, you'll want to allow the script to access the system token. You can do so by adding a **checkout** step with **persistCredentials** set to **true**.
 
@@ -293,20 +294,22 @@ git push --set-upstream origin localized
 
 ## Create translation memory from previously translated files
 
-The Dynamics 365 Translation Service alignment task can be used to create translation memory files. When you have previously translated files along with the corresponding source files, the alignment task can be used to generate an XLIFF file.
+The DTS alignment task can be used to create translation memory files. When you have previously translated files along with the corresponding source files, the alignment task can be used to generate an XLIFF file.
 
-### Before You Begin
+### Before You begin
 
-For this exercise you will need access to a DevOps organization with the Dynamics 365 Translation Service extension installed and a configured LCS service connection. Consult the **Install and Configure Dynamics 365 Translation Service ADO Extension** exercise for guidance on the prerequisites.
+For this exercise you will need access to a DevOps organization with the DTS extension installed and a configured LCS service connection. Consult the **Install and Configure DTS ADO extension** exercise for guidance on the prerequisites.
 
 In this exercise you will:
 
-- Define a pipeline for use with the alignment task
-- Run the pipeline and inspect the results
+- Define a pipeline for use with the alignment task.
+- Run the pipeline and inspect the results.
 
 ### Set up a sample repository for alignment jobs
 
-Open your Azure DevOps project and navigate to your repository. Create a new file named **res.label.txt** in the root of your repository with the following content:
+1. Open your Azure DevOps project and navigate to your repository. 
+2. Create a new file named **res.label.txt** in the root of your repository with the following content:
+
 ```
 Greeting=Hello
 
@@ -322,7 +325,7 @@ Farewell=Au revoir
 
 InvalidFileHelpText=Le fichier spécifié n'est pas valide. Veuillez réessayer.
 ```
-Commit both files to your repository.
+4. Commit both files to your repository.
 
 ### Define an alignment pipeline
 
@@ -334,15 +337,17 @@ Commit both files to your repository.
    3. Select **English** as the source language.
    4. Select **French** as the target language.
    5. Select **User Interface** as the translation type.
-   6. For the **Source file** , enter the path to the resource file you created earlier: **$(Build.SourcesDirectory)/res.label.txt**.
-   7.  For the **Target file** , enter **$(Build.SourcesDirectory)/res.label.fr.txt**.
+   6. For the **Source file**, enter the path to the resource file you created earlier: **$(Build.SourcesDirectory)/res.label.txt**.
+   7.  For the **Target file**, enter **$(Build.SourcesDirectory)/res.label.fr.txt**.
    8.  Enter **$(Build.ArtifactStagingDirectory)** as the **Output path**.
-   9.  Add the task to your pipeline, it should look like this:
-   10.  ![](media/dts-ado-tutorial-image29.png)
+   9.  Add the task to your pipeline.
+   
+       ![](media/dts-ado-tutorial-image29.png)
+       
 4.  Expand the **Show assistant** menu item and search for the **Publish Pipeline Artifacts** task.
     1.  Set **File or directory path** to **$(Build.ArtifactStagingDirectory)**.
     2.  Enter any artifact name and keep the publish location to Azure Pipelines.
-5.  Add the task to your pipeline, it should look like this:
+5.  Add the task to your pipeline.
 6.  Save the pipeline.
 
 ### Run the alignment pipeline
@@ -351,11 +356,12 @@ After saving the pipeline, an automatic run should be triggered. If the pipeline
 
 ### Review the pipeline output
 
-After running the pipeline in the previous step, you will be redirected to the summary page. Select the Job in the Jobs menu, which should have a state of queued or running. After the execution is complete, you can select the published artifact to view and download the XLIFF file.
+After running the pipeline in the previous section, you will be redirected to the summary page. 
 
-You can make further changes to the file in the Multilingual Editor app, as described in the previous exercise, or you can use the XLIFF file as translation memory for future translation requests.
-
+1. Select the job in the **Jobs** menu, which should have a state of queued or running. 
+2. After the execution is complete, you can select the published artifact to view and download the XLIFF file.
+3. You can make further changes to the file in the Multilingual Editor app, as described in the previous exercise, or you can use the XLIFF file as translation memory for future translation requests.
 
 ## Summary
 
-In this tutorial, you learned about the functionality and features provided by the Dynamics 365 Translation Service Azure DevOps extension. You learned how to create a pipeline to automate translation requests. You also learned how to revise the translations and regenerate them based on your modifications. Finally, you learned how to create XLIFF translation memories with the align task.
+In this tutorial, you learned about the functionality and features provided by the DTS Azure DevOps extension. You learned how to create a pipeline to automate translation requests. You also learned how to revise the translations and regenerate them based on your modifications. Finally, you learned how to create XLIFF translation memories with the align task.
