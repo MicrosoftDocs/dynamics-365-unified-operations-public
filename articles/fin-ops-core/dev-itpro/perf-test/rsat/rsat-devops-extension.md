@@ -1,5 +1,25 @@
-﻿---
+---
 title: Integrate RSAT with Azure DevOps Pipelines
+description: Integrate  Regression suite automation tool (RSAT) with Azure DevOps pipelines to automate validation.
+author: FrankDahl
+ms.date: 03/03/2022
+ms.topic: article
+ms.prod:
+ms.technology:
+
+# ms.search.form:
+# ROBOTS:
+audience: Developer
+# ms.devlang:
+ms.reviewer: tfehr
+# ms.tgt_pltfrm:
+
+ms.search.region: Global
+# ms.search.industry:
+ms.author: fdahl
+ms.search.validFrom: 2019-08-01
+ms.dyn365.ops.version: AX 7.0.0
+
 ---
 
 You can set up Azure DevOps Pipelines to seamlessly automate the scheduling and execution of test suites via the Regression Suite Automation Tool (RSAT).
@@ -26,7 +46,7 @@ When configuring the DevOps agent:
 
     1.  Ensure the same Windows administrator user account is used throughout the set up.
 
-    2.  Find and open the "Component services" app![Graphical user interface  application Description automatically generated](media/image1.png)
+    2.  Find and open the "Component services" app<br>![Component services](media/component-services.png)
 
     3.  First, configure the service to run under the chosen Windows administrator user account.
 
@@ -34,23 +54,23 @@ When configuring the DevOps agent:
           
         The service is called something like "Azure Pipelines Agent (name of your agent)", "VSTS Agent (name of your agent)", or "vstsagent.(organization name).(name of your agent)".  
           
-        ![Graphical user interface  application Description automatically generated](media/image2.png)
+        ![Local agent service](media/agent-service.png)
 
     5.  On the identity tab, specify the user (domain\\username) of the local administrator user your Azure DevOps agent will be running as.  
-        ![Graphical user interface  text Description automatically generated](media/image3.png)
+        ![Agent identity](media/agent-identity.png)
 
     6.  Then, you will need to give the service permission to access Microsoft Excel COM objects. Here is an example of how to do that.
 
     7.  Open DCOM Config  
-        ![Graphical user interface  application Description automatically generated](media/image4.png)
+        ![DCOM Config](media/dcom-access.png)
 
     8.  Find Microsoft Excel Application (or "000208D5-0000-0000-C000-000000000046". This value can be different depending on version of Excel installed on your computer.  
-        ![Graphical user interface  text  application Description automatically generated](media/image5.png)
+        ![Excel DCOM](media/excel-dcom.png)
 
     9.  Right click -&gt; Properties
 
     10. On the Security tab select Customize, click Edit and provide full access to the user (repeat for all the 3 permission categories)  
-        ![Graphical user interface  application Description automatically generated](media/image6.png)  
+        ![Excel DCOM Security](media/excel-dcom-security.png)  
 
 # Configure Azure DevOps pipelines with RSAT
 
@@ -64,19 +84,19 @@ When configuring Azure DevOps pipelines to run RSAT tasks, you have 2 options:
 
 The Regression Suite Automation Tool Azure DevOps extension is a Visual Studio Marketplace package that provides RSAT tasks that build and execute RSAT test suites. You need to install this extension to use out-of-the-box RSAT tasks. The RSAT extension requires use of RSAT version 2.4.11480.52 or newer.
 
-![Graphical user interface  text  application Description automatically generated](media/image7.png)
+![DevOps Regression Suite Automation Tool extension](media/devops-rsat-extension.png)
 
 Install the extension
 
 Open your Azure DevOps organization settings, then click the Extensions tab. Click the **Browse marketplace** action located on the right side of the screen.
 
-![Graphical user interface  application Description automatically generated](media/image8.png) ![Graphical user interface Description automatically generated with low confidence](media/image9.png)
+![DevOps Organization Extensions](media/devops-menu-extensions.png) ![DevOps Browse Marketplace](media/devops-extension-marketplace.png)
 
 Search "RSAT" to locate the extension, and if you are an administrator or owner of the Azure DevOps organization, click on the extension and then "Get it free" to go through installation of this extension.
 
-![Graphical user interface  application Description automatically generated](media/image10.png)
+![DevOps Regression Suite Automation Tool extension tile](media/devops-rsat-app.png)
 
-![Graphical user interface  text  application  email Description automatically generated](media/image11.png)
+![DevOps Regression Suite Automation Tool extension details](media/devops-rsat-details.png)
 
 When the extension is installed on your Azure DevOps organization then you can create pipelines with the easy tasks this provides.
 
@@ -88,27 +108,34 @@ Once you have set up the Azure Dev Ops agent, follow these steps to create a pip
 
 1.  Select the DevOps project that should host the pipelines and go to Pipelines and click on New Pipeline on the top right corner.
 
-![](media/image12.png)
+![DevOps new Pipeline](media/new-pipeline.png)
 
 2.  Pipelines can be designed using a YAML design, which is quite powerful yet requires some experience to master. The objective of this article is not to provide in depth insight into pipeline design. The focus in this article is to get you going by building basic pipelines.
 
-3.  Click **Use the classic editor** to create a simple pipeline without using YAML.
+3.  Click **Use the classic editor** to create a simple pipeline without using YAML.<br>
+![DevOps Pipeline connect with repository](media/pipeline-connect.png)
 
-4.  Select Any repository source and click Continue
+4.  Select Any repository source and click Continue<br>
+![DevOps Pipeline Repository](media/pipeline-repos.png)
 
-5.  On the next screen, click on Empty job.
+5.  On the next screen, click on Empty job.<br>
+![DevOps Pipeline new Job](media/pipeline-new-job.png)
 
-6.  This creates an empty pipeline without tasks. Select the pipeline item, provide a name for the pipeline, and specify the agent pool created earlier.
+6.  This creates an empty pipeline without tasks. Select the pipeline item, provide a name for the pipeline, and specify the agent pool created earlier.<br>
+![DevOps Pipeline Edit](media/pipeline-pipeline-edit.png)
 
-7.  Select the agent job item. Name the job by providing a display name. Leave the agent pool as inherit from pipeline to use the same throughout the pipeline. Leave parallelism as None.
+7.  Select the agent job item. Name the job by providing a display name. Leave the agent pool as inherit from pipeline to use the same throughout the pipeline. Leave parallelism as None.<br>
+![DevOps Pipeline Edit Job](media/pipeline-job-edit.png)
 
 ### Add RSAT tasks to pipelines
 
 The next steps illustrate how to add RSAT tasks to a pipeline job. RSAT tasks are part of the Azure DevOps RSAT extension available in the Visual Studio Marketplace. This extension includes easy to configure tasks which allow you to build and execute RSAT test suites without the need to write custom scripts.
 
 1.  Click on the + sign to add a task to the job.
+![DevOps Pipeline new task](media/pipeline-new-task.png)
 
 2.  Search for RSAT and select the "Regression Suite Automation Tool" task and select add.
+![DevOps Pipeline new RSAT task](media/pipeline-new-rsat-task.png)
 
 The RSAT task can run in 2 modes:
 
@@ -120,7 +147,8 @@ Pipelines tasks where both these modes are included will use build tasks before 
 
 Configure the RSAT tasks as follows.
 
-*Option 1: Build test suite*
+#### Option 1: Build test suite(s)
+![DevOps Pipeline new RSAT build task](media/pipeline-rsat-build-task.png)
 
 1.  Specify a display name for the task.
 
@@ -138,7 +166,8 @@ Configure the RSAT tasks as follows.
 
 8.  Select "Retry playback if test cases are blocked" to manage the situation where a test case happen to be used when the task is run. This will cause building to pause the number of seconds specified under "Retry pause before attempting playback", and building will retry and resume after this time.
 
-####  Option 2: Execute test suite(s)
+#### Option 2: Execute test suite(s)
+![DevOps Pipeline new RSAT execute task](media/pipeline-rsat-execute-task.png)
 
 1.  Specify a display name for the task.
 
@@ -164,17 +193,17 @@ In case you want to use your own custom scripts, you can add a Windows PowerShel
 
 2.  Enter "powershell" in the search field and select Add to add a PowerShell task.
 
-![Graphical user interface  text  application Description automatically generated](media/image22.png)
+![DevOps pipeline new PowerShell task](media/pipeline-new-powershell-task.png)
 
 3.  Select the PowerShell Script task and set **Type** to **inline**. Author your script using the Microsoft.Dynamics.RegressionSuite.ConsoleApp.exe. Alternatively, you can set **Type** to "**File Path**" type and enter a path to your PowerShell script.
 
-![](media/image23.png)
+![DevOps pipeline PowerShell task details](media/pipeline-powershell-task.png)
 
 ## Schedule pipeline
 
 Once created, Azure DevOps pipelines can be triggered manually, scheduled, or configured to run on a pre-defined recurring schedule.
 
-![Graphical user interface  text  application Description automatically generated](media/image24.png)
+![DevOps Schedule pipeline execution](media/pipeline-schedule.png)
 
 # RSAT Console application usage
 
@@ -182,7 +211,7 @@ The RSAT console application (Microsoft.Dynamics.RegressionSuite.ConsoleApp.exe)
 
 There is documentation of RSAT commands in this topic:
 
-[Regression suite automation tool tutorial - Finance & Operations \| Dynamics 365 \| Microsoft Docs](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/perf-test/rsat/rsat-tutorial#advanced-scripting)
++ [Regression suite automation tool (RSAT) - Advanced scripting](rsat-tutorial.md#advanced-scripting)
 
 ## Interactive mode and help
 
@@ -192,11 +221,11 @@ You can use the RSAT console application in interactive mode by running Microsof
 
 2.  Navigate to the Regression Suite Automation Tool installation folder
 
-![](media/image25.png)
+![Regression Suite Automation Tool Command Prompt](media/rsatconsole-shell.png)
 
 3.  Run *Microsoft.Dynamics.RegressionSuite.ConsoleApp.*exe, you will enter Interactive mode of the application.
 
-![](media/image26.png)
+![Regression Suite Automation Tool in interactive mode](media/rsatconsole-interactive.png)
 
 4.  Get help with any of the available commands, for example:
 
@@ -204,9 +233,9 @@ You can use the RSAT console application in interactive mode by running Microsof
 
     -   *help generatetestsuite*
 
-![](media/image27.png)
+![Regression Suite Automation Tool help playbacksuite](media/rsatconsole-help-1.png)
 
-![](media/image28.png)
+![Regression Suite Automation Tool help generatetestsuite](media/rsatconsole-help-2.png)
 
  
 
