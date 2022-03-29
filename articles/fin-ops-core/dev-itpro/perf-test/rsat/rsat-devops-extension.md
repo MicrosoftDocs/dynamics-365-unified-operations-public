@@ -14,7 +14,7 @@ ms.search.validFrom: 2022-03-29
 
 # Integrate RSAT with Azure DevOps pipelines
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]
 
 You can set up Azure DevOps pipelines to seamlessly automate the scheduling and execution of test suites via the Regression suite automation tool (RSAT).
 
