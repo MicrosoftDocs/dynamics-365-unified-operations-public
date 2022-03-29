@@ -1492,6 +1492,8 @@
         href: perf-test/rsat/rsat-derived-test-cases.md
       - name: Upgrade the parameter files
         href: perf-test/rsat/rsat-upgrade-parameter-files.md
+      - name: Trial mode without Azure DevOps
+        href: perf-test/rsat/rsat-trial-without-devops.md
       - name: Regression suite automation tool tutorial
         href: perf-test/rsat/rsat-tutorial.md
       - name: Configure non-administrator users
