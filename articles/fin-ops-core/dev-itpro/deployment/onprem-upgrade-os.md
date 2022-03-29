@@ -82,47 +82,54 @@ If using a SQL Server database follow [Upgrading to AD FS in Windows Server 2016
 
 ## Upgrade a node in your Service Fabric cluster
 
-In Service Fabric standalone clusters, upgrading the operating system of a node (VM or physical machine) is a machine specific operation. There are two possibilities to doing an in-place upgrade for a node. The first is where the OS upgrade does not wipe out data and OS configuration, and the second one if where the upgrade operation wipes out data and OS configuration. It is also possible to create new nodes and then add those new nodes into the cluster.
+In Service Fabric standalone clusters, upgrading the operating system of a node (VM or physical machine) is a machine specific operation. There are two possibilities to doing an in-place upgrade for a node. The first is where the OS upgrade preserves data and OS configuration, and the second one if where the upgrade operation does not preserve data and OS configuration. It is also possible to create new nodes and then add those new nodes into the cluster.
+
+All of the options listed below will keep your cluster up and running without impacting availability of the service as long as not all nodes are upgraded at the same time.
 
 Regardless of the method chosen to upgrade the nodes consider upgrading all of the nodes within a node type first and then proceeding with another node type.
-
-### In-place upgrade without wiping out OS data
-
-This process has the advantage that it will keep your cluster up and running without impacting availability of the service as long as not all nodes are upgraded at the same time.
 
 > [!IMPORTANT]
 > If your cluster only has 3 seed nodes (OrchestratorNodeType), then only upgrade one of the nodes at a time. Otherwise the cluster will not be able to keep the system services running and the cluster won't be available.
 > If your cluster only has 1 BI/MR node, then you should schedule the node upgrade during a downtime window, as the related services will not be available throughout the upgrade process. 
 
-Azure vs standalone
+### In-place upgrade preserving OS data
 
-In Azure for SFRP deployed / managed cluster, each node type is backed by a Scaleset and upgrading the US may not necessarily be supported if there is no upgrade path between the current Image and the image that you are trying to move to for the new OS version. Anything going wrong while the scaleset instances are being upgraded can get the nodetype / scaleset in a state that may be very hard / impossible to recover. Creating a new Saleset/Node Type allows more flexibility as any failures in provisioning new scaleset / node type does not impact availability and easy to recover from.
+This is the simplest option as you will be deactivating the node, upgrading the OS and preserving all data. After the upgrade a node activation is required to bring the node back online. 
 
-In standalone environments, OS upgrade of a node (VM/physical machine) is a machine specific operation. Limitations associated with Scaleset don’t necessarily apply. Following will work.
-
-Assumes that OS upgrade preserves data i.e. OS upgrade does not wipe out data and OS configuration
-
-•	Disable Node -Intent Restart
-•	Upgrade the OS
-•	Enable Node
-•	Wait for Node to be healthy and continues to be healthy for some duration
-•	Repeat for next Node
-
-If OS upgrade operation wipes out data/OS configuration
-•	Disable Node -Intent RemoveNode
-•	Remove the Node from the cluster (Remove-ServiceFabricNode)
-•	Update machine
-•	Add VM to the cluster (Add-ServiceFabricNode)
-•	Wait for Node to be healthy and continues to be healthy for some duration
-•	Repeat for next Node
-
-
-### In-place upgrade
-
-1. Go to Service Fabric explorer and Deactivate(Restart) the node you intend to upgrade.
+1. Navigate to Service Fabric explorer and Deactivate(Restart) the node you intend to upgrade.
 
 1. Follow [Upgrade Windows Server 2016 to Windows Server 2019](https://docs.microsoft.com/windows-server/upgrade/upgrade-2016-to-2019) to go through an in-place upgrade.
 
-1. 
+1. Once the node is back up, use the Test-D365FOConfiguration.ps1 script to ensure that the upgrade did not restore prerequisites to their default values. If there are issues brought up by the test script, run the **Configure-Prereqs.ps1**  and **Complete-Prereqs.ps1** scripts to resolve the issues. 
 
-1. run through windows installation
+1. Navigate to Service Fabric explorer and Activate the node.
+
+1. Wait for the node to be healthy again, once it is healthy repeat the same steps with the next node/s.
+
+### In-place upgrade without preserving OS data
+
+During the OS upgrade you will be removing all data, so the node will have a fresh OS installation. However, this means that you will need to go through all of the configuration steps for each node before adding the node back to the cluster.
+
+1. Navigate to Service Fabric explorer and Deactivate(Remove Data) the node you intend to upgrade.
+
+1. Follow the documentation to [Remove a node](./onprem-remove-reinstall-aos-node.md#remove-a-node) from the cluster.
+
+1. Follow [Upgrade Windows Server 2016 to Windows Server 2019](https://docs.microsoft.com/windows-server/upgrade/upgrade-2016-to-2019) to go through an in-place upgrade.
+
+1. Follow the documentation to [Add a node](./onprem-remove-reinstall-aos-node.md#add-a-node) back to the cluster.
+
+1. Once the node is back up, navigate to Service Fabric explorer and Activate the node.
+
+1. Wait for the node to be healthy again, once it is healthy repeat the same steps with the next node/s.
+
+### Adding new nodes to the cluster
+
+This option is pretty similar to the one above, however you are spinning up your new nodes before you remove nodes from the cluster. This will help keep the performance of the service in case you can't take nodes down.
+
+1. Provision a new Virtual Machine.
+
+1. Follow the documentation to [Add a node](./onprem-remove-reinstall-aos-node.md#add-a-node)
+
+1. Once the node has been added and the services on the node are healthy proceed to provision, configure and add additional nodes.
+
+1. After you have added all nodes, start removing the nodes running the older operating system by using [Remove a node](./onprem-remove-reinstall-aos-node.md#remove-a-node)
