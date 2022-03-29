@@ -78,7 +78,7 @@ To consume the DTS API, the extension needs to acquire an access token from the 
    1. Check the **user\_impersonation** permission to grant your application access to the LCS API.
    2. Select **Add permissions.** 
    
-      ![](media/dts-ado-tutorial-image6.png)
+      ![The user\_impersonation permission.](media/dts-ado-tutorial-image6.png)
       
 1. In the left navigation pane, under  **Manage** , select  **Authentication**.
 1. On the  **Authentication**  page, under  **Advanced settings** , select  **Yes**  to enable the option to  **Allow public client flows**. 
@@ -105,11 +105,11 @@ Now that you have an app registered with the LCS API connections, you can create
    
 1. In the  **New service connection**  dialog box, search for and select the **Dynamics Lifecycle Services** service connection type. Select  **Next**. 
 
-   ![](media/dts-ado-tutorial-image11.png)
+   ![The Dynamics Lifecycle Services service connection type](media/dts-ado-tutorial-image11.png)
    
 1. Enter information for the service connection. Use the client ID and authentication endpoint from the registered app. The name that you select for this service will be used as input for the DTS DevOps extension tasks.
 
-   ![](media/dts-ado-tutorial-image12.png)
+   ![Enter information for the service connection.](media/dts-ado-tutorial-image12.png)
 
 ### Conclusion
 
@@ -170,7 +170,7 @@ Commit the new file to your repository.
 
 After saving the pipeline, an automatic run should be triggered. If the pipeline doesn't automatically run, you can manually run it from the **Pipelines** menu.
 
-![](media/dts-ado-tutorial-image17.png)
+![You can manually run it from the **Pipelines** menu.](media/dts-ado-tutorial-image17.png)
 
 ### Review pipeline output
 
@@ -181,16 +181,16 @@ After running the pipeline in the previous section, you will be redirected to th
 3. Select it to view the results.
 4. The translation ID identifies the job and corresponds to the same ID found in the DTS dashboard within the LCS portal. You will need this ID later in the exercise for when you regenerate the translations.
 
-   ![](media/dts-ado-tutorial-image18.png)
+   ![You should see the DTS translation task in the **Jobs output** pane.](media/dts-ado-tutorial-image18.png)
 
 5. The Publish Pipeline Artifact task will allow you to download the translation output from the Pipeline summary page. Select the back arrow to navigate back to the summary page. 
 6. Select **1 published** under the **Related** menu.
 
-   ![](media/dts-ado-tutorial-image20.png)
+   ![Select "1 published" under the Related menu.](media/dts-ado-tutorial-image20.png)
 
 7. Open the **For translation review** folder and download the .xlf file.
 
-   ![](media/dts-ado-tutorial-image21.png)
+   ![Open the "For translation review" folder and download the .xlf file.](media/dts-ado-tutorial-image21.png)
 
 
 ### Review and edit the translations
@@ -202,7 +202,7 @@ After downloading the translations, you may want to review and make any necessar
 3. After you've reviewed and edited the translations and are confident that they are of expected quality, mark them as **Translated** , **Final** , or **Signed off** so that they can be used for future requests.
 4. Make some arbitrary change to any of the strings and save the file. In the next step, we will use it to regenerate the resource files.
 
-   ![](media/dts-ado-tutorial-image23.png)
+   ![Translations](media/dts-ado-tutorial-image23.png)
 
 
 ### Regenerate the translation
@@ -217,9 +217,9 @@ After you've finished reviewing and editing the translations in XLIFF, you will 
    2. For **Regenerate File** , use the path to the recently edited .xlf file. If you placed it at the root of your repo it will be **$(Build.SourcesDirectory)/res.fr.label.txt.xlf**.
    3. Set **Translation ID** to the ID you noted from the translation pipeline output.
    4. Set the **Output Path** to **$(Build.ArtifactStagingDirectory)**.
-5. Add the task to your pipeline, it should look like this:
+5. Add the task to your pipeline.
 
-   ![](media/dts-ado-tutorial-image24.png)
+   ![Pipeline](media/dts-ado-tutorial-image24.png)
    
 6.  Expand the **Show assistant** menu item and search for the Publish Pipeline Artifacts task.
     1. Set **File or directory path** to **$(Build.ArtifactStagingDirectory)**.
@@ -256,7 +256,7 @@ After translation, you may be interested in saving the localized files to your p
    - Create branch
    - Read
 
-   ![](media/dts-ado-tutorial-image27.png)
+   ![Grant permissions](media/dts-ado-tutorial-image27.png)
 
 ### Add Git scripts to pipeline
 
@@ -346,7 +346,7 @@ In this exercise you will:
    8.  Enter **$(Build.ArtifactStagingDirectory)** as the **Output path**.
    9.  Add the task to your pipeline.
    
-       ![](media/dts-ado-tutorial-image29.png)
+       ![Add the task to your pipeline.](media/dts-ado-tutorial-image29.png)
        
 4.  Expand the **Show assistant** menu item and search for the **Publish Pipeline Artifacts** task.
     1.  Set **File or directory path** to **$(Build.ArtifactStagingDirectory)**.
