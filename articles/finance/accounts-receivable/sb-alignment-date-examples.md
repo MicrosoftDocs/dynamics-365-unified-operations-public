@@ -43,7 +43,7 @@ The billing schedule is set up with the following:
 - End date: December 31, 2024
 - Amount: $1,000
 
-[![Alignment with no alignment.](./_media/Alignment1.png)](./media/Alignment1.png)
+[![Alignment with no alignment.](./media/Alignment1.png)](./media/Alignment1.png)
 
 ## Scenario 2: Shortened Alignment
 
@@ -55,7 +55,7 @@ The billing schedule is set up with the following:
 
 The first renewal amount is shorter than one year. 
 
-[![Alignment with shortened alignment.](./_media/Alignment2.png)](./media/Alignment2.png)
+[![Alignment with shortened alignment.](./media/Alignment2.png)](./media/Alignment2.png)
 
 ## Scenario 3: Extended Alignment
 
@@ -67,7 +67,7 @@ The billing schedule is set up with the following:
 
 The first renewal amount is longer than one year. 
 
-[![Alignment with exteneded alignment.](./_media/Alignment3.png)](./media/Alignment3.png)
+[![Alignment with exteneded alignment.](./media/Alignment3.png)](./media/Alignment3.png)
 
 ## Scenario 4: Alignment with Different End Month
 
@@ -79,7 +79,7 @@ The billing schedule is set up with the following:
 
 **Note:**  This is not a common scenario. 
 
-[![Alignment with different end month.](./_media/Alignment4.png)](./media/Alignment4.png)
+[![Alignment with different end month.](./media/Alignment4.png)](./media/Alignment4.png)
 
 ## Scenario 5: Single Partial Year
 
@@ -91,7 +91,7 @@ The billing schedule is set up with the following:
 
 In this scenario, the alignment date is not needed. This scenario can be common for automatic renewals. 
 
-[![Alignment with single partial year.](./_media/Alignment5.png)](./media/Alignment5.png)
+[![Alignment with single partial year.](./media/Alignment5.png)](./media/Alignment5.png)
 
 ## Scenario 6: Calculated Dates
 
@@ -101,7 +101,7 @@ The support and renewal is set up with the following:
 * Invoice posting date: June 22, 2019
 * Alignment date: December 31, 2020
 
-[![Alignment with claculated dates.](./_media/Alignment6.png)](./media/Alignment6.png)
+[![Alignment with claculated dates.](./media/Alignment6.png)](./media/Alignment6.png)
 
 ## Scenario 7: Calculated Dates, Future Posting
 
@@ -113,7 +113,7 @@ The support and renewal is set up with the following:
 
 For this scenario, the Alignment date is changed to December 31, 2021
 
-[![Alignment with calcuated dates and future posting.](./_media/Alignment7.png)](./media/Alignment7.png)
+[![Alignment with calcuated dates and future posting.](./media/Alignment7.png)](./media/Alignment7.png)
 
 ## Scenario 8: Manual Dates, Multiple Years
 
@@ -123,7 +123,7 @@ The support and renewal is set up with the following:
 * Renewal end date: December 31, 2024
 * Alignment date: December 31, 2021
 
-[![Alignment with manual dates and multiple years.](./_media/Alignment8.png)](./media/Alignment8.png)
+[![Alignment with manual dates and multiple years.](./media/Alignment8.png)](./media/Alignment8.png)
 
 ## Scenario 9: Manual Dates, Multiple Years, Different End Month
 
@@ -133,7 +133,7 @@ The support and renewal is set up with the following:
 * Renewal end date: October 31, 2024
 * Alignment date: December 31, 2021
 
-[![Alignment with different end month.](./_media/Alignment9.png)](./media/Alignment9.png)
+[![Alignment with different end month.](./media/Alignment9.png)](./media/Alignment9.png)
 
 ## Scenario 10: Alignment Without Proration 
 
