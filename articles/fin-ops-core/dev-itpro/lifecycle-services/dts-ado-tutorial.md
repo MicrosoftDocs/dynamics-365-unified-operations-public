@@ -244,7 +244,7 @@ After translation, you may be interested in saving the localized files to your p
 
 ### Grant permissions
 
-1. Go to the project settings page at **Organization Settings \&gt; General \&gt; Projects**.
+1. Go to the project settings page at **Organization Settings > General > Projects**.
 2. Select the project you want to edit.
 3. Within **Project Settings** , select **Repositories**. Select the repository you are using for this exercise.
 4. Select the **Security** tab to edit the security settings.
@@ -298,7 +298,7 @@ The DTS alignment task can be used to create translation memory files. When you 
 
 ### Before You begin
 
-For this exercise you will need access to a DevOps organization with the DTS extension installed and a configured LCS service connection. Consult the **Install and Configure DTS ADO extension** exercise for guidance on the prerequisites.
+For this exercise you will need access to a DevOps organization with the DTS extension installed and a configured LCS service connection. See the [Install and configure the DTS Azure DevOps extension](dts-ado-tutorial.md#install-and-configure-the-dts-azure-devops-extension) exercise for guidance on the prerequisites.
 
 In this exercise you will:
 
