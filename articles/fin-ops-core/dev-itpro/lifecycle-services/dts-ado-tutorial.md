@@ -195,7 +195,7 @@ After running the pipeline in the previous section, you will be redirected to th
 
 ### Review and edit the translations
 
-After downloading the translations, you may want to review and make any necessary changes. We recommend that you use the free [Multilingual Editor app](https://docs.microsoft.com/en-us/windows/apps/design/globalizing/multilingual-app-toolkit-editor-downloads), or any XLIFF editor of your preference, to review and edit the translations. This tool will allow you to potentially prevent unwanted changes from being made in the XLIFF file. The following example shows the Multilingual Editor app being used.
+After downloading the translations, you may want to review and make any necessary changes. We recommend that you use the free [Multilingual Editor app](/windows/apps/design/globalizing/multilingual-app-toolkit-editor-downloads), or any XLIFF editor of your preference, to review and edit the translations. This tool will allow you to potentially prevent unwanted changes from being made in the XLIFF file. The following example shows the Multilingual Editor app being used.
 
 1. Open the .xlf file in the Multilingual Editor app. If you encounter an error when opening the file, ignore the message and select the  **Strings**  tab in the lower-left corner of the window.
 2. To verify the translations, you can apply a filter to show only strings that are in the **Needs Review** state. This feature will filter for translations that were either machine translated or recycled from a string with a different resource ID.
