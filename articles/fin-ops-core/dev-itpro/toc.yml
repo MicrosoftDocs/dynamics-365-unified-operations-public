@@ -410,6 +410,8 @@
             href: deployment/onprem-remove-reinstall-AOS-node.md
           - name: Reuse the same AD FS instance for multiple environments
             href: deployment/onprem-reuseadfs.md
+          - name: Upgrade Windows Server on your Microsoft Dynamics 365 Finance + Operations (on-premises) environments
+            href: deployment/onprem-upgrade-os.md
           - name: Upgrade the SQL Server instance of Microsoft Dynamics 365 Finance + Operations (on-premises) environments
             href: deployment/onprem-upgrade-sqlserver.md
         - name: Local agent
