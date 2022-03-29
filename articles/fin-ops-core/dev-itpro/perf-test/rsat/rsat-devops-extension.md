@@ -22,7 +22,7 @@ Azure DevOps pipeline jobs can use the RSAT command line program (Microsoft.Dyna
 
 This article assume you are familiar with managing Azure DevOps organizations and [pipelines](/azure/devops/pipelines). This article also assumes you are familiar with RSAT functionality.
 
-# Pre-requisite: Install Azure DevOps self-hosted Windows agent
+## Pre-requisite: Install Azure DevOps self-hosted Windows agent
 
 To configure Azure DevOps pipelines to include RSAT tasks, you need to configure a self-hosted Windows agent on a machine where RSAT is installed. If you are not familiar with this process, you can find more information in [Azure Pipelines agents](/azure/devops/pipelines/agents/agents?view=vsts). For Windows self-host agent setup, see [arSelf-hosted Windows agentsticle](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows).
 
@@ -74,7 +74,7 @@ When configuring the DevOps agent:
     10. On the Security tab select Customize, click Edit and provide full access to the user (repeat for all the 3 permission categories)  
         ![Excel DCOM Security](media/excel-dcom-security.png)  
 
-# Configure Azure DevOps pipelines with RSAT
+## Configure Azure DevOps pipelines with RSAT
 
 When configuring Azure DevOps pipelines to run RSAT tasks, you have 2 options:
 
@@ -88,7 +88,7 @@ The RSAT Azure DevOps extension is a Visual Studio Marketplace package that prov
 
 ![DevOps Regression Suite Automation Tool extension](media/devops-rsat-extension.png)
 
-## Install the extension
+### Install the extension
 
 1. Open your Azure DevOps organization settings, then select the **Extensions** tab. 
 2. Select the **Browse marketplace** action located on the right side of the screen.
@@ -135,7 +135,7 @@ Once you have set up the Azure Dev Ops agent, follow these steps to create a pip
 
     ![DevOps Pipeline Edit Job](media/pipeline-job-edit.png)
 
-### Add RSAT tasks to pipelines
+## Add RSAT tasks to pipelines
 
 The next steps illustrate how to add RSAT tasks to a pipeline job. RSAT tasks are part of the Azure DevOps RSAT extension available in the Visual Studio Marketplace. This extension includes easy-to-configure tasks, which allow you to build and execute RSAT test suites without the need to write custom scripts.
 
@@ -157,7 +157,7 @@ Pipelines tasks where both these modes are included will use build tasks before 
 
 Configure the RSAT tasks as described in the following procedures.
 
-#### Option 1: Build test suite(s)
+### Option 1: Build test suite(s)
 
 ![DevOps pipeline new RSAT build task](media/pipeline-rsat-build-task.png)
 
@@ -177,7 +177,7 @@ Configure the RSAT tasks as described in the following procedures.
 
 8.  Select **Retry playback if test cases are blocked** to manage the situation where a test case happens to be used when the task is run. This will cause building to pause the number of seconds specified under **Retry pause before attempting playback**, and building will retry and resume after this time.
 
-#### Option 2: Execute test suite(s)
+### Option 2: Execute test suite(s)
 
 ![DevOps pipeline new RSAT execute task](media/pipeline-rsat-execute-task.png)
 
@@ -197,7 +197,7 @@ Configure the RSAT tasks as described in the following procedures.
 
 8.  Optionally, enter a text into the **Comments** field. This value can be composed to include DevOps variables. This text will be recorded into test runs summary and test case results for later reference.
 
-### Add a custom Windows PowerShell task
+## Add a custom Windows PowerShell task
 
 In case you want to use your own custom scripts, you can add a Windows PowerShell task to a pipeline job instead of using an RSAT task. You do not need the RSAT Azure DevOps extension if you are planning to author your own scripts.
 
@@ -217,13 +217,13 @@ Once created, Azure DevOps pipelines can be triggered manually, scheduled, or co
 
 ![DevOps Schedule pipeline execution](media/pipeline-schedule.png)
 
-# RSAT Console application usage
+## RSAT Console application usage
 
 The RSAT console application (Microsoft.Dynamics.RegressionSuite.ConsoleApp.exe) allows you to programmatically execute RSAT functionality that is otherwise available through the RSAT Windows app. It can be used in interactive mode or command mode. It is located in the RSAT installation folder (default is C:\\Program Files (x86)\\Regression Suite Automation Tool\\).
 
 For more information about RSAT commands, see [Regression suite automation tool (RSAT) - Advanced scripting](rsat-tutorial.md#advanced-scripting).
 
-## Interactive mode and help
+### Interactive mode and help
 
 You can use the RSAT console application in interactive mode by running Microsoft.Dynamics.RegressionSuite.ConsoleApp.exe using Command Prompt or Windows PowerShell. Interactive mode is useful to test out some commands or for getting help.
 
@@ -246,7 +246,7 @@ You can use the RSAT console application in interactive mode by running Microsof
 
     ![RSAT help generatetestsuite](media/rsatconsole-help-2.png)
 
-## Command mode
+### Command mode
 
 Command mode is useful when you want to run a single command or use RSAT commands in your custom PowerShell scripts.
 
@@ -255,7 +255,7 @@ Example:
 -   *.\\Microsoft.Dynamics.RegressionSuite.ConsoleApp.exe playbacksuite /byid 47*
 -   *.\\Microsoft.Dynamics.RegressionSuite.ConsoleApp.exe listtestsuitenames*
 
-## Running with specific settings file
+### Running with specific settings file
 
 By default, the console app uses the from the last settings file, where via the RSAT user interface of command line. To specify a difference settings file, using the settings parameter as shown here.
 
