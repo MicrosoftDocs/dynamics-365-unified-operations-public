@@ -4,7 +4,7 @@
 title: Get started with Electronic invoicing service administration
 description: This topic explains how to get started with Electronic invoicing.
 author: gionoder
-ms.date: 08/17/2021
+ms.date: 03/29/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
