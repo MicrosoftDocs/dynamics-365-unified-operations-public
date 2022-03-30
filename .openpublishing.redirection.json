@@ -1,5 +1,605 @@
 {
-  "redirections": [
+  "redirections": [    {
+      "source_path": "articles/talent/access-preview-feature.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/activities-attract.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/admin-settings-attract.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/analytic-reports.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/attract-admin-job-board-settings.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/attract-admin-linkedin.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/attract-close-job.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/attract-comprehensive-hiring.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/attract-configure-email-settings.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/attract-linkedin-faq.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/attract-linkedin-recruiter.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/attract-onboard-export-data.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/attract-overview.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/attract-post-jobs-to-linkedin.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/attract-talent-pools.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/attract-troubleshoot-career-portal.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/attract-troubleshoot-linkedin.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/career-site.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/create-onboarding-experience.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/creating-jobs-attract.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/creating-offers.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/email-templates.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/embed-powerapps.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/extensibility-attract.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/extensibility-examples.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/formalize-business-processes.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/index.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/intelligent-recommendations.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/interview-scheduling-feedback.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/leave-absence-concepts.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/leave-absence-overview.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/leave-accrue-hours-worked.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/modular-app-tech-faq.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/offer-setup.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/onboard-create-guide.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/onboard-create-team.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/onboard-create-template.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/onboard-edit-guides-templates.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/onboard-get-app.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/onboard-share-template.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/onboard-update-guide.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/onboard-view-status.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/people-picker-user-not-found.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/posting-jobs-external.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/process-auditing.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/process-templates-attract.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/provisioning-talent.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/security-attract.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/source-tracking.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/streamlined-employee-entry.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/talent-get-started.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/talent-support.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/talent-updates.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/talent-versions-update-policy.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/user-access-core-hr.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/welcome-to-onboard.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-april-16-2019.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-april-2-2019.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-april-25-2019.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-april-30-2019.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-april-9-2019.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-august-15-2019.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-august-21-2019.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-august-28-2019.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-august-7-2019.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-august2018.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-december-12-2019.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-december-14.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-december-17-2019.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-december-3-2019.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-december-6.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-feb-27.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-feb14.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-february-7.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-january-11.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-january-14-2020.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-january-17.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-january-21-2020.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-january-23.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-january-29.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-january-7-2020.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-july-16-2019.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-july-2-2019.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-july-24-2019.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-july-31-2019.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-july-9-2019.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-july2018.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-june-11-2019.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-june-18-2019.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-june-25-2019.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-june-4-2019.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-march-14.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-march-20.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-march-26-2019.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/Whats-new-talent-march-5.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-may-13-2019.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-may-21-2019.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-may-28-2019.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-may-6-2019.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-november-12-2019.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-november-15.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-november-19-2019.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-november-27.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-november-5-2019.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-oct-29-2019.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-october-01.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-october-1-2019.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-october-11.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-october-19.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-october-23-2019.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-october-31.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-october-8-2019.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-october-8.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-september-01-2020.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-september-10.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-september-12-2019.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-september-17-2018.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-september-17-2019.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new-talent-september-24.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/whats-new.md",
+      "redirect_url": "/dynamics365/human-resources/index",
+      "redirect_document_id": "false"
+    },
+
     {
       "source_path": "articles/fin-ops-core/dev-itpro/database/replication-setup.md",
       "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/data-upgrade-self-service",
