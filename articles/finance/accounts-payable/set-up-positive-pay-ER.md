@@ -32,7 +32,7 @@ Set up positive pay to generate an electronic list of checks that is provided to
 list of checks. If the check matches a check in the list, the bank clears it. If the check doesn't match a check in the list, the bank holds it for review.
 
 
-## Set up the **Electronic reporting** configuration
+### Set up the **Electronic reporting** configuration
 1. Go to **Workspaces > Electronic reporting**.
 2. On the **Microsoft configuration provider** tile, click **Repositories**.
 3. Select **Global** and click **Open**.
@@ -40,20 +40,20 @@ list of checks. If the check matches a check in the list, the bank clears it. If
 5. In the configuration list, find and select **Positive pay model > Positive pay format**.
 6. On the **Versions** FastTab, select the latest version and click **Import**.
 
-## Set up Positive pay format
+### Set up a positive pay format
 1. Go to **Cash and Bank Management > Setup > Positive pay formats**.
 2. Click **New**.
 3. Set the **Payment format** and **Description**.
 4. Select the **Generic electronic export format** checkbox.
 5. Set **Export format configuration** to **Positive pay format**.
 
-## Set up Bank Account
+### Assign a positive pay format to a bank account
 1. Go to **Cash and Bank Management > Banks accounts > Bank accounts**.
 2. Open the bank account.
 3. On the **General** FastTab, set **Positive pay format** to the format created earlier.
 4. Set the **Positive pay start date** to today’s date.
 
-## Generate positive pay file
+## Generate a positive pay file
 1. Go to **Cash and Bank Management > Bank Accounts > Bank Accounts**.
 2. Open a bank account that has Positive pay set up.
 3. Click **Manage payments > Positive pay > Positive pay file**.
