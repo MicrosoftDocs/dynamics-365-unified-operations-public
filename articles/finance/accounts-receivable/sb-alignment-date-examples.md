@@ -39,7 +39,7 @@ In this example, a billing detail for a billing schedule has the alignment date 
 
 ## Scenario 1: No Alignment
 
-The billing schedule is set up with the following: 
+The billing schedule is set up with the following data: 
 * Start date: May 1, 2019
 * End date: December 31, 2024
 * Amount: $1,000
@@ -48,7 +48,7 @@ The billing schedule is set up with the following:
 
 ## Scenario 2: Shortened Alignment
 
-The billing schedule is set up with the following: 
+The billing schedule is set up with the following data: 
 * Start date: May 1, 2019
 * End date: December 31, 2024
 * Amount: $1000
@@ -60,7 +60,7 @@ The first renewal amount is shorter than one year.
 
 ## Scenario 3: Extended Alignment
 
-The billing schedule is set up with the following: 
+The billing schedule is set up with the following data: 
 * Start date: May 1, 2019
 * End date: December 31, 2024
 * Amount: $1000
@@ -72,7 +72,7 @@ The first renewal amount is longer than one year.
 
 ## Scenario 4: Alignment with Different End Month
 
-The billing schedule is set up with the following: 
+The billing schedule is set up with the following data: 
 * Start date: May 1, 2019
 * Alignment date: December 31, 2019
 * End date: October 31, 2024
@@ -85,19 +85,19 @@ The billing schedule is set up with the following:
 
 ## Scenario 5: Single Partial Year
 
-The billing schedule is set up with the following: 
+The billing schedule is set up with the following data: 
 * Start date: May 1, 2019
 * Alignment Date: December 31, 2019
 * End date: December 31, 2019
 * Amount: $1000
 
-In this scenario, the alignment date is not needed. This scenario is common for automatic renewals. 
+In this scenario, the alignment date isn't needed. This scenario is common for automatic renewals. 
 
 [![Alignment with single partial year.](./media/Alignment5.png)](./media/Alignment5.png)
 
 ## Scenario 6: Calculated Dates
 
-The support and renewal is set up with the following: 
+The support and renewal is set up with the following data: 
 * Override start date: No
 * Support and Renewal start dates: Beginning of next month
 * Invoice posting date: June 22, 2019
@@ -107,7 +107,7 @@ The support and renewal is set up with the following:
 
 ## Scenario 7: Calculated Dates, Future Posting
 
-The support and renewal is set up with the following: 
+The support and renewal is set up with the following data: 
 * Override start date: No
 * Support and Renewal start dates: Beginning of next month
 * Invoice posting date: June 22, 2019
@@ -119,7 +119,7 @@ For this scenario, the Alignment date is changed to December 31, 2021
 
 ## Scenario 8: Manual Dates, Multiple Years
 
-The support and renewal is set up with the following: 
+The support and renewal is set up with the following data: 
 * Override start date: Yes
 * Renewal start date: July 1,2020
 * Renewal end date: December 31, 2024
@@ -129,7 +129,7 @@ The support and renewal is set up with the following:
 
 ## Scenario 9: Manual Dates, Multiple Years, Different End Month
 
-The support and renewal is set up with the following: 
+The support and renewal is set up with the following data: 
 * Override start date: Yes
 * Renewal start date: July 1, 2020
 * Renewal end date: October 31, 2024
@@ -139,7 +139,7 @@ The support and renewal is set up with the following:
 
 ## Scenario 10: Alignment Without Proration 
 
-The support and renewal is set up with the following: 
+The support and renewal is set up with the following data: 
 * Override start date: No
 * Invoice posting date: June 22, 2019 
 * Alignment date: December 31, 2019
