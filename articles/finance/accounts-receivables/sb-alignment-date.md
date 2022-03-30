@@ -87,6 +87,8 @@ The billing schedule is set up with the following:
 
 [![Alignment Scenario 4.](../media/Alignment4.png)](../media/Alignment4.png)
 
+[![Business process.](./media/AR-process.PNG)](./media/AR-process.PNG)
+
 ## Scenario 5: Single Partial Year
 
 The billing schedule is set up with the following: 
