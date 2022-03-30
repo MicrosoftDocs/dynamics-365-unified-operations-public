@@ -1078,7 +1078,7 @@ The following illustration shows a successful deployment. Notice that the upper-
 
 ## Known issues
 
-### When you run the New-D365FOGMSAAccounts cmdlet, you receive the following error message: "Key does not exist" 
+### When you run the .\Create-GMSAAccounts.ps1 script, you receive the following error message: "Key does not exist" 
 
 If you're creating and generating gMSA passwords in your domain for the first time, you must first create the Key Distribution Services KDS Root Key. For more information, see [Create the Key Distribution Services KDS Root Key](/windows-server/security/group-managed-service-accounts/create-the-key-distribution-services-kds-root-key).
 
