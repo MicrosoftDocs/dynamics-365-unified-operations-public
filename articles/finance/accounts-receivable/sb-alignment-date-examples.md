@@ -30,18 +30,19 @@ ms.dyn365.ops.version: 10.0.24
 
 # Alignment date scenarios
 
-This topic provides examples of how alignment dates function in Subscription billing. Review the following examples to better understand how the alignment dates work. 
+This topic provides examples of how alignment dates function in Subscription billing.  
 
-Suppose a billing detail for a billing schedule has the alignment date of October 31, 2019. The first billing detail for the line ends on October 31, 2019 and is prorated accordingly. The line is automatically renewed with the renewal start date of November 11.
+In this example, a billing detail for a billing schedule has the alignment date of October 31, 2019. The first billing detail for the line ends on October 31, 2019 and is prorated accordingly. The line is automatically renewed with the renewal start date of November 11.
 
-**Note:**  The year is relevant because it can cause the alignment date to be shorter or longer than a year. The proration method is set to Monthly in **Recurring contract billing parameters**. If this is set to Daily some partial amounts will be different. 
+>[!Note]  
+>The year is relevant because it can cause the alignment date to be shorter or longer than a year. The proration method is set to **Monthly** in **Recurring contract billing parameters**. If this is set to **Daily**, some partial amounts will be different. 
 
 ## Scenario 1: No Alignment
 
 The billing schedule is set up with the following: 
-- Start date: May 1, 2019
-- End date: December 31, 2024
-- Amount: $1,000
+* Start date: May 1, 2019
+* End date: December 31, 2024
+* Amount: $1,000
 
 [![Alignment with no alignment.](./media/Alignment1.png)](./media/Alignment1.png)
 
@@ -77,7 +78,8 @@ The billing schedule is set up with the following:
 * End date: October 31, 2024
 * Amount: $1000
 
-**Note:**  This is not a common scenario. 
+>[!Note]  
+>This is not a common scenario. 
 
 [![Alignment with different end month.](./media/Alignment4.png)](./media/Alignment4.png)
 
@@ -89,7 +91,7 @@ The billing schedule is set up with the following:
 * End date: December 31, 2019
 * Amount: $1000
 
-In this scenario, the alignment date is not needed. This scenario can be common for automatic renewals. 
+In this scenario, the alignment date is not needed. This scenario is common for automatic renewals. 
 
 [![Alignment with single partial year.](./media/Alignment5.png)](./media/Alignment5.png)
 
