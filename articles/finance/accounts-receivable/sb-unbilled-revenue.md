@@ -15,7 +15,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 539093
@@ -116,8 +116,9 @@ For example, on the **Item group setup** page, ItemGroupA is set up with the **N
 If you want to use the unbilled revenue feature, do not set up the **Item Group Setup** page with any item groups, or set all item groups that have the **Number of top lines** to zero (0). If you want to use the top billing feature, keep in mind that all **Unbilled revenue** actions are not available. 
 
 ### Unbilled revenue examples
-charged to either a revenue or deferred revenue account, depending on the accounting requirements for the transaction
-This topic describes how to use the unbilled revenue feature to recognize the entire amount of a contract on the balance sheet as unbilled revenue. The other side of the entry is the unbilled revenue offset. When you invoice the customer the unbilled revenue and unbilled revenue offset are reversed. Revenue recognition happens at the time of invoicing or will be recognized based on the eferral recognition schedule that was set up.
+As of 10.0.27 a new account is introduced when using Unbilled revenue. When posting the initial **Create journal entry** the credit is to a new account Unbilled revenue offset. This account is used instead of the revenue account because the same value needs to be reversed out when the billing schedule is invoiced. If there are differences in exchange rates or rounding the amounts calculated during the Generate invoice process could be different. This ensures the accounts net to zero. 
+
+This topic describes how to use the unbilled revenue feature to recognize the entire amount of a contract on the balance sheet as unbilled revenue. The other side of the entry is the unbilled revenue offset. When you invoice the customer the unbilled revenue and unbilled revenue offset are reversed. Revenue recognition happens at the time of invoicing or will be recognized based on the deferral recognition schedule that was set up.
 
 Review the following example to better understand the unbilled revenue functionality.
 
@@ -134,26 +135,35 @@ Assume a customer signs a 3-year $390 contract on January 1 of the current year.
 |License|January 01, CY|December 31 CY+2|100.00|Annually|No|Yes|The customer will be invoiced 100.00 each year. The 300.00 total will be recorded upfront as unbilled revenue on the balance sheet and as revenue on the profit and loss. Each invoice will reduce the unbilled amount.|
 |Maintenance|January 01, CY|December 31 CY+2|30.00|Annually|Yes|Yes|The customer will be invoiced 30.00 each year. The 90.00 total will be recorded upfront as unbilled revenue and deferred revenue on the balance sheet. Each invoice will reduce the unbilled amount. The deferred revenue will be recognized monthly over 36 months.|
 
-1. On the **All billing schedules** page, use the **Create journal entry** action to post the contract value to the balance sheet as unbilled revenue. It will create two journal entries, one for each line on the billing schedule:
+6. On the **All billing schedules** page, use the **Create journal entry** action to post the contract value to the balance sheet as unbilled revenue. It will create two journal entries, one for each line on the billing schedule:
 
 | Unbilled revenue account| Unbilled revenue offset account | Debit amount | Credit amount |
 |:-----|:-----|-----:|-----:|
 |Unbilled revenue account| |300.00| &nbsp; |
 | &nbsp; |Unbilled revenue offset account| |300.00|
 
-| Unbilled revenue account| Unbilled revenue offset account | Debit amount | Credit amount |
+| Unbilled revenue account| Deferred revenue | Debit amount | Credit amount |
 |:-----|:-----|-----:|-----:|
 |Unbilled revenue account| &nbsp; |90.00| &nbsp; |
-| &nbsp; |Unbilled revenue offset account| &nbsp; |90.00|
+| &nbsp; |Deferred maintenance revenue| &nbsp; |90.00|
 
-Notice that the first journal entry is posted to a revenue account and the second is posted to a deferred revenue account. The contract requires that the invoice for the customer to be created at the beginning of each year. Use **Generate invoice** to create the invoice. When the invoice is created, the journal entry is as follows: 
+Notice that the first journal entry is posted to unbilled revenue offset account and the second is posted to a deferred revenue account. If the billing line has both unbilled revenue and deferred revenue the deferred revenue account is used, not the unbilled revenue offset. The contract requires that the invoice for the customer to be created at the beginning of each year. Use **Generate invoice** to create the invoice. When the invoice is created, the journal entry is as follows: 
 
 | Main account| Unbilled revenue account | Debit amount | Credit amount |
 |:-----|:-----|-----:|-----:|
-|AR| &nbsp; |130.00| &nbsp; |
-| |Unbilled Revenue account| |130.00|
+|Unbilled revenue offset| &nbsp; |100.00| &nbsp; |
+| |Unbilled revenue account| |100.00|
+|Accounts receivable| &nbsp; |100.00| &nbsp; |
+| |Revenue account| |100.00|
 
-This same journal entry will be created by invoices posted at the beginning of the next two years.
+| Main account| Unbilled revenue account | Debit amount | Credit amount |
+|:-----|:-----|-----:|-----:|
+|Deferred maintenance revenue account| &nbsp; |30.00| &nbsp; |
+| |Unbilled revenue account| |30.00|
+|Accounts reveivable| &nbsp; |30.00| &nbsp; |
+| |Deferred maintenance revenue account| |30.00|
+
+This same journal entry will be created by invoices posted at the beginning of the next two years. The deferred revenue account does net to zero on this example because there is no rounding or exchange rate differences.  The deferred revenue needs to be reversed out exactly as it was credited during the Create journal entry process. Since revenue is still deferred and will be recognized later the credit to the deferred revenue account happens here again. 
 
 In the last step, the recognition journal entry is created each month to recognize the deferred maintenance fee revenue. The journal entry can be created using the **Recognition processing** page or the **Recognize** action for the lines on the **Deferral schedule** pages.
 
@@ -218,7 +228,7 @@ Surface Pro 128GB (Item number 1000):
 - Standalone selling price: 1,600
 - Contract revenue: 1,465.26
 
-Item 1000 is sold in a bundle with Insurance (Item number S0021):
+Item 1000 is sold together with Insurance (Item number S0021):
 - Billing frequency: Monthly for 12 months 
 - Unit price: 20.00 per month
 - Standalone selling price: 25.00
@@ -237,8 +247,8 @@ The initial journal entry for the items and the invoice are as follows:
  |Debit unbilled revenue account (401250)| &nbsp; |274.74|
  | &nbsp; |Credit deferred revenue account (250600)| &nbsp; |274.74|
 |**Invoice**| &nbsp; | &nbsp; | &nbsp; |
-| &nbsp; |Credit deferred revenue account| &nbsp; |1,465.26|
- | &nbsp; |Credit deferred revenue account| &nbsp; |274.74|
+| &nbsp; |Credit unbilled revenue account| &nbsp; |1,465.26|
+ | &nbsp; |Credit unbilled revenue account| &nbsp; |274.74|
  |Debit AR account (130100)| &nbsp; |1,488.16| &nbsp; |
 
 **Changes to the billing schedule line, billing detail line, or revenue allocation**
