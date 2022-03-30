@@ -45,18 +45,11 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 
 1. Rename the original **Infrastructure** folder that you created during the process to [Download setup scripts from LCS](setup-deploy-on-premises-pu41.md#downloadscripts). Rename the folder to **InfrastructureOld**.
 
-2. Download the latest setup scripts from [Download setup scripts from LCS](setup-deploy-on-premises-pu41.md#downloadscripts). Unzip the files into a folder that is named **Infrastructure**.
+2. Download the latest setup scripts from [Download setup scripts from LCS](setup-deploy-on-premises-pu41.md#downloadscripts). Unzip the files into a fileshare accessible by all machines in the cluster. Name the folder **Infrastructure**.
 
-3. Copy **ConfigTemplate.xml** and **ClusterConfig.json** from **InfrastructureOld** to **Infrastructure**.
+3. Compare the schema version of the **ConfigTemplate.xml** from **InfrastructureOld** with the schema version of the **ConfigTemplate.xml** in the **Infrastructure**. If the schema versions are different, migrate the contents of the **ConfigTemplate.xml** from **InfrastructureOld** into the **ConfigTemplate.xml** from **Infrastructure** by comparing the two files.
 
 4. Configure certificates as needed in **ConfigTemplate.xml**. Follow the steps in [Configure certificates](setup-deploy-on-premises-pu41.md#configurecert), specifically these steps.
-
-    ```powershell
-    # Create self-signed certs
-    .\New-SelfSignedCertificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
-    ```
-
-    Alternatively, if you have or would like to switch to Active Directory Certificate Services (AD CS) certificates, use this information.
 
     ```powershell
     # Only run the first command if you have not generated the templates yet.
@@ -67,8 +60,18 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
     > [!NOTE]
     > The AD CS scripts need to run on a domain controller, or a Windows Server computer with Remote Server Admin Tools installed.
     > The AD CS functionality is only available with Infrastructure scripts release 2.7.0 and later. 
-    >
+
+    Alternatively, if you want to keep using self-signed certificates run the command below.
+
+    ```powershell
+    # Create self-signed certs
+    .\New-SelfSignedCertificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+    ```
+
+    > [!WARNING]
     > Self-signed certificates should never be used in production environments. If you're using publicly trusted certificates, manually update the values of those certificates in the ConfigTemplate.xml file.
+
+    Once you have generated your certificates run the command below.
 
     ```powershell
     # Exports .pfx files into a directory VMs\<VMName>. All the certs will be written to the infrastructure\Certs folder.
@@ -110,14 +113,11 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
         .\Test-D365FOConfiguration.ps1
         ```
 
-6. If axdataenciphermentcert certificates are rotated, you need to regenerate the credentials.json file. For more information, see [Encrypt credentials](setup-deploy-on-premises-pu41.md#encryptcred).
-
-7. Run the following PowerShell command to have values that can be used in LCS later. For more information, see [Deploy your on-premises environment from LCS](setup-deploy-on-premises-pu41.md#deploy).
+6. Run the following PowerShell command to have values that can be used in LCS later. For more information, see [Deploy your on-premises environment from LCS](setup-deploy-on-premises-pu41.md#deploy).
 
     ```powershell
     .\Get-DeploymentSettings.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
-
 
 ## Activate new certificates within Service Fabric cluster
 
@@ -234,7 +234,6 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 	> [!NOTE] 
 	> If you receive the error "Upgrading from two different certificates to two different certificates is not allowed", it means that you didn't clean up old Service Fabric certificates on the previous certificate rotation exercise. Refer to the [Clean up old Service Fabric certificates](certificate-rotation-on-prem.md#cleanupoldsfcerts) section toward the end of this document, and then repeat the steps in this section.  
 
-
 ### Service Fabric with or without expired certificates (cluster not accessible)
 
 Continue this process following the steps in [Troubleshoot on-premises deployments](troubleshoot-on-prem.md#clean-up-an-existing-environment-and-redeploy).
@@ -247,7 +246,7 @@ You must reinstall the LocalAgent if:
 - You changed the service fabric client certificate.
 - You changed the LocalAgent certificate.
 
-1. Update your current localagent-config.json by replacing the **serverCertThumprint** and **clientCertThumbprint** values with the new thumbprints.
+1. Update your current localagent-config.json by replacing the **serverCertThumbprint** and **clientCertThumbprint** values with the new thumbprints.
 
     ```json
     {
@@ -354,7 +353,7 @@ Alternatively, if you also want to rotate the existing credentials, follow these
     ```
 
 > [!NOTE]
-> Make sure that you either copy your infrastructure folder to an Application Object Server (AOS) node or run the script from an AOS node.
+> Make sure that you run the script from an Application Object Server (AOS) node.
 
 ## Update deployment settings in LCS
 
