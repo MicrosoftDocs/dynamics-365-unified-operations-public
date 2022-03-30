@@ -53,7 +53,7 @@ list of checks. If the check matches a check in the list, the bank clears it. If
 3. On the **General** FastTab, set **Positive pay format** to the format created earlier.
 4. Set the **Positive pay start date** to today’s date.
 
-## Generate a positive pay file
+### Generate a positive pay file
 1. Go to **Cash and Bank Management > Bank Accounts > Bank Accounts**.
 2. Open a bank account that has Positive pay set up.
 3. Click **Manage payments > Positive pay > Positive pay file**.
