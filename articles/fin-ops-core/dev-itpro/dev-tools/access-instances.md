@@ -203,7 +203,7 @@ The software development kit (SDK) is available at C:\RetailSDK. For more inform
 
 #### Remove Pre-existing Encrypted data from Headquarters
 If while configuring they shared hardware station on a VHD image the following exception error is viewed in the Event Viewer: "No certificate found for id...", the Commerce configuration for the VHD environment may require the manual removal of the merchant properties from the deployed environment. In AOS of your VHD enviornment, search for and remove the SECUREMERCHANTPROPERTIES from the following tables:
- - dbo.RETAILHARWAREPROFILE (removes pre-loaded properties from the hardware profile form)
+ - dbo.RETAILHARDWAREPROFILE (removes pre-loaded properties from the hardware profile form)
  - dbo.RETAILCHANNELPAYMENTCONNECTORLINE (removes pre-loaded properties from the online store form)
  - dbo.CREDITCARDACCOUNTSETUP (removes pre-loaded properties from they payments service form)
 
