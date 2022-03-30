@@ -16,7 +16,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 539093
@@ -81,7 +81,7 @@ The billing schedule is set up with the following:
 >[!Note]  
 >This is not a common scenario. 
 
-[![Alignment with different end month.](./media/Alignment4.png)](./media/Alignment4.png)
+[![Alignment with a different end month.](./media/Alignment4.png)](./media/Alignment4.png)
 
 ## Scenario 5: Single Partial Year
 
