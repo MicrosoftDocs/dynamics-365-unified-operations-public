@@ -45,6 +45,9 @@ All your SQL Server components across an environment must be on the same version
 1. On your AOS nodes, upgrade the SSIS component.
 1. On your Business Intelligence (BI) nodes, upgrade the SSRS and database engine components.
 
+> [!IMPORTANT]
+> When you upgrade the database engine component on your BI nodes from SQL Server 2016 to SQL Server 2019, the SSRS component will be removed. In SQL 2019, SSRS has its own installer.
+
 ## Update the local agent
 
 1. Clean up the local agent by running the following command from an Orchestrator node.

@@ -1615,7 +1615,7 @@ Microsoft.Dynamics.AX.Framework.Management.Reports.PublishReportCommand
     ```
 
 > [!IMPORTANT]
-> If you used remoting, be sure to run the cleanup steps after the setup is completed. For instructions, see [Step 20. Tear down CredSSP, if remoting was used](./setup-deploy-on-premises-pu41.md#teardowncredssp).
+> If you used remoting, be sure to run the cleanup steps after the setup is completed. For instructions, see [Tear down CredSSP, if remoting was used](./setup-deploy-on-premises-pu41.md#teardowncredssp).
 
 #### Manually add these permissions:
 1. Go to your BI node.
