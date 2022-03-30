@@ -85,7 +85,7 @@ The billing schedule is set up with the following:
 
 ![Note icon](../../../Resources/images/icons/iAXnote.gif)**Note:**  Not a common scenario. 
 
-![Alignment Scenario4](./media/Alignment04.png)
+[![Alignment Scenario4](./media/Alignment04.png)](./media/Alignment04.png)
 
 ## Scenario 5: Single Partial Year
 
