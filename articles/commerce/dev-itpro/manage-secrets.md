@@ -60,10 +60,14 @@ To consume the secret in the extension, add the following request and response.
 
 To read the secret in the CRT extension, follow these steps.
 
+### Cache the Key Vault in memory on CRT/RS
+
+Whenever a call is made to read the Key Vault secret value in CRT, CRT calls the HQ to get the value, which is a real time call to HQ and HQ will call the Azure Key Vault to get the values, since multiples hops in involved to read the value, this will increase the latency for the call. So, it's recommended to cache the Key Vault secret value in memory on CRT/RS side for better performance. If the value is changed frequently in the key Vault, then you need to decide the right strategy for the cache expiration based on your scenario.
+
 1. Create a new CRT extension project (C\# class library project type). Use the sample templates from the Retail software development kit (SDK) (**RetailSDK\\SampleExtensions\\CommerceRuntime**).
 2. In the CRT extension, you can create a new request/response, or you can add a pre-trigger or post-trigger for the existing CRT request, and then call it. In the following example, a trigger was added for **SaveCartRequest**. It calls **GetUserDefinedSecretStringValueServiceRequest** to read the secret by passing the secret key that is configured in Headquarters. You don't have to write custom code to read the secret from Headquarters. You can use the request and response to read the value.
 
-    ```csharp
+```csharp
     public class CustomSaveCartTrigger : IRequestTrigger
     {
         /// <summary>
@@ -114,19 +118,19 @@ To read the secret in the CRT extension, follow these steps.
         {
         }
     }
-    ```
+```
 
 3. Build the CRT extension project.
 4. Copy the output class library, and paste it into **…\\RetailServer\\webroot\\bin\\Ext** for manual testing.
 5. In the **CommerceRuntime.Ext.config** file, update the extension composition section with the custom library information. Here is an example.
 
-    ```Xml
+```Xml
     <add source="assembly" value="your custom library name" />
-    ```
+```
 
 ## Credential rotation
 
-When this approach is used for credential management, credential rotation is more streamlined. To update a secret, an IT admin just has to update the secret in Key Vault. No change is required to the extension. After a secret is updated, the new value starts to be used when the cache expires.
+When this approach is used for credential management, credential rotation is more streamlined. To update a secret, an IT admin just has to update the secret in Key Vault. No change is required to the extension. 
 
 ## Offline support
 
