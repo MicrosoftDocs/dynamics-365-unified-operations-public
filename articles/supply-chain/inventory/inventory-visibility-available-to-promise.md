@@ -185,12 +185,12 @@ You can use the following application programming interface (API) URLs to submit
 
 | Path | Method | Description |
 | --- | --- | --- |
-| `/api/environment/{environment-ID}/on-hand/changeschedule` | `POST` | Create one scheduled on-hand change. |
-| `/api/environment/{environment-ID}/on-hand/changeschedule/bulk` | `POST` | Create multiple scheduled on-hand changes. |
+| `/api/environment/{environmentId}/on-hand/changeschedule` | `POST` | Create one scheduled on-hand change. |
+| `/api/environment/{environmentId}/on-hand/changeschedule/bulk` | `POST` | Create multiple scheduled on-hand changes. |
 | `/api/environment/{environmentId}/onhand` | `POST` | Create one on-hand change event. |
 | `/api/environment/{environmentId}/onhand/bulk` | `POST` | Create multiple change events. |
-| `/api/environment/{environment-ID}/onhand/indexquery` | `POST` | Query by using the `POST` method. |
-| `/api/environment/{environment-ID}/onhand` | `GET` | Query by using the `GET` method. |
+| `/api/environment/{environmentId}/onhand/indexquery` | `POST` | Query by using the `POST` method. |
+| `/api/environment/{environmentId}/onhand` | `GET` | Query by using the `GET` method. |
 
 For more information, see [Inventory Visibility public APIs](inventory-visibility-api.md).
 
