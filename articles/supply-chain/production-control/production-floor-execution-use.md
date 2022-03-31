@@ -206,9 +206,9 @@ The following actions can be performed:
 - If the worker selects **OK**, the picking list isn't deleted. It will be posted when the job is reported in the **Report scrap** or **Report progress** dialog box.
 - If the worker selects **Cancel** in the **Report progress** or **Report scrap** dialog box, the picking list is deleted.
 
-### Adjust material from the toolbar on the right
+### Adjust material from the primary or secondary toolbar
 
-The **Adjust material** button can be configured so that it appears on the toolbar on the right. (For more information, see [Design the production floor execution interface](production-floor-execution-tabs.md).) A worker can select **Adjust material** for a production job that is in progress. In this case, the **Adjust material** dialog box appears, where the worker can make the desired adjustments. When the dialog box is opened, a production picking list that contains lines for the adjusted quantities is created for the production order. If the worker selects **Post now**, the adjustment is confirmed, and the picking list is posted. If the worker selects **Cancel**, the picking list is deleted, and no adjustment is made.
+The **Adjust material** button can be configured so that it appears on the primary or secondary toolbar. (For more information, see [Design the production floor execution interface](production-floor-execution-tabs.md).) A worker can select **Adjust material** for a production job that is in progress. In this case, the **Adjust material** dialog box appears, where the worker can make the desired adjustments. When the dialog box is opened, a production picking list that contains lines for the adjusted quantities is created for the production order. If the worker selects **Post now**, the adjustment is confirmed, and the picking list is posted. If the worker selects **Cancel**, the picking list is deleted, and no adjustment is made.
 
 ### Adjust material consumption for catch weight items
 
@@ -274,15 +274,11 @@ Workers can form a team when multiple workers are assigned to the same productio
 
 ### Prerequisites
 
-An admin must enable the **Assistant** action for the primary toolbar of the **All jobs** tab of the production floor execution interface. For instructions, see [Design the production floor execution interface](production-floor-execution-tabs.md).
+To use teams, an admin must enable the **Assistant** action for the primary toolbar of the **All jobs** tab of the production floor execution interface. For instructions, see [Design the production floor execution interface](production-floor-execution-tabs.md).
 
 ### Form a new team with a pilot and an assistant
 
 A worker can register as an assistant on the **All jobs** tab by selecting **Assistant** to open the **Select an employee to assist** dialog. The dialog box lets the worker select a pilot from among workers who are actively working on a job. When a worker has confirmed the selection, they become an assistant to the selected worker, who becomes the pilot for the new team.
-
-### Join an existing team
-
-<!-- KFM: Johan will add this. -->
 
 ### Assign a new pilot for an existing team
 
