@@ -78,11 +78,11 @@ Set up the default values in the **General** tab.
 15. If you use the **Unbilled revenue feature**, specify which options to use. 
     a. Select **Yes** for **Post general journal automatically** if you want the general journal to be created and posted at the same time. Select **No** to create the general journal and then manually post it. 
     b. Select a **Default journal name** to use when creating the general journal. 
-    c. Select a **Short-term unbilled method** if using one. If **None** is selected, then the short-term functionality will not be used with unbilled revenue. Select **Rolling periods** to always use 12 months. Select **Fixed year** to use the remaining fiscal year.
+    c. Select a **Short-term unbilled method** if using one. If **None** is selected, then the short-term functionality won't be used with unbilled revenue. Select **Rolling periods** to always use 12 months. Select **Fixed year** to use the remaining fiscal year.
  16. Specify the **Termination** options to use for terminating a billing schedule and its lines. 
      a. Select **Issue credit** to create a credit note when a billing schedule or billing schedule line is terminated. 
      b. Select **Credit adjustment** to create a credit adjustment for a billing schedule when a line is terminated. The credit adjustment appears in a future billing period for the billing schedule and automatically adjusts the invoice amount for the next billing period until the credit is finished being applied to the billing schedule. 
-     c. Select **No credit** if you do not want a credit adjustment or note created when terminating a billing schedule or billing schedule line. This is only available when terminating a billing schedule using the **No adjustment** option. 
+     c. Select **No credit** if you don't want a credit adjustment or note created when terminating a billing schedule or billing schedule line. This is only available when terminating a billing schedule using the **No adjustment** option. 
  
 ## Sequence number tab
 
