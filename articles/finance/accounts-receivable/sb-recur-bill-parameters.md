@@ -50,39 +50,39 @@ Set up the default values in the **General** tab.
 8. Select **Yes** in the **Align deferral to billing** field if you want to align the dates of a corresponding deferral schedule to use the same dates as the billing schedule. Select **No** to have different dates. 
 9. If using revenue split feature, select **Yes** in the **Automatically create revenue split** field when items are added to a billing schedule. The **Revenue split** checkbox will be marked automatically on the billing schedule line if the item is set up as a revenue split item. Select **No** to manually mark the **Revenue split** checkbox.
 10. For **Sales order creation**:
-    a. Invoices can be consolidated by period, customer or item. Any combination of **Yes** and **No** can be selected. Invoices can also be split by item group. 
-    b. The **Posting option** for invoices include:
+ - Invoices can be consolidated by period, customer or item. Any combination of **Yes** and **No** can be selected. Invoices can also be split by item group. 
+ - The **Posting option** for invoices include:
      - **Create sales order** to create only the sales order. 
      - **Show Posting invoice** to invoice the sales order and open the page where you can manually post the invoice. 
      - **Create fee text invoice** if using free text invoices. 
-     - **Post invoice automatically** to invoice the sales order and post it. 
-    c. Select **Yes** in the **Add billing dates to item description** field to add the description with the billing start date and end date.  
-    d. In the **Exclude zero consumption** field, select **Yes** to not include the billing schedule lines with no consumption. Select **No** to include these lines on the sales order.
-    e. In the **Don't print child items** field, select **Yes** if you don't want to print child items of a revenue split on the sales order. Only the parent item will appear on the invoice. If the net amount of the (hidden) child items has a non-zero sum, the net amount of the parent line shows a summary of the child lines. Select **No** for all child items to print below the parent item on the sales invoice.
+     - **Post invoice automatically** to invoice the sales order and post it.
+ - Select **Yes** in the **Add billing dates to item description** field to add the description with the billing start date and end date.  
+ - In the **Exclude zero consumption** field, select **Yes** to not include the billing schedule lines with no consumption. Select **No** to include these lines on the sales order.
+ - In the **Don't print child items** field, select **Yes** if you don't want to print child items of a revenue split on the sales order. Only the parent item will appear on the invoice. If the net amount of the (hidden) child items has a non-zero sum, the net amount of the parent line shows a summary of the child lines. Select **No** for all child items to print below the parent item on the sales invoice.
 11. In **Support and renewal**:
-    a. Select **Yes** in the **Auto enable support and renewal** field to automatically use the support and renewal feature on a sales order.
-    b. Select the default **Support and renewal level** and specify the **Support and renewal quantity**. 
-    c. Select the **Default support and renewal start date**. 
+ - Select **Yes** in the **Auto enable support and renewal** field to automatically use the support and renewal feature on a sales order.
+ - Select the default **Support and renewal level** and specify the **Support and renewal quantity**. 
+ - Select the **Default support and renewal start date**. 
      - **Transaction date** will use the transaction date as the start date. 
      - **Beginning of current month** uses the first of the current month as the start date. 
      - **Beginning of next month** uses the first of the following month as the start date. If the transaction date is the first, then the first of the current month is used. 
      - Select **Rule of 15** to use the first of the current month if the transaction date is between the 1st-15th of the month; if the transaction date is the 16th or later it will use the first of the next month as the start date. 
-    d. Select **Yes** to **Include discount in calculation** to include the discount amount in the support or renewal amount. Select **No** to exclude the discount amount.
-    e. Select the **Support frequency** and **Renewal frequency** that will be used when the support and renewal items are added to a billing schedule. Choose from **Daily**, **Monthly**, **Quarterly**, **Semiannually** or **Annually**. 
-    f. Select **Yes** to **Align by item group** to align the start and end dates of additional items to existing items based on the item group. 
-    g. Select **Yes** to **Align to next unbilled period** to determine the alignment date for a renewal item by the date of the next unbilled period after the renewal starts. 
-    h. Select **Yes** to **Copy serial number** to copy the item serial number from the initial sales order line to the corresponding billing schedule line.  
+  - Select **Yes** to **Include discount in calculation** to include the discount amount in the support or renewal amount. Select **No** to exclude the discount amount.
+  - Select the **Support frequency** and **Renewal frequency** that will be used when the support and renewal items are added to a billing schedule. Choose from **Daily**, **Monthly**, **Quarterly**, **Semiannually** or **Annually**. 
+  - Select **Yes** to **Align by item group** to align the start and end dates of additional items to existing items based on the item group. 
+  - Select **Yes** to **Align to next unbilled period** to determine the alignment date for a renewal item by the date of the next unbilled period after the renewal starts.
+  - Select **Yes** to **Copy serial number** to copy the item serial number from the initial sales order line to the corresponding billing schedule line.  
 12. When using **Escalation** on the billing schedule, select the method used for the **Consumer price index calculation**.  
 13. Select **Yes** to **Track price change** if you want a record of a billing schedule line price change. If a billing schedule line is manually changed from standard to flat and a new price entered, audit information is tracked on the billing schedule line. Select **No** to not track these changes. 
 14. Select how records are filtered on the **Generate invoice** page. **Start date** or **End date** can be the default. 
 15. If you use the **Unbilled revenue feature**, specify which options to use. 
-    a. Select **Yes** for **Post general journal automatically** if you want the general journal to be created and posted at the same time. Select **No** to create the general journal and then manually post it. 
-    b. Select a **Default journal name** to use when creating the general journal. 
-    c. Select a **Short-term unbilled method** if using one. If **None** is selected, then the short-term functionality won't be used with unbilled revenue. Select **Rolling periods** to always use 12 months. Select **Fixed year** to use the remaining fiscal year.
- 16. Specify the **Termination** options to use for terminating a billing schedule and its lines. 
-     a. Select **Issue credit** to create a credit note when a billing schedule or billing schedule line is terminated. 
-     b. Select **Credit adjustment** to create a credit adjustment for a billing schedule when a line is terminated. The credit adjustment appears in a future billing period for the billing schedule and automatically adjusts the invoice amount for the next billing period until the credit is finished being applied to the billing schedule. 
-     c. Select **No credit** if you don't want a credit adjustment or note created when terminating a billing schedule or billing schedule line. This is only available when terminating a billing schedule using the **No adjustment** option. 
+ - Select **Yes** for **Post general journal automatically** if you want the general journal to be created and posted at the same time. Select **No** to create the general journal and then manually post it. 
+ - Select a **Default journal name** to use when creating the general journal. 
+ - Select a **Short-term unbilled method** if using one. If **None** is selected, then the short-term functionality won't be used with unbilled revenue. Select **Rolling periods** to always use 12 months. Select **Fixed year** to use the remaining fiscal year.
+ 16. Specify the **Termination** options to use for terminating a billing schedule and its lines.
+  - Select **Issue credit** to create a credit note when a billing schedule or billing schedule line is terminated. 
+  - Select **Credit adjustment** to create a credit adjustment for a billing schedule when a line is terminated. The credit adjustment appears in a future billing period for the billing schedule and automatically adjusts the invoice amount for the next billing period until the credit is finished being applied to the billing schedule. 
+  - Select **No credit** if you don't want a credit adjustment or note created when terminating a billing schedule or billing schedule line. This is only available when terminating a billing schedule using the **No adjustment** option. 
  
 ## Sequence number tab
 
