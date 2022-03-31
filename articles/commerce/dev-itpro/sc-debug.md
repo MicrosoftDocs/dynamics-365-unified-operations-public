@@ -20,7 +20,7 @@ This document explains how to debug the Store Commerce extensions using VSCode. 
 1.	Install [Visual Studio Code](https://code.visualstudio.com/)
 2.	Launch the Visual Studio Code and install the [Microsoft Edge Tools for VS Code - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools)
 
- ![Commerce components.](media/EdgeTool.png)
+ ![Commerce components.](../media/EdgeTool.png)
 
 3.	Before deploying the extensions, [Install the Store Commerce app](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/store-commerce#device-installation), during install please enable the debug option by passing the parameter **--enablewebviewdevtools.**
 ```ps
@@ -28,7 +28,7 @@ Ex:  .\StoreCommerce.Installer.exe install --enablewebviewdevtools
 ```
 4.	Download the Store Commerce extension sample code from the InStore GitHub Repo or use your own extension code.
 
->[NOTE]
+> [!NOTE]
 > Don’t run VS code in admin mode.
 
 5.	Open VS developer command prompt and type **code .** to open VS code.
@@ -36,7 +36,7 @@ Ex:  .\StoreCommerce.Installer.exe install --enablewebviewdevtools
 7.	In the VSCode, right click the root folder of your solution directory and create a new folder called **.vscode**. 
 8.	Inside the .vscode folder, create a new file and name it as launch.json.
 
-![Commerce components.](media/Launch.png)
+![Commerce components.](../media/Launch.png)
 
 9.	Inside the launch.json file add the configurations to build and debug the Store Commerce extensions. 
 
@@ -112,7 +112,7 @@ Inside the tasks.json file, copy the below configurations:
 ```
 11.	Click the Debug button in VS and choose the right option based on your scenario and start debugging by placing breakpoint in your extension code.
 
- ![Commerce components.](media/Debug.png)
+ ![Commerce components.](../media/Debug.png)
 
 ### Troubleshooting debug issues
 **msbuild error**
