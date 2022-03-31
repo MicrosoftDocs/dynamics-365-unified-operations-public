@@ -90,7 +90,7 @@ Use this tab to set the default value for billing schedule numbers. The default 
 
 ## Billing schedule group
 
-Use the **Billing schedule group** page to create a billing schedule group for Recurring contract billing. The billing schedule group settings default when creating a new billing schedule. When a billing schedule group is applied to newly created billing schedules, the default values of the group are automatically applied to the billing schedule. You can change any of the default options for the specific billing schedule that you create. Multiple billing schedule groups can be set up but you can assign a default billing schedule group in **Recurring contract billing parameters**.
+Use the **Billing schedule group** page to create a billing schedule group for Recurring contract billing. The settings on the **Billing schedule group** page are used when creating a new billing schedule. When a billing schedule group is applied to newly created billing schedules, the default values of the group are automatically applied to the billing schedule. You can change any of the default options for the specific billing schedule that you create. Multiple billing schedule groups can be set up but you can assign a default billing schedule group in **Recurring contract billing parameters**.
  
  * Select **New** to create a billing schedule group. 
  * Enter a unique **Billing schedule group** identifier and **Description**. 
@@ -106,7 +106,7 @@ Select the default **Pricing method** for items on the billing schedule:
 In the **Item type** field, select a value for the billing group: 
  - Select **Standard** for use with static quantity. 
  - Select **Usage** for metered or consumption type items. 
- - Select **Milestone** to use the Milestone billing functionality. If the **Item type** is **Usage**, set the **Usage reading option** to **Reading** to enter the value on a meter or device for a billing period. The consumed value will be calculated based on the the previous billing period and the current reading you entered. 
+ - Select **Milestone** to use the Milestone billing functionality. If the **Item type** is **Usage**, set the **Usage reading option** to **Reading** to enter the value on a meter or device for a billing period. The consumed value will be calculated based on the previous billing period and the current reading you entered. 
  - Select **Consumption** to enter the value consumed for a billing period. If using Milestone **Item Type**, select the **Milestone template** if using one.
 
 Select whether to create separate invoices based on the customer: 
