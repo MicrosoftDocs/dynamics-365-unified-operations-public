@@ -2474,6 +2474,11 @@
             href: dev-itpro/extension-resource-localization.md
       - name: Headless Commerce
         items:
+        - name: Overview
+          items:
+          - name: Introduction to Commerce Scale Unit (CSU) Core
+            href: dev-itpro/CSU-core.md
+        items:
         - name: APIs and reference
           items:
           - name: Commerce Scale Unit customer and consumer APIs
@@ -2540,6 +2545,8 @@
             href: dev-itpro/pos-extension/pos-extension-basics.md
           - name: Migrate POS Extensions to the Commerce SDK
             href: dev-itpro/pos-extension/migrate-pos-extension.md
+          - name: Debug Store Commerce extensions using VS Code
+            href: dev-itpro/sc-debug.md
         - name: Environment setup
           items:
           - name: Local development environment
@@ -2614,6 +2621,8 @@
             href: dev-itpro/pos-extension/mpos-extension-signing.md 
           - name: Create a Cloud POS extension package
             href: dev-itpro/pos-extension/cpos-extension-package.md
+          - name: Create a Store Commerce extension installer package
+            href: dev-itpro/SC-Extension-installer.md
       - name: E-commerce
         items:
         - name: Overview
@@ -2815,6 +2824,11 @@
             - name: Telemetry logger
               href: e-commerce-extensibility/telemetry-logger.md
       - name: Commerce HQ
+        items:
+        - name: CDX package extension
+          items:       
+          - name: Extend Customer CDX package to add custom data
+            href: dev-itpro/Customer-CDX-ext.md
         items:
         - name: Packaging and deployment
           items:
