@@ -21,7 +21,6 @@ ms.custom: ["10444", "intro-internal"]
 ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
 ms.search.region: Global
 # ms.search.industry: 
-ms.custom: intro-internal
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
