@@ -25,4 +25,5 @@ There are several reasons why the scheduling engine might fail and issue this er
 
 ## Resolution
 
-There are several reasons why the scheduling engine might fail and issue the error message. For guidelines that will help you find the root cause of the error and then mitigate it, see [Fix the "Not enough capacity could be found" scheduling engine error](/dynamics365/supply-chain/master-planning/not-enough-capacity-error-resolution.md).
+There are several reasons why the scheduling engine might fail and issue the error message. For guidelines that will help you find the root cause of the error and then mitigate it, see [Fix the "Not enough capacity could be found" scheduling engine error](/dynamics365/supply-chain/master-planning/not-enough-capacity-error-resolution).
+
