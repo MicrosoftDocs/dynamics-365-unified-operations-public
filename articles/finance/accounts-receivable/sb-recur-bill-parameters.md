@@ -33,7 +33,7 @@ Use the **Recurring contract billing parameters** page to set up the default val
 
 ## General tab
 
-Setup the default values in the **General** tab.
+Set up the default values in the **General** tab.
 1. Go to the **Recurring contract billing parameters** page. 
 2. Assign the **Billing schedule group**.
 3. In **Termination type** field, select how the final invoice will be calculated when a billing schedule is terminated. 
@@ -45,7 +45,7 @@ Setup the default values in the **General** tab.
 5. If you want to allocate a billing amount based on the number of days in the period, select **Yes** in the **Prorate partial periods** field. To have the same amount in each billing period, regardless of the number of days, select **No**. If you select **Yes**, choose the **Proration method** of **Daily** or **Monthly**. Choose **Daily** to distribute the amounts based on the number of days in the period. Choose **Monthly** to have an equal amount each month. 
 6. If you want a newly created billing schedule to default on **Hold**, select **Yes**. 
 >[!Note]
->To remove a hold on a billing schedule the user must be part of a user group.   Select **Remove hold user group override** to set up a User group with the option **Allow remove hold**. 
+>To remove a hold on a billing schedule the user must be part of a user group. Select **Remove hold user group override** to set up a **User group** with the option **Allow remove hold**. 
 7. Select the default **Invoice transaction type** for a new billing schedule. 
 8. Select **Yes** in the **Align deferral to billing** field if you want to align the dates of a corresponding deferral schedule to use the same dates as the billing schedule. Select **No** to have different dates. 
 9. If using revenue split feature, select **Yes** in the **Automatically create revenue split** field when items are added to a billing schedule. The **Revenue split** checkbox will be marked automatically on the billing schedule line if the item is set up as a revenue split item. Select **No** to manually mark the **Revenue split** checkbox.
@@ -58,19 +58,19 @@ Setup the default values in the **General** tab.
      - **Post invoice automatically** to invoice the sales order and post it. 
     c. Select **Yes** in the **Add billing dates to item description** field to add the description with the billing start date and end date.  
     d. In the **Exclude zero consumption** field, select **Yes** to not include the billing schedule lines with no consumption. Select **No** to include these lines on the sales order.
-    e. In the **Don't print child items** field, select **Yes** if you do not want to print child items of a revenue split on the sales order. Only the parent item will appear on the invoice. If the net amount of the (hidden) child items has a non-zero sum, the net amount of the parent line shows a summary of the child lines. Select **No** for all child items to print below the parent item on the sales invoice.
+    e. In the **Don't print child items** field, select **Yes** if you don't want to print child items of a revenue split on the sales order. Only the parent item will appear on the invoice. If the net amount of the (hidden) child items has a non-zero sum, the net amount of the parent line shows a summary of the child lines. Select **No** for all child items to print below the parent item on the sales invoice.
 11. In **Support and renewal**:
     a. Select **Yes** in the **Auto enable support and renewal** field to automatically use the support and renewal feature on a sales order.
     b. Select the default **Support and renewal level** and specify the **Support and renewal quantity**. 
     c. Select the **Default support and renewal start date**. 
      - **Transaction date** will use the transaction date as the start date. 
-     - **Beginning of current month** uses the 1st of the current month as the start date. 
-     - **Beginning of next month** uses the 1st of the following month as the start date. If the transaction date is the 1st, then the 1st of the current month is used. 
-     - Select **Rule of 15** to use the 1st of the current month if the transaction date is between the 1st-15th of the month; if the transaction date is the 16th or later it will use the 1st of the next month as the start date. 
+     - **Beginning of current month** uses the first of the current month as the start date. 
+     - **Beginning of next month** uses the first of the following month as the start date. If the transaction date is the first, then the first of the current month is used. 
+     - Select **Rule of 15** to use the first of the current month if the transaction date is between the 1st-15th of the month; if the transaction date is the 16th or later it will use the first of the next month as the start date. 
     d. Select **Yes** to **Include discount in calculation** to include the discount amount in the support or renewal amount. Select **No** to exclude the discount amount.
     e. Select the **Support frequency** and **Renewal frequency** that will be used when the support and renewal items are added to a billing schedule. Choose from **Daily**, **Monthly**, **Quarterly**, **Semiannually** or **Annually**. 
     f. Select **Yes** to **Align by item group** to align the start and end dates of additional items to existing items based on the item group. 
-    g. Select **Yes** to **Align to next unbilled period** to determine the alignment date for a renewal item by the date of the next untilled period after the renewal starts. 
+    g. Select **Yes** to **Align to next unbilled period** to determine the alignment date for a renewal item by the date of the next unbilled period after the renewal starts. 
     h. Select **Yes** to **Copy serial number** to copy the item serial number from the initial sales order line to the corresponding billing schedule line.  
 12. When using **Escalation** on the billing schedule, select the method used for the **Consumer price index calculation**.  
 13. Select **Yes** to **Track price change** if you want a record of a billing schedule line price change. If a billing schedule line is manually changed from standard to flat and a new price entered, audit information is tracked on the billing schedule line. Select **No** to not track these changes. 
@@ -78,7 +78,7 @@ Setup the default values in the **General** tab.
 15. If you use the **Unbilled revenue feature**, specify which options to use. 
     a. Select **Yes** for **Post general journal automatically** if you want the general journal to be created and posted at the same time. Select **No** to create the general journal and then manually post it. 
     b. Select a **Default journal name** to use when creating the general journal. 
-    c. Select a **Short-term unbilled method** if using one. If **None** is selected then the short-term functionality is not used with unbilled revenue. Select **Rolling periods** to always use 12 months. Select **Fixed year** to use the remaining fiscal year.
+    c. Select a **Short-term unbilled method** if using one. If **None** is selected, then the short-term functionality will not be used with unbilled revenue. Select **Rolling periods** to always use 12 months. Select **Fixed year** to use the remaining fiscal year.
  16. Specify the **Termination** options to use for terminating a billing schedule and its lines. 
      a. Select **Issue credit** to create a credit note when a billing schedule or billing schedule line is terminated. 
      b. Select **Credit adjustment** to create a credit adjustment for a billing schedule when a line is terminated. The credit adjustment appears in a future billing period for the billing schedule and automatically adjusts the invoice amount for the next billing period until the credit is finished being applied to the billing schedule. 
@@ -90,7 +90,7 @@ Use this tab to set the default value for billing schedule numbers. The default 
 
 ## Billing schedule group
 
-Use the **Billing schedule group** page to create a billing schedule group for Recurring contract billing. The billing schedule group settings default when creating a new billing schedule. When a billing schedule group is applied to newly created billing schedules, the default values of the group are automatically applied to the billing schedule. If needed, you can change any of the default options for the specific billing schedule that you create. Muliple billing schedule groups can be setup but you can assign a default billing schedule group in **Recurring contract billing parameters**.
+Use the **Billing schedule group** page to create a billing schedule group for Recurring contract billing. The billing schedule group settings default when creating a new billing schedule. When a billing schedule group is applied to newly created billing schedules, the default values of the group are automatically applied to the billing schedule. You can change any of the default options for the specific billing schedule that you create. Multiple billing schedule groups can be set up but you can assign a default billing schedule group in **Recurring contract billing parameters**.
  
  * Select **New** to create a billing schedule group. 
  * Enter a unique **Billing schedule group** identifier and **Description**. 
@@ -106,7 +106,7 @@ Select the default **Pricing method** for items on the billing schedule:
 In the **Item type** field, select a value for the billing group: 
  - Select **Standard** for use with static quantity. 
  - Select **Usage** for metered or consumption type items. 
- - Select **Milestone** to use the Milestone billing functionality. If the **Item type** is **Usage**, set the **Usage reading option** to **Reading** to enter the value on a meter or device for a billing period. The consumed value is will be calculated based on the reading from the previous billing period and the current reading you entered. 
+ - Select **Milestone** to use the Milestone billing functionality. If the **Item type** is **Usage**, set the **Usage reading option** to **Reading** to enter the value on a meter or device for a billing period. The consumed value will be calculated based on the the previous billing period and the current reading you entered. 
  - Select **Consumption** to enter the value consumed for a billing period. If using Milestone **Item Type**, select the **Milestone template** if using one.
 
 Select whether to create separate invoices based on the customer: 
