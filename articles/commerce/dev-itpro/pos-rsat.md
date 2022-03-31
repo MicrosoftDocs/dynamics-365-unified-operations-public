@@ -314,7 +314,10 @@ In RSAT, select one or more test cases to modify, and then select **Edit**. An E
 
 In addition to a **Summary** tab, the Excel file includes a **Variables** tab that has the details of all the variables that were generated. POS automatically generates variables for all the input values that are entered during a recording session. You don't have to generate the variables separately. Each variable has a unique variable ID that you can pass, in order, to different test cases in a single instance of test execution. All the variables on the **Variables** tab appear in the order that they were entered in during the recording session.
 
-To pass variables or values between POS test cases, select the test cases in the RSAT tool and open the Variables.xlsx file by selecting the Excel icon in the tool. Copy the Variable ID (Column C) value and paste it in the Variable value field (Column D). For example, to pass the Receipt ID from **Test case 1 - variable.xlsx** to **Test case 2 - variable.xlsx**, copy the variable ID value from column C: c8cc0571-9a27-b3c5-0749-c26c3cca6afe. Paste the value in the Variable value column D in to the test case 2 - variable.xlsx file, in braces: **{{ c8cc0571-9a27-b3c5-0749-c26c3cca6afe}}**
+### Pass variables between test cases
+
+To pass variables or values between POS test cases or between POS and HQ test cases or vice versa, select the test cases in the RSAT tool and open the Variables.xlsx file by selecting the Excel icon in the tool. Copy the Variable ID (Column C) value and paste it in the Variable value field (Column D). For example, to pass the Receipt ID from **Test case 1 - variable.xlsx** to **Test case 2 - variable.xlsx**, copy the variable ID value from column C: c8cc0571-9a27-b3c5-0749-c26c3cca6afe. Paste the value in the Variable value column D in to the test case 2 - variable.xlsx file, in braces: **{{ c8cc0571-9a27-b3c5-0749-c26c3cca6afe}}** .The test cases must be sequenced in the correct order to pass the variable value, and all test cases must run in the same instance.
+
 
 ### Test case 1 – Variable.xlsx
 
