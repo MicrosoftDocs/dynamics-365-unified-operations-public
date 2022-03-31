@@ -42,35 +42,34 @@ To render the user interface (UI), Store Commerce uses the Chromium engine inste
 
 The Store Commerce app runs on Windows devices and can be downloaded from the [Shared asset library in Microsoft Lifecycle Services (LCS)](https://lcs.dynamics.com/V2/SharedAssetLibrary). On the **Shared asset library** page, select **Retail Self-service package** as the asset type, and then find the file that ends with "Store Commerce." Be sure to select the version for the Commerce release that you're using (for example, 10.0.25 or 10.0.26).
 
-### Store Commerce deployment topology
+### Store Commerce deployment options
 
 Store Commerce supports two types of deployment topology:
 
-- **Online** – Connected to Cloud Scale Unit (CSU).
-- **Offline** – Connected to locally deployed Commerce runtime (CRT) with no connectivity to Commerce headquarters.
+- **In-app** – All the components deployed locally, like Modern Point of Sale (MPOS) and it supports offline and local Hardware Station (HWS).
+- **Hybrid** – Store Commerce will render the Cloud POS deployed in CPOS and it supports local Hardware Station but offline is not supported in this option.
 
-### Online deployment
+There is no separate installers for Hybrid and In-app, the deployment options is decided based on the parameters passed during installation.
 
-Store Commerce is a shell that renders CPOS and connects to Headless Commerce and Commerce headquarters by using CSU in online mode. There are two options for rendering the application in Store Commerce online mode:
+![Store Commerce Deployment](../media/SC-Deployment.png)
 
-- **Remote app content** – Store Commerce app content is rendered from CPOS that is hosted in CSU.
-- **Local deployment** – Store Commerce app content is deployed locally in the Store Commerce app, like MPOS. This option is used by default.
+### In-app deployment
 
-#### Store Commerce app content rendered from CPOS hosted in CSU (Remote app content)
-
-For the remote app content option, Store Commerce downloads and renders the application content from CPOS that is hosted in CSU. To update Store Commerce, just update the CSU. Store Commerce automatically receives the update. Because the updates are centrally managed in CSU, they don't have to be managed at individual registers. The Store Commerce application shell still must be updated separately by using the installer. For more information about how to update the CSU, see [Apply updates and extensions to Commerce Scale Unit (cloud)](../../fin-ops-core/dev-itpro/deployment/update-retail-channel.md). 
-
-#### Store Commerce app content rendered from local deployment
-
-For the local deployment option, the application content is locally deployed in Store Commerce. Store Commerce then renders the application content from its local deployment. It doesn't connect to CPOS that is hosted in CSU to get the application content.
+For the In-app deployment option, the application content is locally deployed in Store Commerce, like MPOS. Store Commerce then renders the application content from its local deployment. It doesn't connect to CPOS that is hosted in CSU to get the application content.
 
 To update the application content, run the latest version of the Store Commerce installer. The application content won't be updated if you update the CSU. Therefore, you can manage the updates at individual registers.
 
-During the installation of Store Commerce, users can pass parameters to select either the remote app content option or the local deployment option. By default, Store Commerce uses local deployment.
+**In-app mode supports offline**, during installation, pass the **--installoffline** parameter to deploy the offline database. During offline (when there is no connectivity, the application won't be able to connect to CSU or Commerce headquarters) the app will use the locally deployed CRT.
 
-### Offline deployment
+**During the installation of Store Commerce, users can pass parameters to select either the Hybrid option or In-app option. The default option is In-app deployment.**
 
-For offline deployment, pass the **--installoffline** parameter during Store Commerce installation to deploy the offline database. During offline deployment, the application won't be able to connect to CSU or Commerce headquarters. Instead, it will use the locally deployed CRT.
+### Hybrid
+
+Store Commerce is a shell that renders CPOS and connects to Headless Commerce and Commerce headquarters by using CSU in online mode. In the hybrid mode Store Commerce app content is rendered from CPOS that is hosted in CSU, during the app launch the Store Commerce app will ask for the CPOS URL.
+
+![Store Commerce Deployment](../media/SC-Hybrid.png)
+
+To update Store Commerce, just update the CSU. Store Commerce automatically receives the update. Because the updates are centrally managed in CSU, they don't have to be managed at individual registers. The Store Commerce application shell still must be updated separately by using the installer. For more information about how to update the CSU, see [Apply updates and extensions to Commerce Scale Unit (cloud)](../../fin-ops-core/dev-itpro/deployment/update-retail-channel.md). 
 
 ## Store Commerce and MPOS parity
 
