@@ -4,7 +4,7 @@
 title: Set up and deploy on-premises environments (Platform update 41 and later)
 description: This topic explains how to plan, set up, and deploy Microsoft Dynamics 365 Finance + Operations (on-premises) with Platform update 41 and later.
 author: faix
-ms.date: 01/27/2022
+ms.date: 03/31/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -383,7 +383,7 @@ Microsoft has provided several scripts to help improve the setup experience. Fol
 7. Unzip the files into a folder that is named **infrastructure**.
 
 > [!IMPORTANT]
-> It is important to place the **infrastructure** folder in a fileshare as that will allow execution of the scripts on any machine without having to copy the folder to each machine. 
+> It is important to place the **Infrastructure** folder in a fileshare as that will allow execution of the scripts on any machine without having to copy the folder to each machine. 
 > Make sure that all edits are made to the ConfigTemplate.xml file in this folder.
 
 ### <a name="describeconfig"></a>Step 7. Describe your configuration
@@ -427,7 +427,7 @@ For each database, the infrastructure\\D365FO-OP\\DatabaseTopologyDefinition.xml
 
 #### Create gMSA and domain user accounts
 
-1. Open Windows PowerShell in elevated mode, change the directory to the **infrastructure** folder located in your fileshare, and run the following commands.
+1. Open Windows PowerShell in elevated mode, change the directory to the **Infrastructure** folder located in your fileshare, and run the following commands.
 
     > [!IMPORTANT]
     > These commands don't create an AxServiceUser domain user for you. You must create it yourself.
@@ -436,7 +436,7 @@ For each database, the infrastructure\\D365FO-OP\\DatabaseTopologyDefinition.xml
     .\Create-GMSAAccounts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-1. If you must make changes to accounts or machines, update the **ConfigTemplate.xml** file in the **infrastructure** folder in your fileshare, and then run the following command.
+1. If you must make changes to accounts or machines, update the **ConfigTemplate.xml** file in the **Infrastructure** folder in your fileshare, and then run the following command.
 
     ```powershell
     .\Create-GMSAAccounts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Update
@@ -502,12 +502,12 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
     > Make sure that Always-On is set up as described in [Select Initial Data Synchronization Page (Always On Availability Group Wizards)](/sql/database-engine/availability-groups/windows/select-initial-data-synchronization-page-always-on-availability-group-wizards), and follow the instructions in [To Prepare Secondary Databases Manually](/sql/database-engine/availability-groups/windows/select-initial-data-synchronization-page-always-on-availability-group-wizards#PrepareSecondaryDbs).
 
 2. Run the SQL service as either a domain user or a gMSA.
-3. Fill in the SQL cluster configuration in the **ConfigTemplate.xml**. If creating a SQL cluster, specify the name of each machine along with the listener name of your availability group. If you are not creating a cluster and instead are creating a single instance only fill out the name of the machine and leave the listener name blank. If you do not want the scripts to generate a certificate for your SQL cluster/instance, set the disabled property to **true** for the certificate of type **SQLCert**.
+3. Fill in the SQL cluster configuration in the **ConfigTemplate.xml** file. If creating a SQL cluster, specify the name of each machine along with the listener name of your availability group. If you are not creating a cluster, and instead are creating a single instance, only fill out the name of the machine and leave the listener name blank. If you do not want the scripts to generate a certificate for your SQL cluster/instance, set the disabled property to **true** for the certificate of type **SQLCert**.
 
 ### <a name="configurecert"></a>Step 10. Configure certificates
 
-1. Go to a machine that has Remote Server Administration Tools (RSAT) installed or to your domain controller.
-1. Open up powershell and navigate to the fileshare containing your **infrastructure** folder.  
+1. Go to a machine that has Remote Server Administration Tools installed or to your domain controller.
+1. Open up PowerShell and navigate to the fileshare containing your **Infrastructure** folder.  
 1. Generate certificates:
 
     1. If you must generate certificates, run the following commands. These commands create the certificate templates in AD CS, generate the certificates from the templates, put the certificates in the **LocalMachine\\My** certificate store on the machine, and update the thumbprints in the XML file.
@@ -564,7 +564,7 @@ You can configure more than one SSRS node. For more information, see [Configurin
 
 1. For each BI node, follow these steps:
 
-    1. Open Windows PowerShell in elevated mode, and navigate to the **infrastructure** folder in your fileshare.
+    1. Open Windows PowerShell in elevated mode, and navigate to the **Infrastructure** folder in your fileshare.
     1. Run the following commands.
 
         ```powershell
@@ -590,14 +590,14 @@ You can configure more than one SSRS node. For more information, see [Configurin
 
 ### <a name="setupvms"></a>Step 13. Set up VMs
 
-1.  Open Windows PowerShell in elevated mode, and navigate to the **infrastructure** folder in your fileshare.
+1.  Open Windows PowerShell in elevated mode, and navigate to the **Infrastructure** folder in your fileshare.
 
     ```powershell
     # Exports the script files to be executed on each VM into a directory VMs\<VMName>.
     .\Export-Scripts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-2. Download the following Microsoft Windows Installers (MSIs) into a file share that is accessible by all VMs. For example, the same file share where you placed your **infrastructure** folder.
+2. Download the following Microsoft Windows Installers (MSIs) into a file share that is accessible by all VMs. For example, the same file share where you placed your **Infrastructure** folder.
 
     | Component | Download link | Expected file name |
     |-----------|---------------|--------------------|
@@ -747,6 +747,7 @@ Get an SSL certificate from a CA to configure SQL Server for Finance + Operation
 **Deploying certificate for an Always-On SQL availability group or instance**
 
 This script automates the steps described in the manual process below.
+
 ```powershell
 # If Remoting, execute
 #.\New-SelfSigned-SQLCert-AllVMs.ps1 -SqlMachineNames SQL1,SQL2 -SqlListenerName SQL-LS -ProtectTo CONTOSO\dynuser -ConfigurationFilePath .\ConfigTemplate.xml
@@ -765,7 +766,7 @@ This script automates the steps described in the manual process below.
 
 **Manual AD CS steps for an Always-On SQL availability group or Windows Server Failover Clustering with SQL Server** 
 
-1. Run the following Windows PowerShell command on a machine that has Remote Server Administration Tools (RSAT) installed:
+1. Run the following Windows PowerShell command on a machine that has Remote Server Administration Tools installed:
 
     ```powershell
     #If you need to create self-signed certs
