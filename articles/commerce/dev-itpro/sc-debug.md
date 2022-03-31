@@ -16,7 +16,11 @@ ms.dyn365.ops.version: AX 10.0.25
 
 [!include [banner](../includes/banner.md)]
 
-This document explains how to debug the Store Commerce extensions using VSCode. Follow the steps documented below to debug Store Commerce Extensions:
+This document explains how to debug the Store Commerce app extension code using VSCode. Follow the steps documented below to debug Store Commerce Extensions:
+
+> [!NOTE]
+> To debug offline Commerce runtime (CRT)/Hardware station (HWS) code in Store Commerce you need to use Visual Studio 2019 or later, VS Code only supports debugging 64-bit .NET Framework apps. Launch the Store Commence app and then open the CRT or HWS code in Visual studio and then from the  menu choose Debug > Attach to Process and select Microsoft.Dynamics.Commerce.StoreCommerce.exe. 
+
 1.	Install [Visual Studio Code](https://code.visualstudio.com/)
 2.	Launch the Visual Studio Code and install the [Microsoft Edge Tools for VS Code - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools)
 
