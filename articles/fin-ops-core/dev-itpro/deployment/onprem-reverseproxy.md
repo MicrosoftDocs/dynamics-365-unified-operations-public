@@ -45,9 +45,9 @@ Perform the following steps in **each** node of type **OrchestratorType** in the
 
 	```xml
 	<system.net>
-		<defaultProxy enabled="true" >
-			<proxy <<<SET YOUR PROXY SETTINGS>> />
-	   	</defaultProxy>
+		<defaultProxy>
+            <proxy usesystemdefault="true" proxyaddress="http://<PROXYADDRESS>:<PROXYPORT>" bypassonlocal="true" />
+        </defaultProxy>
     </system.net>
 	```
 
