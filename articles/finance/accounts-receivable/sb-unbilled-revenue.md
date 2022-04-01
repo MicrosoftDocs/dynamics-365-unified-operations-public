@@ -52,7 +52,7 @@ To set up items and the default unbilled revenue accounts, follow these steps:
 1. Select the **Accounts** tab. 
 2. Select **Add**.
 3. For the line, select the **Item code** and the **Item relation**. 
-4. Select the accounts for the unbilled revenue, unbilled discount, unbilled revenue offset. To use the short-term accounts set **Short-term unbilled method** to **Rolling periods** or **Fixed year** on the **Recurring contract billing parameters** page.  
+4. Select the accounts for the unbilled revenue, unbilled discount, unbilled revenue offset. To use the short-term accounts, set **Short-term unbilled method** to **Rolling periods** or **Fixed year** on the **Recurring contract billing parameters** page.  
 5. Repeat these steps to add more lines. 
 6. Select **Save**.
 
@@ -88,7 +88,7 @@ To use the unbilled revenue feature with straight line deferral schedules, follo
 5. For the billing schedule, select **Create journal entry** under **Unbilled revenue processing** or use the **Unbilled revenue mass processing** page to create the journal entry.
 6. The deferral schedule is created. You can review the details on the **All deferral schedules** page. After the deferral schedule is created, you can edit various values for the billing schedule line item. For example, unit price, quantity, or dates. 
 
-### Unbilled Revenue with Event Based Deferrals
+### Unbilled Revenue with event based deferrals
 
 To use the unbilled revenue feature with event based deferral schedules, follow these steps:
 1. On the **All billing schedules** page, create a billing schedule as usual.
@@ -134,7 +134,7 @@ Assume the following:
  - The sales price of the maintenance fee is $90, and the customer will be invoiced $30 on January 1, for each of the upcoming years. The $90 maintenance fee will be deferred with $2.50 being recognized each month over the life of the contract. 
  - The customer will be invoiced $130 at the beginning (January 1) of each of the three years of the contract.
 
-1. Assuming the two items already exist as released products, your first step is to set up the two items as unbilled items. Use the **Unbilled revenue setup** to set up the items that use the unbilled revenue feature by default and the accounts that are used when the items are added to the billing schedule.  
+1. Assuming the two items already exist as released products, the first step is to set up the two items as unbilled items. Use the **Unbilled revenue setup** to set up the items that use the unbilled revenue feature by default and the accounts that are used when the items are added to the billing schedule.  
 2. In the example, the maintenance fee is deferred. The item requires a deferral template, which is set up on the **Deferral templates** page. The template needs a **Monthly** period frequency and a recognition period length of 36 months. As a result, the revenue per month will be 2.50. 
 3. Set the **Maintenance fee** as a **Deferrable item** in **Items deferred by default** page. This step and the next step for **Deferral defaults** will cause the **Maintenance fee** item to be deferred by default when it is sold or included on a billing schedule.
 4. In the **Deferral defaults**, **Template** option, add the item for the maintenance fee and the straight-line template from step two. The maintenance fee item will be linked to a 36-month deferral schedule.
@@ -170,10 +170,10 @@ The first journal entry is posted to unbilled revenue offset account and the sec
 |:-----|:-----|-----:|-----:|
 |Deferred maintenance revenue account| &nbsp; |30.00| &nbsp; |
 | |Unbilled revenue account| |30.00|
-|Accounts reveivable| &nbsp; |30.00| &nbsp; |
+|Accounts receivable| &nbsp; |30.00| &nbsp; |
 | |Deferred maintenance revenue account| |30.00|
 
-This same journal entry will be created by invoices posted at the beginning of the next two years. The deferred revenue account nets to zero on this example because there is no rounding or exchange rate differences. The deferred revenue needs to be reversed out exactly as it was credited during the **Create journal entry** process. Since revenue is still deferred and will be recognized later, the credit to the deferred revenue account happens again. 
+This same journal entry will be created by invoices posted at the beginning of the next two years. The deferred revenue account nets to zero in this example because there is no rounding or exchange rate differences. The deferred revenue needs to be reversed out exactly as it was credited during the **Create journal entry** process. Since revenue is still deferred and will be recognized later, the credit to the deferred revenue account happens again. 
 
 In the last step, the recognition journal entry is created each month to recognize the deferred maintenance fee revenue. The journal entry can be created using the **Recognition processing** page or the **Recognize** for the lines on the **Deferral schedule** pages.
 
