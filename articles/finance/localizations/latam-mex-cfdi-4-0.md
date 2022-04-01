@@ -41,7 +41,7 @@ In the case of temporary export, you can set **Temporary export** option to **Ye
 
 If Withholding type (Purchase order line details) is equal to **28** then two new fields (Bimonthly profit amount, ISR corresponding amount) are appeared in CFDI withholding journal details. A user should fill in these two fields and corresponding attributes are populated in the xml file.
 
-Details of CFDI setting and how to work with CFDI documents you can find under the following links:
+You can find details of CFDI setting and how to work with CFDI documents under the following links:
 
 -	[CFDI layout version 3.3](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/latam-mex-cfdi-3-3)
 -	[E-invoicing CFDI[(https://docs.microsoft.com/en-us/dynamics365/finance/localizations/tasks/mx-00010-e-invoicing-cfdi)
