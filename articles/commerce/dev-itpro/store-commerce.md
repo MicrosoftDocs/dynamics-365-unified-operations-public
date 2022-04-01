@@ -182,9 +182,26 @@ To activate Store Commerce after installation, follow these steps.
 
 ### Troubleshooting setup issues
 
+#### Not able to activate the app
+
+After entering the valid CPOS URL, if you get connectivity error like, **_A connectivity error has occurred, and your device can't connect to the Cloud POS. The Cloud POS URL typed may have some issues, check for typo errors or whether Cloud POS can't be reached because it is offline_**
+
+Check whether the CSU version is greater than 10.0.25 (9.35.*.*) because to use Store Commerce the CPOS version must be minimum 10.0.25
+
+#### Installation issues
+
+During installation if you get error saying: **_A version (9.*.*.*) of this product (Modern POS) has been previously installed through the legacy installer_**
+ 
+In this case uninstall the MPOS and try again, you must remove the MPOS app for all the users in the machine. You can confirm whether MPOS is removed for all the users by running the below PowerShell command:
+
+```
+Get-AppxPackage | Where-Object {$_.PackageFullName -like "*retail.pos*"} | Remove-AppxPackage -Allusers
+```
+#### Not able to activate the app
+
 #### Reset the app
 
-If the CPOS URL that you entered isn't valid and you want to change it, or if the app is in an error state during activation, you can restart the process by resetting the app.
+If the CPOS URL that you entered isn't valid and you want to change it, or if the app is in an error state during activation, you can restart the process by resetting the app. Note: Store Commerce app will save only the valid CPOS URL.
 
 1. On the Windows **Start** menu, select and hold (or right-click) the app, and then select **More \> App settings**.
 2. Scroll down the app settings page until you find the **Reset** button.
