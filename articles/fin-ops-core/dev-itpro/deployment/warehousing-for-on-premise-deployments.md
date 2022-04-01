@@ -92,7 +92,7 @@ To enable Finance + Operations to use your AD FS application, you must create a 
 
 ## Certificates 
 
-Make sure that the devices with the app installed have the correct certificates to access the resources. If you are using self-signed certificates, these will need to be installed on each device by importing star(AX) and AD FS to the trusted route of the computer account/user account. For more information, see [Create and export a self-signed
+Make sure that the devices with the app installed have the correct certificates to access the resources. If you are using self-signed certificates, these will need to be installed on each device by importing star(AX) and AD FS to the trusted root of the computer account/user account. For more information, see [Create and export a self-signed
 certificate](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ff710475(v=ws.10)).
 
 > [!IMPORTANT]
