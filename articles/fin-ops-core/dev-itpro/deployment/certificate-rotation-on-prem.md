@@ -4,7 +4,7 @@
 title: Certificate rotation
 description: This topic explains how to place existing certificates and update the references within the environment to use the new certificates.
 author: PeterRFriis
-ms.date: 03/23/2022
+ms.date: 03/31/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -47,7 +47,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 
 2. Download the latest setup scripts from [Download setup scripts from LCS](setup-deploy-on-premises-pu41.md#downloadscripts). Unzip the files into a fileshare accessible by all machines in the cluster. Name the folder **Infrastructure**.
 
-3. Compare the schema version of the **ConfigTemplate.xml** from **InfrastructureOld** with the schema version of the **ConfigTemplate.xml** in the **Infrastructure**. If the schema versions are different, migrate the contents of the **ConfigTemplate.xml** from **InfrastructureOld** into the **ConfigTemplate.xml** from **Infrastructure** by comparing the two files.
+3. Compare the schema version of the **ConfigTemplate.xml** from **InfrastructureOld** with the schema version of the **ConfigTemplate.xml** in the **Infrastructure** folder. If the schema versions are different, migrate the contents of the **ConfigTemplate.xml** from **InfrastructureOld** into the **ConfigTemplate.xml** from **Infrastructure** by comparing the two files.
 
 4. Configure certificates as needed in **ConfigTemplate.xml**. Follow the steps in [Configure certificates](setup-deploy-on-premises-pu41.md#configurecert), specifically these steps.
 
@@ -242,8 +242,8 @@ Continue this process following the steps in [Troubleshoot on-premises deploymen
 
 You must reinstall the LocalAgent if:
 
-- You changed the service fabric cluster/server certificate.
-- You changed the service fabric client certificate.
+- You changed the Service Fabric cluster/server certificate.
+- You changed the Service Fabric client certificate.
 - You changed the LocalAgent certificate.
 
 1. Update your current localagent-config.json by replacing the **serverCertThumbprint** and **clientCertThumbprint** values with the new thumbprints.
