@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up advanced bank reconciliation import for BAI2 statements
+title: Set up advanced bank reconciliation import by using Electronic reporting
 description: This topic explains how to use Electronic reporting to set up the advanced bank reconciliation import process for BAI2 statements.
 author: panolte
 ms.date: 03/30/2022
@@ -26,7 +26,7 @@ ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.25
 
 ---
-# Set up advanced bank reconciliation import for BAI2 statements
+# Set up advanced bank reconciliation import by using Electronic reporting
 
 [!include [banner](../includes/banner.md)]
 
