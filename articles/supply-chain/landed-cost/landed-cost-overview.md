@@ -44,7 +44,7 @@ Landed cost provides accurate and timely cost estimates for overhead landed cost
 
 ### Voyages
 
-In Landed cost, a voyage is a distinct movement from an outbound location, through a specific set of destinations over a specified period, to a specified inbound warehouse location. Purchase orders and order lines can be added to either a single container or multiple containers for a voyage, and the costs will be correctly allocated back to the item line. Orders and order lines can also be added across legal entities for a single voyage.
+In Landed cost, a voyage is a distinct movement from an outbound location, through a specific set of destinations over a specified period, to a specified inbound warehouse location. Purchase orders and order lines can be added to either a single container or multiple containers for a voyage, and the costs will be correctly allocated back to the item line. 
 
 ### Item ownership
 
