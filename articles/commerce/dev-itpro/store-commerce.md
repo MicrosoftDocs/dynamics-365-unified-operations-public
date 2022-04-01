@@ -195,7 +195,7 @@ During installation if you get error saying: **_A version (9.*.*.*) of this prod
 In this case uninstall the MPOS and try again, you must remove the MPOS app for all the users in the machine. You can confirm whether MPOS is removed for all the users by running the below PowerShell command:
 
 ```
-Get-AppxPackage | Where-Object {$_.PackageFullName -like "*retail.pos*"} | Remove-AppxPackage -Allusers
+Get-AppxPackage | Where-Object {$_.PackageFullName -like "Microsoft.Dynamics.*.Pos"} | Remove-AppxPackage -Allusers
 ```
 #### Not able to activate the app
 
