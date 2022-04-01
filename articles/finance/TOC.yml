@@ -3092,6 +3092,8 @@
           href: localizations/tasks/mx-00010-cancel-electronic-invoice.md
         - name: CFDI Version 3.3
           href: localizations/latam-mex-cfdi-3-3.md
+        - name: CFDI Version 4.0
+          href: localizations/latam-mex-cfdi-4-0.md       
         - name: Customer registration IDs and other information
           href: localizations/tasks/mx-00007-customer-registration-ids-other-information.md
         - name: DIOT declaration statement
