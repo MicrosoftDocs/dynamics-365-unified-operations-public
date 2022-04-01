@@ -4,7 +4,7 @@
 title: Troubleshoot business events
 description: This topic provides information about troubleshooting business events.
 author: Sunil-Garg
-ms.date: 04/17/2020
+ms.date: 04/01/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -46,7 +46,7 @@ This topic provides tips for troubleshooting issues that involve business events
 |**Error:** Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information|This error message on the error tab of active business events can typically be resolved by rebuilding the catalog.
 |Alert business events don't trigger|One of the reasons why an event is not triggering could be a potential issue with alerts email functionality. Try turning off the send email option in the alert to see if that resolves the issue.
 |Unable to send test event to endpoint. Exception message: The underlying connection was closed: Could not establish trust relationship for the SSL/TLS secure channel.|Make sure the middleware is using TLS 1.2
-| After configuring data events for the EcoResProductV2Entity, you receive an error when creating a new released product: "Cannot execute a data definition language command on Products V2 (EcoResProductV2Entity)." | This issue occurs when the Engineering Change Management configuration key is disabled on the environment. Virtual tables, and the associated data events, do not support entities that have temporary tables as backing tables for the entity. When a configuration key is disabled, all physical tables for that configuration key are replaced with temporary tables so the system doesn't need to be recompiled for schema changes. This results in a temporary table being included in the virtual table query, which causes the error message. <br /><br />To work around this in your environment, you can enable the Engineering Change Management configuration key or use another entity, such as the RetailEcoResProductEntity, that does not include backing tables linked to disabled configuration keys. |
+| After configuring data events for EcoResProductV2Entity, you receive an error when creating a new released product: "Cannot execute a data definition language command on Products V2 (EcoResProductV2Entity)." | This issue occurs when the Engineering Change Management configuration key is disabled on the environment. Virtual tables, and the associated data events, do not support entities that have temporary tables as backing tables for the entity. When a configuration key is disabled, all physical tables for that configuration key are replaced with temporary tables so the system doesn't need to be recompiled for schema changes. This results in a temporary table being included in the virtual table query, which causes the error message. <br><br>To work around this in your environment, you can enable the Engineering Change Management configuration key or use another entity, such as RetailEcoResProductEntity, which does not include backing tables linked to disabled configuration keys. |
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
