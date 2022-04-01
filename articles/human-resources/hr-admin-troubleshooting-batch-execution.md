@@ -3,7 +3,7 @@
 
 title: Reset stuck batch jobs
 description: This topic explains how to resolve issues with batch jobs that are stuck.
-author: andreabichsel
+author: twheeloc
 ms.date: 03/19/2021
 ms.topic: article
 ms.prod: 
@@ -20,7 +20,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2021-03-19
 ms.dyn365.ops.version: Platform update 42
 ---
