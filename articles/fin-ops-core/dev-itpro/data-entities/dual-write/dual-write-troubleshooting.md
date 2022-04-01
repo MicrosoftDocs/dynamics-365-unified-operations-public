@@ -65,6 +65,49 @@ Dual-write errors that originate in Dataverse can appear in the Finance and Oper
 6. Select **Applications and Services Logs \> Microsoft \> Dynamics \> AX-DualWriteSync \> Operational**.
 7. Review the list of recent errors.
 
+## Dual write UI landing page showing blank
+When opening the Dual-write page in Edge/Chrome, the home page doesn't load, and the user sees a blank page or an error such as "Something went wrong".
+In Devtools, you will see an error in the console logs:
+
+>bundle.eed39124e62c58ef34d2.js:37 DOMException: Failed to read the 'sessionStorage' property from 'Window': 
+>Access is denied for this document. at t.storeInSessionStorage 
+>(https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:16:136860 ) at new t
+>(https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:69:20103 ) at ci
+>(https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:44115 ) at Eo
+>(https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:58728 ) at jo
+>(https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:65191 ) at Nr
+>(https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:84692 ) at Or
+>(https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:85076 ) at Ss
+>(https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:91750 ) at vs
+>(https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:91130 ) at hs
+>(https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:90151 )
+
+The UI uses browser 'session storage' to store some property values for loading the home page. For this to work, 
+third-party cookies need to be allowed in the browser for the site. The error is indicative of the UI not 
+being able to access the session storage. There can be two scenarios in which this issue is encountered:
+
+1.	The user is opening the UI in incognito mode of Edge/Chrome and third-party cookies in incognito are blocked.
+2.	The user has blocked third-party cookies altogether in Edge/Chrome .
+
+### Mitigation
+Third-party cookies need to be allowed by the user in browser settings.
+
+### Chrome
+1st Option:
+1.	Go to settings - chrome://settings/ -> Privacy and Security -> Cookies and other site data.
+2.	Select 'Allow all cookies'. (If the user does not wish to do this, go for the second option)
+
+2nd Option:
+1.	Go to Chrome settings - chrome://settings/ -> Privacy and Security -> Cookies and other site data.
+2.	If 'Block third-party cookies in Incognito' or 'Block third-party cookies' is selected, go to 'Sites that can always use cookies’ and click Add. 
+3.	Add your Finance and Operations apps site name - https://<your_FinOp_instance>.cloudax.dynamics.com. Make sure you select the checkbox 
+4.	for "All cookies, on this site only". 
+
+### Edge
+1.	Go to settings -> Site permissions -> Cookies and site data.
+2.	Turn off 'Block third-party cookies'.  
+
+
 ## Unlink and link another Dataverse environment from a Finance and Operations app
 
 **Required role to unlink the environment:** System administrator for either Finance and Operations app or Dataverse.
