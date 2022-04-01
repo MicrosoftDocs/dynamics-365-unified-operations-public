@@ -44,8 +44,8 @@ If Withholding type (Purchase order line details) is equal to **28** then two ne
 You can find details of CFDI setting and how to work with CFDI documents under the following links:
 
 -	[CFDI layout version 3.3](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/latam-mex-cfdi-3-3)
--	[E-invoicing CFDI[(https://docs.microsoft.com/en-us/dynamics365/finance/localizations/tasks/mx-00010-e-invoicing-cfdi)
+-	[E-invoicing CFDI](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/tasks/mx-00010-e-invoicing-cfdi)
 -	[Electronic invoices (CFDI)](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/latam-mex-cfdi-electronic-invoices)
--	[Waybill (Carta de Porte) complement](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/latam-mex-carta-de-porte)  
+-	[Waybill (Carta de Porte) complement](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/latam-mex-carta-de-porte)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
