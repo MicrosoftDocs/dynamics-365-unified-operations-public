@@ -24,20 +24,36 @@ This topic provides general troubleshooting information for dual-write integrati
 
 ## <a id="enable-view-trace"></a>Enable and view the plug-in trace log in Dataverse to view error details
 
+Trace logs can be useful when troubleshooting dual write live sync issues between Finance & Operations and Dataverse. 
+They can provide specific details to the teams who provide technical and engineering support for Dynamics 365. 
+This article will cover how to enable trace logs, and how to view them. Trace logs are managed in the Dynamics 365 Settings 
+page and require administrator level privileges to change and view. 
+
 **Required role to turn on the trace log and view errors:** System admin
 
-To turn on the trace log, follow these steps.
+### To turn on the trace log, follow these steps.
 
-1. Sign in to the customer engagement app, open the **Settings** page, and then, under **System**, select **Administration**.
-2. On the **Administration** page, select **System Settings**.
-3. On the **Customization** tab, in the **Plug-in and custom workflow activity tracing** column, select **All** to enable the plug-in trace log. If you want to log trace logs only when exceptions occur, you can select **Exception** instead.
+1.	Log on to Dynamics 365 select Settings in the top navigation bar. On the Systems page, click Administration.
+2.	On the Administration page, click System Settings
+3.	Select the Customization tab and plug-in and in the custom work flow activity tracing section, change the dropdown to All. 
+This will trace all activities and provides a comprehensive set of data for the teams who must review potential issues.
+
+[!NOTE] Setting the dropdown to Exception will only provide trace information when exceptions (errors) occur
+
+Once enabled, the plug-in trace logs will continue to be collected until they are manually turned off by returning to this location and selecting Off.
+
+### To view the trace log, follow these steps.
+
+1. On the Dynamics 365 Settings page, select Settings in the top navigation bar 
+2. Select Plugin Trace Log in the Customizations section of the page
+3. You can find entries in the list of trace logs, based on Type Name and/or Message Name
+4. Open the desired entry to view the full log. The Message Block in the Execution section will provide available information for the plug-in. 
+If available, exception details will also be provided. 
+
+You can copy the contents of the trace logs and paste them into another application like Notepad or other tools to view logs or text files 
+to more easily see all the content. 
 
 
-To view the trace log, follow these steps.
-
-1. Sign in to the customer engagement app, open the **Settings** page, and then, under **Customization**, select **Plug-in Trace Log**.
-2. Find the trace logs where the **Type Name** column is set to **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**.
-3. Double-click an item to view the full log, and then, on the **Execution** FastTab, review the **Message Block** text.
 
 ## Enable debug mode to troubleshoot live synchronization issues in Finance and Operations apps
 
