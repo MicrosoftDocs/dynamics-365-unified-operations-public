@@ -283,6 +283,7 @@ You must also specify the following settings for France. Note that you must run 
 
 You must enable the following features in the **Feature management** workspace:
 
+- (France) Enable additional audit events in POS
 - (France) Enable exporting Z-Report to file
 
 ### Set up the legal entity
