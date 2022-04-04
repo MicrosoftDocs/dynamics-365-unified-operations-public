@@ -51,7 +51,7 @@ The **Revenue and expense deferral parameters** page contains the following fiel
 | Purchasing discount deferral option | <p>Select whether separate deferral schedules are created for the discount and purchase order amounts:</p><ul><li>**Separate schedule for discount** – The discount amount is kept separate from the expense amount.<p>In this case, two deferral schedules are created when a purchase order is created and then posted. The discount and expense amounts are posted to different deferral accounts.</p></li><li>**Merge discount with revenue** – The discount amount is combined with the expense amount. One deferral schedule is created, and both the discount amount and the expense amount are posted to the same deferral account.<p>In this case, one deferral schedule is created when a purchase order is created and then posted. Both the discount amount and the expense amount are posted to the same deferral account.</p></li></ul> |
 | Consolidate prior periods | <p>Specify whether deferral schedule lines for previous periods are consolidated:</p><ul><li>**Yes** – If the deferral start date is in a period before the transaction date, all amounts up through the period of the transaction date are combined onto a single deferral schedule line.</li><li>**No** – The amounts from all periods are kept on separate deferral schedule lines.<p>If the deferral start date is in the same period as or a later period than the transaction date, this option has no effect.</p></li></ul><p>This setting can be updated at the transaction level.</p> |
 | Default deferral start date | <p>Select the rule that is used to determine the start date of the deferral schedule:</p><ul><li>**Transaction date** – Use the transaction date as the start date.</li><li>**Beginning of current month** – Use the first of the current month as the start date. If the transaction date is the first of any month, the first of the current month is the start date.</li><li>**Beginning of next month** – Use the first of the next month as the start date. If the transaction date is on the first, the transaction date is used. Otherwise, the first of the next month is used.</li><li>**Rule of 15** – If the transaction date is between the first and the fifteenth, use the first of the current month as the start date. If the transaction date is the sixteenth or later, use the first of the next month as the start date.</li></ul><p>You can update this setting at the transaction level.</p> |
-| Short-term deferral method | <p>Select the short-term deferral method: **None**, **Rolling periods**, or **Fixed year**.</p><p>For information about how these settings work, see **Short-term deferral calculation**.</p> |
+| Short-term deferral method | <p>Select the short-term deferral method: **None**, **Rolling periods**, or **Fixed year**.</p><p>|
 | Deferral posting method | <p>Select the method that is used to create deferral transactions:</p><ul><li>**Balance sheet** – Use the balance sheet posting method to create deferral transactions.</li><li>**Profit and loss** – Use the profit and loss posting method to create deferral transactions. When transactions are posted, you can review the invoice voucher to see the extra entries that balance the initial recognition and recognition offset amounts.</li></ul> |
 | Reverse profit and loss on credit | <p>**Note:** This field is available only when the **Deferral posting method** field is set to **Profit and loss**.</p><p>Specify whether the profit and loss amounts are reversed when a reversal, termination, or refund is applied to a billing schedule or sales order:</p><ul><li>**Yes** – Reverse the profit and loss amounts, and apply a credit adjustment amount to the deferral schedule.<p>If the reversal occurs halfway through a billing period, the amounts are prorated.</p></li><li>**No** – No reversal transaction is created for the profit and loss when a reversal, termination, or refund is applied to a billing schedule or sales order.</li></ul> |
 | **Recognition** tab | |
@@ -124,7 +124,7 @@ To specify the deferral default values for sales orders, follow these steps.
 5. Specify how the account code is applied:
 
     * If the **Account code** field is set to **Table** or **Group**, select the account relation in the **Account relation** field.
-    * If the **Item code** field is set to **All**, the account applies to all records.
+    * If the **Account code** field is set to **All**, the account applies to all records.
 
 6. In the **Main account** field, select the main account for the deferral.
 7. If the **Deferral posting method** field is set to **Profit and loss**, select the initial revenue account in the **Initial revenue account** field and the revenue offset account in the **Revenue offset account** field.
@@ -140,7 +140,7 @@ To specify the deferral default values for sales orders, follow these steps.
 12. Specify how the account code is applied:
 
     * If the **Account code** field is set to **Table** or **Group**, select the account relation in the **Account relation** field.
-    * If the **Item code** field is set to **All**, the account applies to all applicable records.
+    * If the **Account code** field is set to **All**, the account applies to all applicable records.
     * Select the straight line template in the **Straight line template** field or the event-based template in the **Event based template** field.
 
 13. Select **Save**.
@@ -161,7 +161,7 @@ To specify the deferral default values for purchase orders, follow these steps.
 5. Specify how the account code is applied:
 
     * If the **Account code** field is set to **Table** or **Group**, select the account relation in the **Account relation** field.
-    * If the **Item code** field is set to **All**, the account applies to all applicable records.
+    * If the **Account code** field is set to **All**, the account applies to all applicable records.
 
 6. In the **Main account** field, select the main account for the deferral.
 7. If the **Deferral posting method** field is set to **Profit and loss**, select the initial revenue account in the **Initial revenue account** field and the revenue offset account in the **Revenue offset account** field.
@@ -177,7 +177,7 @@ To specify the deferral default values for purchase orders, follow these steps.
 12. Specify how the account code is applied:
 
     * If the **Account code** field is set to **Table** or **Group**, select the account relation in the **Account relation**.
-    * If the **Item code** field is set to **All**, the account applies to all applicable records.
+    * If the **Account code** field is set to **All**, the account applies to all applicable records.
     * Select the straight line template in the **Straight line template** field or the event-based template in the **Event based template** field.
 
 13. Select **Save**.
@@ -204,7 +204,7 @@ To specify the deferral default values for free text invoices, follow these step
 3. Specify how the account code is applied:
 
     * If the **Account code** field is set to **Table** or **Group**, select the account relation in the **Account relation** field.
-    * If the **Item code** field is set to **All**, the account code applies to all applicable records.
+    * If the **Account code** field is set to **All**, the account code applies to all applicable records.
 
 4. In the **Deferral account** field, select the deferral account.
 5. If the **Short-term deferral method** field is set to **Rolling periods** or **Fixed year**, select the short-term deferral account in the **Short-term deferral account** field.
@@ -222,7 +222,7 @@ To specify the deferral default values for invoice journal entries, follow these
 3. Specify how the account code is applied:
 
     * If the **Account code** field is set to **Table** or **Group**, select the account relation in the **Account relation** field.
-    * If the **Item code** field is set to **All**, the account code applies to all applicable records.
+    * If the **Account code** field is set to **All**, the account code applies to all applicable records.
 
 4. In the **Deferral account** field, select the deferral account.
 5. If the **Short-term deferral method** field is set to **Rolling periods** or **Fixed year**, select the short-term deferral account in the **Short-term deferral account** field.
