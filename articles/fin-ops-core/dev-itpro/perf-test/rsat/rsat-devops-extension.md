@@ -43,9 +43,9 @@ When you configure the Azure DevOps agent, follow these guidelines:
 
     2. Select **Services (Local)**, and then find the agent service. The name of the service will resemble one of these formats:
 
-        - Azure Pipelines Agent (name of your agent)
-        - VSTS Agent (name of your agent)
-        - vstsagent.(organization name).(name of your agent)
+        - Azure Pipelines Agent \<name of your agent\>
+        - VSTS Agent \<name of your agent\>
+        - vstsagent.\<organization name\>.\<name of your agent\>
 
     3. Select and hold (or right-click) the agent service, and then select **Properties**.
     4. On the **Identity** tab, select the **This user** option, and then specify the local administrator user that your Azure DevOps agent will run as. Use the format *domain\\username*. Then enter and confirm the password.
@@ -211,6 +211,6 @@ Here are some examples:
 
 ### Run the console app with a specific settings file
 
-By default, the console app uses the from the last settings file, where via the RSAT user interface of command line. To specify a different settings file, use the `settings` parameter, as shown in the following example.
+By default, the console app uses settings configured by the user account via the RSAT with user interface. To specify a different settings file, use the `settings` parameter, as shown in the following example.
 
 `.\Microsoft.Dynamics.RegressionSuite.ConsoleApp.exe /settings "C:\Users\rob\Documents\RSAT\SettingFiles\Canaryenv.settings" playbacksuite "Acceptance Test Suite 1"`
