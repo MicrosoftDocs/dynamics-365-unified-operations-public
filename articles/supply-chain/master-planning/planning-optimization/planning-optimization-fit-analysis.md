@@ -3,7 +3,7 @@
 
 title: Planning Optimization fit analysis
 description: This topic explains how to verify your current setup and data against the capabilities of the Planning Optimization functionality. 
-author: ChristianRytt
+author: t-benebo
 ms.date: 07/07/2021
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
 
@@ -87,7 +87,7 @@ The following table shows the various results that can be shown after a fit anal
 | Production | BOM/formula lines with resource consumption: _\#_ | This feature is pending. Currently, BOM and formula lines that have resource consumption are ignored when Planning Optimization is enabled. When this feature is supported, the material requirement will be set to the production start date. Until this feature is supported, requirements will not be generated for materials that are marked with a resource consumption flag. | October 2022 |
 | Production | BOM/formula lines with step consumption: _\#_ | This feature is pending. Currently, step consumption is ignored on BOM and formula lines when Planning Optimization is enabled. | October 2022 |
 | Production | BOMs with constant scrap or variable scrap defined: _\#_ | This feature is pending. Currently, constant scrap and variable scrap that are defined on BOMs are ignored when Planning Optimization is enabled. | October 2022 |
-| Production | BOMs with subcontracting: _\#_ | This feature is pending. Currently, the subcontracting setup on BOMs is ignored when Planning Optimization is enabled, regardless of this setting. | April 2022 |
+| Production | BOMs with subcontracting: _\#_ | This feature is now supported. | Supported |
 | Production | BOMs without a site: _\#_ | This feature is now supported. For additional information, see [Production planning](production-planning.md) | Supported |
 | Production | Demand with specific BOM or route requirements defined: _\#_ | This feature is pending. Currently, the specific BOM or route requirements that are defined on the demand (such as a sub-BOM or sub-route on a sales order) are ignored when Planning Optimization is enabled. The standard BOM or route will be used, regardless of this setting. | October 2022 |
 | Production | Formula versions with Co/By products: _\#_ | This feature is pending. Currently, co-products and by-products that are associated with the formula version are ignored when Planning Optimization is enabled. | October 2022 |

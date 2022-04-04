@@ -44,7 +44,7 @@ ms.dyn365.ops.version: 7.3
 
 The **Financial analysis** workspace is focused on letting you view and filter the data on existing reports. You are able to add new visuals to the **Financial analysis** workspace. The **Financial analysis** workspace is available for current company as well as all companies to show data for all legal entities, regardless of the legal entities that the role has access to.
 
-- [Add or edit Power BI visualizations on your dashboard](/powerapps-docs/user/add-powerbi-dashboards.md)
+- [Add or edit Power BI visualizations on your dashboard](/powerapps/user/add-powerbi-dashboards)
 
 ## Dynamics 365 Finance setup
 **General ledger**

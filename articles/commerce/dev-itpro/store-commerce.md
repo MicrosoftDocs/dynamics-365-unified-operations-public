@@ -15,7 +15,6 @@ ms.dyn365.ops.version: AX 10.0.25
 # Store Commerce app
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This topic explains how to set up and configure the Microsoft Dynamics 365 Commerce Store Commerce app and applies to Microsoft Dynamics 365 Commerce version 10.0.25 and later.
 
@@ -203,5 +202,13 @@ Store Commerce can be extended so that it's integrated with hardware devices. Yo
 ## Known issues with the Microsoft Edge WebView2 control
 
 + During activation, when prompted for entering the AAD password with multiple options, choose password. The other options might not work.
+
+## Additional Resources
+[Modernizing the Dynamics 365 Commerce in-store technology stack](https://www.microsoft.com/download/details.aspx?id=103896)
+
+[Commerce SDK Tech Talk Series](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-series-commerce-extensions)
+
+[Store Commerce Extensions Overview](pos-extension/pos-extension-overview.md)
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

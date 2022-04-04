@@ -83,7 +83,7 @@ If you delete the Power Apps environment that your Human Resources environment i
 
 To restore the environment:
 
-1. Follow the instructions in [Recover the Power Apps environment](/power-platform/admin/recover-environment.md).
+1. Follow the instructions in [Recover the Power Apps environment](/power-platform/admin/recover-environment).
 
 2. Contact Support to restore the Human Resources environment. For more information, see [Get support](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).
 

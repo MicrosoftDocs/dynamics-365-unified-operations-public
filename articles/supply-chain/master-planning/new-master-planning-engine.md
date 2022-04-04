@@ -3,7 +3,7 @@
 
 title: Migration to Planning Optimization for master planning
 description: This topic provides information about the new master planning engine, Planning Optimization, and about migration from the existing engine. 
-author: ChristianRytt
+author: t-benebo
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 19311
 ms.assetid: 5ffb1486-2e08-4cdc-bd34-b47ae795ef0f
 ms.search.region: Global
 ms.search.industry: 
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2020-11-05
 ms.dyn365.ops.version: 
 

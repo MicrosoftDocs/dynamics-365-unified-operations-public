@@ -4,7 +4,7 @@
 title: Grid capabilities
 description: This topic describes several powerful features of the grid control. You must enable the new grid feature to have access to these capabilities. 
 author: jasongre
-ms.date: 03/03/2022
+ms.date: 03/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -155,7 +155,7 @@ Similar to Excel, users can automatically force a column to resize based on the 
 
 The **New grid control** feature is available directly in Feature management in any environment. After enabling the feature in Feature management, all subsequent user sessions will utilize the new grid control. 
 
-This feature is enabled by default starting in version 10.0.21 and is targeted to become mandatory with version 10.0.25. 
+This feature is enabled by default starting in version 10.0.21 and is targeted to become mandatory in October 2022.  
 
 ## [Developer] Opting out individual pages from using the new grid 
 If your organization discovers a page that has some issues utilizing the new grid, an API is available to allow an individual form to use the legacy grid control while still permitting the rest of the system to utilize the new grid control. To opt out an individual page from the new grid, add the following call post `super()` in the `run()` method for the form.

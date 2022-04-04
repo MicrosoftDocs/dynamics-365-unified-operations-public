@@ -79,7 +79,7 @@ To create a business action by using Microsoft Power Automate, follow these step
 2. Select **My flows**, and then select **New Flow**.
 3. Select **Automated Cloud flow**, and then select **When an action is performed (preview)**.
 
-    ![Creating an automated cloud flow.](/articles/fin-ops-core/dev-itpro/data-entities/media/NewAutomatedCloudFlow.png)
+    ![Creating an automated cloud flow.](./media/NewAutomatedCloudFlow.png)
 
 4. Select **Dynamics 365 Finance and Operations Export to Data Lake** as the catalog and **Data Export** as the category.
 5. Leave the **Table name** field set to **(none)**. This parameter isn't applicable to the Export to Data Lake service.
