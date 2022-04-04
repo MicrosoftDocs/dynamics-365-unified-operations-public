@@ -424,6 +424,8 @@
             href: accounts-receivable/terminate-billing-schedule.md
         - name: Revenue and expense deferrals
           items:
+          - name: Set up revenue and expense deferrals
+            href: accounts-receivable/sb-deferrals.md
         - name: Multi-element revenue allocation
           items:
       - name: Payments and settlements
