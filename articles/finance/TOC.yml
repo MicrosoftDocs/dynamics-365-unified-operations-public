@@ -412,8 +412,16 @@
         items:
         - name: Subscription billing overview
           href: accounts-receivable/subscription-billing-summary.md
-        - name: Set up billing schedules
-          href: accounts-receivable/sb-billing-schedules.md
+        - name: Recurring contract billing
+          items: 
+          - name: Create billing schedules
+            href: accounts-receivable/sb-billing-schedules.md
+          - name: Billing schedule features
+            href: accounts-receivable/sb-billing-features.md
+        - name: Revenue and expense deferrals
+          items:
+          - name: Set up revenue and expense deferrals
+            href: accounts-receivable/sb-deferrals.md
       - name: Payments and settlements
         items:
         - name: Customer payment overview
