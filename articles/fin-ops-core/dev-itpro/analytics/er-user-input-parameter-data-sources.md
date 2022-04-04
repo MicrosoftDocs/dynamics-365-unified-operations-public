@@ -43,10 +43,12 @@ Regardless of the USER INPUT PARAMETER type of the added data source, you must s
 
 For any data source of the USER INPUT PARAMETER type, the following properties can be specified:
 
--   In the **Label** field, specify the label that is used at runtime on the dialog box for the related data entry field.
+-   In the **Label** field, specify the label that is used at runtime on the dialog box for the related data entry field. Notice that you can add different label text for different language codes. For doing this, activate the **Label** field and select the **Translate** button.
 
-    > [!TIP]
-    > Notice that you must add this data source and open it for editing to see the **Translate** button that you can use to add [language specific labels](er-design-multilingual-reports.md#format-component).
+-   In the **Help** field, specify the help text that is shown at design time in the bottom of the **Format designer** page or the **Model mapping designer** page when the editable data source of the USER INPUT PARAMETER type is selected. This text may provide additional details about this data source for a user while he configures the editable format or model mapping component. Notice that you can add different help text for different language codes. For doing this, use the **Translate** button.
+
+    > [!NOTE]
+    > Notice that you must add this data source, save changes, and open it for editing again to see the **Translate** button that you can use to add [language specific labels](er-design-multilingual-reports.md#format-component).
 
 -   In the **Read only** field, configure an expression that returns the *[Boolean](er-formula-supported-data-types-primitive.md#boolean)* value.
     -   When the expression is configured and returns **True** value at runtime, the related data entry field is grayed out on the dialog box and user is not able to change its value.
