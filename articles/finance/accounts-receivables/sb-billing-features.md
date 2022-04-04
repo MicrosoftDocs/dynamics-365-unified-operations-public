@@ -68,7 +68,7 @@ The invoice quantity is 250, and the standard pricing method is used. Because th
 
 The net amount is calculated in the following way:
 
-*Net amount* = (*Quantity* &times; *Price*) &divide; *Price unit* = (250 &times; 1.00) &divide; 100 = 2.50
+*Net amount* = (*Quantity* &times; *Price*) &divide; *Price unit* = (250 &times; 1.00) &divide; 1 = 250
 
 **Example 2**
 
@@ -193,7 +193,7 @@ The annual amount of a billing schedule is $5,000. The start date is August 12, 
 
     - *Number of days* = *End date* – *Start date* + 1 = 133 days
     - *Number of days in the year* = August 11, 2020 – August 12, 2019 + 1 = 366 days
-    - *Prorated amount* = 5,000 &times; (133 &divide; 366) = 1816.84
+    - *Prorated amount* = 5,000 &times; (133 &divide; 366) = 1816.94
 
 - **Monthly**
 
