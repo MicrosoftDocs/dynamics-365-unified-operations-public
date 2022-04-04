@@ -92,7 +92,7 @@ In general, [soft reservations](inventory-visibility-reservations.md) on WHS ite
 
 In a known limitation, the *available for reservation* calculation isn't currently supported for WHS items. Therefore, if there is reservation above the current dimensions where a soft reservation is occurring, the *available for reservation* calculation is incorrect. Soft reservations won't be affected when the **ifCheckAvailForReserv** option is disabled in the [soft reservation API](inventory-visibility-api.md#create-one-reservation-event).
 
-This contraint also applies to features and customizations that are based on soft reservations (such as allocation).
+This constraint also applies to features and customizations that are based on soft reservations (such as allocation).
 
 ## Calculate available-to-promise quantities
 
