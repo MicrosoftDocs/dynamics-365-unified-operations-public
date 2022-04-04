@@ -60,12 +60,12 @@ Some data elements contain decimal numbers. For example, application identifiers
 
 Here are a few examples that show how the number *123456* will be interpreted by different application identifiers (shown in bold):
 
-- **`3100`**`123456` -\> 123456 (integer)
-- **`3101`**`123456` -\> 12345.6 (one decimal place)
-- **`3102`**`123456` -\> 1234.56 (two decimal places)
-- **`3103`**`123456` -\> 123.456 (three decimal places)
-- **`3104`**`123456` -\> 12.3456 (four decimal places)
-- **`3105`**`123456` -\> 1.23456 (five decimal places)
+- **`3100`**`123456` &rarr; 123456 (integer)
+- **`3101`**`123456` &rarr; 12345.6 (one decimal place)
+- **`3102`**`123456` &rarr; 1234.56 (two decimal places)
+- **`3103`**`123456` &rarr; 123.456 (three decimal places)
+- **`3104`**`123456` &rarr; 12.3456 (four decimal places)
+- **`3105`**`123456` &rarr; 1.23456 (five decimal places)
 
 ## Scanning GS1 bar codes in Supply Chain Management
 
