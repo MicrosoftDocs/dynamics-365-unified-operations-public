@@ -41,15 +41,35 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 >
 > Upgrade your Service Fabric cluster to 7.2.x or later before attempting certificate rotation.
 
-## Preparation steps 
+## Update your infrastructure scripts 
 
 1. Rename the original **Infrastructure** folder that you created during the process to [Download setup scripts from LCS](setup-deploy-on-premises-pu41.md#downloadscripts). Rename the folder to **InfrastructureOld**.
 
 2. Download the latest setup scripts from [Download setup scripts from LCS](setup-deploy-on-premises-pu41.md#downloadscripts). Unzip the files into a fileshare accessible by all machines in the cluster. Name the folder **Infrastructure**.
 
-3. Compare the schema version of the **ConfigTemplate.xml** from **InfrastructureOld** with the schema version of the **ConfigTemplate.xml** in the **Infrastructure** folder. If the schema versions are different, migrate the contents of the **ConfigTemplate.xml** from **InfrastructureOld** into the **ConfigTemplate.xml** from **Infrastructure** by comparing the two files.
+> [!NOTE]
+> Starting with version 2.14.0 each version of the scripts will have its own entry in the Shared Asset Library.
 
-4. Configure certificates as needed in **ConfigTemplate.xml**. Follow the steps in [Configure certificates](setup-deploy-on-premises-pu41.md#configurecert), specifically these steps.
+3. Compare the schema version of the **ConfigTemplate.xml** from **InfrastructureOld** with the schema version of the **ConfigTemplate.xml** in the **Infrastructure** folder.
+
+    - If the schema versions have not changed.
+
+        1. Copy the **ConfigTemplate.xml** from the **InfrastructureOld** folder and into the **Infrastructure** folder.
+
+    - If the schema versions have changed.
+        1. Copy the **ConfigTemplate.xml** from the **InfrastructureOld** folder and into the **Infrastructure** folder.
+        2. Run the following command:
+        ```powershell
+            .\Update-ConfigTemplate.ps1 -OldConfigTemplate .\ConfigTemplateOld.xml -NewConfigTemplate .\ConfigTemplate.xml
+        ```
+
+        > [!NOTE]
+        > Newer versions of the scripts (starting with version 2.14.0) that introduce changes to the schema of the configuration file will include logic that will migrate the configuration file to the new schema.
+        > The script currently does not have logic for updating from schemas lower than version 1.5. In that case manually migrate the old **ConfigTemplate.xml** by comparing it with the new **ConfigTemplate.xml**.
+
+## Preparation steps 
+
+1. Configure certificates as needed in **ConfigTemplate.xml**. Follow the steps in [Configure certificates](setup-deploy-on-premises-pu41.md#configurecert), specifically these steps.
 
     ```powershell
     # Only run the first command if you have not generated the templates yet.
@@ -78,7 +98,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
     .\Export-PfxFiles.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-5. Continue to [Setup VMs](setup-deploy-on-premises-pu41.md#setupvms). The specific steps that are needed for this process include:
+1. Continue to [Setup VMs](setup-deploy-on-premises-pu41.md#setupvms). The specific steps that are needed for this process include:
 
     1. Export the scripts that must be run on each VM.
     
@@ -113,7 +133,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
         .\Test-D365FOConfiguration.ps1
         ```
 
-6. Run the following PowerShell command to have values that can be used in LCS later. For more information, see [Deploy your on-premises environment from LCS](setup-deploy-on-premises-pu41.md#deploy).
+1. Run the following PowerShell command to have values that can be used in LCS later. For more information, see [Deploy your on-premises environment from LCS](setup-deploy-on-premises-pu41.md#deploy).
 
     ```powershell
     .\Get-DeploymentSettings.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
