@@ -23,7 +23,6 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.service:
 
 ---
 
