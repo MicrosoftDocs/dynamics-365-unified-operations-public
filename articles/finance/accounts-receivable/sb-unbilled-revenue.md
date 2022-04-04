@@ -2,7 +2,7 @@
 # required metadata
 
 title: Unbilled revenue 
-description: This topic explains how to set up items to use the unbilled revenue feature in Subscription billing and how to set up the unbilled revenue accounts.
+description: This topic explains how to set up items and accounts to use the unbilled revenue feature in Subscription billing.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -30,23 +30,22 @@ ms.dyn365.ops.version: 10.0.24
 
 This topic describes the unbilled revenue feature that lets you include the amounts for entire billing schedules on the balance sheet. These amounts are included in an unbilled revenue account and unbilled revenue offset account and the contract is billed through installments. 
 
-## Set up Unbilled revenue 
+## Set up unbilled revenue 
 
-These steps need to be completed to use the Unbilled revenue feature:
+To use unbilled revenue, follow these setup steps:
  - On the **Recurring contract billing parameters** page, set up the **Unbilled revenue** section. 
- - The unbilled revenue feature can be used for items where **Item type** is **Standard**. This feature can also be used for deferral items. To use the unbilled revenue feature with the short-term functionality, set up the short-term options on the **Recurring contract billing parameters** page. 
+ - The unbilled revenue feature can be used for items where **Item type** is **Standard** as well as deferral items. To use unbilled revenue with the short-term functionality, set up the short-term options on the **Recurring contract billing parameters** page. 
 
+Use the steps below on the **Unbilled revenue setup** page, to set up the items and accounts to use for unbilled revenue.
 
-Use the steps below on the **Unbilled revenue setup** page, to set up the items and accounts to use for the unbilled revenue feature.
-
-To set up items to use the unbilled revenue feature by default, follow these steps: 
+To set up items to use unbilled revenue, follow these steps: 
 1. Select the **Items** tab. 
 2. Select **Add**.
 3. For the line, select the **Item code** and the **Item relation**. 
 4. Repeat these steps to add more lines. 
 5. Select **Save**.
 
-To set up items and the default unbilled revenue accounts, follow these steps: 
+To set up items and the unbilled revenue accounts, follow these steps: 
 1. Select the **Accounts** tab. 
 2. Select **Add**.
 3. For the line, select the **Item code** and the **Item relation**. 
@@ -56,13 +55,13 @@ To set up items and the default unbilled revenue accounts, follow these steps:
 
 ### Using unbilled revenue 
 
-1. On the **All billing schedules** page, create a billing schedule as usual. If the item isn't already set up to use the unbilled revenue feature, select **Unbilled revenue** for the billing schedule line. 
+1. On the **All billing schedules** page, create a billing schedule as usual. If the item isn't already set up to use unbilled revenue, select **Unbilled revenue** for the billing schedule line. 
 2. Set the **Unbilled revenue** option to **Yes**. Review and edit the unbilled revenue, discount and unbilled revenue offset accounts as needed. 
 3. On the billing schedule, select **Create journal entry** under **Unbilled revenue processing** to create the initial journal entry for unbilled revenue. This needs to be completed before the billing schedule is invoiced.  
 4. Once the initial journal entry is created, use **Generate invoice** to create sales orders and post the invoices for the billing schedules. 
 5. After the invoices are posted, you can review the audit information on the **Renewals** tab of the **All billing schedules** page. 
 
-**Milestone billing**: The milestone billing functionality works with the unbilled revenue feature with the following conditions: 
+**Milestone billing**: Milestone billing works with unbilled revenue with the following conditions: 
 - When the milestone parent item is unbilled (the **Unbilled revenue** check box is selected) and the milestone child items aren't unbilled (the **Unbilled revenue** check box is cleared), the start and end dates for the parent item must be specified. These dates are used for creating the initial journal entry. 
 - When the milestone parent item is unbilled (the **Unbilled revenue** check box is cleared) and the milestone child items aren't unbilled (the **Unbilled revenue** check box is selected), the end date for only the child items for which you want to create the initial journal entry must be specified.   
 Each milestone child item can be processed separately. The end dates can be specified when you're ready to create the initial journal entry. 
@@ -72,7 +71,7 @@ Each milestone child item can be processed separately. The end dates can be spec
 
 ### Unbilled revenue with straight line deferrals
 
-To use the unbilled revenue feature with straight line deferral schedules, follow these steps:
+To use unbilled revenue with straight line deferral schedules, follow these steps:
 1. On the **All billing schedules** page, create a billing schedule as usual.
 2. Add an item to the **Billing schedule lines**.  
 3. Select **Deferrals** action for the line. On the **Transaction deferral** page, do the following: 
@@ -80,7 +79,7 @@ To use the unbilled revenue feature with straight line deferral schedules, follo
   - Change the **Accounts** as needed. 
   - In the **Schedule** section, select **Straight line**, and edit other values as needed. 
   - Select **OK**.
-4. Select the **Unbilled revenue** action for the line. 
+4. Select **Unbilled revenue** for the line. 
     - Set **Unbilled revenue** to **Yes**. 
     - Select the accounts to use for the revenue, discount and revenue offset. 
 5. For the billing schedule, select **Create journal entry** under **Unbilled revenue processing** or use the **Unbilled revenue mass processing** page to create the journal entry.
@@ -88,7 +87,7 @@ To use the unbilled revenue feature with straight line deferral schedules, follo
 
 ### Unbilled Revenue with event based deferrals
 
-To use the unbilled revenue feature with event based deferral schedules, follow these steps:
+To use unbilled revenue with event based deferral schedules, follow these steps:
 1. On the **All billing schedules** page, create a billing schedule as usual.
 2. Add an item to the **Billing schedule lines**.  
 3. Select **Deferrals**. On the **Transaction deferral** page, do the following: 
@@ -112,18 +111,18 @@ The distributions are recalculated based on the **Allocation type** selected (**
 A billing schedule is entered for three years with the invoices billed annually over a three-year period. The whole contract amount is recorded in the unbilled revenue account from which annual invoices are created. The offset account is the revenue or the deferred revenue account. 
 
 >[!Note]
->The top billing and the unbilled revenue features will not work together because reconciliation issues in the General ledger can occur. 
+>Top billing and unbilled revenue will not work together because reconciliation issues in the General ledger can occur. 
 
 For example, on the **Item group setup** page, ItemGroupA is set up with the **Number of top lines** set to 2. On the **Billing schedules** page, three items are added. All three items belong to ItemGroupA. When the initial journal entry is created for the unbilled revenue feature, the amount for all three items are processed to the unbilled account. When the invoice for the billing schedule is created, only the amounts for the top two items are included. As a result, the invoice amount doesn't match the amount processed to the unbilled revenue account, and reconciliation issues in the General ledger occur. 
 
-If you want to use the unbilled revenue feature, leave the **Item Group Setup** page blank, or set all item groups that have the **Number of top lines** to zero (0). If you want to use the top billing feature, all **Unbilled revenue** actions aren't available. 
+If you want to use unbilled revenue, leave the **Item Group Setup** page blank, or set all item groups that have the **Number of top lines** to zero (0). If you want to use top billing, all **Unbilled revenue** actions aren't available. 
 
 ### Unbilled revenue examples
-As of 10.0.27, a new account is introduced when using Unbilled revenue. When posting the initial **Create journal entry**, the credit is to a new account Unbilled revenue offset. This account is used instead of the revenue account because the same value needs to be reversed out when the billing schedule is invoiced. If there are differences in exchange rates or rounding, the amounts calculated during the **Generate invoice** process could be different. This ensures the accounts net to zero. 
+As of 10.0.27, a new account is introduced when using unbilled revenue. When posting the initial **Create journal entry**, the credit is to a new account Unbilled revenue offset. This account is used instead of the revenue account because the same value needs to be reversed out when the billing schedule is invoiced. If there are differences in exchange rates or rounding, the amounts calculated during the **Generate invoice** process could be different. This ensures the accounts net to zero. 
 
-This example explains how to use the unbilled revenue feature to recognize the entire amount of a contract on the balance sheet as unbilled revenue. The other side of the entry is the unbilled revenue offset. When you invoice the customer, the unbilled revenue and unbilled revenue offset are reversed. Revenue recognition will happen at the time of invoicing or will be recognized based on the deferral recognition schedule that was set up.
+This example explains how to use unbilled revenue to recognize the entire amount of a contract on the balance sheet as unbilled revenue. The other side of the entry is the unbilled revenue offset. When you invoice the customer, the unbilled revenue and unbilled revenue offset are reversed. Revenue recognition will happen at the time of invoicing or will be recognized based on the deferral recognition schedule that was set up.
 
-### The following example shows the unbilled revenue functionality
+### The following example shows unbilled revenue 
 
 Assume the following: 
  - A customer signs a three-year $390 contract on January 1 of the current year. 
@@ -133,7 +132,7 @@ Assume the following:
  - The customer will be invoiced $130 at the beginning (January 1) of each of the three years of the contract.
 
 ### Example
-1. The first step is to set up the two released items as unbilled items. Use the **Unbilled revenue setup** page to set up the items and accounts that use the unbilled revenue feature.   
+1. Set up the two released items as unbilled items. Use the **Unbilled revenue setup** page to set up the items and accounts that use unbilled revenue.   
 2. In the example, the maintenance fee is deferred. The item requires a deferral template, which is set up on the **Deferral templates** page. The template has a **Monthly** period frequency and a recognition period length of 36 months. As a result, the revenue per month is $2.50. 
 3. Set the **Maintenance fee** as a **Deferrable item** in **Items deferred by default** page. This step and the next step for **Deferral defaults** will cause the **Maintenance fee** item to be deferred when it is sold or included on a billing schedule.
 4. In the **Deferral defaults** > **Template** option, add the item for the maintenance fee and the straight-line template from step two. The maintenance fee item will be linked to a 36-month deferral schedule.
@@ -156,7 +155,7 @@ Assume the following:
 |Unbilled revenue account| &nbsp; |$90.00| &nbsp; |
 | &nbsp; |Deferred maintenance revenue| &nbsp; |$90.00|
 
-The first journal entry is posted to unbilled revenue offset account and the second is posted to a deferred revenue account. If the billing line has both unbilled revenue and deferred revenue, the deferred revenue account is used, not the unbilled revenue offset. The contract requires that the invoice for the customer to be created at the beginning of each year. Use **Generate invoice** to create the invoice. When the invoice is created, the journal entry is as follows: 
+The first journal entry is posted to unbilled revenue offset account and the second is posted to a deferred revenue account. If the billing line has both unbilled revenue and deferred revenue, the deferred revenue account is used, not the unbilled revenue offset. The contract requires that the invoice for the customer to be created at the beginning of each year. Use **Generate invoice** to create the invoice. When the invoice is created, the journal entry is: 
 
 | Main account| Unbilled revenue account | Debit amount | Credit amount |
 |:-----|:-----|-----:|-----:|
@@ -172,7 +171,7 @@ The first journal entry is posted to unbilled revenue offset account and the sec
 |Accounts receivable| &nbsp; |$30.00| &nbsp; |
 | |Deferred maintenance revenue account| |$30.00|
 
-This same journal entry will be created by invoices posted at the beginning of the next two years. The deferred revenue account nets to zero in this example because there is no rounding or exchange rate differences. The deferred revenue needs to be reversed out exactly as it was credited during the **Create journal entry** process. Since revenue is still deferred and will be recognized later, the credit to the deferred revenue account happens again. 
+This same journal entry will be created by invoices posted at the beginning of the next two years. The deferred revenue account nets to zero because there is no rounding or exchange rate differences. The deferred revenue needs to be reversed out exactly as it was credited during the **Create journal entry** process. Since revenue is still deferred and will be recognized later, the credit to the deferred revenue account happens again. 
 
 In the last step, the recognition journal entry is created each month to recognize the deferred maintenance fee revenue. The journal entry can be created using the **Recognition processing** page or the **Recognize** for the lines on the **Deferral schedule** pages.
 
@@ -185,7 +184,7 @@ This journal entry will be created each time the recognition process is run for 
 
 #### Short-term: Fixed year
 
-The unbilled revenue feature can be used with the short-term functionality by setting the **Short-term unbilled** field in **Recurring contract billing parameters**. The following example explains the calculations when the unbilled revenue feature is used with the fixed year short-term unbilled method. 
+Unbilled revenue can be used with the short-term functionality by setting the **Short-term unbilled** field in **Recurring contract billing parameters**. The following example explains the calculations when unbilled revenue is used with fixed year short-term unbilled. 
 
 A billing schedule with the following is created: 
 - Start Date: June 01, 2020 
@@ -207,7 +206,7 @@ The invoice for the billing period December 01, 2020, to December 31, 2020, is c
 
 #### Short-term: Rolling periods
 
-The unbilled revenue feature can be used with the short-term functionality by setting the short-term unbilled method on the **Recurring contract billing parameters** page. The following example explains the calculations that occur when the unbilled revenue feature is used with the rolling periods short-term unbilled method. 
+Unbilled revenue can be used with the short-term functionality by setting the short-term unbilled method on the **Recurring contract billing parameters** page. The following example explains the calculations that occur when unbilled revenue is used with the rolling periods short-term unbilled method. 
 
 A billing schedule with the following criteria is created: 
 - Start Date: June 01, 2020
@@ -229,7 +228,7 @@ The invoice for the billing period December 01, 2020, to December 31, 2020, is c
 
 ### Items with revenue allocation
 
-Two items with different billing frequencies are added to a billing schedule. Both use the unbilled revenue feature and are deferrable items. 
+Two items with different billing frequencies are added to a billing schedule. Both use unbilled revenue and are deferrable items. 
 
 Surface Pro 128GB (Item number 1000): 
 - Billing frequency: One-time 
@@ -243,7 +242,7 @@ Item 1000 is sold together with Insurance (Item number S0021):
 - Standalone selling price: $25
 - Contract revenue: $264.74
 
-Since both items use the unbilled revenue feature and revenue allocation, the total contract amount on the renewal line is zero (0). The **Contract revenue** column is added and displays the contract revenue amount. 
+Since both items use unbilled revenue and revenue allocation, the total contract amount on the renewal line is zero (0). The **Contract revenue** column is added and displays the contract revenue amount. 
 
 The initial journal entry for the items and the invoice are as follows: 
 
