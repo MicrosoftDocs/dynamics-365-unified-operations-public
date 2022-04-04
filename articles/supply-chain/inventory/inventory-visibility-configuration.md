@@ -38,13 +38,12 @@ Before you begin, install and set up the Inventory Visibility Add-in as describe
 
 The Inventory Visibility Add-in adds several new features to your Power Apps installation. By default, these features are turned off. To use them, open the **Configuration** page and then, on the **Feature Management** tab, turn on the following features as needed.
 
-## <a name="configuration"></a>The Configuration page of the Inventory Visibility app
 | Feature Management name | Description |
 |---|---|
-| *OnHandReservation* | Enables you to create reservations, consume reservations, and/or unreserve specified inventory quantities by using Inventory Visibility. For more information, see [Inventory Visibility reservations](inventory-visibility-reservations.md). |
-| *OnHandMostSpecificBackgroundService* | Provides an inventory summary for products together with all dimensions. The inventory summary data will periodically be synced from Inventory Visibility. For more information, see [Inventory summary](inventory-visibility-power-platform.md#inventory-summary). |
-| *OnhandChangeSchedule* | Enables the on-hand change schedule and available to promise (ATP) features (optional). For more information, see [Inventory Visibility on-hand change schedule and available to promise](inventory-visibility-available-to-promise.md). |
-| *Enable warehouse items in Inventory Visibility* | Enables Inventory Visibility to support items that are enabled for advanced warehouse processes (WHS) (optional). For more information, see [Inventory Visibility support for WHS items](inventory-visibility-whs-support.md). |
+| *OnHandReservation* | This feature lets you create reservations, consume reservations, and/or unreserve specified inventory quantities by using Inventory Visibility. For more information, see [Inventory Visibility reservations](inventory-visibility-reservations.md). |
+| *OnHandMostSpecificBackgroundService* | This feature provides an inventory summary for products, together with all dimensions. The inventory summary data will periodically be synced from Inventory Visibility. For more information, see [Inventory summary](inventory-visibility-power-platform.md#inventory-summary). |
+| *OnhandChangeSchedule* | This optional feature enables the on-hand change schedule and available to promise (ATP) features. For more information, see [Inventory Visibility on-hand change schedule and available to promise](inventory-visibility-available-to-promise.md). |
+| *Enable warehouse items in Inventory Visibility* | This optional feature enables Inventory Visibility to support items that are enabled for advanced warehouse processes (WHS items). For more information, see [Inventory Visibility support for WHS items](inventory-visibility-whs-support.md). |
 
 ## <a name="get-service-endpoint"></a>Find the service endpoint
 
