@@ -18,7 +18,7 @@ ms.search.validFrom: 2021-11-29
 
 This topic explains how to upgrade Windows Server in your Microsoft Dynamics 365 Finance + Operations (on-premises) environments.
 
-## Prerequisites for upgrading the SQL Server version
+## Prerequisites for upgrading Windows Server
 
 ### Upgrade from Windows Server 2016 to Windows Server 2019
 

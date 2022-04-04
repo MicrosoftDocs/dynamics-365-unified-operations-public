@@ -744,38 +744,29 @@ Get an SSL certificate from a CA to configure SQL Server for Finance + Operation
 > [!NOTE]
 > If ordering the certificate from a public CA, ensure the Subject Alternative Name of the certificate matches the FQDN of each node/instance in the SQL availability group.
 
-**Deploying certificate for an Always-On SQL availability group or instance**
+**Deploying certificates for an Always-On SQL availability group or instance**
 
-This script automates the steps described in the manual process below.
+This script automates the steps described in the manual process below. If not remoting, connect to a SQL machine and open Powershell with Administrator privileges. Then, navigate to the **infrastructure** folder located in your fileshare and run the command below. Do these steps for each invididual node.
 
 ```powershell
 # If Remoting, execute
-#.\New-SelfSigned-SQLCert-AllVMs.ps1 -SqlMachineNames SQL1,SQL2 -SqlListenerName SQL-LS -ProtectTo CONTOSO\dynuser -ConfigurationFilePath .\ConfigTemplate.xml
+#.\Configure-SQLCert-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
 
-.\New-ADCS-SQLCert-AllVMs.ps1 -SqlMachineNames SQL1,SQL2 -SqlListenerName SQL-LS -ProtectTo CONTOSO\dynuser
+.\Configure-SQLCert.ps1 -PfxCertificatePath ".\Certs\SQL1.contoso.com"
 ```
 
-**Deploying certificate for a single SQL instance**
+You can verify that everything has been configured correctly by executing the following command.
 
 ```powershell
-#If you need to create self-signed certs
-#.\New-SelfSigned-SQLCert-AllVMs.ps1 -SqlMachineNames SQL1 -ProtectTo CONTOSO\dynuser -ConfigurationFilePath .\ConfigTemplate.xml
+# If Remoting, execute
+#.\Configure-SQLCert-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Test
 
-.\New-ADCS-SQLCert-AllVMs.ps1 -SqlMachineNames SQL1 -ProtectTo CONTOSO\dynuser
+.\Configure-SQLCert.ps1 -PfxCertificatePath ".\Certs\SQL1.contoso.com" -Test
 ```
 
-**Manual AD CS steps for an Always-On SQL availability group or Windows Server Failover Clustering with SQL Server** 
+**Manual steps to configure the certificate for an Always-On SQL availability group or instance** 
 
-1. Run the following Windows PowerShell command on a machine that has Remote Server Administration Tools installed:
-
-    ```powershell
-    #If you need to create self-signed certs
-    #.\New-SelfSigned-SQLCert-AllVMs.ps1 -SqlMachineNames SQL1,SQL2 -SqlListenerName SQL-LS -ProtectTo CONTOSO\dynuser -GenerateCertOnly
-
-    .\New-ADCS-SQLCert-AllVMs.ps1 -SqlMachineNames SQL1,SQL2 -SqlListenerName SQL-LS -ProtectTo CONTOSO\dynuser -GenerateCertOnly
-    ```
-
-1. In the infrastructurescripts folder you will find a folder named **SQLCerts**. Inside you will find a .pfx file with your certificate.
+1. In the infrastructurescripts folder you will find a folder named **Certs**. Inside you will find a .pfx file with your certificate.
 
 1. For each node of the SQL cluster, follow these steps. 
 
@@ -796,7 +787,7 @@ This script automates the steps described in the manual process below.
 
     1. Restart the SQL service.
 
-1. If you used self-signed certifictes, export the certificate (.cer file), and install it in the trusted root of each Service Fabric node. You will have a single certificate for the Always-On cluster.
+1. If you used self-signed certifictes, export the certificate (.cer file), and install it in the trusted root of each Service Fabric node. You will only have a single certificate for all the nodes in your SQL cluster.
 
 > [!NOTE] 
 > For more information, see [How to enable SSL encryption for an instance of SQL Server by using Microsoft Management Console](https://support.microsoft.com/help/316898/how-to-enable-ssl-encryption-for-an-instance-of-sql-server-by-using-microsoft-management-console).
@@ -831,7 +822,7 @@ This script automates the steps described in the manual process below.
     > - The user who is running the SQL service and the user who is running the scripts should have **Read** access on the folder or share where the backup file is located.
     > - If an existing database already has the same name, it won't be overwritten.
 
-1. Copy the **infrastructure** folder to the SQL Server machine. Then open Windows PowerShell in elevated mode, and go to the folder.
+1. Connect to a machine in your SQL cluster. Then open Windows PowerShell in elevated mode, and navigate to the **infrastructure** folder located in your fileshare.
 
 #### Configure the OrchestratorData database
 
@@ -976,6 +967,8 @@ For more information about how to use the script, see the documentation that is 
 
 > [!NOTE]
 > If you want to reuse your previously configured AD FS server for additional environments, see [Reuse the same AD FS instance for multiple environments](./onprem-reuseadfs.md).
+
+Connect to a server hosting your AD FS instance/farm and open Powershell with Administrator privileges and navigate to the **infrastructure** folder in your fileshare. Then execute the following command.
 
 ```powershell
 # Host URL is your DNS record\host name for accessing the AOS
