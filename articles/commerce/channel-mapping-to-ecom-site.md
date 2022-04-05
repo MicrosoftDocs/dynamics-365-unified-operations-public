@@ -81,7 +81,7 @@ The following example illustration shows the Adventure Works online channel conf
 
 Different languages within a channel can be configured with their own domain names, for example `www.adventure-works.ca` for the Canada English version and `www.adventure-works-fr.ca` for the Canada French version. Alternatively, different languages within a channel can be configured within a single domain using different paths for each language, for example `www.adventure-works.ca` for the Canada English version and `www.adventure-works.ca/fr` for the Canada French version. [Geo detection](geo-detection-redirection.md) can also be enabled to automatically redirect a user to the correct site based on the user's location.
 
-For information on customizing localized pages and fragments, see [managing site content with multiple channels and languages](#managing-site-content-with-multiple-channels-and-languages).
+For information on customizing localized pages and fragments, see [managing site content with multiple channels and languages](#manage-site-content-with-multiple-channels-and-languages).
 
 ### Multi-language channel with different site experiences per language
 
