@@ -498,6 +498,8 @@
           href: dev-tools/configure-developer-vm.md
         - name: Development and build VMs that don't allow admin access FAQ
           href: sysadmin/VMs-no-admin-access.md
+        - name: Set up the downloadable VHD for first use
+          href: dev-tools/vhd-setup.md
         - name: Rename local environments to access Azure DevOps
           href: migration-upgrade/vso-machine-renaming.md
         - name: Development system requirements
