@@ -34,8 +34,8 @@ Dynamics 365 Commerce supports many business scenarios to map [online channels](
 
 Scenarios covered in this topic include:
 - **A single language channel with a single e-commerce site experience.** For example, this could be a single brand site configured for the English United States market.
-- **A multi-language channel with a single localized site experience.** For example, this could be a single brand site configured for Canada with French and English language support where both languages provide the same site experience but are localized into the appropriate languages.
-- **A multi-language channel with different site experiences per language.** For example, this could be a single brand site configured for Canada with unique site experiences for French Quebec region users and English region users.
+- **A multilanguage channel with a single localized site experience.** For example, this could be a single brand site configured for Canada with French and English language support where both languages provide the same site experience but are localized into the appropriate languages.
+- **A multilanguage channel with different site experiences per language.** For example, this could be a single brand site configured for Canada with unique site experiences for French Quebec region users and English region users.
 - **Multiple channels (with single and/or multiple languages) with a single localized site experience.** For example, this could be a single brand site configured for Australia and New Zealand, where both countries share the same site experience but each country is configured with different products, currency, prices, discounts, and shipping modes.
 - **Multiple channels (with single and/or multiple languages) with different site experiences per channel.** For example, this could be a single brand site configured for Australia, Canada and Germany, where each country has a unique site experience along with different products, currency, prices, discounts, and shipping modes.
 
@@ -69,7 +69,7 @@ The most basic scenario is a single channel with a single language for selling i
 
 The single online channel can be mapped to a single e-commerce site within site builder. To learn how to create a new site and map it to a channel, see [Map a channel to a site in site builder](#map-a-channel-to-a-site-in-site-builder).
 
-### Multi-language channel with a single localized site experience
+### Multilanguage channel with a single localized site experience
 
 In this scenario, a single channel supports more than one language which allows the localization of product names, descriptions, and attributes in headquarters. Marketing content on the site can also be localized within site builder to provide a complete localized site experience.  
 
@@ -83,7 +83,7 @@ Different languages within a channel can be configured with their own domain nam
 
 For information on customizing localized pages and fragments, see [managing site content with multiple channels and languages](#manage-site-content-with-multiple-channels-and-languages).
 
-### Multi-language channel with different site experiences per language
+### Multilanguage channel with different site experiences per language
 
 Similar to the previous scenario, you may want to offer a completely different site experience between languages. The recommended way is to use the page variants on a single site as discussed in the previous scenario but if desired you can create a new e-commerce site in site builder and map each to a single online channel and language. This would result in a single online channel being mapped to multiple e-commerce sites, one per language. This scenario would add extra management since you will now have multiple sites to independently manage within site builder.
 
