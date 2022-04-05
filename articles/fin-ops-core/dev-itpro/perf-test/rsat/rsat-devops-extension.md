@@ -2,7 +2,7 @@
 title: Integrate RSAT with Azure DevOps pipelines
 description: This topic explains how to integrate the Regression suite automation tool (RSAT) with Microsoft Azure DevOps pipelines to automate validation.
 author: FrankDahl
-ms.date: 03/29/2022
+ms.date: 04/05/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: sericks
