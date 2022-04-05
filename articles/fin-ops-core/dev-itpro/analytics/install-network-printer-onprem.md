@@ -90,7 +90,7 @@ To install printers on nodes where AXService is executing under a gMSA, follow t
 # If Remoting, execute
 # .\Install-PrintersOnGmsa-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -SysInternalsFolderLocation \\networkshare\SysInternalsSuite -ForcePushLBDScripts
 
-.\Install-PrintersOnGmsa.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -SysInternalsFolderLocation \\networkshare\SysInternalsSuite
+.\Install-PrintersOnGmsa.ps1 -PrintersJsonFilePath .\Printers.json -SysInternalsFolderLocation \\networkshare\SysInternalsSuite
 ```
 
 ## Manage network printers
