@@ -54,21 +54,15 @@ Product recommendations are enabled for the following POS scenarios. They are av
 
     [![Recommendations on the Transaction page.](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
 
-## Configure Commerce to enable POS recommendations
+## Configure Commerce to enable POS recommendations 
 
 To set up product recommendations, follow these steps:
 
-1. Ensure your service has been updated to the **10.0.6 build.**
-2. Follow the instructions on how to [enable product recommendations](../commerce/enable-product-recommendations.md) for your business.
-3. Optional: To display recommendations on the transaction screen, go to **Screen Layout**, choose your screen layout, launch the **Screen layout designer**, and then drop the **recommendations** control where needed.
-4. Go to **Commerce parameters**, select **Machine-learning**, select **Yes** under **Enable POS recommendations**.
-5. To see recommendations on POS, run global configuration job **1110**. To reflect changes made to POS screen layout designer, run channel configuration job **1070**.
+1. Confirm that you have completed the provisioning process for Commerce Product Recommendations by following the [enable product recommendations](../commerce/enable-product-recommendations.md) steps.
+2. By default, recommendations will start appearing on the Product Details Page. In order to add recommendations to the transaction screen, you will need to [add recommendations via the layout manager.](add-recommendations-control-pos-screen.md).
+3. To reflect changes made to POS screen layout designer, run channel configuration job **1070**.
 
-## Troubleshoot issues where you have Product recommendations already enabled
-
-- Navigate to **Commerce Parameters** \> **Recommendation lists** \> **Disable product recommendations** and run **Global configuration job \[9999\]**. 
-- If you added the **Recommendations control** to your transaction screen using the **Screen layout designer**, please remove that as well.
-- If you have additional questions, check out the [Product recommendations FAQ](../commerce/faq-recommendations.md) for more information.
+[Note!] If you are looking to enable POS recommendations with the Reco Demo Mock CSV file, you must first finish deploying the CSV to the LCS Asset Library before configuring the Layout Manager. Enabling recommendations is not necessary when using the RecoMock CSV. Additionally, the CSV is only available for demo purposes only and is a great choice for customers or Solution Archetects looking to mimic the appearance of recommendation lists for demoing to customers without having to purchase an Add-on SKU.   
 
 ## Additional resources
 
