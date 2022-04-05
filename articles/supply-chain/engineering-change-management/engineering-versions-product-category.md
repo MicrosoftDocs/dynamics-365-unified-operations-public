@@ -141,7 +141,7 @@ For each row that you add to the grid, set the following fields.
 |---|---|
 | Name | Select the attribute to add. |
 | Value | Select the default value for the attribute. |
-| Mandatory | For attributes of the *Boolean* type, if this option is set to *Yes*, users must set the attribute to *Yes*. If this option is set to *No*, users can set the attribute to either *Yes* or *No*. For other data types, the setting of this option is just informational. |
+| Mandatory | For attributes of the *Boolean* type, if this option is set to *Yes*, users must set the attribute to *Yes*. If this option is set to *No*, users can set the attribute to either *Yes* or *No*. For attributes of type *boolean* or *integer* a value must be selected. For other data types (*list*), the setting of this option is just informational. |
 | Batch attribute | Select whether the attribute should be propagated through the batch functionality. |
 
 ### Readiness policy FastTab
