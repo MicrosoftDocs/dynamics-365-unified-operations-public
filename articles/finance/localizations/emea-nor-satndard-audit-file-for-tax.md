@@ -34,7 +34,7 @@ This topic includes country-specific information about how to set up the Standar
 Beginning January 2020, all companies in Norway are required by the Norwegian Tax Administration to provide SAF-T Financial data. This requirement is in accordance with version 1.4 of the documentation, which was published on July 8, 2019, and version 1.3 of the technical documentation, which was published on March 23, 2018, in the form of an XML report. The publication of these pieces of documentation coincided with version 1.1 of the "Norwegian SAF-T Financial data" XML Schema Definition (XSD) schema that was developed by the SAF-T Working group, Skatteetaten, and based on "OECD Standard Audit File - Taxation 2.00," which was modified on February 2, 2018.
 
 > [!NOTE]
-> Using the [One voucher](../general-ledger/one-voucher.md) functionality introduces a limitation of further SAF-T reporting for some scenarios that are subject to SAF-T. In particular, a bank statement scenario must be posted specifically by using different vouchers for transactions with different counteragent accounts. For more information about using One voucher functionality and SAF-T, see the [SAF-T report and One voucher](#one-voucher) section later in this topic.
+> Use of the [One voucher](../general-ledger/one-voucher.md) functionality introduces a limitation on further SAF-T reporting for some scenarios that are subject to SAF-T. Specifically, a bank statement scenario must be posted by using different vouchers for transactions that have different counteragent accounts. For more information about how to use the One voucher functionality and SAF-T, see the [SAF-T report and One voucher](#one-voucher) section later in this topic.
 
 ## Setup
 
@@ -92,19 +92,19 @@ To associate sales tax codes that are used in Finance with Norwegian standard VA
 As the documentation explains, in Norwegian SAF-T Financial data, main accounts that are used in Finance must be associated with Norwegian standard accounts for the purpose of SAF-T reporting. The Norwegian standard accounts are available at <https://github.com/Skatteetaten/saf-t>.
 
 
-Starting from **version 54.61**, the electronic reporting format **“SAF-T Format (NO)”** supports the setup of **Standard accounts** for the **Main accounts** of the company by using **Application specific parameters**.
+Starting from **version 54.61**, the electronic reporting format **SAF-T Format (NO)** supports the setup of **Standard accounts** for the **Main accounts** of the company by using **Application specific parameters**.
 
 > [!NOTE]
-> We recommend that you enable the **Accelerate the ER labels storage** feature in the **Feature management** workspace. This feature helps improve network bandwidth utilization and overall system performance because in most cases, ER labels of a single language are used when you work with a single ER configuration. The **Accelerate the ER labels storage** feature is available in the **Feature management** workspace as of Finance version 10.0.25. For more information about how to set up the parameters of an ER format for each legal entity, see [Design multilingual reports in Electronic reporting \> Performance](../../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md#performance).
+> We recommend that you enable the **Accelerate the ER labels storage** feature in the **Feature management** workspace. This feature helps improve network bandwidth utilization and overall system performance because, in most cases, ER labels of a single language are used when you work with a single ER configuration. The **Accelerate the ER labels storage** feature is available in the **Feature management** workspace as of Finance version 10.0.25. For more information about how to set up the parameters of an ER format for each legal entity, see [Performance](../../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md#performance).
 
 To associate **Main accounts** that are used in Finance with Norwegian standard accounts via **Application specific parameters** follow the following steps:
 
-1. Open the **Electronic reporting** workspace, in the configuration tree, select the **“SAF-T Format (NO)”** electronic reporting format. 
+1. Open the **Electronic reporting** workspace, in the configuration tree, select the **SAF-T Format (NO)** electronic reporting format. 
 2. Make sure that company you are working is the company for which you want to set up the **Application specific parameters**.
 3. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
 4. Select the version of the format that you want to use on the left side of the **Application specific parameters** page.
 5. On the **Lookup** FastTab, select **StandardMainAccount_Lookup**, and then specify criteria on the **Conditions** FastTab by adding lines for each **Result** value which must be used in the selected company. If several **Main accounts** in the selected company must result the same **Standard account**, add a separate line for each **Main account** and specify the same **Standard account** for each one.
-6. Select the value, **NA** as the last condition in the list. It must be set to **\*Not blank\*** in **Main account** column. Verify the value in the **Line** column that **“NA”** is the last condition in the table.
+6. Select the value, **NA** as the last condition in the list. It must be set to **\*Not blank\*** in **Main account** column. Verify the value in the **Line** column that **NA** is the last condition in the table.
 7. When you've finished setting up conditions, change the value of the **State** field to **Completed**, save your changes, and close the page.
 
 ![Standard account field on the Main accounts page.](media/nor-saf-standard-main-accounts-appsppar.jpg)
