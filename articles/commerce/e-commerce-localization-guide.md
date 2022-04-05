@@ -66,7 +66,7 @@ A URL in site builder is a combination of a domain and a path that defines the e
 
 - Site builder can see the online stores that have been configured in headquarters and are available to be mapped to a site.
 
-- See the [Channels overview](https://docs.microsoft.com/en-us/dynamics365/commerce/channels-overview) help topic for more information about channels, and the [Set up an online channel](channel-setup-online.md) help topic to learn how to set up an online channel.
+- See the [Channels overview](channels-overview.md) help topic for more information about channels, and the [Set up an online channel](channel-setup-online.md) help topic to learn how to set up an online channel.
 
 **Locale (language)**
 
@@ -123,8 +123,8 @@ The process for localizing the content of your pages and fragments is covered in
 
 Dynamics 365 Commerce e-commerce sites can serve the experiences that are defined across multiple online channels that are configured in Headquarters. A site utilizes multiple channels in order to show a unique configuration of payment methods, price groups, product hierarchies, assortments, and set of products to customers. A channel is typically used to configure these dimensions to suit the requirements and preferences for the experience associated with individual counties. However, this is a business decision that is made by the customer not a requirement.
 
-The prerequisites and tasks associated with setting up a channel (online store) are beyond the scope of this document. To learn more about setting up an online channel in Dynamics 365 Commerce Headquarters, see the [channel setup basics](https://docs.microsoft.com/en-us/dynamics365/commerce/channels-overview#channel-setup-basics)
-section of the [Channels overview](https://docs.microsoft.com/en-us/dynamics365/commerce/channels-overview) help topic. The [Set up an online channel](channel-setup-online.md) help topic talks about steps and requirements specific to online channels.
+The prerequisites and tasks associated with setting up a channel (online store) are beyond the scope of this document. To learn more about setting up an online channel in Dynamics 365 Commerce Headquarters, see the [channel setup basics](channels-overview.md#channel-setup-basics)
+section of the [Channels overview](channels-overview.md) help topic. The [Set up an online channel](channel-setup-online.md) help topic talks about steps and requirements specific to online channels.
 
 To add a channel to your site:
 
