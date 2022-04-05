@@ -374,10 +374,12 @@ For gift cards that are issued via email, the value of the **Retail email notifi
 
 10. On the **Price and discount** tab, in the **Reason code** field, specify the reason for the price override.
 11. Select **Complete**, add a payment, and submit the order.
-12. For physical external gift cards, complete the registering of the gift card number by clicking on **Pick and pack > Generate picking list**. 
-13. Select **Quantity=All** and hit OK. Confirm 'OK' for the dialogue warning about posting the doc without printing.
-14. Click on the **Pick and pack > Picking list registration** and under the Lines menu select the **Register gift card number** and fill out the **Number** parameter under the **Register gift card number** property menu and select **OK**.
-  - If the error message "Credit card process failed, due to 'Declined'", the gift card has already been activated. Another card number should be selected.
+
+For physical external gift cards, complete these following steps to register the gift card number:
+1. For physical external gift cards, complete the registering of the gift card number by clicking on **Pick and pack > Generate picking list**. 
+2. Select **Quantity=All** and hit OK. Confirm 'OK' for the dialogue warning about posting the doc without printing.
+3. Click on the **Pick and pack > Picking list registration** and under the Lines menu select the **Register gift card number** and fill out the **Number** parameter under the **Register gift card number** property menu and select **OK**.
+   - If the error message "Credit card process failed, due to 'Declined'", the gift card has already been activated. Another card number should be selected.
 
 Once the registration is completed successfully, go back to the Sales Order and the 'Gift card number' and 'Expiration' fields will be displayed with information under the **Lines details > Packaging** section.
 
