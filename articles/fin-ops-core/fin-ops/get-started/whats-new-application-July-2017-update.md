@@ -704,7 +704,7 @@ For more information, see the following topics:
 - [Upgrade from AX 2012 - Deploy a demo environment for analysis](../../dev-itpro/migration-upgrade/analysis-sandbox.md)
 - [Upgrade from AX 2012 - Pre-upgrade checklist for data upgrade](../../dev-itpro/migration-upgrade/prepare-data-upgrade.md)
 - [Upgrade from AX 2012 - Data upgrade in development environments](../../dev-itpro/migration-upgrade/data-upgrade-2012.md)
-- [Upgrade from AX 2012 - Data upgrade in sandbox environments](../../dev-itpro/migration-upgrade/upgrade-data-sandbox.md)
+- [Upgrade from AX 2012 - Data upgrade in sandbox environments](/d365F-O/fin-ops-core/fin-ops/get-started/data-upgrade-self-service)
 - [Upgrade from AX 2012 - Post-upgrade tasks](../../dev-itpro/migration-upgrade/app-validation-process.md)
 - [Upgrade from AX 2012 - Cutover testing (Mock cutover)](../../dev-itpro/migration-upgrade/upgrade-cutover-testing.md)
 - [Upgrade from AX 2012 - Functional test passes](../../dev-itpro/migration-upgrade/upgrade-functional-validation.md)

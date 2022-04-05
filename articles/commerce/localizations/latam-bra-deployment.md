@@ -34,7 +34,7 @@ This topic covers how to set up and deploy the Microsoft Dynamics 365 Commerce l
 
 The Dynamics 365 Commerce localization for Brazil includes several extensions of the following Commerce components: the Commerce runtime (CRT), Retail Server, and point of sale (POS). These extensions let you calculate Brazil-specific taxes, generate electronic fiscal documents for retail sales, print DANFE (Documento Auxiliar de Nota Fiscal Eletrônica) and CF-e-SAT (Cupom Fiscal Eletrônico - Sistema Autenticador e Transmissor de Cupons Fiscais Eletrônicos) fiscal receipts that have custom fields, manage Brazil-specific customer information, and issue sales in offline contingency mode where registration of electronic fiscal documents is postponed. For more information about the Commerce localization for Brazil, see [Brazilian localization scope](../../finance/localizations/latam-bra-scope.md) and [Commerce localization for Brazil](latam-bra-commerce-localization.md).
 
-The extensions that are described in this topic were developed based on the fiscal integration framework. For information about the fiscal integration functionality, see [Overview of fiscal integration for Commerce channels](fiscal-integration-for-retail-channel.md). [Electronic reporting (ER)](../../dev-itpro/analytics/general-electronic-reporting.md) is used to implement formats for Brazilian electronic fiscal documents.
+The extensions that are described in this topic were developed based on the fiscal integration framework. For information about the fiscal integration functionality, see [Overview of fiscal integration for Commerce channels](fiscal-integration-for-retail-channel.md). [Electronic reporting (ER)](/dynamics365/fin-ops-core/dev-itpro/analytics/general-electronic-reporting) is used to implement formats for Brazilian electronic fiscal documents.
 
 ## Enable Brazil-specific Commerce functionality
 
@@ -52,7 +52,7 @@ To enable and use the Brazil-specific functionality, you must configure the foll
 
 ## Set up electronic reporting
 
-You can download the ER configurations for the electronic fiscal documents from Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Import Electronic reporting (ER) configurations](../../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md). You must download the latest versions of the configurations that are listed in the following procedure.
+You can download the ER configurations for the electronic fiscal documents from Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Import Electronic reporting (ER) configurations](/dynamics365/fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations). You must download the latest versions of the configurations that are listed in the following procedure.
 
 To set up electronic reporting in Commerce headquarters, follow these steps.
 
