@@ -4,7 +4,7 @@
 title: Certificate rotation
 description: This topic explains how to place existing certificates and update the references within the environment to use the new certificates.
 author: PeterRFriis
-ms.date: 03/31/2022
+ms.date: 04/05/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -50,22 +50,24 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 > [!NOTE]
 > Starting with version 2.14.0 each version of the scripts will have its own entry in the Shared Asset Library.
 
-3. Compare the schema version of the **ConfigTemplate.xml** from **InfrastructureOld** with the schema version of the **ConfigTemplate.xml** in the **Infrastructure** folder.
+3. Compare the schema version of **ConfigTemplate.xml** from **InfrastructureOld** with the schema version of **ConfigTemplate.xml** in the **Infrastructure** folder.
 
     - If the schema versions have not changed.
 
-        1. Copy the **ConfigTemplate.xml** from the **InfrastructureOld** folder and into the **Infrastructure** folder.
+        1. Copy **ConfigTemplate.xml** from the **InfrastructureOld** folder into the **Infrastructure** folder.
 
     - If the schema versions have changed.
-        1. Copy the **ConfigTemplate.xml** from the **InfrastructureOld** folder and into the **Infrastructure** folder.
+        1. Copy **ConfigTemplate.xml** from the **InfrastructureOld** folder into the **Infrastructure** folder.
         2. Run the following command:
-        ```powershell
+        
+	```powershell
             .\Update-ConfigTemplate.ps1 -OldConfigTemplate .\ConfigTemplateOld.xml -NewConfigTemplate .\ConfigTemplate.xml
         ```
 
         > [!NOTE]
         > Newer versions of the scripts (starting with version 2.14.0) that introduce changes to the schema of the configuration file will include logic that will migrate the configuration file to the new schema.
-        > The script currently does not have logic for updating from schemas lower than version 1.5. In that case manually migrate the old **ConfigTemplate.xml** by comparing it with the new **ConfigTemplate.xml**.
+        > 
+        > The script currently does not have logic for updating from schemas lower than version 1.5. In that case manually migrate the old **ConfigTemplate.xml** file by comparing it with the new **ConfigTemplate.xml** file.
 
 ## Preparation steps 
 
@@ -81,7 +83,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
     > The AD CS scripts need to run on a domain controller, or a Windows Server computer with Remote Server Admin Tools installed.
     > The AD CS functionality is only available with Infrastructure scripts release 2.7.0 and later. 
 
-    Alternatively, if you want to keep using self-signed certificates run the command below.
+    Alternatively, if you want to keep using self-signed certificates, run the command below.
 
     ```powershell
     # Create self-signed certs
@@ -91,7 +93,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
     > [!WARNING]
     > Self-signed certificates should never be used in production environments. If you're using publicly trusted certificates, manually update the values of those certificates in the ConfigTemplate.xml file.
 
-    Once you have generated your certificates run the command below.
+    Once you have generated your certificates, run the command below.
 
     ```powershell
     # Exports .pfx files into a directory VMs\<VMName>. All the certs will be written to the infrastructure\Certs folder.
@@ -252,7 +254,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
     ```
 
 	> [!NOTE] 
-	> If you receive the error "Upgrading from two different certificates to two different certificates is not allowed", it means that you didn't clean up old Service Fabric certificates on the previous certificate rotation exercise. Refer to the [Clean up old Service Fabric certificates](certificate-rotation-on-prem.md#cleanupoldsfcerts) section toward the end of this document, and then repeat the steps in this section.  
+	> If you receive the error, "Upgrading from two different certificates to two different certificates is not allowed", it means that you didn't clean up old Service Fabric certificates on the previous certificate rotation exercise. Refer to the [Clean up old Service Fabric certificates](certificate-rotation-on-prem.md#cleanupoldsfcerts) section toward the end of this content, and then repeat the steps in this section.  
 
 ### Service Fabric with or without expired certificates (cluster not accessible)
 
