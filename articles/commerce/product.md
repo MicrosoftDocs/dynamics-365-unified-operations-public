@@ -41,7 +41,7 @@ Product recommendations are enabled for the following POS scenarios. They are av
 
 1. On the **Product details** page:
 
-    - If a store associate visits a **Product details** page when looking at previous transactions across different channels, the recommendations service suggests additional items that are likely to be purchased together.
+    - If a store associate visits a **Product details** page when looking at previous transactions across different channels, the recommendations service suggests additional items that are likely to be purchased together. Depending on the add-ons for the service, Retailers can also show "shop similar looks" and "shop similar description" for products in addition to personalized recommendations for users with previous purchase history.
 
     [![Recommendations on the Product details page.](./media/proddetails.png)](./media/proddetails.png)
 
