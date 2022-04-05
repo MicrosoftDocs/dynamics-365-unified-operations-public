@@ -396,6 +396,8 @@
             href: deployment/onprem-SSRSHA.md
           - name: Configure proxies for on-premises environments
             href: deployment/onprem-reverseproxy.md
+          - name: Install network printer devices in on-premises environments
+            href: analytics/install-network-printer-onprem.md
           - name: On-premises diagnostics
             href: deployment/on-premises-diagnostics.md
           - name: On-premises disaster recovery configuration
