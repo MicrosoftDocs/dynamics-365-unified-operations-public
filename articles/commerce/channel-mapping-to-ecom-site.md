@@ -5,7 +5,7 @@
 title: Channel mapping to e-commerce sites
 description: Dynamics 365 Commerce supports many business scenarios to map online channels with a configured set of products, prices, discounts, etc... to e-commerce site experiences for their customers. This article provides guidance for some of the more common mapping scenarios which can be extrapolated for most other business requirements.
 author: samjarawan
-ms.date: 09/21/2021
+ms.date: 04/05/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -44,7 +44,7 @@ The scenarios covered in this topic include:
 
 ## Online channels
 
-An online channel represents an online e-commerce storefront which is used to map products, pricing, discounts, languages, payment methods, delivery modes, fulfillment centers and other aspects of the online experience that will be available to your customers. Online channels are created and managed within headquarters and map to a single [legal entity](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies?toc=/dynamics365/commerce/toc.json#legal-entities), which is usually based in a single country that requires the tax reporting for the channel and can only be configured with  a single currency.
+An online channel represents an online e-commerce storefront which is used to map products, pricing, discounts, languages, payment methods, delivery modes, fulfillment centers and other aspects of the online experience that will be available to your customers. Online channels are created and managed within headquarters and map to a single [legal entity](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json#legal-entities), which is usually based in a single country that requires the tax reporting for the channel and can only be configured with  a single currency.
 
 For an overview on channels see the [Channel overview](channels-overview.md) topic and to learn about creating an online channel see the [Set up an online channel](channel-setup-online.md) topic.
 
@@ -62,7 +62,6 @@ An e-commerce site represents the set of pages that make up the website that cus
 
 Dynamics 365 Commerce supports a great range of channel mapping scenarios, the below is just a subset meant as a guide to help planning any unique business scenarios you may have.  The ficticious Adventure Works sporting goods store included with Dynamics 365 Commerce demo data will be used as an example with a progression through each scenario.
 
-
 ### Single language channel with a single e-commerce site experience
 
 The most basic scenario is a single channel with a single language for selling in a single market. An example for this scenario is the Adventure Works online store setup only for the United States English market. The below image shows an example of the channel setup within headquarters. Notice how an online channel only supports a single currency and it is set to "USD" and a single business entity "usrt" which is used for tax reporting on the US business.
@@ -70,7 +69,6 @@ The most basic scenario is a single channel with a single language for selling i
 ![Adventure Works online store in HQ](media/channel-mapping-3.png)
 
 The single online channel can then be mapped to a single e-commerce site within site builder. See [mapping a channel to a site in site builder](#mapping-a-channel-to-a-site-in-site-builder) below to learn how how to create a new site and map it to a channel.
-
 
 ### Multi-language channel with a single localized site experience
 
@@ -146,8 +144,8 @@ Many branded sites sites can co-exist in a single tenant.  Notice the site list 
 
 A single domain name can be used for multiple sites and the path is used to separate the sites and or languages.  For example the domain could be "www.MyCompany.com" which is configured for two different e-commerce sites: one for Fabrikam and one for Adventure Works.  The default (ie: blank path) can be used for one site such as the Fabrikam site and a path could be added for the second site such as "adventureworks" so that the site is accessed with "www.MyCompany.com/adventureworks" or a path can be added for both sites (www.MyCompany.com/fabrikam). Alternately a different domain name can be used for each site ie: www.adventure-works.com and www.fabrikam.com and paths could be used for different regions such as www.adventure-works.com/fr-ca for French Canada.
 
-
 ## Configure multiple languages on a site
+
 The languages can then be configured on the e-commerce site within site builder as shown below in the **Site settings** -> **Channels** tab.  Notice each language has been configured with the locale for the path giving each language a unique URL.
 
 ![Multiple languages configured on a site](media/channel-mapping-10.png)
@@ -158,7 +156,7 @@ To add a new channel language, select the channel link highlighted in the below 
 
 #### Enable the site picker
 
-Once you have configured a site to have multiple languages and or channels, you may want to add a language selector to the header to select the language or country.  The module library [header](..\author-header-module.md) module has built in support for users to select a language using the [site picker](site-selector.md) module.  The site picker can be added within the header fragment which has the header module as shown in the below image. As can be seen, the header module has a **Site Picker** slot, edit the fragment and add the **Site picker** module to the slot and then select **Add site options list** from the site picker module configurations to add a new language.  You can then add the text that will show up in the picker drop down and the URL with the path you created when adding the channel to the site (ie: www.adventure-works.com/fr-ca).
+Once you have configured a site to have multiple languages and or channels, you may want to add a language selector to the header to select the language or country.  The module library [header](author-header-module.md) module has built in support for users to select a language using the [site picker](site-selector.md) module.  The site picker can be added within the header fragment which has the header module as shown in the below image. As can be seen, the header module has a **Site Picker** slot, edit the fragment and add the **Site picker** module to the slot and then select **Add site options list** from the site picker module configurations to add a new language.  You can then add the text that will show up in the picker drop down and the URL with the path you created when adding the channel to the site (ie: www.adventure-works.com/fr-ca).
 
 ![Setup site selector on header](media/channel-mapping-12.png)
 
@@ -182,7 +180,7 @@ The below image shows how to change the channel or language context within site 
 
 You will see a warning message if the variant for the selected page or fragment has not been created yet and selecting **Create page variant** will provide an option to start with a copy of an existing variant or create a brand new page from one of the templates.
 
-![Change channel or language in site builder](media/channel-mapping-17.png)
+![Create page variant dialog box in site builder](media/channel-mapping-17.png)
 
 An alternative to manually creating each page and fragments is to exported each to an xliff file which can then be sent off for localization and re-imported.  Select **Localization** to see these options on a page or fragment as shown below.
 
