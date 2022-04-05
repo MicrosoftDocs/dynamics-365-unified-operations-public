@@ -3,7 +3,7 @@
 
 
 title: Channel mapping to e-commerce sites
-description: Dynamics 365 Commerce supports many business scenarios to map online channels with a configured set of products, prices, discounts, etc... to e-commerce site experiences for their customers. This article provides guidance for some of the more common mapping scenarios which can be extrapolated for most other business requirements.
+description: This topic describes some of the more common channel mapping scenarios in Microsoft Dynamics 365 Commerce that can be extrapolated for most other business requirements.
 author: samjarawan
 ms.date: 04/05/2022
 ms.topic: article
@@ -15,7 +15,7 @@ ms.technology:
 # ms.search.form: 
 audience: Application user
 # ms.devlang: 
-ms.reviewer: v-chgri
+ms.reviewer: v-chgriffin
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -28,19 +28,21 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Channel mapping to e-commerce sites
 
-Dynamics 365 Commerce supports many business scenarios to map [online channels](#online-channels) with a configured set of products, prices, discounts, etc... to [e-commerce site](#e-commerce-site) experiences for their customers. This article provides guidance for some of the more common mapping scenarios which can be extrapolated for most other business requirements.
+This topic describes some of the more common channel mapping scenarios in Microsoft Dynamics 365 Commerce that can be extrapolated for most other business requirements.
+
+Dynamics 365 Commerce supports many business scenarios to map [online channels](#online-channels) with a configured set of products, prices, and discounts to [e-commerce site](#e-commerce-site) experiences for their customers. This article provides guidance for some of the more common mapping scenarios which can be extrapolated for most other business requirements.
 
 The scenarios covered in this topic include:
 * A single language channel with a single e-commerce site experience.
-  * ie: a single brand site configured for the English United States market.
+  * For example, a single brand site configured for the English United States market.
 * A multi-language channel with a single localized site experience.
-  * ie: a single brand site configured for Canada with French and English language support where both languages provide the same site experience but are localized into the appropriate languages.
+  * For example, a single brand site configured for Canada with French and English language support where both languages provide the same site experience but are localized into the appropriate languages.
 * A multi-language channel with different site experiences per language.
-  * ie: a single brand site configured for Canada with unique site experiences for French Quebec region users and English region users.
+  * For example, a single brand site configured for Canada with unique site experiences for French Quebec region users and English region users.
 * Multiple channels (with single and/or multiple languages) with a single localized site experience.
-  * ie: a single brand site configured for Australia and New Zealand, where both contries share the same site experience but each country is configured with different products, currency, prices, discounts, shipping modes, etc...
+  * For example, a single brand site configured for Australia and New Zealand, where both contries share the same site experience but each country is configured with different products, currency, prices, discounts, and shipping modes.
 * Multiple channels (with single and/or multiple languages) with different site experiences per channel.
-  * ie: a single brand site configured for Australia, Canada and Germany, where each country has a unique site experience along with different products, currency, prices, discounts, shipping modes, etc...
+  * For example, a single brand site configured for Australia, Canada and Germany, where each country has a unique site experience along with different products, currency, prices, discounts, and shipping modes.
 
 ## Online channels
 
@@ -60,7 +62,7 @@ An e-commerce site represents the set of pages that make up the website that cus
 
 ## Common channel mapping scenarios
 
-Dynamics 365 Commerce supports a great range of channel mapping scenarios, the below is just a subset meant as a guide to help planning any unique business scenarios you may have.  The ficticious Adventure Works sporting goods store included with Dynamics 365 Commerce demo data will be used as an example with a progression through each scenario.
+Dynamics 365 Commerce supports a great range of channel mapping scenarios, the below is just a subset meant as a guide to help planning any unique business scenarios you may have. The fictitious Adventure Works sporting goods store included with Dynamics 365 Commerce demo data will be used as an example with a progression through each scenario.
 
 ### Single language channel with a single e-commerce site experience
 
@@ -68,15 +70,15 @@ The most basic scenario is a single channel with a single language for selling i
 
 ![Adventure Works online store in HQ](media/channel-mapping-3.png)
 
-The single online channel can then be mapped to a single e-commerce site within site builder. See [mapping a channel to a site in site builder](#mapping-a-channel-to-a-site-in-site-builder) below to learn how how to create a new site and map it to a channel.
+The single online channel can then be mapped to a single e-commerce site within site builder. See [mapping a channel to a site in site builder](#mapping-a-channel-to-a-site-in-site-builder) below to learn how to create a new site and map it to a channel.
 
 ### Multi-language channel with a single localized site experience
 
 A channel supports additional languages allowing localization of product names, descriptions and attributes within headquarters.  Marketing data on the site can also be localized within site builder to provide a complete localized site experience.  
 
-The limitations of this scenario is that a single channel can only be configured with one currency, one legal entity, one set of products and prices, etc... so it works best for scenarios like countries with a single currency and multiple languages such as Canada with English and French.
+The limitation of this scenario is that a single channel can only be configured with one currency, one legal entity, and one set of products and prices, so it works best for scenarios like countries with a single currency and multiple languages such as Canada with English and French.
 
-The below image show the Adventure Works online channel configured with many different languages.  See the section [enable the site picker](#enable-the-site-picker) below for more information.  
+The below image show the Adventure Works online channel configured with many different languages. See the section [enable the site picker](#enable-the-site-picker) below for more information.  
 
 ![Multiple languages configured on a single online channel](media/channel-mapping-9.png)
 
@@ -91,7 +93,7 @@ Similar to the scenario above, you may want to offer a completely different site
 
 ### Multiple channels (with single and/or multiple languages) with a single localized site experience
 
-A branded site may require multiple online channels per region to support a different set of products, prices and currency for each but retain a single site. For example, Adventure Works could have one online channel for the Canadian market with multiple languages, a channel for the American market and one for the German market.  Each online channel would be configured to a region specific business entity and can either have the same set of products, sub set of products, or a different set of product each with their own unique prices (in their regional currency), taxes, discounts, shipping modes, etc...
+A branded site may require multiple online channels per region to support a different set of products, prices and currency for each but retain a single site. For example, Adventure Works could have one online channel for the Canadian market with multiple languages, a channel for the American market and one for the German market.  Each online channel would be configured to a region specific business entity and can either have the same set of products, sub set of products, or a different set of product each with their own unique prices (in their regional currency), taxes, discounts, and shipping modes.
 
 To configure multiple channels on a site, see [Configure multiple channels on an e-commerce site](#configure-multiple-channels-on-an-e-commerce-site) below.  
 
