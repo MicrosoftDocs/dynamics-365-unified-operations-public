@@ -15,6 +15,8 @@ ms.search.validFrom: 03-28-2022
 ---
 
 # Dynamics 365 Translation Service DevOps extension tutorial
+[!include[banner](../includes/banner.md)]
+[!include[preview banner](../includes/preview-banner.md)]
 
 The Dynamics 365 Translation Service (DTS) Azure DevOps extension provides several tasks for pipeline integration. Use this extension to conveniently translate your Dynamics 365 solutions from Azure DevOps.
 
