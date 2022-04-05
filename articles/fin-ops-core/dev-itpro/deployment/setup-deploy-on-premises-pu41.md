@@ -190,7 +190,7 @@ You must complete the following steps to set up the infrastructure for Finance +
 1. [Set up VMs](#setupvms)
 1. [Set up a standalone Service Fabric cluster](#setupsfcluster)
 1. [Configure LCS connectivity for the tenant](#configurelcs)
-1. [Configure the SQL Server certificate](#configuresql)
+1. [Configure the SQL Server certificate](#configuresqlcert)
 1. [Configure the databases](#configuredb)
 1. [Encrypt credentials](#encryptcred)
 1. [Configure AD FS](#configureadfs)
