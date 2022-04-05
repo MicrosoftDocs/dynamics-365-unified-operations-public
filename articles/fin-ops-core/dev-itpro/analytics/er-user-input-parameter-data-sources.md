@@ -109,7 +109,7 @@ The following illustration shows the dialog box that is offered at runtime when 
 
 ### Data model enumeration user input parameter
 
-Use a data source of the **Data model \> Enumeration user input parameter** type to obtain the necessary value or values of a single data model enumeration. When you add a data source of this type to an ER component, specify the following properties:
+Use a data source of the **Data model \> Enumeration user input parameter** type to obtain the necessary value or values of a single data model [enumeration](er-formula-supported-data-types-primitive.md#enumeration). When you add a data source of this type to an ER component, specify the following properties:
 
 -   In the **Model** field, refer to the base data model.
 -   In the **Model enumeration** field, refer to an enumeration of the referred data model.
