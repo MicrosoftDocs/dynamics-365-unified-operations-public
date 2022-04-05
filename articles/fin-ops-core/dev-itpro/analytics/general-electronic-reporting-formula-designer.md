@@ -46,7 +46,8 @@ You can open the **Formula designer** page when you perform any of the following
 - Bind data source items to data model components.
 - Bind data source items to format components.
 - Complete maintenance of calculated fields that are part of data sources.
-- Define the visibility conditions for user input parameters.
+- Define the visibility and editability conditions for user input parameters.
+- Define the default values for user input parameters.
 - Design a format's transformations.
 - Define the enabling conditions for the format's components.
 - Define the file names for the format's FILE components.
