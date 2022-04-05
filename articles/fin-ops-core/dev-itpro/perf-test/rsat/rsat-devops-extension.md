@@ -211,6 +211,6 @@ Here are some examples:
 
 ### Run the console app with a specific settings file
 
-By default, the console app uses settings configured by the user account via the RSAT with user interface. To specify a different settings file, use the `settings` parameter, as shown in the following example.
+By default, the console app uses settings configured by the user account via the RSAT user interface. To specify a different settings file, use the `settings` parameter, as shown in the following example.
 
 `.\Microsoft.Dynamics.RegressionSuite.ConsoleApp.exe /settings "C:\Users\rob\Documents\RSAT\SettingFiles\Canaryenv.settings" playbacksuite "Acceptance Test Suite 1"`
