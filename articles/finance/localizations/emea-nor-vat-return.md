@@ -5,7 +5,7 @@ title: VAT return with direct submission to Altinn
 description: This topic provides information about the VAT return with direct submission to Altinn feature that can be used to submit value-added tax (VAT) returns in Norway.
 author: liza-golub
 ms.author: elgolu
-ms.date: 11/28/2021
+ms.date: 03/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -41,6 +41,9 @@ For more information about how to prepare a VAT return with direct submission to
 - [Checklist for Electronic messages setup for VAT returns with direct submission to Altinn](emea-nor-vat-return-checklist.md)
 - [Authorize your Finance environment to interoperate with ID-porten and Altinn web services](emea-nor-vat-return-authorization.md)
 - [Submit a VAT return to the Altinn web service](emea-nor-vat-return-submission.md)
+
+> [!NOTE]
+> VAT returns for periods before January 1, 2022, and corrections that are made to those VAT returns, must be reported in the format that is described in [VAT statement for Norway](emea-nor-sales-tax-payment-report.md).
 
 ## Privacy notice
 
