@@ -4,7 +4,7 @@
 title: Upgrade or replace the SQL Server instance of Microsoft Dynamics 365 Finance + Operations (on-premises) environments
 description: This topic explains how to upgrade the Microsoft SQL Server instance or cluster that your environment is using.
 author: faix
-ms.date: 03/31/2022
+ms.date: 04/05/2022
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
