@@ -269,6 +269,11 @@ A worker registers a break by selecting **Break** and then selecting the card th
 
 Workers can open a document that is attached to a job by selecting **Instructions**. The **Instructions** button is available only if a document is associated with the job in the master data. For example, a document that is attached to a product on the **Released products** page in Supply Chain Management will be available for workers to open in the shop floor execution interface.
 
+## My day view
+
+The **My day** button can be configured so that it appears on the toolbars. In the **My day** dialog workers can get an overview of their daily registrations and balances. The dialog is divided in three sections. In the first section the workers gets a specification of the registrations they have made on a given date. In the date picker, the worker can select for which day to see registrations. In the *Last calculated daily balance* section the worker can see the balances for paid time, paid over time, absence, and paid absence for the actual day based on the registrations that have calculated in the approval process. In the *balances* section, the worker can get an overview of the balances within a defined period for selected categories of registrations such as vacation, standard time, and overtime. These balances are based on the setup of statistical balances in time and attendance. Learn more about statistical balances here: XXX
+
+
 ## Opening mixed-reality guides for HoloLens
 
 [Dynamics 365 Guides](https://dynamics.microsoft.com/mixed-reality/guides/) can help empower workers by providing hands-on learning that uses mixed reality. You can define standardized processes where step-by-step instructions guide workers to the tools and parts that they need and show how to use those tools in real work situations. Here is an overview of the process.
