@@ -4,7 +4,7 @@
 title: Set up and deploy on-premises environments (Platform update 41 and later)
 description: This topic explains how to plan, set up, and deploy Microsoft Dynamics 365 Finance + Operations (on-premises) with Platform update 41 and later.
 author: faix
-ms.date: 03/31/2022
+ms.date: 04/05/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -522,7 +522,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
 
     1. If you need to reuse any certificate and therefore don't have to generate the certificate, set the **generateADCSCert** tag to **false** in the **ConfigTemplate.xml** file.
 
-3. If you're using SSL certificates that were previously generated, skip certificate generation, update the thumbprints in the **ConfigTemplate.xml** file. The certificates can be installed in the **CurrentUser\\My** or **LocalMachine\\My** certificate stores. Additionally, their private keys must be exportable.
+3. If you're using SSL certificates that were previously generated, skip certificate generation and update the thumbprints in the **ConfigTemplate.xml** file. The certificates can be installed in the **CurrentUser\\My** or **LocalMachine\\My** certificate stores. Additionally, their private keys must be exportable.
 
     > [!WARNING]
     > Because of a leading non-printable special character, the presence of which is difficult to determine, the Certificate Manager tool (certlm.msc) should not be used to copy thumbprints on Windows Server 2016. If the non-printable special character is present, you will receive the following error message: "X509 certificate not valid." To retrieve the thumbprints, see the results from Windows PowerShell commands, or run the following commands in Windows PowerShell.
@@ -746,7 +746,7 @@ Get an SSL certificate from a CA to configure SQL Server for Finance + Operation
 
 **Deploying certificates for an Always-On SQL availability group or instance**
 
-This script automates the steps described in the manual process below. If not remoting, connect to a SQL machine and open Powershell with Administrator privileges. Then, navigate to the **infrastructure** folder located in your fileshare and run the command below. Do these steps for each invididual node.
+This script automates the steps described in the manual process below. If not remoting, connect to a SQL machine and open Powershell with administrator privileges. Then, navigate to the **infrastructure** folder located in your fileshare and run the command below. Do these steps for each invididual node.
 
 ```powershell
 # If Remoting, execute
@@ -822,7 +822,7 @@ You can verify that everything has been configured correctly by executing the fo
     > - The user who is running the SQL service and the user who is running the scripts should have **Read** access on the folder or share where the backup file is located.
     > - If an existing database already has the same name, it won't be overwritten.
 
-1. Connect to a machine in your SQL cluster. Then open Windows PowerShell in elevated mode, and navigate to the **infrastructure** folder located in your fileshare.
+1. Connect to a machine in your SQL cluster. Then open Windows PowerShell in elevated mode, and navigate to the **Infrastructure** folder located in your fileshare.
 
 #### Configure the OrchestratorData database
 
@@ -968,7 +968,7 @@ For more information about how to use the script, see the documentation that is 
 > [!NOTE]
 > If you want to reuse your previously configured AD FS server for additional environments, see [Reuse the same AD FS instance for multiple environments](./onprem-reuseadfs.md).
 
-Connect to a server hosting your AD FS instance/farm and open Powershell with Administrator privileges and navigate to the **infrastructure** folder in your fileshare. Then execute the following command.
+Connect to a server hosting your AD FS instance/farm and open Powershell with administrator privileges and navigate to the **Infrastructure** folder in your fileshare. Then execute the following command.
 
 ```powershell
 # Host URL is your DNS record\host name for accessing the AOS
