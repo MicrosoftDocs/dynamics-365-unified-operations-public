@@ -1020,7 +1020,7 @@
           href: lifecycle-services/use-translation-service-tm.md
         - name: Azure DevOps extension (Public Preview)
           href: lifecycle-services/dts-devops-extension.md
-        - name: Dynamics 365 Translation Service DevOps extension tutorial (Public Preview)
+        - name: Azure DevOps extension tutorial (Public Preview)
           href: lifecycle-services/dts-ado-tutorial.md
     - name: Microsoft Power Platform integration
       items:
