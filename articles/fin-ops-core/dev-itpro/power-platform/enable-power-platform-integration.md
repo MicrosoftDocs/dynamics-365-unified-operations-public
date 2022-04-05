@@ -517,7 +517,7 @@ GET [Organization URI]/api/data/v9.1/RetrieveFinanceAndOperationsIntegrationDeta
 | Property<br>**Physical name**<br>***Type*** | Use | Description |
 | --- | --- | --- |
 | Environment URL<br>**Url**<br>***String*** | Read-only<br>Required | The URL of the Finance and Operations apps environment linked to the Power Platform environment through the Power Platform integration |
-| Tenant ID<br>**TenantId**<br>***GUID*** | Read-only<br>Required | The ID of the Azure Active Directory (AAD) tenant on which both the Finance and Operations apps environment and Power Platform environment are located. |
+| Tenant ID<br>**TenantId**<br>***GUID*** | Read-only<br>Required | The ID of the Azure Active Directory (AAD) tenant on which both the Finance and Operations apps environment and Power Platform environment are located |
 | Environment ID<br>**Id**<br>***GUID*** | Read-only<br>Required | The ID of the Finance and Operations apps environment linked to the Power Platform environment through the Power Platform integration |
 
 If the environment is not linked to a Finance and Operations apps environment through the Power Platform integration, the following error is returned in the API response:
