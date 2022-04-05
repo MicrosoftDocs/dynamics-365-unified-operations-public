@@ -59,33 +59,33 @@ To learn more about how to create and manage sites from within site builder, see
 
 ## Common channel mapping scenarios
 
-Dynamics 365 Commerce supports a wide range of channel mapping scenarios. The channel mapping scenarios that follow are just a subset of all possible channel mapping scenarios and are meant as a guide to help you plan for any unique business scenarios that you may have. The fictitious Adventure Works sporting goods store included with Dynamics 365 Commerce demo data is used as an example for each scenario.
+Dynamics 365 Commerce supports a wide range of channel mapping scenarios. The channel mapping scenarios that follow are just a subset of all possible channel mapping scenarios and are meant as a guide to help you plan for any unique business scenarios that you may have. The fictitious Adventure Works sporting goods store included with the Dynamics 365 Commerce demo data is used as an example for each scenario.
 
 ### Single language channel with a single e-commerce site experience
 
-The most basic scenario is a single channel with a single language for selling in a single market. An example for this scenario is the Adventure Works online store setup only for the United States English market. The below image shows an example of the channel setup within headquarters. Notice how an online channel only supports a single currency and it is set to "USD" and a single business entity "usrt" which is used for tax reporting on the US business.
+The most basic scenario is a single channel with a single language for selling in a single market. An example for this scenario is the Adventure Works online store that is set up only for the United States English market. The following example illustration shows an example of the channel setup within headquarters where the online channel only supports a single language ("en-us"), a single currency ("USD"), and a single business entity ("usrt") that is used for tax reporting.
 
-![Adventure Works online store in headquarters](media/channel-mapping-3.png)
+![Adventure Works online store in Commerce headquarters with legal entity, currency, and language entries highlighted](media/channel-mapping-3.png)
 
-The single online channel can then be mapped to a single e-commerce site within site builder. See [mapping a channel to a site in site builder](#mapping-a-channel-to-a-site-in-site-builder) below to learn how to create a new site and map it to a channel.
+The single online channel can be mapped to a single e-commerce site within site builder. To learn how to create a new site and map it to a channel, see [Map a channel to a site in site builder](#map-a-channel-to-a-site-in-site-builder).
 
 ### Multi-language channel with a single localized site experience
 
-A channel supports additional languages allowing localization of product names, descriptions and attributes within headquarters.  Marketing data on the site can also be localized within site builder to provide a complete localized site experience.  
+In this scenario, a single channel supports more than one language which allows the localization of product names, descriptions, and attributes in headquarters. Marketing content on the site can also be localized within site builder to provide a complete localized site experience.  
 
-The limitation of this scenario is that a single channel can only be configured with one currency, one legal entity, and one set of products and prices, so it works best for scenarios like countries with a single currency and multiple languages such as Canada with English and French.
+The limitation of this scenario is that a single channel can only be configured with one currency, one legal entity, and one set of products and prices. This configuration works best for countries with a single currency and multiple languages, for example Canada with both English and French languages but a single currency, single legal entity, and single set of products and prices.
 
-The below image shows the Adventure Works online channel configured with many different languages. See the section [enable the site picker](#enable-the-site-picker) below for more information.  
+The following example illustration shows the Adventure Works online channel configured with multiple languages. For information on allowing customers to swithc between languages, see [Enable the site picker](#enable-the-site-picker).  
 
-![Multiple languages configured on a single online channel](media/channel-mapping-9.png)
+![Multiple languages configured for a single online channel in Commerce headquarters](media/channel-mapping-9.png)
 
-The different languages can be configured with their own domain names such as www.adventure-works.ca for the English Canada version or www.adventure-works-fr.ca for the French Canada version or a single domain using different paths for such as www.adventure-works.ca for the English Canada version and www.adventure-works.ca/fr for the French Canada version.  [Geo detection](geo-detection-redirection.md) can also be enabled to automatically redirect to the correct site based on the region.
+Different languages within a channel can be configured with their own domain names, for example `www.adventure-works.ca` for the Canada English version and `www.adventure-works-fr.ca` for the Canada French version. Alternatively, different languages within a channel can be configured within a single domain using different paths for each language, for example `www.adventure-works.ca` for the Canada English version and `www.adventure-works.ca/fr` for the Canada French version. [Geo detection](geo-detection-redirection.md) can also be enabled to automatically redirect a user to the correct site based on the user's location.
 
-See [managing site content with multiple channels and languages](#managing-site-content-with-multiple-channels-and-languages) below to learn how to customize localized pages and fragments.
+For information on customizing localized pages and fragments, see [managing site content with multiple channels and languages](#managing-site-content-with-multiple-channels-and-languages).
 
 ### Multi-language channel with different site experiences per language
 
-Similar to the scenario above, you may want to offer a completely different site experience for one language over the other.  The recommended way is to use the page variants on a single site as discussed in the previous scenario but if desired you can create a new e-commerce site in site builder and map each to a single online channel and language.  This would result in a single online channel being mapped to multiple e-commerce sites, one per language.  This scenario would add extra management since you will now have multiple sites to independently manage within site builder.
+Similar to the previous scenario, you may want to offer a completely different site experience between languages. The recommended way is to use the page variants on a single site as discussed in the previous scenario but if desired you can create a new e-commerce site in site builder and map each to a single online channel and language. This would result in a single online channel being mapped to multiple e-commerce sites, one per language. This scenario would add extra management since you will now have multiple sites to independently manage within site builder.
 
 ### Multiple channels (with single and/or multiple languages) with a single localized site experience
 
@@ -123,19 +123,19 @@ In general you won't create new sites as shown above since it will start out as 
 
 ![Site copy in site builder](media/channel-mapping-5.png)
 
-Notice in the image above that the online channel and language selection is not an option to pick at this point, this can be done once the site copy has completed.  When the site is selected in site builder site list for the first time, it will bring up a setup dialog where the default channel and language can be selected as shown in the below image.
+Notice in the image above that the online channel and language selection is not an option to pick at this point, this can be done once the site copy has completed.  When the site is selected in site builder site list for the first time, it will bring up a setup dialog where the default channel and language can be selected as shown in the following example illustration.
 
 ![Initialize site in site builder](media/channel-mapping-6.png)
 
 ### Manage an existing site channel
 
-Once a site has been configured with its channel, it can easily be managed/changed from within the selected site in site builder under the **Site Settings**, **Channels** tab as shown in the below image.
+Once a site has been configured with its channel, it can easily be managed/changed from within the selected site in site builder under the **Site Settings**, **Channels** tab as shown in the following example illustration.
 
 ![Manage channel mapping in site builder](media/channel-mapping-7.png)
 
 ### Support multiple sites in a single tenant
 
-Many branded sites can co-exist in a single tenant.  Notice the site list in the below image has three different branded sites (Adventure Works, Adventure Works Business (B2B site) and a site for Fabrikam) each mapped to different single online channel.
+Many branded sites can co-exist in a single tenant.  Notice the site list in the following example illustration has three different branded sites (Adventure Works, Adventure Works Business (B2B site) and a site for Fabrikam) each mapped to different single online channel.
 
 ![Site list in site builder](media/channel-mapping-8.png)
 
@@ -149,13 +149,13 @@ The languages can then be configured on the e-commerce site within site builder 
 
 ![Multiple languages configured on a site](media/channel-mapping-10.png)
 
-To add a new channel language, select the channel link highlighted in the below image and a channel locale mapping will pop up where you can select **Add a locale** where you can pick the channel and locale to add plus the path to use for that channel.
+To add a new channel language, select the channel link highlighted in the following example illustration and a channel locale mapping will pop up where you can select **Add a locale** where you can pick the channel and locale to add plus the path to use for that channel.
 
 ![Adding languages to a site](media/channel-mapping-11.png)
 
 #### Enable the site picker
 
-Once you have configured a site to have multiple languages and or channels, you may want to add a language selector to the header to select the language or country.  The module library [header](author-header-module.md) module has built in support for users to select a language using the [site picker](site-selector.md) module.  The site picker can be added within the header fragment which has the header module as shown in the below image. As can be seen, the header module has a **Site Picker** slot, edit the fragment and add the **Site picker** module to the slot and then select **Add site options list** from the site picker module configurations to add a new language.  You can then add the text that will show up in the picker drop-down list and the URL with the path you created when adding the channel to the site (ie: www.adventure-works.com/fr-ca).
+Once you have configured a site to have multiple languages and or channels, you may want to add a language selector to the header to select the language or country.  The module library [header](author-header-module.md) module has built in support for users to select a language using the [site picker](site-selector.md) module.  The site picker can be added within the header fragment which has the header module as shown in the following example illustration. As can be seen, the header module has a **Site Picker** slot, edit the fragment and add the **Site picker** module to the slot and then select **Add site options list** from the site picker module configurations to add a new language.  You can then add the text that will show up in the picker drop-down list and the URL with the path you created when adding the channel to the site (ie: www.adventure-works.com/fr-ca).
 
 ![Setup site selector on header](media/channel-mapping-12.png)
 
@@ -173,7 +173,7 @@ Site builder supports the ability to change how a page looks based on the select
 
 A site that has multiple channels and/or languages stores unique variants of each page and fragment per channel/language combination, this allows the variant to contain localized data but also provides the flexibility to change the look and feel of the page for that variant.  
 
-The below image shows how to change the channel or language context within site builder.  
+The following example illustration shows how to change the channel or language context within site builder.  
 
 ![Change channel or language in site builder](media/channel-mapping-16.png)
 
@@ -187,7 +187,7 @@ An alternative to manually creating each page and fragment is to export each pag
 
 ## Configure multiple channels on an e-commerce site
 
-Adding additional channels to an e-commerce site can be done in site builder under the **Site settings**, **Channels** tab with the **Add a channel** button as shown in the below image, where the online channel and default locale can be selected.  
+Adding additional channels to an e-commerce site can be done in site builder under the **Site settings**, **Channels** tab with the **Add a channel** button as shown in the following example illustration, where the online channel and default locale can be selected.  
 
 ![Adding a channel to an existing site](media/channel-mapping-15.png)
 
