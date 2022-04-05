@@ -181,13 +181,13 @@
         "dev-itpro/lifecycle-services/ax-2012/**/*.md": "/dynamics365/ops-bc/toc.json"
       },
       "ms.service": {
-        "commerce/**/**.md": "dynamics-365-commerce",
-        "finance/**/**.md": "dynamics-365-finance",
-        "fin-ops-core/**/**.md": "dynamics-365-cross-app",
-        "fin-ops-core/dev-itpro/lifecycle-services/ax-2012/**/**.md": "",
-        "human-resources/**/**.md": "dynamics-365-human-resources",
-        "supply-chain/**/**.md": "dynamics-365-supply-chain",
-        "talent/**/**.md": "dynamics-365-talent"
+        "commerce/**/**.*": "dynamics-365-commerce",
+        "finance/**/**.*": "dynamics-365-finance",
+        "fin-ops-core/**/**.*": "dynamics-365-cross-app",
+        "fin-ops-core/dev-itpro/lifecycle-services/ax-2012/**/**.*": "",
+        "human-resources/**/**.*": "dynamics-365-human-resources",
+        "supply-chain/**/**.*": "dynamics-365-supply-chain",
+        "talent/**/**.*": "dynamics-365-talent"
       },
       "ms.reviewer": {
         "human-resources/**/**.md": "twheeloc",

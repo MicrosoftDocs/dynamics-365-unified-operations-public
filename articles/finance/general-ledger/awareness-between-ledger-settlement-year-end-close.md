@@ -4,7 +4,7 @@
 title: Awareness between ledger settlement and year-end close
 description: This topic provides information about enhancements which impact ledger settlements and the General ledger year-end close.
 author: kweekley
-ms.date: 01/31/2022
+ms.date: 03/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,7 +30,6 @@ ms.dyn365.ops.version: 10.0.25
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 In Microsoft Dynamics 365 Finance version 10.0.25, the **Awareness between ledger settlement and year-end close** feature is available in the **Feature management** workspace. This feature adds two primary enhancements that affect ledger settlement and general ledger year-end close.
 

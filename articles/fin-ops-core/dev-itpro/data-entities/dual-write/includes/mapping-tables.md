@@ -1,6 +1,6 @@
 ---
 author: tonyafehr
-ms.service: dynamics-ax-applications
+
 ms.topic: include
 ms.date: 7/12/2021
 ms.author: tfehr

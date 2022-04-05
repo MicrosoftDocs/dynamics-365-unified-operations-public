@@ -390,7 +390,7 @@
           href: tasks/worker.md
         - name: Modern Point of Sale (MPOS), Cloud POS, and Store Commerce 
           items:
-          - name: Store Commerce app in Microsoft Dynamics 365 Commerce (Preview)
+          - name: Store Commerce app
             href: dev-itpro/store-commerce.md
           - name: Device management implementation guidance
             href: implementation-considerations-devices.md
@@ -2102,6 +2102,10 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/commerce/toc.json 
           - name: Debug data sources
             href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/commerce/toc.json
+        - name: Configure data models
+          items: 
+          - name: Support parameterized calls of ER data models
+            href: ../fin-ops-core/dev-itpro/analytics/er-data-model-parameterized-calls.md?toc=/dynamics365/commerce/toc.json
         - name: Configure model mappings
           items: 
           - name: Configure country context dependent ER model mappings
@@ -2762,6 +2766,8 @@
               href: e-commerce-extensibility/clone-starter-module.md
             - name: Extend a module definition
               href: e-commerce-extensibility/extend-module-definition.md
+            - name: Change module library static strings
+              href: e-commerce-extensibility/change-module-library-strings.md
           - name: Data actions
             items:
             - name: Data action overrides
@@ -2802,6 +2808,8 @@
               href: e-commerce-extensibility/page-caching.md
             - name: Data action instance cache
               href: e-commerce-extensibility/instance-cache.md
+            - name: Module CSS optimization
+              href: e-commerce-extensibility/module-css-optimization.md
           - name: Telemetry and analytics
             items:
             - name: Telemetry logger
@@ -2864,6 +2872,8 @@
         items:
         - name: Refund on return order is declined
           href: troubleshoot/refund-declined.md
+        - name: Refundable charges are miscalculated based on the quantity returned
+          href: troubleshoot/refund-miscalculated-partial-return.md
         - name: Dynamics 365 Payment Connector for Adyen
           items:
           - name: Troubleshoot Dynamics 365 Payment Connector for Adyen issues

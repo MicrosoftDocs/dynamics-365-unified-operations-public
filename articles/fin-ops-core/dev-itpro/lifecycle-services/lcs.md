@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-Lifecycle Services (LCS) for Microsoft Dynamics is a collaboration portal that provides an environment and a set of regularly updated services that can help you manage the application lifecycle of your implementations of the Dynamics 365 Finance and Operations apps.
+Lifecycle Services (LCS) for Microsoft Dynamics is a collaboration portal that provides an environment and a set of regularly updated services that can help you manage the application lifecycle of your implementations of Finance and Operations apps.
 
 -   [What's new in Lifecycle Services (LCS)](whats-new-lcs.md)
 -   [Lifecycle Services (LCS) user guide](lcs-user-guide.md)
@@ -54,7 +54,7 @@ Lifecycle Services (LCS) for Microsoft Dynamics is a collaboration portal that p
 
 ### Additional resources
 
--   For information about how to contact Microsoft if you have technical questions about Dynamics 365 Finance and Operations apps, or if you need help accessing Microsoft Dynamics Lifecycle Services (LCS), see [Get support for Finance and Operations apps or Lifecycle Services (LCS)](lcs-support.md).
+-   For information about how to contact Microsoft if you have technical questions about Finance and Operations apps, or if you need help accessing Microsoft Dynamics Lifecycle Services (LCS), see [Get support for Finance and Operations apps or Lifecycle Services (LCS)](lcs-support.md).
 -   For information about how to contact Microsoft if you have technical questions about Microsoft Dynamics AX 2012 or need support, see [Manage the support experiences for Finance and Operations apps](cloud-powered-support-lcs.md).
 
 
