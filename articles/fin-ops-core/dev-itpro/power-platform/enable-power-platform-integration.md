@@ -4,7 +4,7 @@
 title: Enable the Microsoft Power Platform integration
 description: This topic explains how to enable the Microsoft Power Platform integration by using Microsoft Dynamics Lifecycle Services (LCS) for Finance and Operations apps and Dataverse.
 author: jaredha
-ms.date: 03/02/2022
+ms.date: 04/05/2022
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -516,14 +516,14 @@ GET [Organization URI]/api/data/v9.1/RetrieveFinanceAndOperationsIntegrationDeta
 
 | Property<br>**Physical name**<br>***Type*** | Use | Description |
 | --- | --- | --- |
-| Environment URL<br>**Url**<br>***String*** | Read-only<br>Required | The URL of the Finance and Operations apps environment linked to the Power Platform environment through the Power Platform integration |
-| Tenant ID<br>**TenantId**<br>***GUID*** | Read-only<br>Required | The ID of the Azure Active Directory (AAD) tenant on which both the Finance and Operations apps environment and Power Platform environment are located |
-| Environment ID<br>**Id**<br>***GUID*** | Read-only<br>Required | The ID of the Finance and Operations apps environment linked to the Power Platform environment through the Power Platform integration |
+| Environment URL<br>**Url**<br>***String*** | Read-only<br>Required | The URL of the Finance and Operations apps environment linked to the Power Platform environment through the Power Platform integration. |
+| Tenant ID<br>**TenantId**<br>***GUID*** | Read-only<br>Required | The ID of the Azure Active Directory (AAD) tenant on which both the Finance and Operations apps environment and Power Platform environment are located. |
+| Environment ID<br>**Id**<br>***GUID*** | Read-only<br>Required | The ID of the Finance and Operations apps environment linked to the Power Platform environment through the Power Platform integration. |
 
 If the environment is not linked to a Finance and Operations apps environment through the Power Platform integration, the following error is returned in the API response:
 
 | Error code | Message |
 | --- | --- |
-| 0x80048d0b | Dataverse environment is not integrated with FinanceAndOperations |
+| 0x80048d0b | Dataverse environment is not integrated with Finance and Operations. |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
