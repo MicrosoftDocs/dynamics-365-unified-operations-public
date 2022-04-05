@@ -2,7 +2,7 @@
 title: Regression suite automation tool (RSAT)
 description: The Regression suite automation tool (RSAT) lets you record business tasks using the task recorder and convert them into automated tests without writing code.
 author: FrankDahl
-ms.date: 12/07/2021
+ms.date: 03/29/2022
 ms.topic: overview
 ms.prod:
 ms.technology:
@@ -44,6 +44,7 @@ In addition to this topic, RSAT usage is described in these topics:
 + [Upgrade the parameter files](rsat-upgrade-parameter-files.md)
 + [Regression suite automation tool (RSAT) best practices](rsat-best-practices.md)
 + [Troubleshoot the Regression suite automation tool (RSAT)](rsat-troubleshooting.md)
++ [Integrate RSAT with Azure DevOps pipelines](rsat-devops-extension.md)
 
 ## Getting started videos
 
