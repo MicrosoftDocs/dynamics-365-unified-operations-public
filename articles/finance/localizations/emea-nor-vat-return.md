@@ -43,7 +43,7 @@ For more information about how to prepare a VAT return with direct submission to
 - [Submit a VAT return to the Altinn web service](emea-nor-vat-return-submission.md)
 
 > [!NOTE]
-> VAT returns of the periods before January 1, 2022 and the corrections made to them must be reported in the format described in the topic,[VAT statement for Norway](emea-nor-sales-tax-payment-report.md).
+> VAT returns for periods before January 1, 2022, and corrections that are made to those VAT returns, must be reported in the format that is described in [VAT statement for Norway](emea-nor-sales-tax-payment-report.md).
 
 ## Privacy notice
 
