@@ -513,6 +513,7 @@ GET [Organization URI]/api/data/v9.1/RetrieveFinanceAndOperationsIntegrationDeta
 ```
 
 **Properties**
+
 | Property<br>**Physical name**<br>***Type*** | Use | Description |
 | --- | --- | --- |
 | Environment URL<br>**Url**<br>***String*** | Read-only<br>Required | The URL of the Finance and Operations apps environment linked to the Power Platform environment through the Power Platform integration |
