@@ -1506,6 +1506,8 @@
         href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
       - name: Run Regression suite automation tool (RSAT) with parallel execution
         href: perf-test/rsat/rsat-parallel-execution.md
+      - name: Integrate RSAT with Azure DevOps pipelines
+        href: perf-test/rsat/rsat-devops-extension.md
       - name: Troubleshooting
         href: perf-test/rsat/rsat-troubleshooting.md
     - name: Release solutions using Lifecycle Services

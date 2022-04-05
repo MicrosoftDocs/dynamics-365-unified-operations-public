@@ -30,7 +30,7 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
-| Inventory and logistics | [Inventory Visibility on-hand query to support advanced warehouse management items](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-visibility-support-advanced-warehouse-management) | Coming soon | Feature management:<br>*Enable warehouse items in Inventory Visibility* |
+| Inventory and logistics | [Inventory Visibility on-hand query to support advanced warehouse management items](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-visibility-support-advanced-warehouse-management) | [Inventory Visibility support for WHS items](../inventory/inventory-visibility-whs-support.md) | Feature management:<br>*Enable warehouse items in Inventory Visibility* |
 | Inventory and logistics | [Available-to-promise for the Inventory Visibility Add-in](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/available-to-promise-inventory-visibility-add-in) | [Inventory Visibility on-hand change schedules and available to promise](../inventory/inventory-visibility-available-to-promise.md) | Enabled by service configuration |
 | Manufacturing | [Catch weight items for the production floor execution interface](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/catch-weight-items-production-floor-execution-interface) | [How workers use the production floor execution interface](../production-control/production-floor-execution-use.md) | Feature management:<br>*(Preview) Report on catch weight items from the production floor execution interface* |
 | Manufacturing | My jobs tab on the production floor execution interface <!-- KFM: Add link to release plan when available --> | [How workers use the production floor execution interface](../production-control/production-floor-execution-use.md) | Feature management:<br>*My jobs tab on the production floor execution interface* |
@@ -64,7 +64,7 @@ We have recently added or significantly updated the following help topics. These
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.26 includes platform updates. To learn more, see [Platform updates for version 10.0.26 of Finance and Operations apps (May 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-26.md).<!-- KFM Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.26 includes platform updates. To learn more, see [Platform updates for version 10.0.26 of Finance and Operations apps (May 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-26.md).
 
 ### Bug fixes
 
