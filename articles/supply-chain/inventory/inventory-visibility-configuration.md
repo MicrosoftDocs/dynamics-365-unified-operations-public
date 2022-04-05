@@ -42,7 +42,7 @@ After the configuration is completed, be sure to select **Update Configuration**
 
 ## <a name="feature-switch"></a>Enable Inventory Visibility features in Power Apps feature management
 
-The Inventory Visibility Add-in adds several new features to your Power Apps installation. By default, these features are turned off. To use them, open the **Configuration** page and then, on the **Feature Management** tab, turn on the following features as needed.
+The Inventory Visibility Add-in adds several new features to your Power Apps installation. By default, these features are turned off. To use them, open the **Configuration** page, and then, on the **Feature Management** tab, turn on the following features as you require.
 
 | Feature Management name | Description |
 |---|---|
