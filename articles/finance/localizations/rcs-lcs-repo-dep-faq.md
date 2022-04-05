@@ -56,7 +56,7 @@ Import all required configurations from LCS to RCS, and then publish them from R
 
 1. If an RCS instance isn't already available, provision one. For more information, see [RCS overview](rcs-overview.md).
 2. In the provisioned RCS instance, for every LCS project in the Asset library that includes derived ER configurations, register the appropriate LCS repository.
-3. Import the ER configurations from the LCS repositories to RCS. For more information, see [Import configurations from LCS](../../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md).
+3. Import the ER configurations from the LCS repositories to RCS. For more information, see [Import configurations from LCS](/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services).
 4. If the Global repository isn't automatically provided, register it in RCS.
 5. Upload all derived configurations from the current RCS instance to the Global repository. Use the **Configuration packages** feature to help with the upload. For more information, see [RCS global repo upload](rcs-global-repo-upload.md).
 

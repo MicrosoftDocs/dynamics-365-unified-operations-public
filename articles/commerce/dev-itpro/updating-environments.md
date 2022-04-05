@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Retail 7.3
 
 An environment can be updated by updating either its data or its code.
 
-There are multiple ways to update the data. For examples that show how to get data into an environment, see [Integration between Finance and Operations apps and third-party services](../../dev-itpro/data-entities/integration-overview.md).
+There are multiple ways to update the data. For examples that show how to get data into an environment, see [Integration between Finance and Operations apps and third-party services](/dynamics365/fin-ops-core/dev-itpro/data-entities/integration-overview).
 
 When you update an environment, you should also consider moving the whole database. This approach lets you quickly and easily duplicate the data from one environment to another.
 
