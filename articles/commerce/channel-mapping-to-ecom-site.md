@@ -30,45 +30,42 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic describes some of the more common channel mapping scenarios in Microsoft Dynamics 365 Commerce that can be extrapolated for most other business requirements.
 
-Dynamics 365 Commerce supports many business scenarios to map [online channels](#online-channels) with a configured set of products, prices, and discounts to [e-commerce site](#e-commerce-site) experiences for their customers. This article provides guidance for some of the more common mapping scenarios which can be extrapolated for most other business requirements.
+Dynamics 365 Commerce supports many business scenarios to map [online channels](#online-channels) with a configured set of products, prices, and discounts to [e-commerce site](#e-commerce-site) experiences for their customers.
 
-The scenarios covered in this topic include:
-* A single language channel with a single e-commerce site experience.
-  * For example, a single brand site configured for the English United States market.
-* A multi-language channel with a single localized site experience.
-  * For example, a single brand site configured for Canada with French and English language support where both languages provide the same site experience but are localized into the appropriate languages.
-* A multi-language channel with different site experiences per language.
-  * For example, a single brand site configured for Canada with unique site experiences for French Quebec region users and English region users.
-* Multiple channels (with single and/or multiple languages) with a single localized site experience.
-  * For example, a single brand site configured for Australia and New Zealand, where both countries share the same site experience but each country is configured with different products, currency, prices, discounts, and shipping modes.
-* Multiple channels (with single and/or multiple languages) with different site experiences per channel.
-  * For example, a single brand site configured for Australia, Canada and Germany, where each country has a unique site experience along with different products, currency, prices, discounts, and shipping modes.
+Scenarios covered in this topic include:
+- **A single language channel with a single e-commerce site experience.** For example, this could be a single brand site configured for the English United States market.
+- **A multi-language channel with a single localized site experience.** For example, this could be a single brand site configured for Canada with French and English language support where both languages provide the same site experience but are localized into the appropriate languages.
+- **A multi-language channel with different site experiences per language.** For example, this could be a single brand site configured for Canada with unique site experiences for French Quebec region users and English region users.
+- **Multiple channels (with single and/or multiple languages) with a single localized site experience.** For example, this could be a single brand site configured for Australia and New Zealand, where both countries share the same site experience but each country is configured with different products, currency, prices, discounts, and shipping modes.
+- **Multiple channels (with single and/or multiple languages) with different site experiences per channel.** For example, this could be a single brand site configured for Australia, Canada and Germany, where each country has a unique site experience along with different products, currency, prices, discounts, and shipping modes.
 
 ## Online channels
 
-An online channel represents an online e-commerce storefront which is used to map products, pricing, discounts, languages, payment methods, delivery modes, fulfillment centers and other aspects of the online experience that will be available to your customers. Online channels are created and managed within headquarters and map to a single [legal entity](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json#legal-entities), which is usually based in a single country that requires the tax reporting for the channel and can only be configured with  a single currency.
+An online channel represents an online e-commerce storefront that is used to map products, pricing, discounts, languages, payment methods, delivery modes, fulfillment centers and other aspects of the online experience that will be available to your e-commerce customers. Online channels are created and managed in Commerce headquarters and map to a single [legal entity](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json#legal-entities). the legal entity is usually based in a single country that requires the tax reporting for the channel and can only be configured with a single currency.
 
-For an overview on channels see the [Channel overview](channels-overview.md) topic and to learn about creating an online channel see the [Set up an online channel](channel-setup-online.md) topic.
+For more information on channels, see [Channel overview](channels-overview.md). For more information about creating an online channel, see [Set up an online channel](channel-setup-online.md).
 
-The below image shows the default online channels that are deployed with Dynamics 365 Commerce if the demo data option was selected.
+The following example illustration from Commerce headquarters shows the default online channels that are deployed with Dynamics 365 Commerce if the demo data option is selected.
 
-![Default demo data channels](media/channel-mapping-1.png)
+![Default demo data channels in Commerce headquarters](media/channel-mapping-1.png)
 
 ## E-commerce site
 
-An e-commerce site represents the set of pages that make up the website that customers use to shop.  E-commerce sites are managed from within site builder as shown in the below image.  To learn more about how to create and manage sites from within site builder see the [E-commerce site overview](online-store-overview.md) topic.
+An e-commerce site contains a set of site pages that that customers use to browse and shop. E-commerce sites are managed from within Commerce site builder, as shown in the following example illustration.  
 
 ![Site builder e-commerce site list](media/channel-mapping-2.png)
 
+To learn more about how to create and manage sites from within site builder, see [E-commerce site overview](online-store-overview.md).
+
 ## Common channel mapping scenarios
 
-Dynamics 365 Commerce supports a great range of channel mapping scenarios, the below is just a subset meant as a guide to help planning any unique business scenarios you may have. The fictitious Adventure Works sporting goods store included with Dynamics 365 Commerce demo data will be used as an example with a progression through each scenario.
+Dynamics 365 Commerce supports a wide range of channel mapping scenarios. The channel mapping scenarios that follow are just a subset of all possible channel mapping scenarios and are meant as a guide to help you plan for any unique business scenarios that you may have. The fictitious Adventure Works sporting goods store included with Dynamics 365 Commerce demo data is used as an example for each scenario.
 
 ### Single language channel with a single e-commerce site experience
 
 The most basic scenario is a single channel with a single language for selling in a single market. An example for this scenario is the Adventure Works online store setup only for the United States English market. The below image shows an example of the channel setup within headquarters. Notice how an online channel only supports a single currency and it is set to "USD" and a single business entity "usrt" which is used for tax reporting on the US business.
 
-![Adventure Works online store in HQ](media/channel-mapping-3.png)
+![Adventure Works online store in headquarters](media/channel-mapping-3.png)
 
 The single online channel can then be mapped to a single e-commerce site within site builder. See [mapping a channel to a site in site builder](#mapping-a-channel-to-a-site-in-site-builder) below to learn how to create a new site and map it to a channel.
 
@@ -85,7 +82,6 @@ The below image shows the Adventure Works online channel configured with many di
 The different languages can be configured with their own domain names such as www.adventure-works.ca for the English Canada version or www.adventure-works-fr.ca for the French Canada version or a single domain using different paths for such as www.adventure-works.ca for the English Canada version and www.adventure-works.ca/fr for the French Canada version.  [Geo detection](geo-detection-redirection.md) can also be enabled to automatically redirect to the correct site based on the region.
 
 See [managing site content with multiple channels and languages](#managing-site-content-with-multiple-channels-and-languages) below to learn how to customize localized pages and fragments.
-
 
 ### Multi-language channel with different site experiences per language
 
@@ -107,7 +103,7 @@ Similar to the previous scenario, you may have multiple channels for a single br
 
 Similar to the previous scenario, you may want to offer a completely different site experience for one region over the other.  The recommended way is to use the page variants on a single site as discussed in previous scenarios but if desired you can create new e-commerce sites in site builder and map each to a different online channel and language. This scenario would add extra management since you will now have multiple sites to independently manage within site builder.
 
-## Cross channel sharing
+## Cross-channel sharing
 
 Cross-channel sharing is useful when multiple channels on a single site can share content. For example, a retailer that has multiple brands and storefronts that are grouped under a single site can share some content among some or all of the storefronts. This shared content can include pages for terms and conditions, payment terms, shipment methods, and frequently asked questions (FAQ).  See the [Enable and use cross-channel sharing](cross-channel-sharing.md) topic for more information.
 
