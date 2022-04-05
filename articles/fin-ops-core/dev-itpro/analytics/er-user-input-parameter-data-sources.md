@@ -132,7 +132,7 @@ Use a data source of the **Format enumeration \> Enumeration user input paramete
 -   In the **Format enumeration** field, refer to an enumeration of the editable format.
 
 > [!NOTE]
-> This type of data sources can be configured only in scope of the editable format component.
+> Be aware that data sources of this type can be configured only in scope of the editable format component.
 
 ## Additional resources
 
