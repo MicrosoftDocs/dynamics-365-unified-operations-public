@@ -418,6 +418,8 @@
             href: accounts-receivable/sb-billing-schedules.md
           - name: Copy a billing schedule
             href: accounts-receivable/sb-copy-schedules-items.md
+          - name: Billing schedule features
+            href: accounts-receivable/sb-schedule-billing-features.md
           - name: Milestone billing
             href: accounts-receivable/sb-milestonebilling.md
           - name: Terminate billing schedules
