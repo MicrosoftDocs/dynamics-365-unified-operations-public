@@ -5,7 +5,7 @@ author: RamaKrishnamoorthy
 ms.date: 01/09/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-08
@@ -16,9 +16,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
+
 
 
 

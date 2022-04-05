@@ -26,6 +26,9 @@ ms.dyn365.ops.version: Human Resources
 
 # Example query for Recruiting request
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This topic provides an example query for the Recruiting request entity in Dynamics 365 Human Resources.

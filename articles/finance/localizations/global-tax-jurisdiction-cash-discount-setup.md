@@ -80,3 +80,5 @@ The following table shows the results of the cash discount and sales tax calcula
 
 > [!IMPORTANT]
 > In the 10.0.23 monthly update, the functionality is supported only for sales order operations and only for sales orders that contain one sales tax code per sales order line.
+> 
+> In the 10.0.24 monthly update, the functionality is supported for sales order, purchase order, vendor invoice, and free text invoice operations.

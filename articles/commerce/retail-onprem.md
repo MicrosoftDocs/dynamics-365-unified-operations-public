@@ -4,7 +4,7 @@
 title: Commerce capabilities that are available in on-premises deployments
 description: This topic lists the Commerce capabilities available in on-premises deployments.
 author: aamirallaqaband
-ms.date: 11/01/2018
+ms.date: 01/31/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -26,20 +26,20 @@ ms.dyn365.ops.version: 2017-06-30
 
 # Commerce capabilities that are available in on-premises deployments
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 This topic lists Commerce capabilities that are available in on-premises deployments.
 
 For more information about on-premises deployments, see [On-premises deployment home page](../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md).
 
 | Component            | On-premises status |
-|----------------------|--------------------|
+| -------------------- | ------------------ |
 | Cloud Point of Sale  | Available          |
 | Retail Point of Sale | Available          |
 | Modern Point of Sale | Available          |
 | Commerce Scale Unit  | Available          |
 | Channel database     | Available          |
-| Hardware station     | Not available      |
+| Hardware station     | Available          |
 | AX 2012 N-1 support  | Not available      |
 
 ## Head office capability
@@ -114,7 +114,7 @@ The following table indicates which inventory management components are availabl
 | Component                      | On-premises status |
 |--------------------------------|--------------------|
 | Packing slip                   | Available          |
-| Fulfilment groups              | Available          |
+| Fulfillment groups              | Available          |
 | Cross docking and buyer's push | Available          |
 | Qty on hand                    | Available          |
 | Stock counts                   | Available          |

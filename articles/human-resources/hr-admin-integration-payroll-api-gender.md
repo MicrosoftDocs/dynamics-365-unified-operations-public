@@ -26,6 +26,9 @@ ms.dyn365.ops.version: Human Resources
 
 # Payroll - Gender option set
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This topic describes the Gender option set for Dynamics 365 Human Resources.

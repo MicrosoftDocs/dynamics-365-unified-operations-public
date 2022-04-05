@@ -3,8 +3,8 @@
  
 title: Identify and deploy candidate selection tools
 description: Finding a qualified pool of candidates to fill vacancies can be difficult, especially when a position requires a unique set of skills. 
-author: andreabichsel
-ms.date: 11/20/2020
+author: twheeloc
+ms.date: 01/10/2022
 ms.topic: business-process 
 ms.prod:  
 ms.technology:  
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: HcmSkillMapping, HcmJobLookup, HcmSkillMappingLine, HcmPersonCertificate, CCHTMLPrintPreview   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -27,37 +27,41 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-Finding a qualified pool of candidates to fill vacancies can be difficult, especially when a position requires a unique set of skills.  However, candidates with the skills you need might already be employed in your organization. You can search for a specific skill set among existing employees, or new applicants. This allows a recruiter to quickly gather and screen applicants who have applied for open position now or in the past, or to find potential candidates from their existing pool of employees. Use this task recording to learn how the skill mapping functionality can help you find the right person for an open position. The demo data company used to create this procedure is USMF.
 
-1. Go to Human resources > Competencies > Skill analysis > Skill mapping profiles.
-2. Click New.
-3. In the Skill mapping field, enter a name for your skill mapping.  Example: Accountant.
-4. In the Description field, enter a description of the skill mapping..
-5. In the Date field, enter a date.
-6. Click Retrieve profile.
-    * Use Retrieve profile to pull in the Certificate, Skill, and Education data from a selected Person, Job or Course as the basis for your search.   You can then add or remove criteria, state if the criteria is optional and rank the importance of the criteria.  
-7. Click Job.
-8. In the Job field, enter or select a value.
-9. Click OK.
-10. Expand the Range FastTab, and add any additional information, such as department.
-11. Expand the Certificates FastTab to view or edit the certificates.
-12. Expand the Skills FastTab to view or edit the skills.
-13. Expand the Education FastTab to view or edit the education criteria.
-14. Click Execute.
-15. Click OK.
-16. Click Result.
-17. Click Result.
-18. Click Resume.
-19. Click Certificates.
-    * You can drill further into each person listed and see details regarding their education, skills, and professional experience.  
+[!INCLUDE [PEAP](../../../../includes/peap-1.md)]
+
+Finding a qualified pool of candidates to fill vacancies can be difficult, especially when a position requires a unique set of skills. However, candidates with the skills you need might already be employed in your organization. You can search for a specific skill set among existing employees, or new applicants. This allows a recruiter to quickly gather and screen applicants who have applied for open position now or in the past, or to find potential candidates from their existing pool of employees. Use this procedure to learn how the skill mapping functionality can help you find the right person for an open position. The **USMF** demo data company was used to create this procedure.
+
+1. Go to **Human resources \> Competencies \> Skill analysis \> Skill mapping profiles**.
+2. Select **New**.
+3. In the **Skill mapping** field, enter a name for your skill mapping. For example, enter **Accountant**.
+4. In the **Description** field, enter a description of the skill mapping.
+5. In the **Date** field, enter a date.
+6. Select **Retrieve profile** to pull in the certificate, skill, and education data from a selected person, job, or course, so that you can use it as the basis for your search. You can then add or remove criteria, indicate whether they are optional, and rank their importance.
+7. Select **Job**.
+8. In the **Job** field, enter or select a value.
+9. Select **OK**.
+10. On the **Range** FastTab, add any additional information, such as the department.
+11. On the **Certificates** FastTab, view or edit the certificates.
+12. On the **Skills** FastTab, view or edit the skills.
+13. On the **Education** FastTab, view or edit the education criteria.
+14. Select **Execute**.
+15. Select **OK**.
+16. Select **Result**.
+17. Select **Result**.
+18. Select **Resume**.
+19. Select **Certificates**.
+
+    You can drill further into each person who is listed, to view details about their education, skills, and professional experience.
+
 20. Close the page.
 21. Close the page.
 22. Select result again.
-23. Click Report.
-    * The report will list the best matches at the top of the report.  You can see that a gap element is listed.  This is the difference between the level that was listed on the skill mapping, and the level of the skill that is assigned to the person.  
+23. Select **Report**.
+
+    The best matches will be listed at the top of the report. You should see that a gap element is listed. This element represents the difference between the level that was listed on the skill mapping and the level of the skill that is assigned to the person.
+
 24. Close the page.
-25. Click Save.
-
-
+25. Select **Save**.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

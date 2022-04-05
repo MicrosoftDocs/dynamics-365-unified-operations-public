@@ -4,7 +4,7 @@
 title: Query cookbook 
 description: This topic describes queries in the SQL Insights tab and how they should be used when troubleshooting performance issues. 
 author: meeramahabala
-ms.date: 10/20/2021
+ms.date: 11/09/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -61,26 +61,6 @@ Provides a list of all queries that are currently in a state of being executed o
 ### Next steps
 - If high CPU time is seen, get the query plan for the query, and also see whether other query plans that have been used for this query are more efficient. Consider addressing the issues with a new index, with a change to the query, or, as a last resort, by adding a plan guide.
 - If high wait time is seen, view the current blocking and current blocking tree to determine why the query is blocked. This is occasionally addressed by disabling lock escalation or page locks if that is the cause of the blocking. More often, it is addressed by segmenting the work that is being performed to ensure that the same record is not processed by two queries at the same time.
-
-## Get index details
-
-### Description
-Provides details about all indexes on a given table. This query is usually used before adding new indexes, to ensure there are no existing indexes that should be altered instead.
-
-### Next steps
-- If you are adding a new index, verify that there is not an existing index that should just be adjusted instead. Each new index adds overhead on all write operations. Therefore, new indexes should be added sparingly.
-- Existing indexes can occasionally cause blocking if they support page locks, and large processes running at the same time are locking pages that contain records for each process. Disabling page locks should also be done sparingly, because it will degrade write operations that would have benefitted from page locks.
-
-## Drop index
-
-### Background
-Usually, extra indexes on a table only add minor incremental costs. But in some situations, such as high-throughput tables, the existence of an extra index can cause large performance degradation. The correct way to remove indexes is to remove them from metadata. But if they need to be removed more aggressively to mitigate an ongoing issue, this action can be used.
-
-### Next steps
-- From the query to list all indexes for a table, determine the index name to drop.
-- Verify that no other workloads will be negatively affected by removing this index. This is a dangerous operation to perform and might cause other workloads to regress.
-- Provide the table and the index name to drop.
-- Apply the same change in other environments, such as DEV and Sandbox, ideally by removing the index in metadata to keep all environments in sync.
 
 ## End SQL process
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Select analytical workspaces from Power BI 
+title: Select analytical workspaces from Power BI  (contains video)
 description: This topic explains how to select a report that is hosted in Power BI and use it for an application workspace.
 author: RichdiMSFT
 ms.date: 07/09/2020

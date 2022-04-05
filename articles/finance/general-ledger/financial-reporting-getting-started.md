@@ -4,7 +4,7 @@
 title: Financial reporting overview
 description: This topic describes where to access financial reporting in Microsoft Dynamics 365 Finance and how to use the financial reporting capabilities.
 author: aprilolson
-ms.date: 07/27/2021
+ms.date: 03/31/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -179,7 +179,7 @@ Issue 1: Report Designer doesn't start when you select **New** or **Edit**.
 * In Internet Explorer, select **Settings**, then select **Internet Options**. Select the **Security** tab. Select Trusted Sites and then select **Sites**. In the **Add this website to zone**, enter "\*\.dynamics.com" (without quotation marks), and then select **Add**. 
 * In Internet Explorer, select **Settings**, then select **Internet Options**. Select the **Security** tab. Select Trusted Sites. In the area labeled Security level for this zone, change the option to **Medium-Low**.
 * Disable the pop-up blocker in your browser.
-* Workstations are required to install Microsoft .NET Framework 4.6.2 or higher. This version of the Microsoft .NET Framework can be downloaded and installed from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53345).
+* Workstations are required to install Microsoft .NET Framework 4.7.2 or higher. This version of the Microsoft .NET Framework can be downloaded and installed from the [Microsoft Download Center](https://dotnet.microsoft.com/download/dotnet-framework/net472).
 * If you are using a Chrome browser, you must install a ClickOnce extension in order to download the Report Designer client. If you are running Chrome in incognito mode, make sure the ClickOnce extension is enabled for incognito mode. For more information about the Chrome ClickOnce Extension, see [System requirements for cloud deployments](../../fin-ops-core/fin-ops/get-started/system-requirements.md).
 * If you are using Microsoft Edge with a Chrome browser, you do not need to install a ClickOnce extension for Edge Chromium. However, you must enable the ClickOnce option in order to download the Report Designer client. If you are running incognito mode, make sure the ClickOnce extension is enabled for incognito mode.
 

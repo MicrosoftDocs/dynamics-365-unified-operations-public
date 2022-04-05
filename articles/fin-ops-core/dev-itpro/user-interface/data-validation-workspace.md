@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form:  DataValidationWorkspace
 audience: Application User
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.assetid: 
@@ -27,6 +27,9 @@ ms.author: bking
 # Data validation checklist workspace
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 This topic provides an overview of the **Data validation checklist workspace** and the associated configuration.
 

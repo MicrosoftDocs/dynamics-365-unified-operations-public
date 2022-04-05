@@ -5,7 +5,7 @@ title: Channels overview
 description: This topic presents an overview of channels in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 01/27/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 

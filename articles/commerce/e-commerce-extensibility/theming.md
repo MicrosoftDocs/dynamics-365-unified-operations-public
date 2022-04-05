@@ -4,8 +4,8 @@
 title: Theming overview
 description: This topic presents an overview of online site theming in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 10/08/2020
-ms.topic: article
+ms.date: 11/22/2021
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,7 +16,7 @@ audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -31,36 +31,62 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic presents an overview of online site theming in Microsoft Dynamics 365 Commerce.
 
-Dynamics 365 Commerce lets you apply a theme to your whole online site, individual templates, or individual pages. For example, you might have a default theme that is set for the whole online site and a campaign theme that is applied to just a subset of the pages on the site. 
+A Dynamics 365 Commerce theme (also known as a *theme pack*) defines the look and feel of the site brand and modules that make up an e-commerce page for merchants and their customers. Only one theme pack can be set for each e-commerce site.
 
-Themes include Sassy Cascading Style Sheets (SCSS) files that you can use to format your site pages and modules. They can optionally also contain module view and definition extensions, so that modules can render different views, depending on the theme that is selected. 
+## Style presets
 
-After a theme is created and uploaded to your production site, you can use the Commerce site builder tool to set the theme for the site. You can set the site's theme in a template, in a layout, or on a single page. When an online page is rendered, the appropriate theme is applied, so that all the modules on that page have a consistent look and feel. The site builder tool also lets you upload additional Cascading Style Sheets (CSS) overrides. In that way, you can make changes on top of the selected theme.
+A theme pack can contain one or more [style presets](../style-presets.md) that define a different set of styles for each preset. Style presets include both styles for individual modules and global styles such as the brand accent color. For example, a theme pack might contain style presets for a "light" theme and a "dark" theme, or for a "classic" look and feel and a "vintage" look and feel. The definition and naming of style presets is determined by the [theme developer](theme-style-presets.md).
 
-The following illustration shows how a theme is selected for a page in Dynamics 365 Commerce. Notice that the page container (**Default page**) is selected, and the **Theme** field for the page appears in the properties pane on the right.
+Style presets support global Cascading Style Sheets (CSS) values such as brand colors and fonts. They also support module-specific CSS values that might include text colors and sizes for individual modules. Only one style preset can be configured per site. However, if changes are required, CSS values can be overridden in Commerce site builder and saved as a custom style preset. Examples of changes to style presets include a change to the default global brand accent color that various modules use or a change to a font size in a specific module. Whenever an affected module is rendered on a site page, it will always use the newer, custom value.
 
-![Theme selection.](media/theming-1.png)
+Themes include SCSS (Sassy Cascading Style Sheets) files that you can use to style your modules. SCSS files can optionally contain [module view extensions](theme-module-extensions.md#theme-module-view-extensions) and [module definition extensions](theme-module-extensions.md#theme-definition-extensions). In that way, modules can render different views, based on the theme that is selected. 
 
-A theme can be set on the master page in a similar manner. In this case, the theme is applied to all pages that are derived from the master page. Note that if the **locked** property is turned off, individual pages can override the theme.
+After a theme is created, it can be uploaded to your sandbox or production site. You select a theme pack when you create a new site, as shown in the example in the following illustration.
+
+![Theme pack field in the New site dialog box in Commerce site builder.](media/theming-1.png)
+
+If you've already deployed a site where no theme pack is selected, you can set a theme on the **General** site settings page in Commerce site builder by using the special **&amp;set=showThemePack** query string parameter. Make sure that you select **Save and publish** after you set a theme. After a theme pack is selected, you must contact Microsoft Dynamics 365 Support to change it.
+
+![Theme pack selected in the General site settings page in Commerce site builder.](media/theming-2.png)
+
+Additional configuration in Commerce site builder is required when you set a theme. On the **Extensions** site settings page, make sure that the theme matches the site-selected theme pack, as shown in the example in the following illustration.
+
+![Themes field on the Extensions site settings page in Commerce site builder.](media/theming-3.png)
+
+Commerce site builder also lets you upload additional [CSS override files](../css-override-files.md). In this way, you can make direct changes on top of the theme that is selected in site builder, without having to make code changes to the theme and then republish it. This option is useful when you must make small, quick changes. However, we recommend that you eventually migrate those changes to the theme code. There can be a small performance impact if additional CSS override files are loaded for every site page.
 
 ## General guidelines for creating a custom theme
 
-- Create a new theme by using the **yarn msdyn365 add-theme NEW_THEME_NAME** command-line interface (CLI) command. This command will create a theme in the /src/themes/ folder.
+- You can create a new theme by using the **yarn msdyn365 add-theme NEW_THEME_NAME** [CLI (command-line interface)](cli-command-reference.md#add-theme) command. This command will create a theme in the /src/themes/ folder.
 - Under the styles directory, you will find the SCSS entry point file for the theme. This file uses the naming pattern **THEME_NAME.theme.scss**. 
 - Themes are created as special modules. They contain definition files that include the theme's friendly name and description, and also a template React component.
-- There is no limit to the number of .scss files that your theme can contain.
-- Your theme entry point can import other .scss files by using relative paths.
+- There is no limit on the number of SCSS files that your theme can contain.
+- Your theme entry point can import other SCSS files by using relative paths.
 
 ## Best practices
 
-- Module library modules are built by using Bootstrap 4 classes. Therefore, we recommend that every theme include either Bootstrap 4 or Bootstrap 4 RTL as the  SCSS framework.
+- Module library modules are built by using Bootstrap 4 classes. Therefore, we recommend that every theme include either Bootstrap 4 or Bootstrap 4 RTL as the SCSS framework.
 - If you want to take advantage of module library modules that are built by using Font Awesome glyph icons, you should include **font-awesome** in the SCSS file. The following example shows how to include **Bootstrap** and **font-awesome** in a SCSS file.
 
     ```css
     $fa-font-path: 'https://use.fontawesome.com/releases/v5.2.0/webfonts' !default;
     @import "bootstrap/scss/bootstrap";
-    ...
     ```
+
+## Create a theme from a reference theme
+
+We recommend that you start a new theme from a copy of one of the reference themes that are provided (Fabrikam, Starter, or Adventure Works) and then make appropriate changes. These reference themes already contain all the SCSS styles for the module library. If you start from a brand-new theme, every module's styles must be redefined.
+
+The Fabrikam and Starter themes are included as part of the module library and can be copied by using the [clone](cli-command-reference.md#clone) CLI command. Here is an example.
+
+```Console
+yarn msdyn365 clone fabrikam my-new-theme
+```
+
+> [!NOTE]
+> Because the system treats themes as special modules, the **clone** command automatically puts the new cloned theme in the \\src\\modules directory. You must then manually move the new theme to the \\src\\themes directory. If the \\src\\themes directory doesn't exist, you can manually create it.
+
+The [Adventure Works theme](../adventure-works-theme.md) isn't included in the module library. Instead, it's released as an extension. For information about how to install the Adventure Works theme, see [Install the Adventure Works theme](../install-adventure-works.md). The **clone** CLI command won't work for the Adventure Works theme. However, you can copy the source code to your themes directory and change it as you require.
 
 ## Recommended structure for a custom theme
 

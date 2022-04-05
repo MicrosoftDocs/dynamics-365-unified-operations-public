@@ -2,10 +2,10 @@
 title: Create asynchronous Commerce (CRT) APIs in your business logic
 description: This topic explains how to create Commerce (CRT) application programming interfaces (APIs) (that is, requests) that run asynchronously.
 author: mugunthanm
-ms.date: 02/13/2020
+ms.date: 03/16/2022
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2020-02-02
@@ -75,6 +75,9 @@ Asynchronous execution is supported for these scenarios:
 
 + Overrides of the Commerce API handler that is running
 + Pre-triggers and post-triggers
+
+> [!NOTE]
+> We recommend that for the extension code, you use ConfigureAwait(false) when executing the request.
 
 ## Create a new asynchronous Commerce Runtime API
 

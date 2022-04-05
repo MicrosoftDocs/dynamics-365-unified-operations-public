@@ -29,6 +29,9 @@ ms.dyn365.ops.version: Human Resources
 
 # Process life events
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 During the employee lifecycle in Microsoft Dynamics 365 Human Resources, each employee may encounter various life event changes. For example, marriage, change in employment, or dependent/beneficiary change. To use life events, you must enable life events on the **Benefits parameters** page, set up life event types, and set up life event options for plan types.

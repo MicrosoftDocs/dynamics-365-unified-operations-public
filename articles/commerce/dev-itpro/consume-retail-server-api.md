@@ -4,7 +4,7 @@
 title: Consume Retail Server APIs in external applications
 description: This topic describes how to consume the Retail Server APIs in external applications.
 author: mugunthanm
-ms.date: 03/02/2021
+ms.date: 01/11/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 28021
 ms.assetid: 
@@ -202,7 +202,7 @@ After the request has finished running, the response body will contain the custo
 
 1. Use the NuGet package manager for the project to add the following NuGet packages.
 
-    + Microsoft.IdentityModel.Clients.ActiveDirectory
+    + Microsoft.Identity.Client
     + Microsoft.Dynamics.Commerce.RetailProxy
 
     The **Microsoft.Dynamics.Commerce.RetailProxy** NuGet package can be added from the **RetailSDK\\pkgs** folder. In the NuGet manager, add a local repository for the **RetailSDK\\pkgs** folder.
@@ -237,7 +237,7 @@ After the request has finished running, the response body will contain the custo
     ```C#
     private static async Task<ManagerFactory> CreateManagerFactory()
     {
-        Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext authenticationContext = new   Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext(authority.ToString(), false);
+        Microsoft.Identity.Client.AuthenticationContext authenticationContext = new   Microsoft.Identity.Client.AuthenticationContext(authority.ToString(), false);
         AuthenticationResult authResult = null;
         authResult = await authenticationContext.AcquireTokenAsync(resource, new ClientCredential(clientId, clientSecret));
 

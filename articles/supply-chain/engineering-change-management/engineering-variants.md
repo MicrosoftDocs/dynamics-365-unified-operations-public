@@ -19,15 +19,9 @@ ms.dyn365.ops.version: 10.0.20
 
 This topic describes how to generate variants for engineering products.
 
-## Turn on variant generation for engineering products
+## Turn variant generation for engineering products on or off
 
-Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** *Engineering change management*
-- **Feature name:** *Variant generation for engineering products*
-
-> [!IMPORTANT]
-> The *Variant generation for engineering products* feature will be visible in your system only after you enable the *Engineering Change Management* configuration key. For instructions, see [Engineering change management overview](product-engineering-overview.md).
+The functionality described in this topic requires that both the *Engineering Change Management* and *Variant generation for engineering products* features be turned on for your system. For details about how to turn these features on or off, see [Engineering change management overview](product-engineering-overview.md).
 
 ## Generate one or more new variants of an engineering product
 

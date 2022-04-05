@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Enable budget proposals
+title: Enable Budget proposal
 description: This topic explains how to turn on the Budget proposal feature in Finance Insights.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -26,24 +26,21 @@ ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
 
 ---
-# Enable budget proposals
+# Enable Budget proposal
 
 [!include [banner](../includes/banner.md)]
 
 This topic explains how to turn on the Budget proposal feature in Finance Insights.
 
-1. Use information from the environment page in Microsoft Dynamics Lifecycle Services (LCS) to connect to the primary instance of Azure SQL for that environment. Run the following Transact-SQL (T-SQL) command to turn on flights for the sandbox environment. (You might have to turn on access for your IP address in LCS before you can connect remotely to Application Object Server \[AOS\].)
-
-    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('BudgetIntelligentBudgetRegisterProposalFeature', 1)`
-
-    > [!NOTE]
-    > Skip this step if you're using version 10.0.20 or later, or if you're using a Service Fabric deployment. The Finance insights team should already have turned on the flight for you. If you don't see the feature in the **Feature management** workspace, or if you experience issues when you try to turn it on, contact <fiap@microsoft.com>.
-
-2. Open the **Feature management** workspace, and follow these steps:
+1. Open the **Feature management** workspace, and follow these steps:
 
     1. Select **Check for updates**.
-    2. Search for **Budget proposal**, and turn on that feature.
+    2. On the **All** tab, search for **Budget proposal**. If you don't find that feature, search for **(Preview) Budget proposal**. 
+    3. Turn on the feature.
 
-3. Go to **Budgeting \> Setup \> basic Budgeting \> Budget proposal (preview)**, and select **Enable feature**.
+2. Go to **Budgeting \> Setup \> Basic Budgeting \> Budget proposal**, and select **Enable feature**.
+
+> [!NOTE]
+> The **Budget proposal** feature requires a minimum of three years of budget or actual data. This feature uses three to ten years of data in the projections. More than three years of data provides better results. The data itself works best when there is variation in the values. If the data contains all constant data, such as a lease expense, the training may fail because the lack of variation doesn’t require AI to project the amounts.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

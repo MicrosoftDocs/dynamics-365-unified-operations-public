@@ -4,7 +4,7 @@ description: This topic provides information about cloud and edge scale units fo
 author: cabeln
 ms.date: 04/22/2021
 ms.topic: article
-# ms.search.form: [Operations AOT form name to tie this topic to]
+ms.search.form: ScaleUnitWorkloadsWorkspace
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
@@ -28,14 +28,14 @@ Companies that work with manufacturing and distribution must be able to run key 
 
 A distributed hybrid topology introduces the concept of *scale units*, which enable distribution of shop floor and warehouse execution workloads among different environments. This functionality can help improve performance, prevent service interruptions, and maximize uptime. Scale units are provided through the following add-ins for your Supply Chain Management subscription:
 
-- Cloud Scale Unit Add-in for Dynamics 365 Supply Chain Management (*available April 2021*)
-- Edge Scale Unit Add-in for Dynamics 365 Supply Chain Management (*available soon*)
+- Cloud Scale Unit Add-in for Dynamics 365 Supply Chain Management
+- Edge Scale Unit Add-in for Dynamics 365 Supply Chain Management
 
 Workload capabilities are being released on a continuous basis through incremental enhancements.
 
 ## Scale units and dedicated workloads
 
-Scale units extend your central Supply Chain Management hub environment by adding dedicated processing capacity. Scale units can run in the cloud. Alternatively, they can run on the edge, on-premises at your local facility.
+Scale units extend your central Supply Chain Management hub environment by adding dedicated processing capacity. Scale units can run in the cloud. Alternatively, they can run on the [edge](cloud-edge-edge-scale-units-lbd.md), on-premises at your local facility.
 
 :::image type="content" source="./media/cloud_edge-HeroDiagram.png" alt-text="Dynamics 365 with scale units.":::
 
@@ -47,21 +47,11 @@ You can configure your hub environment and cloud scale units for selected worklo
 
 ### Dedicated warehouse management workload capabilities in a scale unit
 
-The warehouse management workload is the first distributed workload for scale units that has been released for general availability.
-
-For warehouse management, scale units deliver the following capabilities:
-
-- The system can process selected wave methods for sales orders and demand replenishment.
-- Warehouse workers can run sales and demand replenishment warehouse work by using the Warehouse Management mobile app.
-- Warehouse workers can inquire into on-hand inventory by using the Warehouse Management mobile app.
-- Warehouse workers can create and run inventory movements by using the Warehouse Management mobile app.
-- Warehouse workers can register purchase orders and do putaway by using the Warehouse Management mobile app.
-
-For more information, see [Warehouse management workloads for cloud and edge scale units](cloud-edge-workload-warehousing.md).
+The warehouse management workload enables your warehouse operations to scale and run in a resilient environment by using isolated maintenance windows. The warehouse management workload supports most enterprise hub warehouse management processes. For more information, see [Warehouse management workloads for cloud and edge scale units](cloud-edge-workload-warehousing.md).
 
 ### Dedicated manufacturing execution workload capabilities in a scale unit
 
-The first release of the manufacturing workload is currently in preview and delivers the following capabilities:
+The manufacturing workload delivers the following capabilities:
 
 - Machine operators and shop floor supervisors can access the operational production plan.
 - Machine operators can keep the plan up to date by running discrete and process manufacturing jobs.
@@ -70,9 +60,9 @@ The first release of the manufacturing workload is currently in preview and deli
 
 For more information, see [Manufacturing execution workloads for cloud and edge scale units](cloud-edge-workload-manufacturing.md).
 
-## Considerations before you enable the distributed, hybrid topology for Supply Chain Management
+## Considerations before you enable the distributed hybrid topology for Supply Chain Management
 
-By enabling the distributed, hybrid topology, you transition your Supply Chain Management cloud environment so that it functions as a hub. You can also associate additional environments that are configured as scale units in the cloud or on the edge.
+By enabling the distributed hybrid topology, you transition your Supply Chain Management cloud environment so that it functions as a hub. You can also associate additional environments that are configured as scale units in the cloud or on the edge.
 
 ### <a name="cloud-scale-unit-prerequisites"></a>Prerequisites and limitations for cloud scale units
 
@@ -121,7 +111,7 @@ Metrics and measures that might help you select the best application for your sc
 
 ### <a name="data-processing-management"></a>Data processing during management of scale units
 
-When you enable your Dynamics 365 environment to support the distributed, hybrid topology for cloud and edge scale units, some management services will be hosted only in the United States, as for LCS. This behavior affects the transfer and storage of some administrative and configuration information that is used by the [Scale Unit Manager portal](https://sum.dynamics.com). Here are some examples:
+When you enable your Dynamics 365 environment to support the distributed hybrid topology for cloud and edge scale units, some management services will be hosted only in the United States, as for LCS. This behavior affects the transfer and storage of some administrative and configuration information that is used by the [Scale Unit Manager portal](https://sum.dynamics.com). Here are some examples:
 
 - Your tenant names and IDs
 - Your LCS project IDs
@@ -132,31 +122,25 @@ When you enable your Dynamics 365 environment to support the distributed, hybrid
 
 Data that is transferred to and stored in the US data centers will be deleted according to Microsoft data retention policies. Your privacy is important to Microsoft. To learn more, read our [Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839).
 
-## Onboarding in two stages
+## Onboard to the distributed hybrid topology for Supply Chain Management
 
-The process of onboarding to the distributed, hybrid topology has two stages. During the first stage, you must validate customizations to ensure that they work in the distributed topology that has scale units. Sandbox and production environments are moved only during the second stage.
+### Try out the distributed hybrid topology
 
-### Stage 1: Evaluate customizations in one-box development environments
+The process of onboarding to the distributed hybrid topology has two stages. During the first stage, you should [try out](cloud-edge-try-out.md) the solution and validate your customizations to make sure that they work in a distributed topology that includes scale units. (You can use existing development environments to do the validation.) You can then continue to the second stage, where you acquire production environments.
 
-Before you start to onboard your sandbox or production environments, we recommend that you explore scale units in a development setup, such as a one-box environment (also known as a tier-1 environment), so that you can validate processes, customizations, and solutions. During this stage, data and customizations will be applied to the one-box environments. One environment takes the role of the hub, and the other takes the role of a scale unit. This setup provides the best way to identify and fix issues. The latest early access (PEAP) build can also be used to complete this stage.
-
-For stage 1, you should use the [scale unit deployment tools for one-box development environments](https://github.com/microsoft/SCMScaleUnitDevTools). These tools let you configure hub and scale units in one or two separate one-box environments. The tools are provided as a binary release and in source code on GitHub. Study the project wiki, which includes a [Step by step usage guide](https://github.com/microsoft/SCMScaleUnitDevTools/wiki/Step-by-step-usage-guide) that describes how the tools are used.
-
-### Stage 2: Acquire add-ins, and deploy in your sandbox and production environments
-
-To onboard one of your sandbox or production environments to the new topology, you must acquire add-ins for one or more cloud scale units (and, in the future, for edge scale units). The add-ins will grant corresponding project and environment slots in [LCS](https://lcs.dynamics.com/) so that the scale unit environments can be deployed.
-
-> [!NOTE]
-> The scale unit add-ins aren't coupled to a limited number of users but can be used by any user in the existing subscription, based on the roles that the administrator assigns.
+## Select your LCS project tenant and the detailed onboarding process
 
 Scale units are offered in multiple stock keeping units (SKUs) and pricing options. Therefore, you can choose the option that best meets your planned monthly transaction volume and performance requirements.
+
+> [!TIP]
+> To identify the sizing that best meets your needs, work with your implementation partner and Microsoft to understand the monthly transaction size that you require.
 
 The entry-level SKU is known as *Basic*, and the more performant SKU is known as *Standard*. Each SKU is pre-loaded with a specific number of monthly transactions. However, you can increase the monthly transaction budget by adding overage add-ins for each SKU.
 
 :::image type="content" source="media/SKUs-highlevel.png" alt-text="Add-ins for cloud scale units.":::
 
-> [!TIP]
-> To identify the sizing that best meets your needs, work with your partner and Microsoft to understand the monthly transaction size that you require.
+> [!NOTE]
+> Scale unit add-ins aren't coupled to a limited number of users. They are available to any user in your existing subscription (provided that your administrator has assigned the required user roles to them).
 
 The purchase of each scale unit add-in not only gives you a monthly volume of transactions but also entitles you to a specific number of environment slots in LCS. For each Cloud Scale Unit Add-in, you're entitled to one new production slot and one new sandbox slot. During the onboarding process, a new LCS project will be added that has these slots. The usage rights for the slots are bound so that the slots must be used as scale units that have a cloud hub.
 
@@ -164,11 +148,8 @@ Overage add-ins don't entitle you to new environment slots.
 
 If you want to acquire more sandbox environments, you can purchase additional regular sandbox slots. Microsoft can then help you enable those slots as sandbox scale units for the hybrid topology.
 
-## Onboard to the distributed, hybrid topology for Supply Chain Management
 
-### Select your LCS project tenant and the detailed onboarding process
-
-After you've finished planning how you will onboard to the distributed, hybrid topology for Supply Chain Management, you will use the [Scale Unit Manager portal](https://aka.ms/SCMSUM) to begin the onboarding process. In the portal, select the **Dynamics 365 Tenants** tab. This tab shows the list of tenants that your account is part of, and where you're an owner or environment admin for an LCS project.
+After you've finished planning how you will onboard to the distributed hybrid topology for Supply Chain Management, you will use the [Scale Unit Manager portal](https://aka.ms/SCMSUM) to begin the onboarding process. In the portal, select the **Dynamics 365 Tenants** tab. This tab shows the list of tenants that your account is part of, and where you're an owner or environment admin for an LCS project.
 
 If the tenant that you're looking for isn't in the list, go to [LCS](https://lcs.dynamics.com/v2), and make sure that you're either an environment admin or a project owner of the LCS project for that tenant. Only Azure Active Directory (Azure AD) accounts from the selected tenant are authorized to complete the sign-up experience.
 
@@ -187,20 +168,58 @@ Microsoft will review your request and inform you about the next steps by sendin
 
 After the onboarding is completed, you can use the port to configure scale units and workloads.
 
-### <a name="scale-unit-manager-portal"></a>Manage cloud scale units and workloads by using the Scale Unit Manager portal
+### <a name="scale-unit-manager-portal"></a>Manage scale units and workloads by using the Scale Unit Manager portal
 
 Go to the [Scale Unit Manager portal](https://aka.ms/SCMSUM), and sign in by using your tenant account. On the **Configure scale units** page, you can add a hub environment if it isn't already listed. You can then select the hub that you want to configure with scale units and workloads.
 
-:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Scale unit and workload management experience.":::
+:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Scale Unit Manager portal, Configure scale units page.":::
 
 To add one or more scale units that are available in your subscriptions, select **Add scale units**.
 
 On the **Defined workloads** tab, use the **Create workload** button to add a warehouse management workload to one of your scale units. For each workload, you must specify the context of the processes that will be owned by the workload. For warehouse management workloads, the context is a specific warehouse in a specific site and legal entity.
 
-:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Workload creation.":::
+:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Define workloads dialog.":::
+
+#### <a name="manage-workloads"></a>Manage workloads
+
+When one or more workloads are enabled, use the **Manage workloads** option to initiate and manage processes such as those that are listed in the following table.
+
+| Process | Description |
+|---|---|
+| Pause scale unit communication | Pause pipeline messages between the hub and a scale unit. This process will stop the communication and drain the data pipeline between the hub and scale units. You must run this process before you run a Supply Chain Management servicing operation on either the hub or the scale unit, but you may also use this in other situations. |
+| Resume scale unit communication | Resume pipeline messages between the hub and a scale unit. You might have to use this process, for example, after you run a Supply Chain Management servicing operation on either the hub or the scale unit. |
+| Upgrade workloads | Sync new functionality between the hub and scale unit workloads. You might have to use this process, for example, when servicing has caused the data exchange queries to change, and/or has added new tables or fields to the workload. |
+| Transfer workloads to a scale unit | Schedule a workload that is currently running on the hub to be moved to a scale unit. When this process is run, the synchronization of data will flow, and both the hub and the scale unit will be set to change the ownership of the workload. |
+| Transfer scale unit to the hub | Schedule a workload that is currently running on a scale unit to be moved to the hub. When this process is run, the synchronization of data will flow, and both the hub and the scale unit will be set to change the ownership of the workload.
+| Emergency transition to hub | <p>Immediately transfer an existing workload to the hub. *This process will change the ownership of only the data that is currently available on the hub.*</p><p><strong>Warning:</strong> This process can cause data loss for unsynchronized data and failure of business processing. Therefore, it should be used only in emergencies, where business processes must be processed on the hub because the scale unit has an outage that can't be mitigated within a reasonable time.</p> |
+| Decommission distributed topology | Remove a scale unit deployment and run only on the hub, without workload processing. |
+
+:::image type="content" source="media/sum-manage-workloads.png" alt-text="Scale unit and workload management experience.":::
 
 > [!TIP]
-> Over time, incremental enhancements will be added to the Scale Unit Manager experience to help make lifecycle management operations easier. The specific capabilities for the current release are documented in an onboarding handbook that is available to customers who are in the process of onboarding to the distributed, hybrid topology for Supply Chain Management. <!-- KFM: Add a link to the handbook when it is published -->
+> Over time, incremental enhancements will be added to the Scale Unit Manager experience to help make lifecycle management operations easier. The specific capabilities for the current release are documented in an onboarding handbook that is available to customers who are in the process of onboarding to the distributed hybrid topology for Supply Chain Management. <!-- KFM: Add a link to the handbook when it is published -->
+
+## Feature management considerations for workloads
+
+This section explains some important aspects that you should consider when you install workloads, add features, or remove features in a distributed hybrid topology deployment. Several scenarios can influence whether you will have to run a [workload upgrade](#manage-workloads) after you make changes. However, you will usually have to do so when you update or add new data exchange queries, and/or when you add new tables or fields to a previously installed workload.
+
+### Mandatory features for installing a workload
+
+When you install a workload, the installation process creates a workload definition that contains information about the data tables that are used when data is synced between the two deployments. The creation of a workload definition is automatically handled based on the features that are currently enabled in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). The following table lists the features that must be enabled to generate the workload definitions that are required to run a warehouse or manufacturing workload.
+
+| Mandatory feature | Workload |
+|---|---|
+| Automatic assigning of the guids on WHS user creation | Warehouse |
+| Organization-wide work blocking | Warehouse |
+| Shipment wave label details | Warehouse |
+| Scale unit support for warehouse app work lists | Warehouse |
+| Production floor execution | Manufacturing |
+
+When you deploy a workload by using the [scale unit deployment tools for one-box development environments](https://github.com/microsoft/SCMScaleUnitDevTools) or the [scale unit manager portal](https://sum.dynamics.com), all the mandatory features will automatically be enabled. However, if you do a manual test deployment that is missing one or more mandatory features, the workload installation will fail, and you will receive a message that lists the missing features. You must then manually enable those features and retrigger the workload installation.
+
+### Enabling or disabling features that have data synchronization dependencies
+
+Features that affect the selection of data that is synced between the hub and its scale units also affect how the workload definition is created. Therefore, it's important that these features be enabled before you install the workload. If you enable this type of feature while you're running a workload, you must regenerate the workload definition by running a [workload upgrade](#manage-workloads) after you enable the feature. Likewise, if you disable a feature that has data synchronization dependencies while you're running a workload, you must run a [workload upgrade](#manage-workloads) to remove the relevant data synchronization information from the workload definition.
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 

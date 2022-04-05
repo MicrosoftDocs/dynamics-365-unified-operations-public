@@ -117,8 +117,6 @@ The preset's style values are made active across your public-facing website.
 
 [Add a favicon](add-favicon.md)
 
-[Add a welcome message](add-welcome-message.md)
-
 [Add a copyright notice](add-copyright-notice.md)
 
 [Add languages to your site](add-languages-to-site.md)

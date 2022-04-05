@@ -116,8 +116,6 @@ To add an external script directly to a template in site builder, follow these s
 
 [Add a favicon](add-favicon.md)
 
-[Add a welcome message](add-welcome-message.md)
-
 [Add a copyright notice](add-copyright-notice.md)
 
 [Add languages to your site](add-languages-to-site.md)

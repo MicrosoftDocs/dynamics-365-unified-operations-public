@@ -4,7 +4,7 @@
 title: Set up call center channels
 description: This topic provides information about how to process orders for call centers by using Dynamics 365 Commerce.
 author: josaw1
-ms.date: 01/06/2020
+ms.date: 02/04/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -60,6 +60,9 @@ If the **Enable order completion** setting is turned on for the call center chan
 Additionally, if the **Enable order completion** setting is turned on, when users create sales orders and are in line item entry mode, the **Source** field will be available on the main sales order header. The **Source** field is used to capture a [catalog source code](/dynamics365/unified-operations/retail/call-center-catalogs) in a direct marketing selling scenario. This code can then drive special prices and promotions.
 
 Even if the **Enable order completion** setting is turned off, users can still apply a source code to a sales order. However, they must first open the sales order header details to access the **Source** field. In other words, some additional clicks are required. The same behavior applies to features such as ship complete and expedited orders. These features are available for all orders that are created in the call center. However, when the **Enable order completion** setting is turned on, users can see the configuration of these features on the sales header while they are in the line entry view. They don't have to drill into the sales order header details to find the appropriate settings and fields.
+
+> [!NOTE]
+> When the **Omni-channel Commerce order payments** feature is enabled, the call center **Enable order completion** button will be hidden in headquarters on the **General** FastTab of your channel at **Retail and Commerce \> Channels \> Call Centers**.
 
 ### Enable direct selling
 

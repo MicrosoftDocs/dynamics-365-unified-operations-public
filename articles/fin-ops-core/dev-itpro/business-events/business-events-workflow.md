@@ -4,7 +4,7 @@
 title: Workflow business events
 description: Workflow business events are generated at various points in the processing of a workflow.
 author: ChrisGarty
-ms.date: 01/21/2020
+ms.date: 01/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -52,35 +52,35 @@ There are five different categories of workflow business events. The category wi
 
 ![Business event categories in Microsoft Power Automate.](media/Business-event-category.png  "Business event categories in Microsoft Power Automate")
 - **Category: Workflow type** 
-     - These events will fire on workflow events like started and completed. All workflow instances will be represented in this category.
+     - These events will fire on workflow events including started and completed. All workflow instances will be represented in this category.
+     - Example: Purchase requisition approval workflow started
      - **ID format** - "Workflow_" + Workflow name + Workflow instance ID, for example "Workflow_BudgetPlanReview_000002"
-     - **Name format** - Workflow label + " (" + Workflow instance ID ")", for example "Prepare department budget (000002)"
 - **Category: Workflow element started**
      - These events will fire when a workflow element is started. All enabled workflow elements within a workflow instance will be represented in this category. 
+     - Example: Purchase requisition automated approval started
      - **ID format** - "Workflow_" + Workflow name + Workflow instance ID + "_" + Workflow element name + "_Started", for example "Workflow_BudgetPlanReview_000002_BudgetActivateBudgetPlanChild_Started"
-     - **Name format** - Workflow label + " (" + Workflow instance ID ") - " + Workflow element label, for example "Prepare department budget (000002) - Activate associated budget plan"
 - **Category: Workflow element**
      - These events will fire on workflow element events other than started, such as completed. All enabled workflow elements within a workflow instance will be represented in this category. 
+     - Example: Purchase requisition automated approval completed
      - **ID format** - "Workflow_" + Workflow name + Workflow instance ID + "_" + Workflow element name, for example "Workflow_BudgetPlanReview_000002_BudgetActivateBudgetPlanChild"
-     - **Name format** - Workflow label + " (" + Workflow instance ID ") - " + Workflow element label, for example "Prepare department budget (000002) - Activate associated budget plan"
 - **Category: Workflow external task** 
      - These events will fire when a workflow automated task element is started. All enabled workflow automated task elements within a workflow instance will be represented in this category. 
+     - Example: Purchase requisition automated approval started
      - **ID format** - "Workflow_" + Workflow name + Workflow instance ID + "_" + Workflow element name + "_ExternalTask", for example "Workflow_BudgetPlanReview_000002_BudgetActivateBudgetPlanChild_ExternalTask"
-     - **Name format** - Workflow label + " (" + Workflow instance ID ") - " + Workflow element label, for example "Prepare department budget (000002) - Activate associated budget plan"
-- **Category: Workflow workitem**
+- **Category: Workflow work item**
      - These events will fire when a workflow work item is created for a user. All enabled workflow tasks and workflow approvals within a workflow instance will be represented in this category. 
+     - Example: Purchase requisition manual approval work item created for Bob
      - **ID format** - "Workflow_" + Workflow name + Workflow instance ID + "_" + Workflow element name + "_WorkItem", for example "Workflow_BudgetPlanReview_000002_BudgetActivateBudgetPlanChild_WorkItem"
-     - **Name format** - Workflow label + " (" + Workflow instance ID ") - " + Workflow element label, for example "Prepare department budget (000002) - Activate associated budget plan"
 
 ## Completion of a work item in Power Automate
-Workflow business events are a good target for triggering approval flows. The **workflow workitem** event can be used in conjunction with the validate and complete OData actions to facilitate completion of a work item in Power Automate.
+Workflow business events are a good target for triggering approval flows. The **workflow work item** event can be used in conjunction with the validate and complete OData actions to facilitate completion of a work item in Power Automate.
 
 An approval or task work item can be completed in Power Automate using the following steps:
-- Trigger the Power Automate using the **when a business event occurs** trigger targeting the appropriate **workflow workitem** event.
-- Validate that the **workflow workitem**  contains a valid set of information so it is ready for completion by calling the **Validate** method on the **WorkflowWorkItems** entity. 
-- If the workitem is not ready for completion, then send a notification to the assigned user to let them know that there is a workitem that needs their attention.
-- If the workitem is ready for completion, then request a response from the assigned user by sending the available response options to the user.
-- After a response is provided, complete the workitem with that response by calling the **Complete** method on the **WorkflowWorkItems** entity. 
+- Trigger the Power Automate using the **when a business event occurs** trigger targeting the appropriate **workflow work item** event.
+- Validate that the **workflow work item**  contains a valid set of information so it is ready for completion by calling the **Validate** method on the **WorkflowWorkItems** entity. 
+- If the work item is not ready for completion, then send a notification to the assigned user to let them know that there is a work item that needs their attention.
+- If the work item is ready for completion, then request a response from the assigned user by sending the available response options to the user.
+- After a response is provided, complete the work item with that response by calling the **Complete** method on the **WorkflowWorkItems** entity. 
 
 To enable external completion of work items, the work item action manager class needs to implement the IValidateWorkflowWorkItemAction interface. The standard WorkflowWorkItemActionManager class has implemented this interface. In Platform update 32, the TrvWorkflowWorkItemActionManager class was updated to implement the IValidateWorkflowWorkItemAction interface. Use the existing IValidateWorkflowWorkItemAction implementations as examples to notify updates about other WorkflowWorkItemActionManager classes.
 

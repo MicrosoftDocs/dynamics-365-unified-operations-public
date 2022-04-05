@@ -3,7 +3,7 @@
 
 title: Dataverse tables
 description: Microsoft Dynamics 365 Human Resources uses Dataverse to enable extensibility and integration scenarios.
-author: andreabichsel
+author: twheeloc
 ms.date: 01/25/2021
 ms.topic: article
 ms.prod: 
@@ -21,13 +21,16 @@ ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
 ---
 
 # Dataverse tables
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

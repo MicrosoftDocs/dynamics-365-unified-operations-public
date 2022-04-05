@@ -4,7 +4,7 @@
 title: VAT statement details for Austria
 description: This topic explains how to set up the VAT statement for legal entities in Austria.
 author: ShylaThompson
-ms.date: 06/20/2017
+ms.date: 03/24/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,6 +29,10 @@ ms.dyn365.ops.version: AX 7.0.1
 # VAT statement details for Austria
 
 [!include [banner](../includes/banner.md)]
+
+> [!IMPORTANT]
+  > This feature is deprecated. For more information, see [Removed and deprecated features](../get-started/removed-deprecated-features-finance.md#vat-statement-for-austria-design-based-on-reporting-codes).
+  > To learn more about VAT declaration, see [VAT declaration (Austria)](emea-aut-vat-declaration-austria.md)
 
 This topic explains how to set up the VAT statement for legal entities in Austria.
 

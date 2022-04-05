@@ -37,9 +37,16 @@ ms.dyn365.ops.version: Platform update 2
 
 To see what's new or changed in each release of a Finance and Operations app, see the following topics:
 
-- **Finance:** [What's new or changed in Dynamics 365 Finance](../../../finance/get-started/whats-new-home-page.md) 
+- **Finance:** [What's new or changed in Dynamics 365 Finance](../../../finance/get-started/whats-new-home-page.md)
+- **Human Resources (merged infrastructure):** [What's new or changed in Microsoft Dynamics 365 Human Resources](../../../human-resources/get-started/hr-whats-new-changed-10-0-26.md)  
 - **Supply Chain Management:** [What's new or changed in Dynamics 365 Supply Chain Management](../../../supply-chain/get-started/whats-new-home-page.md) 
 - **Commerce:** [What's new or changed in Dynamics 365 Commerce](../../../commerce/get-started/whats-new-home-page.md)
+
+
+## Stand-alone applications
+
+To see what new or changed in the stand-alone Dynamics 365 Human Resources, see the following topic:
+
 - **Human Resources:** [What's new or changed in Dynamics 365 Human Resources](../../../human-resources/hr-admin-whats-new.md)
 
 ## Platform updates

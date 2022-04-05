@@ -3,7 +3,7 @@
 
 title: Person name history
 description: This topic provides details and an example query for the Person name history entity in Dynamics 365 Human Resources.
-author: marcelbf
+author: twheeloc
 ms.date: 09/01/2021
 ms.topic: article
 ms.prod: 
@@ -19,12 +19,15 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: marcelbf
+ms.author: twheeloc
 ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: Human Resources
 ---
 
 # Person name history
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

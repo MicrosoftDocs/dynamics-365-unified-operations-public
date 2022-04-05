@@ -3,7 +3,7 @@
 
 title: IoT Intelligence home page
 description: This topic provides links to information about IoT Intelligence.
-author: robinarh
+author: tonyafehr
 ms.date: 12/09/2020
 ms.topic: article
 ms.prod: 
@@ -15,12 +15,12 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: "intro-internal"
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2020-04-25
 ms.dyn365.ops.version: AX 7.0.0
 ---

@@ -4,7 +4,7 @@
 title: System requirements for on-premises deployments
 description: This topic lists the system requirements for on-premises deployments.
 author: PeterRFriis
-ms.date: 09/13/2021
+ms.date: 02/08/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 8
 This topic lists the system requirements for the current version of Microsoft Dynamics 365 Finance + Operations (on-premises) deployments. Verify that the system that you're working with meets or exceeds the minimum network, hardware, and software requirements.
 
 > [!IMPORTANT]
-> Dynamics 365 Finance + Operations (on-premises) is not supported on any public cloud infrastructure, including Microsoft Azure Cloud services. However, it is supported to run on [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/) services.
+> Dynamics 365 Finance + Operations (on-premises) is not supported on any public cloud infrastructure, including Microsoft Azure Cloud services. However, it is supported to run on [Microsoft Azure Stack HCI](https://azure.microsoft.com/products/azure-stack/hci/) and [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/).
 
 ## Network requirements
 
@@ -296,7 +296,7 @@ Support for Internet Explorer 11 was deprecated in December 2020, with end of su
 
 Starting in version 10.0.20, users accessing Finance and Operations apps with Internet Explorer will start seeing notifications about the end of support for that browser. Before August 17, 2021, Internet Explorer users will see an informational message that Internet Explorer support is soon ending. After that date, Internet Explorer users will see a warning that support has officially ended. Organizations are encouraged to keep these notifications on unless Internet Explorer is mandated for your users, in which case you can choose to suppress these notifications by disabling the **Internet Explorer end-of-support notifications** feature and relying on internal processes for migrating your user base to Microsoft Edge or another modern browser. 
 
-The current target for blocking Internet Explorer use in Finance and Operations apps is April 2022. If your organization wants to block Internet Explorer earlier, and you're using version 10.0.21 or later, contact Microsoft Support.
+Starting in version 10.0.25, the use of Internet Explorer 11 will be blocked in Finance and Operations apps. If your organization wants to block Internet Explorer earlier, and you're using version 10.0.21 or later, contact Microsoft Support. 
 
 To prepare organizations and users for the upcoming block of Internet Explorer, in January 2022, Internet Explorer users will start to receive a non-dismissible error message that states that Internet Explorer support will soon be blocked. This error message is **not** controlled by the **Internet Explorer end-of-support notifications** feature. Customers will have to contact Microsoft Support if this message must be suppressed for their organization.
 

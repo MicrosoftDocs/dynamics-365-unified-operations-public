@@ -5,7 +5,7 @@ title: Templates and layouts overview
 description: This topic covers templates and layouts in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 ms.date: 12/12/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.search.region: Global
 ms.search.industry: 
 ms.author: niholman

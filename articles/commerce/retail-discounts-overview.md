@@ -5,7 +5,7 @@ title: Retail discounts
 description: This topic provides an overview of the discount functionality in Dynamics 365 Commerce. It explains the properties found on the various discount forms, and best practices for discount management.
 author: shajain
 ms.date: 10/15/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 8.1.0, Retail October 2018 update
 # Retail discounts
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 This topic provides an overview of the discount functionality in the Dynamics 365 Commerce. It explains the properties found on the various discount forms, and best practices for discount management. However, this topic does not cover the various discount types in detail, for example, simple, quantity, mix and match, and threshold discounts. These details will be covered in separate topics created for each of these discount types.
 

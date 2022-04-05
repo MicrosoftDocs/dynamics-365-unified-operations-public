@@ -4,7 +4,7 @@
 title: Extensible data security policies 
 description: This topic provides an overview of Extensible Data Security (XDS) policies in Finance and Operations apps.
 author: Peakerbl
-ms.date: 04/26/2021
+ms.date: 03/29/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -90,6 +90,8 @@ the records that are included by each policy are the only records that can be
 accessed. This means that a record must satisfy all the applicable security
 policies before access to the record is allowed.
 
+XDS is not supported for financial dimensions and using XDS with financial dimension data will result in corruption of the data.
+
 ## Additional resources
 
 For information about how to debug policies, create more advanced policies, including
@@ -100,9 +102,6 @@ more please refer to these resources:
 
 - [Developing Extensible Data Security Policies (white paper) [AX
 2012]](/dynamicsax-2012/appuser-itpro/developing-extensible-data-security-policies-white-paper)
-
-- [Securing Data by Dimension Value by using Extensible Data Security (white
-paper) [AX 2012]](/dynamicsax-2012/appuser-itpro/securing-data-by-dimension-value-by-using-extensible-data-security-white-paper)
 
 - [Extensible Data Security examples – by Andre Arnaud De
 Calavon [blog]](https://dynamicspedia.com/tag/xds/)

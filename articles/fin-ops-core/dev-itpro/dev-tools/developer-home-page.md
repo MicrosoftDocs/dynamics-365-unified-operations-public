@@ -2,13 +2,13 @@
 title: Develop and customize home page
 description: This topic provides links to topics about development.
 author: RobinARH
-ms.date: 08/27/2021
+ms.date: 10/26/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: "intro-internal"
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -71,7 +71,7 @@ The Finance and Operations apps enable the entire enterprise resource planning (
 - [Tools add-ins for Visual Studio](developer-tools-add-ins.md)
 - [Export and import models](models-export-import.md)
 - [Metadata search in Visual Studio](metadata-search-visual-studio.md)
-- [Create new users on development machines](enable-development-machine.md)
+- [Create new users on development machines](/d365F-O/fin-ops-core/dev-itpro/dev-tools/access-instances)
 - [Update the Visual Studio development tools](update-development-tools.md)
 - [Development and build VMs that don't allow admin access FAQ](../sysadmin/VMs-no-admin-access.md)
 
@@ -97,7 +97,7 @@ The Finance and Operations apps enable the entire enterprise resource planning (
 ### Overviews
 
 - [Write business logic by using C\# and X++ source code](write-business-logic.md)
-- [Visual Studio 2017 requirements for X++](developer-tools-vs2017.md)
+- [Visual Studio requirements for X++](developer-tools-vs2017.md)
 
 ### Language support
 
@@ -105,6 +105,7 @@ The Finance and Operations apps enable the entire enterprise resource planning (
 - [Debug X++ code by using the debugger in Visual Studio](debug-xpp.md)
 - [Language Integrated Query (LINQ) provider for C\#](linq-provider-c.md)
 - [Write best practice rules](author-best-practice-rules.md)
+- [SysSetupConfigAttribute attribute](syssetupconfigattribute.md)
 
 ## Customize with extensions and overlayering
 

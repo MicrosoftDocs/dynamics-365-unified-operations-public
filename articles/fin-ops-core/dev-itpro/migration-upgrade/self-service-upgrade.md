@@ -4,7 +4,7 @@
 title: Self-service upgrade to the latest version
 description: This topic describes the process for moving to the latest update of Finance and Operations.
 author: laneswenka
-ms.date: 02/20/2020
+ms.date: 11/01/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,6 +31,8 @@ ms.dyn365.ops.version: 10.0.1
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
+> The process that is described here is now deprecated for data upgrade between older versions of Finance and Operations apps and the latest version. For more information about Dynamic AX 2012 upgrades, see [Upgrade from AX 2012 to Finance and Operations](upgrade-overview-2012.md).
+>
 > This topic applies to the following starting versions:
 >
 > - Microsoft Dynamics 365 for Operations version 1611 (November 2016) (also known as version 7.1)

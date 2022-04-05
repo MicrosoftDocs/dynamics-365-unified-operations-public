@@ -7,7 +7,7 @@ manager: annbe
 ms.date: 09/03/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
+
 ms.technology: 
 # optional metadata
 # ms.search.form: 
@@ -71,3 +71,17 @@ The following illustration shows an example where three unpublished ratings and 
 ## Additional resources
 
 [Ratings and reviews overview](ratings-reviews-overview.md)
+
+[Opt in to use ratings and reviews](opt-in-ratings-reviews.md)
+
+[Manage ratings and reviews](manage-reviews.md)
+
+[Configure ratings and reviews](configure-ratings-reviews.md)
+
+[Sync product ratings](sync-product-ratings.md)
+
+[Import and export ratings and reviews](import-export-reviews.md)
+
+[Configure Service-to-Service authentication](service-to-service-auth.md)
+
+[Ratings and reviews FAQ](ratings-reviews-faq.md)

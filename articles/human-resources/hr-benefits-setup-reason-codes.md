@@ -29,6 +29,9 @@ ms.dyn365.ops.version: Human Resources
 
 # Set up reason codes
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dynamics 365 Human Resources uses reason codes to explain why an employee’s benefits are changing.

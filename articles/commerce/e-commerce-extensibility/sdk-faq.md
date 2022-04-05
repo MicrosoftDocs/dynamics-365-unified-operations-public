@@ -4,7 +4,7 @@
 title: Dynamics 365 Commerce online SDK FAQ
 description: This topic summarizes answers to questions frequently asked by users of the Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
-ms.date: 09/23/2021
+ms.date: 03/11/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,6 +30,36 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/banner.md)]
 
 This topic summarizes answers to questions frequently asked by users of the Dynamics 365 Commerce online software development kit (SDK).
+
+### How do I resolve heap out of memory errors?
+
+If you are experiencing heap out of memory errors when building the online SDK, it is possible that the code has incorrect imports. To ensure that paths are set up correctly we recommend that you use the [CLI tools](cli-command-reference.md) included with the online SDK for creating customizations such as view extensions, component overrides, and module clones.
+
+Imports from modules residing in the **node_modules** directory should always be against the namespace and module name. Any import of a module with an absolute path from the module's **src** folder causes the build process to run into a loop which could lead to heap out of memory errors.
+
+The following example shows an invalid import because all of the importable components were already exported by the module.
+
+```ts
+import { IHeaderViewProps } from '@msdyn365-commerce-modules/header/src/header';
+```
+
+The following example shows a valid import. 
+
+```ts
+import { IHeaderViewProps } from '@msdyn365-commerce-modules/header';
+```
+
+### How do I increase node memory size?
+
+The default memory setting should be sufficient for most customization scenarios. However, if your application needs more heap space you can specify the environment variable in the scripts section of the package.json file by adding **--max_old_space_size=4096**, as shown in the following example:
+
+```JSON
+"build": "SET NODE_OPTIONS=--max_old_space_size=4096 && yarn msdyn365b build --use-eslint",
+```
+
+### During package upload, I receive this error message: "The e-commerce package has an outdated online SDK. Please create a new package and retry." Or, during package deployment, I receive this error message: "The e-commerce package cannot be deployed due to an outdated online SDK. Please create a new package and retry deployment." Why?
+
+To help decrease deployment time during package deployment, uploaded packages are prebuilt while the **yarn msdyn365 pack** [command-line interface (CLI) command](cli-command-reference.md#pack) is run by using the latest online SDK. If package upload fails, and you receive one of the error messages, update to the latest SDK by using the **[yarn msdyn365 update-versions sdk](cli-command-reference.md#update-versions)** CLI command. In this way, you ensure that the yarn.lock file is deleted before you run yarn to pull down the latest online SDK. You can then rebuild the package by using the **yarn msdyn365 pack** command, and then redeploy the new package.
 
 ### Can I opt in to using Webpack 5 to bundle the Commerce application?
 

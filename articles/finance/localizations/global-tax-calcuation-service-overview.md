@@ -4,8 +4,8 @@
 title: Tax Calculation overview
 description: This topic explains the overall scope and features of the Tax Calculation capability.
 author: wangchen
-ms.date: 10/15/2021
-ms.topic: article
+ms.date: 03/02/2022
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: Application user
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: wangchen
@@ -63,15 +63,32 @@ Tax Calculation is deployed in the following Azure geographies. More Azure geogr
 - Canada
 - Europe
 - Japan
+- Switzerland
 - United Kingdom
 - United States
 
 > [!NOTE]
 > Tax Calculation doesn't support earlier version of Dynamics 365, such as Dynamics AX 2012, or on-premises deployments of Dynamics 365.
 
+## Versions
+We recommend that you import and set up your Tax Calculation configuration with the version that matches your Finance or Supply Chain Management version.
+
+| Finance or Supply Chain Management version | Tax configuration version               |
+| --------------- | --------------------------------------- |
+| 10.0.18         | Tax Configuration - Europe 30.12.82     |
+| 10.0.19         | Tax Calculation Configuration 36.38.193 |
+| 10.0.20         | Tax Calculation Configuration 40.43.208 |
+| 10.0.21         | Tax Calculation Configuration 40.48.215 |
+| 10.0.22         | Tax Calculation Configuration 40.48.215 |
+| 10.0.23         | Tax Calculation Configuration 40.50.221 |
+| 10.0.24         | Tax Calculation Configuration 40.50.225 |
+| 10.0.25         | Tax Calculation Configuration 40.50.225 |
+| 10.0.26         | Tax Calculation Configuration 40.54.234 |
+
+
 ## Data flow
 
-Here is an outline of the data flow process for tTax Calculation. 
+Here is an outline of the data flow process for Tax Calculation. 
 
 1. In RCS, view and import taxable document model configurations and model mapping configurations. If you must extend configurations for an advanced scenario, see [Add data fields in tax configurations](tax-service-add-data-fields-tax-configurations.md).
 2. In RCS, create or maintain tax features. You can use tax features to maintain tax rates and tax applicability rules.
@@ -126,6 +143,11 @@ The following transactions are supported in version 10.0.23:
 
 - Free text invoice
 
+The following transactions are supported in version 10.0.26: 
+
+- General journals
+- Vendor invoice journal
+
 ## Supported countries/regions
 
 Tax Calculation can be enabled by legal entity. 
@@ -173,6 +195,16 @@ The following countries/regions for a legal entity's primary address are support
 - Japan
 - Malaysia
 - Singapore
+
+The following countries/regions for a legal entity's primary address are supported in version 10.0.24:
+
+- Mexico
+
+The following countries/regions for a legal entity's primary address are supported in version 10.0.26:
+
+- China
+- Czech Republic
+- Spain
 
 ## Related resources
 

@@ -21,7 +21,7 @@ ms.custom: 105011
 ms.assetid: 49a0fcc9-d4db-45ad-8c4b-213ccaced82b
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2016-02-28
 
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update

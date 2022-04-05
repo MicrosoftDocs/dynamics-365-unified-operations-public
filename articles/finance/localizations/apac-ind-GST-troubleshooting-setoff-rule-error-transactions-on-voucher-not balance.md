@@ -8,7 +8,7 @@ manager: beya
 ms.date: 06/08/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+
 ms.technology: 
 
 # optional metadata

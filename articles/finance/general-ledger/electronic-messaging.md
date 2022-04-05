@@ -4,7 +4,7 @@
 title: Electronic messaging
 description: This topic provides overview and setup information for electronic messaging in Microsoft Dynamics 365 Finance.
 author: liza-golub
-ms.date: 08/20/2021
+ms.date: 01/04/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -95,7 +95,13 @@ The following table provides information about some country-specific regulatory 
 | Russia      | [Assessed tax declaration](../localizations/rus-assessed-tax-declaration.md) | |
 | Russia      | [Transport tax declaration](../localizations/rus-transport-tax-declaration.md) | |
 | Russia      | [Land tax declaration](../localizations/rus-land-tax-declaration.md) | |
-
+| Norway      | [VAT return with direct submission to Altinn](../localizations/emea-nor-vat-return.md) | [New VAT return with direct submission to Altinn in Dynamics 365 Finance](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/new-vat-return-with-direct-submission-to-altinn-in-dynamics-365-finance-december-1-2021) |
+| France      | [VAT declaration (France)](../localizations/emea-fra-VAT-declaration-preview-France.md) | |
+| Austria     | [VAT declaration (Austria)](../localizations/emea-aut-vat-declaration-austria.md) | |
+| Germany     | [VAT declaration (Germany)](../localizations/emea-deu-vat-declaration-germany.md) | |
+| Netherlands | [VAT declaration for Netherlands](../localizations/emea-nl-vat-declaration-netherlands.md) | |
+| Sweden      | [VAT declaration (Sweden)](../localizations/emea-swe-VAT-declaration-Sweden.md) | |
+| Switzerland | [VAT declaration (Switzerland)](../localizations/emea-che-vat-declaration-switzerland.md) | |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
 

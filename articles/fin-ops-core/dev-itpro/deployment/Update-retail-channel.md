@@ -4,7 +4,7 @@
 title: Apply updates and extensions to Commerce Scale Unit (cloud)
 description: This topic shows how to apply updates and extensions to cloud-hosted Commerce channel components.
 author: AamirAllaq
-ms.date: 07/15/2021
+ms.date: 12/13/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -63,6 +63,24 @@ Both **Apply updates** and **Apply extension** operations will involve a period 
 
 > [!NOTE]
 > Applying an extension and an update at the same time requires a single downtime, and can be an effective way of averting multiple downtimes.
+
+### Troubleshooting updates
+
+#### Potential downgrade
+When applying an update to a Commerce Scale Unit in your environment, you may be shown an error message about version downgrade detection.
+
+**Error message** 
+
+"The operation was canceled because a potential downgrade was identified from version 'X.XX.XXXXX.X' to version 'X.XX.XXXXX.X'"
+
+**Explanation** 
+
+This issue occurs when your Commerce Scale Unit has a Quality Update (hotfix) applied that may not be included in the Service Update that you are attempting to apply. This may be because the newest Service Update does not yet have the latest Quality Update issued (this is rare), or because you may be manually updating to a version of a Service Update that is not the latest available version.
+
+**Resolution** 
+
+1. Make sure you selected the most recent version of the Service Update during the update process.
+2. If the latest Quality Update is not yet available in the Service Update, wait up to three business days and try again. If the issue persists, you may want to file a support request.
 
 ## View history
 To view the history of recent operations on a Scale Unit, select **History** on the **Action** tab to open the **Scale Unit History** page. On this page, you can view recent operations such as initialize, service update, quality update, version, extension details, and other relevant information.

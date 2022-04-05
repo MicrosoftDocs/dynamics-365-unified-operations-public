@@ -1,13 +1,13 @@
 ---
 title: Integrated ledger
 description: This topic describes the integration of ledger data between Finance and Operations and other Dynamics 365 applications using the Dataverse.
-author:  robinarh
+author:  tonyafehr
 ms.date: 09/06/2019
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2020-01-06
 ---
 
@@ -15,7 +15,7 @@ ms.search.validFrom: 2020-01-06
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 In a business application, ledger data defines the core set up for how a company does business. For example, ledger data describes the fiscal year the company follows, the currencies it transacts in, and the accounts it uses. This topic describes the integration of this core financial data.
 

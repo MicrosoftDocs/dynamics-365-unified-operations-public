@@ -32,12 +32,9 @@ The *Cluster position full* feature offers an alternative to more rigid enforcem
 
 This feature introduces the ability to run the **Full** button on one of the work units in a cluster. In older versions, this option was available only for regular order picking, not for cluster picking. However, this feature differs from the standard **Full** button in that it cancels the remaining work. It doesn't suggest that the user add another bin to the same cluster, and it doesn't automatically create new work.
 
-## Turn on the Cluster position full feature
+## Turn the Cluster position full feature on or off
 
-Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** *Warehouse management*
-- **Feature name:** *Cluster position full*
+To use the functionality described in this topic, the *Cluster position full* feature must be turned on for your system. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *Cluster position full* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Setup
 

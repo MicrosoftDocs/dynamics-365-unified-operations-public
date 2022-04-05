@@ -4,7 +4,7 @@
 title: Commerce Data Exchange troubleshooting
 description: This topic provides information that will help you troubleshoot CDX in implementations.
 author: jashanno
-ms.date: 08/26/2020
+ms.date: 03/01/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -32,13 +32,19 @@ ms.dyn365.ops.version: 10.0.12
 
 This topic is intended for IT personas that are implementing functionality that is related to data synchronization (Commerce Data Exchange \[CDX\]) in a Microsoft Dynamics 365 Commerce environment. It provides information that will help you troubleshoot CDX in implementations.
 
-## Overview
-
 Data configuration and synchronization are crucial to correct implementation. Regardless of business requirements, IT infrastructure, and overall preparedness, if data isn't correctly synced, the whole environment is effectively useless. Therefore, it's crucial that you understand the process of troubleshooting any issue that is related to data synchronization, from Commerce headquarters, through the Commerce Scale Unit, to the brick-and-mortar stores that use Modern POS (either with or without an offline database) and other in-store components. This topic provides some general guidance about how to mitigate or fix some issues. It also provides information about the best time to create a support request and the most important data to provide if you want to speed up a support request.
 
 Before you go through this topic, it's important that you understand the concepts of a channel (store), registers and devices, and the Modern POS offline database. Therefore, we recommend that you review some of the resources at the end of this topic, such as the CDX implementation guide and the overview of the Commerce architecture.
 
-## Troubleshooting
+## Scenario-based usage troubleshooting
+
+In the following known scenarios, some configurations in Commerce headquarters might cause out-of-box CDX functionality not to achieve expected, successful results. This list will be updated as additional scenarios become known.
+
+- When the [Extensible Data Security (XDS) policies](../../fin-ops-core/dev-itpro/sysadmin/extensible-data-security-policies.md) feature is enabled, CDX might not work correctly. Specifically, users might not be able to see all the Commerce channels in Commerce headquarters. In this scenario, if a user runs a CDX job, it will generate only partial data (the data that this user is able to see). Therefore, the channel database data will be incomplete, and an error will likely occur.
+- The **RetailServiceAccount** user is altered, or XDS policies are assigned to it. The **RetailServiceAccount** is an important, pre-generated account that is used for a variety of reasons and purposes. We highly recommend that you not alter this account in any way. If you're using XDS policies, don't assign any to this account that will reduce the data that the account can see or access.
+- CDX jobs fail with timeout errors when upload packages are generated. This issue most often occurs when custom-created transactional tables are missing an index on the **ReplicationCounterFromOrigin** column in these generated tables.
+
+## Error-based troubleshooting
 
 If an error that occurs doesn't appear in the following table, create a support request, as required, so that Microsoft Support can help you fix the issue. This topic is focused on issues that you can work on directly, without the help of Microsoft Support, and issues that you can directly see but can't fix without the help of Microsoft Support.
 

@@ -1,238 +1,245 @@
 ---
-# required metadata
-
 title: Weighted average with physical value and marking
 description: Weighted average is an inventory model based on the weighted average principle, where issues from inventory are valued at the average value of the items that are received into inventory during the inventory closing period, plus any on-hand inventory from the previous period.
 author: AndersGirke
-ms.date: 10/25/2017
+ms.date: 02/21/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kamaybac
-
-
-# ms.tgt_pltfrm: 
 ms.custom: 65501
-ms.assetid: 25041ff0-bafe-484d-a94a-e1772ad43204
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Weighted average with physical value and marking
 
 [!include [banner](../includes/banner.md)]
 
-Weighted average is an inventory model based on the weighted average principle, where issues from inventory are valued at the average value of the items that are received into inventory during the inventory closing period, plus any on-hand inventory from the previous period.
+Weighted average is an inventory model based on an average that results from the multiplication of each component (item transaction) by a factor (cost price) reflecting its importance (quantity). Another way to say this is that weighted average is an inventory model that assigns the cost of issue transactions based on the mean value of all inventory received during the period, plus any on-hand inventory from the previous period.
 
-When you run an inventory closing, all receipts are settled against a virtual issue, which holds the total received quantity and value. This virtual issue has a corresponding virtual receipt from which the issues are settled. In this manner, all issues get the same average cost. The virtual issue and receipt can be seen as a virtual transfer, which is named the weighted average inventory closing transfer.
+When you run an inventory closing using the weighted average inventory model, there are two ways a settlement can be created. Typically, all receipts are settled against a virtual issue, which holds the total received quantity and value. This virtual issue has a corresponding virtual receipt from which the issues are settled. In this manner, all issues get the same average cost. The virtual issue and receipt can be seen as a virtual transfer, which is named the *weighted average inventory closing transfer*. This settlement method is called a *weighted average summarized settlement*. If there is only one receipt, all issues can be settled from it and the virtual transfer will not be created. This settlement method is referred to as a *direct settlement*. Any inventory that is on hand after the inventory close is performed is valued at the weighted average from the previous period and included in the weighted average calculation in the next period.
 
-If there is only one receipt, all issues can be settled from it and the virtual transfer will not be created. 
-
-When using weighted average, you can mark inventory transactions so that a specific item receipt is settled against a specific issue, instead of using the weighted average rule. 
-
-We recommend a monthly inventory closing when you use the weighted average inventory model. 
+You can override the weighted average principle by marking inventory transactions so that a specific item receipt is settled against a specific issue. A periodic inventory close is required when you use the weighted average inventory model to create settlements and adjust the value of issues according to the weighted average principle. Until you run the inventory close process, issue transactions are valued at the running average when the physical and financial updates occurred. Unless you're using marking, the running average is calculated when the physical or financial update is performed.
 
 The weighted average inventory costing method is calculated by the following formula:
--   Weighted average = (Q1\*P1 + Q2\*P2 + Qn\*Pn) / (Q1 + Q2 + Qn)
 
-Inventory transactions leaving the inventory issues. This includes sales orders, inventory journals, and production orders, occur at an estimated cost price on the posting date. This estimated cost price is also referred to as running average. At the time of inventory close, the system will analyze the inventory transactions for previous and current periods and determine which of the following closing principles should be used.
--   Direct settlement
--   Summarized settlement
+- Weighted average = (\[Q1 × P1\] + \[Q2 × P2\] + \[Q*n* × P*n*\]) ÷ (Q1 + Q2 + Q*n*)
+
+Q = quantity of the transaction  
+P = price of the transaction
 
 Settlements are inventory close postings that adjust the issues to the correct weighted average as of the closing date. The following examples illustrate the effect of using weighted average with five different configurations:
--   Weighted average direct settlement without the Include physical value option
--   Weighted average summarized settlement without the Include physical value option
--   Weighted average direct settlement with the Include physical value option
--   Weighted average summarized settlement with the Include physical value option
--   Weighted average with marking
+
+- Weighted average direct settlement without the **Include physical value** option
+- Weighted average summarized settlement without the **Include physical value** option
+- Weighted average direct settlement with the **Include physical value** option
+- Weighted average summarized settlement with the **Include physical value** option
+- Weighted average with marking
 
 ## Weighted average direct settlement without Include physical value
-The direct settlement principle is the same used for weighted average in earlier versions. The system will settle directly between receipts and issues. The system uses this direct settlement principle in certain specific situations:
--   One receipt and one or several issues has been posted in the period
--   Only issues have been posted in the period and the inventory contains on-hand items from a previous closing
 
-In the scenario in the following sections, a financially updated receipt and issue have been posted. During inventory close, the system will settle the receipt directly against the issue, and no adjustment to the cost price is needed on issue. The following transactions are illustrated in the graphic.
--   1a. Inventory physical receipt updated for a quantity of 5 at USD 10.00 each
--   1b. Inventory financial receipt updated for a quantity of 5 at USD 10.00 each
--   2a. Inventory physical issue updated for a quantity of 2 at USD 10.00 each
--   2b. Inventory financial issue updated for a quantity of 2 at USD 10.00 each
--   3. Inventory close is performed using the direct settlement method to settle the inventory financial receipt to the inventory financial issue.
+The direct settlement principle creates settlements directly between receipts and issues without creating additional inventory transactions. The system uses this direct settlement principle in the following situations:
 
-The following diagram illustrates this series of transactions with the effects of choosing the Weighted average inventory model and the direct settlement principle without the Include physical value option. 
+- One receipt and one or more issues have been posted in the period.
+- Only issues have been posted in the period and the inventory contains on-hand items from a previous closing.
 
-![WeightedAverage DS without Include Physical Value.](./media/weightedaveragedirectsettlementwithoutincludephysicalvalue.gif) 
+In this example, the **Include physical value** checkbox is cleared on the **Item model group** for the released product. The illustration that follows shows these transactions:
+
+- 1a. Inventory physical receipt for a quantity of 10 at a cost of USD 10.00 each.
+- 1b. Inventory financial receipt for a quantity of 10 at a cost of USD 10.00 each.
+- 2a. Inventory physical receipt for a quantity of 10 at a cost of USD 20.00 each.
+- 3a. Inventory physical issue for a quantity of 1 at a cost price of USD 10.00 (running average of financially posted transactions).
+- 3b. Inventory financial issue for a quantity of 1 at a cost price of USD 10.00 (running average of financially posted transactions).
+- 4a. Inventory physical issue for a quantity of 1 at a cost of USD 10.00 each (running average of financially posted transactions).
+- 4b. Inventory financial issue for a quantity of 1 at a cost of USD 10.00 each (running average of financially posted transactions).
+- 5a. Inventory physical issue for a quantity of 1 at a cost of USD 10.00 each (running average of financially posted transactions).
+- 6\. Inventory close is performed. Based on the weighted average method, the system uses the direct settlement method because only one receipt is financially updated in the period. In this example, one settlement is created between 1b and 3b, and another between 1b and 4b. No adjustment is made because the running average is the same as the weighted average.
+
+The following diagram illustrates this series of transactions with the effects of choosing the weighted average inventory model and the direct settlement principle without the **Include physical value** option.
+
+![WeightedAverage DS without Include physical value.](media/weighted-average-direct-settlement-without-include-physical-value.png)
 
 **Key to diagram**
+
 - Inventory transactions are represented by vertical arrows.
-- Receipts into inventory are represented by vertical arrows above the timeline.
-- Issues out of inventory are represented by vertical arrows below the timeline.
-- Above (or below) each vertical arrow, the value of the inventory transaction is specified in the format Quantity@Unitprice.
-- An inventory transaction value enclosed in brackets indicates that the inventory transaction is physically posted into inventory.
-- An inventory transaction value without brackets indicates that the inventory transaction is financially posted into inventory.
-- Each new receipt or issue transaction is designated with a new label.
-- Each vertical arrow is labeled with a sequential identifier, such as *1a*. The identifiers indicate the sequence of inventory transaction postings in the timeline.
-- Inventory closings are represented by a red vertical dashed line and the label Inventory Close.
-- Settlements that are performed by inventory close are represented by dotted red arrows going diagonally from a receipt to an issue.
+- Physical transactions are represented by shorter light gray arrows.
+- Financial transactions are represented by longer black arrows.
+- Receipts into inventory are represented by vertical arrows above the axis.
+- Issues out of inventory are represented by vertical arrows below the axis.
+- Each new receipt or issue transaction is designated by a new label.
+- Each vertical arrow is labeled with a sequential identifier, such as *1a*. The identifiers indicate the order of inventory transaction postings in the timeline.
+- Each date in the diagram is separated by a thin black vertical line. The date is noted at the bottom of the diagram.
+- Inventory closings are represented by a red vertical dashed line.
+- Settlements that are performed by inventory close are represented by red diagonal dashed arrows that go from a receipt to an issue.
 
 ## Weighted average summarized settlement without the Include physical value option
-Weighted average uses the settlement principle that all receipts within in a closing period are summarized into a transaction called Weighted average inventory closing. All the receipts for the period will be settled against the issue of the newly created inventory transfer transaction. All issues for the period will be settled against the receipt of the new inventory transfer transaction. If the on-hand inventory is positive after the inventory close, that on-hand inventory and value of the inventory are summarized on the new inventory transfer transaction (receipt). If the inventory on-hand is negative after the inventory close, the on-hand inventory and value of the inventory is the sum of individual issues that have not been fully settled. In the scenario below, several financially updated receipts and one issue have been posted. 
 
-During inventory close, the system will generate and post the summarized inventory transfer transaction and settle the receipts for the period against the summarized inventory transfer issue transaction. All the issues posted for the period will be settled against the summarized inventory transfer receipt transaction. The weighted average is calculated to be USD 15.00. The issue was originally posted with an estimated cost price of USD 14.67. Therefore, an adjustment of negative USD 0.33 will be created and posted on the issue. As of the inventory closing date, the on-hand inventory is 3 pieces with a value of USD 45.00. 
+When there are multiple receipts in a period, weighted average uses the summarized settlement principle where all receipts within in a closing period are summarized into a transaction called *weighted average inventory closing*. All the receipts for the period will be settled against the issue of the newly created inventory transaction. All issues for the period will be settled against the receipt of the new inventory transaction. If there is remaining on-hand inventory value after the inventory close, the on-hand inventory value is included in the receipt transaction of the weighted average inventory closing transactions.
 
-The following transactions are illustrated in the graphic below:
--   1a. Inventory physical receipt updated for a quantity of 2 at a cost of USD 11.00 each.
--   1b. Inventory financial receipt updated for a quantity of 2 at a cost of USD 14.00 each.
--   2a. Inventory physical receipt updated for a quantity of 1 at a cost of USD 12.00 each.
--   2b. Inventory financial receipt updated for a quantity of 1 at a cost of USD 16.00 each.
--   3a. Inventory physical issue updated for a quantity of 1 at a cost of USD 14.67 each (running average).
--   3b. Inventory financial issue updated for a quantity of 1 at a cost of USD 14.67 each (running average).
--   4a. Inventory physical receipt updated for a quantity of 1 at a cost of USD 14.00 each.
--   4b. Inventory financial receipt updated for a quantity of 1 at a cost of USD 16.00 each.
--   5. Inventory close is performed.
--   6a. “Weighted average inventory close transaction” financial issue is created to sum the settlements of all the inventory financial receipts.
--   6b. “Weighted average inventory close transaction” financial receipt is created as the offset to 5a.
+The following transactions are illustrated in the graphic that follows:
 
-The following diagram illustrates this series of transactions with the effects of choosing the Weighted average inventory model and the summarized settlement principle without the Include physical value option. 
+- 1a. Inventory physical receipt for a quantity of 1 at a cost of USD 10.00 each.
+- 1b. Inventory financial receipt for a quantity of 1 at a cost of USD 10.00 each.
+- 2a. Inventory physical receipt for a quantity of 1 at a cost of USD 20.00 each.
+- 2b. Inventory financial receipt for a quantity of 1 at a cost of USD 22.00 each.
+- 3a. Inventory physical issue for a quantity of 1 at a cost price of USD 16.00 (running average of financially posted transactions).
+- 3b. Inventory financial issue for a quantity of 1 at a cost price of USD 16.00 (running average of financially posted transactions).
+- 4a. Inventory physical receipt for a quantity of 1 at a cost of USD 25.00 each.
+- 5a. Inventory physical receipt for a quantity of 1 at a cost of USD 30.00 each.
+- 5b. Inventory financial receipt for a quantity of 1 at a cost of USD 30.00 each.
+- 6a. Inventory physical issue for a quantity of 1 at a cost price of USD 23.00 (running average of financially posted transactions).
+- 7\. Inventory close is performed.
+- 7a. Weighted average inventory close transaction financial issue is created to sum the settlements of all the inventory financial receipts.
+  - Transaction 1b is settled for a quantity of 1 with an amount settled of USD 10.00.
+  - Transaction 2b is settled for a quantity of 1 with an amount settled of USD 22.00.
+  - Transaction 5b is settled for a quantity of 1 with an amount settled of USD 30.00.
+  - Transaction 7a. is created for a quantity of 3 with an amount settled of USD 62.00. This transaction offsets the sum of the three receipt transactions that are financially updated in the period.
+- 7b. Weighted average inventory close transaction financial receipt is created as the offset to financially posted issues.
+  - Transaction 3b is settled for a quantity of 1 with an amount settled of USD 20.67. This transaction is adjusted by USD 4.67 to bring the original value of USD 16.00 to 20.67 which is the weighted average of financially posted transactions for the period.
+  - Transaction 7b. is created for a quantity of 1 with an amount settled of USD 20.67 to offset 3b. This transaction offsets the sum of the one issue transaction that is financially updated in the period.
 
-![Weighted Average SS without Include Physical Value.](./media/weightedaveragesummarizedsettlementwithoutincludephysicalvalue.gif) 
+The following diagram illustrates this series of transactions with the effects of choosing the weighted average inventory model and the summarized settlement principle without the **Include physical value** option.
+
+![Weighted Average SS without Include physical value.](media/weighted-average-summarized-settlement-without-include-physical-value.png)
 
 **Key to diagram**
+
 - Inventory transactions are represented by vertical arrows.
-- Receipts into inventory are represented by vertical arrows above the timeline.
-- Issues out of inventory are represented by vertical arrows below the timeline.
-- Above (or below) each vertical arrow, the value of the inventory transaction is specified in the format Quantity@Unitprice.
-- An inventory transaction value enclosed in brackets indicates that the inventory transaction is physically posted into inventory.
-- An inventory transaction value without brackets indicates that the inventory transaction is financially posted into inventory.
-- Each new receipt or issue transaction is designated with a new label.
-- Each vertical arrow is labeled with a sequential identifier, such as *1a*. The identifiers indicate the sequence of inventory transaction postings in the timeline.
-- Inventory closings are represented by a red vertical dashed line and the label Inventory Close.
-- Settlements that are performed by inventory close are represented by dotted red arrows going diagonally from a receipt to an issue.
-- Red arrows illustrate the receipt transactions being settled to the issue transaction created by the system.
-- The green arrow represents the offsetting system-generated receipt transaction to which the originally posted issue transaction is settled
+- Physical transactions are represented by shorter light gray arrows.
+- Financial transactions are represented by longer black arrows.
+- Receipts into inventory are represented by vertical arrows above the axis.
+- Issues out of inventory are represented by vertical arrows below the axis.
+- Each new receipt or issue transaction is designated by a new label.
+- Each vertical arrow is labeled with a sequential identifier, such as *1a*. The identifiers indicate the order of inventory transaction postings in the timeline.
+- Each date in the diagram is separated by a thin black vertical line. The date is noted at the bottom of the diagram.
+- Inventory closings are represented by a red vertical dashed line.
+- Settlements that are performed by inventory close are represented by red diagonal dashed arrows that go from a receipt to an issue.
 
 ## Weighted average direct settlement with the Include physical value option
-The parameter Include physical value works differently with the weighted average inventory model than in earlier versions of the product. Select the Include physical value box for an item in the Item model group form. Then the system will use physically updated receipts when calculating the estimated cost price, or running average. Issues will be posted based on this estimated cost price during the period. During the inventory close, financially updated receipts only will be considered in the weighted average calculation. We recommend a monthly inventory close when you use the weighted average inventory model. In this weighted average direct settlement example, the item model group is marked to include physical value. 
 
-The following transactions are illustrated in the graphic below:
--   1a. Inventory physical receipt updated for a quantity of 1 at a cost of USD 11.00 each.
--   1b. Inventory financial receipt updated for a quantity of 1 at a cost of USD 10.00 each.
--   2a. Inventory physical receipt updated for a quantity of 1 at a cost of USD 15.00 each.
--   3a. Inventory physical issue updated for a quantity of 1 at a cost of USD 12.50 each (running average cost, since the physical receipt value is taken into consideration).
--   3b. Inventory financial issue updated for a quantity of 1 at a cost of USD 12.50 each (running average cost, since the physical receipt value is taken into consideration).
--   4. Inventory close is performed. During inventory close, the system will disregard all inventory transactions that have been only physically updated. Instead, the direct settlement principle will be used because only one financial receipt exists. An adjustment of USD 2.50 will be posted to the inventory transaction that has been financially issued as of the inventory closing date. After inventory close, the on hand inventory will be a quantity of 1 with a running average cost price of USD 15.00.
+The parameter **Include physical value** works differently with the weighted average inventory model than in earlier versions of the product. When you select the **Include physical value** option for an item in the **Item model group** form, the system will use physically updated receipts when calculating the estimated issue cost price, or running average. Issues will be posted based on this estimated cost price during the period. During the inventory close, financially updated receipts only will be considered in the weighted average calculation.
 
-The following diagram illustrates this series of transactions with the effects of choosing the Weighted average inventory model and the direct settlement principle with the Include physical value option. 
+The following transactions are illustrated in the graphic that follows:
 
-![Weighted average DS with Include Physical Value.](./media/weightedaveragedirectsettlementwithincludephysicalvalue.gif) 
+- 1a. Inventory physical receipt for a quantity of 10 at a cost of USD 10.00 each.
+- 1b. Inventory financial receipt for a quantity of 10 at a cost of USD 10.00 each.
+- 2a. Inventory physical receipt for a quantity of 10 at a cost of USD 20.00 each.
+- 3a. Inventory physical issue for a quantity of 1 at a cost price of USD 15.00 (running average of physically and financially posted transactions).
+- 3b. Inventory financial issue for a quantity of 1 at a cost price of USD 15.00 (running average of physically and financially posted transactions).
+- 4a. Inventory physical issue for a quantity of 1 at a cost of USD 15.00 each (running average of physically and financially posted transactions).
+- 4b. Inventory financial issue for a quantity of 1 at a cost of USD 15.00 each (running average of physically and financially posted transactions).
+- 5a. Inventory physical issue for a quantity of 1 at a cost of USD 15.00 each (running average of physically and financially posted transactions).
+- 6\. Inventory close is performed. Based on the weighted average method, the system uses the direct settlement method because only one receipt is financially updated in the period. In this example, one settlement is created between 1b and 3b, and another between 1b and 4b. Transaction 3b and 4b are each adjusted by USD -5.00 to bring the value to USD 10.00.
+
+The following diagram illustrates this series of transactions with the effects of choosing the weighted average inventory model and the direct settlement principle with the **Include physical value** option.
+
+![Weighted average DS with Include physical value.](media/weighted-average-direct-settlement-with-include-physical-value.png)
 
 **Key to diagram**
+
 - Inventory transactions are represented by vertical arrows.
-- Receipts into inventory are represented by vertical arrows above the timeline.
-- Issues out of inventory are represented by vertical arrows below the timeline.
-- Above (or below) each vertical arrow, the value of the inventory transaction is specified in the format Quantity@Unitprice.
-- An inventory transaction value enclosed in brackets indicates that the inventory transaction is physically posted into inventory.
-- An inventory transaction value without brackets indicates that the inventory transaction is financially posted into inventory.
-- Each new receipt or issue transaction is designated with a new label.
-- Each vertical arrow is labeled with a sequential identifier, such as *1a*. The identifiers indicate the sequence of inventory transaction postings in the timeline.
-- Inventory closings are represented by a red vertical dashed line and the label Inventory Close.
-- Settlements that are performed by inventory close are represented by dotted red arrows going diagonally from a receipt to an issue.
+- Physical transactions are represented by shorter light gray arrows.
+- Financial transactions are represented by longer black arrows.
+- Receipts into inventory are represented by vertical arrows above the axis.
+- Issues out of inventory are represented by vertical arrows below the axis.
+- Each new receipt or issue transaction is designated by a new label.
+- Each vertical arrow is labeled with a sequential identifier, such as *1a*. The identifiers indicate the order of inventory transaction postings in the timeline.
+- Each date in the diagram is separated by a thin black vertical line. The date is noted at the bottom of the diagram.
+- Inventory closings are represented by a red vertical dashed line.
+- Settlements that are performed by inventory close are represented by red diagonal dashed arrows that go from a receipt to an issue.
 
 ## Weighted average summarized settlement with the Include physical value option
-The Include physical value parameter works differently with weighted average than in earlier versions. Select the Include physical value box for an item in the Item model group page. Then the system will use physically updated receipts in the calculation of estimated cost price, or running average. Issues will be posted based on this estimated cost price during the period. During the inventory close financially updated receipts only will be considered in the weighted average calculation. We recommend a monthly inventory close when you use the weighted average inventory model. In this weighted average summarized settlement example, the inventory model is marked to include physical value. 
 
-The following transactions are illustrated in the graphic below:
--   1a. Inventory physical receipt updated for a quantity of 2 at a cost of USD 11.00 each.
--   1b. Inventory financial receipt updated for a quantity of 2 at a cost of USD 14.00 each.
--   2. Inventory physical receipt updated for a quantity of 1 at a cost of USD 10.00 each.
--   3a. Inventory physical receipt updated for a quantity of 1 at a cost of USD 12.00 each.
--   3b. Inventory financial receipt updated for a quantity of 1 at a cost of USD 16.00 each.
--   4a. Inventory physical issue updated for a quantity of 1 at a cost of USD 13.50 each (running average cost, since the physical receipt value is taken into consideration).
--   4b. Inventory financial issue updated for a quantity of 1 at a cost of USD 13.50 each (running average cost, since the physical receipt value is taken into consideration).
--   5a. Inventory physical receipt updated for a quantity of 1 at a cost of USD 14.00 each.
--   5b. Inventory financial receipt updated for a quantity of 1 at a cost of USD 16.00 each.
--   6. Inventory close is performed. During inventory close, the system will disregard all inventory transactions that are updated only physically. The summarized settlement principle will be used because only one financial receipt exists. An adjustment of USD 1.50 will be posted to the inventory transaction that has been financially issued as of the inventory closing date. After inventory close, the on- hand inventory will be a quantity of 3 with a running average cost price of USD 15.00.
--   7a. “Weighted average inventory close transaction” financial issue is created to sum the settlements of all the inventory financial receipts.
--   7b. “Weighted average inventory close transaction” financial receipt is created as the offset to 5a.
+The **Include physical value** parameter works differently with weighted average than in earlier versions. Select the **Include physical value** checkbox for an item on the **Item model group** page. Then the system will use physically updated receipts in the calculation of estimated cost price, or running average. Issues will be posted based on this estimated cost price during the period. During the inventory close, financially updated receipts only will be considered in the weighted average calculation. We recommend a monthly inventory close when you use the weighted average inventory model. In this weighted average summarized settlement example, the inventory model is marked to include physical value.
 
-The following diagram illustrates this series of transactions with the effects of choosing the weighted average inventory model and the summarized settlement principle without the Include physical value option. 
+The following transactions are illustrated in the graphic that follows:
 
-![WeightedAverage SS with Include Physical Value.](./media/weightedaveragesummarizedsettlementwithincludephysicalvalue.gif) 
+- 1a. Inventory physical receipt for a quantity of 1 at a cost of USD 10.00 each.
+- 1b. Inventory financial receipt for a quantity of 1 at a cost of USD 10.00 each.
+- 2a. Inventory physical receipt for a quantity of 1 at a cost of USD 20.00 each.
+- 2b. Inventory financial receipt for a quantity of 1 at a cost of USD 22.00 each.
+- 3a. Inventory physical issue for a quantity of 1 at a cost price of USD 16.00 (running average of physically and financially posted transactions).
+- 3b. Inventory financial issue for a quantity of 1 at a cost price of USD 16.00 (running average of physically and financially posted transactions).
+- 4a. Inventory physical receipt for a quantity of 1 at a cost of USD 25.00 each.
+- 5a. Inventory physical receipt for a quantity of 1 at a cost of USD 30.00 each.
+- 5b. Inventory financial receipt for a quantity of 1 at a cost of USD 30.00 each.
+- 6a. Inventory physical issue for a quantity of 1 at a cost price of USD 23.67 (running average of physically and financially posted transactions).
+- 7\. Inventory close is performed.
+- 7a. Weighted average inventory close transaction financial issue is created to sum the settlements of all the inventory financial receipts.
+  - Transaction 1b is settled for a quantity of 1 with an amount settled of USD 10.00.
+  - Transaction 2b is settled for a quantity of 1 with an amount settled of USD 22.00.
+  - Transaction 5b is settled for a quantity of 1 with an amount settled of USD 30.00.
+  - Transaction 7a. is created for a quantity of 3 with an amount settled of USD 62.00.  
+- 7b. Weighted average inventory close transaction financial receipt is created as the offset the financially closed issue transactions.
+  - Transaction 3b is settled for a quantity of 1 with an amount settled of USD 20.67. This transaction is adjusted by USD 4.67 to bring the original value of USD 16.00 to 20.67 which is the weighted average of financially posted transactions for the period.
+  - Transaction 7b. is created for a quantity of 1 with an amount settled of USD 20.67 to offset 3b.
+
+The following diagram illustrates this series of transactions with the effects of choosing the weighted average inventory model and the summarized settlement principle without the **Include physical value** option.
+
+![WeightedAverage SS with Include physical value.](media/weighted-average-summarized-settlement-with-include-physical-value.png)
 
 **Key to diagram**
+
 - Inventory transactions are represented by vertical arrows.
-- Receipts into inventory are represented by vertical arrows above the timeline.
-- Issues out of inventory are represented by vertical arrows below the timeline.
-- Above (or below) each vertical arrow, the value of the inventory transaction is specified in the format Quantity@Unitprice.
-- An inventory transaction value enclosed in brackets indicates that the inventory transaction is physically posted into inventory.
-- An inventory transaction value without brackets indicates that the inventory transaction is financially posted into inventory.
-- Each new receipt or issue transaction is designated with a new label.
-- Each vertical arrow is labeled with a sequential identifier, such as 1a. The identifiers indicate the sequence of inventory transaction postings in the timeline.
-- Inventory closings are represented by a red vertical dashed line and the label Inventory Close.
-- Settlements that are performed by inventory close are represented by dotted red arrows going diagonally from a receipt to an issue.
-- Red arrows illustrate the receipt transactions being settled to the issue transaction created by the system.
-- The green arrow represents the offsetting system-generated receipt transaction to which the originally posted issue transaction is settled
+- Physical transactions are represented by shorter light gray arrows.
+- Financial transactions are represented by longer black arrows.
+- Receipts into inventory are represented by vertical arrows above the axis.
+- Issues out of inventory are represented by vertical arrows below the axis.
+- Each new receipt or issue transaction is designated by a new label.
+- Each vertical arrow is labeled with a sequential identifier, such as *1a*. The identifiers indicate the order of inventory transaction postings in the timeline.
+- Each date in the diagram is separated by a thin black vertical line. The date is noted at the bottom of the diagram.
+- Inventory closings are represented by a red vertical dashed line.
+- Settlements that are performed by inventory close are represented by red diagonal dashed arrows that go from a receipt to an issue.
 
 ## Weighted average with marking
-Marking is a process that lets you link, or mark, an issue transaction to a receipt transaction. Marking can occur either before or after a transaction is posted. You can use marking when you want to make sure of the exact cost of the inventory when the transaction is posted or when the inventory close is performed. 
 
-For example, your Customer Service department accepted a rush order from an important customer. Because this is a rush order, you will have to pay more for this item to service your customer’s request. You must be certain the cost of this inventory item is reflected in the margin, or cost of goods sold (COGS), for this sales order invoice. 
+Marking is a process that lets you link, or mark, an issue transaction to a receipt transaction. Marking can occur either before or after a transaction is posted. You can use marking when you want to make sure of the exact cost of the inventory when the transaction is posted or when the inventory close is performed.
 
-When the purchase order is posted, the inventory is received at a cost of USD 120.00. For example, this sales order document is marked to the purchase order before the packing slip or invoice is posted. Then COGS will be USD 120.00 instead of the current running average cost for the item. If the sales order packing slip or invoice is posted before the marking occurs, the COGS will be posted at the running average cost price. 
+For example, your Customer Service department accepted a rush order from an important customer. Because this is a rush order, you will have to pay more for this item to service your customer's request. You must be certain the cost of this inventory item is reflected in the margin, or cost of goods sold (COGS), for this sales order invoice.
 
-Before inventory close is performed, these two transactions can still be marked to each other. 
+When the purchase order is posted, the inventory is received at a cost of USD 120.00. For example, this sales order document is marked to the purchase order before the packing slip or invoice is posted. Then COGS will be USD 120.00 instead of the current running average cost for the item. If the sales order packing slip or invoice is posted before the marking occurs, the COGS will be posted at the running average cost price.
 
-A receipt transaction is marked to an issue transaction. Then, the valuation method selected for the item’s item model group will be disregarded and the system will settle these transactions to each other. 
+Before inventory close is performed, these two transactions can still be marked to each other.
 
-You can mark an issue transaction to a receipt before the transaction is posted. You can do this from a sales order line in the Sales order details page. The open receipt transactions are viewed in the Marking page. 
+A receipt transaction is marked to an issue transaction. Then, the valuation method selected for the item's item model group will be disregarded and the system will settle these transactions to each other.
 
-You can mark an issue transaction to a receipt after the transaction has been posted. You can match or mark an issue transaction for an open receipt transaction for an inventoried item from a posted inventory adjustment journal. 
+You can mark an issue transaction to a receipt before the transaction is posted. You can do this from a sales order line on the **Sales order details** page. The open receipt transactions are shown on the **Marking** page.
 
-The following transactions are illustrated in the graphic below:
--   1a. Inventory physical receipt for a quantity of 1 at a cost of USD 10.00 each.
--   1b. Inventory financial receipt for a quantity of 1 at a cost of USD 10.00 each.
--   2a. Inventory physical receipt for a quantity of 1 at a cost of USD 20.00 each.
--   2b. Inventory financial receipt for a quantity of 1 at a cost of USD 20.00 each.
--   3a. Inventory physical receipt for a quantity of 1 at a cost of USD 25.00 each.
--   4a. Inventory physical receipt for a quantity of 1 at a cost of USD 30.00 each.
--   4b. Inventory financial receipt for a quantity of 1 at a cost of USD 30.00 each.
--   5a. Inventory physical issue for a quantity of 1 at a cost price USD 21.25 (running average of financial and physical updated transactions).
--   5b. Inventory financial issue for a quantity of 1 is marked to the inventory receipt 2b before the transaction is posted. This transaction is posted with a cost price of USD 20.00.
--   6a. Inventory physical issue for a quantity of 1 at a cost price of USD 21.25 each.
--   7 Inventory close is performed. Since the financially updated transaction is marked to an existing receipt these transactions are settled to each other and no adjustment is made.
+You can mark an issue transaction to a receipt after the transaction has been posted. You can match or mark an issue transaction for an open receipt transaction for an inventoried item from a posted inventory adjustment journal.
 
-The new running average cost price reflects the average of the financially and physically updated transactions at USD 27.50. 
+The following transactions are illustrated in the graphic that follows:
 
-The following diagram illustrates this series of transactions with the effects of choosing the Weighted average inventory model with marking. 
+- 1a. Inventory physical receipt for a quantity of 1 at a cost of USD 10.00 each.
+- 1b. Inventory financial receipt for a quantity of 1 at a cost of USD 10.00 each.
+- 2a. Inventory physical receipt for a quantity of 1 at a cost of USD 20.00 each.
+- 2b. Inventory financial receipt for a quantity of 1 at a cost of USD 22.00 each.
+- 3a. Inventory physical issue for a quantity of 1 at a cost price of USD 16.00 (running average of financially posted transactions).
+- 3b. Inventory financial issue for a quantity of 1 at a cost price of USD 16.00 (running average of financially posted transactions).
+- 3c. Inventory financial issue for 3b is marked to inventory financial issue for 2b.
+- 4a. Inventory physical receipt for a quantity of 1 at a cost of USD 25.00 each.
+- 5a. Inventory physical receipt for a quantity of 1 at a cost of USD 30.00 each.
+- 5b. Inventory financial receipt for a quantity of 1 at a cost of USD 30.00 each.
+- 6a. Inventory physical issue for a quantity of 1 at a cost price of USD 23.00 (running average of financially posted transactions).
+- 7\. Inventory close is performed. Based on the marking principle that uses the weighted average method, the marked transactions are settled against each other. In this example, 3b is settled against 2b, and an adjustment for USD 6.00 is posted to 3b to bring the value to USD 22.00. In this example, no additional settlements are made because the close creates settlements only for financially updated transactions.
 
-![Weighted Average with Marking.](./media/weightedaveragewithmarking.gif) 
+The following diagram illustrates this series of transactions with the effects of choosing the weighted average inventory model with marking.
+
+![Weighted Average with Marking.](media/weighted-average-with-marking.png)
 
 **Key to diagram**
+
 - Inventory transactions are represented by vertical arrows.
-- Receipts into inventory are represented by vertical arrows above the timeline.
-- Issues out of inventory are represented by vertical arrows below the timeline.
-- Above (or below) each vertical arrow, the value of the inventory transaction is specified in the format Quantity@"Unitprice".
-- An inventory transaction value enclosed in brackets indicates that the inventory transaction is physically posted into inventory.
-- An inventory transaction value without brackets indicates that the inventory transaction is financially posted into inventory.
-- Each new receipt or issue transaction is designated with a new label.
-- Each vertical arrow is labeled with a sequential identifier, such as *1a*. The identifiers indicate the sequence of inventory transaction postings in the timeline.
-- Inventory closings are represented by a red vertical dashed line and the label Inventory Close.
-- Settlements that are performed by inventory close are represented by dotted red arrows going diagonally from a receipt to an issue.
-
-
-
-
-
-
+- Physical transactions are represented by shorter light gray arrows.
+- Financial transactions are represented by longer black arrows.
+- Receipts into inventory are represented by vertical arrows above the axis.
+- Issues out of inventory are represented by vertical arrows below the axis.
+- Each new receipt or issue transaction is designated by a new label.
+- Each vertical arrow is labeled with a sequential identifier, such as *1a*. The identifiers indicate the order of inventory transaction postings in the timeline.
+- Each date in the diagram is separated by a thin black vertical line. The date is noted at the bottom of the diagram.
+- Inventory closings are represented by a red vertical dashed line.
+- Settlements that are performed by inventory close are represented by red diagonal dashed arrows that go from a receipt to an issue.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

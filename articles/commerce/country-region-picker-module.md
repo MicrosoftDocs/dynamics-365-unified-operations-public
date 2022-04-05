@@ -79,4 +79,8 @@ For each URL that you want to show and recommend to customers, follow these step
 
 [Header module](author-header-module.md)
 
+[Site picker module](site-selector.md)
+
+[Breadcrumb module](add-breadcrumb.md)
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

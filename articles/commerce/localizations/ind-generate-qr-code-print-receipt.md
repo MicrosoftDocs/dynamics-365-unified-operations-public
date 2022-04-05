@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Generate QR codes and print them on receipts
-description: This topic explains how to generate Unified Payments Interface (UPI) Quick Response (QR) codes and print them on receipts.
+title: Generate QR codes and print them on receipts for India
+description: This topic explains how to generate Unified Payments Interface (UPI) Quick Response (QR) codes and print them on receipts for India.
 author: prabhatb2011
-ms.date: 07/30/2021
+ms.date: 01/31/2022
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -23,9 +23,11 @@ ms.author: epopov
 ms.search.validFrom: 
 ms.dyn365.ops.version: 10.0.17
 ---
-# Generate QR codes and print them on receipts
+# Generate QR codes and print them on receipts for India
 
 [!include [banner](../includes/banner.md)]
+
+This topic provides customization guidelines and explains how to generate Unified Payments Interface (UPI) Quick Response (QR) codes and print them on receipts for India.
 
 ## Prerequisites
 
@@ -53,7 +55,7 @@ Because invoice printing isn't supported in Dynamics 365 Commerce, there are no 
 
     1. Go to **Retail and Commerce** > **Retail and commerce IT** > **Channel setup** > **POS profiles** > **Custom field**.
     2. On the Action Pane, select **New** to add a field.
-    3. In the **Name** field, enter a name for the new field (for example, **TAXINVOICE\_QR**).
+    3. In the **Name** field, enter a name for the new field (for example, **TAXINVOICE_QR**).
     4. In the **Type** field, select **Receipt**.
     5. In the **Caption text ID** field, enter the **Text ID** value from the language text that you created earlier.
 
@@ -80,14 +82,35 @@ Follow these steps to handle the new custom receipt field for a QR code.
 
 1. Install the Retail software development kit (SDK). For more information, see [Retail software development kit (SDK)](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 2.  In the Retail SDK, create a C\# project.
-3.  In the new C\# project, add references to the following packages:
+3.  In the new C\# project, add references to the following packages per Commerce release:
 
-    - Microsoft.Dynamics.Commerce.Runtime.DataModel.India
-    - Microsoft.Dynamics.Commerce.Runtime.DataServices
-    - Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting
-    - Microsoft.Dynamics.Commerce.Runtime.GenericTaxEngine
-    - Microsoft.Dynamics.Commerce.Runtime.Services.Messages
-    - Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdIndia
+# [Commerce 10.0.24 and before](#tab/commerce-10-0-24)
+
+```C#
+- Microsoft.Dynamics.Commerce.Runtime.DataModel.India
+- Microsoft.Dynamics.Commerce.Runtime.DataServices
+- Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting
+- Microsoft.Dynamics.Commerce.Runtime.GenericTaxEngine
+- Microsoft.Dynamics.Commerce.Runtime.Services.Messages
+```
+
+# [Commerce 10.0.25](#tab/commerce-10-0-25)
+
+```C#
+- Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting
+- Microsoft.Dynamics.Commerce.Runtime.Services.Messages
+- Microsoft.Dynamics.Commerce.Runtime.Localization.Data.Services.Messages
+```
+
+# [Commerce 10.0.26 and later](#tab/commerce-10-0-26)
+
+```C#
+- Microsoft.Dynamics.Commerce.Runtime.Services.Messages
+- Microsoft.Dynamics.Commerce.Runtime.Localization.Data.Services.Messages
+- Microsoft.Dynamics.Commerce.Runtime.Localization.Services.Messages
+```
+    
+---
 
 4. Create a class to handle. 
 
@@ -115,7 +138,7 @@ Follow these steps to handle the new custom receipt field for a QR code.
       string receiptFieldValue = string.Empty;
       switch (receiptFieldName)
       {
-          case "TAXINVOICE\_QR":
+          case "TAXINVOICE_QR":
             receiptFieldValue = await GetQRCode(request).ConfigureAwait(false);
             break;
           default:
@@ -162,8 +185,6 @@ Follow these steps to handle the new custom receipt field for a QR code.
        value="Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting" />
            <add source="assembly" 
        value="Microsoft.Dynamics.Commerce.Runtime.GenericTaxEngine" />
-           <add source="assembly"
-       value="Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdIndia" />
           </composition>
        </commerceRuntimeExtensions>
     ```
@@ -212,9 +233,13 @@ When using an OPOS printer, you may need to convert the QR code image from the *
     }
    ```
 
-## Sample of a CRT extension class for printing QR codes
+## Samples of a CRT extension class for printing QR codes
 
- ```C#
+The following code blocks grouped by Commerce release provide samples of CRT extension classes for printing QR codes.
+
+# [Commerce 10.0.24 and before](#tab/commerce-10-0-24)
+
+```C#
 namespace Contoso
 {
     namespace Commerce.Runtime.ReceiptsIndia
@@ -230,7 +255,6 @@ namespace Contoso
         using Microsoft.Dynamics.Commerce.Runtime.DataServices.Messages;
         using Microsoft.Dynamics.Commerce.Runtime.Messages;
         using Microsoft.Dynamics.Commerce.Runtime.Services.Messages;
-        using Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdIndia.Messages;
 
         /// <summary>
         /// The extended service to get custom sales receipt field.
@@ -244,7 +268,7 @@ namespace Contoso
             {
               get
                 {
-                    return new\[\]
+                    return new[]
                     {
                         typeof(GetSalesTransactionCustomReceiptFieldServiceRequest),
                    };
@@ -258,7 +282,7 @@ namespace Contoso
             {
                 get
                 {
-                    return new\[\]
+                    return new[]
                     {
                         nameof(CountryRegionISOCode.IN),
                     };
@@ -285,7 +309,7 @@ namespace Contoso
                 /// </summary>
                 /// <param name="request">The service request to get custom receipt field value.</param>
                 /// <returns>The value of custom receipt field.<returns>
-                private async Task<Response&>
+                private async Task<Response>
            GetCustomReceiptFieldForSalesTransactionReceiptsAsync(GetSalesTransactionCustomReceiptFieldServiceRequest request)
                 {
                     ThrowIf.Null(request.SalesOrder, 
@@ -294,7 +318,7 @@ namespace Contoso
                     string receiptFieldValue = string.Empty;
                     switch (receiptFieldName)
                     {
-                        case "TAXINVOICE\_QR":
+                        case "TAXINVOICE_QR":
                             receiptFieldValue = await 
            GetQRCode(request).ConfigureAwait(false);
                                    break;
@@ -538,4 +562,615 @@ namespace Contoso
             }
         }
     }
-   ```     
+```     
+
+# [Commerce 10.0.25](#tab/commerce-10-0-25)
+
+```C#
+namespace Contoso
+{
+    namespace Commerce.Runtime.ReceiptsIndia
+    {
+        using System;
+        using System.Collections.Generic;
+        using System.Globalization;
+        using System.Linq;
+        using System.Text;
+        using System.Threading.Tasks;
+        using Microsoft.Dynamics.Commerce.Runtime;
+        using Microsoft.Dynamics.Commerce.Runtime.DataModel;
+        using Microsoft.Dynamics.Commerce.Runtime.DataServices.Messages;
+        using Microsoft.Dynamics.Commerce.Runtime.Localization.Data.Services.Messages.India;
+        using Microsoft.Dynamics.Commerce.Runtime.Localization.Entities.India;
+        using Microsoft.Dynamics.Commerce.Runtime.Messages;
+        using Microsoft.Dynamics.Commerce.Runtime.Services.Messages;
+
+        /// <summary>
+        /// The extended service to get custom sales receipt field.
+        /// </summary>
+        public class GetSalesTransactionCustomReceiptFieldService : IRequestHandlerAsync, ICountryRegionAware
+        {
+            /// <summary>
+            /// Gets the supported request types.
+            /// </summary>  
+            public IEnumerable<Type> SupportedRequestTypes
+            {
+                get
+                {
+                    return new[]
+                    {
+                       typeof(GetSalesTransactionCustomReceiptFieldServiceRequest),
+                    };
+                }
+            }
+
+            /// <summary>
+            /// Gets a collection of companies supported by this request handler.
+            /// </summary>
+            public IEnumerable<string> SupportedCountryRegions
+            {
+                get
+                {
+                    return new[]
+                    {
+                       nameof(CountryRegionISOCode.IN),
+                    };
+                }
+            }
+
+            /// <summary>
+            /// Executes the requests.
+            /// </summary>
+            /// <param name="request">The request parameter.</param>
+            /// <returns>The GetReceiptServiceResponse that contains the formatted receipts.</returns>
+            public async Task<Response> Execute(Request request)
+            {
+                ThrowIf.Null(request, nameof(request));
+                Type requestedType = request.GetType();
+                if (requestedType == typeof(GetSalesTransactionCustomReceiptFieldServiceRequest))
+                {
+                    return await this.GetCustomReceiptFieldForSalesTransactionReceiptsAsync((GetSalesTransactionCustomReceiptFieldServiceRequest)request).ConfigureAwait(false);
+                }
+                throw new NotSupportedException(string.Format("Request '{0}' is not supported.", request.GetType()));
+            }
+
+            /// <summary>
+            /// Gets the custom receipt field value for sales receipt.
+            /// </summary>
+            /// <param name="request">The service request to get custom receipt field value.</param>
+            /// <returns>The value of custom receipt field.<returns>
+            private async Task<Response> GetCustomReceiptFieldForSalesTransactionReceiptsAsync(GetSalesTransactionCustomReceiptFieldServiceRequest request)
+            {
+                ThrowIf.Null(request.SalesOrder, $"{nameof(request)},{nameof(request.SalesOrder)}");
+                string receiptFieldName = request.CustomReceiptField;
+                string receiptFieldValue = string.Empty;
+                switch (receiptFieldName)
+                {
+                    case "TAXINVOICE_QR":
+                        receiptFieldValue = await GetQRCode(request).ConfigureAwait(false);
+                        break;
+                    default:
+                        return new NotHandledResponse();
+                }
+
+                return new GetCustomReceiptFieldServiceResponse(receiptFieldValue);
+            }
+
+            /// <summary>
+            /// Gets the QR code for the receipt.
+            /// </summary>
+            /// <param name="request">The service request to get customreceipt field value.</param>
+            /// <returns>QR code custom field value.</returns>
+            private static async Task<string> GetQRCode(GetSalesTransactionCustomReceiptFieldServiceRequest request)
+            {
+                var salesOrder = request.SalesOrder;
+                string receiptFieldValue = string.Empty;
+                bool isB2C = await IsB2CTransactionAsync(request.RequestContext, salesOrder).ConfigureAwait(false);
+                if (isB2C)
+                {
+                    string gstNumber = await GetStoreGSTIN(request.RequestContext).ConfigureAwait(false);
+                    var paymentInfo = await GetPaymentUPIInfo(request.RequestContext, salesOrder).ConfigureAwait(false);
+                    string totalAmount = FormatAmount(salesOrder.TotalAmount);
+                    string igstAmt = FormatAmount(GetTaxComponentAmount(salesOrder,
+                    "IGST"));
+                    string cgstAmt = FormatAmount(GetTaxComponentAmount(salesOrder,
+                    "CGST"));
+                    string sgstAmt = FormatAmount(GetTaxComponentAmount(salesOrder,
+                    "SGST"));
+                    string cessAmt = FormatAmount(GetTaxComponentAmount(salesOrder,
+                    "CESS"));
+                    StringBuilder stringBuilder = new StringBuilder($"upi://pay?cu={salesOrder.CurrencyCode}");
+                    stringBuilder.Append($"&am={totalAmount}");
+                    stringBuilder.Append($"&pa={paymentInfo.Item1}");
+                    stringBuilder.Append($"&pn={paymentInfo.Item2}");
+                    stringBuilder.Append($"&tr={salesOrder.ReceiptId}");
+                    stringBuilder.Append($"&dt={salesOrder.TransactionDateTime.ToString("dd/MM/yyyy")}");
+                    stringBuilder.Append($"&no={gstNumber}");
+                    stringBuilder.Append($"&IgstAmt = {igstAmt}");
+                    stringBuilder.Append($"&CgstAmt = {cgstAmt}");
+                    stringBuilder.Append($"&SgstAmt = {sgstAmt}");
+                    stringBuilder.Append($"&CesAmt = {cessAmt}");
+                    var qrCodeRequest = new EncodeQrCodeServiceRequest(stringBuilder.ToString())
+                    {
+                        Width = 150, // Replace with desired QR code width
+                        Height = 150 // Replace with desired QR code width
+                    };
+                    EncodeQrCodeServiceResponse qrCodeDataResponse = await
+                    request.RequestContext.ExecuteAsync<EncodeQrCodeServiceResponse>(qrCodeRequest).ConfigureAwait(false);
+                    receiptFieldValue = $"<L:{qrCodeDataResponse.QRcode}>";
+                }
+                return receiptFieldValue;
+            }
+
+            /// <summary>
+            /// Gets store GSTIN.
+            /// </summary>
+            /// <param name="requestContext">Request context.</param>
+            /// <returns>Store GSTIN.</returns>
+            private static async Task<string> GetStoreGSTIN(RequestContext requestContext)
+            {
+                var dataRequest = new GetReceiptHeaderTaxInformationDataRequest
+                {
+                    QueryResultSettings = QueryResultSettings.SingleRecord,
+                };
+                var headerTaxInformation = await requestContext.ExecuteAsync<SingleEntityDataServiceResponse<ReceiptHeaderTaxInformation>>(dataRequest).ConfigureAwait(false);
+                return headerTaxInformation.Entity?.GstRegistrationNumber;
+            }
+
+            /// <summary>
+            /// Gets payment UPI info for the sales order.
+            /// </summary>
+            /// <param name="requestContext">Request context.</param>
+            /// <param name="salesOrder">Sales order.</param>
+            /// <returns>Payment info.</returns>
+            private static async Task<Tuple<string, string>> GetPaymentUPIInfo(RequestContext requestContext, SalesOrder salesOrder)
+            {
+                var channelTenderDataRequest = new GetChannelTenderTypesDataRequest(requestContext.GetPrincipal().ChannelId, QueryResultSettings.AllRecords);
+                var channelTenderTypes = (await requestContext.Runtime.ExecuteAsync<EntityDataServiceResponse<TenderType>>(channelTenderDataRequest, requestContext).ConfigureAwait(false)).PagedEntityCollection.Results;
+                string upiId = string.Empty;
+                string upiName = string.Empty;
+                int count = salesOrder.ActiveTenderLines.Count;
+                foreach (var tenderLine in salesOrder.ActiveTenderLines)
+                {
+                    TenderType tenderType = channelTenderTypes.Where(type => type.TenderTypeId == tenderLine.TenderTypeId).SingleOrDefault();
+                    if (tenderType == null)
+                    {
+                        continue;
+                    }
+                    if (!string.IsNullOrEmpty(upiId))
+                    {
+                        upiId += ",";
+                    }
+                    if (!string.IsNullOrEmpty(upiName))
+                    {
+                        upiName += ",";
+                    }
+                    upiId += tenderType.TenderTypeId; // Here should be customized field UPIId
+                    upiName += tenderType.Name; // Here should be customized field UPIName
+                    if (count > 1)
+                    {
+                        string amount = FormatAmount(tenderLine.Amount);
+                        upiId += $":{amount}";
+                        upiName += $":{amount}";
+                    }
+                }
+                return new Tuple<string, string>(upiId, upiName);
+            }
+
+            /// <summary>
+            /// Gets tax component amount.
+            /// </summary>
+            /// <param name="salesOrder">Sales order.</param>
+            /// <param name="taxComponent">Tax component.</param>
+            /// <returns>Tax component amount.</returns>
+            private static decimal GetTaxComponentAmount(SalesOrder salesOrder, string taxComponent)
+            {
+                decimal taxAmount = 0m;
+                IEnumerable<TaxLineGTE> taxLineGte = salesOrder.ActiveSalesLines.SelectMany(x => x.TaxLines).OfType<TaxLineGTE>();
+                var groups = taxLineGte.GroupBy(x => new { x.TaxComponent }).OrderBy(x => x.Key.TaxComponent);
+                var group = groups.Where(g => string.Equals(g.Key.TaxComponent, taxComponent, StringComparison.InvariantCultureIgnoreCase)).FirstOrDefault();
+                if (group != null)
+                {
+                    taxAmount = group.Sum(l => l.Amount);
+                }
+                return taxAmount;
+            }
+
+            /// <summary>
+            /// Gets the store customer account number based on store type.
+            /// </summary>
+            /// <returns>The store customer account number.</returns>
+            internal static string GetStoreCustomerAccountNumberFromChannelProperties(RequestContext requestContext)
+            {
+                if (requestContext.GetChannelConfiguration().IsOnlineStore())
+                {
+                    if (requestContext.GetPrincipal().IsCustomer)
+                    {
+                        return requestContext.GetPrincipal().UserId;
+                    }
+                }
+                return requestContext.GetChannel().DefaultCustomerAccount;
+            }
+
+            ///<summary>
+            /// Defines whether the customer is store default customer.
+            /// </summary>
+            /// <param name="requestContext">Request context.</param>
+            /// <param name="customerId">Customer id.</param>
+            /// <returns>rue if the customer is store default customer; false otherwise.</returns>
+            private static bool IsStoreCustomer(RequestContext requestContext, string customerId)
+            {
+                return string.IsNullOrEmpty(customerId)
+                    || string.Equals(customerId, GetStoreCustomerAccountNumberFromChannelProperties(requestContext), StringComparison.InvariantCultureIgnoreCase);
+            }
+
+            /// <summary>
+            /// Defines whether the transaction is B2C.
+            /// </summary>
+            /// <param name="requestContext">Request context.</param>
+            /// <param name="salesOrder">Sales order.</param>
+            /// <returns>True if the transaction is B2C; false otherwise.</returns>
+            private static async Task<bool> IsB2CTransactionAsync(RequestContext requestContext, SalesOrder salesOrder)
+            {
+                if (IsStoreCustomer(requestContext, salesOrder.CustomerId))
+                {
+                    return true;
+                }
+                var customer = await GetCustomerAsync(requestContext, salesOrder.CustomerId).ConfigureAwait(false);
+                if (customer == null)
+                {
+                    return true;
+                }
+                var address = customer.GetPrimaryAddress();
+                if (address == null)
+                {
+                    return true;
+                }
+                GetPrimaryAddressTaxInformationDataRequest getPrimaryAddressTaxInformationDataRequest = new GetPrimaryAddressTaxInformationDataRequest(address.LogisticsLocationRecordId);
+                AddressTaxInformationIndia addressTaxInformationIndia = (await requestContext.Runtime.ExecuteAsync<SingleEntityDataServiceResponse<AddressTaxInformationIndia>>(getPrimaryAddressTaxInformationDataRequest, requestContext).ConfigureAwait(false)).Entity;
+                if (addressTaxInformationIndia == null
+                    || addressTaxInformationIndia.GstinRegistrationNumber == null
+                    || string.IsNullOrEmpty(addressTaxInformationIndia.GstinRegistrationNumber.RegistrationNumber))
+                {
+                    return true;
+                }
+                return false;
+            }
+
+            /// <summary>
+            /// Gets customer by customer identifier.
+            /// </summary>
+            /// <param name="customerId">Customer identifier.</param>
+            /// <returns>Customer object.</returns>
+            private static async Task<Customer> GetCustomerAsync(RequestContext requestContext, string customerId)
+            {
+                Customer customer = null;
+                if (!string.IsNullOrWhiteSpace(customerId))
+                {
+                    var getCustomerDataRequest = new GetCustomerDataRequest(customerId);
+                    SingleEntityDataServiceResponse<Customer> getCustomerDataResponse = await requestContext.ExecuteAsync<SingleEntityDataServiceResponse<Customer>>(getCustomerDataRequest).ConfigureAwait(false);
+                    customer = getCustomerDataResponse.Entity;
+                }
+                return customer;
+            }
+
+            /// <summary>
+            /// Formats amount.
+            /// </summary>
+            /// <param name="amount">Amount to format.</param>
+            /// <returns>Formatted amount.</returns>
+            private static string FormatAmount(decimal amount)
+            {
+                return amount.ToString("0.00", CultureInfo.InvariantCulture);
+            }
+        }
+    }
+}
+```   
+
+# [Commerce 10.0.26 and later](#tab/commerce-10-0-26)
+
+```C#
+namespace Contoso
+{
+    namespace Commerce.Runtime.ReceiptsIndia
+    {
+        using System;
+        using System.Collections.Generic;
+        using System.Globalization;
+        using System.Linq;
+        using System.Text;
+        using System.Threading.Tasks;
+        using Microsoft.Dynamics.Commerce.Runtime;
+        using Microsoft.Dynamics.Commerce.Runtime.DataModel;
+        using Microsoft.Dynamics.Commerce.Runtime.DataServices.Messages;
+        using Microsoft.Dynamics.Commerce.Runtime.Localization.Data.Services.Messages.India;
+        using Microsoft.Dynamics.Commerce.Runtime.Localization.Entities.India;
+        using Microsoft.Dynamics.Commerce.Runtime.Localization.Services.Messages;
+        using Microsoft.Dynamics.Commerce.Runtime.Messages;
+        using Microsoft.Dynamics.Commerce.Runtime.Services.Messages;
+
+        /// <summary>
+        /// The extended service to get custom sales receipt field.
+        /// </summary>
+        public class GetSalesTransactionCustomReceiptFieldService : IRequestHandlerAsync, ICountryRegionAware
+        {
+            /// <summary>
+            /// Gets the supported request types.
+            /// </summary>  
+            public IEnumerable<Type> SupportedRequestTypes
+            {
+                get
+                {
+                    return new[]
+                    {
+                       typeof(GetSalesTransactionCustomReceiptFieldServiceRequest),
+                    };
+                }
+            }
+
+            /// <summary>
+            /// Gets a collection of companies supported by this request handler.
+            /// </summary>
+            public IEnumerable<string> SupportedCountryRegions
+            {
+                get
+                {
+                    return new[]
+                    {
+                       nameof(CountryRegionISOCode.IN),
+                    };
+                }
+            }
+
+            /// <summary>
+            /// Executes the requests.
+            /// </summary>
+            /// <param name="request">The request parameter.</param>
+            /// <returns>The GetReceiptServiceResponse that contains the formatted receipts.</returns>
+            public async Task<Response> Execute(Request request)
+            {
+                ThrowIf.Null(request, nameof(request));
+                Type requestedType = request.GetType();
+                if (requestedType == typeof(GetSalesTransactionCustomReceiptFieldServiceRequest))
+                {
+                    return await this.GetCustomReceiptFieldForSalesTransactionReceiptsAsync((GetSalesTransactionCustomReceiptFieldServiceRequest)request).ConfigureAwait(false);
+                }
+                throw new NotSupportedException(string.Format("Request '{0}' is not supported.", request.GetType()));
+            }
+
+            /// <summary>
+            /// Gets the custom receipt field value for sales receipt.
+            /// </summary>
+            /// <param name="request">The service request to get custom receipt field value.</param>
+            /// <returns>The value of custom receipt field.<returns>
+            private async Task<Response> GetCustomReceiptFieldForSalesTransactionReceiptsAsync(GetSalesTransactionCustomReceiptFieldServiceRequest request)
+            {
+                ThrowIf.Null(request.SalesOrder, $"{nameof(request)},{nameof(request.SalesOrder)}");
+                string receiptFieldName = request.CustomReceiptField;
+                string receiptFieldValue = string.Empty;
+                switch (receiptFieldName)
+                {
+                    case "TAXINVOICE_QR":
+                        receiptFieldValue = await GetQRCode(request).ConfigureAwait(false);
+                        break;
+                    default:
+                        return new NotHandledResponse();
+                }
+
+                return new GetCustomReceiptFieldServiceResponse(receiptFieldValue);
+            }
+
+            /// <summary>
+            /// Gets the QR code for the receipt.
+            /// </summary>
+            /// <param name="request">The service request to get customreceipt field value.</param>
+            /// <returns>QR code custom field value.</returns>
+            private static async Task<string> GetQRCode(GetSalesTransactionCustomReceiptFieldServiceRequest request)
+            {
+                var salesOrder = request.SalesOrder;
+                string receiptFieldValue = string.Empty;
+                bool isB2C = await IsB2CTransactionAsync(request.RequestContext, salesOrder).ConfigureAwait(false);
+                if (isB2C)
+                {
+                    string gstNumber = await GetStoreGSTIN(request.RequestContext).ConfigureAwait(false);
+                    var paymentInfo = await GetPaymentUPIInfo(request.RequestContext, salesOrder).ConfigureAwait(false);
+                    string totalAmount = FormatAmount(salesOrder.TotalAmount);
+                    string igstAmt = FormatAmount(GetTaxComponentAmount(salesOrder,
+                    "IGST"));
+                    string cgstAmt = FormatAmount(GetTaxComponentAmount(salesOrder,
+                    "CGST"));
+                    string sgstAmt = FormatAmount(GetTaxComponentAmount(salesOrder,
+                    "SGST"));
+                    string cessAmt = FormatAmount(GetTaxComponentAmount(salesOrder,
+                    "CESS"));
+                    StringBuilder stringBuilder = new StringBuilder($"upi://pay?cu={salesOrder.CurrencyCode}");
+                    stringBuilder.Append($"&am={totalAmount}");
+                    stringBuilder.Append($"&pa={paymentInfo.Item1}");
+                    stringBuilder.Append($"&pn={paymentInfo.Item2}");
+                    stringBuilder.Append($"&tr={salesOrder.ReceiptId}");
+                    stringBuilder.Append($"&dt={salesOrder.TransactionDateTime.ToString("dd/MM/yyyy")}");
+                    stringBuilder.Append($"&no={gstNumber}");
+                    stringBuilder.Append($"&IgstAmt = {igstAmt}");
+                    stringBuilder.Append($"&CgstAmt = {cgstAmt}");
+                    stringBuilder.Append($"&SgstAmt = {sgstAmt}");
+                    stringBuilder.Append($"&CesAmt = {cessAmt}");
+                    var qrCodeRequest = new EncodeQrCodeServiceRequest(stringBuilder.ToString())
+                    {
+                        Width = 150, // Replace with desired QR code width
+                        Height = 150 // Replace with desired QR code width
+                    };
+                    EncodeQrCodeServiceResponse qrCodeDataResponse = await
+                    request.RequestContext.ExecuteAsync<EncodeQrCodeServiceResponse>(qrCodeRequest).ConfigureAwait(false);
+                    receiptFieldValue = $"<L:{qrCodeDataResponse.QRCode}>";
+                }
+                return receiptFieldValue;
+            }
+
+            /// <summary>
+            /// Gets store GSTIN.
+            /// </summary>
+            /// <param name="requestContext">Request context.</param>
+            /// <returns>Store GSTIN.</returns>
+            private static async Task<string> GetStoreGSTIN(RequestContext requestContext)
+            {
+                var dataRequest = new GetReceiptHeaderTaxInformationDataRequest
+                {
+                    QueryResultSettings = QueryResultSettings.SingleRecord,
+                };
+                var headerTaxInformation = await requestContext.ExecuteAsync<SingleEntityDataServiceResponse<ReceiptHeaderTaxInformation>>(dataRequest).ConfigureAwait(false);
+                return headerTaxInformation.Entity?.GstRegistrationNumber;
+            }
+
+            /// <summary>
+            /// Gets payment UPI info for the sales order.
+            /// </summary>
+            /// <param name="requestContext">Request context.</param>
+            /// <param name="salesOrder">Sales order.</param>
+            /// <returns>Payment info.</returns>
+            private static async Task<Tuple<string, string>> GetPaymentUPIInfo(RequestContext requestContext, SalesOrder salesOrder)
+            {
+                var channelTenderDataRequest = new GetChannelTenderTypesDataRequest(requestContext.GetPrincipal().ChannelId, QueryResultSettings.AllRecords);
+                var channelTenderTypes = (await requestContext.Runtime.ExecuteAsync<EntityDataServiceResponse<TenderType>>(channelTenderDataRequest, requestContext).ConfigureAwait(false)).PagedEntityCollection.Results;
+                string upiId = string.Empty;
+                string upiName = string.Empty;
+                int count = salesOrder.ActiveTenderLines.Count;
+                foreach (var tenderLine in salesOrder.ActiveTenderLines)
+                {
+                    TenderType tenderType = channelTenderTypes.Where(type => type.TenderTypeId == tenderLine.TenderTypeId).SingleOrDefault();
+                    if (tenderType == null)
+                    {
+                        continue;
+                    }
+                    if (!string.IsNullOrEmpty(upiId))
+                    {
+                        upiId += ",";
+                    }
+                    if (!string.IsNullOrEmpty(upiName))
+                    {
+                        upiName += ",";
+                    }
+                    upiId += tenderType.TenderTypeId; // Here should be customized field UPIId
+                    upiName += tenderType.Name; // Here should be customized field UPIName
+                    if (count > 1)
+                    {
+                        string amount = FormatAmount(tenderLine.Amount);
+                        upiId += $":{amount}";
+                        upiName += $":{amount}";
+                    }
+                }
+                return new Tuple<string, string>(upiId, upiName);
+            }
+
+            /// <summary>
+            /// Gets tax component amount.
+            /// </summary>
+            /// <param name="salesOrder">Sales order.</param>
+            /// <param name="taxComponent">Tax component.</param>
+            /// <returns>Tax component amount.</returns>
+            private static decimal GetTaxComponentAmount(SalesOrder salesOrder, string taxComponent)
+            {
+                decimal taxAmount = 0m;
+                IEnumerable<TaxLineGTE> taxLineGte = salesOrder.ActiveSalesLines.SelectMany(x => x.TaxLines).OfType<TaxLineGTE>();
+                var groups = taxLineGte.GroupBy(x => new { x.TaxComponent }).OrderBy(x => x.Key.TaxComponent);
+                var group = groups.Where(g => string.Equals(g.Key.TaxComponent, taxComponent, StringComparison.InvariantCultureIgnoreCase)).FirstOrDefault();
+                if (group != null)
+                {
+                    taxAmount = group.Sum(l => l.Amount);
+                }
+                return taxAmount;
+            }
+
+            /// <summary>
+            /// Gets the store customer account number based on store type.
+            /// </summary>
+            /// <returns>The store customer account number.</returns>
+            internal static string GetStoreCustomerAccountNumberFromChannelProperties(RequestContext requestContext)
+            {
+                if (requestContext.GetChannelConfiguration().IsOnlineStore())
+                {
+                    if (requestContext.GetPrincipal().IsCustomer)
+                    {
+                        return requestContext.GetPrincipal().UserId;
+                    }
+                }
+                return requestContext.GetChannel().DefaultCustomerAccount;
+            }
+
+            ///<summary>
+            /// Defines whether the customer is store default customer.
+            /// </summary>
+            /// <param name="requestContext">Request context.</param>
+            /// <param name="customerId">Customer id.</param>
+            /// <returns>rue if the customer is store default customer; false otherwise.</returns>
+            private static bool IsStoreCustomer(RequestContext requestContext, string customerId)
+            {
+                return string.IsNullOrEmpty(customerId)
+                    || string.Equals(customerId, GetStoreCustomerAccountNumberFromChannelProperties(requestContext), StringComparison.InvariantCultureIgnoreCase);
+            }
+
+            /// <summary>
+            /// Defines whether the transaction is B2C.
+            /// </summary>
+            /// <param name="requestContext">Request context.</param>
+            /// <param name="salesOrder">Sales order.</param>
+            /// <returns>True if the transaction is B2C; false otherwise.</returns>
+            private static async Task<bool> IsB2CTransactionAsync(RequestContext requestContext, SalesOrder salesOrder)
+            {
+                if (IsStoreCustomer(requestContext, salesOrder.CustomerId))
+                {
+                    return true;
+                }
+                var customer = await GetCustomerAsync(requestContext, salesOrder.CustomerId).ConfigureAwait(false);
+                if (customer == null)
+                {
+                    return true;
+                }
+                var address = customer.GetPrimaryAddress();
+                if (address == null)
+                {
+                    return true;
+                }
+                GetPrimaryAddressTaxInformationDataRequest getPrimaryAddressTaxInformationDataRequest = new GetPrimaryAddressTaxInformationDataRequest(address.LogisticsLocationRecordId);
+                AddressTaxInformationIndia addressTaxInformationIndia = (await requestContext.Runtime.ExecuteAsync<SingleEntityDataServiceResponse<AddressTaxInformationIndia>>(getPrimaryAddressTaxInformationDataRequest, requestContext).ConfigureAwait(false)).Entity;
+                if (addressTaxInformationIndia == null
+                    || addressTaxInformationIndia.GstinRegistrationNumber == null
+                    || string.IsNullOrEmpty(addressTaxInformationIndia.GstinRegistrationNumber.RegistrationNumber))
+                {
+                    return true;
+                }
+                return false;
+            }
+
+            /// <summary>
+            /// Gets customer by customer identifier.
+            /// </summary>
+            /// <param name="customerId">Customer identifier.</param>
+            /// <returns>Customer object.</returns>
+            private static async Task<Customer> GetCustomerAsync(RequestContext requestContext, string customerId)
+            {
+                Customer customer = null;
+                if (!string.IsNullOrWhiteSpace(customerId))
+                {
+                    var getCustomerDataRequest = new GetCustomerDataRequest(customerId);
+                    SingleEntityDataServiceResponse<Customer> getCustomerDataResponse = await requestContext.ExecuteAsync<SingleEntityDataServiceResponse<Customer>>(getCustomerDataRequest).ConfigureAwait(false);
+                    customer = getCustomerDataResponse.Entity;
+                }
+                return customer;
+            }
+
+            /// <summary>
+            /// Formats amount.
+            /// </summary>
+            /// <param name="amount">Amount to format.</param>
+            /// <returns>Formatted amount.</returns>
+            private static string FormatAmount(decimal amount)
+            {
+                return amount.ToString("0.00", CultureInfo.InvariantCulture);
+            }
+        }
+    }
+}
+```     
+
+---

@@ -4,7 +4,7 @@ title: Fixed assets overview
 description: This topic provides information about the Fixed assets module for Russia.
 author: v-oloski
 ms.date: 12/02/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -14,7 +14,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.search.region: Russia
 # ms.search.industry: 
 ms.author: anasyash

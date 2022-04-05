@@ -1,12 +1,12 @@
 ---
 title: ControlMetadata type
 description: Interface for the metadata of a control. Overriding control metadata can modify a controls&#x27; look and behavior.
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ---
 
 # ControlMetadata type

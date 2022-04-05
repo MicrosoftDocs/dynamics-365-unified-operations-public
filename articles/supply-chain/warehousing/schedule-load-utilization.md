@@ -3,7 +3,7 @@
 
 title: Schedule load utilization
 description: This topic explains how to set up and schedule the load for a warehouse.
-author: MarkusFogelberg
+author: Mirzaab
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: kamaybac
 ms.custom: 269384
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mafoge
+ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

@@ -3,7 +3,7 @@
  
 title: Audit invoices and key data in accounts payable
 description: This topic shows how to audit invoices and key data in accounts payable. 
-author: saraschi2
+author: kweekley
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
@@ -19,7 +19,7 @@ ms.reviewer: roschlom
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: saraschi
+ms.author: kweekley
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Help system
+title: Help system (contains video)
 description: This topic provides an overview of the Help system for Finance and Operations apps.
 author: edupont04
 ms.date: 07/20/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -30,6 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 # Help system
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Users of the following apps can access context-sensitive Help and other content that is based on the same Help system:
 

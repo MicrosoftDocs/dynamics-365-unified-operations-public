@@ -4,7 +4,7 @@
 title: Online and offline point of sale (POS) operations
 description: This topic provides details about the point of sale (POS) operations in Dynamics 365 Commerce. It specifies where in the application the operations can be invoked, and whether they are available in offline mode.
 author: jblucher
-ms.date: 02/21/2020
+ms.date: 02/16/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,11 +31,11 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-Most actions that user take in the point of sale (POS) are considered operations. Operations are configured and managed in the Dynamics 365 Commerce back office. Many operations can be added to buttons in the POS button grid. Users can then select the buttons to invoke the operations and perform their function. Other operations are part of the main POS application, and are invoked either from on-screen buttons or as part of other workflows or processes.
+Most actions that users take in the point of sale (POS) are considered operations. Operations are configured and managed in the Dynamics 365 Commerce back office. Many operations can be added to buttons in the POS button grid. Users can then select the buttons to invoke the operations and perform their function. Other operations are part of the main POS application, and are invoked either from on-screen buttons or as part of other workflows or processes.
 
-The following table provides details about the operations that are available in Modern POS and Cloud POS. The table also specifies where in the application the operations can invoked, and whether they are available when the POS is in offline mode.
+The following table provides details about the operations that are available in Modern POS and Cloud POS. The table also specifies where in the application the operations can be invoked, and whether they are available when the POS is in offline mode.
 
-Some operations aren't currently available in Modern POS or Cloud POS. Some of these operations are either locale-specific operations that require additional extensions and configuration. Others are features from Microsoft Dynamics AX 2012 that aren't currently supported.
+Some operations aren't currently available in Modern POS or Cloud POS. Some of these operations are locale-specific operations that require additional extensions and configuration. Others are features from Microsoft Dynamics AX 2012 that aren't currently supported.
 
 The following columns specify where the operations can be invoked:
 
@@ -45,6 +45,7 @@ The following columns specify where the operations can be invoked:
 
 > [!NOTE]
 > The operations listed below apply to the latest version of Commerce. Some operations may have changed or may not be available in previous versions.
+
 
 | ID | Operation | Description | Button grid | Transaction screen | Welcome screen | Available offline | Locale-specific |
 |----|-----------|-------------|-------------|--------------------|----------------|-------------------|-----------------|
@@ -77,18 +78,17 @@ The following columns specify where the operations can be invoked:
 | 121 | Clear salesperson | This operation isn't supported. | Not applicable | Not applicable | Not applicable | Not applicable | No |
 | 1055 | Close shift | Close the current shift, print a Z report, and sign the user out of the system. | Yes | Yes | Yes | No | No |
 | 139 | Conclude transaction | Prompts user to select payment method | Yes | Yes | No | Yes | No |
-| 620 | Create customer order | Convert the POS transaction to a customer order. | Yes | Yes | No | Yes\* | No |
 | 925 | Copy the bank check | This operation isn't supported. | Not applicable | Not applicable | Not applicable | Not applicable | Yes |
 | 620 | Create customer order | Convert the POS transaction to a customer order. | Yes | Yes | No | Yes\* | No |
 | 621 | Create quotation | Convert the POS transaction to a sales quotation. | Yes | Yes | No | Yes\* | No |
-| 636 | Create retail transaction | This operation lets the user create a standard sales transaction when the default POS behavior is to create customer orders. | Yes | Yes | No | Yes | No |
+| 636 | Create retail transaction | Create a standard sales transaction when the default POS behavior is to create customer orders. | Yes | Yes | No | Yes | No |
 | 600 | Customer | Add the specified customer to the transaction. | No | No | No | Yes | No |
 | 1100 | Customer account deposit | Make a payment to a customer's account. | Yes | Yes | Yes | Yes | Yes |
-| 612 | Customer add | This operation lets the user create a new customer record. | Yes | Yes | Yes | Yes† | No |
+| 612 | Customer add | Create a new customer record. | Yes | Yes | Yes | Yes† | No |
 | 603 | Customer clear | Remove the customer from the current transaction. | Yes | Yes | No | Yes | No |
-| 602 | Customer search | This operation lets the user search for a customer record by navigating to the customer search page in the POS. | Yes | Yes | Yes | Yes | No |
+| 602 | Customer search | Search for a customer record by navigating to the customer search page in the POS. | Yes | Yes | Yes | Yes | No |
 | 609 | Customer transactions | This operation isn't supported. | Not applicable | Not applicable | Not applicable | Not applicable | No |
-| 917 | Database connection status | This operation lets the user view the current connection settings, and switch between online and offline modes. | Yes | Yes | Yes | Yes | No |
+| 917 | Database connection status | View the current connection settings, and switch between online and offline modes. | Yes | Yes | Yes | Yes | No |
 | 1200 | Declare start amount | Declare the amount that is in the cash drawer when the day or shift starts. | Yes | Yes | Yes | Yes | No |
 | 132 | Deposit override | Override the default deposit for customer orders. | Yes | Yes | No | Yes\* | No |
 | 913 | Design mode disable | This operation isn't supported. | Not applicable | Not applicable | Not applicable | Not applicable | No |
@@ -101,14 +101,16 @@ The following columns specify where the operations can be invoked:
 | 615 | Edit quotation | Recall the selected quotation so that it can be modified in the POS. | No | No | No | No | No |
 | 518 | Expense accounts | Record money that is removed from the cash drawer for occasional expenses. | Yes | Yes | Yes | Yes | No |
 | 919 | Extended log on | Assign or remove permission to sign in by scanning a bar code or swiping a card. | Yes | Yes | Yes | Yes | No |
-| 1201 | Float entry | This operation lets the user add additional money to the current drawer or shift. | Yes | Yes | Yes | Yes | No |
+| 1201 | Float entry | Add additional money to the current drawer or shift. | Yes | Yes | Yes | Yes | No |
 | 1218 | Force unlock peripheral | The system uses this operation internally to unlock POS peripherals. | Not applicable | Not applicable | Not applicable | Not applicable | No |
 | 520 | Gift card balance | Show the balance of a gift card. | Yes | Yes | No | No | No |
 | 708 | Inactivate device | Inactivate the current device, so that it can't be used as a POS register. | No | No | No | No | No |
 | 804 | Inbound operation | Access the features of inbound store inventory management. | Yes | No | Yes | No| No |
 | 517 | Income accounts | Record money that is put into the cash drawer for a reason other than a sale. | Yes | Yes | Yes | Yes | No |
 | 801 | Inventory lookup | Look up available, on order, and available-to-promise (ATP) quantities for the current store and other available locations. | Yes | Yes | Yes | No | No |
-| 122 | Invoice comment | This operation lets the user enter a comment about the current transaction. | Yes | Yes | No | Yes | No |
+| 806 | Inventory adjustment | Adjust inventory in or out of store warehouse using adjustment or movement journal. | Yes | Yes | Yes | No | No |
+| 807 | Inventory movement | Move items from one inventory location to another within a store warehouse. | Yes | Yes | Yes | No | No |
+| 122 | Invoice comment | Enter a comment about the current transaction. | Yes | Yes | No | Yes | No |
 | 511 | Issue credit memo | Issue a credit memo to provide a voucher instead of a refund. | Yes | Yes | No | No | No |
 | 512 | Issue gift card | Issue a new gift card for the specified amount. | Yes | Yes | No | No | No |
 | 625 | Issue loyalty card | Issue a loyalty card to a customer, so that the customer can participate in the store's loyalty program. | Yes | Yes | Yes | No | No |
@@ -152,42 +154,42 @@ The following columns specify where the operations can be invoked:
 | 1056 | Print X | Print and X report for the current shift. | Yes | Yes | Yes | No | No |
 | 103 | Product comment | Add a comment to the selected line item in the transaction. | Yes | Yes | No | Yes | No |
 | 100 | Product sale | Add a specified product to the transaction. | Yes | Yes | Yes | Yes | No |
-| 108 | Product search | This operation lets the user search for a product by navigating to the product search page in the POS. | Yes | Yes | Yes | Yes | No |
-| 633 | Quote expiration date | This operation lets the user view or modify the expiration date on a sales quotation. | Yes | Yes | No | Yes\* | No |
+| 108 | Product search | Search for a product by navigating to the product search page in the POS. | Yes | Yes | Yes | Yes | No |
+| 633 | Quote expiration date | View or modify the expiration date on a sales quotation. | Yes | Yes | No | Yes\* | No |
 | 627 | Recalculate | Recalculate all customer order lines and taxes, based on the current configuration. | Yes | Yes | No | Yes\* | No |
 | 143 | Recalculate charges | Recalculate the auto-charges applied to the order. | Yes | Yes | No | No| No |
-| 515 | Recall order | This operation lets the user search for and recall customer orders and sales quotations. | Yes | Yes | Yes | No | No |
-| 504 | Recall transaction | This operation lets the user recall a previously suspended transaction from the current store. | Yes | Yes | No | Yes‡ | No |
+| 515 | Recall order | Search for and recall customer orders and sales quotations. | Yes | Yes | Yes | No | No |
+| 504 | Recall transaction | Recall a previously suspended transaction from the current store. | Yes | Yes | No | Yes‡ | No |
 | 305 | Redeem loyalty points | This operation isn't supported. | Not applicable | Not applicable | Not applicable | Not applicable | Yes |
-| 635 | Refund shipping charges | This operation lets the user refund shipping charges on a canceled order. | No | No | No | No | No |
+| 635 | Refund shipping charges | Refund shipping charges on a canceled order. | No | No | No | No | No |
 | 644 | Remove coupon code | Prompt the user to remove coupons by selecting them in a list of coupons that are currently associated with the transaction. | Yes | Yes | No | Yes | No |
-| 1057 | Reprint Z | Reprint the Z report for the previous shift or a selected shift. | Yes | Yes | Yes | No | No |
+| 1057 | Reprint Z | Reprint the Z report for the previous shift. | Yes | Yes | Yes | No | No |
 | 1216 | Reset password | This operation lets a user who has the password-reset permission reset another employee's password by using a temporary password. | Yes | Yes | Yes | No | No |
-| 1219 | Open URL in POS | This operation lets a user to open an admin configured URL in POS. | Yes | Yes | Yes | Yes | No | 
+| 1219 | Open URL in POS | Open an admin configured URL in POS. | Yes | Yes | Yes | Yes | No |
 | 109 | Return product | Perform a return of individual products. The next scanned product is shown as a returned product that has a negative quantity and price. | Yes | Yes | No | Yes | No |
 | 114 | Return transaction | Recall a previous transaction by its receipt number to return some or all of the products. | Yes | Yes | Yes | Yes§ | No |
 | 1211 | Safe drop | Perform a safe drop to move money from the register to a safe. | Yes | Yes | Yes | Yes | No |
 | 516 | Sales invoice | This operation lets the customer make payments toward the selected sales invoice. | Yes | Yes | No | No | No |
-| 502 | Salesperson | This operation lets the user set the **Sales taker** value on a sales order for customer orders in the POS. | Yes | Yes | No | Yes\* | No |
+| 502 | Salesperson | Set the **Sales taker** value on a sales order for customer orders in the POS. | Yes | Yes | No | Yes\* | No |
 | 2000 | Schedule management | This operation is not yet supported. | Yes | Yes | Yes | No | No |
 | 2001 | Schedule requests | This operation is not yet supported. | Yes | Yes | Yes | No | No |
 | 622 | Search | This operation lets users preconfigure POS buttons to perform searches by item, customer, or category. | Yes | Yes | Yes | Yes | No |
 | 1213 | Search shipping address | This operation isn't supported. | Not applicable | Not applicable | Not applicable | Not applicable | No |
-| 709 | Select hardware station | This operation lets the user select a hardware station in a list of available hardware stations. | Yes | Yes | Yes | Yes | No |
-| 637 | Set default sales representative on transaction | This operation lets the user select one of the eligible commission sales groups (sale reps) as the default sales rep for lines that are added later. | Yes | Yes | No | Yes | No |
+| 709 | Select hardware station | Select a hardware station from a list of available hardware stations. | Yes | Yes | Yes | Yes | No |
+| 637 | Set default sales representative on transaction | Select one of the eligible commission sales groups (sale reps) as the default sales rep for lines that are added later. | Yes | Yes | No | Yes | No |
 | 105 | Set quantity | Change the quantity of a line item in the transaction. | Yes | Yes | No | Yes | No |
-| 638 | Set sales representative on line | This operation lets the user select one of the eligible commission sales groups (sale reps) for the currently selected line. | Yes | Yes | No | Yes | No |
+| 638 | Set sales representative on line | Select one of the eligible commission sales groups (sale reps) for the currently selected line. | Yes | Yes | No | Yes | No |
 | 630 | Ship all products | Set the fulfillment mode to **Shipping** for all line items. | Yes | Yes | No | Yes\* | No |
 | 629 | Ship selected products | Set the fulfillment mode to **Shipping** for the selected lines. | Yes | Yes | No | Yes\* | No |
 | 115 | Show journal | Show the store's journal. You can view transactions, reprint receipts and gift receipts, and recall for return. | Yes | Yes | Yes | Yes\*\* | No |
-| 802 | Stock count | This operation lets the user create or modify stock counting journals for physical inventory or cycle counts. | Yes | Yes | Yes | No | No |
+| 802 | Stock count | Create or modify stock counting journals for physical inventory or cycle counts. | Yes | Yes | Yes | No | No |
 | 401 | Sub menu | This operation takes the user to another linked button grid. | Yes | Yes | Yes | Yes | No |
 | 1054 | Suspend shift | Suspend the current shift, so that a new or different shift can be activated on the current register. | Yes | Yes | Yes | No | No |
 | 503 | Suspend transaction | Suspend the current sales transaction, so that it can be recalled later in the store. | Yes | Yes | No | Yes‡ | No |
 | 1004 | Task recorder | Open Task recorder to record procedural steps in the POS. | No | No | No | Yes | No |
-| 1052 | Tender declaration | This operation lets the user specify the amount of money in the drawer for each counted payment method. | Yes | Yes | Yes | Yes | No |
-| 1210 | Tender removal | This operation lets the user remove money from the current drawer or shift. | Yes | Yes | Yes | Yes | No |
-| 920 | Time clock | This operation lets users punch in and punch out of work shifts and breaks. | Yes | Yes | Yes | No | No |
+| 1052 | Tender declaration | Specify the amount of money in the drawer for each counted payment method. | Yes | Yes | Yes | Yes | No |
+| 1210 | Tender removal | Remove money from the current drawer or shift. | Yes | Yes | Yes | Yes | No |
+| 920 | Time clock | Punch in and punch out of work shifts and breaks. | Yes | Yes | Yes | No | No |
 | 302 | Total discount amount | Enter a discount amount for the transaction. This operation applies only to discountable items and only within specified discount limits. | Yes | Yes | No | Yes | No |
 | 303 | Total discount percent | Enter a discount percentage for the transaction. This operation applies only to discountable items and only within specified discount limits. | Yes | Yes | No | Yes | No |
 | 501 | Transaction comment | Add a comment to the current transaction. | Yes | Yes | No | Yes | No |

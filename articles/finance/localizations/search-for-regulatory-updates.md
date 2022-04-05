@@ -1,0 +1,79 @@
+---
+# required metadata
+
+title: Search for country-specific regulatory updates
+description: This topic provides links to planned and released country-specific regulatory updates for Microsoft Dynamics 365 Finance.
+author: AKroshkina
+ms.date: 01/20/2022
+ms.topic: article
+ms.prod: 
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form:
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kfend
+# ms.tgt_pltfrm: 
+# ms.custom
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: kfend
+ms.dyn365.ops.version: 10.0
+
+---
+
+# Search for country-specific regulatory updates
+
+[!include [banner](../includes/banner.md)]
+
+This topic provides links to planned and released country-specific regulatory updates for Microsoft Dynamics 365 Finance. You must sign in to Microsoft Dynamics Lifecycle Services (LCS) to access this information.
+
+| Country or region    | Issue in LCS Issue search |
+|----------------------|---------------------------|
+| Australia            | [Planned and released regulatory features for Australia](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=1_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Austria              | [Planned and released regulatory features for Austria](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=2_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Bahrain              | [Planned and released regulatory features for Bahrain](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=37_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Belgium              | [Planned and released regulatory features for Belgium](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=3_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Brazil               | [Planned and released regulatory features for Brazil](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=4_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| China                | [Planned and released regulatory features for China](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=6_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Czech Republic                | [Planned and released regulatory features for Czech Republic](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=7_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Denmark              | [Planned and released regulatory features for Denmark](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=8_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Egypt                | [Planned and released regulatory features for Egypt](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=42_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Estonia              | [Planned and released regulatory features for Estonia](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=9_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Finland              | [Planned and released regulatory features for Finland](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=10_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| France               | [Planned and released regulatory features for France](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=11_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Germany              | [Planned and released regulatory features for Germany](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=12_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Hong Kong SAR        | [Planned and released regulatory features for Hong Kong SAR](https://fix.lcs.dynamics.com/Issue/Results?q=&dm=0&v=8_versionClass&i=2_issueTypeClass_1_issueTypeClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=38_countryClass&pi=&pm=&pc=&rd=&d=&envId=&permission=) |
+| Hungary              | [Planned and released regulatory features for Hungary](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=13_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Iceland              | [Planned and released regulatory features for Iceland](https://fix.lcs.dynamics.com/Issue/Results?q=&dm=0&v=8_versionClass&i=2_issueTypeClass_1_issueTypeClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=14_countryClass&pi=&pm=&pc=&rd=&d=&envId=&permission=) |
+| India                | [Planned and released regulatory features for India](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=15_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Ireland              | [Planned and released regulatory features for Ireland](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=16_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Italy                | [Planned and released regulatory features for Italy](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=17_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Japan                | [Planned and released regulatory features for Japan](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=18_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Kuwait               | [Planned and released regulatory features for Kuwait](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=39_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClasshttps://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=39_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Latvia               | [Planned and released regulatory features for Latvia](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=19_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Lithuania            | [Planned and released regulatory features for Lithuania](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=20_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Malaysia             | [Planned and released regulatory features for Malaysia](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=21_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Mexico               | [Planned and released regulatory features for Mexico](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=22_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Netherlands          | [Planned and released regulatory features for the Netherlands](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=23_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| New Zealand          | [Planned and released regulatory features for New Zealand](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=24_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Norway               | [Planned and released regulatory features for Norway](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=25_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Oman                 | [Planned and released regulatory features for Oman](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=40_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Poland               | [Planned and released regulatory features for Poland](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=26_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Qatar                | [Planned and released regulatory features for Qatar](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=41_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Russia               | [Planned and released regulatory features for Russia](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=27_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Saudi Arabia         | [Planned and released regulatory features for Saudi Arabia](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=28_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Singapore            | [Planned and released regulatory features for Singapore](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=29_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| South Africa         | [Planned and released regulatory features for South Africa](https://fix.lcs.dynamics.com/Issue/Results?q=&dm=0&v=8_versionClass&i=2_issueTypeClass_1_issueTypeClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=30_countryClass&pi=&pm=&pc=&rd=&d=&envId=&permission=) |
+| Spain                | [Planned and released regulatory features for Spain](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=31_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Sweden               | [Planned and released regulatory features for Sweden](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=32_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Switzerland          | [Planned and released regulatory features for Switzerland](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=33_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Thailand             | [Planned and released regulatory features for Thailand](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=34_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| United Arab Emirates | [Planned and released regulatory features for the United Arab Emirates](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=43_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| United Kingdom       | [Planned and released regulatory features for the United Kingdom](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Ffix.lcs.dynamics.com%2FIssue%2FResults%3Fv%3D8_versionClass%26ct%3D2_categoryClass_6_categoryClass%26ft%3D1_featureClass_2_featureClass_3_featureClass%26cu%3D3_countryClass%26o%3DD%26mode%3DFull%26i%3D2_issueTypeClass_1_issueTypeClass&data=04%7C01%7Cvastrup%40microsoft.com%7C6e8a12140a0548c9224508d94add50a5%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637623136671200065%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&sdata=eiZzncdY20RjysdC8rpru54YONhSlJUec093vwFK5jI%3D&reserved=0) |
+
+For more information about the Globalization features that are included in monthly updates, join the [DGX - GLOBALIZATION FEATURES](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=17055599&view=all) Yammer group.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

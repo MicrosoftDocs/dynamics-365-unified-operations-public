@@ -4,8 +4,8 @@
 title: Electronic reporting (ER) overview
 description: This topic provides an overview of the Electronic reporting tool. It describes key concepts, supported scenarios, and formats that are part of the solution.
 author: NickSelin
-ms.date: 09/20/2021
-ms.topic: article
+ms.date: 11/02/2021
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -33,11 +33,37 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic provides an overview of the Electronic reporting (ER) tool. It includes information about key concepts, the scenarios that ER supports, and a list of formats that have been designed and released as part of the solution.
 
-ER is a tool that you can use to configure formats for both incoming and outgoing electronic documents in accordance with the legal requirements of various countries/regions. ER lets you manage these formats during their lifecycle. For example, you can adopt new regulatory requirements, and generate business documents in the required format to electronically exchange information with government bodies, banks, and other parties.
+ER is a configurable tool that helps you create and maintain regulatory electronic reporting and payments. It's based on the following three concepts:
+
+- Configuration instead of coding:
+
+    - Configuration can be done by a business user and doesn't require a developer.
+    - The data model is defined in business terms.
+    - Visual editors are used to create all components of the ER configuration.
+    - The language that is used for data transformation resembles the language that is used in Microsoft Excel.
+
+- One configuration for multiple Dynamics 365 Finance releases:
+
+    - Manage one domain-specific data model that is defined in business terms.
+    - Isolate application release details in release-dependent data model mappings.
+    - Maintain one format configuration for multiple releases of the current version, based on the data model.
+
+- Easy or automatic upgrade:
+
+    - Versioning of ER configurations is supported.
+    - The Microsoft Dynamics Lifecycle Services (LCS) Assets library can be used as a repository for ER configurations, for version exchange.
+    - Localizations that are based on original ER configurations can be introduced as child versions.
+    - An ER configuration tree is provided as a tool that helps control dependencies for versions.
+    - Differences in localization, or the delta configuration, are recorded to enable automatic upgrade to a new version of the original ER configuration.
+    - It's easy to manually resolve conflicts that are discovered during automatic upgrade of localization versions.
+
+ER lets you define electronic format structures and then describe how the structures should be filled by using data and algorithms. You can use a formula language that resembles the Excel language for data transformation. To make the database-to-format mapping more manageable, reusable, and independent of format changes, an intermediate data model concept is introduced. This concept enables implementation details to be hidden from the format mapping and enables a single data model to be reused for multiple format mappings.
+
+You can use ER to configure formats for both incoming and outgoing electronic documents in accordance with the legal requirements of various countries and regions. ER lets you manage these formats during their lifecycle. For example, you can adopt new regulatory requirements and generate business documents in the required format to electronically exchange information with government bodies, banks, and other parties.
 
 The ER engine is targeted at business users instead of developers. Because you configure formats instead of code, the processes for creating and adjusting formats for electronic documents are faster and easier.
 
-ER currently supports the TEXT, XML, Microsoft Word document, and OPENXML worksheet formats. However, an extension interface provides support for additional formats.
+ER currently supports the TEXT, XML, JSON, PDF, Microsoft Word, Microsoft Excel, and OPENXML worksheet formats.
 
 ## Capabilities
 
@@ -51,6 +77,10 @@ The ER engine has the following capabilities:
 
 ## Key concepts
 
+### Main data flow
+
+[![ER main data flow.](./media/ger-main-data-flow.jpg)](./media/ger-main-data-flow.jpg)
+
 ### Components
 
 ER supports the following types of components:
@@ -62,74 +92,6 @@ ER supports the following types of components:
 
 For more information, see [Electronic reporting components](er-overview-components.md).
 
-#### Data model and model mapping components
-
-A data model component is an abstract representation of a data structure. It's used to describe a specific business domain area with enough detail to satisfy the reporting requirements for that domain. A data model component consists of the following parts:
-
-- <a name="DataModelComponent"></a>A data model, as a set of domain-specific business entities and a hierarchically structured definition of relations between those entities.
-- <a name="ModelMappingComponent"></a>A model mapping that links selected application data sources to individual elements of a data model that specifies, at run time, the data flow and rules of business data population to a data model component.
-
-A business entity of a data model is represented as a container (record). Business entity properties are represented as data items (fields). Each data item has a unique name, label, description, and value. The value of each data item can be designed so that it's recognized as a string, integer, real, date, enumeration, Boolean, and so on. Additionally, it can be another record or records list.
-
-A single data model component can contain several hierarchies of domain-specific business entities. It can also contain model mappings that support a report-specific data flow at run time. The hierarchies are differentiated by a single record that has been selected as a root for model mapping. For example, the data model of the payment domain area might support the following mappings:
-
-- Company \> Vendor \> Payment transactions of the AP domain
-- Customer \> Company \> Payment transactions of the AR domain
-
-Note that business entities such as company and payment transactions are designed one time. Different mappings then reuse them.
-
-A model mapping that supports outgoing electronic documents has the following capabilities:
-
-- It can use different data types as data sources for a data model. For example, it can use tables, data entities, methods, or enums.
-- It supports user input parameters that can be defined as data sources for a data model when some data must be specified at run time.
-- It supports the transformation of data into required groups. It also lets you filter, sort, and sum data, and append logical calculated fields that are designed through formulas that resemble Microsoft Excel formulas. For more information, see [Formula designer in Electronic reporting (ER)](general-electronic-reporting-formula-designer.md)).
-
-A model mapping that supports incoming electronic documents has the following capabilities:
-
-- It can use different updatable data elements as targets. These data elements include tables, data entities, and views. The data can be updated by using the data from incoming electronic documents. Multiple targets can be used in a single model mapping.
-- It supports user input parameters that can be defined as data sources for a data model when some data must be specified at run time.
-
-A data model component is designed for each business domain that should be used as a unified data source for reporting that isolates reporting from the physical implementation of data sources. It represents domain-specific business concepts and functionalities in a form that makes a reporting format's initial design and further maintenance more efficient.
-
-#### <a name="FormatComponentOutbound"></a>Format components for outgoing electronic documents
-
-A format component is the scheme of the reporting output that will be generated at run time. A scheme consists of the following elements:
-
-- A format that defines the structure and content of the outgoing electronic document that is generated at run time.
-- Data sources, as a set of user input parameters and a domain-specific data model that uses a selected model mapping.
-- A format mapping, as a set of bindings of format data sources that have individual elements of a format that specify, at run time, the data flow and rules for format output generation.
-- A format validation, as a set of configurable rules that control report generation at run time, depending on the running context. For example, there might be a rule that stops output generation of a vendor's payments and throws an exception when specific attributes of the selected vendor are missing, such as the bank account number.
-
-A format component supports the following functions:
-
-- Creation of reporting output as individual files in various formats, such as text, XML, Microsoft Word document, or worksheet.
-- Creation of multiple files separately and encapsulation of those files into zip files.
-
-A format component lets you attach specific files that can be used in the reporting output:
-
-- Excel workbooks that contain a worksheet that can be used as a template for output in the OPENXML worksheet format
-- Word files that contain a document that can be used as a template for output in the Microsoft Word document format
-- Other files that can be incorporated into the format's output as predefined files
-
-The following illustration shows how the data flows for these formats.
-
-[![Data flow for outgoing format components.](./media/ER-overview-02.png)](./media/ER-overview-02.png)
-
-To run a single ER format configuration and generate an outgoing electronic document, you must identify the mapping of the format configuration.
-
-#### <a name="FormatComponentInbound"></a>Format components for incoming electronic documents
-
-A format component is the scheme of the incoming document that is imported at run time. A scheme consists of the following elements:
-
-- A format that defines the structure and content of the incoming electronic document that contains data that is imported at run time. A format component is used to parse an incoming document in various formats, such as text and XML.
-- A format mapping that binds individual format elements to elements of a domain-specific data model. At run time, the elements in the data model specify the data flow and the rules for importing data from an incoming document, and then store the data in a data model.
-- A format validation, as a set of configurable rules that control data import at run time, depending on the running context. For example, there might be a rule that stops data import of a bank statement that has a vendor's payments and throws an exception when a specific vendor's attributes are missing, such as the vendor identification code.
-
-The following illustration shows how the data flows for these formats.
-
-[![Data flow for incoming format components.](./media/ER-overview-03.png)](./media/ER-overview-03.png)
-
-To run a single ER format configuration to import data from an incoming electronic document, you must identify the desired mapping of a format configuration, and also the integration point of a model mapping. You can use the same model mapping and destinations together with different formats for different type of incoming documents.
 
 #### Component versioning
 

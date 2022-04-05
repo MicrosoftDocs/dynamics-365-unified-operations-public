@@ -3,8 +3,8 @@
 
 title: Removed or deprecated features in Dynamics 365 Finance 
 description: This topic describes features that have been removed, or that are planned for removal from Dynamics 365 Finance.
-author: roschlom
-ms.date: 04/14/2021
+author: kfend
+ms.date: 03/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,11 +15,11 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2020-03-02 
 ms.dyn365.ops.version: Platform update 33
 
@@ -38,6 +38,72 @@ This list is intended to help you consider these removals and deprecations for y
 
 > [!NOTE]
 > Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
+
+## Features removed or deprecated in the Finance 10.0.26 release
+
+### Sales tax report for Finland (design based on reporting codes)
+
+[Sales tax report for Finland](../localizations/emea-fin-sales-tax-payment-report-finland.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Replaced with a new VAT declaration design, [VAT declaration for Finland](../localizations/emea-fin-vat-declaration.md). |
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By March 1, 2023, we plan to no longer support the Sales tax report for Finland (Finnish report layout). New **VAT declaration TXT (FI**) and **VAT declaration Excel (FI)** Electronic reporting (ER) formats are introduced under the **Tax declaration** model. |
+
+## Features removed or deprecated in the Finance 10.0.24 release
+
+### Sales tax report for Sweden (design based on reporting codes)
+
+[Sales tax report for Sweden](../localizations/emea-swe-sales-tax-payment-report-sweden.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Replaced with a new VAT declaration design, [VAT declaration for Sweden](../localizations/emea-swe-vat-declaration-sweden.md) |
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By December 1, 2022, we plan to no longer support the Sales tax report for Sweden (Swedish report layout). New **VAT declaration XML (SE**) and **VAT declaration Excel (SE)** Electronic reporting (ER) formats are introduced under the **Tax declaration** model. |
+
+### VAT statement for Austria (design based on reporting codes)
+
+[VAT statement details for Austria](../localizations/emea-aut-vat-statement-details.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Replaced with a new VAT declaration design, [VAT declaration for Austria](../localizations/emea-aut-vat-declaration-austria.md) |
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By December 1, 2022, we plan to no longer support the **VAT declaration (AT)** Electronic reporting (ER) format under **VAT declaration model**. New **VAT declaration XML (AT)** and **VAT declaration Excel (AT)** formats are introduced under the **Tax declaration** model. |
+
+### ELSTER declaration for Germany (design based on reporting codes)
+
+[VAT statement](../localizations/emea-de-vat-declaration.md)</br>
+[Set up electronic Tax declaration for Germany](../../fin-ops-core/dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md)</br>
+[Electronic transmission of VAT declaration (ELSTER)](../localizations/tasks/de-00003-electronic-transmission-elster.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Replaced with a new VAT declaration design, [VAT declaration for Germany](../localizations/emea-deu-vat-declaration-germany.md) |
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By December 1, 2022, we plan to no longer support the **Elster (DE)** and **Elster model** Electronic reporting (ER) formats. New **VAT declaration XML (DE)** and **VAT declaration Excel (DE)** formats are introduced under the **Tax declaration** model. |
+
+### OB declaration for Netherlands (design based on reporting codes)
+
+[OB declaration](../localizations/emea-nl-vat-declaration.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Replaced with a new VAT declaration design, [VAT declaration for Netherlands](../localizations/emea-nl-vat-declaration-netherlands.md) |
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By December 1, 2022, we plan to no longer support the **OB declaration (NL)** and **OB declaration model** Electronic reporting (ER) formats. New **VAT declaration XML (NL)** and **VAT declaration Excel (NL)** formats are introduced under the **Tax declaration** model. |
 
 ## Features removed or deprecated in the Finance 10.0.20 release
 

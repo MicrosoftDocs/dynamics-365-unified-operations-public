@@ -1,13 +1,14 @@
 ---
 title: X++ data selection and manipulation overview
 description: This topic provides links to topics about X++ data selection and manipulation.
-author: robinarh
+author: tonyafehr
 ms.date: 06/16/2020
 audience: Developer
-ms.reviewer: rhaertle
-ms.custom: "intro-internal"
+ms.reviewer: tfehr
+
 ms.search.region: Global
-ms.author: rhaertle
+ms.topic: overview
+ms.author: tfehr
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
 ---

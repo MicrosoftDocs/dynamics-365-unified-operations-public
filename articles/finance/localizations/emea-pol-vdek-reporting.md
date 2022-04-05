@@ -4,7 +4,7 @@
 title: JPK-V7M reporting
 description: This topic explains how to run a VAT declaration with registers (also known as a JPK-V7M, VDEK) in Poland. 
 author: liza-golub
-ms.date: 07/19/2021
+ms.date: 03/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -39,10 +39,10 @@ The PL JPK_V7M EM setup.zip package provides a setup for the JPK-V7M processing 
 
 ## Initial assumptions for the JPK-V7M report
 
-The implementation of the JPK-V7M report is based on the same set of sales tax reporting codes that were used in the JPK_VAT report. 
+The implementation of the JPK-V7M report is based on the same example in the topic, [Prepare for JPK-V7M reporting](emea-pol-vdek-setup.md) for the JPK_VAT report. 
 For more information, see [Generate a SAF VAT sales and purchase register](emea-pol-standard-audit-file-saf.md#generate-a-saf-vat-sales-and-purchase-register).
 
-The following table shows the sales tax reporting codes that are used in the JPK_VAT report, and their mapping with **K_\*** elements of the JPK-V7M report.
+The following table shows an example of sales tax reporting codes and their mapping with **K_\*** elements of the JPK-V7M report.
 
 | Element name     | Element description | Sales tax reporting codes |
 |------------------|---------------------|---------------------------|
@@ -57,7 +57,7 @@ The following table shows the sales tax reporting codes that are used in the JPK
 | K_18             | The value of output VAT for the supply of goods or services in Poland at a 7-percent or 8-percent VAT rate, including correction that is based on article 89a, sections 1 and 4 of the VAT Act. | 10403, 10406 |
 | K_19             | The taxable amount of the supply of goods or services in Poland at a 22-percent or 23-percent VAT rate, including correction that is based on article 89a, sections 1 and 4 of the VAT Act. | 10301, 10304 |
 | K_20             | The value of output VAT for the supply of goods or services in Poland at a 22-percent or 23-percent VAT rate, including correction that is based on article 89a, sections 1 and 4 of the VAT Act. | 10303, 10306 |
-| K_21             | The taxable amount of the intra-community supply of goods that is mentioned in article 13, sections 1 and 3 of the VAT Act. | 10807 |
+| K_21             | The taxable amount of the intra-community supply of goods that is mentioned in article 13, sections 1 and 3 of the VAT Act. | 10801 |
 | K_22             | The taxable amount of the export of goods. | 10901, 10905 |
 | K_23             | The taxable amount of the intra-community acquisition of goods. | 10810, 10811 (Reverse change) |
 | K_24             | The value of output VAT for the intra-community acquisition of goods. | 10812 |
@@ -67,8 +67,8 @@ The following table shows the sales tax reporting codes that are used in the JPK
 | K_28             | The value of output VAT that arises from the import of services that are subject to article 28b of the VAT Act. Services that are purchased from the VAT taxpayers are excluded. | 11112 |
 | K_29             | The taxable amount of the import of services that are subject to article 28b of the VAT Act. | 11210, 11119 (Reverse change) |
 | K_30             | The value of output VAT that arises from the import of services from the VAT taxpayers that are subject to article 28b of the VAT Act. | 11212 |
-| K_31             | The taxable amount that arises from the supply of goods in cases where the purchaser is a taxpayer, as mentioned in article 17, section 1, point 5 of the VAT Act. | No default value |
-| K_32             | The value of output VAT that arises from the supply of goods in cases where the purchaser is a taxpayer, as mentioned in article 17, section 1, point 5 of the VAT Act. | No default value |
+| K_31             | The taxable amount that arises from the supply of goods in cases where the purchaser is a taxpayer, as mentioned in article 17, section 1, point 5 of the VAT Act. | 11901, 11904 |
+| K_32             | The value of output VAT that arises from the supply of goods in cases where the purchaser is a taxpayer, as mentioned in article 17, section 1, point 5 of the VAT Act. | 11903, 11906 |
 | K_33             | The value of output VAT for goods that are covered by physical stock counting under article 14, section 5 of the VAT Act. | No default value |
 | K_34             | The refund of a previously deducted or refunded amount that was spent on the purchase of cash registers that are mentioned in article 111, section 6 of the VAT Act. | No default value |
 | K_35             | The value of output VAT that is determined based on the intra-community acquisition of vehicles that are mentioned in pos. 24, and that must be paid within the period that is referred to in article 103, section 3 in connection with section 4 of the VAT Act. | No default value |
@@ -100,21 +100,38 @@ The following table shows the sales tax reporting codes that are used in the JPK
     - **1** – This submission is the initial submission of the file for the specified period. This value is the default value.
     - **2** – This submission is a corrected submission of the file for the specified period.
 
-You can also specify manual values for the following additional fields that are related to elements of the declaration.
+7. In the **Wersja schematu** additional field, specify which version of the XML Schema Definition (XSD) schema must be used to generate the report. Two values are allowed:
 
-| Name     | Tag of the declaration | Description (En) | Description (Pl) |
-|----------|------------------------|------------------|------------------|
-| P_39     | P_39 | A non-negative integer that has a maximum of 14 digits. The value of the surplus of input VAT over output VAT that was moved from the previous period. | Wysokość nadwyżki podatku naliczonego nad należnym z poprzedniej deklaracji |
-| P_49     | P_49 | A non-negative integer that has a maximum of 14 digits. The amount that was spent on the purchase of cash registers, and that must be deducted in the specified period and therefore reduce the value of output VAT. The amount that is specified in **P_49** can't be more than **P_38** – **P_48**. If **P_38** – **P_48** is less than or equal to 0 (zero), you should show **0**. | Kwota wydana na zakup kas rejestrujących, do odliczenia w danym okresie rozliczeniowym pomniejszająca wysokość podatku należnego |
-| P_50     | P_50 | A non-negative integer that has a maximum of 14 digits. The amount of tax that is covered by the abandonment of collection. **P_50** can't be more than **P_38** – **P_48** – **P_49**. If **P_38** – **P_48** – **P_49** is less than zero (0), or more than or equal to **P_50**, you should show **0**. | Wysokość podatku objęta zaniechaniem poboru |
-| P_52     | P_52 | A non-negative integer that has a maximum of 14 digits. The amount that was spent on the purchase of cash registers, and that must be deducted in the specified period and returned in the given settlement period. Alternatively, the amount that was spent on the purchase of cash registers, and that increases the amount of input tax that must be transferred to the next settlement period. | Kwota wydana na zakup kas rejestrujących, do odliczenia w danym okresie rozliczeniowym przysługująca do zwrotu w danym okresie rozliczeniowym lub powiększająca wysokość podatku naliczonego do przeniesienia na następny okres rozliczeniowy |
-| P_54     | P_54 | The amount of input tax surplus that must be returned to the account that is designated by the taxpayer. | Wysokość nadwyżki podatku naliczonego nad należnym do zwrotu na rachunek wskazany przez podatnika |
-| P_54_Powód | P_55, P_56, P_57, or P_58, depending on the user selection | The refund to the bank account that is referred to in article 87, section 6a (**P_55**), 6 (**P_56**), 2 (**P_57**), or 5a (**P_58**) of the VAT Act. | Zwrot na rachunek VAT, o którym mowa w art. 87 ust. 6a (P_55) lub 6 (P_56) lub 2 (P_57) lub 5a (P_58) ustawy |
-| P_60     | P_60 | A non-negative integer that has a maximum of 14 digits. The amount of refund that must be credited against future tax liabilities. | Wysokość zwrotu do zaliczenia na poczet przyszłych zobowiązań podatkowych |
-| P_61     | P_61 | A string (1..240) that must be used if **P_60** is used. The type of future tax liability. | Rodzaj przyszłego zobowiązania podatkowego |
-| P_ORDZU  | P_ORDZU | A string (1..240). An explanation of the reasons for submitting a corrected VAT return. | Uzasadnienie przyczyn złożenia korekty |
+    - **1** for JPK-V7M(1)
+    - **2** for JPK-V7M(2)
 
-The **P_54_Powód** additional field is available as of version 98.194 of the **JPK-V7M XML format (PL)** Electronic reporting (ER) configuration and version 98.194.50 of the **JPK-V7M Excel format (PL)** ER configuration. It can be imported by using the **PL JPK_V7M EM setup v.5 KB4614816.zip** file (version 5 or later of the package of data entities that includes a predefined electronic message setup).
+   The **Wersja schematu** additional field was introduced in the **PL JPK-V7M EM setup v.6 KB5007691**.zip package (version 6 or later of the package of data entities that includes a predefined electronic message setup). In the **PL JPK-V7M EM setup v.6 KB5007691** package, the **Wersja schematu** additional field will get a value of **1** by default. Therefore, when you create a new electronic message, the **Wersja schematu** additional field will be set to **1**. If you want to change the default value of this field, go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**, select **JPK-V7M** on the left side of the page, and then, on the **Message additional fields** FastTab, find the **Wersja schematu** additional field, and select a value in the list.
+
+8. In the **Sklad pliku** additional field, specify which content of JPK-V7M must be included in the report. Two values are allowed:
+
+    - **Pelny plik XML** for the full XML file
+    - **Tylko Ewidencja** for the **Ewidencja** node only
+
+    The **Sklad pliku** additional field was introduced in the **PL JPK-V7M EM setup v.6 KB5007691**.zip package (version 6 or later of the package of data entities that includes a predefined electronic message setup). In the **PL JPK-V7M EM setup v.6 KB5007691** package, the **Sklad pliku** additional field will get a value of **Pelny plik XML** by default. Therefore, when you create a new electronic message, the **Sklad pliku** additional field will be set to **Pelny plik XML**. If you want to change the default value of this field, go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**, select **JPK-V7M** on the left side of the page, and then, on the **Message additional fields** FastTab, find the **Sklad pliku** additional field, and select a value in the list.
+
+9. You can also specify manual values for the following additional fields that are related to elements of the declaration.
+
+    | Name     | Tag of the declaration | Description (En) | Description (Pl) |
+    |----------|------------------------|------------------|------------------|
+    | P_39     | P_39 | A non-negative integer that has a maximum of 14 digits. The value of the surplus of input VAT over output VAT that was moved from the previous period. | Wysokość nadwyżki podatku naliczonego nad należnym z poprzedniej deklaracji |
+    | P_49     | P_49 | A non-negative integer that has a maximum of 14 digits. The amount that was spent on the purchase of cash registers, and that must be deducted in the specified period and therefore reduce the value of output VAT. The amount that is specified in **P_49** can't be more than **P_38** – **P_48**. If **P_38** – **P_48** is less than or equal to 0 (zero), you should show **0**. | Kwota wydana na zakup kas rejestrujących, do odliczenia w danym okresie rozliczeniowym pomniejszająca wysokość podatku należnego |
+    | P_50     | P_50 | A non-negative integer that has a maximum of 14 digits. The amount of tax that is covered by the abandonment of collection. **P_50** can't be more than **P_38** – **P_48** – **P_49**. If **P_38** – **P_48** – **P_49** is less than zero (0), or more than or equal to **P_50**, you should show **0**. | Wysokość podatku objęta zaniechaniem poboru |
+    | P_52     | P_52 | A non-negative integer that has a maximum of 14 digits. The amount that was spent on the purchase of cash registers, and that must be deducted in the specified period and returned in the given settlement period. Alternatively, the amount that was spent on the purchase of cash registers, and that increases the amount of input tax that must be transferred to the next settlement period. | Kwota wydana na zakup kas rejestrujących, do odliczenia w danym okresie rozliczeniowym przysługująca do zwrotu w danym okresie rozliczeniowym lub powiększająca wysokość podatku naliczonego do przeniesienia na następny okres rozliczeniowy |
+    | P_54     | P_54 | The amount of input tax surplus that must be returned to the account that is designated by the taxpayer. | Wysokość nadwyżki podatku naliczonego nad należnym do zwrotu na rachunek wskazany przez podatnika |
+    | P_54_Powód - in JPK-V7M(1) | P_55, P_56, P_57, or P_58, depending on the user selection. | The refund to the bank account that is referred to in article 87, section 6a (**P_55**), 6 (**P_56**), 2 (**P_57**), or 5a (**P_58**) of the VAT Act. | Zwrot na rachunek VAT, o którym mowa w art. 87 ust. 6a (P_55) lub 6 (P_56) lub 2 (P_57) lub 5a (P_58) ustawy |
+    | P_54_Powód - in JPK-V7M(2) | P_540, P_55, P_56, P_560, P_57, or P_58, depending on the user selection. | Return to the taxpayer's VAT account within 15 days (**P_540**), 25 days (**P_55**), 25 days (article 87, section 6 of the VAT Act) (**P_56**), 40 days (**P_560**), 60 days (**P_57**), or 180 days (**P_58**). | Zwrot na rachunek rozliczeniowy podatnika w terminie 15 dni (P_540), 25 dni (P_55),  25 dni (art. 87 ust. 6 ustawy) (P_56), 40 dni (P_560), 60 dni (P_57) lub 180 dni (P_58) |
+    | P_60     | P_60 | A non-negative integer that has a maximum of 14 digits. The amount of refund that must be credited against future tax liabilities. | Wysokość zwrotu do zaliczenia na poczet przyszłych zobowiązań podatkowych |
+    | P_61     | P_61 | A string (1..240) that must be used if **P_60** is used. The type of future tax liability. | Rodzaj przyszłego zobowiązania podatkowego |
+    | P_ORDZU  | P_ORDZU | A string (1..240). An explanation of the reasons for submitting a corrected VAT return. | Uzasadnienie przyczyn złożenia korekty |
+
+The **P_54_Powód** additional field for JPK-V7M(**1**) is available as of version 98.194 of the **JPK-V7M XML format (PL)** Electronic reporting (ER) configuration and version 98.194.50 of the **JPK-V7M Excel format (PL)** ER configuration. It can be imported by using the **PL JPK_V7M EM setup v.5 KB4614816.zip** file (version 5 or later of the package of data entities that includes a predefined electronic message setup).
+
+The **P_54_Powód** additional field for JPK-V7M(**2**) is available as of versions of the **JPK-V7M XML format (PL)** and **JPK-V7M Excel format (PL)** ER configurations that are delivered in the scope of KB5007691. It can be imported by using the **PL JPK-V7M EM setup v.6 KB5007691.zip** file (version 6 or later of the package of data entities that includes a predefined electronic message setup).
 
 ## Generate the JPK-V7M report in Excel format for preview
 

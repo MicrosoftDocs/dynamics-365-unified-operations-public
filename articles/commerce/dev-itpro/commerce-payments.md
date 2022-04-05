@@ -1,30 +1,17 @@
 ---
 # required metadata
-
 title: Omni-channel Commerce order payments
 description: This topic describes the omni-channel Commerce order payments feature in Microsoft Dynamics 365 Commerce.
-author: rubendel
-ms.date: 07/28/2020
+author: ravimeda
+ms.date: 02/04/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 141393
-ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: raeda
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-
 ---
 
 # Omni-channel Commerce order payments
@@ -32,17 +19,6 @@ ms.dyn365.ops.version: AX 7.0.1
 [!include [banner](../includes/banner.md)]
 
 This topic describes the omni-channel Commerce order payments feature in Microsoft Dynamics 365 Commerce. This feature lets you edit e-commerce and point of sale (POS) order payments from Commerce headquarters.
-
-## Key terms
-
-| Term | Description |
-|---|---|
-| Commerce payment | A payment that is associated with a customer order that was generated at the POS or in the e-commerce storefront. |
-| Order completion | The business logic in the call center that ensures that payments have been collected before an order is submitted. The **Enable order completion** setting in the call center parameters is used to turn on this business logic. For more information, see [Enable order completion](../set-up-order-processing-options.md#enable-order-completion). 
-| Call center order | An order that a call center user creates in Commerce headquarters. |
-| Accounts receivable (AR) sales order | An order that a user who isn't a call center user creates through Accounts receivable in Commerce headquarters. Payments for AR sales orders can't be edited through call center order completion. |
-
-## Overview
 
 Dynamics 365 Commerce consists of three main channels: POS, e-commerce, and call center. In Commerce version 10.0.12 and earlier, the management of payment lines for orders that are created in each channel isn't uniform. For example, when orders are created and edited in the call center, an order completion flow ensures that payments are specified for those orders before fulfillment. However, POS and e-commerce orders don't support call center order completion. To see the lack of uniformity, go to the **Customer service** page in Commerce headquarters, and notice which orders you can access the **Payments** page for by using the **Payments** button.
 
@@ -60,6 +36,15 @@ With this feature enabled, the **Sales order summary** dialog can be used to edi
 
 ![Payments button available for a POS or e-commerce order that was created while the feature was turned on.](../dev-itpro/media/COP_ORDERCOMPLETION.png)
 
+## Key terms
+
+| Term | Description |
+|---|---|
+| Commerce payment | A payment that is associated with a customer order that was generated at the POS or in the e-commerce storefront. |
+| Order completion | The business logic in the call center that ensures that payments have been collected before an order is submitted. The **Enable order completion** setting in the call center parameters is used to turn on this business logic. For more information, see [Enable order completion](../set-up-order-processing-options.md#enable-order-completion). 
+| Call center order | An order that a call center user creates in Commerce headquarters. |
+| Accounts receivable (AR) sales order | An order that a user who isn't a call center user creates through Accounts receivable in Commerce headquarters. Payments for AR sales orders can't be edited through call center order completion. |
+
 ## Prerequisites
 
 To turn on the omni-channel Commerce order payments feature, you must first turn on several other features and complete other configurations. Aside from being requirements for enabling **Omni-channel Commerce order payments**, these features should be turned on as a best practice because they address functional gaps that are related to orders. 
@@ -67,6 +52,10 @@ To turn on the omni-channel Commerce order payments feature, you must first turn
 If any of the prerequisites are missing when you try to turn on the omni-channel Commerce order payments feature, you receive a message that states that you can't continue until the prerequisite features and configurations are in place.
 
 ![Message about prerequisite features and configurations.](../dev-itpro/media/COP_PRE.png)
+
+> [!NOTE]
+> When the **Omni-channel Commerce order payments** feature is enabled, the call center **Enable order completion** button will be hidden in headquarters on the **General** FastTab of your channel at **Retail and Commerce \> Channels \> Call Centers**.
+
 
 ### Prerequisite features
 
@@ -179,7 +168,7 @@ After the payments are edited, the order submission process corrects any changes
 |---|---|---|
 | Authorized payments | Omni-channel Commerce order card payments can be removed from an order through order completion, but only if they weren't partially captured. | Yes |
 | Prepayments | Prepayments can't be removed through order completion. Prepayments can't be removed from an order after they are applied. Payment vouchers are already associated with them. | No |
-| Partially captured payments | If the payment is in a **Paid** state but hasn't been fully captured, it can't be removed. However, the payment amount can be reduced to the amount that was already posted. When this happens, the a request is sent to the payment provider to reduce the authorization amount to equal the new payment amount. | No |
+| Partially captured payments | If the payment is in a **Paid** state but hasn't been fully captured, it can't be removed. However, the payment amount can be reduced to the amount that was already posted. When this happens, a request is sent to the payment provider to reduce the authorization amount to equal the new payment amount. | No |
 | Fully captured credit card payments and prepayments | Fully captured credit card payments and prepayments can't be removed from the order. | No |
 
 ### Cancel order and sales lines
@@ -200,6 +189,21 @@ After the payments are edited, the order submission process corrects any changes
 | Linked refunds for AR sales orders | Although the payments can't be edited through order completion, returns that are issued for AR sales orders can be subject to a linked refund to the original card that was charged during invoicing. | 
 | Unlinked refunds | If the merchant's return policies and the payment processor allow this approach, unlinked refunds can be specified for return orders in cases where the order was originally paid in cash, for example, or in cases where the original card that was used for payment is no longer active. | Yes |
 | Refunds to non-card prepayments | Return orders that were originally paid through non-card prepayments, such as cash or credit memo payments, won't be subject to linked refund. An appropriate payment method, such as **Check**, must be specified for the refund payment. Organizations that allow unlinked refunds can refund non-card prepayments to credit cards that weren't previously used for the order, if the payment processor allows this approach. | Yes |
+
+### Credit notes
+
+If a customer wants to return items or be reimbursed for items or services that you have sold and received payment for, you must create and post a sales credit memo that specifies the requested change. To include the correct sales invoice information, you can create the sales credit memo directly from the posted sales invoice or you can create a new sales credit memo with copied invoice information.
+
+- **Accounts receivable > All sales orders > Open an existing sales order > Sell > Credit note**
+- **Accounts receivable > All sales orders > Create a new sales order > Sell > Credit note**
+
+If you need more control of the sales return process, such as warehouse documents for the item handling or better overview when receiving items from multiple sales documents with one sales return, then you can create sales return orders. A sales return order automatically issues the related sales credit memo and other return-related documents, such as a replacement sales order, if needed.
+
+- **Accounts receivable > All return orders > Create a new return order**
+- **Retail and Commerce > Customers > Customer service > Select the customer account > Select the invoiced order > Create a new return order**
+
+> [!NOTE]
+> A credit memo created from the existing sales order will *not* provide the option to invoice the order.
 
 ### Edit and remove orders that have prepayments
 

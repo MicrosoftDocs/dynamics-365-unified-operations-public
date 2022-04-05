@@ -4,7 +4,7 @@
 title: Configure a Dynamics 365 Commerce evaluation environment
 description: This topic explains how to configure a Microsoft Dynamics 365 Commerce evaluation environment after it's provisioned.
 author: psimolin
-ms.date: 08/24/2021
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -43,6 +43,7 @@ After your Commerce evaluation environment has been provisioned end to end, addi
 1. Select your environment in the list.
 1. In the environment information on the right, select **Log on to environment**. You will be sent to Commerce headquarters.
 1. Make sure that the **USRT** legal entity is selected in the upper-right corner.
+2. Go to **Commerce parameters > Configuration parameters** and make sure there's an entry for **ProductSearch.UseAzureSearch** set to **true**. If this entry is missing, you can add this entry and run **Channel Database > Full Sync** for the Commerce Scale unit associated with your eCommerce website.
 
 During post-provisioning activities in Commerce headquarters, make sure that the **USRT** legal entity is always selected.
 
@@ -109,6 +110,12 @@ To enable jobs in Commerce, follow these steps.
     1. Select the record.
     1. On the Action Pane, on **Batch job** tab, select **Change status**.
     1. Select **Canceling**, and then select **OK**.
+
+1. If the status of the job is **Withheld**, follow these steps:
+
+    1. Select the record.
+    1. On the Action Pane, on **Batch job** tab, select **Change status**.
+    1. Select **Waiting**, and then select **OK**.
 
 Optionally, you can also set the recurrence interval to one (1) minute for the following jobs:
 

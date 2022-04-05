@@ -1,13 +1,14 @@
 ---
 title: Form design requirements
 description: This topic provides form design requirements for mobile apps.
-author: robinarh
+author: tonyafehr
 ms.date: 08/14/2017
 ms.topic: article
 audience: Developer, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.custom: intro-internal
+ms.author: tfehr
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
 ---

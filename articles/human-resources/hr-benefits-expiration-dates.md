@@ -27,6 +27,9 @@ ms.dyn365.ops.version: Version 7.0.0, Human Resources
 
 # Manage benefit expiration dates
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This procedure shows how benefits can expire or be extended, and manage the enrollment dates of workers. The demo data company used to create this procedure is USMF.
