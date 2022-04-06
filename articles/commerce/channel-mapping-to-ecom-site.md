@@ -116,7 +116,7 @@ There are multiple methods that you can use to create and configure sites to use
 
 ### Create a new site
 
-You can create channels in site builder by going to the **Sites** list page and then selecting **New site**, which will bring up the **New site** dialog box. There you  can select the default online channel and language for the site, as shown in the following example illustration.
+You can create a new site in site builder by going to the **Sites** list page and then selecting **New site**, which will bring up the **New site** dialog box. There you can select the default online channel and language for the site, as shown in the following example illustration.
 
 ![Create a new channel in site builder](media/channel-mapping-4.png)
 
@@ -124,11 +124,13 @@ For more information, see [Create an e-commerce site](create-ecommerce-site.md).
 
 ### Create a new site with the site copy operation
 
-In general you won't create new sites as shown above since it will start out as an empty site without any site pages (ie: homepage, category page, product page, ...). A better practice is to start out with a copy of one of the provided starter sites such as Fabrikam or Adventure Works.  In this case you will select **Copy site** where you can pick the source site and the destination site name.  
+Instead of creating a new site as shown above that will start out as an empty site without any site pages (for example, home page, category pages, product pages), a better practice is to start out with a copy of one of the starter sites provided in the Commerce module library such as Fabrikam or Adventure Works. 
 
-![Site copy in site builder](media/channel-mapping-5.png)
+To copy an existing site, go to the **Sites** list page and then select select **Copy site**, which will bring up the **Copy site** dialog box where you can pick the source site and the destination site name as shown in the following exzmple illustration.  
 
-Notice in the image above that the online channel and language selection is not an option to pick at this point, this can be done once the site copy has completed.  When the site is selected in site builder site list for the first time, it will bring up a setup dialog where the default channel and language can be selected as shown in the following example illustration.
+![Site copy operation in site builder](media/channel-mapping-5.png)
+
+At this point you aren't able to select the default online channel and language for the site yet, but you can configure these once the site copy operation has completed. When you first select the site on the **Sites** list page in site builder, the **Setup your site** dialog box will appear where the default channel and language can be selected, as shown in the following example illustration.
 
 ![Initialize site in site builder](media/channel-mapping-6.png)
 
@@ -136,19 +138,19 @@ For more information about the site copy operation, see [Copy an e-commerce site
 
 ### Manage an existing site channel
 
-Once a site has been configured with its channel, it can easily be managed/changed from within the selected site in site builder under the **Site Settings**, **Channels** tab as shown in the following example illustration.
+Once a site has been configured with a channel, the channel can be managed and updated from within the selected site in site builder under **Site Settings \> Channels** as shown in the following example illustration.
 
 ![Manage channel mapping in site builder](media/channel-mapping-7.png)
 
-### Support multiple sites in a single tenant
+## Support multiple sites in a single tenant
 
-Many branded sites can co-exist in a single tenant.  Notice the site list in the following example illustration has three different branded sites (Adventure Works, Adventure Works Business (B2B site) and a site for Fabrikam) each mapped to different single online channel.
+Many branded sites can coexist in a single tenant. The following example illustration shows three different branded sites (Adventure Works, Adventure Works Business (B2B site) and Fabrikam, each mapped to different single online channel.
 
 ![Site list in site builder](media/channel-mapping-8.png)
 
-### Domain name and path
+## Domain name and path
 
-A single domain name can be used for multiple sites and the path is used to separate the sites and or languages.  For example the domain could be "www.MyCompany.com" which is configured for two different e-commerce sites: one for Fabrikam and one for Adventure Works.  The default (ie: blank path) can be used for one site such as the Fabrikam site and a path could be added for the second site such as "adventureworks" so that the site is accessed with "www.MyCompany.com/adventureworks" or a path can be added for both sites (www.MyCompany.com/fabrikam). Alternately a different domain name can be used for each site ie: www.adventure-works.com and www.fabrikam.com and paths could be used for different regions such as www.adventure-works.com/fr-ca for French Canada.
+A single domain name can be used for multiple sites and paths can then be used to separate sites or languages. For example, the domain could be `www.mycompany.com` which is configured for two different e-commerce sites: one for Fabrikam and one for Adventure Works. The default path (`www.mycompany.com`), also known as the blank path, could be used for the Fabrikam site and another path (`www.mycompany.com/adventureworks`) could be used for the Adventure Works site. Or the Fabrikam site could use a custom path (`www.mycompany.com/fabrikam`). Alternatively, a different domain name can be used for each site (for example, `www.adventure-works.com` and `www.fabrikam.com`) and paths could be used for different languages or regions, for example `www.adventure-works.com/fr-ca` for Canada French.
 
 ## Configure multiple languages on a site
 
