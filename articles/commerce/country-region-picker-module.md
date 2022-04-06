@@ -4,7 +4,7 @@
 title: Country/region picker module
 description: This topic covers the country/region picker module and describes how to configure it in Microsoft Dynamics 365 Commerce. 
 author: stuharg
-ms.date: 03/21/2022
+ms.date: 04/06/2022
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -42,7 +42,7 @@ When geo detection and redirection are enabled for a site, and a customer reques
 
 If the request URL doesn't match any URL that is mapped to the customer's country, the list of one or more URLs that are mapped to that country is returned in the response. The country/region picker compares each URL in that list to the URLs that have been configured in the country/region module. For every exact match that is found, the country/region picker renders the display heading, subheading, and image for that URL, and hyperlinks those elements by using the URL.
 
-When a customer selects on an option in the country/region picker, they are taken to the hyperlinked URL. That URL is written to the **\_msdyn365\_\_\_site\_** cookie so that it can be used as the customer's site preference. Then, the next time that the requests the URL that isn't associated with their country or region, they are automatically redirected to their preferred country. Therefore, we recommend that you also use the [site picker module](site-selector.md) on your e-commerce site, so that customers have a way to override or update their site preference. 
+When a customer selects on an option in the country/region picker, they are taken to the hyperlinked URL. That URL is written to the **\_msdyn365\_\_\_site\_** cookie so that it can be used as the customer's site preference. Then, the next time that the customer requests the URL that isn't associated with their country or region, they are automatically redirected to their preferred country. Therefore, we recommend that you also use the [site picker module](site-selector.md) on your e-commerce site, so that customers have a way to override or update their site preference. 
 
 If a customer closes the country/region picker dialog box, no cookie is written, and the customer stays on the current site. 
 
