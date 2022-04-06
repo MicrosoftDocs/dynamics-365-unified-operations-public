@@ -4,7 +4,7 @@
 title: Set up geo detection and redirection
 description: This topic explains how to set up geo detection and redirection for your e-commerce site in Microsoft Dynamics 365 Commerce.
 author: stuharg
-ms.date: 03/21/2022
+ms.date: 04/06/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
