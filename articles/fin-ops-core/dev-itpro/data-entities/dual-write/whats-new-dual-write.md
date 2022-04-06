@@ -2,7 +2,7 @@
 title: What's new or changed in dual-write
 description: This topic provides links to the release plans, major announcements, and documentation for dual-write.
 author: tonyafehr
-ms.date: 01/21/2022
+ms.date: 04/06/2022
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: tfehr
@@ -16,21 +16,42 @@ ms.dyn365.ops.version: 10.0.8
 
 [!include [banner](../../includes/banner.md)]
 
-
-
 Dual-write is an out-of-box infrastructure that provides near-real-time interaction between customer engagement apps in Microsoft Dynamics 365 and Finance and Operations apps. To get started with dual-write, see the [Dual-write home page](dual-write-home-page.md).
 
-## January 2022 release 
+## March 2022 release
 
+The March 2022 release of the [Dual-write Supply Chain solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwscm) contains the following changes.
 
-The January 2022 release of [Dual-write core version 1.1.33](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains the following changes. 
+| Feature | Description |Status |
+|---|---|---|
+| Bug fix | CE quotations with write-in product lines can't generate an order because the sales product category isn't mapped. <!-- KFM: Spell out "CE".--> | <!-- KFM: Provide status (General availability?) --> |
+| Bug fix | The ISO currency code for quotes isn't properly set after a revision. | <!-- KFM: Provide status (General availability?) --> |
+
+### Solution details
+
+| Solution Name | Has New Changes? | Previous Version | New Version |
+|---|---|---|---|
+| CurrencyExchangeRates | No | 2.2.2.5 | 2.2.2.5 |
+| Dynamics365Company | No | 2.2.2.5 | 2.2.2.5 |
+| Dynamics365FinanceAndOperationsCommon | No | 2.2.2.50 | 2.2.2.50 |
+| Dynamics365FinanceExtended | No | 2.3.1.15 | 2.3.1.15 |
+| Dynamics365SupplyChainExtended | Yes | 2.3.3.2 | 2.3.4.3 |
+| Dynamics365AssetManagement | No | 2.0.777.68 | 2.0.777.68 |
+| Dynamics365AssetManagementApp | No | 2.2.1.23 | 2.2.1.23 |
+| Dynamics365Notes | No | 2.2.2.23 | 2.2.2.23 |
+| Dynamics365FinanceAndOperationsDualWriteMaps | No | 2.3.0.35 | 2.3.0.36 |
+| Dynamics365FinanceAndOperationsAnchor | No | 2.3.3.2 | 2.3.4.3 |
+
+## January 2022 release
+
+The January 2022 release of [Dual-write core version 1.1.33](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains the following changes.
 
 | Feature | Description |Status |
 |------|---------|-------|
 | Performance| Improves performance of Microsoft Dataverse entity retrieval. | General availability |
 | Tracing| Limits excess trace logs during entity handling. | General availability |
 
-The January 2022 release of [Dual-write application orchestration solution version 2.3.3.2](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) contains the following bug fixes. 
+The January 2022 release of [Dual-write application orchestration solution version 2.3.3.2](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) contains the following bug fixes.
 
 | Feature | Description |Status |
 |------|---------|-------|
@@ -55,9 +76,9 @@ This release includes one map change named [CDS released distinct products] - [p
 |Dynamics365FinanceAndOperationsDualWriteMaps|Yes|2.3.0.15|2.3.3.2|
 |Dynamics365FinanceAndOperationsAnchor|No|2.3.1.15|2.3.3.2|
 
-## November 2021 release of party and global address book 
+## November 2021 release of party and global address book
 
-The November 2021 release of [Dual-write Party and Global Address Book Solutions 3.3.0.5](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwgabsln) contains the following features and bug fixes. 
+The November 2021 release of [Dual-write Party and Global Address Book Solutions 3.3.0.5](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwgabsln) contains the following features and bug fixes.
 
 | Feature | Description |Status |
 |------|---------|-------|
@@ -69,7 +90,7 @@ The November 2021 release of [Dual-write Party and Global Address Book Solutions
 
 ## September 2021 release of party and global address book 
 
-The September 2021 hotfix release of [Dual-write Party and Global Address Book Solutions 3.1.0.4](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwgabsln) is based on [Dual-write core solution version 1.0.29](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write). 
+The September 2021 hotfix release of [Dual-write Party and Global Address Book Solutions 3.1.0.4](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwgabsln) is based on [Dual-write core solution version 1.0.29](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).
 
 This release contains bug fixes listed in the following table.
 
@@ -109,6 +130,7 @@ This release contains the features and bug fixes listed in the following table.
 |Bug fix | Ability to toggle **Price override** field to true or false. | 	General availability |
 
 This release includes following map changes.
+
 + [CDS sales quotation lines] - [quotedetails] map version 1.0.0.1
 + [CDS sales order lines] - [salesorderdetails] map version 1.0.0.1
 + [Vendors V2] - [msdyn_vendors] map version 1.0.0.3
@@ -130,7 +152,6 @@ This release contains features and bug fixes listed in the following table.
 | Bug fix| Identify a phone number as mobile. | General availability |
 | Bug fix| Update the display name from **Parties Electronic Addresses** table to **Party Electronic Addresses** table. | General availability |
 | Party Electronic Address | Synchronize primary electronic address data from lead qualification process, account, and contact creation process to Party Electronic Addresses, and vice versa. | General availability |
-
 
 ## July 2021 release
 
