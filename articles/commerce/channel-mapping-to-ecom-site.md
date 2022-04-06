@@ -108,19 +108,21 @@ You may want to have multiple channels for a single brand in different regions w
 
 ## Cross-channel sharing
 
-Cross-channel sharing is useful when multiple channels on a single site can share content. For example, a retailer that has multiple brands and storefronts that are grouped under a single site can share some content among some or all of the storefronts. This shared content can include pages for terms and conditions, payment terms, shipment methods, and frequently asked questions (FAQ).  See the [Enable and use cross-channel sharing](cross-channel-sharing.md) topic for more information.
+Cross-channel sharing is useful when multiple channels on a single site can share content. For example, a retailer that has multiple brands and storefronts that are grouped under a single site can share some content among some or all of the storefronts. Shared content can include pages for terms and conditions, payment terms, shipment methods, and frequently asked questions (FAQ). For more information, see [Enable and use cross-channel sharing](cross-channel-sharing.md) topic.
 
 ## Map a channel to a site in site builder
 
-The below shows different ways sites can be created and configured to use different online channels.
+There are multiple methods that you can use to create and configure sites to use different online channels.
 
-### Create a new channel
+### Create a new site
 
-Channels can be created within site builder on the **Manage sites** page using the **New site** link.  The below shows where you select the default online channel and language for the site.
+You can create channels in site builder by going to the **Sites** list page and then selecting **New site**, which will bring up the **New site** dialog box. There you  can select the default online channel and language for the site, as shown in the following example illustration.
 
-![Creating a new site in site builder](media/channel-mapping-4.png)
+![Create a new channel in site builder](media/channel-mapping-4.png)
 
-### Create a new channel with site copy
+For more information, see [Create an e-commerce site](create-ecommerce-site.md).
+
+### Create a new site with the site copy operation
 
 In general you won't create new sites as shown above since it will start out as an empty site without any site pages (ie: homepage, category page, product page, ...). A better practice is to start out with a copy of one of the provided starter sites such as Fabrikam or Adventure Works.  In this case you will select **Copy site** where you can pick the source site and the destination site name.  
 
@@ -129,6 +131,8 @@ In general you won't create new sites as shown above since it will start out as 
 Notice in the image above that the online channel and language selection is not an option to pick at this point, this can be done once the site copy has completed.  When the site is selected in site builder site list for the first time, it will bring up a setup dialog where the default channel and language can be selected as shown in the following example illustration.
 
 ![Initialize site in site builder](media/channel-mapping-6.png)
+
+For more information about the site copy operation, see [Copy an e-commerce site](copy-ecommerce-site.md).
 
 ### Manage an existing site channel
 
