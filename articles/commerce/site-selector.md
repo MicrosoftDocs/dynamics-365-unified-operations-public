@@ -4,7 +4,7 @@
 title: Site picker module
 description: This topic covers the site picker module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
-ms.date: 03/21/2022
+ms.date: 04/06/2022
 ms.topic: article
 ms.prod:
 ms.technology:
