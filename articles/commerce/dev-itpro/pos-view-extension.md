@@ -4,7 +4,7 @@
 title: Extend POS views to add custom columns and app bar buttons
 description: This topic explains how you can extend existing POS views such as the Customer Add/Edit screen.
 author: mugunthanm
-ms.date: 03/24/2020
+ms.date: 04/07/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -92,10 +92,9 @@ The following table shows the POS views that currently support extensions. It al
 
 ## Custom filter extension
 
-Custom filter extensions are supported in the below POS views.
-**Search order views** also supports setting default parameters for search in the user interface (UI) using extensions. For example, if you want to add a default store search parameter you can do that by using an extension and showing that in the UI. 
+Custom filter extensions are supported in the POS views in the table below. **Search order views** also supports setting default parameters for search in the user interface (UI) using extensions. For example, if you want to add a default store search parameter you can do that by using an extension and showing that in the UI. 
 
-| POS view                                   | Custom Filters are supported  | Default filter parameters    | Release |
+| POS view                                   | Custom filters supported?  | Default filter parameters?    | Release |
 |--------------------------------------------|-------------------------------|-----------------------------|--------------------------------|
 | ShowJournalView                            | Yes                           | No                          |                                |
 | SearchOrdersView                           | Yes                           | Yes                         |                                |
