@@ -138,41 +138,51 @@ For more information about the site copy operation, see [Copy an e-commerce site
 
 ### Manage an existing site channel
 
-Once a site has been configured with a channel, the channel can be managed and updated from within the selected site in site builder under **Site Settings \> Channels** as shown in the following example illustration.
+Once a site has been configured with a channel, the channel can easiliy be managed and updated from within the selected site in site builder under **Site Settings \> Channels**, as shown in the following example illustration.
 
 ![Manage channel mapping in site builder](media/channel-mapping-7.png)
 
 ## Support multiple sites in a single tenant
 
-Many branded sites can coexist in a single tenant. The following example illustration shows three different branded sites (Adventure Works, Adventure Works Business (B2B site) and Fabrikam, each mapped to different single online channel.
+Many branded sites can coexist in a single tenant. The following example illustration shows three different branded sites (Adventure Works, Adventure Works Business, and Fabrikam), each mapped to different single online channel.
 
 ![Site list in site builder](media/channel-mapping-8.png)
 
-## Domain name and path
+## Configure single domain name and paths for multiple sites
 
-A single domain name can be used for multiple sites and paths can then be used to separate sites or languages. For example, the domain could be `www.mycompany.com` which is configured for two different e-commerce sites: one for Fabrikam and one for Adventure Works. The default path (`www.mycompany.com`), also known as the blank path, could be used for the Fabrikam site and another path (`www.mycompany.com/adventureworks`) could be used for the Adventure Works site. Or the Fabrikam site could use a custom path (`www.mycompany.com/fabrikam`). Alternatively, a different domain name can be used for each site (for example, `www.adventure-works.com` and `www.fabrikam.com`) and paths could be used for different languages or regions, for example `www.adventure-works.com/fr-ca` for Canada French.
+A single domain name can be used for multiple sites and paths can then be used to separate sites or languages. For example, the domain could be `www.mycompany.com` which is configured for two different e-commerce sites: one for Fabrikam and one for Adventure Works. The default path (`www.mycompany.com`), also known as the blank path, could be used for the Fabrikam site and another path (`www.mycompany.com/adventureworks`) could be used for the Adventure Works site. Another option would be for  the Fabrikam site to also use a custom path (for example, `www.mycompany.com/fabrikam`) instead of the default path. 
+
+Alternatively, a different domain name can be used for each site (for example, `www.adventure-works.com` and `www.fabrikam.com`) and paths could be used for different languages or regions, for example `www.adventure-works.com/fr-ca` for Canada French.
 
 ## Configure multiple languages on a site
 
-The languages can then be configured on the e-commerce site within site builder as shown below in the **Site settings** -> **Channels** tab.  Notice each language has been configured with the locale for the path giving each language a unique URL.
+Languages can be configured for the e-commerce site within site builder under **Site settings \> Channels**. In the following example illustration, each language has been configured with the locale for the path giving each language a unique URL.
 
 ![Multiple languages configured on a site](media/channel-mapping-10.png)
 
-To add a new channel language, select the channel link highlighted in the following example illustration and a channel locale mapping will pop up where you can select **Add a locale** where you can pick the channel and locale to add plus the path to use for that channel.
+To add a new channel language, got to **Site settings \> Channels** and select the channel link. In the pane that appears on the right, select **Add a locale** to select the channel and locale you want to add and specify the path to use for that channel.
 
-![Adding languages to a site](media/channel-mapping-11.png)
+In the following example illustration, the **Adventure Works online store (default)** channel link and **Add a locale** are highlighted.
 
-#### Enable the site picker
+![Add languages to a site](media/channel-mapping-11.png)
 
-Once you have configured a site to have multiple languages and or channels, you may want to add a language selector to the header to select the language or country.  The module library [header](author-header-module.md) module has built in support for users to select a language using the [site picker](site-selector.md) module.  The site picker can be added within the header fragment which has the header module as shown in the following example illustration. As can be seen, the header module has a **Site Picker** slot, edit the fragment and add the **Site picker** module to the slot and then select **Add site options list** from the site picker module configurations to add a new language.  You can then add the text that will show up in the picker drop-down list and the URL with the path you created when adding the channel to the site (ie: www.adventure-works.com/fr-ca).
+### Enable the site picker
 
-![Setup site selector on header](media/channel-mapping-12.png)
+Once you have configured a site to have multiple languages and or channels, you may want to add a language selector to the site page header for users to manually select their language or country. The module library [header module](author-header-module.md) has built-in support for users to select a language using the [site picker module](site-selector.md). The site picker can be added within the header fragment that contains the header module. 
+
+as shown in the following example illustration. 
+
+To add the site picker, follow these steps.
+
+In the **Site Picker** slot of the header module, add a **Site picker** module and then select **Add site options list** from the site picker properties pane to add a new language. You can then specify that will be shown in the site r drop-down list and the URL with the path you created when adding the channel to the site (for example, `www.adventure-works.com/fr-ca`).
+
+![Set up site selector on header](media/channel-mapping-12.png)
 
 Once the site selector is saved and published in the header you should see a drop-down list on the e-commerce site as shown in the below example.
 
 ![Example of a site selector drop-down list](media/channel-mapping-13.png)
 
-#### Implement page variants per each language
+### Implement page variants per each language
 
 Site builder supports the ability to change how a page looks based on the selected language by creating a page variant for it. From within site builder, there is a link at the top right that shows the current channel and language, selecting it will bring up a channel and language picker.  In this scenario there is only one channel but multiple languages.  If you want to override the page for this language, just change it and you will be prompted to create a variant of the page if one does not exist or you will see the variant and can now make edits to that variant.  If no variant is created the original page will render and show the appropriate language for module strings and product information pulled from HQ, however if text was provided directly in the default page modules like a page title or other marketing information that will remain in the original language, creating a page variant will allow you to add localized content.  Pages can also be exported as xliff files to be localized and the variants can then be imported.
 
@@ -199,4 +209,8 @@ An alternative to manually creating each page and fragment is to export each pag
 Adding additional channels to an e-commerce site can be done in site builder under the **Site settings**, **Channels** tab with the **Add a channel** button as shown in the following example illustration, where the online channel and default locale can be selected.  
 
 ![Adding a channel to an existing site](media/channel-mapping-15.png)
+
+## Additional resources
+
+
 
