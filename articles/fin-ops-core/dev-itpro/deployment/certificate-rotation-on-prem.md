@@ -45,7 +45,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 
 1. Rename the original **Infrastructure** folder that you created during the process to [Download setup scripts from LCS](setup-deploy-on-premises-pu41.md#downloadscripts). Rename the folder to **InfrastructureOld**.
 
-2. Download the latest setup scripts from [Download setup scripts from LCS](setup-deploy-on-premises-pu41.md#downloadscripts). Unzip the files into a fileshare that can be accessed by all machines in the cluster. Name the folder **Infrastructure**.
+2. Download the latest setup scripts from [Download setup scripts from LCS](setup-deploy-on-premises-pu41.md#downloadscripts). Unzip the files into a file share that can be accessed by all machines in the cluster. Name the folder **Infrastructure**.
 
     > [!NOTE]
     > As of version 2.14.0, each version of the scripts will have its own entry in the Shared asset library.
@@ -58,7 +58,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
         1. Copy the **ConfigTemplate.xml** file from the **InfrastructureOld** folder to the **Infrastructure** folder.
         2. Run the following command.
         
-	        ```powershell
+            ```powershell
             .\Update-ConfigTemplate.ps1 -OldConfigTemplate .\ConfigTemplateOld.xml -NewConfigTemplate .\ConfigTemplate.xml
             ```
 
@@ -108,23 +108,23 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
         ```
 
     2. Copy the contents of each `infrastructure\VMs<VMName>` folder into the corresponding VM (if remoting scripts are used, they will automatically copy the content to the target VMs), and then run the following scripts, if they exist. Perform these steps as an Administrator.
-	
+
         ```powershell
         # If remoting, only execute
         # .\Configure-PreReqs-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ForcePushLBDScripts
 
         .\Configure-PreReqs.ps1
         ```
-	
-     3. Run the following scripts, if they exist. Perform these steps as an administrator.
-	
+
+    3. Run the following scripts, if they exist. Perform these steps as an administrator.
+
         ```powershell
         # If remoting, only execute
         # .\Complete-PreReqs-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml 
 
         .\Complete-PreReqs.ps1
         ```       
-	
+
     4. Run the following script to validate the VM setup.
     
         ```powershell
@@ -155,7 +155,8 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 
     ```powershell
     Get-ServiceFabricClusterConfiguration > C:\Temp\ClusterConfig.json
-    ```	
+    ```
+
 4. Open the **Clusterconfig.json** file for editing and find the following section. If a secondary thumbprint is defined, go to [Clean up old Service Fabric certificates](#cleanupoldsfcerts) before you continue.
 
     ```json
@@ -171,7 +172,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
                                    },
             "ServerCertificate":   {
                                         "X509StoreName":  "My",
-										"Thumbprint": "*Old server thumbprint(Star/SF)*"
+                                        "Thumbprint": "*Old server thumbprint(Star/SF)*"
                                    },
             "ClientCertificateThumbprints":  [
                                        {
@@ -199,7 +200,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
                                    },
             "ServerCertificate":   {
                                         "X509StoreName":  "My",
-										"Thumbprint": "*New server thumbprint(Star/SF)*",
+                                        "Thumbprint": "*New server thumbprint(Star/SF)*",
                                         "ThumbprintSecondary": "Old server thumbprint(Star/SF)"
                                    },
             "ClientCertificateThumbprints":  [
@@ -251,8 +252,8 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
     # When UpgradeState shows RollingForwardCompleted, the upgrade is finished
     ```
 
-	> [!NOTE] 
-	> You might receive the following error message: "Upgrading from two different certificates to two different certificates is not allowed." This message indicates that you didn't clean up old Service Fabric certificates on the previous certificate rotation exercise. In this case, see the [Clean up old Service Fabric certificates](certificate-rotation-on-prem.md#cleanupoldsfcerts) section later in this topic, and then repeat the steps in this section.  
+    > [!NOTE] 
+    > You might receive the following error message: "Upgrading from two different certificates to two different certificates is not allowed." This message indicates that you didn't clean up old Service Fabric certificates on the previous certificate rotation exercise. In this case, see the [Clean up old Service Fabric certificates](certificate-rotation-on-prem.md#cleanupoldsfcerts) section later in this topic, and then repeat the steps in this section.  
 
 ### Service Fabric with or without expired certificates (cluster not accessible)
 
@@ -279,6 +280,7 @@ You must reinstall the LocalAgent in the following situations:
         }
     },
     ```
+
 1. Run the following PowerShell command on one of the Orchestrator nodes.
 
     ```powershell
@@ -293,14 +295,14 @@ You must reinstall the LocalAgent in the following situations:
 
 1. Follow the steps in [Configure LCS connectivity for the tenant](setup-deploy-on-premises-pu41.md#configurelcs).
 
-	> [!NOTE] 
-	> If you receive the error **Update to existing credential with KeyId '\<key\>' is not allowed**, follow the instructions in [Error: "Updates to existing credential with KeyId '\<key\>' is not allowed"](troubleshoot-on-prem.md#error-updates-to-existing-credential-with-keyid-key-is-not-allowed).
+    > [!NOTE] 
+    > If you receive the error **Update to existing credential with KeyId '\<key\>' is not allowed**, follow the instructions in [Error: "Updates to existing credential with KeyId '\<key\>' is not allowed"](troubleshoot-on-prem.md#error-updates-to-existing-credential-with-keyid-key-is-not-allowed).
 
 1. Continue with [Configure a connector and install an on-premises local agent](setup-deploy-on-premises-pu41.md#configureconnector), specifically the following changes:
 
-	- Client certificate thumbprint
-	- Server certificate thumbprint
-	- Tenant service principle certificate thumbprint
+    - Client certificate thumbprint
+    - Server certificate thumbprint
+    - Tenant service principle certificate thumbprint
 
     > [!IMPORTANT]
     > Do **not** create a new connector in LCS. Update the configuration of your existing connector and download the settings again.
@@ -386,19 +388,19 @@ Alternatively, if you also want to rotate the existing credentials, follow these
 
 2. Select **Maintain** and then select **Update Settings**.
 
-	![Apply update settings.](media/addf4f1d0c0a86d840a6a412f774e474.png)
+    ![Apply update settings.](media/addf4f1d0c0a86d840a6a412f774e474.png)
 
 3. Change the thumbprints to the new thumbprints that you previously configured. You can find them in the ConfigTemplate.xml file in the InfrastructureScripts folder.
 
-	![Deployment settings thumbprint image 1.](media/07da4d7e02f11878ee91c61b4f561a50.png)
+    ![Deployment settings thumbprint image 1.](media/07da4d7e02f11878ee91c61b4f561a50.png)
 
-	![Deployment settings thumbprint image 2.](media/785caaf4ee652d66c0d88cf615a57e26.png)
+    ![Deployment settings thumbprint image 2.](media/785caaf4ee652d66c0d88cf615a57e26.png)
 
 4. Select **Prepare**.
 
 5. After downloading and preparation is complete, the **Update environment** button will display.
 
-	![Update environment button.](media/0a9d43044593450f1a828c0dd7698024.png)
+    ![Update environment button.](media/0a9d43044593450f1a828c0dd7698024.png)
 
 6. Select **Update environment** to start updating your environment.
 
@@ -406,11 +408,11 @@ Alternatively, if you also want to rotate the existing credentials, follow these
 
 8. After the environment is successfully updated with the new certificates, you can view the new thumbprints in Service Fabric Cluster Explorer. The names of the thumbprints in Service Fabric Explorer might differ from the names in LCS. However, the values should be the same.
 
-	Here is an example of how the name of the same thumbprint might differ.
+    Here is an example of how the name of the same thumbprint might differ.
 
-	![Deployment settings thumbprint example 1.](media/038173714b2fb6cf12acc4bda2a3dde5.png)
+    ![Deployment settings thumbprint example 1.](media/038173714b2fb6cf12acc4bda2a3dde5.png)
 
-	![Deployment settings thumbprint example 2.](media/642f6434da9cdeac3651b765acca08fa.png)
+    ![Deployment settings thumbprint example 2.](media/642f6434da9cdeac3651b765acca08fa.png)
 
 ## Update other certificates as needed
 
@@ -437,7 +439,7 @@ This procedure should be completed either after a successful certificate rotatio
                                    },
             "ServerCertificate":   {
                                         "X509StoreName":  "My",
-										"Thumbprint": "server thumbprint(Star/SF)"
+                                        "Thumbprint": "server thumbprint(Star/SF)"
                                    },
             "ClientCertificateThumbprints":  [
                                        {
