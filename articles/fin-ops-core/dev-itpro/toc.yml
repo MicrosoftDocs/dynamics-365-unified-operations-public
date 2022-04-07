@@ -68,6 +68,8 @@
           href: data-entities/odata.md
         - name: Custom service development
           href: data-entities/custom-services.md
+        - name: Service request tracing
+          href: data-entities/service-request-tracing.md
         - name: Recurring integrations
           href: data-entities/recurring-integrations.md
         - name: Test services using third-party utilities
