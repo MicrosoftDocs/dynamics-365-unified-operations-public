@@ -24,7 +24,7 @@ The March 2022 release of the [Dual-write Supply Chain solution](https://appsour
 
 | Feature | Description |Status |
 |---|---|---|
-| Bug fix | Customer Engagement quotations with write-in product lines can't generate an order because the sales product category isn't mapped. | General availability |
+| Bug fix | In customer engagement apps, quotations with write-in product lines can't generate an order because the sales product category isn't mapped. | General availability |
 | Bug fix | The ISO currency code for quotes isn't properly set after a revision. | General availability |
 
 ### Solution details
@@ -55,8 +55,8 @@ The January 2022 release of [Dual-write application orchestration solution versi
 
 | Feature | Description |Status |
 |------|---------|-------|
-| Bug fix| In the Customer Engagement apps, the quote line information form filters warehouses by site, instead of by company. | General availability |
-| Bug fix| In Finance and Operations apps, when a product is released without an item model group set, the operation fails due to a blank value being set for the **FieldServiceProductType** attribute in Customer Engagement apps. This has been fixed by allowing the **FieldServiceProductType** attribute to allow a “NotAvailable” value. | General availability |
+| Bug fix| In the customer engagement apps, the quote line information form filters warehouses by site, instead of by company. | General availability |
+| Bug fix| In Finance and Operations apps, when a product is released without an item model group set, the operation fails due to a blank value being set for the **FieldServiceProductType** attribute in customer engagement apps. This has been fixed by allowing the **FieldServiceProductType** attribute to allow a “NotAvailable” value. | General availability |
 | Bug fix| When Dataverse sends an updated sales price of 0.00, it doesn't get updated in Finance and Operations apps. | General availability |
 
 This release includes one map change named [CDS released distinct products] - [products]. In order to take the map changes, apply "Dynamics365FinanceAndOperationsDualWriteMaps" solution version 2.3.3.2 and update the [CDS released distinct products] - [products] map to version 1.0.0.3.
