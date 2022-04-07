@@ -2,32 +2,22 @@
 # required metadata
 
 title: Service request tracing
-description: Instrument request IDs in your service requests
+description: When developing data integrations with Finance and Operations service endpoints, it is best practice to include a request identifier in the headers to enable tracing the request through the service.
 author: jaredha
-ms.date: 04/06/2022
+ms.date: 04/07/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: IT Pro, Developer
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jaredha
-ms.search.validFrom: 2022-04-06
+ms.search.validFrom: 2022-04-07
 
 ---
-# Service request tracing
 
-When developing data integrations with Finance and Operations service endpoints, it is best practice to include a request identifier in the headers to enable tracing the request through the service. Your client application should generate and log a Client Request Id (```x-ms-client-request-id```) value and send the value in the API request header. This is a GUID value to uniquely identify a single client request.
+# Service request tracing
+[!include[banner](../includes/banner.md)]
+
+When developing data integrations with Finance and Operations service endpoints, it is best practice to include a request identifier in the headers to enable tracing the request through the service. Your client application should generate and log a Client Request ID (```x-ms-client-request-id```) value and send the value in the API request header. This is a GUID value to uniquely identify a single client request.
 
 The Finance and Operations service logs the ```x-ms-client-request-id``` value received in the request header making it available as an identifier for the request in service telemetry.
 
