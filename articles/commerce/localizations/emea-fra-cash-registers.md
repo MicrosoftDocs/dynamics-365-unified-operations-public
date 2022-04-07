@@ -5,7 +5,7 @@ title: Cash register functionality for France
 description: This topic provides an overview of the cash register functionality that is available for France. It also provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
 manager: annbe
-ms.date: 03/29/2022
+ms.date: 04/07/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -38,19 +38,14 @@ The cash register functionality for France consists of the following parts:
 
 ## Certification information
 
-This version of the cash register functionality for France has passed an audit according to the NF 525 certification requirements and is granted certificates of compliance that have the following categories and numbers: 
-
-- **Microsoft Dynamics 365 Finance, version 10**:
-
-    - Certificate category: B
-    - Certificate number: 0350
+This version of the cash register functionality for France has passed an audit according to the NF 525 certification requirements and is granted a certificate of compliance that has the following category and number: 
 
 - **Microsoft Dynamics 365 Commerce, version 10**:
 
     - Certificate category: B
     - Certificate number: 0203
 
-Up-to-date certificates can be found on the [portal of the certification body](https://certificates.infocert.org/).
+An up-to-date certificate can be found on the [portal of the certification body](https://certificates.infocert.org/).
 
 ## Common POS features
 
@@ -375,7 +370,7 @@ In the Receipt format designer, add the following custom fields to the appropria
     - **NF 525 Certificate** – This field prints the category and number of the certificate of compliance that an authorized body issued per the NF 525 certification requirements.
 
         > [!NOTE]
-        > By default, the certificate category and number that are assigned to **[Finance](#certification-information)** are printed. If you're implementing **Commerce**, you must either override the custom field to print the certificate category and number for **Commerce**, or add a static text to print the certificate category and number for **Commerce** instead of the custom field. The static text should contain the identification of the certification and the certificate category and number concatenated in one word, for example: *(NF525) B0203*.
+        > The certificate category and number that are assigned to **[Commerce](#certification-information)** are printed.
 
     - **Text** – Add a text field, and specify the version of the software that was certified per the NF 525 certification requirements and that is used to produce receipts (for example, **Microsoft Dynamics 365 Finance v.10** or **Microsoft Dynamics 365 Commerce v.10**).
 
