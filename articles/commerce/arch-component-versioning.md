@@ -4,7 +4,7 @@
 title: Dynamics 365 Commerce component versioning requirements
 description: This topic provides an overview of the component versioning requirements and dependencies for all components in the Microsoft Dynamics 365 Commerce ecosystem.
 author: rezaassadi
-ms.date: 03/18/2022
+ms.date: 04/13/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
