@@ -45,33 +45,31 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 
 1. Rename the original **Infrastructure** folder that you created during the process to [Download setup scripts from LCS](setup-deploy-on-premises-pu41.md#downloadscripts). Rename the folder to **InfrastructureOld**.
 
-2. Download the latest setup scripts from [Download setup scripts from LCS](setup-deploy-on-premises-pu41.md#downloadscripts). Unzip the files into a fileshare accessible by all machines in the cluster. Name the folder **Infrastructure**.
+2. Download the latest setup scripts from [Download setup scripts from LCS](setup-deploy-on-premises-pu41.md#downloadscripts). Unzip the files into a file share that can be accessed by all machines in the cluster. Name the folder **Infrastructure**.
 
-> [!NOTE]
-> Starting with version 2.14.0 each version of the scripts will have its own entry in the Shared Asset Library.
+    > [!NOTE]
+    > As of version 2.14.0, each version of the scripts will have its own entry in the Shared asset library.
 
-3. Compare the schema version of **ConfigTemplate.xml** from **InfrastructureOld** with the schema version of **ConfigTemplate.xml** in the **Infrastructure** folder.
+3. Compare the schema version of the **ConfigTemplate.xml** file in the **InfrastructureOld** folder with the schema version of the **ConfigTemplate.xml** file in the **Infrastructure** folder.
 
-    - If the schema versions have not changed.
+    - If the schema versions haven't changed, copy the **ConfigTemplate.xml** file from the **InfrastructureOld** folder to the **Infrastructure** folder.
+    - If the schema versions have changed, follow these steps:
 
-        1. Copy **ConfigTemplate.xml** from the **InfrastructureOld** folder into the **Infrastructure** folder.
-
-    - If the schema versions have changed.
-        1. Copy **ConfigTemplate.xml** from the **InfrastructureOld** folder into the **Infrastructure** folder.
-        2. Run the following command:
+        1. Copy the **ConfigTemplate.xml** file from the **InfrastructureOld** folder to the **Infrastructure** folder.
+        2. Run the following command.
         
-	```powershell
+	        ```powershell
             .\Update-ConfigTemplate.ps1 -OldConfigTemplate .\ConfigTemplateOld.xml -NewConfigTemplate .\ConfigTemplate.xml
-        ```
+            ```
 
         > [!NOTE]
-        > Newer versions of the scripts (starting with version 2.14.0) that introduce changes to the schema of the configuration file will include logic that will migrate the configuration file to the new schema.
+        > Newer versions of the scripts (version 2.14.0 and later) that introduce changes to the schema of the configuration file will include logic that migrates the configuration file to the new schema.
         > 
-        > The script currently does not have logic for updating from schemas lower than version 1.5. In that case manually migrate the old **ConfigTemplate.xml** file by comparing it with the new **ConfigTemplate.xml** file.
+        > The script doesn't currently have logic for updating from schemas that are earlier than version 1.5. In these cases, you must manually migrate the old **ConfigTemplate.xml** file by comparing it with the new **ConfigTemplate.xml** file.
 
 ## Preparation steps 
 
-1. Configure certificates as needed in **ConfigTemplate.xml**. Follow the steps in [Configure certificates](setup-deploy-on-premises-pu41.md#configurecert), specifically these steps.
+1. In the **ConfigTemplate.xml** file, configure certificates as you require. Follow the steps in [Configure certificates](setup-deploy-on-premises-pu41.md#configurecert). Specifically, follow these steps.
 
     ```powershell
     # Only run the first command if you have not generated the templates yet.
@@ -83,7 +81,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
     > The AD CS scripts need to run on a domain controller, or a Windows Server computer with Remote Server Admin Tools installed.
     > The AD CS functionality is only available with Infrastructure scripts release 2.7.0 and later. 
 
-    Alternatively, if you want to keep using self-signed certificates, run the command below.
+    Alternatively, if you want to continue to use self-signed certificates, run the following command.
 
     ```powershell
     # Create self-signed certs
@@ -93,14 +91,14 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
     > [!WARNING]
     > Self-signed certificates should never be used in production environments. If you're using publicly trusted certificates, manually update the values of those certificates in the ConfigTemplate.xml file.
 
-    Once you have generated your certificates, run the command below.
+    After you've generated the certificates, run the following command.
 
     ```powershell
     # Exports .pfx files into a directory VMs\<VMName>. All the certs will be written to the infrastructure\Certs folder.
     .\Export-PfxFiles.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-1. Continue to [Setup VMs](setup-deploy-on-premises-pu41.md#setupvms). The specific steps that are needed for this process include:
+1. Continue to [set up VMs](setup-deploy-on-premises-pu41.md#setupvms). Here are the specific steps that are required for this process:
 
     1. Export the scripts that must be run on each VM.
     
@@ -135,7 +133,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
         .\Test-D365FOConfiguration.ps1
         ```
 
-1. Run the following PowerShell command to have values that can be used in LCS later. For more information, see [Deploy your on-premises environment from LCS](setup-deploy-on-premises-pu41.md#deploy).
+1. Run the following PowerShell command so that you have values that can be used in LCS later. For more information, see [Deploy your on-premises environment from LCS](setup-deploy-on-premises-pu41.md#deploy).
 
     ```powershell
     .\Get-DeploymentSettings.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
@@ -228,7 +226,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
     "clusterConfigurationVersion": "2.0.0",
     "apiVersion": "10-2017",
     ```
-    
+
 8. Save the new ClusterConfig.json file.
 
 9. Run the following PowerShell command.
@@ -254,7 +252,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
     ```
 
 	> [!NOTE] 
-	> If you receive the error, "Upgrading from two different certificates to two different certificates is not allowed", it means that you didn't clean up old Service Fabric certificates on the previous certificate rotation exercise. Refer to the [Clean up old Service Fabric certificates](certificate-rotation-on-prem.md#cleanupoldsfcerts) section toward the end of this content, and then repeat the steps in this section.  
+	> You might receive the following error message: "Upgrading from two different certificates to two different certificates is not allowed." This message indicates that you didn't clean up old Service Fabric certificates on the previous certificate rotation exercise. In this case, see the [Clean up old Service Fabric certificates](certificate-rotation-on-prem.md#cleanupoldsfcerts) section later in this topic, and then repeat the steps in this section.  
 
 ### Service Fabric with or without expired certificates (cluster not accessible)
 
@@ -262,13 +260,13 @@ Continue this process following the steps in [Troubleshoot on-premises deploymen
 
 ## Update the LocalAgent certificate
 
-You must reinstall the LocalAgent if:
+You must reinstall the LocalAgent in the following situations:
 
 - You changed the Service Fabric cluster/server certificate.
 - You changed the Service Fabric client certificate.
 - You changed the LocalAgent certificate.
 
-1. Update your current localagent-config.json by replacing the **serverCertThumbprint** and **clientCertThumbprint** values with the new thumbprints.
+1. Update your **current localagent-config.json** file by replacing the **serverCertThumbprint** and **clientCertThumbprint** values with the new thumbprints.
 
     ```json
     {
