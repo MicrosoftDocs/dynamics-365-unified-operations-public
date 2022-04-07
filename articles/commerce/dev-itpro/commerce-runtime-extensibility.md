@@ -4,7 +4,7 @@
 title: Commerce runtime (CRT) extensibility
 description: This topic describes various ways that you can extend the commerce runtime (CRT) and Retail Server.
 author: mugunthanm
-ms.date: 03/16/2022
+ms.date: 04/07/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -59,7 +59,7 @@ For example, the Product service in CRT contains all the product-related request
 Before you learn about the CRT extension patterns, you should understand how a CRT extension can be created. CRT is just a collection of C# class libraries (.NET assemblies). You can create a class library project in C# and do all the CRT extension by using the patterns that are shown in the following subsections. Always use the samples that Microsoft provides as templates for your extension, because these samples have the correct assembly references, Microsoft .NET Framework version, output type, and build parameters. Additionally, all the other required parameters are preconfigured. You can find the CRT sample extension in the Retail software development kit (SDK), at …\\RetailSDK\\SampleExtensions\\CommerceRuntime.
 
 > [!NOTE]
-> As of version 10.0.26 all class libraries for CRT extension projects must use .NET 6 as the target framework.
+> As of version 10.0.26, all class libraries for CRT extension projects must use .NET 6 as the target framework.
 
 ### Create a new CRT service
 
