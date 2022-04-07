@@ -443,8 +443,8 @@ Dataverse will use the Azure AD application that you created to call Finance and
             $task = $method.Invoke($cdsWebApiClient, @($cdsApiPath))
             $response = $task.GetAwaiter().GetResult()
 
-            $logger.WriteInfo("Received response with length: $($response.Length)")
-            Write-Verbose $logger.LogContent.ToString()
+            Write-Host $logger.LogContent.ToString()
+            Write-Host "Received response with length: $($response.Length)" 
             Write-Host "Test complete."
         }
         catch
