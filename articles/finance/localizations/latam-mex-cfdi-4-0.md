@@ -36,6 +36,7 @@ To start work with version 4.0 you should set up the following in Electronic inv
 
 -	Set Version 4.0 (CFDI version field)
 -	Select new xml scheme file (**CFDI XML scheme file** and **CFDI Payment XML schema file** fields on **CFDI** tab and **CFDI XML scheme file** field on **CFDI withholding** tab)
+-	Enter the tax regime for customers (**Account receivable /> Customers**, **Invoice and delivery** FastTab /> **ELECTRONIC INVOICES** field group)
 
 In the case of temporary export, you can set **Temporary export** option to **Yes** in a customer record (**Invoice and delivery** tab, inherited By default in sales order and Free text invoices).
 
