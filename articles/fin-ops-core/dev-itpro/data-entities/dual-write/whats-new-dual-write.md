@@ -24,8 +24,8 @@ The March 2022 release of the [Dual-write Supply Chain solution](https://appsour
 
 | Feature | Description |Status |
 |---|---|---|
-| Bug fix | CE quotations with write-in product lines can't generate an order because the sales product category isn't mapped. <!-- KFM: Spell out "CE".--> | <!-- KFM: Provide status (General availability?) --> |
-| Bug fix | The ISO currency code for quotes isn't properly set after a revision. | <!-- KFM: Provide status (General availability?) --> |
+| Bug fix | Customer Engagement quotations with write-in product lines can't generate an order because the sales product category isn't mapped. | General availability |
+| Bug fix | The ISO currency code for quotes isn't properly set after a revision. | General availability |
 
 ### Solution details
 
