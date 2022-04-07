@@ -24,36 +24,34 @@ This topic provides general troubleshooting information for dual-write integrati
 
 ## <a id="enable-view-trace"></a>Enable and view the plug-in trace log in Dataverse to view error details
 
-Trace logs can be useful when troubleshooting dual write live sync issues between Finance & Operations and Dataverse. 
-They can provide specific details to the teams who provide technical and engineering support for Dynamics 365. 
-This article will cover how to enable trace logs, and how to view them. Trace logs are managed in the Dynamics 365 Settings 
+Trace logs can be useful when troubleshooting dual-write live sync issues between Finance & Operations and Dataverse. 
+The logs can provide specific details to the teams who provide technical and engineering support for Dynamics 365. 
+This article covers how to enable trace logs and how to view them. Trace logs are managed in the Dynamics 365 Settings 
 page and require administrator level privileges to change and view. 
 
 **Required role to turn on the trace log and view errors:** System admin
 
-### To turn on the trace log, follow these steps.
+### Turn on the trace log
 
-1.	Log on to Dynamics 365 select Settings in the top navigation bar. On the Systems page, click Administration.
-2.	On the Administration page, click System Settings
-3.	Select the Customization tab and plug-in and in the custom work flow activity tracing section, change the dropdown to All. 
+1.	Log on to Dynamics 365, and then select **Settings** in the top navigation bar. On the Systems page, click **Administration**.
+2.	On the Administration page, click **System Settings**.
+3.	Select the **Customization** tab and plug-in, and then in the custom work flow activity tracing section change the dropdown to **All**. 
 This will trace all activities and provides a comprehensive set of data for the teams who must review potential issues.
 
-[!NOTE] Setting the dropdown to Exception will only provide trace information when exceptions (errors) occur
+[!NOTE] Setting the dropdown to **Exception** will only provide trace information when exceptions (errors) occur.
 
-Once enabled, the plug-in trace logs will continue to be collected until they are manually turned off by returning to this location and selecting Off.
+Once enabled, the plug-in trace logs will continue to be collected until they are manually turned off by returning to this location and selecting **Off**.
 
-### To view the trace log, follow these steps.
+### View the trace log
 
-1. On the Dynamics 365 Settings page, select Settings in the top navigation bar 
-2. Select Plugin Trace Log in the Customizations section of the page
-3. You can find entries in the list of trace logs, based on Type Name and/or Message Name
+1. On the Dynamics 365 Settings page, select **Settings** in the top navigation bar. 
+2. Select **Plugin Trace Log** in the **Customizations** section of the page.
+3. You can find entries in the list of trace logs, based on Type Name and/or Message Name.
 4. Open the desired entry to view the full log. The Message Block in the Execution section will provide available information for the plug-in. 
 If available, exception details will also be provided. 
 
 You can copy the contents of the trace logs and paste them into another application like Notepad or other tools to view logs or text files 
 to more easily see all the content. 
-
-
 
 ## Enable debug mode to troubleshoot live synchronization issues in Finance and Operations apps
 
@@ -82,8 +80,8 @@ Dual-write errors that originate in Dataverse can appear in the Finance and Oper
 7. Review the list of recent errors.
 
 ## Dual write UI landing page showing blank
-When opening the Dual-write page in Edge/Chrome, the home page doesn't load, and the user sees a blank page or an error such as "Something went wrong".
-In Devtools, you will see an error in the console logs:
+When opening the dual-write page in the Microsoft Edge or Google Chrome browser, the home page doesn't load, and you see a blank page or an error such as "Something went wrong".
+In Devtools, you see an error in the console logs:
 
 >bundle.eed39124e62c58ef34d2.js:37 DOMException: Failed to read the 'sessionStorage' property from 'Window': 
 >Access is denied for this document. at t.storeInSessionStorage 
@@ -102,27 +100,25 @@ The UI uses browser 'session storage' to store some property values for loading 
 third-party cookies need to be allowed in the browser for the site. The error is indicative of the UI not 
 being able to access the session storage. There can be two scenarios in which this issue is encountered:
 
-1.	The user is opening the UI in incognito mode of Edge/Chrome and third-party cookies in incognito are blocked.
-2.	The user has blocked third-party cookies altogether in Edge/Chrome .
+1.	You are opening the UI in incognito mode of Edge/Chrome and third-party cookies in incognito are blocked.
+2.	You have blocked third-party cookies altogether in Edge/Chrome.
 
 ### Mitigation
-Third-party cookies need to be allowed by the user in browser settings.
+Third-party cookies need to be allowed in browser settings.
 
 ### Chrome
 1st Option:
-1.	Go to settings - chrome://settings/ -> Privacy and Security -> Cookies and other site data.
-2.	Select 'Allow all cookies'. (If the user does not wish to do this, go for the second option)
+1.	Go to settings by entering chrome://settings/ in the address bar, and then navigate to Privacy and Security -> Cookies and other site data.
+2.	Select 'Allow all cookies'. If you do not wish to do this, go for the second option.
 
 2nd Option:
-1.	Go to Chrome settings - chrome://settings/ -> Privacy and Security -> Cookies and other site data.
-2.	If 'Block third-party cookies in Incognito' or 'Block third-party cookies' is selected, go to 'Sites that can always use cookies’ and click Add. 
-3.	Add your Finance and Operations apps site name - https://<your_FinOp_instance>.cloudax.dynamics.com. Make sure you select the checkbox 
-4.	for "All cookies, on this site only". 
+1.	Go to settings by entering chrome://settings/ in the address bar, and then navigate to Privacy and Security -> Cookies and other site data.
+2.	If 'Block third-party cookies in Incognito' or 'Block third-party cookies' is selected, go to 'Sites that can always use cookies’ and click **Add**. 
+3.	Add your Finance & Operations apps site name - https://<your_FinOp_instance>.cloudax.dynamics.com. Make sure you select the checkbox for "All cookies, on this site only". 
 
 ### Edge
-1.	Go to settings -> Site permissions -> Cookies and site data.
+1.	Navigate to Settings -> Site permissions -> Cookies and site data.
 2.	Turn off 'Block third-party cookies'.  
-
 
 ## Unlink and link another Dataverse environment from a Finance and Operations app
 
