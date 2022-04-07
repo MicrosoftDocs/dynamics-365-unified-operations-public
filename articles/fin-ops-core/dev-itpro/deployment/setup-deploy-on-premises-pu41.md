@@ -379,11 +379,11 @@ Microsoft has provided several scripts to help improve the setup experience. Fol
 3. Select **Model** as the asset type, and then, in the grid, select the row for **Microsoft Dynamics 365 Finance + Operations (on-premises), Deployment scripts**.
 4. Select **Versions**, and download the latest version of the zip file for the scripts.
 5. After the zip file is downloaded, select and hold (or right-click) it, and then select **Properties**. In the **Properties** dialog box, select the **Unblock** checkbox.
-6. Create a fileshare and copy the zip file into it.
+6. Create a file share, and copy the zip file into it.
 7. Unzip the files into a folder that is named **infrastructure**.
 
 > [!IMPORTANT]
-> It is important to place the **Infrastructure** folder in a fileshare as that will allow execution of the scripts on any machine without having to copy the folder to each machine. 
+> It's important that you put the **Infrastructure** folder in a file share. In this way, the scripts can be run on any machine without requiring that the folder be copied to each machine. 
 > Make sure that all edits are made to the ConfigTemplate.xml file in this folder.
 
 ### <a name="describeconfig"></a>Step 7. Describe your configuration
@@ -427,7 +427,7 @@ For each database, the infrastructure\\D365FO-OP\\DatabaseTopologyDefinition.xml
 
 #### Create gMSA and domain user accounts
 
-1. Open Windows PowerShell in elevated mode, change the directory to the **Infrastructure** folder located in your fileshare, and run the following commands.
+1. Open Windows PowerShell in elevated mode, change the directory to the **Infrastructure** folder in your file share, and run the following commands.
 
     > [!IMPORTANT]
     > These commands don't create an AxServiceUser domain user for you. You must create it yourself.
@@ -436,7 +436,7 @@ For each database, the infrastructure\\D365FO-OP\\DatabaseTopologyDefinition.xml
     .\Create-GMSAAccounts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-1. If you must make changes to accounts or machines, update the **ConfigTemplate.xml** file in the **Infrastructure** folder in your fileshare, and then run the following command.
+1. If you must make changes to accounts or machines, update the **ConfigTemplate.xml** file in the **Infrastructure** folder in your file share, and then run the following command.
 
     ```powershell
     .\Create-GMSAAccounts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Update
@@ -502,12 +502,12 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
     > Make sure that Always-On is set up as described in [Select Initial Data Synchronization Page (Always On Availability Group Wizards)](/sql/database-engine/availability-groups/windows/select-initial-data-synchronization-page-always-on-availability-group-wizards), and follow the instructions in [To Prepare Secondary Databases Manually](/sql/database-engine/availability-groups/windows/select-initial-data-synchronization-page-always-on-availability-group-wizards#PrepareSecondaryDbs).
 
 2. Run the SQL service as either a domain user or a gMSA.
-3. Fill in the SQL cluster configuration in the **ConfigTemplate.xml** file. If creating a SQL cluster, specify the name of each machine along with the listener name of your availability group. If you are not creating a cluster, and instead are creating a single instance, only fill out the name of the machine and leave the listener name blank. If you do not want the scripts to generate a certificate for your SQL cluster/instance, set the disabled property to **true** for the certificate of type **SQLCert**.
+3. In the **ConfigTemplate.xml** file, fill in the SQL cluster configuration. If you're creating a SQL cluster, specify the name of each machine together with the listener name of your availability group. If you're creating a single instance instead of a cluster, specify the name of the machine, but leave the listener name blank. If you don't want the scripts to generate a certificate for your SQL cluster/instance, set the **disabled** property to **true** for the certificate of the **SQLCert** type.
 
 ### <a name="configurecert"></a>Step 10. Configure certificates
 
-1. Go to a machine that has Remote Server Administration Tools installed or to your domain controller.
-1. Open up PowerShell and navigate to the fileshare containing your **Infrastructure** folder.  
+1. Go to a machine where Remote Server Administration Tools are installed, or go to your domain controller.
+1. Open PowerShell, and navigate to the file share that contains your **Infrastructure** folder.  
 1. Generate certificates:
 
     1. If you must generate certificates, run the following commands. These commands create the certificate templates in AD CS, generate the certificates from the templates, put the certificates in the **LocalMachine\\My** certificate store on the machine, and update the thumbprints in the XML file.
@@ -520,9 +520,9 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
         .\New-ADCSCertificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
         ```
 
-    1. If you need to reuse any certificate and therefore don't have to generate the certificate, set the **generateADCSCert** tag to **false** in the **ConfigTemplate.xml** file.
+    1. If you must reuse any certificate and therefore don't have to generate the certificate, set the **generateADCSCert** tag to **false** in the **ConfigTemplate.xml** file.
 
-3. If you're using SSL certificates that were previously generated, skip certificate generation and update the thumbprints in the **ConfigTemplate.xml** file. The certificates can be installed in the **CurrentUser\\My** or **LocalMachine\\My** certificate stores. Additionally, their private keys must be exportable.
+3. If you're using SSL certificates that were previously generated, skip certificate generation, and update the thumbprints in the **ConfigTemplate.xml** file. The certificates can be installed in the **CurrentUser\\My** or **LocalMachine\\My** certificate stores. Additionally, their private keys must be exportable.
 
     > [!WARNING]
     > Because of a leading non-printable special character, the presence of which is difficult to determine, the Certificate Manager tool (certlm.msc) should not be used to copy thumbprints on Windows Server 2016. If the non-printable special character is present, you will receive the following error message: "X509 certificate not valid." To retrieve the thumbprints, see the results from Windows PowerShell commands, or run the following commands in Windows PowerShell.
@@ -564,7 +564,7 @@ You can configure more than one SSRS node. For more information, see [Configurin
 
 1. For each BI node, follow these steps:
 
-    1. Open Windows PowerShell in elevated mode, and navigate to the **Infrastructure** folder in your fileshare.
+    1. Open Windows PowerShell in elevated mode, and navigate to the **Infrastructure** folder in your file share.
     1. Run the following commands.
 
         ```powershell
@@ -590,14 +590,14 @@ You can configure more than one SSRS node. For more information, see [Configurin
 
 ### <a name="setupvms"></a>Step 13. Set up VMs
 
-1.  Open Windows PowerShell in elevated mode, and navigate to the **Infrastructure** folder in your fileshare.
+1.  Open Windows PowerShell in elevated mode, and navigate to the **Infrastructure** folder in your file share.
 
     ```powershell
     # Exports the script files to be executed on each VM into a directory VMs\<VMName>.
     .\Export-Scripts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-2. Download the following Microsoft Windows Installers (MSIs) into a file share that is accessible by all VMs. For example, the same file share where you placed your **Infrastructure** folder.
+2. Download the following Microsoft Windows Installers (MSIs) into a file share that can be accessed by all VMs. For example, use the same file share where you put your **Infrastructure** folder.
 
     | Component | Download link | Expected file name |
     |-----------|---------------|--------------------|
@@ -739,14 +739,14 @@ Only user accounts that have the Global Administrator directory role can add cer
 
 ### <a name="configuresqlcert"></a>Step 16. Configure the SQL Server certificate
 
-Get an SSL certificate from a CA to configure SQL Server for Finance + Operations. By default an ADCS or self-signed certificate will have been generated by a previous step.
+Get an SSL certificate from a CA to configure SQL Server for Finance + Operations. By default, an AD CS or self-signed certificate was generated by a previous step.
 
 > [!NOTE]
-> If ordering the certificate from a public CA, ensure the Subject Alternative Name of the certificate matches the FQDN of each node/instance in the SQL availability group.
+> If you're ordering the certificate from a public CA, ensure that the Subject Alternative Name of the certificate matches the FQDN of each node/instance in the SQL availability group.
 
-**Deploying certificates for an Always-On SQL availability group or instance**
+#### Use a script to deploy certificates for an Always-On SQL availability group or instance
 
-This script automates the steps described in the manual process below. If not remoting, connect to a SQL machine and open Powershell with administrator privileges. Then, navigate to the **infrastructure** folder located in your fileshare and run the command below. Do these steps for each invididual node.
+The following script automates the steps of the manual process that is described in the next section. If you aren't using remoting, connect to a SQL machine, and open PowerShell with administrator privileges. Then navigate to the **infrastructure** folder in your file share, and run the following command. Complete these steps for each node.
 
 ```powershell
 # If Remoting, execute
@@ -755,7 +755,7 @@ This script automates the steps described in the manual process below. If not re
 .\Configure-SQLCert.ps1 -PfxCertificatePath ".\Certs\SQL1.contoso.com"
 ```
 
-You can verify that everything has been configured correctly by executing the following command.
+You can verify that everything has been configured correctly by running the following command.
 
 ```powershell
 # If Remoting, execute
@@ -764,13 +764,13 @@ You can verify that everything has been configured correctly by executing the fo
 .\Configure-SQLCert.ps1 -PfxCertificatePath ".\Certs\SQL1.contoso.com" -Test
 ```
 
-**Manual steps to configure the certificate for an Always-On SQL availability group or instance** 
+#### Manually configure the certificate for an Always-On SQL availability group or instance
 
-1. In the infrastructurescripts folder you will find a folder named **Certs**. Inside you will find a .pfx file with your certificate.
+1. The **infrastructurescripts** folder should include a folder that is named **Certs**. In this folder, find the .pfx file that has your certificate.
 
-1. For each node of the SQL cluster, follow these steps. 
+1. For each node of the SQL cluster, follow these steps:
 
-    1. Copy the generated .pfx file into the node and import the certificate into the LocalMachine store.
+    1. Copy the generated .pfx file to the node, and import the certificate into the **LocalMachine** store.
 
     1. Grant certificate permissions to the account that is used to run the SQL service:
 
@@ -787,7 +787,7 @@ You can verify that everything has been configured correctly by executing the fo
 
     1. Restart the SQL service.
 
-1. If you used self-signed certifictes, export the certificate (.cer file), and install it in the trusted root of each Service Fabric node. You will only have a single certificate for all the nodes in your SQL cluster.
+1. If you used self-signed certificates, export the certificate (.cer file), and install it in the trusted root of each Service Fabric node. You will have only one certificate for all the nodes in your SQL cluster.
 
 > [!NOTE] 
 > For more information, see [How to enable SSL encryption for an instance of SQL Server by using Microsoft Management Console](https://support.microsoft.com/help/316898/how-to-enable-ssl-encryption-for-an-instance-of-sql-server-by-using-microsoft-management-console).
@@ -822,7 +822,7 @@ You can verify that everything has been configured correctly by executing the fo
     > - The user who is running the SQL service and the user who is running the scripts should have **Read** access on the folder or share where the backup file is located.
     > - If an existing database already has the same name, it won't be overwritten.
 
-1. Connect to a machine in your SQL cluster. Then open Windows PowerShell in elevated mode, and navigate to the **Infrastructure** folder located in your fileshare.
+1. Connect to a machine in your SQL cluster. Then open Windows PowerShell in elevated mode, and navigate to the **Infrastructure** folder in your file share.
 
 #### Configure the OrchestratorData database
 
@@ -968,7 +968,7 @@ For more information about how to use the script, see the documentation that is 
 > [!NOTE]
 > If you want to reuse your previously configured AD FS server for additional environments, see [Reuse the same AD FS instance for multiple environments](./onprem-reuseadfs.md).
 
-Connect to a server hosting your AD FS instance/farm and open Powershell with administrator privileges and navigate to the **Infrastructure** folder in your fileshare. Then execute the following command.
+Connect to a server that is hosting your AD FS instance/farm, open PowerShell with administrator privileges, and navigate to the **Infrastructure** folder in your file share. Then run the following command.
 
 ```powershell
 # Host URL is your DNS record\host name for accessing the AOS
