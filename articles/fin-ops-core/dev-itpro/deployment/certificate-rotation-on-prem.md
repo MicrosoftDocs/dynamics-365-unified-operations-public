@@ -45,7 +45,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 
 1. Rename the original **Infrastructure** folder that you created during the process to [Download setup scripts from LCS](setup-deploy-on-premises-pu41.md#downloadscripts). Rename the folder to **InfrastructureOld**.
 
-2. Download the latest setup scripts from [Download setup scripts from LCS](setup-deploy-on-premises-pu41.md#downloadscripts). Unzip the files into a file share that can be accessed by all machines in the cluster. Name the folder **Infrastructure**.
+2. Download the latest setup scripts from [Download setup scripts from LCS](setup-deploy-on-premises-pu41.md#downloadscripts). Unzip the files into a fileshare that can be accessed by all machines in the cluster. Name the folder **Infrastructure**.
 
     > [!NOTE]
     > As of version 2.14.0, each version of the scripts will have its own entry in the Shared asset library.
