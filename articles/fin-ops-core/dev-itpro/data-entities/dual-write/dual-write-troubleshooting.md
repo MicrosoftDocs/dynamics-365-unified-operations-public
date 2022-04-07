@@ -2,7 +2,7 @@
 title: General troubleshooting
 description: This topic provides general troubleshooting information for dual-write integration between Finance and Operations apps and Dataverse.
 author: RamaKrishnamoorthy 
-ms.date: 03/16/2020
+ms.date: 04/07/2020
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
@@ -32,17 +32,20 @@ page and require administrator level privileges to change and view.
 **Required role to turn on the trace log and view errors:** System admin
 
 ### Turn on the trace log
+To turn on the trace log, follow these steps.
 
 1.	Log on to Dynamics 365, and then select **Settings** in the top navigation bar. On the Systems page, click **Administration**.
 2.	On the Administration page, click **System Settings**.
 3.	Select the **Customization** tab and plug-in, and then in the custom work flow activity tracing section change the dropdown to **All**. 
 This will trace all activities and provides a comprehensive set of data for the teams who must review potential issues.
 
-[!NOTE] Setting the dropdown to **Exception** will only provide trace information when exceptions (errors) occur.
+> [!NOTE]
+> Setting the dropdown to **Exception** will only provide trace information when exceptions (errors) occur.
 
 Once enabled, the plug-in trace logs will continue to be collected until they are manually turned off by returning to this location and selecting **Off**.
 
 ### View the trace log
+To view the trace log, follow these steps.
 
 1. On the Dynamics 365 Settings page, select **Settings** in the top navigation bar. 
 2. Select **Plugin Trace Log** in the **Customizations** section of the page.
@@ -106,7 +109,7 @@ being able to access the session storage. There can be two scenarios in which th
 ### Mitigation
 Third-party cookies need to be allowed in browser settings.
 
-### Chrome
+### Google Chrome browser
 1st Option:
 1.	Go to settings by entering chrome://settings/ in the address bar, and then navigate to Privacy and Security -> Cookies and other site data.
 2.	Select 'Allow all cookies'. If you do not wish to do this, go for the second option.
@@ -116,7 +119,7 @@ Third-party cookies need to be allowed in browser settings.
 2.	If 'Block third-party cookies in Incognito' or 'Block third-party cookies' is selected, go to 'Sites that can always use cookies’ and click **Add**. 
 3.	Add your Finance & Operations apps site name - https://<your_FinOp_instance>.cloudax.dynamics.com. Make sure you select the checkbox for "All cookies, on this site only". 
 
-### Edge
+### Microsoft Edge browser
 1.	Navigate to Settings -> Site permissions -> Cookies and site data.
 2.	Turn off 'Block third-party cookies'.  
 
@@ -147,14 +150,14 @@ To re-enable the **Information** form option, follow these steps:
 
 The support team might need to review network traces to troubleshoot some issues. To create a network track, follow these steps:
 
-### Chrome
+### Google Chrome browser
 
 1. In the opened tab, press **F12** or choose **Developer tools** to open the developer tools.
 2. Open the **Network** tab and type **integ** in the filter text box.
 3. Run your scenario and observe the requests being logged.
 4. Right-click on the entries and select **Save all as a HAR with content**.
 
-### Microsoft Edge
+### Microsoft Edge browser
 
 1. In the opened tab, press **F12** or choose **Developer tools** to open the developer tools.
 2. Open the **Network** tab.
