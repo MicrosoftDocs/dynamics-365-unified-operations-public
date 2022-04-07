@@ -166,25 +166,21 @@ In the following example illustration, the **Adventure Works online store (defau
 
 ![Add languages to a site](media/channel-mapping-11.png)
 
-### Enable the site picker
+### Add and configure the site picker module
 
-Once you have configured a site to have multiple languages and or channels, you may want to add a language selector to the site page header for users to manually select their language or country. The module library [header module](author-header-module.md) has built-in support for users to select a language using the [site picker module](site-selector.md). The site picker can be added within the header fragment that contains the header module. 
+Once you have configured a site to have multiple languages and or channels, you may want to add a language selector to the site page header for users to manually select their language or country. The module library [header module](author-header-module.md) has built-in support for users to select a language using the [site picker module](site-selector.md). The site picker module can be added to the header module within the header fragment. 
 
-as shown in the following example illustration. 
+For more information on adding and configuring the site picker module, see [Site picker module](site-selector.md).
 
-To add the site picker, follow these steps.
+### Implement page variants for each language
 
-In the **Site Picker** slot of the header module, add a **Site picker** module and then select **Add site options list** from the site picker properties pane to add a new language. You can then specify that will be shown in the site r drop-down list and the URL with the path you created when adding the channel to the site (for example, `www.adventure-works.com/fr-ca`).
+You can change how a page appears based on the selected language by creating a page variant for it. In site builder, selecting the link at the top right that shows the current channel and language will bring up a channel and language picker. 
 
-![Set up site selector on header](media/channel-mapping-12.png)
+In this scenario there is only one channel but multiple languages. 
 
-Once the site selector is saved and published in the header you should see a drop-down list on the e-commerce site as shown in the below example.
+If you want to override the page for this language, just change it and you will be prompted to create a variant of the page if one does not exist or you will see the variant and can now make edits to that variant. 
 
-![Example of a site selector drop-down list](media/channel-mapping-13.png)
-
-### Implement page variants per each language
-
-Site builder supports the ability to change how a page looks based on the selected language by creating a page variant for it. From within site builder, there is a link at the top right that shows the current channel and language, selecting it will bring up a channel and language picker.  In this scenario there is only one channel but multiple languages.  If you want to override the page for this language, just change it and you will be prompted to create a variant of the page if one does not exist or you will see the variant and can now make edits to that variant.  If no variant is created the original page will render and show the appropriate language for module strings and product information pulled from HQ, however if text was provided directly in the default page modules like a page title or other marketing information that will remain in the original language, creating a page variant will allow you to add localized content.  Pages can also be exported as xliff files to be localized and the variants can then be imported.
+If no variant is created the original page will render and show the appropriate language for module strings and product information pulled from headquarters, however if text was provided directly in the default page modules like a page title or other marketing information that will remain in the original language, creating a page variant will allow you to add localized content. Pages can also be exported as xliff files to be localized and the variants can then be imported.
 
 ![Change language for a page in site builder](media/channel-mapping-14.png)
 
@@ -208,7 +204,7 @@ An alternative to manually creating each page and fragment is to export each pag
 
 Adding additional channels to an e-commerce site can be done in site builder under the **Site settings**, **Channels** tab with the **Add a channel** button as shown in the following example illustration, where the online channel and default locale can be selected.  
 
-![Adding a channel to an existing site](media/channel-mapping-15.png)
+![Add a channel to an existing site](media/channel-mapping-15.png)
 
 ## Additional resources
 
