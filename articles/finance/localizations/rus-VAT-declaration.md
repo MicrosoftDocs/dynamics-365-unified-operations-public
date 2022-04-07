@@ -293,7 +293,7 @@ Sections for export are generated based on the registration of export factures a
 
 **Example**
 
-- **January .:** Products are purchased, and two documents are received: Invoice V1 and Facture1.
+- **January 2022:** Products are purchased, and two documents are received: Invoice V1 and Facture1.
 
     - Invoice V1/Facture1: 10 pieces for a total amount of 118,000 Russian rubles (RUB). This amount includes 18-percent VAT (18,000 RUB).
 
