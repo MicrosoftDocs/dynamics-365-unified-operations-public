@@ -2,9 +2,9 @@
 # required metadata
 
 title: Choose between Store Commerce and Cloud POS
-description: This topic explains the key differences between Modern POS and Cloud POS. It also describes various factors that retailers implementing Dynamics 365 Commerce should consider to help them make the best choice for their requirements.
+description: This topic explains the key differences between Store Commerce and Cloud POS and also describes various factors that retailers implementing Dynamics 365 Commerce should consider to help them make the best choice for their requirements.
 author:  jblucher 
-ms.date: 10/13/2017
+ms.date: 04/07/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-This topic gives implementers additional background, tips, and guidance for factors that they should consider when they deploy Dynamics 365 Commerce. By reviewing and following this guidance as part of the deployment process, implementers can avoid issues that might affect user satisfaction or performance.
+This topic explains the key differences between Store Commerce and Cloud POS and also describes various factors that retailers implementing Dynamics 365 Commerce should consider to help them make the best choice for their requirements. This topic also gives implementers with additional background, tips, and guidance for factors that they should consider when deploying Dynamics 365 Commerce. By reviewing and following this guidance as part of the deployment process, implementers can avoid issues that might affect user satisfaction or performance.
 
 ## Insights
 
@@ -60,7 +60,7 @@ Although Store Commerce and CPOS are largely the same, there are some important 
 
 Store Commerce on a Windows is a desktop application, installed and serviced on that device.
 
-- **Windows** – The Store Commerce for Windows application contains all the application code, Commerce Runtime (CRT) and Hardware Station (HWS).
+- **Windows** – The Store Commerce for Windows application contains all the application code, Commerce Runtime (CRT), and Hardware Station (HWS).
 - **iOS/Android** – On these platforms, the application acts as a host for the CPOS application code. In other words, the application code comes from the CPOS server hosted on Commerce Scale Unit. For more information, see [Commerce Scale Unit overview](dev-itpro/retail-store-system-begin.md).
 
 #### CPOS
