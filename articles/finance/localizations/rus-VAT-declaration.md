@@ -37,8 +37,8 @@ To start to work with the VAT declaration, follow these steps.
 
     - **VAT declaration model (RU)**
     - **VAT declaration model mapping (RU)**
-    - **VAT declaration format 5.05** – This configuration is required in order to generate the VAT declaration for the year 2018 reporting period.
-    - **VAT declaration format 5.06** – This configuration is required in order to generate the VAT declaration for the year 2019 reporting period.
+    - **VAT declaration format 5.08** – This configuration is required in order to generate the VAT declaration for the year 2021 reporting period.
+    - **VAT declaration format 5.09** – This configuration is required in order to generate the VAT declaration for the year 2022 reporting period.
 
     For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
@@ -46,27 +46,27 @@ To start to work with the VAT declaration, follow these steps.
 
     The data package contains the following items:
 
-    - Financial reports and financial report cells for the 2018 and 2019 VAT declarations
-    - Electronic message settings that are used to generate VAT declarations in electronic formats 5.05 and 5.06
+    - Financial reports and financial report cells for the 2021 and 2022 VAT declarations
+    - Electronic message settings that are used to generate VAT declarations in electronic formats 5.08 and 5.09
 
     Follow these steps:
 
-    1. In the LCS Shared asset library, select **Data package** as the asset type. Download the package that is named **VAT declaration v.5.05 v.5.06 package**. The file that is downloaded is named **VAT declaration v.5.05 v.5.06 package.zip**.
+    1. In the LCS Shared asset library, select **Data package** as the asset type. Download the package that is named **VAT declaration v.5.08 v.5.09 package**. The file that is downloaded is named **VAT declaration v.5.08 v.5.09 package.zip**.
     2. In the **Data management** workspace, select **Import**.
     3. In the **Job details** section, set the following values:
 
         - In the **Name** field, enter any name for the job.
         - In the **Data source format** field, select **Package**.
 
-    4. In the **Upload data file** field, select **Upload**, and then select the **VAT declaration v.5.05 v.5.06 package.zip** file that you downloaded earlier.
+    4. In the **Upload data file** field, select **Upload**, and then select the **VAT declaration v.5.08 v.5.09 package.zip** file that you downloaded earlier.
     5. After the data entities are uploaded, select **Import**.
 
 3. In Finance, go to **General ledger \> Financial reports setup \> Financial reports**, and validate the financial reports that you imported. (All the data that was imported is presented only in the Russian language.)
 
     | Report | Report code | Description |
     |---|---|---|
-    | VAT declaration 2018 | НДС 2018 | Декларация по налогу на добавленную стоимость (2018) |
-    | VAT declaration 2019 | НДС 2019 | Декларация по налогу на добавленную стоимость (2019) |
+    | VAT declaration 2021 | НДС 2021 | Декларация по налогу на добавленную стоимость (2021) |
+    | VAT declaration 2022 | НДС 2022 | Декларация по налогу на добавленную стоимость (2022) |
 
 4. Select the line for the **НДС 2019** report code, and then, on the Action Pane, select **Setup**.
 5. On the **Requisites setup** page, sort the financial report cells by the **Description** column. Then review the list of the financial report cells.
@@ -81,22 +81,22 @@ To start to work with the VAT declaration, follow these steps.
 
     | Processing | Processing code | Description |
     |---|---|---|
-    | VAT declaration 2018 | НДС 5.05 (2018) | Декларация по налогу на добавленную стоимость (2018) |
-    | VAT declaration 2019 | НДС 5.06 (2019) | Декларация по налогу на добавленную стоимость (2019) |
+    | VAT declaration 2021 | НДС 5.08 (2021) | Декларация по налогу на добавленную стоимость (2021) |
+    | VAT declaration 2022 | НДС 5.09 (2022) | Декларация по налогу на добавленную стоимость (2022) |
 
 8. Follow these steps to set up the ER format that is run when the VAT declaration is generated in electronic format:
 
     1. Go to **Tax \> Setup \> Electronic messages \> Message processing actions**.
-    2. Select the **Generate NDS 5.05** action, and then select **Edit**.
+    2. Select the **Generate NDS 5.08** action, and then select **Edit**.
     3. Set the **Show dialog** option to **Yes**.
-    4. In the **Format mapping** field, select the **VAT declaration format 5.05** ER configuration that you downloaded earlier.
-    5. Select the **Generate NDS 5.06** action, and then select **Edit**. 
+    4. In the **Format mapping** field, select the **VAT declaration format 5.08** ER configuration that you downloaded earlier.
+    5. Select the **Generate NDS 5.09** action, and then select **Edit**. 
     6. Set the **Show dialog** option to **Yes**.
-    7. In the **Format mapping** field, select the **VAT declaration format 5.06** ER configuration that you downloaded earlier.
+    7. In the **Format mapping** field, select the **VAT declaration format 5.09** ER configuration that you downloaded earlier.
 
-## Russian VAT declaration versions 5.05 and 5.06 in XML format
+## Russian VAT declaration versions 5.08 and 5.09 in XML format
 
-In the **Electronic reporting** module, you can review versions 5.05 and 5.06 of the Russian VAT declaration in XML format. The VAT declaration contains the following information:
+In the **Electronic reporting** module, you can review versions 5.08 and 5.09 of the Russian VAT declaration in XML format. The VAT declaration contains the following information:
 
 - **Section 1** – The total VAT amount that must be paid to budget or reclaimed. This section contains cumulative amounts from sections 3 through 7.
 - **Section 2** – The VAT amount that must be paid to budget by the tax agent.
@@ -147,8 +147,8 @@ Section 3 of the VAT declaration contains the amounts of the registered factures
 | 010 | 4 | Transfer of goods, services and property rights | РеалТов20/СумНал | The VAT amount of outgoing customer invoices that have VAT at 20 percent, except for invoices to foreign customers | New tax rate for 2019 reporting |
 | 020 | 3 | Transfer of goods, services and property rights | РеалТов10/НалБаза | The tax base of outgoing customer invoices that have VAT at 10 percent, except for invoices to foreign customers | |
 | 020 | 4 | Transfer of goods, services and property rights | РеалТов10/СумНал | The VAT amount of outgoing customer invoices that have VAT at 10 percent, except for invoices to foreign customers | |
-| 041 | 3 | Transfer of goods, services and property rights | РеалТов18/НалБаза | The tax base of outgoing customer invoices that have VAT at 18 percent, except for invoices to foreign customers | Tax rate for documents up to the end of 2018 |
-| 041 | 4 | Transfer of goods, services and property rights | РеалТов18/СумНал | The VAT amount of outgoing customer invoices that have VAT at 18 percent, except for invoices to foreign customers | Tax rate for documents up to the end of 2018 |
+| 041 | 3 | Transfer of goods, services and property rights | РеалТов18/НалБаза | The tax base of outgoing customer invoices that have VAT at 18 percent, except for invoices to foreign customers | Tax rate for documents up to the end of 2022 |
+| 041 | 4 | Transfer of goods, services and property rights | РеалТов18/СумНал | The VAT amount of outgoing customer invoices that have VAT at 18 percent, except for invoices to foreign customers | Tax rate for documents up to the end of 2022 |
 | 043 | 3 | Transfer of goods, services and property rights as per the point 7 of article 164 | РеалТов7.164/НалБаза | The tax base of outgoing customer invoices to foreign customers that have VAT at a non-zero percentage | New line for 2019 reporting |
 | 043 | 4 | Transfer of goods, services and property rights | РеалТов7.164/СумНал | The VAT amount of outgoing customer invoices to foreign customers that have VAT at a non-zero percentage | New line for 2019 reporting |
 | 070 | 3 | Prepayments or partial payments received from customers for future shipments | ОплПредПост/НалБаза | The tax base of factures on prepayments that were received from customers for future shipments | |
@@ -172,7 +172,7 @@ In section 3, you can also get the amounts of the financial report that is set u
 
 You should set up the financial report and financial report cells to calculate the values of the cells. For more information, see [Financial reporting (Russia)](rus-financial-reports.md).
 
-You should define the following names for financial report cells. In this way, the calculated amounts will be automatically exported to section 3 of VAT declaration version 5.06.
+You should define the following names for financial report cells. In this way, the calculated amounts will be automatically exported to section 3 of VAT declaration version 5.09.
 
 **Tax payable**
 
@@ -182,8 +182,8 @@ You should define the following names for financial report cells. In this way, t
 | РеалТов20СумНал | 010-4\* | New tax rate for 2019 reporting |
 | РеалТов10НалБаза | 020-3\* | |
 | РеалТов10СумНал | 020-4\* | |
-| РеалТов18НалБаза | 041-3\* |Tax rate for documents up to the end of 2018 | 
-| РеалТов18СумНал | 041-4\* | Tax rate for documents up to the end of 2018 |
+| РеалТов18НалБаза | 041-3\* |Tax rate for documents up to the end of 2022 | 
+| РеалТов18СумНал | 041-4\* | Tax rate for documents up to the end of 2022 |
 | РеалТов118НалБаза | 042-3 | |
 | РеалТов118СумНал | 042-4 | |
 | РеалТов7.164НалБаза | 043-3\* | New line for 2019 reporting |
@@ -230,7 +230,7 @@ You should define the following names for financial report cells. In this way, t
 > [!NOTE]
 > Requisites that are marked with an asterisk (\*) in the preceding tables are automatically calculated based on registered documents, as described earlier in this topic. If you set up financial report calculation rules for the report cells for those requisites, the calculated amounts of the financial report will be added to the amounts that are automatically calculated. For information about how to replace the automatic calculation with the financial report cell calculation, see the [Customize section 3 of the VAT declaration](#customize-section-3-of-the-vat-declaration) section of this topic.
 
-The setup of the financial report for the VAT declaration from the **VAT declaration v.5.05 v.5.06 package.zip** data package in the LCS Shared asset library contains the required names of the cells.
+The setup of the financial report for the VAT declaration from the **VAT declaration v.5.08 v.5.09 package.zip** data package in the LCS Shared asset library contains the required names of the cells.
 
 ### Customize section 3 of the VAT declaration
 
@@ -293,33 +293,33 @@ Sections for export are generated based on the registration of export factures a
 
 **Example**
 
-- **January 2018:** Products are purchased, and two documents are received: Invoice V1 and Facture1.
+- **January .:** Products are purchased, and two documents are received: Invoice V1 and Facture1.
 
     - Invoice V1/Facture1: 10 pieces for a total amount of 118,000 Russian rubles (RUB). This amount includes 18-percent VAT (18,000 RUB).
 
-- **January 2018:** Incoming VAT is deducted for Facture1.
+- **January 2022:** Incoming VAT is deducted for Facture1.
 
     - 82,600 RUB, which includes 18-percent VAT (12,600 RUB)
 
     Note that the incoming facture includes only some of the goods that were purchased by using Invoice V1.
 
-- **April 2018:** Products are sold for export, at an exchange rate of 45 RUB to 1 US dollar (USD).
+- **April 2022:** Products are sold for export, at an exchange rate of 45 RUB to 1 US dollar (USD).
 
     - Invoice C1: 2 pieces at 600 USD = 27,000 RUB (The corresponding incoming VAT amount is 3,600 RUB.)
     - Invoice C2: 8 pieces at 2,400 USD = 108,000 RUB (The corresponding incoming VAT amount is 14,400 RUB.)
 
-    In this example, September 2018 is the deadline for collecting all the documents for confirmation of export at a rate of 0 percent.
+    In this example, September 2022 is the deadline for collecting all the documents for confirmation of export at a rate of 0 percent.
 
-- **August 2018:** The export for Invoice C1 is confirmed before the deadline.
-- **September 2018:** The export for Invoice C2 isn't confirmed before the deadline. Therefore, VAT for this invoice is calculated at the domestic VAT rate of 18 percent (108,000 × 18 percent = 19,440 RUB).
+- **August 2022:** The export for Invoice C1 is confirmed before the deadline.
+- **September 2022:** The export for Invoice C2 isn't confirmed before the deadline. Therefore, VAT for this invoice is calculated at the domestic VAT rate of 18 percent (108,000 × 18 percent = 19,440 RUB).
 
     The amount of the corresponding incoming VAT deduction for the unconfirmed export is 9,000 RUB.
 
-- **November 2018:** Facture2 is received for the remaining goods that were purchased by using Invoice V1. Therefore, the incoming VAT deduction for the remaining part of Invoice V1 is posted.
+- **November 2022:** Facture2 is received for the remaining goods that were purchased by using Invoice V1. Therefore, the incoming VAT deduction for the remaining part of Invoice V1 is posted.
 
     - 35,400 RUB, which includes 18-percent VAT (5,400 RUB) (This amount is for the goods that were purchased by using Invoice C2.)
 
-For this example, the VAT declaration for the third quarter of 2018 will contain sections 4 and 6. The VAT declaration for the fourth quarter of 2018 will contain section 5.
+For this example, the VAT declaration for the third quarter of 2022 will contain sections 4 and 6. The VAT declaration for the fourth quarter of 2022 will contain section 5.
 
 The following sections provide more details about this example.
 
@@ -342,7 +342,7 @@ If goods are returned, the following data is exported for corrections of amounts
 
 **Example**
 
-For the previous example, the following data will be present in section 4 of the VAT declaration for the third quarter of 2018.
+For the previous example, the following data will be present in section 4 of the VAT declaration for the third quarter of 2022.
 
 | Requisite | Line | Value |
 |---|---|---|
@@ -366,11 +366,11 @@ The following data is exported:
 
 **Example**
 
-For the earlier example, the following data will be present in section 5 of the VAT declaration for the fourth quarter of 2018.
+For the earlier example, the following data will be present in section 5 of the VAT declaration for the fourth quarter of 2022.
 
 | Requisite | Line | Value |
 |---|---|---|
-| Year when the corresponding export was declared | 010 | 2018 |
+| Year when the corresponding export was declared | 010 | 2022 |
 | Code for the reporting period when the corresponding export was declared | 020 | 23 (period code for the third quarter) |
 | VAT operation code | 030 | 1011410 |
 | Tax base from the purchase of items that are used in an unconfirmed export | 060 | 108,000 |
@@ -394,7 +394,7 @@ If goods are returned, the following data is exported for corrections of amounts
 - The VAT amount of the return of goods that is decreasing the VAT amount payable (line 090)
 - Adjustment: The VAT amount, from the purchase of items that are used in an export, that was previously deducted and must be restored for the return of goods (line 100)
 
-For the earlier example, the following data will be present in section 6 of the VAT declaration for the third quarter of 2018.
+For the earlier example, the following data will be present in section 6 of the VAT declaration for the third quarter of 2022.
 
 | Requisite | Line | Value |
 |---|---|---|
@@ -406,7 +406,7 @@ For the earlier example, the following data will be present in section 6 of the 
 ## Generate a VAT declaration in electronic format
 
 1. To generate VAT declaration files, go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic messages**.
-2. Select the format to generate the report in. For example, select **НДС 5.06 (2019)**.
+2. Select the format to generate the report in. For example, select **НДС 5.09 (2022)**.
 3. On the **Messages** FastTab, select **New**, and then, in the **Run processing** dialog box, select **OK**.
 4. Select the row for the message that was created. Enter a description, and specify the start and end dates for the report. The end date is treated as the base date for financial reports.
 5. Optional: On the **Message additional fields** FastTab, enter the following information.
@@ -434,6 +434,8 @@ For the earlier example, the following data will be present in section 6 of the 
     | Exclude storno in Books | Set this option to **Yes** if the report should exclude original and storno transactions that occur during the specified period. |
     | Criteria for intermediary deals factures inclusion into Factures journal | Select the criterion for including factures for intermediary deals in the facture journal:<ul><li>**Date of the registration** – The Issued factures journal contains all factures for intermediary deals, even if the factures haven't been confirmed with the principal. (The intermediary deal information for those factures might be empty.)</li></li>**Confirmation date** – The Issued factures journal contains only confirmed factures for intermediary deals. (The intermediary deal information for those factures is filled in with the factures that have been received from the principal.)</li></ul> |
     | Include factures into Facture journal by reporting date | Set this option to **Yes** to filter factures by reporting date instead of facture date. |
+    | The reason code for the tax reimbursement in the application procedure | If you use the application procedure for tax reimbursement, select the reason code for the tax reimbursement in the application procedure. Otherwise, leave the field blank. |
+    | The amount of tax claimed for reimbursement in the application procedure | If you use the application procedure for tax reimbursement, enter the amount of tax claimed for reimbursement. Otherwise, leave the field blank. |
 
 8. Select **OK**.
 
