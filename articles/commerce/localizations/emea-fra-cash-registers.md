@@ -372,7 +372,7 @@ In the Receipt format designer, add the following custom fields to the appropria
         > [!NOTE]
         > The certificate category and number that are assigned to **[Commerce](#certification-information)** are printed.
 
-    - **Text** – Add a text field, and specify the version of the software that was certified per the NF 525 certification requirements and that is used to produce receipts (for example, **Microsoft Dynamics 365 Finance v.10** or **Microsoft Dynamics 365 Commerce v.10**).
+    - **Text** – Add a text field, and specify the version of the software that was certified per the NF 525 certification requirements and that is used to produce receipts (for example, **Microsoft Dynamics 365 Commerce v.10**).
 
         > [!NOTE]
         > If you customize the POS application, and your customizations affect the compliance of the application, you might have to request a new certificate of compliance from an accredited body. In this case, you must override the certificate category and number, and specify a corresponding software version number. Otherwise, the default values for the certificate category and number will be printed.
