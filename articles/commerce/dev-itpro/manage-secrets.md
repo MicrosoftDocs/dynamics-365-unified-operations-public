@@ -4,7 +4,7 @@
 title: Manage secrets for retail channels
 description: This topic explains how to manage secrets when you're using an extension with channels that require access to secrets.
 author: AamirAllaq
-ms.date: 08/06/2020
+ms.date: 04/07/2022
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -62,7 +62,7 @@ To read the secret in the CRT extension, follow these steps.
 
 ### Cache the Key Vault in memory on CRT/RS
 
-Whenever a call is made to read the Key Vault secret value in CRT, CRT calls the HQ to get the value, which is a real time call to HQ and HQ will call the Azure Key Vault to get the values, since multiples hops in involved to read the value, this will increase the latency for the call. So, it's recommended to cache the Key Vault secret value in memory on CRT/RS side for better performance. If the value is changed frequently in the key Vault, then you need to decide the right strategy for the cache expiration based on your scenario.
+Whenever a call is made to read the Azure Key Vault secret value in CRT, CRT calls headquarters in real time to get the value and then headquarters calls the Azure Key Vault to get the value. Since multiples hops are involved to read the value this will increase the latency for the call, so it's recommended to cache the Azure Key Vault secret value in memory on the CRT/RS side for better performance. If the value is changed frequently in Azure Key Vault, then you need to decide the right strategy for the cache expiration based on your scenario.
 
 1. Create a new CRT extension project (C\# class library project type). Use the sample templates from the Retail software development kit (SDK) (**RetailSDK\\SampleExtensions\\CommerceRuntime**).
 2. In the CRT extension, you can create a new request/response, or you can add a pre-trigger or post-trigger for the existing CRT request, and then call it. In the following example, a trigger was added for **SaveCartRequest**. It calls **GetUserDefinedSecretStringValueServiceRequest** to read the secret by passing the secret key that is configured in Headquarters. You don't have to write custom code to read the secret from Headquarters. You can use the request and response to read the value.
@@ -130,7 +130,7 @@ Whenever a call is made to read the Key Vault secret value in CRT, CRT calls the
 
 ## Credential rotation
 
-When this approach is used for credential management, credential rotation is more streamlined. To update a secret, an IT admin just has to update the secret in Key Vault. No change is required to the extension. 
+When this approach is used for credential management, credential rotation is more streamlined. To update a secret, an IT administrator just has to update the secret in Azure Key Vault. No change is required to the extension. 
 
 ## Offline support
 
