@@ -4,7 +4,7 @@
 title: Test recorder and Regression suite automation tool for Cloud POS
 description: This topic explains how to automate user acceptance testing (UAT) by using the POS test recorder and the Regression suite automation tool (RSAT).
 author: mugunthanm
-ms.date: 08/10/2020
+ms.date: 04/07/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -316,8 +316,9 @@ In addition to a **Summary** tab, the Excel file includes a **Variables** tab th
 
 ### Pass variables between test cases
 
-To pass variables or values between POS test cases or between POS and HQ test cases or vice versa, select the test cases in the RSAT tool and open the Variables.xlsx file by selecting the Excel icon in the tool. Copy the Variable ID (Column C) value and paste it in the Variable value field (Column D). For example, to pass the Receipt ID from **Test case 1 - variable.xlsx** to **Test case 2 - variable.xlsx**, copy the variable ID value from column C: c8cc0571-9a27-b3c5-0749-c26c3cca6afe. Paste the value in the Variable value column D in to the test case 2 - variable.xlsx file, in braces: **{{ c8cc0571-9a27-b3c5-0749-c26c3cca6afe}}** .The test cases must be sequenced in the correct order to pass the variable value, and all test cases must run in the same instance.
+To pass variables or values between POS test cases or between POS and headquarters test cases (or vice versa), select the test cases in the RSAT tool and open the Variables.xlsx file by selecting the Excel symbol in the tool. Copy the **Variable ID** (Column C) value and paste it into the **Variable value** field (Column D). 
 
+Using the test cases in the following tables as examples, to pass the receipt ID from "Test case 1 - variable.xlsx" to "Test case 2 - variable.xlsx", copy the **C (Variable ID)** field value from "Test case 1 - variable.xlsx" (**c8cc0571-9a27-b3c5-0749-c26c3cca6afe**) and then paste the value into the **D (Variable value)** field of the "Test case 2 - variable.xlsx" file in braces: **{{c8cc0571-9a27-b3c5-0749-c26c3cca6afe}}**. The test cases must be sequenced in the correct order to pass the variable value, and all test cases must run in the same instance.
 
 ### Test case 1 – Variable.xlsx
 
