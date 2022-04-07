@@ -4,7 +4,7 @@
 title: Certificate rotation
 description: This topic explains how to place existing certificates and update the references within the environment to use the new certificates.
 author: PeterRFriis
-ms.date: 04/05/2022
+ms.date: 04/07/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
