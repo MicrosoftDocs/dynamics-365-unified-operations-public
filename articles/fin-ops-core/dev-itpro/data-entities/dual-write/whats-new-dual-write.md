@@ -24,7 +24,7 @@ The March 2022 release of the [Dual-write Supply Chain solution](https://appsour
 
 | Feature | Description |Status |
 |---|---|---|
-| Bug fix | In customer engagement apps, quotations with write-in product lines can't generate an order because the sales product category isn't mapped. | General availability |
+| Bug fix | In customer engagement apps, sales quotations with write-in product lines can't generate an order because the sales product category isn't mapped. | General availability |
 | Bug fix | The ISO currency code for quotes isn't properly set after a revision. | General availability |
 
 ### Solution details
