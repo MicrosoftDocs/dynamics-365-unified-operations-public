@@ -27,7 +27,7 @@ To create the extension installer for Store Commerce extension, follow these ste
 
 1. In Microsoft Visual Studio 2017, create a new console application (.NET Core), and name it **StoreCommerce.ExtInstaller**.
 1. In the **.proj** file, change the target framework to the .NET Framework version 4.6.1, as shown in the following XML example.
-    ```js
+    ```XML
             <Project Sdk="Microsoft.NET.Sdk">
                 <PropertyGroup>
                     <OutputType>Exe</OutputType>
@@ -47,21 +47,21 @@ To create the extension installer for Store Commerce extension, follow these ste
 1. Compile and build the project. The output of this project will contain the Store Commerce extension installer. When you press F5 and build the project, the installer will be automatically deployed. 
 1. To manually install the extension, open Windows PowerShell in administrator mode, go to the extension installer folder, and run the following install command.
 
-    ```sh
+    ```PowerShell
     PS C:\StoreCommerce.ExtInstaller\bin\Debug\net461> .\ StoreCommerce.ExtInstaller.exe install
     ```
     > [!NOTE]
     > Before you install the extension installer, install the Store Commerce app.
 1. To uninstall the extension, run the following uninstall command.
 
-    ```ps
+    ```PowerShell
     PS C:\StoreCommerce.ExtInstaller\bin\Debug\net461> .\ StoreCommerce.ExtInstaller.exe uninstall
     ```
 1. After you've finished installing the extension, close Store Commerce if it's running. Then to load the extension, open Store Commerce by using the Store Commerce shortcut on the desktop. 
 
 ## Sample code
 
-```ts
+```XML
 <Project Sdk="Microsoft.NET.Sdk">
 	  <Import Project="..\CustomizationPackage.props " />
 	  <PropertyGroup>
