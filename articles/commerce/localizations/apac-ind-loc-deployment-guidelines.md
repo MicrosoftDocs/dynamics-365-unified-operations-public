@@ -32,10 +32,10 @@ This topic is a deployment guide that shows how to enable the requirements for G
 
 > [!WARNING]
 > Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used for the GST integration for India. You must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). Support for the new independent packaging and extension model for Commerce localizations is planned for later versions.
+> 
+> For information about how to install and use the Retail SDK, see the [Retail software development kit (SDK) architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
-This sample is part of the Retail software development kit (SDK). For information about how to install and use the SDK, see the [Retail software development kit (SDK) architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md).
-
-This sample consists of extensions for the Commerce runtime (CRT). To run this sample, you must modify and build the CRT projects. We recommend that use you an unmodified Retail SDK to make the changes that are described in this topic. We also recommend that you use a source control system, such as Microsoft Visual Studio Online (VSO), where no files have been changed yet.
+This functionality consists of extensions for the Commerce runtime (CRT) and Point of sale (POS). To use this functionality, you must modify the configuration of CRT extensions. You must also modify and build the POS projects. We recommend that use you an unmodified Retail SDK to make the changes that are described in this topic. We also recommend that you use a source control system, such as Microsoft Visual Studio Online (VSO), where no files have been changed yet.
 
 ## Prerequisites
 
@@ -43,18 +43,16 @@ Make sure that the Visual C++ Redistributable Packages are present on the machin
 
 ## Development environment
 
-Follow these steps to set up a development environment so that you can test and extend the sample.
+Follow these steps to set up a development environment so that you can test and extend the functionality.
 
 ### The CRT extension components
 
-The CRT extension components are included in the CRT samples. To complete the following procedures, open the CRT solution, **CommerceRuntimeSamples.sln**. You can find this solution under **RetailSdk\\SampleExtensions\\CommerceRuntime**.
+1. Find the extension configuration file for CRT:
 
-1. Find the extensions configuration file for CRT:
-
-    - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the Microsoft Internet Information Services (IIS) Retail server site location.
+    - **Commerce Scale Unit:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the Microsoft Internet Information Services (IIS) Commerce Scale Unit site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
-2. Register the CRT change in the extensions configuration file:
+2. Register the CRT change in the extension configuration file:
 
     ``` xml
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdIndia" />
@@ -86,7 +84,7 @@ The CRT extension components are included in the CRT samples. To complete the fo
 ```
 ### The Modern POS extension components
 
-Enable the Tax Registration Id extension.
+Enable the Tax Registration Id extension by following these steps:
 
 1. Open the solution at **RetailSdk\POS\ModernPOS.sln**, and make sure that it can be compiled without errors. Also make sure that Modern POS can be run from Microsoft Visual Studio using the Run command. (Modern POS must not be customized. You must enable User Account Control [UAC], and uninstall previously installed instances of Modern POS.)
 
@@ -103,7 +101,7 @@ Enable the Tax Registration Id extension.
 
 ### The Cloud POS extension components
 
-Enable the Tax Registration Id extension.
+Enable the Tax Registration Id extension by following these steps:
 
 1. Open the solution at **RetailSdk\POS\CloudPOS.sln**, and make sure that it can be compiled without errors.
 2. Enable the extension in **POS.Extensions\extensions.json** by adding the following lines:
