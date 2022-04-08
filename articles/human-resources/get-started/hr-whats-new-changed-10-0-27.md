@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 Human Resources 10.0.2 (June 2022) 
+title: What's new or changed in Dynamics 365 Human Resources 10.0.27 (June 2022) 
 description: This topic describes features that are either new or changed in the Dynamics 365 Human Resources version 10.0.27 preview release.
 author: twheeloc
 ms.date: 04/07/2022
@@ -21,9 +21,11 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kfend
+ms.author: twheeloc
 ms.search.validFrom: 2022-04-22 
 ms.dyn365.ops.version: 10.0.27
+
+---
 
 # Preview of Dynamics 365 Human Resources 10.0.27 (June 2022)
 
