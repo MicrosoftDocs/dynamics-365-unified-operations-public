@@ -418,12 +418,16 @@
             href: accounts-receivable/sb-billing-schedules.md
           - name: Copy a billing schedule
             href: accounts-receivable/sb-copy-schedules-items.md
+          - name: Billing schedule features
+            href: accounts-receivable/sb-schedule-billing-features.md
           - name: Milestone billing
             href: accounts-receivable/sb-milestonebilling.md
           - name: Terminate billing schedules
             href: accounts-receivable/terminate-billing-schedule.md
         - name: Revenue and expense deferrals
           items:
+          - name: Set up revenue and expense deferrals
+            href: accounts-receivable/sb-deferrals.md
         - name: Multi-element revenue allocation
           items:
       - name: Payments and settlements

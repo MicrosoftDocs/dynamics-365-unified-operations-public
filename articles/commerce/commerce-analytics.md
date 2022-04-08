@@ -350,15 +350,20 @@ The **Impression report** page includes the following metrics:
 
 ### <a name="enableCommerceAnalytics"></a>Enable and configure Commerce analytics (Preview)
 
-To install Commerce analytics (Preview), you must have permissions to create resources in an Azure subscription. You must also have permissions to install add-ins in LCS. 
+To install Commerce analytics (Preview), you must have permissions to create resources in an Azure subscription. You must also have permissions to install add-ins in LCS.
 
 To enable and configure Commerce analytics (Preview), follow these steps.
 
-1. [Enable and configure the Export to Data Lake add-in](#enableExportToDataLake).
-1. [Install and configure an Azure Synapse workspace](#configureAzureSynapse).
-1. [Add secrets to the key vault](#addSecrets).
-1. [Enable and configure the Commerce analytics (Preview) add-in](#enableCommerceAnalyticsAddin).
-1. [Install the Power BI template app](#powerbi).
+1. [Submit the Preview intake form for Commerce analytics (Preview)](#joinPreview)
+2. [Enable and configure the Export to Data Lake add-in](#enableExportToDataLake).
+3. [Install and configure an Azure Synapse workspace](#configureAzureSynapse).
+4. [Add secrets to the key vault](#addSecrets).
+5. [Enable and configure the Commerce analytics (Preview) add-in](#enableCommerceAnalyticsAddin).
+6. [Install the Power BI template app](#powerbi).
+
+### <a name="joinPreview"></a>Submit the Preview intake form for Commerce analytics (Preview)
+
+Submit the [Preview intake form for Commerce analytics (Preview)](https://forms.office.com/r/vW5VLJGXZ2). After your request is processed, a confirmation email will be sent to the email address that you provided in the form.
 
 ### <a name="enableExportToDataLake"></a>Enable and configure the Export to Data Lake add-in
 

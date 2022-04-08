@@ -58,7 +58,7 @@ The ATP feature is easy to adopt into your daily order fulfillment process. Most
 
 ### Compatibility with advanced warehouse management items
 
-Microsoft aims to provide out-of-box integration with advanced warehouse management (WHS), so that WHS customers can also enjoy the benefits of the Inventory Visibility service. Per the 2022 Wave 1 release (public preview in March), inventory service supports WHS item on-hand queries and ATP. The soft reservation and allocation feature will be supported for WHS customers in next wave. <!-- KFM: Add this link when target is published: For more information, see [Inventory Visibility support for WHS items](inventory-visibility-whs-support.md). -->
+Microsoft aims to provide out-of-box integration with advanced warehouse management (WHS), so that WHS customers can also enjoy the benefits of the Inventory Visibility service. Per the 2022 Wave 1 release (public preview in March), inventory service supports WHS item on-hand queries and ATP. The soft reservation and allocation feature will be supported for WHS customers in next wave. For more information, see [Inventory Visibility support for WHS items](inventory-visibility-whs-support.md).
 
 ## Licensing
 
