@@ -51,7 +51,7 @@ Store Commerce supports two types of deployment topologies:
 
 There are no separate installers for the hybrid and in-app topologies, the deployment options are decided based on the parameters passed during installation.
 
-![Store Commerce Deployment](../media/SC-Deployment.png)
+![Store Commerce deployment options](../media/SC-Deployment.png)
 
 ### In-app deployment
 
@@ -68,7 +68,7 @@ In-app mode supports offline, so during installation pass the **--installoffline
 
 Store Commerce is a shell that renders CPOS and connects to Headless Commerce and Commerce headquarters by using CSU in online mode. In the hybrid mode Store Commerce app content is rendered from CPOS that is hosted in CSU, and during the app launch the Store Commerce app will ask for the CPOS URL.
 
-![Store Commerce Deployment](../media/SC-Hybrid.png)
+![Active Store Commerce dialog box prompting for the Cloud POS URL](../media/SC-Hybrid.png)
 
 To update Store Commerce, just update the CSU and Store Commerce will automatically receive the update. Because updates are centrally managed in CSU, they don't have to be managed at individual registers. The Store Commerce application shell still must be updated separately by using the installer. For more information about how to update the CSU, see [Apply updates and extensions to Commerce Scale Unit (cloud)](../../fin-ops-core/dev-itpro/deployment/update-retail-channel.md). 
 
