@@ -1725,7 +1725,7 @@
         - name: Environment operations
           items:
           - name: Prepare document attachments
-            href: migration-upgrade/prepare-document-attachments
+            href: migration-upgrade/prepare-document-attachments.md
           - name: Clean-up preparation
             href: migration-upgrade/clean-up-preparation.md
           - name: Compressing tables in AX 2012 environments
