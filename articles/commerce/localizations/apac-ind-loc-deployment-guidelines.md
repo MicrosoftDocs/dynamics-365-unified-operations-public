@@ -4,7 +4,7 @@
 title: Deployment guidelines for cash registers for India
 description: This topic is a deployment guide for the Commerce localization for India.
 author: AlexChern0v
-ms.date: 09/16/2019
+ms.date: 04/08/2022
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -30,12 +30,12 @@ ms.dyn365.ops.version: 7.3.1
 
 This topic is a deployment guide that shows how to enable the requirements for Goods and Services Tax (GST) in the Dynamics 365 Commerce app's localization for India. For more information about the localization for India, see [Goods and Services Tax (GST) integration for cash registers for India](./apac-ind-cash-registers.md).
 
+> [!WARNING]
+> Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used for the GST integration for India. You must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). Support for the new independent packaging and extension model for fiscal integration samples is planned for later versions.
+
 This sample is part of the Retail software development kit (SDK). For information about how to install and use the SDK, see the [Retail software development kit (SDK) architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
 This sample consists of extensions for the Commerce runtime (CRT). To run this sample, you must modify and build the CRT projects. We recommend that use you an unmodified Retail SDK to make the changes that are described in this topic. We also recommend that you use a source control system, such as Microsoft Visual Studio Online (VSO), where no files have been changed yet.
-
-> [!NOTE]
-> Some steps in the procedures in this topic differ, depending on the version of the app that you're using. For more information, see [What's new or changed in Dynamics 365 Retail](../get-started/whats-new.md).
 
 ## Prerequisites
 
