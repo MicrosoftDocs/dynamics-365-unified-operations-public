@@ -31,73 +31,81 @@ ms.dyn365.ops.version: 10.0.24
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to create, delete, review and process Consumer price index (CPI) schedules. A Consumer price index schedule can be used to determine the prices for consumer goods and services that you add as billing schedule lines. A Consumer price index schedule can then be used with escalation and discount pricing on a billing schedule or manually processed to update the billing amounts on billing schedules. Consumer price index schedules can be manually entered or imported using the Consumer price index schedule composite entity.
+This topic explains how to create, delete, review, and process consumer price index (CPI) schedules. A CPI schedule can be used to determine the prices for consumer goods and services that you add as billing schedule lines. The CPI schedule can then be used with escalation and discount pricing on a billing schedule, or it can be manually processed to update the billing amounts on billing schedules. You can manually enter CPI schedules, or you can import them by using the CPI schedule composite entity.
 
-To add a Consumer price index schedule:
-1. Go to the **Consumer price index schedule** page.
-2. Select **New**. 
-3. Enter a unique **Consumer price index schedule** and a **Description**. 
-4. Select **Add** under **Consumer price index schedule** tab. 
-5. In the **Consumer price index date**, add a date on which the **Consumer price index schedule** becomes active. 
-6. Enter the **Consumer price index schedule** value. 
-7. Select **Save**. 
+To add a CPI schedule, follow these steps.
 
-To delete a **Consumer price index schedule** date:
-1. Go to the **Consumer price index schedule** page. 
-2. Select one or more lines that you want to delete and select **Remove**. 
-3. To delete the entire **Consumer price index schedule**, select **Delete** in the Action pane. If the **Consumer price index schedule** is associated with any billing schedule, you can't delete it.
-4. Select the **Process** button in the Action pane to update the billing schedules that use the selected **Consumer price index schedule**. The billing schedule prices will update using the latest consumer price index dates and schedule amounts.
-5. The **Consumer price index process** fasttab displays the **Billing schedule number**, **Item number**, **Billing start date**, **Billing end date**, **Escalation date** and **Escalation frequency** that were updated. 
+1. On the **Consumer price index schedule** page, select **New**.
+2. In the **Consumer price index schedule** field, enter a unique name.
+3. In the **Description** field, enter a description.
+4. On the **Consumer price index schedule** tab, select **Add**.
+5. In the **Consumer price index date** field, specify the date when the new CPI schedule becomes active.
+6. In the **Consumer price index schedule** field, enter the value.
+7. Select **Save**.
 
-After **Consumer price index schedules** are set up, they can be used for **Escalation and discount** price changes on billing schedules.
+To delete a CPI schedule date, follow these steps.
 
----
+1. On the **Consumer price index schedule** page, select one or more lines that you want to delete, and then select **Remove**.
+2. To delete the whole CPI schedule, on the Action Pane, select **Delete**. You can't delete the selected CPI schedule if it's associated with any billing schedule.
+3. On the Action Pane, select **Process** to update the billing schedules that use the selected CPI schedule. The latest CPI dates and schedule amounts will be used to update the billing schedule prices.
+4. On the **Consumer price index process** FastTab, review the updated **Billing schedule number**, **Item number**, **Billing start date**, **Billing end date**, **Escalation date**, and **Escalation frequency** fields.
 
-## Consumer price index calculation
+After CPI schedules are set up, they can be used for escalation and discount price changes on billing schedules.
 
-In this example, the period is January 01, 2020, to December 31, 2022. On January 01, 2021, the current Consumer price index is 110.5, and the base Consumer price index rate is 105.65 (the Consumer price index value at the time the contract starts).
+## CPI calculation
 
-On the **Recurring contract billing parameters** page, set **Consumer price index index calculation** to **Base Consumer price index**.
+For these examples, the period is from January 1, 2020, through December 31, 2022. The base CPI rate (the CPI value when the contract starts) is 105.65. On January 1, 2021, the current CPI is 110.5. On January 1, 2022, the current CPI is 114.25. The initial amount is $1,000.
 
-The escalation amount is calculated with the initial amount of $1000: 
-* 1000 + (110.5–105.65)/105.65*1000 = 1045.91
+**Example 1**
 
-Similarly, the escalation amount for period January 01, 2022, where the Consumer price index is 114.25 is calculated as follows:
-* 1000 + (114.25-105.65)/105.65*1000 = 1081.40
+On the **Recurring contract billing parameters** page, you set the **Consumer price index calculation** field to **Base Consumer price index**.
 
-On the **Recurring contract billing parameters** page, set **Consumner price index calculation** to **Prior consumer price index**.
+For the period January 1, 2021, the first escalation amount is calculated in the following way, based on the initial amount:
 
-The period is January 01, 2020, to December 31, 2022. The current consumer price index on January 01, 2021, is 110.5, and the base consumer price index rate is 105.65 (the consumer price index value at the time the contract starts).
+1,000 + (110.5 – 105.65) &divide; 105.65 &times; 1,000 = 1,045.91
 
-The first escalation amount is calculated with the amount of $1000:
-* 1000 + (110.5–105.65)/105.65*1000 = 1045.91
+For the period January 1, 2022, the escalation amount is calculated in the following way:
 
-Similarly, the escalation amount for period January 01, 2022, where consumer price index is 114.25 is calculated as follows:
-* 1045.91 + (114.25-110.5)/110.5*1045.91 = 1081.40
+1,000 + (114.25 – 105.65) &divide; 105.65 &times; 1,000 = 1,081.40
 
-> [!Note]
-> The escalation process uses the latest consumer price index value, regardless of the index date.   
-For example, if the escalation is in September, but the latest consumer price index value is for July, the July index is used. No adjustments are made after the September index is entered.
+**Example 2**
+
+On the **Recurring contract billing parameters** page, you set the **Consumer price index calculation** field to **Prior consumer price index**.
+
+For the period January 1, 2021, the first escalation amount is calculated in the following way, based on the initial amount:
+
+1,000 + (110.5 – 105.65) &divide; 105.65 &times; 1,000 = 1,045.91
+
+For the period January 1, 2022, the escalation amount is calculated in the following way, based on the first escalation amount:
+
+1,045.91 + (114.25 – 110.5) &divide; 110.5 &times; 1,045.91 = 1,081.40
+
+> [!NOTE]
+> The escalation process always uses the latest CPI value, regardless of the index date. For example, if the escalation is in September, but the latest CPI value is for July, the July index is used. No adjustments are made after the September index is entered.
 
 ## Prorated escalation
 
-If the escalation happens in the middle of a billing period, the amount will be prorated. For example, the billing period is August 01, 2020, to July 31, 2021. The consumer price index value is 244 on consumer price index date September 01, 2019, and 250 on consumer price index date September 01, 2020. If the previous rate is 1000, the following equations show how the billing amount for this period is calculated:
-* Consumer price index changes = (250 – 244)/244 = 2.459%
-* Current Rate = 1000*2.459% = 1024.59
-* Number of days @ current rate = July 31, 2021 – September 01, 2020 = 334
-* Previous Rate = 1000
-* Number of days @ previous rate = August 31, 2020 – August 01, 2020 = 31
-* Total number of days in the billing period = July 31, 2021 – August 01, 2020 + 1 = 365
-* The billing amount for this period = 1000*31/365 + 1024.59*334/365 = 1022.50
+If the escalation occurs in the middle of a billing period, the amount is prorated. For example, the billing period is from August 1, 2020, through July 31, 2021. On the CPI date September 1, 2019, the CPI value is 244. On the CPI date September 1, 2020, this CPI value is 250. If the previous rate is 1,000, the following formulas are used to calculation the billing amount for the period:
 
-## Escalation using Consumer price index and %
+* *CPI changes* = (250 – 244) &divide; 244 = 2.459%
+* *Current rate* = 1,000 &times; 2.459% = 1,024.59
+* *Number of days at the current rate* = July 31, 2021 – September 1, 2020 = 334
+* *Previous rate* = 1,000
+* *Number of days at the previous rate* = August 31, 2020 – August 1, 2020 = 31
+* *Total number of days in the billing period* = July 31, 2021 – August 1, 2020 + 1 = 365
+* *Billing amount for this period* = (1,000 &times; 31 &divide; 365) + (1,024.59 &times; 334 &divide; 365) = 1,022.50
 
-Escalations can be done by consumer price index. The consumer price index + 3% escalation starts on January 01, 2020, with an **Annual frequency**. 
- - Amount billed for January 01, 2019 to December 31, 2020, is 4000. 
- - The billing period to be escalated is January 01, 2020 to December 31, 2020. 
- - The consumer price index value is 205.3 on the consumer price index date December 01, 2018, and is 219.6 on the consumer price index date December 01, 2019. 
- If the previous rate is 4000, the billing amount for this period is calculated:
- - Consumer price index changes = (219.6 – 205.3)/205.3 = 6.965%
- - Current Rate = 4000*6.965% - 4000 = 278.60
- - Percentage changes = 4000*1.03 - 4000 = 120
- - Billing amount = 4000 + 278.6 + 120 = 4398.6
+## Escalation that uses the CPI and percentage
+
+Escalations can be done by using the CPI. The CPI plus a 3-percent escalation starts on January 1, 2020, and it has an annual frequency.
+
+- The amount that is billed for January 1, 2019, through December 31, 2020, is 4,000.
+- The billing period that will be escalated is January 1, 2020, through December 31, 2020.
+- On the CPI date December 1, 2018, the CPI value is 205.3. On the CPI date December 1, 2019, the CPI value is 219.6.
+
+If the previous rate is 4,000, the billing amount for this period is calculated in the following way:
+
+- *CPI changes* = (219.6 – 205.3) &divide; 205.3 = 6.965%
+- *Current rate* = (4,000 &times; 6.965%) – 4000 = 278.60
+- *Percentage changes* = (4,000 &times; 1.03) – 4,000 = 120
+- *Billing amount* = 4,000 + 278.6 + 120 = 4,398.6
