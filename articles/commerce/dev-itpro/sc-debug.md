@@ -25,11 +25,8 @@ To debug Store Commerce extensions, follow these steps.
 
 1. Install [Visual Studio Code](https://code.visualstudio.com/).
 1. Launch Visual Studio Code and install the [Microsoft Edge Tools for VS Code - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools).
-
-    ![Commerce components](../media/EdgeTool.png)
-
 1. Before deploying the extensions, install the [Store Commerce app](store-commerce.md#device-installation). During the install process, enable the debug option by passing the parameter **--enablewebviewdevtools** as shown in the following example.
-    ```ps
+    ```PowerShell
     .\StoreCommerce.Installer.exe install --enablewebviewdevtools
     ```
 1. Download the Store Commerce extension sample code from the InStore GitHub Repo or use your own extension code.
@@ -41,15 +38,11 @@ To debug Store Commerce extensions, follow these steps.
 1. In VSCode, select **File \> Open Folder** and then open your Extension Code root folder.
 1. In VSCode, right-click the root folder of your solution directory and create a new folder called **.vscode**. 
 1. Inside the **.vscode** folder, create a new file and name it **launch.json**.
-
 1. Inside the launch.json file, add the following configurations to build and debug the Store Commerce extensions. 
 
     - **Debug Store Commerce** – This configuration will launch the Store Commerce app and attach the extension code to the Store Commerce app for debugging.
     - **Build and Debug Store Commerce** - This configuration will build the extension code, deploy the extension, launch the Store Commerce app, and attach the extension code to the Store Commerce app for debugging.
     - **Attach debugger to Store Commerce** - This configuration will attach the extension code to the Store Commerce app for debugging, but will not start the Store Commerce app.
-
-    ![Configurations to build and debug the Store Commerce extensions in the launch.json file](../media/Launch.png)
-
 1. Copy the following configuration code to the **launch.json** file and then save it.
 
     ```json
@@ -118,7 +111,6 @@ To debug Store Commerce extensions, follow these steps.
     ```
 1. Select the **Debug** button in VS, select the appropriate option based on your scenario, and then start debugging by placing a breakpoint in your extension code.
 
-    ![Commerce components.](../media/Debug.png)
 
 ### Troubleshoot debug issues
 
