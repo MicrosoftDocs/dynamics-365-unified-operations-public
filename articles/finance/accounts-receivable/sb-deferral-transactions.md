@@ -82,17 +82,17 @@ In some cases, the tax amount can be fully or partially non-recoverable. If the 
 
 ### Variance
 
-If the amount on the vendor invoice line differs from the amount on the purchase order line, variance distributions are created. If the line is deferred, the ledger account for these distributions is set to the deferral account, and the amounts are included in the deferrable schedule amount when the invoice is posted. These distributions are **Price variance** and **Cost variance**.
+If the amount on the vendor invoice line differs from the amount on the purchase order line, variance distributions are created. If the line is deferred, the ledger account for these distributions is set to the deferral account, and the amounts are included in the deferrable schedule amount when the invoice is posted. These distributions are named **Price variance** and **Cost variance**.
 
 ### General journals and invoice journals
 
 Use the **Deferrals** page to enter the deferral parameters for a journal voucher line. You can also preview the deferral schedule for straight line deferrals. When you enter a line, the deferral is automatically set based on the setup of deferral accounts on the **Deferral defaults** page. You can manually change the deferral options for each line. When the journal voucher is posted, the deferral schedule is created.
 
-### Post and transfer
+#### Post and transfer
 
-To post the journal voucher, use the **Post and transfer** command. The deferral options will follow the line that it applies to. For vouchers that don't have errors, a deferral schedule is created if it's deferred. For vouchers that have errors and are transferred, any deferral options are also transferred with it.
+To post the journal voucher, use the **Post and transfer** command. The deferral options will follow the line that the voucher applies to. For vouchers that don't have errors, a deferral schedule is created if it's deferred. For a voucher that has an error and are transferred, any deferral options are also transferred with it.
 
-### Tax
+#### Tax
 
 In some cases, the tax amount can be fully or partially non-recoverable. If the tax amount of a deferrable line contains a non-recoverable amount, the non-recoverable tax amount is included in the deferrable schedule amount when the invoice is posted.
 
@@ -112,10 +112,10 @@ The **Transaction deferral** page contains the following fields.
 | Recalculation date | <p>Specify the start date of the period that you want to recalculate the remaining amount from. The default date is the date of the next unrecognized period.</p><p>This field is available only when the **Adjust existing schedule** option is set to **Yes**.</p> |
 | End date | <p>Depending on the type of deferral, the end date might or might not be updated:</p><ul><li>For a straight line deferral, specify the new end date of the schedule. The existing end date of the deferral schedule is the default value.</li><li>For an event based deferral, specify the end date of the credit event line. This date can be blank.</li></ul><p>This field is available only when the **Adjust existing schedule** option is set to **Yes**.</p> |
 | Billing schedule number | <p>The billing schedule number.</p><p>This field is available only for recurring contract billing schedules.</p> |
-| Deferral adjustment method | <p>The deferred adjustment method. The value matches the value on the **Mass termination processing** page for the recurring contract billing.</p><p>This field is available only for recurring contract billing schedules.</p> |
+| Deferral adjustment method | <p>The deferred adjustment method. The value matches the value on the **Mass termination processing** page for the recurring contract billing schedule.</p><p>This field is available only for recurring contract billing schedules.</p> |
 | **Accounts - Revenue** | |
 | Deferral account | <p>The deferral account, which is the posting account that appears on the **Sales order** page.</p><p>If the line isn't deferred, this field is blank. In this case, the posting account is the default revenue account.</p> |
-| Recognition account | <p>Specify the account that is used when a deferral is recognized. This account must differ from the deferral account.</p><p>When the **Deferral** option is initially set to **Yes**, the dimension values that are used in the deferral account are copied to the recognition account. If the dimension in the deferral account doesn't exist for the recognition account, it's ignored.</p> |
+| Recognition account | <p>Specify the account that is used when a deferral is recognized. This account must differ from the deferral account.</p><p>When the **Deferred** option is initially set to **Yes**, the dimension values that are used in the deferral account are copied to the recognition account. If the dimension in the deferral account doesn't exist for the recognition account, it's ignored.</p> |
 | Initial recognition account | <p>Select the account for the initial revenue recognition. The default value is from the **Deferral defaults** page.</p><p>This field is available only when the **Deferral posting method** field is set to **Profit and loss** on the **Revenue and expense deferrals parameters** page.</p> |
 | Recognition offset account | <p>Select the account for offsetting revenue recognition. The default value is from the **Deferral defaults** page.</p><p>This field is available only when the **Deferral posting method** field is set to **Profit and loss** on the **Revenue and expense deferrals parameters** page.</p> |
 | **Accounts - Discount** | This section appears only for deferred items. It's hidden for deferred charges. |
@@ -131,8 +131,8 @@ The **Transaction deferral** page contains the following fields.
 | **Schedule** | |
 | Schedule type | <p>Select the deferral schedule type: **Straight line** (default) or **Event based**.</p><p>The options that appear on the page are based on the deferral schedule type that you select.</p><p>If the default template is set on the **Deferral defaults** page for the transaction line, the deferral schedule type is based on the type of template that is selected.</p> |
 | **Schedule - Straight line** | |
-| Consolidate prior periods | <p>Specify whether you want to consolidate deferral schedule lines for earlier periods:</p><ul><li>**Yes** – Consolidate the deferral schedule lines for earlier periods.</li><li>**No** – Don't consolidate deferral schedule lines for earlier periods.</li></ul><p>The default value is from the **Parameters** page.</p> |
-| Equal per period | <p>Specify whether the number of days in every period is equal or varies by period:</p><ul><li>**Yes** – Every period has the same number of days.</li><li>**No** – Periods don't have the same number of days.</li></ul><p>When this option is set to **No**, the number of days in a period is considered when the amount in each period for a deferral schedule is calculated.</p><p>The default value is from the **Parameters** page.</p> |
+| Consolidate prior periods | <p>Specify whether you want to consolidate deferral schedule lines for earlier periods:</p><ul><li>**Yes** – Consolidate the deferral schedule lines for earlier periods.</li><li>**No** – Don't consolidate deferral schedule lines for earlier periods.</li></ul><p>The default value is from the **Revenue and expense deferrals parameters** page.</p> |
+| Equal per period | <p>Specify whether the number of days in every period is equal or varies by period:</p><ul><li>**Yes** – Every period has the same number of days.</li><li>**No** – Periods don't have the same number of days.</li></ul><p>When this option is set to **No**, the number of days in a period is considered when the amount in each period for a deferral schedule is calculated.</p><p>The default value is from the **Revenue and expense deferrals parameters** page.</p> |
 | Schedule from template | <p>Specify whether the deferral schedule is created based on a template or an end date:</p><ul><li>**Yes** – The deferral schedule is created based on a template.</li><li>**No** – The deferral schedule is created based on an end date.</li></ul> |
 | Template | Select the deferral template. |
 | Override start date | <p>Specify whether you want to override the start date:</p><ul><li>**Yes** – Override the start date with the date that you enter in the **Start date** field.</li><li>**No** – The start date is the **Default deferral start date** rule that is applied to the invoice date that is specified on the **Posting invoice** page. This rule can be set on the **Revenue and expense deferrals parameters** page.</li></ul> |
