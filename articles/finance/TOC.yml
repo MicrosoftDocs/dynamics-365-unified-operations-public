@@ -428,6 +428,10 @@
           items:
           - name: Set up revenue and expense deferrals
             href: accounts-receivable/sb-deferrals.md
+          - name: Create deferral schedules
+            href: accounts-receivable/sb-deferrals-schedules.md
+            - name: Deferral default transactions
+              href: accounts-receivable/sb-deferral-transactions.md
         - name: Multi-element revenue allocation
           items:
       - name: Payments and settlements
