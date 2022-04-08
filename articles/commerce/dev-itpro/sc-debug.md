@@ -28,7 +28,7 @@ To debug Store Commerce extensions, follow these steps.
 
     ![Commerce components](../media/EdgeTool.png)
 
-1. Before deploying the extensions, install the [Store Commerce app](dev-itpro/store-commerce.md#device-installation). During the install process, enable the debug option by passing the parameter **--enablewebviewdevtools** as shown in the following example.
+1. Before deploying the extensions, install the [Store Commerce app](store-commerce.md#device-installation). During the install process, enable the debug option by passing the parameter **--enablewebviewdevtools** as shown in the following example.
     ```ps
     .\StoreCommerce.Installer.exe install --enablewebviewdevtools
     ```
