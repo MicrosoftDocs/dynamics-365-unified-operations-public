@@ -2478,7 +2478,6 @@
           items:
           - name: Introduction to Commerce Scale Unit (CSU) Core
             href: dev-itpro/CSU-core.md
-        items:
         - name: APIs and reference
           items:
           - name: Commerce Scale Unit customer and consumer APIs
@@ -2622,7 +2621,7 @@
           - name: Create a Cloud POS extension package
             href: dev-itpro/pos-extension/cpos-extension-package.md
           - name: Create a Store Commerce extension installer package
-            href: dev-itpro/SC-Extension-installer.md
+            href: dev-itpro/store-comm-extension-installer.md
       - name: E-commerce
         items:
         - name: Overview
@@ -2823,13 +2822,12 @@
             items:
             - name: Telemetry logger
               href: e-commerce-extensibility/telemetry-logger.md
-      - name: Commerce HQ
+      - name: Commerce headquarters
         items:
         - name: CDX package extension
           items:       
-          - name: Extend Customer CDX package to add custom data
-            href: dev-itpro/Customer-CDX-ext.md
-        items:
+          - name: Extend customer CDX package to add custom data
+            href: dev-itpro/extend-customer-CDX-package.md
         - name: Packaging and deployment
           items:
           - name: Create Commerce payment packaging for Finance and Operations deployment
