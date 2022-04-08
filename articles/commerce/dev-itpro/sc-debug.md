@@ -124,10 +124,10 @@ To debug Store Commerce extensions, follow these steps.
 
 #### msbuild error
 
-If you get the the error `msbuild : The term 'msbuild' is not recognized as the name of a cmdlet, function, script file, or operable program`,
+If you get the error `msbuild : The term 'msbuild' is not recognized as the name of a cmdlet, function, script file, or operable program`,
 close VS Code, open the Visual Studio Developer command prompt, navigate to the solution directory, and then type **code**. This will open VS Code and set the right msbuild version.
 
-#### .json file comment extension
+#### JSON file comment extension
 
 If you get any errors related to .json file comments, close the .json file and try the debug command again, or delete all the comments in the .json file.
 
