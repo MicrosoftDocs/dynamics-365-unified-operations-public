@@ -4,7 +4,7 @@
 title: CFDI layout version 4.0
 description: This topic provides information about Comprobante Fiscal Digital por Internet (CFDI) layout version 4.0 for Mexico.
 author: sndray
-ms.date: 4/1/2022
+ms.date: 4/08/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,26 +29,26 @@ ms.search.validFrom: 2022-04-01
 
 [!include [banner](../includes/banner.md)]
 
-If your organization uses electronic invoices that are validated and certified by a third-party digital signature service provider (PAC), you enable electronic invoicing
-by using the fields in the **CFDI** area of the **Electronic invoice parameters** page.
+If your organization uses electronic invoices that are validated and certified by a third-party digital signature service provider (PAC), enable electronic invoicing using the fields in the **CFDI** area of the **Electronic invoice parameters** page.
 
-To start work with version 4.0 you should set up the following in Electronic invoice parameters (**Organization administration /> Setup /> Einvoice**):
+To work with version 4.0, set the following values in the Electronic invoice parameters:
 
--	Set Version 4.0 (CFDI version field)
--	Select new xml scheme file (**CFDI XML scheme file** and **CFDI Payment XML schema file** fields on **CFDI** tab and **CFDI XML scheme file** field on **CFDI withholding** tab)
--	Enter the tax regime for customers (**Account receivable /> Customers**, **Invoice and delivery** FastTab /> **ELECTRONIC INVOICES** field group)
+-	In the **CFDI version** field, select **4.0**.
+-	On the **CFDI** tab, select a new xml scheme file in the **CFDI XML scheme file** and **CFDI Payment XML schema file** fields.
+- On the **CFDI withholding** tab, select a new xml scheme file in the **CFDI XML scheme file** field.
+-	Go to **Account receivable** > **Customers** and on the **Invoice and delivery** FastTab, in the **ELECTRONIC INVOICES** field group, enter the tax regime for customers.
 
-In the case of temporary export, you can set **Temporary export** option to **Yes** in a customer record (**Invoice and delivery** tab, inherited By default in sales order and Free text invoices).
+For a temporary export, open the customer record, and on the **Invoice and delivery** tab, set the **Temporary export** option to **Yes**. This value defaults to related sales orders or free text invoices. 
 
-When a user posting a vendor invoice there is capability to add a CFDI reference to the related invoice (**Attachments > CFDI reference**).  
+When you post a vendor invoice, you can add a CFDI reference to the related invoice by selecting **Attachments** > **CFDI reference**.  
 
-If Withholding type (Purchase order line details) is equal to **28** then two new fields (Bimonthly profit amount, ISR corresponding amount) are appeared in CFDI withholding journal details. A user should fill in these two fields and corresponding attributes are populated in the xml file.
+If the **Withholding type** field on the Purchase order line details has a value of **28**,  then the two new fields, **Bimonthly profit amount** and **ISR corresponding amount** are included in the details of the **CFDI withholding journal**. Enter a value in these two fields. The corresponding attributes are populated in the xml file.
 
-You can find details of CFDI setting and how to work with CFDI documents under the following links:
+For more information about CFDI settings and how to work with CFDI documents, see:
 
--	[CFDI layout version 3.3](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/latam-mex-cfdi-3-3)
--	[E-invoicing CFDI](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/tasks/mx-00010-e-invoicing-cfdi)
--	[Electronic invoices (CFDI)](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/latam-mex-cfdi-electronic-invoices)
--	[Waybill (Carta de Porte) complement](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/latam-mex-carta-de-porte)
+-	[CFDI layout version 3.3](latam-mex-cfdi-3-3.md)
+-	[E-invoicing CFDI](tasks/mx-00010-e-invoicing-cfdi.md)
+-	[Electronic invoices (CFDI)](latam-mex-cfdi-electronic-invoices.md)
+-	[Waybill (Carta de Porte) complement](latam-mex-carta-de-porte.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
