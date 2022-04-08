@@ -40,6 +40,8 @@ To start work with version 4.0 you should set up the following in Electronic inv
 
 In the case of temporary export, you can set **Temporary export** option to **Yes** in a customer record (**Invoice and delivery** tab, inherited By default in sales order and Free text invoices).
 
+When a user posting a vendor invoice there is capability to add a CFDI reference to the related invoice (**Attachments > CFDI reference**).  
+
 If Withholding type (Purchase order line details) is equal to **28** then two new fields (Bimonthly profit amount, ISR corresponding amount) are appeared in CFDI withholding journal details. A user should fill in these two fields and corresponding attributes are populated in the xml file.
 
 You can find details of CFDI setting and how to work with CFDI documents under the following links:
