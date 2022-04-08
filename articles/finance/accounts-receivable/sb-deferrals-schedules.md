@@ -65,9 +65,8 @@ If the deferral schedule has no recognized or externally posted lines, you can m
 
 If the deferral schedule has any recognized or externally posted lines, and you modify the deferral schedule, the resulting behavior of the deferral schedule depends on the recalculation date and the deferral end date of recognized lines. By default, the first period that wasn't recognized determines the deferral end date.
 
-To use the date of recognition, select **Start of schedule**.
-
-- **Catch up** – The amount after all recognized lines is recalculated.
+To use the date of recognition, select one of the following values in the **Start of schedule** field: 
+- **Catch up** – The amount after all recognized lines are recalculated.
 - **Reversal** – Any lines after the recalculation date are reversed by using the specified journal name and posting date. The amount after the recalculation date is then recalculated.
 
 If a template is used, the skipped periods are ignored, and the template is used only to calculate the end date.
@@ -135,10 +134,10 @@ To cancel a whole deferral schedule, follow these steps.
 ## Reverse transactions
 
 > [!NOTE]
-> - To recognize revenue for one deferral schedule, start at step 1.
-> - To recognize revenue for multiple schedules, start at step 2.
+> - To reverse revenue recognition for one deferral schedule, start at step 1.
+> - To reverse revenue recognition for multiple schedules, start at step 2.
 
-1. On the **All deferral schedules** page, in the **Lines** grid, select the lines that you want to unrecognize, and then select **Reverse**.
+1. On the **All deferral schedules** page, in the **Schedule lines** grid, select the lines that you want to unrecognize, and then select **Reverse**.
 2. On the **Recognition processing** page, set the **Recognition action** field to **Reverse recognition journal**.
 3. In the **Cutoff date** field, select the cutoff date. The processing will include only lines where the end date is earlier than or the same as the specified cutoff date.
 4. Select **Filter**, and add data filters so that the list shows only the range of records that you want.
