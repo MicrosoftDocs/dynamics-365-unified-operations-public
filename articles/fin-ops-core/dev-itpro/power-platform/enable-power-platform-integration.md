@@ -422,7 +422,7 @@ Dataverse will use the Azure AD application that you created to call Finance and
 
     function Test-Settings()
     {
-        $cdsApiPath = "accounts";
+        $cdsApiPath = "sdkmessages";
         Write-Host "Testing setup by calling API '$($cdsApiPath)'..."
         $webroot = Get-AosWebSitePhysicalPath -ErrorAction stop
         $webrootBinPath = Join-Path $webroot "bin"
