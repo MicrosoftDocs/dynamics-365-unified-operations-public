@@ -4,7 +4,7 @@
 title: Get started with Tax Calculation
 description: This topic explains how to set up Tax Calculation.
 author: wangchen
-ms.date: 01/05/2022
+ms.date: 03/25/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -41,7 +41,7 @@ The setup consists of three main steps.
 
 ## High-level design
 
-### Runtime design
+### <a name="runtime"></a> Runtime design
 
 The following illustration shows the high-level runtime design of Tax Calculation. Because Tax Calculation can be integrated with multiple Dynamics 365 apps, the illustration uses the integration with Finance as an example.
 
@@ -100,6 +100,14 @@ Before you can complete the remaining procedures in this topic, the following pr
 - The following features must be turned on in the **Feature management** workspace of your deployed RCS environment.
 
     - Globalization features
+
+- The following roles should be assigned as appropriate to the users in your RCS environment:
+
+    - Electronic reporting developer
+    - Globalization feature developer
+    - Tax engine developer
+    - Tax engine functional consultant
+    - Tax service developer
 
 ## Set up Tax Calculation in LCS
 
@@ -208,6 +216,9 @@ The steps in this section aren't related to a specific legal entity. You must co
     | Sales            | DEU       | FRA     | DEU_EU       |
     | Sales            | BEL       | BEL     | BEL_Domestic |
     | Sales            | BEL       | FRA     | BEL_EU       |
+    
+    > [!NOTE]
+    > If the default sales tax group on your taxable document lines is correct, leave this matrix blank. For more information, see the [Runtime design](#runtime) section in this topic.
 
 22. On the **Item tax group applicability** tab, select the columns that are required to determine the correct tax code, and then select **Add**. Enter or select values for each column. The **Item tax group** field will be the output of this matrix. If this tab isn't configured, the item sales tax group on the transaction line will be used.
 
@@ -217,6 +228,9 @@ The steps in this section aren't related to a specific legal entity. You must co
     | --------- | -------------- |
     | D0001     | Full           |
     | D0003     | Reduced        |
+
+    > [!NOTE]
+    > If the default item sales tax group on your taxable document lines is correct, leave this matrix blank. For more information, see the [Runtime design](#runtime) section in this topic.
 
     For more information about how tax codes are determined in Tax Calculation, see [Sales tax group and item sales tax group determination logic](global-sales-tax-group-determination.md).
 
