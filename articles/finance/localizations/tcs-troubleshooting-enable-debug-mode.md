@@ -6,17 +6,17 @@ description: This topic explains how to enable debug mode in the Tax Calculation
 author: hangwan
 ms.date: 03/25/2022
 ms.topic: business-process 
-ms.prod:  
-ms.technology:  
+ms.prod: 
+ms.technology: 
 
 # optional metadata 
 
-ms.search.form: TaxIntegrationTaxServiceParameters   
+ms.search.form: TaxIntegrationTaxServiceParameters
 audience: Application User 
-# ms.devlang:  
+# ms.devlang: 
 ms.reviewer: 
-# ms.tgt_pltfrm:  
-# ms.custom:  
+# ms.tgt_pltfrm: 
+# ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: hangwan
@@ -24,14 +24,14 @@ ms.search.validFrom: 03/23/2022
 ms.dyn365.ops.version: Version 10.0.21 
 ---
 
-# Enable debug mode
+# Enable debug mode in the Tax Calculation service
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to enable the debug mode of the Tax Calculation service to investigate issues.
+This topic explains how to enable the debug mode in the Tax Calculation service to investigate issues.
 
-1. Add **&debug=vs%2CconfirmExit&** to the URL of AOS and then refresh the page. 
-2. When you select **Sales tax** to calculate the sale tax, a TXT file named T**axServiceTroubleshootingLog** will open. The **TaxServiceTroubleshootingLog.txt** file contains **taxabledocument** and the calculation parameter. These results are returned from tax service and exceptions information for troubleshooting.
+1. Add **&debug=vs%2CconfirmExit&** to the URL of Application Object Server (AOS), and then refresh the page.
+2. When you select **Sales tax** to calculate the sale tax, a text file that is named **TaxServiceTroubleshootingLog.txt** is opened. The **TaxServiceTroubleshootingLog.txt** file contains **TaxableDocument** and the calculation parameter. These results are returned from tax service and exception information for troubleshooting.
 
 ## Sample
 
