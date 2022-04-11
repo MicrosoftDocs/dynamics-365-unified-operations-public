@@ -40,7 +40,7 @@ The April 2022 release of the [Dual-write Supply Chain solution](https://appsour
 | Dynamics365AssetManagementApp | No | 2.2.1.23 | 2.2.1.23 |
 | Dynamics365Notes | No | 2.2.2.23 | 2.2.2.23 |
 | Dynamics365FinanceAndOperationsDualWriteMaps | Yes | 2.3.0.36 | 2.3.4.11 |
-| Dynamics365FinanceAndOperationsAnchor | Yes | 2.3.4.3 | 2.3.4.11 |
+| Dynamics365FinanceAndOperationsAnchor | No (version number only) | 2.3.4.3 | 2.3.4.11 |
 
 ## March 2022 release
 
