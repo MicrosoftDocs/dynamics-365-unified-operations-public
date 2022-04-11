@@ -4,7 +4,7 @@
 title: Upgrade or replace the SQL Server instance of Microsoft Dynamics 365 Finance + Operations (on-premises) environments
 description: This topic explains how to upgrade the Microsoft SQL Server instance or cluster that your environment is using.
 author: faix
-ms.date: 12/14/2021
+ms.date: 04/05/2022
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
@@ -44,6 +44,9 @@ All your SQL Server components across an environment must be on the same version
 
 1. On your AOS nodes, upgrade the SSIS component.
 1. On your Business Intelligence (BI) nodes, upgrade the SSRS and database engine components.
+
+> [!IMPORTANT]
+> When you upgrade the database engine component on your BI nodes from SQL Server 2016 to SQL Server 2019, the SSRS component will be removed. In SQL Server 2019, SSRS has its own installer.
 
 ## Update the local agent
 

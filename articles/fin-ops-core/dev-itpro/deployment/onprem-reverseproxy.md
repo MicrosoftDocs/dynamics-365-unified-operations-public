@@ -4,7 +4,7 @@
 title: Configure proxies for on-premises environments
 description: This topic describes how you can secure the on-premises environment behind a proxy.
 author: faix
-ms.date: 06/15/2020
+ms.date: 04/05/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -45,9 +45,9 @@ Perform the following steps in **each** node of type **OrchestratorType** in the
 
 	```xml
 	<system.net>
-		<defaultProxy enabled="true" >
-			<proxy <<<SET YOUR PROXY SETTINGS>> />
-	   	</defaultProxy>
+		<defaultProxy>
+            <proxy usesystemdefault="true" proxyaddress="http://<PROXYADDRESS>:<PROXYPORT>" bypassonlocal="true" />
+        </defaultProxy>
     </system.net>
 	```
 
