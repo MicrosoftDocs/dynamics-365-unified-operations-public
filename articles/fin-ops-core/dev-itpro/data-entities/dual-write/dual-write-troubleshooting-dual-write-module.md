@@ -69,6 +69,19 @@ This error occurs when the linked Dataverse environment isn't available.
 
 To fix the issue, create a ticket for the Data Integration team. Attach the network trace so that the Data Integration team can mark the maps as **Not running** in the back end.
 
+## Enable parallel processing in Dynamics 365 Finance and Operations to improve performance
+
+Enabling parallel processing can reduce the time needed to import data from Dynamics 365 Finance and Operations into Dynamics 365 CE/Dataverse. 
+
+To enable parallel processing in Dynamics 365 Finance and Operations:
+1.	Login to your Dynamics 365 Finance and Operations environment.
+2.	Go to Data Management -> Framework Parameters
+3.	Select Entity Settings and select Configure entity execution parameters
+4.	Add the parameters for parallel processing:
++	Import Threshold Record Count – The number of records that must be met before parallel processing is enabled
++	Import Task Count – The number of threads (tasks) to run in parallel
+
+
 ## Errors while trying to start a table mapping
 
 ### Unable to complete initial data sync
