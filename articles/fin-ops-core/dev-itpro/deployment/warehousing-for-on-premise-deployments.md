@@ -3,8 +3,8 @@
 
 title: Configure the Warehousing app for on-premises deployments
 description: This topic describes the prerequisites for the warehousing app for on-premises deployments.
-author: MarkusFogelberg
-ms.date: 02/03/2021
+author: faix
+ms.date: 04/05/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.custom: 24861
 ms.assetid: 63e43066-76c7-400b-be7d-d14785e7985d
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mafoge
+ms.author: osfaixat
 ms.search.validFrom: 2017-12-04
 ms.dyn365.ops.version: 7.3
 
@@ -72,28 +72,27 @@ To enable Finance + Operations to use your AD FS application, you must create a 
 1.  Create a user in Finance + Operations and assign the Warehousing mobile
     device user role to the user.
 
-    a.  Go to **System administration** \> **Common** \> **Users**.
+    1.  Go to **System administration** \> **Common** \> **Users**.
     
-    b.  Create a new user.
+    2.  Create a new user.
     
-    c.  Assign the warehouse mobile device user role, as shown in the example screenshot.
+    3.  Assign the warehouse mobile device user role, as shown in the example screenshot.
 
     ![Create and configure a user.](media/wmapp-users.png)
 
 2.  Associate your AD FS application with the Warehousing app user.
 
-    a.  In Finance + Operations, click **System administration** \> **Setup** \> **Azure Active Directory applications**.
+    1.  In Finance + Operations, click **System administration** \> **Setup** \> **Azure Active Directory applications**.
     
-    b.  Create a new line.
+    2.  Create a new line.
     
-    c.  Enter the client ID that you obtained when you created an application entry in AD FS (step 2 in "Create an application entry in AD FS"). Enter a name, and select the Warehousing app user.
+    3.  Enter the client ID that you obtained when you created an application entry in AD FS (step 2 in "Create an application entry in AD FS"). Enter a name, and select the Warehousing app user.
 
     ![Azure Active Drectory applications .](media/azure-active-directory.png)
 
 ## Certificates 
 
-Make sure that the devices with the app installed have the correct certificates to access the resources. If you are using self-signed certificates, these will need to be installed on each device by importing star(AX) and AD FS to the trusted route of the computer account/user account. For more information, see [Create and export a self-signed
-certificate](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ff710475(v=ws.10)).
+Make sure that the devices where the app is installed have the correct certificates to access the resources. If you're using self-signed certificates, you must install them on each device by importing star(AX) and AD FS into the trusted root of the computer account/user account. For more information, see [Create and export a self-signed certificate](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ff710475(v=ws.10)).
 
 > [!IMPORTANT]
 > Environments with self-signed certificates will not be accessible from Android devices. If you need to access the environment from an Android device, use publicly trusted certificates for AD FS and Finance + Operations. Alternatively, you can also use AD CS to generate the certificates for AD FS and Finance + Operations. However, if you do this you will have to manually import the certificate authority certificate into your Android device.   
@@ -105,14 +104,14 @@ You must configure the Warehousing app on the device to connect to the server th
 1.  In the app, open **Connection settings**.
 2.  Enter the following information:
 
-    a.  **Active Directory Client ID** - The client ID that you obtained when  you created an application entry in AD FS (step 2 in "Create an application entry in AD FS").
+    1.  **Active Directory Client ID** - The client ID that you obtained when  you created an application entry in AD FS (step 2 in "Create an application entry in AD FS").
 
-    b.  **Active Directory Client Secret** - The client secret obtained when you created an application entry in AD FS.
+    2.  **Active Directory Client Secret** - The client secret obtained when you created an application entry in AD FS.
 
-    c.  **Active Directory Resource** - The DNS URL for the AOS. Append the URL with '/namespaces/AXSF'. 
+    3.  **Active Directory Resource** - The DNS URL for the AOS. Append the URL with '/namespaces/AXSF'. 
         For example: `https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF`
 
-    d.  **Active Directory Tenant** - The DNS URL for the AD FS machine. Append the URL with '/adfs/oauth2'. 
+    4.  **Active Directory Tenant** - The DNS URL for the AD FS machine. Append the URL with '/adfs/oauth2'. 
         For example: `https://adfs.d365ffo.onprem.contoso.com/adfs/oauth2`
         Make sure to use the CNAME of the ADFS machine (in the example the CNAME is `https://adfs.d365ffo.onprem.contoso.com`)
 
