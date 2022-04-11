@@ -57,7 +57,7 @@ The following table lists the feature enhancements included in this release. Eac
 
 | Feature area | Feature name | More information |  
 |--------------|--------------|------------------|
-|              |              |                  | 
+| Import order | (India) Charge allocation on the Bill of the Entry page  |  Actual charge allocation is required on import order for each item line to determine the “customs assessable value” at the time of submission to Bill of Entry to customs authorities. This new feature will enable the Bill of entry form to edit and allocate actual charge amounts. For example, freight and insurance, on the item lines and deliver auto-computed assessable value. The new functionality becomes available as a new item on the **Feature Management** page.       | 
 |              |              |                  |
 
 ## Additional resources
