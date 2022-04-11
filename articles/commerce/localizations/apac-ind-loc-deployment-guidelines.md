@@ -65,7 +65,7 @@ Follow these steps to set up a development environment so that you can test and 
     > [!WARNING]
     > Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
 
-### The extension components
+### The Commerce Scale Unit extension components
 
 1. Open **web.config** in the root folder under the IIS Commerce Scale Unit site location.
 2. Register the extensions in the **extensionComposition** section of the configuration file.
