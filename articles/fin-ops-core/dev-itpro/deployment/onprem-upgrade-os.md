@@ -4,7 +4,7 @@
 title: Upgrade Windows Server in Microsoft Dynamics 365 Finance + Operations (on-premises) environments
 description: This topic explains how to upgrade the Windows Server version that your Microsoft Dynamics 365 Finance + Operations (on-premises) environments are using.
 author: faix
-ms.date: 03/29/2022
+ms.date: 04/05/2022
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
@@ -18,7 +18,7 @@ ms.search.validFrom: 2021-11-29
 
 This topic explains how to upgrade Windows Server in your Microsoft Dynamics 365 Finance + Operations (on-premises) environments.
 
-## Prerequisites for upgrading the SQL Server version
+## Prerequisites for upgrading Windows Server
 
 ### Upgrade from Windows Server 2016 to Windows Server 2019
 
