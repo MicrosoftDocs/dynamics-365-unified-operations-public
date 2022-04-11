@@ -4,7 +4,7 @@
 title: Deployment guidelines for cash registers for India
 description: This topic is a deployment guide for the Commerce localization for India.
 author: AlexChern0v
-ms.date: 04/08/2022
+ms.date: 04/11/2022
 ms.topic: article
 ms.prod:
 ms.technology:
