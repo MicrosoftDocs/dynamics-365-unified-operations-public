@@ -862,7 +862,7 @@ Import the latest version of the following ER configurations:
     </tr>
     <tr>
     <td colspan="3">
-    <p style="text-align: center;"><strong>Information about the document</strong></p>
+    <p align=center><strong>Information about the document</strong></p>
     </td>
     </tr>
     <tr>
@@ -1010,7 +1010,7 @@ Import the latest version of the following ER configurations:
     </tr>
     <tr>
     <td colspan="3">
-    <p style="text-align: center;"><strong>Information about the company</strong></p>
+    <p align=center><strong>Information about the company</strong></p>
     </td>
     </tr>
     <tr>
@@ -1081,7 +1081,7 @@ Import the latest version of the following ER configurations:
     </tr>
     <tr>
     <td colspan="3">
-    <p style="text-align: center;"><strong>Information about the good</strong></p>
+    <p align=center><strong>Information about the good</strong></p>
     </td>
     </tr>
     <tr>
@@ -1207,7 +1207,7 @@ Import the latest version of the following ER configurations:
     </tr>
     <tr>
     <td colspan="3">
-    <p style="text-align: center;"><strong>Contact information</strong></p>
+    <p align=center><strong>Contact information</strong></p>
     </td>
     </tr>
     <tr>
