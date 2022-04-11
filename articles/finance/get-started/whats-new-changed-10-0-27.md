@@ -45,9 +45,10 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by  |
 |----|----|----|----|
-|    |    |    |    | 
-|    |    |    |    | 
-|    |    |    |    |
+| Credit and collections  | Customer aging data storage  | This feature provides a new way to execute the customer aging data storage in cases where the existing Customer aging report times out because the report has too much data to print. After completion of the customer aging data storage the data can be exported to an external system.  | Feature management  | 
+| Credit and collections   | Customer aging performance  | The feature speeds up the process of aging customer accounts with many transactions by using top picking instead of bundling. Customer pools can be used with this performance enhancement. This feature can be used with or without the existing Customer aging performance enhancement enabled.  | Feature management   | 
+| Credit and collections  | Customer aging report option for Update collection status   |  The feature allows users to run the customer aging report without updating the collection status or creating collection tasks for the user running the report. Update collection status is the new parameter added to the Customer aging report.  | Parameter   |
+| Credit and collections | Print pro forma documents when sales order is on credit hold | A pro forma document (confirmation, picking ticket, release to warehouse, packing slip and invoice) can be printed while the sales order is on credit hold. The sales order will still be on hold; however, the pro-forma document can now be printed. | Feature management | 
 
 
 ## Feature enhancements included in this release
