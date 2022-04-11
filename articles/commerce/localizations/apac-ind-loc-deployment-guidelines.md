@@ -35,7 +35,7 @@ This topic is a deployment guide that shows how to enable the requirements for G
 > 
 > For information about how to install and use the Retail SDK, see the [Retail software development kit (SDK) architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
-This functionality consists of extensions for the Commerce runtime (CRT) and Point of sale (POS). To use this functionality, you must modify the configuration of CRT extensions. You must also modify and build the POS projects. We recommend that use you an unmodified Retail SDK to make the changes that are described in this topic. We also recommend that you use a source control system, such as Microsoft Visual Studio Online (VSO), where no files have been changed yet.
+This functionality consists of extensions for the Commerce runtime (CRT) and Point of sale (POS). To use this functionality, you must modify the configuration of the CRT extensions. You must also modify and build the POS projects. We recommend that use you an unmodified Retail SDK to make the changes that are described in this topic. We also recommend that you use a source control system, such as Microsoft Visual Studio Online (VSO), where no files have been changed yet.
 
 ## Prerequisites
 
