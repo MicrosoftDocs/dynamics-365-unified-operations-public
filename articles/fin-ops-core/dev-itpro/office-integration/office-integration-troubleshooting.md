@@ -4,7 +4,7 @@
 title: Troubleshoot the Office integration
 description: This topic provides answers to questions, tips, and troubleshooting information for the Microsoft Office integration capabilities.
 author: jasongre
-ms.date: 10/15/2021
+ms.date: 04/12/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -88,9 +88,14 @@ To check processing time in the Excel Add-in versus the server/service, follow t
 
 ### Is Export to Excel the best way to get data out of the system?
 
-The best way for end users to get data out of the system is to use the Excel Add-in. The add-in relies on the OData service to retrieve data and takes advantage of the security that data entities provide. The import and export capabilities in the Data management framework (DMF) and Data import/export framework (DIXF) can also be used; however, DMF and DIXF are often limited to administrators.
+The best way for end users to get data out of the system is to use the Excel Add-in. The add-in relies on the Open Data Protocol (OData) service to retrieve data and takes advantage of the security that data entities provide. The import and export capabilities in the Data management framework (DMF) and Data import/export framework (DIXF) can also be used. However, DMF and DIXF are often limited to administrators. Additionally, you might consider exploring the available [reporting and analytic features](../analytics/bi-reporting-home-page.md) in the product.
 
-The Export to Excel functionality can be used in situations where the above options are not possible, in particular to retrieve data from calculated columns (display methods), columns with formatted values, and data from temporary tables. This is because the export process uses the data from the active form to retrieve this data. Export to Excel will also return the data exactly as it is shown in the grid, which is useful for filtered datasets. However, this will take longer to export than using the options that go through the OData service.
+When the previously mentioned options can't be used, you might consider the Export to Excel functionality, which can be useful for retrieving data from calculated columns (display methods), columns that have formatted values, and data from temporary tables. Because the export process uses the data from the active form to retrieve data, Export to Excel will return the data exactly as it is shown in the grid. Additionally, it will return only the data that matches the current set of filters.
+
+Export to Excel does have its own set of limitations. First, this mechanism takes more time to export than the options that go through the OData service, and the time to export can be significant for larger exports. Secondly, the export of data to Excel is a memory-intensive process that can cause out-of-memory errors to occur and servers to stop responding, especially if the organization increases the export row limit beyond the default value. Export to Excel isn't intended for auditing purposes. When very large datasets must be exported from the system, data management is recommended.
+
+> [!WARNING]
+> Although organizations can increase the default Export to Excel row limit (50,000 records), we **strongly recommend** that you **not** raise this limit above 100,000 records. Depending on the characteristics of the environment and the specific grid that is being exported, even that limit might be too high and might cause memory issues.
 
 Because an export from Excel can take some time, it is recommended that the export is done with the Chrome or Edge browsers, with the automatic download option enabled. The automatic download option will ensure that the browser downloads the file as soon as the export is complete to ensure that the download link is used within the 15-minute time limit.
 
