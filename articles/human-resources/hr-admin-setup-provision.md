@@ -67,7 +67,7 @@ Before you create your first Human Resources environment, you should carefully p
 Considerations for additional environments:
 
 - **Data migration**: You may need to consider an additional environment for data migration activities to allow your sandbox environment to be used for testing purposes throughout the project. Having an additional environment allows data migrations activities to continue while testing and configuration activities occur simultaneously in a different environment.
-- **Integration**: You may need to consider an additional environment to configure and test integrations. This could include native integrations like the Ceridian Dayforce LinkedIn Talent Hub integrations, or custom integrations such as those for payroll, applicant tracking systems, or benefit systems and providers.
+- **Integration**: You may need to consider an additional environment to configure and test integrations. This could include native integrations like the Ceridian Dayforce or LinkedIn Talent Hub integrations, or custom integrations such as those for payroll, applicant tracking systems, or benefit systems and providers.
 - **Training**: You may need a separate environment that is configured with a set of training data in order to train your employees on use of the new system. 
 - **Multi-phase project**: You may need an additional environment to support configuration, data migration, testing, or other activities in a project phase that is planned after the initial go-live of the project.
 
