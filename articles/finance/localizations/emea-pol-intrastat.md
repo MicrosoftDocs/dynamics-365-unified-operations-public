@@ -9,7 +9,7 @@ ms.topic: article
 audience: Application User
 ms.reviewer: kfender
 ms.search.region: Global
-ms.author: v-aosipov
+ms.author: kfender
 ms.search.validFrom: 
 ---
 # Polish Intrastat
