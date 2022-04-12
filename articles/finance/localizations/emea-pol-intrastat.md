@@ -7,9 +7,9 @@ author: andosip
 ms.date: 11/09/2021
 ms.topic: article
 audience: Application User
-ms.reviewer: kfender
+ms.reviewer: kfend
 ms.search.region: Global
-ms.author: kfender
+ms.author: kfend
 ms.search.validFrom: 
 ---
 # Polish Intrastat
