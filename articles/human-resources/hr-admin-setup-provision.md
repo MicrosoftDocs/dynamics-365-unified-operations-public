@@ -45,6 +45,11 @@ Before you begin provisioning a new production environment, the following prereq
 
 ## Provision a Human Resources trial environment
 
+>[!NOTE]
+> Starting April 2022, the Human Resources trial will not be available on the stand alone application. Potential customers who are interested in evaluating the Human Resources capabilities within the Dynamics 365 stack, can do so using the free 30-day trial along with the demo data. 
+Dynamics 365 for Finance will include the Human Resources capabilities brought onto the Finance infrastructure through the merge of the stand-alone application. For more information about Dynamics 365 Finance trials, find step-by-step guide [here](/fin-ops/get-started/before-you-buy). 
+
+
 Prior to provisioning your first sandbox or production environment, you may want to provision a [Human Resources trial environment](https://go.microsoft.com/fwlink/p/?LinkId=2115962) to validate Human Resources functionality. Trial environments contain fictitious data that can be used to explore the program in a safe manner. Although a trial environment is owned by the user who requested it, other users can be invited through the system administration experience for Human Resources. 
 
 Trial environments provide the ability to evaluate human resources functionality for individuals who do not already have access to a Human Resources environment. If you are provisioning a trial environment and the authenticated user already has access to one or more existing Human Resources environments, the user will be redirected to the existing environment or list of environments.
