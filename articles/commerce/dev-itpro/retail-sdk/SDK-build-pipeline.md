@@ -4,7 +4,7 @@
 title: Set up Retail SDK build pipeline
 description: This topic shows how to set up the Azure DevOps build pipeline for the Retail SDK.
 author: mugunthanm 
-ms.date: 07/29/2020
+ms.date: 04/12/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -111,8 +111,7 @@ If the build machine uses MSBuild with the Azure DevOps pipeline, follow these s
 
 1. Install Visual Studio 2017 on the build machine.
 2. Optional, run **msbuild** (version 15.0) from the developer command prompt for Visual Studio 2017 in the build machine. Open the developer command prompt for Visual Studio 2017, navigate to the Retail SDK root folder, and run `msbuild dirs.proj`. Make sure that the **msbuild** command finishes successfully.  
-3. In the build machine add an environment variable for **msbuild**, version 15.0. Open **System Properties > Environment Variables > System variables**. Select **Path**, click **New**, and add the path variable for **msbuild**. An example of the path is 
-**C:\\Program Files(x86)\\Microsoft Visual Studio\\2017\\Enterprise\\MSBuild\\15.0\\Bin\\**. The path depends on where you installed Visual Studio 2017. To get the path for **msbuild**, open the **Developer Command Prompt for Visual Studio 2017**, and run the command **where msbuild**.
+3. In the build machine add an environment variable for **msbuild**, version 15.0. Open **System Properties \> Environment Variables \> System variables**. Select **Path**, click **New**, and add the path variable for **msbuild** and move the entry of the Path environment variable to the top of the list. An example of the path is `C:\\Program Files(x86)\\Microsoft Visual Studio\\2017\\Enterprise\\MSBuild\\15.0\\Bin\\`. The path depends on where you installed Visual Studio 2017. To get the path for **msbuild**, open the **Developer Command Prompt for Visual Studio 2017**, and run the command **where msbuild**.
 4. Restart the Azure DevOps build agent in the build machines.
 5. In the Azure DevOps pipeline, set the **Agent Pool** to **Default** and change the msbuild version to 15.0 or latest.
 
