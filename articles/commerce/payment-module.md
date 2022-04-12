@@ -80,7 +80,7 @@ The following illustration shows an example of the PayPal iframe invoked using t
 |Supported tender types| String| If multiple payment connectors are configured, you should provide the supported tender type string as defined in the Commerce headquarters payment connector configuration (see the following image). If blank, it defaults to the Adyen payment connector. Added in Commerce release 10.0.14.|
 |Is primary payment|  **True** or **False** | If **True**, any error messages will be generated from the primary payment connector on the checkout page. If both Adyen and PayPal payment connectors are configured, set Adyen to **True**, which was added in Commerce release 10.0.14.|
 |Use connector id| **True** or **False** | Use if multiple payment connectors are configured for the site. **True** if checked, set this property for connectors to utilize the connector id for payment correlation.|
-|Use browser set language code for iFrame|  **True** or **False** | (Adyen only) If **True** (checked), the Adyen iFrame will render the language based on the site user's browser context instead of using the language code of the Commerce Channel configured for the site.|
+|Use browser set language code for iFrame|  **True** or **False** | (Adyen only) If **True** (checked), the Adyen iFrame will render the language based on the site user's browser context instead of using the language code of the Commerce Channel configured for the site. Added in Commerce release 10.0.27.|
 
 The following illustration shows an example of the **Supported Tender Types** value set to "PayPal" in the payment connector configuration in Commerce headquarters.
 ![Example of supported tender types in Commerce headquarters.](./media/ecommerce-paymenttendertypes.png)
