@@ -6,7 +6,8 @@ description: This topic explains how to place existing certificates and update t
 author: PeterRFriis
 ms.date: 04/07/2022
 ms.topic: article
-ms.prod: 
+ms.prod: dynamics-365 
+ms.service:
 ms.technology: 
 
 # optional metadata

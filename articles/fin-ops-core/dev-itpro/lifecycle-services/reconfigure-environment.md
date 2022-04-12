@@ -6,7 +6,8 @@ description: This topic describes how to reconfigure your environment with a new
 author: PeterRFriis
 ms.date: 12/05/2017
 ms.topic: article
-ms.prod: 
+ms.prod: dynamics-365
+ms.service:
 ms.technology: 
 
 # optional metadata

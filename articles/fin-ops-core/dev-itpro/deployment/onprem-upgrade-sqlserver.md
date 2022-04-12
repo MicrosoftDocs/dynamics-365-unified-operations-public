@@ -6,6 +6,8 @@ description: This topic explains how to upgrade the Microsoft SQL Server instanc
 author: faix
 ms.date: 04/05/2022
 ms.topic: article
+ms.prod: dynamics-365 
+ms.service:
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global

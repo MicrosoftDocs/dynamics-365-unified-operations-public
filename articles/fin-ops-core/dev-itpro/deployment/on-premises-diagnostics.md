@@ -6,7 +6,8 @@ description: This topic provides information about how to expose the diagnostic 
 author: PeterRFriis
 ms.date: 04/05/2021
 ms.topic: article
-ms.prod: 
+ms.prod: dynamics-365 
+ms.service:
 ms.technology: 
 
 # optional metadata
