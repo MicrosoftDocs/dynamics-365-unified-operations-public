@@ -79,8 +79,8 @@ To enable parallel processing in Finance and Operations apps, complete the follo
 2. Go to **Data management > Framework parameters**.
 3. Select **Entity settings** and select **Configure entity execution parameters**.
 4. Add the parameters for parallel processing:
-  - **Import threshold record count** – The number of records that must be met before parallel processing is enabled.
-  - **Import task count** – The number of threads (tasks) to run in parallel.
+    - **Import threshold record count** – The number of records that must be met before parallel processing is enabled.
+    - **Import task count** – The number of threads (tasks) to run in parallel.
 5. Select **Save**.
 
 
