@@ -4,7 +4,7 @@
 title: Dynamics 365 Commerce e-commerce localization guide
 description: This guide describes the process of localizing a Microsoft Dynamics 365 Commerce e-commerce site into additional languages and configuring your site to support multiple channels.
 author: bicyclingfool
-ms.date: 04/05/2022
+ms.date: 04/12/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -13,8 +13,9 @@ ms.author: stuharg
 ms.search.validFrom: 2017-06-20
 ---
 
-
 # Dynamics 365 Commerce e-commerce localization guide
+
+[!include [banner](includes/banner.md)]
 
 This guide describes the process of localizing a Microsoft Dynamics 365 Commerce e-commerce site into additional languages and configuring your site to support multiple channels.
 
@@ -207,7 +208,7 @@ As of the Commerce version 10.0.16 release, it is not possible to localize the b
 Strings that are rendered as part of the module itself (e.g. "Previous" and "Next" in a carousel module) are localized separately from module content. See
 the [Localize a module](e-commerce-extensibility/localize-module.md) help topic for instructions.
 
-## Additional Resources
+## Additional resources
 
 [Page model glossary](page-elements-overview.md)
 
@@ -215,7 +216,7 @@ the [Localize a module](e-commerce-extensibility/localize-module.md) help topic 
 
 [Localize a module](e-commerce-extensibility/localize-module.md)
 
-[Module definition file](e-commerce-extensibility/module-definition-file.md
+[Module definition file](e-commerce-extensibility/module-definition-file.md)
 
 [Localize Commerce extension resources and label files](dev-itpro/extension-resource-localization.md)
 
