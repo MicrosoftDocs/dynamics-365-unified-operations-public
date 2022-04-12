@@ -6,7 +6,8 @@ description: This topic explains how to connect an on-premises deployment of Mic
 author: RichdiMSFT
 ms.date: 04/07/2022
 ms.topic: article
-ms.prod: 
+ms.prod: dynamics-365
+ms.service:
 ms.technology: 
 
 # optional metadata

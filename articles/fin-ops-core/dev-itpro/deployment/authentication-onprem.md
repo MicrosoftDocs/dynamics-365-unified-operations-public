@@ -6,8 +6,10 @@ description: This topic provides background information about how the authentica
 author: faix
 ms.date: 11/18/2020
 ms.topic: article
-ms.prod:
-ms.technology: 
+ms.prod: dynamics-365 
+ms.service:
+ms.technology:
+
 
 # optional metadata
 
