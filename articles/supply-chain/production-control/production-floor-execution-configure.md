@@ -120,26 +120,26 @@ To use this functionality, turn on the following feature in [Feature management]
 [!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 <!-- KFM: preview until 10.0.27 GA -->
 
-Workers can form a team when multiple workers are assigned to the same production job. The team can nominate one worker as a pilot, and the remaining workers will then automatically become assistants to that pilot. For the resulting team, only the pilot needs to register job status, while time records apply to all team members.
+When multiple workers are assigned to the same production job, they can form a team. The team can nominate one worker as a pilot. The remaining workers then automatically become assistants of that pilot. For the resulting team, only the pilot must register job status. Time records apply to all team members.
 
 To use this functionality, turn on the following feature in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - *Production teams in the production floor execution interface*
 
-### Enable additional configuration on the production floor execution interface
+### Enable additional configuration in the production floor execution interface
 
 [!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 <!-- KFM: preview until 10.0.27 GA -->
 
-This feature adds the following options to the **Configure production floor execution** page:
+This feature adds settings for the following functionality to the **Configure production floor execution** page:
 
-- Auto-open start dialog when completing search
-- Auto-open report progress dialog when completing search
-- Default remaining quantity in the report progress dialog
-- Enable adjust material (also requires the *Register material consumption on the production floor execution interface (non-WMS)* feature)
-- Enable search by project ID
+- Automatically open the **Start job** dialog box when a search is completed.
+- Automatically open the **Report progress** dialog box when a search is completed.
+- Pre-fill the remaining quantity in the **Report progress** dialog box.
+- Enable material consumption adjustments. (This functionality also requires the *Register material consumption on the production floor execution interface (non-WMS)* feature.)
+- Enable searches by project ID.
 
-Instructions for how to use these settings are provided later in this topic.
+Information about how to use the settings is provided later in this topic.
 
 To use this functionality, turn on the following feature in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
@@ -150,20 +150,20 @@ To use this functionality, turn on the following feature in [Feature management]
 To create and maintain production floor execution configurations, go to **Production control \> Setup \> Manufacturing execution \> Configure production floor execution**. The **Configure production floor execution** page shows a list of existing configurations. On this page, you can perform the following actions:
 
 - Select any production floor configuration that is listed in the left column to view and edit it.
-- Select **New** on the Action Pane to add a new configuration to the list. Then, in the **Configuration** field, enter a name to identify the new configuration. The name that you enter must be unique among all configurations, and you won't be able to edit it later. Optionally, enter a **Description**.
+- On the Action Pane, select **New** to add a new configuration to the list. Then, in the **Configuration** field, enter a name to identify the new configuration. The name that you enter must be unique among all configurations, and you won't be able to edit it later. In the **Description** field, you can optionally enter a description of the configuration.
 
 Next, configure the various settings for the selected configuration, as described in the following subsections.
 
 ### The General FastTab
 
-The following settings are available on the **General** FastTab.
+The following settings are available on the **General** FastTab:
 
-- **Clock in and out only** - Set this option to *Yes* to create a simplified interface that only provides clock-in and clock-out functionality. This disables most of the other options on this page. You must remove all lines from the **Tab selection** FastTab before you can enable this option.
-- **Enable search** - Set this option to *Yes* to include a search field on the jobs list. Workers can find a specific job by entering the job ID or find all jobs for a specific order by entering the order ID. Workers can enter the ID by using a keypad or by scanning a bar code.
-- **Enable search by project ID** – Set this option to *Yes* to enable workers to search by project ID (in addition to job ID and order ID) in the search field of the production floor execution interface. You can only enable this when **Enable search** is also set to *Yes*.
-- **Auto-open start dialog** – When this option is set to *Yes*, the **Start job** dialog box automatically opens when workers use the search bar to find a job.
-- **Auto-open report progress dialog** – When this option is set to *Yes*, the **Report progress** dialog box automatically opens when workers use the search bar to find a job.
-- **Enable adjust material** – Set this option to *Yes* to enable the **Adjust material** button in the **Report progress** dialog. Workers can select this button to adjust material consumption for the job.
+- **Clock in and out only** – Set this option to *Yes* to create a simplified interface that only provides clock-in and clock-out functionality. This disables most of the other options on this page. You must remove all lines from the **Tab selection** FastTab before you can enable this option.
+- **Enable search** – Set this option to *Yes* to include a search field on the jobs list. Workers can find a specific job by entering the job ID or find all jobs for a specific order by entering the order ID. Workers can enter the ID by using a keypad or by scanning a bar code.
+- **Enable search by project ID** – Set this option to *Yes* to enable workers to search by project ID (in addition to job ID and order ID) in the search field of the production floor execution interface. You can set this option to *Yes* only when the **Enable search** option is also set to *Yes*.
+- **Auto-open start dialog** – When this option is set to *Yes*, the **Start job** dialog box is automatically opened when workers use the search bar to find a job.
+- **Auto-open report progress dialog** – When this option is set to *Yes*, the **Report progress** dialog box is automatically opened when workers use the search bar to find a job.
+- **Enable adjust material** – Set this option to *Yes* to enable the **Adjust material** button in the **Report progress** dialog box. Workers can select this button to adjust material consumption for the job.
 - **Report quantity at clock-out** – Set this option to *Yes* to prompt workers to report feedback about jobs that are in progress when they clock out. When this option is set to *No*, workers won't be prompted.
 - **Lock employee** – When this option is set to *No*, workers will be signed out immediately after they make a registration (such as a new job). The interface will then return to the sign-in page. When this option is set to *Yes*, workers will stay signed in to the production floor execution interface. However, a worker can manually sign out so that another worker can sign in while the production floor execution interface continues to run under the same system user account. For more information about these types of accounts, see [Assigned users](config-job-card-device.md#assigned-users).
 - **Use the actual time of registration** – Set this option to *Yes* to set the time for each new registration to the exact time when the worker submitted the registration. When this option is set to *No*, the sign-in time is used instead. You will usually want to set this option to *Yes* if you've set the **Lock employee** and/or **Single worker** option to *Yes* in cases where workers often remain signed in for longer periods.
@@ -175,14 +175,14 @@ The following settings are available on the **General** FastTab.
 
 ### The Tab selection FastTab
 
-Use the settings on the **Tab selection** FastTab to choose which tabs should be displayed by the production floor execution interface when the current configuration is active. You can design as many tabs as you need and then add and arrange them as required using the buttons on the FastTab toolbar. For details about how to design tabs and work with the settings here, see [Design the production floor execution interface](production-floor-execution-tabs.md).
+Use the settings on the **Tab selection** FastTab to select which tabs the production floor execution interface should show when the current configuration is active. You can design as many tabs as you need, and then add and arrange them as you require by using the buttons on the FastTab toolbar. For information about how to design tabs and work with the settings here, see [Design the production floor execution interface](production-floor-execution-tabs.md).
 
 ### The Report progress FastTab
 
-The following settings are available on the **Report progress** FastTab.
+The following settings are available on the **Report progress** FastTab:
 
-- **Enable adjust material** – Set this option to *Yes* to include the **Adjust material** button in the **Report progress** dialog. Workers can select this button to adjust material consumption for the job.
-- **Default remaining quantity** -  Set **Default remaining quantity** to *Yes* to pre-fill the expected remaining quantity for a production job on the **Report progress** dialog.
+- **Enable adjust material** – Set this option to *Yes* to include the **Adjust material** button in the **Report progress** dialog box. Workers can select this button to adjust material consumption for the job.
+- **Default remaining quantity** – Set this option to *Yes* to pre-fill the expected remaining quantity for a production job in the **Report progress** dialog box.
 
 ## Clean up job configurations
 
