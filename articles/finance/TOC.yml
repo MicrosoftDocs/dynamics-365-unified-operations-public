@@ -440,7 +440,7 @@
               href: accounts-receivable/sb-deferral-transactions.md
         - name: Multi-element revenue allocation
           items:
-          - name: Set up multi-element revenue allocation
+          - name: Set up multiple element revenue allocation
           - href: accounts-receivable/sb-rev-alloc.md
       - name: Payments and settlements
         items:
