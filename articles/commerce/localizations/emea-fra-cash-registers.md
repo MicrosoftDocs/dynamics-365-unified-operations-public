@@ -5,7 +5,7 @@ title: Cash register functionality for France
 description: This topic provides an overview of the cash register functionality that is available for France. It also provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
 manager: annbe
-ms.date: 04/07/2022
+ms.date: 04/22/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -118,7 +118,7 @@ The data that is signed for a sales or return transaction is a text string that 
 - The previous signature for the same register. A blank value is used for the first signed sales or return transaction.
 
 > [!NOTE]
-> Return transactions are considered regular sales transactions for digital signing purposes. This means that the signing process for return transactions is the same as for sales transactions, and return transactions are included in the same sequence of signatures as sales transactions. The total amount of return is negative, that is, it includes the minus sign when it is added to the text string that is signed.
+> Return transactions are considered regular sales transactions for digital signing purposes. This means that the signing process for return transactions is the same as for sales transactions, and return transactions are included in the same sequence of signatures as sales transactions. The total amount of a return is negative, that is, it includes the minus sign when it is added to the text string that is signed.
 
 You can view the transaction signature and the transaction data that was used to generate it on the **Fiscal transactions** FastTab of the **Store transactions** page in Commerce headquarters. By selecting **Extended data**, you can view specific properties of the fiscal transaction, such as the signature, sequential number, certificate thumbprint, and hash algorithm identification. 
 
@@ -207,7 +207,7 @@ The information that is included on X and Z reports is based on French requireme
 
 The totals are also stored in the closed shift record and transferred to Commerce headquarters.
 
-It is possible to export a Z report from a closed shift in Commerce headquarters. An exported Z report is an XML file that includes the totals for the closed shift. Specifically, the file includes the following data:
+It is possible to export a Z report from a closed shift in Commerce headquarters. An exported Z report is an XML file that includes the totals for the closed shift. Specifically, the file includes the data in the following table.
 
 | Element/Node                     | Comment |
 |----------------------------------|---------|
@@ -370,7 +370,7 @@ In the Receipt format designer, add the following custom fields to the appropria
     - **NF 525 Certificate** – This field prints the category and number of the certificate of compliance that an authorized body issued per the NF 525 certification requirements.
 
         > [!NOTE]
-        > The certificate category and number that are assigned to **[Commerce](#certification-information)** are printed.
+        > The certificate category and number that are assigned to [Commerce](#certification-information) are printed.
 
     - **Text** – Add a text field, and specify the version of the software that was certified per the NF 525 certification requirements and that is used to produce receipts (for example, **Microsoft Dynamics 365 Commerce v.10**).
 
