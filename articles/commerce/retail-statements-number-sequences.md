@@ -17,14 +17,13 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
 # ms.tgt_pltfrm: 
-ms.custom: ?
-ms.assetid: ?
+ms.custom: 
+ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: analpert
 ms.search.validFrom: 2022-04-12
 ms.dyn365.ops.version: 10.0.21
-
 ---
 
 # Retail statements number sequence setup
