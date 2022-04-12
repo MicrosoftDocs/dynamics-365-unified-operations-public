@@ -441,7 +441,7 @@
         - name: Multi-element revenue allocation
           items:
           - name: Set up multiple element revenue allocation
-          - href: accounts-receivable/sb-rev-alloc.md
+            href: accounts-receivable/sb-rev-alloc.md
       - name: Payments and settlements
         items:
         - name: Customer payment overview
