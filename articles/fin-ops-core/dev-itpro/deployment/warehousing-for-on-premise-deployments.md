@@ -4,10 +4,9 @@
 title: Configure the Warehousing app for on-premises deployments
 description: This topic describes the prerequisites for the warehousing app for on-premises deployments.
 author: faix
-ms.date: 04/12/2022
+ms.date: 04/05/2022
 ms.topic: article
-ms.prod: dynamics-365 
-ms.service:
+ms.prod: 
 ms.technology: 
 
 # optional metadata
@@ -102,22 +101,76 @@ Make sure that the devices where the app is installed have the correct certifica
 
 You must configure the Warehousing app on the device to connect to the server through the AD FS application.
 
-1.  In the app, open **Connection settings**.
-2.  Enter the following information:
+1.  In the app, clic on **Select a connection**.
+2.  then **Server configuration**
 
-    1.  **Active Directory Client ID** - The client ID that you obtained when  you created an application entry in AD FS (step 2 in "Create an application entry in AD FS").
+There is multiple way to set up a new connection :
+* Add from file
+* Add from QR code
+* Input manually
 
-    2.  **Active Directory Client Secret** - The client secret obtained when you created an application entry in AD FS.
+### Create a connection settings file or QR code ###
+If you choose to "Add from file" you can import a .json file with th following information:
 
-    3.  **Active Directory Resource** - The DNS URL for the AOS. Append the URL with '/namespaces/AXSF'. 
+| Parameter | Description | 
+|-----------|-----------|
+| ConnectionName | Specify the name of the connection setting. The maximum length is 20 characters. Because this value is the unique identifier for a connection setting, make sure that it's unique in the list. If a connection that has the same name already exists on the device, it will be overridden by the settings from the imported file. |
+|  ActiveDirectoryClientAppId         |      Specify the client ID that you made a note of while you were setting up Azure AD in the Create a web service application in Azure Active Directory section.     |  
+|       ActiveDirectoryResource    | Specify the root URL of Supply Chain Management.          | 
+|    ActiveDirectoryTenant       |     Specify the Azure AD domain name that you're using with the Supply Chain Management server. This value has the form https://login.windows.net/<your-Azure-AD-domain-name>. Here is an example: https://login.windows.net/contosooperations.onmicrosoft.com. For more information about how to find your Azure AD domain name, see Locate important IDs for a user.      | 
+|   Company        |   Specify the legal entity in Supply Chain Management that you want the application to connect to.        | 
+|   ConnectionType        |     (Optional) Specify whether the connection setting should use a certificate or a client secret to connect to an environment. Valid values are "certificate" and "clientsecret". The default value is "certificate" **Note**: Client secrets can't be imported.      | 
+|      IsEditable     |  (Optional) Specify whether the app user should be able to edit the connection setting. Valid values are "true" and "false". The default value is "true".         | 
+|      IsDefault     |       (Optional) Specify whether the connection is the default connection. A connection that is set as the default connection will automatically be preselected when the app is opened. Only one connection can be set as the default connection. Valid values are "true" and "false". The default value is "false".    | 
+|CertificateThumbprint| (Optional) For Windows devices, you can specify the certificate thumbprint for the connection. For Android devices, the app user must select the certificate the first time that a connection is used.          | 
+
+The following example shows a valid connection settings file that contains two connections. As you can see, the connection list (named "ConnectionList" in the file) is an object that has an array that stores each connection as an object. Each object must be enclosed in braces ({}) and separated by commas, and the array must be enclosed in brackets ([]).
+    
+```json
+{
+    "ConnectionList": [
+        {
+            "ActiveDirectoryClientAppId":"aaaaaaaa-bbbb-ccccc-dddd-eeeeeeeeeeee",
+            "ConnectionName": "Connection1",
+            "ActiveDirectoryResource": "https://yourenvironment.cloudax.dynamics.com",
+            "ActiveDirectoryTenant": "https://login.windows.net/contosooperations.onmicrosoft.com",
+            "Company": "USMF",
+            "IsEditable": false,
+            "IsDefaultConnection": true,
+            "CertificateThumbprint": "aaaabbbbcccccdddddeeeeefffffggggghhhhiiiii",
+            "ConnectionType": "certificate"
+        },
+        {
+            "ActiveDirectoryClientAppId":"aaaaaaaa-bbbb-ccccc-dddd-eeeeeeeeeeee",
+            "ConnectionName": "Connection2",
+            "ActiveDirectoryResource": "https://yourenvironment2.cloudax.dynamics.com",
+            "ActiveDirectoryTenant": "https://login.windows.net/contosooperations.onmicrosoft.com",
+            "Company": "USMF",
+            "IsEditable": true,
+            "IsDefaultConnection": false,
+            "ConnectionType": "clientsecret"
+        }
+    ]
+}
+```
+### Manually configure the application ###
+
+1.  In the app, clic on **Select a connection**.
+2.  then **Server configuration** 
+    
+    a.  **Active Directory Client ID** - The client ID that you obtained when  you created an application entry in AD FS (step 2 in "Create an application entry in AD FS").
+
+    b  **Active Directory Client Secret** - The client secret obtained when you created an application entry in AD FS.
+
+    c.  **Active Directory Resource** - The DNS URL for the AOS. Append the URL with '/namespaces/AXSF'. 
         For example: `https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF`
 
-    4.  **Active Directory Tenant** - The DNS URL for the AD FS machine. Append the URL with '/adfs/oauth2'. 
+    d.  **Active Directory Tenant** - The DNS URL for the AD FS machine. Append the URL with '/adfs/oauth2'. 
         For example: `https://adfs.d365ffo.onprem.contoso.com/adfs/oauth2`
         Make sure to use the CNAME of the ADFS machine (in the example the CNAME is `https://adfs.d365ffo.onprem.contoso.com`)
+3. **Company** - Enter the legal entity to which you want the application to connect.
 
-3.  **Company** - Enter the legal entity to which you want the application to connect.
-4.  Select the **Back** button in the top-left corner of the application.
+4.  Select the **back** button in the top-left corner of the application.
 
     The application will now connect to your server and the log-in screen for the warehouse worker will display.
     
