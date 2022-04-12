@@ -3,7 +3,7 @@
 
 title: Action messages
 description: An action message is a system-generated suggestion to change an existing planned or firmed order.
-author: ChristianRytt
+author: t-benebo
 ms.date: 10/14/2019
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 19411
 ms.assetid: 52b46d93-7d02-46b5-aad1-9fd08206bf9d
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

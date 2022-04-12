@@ -203,4 +203,12 @@ Store Commerce can be extended so that it's integrated with hardware devices. Yo
 
 + During activation, when prompted for entering the AAD password with multiple options, choose password. The other options might not work.
 
+## Additional Resources
+[Modernizing the Dynamics 365 Commerce in-store technology stack](https://www.microsoft.com/download/details.aspx?id=103896)
+
+[Commerce SDK Tech Talk Series](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-series-commerce-extensions)
+
+[Store Commerce Extensions Overview](pos-extension/pos-extension-overview.md)
+
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

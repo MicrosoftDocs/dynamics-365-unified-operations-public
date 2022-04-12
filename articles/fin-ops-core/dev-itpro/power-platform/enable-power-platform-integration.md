@@ -4,7 +4,7 @@
 title: Enable the Microsoft Power Platform integration
 description: This topic explains how to enable the Microsoft Power Platform integration by using Microsoft Dynamics Lifecycle Services (LCS) for Finance and Operations apps and Dataverse.
 author: jaredha
-ms.date: 03/02/2022
+ms.date: 04/11/2022
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -422,7 +422,7 @@ Dataverse will use the Azure AD application that you created to call Finance and
 
     function Test-Settings()
     {
-        $cdsApiPath = "accounts";
+        $cdsApiPath = "sdkmessages";
         Write-Host "Testing setup by calling API '$($cdsApiPath)'..."
         $webroot = Get-AosWebSitePhysicalPath -ErrorAction stop
         $webrootBinPath = Join-Path $webroot "bin"
@@ -443,8 +443,8 @@ Dataverse will use the Azure AD application that you created to call Finance and
             $task = $method.Invoke($cdsWebApiClient, @($cdsApiPath))
             $response = $task.GetAwaiter().GetResult()
 
-            $logger.WriteInfo("Received response with length: $($response.Length)")
-            Write-Verbose $logger.LogContent.ToString()
+            Write-Host $logger.LogContent.ToString()
+            Write-Host "Received response with length: $($response.Length)" 
             Write-Host "Test complete."
         }
         catch
@@ -492,5 +492,38 @@ Dataverse will use the Azure AD application that you created to call Finance and
     - **Dataverse AAD app ID** – Enter the **Application (client) ID** value of the Azure AD application that you created earlier.
     - **Dataverse AAD app secret** – Enter the secret key value that was created earlier for the Azure AD apps.
 
+## Verifying Power Platform integration status
+
+The ```RetrieveFinanceAndOperationsIntegrationDetails``` API is available to validate the status of the Power Platform integration for the Power Platform environment. If the Power Platform environment is linked to a Finance and Operations apps environment through the Power Platform integration, the API will return the AAD tenant and environment details of the Finance and Operations apps environment.
+
+The API can be used in troubleshooting to verify that the Power Platform integration is enabled for an environment. It is also recommended that the API be used in coding plug-ins, client forms, or other applications that must be aware of the Finance and Operations apps environment linked to the Power Platform environment.
+
+**Request**
+```http
+GET [Organization URI]/api/data/v9.1/RetrieveFinanceAndOperationsIntegrationDetails
+```
+
+**Response**
+```json
+{
+    "Url": "https://contoso.operations.dynamics.com",
+    "TenantId": "72ad15fq-3m88-4e15-be25-8751c9bd0764",
+    "Id": "b2106f5c-e218-4aac-841a-a59da4738eb4"
+}
+```
+
+**Properties**
+
+| Property<br>**Physical name**<br>***Type*** | Use | Description |
+| --- | --- | --- |
+| Environment URL<br>**Url**<br>***String*** | Read-only<br>Required | The URL of the Finance and Operations apps environment linked to the Power Platform environment through the Power Platform integration. |
+| Tenant ID<br>**TenantId**<br>***GUID*** | Read-only<br>Required | The ID of the Azure Active Directory (AAD) tenant on which both the Finance and Operations apps environment and Power Platform environment are located. |
+| Environment ID<br>**Id**<br>***GUID*** | Read-only<br>Required | The ID of the Finance and Operations apps environment linked to the Power Platform environment through the Power Platform integration. |
+
+If the environment is not linked to a Finance and Operations apps environment through the Power Platform integration, the following error is returned in the API response:
+
+| Error code | Message |
+| --- | --- |
+| 0x80048d0b | Dataverse environment is not integrated with Finance and Operations. |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

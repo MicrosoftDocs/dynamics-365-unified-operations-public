@@ -4,7 +4,7 @@
 title: Multiple VAT registration numbers
 description: This topic provides information about the functionality for multiple value-added tax (VAT) registration numbers.
 author: epodkolz
-ms.date: 11/09/2021
+ms.date: 04/05/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -110,11 +110,11 @@ On the **Sales tax settlement periods** page, create sales tax settlement period
 
 ### Set up customer and vendor tax registration numbers in the Tax feature setup
 
-1. In Regulatory Configuration Service (RCS), go to **Globalization Features** \> **Tax**. 
-2. On the **Customer Tax Registration Number Applicability** tab, verify that the registration IDs for customers are defined. 
-3. On the **Vendor Tax Registration Number Applicability** tab, verify that the registration IDs for vendors are defined.
+1. In Regulatory Configuration Service (RCS), open the tax calculation feature setup. 
+2. On the **Customer Tax Registration Number Applicability** tab, under **Applicability rules**, verify that the registration IDs for customers are defined. 
+3. On the **Vendor Tax Registration Number Applicability** tab, under **Applicability rules**, verify that the registration IDs for vendors are defined.
 
-    ![Customer and vendor registration IDs on the Tax feature setup page.](./media/Tax-Service-MultVATID-Tax-feature-setup-09-2.png)
+   ![Customer and vendor registration IDs on the Tax feature setup page.](./media/tax-service-multvatid-tax-feature-setup-09-2NewUI.png)
 
     > [!NOTE]
     > During sales tax calculation and document posting, the tax service returns the customer's or vendor's tax registration number to Dynamics 365 Finance and updates the **Tax exempt number** field on the sales order or purchase order. If the corresponding value isn't set up on the **Registration ID** FastTab on the **Manage addresses** page for the customer or vendor, the registration ID is left blank, and you receive the following message: "Customer tax registration 'xxx' is not found in the customer's Registration IDs setup. To add customer tax registration to sales tax transactions and posted documents, make sure the registration is defined in the Registration IDs setup."

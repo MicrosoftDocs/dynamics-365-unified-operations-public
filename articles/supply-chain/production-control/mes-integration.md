@@ -59,7 +59,9 @@ You can enable any or all of the following processes for integration.
 
 ## Monitor incoming messages
 
-To monitor the incoming messages to the system, open the **Manufacturing execution systems integration** page. There, you can view, process, and troubleshoot issues.
+To monitor the incoming messages to the system, open the **Manufacturing execution systems integration** page. There you can view, process, and troubleshoot issues.
+
+All messages for a specific production order are processed in the sequence they are received. However, messages for different production orders may not be processed in the received sequence because batch jobs are processed in parallel. In case of failure, the batch job will attempt to process each message three times before setting it to *Failed* status.
 
 ## Call the API
 
@@ -129,7 +131,7 @@ The following table shows the fields that each line in the `ReportFinishedLines`
 | `InventoryLotId` | Optional | String |
 | `BaseValue` | Optional | String |
 | `EndJob` | Optional | Enum (Yes \| No) |
-| `EndPickingList` | Optional | BEnum (Yes \| No) |
+| `EndPickingList` | Optional | Enum (Yes \| No) |
 | `EndRouteCard` | Optional | Enum (Yes \| No) |
 | `PostNow` | Optional | Enum (Yes \| No) |
 | `AutoUpdate` | Optional | Enum (Yes \| No) |
@@ -228,6 +230,10 @@ For the *end production order* message, the `_messageType` value is `ProdProduct
 | `UseTimeAndAttendanceCost` | Optional | Enum (Yes \| No) |
 | `AutoReportAsFinished` | Optional | Enum (Yes \| No) |
 | `AutoUpdate` | Optional | Enum (Yes \| No) |
+
+## Other production information
+
+The messages support actions or events that happen on the shop floor. They are processed using the MES integration framework described in this topic. The design assumes that other reference information to be shared with the MES (such as product-related information, or the bill of materials or route (with its specific setup and configuration times) used in a specific production order) will be retrieved from the system using [data entities](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#data-entities) via file transfer or OData.
 
 ## Receive feedback about the state of a message
 

@@ -4,7 +4,7 @@
 title: SDK and module library kit updates
 description: This topic covers regular updates that will be released as part of the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
-ms.date: 03/18/2022
+ms.date: 03/22/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -93,9 +93,9 @@ We recommend that you keep the online SDK updated to the latest version, regardl
 
 To determine the latest released versions of the dependency packages, follow these feed links:
 
-- [Module library feed](https://dev.azure.com/commerce-partner/Registry/_packaging?_a=package&feed=dynamics365-commerce&view=versions&package=%40msdyn365-commerce-modules%2Fstarter-pack&protocolType=Npm)
-- [SDK feed](https://dev.azure.com/commerce-partner/Registry/_packaging?_a=package&feed=dynamics365-commerce&view=versions&package=%40msdyn365-commerce%2Fbootloader&protocolType=Npm)
-- [Retail Server proxy feed](https://dev.azure.com/commerce-partner/Registry/_packaging?_a=package&feed=dynamics365-commerce&view=versions&package=%40msdyn365-commerce%2Fretail-proxy&protocolType=Npm)
+- [Module library feed](https://dev.azure.com/commerce-partner/Registry/_artifacts/feed/dynamics365-commerce/Npm/@msdyn365-commerce-modules%2Fstarter-pack/9.36.11-preview.0/overview)
+- [SDK feed](https://dev.azure.com/commerce-partner/Registry/_artifacts/feed/dynamics365-commerce/Npm/@msdyn365-commerce%2Fbootloader/1.36.8/overview)
+- [Retail Server proxy feed](https://dev.azure.com/commerce-partner/Registry/_artifacts/feed/dynamics365-commerce/Npm/@msdyn365-commerce%2Fretail-proxy/9.36.2/overview)
 
 ## Determine the versions deployed on an e-Commerce site
 

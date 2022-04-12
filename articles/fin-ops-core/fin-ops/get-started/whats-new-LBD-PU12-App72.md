@@ -6,7 +6,8 @@ description: This topic describes features that are either new or changed in on-
 author: sericks007
 ms.date: 03/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: dynamics-365
+ms.service:
 ms.technology: 
 
 # optional metadata

@@ -73,7 +73,7 @@ IIS mode is a complete on-premises scale unit, where all the components match re
 Before you set up the self-hosted or IIS-hosted environment, complete the following prerequisites in this order:
 
 1. Install .NET Core SDK 3.1 for Windows x64 from [Download .NET Core 3.1](https://dotnet.microsoft.com/download/dotnet/3.1).
-2. Install any edition of [SQL server](/sql-server/sql-server-downloads), and enable full text search. For more information, see [Add Features to an Instance of SQL Server (Setup)](/sql/database-engine/install-windows/add-features-to-an-instance-of-sql-server-setup). The minimum supported version is 13.0.5026.0 SqlServer 2016 SP2.
+2. Install any edition of [SQL server](/sql/database-engine/install-windows/install-sql-server), and enable full text search. For more information, see [Add Features to an Instance of SQL Server (Setup)](/sql/database-engine/install-windows/add-features-to-an-instance-of-sql-server-setup). The minimum supported version is 13.0.5026.0 SqlServer 2016 SP2.
 
     + Enable Mixed (SQL + Windows/Integrated) authentication.
     + If no default instance of SQL Server is installed, the deployment of CSU will fail. An error message will indicate that an instance could not be found. If you want to use a named instance instead, edit the **Install.ps1** file by inserting the following line after line 78. (You can find this script in **Dynamics365Commerce.ScaleUnit/src/ScaleUnitSample/Scripts** folder.)

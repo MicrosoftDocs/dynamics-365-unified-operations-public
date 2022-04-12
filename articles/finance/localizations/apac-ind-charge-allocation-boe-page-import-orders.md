@@ -121,6 +121,8 @@ The new feature introduces the following key changes:
    ![Charge allocation field on Allocate charges to order lines pane.](media/charges-allocation-field.png)
 
 7. Review the assessable value for each BOE line.
+ 
+   ![BOE lines, Assessable value field.](media/assessable-value.png)
 
    > [NOTE]
    > You can still edit charges on the BOE lines.

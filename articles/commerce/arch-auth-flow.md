@@ -43,7 +43,7 @@ Access to each of the application programming interfaces (APIs) on the Commerce 
 - **Anonymous** – APIs associated with this role are primarily used by e-Commerce sites without user authentication.
 - **Customized APIs** – Access to APIs associated with this role can be restricted using any of the methods described above such as POS device activation, customer authentication, and anonymous authentication.
 
-For the full list of Commerce Scale Unit APIs and their access restrictions, see [Commerce Scale Unit customer and consumer APIs](/dev-itpro/retail-server-customer-consumer-api).
+For the full list of Commerce Scale Unit APIs and their access restrictions, see [Commerce Scale Unit customer and consumer APIs](dev-itpro/retail-server-customer-consumer-api.md).
 
 ### Supported authentication methods
 
@@ -56,10 +56,10 @@ The following table describes the set of supported authentication methods for AP
 | Employee | Dynamics 365 POS authentication flows\* | Extended sign-in credentials (for example, by using a bar code or a magnetic stripe reader \[MSR\]) | In Commerce headquarters, configure a worker for extended sign-in. | [Set up extended logon functionality for MPOS and Cloud POS](extended-logon.md) |
 | Customer | Dynamics 365 Commerce authentication flows | Site user authentication by using Azure AD B2C | <ol><li>Create an Azure AD business-to-consumer (B2C) application.</li><li>In Commerce headquarters, add the Azure AD B2C application to the accepted list of identity providers.</li><li>In Commerce site builder, configure the Azure AD B2C application.</li></ol> | [Set up a B2C tenant in Commerce](set-up-b2c-tenant.md)<p>[Set up custom pages for user sign-ins](custom-pages-user-logins.md)</p> |
 | Customer | Dynamics 365 Commerce authentication flows | Site user authentication by using an external identity provider that supports OpenID Connect | <ol><li>Create an Azure AD B2C application, and configure it to support external identity providers.</li><li>In Commerce headquarters, add the Azure AD B2C application to the accepted list of identity providers.</li><li>In Commerce site builder, configure the Azure AD B2C application.</li></ol> | [Set up a B2C tenant in Commerce](set-up-b2c-tenant.md)<p>[Set up custom pages for user sign-ins](custom-pages-user-logins.md)</p> |
-| Customer | Third-party e-Commerce authentication flows | Site user authentication by using an external identity provider that supports OpenID Connect | In Commerce headquarters, add the external identity provider to the accepted list of identity providers. | [Configure authentication providers](/dev-itpro/configure-authentication-providers.md) |
+| Customer | Third-party e-Commerce authentication flows | Site user authentication by using an external identity provider that supports OpenID Connect | In Commerce headquarters, add the external identity provider to the accepted list of identity providers. | [Configure authentication providers](/dynamics365/commerce/dev-itpro/configure-authentication-providers) |
 | Application | Third-party app or service authentication flows | Azure AD service-to-service authentication/application authentication | In Commerce headquarters, add the external identity provider to the accepted list of identity providers. | |
 
-\* Sign-in to POS requires device activation for each terminal. For more information, see [Point of Sale (POS) device activation](/dev-itpro/retail-device-activation.md).
+\* Sign-in to POS requires device activation for each terminal. For more information, see [Point of Sale (POS) device activation](dev-itpro/retail-device-activation.md).
 
 ### Unsupported authentication flows
 
@@ -95,7 +95,7 @@ The following illustration shows third-party application authentication flows in
 
 [Dynamics 365 Commerce architecture overview](commerce-architecture.md)
 
-[Commerce Scale Unit customer and consumer APIs](/dev-itpro/retail-server-customer-consumer-api.md)
+[Commerce Scale Unit customer and consumer APIs](dev-itpro/retail-server-customer-consumer-api.md)
 
 [POS worker logon](retail-modern-pos-device-activation.md#create-a-worker)
 
@@ -107,9 +107,9 @@ The following illustration shows third-party application authentication flows in
 
 [Set up custom pages for user sign-ins](custom-pages-user-logins.md)
 
-[Configure authentication providers](/dev-itpro/configure-authentication-providers.md)
+[Configure authentication providers](dev-itpro/configure-authentication-providers.md)
 
-[Point of Sale (POS) device activation](/dev-itpro/retail-device-activation.md)
+[Point of Sale (POS) device activation](dev-itpro/retail-device-activation.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -6,7 +6,8 @@ description: This topic explains how to configure your environment so that you c
 author: faix
 ms.date: 07/08/2020
 ms.topic: article
-ms.prod: 
+ms.prod: dynamics-365 
+ms.service:
 ms.technology: 
 
 # optional metadata

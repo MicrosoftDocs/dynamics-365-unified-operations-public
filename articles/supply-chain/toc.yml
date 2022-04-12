@@ -1705,10 +1705,14 @@
           href: inventory/inventory-visibility-setup.md
         - name: Configure Inventory Visibility
           href: inventory/inventory-visibility-configuration.md
+        - name: Inventory Visibility support for WHS items
+          href: inventory/inventory-visibility-whs-support.md
         - name: Use the Inventory Visibility app
           href: inventory/inventory-visibility-power-platform.md
         - name: Inventory Visibility reservations
           href: inventory/inventory-visibility-reservations.md
+        - name: Inventory Visibility on-hand change schedule and available to promise
+          href: inventory/inventory-visibility-available-to-promise.md
         - name: Inventory Visibility public APIs
           href: inventory/inventory-visibility-api.md
         - name: Inventory Visibility tips
