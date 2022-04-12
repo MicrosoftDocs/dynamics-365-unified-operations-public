@@ -41,6 +41,14 @@ CSU Core offers high performant headless Commerce APIs and the benefits of .NET 
 
 If you plan to create extensions for headless commerce, it must be built using following target frameworks and .NET 6 or later. .NET 6 development is only supported in Visual Studio version 2022 or later.
 
+#### Validate your extension compatibility with CSU Core 
+
+You can validate that your extensions are compatible with CSU core by running an extension test. To run the test, append the query parameter **healthcheck?testname=extensions** to your Retail Rerver URL, as shown in the following example that uses **\<MyRetailServerURL\>** to represent the Retail Server URL.
+
+`https://<MyRetailServerURL>/healthcheck?testname=extensions`
+
+The test result will show a table with the status of compatible and non-compatible extensions.
+
 #### Extension target framework
 
 | Extension Component | Extension project target framework | Commerce SDK |
