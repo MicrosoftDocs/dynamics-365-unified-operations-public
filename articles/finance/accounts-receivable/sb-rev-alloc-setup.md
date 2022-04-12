@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Multiple element revenue allocation parameters
-description: This topic describes how to set up the parameters for Multiple element revenue allocation in Subscription billing.
+title: Set up multiple element revenue allocation
+description: This topic describes how to set up the parameters for multiple element revenue allocation in Subscription billing.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -26,93 +26,88 @@ ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
 
 ---
-# Set up multiple element revenue allocation 
 
-Multiple element revenue allocation allows you to set up different templates to calculate and allocate revenue across multiple items. This can help you meet ASC 606 and/or IFRS 15 compliance.
+# Set up multiple element revenue allocation
 
-## Multiple element revenue allocation parameters
+multiple element revenue allocation lets you set up different templates that are used to calculate and allocate revenue across multiple items. This functionality can help you comply with Accounting Standards Codification Topic 606 (ASC 606) and/or International Financial Reporting Standard 15 (IFRS 15).
 
-Use the **Multiple element revenue allocation parameters** page to set up the parameters for Multiple element revenue allocation. 
+## multiple element revenue allocation parameters
+
+Use the **Multiple element revenue allocation parameters** page to set up the parameters for multiple element revenue allocation.
 
 ### Standalone selling price origin
- 
-**Standalone selling price origin** determines where the standalone selling price comes from. You can update this value on the **Item Standalone Selling Price** page and on the transaction. The standalone selling price is based on one of the following options:
-|Field        | Description           |
-| :------------- |:-------------| 
-|**Amount** | The standalone selling price is an amount greater than zero (0) that you set. The amount is converted between the functional and originating currencies as needed. |
-|**Base sales price** |The standalone selling price is the same value as the base sales price of the item.|
-|**Invoice price** |The standalone selling price is the same value as the invoice price of the item.|
-|**Percent of item**| The standalone selling price is set by a percentage value and is calculated based on the price of the item.  When you select this option, specify the default percent.| 
-|**Allocate residual amount** |The origin of the standalone selling price is calculated as follows: Total contract value of parent item - Total Standalone selling price of child items.|
 
- 
-If the calculated amount is a negative value, the amount is set to zero (0) where: 
-|Field        | Description           |
-| :------------- |:-------------| 
-|**Total Contract Value of Parent Item**| The net or billed amount.| 
-|**Total Standalone selling price of child items**| The sum of the extended or contract standalone selling price of all child items, except for the child item that uses this Standalone selling price origin. **Note:** This option can be selected by only one child item in the revenue split. |
-|**None** |The origin of the standalone selling price is based on the child items. This option applies to items that are defined as a parent item in a revenue split template. When **Revenue split** is selected, this option is automatically selected and cannot be changed. | 
-|**Percent of parent invoice price** | The origin of the standalone selling price is a percent of the invoice price of the parent item. You can change the default value. Available only for child items in a revenue split template. | 
-|**Percent of parent standard price** |The origin of the standalone selling price is a percent of the standard price of the parent item. You can change the default value. Available only for child items in a revenue split template. Default option for child items. When the option for a child item is changed from percent of parent standard price to invoice price (or vice versa), the calculated values are also updated.|  
- 
+The **Standalone selling price origin** field determines where the standalone selling price comes from. You can update the value on the **Item standalone selling price** page and on the transaction. The following options are available.
+
+| Option | Description |
+|--------|-------------|
+| Amount | The standalone selling price is an amount that you specify that is more than 0 (zero). The amount is converted between the functional and originating currencies as required. |
+| Base sales price | The standalone selling price matches the base sales price of the item. |
+| Invoice price | The standalone selling price matches the invoice price of the item. |
+| Percent of item | The standalone selling price is specified as a percentage value and is calculated based on the price of the item. If you select this option, specify the default percentage. |
+| Allocate residual amount | <p>The origin of the standalone selling price is calculated as *Total contract value of parent item* – *Total standalone selling price of child items*:</p><ul><li>*Total contract value of parent item* is the net or billed amount.</li><li>*Total standalone selling price of child items* is the sum of the extended or contract standalone selling price of all child items, except the child item that uses this standalone selling price origin.</li></ul><p>If the calculated amount is a negative value, the amount is set to 0 (zero).</p><p>**Note:** This option can be selected for only one child item in the revenue split.</p> |
+| None | The origin of the standalone selling price is based on the child items. This option applies to items that are defined as parent items in a revenue split template. If the **Revenue split** checkbox is selected, this option is automatically selected, and the setting can't be changed. |
+| Percent of parent invoice price | The origin of the standalone selling price is a percentage of the invoice price of the parent item. You can change the default value. This option is available only for child items in a revenue split template. |
+| Percent of parent standard price | The origin of the standalone selling price is a percentage of the standard price of the parent item. You can change the default value. This option is available only for child items in a revenue split template. It's the default option for child items. When the option for a child item is changed from **Percent of parent standard price** to **Percent of parent invoice price**, or from **Percent of parent invoice price** to **Percent of parent standard price**, the calculated values are also updated. |
+
 ### Account for revenue allocation rounding differences
 
-**Account for revenue allocation rounding differences** is the account used for recording any rounding adjustments to a contract revenue amount. Available when Recurring contract billing is being used. 
+The **Account for revenue allocation rounding differences** field specifies the account that is used to record any rounding adjustments to a contract revenue amount. It's available when recurring contract billing is used.
 
-##  Item Standalone Selling Price
+## Item standalone selling price
 
-Use the **Item standalone selling price** page to specify the origin and standalone selling price of an item. The values specified on this page are used as the default values on the **Revenue allocation** page in Multiple element revenue allocation and Recurring contract billing. 
+Use the **Item standalone selling price** page to specify the origin and standalone selling price of an item. The values that are specified on this page are used as the default values on the **Revenue allocation** page in multiple element revenue allocation and recurring contract billing.
 
 ### Specify item standalone selling price
 
-To specify the standalone price for an item, follow these steps: 
-1. Select the **Standalone selling price origin**.
-   * If **Standalone selling price origin** is **Percent of item**, specify the **Percent**.
-   * If **Standalone selling price origin** is **Amount**, specify the **Standalone selling price**. 
-2. For each item you want to add in the **List**, select **Add**.
-3. Select the **Item code** and **Item relation**. For items where the **Revenue split** check box is cleared, the item code-item relation combination that you select must be unique. 
-4. If needed, change the **Standalone selling price origin**, **Standalone selling price**, or **Percent** from the default values. 
-5. For each parent item you want to add in the **List**, select **Add**.
-6. Select the **Item code** and **Item relation**.
-7. Select the **Revenue split** checkbox. 
-8. Select the **Item relation**. The list is updated with the parent item and all child items. 
-9. If needed for the child items, change the **Standalone selling price origin**, **Percent of parent standard price**, **Percent of parent invoice price**, or **Allocate residual amount** from the default values.
+To specify the standalone price for an item, follow these steps.
+
+1. On the **Item standalone selling price** page, in the **Standalone selling price origin** field, select the origin of the standalone selling price.
+2. Follow one of these steps, depending on the value that you selected in the **Standalone selling price origin** field:
+
+    * If you selected **Percent of item**, specify the percentage in the **Percent** field.
+    * If you selected **Amount**, specify the amount in the **Standalone selling price** field.
+
+2. For each item that you want to add to the list, select **Add**.
+3. In the **Item code** field, select the item code. In the **Item relation** field, select the item relation. For items where the **Revenue split** checkbox is cleared, the selected combination of an item code and an item relation must be unique.
+4. Change the default value of the **Standalone selling price origin**, **Standalone selling price**, or **Percent** field as you require.
+5. For each parent item that you want to add to the list, select **Add**.
+6. In the **Item code** field, select the item code. In the **Item relation** field, select the item relation.
+7. Select the **Revenue split** checkbox.
+8. In the **Item relation** field, select the item relation. The list is updated with the parent item and all child items.
+9. For the child item, change the default value of the **Standalone selling price origin**, **Percent of parent standard price**, **Percent of parent invoice price**, or **Allocate residual amount** field as you require.
 10. To add several items at one time, select **Add items**.
-11. Update the query to select the range of items that you want to add. 
-12. Select **OK**, review the list of items that you added, and select **OK**.   
+11. Update the query to select the range of items that you want to add.
+12. Select **OK**, review the list of items that you added, and select **OK**.
 
 ### Fields
 
-This page contains the following fields: 
+The **Item standalone selling price** page contains the following fields.
 
-| Field        | Description           |
-| :------------- |:-------------| 
-| **Standalone selling price origin**     | Select the origin of the standalone selling price: <br /> - **Amount**: The standalone selling price is amount greater than zero (0) that you set. The amount is converted between the functional and originating currencies as needed. <br /> - **Base sales price**: The standalone selling price is the same value as the base sales price of the item.  <br /> - **Invoice price**: The standalone selling price is the same value as the invoice price of the item.  <br /> - **Percent of item**: The standalone selling price is set by a percentage value and is calculated based on the price of the item. When you select this option, specify the default percent.     |  
-| **Standalone selling price**	  | Specify the standalone selling price of the item. Available when **Standalone selling price origin** is **Amount**.       |   
-| **Percent**     | Specify the percent of the standalone selling price. Available when **Standalone selling price origin** is **Percent of item**, **Percent of parent invoice price**, or **Percent of parent standard price**.       |  
-| **Revenue split**     | Indicates that a line uses revenue splitting:<br /> - **Selected**: Only items that have a revenue split template set up can be selected in **Item relation**. You can select this checkbox only for parent items of a revenue split template. <br /> - **Cleared**: Indicates that the item is a standard item that doesn't use revenue split. |
-| **Relationship**	  | Displays an icon to indicate that the item is a parent or child item in a revenue split.       |   
-| **Item code**     | Select the item code: **Table** or **Group**. <br />When **Revenue split** is selected, this option is set to **Table** and can't be changed.|  
-| **Item relation**	  | Select an item number. <br />When **Revenue split** is selected, only items that are parent items that have a **Revenue splitting template** set up are available. When the parent item is selected, the list is automatically updated with the child items for the parent item.       |   
-| **Standalone selling price origin**     | Select the origin of the standalone selling price: <br /> - **Amount**: The standalone selling price is amount greater than zero (0) that you set. The amount is converted between the functional and originating currencies as needed. <br /> - **Base sales price**: The standalone selling price is the same value as the base sales price of the item. <br /> - **Invoice price**: The standalone selling price is the same value as the invoice price of the item. <br /> - **Percent of item**: The standalone selling price is set by a percentage value and is calculated based on the price of the item. When you select this option, specify the default percent. <br /> - **Allocate residual amount**: The origin of the standalone selling price is calculated as follows: Total contract value of parent item - Total standalone selling price of child items. <br />If the calculated amount is a negative value, the amount is set to zero (0) where:<br /> - **Total contract value of parent item** is the net or billed amount. <br /> - **Total standalone selling price of child items** is the sum of the extended or contract standalone selling price of all child items, except for the child item that uses this standalone selling price origin. <br />**Note:** This option can be selected by only one child item in the revenue split. <br /> - **None**: The origin of the standalone selling price is based on the child items. This option applies to items that are defined as a parent item in a revenue split template. When **Revenue split** is selected, this option is automatically selected and can't be changed.  <br /> - **Percent of parent invoice price**: The origin of the standalone selling price is a percent of the invoice price of the parent item. You can change the default value. Available only for child items in a revenue split template. <br /> - **Percent of parent standard price**: The origin of the standalone selling price is a percent of the standard price of the parent item. You can change the default value. Available only for child items in a revenue split template. When the option for a child item is changed from percent of parent standard price to invoice price (or vice versa), the calculated values are also updated.        |  
-| **Standalone selling price**	  | Specify the standalone selling price of the item. Available when **Standalone selling price origin** is **Amount**.       |   
-| **Percent**	  | Specify the percent of the standalone selling price. Available when **Standalone selling price origin** is **Percent of item**, **Percent of parent invoice price**, or **Percent of parent standard price**.       |   
-| **Parent item**	  | Displays the item number for the parent item. For child items in a revenue split, displays the item number of the parent item.       |   
-
+| Field | Description |
+|-------|-------------|
+| Standalone selling price origin | <p>Select the origin of the standalone selling price:</p><ul><li>**Amount** – The standalone selling price is an amount that you specify that is more than 0 (zero). The amount is converted between the functional and originating currencies as required.</li><li>**Base sales price** – The standalone selling price matches the base sales price of the item.</li><li>**Invoice price** – The standalone selling price matches the invoice price of the item.</li><li>**Percent of item** – The standalone selling price is specified as a percentage value and is calculated based on the price of the item. If you select this option, specify the default percentage.</li></ul> |
+| Standalone selling price | Specify the standalone selling price of the item. This field is available when the **Standalone selling price origin** field is set to **Amount**. |
+| Percent | Specify the percentage of the standalone selling price. This field is available when the **Standalone selling price origin** field is set to **Percent of item**, **Percent of parent invoice price**, or **Percent of parent standard price**. |
+| Revenue split | <p>Specify whether a line uses revenue splitting:</p><ul><li>**Selected** – Only items that a revenue split template is set up for can be selected in the **Item relation** field. You can select this checkbox only for parent items of a revenue split template.</li><li>**Cleared** – The item is a standard item that doesn't use revenue split.</li></ul> |
+| Relationship | A symbol indicates whether the item is a parent or child item in a revenue split. |
+| Item code | <p>Select the item code: **Table** or **Group**.</p><p>If the **Revenue split** checkbox is selected, this field is set to **Table**, and the value can't be changed.</p> |
+| Item relation | <p>Select an item number.</p><p>If the **Revenue split** checkbox is selected, only items that are parent items that a revenue split template is set up for are available for selection. When the parent item is selected, the list is automatically updated with the child items of that parent item.</p> |
+| Standalone selling price origin | <p>Select the origin of the standalone selling price:</p><ul><li>**Amount** – The standalone selling price is an amount that you specify that is more than 0 (zero). The amount is converted between the functional and originating currencies as required.</li><li>**Base sales price** – The standalone selling price matches the base sales price of the item.</li><li>**Invoice price** – The standalone selling price matches the invoice price of the item.</li><li>**Percent of item** – The standalone selling price is specified as a percentage value and is calculated based on the price of the item. If you select this option, specify the default percentage.</li><li>**Allocate residual amount** – The origin of the standalone selling price is calculated as *Total contract value of parent item* – *Total standalone selling price of child items*:</p><ul><li>*Total contract value of parent item* is the net or billed amount.</li><li>*Total standalone selling price of child items* is the sum of the extended or contract standalone selling price of all child items, except the child item that uses this standalone selling price origin.</li></ul><p>If the calculated amount is a negative value, the amount is set to 0 (zero).</p><p>**Note:** This option can be selected for only one child item in the revenue split.</p></li><li>**None** – The origin of the standalone selling price is based on the child items. This option applies to items that are defined as parent items in a revenue split template. If the **Revenue split** checkbox is selected, this option is automatically selected, and the setting can't be changed.</li><li>**Percent of parent invoice price** – The origin of the standalone selling price is a percentage of the invoice price of the parent item. You can change the default value. This option is available only for child items in a revenue split template.</li><li>**Percent of parent standard price** – The origin of the standalone selling price is a percentage of the standard price of the parent item. You can change the default value. This option is available only for child items in a revenue split template. It's the default option for child items. When the option for a child item is changed from **Percent of parent standard price** to **Percent of parent invoice price**, or from **Percent of parent invoice price** to **Percent of parent standard price**, the calculated values are also updated.</li></ul> |
+| Standalone selling price | Specify the standalone selling price of the item. This field is available when the **Standalone selling price origin** field is set to **Amount**. |
+| Percent | Specify the percentage of the standalone selling price. This field is available when the **Standalone selling price origin** field is set to **Percent of item**, **Percent of parent invoice price**, or **Percent of parent standard price**. |
+| Parent item | For the parent item, this field shows the item number. For child items in a revenue split, it shows the item number of the parent item. |
 
 ## MEA templates
 
-Use the **MEA templates** page to create and edit multiple element arrangement (MEA) template ID’s. These IDs are used on the **Revenue allocation** page to group items together.
+Use the **MEA templates** page to create and edit multiple element arrangement (MEA) template IDs. These IDs are used on the **Revenue allocation** page to group items together.
 
-### Create Template
+### Create a template
 
-Set up an MEA template: 
-1. Select **New**. 
-1. Enter a unique **MEA template ID** and **Description**. 
-1. Select the **Deferred contract revenue account**. This is the account you want to use for journal entries when a multiple element arrangement (MEA) contract invoice is created. Available when Recurring contract billing is enabled and used. 
+To set up an MEA template, follow these steps.
+
+1. On the **MEA templates** page, select **New**.
+1. In the **MEA template ID** field, enter a unique ID.
+1. In the **Description** field, enter a description.
+1. In the **Deferred contract revenue account** field, select the account that you want to use for journal entries when an MEA contract invoice is created. This field is available when recurring contract billing is enabled and used.
 1. Select **Save**.
-
-
-
-
-
