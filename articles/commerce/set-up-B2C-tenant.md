@@ -336,9 +336,9 @@ To add your Azure AD B2C tenant application information to Commerce, follow thes
 
 1. Sign in as an administrator to Commerce site builder for your environment.
 1. In the left navigation pane, select **Tenant Settings**  to expand it.
-1. Under **Tenant Settings**, select **B2C Settings**. 
-1. In the main window next **B2C Applications**, select **Manage**. (If your tenant appears in the B2C Applications list, then it was already added by an administrator. Verify that the items in step 6 below match your B2C Application.)
-1. Select **Add B2C Application**.
+1. Under **Tenant Settings**, select **Site authentication setup**. 
+1. In the main window next to **Site authentication profiles**, select **Manage**. (If your tenant appears in the site authentication profiles list, then it was already added by an administrator. Verify that the items in step 6 below match for your intended B2C setup. A new profile can also be created using similar Azure AD B2C tenants or applications to account for minor differences, such as differing user policy IDs).
+1. Select **Add site authentication profile**.
 1. Enter the following required items in the form displayed, using values from your B2C tenant and application. Fields that are not required (those without an asterisk) may be left blank.
 
     - **Application Name**: The name for your B2C Application, for example "Fabrikam B2C".
@@ -350,6 +350,8 @@ To add your Azure AD B2C tenant application information to Commerce, follow thes
 
 1. Select **OK**. You should now see the name of your B2C application appear in the list.
 1. Select **Save** to save your changes.
+
+The optional field **Login custom domain** should be used only if setting up a custom domain for the Azure AD B2C tenant. See additional details and considerations for the 'Login custom domain' usage in the "Additional B2C information" section below.
 
 ### Associate the B2C application to your site and channel
 
@@ -382,6 +384,15 @@ For additional information regarding customizing Azure AD B2C interactions and p
 ### Secondary admin
 
 An optional, secondary administrator account can be added in the **Users** section of your B2C tenant. This can be a direct account or a general account. If you need to share an account across team resources, a common account can also be created. Due to the sensitivity of the data stored in Azure AD B2C, a common account should be monitored closely per your company's security practices.
+
+### Login custom domain
+
+Azure AD B2C allows setting up a custom login domain for the Azure AD B2C tenant. Users can follow the instructions documented in the [Enable custom domains for Azure Active Directory B2C](https://docs.microsoft.com/en-us/azure/active-directory-b2c/custom-domain) article. 
+
+If using a login custom domain, the domain must be entered into the site builder **Site authentication profile** field named **Login custom domain** (example: 'login.fabrikam.com')
+
+> [!WARNING]
+> Updating to a custom domain for the Azure AD B2C tenant will effect the tenant's **Issuer** details for the token generated. The **Issuer** will differ with a custom domain from the domain Azure AD B2C provides by default. A different **Issuer** set up in Dynamics will change the system's interaction against the customer, potentially creating a new customer record if the user is authenticating against the new **Issuer**. Any changes should be tested thoroughly before switching to a custom domain in a live Azure AD B2C environment.
 
 ## Additional resources
 
