@@ -68,7 +68,7 @@ Follow these steps to install the modern report designs for the application suit
     ModelUtil.exe -import -metadatastorepath=[path of the metadata store] -file=[full path of the file to import]
     ```
 
-3. Navigate to the **\<AOSServiceDrive>\:\\AOSService\\PackagesLocalDirectory\\bin** folder.
+3. Navigate to the **\<AOSServiceDrive\>:\\AOSService\\PackagesLocalDirectory\\bin** folder.
 4. Run the following command.
 
     ```Console
