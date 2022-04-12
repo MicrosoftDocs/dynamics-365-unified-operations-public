@@ -59,7 +59,7 @@ Due to certain technical dependencies, the following features listed will not be
 
 -   The **[mobile platform](../mobile-apps/platform/mobile-platform-home-page.md)** will not be available because certain App store dependencies are unavailable in China.
 
--  **SharePoint integration** is not available because the authentication mechanism Finance and Operations apps use with SharePoint is not supported in this configuration.
+-  **SharePoint integration** isn't available, because the authentication mechanism that Finance and Operations apps use with SharePoint isn't supported in this configuration.
 
 -   The following **Microsoft Dynamics Lifecycle Services (LCS)** features will have a different experience or will be unavailable due to the dependencies that are not available:
 
