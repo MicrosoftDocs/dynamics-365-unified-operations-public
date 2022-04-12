@@ -2,7 +2,7 @@
 title: Create a Cloud Scale Unit extension package
 description: This topic describes how to create an extension package for Microsoft Dynamics 365 Commerce Cloud Scale Unit.
 author: mugunthanm
-ms.date: 03/30/2022
+ms.date: 04/12/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: v-chgriffin
@@ -31,7 +31,7 @@ To create a CSU package, choose one of the following options and follow the step
 
 ### Option 1
 
-1. Clone or download the scale unit packaging project from [Dynamics365 Commerce ScaleUnit Samples](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit). Select the correct release branch version according to your SDK/application release. For detailed steps on cloning, see [Download Retail SDK samples and reference packages from GitHub and NuGet](sdk-github.md).
+1. Clone or download the scale unit packaging project from [Dynamics365 Commerce ScaleUnit Samples](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit). Select the correct release branch version according to your SDK/application release. For detailed steps on cloning, see [Download Retail SDK samples and reference packages from GitHub and NuGet](retail-sdk/sdk-github.md).
 1. Add the extension Commerce runtime (CRT), Retail Server, channel database, and Cloud POS (CPOS) extension project as a project reference to the scale unit packaging project.
 1. If the CRT or Retail Server extension depends on any assemblies to execute, include those assemblies as project reference in the extension project. The packaging will include these assemblies in the **ext** folder. Do not add the dependent assemblies in the **CommerceRuntime.Ext.config** file. Adding the dependent assembly in the config file may cause runtime errors.
 1. Build the scale unit project. This project will generate the **CloudScaleUnitExtensionPackage.zip** output package in the project bin output folder. The **CloudScaleUnitExtensionPackage.zip** package can be uploaded to Microsoft Lifecycle Services (LCS) and deployed to Cloud Scale Unit. Select the correct version of the **Microsoft.Dynamics.Commerce.Sdk.ScaleUnit** NuGet version in the Visual Studio NuGet package manager according to your SDK/application version.
@@ -64,4 +64,4 @@ To deploy the package to CSU, follow these steps.
 1. Select the Commerce **Cloud Scale Unit Extension** asset type, and then select the **+** (plus) button to upload the package. Provide a package name and description and then add the package file by selecting **Add file*.
 1. After the upload is complete, select **Confirm** to complete the upload process.
 1. The package will be validated by LCS in a few minutes. After validation is complete, mark the package as **Release candidate**.
-1. After upload, the package needs to be deployed to the environment. For more information, follow the steps outlined in [Apply updates and extensions to Commerce Scale Unit (cloud)](deployment/update-retail-channel.md).
+1. After upload, the package needs to be deployed to the environment. For more information, follow the steps outlined in [Apply updates and extensions to Commerce Scale Unit (cloud)](../../fin-ops-core/dev-itpro/deployment/update-retail-channel.md).
