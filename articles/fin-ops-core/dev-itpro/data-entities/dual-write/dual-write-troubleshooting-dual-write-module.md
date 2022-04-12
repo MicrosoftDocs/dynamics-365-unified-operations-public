@@ -75,9 +75,9 @@ Enabling parallel processing can reduce the time needed to import data from Fina
 
 To enable parallel processing in Finance and Operations apps, complete the following steps.
 
-1. Login to your inance and Operations environment.
+1. Log in to your Finance and Operations environment.
 2. Go to **Data management > Framework parameters**.
-3. Select **Entity settings** and select **Configure entity execution parameters**,
+3. Select **Entity settings** and select **Configure entity execution parameters**.
 4. Add the parameters for parallel processing:
   - **Import threshold record count** – The number of records that must be met before parallel processing is enabled.
   - **Import task count** – The number of threads (tasks) to run in parallel.
