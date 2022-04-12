@@ -3,8 +3,8 @@
 
 title: Sweden overview
 description: This topic provides links to documentation resources for Sweden. 
-author: ShylaThompson
-ms.date: 07/25/2019
+author: kfend
+ms.date: 03/04/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 
 ms.search.region: Sweden
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -37,6 +37,7 @@ This topic provides links to documentation resources for Sweden.
 - [Sales tax payment report for Sweden](emea-swe-sales-tax-payment-report-sweden.md)
 - [VAT declaration for Sweden](emea-swe-VAT-declaration-Sweden.md)
 - [Swedish Intrastat](emea-swe-intrastat.md)
+- [EU sales list for Sweden](emea-swe-eu-sales-list.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

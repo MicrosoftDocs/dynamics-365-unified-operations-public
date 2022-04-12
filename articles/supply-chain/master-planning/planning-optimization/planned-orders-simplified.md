@@ -1,14 +1,14 @@
 ---
 title: Planned orders simplified
 description: This topic describes how you can view, manage, and firm planned orders by using the Planned orders simplified page.
-author: ChristianRytt
+author: t-benebo
 ms.date: 01/24/2022
 ms.topic: article
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2022-01-24
 ms.dyn365.ops.version: 10.0.25
 ---
@@ -16,8 +16,6 @@ ms.dyn365.ops.version: 10.0.25
 # Planned orders simplified
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
-<!-- preview until 10.0.25 GA -->
 
 This topic describes how you can view, manage, and firm planned orders by using the **Planned orders simplified** page.
 

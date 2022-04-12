@@ -21,7 +21,6 @@ ms.custom: ["255544", "intro-internal"]
 ms.assetid: f5aa0c60-25cc-4453-8df9-efab19b7e272
 ms.search.region: Global
 # ms.search.industry: 
-ms.custom: intro-internal
 ms.author: tfehr
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 9

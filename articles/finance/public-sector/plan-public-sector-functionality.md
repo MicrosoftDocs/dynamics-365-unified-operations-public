@@ -4,7 +4,7 @@
 title: Plan for public sector functionality
 description: This topic suggests the first steps to setting up Public sector functionality.
 author: v-kiarnd
-ms.date: 06/20/2017
+ms.date: 02/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,13 +15,13 @@ ms.search.form: SysConfiguration
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 19851
 ms.assetid: 877eabf3-19c7-4897-b33e-c5a8a319cb35
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -64,7 +64,6 @@ Cover page for payments report Purchase order line amounts
 - The **Public sector** configuration key is selected.
 - The **French regulatory** configuration subkey is selected.
 - The **Use French Public sector accounting rules** option is selected on the **Budget parameters** page.
-
 - Balance summary
 - Commitment close
 - Maintain mandats de paiement

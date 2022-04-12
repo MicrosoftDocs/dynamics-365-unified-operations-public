@@ -4,7 +4,7 @@
 title: Update the local agent
 description: This topic explains how to update the local agent.
 author: faix
-ms.date: 10/19/2021
+ms.date: 02/22/2022
 ms.topic: article
 ms.prod: dynamics-365
 ms.service:
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: 7.3
 [!include [banner](../includes/banner.md)]
 
 This topic explains how to update the local agent. The latest version of the local agent is version 3.0.0, which was released in November 2021.
+
+> [!IMPORTANT]
+> Do not update the local agent during a servicing operation, even if the preparation phase has completed. 
 
 | Local agent version | Capability | 
 |---------------------|------------|

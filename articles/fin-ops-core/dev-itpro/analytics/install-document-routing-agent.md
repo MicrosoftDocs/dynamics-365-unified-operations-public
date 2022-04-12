@@ -4,7 +4,7 @@
 title: Install the Document Routing Agent to enable network printing
 description: This topic describes how to install and configure the Document Routing Agent for deployments of Microsoft Dynamics 365 Finance.
 author: RichdiMSFT
-ms.date: 01/03/2022
+ms.date: 03/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -39,7 +39,7 @@ This topic describes how to install and configure the Document Routing Agent.  T
 - Access to network printing resources requires Active Directory Domain Services (AD DS) authentication.
 - When installing the Document Routing Agent, make sure you are logged in as the Admin user.
 - The Microsoft Azure Active Directory (Azure AD) account that is used to configure the Document Routing Agent must share the same domain as the Azure tenant.
-- The Document Routing Agent requires .NET 4.62 or later and Adobe Acrobat Reader on the client.
+- The Document Routing Agent requires .NET 4.62 or later and Adobe Acrobat Reader 32-bit on the client.
 - Configure Adobe client print settings to prevent document scaling.
 
 Network printers that are registered for applications can be used by all legal entities (also known as companies) that are defined in the environment. Network printer settings are company-specific. Therefore, administrators can restrict access, based on the user's active company. For example, users in the active company might have access to all the network printers that are registered by the Document Routing Agent. However, users in another company won't have access to those printers until access is explicitly enabled for that company.

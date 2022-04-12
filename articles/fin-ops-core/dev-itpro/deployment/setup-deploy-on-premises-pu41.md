@@ -4,7 +4,7 @@
 title: Set up and deploy on-premises environments (Platform update 41 and later)
 description: This topic explains how to plan, set up, and deploy Microsoft Dynamics 365 Finance + Operations (on-premises) with Platform update 41 and later.
 author: faix
-ms.date: 01/27/2022
+ms.date: 04/05/2022
 ms.topic: article
 ms.prod: dynamics-365 
 ms.service:
@@ -184,13 +184,14 @@ You must complete the following steps to set up the infrastructure for Finance +
 1. [Download setup scripts from LCS](#downloadscripts)
 1. [Describe your configuration](#describeconfig)
 1. [Set up file storage](#setupfile)
+1. [Set up SQL Server](#setupsql)
 1. [Configure certificates](#configurecert)
 1. [Set up SSIS](#setupssis)
 1. [Set up SSRS](#setupssrs)
 1. [Set up VMs](#setupvms)
 1. [Set up a standalone Service Fabric cluster](#setupsfcluster)
 1. [Configure LCS connectivity for the tenant](#configurelcs)
-1. [Set up SQL Server](#setupsql)
+1. [Configure the SQL Server certificate](#configuresqlcert)
 1. [Configure the databases](#configuredb)
 1. [Encrypt credentials](#encryptcred)
 1. [Configure AD FS](#configureadfs)
@@ -379,10 +380,11 @@ Microsoft has provided several scripts to help improve the setup experience. Fol
 3. Select **Model** as the asset type, and then, in the grid, select the row for **Microsoft Dynamics 365 Finance + Operations (on-premises), Deployment scripts**.
 4. Select **Versions**, and download the latest version of the zip file for the scripts.
 5. After the zip file is downloaded, select and hold (or right-click) it, and then select **Properties**. In the **Properties** dialog box, select the **Unblock** checkbox.
-6. Copy the zip file to the machine that will be used to run the scripts.
+6. Create a file share, and copy the zip file into it.
 7. Unzip the files into a folder that is named **infrastructure**.
 
 > [!IMPORTANT]
+> It's important that you put the **Infrastructure** folder in a file share. In this way, the scripts can be run on any machine without requiring that the folder be copied to each machine. 
 > Make sure that all edits are made to the ConfigTemplate.xml file in this folder.
 
 ### <a name="describeconfig"></a>Step 7. Describe your configuration
@@ -403,6 +405,7 @@ The infrastructure\\ConfigTemplate.xml configuration file describes the followin
 - The database configuration
 - The Service Fabric cluster configuration
 - The file shares that are required for the application to work
+- The SQL cluster information 
 
     > [!IMPORTANT]
     > When you configure the Service Fabric cluster, make sure that there are three fault domains for the Primary node type (**OrchestratorType**). Also make sure that no more than one type of node is deployed on a single machine.
@@ -425,22 +428,19 @@ For each database, the infrastructure\\D365FO-OP\\DatabaseTopologyDefinition.xml
 
 #### Create gMSA and domain user accounts
 
-1. Go to the machine that has the unzipped infrastructure scripts in the **infrastructure** folder.
-1. Copy the **infrastructure** folder to the domain controller machine.
-1. Open Windows PowerShell in elevated mode, change the directory to the **infrastructure** folder, and run the following commands.
+1. Open Windows PowerShell in elevated mode, change the directory to the **Infrastructure** folder in your file share, and run the following commands.
 
     > [!IMPORTANT]
     > These commands don't create an AxServiceUser domain user for you. You must create it yourself.
 
     ```powershell
-    Import-Module .\D365FO-OP\D365FO-OP.psd1
-    New-D365FOGMSAAccounts -ConfigurationFilePath .\ConfigTemplate.xml
+    .\Create-GMSAAccounts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-1. If you must make changes to accounts or machines, update the **ConfigTemplate.xml** file in the original **infrastructure** folder, copy it to this machine, and then run the following command.
+1. If you must make changes to accounts or machines, update the **ConfigTemplate.xml** file in the **Infrastructure** folder in your file share, and then run the following command.
 
     ```powershell
-    Update-D365FOGMSAAccounts -ConfigurationFilePath .\ConfigTemplate.xml
+    .\Create-GMSAAccounts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Update
     ```
 
 ### <a name="setupfile"></a>Step 8. Set up file storage
@@ -490,12 +490,28 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
     1. Select **Tasks** \> **New Share** to create a share. Name the new share **DiagnosticsStore**.
     1. Grant **Modify** permissions for every machine in the Service Fabric cluster.
 
-### <a name="configurecert"></a>Step 9. Configure certificates
+### <a name="setupsql"></a>Step 9. Set up SQL Server
 
-1. Go to the machine that you originally unzipped the **infrastructure** folder to.
-2. Generate certificates:
+1. Install SQL Server with high availability, unless you're deploying in a sandbox environment, where one instance of SQL Server is sufficient. (Nevertheless, you might want to install SQL Server with high availability in sandbox environments to test high-availability scenarios.)
 
-    1. If you must generate certificates, run the following commands. These commands create the certificate templates in AD CS, generate the certificates from the templates, put the certificates in the **CurrentUser\\My** certificate store on the machine, and update the thumbprints in the XML file.
+    > [!IMPORTANT]
+    > You must enable the [SQL Server and Windows Authentication mode](/sql/database-engine/configure-windows/change-server-authentication-mode).
+
+    You can install SQL Server with high availability either as SQL clusters that include a Storage Area Network (SAN) or in an Always-On configuration. Verify that the Database Engine, SSRS, Full-Text Search, and SQL Server Management Tools are already installed.
+
+    > [!NOTE]
+    > Make sure that Always-On is set up as described in [Select Initial Data Synchronization Page (Always On Availability Group Wizards)](/sql/database-engine/availability-groups/windows/select-initial-data-synchronization-page-always-on-availability-group-wizards), and follow the instructions in [To Prepare Secondary Databases Manually](/sql/database-engine/availability-groups/windows/select-initial-data-synchronization-page-always-on-availability-group-wizards#PrepareSecondaryDbs).
+
+2. Run the SQL service as either a domain user or a gMSA.
+3. In the **ConfigTemplate.xml** file, fill in the SQL cluster configuration. If you're creating a SQL cluster, specify the name of each machine together with the listener name of your availability group. If you're creating a single instance instead of a cluster, specify the name of the machine, but leave the listener name blank. If you don't want the scripts to generate a certificate for your SQL cluster/instance, set the **disabled** property to **true** for the certificate of the **SQLCert** type.
+
+### <a name="configurecert"></a>Step 10. Configure certificates
+
+1. Go to a machine where Remote Server Administration Tools are installed, or go to your domain controller.
+1. Open PowerShell, and navigate to the file share that contains your **Infrastructure** folder.  
+1. Generate certificates:
+
+    1. If you must generate certificates, run the following commands. These commands create the certificate templates in AD CS, generate the certificates from the templates, put the certificates in the **LocalMachine\\My** certificate store on the machine, and update the thumbprints in the XML file.
 
         ```powershell
         # If you must create self-signed certs, set the generateSelfSignedCert attribute to true.
@@ -505,15 +521,12 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
         .\New-ADCSCertificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
         ```
 
-        > [!NOTE]
-        > You must run these commands on a domain controller machine, or on a machine that is running Windows Server and that has Remote Server Administration Tools (RSAT) installed.
+    1. If you must reuse any certificate and therefore don't have to generate the certificate, set the **generateADCSCert** tag to **false** in the **ConfigTemplate.xml** file.
 
-    1. If you must reuse any certificates and therefore don't have to generate certificates for them, set the **generateADCSCert** tag to **false**.
-
-3. If you're using SSL certificates that were previously generated, skip certificate generation, update the thumbprints in the **ConfigTemplate.xml** file. The certificates must be installed in the **CurrentUser\\My** certificate store, and their private keys must be exportable.
+3. If you're using SSL certificates that were previously generated, skip certificate generation, and update the thumbprints in the **ConfigTemplate.xml** file. The certificates can be installed in the **CurrentUser\\My** or **LocalMachine\\My** certificate stores. Additionally, their private keys must be exportable.
 
     > [!WARNING]
-    > Because of a leading non-printable special character, the presence of which is difficult to determine, the Certificate Manager tool (certlm.msc) should not be used to copy thumbprints. If the non-printable special character is present, you will receive the following error message: "X509 certificate not valid." To retrieve the thumbprints, see the results from Windows PowerShell commands, or run the following commands in Windows PowerShell.
+    > Because of a leading non-printable special character, the presence of which is difficult to determine, the Certificate Manager tool (certlm.msc) should not be used to copy thumbprints on Windows Server 2016. If the non-printable special character is present, you will receive the following error message: "X509 certificate not valid." To retrieve the thumbprints, see the results from Windows PowerShell commands, or run the following commands in Windows PowerShell.
     >
     > ```powershell
     > dir cert:\CurrentUser\My
@@ -529,7 +542,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
     .\Export-PfxFiles.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-### <a name="setupssis"></a>Step 10. Set up SSIS
+### <a name="setupssis"></a>Step 11. Set up SSIS
 
 To enable Data management and SSIS workloads, you must install SSIS on each AOS VM. Follow these steps on each AOS VM.
 
@@ -539,7 +552,7 @@ To enable Data management and SSIS workloads, you must install SSIS on each AOS 
 
 For more information, see [Install Integration Services (SSIS)](/sql/integration-services/install-windows/install-integration-services).
 
-### <a name="setupssrs"></a>Step 11. Set up SSRS
+### <a name="setupssrs"></a>Step 12. Set up SSRS
 
 You can configure more than one SSRS node. For more information, see [Configuring High Availability for SSRS nodes](./onprem-SSRSHA.md).
 
@@ -552,7 +565,7 @@ You can configure more than one SSRS node. For more information, see [Configurin
 
 1. For each BI node, follow these steps:
 
-    1. Copy the **infrastructure** folder. Then open Windows PowerShell in elevated mode, and go to the folder.
+    1. Open Windows PowerShell in elevated mode, and navigate to the **Infrastructure** folder in your file share.
     1. Run the following commands.
 
         ```powershell
@@ -576,16 +589,16 @@ You can configure more than one SSRS node. For more information, see [Configurin
     > 
     > Instead, these scripts will grant the necessary permissions for the Service Fabric service (ReportingService) to carry out the necessary configuration.
 
-### <a name="setupvms"></a>Step 12. Set up VMs
+### <a name="setupvms"></a>Step 13. Set up VMs
 
-1. Run the following command to export the scripts that must be run on each VM.
+1.  Open Windows PowerShell in elevated mode, and navigate to the **Infrastructure** folder in your file share.
 
     ```powershell
     # Exports the script files to be executed on each VM into a directory VMs\<VMName>.
     .\Export-Scripts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-2. Download the following Microsoft Windows Installers (MSIs) into a file share that is accessible by all VMs.
+2. Download the following Microsoft Windows Installers (MSIs) into a file share that can be accessed by all VMs. For example, use the same file share where you put your **Infrastructure** folder.
 
     | Component | Download link | Expected file name |
     |-----------|---------------|--------------------|
@@ -607,7 +620,7 @@ Next, follow these steps for each VM, or use remoting from a single machine.
 
 > [!NOTE]
 > - The following procedure requires execution on multiple VMs. However, to simplify the process, you can use the remoting scripts that are provided. These scripts let you run the required scripts from a single machine, such as the same machine that is used to run the **.\\Export-Scripts.ps1** command. When the remoting scripts are available, they are declared after a **\# If Remoting** comment in the Windows PowerShell sections. If you use the remoting scripts, you might not have to run the remaining scripts in a section. In these cases, see the section text.
-> - Remoting uses [WinRM](/windows/win32/winrm/portal). In some cases, it requires that [CredSSP](/windows/win32/secauthn/credential-security-support-provider) be enabled. The remoting module enables and disables CredSSP on an execution-by-execution basis. We recommend that you disable CredSSP enabled when it isn't used. Otherwise, there is a risk of credential theft. When you've completed the setup, see the [Step 20. Tear down CredSSP, if remoting was used](#teardowncredssp) section later in this topic.
+> - Remoting uses [WinRM](/windows/win32/winrm/portal). In some cases, it requires that [CredSSP](/windows/win32/secauthn/credential-security-support-provider) be enabled. The remoting module enables and disables CredSSP on an execution-by-execution basis. We recommend that you disable CredSSP when it isn't used. Otherwise, there is a risk of credential theft. When you've completed the setup, see the [Tear down CredSSP, if remoting was used](#teardowncredssp) section later in this topic.
 
 1. Copy the contents of each **infrastructure\\VMs\\\<VMName\>** folder to the corresponding VM. (If the remoting scripts are used, they will automatically copy the contents to the target VMs.) Then run the following command as an administrator.
 
@@ -643,9 +656,9 @@ Next, follow these steps for each VM, or use remoting from a single machine.
     ```
 
 > [!IMPORTANT]
-> If you used remoting, be sure to run the cleanup steps after the setup is completed. For instructions, see the [Step 20. Tear down CredSSP, if remoting was used](#teardowncredssp) section.
+> If you used remoting, be sure to run the cleanup steps after the setup is completed. For instructions, see the [Tear down CredSSP, if remoting was used](#teardowncredssp) section.
 
-### <a name="setupsfcluster"></a>Step 13. Set up a standalone Service Fabric cluster
+### <a name="setupsfcluster"></a>Step 14. Set up a standalone Service Fabric cluster
 
 1. Download the [Service Fabric standalone installation package](https://go.microsoft.com/fwlink/?LinkId=730690) to one of your Service Fabric nodes.
 2. After the zip file is downloaded, select and hold (or right-click) it, and then select **Properties**. In the **Properties** dialog box, select the **Unblock** checkbox.
@@ -685,7 +698,7 @@ Next, follow these steps for each VM, or use remoting from a single machine.
     > - If your client machine is a server machine (for example, a machine that is running Windows Server 2019), you must turn off the Internet Explorer Enhanced Security Configuration when you access the **Service Fabric Explorer** page.
     > - If any antivirus software is installed, make sure that you set exclusion. Follow the guidance in the [Service Fabric](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup) documentation.
 
-### <a name="configurelcs"></a>Step 14. Configure LCS connectivity for the tenant
+### <a name="configurelcs"></a>Step 15. Configure LCS connectivity for the tenant
 
 An on-premises local agent is used to orchestrate deployment and servicing of Finance + Operations through LCS. To establish connectivity from LCS to the Finance + Operations tenant, you must configure a certificate that enables the local agent to act on behalf on your Azure AD tenant (for example, contoso.onmicrosoft.com).
 
@@ -725,77 +738,65 @@ Only user accounts that have the Global Administrator directory role can add cer
 > .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint 'OnPremLocalAgent Certificate Thumbprint' -TenantId 'xxxx-xxxx-xxxx-xxxx'
 > ```
 
-### <a name="setupsql"></a>Step 15. Set up SQL Server
+### <a name="configuresqlcert"></a>Step 16. Configure the SQL Server certificate
 
-1. Install SQL Server with high availability, unless you're deploying in a sandbox environment, where one instance of SQL Server is sufficient. (Nevertheless, you might want to install SQL Server with high availability in sandbox environments to test high-availability scenarios.)
+Get an SSL certificate from a CA to configure SQL Server for Finance + Operations. By default, an AD CS or self-signed certificate was generated by a previous step.
 
-    > [!IMPORTANT]
-    > You must enable the [SQL Server and Windows Authentication mode](/sql/database-engine/configure-windows/change-server-authentication-mode).
+> [!NOTE]
+> If you're ordering the certificate from a public CA, ensure that the Subject Alternative Name of the certificate matches the FQDN of each node/instance in the SQL availability group.
 
-    You can install SQL Server with high availability either as SQL clusters that include a Storage Area Network (SAN) or in an Always-On configuration. Verify that the Database Engine, SSRS, Full-Text Search, and SQL Server Management Tools are already installed.
+#### Use a script to deploy certificates for an Always-On SQL availability group or instance
 
-    > [!NOTE]
-    > Make sure that Always-On is set up as described in [Select Initial Data Synchronization Page (Always On Availability Group Wizards)](/sql/database-engine/availability-groups/windows/select-initial-data-synchronization-page-always-on-availability-group-wizards), and follow the instructions in [To Prepare Secondary Databases Manually](/sql/database-engine/availability-groups/windows/select-initial-data-synchronization-page-always-on-availability-group-wizards#PrepareSecondaryDbs).
+The following script automates the steps of the manual process that is described in the next section. If you aren't using remoting, connect to a SQL machine, and open PowerShell with administrator privileges. Then navigate to the **infrastructure** folder in your file share, and run the following command. Complete these steps for each node.
 
-2. Run the SQL service as either a domain user or a gMSA.
-3. Get an SSL certificate from a CA to configure SQL Server for Finance + Operations. For testing purposes, you can create and use a certificate that is generated through AD CS. You will have to replace the computer name and domain name in the following examples.
+```powershell
+# If Remoting, execute
+#.\Configure-SQLCert-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
 
-    **AD CS certificate for an Always-On SQL availability group**
+.\Configure-SQLCert.ps1 -PfxCertificatePath ".\Certs\SQL1.contoso.com"
+```
 
-    If you're setting up testing certificates for Always-On, use the following remoting script. This script works like the manual script that follows.
+You can verify that everything has been configured correctly by running the following command.
 
-    ```powershell
-    #If you need to create self-signed certs
-    #.\New-SelfSigned-SQLCert-AllVMs.ps1 -SqlMachineNames SQL1,SQL2 -SqlListenerName SQL-LS -ProtectTo CONTOSO\dynuser -ConfigurationFilePath .\ConfigTemplate.xml
+```powershell
+# If Remoting, execute
+#.\Configure-SQLCert-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Test
 
-    .\New-ADCS-SQLCert-AllVMs.ps1 -SqlMachineNames SQL1,SQL2 -SqlListenerName SQL-LS -ProtectTo CONTOSO\dynuser
-    ```
+.\Configure-SQLCert.ps1 -PfxCertificatePath ".\Certs\SQL1.contoso.com" -Test
+```
 
-    **AD CS certificate for a single SQL availability group**
+#### Manually configure the certificate for an Always-On SQL availability group or instance
 
-    ```powershell
-    #If you need to create self-signed certs
-    #.\New-SelfSigned-SQLCert-AllVMs.ps1 -SqlMachineNames SQL1 -ProtectTo CONTOSO\dynuser -ConfigurationFilePath .\ConfigTemplate.xml
+1. The **infrastructurescripts** folder should include a folder that is named **Certs**. In this folder, find the .pfx file that has your certificate.
 
-    .\New-ADCS-SQLCert-AllVMs.ps1 -SqlMachineNames SQL1 -ProtectTo CONTOSO\dynuser
-    ```
+1. For each node of the SQL cluster, follow these steps:
 
-    **Manual AD CS steps for an Always-On SQL availability group or Windows Server Failover Clustering with SQL Server** 
+    1. Copy the generated .pfx file to the node, and import the certificate into the **LocalMachine** store.
 
-    For each node of the SQL cluster, follow these steps. 
-
-    1. Run the following Windows PowerShell command on each of the SQL Server Always-On replicas.
-
-        ```powershell
-        #If you need to create self-signed certs
-        #.\New-SelfSigned-SQLCert-AllVMs.ps1 -SqlMachineNames SQL1,SQL2 -SqlListenerName SQL-LS -ProtectTo CONTOSO\dynuser -GenerateCertOnly
-
-        .\New-ADCS-SQLCert-AllVMs.ps1 -SqlMachineNames SQL1,SQL2 -SqlListenerName SQL-LS -ProtectTo CONTOSO\dynuser -GenerateCertOnly
-        ```
-
-    2. Grant certificate permissions to the account that is used to run the SQL service:
+    1. Grant certificate permissions to the account that is used to run the SQL service:
 
         1. Open the Certificate Manager tool (**certlm.msc**).
         2. Select and hold (or right-click) the certificate that was created, and then select **Tasks** \> **Manage Private Keys**.
         3. Add the SQL Server service account, and grant it **Read** access.
 
-    3. Enable **ForceEncryption** and the new certificate in SQL Server Configuration Manager:
+    1. Enable **ForceEncryption** and the new certificate in SQL Server Configuration Manager:
 
         1. Open SQL Server Configuration Manager, expand **SQL Server Network Configuration**, select and hold (or right-click) **Protocols for \[server instance\]**, and then select **Properties**.
         2. In the **Properties** dialog box, on the **Certificate** tab, in the **Certificate** field, select the desired certificate.
         3. On the **Flags** tab, in the **ForceEncryption** box, select **Yes**.
         4. Select **OK** to save your changes.
 
-    4. Export the certificate (.cer file) from each SQL cluster node, and install it in the trusted root of each Service Fabric node. You will have at least two certificates for the Always-On cluster. However, you might have more if you have additional replicas. 
-    5. Restart the SQL service.
+    1. Restart the SQL service.
 
-    > [!NOTE] 
-    > For more information, see [How to enable SSL encryption for an instance of SQL Server by using Microsoft Management Console](https://support.microsoft.com/help/316898/how-to-enable-ssl-encryption-for-an-instance-of-sql-server-by-using-microsoft-management-console).
+1. If you used self-signed certificates, export the certificate (.cer file), and install it in the trusted root of each Service Fabric node. You will have only one certificate for all the nodes in your SQL cluster.
+
+> [!NOTE] 
+> For more information, see [How to enable SSL encryption for an instance of SQL Server by using Microsoft Management Console](https://support.microsoft.com/help/316898/how-to-enable-ssl-encryption-for-an-instance-of-sql-server-by-using-microsoft-management-console).
 
 > [!IMPORTANT]
-> If you used remoting, be sure to run the cleanup steps after the setup is completed. For instructions, see the [Step 20. Tear down CredSSP, if remoting was used](#teardowncredssp) section.
+> If you used remoting, be sure to run the cleanup steps after the setup is completed. For instructions, see the [Tear down CredSSP, if remoting was used](#teardowncredssp) section.
 
-### <a name="configuredb"></a>Step 16. Configure the databases
+### <a name="configuredb"></a>Step 17. Configure the databases
 
 1. Sign in to [LCS](https://lcs.dynamics.com/v2).
 1. On the dashboard, select the **Shared asset library** tile.
@@ -822,7 +823,7 @@ Only user accounts that have the Global Administrator directory role can add cer
     > - The user who is running the SQL service and the user who is running the scripts should have **Read** access on the folder or share where the backup file is located.
     > - If an existing database already has the same name, it won't be overwritten.
 
-1. Copy the **infrastructure** folder to the SQL Server machine. Then open Windows PowerShell in elevated mode, and go to the folder.
+1. Connect to a machine in your SQL cluster. Then open Windows PowerShell in elevated mode, and navigate to the **Infrastructure** folder in your file share.
 
 #### Configure the OrchestratorData database
 
@@ -902,7 +903,7 @@ Only user accounts that have the Global Administrator directory role can add cer
         | svc-FRPS$       | gMSA | db\_owner     |
         | svc-FRAS$       | gMSA | db\_owner     |
 
-### <a name="encryptcred"></a>Step 17. Encrypt credentials
+### <a name="encryptcred"></a>Step 18. Encrypt credentials
 
 1. Copy your infrastructure folder to an AOS node.
 2. Create the **Credentials.json** file by running the following command.
@@ -922,7 +923,7 @@ Only user accounts that have the Global Administrator directory role can add cer
     >
     > The script will request the credentials that are required for the Entity Store feature, but this request can be skipped. For more information, see [PowerBI.com integration with on-premises environments](../analytics/entity-store-on-prem.md).
 
-### <a name="configureadfs"></a>Step 18. Configure AD FS
+### <a name="configureadfs"></a>Step 19. Configure AD FS
 
 Before you can complete this procedure, AD FS must be deployed on Windows Server. For information about how to deploy AD FS, see [Deployment Guide Windows Server 2016 and 2012 R2 AD FS Deployment Guide](/windows-server/identity/ad-fs/deployment/windows-server-2012-r2-ad-fs-deployment-guide).
 
@@ -968,6 +969,8 @@ For more information about how to use the script, see the documentation that is 
 > [!NOTE]
 > If you want to reuse your previously configured AD FS server for additional environments, see [Reuse the same AD FS instance for multiple environments](./onprem-reuseadfs.md).
 
+Connect to a server that is hosting your AD FS instance/farm, open PowerShell with administrator privileges, and navigate to the **Infrastructure** folder in your file share. Then run the following command.
+
 ```powershell
 # Host URL is your DNS record\host name for accessing the AOS
 .\Publish-ADFSApplicationGroup.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com'
@@ -986,7 +989,7 @@ If you can access the URL, a JavaScript Object Notation (JSON) file is returned.
 
 You've now completed the setup of the infrastructure. The following sections describe how set up your connector and deploy your Finance + Operations environment in LCS.
 
-### <a name="configureconnector"></a>Step 19. Configure a connector and install an on-premises local agent
+### <a name="configureconnector"></a>Step 20. Configure a connector and install an on-premises local agent
 
 1. Sign in to [LCS](https://lcs.dynamics.com/), and open your on-premises implementation project.
 2. Select the Menu button (sometimes referred to as the hamburger or the hamburger button), and then select **Project settings**.
@@ -1017,7 +1020,7 @@ You've now completed the setup of the infrastructure. The following sections des
 14. After the local agent is successfully installed, go back to your on-premises connector in LCS.
 15. On the **3: Validate setup** tab, select **Message agent** to test for LCS connectivity to your local agent. When a connection is successfully established, you will receive the following message: "Validation complete. Agent connection established."
 
-### <a name="teardowncredssp"></a>Step 20. Tear down CredSSP, if remoting was used
+### <a name="teardowncredssp"></a>Step 21. Tear down CredSSP, if remoting was used
 
 If you used any of the remoting scripts during setup, be sure to run the following command during breaks in the setup process, or after the setup is completed.
 
@@ -1027,7 +1030,7 @@ If you used any of the remoting scripts during setup, be sure to run the followi
 
 If the previous remoting Windows PowerShell window was accidentally closed, and CredSSP was left enabled, this command disables it on all the machines that are specified in the configuration file.
 
-### <a name="deploy"></a>Step 21. Deploy your Finance + Operations environment from LCS
+### <a name="deploy"></a>Step 22. Deploy your Finance + Operations environment from LCS
 
 1. In LCS, open your on-premises implementation project.
 2. Go to **Environment** \> **Sandbox**, and select **Configure**. To get the required values, run the following command on the primary domain controller VM. That VM must have access to ADFS and the DNS server settings.
@@ -1064,13 +1067,13 @@ The following illustration shows a successful deployment. Notice that the upper-
 
 ![Successfully deployed environment.](./media/Deployed2021.png)
 
-### <a name="connect"></a>Step 22. Connect to your Finance + Operations environment
+### <a name="connect"></a>Step 23. Connect to your Finance + Operations environment
 
 - In a web browser, go to `https://[yourD365FOdomain]/namespaces/AXSF`, where **yourD365FOdomain** is the domain name that you defined in the [Step 1. Plan your domain name and DNS zones](#plandomain) section earlier in this topic.
 
 ## Known issues
 
-### When you run the New-D365FOGMSAAccounts cmdlet, you receive the following error message: "Key does not exist" 
+### When you run the .\Create-GMSAAccounts.ps1 script, you receive the following error message: "Key does not exist" 
 
 If you're creating and generating gMSA passwords in your domain for the first time, you must first create the Key Distribution Services KDS Root Key. For more information, see [Create the Key Distribution Services KDS Root Key](/windows-server/security/group-managed-service-accounts/create-the-key-distribution-services-kds-root-key).
 

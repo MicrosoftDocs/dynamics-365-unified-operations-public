@@ -4,7 +4,7 @@
 title: Set up the fiscal integration for Commerce channels
 description: This topic provides guidelines for setting up the fiscal integration functionality for Commerce channels. 
 author: EvgenyPopovMBS
-ms.date: 01/31/2022
+ms.date: 03/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -16,7 +16,6 @@ ms.search.validFrom: 2017-06-20
 # Set up the fiscal integration for Commerce channels
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This topic provides guidelines for setting up the fiscal integration functionality for Commerce channels. For more information about the fiscal integration, see [Overview of fiscal integration for Commerce channels](fiscal-integration-for-retail-channel.md).
 
@@ -43,6 +42,7 @@ The process of setting up the fiscal integration includes the following tasks:
 - Configure the fiscal registration process that defines a sequence of fiscal registration steps and the fiscal connectors and fiscal document providers that are used for each step.
 - Assign the fiscal registration process to point of sale (POS) functionality profiles.
 - Assign connector technical profiles to hardware profiles.
+- Assign connector technical profiles to POS hardware or functionality profiles.
 
 ### Upload configurations of fiscal document providers
 
@@ -158,10 +158,12 @@ To assign entities of the fiscal registration process to POS profiles, follow th
 1. In Commerce headquarters, go to the **POS functionality profiles** page (**Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**). 
 1. Assign the fiscal registration process to a POS functionality profile.
 1. Select **Edit**, and then, on the **Fiscal registration process** tab, in the **Process number** field, select a process.
+1. On the **Fiscal services** tab, select connector technical profiles with the connector location **Register**.
 1. Go to the **POS hardware profile** page (**Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**).
 1. Assign connector technical profiles to a hardware profile. 
 1. Select **Edit**, and then, on the **Fiscal peripherals** tab, add a line. 
 1. In the **Profile number** field, select a connector technical profile.
+1. On the **Fiscal peripherals** tab, select connector technical profiles with the connector location **Hardware station**.
 
 > [!NOTE]
 > You can add several technical profiles to the same hardware profile. However, a hardware profile or POS functionality profile should have only one intersection with any fiscal connector group.
@@ -172,6 +174,17 @@ The fiscal registration flow is defined by the fiscal registration process and a
 - The fiscal document provider is also responsible for identifying the fiscal connector that is used for fiscal registration. It matches the connector functional profiles that are included in the fiscal connector group that is specified for the current step of the fiscal registration process with the connector technical profile that is assigned to the hardware profile of the Hardware station that the POS is paired to.
 - The fiscal document provider uses the data mapping settings from the fiscal document provider configuration to transform transaction/event data such as taxes and payments while a fiscal document is generated.
 - When the fiscal document provider generates a fiscal document, the fiscal connector can either send it to the fiscal device as is, or parse it and transform it into a sequence of commands of the device application programming interface (API), depending on how the communication is handled.
+
+### Set up registers with fiscal registration restrictions
+
+You can select registers where fiscal registration is prohibited, for example in cases where you need to provide only non-fiscal operations such as product catalog search, customer lookup, or transaction draft creation on these devices.
+
+To set up registers with fiscal registration restrictions, follow these steps.
+
+1. In Commerce headquarters, go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal registration processes**.
+1. Select the required process.
+1. Select the **POS registers with fiscal process restrictions** tab.
+1. Add registers with fiscal process restrictions as needed.
 
 ### Validate the fiscal registration process
 

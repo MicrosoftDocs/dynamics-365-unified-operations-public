@@ -4,7 +4,7 @@
 title: VAT declaration for Germany
 description: This topic provides information about how to generate QR-bills and process incoming QR-bills.
 author: anasyash
-ms.date: 01/25/2021
+ms.date: 03/24/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,7 +29,10 @@ ms.dyn365.ops.version: 10.0.0
 
 [!include [banner](../includes/banner.md)]
 
-
+> [!IMPORTANT]
+  > This feature is deprecated. For more information, see [Removed and deprecated features](../get-started/removed-deprecated-features-finance.md#elster-declaration-for-germany-design-based-on-reporting-codes).
+  > For more information about VAT declaration, see [VAT declaration (Germany)](emea-deu-vat-declaration-germany.md)
+  
 This topic explains how to set up and generate the value-added tax (VAT) declaration for legal entities in Germany.
 
 For general information about how to set up the VAT statement, see [VAT reporting for Europe](emea-vat-reporting.md).

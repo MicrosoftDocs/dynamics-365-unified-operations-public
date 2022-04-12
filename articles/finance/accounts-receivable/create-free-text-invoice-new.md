@@ -3,8 +3,8 @@
  
 title: Create a free text invoice
 description: This topic explains how to create free text invoices. 
-author: mikefalkner
-ms.date: 08/24/2018
+author: abruer
+ms.date: 02/15/2022
 ms.topic: article 
 ms.prod:  
 ms.technology:  
@@ -14,12 +14,12 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2018-08-30 
 ms.dyn365.ops.version: 8.0.4
 
@@ -74,6 +74,7 @@ This topic explains how to create free text invoices. For the procedure, use the
 
     * You can change the timing of invoice printing. Select **Current** to print each invoice as it's updated. Select **After** to print after all invoices have been updated.
     * To change how the customer's credit limit is verified before the invoice is posted, change the value in the **Credit limit type** field.
+    * You can select to stop free text invoice posting when an error occurs on the **Updates** tab on the **Accounts receivable parameters** page (**Accounts receivable > Setup > Accounts receivable parameters**). Select **Yes** for the **Stop posting of free text invoices on first error** parameter to stop the posting of free text invoices when an error occurs. If posting in a batch, an error will stop the posting process and the batch status will be set to **Error**. If this option is not selected, the posting process will skip an invoice with a posting error and will continue to post additional invoices. If posting in a batch, a posting error will not prevent other invoices from being posted. The batch status will be **Ended**. A detailed posting process report will be available for review in batch job history.
     * To print the invoice, set the option to **Yes**.
     * To post the invoice, set the option to **Yes**. You can print the invoice without posting it.
 
@@ -88,6 +89,12 @@ After you copy lines, you can edit the information as you require.
 You can create a free text invoice from a template. When you select **New from template** on the **Invoice** tab, you can select a template name and the customer account for the new free text invoice. Default values, such as the terms of payment and method of payment, can be automatically filled in from the customer, or you can use the values that were saved in the template.
 
 A new free text invoice is created, and you can edit the values as you require.
+
+## Resetting the workflow status for free text invoices from Unrecoverable to Draft
+A workflow instance that has stopped because of an unrecoverable error will have a workflow status of **Unrecoverable**. When the status of a customer free text invoice workflow is **Unrecoverable**, you can reset it to **Draft** by selecting **Recall** from the workflow actions. You can then edit the customer free text invoice. This feature is available if the **Resetting the workflow status for free text invoices from Unrecoverable to Draft** parameter on the **Feature management** page is turned on.
+
+You can use the **Workflow history** page to reset the workflow status to **Draft**. You can open this page from **Free text invoice** or from **Common > Inquires > Workflow**. To reset the workflow status to **Draft**, select **Recall**. You can also reset the workflow status to **Draft** by selecting the **Recall** action on the **Free text invoice** page or **All free text invoices** page. After the workflow status is reset to **Draft**, it becomes available for editing on the **Free text invoice** page.
+
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

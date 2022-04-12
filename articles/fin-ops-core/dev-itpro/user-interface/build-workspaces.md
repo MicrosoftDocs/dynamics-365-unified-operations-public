@@ -4,7 +4,7 @@
 title: Build operational workspaces
 description: This topic provides detailed information about workspaces and the patterns and subpatterns that are used to build operational workspaces. 
 author: jasongre
-ms.date: 06/20/2017
+ms.date: 02/08/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -49,7 +49,7 @@ This topic provides detailed information about workspaces and the patterns and s
 - Provide visual impact.
 - Be constructed using prescriptive patterns and best practices that lead to minimal COGS and fast response times.
 
-[![Example of a workspace.](./media/workspacediagram_opwork.png)](./media/workspacediagram_opwork.png) 
+[![Example of a workspace](./media/workspaceConceptVertical2.png)](./media/workspaceConceptVertical2.png)
 
 To accomplish these goals, the operation workspace pattern was developed.
 
@@ -65,13 +65,13 @@ An example of a workspace is the **Reservation management** workspace in **Fleet
 The overall form, as well as each of the sections within, are defined using UX patterns and subpatterns. The corresponding patterns are described in detail in the following sections.
 
 ## Patterns and subpatterns
-When building an operational workspace, you must use the patterns and subpatterns defined for that purpose. These patterns and subpatterns are described below. In general, when a control is cited within a pattern's structure, it will be described as: Common name (ControlType) \[cardinality\] If cardinality isn't specified, then the item is required exactly once. Simple patterns and subpatterns have the structural tree omitted.
+When you build an operational workspace, you should use the following patterns and subpatterns that are defined for workspace content. In general, when a control is cited in a pattern's structure, it will be described in the following way: Common name (ControlType) \[cardinality\]. If cardinality isn't specified, the item is required exactly once. For simple patterns and subpatterns, the structural tree is omitted.
 
 ### Patterns
 
 There are the top-level patterns for use with operational workspaces.
 
-#### Workspace Operational
+#### Operational workspace
 
 This pattern is the primary operational workspace pattern and should be applied to the **Design** node of the operational workspace form. It will prescribe the following structure:
 
@@ -79,7 +79,7 @@ This pattern is the primary operational workspace pattern and should be applied 
     - ActionPane (ActionPane) \[0..\*\]
     - Workspace Page Filter Group (Group) \[0..1\]
         - Subpattern: Workspace Page Filter Group
-    - Panorama (Tab)
+    - FastTab (Tab)
         - Section Summary Tiles (TabPage)
             - Subpattern: Section tiles
         - Section Tabbed List (TabPage)
@@ -89,9 +89,15 @@ This pattern is the primary operational workspace pattern and should be applied 
         - Section-Related Links (TabPage)
             - Subpattern: Section-Related Links
 
+> [!NOTE]
+> Starting in version 10.0.25, the following changes are introduced:
+>
+> - The panorama component has been replaced with FastTabs to facilitate the transition of workspaces to a more vertical orientation.
+> - An **Operational workspace w/Tabs** pattern is available for workspaces that require multiple standard tabs of content, including Power BI reports.
+
 #### Form Part Section List
 
-This pattern is used for **Form Part** forms containing a list. These lists are referenced within the Section Tabbed List TabPage in the Workspace Operational pattern.
+This pattern is used for **Form Part** forms that contain a list. These lists are referenced within the Section Tabbed List (TabPage) in the **Operational workspace** pattern. Any remaining uses of the deprecated **Hub Part Grid** pattern should be migrated to the **Form Part Section List** pattern.
 
 - Design
     - Header Group (Group) \[0..1\]
@@ -108,23 +114,23 @@ This pattern is used for **Form Part** forms containing a chart control. These c
 
 #### Workspace Page Filter Group
 
-This subpattern is referenced in the pattern Workspace Operational, in Workspace Page Filter Group. It allows for a single input control, which can be used to filter the workspace as a whole.
+This subpattern is referenced in the **Operational workspace** pattern. It allows for a single input control, which can be used to filter the workspace as a whole.
 
 #### Section Tiles
 
-This subpattern is referenced in the pattern Workspace Operational, in Section Summary tiles. It allows for both tiles and charts. Any number of tiles and charts can be defined, in any order. Tiles are defined with TileButton controls, and charts are defined with Form Part controls. A chart Form Part must have dimensions that match those of a normal tile, to ensure the chart flows correctly with the tiles displayed.
+This subpattern is referenced in the **Operational workspace** pattern. It enables both tiles and charts to be defined, in any order. Tiles are defined by using TileButton controls, and charts are defined by using Form Part controls. A chart Form Part should have dimensions that match those of a normal tile, to ensure that the chart flows correctly with the tiles that are shown. Any remaining uses of the deprecated **Tiles** subpattern should be migrated to the **Section Tiles** subpattern. 
 
 #### Section Tabbed List
 
-This subpattern is referenced in the pattern Workspace Operational, in Section Tabbed List. It allows for multiple list containers to be modeled, each of which ultimately references a Form Part that points to a form containing the desired list. It requires the following structure:
+This subpattern is referenced in the **Operational workspace** pattern. It enables multiple list containers to be modeled, each of which references a Form Part that points to a form that contains the desired list. It requires the following structure:
 
 - Tabbed List (Tab)
     - Tabbed List Page (TabPage) \[0..\*\]
-        - Form Part Section List (FormPartControl). **Note**: The referenced form must use the form pattern, Form Part Section List.
+        - Form Part Section List (FormPartControl). **Note:** The referenced form should use the **Form Part Section List** form pattern.
 
 #### Section Stacked Chart
 
-This subpattern is referenced in the pattern Workspace Operational, in Section Stacked Chart. It allows for up to two charts, which will be rendered in a vertically stacked orientation. It requires the following structure:
+This subpattern is referenced in the **Operational workspace** pattern. It allows for up to two charts, which will be rendered in a vertically stacked orientation. It requires the following structure:
 
 - Tab page (TabPage)
     - First Chart FormPart (FormPartControl) \[0..1\]
@@ -132,7 +138,7 @@ This subpattern is referenced in the pattern Workspace Operational, in Section S
 
 #### Section-Related Links
 
-This subpattern is referenced in the pattern Workspace Operational, in Section-Related Links. It allows for a series of links, with one level of nesting permitted. It requires the following structure:
+This subpattern is referenced in the **Operational workspace** pattern. It allows for a series of links that can include one level of nesting. It requires the following structure. Any remaining uses of the deprecated **Hub Part Links** subpattern should be migrated to the **Section Related Links** subpattern.
 
 - Tab page (TabPage)
     - Menu Function Button (MenuFunctionButton) \[0..\*\]
@@ -141,7 +147,7 @@ This subpattern is referenced in the pattern Workspace Operational, in Section-R
 
 #### Filters and Toolbar – Inline
 
-This subpattern is referenced in the pattern Form Part Section List, in Header Group. It allows for some filters and a toolbar, all on the same line. It requires the following structure:
+This subpattern is referenced by the **Form Part Section List** pattern. It allows for some filters and a toolbar, all on the same line. It requires the following structure:
 
 - Group (Group)
     - Filter Group (Group) \[0..1\]
@@ -151,7 +157,7 @@ This subpattern is referenced in the pattern Form Part Section List, in Header G
 
 #### Filters and Toolbar - Stacked
 
-This subpattern is referenced in the pattern Form Part Section List, in the Header Group. It allows for some filter fields on one line, and a toolbar on a line below those filters. It requires the following structure:
+This subpattern is referenced by the **Form Part Section List** pattern. It allows for some filter fields on one line, and a toolbar on a line below those filters. This pattern is generally used only over simple lists. It requires the following structure:
 
 - Group (Group)
     - Filter Group (Group) \[0..1\]

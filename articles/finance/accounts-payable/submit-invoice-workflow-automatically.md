@@ -4,7 +4,7 @@
 title: Submit invoices to the workflow system and match product receipt lines
 description: This topic explains the process of submitting vendor invoices to the workflow system and automatically matching posted product receipt lines to vendor invoices.
 author: abruer
-ms.date: 09/08/2020
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form:  
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.assetid: 
@@ -34,7 +34,7 @@ This topic explains the process of submitting vendor invoices to the workflow sy
 
 ## Submitting imported vendor invoices to the workflow system and matching posted product receipt lines to pending vendor invoice lines
 
-As part of a touchless Accounts payable invoicing process, you can have the system automatically submit an imported invoice to the workflow system. You can configure the process of submitting imported invoices to the workflow system on the **Vendor invoice automation** tab of the **Accounts payable parameters** page (**Accounts payable \> Setup \> Accounts payable parameters**). The submit-to-workflow process will run in the background, at a frequency that you specify (either hourly or daily).
+As part of a touchless Accounts payable invoicing process, an imported invoice can be automatically submitted to the workflow system. You can configure the process of submitting imported invoices to the workflow system on the **Vendor invoice automation** tab of the **Accounts payable parameters** page (**Accounts payable \> Setup \> Accounts payable parameters**). The submit-to-workflow process will run in the background, at a frequency that you specify (either hourly or daily).
 
 When you automatically submit invoices to the workflow system, you must begin with an imported invoice. To ensure that the invoice can be processed from start to finish without manual intervention, you must include an automated posting task in the workflow configuration. Invoices that are related to purchase orders (POs), and invoices that contain a non-PO procurement category and non-stocked lines, can automatically be submitted to the workflow system. Invoices that are manually entered must be manually submitted to the workflow system.
 
@@ -42,11 +42,11 @@ The **Submitted by** value in the workflow is the user ID that was entered for t
 
 ## Matching posted product receipts to invoice lines that have a three-way matching policy
 
-As part of a touchless Accounts payable invoicing process, the system can automatically match posted product receipts to invoice lines. A three-way matching policy must be defined for this task. This feature is available if the **Vendor invoice automation** feature has been enabled on the **Feature management** page.
+As part of a touchless Accounts payable invoicing process, posted product receipts can be automatically matched to invoice lines. A three-way matching policy must be defined for this task. This feature is available if the **Vendor invoice automation** feature has been enabled on the **Feature management** page.
 
 The matching process will run until the matched product receipt quantity equals the invoice quantity. However, if there are multiple product receipts for a single invoice line, you’ll need to run the process multiple times to achieve the full quantity match. You can specify the maximum number of times that the system should try to match product receipts to an invoice line before it concludes that the process failed. The process will run in the background, either hourly or daily. 
 
-You can run the automated matching process as part of the process for submitting invoices to the workflow system. Alternatively, you can run it as a standalone process. The settings for the match-product-receipts-to-invoice-lines process are configured on the **Vendor invoice automation** tab of the **Accounts payable parameters** page (**Accounts payable \> Setup \> Accounts payable parameters**).
+You can run the automated matching process as part of the process for submitting invoices to the workflow system. Alternatively, you can run it as a stand-alone process. The settings for the match-product-receipts-to-invoice-lines process are configured on the **Vendor invoice automation** tab of the **Accounts payable parameters** page (**Accounts payable \> Setup \> Accounts payable parameters**).
 
 Invoice lines that have a three-way matching policy, where the matched receipt quantity is less than the invoice quantity, will be included in the automated match-to-product-receipt process.
 

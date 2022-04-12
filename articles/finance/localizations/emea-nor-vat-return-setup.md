@@ -4,7 +4,7 @@
 title: Prepare your environment to interoperate with ID-porten and Altinn web services
 description: This topic explains how to prepare your environment to interoperate with ID-porten and Altinn web services.
 author: liza-golub
-ms.date: 01/20/2022
+ms.date: 03/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -95,6 +95,9 @@ Application-specific parameters for the **VAT Declaration XML (NO)** and **VAT D
 | [NoteForTaxCode_Lookup](#note-for-tax-code) | The code list that is used to show the connection between structured notes and VAT codes in the VAT notification. | During the runtime of the report, this lookup field is used to find the value from the enumerated list of values that the Norwegian Tax Administration requires, based on master data from Finance, and to report it in the `<merknad/utvalgtMerknad>` tag under the `<mvaSpesifikasjonslinje>` node. |
 | [VATSpecification_Lookup](#vat-specification) | The code list for further specification of VAT. | During the runtime of the report, this lookup field is used to find value from the enumerated list of values that the Norwegian Tax Administration requires, based on master data from Finance, and to report it in the `<spesifikasjon>` tag under the `<mvaSpesifikasjonslinje>` node. |
 | [StandardTaxCodes_Lookup](#standard-tax-code) | The VAT code that is provided by the Norwegian Tax Administration. | During the runtime of the report, this lookup field is used to find the standard tax code for the sales tax code that is used in sales tax posting in Finance, and to report it in the `<mvaKode>` tag of the report. |
+
+> [!NOTE]
+> We recommend that you enable the **Accelerate the ER labels storage** feature in the **Feature management** workspace. This feature helps improve network bandwidth utilization and overall system performance because, in most cases, ER labels of a single language are used when you work with a single ER configuration. The **Accelerate the ER labels storage** feature is available in the **Feature management** workspace as of Finance version 10.0.25. For more information about how to set up the parameters of an ER format for each legal entity, see [Performance](../../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md#performance).
 
 Follow these steps to set up the application-specific parameters for the **VAT Declaration XML (NO)** and **VAT Declaration Excel (NO)** ER formats.
 
@@ -203,8 +206,7 @@ The following table shows the lookup results for **VATSpecification_Lookup**.
 
 > [!IMPORTANT]
 > It's important that you add **Annet** (**Other**), which must collect data from other cases as the last item in the list. **Line value** must be the last value in your table. In all the other columns, select **\*Not blank\***. Because in some cases, the **Item sales tax group** and **Sales tax group** fields can be empty in tax transactions, add one more line with the **Annet** (**Other**) lookup result value, **\*Blank\*** in **Item sales tax group**, and **Sales tax group** columns and **\*Not blank\*** in all the other columns.
-
-> [!IMPORTANT]
+>
 > Values from *Specification* enumerated list of values must be used with specific *Standard tax codes* only. Make sure that your **VATSpecification_Lookup** setup is compatible with applicability rules defined by Norwegian Tax Administration provided in documentation on [Information models, XSD and encoding](https://skatteetaten.github.io/mva-meldingen/english/informasjonsmodell/#encoding).
 
 ### <a id="standard-tax-code"></a>Standard tax codes (StandardTaxCodes_Lookup)
@@ -259,6 +261,15 @@ The following table shows the lookup results for **StandardTaxCodes_Lookup**.
 > - **91** – Purchases of emission allowances and gold/Deductions on purchases of emission allowances and gold. 
 >
 > The reverse charge mechanism enables a document to be posted that has two tax transactions: one where the direction is **Sales tax payable**, and one where it's **Sales tax receivable**. Those transactions are then reported in the VAT return as two lines.
+>
+> Purchases of goods and services from abroad without deduction entitlements that are subject to the following `mvaKode` values must be reported in the VAT return by using one line where the direction is **Sales tax payable**. We recommend that you post these documents by using the [reverse charge mechanism for the VAT/GST scheme](emea-reverse-charge.md) where the sales tax code that is set up with a positive tax rate has a non-deductible percentage that equals 100.
+>
+> - **82** – Purchases of goods from abroad without deduction entitlement (standard rate).
+> - **84** – Purchases of goods from abroad without deduction entitlement (middle rate).
+> - **87** – Purchases of services from abroad without deduction entitlement (standard rate).
+> - **89** – Purchases of services from abroad without deduction entitlement (low rate). 
+>
+> The reverse charge mechanism enables a document to be posted with two tax transactions: one where the direction is **Sales tax payable**, and one where it's **Sales tax receivable**. The transaction where the direction is **Sales tax payable** is then reported in the VAT return. The transaction where the direction is **Sales tax receivable** isn't reported in the VAT return.
 
 ## <a id="em-setup"></a>Import a package of data entities that includes a predefined EM setup
 
@@ -481,7 +492,7 @@ Follow these steps to set up an internet address that is used by Altinn web serv
     | NO Altinn PUT JSON | `https://skd.apps.tt02.altinn.no/skd/mva-melding-innsending-etm2/instances` |
     | NO Altinn PUT XML | `https://skd.apps.tt02.altinn.no/skd/mva-melding-innsending-etm2/instances` |
     | NO Altinn GET attachments | Leave this field blank. |
-    | NO Validate VAT return | `https://mp-test.sits.no/api/mva/grensesnittstoette/mva-melding/valider` |
+    | NO Validate VAT return | `https://idporten-api-sbstest.sits.no/api/mva/grensesnittstoette/mva-melding/valider` |
 
 For *production* interoperation with web services that the Norwegian Tax Administration provides, use the following internet addresses.
 

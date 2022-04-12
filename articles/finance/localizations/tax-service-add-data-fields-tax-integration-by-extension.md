@@ -4,7 +4,7 @@
 title: Add data fields in the tax integration by using extensions
 description: This topic explains how to use X++ extensions to add data fields in the tax integration.
 author: qire
-ms.date: 02/07/2022
+ms.date: 02/17/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -366,6 +366,16 @@ In this code, `_destination` is the wrapper object that is used to generate the 
 >   - The value of the enum is integer.
 >   - The label of the enum can be different across preferred languages. Don't use **enum2Str** to convert the enum type to string.
 >   - The name of enum is recommended because it's fixed. **enum2Symbol** can be used to convert the enum to its name. The enumeration value added in the tax configuration should be exactly the same as the enum name.
+
+## Model dependency
+
+To successfully build the project, add the following reference models to the model dependencies:
+
+- ApplicationPlatform
+- ApplicationSuite
+- Tax Engine
+- Dimensions, if financial dimension is used
+- Other necessary models referenced in the code
 
 ## Validation
 
