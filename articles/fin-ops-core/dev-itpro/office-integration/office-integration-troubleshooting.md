@@ -4,7 +4,7 @@
 title: Troubleshoot the Office integration
 description: This topic provides answers to questions, tips, and troubleshooting information for the Microsoft Office integration capabilities.
 author: jasongre
-ms.date: 10/15/2021
+ms.date: 04/12/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -88,7 +88,7 @@ To check processing time in the Excel Add-in versus the server/service, follow t
 
 ### Is Export to Excel the best way to get data out of the system?
 
-The best way for end users to get data out of the system is to use the Excel Add-in. The add-in relies on the Open Data Protocol (OData) service to retrieve data and takes advantage of the security that data entities provide. The import and export capabilities in the Data management framework (DMF) and Data import/export framework (DIXF) can also be used. However, DMF and DIXF are often limited to administrators. Additionally, you might consider exploring the available [reporting and analytic features](../analytics/bi-reporting-home-page) in the product.
+The best way for end users to get data out of the system is to use the Excel Add-in. The add-in relies on the Open Data Protocol (OData) service to retrieve data and takes advantage of the security that data entities provide. The import and export capabilities in the Data management framework (DMF) and Data import/export framework (DIXF) can also be used. However, DMF and DIXF are often limited to administrators. Additionally, you might consider exploring the available [reporting and analytic features](../analytics/bi-reporting-home-page.md) in the product.
 
 When the previously mentioned options can't be used, you might consider the Export to Excel functionality, which can be useful for retrieving data from calculated columns (display methods), columns that have formatted values, and data from temporary tables. Because the export process uses the data from the active form to retrieve data, Export to Excel will return the data exactly as it is shown in the grid. Additionally, it will return only the data that matches the current set of filters.
 
