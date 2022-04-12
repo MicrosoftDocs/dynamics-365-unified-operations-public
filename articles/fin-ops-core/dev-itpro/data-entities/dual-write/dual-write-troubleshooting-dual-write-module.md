@@ -2,7 +2,7 @@
 title: Troubleshoot dual-write issues in Finance and Operations apps
 description: This topic provides troubleshooting information that can help you fix issues with the Dual-write module in Finance and Operations apps.
 author: RamaKrishnamoorthy 
-ms.date: 04/11/2022
+ms.date: 04/12/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
@@ -71,9 +71,9 @@ To fix the issue, create a ticket for the Data Integration team. Attach the netw
 
 ## Enable parallel processing in Finance and Operations apps to improve performance
 
-Enabling parallel processing can reduce the time needed to import data from Finance and Operations apps into Dynamics 365 CE/Dataverse. 
+Enabling parallel processing can reduce the time needed to import data from Finance and Operations apps into customer engagement apps and Microsoft Dataverse. 
 
-To enable parallel processing in Finance and Operations apps:
+To enable parallel processing in Finance and Operations apps, complete the following steps.
 
 1. Login to your inance and Operations environment.
 2. Go to **Data management > Framework parameters**.
@@ -81,6 +81,7 @@ To enable parallel processing in Finance and Operations apps:
 4. Add the parameters for parallel processing:
   - **Import threshold record count** – The number of records that must be met before parallel processing is enabled.
   - **Import task count** – The number of threads (tasks) to run in parallel.
+5. Select **Save**.
 
 
 ## Errors while trying to start a table mapping
