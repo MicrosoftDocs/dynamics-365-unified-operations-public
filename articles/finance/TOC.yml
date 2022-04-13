@@ -938,6 +938,8 @@
         items:
         - name: Plan your chart of accounts
           href: general-ledger/plan-chart-of-accounts.md
+        - name: Plan your local chart of accounts
+          href: general-ledger/plan-local-chart-of-accounts.md
         - name: Main accounts
           items:
           - name: Main account types
