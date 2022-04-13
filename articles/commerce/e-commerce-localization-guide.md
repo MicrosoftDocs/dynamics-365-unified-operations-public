@@ -91,14 +91,17 @@ Configuring a new language for an e-commerce site is a three-step process.
 
 #### Step 1: Add a language to your channel in headquarters
 
+> [!NOTE] 
+> Before you add a language to your channel in headquarters, you can confirm the channels(s) mapped to your site by going to **Site settings \> Channels** in site builder. The channels mapped to your site are listed in the **Channels** column.
+
 To add a language to your channel in headquarters, follow these steps.
 
-1. Navigate to the channel in headquarters to which you want to add the new language. The list of channels you have configured in headquarters can be found by going to **Retail and Commerce \> Channels \> Online stores**.
-1. Open the online store that is mapped to your site by selecting its Retail channel ID. You can verify the online store that is mapped to your site by navigating to the Channels site setting page in site builder and looking at the name of the online store in the Channels column.
-1. On the **Languages** FastTab, select **+ Add** and select the locale code for the new language from the drop-down list in the **Language** column, and then select **Save**.
-1. Go to **Retail and commerce \> Retail and commerce IT \> Distribution schedules** and run job 1070 (Channel configuration). When the job has finished, you can proceed to step 2 to add the language to a channel to your site in site builder.
+1. Go to **Retail and Commerce \> Channels \> Online stores** to see the channel(s) that you have configured.
+1. For the channel/online store to which you want to add a language, select its **Retail Channel ID**. 
+1. On the **Languages** FastTab, select **+ Add**. In the new row that is created, in the **Language** column enter the locale code for the new language or select it  from the drop-down list, and then select **Save**.
+1. Go to **Retail and Commerce \> Retail and commerce IT \> Distribution schedule** and run job **1070 Channel configuration**. When the job has completed, you can proceed to the next section of this topic to add the language to a channel in site builder.
 
-![Languages tab within an online store in Commerce headquarters](media/loc-guide-3.png)
+![Languages FastTab of an online store in Commerce headquarters](media/loc-guide-3.png)
 
 #### Step 2: Add a language to a channel in site builder
 
@@ -107,32 +110,33 @@ To add a language to a channel in site builder, follow these steps.
 1. Open your site in site builder and go to **Site settings \> Channels**.
 1. Select on the name of the channel to which you want to add the language.
 1. In the right pane, select **+ Add a locale**.
-1. In the **Add a locale** dialog box, select the locale for the language you previously added to the channel in headquarters.
-1. Select the domain and path that customers will request to view your site in this channel and language.
-1. If you want this language to be the default language for viewing, creating, and updating site builder pages and fragments, select the **Add as default** checkbox. This setting only affects site builder and does not influence the published site experience for your customers.
+1. In the **Add a locale** dialog box, under **Add a locale** select the locale for the language you previously added to the channel in headquarters., and then select **OK**.
+1. Under **Domain**, select the domain that customers will visit to view your site in this channel and language.
+1. Under **Path**, select the path that customers will visit to view your site in this channel and language.
+1. If you want this language to be the default language for viewing, creating, and updating site builder pages and fragments, select the **Use as default authoring channel language** checkbox. This setting only affects site builder and does not influence the published site experience for your customers.
+1. Select **OK**.
 1. Select **Save and Publish**.
 
 #### Step 3: Localize your site content
 
-When you return to the **Pages** view in site builder, the new language you added will now be available in the channel and locale picker at the upper right of the page. It is now possible to create localized versions of pages in your base language.
+After adding a language to a channel in site builder, the new language should now be available to select in the **Locale** field of the channel and locale picker at the upper right of the page. Once this is confirmed, you will be able to start creating localized versions of site pages from those in your base language.
 
-The process for localizing the content of your pages and fragments is covered in the Localizing e-commerce site content section later in this document.
+To get started localizing your site content, see [Localize e-commerce site content](#localize-e-commerce-site-content) below.
 
 ### Configure a new channel for your site
 
-Dynamics 365 Commerce e-commerce sites can serve the experiences that are defined across multiple online channels that are configured in headquarters. A site uses multiple channels to show a unique configuration of payment methods, price groups, product hierarchies, assortments, and set of products to customers. A channel is typically used to configure these dimensions to suit the requirements and preferences for the experience associated with individual countries, but this is a business decision that is made by the customer and not a requirement.
+Dynamics 365 Commerce e-commerce sites can serve experiences that are defined across multiple online channels and configured in headquarters. A site uses multiple channels to show a unique configuration of payment methods, price groups, product hierarchies, assortments, and products to customers. A channel is typically used to configure these dimensions to suit the requirements and preferences for the experience associated with individual countries, but this is a business decision that is made by the customer and not a requirement.
 
-The prerequisites and tasks associated with setting up a channel (online store) are beyond the scope of this document. To learn more about setting up an online channel in Dynamics 365 Commerce headquarters, see [Channel setup basics](channels-overview.md#channel-setup-basics). For information on steps and requirements specific to online channels, see [Set up an online channel](channel-setup-online.md).
+The prerequisites and tasks associated with setting up a channel/online store are beyond the scope of this document. To learn more about setting up an online channel in Dynamics 365 Commerce headquarters, see [Channel setup basics](channels-overview.md#channel-setup-basics). For information on steps and requirements specific to online channels, see [Set up an online channel](channel-setup-online.md).
 
 To add a channel to your site in site builder, follow these steps.
 
 1. Go to **Site settings \> Channels**. 
 1. Select **Add a channel**.
-1. In the **Add a channel** dialog box, select the channel that you want to add. 
-    > [!NOTE]
-    > You can only add channels that have not already been added to your site.
-1. Select the default locale for the channel. If you add new languages to the channel, you can change the default to one of those languages.
-1. Select and enter the domain and path that will constitute the URL that serves content and experiences for this channel and language combination.
+1. In the **Add a channel** dialog box, under **Channel** select the channel that you want to add. You can only add channels that have not already been added to your site.
+1. Under **Default locale**, select the default locale for the channel. If you add new languages to the channel, you can change the default to one of those languages.
+1. Under **Domain**, enter or select the domain that will be part of the URL that serves content and experiences for this channel and language combination.
+1. Under **Path**, enter or select the path that will be part of the URL that serves content and experiences for this channel and language combination.
 1. Select **OK**.
 1. Select **Save and Publish**.
 
@@ -154,27 +158,24 @@ The following e-commerce site assets are localizable in site builder:
 - Modules
 
 When a new page, fragment, or media asset is created, it is created within the context of the channel and language currently selected in the channel and locale
-picker. This is usually your *base language*, assuming that you haven't configured additional languages or channels. In sites with multiple channels and languages configured, this base language is defined by the channel and locale you have set as the default on the **Site settings \> Channels**  page.
+picker. This is usually your *base language*, assuming that you haven't configured additional languages or channels. In sites with multiple channels and languages configured, the base language is defined by the channel and locale you have set as the default on the **Site settings \> Channels**  page.
 
-The steps for localizing content for pages, fragments, and media assets is similar. Exceptions and differences will be called out in the sections below. Module content localization follows a different process. Links to relevant information for that process is in the Modules section below.
+The steps for localizing content for pages, fragments, and media assets are similar. Module content localization follows a different process, for more information see [Localize modules](#localize-modules)below.
 
 #### Step 1: Export an XLIFF file
 
-To export an XLIFF for a page, fragment, or image, follow these steps.
+To export an XLIFF for a page, fragment, or image in site builder, follow these steps.
 
-1. Open the asset for which you want to export base language content for localization.
+1. Open the page, fragment, or image asset for which you want to export base language content for localization.
 1. On the command bar, select **Localization \> Export XLIFF**.
 
-An .xlf file named **\<assetname\>.xlf** will be downloaded as a file to your browser's download folder. This XLIFF file is specific to the asset you're localizing. You will export an XLIFF file for every asset you want to localize.
-
-> [!NOTE]
-> The Localization tab is only visible when assets are in an Edit state.
+An .xlf file named **\<assetname\>.xlf** will be downloaded to your browser's download folder. This XLIFF file is specific to the asset you're localizing. You will export one XLIFF file for every asset that you want to localize.
 
 #### Step 2: Localize the XLIFF file
 
 In most cases, you'll work with a localization vendor to translate your XLIFF files. If you are localizing assets internally or testing the localization process, you must make the following changes to each XLIFF file:
 
-- Add a target-language attribute to the /xliff/file element whose value is the locale identifier of the language you're localizing into. This locale identifier must match the locale identifier specified on the **Channels** site settings page.
+- Add a target language attribute to the /xliff/file element whose value is the locale identifier of the language you're localizing to. This locale identifier must match the locale identifier specified on the **Channels** site settings page.
 - For each //source element, add a target element sibling whose text value is the localized version of what's contained in that source element.
 
 For information about the schema that governs XLIFF files, see [XLIFF 1.2 Specification](http://docs.oasis-open.org/xliff/xliff-core/xliff-core.html).
@@ -186,11 +187,11 @@ For information about the schema that governs XLIFF files, see [XLIFF 1.2 Specif
 
 To import an XLIFF file for an asset, follow these steps.
 
-1. Open the asset in site builder.
-1. Select the channel and language you're importing localized content for in the channel and locale picker on the upper right.
-1. On the command bar, select **Localization \> Import XLIFF** and then browse to the localized XLIFF file for this asset and language.
+1. Open the page, fragment, or image asset in site builder.
+1. In the channel and locale picker on the upper right, select the channel and language you're importing localized content for.
+1. On the command bar, select **Localization \> Import XLIFF**, and then browse to the localized XLIFF file to import for this asset and language.
 
-Once the XLIFF is successfully imported, a variant of the page, fragment, or asset is created. From here forward, changes made to the localized variant only affect the variant, and not the base asset that it was derived from. Similarly, changes to the base asset will not be reflected in the variant of that asset. However, in the case of site pages it is possible to make changes across variants by modifying the template or layout they're associated with. Similarly, changes to a fragment will affect all pages that are dependent on that variant.
+Once the XLIFF file is successfully imported, a variant of the page, fragment, or asset is created. From here forward, changes made to the localized variant only affect the variant and not the base asset that it was derived from. Similarly, changes to the base asset will not be reflected in the variant of that asset. However, for site pages it is possible to make changes across variants by modifying the template or layout they're associated with. Similarly, changes to a fragment will affect all pages that are dependent on that variant.
 
 ### Images
 
@@ -204,7 +205,7 @@ It is not currently possible to localize the binary for a digital asset such as 
 
 ### Localize modules
 
-Strings that are rendered as part of the module itself (for example, **Previous** and **Next** buttons in a carousel module) are localized separately from module content. For  more information, see [Localize a module](e-commerce-extensibility/localize-module.md).
+Strings that are rendered as part of the module itself (for example, **Previous** and **Next** buttons in a carousel module) are localized separately from module content. For more information, see [Localize a module](e-commerce-extensibility/localize-module.md).
 
 ## Additional resources
 
