@@ -44,6 +44,8 @@ The **Financial reporting setup** page has two sections that determine the data 
 
 - **Dimensions** tab - Because different companies use different dimensions and account structures, there is no way to determine the order in which users want to view all financial dimensions on reports. This page allows you set the order in which you want financial dimensions to appear when you build and view a report in Financial reporting. 
 - **Attributes** tab - This tab is where you can select whether you want the ability to use **Vendors** and **Customers** as attributes for filtering and report design. Reporting on Vendor and Customer will only be valuable if you do not enter multiple vendors or customers in a single voucher when posting transactions. Choosing Vendor and/or Customer will add additional time to the integration.  
+>[!NOTE]
+>Changes to this setup requires a reset to the Data Mart in order to see the changes in the financial reports. 
 
 ## Data entities
 

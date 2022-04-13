@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.21
 
 [!include [banner](../includes/banner.md)]
 
-To generate an [outbound document](general-electronic-reporting.md#configuring-data-model-mappings-for-outgoing-documents), you must run an ER [format mapping](general-electronic-reporting.md#FormatComponentInbound). When the [initial](er-apis-app73.md#code-to-run-a-format-mapping-for-data-export) API of the ER framework is used to call an ER format mapping, all [destinations](electronic-reporting-destinations.md#applicability) that were configured for components of the format are always run. To review the sample code for a call of this type, see [Add a report service class](er-quick-start1-new-solution.md#ServiceClass).
+To generate an [outbound document](general-electronic-reporting.md#configuring-data-model-mappings-for-outgoing-documents), you must run an ER format mapping. When the [initial](er-apis-app73.md#code-to-run-a-format-mapping-for-data-export) API of the ER framework is used to call an ER format mapping, all [destinations](electronic-reporting-destinations.md#applicability) that were configured for components of the format are always run. To review the sample code for a call of this type, see [Add a report service class](er-quick-start1-new-solution.md#ServiceClass).
 
 You can also configure [action-dependent ER destinations](er-action-dependent-destinations.md) for the ER format. You can then use the [extended](er-apis-app10-0-17.md#er-api-run-format-with-action-code) API of the ER framework to call an ER format mapping that provides a user action code. The action code runs only the destinations that were configured for the action that was provided.
 

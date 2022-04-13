@@ -4,7 +4,7 @@
 title: Vendor invoice automation workspace
 description: This topic explains how to set up the workspace that is related to vendor invoices and that shows the information that is available through Microsoft Power BI.
 author: abruer
-ms.date: 09/28/2020
+ms.date: 02/14/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form:  
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.assetid: 
@@ -64,14 +64,14 @@ When the **Vendor invoice automation** feature is turned on, a **Company** field
 
 The tiles in the **Summary of pending invoices** section of the **My work** view give an overview of the state of your vendor invoices. You can see journals that aren't yet posted and invoices that are on hold. In addition, there are the four tiles that are associated with the Vendor invoice automation feature:
 
-- Manual receipt match needed
-- Matching validation not successful
-- Invoices not submitted to workflow
-- Invoices not imported
+- **Manual receipt match needed**
+- **Matching validation not successful**
+- **Invoices not submitted to workflow**
+- **Invoices not imported**
 
-(These four tiles require that the Vendor invoice automation feature be turned on in Feature management.)
+(These four tiles require that the Vendor invoice automation feature be turned on in **Feature management**.)
 
-To use the **Recover vendor invoices** tile, the feature must be turned on in Accounts payable parameters. Go to **Accounts payable \> Accounts payable parameters**, and then, on the **Invoice** tab, set the **Allow vendor invoice recovery** option to **Yes**.
+To use the **Recover vendor invoices** tile, the feature must be turned on in **Accounts payable parameters**. Go to **Accounts payable \> Accounts payable parameters**, and then, on the **Invoice** tab, set the **Allow vendor invoice recovery** option to **Yes**.
 
 When the feature is turned on, you will also three tiles grouped together on the workspace in a section called **Journals**. The tiles are titled **Journals**, **Journals - Assigned to me**, and **Invoice pool**. 
 

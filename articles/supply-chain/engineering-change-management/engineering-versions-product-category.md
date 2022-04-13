@@ -4,7 +4,7 @@
 title: Engineering versions and engineering product categories
 description: This topic provides information about the concept of engineering versions. Engineering versions ensure that different states of a product and its data are kept current and clear, and that they can be visualized in the system.
 author: t-benebo
-ms.date: 09/28/2020
+ms.date: 04/07/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -141,7 +141,7 @@ For each row that you add to the grid, set the following fields.
 |---|---|
 | Name | Select the attribute to add. |
 | Value | Select the default value for the attribute. |
-| Mandatory | For attributes of the *Boolean* type, if this option is set to *Yes*, users must set the attribute to *Yes*. If this option is set to *No*, users can set the attribute to either *Yes* or *No*. For other data types, the setting of this option is just informational. |
+| Mandatory | Choose whether the attribute is mandatory, which means users must specify a valid value for the attribute before they can save a product. The effect of this setting varies slightly based on the data type of the selected attribute, as defined in the following list.<ul><li>**Boolean** – Set this to *Yes* to require the attribute to have a value of *Yes* (the system will refuse to save a product where the attribute is set to *No*). Set this to *No* to accept a value of *Yes* or *No*. (Attributes of type *Boolean* can't have an empty value.)</li><li>**Integer or Decimal** – Set this to *Yes* to require users to enter a non-zero value for this attribute. Set this to *No* to allow users to save with a value of zero.  (Attributes of these types can't have an empty value.)</li><li>**List** – Lists have a data type of *Text*, but also include a predefined list of possible values. Therefore, it isn't possible to enter a blank value for attributes of this type, so this setting has no effect and is just informational.</li><li>**All other data types** – Set this to *Yes* to make the attribute mandatory. Set this to *No* to allow users to save a product without providing a value for this attribute.</li></ul> |
 | Batch attribute | Select whether the attribute should be propagated through the batch functionality. |
 
 ### Readiness policy FastTab

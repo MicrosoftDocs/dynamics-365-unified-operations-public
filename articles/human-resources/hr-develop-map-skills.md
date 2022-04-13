@@ -3,7 +3,7 @@
 
 title: Map skills
 description: You can create a skill-mapping search to find a qualified person in Dynamics 365 Human Resources.
-author: andreabichsel
+author: twheeloc
 manager: tfehr
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,14 +16,14 @@ ms.search.form: HcmSkill, HcmSkillGapProfile, HcmSkillMapping, HcmSkillType, Hcm
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 3361
 ms.assetid: c2ce94c0-933d-4edb-822c-7f0e7b49e4ee
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
 

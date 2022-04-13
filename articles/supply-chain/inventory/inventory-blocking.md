@@ -100,13 +100,11 @@ When **Reserve ordered items** is disabled, the expected receipts can't be reser
 
 Note the difference in transaction status and dimensions between the two cases. For this reason, we recommend enabling the **Reserve ordered items** option.
 
-<!-- KFM: (Enable this section when the feature leaves private preview)
-
 ### Disable expected receipts from quality orders that sample blocked inventory feature
 
-To simplify the inventory transactions in the case of quality orders that sample inventory blocked as a consequence of inventory status, the system provides a feature that disables expected receipts from such quality orders. As the expected receipt is in any case immediately blocked by inventory status blocking, there is no reduction of on-hand inventory because of this change.
+To simplify the inventory transactions in the case of quality orders that sample inventory blocked as a consequence of inventory status, the system provides a feature that disables expected receipts from such quality orders. Because the expected receipt is immediately blocked by inventory status blocking, there is no reduction of on-hand inventory because of this change.
 
--->
+This feature is turned off by default. Admins can turn it on or off by searching for the *Disable expected receipts from quality orders that sample blocked inventory* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Additional resources
 

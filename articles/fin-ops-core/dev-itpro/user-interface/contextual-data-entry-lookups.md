@@ -4,7 +4,7 @@
 title: Contextual data entry for lookups
 description: This topic explains how contextual data entry works and provides implementation details and tips for developers who want their lookups to have this behavior.
 author: jasongre
-ms.date: 06/20/2017
+ms.date: 03/07/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -95,7 +95,7 @@ Custom lookup implementations can provide advanced or non-typical behaviors, suc
 ```xpp
 public str resolveAmbiguousReference()
 {
-    FormControlAmbiguousReferenceResolver::resolveAmbiguousReferenceForControl (this, true);
+    return FormControlAmbiguousReferenceResolver::resolveAmbiguousReferenceForControl (this, true);
 }
 ```
 

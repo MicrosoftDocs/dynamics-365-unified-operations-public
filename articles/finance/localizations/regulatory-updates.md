@@ -45,34 +45,26 @@ For the latest regulatory update plans, refer to the following table.
 
 |Country|Release date|Release version|Regulatory update|
 |--------------------|---------------|-------|-------| 
-|      Australia         |   June 2021      | 10.0.21      |   AU - Payment Times Reporting Bill 2020 for Microsoft Dynamics 365 Finance   |
-|      Brazil         |   May 2021, February 2021      | 10.0.20, 10.0.19      |   NF-e NT2020.006  - Identification of the digital platform intermediary (Layout and validation rules updates)   |
-|      Brazil         |   March 2021         | 10.0.19         |    SPED REINF layout 1.5.1  |
-|      Brazil         |   April 2021         | 10.0.20        |    SPED ECD Layout 9  |
-|      Brazil         |   May 2021         | 10.0.20         |    SPED Contributions - Version Guide 1.34  |
-|      Brazil         |   June 2021         | 10.0.21         |    SPED ECF - Layout 7  |
-|      Brazil         |   May 2021         | 10.0.20         |    NF-e NT2020.005  v1.10 - Validation rules and updates PED ECF - Layout 7  |
-|      Brazil         |   May 2021         | 10.0.21         |    SPED Reinf 1.5.1 - Changes in webservice method of EVENT 5011  |
-|      France        |   April 2021       | 10.0.20      |   French data archiving export (FEC) enhancement  |
-|      Germany        |   March 2021       | 10.0.19      |   GDPDU extensions for Fixed Assets table and transactions  |
-|      Germany        |   April 2021       | 10.0.20HF      |   Changes in E-invoicing format (xRechnung) in Germany since 2021  |
-|      India         |   March 2021      | 10.0.19      |   GST e-invoices: Export orders, Deemed export, SEZ  |
-|      India         |   March 2021      | 10.0.19      |   Dynamics QR Code on B2C invoice  |
-|      India         |   June 2021      | 10.0.21      |   New API version for e-invoice (v.1.04)  |
-|      Italy         |   March 2021      | 10.0.19      |   Invoices communication (Esterometro) format changes v.2.1.1  |
-|      Italy        |   May 2021      | 10.0.19      |   Retail - Fiscal printer integration sample update to support XML RT 2.0  |
-|      Italy         |   March 2021      | 10.0.19      |   Retail - Enable retail-specific invoices violiting chronological posting  |
-|      Italy         |   February 2021      | 10.0.19      |   Unique certification - 2021  |
-|      Oman         |   June 2021      | 10.0.21      |   VAT declaration  |
-|      Poland          |   June 2021     | 10.0.21     |   JPK_V7M (VDEK) - Procedural markings enhancement |
-|      Poland          |   July 2021     | 10.0.21     |   JPK-V7M new rules for completing starting from July 2021 |
-|      Russia          |   March 2021     | 10.0.19    |   The 2020 property tax declaration will have to indicate the average annual value of movable fixed assets|
-|      Russia          |   March 2021     | 10.0.19HF    |   Profit tax declaration version 5.09 for 2020 reporting|
-|      Russia          |   March 2021     | 10.0.19    |   Government decree N 2200 21.12.2020 application 4 new forma for transport invoice is required|
-|      Russia          |   June 2021     | 10.0.21HF, 10.0.20HF, 10.0.19 HF    |   Changes in printable layouts of invoices-factures and corrective factures|
-|      Spain          |   July 2021     | 10.0.21    |    OSS / IOSS scenario - ClaveRegimenEspecialOTrascendencia = 17- KB4623605|
-|      Sweden          |   July 2021     | 10.0.21    |    VAT declaration format including reverse charge amounts|
-|      United Arab Emirates   |   May 2021     | 10.0.20    |   Posting payment journal with postdated checks to bank account |
+|      Brazil         |   December 2021         | 10.0.24, 10.0.25         |    SPED Fiscal layout 2022  |
+|      Brazil         |   March 2022    | 10.0.24HF, 10.0.25HF         |    ICMS-DIFAL collection in operations aimed at non-tax taxpayers (Complementary Law No. 190/22)  |
+|      Denmark         |   January 2022  | 10.0.25HF         |    VAT declaration preview in Excel |
+|      France   |   November 2021 | 10.0.25         |    French data archiving export (FEC) - "Missing numbers justification" annex |
+|      Italy         |   November 2021         | 10.0.24         |    Electronic invoicing for cross-border transactions  |
+|      Italy         |   February 2022 | 10.0.24HF, 10.0.25HF| Unique Certification - 2022 in Dynamics 365 Finance  |
+|      Lithuania|   February 2022 | 10.0.24HF, 10.0.25HF | i.SAF changes from 2022-01-01 in Dynamics 365 Finance  |
+|      Mexico         |   December 2021      | 10.0.24      |   Carta de Porte complement version 2.0  |
+|      Norway        |   November 2021      | 10.0.24      |   VAT declaration format 2022 with direct submission - Dynamics 365 Finance |
+|      Poland          |   October 2021     | 10.0.24     |   JPK_V7M - new schema version from January 2022 |
+|      Poland          |   November 2021     | 10.0.24HF     |   Annual report on the payment dates in commercial transactions |
+|      Poland          |   October 2021     | 10.0.24     |   Electronic format of EU sales list (VAT-UE) |
+|      Russia          |   October 2021     | 10.0.24    |   Changes in sales, purchase books and facture journals|
+|      Russia          |   October 2021     | 10.0.24HF    |   Change in formats of VAT declaration with appendixes|
+|      Russia          |   November 2021     | 10.0.24    |   Federal Accounting Standards 6/2020 (Fixed assets)|
+|      Russia          |   January 2022     | 10.0.24HF, 10.0.25    |   Enable Electronic reporting (ER) destination for storing Russian accounting documents (primary documents and accounting reports)|
+|      Russia          |   December 2021     | 10.0.25    |   Integration Fixed asset (Russia) module with Asset management module|
+|      Russia          |   February 2022     | 10.0.24HF, 10.0.25    |  New format of transport invoice (Government decree N 2116 30.11.2021)|
+|      Saudi Arabia          |   November 2021     | 10.0.24    |   Retail - Electronic invoicing in Saudi Arabia - Phase 1|
+|      Spain      |   March 2022| 10.0.24HF, 10.0.25HF | Spain: VAT declaration Model 303 changes January 1, 2022 in Dynamics 365 Finance|
 
 
 

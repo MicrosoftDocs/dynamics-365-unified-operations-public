@@ -164,7 +164,7 @@ For each row that you add, set the following fields.
 
 ## Assign readiness policies to standard and engineering products
 
-When you create a new product based on an engineering category, you create both a *released product* and a related *shared product*. The way that readiness policies are resolved for a released product depends on whether you've turned on the *Product readiness checks* feature. (For more information, see the [Readiness checks on standard products](#standard-products) section later in this topic.)
+When you create a new product based on an engineering category, you create both a *released product* and a related *shared product*. The way that readiness policies are resolved for a released product depends on whether the *Product readiness checks* feature is turned on for your system (see the [Readiness checks on standard products](#standard-products) section later in this topic for details about this feature and how to turn it on or off).
 
 - When the *Product readiness checks* feature is turned *off* on your system, the readiness policy is set and shown only on [engineering category](engineering-versions-product-category.md) records. To learn which policy applies to a released product, the system checks the **Product readiness policy** field for the related engineering category. You can change the readiness policy for an existing product by editing the related engineering category (not the shared product).
 - When the *Product readiness checks* feature is turned *on*, it adds a **Product readiness policy** field to the **Product** page (where shared products are set up) and to the **Released product** page (where the value is read-only and is taken from the related shared product). The system finds the readiness policy for a released product by checking the related shared product. When you use an engineering category to create a new engineering product, the system creates both a shared product and a released product, and copies any **Product readiness policy** setting for the engineering category to the new shared product. You can then change the readiness policy for an existing product by editing the related shared product (not the released engineering category).
@@ -187,30 +187,9 @@ To assign a readiness policy to an engineering category, follow these steps.
 
 You can enable product readiness checks for standard (non-engineering) products by turning on the *Product readiness checks* feature in Feature management. This feature makes a few small changes to the readiness check system so that it supports standard products.
 
-### Enable readiness checks on standard products
+### Enable or disable readiness checks on standard products
 
-To enable your system to do readiness checks on standard products, follow these steps.
-
-- Enable Engineering change management in your system as described in [Engineering change management overview](product-engineering-overview.md).
-- Use [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to turn on the feature that is named *Product readiness checks*.
-
-<!-- KFM: This section requires confirmation before publishing
-
-### How readiness checks are created for standard products
-
-When you create a new non-engineering *released product*, the system determines whether a readiness check policy has been set up for the related shared product. If a policy has been set up, the following events occur:
-
-- Readiness checks are created for the released product, according to the applicable policy.
-- The released product is blocked from being used until all checks are marked as completed.
-
-If a new *variant* is created for a product, the system checks whether readiness checks have been set up on the related shared product. If a readiness check has been set up, the following events occur:
-
-- Readiness checks are created for the released product, according to the applicable policy.
-- The released product is blocked from being used until all checks are marked as completed.
-
-For engineering products, readiness checks are created in the same way that they are created when the *Product readiness checks* feature is turned off. For more information, see the [How readiness checks are created for a new engineering product, variant, or version](#checks-engineering) section earlier in this topic.
-
--->
+This feature requires that both the *Engineering Change Management* and *Product readiness checks* features be turned on for your system. For details about how to turn these features on or off, see [Engineering change management overview](product-engineering-overview.md).
 
 ### Create readiness policies for standard products
 

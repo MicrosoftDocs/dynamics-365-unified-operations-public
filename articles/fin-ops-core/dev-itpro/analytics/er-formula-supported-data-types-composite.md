@@ -22,7 +22,7 @@ This topic provides information about the composite data types that are supporte
 
 The *class* data type refers to a public application class. In ER, it's represented as a [*record*](#record) that contains a separate field for every public method of the referenced class. When the call of the method is parameterized, you must also specify the required arguments of the appropriate types in an ER expression that is configured to call the method.
 
-In ER [mapping](general-electronic-reporting.md#data-model-and-model-mapping-components) and [format](general-electronic-reporting.md#FormatComponentOutbound) components, you can add the **Class** data source that is presented as a data source and that returns a value of the *class* type. This data source exposes public methods of the class that can be called at runtime.
+In ER mapping and format components, you can add the **Class** data source that is presented as a data source and that returns a value of the *class* type. This data source exposes public methods of the class that can be called at runtime.
 
 > [!NOTE]
 > Only methods that return a value can be called from ER expressions.

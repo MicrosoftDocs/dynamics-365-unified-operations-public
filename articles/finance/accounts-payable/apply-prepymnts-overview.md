@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 
 ms.assetid: 
@@ -41,12 +41,12 @@ The following points describe how prepayments are applied when different purchas
 - **Multiple vendor invoices per purchase order** – The prepayment on the purchase order will be applied to the first imported vendor invoice. If the prepayment amount exceeds the invoice amount, prepayment application fails, and you must manually apply the prepayment.
 - **Multiple vendor invoices for multiple purchase orders** – The prepayments on the purchase orders will be applied to the first relevant invoice. If the prepayment amount exceeds the invoice amount, prepayment application fails, and you must manually apply the prepayments. If any prepayments that remain after prepayments are applied to the first invoice, they can be applied to the invoices that follow.
 
-If the system tries to apply a prepayment, but application fails, the behavior depends on the setting of the **Block follow-up automation process in case of prepayment application failure** option:
+If an attempt to apply a prepayment fails, the setting of the **Block follow-up automation process in case of prepayment application failure** option will determine next steps:
 
 - **Yes** – The error message "Automatic application of prepayment: Failed" is added in the automation history, and the invoice remains in the list of pending vendor invoices. The invoice will remain blocked until you manually apply the prepayment.
 
-    To manually apply prepayments, go to the pending vendor invoice. On the **Invoice details** page, set the **Include in automated processing** option for the blocked invoice to **No**. You can now manually apply the prepayment. After the prepayment has been applied, set the **Include in automated processing** option back to **Yes** so that the invoice can be automatically processed.
+To manually apply prepayments, go to the pending vendor invoice. On the **Invoice details** page, set the **Include in automated processing** option for the blocked invoice to **No**. You can now manually apply the prepayment. After the prepayment has been applied, set the **Include in automated processing** option back to **Yes** so that the invoice can be automatically processed.
 
-    You can also bypass automatic application of the prepayment by setting the **Include in automated processing** option to **No** and then setting it back to **Yes**. You'll receive the following message: "A prepayment already exists for the purchase order. Do you want to ignore it for selected vendor invoice?" Select **Yes**. The message "Application of prepayment bypassed manually" is added in the automation history, and the vendor invoice won't be blocked when the automated process runs again.
+You can also bypass automatic application of the prepayment by setting the **Include in automated processing** option to **No** and then setting it back to **Yes**. You'll receive the following message: "A prepayment already exists for the purchase order. Do you want to ignore it for selected vendor invoice?" Select **Yes**. The message "Application of prepayment bypassed manually" is added in the automation history, and the vendor invoice won't be blocked when the automated process runs again.
 
 - **No** – Follow-up automation processes will continue. You can still apply the prepayment during settlement.

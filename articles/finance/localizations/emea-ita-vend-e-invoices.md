@@ -120,6 +120,6 @@ Follow these steps to register invoice types.
 
 ## Process vendor electronic invoices
 
-To view all electronic invoices for vendors and perform various actions, go to **Accounts payable** \> **Invoices** \> **E-Invoices** \> **Electronic invoices**. The functionality resembles the functionality for processing customers electronic invoices. For more information, see [Electronic invoice register](emea-ita-e-invoices.md#electronic-invoice-register).
+To view all electronic invoices for vendors and perform various actions, go to **Accounts payable** > **Invoices** > **E-Invoices** > **Electronic invoices**. The functionality resembles the functionality for processing customers electronic invoices. For more information, see [Electronic invoice register](emea-ita-e-invoices.md#electronic-invoice-register).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

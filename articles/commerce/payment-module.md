@@ -4,7 +4,7 @@
 title: Payment module
 description: This topic covers the payment module and explains how to configure it in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 01/07/2022
+ms.date: 04/12/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -79,6 +79,8 @@ The following illustration shows an example of the PayPal iframe invoked using t
 | Payment style override | Cascading Style Sheets (CSS) code | Because the payment module is hosted in an iframe, there is limited styling capability. You can achieve some styling by using this property. To override site styles, you must paste the CSS code as the value of this property. Site builder CSS overrides and styles don't apply to this module. |
 |Supported tender types| String| If multiple payment connectors are configured, you should provide the supported tender type string as defined in the Commerce headquarters payment connector configuration (see the following image). If blank, it defaults to the Adyen payment connector. Added in Commerce release 10.0.14.|
 |Is primary payment|  **True** or **False** | If **True**, any error messages will be generated from the primary payment connector on the checkout page. If both Adyen and PayPal payment connectors are configured, set Adyen to **True**, which was added in Commerce release 10.0.14.|
+|Use connector id| **True** or **False** | Use this property if multiple payment connectors are configured for the site. If **True**, connectors will need to use the connector id for payment correlation.|
+|Use browser set language code for iFrame|  **True** or **False** | (Adyen only) If **True**, the Adyen iFrame will render the language based on the site user's browser context instead of using the language code of the Commerce channel configured for the site. Added in Commerce release 10.0.27.|
 
 The following illustration shows an example of the **Supported Tender Types** value set to "PayPal" in the payment connector configuration in Commerce headquarters.
 ![Example of supported tender types in Commerce headquarters.](./media/ecommerce-paymenttendertypes.png)

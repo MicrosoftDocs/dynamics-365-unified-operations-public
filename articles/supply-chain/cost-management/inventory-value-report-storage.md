@@ -48,12 +48,9 @@ The **Inventory value report storage** report is helpful when the output contain
 > [!NOTE]
 > The **Inventory value report storage** report doesn't include subtotals that are defined in the report layout. It also doesn't include general ledger balances, even if those balances are defined in the report layout. Reconciliation to the general ledger must be done by using trial balances. However, the standard **Inventory value** report does include these subtotals and balances.
 
-## Turn on the Inventory value report storage feature
+## Turn the Inventory value report storage feature on or off
 
-The standard **Inventory value** report is enabled by default. However, if you want to generate the more advanced **Inventory value report storage** report, you must turn on the feature in your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on if it's required. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** *Cost management*
-- **Feature name:** *Inventory value report storage*
+As of Supply Chain Management version 10.0.25, this feature is turned on by default. Admins can turn this functionality on or off by searching for the *Inventory value report storage* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## <a name="report-configuration"></a>Define inventory value report configurations
 
@@ -100,7 +97,7 @@ Use the **Inventory value reports** page to set up the content that is included 
         - Received and not yet invoiced items when the **Post physical inventory** option is cleared for the relevant item model group.
         - Received and not yet invoiced items when the **Post product receipt in ledger** option is cleared on the **Product receipt** FastTab on the **General** tab of the **Accounts payable parameters** page (**Accounts payable \> Setup \> Accounts payable parameters**).
 
-    - **Calculate average unit cost** – Set this option to *Yes* to display a column that shows the average unit cost. The average unit cost is the total quantity divided by the total amount.
+    - **Calculate average unit cost** – Set this option to *Yes* to display a column that shows the average unit cost. The average unit cost is the total amount divided by the total quantity.
     - **Total quantity and value** – Set this option to *Yes* to display columns that show the total quantity of physical inventory (and financial quantities) and the total amount of physical inventory (and financial amounts). You can set this option to *Yes* only if the **Summarize physical and financial values** option is set to *No*.
     - **Inventory dimensions** – In this grid, select the **View** checkbox for each dimension that you want to show on the report. Only dimensions where the **Financial inventory** option is enabled will show values on the report. Other dimensions will show only blank columns. For those dimensions that you select to show, you can select the **Total** checkbox to include totals too.
     - **Resource ID** – Set the **View** option to *Yes* to display a column that identifies the item for each row. Set the **Total** option to *Yes* to include totals too. Depending on the type of item that is listed in each row, the column shows one of the following types of information:

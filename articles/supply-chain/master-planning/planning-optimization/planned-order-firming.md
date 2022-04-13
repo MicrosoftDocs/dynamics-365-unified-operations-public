@@ -1,13 +1,13 @@
 ---
 title: Firm planned orders
 description: This topic explains how to firm planned orders. When planned orders are firmed, they become actual purchase orders, transfer orders, or production orders.
-author: ChristianRytt
+author: t-benebo
 ms.date: 04/22/2021
 ms.search.form: ReqTransPo, ReqTransFirmLog
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
 ---
@@ -30,17 +30,15 @@ This topic describes each method in detail.
 
 Most planned order features are available in all standard installations of Microsoft Dynamics 365 Supply Chain Management that use Planning Optimization. However, a few of the features that are described in this topic must be turned on in Feature management before you can use them.
 
-### Enable parallelized firming of planned orders
+### Turn parallelized firming of planned orders on or off
 
-Parallelized firming helps speed up the firming process by parallelizing it across multiple threads. This approach can be useful when many planned orders are firmed.
-
-To make this functionality available in your system, go to [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the *Parallel firming of planned orders* feature. (As of Supply Chain Management version 10.0.21, this feature is turned on by default.)
+Parallelized firming helps speed up the firming process by parallelizing it across multiple threads. This approach can be useful when many planned orders are firmed. To use this functionality, the *Parallel firming of planned orders* feature must be turned on for your system. As of Supply Chain Management version 10.0.21, this feature is turned on by default. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.25, then you can turn this functionality on or off by going to [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and searching for the *Parallel firming of planned orders* feature.
 
 ### Enable planned order firming with filtering
 
 Planned order firming with filtering lets you define logical criteria for selecting which planned orders to firm. You can also preview which planned orders were selected, run the process in the background, and/or schedule it as a batch job.
 
-To make this functionality available in your system, go to [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the *Planned order firming with filtering* feature.
+As of Supply Chain Management version 10.0.25, this feature is turned on by default. Admins can turn this functionality on or off by searching for the *Planned order firming with filtering* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ### Enable auto-firming for Planning Optimization
 

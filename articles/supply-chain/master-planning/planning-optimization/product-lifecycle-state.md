@@ -3,7 +3,7 @@
 
 title: Exclude products that have specific product lifecycle states
 description: This topic explains how to exclude products based on their lifecycle state when Planning Optimization functionality is used.
-author: ChristianRytt
+author: t-benebo
 ms.date: 11/13/2020
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2019-11-13
 ms.dyn365.ops.version: 10.0.15
 

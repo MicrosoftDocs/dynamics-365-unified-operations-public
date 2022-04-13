@@ -4,7 +4,7 @@
 title: Platform updates for version 10.0.25 of Finance and Operations apps (April 2022)
 description: This topic lists the features that are included in the platform updates for version 10.0.25 of Finance and Operations apps.
 author: sericks007
-ms.date: 02/01/2022
+ms.date: 02/09/2022
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,7 +16,6 @@ ms.search.validFrom: 2022-01-31
 # Platform updates for version 10.0.25 of Finance and Operations apps (April 2022)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This topic lists the features that are included in the platform updates for version 10.0.25 of Finance and Operations apps. This version has a build number of 7.0.6316 and is available on the following schedule:
 
@@ -32,6 +31,7 @@ For more information about how to use Feature management, see [Feature managemen
 
 | Feature area    | Feature | More information | Enabled by |
 |-----------------|---------|------------------|---------------------------|
+| Web client | **Priority-based scheduling for batch jobs**<br><br>Priority-based scheduling decouples batch groups from the batch server and allows you to define priorities for batch groups.<br><br>It is no longer necessary to assign batch jobs to batch servers. Instead, relative scheduling priorities based on business requirements are used to determine the order in which tasks are run across available batch servers. | [Priority-based batch scheduling](../sysadmin/priority-based-batch-scheduling.md) | Feature management (*Batch priority-based scheduling*) |
 | Web client | [Vertically scrolling workspaces](/dynamics365-release-plan/2022wave1/finance-operations/finance-operations-crossapp-capabilities/vertically-scrolling-workspaces)  | <ul><li>[Workspace form pattern](../user-interface/workspace-form-pattern.md)</li><li>[Build operational workspaces](../user-interface/build-workspaces.md)</li></ul> | Internal workspaces have been migrated to the newest visuals. External workspaces will need to migrate to maintain visual consistency.  |
 | Web client  | <p>**Upgrade jQuery UI to 1.13.0**</p><p>This feature upgrades the jQuery user interface (UI) to version 1.13.0 (from 1.12.1) for Finance and Operations applications. Before enabling this feature, you should test any extensible controls or custom JavaScript code, specifically those utilizing jQuery UI APIs. This feature is targeted to be required with the Fall 2022 release, but is currently optional to allow time for migration of affected APIs.</p> | | Feature management<br>(*Upgrade jQuery UI to 1.13.0*)|
 | Web client  | [Saved views support for dialogs](/dynamics365-release-plan/2022wave1/finance-operations/finance-operations-crossapp-capabilities/updates-saved-views-personalization#view-support-for-dialogs)  | [Building forms that fully utilize saved views](../user-interface/understanding-saved-views.md)  | Feature management<br>(*Saved views support for dialogs*)  |

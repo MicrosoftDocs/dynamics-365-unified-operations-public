@@ -4,32 +4,20 @@
 title: Peripherals
 description: This topic explains the concepts that are related to Commerce peripherals. 
 author: BrianShook
-ms.date: 02/04/2022
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: RetailTerminalTable, RetailDevice, RetailHardwareProfile
-# ROBOTS: 
+ms.date: 03/01/2022
+ms.topic: article
 audience: Application User, IT Pro
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
 ms.custom: ["268444", "intro-internal"]
-ms.search.region: global
-ms.search.industry: Retail
+ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
 
 ---
 
 # Peripherals
 
 [!include[banner](includes/banner.md)]
-[!include[banner](includes/preview-banner.md)]
 
 This topic explains the concepts that are related to store peripherals. It describes the various ways that peripherals can be connected to the point of sale (POS) and the components that are responsible for managing the connection with the POS.
 
@@ -47,7 +35,7 @@ Devices can be mapped to the following application types: Retail Modern POS, Ret
 
 ### Modern POS
 
-Modern POS is the POS program for Microsoft Windows. It can be deployed on Windows 10 operating systems (OSs).
+Modern POS is the POS program for Microsoft Windows. It can be deployed on Windows 10 and Windows 11 operating systems.
 
 ### Cloud POS
 
@@ -110,7 +98,7 @@ Personal identification number (PIN) pads are supported through OPOS, but they m
 
 ### Secondary display
 
-When a secondary display is configured, the number 2 Windows display is used to show basic information. The purpose of the secondary display is to support independent software vendor (ISV) extension, because out of the box, the secondary display isn't configurable and shows limited content.
+When a secondary display is configured, the number 2 Windows display is used to show basic information. By default, the secondary display isn't configurable and shows limited content. The purpose of the secondary display is to support an independent software vendor (ISV) extension. 
 
 ### Payment device
 
@@ -134,7 +122,7 @@ To help guarantee that the largest range of devices can be used with Commerce, t
 Receipt printing at the POS is optimized for OPOS. OPOS tends to be much faster than printing through Windows. Therefore, it's a good idea to use OPOS, especially in environments where 40-column receipts are printed and transaction times must be fast. For most devices, you will use OPOS controls. However, some OPOS receipt printers also support Windows drivers. By using a Windows driver, you can access the latest fonts and network one printer for multiple registers. However, there are drawbacks to using Windows drivers. Here are some examples of these drawbacks:
 
 -   When Windows drivers are used, images are rendered before printing occurs. Therefore, printing tends to be slower than it is on printers that use OPOS controls.
--   Devices that are connected through the printer ("daisy-chained") might not work correctly when Windows drivers are used. For example, the cash drawer might not open, or the slip printer might not word as you expect.
+-   Devices that are connected through the printer ("daisy-chained") might not work correctly when Windows drivers are used. For example, the cash drawer might not open, or the receipt printer might not work as you expect.
 -   OPOS also supports a more extensive set of variables that are specific to receipt printers, such as paper cutting or slip printing.
 -   Windows printers are not supported through the IIS hardware station. 
 
@@ -178,15 +166,15 @@ To use the dedicated hardware station, follow these steps.
 1. Open Modern POS in non-drawer mode, and use the **Manage hardware stations** operation to turn on the hardware station capabilities. The dedicated hardware station will be active by default. 
 1. Sign out of Modern POS. Then sign back in, and open a shift. The peripherals that are configured in the hardware profile will now be usable. 
 
-### Shared 
+### Shared
 
 Also sometimes referred to as the "IIS" hardware station, "IIS" implying that the POS application connects to the hardware station via Microsoft Internet Information Services. The POS application connects to the IIS hardware station via web services that run on a computer where the devices are connected. When the shared hardware station is used, the peripherals that are connected to a hardware station can be used by any POS register that is on the same network as the IIS hardware station. Because only Modern POS for Windows and Android include built-in support for peripherals, all other Modern POS applications must use the IIS hardware station to communicate with POS peripherals that are configured in the hardware profile. Therefore, each instance of the IIS hardware station requires a computer that runs the web service and application that communicates with the devices. 
 
-The shared hardware station can be used to allow multiple point of sale clients to share peripherals or can be used to manage a committed set or peripherals for a single point of sale. 
+The shared hardware station can be used to allow multiple point of sale clients to share peripherals or can be used to manage a committed set of peripherals for a single point of sale. 
 
 When a hardware station is used to support sharing of peripherals between multiple POS clients, only cash drawers, receipt printers, and payment terminals should be used. You can't directly connect stand-alone bar code scanners, MSRs, line displays, scales, or other devices. Otherwise, conflicts will occur when multiple POS devices try to claim those peripherals at the same time. Here is how conflicts are managed for supported devices:
 
--   **Cash drawer** – The cash drawer is opened via an event that is sent to the device. The only issue that can occur when a cash drawer is called occurs if the cash drawer is already open. In the case of shared hardware stations, the cash drawer should be set to **Shared** in the hardware profile. This setting prevents the POS from checking whether the cash drawer is already open when it sends open commands.
+-   **Cash drawer** – The cash drawer is opened via an event that is sent to the device. Issues can occur if a cash drawer is called while the drawer is already open. A cash drawer that is used in a shared hardware station configuration should be set to **Shared** in the hardware profile. This setting prevents the POS from checking whether the cash drawer is already open when it sends open commands.
 -   **Receipt printer** – If two receipt printing commands are sent to the hardware station at the same time, one of the commands can be lost, depending on the device. Some devices have internal memory or pooling that can prevent this issue. If a print command isn't successful, the cashier receives an error message and can retry the print command from the POS.
 -   **Payment terminal** – If a cashier tries to tender a transaction on a payment terminal that is already being used, a message notifies the cashier that the terminal is being used and asks the cashier to try again later. Usually, cashiers can see that a terminal is already being used and will wait until the other transaction is completed before they try to tender again.
 
@@ -207,7 +195,7 @@ The logic that drives physically connected and network-addressable peripherals i
 ## Setup and configuration
 ### Hardware station installation
 
-For information, see [Configure and install hardware station](retail-hardware-station-configuration-installation.md).
+For guidance about how to install an IIS hardware station, see [Configure and install hardware station](retail-hardware-station-configuration-installation.md).
 
 ### Modern POS for Windows setup and configuration
 
@@ -433,7 +421,7 @@ Network peripherals can be supported directly through the hardware station that 
 </tbody>
 </table>
 
-### All Modern POS clients shared an IIS hardware station
+### All Modern POS clients that share an IIS hardware station
 
 > [!NOTE]
 > When the IIS hardware station is "shared," multiple devices can use the hardware station at the same time. For this scenario, you should use only the devices that are listed in the following table. If you try to share devices that aren't listed here, such as bar code scanners and MSRs, errors will occur when multiple devices try to claim the same peripheral. In the future, such a configuration will be explicitly prevented.
@@ -489,7 +477,7 @@ Network peripherals can be supported directly through the hardware station that 
 </table>
 
 ## Configuration for supported scenarios
-For more information about how to create hardware profiles, see [Define and maintain channel clients, including registers and hardware stations](define-maintain-channel-clients-registers-hw-stations.md). 
+For more information about how to create hardware profiles, see [Connect peripherals to the point of sale (POS)](define-maintain-channel-clients-registers-hw-stations.md). 
 
 ### Modern POS for Windows with an IPC (built-in) hardware station
 
@@ -625,9 +613,8 @@ The following peripherals were tested by using the IPC hardware station that is 
 | Manufacturer | Model    | Interface | Comments                |
 | ------------ | -------- | --------- | ----------------------- |
 | Epson        | TM-T88V  | OPOS      |                         |
-| Epson        | TM-T88VI | OPOS      |                         |
-| Epson        | TM-T88   | Custom    | Connected via network   |
-| HP           | F7M67AA  | OPOS      | Powered USB             |
+| Epson        | TM-T88IV | OPOS      |                         |
+| HP           | H300     | OPOS      | Powered USB             |
 | Star         | TSP650II | Custom    | Connected via network   |
 | Star         | mPOP     | OPOS      | Connected via Bluetooth |
 | Toshiba      | HSP100   | OPOS      |                         |
@@ -639,26 +626,17 @@ The following peripherals were tested by using the IPC hardware station that is 
 #### Bar code scanner
 
 | Manufacturer  | Model         | Interface | Comments |
-|---------------|---------------|-----------|----------|
-| Motorola      | DS9208        | OPOS      |          |
-| Honeywell     | 1900          | UWP       |          |
-| Symbol        | LS2208        | OPOS      |          |
-| HP Integrated | E1L07AA       | OPOS      |          |
+| ------------- | ------------- | --------- | -------- |
 | Datalogic     | Magellan 8400 | OPOS      |          |
+| Honeywell     | 1900          | UWP       |          |
+| HP Integrated | E1L07AA       | OPOS      |          |
+| Symbol        | LS2208        | OPOS      |          |
 
-#### PIN pad
+#### Payment terminals and PIN pads
 
-| Manufacturer | Model  | Interface | Comments                                        |
-|--------------|--------|-----------|-------------------------------------------------|
-| VeriFone     | 1000SE | OPOS      | Requires customization of the payment connector |
+Dynamics 365 Commerce provides an out-of-box solution for integration with Adyen for payment services. The [Dynamics 365 Payment Connector for Adyen](dev-itpro/adyen-connector.md) uses the device-agnostic [Adyen Payment Terminal application programming interface (API)](https://www.adyen.com/blog/introducing-the-terminal-api) and can interact with all payment terminals that this API supports. For a complete list of supported payment terminals, see [Adyen POS terminals](https://www.adyen.com/pos-payments/terminals).
 
-#### Payment terminal
-
-| Manufacturer | Model | Interface | Comments                                                                       |
-|--------------|-------|-----------|--------------------------------------------------------------------------------|
-| Equinox      | L5300 | Custom    | Requires customization of the payment connector                                |
-| VeriFone     | MX925 | Custom    | Requires customization of the payment connector; connected via network and USB |
-| VeriFone     | MX915 | Custom    | Requires customization of the payment connector; connected via network and USB |
+You can also use other payment providers with Dynamics 365 Commerce by creating a custom connector. Any payment terminal that is supported by the payment provider can be used with Dynamics 365 Commerce. Similarly, Dynamics 365 Commerce allows for any payment device integration model that is supported by the payment provider, such as local IP, cloud API, or direct connection (for example, via USB) to the POS. For more information, see [Create an end-to-end payment integration for a payment terminal](dev-itpro/end-to-end-payment-extension.md).
 
 #### Cash drawer
 
@@ -672,10 +650,10 @@ The following peripherals were tested by using the IPC hardware station that is 
 
 #### Line display
 
-| Manufacturer  | Model   | Interface | Comments |
-|---------------|---------|-----------|----------|
-| HP integrated | G6U79AA | OPOS      |          |
-| Epson         | M58DC   | OPOS      |          |
+| Manufacturer | Model    | Interface | Comments |
+| ------------ | -------- | --------- | -------- |
+| Epson        | DM-D110  | OPOS      |          |
+| HP           | T-series | OPOS      |          |
 
 #### Signature capture
 
@@ -703,39 +681,29 @@ The following peripherals were tested by using a dedicated (not shared) IIS hard
 
 #### Printer
 
-| Manufacturer | Model    | Interface | Comments              |
-| ------------ | -------- | --------- | --------------------- |
-| Epson        | TM-T88V  | OPOS      |                       |
-| Epson        | TM-T88VI | OPOS      |                       |
-| Epson        | TM-T88V  | Custom    | Connected via network |
-| HP           | F7M67AA  | OPOS      | Powered USB           |
-| Star         | TSP650II | Custom    | Connected via network |
-| Toshiba      | HSP100   | OPOS      |                       |
-| Toshiba      | HSP150   | OPOS      |                       |
-
-
+| Manufacturer | Model    | Interface | Comments                |
+| ------------ | -------- | --------- | ----------------------- |
+| Epson        | TM-T88V  | OPOS      |                         |
+| Epson        | TM-T88IV | OPOS      |                         |
+| HP           | H300     | OPOS      | Powered USB             |
+| Star         | TSP650II | Custom    | Connected via network   |
+| Star         | mPOP     | OPOS      | Connected via Bluetooth |
+| Toshiba      | HSP100   | OPOS      |                         |
+| Toshiba      | HSP150   | OPOS      |                         |
 
 #### Bar code scanner
 
-| Manufacturer  | Model   | Interface | Comments |
-|---------------|---------|-----------|----------|
-| Motorola      | DS9208  | OPOS      |          |
-| Symbol        | LS2208  | OPOS      |          |
-| HP Integrated | E1L07AA | OPOS      |          |
+| Manufacturer  | Model         | Interface | Comments |
+| ------------- | ------------- | --------- | -------- |
+| Datalogic     | Magellan 8400 | OPOS      |          |
+| HP Integrated | E1L07AA       | OPOS      |          |
+| Symbol        | LS2208        | OPOS      |          |
 
-#### PIN pad
+#### Payment terminals and PIN pads
 
-| Manufacturer | Model  | Interface | Comments                                        |
-|--------------|--------|-----------|-------------------------------------------------|
-| VeriFone     | 1000SE | OPOS      | Requires customization of the payment connector |
+Dynamics 365 Commerce provides an out-of-box solution for integration with Adyen for payment services. The [Dynamics 365 Payment Connector for Adyen](dev-itpro/adyen-connector.md) uses the device-agnostic [Adyen Payment Terminal API](https://www.adyen.com/blog/introducing-the-terminal-api) and can interact with all payment terminals that this API supports. For a complete list of supported payment terminals, see [Adyen POS terminals](https://www.adyen.com/pos-payments/terminals).
 
-#### Payment terminal
-
-| Manufacturer | Model | Interface | Comments                                                                       |
-|--------------|-------|-----------|--------------------------------------------------------------------------------|
-| Equinox      | L5300 | Custom    | Requires customization of the payment connector                                |
-| VeriFone     | MX925 | Custom    | Requires customization of the payment connector; connected via network and USB |
-| VeriFone     | MX915 | Custom    | Requires customization of the payment connector; connected via network and USB |
+You can also use other payment providers with Dynamics 365 Commerce by creating a custom connector. Any payment terminal that is supported by the payment provider can be used with Dynamics 365 Commerce. Similarly, Dynamics 365 Commerce allows for any payment device integration model that is supported by the payment provider, such as local IP, cloud API, or direct connection (for example, via USB) to the POS. For more information, see [Create an end-to-end payment integration for a payment terminal](dev-itpro/end-to-end-payment-extension.md).
 
 #### Cash drawer
 
@@ -782,22 +750,20 @@ The following peripherals were tested by using a shared IIS hardware station tog
 
 #### Printer
 
-| Manufacturer | Model    | Interface | Comments              |
-| ------------ | -------- | --------- | --------------------- |
-| Epson        | TM-T88V  | OPOS      |                       |
-| Epson        | TM-T88VI | OPOS      |                       |
-| Epson        | TM-T88   | Custom    | Connected via network |
-| HP           | F7M67AA  | OPOS      | Powered USB           |
-| Star         | TSP650II | Custom    | Connected via network |
-| Toshiba      | HSP100   | OPOS      |                       |
-| Toshiba      | HSP150   | OPOS      |                       |
+| Manufacturer | Model    | Interface | Comments                |
+| ------------ | -------- | --------- | ----------------------- |
+| Epson        | TM-T88V  | OPOS      |                         |
+| Epson        | TM-T88IV | OPOS      |                         |
+| HP           | H300     | OPOS      | Powered USB             |
+| Star         | mPOP     | OPOS      | Connected via Bluetooth |
+| Toshiba      | HSP100   | OPOS      |                         |
+| Toshiba      | HSP150   | OPOS      |                         |
 
 #### Payment terminal
 
-| Manufacturer | Model | Interface | Comments                                                                       |
-|--------------|-------|-----------|--------------------------------------------------------------------------------|
-| VeriFone     | MX925 | Custom    | Requires customization of the payment connector; connected via network and USB |
-| VeriFone     | MX915 | Custom    | Requires customization of the payment connector; connected via network and USB |
+Dynamics 365 Commerce provides an out-of-box solution for integration with Adyen for payment services. The [Dynamics 365 Payment Connector for Adyen](dev-itpro/adyen-connector.md) uses the device-agnostic [Adyen Payment Terminal API](https://www.adyen.com/blog/introducing-the-terminal-api) and can interact with all payment terminals that this API supports. For a complete list of supported payment terminals, see [Adyen POS terminals](https://www.adyen.com/pos-payments/terminals).
+
+You can also use other payment providers with Dynamics 365 Commerce by creating a custom connector. Any payment terminal that is supported by the payment provider can be used with Dynamics 365 Commerce. Similarly, Dynamics 365 Commerce allows for any payment device integration model that is supported by the payment provider, such as local IP, cloud API, or direct connection (for example, via USB) to the POS. For more information, see [Create an end-to-end payment integration for a payment terminal](dev-itpro/end-to-end-payment-extension.md).
 
 #### Cash drawer
 
@@ -824,7 +790,7 @@ The following peripherals were tested by using a shared IIS hardware station tog
 
 **Solution:** Either of the following factors can cause this issue:
 
--   The hardware station hasn't been set up correctly in headquarters. Use the steps earlier in this topic to verify that the hardware station profile and the hardware station are correctly entered.
+-   The hardware station hasn't been set up correctly in Headquarters. For more information, see [Configure and install Retail hardware station](retail-hardware-station-configuration-installation.md#troubleshooting). 
 -   The jobs haven't been run to update the channel configuration. In this case, run the 1070 job for channel configuration.
 
 ### Modern POS doesn't reflect new cash drawer settings

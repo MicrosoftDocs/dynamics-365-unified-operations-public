@@ -40,7 +40,7 @@ follows:
 
 The 10.0.25 release brings the first wave of capabilities in the infrastructure merge. During the infrastructure merge, Microsoft Dynamics 365 Human Resources will be merged
 with the Finance and Operations infrastructure. However, it will continue to be licensed as an independent application, like Dynamics 365 Finance and Dynamics 365 Supply Chain 
-Management. For more information about the infrastructure merge, see [Dynamics 365 Human Resources infrastructure merge FAQ](/human-resources/hr-infrastructure-merge-faq.md)
+Management. For more information about the infrastructure merge, see [Dynamics 365 Human Resources infrastructure merge FAQ](../../human-resources/hr-infrastructure-merge-faq.md).
 
 ## Features included in this release
 
@@ -50,14 +50,14 @@ initially published. If you want to use or turn off any of these features, you m
 
    | Feature name | Overview | Release status |
    |--------------|----------|----------------|
-   | Years of service calculation | A setup option lets you select the date that is used for the **Years of service** calculation. For more information, see [Configure Human resources parameters](/human-resources/hr-setup-parameters.md#general).| Generally available |
-   | Workflow experience enhancements | New **Submit** and **Approve** buttons were added to the **Application** page. For more information, see [Organization and personnel management workflow experience enhancements](/dynamics365-release-plan/2020wave2/human-resources/organization-personnel-management-workflow-experience-enhancements).| Generally available | 
-   | Print performance reviews | You can print performance reviews in PDF format. For more information, see [Performance management](/human-resources/hr-develop-performance-management-overview.md). | Generally available | 
-   | Custom links in **Manager self service** | You can create custom links that appear in the **Related links** section of **Manager self service**. For more information, see [Create custom links in Manager self service](/human-resources/hr-employee-manager-self-service-custom-links.md). | Generally available | 
-   | Cross company compensation view | Users can view compensation plans in **Manager self service** across all legal entities, without having to switch companies. For more information, see [Employee and Manager self service overview](/human-resources/hr-employee-manager-self-service-overview.md#compensation-tab). | Generally available | 
-   | Configure multiple compensation levels by job\*&dagger; | Jobs now support multiple compensation levels. For more information, see [Personnel jobs](/human-resources/hr-personnel-jobs.md). | Preview | 
-   | Task Management\* | You can create checklists and tasks for the onboarding, offboarding, and transition process. For more information, see [Task management](/human-resources/hr-task-mgmt.md). | Preview | 
-   | Streamlined employee entry | This feature provides an updated user experience on the existing **Worker** page. For more information, see [Streamlined employee entry](../../talent/streamlined-employee-entry.md) | Preview | 
+   | Years of service calculation | A setup option lets you select the date that is used for the **Years of service** calculation. For more information, see [Configure Human resources parameters](../../human-resources/hr-setup-parameters.md#general).| Generally available |
+   | Workflow experience enhancements | New **Submit** and **Approve** buttons were added to the **Application** page. For more information, see [Workflow system overview](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md).| Generally available | 
+   | Print performance reviews | You can print performance reviews in PDF format. For more information, see [Performance management](../../human-resources/hr-develop-performance-management-overview.md). | Generally available | 
+   | Custom links in **Manager self service** | You can create custom links that appear in the **Related links** section of **Manager self service**. For more information, see [Create custom links in Manager self service](../../human-resources/hr-employee-manager-self-service-custom-links.md). | Generally available | 
+   | Cross company compensation view | Users can view compensation plans in **Manager self service** across all legal entities, without having to switch companies. For more information, see [Employee and Manager self service overview](../../human-resources/hr-employee-manager-self-service-overview.md#compensation-tab). | Generally available | 
+   | Configure multiple compensation levels by job\*&dagger; | Jobs now support multiple compensation levels. For more information, see [Personnel jobs](../../human-resources/hr-personnel-jobs.md). | Preview | 
+   | Task Management\* | You can create checklists and tasks for the onboarding, offboarding, and transition process. For more information, see [Task management](../../human-resources/hr-task-mgmt.md). | Preview | 
+   | Streamlined employee entry | This feature provides an updated user experience on the existing **Worker** page. For more information, see [Streamlined employee entry](../../talent/streamlined-employee-entry.md). | Preview | 
   
 \* This feature must be turned on before the **Human resources user experience enhancements** feature.
 
@@ -68,12 +68,12 @@ initially published. If you want to use or turn off any of these features, you m
 | Feature name | More information | 
 |--------------|----------| 
 | Delete employment | You can delete the employment of an employee. | 
-| Job families | You can track a group of jobs that involve similar work, and that require similar training, skills, knowledge, and expertise. For more information, see [Personnel jobs](/human-resources/hr-personnel-jobs.md) | 
-| Additional employment fields | The following fields were added: **Employment category**, **Employment type**, and **Employment status**. For more information see, [Set up employment categories](/human-resources/hr-benenfits-setup-employment-categories.md).| 
-| **Workers without employment** page | A page shows a list of workers who don't have an employment record. For more information, see [Workers without employment](/human-resources/hr-personnel-workers-without-employment.md).| 
-| Position dimension user experience update | There is an enhanced user experience for assigning position dimensions per legal entity. For more information, see [Human resources personnel](/human-resources/hr-personnel-positions.md). | 
-| Address changes in **Personnel management** workspace | This feature provides a count of all address changes that occurred during a specified number of days, as defined on the **Human resources parameters** page. For more information, see [Personnel management workspace](/human-resources/hr-personnel-personnel-management-workspace#address-changes-tile).| 
-| Expiring records in **Personnel management** workspace | This feature provides a list of items that have expired or will expire for certificates, identifications, probations, screenings, or tests. For more information, see [Personnel management workspace](/human-resources/hr-personnel-personnel-management-workspace#expiring-records-tab). | 
+| Job families | You can track a group of jobs that involve similar work, and that require similar training, skills, knowledge, and expertise. For more information, see [Personnel jobs](../../human-resources/hr-personnel-jobs.md). | 
+| Additional employment fields | The following fields were added: **Employment category**, **Employment type**, and **Employment status**. For more information see, [Set up employment categories](../../human-resources/hr-benefits-setup-employment-categories.md).| 
+| **Workers without employment** page | A page shows a list of workers who don't have an employment record. For more information, see [Workers without employment](../../human-resources/hr-personnel-workers-without-employment.md).| 
+| Position dimension user experience update | There is an enhanced user experience for assigning position dimensions per legal entity. For more information, see [Human resources personnel](../../human-resources/hr-personnel-positions.md). | 
+| Address changes in **Personnel management** workspace | This feature provides a count of all address changes that occurred during a specified number of days, as defined on the **Human resources parameters** page. For more information, see [Personnel management workspace](../../human-resources/hr-personnel-personnel-management-workspace.md#address-changes-tile).| 
+| Expiring records in **Personnel management** workspace | This feature provides a list of items that have expired or will expire for certificates, identifications, probations, screenings, or tests. For more information, see [Personnel management workspace](../../human-resources/hr-personnel-personnel-management-workspace.md#expiring-records-tab). | 
 | **Position hierarchy validation** page | A check is done for circular references in the position line hierarchy. | 
 | Country specific payroll information | Additional payroll fields are available on the **Worker employment** page, depending on the country/region of the legal entity where the workers are employed. | 
 | Compliance reporting enhancements | Additional reporting options are available for EEO-1, Vets 4212, and OSHA300a. | 

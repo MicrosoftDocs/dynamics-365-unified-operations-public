@@ -4,7 +4,7 @@
 title: Set up an email notification profile
 description: This topic describes how to create an email notification profile in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-ms.date: 02/02/2022
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -84,6 +84,19 @@ The following image shows some example event notification settings.
 
 > [!NOTE]
 > The customer created notification type requires a customization to be implemented before an email notification can be sent.
+
+### Schedule a recurring email notification process job
+
+To send out email notifications, you must have the **Process retail order email notification** job running.
+
+To set up the **Process retail order email notification** job in Commerce headquarters if you haven't already done so, follow these steps.
+
+1. Go to **Retail and Commerce \> Retail and Commerce IT \> Email and notifications \> Send email notification**.
+1. In the **Process retail order email notification** dialog box, select **Recurrence**.
+1. In the **Define recurrence** dialog box, select **No end date**.
+1. Under **Recurrence pattern**, select **Minutes**, and then set the **Count** field to **1**. These settings will ensure that email notifications are processed as quickly as possible.
+1. Select **OK** to return to the **Process retail order email notification** dialog box.
+1. Select **OK** to complete the job setup.
 
 ### Next steps
 

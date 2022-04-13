@@ -4,7 +4,7 @@
 title: Online and offline point of sale (POS) operations
 description: This topic provides details about the point of sale (POS) operations in Dynamics 365 Commerce. It specifies where in the application the operations can be invoked, and whether they are available in offline mode.
 author: jblucher
-ms.date: 11/30/2021
+ms.date: 02/16/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -33,9 +33,9 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 Most actions that users take in the point of sale (POS) are considered operations. Operations are configured and managed in the Dynamics 365 Commerce back office. Many operations can be added to buttons in the POS button grid. Users can then select the buttons to invoke the operations and perform their function. Other operations are part of the main POS application, and are invoked either from on-screen buttons or as part of other workflows or processes.
 
-The following table provides details about the operations that are available in Modern POS and Cloud POS. The table also specifies where in the application the operations can invoked, and whether they are available when the POS is in offline mode.
+The following table provides details about the operations that are available in Modern POS and Cloud POS. The table also specifies where in the application the operations can be invoked, and whether they are available when the POS is in offline mode.
 
-Some operations aren't currently available in Modern POS or Cloud POS. Some of these operations are either locale-specific operations that require additional extensions and configuration. Others are features from Microsoft Dynamics AX 2012 that aren't currently supported.
+Some operations aren't currently available in Modern POS or Cloud POS. Some of these operations are locale-specific operations that require additional extensions and configuration. Others are features from Microsoft Dynamics AX 2012 that aren't currently supported.
 
 The following columns specify where the operations can be invoked:
 
@@ -45,6 +45,7 @@ The following columns specify where the operations can be invoked:
 
 > [!NOTE]
 > The operations listed below apply to the latest version of Commerce. Some operations may have changed or may not be available in previous versions.
+
 
 | ID | Operation | Description | Button grid | Transaction screen | Welcome screen | Available offline | Locale-specific |
 |----|-----------|-------------|-------------|--------------------|----------------|-------------------|-----------------|
@@ -107,6 +108,8 @@ The following columns specify where the operations can be invoked:
 | 804 | Inbound operation | Access the features of inbound store inventory management. | Yes | No | Yes | No| No |
 | 517 | Income accounts | Record money that is put into the cash drawer for a reason other than a sale. | Yes | Yes | Yes | Yes | No |
 | 801 | Inventory lookup | Look up available, on order, and available-to-promise (ATP) quantities for the current store and other available locations. | Yes | Yes | Yes | No | No |
+| 806 | Inventory adjustment | Adjust inventory in or out of store warehouse using adjustment or movement journal. | Yes | Yes | Yes | No | No |
+| 807 | Inventory movement | Move items from one inventory location to another within a store warehouse. | Yes | Yes | Yes | No | No |
 | 122 | Invoice comment | Enter a comment about the current transaction. | Yes | Yes | No | Yes | No |
 | 511 | Issue credit memo | Issue a credit memo to provide a voucher instead of a refund. | Yes | Yes | No | No | No |
 | 512 | Issue gift card | Issue a new gift card for the specified amount. | Yes | Yes | No | No | No |
@@ -160,7 +163,7 @@ The following columns specify where the operations can be invoked:
 | 305 | Redeem loyalty points | This operation isn't supported. | Not applicable | Not applicable | Not applicable | Not applicable | Yes |
 | 635 | Refund shipping charges | Refund shipping charges on a canceled order. | No | No | No | No | No |
 | 644 | Remove coupon code | Prompt the user to remove coupons by selecting them in a list of coupons that are currently associated with the transaction. | Yes | Yes | No | Yes | No |
-| 1057 | Reprint Z | Reprint the Z report for the previous shift or a selected shift. | Yes | Yes | Yes | No | No |
+| 1057 | Reprint Z | Reprint the Z report for the previous shift. | Yes | Yes | Yes | No | No |
 | 1216 | Reset password | This operation lets a user who has the password-reset permission reset another employee's password by using a temporary password. | Yes | Yes | Yes | No | No |
 | 1219 | Open URL in POS | Open an admin configured URL in POS. | Yes | Yes | Yes | Yes | No |
 | 109 | Return product | Perform a return of individual products. The next scanned product is shown as a returned product that has a negative quantity and price. | Yes | Yes | No | Yes | No |

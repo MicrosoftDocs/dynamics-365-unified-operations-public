@@ -45,8 +45,8 @@ The following table lists the features that are included in this release. The *F
 | Feature area   | Feature                                                  | More information                                          |  Enabled by             |
 |----------------|----------------------------------------------------------|-----------------------------------------------------------|-------------------------|
 |  B2B         | Support for matrixed view of product variants on the PDP and quick order entry page.        | [Set up a B2B e-commerce site](../b2b/set-up-b2b-site.md)            | Site builder |
-|  Inventory   |  [Improved stock count operation in POS](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/improved-stock-count-operation-pos)  | This feature introduces several functional and experience enhancements to the stock count operation in the POS app.  | Feature management  |
-| Payments | [Improvements to payment flows for pick-up order processing in POS](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/improvements-payment-flows-pick-up-order-processing-pos) | [Multiple available payment methods for in-store pickup](../dev-itpro/multiple-payments-pickup.md) | Feature management (*Omni-channel payments*) |
+|  Inventory   |  [Improved stock count operation in POS](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/improved-stock-count-operation-pos)  | This feature introduces several functional and experience enhancements to the stock count operation in the POS app.  | Feature management<p>*Improved stock count operation in POS*  |
+| Payments | [Improvements to payment flows for pick-up order processing in POS](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/improvements-payment-flows-pick-up-order-processing-pos) | [Multiple available payment methods for in-store pickup](../dev-itpro/multiple-payments-pickup.md) | Feature management<p>*Omni-channel payments* |
 
 ## Feature enhancements included in this release
 
@@ -56,7 +56,7 @@ If you want to turn any of these features on or off, you must do so in [feature 
 
 | Module | Feature name in feature management | More information |
 |---|---|---|
-| Customer management  | Enable enhanced async customer creation  | This feature enables capturing title, affiliations, and second contact information while creating a customer in asynchronous mode.  <!-- Refer to [Synchronous and asynchronous customer](/synchronous-and-asynchronous-customers.md) for more details. --> |
+| Customer management  | Enable enhanced async customer creation  | This feature enables capturing title, affiliations, and second contact information while creating a customer in asynchronous mode.  Refer to [Asynchronous customer creation mode](../async-customer-mode.md) for more details. |
 | Headquarters setup   |  Run "Initialize commerce scheduler" after Headquarters is updated |  [Commerce Data Exchange best practices](../dev-itpro/cdx-best-practices.md) |
 
 
@@ -67,7 +67,7 @@ If you want to turn any of these features on or off, you must do so in [feature 
 Dynamics 365 Commerce 10.0.24 includes platform updates. To learn more, see [Platform updates for version 10.0.24 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md).
 
 ### Bug fixes 
-For information about the bug fixes that are included in this update, sign in to Lifecycle Services (LCS) and view the <!-- Add correct link --> [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=641306&dbType=3&qc=5b1d5e49c96b8a5cfb5601889a413e6f3773ba6500f9bc47310dcc5c54fff42f).
+For information about the bug fixes that are included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=641306&dbType=3&qc=5b1d5e49c96b8a5cfb5601889a413e6f3773ba6500f9bc47310dcc5c54fff42f).
 
 For Commerce-specific breaking changes, view the [Dynamics 365 Commerce online SDK FAQ](../e-commerce-extensibility/sdk-faq.md).
 

@@ -4,7 +4,7 @@
 title: Enable cash flow forecasting
 description: This topic explains how to turn on the Cash flow forecasts feature in Finance Insights.
 author: ShivamPandey-msft
-ms.date: 11/03/2021
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -52,6 +52,9 @@ This topic explains how to turn on the Cash flow forecasts feature in Finance in
 
     1. On the **Cash flow forecast** tab, select **Enable feature**.
     2. Select **Create prediction model**.
+
+> [!NOTE]
+> The **Cash flow forecast** model training requires data with 100 or more transactions that span more than one year. We recommend that you have at least two years of data with more than 1,000 transactions.
 
 For more information about the cash flow forecasting capability, see [Cash flow forecasting](cash-flow-forecast-intro.md).
 

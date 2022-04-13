@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Preview features in Dynamics 365 Commerce 10.0.25 (April 2022)
+title: What's new or changed in Dynamics 365 Commerce 10.0.25 (April 2022)
 description: This topic describes features that are either new or changed in Dynamics 365 Commerce 10.0.25. 
 author: josaw1
-ms.date: 01/31/2021
+ms.date: 02/08/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 10.0.25
 
 ---
 
-# Preview features in Dynamics 365 Commerce 10.0.25 (April 2022)
+# What's new or changed in Dynamics 365 Commerce 10.0.25 (April 2022)
 
 [!include [banner](../includes/banner.md)]
 
@@ -49,9 +49,9 @@ The following table lists the features that are included in this release. The *F
 | E-commerce | [Integration with Sitecore Content Hub](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/integration-sitecore-content-hub) | A data connector will automatically push the Dynamics 365 Commerce product and category data into your Sitecore Content Hub instance allowing additional digital asset management and product enrichment options for your Commerce channels. | Site builder |
 | E-commerce | [PayPal Cart Checkout support in e-commerce](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/paypal-cart-checkout-support-e-commerce) | [Dynamics 365 Payment Connector for PayPal](../paypal.md)| Developer opt-in |
 | E-commerce | [Show or hide tax breakdown in e-commerce when prices include sales tax](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/show-or-hide-tax-breakdown-e-commerce-when-prices-include-sales-tax) |  Businesses can display or hide tax information explicitly in the order summary on cart, checkout, confirmation, and order details pages in the e-commerce channel. | Site builder |
-| Globalization | [Direct fiscal integration from POS](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/direct-fiscal-integration-pos) | [Overview of fiscal integration for Commerce channels](../localizations/fiscal-integration-for-retail-channel.md) | Developer opt-in| 
-| Globalization | [Enhanced fiscal connector configuration](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/enhanced-fiscal-connector-configuration) | [Overview of fiscal integration for Commerce channels](../localizations/fiscal-integration-for-retail-channel.md) | Developer opt-in| 
-| Globalization | Update references in QR codes for India | [Generate QR codes and print them on receipts for India](../localizations/ind-generate-qr-code-print-receipt.md) | Developer opt-in|
+| Globalization | [Direct fiscal integration from POS](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/direct-fiscal-integration-pos) | The feature extends the fiscal integration framework by adding a capability to create fiscal connectors that will be executed in POS. This type of connector will communicate with a fiscal device or service that provides an HTTP API and will not require a dedicated physical machine in the store to be plugged in or deployed on. For more information, see [Overview of fiscal integration for Commerce channels](../localizations/fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-or-service-in-the-local-network) and [Create connector technical profiles](../localizations/setting-up-fiscal-integration-for-retail-channel.md#create-connector-technical-profiles). | Feature management<p>*Direct fiscal integration from POS registers*| 
+| Globalization | [Enhanced fiscal connector configuration](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/enhanced-fiscal-connector-configuration) | The feature extends the fiscal integration framework by adding an option to define connection settings for a fiscal connector on the individual POS register level, in addition to the hardware profile level. This will provide the ability to configure different connection settings for individual fiscal devices or service instances used by different POS registers in the store. For more information, see [Create connector technical profiles](../localizations/setting-up-fiscal-integration-for-retail-channel.md#create-connector-technical-profiles). |  Feature management<p>*Fiscal integration technical profile overrides* | 
+| POS  | [Support additional filter options in POS inventory operations](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/additional-filter-options-pos-inventory-operations) |  This feature provides support for additional filter options that are commonly requested across POS inventory operations, thereby eliminating the need for unnecessary extensions and significantly improving the efficiency of the store inventory operation. | Feature management<p>*Additional filter options in POS inventory operations* |
 |Statements |  Improvements to statement posting functionality  | [Improvements to statement posting functionality](../statement-posting-EOD.md) | Commerce parameters |
 
 

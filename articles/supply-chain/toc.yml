@@ -12,6 +12,8 @@
         items:
         - name: What's new or changed in Supply Chain Management home page
           href: get-started/whats-new-home-page.md
+        - name: Supply Chain Management 10.0.26 (May 2022)
+          href: get-started/whats-new-scm-10-0-26.md
         - name: Supply Chain Management 10.0.25 (April 2022)
           href: get-started/whats-new-scm-10-0-25.md
         - name: Supply Chain Management 10.0.24 (February 2022)
@@ -242,32 +244,108 @@
           items: 
           - name: Electronic Invoicing overview
             href: ../finance/localizations/e-invoicing-service-overview.md?toc=/dynamics365/supply-chain/toc.json
-          - name: Electronic Invoicing administration components
-            href: ../finance/localizations/e-invoicing-service-administration.md?toc=/dynamics365/supply-chain/toc.json
-          - name: Configure Electronic Invoicing in Regulatory Configuration Services (RCS)
-            href: ../finance/localizations/e-invoicing-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
-          - name: Issue electronic invoices in Finance and Supply Chain Management
-            href: ../finance/localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md?toc=/dynamics365/supply-chain/toc.json
-          - name: Create an Azure storage account and a Key Vault
-            href: ../finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md?toc=/dynamics365/supply-chain/toc.json
-          - name: Usage management dashboard
-            href: ../finance/localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/supply-chain/toc.json
-          - name: Get started 
+          - name: Electronic Invoicing administration and integration components
+            href: ../finance/localizations/e-invoicing-administration-integration-components.md?toc=/dynamics365/supply-chain/toc.json
+          - name: Set up Electronic Invoicing
+            items: 
+            - name: Setting up Electronic Invoicing
+              href: ../finance/localizations/e-invoicing-set-up-overview.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Sign up and install Electronic Invoicing
+              items: 
+              - name: Electronic Invoicing sign up and installation overview
+                href: ../finance/localizations/e-invoicing-sign-up-install.md?toc=/dynamics365/supply-chain/toc.json
+              - name: Install the add-in for microservices in Lifecycle Services
+                href: ../finance/localizations/e-invoicing-install-add-in-microservices-lcs.md?toc=/dynamics365/supply-chain/toc.json
+              - name: Set up Regulatory configuration services (RCS)
+                href: ../finance/localizations/e-invoicing-set-up-rcs.md?toc=/dynamics365/supply-chain/toc.json
+              - name: Power platform plug-in admin reference
+                href: ../finance/localizations/e-invoicing-power-platform-plug-in.md?toc=/dynamics365/supply-chain/toc.json   
+            - name: Set up Azure Resources
+              items:
+              - name: Set up Azure resources for Electronic invoicing
+                href: ../finance/localizations/e-invoicing-set-up-azure-resources.md?toc=/dynamics365/supply-chain/toc.json
+              - name: Create an Azure Key Vault in the Azure portal
+                href: ../finance/localizations/e-invoicing-create-azure-storage-account-azure-portal.md?toc=/dynamics365/supply-chain/toc.json
+              - name: Create an Azure storage account in the Azure portal
+                href: ../finance/localizations/e-invoicing-create-azure-storage-account-azure-portal.md
+              - name: Configure a SharePoint connection
+                href: ../finance/localizations/e-invoicing-create-sharepoint-connection.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Set up environments
+              items:
+              - name: Configure service environments and connected applications
+                href: ../finance/localizations/e-invoicing-configure-service-environments-connected-applications.md?toc=/dynamics365/supply-chain/toc.json
+              - name: Service environments
+                href: ../finance/localizations/e-invoicing-service-environments.md?toc=/dynamics365/supply-chain/toc.json
+              - name: Customer certificates and secrets
+                href: ../finance/localizations/e-invoicing-customer-certificates-secrets.md?toc=/dynamics365/supply-chain/toc.json
+              - name: Connected applications
+                href: ../finance/localizations/e-invoicing-connected-applications.md?toc=/dynamics365/supply-chain/toc.json
+          - name: Work with Globalization features
             items:
+            - name: Work with Globalization features overview
+              href: ../finance/localizations/e-invoicing-working-globalization-features.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Import a feature from the Global repository
+              href: ../finance/localizations/e-invoicing-import-feature-global-repository.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Create a new Globalization feature
+              href: ../finance/localizations/e-invoicing-create-new-globalization-feature.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Work with configurations
+              href: ../finance/localizations/e-invoicing-work-configurations.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Work with feature setup
+              href: ../finance/localizations/e-invoicing-feature-setup.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Complete, publish, and deploy a Globalization feature
+              href: ../finance/localizations/e-invoicing-complete-publish-deploy-globalization-feature.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Share with other organizations
+              href: ../finance/localizations/e-invoicing-share-other-organizations.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Process incoming electronic documents
+              items: 
+              - name: Processing incoming electronic documents
+                href: ../finance/localizations/e-invoicing-process-incoming-electronic-documents.md?toc=/dynamics365/supply-chain/toc.json
+              - name: Configure an email channel
+                href: ../finance/localizations/e-invoicing-configure-email.md?toc=/dynamics365/supply-chain/toc.json
+              - name: Configure a SharePoint channel
+                href: ../finance/localizations/e-invoicing-configure-sharepoint-channel.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Set up and use Electronic invoicing with Finance and Supply Chain Management
+              items: 
+              - name: Activate and set up integration with Electronic Invoicing
+                href: ../finance/localizations/e-invoicing-activate-setup-integration.md?toc=/dynamics365/supply-chain/toc.json
+              - name: Set up Electronic Invoicing parameters
+                href: ../finance/localizations/e-invoicing-set-up-parameters.md?toc=/dynamics365/supply-chain/toc.json
+              - name: Work with Electronic Invoicing
+                items:
+                - name: Submit electronic documents to Electronic Invoicing
+                  href: ../finance/localizations/e-invoicing-submit-electronic-documents.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Work with the Electronic documents submission log
+                  href: ../finance/localizations/e-invoicing-submission-log.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Work with the Electronic documents receiving log
+                  href: ../finance/localizations/e-invoicing-electronic-documents-receiving-log.md?toc=/dynamics365/supply-chain/toc.json
+          - name: Country-specific scenarios
+            items:
+            - name: Availability of Electronic Invoicing features
+              href: ../finance/localizations/e-invoicing-country-specific-availability.md?toc=/dynamics365/supply-chain/toc.json
             - name: Get started with Electronic Invoicing service administration
               href: ../finance/localizations/e-invoicing-get-started-service-administration.md?toc=/dynamics365/supply-chain/toc.json
             - name: Get started with Electronic Invoicing
               href: ../finance/localizations/e-invoicing-get-started.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Create a new Electronic invoicing feature
+              href: ../finance/localizations/e-invoicing-create-new-e-invoicing-feature.md
             - name: Get started with Electronic Invoicing for Brazil
               href: ../finance/localizations/e-invoicing-bra-get-started.md?toc=/dynamics365/supply-chain/toc.json
             - name: Get started with Electronic Invoicing for Egypt
               href: ../finance/localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/supply-chain/toc.json
             - name: Get started with the Electronic Invoicing for Mexico
               href: ../finance/localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Get started with Electronic invoicing for Saudi Arabia
+              href: ../finance/localizations/e-invoicing-sa-get-started.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Setup direct integration of Italian FatturaPA with SDI
+              href: ../finance/localizations/e-invoicing-ita-fatturapa-get-started.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Use the electronic invoicing service to import vendor invoices
+              href: ../finance/localizations/e-invoicing-get-started-import-vendor-invoices.md?toc=/dynamics365/supply-chain/toc.json
             - name: Set up Electronic Invoicing
               href: ../finance/localizations/e-invoicing-setup.md?toc=/dynamics365/supply-chain/toc.json
-          - name: Electronic Invoicing FAQ
-            href: ../finance/localizations/e-invoicing-faq.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Power Platform plug-in admin reference
+              href: ../finance/localizations/e-invoicing-power-platform-plug-in.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Electronic Invoicing FAQ
+              href: ../finance/localizations/e-invoicing-faq.md?toc=/dynamics365/supply-chain/toc.json
         - name: Tax Calculation
           items:
           - name: Tax Calculation overview
@@ -302,6 +380,8 @@
       items:
       - name: Scale units in a distributed hybrid topology
         href: cloud-edge/cloud-edge-landing-page.md
+      - name: Try out scale units in a distributed hybrid topology
+        href: cloud-edge/cloud-edge-try-out.md
       - name: Deploy edge scale units on custom hardware using LBD
         href: cloud-edge/cloud-edge-edge-scale-units-lbd.md
       - name: Manufacturing execution workloads for cloud and edge scale units
@@ -667,8 +747,32 @@
           href: cost-management/simulate-cost-changes-costing-version-planned-costs.md
         - name: Compare item prices storage report
           href: cost-management/compare-item-price.md
+      - name: Costing methodologies
+        items:
+        - name: Running average cost price
+          href: cost-management/running-average-cost-price.md
+        - name: Tracking running average cost per inventory dimension
+          href: cost-management/track-running-average-cost-per-inventory-dimension.md
+        - name: FIFO with physical value and marking
+          href: cost-management/fifo-physical-value-marking.md
+        - name: LIFO date with physical value and marking
+          href: cost-management/lifo-date-physical-value-marking.md
+        - name: LIFO with physical value and marking
+          href: cost-management/lifo-physical-value-marking.md
+        - name: Weighted average with physical value and marking
+          href: cost-management/weighted-average-physical-value-marking.md
+        - name: Weighted average date with physical value and marking
+          href: cost-management/weighted-average-date.md
+        - name: Moving average
+          href: cost-management/moving-average.md
+        - name: Moving average fallback cost sequence
+          href: cost-management/moving-average-fallback.md
       - name: Inventory accounting
         items:
+        - name: Physical and financial updates
+          href: cost-management/physical-financial-updates.md
+        - name: Include physical value
+          href: cost-management/include-physical-value.md
         - name: Cost objects
           href: cost-management/cost-object.md
         - name: View cost object balance
@@ -680,31 +784,9 @@
         - name: View cost entries for a cost object
           href: cost-management/tasks/view-cost-entries-cost-object.md
         - name: Cost groups
-          href: cost-management/cost-groups.md
-        - name: FIFO with physical value and marking
-          href: cost-management/fifo-physical-value-marking.md
-        - name: Include physical value
-          href: cost-management/include-physical-value.md
+          href: cost-management/cost-groups.md   
         - name: Inventory object values
           href: cost-management/physical-quantity.md
-        - name: LIFO Date with physical value and marking
-          href: cost-management/lifo-date-physical-value-marking.md
-        - name: LIFO with physical value and marking
-          href: cost-management/lifo-physical-value-marking.md
-        - name: Moving average
-          href: cost-management/moving-average.md
-        - name: Moving average fallback cost sequence
-          href: cost-management/moving-average-fallback.md
-        - name: Physical and financial updates
-          href: cost-management/physical-financial-updates.md
-        - name: Running average cost price
-          href: cost-management/running-average-cost-price.md
-        - name: Tracking running average cost per inventory dimension
-          href: cost-management/track-running-average-cost-per-inventory-dimension.md
-        - name: Weighted average date
-          href: cost-management/weighted-average-date.md
-        - name: Weighted average with physical value and marking
-          href: cost-management/weighted-average-physical-value-marking.md
         - name: Inventory close
           href: cost-management/inventory-close.md
         - name: Adjust on-hand inventory cost values
@@ -1187,6 +1269,10 @@
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/supply-chain/toc.json
             - name: Run formats to dynamically add columns to Excel reports
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Design an ER format to paginate generated documents in Excel
+              href: ../fin-ops-core/dev-itpro/analytics/er-paginate-excel-reports.md?toc=/dynamics365/supply-chain/toc.json 
+            - name: Design an ER format to keep rows together on the same Excel page
+              href: ../fin-ops-core/dev-itpro/analytics/er-keep-excel-rows-together.md?toc=/dynamics365/supply-chain/toc.json 
         - name: Design configurations to generate reports in Word format
           items:
           - name: Design a new ER configuration to generate reports in Word format
@@ -1347,6 +1433,10 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/supply-chain/toc.json 
           - name: Debug data sources
             href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Configure data models
+          items: 
+          - name: Support parameterized calls of ER data models
+            href: ../fin-ops-core/dev-itpro/analytics/er-data-model-parameterized-calls.md?toc=/dynamics365/supply-chain/toc.json
         - name: Configure model mappings
           items: 
           - name: Configure country context dependent ER model mappings
@@ -1615,10 +1705,14 @@
           href: inventory/inventory-visibility-setup.md
         - name: Configure Inventory Visibility
           href: inventory/inventory-visibility-configuration.md
+        - name: Inventory Visibility support for WHS items
+          href: inventory/inventory-visibility-whs-support.md
         - name: Use the Inventory Visibility app
           href: inventory/inventory-visibility-power-platform.md
         - name: Inventory Visibility reservations
           href: inventory/inventory-visibility-reservations.md
+        - name: Inventory Visibility on-hand change schedule and available to promise
+          href: inventory/inventory-visibility-available-to-promise.md
         - name: Inventory Visibility public APIs
           href: inventory/inventory-visibility-api.md
         - name: Inventory Visibility tips
@@ -2835,7 +2929,7 @@
         href: sales-marketing/trade-allowance.md
       - name: Create a new trade agreement
         href: sales-marketing/tasks/create-new-trade-agreement.md
-      - name: Sales history cleanup performance improvements
+      - name: Schedule sales history data cleanup
         href: sales-marketing/sales-update-history-cleanup-performance-improvements.md
     - name: Service management
       items:
@@ -3395,7 +3489,7 @@
         items:
         - name: Install, set up, and use mobile devices
           items:
-          - name: What's new or changed in Warehouse Management mobile app
+          - name: What's new or changed in the Warehouse Management mobile app
             href: warehousing/whats-new-wma.md
           - name: Install and connect the Warehouse Management mobile app
             href: warehousing/install-configure-warehouse-management-app.md
@@ -3629,6 +3723,8 @@
           href: troubleshooting/planning/when-importing-to-th.md
       - name: Procurement
         items:
+        - name: Purchase order line data discrepancies
+          href: troubleshooting/procurement/purchase-order-line-data-issues.md
         - name: One or more accounting distributions are either over- or under-distributed
           href: troubleshooting/procurement/accounting-over-under-distributed.md
         - name: You can only complete a purchase order action for fully distributed line numbers
@@ -3645,7 +3741,7 @@
           href: troubleshooting/procurement/consolidate-multiple-receipts.md
         - name: Default tax group and cash discount aren't filled in from the invoice account
           href: troubleshooting/procurement/default-tax-group-and-discount.md
-        - name: The delivery name isn't synced after changing a purchase order delivery address
+        - name: The delivery name isn't synced after changing a purchase order delivery address
           href: troubleshooting/procurement/delivery-name-isnt-synced.md
         - name: An exception occurs during vendor invoice posting
           href: troubleshooting/procurement/invocation-target-exception.md
@@ -3769,10 +3865,14 @@
         items:
         - name: Warehouse mobile app
           items:
+          - name: Unexpected difference between request and session data during testing
+            href: troubleshooting/warehousing/request-session-data-difference.md
           - name: Trust anchor for certification path not found when setting up app connection
             href: troubleshooting/warehousing/certification-path-app-connection-error.md
           - name: Trust anchor for certification path not found when updating and migrating to WMS
             href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md
+        - name: Can't post packing slip for a stopped a sales order line
+          href: troubleshooting/warehousing/unable-to-post-packi.md
         - name: Processing issues occur after installing a scale unit warehouse workload
           href: troubleshooting/warehousing/Scale-unit-warehouse-workload-installation-issues.md
         - name: Auto-reservation prompt for batch number is shown even with available inventory
