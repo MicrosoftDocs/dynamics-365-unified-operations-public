@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../../includes/banner.md)]
 
-A folio is often determined by customs regulations. It can consist of one vendor's goods for one entity or company per shipment. The goods in a folio can be in one container, or they can be spread among multiple containers.
+A folio is often determined by customs regulations. It can consist of one vendor's goods for one entity or company per shipment. The goods in a folio are managed in one container.
 
 To open the **All folios** page, go to **Landed cost \> Folios \> All folios**. This page shows a list of all current folios. You can use the buttons on the Action Pane to create, delete, and work with folios. Select any folio in the list to view its details on the **Folios** page.
 
