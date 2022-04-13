@@ -421,7 +421,7 @@ In a CoC extension method, the next call must not be called conditionally. Howev
         try
         {
             //...
-            next updateBalances();
+            next someMethod();
             //...
         }
         catch(Exception::Error)
