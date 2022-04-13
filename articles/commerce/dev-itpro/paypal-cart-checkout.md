@@ -4,7 +4,7 @@
 title: PayPal Cart Checkout for Dynamics 365 Commerce
 description: This topic provides an overview of the Microsoft Dynamics 365 Payment support PayPal Cart Checkout for faster checkout capabilities.
 author: BrianShook
-ms.date: 02/05/2022
+ms.date: 04/13/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,6 +29,8 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Dynamics 365 Payment Support for PayPal Cart Checkout
 
+[!include [banner](../includes/banner.md)]
+
 This topic provides an overview of the Microsoft Dynamics 365 payments support for PayPal Cart Checkout capability. It reviews additions of Payment Express modules for faster checkout capabilities, and setup of PayPal Cart Checkout with a Commerce site page.
 
 ## Key terms
@@ -44,9 +46,9 @@ Microsoft Dynamics 365 Commerce offers an out-of-box integration for PayPal Wall
 ## PayPal Cart Checkout in Commerce
 
 ### Pre-requisites
-Follow the PayPal Wallet setup instructions for your environment as described in the [Dynamics 365 Payment Connector for PayPal](paypal.md) article. 
+Follow the PayPal Wallet setup instructions for your environment as described in the [Dynamics 365 Payment Connector for PayPal](../paypal.md) article. 
 
-If using PayPal as an option in the regular checkout flow (the checkout section in which a user enters their order information without the Express pre-fill actions), follow the setup instructions for the [Payment Module](payment-module.md) article. Setting up the regular checkout section will remain the same as described in the referenced payment module article.
+If using PayPal as an option in the regular checkout flow (the checkout section in which a user enters their order information without the Express pre-fill actions), follow the setup instructions for the [Payment Module](../payment-module.md) article. Setting up the regular checkout section will remain the same as described in the referenced payment module article.
 
 ### Introducing the Payment Express module with PayPal
 The **Payment Express** module works with supporting payment methods to offer site customers the option to checkout faster using their payment service account information in the checkout process. The module references the configured connector button and returns the user selected order details (addresses, contact information, and paying against the underlying payment method selected) to pre-populate the checkout form.
@@ -105,13 +107,15 @@ To set up the Payment Express fragment with PayPal in the Cart page, follow thes
 ### Modes of Delivery
 With the Payment Express module using PayPal, the first delivery option returned against the shipping address selected from the PayPal account will be pre-selected. Users will have a chance to click **change** and adjust the shipping address to a different option if desired. 
 
-The order of the delivery methods is configured in HQ on the Channel's **Modes of delivery** section. Additional information on setting up modes of delivery can be found in the [Set up modes of delivery](https://docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery) article. The checkout module will also use the **delivery options module** when rendering modes of delivery during checkout. See additional details in the [delivery options module](delivery-options-module.md) article.
+The order of the delivery methods is configured in HQ on the Channel's **Modes of delivery** section. Additional information on setting up modes of delivery can be found in the [Set up modes of delivery](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery) article. The checkout module will also use the **delivery options module** when rendering modes of delivery during checkout. See additional details in the [delivery options module](../delivery-options-module.md) article.
 
 Modes of delivery are displayed as added to the list in the Online Store. In Headquarters, navigate to **Retail and Commerce > Channels > online stores** and select the channel ID for your store. Under the **Setup** menu section, select **Modes of delivery**. The module modes of delivery will be displayed on the site similarly to the configuration shown. Use the **Manage modes of delivery** action item to add or remove modes of delivery for a Retail Channel or a Product.
 
 
 ## Additional resources
 
-- [Payments FAQ](dev-itpro/payments-retail.md)
-- [Checkout module](add-checkout-module.md)
-- [Payment module](payment-module.md)
+[Payments FAQ](payments-retail.md)
+
+[Checkout module](../add-checkout-module.md)
+
+[Payment module](../payment-module.md)
