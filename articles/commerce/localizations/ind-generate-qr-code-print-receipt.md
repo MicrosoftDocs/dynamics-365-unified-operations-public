@@ -26,7 +26,6 @@ ms.dyn365.ops.version: 10.0.17
 # Generate QR codes and print them on receipts for India
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This topic provides customization guidelines and explains how to generate Unified Payments Interface (UPI) Quick Response (QR) codes and print them on receipts for India.
 

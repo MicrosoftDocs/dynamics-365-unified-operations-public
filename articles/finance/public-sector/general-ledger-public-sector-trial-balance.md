@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 ms.search.industry: public sector
-ms.author:  v-kiarnd
+ms.author: v-kiarnd
 ms.search.validFrom: 2019-10-24
 ms.dyn365.ops.version: 10.0.13
 
@@ -29,182 +29,98 @@ ms.dyn365.ops.version: 10.0.13
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the default report for trial balances. It also describes the building blocks that are associated with this report and how you can modify the report to fit your business requirements.
+This topic describes the default report for trial balances. The **Trial balance with transactional detail** report generates a trial balance and includes the detailed transactions that were posted to each ledger account. By selecting to include specific unposted transactions, you can use the report to generate a provisional trial balance together with detailed transactions.
 
-You can use the **Trial balance with transactional detail** report to show the details of each transaction for ledger accounts. The report includes the following information: 
+Electronic reporting (ER) was used to create the **Trial balance with transactional detail** report. Therefore, an organization can either use the version of the report that is included in the Global repository or create their own version of the report.
 
-- Opening balances
-- Debits and credits 
-- The resulting balances for a date range of 31 days or less
+## ER setup
 
-For transactions, the report includes the following information: 
+If you haven't configured the Global repository, you must configure it for the updated version of the **Trial balance with transactional detail** report. 
+For more information, see [Configure the Global repository](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
-- Transaction date
-- Voucher number
-- Account number
-- Document number
-- Ledger dimension
-- Ledger dimension name
-- Transaction description
-- Debits or credits
-- A running balance for the year to date, based on the current fiscal year
+1. Go to **Electronic reporting**.
+2. Select **Repositories** for the **Microsoft** provider.
+3. Select **Open**.
+4. Scroll down, or add a filter for the configuration name that begins with **Trial**.
+5. Select **Trial balance with transactional detail (excel)**, and then select **Import**. 
 
-You can use the trial balance to identify errors for account balances. All accounts that have debit balances should equal all accounts that have credit balances. The report includes information from the general journal accounting entries.
+You can now run the updated report, and the results will be available in Microsoft Excel.
 
-You can filter the data by any of the following items:
+## Feature management
+
+The **Trial balance with transactional detail** report is automatically enabled when the **Generate the trial balance with transactional detail** report feature is enabled in **Feature management**. To include unposted transactions on the report, enable the **Generate trial balance with pending type transactions** feature. To view summary data from the general journal account entry, enable the **Amount details from the General journal account entry are displayed on the Trial balance with transactional detail report** feature.
+
+## Report options
+
+When you generate the report, you can include the following detailed general ledger transactions on it:
 
 - Posted transactions
-- Pending transactions (These transactions include all transactions that aren't posted.) 
-- All transactions 
+- Pending transactions
+- All transactions
 
-If the transactions include financial dimensions, the report shows that information under a ledger account. Otherwise, information for financial dimensions is grouped at the top of the page. 
+Inclusion of posted transactions on the report can cause a large set of data.
 
-Currently, the report is exported directly to Microsoft Excel. 
+All detailed general ledger transactions in the report's date range will be printed on the report. Therefore, the report can be generated only for 31 days or less.
+
+If you include pending transactions on the report, you must select the type of unposted transaction types to include. Only the unposted transaction types that are listed in the report parameters can be included on the provisional report. Here are some of the unposted transaction types:
+
+- Advanced ledger entries
+- Allocation journals
+- Budget journals
+- Budget register entries
+- Customer payment journals
+- Daily journals
+- Free text invoices
+- Project invoices
+- Purchase orders
+- Purchase requisitions
+- Vendor invoices
+- Vendor invoice journals
+- Vendor invoice register journals
+
+Unposted intercompany transactions that are entered in the general journal (daily journal) or vendor invoice journals aren't shown on the report. The appropriate "due to" and "due from" entries can't be generated before posting. If those account entries aren't generated, the report will show an unbalanced accounting entry, because the report includes the account entries only for the active legal entity.
+
+The **Primary financial dimension set** option defines how transactions are grouped together for combinations of main accounts and financial dimensions. For example, if you select a dimension set that includes the **Main account** and **Department** dimensions, the report will show the opening balance, detailed transactions, and the ending balance for each combination of a main account value and a department value. Regardless of the financial dimension set that is selected, the full ledger account is shown in the **Ledger dimension** account column.
+
+Use the **From date** and **To date** fields to define a date range. This date range must be 31 days or less. This restriction is in place because of the large number of transactions that are included on a detailed transaction report.
+
+In the **Posting layer** field, select the posting layer that you want to view the detailed transactions for. Only one posting layer can be selected.
+
+Use the **Include opening transaction amount in detail** option to add the details of the opening balance to the report.
+
+Use the **Closing transaction** option to include closing transactions on the report. If the **Create closing transactions during transfer** General ledger parameter is set to **Yes**, closing transactions are created when a year-end close is run. Closing transactions are posted on the last day of the fiscal year and are shown only when the last day of the fiscal year is included in the date range.
+
+## Report details
+
+The **Trial balance with transactional detail** report includes the following information in the rows:
+
+- Opening balance
+- Debit or credit amount
+- Ending balance
+
+For transaction details, the report includes the following information in the columns:
+
+- Date
+- Voucher
+- Document
+- Account number
+- Description
+- Ledger dimension account
+- Ledger dimension name
+- Debit
+- Credit
+- Balance
 
 ## Transaction information on the report
 
-Depending on the type of transaction, such as an advanced ledger entry (ALE) or purchase order, the following additional information appears on the report.
+The information that is shown in the **Document** and **Description** columns varies, depending on the type of transaction. The following table provides some examples of information that is shown in those columns.
 
-<table> 
-<thead>
-<tr>
-<th>Transaction type</th>
-<th>Additional document information</th>
-<th>Additional description information</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<ul>
-<li>ALE voucher</li>
-<li>Allocation rule</li>
-<li>General journal transfer</li>
-<li>Journal</li>
-</ul>
-</td>
-<td>ALE number or general journal number</td>
-<td>Line item description</td>
-</tr>
-<tr>
-<td></td>
-<td>No data</td>
-<td>ALE or general journal header description</td>
-</tr>
-<tr>
-<td>
-<ul>
-<li>Invoice voucher</li>
-<li>Credit note voucher</li>
-</ul>
-</td>
-<td>Invoice number</td>
-<td>Vendor number and Vendor name</td>
-</tr>
-<tr>
-<td></td>
-<td>Invoice date</td>
-<td>Line item description</td>
-</tr>
-<tr>
-<td></td>
-<td>No data</td>
-<td>Purchase order number and/or PA number</td>
-</tr>
-<tr>
-<td>Accounts payable (AP) payment voucher</td>
-<td>Check number or electronic funds transfer (EFT) number</td>
-<td>Vendor number – Vendor name for the "pay to" or invoice account</td>
-</tr>
-<tr>
-<td></td>
-<td>Check date, EFT date, or settlement date</td>
-<td>Vendor number and Vendor name for the original order account</td>
-</tr>
-<tr>
-<td>
-<ul>
-<li>Free text credit note</li>
-<li>Free text invoice voucher</li>
-</ul>
-</td>
-<td>Free text invoice number</td>
-<td>Customer number and Customer name</td>
-</tr>
-<tr>
-<td></td>
-<td>Billing code</td>
-<td>Free text invoice line item description<br>
-(<strong>Description</strong> field on the <strong>Invoice lines</strong> FastTab of the <strong>Free text invoices</strong> page)</td>
-</tr>
-<tr>
-<td>Accounts receivable (AR) payment voucher</td>
-<td>Journal batch number<br>
-(<strong>Journal batch number</strong> field on the <strong>Overview</strong> tab of the <strong>Payment journal</strong> page)</td>
-<td>Customer number – Customer name<br>
-(<strong>Account</strong> and <strong>Account name</strong> fields on the <strong>Overview</strong> tab of the <strong>Journal voucher</strong> page)</td>
-</tr>
-<tr>
-<td></td>
-<td>Payment reference</td>
-<td>Line description<br>
-(<strong>Description</strong> field on the <strong>Overview</strong> tab of the <strong>Journal voucher</strong> page)</td>
-</tr>
-<tr>
-<td>Budget register entries</td>
-<td>Budget register entry number</td>
-<td>Budget register entry description</td>
-</tr>
-<tr>
-<td></td>
-<td>Budget code</td>
-<td>Reason code – Budget register entry header description<br>
-(<strong>Comment</strong> field on the <strong>Budget account entry details</strong> FastTab on the <strong>Budget entry</strong> page or the <strong>Budget register entry</strong> page)</td>
-</tr>
-<tr>
-<td>
-<ul>
-<li>Purchase order confirmation</li>
-<li>Purchase order confirmation voucher</li>
-</ul>
-</td>
-<td>Purchase order number</td>
-<td>Line item description<br>
-(<strong>Text</strong> field on the <strong>Line details</strong> FastTab of the <strong>Purchase order</strong> page)</td>
-</tr>
-<tr>
-<td></td>
-<td>Purchase order line number</td>
-<td>Procurement category</td>
-</tr>
-<tr>
-<td>Purchase requisition voucher</td>
-<td>Purchase requisition number</td>
-<td>Purchase requisition name</td>
-</tr>
-<tr>
-<td></td>
-<td>Purchase requisition line number</td>
-<td>Purchase requisition line description<br>
-(<strong>Product name</strong> field on the <strong>Purchase requisition lines</strong> FastTab of the <strong>Purchase requisition</strong> page)</td>
-</tr>
-<tr>
-<td>
-<ul>
-<li>Project invoice voucher</li>
-<li>Project invoice</li>
-</ul>
-</td>
-<td>Project invoice number</td>
-<td>Invoice account and Account name</td>
-</tr>
-<tr>
-<td></td>
-<td>Funding source</td>
-<td>Project ID and Project name</td>
-</tr>
-</tbody>
-</table>
-
+| Transaction type | Document | Description |
+|------------------|----------|-------------|
+| General journal – Ledger accounts only | Journal batch number | Ledger account or Offset ledger account |
+| General journal – Vendor/Ledger account | **Pay number**: XXX **Pay date**: xx/xx/xxxx | Main account name |
+| Free text invoice or Free text credit memo | **Posting type**: Customer balance or **Posting type**: Customer revenue | Journal number: XXXXXX Line description |
+| Vendor invoice | **Posting type:** Vendor balance or **Pay number**: XXX **Pay date**: xx/xx/xxxx | Vendor name |
+| Vendor payment journal or Customer payment journal | **Pay number**: XXX **Pay date**: xx/xx/xxxx | Vendor name or Customer name |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

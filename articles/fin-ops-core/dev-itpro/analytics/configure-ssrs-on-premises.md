@@ -6,7 +6,8 @@ description: This topic provides information about configuring SQL Server Report
 author: PeterRFriis
 ms.date: 06/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: dynamics-365
+ms.service:
 ms.technology: 
 
 # optional metadata

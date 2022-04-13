@@ -6,7 +6,8 @@ description: This topic provides information and links to content about on-premi
 author: sericks007
 ms.date: 07/01/2021
 ms.topic: article
-ms.prod: 
+ms.prod: dynamics-365 
+ms.service:
 ms.technology: 
 
 # optional metadata

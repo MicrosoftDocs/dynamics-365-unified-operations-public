@@ -1,14 +1,14 @@
 ---
 title: Scheduling with infinite capacity
 description: This topic provides information about infinite capacity scheduling for Planning Optimization. It also describes current feature limitations.
-author: ChristianRytt
+author: t-benebo
 ms.date: 09/21/2021
 ms.topic: article
 ms.search.form: RouteInventProd
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.22
 ---

@@ -4,6 +4,8 @@ description: This topic explains how to provision on-premises edge scale units b
 author: cabeln
 ms.date: 01/24/2022
 ms.topic: article
+ms.prod: dynamics-365 
+ms.service:
 # ms.search.form: [Operations AOT form name to tie this topic to]
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac

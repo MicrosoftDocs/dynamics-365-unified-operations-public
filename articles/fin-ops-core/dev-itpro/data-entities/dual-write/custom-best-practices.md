@@ -59,7 +59,7 @@ In some situations, the entities exist in both environments, but create and upda
 
 If the entities don't exist in either environment, you can create tables in both environments and then create the app by following these steps.
 
-1. In Dataverse, create a new table that has all the required fields. Follow the steps in [Create a custom table](/modules/create-manage-entities/2-custom-entity). If the table should store legal entity–specific data, be sure to add a lookup field to **cdm\_companies** in the new Dataverse table. If the table stores global data, a field for the company isn't required in the Dataverse table.
+1. In Dataverse, create a new table that has all the required fields. Follow the steps in [Create a custom table](/powerapps/maker/data-platform/data-platform-create-entity). If the table should store legal entity–specific data, be sure to add a lookup field to **cdm\_companies** in the new Dataverse table. If the table stores global data, a field for the company isn't required in the Dataverse table.
 2. In the Finance and Operations app, create a new entity that has all the required fields. Make sure that the entity is enabled for Data management and public, so that it can be consumed by OData. For more information about how to create a new entity, see [Build and consume data entities](../build-consuming-data-entities.md).
 3. To enable table maps for dual-write, define an alternative key in the Dataverse table. The value of the alternative key in Dataverse must match the key that is defined in the Finance and Operations app. For example, in the Finance and Operations app, **CustomerAccount** is the key for the **Account** table, as shown in the following illustration.
 

@@ -4,7 +4,7 @@
 title: Microsoft Power Platform integration with Finance and Operations apps
 description: This topic provides an overview for Microsoft Power Platform integration via Microsoft Dynamics Lifecycle Services for Finance and Operations apps and Microsoft Dataverse.
 author: Sunil-Garg
-ms.date: 02/15/2022
+ms.date: 03/02/2022
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -34,13 +34,13 @@ Microsoft Power Platform provides a suite of capabilities for Dynamics 365 appli
 
 ## Environment lifecycle considerations
 
-By default, all Finance and Operations environments managed by LCS will receive a linked Power Platform environment without Dataverse. This is a one-to-one relationship that will, over time, be the location where your Finance and Operations apps will migrate. An environment that is linked to an environment from LCS will display the Finance and Operations apps URL on the environment details page in the Power Platform admin center.
+By default, all Finance and Operations apps environments that are managed by LCS will receive a linked Power Platform environment without Dataverse. The relationship is one to one. Over time, your Finance and Operations apps will be migrated to this location. You can determine whether an environment is linked to an environment from LCS by looking at the Finance and Operations apps URL on the environment details page in the Power Platform admin center.
 
 :::image type="content" source="media/LinkedPowerPlatformEnvironment.png" alt-text="Linked Power Platform environment":::
 
-This environment cannot be deleted or reset, and it cannot manually have a Dataverse database added to it. To add Dataverse, and fully set up the Power Platform integration, complete the following steps. 
+This environment can't be deleted or reset, and a Dataverse database can't be manually added to it. To add Dataverse and fully set up the Microsoft Power Platform integration, follow the instructions in [Enable the Microsoft Power Platform integration](enable-power-platform-integration.md).
 
-Alternatively, if you want to reuse an existing Dataverse environment for your Power Platform integration scenarios, such as virtual entities, add-ins, and dual-write, then follow the recommendations for [Set up dual-write for an existing Dataverse environment](../data-entities/dual-write/lcs-setup.md#set-up-dual-write-for-an-existing-dataverse-environment).
+Alternatively, if you want to reuse an existing Dataverse environment for your Microsoft Power Platform integration scenarios (virtual entities, add-ins, dual-write functionality, and more), follow the instructions in [Set up dual-write for an existing Dataverse environment](../data-entities/dual-write/lcs-setup.md#set-up-dual-write-for-an-existing-dataverse-environment).
 
 ## Prerequisite reading
 
@@ -62,7 +62,7 @@ Together, virtual entities, dual-write, business events, and data events make up
 
 **Business events** let you use Microsoft Power Platform to respond to events that are occurring in Finance and Operations apps. These events occur when a process is run in the application with business logic. Business events can be raised from any app, including Finance and Operations apps, and can be handled by Microsoft Power Platform business logic. This handling will often include querying or interacting with additional data through either native entities or virtual entities. 
 
-**Data events**, similar to business events, enable external applications to receive notifications from Finance and Operations apps when events occurs. Data events occur when there is a change to a record in the application data. External systems can react to notifications when a create, update, or delete (CUD) operation occurs in the data.
+**Data events**, similar to business events, enable external applications to receive notifications from Finance and Operations apps when events occur. Data events occur when there is a change to a record in the application data. External systems can react to notifications when a create, update, or delete (CUD) operation occurs in the data.
 
 For a subset of scenarios, data must be physically copied between Finance and Operations apps and native Dataverse entities. These scenarios are for overlapping entities that already have a large amount of bound logic in both native Dataverse apps and Finance and Operations apps, so that the data must reside in the local database of each type of app. Although the number of these entities is relatively small, it includes some of the most important entities, such as Account/Customer, Company, Product, and Sales order. For these scenarios, **dual-write** enables near-real-time synchronous copying of data. This capability enables existing apps to continue to operate against local data, as designed, and also ensures that the corresponding overlapping entity is kept in sync. For more information, see the [Dual-write home page](../data-entities/dual-write/dual-write-home-page.md). 
 

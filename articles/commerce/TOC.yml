@@ -199,7 +199,7 @@
         - name: Architecture for Finance and Operations apps
           href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/commerce/toc.json
         - name: Microsoft FastTrack
-          href: https://docs.microsoft.com/dynamics365/fasttrack/
+          href: /dynamics365/fasttrack/
         - name: Onboard an implementation project
           href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/commerce/toc.json
         - name: Environment planning
@@ -390,7 +390,7 @@
           href: tasks/worker.md
         - name: Modern Point of Sale (MPOS), Cloud POS, and Store Commerce 
           items:
-          - name: Store Commerce app in Microsoft Dynamics 365 Commerce (Preview)
+          - name: Store Commerce app
             href: dev-itpro/store-commerce.md
           - name: Device management implementation guidance
             href: implementation-considerations-devices.md
@@ -2102,6 +2102,10 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/commerce/toc.json 
           - name: Debug data sources
             href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/commerce/toc.json
+        - name: Configure data models
+          items: 
+          - name: Support parameterized calls of ER data models
+            href: ../fin-ops-core/dev-itpro/analytics/er-data-model-parameterized-calls.md?toc=/dynamics365/commerce/toc.json
         - name: Configure model mappings
           items: 
           - name: Configure country context dependent ER model mappings
@@ -2253,7 +2257,7 @@
         - name: Cost controlling
           href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
         - name: Expense management
-          href: ../finance/expense-management/expense-management-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
+          href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=%2fdynamics365%2fcommerce%2ftoc.json
         - name: Inventory on-hand
           href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
         - name: Invoice approvals
@@ -2261,11 +2265,11 @@
         - name: My team
           href: ../fin-ops-core/dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
         - name: Project mobile applications overview
-          href: ../finance/project-management/project-mobile-application-overview.md?toc=/dynamics365/commerce/toc.json
+          href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview?toc=%2fdynamics365%2fcommerce%2ftoc.json
         - name: Project time entry
-          href: ../finance/project-management/project-time-entry-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
+          href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace?toc=%2fdynamics365%2fcommerce%2ftoc.json
         - name: Project timesheet
-          href: ../finance/project-management/project-timesheet.md?toc=/dynamics365/commerce/toc.json
+          href: /dynamics365/project-operations/prod-pma/project-timesheet?toc=%2fdynamics365%2fcommerce%2ftoc.json
         - name: Purchase order approval
           href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
         - name: Sales orders
@@ -2762,6 +2766,8 @@
               href: e-commerce-extensibility/clone-starter-module.md
             - name: Extend a module definition
               href: e-commerce-extensibility/extend-module-definition.md
+            - name: Change module library static strings
+              href: e-commerce-extensibility/change-module-library-strings.md
           - name: Data actions
             items:
             - name: Data action overrides
@@ -2802,6 +2808,8 @@
               href: e-commerce-extensibility/page-caching.md
             - name: Data action instance cache
               href: e-commerce-extensibility/instance-cache.md
+            - name: Module CSS optimization
+              href: e-commerce-extensibility/module-css-optimization.md
           - name: Telemetry and analytics
             items:
             - name: Telemetry logger
@@ -2864,6 +2872,8 @@
         items:
         - name: Refund on return order is declined
           href: troubleshoot/refund-declined.md
+        - name: Refundable charges are miscalculated based on the quantity returned
+          href: troubleshoot/refund-miscalculated-partial-return.md
         - name: Dynamics 365 Payment Connector for Adyen
           items:
           - name: Troubleshoot Dynamics 365 Payment Connector for Adyen issues

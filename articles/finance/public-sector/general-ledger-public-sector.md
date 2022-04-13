@@ -15,13 +15,13 @@ ms.search.form: AdvancedLedgerEntry, JournalizingDefinition, LedgerDerivedFinHie
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: ["27211", "intro-internal"]
 ms.assetid: d737c743-e224-4a30-b4c3-e9568eaddd8c
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

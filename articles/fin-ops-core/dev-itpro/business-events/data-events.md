@@ -4,7 +4,7 @@
 title: Data events
 description: This topic provides an overview of data events.
 author: jaredha
-ms.date: 01/13/2021
+ms.date: 03/16/2022
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -71,6 +71,12 @@ The **Data event catalog** tab on the **Business events** page also shows the fi
 The data events functionality currently supports a burst rate of 5,000 events per five-minute period, up to 50,000 events per hour, across all entities for the environment. Event loads above these thresholds may encounter performance degradation in environment processing. There are no limits in place to explicitly throttle events, and any events above the supported thresholds will still be sent, but it may slow the performance of the environment. 
 
 Data events for update operations are inherently more expensive to process than data events for create and delete operations in Finance and Operations. If your active data events are for update operations, you may see environment performance degrade more quickly when exceeding the supported thresholds.
+
+## Limitations
+
+Data events are not supported for updates to virtual fields. Modify data events are triggered by update operations on the underlying tables of an entity. Because virtual fields are values calculated in X++ code, any change in the value doesn't result in any data operations against the physical tables, and won't trigger a data event.
+
+For more information on virtual fields, see [Computed columns and virtual fields in data entities](../data-entities/data-entity-computed-columns-virtual-fields.md).
 
 [!include[banner](../includes/banner.md)]
 

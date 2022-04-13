@@ -71,7 +71,7 @@ For more information, see [Download ER configurations from the Global repository
 
 ## Set up financial reports
 
-To set up financial reports, follow the guidance in [Financial reporting overview](/general-ledger/financial-reporting-getting-started.md).
+To set up financial reports, follow the guidance in [Financial reporting overview](../general-ledger/financial-reporting-getting-started.md).
 
 You can also complete the following steps to import example reports from the **LCS Shared asset library**.
 

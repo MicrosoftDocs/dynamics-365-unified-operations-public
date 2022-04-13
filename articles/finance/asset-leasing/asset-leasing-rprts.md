@@ -4,7 +4,7 @@
 title: Asset leasing reports
 description: This topic lists and briefly describes the reports that are available in Asset leasing.
 author: moaamer
-ms.date: 04/12/2021
+ms.date: 04/05/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,8 +15,7 @@ ms.search.form: SysOperationTemplateForm
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
-
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
@@ -42,7 +41,7 @@ The Asset movement report serves as a rollforward report for the right-of-use as
 |     Report fields                  |     Description                                                                |
 |------------------------------------|--------------------------------------------------------------------------------|
 |     Commencement date              |     The commencement date of the lease’s earliest version.                     |   
-|     Lease term                     |     The lease term of the lease’s earliest version.                            |
+|     Lease term                     |     The current version of the lease term.                            |
 |     Short term Lease               |     If the lease is classified as a short-term lease will show as **Yes**.         |
 |     Low value Lease                |     If the lease is classified as a low-value lease will show as **Yes**.          |
 |     Initial right of use asset     |     The original value of the right-of-use asset from the initial recognition journal entry.      |

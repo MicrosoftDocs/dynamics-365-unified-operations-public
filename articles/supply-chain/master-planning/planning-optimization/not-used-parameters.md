@@ -1,14 +1,14 @@
 ---
 title: Parameters not used by Planning Optimization
 description: This topic lists the parameters that Planning Optimization doesn't currently consider during its operation.
-author: ChristianRytt
+author: t-benebo
 ms.date: 09/02/2021
 ms.topic: article
 ms.search.form: ReqParameters, ReqGroup, ReqItemTable, ReqPlanSched, EcoResProductDetailsExtended, InventItemOrderSetup, WorkCalendarTable, PdsDispositionMaster
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2021-06-29
 ms.dyn365.ops.version: 10.0.20
 ---
@@ -60,18 +60,6 @@ Planning Optimization doesn't use the following parameters or options on the **C
   - **Use the specified BOM or formula version** – Pending *Formula versions with Co/By product* support.
   - **Use the specified route version** – Pending *Demand with specific BOM or route requirements defined* support.
 
-- **Action** FastTab:
-
-  - **Action message** – Pending *Actions* support.
-  - **Action time fence** – Pending *Actions* support.
-  - **Postpone margin** – Pending *Actions* support.
-  - **Advance margin** – Pending *Actions* support.
-  - **Basis date** – Pending *Actions* support.
-  - **Advance** – Pending *Actions* support.
-  - **Postpone** – Pending *Actions* support.
-  - **Decrease** – Pending *Actions* support.
-  - **Increase** – Pending *Actions* support.
-  - **Derived actions** – Pending *Actions* support.
 
 - **Other** FastTab:
 
@@ -144,7 +132,6 @@ Planning Optimization doesn't use the following parameters or options on the **M
   - **Forecast plan** – Pending additional *Forecast* support.
   - **Capacity** – Pending *Scheduling* support.
   - **Continuity plan** – Pending *Continuity scheduling* support.
-  - **Action message** – Pending *Actions* support.
   - **Calculated delays** – Pending additional *Calculated delays* support.
   - **Sequencing** – Pending *Production* support.
 

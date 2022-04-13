@@ -4,7 +4,7 @@
 title: Mandatory default descriptions for posting of bank transactions
 description: This topic explains how to set up mandatory descriptions for bank account reconciliation transactions.
 author: gionoder
-ms.date: 01/10/2022
+ms.date: 03/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,8 +30,6 @@ ms.dyn365.ops.version: 10.0.25
 # Mandatory default descriptions for posting of bank transactions
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 The **(Brazil) Mandatory bank transaction description** feature lets you require that descriptions be entered in bank account reconciliation transactions. In this way, you can prevent bank transaction journals from being posted if they contain transaction lines that have no description.
 

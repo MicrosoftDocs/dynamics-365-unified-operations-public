@@ -144,7 +144,7 @@ To submit CFDI invoice cancellation, the **Cancellation** and **Cancel** feature
 1. On the **Feature version setup** page, on the **Variables** tab, select the variable name, **DigitalSignatureXSLT**.
 2. In the **Values** field enter: {"containerUrl":"https://&lt;AccountStorageName&gt;.blob.core.windows.net/&lt;ContainerName&gt;","path":"&lt;RelativePath&gt;"}
    
-    where: <RelativePath> = folder\\folder\\filename with double backslashes, ContainerName must denote the container that is used for the service.
+    where: \<RelativePath\> = folder\\folder\\filename with double backslashes, ContainerName must denote the container that is used for the service.
    
     Example of the variable would be:
     
