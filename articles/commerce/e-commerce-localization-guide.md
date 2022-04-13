@@ -19,21 +19,21 @@ ms.search.validFrom: 2017-06-20
 
 This topic describes how to localize a Microsoft Dynamics 365 Commerce e-commerce site into additional languages and configure the site to support multiple channels, and also covers the necessary concepts and terminology related to the process.
 
-The e-commerce capabilities in Dynamics 365 Commerce have been designed to enable online experiences that can be tailored for specific countries and languages while allowing for the maximum reuse of templates, pages, content, and media. The e-commerce capabilities also make it possible to create a basic site and expand into new markets by adding support for additional countries and languages over time.
+The e-commerce capabilities in Dynamics 365 Commerce have been designed to enable online experiences that can be tailored for specific countries and languages while allowing for the maximum reuse of templates, pages, content, and media. It is also possible to start by creating a basic site and then expanding into new markets by adding support for additional countries and languages over time.
 
 ## Definitions
 
-**Locale, locale identifier**: For the purposes of this document a locale or locale identifier defines a language that is associated with a country or region, for example, fr-ca (Canadian French.)
+**Locale, locale identifier**: A locale (also known as a locale identifier) defines a language that is associated with a country or region. For example, the locale identifier "fr-ca" is associated with Canadian French.
 
 **Base language**: The language you develop your site content in and export for localization.
 
-**Channel, online store**: Defines the payment methods, price groups, product hierarchies, assortments, and set of products for an online e-commerce storefront.
+**Channel, online store**: Channels (also known as online stores) define the payment methods, price groups, product hierarchies, assortments, and products for an online e-commerce storefront.
 
 ## Concepts
 
 ### URL-driven experience
 
-Dynamics 365 Commerce e-commerce sites deliver unique marketized and localized experiences for customers through channels and locales (languages). Channels define the unique products, categories, currencies, and payment methods for a market, and the locale determines the language of the content that customers will see. An e-commerce site uses URLs to differentiate these marketized and localized experiences. Site URLs for these unique channel and locale experiences are defined for a site in the **Channels** site settings page in site builder.
+Dynamics 365 Commerce e-commerce sites deliver unique marketized and localized experiences for customers through channels and locale identifiers. Channels define the unique products, categories, currencies, and payment methods for a market, and locale identifiers determine the language of the content that customers will see. An e-commerce site uses URLs to differentiate between marketized and localized experiences. Site URLs for these unique channel and locale experiences are defined for a site in the **Channels** site settings page in Dynamics 365 Commerce site builder.
 
 A URL in site builder is a combination of a domain and a path that defines the entry point for a unique pairing of channel and locale. In the following example, a fictitious online store called Fabrikam Inc. defines four unique combinations of channels and locales, and maps each to a unique URL that serves them to customers.
 
@@ -41,44 +41,47 @@ A URL in site builder is a combination of a domain and a path that defines the e
 |------------------------|--------|--------------------------------|--------|
 | `https://fabrikam.com` | /      | Fabrikam extended online store | en-us  |
 | `https://fabrikam.com` | /es    | Fabrikam extended online store | es     |
-| `https://fabrikam.ca`  | /      | Contoso online store           | fr-ca  |
-| `https://fabrikam.ca`  | /en-ca | Contoso online store           | en-ca  |
+| `https://fabrikam.ca`  | /      | Contoso online store    | fr-ca  |
+| `https://fabrikam.ca`  | /en-ca | Contoso online store    | en-ca  |
 
-#### Domain
+#### Domains
 
--   Domains are established when you set up e-commerce in the Lifecycle Services (LCS) portal.
--   After your e-commerce environment is provisioned, additional domains can be added by opening a service request. For more information about setting up domains for your e-commerce site, see [Domains in Dynamics 365 Commerce](domains-commerce.md).
+Domains are established when you set up your e-commerce site in the Microsoft Lifecycle Services (LCS) portal. After your e-commerce environment is provisioned, additional domains can be added by opening a service request. For more information about setting up domains for your e-commerce site, see [Domains in Dynamics 365 Commerce](domains-commerce.md).
 
-#### Path
+#### Paths
 
-- The path is an arbitrary string that, in combination with the domain, maps to a unique pairing of channel and locale. In the example above, the string used as the path matches the locale identifier it maps to, but this is not a requirement.
-- A channel and locale pairing can be mapped to a domain with an empty path ("/"). In the example above, customers who request `https://fabrikam.ca` would get the products and assortments for the Canada market in Canadian French (fr-ca).
-- Commerce site builder prevents you from creating duplicate combinations of domain and path. However, it is possible to map duplicate combinations of channel and locale to different domain and path combinations.
+A path is an arbitrary string that, in combination with the domain, maps to a unique pairing of channel and locale. The string used as the path often matches the locale identifier it maps to, but this is not a requirement.
 
-#### Channel
+A channel and locale pairing can be mapped to a domain with an empty path ("/"). In the Fabrikam examples above, customers who visit `https://fabrikam.ca/` (the domain `https://fabrikam.ca` paired with the blank path "/") would be served products and assortments for the Canada market in Canadian French (fr-ca).
 
+Commerce site builder prevents you from creating duplicate identical combinations of a domain and path. However, it is possible to map duplicate combinations of channel and locale to different domain and path combinations.
+
+#### Channels
+
+- Channels (also known as online stores) define the payment methods, price groups, product hierarchies, assortments, and products for an online e-commerce storefront.
 - Channels are defined, configured, and published in Dynamics 365 Commerce headquarters.
-- Site builder can see the online stores that have been configured in headquarters and are available to be mapped to a site.
-- For more information about channels, see [Channels overview](channels-overview.md).
-- For more information about setting up an online channel, see [Set up an online channel](channel-setup-online.md).
+- In Commerce site builder you can see the online stores that have been configured in headquarters and are available to be mapped to a site.
 
-#### Locale (language)
+For more information about channels, see [Channels overview](channels-overview.md). For more information about setting up an online channel, see [Set up an online channel](channel-setup-online.md).
 
-- The locale is the actual identifier that's used for localization when you're handing off XLIFF files for localization. Locales are defined and published for each channel in headquarters. For more information, see the section below about configuring languages and channels in site builder .
-- The same locale can be mapped to multiple channels so that a common language can be offered across multiple markets.
+#### Locale identifier
+
+A locale identifier specifies the country and language used for an online store. The locale identifier is also used when you export and hand off files for localization. Locales are defined and published for each channel in headquarters. 
+
+The same locale can be mapped to multiple channels so that a common language can be offered across multiple markets.
 
 ## Configure languages and channels for your e-commerce site
 
-Out of the box, all Dynamics 365 Commerce e-commerce sites are configured for a single online channel and a single language. This is true whether you start with the Fabrikam demo site or create a new site from scratch.
+Out of the box, all Dynamics 365 Commerce e-commerce sites are configured to use a single online channel and a single language. This is the case whether you start with the Fabrikam demo site or create a new site from scratch.
 
 In this configuration, customers and partners typically develop all the assets that will be used across countries and languages such as templates, pages, fragments, content, and media. All site content is developed in the first language you chose for your site, or English if using the Fabrikam demo site.
 
+![Out of the box Dynamics 365 Commerce e-commerce site](media/loc-guide-1.png)
+
 > [!NOTE]
-> It is possible to configure the Fabrikam demo site to an additional language that can be used for content development instead of English. See the steps below for adding a new language to a site and channel.
+> It is possible to configure the Fabrikam demo site to use an additional language for content development instead of English.
 
-![New, "out of the box" Dynamics 365 Commerce e-commerce site](media/loc-guide-1.png)
-
-The content management system (CMS) and page model for Dynamics 365 Commerce e-commerce sites have been designed to enable expansion into new markets and locales, so it is possible to manage the assets for an online store that spans multiple markets and languages through a single e-commerce site.
+The content management system (CMS) and page model for Dynamics 365 Commerce e-commerce sites have been designed to enable expansion into new markets and locales so that it is possible to manage the assets for an online store that spans multiple markets and languages through a single e-commerce site.
 
 ![Dynamics 365 Commerce e-commerce site that spans multiple markets and languages](media/loc-guide-2.png)
 
@@ -88,7 +91,7 @@ Configuring a new language for an e-commerce site is a three-step process.
 
 #### Step 1: Add a language to your channel in headquarters
 
-To add a language to your channel (also known as an online store) in headquarters, follow these steps.
+To add a language to your channel in headquarters, follow these steps.
 
 1. Navigate to the channel in headquarters to which you want to add the new language. The list of channels you have configured in headquarters can be found by going to **Retail and Commerce \> Channels \> Online stores**.
 1. Open the online store that is mapped to your site by selecting its Retail channel ID. You can verify the online store that is mapped to your site by navigating to the Channels site setting page in site builder and looking at the name of the online store in the Channels column.
@@ -155,7 +158,7 @@ picker. This is usually your *base language*, assuming that you haven't configur
 
 The steps for localizing content for pages, fragments, and media assets is similar. Exceptions and differences will be called out in the sections below. Module content localization follows a different process. Links to relevant information for that process is in the Modules section below.
 
-#### Step 1: Export an XLIFF
+#### Step 1: Export an XLIFF file
 
 To export an XLIFF for a page, fragment, or image, follow these steps.
 
@@ -217,4 +220,4 @@ Strings that are rendered as part of the module itself (for example, **Previous*
 
 [Globalize modules using the CultureInfoFormatter class](e-commerce-extensibility/globalize-modules.md)
 
-[App settings: Themes section](e-commerce-extensibility/app-settings.md#themes-section)
+[App settings: Themes](e-commerce-extensibility/app-settings.md#themes-section)
