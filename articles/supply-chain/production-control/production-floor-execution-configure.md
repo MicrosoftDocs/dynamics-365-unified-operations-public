@@ -136,7 +136,7 @@ This feature adds settings for the following functionality to the **Configure pr
 - Automatically open the **Start job** dialog box when a search is completed.
 - Automatically open the **Report progress** dialog box when a search is completed.
 - Pre-fill the remaining quantity in the **Report progress** dialog box.
-- Enable material consumption adjustments. (This functionality also requires the *Register material consumption on the production floor execution interface (non-WMS)* feature.)
+- Enable material consumption adjustments from the **Report progress** dialog box. (This functionality also requires the *Register material consumption on the production floor execution interface (non-WMS)* feature.)
 - Enable searches by project ID.
 
 Information about how to use the settings is provided later in this topic.
@@ -158,8 +158,8 @@ Next, configure the various settings for the selected configuration, as describe
 
 The following settings are available on the **General** FastTab:
 
-- **Clock in and out only** – Set this option to *Yes* to create a simplified interface that only provides clock-in and clock-out functionality. This disables most of the other options on this page. You must remove all lines from the **Tab selection** FastTab before you can enable this option.
-- **Enable search** – Set this option to *Yes* to include a search field on the jobs list. Workers can find a specific job by entering the job ID or find all jobs for a specific order by entering the order ID. Workers can enter the ID by using a keypad or by scanning a bar code.
+- **Clock in and out only** – Set this option to *Yes* to create a simplified interface that provides only clock-in and clock-out functionality. This setting disables most of the other options on this page. You must remove all lines from the **Tab selection** FastTab before you can enable this option.
+- **Enable search** – Set this option to *Yes* to include a search field on the jobs list. Workers can find a specific job by entering the job ID, or they can find all jobs for a specific order by entering the order ID. Workers can enter the ID by using a keypad or scanning a bar code.
 - **Enable search by project ID** – Set this option to *Yes* to enable workers to search by project ID (in addition to job ID and order ID) in the search field of the production floor execution interface. You can set this option to *Yes* only when the **Enable search** option is also set to *Yes*.
 - **Auto-open start dialog** – When this option is set to *Yes*, the **Start job** dialog box is automatically opened when workers use the search bar to find a job.
 - **Auto-open report progress dialog** – When this option is set to *Yes*, the **Report progress** dialog box is automatically opened when workers use the search bar to find a job.
