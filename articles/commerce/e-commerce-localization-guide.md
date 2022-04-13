@@ -109,24 +109,23 @@ To add a language to a channel in site builder, follow these steps.
 1. If you want this language to be the default language for viewing, creating, and updating site builder pages and fragments, select the **Add as default** checkbox. This setting only affects site builder and does not influence the published site experience for your customers.
 1. Select **Save and Publish**.
 
-#### Step 3: Localize your site content.
+#### Step 3: Localize your site content
 
-When you return to the **Pages** view in site builder, the new language will be available in the channel and locale picker at the upper right of the page. It is now possible to create localized versions of pages in your base language.
+When you return to the **Pages** view in site builder, the new language you added will now be available in the channel and locale picker at the upper right of the page. It is now possible to create localized versions of pages in your base language.
 
 The process for localizing the content of your pages and fragments is covered in the Localizing e-commerce site content section later in this document.
 
 ### Configure a new channel for your site
 
-Dynamics 365 Commerce e-commerce sites can serve the experiences that are defined across multiple online channels that are configured in Headquarters. A site utilizes multiple channels in order to show a unique configuration of payment methods, price groups, product hierarchies, assortments, and set of products to customers. A channel is typically used to configure these dimensions to suit the requirements and preferences for the experience associated with individual counties. However, this is a business decision that is made by the customer not a requirement.
+Dynamics 365 Commerce e-commerce sites can serve the experiences that are defined across multiple online channels that are configured in headquarters. A site uses multiple channels to show a unique configuration of payment methods, price groups, product hierarchies, assortments, and set of products to customers. A channel is typically used to configure these dimensions to suit the requirements and preferences for the experience associated with individual countries, but this is a business decision that is made by the customer and not a requirement.
 
-The prerequisites and tasks associated with setting up a channel (online store) are beyond the scope of this document. To learn more about setting up an online channel in Dynamics 365 Commerce Headquarters, see the [channel setup basics](channels-overview.md#channel-setup-basics)
-section of the [Channels overview](channels-overview.md) help topic. The [Set up an online channel](channel-setup-online.md) help topic talks about steps and requirements specific to online channels.
+The prerequisites and tasks associated with setting up a channel (online store) are beyond the scope of this document. To learn more about setting up an online channel in Dynamics 365 Commerce headquarters, see [Channel setup basics](channels-overview.md#channel-setup-basics). For information on steps and requirements specific to online channels, see [Set up an online channel](channel-setup-online.md).
 
 To add a channel to your site in site builder, follow these steps.
 
 1. Go to **Site settings \> Channels**. 
 1. Select **Add a channel**.
-1. In the **Add a channel** dialog box, select the channel you want to add. 
+1. In the **Add a channel** dialog box, select the channel that you want to add. 
     > [!NOTE]
     > You can only add channels that have not already been added to your site.
 1. Select the default locale for the channel. If you add new languages to the channel, you can change the default to one of those languages.
@@ -138,72 +137,71 @@ To add a channel to your site in site builder, follow these steps.
 
 ### XLIFF basics
 
-XLIFF stands for XML Localization Interchange File Format. It is an industry standard file format for passing localizable content between content management tools. Dynamics 365 Commerce e-commerce site builder leverages the XLIFF file format for exporting page, fragment and image metadata content so that it can be localized and re-imported.
+XML Localization Interchange File Format (XLIFF) is an industry standard file format for passing localizable content between content management tools. Commerce site builder uses the XLIFF file format for exporting page, fragment, and image metadata content so that it can be localized and reimported.
 
-Microsoft Dynamics customers typically work with 3rd party localization vendors such as [translated.com](https://translated.com/welcome) to translate their XLIFF files into the languages they require.
+Microsoft Dynamics customers typically work with third-party localization vendors such as [Translated](https://translated.com/welcome) to translate their XLIFF files into the languages they require.
 
 ### Localize assets in site builder
 
-The following e-commerce site assets are localizable:
+The following e-commerce site assets are localizable in site builder:
 
 - Pages
 - Fragments
 - Media assets
 - Modules
 
-When a new page, fragment or media asset is created, it is created within the context of the channel and language currently selected in the Channel and locale
-picker. This is usually your "base language", assuming you haven't configured additional languages or channels. In sites with multiple channels and languages configured, this "base language" is defined by the channel + locale you have set as the default in the Channels site settings page.
+When a new page, fragment, or media asset is created, it is created within the context of the channel and language currently selected in the channel and locale
+picker. This is usually your *base language*, assuming that you haven't configured additional languages or channels. In sites with multiple channels and languages configured, this base language is defined by the channel and locale you have set as the default on the **Site settings \> Channels**  page.
 
-The steps for localizing content for pages, fragments and media assets is similar. Exceptions and differences will be called out in the sections below. Module content localization follows a different process. Links to relevant information for that process is in the Modules section below.
+The steps for localizing content for pages, fragments, and media assets is similar. Exceptions and differences will be called out in the sections below. Module content localization follows a different process. Links to relevant information for that process is in the Modules section below.
 
 #### Step 1: Export an XLIFF
 
 To export an XLIFF for a page, fragment, or image, follow these steps.
 
-1. Open the asset for which you wish to export base language content for localization.
-2. Select on the Localization tab and select **Export XLIFF**.
+1. Open the asset for which you want to export base language content for localization.
+1. On the command bar, select **Localization \> Export XLIFF**.
 
-An .xlf file named \<assetname\>.xlf will be downloaded as a file to your browser's download folder. This XLIFF file is specific to the asset you're localizing. You will export an XLIFF for every asset you wish to localize.
+An .xlf file named **\<assetname\>.xlf** will be downloaded as a file to your browser's download folder. This XLIFF file is specific to the asset you're localizing. You will export an XLIFF file for every asset you want to localize.
 
 > [!NOTE]
 > The Localization tab is only visible when assets are in an Edit state.
 
-#### Step 2: Localize the XLIFF
+#### Step 2: Localize the XLIFF file
 
-In most cases, you'll work with a localization vendor to transform your XLIFF files. If you are localizing assets internally, or simply wish to test the localization process, the essential changes you must make to an XLIFF file are as follows:
+In most cases, you'll work with a localization vendor to translate your XLIFF files. If you are localizing assets internally or testing the localization process, you must make the following changes to each XLIFF file:
 
-- Add a target-language attribute to the /xliff/file element whose value is the locale identifier of the language you're localizing into. NOTE: this locale identifier must match the locale identifier from the Channels site settings page.
+- Add a target-language attribute to the /xliff/file element whose value is the locale identifier of the language you're localizing into. This locale identifier must match the locale identifier specified on the **Channels** site settings page.
 - For each //source element, add a target element sibling whose text value is the localized version of what's contained in that source element.
 
-See the [XLIFF 1.2 Specification](http://docs.oasis-open.org/xliff/xliff-core/xliff-core.html) for full information about the schema that governs XLIFF files.
+For information about the schema that governs XLIFF files, see [XLIFF 1.2 Specification](http://docs.oasis-open.org/xliff/xliff-core/xliff-core.html).
 
->[!NOTE]
-> In order to localize an asset into multiple languages, a localized XLIFF file must be created for every language you're localizing the asset into.
+> [!NOTE]
+> To localize an asset into multiple languages, a localized XLIFF file must be created for every language into which you're localizing the asset.
 
-#### Step 3: Import the localized XLIFF
+#### Step 3: Import the localized XLIFF file
 
 To import an XLIFF file for an asset, follow these steps.
 
 1. Open the asset in site builder.
-1. Select the channel and language you're importing localized content for in the Channel and Locale picker at upper right.
-1. Select on the **Localization** tab, select **Import XLIFF** and browse to the localized XLIFF file for this asset and language.
+1. Select the channel and language you're importing localized content for in the channel and locale picker on the upper right.
+1. On the command bar, select **Localization \> Import XLIFF** and then browse to the localized XLIFF file for this asset and language.
 
-Once the XLIFF is successfully imported, a "variant" of the page, fragment or asset is created. From here forward, changes made to the localized variant only affect the variant, and not the "base asset" that it was derived from. Similarly, changes to the base asset will not be reflected in the variant of that asset. However, in the case of pages, it is possible to make changes across variants by modifying the template or layout they're bound to. Similarly, changes to a fragment will affect all pages that take a dependency on that variant.
+Once the XLIFF is successfully imported, a variant of the page, fragment, or asset is created. From here forward, changes made to the localized variant only affect the variant, and not the base asset that it was derived from. Similarly, changes to the base asset will not be reflected in the variant of that asset. However, in the case of site pages it is possible to make changes across variants by modifying the template or layout they're associated with. Similarly, changes to a fragment will affect all pages that are dependent on that variant.
 
 ### Images
 
-The content metadata associated with images must be localized in order for that image to be rendered in a page or module variant. Currently, the following metadata within a media asset are localizable:
+The content metadata associated with images must be localized in order for that image to be rendered in a page or module variant. The following metadata within a media asset are localizable:
 
 - Alt text
 - Description
 - Title
 
-As of the Commerce version 10.0.16 release, it is not possible to localize the binary for a digital asset such as an image or video. The Dynamics 365 Commerce product team is currently working on this capability.
+It is not currently possible to localize the binary for a digital asset such as an image or video. The Dynamics 365 Commerce product team is currently working on this capability.
 
 ### Localize modules
 
-Strings that are rendered as part of the module itself (e.g. "Previous" and "Next" in a carousel module) are localized separately from module content. See
-the [Localize a module](e-commerce-extensibility/localize-module.md) help topic for instructions.
+Strings that are rendered as part of the module itself (for example, **Previous** and **Next** buttons in a carousel module) are localized separately from module content. For  more information, see [Localize a module](e-commerce-extensibility/localize-module.md).
 
 ## Additional resources
 
