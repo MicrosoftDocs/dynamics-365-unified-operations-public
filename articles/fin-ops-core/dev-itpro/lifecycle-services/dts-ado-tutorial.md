@@ -132,7 +132,7 @@ In this exercise, you will complete the following tasks:
 
 - In your Azure DevOps project, define a pipeline for translation requests.
 - Run the translation pipeline.
-- Get the translated files, and review the translation memory by using the Multilingual Application Toolkit.
+- Get the translated files, and review the translation memory by using the Multilingual Editor.
 - In your Azure DevOps project, define a pipeline for the regeneration task.
 - Run the regeneration pipeline.
 
@@ -141,7 +141,7 @@ In this exercise, you will complete the following tasks:
 1. Open your Azure DevOps project, and go to your repo.
 1. In the root of your repo, create a file that is named **res.label.txt** and that has the following content.
 
-    ```
+    ```text
     Greeting=Hello
 
     Farewell=Goodbye
@@ -204,15 +204,15 @@ After the pipeline is run, you're redirected to the pipeline summary page.
 
 ### Review and edit the translations
 
-After you download the translations, you might want to review them and make any required changes. You can use any XLIFF editor that you prefer. However, we recommend that you use the free [Multilingual Editor app](/windows/apps/design/globalizing/multilingual-app-toolkit-editor-downloads). This tool helps prevent unwanted changes from being made in the XLIFF file. The following example shows how to use the Multilingual Editor app.
+After you download the translations, you might want to review them and make any required changes. You can use any XLIFF editor that you prefer. However, we recommend that you use the free [Multilingual Editor](/windows/apps/design/globalizing/multilingual-app-toolkit-editor-downloads). This tool helps prevent unwanted changes from being made in the XLIFF file. The following example shows how to use the Multilingual Editor.
 
-1. In the Multilingual Editor app, open the .xlf file. If an error occurs, ignore the message.
+1. In the Multilingual Editor, open the .xlf file. If an error occurs, ignore the message.
 1. Select the **Strings** tab in the lower-left corner of the window.
 1. To verify the translations, you can apply a filter for strings that are in the **Needs Review** state. In this way, you can show only translations that were either machine translated or recycled from a string that has a different resource ID.
 1. After you've reviewed and edited the translations, and are confident that they are of the expected quality, mark them as **Translated**, **Final**, or **Signed off** so that they can be used for future requests.
 1. Make some arbitrary change to any of the strings, and then save the file. In the next task, you will use the file to regenerate the resource files.
 
-![Reviewing and editing translation strings in the Multilingual Editor app.](media/dts-ado-tutorial-image23.png)
+![Reviewing and editing translation strings in the Multilingual Editor.](media/dts-ado-tutorial-image23.png)
 
 ### Regenerate the translation
 
@@ -253,7 +253,7 @@ After the pipeline is run, you're redirected to the pipeline summary page.
 
 The new resource files should reflect any edits that you made to the .xlf translation memory during your review.
 
-### (Optional) Commit changes to Git
+### (Optional) Save changes it Git
 
 After translation is completed, you might want to save the localized files to your project's Git repository. Before you run any Git commands, you must grant version control permissions to the pipeline agent.
 
@@ -276,9 +276,9 @@ After translation is completed, you might want to save the localized files to yo
 
 Before you run Git commands, you should enable the script to access the system token. You can complete this task by adding a **checkout** step where the **persistCredentials** parameter is set to **true**.
 
-You can now add Git commands as part of a Windows PowerShell or bash script task. The following example shows a bash script that commits and pushes the translation task output. In this script, the **git config** command is first called two times to set the user's email address and name. The **git checkout** command is then used to create a new branch. Next, the **git add** command is used to stage all changes in the **$(Build.SourcesDirectory)**. Finally, the **git commit** command is used to persist the changes and push uploads of the new branch to the remote.
+You can now add Git commands as part of a Windows PowerShell or bash script task. The following example shows a bash script that commits and pushes the translation task output. In this script, the **git config** command is first called two times to set the user's email address and name. The **git checkout** command is then used to create a new branch. Next, the **git add** command is used to stage all changes in the **$(Build.SourcesDirectory)**. Next, the **git commit** command is used to save the changes locally. Finally, **git push** uploads these local changes to the remote repository.
 
-```
+```YAML
 - checkout: self
 
 persistCredentials: true
@@ -301,9 +301,9 @@ persistCredentials: true
 
       git add $(Build.SourcesDirectory)
 
-      git commit -m "Commiting translations from pipeline"
+      git commit -m "Committing translations from pipeline"
 
-git push --set-upstream origin localized
+      git push --set-upstream origin localized
 
     workingDirectory: '$(Build.SourcesDirectory)'
 
@@ -327,7 +327,7 @@ In this exercise, you will complete the following tasks:
 1. Open your Azure DevOps project, and go to your repo.
 1. In the root of your repo, create a file that is named **res.label.txt** and that has the following content.
 
-    ```
+    ```text
     Greeting=Hello
 
     Farewell=Goodbye
@@ -337,7 +337,7 @@ In this exercise, you will complete the following tasks:
 
 1. Create a file that is named **res.label.fr.txt** and that has the following content.
 
-    ```
+    ```text
     Greeting=Bonjour
 
     Farewell=Au revoir
@@ -385,7 +385,7 @@ After the pipeline is run, you're redirected to the pipeline summary page.
 
 1. In the **Jobs** list, select the job. It should be in the **Queued** or **Running** state.
 1. After job execution is completed, you can select the published artifact to view and download the XLIFF file.
-1. You can make further changes to the file in the Multilingual Editor app, as described in the [Review and edit the translations](#review-and-edit-the-translations) section, or you can use the XLIFF file as the translation memory for future translation requests.
+1. You can make further changes to the file in the Multilingual Editor, as described in the [Review and edit the translations](#review-and-edit-the-translations) section, or you can use the XLIFF file as the translation memory for future translation requests.
 
 ## Summary
 
