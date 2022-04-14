@@ -60,7 +60,7 @@ The following bug fixes are included in this release.
 
 | Issue number | Issue | Description |
 | --- | --- | --- |
-| 514087 | BenefitEligibilityProcessResult should include datetime that was used in processing. | BenefitEligibity processing result now includes the datetimestamp for last processing, which was missing earlier. |
+| 514087 | BenefitEligibilityProcessResult should include datetime that was used in processing. | BenefitEligibility processing result now includes the datetimestamp for last processing, which was missing earlier. |
 | 526903 | Benefit enrollment fails for plans with dependents when **Auto-select designees** is turned on in **Human resources shared parameters**. | Fixed the issue where benefit enrollment was failing for dependants when the **Auto-select designees** option was turned on for default designees. |
 | 521922 | **Show absence without detail** parameter shows details of time-off requests in team absence calendar. | The leave type, leave type color, and day details were being shown in the team absence calendar when **Show absence without detail** was set to **Yes** in **Leave and absence parameters**. This has been addressed, and now the leave type doesn't display and the default leave type color (dark blue) is used for all leave types on the team absence calendar. |
 | 527316 | Title changes for Job, Position, and Worker notifications don't sync. | A Title relation was previously added to the Job, Position, and Worker entities. The sync for this relation works for the sync from Human Resources to Dataverse, but didn't work for notifications from Dataverse. This has been addressed. |
