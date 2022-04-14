@@ -36,7 +36,7 @@ This topic provides reference content for extensible control programming.
 This document describes the API, HTML, and JavaScript support for creating extensible controls.
 
 ## Examples
-This document contains small code snippets that show how to use each API that is documented. More complete examples of finished controls that leverage many of these APIs can be found on Github. [Extensible Control Examples on Github](https://github.com/Microsoft/Dynamics-AX-Extensible-Control-Samples)
+This document contains small code snippets that show how to use each API that is documented. More complete examples of finished controls that leverage many of these APIs can be found on GitHub. [Extensible Control Examples on GitHub](https://github.com/Microsoft/Dynamics-AX-Extensible-Control-Samples)
 
 ## Control block diagram
 This high-level diagram illustrates the key components of an extensible control and how they interact with each other. Your extensible control solution will contain two X++ classes that implement your control. The runtime class implements the runtime data, presentation, and behavior of your control. The build class defines how your control is displayed in Form Designer, Property Window, and Application Explorer. [![Extensibility architecture.](./media/extensibilityarchitecture.png)](./media/extensibilityarchitecture.png)
