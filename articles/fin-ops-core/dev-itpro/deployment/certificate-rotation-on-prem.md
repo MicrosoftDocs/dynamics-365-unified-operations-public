@@ -335,7 +335,7 @@ Because you've updated your certificates, the configuration file that is present
     },
     ```
 
-2. Replace the **serverCertThumprint** and **clientCertThumbprint** values with the new thumbprints.
+2. Replace the **serverCertThumbprint** and **clientCertThumbprint** values with the new thumbprints.
 
     ```json
     {
