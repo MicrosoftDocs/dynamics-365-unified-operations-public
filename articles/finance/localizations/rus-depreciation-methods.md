@@ -53,7 +53,7 @@ Depreciation in tax accounting is calculated one of two ways:
 - **linear** and, 
 - **non-linear** (Article 259 of the Tax Code of the Russian Federation).
 In the non-linear depreciation method, the accrued monthly depreciation for the asset is calculated by multiplying the asset's remaining value by the depreciation rate. The depreciation rate is defined by the formula K = (2 ÷ n) × 100 percent, where *n* is the asset's useful life in months (the same formula is used in the reducing remainder method).
-In addition, when an asset's net book value (remaider) reaches 20 percent of its original value, the residual value (net book value) is used as the base value for additional depreciation calculations for the fixed asset. The monthly depreciation amount is calculated by dividing the fixed asset's net book value by the number of months that remain until the end of its service life.
+In addition, when an asset's net book value (remainder) reaches 20 percent of its original value, the residual value (net book value) is used as the base value for additional depreciation calculations for the fixed asset. The monthly depreciation amount is calculated by dividing the fixed asset's net book value by the number of months that remain until the end of its service life.
 
 > [!NOTE] 
 > **Non-linear method** may be used for a individual fixed asset or for a fixed asset group (**[Non-linear tax accounting depreciation methods](rus-depreciation-methods.md#non-linear-tax-accounting-group-depreciation-method)**) in the tax accounting.
