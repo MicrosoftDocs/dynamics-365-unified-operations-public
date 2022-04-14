@@ -221,7 +221,7 @@ The current setting means that for any user assigned to the **Accounts receivabl
 - Templates that have the value, **Invoicing** for the **Functional area** tag.
 - Templates from ER format configurations that are listed on the **Access permissions per configurations** tab (templates from the **Intrastat report** format configuration of the **Statutory reporting** domain in this example).
 
-![Access permissions FastTabs on the Configurator of access persmissions page.](./media/BDM-Overview-TemplatesAccess4.png)
+![Access permissions FastTabs on the Configurator of access permissions page.](./media/BDM-Overview-TemplatesAccess4.png)
 
 The following graphic shows what the Business document management workspace provides to a user assigned to the **Accounts receivable clerk** role. With the current Business document management access permissions setting, the user can edit business document templates from the **Invoicing** domain and the **Intrastat report** ER format configuration. Templates from the **Payments** domain are not accessible for the **Accounts receivable clerk** role.
 

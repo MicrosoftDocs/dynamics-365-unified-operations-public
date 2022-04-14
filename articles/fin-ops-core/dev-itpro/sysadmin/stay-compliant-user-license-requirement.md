@@ -60,7 +60,7 @@ The maximum license requirement determines the actual licensing requirement for 
 
 During security configuration on the **Configure security** page (**System administration \> Security \> Configure security**), you can select any security object, a role, duty, or permissions, and then select **View permissions** to view all permissions that are currently included and their licensing requirements. The header of the **View permissions** page shows the required license level.
 
-![View permissions page.](media/ViewPermissons.png)
+![View permissions page.](media/ViewPermissions.png)
 
 > [!NOTE]
 > Starting with platform update for version 10.0.15, the required license types are extended to include application specific license types such as Commerce, Finance, and Supply Chain Management. This extension makes it possible to identify the specific security objects that determine the actual license requirements while also configuring security. More than one value can be displayed for the required license type. 
