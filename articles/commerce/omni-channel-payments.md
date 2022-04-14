@@ -108,7 +108,7 @@ The following sections describe the steps for each scenario and show how to run 
 Before you start, make sure that the following prerequisites are in place:
 
 - You have a reference storefront where the Adyen connector is configured.
-- The **Omni-channel payments** option on the **Commerce shared parameters** page is set to **True**. In later versions this settng is moved to the **Feature Management** workspace where you can select the **Omni-channel payments** feature and click **Enable now**. 
+- The **Omni-channel payments** option on the **Commerce shared parameters** page is set to **True**. In later versions this setting is moved to the **Feature Management** workspace where you can select the **Omni-channel payments** feature and click **Enable now**. 
 - The Adyen payment connector is configured for the Houston POS register.
 - The Retail Modern POS for Windows or Android with built-in hardware station
     -or-
