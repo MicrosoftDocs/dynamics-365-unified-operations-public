@@ -205,7 +205,7 @@ Configuration of an ER component is done in the draft version of the ER configur
 
 As described earlier in this topic, you can add required ER labels to an editable ER component. In this way, you can specify the text of the ER labels in the EN-US language. You can then export the labels of the ER component by using the built-in ER function. Select the draft version of an ER configuration that contains the editable ER component, and then select **Exchange \> Export labels**.
 
-![ER Configurations page allowing to export ER labels from the selected conviguration version.](./media/er-multilingual-labels-export.png)
+![ER Configurations page allowing to export ER labels from the selected configuration version.](./media/er-multilingual-labels-export.png)
 
 You can export either all labels or the labels for a single language that you specify at the beginning of export. Labels are exported as a zip file that contains XML files. Every XML file contains labels for a single language.
 
@@ -213,7 +213,7 @@ You can export either all labels or the labels for a single language that you sp
 
 This format is used for automatic translation of labels by  external translation services such as [Dynamics 365 Translation Service](../lifecycle-services/translation-service-overview.md). When you receive the translated labels, you can import them back into the draft version of an ER configuration that contains the ER components that own those labels. Select the draft version of an ER configuration that contains the editable ER component, and select **Exchange \> Load labels**.
 
-![ER Configurations page allowing to import ER labels to the selected conviguration version.](./media/er-multilingual-labels-load.png)
+![ER Configurations page allowing to import ER labels to the selected configuration version.](./media/er-multilingual-labels-load.png)
 
 Translated labels will be imported into the selected ER configuration. Translated labels that exist in this ER configuration are replaced. If any translated label is missing in the ER configuration, it's appended.
 

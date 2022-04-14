@@ -90,7 +90,7 @@ The following tables provide information about configuration settings. Use the *
 | The group managed service account (gMSA) to run the MR click-once service, such as yourdomain\Svc-FRCO$.                                       | components.(FinancialReporting).parameters.ClickOnceServicePrincipalUser.accountName.value *   |
 
 > [!NOTE]
-> Remove the extra backslash from the Principal username cofiguration value in the .json file before entering in the LCS UI. For example, contoso\\\\AXServiceUser should be entered as contoso\AXServiceUser in LCS.
+> Remove the extra backslash from the Principal username configuration value in the .json file before entering in the LCS UI. For example, contoso\\\\AXServiceUser should be entered as contoso\AXServiceUser in LCS.
 
 **Application certificate settings**
 

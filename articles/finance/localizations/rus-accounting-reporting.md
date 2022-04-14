@@ -101,7 +101,7 @@ ms.dyn365.ops.version: 10.0.1
 
     1. Go to **Tax \> Setup \> Electronic messages \> Message processing actions**.
     2. In the left pane, select the action that is named **Generate BUHOTCH 5.08**, and then expand the **General** FastTab.
-    3. Validate that in the **Format mapping** field, the configuraiton name **Accounting reporting format 5.08 (RU)** is selected. Validate that **Show dialog** is set to **Yes**.
+    3. Validate that in the **Format mapping** field, the configuration name **Accounting reporting format 5.08 (RU)** is selected. Validate that **Show dialog** is set to **Yes**.
 
     For more information about how to set up electronic messaging functionality, see [Electronic messaging](../general-ledger/electronic-messaging.md).
 
