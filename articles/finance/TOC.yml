@@ -3187,7 +3187,7 @@
           - name: Submit a VAT return to Altinn web service
             href: localizations/emea-nor-vat-return-submission.md
         - name: Standard Audit File for Tax (SAF-T) for Norway
-          href: localizations/emea-nor-satndard-audit-file-for-tax.md
+          href: localizations/emea-nor-standard-audit-file-for-tax.md
         - name: Customer electronic invoices in Norway
           href: localizations/emea-nor-e-invoices.md
       - name: Oman
