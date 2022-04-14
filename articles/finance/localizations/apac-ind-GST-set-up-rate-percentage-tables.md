@@ -49,7 +49,7 @@ ms.dyn365.ops.version: 10.0.4
 
 4. Select the **Load on Inventory Percentage** node, and in the **Value** field, enter the load on inventory percentage.
 
-    ![Load on inventory percentage.](media/load-on-invertory.png)
+    ![Load on inventory percentage.](media/load-on-inventory.png)
 
 5. Select **Save**, and then select **Close**.
 6. On the **Companies** FastTab, select **Parameters**.

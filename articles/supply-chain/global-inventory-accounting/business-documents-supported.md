@@ -52,7 +52,7 @@ The following table lists the documents that the current release supports.
 
 ### Product receipt
 
-Post product receipts in the usual way. On the **All purchase orders** page, select a purchase order, and then, on the Action Pane, on the **Receive** tab, select **Product receipt** to open the **Product receipt journal** page. An operation event and a Global Invntroy Accounting event are generated for each line. Therefore, select the **Lines** tab, and then select **Inventory \> Events and measurements** to open the **Events and measurements** page.
+Post product receipts in the usual way. On the **All purchase orders** page, select a purchase order, and then, on the Action Pane, on the **Receive** tab, select **Product receipt** to open the **Product receipt journal** page. An operation event and a Global Inventory Accounting event are generated for each line. Therefore, select the **Lines** tab, and then select **Inventory \> Events and measurements** to open the **Events and measurements** page.
 
 Global Inventory Accounting is an accounting system that is based on events and measurements. The measurement line grid on the **Events and measurements** page shows a list of measurements. Each measurement has a list of dimensions.
 
