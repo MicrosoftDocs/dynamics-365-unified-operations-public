@@ -94,7 +94,7 @@ These methods have been refactored to support extensibility through chain of com
 |EcoResProductCreate.writeMoreFields|
 |EcoResProductDetailsExtended.initInventDimensionsMetadataEntries|
 |ElectronicPaymentRemitExport_BR.construct|
-|ForecastPuch|
+|ForecastPurch|
 |ForecastSales.accountConsumption|
 |ForecastSales.accountDisc|
 |ForecastSales.accountIssue|
