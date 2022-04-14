@@ -82,7 +82,7 @@ The following key aggregate measurements are used as the basis of the content.
 | Entity                  | Key aggregate measurement | Data source for Dynamics 365      | Field     | Description                                        |
 |-------------------------|---------------------------|-----------------------------------|-----------|----------------------------------------------------|
 | Cost accounting entries | SUM(Amount)               | CAMDATAAggregatedCostEntry        | Amount    | The amount in the Cost accounting ledger currency. |
-| Statistical entries     | SUM(Magnitude)            | CAMDATAAggregatedStatisctialEntry | Magnitude |                                                    |
+| Statistical entries     | SUM(Magnitude)            | CAMDATAAggregatedStatisticalEntry | Magnitude |                                                    |
 
 The following table shows how the key aggregate measurements are used to create several calculated measures in the content's dataset.
 
