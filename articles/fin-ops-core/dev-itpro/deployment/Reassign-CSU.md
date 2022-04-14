@@ -81,7 +81,7 @@ This procedure and the next procedure must be completed during the planned downt
 You can continue to use the origin CSU to serve other channels. 
 
 > [!NOTE]
-> Do not delete the origin CSU. Doing so may make the store unoperable.
+> Do not delete the origin CSU. Doing so may make the store inoperable.
 
 After you've completed all the procedures in a sandbox UAT environment, repeat them in your production environment.
 
