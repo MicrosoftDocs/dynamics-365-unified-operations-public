@@ -209,7 +209,7 @@ As described earlier in this topic, you can add required ER labels to an editabl
 
 You can export either all labels or the labels for a single language that you specify at the beginning of export. Labels are exported as a zip file that contains XML files. Every XML file contains labels for a single language.
 
-![Sample of the exported file containing ER lables for DE-AT language.](./media/er-multilingual-labels-in-xml.png)
+![Sample of the exported file containing ER labels for DE-AT language.](./media/er-multilingual-labels-in-xml.png)
 
 This format is used for automatic translation of labels by  external translation services such as [Dynamics 365 Translation Service](../lifecycle-services/translation-service-overview.md). When you receive the translated labels, you can import them back into the draft version of an ER configuration that contains the ER components that own those labels. Select the draft version of an ER configuration that contains the editable ER component, and select **Exchange \> Load labels**.
 
