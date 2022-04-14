@@ -189,7 +189,7 @@ This report displays receipts and issues for all items.
 
 1. Go to **Inventory management** \> **Inquires and reports** \> **Transactional reports** \> **Pay-sheet of receipts and reports expenditure**.
 
-    ![Pay-sheet of receipts and reports expediture report.](media/8_Pay-sheet_of_receipts_and_expenditure.png)
+    ![Pay-sheet of receipts and reports expenditure report.](media/8_Pay-sheet_of_receipts_and_expenditure.png)
 
 2.  On the **Pay-sheet of receipts and expenditure** dialog box, on the **Parameters** FastTab, specify the value of **Exclude storno** parameter:
 
@@ -199,7 +199,7 @@ This report displays receipts and issues for all items.
 3. On the **Records to include** FastTab, select the **Filter** to apply filters for the report.
 4. Select **OK** to generate a report.
 
-    ![Generated Pay-sheet of receipts and reports expediture report.](media/9_Pay-sheet_of_receipts_and_expenditure.png)
+    ![Generated Pay-sheet of receipts and reports expenditure report.](media/9_Pay-sheet_of_receipts_and_expenditure.png)
 
 ## Adjustments report
 
