@@ -175,7 +175,7 @@ Both primary accounts and offset accounts must be associated with transaction da
 
 ![Example of role-playing dimensions.](media/062a0d860fe1633a6616bca6e871f95e.png)
 
-We have modeled two dimension references for LedgerActivityMeaureGroup. The first reference, DimensionCombination, is joined by using the **LedgerDimension** field. We saw this pattern earlier in this topic.
+We have modeled two dimension references for LedgerActivityMeasureGroup. The first reference, DimensionCombination, is joined by using the **LedgerDimension** field. We saw this pattern earlier in this topic.
 
 The second reference, OffsetDimensionCombination, is another reference to the same dimension. We have reused the DimensionCombination aggregate dimension and given it a new name. In the second case, we can join by using the **OffsetLedgerDimension** field.
 
