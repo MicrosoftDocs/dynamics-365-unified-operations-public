@@ -43,7 +43,7 @@ A Commerce product hierarchy is used to define the overall product hierarchy for
 To create and configure a Commerce product hierarchy, follow these steps.
 
 1. In the navigation pane, go to **Modules \> Retail and commerce \> Products and categories \> Commerce product hierarchy**.
-1. If no hierachy exists yet, on the **Action pane**, select **New** to create the root of the hierarchy.
+1. If no hierarchy exists yet, on the **Action pane**, select **New** to create the root of the hierarchy.
 1. Under **General**:
     1. In the **Name** box, enter a name.
     1. In the **Description** box, enter a description.
