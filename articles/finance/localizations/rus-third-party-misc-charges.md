@@ -371,7 +371,7 @@ The cost price of an item can be adjusted many times by using the functionality 
 ## View the allocation history for miscellaneous charges
 ### View the allocation history from the invoice journal
 
-1. On the **Invoice journa**l page, select purchase invoice that you created earlier that includes the service.
+1. On the **Invoice journal** page, select purchase invoice that you created earlier that includes the service.
 2. Select **Charges** > **Misc. charges allocation history** to open the **Charges allocation** page.
 The **Allocation base** section shows the allocation base and allocation result, depending on the value in the **Allocation mode** field. To change the allocation mode, select **Edit**, and then, in the **Allocation mode** field, select a new value.
 

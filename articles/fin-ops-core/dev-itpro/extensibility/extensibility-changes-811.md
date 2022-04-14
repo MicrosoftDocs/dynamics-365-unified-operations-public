@@ -80,7 +80,7 @@ These methods have been refactored to support extensibility.
 | CustDebitCreditNoteDP.insertForValue                                                           |
 | CustInterestJour.findCustUnPostedInterestNote                                                  |
 | CustOpenTrans.editMarkTrans                                                                    |
-| CustPackingSlipJour.PrintJounal                                                                |
+| CustPackingSlipJour.PrintJournal                                                                |
 | CustTable.openInvoiceBalanceMST                                                                |
 | CustTable.openinvoiceBalanceMSTDoc                                                             |
 | CustTable.openPaymentBalanceMST                                                                |

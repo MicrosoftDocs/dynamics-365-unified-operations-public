@@ -41,7 +41,7 @@ Next, you can determine whether any of the following conditions are met:
 - Multiple sessions process the same transaction tax calculation at the same time.
 - The transaction has multiple lines, and the views are updated in real time. For example, the **Calculated sales tax amount** field on the **General journal** page is updated in real time when a line's fields are changed.
 
-   [![Calculated sales tax amount field on the Jounal voucher page.](./media/tax-calculation-bad-performance-impacts-transaction-Picture1.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture1.png)
+   [![Calculated sales tax amount field on the Journal voucher page.](./media/tax-calculation-bad-performance-impacts-transaction-Picture1.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture1.png)
 
 If any of these conditions are met, delay the tax calculation.
 
