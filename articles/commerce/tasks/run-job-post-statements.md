@@ -36,7 +36,7 @@ This procedure walks through configuring and running a recurrent batch job to po
 3. Click the Run in the background tab.
 ![Run in the background.](../dev-itpro/media/runbackground.png "Run in the background") 
 4. Check or uncheck the Batch processing checkbox.
-![Batch Processing.](../dev-itpro/media/batchprocessing.png "Batch Processing & Recurrance") 
+![Batch Processing.](../dev-itpro/media/batchprocessing.png "Batch Processing & Recurrence") 
 5. Click Recurrence.
 6. In the Start date field, enter a date.
 7. In the Start time field, enter a time.
