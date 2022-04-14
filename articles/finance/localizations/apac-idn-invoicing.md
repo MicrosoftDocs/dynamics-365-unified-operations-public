@@ -366,7 +366,7 @@ You can view the submission logs for all exported documents.
 
 1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**.
 2. Select **Update status**. An invoice batch can have the following statuses:
-   - Schecduled
+   - Scheduled
    - Completed
    - Failed 
 4. On the Action Pane, select **Inquiries** \> **Submission details** to view the details of the submission execution logs. The information in the logs is divided among three FastTabs:
