@@ -156,7 +156,7 @@ In the printing format of the facture accounting journal, the original factures 
 The **Received** worksheet of the facture accounting journal reflects the
 factures that are confirmed by the principal.
 
-![Recevied worksheet of the Facture accounting journal.](media/32_Facture_accounting_journal_Part_2.jpg)
+![Received worksheet of the Facture accounting journal.](media/32_Facture_accounting_journal_Part_2.jpg)
 
 ## Prepayments
 
