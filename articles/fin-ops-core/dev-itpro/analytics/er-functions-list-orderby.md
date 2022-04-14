@@ -101,7 +101,7 @@ If a direct database query can't be established, a validation [error](er-compone
 For better performance, we recommend that you use the **Query** option when the sorting is configured for application data sources that might contain the large number of records (for example, for transactional application tables).
 
 > [!NOTE]
-> The `ORDEBY` function itself can't be translated to a direct database query. Therefore, an ER data source that contains this function isn't queryable. It also can't be used in the scope of ER functions such as [FILTER](er-functions-list-filter.md) and [ALLITEMSQUERY](er-functions-list-allitemsquery.md), where only queryable data sources can be used.
+> The `ORDERBY` function itself can't be translated to a direct database query. Therefore, an ER data source that contains this function isn't queryable. It also can't be used in the scope of ER functions such as [FILTER](er-functions-list-filter.md) and [ALLITEMSQUERY](er-functions-list-allitemsquery.md), where only queryable data sources can be used.
 
 For more details, see [example 3](#example-3) and [example 4](#example-4).
 
