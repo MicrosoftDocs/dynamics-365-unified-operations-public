@@ -115,7 +115,7 @@ The following instructions provide information about how to update or redeploy y
 3. Wait for a few minutes and verify that the deployment is deleted. To confirm the deployment is deleted, log in to the on-premises environment and navigate to the Service Fabric Explorer.
 
     The following applications should be deleted:
-   - AXBootstapperAppType
+   - AXBootstrapperAppType
    - AXSFType
    - FinancialReportingType
    - RTGatewayAppType
