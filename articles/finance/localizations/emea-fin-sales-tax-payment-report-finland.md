@@ -212,7 +212,7 @@ If you set up reverse charges according to [Reverse charge VAT](emea-reverse-cha
 
 After you've generated the Finnish sales tax report, use the data on it to fill in the self-assessed tax return for the Finnish Tax Administration in the official format. For example, the following illustration shows what the Finnish self-assessed tax return has looked like since 2019.
 
-![Finnish self-assesed tax report.](media/5_Finnish_VAT_declaration.png)
+![Finnish self-assessed tax report.](media/5_Finnish_VAT_declaration.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
