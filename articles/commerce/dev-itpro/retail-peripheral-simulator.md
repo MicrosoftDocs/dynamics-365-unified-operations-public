@@ -494,7 +494,7 @@ The following example shows the data that is included in the exported file.
    <FirmwareVersion>V1</FirmwareVersion>  
   <HardwareType>OPOS</HardwareType>  
   <ConnectionType>USB</ConnectionType>  
-  <DriverDownloadLink>htttp://model1.drivers.contoso.com</DriverDownloadLink>  
+  <DriverDownloadLink>http://model1.drivers.contoso.com</DriverDownloadLink>  
  <DeviceInfo i:type="OposDevice">
  <LogItems>  
   <LogMessage>  
