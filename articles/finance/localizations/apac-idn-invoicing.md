@@ -227,7 +227,7 @@ To enable the system to determine which the sales tax code in Finance correspond
 
 3. On the last line, set the **Lookup result** field to **Other** and the **Sales tax code (TaxCode)** field to **\*Not blank\***. These settings specify that all other sales tax codes should not be considered luxury tax by the system.
 
-![Setting application-specific parameters for sales tax codes.](media/apac-idn-aplication-specific-parameters-tax-code.png)
+![Setting application-specific parameters for sales tax codes.](media/apac-idn-application-specific-parameters-tax-code.png)
 
 To enable the system to determine which sales tax group in Finance corresponds to VAT-free reasons (transaction code 07, reasons 1 through 8) or VAT-exempt reasons (transaction code 08, reasons 1 through 5) when invoices are exported, follow these steps to set the application specific parameters for those reasons.
 
@@ -236,7 +236,7 @@ To enable the system to determine which sales tax group in Finance corresponds t
 3. Set the **Tax group (TaxGroup)** field to the sales group that is used for exemption operations in Finance.
 4. On the last line, set the **Lookup result** field to **Other** and the **Tax group (TaxGroup)** field to **\*Not blank\***. These settings specify that all other sales tax groups should not be considered exemption groups by the system.
 
-![Setting application-specific parameters for transaction codes.](media/apac-idn-aplication-specific-parameters-transaction-codes-07-08.png)
+![Setting application-specific parameters for transaction codes.](media/apac-idn-application-specific-parameters-transaction-codes-07-08.png)
 
 ### Manage the Electronic Invoicing feature setup
 
