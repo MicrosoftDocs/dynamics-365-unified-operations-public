@@ -89,7 +89,7 @@ To enable Finance + Operations to use your AD FS application, you must create a 
     
     3.  Enter the client ID that you obtained when you created an application entry in AD FS (step 2 in "Create an application entry in AD FS"). Enter a name, and select the Warehousing app user.
 
-    ![Azure Active Drectory applications .](media/azure-active-directory.png)
+    ![Azure Active Directory applications .](media/azure-active-directory.png)
 
 ## Certificates 
 
