@@ -63,7 +63,7 @@ For more information about alerts, see [Alerts overview](alerts-overview.md).
 
 ## Data entity behavior with configuration keys
 
-Data management honors the configuration key settings on data entities, tables, and fields. Because of the hierarchial structure of these artifacts, data management will allow a child in the hierarchy to be used if the configuration key on itself and it's parent is enabled. If a parent's configuration key is disabled, none of the children will be made available for use in imports and exports. For a detailed explaination of this behavior, see [Configuration keys and data entities](../../dev-itpro/data-entities/config-key-entities.md)
+Data management honors the configuration key settings on data entities, tables, and fields. Because of the hierarchial structure of these artifacts, data management will allow a child in the hierarchy to be used if the configuration key on itself and it's parent is enabled. If a parent's configuration key is disabled, none of the children will be made available for use in imports and exports. For a detailed explanation of this behavior, see [Configuration keys and data entities](../../dev-itpro/data-entities/config-key-entities.md)
 
 ## Embed Power Apps
 
