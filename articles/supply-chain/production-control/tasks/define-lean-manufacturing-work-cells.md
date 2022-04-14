@@ -56,7 +56,7 @@ A work cell is a specific form of resource groups that can be used in lean manuf
     * In multiple activity production flows or production lines, this is often the input warehouse of the next work cell or the sales or transit warehouse where a product is typically transferred to after the production process. Remember when modeling lean manufacturing processes, transport is usually waste, as is reporting transport.  
 16. In the list, click the link in the selected row.
 17. In the Output location field, click the drop-down button to open the lookup.
-    * In a production flow with multiple process activites this if often the input location of the next work cell.  
+    * In a production flow with multiple process activities this if often the input location of the next work cell.  
 18. In the list, find and select the desired record.
 19. In the list, click the link in the selected row.
 20. Expand or collapse the Operation section.
