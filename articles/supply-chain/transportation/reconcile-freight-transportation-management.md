@@ -38,7 +38,7 @@ Freight reconciliation can be done manually, or it can be set up to occur automa
 
 Freight rates are calculated by the rate engine that is associated with the relevant shipping carrier. When a load is confirmed, a freight bill is generated, and the freight rates are transferred to it. The freight rates are apportioned as miscellaneous charges to the relevant source document (purchase order, sales order, and/or transfer order), depending on the setup that is used for the regular billing process. The freight reconciliation process (which is also known as the matching process) can start as soon as the freight invoice arrives from the shipping carrier. The invoice can be received electronically or on paper. If the invoice is received on paper, you can generate an electronic invoice by using the freight bill as a template.
 
-[![Freight reconciliation process.](./media/freight-reconcilation-process.jpg)](./media/freight-reconcilation-process.jpg)
+[![Freight reconciliation process.](./media/freight-reconciliation-process.jpg)](./media/freight-reconciliation-process.jpg)
 
 ## Manual reconciliation
 
