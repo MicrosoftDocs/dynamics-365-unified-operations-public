@@ -125,7 +125,7 @@ The following sections provide sample configurations.
 In this configuration, you have Help content only for English (United States). Regardless of the locale that clients are set to, they will show the Help content in English (United States).
 
 ```
-<add language="en-US" ulitmateindex="indexenus"/>
+<add language="en-US" ultimateindex="indexenus"/>
 ```
 
 ### Help content for multiple locales
@@ -133,7 +133,7 @@ In this configuration, you have Help content only for English (United States). R
 In this configuration, you have Help content for French, German, and English (United States). Clients that are set to the **de** locale will show the Help content in German, clients that are set to the **fr** locale will show the content in French, and clients that are set to any other locale will show the content in English (United States).
 
 ```
-<add language="en-US" ulitmateindex="indexenus"/>
+<add language="en-US" ultimateindex="indexenus"/>
 <add language="fr" parentindex="indexfr"/>
 <add language="de" parentindex="indexde"/>
 ```
@@ -145,7 +145,7 @@ If clients are set to the **de** or **fr** locale, but no results are found in t
 In this configuration, you have Help content for German, German (Austria), and English (United States). For example, you have several topics that are related specifically to features for Austria, but topics in German can be used otherwise.
 
 ```
-<add language="en-US" ulitmateindex="indexenus"/>
+<add language="en-US" ultimateindex="indexenus"/>
 <add language="de" parentindex="indexde"/>
 <add language="de-AT" parentlanguage="de" index="indexdeat"/>
 ```
