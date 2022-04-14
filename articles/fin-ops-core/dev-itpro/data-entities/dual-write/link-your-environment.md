@@ -46,7 +46,7 @@ ms.dyn365.ops.version: AX 7.0.0
 You've now linked your Finance and Operations app to the Dataverse environment. 
 
 > [!NOTE]
-> If you don't see your table maps, or if you see a blank page, be sure to **Apply** the Dual-write application orchestration solution that you installed as part of the system requirements and prerequisities.
+> If you don't see your table maps, or if you see a blank page, be sure to **Apply** the Dual-write application orchestration solution that you installed as part of the system requirements and prerequisites.
 
 7. Apply the dual-write application orchestration solution.
 
