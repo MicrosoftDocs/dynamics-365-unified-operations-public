@@ -140,9 +140,9 @@ These methods have been refactored to support extensibility.
 |BomCalcItem.insertBOMCalcTrans|
 |BomCalcProd.calcCostSheet|
 |BOMReportFinishMax.retrieveInventTable|
-|BudgetCaculateBalance.getActualLedgerAmountsQuery|
-|BudgetCaculateBalance.getOriginalBudgetQuery|
-|BudgetCaculateBalance.getRevisedBudgetQuery|
+|BudgetCalculateBalance.getActualLedgerAmountsQuery|
+|BudgetCalculateBalance.getOriginalBudgetQuery|
+|BudgetCalculateBalance.getRevisedBudgetQuery|
 |BudgetSourceCollectionIntegrator.newBudgetSourceCollectionIntegrator|
 |BudgetSourceIntegrator.newBudgetSourceIntegrator|
 |ChequeController.ClassDeclaration|
