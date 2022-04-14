@@ -126,7 +126,7 @@ To run the report, complete the following steps.
 1. Go to **Accounts payable > Inquiries and reports > Payment > Payment order register** or **Accounts receivable > Inquiries > Payment > Payment order register**.
 2. Click **Print > Registry of payment orders**.
 3. Select the **From date** and **To date**.
-4. Define the following filters for payment orders: **Payment order status**, **Curreny code**, **Bank account** and **Electronic payment** remark (All, Electronic, Printout form).
+4. Define the following filters for payment orders: **Payment order status**, **Currency code**, **Bank account** and **Electronic payment** remark (All, Electronic, Printout form).
 5. Click **OK** to generate the report.
 
 

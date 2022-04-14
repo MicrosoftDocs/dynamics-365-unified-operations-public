@@ -1075,7 +1075,7 @@
             - name: Separated dual-write application orchestration package
               href: data-entities/dual-write/separated-solutions.md
             - name: Currency data-type migration for dual-write
-              href: data-entities/dual-write/currrency-decimal-places.md
+              href: data-entities/dual-write/currency-decimal-places.md
             - name: Set up the mapping for the sales order status fields
               href: data-entities/dual-write/sales-status-map.md
             - name: Filter intercompany orders to avoid synchronizing Orders and OrderLines

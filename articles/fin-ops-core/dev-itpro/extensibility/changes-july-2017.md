@@ -604,7 +604,7 @@ The following changes were made to support extending enumerations:
 |TMSTransportTypeFilter|
 |TMSUOM|
 |TMSZoneType|
-|TradeCurencyConversion|
+|TradeCurrencyConversion|
 |TradeLineDlvType|
 |TradeNonStockedConversionChangeType|
 |TradeNonStockedConversionIssue|

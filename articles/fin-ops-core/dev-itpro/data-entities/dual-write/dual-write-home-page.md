@@ -104,7 +104,7 @@ These topics describe mapping between concepts in finance and operations apps an
 + [Dual-write limits for live synchronization](sync-limits.md)
 + [Support for Field Service and Project Service Automation solutions](field-service-project-service-automation.md)
 + [Migrate Prospect to cash data from Data Integrator to dual-write](migrate-prospect-to-cash.md)
-+ [Currency data-type migration for dual-write](currrency-decimal-places.md)
++ [Currency data-type migration for dual-write](currency-decimal-places.md)
 + [Frequently asked questions](dual-write-faq.md)
 
 ## Troubleshooting
