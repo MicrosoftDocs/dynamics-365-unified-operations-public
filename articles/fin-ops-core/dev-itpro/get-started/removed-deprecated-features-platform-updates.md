@@ -4,7 +4,7 @@
 title: Removed or deprecated platform features
 description: This topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
 author: sericks007
-ms.date: 03/08/2022
+ms.date: 04/14/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -40,11 +40,11 @@ Detailed information about objects in Finance and Operations apps can be found i
 
 ## Platform updates for version 10.0.28 of Finance and Operations apps
 
-### XML URl resolution in Data Management 
+### XML URL resolution in Data management 
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | We are removing suport for XML URl resoluition, since this has beeen identified as a potential security vulnerability. This means that external resources associated with XSLT files will no longer be resolved.  |
+| **Reason for deprecation/removal** | We are removing suport for XML URL resolution, since this has beeen identified as a potential security vulnerability. This means that external resources associated with XSLT files will no longer be resolved.  |
 | **Replaced by another feature?**   | No. |
 | **Product areas affected**         | Finance and Operations apps. |
 | **Deployment option**              | All |
