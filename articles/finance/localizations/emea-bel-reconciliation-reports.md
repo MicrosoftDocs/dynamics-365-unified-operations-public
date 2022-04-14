@@ -67,7 +67,7 @@ You can use the **Sales tax transactions re sales** report to retrieve sales tax
 
 To print the **Sales tax transactions re sales** report, go to **Tax** \> **Inquiries and reports** \> **Sales tax reports** \> **Sales tax transactions re sales**.
 
-![Sales tax transactiosn re sales generated report.](media/4_Sales_tax_transactions_re_sales.png)
+![Sales tax transactions re sales generated report.](media/4_Sales_tax_transactions_re_sales.png)
 
 
 ## Sales tax transactions - Belgium
