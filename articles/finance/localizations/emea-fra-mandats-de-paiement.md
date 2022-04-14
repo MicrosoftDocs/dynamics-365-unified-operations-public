@@ -47,7 +47,7 @@ To submit mandats to the accountant for payment, the director collects the print
 -   Print the bordereau from the **Records to include** FastTab on the **Bordereau de mandat report** page.
 
 ## Accountant’s tasks
-The accountant can acceps, reject, or hold mandats from the following locations:
+The accountant can accept, reject, or hold mandats from the following locations:
 
   - The **Maintain mandats de paiement** page
   - The **Pending vendor invoices** page, on the **Mandat de paiement** tab  
