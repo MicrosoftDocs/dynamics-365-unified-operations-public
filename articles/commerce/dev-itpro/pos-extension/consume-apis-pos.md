@@ -27,7 +27,7 @@ This topic explains how to use Proxy to consume custom headless Commerce APIs an
 
 4. Import your data service entities and requests into your extension code, as shown in the following example.
 
-    ```Javascript
+    ```JavaScript
     import * as Triggers from "PosApi/Extend/Triggers/ProductTriggers";
     import { ObjectExtensions } from "PosApi/TypeExtensions";
     import { ClientEntities } from "PosApi/Entities";

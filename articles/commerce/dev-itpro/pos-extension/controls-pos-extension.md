@@ -22,7 +22,7 @@ The **PosApi** library provides a consistent look and feel between the extension
 
 The following example shows how to use the control factory to create a **DataList** control in the **onReady** function of a custom view controller.
 
-```Javascript
+```JavaScript
 public onReady(element: HTMLElement): void {
     // DataList
     let dataListOptions: IDataListOptions<Entities.ExampleEntity> = {

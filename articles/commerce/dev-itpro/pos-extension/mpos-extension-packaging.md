@@ -21,7 +21,7 @@ To create the extension installer for a Modern POS extension, follow these steps
 1. In Microsoft Visual Studio 2017, create a new console application (.NET Core), and name it **ModernPos.Installer**.
 2. Edit the .proj file, and change the target framework to the .NET Framework version 4.6.1, as shown in the following XML.
 
-    ```Javascript
+    ```JavaScript
     <Project Sdk="Microsoft.NET.Sdk">
         <PropertyGroup>
             <OutputType>Exe</OutputType>

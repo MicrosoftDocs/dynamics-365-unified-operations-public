@@ -65,7 +65,7 @@ To configure the "Sign up and sign in" policy, follow these steps.
 1. Double-click the new policy name, and then, in the navigation pane, select **Properties**.
 1. Set the **Enable JavaScript enforcing page layout (preview)** option to **On**.
 
-    ![Properties page for the new policy.](./media/B2C_SignInSignUp_EnableJavascript.png)
+    ![Properties page for the new policy.](./media/B2C_SignInSignUp_EnableJavaScript.png)
 
 > [!NOTE]
 > The policy name will be fully referenced in the Commerce environment. (The **B2C\_1\_** prefix will be included in the reference.) Policies can't be renamed after they are created. If you're replacing an existing policy for your Commerce environment, you can delete the original policy and build a new policy that has the same name. Alternatively, if the environment has already been provisioned, you can submit the new policy name through a service request.
