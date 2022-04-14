@@ -4,7 +4,7 @@
 title: Business continuity and disaster recovery
 description: This topic describes the business continuity and disaster recovery that Microsoft provides for production instances of Microsoft Dynamics 365 SaaS applications if an Azure region-wide outage occurs.
 author: MicroSri
-ms.date: 04/13/2022
+ms.date: 04/14/2022
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
@@ -48,5 +48,18 @@ Microsoft will notify customers and switch back the environments to operate out 
 >
 > Additionally, there might be service degradation of non-production instances. Deployments of new non-production environments might be blocked.
 
-##Responsibilities for Disaster Recovery 
+## Responsibilities for disaster recovery 
+
+The following table describes responsiblities for disaster recovery.
+
+| Microsoft's responsibilities | Customer's responsibilities |
+|------|------|
+| Microsoft enables Geo Redundancy and automatic back up of SQL and Azure Storage at the time of deployment of the primary Production Instance. | None |
+| Microsoft has AOS images available from regional repository to restore compute. We maintain the compute infrastructure to meet RTO. |None |
+|On outage, Microsoft determines within region failover needs to be executed then we don’t need customer consent as there will not be data loss but if a cross region failover needs to be executed for Customer and there could be a data loss up to 5 sec. For details, see Azure SQL Database Geo-Restore here: [Azure SQL Database Geo-Restore](https://azure.microsoft.com/en-in/blog/azure-sql-database-geo-restore/)<br><br>In the event of a data loss, Microsoft will send a request to Customer asking for its sign-off on a failover.  |  |https://azure.microsoft.com/en-in/blog/azure-sql-database-geo-restore/) |  Customer must provide written sign-off to trigger the failover in the event of data loss |
+|When a failover occurs, the applicable service works in limited mode. Update maintenance can't be triggered in failover mode. | Customer can't request package deployments or other regular maintenance requests in failover mode. |
+| Microsoft fails back to the Production Instance in the primary Azure region when the datacenter becomes operational. Normal operations are resumed. Notification will be published to customers, and they may experience brief interruptions or disconnects during this window but will not need to take a full downtime. | None |
+|None | Customers should plan DR for external resources not provisioned by Microsoft. |
+
+
 
