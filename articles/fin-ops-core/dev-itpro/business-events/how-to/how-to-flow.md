@@ -97,7 +97,7 @@ Power Automate can configure the application automatically for you. After you sa
 
 4.  Verify that a new endpoint has been created with a GUID appended in the name.
 
-    <img alt="Microsoft Power Automate buiness event GUID" src="../../media/BEF-Howto-Flow-13.png" width="100%">
+    <img alt="Microsoft Power Automate business event GUID" src="../../media/BEF-Howto-Flow-13.png" width="100%">
 
 5.  If you check the **Active events** tab, you can also verify that "**Payment Posted**" is activated for legal entity GBSI.
 
