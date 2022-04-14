@@ -289,7 +289,7 @@ When an event takes place, the delegates described in the sections above get tri
 | onValidatedWrite                | ValidateEventArgs                |
 | onValidatingDelete              | ValidateEventArgs                |
 | onValidatingField               | ValidateFieldEventArgs           |
-| onValidattingFieldValue         | ValidateFieldValueEventArgs      |
+| onValidatingFieldValue         | ValidateFieldValueEventArgs      |
 | onValidatingWrite               | ValidateEventArgs                |
 
 ## Development tools support
