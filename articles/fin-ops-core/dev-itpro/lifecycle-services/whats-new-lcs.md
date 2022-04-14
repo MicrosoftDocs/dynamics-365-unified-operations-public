@@ -51,7 +51,7 @@ This release contains general performance improvements and minor bug fixes.
 ## May 2020 - wave 1
 | Area | Feature |Status |
 |------|---------|-------|
-| Issue Search improvements | [Lifecycle Services Issue search improvements](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/lifecyle-services-issue-search-improvements) | General availability | 
+| Issue Search improvements | [Lifecycle Services Issue search improvements](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/lifecycle-services-issue-search-improvements) | General availability | 
 
 
 ## April 2020 - wave 2

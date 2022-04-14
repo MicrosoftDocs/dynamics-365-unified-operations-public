@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 This procedure shows how to assign a product lifecycle state to a released product. Prerequisite: You need to play the task guide "Create a new product lifecycle state" first to make sure that at least one product lifecycle state is created before you can play this guide.
 
 
-## Find a released product that you want to assign a product lifcycle state
+## Find a released product that you want to assign a product lifecycle state
 1. Go to Product information management > Products > Released products.
 2. Use the Quick Filter to find records. For example, filter on the Item number field with a value of 'd'.
 3. In the list, click the link in the selected row.

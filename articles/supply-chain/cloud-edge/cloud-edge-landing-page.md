@@ -74,7 +74,7 @@ To onboard to the distributed topology, you must have a license for Supply Chain
 
 #### Your existing project must be administered via the global commercial version of LCS
 
-Your existing Microsoft Dynamics Lifecyle Services (LCS) project must meet the following version requirements:
+Your existing Microsoft Dynamics Lifecycle Services (LCS) project must meet the following version requirements:
 
 - The project must be administered via the global commercial version of LCS at [lcs.dynamics.com](https://lcs.dynamics.com).
 - Local versions of LCS (such as [eu.lcs.dynamics.com](https://eu.lcs.dynamics.com) and [fr.lcs.dynamics.com](https://fr.lcs.dynamics.com)) aren't supported.

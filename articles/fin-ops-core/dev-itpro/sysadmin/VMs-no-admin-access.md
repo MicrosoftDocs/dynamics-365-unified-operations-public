@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 12
 This topic provides answers to frequently asked questions (FAQ) about virtual machines (VMs) that don't allow administrator access. 
 
 ## How can I install a deployable package?
-Whenever possible, use Microsoft Dynamics Lifecyle Services (LCS) to install a deployable package. You can install a deployable package by using the **-devinstall** option. Remember that this option requires manual database synchronization.
+Whenever possible, use Microsoft Dynamics Lifecycle Services (LCS) to install a deployable package. You can install a deployable package by using the **-devinstall** option. Remember that this option requires manual database synchronization.
 
 For more information about how to install a deployable package, see [Install deployable packages from the command line](../deployment/install-deployable-package.md).
 
@@ -109,7 +109,7 @@ LCS does not allow AOT or license deployable packages to be installed on build e
 Entering a product key directly in Visual Studio is not supported. Instead, use Visual Studio subscription licensing and sign in to Visual Studio with the email address (user account) associated with the license. You can link a Visual Studio license to a user account by assigning an MSDN license to the user account or by assigning a license to the user account by using https://www.visualstudio.com/subscriptions-administration.
 
 ## Can I upgrade my database to a new application release?
-As of the February 2018 release of Lifecyle Services (LCS), you can execute the data upgrade package from the LCS environment page of a development environment. Executing the data upgrade package from LCS does not require you to be an administrator on the VM.
+As of the February 2018 release of Lifecycle Services (LCS), you can execute the data upgrade package from the LCS environment page of a development environment. Executing the data upgrade package from LCS does not require you to be an administrator on the VM.
 
 The process described in [Upgrade data in development or demo environments](../migration-upgrade/upgrade-data-to-latest-update.md) runs the data upgrade package from the command line. This requires you to be an administrator on the VM.
 

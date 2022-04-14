@@ -116,7 +116,7 @@ The reason for using types is that when a type is defined on, for example, a wor
 
 The following illustration shows the relation between work order types, lifecycle models, and lifecycle states.
 
-![Work order type page compared to Work order lifectyle models page.](media/11-setup-for-work-orders.png)
+![Work order type page compared to Work order lifecycle models page.](media/11-setup-for-work-orders.png)
 
 ## Work order lifecycle models
 

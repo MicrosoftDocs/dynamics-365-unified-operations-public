@@ -2,7 +2,7 @@
 # required metadata
 
 title: Supported web browsers for Lifecycle Services 
-description: This topic lists the web browsers that are supported for Lifecyle Services.
+description: This topic lists the web browsers that are supported for Lifecycle Services.
 author: laneswenka
 ms.date: 03/29/2022
 ms.topic: article
@@ -19,7 +19,7 @@ ms.search.form:
 
 [!include[banner](../includes/banner.md)]
 
-Users can access Microsoft Dynamics Lifecyle Services (LCS) by using the most recent versions of these popular browsers: 
+Users can access Microsoft Dynamics Lifecycle Services (LCS) by using the most recent versions of these popular browsers: 
 
 - Microsoft Edge (recommended: [Chromium-based Edge](https://support.microsoft.com/microsoft-edge/download-the-new-microsoft-edge-based-on-chromium-0f4a3dd7-55df-60f5-739f-00010dba52cf))
 - Google Chrome
