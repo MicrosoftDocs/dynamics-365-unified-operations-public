@@ -78,7 +78,7 @@ The following illustration shows an example of the summary message box.
 
 For a failed upgrade, you can find more information by selecting the yellow triangular warning symbol next to the test case title. The following illustration shows an example of the message box that appears.
 
-![Warning message box for a failed upgade.](media/upgrade_triangle_error.png)
+![Warning message box for a failed upgrade.](media/upgrade_triangle_error.png)
 
 > [!IMPORTANT]
 > You can run the upgrade repeatedly. In this case, newly upgraded parameter files will be skipped. However, new partial files will overwrite existing partial files. We recommend that you complete all partial files and rename them before you rerun the upgrade.
