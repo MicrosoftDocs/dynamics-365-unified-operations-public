@@ -47,7 +47,7 @@ A **compensation group** is an optional setup component that is used to apply a 
 
 ### Position forecasting processes
 
-[![Illusration of position forecasting processes.](./media/graphic1b.png)](./media/graphic1b.png) 
+[![Illustration of position forecasting processes.](./media/graphic1b.png)](./media/graphic1b.png) 
 
 In a typical process for position forecasting, you first create the setup components (budget cost elements and compensation groups). Forecast positions are then generated, based on existing positions. You can then make adjustments. For example, you can add or end positions, change pay rates and benefit costs, and add wage increases. You can create multiple versions of a forecast position to facilitate comparisons between different budgeting scenarios. Next, you can include the forecast positions in budget plans and bring in the costs from the forecast positions as budget plan lines.
 
