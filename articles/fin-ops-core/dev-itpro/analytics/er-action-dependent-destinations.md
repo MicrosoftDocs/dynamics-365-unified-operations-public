@@ -89,7 +89,7 @@ When an ER format is run, if user actions have been provisioned by users who hav
 
 The following illustration shows an example of the **Electronic reporting format destinations** dialog box that appears when a free text invoice is [posted](../../../finance/accounts-receivable/create-free-text-invoice-new.md) and the **Free text invoice (Excel)** ER format is run to generate this document, if the **Printer** action was provisioned and ER destinations were configured for this format as shown earlier in this topic.
 
-![Dialog box that gives the option to change the initialy configured ER destinations for the running ER format.](./media/er-destination-action-dependent-02.gif)
+![Dialog box that gives the option to change the initially configured ER destinations for the running ER format.](./media/er-destination-action-dependent-02.gif)
 
 > [!NOTE]
 > If you configured ER destinations for several components of the running ER format, an option will be offered separately for every configured component of the ER format.
