@@ -66,7 +66,7 @@ Follow these steps to allocate bank document charges.
 5. On the **List** tab, set the **Account** and **Debit** fields.
 6. On the **Letter of credit/import collection** page, on the Action Pane, select **Bank document** \> **Bank document charge**.
 
-    ![Allocating bank document charges.](media/apac-sau-allocate-bank-docment-charge.PNG)
+    ![Allocating bank document charges.](media/apac-sau-allocate-bank-document-charge.PNG)
 
     The letter of credit or import collection that you created in the purchase order is opened. It should show the bank document charge that was posted in the general journal for this letter of credit or import collection.
 
