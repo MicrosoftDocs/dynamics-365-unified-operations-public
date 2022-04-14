@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: FinanicalReportingSetup 
+ms.search.form: FinancialReportingSetup 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
