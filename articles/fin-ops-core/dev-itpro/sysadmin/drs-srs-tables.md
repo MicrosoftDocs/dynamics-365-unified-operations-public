@@ -448,7 +448,7 @@ Additional Supply Chain Management tables when the (Private Preview) cross-compa
 | WHSInventTable                            | Warehouse item number                          |
 | WHSPhysDimUOM                             | Physical Dimension by Unit                     |
 
-**Dynamcis 365 Project Operations**
+**Dynamics 365 Project Operations**
 
 | **Table object name** | **Table description (Label)** |
 |-----------------------|-------------------------------|
