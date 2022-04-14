@@ -86,7 +86,7 @@ To assign accounts to the lease books and groups that have been created, you mus
 
     > [!NOTE]
     > The selected finance or operating account will be debited when the invoice for the scheduled expense is posted.
-    > **Lease expense offset** will be used as posting type for executory costs transactions but post to defined **Offset account** in the **Execuroty costs payment schedule lines** in lease details or lease book form.   
+    > **Lease expense offset** will be used as posting type for executory costs transactions but post to defined **Offset account** in the **Executory costs payment schedule lines** in lease details or lease book form.   
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
