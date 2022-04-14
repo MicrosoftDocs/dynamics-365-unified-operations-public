@@ -54,7 +54,7 @@ For an overview of the functionality, view the following TechTalk session from S
 
 ## Prerequisites
 
-Configure the Tax Calculation service. For more information, see [Tax Calculation](global-tax-calcuation-service-overview.md).
+Configure the Tax Calculation service. For more information, see [Tax Calculation](global-tax-calculation-service-overview.md).
 
 ### Enable features in the feature management
 

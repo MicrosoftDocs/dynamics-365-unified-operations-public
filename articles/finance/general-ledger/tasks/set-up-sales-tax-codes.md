@@ -48,7 +48,7 @@ This task uses the USMF demo company.
 12. Close the page.
 13. Select **Save**.
 
-As of Microsoft Dynamics 365 Finance version 10.0.22, if you're using the [Tax service](../../localizations/global-tax-calcuation-service-overview.md), and the [**Support multiple VAT registration numbers**](../../localizations/emea-multiple-vat-registration-numbers.md) feature is enabled in the **Feature management** workspace, you can use **Type of tax** field to specify type of the tax code. The following values are available:
+As of Microsoft Dynamics 365 Finance version 10.0.22, if you're using the [Tax service](../../localizations/global-tax-calculation-service-overview.md), and the [**Support multiple VAT registration numbers**](../../localizations/emea-multiple-vat-registration-numbers.md) feature is enabled in the **Feature management** workspace, you can use **Type of tax** field to specify type of the tax code. The following values are available:
 
 - Standard VAT
 - Reduced VAT

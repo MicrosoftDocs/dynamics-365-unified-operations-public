@@ -1515,7 +1515,7 @@
         - name: Tax Calculation
           items:
           - name: Tax Calculation overview
-            href: localizations/global-tax-calcuation-service-overview.md?toc=/dynamics365/finance/toc.json
+            href: localizations/global-tax-calculation-service-overview.md?toc=/dynamics365/finance/toc.json
           - name: Setup
             items:
             - name: Get started with Tax Calculation
@@ -1621,7 +1621,7 @@
             - name: Empty tax feature list in Tax calculation parameters
               href: localizations/tcs-troubleshooting-tax-feature-list-empty-tax-calculation-parameter.md
           - name: Tax Calculation FAQ
-            href: localizations/global-tax-calcuation-service-faq.md?toc=/dynamics365/finance/toc.json              
+            href: localizations/global-tax-calculation-service-faq.md?toc=/dynamics365/finance/toc.json              
       - name: Tax
         items:
         - name: Sales tax
@@ -2735,7 +2735,7 @@
               - name: TDS calculation on invoices
                 items:
                 - name: TDS calculation on invoices
-                  href: localizations/apac-ind-TDS-TDS-calcuation-on-invoice.md
+                  href: localizations/apac-ind-TDS-TDS-calculation-on-invoice.md
                 - name: Calculate TDS on invoices using journals
                   href: localizations/apac-ind-TDS-Calculate-TDS-on-invoices-using-journals.md
                 - name: Calculate TDS invoices using purchase order form and sales order form

@@ -35,7 +35,7 @@ For more information about the SII system of Spain, see the [Immediate Supply of
 
 For more information about how to set up and use the SII feature in Microsoft Dynamics 365 Finance, see [Immediate Supply of Information on VAT (Suministro Inmediato de Información del IVA, SII)](emea-esp-sii.md).
 
-As of Finance version 10.0.22, if you're using the [Tax Calculation](global-tax-calcuation-service-overview.md) service, and the [Support multiple VAT registration numbers](emea-multiple-vat-registration-numbers.md) feature is enabled in the **Feature management** workspace, you can [report the following reports to the SII system of Spain from a legal entity that has a primary address outside Spain](emea-esp-sii.md#multiple-vat):
+As of Finance version 10.0.22, if you're using the [Tax Calculation](global-tax-calculation-service-overview.md) service, and the [Support multiple VAT registration numbers](emea-multiple-vat-registration-numbers.md) feature is enabled in the **Feature management** workspace, you can [report the following reports to the SII system of Spain from a legal entity that has a primary address outside Spain](emea-esp-sii.md#multiple-vat):
 
 - 'Libro de registro de facturas Expedidas': **Record book of issued invoices**
 - 'Libro de registro de facturas Recibidas': **Record book of received invoices**

@@ -128,7 +128,7 @@ The steps in this section aren't related to a specific legal entity. You must co
 5. In the **Type** field, select **Global**.
 6. Select **Open**.
 7. Go to **Tax Data Model**, expand the file tree, and then select **Tax Configuration**.
-8. Select the correct [tax configuration version](global-tax-calcuation-service-overview.md#versions), based on you Finance version, and then select **Import**.
+8. Select the correct [tax configuration version](global-tax-calculation-service-overview.md#versions), based on you Finance version, and then select **Import**.
 9. In the **Globalization features** workspace, select **Features**, select the **Tax Calculation** tile, and then select **Add**.
 10. Select one of the following feature types:
 

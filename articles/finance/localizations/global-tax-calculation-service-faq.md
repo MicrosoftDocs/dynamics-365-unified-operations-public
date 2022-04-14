@@ -64,19 +64,19 @@ Withholding tax isn't currently in the scope of the Tax Calculation service. Wit
 
 ## Will return orders be supported?
 
-Yes, both sales return orders and purchase return orders are supported in version 10.0.21. For the list of supported transaction types, see [Supported transactions](global-tax-calcuation-service-overview.md#supported-transactions).
+Yes, both sales return orders and purchase return orders are supported in version 10.0.21. For the list of supported transaction types, see [Supported transactions](global-tax-calculation-service-overview.md#supported-transactions).
 
 ## Will free text invoices be supported?
 
-Yes, free text invoices will be supported in version 10.0.23. For the list of supported transaction types, see [Supported transactions](global-tax-calcuation-service-overview.md#supported-transactions).
+Yes, free text invoices will be supported in version 10.0.23. For the list of supported transaction types, see [Supported transactions](global-tax-calculation-service-overview.md#supported-transactions).
 
 ## Will the Tax Calculation service support the resource/non-stocked-based and stocked/production-based deployment options for Dynamics 365 Project Operations?
 
-We plan to support these deployment types after the Tax Calculation service has reached General availability. For the list of supported transaction types, see [Supported transactions](global-tax-calcuation-service-overview.md#supported-transactions).
+We plan to support these deployment types after the Tax Calculation service has reached General availability. For the list of supported transaction types, see [Supported transactions](global-tax-calculation-service-overview.md#supported-transactions).
 
 ## Will the Tax Calculation service eventually replace the existing Finance tax engine, or will that tax engine continue to be supported over the longer term?
 
-For now, the existing tax engine will co-exist with the Tax Calculation service. There are currently no plans to retire the existing tax engine. The Tax Calculation service will continue to provide more advanced features. For more information, see [Tax Calculation overview](global-tax-calcuation-service-overview.md).
+For now, the existing tax engine will co-exist with the Tax Calculation service. There are currently no plans to retire the existing tax engine. The Tax Calculation service will continue to provide more advanced features. For more information, see [Tax Calculation overview](global-tax-calculation-service-overview.md).
 
 ## If a transaction is posted with incorrect tax, how can it be corrected?
 
@@ -92,7 +92,7 @@ The Tax calculation feature should be completed and published in RCS. Verify tha
 
 ## Why can't I turn on the Enable tax calculation service parameter?
 
-The **Enable tax calculation service** parameter isn't yet supported in some countries and regions. Make sure that the primary address of the legal entity is in one of the [supported countries/regions](global-tax-calcuation-service-overview.md#supported-countriesregions).
+The **Enable tax calculation service** parameter isn't yet supported in some countries and regions. Make sure that the primary address of the legal entity is in one of the [supported countries/regions](global-tax-calculation-service-overview.md#supported-countriesregions).
 
 ## What should I do if the Feature name field in the Feature management workspace is blank?
 

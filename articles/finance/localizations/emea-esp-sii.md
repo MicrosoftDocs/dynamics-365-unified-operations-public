@@ -44,7 +44,7 @@ Microsoft Dynamics 365 Finance supports the full cycle of processing, including 
 - 'Pagos para facturas registradas en el Libro de registro de Facturas Recibidas': **Payments for invoices registered in the record book of received invoices**
 - 'Cobros en Metálico': **Payments in cash**
 
-As of Finance version 10.0.22, if you're using the [Tax Calculation](global-tax-calcuation-service-overview.md) service, and the [Support multiple VAT registration numbers](emea-multiple-vat-registration-numbers.md) feature is enabled in the **Feature management** workspace, you can [report the following reports to the SII system of Spain from a legal entity that has a primary address outside Spain](#multiple-vat):
+As of Finance version 10.0.22, if you're using the [Tax Calculation](global-tax-calculation-service-overview.md) service, and the [Support multiple VAT registration numbers](emea-multiple-vat-registration-numbers.md) feature is enabled in the **Feature management** workspace, you can [report the following reports to the SII system of Spain from a legal entity that has a primary address outside Spain](#multiple-vat):
 
 - 'Libro de registro de facturas Expedidas': **Record book of issued invoices**
 - 'Libro de registro de facturas Recibidas': **Record book of received invoices**
@@ -209,7 +209,7 @@ Three executable classes are included in the two types of electronic messages pr
    | Vendor payments               | PagosProveedores                   |
    | Intracommunity operations     | OperacionesIntracomunitarias       |
 
-As of Finance version 10.0.22, if you're using the [Tax Calculation](global-tax-calcuation-service-overview.md) service, and the [Support multiple VAT registration numbers](emea-multiple-vat-registration-numbers.md) feature is enabled in the **Feature management** workspace, an additional **Multiple Tax ID parameters** group will be visible in the **Add new electronic message items** dialog box. Set the following values for the parameters in this group.
+As of Finance version 10.0.22, if you're using the [Tax Calculation](global-tax-calculation-service-overview.md) service, and the [Support multiple VAT registration numbers](emea-multiple-vat-registration-numbers.md) feature is enabled in the **Feature management** workspace, an additional **Multiple Tax ID parameters** group will be visible in the **Add new electronic message items** dialog box. Set the following values for the parameters in this group.
 
    | **Parameter name**            | **Value**                          |
    |-------------------------------|------------------------------------|
@@ -222,7 +222,7 @@ As of Finance version 10.0.22, if you're using the [Tax Calculation](global-tax-
    | CUSTOMER INVOICE JOURNAL      | This datasource populates data from the **Customer invoice journal** table as EM items of **FacturasСliente** type for reporting to the SII system of Spain. |
    | VENDOR INVOICE JOURNAL        | This datasource populates data from the **Vendor invoice journal** table as EM items of **FacturasProveedores** type for reporting to the SII system of Spain. |
    | PROJECT INVOICE               | This datasource populates data from the **Project invoice** table as EM items of **FacturasСliente** type for reporting to the SII system of Spain. |
-   | TRANSFER ORDER HISTORY        | This datasource populates data from the **Transfer order history** table as EM items of the **FacturasСliente** and **FacturasProveedores** types for reporting to the SII system of Spain. This datasource is available as of Finance version 10.0.22 if you're using the [Tax Calculation](global-tax-calcuation-service-overview.md) service and the [Support multiple VAT registration numbers](emea-multiple-vat-registration-numbers.md) feature is enabled in the **Feature management** workspace. For more information, see the [Reporting to the SII system of Spain for multiple VAT registrations](#multiple-vat) section later in this topic. |
+   | TRANSFER ORDER HISTORY        | This datasource populates data from the **Transfer order history** table as EM items of the **FacturasСliente** and **FacturasProveedores** types for reporting to the SII system of Spain. This datasource is available as of Finance version 10.0.22 if you're using the [Tax Calculation](global-tax-calculation-service-overview.md) service and the [Support multiple VAT registration numbers](emea-multiple-vat-registration-numbers.md) feature is enabled in the **Feature management** workspace. For more information, see the [Reporting to the SII system of Spain for multiple VAT registrations](#multiple-vat) section later in this topic. |
 
 5.  Select **OK** to initiate the executable class.
 
@@ -618,7 +618,7 @@ To verify that you correctly set up the parameters for the **SIIGenerateItems** 
 
 ## <a name="multiple-vat"></a>Reporting to the SII system of Spain for multiple VAT registrations
 
-As of Finance version 10.0.22, if you're using the [Tax Calculation](global-tax-calcuation-service-overview.md) service, and the [Support multiple VAT registration numbers](emea-multiple-vat-registration-numbers.md) feature is enabled in the **Feature management** workspace, you can report the following reports to the SII system of Spain:
+As of Finance version 10.0.22, if you're using the [Tax Calculation](global-tax-calculation-service-overview.md) service, and the [Support multiple VAT registration numbers](emea-multiple-vat-registration-numbers.md) feature is enabled in the **Feature management** workspace, you can report the following reports to the SII system of Spain:
 
 - 'Libro de registro de facturas Expedidas': **Record book of issued invoices**
 - 'Libro de registro de facturas Recibidas': **Record book of received invoices**
