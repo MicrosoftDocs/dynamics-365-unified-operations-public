@@ -10,7 +10,7 @@ ms.prod:
 ms.technology: 
 
 # optional metadata
-ms.search.form:  WHSPack, WHSOutboundSortTemplate, WHSOutboundSortPositionAssignments, WHSLocationType, WHSLoactionProfile
+ms.search.form:  WHSPack, WHSOutboundSortTemplate, WHSOutboundSortPositionAssignments, WHSLocationType, WHSLocationProfile
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
