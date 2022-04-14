@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 This procedure will set up a transportation constraint to prevent a selected item from being transported through a selected hub. This task would typically be carried out by a Transportation coordinator. You can use this procedure in the USMF demo data company or on your own data.
 
 
-## Create an item constaint
+## Create an item constraint
 1. Go to Constraints.
 2. Click New.
 3. In the Item constraint field, type a value.
