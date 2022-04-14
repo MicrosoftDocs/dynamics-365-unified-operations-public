@@ -117,7 +117,7 @@ Remember that you’re working with the migrated app in this section. The forms 
 8. On the navigation bar, navigate to **Fleet management** &gt; **Vehicles** &gt; **Vehicle Maintenance**. In the **Vehicle Maintenance** form, the **Status** field shows that your rental is awaiting examination by the service department.
 
     > [!div class="mx-imgBorder"]
-    > ![Vehicle mainenance.](media/fmt_vehicle_examination.png)
+    > ![Vehicle maintenance.](media/fmt_vehicle_examination.png)
         
     > [!NOTE]
     > You might need to wait up to two minutes for the batch framework to change the status of the vehicle. On the Action Pane, click **Refresh** periodically to update the view, until you see the status change. Keep in mind that a different person usually handles each step in a workflow; the brief delay introduced by the batch framework is not an issue in a real-world application.

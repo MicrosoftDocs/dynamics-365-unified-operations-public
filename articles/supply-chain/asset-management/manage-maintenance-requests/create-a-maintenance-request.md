@@ -72,7 +72,7 @@ In the details view, you can update various information. Here are some examples:
 - Select a maintenance job type and, if this information is relevant, a related maintenance job variant and a job trade.
 - In the **Latitude** and **Longitude** fields, enter geographic coordinates. Any coordinates that are added to a maintenance request are automatically transferred to a related work order. 
 
-![Update maintance request.](media/04-manage-maintenance-requests.png)
+![Update maintenance request.](media/04-manage-maintenance-requests.png)
 
 > [!NOTE]
 > If you select an asset when you create a maintenance request, you can add one fault to the asset. After the maintenance request has been created, you can add more faults, as you require. To add faults, select **Asset fault** on the **All maintenance requests** page.
