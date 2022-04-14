@@ -79,7 +79,7 @@ The following new features are in preview. For more information about turning fe
 
 | Feature | Details |
 | --- | --- |
-| Email confirmation for benefit enollments | This feature will provide an option to send a confirmation email to employees when they check out from the benefits enrollment experiences in Employee self-service. This feature will be available on February 1st. For more information, see [Configure Benefits management parameters per company](hr-benefits-setup-parameters-per-company.md). |
+| Email confirmation for benefit enrollments | This feature will provide an option to send a confirmation email to employees when they check out from the benefits enrollment experiences in Employee self-service. This feature will be available on February 1st. For more information, see [Configure Benefits management parameters per company](hr-benefits-setup-parameters-per-company.md). |
 | Skills entered by a manager for their employees can be auto-approved by a workflow | Coming soon. |
 
 For a complete list of planned features and their scheduled releases, see [Overview of Dynamics 365 Human Resources 2021 release wave 1](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
