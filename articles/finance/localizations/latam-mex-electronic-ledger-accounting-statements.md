@@ -188,7 +188,7 @@ Click **General ledger** &gt; **Inquire and reports** &gt; **Ledger reports** &g
 
 This task walks through all necessary steps to configure the generation of electronic ledger accounting XML files by using the Electronic Reporting tool. You need to download the higher version of ER model and configurations from LCS shared library-GER configurations.
 
--   Model: Electromic ledger accounting model MX 
+-   Model: Electronic ledger accounting model MX 
 -   Format file: Chart of account XML(MX)
 -   Format file: Trial Balance XML (MX). Monthly Trial Balance
 -   Format file : Journals XML (MX). Journal transactions, together with the related subledger transactions (Comprobante Fiscal Digital a través de Internet \[CFDI\], Comprobante Fiscal Digital \[CFD\], and other operations)

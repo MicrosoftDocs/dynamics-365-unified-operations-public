@@ -29,7 +29,7 @@ ms.dyn365.ops.version:
 [!include[banner](../includes/banner.md)]
 
 This topic is a deployment guide that shows how to enable the Dynamics 365 Commerce localization for Austria. The localization consists of several extensions of Commerce components. For example, the extensions let you print custom fields on receipts, register additional audit events, includes samples of the integration with the EFSTA System and
-Electronical Fiscal Register Software. For more information about the localization for Austria, see [Fiscal registration service integration sample for Austria](./emea-aut-fi-sample.md).
+Electronic Fiscal Register Software. For more information about the localization for Austria, see [Fiscal registration service integration sample for Austria](./emea-aut-fi-sample.md).
 
 Integration samples were developed based on the fiscal integration framework. For details about the fiscal integration functionality, see [Overview of fiscal integration for Commerce channels](fiscal-integration-for-retail-channel.md), these samples are part of the Retail software development kit (SDK). For information about how to install and use the SDK, see the [Retail software development kit (SDK) architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 

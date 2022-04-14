@@ -88,7 +88,7 @@ Note that "OB declaration" stands for "Omzetbelasting declaration" where Omzetbe
 8. Set the **Company part of fiscal group** option to **Yes** if this setting is appropriate, and then, in the **Fiscal group** field, select name of the fiscal group. The fiscal groups should already have been created on the **Tax exempt numbers** page.
 9. In the **Format mapping** field, select the **OB declaration (NL)** format that you downloaded earlier.
 
-    ![Eelectronic tax declaration parameters page, General tab.](media/1_Electronic_tax_declaration_parameters.png)
+    ![Electronic tax declaration parameters page, General tab.](media/1_Electronic_tax_declaration_parameters.png)
 
 10. On the **Number sequences** tab, in the **Number sequence code** field, select a number sequence code for the **Electronic OB declaration ID** reference to set the numbering of OB declarations.
 
