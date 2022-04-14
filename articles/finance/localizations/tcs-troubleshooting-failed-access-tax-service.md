@@ -28,7 +28,6 @@ ms.dyn365.ops.version: Version 10.0.21
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 This topic explains how to fix the "Failed to access tax service" error of the Tax Calculation service.
 
