@@ -697,15 +697,14 @@ Starting with version **128.60.76** of the **VAT Invoices (PL)** ER, the improve
 	> [!NOTE]
 	> When you turn on or turn off the **(Poland) SAF VAT invoices (JPK_FA) report improvement** feature, the ER format setup in the **SAF VAT invoices** field on the **General Ledger parameters** page will be cleaned up. Make sure you fill in the **SAF VAT invoices** field in **General Ledger parameters** before you run the **SAF VAT invoices** report. When you enable the **(Poland) SAF VAT invoices (JPK_FA) report improvement** feature, import and use version 128.60.76 of the **VAT Invoices (PL)** ER format.
 	
-2. Import the following into your Electronic reporting workspace:
-	- **VAT Invoices (PL)** ER format: Version **128.60.76** or higher 
-	- **Standard Audit File model mapping**: Version **128.255** or higher
+2. Import the latest versions of the following ER configurations into your Electronic reporting workspace:
+	- **VAT Invoices (PL)** ER format 
+	- **Standard Audit File model mapping**
 	
 3. Go to **General ledger** > **Ledger setup** > **General ledger parameters**.
 4. On the **Standard Audit File for Tax (SAT-T)** tab, in the **SAF VAT invoices** field, select the ER format, **VAT Invoices (PL)**. 
 	
 When the **(Poland) SAF VAT invoices (JPK_FA) report improvement** feature is enabled, you will see the **VAT Invoices (PL)** ER format in the list only if you previously imported version 128.60.76 or higher from the Global repository.
-
 
 ### Configure the ER model and format for the report
 
@@ -715,7 +714,7 @@ To review or change the configuration for the SAF VAT sales and purchase registe
 - [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 - [Localization requirements - Create an ER configuration](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md)
 
-Initially, the configuration is an example of the VAT register based on the reporting codes described in table above. If you need to adopt the configuration to another set of reporting codes, use the configuration to derive the format. 
+Initially, the configuration is an example of the VAT Invoices report (JPK_FA) based on the reporting codes described in table above. If you need to adopt the configuration to another set of reporting codes, use the configuration to derive the format. 
 
 1. Select the format in the configuration's tree and then, in the **Main menu**, select **Create configuration**. 
 2. Mark **Derive from name:...**, enter the name and description of the new format and then select **Create configuration**. The created format is a copy of the parent format. 
@@ -729,10 +728,10 @@ Initially, the configuration is an example of the VAT register based on the repo
 
 ### Configure Application-specific parameters for the format of the report
 
-To correctly report some of the important tags in the report, define the application-specific parameters (for versions of the **VAT Invoices (PL)** format starting from 48.36.58). 
+To correctly report some of the important tags in the report, define the application-specific parameters. 
 
 1. Open **Configurations** \> **Application specific parameters**, and then, on the Action Pane, select **Setup**.
-2. Select the version of the format that you're going to use (for example, **48.36.58**), and then set up the values for each lookup in the list on the right.
+2. Select the version of the format that you're going to use, and then set up the values for each lookup in the list on the right.
 
     | Name            | Short description (English) | Short description (Polish) | Description (English) | Description (Polish) |
     |-----------------|-----------------------|-----------------------|-----------------|-----------------|
@@ -829,9 +828,7 @@ According to the requirements of version 3 of the **JPK_FA** report, when an inv
 
 #### <P_18A> tag
 
-KB #4339927 ("A country-specific update for Poland for Split payments in Dynamics 365 for Finance and Operations apps") introduces the setup of methods of payments as split payments in the **Accounts receivable** module.
-
-According to the requirements of version 3 of the **JPK_FA** report, the **<P_18A>** tag for an invoice must be reported as **True** when the split payment mechanism is applied for that invoice. To determine whether the split payment mechanism was applied to the invoice, the system checks the **Split payment** parameter of the method of payment that was used during invoice posting. The parameter is reflected in the corresponding customer transaction in the CustTrans table. Keep the setup of the **Split payment** parameter for the methods of payment stable to ensure correct reporting.
+According to the requirements of the **JPK_FA** report, the **<P_18A>** tag for an invoice must be reported as **True** when the split payment mechanism is applied for that invoice on mandatory basis. To determine whether the split payment mechanism was applied to the invoice, the system checks the **Split payment** and **Voluntary split payment** properties of the customers transactions posted (CustTrans table). Those customers transactions for which the **Split payment** is applied but **Voluntary split payment** property is false will be reported with **True** value in **<P_18A>** tag of the report. Find more information about **Split payment** and **Voluntary split payment** in [KB4584165](https://support.microsoft.com/en-us/topic/a-country-specific-update-for-poland-to-support-split-payments-automation-0441375f-8b0e-24f7-370e-f8dc5d0760ec).
 
 #### <P_22> tag
 
