@@ -43,7 +43,7 @@ Factures that an agent reissues have these characteristics:
 
 The following illustration shows the business process for registering intermediary deals. Rectangular elements are reflected in the system. Oval elements are present in the business process but aren't reflected in the system.
 
-![Purchases on comission business process flow.](media/Purchases_on_commission_english.jpg)
+![Purchases on commission business process flow.](media/Purchases_on_commission_english.jpg)
 
 ## Create a sales agreement for a purchase by an agent
 
