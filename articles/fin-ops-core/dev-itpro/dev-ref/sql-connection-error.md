@@ -8,7 +8,7 @@ ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2018-10-01
-ms.dyn365.ops.version: Plaform update 21
+ms.dyn365.ops.version: Platform update 21
 
 ---
 
