@@ -98,7 +98,7 @@ POS extension development using ModernPos.sln, CloudPos.sln, POS.Extension.cspro
 | **Replaced by another feature?**   | [POS-independent packaging SDK](../dev-itpro/pos-extension/pos-extension-getting-started.md) |
 | **Product areas affected**         | Dynamics 365 Commerce POS extension and deployment |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: As of release 10.0.21, support for combined POS packages and extension model using the ModernPos.Sln, CloudPOs.sln, and POS.Extensons.csproj in Retail SDK will be removed in April 2023. |
+| **Status**                         | Deprecated: As of release 10.0.21, support for combined POS packages and extension model using the ModernPos.Sln, CloudPOs.sln, and POS.Extensions.csproj in Retail SDK will be removed in April 2023. |
 
 ## Features removed or deprecated in the Commerce 10.0.17 release
 
