@@ -154,7 +154,7 @@ namespace Contoso
 
                 if (salesTransaction.LoyaltyRewardPointLines != null)
                 {
-                    decimal totalReedeemedPoints = 0m;
+                    decimal totalRedeemedPoints = 0m;
                     decimal extraEarnedPoints = 0m;
                     
                     // Find the redeemed reward lines in the transaction and calculate the total redeemed reward points
@@ -163,12 +163,12 @@ namespace Contoso
                     {
                         foreach (var rewardPointLine in redeemLoyaltyRewardPointLines)
                         {
-                            totalReedeemedPoints += rewardPointLine.RewardPointAmountQuantity;
+                            totalRedeemedPoints += rewardPointLine.RewardPointAmountQuantity;
                         }
                         // Calculate the number of extra earned points for every redeemed point.
                         // If the earning rules stated that for every $1 spent, the user earns X points and redemption rule was that Y points equal $1 then, for every redemption point the user earns X/Y extra earn points.
                         // Based on the above logic, in this sample, for every redeemed point the user earns .1/1 = .1 extra earned points.
-                        extraEarnedPoints = .1m * totalReedeemedPoints; 
+                        extraEarnedPoints = .1m * totalRedeemedPoints; 
                     }
                     // Reduce the amount of earned points by the extraEarnedPoints calculated above.
                     IEnumerable<LoyaltyRewardPointLine> earnLoyaltyRewardPointLines = salesTransaction.LoyaltyRewardPointLines.Where<LoyaltyRewardPointLine>(line => line.EntryType == LoyaltyRewardPointEntryType.Earn);
