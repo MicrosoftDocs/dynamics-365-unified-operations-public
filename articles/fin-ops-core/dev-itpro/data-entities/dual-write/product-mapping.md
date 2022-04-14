@@ -59,7 +59,7 @@ Finance and Operations apps | Other Dynamics 365 apps | Description
 [Released products V2](mapping-reference.md#189) | msdyn\_sharedproductdetails | The **msdyn\_sharedproductdetails** table contains the columns from Finance and Operations apps that define the product, and that contain the product's financial and management information.
 [Sizes](mapping-reference.md#174) | msdyn\_productsizes
 [Storage dimension groups](mapping-reference.md#177) | msdyn_productstoragedimensiongroups | The product storage dimension group represents the method used to define the placement the product in the warehouse.
-[Styles](mapping-reference.md#178) | msdyn\_productsytles
+[Styles](mapping-reference.md#178) | msdyn\_productstyles
 [Tracking dimension groups](mapping-reference.md#179) | msdyn_producttrackingdimensiongroups | The product tracking dimension group represents the method used to track the product in inventory.
 [Units](mapping-reference.md#219) | uoms
 [Unit conversions](mapping-reference.md#199) | msdyn_ unitofmeasureconversions
@@ -104,7 +104,7 @@ Finance and operations apps | Customer engagement apps |
 ---|---
 [Colors](mapping-reference.md#170) | msdyn\_productcolors
 [Sizes](mapping-reference.md#174) | msdyn\_productsizes
-[Styles](mapping-reference.md#178) | msdyn\_productsytles
+[Styles](mapping-reference.md#178) | msdyn\_productstyles
 [Configurations](mapping-reference.md#171) | msdyn\_productconfigurations
 
 When a product has different product dimensions (for example, a product master has Size and Color as product dimensions), each distinct product (that is, each product variant) is defined as a combination of those product dimensions. For example, product number B0001 is an extra-small black T-shirt, and product number B0002 is a small black T-shirt. In this case, the existing combinations of product dimensions are defined. For example, the T-shirt from the preceding example can be extra-small and black, small and black, medium and black, or large and black, but it can't be extra-large and black. In other words, the product dimensions that a product master can take are specified, and variants can be released based on these values.
