@@ -57,7 +57,7 @@ Physical name: mshr_essleavetypeentity.
 **Request**
 
 ```http
-GET [Organizaton URI]/api/data/v9.1/mshr_essleavetypeentities?$filter=mshr_leavetypeid eq 'PTO'
+GET [Organization URI]/api/data/v9.1/mshr_essleavetypeentities?$filter=mshr_leavetypeid eq 'PTO'
 ```
 
 **Response**

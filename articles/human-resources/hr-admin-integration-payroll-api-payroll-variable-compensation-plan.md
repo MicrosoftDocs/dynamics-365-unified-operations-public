@@ -68,7 +68,7 @@ Physical name: mshr_payrollvariablecompensationawardentity.
 **Request**
 
 ```http
-GET [Organizaton URI]/api/data/v9.1/mshr_payrollvariablecompensationawardentities?$filter=mshr_personnelnumber eq '000046'
+GET [Organization URI]/api/data/v9.1/mshr_payrollvariablecompensationawardentities?$filter=mshr_personnelnumber eq '000046'
 ```
 
 **Response**

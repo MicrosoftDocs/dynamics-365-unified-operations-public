@@ -76,7 +76,7 @@ This entity provides information about the employee. You must set the [payroll i
 **Request**
 
 ```http
-GET [Organizaton URI]/api/data/v9.1/mshr_payrollemployeeentities?$filter=mshr_personnelnumber eq '000041'
+GET [Organization URI]/api/data/v9.1/mshr_payrollemployeeentities?$filter=mshr_personnelnumber eq '000041'
 ```
 
 **Response**

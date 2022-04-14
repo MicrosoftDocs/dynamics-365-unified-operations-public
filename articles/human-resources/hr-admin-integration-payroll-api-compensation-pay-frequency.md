@@ -58,7 +58,7 @@ This entity provides information about the pay rate conversion for a given compe
 **Request**
 
 ```http
-GET [Organizaton URI]/api/data/v9.1/mshr_hcmpayrateconversionentities?$filter=mshr_payrateconversion eq 'Annual' and mshr_dataareaid eq 'usmf'
+GET [Organization URI]/api/data/v9.1/mshr_hcmpayrateconversionentities?$filter=mshr_payrateconversion eq 'Annual' and mshr_dataareaid eq 'usmf'
 ```
 
 **Response**

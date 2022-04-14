@@ -63,7 +63,7 @@ Physical name: mshr_payrollpositionjobentity.
 **Request**
 
 ```http
-GET [Organizaton URI]/api/data/v9.1/mshr_payrollpositionjobentities?$filter=mshr_positionid eq '000276'
+GET [Organization URI]/api/data/v9.1/mshr_payrollpositionjobentities?$filter=mshr_positionid eq '000276'
 ```
 
 **Response**

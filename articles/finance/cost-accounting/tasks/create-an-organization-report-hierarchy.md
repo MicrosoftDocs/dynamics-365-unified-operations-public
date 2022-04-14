@@ -34,7 +34,7 @@ Use this procedure to create a report hierarchy for organization reporting. The 
 3. In the HierarchyTypeComboBox field, select 'Dimension classification hierarchy'.
     * Select Dimension classification hierarchy. The Dimension classification hierarchy type is used to define rules and for reporting purposes. It supports all dimensions, such as cost objects, cost elements, and statistical dimensions.  
 4. Click Create.
-5. In the Dimension hierarchy name field, type 'Oganization USP2'.
+5. In the Dimension hierarchy name field, type 'Organization USP2'.
 6. In the Dimension field, enter or select a value.
     * Select Cost centers.  
 7. Click Save.
@@ -53,7 +53,7 @@ Use this procedure to create a report hierarchy for organization reporting. The 
 20. In the From dimension member field, enter or select a value.
     * Select the dimension member that corresponds to the node.  
 21. Click Save.
-22. In the tree, select 'Oganization USP2\CEO\CEO cost centers'.
+22. In the tree, select 'Organization USP2\CEO\CEO cost centers'.
 23. Click New.
 24. In the Node name field, type 'Region West'.
 25. Click Save.
@@ -62,7 +62,7 @@ Use this procedure to create a report hierarchy for organization reporting. The 
 28. In the From dimension member field, enter or select a value.
     * Select the dimension member that corresponds to the node.  
 29. Click Save.
-30. In the tree, select 'Oganization USP2\CEO'.
+30. In the tree, select 'Organization USP2\CEO'.
 31. Click New.
 32. In the Node name field, type 'CFO cost centers'.
 33. Click Save.
@@ -84,7 +84,7 @@ Use this procedure to create a report hierarchy for organization reporting. The 
 48. In the From dimension member field, enter or select a value.
     * Select the dimension member that corresponds to the node.  
 49. Click Save.
-50. In the tree, select 'Oganization USP2\CEO'.
+50. In the tree, select 'Organization USP2\CEO'.
 51. In the Node name field, type 'CIO cost centers'.
 52. Click Save.
 53. Click New.

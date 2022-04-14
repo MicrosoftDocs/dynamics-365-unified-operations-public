@@ -66,7 +66,7 @@ This entity provides information about the name history for a given person.
 **Request**
 
 ```http
-GET [Organizaton URI]/api/data/v9.1/mshr_dirpersonnamehistoricalentities?$filter=mshr_partynumber eq 'HR000001606'
+GET [Organization URI]/api/data/v9.1/mshr_dirpersonnamehistoricalentities?$filter=mshr_partynumber eq 'HR000001606'
 ```
 
 **Response**

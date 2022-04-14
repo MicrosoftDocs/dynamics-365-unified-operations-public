@@ -60,7 +60,7 @@ Physical name: mshr_essleavebalanceentities.
 **Request**
 
 ```http
-GET [Organizaton URI]/api/data/v9.1/mshr_essleavebalanceentities?$filter=mshr_personnelnumber eq '000013'
+GET [Organization URI]/api/data/v9.1/mshr_essleavebalanceentities?$filter=mshr_personnelnumber eq '000013'
 ```
 
 **Response**

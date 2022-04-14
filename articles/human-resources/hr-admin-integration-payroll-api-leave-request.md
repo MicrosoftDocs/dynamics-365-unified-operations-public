@@ -62,7 +62,7 @@ Physical name: mshr_essleaverequestentity.
 **Request**
 
 ```http
-GET [Organizaton URI]/api/data/v9.1/mshr_essleaverequestentities?$filter=mshr_personnelnumber eq '000020'
+GET [Organization URI]/api/data/v9.1/mshr_essleaverequestentities?$filter=mshr_personnelnumber eq '000020'
 ```
 
 **Response**

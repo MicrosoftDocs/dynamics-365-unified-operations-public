@@ -34,7 +34,7 @@ Use this OData function to generate the entities needed for payroll integration.
 **Request**
 
 ```http
-GET [Organizaton URI]/api/data/v9.1/RefreshHumanResourcesVirtualEntities
+GET [Organization URI]/api/data/v9.1/RefreshHumanResourcesVirtualEntities
 ```
 
 **body**
@@ -60,7 +60,7 @@ Use this API to retrieve a list of the entities that have been successfully gene
 **Request**
 
 ```http
-GET [Organizaton URI]/api/data/v9.1/mshr_hrvirtualentitycatalogs?$filter=mshr_hasbeengenerated eq true
+GET [Organization URI]/api/data/v9.1/mshr_hrvirtualentitycatalogs?$filter=mshr_hasbeengenerated eq true
 ```
 
 **Response**
