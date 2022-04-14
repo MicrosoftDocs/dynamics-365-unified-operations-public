@@ -86,7 +86,7 @@ If you must modify a page that you own, interfaces are the most appropriate cust
 
 ### Modifying the Open in Office menu through extensions and event subscriptions
 
-If you must modify a page that you don't own, you should avoid using interfaces, because that approach will require over-layering. Instead, you should do the customization through extensions and event subscriptions. To use this approach, implement an extension class that subscribes to the **OnIntializing** event of the page that you're customizing. From this event handler, get the **OfficeFormRunHelper** for the page, and subscribe to its **OfficeMenuInitializing** event. The following example shows sample code for this approach.
+If you must modify a page that you don't own, you should avoid using interfaces, because that approach will require over-layering. Instead, you should do the customization through extensions and event subscriptions. To use this approach, implement an extension class that subscribes to the **OnInitializing** event of the page that you're customizing. From this event handler, get the **OfficeFormRunHelper** for the page, and subscribe to its **OfficeMenuInitializing** event. The following example shows sample code for this approach.
 
 ```xpp
 public static class MyForm_Extension
