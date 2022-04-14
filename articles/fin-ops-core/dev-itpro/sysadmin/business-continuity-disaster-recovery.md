@@ -45,6 +45,10 @@ The applicable service will be operated in limited mode on failover. Update main
 
 Microsoft will notify customers and switch back the environments to operate out of the primary region when it determines that the primary region is back online and is fully operational. Users connected to the systems will experience a brief interruption of up to a few minutes and batch service can be unavailable for up to 25 minutes. The service, including all non-production instances, will be fully restored. There will be no data loss during the failback process.  
 
+While the environment is operating out of the secondary region, the Finance and Operations app environment will have reduced functionality. Financial Reporting and Power BI reporting won't be available. If Financial Reporting is critical for a customer during the disaster, the customer can request restoration of the service to Microsoft through a support ticket.
+
+Additionally, there might be service degradation of non-production instances. Deployments of new non-production environments might be blocked.
+
 ## Responsibilities for disaster recovery 
 
 The following table describes responsiblities for disaster recovery.
