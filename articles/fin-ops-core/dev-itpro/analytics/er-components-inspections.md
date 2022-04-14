@@ -474,7 +474,7 @@ The following steps show how this issue might occur.
 11. Change the expression of the **Vendor.FilteredTrans** data source from `FILTER(Trans, Trans.AccountNum=Vendor.AccountNum)` to `WHERE(Trans, Trans.AccountNum=Vendor.AccountNum)`.
 12. Select **Validate** to inspect the editable model mapping component on the **Model mapping designer** page and verify that the configured **JoinedList** data source can be queried.
 
-    ![Validating the editable model mapping componenent and verifying that the JoinedList data source can be queried on the Model mapping designer page.](./media/er-components-inspections-06b.png)
+    ![Validating the editable model mapping component and verifying that the JoinedList data source can be queried on the Model mapping designer page.](./media/er-components-inspections-06b.png)
 
 13. Notice that a validation error occurs, because the expression of the **Vendor.FilteredTrans** data source can't be translated to the direct SQL call. Additionally, the direct SQL call doesn't allow the call for the **JoinedList** data source to be translated to the direct SQL statement.
 
