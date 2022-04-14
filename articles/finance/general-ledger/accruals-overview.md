@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: LedgerAccuralTable
+ms.search.form: LedgerAccrualTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

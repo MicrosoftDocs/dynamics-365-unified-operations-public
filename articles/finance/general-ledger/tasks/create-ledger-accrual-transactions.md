@@ -41,7 +41,7 @@ This task guide steps through generating ledger accrual transactions that are ba
 9. Click Functions.
 10. Click Ledger accruals.
 11. In the Accrual identification field, click the drop-down button to open the lookup.
-12. In the list, find and select the accural scheme you want to apply.
+12. In the list, find and select the accrual scheme you want to apply.
 13. In the list, click the link in the selected row.
 14. In the Start date field, enter a date.
 15. Click Transactions.
