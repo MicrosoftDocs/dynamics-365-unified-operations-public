@@ -56,7 +56,7 @@ In the non-linear depreciation method, the accrued monthly depreciation for the 
 In addition, when an asset's net book value (remaider) reaches 20 percent of its original value, the residual value (net book value) is used as the base value for additional depreciation calculations for the fixed asset. The monthly depreciation amount is calculated by dividing the fixed asset's net book value by the number of months that remain until the end of its service life.
 
 > [!NOTE] 
-> **Non-lilear method** may be used for a individual fixed asset or for a fixed asset group (**[Non-linear tax accounting depreciation methods](rus-depreciation-methods.md#non-linear-tax-accounting-group-depreciation-method)**) in the tax accounting.
+> **Non-linear method** may be used for a individual fixed asset or for a fixed asset group (**[Non-linear tax accounting depreciation methods](rus-depreciation-methods.md#non-linear-tax-accounting-group-depreciation-method)**) in the tax accounting.
 
 For additional information about the depreciation methods implemented in application, see the following section.  
 
