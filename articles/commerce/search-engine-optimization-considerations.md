@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic covers earch engine optimization (SEO) considerations for your site from development to production.
+This topic covers search engine optimization (SEO) considerations for your site from development to production.
 
 ## A site that is under development
 

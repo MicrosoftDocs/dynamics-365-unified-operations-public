@@ -431,7 +431,7 @@ To implement this scenario, you must complete these steps.
         //"CustomColumnExtensions",
         //"EODSample",
         //"ProdDetailsCustomColumnExtensions",
-        //"SerachExtension",
+        //"SearchExtension",
         //"SuspendReceiptSample"
     ],
 	```
