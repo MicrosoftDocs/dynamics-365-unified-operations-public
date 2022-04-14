@@ -158,7 +158,7 @@ For example, the **Active employees** rule above is made up of the following cri
 
 Rules can be further expanded to use multiple conditions within a single criterion. The employee must meet at least one condition to be eligible. To build on the example above, the **Active employees** rule can be further expanded to include employees that are also part-time employees. As a result, now the employee must be an employee in USMF *and* either a full-time or a part-time employee.  
 
-![Multiple conditons within criteria.](media/MultipleConditionsWithinCriteria.png) 
+![Multiple conditions within criteria.](media/MultipleConditionsWithinCriteria.png) 
  
 ### Eligibility conditions within a custom field criterion 
 Similar to above, custom fields can be used when creating eligibility rules and work in the same manner. For example, you may want to offer internet reimbursement to the Fargo and Copenhagen employees who are working from home, as the internet costs are higher in those locations. To do this, create two custom fields: **Office location** (picklist) and **Working from home** (check box). Then create a rule called **WFH Employees**. The criterion for the rule is where **Office Location = Fargo** or **Copenhagen** *and*  where **Working from home = Yes**.
