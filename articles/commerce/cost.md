@@ -127,7 +127,7 @@ You must set up the following fields for this combination:
 
 ### Other cost component type
 
-This section explains how to set up each combination of the **Other** cost component type and an other cost type for non-shipping costs. It also explains how the DOM solver uses each combination.
+This section explains how to set up each combination of the **Other** cost component type and another cost type for non-shipping costs. It also explains how the DOM solver uses each combination.
 
 #### Cost component type = Other and Other cost type = Sales order
 
