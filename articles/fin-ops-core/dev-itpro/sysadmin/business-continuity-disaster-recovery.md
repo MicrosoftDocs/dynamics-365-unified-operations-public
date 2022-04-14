@@ -49,6 +49,11 @@ While the environment is operating out of the secondary region, the Finance and 
 
 Additionally, there might be service degradation of non-production instances. Deployments of new non-production environments might be blocked.
 
+> [!IMPORTANT]
+> While the environment is operating out of the secondary region, the Finance and Operations app environment will have reduced functionality. Financial Reporting and Power BI reporting won't be available. If Financial Reporting is critical for a customer during the disaster, the customer can request restoration of the service to Microsoft through a support ticket.
+>
+> Additionally, there might be service degradation of non-production instances. Deployments of new non-production environments might be blocked.
+
 ## Responsibilities for disaster recovery 
 
 The following table describes responsiblities for disaster recovery.
