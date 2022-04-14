@@ -117,7 +117,7 @@ However, if the invoice expenses are included in the order line that corresponds
 To reverse a disposal transaction, create a credit note for the sales order or free text invoice related to the fixed asset, and then post the invoice.
 
 ## Reverse write-off and disposal transactions
-By default, when you reverse a trnasaction, the reversal date is equal to the original transaction date. However, you can specify a different reversal date. 
+By default, when you reverse a transaction, the reversal date is equal to the original transaction date. However, you can specify a different reversal date. 
 
 1.	Go to **Fixed assets (Russia)** > **Fixed assets**, and on the Action Pane, select **Value models**.
 2.	On the **FA value models** page, on the Action Pane, select **Transactions**.

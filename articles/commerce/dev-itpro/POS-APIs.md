@@ -132,7 +132,7 @@ currentCart = getCurrentCartClientResponse.data.result;
 
 **Force void transaction**
 ```typescript
- // Force void tarnsaction.
+ // Force void transaction.
  let forceVoidTransactionRequest: VoidTransactionOperationRequest<VoidTransactionOperationResponse> =
 
  new VoidTransactionOperationRequest<VoidTransactionOperationResponse>(false, this.context.logger.getNewCorrelationId());
