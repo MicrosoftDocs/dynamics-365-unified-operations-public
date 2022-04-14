@@ -47,7 +47,7 @@ The following list shows some of the tables are filled in the Entity store when 
 - LedgerActivityMeasure\_LedgerActivityMeasureGroup
 - LedgerActivityMeasure\_TransactionDate
 - LedgerActivityMeasure\_Currency
-- LedgerActivityMeasure\_FiscalPeriodDateAggregtateDimension
+- LedgerActivityMeasure\_FiscalPeriodDateAggregateDimension
 - LedgerActivityMeasure\_LedgerFactDimension
 - LedgerActivityMeasure\_FiscalYearOffsetDimension
 - LedgerActivityMeasure\_MainAccount
@@ -95,7 +95,7 @@ In this example, we will use Power BI desktop to create a report that uses the L
 2. Select the following tables:
 
     - LedgerActivityMeasure\_LedgerActivityMeasureGroup
-    - LedgerActivityMeasure\_FiscalPeriodDateAggregtateDimension
+    - LedgerActivityMeasure\_FiscalPeriodDateAggregateDimension
     - LedgerActivityMeasure\_DimensionCombination
 
 3. Use the **Manage relationships** option in Power BI desktop to define the following relationships between table fields:
