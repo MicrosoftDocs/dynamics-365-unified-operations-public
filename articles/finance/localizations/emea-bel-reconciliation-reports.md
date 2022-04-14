@@ -57,7 +57,7 @@ Use the **Sales tax transactions - Details - Belgium** report to view and print 
 
 To print the **Sales tax transactions - Details - Belgium** report, go to **Tax** \> **Inquiries and reports** \> **Sales tax reports** \> **Sales tax transactions - Details - Belgium**.
 
-![Sales tax transactions details Belguim generated report.](media/3_Sales_tax_transactions_details.png)
+![Sales tax transactions details Belgium generated report.](media/3_Sales_tax_transactions_details.png)
 
 ## Sales tax transactions re sales
 You can use the **Sales tax transactions re sales** report to retrieve sales tax transaction resale information that is specific to Belgium. This information includes relevant details such as the journal, voucher, date, customer account, name, amount, and sales tax reporting codes. This report is created-by tax exempt number, enterprise number, and period. Account managers and bookkeepers generate this report periodically or as it's required.
