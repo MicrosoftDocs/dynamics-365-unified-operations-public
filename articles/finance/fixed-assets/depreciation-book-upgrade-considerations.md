@@ -46,7 +46,7 @@ Option 1:  **System-defined number sequence** - This is the default option to op
     -   Constant name: **NumberSequenceDefaultParameterPrefix**
     -   Default value: "FADBUpgr"
 -   **Alphanumeric length** – The length of the alphanumeric segment of the number sequence.
-    -   Constant name: **NumberSequenceDefaultParameterAlpanumericLength**
+    -   Constant name: **NumberSequenceDefaultParameterAlphanumericLength**
     -   Default value: 9
 -   **Start number** - The first number to be used in the number sequence.
     -   Constant name: **NumberSequenceDefaultParameterStartNumber**
@@ -71,7 +71,7 @@ The parameters are located at the beginning of the ReleaseUpdateDB70\_FixedAsset
 *// A new number sequence will be created with these parameters.* 
 const str NumberSequenceDefaultCode = 'FADBUpgr'; 
 const str NumberSequenceDefaultParameterPrefix = 'FADBUpgr'; 
-const int NumberSequenceDefaultParameterAlpanumericLength = 9; 
+const int NumberSequenceDefaultParameterAlphanumericLength = 9; 
 const int NumberSequenceDefaultParameterStartNumber = 1;   
 
 *// If using the existing number sequence approach, specify the existing number sequence code.* 
