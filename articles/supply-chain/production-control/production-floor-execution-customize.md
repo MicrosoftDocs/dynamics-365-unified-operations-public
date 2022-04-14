@@ -100,13 +100,13 @@ The following example shows how to add numeric keypads to a form.
     public void initializeNumpadController()
     {
         numpadController1 = new JmgProductionFloorExecutionNumpadController();
-        numpadController1.getValueFromNumpadDelegate += eventhandler(this.setQuanityValueFromNumpad_1);
+        numpadController1.getValueFromNumpadDelegate += eventhandler(this.setQuantityValueFromNumpad_1);
         QuantityNumpad1.getPartFormRun().setNumpadController(numpadController1);
     
         numpadController2 = new JmgProductionFloorExecutionNumpadController();
         numpadController2.parmNumpadEnabled(false);
         numpadController2.parmNumpadValue(333.56);
-        numpadController2.getValueFromNumpadDelegate += eventhandler(this.setQuanityValueFromNumpad_2);
+        numpadController2.getValueFromNumpadDelegate += eventhandler(this.setQuantityValueFromNumpad_2);
         QuantityNumpad2.getPartFormRun().setNumpadController(numpadController2);
     }
     ```
