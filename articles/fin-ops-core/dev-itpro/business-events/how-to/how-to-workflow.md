@@ -37,7 +37,7 @@ The following illustration shows the high-level process that you must configure 
 
 1. The application fires a business event whenever a new approval starts.
 2. Power Automate trigger starts. 
-3. After parsing business event payload from F&O, next step is to check wheter the workflow instance ID received from F&O is still alive. This is a security step in case approval has already taken place or workflow has been recalled.
+3. After parsing business event payload from F&O, next step is to check whether the workflow instance ID received from F&O is still alive. This is a security step in case approval has already taken place or workflow has been recalled.
 4. If the check is unsuccessful, an email is sent to notify the user about a potential work item in their workspace.
 4. If the check is successful, a new Power Automate approval is started.
 5. Then workflow is completed by using the outcome of the approval. The outcome can be either **Approve** or **Reject**.
