@@ -24,8 +24,6 @@ To start to use the DTS pipeline tasks, you must install the extension in your o
 
 This topic assumes that you have a working knowledge of [Azure Pipelines](/azure/devops/pipelines/create-first-pipeline).
 
-> [!NOTE]
-> The DTS extension for Azure DevOps is available only as a public preview. Because DTS is currently deployed only in the United States, your data might be processed and stored outside your geopolitical boundary.
 
 ## Running a task
 
