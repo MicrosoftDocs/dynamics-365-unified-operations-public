@@ -567,8 +567,8 @@ The following table lists additional changes that have been made for extensibili
 |AxMaps - TradePostalAddress - partyTable|
 |Bank Trans Comments - BankReconciliationDataInitializer|
 |Cancellation Log Requirements - Update Sales Deliver Remainder|
-|Extend the grouping mechanisme from purch req line to purch line|
-|Extend the splitting mechanisme from purch req line to purch line|
+|Extend the grouping mechanism from purch req line to purch line|
+|Extend the splitting mechanism from purch req line to purch line|
 |Allow multiple funding sources in conjunction with item requirements|
 |Implementing exchange rate provider framework|
 |Make the PriceDiscPartyCodeType extensible in all usages|
