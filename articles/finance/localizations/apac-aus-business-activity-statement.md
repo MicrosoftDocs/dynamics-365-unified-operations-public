@@ -1726,7 +1726,7 @@ The following example shows how you can set up sales tax codes and sales tax rep
 </tr>
 <tr>
 <td>
-<p>EXPOTRS</p>
+<p>EXPORTS</p>
 </td>
 <td>
 <p>2</p>
@@ -1956,7 +1956,7 @@ For example, for customer invoices, go to **Accounts receivable > Invoices > All
 <p>0</p>
 </td>
 <td>
-<p>EXPOTRS</p>
+<p>EXPORTS</p>
 </td>
 <td>
 <p>2</p>
