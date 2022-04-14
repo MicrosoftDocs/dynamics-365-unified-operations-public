@@ -125,11 +125,11 @@ The following example shows how the component balance value is calculated.
 
 | Transaction number | Operation            | Amount | Comments                                                            |
 |--------------------|----------------------|--------|---------------------------------------------------------------------|
-| 1                  | Acquisition          | 1,000  | The fixed asset is assempled from item 1 and acquired with amount.  |
-| 2                  | Acquisition          | 2,000  | The fixed asset is assempled from item 2 and acquired with amount.  |
+| 1                  | Acquisition          | 1,000  | The fixed asset is assembled from item 1 and acquired with amount.  |
+| 2                  | Acquisition          | 2,000  | The fixed asset is assembled from item 2 and acquired with amount.  |
 | 3                  | Cost revaluation 1   | 1,500  | The fixed asset is revalued.                                        |
 | 4                  | Depreciation         | 300    | Fixed asset depreciation is calculated.                             |
-| 5                  | Acquisition          | 2,500  | The fixed asset is assempled from item 3 and acquired with amount.  |
+| 5                  | Acquisition          | 2,500  | The fixed asset is assembled from item 3 and acquired with amount.  |
 | 6                  | Depreciation         | 700    | Fixed asset depreciation is calculated.                             |
 | 7                  | Disassembly          | \*     | The item 1 component is withdrawn from the fixed asset composition. |
 | 8                  | Cost revaluation 2   | 2,000  | The fixed asset is revalued.                                        |
