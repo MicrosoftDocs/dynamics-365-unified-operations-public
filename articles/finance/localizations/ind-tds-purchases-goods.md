@@ -266,7 +266,7 @@ To define the initial TDS threshold value for transactions that occur between Ap
    - **TDS**: Total cumulative value (55,00,000) – 50,00,000 = 5,00,000
    - **Threshold value**: 5,00,000 at a rate of 0.1 percent = 500
 
-    ![Withholdign tax transactions page](media/tds-purchase-goods-12.png)
+    ![Withholding tax transactions page](media/tds-purchase-goods-12.png)
   
 ## Reversal of TDS on invoice settlement when TDS is deducted separately on the invoice and the payment
 
