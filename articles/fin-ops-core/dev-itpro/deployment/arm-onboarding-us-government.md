@@ -125,7 +125,7 @@ Follow these steps to enable the Azure connector and, as required, add an LCS us
 #### Configure deployment settings
 
 1. In LCS, on the **Project** page, in the **Environments** section, select **Microsoft Azure settings**.
-2. The **Prject settings** page appears. In the **Azure connectors** area, click **Add**.
+2. The **Project settings** page appears. In the **Azure connectors** area, click **Add**.
 3. On the **Microsoft Azure setup** page, select the region to deploy to, and then select **Connect**. The Resource Manager onboarding flow is now completed. You should now see that the subscription has been added to the **Azure connectors** list. Additionally, a check mark should appear under **ARM Enabled**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
