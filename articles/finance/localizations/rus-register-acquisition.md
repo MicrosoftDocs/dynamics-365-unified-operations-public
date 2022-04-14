@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
-You can register a fixed asset acquisitios using a vendor invoice journal or a purchase order. Typically, a vendor invoice journal is used if there is no need to track inventory movement of the fixed asset. For example, a fixed asset is bought and put into operation during the same period. A purchase order might be used if several identical fixed assets are bought or it is necessary to track inventory movement of a fixed asset. 
+You can register a fixed asset acquisitions using a vendor invoice journal or a purchase order. Typically, a vendor invoice journal is used if there is no need to track inventory movement of the fixed asset. For example, a fixed asset is bought and put into operation during the same period. A purchase order might be used if several identical fixed assets are bought or it is necessary to track inventory movement of a fixed asset. 
 
 ## Register a fixed asset acquisition using an invoice journal 
 
