@@ -37,7 +37,7 @@ To meet Common Government-wide Accounting Classification (CGAC) requirements, pu
 
 Typically, category hierarchies are set up to classify transactions for reporting and analysis based on the financial dimensions in an account structure at the time of posting. However, by using category hierarchies with a Derived financial hierarchy category type, you can create filter rules that create financial categories and dimension values that aren't part of the account number. The financial categories and dimension values defined in the filter rules are derived from the account number dimension values that are used in the posted transactions.
 
-Derived financial hierarchies give you a more flexible approach to grouping transactions for as needed analytics. The hierachies let you categorize transactions without having to expand the account structure to include the additional categories or dimensions that you're tracking.
+Derived financial hierarchies give you a more flexible approach to grouping transactions for as needed analytics. The hierarchies let you categorize transactions without having to expand the account structure to include the additional categories or dimensions that you're tracking.
 
 ## Example
 An organization has an employee wellness program and an employee education program. These programs aren't associated with financial dimensions. To collect account numbers used in the posted transactions for these programs, you could do the following:
