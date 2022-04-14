@@ -619,7 +619,7 @@ The following steps show how this issue might occur.
 
 16. Notice that a validation error occurs. The message states that an error might be thrown for the configured **Statement\\Party\\Name** and **Statement\\Party\\AccountNum** format components at runtime if the `model.Vendor` list is empty.
 
-    ![Validation error about a potential error for the configured format compontents.](./media/er-components-inspections-09d.png)
+    ![Validation error about a potential error for the configured format components.](./media/er-components-inspections-09d.png)
 
 The following illustration shows the runtime error that occurs if you ignore the warning, select **Run** to run the format, and select the account number of a nonexistent vendor. Because the requested vendor doesn't exist, the `model.Vendor` list will be empty (that is, it will contain no records).
 
