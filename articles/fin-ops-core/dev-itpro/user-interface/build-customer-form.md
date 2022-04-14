@@ -195,7 +195,7 @@ Use Visual Studio to apply the Master Details form pattern to the **Customer** f
 
     [![GridDetailsTab in design.](./media/custform16.png)](./media/custform16.png)
 
-    [![TabPageGrid tab page needs additonal attention.](./media/custform17.png)](./media/custform17.png)
+    [![TabPageGrid tab page needs additional attention.](./media/custform17.png)](./media/custform17.png)
 
 11. Click **TabPageGrid**. Focus in the designer is now on **TabPageGrid**, and the **Patterns Information Panel** has been updated.
 

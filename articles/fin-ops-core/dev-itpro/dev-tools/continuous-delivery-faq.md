@@ -129,7 +129,7 @@ Add an average of $15 monthly for storage (non premium) per VM.
 
 This is not supported. However, you can provision more than one developer account on the same VM, they just cannot develop concurrently. For details, see [Create new users on development machines](/d365F-O/fin-ops-core/dev-itpro/dev-tools/access-instances).
 
-If you are a Microsoft partner developing code for more than one customer, we recommend having at least one development VM per customer. You will need one addittional VM for every additional developer working on a customer project. Development VMs can be thought of as disposable assets as long as your source code is checked into version control (Azure DevOps) and you keep a backup of test databases.
+If you are a Microsoft partner developing code for more than one customer, we recommend having at least one development VM per customer. You will need one additional VM for every additional developer working on a customer project. Development VMs can be thought of as disposable assets as long as your source code is checked into version control (Azure DevOps) and you keep a backup of test databases.
 
 ## Customer implementation LCS projects
 
