@@ -180,7 +180,7 @@ Lifecycle Services (LCS) releases new features every month. For information abou
 <p>Organizational training</p>
 <ul>
 <li>Course registration by location</li>
-<li>Couse attendance by status</li>
+<li>Course attendance by status</li>
 <li>List of employees registered for courses</li>
 </ul>
 <p>Employee competencies and development</p>
