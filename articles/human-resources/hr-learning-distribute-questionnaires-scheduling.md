@@ -59,7 +59,7 @@ Questionnaire scheduling allows you to plan and distribute questionnaires to mul
 
     * Example: Questionnaire available  
 
-11. In the **Text** field, type the body of your email message. Note, the variable can be used to substitue values in the system.
+11. In the **Text** field, type the body of your email message. Note, the variable can be used to substitute values in the system.
 
     * Example: Dear %P%, Please log in to Employee Self Service to complete the Workforce Health questionnaire.  Contoso  
 
