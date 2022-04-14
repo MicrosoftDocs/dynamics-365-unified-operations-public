@@ -23,25 +23,30 @@ Customers who have purchased the appropriate licenses can deploy a production in
 
 For production environments, replicas of the different storage services (Azure SQL Database and file storage) are established in the secondary region at the time of deployment. These replicas are known as *geo-secondaries*.
 
-The geo-secondaries are kept synchronized with the primary instance through continuous data replication. There is a small replication latency or lag of up to 15 minutes between the geo-secondaries and the primary instance. For more information, see [Business continuity and disaster recovery (BCDR): Azure Paired Regions](/azure/best-practices-availability-paired-regions).
+The geo-secondary replicas are kept synchronized with the primary instance through continuous data replication. There is a small replication latency, or lag—typically less than a few minutes—between the primary data sources and their corresponding geo-secondary replicas. For more information, see [Business continuity and disaster recovery (BCDR): Azure Paired Regions](/azure/best-practices-availability-paired-regions).
 
 ![Geo-secondaries](media/Finance-and-Operations-apps.png)
 
 For more information about data protection in non-production environments, see [Database movement operations home page](../database/dbmovement-operations.md).
 
-## Planned failover
+As seen in the preceding diagram, similar to data storage services, compute infrastructure is also provisioned in both regions in such a way that it can handle the traffic volume in case of an environment or region-level failover. In order to provide region level resiliency VMSS is configured with 5 level fault domains to handle transient issues caused due to faulty hardware etc. and automatically load balance the traffic and results in an experience where customers barely see a blip with no data loss. The following sections describe the different types of failovers that are possible and how Microsoft manages service continuity in either of these situations. 
 
-If Microsoft determines that availability of the primary Azure region is at risk (for example, if there is an impending hurricane), we will notify customers and switch over the environment so that it operates out of the secondary region. There will be a short outage while the environment is configured for the secondary region. However, there will be no data loss, because both Azure regions are online and the replication will be caught up.
+Finance and Operations apps adhere to the Microsoft Business Continuity and Disaster Recovery (BCDR) standard that requires each online service to have a BCDR plan reviewed, updated, and tested at least annually. Microsoft Cloud Business Continuity and Disaster Recovery Plan Validation Report is made available to customers on [Service Trust Portal](https://servicetrust.microsoft.com/)
 
-## Unplanned failover
+If the outage is caused due to issues with underlying services, caused due to faulty hardware or network outage etc., and Microsoft has determined that the region won't become available within a reasonable amount of time, Microsoft will notify the customers and switch over the traffic to route to the secondary region instances. RPO (Recovery Point Objective) here is small and up to a few seconds or couple of minutes. 
 
-If an unanticipated region-wide outage occurs (for example, because of a natural disaster such as an earthquake), and Microsoft determines that the region won't become available within a reasonable amount of time, we will notify customers and switch over the environment so that it operates out of the secondary region. In this case, customers might experience data loss of up to 15 minutes, depending on the nature and timing of the outage.
+In the event of an unanticipated region-wide outage, such as a natural disaster that affects the entire Azure region, and Microsoft has determined that the region won't become available within a reasonable amount of time, Microsoft will notify customers and switch over the traffic to route to the secondary instances. In this case, it's possible that customers might experience a data loss of up to 15 minutes, depending on the nature and timing of the outage. RPO (Recovery Point Objective) here is small and up to a few seconds or couple of minutes. 
+
+RTO (Recovery Time Objective) varies depending on the nature of the impact and could be from 4 to 10 hours. 
+
+The applicable service will be operated in limited mode on failover. Update maintenance cannot be triggered in failover mode. 
+
+Microsoft will notify customers and switch back the environments to operate out of the primary region when it determines that the primary region is back online and is fully operational. Users connected to the systems will experience a brief interruption of up to a few minutes and batch service can be unavailable for up to 25 minutes. The service, including all non-production instances, will be fully restored. There will be no data loss during the failback process.  
 
 > [!IMPORTANT]
 > While the environment is operating out of the secondary region, the Finance and Operations app environment will have reduced functionality. Financial Reporting and Power BI reporting won't be available. If Financial Reporting is critical for a customer during the disaster, the customer can request restoration of the service to Microsoft through a support ticket.
 >
 > Additionally, there might be service degradation of non-production instances. Deployments of new non-production environments might be blocked.
 
-## Failback
+##Responsibilities for Disaster Recovery 
 
-When Microsoft determines that the primary region is back online and fully operational, we will notify customers and switch over the environments so that they once again operate out of the primary region. The service, including all non-production instances, is fully restored. There will be no data loss.
