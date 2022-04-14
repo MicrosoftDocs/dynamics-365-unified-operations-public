@@ -154,23 +154,23 @@ import getProductAvailability from './check-inventory';
  * This interface will be the return type of our chain data action.
  * This contains both the basic product information in addition to the product's availability information.
  */
-export interface SimpleProductWithAvailablility extends SimpleProduct {
+export interface SimpleProductWithAvailability extends SimpleProduct {
     availability: ProductAvailableQuantity
 }
 
 /**
  * Calls the Retail API and returns the Availability information for the passed Product
  */
-async function getProductWithAvailabilityAction(input: ProductInput, ctx: IActionContext): Promise<SimpleProductWithAvailablility> {
+async function getProductWithAvailabilityAction(input: ProductInput, ctx: IActionContext): Promise<SimpleProductWithAvailability> {
     // First we get the product
-    const product: SimpleProductWithAvailablility = await <SimpleProductWithAvailablility>getProduct(input, ctx);
+    const product: SimpleProductWithAvailability = await <SimpleProductWithAvailability>getProduct(input, ctx);
 
     // If we successfully get the product, then we try to get its availability information.
     if(product) {
         // Get the availability information
         product.availability = await getProductAvailability(input, ctx)
     } else {
-        return <SimpleProductWithAvailablility>{};
+        return <SimpleProductWithAvailability>{};
     }
 }
 
