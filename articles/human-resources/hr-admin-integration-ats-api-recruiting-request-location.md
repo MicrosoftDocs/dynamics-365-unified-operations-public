@@ -71,7 +71,7 @@ The list of locations defined as locations where recruited employees will work u
 | **Recruiting Request Location Entity ID**<br>mshr_hcmrecruitingrequestlocationentityid<br>*GUID* | Read-only<br>Required | System-generated unique identifier for the recruiting request location record. |
 | **Description**<br>mshr_description<br>*String* | Read/write<br>Required | Description of the location. |
 | **Country/Region ID**<br>mshr_countryregionid<br>*String* | Read-only<br>Optional | Specifies the country or region where the candidate has citizenship. |
-| **Country/Region ID Value**<br>_mshr_fk_countriregion_id_value<br>*GUID* | Read-only<br>Optional<br>Foreign key: mshr_logisticaddresscountryregionentityid of mshr_logisticsaddresscountryregionentity | System-generated unique identifier of the country/region of the address. |
+| **Country/Region ID Value**<br>_mshr_fk_countryregion_id_value<br>*GUID* | Read-only<br>Optional<br>Foreign key: mshr_logisticaddresscountryregionentityid of mshr_logisticsaddresscountryregionentity | System-generated unique identifier of the country/region of the address. |
 | **ZipCode**<br>mshr_zipcode<br>*String* | Read-only<br>Optional | Zip/postal code. |
 | **Street**<br>mshr_street<br>*String* | Read-only<br>Optional | Street address. |
 | **City**<br>mshr_city<br>*String* | Read-only<br>Optional | City. |

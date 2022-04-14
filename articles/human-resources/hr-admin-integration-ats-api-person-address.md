@@ -78,7 +78,7 @@ This entity contains the list of postal addresses for candidate records.
 | **County**<br>mshr_county<br>*String* | Read/write<br>Optional | The county of the address. Set up in mshr_logisticsaddresscountyentity entity. |
 | **Zip Code**<br>mshr_zipcode<br>*String* | Read/write<br>Optional | The zip/postal code of the address. Set up in mshr_logisticsaddresspostalcodeentity entity. |
 | **Country Region ID**<br>mshr_countryregionid<br>*String* | Read/write<br>Optional | The country or region of the address. |
-| **Country/Region ID Value**<br>_mshr_fk_countriregion_id_value<br>*GUID* | Read-only<br>Optional<br>Foreign key: mshr_logisticaddresscountryregionentityid of mshr_logisticsaddresscountryregionentity | System-generated unique identifier of the country/region of the address. |
+| **Country/Region ID Value**<br>_mshr_fk_countryregion_id_value<br>*GUID* | Read-only<br>Optional<br>Foreign key: mshr_logisticaddresscountryregionentityid of mshr_logisticsaddresscountryregionentity | System-generated unique identifier of the country/region of the address. |
 | **Is Primary**<br>mshr_isprimary<br>*mshr_noyes option set* | Read/write<br>Required | Identifies whether this address is the primary address for the person of the defined role. |
 | **Is Private**<br>mshr_isprivate<br>*mshr_noyes option set* | Read/write<br>Required | Identifies whether this address is a private address for the person. |
 | **Primary Field**<br>mshr_primaryfield<br>*String* | Read-only<br>Required | Field used as a primary identifier of the entity record. Combination of party number and location ID. |
