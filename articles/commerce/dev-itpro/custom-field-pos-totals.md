@@ -181,7 +181,7 @@ You can find similar sample code in the Retail software development kit (SDK), a
 
     In the manifest, note that the **fieldName** value in the **customFields** section should match the name of the custom field added in the Headquarters, the name you specified for the custom field in step 6 of the "Configure Headquarters" procedure. **modulePath** is the name of the implementation file, the implementation file name is the name of the file that you created in step 5 of "Add business logic to the custom field" procedure.
     
-    If you add multiple custom fields, you should add multiple implementation files and update the information under the customFileds section.
+    If you add multiple custom fields, you should add multiple implementation files and update the information under the customFields section.
 
     For example, if you add two custom fields, **Sample1** and **Sample2**, you should have two implementation files that extend from the same base class, **CartViewTotalsPanelCustomFieldBase**.
 

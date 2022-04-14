@@ -41,7 +41,7 @@ To determine whether the issue is related to Microsoft Excel, see [Details for i
 1. Go to **Tax** \> **Setup** \> **Tax configuration** \> **Tax setup** \> **Configurations**.
 2. On the **Report configurations** tab, verify that the correct report controller is selected.
 
-    [![Report controller field on the Report configurations tab of the Configurations page.](./media/records-fileds-not-show-in-GSTR-report-Picture1.png)](./media/records-fileds-not-show-in-GSTR-report-Picture1.png)
+    [![Report controller field on the Report configurations tab of the Configurations page.](./media/records-fields-not-show-in-GSTR-report-Picture1.png)](./media/records-fields-not-show-in-GSTR-report-Picture1.png)
 
 3. If the incorrect controller is selected, select the correct controller. If the correct is already selected, move on to the next section.
 
@@ -53,7 +53,7 @@ If fields are missing from the report, review the field mapping in the report co
 2. Select the report configuration, and then open the format designer.
 3. In the tree, find the report name, expand **\<Report name\>** \> **Sequence** \> **Header** \> **Sequence**, and verify that the field exists. For example, in the following illustration, the **State\_Place\_of\_Supply** field exists in the **Invoice and bill of supply** report, according to the report configuration. If the field doesn't exist, modify the report configuration in your extension.
 
-    [![State_Place_of_Supply field in the expanded tree.](./media/records-fileds-not-show-in-GSTR-report-Picture2.png)](./media/records-fileds-not-show-in-GSTR-report-Picture2.png)
+    [![State_Place_of_Supply field in the expanded tree.](./media/records-fields-not-show-in-GSTR-report-Picture2.png)](./media/records-fields-not-show-in-GSTR-report-Picture2.png)
 
 ## If lines are missing from the report, review the filter formula in the report format configuration
 
@@ -61,15 +61,15 @@ If fields are missing from the report, review the field mapping in the report co
 2. Select the format configuration that you want to work with, and then open the format designer.
 3. On the **Mapping** tab, select **Edit**.
 
-    [![Edit button on the Mapping tab of the Format designer page.](./media/records-fileds-not-show-in-GSTR-report-Picture3.png)](./media/records-fileds-not-show-in-GSTR-report-Picture3.png)
+    [![Edit button on the Mapping tab of the Format designer page.](./media/records-fields-not-show-in-GSTR-report-Picture3.png)](./media/records-fields-not-show-in-GSTR-report-Picture3.png)
 
 4. Select **Edit formula**.
 
-    [![Edit formula button in the 'Calculated field' data source properties dialog box.](./media/records-fileds-not-show-in-GSTR-report-Picture4.png)](./media/records-fileds-not-show-in-GSTR-report-Picture4.png)
+    [![Edit formula button in the 'Calculated field' data source properties dialog box.](./media/records-fields-not-show-in-GSTR-report-Picture4.png)](./media/records-fields-not-show-in-GSTR-report-Picture4.png)
 
 5. Review the formula. If it's incorrect, modify it in your extension.
 
-    [![Formula.](./media/records-fileds-not-show-in-GSTR-report-Picture5.png)](./media/records-fileds-not-show-in-GSTR-report-Picture5.png)
+    [![Formula.](./media/records-fields-not-show-in-GSTR-report-Picture5.png)](./media/records-fields-not-show-in-GSTR-report-Picture5.png)
 
 ## Determine whether the record exists in the TaxDocumentRowTransaction table
 
@@ -80,16 +80,16 @@ This procedure uses the example of free text invoice lines that are missing reco
 1. Open the free text invoice that you want to work with.
 2. Select and hold (or right-click) in a blank area of the **Invoice lines** grid, and then select **Form Name: CustFreeInvoice**.
 
-    [![Form Name: CustFreeInvoice selected on the shortcut menu on the Free text invoice page.](./media/records-fileds-not-show-in-GSTR-report-Picture6.png)](./media/records-fileds-not-show-in-GSTR-report-Picture6.png)
+    [![Form Name: CustFreeInvoice selected on the shortcut menu on the Free text invoice page.](./media/records-fields-not-show-in-GSTR-report-Picture6.png)](./media/records-fields-not-show-in-GSTR-report-Picture6.png)
 
 3. Make a note of the value in the **DataSource** field. In this example, it's **CustInvoiceLine**.
 
-    [![DataSource field in the Form information dialog box.](./media/records-fileds-not-show-in-GSTR-report-Picture7.png)](./media/records-fileds-not-show-in-GSTR-report-Picture7.png)
+    [![DataSource field in the Form information dialog box.](./media/records-fields-not-show-in-GSTR-report-Picture7.png)](./media/records-fields-not-show-in-GSTR-report-Picture7.png)
 
 4. Close the dialog box to return to the **Free text invoice** page.
 5. On the header, make a note of the invoice ID in the **Invoice** field. In this example, it's **INMF-000004**.
 
-    [![Invoice field on the Free text invoice page.](./media/records-fileds-not-show-in-GSTR-report-Picture8.png)](./media/records-fileds-not-show-in-GSTR-report-Picture8.png)
+    [![Invoice field on the Free text invoice page.](./media/records-fields-not-show-in-GSTR-report-Picture8.png)](./media/records-fields-not-show-in-GSTR-report-Picture8.png)
 
 4. Run the following SQL query to determine whether the **TaxDocumentRowTransaction** table is missing records.
 
@@ -104,15 +104,15 @@ This procedure uses the example of free text invoice lines that are missing reco
 
 1. Set a breakpoint to determine whether **TaxGSTRReportDPHelper\_IN::queryTrans** gets the missing record in **tmpLineDetail**. If there appears to be an issue, report it to Microsoft.
 
-    [![Breakpoint at tmpLineDetail.](./media/records-fileds-not-show-in-GSTR-report-Picture9.png)](./media/records-fileds-not-show-in-GSTR-report-Picture9.png)
+    [![Breakpoint at tmpLineDetail.](./media/records-fields-not-show-in-GSTR-report-Picture9.png)](./media/records-fields-not-show-in-GSTR-report-Picture9.png)
 
 2. Set a breakpoint to determine whether **TaxGSTRReportDPHelper\_IN::filterTrans** filters the missing record. If there appears to be an issue, report it to Microsoft.
 
-    [![Breakpoint at filterTrans.](./media/records-fileds-not-show-in-GSTR-report-Picture10.png)](./media/records-fileds-not-show-in-GSTR-report-Picture10.png)
+    [![Breakpoint at filterTrans.](./media/records-fields-not-show-in-GSTR-report-Picture10.png)](./media/records-fields-not-show-in-GSTR-report-Picture10.png)
 
 3. Set a breakpoint to determine whether the **TransCategory** field of the missing record is correct, or whether the record is filtered again. If there appears to be an issue, report it to Microsoft.
 
-    [![Breakpoint at tmpLineDetail.TransCategory.](./media/records-fileds-not-show-in-GSTR-report-Picture11.png)](./media/records-fileds-not-show-in-GSTR-report-Picture11.png)
+    [![Breakpoint at tmpLineDetail.TransCategory.](./media/records-fields-not-show-in-GSTR-report-Picture11.png)](./media/records-fields-not-show-in-GSTR-report-Picture11.png)
 
 ## Determine whether customization exists
 
