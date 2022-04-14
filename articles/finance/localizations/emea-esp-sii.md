@@ -357,7 +357,7 @@ As a result of this analyzes system defines related **IDType**
 | **Tax registration type** | **IDType in SII system**                                                                |
 |-----------------|--------------------------------------------------------------------------------|
 | `TaxRegistrationTypesList::TAXID`| 02                                                                         |
-| `TaxRegistrationTypesList::Passpor`| 03                                                                       |
+| `TaxRegistrationTypesList::Passport`| 03                                                                       |
 | `TaxRegistrationTypesList::OfficialIdDoc`| 04                                                                 |
 | `TaxRegistrationTypesList::ResidenceCertificate`| 05                                                          |
 | `TaxRegistrationTypesList::OtherIdDoc`| 06                                                                       |
