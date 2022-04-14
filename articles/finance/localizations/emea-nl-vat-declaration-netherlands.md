@@ -630,7 +630,7 @@ To upload the electronic messages data package, follow these steps:
 
 7. Go to **Tax** > **Setup** > **Electronic messages** > **Executable class settings**. Verify the following :
 
-    - The executable class **NLOBGetStatusFromDidgipoort** has the **Electronic reporting import** action type.
+    - The executable class **NLOBGetStatusFromDigipoort** has the **Electronic reporting import** action type.
     - The executable class **NLOBSendToDigipoort** has the **Web service** action type.
 
     ![Executable class settings page.](media/electronic-messages-NL.png)
