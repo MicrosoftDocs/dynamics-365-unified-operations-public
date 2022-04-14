@@ -2,7 +2,7 @@
 # required metadata
 
 title: Commerce posting parameters
-description: This topic describes each of the parameters related to Commerce specific postings.
+description: This topic describes each of the parameters specific for posting of financial and physical transactions in Microsoft Dynamics 365 Commerce.
 author: analpert
 ms.date: 04/22/2022
 ms.topic: article
@@ -28,9 +28,11 @@ ms.dyn365.ops.version: 10.0.27
 
 # Commerce posting parameters
 
-This article will describe the **Commerce parameters** specific for posting of financial and physical transactions. 
+[!include [banner](includes/banner.md)]
 
-## Periodic discounts
+This topic describes each of the parameters specific for posting of financial and physical transactions in Microsoft Dynamics 365 Commerce.
+
+## Periodic discount parameters
 
 | Parameter                         | Definition   |
 |-----------------------------------|------------|
@@ -39,14 +41,14 @@ This article will describe the **Commerce parameters** specific for posting of f
 | Post info code discount           | This field is no longer used in the standard Commerce solution and will be deprecated.  |
 | Post periodic discount for orders | This parameter controls whether retail periodic discounts are posted to the ledger for Customer order and Call center orders. |
 
-## Inventory update
+## Inventory update parameters
 
 | Parameter  | Definition  |                                                                                                                         
 |------------|-------------|
 | Use default batch ID when batch numbers are not found | Define a default batch id that will be used for batch enabled items when batch numbers are not found and negative inventory is allowed. |
 | Default batch ID   | Batch number to be used when batch numbers for items are not found and the parameter to use default batch numbers is enabled.           |
 
-## Aggregation
+## Aggregation parameters
 
 | Parameter                | Definition    |
 |--------------------------|---------------|
@@ -54,7 +56,7 @@ This article will describe the **Commerce parameters** specific for posting of f
 | Bank drop                | Enabling this parameter will aggregate all transactions during statement posting and create a single line in the journal for posting vs individual lines for each drop.                                             |
 | Sales transactions       | Enabling this parameter will consolidate the transactions as part of the transaction statement posting process. It is recommended to enable this parameter.   This field was formally titled 'Voucher transactions' |
 | Do not aggregate returns | If this option is selected, each return transaction will be posted as a separate sales order when posting a retail statement.                                                                                       |
-## Batch processing
+## Batch processing parameters
 
 | Parameter   | Definition  |
 |-------------|-------------|
@@ -75,7 +77,7 @@ The following table lists the recommended values for the preceding parameters. T
 > [!NOTE]
 > All settings and parameters that are related to statement postings, and that are defined on stores and on the **Commerce parameters** page, are applicable to the improved statement posting feature.
 
-## Invoice
+## Invoice parameters
 
 | Parameter  | Definition  |
 |------------|-------------|
@@ -85,7 +87,7 @@ The following table lists the recommended values for the preceding parameters. T
 | Taxes \| Tax calculation behavior   | Recalculate: Calculate taxes again at time of invoicing sales orders creating during statement posting.   Don't recalculate: Use the tax amounts calculated in POS when invoicing sales orders created during statement posting. |
 | Refund \| Journal name   | Journal name that will be used when creating a customer payment journal for refunds. This setting will apply to all order payments posted for POS, Call Center, and eCommerce channel orders.                                    |
 
-## Statement
+## Statement parameters
 
 | Parameter      | Definition   |
 |----------------|---------------------|
