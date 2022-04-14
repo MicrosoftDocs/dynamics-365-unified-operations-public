@@ -65,7 +65,7 @@ Follow these steps to change your update settings.
         > [!IMPORTANT]
         > Currently, only a few options are available for the day of the week and time slot options. Microsoft will add more options soon, such as weekdays for customers.
         
-        > If the above time slots do not meet your needs, you always have the option to do a self-update at a time that is convinient to you by taking the update and applying it to your environments using the regular servicing flows.
+        > If the above time slots do not meet your needs, you always have the option to do a self-update at a time that is convenient to you by taking the update and applying it to your environments using the regular servicing flows.
 
  3. When you've finished setting the configuration options, select **Save**.
  
