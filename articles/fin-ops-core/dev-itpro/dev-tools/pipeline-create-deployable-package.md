@@ -48,7 +48,7 @@ When this task is run on the build VM, NuGet is already available, and no action
 Compared to the legacy packaging on the build virtual machine, the packaging task has to specify which modules to package and where to find them. In a standard pipeline, X++ modules under compilation are output in the binaries folder of the Azure DevOps agent. The packaging task by default will look in this folder for any X++ binaries. The search looks for folder names. The task will check inside these folders if there is a `/bin/` subfolder with X++ assemblies.
 
 > [!NOTE]
-> If your source control repositores includes third-party binaries such as ISV modules, the packaging step has specifically includes those binaries. See the examples section of this topic.
+> If your source control repositories includes third-party binaries such as ISV modules, the packaging step has specifically includes those binaries. See the examples section of this topic.
 
 ## Examples of search patterns
 
