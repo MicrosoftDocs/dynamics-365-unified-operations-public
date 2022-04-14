@@ -168,7 +168,7 @@ public onReady(element: HTMLElement): void {
     let dataListRootElem: HTMLDivElement = element.querySelector("#exampleListView") as HTMLDivElement;
     this.dataList = this.context.controlFactory.create(this.context.logger.getNewCorrelationId(), "DataList", dataListOptions, dataListRootElem);
     this.dataList.addEventListener("SelectionChanged", (eventData: { items: Entities.ExampleEntity[] }) => {
-        this.viewModel.seletionChanged(eventData.items);
+        this.viewModel.selectionChanged(eventData.items);
 
         // Update the command states to reflect the current selection state.
         this.state.commandBar.commands.forEach((command) => {
