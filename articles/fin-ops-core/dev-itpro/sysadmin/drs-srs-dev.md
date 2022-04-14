@@ -113,7 +113,7 @@ From a development perspective, it is not enough to look at the primary and alte
 <li>Alternate key</li>
 <li>Foreign</li>
 <li>Sharing Type (Table and fields)</li>
-<li>DeleteActions (Restricted/Casacade)</li>
+<li>DeleteActions (Restricted/Cascade)</li>
 </ul>
 </td>
 <td><ul>Check the tables and fields and if they are required to be shared. Also, determine if there is impact of DRS versus SRS sharing for the table and field.</ul>
