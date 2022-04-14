@@ -111,7 +111,7 @@ The **SystemNotificationsManager()** class allows you to send notifications to t
 In this example, a notification is raised after an export to Excel is completed by a user. The message will be available in the Action center for the next 48 hours, after which the link to the exported file is no longer available.   
 
 > [!NOTE]
-> The **AddNotification()** API was previously used in this example. As of version 10.0.23, that API is deprecated and is replaced by the **AddSystemNotification()** API. The new API rquires that you set RuleID and ExpirationDateTime. 
+> The **AddNotification()** API was previously used in this example. As of version 10.0.23, that API is deprecated and is replaced by the **AddSystemNotification()** API. The new API requires that you set RuleID and ExpirationDateTime. 
 
 ![Example of a message sent using the SystemNotificationsManager API.](./media/cli-systemNotification.png)
 
