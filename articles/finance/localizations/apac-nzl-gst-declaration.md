@@ -64,7 +64,7 @@ After you've finished downloading the ER configurations, complete the following 
 ## Set up application-specific parameters
 The GST declaration form includes a set of boxes (lines) that correspond to specific parts of the GST return declaration. Each box should include information about the base, adjustment, and GST amounts. To include the requirements established by the form, configure each box with the information that's automatically provided from the sales tax transactions generated from sales, purchases, or other operations where VAT tax is posted through the sales tax code configuration.
 
-![GST101A declararion.](media/apac-nzl-gst-declaration.JPG)
+![GST101A declaration.](media/apac-nzl-gst-declaration.JPG)
 
 **Box5 - Total sales and income for the period (including GST and any zero-rates supplies)**.  Per legal definition, this box includes the total amount of standard-rated goods and services, including collected GST sold during the related period. In this scenario. you need to identify all standard and zero-rate tax transactions with a payable tax direction that were posted during the selected time selected. 
 
@@ -87,7 +87,7 @@ The application-specific parameters option lets you to establish the criteria of
 8. In the **State** field, select **Completed**, and then select **Save**.
 9. Close the **Application specific parameters** page.
  
- ![GST101A declararion setup.](media/apac-nzl-gst-declaration-setup.JPG)
+ ![GST101A declaration setup.](media/apac-nzl-gst-declaration-setup.JPG)
  
 The following table provides an example of how to configure these parameters to establish the configuration between the different boxes in the declaration form and sales tax code configuration implemented in Finance.
 
