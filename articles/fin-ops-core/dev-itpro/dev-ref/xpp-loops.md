@@ -117,7 +117,7 @@ for (int i = 0; i < 100; i++)
 
     info("Did not continue.");
 }
-// The output is "Will continue." for all 100 interations.
+// The output is "Will continue." for all 100 interactions.
 ```
 
 ## break statement

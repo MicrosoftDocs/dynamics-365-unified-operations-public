@@ -53,7 +53,7 @@ Both the **UK MTD VAT TEST** processing and the **UK MTD VAT returns** processin
 | Name                 | Description |
 |----------------------|-------------|
 | Dynamics 365 for Finance and Operations | The HMRC web application for Microsoft Dynamics 365 Finance. This web application must be used for VAT return submission. |
-| Sandbox HMRC         | The HMRC sandbox for Finance. This web application must be used for testing of the interation with sandbox of HMRC. |
+| Sandbox HMRC         | The HMRC sandbox for Finance. This web application must be used for testing of the interaction with sandbox of HMRC. |
 
 The following table shows the parameters of the web applications.
 
