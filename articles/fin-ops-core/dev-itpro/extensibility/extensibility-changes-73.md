@@ -445,7 +445,7 @@ The following table lists the new methods that have been extracted and opened fo
 |ProjPostRevenueProposal.projTransCreate|
 |projUnpostedTransactionsListPage.populateMenuFunction|
 |PSAProjAndContractInvoiceController.preRunModifyContract|
-|PSARetenetionRelease.run|
+|PSARetentionRelease.run|
 |PurchAutoCreate_SalesLine.setPurchTable|
 |PurchCreateFromSalesOrder.run|
 |PurchFormletterParmDataInvoice.createParmLinesAndTable|
