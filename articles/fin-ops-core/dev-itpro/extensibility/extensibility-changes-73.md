@@ -1490,7 +1490,7 @@ The changes have led to changing multiple places across the application, includi
 |Table EcoResTrackingDimensionGroup.isDimFieldTrackingDimension|
 |Table InterCompanyInventDim mappings|
 |Table InventAgeGroupDimTmp mappings|
-|Table InventCheckRecieptCostPricePcsTmp mappings|
+|Table InventCheckReceiptCostPricePcsTmp mappings|
 |Table InventCostTmpTransBreakdown mappings|
 |Table InventCountStatisticsTmp mappings|
 |Table InventDim mappings|
