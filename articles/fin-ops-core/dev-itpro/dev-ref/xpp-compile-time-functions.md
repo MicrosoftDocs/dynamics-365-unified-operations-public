@@ -907,7 +907,7 @@ You will receive a best practice warning if you use the **identifierStr** functi
 The following code example assigns the *myvar* variable name to the *thevar* variable.
 
 ```xpp
-static void indentifierStrExample(Args _args)
+static void identifierStrExample(Args _args)
 {
     str myvar;
     str thevar
