@@ -51,7 +51,7 @@ Provides a graphical view of the SPIDs and statements that are currently causing
 ### Next steps
 - Determine which process is blocked, and which process is blocking it and why.
 - To resolve blocking, the only two options are to let it run and clear naturally, or to end the lead blocker process, which will roll back work. Generally, the lead blocker should only end in situations where it is believed that it will not clear naturally (such as a bad query plan), or in situations where a critical process is unable to run and needs to be completed immediately.
-- To avoid the same blocking in the future, you can use indexes or plan guides, or disable lock escalation and page locks, if processes processes are blocking each other while operating on different records. If processes are operating on the same records, the only way to avoid blocking is by refactoring or rescheduling the processes so that they do not operate on the same records at the same time.
+- To avoid the same blocking in the future, you can use indexes or plan guides, or disable lock escalation and page locks, if processes are blocking each other while operating on different records. If processes are operating on the same records, the only way to avoid blocking is by refactoring or rescheduling the processes so that they do not operate on the same records at the same time.
 
 ## Currently running queries
 
