@@ -153,7 +153,7 @@ For more information, see [TDS/TCS on non-filer at a higher rate of tax](https:/
 
 ### 10.0.17
 
-- The **InventTransId** value for shipment and receipt is the same for a transfer order in **TaxTrans\_IN** for a posted stock transfer, and you can't get the line tax for reports from **TaxTrans\_IN**. Therefore, you can't get the correct information from the **Invent** table and the **TaxTrans** table, and you can't do any report customization. After this release, the **InventTransId** value for shipment and receipt is different. It's now the same as in **InvetTransferJourLine** for shipment and receipt.
+- The **InventTransId** value for shipment and receipt is the same for a transfer order in **TaxTrans\_IN** for a posted stock transfer, and you can't get the line tax for reports from **TaxTrans\_IN**. Therefore, you can't get the correct information from the **Invent** table and the **TaxTrans** table, and you can't do any report customization. After this release, the **InventTransId** value for shipment and receipt is different. It's now the same as in **InventTransferJourLine** for shipment and receipt.
 
 ### 10.0.19
 
