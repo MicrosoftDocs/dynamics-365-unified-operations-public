@@ -159,7 +159,7 @@ To create and configure a B2B account management landing page in site builder, f
 1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
 > [!NOTE] 
-> Some of the sections that you added in step 13 through 18 won't appear on the "what you see is what you get" (WYSIWIG) canvas in site builder, because they require a signed-in B2B account.
+> Some of the sections that you added in step 13 through 18 won't appear on the "what you see is what you get" (WYSIWYG) canvas in site builder, because they require a signed-in B2B account.
 
 ## Create and configure customer balance pages and modules 
 
