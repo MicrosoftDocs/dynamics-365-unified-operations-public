@@ -53,7 +53,7 @@ You can download a task recording (AXTR file) that has been uploaded to a BPM pr
 
 3. On the **Overview** pane, select **Download** to save the task recording (AXTR). 
 
-    ![Download AXTR.](./media/Download%20AXTR.png "Donload AXTR")
+    ![Download AXTR.](./media/Download%20AXTR.png "Download AXTR")
     
 ## Export a methodology to Word
 

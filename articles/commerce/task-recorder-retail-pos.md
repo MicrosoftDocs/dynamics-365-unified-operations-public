@@ -76,7 +76,7 @@ Follow these steps to create a new recording using Task recorder.
 
 After you end the recording session, several options are shown, so that you can download your recording.
 
-[![Download options.](./media/downlaod-options.jpg)](./media/downlaod-options.jpg)
+[![Download options.](./media/download-options.jpg)](./media/download-options.jpg)
 
 ### Save to this PC
 

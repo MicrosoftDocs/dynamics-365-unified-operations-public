@@ -47,7 +47,7 @@ Follow these steps to configure ER destinations for accounting documents.
     - **Model for binary data pipeline**
     - **Mapping for binary data pipeline**
 
-    For downpoad instructions, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
+    For download instructions, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
 3. Go to **Organization administration** \> **Document management** \> **Document management parameters**.
 4. On the **General** tab, on the **Electronic reporting** FastTab, in the **Accounting documents** field, select the **Format for binary data pipeline** format that you imported earlier.
