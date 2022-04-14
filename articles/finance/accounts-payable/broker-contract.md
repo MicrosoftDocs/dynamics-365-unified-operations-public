@@ -113,7 +113,7 @@ As a result of the approval, the following events will occur:
     > [!NOTE]
     > The expense account number is specified for the procurement category when purchase expenditure for expense posting is set up for purchase orders. The procurement category itself is defined on the **Broker and royalty** tab of the **Accounts payable parameters** page.
     
-On the **Broker claims** page, you can review the postings and documents associated with the claim, a vendor invoice number that was created for the broker. If the vendor invoice was posted (automatically or manually), on the **Invoices** tab, the **Date** and **Amount in transaction currency** fields contain the appropiate values. If the invoice is still pending, those fields are blank.    
+On the **Broker claims** page, you can review the postings and documents associated with the claim, a vendor invoice number that was created for the broker. If the vendor invoice was posted (automatically or manually), on the **Invoices** tab, the **Date** and **Amount in transaction currency** fields contain the appropriate values. If the invoice is still pending, those fields are blank.    
 
 If the **Approved** field for the claim line contains the same amount as the **Qualified** field, whereas the **Difference** field contains 0, it means that the claim has no unsettled issues and can now be closed.
 

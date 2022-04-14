@@ -39,7 +39,7 @@ After you install the model, follow these steps to add the new model to source c
 5. Open Source Control Explorer by clicking **View** > **Other Windows** > **Source Control Explorer**.
 6. Navigate to the metadata folder that is mapped on this development VM, such as **MyProject/Trunk/Main/Metadata**.
 7. In the metadata folder, find the folder for the package that contains the new model. Right-click the package folder, and then click **Add Items to Folder**.
-9. In the **Add to Source Control** dialog box, select the **Descriptor** folder and the folder that has the name of the model. Some models may also contain referenced DLLs in the **bin** folder. If these exist you'll need to also include the approriate DLL files from the **bin** folder. Once all files have been selected, click **Next**.
+9. In the **Add to Source Control** dialog box, select the **Descriptor** folder and the folder that has the name of the model. Some models may also contain referenced DLLs in the **bin** folder. If these exist you'll need to also include the appropriate DLL files from the **bin** folder. Once all files have been selected, click **Next**.
 10. Review the items that will be added, and then, when you're ready, click **Finish**.
 11. Open the **Pending Changes** window from the **Team Explorer** pane or by clicking **View** > **Other Windows** > **Pending Changes**.
 12. Review the changes, enter a check-in comment, and then click **Check In**.
