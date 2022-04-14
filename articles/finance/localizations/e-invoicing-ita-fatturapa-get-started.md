@@ -235,7 +235,7 @@ Follow these steps on the machine where the proxy service is hosted.
 4. In Control Panel, open **Turn Windows features on or off**, or go to **Server Manager** \> **Add Roles and Features** for the server operating system (OS), and turn on Internet Information Services (IIS) features:
 
     - Web Management Tools
-	    - IIS Management Concole
+	    - IIS Management Console
 	- World Wide Web Services
 	    - Application Development Features
 		    - .NET Extensibility 4.7 (or 4.8)
