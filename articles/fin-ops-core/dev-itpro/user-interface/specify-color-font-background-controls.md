@@ -61,9 +61,9 @@ Public void lookup()
         [r, g, b] = chosencolor;
         Colorvalue = WinAPI::RGB2int(r,g,b);
         This.backgroundColor(colorValue);
-        employeeWorkPlannerForm.parmAbsensceColor(colorvalue);
+        employeeWorkPlannerForm.parmAbsenceColor(colorvalue);
         Employeetable.columns(employeeworkplannerform.numberofcolumns());
-        Absenscecolorparm = colorvalue;
+        Absencecolorparm = colorvalue;
     }
 }
 ```
