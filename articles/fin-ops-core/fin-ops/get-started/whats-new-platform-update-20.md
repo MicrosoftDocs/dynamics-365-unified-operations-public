@@ -87,7 +87,7 @@ The Finance and Operations web client has started its journey of aligning to Mic
 
     ![New list page.](media/postPU20-customers-cropped.png  "New list page")
 
--  **FactBox pane** - The FactBox pane has also gotten a facelift. The pane now appears to span the full height of the page when open, and most importantly, the collapsed version is more discoverable and shows as a **Related information** blade along the right edge of the screen, instead of being an easily overlooed icon on the right.  
+-  **FactBox pane** - The FactBox pane has also gotten a facelift. The pane now appears to span the full height of the page when open, and most importantly, the collapsed version is more discoverable and shows as a **Related information** blade along the right edge of the screen, instead of being an easily overlooked icon on the right.  
 
     The following image shows how the FactBox pane appeared before Platform update 20:
 
