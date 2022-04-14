@@ -373,7 +373,7 @@ These methods have been refactored to support extensibility.
 |TaxProjInvoice.new|
 |TaxReport770TransHandler_IT.transferTaxWithholdTrans|
 |TaxReport770Validate_IT.validateVendors|
-|TaxSplitPaymentPost_IT.creareReverseTaxTrans|
+|TaxSplitPaymentPost_IT.createReverseTaxTrans|
 |TaxWithhold.postTaxWithhold|
 |TaxWithholdSpecialDP.createTaxWithholdSpecialTmp|
 |TmpProjAdjustmentCreate.createFromAdjustment|
