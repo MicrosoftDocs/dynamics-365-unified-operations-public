@@ -146,7 +146,7 @@ To receive electronic invoices, follow these steps:
 ## View receive logs for electronic invoices
 
 To view the receive logs for electronic invoices, go to **Organization administration** > **Periodic** > **Electronic documents** > **Electronic document receipt log**.
-If you don't see successfully proccesed invoices, remove the table filter.
+If you don't see successfully processed invoices, remove the table filter.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
