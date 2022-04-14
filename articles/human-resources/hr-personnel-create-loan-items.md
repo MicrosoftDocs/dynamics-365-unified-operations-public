@@ -60,7 +60,7 @@ Loan items are records that help you track physical items, such as phones or com
 11. In the **Starting value** field, enter a number.
 12. In the **Interval** field, enter a number.
 13. In the **Format** field, type a value.
-    * For example, if the starting number for a loan item is 10, enter two number symbols symbols in the **Format** field.  
+    * For example, if the starting number for a loan item is 10, enter two number symbols in the **Format** field.  
 14. Click **OK**.
 15. Refresh the page.
 
