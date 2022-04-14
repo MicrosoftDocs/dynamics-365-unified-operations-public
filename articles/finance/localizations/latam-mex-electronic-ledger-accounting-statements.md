@@ -211,7 +211,7 @@ This task walks through all necessary steps to configure the generation of elect
 3. In the list, select the Trial Balance XML format
 4. In the list, click the link in the selected row.
 5. In the Auxiliary ledger field, click the drop-down button to open the lookup.
-6. In the list, selecy the Auxiliary ledger XML format
+6. In the list, select the Auxiliary ledger XML format
 7. In the Ledger entries field, click the drop-down button to open the lookup.
 8. In the list, select the Journal XML format
 9. In the list, click the link in the selected row.
