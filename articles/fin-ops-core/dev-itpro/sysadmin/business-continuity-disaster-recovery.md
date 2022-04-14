@@ -25,7 +25,7 @@ For production environments, replicas of the different storage services (Azure S
 
 The geo-secondary replicas are kept synchronized with the primary instance through continuous data replication. There is a small replication latency, or lag—typically less than a few minutes—between the primary data sources and their corresponding geo-secondary replicas. For more information, see [Business continuity and disaster recovery (BCDR): Azure Paired Regions](/azure/best-practices-availability-paired-regions).
 
-![Geo-secondaries](media/Finance-and-Operations-apps.png)
+![Geo-secondaries](media/geo-secondary-replicas.png)
 
 For more information about data protection in non-production environments, see [Database movement operations home page](../database/dbmovement-operations.md).
 
