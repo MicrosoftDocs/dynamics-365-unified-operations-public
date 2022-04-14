@@ -303,7 +303,7 @@ The following table shows every standard step icon that is currently available, 
 <tr>
 <td><img src="media/step-icons-to-number.png" alt="To number step icon" title="To number step icon"><br>ToNum</td>
 <td><img src="media/step-icons-to-warehouse.png" alt="To warehouse step icon" title="To warehouse step icon"><br>ToWarehouse</td>
-<td><img src="media/step-icons-tranport-load-id.png" alt="Transport load ID step icon" title="Transport load ID step icon"><br>TransportLoadId</td>
+<td><img src="media/step-icons-transport-load-id.png" alt="Transport load ID step icon" title="Transport load ID step icon"><br>TransportLoadId</td>
 <td><img src="media/step-icons-vendor-batch-id.png" alt="Vendor batch ID step icon" title="Vendor batch ID step icon"><br>VendBatchId</td>
 </tr>
 <tr>
