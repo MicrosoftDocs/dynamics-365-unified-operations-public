@@ -36,7 +36,7 @@ This topic includes a summary of the new features and critical bug fixes release
 In India, the invoice received from the supplier may have different tax rates from the purchase order, which is supported by the tax rate type functionality.
  
 You can enable the feature in the **Feature management** workspace. The name of the feature is **(India) Enable changing tax rate type in purchase invoice**.
- ![Featue management, (India) Enable changing tax rate type in purchase invoice.](media/GST-changing-tax-rate-type-1-10-0-08.png )
+ ![Feature management, (India) Enable changing tax rate type in purchase invoice.](media/GST-changing-tax-rate-type-1-10-0-08.png )
  
 With the feature enabled, you can update the tax rate type in the tax information for a purchase invoice, so you can apply a different tax rate if needed.
 
