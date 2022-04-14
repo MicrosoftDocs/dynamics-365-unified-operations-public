@@ -407,7 +407,7 @@ The following table lists the new methods that have been extracted and opened fo
 |Form DirPartyQuickCreateForm.init|
 |Form HierarchyDetail.contextChanged|
 |Form HierarchyDetail: smmActivate:  initValue|
-|Form HierarchyNameLookoup: Hierarchy: init|
+|Form HierarchyNameLookup: Hierarchy: init|
 |Form LedgerJournalTransDimension.init|
 |Form ProjInvoiceProposalDetail.editInvoiceFormat|
 |Form SalesCopying.upDateRemainderCache|
