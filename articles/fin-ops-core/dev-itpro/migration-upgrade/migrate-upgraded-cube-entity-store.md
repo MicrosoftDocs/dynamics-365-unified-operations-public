@@ -145,7 +145,7 @@ This step requires that you the install Power BI desktop tool that can be downlo
 
 ### Create a Sales by state report
 
-1.  To create a report that shows sales by customer group, drag the **CustomerInvoiceAmountAccountingCurrency** field from the **SalesCubeV2\_CustomerIncoices** table and drop it on the Power BI desktop canvas. Next, drag the **CustomerGroupName** field in the **SalesCubeV2\_Customer** table to the same grid.
+1.  To create a report that shows sales by customer group, drag the **CustomerInvoiceAmountAccountingCurrency** field from the **SalesCubeV2\_CustomerInvoices** table and drop it on the Power BI desktop canvas. Next, drag the **CustomerGroupName** field in the **SalesCubeV2\_Customer** table to the same grid.
 2.  Change the chart type to a doughnut chart. You should see a report similar to the following.
 
     [![Power BI Doughnut Chart.](./media/doughnut-chart-1024x733.png)](./media/doughnut-chart.png)

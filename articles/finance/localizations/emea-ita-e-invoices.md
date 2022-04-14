@@ -61,7 +61,7 @@ Before you can begin to work with the electronic invoice functionality, the foll
 
 Select the configurations that are used to create electronic invoice XML files for sales and free text invoices, sales and free text credit notes, project invoices, and project credit notes. You can find these configurations on the **Electronic document** tab of the **Accounts receivable parameters** page (**Accounts receivable** \> **Setup** \> **Accounts receivable parameters**).
 
-![Electronic document tab of the Accounts receivable parameters page.](media/emea-ita-electronic-invocies-AR-parameter-e-invoices.png)
+![Electronic document tab of the Accounts receivable parameters page.](media/emea-ita-electronic-invoices-AR-parameter-e-invoices.png)
 
 > [!NOTE]
 > The configurations must be imported before they can be selected. For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
@@ -103,7 +103,7 @@ For the functionality to work, the following data must be set up:
 
 - Electronic document property types (**Accounts receivable** \> **Setup** \> **Electronic document property types**) and the table that each document property type is applicable to. For electronic invoice functionality, the **Customers** and **Legal entities** tables are used.
 
-    ![Setting applicability on the Electronic document property types page.](media/emea-ita-electronic-invocies-electronic-document-property-types.png)
+    ![Setting applicability on the Electronic document property types page.](media/emea-ita-electronic-invoices-electronic-document-property-types.png)
 
 - Required values in the specified tables at the customer and legal entity levels:
 
@@ -155,7 +155,7 @@ The value of this field is used to define the type of communication (business-to
 
 In both cases, the system enters the value of this field in the **CodiceDestinatario** tag in the XML file.
 
-![Authority office field on the Sales demographics FastTab of a customer record.](media/emea-ita-electronic-invocies-customer-authority-office.png)
+![Authority office field on the Sales demographics FastTab of a customer record.](media/emea-ita-electronic-invoices-customer-authority-office.png)
 
 If the **Authority office** field is blank, the system considers the customer a private company or professional (the transmission format equals **FPR12**), and enters **0000000** in the **CodiceDestinatario** tag in the XML file. In this case, a certified email address (PEC) should be set up. For more information, see the table in the [Electronic documents properties](#edproperties) section earlier in this topic.
 
@@ -163,7 +163,7 @@ If the **Authority office** field is blank, the system considers the customer a 
 
 Go to **Accounts receivable** \> **Customers** \> **All customers**, and open a customer record in **Edit** mode. Then, on the **Invoice and delivery** FastTab, in the **E-invoice** section, find the **eInvoice register** option. If this option is set to **Yes**, the system automatically creates the record on the **Electronic customer invoices** list page. For more information, see the [Electronic invoice register](#einvoiceregister) section later in this topic.
 
-![E-invoice section on the Invoice and delivery FastTab of a customer record.](media/emea-ita-electronic-invocies-customer-e-invoice.png)
+![E-invoice section on the Invoice and delivery FastTab of a customer record.](media/emea-ita-electronic-invoices-customer-e-invoice.png)
 
 In the **E-invoice** section, you can also set the **eInvoice attachment** option to **Yes**. In this case, after you print an invoice (either during or after posting), the system automatically attaches the PDF file to the invoice and electronic invoice (see the [Electronic invoice register](#einvoiceregister) section), and the file is included in the XML file (**Allegati** block).
 
@@ -257,7 +257,7 @@ For more information, see the "Invoice types configuration" section in [A countr
 
 To electronically sign electronic invoices by using a certificate of either the **Company** type or the **User** type, go to **Accounts receivable** \> **Setup** \> **Electronic signature certificates**.
 
-![Electronic signature certificates page.](media/emea-ita-electronic-invocies-certificate.png)
+![Electronic signature certificates page.](media/emea-ita-electronic-invoices-certificate.png)
 
 The party that is issuing invoices must use a qualified signature certificate to sign each FatturaPA file that is transmitted to the exchange system (Sistema di Interscambio \[SdI\]). A qualified signature certificate can be obtained from one of the certifiers in the [list of authorized certifiers](http://www.digitpa.gov.it/firma-digitale/certificatori-accreditati).
 
@@ -330,7 +330,7 @@ On the **Electronic customer invoices** page, you can perform the following acti
 > [!NOTE]
 > The **Electronic invoices** page (**Project management and accounting** \> **Project invoices** \> **E-invoices** \> **Electronic invoices**) resembles the **Electronic customer invoices** page and has the same functions.
 
-![Electronic customer invoices page.](media/emea-ita-electronic-invocies-electronic-customer-invoices.png)
+![Electronic customer invoices page.](media/emea-ita-electronic-invoices-electronic-customer-invoices.png)
 
 ## <a id="additionalfunctionality"></a>Additional functionality that affects the XML file
 
