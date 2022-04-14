@@ -90,7 +90,7 @@ There are other ways to subscribe to business events. For more information, and 
         "IsSuccess":true,
         "Batch JobId":<BatchJobId>,
         "ExceptionDetails":"",
-        "reponseMessage":"Status of supplied BatchJobId: *********** is Successfully updated to waiting state"
+        "responseMessage":"Status of supplied BatchJobId: *********** is Successfully updated to waiting state"
     }
     ```
 
