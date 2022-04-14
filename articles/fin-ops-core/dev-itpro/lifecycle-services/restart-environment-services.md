@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 7.3
 
 You can use the Restart services functionality in Microsoft Dynamics Lifecycle Services (LCS) to restart individual services that are associated with a Tier 2, Tier 3, Tier 4, or Tier 5 standard acceptance test (sandbox) environment of the **Self-service** type. You can use this functionality to restart the following services:
 
-- **Finance and Operations apps service** - This includes the X++ runtime, as well as batch functinality.
+- **Finance and Operations apps service** - This includes the X++ runtime, as well as batch functionality.
 - **Data management service**  - This is also known as the Data Import/Export service.
 - **Financial reporting service** - Used to generate financial statements. 
 
