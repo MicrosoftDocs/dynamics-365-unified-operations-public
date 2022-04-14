@@ -46,7 +46,7 @@ Public void lookup()
 {
     #DEFINE.COLORVALUE(64)
     Int r,g,b
-    container choosencolor;
+    container chosencolor;
     Binary customcolors = new Binary(#COLORVALUE);
     CCColor colorvalue;
 
