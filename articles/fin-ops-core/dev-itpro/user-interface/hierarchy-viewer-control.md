@@ -37,7 +37,7 @@ public void init(){
     …    
     // HierarchyViewer is the auto-declared name for the control.
     // handleNodeSelected is your event handler.
-    HierarchyViewer.notfiyNodeSelected += eventhandler(element.handleNodeSelected);
+    HierarchyViewer.notifyNodeSelected += eventhandler(element.handleNodeSelected);
 }
 public void handeNodeSelected(int _nodeId)
 {
