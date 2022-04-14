@@ -94,7 +94,7 @@ When debug mode is turned on, you can find the selected posting profiles in the 
 
 To work correctly, the tax engine relies on input from taxable documents, such as sales and purchase invoices. If you extend the configuration by adding new fields, fields might be incorrectly mapped, or the writing to the data provider might be incorrect. To identify the issue, set the **Check model mapping discrepancies** option to **Yes**. You can view an additional section to show the discrepancies.
 
-![Check model mapping discrepancies option.](media/GTE-model-mapping-deprepancies.png)
+![Check model mapping discrepancies option.](media/GTE-model-mapping-discrepancies.png)
 
 ### Incorrect tax component
 
