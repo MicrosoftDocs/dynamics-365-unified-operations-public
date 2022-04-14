@@ -77,7 +77,7 @@ public static void TestLastName()
 
 ### Field attributes
 
-You can decorate a field with an attribute, in the same way that attributes can decorate classes and methods. The following example decorates the **myField** field with the **MyAtribute** attribute.
+You can decorate a field with an attribute, in the same way that attributes can decorate classes and methods. The following example decorates the **myField** field with the **MyAttribute** attribute.
 
 ```xpp
 class MyClass

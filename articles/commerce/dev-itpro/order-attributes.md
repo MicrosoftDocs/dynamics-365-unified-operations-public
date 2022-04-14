@@ -244,7 +244,7 @@ You can find the full sample code in the Retail SDK at Retail SDK\\SampleExtensi
 
 ## Extend a Dynamics 365 Commerce e-commerce site to set values for order attributes in the cart
 
-Use this code to set values for order attibutes in the cart.
+Use this code to set values for order attributes in the cart.
 
 ```javascript
 public _addOrUpdateSalesOrderAttributes = (cart: Cart): void => {
