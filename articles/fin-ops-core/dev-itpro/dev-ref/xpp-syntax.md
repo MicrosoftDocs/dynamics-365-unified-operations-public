@@ -1037,7 +1037,7 @@ This section contains the BNF that defines the grammar of X++.
            ::= FUNCTION
            ::= INTRINSICS
            ::= EVAL
-           ::= CONLITTERAL
+           ::= CONLITERAL
            ::= NEW_CLR_ARRAY
     NEW_CLR_ARRAY ::= NEW_SYM  EVAL_CLR_TYPE  NEW_CLR_ARRAY_PART  LEFT_PAR_SYM  RGHT_PAR_SYM
     NEW_CLR_ARRAY_PART ::= CLR_SIZED_ARRAY  CLR_NOSIZED_ARRAY_SPEC
@@ -1053,7 +1053,7 @@ This section contains the BNF that defines the grammar of X++.
                          ::= 
     CLR_EMPTY_RECT_COMMA_LIST ::= LIST_SEP_SYM
                               ::= CLR_EMPTY_RECT_COMMA_LIST  LIST_SEP_SYM
-    CONLITTERAL ::= LEFT_BRKT_SYM  IF_EXPR  EXPR_LIST  RGHT_BRKT_SYM
+    CONLITERAL ::= LEFT_BRKT_SYM  IF_EXPR  EXPR_LIST  RGHT_BRKT_SYM
     CONSTANT ::= INT_SYM
              ::= DBL_SYM
              ::= STR_SYM
