@@ -290,7 +290,7 @@ The following procedure applies to the electronic message processing example tha
     | Corrective return | Select **Yes** if this is corrective VAT declaration. In this case, XML element KZ10 will have a value of **1**.|
     | Supporting documents | Select **Yes** if you also send supporting documents. In this case, XML element KZ22 will have a value of **1**.|
     | The SEPA direct debit mandate will be revoked as an exception| Select **Yes** if the SEPA direct debit mandate will be revoked as an exception for this pre-registration period. For example, because of offsetting requests. Any remaining balance is to be paid separately. In this case, XML element KZ26 will have a value of **1**. |
-    | Offsetting of the reimburcement amount desired | Select **Yes** if offsetting of the reimbursement amount wanted or if the reimbursement amount has been assigned. In this case, XML element KZ29 will have a value of **1**. |
+    | Offsetting of the reimbursement amount desired | Select **Yes** if offsetting of the reimbursement amount wanted or if the reimbursement amount has been assigned. In this case, XML element KZ29 will have a value of **1**. |
     | Special advance payment permanent extension | Enter the deduction amount of the fixed special advance payment for permanent extension. This deduction amount is usually only completed in the last pre-registration of the tax period. The amount is exported in row 67 (box 39) and XML element KZ39 of the VAT declaration. |
 
 11. Select **Attachments** in the upper-right corner of the page, and then select **Open**.
