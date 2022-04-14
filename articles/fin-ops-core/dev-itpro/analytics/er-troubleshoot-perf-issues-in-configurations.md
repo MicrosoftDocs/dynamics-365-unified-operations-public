@@ -163,7 +163,7 @@ ER can show the execution time of the configuration in the Action center. This o
 
 1. Open Windows Event Viewer.
 2. Under **Applications and Services logs**, open **Microsoft-Dynamics-ElectronicReporting/Operational**.
-3. Look for **FormatMapingRun** events where **EventID=2**, because these events contain the information about elapsed time.
+3. Look for **FormatMappingRun** events where **EventID=2**, because these events contain the information about elapsed time.
 
 #### <a name="trace-parser"></a>Trace parser traces 
 
