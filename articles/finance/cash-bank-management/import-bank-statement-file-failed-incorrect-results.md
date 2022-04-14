@@ -38,7 +38,7 @@ It's important that the bank statement file from the bank matches the layout tha
 After you try to import a bank statement file, go to the Data management job history and its execution details to find the error. The error can help by pointing to the statement, balance, or statement line. However, it's unlikely to provide enough information to help you identify the field or element that is causing the issue.
 
 > [!NOTE]
-> Imported bank statements can overlap only for single a point in time.  For example, if a statement ends at 12:00 AM on January 1, 2021, then beginning date for the next statement can be 12:00 AM on Jarnuary 1, 2021 12:00:00 AM.
+> Imported bank statements can overlap only for single a point in time.  For example, if a statement ends at 12:00 AM on January 1, 2021, then beginning date for the next statement can be 12:00 AM on January 1, 2021 12:00:00 AM.
 
 ## What are the differences?
 Compare the bank file layout definition to the Finance import definition, and note any differences in the fields and elements. Compare the bank statement file to the related sample Finance file. In the ISO20022 files, any differences should be easy to see.
