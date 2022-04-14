@@ -3860,7 +3860,7 @@
       - name: Transportation management
         items:
         - name: Can only add the main account as the credit account for reconciliation reasons
-          href: troubleshooting/transportation/reconciliation-reaso.md
+          href: troubleshooting/transportation/reconciliation-reason.md
       - name: Warehouse management
         items:
         - name: Warehouse mobile app
