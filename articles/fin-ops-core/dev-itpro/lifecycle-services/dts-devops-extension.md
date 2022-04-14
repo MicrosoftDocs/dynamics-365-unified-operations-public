@@ -4,7 +4,7 @@
 title: Dynamics 365 Translation Service Azure DevOps extension
 description: This topic explains how to integrate the Dynamics 365 Translation Service DevOps extension into your Azure DevOps workflow.
 author: joshsantana
-ms.date: 02/09/2022
+ms.date: 04/14/2022
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
