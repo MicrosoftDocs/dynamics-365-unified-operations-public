@@ -80,7 +80,7 @@ Autoformatting allows you to keep the entire expression well formatted to make f
 
 The editor provides word completion to help you write expression faster and avoid typos. When you start adding new text, the editor automatically offers a list of functions supported in ER functions that contain the characters you have entered. You can also trigger IntelliSense in any place of a configured expression by typing **Ctrl+Space**.
 
-[![ER formula editor gif showing triggering IntelliSense.](./media/ER-AdvEditor-Intelisense.gif)](./media/ER-AdvEditor-Intelisense.gif)
+[![ER formula editor gif showing triggering IntelliSense.](./media/ER-AdvEditor-Intellisense.gif)](./media/ER-AdvEditor-Intellisense.gif)
 
 ## <a name="CodeCompletion">Code completion</a>
 
