@@ -2,8 +2,7 @@
 # required metadata
 
 title: Alignment date scenarios
-description: This topic provides examples of how alignment dates function in Subscription billing.  
-  
+description: This topic provides examples that show how alignment dates work in Subscription billing.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -12,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  
+ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -30,122 +29,178 @@ ms.dyn365.ops.version: 10.0.24
 
 # Alignment date scenarios
 
-This topic provides examples of how alignment dates function in Subscription billing.  
+This topic provides examples that show how alignment dates work in Subscription billing.
 
-In this example, a billing detail for a billing schedule has the alignment date of October 31, 2019. The first billing detail for the line ends on October 31, 2019 and is prorated accordingly. The line is automatically renewed with the renewal start date of November 11.
+For these examples, a billing detail for a billing schedule has an alignment date of October 31, 2019. The first billing detail for the line ends on October 31, 2019 and is prorated accordingly. The line is automatically renewed by using a renewal start date of November 11.
 
->[!Note]  
->The year is relevant because it can cause the alignment date to be shorter or longer than a year. The proration method is set to **Monthly** in **Recurring contract billing parameters**. If this is set to **Daily**, some partial amounts will be different. 
+> [!NOTE]
+> The year is relevant because it can cause the alignment date to be shorter or longer than a year. For these examples, the proration method is set to **Monthly** on the **Recurring contract billing parameters** page. If it's set to **Daily**, some partial amounts will differ.
 
-## Scenario 1: No Alignment
+## Scenario 1: No alignment
 
-The billing schedule is set up with the following data: 
-* Start date: May 1, 2019
-* End date: December 31, 2024
-* Amount: $1,000
+The billing schedule is set up with the following data:
 
-[![Alignment with no alignment.](./media/Alignment1.png)](./media/Alignment1.png)
+- **Start date:** May 1, 2019
+- **End date:** December 31, 2024
+- **Amount:** $1,000
 
-## Scenario 2: Shortened Alignment
+| Billing start date | Billing end date | Previous reading | Current reading | Quantity entered | Free quantity | Billable quantity | Unit price |
+|---|---|---|---|---|---|---|---|
+| 5/1/2019 | 4/30/2020 | | | 1.00 | | 1.00 | 1,000.00 |
+| 5/1/2020 | 4/30/2021 | | | 1.00 | | 1.00 | 1,000.00 |
+| 5/1/2021 | 4/30/2022 | | | 1.00 | | 1.00 | 1,000.00 |
+| 5/1/2022 | 4/30/2023 | | | 1.00 | | 1.00 | 1,000.00 |
+| 5/1/2023 | 4/30/2024 | | | 1.00 | | 1.00 | 1,000.00 |
+| 5/1/2024 | 12/31/2024 | | | 1.00 | | 1.00 | 666.67 |
 
-The billing schedule is set up with the following data: 
-* Start date: May 1, 2019
-* End date: December 31, 2024
-* Amount: $1000
-* Alignment Date: 12/31/2019
+## Scenario 2: Shortened alignment
 
-The first renewal amount is shorter than one year. 
+The billing schedule is set up with the following data:
 
-[![Alignment with shortened alignment.](./media/Alignment2.png)](./media/Alignment2.png)
+- **Start date:** May 1, 2019
+- **End date:** December 31, 2024
+- **Amount:** $1,000
+- **Alignment date:** December 31, 2019
 
-## Scenario 3: Extended Alignment
+The first renewal amount is for less than one year.
 
-The billing schedule is set up with the following data: 
-* Start date: May 1, 2019
-* End date: December 31, 2024
-* Amount: $1000
-* Alignment Date: 12/31/2020
+| Billing start date | Billing end date | Previous reading | Current reading | Quantity entered | Free quantity | Billable quantity | Unit price |
+|---|---|---|---|---|---|---|---|
+| 5/1/2019 | 12/31/2019 | | | 1.00 | | 1.00 | 666.67 |
+| 1/1/2020 | 12/31/2020 | | | 1.00 | | 1.00 | 1,000.00 |
+| 1/1/2021 | 12/31/2021 | | | 1.00 | | 1.00 | 1,000.00 |
+| 1/1/2022 | 12/31/2022 | | | 1.00 | | 1.00 | 1,000.00 |
+| 1/1/2023 | 12/31/2023 | | | 1.00 | | 1.00 | 1,000.00 |
+| 1/1/2024 | 12/31/2024 | | | 1.00 | | 1.00 | 1,000.00 |
 
-The first renewal amount is longer than one year. 
+## Scenario 3: Extended alignment
 
-[![Alignment with exteneded alignment.](./media/Alignment3.png)](./media/Alignment3.png)
+The billing schedule is set up with the following data:
 
-## Scenario 4: Alignment with Different End Month
+- **Start date:** May 1, 2019
+- **End date:** December 31, 2024
+- **Amount:** $1,000
+- **Alignment date:** December 31, 2020
 
-The billing schedule is set up with the following data: 
-* Start date: May 1, 2019
-* Alignment date: December 31, 2019
-* End date: October 31, 2024
-* Amount: $1000
+The first renewal amount is for more than one year.
 
->[!Note]  
->This is not a common scenario. 
+| Billing start date | Billing end date | Previous reading | Current reading | Quantity entered | Free quantity | Billable quantity | Unit price |
+|---|---|---|---|---|---|---|---|
+| 5/1/2019 | 12/31/2020 | | | 1.00 | | 1.00 | 1,666.67 |
+| 1/1/2021 | 12/31/2021 | | | 1.00 | | 1.00 | 1,000.00 |
+| 1/1/2022 | 12/31/2022 | | | 1.00 | | 1.00 | 1,000.00 |
+| 1/1/2023 | 12/31/2023 | | | 1.00 | | 1.00 | 1,000.00 |
+| 1/1/2024 | 12/31/2024 | | | 1.00 | | 1.00 | 1,000.00 |
 
-[![Alignment with a different end month.](./media/Alignment4.png)](./media/Alignment4.png)
+## Scenario 4: Alignment with a different end month
 
-## Scenario 5: Single Partial Year
+The billing schedule is set up with the following data:
 
-The billing schedule is set up with the following data: 
-* Start date: May 1, 2019
-* Alignment Date: December 31, 2019
-* End date: December 31, 2019
-* Amount: $1000
+- **Start date:** May 1, 2019
+- **End date:** October 31, 2024
+- **Amount:** $1,000
+- **Alignment date:** December 31, 2019
 
-In this scenario, the alignment date isn't needed. This scenario is common for automatic renewals. 
+> [!NOTE]
+> This scenario isn't common.
 
-[![Alignment with single partial year.](./media/Alignment5.png)](./media/Alignment5.png)
+| Billing start date | Billing end date | Previous reading | Current reading | Quantity entered | Free quantity | Billable quantity | Unit price |
+|---|---|---|---|---|---|---|---|
+| 5/1/2019 | 12/31/2019 | | | 1.00 | | 1.00 | 666.67 |
+| 1/1/2020 | 12/31/2020 | | | 1.00 | | 1.00 | 1,000.00 |
+| 1/1/2021 | 12/31/2021 | | | 1.00 | | 1.00 | 1,000.00 |
+| 1/1/2022 | 12/31/2022 | | | 1.00 | | 1.00 | 1,000.00 |
+| 1/1/2023 | 12/31/2023 | | | 1.00 | | 1.00 | 1,000.00 |
+| 1/1/2024 | 10/31/2024 | | | 1.00 | | 1.00 | 833.33 |
 
-## Scenario 6: Calculated Dates
+## Scenario 5: Single partial year
 
-The support and renewal is set up with the following data: 
-* Override start date: No
-* Support and Renewal start dates: Beginning of next month
-* Invoice posting date: June 22, 2019
-* Alignment date: December 31, 2020
+The billing schedule is set up with the following data:
 
-[![Alignment with claculated dates.](./media/Alignment6.png)](./media/Alignment6.png)
+- **Start date:** May 1, 2019
+- **End date:** December 31, 2019
+- **Amount:** $1,000
+- **Alignment date**: December 31, 2019
 
-## Scenario 7: Calculated Dates, Future Posting
+In this scenario, the alignment date isn't needed. This scenario is common for automatic renewals.
 
-The support and renewal is set up with the following data: 
-* Override start date: No
-* Support and Renewal start dates: Beginning of next month
-* Invoice posting date: June 22, 2019
-* Alignment date: December 31, 2020
+| Billing start date | Billing end date | Previous reading | Current reading | Quantity entered | Free quantity | Billable quantity | Unit price |
+|---|---|---|---|---|---|---|---|
+| 5/1/2019 | 12/31/2019 | | | 1.00 | | 1.00 | 666.67 |
 
-For this scenario, the Alignment date is changed to December 31, 2021
+## Scenario 6: Calculated dates
 
-[![Alignment with calcuated dates and future posting.](./media/Alignment7.png)](./media/Alignment7.png)
+The support and renewal is set up with the following data:
 
-## Scenario 8: Manual Dates, Multiple Years
+- **Override start date:** No
+- **Support and renewal start dates:** Beginning of next month
+- **Invoice posting date:** June 22, 2019
+- **Alignment date:** December 31, 2020
 
-The support and renewal is set up with the following data: 
-* Override start date: Yes
-* Renewal start date: July 1,2020
-* Renewal end date: December 31, 2024
-* Alignment date: December 31, 2021
+| Billing start date | Billing end date | Previous reading | Current reading | Quantity entered | Free quantity | Billable quantity | Unit price |
+|---|---|---|---|---|---|---|---|
+| 7/1/2019 | 7/31/2019 | | | 1.00 | | 1.00 | 297.60 |
+| 8/1/2019 | 12/31/2020 | | | 1.00 | | 1.00 | 6,936.00 |
 
-[![Alignment with manual dates and multiple years.](./media/Alignment8.png)](./media/Alignment8.png)
+## Scenario 7: Calculated dates and future posting
 
-## Scenario 9: Manual Dates, Multiple Years, Different End Month
+The support and renewal is set up with the following data:
 
-The support and renewal is set up with the following data: 
-* Override start date: Yes
-* Renewal start date: July 1, 2020
-* Renewal end date: October 31, 2024
-* Alignment date: December 31, 2021
+- **Override start date:** No
+- **Support and renewal start dates:** Beginning of next month
+- **Invoice posting date:** June 22, 2019
+- **Alignment date:** December 31, 2020
 
-[![Alignment with different end month.](./media/Alignment9.png)](./media/Alignment9.png)
+For this scenario, the alignment date is changed to December 31, 2021.
 
-## Scenario 10: Alignment Without Proration 
+| Billing start date | Billing end date | Previous reading | Current reading | Quantity entered | Free quantity | Billable quantity | Unit price |
+|---|---|---|---|---|---|---|---|
+| 6/22/2019 | 6/22/2019 | | | 1.00 | | 1.00 | 0.00 |
+| 8/1/2019 | 12/31/2020 | | | 1.00 | | 1.00 | 4,250.00 |
 
-The support and renewal is set up with the following data: 
-* Override start date: No
-* Invoice posting date: June 22, 2019 
-* Alignment date: December 31, 2019
+## Scenario 8: Manual dates and multiple years
 
-The renewal start and the alignment dates are adjusted so that both start dates are after the posting date. 
-* Renewal start date: January 1, 2020
-* Renewal end date: December 31, 2020
+The support and renewal is set up with the following data:
 
+- **Override start date:** Yes
+- **Renewal start date:** July 1,2020
+- **Renewal end date:** December 31, 2024
+- **Alignment date:** December 31, 2021
 
+| Billing start date | Billing end date | Previous reading | Current reading | Quantity entered | Free quantity | Billable quantity | Unit price |
+|---|---|---|---|---|---|---|---|
+| 6/22/2019 | 6/22/2019 | | | 1.00 | | 1.00 | 0.00 |
+| 7/1/2020 | 12/31/2021 | | | 1.00 | | 1.00 | 375.00 |
+| 1/1/2022 | 12/31/2022 | | | 1.00 | | 1.00 | 250.00 |
+| 1/1/2023 | 12/31/2023 | | | 1.00 | | 1.00 | 250.00 |
+| 1/1/2024 | 12/31/2024 | | | 1.00 | | 1.00 | 250.00 |
+
+## Scenario 9: Manual dates, multiple years, and a different end month
+
+The support and renewal is set up with the following data:
+
+- **Override start date:** Yes
+- **Renewal start date:** July 1, 2020
+- **Renewal end date:** October 31, 2024
+- **Alignment date:** December 31, 2021
+
+| Billing start date | Billing end date | Previous reading | Current reading | Quantity entered | Free quantity | Billable quantity | Unit price |
+|---|---|---|---|---|---|---|---|
+| 6/22/2019 | 6/22/2019 | | | 1.00 | | 1.00 | 0.00 |
+| 7/1/2020 | 12/31/2021 | | | 1.00 | | 1.00 | 375.00 |
+| 1/1/2022 | 12/31/2022 | | | 1.00 | | 1.00 | 250.00 |
+| 1/1/2023 | 12/31/2023 | | | 1.00 | | 1.00 | 250.00 |
+| 1/1/2024 | 10/31/2024 | | | 1.00 | | 1.00 | 208.33 |
+
+## Scenario 10: Alignment without proration
+
+The support and renewal is set up with the following data:
+
+- **Override start date:** No
+- **Invoice posting date:** June 22, 2019
+- **Alignment date:** December 31, 2019
+
+The renewal start date and the alignment dates are adjusted so that both start dates are after the posting date.
+
+- **Renewal start date:** January 1, 2020
+- **Renewal end date:** December 31, 2020
