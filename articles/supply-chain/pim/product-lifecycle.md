@@ -93,7 +93,7 @@ Use the following criteria to select and update the released products and produc
 - The product lifecycle state of the product or product variant must be different from the new desired state.
 - The product or product variant was created some days ago based on the number of days that you enter in the selection dialog box.
 - There are no open production orders (= status < ended) for the product or product variant.
-- There are no open inventory transactions (= status issue ReservPhysical to QuotationIssue or status receipt Registrered to QuotationReceipt) for the product or product variant.
+- There are no open inventory transactions (= status issue ReservPhysical to QuotationIssue or status receipt Registered to QuotationReceipt) for the product or product variant.
 - There are no inventory transactions within the last number of days for the product or product variant.
 - There is no future demand or supply forecast for the product or product variant.  
 - No minimum stock level has been set in item coverage for the product or product variant.
