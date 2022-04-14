@@ -138,7 +138,7 @@ For more information, see [Specify a custom storage location for generated docum
 
 ### Post-processing of imported files
 
-Import functionality in Electronic reporting (ER) uses SharePoint folders to get the next set of files for processing. In previous releasess there was no automatic process to manage processed files. For example, successfully processed files were automatically deleted from a SharePoint source folder and couldn't be moved to another location. This resulted in additional manual work and potential errors. With this feature, there is a process to automatically manage processed files, which allows you to configure the post-processing actions. By changing the source settings of an ER format, you can configure the following actions:
+Import functionality in Electronic reporting (ER) uses SharePoint folders to get the next set of files for processing. In previous releases there was no automatic process to manage processed files. For example, successfully processed files were automatically deleted from a SharePoint source folder and couldn't be moved to another location. This resulted in additional manual work and potential errors. With this feature, there is a process to automatically manage processed files, which allows you to configure the post-processing actions. By changing the source settings of an ER format, you can configure the following actions:
 
 For successfully processed files:
 - Delete files from the source SharePoint folder.
