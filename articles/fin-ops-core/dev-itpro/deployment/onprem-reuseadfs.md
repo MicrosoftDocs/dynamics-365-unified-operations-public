@@ -35,7 +35,7 @@ This topic explains how to use the same instance of Active Directory Federation 
 ## Setup
 
 > [!IMPORTANT]
-> This procedure assumes that you've previously configured AD FS for one environment by following the instructions in the [Set up and deploy on-premises environments](./setup-deploy-on-premises-environments.md) content. It also assumes that that environment is running without any issues.
+> This procedure assumes that you've previously configured AD FS for one environment by following the instructions in the [Set up and deploy on-premises environments](./setup-deploy-on-premises-environments.md) content. It also assumes that environment is running without any issues.
 
 1. In AD FS Manager, go to **AD FS** \> **Application groups**, and open **Microsoft Dynamics 365 for Operations On-premises**.
 2. In the **Native application** section, follow these steps:

@@ -55,7 +55,7 @@ The SEPA Core Direct Debit Scheme is the basic scheme. It has the following attr
 The SEPA B2B Direct Debit Scheme applies to business-to-business transactions and builds on the SEPA Core Direct Debit Scheme. The main differences are:
 -   The SEPA B2B Direct Debit Scheme is not allowed when the customer is a private individual (consumer).
 -   The customer is not entitled to obtain a refund of an authorized transaction.
--   Customer banks must make sure that that the collection is authorized, by verifying the collection against mandate information. Customer banks and customers are required to agree on the verification that will be performed for each direct debit.
+-   Customer banks must make sure that the collection is authorized, by verifying the collection against mandate information. Customer banks and customers are required to agree on the verification that will be performed for each direct debit.
 -   The scheme offers a shorter timeline for presenting direct debits and reduces the return period.
 
 ## Can I use the COR1 scheme for direct debit mandates?

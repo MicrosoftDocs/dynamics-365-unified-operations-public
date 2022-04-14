@@ -78,7 +78,7 @@ For more details, follow the instructions for applying a binary hotfix in [Apply
 > **Migrate files for Document management**: After upgrading to Platform update 6 or later, an administrator needs to click the **Migrate Files** button on the **Document management parameters** page to finish the upgrade process. This will migrate any attachments stored in the database to blob storage. The migration will run as a batch process and could take a long time, depending on the number and size of the files being moved from the database into Azure blob storage. The attachments will continue to be available to users while the migration process is running, so there should be no noticeable effects from the migration. To check if the batch process is still running, look for the **Migrate files stored in the database to blob storage** process on the **Batch jobs** page.
 
 ## Apply a platform update to environments that are not connected to LCS
-This section describes how to apply a platform update package to a *local development environment* (one that that is not connected to LCS).
+This section describes how to apply a platform update package to a *local development environment* (one that is not connected to LCS).
 
 ### How to get the platform update package
 Platform update packages are released by Microsoft and can be imported from the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). The package name is prefixed with **Dynamics 365 Unified Operations Platform Update**. Use these steps to import the platform update package:

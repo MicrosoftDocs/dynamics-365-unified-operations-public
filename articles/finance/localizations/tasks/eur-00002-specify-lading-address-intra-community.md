@@ -45,7 +45,7 @@ This procedure applies to all European countries/regions. The task was created u
 12. Click New and create new address with purpose Lading.
 13. In the Name or description field, type 'Italian'.
 14. Select Lading as the value.
-    * Note that that address purpose must be Lading.  
+    * Note that address purpose must be Lading.  
 15. In the Country/region field, enter or select a value ITA.
 16. Click Save.
 17. Close the page.

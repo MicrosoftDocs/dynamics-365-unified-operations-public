@@ -50,7 +50,7 @@ Follow these steps to transfer a fixed asset or a group of fixed assets from one
 
 ## Transfer assets between companies
 
-You can create individual transfer transactions to transfer assets to another company. If the companies are in separate databases, transfer transactions are created in the company that you're transferring the asset from, and receipt transactions are created in the company that that you're transferring the asset to.
+You can create individual transfer transactions to transfer assets to another company. If the companies are in separate databases, transfer transactions are created in the company that you're transferring the asset from, and receipt transactions are created in the company that you're transferring the asset to.
 
 ### Adjust the value model settings to transfer an asset
 

@@ -149,7 +149,7 @@ It is recommended to use one calendar per warehouse to include the specific chan
 If no warehouse calendars are set, the legal entity calendar can be used as a source of defaults for the warehouse calendar. 
 
 ### Recommendation of coverage group calendars
-Regarding the coverage group calendar, it is important to consider that that has an overriding behavior regarding receiving dates in master planning. Thus, it is recommended to use it with caution. Particularly, it is useful in the case when replenishment needs to be done specific days in the week. 
+Regarding the coverage group calendar, it is important to consider that has an overriding behavior regarding receiving dates in master planning. Thus, it is recommended to use it with caution. Particularly, it is useful in the case when replenishment needs to be done specific days in the week. 
 
 ### Updating SCM related calendars
 While it is important that all relevant calendars are assigned in their respective place (vendor, customer, warehouse, mode of delivery, or coverage group), updating them is as important so they reflect the changes. The system will define the production, transfer, purchase, and sales order dates depending on the combination of the assigned calendars. 

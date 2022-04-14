@@ -921,7 +921,7 @@ The following sections provide focused debugging steps for claims that are retur
 #### Repo/capture
 
 1. Open Fiddler, go to **Tools \> Options \> HTTPS**, and select **Decrypt HTTPS traffic**.
-2. Start to capture traffic (the shortcut key is F12). You can verify that that traffic is being captured by looking at the lower left of the tool.
+2. Start to capture traffic (the shortcut key is F12). You can verify that traffic is being captured by looking at the lower left of the tool.
 3. Open an InPrivate instance of Internet Explorer or an Incognito instance of Chrome.
 4. Open Finance + Operations (for example, `https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/`).
 5. Sign in by using the USERINFO.NETWORKALIAS account and password.

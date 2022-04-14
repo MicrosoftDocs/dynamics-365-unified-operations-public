@@ -89,7 +89,7 @@ The following illustration shows the **TransTypeList** data source that is confi
 > [!NOTE]
 > The **EnumValue** field is configured for the **TransTypeList** data source by using the `GETENUMVALUEBYNAME(TransType, TransTypeList.Name)` expression. This field returns an enumeration value for every record in this list.
 
-![Data source of a model mapping that that returns all enumeration values of a selected enumeration as a list of records.](./media/er-functions-text-getenumvaluebyname-example2-2.png)
+![Data source of a model mapping that returns all enumeration values of a selected enumeration as a list of records.](./media/er-functions-text-getenumvaluebyname-example2-2.png)
 
 The following illustration shows the **VendTrans** data source that is configured in a model mapping. This data source returns vendor transaction records from the **VendTrans** application table. The ledger type of every transaction is defined by the value of the **TransType** field.
 
@@ -98,7 +98,7 @@ The following illustration shows the **VendTrans** data source that is configure
 >
 > The **TransTypeTitle** field is bound to the **LedgerType** field of a data model that enables this information to be used in every ER format that uses the data model as a source of data.
 
-![Data source of a model mapping that that returns vendor transactions.](./media/er-functions-text-getenumvaluebyname-example2-3.png)
+![Data source of a model mapping that returns vendor transactions.](./media/er-functions-text-getenumvaluebyname-example2-3.png)
 
 The following illustration shows how you can use the [data source debugger](er-debug-data-sources.md) to test the configured model mapping.
 

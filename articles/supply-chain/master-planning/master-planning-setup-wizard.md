@@ -119,7 +119,7 @@ For calculated delays, your answers to the questions in the wizard will update t
 
 ## Summary of your changes
 
-The last page of the wizard shows the changes that that are recommended based on your responses. It shows both the value in your setup (**Current setup**) and the value that the wizard recommends (**New configuration**).
+The last page of the wizard shows the changes that are recommended based on your responses. It shows both the value in your setup (**Current setup**) and the value that the wizard recommends (**New configuration**).
 
 You can also modify the parameters in the new configuration. The parameters are separated into parameters that apply to your legal entity and parameters that apply only to the master plan that you selected. To view all the setup parameters that can be changed by using the wizard, select **Show all parameters** at the bottom of the page. You can then change the parameters.
 
