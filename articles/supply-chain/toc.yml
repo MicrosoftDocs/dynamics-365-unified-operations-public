@@ -3264,7 +3264,7 @@
         - name: Costing parameter values setup
           href: landed-cost/costing-parameters-setup.md
         - name: Default descriptions for the general ledger
-          href: landed-cost/defult-descriptions.md
+          href: landed-cost/default-descriptions.md
       - name: Vendor settings added for Landed cost
         href: landed-cost/vendors-landed-cost-settings.md
       - name: Work with voyages, containers, and folios
