@@ -60,7 +60,7 @@ Typically, the following data is traced for a transaction:
 
 #### Accounting data
 
-Finance is fully compliant with the requirement to record accounting data. The **Audit trail** function on the **Voucher transaction inquiry** page fetches the financial transaction entries that are posted in the general ledger and on reports. The function opens the **Audit trail inquiry** page, which shows who posted the transaction, when, and from which document type. The following graphic shows the autidt trail option in Finance. 
+Finance is fully compliant with the requirement to record accounting data. The **Audit trail** function on the **Voucher transaction inquiry** page fetches the financial transaction entries that are posted in the general ledger and on reports. The function opens the **Audit trail inquiry** page, which shows who posted the transaction, when, and from which document type. The following graphic shows the audit trail option in Finance. 
 
    ![Standard view of audit trail page.](media/standard-view-page.png)
     
