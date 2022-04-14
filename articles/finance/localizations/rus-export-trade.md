@@ -486,7 +486,7 @@ As a result of posting the marked factures, the following actions occur:
 2. On the Action Pane, select **Select** to select data for the cancellation of processing.
 3. In the **VAT processing cancellation – select data for period** dialog box, on the **Parameters** FastTab, in the **From date** and **To date** fields, specify the period that you want to cancel processed VAT for.
 
-    ![VAT processing calcellation - select data for period dialog.](media/13_VAT_processing_cancellation_-_select_data_for_period.png)
+    ![VAT processing cancellation - select data for period dialog.](media/13_VAT_processing_cancellation_-_select_data_for_period.png)
 
 4. Select **OK**.
 
