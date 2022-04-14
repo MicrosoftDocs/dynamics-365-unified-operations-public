@@ -426,7 +426,7 @@ The following steps show how this issue might occur.
 
 9. Select **Validate** to inspect the editable model mapping component on the **Model mapping designer** page and verify that the configured **GroupedTrans** data source can be queried.
 
-    ![Validating the ER model mapping component and verifing that the GroupedTrans data source can be queried on the Model mapping designer page.](./media/er-components-inspections-05b.png)
+    ![Validating the ER model mapping component and verifying that the GroupedTrans data source can be queried on the Model mapping designer page.](./media/er-components-inspections-05b.png)
 
 10. Notice that a validation error occurs, because the **Trans** data source contains a nested field of the **Calculated field** type that doesn't allow the call for the **GroupedTrans** data source to be translated to the direct SQL statement.
 
