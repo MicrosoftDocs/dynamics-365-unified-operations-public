@@ -332,7 +332,7 @@ These methods have been refactored to support extensibility through chain of com
 |Class SalesAutoCreate_ReleaseFromAgreement.createSalesTable|
 |Class SalesCancelOrder.run|
 |Class SalesCopying.copy|
-|Class SalesCreateOrderFromCutomer.main|
+|Class SalesCreateOrderFromCustomer.main|
 |Class SalesFormLetter.mainOnServer|
 |Class SalesFormLetterParmData.createParmLine|
 |Class SalesFormLetterReport.construct|

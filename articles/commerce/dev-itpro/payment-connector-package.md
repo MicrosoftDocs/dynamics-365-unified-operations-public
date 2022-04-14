@@ -72,7 +72,7 @@ https://AOSUrl/resources/html/Myhtml.html
 https://AOSUrl/resources/styles/Mycss.css
 ```
 > [!NOTE]
-> Only HTML and CSS file formats added as Resources to the project will be copied to the AosService\WebRoot\, other file formats added as Resources will not be copied to AosService\WebRoot\. If you need the file in AosService\WebRoot\ folder then migrate it to HTML file format or host the non-supported file formats externally. IF hosted externally, hosting has to be managed by the custome or partner.
+> Only HTML and CSS file formats added as Resources to the project will be copied to the AosService\WebRoot\, other file formats added as Resources will not be copied to AosService\WebRoot\. If you need the file in AosService\WebRoot\ folder then migrate it to HTML file format or host the non-supported file formats externally. IF hosted externally, hosting has to be managed by the customer or partner.
 
 9. If you don't have any other payment X++ extensions that are related to the payment connector, build the solution.
 
