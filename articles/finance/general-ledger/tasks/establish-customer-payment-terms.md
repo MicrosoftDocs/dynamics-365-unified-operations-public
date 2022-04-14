@@ -50,7 +50,7 @@ This procedure defines a cash discount and due date setup. This task guide uses 
 19. In the **Cash discount** field, enter an ID.
 20. In the **Description** field, enter a description.
 21. If a tiered cash discount is available, select the **Next discount code** that is relevant after this new cash discount.
-22. In the **Days** field, enter the number of days used to calculate the cash dicount date. If **Net** principle is selected, the number of days will be added to the invoice date to calculate the cash discount date.  
+22. In the **Days** field, enter the number of days used to calculate the cash discount date. If **Net** principle is selected, the number of days will be added to the invoice date to calculate the cash discount date.  
 23. In the **Discount percentage** field, enter the percentage of the cash discount.
 24. In the **Main account for customer discounts**, enter the main account to which the cash discount will post for customer invoices.
 25. In the **Discount offset accounts** field, select an option. If you select 'Accounts on the invoice lines', the cash discount will post to the same asset/expense main account on the lines of the vendor invoice. If you select 'Use main account for vendor invoices', the cash discount will post to the main account you define in the 'Main account for vendor invoices'. For this example, select 'Use main account for vendor invoices'. 
