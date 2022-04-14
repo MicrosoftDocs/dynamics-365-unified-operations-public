@@ -522,7 +522,7 @@ This release made minor improvements to the new model for adding inventory dimen
 |Form PurchAgreementHistory should use field group for showing dimensions|
 |Form PurchComplementaryInvoice should use field group for showing dimensions|
 |Form PurchRFQCompareLineDimensions should use field group for showing dimensions|
-|Form PurchTable.TrackingDimesions has incorrect spelling|
+|Form PurchTable.TrackingDimensions has incorrect spelling|
 |Form PurchVendorPortalAllResponse should use field group for showing dimensions|
 |Form PurchVendorPortalConfirmedOrders should use field group for showing dimensions|
 |Form PurchVendorPortalOriginalOrder should use field group for showing dimensions|
