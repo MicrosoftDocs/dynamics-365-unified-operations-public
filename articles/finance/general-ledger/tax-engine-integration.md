@@ -341,7 +341,7 @@ AccJourRuleVendPaymReqTaxMeasure</td>
 
 ### Define a taxable document
 
-**TaxableDocumentTypeDefintionPurchaseInvoice** and **TaxableDocumentDescriptorPurchaseInvoice** are the classes that define a purchase invoice as a taxable document for the Tax engine.
+**TaxableDocumentTypeDefinitionPurchaseInvoice** and **TaxableDocumentDescriptorPurchaseInvoice** are the classes that define a purchase invoice as a taxable document for the Tax engine.
 
 ![Taxable document classes.](media/gte-classes-taxable-document.png)
 

@@ -84,7 +84,7 @@ Use the following table as a reference for common table names that are related t
 | Accounts for automatic transactions | General ledger &gt; Posting setup &gt; Accounts for automatic transactions | LedgerSystemAccounts |
 | Intercompany accounting | General ledger &gt; Posting setup &gt; Intercompany accounts | LedgerIntercompany |
 | Transaction posting definitions | General ledger &gt; Posting setup &gt; Transaction posting definitions | JournalizingDefinitionTrans |
-| Posting definitions | General ledger &gt; Posting setup &gt; Posting definitions | JournalizingDefintion |
+| Posting definitions | General ledger &gt; Posting setup &gt; Posting definitions | JournalizingDefinition |
 | Posting (Inventory) | Inventory management &gt; Setup &gt; Posting &gt; Posting | InventPosting |
 | Cost type codes | Landed cost &gt; Costing setup &gt; Cost type codes | ITMCostTypeTable |
 | Resources | Production control &gt; Setup &gt; Resources &gt; Resources | WrkCtrTable |

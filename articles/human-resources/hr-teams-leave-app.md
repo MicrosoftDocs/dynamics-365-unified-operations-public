@@ -77,7 +77,7 @@ You can ask the bot to:
 
    If you select a half day leave when the leave request unit is in days, you can specify whether you want to request time off the first half day or the second half day by selecting the **Half day definition** option from the **More options** menu.
    
-   ![Half day defintions.](./media/HalfDayDefinitions.png)
+   ![Half day definitions.](./media/HalfDayDefinitions.png)
 
 - When you're done editing your leave request details, select **Submit** to submit it for approval.
 
