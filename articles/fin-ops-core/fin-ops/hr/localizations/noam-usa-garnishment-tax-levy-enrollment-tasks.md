@@ -106,7 +106,7 @@ This field is available only for tax levies, and only when the limit method is <
 <tr>
 <td>Administrative fee</td>
 <td>Enter the amount to reduce the deduction for the garnishment by if the deduction for the garnishment plus the deduction for the administrative fee exceeds the worker's disposable income limit. This field doesn't cause the administrative fee to be deducted. Instead, it sets the amount that the garnishment deduction should be reduced by. To deduct the administrative fee, you must create a benefit for the administrative fee and then assign that benefit to the worker.
-<blockquote>[!IMPORTANT] The amount in this field must be the same as the amount in the <strong>Amount or rate</strong> field for the administrative fee benefit that you assign to the worker.</blcockquote>
+<blockquote>[!IMPORTANT] The amount in this field must be the same as the amount in the <strong>Amount or rate</strong> field for the administrative fee benefit that you assign to the worker.</blockquote>
 </td>
 </tr>
 <tr>
