@@ -37,7 +37,7 @@ In Asset Management, you can calculate various Key Performance Indicators (KPIs)
 
 1. Click **Asset management** > **Inquiries** > **Assets** > **Asset KPIs**.
 
-2. In the **Calculate asset KPIs** dialog, you select the **Time scale** to be used in the calcualtion, and a period in the **From date** and **To date** fields. 
+2. In the **Calculate asset KPIs** dialog, you select the **Time scale** to be used in the calculator, and a period in the **From date** and **To date** fields. 
 
 3. On the **Records to include** FastTab, you can select specific assets and asset types to be included in the calculation, if required.
 
