@@ -440,9 +440,9 @@ These methods have been refactored to support extensibility through chain of com
 |Table InventQualityOrderLine.adjustInt|
 |Table InventQualityOrderTable.createInventQualityOrderLines|
 |Table InventQualityOrderTable.initFromReference|
-|Table InventQualityOrderTable.initQtyFromAssocation|
-|Table InventTestAssocationTable.checkAccountRelation|
-|Table InventTestAssocationTable.validateWrite|
+|Table InventQualityOrderTable.initQtyFromAssociation|
+|Table InventTestAssociationTable.checkAccountRelation|
+|Table InventTestAssociationTable.validateWrite|
 |Table InventTrans.insertReturnTransOrigin|
 |Table InventTransOrigin.createOrigin|
 |Table InventTransferParmLine.createPickLines|

@@ -156,7 +156,7 @@ To automatically generate a VAT declaration, associate sales tax codes in the ap
     > [!NOTE]
     >  Be sure to associate all sales tax codes with lookup results. If any sales tax codes should not generate values in VAT declaration, associate them with the **Other** lookup result.
     >  
-    >  If you create enough sales tax codes to generate VAT declaration boxes based on assosiation of sales tax code only, select in the column **Transaction classifier** the value **Not blank**. Alternatively if you use the same sales tax code for different transaction types, select value in the column **Transaction classifier**. For example, if you use the same sales tax code for sales and purchases, you should have at least four lines for the same sales tax code with **Transaction classifier** values: **Sales**, **SalesCreditNote**, **Purchase**, **PurchaseCreditNote**.
+    >  If you create enough sales tax codes to generate VAT declaration boxes based on association of sales tax code only, select in the column **Transaction classifier** the value **Not blank**. Alternatively if you use the same sales tax code for different transaction types, select value in the column **Transaction classifier**. For example, if you use the same sales tax code for sales and purchases, you should have at least four lines for the same sales tax code with **Transaction classifier** values: **Sales**, **SalesCreditNote**, **Purchase**, **PurchaseCreditNote**.
 
       ![Application specific parameters page.](media/434c381f0f588abf84cd83518b51cf20.png)
 
