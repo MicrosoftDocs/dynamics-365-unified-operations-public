@@ -106,7 +106,7 @@ The **SpecTransExecutionContext** class defines a unique settlement execution co
     public Common parmSpecContext()
     ```
 
-**CustTransSettleTransactionParamters** contains the other method parameters. It has a constructor method that initializes the class with default values. An example is **LedgerVoucher**.
+**CustTransSettleTransactionParameters** contains the other method parameters. It has a constructor method that initializes the class with default values. An example is **LedgerVoucher**.
 
 ### How to use the settleTransaction method
 
