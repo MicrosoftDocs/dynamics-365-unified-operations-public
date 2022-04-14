@@ -40,7 +40,7 @@ Preventive maintenance scheduling generates calendar entries on assets, based on
 2. You can select a time interval in the **Period** and **Period frequency** fields.
 
 >[!NOTE]
->The **Period** and **Period frequencey** fields indicate how far ahead in time you want maintenance schedule lines to be created, based on the maintenance plans you have created (time-based or counter-based). In the figure below, maintenance schedule lines (= work order proposals) are created from the current date and three months onwards.
+>The **Period** and **Period frequency** fields indicate how far ahead in time you want maintenance schedule lines to be created, based on the maintenance plans you have created (time-based or counter-based). In the figure below, maintenance schedule lines (= work order proposals) are created from the current date and three months onwards.
 
 3. Select "Yes" on the **Auto create if specified in the line** toggle button if work orders should automatically be created according to the maintenance plan line.
 
