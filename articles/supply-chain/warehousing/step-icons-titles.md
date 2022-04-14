@@ -232,7 +232,7 @@ The following table shows every standard step icon that is currently available, 
 <td><img src="media/step-icons-invent-style-id.png" alt="Inventory style ID step icon" title="Inventory style ID step icon"><br>InventStyleID</td>
 <td><img src="media/step-icons-invent-version-id.png" alt="Inventory version ID step icon" title="Inventory version ID step icon"><br>InventVersionID</td>
 <td><img src="media/step-icons-item-id.png" alt="Item ID step icon" title="Item ID step icon"><br>ItemID</td>
-<td><img src="media/step-icons-itm-contianer-id.png" alt="ITM container ID step icon" title="ITM container ID step icon"><br>ITMContainerID</td>
+<td><img src="media/step-icons-itm-container-id.png" alt="ITM container ID step icon" title="ITM container ID step icon"><br>ITMContainerID</td>
 </tr>
 <tr>
 <td><img src="media/step-icons-itm-shipment-id.png" alt="ITM shipment ID step icon" title="ITM shipment ID step icon"><br>ITMShipmentID</td>
