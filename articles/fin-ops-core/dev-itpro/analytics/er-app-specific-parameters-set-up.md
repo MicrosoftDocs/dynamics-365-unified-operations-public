@@ -171,7 +171,7 @@ To set up parameters for the USMF company, complete the following steps:
     ![Tax codes for the USMF company tax.](./media/GER-AppSpecParms-LookupForm-CodeFldPicker2.PNG)
 
 8. Select the **EXEMPT** tax code.
-9. In the **Lookup resul**t field of the new record, select the **No taxation** value.
+9. In the **Lookup result** field of the new record, select the **No taxation** value.
 10. Select **Add**.
 11. In the **Code** field of the new record, select the **\*Not blank\*** option.
 12. In the **Lookup result** field of the new record, select the **Regular taxation** value.
