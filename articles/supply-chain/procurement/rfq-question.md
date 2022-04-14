@@ -68,7 +68,7 @@ Vendors enter questions in the **Vendor Collaboration > Request for quotations b
 click **+ Ask a question**.
 
     > [!NOTE]
-    > Alternately, a user can enter questions for a vendor on the **Request for quotation** page, by clicking **Manage replies**, **Edit RFQ reply** then clicking **Questions and asnwers**.
+    > Alternately, a user can enter questions for a vendor on the **Request for quotation** page, by clicking **Manage replies**, **Edit RFQ reply** then clicking **Questions and answers**.
 
 2. On the **Question** field, enter the question text.
 3. Click the **Submit**. Repeat steps 1-3 to add a question.
