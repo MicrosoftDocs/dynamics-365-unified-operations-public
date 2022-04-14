@@ -45,7 +45,7 @@ The XML format of the fiscal archive is implemented by using [Electronic reporti
 A fiscal archive has the following structure.
 
 ``` xml
-<AchivePeriod> <!-- The identification of the period of the archive and the archive creation date. -->
+<ArchivePeriod> <!-- The identification of the period of the archive and the archive creation date. -->
     <Company/> <!-- The identification of the company, including the SIRET code, the NAF code, and the VAT ID of the company. -->
     <Store/> <!-- The identification of the store, including its address. -->
     <PeriodGrandTotal/> <!-- The data of the period grand total journal that the archive was exported from. -->
