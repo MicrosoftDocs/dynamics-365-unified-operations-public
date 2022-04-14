@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0, Operations
 While the functional validation of an ERP application can’t be fully data agnostic, there are multiple phases and approaches for testing. These testing phases include:  
 
 - SysTest framework
-- ATL frameowrk
+- ATL framework
 - Regression Suite Automation Tool (RSAT)
 
 [![Test classification pyramid.](./media/rsat-data-agnostic-testing-01.PNG)](./media/rsat-data-agnostic-testing-01.PNG)
