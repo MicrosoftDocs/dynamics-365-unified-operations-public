@@ -647,7 +647,7 @@ In general, any property that was previously set on the controller class should 
 The form uses the control's **currentSegmentIndex()** method.
 
 ```xpp
-dimOffetAssetController. getDimensionAttributeByControlIndex(currentSegmentIndex);
+dimOffsetAssetController. getDimensionAttributeByControlIndex(currentSegmentIndex);
 ```
 
 #### Dynamics AX
@@ -661,7 +661,7 @@ In general, any property that was previously set on the controller class should 
 The form calls methods on the controller object. Here's an example.
 
 ```xpp
-dimOffetAssetController. getDimensionAttributeByControlIndex(currentSegmentIndex);
+dimOffsetAssetController. getDimensionAttributeByControlIndex(currentSegmentIndex);
 ```
 
 #### Dynamics AX
