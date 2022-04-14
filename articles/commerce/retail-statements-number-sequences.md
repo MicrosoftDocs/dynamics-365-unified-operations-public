@@ -4,7 +4,7 @@
 title: Retail statements number sequence setup
 description: This topic describes how to configure the number sequences required for retail statements.
 author: analpert
-ms.date: 04/12/2022
+ms.date: 04/22/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -46,6 +46,6 @@ After you have completed the setup of a retail store, you must setup a unique nu
 		1. A recommendation is to enable the **Preallocation** toggle to **Yes** and set the **Quantity of numbers** to **25**
   1. Save the new **Number sequence** and close the form
 
-[![Statement number sequence setup sample.](./media/retail-statements-num-seq-setup-01.png)](./media/retail-statements-num-seq-setup-01.png)
+[!Statement number sequence setup sample 1](./media/retail-statements-num-seq-setup-01.png)](./media/retail-statements-num-seq-setup-01.png)
 
-[![Statement number sequence setup sample.](./media/retail-statements-num-seq-setup-02.png)](./media/retail-statements-num-seq-setup-02.png)
+[!Statement number sequence setup sample 2](./media/retail-statements-num-seq-setup-02.png)](./media/retail-statements-num-seq-setup-02.png)
