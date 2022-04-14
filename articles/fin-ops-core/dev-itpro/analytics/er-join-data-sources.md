@@ -229,7 +229,7 @@ Review settings of the ER model-mapping component. The component is configured t
     - **ERSolutionTable** has been called as many times as you have configuration version records in the **ERSolutionVersionTable** table, while the number of such calls could be reduced in times for performance improvement.
     - **ERVendorTable** has been called twice for every configuration version record that was discovered in the **ERSolutionVersionTable** table, while the number of such calls could be reduced as well.
 
-    ![Eexcution statistics on the ER Model mapping designer page.](./media/GER-JoinDS-Set1Run2.PNG)
+    ![Execution statistics on the ER Model mapping designer page.](./media/GER-JoinDS-Set1Run2.PNG)
 
 5. Close the page.
 
