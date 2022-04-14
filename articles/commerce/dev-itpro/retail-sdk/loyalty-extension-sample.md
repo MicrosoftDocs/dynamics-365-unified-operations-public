@@ -140,7 +140,7 @@ namespace Contoso
         using Microsoft.Dynamics.Commerce.Runtime.Messages;
         using Microsoft.Dynamics.Commerce.Runtime.Services.Messages;
         using Microsoft.Dynamics.Commerce.Runtime.DataModel;
-        class AdjustLoyatyRewardsTrigger : IRequestTrigger
+        class AdjustLoyaltyRewardsTrigger : IRequestTrigger
         {
             public IEnumerable<Type> SupportedRequestTypes
             {
