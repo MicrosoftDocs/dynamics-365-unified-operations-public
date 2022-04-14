@@ -54,7 +54,7 @@ If you don’t have admin access in the environment, you will not be able to tes
 1. Close Visual Studio.
 2. Copy the **aspnet.config** and **redirection.config** files to **%userprofile%\Documents\IISExpress\config**.
 3. Open the **applicationhost.config** file in the **%userprofile%\Documents\IISExpress\config** folder.
-4. In **applicationhost.config**, change the physcialPath of RetailCloudPos to point to your SDK location.
+4. In **applicationhost.config**, change the physicalPath of RetailCloudPos to point to your SDK location.
    For example, physicalPath="K:\RetailSDK\POS\Web". The overall section will look like the following:
    
     ```xml
