@@ -197,7 +197,7 @@ When setup completes, you can select the virtual tables you want to generate and
 
 4. Select **Generate/refresh**.
 
-![Dataverse Integraton.](./media/hr-admin-integration-dataverse-integration.png)
+![Dataverse Integration.](./media/hr-admin-integration-dataverse-integration.png)
 
 ## Check table generation status
 

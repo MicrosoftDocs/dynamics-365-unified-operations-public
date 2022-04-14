@@ -60,7 +60,7 @@ Here are some of the circumstances where we don't recommend that you reset the d
 - You have a recurring reset pattern for any of the following reasons:
 
     - **Missing or unexpected data in the report** – If you notice that data is missing, open a support ticket with Microsoft to review your report format and possible data synchronization issues.
-    - **Stuck integration state** - If you notice the integration status is stuck in running, this may be due to a large volume of transactions in the system. This state will resolve itself. However, if you notice the intregration status is stuck for more than four hours, open open a support ticket with Microsoft. 
+    - **Stuck integration state** - If you notice the integration status is stuck in running, this may be due to a large volume of transactions in the system. This state will resolve itself. However, if you notice the integration status is stuck for more than four hours, open open a support ticket with Microsoft. 
    
 ## If I reset the data mart, will I lose reports that I've already designed?
 
