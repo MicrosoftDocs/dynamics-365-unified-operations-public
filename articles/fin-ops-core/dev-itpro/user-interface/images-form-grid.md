@@ -195,7 +195,7 @@ public void init()
     super();
         
     // add images to the instance (return value is not needed)
-    // Note that a legacy ResID is used in the new Image contstructor. 
+    // Note that a legacy ResID is used in the new Image constructor. 
     // This is a compatibility mapping of resource to symbol.
     imgCnt = imagelist.add(new Image(#ImageInfo));
     imgCnt = imagelist.add(new Image(#ImageWarning));
