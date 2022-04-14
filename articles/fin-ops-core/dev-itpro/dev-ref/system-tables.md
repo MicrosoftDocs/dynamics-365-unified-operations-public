@@ -2900,7 +2900,7 @@ The SysOccConfiguration table stores the global concurrency model setting and up
 | RecId                     | Int64   | RecId         |                  |             |
 | recVersion                | Integer | RecVersion    |                  |             |
 | UniqueIndex               | Int     |               |                  |             |
-| UseReadUncommitedForAll   | Enum    |               | boolean          |             |
+| UseReadUncommittedForAll   | Enum    |               | boolean          |             |
 
 ### Indexes
 
