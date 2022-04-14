@@ -77,7 +77,7 @@ A custom control is an HTML page with the custom information to be displayed. A 
         <script id="Microsoft_Pos_Extensibility_Samples_ProductAvailabilityPanel" type="text/html">
             <h2 class="marginTop8 marginBottom8" data-bind="text: title"></h2>
             <div class="width400 grow col">
-                <div id="Microsot_Pos_Extensibility_Samples_ProductAvailabilityPanel_DataList" data-bind="msPosDataList: dataList"></div>
+                <div id="Microsoft_Pos_Extensibility_Samples_ProductAvailabilityPanel_DataList" data-bind="msPosDataList: dataList"></div>
             </div>
         </script>
     </body>
@@ -111,7 +111,7 @@ A custom control is an HTML page with the custom information to be displayed. A 
 11. Inside the class, declare the following variables for state and data list information.
  
     ```typescript
-    private static readonly TEMPLATE_ID: string = "Microsot_Pos_Extensibility_Samples_ProductAvailabilityPanel";
+    private static readonly TEMPLATE_ID: string = "Microsoft_Pos_Extensibility_Samples_ProductAvailabilityPanel";
     public readonly orgUnitAvailabilities: ObservableArray<ProxyEntities.OrgUnitAvailability>;
     public readonly dataList: DataList<ProxyEntities.OrgUnitAvailability>;
     public readonly title: Observable<string>;
@@ -240,7 +240,7 @@ A custom control is an HTML page with the custom information to be displayed. A 
     import { DataList, SelectionMode } from "PosUISdk/Controls/DataList";
     export default class ProductAvailabilityPanel extends SimpleProductDetailsCustomControlBase {
 
-        private static readonly TEMPLATE_ID: string = "Microsot_Pos_Extensibility_Samples_ProductAvailabilityPanel";
+        private static readonly TEMPLATE_ID: string = "Microsoft_Pos_Extensibility_Samples_ProductAvailabilityPanel";
         public readonly orgUnitAvailabilities: ObservableArray<ProxyEntities.OrgUnitAvailability>;
         public readonly dataList: DataList<ProxyEntities.OrgUnitAvailability>;
         public readonly title: Observable<string>;

@@ -26,7 +26,7 @@ The **Sort CDX packages by primary index** feature must be turned on in the **Fe
 
 ## Feature value
 
-This feature provides additional performance when using Micrsoft Dataverse with Digital Commerce, Headless Commerce, or Dynamics 365 Commerce (when Dataverse is used).
+This feature provides additional performance when using Microsoft Dataverse with Digital Commerce, Headless Commerce, or Dynamics 365 Commerce (when Dataverse is used).
 
 ## Using this feature
 
