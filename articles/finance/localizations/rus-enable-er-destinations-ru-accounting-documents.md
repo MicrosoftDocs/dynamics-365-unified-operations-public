@@ -190,7 +190,7 @@ For information about how to print these documents, see [Account activity report
 
 | File component name           | Description (EN)                   | Description (RU)                       | File type | File destination |
 |-------------------------------|------------------------------------|----------------------------------------|-----------|------------------|
-| TuroverSheetWithCorrespondence | Turnover sheet with correspondence | Шахматная ведомость оборотов по счетам | Excel     | No               |
+| TurnoverSheetWithCorrespondence | Turnover sheet with correspondence | Шахматная ведомость оборотов по счетам | Excel     | No               |
 | AccountReview                 | Review of account                  | Анализ счета                           | Excel     | No               |
 | JournalOrder                  | Journal order/account activity     | Журнал ордер/ведомость                 | Excel     | No               |
 | AccountActivityGeneralLedger  | General ledger                     | Главная книга                          | Excel     | No               |
