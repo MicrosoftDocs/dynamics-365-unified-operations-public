@@ -38,7 +38,7 @@ After the initial onboarding is completed, follow the instructions in [Project o
 After you've completed project onboarding, you can review the additional capabilities of LCS that are described in [Lifecycle Services (LCS) for Finance and Operations apps customers](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md). Then move on to environment deployment.
 
 - To deploy Microsoft-managed environments via LCS, follow the instructions in [Lifecycle Services (LCS) for Finance and Operations apps customers](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md#new-deployment-experience).
-- For cloud-hosted environments, see [Deploy and access development environments](../../../fin-ops-core/dev-itpro/dev-tools/access-instances.md). You must also complete the Resource Manager onboarding process for your connectors, as described in [Complete the Azure Resource Manager onboarding process for US government Lifecycle Services projects](arm-onbarding-us-government.md).
+- For cloud-hosted environments, see [Deploy and access development environments](../../../fin-ops-core/dev-itpro/dev-tools/access-instances.md). You must also complete the Resource Manager onboarding process for your connectors, as described in [Complete the Azure Resource Manager onboarding process for US government Lifecycle Services projects](arm-onboarding-us-government.md).
 
 > [!NOTE]
 > For US Government LCS projects, only Azure Government–specific Azure subscriptions are supported.

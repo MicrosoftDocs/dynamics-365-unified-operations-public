@@ -337,7 +337,7 @@
         - name: Complete the Azure Resource Manager onboarding process
           href: deployment/arm-onboarding.md
         - name: Complete the Azure Resource Manager onboarding process for US government LCS projects
-          href: deployment/arm-onbarding-us-government.md
+          href: deployment/arm-onboarding-us-government.md
         - name: Azure ExpressRoute and Finance and Operations
           href: deployment/expressroute.md
         - name: Finance and Operations architecture
