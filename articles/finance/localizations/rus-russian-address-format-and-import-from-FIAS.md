@@ -199,7 +199,7 @@ To update existing address data, you should create a job to import FIAS delta.
 8. In the **Source data format** field, select **XML-Attribute**.
 9. Select **OK**.
 
-    ![Import page wtih fias delta import job details.](media/13%20Import.jpg)
+    ![Import page with fias delta import job details.](media/13%20Import.jpg)
 
 10. For each entity, select the button in the **View map** column to open the **Map source to staging** page.
 

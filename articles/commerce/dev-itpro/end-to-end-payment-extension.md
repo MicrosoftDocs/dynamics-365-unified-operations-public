@@ -559,7 +559,7 @@ public ExecuteTaskPaymentTerminalDeviceRequest(string token, string task, Extens
 |---|---|
 | locktoken | Gets the unique lock token that was generated when the payment terminal was initially locked for the transaction. |
 | posTerminalId | Gets the POS terminal ID associated with the lock token. |
-| extensionTransactionProperties | Gets the EFT terminal ID associated witht the transaction and lock token. |
+| extensionTransactionProperties | Gets the EFT terminal ID associated with the transaction and lock token. |
 
 ##### GetTransactionByTransactionReferencePaymentTerminalDeviceRequest
 ###### Signature
