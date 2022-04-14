@@ -137,7 +137,6 @@ To set up return locations, follow these steps.
 
 1. Go to **Retail and Commerce \> Channel setup \> Warehouses** and select a warehouse.  
 1. On the **Retail** FastTab, under **Default return location** select an inventory location. This is the inventory location for returns whose info codes or reason codes are not mapped to return locations. 
-    ![Default return location field on the Warehouses form](./media/Default_Return_Location.png "Default return location").
 1. Under **Default return pallet**, select a pallet. This is the pallet for returns whose info codes or reason codes are not mapped to return locations.
 1. Go to **Retail and Commerce \> Inventory management \> Return locations**.  
 1. On the **Return locations** form, select **New** to create a new return location policy. Enter a unique name and a description for the return location.
@@ -150,8 +149,7 @@ To set up return locations, follow these steps.
     1. For **Subcode field**, select a subcode for the reason for the return. The **Description** field will then display a description of the selected subcode.
     1. For **Store**, select the store where the info code is used.
     1. Use the **Warehouse**, **Location**, and **Pallet ID** fields to specify a return location. For example, to specify a particular location in a store, select a store in the **Store** field and a location in the **Location** field.
-    1. Select the **Block inventory** check box to take returned products out of inventory and prevent them from being sold. This is represented by highlight 1 in the following example illustration. 
-    ![Return locations form with block inventory option and checkbox highlighted](./media/Return_Locations.png)
+    1. Select the **Block inventory** check box to take returned products out of inventory and prevent them from being sold. 
 1. To map specific sales and marketing reason codes to return locations, select **Add** on the **Sales and marketing reason codes** FastTab, and then enter the following information:
     1. For **Reason code**, select a reason code for returns. The **Description** field will then display the description of the selected reason code.
     1. For **Store**, select the store where the reason code is used.
@@ -160,7 +158,6 @@ To set up return locations, follow these steps.
     > [!NOTE]
     > If a return location policy is used for an item but the return reason selected by the cashier does not match any of the codes specified on the **Retail info codes** or **Sales and marketing reason codes** FastTabs, then the item is sent to the default return location defined on the **Warehouse** form. Additionally, the **Block inventory** checkbox value on the **General** FastTab determines if the returned item should be inventory blocked or not.
 1.  Go to the **Retail and Commerce \> Commerce product hierarchy** and on the **Manage inventory category properties** FastTab select a **Return location**. Since there can be multiple return location policies defined for the same store, the determination of which return location policy will be used depends on the **Return location** value specified.
-    ![Choose a return location for the category](./media/Commerce_Product_Hierarchy.png)
 
 ## Additional resources
 
