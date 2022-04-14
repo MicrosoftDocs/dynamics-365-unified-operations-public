@@ -148,7 +148,7 @@ When a data subject chooses to submit a DSR, the data subject makes the request 
 </ul>
 </td>
 <td>
-<p>Your GDRP administrator sees the data that has been obtained to fulfill the DSR request.</p>
+<p>Your GDPR administrator sees the data that has been obtained to fulfill the DSR request.</p>
 </td>
 </tr>
 </tbody>
