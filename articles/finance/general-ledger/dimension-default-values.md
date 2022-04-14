@@ -112,7 +112,7 @@ Back on the line, in the **Offset account type**, select **Ledger**, and then, i
 
 - **BUSINESSUNIT:** 002 – The default entry is taken from account's financial dimensions. (It was originally entered by default from the journal header.)
 - **DEPARTMENT:** 024 – The default entry is taken from account's financial dimensions. (It was originally entered by default from the journal header.)
-- **COSTCENTER:** 007 – The default entry is taken from account's financial dimensions. (It was originally entered by default from the the customer.)
+- **COSTCENTER:** 007 – The default entry is taken from account's financial dimensions. (It was originally entered by default from the customer.)
 
 ### Scenario 3
 

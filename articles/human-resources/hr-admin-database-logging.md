@@ -75,7 +75,7 @@ You can use the **Logging database changes** wizard to set up database logging. 
 
 1. Go to **System administration > Links > Database > Database log setup**. Select **New** to start the **Logging database changes** wizard.
 2. Select **Next**. 
-3. On the **Tables and fields** page of the wizard, select the the tables and fields on which you want to enable database logging, and select **Next**.
+3. On the **Tables and fields** page of the wizard, select the tables and fields on which you want to enable database logging, and select **Next**.
 
    > [!Note]
    > Database logging is not available on all tables in the Human Resources database. Selecting **Show all tables** below the list expands the list of tables and fields to show all database tables for which database logging is available, but this will be a subset of the full list of database tables.

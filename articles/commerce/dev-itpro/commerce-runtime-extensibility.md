@@ -89,7 +89,7 @@ For example, you can search for a **Product** using the out-of-box Azure Search 
 
 ### NotHandledResponse
 
-If in the the overridden handler, you want to run the base handler and return the base response instead of custom logic, then return **NotHandledResponse()**. If **NotHandledResponse** is returned, the CRT framework will run the out-of-box handler. **NotHandledResponse** can be used in scenarios where you want to run custom logic only on certain conditions (otherwise, run the base handler logic).
+If in the overridden handler, you want to run the base handler and return the base response instead of custom logic, then return **NotHandledResponse()**. If **NotHandledResponse** is returned, the CRT framework will run the out-of-box handler. **NotHandledResponse** can be used in scenarios where you want to run custom logic only on certain conditions (otherwise, run the base handler logic).
 
 ### CRT data service and data service with entities
 

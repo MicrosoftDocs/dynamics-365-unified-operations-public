@@ -48,7 +48,7 @@ This topic explains how to update a sales order when products are shipped to the
 14. Select **Change view**.
 15. Select **Header view**.
     - If all of the lines on the order have been fully shipped, the order status changes from Open to Delivered.  
-    - In this example, the order line has been shipped partially. This is why the the order status remains Open.     
+    - In this example, the order line has been shipped partially. This is why the order status remains Open.     
     - The **Document status** field is set to Packing slip because at least one of the order lines have been shipped.  
 16. On the Action Pane, select **General**.
 17. Select **Line quantity**.

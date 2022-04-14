@@ -100,7 +100,7 @@ The code for the number sequence group is then entered by default on the sales o
 > [!NOTE]
 > The lookup for the **Tax registration number** field on the **Tax registration** FastTab contains only the registration numbers of the legal entity that have a VAT ID registration category. The list of registration IDs is available for the corresponding country or region of the tax authority.
 >
-> Date effectivity isn't supported for assigned registration numbers. If the the registration number of the legal entity is changed or expired, you must manually update the tax registration in the setup of the tax authority and sales tax settlement period.
+> Date effectivity isn't supported for assigned registration numbers. If the registration number of the legal entity is changed or expired, you must manually update the tax registration in the setup of the tax authority and sales tax settlement period.
 
 ### Set up the sales tax settlement period
 

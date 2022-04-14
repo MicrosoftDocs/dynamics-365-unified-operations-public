@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 10.0.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the the value-added tax (VAT) declaration for Russia. It includes instructions for setting up and generating the VAT declaration.
+This topic provides information about the value-added tax (VAT) declaration for Russia. It includes instructions for setting up and generating the VAT declaration.
 
 ## Set up the VAT declaration
 

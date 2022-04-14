@@ -289,7 +289,7 @@ To review the product and release it in the *USMF* company, follow these steps.
 
 1. Select the value in the **Product number** column to open the **Product release details** page. Notice the following details:
 
-    - The **General** FastTab shows information about the product release, such as the releasing company (*DEMF* for this example), the releasing site (*1*), and the receiving site (*1*). Because you didn't specify a receiving site in the **Release products** wizard, the the releasing site value is copied to the receiving site.
+    - The **General** FastTab shows information about the product release, such as the releasing company (*DEMF* for this example), the releasing site (*1*), and the receiving site (*1*). Because you didn't specify a receiving site in the **Release products** wizard, the releasing site value is copied to the receiving site.
     - The **Release details** FastTab shows information about the product and the version that was released. Here, you can modify settings such as the effectivity dates.
     - The **Route** FastTab shows the route of the product. However, for this example, you didn't release any routes.
 

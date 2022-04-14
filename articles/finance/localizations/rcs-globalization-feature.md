@@ -61,7 +61,7 @@ In your Finance and Operations apps instance, follow these steps.
 
 ## Globalization features
 
-To use a Globalization feature, you must first import it from the the Global repository and create your own version of it. There are two ways to add Globalization features:
+To use a Globalization feature, you must first import it from the Global repository and create your own version of it. There are two ways to add Globalization features:
 
 - Add a derived feature that is based on an existing feature that has been published or shared.
 - Add a new feature that you've created from scratch.

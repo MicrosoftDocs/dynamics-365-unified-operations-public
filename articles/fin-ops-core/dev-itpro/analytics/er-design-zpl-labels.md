@@ -234,7 +234,7 @@ Prepare the DRA to pass generated labels from Finance to the configured local pr
 3. [Register the local printer](install-document-routing-agent.md#register-network-printers) in the DRA.
 4. [Activate the local printer](install-document-routing-agent.md#administer-network-printers) in your Finance environment.
 
-![Preparing the the DRA to print generated labels.](./media/er-design-zpl-labels-configure-dra.png)
+![Preparing the DRA to print generated labels.](./media/er-design-zpl-labels-configure-dra.png)
 
 ### Configure the ER destination
 
