@@ -50,7 +50,7 @@ Lean schedule groups are defined to group and distinguish products in kanban sch
 
 ## Associate item allocation key
 1. Associate an item allocation key
-    * Add an association to an item allocation key by using the Item relation type Group.   Note that for this process, you need a forecast item alllocation key defined in your data.  
+    * Add an association to an item allocation key by using the Item relation type Group.   Note that for this process, you need a forecast item allocation key defined in your data.  
 2. In the Item relation type field, select Group
 3. In the Item allocation key field, click the drop-down button to open the lookup.
 4. In the list, click the link in the selected row.
