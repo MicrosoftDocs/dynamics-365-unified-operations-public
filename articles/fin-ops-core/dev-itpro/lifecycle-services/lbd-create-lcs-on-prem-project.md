@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 You must use Microsoft Dynamics Lifecycle Services (LCS) to deploy and update an instance of Dynamics 365 Finance + Operations (on-premises). After you purchase a server and user license through the Volume Licensing flow or the Dynamics Price List flow, see the topic, [Buy Finance + Operations (on-premises)](../../fin-ops/get-started/purchase-on-premises.md), to create an Azure AD account or use an existing Azure AD account, and then complete all the sign-up steps. You will be redirected to LCS, where an on-premises implementation project will be provisioned for you.
 
- [![On-premises implementation project.](./media/lbd-proejcts-01.png)](./media/lbd-proejcts-01.png)
+ [![On-premises implementation project.](./media/lbd-projects-01.png)](./media/lbd-projects-01.png)
 
 The on-premises project has all the tools that you require in order to implement, maintain, and operate an on-premises solution. Here are some of the tools that are available in the on-premises project:
 
