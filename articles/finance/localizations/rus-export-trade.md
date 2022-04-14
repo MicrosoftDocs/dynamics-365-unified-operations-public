@@ -455,11 +455,11 @@ The system will reset the current operation type to the previous operation type.
 5. On the **Records to include** FastTab, select **Filter** to specify selection criteria.
 6. Select **OK**.
 
-    ![Outgoing VAT processing - select data for period dialog box.](media/9_Outgiong_VAT_processing_-_select_data_for_period.png)
+    ![Outgoing VAT processing - select data for period dialog box.](media/9_Outgoing_VAT_processing_-_select_data_for_period.png)
 
 7. On the **Sales book (Outgoing VAT processing)** page, mark factures for posting, and then, on the Action Pane, select **Post**.
 
-    ![Sales book (outgoing VAT processing) page.](media/10_Sales_book_(Outgiong_VAT_processing).png)
+    ![Sales book (outgoing VAT processing) page.](media/10_Sales_book_(Outgoing_VAT_processing).png)
 
 8. In the **Outgoing VAT processing – ledger posting** dialog box, in the **Transaction date** field, select a transaction date, and then select **OK**.
 
