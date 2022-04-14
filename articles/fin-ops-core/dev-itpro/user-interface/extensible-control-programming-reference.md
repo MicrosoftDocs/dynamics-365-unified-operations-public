@@ -282,7 +282,7 @@ There are a number of FormDesignProperty attributes which may be applied alongsi
     -   Class
     -   Form
     -   MenuItemDisplay
-    -   MenuItemOuput
+    -   MenuItemOutput
     -   MenuItemAction
     -   Tile
     -   KPI
