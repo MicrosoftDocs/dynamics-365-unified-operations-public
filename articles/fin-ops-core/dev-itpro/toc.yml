@@ -1611,7 +1611,7 @@
         - name: Import or export customized security configuration using Data management
           href: sysadmin/import-export-customized-security.md
         - name: Security diagnostics for task recordings
-          href: sysadmin/tasks/security-diagstics-task-recordings.md
+          href: sysadmin/tasks/security-diagnostics-task-recordings.md
         - name: Extensible data security policies
           href: sysadmin/extensible-data-security-policies.md
         - name: Create a security policy

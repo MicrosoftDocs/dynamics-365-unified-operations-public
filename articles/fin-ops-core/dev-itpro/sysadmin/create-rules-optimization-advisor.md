@@ -106,11 +106,11 @@ The title returned by **opportunityTitle** appears under the **Optimization oppo
 
 * **Diagnostic area** – An enum of type **DiagnosticArea** that describes what area of the application the rule belongs to, such as **DiagnosticArea::SCM**. 
 
-* **Rule name** – A string with the rule name. This will appear under the **Rule name** column in the **Dianostics validation rule** form (**DiagnosticsValidationRuleMaintain**). 
+* **Rule name** – A string with the rule name. This will appear under the **Rule name** column in the **Diagnostics validation rule** form (**DiagnosticsValidationRuleMaintain**). 
 
 * **Run frequency** – An enum of type **DiagnosticRunFrequency** that describes how often the rule should be run, such as **DiagnosticRunFrequency::Daily**. 
 
-* **Rule description** – A string with a more detailed description of the rule. This will appear under the **Rule description** column in the **Dianostics validation rule** form (**DiagnosticsValidationRuleMaintain**). 
+* **Rule description** – A string with a more detailed description of the rule. This will appear under the **Rule description** column in the **Diagnostics validation rule** form (**DiagnosticsValidationRuleMaintain**). 
 
 > [!NOTE]
 > The **DiagnosticRuleSubscription** attribute is required for the rule to work. Typically, it is used on **opportunityTitle**, but it can decorate any method of the class.
