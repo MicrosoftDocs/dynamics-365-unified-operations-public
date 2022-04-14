@@ -1019,7 +1019,7 @@ Inline delegates are now available. The most common way to use inline delegates 
 |Form ProjInvoiceProposalCreateLines.TransTypeSelectionCtrl.lookup|
 |Form PurchTable: PurchTable::enableJournalButtons|
 |Form SalesATP.SalesATP|
-|Form SalesQuickQuote: InventDimCombination::getSetQuantyties|
+|Form SalesQuickQuote: InventDimCombination::getSetQuantities|
 |Form SalesQuickQuote: InventDimCombination::salesQty|
 |Form SalesQuotationProjTable::SalesQuotationLine::ItemId::modified|
 |Form SalesQuotationTable: SalesQuotationTable::write|
