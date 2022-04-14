@@ -184,7 +184,7 @@ The following changes were made to support extending enumerations:
 |LedgerShowCurrency|
 |LedgerSIEFileType|
 |LedgerTransactionType|
-|LedgerTransEnigneBuildQuery|
+|LedgerTransEngineBuildQuery|
 |LogisticsAddressElement|
 |LogisticsAddrZipCodeImportCountryRegion|
 |LogisticsLocationEntityType|
