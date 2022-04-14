@@ -210,7 +210,7 @@ A **JOIN** data source enables several connected records to be fetched by one qu
 
 The **[FILTER](er-functions-list-filter.md)** function runs conditions on SQL Server, whereas the **WHERE** function fetches all data from the list, one record at a time, and applies the condition for each record. For example, you want to select one record out of 1,000 records. If you use **WHERE**, all 1,000 records will be fetched. However, if you use **FILTER**, exactly one record will be fetched. **FILTER** can also use indexes on the database side.
 
-#### <a name="collected-data"></a>Using collected data functions or an accumulated data data source
+#### <a name="collected-data"></a>Using collected data functions or an accumulated data source
 
 If your configuration has a *group by* component that summarizes previously fetched data by report, the component will fetch all the data again. By using collected data functions, you enable ER to accumulate data during the first fetch. For more information, see [ER Configure format to do counting and summing](tasks/er-format-counting-summing-2.md).
 
