@@ -284,7 +284,7 @@ Some organizations conduct their activities only through business-to-business re
 To support the controller, this report offers a refinement of the existing entity model reporting functionality that is available in the **Data management** workspace. The **Data management** workspace offers a collection of pre-packaged representations of most role types. These representations are known as entities.
 
 > [!NOTE]
-> The Person search report is available for Finance, Supply Chain Managament, Commerce, and Human Resources. Currently the report does not support Microsoft Dynamics AX 2012. 
+> The Person search report is available for Finance, Supply Chain Management, Commerce, and Human Resources. Currently the report does not support Microsoft Dynamics AX 2012. 
 
 An entity represents an instance of a specific role. The data management functionality lets the controller export entity data to several formats, such as colon-separated values, comma-separated values (CSV), semicolon-separated values, tab-separated values, Microsoft Excel, and XML.
 
