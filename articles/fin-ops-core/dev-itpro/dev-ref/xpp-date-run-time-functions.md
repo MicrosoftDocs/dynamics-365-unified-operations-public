@@ -614,7 +614,7 @@ str sMessages[];
 sMessages[1] = "----- #1.  For Sunday, January 5, 2003 -----";
 dateTest = 512003; // DayMonthYear  format.
 weekNum = wkOfYr(dateTest);
-sMessages[2] = int2str(weekNum) + " = wkOfYr funtion";
+sMessages[2] = int2str(weekNum) + " = wkOfYr function";
 weekNum = Global::weekOfYear(dateTest);
 sMessages[3] = int2str(weekNum) + " = Global::weekOfYear method";
 //---------------------------------------------
@@ -622,7 +622,7 @@ sMessages[4] = " ";
 sMessages[5] = "----- #2.  For Wednesday, August 20, 2003 -----";
 dateTest = 2082003;
 weekNum = wkOfYr(dateTest);
-sMessages[6] = int2str(weekNum) + " = wkOfYr funtion";
+sMessages[6] = int2str(weekNum) + " = wkOfYr function";
 weekNum = Global::weekOfYear(dateTest);
 sMessages[7] = int2str(weekNum) + " = Global::weekOfYear method";
 //---------------------------------------------
@@ -630,7 +630,7 @@ sMessages[8] = " ";
 sMessages[9] = "----- #3.  For Sunday, December 28, 2003 -----";
 dateTest = 28122003;
 weekNum = wkOfYr(dateTest);
-sMessages[10] = int2str(weekNum) + " = wkOfYr funtion";
+sMessages[10] = int2str(weekNum) + " = wkOfYr function";
 weekNum = Global::weekOfYear(dateTest);
 sMessages[11] = int2str(weekNum) + " = Global::weekOfYear method";
 for (i=1; i<= 11; i++)
