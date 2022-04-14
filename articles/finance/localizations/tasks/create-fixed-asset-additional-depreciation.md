@@ -42,7 +42,7 @@ In order to complete this procedure, the Fixed Assets configuration key must be 
 This was created using the demo data company JPMF.
 
 
-## Create a fixed assset and assign an additional depreciation profile to it
+## Create a fixed asset and assign an additional depreciation profile to it
 1. Go to Fixed assets > Fixed assets > Fixed assets.
 2. Click New.
 3. In the Fixed asset group field, select a value.
