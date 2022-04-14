@@ -80,7 +80,7 @@ RSAT is part of the end-to-end flow described below. RSAT, Microsoft Dynamics Li
 
 ![Author, configure, and execute.](media/end-to-end.png)
 
-To learn more about this this process, see [Create and automate user acceptance tests](../../lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md).
+To learn more about this process, see [Create and automate user acceptance tests](../../lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md).
 
 ## LCS, BPM, and Task Recordings
 
