@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Revenue allocation 
+title: Revenue allocation
 description: This topic explains how to use revenue allocation in Subscription billing.
 author: JodiChristiansen
 ms.date: 11/04/2021
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  
+ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -29,48 +29,56 @@ ms.dyn365.ops.version: 10.0.24
 
 # Revenue allocation
 
-This topic describes how to set up revenue allocation parameters for a billing schedule. Revenue allocation can be set up and edited when the billing schedule is created. When viewing the **Revenue allocation** page for an active or terminated billing schedule, the fields are read-only. 
+This topic explains how to set up revenue allocation parameters for a billing schedule. You can set up or edit revenue allocation when you create the billing schedule. When you open the **Revenue allocation** page for an active or terminated billing schedule, the fields are read-only.
 
-## Specify revenue allocation on a billing schedule
+## Specify the revenue allocation for a billing schedule
 
-To specify the revenue allocation for a billing schedule, follow these steps: 
+To specify the revenue allocation for a billing schedule, follow these steps.
+
 1. On the **All/Active billing schedules** list page, select a billing schedule or a billing schedule line.
-2. Select **Revenue allocation** from the **Revenue allocation** tab at the top of the page. 
-3. Select the **Multiple element arrangement type**. 
-4. Specify the **Multiple element arrangement number** and the **Deferred contract revenue account**. If the **Multiple element arrangement type** is **Single**, the same **Multiple element arrangement number** and **Deferred contract revenue account** applies to each line. If the **Multiple element arrangement type** is **Multiple**, you can apply a different **Multiple element arrangement number** and **Deferred contract revenue account** to each line. The multiple element arrangement number can only be assigned to two or more items. A single line can't have its own multiple element arrangement number.
-5. Select **Save**. 
+2. On the **Revenue allocation** tab at the top of the page, select **Revenue allocation**.
+3. In the **Multiple element arrangement type** field, select the type of multiple element arrangement (MEA).
+4. In the **Multiple element arrangement number** field, specify the MEA number. Then, in the **Deferred contract revenue account** field, specify the deferred contract revenue account.
+
+    If you set the **Multiple element arrangement type** field to **Single**, the same **Multiple element arrangement number** and **Deferred contract revenue account** values apply to each line. If you set the **Multiple element arrangement type** field to **Multiple**, you can specify different **Multiple element arrangement number** and **Deferred contract revenue account** values for each line.
+    
+    An MEA number can be assigned only to two or more items. A single line can't have its own MEA number.
+
+5. Select **Save**.
 
 ### Fields
 
-The **Multiple element arrangement** page contains the following fields: 
-|Field        |Description           |
-|:------------- |:-------------| 
-|**Multiple element arrangement type**|The multiple element arrangement (MEA) type for the transaction: <br />- **Multiple**: Select this type when line items on the transaction are part of the multiple element arrangement, or if more than one arrangement exists.<br />- **None**: Select this type for a standard transaction without any revenue allocation.<br />- **Single**: Select this type when all items on the transaction are part of a single multiple element arrangement. |
-|**Multiple element arrangement number**|Displays the multiple element arrangement number for a line. Available when **Multiple element arrangement type** is **Multiple**. <br />When this field is blank and you assign a multiple element arrangement number, the **Standalone selling price origin** and **Standalone selling price** are automatically updated based on the values from the **Item standalone selling price** page. Only the multiple element arrangement numbers that are assigned to other lines in the sales order are available. |
-|**Deferred contract revenue account**|Specify the account you want to use for journal entries when a multiple element arrangement (MEA) contract invoice is created. Available when Recurring contract billing is used. |
-|**Lines**|    |
-|**Variant number**|Displays the variant number from the sales order.|
-|**Item number**|Displays the item number from the sales order.|
-|**Billing frequency**|Displays the frequency for the revenue allocation: **Daily**, **Monthly**, **Quarterly**, **Semiannually**, or **Annually**. |
-|**Quantity**|Displays the value from the sales order.|
-|**Contract value**|Displays the contract value. |
-|**Multiple element arrangement number**|Displays the multiple element arrangement number for a line. Available when **Multiple element arrangement type** is **Multiple**. When this value is empty, and you assign a multiple element arrangement number, the **Standalone selling price origin** and **Standalone selling price** are updated based on the **Item standalone selling price** page. Only the multiple element arrangement numbers that are assigned to other lines in the sales order are available. If these values aren't set up for the item, the values are from the **Multiple element revenue allocation parameters** page. | 
-|**Standalone selling price origin**|Displays the standalone selling price origin for the line.<br />- **Amount**: The standalone selling price is the amount greater than zero (0) that you set. The amount is converted between the functional and originating currencies as needed.<br />- **Base sales price**: The standalone selling price is the same value as the base sales price of the item. <br />- **Invoice price**: The standalone selling price is the same value as the invoice price of the item. <br />- **Percent of item**: The standalone selling price is set by a percentage value and is calculated based on the price of the item. When you select this option, specify the default percent. <br />- **Allocate residual amount**: The origin of the standalone selling price is calculated by: Total contract value of parent item - Total standalone selling price of child items.  <br />If the calculated amount is a negative value, the amount is set to zero (0) where: <br />**Note:** This option can be selected by only one child item in the revenue split. <br /> - **Total contract value of parent item** is the net or billed amount.<br />- **Total standalone selling price of child items** is the sum of the extended or contract standalone selling price of all child items, except for the child item that uses this standalone selling price origin. <br />- **None**: The origin of the standalone selling price is based on the child items. This option applies to items that are defined as a parent item in a revenue split template. When **Revenue split** is selected, this option is selected and can't be changed. <br />- **Percent of parent invoice price**: The origin of the standalone selling price is a percent of the invoice price of the parent item. This is only available for child items in a revenue split template. <br />- **Percent of parent standard price**: The origin of the standalone selling price is a percent of the standard price of the parent item. This is only available for child items in a revenue split template. <br />When the option for a child item is changed from percent of parent standard price to invoice price (or from invoice price to standard price), the calculated values will be updated. |
-|**Standalone selling price**|Displays the standalone selling price for the line in the transaction currency. <br /> **Amount** is entered or it's calculated. |
-|**Contract Standalone selling price**|Displays the contract standalone selling price.|
-|**Remaining contract revenue**|Displays the remaining revenue amount for the contract. This amount is the sum of all lines for which invoices haven't yet been created. |
-|**Total contract revenue**|Displays the total contract revenue amount for the line. This amount is the sum of all lines regardless of whether the invoice has been created or not. |
-|**Deferred contract revenue account**|Specify the account you want to use for journal entries when a multiple element arrangement (MEA) contract invoice is created.<br /> Available when Recurring contract billing is used. |
-|**Error**|Displays any errors with the revenue allocation. |
+The **Multiple element arrangement** page contains the following fields.
 
-## Revenue allocation on a sales order
+| Field | Description |
+|---|---| 
+| Multiple element arrangement type | <p>Select the MEA type for the transaction:</p><ul><li>**Multiple** – The line items on the transaction are part of the MEA, or more than one arrangement exists.</li><li>**None** – The transaction is a standard transaction that doesn't have any revenue allocation.</li><li>**Single** – All the items on the transaction are part of a single MEA.</li></ul> |
+| Multiple element arrangement number | <p>The MEA number for the line. This field is available when the **Multiple element arrangement type** field is set to **Multiple**.</p><p>If this field is blank, and you assign an MEA number, the **Standalone selling price origin** and **Standalone selling price** fields are automatically updated based on the values from the **Item standalone selling price** page. Only the MEA numbers that are assigned to other lines on the sales order are available.</p> |
+| Deferred contract revenue account | Specify the account to use for journal entries when an MEA contract invoice is created. This field is available only when recurring contract billing is used. |
+| **Lines** | |
+| Variant number | The variant number from the sales order. |
+| Item number | The item number from the sales order. |
+| Billing frequency | The frequency for the revenue allocation: **Daily**, **Monthly**, **Quarterly**, **Semiannually**, or **Annually**. |
+| Quantity | The value from the sales order. |
+| Contract value | The contract value. |
+| Multiple element arrangement number | <p>The MEA number for the line. This field is available when the **Multiple element arrangement type** field is set to **Multiple**.</p><p>If this field is blank, and you assign an MEA number, the **Standalone selling price origin** and **Standalone selling price** fields are automatically updated based on the values from the **Item standalone selling price** page. Only the MEA numbers that are assigned to other lines on the sales order are available. If these values aren't set up for the item, the values from the **Multiple element revenue allocation parameters** page are used.</p> | 
+| Standalone selling price origin | <p>The origin of the standalone selling price:</p><ul><li>**Amount** – The standalone selling price is an amount that you specify that is more than 0 (zero). The amount is converted between the functional and originating currencies as required.</li><li>**Base sales price** – The standalone selling price matches the base sales price of the item.</li><li>**Invoice price** – The standalone selling price matches the invoice price of the item.</li><li>**Percent of item** – The standalone selling price is specified as a percentage value and is calculated based on the price of the item. If this option is selected, specify the default percentage.</li><li>**Allocate residual amount** – The origin of the standalone selling price is calculated as *Total contract value of parent item* – *Total standalone selling price of child items*:</p><ul><li>*Total contract value of parent item* is the net or billed amount.</li><li>*Total standalone selling price of child items* is the sum of the extended or contract standalone selling price of all child items, except the child item that uses this standalone selling price origin.</li></ul><p>If the calculated amount is a negative value, the amount is set to 0 (zero).</p><p>**Note:** This option can be selected for only one child item in the revenue split.</p></li><li>**None** – The origin of the standalone selling price is based on the child items. This option applies to items that are defined as parent items in a revenue split template. If the **Revenue split** checkbox is selected, this option is automatically selected, and the setting can't be changed.</li><li>**Percent of parent invoice price** – The origin of the standalone selling price is a percentage of the invoice price of the parent item. This option is available only for child items in a revenue split template.</li><li>**Percent of parent standard price** – The origin of the standalone selling price is a percentage of the standard price of the parent item. This option is available only for child items in a revenue split template. When the option for a child item is changed from **Percent of parent standard price** to **Percent of parent invoice price**, or from **Percent of parent invoice price** to **Percent of parent standard price**, the calculated values are also updated.</li></ul> |
+| Standalone selling price | <p>The standalone selling price for the line, in the transaction currency.</p><p>The value in the **Amount** field is either entered or calculated.</p> |
+| Contract standalone selling price | The contract standalone selling price. |
+| Remaining contract revenue | The remaining revenue amount for the contract. This amount is the sum of all lines that invoices haven't yet been created for. |
+| Total contract revenue | The total contract revenue amount for the line. This amount is the sum of all lines, regardless of whether invoices have been created for them. |
+| Deferred contract revenue account | <p>Specify the account to use for journal entries when an MEA contract invoice is created.</p><p>This field is available only when recurring contract billing is used.</p> |
+| Error | Any errors that occurred for the revenue allocation. |
 
-To use the revenue allocation functionality on a sales order:
-1. On the **All sales orders** page, create a sales order with items. 
-2. In the **Invoice** tab, select **Revenue allocation** under  **Revenue allocation**. 
-3. Select the **Multiple element arrangement type** and **Multiple element arrangement number**.  
-4. If the **Multiple element arrangement type** is **Multiple**, select the lines you want and click **Apply to selected**. 
-5. Select **Save**.
+## Use revenue allocation on a sales order
 
-If you use Revenue and expense deferrals, the deferral schedule is automatically created. The deferral schedule can be viewed in **All deferral schedules**.
+To use the revenue allocation functionality on a sales order, follow these steps.
 
+1. On the **All sales orders** page, create a sales order that has items.
+2. On the **Invoice** tab, under **Revenue allocation**, select **Revenue allocation**.
+3. In the **Multiple element arrangement type** field, select the MEA type.
+4. In the **Multiple element arrangement number** field, specify the MEA number.
+5. If the **Multiple element arrangement type** field is set to **Multiple**, select the lines that you want, and then select **Apply to selected**.
+6. Select **Save**.
+
+If you use revenue and expense deferrals, the deferral schedule is automatically created. You can view it on the **All deferral schedules** page.
