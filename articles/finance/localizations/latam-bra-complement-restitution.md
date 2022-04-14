@@ -434,7 +434,7 @@ The text file that is generated should first be validated by using the tax autho
 	- ICMS-ST presumed tax fiscal books
 
 5. Go to **Fiscal books** \> **Common** \> **Booking period**, and then, on the **Tax statements** tab, select **SPED DRCST**. This statement is also available in the ICMS-ST tax assessment for SC state.
-6.  In the **File name** field, enter the full path where the text file should be saved. Includehe name of the file.
+6.  In the **File name** field, enter the full path where the text file should be saved. Include the name of the file.
 7.  In the **File type** field, select type of the file.
 
 The file is submitted by using web services. A certificate is required. After the return message is received together with the result of government validation, the response is saved in the same location where the file was generated.
