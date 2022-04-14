@@ -49,7 +49,7 @@ To register the Teams application with your tenant in the Azure portal, follow t
 1. In the **Request API permissions** dialog box, select **Microsoft Graph**, select **Delegated permissions**, expand **Group**, select **Group.ReadWrite.All**, and then select **Add permissions**.
 1. In the **Request API permissions** dialog box, select **Add a permission**, select **Microsoft Graph**, select **Application permissions**, expand **Group**, select **Group.ReadWrite.All**, and then select **Add permissions**.
 1. In the **Request API permissions** dialog box, select **Add a permission**. On the **APIs my organization uses** tab, search for **Microsoft Teams Retail Service**, and select it.
-1. Select **Delegated permissions**, expand **TaskPublishing**, select **TaskPublising.ReadWrite.All**, and then select **Add permissions**. For more information, see [Configure a client application to access a web API](/azure/active-directory/develop/quickstart-configure-app-access-web-apis).
+1. Select **Delegated permissions**, expand **TaskPublishing**, select **TaskPublishing.ReadWrite.All**, and then select **Add permissions**. For more information, see [Configure a client application to access a web API](/azure/active-directory/develop/quickstart-configure-app-access-web-apis).
 
 To enable Teams integration in Commerce headquarters, follow these steps.
 
