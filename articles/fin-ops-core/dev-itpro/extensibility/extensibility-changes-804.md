@@ -141,7 +141,7 @@ These methods have been refactored to support extensibility through chain of com
 |InventUpd_Financial.updateFinancialIssue|
 |InventUpd_Financial.updateNow|
 |InventUpd_Physical.updatePhysicalReturnedReceipt|
-|InventUpd_Registered.pickReleatedIssueTransMore|
+|InventUpd_Registered.pickRelatedIssueTransMore|
 |InventUpd_Reservation.updateReserveMore|
 |InventUpdateMarking.updateReservations|
 |JmgAbsenceCalendar|
