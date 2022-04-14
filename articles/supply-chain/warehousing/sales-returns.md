@@ -315,7 +315,7 @@ In the examples that follow, the return cost price is represented as **Inv. Cost
 
 The return order doesn't reference a customer invoice. The returned item is credited. The **Credit correction** parameter isn't selected when the return order invoice, or credit note, is generated.  
 
-![Return order doesn't reference a customer invoic.](./media/SalesReturn09.png)  
+![Return order doesn't reference a customer invoice.](./media/SalesReturn09.png)  
 
 >[Note!]
 >The item master price is used as the default value for the **Return cost price** parameter. The default price differs from the cost price at the time of inventory issue. Therefore, the implication is that a loss of 3 has been incurred. Additionally, the return order doesn't include the discount that was given to the customer on the sales order. Therefore, an excessive credit occurs.

@@ -56,7 +56,7 @@ This functionality is applicable to the following documents.
 Complete the following steps to configure customer data and turn on the ability to automatically save printed invoices as attachments.
 
 1. Go to **Accounts receivable** > **All customers**. 
-2. Select a customer, and on the **Invoice and delivery** FastTab, in the **E-INVOCE** section, in the **eInvoice attachment** field, select **Yes**.
+2. Select a customer, and on the **Invoice and delivery** FastTab, in the **E-INVOICE** section, in the **eInvoice attachment** field, select **Yes**.
 
 ## Print invoices
 You can post and print any free text, customer, and project invoice or credit note for the customer configured in the previous procedure.
