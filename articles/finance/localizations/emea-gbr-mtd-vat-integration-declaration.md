@@ -139,7 +139,7 @@ Create sales tax groups for the different types of business operations that are 
     - **Reverse charge**: For sales tax codes that are set up for importing and reverse change operations with a negative rate.
     - **Use tax**: For intra-community acquisitions of goods made in Northern Ireland from EU Member States. As of January 1, 2021, tax setups that use the **use tax** approach will no longer be applicable to acquisitions that companies in Great Britain make from the EU.
 
-    The combination of these groups must lead to one sales tax code. There is an exception for the setup of reverse charge VAT operations, which Finance uses for VAT posting. These two groups, together with **Reporting type** defind for **Item sales tax group** and the **Country/region type** of the **Sales tax code**, will lead to reporting in different [boxes of the VAT declaration](#boxes).
+    The combination of these groups must lead to one sales tax code. There is an exception for the setup of reverse charge VAT operations, which Finance uses for VAT posting. These two groups, together with **Reporting type** defined for **Item sales tax group** and the **Country/region type** of the **Sales tax code**, will lead to reporting in different [boxes of the VAT declaration](#boxes).
  
 > [!NOTE]
 > As of January 1, 2021, dispatch of goods and related costs to customers in the EU must be excluded from box 8 if the dispatches are from Great Britain. Therefore, the sales tax code with the **Country/Region type** value set up to **EU** can be used for intra-community dispatches of goods from Northern Ireland to EU Member States only.
