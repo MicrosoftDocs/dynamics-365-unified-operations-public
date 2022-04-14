@@ -88,7 +88,7 @@ These methods have been refactored to support extensibility through chain of com
 |CustSettlementPriorityProcessing.getBillingPriorities|
 |CustSettlementPriorityProcessing.getSettlementQuery|
 |CustSettlementPriorityProcessing.initCustTransOpen|
-|CustSettlementPriorityProcessing.insertAllLinesAccrossInvoices|
+|CustSettlementPriorityProcessing.insertAllLinesAcrossInvoices|
 |CustSettlementPriorityProcessing.markTransactions|
 |CustSettlementPriorityProcessing.markTransByCreditNoteOnBillingClasses|
 |CustSettlementPriorityProcessing.validateMarkedTransactionOpenTrans|
