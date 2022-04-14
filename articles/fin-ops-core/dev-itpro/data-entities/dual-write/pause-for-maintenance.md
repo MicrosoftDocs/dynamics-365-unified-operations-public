@@ -27,7 +27,7 @@ When you pause a table map that is in the **Running** state, all records that ha
 > - A pause can only be active for a maximum of 7 days.
 > - There is a maximum size of 1 GB worth of records that can be queued. 
 >
-> Paused maps must be reactivated in less than 7 days from the pause start date, or else pending changes can be lost impacting data consistancy. 
+> Paused maps must be reactivated in less than 7 days from the pause start date, or else pending changes can be lost impacting data consistency. 
 > Reaching either one of these limits will result in a block on all additional records until the sync is resumed and the queued records are caught up. Users will have to manually resume the job in order for the catch up to be completed.
 
 
