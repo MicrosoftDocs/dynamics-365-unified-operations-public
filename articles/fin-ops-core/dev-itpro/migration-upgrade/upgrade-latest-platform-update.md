@@ -91,7 +91,7 @@ Platform update packages are released by Microsoft and can be imported from the 
 3.  Select the desired platform update package.
 
 > [!NOTE]
-> The package in the Shared Asset library may not correspond to the latest build (with hotfixes) of the desired platform release. To guarrantee the latest build, use the LCS environment page as described earlier in this article.
+> The package in the Shared Asset library may not correspond to the latest build (with hotfixes) of the desired platform release. To guarantee the latest build, use the LCS environment page as described earlier in this article.
 
 ### Apply the platform update package to your development environment
 > [!NOTE]
