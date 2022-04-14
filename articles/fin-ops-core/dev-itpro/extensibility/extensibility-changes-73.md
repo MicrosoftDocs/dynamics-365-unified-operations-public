@@ -495,7 +495,7 @@ The following table lists the new methods that have been extracted and opened fo
 
 ## Changes using other methods to support extensibility
 
-The group of changes in this section includes several different approaches to extensibility and represents the extensibilty changes made before **Chain of Command** was introduced. Some of the approaches used are extracting methods, adding "stub" methods, adding delegates, changing access modifiers on methods, and using the SysExtension framework. Please consult the implementation in places required for your customization to determine if the approach taken will work for your customization. In future releases, this group will be small, because we will primarily be using **Chain of Command**.
+The group of changes in this section includes several different approaches to extensibility and represents the extensibility changes made before **Chain of Command** was introduced. Some of the approaches used are extracting methods, adding "stub" methods, adding delegates, changing access modifiers on methods, and using the SysExtension framework. Please consult the implementation in places required for your customization to determine if the approach taken will work for your customization. In future releases, this group will be small, because we will primarily be using **Chain of Command**.
 
 | Method |
 | -------------|

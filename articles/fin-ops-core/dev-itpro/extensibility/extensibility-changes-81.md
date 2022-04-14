@@ -477,7 +477,7 @@ These methods have been refactored to support extensibility through chain of com
 |WorkflowHierarchyProviderHelperEventHandler::getPersonnelNumberIdBySysDictTypeDelegate|
 |WorkTimeTable.removeDisplayCache|
 |WrkCtrResourceAbilityMapController.insertData|
-|Enable increase of decimal precision through extensiblity for quantities|
+|Enable increase of decimal precision through extensibility for quantities|
 
 ## Enumerations made extensible
 
@@ -585,8 +585,8 @@ These metadata changes have been made in this update.
 In addition to the refactored methods, the following extensibility enhancements have been made.
 
 - Bug request: "CustCollectionLetterTrans -> CollectionLetterNum" Relation properties
-- Enable increase of decimal precision through extensiblity for prices
-- Enable increase of decimal precision through extensiblity for weights
+- Enable increase of decimal precision through extensibility for prices
+- Enable increase of decimal precision through extensibility for weights
 - Map Extension: LogisticsEntityLocationMap
 - OMOperatingUnit should provide user friendly and defined value for DimAttributeOMDepartment.Value
 - Redesign how InventPosting finds LedgerDimension
