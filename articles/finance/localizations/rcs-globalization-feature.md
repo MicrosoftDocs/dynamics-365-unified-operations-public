@@ -71,7 +71,7 @@ To use a Globalization feature, you must first import it from the Global reposit
 1. Make sure that the **Globalization features** feature is turned on in Feature management, as described earlier in this topic.
 2. Open the new **Globalization Features** workspace, and then, under **Features**, select the **e-Invoicing** tile.
 
-    ![Global Features workspace.](./media/RCS_GlobalF_2%20Feature%20wrkspace.JPG)
+    ![Global Features workspace.](./media/RCS_GlobalF_2%20Feature%20workspace.JPG)
 
     The **e-Invoicing Features** page is opened.
 

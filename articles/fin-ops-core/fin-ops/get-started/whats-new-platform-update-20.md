@@ -59,7 +59,7 @@ The Finance and Operations web client has started its journey of aligning to Mic
 
 -  **Dashboard** - Workspace cards on the dashboard now have a more tile-like appearance, with a white background color and box shadow to make them stand out more from the page background. The font size and weight have also been adjusted to allow more room for workspace titles. 
 
-    The following image shows how workspce cards appeared on the dashboard before Platform update 20:
+    The following image shows how workspace cards appeared on the dashboard before Platform update 20:
 
     ![Old dashboard.](media/prePU20-dashboard-cropped.png  "Old dashboard")
   
