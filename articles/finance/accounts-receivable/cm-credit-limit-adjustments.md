@@ -122,7 +122,7 @@ After you've created credit limit adjustment lines, you can use the **Post** but
 
 ### Credit limit adjustments workflows
 
-The **Credit limit adjustments** workflows can be used to send credit limit adjustments through a workflow approval process. You can create two workflows on the **Credit management worfklow** page (**Credit management \> Setup \> Credit management worfklow**):
+The **Credit limit adjustments** workflows can be used to send credit limit adjustments through a workflow approval process. You can create two workflows on the **Credit management workflow** page (**Credit management \> Setup \> Credit management workflow**):
 
 - **Credit limit adjustments** – This workflow can be used to approve entries at the header level.
 - **Credit limit adjustments line** – This workflow can be used to approve the adjustment entries so that the entries can be approved by different people, based on the criteria in the workflow.
