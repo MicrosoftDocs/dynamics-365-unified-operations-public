@@ -184,7 +184,7 @@ To have additional code run when the user clicks the **Edit** button, use eventi
 
 -   To subscribe to view/edit mode switching, use these events:
     -   element.viewEditModeHelper().EditModeSwitching
-    -   element.viewEditModeHelper().EditModeSwitche
+    -   element.viewEditModeHelper().EditModeSwitched
 -   To query the current view/edit mode, use these events:
     -   element.viewEditModeHelper().isInEditMode()
     -   element.viewEditModeHelper().IsInViewMode()
