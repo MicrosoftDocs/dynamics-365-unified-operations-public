@@ -126,7 +126,7 @@ If you experience any of the aforementioned indications of slow performance when
 9. Select **Done**.
 
    > [!NOTE]
-   > If you previously received an error of type 429 from the query prior to updating, you may need to wait for the retry period prior to refreshing the query for it to complete successully.
+   > If you previously received an error of type 429 from the query prior to updating, you may need to wait for the retry period prior to refreshing the query for it to complete successfully.
 
 10. Click **Close & Apply** on the Power Query Editor action ribbon.
 
