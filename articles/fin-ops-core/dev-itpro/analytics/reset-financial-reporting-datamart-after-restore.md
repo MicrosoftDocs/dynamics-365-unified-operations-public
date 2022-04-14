@@ -219,7 +219,7 @@ Before getting started, be sure that all users close Report designer and exit th
 	BEGIN
 		IF (NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'Datamart' AND  TABLE_NAME = 'AttributeValueIndexesBackUp'))
 		BEGIN
-			--create table to store indexses
+			--create table to store indexes
 			-- Indexes of different table can have same index_id,but we need unique index id
 			Create table [Datamart].[AttributeValueIndexesBackUp]
 			(
