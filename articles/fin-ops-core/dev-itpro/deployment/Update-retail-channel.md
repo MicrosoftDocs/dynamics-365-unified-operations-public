@@ -91,7 +91,7 @@ For troubleshooting, Commerce Scale Unit allows self-service restart of the serv
 ## CSU auto-update sequence
 
 > [!NOTE]
-> Auto-update for CSU is being gradually rolled out to all Commerce customers. If you are a LCS project owner or environment administrator, you'll recieve an email notification when CSU auto-update is rolled out to your LCS project.
+> Auto-update for CSU is being gradually rolled out to all Commerce customers. If you are a LCS project owner or environment administrator, you'll receive an email notification when CSU auto-update is rolled out to your LCS project.
 
 When CSU is auto-updated by Microsoft, it takes place in the following sequence.
 

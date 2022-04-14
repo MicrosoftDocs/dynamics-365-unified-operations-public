@@ -53,7 +53,7 @@ In the future, the first metadata types to get **Feature Class** property suppor
 Currently, the Feature Class property and the FeatureStateProvider API can be used to reference an existing feature in Feature Management, but additional features cannot be defined. That support is likely to be enabled once the **Feature Class** property work is complete. 
 
 ## New license types support associating users with a license
-New license types are being made available to new customers. For customers on those new licenses, users need to be associated with a license. If a license is associated with a new user, the first time they sign in they will be added as a system user. If a license is not associated with a user, then they will recieve a brief warning.
+New license types are being made available to new customers. For customers on those new licenses, users need to be associated with a license. If a license is associated with a new user, the first time they sign in they will be added as a system user. If a license is not associated with a user, then they will receive a brief warning.
 
 
 ## Additional resources

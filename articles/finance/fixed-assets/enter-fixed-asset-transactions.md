@@ -82,6 +82,6 @@ The following Fixed assets transactions will use different voucher numbers:
 - An asset's service date is before the acquisition date. Therefore, a depreciation adjustment is posted.
 
 > [!NOTE]
-> When you enter transactions, be sure that all the transactions apply to the same fixed asset. A voucher won't be posted if it includes more than one fixed asset, even if the **New Voucher** field is set to **One voucher number only** on the **Journal names** page in General ledger. If you include more than one fixed asset in the voucher, the message you'll recieve the message, "There can only be one fixed asset transaction per voucher," and you won't be able to post the voucher.
+> When you enter transactions, be sure that all the transactions apply to the same fixed asset. A voucher won't be posted if it includes more than one fixed asset, even if the **New Voucher** field is set to **One voucher number only** on the **Journal names** page in General ledger. If you include more than one fixed asset in the voucher, the message you'll receive the message, "There can only be one fixed asset transaction per voucher," and you won't be able to post the voucher.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

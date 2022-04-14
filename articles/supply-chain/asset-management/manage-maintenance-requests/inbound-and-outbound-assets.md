@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: EntAssetOutboundObjectsListPage, EntAssetOutboundObjectsDeliver, EntAssetInboundObjectsListPage, EntAssetInboundObjectsRecieve 
+ms.search.form: EntAssetOutboundObjectsListPage, EntAssetOutboundObjectsDeliver, EntAssetInboundObjectsListPage, EntAssetInboundObjectsReceive 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
