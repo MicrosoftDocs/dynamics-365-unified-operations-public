@@ -68,7 +68,7 @@ As all the budgeting process happens in the Finance department, therefore Julia 
 
 1.2. Type the name for the organizational hierarchy in the Name box and click Assign purpose.
 
-1.3. Select the Budget planning purpsose, click Add, and assign the newly created organizational hierarchy. 
+1.3. Select the Budget planning purpose, click Add, and assign the newly created organizational hierarchy. 
 
 [![Assign purpose.](./media/screenshot5.png)](./media/screenshot5.png)
 
