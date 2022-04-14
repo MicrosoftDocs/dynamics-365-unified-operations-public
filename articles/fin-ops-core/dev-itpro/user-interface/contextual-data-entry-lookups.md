@@ -74,7 +74,7 @@ Handling custom lookup forms requires additional knowledge and will be covered i
 
 ### Programming model additions
 
-The behaviors and rules expressed in *Listings 1* and *2* are contained primarily by a new X++ class called *FormControlAmbiguousReferenceResolver*. *FormControlAmbiguousReferenceResolver* uptake in application code will be necessary in more advanced scenarios. Its use will be described later in the document. In addition to the *FormControlAmbiguousReferenceResolver* class, a new control override called *resolveAmbiguousReference* has been added. R*esolveAmbiguousReference* acts as a hook point in the system for translating what the user typed into a value that the system is expecting. The basic flow is as follows:
+The behaviors and rules expressed in *Listings 1* and *2* are contained primarily by a new X++ class called *FormControlAmbiguousReferenceResolver*. *FormControlAmbiguousReferenceResolver* uptake in application code will be necessary in more advanced scenarios. Its use will be described later in the document. In addition to the *FormControlAmbiguousReferenceResolver* class, a new control override called *resolveAmbiguousReference* has been added. *ResolveAmbiguousReference* acts as a hook point in the system for translating what the user typed into a value that the system is expecting. The basic flow is as follows:
 
 1.  The user enters a value into a control and removes focus.
 2.  An interaction is sent from the client to the server, indicating that a new value has been entered. The appropriate command is executed on the server.
