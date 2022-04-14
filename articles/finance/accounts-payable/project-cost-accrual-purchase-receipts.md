@@ -79,7 +79,7 @@ Creating a draft vendor invoice will generate pending project transactions.
 [![Pending project transactions.](./media/accruals8-1024x225.png)](./media/accruals8.png) 
 
 In the **Committed cost** page, records created in step 1 will be closed and new records will be created to reflect cost commitment coming from the pending vendor invoice. The **Transaction origin** field for the committed cost will be set to **Vendor invoice**.
-[![Commited costs page.](./media/accruals9-1024x200.png)](./media/accruals9.png)
+[![Committed costs page.](./media/accruals9-1024x200.png)](./media/accruals9.png)
 
 The vendor invoice will remain in a pending state until the actual vendor invoice arrives.
 
