@@ -113,7 +113,7 @@ The attachments preview uses the Web app Open Platform Interface (WOPI) that is 
 > [!NOTE]
 > For the following situations, you will need to adjust the **Office Web Apps Server** field as specified. 
 > -  For environments in China, use https://onenote.partner.officewebapps.cn. 
-> -  For environments in the Government Commmunity Cloud (GCC), use https://gb4-onenote.officeapps.live.com.
+> -  For environments in the Government Community Cloud (GCC), use https://gb4-onenote.officeapps.live.com.
 
 ### For a Microsoft Dynamics 365 Finance + Operations (on-premises) environment
 
