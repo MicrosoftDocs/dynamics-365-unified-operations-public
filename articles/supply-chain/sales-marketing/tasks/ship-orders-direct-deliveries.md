@@ -32,7 +32,7 @@ This topic demonstrates how to create a direct delivery for a sales order. You u
 ## Set an individual order for direct delivery
 1. Go to **Navigation pane > Modules > Accounts receivable > Orders > All sales orders**.
 2. Select **New**.
-3. Enter or select a value in the **Customer accound** field, then select **OK**
+3. Enter or select a value in the **Customer account** field, then select **OK**
 4. Enter or select values in the **Item number** and **Site** fields, then select **Save**.
 5. On the Action Pane, select **Sales order**, then select **Direct delivery**. The Create delivery page lists all the open sales order lines as copied from the sales order. You can review the order details, and if required, you can modify details such purchase quantity and pricing terms before you create the direct delivery.  
 6. Select **Yes** in the **Include all** field.
