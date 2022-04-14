@@ -316,7 +316,7 @@ Go to **Cost accounting ledger** \> **Actual version** \> **Manage** \> **Statis
 
 **Journal**
 
-| Journal | Journal type                       | Fiscal calendar period | Year  | Perid  |Version      |Data connector source entries |
+| Journal | Journal type                       | Fiscal calendar period | Year  | Period  |Version      |Data connector source entries |
 |---------|------------------------------------|------------------------|-------|--------|---------------|-------------|
 | 00002   | Statistical entry transfer journal | Fiscal                 | 2017  | Period 1 | CA ledger USMF | Electricity |
 
