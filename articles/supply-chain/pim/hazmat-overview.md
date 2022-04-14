@@ -49,7 +49,7 @@ Product information management provides a range of setup tables where you can en
 The following common regulations were referenced when this functionality was developed:
 
 - **ADR** – Regulations that are related to the international carriage of dangerous goods by road
-- **CFR 49** – Regulations in the United Sates for the carriage of dangerous goods
+- **CFR 49** – Regulations in the United States for the carriage of dangerous goods
 - **IMDG** – The International Marine Dangerous Goods (IMDG) code
 - **IATA** – The International Air Transport Association (IATA) dangerous goods regulations
 

@@ -44,7 +44,7 @@ To use the hazardous materials processes, you must first create a regulation. Re
 Here are some common regulations:
 
 - **ADR** – Regulations that are related to the international carriage of dangerous goods by road
-- **CFR 49** – Regulations in the United Sates for the carriage of dangerous goods
+- **CFR 49** – Regulations in the United States for the carriage of dangerous goods
 - **IMDG** – The International Marine Dangerous Goods (IMDG) code
 - **IATA** – The International Air Transport Association (IATA) dangerous goods regulations
 
