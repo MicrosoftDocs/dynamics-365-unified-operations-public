@@ -406,7 +406,7 @@ The following table lists the new methods that have been extracted and opened fo
 |Form CustBankAccounts|
 |Form DirPartyQuickCreateForm.init|
 |Form HierarchyDetail.contextChanged|
-|Form HierarchyDetail: smmActiviate:  initValue|
+|Form HierarchyDetail: smmActivate:  initValue|
 |Form HierarchyNameLookoup: Hierarchy: init|
 |Form LedgerJournalTransDimension.init|
 |Form ProjInvoiceProposalDetail.editInvoiceFormat|
