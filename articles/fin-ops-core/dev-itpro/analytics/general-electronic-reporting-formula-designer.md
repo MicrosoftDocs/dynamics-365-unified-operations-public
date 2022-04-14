@@ -145,7 +145,7 @@ The following illustration shows expressions of this type. (Version 11.12.11 of 
 
 On the **Formula designer** page, select **Test** to validate how the configured formula works.
 
-[![Selecting Test to validate a forumula.](./media/ER-FormulaTest-Start.png)](./media/ER-FormulaTest-Start.png)
+[![Selecting Test to validate a formula.](./media/ER-FormulaTest-Start.png)](./media/ER-FormulaTest-Start.png)
 
 When the values of formula arguments are required, you can open the **Test expression** dialog box from the **Formula designer** page. In most cases, these arguments must be manually defined, because the configured bindings aren't run at design time. The **Test result** tab on the **Formula designer** page shows the result from execution of the configured formula.
 
