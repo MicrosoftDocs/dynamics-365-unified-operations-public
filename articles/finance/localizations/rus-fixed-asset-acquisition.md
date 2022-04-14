@@ -143,7 +143,7 @@ By default, when you reverse transactions, the reversal date is equal to the ori
 
 When reverse transactions are posted for all value models, the status of the fixed asset is changed to **Scheduled** or **Bought**, depending on original status of the fixed asset.
 
-When reverssing a transaction with the **Putting into operation** type for the fixed asset, which has components, the items are returned to inventory at the same cost price that they were issued from inventory at when the **Putting into operation** transaction was posted. The inventory transactions are marked and, after inventory closing, have the same cost price.
+When reversing a transaction with the **Putting into operation** type for the fixed asset, which has components, the items are returned to inventory at the same cost price that they were issued from inventory at when the **Putting into operation** transaction was posted. The inventory transactions are marked and, after inventory closing, have the same cost price.
 
 > [!NOTE]
 > You can reverse **Putting into operation** transactions via the Fixed asset journal (**Fixed asset (Russia) \> Journals \> FA journal**).
