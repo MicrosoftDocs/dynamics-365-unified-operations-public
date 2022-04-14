@@ -58,7 +58,7 @@ Use the following steps to add the bank statement import entity to support the M
             3.  Upload data file = new version SampleBankCompositeEntity.xml.
             4.  Click **Yes** to overwrite the existing file.
             5.  Click **Yes** to generate a new mapping.
-            6.  Verify that S**equenceNumber** is mapped.
+            6.  Verify that **SequenceNumber** is mapped.
                 -   Click **View Map** on the statement entity.
                 -   Verify that **SequenceNumber** is mapped from Source to Staging.
 
