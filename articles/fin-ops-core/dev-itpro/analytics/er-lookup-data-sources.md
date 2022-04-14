@@ -83,7 +83,7 @@ When you set the **Cross-company** option to **Yes** for the editable lookup dat
    ![Review the cross-company lookup data source of the Format enumeration\Lookup type.](./media/er-lookup-data-sources-img8.gif)
 
 > [!NOTE]
-> Select every company seperately to configure the set of rules for this lookup data source of the editable ER format. An exception is thrown at runtime when the cross-company lookup is called with the code of the company for which the lookup setting was not completed.
+> Select every company separately to configure the set of rules for this lookup data source of the editable ER format. An exception is thrown at runtime when the cross-company lookup is called with the code of the company for which the lookup setting was not completed.
 >
 > Make sure that you grant permissions for a user who runs the ER format with the cross-company **Lookup** data source to access the data of every company that is in scope of this data source. Otherwise, an exception is thrown at runtime.
 
