@@ -351,7 +351,7 @@ These methods have been refactored to support extensibility.
 | SalesQuotationEditLinesForm.initializeAndRun                                                   |
 | SalesQuotationEditLinesForm.initializeAndRun                                                   |
 | SalesQuotationEditLinesForm_Proj_Confirm.queryBuildSalesQuotationTable                         |
-| SalesQuotationEditLinesForm_Sales_Confir.numRefSalesId                                         |
+| SalesQuotationEditLinesForm_Sales_Confirm.numRefSalesId                                         |
 | SalesQuotationJumpRef.main                                                                     |
 | SalesQuotationLineCopyFromSource.updateAfterCopy                                               |
 | SalesQuotationLineType.salesQtyAllowEdit                                                       |

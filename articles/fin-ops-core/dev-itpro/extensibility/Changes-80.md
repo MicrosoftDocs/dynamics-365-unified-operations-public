@@ -348,7 +348,7 @@ These methods have been refactored to support extensibility through chain of com
 |Class SalesPackingSlipJournalPost.addToInventReportDimHistory|
 |Class SalesPurchLineInterface.setPriceAgreement|
 |Class SalesQuotationCopying.copyHeader|
-|Class SalesQuotationEditLinesForm_Sales_Confir.createSalesTable|
+|Class SalesQuotationEditLinesForm_Sales_Confirm.createSalesTable|
 |Class SalesQuotationEditLinesForm|
 |Class SalesQuotationLineType_Sales.validateWrite|
 |Class SalesTableListPageInteraction.setButtonInterCompany|

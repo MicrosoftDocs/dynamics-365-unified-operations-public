@@ -350,10 +350,10 @@ These methods have been refactored to support extensibility through chain of com
 |SalesParmLine.setQty|
 |SalesQuantity_Invoice.calcQtyInvent|
 |SalesQuantity_Invoice.calcQtySales|
-|SalesQuotationEditLinesForm_Sales_Confir method createSalesLines|
-|SalesQuotationEditLinesForm_Sales_Confir method createSalesTable|
-|SalesQuotationEditLinesForm_Sales_Confir.createSalesLine|
-|SalesQuotationEditLinesForm_Sales_Confir.createSalesLines|
+|SalesQuotationEditLinesForm_Sales_Confirm method createSalesLines|
+|SalesQuotationEditLinesForm_Sales_Confirm method createSalesTable|
+|SalesQuotationEditLinesForm_Sales_Confirm.createSalesLine|
+|SalesQuotationEditLinesForm_Sales_Confirm.createSalesLines|
 |SalesQuotationLine.createLine|
 |SalesQuotationLine.createQuotationLineFromTemplate|
 |SalesQuotationLine.createQuotationLineFromTemplate|

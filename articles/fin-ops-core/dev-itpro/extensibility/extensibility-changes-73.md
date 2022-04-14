@@ -460,7 +460,7 @@ The following table lists the new methods that have been extracted and opened fo
 |SalesQuotationConfirmationDP.processReport|
 |SalesQuotationConfirmationDP.setSalesQuotationDetailsTmp|
 |SalesQuotationEditLinesForm.createParmLine|
-|SalesQuotationEditLinesForm_Sales_Confir.createSalesLines|
+|SalesQuotationEditLinesForm_Sales_Confirm.createSalesLines|
 |SalesQuotationTableForm_Sales.syncDeliveryScheduleCommercialAttributes|
 |SalesQuotationTableType.validateField|
 |SalesTable2LineUpdate.update|
@@ -1254,7 +1254,7 @@ Inline delegates are now available. The most common way to use inline delegates 
 |SalesQuotationEditLinesForm.mainOnServer|
 |SalesQuotationEditLinesForm_Proj_Confirm.queryBuildSalesQuotationTable|
 |SalesQuotationEditLinesForm_Proj_Send.queryBuildSalesQuotationTable|
-|SalesQuotationEditLinesForm_Sales_Confir.updateNow|
+|SalesQuotationEditLinesForm_Sales_Confirm.updateNow|
 |SalesQuotationEditLinesForm_Sales_Confirm.createSalesLine|
 |SalesQuotationEditLinesForm_Sales_Send.checkLines|
 |SalesQuotationJumpRef.main|
@@ -1372,7 +1372,7 @@ Inline delegates are now available. The most common way to use inline delegates 
 |WhsShipConfirm.canShipConfirm|
 |WHSShipConfirm.createInventTransferParmLineFromContainerTable|
 |WHSShipConfirm.runTransferShip|
-|WhsShipConfirn.validateAllAllowedForOverOrUnderdeliveryWorkQtyHasBeenPicked|
+|WHSShipConfirm.validateAllAllowedForOverOrUnderdeliveryWorkQtyHasBeenPicked|
 |WHSSplitWork.splitWork|
 |WHSWorkClusterTable.cleanupCluster|
 |WHSWorkCreateProdPut.insertProdParmforCoByProduct|
