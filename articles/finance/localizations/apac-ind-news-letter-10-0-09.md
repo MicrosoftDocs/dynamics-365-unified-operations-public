@@ -70,7 +70,7 @@ With debug mode enabled, the system will generate a log file that contains the d
 
 ![Tax parameters setup.](media/GST-debug-mode-4-2-10-0-09.PNG )
 
-3. Calculate the tax for the transaction, and then select **Save** to save the **GTETroubleshotingLog.txt** file.
+3. Calculate the tax for the transaction, and then select **Save** to save the **GTETroubleshootingLog.txt** file.
 
 4. Submit the file to Microsoft for investigation.
  
