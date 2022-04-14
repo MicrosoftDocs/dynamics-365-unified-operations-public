@@ -49,7 +49,7 @@ When a fixed asset is reclassified:
 
 The following diagram and procedure provide an example of the reclassification process. 
 
-[![Diagram showing the reclassicification process.](../media/reclassification-process-01.png)](../media/reclassification-process-01.png)
+[![Diagram showing the reclassification process.](../media/reclassification-process-01.png)](../media/reclassification-process-01.png)
 
 Follow these steps to reclassify a fixed asset:
 
