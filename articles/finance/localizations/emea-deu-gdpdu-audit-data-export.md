@@ -123,7 +123,7 @@ The following tables show the Tax data structure definitions.
 |-----|------------------------|-----------|---------------------------------------------|--------------------------------------|
 | 1   | STEUERART              | Zeichen   | Beschreibung der Steuerart                  | $TaxTrans/taxName()                                      |
 | 2   | STEUERBUCHUNGSREFERENZ | Numerisch | Gibt es hierzu eine MWST-Buchung? - lfd Nr. | $TaxTrans/$TaxTransGeneralJournalAccountEntry/$GeneralJournalAccountEntryRecId                                          |
-| 3   | MWST\_CODE             | Zeichen   | MWST Bezeichung                             | $TaxTrans/TaxCode                                        |
+| 3   | MWST\_CODE             | Zeichen   | MWST Bezeichnung                            | $TaxTrans/TaxCode                                        |
 | 4   | WERTSTELLUNG           | Datum     | Datum der Wertstellung der Buchung          | $TaxTrans/TransDate                                      |
 | 5   | BELEGNUMMER            | Zeichen   | Interne Nummer des Buchungsbelegs           | $TaxTrans/Voucher                                        |
 | 6   | BUCHUNGSWAHRUNG        | Zeichen   | Währung der Buchung                         | $TaxTrans/CurrencyCode                                   |
