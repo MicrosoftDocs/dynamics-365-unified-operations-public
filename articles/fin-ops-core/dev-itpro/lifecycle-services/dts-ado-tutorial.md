@@ -4,7 +4,7 @@
 title: Dynamics 365 Translation Service Azure DevOps extension tutorial (Public Preview)
 description: This tutorial explains how to integrate the Dynamics 365 Translation Service DevOps extension into your Azure DevOps workflow.
 author: joshsantana
-ms.date: 04/13/2022
+ms.date: 04/14/2022
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
@@ -112,7 +112,7 @@ Now that you have an app that is registered with the LCS API connections, you ca
 
     ![Dynamics Lifecycle Services service connection type selected in the New service connection dialog box.](media/dts-ado-tutorial-image11.png)
 
-1. Enter information about the service connection. Use the client ID and authentication endpoint that you made a note of when you registered the app. The name that you select for the service will be used as input for the DTS DevOps extension tasks.
+1. Enter information about the service connection. Use the client ID and authentication endpoint that you made a note of when you registered the app. The name that you select for the service will be used as input for the DTS DevOps extension tasks. The **Lifecycle Services API Endpoint** field will be populated with a default value. If you are required to have all data processed within the European Union (EU), use ``https://lcsapi.eu.lcs.dynamics.com`` instead.
 
     ![Information entered for the new service connection.](media/dts-ado-tutorial-image12.png)
 
