@@ -172,7 +172,7 @@ Electronic addresses are available only in this grid. In future releases, all po
     `CDS postal address history V2 (msdyn_postaladdresses)` | 1.0.0.1 | This is a new map added as part of this release.
     `CDS postal address locations (msdyn_postaladdresscollections)` | 1.0.0.0 | This is a new map added as part of this release.
     `Party Contacts V3 (msdyn_partyelectronicaddresses)` | 1.0.0.0 | This is a new map added as part of this release.
-    `Complimentary Closings ( msdyn_compliemntaryclosings)` | 1.0.0.0 | This is a new map added as part of this release.
+    `Complimentary Closings ( msdyn_complimentaryclosings)` | 1.0.0.0 | This is a new map added as part of this release.
     `Decision making roles (msdyn_decisionmakingroles)` | 1.0.0.0 | This is a new map added as part of this release.
     `Loyalty levels (msdyn_loyaltylevels)` | 1.0.0.0 | This is a new map added as part of this release.
     `Contact person titles (msdyn_salescontactpersontitles)` | 1.0.0.0 | This is a new map added as part of this release.
