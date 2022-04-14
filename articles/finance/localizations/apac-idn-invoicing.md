@@ -152,7 +152,7 @@ Before credit notes are created for cancellation because of an error in a posted
 
 Create at least two records: one that has a **Cancellation** operation and one that has a **Replacement** operation. There can be several records on the **Financial reasons** page. You can configure as many reasons with an **Blank** operation as needed. These reasons can be used, for instance, when creating a credit note for the item return.  
 
-![Creating financial reasons for credit invoicing.](media/apac-idn-resons.png)
+![Creating financial reasons for credit invoicing.](media/apac-idn-reasons.png)
 
 - To cancel a posted invoice because of an error, create a credit note, and associate it with the original invoice and a financial reason that has a **Cancellation** operation. In this situation, no tax invoice number is generated.
 - To create a credit note for items returns, create a credit note, and associate it with the original invoice and a financial reason that has a **Blank** operation. In this situation, a tax invoice number is generated.
