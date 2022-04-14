@@ -104,7 +104,7 @@ The **FormPropertyAttribute** is applied to a method in your control class, whic
 
 You supply the following arguments to the **FormPropertyAttribute** constructor:
 
--   **FormPropertyKind:** A required **FormProperyKind** value that specifies the type of the property. Use **FormPropertyKind::Value** for Properties not bound to a data source field, and use **FormPropertyKind::BindableValue** for properties that may be bound to a data source field.
+-   **FormPropertyKind:** A required **FormPropertyKind** value that specifies the type of the property. Use **FormPropertyKind::Value** for Properties not bound to a data source field, and use **FormPropertyKind::BindableValue** for properties that may be bound to a data source field.
 -   **Name:** A required string that specifies the name of the property. A few best practices for naming properties:
     -   Capitalize the first letter, and use PascalCase.
     -   Do not use any of the names of inherited JavaScript properties
