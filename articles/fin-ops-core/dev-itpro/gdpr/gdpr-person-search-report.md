@@ -52,7 +52,7 @@ An individual might exist as multiple parties in data. You can provide multiple 
 
 ## Download the default template
 
-The Person template contains a list of the entities that will be used to download information. The template must be loaded before the Person search report can be used. The template can be loaded from within the Templates form in Data management for versions 7.2 and later. To download templates fronm **Data management**, complete the following steps. 
+The Person template contains a list of the entities that will be used to download information. The template must be loaded before the Person search report can be used. The template can be loaded from within the Templates form in Data management for versions 7.2 and later. To download templates from **Data management**, complete the following steps. 
 
 1. Open the **Data management** workspace.
 2. If this is the first time that the workspace has been opened, it will load all of the data entities. You must load all the data entities before you load the template.
