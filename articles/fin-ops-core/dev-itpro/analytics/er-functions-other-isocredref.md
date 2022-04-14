@@ -53,7 +53,7 @@ The resulting text value.
 ## Usage notes
 
 > [!NOTE] 
-> To eliminate symbols from alphabets that are't ISO-compliant, the `invoice number digits` argument must be translated before it's passed to this function.
+> To eliminate symbols from alphabets that aren't ISO-compliant, the `invoice number digits` argument must be translated before it's passed to this function.
 
 ## Example
 
