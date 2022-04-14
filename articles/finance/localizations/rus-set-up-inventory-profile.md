@@ -287,7 +287,7 @@ On the **Accounts receivable parameters** page, you can select a default invento
 3. Set the **Use compatible inventory profiles** option to **Yes** if compatible inventory profiles should automatically be used in sales orders.
 4. Set the **Split order lines by inventory profiles** option to **Yes** to automatically split sales order lines by the inventory profiles when **Create lines** is used from the available physical quantity.
 
-    ![Accounts receiveable parameters page, General tab.](media/9_Accounts_receivable_parameters.png)
+    ![Accounts receivable parameters page, General tab.](media/9_Accounts_receivable_parameters.png)
 
 5. On the **Summary update** tab, on the **Split based on** FastTab, set the **Posting profile** option in the **Packing slip** column to **Yes** to split sales order packing slips by the customer posting profiles that are specified on the sales order lines.
 6. Set the **Kind of activity** option in the **Packing slip** column to **Yes** to split sales order packing slips by the kinds of activity that the inventory profiles that are specified on the sales order lines correspond to.

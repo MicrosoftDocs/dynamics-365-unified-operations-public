@@ -54,7 +54,7 @@ The following setup needs to be completed for data to display in **Customer cred
 5. Go to **System administration > Setup > Entity Store** to refresh the **CustCollectionsBIMeasurementsV2** aggregate measurement.
 
 >[!NOTE] 
-> Aging period definitions must be set up in **Accounts receiveable parameters > Collections > Collections defaults** to enable aging data in the Power BI content.
+> Aging period definitions must be set up in **Accounts receivable parameters > Collections > Collections defaults** to enable aging data in the Power BI content.
 
 ## Accessing the Power BI content
 
