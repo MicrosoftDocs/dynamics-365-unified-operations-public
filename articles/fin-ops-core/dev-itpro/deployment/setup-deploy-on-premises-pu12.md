@@ -754,7 +754,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
 
 4. The zip file contains empty and demo data .bak files. Select the .bak file, based on your requirements. For example, if you require demo data, download the AxBootstrapDB_Demodata.bak file.
 
-5. Ensure the database section in the infrastructure\ConfigTempate.xml is configured correctly with the following:
+5. Ensure the database section in the infrastructure\ConfigTemplate.xml is configured correctly with the following:
     1. The database name.
     2. The db file and log settings. The db settings should not be lower than the defaults specified.
     3. The path to the backup file downloaded from LCS Shared Asset library. The default name for the Finance + Operations database is AXDB.

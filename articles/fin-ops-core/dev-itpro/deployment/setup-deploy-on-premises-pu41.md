@@ -813,7 +813,7 @@ You can verify that everything has been configured correctly by running the foll
 
 1. The zip file contains a single backup (.bak) file. Select the file to download, based on your requirements.
 1. After the zip file is downloaded, verify that it's unblocked. Select and hold (or right-click) the file, and then select **Properties**. In the **Properties** dialog box, select the **Unblock** checkbox.
-1. Make sure that the database section in the **infrastructure\\ConfigTempate.xml** file is correctly configured with the following information:
+1. Make sure that the database section in the **infrastructure\\ConfigTemplate.xml** file is correctly configured with the following information:
 
     - The database name.
     - The database file and log settings. The database settings should not be lower than the default values that are specified.
