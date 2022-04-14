@@ -145,7 +145,7 @@ To hide and show the test recorder pane during a recording session, select the c
 
 The test recorder floating control is useful when the test recorder pane is hidden during a recording session. The test recorder pane overrides non-error dialog boxes and/or part of the POS view. Therefore, you must sometimes hide the pane to add validation in the dialog boxes or select controls. If the test recorder pane is hidden, but you must still be able to access test recording functionality (for example, you must turn on validation mode, or pause or continue the recording session), you can use this floating control.
 
-[![Floating control.](./media/Floatter.png)](./media/Floatter.png)
+[![Floating control.](./media/Floater.png)](./media/Floater.png)
 
 The following sections describe the controls on the floating control.
 
