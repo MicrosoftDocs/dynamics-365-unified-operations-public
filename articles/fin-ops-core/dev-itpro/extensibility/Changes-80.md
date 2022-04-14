@@ -257,7 +257,7 @@ These methods have been refactored to support extensibility through chain of com
 |Class ProdUpdReportFinished.updateRouteConsumption|
 |Class ProdUpdSplit.createSplitToProduction|
 |Class ProdUpdStartUp.getListOfBOMJournals|
-|Class ProdUpdStartUp.updateBOMConsmption|
+|Class ProdUpdStartUp.updateBOMConsumption|
 |Class ProjInvoiceDP.insertIntoProjInvoiceTmp|
 |Class ProjInvoiceProposalInsertLines.run|
 |Class ProjInvoiceProposalInsertLines::run()|

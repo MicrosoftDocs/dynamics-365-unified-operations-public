@@ -116,7 +116,7 @@ These methods have been refactored to support extensibility.
 | InterCompanySyncSalesLineType.classDeclaration                                                 |
 | IntrastatTransfer.updateQuery                                                                  |
 | InventBatch.insert                                                                             |
-| InventBatchConsuptionValidator.ValidateExpiryDate                                              |
+| InventBatchConsumptionValidator.ValidateExpiryDate                                              |
 | InventDimCtrl_Frm_OnHand.modifyQueryBasedOnDatasourceName                                      |
 | InventItemBarcode.validateWrite                                                                |
 | InventItemPrice.init                                                                           |
