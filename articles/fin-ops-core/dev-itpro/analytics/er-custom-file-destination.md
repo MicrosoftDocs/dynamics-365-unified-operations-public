@@ -241,7 +241,7 @@ In the current topology, [create a new ER format](tasks/er-format-configuration-
 
 3. In your Visual Studio project, add a new extension for the `ERFormatDestinationSettings` form, and write code that implements a custom UI for your custom destination. The following illustration shows what this UI looks like in the Visual Studio designer.
 
-    ![Reviewing a custm UI in the Visual Studio designer.](media/er-custom-file-destination-form-extension.png)
+    ![Reviewing a custom UI in the Visual Studio designer.](media/er-custom-file-destination-form-extension.png)
 
 4. Add another new class (`ERFormatDestinationSettingsEventHandlers` in this example) to your Visual Studio project, and write the event handler code for an extended destination form. This step requires that the public `ERIFormatFileDestinationSettingsStorage` interface be implemented.
 
