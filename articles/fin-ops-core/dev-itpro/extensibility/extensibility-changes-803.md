@@ -309,7 +309,7 @@ In addition to the refactored methods, the following extensibility enhancements 
 
 - Increase EDT string size for EcoResProductSearchName
 - Change CacheLookup property to NotInTTS for AssetLedgerAccounts
-- Change CacheLookup property to Found on TaxOnItem, TaxJurisdiction, TaxGroupData, and TaxData, and AssetLedgerAcounts
+- Change CacheLookup property to Found on TaxOnItem, TaxJurisdiction, TaxGroupData, and TaxData, and AssetLedgerAccounts
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -35,7 +35,7 @@ Set up postdated checks in the Cash and bank management page.
 
 The role of this task guides is Treasurer. This task uses the USMF demo company.
 
-1. Go to Acounts payable > Payments > Payment journal
+1. Go to Accounts payable > Payments > Payment journal
 2. Click New.
 3. In the Name field, type 'VendPay'.
 4. Click Lines.
