@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Retail July 2017 update
 
 This topic is intended for people who implement functionality related to point of sale (POS) client image management in a retail environment. It provides tips and guidance to consider when planning an implementation.
 
-This guidance applies to both Cloud POS and Modern POS, and provides some general information about image file size handling and types of images that can be used to enrich the user experience with the store and support customer-focused scenarios like up-selling, cross-selling, and clientelling. Welcome screen images, category images, and product images are examples of types of images that you can use.
+This guidance applies to both Cloud POS and Modern POS, and provides some general information about image file size handling and types of images that can be used to enrich the user experience with the store and support customer-focused scenarios like up-selling, cross-selling, and clienteling. Welcome screen images, category images, and product images are examples of types of images that you can use.
 
 ## Implementation considerations
 
