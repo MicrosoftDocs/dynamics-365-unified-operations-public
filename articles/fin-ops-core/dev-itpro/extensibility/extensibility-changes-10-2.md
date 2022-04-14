@@ -73,7 +73,7 @@ The following methods have been refactored to support extensibility:
 - Class\\McrPriceHistoryUpdate.insertNewlyFoundReferences
 - Class\\McrPriceHistoryUpdate.update
 - Class\\McrPriceHistoryUpdate.updatePriceHistoryLineReferences
-- Class\\ProjCopyItemEstimates.copyToItemRequirment
+- Class\\ProjCopyItemEstimates.copyToItemRequirement
 - Class\\PurchAutoCreate\_RFQ.createPurchOrderRFQLineReference
 - Class\\ReqEventProcessDeleteUnusedKanban.deleteUnusedKanban
 - Class\\ReqEventProcessDeleteUnusedKanban.run

@@ -108,7 +108,7 @@ Create item coverage rules by doing the following:
 1. Select **New**.
 1. Select the **General** tab.
 1. Check the box on the header of **Override coverage group** settings.
-1. In the **Coverage time fence (days)** field, enter '60'. Although items in coverage group Requiremen are planned 90 days ahead, this item will be planned 60 days ahead.  
+1. In the **Coverage time fence (days)** field, enter '60'. Although items in coverage group Requirement are planned 90 days ahead, this item will be planned 60 days ahead.  
 1. In the **Negative days** field, enter '2'.
 1. In the **Positive days** field, enter '2'.
 1. Select the **Lead time** tab.
