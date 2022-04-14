@@ -60,7 +60,7 @@ The following bug fixes are included in this release.
 
 | Issue number | Issue | Description |
 |---|---|---|
-| 610128 | Error on publishing data when using the HcmDiscussionOverallCommentEntity | When data is published from an Excel workbook to the HcmDiscussionOverralCommentEntity entity, the following error occurs: "Cannot locate data source record of type HcmTopicOverrall." |
+| 610128 | Error on publishing data when using the HcmDiscussionOverallCommentEntity | When data is published from an Excel workbook to the HcmDiscussionOverallCommentEntity entity, the following error occurs: "Cannot locate data source record of type HcmTopicOverall." |
 | 589073 | EEO-1 report counts "Non Specific" and blank values for **Gender** field as "Female" value. | If **Male** isn't specified for the **Gender** field, the EEO-1 report generates a default value of **Female**. |
 | 589617 | Time off card balance, Available to buy and Available to sell balances do not appear when user roles are restricted to a specific legal entity. | If the user (employee role) is restricted to a specific legal entity, balances don't appear correctly on the **Time Off Balances** card, and in the **Available to buy** and **Available to sell** fields. |
 | 604310 | Absence manager tab should be hidden when the user does not have absence hierarchy assigned. | For a given legal entity, the **Absence manager** tab should be hidden in the self-service portal unless the cross-company parameter is enabled and at least one absence hierarchy is associated with the user. |
