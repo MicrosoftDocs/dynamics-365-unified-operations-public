@@ -814,7 +814,7 @@ Extensibility support has been extended for some methods that were not public an
 |ProjInvoiceJournalPost.initProposalUpdate|
 |ProjLedger.newInventCost|
 |ProjPlanVersionManager.copyActivityData|
-|ProjPlanVersionsMananger.createDraftVersion|
+|ProjPlanVersionsManager.createDraftVersion|
 |ProjProjectTransListPageInteraction.linkActive|
 |Projtask.getCorrespondingTaskElementNumber|
 |ProjValCheckTrans.validateMandatory|
