@@ -199,7 +199,7 @@ The following examples show possible information that is used in a reporting tre
 
 #### Example 1
 
-[![Multi-company roll-up.](./media/mutlicompanyrollup.png)](./media/mutlicompanyrollup.png)
+[![Multi-company roll-up.](./media/multicompanyrollup.png)](./media/multicompanyrollup.png)
 
 #### Example 2
 
