@@ -113,7 +113,7 @@ Financial Reporter uses 16 tasks to copy data from Dynamics 365 Finance to the F
 
 | Name                                                       | Interval | Interval timing |
 |------------------------------------------------------------|----------|-----------------|
-| AX 2012 Account Categories to Account Categor0y            | 41       | Minutes         |
+| AX 2012 Account Categories to Account Category             | 41       | Minutes         |
 | AX 2012 Accounts to Account                                | 7        | Minutes         |
 | AX 2012 Companies to Company                               | 300      | Seconds         |
 | AX 2012 Companies to Organization                          | 23       | Minutes         |

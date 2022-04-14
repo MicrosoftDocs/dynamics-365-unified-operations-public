@@ -75,7 +75,7 @@ This walkthrough was created using the demo company GBSI.
 28. In the Category field, click the drop-down button to open the lookup.
 29. In the tree, expand 'Expand the category tree and select a category.'.
     * For this example, select Cleaning.  
-30. In the tree, select 'Select the caterory from the list'.
+30. In the tree, select 'Select the category from the list'.
     * For this example, select category Cleaning.  
 31. Click OK.
 32. Click Save.
