@@ -4,7 +4,7 @@
 title: Improvements to statement posting functionality
 description: This topic describes improvements that have been made to the statement posting feature.
 author: analpert
-ms.date: 01/31/2022
+ms.date: 04/22/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
