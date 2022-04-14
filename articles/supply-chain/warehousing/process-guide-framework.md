@@ -664,7 +664,7 @@ How to extend:
 
 -   Create a new child class of **ProdProcessGuidePageBuilder** class, and implement the desired user interface.
 
--   Extend the **pageBuildeName()** method in the step class to return the **ProcessGuidePageBuilderNameAttribute** for the class created above.
+-   Extend the **pageBuilderName()** method in the step class to return the **ProcessGuidePageBuilderNameAttribute** for the class created above.
 
 ### Alter logic when a step is considered complete
 
