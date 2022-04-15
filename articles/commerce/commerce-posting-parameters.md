@@ -2,7 +2,7 @@
 # required metadata
 
 title: Commerce posting parameters
-description: This topic describes each of the parameters specific for posting of financial and physical transactions in Microsoft Dynamics 365 Commerce.
+description: This topic describes each of the parameters specific to the posting of financial and physical transactions in Microsoft Dynamics 365 Commerce.
 author: analpert
 ms.date: 04/22/2022
 ms.topic: article
@@ -30,9 +30,11 @@ ms.dyn365.ops.version: 10.0.27
 
 [!include [banner](includes/banner.md)]
 
-This topic describes each of the parameters specific for posting of financial and physical transactions in Microsoft Dynamics 365 Commerce.
+This topic describes each of the parameters specific to the posting of financial and physical transactions in Microsoft Dynamics 365 Commerce.
 
 ## Periodic discount parameters
+
+The following table lists the periodic discount parameters specific to the posting of financial and physical transactions.
 
 | Parameter                         | Definition   |
 |-----------------------------------|------------|
@@ -43,12 +45,16 @@ This topic describes each of the parameters specific for posting of financial an
 
 ## Inventory update parameters
 
+The following table lists the inventory update parameters specific to the posting of financial and physical transactions.
+
 | Parameter  | Definition  |                                                                                                                         
 |------------|-------------|
 | Use default batch ID when batch numbers are not found | Define a default batch id that will be used for batch enabled items when batch numbers are not found and negative inventory is allowed. |
 | Default batch ID   | Batch number to be used when batch numbers for items are not found and the parameter to use default batch numbers is enabled.           |
 
 ## Aggregation parameters
+
+The following table lists the aggregation parameters specific to the posting of financial and physical transactions.
 
 | Parameter                | Definition    |
 |--------------------------|---------------|
@@ -58,13 +64,14 @@ This topic describes each of the parameters specific for posting of financial an
 | Do not aggregate returns | If this option is selected, each return transaction will be posted as a separate sales order when posting a retail statement.                                                                                       |
 ## Batch processing parameters
 
+The following table lists the batch processing parameters specific to the posting of financial and physical transactions.
+
 | Parameter   | Definition  |
 |-------------|-------------|
 | Maximum number of parallel statements | This field defines the number of batch tasks that will be used to post multiple statements.   |
 | Max thread for order processing per statement  | This field represents the maximum number of threads used by the statement posting batch job to create and invoice sales orders for a single statement. The total number of threads that will be used by the statement posting process will be computed based on the value in this parameter multiplied by the value in the Maximum number of parallel statement posting parameter. Setting the value of this parameter too high can negatively impact the performance of the statement posting process.   |
 | Max transaction lines included in aggregation  | This field defines the number of transaction lines that will be included in a single aggregated transaction before a new one is created. Aggregated transactions are created based on different aggregation criteria such as customer, business date, or financial dimensions. It is important to note that the lines from a single transaction will not be split across different aggregated transactions. This means that there is a possibility that the number of lines in an aggregated transaction is slightly higher or lower based on factors such as number of distinct products. |
 | Maximum number of threads to validate store transactions | This field defines the number of threads that will be used to validate transactions. Validating transactions is a required step that needs to occur before the transactions can be pulled into the statements. You also need to define a Gift card product on the Gift card FastTab on the Posting tab of the Commerce parameters page. This needs to defined even if gift cards are not used by the organization.                                                                                                                                                                         |
-
 The following table lists the recommended values for the preceding parameters. These values should be tested and tailored to the deployment configuration and available infrastructure. Any increase in the recommended values can adversely affect other batch processing and should be validated.
 
 | Parameter | Recommended value | Details |
@@ -79,6 +86,8 @@ The following table lists the recommended values for the preceding parameters. T
 
 ## Invoice parameters
 
+The following table lists the invoice parameters specific to the posting of financial and physical transactions.
+
 | Parameter  | Definition  |
 |------------|-------------|
 | Journal name   | Payment journal name that will be used when creating customer payment journals for sales order payments. This applies to all order payments posted for POS, Call Center, and eCommerce channel orders. |
@@ -88,6 +97,8 @@ The following table lists the recommended values for the preceding parameters. T
 | Refund \| Journal name   | Journal name that will be used when creating a customer payment journal for refunds. This setting will apply to all order payments posted for POS, Call Center, and eCommerce channel orders.                                    |
 
 ## Statement parameters
+
+The following table lists the statement parameters specific to the posting of financial and physical transactions.
 
 | Parameter      | Definition   |
 |----------------|---------------------|
