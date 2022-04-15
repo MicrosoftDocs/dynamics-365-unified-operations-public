@@ -108,8 +108,8 @@ Only transactions for cash sales and returns are signed. Here are some examples 
 
 The data that is signed for a sales or return transaction is a text string that consists of the following data fields:
 
-- The total amount of sales or return, including tax per tax rate.
-- The total amount of sales or return, including tax.
+- The total amount of the sale or return, including tax per tax rate.
+- The total amount of the sale or return, including tax.
 - The date and time of the transaction, in YYYYMMDDHHMMSS format.
 - The register number.
 - The sequential number of the signed sales or return transaction for the register.
@@ -118,7 +118,7 @@ The data that is signed for a sales or return transaction is a text string that 
 - The previous signature for the same register. A blank value is used for the first signed sales or return transaction.
 
 > [!NOTE]
-> Return transactions are considered regular sales transactions for digital signing purposes. This means that the signing process for return transactions is the same as for sales transactions, and return transactions are included in the same sequence of signatures as sales transactions. The total amount of a return is negative, that is, it includes the minus sign when it is added to the text string that is signed.
+> For digital signing purposes, return transactions are considered regular sales transactions. Therefore, the signing process for return transactions is the same as the signing process for sales transactions, and return transactions are included in the same sequence of signatures as sales transactions. The total amount of a return is negative. In other words, it includes a minus sign when it's added to the text string that is signed.
 
 You can view the transaction signature and the transaction data that was used to generate it on the **Fiscal transactions** FastTab of the **Store transactions** page in Commerce headquarters. By selecting **Extended data**, you can view specific properties of the fiscal transaction, such as the signature, sequential number, certificate thumbprint, and hash algorithm identification. 
 
@@ -479,8 +479,8 @@ You can download the ER configurations for the Z report and archive from Microso
 
 After you import the configurations, select ER formats for the Z report and archive in the following fields on the **Electronic documents** tab of the **Commerce parameters** page:
 
-- **Z-Report export format**: select the **Retail Z-Report (FR).version.24.23.3** format or the format that you downloaded earlier.
-- **Retail data archive export format**: select the **Retail data archive (FR).version.2.5** format or the format that you downloaded earlier.
+- **Z-Report export format** – Select the **Retail Z-Report (FR).version.24.23.3** format or the format that you downloaded earlier.
+- **Retail data archive export format** – Select the **Retail data archive (FR).version.2.5** format or the format that you downloaded earlier.
 
 ### Reinitialize Commerce components
 
