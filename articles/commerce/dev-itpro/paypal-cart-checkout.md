@@ -1,35 +1,24 @@
 ---
 # required metadata
 
-title: PayPal cart checkout for Dynamics 365 Commerce
-description: This topic provides an overview of the Microsoft Dynamics 365 Payment support PayPal Cart Checkout for faster checkout capabilities.
+title: Configure express payments for PayPal
+description: This topic describes how to configure express payments for PayPal for faster checkout capabilities in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 04/13/2022
+ms.date: 04/15/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 141393
-ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
+audience: Application User, Developer, IT Pro
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: brshoo
-ms.search.validFrom:
-ms.dyn365.ops.version: AX 7.0.1
+ms.search.validFrom: 2017-06-20
 
 ---
 
-# Dynamics 365 Payment Support for PayPal Cart Checkout
+# Configure express payments for PayPal
 
 [!include [banner](../includes/banner.md)]
+
+This topic describes how to configure express payments for PayPal for faster checkout capabilities in Microsoft Dynamics 365 Commerce.
 
 This topic provides an overview of the Microsoft Dynamics 365 payments support for PayPal Cart Checkout capability. It reviews additions of Payment Express modules for faster checkout capabilities, and setup of PayPal Cart Checkout with a Commerce site page.
 
@@ -37,27 +26,29 @@ This topic provides an overview of the Microsoft Dynamics 365 payments support f
 
 | Term | Description |
 |---|---|
-| PayPal Wallet | Also known as the PayPal "button", PayPal Wallet describes the customer experience and integration supported by the PayPal Connector. |
+| PayPal Wallet | Also known as the PayPal "button", PayPal Wallet describes the customer experience and integration supported by the PayPal connector. |
 | Wallet | A payment type that does not include traditional payment characteristics, such as the BIN range and expiration date, which are used to differentiate among credit and debit card types. |
-|Payment Express |Added module in Dynamics 365 Commerce to support faster checkout behavior with supported payment methods, with this article addressing PayPal|
+|Payment express | A Commerce module that supports faster checkout behavior with supported payment methods. This topic covers the payment express module's use with PayPal. |
 
-Microsoft Dynamics 365 Commerce offers an out-of-box integration for PayPal Wallet. When the PayPal Connector is configured, the PayPal button is a selectable payment method as part of online order checkout. When users select **PayPal**, they are directed to complete their payment directly with PayPal and then are returned to the online storefront for order completion. With **PayPal Cart Checkout**, users can utilize their payment account information to pre-fill the checkout form and get through the checkout process faster. Commerce is adding a Payment Express module to allow for express checkout behavior. The Payment Express module can be used in a Fragment and included in the checkout or cart page. The same **Dynamics 365 Payment Connector for PayPal** connector reference is used for a Payment Express or regular checkout option when PayPal is configured.
+Dynamics 365 Commerce offers an out-of-box integration for PayPal Wallet. When the Dynamics 365 Payment Connector for PayPal is configured, the PayPal button appears as a selectable payment method as part of online order checkout. When users select **PayPal**, they are directed to complete their payment directly with PayPal and then are returned to the online storefront to complete their order. With PayPal cart checkout, customers can use their payment account information to prefill the checkout form to get through the checkout process faster. 
+
+Commerce has adding a payment express module to facilitate express checkouts. The payment express module can be used in a fragment that can be included in a checkout or cart page. The same Dynamics 365 Payment Connector for PayPal connector reference is used for a payment express or regular checkout option when PayPal is configured.
 
 ## PayPal cart checkout in Commerce
 
 ### Prerequisites
 
-Follow the PayPal Wallet setup instructions for your environment as described in the [Dynamics 365 Payment Connector for PayPal](../paypal.md) article. 
+Follow the PayPal Wallet setup instructions for your environment as described in [Dynamics 365 Payment Connector for PayPal](../paypal.md). 
 
-If using PayPal as an option in the regular checkout flow (the checkout section in which a user enters their order information without the Express pre-fill actions), follow the setup instructions for the [Payment Module](../payment-module.md) article. Setting up the regular checkout section will remain the same as described in the referenced payment module article.
+If using PayPal as an option in the regular checkout flow (where users enter their account information manually without the payment express prefill actions), follow the setup instructions in [Payment module](../payment-module.md).
 
-### Payment Express module with PayPal
+### Payment express module with PayPal
 
-The **Payment Express** module works with supporting payment methods to offer site customers the option to checkout faster using their payment service account information in the checkout process. The module references the configured connector button and returns the user selected order details (addresses, contact information, and paying against the underlying payment method selected) to pre-populate the checkout form.
+The payment express module works with supporting payment methods to offer site customers the option to checkout faster by prefilling their payment service account information during the checkout process. The payment express module uses the configured payment connector to prefill the checkout form with user account details such as address, contact information, and payment method selected.
 
-With PayPal Cart Checkout, selecting the PayPal button in the Payment Express section will launch the PayPal payment iFrame window. A user will log in to their PayPal account and can use their account shipping address, billing address, email, and PayPal payment method of choice to pay for the transaction.
+With PayPal express checkout, when a user selects the PayPal button in the payment express section of the checkout page a PayPal payment iFrame window is launched. The user then signs in to their PayPal account to use their account shipping address, billing address, email, and PayPal payment method of choice to pay for the transaction.
 
-As the user completes the action in PayPal, they are directed to the Commerce site checkout page with the checkout form pre-populated with their chosen details. In the Payment Express flow, the first **Delivery Option** available for the shipping address returned will be pre-selected for the customer.  The customer has the option to review the order, change checkout order details if desired, and will then select the **Place order** button to finalize the order.
+When the user completes the action in PayPal, they are directed back to the Commerce site checkout page with the checkout form prefilled with their selected details. In the payment express flow, the first delivery pption available for the shipping address returned will be prefilled for the user, who then has the option to review the order and change checkout order details if desired before selecting the **Place order** button to finalize the order.
 
 ### Add the payment express module with PayPal to a fragment in site builder
 
