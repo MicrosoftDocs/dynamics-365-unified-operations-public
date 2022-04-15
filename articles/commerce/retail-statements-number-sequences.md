@@ -52,10 +52,14 @@ To configure number sequence for statement posting in headquarters, follow these
 1. On the **Segments** FastTab, define the segments.
 1. On the **References** FastTab, define the reference **Area** as **Retail store**.
 1. Define **Reference** as **Statement number**, and then select **OK**.
+
     ![Identification, Scope parameters, Segments, and References FastTabs](media/retail-statements-num-seq-setup-01.png)
+
 1. On the **General** FastTab, under **NUMBER ALLOCATION**, update the **Smallest** and **Largest** fields to match the length of the **Alphanumeric** segment defined earlier.
 1. On the **Performance** FastTab, it is recommended that you set the **Preallocation** option to **Yes**, and set the **Quantity of numbers** to **25**.
+
     ![General and Performance FastTabs](media/retail-statements-num-seq-setup-02.png)
+
 1. Select **Save** on the action pane to save and close the form.
 
 
