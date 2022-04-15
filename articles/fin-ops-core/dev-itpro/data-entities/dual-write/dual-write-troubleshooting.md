@@ -146,6 +146,35 @@ To re-enable the **Information** form option, follow these steps:
 3. Select the **Information** form and click **Enable security roles**.
 4. Change the security setting to **Display to everyone**.
 
+## How to ensure Data Integration is using the most current Dynamics 365 Finance and Operations Schema
+
+You may face data issues in your data integration between Dynamics 365 Finance and Operations and Dynamics Customer Engagement/Dataverse if the most 
+up to date schema is not being used. The following steps will help you refresh the entity list in Finance and Operations and the 
+entities in the Data Integrator.
+
+### Refresh entity list In FinOps
+1.	Log on to your Dynamics 365 Finance and Operations environment
+2.	Select **Data Management**
+3.	Inside Data Management, select **Framework parameters**
+4.	On the Data Import/Export Framework Parameters screen, select the **Entity Settings** tab, and click **Refresh entity list**. This may 
+take more than 30 minutes to refresh depending on the number of entities involved.
+5.	Navigate to **Data Management** and select **Data Entities** to validate that the expected entities are listed. If the expected entities 
+are not listed, validate that the entities appear in your Dynamics 365 Finance and Operations environment and restore the missing entities as needed.
+
+#### If the refresh fails to resolve the issue, delete and re-add the entity/entities:
+
+>[!NOTE]
+>You may need to stop any processing groups that are actively using the entity before deletion.
+
+1.	Click **Data Management** in Dynamics 365 Finance and Operations and click **Data entities**.
+2.	Search for the entity/entities having issues and make a note of the target entity, staging table, entity name, 
+and other settings. Delete the entity/entities from the list.
+3.	Click **New** and re-add the entity/entities using the data from step two. 
+
+#### Refresh entities in Data Integrator
+Log on to Power Platform Admin Center and select **Data Integration**, open the project where the issues are occurring and click **Refresh entities**
+
+
 ## How to enable and save network trace so that traces can be attached to support tickets
 
 The support team might need to review network traces to troubleshoot some issues. To create a network track, follow these steps:
