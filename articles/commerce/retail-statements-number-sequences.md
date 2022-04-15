@@ -2,7 +2,7 @@
 # required metadata
 
 title: Retail statements number sequence setup
-description: This topic describes how to configure the number sequences required for retail statements in MIcrosoft Dynamics 365 Commerce.
+description: This topic describes how to configure the number sequences required for retail statements in Microsoft Dynamics 365 Commerce.
 author: analpert
 ms.date: 04/22/2022
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.21
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to configure the number sequences required for retail statements in MIcrosoft Dynamics 365 Commerce.
+This topic describes how to configure the number sequences required for retail statements in Microsoft Dynamics 365 Commerce.
 
 There are two types of retail statements used within Dynamics 365 Commerce. **Transactional statements** are intended to be created and posted at a high frequency and are utilized to post all non-financial transactions within the store to Dynamics 365 Commerce Headquarters. **Financial statements** are intended to be created and posted a single time per business day and will only include closed shifts from the retail stores that have been uploaded to headquarters through the p-job.
 
@@ -43,9 +43,9 @@ To configure number sequence for statement posting, follow these steps.
 1. Go to **Organization administration \> Number sequences \> Number sequences**.
 1. Enter the following information on the form:
     1. Under **Identification**, for **Number sequence code*** enter a number sequence code.
-    1. FOr **Number sequence name**, enter a name.
+    1. For **Number sequence name**, enter a name.
     1. Under **Scope parameters** select **Operating unit** from the **Scope** drop-down list.
-    1. Under **Segments**, select the store for which this number sequence will be used from the  the **Operating unit** drop-down list.
+    1. Under **Segments**, select the store for which this number sequence will be used from the **Operating unit** drop-down list.
     1. Define the segments.
     1. Update the **Number allocation** to match the length of the **Alphanumeric** segment.
     1. Define the reference **Area** as **Retail store** and **Reference** as **Statement number** and select **Ok**.
