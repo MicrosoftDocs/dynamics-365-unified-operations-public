@@ -111,7 +111,7 @@ You will add a custom control column in the POS Dual display view to show the ca
 7. Under the **DualDisplayExtension** folder, create a folder that is named **Resources**.
 8. Under the **Resources** folder, create a folder that is named **Strings**.
 9. Under the **Strings** folder, create a folder that is named **en-US**.
-10. In the en-US folder add a new resources file and and change the file extension and name to resources.resjson and inside the resources.resjson file copy paste the below resource strings.
+10. In the en-US folder add a new resources file and change the file extension and name to resources.resjson and inside the resources.resjson file copy paste the below resource strings.
 
     ```typescript
     //======================================================================================================
