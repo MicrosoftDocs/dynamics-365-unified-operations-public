@@ -32,7 +32,7 @@ This topic provides an overview of the Microsoft Dynamics 365 payments support f
 
 Dynamics 365 Commerce offers an out-of-box integration for PayPal Wallet. When the Dynamics 365 Payment Connector for PayPal is configured, the PayPal button appears as a selectable payment method as part of online order checkout. When users select **PayPal**, they are directed to complete their payment directly with PayPal and then are returned to the online storefront to complete their order. With PayPal cart checkout, customers can use their payment account information to prefill the checkout form to get through the checkout process faster. 
 
-Commerce has adding a payment express module to facilitate express checkouts. The payment express module can be used in a fragment that can be included in a checkout or cart page. The same Dynamics 365 Payment Connector for PayPal connector reference is used for a payment express or regular checkout option when PayPal is configured.
+Commerce has added a payment express module to facilitate express checkouts. The payment express module can be used in a fragment that can be included in a checkout or cart page. The same Dynamics 365 Payment Connector for PayPal connector reference is used for a payment express or regular checkout option when PayPal is configured.
 
 ## PayPal cart checkout in Commerce
 
@@ -44,11 +44,11 @@ If using PayPal as an option in the regular checkout flow (where users enter the
 
 ### Payment express module with PayPal
 
-The payment express module works with supporting payment methods to offer site customers the option to checkout faster by prefilling their payment service account information during the checkout process. The payment express module uses the configured payment connector to prefill the checkout form with user account details such as address, contact information, and payment method selected.
+The payment express module works with supporting payment methods to offer site customers the option to check out faster by prefilling their payment service account information during the checkout process. The payment express module uses the configured payment connector to prefill the checkout form with user account details such as address, contact information, and payment method selected.
 
 With PayPal express checkout, when a user selects the PayPal button in the payment express section of the checkout page a PayPal payment iFrame window is launched. The user then signs in to their PayPal account to use their account shipping address, billing address, email, and PayPal payment method of choice to pay for the transaction.
 
-When the user completes the action in PayPal, they are directed back to the Commerce site checkout page with the checkout form prefilled with their selected details. In the payment express flow, the first delivery pption available for the shipping address returned will be prefilled for the user, who then has the option to review the order and change checkout order details if desired before selecting the **Place order** button to finalize the order.
+When the user completes the action in the PayPal window, they are directed back to the Commerce site checkout page with the checkout form prefilled with their selected details. In the payment express flow, the first delivery option available for the shipping address returned will be prefilled for the user, who then has the option to review the order and change checkout order details if desired before selecting the **Place order** button to finalize the order.
 
 ### Add the payment express module with PayPal to a fragment in site builder
 
