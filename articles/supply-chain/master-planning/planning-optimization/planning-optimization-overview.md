@@ -3,7 +3,7 @@
 
 title: Planning Optimization overview
 description: This topic provides an overview of the Planning Optimization functionality.
-author: ChristianRytt
+author: t-benebo
 ms.date: 10/31/2019
 ms.topic: overview
 ms.prod: 
@@ -21,7 +21,7 @@ ms.reviewer: kamaybac
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
 

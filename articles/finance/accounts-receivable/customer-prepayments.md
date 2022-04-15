@@ -3,7 +3,7 @@
 
 title: Customer prepayments
 description: This topic explains how to set up and process customer prepayments (also known as customer deposits).
-author: roschlom
+author: twheeloc
 ms.date: 04/30/2021
 ms.topic: article
 ms.prod: 
@@ -15,7 +15,7 @@ ms.search.form: CustPosting, LedgerJournalTransCustPaym, CustParameters
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24651
@@ -91,4 +91,4 @@ You can use the **Customer payments** workspace to easily find and settle paymen
 4. Select the **Mark** check box for the invoice and the payment that will be settled.
 5. Select **Post**.
 
-For more information about how to settle open transactions, see [Settlement overview](/cash-bank-management/settlement-overview.md).
+For more information about how to settle open transactions, see [Settlement overview](/dynamics365/finance/cash-bank-management/settlement-overview).

@@ -81,15 +81,13 @@ When this feature is turned on, mobile device menu items for license plate recei
 - **Display a detailed summary** – During license plate receiving, workers will see an extra page that shows the full ASN information.
 - **Skip the summary** – Workers won't see the full ASN information. Warehouse workers also won't be able to set a disposition code or add exceptions during the receiving process.
 
-To make this functionality available on your system, the *Control whether to display a receiving summary page on mobile devices* feature must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). (As of Supply Chain Management version 10.0.21, this feature is turned on by default.)
+To use this functionality, the *Control whether to display a receiving summary page on mobile devices* feature must be turned on for your system. As of Supply Chain Management version 10.0.21, this feature is turned on by default. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *Control whether to display a receiving summary page on mobile devices* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Prevent transfer order–shipped license plates from being used at warehouses other than the destination warehouse
 
 A license plate receiving process can't be used if an ASN contains a license plate ID that already exists and has physical on-hand data at a warehouse location other than the warehouse location where the license plate registration occurs.
 
-For transfer order scenarios where the transit warehouse doesn't track license plates (and therefore also doesn't track physical on-hand inventory per license plate), you can use the *Prevent transfer order shipped license plates from being used on other warehouses than the destination warehouse* feature to prevent physical on-hand updates of license plates that are in transit.
-
-To make this functionality available on your system, you must turn on the *Prevent transfer order shipped license plates from being used on other warehouses than the destination warehouse* feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+For transfer order scenarios where the transit warehouse doesn't track license plates (and therefore also doesn't track physical on-hand inventory per license plate), you can use the *Prevent transfer order shipped license plates from being used on other warehouses than the destination warehouse* feature to prevent physical on-hand updates of license plates that are in transit. To make this functionality available, the *Prevent transfer order shipped license plates from being used on other warehouses than the destination warehouse* feature must be turned on for your system. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.25, then admins can turn this feature on or off by searching for it in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 To manage the functionality when this feature is available, follow these steps.
 

@@ -4,7 +4,7 @@
 title: Dynamics 365 Finance and Dynamics 365 Supply Chain Management operated by 21Vianet in China 
 description: This topic provides information about Dynamics 365 Finance and Dynamics 365 Supply Chain Management - operated by 21Vianet in China.
 author: kfend
-ms.date: 09/08/2020
+ms.date: 04/11/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -58,6 +58,8 @@ Due to certain technical dependencies, the following features listed will not be
 -   Certain **mobile apps** (e.g., [Install and configure the Warehousing app overview](../../../supply-chain/warehousing/install-configure-warehousing-app.md) and [Project time entry mobile workspace](/dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace)) will be unavailable due to the Google Play Store not being available in China; however, alternatives are being considered.
 
 -   The **[mobile platform](../mobile-apps/platform/mobile-platform-home-page.md)** will not be available because certain App store dependencies are unavailable in China.
+
+-  **SharePoint integration** isn't available, because the authentication mechanism that Finance and Operations apps use with SharePoint isn't supported in this configuration.
 
 -   The following **Microsoft Dynamics Lifecycle Services (LCS)** features will have a different experience or will be unavailable due to the dependencies that are not available:
 

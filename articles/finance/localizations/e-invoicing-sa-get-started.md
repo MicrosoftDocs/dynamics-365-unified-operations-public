@@ -17,7 +17,6 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: 574540
 ms.assetid: 
 ms.search.region: Saudi Arabia
 # ms.search.industry: 

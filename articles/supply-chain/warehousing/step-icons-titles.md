@@ -23,12 +23,9 @@ The following illustrations shows how step icons and titles appear in the Wareho
 
 ![Example of a step icon and a step title in the Warehouse Management mobile app.](media/step-icon-example.png "Example of a step icon and a step title in the Warehouse Management mobile app")
 
-## Turn on this feature in your system
+## Turn this feature on or off
 
-Before you can use this feature, it must be turned on in your system. Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** *Warehouse management*
-- **Feature name:** *User settings, icons, and step titles for the new warehouse app*
+To use the functionality described in this topic, the *User settings, icons, and step titles for the new warehouse app* feature must be turned on for your system. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *User settings, icons, and step titles for the new warehouse app* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Standard step IDs, classes, and icons
 

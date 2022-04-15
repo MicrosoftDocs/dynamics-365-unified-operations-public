@@ -4,7 +4,7 @@
 title: Set up a B2C tenant in Commerce
 description: This topic describes how to set up your Azure Active Directory (Azure AD) business-to-consumer (B2C) tenants for user site authentication in Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 02/04/2022
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -276,7 +276,7 @@ To update headquarters with the new Azure AD B2C information, follow these steps
 
 1. In Commerce, go to **Commerce Shared Parameters** and select **Identity Providers** in the left menu.
 1. Under **Identity Providers**, do the following:
-    1. In the **Issuer** box, enter the identity provider issuer URL. To find your issuer URL, see [Obtain issuer URL](#obtain-issuer-url) below.
+    1. In the **Issuer** box, enter the identity provider issuer string. To find your issuer string, see [Obtain issuer string for headquarters setup](#obtain-issuer-string-for-headquarters-setup) below.
     1. In the **Name** box, enter a name for your issuer record.
     1. In the **Type** box, enter **Azure AD B2C (id_token)**.
 1. Under **Relying Parties**, with the above B2C identity provider item selected, do the following:
@@ -288,14 +288,15 @@ To update headquarters with the new Azure AD B2C information, follow these steps
 1. In the left navigation menu of the **Distribution schedules** page, select job **1110 Global configuration**.
 1. On the action pane, select **Run Now**.
 
-### Obtain issuer URL
+### Obtain issuer string for headquarters setup
 
-To obtain your identity provider issuer URL, follow these steps.
+To obtain your identity provider issuer string, follow these steps.
+
 1. On the Azure AD B2C page of the Azure portal, navigate to your **Sign up and sign in** user flow.
 1. Select **Page layouts** in the left navigation menu, under **Layout name** select **Unified sign up or sign in page**, and then select **Run user flow**.
-1. Make sure your application is set to your intended Azure AD B2C application created above, and then select the link under the **Run user flow** header that includes ``.../.well-known/openid-configuration?p=<B2CSIGN-INPOLICY>``.
-1. A metadata page is displayed in your browser tab. Copy the identity provider issuer URL (the value for **"issuer"**).
-   - Example: ``https://login.fabrikam.com/011115c3-0113-4f43-b5e2-df01266e24ae/v2.0/``.
+1. Ensure that your application is set to your intended Azure AD B2C application created above, and then select the user flow link that appears under the **Run user flow** header that includes ``.../.well-known/openid-configuration?p=<B2CSIGN-INPOLICY>``. (Do not select **Run user flow**.) A new tab will open displaying metadata for the policy to collect the issuer string.
+1. On the metadata page displayed in your browser tab, copy the identity provider issuer string (the value for **issuer** starting with "https://" and ending with "/v2.0/" ) that looks similar to the following example.
+   - ``https://login.fabrikam.com/011115c3-0113-4f43-b5e2-df01266e24ae/v2.0/``.
  
 **OR**: To construct the same metadata URL manually, do the following steps.
 

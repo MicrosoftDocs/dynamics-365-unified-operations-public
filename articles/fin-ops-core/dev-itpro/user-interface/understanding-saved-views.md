@@ -4,7 +4,7 @@
 title: Build forms that fully utilize saved views
 description: This topic explains some of the technical aspects of saved views and describes considerations with form development to ensure forms work well with saved views.
 author: jasongre
-ms.date: 01/28/2022
+ms.date: 02/08/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -28,7 +28,6 @@ ms.dyn365.ops.version: Platform update 28
 # Build forms that fully utilize saved views
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Saved views are an important expansion of personalization capabilities Finance and Operations applications. While the [Saved views](../../fin-ops/get-started/saved-views.md) topic provides general details about this feature, this topic focuses on the more technical elements of saved views as well as aspects of form development that may be impacted by views. 
 
@@ -88,6 +87,24 @@ Custom filters are controls that are modeled on forms and that cause modificatio
 
     - **public void queryFiltersChanged():** This new method is called when the query is rerun by the system after changes to the query (for example, when a view loads or a system filtering mechanism is used). Therefore, the custom filter control has an opportunity to interrogate the mostly recently run query to find any relevant filter and update its value so that it appropriately reflects that query.
     - **element.formCustomFilterChanged():** This new API is called by the custom filter control when it has changed the query on the user's behalf. When it's called, the system marks the view definition as having unsaved changes. The recommendation is to call this API at the end of the control's **modified()** method if changes to the control immediately cause the query to be refreshed, or to call this API for a custom filter on a button click if the adjustment of one or more custom filters requires a button for the changes to take effect.
+
+### Relative filter values
+Forms might have to use relative filter conditions to retrieve the appropriate information when the page is loaded. For example, they often have to use filter conditions to restrict data for the current user, current date, and current legal entity. If a form hard-codes a filter to a specific value, any view that is saved with that filter might have issues showing the intended data or being shared with other users. For example, a form hard-codes a "current date" filter to a specific date, that query is saved to a view, and the view is shared with another user. In this case, the view might provide unexpected results, because it will still try to retrieve data from the hard-coded date in the past instead of the current date. Or a filter condition was intended to represent the current user but was hard-coded to a specific user. In this case, when the view is shared with another user, an error might occur when that user tries to load or import the view. 
+
+To help avoid this situation, forms that have relative filter conditions should have filter values that use **SysQueryRangeUtil** methods in combination with the Finance and Operations [advanced filter syntax](../../fin-ops/get-started/advanced-filtering-query-options.md), specifically the syntax where a filter value is enclosed in parentheses. Evaluation of the filter method will then be deferred until the query is run. Therefore, relative filtering conditions can be used in views and passed between users without causing issues. Users in the user interface can use this same syntax in conjunction with the "matches" operator to achieve the same effect.  
+
+As an explicit example, consider a form that has a filter condition on a **User** field. If the filter value is set to **currentUserId()**, the function will be evaluated immediately, and the hard-coded user name will be used in the query. If a simple change is made to the filter value, so that it's set to **(currentUserId())** instead, the function will be saved to the query definition. Therefore, a view that has this condition can be saved to views and passed to other users without causing issues.  
+
+Here are some typical examples. 
+
+| Description | Filter value |
+|---|---|
+| Current user | (currentUserId()) |
+| Current legal entity | (currentCompany()) |
+| Today | (Day(0)) |
+| Yesterday | (Day(-1)) |
+
+For more relative date queries, see [Advanced date queries that use SysQueryRangeUtil methods](../../fin-ops/get-started/advanced-filtering-query-options.md#advanced-date-queries-that-use-sysqueryrangeutil-methods).
 
 ### Opting forms out of views
 Although this approach isn't generally recommended, as of version 10.0.25, developers can opt an individual form out of saved views support as required. In this case, no view selector will be available on the form, and there will be no publish capabilities.

@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Overview of fiscal integration for Commerce channels
+title: Fiscal integration overview for Commerce channels
 description: This topic provides an overview of the fiscal integration capabilities that are available in Dynamics 365 Commerce. 
 author: EvgenyPopovMBS
-ms.date: 01/31/2022
+ms.date: 03/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -13,10 +13,9 @@ ms.author: epopov
 ms.search.validFrom: 2017-06-20
 
 ---
-# Overview of fiscal integration for Commerce channels
+# Fiscal integration overview for Commerce channels
 
 [!include [banner](../includes/banner.md)]
-[!include[banner](../includes/preview-banner.md)]
 
 This topic is an overview of the fiscal integration capabilities that are available in Dynamics 365 Commerce. 
 
@@ -24,7 +23,7 @@ Fiscal integration includes integration with various fiscal devices and services
 
 - Register a sale on a fiscal device that is connected to point of sale (POS), such as a fiscal printer, and print a fiscal receipt for the customer.
 - Securely submit information that is related to sales and returns that are completed in Retail POS to an external web-service that is operated by the tax authority.
-- Help guarantee inalterability of sales transaction data through digital signatures.
+- Help ensure inalterability of sales transaction data through digital signatures.
 
 The fiscal integration functionality is a framework that provides a common solution for further development and customization of the integration between Retail POS and fiscal devices and services. The functionality also includes fiscal integration samples that support basic scenarios for specific countries or regions, and that work with specific fiscal devices or services. A fiscal integration sample consists of several extensions of Commerce components and is included in the software development kit (SDK). For more information about the fiscal integration samples, see [Fiscal integration samples in the Commerce SDK](#fiscal-integration-samples-in-the-commerce-sdk). For information about how to install and use the Commerce SDK, see [Retail software development kit (SDK) architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
@@ -43,6 +42,9 @@ A fiscal integration sample might contain the Commerce runtime (CRT), Hardware s
 - **Fiscal connector configuration** – This configuration defines the physical communication with the specific fiscal device or service.
 
 A fiscal registration process for a specific POS register is defined by a corresponding setting in the POS functionality profile. For more details about how to configure a fiscal registration process, upload fiscal document provider and fiscal connector configurations, and change configuration parameters, see [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
+
+> [!NOTE]
+> If you need devices for non-fiscal operations, such as product catalog search, customer lookup, or transaction draft creation, you can select these as registers with fiscal process restrictions. For more information, see [Set up registers with fiscal registration restrictions](setting-up-fiscal-integration-for-retail-channel.md#set-up-registers-with-fiscal-registration-restrictions).
 
 The following typical fiscal registration flow starts with an event in the POS (for example, finalization of a sales transaction) and implements a predefined sequence of steps that involves other Commerce components (such as the CRT and Hardware station).
 

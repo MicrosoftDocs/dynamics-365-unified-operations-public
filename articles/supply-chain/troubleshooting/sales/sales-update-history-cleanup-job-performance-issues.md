@@ -25,5 +25,5 @@ This can occur when your system includes a large number of sales updates, which 
 
 ## Resolution
 
-A new version of the **Sales update history cleanup** batch job is available for Supply Chain Management version 10.0.19 and higher. This feature is not enabled by default. For details about how it works and how to enable it in feature management, see [Sales history cleanup performance improvements](../../sales-marketing/sales-update-history-cleanup-performance-improvements.md).
+A new version of the **Sales update history cleanup** batch job is available for Supply Chain Management version 10.0.19 and higher. This feature is not turned on by default. For details about how it works and how to enable it in feature management, see [Schedule sales history data cleanup](../../sales-marketing/sales-update-history-cleanup-performance-improvements.md).
 

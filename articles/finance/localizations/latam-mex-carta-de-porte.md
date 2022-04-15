@@ -4,7 +4,7 @@
 title: Waybill (Carta de Porte) complement
 description: This topic explains how to set up and submit packing slips and transfer orders that include the Waybill (Carta de Porte) complement.
 author: v-oloski
-ms.date: 09/08/2021
+ms.date: 03/02/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom: 
 ms.search.region: Mexico
 # ms.search.industry: 
-ms.author: v-oloski
+ms.author: v-olgaoskina
 ms.search.validFrom: 2021-08-31
 ms.dyn365.ops.version: 10.0.23
 
@@ -34,9 +34,9 @@ This topic provides information about how to set up and submit packing slips and
 To generate the Waybill (Carta de Porte) complement in electronic invoice (CFDI) documents, enter transportation information on the **Transportation details** page. You can open this page from any of the following business documents:
 
 - **A sales order record:** These sales orders include sales orders for the project. Go to **Accounts receivable** \> **Orders** \> **All sales orders**. On the Action Pane, select **Pick and Pack**.
-- **A transfer order:** Go to **Inventory management** \> **Outbound orders** \> **Transfer orders**, On the Action Pane, select **Ship**.
+- **A transfer order:** Go to **Inventory management** \> **Outbound orders** \> **Transfer orders**. On the Action Pane, select **Ship**.
 - **A shipment:** Go to **Inventory management** \> **Outbound orders** \> **Shipments**.
-- **Project requirements:** Go to **Project management and accounting** \> **Item tasks** \> **Project requirements**, On the Action Pane, select **Manage**.
+- **Project requirements:** Go to **Project management and accounting** \> **Item tasks** \> **Project requirements**. On the Action Pane, select **Manage**.
 
 > [!NOTE]
 > You can view transportation information on the **CFDI - Packing Slip Electronic Invoices** and **CFDI - Invent Transfer Electronic Invoices** list pages.
@@ -46,6 +46,13 @@ To generate the Waybill (Carta de Porte) complement in electronic invoice (CFDI)
 This section provides information about the fields that are required on the **Transportation details** page. In the following illustration, the required fields have been highlighted.
 
 ![Transportation details page.](media/latam-mx-transportation-details.png)
+
+> [!NOTE]
+> As of version 10.0.23 (build 10.0.1037.160), the following functionality is available:
+>
+> - On the **Loading** FastTab of the **Transportation details** page, enter a value in the **Loading date and time** and **Name** (shipment address) fields. If you leave the **Loading date and time** field blank, the system selects the value from the transaction. If you leave the **Name** (shipment address) field blank, the system selects the value from the warehouse or site address.
+> - Select a value in the **Weight unit** field. Before version 10.0.23, the **XAG** weight unit was a fixed value in an XML file. If you leave this field blank, the corresponding attribute in the XML file is filled in with **XAG**.
+> - In addition to the data for two drivers, you can fill in transportation actors by selecting **Transportation actors** on the Action Pane. However, you should first fill in the actors catalog by going to **Organization administration** \> **Setup** \> **SAT clarification** \> **Transportation**.
 
 ### General FastTab
 
@@ -149,7 +156,7 @@ If your company has implemented the **Fixed assets** module, enter information i
 
 ### Workers
 
-Follow these steps to enter RFC numbers, registration numbers, and license information for drivers. Before you start, make sure that identification types have been set up at **Human resources** \> **Setup** \> **Identification types**.
+Follow these steps to enter tax ID (RFC) numbers, registration numbers, and license information for drivers. Before you start, make sure that identification types have been set up at **Human resources** \> **Setup** \> **Identification types**.
 
 1. Go to **Human resources** \> **Workers** \> **Employees/Contractors/Workers**.
 2. On the Action Pane, select **Personal information** \> **Identification numbers**.
@@ -164,12 +171,14 @@ After you enable the feature, follow these steps to enter additional hazardous m
 1. Go to **Product information management** \> **Products** \> **All released products**.
 2. Open the item record, and then, on the **Manage inventory** FastTab, set the **Hazardous materials** option to **Yes**.
 3. On the Action Pane, select **Manage inventory** \> **Compliance**.
-4. On the **Item hazardous materials** page, on the header, set the **Regulation code** field. 
+4. On the **Item hazardous materials** page, on the header, set the **Regulation code** field.
 5. On the **Material management** FastTab, in the **Packing group** section, set the **Packing group** field.
 
-> [!NOTE] 
-> To select values for the **Regulation code** and **Packing group** fields, first fill in the **Hazardous material regulation** and **Hazardous material packing groups** tables in accordence with the SAT catalogs **c_MaterialPeligroso** and **c_TipoEmbalaje** which are located under **Product information management** > **Setup** > **Hazardous material shipping documentation**.    
+> [!NOTE]
+> To select values for the **Regulation code** and **Packing group** fields, first fill in the **Hazardous material regulation** and **Hazardous material packing groups** tables in accordance with the **c\_MaterialPeligroso** and **c\_TipoEmbalaje** SAT catalogs that are located at **Product information management** \> **Setup** \> **Hazardous material shipping documentation**.
+>
+> As of version 10.0.23 (build 10.0.1037.149), you can work with the **Display hazardous status** option to send the **matrialPeligrosso** attribute as output in an XML file. If the **Display hazardous status** option is set to **Yes**, you can set the **Hazardous materials** option to **Yes**.
 
-   ![Item hazardous materials page.](media/latam-mx-hazardous2.png)
+![Item hazardous materials page.](media/latam-mx-hazardous2.png)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

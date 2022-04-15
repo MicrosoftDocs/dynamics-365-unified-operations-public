@@ -2,9 +2,9 @@
 # required metadata
 
 title: Dynamics 365 Translation Service Azure DevOps extension
-description: This article explains how to integrate the Dynamics 365 Translation Service DevOps extension into your Azure DevOps workflow.
+description: This topic explains how to integrate the Dynamics 365 Translation Service DevOps extension into your Azure DevOps workflow.
 author: joshsantana
-ms.date: 11/22/2021
+ms.date: 04/14/2022
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
@@ -23,9 +23,6 @@ The Microsoft Dynamics 365 Translation Service (DTS) extension for Azure DevOps 
 To start to use the DTS pipeline tasks, you must install the extension in your organization and then connect to the translation service. For more information, see the [Setting up the extension](#setting-up-the-extension) section later in this topic.
 
 This topic assumes that you have a working knowledge of [Azure Pipelines](/azure/devops/pipelines/create-first-pipeline).
-
-> [!NOTE]
-> The DTS extension for Azure DevOps is available only as a public preview. Because DTS is currently deployed only in the United States, your data might be processed and stored outside your geopolitical boundary.
 
 ## Running a task
 
@@ -149,10 +146,12 @@ The service connection takes the following inputs.
 
 | Input | Required | Description |
 |-------|----------|-------------|
+| Authentication Endpoint | Yes | The endpoint to use for the app. For more information, see the [Register an application](#register-an-application) section. |
+| Lifecycle Services API Endpoint | Yes | The LCS API endpoint.  The default value is https://lcsapi.lcs.dynamics.com. If you are required to have all data processed within the European Union (EU), use https://lcsapi.eu.lcs.dynamics.com.
 | Username | Yes | <p>The user who is submitting the requests through DTS.</p><p><strong>Note:</strong> MFA must be turned off.</p> |
 | Password | Yes | The user's password. |
 | Client ID | Yes | The client ID of the registered app. For more information, see the [Register an application](#register-an-application) section earlier in this topic. |
-| Authentication Endpoint | Yes | The endpoint to use for the app. For more information, see the [Register an application](#register-an-application) section. |
+
 
 1. In your Azure DevOps project, at the bottom of the left menu, select **Project settings**.
 2. In the **Project Settings** pane, under **Pipelines**, select **Service connections**. Then select **Create service connection**.

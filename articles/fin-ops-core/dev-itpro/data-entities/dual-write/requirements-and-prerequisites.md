@@ -2,7 +2,7 @@
 title: System requirements and prerequisites
 description: This topic describes the system requirements and prerequisites that must be in place before you can enable dual-write for Finance and Operations apps.
 author: NHelgren
-ms.date: 10/28/2021
+ms.date: 02/09/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -24,14 +24,21 @@ Currently, we support dual-write in the following regions:
 
 + Asia
 + Australia
++ Brazil
 + Canada
 + Europe
++ France
 + India
 + Japan
 + South America
++ Switzerland
 + United Arab Emirates
 + United Kingdom
 + United States
+
+
+> [!NOTE]
+> There are currently no plans to support any additional regions.
 
 ## Verify requirements and grant access
 

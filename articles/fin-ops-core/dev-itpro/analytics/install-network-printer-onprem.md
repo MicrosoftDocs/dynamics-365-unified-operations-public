@@ -4,9 +4,10 @@
 title: Install network printer devices in on-premises environments
 description: This topic explains how to connect an on-premises deployment of Microsoft Dynamics 365 Finance + Operations (on-premises), to existing network printer devices.
 author: RichdiMSFT
-ms.date: 04/21/2021
+ms.date: 04/07/2022
 ms.topic: article
-ms.prod: 
+ms.prod: dynamics-365
+ms.service:
 ms.technology: 
 
 # optional metadata
@@ -20,7 +21,7 @@ ms.reviewer: kfend
 ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: richdi
+ms.author: osfaixat
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 
@@ -90,7 +91,7 @@ To install printers on nodes where AXService is executing under a gMSA, follow t
 # If Remoting, execute
 # .\Install-PrintersOnGmsa-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -SysInternalsFolderLocation \\networkshare\SysInternalsSuite -ForcePushLBDScripts
 
-.\Install-PrintersOnGmsa.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -SysInternalsFolderLocation \\networkshare\SysInternalsSuite
+.\Install-PrintersOnGmsa.ps1 -PrintersJsonFilePath .\Printers.json -SysInternalsFolderLocation \\networkshare\SysInternalsSuite
 ```
 
 ## Manage network printers

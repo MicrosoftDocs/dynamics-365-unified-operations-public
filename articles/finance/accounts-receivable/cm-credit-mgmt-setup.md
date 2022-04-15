@@ -15,13 +15,13 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 
@@ -58,7 +58,8 @@ You can also define the number of grace days before the credit rules are checked
 
 If you don't specify the number of grace days, the credit rules will be checked at every posting step that is set up to run credit management rules. If you release the sales order without posting and then run the same order processing step again, the credit rules will be checked again. For example, an order is put on hold after a confirmation, and you release it either with or without posting. In this case, the order will be put on hold again if you confirm it again. Use grace days if the order should move on to the next processing step without being held again.
 
-You can't specify grace days for some posting checkpoints but not for others. You must set up all posting checkpoints so that they have grace days, or you must set them all up so that they don't have grace days.
+> [!Note]
+> If one posting checkpoint has a grace day entered, all checkpoints that are marked for posting need to have grace days.
 
 - Select the **Posting** check box to run the credit management rules when the posting checkpoint that is shown on the line is run. If you don't select the check box, the rules will be checked only once during the whole posting process.
 - If you select the **Posting** check box, specify the number of grace days that should pass before the blocking rules are checked again. You can't add grace days if the **Posting** check box is cleared.

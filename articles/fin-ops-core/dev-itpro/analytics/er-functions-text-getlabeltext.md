@@ -4,7 +4,7 @@
 title: GETLABELTEXT ER function
 description: This topic provides information about how the GETLABELTEXT Electronic reporting (ER) function is used.
 author: NickSelin
-ms.date: 01/04/2022
+ms.date: 03/18/2022
 ms.prod: 
 ms.technology: 
 
@@ -29,8 +29,6 @@ ms.dyn365.ops.version: AX 10.0.25
 # GETLABELTEXT ER function
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 The `GETLABELTEXT` function searches for a specific label to return a *[String](er-formula-supported-data-types-primitive.md#string)* value that represents the translation of the specified label in the specified language.
 

@@ -3,7 +3,7 @@
 
 title: Apply filters to a plan
 description: This topic explains how to use filters on a plan when the Planning Optimization functionality is used. 
-author: ChristianRytt
+author: t-benebo
 ms.date: 01/08/2020
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
 

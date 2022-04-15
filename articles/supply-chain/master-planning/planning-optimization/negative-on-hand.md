@@ -3,7 +3,7 @@
 
 title: Planning with negative on-hand quantities
 description: This topic explains how negative on-hand is handled when you use planning optimization. 
-author: ChristianRytt
+author: t-benebo
 ms.date: 07/22/2021
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2020-02-18
 ms.dyn365.ops.version: AX 10.0.5
 

@@ -4,7 +4,7 @@
 title: Grid capabilities
 description: This topic describes several powerful features of the grid control. You must enable the new grid feature to have access to these capabilities. 
 author: jasongre
-ms.date: 02/01/2022
+ms.date: 03/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -27,7 +27,6 @@ ms.dyn365.ops.version: Platform update 33
 # Grid capabilities
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 The new grid control provides several useful and powerful capabilities that you can use to enhance user productivity, construct more interesting views of your data, and get meaningful insights into your data. This article will cover the following capabilities: 
 
@@ -71,7 +70,10 @@ If you make a mistake and no longer want to see a total in a particular column, 
 ### Calculating totals
 When you come to a page with the footer visible and columns already configured for totals, totals may or may not be shown in the footer. The behavior is dependent on the size of the dataset on the page. If the dataset is sufficiently small, totals will be shown automatically, along with the number of rows in the dataset. If there are dashes in the footer under the columns you configured for totals, then the dataset is too large for the system to show totals immediately, and an explicit action is needed to calculate the totals. To do this, click the **Calculate** button in the footer, or right-click on a column you want a total for and select **Total this column**.
 
-If the calculation is taking too long, you can cancel the operation by selecting the **Cancel** button. Sometimes, however, the dataset will be too large to calculate totals (a limit imposed by your organization), and you will instead be notified to filter your data more.
+If the calculation takes a long time to complete, you can cancel the operation by selecting the **Cancel** button. Sometimes, the dataset will be too large to calculate totals (a limit imposed by your organization), and you will instead be notified to filter your data more. 
+
+> [!NOTE]
+> System administrations can modify the limit for the number of records available for calculating totals by adjusting the **Maximum number of local records for each grid** parameter on the **Client performance options** page. The default value is 25,000 records. Administrators should be careful when adjusting this value because a value that is too large can exhaust the available memory on the user's machine. The recommendation is to not exceed 50,000 records.   
 
 Totals will update automatically as you update, delete, or create rows in the dataset.
 
@@ -152,7 +154,7 @@ Similar to Excel, users can automatically force a column to resize based on the 
 
 The **New grid control** feature is available directly in Feature management in any environment. After enabling the feature in Feature management, all subsequent user sessions will utilize the new grid control. 
 
-This feature is enabled by default starting in version 10.0.21 and is targeted to become mandatory with version 10.0.25. 
+This feature is enabled by default starting in version 10.0.21 and is targeted to become mandatory in October 2022.  
 
 ## [Developer] Opting out individual pages from using the new grid 
 If your organization discovers a page that has some issues utilizing the new grid, an API is available to allow an individual form to use the legacy grid control while still permitting the rest of the system to utilize the new grid control. To opt out an individual page from the new grid, add the following call post `super()` in the `run()` method for the form.

@@ -179,7 +179,7 @@ public interface ERIImportFileSourceSettingsStorage
 }
 ```
 
-These interfaces let you offer custom source parameters in the **ER source settings** dialog box, so that they can be set at design time. The configured source can be used to access, in a configured custom source, [inbound](general-electronic-reporting.md#FormatComponentInbound) documents that must be imported at runtime.
+These interfaces let you offer custom source parameters in the **ER source settings** dialog box, so that they can be set at design time. The configured source can be used to access, in a configured custom source, inbound documents that must be imported at runtime.
 
 To learn more about this interface, complete the example in [Implement a custom source of inbound documents](er-custom-file-source.md).
 

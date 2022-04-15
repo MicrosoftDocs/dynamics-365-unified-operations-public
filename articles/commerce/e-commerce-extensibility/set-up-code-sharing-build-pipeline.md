@@ -4,7 +4,7 @@
 title: Set up Azure DevOps code sharing and create a build pipeline
 description: This topic describes how to set up code sharing with Microsoft Azure DevOps and create a build pipeline for your Dynamics 365 Commerce online extensibility code. 
 author: samjarawan
-ms.date: 03/09/2020
+ms.date: 03/24/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -14,7 +14,7 @@ ms.technology:
 # ms.search.form: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: v-chgri
+ms.reviewer: v-chgriffin
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -31,11 +31,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic describes how to set up code sharing with Microsoft Azure DevOps and create a build pipeline for your Dynamics 365 Commerce online extensibility code. 
 
-
-## Overview
-
 By taking advantage of the capabilities of [Azure DevOps](/azure/devops/user-guide/what-is-azure-devops), you can help your team plan work, collaborate on code development, and automate the building of deployment packages for Dynamics 365 Commerce e-Commerce.
-
 
 This topic guides you through the steps that are required to complete the following tasks:
 
@@ -167,7 +163,7 @@ To create and configure a new build pipeline in Azure DevOps, follow these steps
 
 1. In the **Add tasks** pane on the right, search for "publish," and then, in the **Publish Pipeline Artifacts** task, select **Add**.
 
-    ![[Azure DevOps "Add tasks" pane with search box and "Publish Pipeline Artifacts" task "Add" button highlighted](media/code-sharing-17.png)
+    ![Azure DevOps "Add tasks" pane with search box and "Publish Pipeline Artifacts" task "Add" button highlighted](media/code-sharing-17.png)
 
 1. In the main part of the page, select the **Publish Pipeline Artifacts** task. Then, in the **Publish Pipeline Artifacts** pane on the right, follow these steps:
 
@@ -180,19 +176,24 @@ To create and configure a new build pipeline in Azure DevOps, follow these steps
 
     !["Save and queue" highlighted on the toolbar](media/code-sharing-19.png)
 
-1. In the **Run pipeline** dialog box, make sure that the **Agent Specification** field is set to **vs2017-win2016**, and then select **Save and run**.
+1. In the **Run pipeline** dialog box, make sure that the **Agent Specification** field is set to **windows-2019**, and then select **Save and run**.
 
     !["Run pipeline" dialog box with "Agent specification" field and "Save and run" button highlighted](media/code-sharing-20.png)
 
-    Tools that you typically use to build, test, and run JavaScript apps (such as npm, Node, Yarn, and Gulp) are preinstalled on Microsoft-hosted agents in Azure Pipelines. For the exact versions of Node.js and npm that are preinstalled, see the Microsoft-hosted agents. To install a specific version of these tools on Microsoft-hosted agents, add the **Node Tool Installer** task to the beginning of your process. Yarn is preinstalled on VS2017-win2016.
+    Tools that you typically use to build, test, and run JavaScript apps (such as npm, Node, Yarn, and Gulp) are preinstalled on Microsoft-hosted agents in Azure Pipelines. For the exact versions of Node.js and npm that are preinstalled, see the Microsoft-hosted agents. To install a specific version of these tools on Microsoft-hosted agents, add the **Node Tool Installer** task to the beginning of your process. Yarn and Node.js version 16.x are both preinstalled on the windows-2019 agent.
+    
+    > [!NOTE]
+    > Version 10.0.26 and earlier of the online SDK requires Node version 12.x. To support this on the agent, add the Node tool installer task specifying version 12.x ahead of the PowerShell task, as shown in the following illustration.
+
+    ![Add the Node task to install version 12](media/code-sharing-25.png)   
 
 1. Monitor the agent job logs to learn when the job is completed.
 
-    ![Azure DevOps showing running job with agent job logs.](media/code-sharing-21.png)
+    ![Azure DevOps showing running job with agent job logs](media/code-sharing-21.png)
 
 1. After the job is completed, in the left navigation pane, under **Pipelines**, select **Pipelines**. Then, on the **Runs** tab, under **All pipeline runs**, select the pipeline run to download the deployable package.
 
-    ![[Azure DevOps "Pipelines" page with "Runs" tab and pipeline run highlighted](media/code-sharing-22.png)
+    ![Azure DevOps "Pipelines" page with "Runs" tab and pipeline run highlighted](media/code-sharing-22.png)
 
 1. Under **Summary**, under **Artifacts**, select **1 published**.
 
@@ -201,6 +202,14 @@ To create and configure a new build pipeline in Azure DevOps, follow these steps
 1. Select the **drop** folder to expand it and see the zip file that was created as part of the pipeline run. Select the **Download** button to download the file.
 
     !["Artifacts" page showing the pipeline run zip file under the expanded "Drop" folder](media/code-sharing-24.png)
+
+## Increase Node memory size
+
+The default memory setting should be sufficient for most customization scenarios. However, if your application needs more heap space (for example, if you see a "JavaScript heap out of memory" build error) you can specify the environment variable in the **scripts** section of the package.json file by adding **--max_old_space_size=4096**, as shown in the following example.
+
+```json
+"build": "SET NODE_OPTIONS=--max_old_space_size=4096 && yarn msdyn365b build --use-eslint",
+```
 
 ## Additional resources
 

@@ -4,7 +4,7 @@
 title: Go-live for implementation projects FAQ
 description: This topic lists frequently asked questions about how to go live with an implementation project.
 author: sshashi7
-ms.date: 07/12/2019
+ms.date: 02/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -88,7 +88,7 @@ No. Access to the production environment is limited. You can't access the virtua
 
 ## How often is my production database backed up?
 
-Databases are protected by automatic backups. Full database backups are done weekly, differential database backups are done hourly, and transaction log backups are done every five minutes. Automatic backups are retained for 35 days.
+Databases are protected by automatic backups. Full database backups are done weekly, differential database backups are done hourly, and transaction log backups are done every five minutes. Automatic backups are retained for 28 days.
 
 For more information, see [Learn about automatic SQL Database backups](/azure/sql-database/sql-database-automated-backups).
 

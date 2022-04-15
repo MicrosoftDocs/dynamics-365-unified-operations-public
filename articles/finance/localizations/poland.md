@@ -39,6 +39,7 @@ This topic provides links to documentation resources for Poland.
 - [Foreign currency revaluation for bank accounts](emea-foreign-currency-revaluation.md)
 - [Returnable packaging](emea-pol-returnable-packages.md)
 - [Sales tax reports](emea-pol-sales-tax-reports.md)
+- [Polish Intrastat](emea-pol-intrastat.md)
 - [Standard audit file (SAF)](emea-pol-standard-audit-file-saf.md)
 - [Tax interest and free-hand interest](emea-pol-interest-calculation.md)
 - [Turnover and balances statement](emea-pol-turnover-balances-statement.md)

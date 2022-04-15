@@ -21,7 +21,6 @@ ms.custom: ["97423", "intro-internal"]
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.custom: intro-internal
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
@@ -145,7 +144,7 @@ To submit CFDI invoice cancellation, the **Cancellation** and **Cancel** feature
 1. On the **Feature version setup** page, on the **Variables** tab, select the variable name, **DigitalSignatureXSLT**.
 2. In the **Values** field enter: {"containerUrl":"https://&lt;AccountStorageName&gt;.blob.core.windows.net/&lt;ContainerName&gt;","path":"&lt;RelativePath&gt;"}
    
-    where: <RelativePath> = folder\\folder\\filename with double backslashes, ContainerName must denote the container that is used for the service.
+    where: \<RelativePath\> = folder\\folder\\filename with double backslashes, ContainerName must denote the container that is used for the service.
    
     Example of the variable would be:
     

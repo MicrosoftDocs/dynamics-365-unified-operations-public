@@ -40,7 +40,7 @@ The procedures can be completed in the USMF company. No coding is required.
 
 ## Introduction
 
-You can configure [destinations](electronic-reporting-destinations.md) for each folder in the file output component of an ER [format](general-electronic-reporting.md#FormatComponentOutbound) [configuration](general-electronic-reporting.md#Configuration) that is used to generate an outbound document. When you run an ER format of this type, if you have the appropriate access rights, you can also change the configured destination settings at runtime.
+You can configure [destinations](electronic-reporting-destinations.md) for each folder in the file output component of an ER [format](general-electronic-reporting.md) [configuration](general-electronic-reporting.md#Configuration) that is used to generate an outbound document. When you run an ER format of this type, if you have the appropriate access rights, you can also change the configured destination settings at runtime.
 
 In Microsoft Dynamics 365 Finance **version 10.0.17 and later**, an action code can be [set up](er-apis-app10-0-17.md) for an ER format to specify the action that users perform by running that ER format. For example, in the **Accounts receivable** module, in the print management settings, you can select an ER format that generates a specific business document, such as a free text invoice. You can then select **View** to preview the invoice or **Print** to send it to a printer. If an action is passed for the running ER format at runtime, you can [configure different ER destinations for different user actions](er-action-dependent-destinations.md).
 

@@ -67,7 +67,7 @@ For details about how to add a navigation menu module to a header module, see [H
 
 [Breadcrumb module](add-breadcrumb.md)
 
-[Site selector module](site-selector.md)
+[Site picker module](site-selector.md)
 
 [Buy box module](add-buy-box.md)
 

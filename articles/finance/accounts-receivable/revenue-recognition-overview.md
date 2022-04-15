@@ -4,7 +4,7 @@
 title: Revenue recognition overview  (contains video)
 description: This topic provides information about the Revenue recognition feature. This feature provides a flexible framework that lets you define company-specific rules for recognizing both the revenue price and the revenue schedule for multi-element orders.
 author: kweekley
-ms.date: 11/11/2019
+ms.date: 03/15/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -31,10 +31,7 @@ ms.dyn365.ops.version: 8.0.4
 
 Companies in industries that sell multiple elements, such as products, services, subscriptions, and so on, must be able to break out multi-element orders so that revenue can be recognized based on a set of company-specific and industry-specific guidelines.
 
-> [!NOTE]
-> The Revenue recognition feature can't be turned on through Feature management. Currently, you must use configuration keys to turn it on.
-
-> Revenue recognition, including bundle functionality, isn't supported for use in Commerce channels (e-commerce, POS, call center). Items configured with revenue recognition should not be added to orders or transactions created in Commerce channels.
+Revenue recognition, including bundle functionality, isn't supported for use in Commerce channels (e-commerce, POS, call center). Items configured with revenue recognition should not be added to orders or transactions created in Commerce channels.
 
 In general, the revenue recognition process can be used to perform these tasks:
 

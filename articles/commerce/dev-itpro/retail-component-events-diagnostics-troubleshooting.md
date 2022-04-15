@@ -4,7 +4,7 @@
 title: Commerce component events for diagnostics and troubleshooting
 description: This topic explains where to find events from Commerce-specific components.
 author: aamirallaqaband
-ms.date: 08/19/2020
+ms.date: 03/22/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -92,7 +92,7 @@ When a user starts a POS client, a new AppSessionID is generated. The AppSession
 
 #### User sign-in
 
-When a user signs in to a POS client, a new UserSessionID is generated. The UserSessionID is used to log every event that is instrumented in the POS client. All user events that are logged to Event Viewer have this ID. This ID is maintained for as long as the user is signed in. When the current user signs out and a new user sign in, a new UserSessionID is generated.
+When a user signs in to a POS client, a new UserSessionID is generated. The UserSessionID is used to log every event that is instrumented in the POS client. All user events that are logged to Event Viewer have this ID. This ID is maintained for as long as the user is signed in. When the current user signs out and a new user signs in, a new UserSessionID is generated.
 
 #### POS client calls to Commerce Scale Unit
 
@@ -168,144 +168,56 @@ You can filter by the following criteria to refine your query:
 - POS user session ID
 - Severity level
 
+
 ![Search results on the Environment monitoring page.](./media/log-search-results.png)
 
-### E-Commerce events
+### Access logs in Application Insights
 
-The following events are logged by the E-Commerce website, and can be consumed for troubleshooting directly in the browser, or programmatically by partner extensions for analytics, experimentation, or other purposes.
+Diagnostic events for Commerce components can also be accessed in Application Insights.
 
-### Button and link clicks
+#### Commerce Scale Unit minimum version requirements
 
-Button and link clicks for the following types of elements on an E-Commerce website are logged as telemetry events.
+Commerce Scale Unit has the following minimum version requirements:
 
-- Header
-  - Navigation hierarchy
-  - Cart icon
-  - Sign-in
-  - Search icon
-  - Wishlist icon
-- Content block action links (This represents the hero, tile, and feature modules for marketing content.)
-- Video player
-- Product cards
-- Footer links
-- Breadcrumbs
-- Promo banner
-- Add to cart button
-- Checkout button
-- Place order button
+- 10.0.23 (Retail Server version 9.33.22062.15 and later)
+- 10.0.24 (Retail Server version 9.34.22062.14 and later)
+- 10.0.25 (Retail Server version 9.35.22062.13 and later)
+- 10.0.26 and later (all versions)
 
-The schema for **Click** action is:
+#### Enable diagnostic events in Application Insights
 
-```json
-Click
-IPayLoad = {
-        contentCategory: Name of element clicked on,
-        contentAction:  {
-            pgname: Name of page,
-            mname: name of module,
-            etext: Text of element clicked on,
-            recid: Product ID if a product was clicked on,
-            etype: ‘click’,
-        }
-    };
-```
+> [!IMPORTANT]
+> If you used System Operational Insights Preview, you must complete the following procedure to enable System Operational Insights. In this way, you ensure that reliable and secure access to events can continue.
 
-### Page views
+To enable Commerce component diagnostic events, you must have an Application Insights account. You can use an existing account or [create a new account](/azure/azure-monitor/app/create-workspace-resource#create-workspace-based-resource). For data privacy reasons, we recommend that you use separate Application Insights accounts for production, sandbox, and development environments. After you have an account, you must enable the **Operational Insights** feature in Commerce headquarters.
 
-Page view events are logged for each page view operation.
+To enable diagnostic events in Application Insights in Commerce headquarters, follow these steps.
 
-The schema for a **PageView** action is:
+1. In the **Feature Management** workspace, enable the **Operational Insights** feature.
+1. Go to **System administration \> Operational Insights**.
+1. On the **Configure** tab, set the **Commerce channel events** option to **Yes**.
+1. On the **Environments** tab, enter **LCS Environment ID** and **Environment mode** values for every environment where you plan to use Application Insights. You can find each environment's LCS environment ID on the **Environment details** page for that environment in LCS. This step is required to prevent diagnostic events from being inadvertently sent to an incorrect environment when database copy operations are performed.
+1. On the **Application Insights registry** tab, specify the Application Insights instrumentation key and corresponding environment mode of the environments where you plan to use each Application Insights account.
+1. After you've completed the preceding configuration, the **CDX Job 1110** job must be run. You can wait for this job to run on its own schedule, or you can manually run it.
+1. Restart each Commerce Scale Unit. In LCS, go to **Environment details \> Commerce \> Manage**, select a Commerce Scale Unit instance, and then select **Restart**.
+1. Repeat the preceding steps for each environment where you plan to use Application Insights.
 
-```json
-PageView
-IPageViewInfo = {
-    title;
-}
-```
+#### Disable diagnostic events in Application Insights
 
-### Cart operations
+If you no longer want to send diagnostic events to Application Insights, you must disable the feature.
 
-The following **Cart** related events are logged.
+> [!IMPORTANT]
+> If you want to disable diagnostic events, it isn't enough that you turn off the feature in **Feature management**.
 
-- Add item to cart.
-- Update item in cart.
-- Remove item from cart.
-- Checkout.
-- Product Page view.
+To disable diagnostic events in Application Insights in Commerce headquarters, follow these steps.
 
-The schema for **Cart** events is:
+1. Go to **System administration \> Operational Insights**.
+1. On the **Configure** tab, set the **Commerce channel events** option to **No**.
+1. After you've completed the preceding configuration, the **CDX Job 1110** job must be run. You can wait for this job to run on its own schedule, or you can manually run it.
+1. Restart each Commerce Scale Unit. In LCS, go to **Environment details \> Commerce \> Manage**, select a Commerce Scale Unit instance, and then select **Restart**.
+1. Repeat the preceding steps for each environment where you plan to turn off Application Insights.
 
-```json
-/***
- * Defines the telemetry properties to track for a Cart object
- * @property products       {IProductInfo[]}    - Array of product information
- * @property orderId        {string}            - ID for the order
- * @property cartId         {string}            - ID for the current cart object
- * @property cartVersion    {string}            - Version number for the current cart object
- */
-export interface ICartInfo {
-    products: IProductInfo[];
-    orderId: string;
-    cartId: string;
-    cartVersion: string;
-}
-```
-
-### Purchase
-
-When an order is submitted, a Purchase event is logged. The schema for a **Purchase** event is:
-
-```json
-/***
- * Defines the telemetry properties to track for a Purchase event
- * @property id            {string}         - Transaction ID
- * @property affiliation   {string}         - Origin of this transaction (e.g. Online Store)
- * @property revenue       {number}         - Revenue from this transaction
- * @property tax           {number}         - Tax amount
- * @property shippingCost  {number}         - Shipping cost
- * @property products      {IProductInfo[]} - List of products in this transaction
- */
-export interface IProductTransaction {
-    id: string;
-    affiliation?: string;
-    revenue?: number;
-    tax?: number;
-    shippingCost?: number;
-    products?: IProductInfo[];
-}
-```
-
-### Product details
-
-Product details are logged for **Cart** and **Purchase** operations. The schema for **Product** details is:
-
-```json
-/***
- * Defines the telemetry properties to track for a Product object
- * @property productChannelId       {string}   - Product channel ID
- * @property productChannelName     {string}   - Product channel name
- * @property productCategoryId      {string}   - Product category ID
- * @property productCategoryName    {string}   - Product category name
- * @property productId              {string}   - Product ID
- * @property productName            {string}   - Product name
- * @property productSku             {string}   - Product SKU
- * @property productPrice           {string}   - Product price
- * @property productQuantity        {string}   - Product quantity
- * @property productCurrency        {string}   - Product currency code
- */
-export interface IProductInfo {
-    productChannelId: string;
-    productChannelName: string;
-    productCategoryId: string;
-    productCategoryName: string;
-    productId: string;
-    productName: string;
-    productSku: string;
-    productPrice: string;
-    productQuantity: string;
-    productCurrency: string;
-}
-```
+To disable diagnostic events for a single environment, delete the instrumentation key on the **Application Insights registry** tab of the **Operational Insights** page. Then complete steps 3 and 4 of the preceding procedure.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

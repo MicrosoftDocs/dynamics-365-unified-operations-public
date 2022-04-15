@@ -58,7 +58,7 @@ To create and configure a new tab, follow these steps:
 1. Make the following settings in the header of the page:
 
     - **Tab name** – Specify a name for the tab.
-    - **Main view** – Select among the predefined job lists (*Active jobs*, *All jobs*, and *My machine*).
+    - **Main view** – Select among the predefined job lists (*Active jobs*, *All jobs*, *My jobs*, and *My machine*).
     - **Details view** – Select between a blank value or **Job details**. If you select the blank value, there will be no detailed view in the tab. If you select **Job details**, the detailed view will contain a detailed description of the job selected in the job list in the main view.
 
 1. In the **Primary toolbar** section, choose which buttons should be available in the primary toolbar. The **Available actions** column shows a list of all the buttons that can be added. The **Selected actions** columns shows a list of all the buttons that are included in the current configuration. Use the buttons between the columns to move selected items between the columns as needed. Use the up and down buttons next to the **Selected actions** column to control the order in which the buttons are presented in the user interface.

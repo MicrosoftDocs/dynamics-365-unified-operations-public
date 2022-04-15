@@ -3,7 +3,7 @@
  
 title: Monitor a master planning run
 description: This topic explains how the production planner can see whether a master planning run is in progress. 
-author: ChristianRytt
+author: t-benebo
 ms.date: 11/04/2019
 ms.topic: business-process 
 ms.prod:  
@@ -19,7 +19,7 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
@@ -32,12 +32,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 From the **View master planning progress** page, you can view details of historical master planning runs as a Gantt chart. This functionality can help you understand the time that is spent on the various phases of master planning. For a current active planning job, the **View master planning progress** page can be used to track progress and view the estimated remaining time.
 
-### Turn on and use the Master plan progress visualization feature
+### Turn the Master plan progress visualization feature on or off
 
-To use this functionality, follow these steps.
+As of Supply Chain Management version 10.0.21, this feature is turned on by default. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *Master planning progress visualization* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
-1. In the **Feature management** workspace, on the **New** tab, select **Master planning progress visualization** in the list. If the feature doesn't appear on the **New** tab, look on the **Not enabled** and **All** tabs.
-1. Select **Enable now**. Alternatively, select **Schedule**, and then select the time when you want the feature to be turned on. (As of Supply Chain Management version 10.0.21, this feature is turned on by default.)
+### Use the Master plan progress visualization feature
 
 The **View master planning progress** page can display both historical planning jobs and active planning jobs. 
 

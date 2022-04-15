@@ -222,9 +222,9 @@ Advanced warehouse processes can use the license plate dimension to track invent
 
 To use the features that are described in this section, you must use [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to turn on the following features (in this order):
 
-1. License plate for reporting as finished added to the Job Card Device (As of Supply Chain Management version 10.0.21, this feature is turned on by default.)
-1. Enable automatic generation of license plate number when reporting as finished in the job card device
-1. Print label from Job Card Device
+1. *License plate for reporting as finished added to the Job Card Device*<br>(As of Supply Chain Management version 10.0.21, this feature is turned on by default. As of Supply Chain Management version 10.0.25, this feature is mandatory.)
+1. *Enable automatic generation of license plate number when reporting as finished in the job card device*<br>(As of Supply Chain Management version 10.0.25, this feature is mandatory.)
+1. *Print label from Job Card Device*<br>(As of Supply Chain Management version 10.0.25, this feature is mandatory.)
 
 ### Set up reporting as finished to a license plate
 

@@ -4,7 +4,7 @@
 title: Connect peripherals to the point of sale (POS)
 description: This topic covers how to connect peripherals to your Retail POS.
 author: BrianShook
-ms.date: 06/20/2017
+ms.date: 03/01/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -63,21 +63,15 @@ Cloud POS is a browser-based POS. Because it runs in the browser, Cloud POS does
 
 ### Hardware profile
 
-Navigation: Click **Commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profiles**.
+Navigation: Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**.
 
-A hardware profile identifies the hardware that is connected to a POS register or a hardware station. The hardware profile is also used to specify the payment processor parameters that should be used during communication with the payment software development kit (SDK). (The payment SDK is deployed as part of the hardware station.)
+A hardware profile identifies the hardware that is connected to a POS register through an integrated or shared hardware station. The hardware profile is also used to specify the payment processor parameters that should be used during communication with the payment software development kit (SDK). The payment SDK is deployed as part of the hardware station.
 
 ### Hardware station
 
-Navigation: Click **Retail and Commerce** &gt; **Channels** &gt; **Stores** &gt; **All stores**. Select a store, and then click the **Hardware stations** FastTab.
+Navigation: Go to **Retail and Commerce \> Channels \> Stores \> All stores**, select a store, and then select the **Hardware stations** FastTab.
 
 A hardware station is an instance of business logic that drives POS peripherals. A hardware station is automatically installed together with MPOS. Alternatively, the hardware station can be installed as a stand-alone component, and then accessed by MPOS or Cloud POS through a web service. The hardware station must be defined at the channel level.
-
-### Hardware station profile
-
-Navigation: Click **Commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware station profiles**.
-
-Whereas the hardware station itself is specified at the channel level includes instance-specific information, such as the URL for the hardware station, the hardware station profile includes information that can be static or shared across multiple hardware stations. The static information includes the port that should be used, the hardware station package, and the hardware profile. The static information also includes a description of the type of hardware station that is being deployed, such as **Checkout** or **Returns**, depending on the hardware that is required for each specific hardware station.
 
 ## Scenarios
 
@@ -89,32 +83,29 @@ To connect MPOS to POS peripherals in a traditional, fixed POS scenario, first n
 
 After you've assigned the hardware profile, sync changes to the channel database by using the **Registers** distribution schedule. You can find the distribution schedules at **Retail and Commerce** &gt; **Retail and Commerce IT** &gt; **Distribution schedule**. 
 
-Next, set up a "local" hardware station on the channel. Click **Retail and Commerce** &gt; **Channels** &gt; **Stores** &gt; **All stores**, and select a store. 
+Next, set up a dedicated hardware station on the channel. Go to **Retail and Commerce \> Channels \> Stores \> All stores**, and select a store. 
 
-Then, on the **Hardware stations** FastTab, click **Add** to add a hardware station. Enter a description, enter **localhost** as the host name, and then sync the changes to the channel by using the **Channel configuration** distribution schedule. You can find the distribution schedules at **Retail and Commerce** &gt; **Retail and Commerce IT** &gt; **Distribution schedule**. 
+Then, on the **Hardware stations** FastTab, select **Add** to add a hardware station. Select **Dedicated** as the hardware station type, and then enter a description. The **Hardware profile** field can be left blank, because the hardware profile that is used in this scenario comes from the POS register itself. Then sync the changes to the channel by using the **Channel configuration** distribution schedule. You can find the distribution schedules at **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**. 
 
-Finally, in MPOS, use the **Select hardware station** operation to select the **localhost** hardware station. Set the hardware station to **Active**. The hardware profile that is used in this scenario should come from the POS register itself. A hardware station profile isn't required for this scenario.
+Finally, in MPOS, use the **Select hardware station** operation to select the hardware station that matches the value that you previously entered for the description, and set the hardware station to **Active**. 
 
 > [!NOTE]
-> Some hardware profile changes, such as changes to cash drawers, require that a new shift be opened after the changes have been synced to the channel.
->
-> Cloud POS must use the stand-alone hardware station to communicate with peripherals.
+> - Some hardware profile changes, such as changes to cash drawers, require that a new shift be opened after the changes have been synced to the channel.
+> - Cloud POS must use the stand-alone hardware station to communicate with peripherals.
 
 ### MPOS or Cloud POS with a stand-alone hardware station
 
 [![Shared peripherals.](./media/shared-300x254.png)](./media/shared.png)
 
-In this scenario, a stand-alone hardware station is shared among MPOS and Cloud POS clients. This scenario requires that you create a hardware station profile to specify the download package, port, and hardware profile that the hardware station uses. You can find the hardware station profile at **Retail and Commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware station profiles**. 
+In this scenario, a standalone hardware station is shared among MPOS and Cloud POS clients. This scenario requires that you create a shared hardware station and specify the download package, port, and hardware profile that the hardware station uses. You define a new hardware station by selecting **the Hardware stations** FastTab in the specific channel (**Retail and Commerce \> Channels \> Stores \> All stores**) and adding a new hardware station of the **Shared** type. 
 
-After you've created the hardware station profile, navigate to the specific channel (**Retail and Commerce** &gt; **Channels** &gt; **Stores** &gt; **All stores**), and add a new hardware station. Map this new hardware station to the hardware station profile that was previously created. 
+Next, provide a description that will help the cashier identify the hardware station. In the **Host name** field, enter the host machine URL in the following format: `https://<MachineName:Port>/HardwareStation`. (Replace **&lt;MachineName:Port&gt;** with the actual machine name of the hardware station.) For a standalone hardware station, you should also specify the electronic funds transfer (EFT) terminal ID. This value identifies the EFT terminal that is connected to the hardware station when the payment connector communicates with the payment provider. 
 
-Next, provide a description that will help the cashier identify the hardware station. In the **Host name** field, enter the host machine URL in the following format: `https://<MachineName:Port>/HardwareStation`. (Replace **&lt;MachineName:Port&gt;** with the actual machine name of the hardware station and the port that is specified in the hardware station profile.) For a stand-alone hardware station, you should also specify the electronic funds transfer (EFT) terminal ID. This value identifies the EFT terminal that is connected to the hardware station when the payment connector communicates with the payment provider. 
-
-Next, from the actual hardware station machine, navigate to the channel, and select the hardware station. Then click **Download**, and install the hardware station. 
+Next, from the machine that will host the hardware station, go to the channel in Headquarters, and select the hardware station. Then select **Download** to download the hardware station installer, and install the hardware station. For more information about how to install hardware station, see [Configure and install Retail hardware station](retail-hardware-station-configuration-installation.md). 
 
 Next, from MPOS or Cloud POS, use the **Select hardware station** operation to select the hardware station that was previously installed. Select **Pair** to establish a secure relationship between the POS and the hardware station. This step must be completed once for every combination of a POS and a hardware station. 
 
-After the hardware station is paired, the same operation is used to make the hardware station active while it's used. For this scenario, the hardware profile should be assigned to the hardware station profile rather than the register itself. If for some reason a hardware station does not have a hardware profile directly assigned, then the hardware profile assigned to the register is used.
+After the hardware station is paired, the same operation is used to make the hardware station active while it's used. For this scenario, the hardware profile should be assigned to the shared hardware station instead of the register itself. If no hardware profile is directly assigned to a hardware station for some reason, the hardware profile that is assigned to the register will be used.
 
 ## Client maintenance
 
@@ -163,19 +154,19 @@ The functionality profile is set at the store level. It's used to specify store-
 
 - **Receipt numbering** FastTab:
 
-    - Specify receipt numbering masks, which might include segments for the store number, terminal number, constants, and whether sales, returns, sales orders, and quotations are printed in separate sequences, or whether they all following the same sequence.
+    - Specify receipt numbering masks, which might include segments for the store number, terminal number, constants, and whether sales, returns, sales orders, and quotations are printed in separate sequences, or whether they all follow the same sequence.
 
 #### Receipt profiles
 
-Receipts profiles are assigned to printers within the hardware profile. They are used to specify the receipt types that are printed at a specific printer. The profiles include settings for the receipt formats, and settings that determine whether the receipt is always printed, or whether the cashier is prompted to decide whether the receipt must be printed. Different printers might also use different receipt profiles. For example, printer 1 is a standard thermal receipt printer, and therefore has smaller receipt formats. However, printer 2 is a full-size receipt printer that is used to print only customer order receipts, which require more space.
+Receipt profiles are assigned to printers within the hardware profile. They are used to specify the receipt types that are printed at a specific printer. The profiles include settings for the receipt formats, and settings that determine whether the receipt is always printed, or whether the cashier is prompted to decide whether the receipt must be printed. Different printers might also use different receipt profiles. For example, printer 1 is a standard thermal receipt printer, and therefore has smaller receipt formats. However, printer 2 is a full-size receipt printer that is used to print only customer order receipts, which require more space. For more information, see [Configure a receipt profile](configure-emailed-receipt-formats.md#configure-a-receipt-profile).
 
 #### Hardware profiles
 
-Hardware profiles are explained as a component for client setup earlier in this article. Hardware profiles are assigned directly to the POS register or to a hardware station profile. They are used to specify the types of devices a specific POS register or hardware station uses. Hardware profiles are also used to specify the EFT settings that are used to communicate with the payment SDK.
+Hardware profiles are explained as a component for client setup earlier in this topic. Hardware profiles are assigned directly to the POS register or to a shared hardware station, and are used to specify the types of devices that a specific POS register or hardware station uses. Hardware profiles are also used to specify the EFT settings that are used to communicate with the payment SDK.
 
 #### Visual profiles
 
-Visual profiles are assigned at the register level. They are used to specify the theme for a specific register. The profiles include settings for the type of application that is used (MPOS or Cloud POS), the accent color and theme, the font scheme, the logon background, and the POS background.
+Visual profiles are used to specify the theme for a specific register and are assigned at the register level. The profiles include settings for the type of application that is used (MPOS or Cloud POS), the accent color and theme, the font scheme, the sign-in page background, and the POS background. For more information, see [Create point of sale (POS) visual profiles](tasks/create-pos-visual-profile-2016-02.md). 
 
 ### Custom fields
 
@@ -184,10 +175,6 @@ You can create custom fields to add fields that aren't provided out of the box t
 ### Language text
 
 You can override default strings in the POS by using language text entries. To override a string in the POS, add a new language text line. Then specify an ID, the default string that should be overridden, and the text that should be shown at the POS instead of the default string.
-
-### Hardware station profiles
-
-Hardware station profiles are explained earlier in this article. They are used to assign non-instance-specific information to hardware stations.
 
 ### Channel reports configuration
 
@@ -207,6 +194,10 @@ Additional activation-related information includes the worker who changed the ac
 ### Client data synchronization
 
 All changes to a POS client, except changes in the device activation status, must be synced to the channel database to take effect. To sync changes to the channel database, navigate to **Retail and Commerce** &gt; **Retail and Commerce IT** &gt; **Distribution schedule**, and run the required distribution schedule. For client changes, you should run the **Registers** and **Channel configuration** distribution schedules.
+
+## Additional resources
+
+[Configure and install Retail hardware station](retail-hardware-station-configuration-installation.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

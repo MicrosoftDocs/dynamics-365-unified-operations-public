@@ -4,7 +4,7 @@
 title: Enable Budget proposal
 description: This topic explains how to turn on the Budget proposal feature in Finance Insights.
 author: ShivamPandey-msft
-ms.date: 11/03/2021
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -39,5 +39,8 @@ This topic explains how to turn on the Budget proposal feature in Finance Insigh
     3. Turn on the feature.
 
 2. Go to **Budgeting \> Setup \> Basic Budgeting \> Budget proposal**, and select **Enable feature**.
+
+> [!NOTE]
+> The **Budget proposal** feature requires a minimum of three years of budget or actual data. This feature uses three to ten years of data in the projections. More than three years of data provides better results. The data itself works best when there is variation in the values. If the data contains all constant data, such as a lease expense, the training may fail because the lack of variation doesn’t require AI to project the amounts.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
