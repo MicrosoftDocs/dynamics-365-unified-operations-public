@@ -93,7 +93,7 @@ The following table lists the invoice parameters specific to the posting of fina
 | Parameter  | Definition  |
 |------------|-------------|
 | Journal name   | Payment journal name that will be used when creating customer payment journals for sales order payments. This applies to all order payments posted for point of sale (POS), call center, and e-commerce channel orders. |
-| Account name  |   |
+| Account name  | Payment account name.  |
 | Prioritize dimensions from payment method | When this flag is enabled, payment journals will use prioritized from the payment method instead of the store.               |
 | Taxes \| Tax calculation behavior   | <p><ul><li>Recalculate: Calculate taxes again at time of invoicing sales orders created during statement posting.</li><li> Don't recalculate: Use the tax amounts calculated in POS when invoicing sales orders created during statement posting.</li></ul></p> |
 | Refund \| Journal name   | Journal name that will be used when creating a customer payment journal for refunds. This setting will apply to all order payments posted for POS, call center, and e-commerce channel orders.                                    |
