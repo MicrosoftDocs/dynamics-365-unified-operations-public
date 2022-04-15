@@ -81,13 +81,13 @@ The following example illustration shows the Adventure Works online channel conf
 
 Different languages within a channel can be configured with their own domain names, for example `www.adventure-works.ca` for the Canada English version and `www.adventure-works-fr.ca` for the Canada French version. Alternatively, different languages within a channel can be configured within a single domain using different paths for each language, for example `www.adventure-works.ca` for the Canada English version and `www.adventure-works.ca/fr` for the Canada French version. [Geo detection](geo-detection-redirection.md) can also be enabled to automatically redirect a user to the correct site based on the user's location.
 
-For information on allowing customers to manually switch between languages, see [Enable the site picker](#enable-the-site-picker).  
+For information on allowing customers to manually switch between languages, see [Add and configure the site picker module](#add-and-configure-the-site-picker-module).  
 
 For information on customizing localized pages and fragments, see [managing site content with multiple channels and languages](#manage-site-content-with-multiple-channels-and-languages).
 
 ### Multilanguage channel with different site experiences per language
 
-You may prefer a scenario where a single channel supports more than one language but a completely different site experience is rendered for each language. The recommended method to implement this scenario is to use [page variants](#implement-page-variants-per-each-language) on a single site. Another method is to create a new e-commerce site for each language in site builder and then map each site to a single online channel and language, which would result in a single online channel being mapped to multiple e-commerce sites, one per language. The multiple site method requires extra management resources since there will be more than one site to independently manage within site builder.
+You may prefer a scenario where a single channel supports more than one language but a completely different site experience is rendered for each language. The recommended method to implement this scenario is to use [page variants](#implement-page-variants-for-each-language) on a single site. Another method is to create a new e-commerce site for each language in site builder and then map each site to a single online channel and language, which would result in a single online channel being mapped to multiple e-commerce sites, one per language. The multiple site method requires extra management resources since there will be more than one site to independently manage within site builder.
 
 ### Multiple channels (with single and/or multiple languages) with a single localized site experience
 
@@ -95,7 +95,7 @@ A branded site may require multiple online channels per region to support a diff
 
 In this example, the different markets could be configured with their own domain names such as `www.adventure-works.com` for the US market and `www.adventure-works.de` for the German market, or alternatively could be configured to use different paths such as `www.adventure-works.com` for the US market and `www.adventure-works.com/de` for the German market. [Geo detection](geo-detection-redirection.md) could also be enabled to automatically redirect users to the correct site based on their region.
 
-You may also want your site to display a drop-down list that allows users to manually switch to a specific market. For more information see [enable the site picker](#enable-the-site-picker).
+You may also want your site to display a drop-down list that allows users to manually switch to a specific market. For more information, see [Add and configure the site picker module](#add-and-configure-the-site-picker-module).
 
 For information on configuring multiple channels on a single site, see [Configure multiple channels on an e-commerce site](#configure-multiple-channels-on-an-e-commerce-site).  
 
@@ -103,7 +103,7 @@ For information on configuring multiple channels on a single site, see [Configur
 
 You may want to have multiple channels for a single brand in different regions with different site experiences for each region. There are two methods for implementing this scenario, both described in the previous scenarios:
 
-- Use [page variants](#implement-page-variants-per-each-language).
+- Use [page variants](#implement-page-variants-for-each-language).
 - Configure different sites in site builder for each online channel and then map each site to a different online channel and language. This method requires extra management resources since there will be more than one site to independently manage within site builder.
 
 ## Cross-channel sharing
