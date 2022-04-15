@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: PayPal Cart Checkout for Dynamics 365 Commerce
+title: PayPal cart checkout for Dynamics 365 Commerce
 description: This topic provides an overview of the Microsoft Dynamics 365 Payment support PayPal Cart Checkout for faster checkout capabilities.
 author: BrianShook
 ms.date: 04/13/2022
@@ -43,34 +43,39 @@ This topic provides an overview of the Microsoft Dynamics 365 payments support f
 
 Microsoft Dynamics 365 Commerce offers an out-of-box integration for PayPal Wallet. When the PayPal Connector is configured, the PayPal button is a selectable payment method as part of online order checkout. When users select **PayPal**, they are directed to complete their payment directly with PayPal and then are returned to the online storefront for order completion. With **PayPal Cart Checkout**, users can utilize their payment account information to pre-fill the checkout form and get through the checkout process faster. Commerce is adding a Payment Express module to allow for express checkout behavior. The Payment Express module can be used in a Fragment and included in the checkout or cart page. The same **Dynamics 365 Payment Connector for PayPal** connector reference is used for a Payment Express or regular checkout option when PayPal is configured.
 
-## PayPal Cart Checkout in Commerce
+## PayPal cart checkout in Commerce
 
-### Pre-requisites
+### Prerequisites
+
 Follow the PayPal Wallet setup instructions for your environment as described in the [Dynamics 365 Payment Connector for PayPal](../paypal.md) article. 
 
 If using PayPal as an option in the regular checkout flow (the checkout section in which a user enters their order information without the Express pre-fill actions), follow the setup instructions for the [Payment Module](../payment-module.md) article. Setting up the regular checkout section will remain the same as described in the referenced payment module article.
 
-### Introducing the Payment Express module with PayPal
+### Payment Express module with PayPal
+
 The **Payment Express** module works with supporting payment methods to offer site customers the option to checkout faster using their payment service account information in the checkout process. The module references the configured connector button and returns the user selected order details (addresses, contact information, and paying against the underlying payment method selected) to pre-populate the checkout form.
 
 With PayPal Cart Checkout, selecting the PayPal button in the Payment Express section will launch the PayPal payment iFrame window. A user will log in to their PayPal account and can use their account shipping address, billing address, email, and PayPal payment method of choice to pay for the transaction.
 
 As the user completes the action in PayPal, they are directed to the Commerce site checkout page with the checkout form pre-populated with their chosen details. In the Payment Express flow, the first **Delivery Option** available for the shipping address returned will be pre-selected for the customer.  The customer has the option to review the order, change checkout order details if desired, and will then select the **Place order** button to finalize the order.
 
-
-### Set up the Payment Express fragment with PayPal in Site Builder
+### Set up the Payment Express fragment with PayPal in site builder
 
 To set up the Payment Express fragment with PayPal for the online store, follow these steps.
 
-1. In Site Builder, select the site and navigate to the **Fragments** menu and select **New**
-2. In the New Fragment dialogue, find and select the **Payment express** module in the module select menu, and give your Fragment a name (example: Checkout Express). 
-3. Click **Ok** to create the fragment.
-3. In the module tree, select the new module (pre-labeled 'Checkout express' under your fragment object)
-4. In the Properties section, update the Header to a heading you want to display for the express checkout section in your site (Example: Express Checkout)
-5. You can set or adjust the **Height of the iFrame** in pixels (Example: 60)
-6. Add "PayPal" to the **Supported tender types** field
-7. Select **Save** to save your changes, and click **Finish editing** to complete editing the fragment
-8. Click **Publish** to publish the fragment for use
+1. Navigate to your site.
+1. In the left navigation pane, select **Fragments**, and then select **New**.
+
+2. In the **New Fragment** dialog box, find and select the **Payment express** module, and then under **Fragment name** enter a name for the fragment (for example, "Checkout Express"). 
+3. Select **OK** to create the fragment.
+3. In the outline, select the slot of the payment express module you created.
+4. In the properties pane, select **Heading**. 
+5. In the **Heading** dialog box, under **Heading text** enter the heading text that you want to display for the express checkout section in your site.
+6. Under **Heading level**, select the heading level (for example, "H2"), and then select **OK**.
+7. In the properties pane, under **Height of the iFrame** enter or adjust the els (for example, 60).
+8. Add "PayPal" to the **Supported tender types** field
+9. Select **Save** to save your changes, and click **Finish editing** to complete editing the fragment
+10. Click **Publish** to publish the fragment for use
 
 ### Set up the Checkout page with the Payment Express fragment
 
@@ -90,7 +95,6 @@ To set up the Payment Express fragment with PayPal in the Checkout page, follow 
 8. Click the **Save** button to save your changes.
 9. Click on **Finish editing** to complete editing the page, and **Publish** to publish your changes live.
 
-
 ### Set up the Cart page with the Payment Express fragment
 
 To set up the Payment Express fragment with PayPal in the Cart page, follow these steps.
@@ -104,13 +108,13 @@ To set up the Payment Express fragment with PayPal in the Cart page, follow thes
 7. Click the **Save** button to save your changes.
 8. Click on **Finish editing** to complete editing the page, and **Publish** to publish your changes live.
 
-### Modes of Delivery
+### Modes of delivery
+
 With the Payment Express module using PayPal, the first delivery option returned against the shipping address selected from the PayPal account will be pre-selected. Users will have a chance to click **change** and adjust the shipping address to a different option if desired. 
 
 The order of the delivery methods is configured in HQ on the Channel's **Modes of delivery** section. Additional information on setting up modes of delivery can be found in the [Set up modes of delivery](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery) article. The checkout module will also use the **delivery options module** when rendering modes of delivery during checkout. See additional details in the [delivery options module](../delivery-options-module.md) article.
 
 Modes of delivery are displayed as added to the list in the Online Store. In Headquarters, navigate to **Retail and Commerce > Channels > online stores** and select the channel ID for your store. Under the **Setup** menu section, select **Modes of delivery**. The module modes of delivery will be displayed on the site similarly to the configuration shown. Use the **Manage modes of delivery** action item to add or remove modes of delivery for a Retail Channel or a Product.
-
 
 ## Additional resources
 
