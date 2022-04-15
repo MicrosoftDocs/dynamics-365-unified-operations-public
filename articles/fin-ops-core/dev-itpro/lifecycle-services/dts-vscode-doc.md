@@ -56,7 +56,7 @@ extension, first select the DTS icon in the sidebar:
 This will open the DTS view which is comprised of the resource file explorer and the translation request configuration view.
 
 If you don’t have any resource files yet, see [Working with Translation
-Files](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-work-with-translation-files)
+Files](/dynamics365/business-central/dev-itpro/developer/devenv-work-with-translation-files)
 for guidance on generating those. Once you have generated the XLIFF, you will be
 able to see it in the resource file explorer view.
 
