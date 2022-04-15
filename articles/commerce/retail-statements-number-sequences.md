@@ -45,17 +45,19 @@ To configure number sequence for statement posting in headquarters, follow these
 
 1. Go to **Organization administration \> Number sequences \> Number sequences**.
 1. Under **New**, select **Number sequence** to create a new record.
-1. On the **Identification** FastTab, for **Number sequence code** enter a number sequence code.
+1. On the **Identification** FastTab, for **Number sequence code**, enter a number sequence code.
 1. For **Number sequence name**, enter a name.
 1. On the **Scope parameters** FastTab, under **Scope** select **Operating unit** from the drop-down list.
 1. For  **Operating unit**, select the store for which this number sequence will be used from the drop-down list.
 1. On the **Segments** FastTab, define the segments.
 1. On the **References** FastTab, define the reference **Area** as **Retail store**.
 1. Define **Reference** as **Statement number**, and then select **OK**.
-1. Update the **Number allocation** to match the length of the **Alphanumeric** segment.
-1. It is recommended that you set the **Preallocation** option to **Yes**, and set the **Quantity of numbers** to **25**.
-1. Save the new **Number sequence** and close the form.
+    ![Identification, Scope parameters, Segments, and References FastTabs](media/retail-statements-num-seq-setup-01.png)
+1. On the **General** FastTab, under **NUMBER ALLOCATION**, update the **Smallest** and **Largest** fields to match the length of the **Alphanumeric** segment defined earlier.
+1. On the **Performance** FastTab, it is recommended that you set the **Preallocation** option to **Yes**, and set the **Quantity of numbers** to **25**.
+    ![General and Performance FastTabs](media/retail-statements-num-seq-setup-02.png)
+1. Select **Save** on the action pane to save and close the form.
 
-![Statement number sequence setup sample 1](media/retail-statements-num-seq-setup-01.png)
 
-![Statement number sequence setup sample 2](media/retail-statements-num-seq-setup-02.png)
+
+
