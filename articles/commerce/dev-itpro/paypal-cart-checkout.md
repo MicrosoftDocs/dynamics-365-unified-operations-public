@@ -27,10 +27,10 @@ This topic provides an overview of the Microsoft Dynamics 365 payments support f
 | Term | Description |
 |---|---|
 | PayPal Wallet | Also known as the PayPal "button", PayPal Wallet describes the customer experience and integration supported by the PayPal connector. |
-| Wallet | A payment type that does not include traditional payment characteristics, such as the BIN range and expiration date, which are used to differentiate among credit and debit card types. |
+| Wallet | A payment type that doesn't include traditional payment characteristics, such as the BIN range and expiration date, which are used to differentiate among credit and debit card types. |
 |Payment express | A Commerce module that supports faster checkout behavior with supported payment methods. This topic covers the payment express module's use with PayPal. |
 
-Dynamics 365 Commerce offers an out-of-box integration for PayPal Wallet. When the Dynamics 365 Payment Connector for PayPal is configured, the PayPal button appears as a selectable payment method as part of online order checkout. When users select **PayPal**, they are directed to complete their payment directly with PayPal and then are returned to the online storefront to complete their order. With PayPal cart checkout, customers can use their payment account information to prefill the checkout form to get through the checkout process faster. 
+Dynamics 365 Commerce offers an out-of-box integration for PayPal Wallet. When the Dynamics 365 Payment Connector for PayPal is configured, the PayPal button appears as a selectable payment method as part of online order checkout. When users select **PayPal**, they're directed to complete their payment directly with PayPal and then are returned to the online storefront to complete their order. With PayPal cart checkout, customers can use their payment account information to prefill the checkout form to get through the checkout process faster. 
 
 Commerce has added a payment express module to facilitate express checkouts. The payment express module can be used in a fragment that can be included in a checkout or cart page. The same Dynamics 365 Payment Connector for PayPal connector reference is used for a payment express or regular checkout option when PayPal is configured.
 
