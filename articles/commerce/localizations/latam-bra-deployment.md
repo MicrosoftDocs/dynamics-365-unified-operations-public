@@ -28,7 +28,6 @@ ms.dyn365.ops.version:
 # Set up and deploy the Dynamics 365 Commerce localization for Brazil
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This topic covers how to set up and deploy the Microsoft Dynamics 365 Commerce localization for Brazil.
 
