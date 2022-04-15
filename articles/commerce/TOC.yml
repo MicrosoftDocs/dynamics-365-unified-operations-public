@@ -2480,7 +2480,7 @@
             href: dev-itpro/retail-server-customer-consumer-api.md
           - name: Consume Retail Server APIs in external applications
             href: dev-itpro/consume-retail-server-api.md
-          - name: Typescript and C# proxies for Retail POS
+          - name: TypeScript and C# proxies for Retail POS
             href: dev-itpro/typescript-proxy-retail-pos.md
           - name: Commerce runtime (CRT) architecture and configuration
             href: dev-itpro/commerce-runtime-overview.md
