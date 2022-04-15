@@ -59,54 +59,53 @@ With PayPal Cart Checkout, selecting the PayPal button in the Payment Express se
 
 As the user completes the action in PayPal, they are directed to the Commerce site checkout page with the checkout form pre-populated with their chosen details. In the Payment Express flow, the first **Delivery Option** available for the shipping address returned will be pre-selected for the customer.  The customer has the option to review the order, change checkout order details if desired, and will then select the **Place order** button to finalize the order.
 
-### Set up the Payment Express fragment with PayPal in site builder
+### Add the payment express module with PayPal to a fragment in site builder
 
-To set up the Payment Express fragment with PayPal for the online store, follow these steps.
+Add the payment express module with PayPal to a fragment in site builder, follow these steps.
 
 1. Navigate to your site.
 1. In the left navigation pane, select **Fragments**, and then select **New**.
-
-2. In the **New Fragment** dialog box, find and select the **Payment express** module, and then under **Fragment name** enter a name for the fragment (for example, "Checkout Express"). 
+2. In the **New Fragment** dialog box, find and select the **Payment express** module, and then under **Fragment name** enter a name for the fragment (for example, "Express checkout"). 
 3. Select **OK** to create the fragment.
-3. In the outline, select the slot of the payment express module you created.
+3. In the outline view, select the slot of the payment express module you created.
 4. In the properties pane, select **Heading**. 
-5. In the **Heading** dialog box, under **Heading text** enter the heading text that you want to display for the express checkout section in your site.
+5. In the **Heading** dialog box, for **Heading text** enter the heading text that you want to display for the express checkout section of your site (for example, "Express checkout").
 6. Under **Heading level**, select the heading level (for example, "H2"), and then select **OK**.
-7. In the properties pane, under **Height of the iFrame** enter or adjust the els (for example, 60).
-8. Add "PayPal" to the **Supported tender types** field
-9. Select **Save** to save your changes, and click **Finish editing** to complete editing the fragment
-10. Click **Publish** to publish the fragment for use
+7. In the properties pane, for **Height of the iFrame** enter or adjust the height of the iFrame element (for example, "60").
+8. For **Supported tender types**, enter "PayPal".
+9. Select **Save**, select **Finish editing** to check in the fragment, and then select **Publish** to publish it.
 
-### Set up the Checkout page with the Payment Express fragment
+### Add the payment express fragment to the checkout page 
 
-To set up the Payment Express fragment with PayPal in the Checkout page, follow these steps.
+To add the payment express fragment to the checkout page, follow these steps.
 
-1. In Site Builder, with your site context set, navigate to the **Pages** menu and select your Checkout page.
-2. Click **Edit** to edit the page
-3. In the **Main slot**, select the ellipsis (...), and then select **Add Module**
-4. In the **Add Module** dialogue box, add the **Container** module
-5. Note: If a Container already exists for your site with the **checkout** fragment- to have the Payment Express section  render above the normal checkout container, position it above the existing checkout container within the **Main slot** section. You can move container positions by selecting their ellipsis (...), and choosing the "Move up" or "Move down" options.
-5. In the **Container** module properties, it is recommended to use the following property settings:
-- Container Layout: Stacked
-- Width: Fill container
-- Children Shown: Three
-6. With the **Container** module still selected in the module tree, select the ellipsis (...), and then select **Add Fragment**
-7. In the **Add Fragment** dialogue box, find and select your named created express payment fragment and click **OK**
-8. Click the **Save** button to save your changes.
-9. Click on **Finish editing** to complete editing the page, and **Publish** to publish your changes live.
+1. Navigate to your site.
+1. In the left navigation pane, select **Pages**, and then select your site's checkout page.
+1. Select **Edit** to edit the page.
+1. In the **Main slot**, select the ellipsis ("**...**"), and then select **Add Module**.
+1. In the **Select modules** dialog box, select the **Container** module, and then select **OK**.
+    > [!NOTE]
+    > If a container module already exists that contains a checkout fragment, to have the payment express section render above the normal checkout container, position it above the existing checkout container within the **Main slot**. To move a container module up or down, select the ellipsis ("**...**"), and then select **Move up** or **Move down**.
+1. In the **Container** properties pane, it is recommended to configure the property settings follows:
+    - **Container Layout**: Select **Stacked**.
+    - **Width**: Select **Fill container**.
+    - **Children Shown**: Select **Three**.
+1. In the **Container** slot, select the ellipsis ("**...**"), and then select **Add Fragment**.
+1. In the **Select a fragment** dialog box, find and select the express payment fragment you created, and then select **OK**.
+1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
-### Set up the Cart page with the Payment Express fragment
+### Add the payment express fragment to the cart page
 
-To set up the Payment Express fragment with PayPal in the Cart page, follow these steps.
+Add the payment express fragment to the cart page, follow these steps.
 
-1. In Site Builder, with your site context set, navigate to the **Pages** menu and select your Cart page.
-2. Click **Edit** to edit the page
-3. Expand the **Main slot** in the tree view and locate the container which includes **Cart** module. The **Cart** module will contain a new specific slot for **Payment Express**
-4. In the **Cart** module, select the **Payment Express** slot and select the ellipsis (...), and then select **Add Module**
-5. In the **Add Module** dialogue box, add the **Payment express** module and click **OK**
-6. With the express fragment still selected, in Properties add "Paypal" to the **Supported tender types** property.
-7. Click the **Save** button to save your changes.
-8. Click on **Finish editing** to complete editing the page, and **Publish** to publish your changes live.
+1. Navigate to your site.
+1. In the left navigation pane, select **Pages**, and then select your site's cart page.
+2. Select **Edit** to edit the page.
+3. In the **Main slot**, locate the container that contains the **Cart** module. The **Cart** module will contain a **Payment express** slot.
+4. Select the **Payment Express** slot, select the ellipsis ("**...**"), and then select **Add Module**.
+5. In the **Select modules** dialog box, select the **Payment express** module, and then select **OK**.
+6. In properties pane, for **Supported tender types** enter "Paypal".
+8. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
 ### Modes of delivery
 
