@@ -2,10 +2,10 @@
 # required metadata
 
 
-title: Channel mapping to e-commerce sites
+title: Map channels to e-commerce sites
 description: This topic describes some of the more common channel mapping scenarios in Microsoft Dynamics 365 Commerce that can be extrapolated for most other business requirements.
 author: samjarawan
-ms.date: 04/06/2022
+ms.date: 04/15/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -26,7 +26,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Channel mapping to e-commerce sites
+# Map channels to e-commerce sites
 
 This topic describes some of the more common channel mapping scenarios in Microsoft Dynamics 365 Commerce that can be extrapolated for most other business requirements.
 
