@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Platform update 37
 
 ---
 
-# Priority-based throttling
+# Throttling prioritization
 
 [!include [banner](../includes/banner.md)]
 
