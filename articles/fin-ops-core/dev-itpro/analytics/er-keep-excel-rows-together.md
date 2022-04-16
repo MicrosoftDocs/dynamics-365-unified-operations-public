@@ -31,7 +31,6 @@ ms.dyn365.ops.version: Version 10.0.26
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 This topic explains how a user in the System Administrator or Electronic Reporting Functional Consultant role can configure an [Electronic reporting (ER)](general-electronic-reporting.md) [format](er-overview-components.md#format-component) that generates outbound documents in Microsoft Excel and manage document pagination so that rows that are created are kept on the same page.
 
