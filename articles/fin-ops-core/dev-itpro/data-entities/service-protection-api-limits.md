@@ -104,11 +104,21 @@ If your application provides this capability, you should consider some of the fo
 ### Execution time
 This limit tracks the combined execution time of incoming requests during the preceding 300-second period. The following error message is returned with the API response:
 
+```Combined execution time of incoming requests exceeded limit of 1200 seconds over time window of 300 seconds. Decrease number of concurrent requests or reduce the duration of requests and try again later.```
+
+Some operations require more resources than others. Batch operations and highly complex queries can be very demanding. These operations may also be performed simultaneously in concurrent requests. Therefore, within the 5-minute window it is possible to request operations that will require more than 20 minutes of combined computation time.
+
+This limit can be encountered when strategies using batch operations and concurrent requests are used to avoid the limit on the number of requests. If this error is encountered with batch operations, a potential mitigation strategy is to divide the operations into smaller batches and execute the individual batches concurrently with different service principals.
+
+### Concurrent requests
+This limit tracks the number of concurrent requests for the user. The following error message is returned with the API response:
+
 ```Number of concurrent requests exceeded the limit of 52.```
 
 Client applications are not limited to sending requests individually in succession. The client may apply parallel programming patterns or various methods to send multiple requests simultaneously. If this number of concurrent requests is exceeded, the error is returned with the API response.
 
 Sending concurrent requests can be a key part of a strategy to maximize throughput, but don't overuse this strategy. When using [Parallel Programming in .NET](https://docs.microsoft.com/en-us/dotnet/standard/parallel-programming) the default degree of parallelism depends on the number of CPU cores on the server running the code. It should not exceed 52. The [ParallelOptions.MaxDegreeOfParallelism](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.paralleloptions.maxdegreeofparallelism) property can be set to define a maximum number of concurrent tasks.
+
 
 ### Resource utilization threshold
 This limit tracks the cumulative utilization thresholds of server resources. The following error message is returned with the API response:
