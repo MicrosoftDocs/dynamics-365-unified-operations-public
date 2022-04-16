@@ -110,6 +110,13 @@ Client applications are not limited to sending requests individually in successi
 
 Sending concurrent requests can be a key part of a strategy to maximize throughput, but don't overuse this strategy. When using [Parallel Programming in .NET](https://docs.microsoft.com/en-us/dotnet/standard/parallel-programming) the default degree of parallelism depends on the number of CPU cores on the server running the code. It should not exceed 52. The [ParallelOptions.MaxDegreeOfParallelism](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.paralleloptions.maxdegreeofparallelism) property can be set to define a maximum number of concurrent tasks.
 
+### Resource utilization threshold
+This limit tracks the cumulative utilization thresholds of server resources. The following error message is returned with the API response:
+
+```This request could not be processed at this time due to system experiencing high resource utilization.```
+
+When this error is received it isn't necessarily an indication of any one user or integration causing the issue. This message indicates that the cumulative utilization of web server resources across all service integrations has exceeded a threshold that threatens the performance and availability of the service. When this occurs, general strategies for optimizing API integrations, like those outlined in [Maximizing API throughput](service-protection-maximizing-api-throughput) are useful. Also ensure you have defined the [throttling prioritization](priority-based-throttling) for your API integrations.
+
 ## Exceptions to service protection limits
 The service protection API limits do not apply to some Microsoft services. The following services are currently exempt from the limits:
 - [Document Routing Agent (DRA)](../analytics/install-document-routing-agent)
@@ -121,3 +128,9 @@ The service protection API limits do not apply to some Microsoft services. The f
 - [Dual-write](./dual-write/dual-write-overview)
 - [Power Platform virtual tables for Finance and Operations apps](../power-platform/virtual-entities-overview)
 - [Finance and Operations apps Connector](fin-ops-connector)
+
+Though these services are currently exempt from the limits, the services are prioritizing the implementation of the service protection limits. Notifications will be provided ahead of any changes, and the documentation will be updated when exemptions are removed for these services.
+
+> [!NOTE]
+> These services will implement handlers with Retry-After logic when service protection limits are applied to the services. However, it is still recommended that you have client-side handling for throttling when using the services. Consider implementing the 429 handler with Retry-After logic.
+
