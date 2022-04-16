@@ -83,7 +83,7 @@ The following table describes the default user-based service protection API limi
 ### Resource-based service protection API limits
 While user-based service protection API limits are specified per user per web server, resource-based service protection API limits are enforced based on environment resource utilization thresholds. The resource limits will throttle service requests when the aggregate consumption of web server resources reaches levels that threaten service performance and availability. Resource-based service protection API limits work together with user-based limits as protective settings that prevent the over-utilization of resources. This helps to preserve the system's responsiveness and ensures consistent availability and performance for environments running Finance and Operations apps.
 
-For resource-based service protection API limits, you can define the prioritized order in which integrations are throttled when resource thresholds are reached. See [Throttling prioritization](priority-based-throtting) for more information.
+For resource-based service protection API limits, you can define the prioritized order in which integrations are throttled when resource thresholds are reached. See [Throttling prioritization](priority-based-throttling) for more information.
 
 ## Service protection API response
 When client applications make extraordinarily demanding requests, the Finance and Operations service returns an error indicating that too many requests have been made. We follow a common pattern for online services by returning a [429 Too Many Requests response](https://developer.mozilla.org/docs/Web/HTTP/Status/429).
