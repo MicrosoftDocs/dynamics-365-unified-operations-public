@@ -50,8 +50,6 @@
         href: data-entities/integration-overview.md
       - name: Priority-based throttling
         hreF: data-entities/priority-based-throttling.md
-      - name: Priority-based throttling FAQ
-        href: data-entities/throttling-faq.md
       - name: Data integration APIs
         items:
         - name: Data management package REST API
@@ -70,6 +68,18 @@
           href: data-entities/recurring-integrations.md
         - name: Test services using third-party utilities
           href: data-entities/third-party-service-test.md
+      - name: Service protection limits
+        items:
+        - name: Service protection API limits
+          href: data-entities/service-protection-api-limits.md
+        - name: Throttling prioritization
+          href: data-entities/priority-based-throttling.md
+        - name: Retry operations
+          href: data-entities/service-protection-retry-operations.md
+        - name: Monitoring for API throttling
+          href: data-entities/service-protection-monitoring.md
+        - name: Maximizing API throughput
+          href: data-entities/service-protection-maximizing-api-throughput.md
       - name: Finance and Operations Connector
         href: data-entities/fin-ops-connector.md
       - name: Development for integration
