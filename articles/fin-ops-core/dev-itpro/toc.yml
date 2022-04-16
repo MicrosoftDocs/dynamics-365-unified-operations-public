@@ -48,8 +48,6 @@
       items:
       - name: Integration between Finance and Operations apps and third-party services
         href: data-entities/integration-overview.md
-      - name: Priority-based throttling
-        hreF: data-entities/priority-based-throttling.md
       - name: Data integration APIs
         items:
         - name: Data management package REST API
