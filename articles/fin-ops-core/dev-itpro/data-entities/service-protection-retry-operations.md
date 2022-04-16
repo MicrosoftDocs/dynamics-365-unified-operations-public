@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Platform update 52
 
 
 ## Implementing retry operations
-The following example shows how to retry a request after a specific number of seconds.
+The following example shows how to retry a request after the number of seconds specified for the Retry-After interval.
 
 ```C#
     if (!response.IsSuccessStatusCode) 
