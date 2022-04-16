@@ -35,8 +35,6 @@ To ensure consistent availability and performance of the Finance and Operations 
 
 The limits should not affect normal users of interactive clients. The limits are designed to impact only client applications that perform extraordinary API requests. The limits provide a level of protection from random and unexpected surges in request volume that threaten the availability and performance of teh Finance and Operations platform.
 
-When client applications make extraordinarily demanding requests, the Finance and Operations service returns an error indicating that too many requests have been made. We follow a common pattern for online services by returning a [429 Too Many Requests response](https://developer.mozilla.org/docs/Web/HTTP/Status/429).
-
 > [!NOTE]
 > Service protection API limits are available only for the Finance and Operations online service, including production and sandbox environments. The protection limits are not available for on-premises or development environments.
 
@@ -87,4 +85,39 @@ While user-based service protection API limits are specified per user per web se
 
 For resource-based service protection API limits, you can define the prioritized order in which integrations are throttled when resource thresholds are reached. See [Throttling prioritization](priority-based-throtting) for more information.
 
+## Service protection API response
+When client applications make extraordinarily demanding requests, the Finance and Operations service returns an error indicating that too many requests have been made. We follow a common pattern for online services by returning a [429 Too Many Requests response](https://developer.mozilla.org/docs/Web/HTTP/Status/429).
 
+With the 429 Too Many Requests response, there is a specific error message returned for each of the service protection API limits. This section describes the error messages and possible mitigation strategies for each.
+
+### Number of requests
+This limit counts the total number of requests during the preceding 300-second period. The following error message is returned with the API response:
+
+```Number of requests exeeded the limit of 6000 over the time window of 300 seconds.```
+
+It is not expected that a typical user of an interactive application will be able to send 1200 requests per minute to exceed this limit unless the application enables users to perform bulk operations. For example, if a list view enables the selection of 250 records at a time and allows a user to perform an operation on all records with a single action, the user would need to perform this operation 24 times in a span of 300 seconds.
+
+If your application provides this capability, you should consider some of the following strategies:
+- Decrease the total number of records that can be selected in a list. If the number of items displayed in a list is reduced to 50, the user would need to perform this operation 120 times within 300 seconds. The user would have to complete teh operation on each list within 2.5 seconds. 
+- Combine the selected operations into a batch. A batch can contain up to 5000 operations and will avoid the number of requests limit. However, you will need to be prepared for the execution time limit.
+
+### Execution time
+This limit tracks the combined execution time of incoming requests during the preceding 300-second period. The following error message is returned with the API response:
+
+```Number of concurrent requests exceeded the limit of 52.```
+
+Client applications are not limited to sending requests individually in succession. The client may apply parallel programming patterns or various methods to send multiple requests simultaneously. If this number of concurrent requests is exceeded, the error is returned with the API response.
+
+Sending concurrent requests can be a key part of a strategy to maximize throughput, but don't overuse this strategy. When using [Parallel Programming in .NET](https://docs.microsoft.com/en-us/dotnet/standard/parallel-programming) the default degree of parallelism depends on the number of CPU cores on the server running the code. It should not exceed 52. The [ParallelOptions.MaxDegreeOfParallelism](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.paralleloptions.maxdegreeofparallelism) property can be set to define a maximum number of concurrent tasks.
+
+## Exceptions to service protection limits
+The service protection API limits do not apply to some Microsoft services. The following services are currently exempt from the limits:
+- [Document Routing Agent (DRA)](../analytics/install-document-routing-agent)
+- [Warehouse Management mobile app (WHSMobile)](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/configure-app-field-names-priorities-warehouse)
+- [Retail Server API](../consume-retail-server-api)
+- [Office Integration](../office-integration/office-integration)
+- [Data Import/Export Framework (DIXF)](./data-import-export-job)
+- [Data Integrator](https://docs.microsoft.com/power-platform/admin/data-integrator)
+- [Dual-write](./dual-write/dual-write-overview)
+- [Power Platform virtual tables for Finance and Operations apps](../power-platform/virtual-entities-overview)
+- [Finance and Operations apps Connector](fin-ops-connector)
