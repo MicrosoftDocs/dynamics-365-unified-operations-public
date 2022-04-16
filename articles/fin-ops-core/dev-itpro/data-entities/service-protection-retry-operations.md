@@ -32,3 +32,26 @@ ms.dyn365.ops.version: Platform update 52
 [!include [banner](../includes/banner.md)]
 
 ## Retry-After intervals
+
+
+
+## Implementing retry operations
+The following example shows how to retry a request after a specific number of seconds.
+
+```C#
+    if (!response.IsSuccessStatusCode) 
+            { 
+                if ((int)response.StatusCode == 429) 
+                { 
+                    int seconds = 30; 
+                    //Try to use the Retry-After header value if it is returned. 
+                    if (response.Headers.Contains("Retry-After")) 
+                    { 
+                        seconds = int.Parse(response.Headers.GetValues("Retry-After").FirstOrDefault()); 
+                    } 
+                    Thread.Sleep(TimeSpan.FromSeconds(seconds)); 
+
+                    // Retry sending the request.
+                } 
+            } 
+```
