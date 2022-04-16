@@ -30,3 +30,5 @@ ms.dyn365.ops.version: Platform update 52
 # Service protection API limits
 
 [!include [banner](../includes/banner.md)]
+
+## Retry-After intervals
