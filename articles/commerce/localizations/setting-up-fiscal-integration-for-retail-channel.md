@@ -285,5 +285,18 @@ To enable manual execution of a postponed fiscal registration, you should add a 
     1. Add a new button, and set the **Complete fiscal registration process** button property.
     1. On the **Distribution schedule** page, run the **1090** job to transfer your changes to the channel database.
 
+## View connection parameters and other information on the POS
 
+- Open MPOS or CPOS
+- Click on the Settings Button
+- Scroll the screen to the right
+- If the fiscal integration is enabled, you can see Fiscal Integration section on the right. In this section you can see:
+    - Status of fiscal registration
+    - State of the last fiscal transaction
+    - Number of Pending Audit events
+- Click to the Details button to view
+    - Registration process steps
+    - Connection parameters
+    - Audit events details
+    - 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
