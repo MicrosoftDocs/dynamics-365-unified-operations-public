@@ -2,7 +2,7 @@
 title: Try out scale units in a distributed hybrid topology
 description: This topic provides information about how to try out the cloud and edge scale units for manufacturing and warehouse management workloads.
 author: perlynne
-ms.date: 03/03/2022
+ms.date: 04/18/2022
 ms.topic: article
 ms.search.form: ScaleUnitWorkloadsWorkspace
 audience: Application User
