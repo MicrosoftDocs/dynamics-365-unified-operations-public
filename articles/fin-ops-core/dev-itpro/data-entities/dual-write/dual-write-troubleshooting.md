@@ -162,9 +162,9 @@ are not listed, validate that the entities appear in your Finance and Operations
 #### If the refresh fails to resolve the issue, delete and re-add the entities
 
 > [!NOTE]
-> You may need to stop any processing groups that are actively using the entity before deletion.
+> You may need to stop any processing groups that are actively using the entities before deletion.
 
-1.	Select **Data management** in Finance and Operations and select **Data entities**.
+1.	Select **Data management** in your Finance and Operations environment and select **Data entities**.
 2.	Search for entities having issues, and make a note of the target entity, staging table, entity name, and other settings. Delete the entity or entities from the list.
 3.	Select **New** and re-add the entity or entities using the data from step 2. 
 
