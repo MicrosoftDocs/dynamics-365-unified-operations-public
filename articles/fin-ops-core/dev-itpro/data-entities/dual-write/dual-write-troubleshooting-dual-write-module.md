@@ -2,7 +2,7 @@
 title: Troubleshoot dual-write issues in Finance and Operations apps
 description: This topic provides troubleshooting information that can help you fix issues with the Dual-write module in Finance and Operations apps.
 author: RamaKrishnamoorthy 
-ms.date: 04/12/2022
+ms.date: 04/18/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
@@ -71,7 +71,7 @@ To fix the issue, create a ticket for the Data Integration team. Attach the netw
 
 ## Enable parallel processing in Finance and Operations apps to improve performance
 
-Enabling parallel processing can reduce the time needed to import data during  from Dynamics 365 customer engagement apps and Microsoft Dataverse to Finance and Operations apps. 
+Enabling parallel processing can reduce the time needed to import data during from Dynamics 365 customer engagement apps and Microsoft Dataverse to Finance and Operations apps. 
 
 To enable parallel processing in Finance and Operations apps, complete the following steps.
 
