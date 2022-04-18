@@ -4,7 +4,7 @@
 title: What's new or changed in Dynamics 365 Commerce 10.0.25 (April 2022)
 description: This topic describes features that are either new or changed in Dynamics 365 Commerce 10.0.25. 
 author: josaw1
-ms.date: 02/08/2021
+ms.date: 04/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -45,7 +45,7 @@ The following table lists the features that are included in this release. The *F
 
 | Feature area   | Feature                                                  | More information                                          |  Enabled by             |
 |----------------|----------------------------------------------------------|-----------------------------------------------------------|-------------------------|
-| POS | [Store Commerce app]((../dev-itpro/store-commerce.md)) | The Store Commerce app in Dynamics 365 Commerce is the next-generation offering for physical stores. It unifies Modern Point of Sale (MPOS) and Cloud Point of Sale (CPOS) into a single application, provides deployment choices to retailers, helps improve performance, and offers superior application lifecycle management (ALM). At the same, it retains all the functionality of MPOS and CPOS, including extensibility. |Opt-in | 
+| POS | [Store Commerce app](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/store-commerce-app-chromium-rendering-engine-integrated-hardware-support) | The Store Commerce app in Commerce is the next-generation offering for physical stores. It unifies Modern Point of Sale (MPOS) and Cloud Point of Sale (CPOS) into a single application, provides deployment choices to retailers, helps improve performance, and offers superior application lifecycle management (ALM). It also retains all the functionality of MPOS and CPOS, including extensibility. See [Store Commerce app](../dev-itpro/store-commerce.md). |Opt-in | 
 | POS  | [Support additional filter options in POS inventory operations](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/additional-filter-options-pos-inventory-operations) |  This feature provides support for additional filter options that are commonly requested across POS inventory operations, thereby eliminating the need for unnecessary extensions and significantly improving the efficiency of the store inventory operation. | Feature management<p>*Additional filter options in POS inventory operations* |
 | B2B | Mock a signed-in B2B user | [Mock the signed-in state during local development](../e-commerce-extensibility/mock-sign-in.md) | Developer opt-in | 
 | E-commerce | [Integration with Sitecore Content Hub](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/integration-sitecore-content-hub) | A data connector will automatically push the Dynamics 365 Commerce product and category data into your Sitecore Content Hub instance allowing additional digital asset management and product enrichment options for your Commerce channels. | Site builder |
