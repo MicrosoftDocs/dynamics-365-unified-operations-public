@@ -4,7 +4,7 @@
 title: Service update availability
 description: This topic provides information about the different release options.
 author: ShellyBakke
-ms.date: 01/06/2022
+ms.date: 04/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
