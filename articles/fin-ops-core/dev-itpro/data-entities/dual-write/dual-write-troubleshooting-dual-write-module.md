@@ -71,7 +71,7 @@ To fix the issue, create a ticket for the Data Integration team. Attach the netw
 
 ## Enable parallel processing in Finance and Operations apps to improve performance
 
-Enabling parallel processing can reduce the time needed to import data during from Dynamics 365 customer engagement apps and Microsoft Dataverse to Finance and Operations apps. 
+Enabling parallel processing can reduce the time needed to import data from Dynamics 365 customer engagement apps and Microsoft Dataverse to Finance and Operations apps. 
 
 To enable parallel processing in Finance and Operations apps, complete the following steps.
 
