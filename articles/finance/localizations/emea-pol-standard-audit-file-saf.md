@@ -4,7 +4,7 @@
 title: Standard audit file (SAF) for Poland
 description: Users in legal entities in Poland can generate a Standard Audit File for Tax (SAF-T) in XML format. This topic provides information about the formats for Poland. 
 author: LizaGolub
-ms.date: 02/05/2021
+ms.date: 04/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -735,10 +735,10 @@ To correctly report some of the important tags in the report, define the applica
 
     | Name            | Short description (English) | Short description (Polish) | Description (English) | Description (Polish) |
     |-----------------|-----------------------|-----------------------|-----------------|-----------------|
-    | [TaxFree_LOOKUP](#tax-free-lookup) | Tax-free | Tax free | Non-taxable transactions for the supply of goods and services outside the country, exempt from taxation. | Niepodlegające opodatkowaniu-transakcje dostawy towarów oraz świadczenia usług poza terytorium kraju; zwolnione z opodatkowania. |
+    | [TaxFree_LOOKUP](#tax-free-lookup) | Tax-free | Tax free | Non-taxable transactions for the supply of goods and services outside the country. These transactions are exempt from taxation. | Niepodlegające opodatkowaniu-transakcje dostawy towarów oraz świadczenia usług poza terytorium kraju; zwolnione z opodatkowania. |
     | [TaxExemptReason_LOOKUP](#tax-exempt-lookup) | Tax-exempt reason | Przyczyna lub podstawa zwolnienia z podatku lub jego zmniejszenia | When the delivery of goods or the provision of services are exempt from tax in accordance with article 43, paragraph 1; article 113, sections 1 and 9; or provisions that are issued on the basis of article 82, paragraph 3. | W przypadku dostawy towarów lub świadczenia usług zwolnionych od podatku na podstawie art. 43 ust. 1, art. 113 ust. 1 i 9 albo przepisów wydanych na podstawie art. 82 ust. 3. |
     | [ItemType_LOOKUP](#item-type-lookup) | Type of item | Rodzaj przedmiotu | Delivery of second-hand goods, works of art, collector's items, and antiques for which the tax base is constituted in accordance with article 120, paragraph four, margin five. New means of transport are the subject of intra-community supply. | Dostawy towarów używanych, dzieł sztuki, przedmiotów kolekcjonerskich i antyków, dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 i 5 marża; W przypadku gdy przedmiotem wewnątrzwspólnotowej dostawy są nowe środki transportu. |
-    | [SpecialProcedures_LOOKUP](#special-procedures-lookup) | Special procedures referred to in section XII | Procedury specjalne, o których mowa w sekcji XII | Case of special procedures referred to in section XII in chapters 6a, 7 and 9 of the VAT Act. | Stawka podatku od wartości dodanej w przypadku procedur szczególnych, o których mowa w dziale XII w rozdziałach 6a, 7 i 9 ustawy VAT |
+    | [SpecialProcedures_LOOKUP](#special-procedures-lookup) | Special procedures referred to in section XII | Procedury specjalne, o których mowa w sekcji XII | A case of special procedures referred to in section XII in chapters 6a, 7, and 9 of the VAT Act. | Stawka podatku od wartości dodanej w przypadku procedur szczególnych, o których mowa w dziale XII w rozdziałach 6a, 7 i 9 ustawy VAT |
     
 #### <a id="tax-free-lookup"></a>TaxFree_LOOKUP
 
@@ -791,13 +791,13 @@ If any lookup field doesn't have at least one **Not blank** value, an error will
 
 #### <a id="special-procedures-lookup"></a>SpecialProcedures_LOOKUP
 
-Conditions for **SpecialProcedures_LOOKUP** are sales tax codes that are defined in Finance (**Tax** \> **Setup** \> **Sales tax** \> **Sales tax codes**) and then used when tax transactions are posted. This lookup setup affects the reporting of **FakturaWiersz \> P_12_XII** and **Zamowienie \> P_12Z_XII** elements.
+Conditions for **SpecialProcedures_LOOKUP** are sales tax codes that are defined in Finance by going to **Tax** > **Setup** > **Sales tax** > **Sales tax codes**. The codes are then used when tax transactions are posted. This lookup setup affects the reporting of **FakturaWiersz \> P_12_XII** and **Zamowienie \> P_12Z_XII** elements.
 
 The following values are available for setup of **SpecialProcedures_LOOKUP**.
 
 | Name | Description (English) | Description (Polish) | Setup |
 |------|------------------|------------------|-------|
-| SpecialProc (XII) | Special procedures referred to in section XII | Procedury specjalne, o których mowa w sekcji XII | Specify the sales tax codes that are used for transactions that are related to special procedures referred to in section XII in chapters 6a, 7 and 9 of the VAT Act. After this setup is completed, an invoice that has tax transactions that use the specified tax code will be reported with a tax rate in **\<P_12_XII\>** and **\<P_12Z_XII\>** fields of the report. |
+| SpecialProc (XII) | Special procedures referred to in section XII | Procedury specjalne, o których mowa w sekcji XII | Specify the sales tax codes that are used for transactions that are related to the special procedures referred to in section XII in chapters 6a, 7, and 9 of the VAT Act. After this setup is complete, an invoice that has tax transactions that use the specified tax code is reported with a tax rate in the **\<P_12_XII\>** and **\<P_12Z_XII\>** fields of the report. |
 | Other | Other | Inne | Specify **Not blank** in the **Tax code** field. This value must be the last in the list of values. This value must be mandatory for this lookup. |
 
 When you finish configuring the values of the lookup fields, set the **State** field to **Completed**, save your changes, and then close the page. 
@@ -828,7 +828,7 @@ According to the requirements of version 3 of the **JPK_FA** report, when an inv
 
 #### <P_18A> tag
 
-According to the requirements of the **JPK_FA** report, the **<P_18A>** tag for an invoice must be reported as **True** when the split payment mechanism is applied for that invoice on mandatory basis. To determine whether the split payment mechanism was applied to the invoice, the system checks the **Split payment** and **Voluntary split payment** properties of the customers transactions posted (CustTrans table). Those customers transactions for which the **Split payment** is applied but **Voluntary split payment** property is false will be reported with **True** value in **<P_18A>** tag of the report. Find more information about **Split payment** and **Voluntary split payment** in [KB4584165](https://support.microsoft.com/en-us/topic/a-country-specific-update-for-poland-to-support-split-payments-automation-0441375f-8b0e-24f7-370e-f8dc5d0760ec).
+According to the requirements of the **JPK_FA** report, the **<P_18A>** tag for an invoice must be reported as **True** when the split payment mechanism is applied for that invoice on a mandatory basis. To determine whether the split payment mechanism was applied to the invoice, the system checks the **Split payment** and **Voluntary split payment** properties of the customer's posted transactions (**CustTrans** table). Those transactions for which the **Split payment** is applied but **Voluntary split payment** property is false will be reported with the **True** value in the **<P_18A>** tag of the report. For more information about **Split payment** and **Voluntary split payment**, see [KB4584165](https://support.microsoft.com/topic/a-country-specific-update-for-poland-to-support-split-payments-automation-0441375f-8b0e-24f7-370e-f8dc5d0760ec).
 
 #### <P_22> tag
 
