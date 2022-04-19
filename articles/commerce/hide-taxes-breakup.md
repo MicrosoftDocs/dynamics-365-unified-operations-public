@@ -36,9 +36,9 @@ To hide tax breakup information in order summaries, follow these steps.
 
 1. In Commerce site builder, go to the site that you want to update.
 1. Go to **Site settings \> Extensions**.
-1. Select the **Show taxes breakup in order summary** checkbox.
+1. Clear the **Show taxes breakup in order summary** checkbox.
 
-To show tax breakup information in order summaries, clear the **Show taxes breakup in order summary** checkbox.  
+To show tax breakup information in order summaries, select the **Show taxes breakup in order summary** checkbox.  
 
 The following illustration shows the **Show taxes breakup in order summary** checkbox highlighted and selected in site builder.
 
