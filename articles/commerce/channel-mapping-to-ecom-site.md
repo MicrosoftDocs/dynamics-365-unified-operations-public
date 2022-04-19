@@ -212,7 +212,7 @@ Adding additional channels to an e-commerce site can be done in site builder und
 
 [Set up an online channel](channel-setup-online.md)
 
-[Organizations and organizational hierarchies overview](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies)
+[Organizations and organizational hierarchies overview](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md)
 
 [Set up geo detection and redirection](geo-detection-redirection.md)
 
