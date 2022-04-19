@@ -20,7 +20,7 @@ ms.search.validFrom: 2022-04-22
 
 This topic lists the features that are included in the platform updates for version 10.0.27 of Finance and Operations apps. This version has a build number of 7.0.XXXX and is available on the following schedule:
 
-- **Preview of release:** April 2021
+- **Preview of release:** April 2022
 - **General availability of release (self-update):** May 2022
 - **General availability of release (auto-update):** June 2022
 
