@@ -4,7 +4,7 @@
 title: One Version service updates FAQ
 description: This topic provides clarity on service updates, processes, and tools that you can use to stay current in a consistent, predictable, and seamless manner.
 author: ShellyBakke
-ms.date: 04/18/2022
+ms.date: 04/19/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -34,7 +34,7 @@ For more information about One Version service updates, see [One Version service
 
 
 ### Can the update be delayed, what is the policy?
-Yes, the customer can pause, delay, or opt-out of an update via Update Settings in the Lifecycle Services projects provided that all of their sandboxes and Production environment are no more than three versions behind the latest available update.  A customer can choose to pause up to 3 consecutive updates. The following is an example of a delayed update: 
+Yes, the customer can pause, delay, or opt-out of an update via Update Settings in the Lifecycle Services projects provided that all of their sandboxes and production environment are no more than three versions behind the latest available update.  A customer can choose to pause up to 3 consecutive updates. The following is an example of a delayed update: 
 - The customer is currently on version 10.0.2.
 - The customer can pause updates 10.0.3, 10.0.4, and 10.0.5.
 - The customer must take the 10.0.6 update when it is available.
