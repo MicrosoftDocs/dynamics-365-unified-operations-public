@@ -4,7 +4,7 @@
 title: Pause service updates through Lifecycle Services (LCS)
 description: This topic explains how to pause service updates to your environments.
 author: angelmarshall
-ms.date: 10/18/2021
+ms.date: 04/19/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -45,7 +45,9 @@ Only users (customers or partners) who are assigned to the **project owner** rol
 
 Staying current with service updates helps guarantee that customers always run on the latest set of fixes that Microsoft has released, so that they have the best service experience. Therefore, Microsoft doesn't allow updates to be paused indefinitely.
 
-You can't use LCS to pause updates if you're three or more updates behind the latest update that Microsoft has released. For example, if the latest update that Microsoft has released is version 10.0.0, customers who are on version 8.1.3, version 8.1.2, and version 8.1.1 **can** pause updates. However, customers who are on version 8.1.0 **can't** pause updates, because they are more than three updates behind. Customers who are on version 7.3 can get only platform updates. For example, if the last platform update that Microsoft has released is Platform update 25, customers who are on Platform update 24, Platform update 23, and Platform update 22 **can** pause updates. However, customers who are on Platform update 21 **can't** pause updates.
+You can't use LCS to pause updates if you're three or more updates behind the latest update that Microsoft has released.  This includes all Sandbox and Production environments in your project.  For example, if the latest update that Microsoft has released is version 10.0.25, customers who are on version 10.0.22, version 10.0.23, and version 10.0.24 **can** pause updates. However, customers who are on version 10.0.21 **can't** pause updates, because they are more than three updates behind. If any Sandbox or Production environment is too far behind,  you will see the following error message when trying to pause via LCS: *"One or more Sandbox and/or Production environments are not compliant with Microsoft’s service update policy. All your environments need to be compliant before you can pause updates."* 
+
+Customers who are on version 7.3 can get only platform updates. For example, if the last platform update that Microsoft has released is Platform update 25, customers who are on Platform update 24, Platform update 23, and Platform update 22 **can** pause updates. However, customers who are on Platform update 21 **can't** pause updates.
 
 ## What can I pause?
 
