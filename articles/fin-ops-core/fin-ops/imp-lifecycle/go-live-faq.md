@@ -3,8 +3,8 @@
 
 title: Go-live for implementation projects FAQ
 description: This topic lists frequently asked questions about how to go live with an implementation project.
-author: sshashi7
-ms.date: 02/09/2022
+author: OlgaPetrovaFT
+ms.date: 04/19/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -14,12 +14,12 @@ ms.technology:
 # ms.search.form:  
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: sericks
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sshashi
+ms.author: olpetrov
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
 
@@ -33,28 +33,28 @@ This topic lists frequently asked questions about how to go live with an impleme
 
 ## When can I configure and request my production environment?
 
-Typically production environment is deployed after all customizations are code-complete, user acceptance testing (UAT) is completed, customer has signed off on the solution, there are no blocking issues for go-live and **Go-live Readiness review** is successfully completed with Microsoft (to understand the process please see [Prepare for go-live](prepare-go-live.md). 
+Typically, a production environment is deployed after all customizations are code-complete, user acceptance testing (UAT) is completed, customer has signed off on the solution, there are no blocking issues for go-live, and a **Go-live Readiness Review** is successfully completed with Microsoft. To understand the process, see [Prepare for go-live](prepare-go-live.md). 
 
-Production environment can be used exclusively for running your business operations and should not be used for testing or training purposes. You will be able to perform the cutover, and if planned, to mock the cutover in production. To test the solution you must use a Sandbox environment, which is designed with the necessary elemants and services for testing.
+A production environment can be used exclusively for running your business operations and should not be used for testing or training purposes. You will be able to perform the cutover, and if planned, to mock the cutover in production. To test the solution you must use a sandbox environment, which is designed with the necessary elements and services for testing.
 
 ## What are the prerequisites to deploy a production environment?
 
-For a list of prerequisites see [Prepare for go-live](prepare-go-live.md).
+For a list of prerequisites, see [Prepare for go-live](prepare-go-live.md).
 
-## What is a Go-live Readiness review and why is it required?
+## What is a Go-live Readiness Review and why is it required?
 
-The Go-live Readiness review is aimed to assess project readiness and help you have a smooth and successful Go-live. To understand the process please see [Prepare for go-live](prepare-go-live.md). 
+The Go-live Readiness Review is aimed to assess project readiness and help you have a smooth and successful go-live. To understand the process, see [Prepare for go-live](prepare-go-live.md). 
 
-This review is mandatory for every implementation project before you can deploy Production environment.
+This review is mandatory for every implementation project before you can deploy a production environment.
 
-## I want to request my production environment. Who do I contact for a Go-live Readiness review?
-Please follow the guidance in this article to understand the process how to initiate the Go-live Readiness review [Prepare for go-live](prepare-go-live.md).
+## I want to request my production environment. Who do I contact for a Go-live Readiness Review?
+Please follow the guidance in this article to understand how to initiate the Go-live Readiness Review.  For more information, see [Prepare for go-live](prepare-go-live.md).
 
 ## The Production button isn't available in LCS. How do I request my production environment?
 
-The **Production** button in LCS is available only after you've completed the **Analysis**, **Design & develop**, and **Test** phases of the LCS implementation methodology and **Go-live Readiness review** is completed with Microsoft (to understand the process please see [Prepare for go-live](prepare-go-live.md)).
+The **Production** button in LCS is available only after you've completed the **Analysis**, **Design & develop**, and **Test** phases of the LCS implementation methodology and a **Go-live Readiness Review** is completed with Microsoft. For more information, see [Prepare for go-live](prepare-go-live.md).
 
-For more information about how to complete methodology phases in LCS see [Lifecycle Services (LCS) for Finance and Operations apps customers](../../dev-itpro/lifecycle-services/lcs-works-lcs.md).
+For more information about how to complete methodology phases in LCS, see [Lifecycle Services (LCS) for Finance and Operations apps customers](../../dev-itpro/lifecycle-services/lcs-works-lcs.md).
 
 ## My sandbox environment is currently on an update that is set to expire in two months. Can I request a production environment that has the latest update?
 
@@ -77,11 +77,11 @@ Your production environment will be sized based on the current user license coun
 
 ## I submitted the request for a production environment, but I made a mistake. Can I still change it?
 
-Please log a Support ticket to address the issue.
+Please log a support ticket to address the issue.
 
 ## How long does it take to deploy my production environment?
 
-After Go-live Readiness review with Microsoft is complete Production environmnet slot in LCS is enabled and project team (customer/partner) can trigger environment deployment. Deployment process takes approximately 30 minutes.
+After the Go-live Readiness Review with Microsoft is complete, a production environmnet slot in LCS is enabled and the project team (customer/partner) can trigger the environment deployment. The deployment process takes approximately 30 minutes.
 
 ## What level of access do I have in my production environment? Can I sign in to the VM?
 
