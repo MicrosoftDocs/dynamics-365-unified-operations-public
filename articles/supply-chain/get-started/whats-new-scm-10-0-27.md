@@ -2,14 +2,14 @@
 title: Preview of Dynamics 365 Supply Chain Management 10.0.27 (June 2022)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.27. 
 author: kamaybac
-ms.date: 04/01/2022
+ms.date: 04/22/2022
 ms.topic: article
 # ms.search.form: [Operations AOT form name to tie this topic to]
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: kamaybac
-ms.search.validFrom: 2021-04-01
+ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.27
 ---
 
@@ -42,7 +42,7 @@ If you want to turn any of these features on or off, you must do that in [featur
 
 | Module | Feature name in feature management | More information |
 |---|---|---|
-| Master planning | Consider inventory lead time when creating a planned transfer order | When a planned transfer order is created, this feature causes the system to consider the inventory lead time specified in the item's default order settings when calculating the receipt date of the planned transfer order for delivery date control setup as *None* or *Sales* lead time. When transfer lead time is specified, its value will be taken for the receipt date calculation and transport days will be disregarded. <!-- KFM: This description isn't clear. --> |
+| Master planning | Consider inventory lead time when creating a planned transfer order | When a planned transfer order is created, this feature causes the system to consider the inventory lead time specified in the item's default order settings when calculating the receipt date of the planned transfer order for delivery date control setup as *None* or *Sales* lead time. When transfer lead time is specified, its value will be taken for the receipt date calculation and transport days will be disregarded. |
 | Procurement and sourcing | Default broker contract tax information on vendor invoice lines | This feature introduces logic to set default values for the **Sales tax** and **Item sales tax** fields in broker contract vendor invoice lines. This logic is only applied when the charge type on the broker contract line is ledger/ledger. The item sales tax group will take its default value from the brokerage procurement category (if set up) or from the charge type. The sales tax group will take its default value from the vendor account. |
 | Procurement and sourcing | Limit the number of purchase order lines per batch task | This feature helps you to optimize system performance when posting confirmations and product receipts. It adds a new setting called **Lines per task** to the **Delivery** tab of the **Procurement and sourcing parameters** page. The new setting lets you limit the number of purchase order lines processed by each batch task, which helps prevent large batch tasks from slowing down the system. |
 | Product information management | Populate product attribute values | This feature adds a periodic task called *Populate product attribute values*, which creates missing product attribute value records for attributes associated with products via a product category. |
