@@ -37,7 +37,7 @@ CRT contains the core business logic. If you want to add or modify any business 
 
 Every CRT service consists of a group of one or more requests and responses. POS sends a request to Retail Server, and Retail Server calls CRT. CRT then processes the request and sends back the response.
 
-For example, the Product service in CRT contains all the product-related requests and responses, each of which is run in a different flow. Likewise, the Customer service in CRT contain all the customer-related requests and responses. The following table shows the requests in the Customer service.
+For example, the Product service in CRT contains all the product-related requests and responses, each of which is run in a different flow. Likewise, the Customer service in CRT contains all the customer-related requests and responses. The following table shows the requests in the Customer service.
 
 | Request                                      | Purpose                                                                          |
 |----------------------------------------------|----------------------------------------------------------------------------------|
@@ -89,7 +89,7 @@ For example, you can search for a **Product** using the out-of-box Azure Search 
 
 ### NotHandledResponse
 
-If in the the overridden handler, you want to run the base handler and return the base response instead of custom logic, then return **NotHandledResponse()**. If **NotHandledResponse** is returned, the CRT framework will run the out-of-box handler. **NotHandledResponse** can be used in scenarios where you want to run custom logic only on certain conditions (otherwise, run the base handler logic).
+If in the overridden handler, you want to run the base handler and return the base response instead of custom logic, then return **NotHandledResponse()**. If **NotHandledResponse** is returned, the CRT framework will run the out-of-box handler. **NotHandledResponse** can be used in scenarios where you want to run custom logic only on certain conditions (otherwise, run the base handler logic).
 
 ### CRT data service and data service with entities
 
@@ -128,7 +128,7 @@ For details about the attributes, see the following topics:
 
 ### Extend Commerce Data Exchange - Real-time Service classes
 
-You can do synchronous call from CRT to Commerce headquarters.
+You can do synchronous calls from CRT to Commerce headquarters.
 
 For information about how to extend Commerce Data Exchange - Real-time service, see [Extend Commerce Data Exchange - Real-time Service](extend-commerce-data-exchange.md).
 
