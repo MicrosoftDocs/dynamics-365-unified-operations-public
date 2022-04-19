@@ -1,13 +1,13 @@
 ---
 title: What's new or changed in dual-write
 description: This topic provides links to the release plans, major announcements, and documentation for dual-write.
-author: tonyafehr
-ms.date: 04/11/2022
+author: NHelgren
+ms.date: 04/19/2022
 ms.topic: article
 audience: Developer, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: Global
-ms.author: tfehr
+ms.author: nhelgren
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.8
 ---
@@ -20,13 +20,13 @@ Dual-write is an out-of-box infrastructure that provides near-real-time interact
 
 ## April 2022 release
 
-The April 2022 release of the Dual-write Core solution 1.0.34.0 contains the following changes.
+The April 2022 release of the dual-write core solution 1.0.34.0 contains the following changes.
 
 | Feature | Description | Status |
 |---|---|---|
-| Security Compliance | Updates dependency packages to use signed versions. | General availability |
+| Security compliance | Updates dependency packages to use signed versions. | General availability |
 | Alerts | Simplifies exception handling for alerts. | General availability |
-| Bug Fix | Provides appropriate handling of rare scenario where Dual-write runtime configuration is missing. |  General availability |
+| Bug fix | Provides appropriate handling of a rare scenario where dual-write runtime configuration is missing. |  General availability |
 
 The April 2022 release of the [Dual-write Supply Chain solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwscm) contains the following changes.
 
