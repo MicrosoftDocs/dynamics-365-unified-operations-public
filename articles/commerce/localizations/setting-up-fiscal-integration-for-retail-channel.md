@@ -28,8 +28,8 @@ To enable features related to fiscal integration functionality for Commerce chan
 1. Find and enable the following features: 
     - **Direct fiscal integration from POS registers** - The feature extends the fiscal integration framework by adding a capability to create fiscal connectors that will be executed in POS. This type of connector communicates with a fiscal device or service that provides an HTTP API and doesn't require a dedicated physical machine in the store to be plugged in or deployed on. For example, this functionality enables fiscal integration for mobile devices with no shared hardware station required.
     - **Fiscal integration technical profile overrides** - This feature allows expanding the configuration of fiscal integration and enables the capability to check connection parameters in the settings page of a POS register. When this feature is enabled, you can override the parameters of a technical profile.
-    - **Fiscal Registration State of POS Registers** - When this feature is enabled, you can disable fiscal registration process for specific POS registers. If fiscal registration is disabled for a POS register, it's not possible to complete sales transactions on the register.
-    - **Fiscal integration local storage backup** - This feature extends the error handling capabilities of the fiscal integration framework. It also enables automatic backup of fiscal registration data to restore the data in local storage while activating a device in case of data loss.
+    - **Fiscal Registration State of POS Registers** - When this feature is enabled, you can disable the fiscal registration process for specific POS registers. If fiscal registration is disabled for a POS register, it's not possible to complete sales transactions on the register.
+    - **Fiscal integration local storage backup** - This feature extends the error handling capabilities of the fiscal integration framework. It also enables automatic backup of fiscal registration data in case of data loss to restore the data in local storage while activating a device.
 
 ## Set up Commerce parameters
 
@@ -291,12 +291,12 @@ To enable manual execution of a postponed fiscal registration, you should add a 
     1. Add a new button, and set the **Complete fiscal registration process** button property.
     1. On the **Distribution schedule** page, run the **1090** job to transfer your changes to the channel database.
 
-## View connection parameters and other information on the POS
+## View connection parameters and other information in POS
 
-To view connection parameters and other information on the POS, follow these steps.
+To view connection parameters and other information in POS, follow these steps.
 
-1. Open MPOS or CPOS.
-1. Select **Settings**. If fiscal integration is enabled, in the **Fiscal Integration** section on the right of the screen you will be to view the following:
+1. Open Modern POS (MPOS) or Cloud POS (CPOS).
+1. Select **Settings**. If fiscal integration is enabled, in the **Fiscal Integration** section on the right of the screen you will be able to view the following:
     - Status of fiscal registration.
     - State of the last fiscal transaction.
     - Number of pending audit events.
