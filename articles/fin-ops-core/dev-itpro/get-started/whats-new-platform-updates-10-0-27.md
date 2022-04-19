@@ -30,11 +30,8 @@ The following table lists the features that are included in this release.
 
 | Feature area    | Feature | More information | Enabled by |
 |-----------------|---------|------------------|---------------------------|
-| Web client  | [Optimize loading of Action center notifications](https://docs.microsoft.com/en-us/dynamics365-release-plan/2022wave1/finance-operations/finance-operations-crossapp-capabilities/optimize-loading-action-center-notifications)  |  |  [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md)  |
-| Web client  | <p>**(Preview) Standardize keyboard interaction for combo box and lookup controls**</p><p>This preview feature currently includes a targeted adjustment to the keyboard interaction for combo box and lookup controls to more closely align them with other Dynamics products. Specifically, the behavior of the Enter key has been modified so that it opens the dropdown when these controls are editable, making it easier for users to get to the list of available values. Pressing Enter when the dropdown is open will continue to select the current value and close the dropdown.</p>  |  | [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md)   |
-
-
-| Feature area  | [Name of feature](URL to feature description in the Release Plans)  | [Topic name](URL to topic with more information in core documentation)  | How do you turn this feature on? If you turn it on in Feature management, say: [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md)   |
+| Web client  | [Optimize loading of Action center notifications](/dynamics365-release-plan/2022wave1/finance-operations/finance-operations-crossapp-capabilities/optimize-loading-action-center-notifications)  |  |  [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md)  |
+| Web client  | <p>**(Preview) Standardize keyboard interaction for combo box and lookup controls**</p><p>This preview feature currently includes a targeted adjustment to keyboard interaction for combo box and lookup controls to more closely align them with other Dynamics 365 products. Specifically, the behavior of the **Enter** key has been modified so that it opens a drop-down list when these controls are editable, making it easier for users to get to the list of available values. Pressing **Enter** when the drop-down list is open will continue to select the current value and close the drop-down list.</p>  |  | [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md)   |
 
 ### Bug fixes
 
