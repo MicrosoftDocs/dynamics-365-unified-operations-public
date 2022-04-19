@@ -91,14 +91,14 @@ The **Credit and collections** module has new credit management capabilities. To
 
 Regardless of whether the **Credit management** feature is enabled, if a customer balance goes over the credit limit during order fulfillment, the sales orders won't go on hold. Instead, Commerce will generate either a warning message or an error message, depending on the value of the **Message when exceeding credit limit** field on the **Credit limits** FastTab.
 
-The **Exclude from credit management** property that prevents Commerce sales orders from going on hold is located on the sales order header (**Retail and commerce \> Customers \> All sales orders**). If this property is set to **Yes** (the default value) for Commerce sales orders, the orders will be excluded from the on hold workflow of credit management. Note that, although the property is named **Exclude from credit management**, the defined credit limit will still be used during order fulfillment. The orders just won't go on hold.
+The **Exclude from credit management** property that prevents Commerce sales orders from going on hold is located on the sales order header (**Retail and commerce \> Customers \> All sales orders**). If this property is set to **Yes** (the default value) for Commerce sales orders, the orders will be excluded from the on hold workflow of credit management. Although the property is named **Exclude from credit management**, the defined credit limit will still be used during order fulfillment. The orders just won't go on hold.
 
 The capability to put Commerce sales orders on hold based on blocking rules is planned for future Commerce releases. Until it's supported, if you must force Commerce sales orders to go through the new credit management flows, you can customize the following XML files in your Visual Studio solution. In the files, modify the logic so that the **CredManExcludeSalesOrder** flag is set to **No**. In this way, the **Exclude from credit management** property will be set to **No** by default for Commerce sales orders.
 
 - RetailCreateCustomerOrderExtensions_CredMan_Extension.xml
 - RetailCallCenterOrderExtensions_CredMan_Extension.xml
 
-Note that, if the **CredManExcludeSalesOrder** flag is set to **No**, and a B2B customer can purchase from stores by using the point of sale (POS) application, the posting of cash and carry transactions might fail. For example, there is a blocking rule on the cash payment type, and the B2B customer bought some items in the store by using cash. In this case, the resulting sales order won't be successfully invoiced because it will go on hold. Therefore, the posting will fail. For this reason, we recommend that you do end-to-end testing after you implement this customization.
+If the **CredManExcludeSalesOrder** flag is set to **No**, and a B2B customer can purchase from stores by using the point of sale (POS) application, the posting of cash and carry transactions might fail. For example, there's a blocking rule on the cash payment type, and the B2B customer bought some items in the store by using cash. In this case, the resulting sales order won't be successfully invoiced because it will go on hold. Therefore, the posting will fail. For this reason, we recommend that you do end-to-end testing after you implement this customization.
 
 ## Additional resources
 
