@@ -1,14 +1,14 @@
 ---
 title: Customize step titles and instructions for the Warehouse Management mobile app
 description: This topic describes how to create and show custom instructions for each step of each task flow that you set up for the Warehouse Management mobile app.
-author: MarkusFogelberg
+author: Mirzaab
 ms.date: 08/11/2021
 ms.topic: article
 ms.search.form:
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: mafoge
+ms.author: mirzaab
 ms.search.validFrom: 2021-08-11
 ms.dyn365.ops.version: 10.0.21
 ---

@@ -2,9 +2,9 @@
 # required metadata
 
 title: Set up the components of a job
-description: This article describes the conceptual elements that a job can include and provides examples of how you can use those elements in your organization. 
-author: andreabichsel
-ms.date: 06/24/2021
+description: This topic describes the conceptual elements that a job can include and provides examples of how you can use those elements in your organization. 
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.search.form: HcmJob, HcmJobFunction, HcmJobTask, HcmTitle, HcmPersonnelManage
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 269054
@@ -29,9 +29,12 @@ ms.dyn365.ops.version: Version 1611
 
 # Set up the components of a job
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This article describes the conceptual elements that a job can include and provides examples of how you can use those elements in your organization. 
+This topic describes the conceptual elements that a job can include and provides examples of how you can use those elements in your organization. 
 
 Before you can create jobs, you must set up some reference information. You can create a job that has only a name. However, by including additional information, such as a job title, you provide default values for the positions that are assigned to the job. Additionally, some of the information that you enter can be used to filter compensation plans to specific jobs. If you want to set up eligibility that you can use to filter compensation plans to a specific job, you should set up job functions and job types before you set up jobs. By having these default values available, you will save time when you add positions to the job. 
 
@@ -65,7 +68,7 @@ Job junctions describe high-level functional categories and relate high-level du
 You maintain job functions by using the **Job functions** page. On the **Job functions** page, enter an identification code and a brief description for the job function.
 
 ## Compensation
-To assign a fixed compensation plan to an employee who has a position in a job, you must set compensation levels on the job. The compensation level is used when minimum, midpoint, and maximum amounts are set in a compensation structure (compensation grid). When a fixed compensation plan is created, the compensation structure is selected. The compensation structure also includes the compensation level. When you're selecting a fixed compensation plan for an employee, the compensation levels that are available for selection depend on the job that the employee's position is associated with. For more information about how to set up compensation, see [Compensation plans](hr-compensation-overview.md).
+To assign a fixed compensation plan to an employee who has a position in a job, you must set compensation levels on the job. The **Compensation level** is used when minimum, midpoint, and maximum amounts are set in a compensation structure (compensation grid). When a fixed compensation plan is created, the compensation structure is selected. The compensation structure also includes the compensation level. When you're selecting a fixed compensation plan for an employee, the compensation levels that are available for selection depend on the job that the employee's position is associated with. For more information about how to set up compensation, see [Compensation plans](hr-compensation-overview.md).
 
 ## Job skills
 Job skills describe the skills that are required to perform a job. A skill level must be associated with every job skill. The skill levels are user-defined. They indicate the level of knowledge or proficiency that is required for the skill. For example, companies might set up numeric levels, such as 1 through 5, where **1** indicates a beginner and **5** indicates an expert. Alternatively, companies might set up levels that are labeled **Beginner**, **Intermediate**, or **Expert**. After the skill level is set, the importance of the skill can also be set. For example, if an accountant is required to have a strong knowledge of Microsoft Excel, a skill that is named **Excel knowledge** can be created. The skill level can then be set to **Intermediate**, and the importance can be set to **Most**.

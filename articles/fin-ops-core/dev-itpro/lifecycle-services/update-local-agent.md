@@ -4,10 +4,11 @@
 title: Update the local agent
 description: This topic explains how to update the local agent.
 author: faix
-ms.date: 10/19/2021
+ms.date: 02/22/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.prod: dynamics-365
+ms.service:
+ms.technology:
 
 # optional metadata
 
@@ -30,10 +31,14 @@ ms.dyn365.ops.version: 7.3
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to update the local agent. The latest version of the local agent is version 2.7.2, which was released in October 2021.
+This topic explains how to update the local agent. The latest version of the local agent is version 3.0.0, which was released in November 2021.
+
+> [!IMPORTANT]
+> Do not update the local agent during a servicing operation, even if the preparation phase has completed. 
 
 | Local agent version | Capability | 
 |---------------------|------------|
+| 3.0.0               | This version includes support for Edge Scale Unit Application Lifecycle Management. |
 | 2.7.2               | This version includes a fix for deploying older application versions. | 
 | 2.7.1               | This version introduces a new deployment option and fixes a bug with a deployment option. |
 | 2.7.0               | Enables deploying or updating to 10.0.21 and later versions. Additionally, this version enables deploying on environments with Microsoft SQL Server 2019 and some bug fixes. |
@@ -50,6 +55,11 @@ This topic explains how to update the local agent. The latest version of the loc
 | 1.1.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md)  for successful deployments, enables multi-model package deployments, and deploys Platform update 8 and 11. | 
 | 1.0.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md) for failed deployments. |
 | Null                | This initial version deploys Platform update 8. |
+
+## What's new in local agent 3.0.0
+
+- Local agent 3.0.0 includes support for managing the lifecycle of Edge Scale Units through the Scale Unit Management portal. For more information, see [Distributed Hybrid Topology](../../../supply-chain/cloud-edge/cloud-edge-landing-page.md).
+- This release requires the .NET Framework version 4.8 to uptake the newest changes from LCS.
 
 ## What's new in local agent 2.7.2
 
@@ -87,7 +97,7 @@ This topic explains how to update the local agent. The latest version of the loc
 
 ## What's new in local agent 2.4.0
 
-- Local agent 2.4.0 now requires .NET Framework 4.8 to uptake the newest changes from LCS. Be sure to run the latest Infrastructure Scripts available in LCS to meet the newest requirements.
+- Local agent 2.4.0 now requires the .NET Framework version 4.7.2 to uptake the newest changes from LCS. To meet the newest requirements, be sure to run the latest infrastructure scripts that are available in LCS.
 - This release also fixes an issue where the deployment of the AXService would fail in slower environments due to a hard-coded timeout.
 
 ## What's new in local agent 2.3.0

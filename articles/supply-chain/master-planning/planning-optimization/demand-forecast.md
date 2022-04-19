@@ -3,7 +3,7 @@
 
 title: Master planning with demand forecasts
 description: This topic explains how to include demand forecasts during master planning with Planning Optimization.
-author: ChristianRytt
+author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
 
@@ -91,7 +91,7 @@ To include a forecast in a master plan and select the method that is used to red
 
 - None
 - Percent – reduction key
-- Transactions – reduction key (not yet supported with Planning Optimization)
+- Transactions – reduction key
 - Transactions – dynamic period
 
 The following sections provide more information about each option.

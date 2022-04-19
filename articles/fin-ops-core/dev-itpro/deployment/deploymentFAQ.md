@@ -4,7 +4,7 @@
 title: Self-service deployment FAQ
 description: This topic provides answers to some frequently asked questions about self-service deployment.
 author: rashmansur
-ms.date: 09/24/2021
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -144,6 +144,8 @@ The inbound IP address to the AOS is dynamic. This can, and will, change over ti
 | Asia Pacific | Southeast Asia | 20.44.247.0/26 |
 | Australia | Australia East | 20.40.190.0/26 |
 | Australia | Australia Southeast | 20.40.165.192/26 |
+| Azure Government | US Gov Texas<sup>2</sup> | 52.243.163.224/28 |
+| Azure Government | US Gov Virginia | 52.227.253.160/28 |
 | Brazil | Brazil South | 191.234.130.0/26 |
 | Canada | Canada Central | 20.151.60.0/26 |
 | Canada | Canada East | 52.155.27.128/26 |

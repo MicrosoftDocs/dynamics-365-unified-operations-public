@@ -4,9 +4,9 @@ description: This topic describes how to create and use classes in X++.
 author: RobinARH
 ms.date: 08/27/2021
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -541,7 +541,7 @@ A scope defines the area in which an item can be accessed. Variables that are de
 You can declare functions inside a method. These are called local functions. While possible, it is not a best practice. Instead, you should add private methods to the class.
 
 + The declarations of local functions must physically precede any non-declaration statements in the method.
-+ You can declare more than one local function in your method. However, all local functions must be declared in an uninterrupted series, and the set must be terminated by one semicolon (;).
++ You can declare more than one local function in your method. However, all local functions must be declared in an uninterrupted series.
 + Code that is inside the local function can access variables that are declared in the method that contains the local function.
 + Code that is outside the local function can't access variables that are declared in the local function.
 + A local function can be called only by code in the same method where the local function is declared.

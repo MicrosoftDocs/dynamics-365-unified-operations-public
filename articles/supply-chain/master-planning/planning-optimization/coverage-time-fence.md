@@ -3,7 +3,7 @@
 
 title: Coverage time fences
 description: This topic describes how to set up coverage time fences when you're using Planning Optimization. A coverage time fence indicates your planning horizon and limit.
-author: ChristianRytt
+author: t-benebo
 ms.date: 01/18/2021
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2021-01-18
 ms.dyn365.ops.version: 10.0.17
 ---

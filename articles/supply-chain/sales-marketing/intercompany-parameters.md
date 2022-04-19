@@ -4,7 +4,7 @@ description: This topic explains intercompany parameters
 author: GalynaFedorova
 ms.date: 09/01/2021
 ms.topic: article
-ms.search.form: PurchTable, PurchTablePart, PurchLineOpenOrder
+ms.search.form: PurchTable, PurchTablePart, PurchLineOpenOrder, InterCompanyTradingRelationSetupCustomer
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global

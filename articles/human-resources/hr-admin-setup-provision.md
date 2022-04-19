@@ -4,7 +4,7 @@
 title: Provision Human Resources
 description: This topic explains the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 08/11/2021
+ms.date: 01/07/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 This topic explains the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources. 
 
@@ -45,11 +45,15 @@ Before you begin provisioning a new production environment, the following prereq
 
 ## Provision a Human Resources trial environment
 
+>[!NOTE]
+> Starting April 2022, the Human Resources trial environments will not be available on the stand-alone application. Potential customers who are interested in evaluating the Human Resources capabilities within Finance and Operations apps, can do so using the free 30-day trial along with the demo data. Dynamics 365 Finance will include the Human Resources capabilities brought to the Finance infrastructure through the merge of the stand-alone application. For more information, see [Merging of HR offerings brings capabilities together for customers](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers) For more information about Dynamics 365 Finance trials, see the step-by-step [guide](/fin-ops/get-started/before-you-buy). 
+
+
 Prior to provisioning your first sandbox or production environment, you may want to provision a [Human Resources trial environment](https://go.microsoft.com/fwlink/p/?LinkId=2115962) to validate Human Resources functionality. Trial environments contain fictitious data that can be used to explore the program in a safe manner. Although a trial environment is owned by the user who requested it, other users can be invited through the system administration experience for Human Resources. 
 
 Trial environments provide the ability to evaluate human resources functionality for individuals who do not already have access to a Human Resources environment. If you are provisioning a trial environment and the authenticated user already has access to one or more existing Human Resources environments, the user will be redirected to the existing environment or list of environments.
 
-Trial environments aren't intended to be used as production environments. They are limited to a 60-day trial period. When the trial period expires, the environment and all the data that's in it is deleted and can't be recovered. The environment cannot be converted to a sandbox or production environment. You can sign up for a new trial environment after the existing environment expires.
+Trial environments aren't intended to be used as production environments. They are limited to a 30-day trial period. When the trial period expires, the environment and all the data that's in it is deleted and can't be recovered. The environment cannot be converted to a sandbox or production environment. You can sign up for a new trial environment after the existing environment expires.
 
 When creating a Human Resources trial environment, a Power Apps trial environment is also created on the tenant and linked to the Human Resources environment. The Power Apps environment, named "TestDrive", has the same trial period as the Human Resources environment.
 
@@ -63,7 +67,7 @@ Before you create your first Human Resources environment, you should carefully p
 Considerations for additional environments:
 
 - **Data migration**: You may need to consider an additional environment for data migration activities to allow your sandbox environment to be used for testing purposes throughout the project. Having an additional environment allows data migrations activities to continue while testing and configuration activities occur simultaneously in a different environment.
-- **Integration**: You may need to consider an additional environment to configure and test integrations. This could include native integrations like the Ceridian Dayforce LinkedIn Talent Hub integrations, or custom integrations such as those for payroll, applicant tracking systems, or benefit systems and providers.
+- **Integration**: You may need to consider an additional environment to configure and test integrations. This could include native integrations like the Ceridian Dayforce or LinkedIn Talent Hub integrations, or custom integrations such as those for payroll, applicant tracking systems, or benefit systems and providers.
 - **Training**: You may need a separate environment that is configured with a set of training data in order to train your employees on use of the new system. 
 - **Multi-phase project**: You may need an additional environment to support configuration, data migration, testing, or other activities in a project phase that is planned after the initial go-live of the project.
 

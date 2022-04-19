@@ -5,7 +5,7 @@ title: Singapore overview
 description: This topic provides links to documentation resources for Singapore. 
 author: ShylaThompson
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.search.region: Singapore
 # ms.search.industry: 
 ms.author: roschlom

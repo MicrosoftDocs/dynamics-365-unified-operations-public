@@ -4,9 +4,10 @@
 title: On-premises deployment overview
 description: Dynamics 365 Finance + Operations (on-premises) supports running business processes in customer data centers. 
 author: cabeln
-ms.date: 03/18/2021
-ms.topic: article
-ms.prod: 
+ms.date: 11/30/2021
+ms.topic: overview
+ms.prod: dynamics-365 
+ms.service:
 ms.technology: 
 
 # optional metadata
@@ -33,7 +34,7 @@ ms.dyn365.ops.version: Platform Update 8
 Microsoft Dynamics 365 Finance + Operations (on-premises) supports running business processes in customer data centers. With this deployment option, application servers and the Microsoft SQL Server database will run in the customer’s data center. Customers and partners will utilize Microsoft Dynamics Lifecycle Services (LCS) to manage their on-premises deployments. LCS is an application management portal that provides tools and services for managing the application lifecycle of your implementations in the cloud and on-premises. LCS features, such as business process modeling, software deployment and patching, and monitoring and diagnostics, are used to help support on-premises deployments.
 
 > [!IMPORTANT]
-> Dynamics 365 Finance + Operations (on-premises) is not supported on any public cloud infrastructure, including Microsoft Azure Cloud services. However, it is supported to run on [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/) services.
+> Dynamics 365 Finance + Operations (on-premises) is not supported on any public cloud infrastructure, including Microsoft Azure Cloud services. However, it is supported to run on [Microsoft Azure Stack HCI](https://azure.microsoft.com/products/azure-stack/hci/) and [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/).
 
 ## Architecture
 

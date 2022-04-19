@@ -5,7 +5,7 @@ author: RamaKrishnamoorthy
 ms.date: 03/22/2021
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-22
@@ -15,7 +15,7 @@ ms.search.validFrom: 2021-03-22
 
 [!INCLUDE[banner](../../includes/banner.md)]
 
-[!INCLUDE[rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 The Dual-write application orchestration solution version 2.0.999.0 and later includes data model changes to party and global address book for the Account and Contact tables. The changes allow many-to-many relationships that support advanced business scenarios. These changes are not supported by portal web roles, including the customer portal, that are shipped out-of-the-box or that existed in your environment before you installed dual-write. For the web roles to work as expected, you need to create new web roles by using the new data model. 
 

@@ -116,7 +116,7 @@ There are built-in operators for $filter:
 - Modulo (mod)
 - Precedence grouping ({ })
 
-You can also use the **Contains** option with $filter requests. It has been implemented as a wildcard character. For example: `http://host/service/EntitySet?$filter=StringField eq '\*retail\*'`
+You can also use the **Contains** option with $filter requests. It has been implemented as a wildcard character. For example: `http://host/service/EntitySet?$filter=StringField eq '*retail*'`
 
 The operators 'has' and 'in' are not supported.
 

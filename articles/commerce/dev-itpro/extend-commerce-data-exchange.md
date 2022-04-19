@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 68673
 ms.assetid: 72a63836-2908-45fa-b1a6-3b1c499a19a2
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # Extend Commerce Data Exchange - Real-time Service
 
-[!include [banner](../includes/banner.md)]
+[!Include [banner](../includes/banner.md)]
 
 This topic explains how you can extend Commerce Data Exchange (CDX) - Real-time service by adding extension methods to the RetailTransactionServiceEx class. Real-time Service enables clients to interact with Commerce functionality in real time. Finance and Operation databases and classes can’t be accessed directly from Retail server. You should access them through the CDX class extension using the Finance and Operations and Commerce Runtime extension.
 

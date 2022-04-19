@@ -4,7 +4,7 @@
 title: Sample for POS integration with control units for Sweden (legacy)
 description: This topic is the building and installation guide for the sample for control unit integration for Sweden. 
 author: EvgenyPopovMBS
-ms.date: 12/02/2019
+ms.date: 12/20/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,8 +29,7 @@ ms.dyn365.ops.version: 7.3.2
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> This sample fiscal integration functionality does not take advantage of the [fiscal integration framework](./fiscal-integration-for-retail-channel.md) and will be deprecated in later updates. You should use the [Control unit integration sample for Sweden](./emea-swe-fi-sample.md#migrating-from-the-earlier-integration-sample) instead.
-
+> This sample fiscal integration functionality doesn't take advantage of the [fiscal integration framework](fiscal-integration-for-retail-channel.md) and will be deprecated in later updates. You should use the [control unit integration sample for Sweden](emea-swe-fi-sample.md) instead.
 
 This sample shows how to create Dynamics 365 Commerce extensions to integrate Retail Modern POS or Cloud POS with a fiscal register. Specifically, this sample includes the code for integrating Retail POS with control units for Sweden. It's assumed that a control unit is physically connected to a Hardware station that POS is paired with. As an example, this sample uses the application programming interface (API) of the CleanCash® Type A control unit by Retail Innovation HTT AB. Version 1.1.4 of the CleanCash® API is used. For the integration package that includes the API and documentation, contact the manufacturer of the device.
 
@@ -40,8 +39,7 @@ This sample consists of extensions for the Hardware station, commerce runtime (C
 
 > [!NOTE]
 > Some steps in the procedures in this topic differ, depending on the version of Commerce that you're using. For more information, see [What's new or changed in Dynamics 365 Retail](../get-started/whats-new.md).
-
-> [!NOTE]
+>
 > In Commerce 10.0.8 and above, Retail Server is known as Commerce Scale Unit. Because this topic applies to multiple previous versions of the app, *Retail Server* is used throughout the topic.
 
 

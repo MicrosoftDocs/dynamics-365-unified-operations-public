@@ -32,12 +32,9 @@ Advanced setup capabilities that are accessible from the **Outbound workload vis
 
 This functionality can be used to track the progress of picking work. The feature is integrated with labor management, and if labor management is set up, outbound workload visualizations can show a calculation of the number of hours that remain for the picking work that is shown (filtered).
 
-## Turn on the Outbound workload visualization feature
+## Turn the Outbound workload visualization feature on or off
 
-Before you can use this feature, it must be turned on in your system. Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** *Warehouse management*
-- **Feature name:** *Outbound workload visualization*
+As of Supply Chain Management version 10.0.25, this feature is turned on by default. Admins can turn this functionality on or off by searching for the *Outbound workload visualization* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Set up outbound workload visualizations
 

@@ -4,7 +4,7 @@
 title: Create deployable packages
 description: This topic explains how to create a deployable package for Microsoft Dynamics 365 Commerce.
 author: mugunthanm
-ms.date: 10/21/2021
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 28021
 ms.assetid: 0fa3c8e7-49e4-417d-afe9-fa2055f6546f
@@ -306,7 +306,12 @@ The following illustration shows an example of a web.config file.
 
 ### Shared Hardware station web.config
 
-If you are not using the legacy payment connector, then comment the legacy payment connector and enable the non-legacy connector in the web.config file. By default, the legacy payment connector is enabled in the shared hardware station web.config.
+> [!NOTE]
+> The following steps are **not** applicable if you are using version 10.0.23 or later of Dynamics 365 Commerce. The legacy payment connector is not supported starting in version 10.0.23.
+
+> If you are using version 10.0.23 or earlier, and not using the legacy payment connector, then comment the legacy payment connector and enable the non-legacy connector in the web.config file. By default, the legacy payment connector is enabled in the shared hardware station web.config for versions 10.0.22 and earlier.
+
+> x.x.x.x in the web.config folder path (\RetailSDK\References\Microsoft.Dynamics.Retail.HardwareStation.WebHost.x.x.x.x\Pkg\bin) is the version number. This will vary based on your Retail SDK version number.
 
 **Example** 
 

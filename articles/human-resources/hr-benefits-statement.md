@@ -2,7 +2,7 @@
 # required metadata
 
 title: Benefit statement
-description: The Benefit statement report explains the benefits that an employee is currrently enrolled in.
+description: The Benefit statement report explains the benefits that an employee is currently enrolled in.
 author: twheeloc
 ms.date: 09/21/2021
 ms.topic: article
@@ -28,6 +28,9 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 ---
 
 # Benefit statement
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 The **Benefit statement** report provides a statement of the benefits that an employee is currently enrolled in. The report can be accessed by an employee directly or by the benefit administrator. The **Benefit statement** provides a list of the employee’s enrolled benefits, coverage options, costs, and any enrolled dependents or beneficiaries. The statement can be printed for a single worker or multiple workers.
 

@@ -5,7 +5,7 @@ title: Warehouse management overview
 description: Use Warehouse management to monitor and automate warehouse processes. 
 author: Mirzaab
 ms.date: 04/20/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mirzaab

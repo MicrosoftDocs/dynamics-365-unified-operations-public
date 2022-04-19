@@ -2,8 +2,8 @@
 # required metadata
 
 title: Bank management workspace
-description: This topic provides information about the Bank management workspace. This workspace shows information that is related to company bank accounts, and includes a Summary view and an Analytics page. The Summary view shows summary tiles, bank account information, a balance chart, and related information. The Analytics page uses the capabilities of Microsoft Power BI to show visuals that are related to bank account balances.
-author: saraschi2
+description: This topic provides information about the Bank management workspace. This workspace shows information that's related to company bank accounts.   
+author: roschlom
 ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: roschlom
 # ms.custom: 
 ms.search.region: Global 
 # ms.search.industry: 
-ms.author: saraschi
+ms.author: roschlom
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ---

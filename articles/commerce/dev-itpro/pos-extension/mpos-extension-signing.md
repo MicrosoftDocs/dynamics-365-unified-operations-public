@@ -5,7 +5,7 @@ author: mugunthanm
 ms.date: 10/21/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
@@ -25,6 +25,8 @@ To include your code signing certificate in the Modern POS JavaScript project fi
 ```XML
 <PackageCertificateKeyFile Condition="Exists('.\MPOS_Extension_Certificate.pfx')">MPOS_Extension_Certificate.pfx</PackageCertificateKeyFile>
 ```
+> [!WARNING]
+> A password protected certificate is not supported in Visual Studio 2017, but you can use password protected cert in the build pipeline using the Azure sign tool. 
 
 If you're using a self-signed certificate for development purposes, you must manually make the certificate trusted on the machine by adding it to the trusted root folder.
 

@@ -4,7 +4,7 @@
 title: Commerce runtime (CRT) extensibility
 description: This topic describes various ways that you can extend the commerce runtime (CRT) and Retail Server.
 author: mugunthanm
-ms.date: 01/21/2021
+ms.date: 03/16/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: josaw
 # ms.tgt_pltfrm: 
 ms.custom: 104593
 ms.assetid: 1397e679-8cd5-49f3-859a-83d342fdd275
@@ -216,6 +216,10 @@ Implement the following classes for a new CRT service:
 - **Handler class** – This class contains the core logic for the request. In the handler class, you can call other requests, do custom logic, and perform other tasks.
 
 For serialization to work, the new request type must implement the **\[DataContract\]** and **\[DataMember\]** attributes.
+
+> [!NOTE]
+> We recommend that for the extension code, you use ConfigureAwait(false) when executing the request.
+
 
 ### Request class
 

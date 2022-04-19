@@ -29,6 +29,9 @@ ms.dyn365.ops.version: Human Resources
 
 # Create a benefit plan
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This topic shows how to set up benefit plans in Dynamics 365 Human Resources.

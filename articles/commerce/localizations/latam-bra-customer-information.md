@@ -5,10 +5,10 @@ title: Manage customer information in POS for Brazil
 description: This topic describes how to manage customer information in Commerce point of sale (POS) for Brazil.
 author: akviklis
 manager: annbe
-ms.date: 06/10/2021
+ms.date: 12/01/2021
 ms.topic: article
 ms.prod:
-ms.service: dynamics-365-retail
+
 ms.technology:
 
 # optional metadata
@@ -30,9 +30,14 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to manage customer information in Commerce point of sale (POS) for Brazil. This information includes CNPJ (Cadastro Nacional da Pessoa Jurídica)/CPF (Cadastro de Pessoas Físicas) numbers. You can specify customer tax registration number, name, and address information when you add a named customer to the cart in POS. You can also manually enter information for a sales transaction. Customer information can then be printed on DANFE (Documento Auxiliar de Nota Fiscal Eletrônica) fiscal receipts and used for invoicing purposes.
+This topic describes how to manage customer information in Commerce point of sale (POS) for Brazil. This information includes CNPJ (Cadastro Nacional da Pessoa Jurídica)/CPF (Cadastro de Pessoas Físicas), CCM (Cadastro de Contribuinte Mobiliário), and IE (Inscrição Estadual) numbers. 
 
-For more information about how to set up this functionality, see [Customer information management](latam-bra-deployment.md#customer-information-management).
+You can specify customer tax registration number, name, and address information when you create or edit a named customer master record and a customer address record in POS. You can also manually enter the minimum required information (including the CNPJ number) for a sales transaction. Customer tax registration numbers can then be used for customer searches in POS, added to the cart, printed on DANFE (Documento Auxiliar de Nota Fiscal Eletrônica) fiscal receipts, and used for invoicing purposes.
+
+> [!NOTE]
+> You can't specify registration numbers for named customers in POS if **Create customer in async mode** is enabled in the POS functionality profile. Support for the async customer creation mode might be added in future updates.
+
+For more information about how to set up this functionality, see [Customer information management](latam-bra-deployment.md#customer-information-management) and [Enable customer searches based on tax registration numbers in POS](latam-bra-deployment.md#enable-customer-searches-based-on-tax-registration-numbers-in-pos).
 
 ## Example scenarios
 
@@ -55,10 +60,10 @@ To make a sale to a named customer, follow these steps.
 
 1. Sign in to POS.
 1. Add items to the cart.
-1. Select **Add customer**, and then find and select the desired customer.
+1. Select **Add customer**, and then find and select the desired customer (for example, by searching for tax registration numbers).
 1. Add the customer to the transaction.
 1. Register payments for the transaction, and then finalize the transaction.
-1. Verify that the printed receipt contains the customer's CNPJ/CPF number or foreigner ID, name, and address.
+1. Verify that the printed receipt contains the customer's tax registration numbers or foreigner ID, name, and address.
 
 ### Scenario 3: Make a sale to a new named customer
 
@@ -68,12 +73,14 @@ To make a sale to a new named customer, follow these steps.
 1. Add items to the cart.
 1. Select **Add customer**, and then select **Create customer**.
 1. Specify the new customer's attributes.
-1. In the **CNPJ/CPF** field, enter the customer's CNPJ/CPF number.
+1. In the **CNPJ/CPF** field, enter the customer's CNPJ/CPF number if the customer isn't a foreigner.
+1. In the **IE** field, enter the customer's IE number if it's required.
+1. In the **CCM** field, enter the customer's CCM number if it's required.
 1. In the **Foreigner ID** field, enter the customer's foreigner ID, if it's required.
 1. Select **Add address**, and then enter the new customer's contact information and address.
 1. Save the customer record and the customer address record, and then add the customer to the transaction.
 1. Register payments for the transaction, and then finalize the transaction.
-1. Verify that the printed receipt contains the customer's CNPJ/CPF number or foreigner ID, name, and address.
+1. Verify that the printed receipt contains the customer's tax registration numbers or foreigner ID, name, and address.
 
 > [!NOTE]
 > If you have to specify a different customer for the transaction, you must first clear the customer information. Then select another customer.

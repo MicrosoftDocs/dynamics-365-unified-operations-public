@@ -3,9 +3,9 @@
 
 title: Europe overview
 description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for Europe. 
-author: ShylaThompson
-ms.date: 02/24/2021
-ms.topic: article
+author: kfend
+ms.date: 01/15/2022
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,10 +16,10 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.search.region: global
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -42,13 +42,13 @@ This topic includes information and links to resources that can help you set up 
 - [Edit invoice IDs on sales orders for Eastern Europe](emea-edit-invoice-id-sales-orders.md)
 - [EU Entry certificates](emea-entry-certificates.md)
 - [EU Sales list reporting](emea-eu-sales-list.md)
+  - [Example for generic EU Sales list ](emea-eu-sales-list-example.md)
 - [Exchange rate adjustments](emea-exchange-rate-adjustments.md)
 - [File formats for methods of payment](emea-select-file-formats-for-the-method-of-payments.md)
 - [Finance (Globalization) guidance about Brexit impact](https://businesscenter.mbs.microsoft.com/#contentdetail/GuidanceBrexitImpact)
 - [Fiscal service (ESR) integration](emea-fiscal-service-integration.md)
 - [Fixed assets disposal for Estonia and Lithuania](emea-credit-note-reverse-fixed-asset-sale.md)
 - [Generate a transfer document for an internal inventory transfer](tasks/transfer-document-internal-inventory-transfer.md)
-- [Generate the EU sales list report](tasks/eur-00011-eu-sales-list-report.md)
 - ISO20022 files
   - [Import ISO20022 files](emea-ISO20022-file-formats.md)
   - [Import ISO20022 direct debit configuration](tasks/import-iso20022-direct-debit-configuration.md)
@@ -83,7 +83,6 @@ This topic includes information and links to resources that can help you set up 
 - [SEPA credit transfer overview](../accounts-payable/sepa-credit-transfer.md)
 - [SEPA direct debit overview](../accounts-receivable/sepa-direct-debit-overview.md)
 - [Set up customer and vendor compensation](emea-compensation-customer-vendor-transactions.md)
-- [Set up EU sales list reporting](tasks/eur-00011-eu-sales-list-reporting.md)
 - [Set up payment slip format for project invoices](tasks/set-up-payment-slip-format-project-invoices.md)
 - [Set up signers for print forms](emea-set-up-signers-for-printing-forms.md)
 - [Storno accounting](emea-storno.md)
@@ -99,6 +98,8 @@ This topic includes information and links to resources that can help you set up 
   - [Create and submit VAT report](tasks/create-submit-vat-report.md)
   - [View transactions on settlement for Eastern Europe](emea-transactions-settlement-form.md)
   - [Tax point date (Date of VAT register)](emea-tax-point-date.md)
+  - [Date of vendor VAT register](emea-date-vendor-VAT-register.md)
+- [Financial reason feature extension](emea-financial-reason.md)
 
 ## Additional resources
 

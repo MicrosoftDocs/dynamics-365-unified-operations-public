@@ -5,10 +5,10 @@ title: Virtual entities overview
 description: This topic provides general information about virtual entities for Finance and Operations apps.
 author: RamaKrishnamoorthy
 ms.date: 05/14/2021
-ms.topic: article
+ms.topic: overview
 audience: IT Pro
 ms.reviewer: sericks
-ms.custom: "intro-internal"
+
 ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2021-05-31

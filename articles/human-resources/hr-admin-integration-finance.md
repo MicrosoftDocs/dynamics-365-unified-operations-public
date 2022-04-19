@@ -29,9 +29,12 @@ ms.dyn365.ops.version: Human Resources
 
 # Configure integration with Finance
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 To integrate Dynamics 365 Human Resources with Dynamics 365 Finance, you can use the Human Resources to Finance template in [Data Integrator](/powerapps/administrator/data-integrator). The Human Resources to Finance template enables data flow for jobs, positions, and workers. The template allows data to flow from Human Resources into Finance, but doesn't allow data to flow from Finance into Human Resources.
 

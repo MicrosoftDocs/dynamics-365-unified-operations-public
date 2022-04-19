@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Import the Chinese Golden Tax data entity
-description: This topic explains how to import the Chinese Golden Tax data entity into Microsoft Dynamics 365 Finance.
-author: ShylaThompson
-ms.date: 10/30/2017
+title: Import the Chinese Golden Tax files
+description: This topic explains how to import the Chinese Golden Tax files into Microsoft Dynamics 365 Finance.
+author: ilkond
+ms.date: 12/20/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -19,41 +19,30 @@ ms.reviewer: kfend
 ms.custom: 261394
 ms.search.region: China (PRC)
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: ilyako
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Import the Chinese Golden Tax data entity
+# Import the Chinese Golden Tax files
 
 [!include [banner](../includes/banner.md)]
   
-This topic explains how to import the Chinese Golden Tax data entity into Dynamics 365 Finance.
+This topic explains how to import files with external invoice numbers from providers (Aisino or BaiWang) into Dynamics 365 Finance. You can import txt and xml files from the BaiWang provider, and txt and txt files from the Aisino provider.
 
-> [!NOTE] 
-> You don't need to import the Chinese Golden Tax data entity for Dynamics 365 Finance version 10.0 and later. 
+To import the files from a provider with external invoice numbers, complete the following steps.
 
-To import the Chinese Golden Tax data entity, complete the following steps.
-
-1.  Go to **System administration** &gt; **Data management**.
-2.  Click the **Import** tile to create a new import project.
-3.  Enter a name for the project.
-4.  Select the source data format **XML-Element**.
-5.  In the **Entity name** field, select **Tax integration import** entity.
-6.  Click upload and then browse to the location of your golden tax data file.
-7.  Click **View map** on the **Tax integration import** tile.
-8.  On the **Transformations** tab, click **New**.
-9.  Click **Upload file** and browse to the location of the .xlst file.
-
-For specific steps that show how to import a data entity, refer to [Importing data by using entities](../../fin-ops-core/dev-itpro/data-entities/build-consuming-data-entities.md). To practice the Chinese Golden Tax data entity import using the demo data company CNMF, download the following files from [CustomerSource](/dynamics/s-e/).
-
--   **ImportSampleFile.xml** - This file is the Chinese Golden Tax data entity composite.
--   **Tax-Import-to-XML.xslt** - This file is used as the transformational file mapping.
-
-The following screenshot shows an example mapping visualization for the Chinese Golden Tax data entity. [![This image shows a sample mapping visualization for the Chinese Golden Tax data entity.](./media/goldentaximportmappingvisualization.png)](./media/goldentaximportmappingvisualization.png)      
-
-For more information, see [Golden tax integration export setup](./tasks/golden-tax-integration-export-setup.md).
+1. Go to **Accounts receivable** > **Periodic tasks** > **VAT invoice integration**.
+2. On the Action Pane, select **Import**. 
+3. Select the model mapping for the import file from one of the providers, either Aisino or BaiWang, depending on which provider's software the company integrates exported invoices with. 
+   - To import a text file (\<file name\>_invoicing result.TXT) from the BaiWang provider, set the **Import BaiWang TXT file** option to **Yes**. Then, in the **Model mapping** field, select **BaiWang – txt file**.
+   - To import a text file from Aisino or an XML file from BaiWang, set the **Import BaiWang txt file** option to **No**. Then, in the **Model mapping** field, select **Asimo - txt** or **BaiWang-xml file**.
+6. Select a file for upload and then select **Upload**.
+7. Select **OK**.
+  
+ > [!NOTE] 
+ > To import files, upload the import formats. For more information, see [Import configurations](apac-chn-tax-integration.md).
 
 
 

@@ -5,7 +5,7 @@ author: RamaKrishnamoorthy
 ms.date: 05/26/2020
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-05-26

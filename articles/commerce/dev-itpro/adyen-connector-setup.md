@@ -4,7 +4,7 @@
 title: Set up Dynamics 365 Payment Connector for Adyen
 description: This topic describes how to sign up with Adyen and set up the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: rassadi
-ms.date: 07/29/2021
+ms.date: 01/27/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -46,9 +46,13 @@ To use the Dynamics 365 Payment Connector for Adyen, you must have a separate ag
 
 The following prerequisites must be completed before payments can be configured in any channel.
 
+#### Configure your Adyen account settings for Dynamics 365 Commerce
+
+In addition to the instructions below, you must also configure your Adyen account settings for Dynamics 365 Commerce. For instructions on setting up Adyen for Dynamics 365 Commerce, see [Set up the Adyen payment connector for Dynamics 365](https://docs.adyen.com/plugins/microsoft-dynamics).
+
 #### Set up a processor for new credit cards
 
-To process payments across point of sale (POS) terminals, a call center, or e-Commerce, you must configure a new default payment processor for new credit cards. Follow these steps to configure a default payment processor.
+To process payments across point of sale (POS) terminals, a call center, or Commerce, you must configure a new default payment processor for new credit cards. Follow these steps to configure a default payment processor.
 
 1. Sign in to Commerce headquarters and go to **Accounts receivable \> Payments setup \> Payment services**.
 1. On the Action Pane, select **New**, and then, on the **Setup** tab, enter the following information.
@@ -80,9 +84,9 @@ To process payments across point of sale (POS) terminals, a call center, or e-Co
     | Supported Currencies | Enter the currencies that the connector should process. In card-present scenarios, Adyen can support additional currencies through [Dynamic Currency Conversion](https://www.adyen.com/pos-payments/dynamic-currency-conversion) after the transaction request is sent to the payment terminal. Contact Adyen support to get a list of supported currencies. | Yes | Yes | USD;EUR |
     | Supported Tender Types | Enter the tender types that the connector should process. | Yes | Yes | Visa;MasterCard;Amex;Discover;Debit |
     | Gift card provider | Enter the gift card provider that the connector should use to process gift cards. This field is case-sensitive. | No | No | "svs" or "givex" |
-    | Terminal gift card entry | *POS Only* Allows the customer to select between **Manual** or **Swipe**. | Yes | Yes | True/False |
-    | Allow saving payment information in e-commerce | *e-Commerce only* Gives signed-in users the option to save payment details for future online purchases.  | Yes | Yes | True/False |
-    | Authorization stale period (days) | *POS Only* Number of days before an authorization is considered stale and should decline before going to the processor for capture. | Yes | Yes | "7" |
+    | Terminal gift card entry | (*POS only*) Allows the customer to select between **Manual** or **Swipe**. | Yes | Yes | True/False |
+    | Allow saving payment information in e-commerce | (*E-commerce only*) Gives signed-in users the option to save payment details for future online purchases.  | Yes | Yes | True/False |
+    | Authorization stale period (days) | (*POS only*) Number of days before an authorization is considered stale and should decline before going to the processor for capture. | Yes | Yes | "7" |
     | Origin Key | Required when "V002" is designated for the version. You can obtain this key by following the instructions on the [How to get an origin key](https://docs.adyen.com/user-management/how-to-get-an-origin-key) page on the Adyen website. |
     | EnableRequestProtection | Adds retry logic to "card not present" payment calls, reducing potential for duplicate calls using a correlation ID. When "True", a correlation ID is added to provider requests to prevent duplicates. If "False", calls are sent to the provider without the correlation ID or duplicate protection logic. | No | No | True/False |
     | Non-incremental capture payment methods | Names of the payment method variant or card types used by Adyen to identify card types in authorization responses which do not support incremental capture. Value entered should match the payment method variant/card type string used in Adyen to reference, as noted in [Adyen PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant).  | No | No | "amexcommercial" |
@@ -99,7 +103,7 @@ To process payments across point of sale (POS) terminals, a call center, or e-Co
 Go to the [Point of sale](https://docs.adyen.com/developers/point-of-sale) page on the Adyen website and follow the instructions to onboard your Adyen payment terminal. Skip any steps that instruct you to download Adyen-specific apps. During the onboarding process, make a note of the following information for each payment terminal. You will need this information in the [Configure the payment terminal IP address and EFT POS register number](#configure-the-payment-terminal-ip-address-and-eft-pos-register-number) section later in this topic.
 
 - IP address of the payment terminal
-- POIID (POIID is comprised of the serial number and model number of the device. It is used to uniquely identify the device.)
+- POIID (POIID is composed of the serial number and model number of the device. It is used to uniquely identify the device.)
 
 After the payment terminal is onboarded, sign in to the [Adyen Customer Area](https://ca-test.adyen.com/ca/ca/login.shtml), go to the terminal that you want to configure, and make a note of the following information for each payment terminal. You will need this information in the [EFT service for local network communication](#eft-service-for-local-network-communication) section later in this topic.
 
@@ -140,10 +144,10 @@ The Adyen payment connector can be configured to communicate with devices via th
     | Supported Currencies | Enter the currencies that the connector should process. In card-present scenarios, Adyen can support additional currencies through [Dynamic Currency Conversion](https://www.adyen.com/pos-payments/dynamic-currency-conversion) after the transaction request is sent to the payment terminal. Contact Adyen support to get a list of supported currencies. | Yes | Yes | USD;EUR |
     | Supported Tender Types | Enter the tender types that the connector should process. These values are case-sensitive. | Yes | Yes | Visa;MasterCard;Amex;Discover;Debit |
     | Gift card provider | Enter the gift card provider that the connector should use to process gift cards. This field is case-sensitive. | No | No | "svs" or "givex" |    
-    | Terminal gift card entry | *POS Only* Allows the customer to select between **Manual** or **Swipe**. | Yes | Yes | True/False |
-    | Allow saving payment information in e-commerce | *e-Commerce only* Gives signed-in users the option to save payment details for future online purchases.  | Yes | Yes | True/False |
-    | Authorization stale period (days) | *POS Only* Number of days before an authorization is considered stale and should decline before going to the processor for capture. | Yes | Yes | "7" |
-    | Origin Key | *Card not present only*  |
+    | Terminal gift card entry | (*POS only*) Allows the customer to select between **Manual** or **Swipe**. | Yes | Yes | True/False |
+    | Allow saving payment information in e-commerce | (*E-commerce only*) Gives signed-in users the option to save payment details for future online purchases.  | Yes | Yes | True/False |
+    | Authorization stale period (days) | (*POS only*) Number of days before an authorization is considered stale and should decline before going to the processor for capture. | Yes | Yes | "7" |
+    | Origin Key | (*Card not present only*)  |
     | EnableRequestProtection | Adds retry logic to "card not present" payment calls, reducing potential for duplicate calls using a correlation ID. When "True", a correlation ID is added to provider requests to prevent duplicates. If "False", calls are sent to the provider without the correlation ID or duplicate protection logic. | No | No | True/False |
     | Non-incremental capture payment methods | Names of the payment method variant or card types used by Adyen to identify card types in authorization responses which do not support incremental capture. Value entered should match the payment method variant/card type string used in Adyen to reference, as noted in [Adyen PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant).  | No | No | "amexcommercial" |
 
@@ -172,10 +176,10 @@ The Adyen payment connector can be configured to communicate with devices via th
     | Supported Currencies | Enter the currencies that the connector should process. In card-present scenarios, Adyen can support additional currencies through [Dynamic Currency Conversion](https://www.adyen.com/pos-payments/dynamic-currency-conversion) after the transaction request is sent to the payment terminal. Contact Adyen support to get a list of supported currencies. | Yes | Yes | USD;EUR |
     | Supported Tender Types | Enter the tender types that the connector should process. These values are case-sensitive. | Yes | Yes | Visa;MasterCard;Amex;Discover;Debit |
     | Gift card provider | Enter the gift card provider that the connector should use to process gift cards. This field is case-sensitive. | No | No | "svs" or "givex" |    
-    | Terminal gift card entry | *POS Only* Allows the customer to select between **Manual** or **Swipe**. | Yes | Yes | True/False |
-    | Allow saving payment information in e-commerce | *e-Commerce only* Gives signed-in users the option to save payment details for future online purchases.  | Yes | Yes | True/False |
-    | Authorization stale period (days) | *POS Only* Number of days before an authorization is considered stale and should decline before going to the processor for capture. | Yes | Yes | "7" |
-    | Origin Key | *Card not present only* |
+    | Terminal gift card entry | (*POS only*) Allows the customer to select between **Manual** or **Swipe**. | Yes | Yes | True/False |
+    | Allow saving payment information in e-commerce | (*E-commerce only*) Gives signed-in users the option to save payment details for future online purchases.  | Yes | Yes | True/False |
+    | Authorization stale period (days) | (*POS only*) Number of days before an authorization is considered stale and should decline before going to the processor for capture. | Yes | Yes | "7" |
+    | Origin Key | (*Card not present only*) |
     | EnableRequestProtection | Adds retry logic to "card not present" payment calls, reducing potential for duplicate calls using a correlation ID. When "True", a correlation ID is added to provider requests to prevent duplicates. If "False", calls are sent to the provider without the correlation ID or duplicate protection logic. | No | No | True/False |
     | Non-incremental capture payment methods | Names of the payment method variant or card types used by Adyen to identify card types in authorization responses which do not support incremental capture. Value entered should match the payment method variant/card type string used in Adyen to reference, as noted in [Adyen PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant).  | No | No | "amexcommercial" |
 
@@ -255,10 +259,10 @@ To configure additional information for the connector in Commerce headquarters, 
     | Supported Currencies | Enter the currencies that the connector should process. | Yes | Yes | USD;EUR |
     | Supported Tender Types | Enter the tender types that the connector should process. | Yes | Yes | Visa;MasterCard;Amex;Discover;Debit |
     | Gift card provider | Enter the gift card provider that the connector should use to process gift cards. The possible values are **SVS** and **GIVEX**. | No | No | SVS |
-    | Terminal gift card entry | *POS Only* Allows the customer to select between **Manual** or **Swipe**. | Yes | Yes | True/False |
-    | Allow saving payment information in e-commerce | *e-Commerce only* Gives signed-in users the option to save payment details for future online purchases.  | Yes | Yes | True/False |
-    | Authorization stale period (days) | *POS Only* Number of days before an authorization is considered stale and should decline before going to the processor for capture. | Yes | Yes | "7" |
-    | Origin Key | *e-Commerce Only* Only required when "V002" is designated for the version. You can obtain this key by following the instructions on the [How to get an origin key](https://docs.adyen.com/user-management/how-to-get-an-origin-key) page on the Adyen website. |
+    | Terminal gift card entry | (POS only*) Allows the customer to select between **Manual** or **Swipe**. | Yes | Yes | True/False |
+    | Allow saving payment information in e-commerce | (*E-commerce only*) Gives signed-in users the option to save payment details for future online purchases.  | Yes | Yes | True/False |
+    | Authorization stale period (days) | (*POS only*) Number of days before an authorization is considered stale and should decline before going to the processor for capture. | Yes | Yes | "7" |
+    | Origin Key | (*E-commerce only*) Only required when "V002" is designated for the version. You can obtain this key by following the instructions on the [How to get an origin key](https://docs.adyen.com/user-management/how-to-get-an-origin-key) page on the Adyen website. |
     | EnableRequestProtection | Adds retry logic to "card not present" payment calls, reducing potential for duplicate calls using a correlation ID. When "True", a correlation ID is added to provider requests to prevent duplicates. If "False", calls are sent to the provider without the correlation ID or duplicate protection logic. | No | No | True/False |
     | Non-incremental capture payment methods | Names of the payment method variant or card types used by Adyen to identify card types in authorization responses which do not support incremental capture. Value entered should match the payment method variant/card type string used in Adyen to reference, as noted in [Adyen PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant).  | No | No | "amexcommercial" |
 

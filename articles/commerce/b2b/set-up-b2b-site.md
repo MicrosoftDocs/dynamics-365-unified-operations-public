@@ -4,7 +4,7 @@
 title: Set up a B2B e-commerce site
 description: This topic describes how to set up a business-to-business (B2B) e-commerce site in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 04/23/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -40,7 +40,7 @@ Business-to-business (B2B) e-commerce sites provide some key capabilities that o
 
 You can access site-level settings in site builder, at **Site Settings \> Extensions**. The following two site-level settings apply to B2B scenarios:
 
-- **Enable customer account payments** – This property enables users to pay for orders by using customer accounts. The available values are **Enabled for B2B customers**, **Enabled for B2C customers**, **Enabled for all customers**, and **Disabled for all customers**. If your B2B site supports customer accounts, you should select **Enabled for B2C customers**.
+- **Enable customer account payments** – This property enables users to pay for orders by using customer accounts. The available values are **Enabled for B2B customers**, **Enabled for B2C customers**, **Enabled for all customers**, and **Disabled for all customers**. If your B2B site supports customer accounts, you should select **Enabled for B2B customers**.
 - **Enable order quantity limits** – This property lets you set limits on the number of items that can be ordered for each product or category. The available values are **Enabled for B2B customers**, **Enabled for B2C customers**, **Enabled for all customers**, and **Disabled for all customers**.
 
 > [!NOTE]
@@ -309,6 +309,30 @@ To add a quick add module to a cart page in Commerce site builder, follow these 
 
 > [!NOTE] 
 > The quick add module is available as of the Commerce version 10.0.17 release. If you're updating from an older version of Commerce, you must manually update the appsettings.json file. For instructions, see [SDK and module library updates](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
+
+## Add a bulk purchase module to a product details page
+
+The bulk purchase module on a product details page (PDP) provides a matrix-based experience that lets a buyer quickly add multiple variants of a product to the cart. When a site user must order multiple variants of the same product, this experience eliminates the need to select the combination of product dimensions, define the quantity, add the variant to the cart, and then repeat the process for other combinations of product dimensions.
+
+To add the bulk purchase module to a PDP in Commerce site builder, follow these steps.
+
+1. Go to **Templates**, and select your site's PDP template.
+1. Select **Edit**.
+1. In the **Main** slot of the **Default Page** module, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Container** module, and then select **OK**.
+1. In the **Container** slot, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Bulk purchase** module, and then select **OK**.
+1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it.
+1. Go to **Pages**, and select your site's PDP.
+1. In the **Main** slot of the **Default Page** module, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Container** module, and then select **OK**.
+1. In the properties pane for the **Container** module, under **Width**, select **Fill Container**.
+1. In the **Container** slot, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Bulk purchase** module, and then select **OK**.
+1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
+
+> [!NOTE] 
+> The bulk purchase module is available as of the Commerce version 10.0.24 release. If you're updating from an older version of Commerce, you must manually update the appsettings.json file. For instructions, see [SDK and module library updates](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
 ## Additional resources
 

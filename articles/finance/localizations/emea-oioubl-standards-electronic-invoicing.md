@@ -103,6 +103,7 @@ The setup and specifics of electronic invoices depend on the country/region that
 
 - [Italy](emea-ita-e-invoices.md)
 - [Norway](emea-nor-e-invoices.md)
+- [Denmark](emea-dnk-e-invoices.md)
 - [Germany](emea-deu-e-invoices.md)
 - [Finland](https://support.microsoft.com/help/4559937)
 - [Estonia](https://support.microsoft.com/help/4552679)

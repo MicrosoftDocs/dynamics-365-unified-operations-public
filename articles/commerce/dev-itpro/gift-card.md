@@ -3,8 +3,8 @@
 
 title: Support for external gift cards
 description: This topic provides information about the support for external gift cards that is now available in Microsoft Dynamics 365 Commerce.
-author: rubencdelgado 
-ms.date: 02/03/2021
+author: BrianShook 
+ms.date: 04/05/2022
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -15,7 +15,7 @@ ms.technology:
  # ROBOTS: 
 audience: Developer
 ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -374,6 +374,15 @@ For gift cards that are issued via email, the value of the **Retail email notifi
 
 10. On the **Price and discount** tab, in the **Reason code** field, specify the reason for the price override.
 11. Select **Complete**, add a payment, and submit the order.
+
+For physical external gift cards, complete the following steps to register the gift card number:
+1. Select **Pick and pack > Generate picking list**. 
+2. Select **Quantity=All** and then select **OK**. A dialogue that warns about posting the doc without printing will be displayed. Select **OK**.
+3. Select **Pick and pack > Picking list registration**. Under the **Lines** menu, select **Register gift card number**. Under the **Register gift card number** property menu, enter the number in the **Number** field, and then select **OK**.
+> [!NOTE]
+> If the error message "Credit card process failed, due to 'Declined'" is displayed, the gift card has already been activated. You should select a different card number.
+
+When you are finished with the registration process, return to the sales order. The **Gift card number** and **Expiration** fields are displayed with the added information under the **Lines details > Packaging** section.
 
 ### Pay by using external gift cards in the call center
 

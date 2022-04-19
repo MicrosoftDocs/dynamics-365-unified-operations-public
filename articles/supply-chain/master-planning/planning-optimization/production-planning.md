@@ -1,14 +1,14 @@
 ---
 title: Production planning
 description: This topic describes planning for production and explains how to modify planned production orders by using Planning Optimization.
-author: ChristianRytt
+author: t-benebo
 ms.date: 06/01/2021
 ms.topic: article
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2020-12-15
 ms.dyn365.ops.version: 10.0.13
 ---

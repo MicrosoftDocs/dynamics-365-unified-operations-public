@@ -3,7 +3,7 @@
 
 title: Periodic credit management tasks
 description: This topic describes the periodic tasks that are a necessary part of the process of managing credit limits for customers. 
-author: mikefalkner
+author: JodiChristiansen
 ms.date: 09/04/2019
 ms.topic: article
 ms.prod: 

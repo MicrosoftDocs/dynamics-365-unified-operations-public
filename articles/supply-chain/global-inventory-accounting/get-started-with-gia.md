@@ -17,7 +17,8 @@ ms.dyn365.ops.version: 10.0.20
 # Get started with Global Inventory Accounting
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)] <!--KFM: Until 4/30/2022 -->
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!--KFM: Preview until 4/30/2022 -->
 
 Global Inventory Accounting lets you do multiple inventory accountings in the Global Inventory Accounting ledgers that you've set up. You must associate each Global Inventory Accounting ledger with a *convention*. A convention is a collection of the following types of accounting policies:
 
@@ -116,7 +117,7 @@ Follow these steps to set up the integration between Global Inventory Accounting
 1. Sign in to Supply Chain Management.
 1. Go to **System administration \> Feature Management**.
 1. Select **Check for updates**.
-1. On the **All** tab, search for the feature that is named *Global inventory accounting*.
+1. On the **All** tab, search for the feature that is named *(Preview) Global inventory accounting*.
 1. Select **Enable now**.
 1. Go to **Global inventory accounting \> Setup \> Global inventory accounting parameters \> Integrations parameters**.
 1. In the **Data service endpoint** and **Global inventory accounting endpoint** fields, enter the URLs from the email that the Global Inventory Accounting team sent when you signed up for the preview.

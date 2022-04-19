@@ -3,7 +3,7 @@
 
 title: Cycle counting
 description: This article describes how you can use cycle counting with the warehousing solution that is available in Warehouse management. This article doesn't apply to the warehousing solution that's available in Inventory management.
-author: MarkusFogelberg
+author: Mirzaab
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 50671
 ms.assetid: 49f5c431-b043-4170-aa24-b7d5d1ee063e
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mafoge
+ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

@@ -2,8 +2,8 @@
 # required metadata
 
 title: Posting definitions in the public sector
-description: This article provides examples of public sector posting definitions that you can use to create subledger journal lines for originating transactions that meet selected criteria. Examples include budget appropriations, pooled cash settlements, write-offs, COD settlements, advanced ledger entries, general ledger year-end close, and proprietary funds.
-author: ShylaThompson
+description: This topic lists examples of public sector posting definitions that can be used to create subledger journal lines for originating transactions that meet selected criteria.
+author: v-kiarnd
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -15,12 +15,12 @@ ms.search.form: BudgetDetailsInquiry, CustGroup, JournalizingDefinition, Journal
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 27271
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: brpotter
+ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article provides examples of public sector posting definitions that you can use to create subledger journal lines for originating transactions that meet selected criteria. Examples include budget appropriations, pooled cash settlements, write-offs, COD settlements, advanced ledger entries, general ledger year-end close, and proprietary funds.
+This topic lists examples of public sector posting definitions that can be used to create subledger journal lines for originating transactions that meet selected criteria. Examples include budget appropriations, pooled cash settlements, write-offs, COD settlements, advanced ledger entries, general ledger year-end close, and proprietary funds.
 
 This article describes the posting definitions functionality available for the public sector. Before you read this topic, you should be familiar with posting definitions.
 
@@ -86,7 +86,7 @@ You enter the accounts, dimension values, and amounts on the budget account entr
 
 | Account + Dimensions               | Debit | Credit | Comment |
 |------------------------------------|-------|--------|---------|
-| 101-606400-OU\_1-OU\_3566-Training |       | 250.00 |         |
+| 101-606400-OU\_1-OU\_3566-Training |  &nbsp; | 250.00 |  &nbsp;  |
 
 ### Ledger entries generated from the posting definition
 
@@ -94,8 +94,8 @@ Generated ledger entries are created to record the original budget in each dimen
 
 | Account + Dimensions | Debit  | Credit | Comment |
 |----------------------|--------|--------|---------|
-| 101-36300            |        | 250.00 |         |
-| 101-36350            | 250.00 |        |         |
+| 101-36300            | &nbsp; | 250.00 | &nbsp;  |
+| 101-36350            | 250.00 | &nbsp; | &nbsp;  |
 
 In this example, the fund dimension and account part of the expense account structure match the posting definition criteria. Therefore, when 101-606400-OU\_1-OU\_3566-Training is evaluated, the generated ledger entries are created.
 
@@ -147,7 +147,7 @@ You can specify a single due-to account in the Treasurer’s fund for all funds.
 
 | Account structure | Generated account number                                                           | Generated debit/credit |
 |-------------------|------------------------------------------------------------------------------------|------------------------|
-|                   | No generated entries are defined against the match entry for the Treasurer’s fund. |                        |
+|    &nbsp;         | No generated entries are defined against the match entry for the Treasurer’s fund. |    &nbsp;              |
 
 #### Settlement posting definition – Match criteria
 
@@ -194,15 +194,15 @@ The following vouchers are representative of a typical invoice, payment, and set
 
 | Account + Dimensions | Debit  | Credit | Comment             |
 |----------------------|--------|--------|---------------------|
-| 101 - 66100 - 150    | 250.00 |        | Expenditure account |
-| 101 - 24210          |        | 250.00 | Accounts payable    |
+| 101 - 66100 - 150    | 250.00 | &nbsp; | Expenditure account |
+| 101 - 24210          | &nbsp; | 250.00 | Accounts payable    |
 
 ### Accounts payable payment voucher
 
 | Account + Dimensions | Debit  | Credit | Comment           |
 |----------------------|--------|--------|-------------------|
-| 999 - 24210          | 250.00 |        | Vendor summary    |
-| 999 - 11020          |        | 250.00 | Bank/cash account |
+| 999 - 24210          | 250.00 | &nbsp; | Vendor summary    |
+| 999 - 11020          | &nbsp; | 250.00 | Bank/cash account |
 
 ### Accounts payable settlement voucher
 
@@ -212,10 +212,10 @@ In this example, the **Match account number** values for the posting definition 
 
 | Account + Dimensions | Debit  | Credit | Comment                                                                  |
 |----------------------|--------|--------|--------------------------------------------------------------------------|
-| 999 - 24210          |        | 250.00 | Vendor summary (System-generated)                                        |
-| 101 - 24210          | 250.00 |        | Invoice payable (System-generated)                                       |
-| 101 - 11010          |        | 250.00 | Equity for Fund 101 (Posting definition for settlement)                  |
-| 999 - 37101          | 250.00 |        | Treasurer’s fund – Due from Fund 101 (Posting definition for settlement) |
+| 999 - 24210          | &nbsp; | 250.00 | Vendor summary (System-generated)                                        |
+| 101 - 24210          | 250.00 | &nbsp; | Invoice payable (System-generated)                                       |
+| 101 - 11010          | &nbsp; | 250.00 | Equity for Fund 101 (Posting definition for settlement)                  |
+| 999 - 37101          | 250.00 | &nbsp; | Treasurer’s fund – Due from Fund 101 (Posting definition for settlement) |
 
 ### Summarizing the entries across the invoice, payment, and settlement vouchers
 
@@ -223,25 +223,25 @@ The following table shows how the final ledger accounts are affected.
 
 | Account + Dimensions | Debit  | Credit | Comment                                                                  |
 |----------------------|--------|--------|--------------------------------------------------------------------------|
-| 999 - 11020          |        | 250.00 | Bank/cash account                                                        |
-| 101 - 66100 - 150    | 250.00 |        | Expenditure account                                                      |
-| 101 - 11010          |        | 250.00 | Equity for Fund 101 (Posting definition for settlement)                  |
-| 999 - 37101          | 250.00 |        | Treasurer’s fund – Due from Fund 101 (Posting definition for settlement) |
+| 999 - 11020          | &nbsp; | 250.00 | Bank/cash account                                                        |
+| 101 - 66100 - 150    | 250.00 | &nbsp; | Expenditure account                                                      |
+| 101 - 11010          | &nbsp; | 250.00 | Equity for Fund 101 (Posting definition for settlement)                  |
+| 999 - 37101          | 250.00 | &nbsp; | Treasurer’s fund – Due from Fund 101 (Posting definition for settlement) |
 
 ## Accounts receivable example
 ### Accounts receivable invoice voucher
 
 | Account + Dimensions | Debit  | Credit | Comment             |
 |----------------------|--------|--------|---------------------|
-| 101 - 44400          |        | 250.00 | Revenue account     |
-| 101 - 11530          | 250.00 |        | Accounts receivable |
+| 101 - 44400          | &nbsp; | 250.00 | Revenue account     |
+| 101 - 11530          | 250.00 | &nbsp; | Accounts receivable |
 
 ### Accounts receivable payment voucher
 
 | Account + Dimensions | Debit  | Credit | Comment           |
 |----------------------|--------|--------|-------------------|
-| 999 - 11530          |        | 250.00 | Customer summary  |
-| 999 - 11020          | 250.00 |        | Bank/cash account |
+| 999 - 11530          | &nbsp; | 250.00 | Customer summary  |
+| 999 - 11020          | 250.00 | &nbsp; | Bank/cash account |
 
 ### Accounts receivable settlement voucher
 
@@ -251,10 +251,10 @@ In this example, the **Match account number** values for the posting definition 
 
 | Account + Dimensions | Debit  | Credit | Comment                                                                |
 |----------------------|--------|--------|------------------------------------------------------------------------|
-| 999 - 11530          | 250.00 |        | Customer summary (System-generated)                                    |
-| 101 - 11530          |        | 250.00 | Invoice receivable (System-generated)                                  |
-| 101 - 11010          | 250.00 |        | Equity for Fund 101 (Posting definition for settlement)                |
-| 999 - 37101          |        | 250.00 | Treasurer’s fund – Due to Fund 101 (Posting definition for settlement) |
+| 999 - 11530          | 250.00 | &nbsp; | Customer summary (System-generated)                                    |
+| 101 - 11530          | &nbsp; | 250.00 | Invoice receivable (System-generated)                                  |
+| 101 - 11010          | 250.00 | &nbsp; | Equity for Fund 101 (Posting definition for settlement)                |
+| 999 - 37101          | &nbsp; | 250.00 | Treasurer’s fund – Due to Fund 101 (Posting definition for settlement) |
 
 ### Summarizing the entries across the invoice, payment, and settlement vouchers
 
@@ -262,10 +262,10 @@ The following table shows how the final ledger accounts are affected.
 
 | Account + Dimensions | Debit  | Credit | Comment                                                                |
 |----------------------|--------|--------|------------------------------------------------------------------------|
-| 999 - 11020          | 250.00 |        | Bank/cash account                                                      |
-| 101 - 44400          |        | 250.00 | Revenue account                                                        |
-| 101 - 11010          | 250.00 |        | Equity for Fund 101 (Posting definition for settlement)                |
-| 999 - 37101          |        | 250.00 | Treasurer’s fund – Due to Fund 101 (Posting definition for settlement) |
+| 999 - 11020          | 250.00 | &nbsp; | Bank/cash account                                                      |
+| 101 - 44400          | &nbsp; | 250.00 | Revenue account                                                        |
+| 101 - 11010          | 250.00 | &nbsp; | Equity for Fund 101 (Posting definition for settlement)                |
+| 999 - 37101          | &nbsp; | 250.00 | Treasurer’s fund – Due to Fund 101 (Posting definition for settlement) |
 
 In addition to the example earlier in this section, posting definitions for settlements that are associated with the customer payment journal transaction type can also be applied in the following scenarios:
 
@@ -298,8 +298,8 @@ When the write-off posting definition is set up to reverse the originating reven
 
 | Account + Dimensions | Debit  | Credit | Comment             |
 |----------------------|--------|--------|---------------------|
-| 101 - 44400 - -      |        | 250.00 | Revenue account     |
-| 101 - 11530          | 250.00 |        | Accounts receivable |
+| 101 - 44400 - -      | &nbsp; | 250.00 | Revenue account     |
+| 101 - 11530          | 250.00 | &nbsp; | Accounts receivable |
 
 ### Accounts receivable write-off – General ledger credit voucher
 
@@ -307,10 +307,10 @@ In this example, the posting definition for write-off is set to reverse the reve
 
 | Account + Dimensions | Debit  | Credit | Comment                                                                |
 |----------------------|--------|--------|------------------------------------------------------------------------|
-| 999 - 11530          |        | 250.00 | Customer summary                                                       |
-| 101 - 44400 - -      | 250.00 |        | Bank/cash account                                                      |
-| 101 - 11010          |        | 250.00 | Equity for Fund 101 (Posting definition for settlement)                |
-| 999 - 37101          | 250.00 |        | Treasurer’s fund – Due to Fund 101 (Posting definition for settlement) |
+| 999 - 11530          | &nbsp; | 250.00 | Customer summary                                                       |
+| 101 - 44400 - -      | 250.00 | &nbsp; | Bank/cash account                                                      |
+| 101 - 11010          | &nbsp; | 250.00 | Equity for Fund 101 (Posting definition for settlement)                |
+| 999 - 37101          | 250.00 | &nbsp; | Treasurer’s fund – Due to Fund 101 (Posting definition for settlement) |
 
 ### Accounts receivable write-off – Settlement voucher
 
@@ -318,10 +318,10 @@ In this example, the credit that is created in the general ledger voucher is app
 
 | Account + Dimensions | Debit  | Credit | Comment                                                                |
 |----------------------|--------|--------|------------------------------------------------------------------------|
-| 999 - 11530          | 250.00 |        | Customer summary (System-generated)                                    |
-| 101 - 11530          |        | 250.00 | Invoice receivable (System-generated)                                  |
-| 101 - 11010          | 250.00 |        | Equity for Fund 101 (Posting definition for settlement)                |
-| 999 - 37101          |        | 250.00 | Treasurer’s fund – Due to Fund 101 (Posting definition for settlement) |
+| 999 - 11530          | 250.00 | &nbsp; | Customer summary (System-generated)                                    |
+| 101 - 11530          | &nbsp; | 250.00 | Invoice receivable (System-generated)                                  |
+| 101 - 11010          | 250.00 | &nbsp; | Equity for Fund 101 (Posting definition for settlement)                |
+| 999 - 37101          | &nbsp; | 250.00 | Treasurer’s fund – Due to Fund 101 (Posting definition for settlement) |
 
 ### Summarizing the entries across the invoice, write-off credit, and settlement vouchers
 
@@ -375,12 +375,12 @@ Then, in the posting definition, enter the following match criteria and generate
 
 | Account + Dimensions | Debit  | Credit | Comment                          |
 |----------------------|--------|--------|----------------------------------|
-| 101 - 44400 - -      |        | 250.00 | Revenue account in Fund 101      |
-| 999 - 44400 - -      |        | 250.00 | Revenue account in Fund 999      |
-| 101 - 11530          | 250.00 |        | Accounts receivable in Fund 101  |
-| 999 - 11535          | 250.00 |        | Accounts receivable in Fund 999  |
-| 999-11530            |        | 500.00 | Customer summary                 |
-| 999 - 11020          | 500.00 |        | Cash account on terms of payment |
+| 101 - 44400 - -      | &nbsp; | 250.00 | Revenue account in Fund 101      |
+| 999 - 44400 - -      | &nbsp; | 250.00 | Revenue account in Fund 999      |
+| 101 - 11530          | 250.00 | &nbsp; | Accounts receivable in Fund 101  |
+| 999 - 11535          | 250.00 | &nbsp; | Accounts receivable in Fund 999  |
+| 999-11530            | &nbsp; | 500.00 | Customer summary                 |
+| 999 - 11020          | 500.00 | &nbsp; | Cash account on terms of payment |
 
 This includes additional credit entries in the voucher.
 
@@ -390,12 +390,12 @@ In this example, the **Match account number** values for the posting definition 
 
 | Account + Dimensions | Debit  | Credit | Comment                                                                |
 |----------------------|--------|--------|------------------------------------------------------------------------|
-| 999 - 11530          | 250.00 |        | Customer summary (Posting definition for settlement)                   |
-| 101 - 11530          |        | 250.00 | Invoice receivable (Posting definition for settlement)                 |
-| 101 - 11010          | 250.00 |        | Equity for Fund 101 (Posting definition for settlement)                |
-| 999 - 37101          |        | 250.00 | Treasurer’s fund – Due to Fund 101 (Posting definition for settlement) |
-| 999 - 11530          | 250.00 |        | Customer summary (Posting definition for settlement)                   |
-| 999 - 11535          |        | 250.00 | Customer summary (Posting definition for settlement)                   |
+| 999 - 11530          | 250.00 | &nbsp; | Customer summary (Posting definition for settlement)                   |
+| 101 - 11530          | &nbsp; | 250.00 | Invoice receivable (Posting definition for settlement)                 |
+| 101 - 11010          | 250.00 | &nbsp; | Equity for Fund 101 (Posting definition for settlement)                |
+| 999 - 37101          | &nbsp; | 250.00 | Treasurer’s fund – Due to Fund 101 (Posting definition for settlement) |
+| 999 - 11530          | 250.00 | &nbsp; | Customer summary (Posting definition for settlement)                   |
+| 999 - 11535          | &nbsp; | 250.00 | Customer summary (Posting definition for settlement)                   |
 
 ### Summarizing the entries across the invoice, payment, and settlement vouchers
 
@@ -403,11 +403,11 @@ The following table shows how the final ledger accounts are affected.
 
 | Account + Dimensions | Debit  | Credit | Comment                                                                |
 |----------------------|--------|--------|------------------------------------------------------------------------|
-| 999 - 11020          | 500.00 |        | Cash account on terms of payment                                       |
-| 101 - 44400 - -      |        | 250.00 | Revenue in Fund 101                                                    |
-| 999 - 44400 - -      |        | 250.00 | Revenue in Fund 999                                                    |
-| 101 - 11010          | 250.00 |        | Equity for Fund 101 (Posting definition for settlement)                |
-| 999 - 37101          |        | 250.00 | Treasurer’s fund – Due-to Fund 101 (Posting definition for settlement) |
+| 999 - 11020          | 500.00 | &nbsp; | Cash account on terms of payment                                       |
+| 101 - 44400 - -      | &nbsp; | 250.00 | Revenue in Fund 101                                                    |
+| 999 - 44400 - -      | &nbsp; | 250.00 | Revenue in Fund 999                                                    |
+| 101 - 11010          | 250.00 | &nbsp; | Equity for Fund 101 (Posting definition for settlement)                |
+| 999 - 37101          | &nbsp; | 250.00 | Treasurer’s fund – Due-to Fund 101 (Posting definition for settlement) |
 
 ## Example: Advanced ledger entries
 When you create advanced ledger entries, you must select a default posting definition. Then, for each advanced ledger entry line, you can either use the default posting definition or select another one. The posting definitions generate the accounting distributions and subledger journal entries that create, adjust, or reverse the ledger entries and update the ledger accounts. You set up each posting definition for the General ledger app. However, you don't associate the posting definition with a transaction type, as you do for other posting definitions. Instead, you select the posting definition in the advanced ledger entry. 
@@ -450,19 +450,19 @@ In this scenario, Accounts payable invoice AP\_0949 was mistakenly posted to Cap
 
 | Account + Dimensions | Debit | Credit | Comment                    |
 |----------------------|-------|--------|----------------------------|
-| 300-12300-51002      | 350   |        | Advanced ledger entry line |
-| 100-39810-51001      |       | 350    | Advanced ledger entry line |
+| 300-12300-51002      | 350   | &nbsp; | Advanced ledger entry line |
+| 100-39810-51001      |&nbsp; | 350    | Advanced ledger entry line |
 
 ### Ledger entries generated from the posting definition
 
 | Account + Dimensions | Debit | Credit | Comment       |
 |----------------------|-------|--------|---------------|
-| 300-11001            |       | 350    | Summary entry |
-| 900-11001            |       | 350    | Summary entry |
-| 900-37300            | 350   |        | Summary entry |
-| 100-11001            | 350   |        | Summary entry |
-| 900-11001            | 350   |        | Summary entry |
-| 900-37301            |       | 350    | Summary entry |
+| 300-11001            | &nbsp; | 350    | Summary entry |
+| 900-11001            | &nbsp; | 350    | Summary entry |
+| 900-37300            | 350   | &nbsp; | Summary entry |
+| 100-11001            | 350   | &nbsp; | Summary entry |
+| 900-11001            | 350   | &nbsp; | Summary entry |
+| 900-37301            | &nbsp; | 350    | Summary entry |
 
 ## Examples: General ledger year-end close
 Organizations use posting definitions in the year-end closing of the general ledger accounts. Posting definitions can be used to close the accounts to fund balances or retained earnings, based on the fund (dimension) class attribute, together with the account close type attribute. Posting definitions are required to close the general ledger accounts and to transfer balances to the opening period in the new fiscal year. 
@@ -527,7 +527,7 @@ The ledger accounts balance through the selected period appears on the **Opening
 
 | Account + Dimensions | Debit  | Credit | Comment |
 |----------------------|--------|--------|---------|
-| 101-66100-130        | 250.00 |        |         |
+| 101-66100-130        | 250.00 | &nbsp; | &nbsp;  |
 
 #### Governmental funds – Ledger entries generated from the posting definition
 
@@ -535,8 +535,8 @@ Generated ledger entries are created to record the closing entry.
 
 | Account + Dimensions | Debit  | Credit | Comment |
 |----------------------|--------|--------|---------|
-| 101-66100-130-       |        | 250.00 |         |
-| 101-37300            | 250.00 |        |         |
+| 101-66100-130-       | &nbsp; | 250.00 | &nbsp; |
+| 101-37300            | 250.00 | &nbsp; | &nbsp;  |
 
 In this example, Fund 101 is defined as a **Governmental** fund class on the **Funds** page in General ledger. On the **Transaction posting definitions** page, the **General ledger** close transaction type is associated with the **Governmental** fund class and the posting definition. 
 
@@ -594,7 +594,7 @@ The ledger accounts balance through the selected period appears on the **Opening
 
 | Account + Dimensions | Debit  | Credit | Comment |
 |----------------------|--------|--------|---------|
-| 601-66100-130        | 250.00 |        |         |
+| 601-66100-130        | 250.00 | &nbsp; | &nbsp;  |
 
 #### Proprietary funds – Ledger entries generated from the posting definition
 
@@ -602,8 +602,8 @@ Generated ledger entries are created to record the closing entry.
 
 | Account + Dimensions | Debit  | Credit | Comment |
 |----------------------|--------|--------|---------|
-| 601-66100-130-       |        | 250.00 |         |
-| 601-37310            | 250.00 |        |         |
+| 601-66100-130-       | &nbsp; | 250.00 | &nbsp;  |
+| 601-37310            | 250.00 | &nbsp; | &nbsp;  |
 
 In this example, Fund 601 is defined as a **Proprietary** fund class on the **Fund** page. On the **Transaction posting definitions** page, the **General ledger** close transaction type is associated with the **Proprietary** fund class and the posting definition. 
 

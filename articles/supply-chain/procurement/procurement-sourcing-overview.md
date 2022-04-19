@@ -5,7 +5,7 @@ title: Procurement and sourcing overview
 description: This article gives an overview of the functionality that's available in the Procurement and sourcing module.
 author: Henrikan
 ms.date: 05/06/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 

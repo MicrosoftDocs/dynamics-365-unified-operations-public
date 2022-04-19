@@ -4,7 +4,7 @@
 title: Export a database
 description: This topic explains how to export a database for Finance and Operations.
 author: LaneSwenka
-ms.date: 09/23/2021
+ms.date: 02/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -81,6 +81,7 @@ When you export a database backup from an environment, some elements of the data
 * Print Management settings in the **PrintMgmtSettings** and **PrintMgmtDocInstance** tables.
 * Environment-specific records in the **SysServerConfig**, **SysServerSessions**, **SysCorpNetPrinters**, **SysClientSessions**, **BatchServerConfig**, and **BatchServerGroup** tables.
 * Document attachments in the **DocuValue** table. These attachments include any Microsoft Office templates that were overwritten in the source environment.
+* Database log history in the **DatabaseLog** table.
 * All users except the admin will be set to **Disabled** status.
 * All batch jobs are set to **Withhold** status.
 * All users will have their partition value reset to the "initial" partition record ID.

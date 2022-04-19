@@ -4,7 +4,7 @@
 title: Create an e-commerce site
 description: This topic describes the steps and information required to create a new e-commerce site in Dynamics 365 Commerce site builder.
 author: bicyclingfool
-ms.date: 07/02/2020
+ms.date: 03/10/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -35,6 +35,19 @@ This topic describes the steps and information required to create a new e-commer
 
 When you license the Dynamics 365 Commerce capabilities, site builder will be provisioned with a starter site that you can use as a basis for your own site. However, if you want to start from scratch or if you want to establish a second site, you will need to establish a new site in the site authoring environment. 
 
+## Site creation prerequisites
+
+A site builder user must have a Microsoft Azure Active Directory (Azure AD) user account included in the Azure AD security group assigned for the e-commerce system administrators. For more information, see [Deploy a new e-commerce tenant](deploy-ecommerce-site.md).
+
+> [!NOTE]
+> Azure AD guest users may have different access permissions in your Azure AD tenant. Even if included in the Azure AD security group assigned for the e-commerce system administrators, a guest user may need Azure AD **External users** permission settings to be adjusted in order to create an e-commerce site in Commerce. 
+
+To adjust Azure AD **External users** settings, follow these steps.
+
+1. In the Azure portal, navigate to your Azure AD tenant.
+1. Go to **User settings \> External users** and select the **Manage external collaboration settings** link. This opens the **External collaboration settings** page where guest user access, guest invite settings, and collaboration restrictions can be set. 
+1. Adjust the external collaboration settings in accordance with your company's security policies. 
+
 ## Set up your site
 
 To set up your site, do the following.
@@ -52,8 +65,23 @@ To set up your site, do the following.
 | Domain                              | Select a domain name that will serve as the domain for this online store. If you haven't configured any domains in LCS, you can leave this field blank. After your domain is configured in LCS, you must add it to your online store in **Site settings**.  |
 | Path                              | When your site supports more than one language for a given domain name, use the path field to create a unique site URL for that domain and language combination. If the language you specified in the **Default language** field is the only language you will support for this domain, or will continue to be the default language after you have localized your site into additional languages, we recommend that you leave this field empty. |
 
-
 After your site is created, you can verify that it is associated with your online store by selecting the **Products** tab. You should see the assortment of products that has been allocated to the online store. You can also use the drop-down menu in the upper left of the page to access the allocated products by category.
+
+## Rename your site
+
+To rename your site in site builder, follow these steps.
+
+1. To open site list view, select **Site switcher** in the upper-right corner, and then select **Manage sites** . 
+1. Select the check box next to the site that you want to rename, and then select **Rename** on the command bar.
+1. In the **New site name** dialog box, enter the new site name, and then select **OK**. The site list will update to show the site's new name.
+
+## Delete a site
+
+To delete a site in site builder, follow these steps.
+
+1. To open site list view, select **Site switcher** in the upper-right corner, and then select **Manage sites**.
+1. Select the site you want to delete, and then select **Delete** on the command bar.
+1. In the **Delete \<site name\>** dialog box, enter the site name, and then select **Delete**.
 
 ## Additional resources
 

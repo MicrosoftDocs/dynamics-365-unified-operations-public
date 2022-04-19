@@ -4,7 +4,7 @@
 title: Open in Excel experiences FAQ
 description: Learn about creating Open in Office experiences for Excel and Word.
 author: jasongre
-ms.date: 11/17/2020
+ms.date: 03/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [applies to](../includes/applies-to-commerce-finance-hr-scm.md)]
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Learn about creating Open in Office experiences for Excel and Word.
 
@@ -398,6 +401,14 @@ The easiest way to set up dimension metadata on data entities is to use the data
 If a formula is needed in a table, then add a formula column. When in the field selection page for a table binding, click the **Formula** button above the Selected fields list to add a new formula column. The label and value for the formula are entered in the fields immediately below the Selected fields list. After adding a new formula column, leave the value empty and click **Update**. After the field has been added to the table, use standard Excel capabilities to create a formula, then copy the formula and paste it into the formula column value field. When defining a formula, make sure there is more than one row in the table, otherwise the formula that Excel provides may be for ALL rows instead of THAT row. To specify just the current row, the at sign (@) is needed. For example, sum of four columns for all rows "=SUM(Table1\[\[ColumnA\]:\[ColumnD\]\])" versus sum of four columns for the current row "=SUM(Table1\[@\[ColumnA\]:\[ColumnD\]\])".
 
 ## Known issues
+### Error triggered when selecting custom Excel templates
+
+This issue occurs when the user selects an Excel template from an **Open in Excel** button and receives the following error: `Record for Id {guid} not found`
+
+The error occurs when a custom Excel template cannot be found. One scenario that could cause this error is moving the Finance and Operations database between environments, but not copying the Excel templates.  
+
+To resolve this issue, delete the database entry for the template from the **Document templates** page (**Common > Common > Office integration > Document templates**) and then reload the template. 
+
 ### Refresh doesn’t automatically occur in old templates
 
 The ability to control “refresh on open” was added as a setting. To add this to the default behavior, existing templates and workbooks need to have the **Refresh on open** check box selected in **Options** &gt; **Data Connector** &gt; **Refresh Options**.

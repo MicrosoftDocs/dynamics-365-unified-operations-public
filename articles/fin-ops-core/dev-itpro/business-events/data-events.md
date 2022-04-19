@@ -4,7 +4,7 @@
 title: Data events
 description: This topic provides an overview of data events.
 author: jaredha
-ms.date: 10/25/2021
+ms.date: 03/16/2022
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -48,7 +48,7 @@ Data events can be activated either in all legal entities or in specific legal e
 
 Only company-specific data events can be configured for specific legal entities. When you configure data events that aren't company-specific, the **Legal entity** field isn't editable, and the data events are enabled for all legal entities.
 
-To activate a data event, select a configured endpoint. For information about how to configure endpoints business events and data events, see [Managing endpoints](home-page.md#managing-endpoints).
+To activate a data event, select a configured endpoint. For information about how to configure endpoints business events and data events, see [Manage business event endpoints](managing-business-event-endpoints.md).
 
 When you activate a data event, it's added to the list on the **Active data events** tab of the **Business events** page and becomes available for subscription through the selected endpoint.
 
@@ -66,6 +66,18 @@ When data events are no longer required to meet business requirements, you can d
 
 The **Data event catalog** tab on the **Business events** page also shows the fields that are passed to a data event and that make up the event schema. The information that is shown includes the field name and label. You can download the JavaScript Object Notation (JSON) schema for an event by selecting **Download schema**. This capability is helpful when external integration systems require the schema of the payload for a business event during development.
 
+## Performance benchmarks
+
+The data events functionality currently supports a burst rate of 5,000 events per five-minute period, up to 50,000 events per hour, across all entities for the environment. Event loads above these thresholds may encounter performance degradation in environment processing. There are no limits in place to explicitly throttle events, and any events above the supported thresholds will still be sent, but it may slow the performance of the environment. 
+
+Data events for update operations are inherently more expensive to process than data events for create and delete operations in Finance and Operations. If your active data events are for update operations, you may see environment performance degrade more quickly when exceeding the supported thresholds.
+
+## Limitations
+
+Data events are not supported for updates to virtual fields. Modify data events are triggered by update operations on the underlying tables of an entity. Because virtual fields are values calculated in X++ code, any change in the value doesn't result in any data operations against the physical tables, and won't trigger a data event.
+
+For more information on virtual fields, see [Computed columns and virtual fields in data entities](../data-entities/data-entity-computed-columns-virtual-fields.md).
+
 [!include[banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+

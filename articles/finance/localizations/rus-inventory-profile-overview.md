@@ -4,7 +4,7 @@ title: Inventory profile overview
 description: This topic provides information about the inventory profile which is intended for the implementation of and accounting for movements and on-hand inventory as they relate to activities.
 author: v-nadyuz
 ms.date: 05/11/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -15,7 +15,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.search.region: Russia
 # ms.search.industry: 
 ms.author: kfend

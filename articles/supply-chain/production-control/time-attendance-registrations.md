@@ -5,7 +5,7 @@ title: Time and attendance registration overview
 description: Time registration workers can enter different types of time registrations, for example, clock in, clock out, register indirect activities, and absence registration. This topic describes registrations, their calculation, approval, and the use of workflow to add structure and automated approval to the process of approving timesheets. 
 author: johanhoffmann
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 

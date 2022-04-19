@@ -4,7 +4,7 @@
 title: Generate financial reports
 description: This topic provides information about generating a financial report.
 author: jinniew
-ms.date: 03/08/2021
+ms.date: 02/08/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -33,14 +33,27 @@ ms.dyn365.ops.version: AX 7.0.1
 
 This topic provides information about generating a financial report.
 
-To generate a report, open the report definition and then select the **Generate** button on the toolbar. The **Report Queue Status** page will open and indicate the location of your report in the queue. By default, the generated report will open in the Web Viewer.
+To generate a report, open the report definition and on the toolbar, select **Generate**. The **Report Queue Status** page opens and indicates the location of your report in the queue.
 
-The following options are available for generating reports:
+As the report generation progresses, the following report queue status indicators may be visible on the **Report Queue Status** page.
+
+| Status          | State | Description|
+|-----------------|--------|--------------------|
+| Queueing        | Interim |The report definition is validated before the report is put in the generation queue.                    |
+| Queued          | Interim | The report enters the report generation queue and waits to be processed.                      |
+| Processing      | Interim | This status typically follows the **Queued** status and usually transitions to a **Final** state when processing is complete.       |
+| PostProcessing | Interim | This status follows the **Processing** status and indicates that all the report data are collected, but that derivative actions, such as calculation and rollup, are being performed.            |
+| Cancelling      | Interim | The reporting is canceled at the user's request. This state results from a user-requested cancellation for a report in the **Queued** or **Processing** state. The system attempts to put the report in the **Canceled** state, unless the system is too far along and must finalize it in another state. |
+| Canceled        | Final | The report is finished processing but didn't complete due to a user-requested stop.            |
+| Completed       | Final | The report is ready for use.                      |
+| Failed          | Final | The report finished processing but failed and shouldn't be used. |
+
+By default, the generated report will open in the Web Viewer. The following options are available for generating reports:
 
 - Set up a schedule to generate a report or group of reports automatically
 - Check for missing accounts or data in a report, and validate the accuracy of a report
 
-When you generate a report, the options that you have specified on the Report definition tabs are used.
+When you generate a report, the options that you've specified on the Report definition tabs are used.
 
 ## Generate a financial report
 
@@ -66,9 +79,9 @@ Report groups are an efficient way to generate several reports at the same time.
 4. Save the report group.
 
 ## Schedule report generation
-Many companies have a core set of reports that are run at scheduled intervals to align with their business processes. You can schedule a report to be generated regularly, such as daily, weekly, monthly, or annually. This can be a single report or a group of reports that includes multiple companies. You must enter your credentials for each of the companies that are specified, such as those in a reporting tree definition. If the credentials are not valid, the report will display only the information that you have permission to access, such as the company that you are logged on to at the time. Output information is read first from the report group, and then from the individual reports.
+Many companies have a core set of reports that are run at scheduled intervals to align with their business processes. You can schedule a report to be generated regularly, such as daily, weekly, monthly, or annually. This can be a single report or a group of reports that includes multiple companies. You must enter your credentials for each of the companies that are specified, such as those in a reporting tree definition. If the credentials aren't valid, the report will display only the information that you've permission to access, such as the company that you are logged on to at the time. Output information is read first from the report group, and then from the individual reports.
 
-As report schedules are created and saved, they are displayed in the navigation pane under Report Schedules. You can create folders to organize the reports. If a single report in a schedule does not run, all other reports will continue to run.
+As report schedules are created and saved, they're displayed in the navigation pane under Report Schedules. You can create folders to organize the reports. If a single report in a schedule does not run, all other reports will continue to run.
 
 > [!IMPORTANT]
 > To create, modify, and delete report schedules, you must have the role of designer or administrator. When a report is run, the credentials of the user who created the schedule are used to generate the report.
@@ -104,13 +117,13 @@ To delete a report schedule, you must be the owner of the report schedule or hav
 
 1. In Report Designer, select **Report Schedules** in the navigation pane.
 2. Select the report schedule to delete, and then select **Delete** or press the **Delete** key.
-3. In the deletion verification dialog box, select **Yes** to permanently delete the report schedule. If you do not have permission to delete the schedule, a message is displayed and the report is not deleted.
+3. In the deletion verification dialog box, select **Yes** to permanently delete the report schedule. If you do not have permission to delete the schedule, a message is displayed and the report isn't deleted.
 
 ### Credentials and report schedules
 
 If you do not enter credentials that are required for all companies included in the reports, you receive the following message when you save the report schedule: "You must enter your credentials for the companies that are contained in this report schedule. Select the Permissions button to enter in your credentials."
 
-For example, a user logs on to Company A using a logon and password. The user creates a schedule for a report that uses a reporting tree definition to collect data from multiple companies. When this report schedule is saved, the user is prompted to enter the credentials for the other companies that are specified in the reporting tree definition. When your credentials expire, the affected reports in the report schedule are not generated until the credentials have been updated. A message is displayed in the report queue to indicate that permissions must be updated. The report schedule fails if any of the following scenarios occur (because they require credentials):
+For example, a user logs on to Company A using a logon and password. The user creates a schedule for a report that uses a reporting tree definition to collect data from multiple companies. When this report schedule is saved, the user is prompted to enter the credentials for the other companies that are specified in the reporting tree definition. When your credentials expire, the affected reports in the report schedule aren't generated until the credentials have been updated. A message is displayed in the report queue to indicate that permissions must be updated. The report schedule fails if any of the following scenarios occur (because they require credentials):
 
 - A new company has been added to a report tree for an individual report.
 - A report in a report group has been modified.
@@ -121,12 +134,12 @@ To continue, select the **Permissions** button in the **Report Scheduling** dial
 ## Missing account analysis feature
 You can search for financial accounts and dimensions that might be missing across all row definitions, reporting tree definitions, and report definitions in a building block group. This is useful when you create or update several accounts or building blocks during a short time period, and you want to verify that all new information is included in your reports.
 
-Missing accounts are determined by using the lowest and highest values from the row definition or reporting tree definition, and then displays a list of accounts that are not in the row definition or reporting tree definition, but that are in the financial data. If a missing account is greater than or less than the values in the row definition, that account is not included in the list of missing accounts.
+Missing accounts are determined by using the lowest and highest values from the row definition or reporting tree definition, and then displays a list of accounts that aren't in the row definition or reporting tree definition, but that are in the financial data. If a missing account is greater than or less than the values in the row definition, that account isn't included in the list of missing accounts.
 
 > [!TIP]
 > For validation purposes, this process should be run before you generate monthly reports and when you create new building blocks.
 
-Reports that have ranges of values are less likely to have missing accounts. When possible, use ranges in the building block to include new accounts when they are created. If any report definition is set to @ANY company, then you can log on to a specific company and run a missing account analysis for that company.
+Reports that have ranges of values are less likely to have missing accounts. When possible, use ranges in the building block to include new accounts when they're created. If any report definition is set to @ANY company, then you can log on to a specific company and run a missing account analysis for that company.
 
 > [!NOTE]
 > If a new company has been added, you must add the new company to the reporting trees in any existing reports or the company will not be included in the missing account analysis.
@@ -139,8 +152,8 @@ Reports that have ranges of values are less likely to have missing accounts. Whe
 4. In the **Group by** field, select an option for sorting the results. You can sort results according to the building block that is affected, or you can sort results by dimension and value sets.
 5. Review the displayed results. When you select an item in the upper pane, the lower pane displays additional information about the exception. This includes related dimensions, values, and reports.
 6. To open the affected item, select the associated icon that is displayed in the list pane, or right-click the item and select **Open**. To select multiple items, hold down the **Ctrl** key while you select the items in the lower pane.
-7. If any values, building blocks, or reports are returned that should not be included in the analysis, right-click the item and select **Exclude**, or select the **Exclude** check box next to the item to remove the item from the list. Excluded items are not included when the list is refreshed. To select multiple items, hold down the **Ctrl** key while you select the items in the lower pane. To view all items, including any results that you previously selected to exclude from the analysis, select the **Show excluded building blocks and values** check box, and then select **Refresh**.
-8. Select **Refresh** to refresh exceptions that you have addressed. Select **Yes** to perform a full refresh of all of the results, or select **No** to perform a partial refresh of addressed items.
+7. If any values, building blocks, or reports are returned that shouldn't be included in the analysis, right-click the item and select **Exclude**, or select the **Exclude** check box next to the item to remove the item from the list. Excluded items aren't included when the list is refreshed. To select multiple items, hold down the **Ctrl** key while you select the items in the lower pane. To view all items, including any results that you previously selected to exclude from the analysis, select the **Show excluded building blocks and values** check box, and then select **Refresh**.
+8. Select **Refresh** to refresh exceptions that you've addressed. Select **Yes** to perform a full refresh of all of the results, or select **No** to perform a partial refresh of addressed items.
 
     > [!NOTE]
     > The form is automatically refreshed when it opens unless the form has been opened in the last 15 minutes.

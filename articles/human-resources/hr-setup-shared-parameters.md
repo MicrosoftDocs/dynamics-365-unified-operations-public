@@ -2,9 +2,9 @@
 # required metadata
 
 title: Configure shared parameters
-description: You must set up shared parameters for records that are shared across companies, such as Position records. This article explains how to set up Human resources parameters across legal entities.
-author: andreabichsel
-ms.date: 06/24/2021
+description: This topic explains how to set up Human resources parameters across legal entities.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.custom: 51891
 ms.assetid: c7d8f58c-d78a-4035-abbf-2b0ce16109fe
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
@@ -31,16 +31,16 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-You must set up shared parameters for records that are shared across companies, such as Position records. This article explains how to set up Human resources parameters across legal entities.
+You must set up shared parameters for records that are shared across companies, such as **Position** records. This topic explains how to set up Human resources parameters across legal entities.
 
-Some types of records, such as Position records, are shared across companies. For these records, you must set up shared parameters. For example, you use the **Human resources shared parameters** page to set up Human resources parameters across legal entities. 
+Some types of records, such as **Position** records, are shared across companies. For these records, you must set up shared parameters. For example, the **Human resources shared parameters** page is used to set up Human resources parameters across legal entities. 
 
 On the **Human resources shared parameters** page, parameters are grouped into areas, based on their functionality. 
 
 ### Settings
-On the **Identification** tab, you must select the identification types that represent the identification numbers that are listed on the page. You must set up identification types before you can enter identification information for workers. Information about the Social Security number, national ID number, alien ID number, and personal ID code is maintained on the **Identification type** page. To define a new identification type or review the list of existing types, click **Personnel management** &gt; **Links tab** &gt; **Setup** &gt; **Identification types**. You can enter a simple code and description. 
+On the **Identification** tab, you must select the identification types that represent the identification numbers that are listed on the page. You must set up identification types before you can enter identification information for workers. Information about the Social Security number, national ID number, alien ID number, and personal ID code is maintained on the **Identification type** page. To define a new identification type or review the list of existing types, go to **Personnel management** &gt; **Links** &gt; **Setup** &gt; **Identification types**. You can enter a simple code and description. 
 
-On the **Number sequences** tab, you can select the number sequences that are used for the following records: Personnel number, Position, User request ID, I-9 document, Applicant, Discussion, Benefit ID, and Personnel action (if this record type is enabled). To maintain number sequence references and codes, use the **Number sequences** list page. To find this page, use the page search feature. 
+On the **Number sequences** tab, you can select the number sequences that are used for the following records: **Personnel number**, **Position**, **User request ID**, **I-9 document**, **Applicant**, **Discussion**, **Benefit ID**, and **Personnel action** (if this record type is enabled). To maintain number sequence references and codes, use the **Number sequences** list page. To find this page, use the page search feature. 
 
 On the **Positions** tab, indicate whether new positions are available for assignment by default:
 
@@ -49,19 +49,19 @@ On the **Positions** tab, indicate whether new positions are available for assig
 
 On the **Advanced access** tab, you can restrict access to some information or links:
 
-- **Restrict access to worker information** – Turn on this feature if users should be able to view employee information only for those legal entities that they have access to, and for employees who have employment in those legal entities.
+- **Restrict access to worker information** – Select this feature if users should be able to view employee information only for those legal entities that they have access to, and for employees who have employment in those legal entities.
 
-    After this feature is turned on, you must follow these steps to set the appropriate permissions for each user whose view must be restricted:
+    After this feature is selected, follow these steps to set the appropriate permissions for each user whose view must be restricted:
 
     1. On the **Users** page, select a user.
     1. Select a role for the user. The **Assign organizations** option becomes available.
     1. Select **Assign organizations**.
     1. On the new page, select **Grant access to specific organizations individually**, and then select the organizations that the user should have access to.
-    1. Repeat steps 2 through 4 for every other role that the user has, including the system user role.
+    1. Repeat steps 2 through 4 for every additional role that the user has, including the system user role.
 
     > [!NOTE]
     > The companies that a user has access to must match across all the user's roles.
 
-- **Enable cross-company compensation view** – Compensation for employees is assigned per legal entity of employment. Sometimes, an employee can be employed in multiple legal entities at the same time. When this feature is turned on, compensation for each legal entity will appear in Employee Self-Service and Manager Self-Service without requiring that you change legal entities. 
+- **Enable cross-company compensation view** – Compensation for employees is assigned per legal entity of employment. Sometimes, an employee can be employed in multiple legal entities at the same time. When this feature is selected, compensation for each legal entity will appear in **Employee self service** and **Manager self service** without requiring that you change legal entities. 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

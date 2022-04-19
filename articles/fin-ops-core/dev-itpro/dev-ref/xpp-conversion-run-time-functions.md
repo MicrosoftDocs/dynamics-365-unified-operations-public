@@ -4,9 +4,9 @@ description: This topic describes the conversion run-time functions.
 author: RobinARH
 ms.date: 06/26/2018
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

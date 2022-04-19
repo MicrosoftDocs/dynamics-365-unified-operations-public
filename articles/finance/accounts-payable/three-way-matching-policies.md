@@ -4,7 +4,7 @@
 title: Three-way matching policies
 description: This topic provides examples of three-way matching.
 author: abruer
-ms.date: 10/26/2017
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.search.form: VendInvoicePostingHistory
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 2761
 ms.assetid: 70f3cb1a-18b7-4474-95ec-28b2410dd8f8
@@ -47,10 +47,10 @@ The invoice matching policies in this example help people in the following roles
 
 ### Prerequisites
 
--   Ken sets the matching policy at the legal entity level to Three-way matching.
--   Ken sets the Automatically update header matching status toggle at the legal entity to Yes.
--   Ken sets the Match price totals field for the legal entity to Percentage, and enters 15% as the tolerance percentage.
--   Ken sets the matching policy at the item level for item 1500 – CNC Milicron Machine to Three-way matching. This item is an asset item that is used for production at Fabrikam. Invoices for this item are matched with purchase order lines for prices and with product receipts for quantities.
+-   Ken sets the **Matching policy** at the legal entity level to **Three-way matching**.
+-   Ken sets the **Automatically update header matching status** toggle at the legal entity to **Yes**.
+-   Ken sets the **Match price totals** field for the legal entity to **Percentage**, and enters 15% as the **Tolerance percentage**.
+-   Ken sets the matching policy at the item level for item 1500 – CNC Milicron Machine to **Three-way matching**. This item is an asset item that is used for production at Fabrikam. Invoices for this item are matched with purchase order lines for prices and with product receipts for quantities.
 -   Tony enters a requisition for five CNC Milicron Machines. Alicia, a purchase order clerk at Fabrikam, issues a purchase order to a legal entity named Contoso to supply the items.
 
     | Item number                 | Quantity | Unit price | Net amount | Charges code        | Charges value |
@@ -96,11 +96,11 @@ The invoice matching policies in this example help people in the following roles
 
 ### Prerequisites
 
--   Ken sets the matching policy at the legal entity level to Two-way matching.
--   Ken sets the Match price totals field for the legal entity to Percentage, and enters 10% as the tolerance percentage.
+-   Ken sets the **Matching policy** at the legal entity level to **Two-way matching**.
+-   Ken sets the **Match price totals** field for the legal entity to **Percentage**, and enters **10%** as the **Tolerance percentage**.
 -   Ken sets the unit price tolerance for all items to 2%.
--   Cassie sets the matching policy at the item and vendor combination level for item PH2500 – Computer and vendor Contoso to Three-way matching.
--   Alicia, a purchase order clerk at the Malaysia division of Fabrikam, issues purchase orders to Contoso to supply three items, as shown in the following table. When she creates the purchase order, she overrides the matching policy for the wireless mouse to be three-way matching instead of two-way matching.
+-   Cassie sets the **Matching policy** at the item and vendor combination level for item PH2500 – Computer and vendor Contoso to **Three-way matching**.
+-   Alicia, a purchase order clerk at the Malaysia division of Fabrikam, issues purchase orders to Contoso to supply three items, as shown in the following table. When she creates the purchase order, she overrides the **Matching policy** for the wireless mouse to be three-way matching instead of two-way matching.
 
     | Item number           | Quantity | Unit price | Net amount | Matching policy (default entry) | Matching policy (on the purchase order line) |
     |-----------------------|----------|------------|------------|---------------------------------|----------------------------------------------|
@@ -139,7 +139,7 @@ Note the following items:
 -   For the MM01 – Wireless Mouse line, the Product receipt quantity match column has a warning icon because the invoice line is not matched to a product receipt. The Unit price match column has a warning icon because the 2% net unit price tolerance is exceeded.
 -   For the USB Drive line, the Product receipt quantity match column is blank because two-way matching does not match invoice line and product receipt line quantities.
 
-If approval is required for invoices to be posted with invoice matching discrepancies, the Approve posting with matching discrepancies toggle on the Invoice matching details page must be selected before the invoice can be posted with price matching errors and quantity matching errors. If approval is not required, invoice processing can continue if there are no other posting errors.
+If approval is required for invoices to be posted with invoice matching discrepancies, the **Approve posting with matching discrepancies** toggle on the **Invoice matching details** page must be selected before the invoice can be posted with price matching errors and quantity matching errors. If approval is not required, invoice processing can continue if there are no other posting errors.
 
 
 For more information, see [Accounts payable invoice matching overview](accounts-payable-invoice-matching.md).

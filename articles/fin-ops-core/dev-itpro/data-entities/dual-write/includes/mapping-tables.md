@@ -1,9 +1,9 @@
 ---
-author: robinarh
-ms.service: dynamics-ax-applications
+author: tonyafehr
+
 ms.topic: include
 ms.date: 7/12/2021
-ms.author: rhaertle
+ms.author: tfehr
 ---
 
 ###  <a name="138"></a>All products (msdyn_globalproducts)

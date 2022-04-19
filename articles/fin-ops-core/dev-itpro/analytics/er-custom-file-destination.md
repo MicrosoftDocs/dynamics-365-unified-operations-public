@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.19
 
 [!include[banner](../includes/banner.md)]
 
-The application programming interface (API) of the [Electronic reporting (ER)](general-electronic-reporting.md) framework lets you [extend](er-apis-app10-0-19.md#er-api-extend-destination) the list of ER destinations that you can use to store documents that ER [formats](general-electronic-reporting.md#FormatComponentOutbound) generate. This topic includes an overview of the main tasks that you must complete to implement a custom ER destination.
+The application programming interface (API) of the [Electronic reporting (ER)](general-electronic-reporting.md) framework lets you [extend](er-apis-app10-0-19.md#er-api-extend-destination) the list of ER destinations that you can use to store documents that ER formats generate. This topic includes an overview of the main tasks that you must complete to implement a custom ER destination.
 
 ## Prerequisites
 

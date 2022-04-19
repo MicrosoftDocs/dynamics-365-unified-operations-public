@@ -4,7 +4,7 @@
 title: Financial reporting overview
 description: This topic describes where to access financial reporting in Microsoft Dynamics 365 Finance and how to use the financial reporting capabilities.
 author: aprilolson
-ms.date: 07/27/2021
+ms.date: 03/31/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -179,7 +179,7 @@ Issue 1: Report Designer doesn't start when you select **New** or **Edit**.
 * In Internet Explorer, select **Settings**, then select **Internet Options**. Select the **Security** tab. Select Trusted Sites and then select **Sites**. In the **Add this website to zone**, enter "\*\.dynamics.com" (without quotation marks), and then select **Add**. 
 * In Internet Explorer, select **Settings**, then select **Internet Options**. Select the **Security** tab. Select Trusted Sites. In the area labeled Security level for this zone, change the option to **Medium-Low**.
 * Disable the pop-up blocker in your browser.
-* Workstations are required to install Microsoft .NET Framework 4.6.2 or higher. This version of the Microsoft .NET Framework can be downloaded and installed from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53345).
+* Workstations are required to install Microsoft .NET Framework 4.7.2 or higher. This version of the Microsoft .NET Framework can be downloaded and installed from the [Microsoft Download Center](https://dotnet.microsoft.com/download/dotnet-framework/net472).
 * If you are using a Chrome browser, you must install a ClickOnce extension in order to download the Report Designer client. If you are running Chrome in incognito mode, make sure the ClickOnce extension is enabled for incognito mode. For more information about the Chrome ClickOnce Extension, see [System requirements for cloud deployments](../../fin-ops-core/fin-ops/get-started/system-requirements.md).
 * If you are using Microsoft Edge with a Chrome browser, you do not need to install a ClickOnce extension for Edge Chromium. However, you must enable the ClickOnce option in order to download the Report Designer client. If you are running incognito mode, make sure the ClickOnce extension is enabled for incognito mode.
 
@@ -215,7 +215,7 @@ Here are some steps you can take to make your conversation with Microsoft suppor
 The following steps walk through the process of turning on Event viewer messages for Financial reporting. The logs that Event viewer generates will help support engineers to identify the source of the connection issue quickly. Submit copies of these logs together with your ticket when contacting support.
 
 
-1. Copy the RegisterETW.zip file to the client workstation (preferably the Desktop) and extract [RegisterETW.zip](https://dev.azure.com/msdyneng/e6f12261-a46a-4af1-ac0c-e22bc2c5a478/_apis/git/repositories/ff923027-67f0-43fb-b63c-6d6b6423840f/Items?path=%2F.attachments%2FRegisterETW-c1a35291-6aa6-4462-a2bc-4ba117fd5f8e.zip&download=false&resolveLfs=true&%24format=octetStream&api-version=5.0-preview.1&sanitize=true&versionDescriptor.version=wikiMaster).
+1. Copy the RegisterETW.zip file to the client workstation (preferably the Desktop) and extract [RegisterETW.zip](https://mbs2.microsoft.com/fileexchange/?fileID=60b1106b-d5f8-4e0f-8041-039102505122).
 2. Make sure Windows Event viewer is closed.
 3. Open an Administrator PowerShell command prompt and go to the directory where RegisterETW.ps1 is located.
 4. Run the following command: .\RegisterETW.ps1

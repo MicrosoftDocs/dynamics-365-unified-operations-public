@@ -5,7 +5,7 @@ title: E-commerce site overview
 description: This topic provides an overview of the support for e-commerce sites in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 ms.date: 11/05/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: Application user
 # ms.devlang: 
 ms.reviewer: josaw
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Retail
@@ -91,7 +91,7 @@ The **default** and **fabrikam** sites include preconfigured templates, fragment
 For information about how to manage your site settings, see the following topics:
 
 - [Manage e-commerce users and roles](manage-ecommerce-users-roles.md)
-- [Search engine optimization (SEO) considerations for your site](/search-engine-optimization-considerations.md)
+- [Search engine optimization (SEO) considerations for your site](search-engine-optimization-considerations.md)
 - [Manage Content Security Policy (CSP)](manage-csp.md)
 - [Select a site theme](select-site-theme.md)
 

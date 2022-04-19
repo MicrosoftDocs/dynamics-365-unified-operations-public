@@ -4,9 +4,10 @@
 title: Installation steps for Retail channel components in an on-premises environment
 description: This topic covers the installation steps for Commerce channel components in an on-premises environment. 
 author: jashanno
-ms.date: 06/16/2020
+ms.date: 11/22/2021
 ms.topic: article
-ms.prod: 
+ms.prod: dynamics-365 
+ms.service:
 ms.technology: 
 
 # optional metadata
@@ -30,7 +31,8 @@ ms.dyn365.ops.version: 8.1.1
 
 This topic covers the installation steps for Commerce channel components in an on-premises environment.
 
-## Overview
+> [!IMPORTANT]
+> There is currently a known issue where self-service packages will not correctly apply to on-premises environments. For that reason it is recommended to pull the installers directly from Microsoft Dynamics Lifecycle Services (LCS) and use them as needed. Commerce headquarters would thereby no longer be used to download the installers but only the configuration files as needed.
 
 Channel functionality, in an on-premises environment, is enabled exclusively via use of Commerce Scale Unit (self-hosted). For an overview, see [Commerce Scale Unit (self-hosted)](../../../commerce/dev-itpro/retail-store-system-begin.md). 
 
@@ -53,7 +55,8 @@ Before you can start installation of channel components, you must first complete
     .\RetailUpdateDatabase.ps1 -envName '<Environment name>' -AosUrl 'https://<My Environment Name>.com/namespaces/AXSF/' -SendProductSupportTelemetryToMicrosoft
     ```
     > [!IMPORTANT]
-    > The above steps apply to version 10.0 and later.  For the original 8.1.3 release of Retail on-premises functionality, the original version of the script delimiters must be used.
+    > - There is currently a known issue where self-service packages will not correctly apply to on-premises environments. For that reason it is recommended to pull the installers directly from Microsoft Dynamics Lifecycle Services (LCS) and use them as needed. Commerce headquarters would thereby no longer be used to download the installers but only the configuration files as needed.
+    > - The steps above apply to version 10.0 and later.
     >
     > ```powershell
     > .\RetailUpdateDatabase.ps1 -DatabaseServer '<Database server name for AOS database>' -DatabaseName '<Database name for AOS database>' -envName '<Environment name>' -RetailSelfServicePackages '<Local path of Retail self-service packages, such as **C:/selfservicepackages**>' -SendProductSupportTelemetryToMicrosoft
@@ -95,7 +98,7 @@ Before you can start installation of channel components, you must first complete
      >
      > It is critical to keep this secret safe. This secret should only be copied once and never stored on the system.  The Client ID and Secret generated will be used during the Commerce Scale Unit installer, so it is required to be used at a later time.  You can always reset the secret again, but it must then be updated on any Commerce Scale Unit that used the previous secret.
 
-11.  Go to **Retail and Commerce** &gt; **Headquarters setup** &gt; **Commerce scheduler** &gt; **Connector for Microsoft Dynamics AX**.
+11.  Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Connector for Microsoft Dynamics AX**.
 12.  Select **Edit** on the Action pane.
 13.  In the **Profile** field, enter the value **Default**.  If needed, enter a description in the **Description** field.
 
@@ -106,20 +109,20 @@ Before you can start installation of channel components, you must first complete
 15.  In the **Protocol** field, select **https**.
 16.  In the **Common name** field, enter **AXServiceUser@contoso.com**.
 17.  Select **Save** on the Action Pane.
-18.  In Headquarters, go to **Retail and Commerce** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Commerce shared parameters**.
+18.  In Headquarters, go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**.
 19.  Select the **Security** tab.
 20.  Under the sub-heading **Transaction service legacy properties**, select the **Real-time Service profile** field, and then select the newly created **Default** value.
 21.  Select the **Identity providers** tab.
 22.  On the **Identity providers** FastTab, select **Add**.
 23.  In the new **Issuer** row, enter the new Identity provider value **https://sts.windows.net/** in the field.
 24.  Select **Save** on the Action Pane.
-25.  Go to **Retail and Commerce** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Commerce parameters**.
+25.  Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters**.
 26.  On the **General** tab, select the **Initialize** link to configure seed data for Commerce functionality.
 
      > [!NOTE]
-     > The installers will not download from their relevant pages the first time a download is attempted.  This is because the installers have only just been placed into the download location and the associated database values do not yet exist.  In Headquarters, when the **Download** functionality is attempted (for example, Commerce Scale Unit or Modern POS), an error will display and then an automated upload functionality will be initiated to allow the installers to be downloaded the second time that the download is attempted. (Wait one minute before attempting to download the installer again).
-     >
-     > The Peripheral Simulator (downloaded on the Hardware profile page in headquarters) will not be available until at least one Hardware profile has been created and is functional. After that point has been achieved, the following script can be run.
+     > - Read the important message at the beginning of this article regarding a known issue with installers no longer functioning through headquarters for download.
+     > - The installers will not download from their relevant pages the first time a download is attempted.  This is because the installers have only just been placed into the download location and the associated database values do not yet exist.  In Headquarters, when the **Download** functionality is attempted (for example, Commerce Scale Unit or Modern POS), an error will display and then an automated upload functionality will be initiated to allow the installers to be downloaded the second time that the download is attempted. (Wait one minute before attempting to download the installer again).
+     > - The Peripheral Simulator (downloaded on the Hardware profile page in headquarters) will not be available until at least one Hardware profile has been created and is functional. After that point has been achieved, the following script can be run.
      >
      > ```powershell
      > .\RetailUpdateDatabase.ps1 -envName 'LBDenv1' -UpdateRetailHardwareProfileSelfServicePackage

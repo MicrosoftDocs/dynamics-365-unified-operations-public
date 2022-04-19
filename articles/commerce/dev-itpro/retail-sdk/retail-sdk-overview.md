@@ -3,9 +3,9 @@
 
 title: Retail software development kit (SDK)
 description: The Retail SDK includes code, code samples, templates, and tools that you can use to customize commerce functionality.
-author: robinarh
+author: tonyafehr
 ms.date: 09/27/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: ["17771", "intro-internal"]
 ms.search.region: Global
@@ -86,6 +86,7 @@ To develop or build extensions by using the Retail SDK, you must have the follow
     + [runtime-2.0.9-windows-x64-installer](https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-2.0.9-windows-x64-installer)
     + [runtime-2.1.17-windows-x64-installer](https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-2.1.17-windows-x64-installer)
     + [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-3.1.412-windows-x64-installer)
+    + [Windows SDK (10.0.10586.0)](https://go.microsoft.com/fwlink/p/?LinkID=698771)
     + TypeScript version 2.2.2
 
 Visual Studio 2017 has TypeScript 3.1 as the default version. You must install version 2.2.2 because the POS app is based on that version. In Visual Studio, select **Tools \> Get Tools and Features**. On the **Individual components** tab, select the **TypeScript 2.2 SDK from SDKs, libraries, and frameworks** section, and install it.
@@ -93,6 +94,7 @@ Visual Studio 2017 has TypeScript 3.1 as the default version. You must install v
 - .NET Developer Pack:
     +  [.NET Framework 4.5.1](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net451-developer-pack-offline-installer)
     +  [.NET Framework 4.6.2](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net462-developer-pack-offline-installer)
+    +  [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net472-developer-pack-offline-installer)
     
 - [Web Deploy v3.6 ](https://www.microsoft.com/download/confirmation.aspx?id=43717)
 
@@ -111,7 +113,7 @@ Before you start development via the Retail SDK, you must restore all the packag
 
 ### MSBuild arguments to skip the prerequisites check
 
-MSBuild will check whether the required dependencies are installed for Commerce development. If the dependencies are not found, then the MSBuild scripts will try to install the missing dependencies. This check will occur every time MSBuild runs. To skip this check, pass the follow arguments value as false:
+MSBuild will check whether the required dependencies are installed for Commerce development. If the dependencies are not found, then the MSBuild scripts will try to install the missing dependencies. This check will occur every time MSBuild runs. To skip this check, pass the following arguments as false:
 
 MSBuild /p:CheckVS2017Installed=false /p:CheckVSDependencies=false – Build argument added in release 10.0.18
 

@@ -4,9 +4,9 @@ description: This topic describes conditional statements in X++.
 author: RobinARH
 ms.date: 06/17/2019
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -89,7 +89,7 @@ switch (Debtor.AccountNo)
 }
 ```
 
-The following code examples makes the execution drop through the first case branch by omitting a break statement. If x is 10, b is assigned to a, and d is assigned to c. If x is 11, d is assigned to c. If x is 12, f is assigned to e.
+The following code example makes the execution drop through the first case branch by omitting a break statement. If x is 10, b is assigned to a, and d is assigned to c. If x is 11, d is assigned to c. If x is 12, f is assigned to e.
 
 ```xpp
  switch (x)

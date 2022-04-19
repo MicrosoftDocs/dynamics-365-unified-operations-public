@@ -29,6 +29,9 @@ ms.dyn365.ops.version: Platform update 6
 
 [!include [banner](../includes/banner.md)]
 
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
 The workflow system uses various batch jobs. **Workflow message processing** is an important batch job used to process workflow messages. If workflow is a key component of your organization, you should consider configuring the **Workflow message processing** batch job as critical.
 
 Configuring the **Workflow message processing** batch job as critical ensures that the system actively tracks its status. When a critical batch job fails, the support team can better monitor failures and take action to resolve any issues that may have caused the failure.

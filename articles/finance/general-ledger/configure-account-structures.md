@@ -84,7 +84,7 @@ When entering a journal and selecting an account in the profit and loss range, s
 
 ## More than 7 criteria needed
 
-If you have more than 7 criteria that are needed, you can continue adding them on the next line. You will notice when working in the **Allowed value details** section that the **+Add new** criteria is nt longer active after the seventh criteria is entered. This is due to many factors such as: 
+If you have more than 7 criteria that are needed, you can continue adding them on the next line. You will notice when working in the **Allowed value details** section that the **+Add new** criteria is no longer active after the seventh criteria is entered. This is due to many factors such as: 
  - Column width 
  - How the data is stored 
  - Performance of the **Allowed value details** control
@@ -106,7 +106,7 @@ When setting up your account structures there are some best practices you can fo
 - Do not just put an asterisk for every segment in the account structure and then solely rely on the advanced rules. This can be difficult to manage and often leads to user error during maintenance that can make the system unable to post.
 
 ## Account structure activation
-When you are satifisfied with your new setup or a change to an account structure, you must activate it. If an account structure is assigned to a ledger, this activation can be a long running process, as all unposted transactions in the system must be synced to the new structure. Posted transactions are not impacted with account structure changes.
+When you are satisfied with your new setup or a change to an account structure, you must activate it. If an account structure is assigned to a ledger, this activation can be a long running process, as all unposted transactions in the system must be synced to the new structure. Posted transactions are not impacted with account structure changes.
 
 For more information, see [Plan your chart of accounts](plan-chart-of-accounts.md), [Financial dimensions](financial-dimensions.md) and [Enter account and dimension combinations (segmented entry control)](enter-account-dimension-combinations-segmented-entry-control.md).
 

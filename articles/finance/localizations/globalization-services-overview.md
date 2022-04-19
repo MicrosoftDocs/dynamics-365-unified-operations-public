@@ -5,7 +5,7 @@ title: Dynamics 365 globalization services
 description: This topic provides an overview of Microsoft Dynamics 365 globalization services.
 author: JaneA07
 ms.date: 04/12/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 

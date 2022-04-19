@@ -29,6 +29,9 @@ ms.dyn365.ops.version: Platform update 28
 
 [!include [banner](../includes/banner.md)]
 
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
 ## Introduction
 
 Personalization plays an important role in allowing users and organizations to optimize the user experience to meet their needs. For more details on personalization, see [Personalize the user experience](personalize-user-experience.md).

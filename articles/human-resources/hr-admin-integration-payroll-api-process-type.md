@@ -3,7 +3,7 @@
 
 title: Process type
 description: This topic describes the Process type option set for Dynamics 365 Human Resources.
-author: marcelbf
+author: twheeloc
 ms.date: 06/25/2021
 ms.topic: article
 ms.prod: 
@@ -19,12 +19,15 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: marcelbf
+ms.author: twheeloc
 ms.search.validFrom: 2021-06-25
 ms.dyn365.ops.version: Human Resources
 ---
 
 # Process type
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

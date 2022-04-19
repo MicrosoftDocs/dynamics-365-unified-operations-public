@@ -26,6 +26,9 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Define compensation process and calculate results
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Compensation processes are used to determine new compensation amounts and awards for employees enrolled in fixed and variable compensation plans. Compensation processes can be run multiple times to perform "what-if" analysis, to verify all changes and settings are correct. This procedure will create a compensation process, run the process, and view the results. The demo data company used to create this procedure is USMF.
@@ -44,13 +47,13 @@ Compensation processes are used to determine new compensation amounts and awards
     * The transaction active date is the date the new compensation rates should take effect. Many companies include a few months between their end of a cycle and the time the new compensation rates go into effect. The additional time is used for processing and reviewing the new compensation.  
 8. In the **Transaction active date** field, enter a date.
     * The point-in-time date is used for variable compensation plans that determine an employee's award amount based on their compensation rate at this point in time.  
-    * The fixed pay pro rated hire date is used with fixed compensation plans with a hire rule of Percent.  Employees who are hired between the cycle start and the fixed pay pro rated hire date will receive 100% of their calculated compensation increase, instead of pro-rated percentage.  
+    * The fixed pay pro rated hire date is used with fixed compensation plans with a hire rule of **Percent**. Employees who are hired between the cycle start and the fixed pay pro rated hire date will receive 100% of their calculated compensation increase, instead of pro-rated percentage.  
 9. In the **Fixed pay pro rated hire date** field, enter a date.
     * The review deadline is the date by which all process results should be reviewed so that they can be loaded into an employee's compensation record before the transaction active date. This field is informational only.  
 10. In the **Review deadline** field, enter a date.
 11. Click **Save**.
 
-## Setup the compensation plans and actions for a compensation process
+## Set up the compensation plans and actions for a compensation process
 1. Click **Setup**.
     * The **Setup** page is used to select which plans to process as part of this compensation process, as well as which actions should be taken against each plan.  
 2. In the **Plan** field, enter or select a value.
@@ -60,7 +63,7 @@ Compensation processes are used to determine new compensation amounts and awards
 6. Click **Add**.
 7. In the **Action** field, select a **Merit** type of action.
     * Compensation actions can be "chained" together using the **Use previous result** field to indicate whether the selected action should use the employees base pay or the result of the previous action as the starting point for this action's calculation.  
-8. Select **Yes** in the Use previous result field.
+8. Select **Yes** in the **Use previous result** field.
 9. Click **Add**.
 10. In the **Action** field, select a **General** type of Action.
     * Different compensation action types enable different fields. For a General compensation action type, an increase percent or increase amount can be specified.  
@@ -89,7 +92,7 @@ Compensation processes are used to determine new compensation amounts and awards
 1. Click **Process results**.
 2. Click **Employee results**.
 3. In the list, find and select the desired record.
-4. Expand the Fixed compensation section.
+4. Expand the **Fixed compensation** section.
     * Expand the FastTabs to view the results of the process. If **Enable recommendations** was marked for a compensation action, the **Recommendation** fields will be enabled for that action.  
 5. In the list, find and select the desired record.
     * The results for a single employee can be viewed by clicking the **View results** button.  

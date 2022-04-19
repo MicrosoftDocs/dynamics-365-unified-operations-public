@@ -3,7 +3,7 @@
 
 title: Archive credit card transaction data
 description: This topic describes an archival job in Microsoft Dynamics 365 Commerce that can help free up space in the database by archiving credit card transactions.
-author: rubendel
+author: BrianShook
 ms.date: 01/28/2021
 ms.topic: article
 ms.prod: 
@@ -22,7 +22,7 @@ ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
 
