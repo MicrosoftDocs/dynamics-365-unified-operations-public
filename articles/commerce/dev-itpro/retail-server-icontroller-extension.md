@@ -53,12 +53,12 @@ The following illustration shows the class structure of the extension.
 ![Commerce Scale Unit extension class diagram.](media/RSExtensionClass.png)
 
 > [!NOTE]
-> Retail server does not support loading both IController and CommerceController extensions. If you include both type of extensions, then Retail server load will fail. Extensions should have either IController or CommerceController. If you are migrating to the IController extension, migrate all the Retail server extensions to IController.
+> Retail server does not support loading both IController and CommerceController extensions. If you include both types of extensions, then Retail server load will fail. Extensions should have either IController or CommerceController. If you are migrating to the IController extension, migrate all the Retail server extensions to IController.
 
 ## Create a new Retail Server API
 
 1. Create the CRT extension. You must create the CRT extension before you create the Retail Server extension. A Retail Server API should have no logic except logic that calls the CRT with the parameters.
-2. Create a new C# class library project that uses the Microsoft .NET Framework version netstandard 2.0 as the target framework. Starting with version 10.0.26, the SDK only supports .NET 6 as the target framework. Alternatively, use one of the Retail Server samples in the Retail SDK as a template.
+2. Create a new C# class library project that uses the Microsoft .NET Framework version netstandard 2.0 as the target framework. As of version 10.0.26, the SDK supports only .NET 6 as the target framework. Alternatively, use one of the Retail Server samples in the Retail SDK as a template.
 3. In the Retail Server extension project, add a reference to your CRT extension library or project. This reference lets you call the CRT request, response, and entities.
 4. In the Retail Server extension project, add the **Microsoft.Dynamics.Commerce.Runtime.Hosting.Contracts** package using the NuGet package manager. The NuGet packages can be found in the **RetailSDK\\pkgs** folder.
 5. Create a new public controller class and extend it from **IController**. This controller class will contain the method that the Retail Server API must expose, the controller class must be public.
@@ -69,14 +69,14 @@ The following illustration shows the class structure of the extension.
     [RoutePrefix("SimpleExtension")]
     ```
 
-> [!NOTE]
-> Adding RoutePrefix attribute is optional. If you add the **RoutePrefix** attribute, you must add the **BindEntity** attribute with only the custom entity. Adding out of the box **RoutePrefix** (for example, Customers and Product) and binding out of the box entities (for example, Product, Cart, and Customer) is not supported. You can add only custom **RoutePrefix** and **Custom** entity.
+    > [!NOTE]
+    > Adding RoutePrefix attribute is optional. If you add the **RoutePrefix** attribute, you must add the **BindEntity** attribute with only the custom entity. Adding out of the box **RoutePrefix** (for example, Customers and Product) and binding out of the box entities (for example, Product, Cart, and Customer) is not supported. You can add only custom **RoutePrefix** and **Custom** entity.
 
 8. Add the **BindEntity** attribute on the controller class. This step is optional. Add the attribute only if you're adding the **RoutePrefix** and returning a custom entity.
 
-```csharp
-[BindEntity(typeof(SimpleEntity))]
-```
+    ```csharp
+    [BindEntity(typeof(SimpleEntity))]
+    ```
 
 > [!NOTE]
 > Steps 7 and 8 are required if the extension class is bound to an entity. These steps are not required for an unbounded controller class returning simple types, not any entity.
@@ -86,7 +86,7 @@ The following sample code creates a simple Retail Server API to return an entity
 ### Sample code for a controller class bounded to a custom entity
 
 > [!NOTE]
-> Extension code should not bind to the existing entities such as Customer, Cart, or Product . If the API returns a collection, it must return only type `IEnumerable<T>`, returning any other type like `Dictionary <String, String>` is not supported. As a result, you may get an error such as `System.Collections.Generic.Dictionary2[System.String,System.String] is not supported.` To return a collection, Commerce APIs uses `PageResult<T>`, which implements `IEnumerable<T>`. Follow this pattern to return the collection.
+> Extension code should not bind to the existing entities such as Customer, Cart, or Product. If the API returns a collection, it must return only type `IEnumerable<T>`, returning any other type like `Dictionary <String, String>` is not supported. As a result, you may get an error such as `System.Collections.Generic.Dictionary2[System.String,System.String] is not supported.` To return a collection, Commerce APIs use `PageResult<T>`, which implements `IEnumerable<T>`. Follow this pattern to return the collection.
 
 ```csharp
 // New extended controller.
@@ -320,7 +320,7 @@ The POS uses the Typescript proxy to access the Retail Server APIs and CRT entit
 
 ## Retail server extension in offline
 
-A Retail Server extension built using the **Microsoft.Dynamics.Commerce.Runtime.Hosting.Contracts** API can be used in an offline implementation. You don't need to generate a separate C# proxy library. Copy the Retail Server extension library in the **\\Microsoft Dynamics 365\\70\\Retail Modern POS\\ClientBroker\\ext** folder and update the **RetailProxy.MPOSOffline.ext** config file to include the this library. This extension must only generate the Typescript proxy. SDK samples can be found in the  **\\RetailSDK\\SampleExtensions\\TypeScriptProxy)** folder.
+A Retail Server extension built using the **Microsoft.Dynamics.Commerce.Runtime.Hosting.Contracts** API can be used in an offline implementation. You don't need to generate a separate C# proxy library. Copy the Retail Server extension library in the **\\Microsoft Dynamics 365\\70\\Retail Modern POS\\ClientBroker\\ext** folder and update the **RetailProxy.MPOSOffline.ext** config file to include this library. This extension must only generate the Typescript proxy. SDK samples can be found in the  **\\RetailSDK\\SampleExtensions\\TypeScriptProxy)** folder.
 
 The following example shows how to update the **add** element in the **RetailProxy.MPOSOffline.ext** configuration  file.
 
