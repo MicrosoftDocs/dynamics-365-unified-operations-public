@@ -81,7 +81,7 @@ Please log a support ticket to address the issue.
 
 ## How long does it take to deploy my production environment?
 
-After the Go-live Readiness Review with Microsoft is complete, a production environmnet slot in LCS is enabled and the project team (customer/partner) can trigger the environment deployment. The deployment process takes approximately 30 minutes.
+After the Go-live Readiness Review with Microsoft is complete, a production environment slot in LCS is enabled and the project team (customer/partner) can trigger the environment deployment. The deployment process takes approximately 30 minutes.
 
 ## What level of access do I have in my production environment? Can I sign in to the VM?
 
