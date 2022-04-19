@@ -20,7 +20,7 @@ ms.search.validFrom: 2017-06-20
 
 This topic provides guidelines for setting up the fiscal integration functionality for Commerce channels. For more information about the fiscal integration, see [Overview of fiscal integration for Commerce channels](fiscal-integration-for-retail-channel.md).
 
-## Feature management
+## Enable features in Commerce headquarters
 
 To enable features related to fiscal integration functionality for Commerce channels, follow these steps.
 
@@ -33,17 +33,17 @@ To enable features related to fiscal integration functionality for Commerce chan
 
 ## Set up Commerce parameters
 
+To set up Commerce parameters, follow these steps.
+
 1. On the **Commerce shared parameters** page, on the **General** tab, set the **Enable fiscal integration** option to **Yes**.
 1. On the **Number sequences** tab, define the number sequences for the following references:
-
-    - Fiscal technical profile number
-    - Fiscal connector group number
-    - Registration process number
-
+    - Fiscal technical profile number.
+    - Fiscal connector group number.
+    - Registration process number.
 1. On the **Commerce parameters** page, define the number sequence for the fiscal functional profile number.
 
-    > [!NOTE]
-    > Number sequences are optional. Numbers for all fiscal integration entities can be generated either from number sequences or manually.
+> [!NOTE]
+> Number sequences are optional. Numbers for all fiscal integration entities can be generated either from number sequences or manually.
 
 ## Set up a fiscal registration process
 
@@ -295,16 +295,14 @@ To enable manual execution of a postponed fiscal registration, you should add a 
 
 To view connection parameters and other information on the POS, follow these steps.
 
-- Open MPOS or CPOS
-- Click on the Settings Button
-- Scroll the screen to the right
-- If the fiscal integration is enabled, you can see Fiscal Integration section on the right. In this section you can see:
-    - Status of fiscal registration
-    - State of the last fiscal transaction
-    - Number of Pending Audit events
-- Click to the Details button to view
-    - Registration process steps
-    - Connection parameters
-    - Audit events details
-    - 
+1. Open MPOS or CPOS.
+1. Select **Settings**. If fiscal integration is enabled, in the **Fiscal Integration** section on the right of the screen you will be to view the following:
+    - Status of fiscal registration.
+    - State of the last fiscal transaction.
+    - Number of pending audit events.
+1. Select **Details** to view the following:
+    - Registration process steps.
+    - Connection parameters.
+    - Audit events details.
+ 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
