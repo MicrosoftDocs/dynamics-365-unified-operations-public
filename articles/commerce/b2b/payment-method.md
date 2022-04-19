@@ -4,7 +4,7 @@
 title: Configure the customer account payment method for B2B e-commerce sites
 description: This topic describes how to configure the customer account payment method in Microsoft Dynamics 365 Commerce. It also describes how credit limits affect on-account payment capture on business-to-business (B2B) e-commerce sites.
 author: josaw1
-ms.date: 02/16/2022
+ms.date: 04/19/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -85,7 +85,7 @@ The values that the **Credit limit type** property supports are **None**, **Bala
 
 Another property that affects on-account ordering is the **Mandatory credit limit** property, which is located on the **Credit and collections** FastTab of the customer record. By setting this property to **Yes** for specific customers, you can force the system to check their credit limit, even if the **Credit limit type** property has been set to **None** to specify that the credit limit should not be checked for any customer.
 
-Currently, using the on-account payment, a user cannot pay more than the remaining credit balance for an order. For example, if the customer's remaining credit balance is $1,000, but the order is worth $1,200, the customer can pay only $1,000 by using the on-account method. They must use some other payment method to pay the balance. However, in future, based on a configuration, we will allow the users to beyond their credit limit while placing orders.
+Currently, a customer using the on-account payment method can't pay more than the remaining credit balance for an order. For example, if a customer's remaining credit balance is $1,000 but the order value is $1,200, the customer can only pay $1,000 by using the on-account method. The customer must then use some other payment method to pay the balance. However, in a future release a Commerce configuration will allow the users to spend beyond their credit limit when placing orders.
 
 The **Credit and collections** module has new credit management capabilities. To turn on these capabilities, enable the **Credit management** feature in the **Feature management** workspace. One of the new capabilities enables sales orders to be put on hold based on blocking rules. The credit manager persona can then release or reject the orders after further analysis. However, the capability to put sales orders on hold isn't applicable to Commerce orders, because sales orders often have a prepayment, and the **Credit management** feature doesn't completely support prepayment scenarios. 
 
