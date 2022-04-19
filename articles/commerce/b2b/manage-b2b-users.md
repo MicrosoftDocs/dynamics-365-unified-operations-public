@@ -34,7 +34,7 @@ This topic describes how to add, delete, and edit business partner users on Micr
 
 > [!NOTE]
 > - The [Manage B2B business partners using customer hierarchies](partners-customer-hierarchies.md) topic is a prerequisite for this document.
-> - Ensure that you initialize the document types entity as one of the document types available in Commerce headquarters at **Organization administration \> Document management \> Document types**. For example, **Note** is used for accepting a business partner onboarding request. 
+> - Ensure that you initialize the document types entity in Commerce headquarters by opening the **Document types** form at **Organization administration \> Document management \> Document types**.
 
 B2B e-commerce websites require that organizations register to become business partners. After an organization submits registration details to a B2B e-commerce website, the registration request goes through a qualification process. If the organization is successfully qualified, it's onboarded as a business partner.
 
