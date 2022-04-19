@@ -335,6 +335,8 @@ Solution. Disable the feature “Minimize memory consumption by storing datasets
 Q: Issue 3. Error generating token request
 Solution. Make sure the GER configurations, e-Invoice parameters or KeyVault setup does not have missing setup. If the error contains "Function DigitalCertificateManager::findCertificateBySubject has been incorrectly called" then the Certificate is set up incorrectly. Download a certificate from IRP again and add it to the Azure KeyVault as a secret by copying entire file content.
 Example of a proper setup:
+![Item setup page.](media/apac-ind-einvoicesetup.png)
+
  
 Q: Issue 3. Error token response importing. Invalid Client-ID/Client-Secret, or Invalid Username or password.
 Solution. Check Azure KeyVault. ClientId or Secret is incorrect.
