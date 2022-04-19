@@ -126,7 +126,7 @@ For more information, see [Create an e-commerce site](create-ecommerce-site.md).
 
 Instead of creating a new site as shown above that will start out as an empty site without any site pages (for example, home page, category pages, product pages), a better practice is to start out with a copy of one of the starter sites provided in the Commerce module library such as Fabrikam or Adventure Works. 
 
-To copy an existing site, go to the **Sites** list page and then select select **Copy site**, which will bring up the **Copy site** dialog box where you can pick the source site and the destination site name as shown in the following exzmple illustration.  
+To copy an existing site, go to the **Sites** list page and then select **Copy site**, which will bring up the **Copy site** dialog box where you can pick the source site and the destination site name as shown in the following example illustration.  
 
 ![Site copy operation in site builder](media/channel-mapping-5.png)
 
@@ -138,7 +138,7 @@ For more information about the site copy operation, see [Copy an e-commerce site
 
 ### Manage an existing site channel
 
-Once a site has been configured with a channel, the channel can easiliy be managed and updated from within the selected site in site builder under **Site Settings \> Channels**, as shown in the following example illustration.
+Once a site has been configured with a channel, the channel can be managed and updated from within the selected site in site builder under **Site Settings \> Channels**, as shown in the following example illustration.
 
 ![Manage channel mapping in site builder](media/channel-mapping-7.png)
 
