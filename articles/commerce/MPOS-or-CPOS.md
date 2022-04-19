@@ -2,7 +2,7 @@
 # required metadata
 
 title: Choose between Store Commerce and Cloud POS
-description: This topic explains the key differences between Store Commerce and Cloud POS and also describes various factors that retailers implementing Dynamics 365 Commerce should consider to help them make the best choice for their requirements.
+description: This topic explains the key differences between Store Commerce and Cloud POS, and describes various factors that retailers that implement Dynamics 365 Commerce should consider to help them make the best choice for their requirements.
 author:  jblucher 
 ms.date: 04/07/2022
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-This topic explains the key differences between Store Commerce and Cloud POS and also describes various factors that retailers implementing Dynamics 365 Commerce should consider to help them make the best choice for their requirements. This topic also gives implementers with additional background, tips, and guidance for factors that they should consider when deploying Dynamics 365 Commerce. By reviewing and following this guidance as part of the deployment process, implementers can avoid issues that might affect user satisfaction or performance.
+This topic explains the key differences between Store Commerce and Cloud POS, and describes various factors that retailers that implement Dynamics 365 Commerce should consider to help them make the best choice for their requirements. It also gives implementers additional background, tips, and guidance for factors that they should consider when they deploy Dynamics 365 Commerce. By reviewing and following this guidance as part of the deployment process, implementers can avoid issues that might affect user satisfaction or performance.
 
 ## Insights
 
@@ -43,7 +43,7 @@ Commerce supports the following POS options:
 - Store Commerce for Microsoft Windows
 - Store Commerce for iOS and Android
 - Cloud POS (CPOS), which supports the Microsoft Edge and Google Chrome browsers
-- Modern POS (MPOS) for Microsoft Windows (MPOS will be deprecated in Oct 2023) 
+- Modern POS (MPOS) for Microsoft Windows (MPOS will be deprecated in October 2023.) 
 
 In all cases, the POS (Store Commerce and CPOS) shares the same core application code. This point is important for the following reasons:
 
@@ -58,10 +58,10 @@ Although Store Commerce and CPOS are largely the same, there are some important 
 
 #### Store Commerce
 
-Store Commerce on a Windows is a desktop application, installed and serviced on that device.
+Store Commerce is a desktop application that is installed and serviced on a device.
 
 - **Windows** – The Store Commerce for Windows application contains all the application code, Commerce Runtime (CRT), and Hardware Station (HWS).
-- **iOS/Android** – On these platforms, the application acts as a host for the CPOS application code. In other words, the application code comes from the CPOS server hosted on Commerce Scale Unit. For more information, see [Commerce Scale Unit overview](dev-itpro/retail-store-system-begin.md).
+- **iOS/Android** – On these platforms, the application acts as a host for the CPOS application code. In other words, the application code comes from the CPOS server that is hosted on Commerce Scale Unit. For more information, see [Commerce Scale Unit overview](dev-itpro/retail-store-system-begin.md).
 
 #### CPOS
 
@@ -71,12 +71,12 @@ Because CPOS runs in a browser, the application isn't installed on the device. I
 
 In addition to a platform and form factor, retailers must also choose a deployment option at the store. The following table shows the configurations that are available for each POS option.
 
-| POS application           | Commerce Scale Unit | Available offline | Local HWS support |
-|---------------------------|---------------------|-------------------|-------------------|
-| Store Commerce for Windows| Cloud or RSSU       | Yes               | Yes             |
-| Store Commerce for Android| Cloud or RSSU       | No                | Yes              |
-| Store Commerce for iOS    | Cloud or RSSU       | No                | No           |
-| Cloud POS                 | Cloud or RSSU       | No                | No               |
+| POS application            | Commerce Scale Unit | Available offline | Local HWS support |
+|----------------------------|---------------------|-------------------|-------------------|
+| Store Commerce for Windows | Cloud or RSSU       | Yes               | Yes               |
+| Store Commerce for Android | Cloud or RSSU       | No                | Yes               |
+| Store Commerce for iOS     | Cloud or RSSU       | No                | No                |
+| Cloud POS                  | Cloud or RSSU       | No                | No                |
 
 #### Commerce Scale Unit
 
@@ -90,12 +90,12 @@ Store Commerce for Windows supports offline mode. In offline mode, the POS can c
 
 Retailers must also consider how the POS will access devices and peripherals such as printers, cash drawers, and payment terminals. Hardware stations can be dedicated to a POS register or shared among the registers in a store.
 
-| POS application           | Local HWS OPOS                | Network peripherals | Shared HWS support |
-|---------------------------|---------------------|---------------------|-------------------|
-| Store Commerce for Windows| Yes                 | Yes                 | Yes             |
-| Store Commerce for Android| No                  | Yes                 | Yes              |
-| Store Commerce for iOS    | No                  | No                  | Yes           |
-| Cloud POS                 | No                  | No                  | Yes              |
+| POS application            | Local HWS OPOS | Network peripherals | Shared HWS support |
+|----------------------------|----------------|---------------------|--------------------|
+| Store Commerce for Windows | Yes            | Yes                 | Yes                |
+| Store Commerce for Android | No             | Yes                 | Yes                |
+| Store Commerce for iOS     | No             | No                  | Yes                |
+| Cloud POS                  | No             | No                  | Yes                |
 
 For more information about hardware stations, see [Configure and install Retail hardware station](retail-hardware-station-configuration-installation.md).
 
@@ -108,7 +108,7 @@ Consider the following information as you plan your POS implementation in your s
 
     Unless the connectivity for a given device is very dependable and resilient, or unless a certain amount of downtime is acceptable to the retailer, we recommend one of the following options:
 
-    - Use Store Commerce in Windows and enable offline mode.
+    - Use Store Commerce in Windows, and enable offline mode.
     - Deploy an on-premises Commerce Scale Unit.
 
     These two options aren't mutually exclusive. For the most reliable topology, retailers can deploy a local RSSU to reduce the dependency on internet connectivity or Azure availability, and they can also deploy POS registers where offline mode is enabled if there is an issue with the local server or network.
