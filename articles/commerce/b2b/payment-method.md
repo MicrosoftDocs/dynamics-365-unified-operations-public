@@ -83,7 +83,7 @@ The values that the **Credit limit type** property supports are **None**, **Bala
 > [!NOTE]
 > We recommend that you set the **Credit limit type** property to **Balance + packaging slip or product slip**, so that open sales orders don't contribute to the balance calculation. Then, if your customers place future orders, they don't have to worry that those orders will affect their current balance.
 
-Another property that affects on-account ordering is the **Mandatory credit limit** property, which is located on the **Credit and collections** FastTab of the customer record. By setting this property to **Yes** for specific customers, you can force the system to check their credit limit, even if the **Credit limit type** property has been set to **None** to specify that the credit limit should not be checked for any customer.
+Another property that affects on-account ordering is the **Mandatory credit limit** property, which is located on the **Credit and collections** FastTab of the customer record. By setting this property to **Yes** for specific customers, you can force the system to check their credit limit, even if the **Credit limit type** property has been set to **None** to specify that the credit limit shouldn't be checked for any customer.
 
 Currently, a customer using the on-account payment method can't pay more than the remaining credit balance for an order. For example, if a customer's remaining credit balance is $1,000 but the order value is $1,200, the customer can only pay $1,000 by using the on-account method. The customer must then use some other payment method to pay the balance. However, in a future release a Commerce configuration will allow the users to spend beyond their credit limit when placing orders.
 
