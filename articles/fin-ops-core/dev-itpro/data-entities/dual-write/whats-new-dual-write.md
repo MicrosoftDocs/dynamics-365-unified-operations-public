@@ -20,6 +20,14 @@ Dual-write is an out-of-box infrastructure that provides near-real-time interact
 
 ## April 2022 release
 
+The April 2022 release of the Dual-write Core solution 1.0.34.0 contains the following changes.
+
+| Feature | Description | Status |
+|---|---|---|
+| Security Compliance | Updates dependency packages to use signed versions. | General availability |
+| Alerts | Simplifies exception handling for alerts. | General availability |
+| Bug Fix | Provides appropriate handling of rare scenario where Dual-write runtime configuration is missing. |  General availability |
+
 The April 2022 release of the [Dual-write Supply Chain solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwscm) contains the following changes.
 
 | Feature | Description | Status |
