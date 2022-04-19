@@ -5,7 +5,7 @@
 title: Map channels to e-commerce sites
 description: This topic describes some of the more common channel mapping scenarios in Microsoft Dynamics 365 Commerce that can be extrapolated for most other business requirements.
 author: samjarawan
-ms.date: 04/15/2022
+ms.date: 04/20/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -208,5 +208,20 @@ Adding additional channels to an e-commerce site can be done in site builder und
 
 ## Additional resources
 
+[Channels overview](channels-overview.md)
+
+[Set up an online channel](channel-setup-online.md)
+
+[Organizations and organizational hierarchies overview](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies)
+
+[Set up geo detection and redirection](geo-detection-redirection.md)
+
+[Enable and use cross-channel sharing](cross-channel-sharing.md)
+
+[Create an e-commerce site](create-ecommerce-site.md)
+
+[Copy an e-commerce site](copy-ecommerce-site.md)
+
+[Site picker module](site-selector.md)
 
 
