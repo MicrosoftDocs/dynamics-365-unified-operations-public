@@ -78,9 +78,9 @@ The active jobs list has the following columns:
 
 ## My jobs tab
 
-The **My jobs** tab lets workers easily view all unstarted and unfinished jobs that are assigned specifically to them. It's useful in companies where jobs are sometimes or always assigned to specific workers (human resources) instead of other types of resources (such as machines). 
+The **My jobs** tab lets workers easily view all unstarted and unfinished jobs that are assigned specifically to them. It's useful in companies where jobs are sometimes or always assigned to specific workers (human resources) instead of other types of resources (such as machines).
 
-The scheduling system automatically assigns each production job to a specific resource record, and each resource record has a type (such as machine or human). When you set up an employee as a production worker, you can associate the worker account with a unique human resource record. 
+The scheduling system automatically assigns each production job to a specific resource record, and each resource record has a type (such as machine or human). When you set up an employee as a production worker, you can associate the worker account with a unique human resource record.
 
 The **My jobs** tab lists all unstarted and unfinished jobs that have been assigned to the human resource record of the signed-in worker, if any worker is signed in. It never lists jobs that have been assigned to a machine or other type of resource, even if the signed-in worker has started to work on those jobs.
 
@@ -91,7 +91,7 @@ To view all jobs that have been started by the signed-in worker, regardless of t
 ## My machine tab
 
 The **My machine** tab lets workers select an asset that is connected to a machine resource within the filter set on the **All jobs** tab. The worker can then view the state and health of the selected asset by reading values for up to four selected counters and lists of recent maintenance requests and registered downtimes. The worker can also request maintenance for the selected asset and register and edit machine downtime. (This tab name is customizable and may be different for your system.)
- 
+
 ![The My machine tab.](media/pfei-my-machine-tab.png "The My machine tab")
 
 The **My machine** tab has the following columns. The numbers correspond to the numbers in the previous illustration.
@@ -265,14 +265,22 @@ Workers can register breaks. Breaks can be flexibly defined, as described in [Pa
 
 A worker registers a break by selecting **Break** and then selecting the card that represents the break type (such as lunch). After the worker confirms the selection, the device shows either the sign-in page or a page that will wait for the worker to confirm that they have returned from the break. The page that appears depends on the configuration of the production floor execution interface. (For more information, see [Configure the production floor execution interface](production-floor-execution-configure.md).)
 
+## View the "My day" dialog
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until 10.0.27 GA -->
+
+The **My day** dialog provides workers with an overview of their registrations and balances. The dialog is divided into the following three sections:
+
+- The main section lists the registrations that the current worker made on a selected date. A date picker is provided to let the worker select a day to view.
+- The **Last calculated daily balance** section shows the worker's current balances for paid time, paid overtime, absence, and paid absence. These values are based on the registrations that have been calculated during the approval process.
+- The **Balances** section provides an overview of the balances within a defined period for selected categories of registrations (such as vacation, standard time, and overtime). These balances are based on the way statistical balances are set up in the **Time and attendance** module. <!-- KFM: Add link to the statistical balances scenario when available -->
+
+Admins can add this feature to the interface by placing the **My day** button on a toolbar for each relevant tab as described in [Design the production floor execution interface](production-floor-execution-tabs.md).
+
 ## Opening instructions
 
 Workers can open a document that is attached to a job by selecting **Instructions**. The **Instructions** button is available only if a document is associated with the job in the master data. For example, a document that is attached to a product on the **Released products** page in Supply Chain Management will be available for workers to open in the shop floor execution interface.
-
-## My day view
-
-The **My day** button can be configured so that it appears on the toolbars. In the **My day** dialog workers can get an overview of their daily registrations and balances. The dialog is divided in three sections. In the first section the workers gets a specification of the registrations they have made on a given date. In the date picker, the worker can select for which day to see registrations. In the *Last calculated daily balance* section the worker can see the balances for paid time, paid over time, absence, and paid absence for the actual day based on the registrations that have calculated in the approval process. In the *balances* section, the worker can get an overview of the balances within a defined period for selected categories of registrations such as vacation, standard time, and overtime. These balances are based on the setup of statistical balances in time and attendance. Learn more about statistical balances here: XXX
-
 
 ## Opening mixed-reality guides for HoloLens
 
