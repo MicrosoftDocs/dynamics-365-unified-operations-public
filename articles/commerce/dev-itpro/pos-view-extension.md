@@ -87,12 +87,12 @@ The following table shows the POS views that currently support extensions. It al
 
 > [!NOTE]
 > The table shown above is updated based on the latest released version and hotfix. In earlier versions, some of these extension points will not be available.
-
+>
 > In Show journal (lines grid) and Return transaction view, custom columns are supported using the row sub fields. These sub fields will be displayed as rows instead of columns, like the info code messages or serial number or discounts values.
 
 ## Custom filter extension
 
-Custom filter extensions are supported in the POS views in the table below. **Search order views** also supports setting default parameters for search in the user interface (UI) using extensions. For example, if you want to add a default store search parameter you can do that by using an extension and showing that in the UI. 
+Custom filter extensions are supported in the POS views in the following table. **Search order views** also supports using extensions to set default parameters for search in the user interface (UI). For example, if you want to add a default store search parameter, you can use an extension and show that parameter in the UI. 
 
 | POS view                                   | Custom filters supported?  | Default filter parameters?    | Release |
 |--------------------------------------------|-------------------------------|-----------------------------|--------------------------------|
@@ -106,7 +106,7 @@ Custom filter extensions are supported in the POS views in the table below. **Se
 | InventoryDocumentStockCountingListView     | Yes                           | No                          | 10.0.25                        |
 | InventoryDocumentStockCountingWorkingView  | Yes                           | No                          | 10.0.25                        |
 
-Sample code for custom filter extensions are available in the Retail SDK (...\RetailSDK\Code\POS\Extensions\SampleExtensions\ViewExtensions\SearchOrders\SampleOrderSearchTextFilter.ts).
+Sample code for custom filter extensions is available in the Retail SDK (...\RetailSDK\Code\POS\Extensions\SampleExtensions\ViewExtensions\SearchOrders\SampleOrderSearchTextFilter.ts).
 
 ## Add a custom column and an app bar button
 
