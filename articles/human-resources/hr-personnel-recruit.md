@@ -46,14 +46,19 @@ If you aren't using a separate recruiting application, you can also manually man
 > If you're an admin or developer and want to integrate Human Resources with a third-party recruiting application, see [Configure Dataverse integration](hr-admin-integration-common-data-service.md) and [Configure Dataverse virtual tables](hr-admin-integration-common-data-service-virtual-entities.md)
 >
 > You can also find recruiting integration apps on [AppSource](https://appsource.microsoft.com/marketplace/apps?search=recruiting%20dynamics).
->
-## Enable recruiting requests
 
-If you want to submit recruiting requests in Human Resources, you must first enable the functionality in **Human resources shared parameters**.
 
-1. In the **Personnel management** workspace, select **Links**.
-2. Under **Setup**, select **Human resources shared parameters**.
-3. On the **Recruitment** tab, under **Recruiting**, set **Enable recruiting requests** to **Yes**.
+## Enable recruiting requests in HR recruitment 
+
+If you want to submit recruiting requests in HR recruitment, you must first enable the HR User Experience feature and Recruiting process management feature. 
+For more information on feature management, see [Feature management overview](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). 
+
+Once the features are turned on, enable the functionality in **Human resources parameters**:
+1.	In the **Personnel management** workspace, select **Links**.
+2.	Under **Setup** > select **Human resources parameters**.
+3.	On the **Recruitment** tab, set the **Enable recruiting requests** field to **Yes**.
+4.	Click the dropdown and choose **HR Recruitment**. 
+
 
 ## Add a recruiting request location
 
