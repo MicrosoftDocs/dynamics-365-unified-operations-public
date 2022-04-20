@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 52
 
 [!include [banner](../includes/banner.md)]
 
-> [!NOTE]
+> [!IMPORTANT]
 > Resource-based service protection API limits are enabled in Finance and Operations apps environments, beginning in version 10.0.19. The user-based service protection API limits outlined in this topic will be enabled in environments beginning in version 10.0.30 with 2022 release wave 2.
 
 To ensure consistent availability and performance of the Finance and Operations service we apply limits to how the service APIs are used. These limits are designed to protect the service when client applications make extraordinary demands on server resources. Sudden bursts of high incoming API traffic or concurrent long-running requests against the server can exhaust server resources, causing outages or other impacts on the availability and performance of the service.
