@@ -1480,6 +1480,8 @@
                 href: localizations/e-invoicing-submission-log.md?toc=/dynamics365/finance/toc.json
               - name: Work with the Electronic documents receiving log
                 href: localizations/e-invoicing-electronic-documents-receiving-log.md?toc=/dynamics365/finance/toc.json
+              - name: Usage management dashboard
+                href: localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/finance/toc.json
           - name: Country-specific scenarios
             items:
             - name: Availability of Electronic Invoicing features
