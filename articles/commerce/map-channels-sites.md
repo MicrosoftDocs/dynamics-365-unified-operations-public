@@ -74,7 +74,7 @@ The single online channel can be mapped to a single e-commerce site within site 
 
 In this scenario, a single channel supports more than one language which allows for the localization of product names, descriptions, and attributes in headquarters. Marketing content on the site can also be localized within site builder to provide a complete localized site experience.  
 
-The limitation of this scenario is that a single channel can only be configured with one currency, one legal entity, and one set of products and prices. This configuration works best for countries with a single currency and multiple languages, for example Canada with English and French languages, asingle legal entity, and a single set of products and prices.
+The limitation of this scenario is that a single channel can only be configured with one currency, one legal entity, and one set of products and prices. This configuration works best for countries with a single currency and multiple languages, for example Canada with English and French languages, a single legal entity, and a single set of products and prices.
 
 The following example illustration shows the Adventure Works online channel configured with multiple languages. 
 
@@ -176,7 +176,7 @@ For more information on adding and configuring the site picker module, see [Site
 
 In this scenario there is only one channel but multiple languages. You can change how a page appears based on the selected language by creating a page variant for it. 
 
-In site builder, when you select the link at the top right that shows the current channel and language, a channel and language picker appears. If you want to override a page for this language, select another locale and then selct **Change**. You will then be prompted to create a variant of the page if one does not exist, or if one does exist you will see the variant and can now make edits to that variant. 
+In site builder, when you select the link at the top right that shows the current channel and language, a channel and language picker appears. If you want to override a page for this language, select another locale and then select **Change**. You will then be prompted to create a variant of the page if one does not exist, or if one does exist you will see the variant and can now make edits to that variant. 
 
 If no variant is created, the original page will render and show the appropriate language for module strings and product information pulled from headquarters. However, if text such as a page title or other marketing content has been specified directly in default page modules, those strings will remain in the original language, creating a page variant will allow you to add localized content. 
 
