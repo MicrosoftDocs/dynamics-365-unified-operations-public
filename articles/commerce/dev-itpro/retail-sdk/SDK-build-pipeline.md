@@ -110,16 +110,16 @@ steps:
 If the build machine uses MSBuild with the Azure DevOps pipeline, follow these steps in the build machine to enable it for the Retail SDK, version 10.0.11:
 
 1. Install Visual Studio 2017 on the build machine.
-2. Optionally, run **msbuild** (version 15.0) from the developer command prompt for Visual Studio 2017 in the build machine. Open the developer command prompt for Visual Studio 2017, navigate to the Retail SDK root folder, and run `msbuild dirs.proj`. Make sure that the **msbuild** command finishes successfully.  
-3. On the build machine, add an environment variable for **msbuild** (version 15.0). Open **System Properties \> Environment Variables \> System variables**. Select **Path**, select **New**, and then add the path variable for **msbuild** and move the entry of the path environment variable to the top of the list. The path depends on where you installed Visual Studio 2017. To get the path for **msbuild**, open the **Developer Command Prompt for Visual Studio 2017**, and run the command **where msbuild**. An example of the path is `C:\\Program Files(x86)\\Microsoft Visual Studio\\2017\\Enterprise\\MSBuild\\15.0\\Bin\\`.
+2. Optional: On the build machine, run MSBuild (version 15.0) from the developer command prompt for Visual Studio 2017. Open the developer command prompt for Visual Studio 2017, go to the Retail SDK root folder, and run the command `msbuild dirs.proj`. Make sure that the command is successfully completed.
+3. On the build machine, add an environment variable for MSBuild (version 15.0). Go to **System Properties \> Environment Variables \> System variables**. Select **Path**, select **New**, and add the path variable for MSBuild. Then move the entry for the path environment variable to the top of the list. The path depends on the location where you installed Visual Studio 2017. To get the path for MSBuild, open the developer command prompt for Visual Studio 2017, and run the command `where msbuild`. An example of the path is **C:\\Program Files(x86)\\Microsoft Visual Studio\\2017\\Enterprise\\MSBuild\\15.0\\Bin\\**.
 4. Restart the Azure DevOps build agent in the build machines.
-5. In the Azure DevOps pipeline, set **Agent Pool** to **Default** and change the msbuild version to 15.0 or later.
+5. In the Azure DevOps pipeline, set the **Agent Pool** field to **Default**, and change the MSBuild version to 15.0 or later.
 
 ## Troubleshooting
 
 If the build from Azure DevOps fails with a NuGet error, check for these issues:
 
-- The Azure Pipeline isn't using **msbuild**, version 15.0, for NuGet restore.
+- The Azure Pipeline isn't using MSBuild version 15.0 for NuGet restore.
 - The extension projects haven't been upgraded to use the package reference model.
 
 
