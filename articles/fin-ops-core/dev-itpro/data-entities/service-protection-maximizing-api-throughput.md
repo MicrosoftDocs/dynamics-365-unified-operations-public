@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 52
 
 [!include [banner](../includes/banner.md)]
 
-When you have an application that must prioritize throughput to move the most data in the shortest period, there are some strateies you can apply.
+When you have an application that must prioritize throughput to move the most data in the shortest period, there are some strategies you can apply.
 
 ## Let the server tell you when to retry the request
 Don't try to calculate how many requests to send at a time. Each environment can be different. Gradually increase the rate you send requests until you begin to hit limits and then depend on the service protection API limit Retry-After interval value to tell you when to send more. This value will keep your total throughput at the highest possible level. 
@@ -50,10 +50,10 @@ User-based service protection API limits are implemented on a per-user basis. If
 See [Batch requests](./odata#batch-requests) for more information on batch requests with Finance and Operations service endpoints.
 
 ## Remove the affinity cookie
-When yo umake a connection to a service on Azure a cookie is returned with the response and all your subsequent requests will attempt to be routed to the same server unless capacity management forces it to go to another server. If you remove this cookie, each request you send will be routed to any of the elegible servers. This increases throughput because limits are applied per server. This simply allows you to use more servers if they are available.
+When you make a connection to a service on Azure a cookie is returned with the response and all your subsequent requests will attempt to be routed to the same server unless capacity management forces it to go to another server. If you remove this cookie, each request you send will be routed to any of the elegible servers. This increases throughput because limits are applied per server. This simply allows you to use more servers if they are available.
 
 > [!NOTE]
-> This strategy should only be used by applications that are seeking to optimize throughput. Interactive client applications benefit from teh affinity cookie because it allows for reusing cached data that would otherwise need to be recreated, leading to poorer performance.
+> This strategy should only be used by applications that are seeking to optimize throughput. Interactive client applications benefit from the affinity cookie because it allows for reusing cached data that would otherwise need to be recreated, leading to poorer performance.
 
 The following code shows how to disable cookies when initializing an HttpClient with web services, assuming you are using a custom HttpMessageHandler to manage authentication.
 
