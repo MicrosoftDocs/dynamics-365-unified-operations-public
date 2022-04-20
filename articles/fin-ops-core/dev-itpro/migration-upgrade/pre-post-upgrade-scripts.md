@@ -19,7 +19,7 @@ ms.search.form: 2022-04-08
 
 [!include[banner](../includes/banner.md)]
 
-This topic provides troubleshooting information for the PreSync and PostSync upgrade sctipts that are run as part of an upgrade frin Microsoft Dynamics AX 2012 to Microsoft Dynamics 365 Finance + Operations 
+This topic provides troubleshooting information for the PreSync and PostSync upgrade sctipts that are run as part of an upgrade from Microsoft Dynamics AX 2012 to Microsoft Dynamics 365 Finance + Operations 
 
 ## Scenario 1: Error - Duplicate key was found for the object name 'dbo.INVENTDIM' and the index name 'I_XXXSHA1HASHIDX'
 During the final sync you see an error in the downloaded sync log similar to the following (note table IDs in the index maybe different):
