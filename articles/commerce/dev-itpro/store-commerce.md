@@ -47,7 +47,7 @@ The Store Commerce app runs on Windows devices and can be downloaded from the [S
 Store Commerce supports two types of deployment topologies:
 
 - **In-app** – All the components, such as Modern Point of Sale (MPOS), are deployed locally. Offline and local Hardware Station (HWS) are supported.
-- **Hybrid** – Store Commerce renders the Cloud POS that is deployed in CPOS and supports local Hardware Station. However, offline isn't supported.
+- **Hybrid** – Store Commerce renders the Cloud POS that is deployed in Commerce Scale Unit (CSU) and supports local Hardware Station. However, offline isn't supported.
 
 There are no separate installers for the hybrid and in-app topologies. The deployment options are determined by the parameters that are passed during installation.
 
@@ -184,7 +184,7 @@ To activate Store Commerce after installation, follow these steps.
 
 ### Troubleshooting setup issues
 
-#### I can't activate the app
+#### I can't activate the app and get a connectivity error message
 
 After you enter the valid CPOS URL, you might receive a connectivity error such as "A connectivity error has occurred, and your device can't connect to the Cloud POS. The Cloud POS URL typed may have some issues." In this case, review the URL for typographical errors, or determine whether Cloud POS can't be reached because it's offline.
 
@@ -198,7 +198,7 @@ During installation, you might receive an error such as "A version (9.\*.\*.\*) 
 Get-AppxPackage | Where-Object {$_.PackageFullName -like "Microsoft.Dynamics.*.Pos"} | Remove-AppxPackage -Allusers
 ```
 
-#### I can't activate the app
+#### I can't activate the app due to an invalid URL or error state
 
 If the CPOS URL that you entered isn't valid and you want to change it, or if the app is in an error state during activation, you can restart the process by resetting the app. Note that the Store Commerce app will save only a valid CPOS URL.
 
@@ -208,7 +208,7 @@ To reset the app, follow these steps.
 2. Scroll down the app settings page until you find the **Reset** button.
 3. Select **Reset**, and then, when you're prompted, confirm that you want to reset the app.
 
-## Customizing the app
+## Customize the app
 
 Store Commerce can be customized by using the Commerce SDK. You can modify and create the POS user experience, enhance or modify out-of-box functionality, add validations, and add custom features. For more information, see [Point of Sale (POS) extension overview](pos-extension/pos-extension-overview.md), or review the samples on [GitHub](https://github.com/microsoft/Dynamics365Commerce.InStore).
 
