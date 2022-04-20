@@ -54,7 +54,7 @@ If you want to submit recruiting requests in Human Resources, you must first ena
 2. Under **Setup**, select **Human resources shared parameters**.
 3. On the **Recruitment** tab, under **Recruiting**, set **Enable recruiting requests** to **Yes**.
 
-## Enable recruiting requests (preview) in HR recruitment in Dynamics 365 Human Resources (merged infrastructure) 
+## Enable recruiting requests in Dynamics 365 Human Resources (merged infrastructure) 
 
 If you want to submit recruiting requests in HR recruitment, you must first enable the HR User Experience feature and Recruiting process management feature. 
 For more information on feature management, see [Feature management overview](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). 
