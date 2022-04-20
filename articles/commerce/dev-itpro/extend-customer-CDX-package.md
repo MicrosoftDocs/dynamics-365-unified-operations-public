@@ -24,7 +24,7 @@ If you want to include custom data (for example, **Loyalty**, **Affiliation**, o
 
 To add the custom data part of the package, override the **addAdditionalCustomerDataToPackage** method from the **RetailTransactionServiceCustomerExtensions** class, add a custom query to read the data from the required tables, and then write the data part of the **RetailCdxDataPackageSerializationHelper** object.
 
-### Prerequisites for adding the X++ extension
+## Prerequisites for adding the X++ extension
 
 - CDX must be extended to synchronize the custom table and fields. If you're synchronizing extension tables, a Commerce runtime (CRT) extension is required to read the extension table data. If you're using existing entities (for example, **Loyalty**, **Affiliation**, or **Customer**), no CRT extension is required, because the out-of-box CRT code will fetch the data. For more information, see [Enable custom Commerce Data Exchange synchronization via extension](cdx-extensibility.md).
 - Maintain data integrity between the **Customer** table and the additional data that is fetched. This additional data includes the extension tables.
