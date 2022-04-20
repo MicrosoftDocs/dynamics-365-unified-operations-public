@@ -129,14 +129,14 @@ Payroll administrators use the **Approve** page to review and approve workers da
 
 1. Select **OK**.
 1. The **Approve** page opens, listing records that match your criteria. Select a worker that you want to approve. (If you are working with standard USMF sample data, select worker *000496*, *Christina Portra*.)
-1. Grant the selected worker 10 days vacation by doing the following:
+1. Grant the selected worker 10 days vacation by doing the following steps:
     1. With the worker still selected, select **Premium lines** in the Action pane.
     1. The **Premium lines** page opens. On the Action Pane, select **New** to add a row to the grid. Then make the following settings for it:
         - **Premiums:** *VAC*
         - **Quantity:** *10*
     1. Close the **Premium lines** page.
 
-1. You return to the **Approve** page. Now register that the worker has used one of their vacation days on the current day. With the worker still selected, in the lower section of the page, open the **Overview** tab. Then select **New** from the toolbar to add a new row and make the following settings for it:
+1. You return to the **Approve** page. Now you will register that the worker has used one of their vacation days on the current day. With the worker still selected, in the lower section of the page, open the **Overview** tab. Then select **New** from the toolbar to add a new row and make the following settings for it:
     - **Journal registration type:** *Absence*
     - **Reference:** *Vacation*
 
