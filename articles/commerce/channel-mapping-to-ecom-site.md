@@ -33,17 +33,18 @@ This topic describes some of the more common channel mapping scenarios in Micros
 Dynamics 365 Commerce supports many business scenarios to map [online channels](#online-channels) with a configured set of products, prices, and discounts to [e-commerce site](#e-commerce-site) experiences for their customers.
 
 Scenarios covered in this topic include:
-- **A single language channel with a single e-commerce site experience.** For example, this could be a single brand site configured for the English United States market.
-- **A multilanguage channel with a single localized site experience.** For example, this could be a single brand site configured for Canada with French and English language support where both languages provide the same site experience but are localized into the appropriate languages.
-- **A multilanguage channel with different site experiences per language.** For example, this could be a single brand site configured for Canada with unique site experiences for French Quebec region users and English region users.
-- **Multiple channels (with single and/or multiple languages) with a single localized site experience.** For example, this could be a single brand site configured for Australia and New Zealand, where both countries share the same site experience but each country is configured with different products, currency, prices, discounts, and shipping modes.
-- **Multiple channels (with single and/or multiple languages) with different site experiences per channel.** For example, this could be a single brand site configured for Australia, Canada and Germany, where each country has a unique site experience along with different products, currency, prices, discounts, and shipping modes.
+- **A single language channel with a single e-commerce site experience.** For example, this could be a single brand site configured for the United States English market.
+- **A multilanguage channel with a single localized site experience.** For example, this could be a single brand site configured for Canada with French and English language support where users opting for either language get the same site experience localized into their language of choice.
+- **A multilanguage channel with different site experiences per language.** For example, this could be a single brand site configured for Canada with French and English language support where there are unique site experiences for each language.
+- **Multiple channels (with single and/or multiple languages) with a single localized site experience.** For example, this could be a single brand site configured for Australia and New Zealand, where both countries share the same site experience in English but each country is configured with different products, currency, prices, discounts, and shipping modes.
+- **Multiple channels (with single and/or multiple languages) with different site experiences per channel.** For example, this could be a single brand site configured for Australia, Canada, and Germany in multiple languages where each country has a unique site experience configured with different products, currency, prices, discounts, and shipping modes.
 
-## Online channels
+## Channels (AKA online stores)
 
-An online channel represents an online e-commerce storefront that is used to map products, pricing, discounts, languages, payment methods, delivery modes, fulfillment centers and other aspects of the online experience that will be available to your e-commerce customers. Online channels are created and managed in Commerce headquarters and map to a single [legal entity](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json#legal-entities). the legal entity is usually based in a single country that requires the tax reporting for the channel and can only be configured with a single currency.
+A channel (alos known as online stores or online channels) represents an online e-commerce storefront that is used to map products, pricing, discounts, languages, payment methods, delivery modes, fulfillment centers, and other aspects of the online experience that will be available to your e-commerce customers. Channels are created and managed in Commerce headquarters and map to a single [legal entity](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json#legal-entities). The legal entity is usually based in a single country that requires the tax reporting for the channel and can only be configured with a single currency.
 
-For more information on channels, see [Channel overview](channels-overview.md). For more information about creating an online channel, see [Set up an online channel](channel-setup-online.md).
+- For more information on channels, see [Channel overview](channels-overview.md). 
+- For more information about creating an online channel, see [Set up an online channel](channel-setup-online.md).
 
 The following example illustration from Commerce headquarters shows the default online channels that are deployed with Dynamics 365 Commerce if the demo data option is selected.
 
@@ -51,7 +52,7 @@ The following example illustration from Commerce headquarters shows the default 
 
 ## E-commerce site
 
-An e-commerce site contains a set of site pages that that customers use to browse and shop. E-commerce sites are managed from within Commerce site builder, as shown in the following example illustration.  
+An e-commerce site contains a set of site pages that customers use to browse and shop. E-commerce sites are managed from within Commerce site builder, as shown in the following example illustration.  
 
 ![Site builder e-commerce site list](media/channel-mapping-2.png)
 
@@ -59,7 +60,7 @@ To learn more about how to create and manage sites from within site builder, see
 
 ## Common channel mapping scenarios
 
-Dynamics 365 Commerce supports a wide range of channel mapping scenarios. The channel mapping scenarios that follow are just a subset of all possible channel mapping scenarios and are meant as a guide to help you plan for any unique business scenarios that you may have. The fictitious Adventure Works sporting goods store included with the Dynamics 365 Commerce demo data is used as an example for each scenario.
+Dynamics 365 Commerce supports a wide range of channel mapping scenarios. The channel mapping scenarios below are just a subset of all possible channel mapping scenarios and are meant as a guide to help you plan for any unique business scenarios that you may have. The fictitious Adventure Works sporting goods store included with the Dynamics 365 Commerce demo data is used as an example for each scenario.
 
 ### Single language channel with a single e-commerce site experience
 
