@@ -49,16 +49,17 @@ The site picker module must be configured with the list of sites (markets, regio
 
 The site picker module can be added to the **Site picker** slot of the [header module](author-header-module.md). After a site picker module is added, you can define the module heading and site options. Generally, a header module is contained in a header fragment that can be shared across e-commerce pages for a site. 
 
-To add the site picker module, follow these steps.
+To add the site picker module to a header module, follow these steps.
 
-1. In the **Site Picker** slot of the header fragment's header module, add a **Site picker** module.
-1. In the site picker properties pane, select **Add site options list**. An editable **Site options list** option appears.
+1. In the **Site picker** slot of the header fragment's header module, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Select modules** dialog box, add a **Site picker** module, and then select **OK**.
+1. In the **Site picker** properties pane, select **Add site options list**. An editable **Site options list** option appears.
 1. Select **Site options list**. The **Site options list** dialog box appears.
 1. Under **Site name**, enter the site name text that will be shown in the site picker drop-down list.
-1. Under **Site redirect URL**, select **Add a link**. The **Add a link** properties pane appears.
-1. In the **Add a link** properties pane, select **Custom page**, and then select **Next**.
+1. Under **Site redirect URL**, select **Add a link**. The **Add a link** flyout pane appears.
+1. In the **Add a link** flyout pane, select **Custom page**, and then select **Next**.
 1. From the site URL list, select the URL with the path you created when adding the channel to the site (for example, `www.adventure-works.com/fr-ca`), and then select **Apply**.
-1. In the dialog box, select **OK**.
+1. Select **OK**.
 1. Select **Save**, and then select **Finish editing**.
 1. Select **Publish** to publish the page.
 
