@@ -288,6 +288,11 @@ A collection of table maps work together for party and global address book inter
 
 For more information, see [Dual-write mapping reference](mapping-reference.md).
 
+## Address roles as a multi-select dropdown
+A postal address or an electronic address can serve more than one purpose. Say for example, a postal address can be serve as both billing address as well as delivery address. In such case, a user can choose 2 purposes 'invoice' and 'delivery' from the drop down control as shown below. 
+
+
+
 ## Known issues and limitations
 
 + In finance and operations apps, when you create a customer along with address and save it, the address might not synchronize to the **Address** table. This is because of a dual-write platform sequencing issue. As a workaround, create the customer first and save it. Then add the address.
@@ -298,8 +303,4 @@ For more information, see [Dual-write mapping reference](mapping-reference.md).
     ![Known issue with Add Contact.](media/party-gab-contact-issue.png)
 
 + **Initial sync** does not support the **Available From** and **Available To** time fields on **ContactForParty**, because DIXF converts the value into a string instead of an integer. The conversion triggers the error `Cannot convert the literal '<say 08:00:00>’ to the expected type edm.int32`.
-+ When a postal address is used for more than one reason, for example, business communication address and billing address, it should appear as `Business;Invoice` as shown in the following image. If you add a space in between the values, you will get an error.
-
-    ![Known issue with Address.](media/party-gab-address-issue.png)
-
 + You can't enter a forward-dated postal address using a finance and operations app with dual-write, because Dataverse does not support date effectivity. If you enter a future-dated postal address using a finance and operations app, it synchronizes to Dataverse fully and you will see the address on the user interface immediately. Any updates to this record will result in an error as it is future-dated and not current in the finance and operations app.
