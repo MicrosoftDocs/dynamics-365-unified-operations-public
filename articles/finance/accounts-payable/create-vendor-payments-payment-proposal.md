@@ -15,7 +15,7 @@ ms.search.form: LedgerJournalTransVendPaym
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 14312
 ms.assetid: 585d5b0b-1b79-4a03-ab18-528918070377
@@ -53,7 +53,7 @@ The payment proposal query contains various tabs, each of which has different op
 - **Include vendor invoices from other legal entities** – If your organization has a centralized process for payment, and the payment proposal should include invoices from other legal entities that are included in the search criteria, set this option to **Yes**.
 - **Propose separate vendor payment per legal entity** – If this option is set to **Yes**, a separate payment is created for each legal entity per vendor. The vendor on the payment is the vendor from the invoice from each legal entity. If this option is set to **No**, and the same vendor has invoices in multiple legal entities, one payment is created for the total amount of the selected invoices. The vendor on the payment is the vendor in the current legal entity. If the vendor account doesn’t exist in the current legal entity, the vendor account of the first invoice that must be paid is used.
 - **Payment currency** – This field specifies the currency that all payments are created in. If a currency isn’t defined, each invoice is paid in the currency of the invoice.
-- **Payment weekday** – Enter the day of the week when the payment should be made. This field is used only if the method of payment is set up to total invoices for payment on a specific day of the week.
+- **Payment weekday** – Enter the day of the week when the payment should be made, this field is used only if the method of payment is set to **Week**. The amount of invoices for payment are totaled on the specific day of the week for payment.
 - **Offset account type** and **Offset account** – Set these fields to define a specific account type (such as **Ledger** or **Bank**) and offset account (such as a specific bank account). The method of payment for the invoice defines the default offset account type and offset account, but you can use these fields to override the default values.
 - **Summarized payment date** – This is only used when the **Period** field on the method of payment is set to **Total**. If a date is defined, all payments are created on this date. The **Minimum payment date** field is ignored.
 - **Additional filters** – On the **Records to include** FastTab, you can define additional ranges of criteria. For example, if you want to pay only a range of vendors, you can define a filter for the vendor range. This functionality is often used to select invoices for a specific of method of payment. For example, if you define a filter where **Method of payment** = **Check**, only invoices that have that method of payment are selected for payment, provided that they also meet other criteria that are specified in the query.
