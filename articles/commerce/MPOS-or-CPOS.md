@@ -4,7 +4,7 @@
 title: Choose between Store Commerce and Cloud POS
 description: This topic explains the key differences between Store Commerce and Cloud POS, and describes various factors that retailers that implement Dynamics 365 Commerce should consider to help them make the best choice for their requirements.
 author:  jblucher 
-ms.date: 04/07/2022
+ms.date: 04/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
