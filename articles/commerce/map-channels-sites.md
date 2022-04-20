@@ -64,7 +64,9 @@ Dynamics 365 Commerce supports a wide range of channel mapping scenarios. The ch
 
 ### Single language channel with a single e-commerce site experience
 
-The most basic scenario is a single channel with a single language for selling in a single market. An example for this scenario is an Adventure Works online store that is set up only for the United States English market. The following illustration shows an example of the channel setup within headquarters where the online channel only supports a single language ("en-us"), a single currency ("USD"), and a single business entity ("usrt") that is used for tax reporting.
+The most basic scenario is a single channel with a single language for selling in a single market. An example for this scenario is an Adventure Works online store that is set up only for the United States English market. 
+
+The following illustration shows an example of a channel configuration in headquarters where the online channel only supports a single language ("en-us"), a single currency ("USD"), and a single business entity ("usrt") that is used for tax reporting.
 
 ![Adventure Works online store in Commerce headquarters with legal entity, currency, and language entries highlighted](media/channel-mapping-3.png)
 
