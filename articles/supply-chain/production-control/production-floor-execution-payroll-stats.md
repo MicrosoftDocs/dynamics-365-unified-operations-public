@@ -46,6 +46,7 @@ In this section, you will edit an existing *pay agreement* by adding the new pay
 
 1. Go to **Time and attendance \> Setup \> Payroll \> Pay agreements**.
 1. Select the pay agreement where you want to set up the vacation policy (if you are working with standard USMF sample data, there is just one, *Man*.).
+1. Make sure that your selected pay agreement is valid for the current date. If you are working with standard USMF sample data, then the *Man* agreement might have a **To date** that is in the past, so be sure to edit it to be a year or two in the future if needed.
 1. On the Action Pane, select **Agreement lines** on the Action Pane.
 1. The **Pay agreement lines** page opens. On the **Overview** FastTab toolbar, make the following settings:
 
@@ -119,7 +120,7 @@ In this section, you will create a *statistical balance setup* that links to the
 
 ## Set a worker's initial vacation balance and adjust it by one day
 
-Payroll administrators use the **Approve** page to approve and review workers daily registrations. In this scenario, you will take on the role of an admin so you can set the initial vacation balance for a worker and register vacation days taken by that worker.
+Payroll administrators use the **Approve** page to review and approve workers daily registrations. In this scenario, you will take on the role of an admin so you can set the initial vacation balance for a worker and register vacation days taken by that worker.
 
 1. Go to **Time and attendance \> Review and approve \> Approve**.
 1. The **Approve** dialog opens. Make the following settings:
@@ -128,17 +129,18 @@ Payroll administrators use the **Approve** page to approve and review workers da
 
 1. Select **OK**.
 1. The **Approve** page opens, listing records that match your criteria. Select a worker that you want to approve. (If you are working with standard USMF sample data, select worker *000496*, *Christina Portra*.)
-1. In the lower section of the page, open the **Overview** tab. Then select **New** from the toolbar to add a new row and make the following settings for it:
+1. Grant the selected worker 10 days vacation by doing the following:
+    1. With the worker still selected, select **Premium lines** in the Action pane.
+    1. The **Premium lines** page opens. On the Action Pane, select **New** to add a row to the grid. Then make the following settings for it:
+        - **Premiums:** *VAC*
+        - **Quantity:** *10*
+    1. Close the **Premium lines** page.
+
+1. You return to the **Approve** page. Now register that the worker has used one of their vacation days on the current day. With the worker still selected, in the lower section of the page, open the **Overview** tab. Then select **New** from the toolbar to add a new row and make the following settings for it:
     - **Journal registration type:** *Absence*
     - **Reference:** *Vacation*
 
-1. Select **Premium lines** in the Action pane.
-1. On the Action Pane, select **New** to add a row to the grid. Then make the following settings for it:
-    - **Premiums:** *VAC*
-    - **Quantity:** *10*
-
-1. Close the **Premium lines** page.
-1. Back on the **Approve** page, select **Transfer** from the toolbar in the upper section.
+1. Select **Transfer** from the toolbar in the upper section to apply the vacation balance and calculate the deduction.
 
 ## Configure the production floor execution interface to include the My day dialog
 
