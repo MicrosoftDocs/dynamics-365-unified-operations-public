@@ -44,21 +44,23 @@ available as follows:
 The following table lists the features that are included in this release. We might update this topic to include features that made it into the build after this topic 
 was initially published.
 
-| Feature area | Feature | More information | Enabled by  |
-|----|----|----|----|
-|    |    |    |    | 
-|    |    |    |    | 
-|    |    |    |    |
+| Feature name | Overview | Release status  |
+|----|----|----|
+|Recruit job candidates*|     |Preview     | 
+
+* Human resources user experience enhancements must be turned on in Feature management.
+* Recruiting process management must be turned on in Feature management.
+
 
 ## Feature enhancements included in this release
 
 The following table lists the feature enhancements included in this release. Each of these enhancements provides an incremental improvement to an existing feature. 
 Because they are only enhancements, they are not listed in the [release plan](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance). 
 
-| Feature area | Feature name | More information |  
-|--------------|--------------|------------------|
-|              |              |                  | 
-|              |              |                  |
+| Feature name | More information |  
+|--------------|------------------|
+| Display tasks on default dashboard     |A new option has been added to view the task list on the default dashboard. The task management feature must be on for the option to display.           | 
+|  People search and people hub  | The **People** search and people hub are now available when the **Human Resources User Experience** switch is on. The user must have the **View the people hub workspace** privilege to see the **People hub**.  |
 
 
 
@@ -66,7 +68,7 @@ Because they are only enhancements, they are not listed in the [release plan](/d
 
 | Issue summary | More information |
 |---------------|------------------|
-
+|Signing limits will not to work with multiple compensation levels|When the **Multiple compensation levels** feature is turned on, and the **Signing limit** parameter is set to **Compensation level**, the signing limits will not process. Issue #670843
 
 ## Additional resources
 
