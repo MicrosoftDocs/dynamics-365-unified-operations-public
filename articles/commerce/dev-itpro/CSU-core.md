@@ -18,44 +18,45 @@ ms.dyn365.ops.version: AX 10.0.25
 
 This topic provides an introduction to Commerce Scale Unit (CSU) Core in Microsoft Dynamics 365 Commerce.
 
-Commerce Scale Unit (CSU) Core is the next generation high performance platform offered by Dynamics 365 Commerce to host the headless commerce engine. CSU Core provides the same functionality as the existing Commerce Scale Unit but is highly optimized and performant because it uses ASP.NET Core and .NET Core. 
+CSU Core is the next-generation, high-performance platform that Dynamics 365 Commerce offers to host the headless commerce engine. CSU Core provides the same functionality as the existing CSU, but it's highly optimized and performant because it uses ASP.NET Core and .NET Core.
 
-## Why CSU Core? 
+## Why CSU Core?
 
-CSU Core is built using the ASP.NET Core, which is a cross platform, high performance framework.
+CSU Core is built by using ASP.NET Core, which is a cross-platform, high-performance framework.
 
 CSU Core provides the following benefits:
-- Better API performance when compared to the existing Commerce Scale Unit.
-- Runs on .NET Core and uses .NET version 6.
-- Backward compatible with extensions built using the Commerce software development kit (SDK), .NET 6, and Visual Studio 2022.
+
+- It has better application programming interface (API) performance than the existing Commerce Scale Unit.
+- It runs on .NET Core and uses .NET version 6.
+- It's backward compatible with extensions that were built by using the Commerce software development kit (SDK), .NET 6, and Visual Studio 2022.
 
 ## CSU Core release plan
 
-CSU Core is available for new deployments starting with the Dynamics 365 Commerce version 10.0.22 release, and starting with Commerce version 10.0.22 release all new deployments will default to using CSU Core. On-premises or CSU self-hosted installers will also use the same CSU Core platform built using ASP.NET core and that runs on .NET Core. 
+CSU Core is available for new deployments as of the Dynamics 365 Commerce version 10.0.22 release. As of the Commerce version 10.0.22 release, all new deployments will use it by default. On-premises or CSU self-hosted installers will use the same CSU Core platform that is built by using ASP.NET core and that runs on .NET Core.
 
 ## Deploy or migrate to CSU Core
 
-CSU Core offers high performant headless Commerce APIs and the benefits of .NET Core. To migrate your CSU hosted by Microsoft to the CSU Core or to deploy a new instance of CSU Core, contact the Dynamics 365 Commerce support team for help building an extension that uses the supported .NET framework. 
+CSU Core offers highly performant headless commerce APIs and the benefits of .NET Core. To migrate your Microsoft-hosted CSU to CSU Core, or to deploy a new instance of CSU Core, contact the Dynamics 365 Commerce support team for help building an extension that uses the supported .NET framework.
 
 ### Extensions
 
-If you plan to create extensions for headless commerce, it must be built using following target frameworks and .NET 6 or later. .NET 6 development is only supported in Visual Studio version 2022 or later.
+If you plan to create extensions for headless commerce, it must be built by using the following target frameworks and .NET 6 or later. .NET 6 development is supported only in Visual Studio version 2022 or later.
 
-#### Validate your extension compatibility with CSU Core 
+#### Validate your extension compatibility with CSU Core
 
-You can validate that your extensions are compatible with CSU core by running an extension test. To run the test, append the query parameter **healthcheck?testname=extensions** to your Retail Rerver URL, as shown in the following example that uses **\<MyRetailServerURL\>** to represent the Retail Server URL.
+You can validate that your extensions are compatible with CSU core by running an extension test. To run a test, append the query parameter **healthcheck?testname=extensions** to your Retail Server URL, as shown in the following example that uses **\<MyRetailServerURL\>** to represent the Retail Server URL.
 
 `https://<MyRetailServerURL>/healthcheck?testname=extensions`
 
-The test result will show a table with the status of compatible and non-compatible extensions.
+The test results will contain a table that shows the status of compatible and non-compatible extensions.
 
 #### Extension target framework
 
-| Extension Component | Extension project target framework | Commerce SDK |
-| ------ | ------ | ------ |
+| Extension component | Extension project target framework | Commerce SDK |
+|--- | --- | --- |
 | Headless commerce APIs | NET Standard 2.0 | Version 10.0.23 or later |
-| Commerce runtime (CRT) | NET Standard 2.0 | Version 10.0.23 or later |		
+| Commerce runtime (CRT) | NET Standard 2.0 | Version 10.0.23 or later |
 
 #### Migrate extensions to support CSU Core
 
-Extensions built using the Retail SDK must be migrated to the Commerce SDK to run in CSU Core. The CSU Core runtime is built using the ASP .NET Core and .NET Core so extensions created using the legacy .NET framework and Retail SDK packages will not run in CSU Core. For more information, see [Migrate the Retail SDK extensions to Commerce SDK](retail-sdk/migrate-commerce-sdk.md). 
+To run in CSU Core, extensions that were built by using the Retail SDK must be migrated to the Commerce SDK. The CSU Core runtime is built by using the ASP .NET Core and .NET Core. Therefore, extensions that were created by using the legacy .NET framework and Retail SDK packages won't run in CSU Core. For more information, see [Migrate the Retail SDK extensions to Commerce SDK](retail-sdk/migrate-commerce-sdk.md).
