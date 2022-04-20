@@ -4,7 +4,7 @@
 title: What's new or changed in Dynamics 365 Finance 10.0.27 (June 2022)
 description: This topic describes features that are either new or changed in the Dynamics 365 Finance version 10.0.27 preview release.
 author: kfend
-ms.date: 04/07/2022
+ms.date: 04/20/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.27
 
 [!include [banner](../includes/preview-banner.md)]
 
-This topic lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.27. This version has a build number of 10.0.1192 and is available as follows:
+This topic lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.27. This version has a build number of XXX and is available as follows:
 
 - **Preview of release**: April 2022
 - **General availability of release (self-update)**: May 2022
@@ -50,7 +50,10 @@ The following table lists the features that are included in this release. We mig
 | Credit and collections   | Customer aging performance  | The feature speeds up the process of aging customer accounts with many transactions by using top picking instead of bundling. Customer pools can be used with this performance enhancement. This feature can be used with or without the existing Customer aging performance enhancement enabled.  | Feature management   | 
 | Credit and collections  | Customer aging report option for Update collection status   |  The feature allows users to run the customer aging report without updating the collection status or creating collection tasks for the user running the report. Update collection status is the new parameter added to the Customer aging report.  | Parameter   |
 | Credit and collections | Print pro forma documents when sales order is on credit hold | A pro forma document (confirmation, picking ticket, release to warehouse, packing slip and invoice) can be printed while the sales order is on credit hold. The sales order will still be on hold; however, the pro-forma document can now be printed. | Feature management | 
-
+| Globalization | (India) Charge allocation on the **Bill of entry** page | Actual charge allocation is required on import orders for each item line to determine the **customs assessable value** at the time that the Bill of entry is submitted to customs authorities. This new feature enables the **Bill of entry** page to edit and allocate actual charge amounts such as freight and insurance, on the line items and deliver an auto-calculated assessable value. | Feature management   | 
+| Globalization  | Asset management integration with Russian fixed assets  | This functionality enhances the **Acquire to retire** asset lifecycle and end-to-end process flows with the **Russian Fixed assets** module. By integrating the **Asset management** and **Fixed assets** modules, you can link Russian fixed assets with maintenance assets. Fixed assets users can then create a maintenance asset from a new or existing fixed asset, and Asset management users can associate a maintenance asset with an existing fixed asset.  | Feature management |
+| Globalization  | Configurable business document-specific destinations by using printer management settings in the reports (phase 2)  | The initial feature implementation enables the setup and edit of business document-specific destinations by using the print management user interface in the Electronic reporting (ER) framework. This feature extends this capability to all the remianing configurable reports that were not using it in the initial release. For more information, see [Configure print management record-specific ER destinations](../fin-ops-core/dev-itpro/analytics/er-named-destinations.md).  | Feature management |
+| Globalization  | Run the Electronic reporting (ER) import of manually uploaded documents in batch   | The original functionality of the Electronic reporting (ER) framework offered the ER API to call from the source code, a configured ER solution for importing data in batch mode from inboumd files in SharePoint. You can use the new ER capability to import data from a manually selected file by scheduling a new batch job from the ER user interface. For more inforamtion, see [Import data from manually selected files in batch mode](../fin-ops-core/dev-itpro/analytics/er-configure-data-import-batch.md).  | Feature management |
 
 ## Feature enhancements included in this release
 
