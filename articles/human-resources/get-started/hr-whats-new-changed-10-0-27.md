@@ -73,7 +73,7 @@ Because they are only enhancements, they are not listed in the [release plan](/d
 ## Additional resources
 
 ### Platform updates for Finance and Operations apps
-Dynamics 365 Finance 10.0.27 includes platform updates. To learn more, see [Platform updates for version 10.0.27 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-27.md). 
+Dynamics 365 Finance 10.0.27 includes platform updates. To learn more, see [Platform updates for version 10.0.27 of Finance and Operations apps](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-27.md). 
 
 ### Bug fixes 
 For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=xxxxxx). 
