@@ -31,15 +31,18 @@ ms.dyn365.ops.version: Platform update 52
 
 [!include [banner](../includes/banner.md)]
 
-To ensure consistent availability and performance of the Finance and Operations service we apply limits to how the service APIs are used. These limits are designed to protect the service when client applications make extraordinary demands on server resources. Sudden bursts of high incoming API traffic or concurrent long-running requests against the server can exhaust server resources, causing outages or other impacts on teh availability and performance of the service.
+> [!NOTE]
+> Resource-based service protection API limits are enabled in Finance and Operations apps environments, beginning in version 10.0.19. The user-based service protection API limits outlined in this topic will be enabled in environments beginning in version 10.0.30 with 2022 release wave 2.
 
-The limits should not affect normal users of interactive clients. The limits are designed to impact only client applications that perform extraordinary API requests. The limits provide a level of protection from random and unexpected surges in request volume that threaten the availability and performance of teh Finance and Operations platform.
+To ensure consistent availability and performance of the Finance and Operations service we apply limits to how the service APIs are used. These limits are designed to protect the service when client applications make extraordinary demands on server resources. Sudden bursts of high incoming API traffic or concurrent long-running requests against the server can exhaust server resources, causing outages or other impacts on the availability and performance of the service.
+
+The limits should not affect normal users of interactive clients. The limits are designed to impact only client applications that perform extraordinary API requests. The limits provide a level of protection from random and unexpected surges in request volume that threaten the availability and performance of the Finance and Operations platform.
 
 > [!NOTE]
 > Service protection API limits are available only for the Finance and Operations online service, including production and sandbox environments. The protection limits are not available for on-premises or development environments.
 
 ## Impact on client applications
-It is the responsibility of client applications to manage service protection API limit errors. How teh error should be managed depends on teh nature of the application.
+It is the responsibility of client applications to manage service protection API limit errors. How the error should be managed depends on the nature of the application.
 
 ### Interactive client applications
 The service protection limits are high enough that it should be rare for an individual using an interactive client application to encounter them during normal usage. However, it is possible if the client application allows for bulk operations. Client application developers should be aware of how service protection API limits are enforced and design the UI to reduce the potential for users to send extremely demanding requests to the server. But they should still expect that service protection API limit errors can occur and be prepared to handle them.
@@ -55,13 +58,13 @@ For more information, see [Maximizing API throughput](service-protection-maximiz
 Some applications will send requests from anonymous users through a service principal account. For the service protection API limits that are based on a per-user basis, these applications can hit service protection API limits based on the volume of traffic the application experiences across all client users. Like interactive client applications, it isn't expected that the service protection API limit errors should be displayed to the application end user. It is expected that the UI should disable further requests and display a message that the server is busy. The message may include the time when the application can begin accepting new requests.
 
 ## Enforcement of the service protection API limits
-There are two types of service protection API limits for Finance and Operations apps: user-based and resource-based limits. User-based limits provide protection against individual users or integrations harming system performance and availability. Resource-based limits provide protection for the environment by enforcing thresholds of high environment resource utilization, limiting service requests when high thresholds are reached. 
+There are two types of service protection API limits for Finance and Operations apps: user-based and resource-based. User-based limits provide protection against individual users or integrations harming system performance and availability. Resource-based limits provide protection for the environment by enforcing thresholds of high environment resource utilization, limiting service requests when high thresholds are reached. 
 
 > [!IMPORTANT]
 > Service protection API limits are subject to change and may vary between environments. These numbers represent default values and are provided to give you an idea of what values you can expect in your environment. These limits are not configurable and are not specific to legal entities.
 
 ### User-based service protection API limits
-Two of the user-based service protection API limits are evaluated within a 5-minute(300 seconds) sliding window. If either limit is exceeded within teh preceding 300 seconds, a service protection API limit error will be returned on subsequent requests to protect the service until the [Retry-After interval](service-protection-retry-operations.md#retry-after-intervals) has ended.
+Two of the user-based service protection API limits are evaluated within a 5-minute(300 seconds) sliding window. If either limit is exceeded within the preceding 300 seconds, a service protection API limit error will be returned on subsequent requests to protect the service until the [Retry-After interval](service-protection-retry-operations.md#retry-after-intervals) has ended.
 
 The service protection API limits are evaluated per user. Each authenticated user is limited independently. Only the user accounts which are making extraordinary demands will be limited. Other users will not be impacted.
 
@@ -93,9 +96,9 @@ With the 429 Too Many Requests response, there is a specific error message retur
 ### Number of requests
 This limit counts the total number of requests during the preceding 300-second period. The following error message is returned with the API response:
 
-```Number of requests exeeded the limit of 6000 over the time window of 300 seconds.```
+```Number of requests exceeded the limit of 6000 over the time window of 300 seconds.```
 
-It is not expected that a typical user of an interactive application will be able to send 1200 requests per minute to exceed this limit unless the application enables users to perform bulk operations. For example, if a list view enables the selection of 250 records at a time and allows a user to perform an operation on all records with a single action, the user would need to perform this operation 24 times in a span of 300 seconds.
+It is not expected that a typical user of an interactive application will be able to send 1200 requests per minute to exceed this limit unless the application enables users to perform bulk operations. For example, if a list view enables the selection of 250 records at a time and allows a user to perform an operation on all records with a single action, the user would need to perform this operation 24 times in a span of 300 seconds to reach the service protection API limit.
 
 If your application provides this capability, you should consider some of the following strategies:
 - Decrease the total number of records that can be selected in a list. If the number of items displayed in a list is reduced to 50, the user would need to perform this operation 120 times within 300 seconds. The user would have to complete teh operation on each list within 2.5 seconds. 
@@ -104,7 +107,7 @@ If your application provides this capability, you should consider some of the fo
 ### Execution time
 This limit tracks the combined execution time of incoming requests during the preceding 300-second period. The following error message is returned with the API response:
 
-```Combined execution time of incoming requests exceeded limit of 1200 seconds over time window of 300 seconds. Decrease number of concurrent requests or reduce the duration of requests and try again later.```
+```Combined execution time of incoming requests exceeded the limit of 1200 seconds over the time window of 300 seconds. Decrease the number of concurrent requests or reduce the duration of requests and try again later.```
 
 Some operations require more resources than others. Batch operations and highly complex queries can be very demanding. These operations may also be performed simultaneously in concurrent requests. Therefore, within the 5-minute window it is possible to request operations that will require more than 20 minutes of combined computation time.
 
