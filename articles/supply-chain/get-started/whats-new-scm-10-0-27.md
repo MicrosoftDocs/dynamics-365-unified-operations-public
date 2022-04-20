@@ -31,7 +31,7 @@ The following table lists the features that are included in this release. We mig
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
 | Inventory and logistics | [Inventory allocation for the Inventory Visibility Add-in](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-allocation-inventory-visibility-add-in) | Coming soon | Enabled by default |
-| Inventory and logistics | [Landed cost integration entities for third-party freight forwarders](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/landed-cost-integration-third-party-freight-forwarders) | [Landed cost entities overview](../landed-cost/landed-cost-entities-overview.md) | Enabled by default |
+| Manufacturing | "My day" view for the production floor execution interface | [How workers use the production floor execution interface](../production-control/production-floor-execution-use.md) | Feature management:<br>*"My day" view for the production floor execution interface* |
 | Planning | [Planning Optimization support for subcontracting](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-subcontracting) | [Manage subcontracting work in production](../production-control/manage-subcontract-work-production.md) | Enabled by default |
 
 ## Feature enhancements included in this release
