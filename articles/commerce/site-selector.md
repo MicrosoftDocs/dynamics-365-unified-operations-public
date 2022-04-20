@@ -4,7 +4,7 @@
 title: Site picker module
 description: This topic covers the site picker module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
-ms.date: 04/06/2022
+ms.date: 04/20/2022
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -47,7 +47,22 @@ The site picker module must be configured with the list of sites (markets, regio
 
 ## Add a site picker module to a page
 
-The site picker module can be added to the **Site picker** slot of the [header module](author-header-module.md). After a site picker module is added, you can define the module heading and site options. Generally, a header module is contained in a header fragment that can be shared across e-commerce pages for a site. In the following example, the site picker module has been added to the **Site picker** slot of a header module that is contained in a header fragment that is named **HeaderContainer**.
+The site picker module can be added to the **Site picker** slot of the [header module](author-header-module.md). After a site picker module is added, you can define the module heading and site options. Generally, a header module is contained in a header fragment that can be shared across e-commerce pages for a site. 
+
+To add the site picker module, follow these steps.
+
+1. In the **Site Picker** slot of the header fragment's header module, add a **Site picker** module.
+1. In the site picker properties pane, select **Add site options list**. An editable **Site options list** option appears.
+1. Select **Site options list**. The **Site options list** dialog box appears.
+1. Under **Site name**, enter the site name text that will be shown in the site picker drop-down list.
+1. Under **Site redirect URL**, select **Add a link**. The **Add a link** properties pane appears.
+1. In the **Add a link** properties pane, select **Custom page**, and then select **Next**.
+1. From the site URL list, select the URL with the path you created when adding the channel to the site (for example, `www.adventure-works.com/fr-ca`), and then select **Apply**.
+1. In the dialog box, select **OK**.
+1. Select **Save**, and then select **Finish editing**.
+1. Select **Publish** to publish the page.
+
+In the following example, the site picker module has been added to the **Site picker** slot of a header module that is contained in a header fragment that is named **HeaderContainer**.
 
 ![Example of a site picker module in a header fragment.](./media/ecommerce-sitepicker-2.png)
 
