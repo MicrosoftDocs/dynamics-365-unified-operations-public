@@ -98,10 +98,10 @@ You can also use the **Competencies** section to discuss, review, and rate the e
 
 You can create new reviews that are based on templates that you’ve created. For example, you can have a template for one-on-ones, development plans, or periodic reviews. You can select the template when you create a new review.
 
-To print reviews, select the **Print review** button. If you don't see the button on the **Review** page, ensure you have enabled the feature in the **Feature management** workspace. For more information about Feature management, see [Feature management overview](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+To print reviews, select the **Print review** button. If you don't see the button on the **Review** page, ensure you have created an **Electronic reporting configuration** and have enabled the feature in the **Feature management** workspace. 
+For more information about Electronic reporting configurations, see [Electronic reporting configurations](../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md).
+For more information about Feature management, see [Feature management overview](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-> [!NOTE]
-> The ability to print performance reviews is only available in Human Resources. It's not available in Dynamics 365 Finance.
 
 ## Components you can include in performance reviews
 
