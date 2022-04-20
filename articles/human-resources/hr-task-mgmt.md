@@ -194,6 +194,13 @@ You can also apply a checklist to an employee by opening their **Worker** page a
 
 On the **Employee self service** page, an employee can view all the tasks that are assigned to them. For each assigned task, **Task**, **Description**, **Instructions**, and **Contact person** values are shown. Additionally, for each task, the employee can open the associated external webpage or the associated page in the Dynamics 365 app.
 
+Tasks can also be displayed on the default dashboard. To display tasks on the default dashboard:
+1. Go to **User Options – Preferences – Task Management** 
+2. Select the **Display tasks on default dashboard** to **On**.  
+
+>[!Note] 
+>The **Task management** feature must be turned on in **Feature management** for the option to display in **User options**.
+
 Tasks can be marked as **In progress**, **Canceled**, or **Completed**. If a task was assigned to a group, it will be marked as **Completed** when one person in the group completes it.
 
 Tasks can also be reassigned.
