@@ -4,7 +4,7 @@
 title: Test recorder and Regression suite automation tool for Cloud POS
 description: This topic explains how to automate user acceptance testing (UAT) by using the POS test recorder and the Regression suite automation tool (RSAT).
 author: mugunthanm
-ms.date: 04/07/2022
+ms.date: 04/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
