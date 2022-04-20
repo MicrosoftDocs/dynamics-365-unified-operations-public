@@ -2,7 +2,7 @@
 title: Debug Store Commerce extensions using Visual Studio Code
 description: This topic describes how to debug Microsoft Dynamics 365 Commerce Store Commerce extensions by using Visual Studio Code.
 author: mugunthanm
-ms.date: 04/08/2022
+ms.date: 04/21/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: v-chgriffin
@@ -35,7 +35,7 @@ To debug Store Commerce extensions by Using Visual Studio Code, follow these ste
     .\StoreCommerce.Installer.exe install --enablewebviewdevtools
     ```
 
-1. Download the Store Commerce extension sample code from the InStore GitHub repository (repo), or use your own extension code.
+1. Download the Store Commerce extension sample code from the [InStore GitHub repository (repo)](https://github.com/microsoft/Dynamics365Commerce.InStore), or use your own extension code.
 
     > [!NOTE]
     > Don't run Visual Studio Code in administrator mode.
@@ -117,7 +117,7 @@ To debug Store Commerce extensions by Using Visual Studio Code, follow these ste
     }
     ```
 
-1. In Visual Studio, select **Debug**, select the appropriate option for your scenario, and then start to debug by putting a breakpoint in your extension code.
+1. In Visual Studio Code, select **Debug**, select the appropriate option for your scenario, and then start to debug by putting a breakpoint in your extension code.
 
 ## Troubleshoot debug issues
 
