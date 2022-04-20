@@ -4,7 +4,7 @@
 title: Manage secrets for retail channels
 description: This topic explains how to manage secrets when you're using an extension with channels that require access to secrets.
 author: AamirAllaq
-ms.date: 04/07/2022
+ms.date: 04/21/2022
 ms.topic: article
 ms.prod:
 ms.technology:
