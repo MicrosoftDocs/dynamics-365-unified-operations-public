@@ -62,6 +62,10 @@ Follow these steps to set up a ledger account that can be used to post the excha
 
 Post and settle documents in the usual way. The exchange difference transaction that is created during settlement will generate a voucher, where the exchange difference amount that is related to the tax amount is posted separately to the ledger account that you selected in the **Tax posting account** field on the **Currency revaluation accounts** page.
 
+## Known limitations
+
+You should not use this feature if you post vendor invoices via **Invoice register** and **Invoice approval** journals.
+
 ## Examples
 
 The following two examples show the resulting ledger transactions.
