@@ -114,7 +114,7 @@ The following rules apply:
 Any of the following changes will break table extensions and table references to tables and table fields:
 
 + Deleting or renaming table fields, field groups, indexes, table mappings, or table relations
-+ Modifying these table properties: **Extends**, **SuportInheritance**, **TableType**, **SaveDataPerCompany.Yes**, or **SaveDataPerPartition**
++ Modifying these table properties: **Extends**, **SupportInheritance**, **TableType**, **SaveDataPerCompany.Yes**, or **SaveDataPerPartition**
 + Modifying these table field properties: **ExtendedDataType**, **Scale**, or **String size**
 + Modifying these table index properties: **AllowDuplicates.No** or **IndexType**
 
