@@ -174,7 +174,7 @@ Two journal entries are created, one for each line on the billing schedule.
 | Unbilled revenue account | | $90.00 | |
 | |Deferred maintenance revenue | | $90.00 |
 
-The first journal entry is posted to an unbilled revenue offset account, and the second is posted to a deferred revenue account. If the billing line has both unbilled revenue and deferred revenue, the deferred revenue account is used, not the unbilled revenue offset. The contract requires that the invoice for the customer be created at the beginning of each year. Use the **Generate invoice** process to create the invoice. When the invoice is created, the following journal entry is created.
+The first journal entry is posted to an unbilled revenue offset account, and the second is posted to a deferred revenue account. If the billing line has both unbilled revenue and deferred revenue, the deferred revenue account is used, not the unbilled revenue offset. The contract requires that the invoice for the customer be created at the beginning of each year. Use the **Generate invoice** process to create the invoice. When the invoice is created, the following journal entries are created.
 
 | Main account | Unbilled revenue account | Debit amount | Credit amount |
 |---|---|---|---|
@@ -308,5 +308,5 @@ Item S0021 has a start date in January 2020 and an end date in December 2020, bu
 
 An adjustment journal entry is created for the line that is terminated. The journal entry for the line that belongs to the same multiple element arrangement (MEA) number is reversed, and a new journal entry is created:
 
-- **Item 1000:** The original initial journal entry of $1,465.26. An adjustment journal entry for $1,549.47 is created.
+- **Item 1000:** The original initial journal entry of $1,465.26 is reversed. An adjustment journal entry for $1,549.47 is created.
 - **Item S0021:** The original initial journal entry of $274.74 is reversed. A new journal entry for $124.00 is created.
