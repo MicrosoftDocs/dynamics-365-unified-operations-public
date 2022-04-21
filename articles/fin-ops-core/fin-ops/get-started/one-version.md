@@ -131,7 +131,7 @@ For breaking changes that only affect compilation time, but are binary compatibl
 
 ### Can I delay an update?
 
-You can pause an update up to 4 months or 3 consecutive service updates by way of LCS configuration. After this period, an update will be scheduled and auto-applied by Microsoft. The update experience for a delayed update will incur additional downtime.
+Yes, you can pause, delay, or opt-out of an update via Update Settings in Lifecycle Services projects provided that all of your sandbox and production environments are no more than three versions behind the latest available update. After this period, an update will be scheduled and auto-applied by Microsoft. The update experience for a delayed update will incur additional downtime.
 
 ### Can I delay an update for longer than three consecutive service updates due to seasonal activity or other business reason? 
 
@@ -264,7 +264,7 @@ Extensibility requests can be logged in LCS. Details are available in the [Exten
 
 ### What does end of service mean?
 
-Microsoft won't provide any fixes to issues on versions that have reached end of service. Microsoft will also not investigate or troubleshoot any issue that you may encounter on a version that's older than 3 service updates. If you encounter an issue on a version that has reached end of service, you'll be required to update to the latest update and report the issue if it persists.
+Microsoft won't provide any fixes to issues on versions that have reached end of service. Microsoft will also not investigate or troubleshoot any issue that you may encounter on a version that's older than three service updates. If you encounter an issue on a version that has reached end of service, you'll be required to update to the latest update and report the issue if it persists.
 
 All environments will continue to be operated by Microsoft. All automatic processes around your environments, such as monitoring or self-healing, will also continue as long as the environment is on a supported version.
 
