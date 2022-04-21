@@ -32,12 +32,11 @@ In July 2018 we announced a [change to the way we deliver Dynamics 365 updates](
 
 For more information about One Version service updates, see [One Version service updates overview](../../dev-itpro/lifecycle-services/oneversion-overview.md).
 
-
 ### Can the update be delayed, what is the policy?
-Yes, the customer can pause, delay, or opt-out of an update via Update Settings in the Lifecycle Services projects provided that all of their sandboxes and Production environment are no more than three versions behind the latest available update.  A customer can choose to pause up to 3 consecutive updates. The following is an example of a delayed update: 
-- The customer is currently on version 10.0.2.
-- The customer can pause updates 10.0.3, 10.0.4, and 10.0.5.
-- The customer must take the 10.0.6 update when it is available.
+Yes, the customer can pause, delay, or opt-out of an update via Update Settings in the Lifecycle Services projects provided that all of their sandboxes and Production environments are no more than three versions behind the latest available update.  A customer can choose to pause up to 3 consecutive updates. The following is an example of a delayed update: 
+- The customer is currently on version 10.0.22.
+- The customer can pause updates 10.0.23, 10.0.24, and 10.0.25.
+- The customer must take the 10.0.26 update when it is available.
   
 ### With a release date in early April, when will the general availability package be made available?
 Production updates for a monthly release will be scheduled for the first, second, and third weeks in of the month. Depending on the configuration that you set up in Lifecycle Services (LCS), you will receive updates during that specific week.
@@ -53,8 +52,7 @@ Customers can always choose to apply the update at an earlier time, or if there 
 | Version       | Description |
 |---------------|-------------|
 | 8.1 and later | All customers on 8.1 and later will be scheduled for automatic monthly updates with a combined application and platform update starting November 2018. You will be required to be on an update that's no older than 4 months or 3 service updates. To pause an update, refer to [Pause service updates](../../dev-itpro/lifecycle-services/pause-service-updates.md). |
-| 8.0           | Customers on 8.0 can manually apply the monthly platform and financial reporting updates. You will be required to have an update that's no older than 4 months or 3 service updates. The 8.0 application lifecycle ends in April 2019. Customers on 8.0 must update by April 30, 2019 to stay supported. In order to be on a supported application, customers should follow the process to update to the latest version. For more information, see [Update environments from version 8.0 to 10.0.X](../../dev-itpro/migration-upgrade/appupdate-80-81.md). | 
-| 7.x           | Customers on 7.x can manually apply the monthly platform and financial reporting updates. You will be required to have an update that's no older than 4 months and 3 service updates. Customers on 7.x must update by April 30, 2019 to stay supported. If customer stays on version 7.3 past April 30 they will still receive automated platform updates every month. You are required to upgrade to 8.1 by April 2019 (unless extensions are not available). The only overlayered version in market will be version 7.3. 
+
 
 ### What does the service update contain?
 
@@ -84,7 +82,7 @@ For more information on deprecation guidelines and deprecated methods and metada
 
 ### Can I apply a Platform service update to my existing 8.1 or later environments?
 
-Customers on version 8.1 or later will only be able to apply the 8.1.x or v10.x Service updates. Platform only service updates cannot be applied to version 8.1.x or later. Platform service updates can only be applied to versions 7.x or 8.0.
+Customers on version 8.1 or later will only be able to apply the 8.1.x or v10.x Service updates. Platform only service updates cannot be applied to version 8.1.x or later. 
 
 ### Will Platform updates be able to be scheduled and delay/pause by customers?
 
@@ -135,7 +133,7 @@ You can pause an update up to 4 months or 3 consecutive service updates by way o
 
 ### Can I delay an update for longer than 3 consecutive service updates due to seasonal activity or other business reason? 
 
-No, service updates will be automatically applied to the sandbox, then 7 days later the update will be applied to the production environment if the environments are more than 3 service updates old. A customer can only pause up to 3 consecutive updates in a row. For example, if a customer on version 10.0 chooses to pause updates 10.0.1, 10.0.2, and 10.0.3 then service update 10.0.4 will be auto applied to the sandbox. 
+No, service updates will be automatically applied to the sandbox, then 7 days later the update will be applied to the production environment if the environments are more than 3 service updates old. A customer can only pause up to 3 consecutive updates in a row. For example, if a customer on version 10.0.22 chooses to pause updates 10.0.23, 10.0.24, and 10.0.25 then service update 10.0.26 will be auto applied to the sandbox followed by Production. 
 
 ### What happens to an environment that is running a Finance and Operations version that is no longer supported?
 Environments that are running a Finance and Operations version that is no longer supported display a warning message at the top of the environment details page in LCS.
@@ -240,10 +238,6 @@ Individual hotfixes will not be supported after 8.1. Customers must update to th
 ### Will you notify me about critical hotfixes released for the monthly update that I’m on? 
 
 Customer reported issues are searchable via Lifecycle Services Issue Search.  You can sign up to be notified when an open issue is resolved.  
-
-### How can I upgrade to 8.x?
-
-Refer to the [Process for moving to the latest update](../../dev-itpro/migration-upgrade/upgrade-latest-update.md) topic to learn how to upgrade to the latest application. Updating from [8.0 to 8.1](../../dev-itpro/migration-upgrade/appupdate-80-81.md) will not require any data upgrade and will be a self-serve update with much reduced downtime.
 
 ## Commerce service updates
 
