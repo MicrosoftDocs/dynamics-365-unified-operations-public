@@ -19,7 +19,7 @@ ms.reviewer: kfend
 ms.custom: 414136
 ms.search.region: Poland
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: anasyash
 ms.dyn365.ops.version: 
 ms.search.validFrom: 2020-04-01
 
