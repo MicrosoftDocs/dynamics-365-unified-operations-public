@@ -62,10 +62,10 @@ If you decide to pause updates, you have these options:
 > If the update to the production environment is paused, all additional sandbox environment updates will be paused as well. Note how the versions are referenced:
 > 
 > - Version N is the latest version, for example: 10.0.24
-> - Version N-2 is one version older than N, for example: 10.0.23
-> - Version N-3 is two versions older than N, for example: 10.0.22
+> - Version N-1 is one version older than N, for example: 10.0.23
+> - Version N-2 is two versions older than N, for example: 10.0.22
 
-You can pause a maximum of three continuous updates at a time. For example, if you're using version 10.0.22, you can pause updates to version 10.0.23, 10.0.24, and 10.0.25. However, you can't pause the update to version 10.0.26. In addition, in the month of June, you can pause the next three updates. However, you will not be able to pause updates scheduled for October, November, December and later. We require you to take at least two updates in a year.
+You can pause a maximum of three continuous updates at a time. For example, if you're using version 10.0.22, you can pause updates to version 10.0.23, 10.0.24, and 10.0.25. However, you can't pause the update to version 10.0.26. We require you to take at least two updates in a year.
 
 > [!IMPORTANT]
 >  There is no way to pause more than three updates, regardless of your industry or business schedule. If you are more than three updates behind and you find a critical issue with the Microsoft service update during validations in your sandbox environment after the update, you can contact Microsoft Support to pause the update to your production environment. The issue must be logged as an active bug/regression with Microsoft.  This is only required if you are more than three updates behind and you are unable to use the pause updates functionality available in LCS to pause the update to production.
