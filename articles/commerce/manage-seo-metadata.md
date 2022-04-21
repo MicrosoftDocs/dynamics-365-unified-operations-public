@@ -4,7 +4,7 @@
 title: Manage SEO metadata
 description: This topic describes how to manage search engine optimization (SEO) metadata in Microsoft Dynamics 365 Commerce.
 author: psimolin
-ms.date: 03/16/2022
+ms.date: 04/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,6 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 # Manage SEO metadata
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This topic describes how to manage search engine optimization (SEO) metadata in Microsoft Dynamics 365 Commerce.
 
