@@ -2528,6 +2528,8 @@
             href: dev-itpro/extensions-shipping-carrier-integration.md
         - name: Packaging and deployment
           items:
+          - name: Create a Cloud Scale Unit extension package
+            href: dev-itpro/CSU-packaging.md
           - name: Remove Cloud Scale Unit extensions
             href: dev-itpro/retail-sdk/remove-csu-package.md
       - name: Store Commerce
