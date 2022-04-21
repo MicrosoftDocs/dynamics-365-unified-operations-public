@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 This topic answers frequently asked questions about the infrastructure merge for Microsoft Dynamics 365 Human Resources and Finance and Operations apps.
 

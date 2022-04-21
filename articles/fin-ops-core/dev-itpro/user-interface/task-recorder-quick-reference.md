@@ -5,9 +5,9 @@ author: RobinARH
 ms.date: 12/01/2019
 ms.topic: article
 audience: Developer, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
-ms.author: rhaertle 
+ms.author: tfehr 
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

@@ -4,9 +4,9 @@ description: This topic describes the SQL connection error exception types in X+
 author: yiqju
 ms.date: 09/27/2018
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Plaform update 21
 

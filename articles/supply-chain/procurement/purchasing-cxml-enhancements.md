@@ -32,7 +32,7 @@ The _Purchasing cXML Enhancements_ feature builds on the [existing external cata
 
 ## Turn on the Purchasing cXML Enhancements feature
 
-To turn on the feature, open the **[Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** page, and search for the feature that is named *Purchasing cXML Enhancements*. Select the feature, and then select **Enable now** to turn it on.
+To turn on the feature, open the **[Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** page, and search for the feature that is named *Purchasing cXML Enhancements*. Select the feature, and then select **Enable now** to turn it on. (As of Supply Chain Management version 10.0.21, this feature is turned on by default.)
 
 After you turn on the feature, you should configure settings in the following three areas:
 
@@ -145,7 +145,7 @@ When you've finished setting up all the properties and configuring other setting
 
 As was mentioned in the [Set the order properties](#set-order-properties) section, if you want your delivered cXML to include text from notes that are attached to the relevant purchase order and/or vendor records, you can set the **POCOMMENTS** and/or **VENDCOMMENTS** property to _TRUE_ in the external catalog setup. This section provides more detail about how the system selects and processes these attachments, if you use them.
 
-To set the types of notes that the system will look for, go to **Procurement and sourcing \> Setup \> Forms \> From setup**. Then, on the **Purchase order** tab, set the **Include documents of type** field to the type of note that you want to be able to include. Only text notes will be included, not document attachments.
+To set the types of notes that the system will look for, go to **Procurement and sourcing \> Setup \> Forms \> Form setup**. Then, on the **Purchase order** tab, set the **Include documents of type** field to the type of note that you want to be able to include. Only text notes will be included, not document attachments.
 
 ![Form setup page.](media/cxml-form-setup.png "Form setup page")
 

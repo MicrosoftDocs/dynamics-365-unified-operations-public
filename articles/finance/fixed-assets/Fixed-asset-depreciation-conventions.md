@@ -3,7 +3,7 @@
 
 title: Fixed asset depreciation conventions
 description: This topic describes depreciation conventions for fixed assets.
-author: saraschi2
+author: moaamer
 ms.date: 09/04/2020
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 13891
 ms.assetid: 36d1112d-921c-4fff-abe0-0ff2429848d3
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

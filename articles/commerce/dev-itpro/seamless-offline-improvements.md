@@ -3,7 +3,7 @@
 
 title: Seamless offline switch for gift card and credit memo operations
 description: This topic provides an overview of improvements that provide a seamless offline switch for specific payment types. 
-author: rubendel
+author: BrianShook
 ms.date: 02/11/2020
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 141393
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 20120-02-28
 ms.dyn365.ops.version: 10.0.8
 

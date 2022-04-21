@@ -4,7 +4,7 @@
 title: Point-in-time restore of the production database to a sandbox environment
 description: This topic describes how to use Microsoft Dynamics Lifecycle Services to do a point-in-time restore of the production database.
 author: LaneSwenka
-ms.date: 08/4/2021
+ms.date: 11/01/2021
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -101,7 +101,11 @@ Here is the list of requirements and conditions of operation for a database refr
 
 ## Known issues
 
-### Restore is denied for environments that run Platform update 20 or earlier
+### The Restore operation fails if the sandbox customizations are incompatible with production data
+
+Even if a customization is successfully added to the sandbox environment (that is, the customer's AOT deployable package is successfully installed via LCS), it might not succeed for production data. For example, a customer adds a unique index on **Vendor Name** to the VendTable table. This customization can be successfully installed if there are no duplicate vendor names in the sandbox environment. However, when the production database is brought in as part of the Restore operation, installation might fail if there are duplicates in the dataset that is inbound to the sandbox environment. Duplicates in this dataset aren't supported. Therefore, you must remove the customization before you can have a successful Restore operation.
+
+### The Restore operation is denied for environments that run Platform update 20 or earlier
 
 The database refresh process can't currently be completed if the environment is running Platform update 20 or earlier. For more information, see the [list of currently supported platform updates](../migration-upgrade/versions-update-policy.md).
 

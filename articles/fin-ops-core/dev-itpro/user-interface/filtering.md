@@ -4,7 +4,7 @@
 title: Filtering options
 description: This topic explains the filtering options that are available.
 author: jasongre
-ms.date: 09/22/2021
+ms.date: 03/07/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 28721
 ms.assetid: f5501319-dcaa-4912-9456-97a0ef2c2452
@@ -50,7 +50,7 @@ Finance and Operations offers the following filtering options.
 | Filter Pane           | An inline pane that slides in from the left, and that contains multiple filter criteria that can be applied to the targeted content.       |
 | QuickFilter           | A framework-provided filtering mechanism that can appear above any list or grid, and that provides fast single-column filtering.           |
 | Grid column filtering | The user can define filter conditions and perform single-column sorting by using a drop dialog that is opened from the grid column header. |
-| Advanced filter/sort  | For most advanced filtering scenarios, the migrated **Advanced filter** form from Dynamics AX 2012 is still available.                     |
+| Advanced filter or sort  | For most advanced filtering scenarios, the migrated **Advanced filter** form from Dynamics AX 2012 is still available.                     |
 
 ## Filter expressions
 One important difference between filtering in Finance and Operations apps and filtering in Dynamics AX 2012 is related to the way that query symbols are used when filter values are defined (for example, "\*" to match 0 or more characters, or ".." to specify a range of values to match). In Dynamics AX 2012, these symbols are highly visible during the filtering experience. For example, for the filter by grid option, if a user selects the **contains** operator on a field, the system translates that operator by adding wildcard characters (\*) to each end of the current expression. In the current version, the query symbols are implied by the selected operator and aren't injected into the user interface. This makes filtering more intuitive and simpler for users. For users who want to specify additional filter conditions by using specific query symbols, or users who must enter more complex conditions, the **matches** operator is provided for each data type. For all other operators, the query symbols are interpreted as literals. For example, the filter condition "First name MATCHES A" finds all records where the first name starts with the letter A. However, the filter condition "First Name IS A\*" finds records where the first name is literally equal to "A\*." The following table shows how the client translates between Finance and Operations apps filter operators and Dynamics AX 2012 query syntax.
@@ -142,7 +142,11 @@ Yes, you can use the QuickFilter to filter other collection controls, but you mu
 -   Write code in that method to perform the desired filtering.
 
 ## Grid column header filtering/sorting
-In Finance and Operations apps, the grid filtering experience is more closely aligned with the experience in Microsoft Excel. When the user clicks a column header (for columns that can be filtered), a drop dialog appears, and the user can use it to filter the column. The filtering experience here mimics the filtering experience in the Filter Pane. Additionally, there are options to sort the grid based on the column that is currently selected. [![Screen shot of grid filtering.](./media/4_filter.png)](./media/4_filter.png)
+In Finance and Operations apps, the grid filtering experience is more closely aligned with the experience in Microsoft Excel. When the user clicks a column header, a drop-down dialog appears, and the user can use it to filter the column. The filtering experience here mimics the filtering experience in the Filter pane. Additionally, there are options to sort the grid based on the column that is currently selected.
 
+> [!NOTE]
+> Some columns in a grid may not be filterable. In these cases, the column header will not be clickable. From a technical perspective, only columns corresponding to fields in a SQL table can be filtered on or sorted. Columns whose values are computed via code are not filterable or sortable using grid column headers, the Filter pane, QuickFilter, or Advanced filter or sort. 
+
+[![Example of grid filtering.](./media/4_filter.png)](./media/4_filter.png)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

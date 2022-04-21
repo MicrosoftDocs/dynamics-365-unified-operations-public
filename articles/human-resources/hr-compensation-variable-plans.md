@@ -29,6 +29,9 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 # Create variable compensation plans
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Variable compensation makes up an employee's irregular pay, such as bonuses or stock awards. This topic explains how to set up the components that are needed for variable compensation and enroll an employee in a variable compensation plan.

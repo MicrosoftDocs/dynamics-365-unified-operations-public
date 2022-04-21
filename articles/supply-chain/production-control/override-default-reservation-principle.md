@@ -35,12 +35,9 @@ When you create a new production order or batch order, you're prompted to select
 
 For example, if you have raw materials or ingredients that require pick work, BOM or formula lines that are created for those products require a physical reservation, because physical reservation is a prerequisite for the generation of warehouse work. Typically, if you want the reservation to occur automatically, you select one of the following reservation principles: *estimation*, *scheduling*, *release*, or *start*. On the other hand, if you have materials or ingredients that don't require pick work, because they are consumed directly from a location, you typically select the *manual* reservation principle, which doesn't make any physical reservations or generate any pick work.
 
-## Turn on the feature
+## Turn the Override default production reservation feature on or off
 
-Before you can use the feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** *Production control*
-- **Feature name:** *Override default production reservation*
+As of Supply Chain Management version 10.0.25, this feature is turned on by default. Admins can turn this functionality on or off by searching for the *Override default production reservation* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Assign a production reservation policy to an item model group
 

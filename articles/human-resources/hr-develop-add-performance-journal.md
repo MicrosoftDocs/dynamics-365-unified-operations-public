@@ -27,6 +27,9 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Add to your performance journal and send praise to someone
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 The performance journal holds information that relates to how you met your goals or how you performed during a period. You can also praise the actions of a co-worker from the journal. The demo data company used to create this procedure is USMF. This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.

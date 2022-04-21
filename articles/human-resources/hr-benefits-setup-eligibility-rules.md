@@ -29,6 +29,9 @@ ms.dyn365.ops.version: Human Resources
 
 # Configure eligibility rules and options 
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 After you've configured the required parameters for Benefits management, you can create the eligibility rules, bundles, periods, and programs that you will associate with your benefit plans.

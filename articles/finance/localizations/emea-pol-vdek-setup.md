@@ -30,15 +30,16 @@ The solution that supports JPK-V7M reporting is based on the [Electronic messagi
 
 The following tasks prepare Microsoft Dynamics 365 Finance to report a JPK-V7M:
 
-- Import and set up Electronic reporting (ER) configurations.
-- Set up application-specific parameters.
-- Import a package of data entities that includes a predefined electronic message setup.
-- Set up General ledger parameters.
-- Save the executable class parameters for Electronic messaging.
-- Set up security roles for electronic message processing.
-- Set up an office code for electronic message processing.
+- [Import and set up Electronic reporting (ER) configurations](#configurations-vdek).
+- [Set up application-specific parameters](#application-specific-parameters-vdek).
+- [Import a package of data entities that includes a predefined electronic message setup](#import-data-entities-vdek).
+- [Set up General ledger parameters](#general-ledger-parameters-vdek).
+- [Save the executable class parameters for Electronic messaging](#executable-class-parameters-vdek).
+- [Set up security roles for electronic message processing](#security-roles-vdek).
+- [Set up an office code for electronic message processing](#office-code-vdek).
+- [Set up sales tax codes and sales tax reporting codes](#sales-tax-reporting-codes-vdek).
 
-## Import and set up ER configurations
+## <a id="configurations-vdek"></a>Import and set up ER configurations
 
 To prepare Finance for JPK-V7M reporting, you must import the following ER configurations.
 
@@ -58,7 +59,7 @@ For more information about how to download ER configurations from the Microsoft 
 >
 > ![Default for model mapping option set to Yes for the Standard audit file model mapping configuration](media/default-mm.jpg)
 
-## Set up application-specific parameters
+## <a id="application-specific-parameters-vdek"></a>Set up application-specific parameters
 
 Depending on the tax transaction data, the values of some elements (markers) in the JPK-V7M report can be defined for reporting purposes. There must be enough transactional data to define values for these elements. Therefore, set up enough sales tax codes, sales tax groups, and item sales tax groups to differentiate tax transactions for all the parameters (elements) that are introduced in the JPK-V7M report. The JPK-V7M format includes application-specific parameters (fields) that can be used to define values for these elements in the report.
 
@@ -88,17 +89,16 @@ The format includes the following lookup fields for setup.
 5. On the **Lookups** FastTab, select each lookup, and define appropriate conditions for it.
 6. On the **Conditions** FastTab, define which tax codes or other available criteria must correspond to a specific lookup result. 
 
-    If conditions are defined on one line, the system applies them to a source tax transaction by using the **AND** operator. If conditions must be applied by using the **OR** operator, define them on separate lines. 
-
-    As soon as a tax transaction from the reporting period meets a condition in the list, the related marker from the lookup result will be reported for the related document. 
-
-    For more information about the setup of each lookup field, see the subsections that follow.
+    If conditions are defined on one line, the system generally applies them to a source tax transaction by using the **AND** operator. If conditions must be applied by using the **OR** operator, define them on separate lines. When a tax transaction from the reporting period meets a condition in the list, the related marker from the lookup result will be reported for the related document. For more information about the setup of each lookup field, continue with this topic.
 
 7. When you've finished setting up conditions, in the **State** field, select **Completed**, and then save the configuration.
 
     ![State field set to Completed](media/complete-app-spec-params.jpg)
 
 You can easily export the setup of application-specific parameters from one version of a report and import it into another version. You can also export the setup from one report and import it into another report, provided that both reports have the same structure of lookup fields.
+
+> [!NOTE]
+> We recommend that you enable the **Align ER application specific parameters while importing** feature in the **Feature management** workspace. This feature is available as of Finance version 10.0.24. When it's enabled, if the structure of application-specific parameters that you're importing differs from the structure of the corresponding data sources in the target ER format that is selected for import, the import will succeed in some cases. For more information about how to set up the parameters of an ER format for each legal entity, see [Set up the parameters of an ER format per legal entity](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md). 
 
 ### Import transactions (ImportSelector)
 
@@ -140,7 +140,9 @@ For this lookup field, the following master data sources are available to set up
 - Supplier account ID
 - Supplier group
 
-This lookup field defines conditions that are based on current company's master data sources. These conditions produce a mark of **1** for the corresponding element from the list of designations that are related to the procedures under the **\<SprzedazWiersz\>** tag. Several designations can be marked for the same output VAT record. Therefore, if a company must report different designations, separate conditions must be defined.
+Conditions that are defined in **Customer account ID** and **Customer group** are applied independently from those that are defined in **Supplier account ID** and **Supplier group**. Additionally, conditions that are defined in **Supplier account ID** and **Supplier group** are applied only to those transactions that are posted in the scope reverse changes scenario. Therefore, when you set up conditions for **Supplier account ID** and **Supplier group**, you must specify **\*Blank\*** in both the **Customer account ID** column and the **Customer group** column of conditions.
+
+This lookup field defines conditions that are based on the current company's master data sources. These conditions produce a mark of **1** for the corresponding element from the list of designations that are related to the procedures under the **\<SprzedazWiersz\>** tag. Several designations can be marked for the same output VAT record. Therefore, if a company must report different designations, separate conditions must be defined.
 
 **Procedural markings** aren't required for documents of **RO** (Internal summary document) type (**\<TypDokumentu\>** tag under the **\<SprzedazWiersz\>** tag).
 
@@ -149,7 +151,7 @@ The following table shows the lookup results (designations) for **ProceduralMark
 | Name           | Label (En) | Label (Pl) | Description (En) | Description (Pl) |
 |----------------|------------|------------|------------------|------------------|
 | SW (*only for reporting periods before July 1, 2021*) | Mail order sale | Sprzedaży wysyłkowej | Delivery as part of a mail order sale from the territory of the country, as referred to in article 23 of the VAT Act | Dostawa w ramach sprzedaży wysyłkowej z terytorium kraju, o której mowa w art. 23 ustawy |
-| EE             | Telecommunications | Usług telekomunikacyjnych | The provision of telecommunications, broadcasting, and electronic services that are referred to in article 28k of the VAT Act | Świadczenie usług telekomunikacyjnych, nadawczych i elektronicznych, o których mowa w art. 28k ustawy |
+| EE  (*only for reporting periods before January 1, 2022*) | Telecommunications | Usług telekomunikacyjnych | The provision of telecommunications, broadcasting, and electronic services that are referred to in article 28k of the VAT Act | Świadczenie usług telekomunikacyjnych, nadawczych i elektronicznych, o których mowa w art. 28k ustawy |
 | TP             | Links between the buyer and the supplier | Istniejące powiązania między nabywcą a dokonującym | Existing links between the buyer and the supplier of goods or the provider of services, as referred to in article 32, section 2, point 1 of the VAT Act. There is an exception for the case of supplies of goods and the provision of services where the relationship between the purchaser and the supplying service provider arises solely from a link with the State Treasury or local authorities or their associations. | Istniejące powiązania między nabywcą a dokonującym dostawy towarów lub usługodawcą, o których mowa w art. 32 ust. 2 pkt 1 ustawy. Z wyjątkiem sytuacji, gdy przypadku dostaw towarów oraz świadczenia usług, gdy powiązania między nabywcą a dokonującym dostawy towarów lub usługodawcą wynikają wyłącznie z powiązania ze Skarbem Państwa lub jednostkami samorządu terytorialnego lub ich związkami. |
 | TT_WNT         | Intra-community acquisition as part of a three-party transaction | Wewnątrzwspólnotowe nabycie w ramach transakcji trójstronnej | The intra-community acquisition of goods by the second-most-taxable person as part of a three-party transaction, under the simplified procedure that is referred to in section XII, chapter 8 of the VAT Act | Wewnątrzwspólnotowe nabycie towarów dokonane przez drugiego w kolejności podatnika VAT w ramach transakcji trójstronnej w procedurze uproszczonej, o której mowa w dziale XII rozdziale 8 ustawy |
 | TT_D           | Delivery of goods outside Poland as part of a three-party transaction | Dostawa towarów poza terytorium kraju w ramach transakcji trójstronnej | The supply of goods outside the territory of the country by the second VAT payer in a three-party transaction, under the simplified procedure that is referred to in section XII, chapter 8 of the VAT Act | Dostawa towarów poza terytorium kraju dokonana przez drugiego w kolejności podatnika VAT w ramach transakcji trójstronnej w procedurze uproszczonej, o której mowa w dziale XII rozdziale 8 ustawy |
@@ -158,6 +160,8 @@ The following table shows the lookup results (designations) for **ProceduralMark
 | B_SPV          | Transfer by article 8a, paragraph 1 of the VAT Act | Transfer z art. 8a ust. 1 ustawy | The transfer of a single-purpose voucher that is done by a taxpayer who is acting on their own behalf, and that is taxed in accordance with article 8a, paragraph 1 of the VAT Act | Transfer bonu jednego przeznaczenia dokonany przez podatnika działającego we własnym imieniu, opodatkowany zgodnie z art. 8a ust. 1 ustawy |
 | B_SPV_DOSTAWA  | Goods and services that the single-purpose voucher is related to (article 8a, paragraph 4 of the VAT Act) | Dostawa towarów oraz świadczenie usług (art. 8a ust. 4 ustawy) | The supply of goods and the provision of services, where the single-purpose voucher is related to a taxable person who issued the voucher in accordance with article 8a, paragraph 4 of the VAT Act | Dostawa towarów oraz świadczenie usług, których dotyczy bon jednego przeznaczenia na rzecz podatnika, który wyemitował bon zgodnie z art. 8a ust. 4 ustawy |
 | B_MPV_PROWIZJA | Brokering services for multi-purpose vouchers | Usług pośrednictwa o transferu bonu różnego przeznaczenia | The provision of brokering and other services that are related to the transfer of multi-purpose vouchers that are taxed in accordance with article 8b, paragraph 2 of the VAT Act | Świadczenie usług pośrednictwa oraz innych usług dotyczących transferu bonu różnego przeznaczenia, opodatkowane zgodnie z art. 8b ust. 2 ustawy |
+| WSTO_EE | Intra-community distance selling of goods | Wewnątrzwspólnotowej sprzedaży na odległość towarów | Intra-community distance sales of goods that, at the time when their dispatch or transport begins, are within the territory of the country, and the supply of telecommunications, broadcasting, and electronic services that are referred to in article 28k of the Act to non-taxable persons who are established or have their permanent address or place of residence in the territory of a Member State other than the territory of the country. | Wewnątrzwspólnotowej sprzedaży na odległość towarów, które w momencie rozpoczęcia ich wysyłki lub transportu znajdują się na terytorium kraju, oraz świadczenia usług telekomunikacyjnych, nadawczych i elektronicznych, o których mowa w art. 28k ustawy, na rzecz podmiotów niebędących podatnikami, posiadających siedzibę, stałe miejsce zamieszkania lub miejsce pobytu na terytorium państwa członkowskiego innym niż terytorium kraju |
+| IED | Delivery of goods that are referred to in article 7a, paragraphs 1 and 2 of the Act | Dostawy towarów, o której mowa w art. 7a ust. 1 i 2 ustawy | The supply of goods that are referred to in article 7a, paragraphs 1 and 2 of the Act by a taxable person who facilitates that supply but doesn't benefit from the special scheme that is referred to in chapter 6a or 9 of section XII of the Act or in the corresponding regulations for which the place of supply is within the territory of the country. | Dostawy towarów, o której mowa w art. 7a ust. 1 i 2 ustawy, dokonanej przez podatnika ułatwiającego tę dostawę, który nie korzysta z procedury szczególnej, o której mowa w dziale XII w rozdziale 6a lub 9 ustawy lub w odpowiadających im regulacjach, dla której miejscem dostawy jest terytorium kraju |
 | Inne           | Other | | | |
 
 > [!NOTE]
@@ -195,8 +199,8 @@ The following table shows the lookup results (designations) for **ServiceDeliver
 | GTU_09   | Supply of medicines and medical devices | Dostawa leków oraz wyrobów medycznych | The supply of medicinal products, foodstuffs for specific nutritional uses, and medical devices that are only covered by the notification obligation that is referred to in article 37av, section 1 of the Act of September 6, 2001, for the Pharmaceutical Law (Journal of Laws of 2021, item 974 and 981, as amended) | Dostawa produktów leczniczych, środków spożywczych specjalnego przeznaczenia żywieniowego oraz wyrobów medycznych, wyłącznie objętych obowiązkiem zgłoszenia, o którym mowa w art. 37av ust. 1 ustawy z dnia 6 września 2001 r. - Prawo farmaceutyczne (Dz. U. z 2021 r. poz. 974 i 981, z późn. zm.) |
 | GTU_10   | Supply of buildings | Dostawa budynków | The supply of buildings, structures, and land and their parts and shares in the ownership right, including the sale of the rights referred to in art. 7 item 1 of VAT Act  | Dostawa budynków, budowli i gruntów oraz ich części i udziałów w prawie własności, w tym również zbycia praw, o których mowa w art. 7 ust. 1 ustawy |
 | GTU_11   | Provision of services – Gas emission | Świadczenie usług w - gazów cieplarnianych | The provision of services in the scope of transferring greenhouse gas emission allowances that are referred to in the Act of June 12, 2015, about the trading system for greenhouse gas emission allowances (Journal of Laws of 2021, items 332 and 1047) | Świadczenie usług w zakresie przenoszenia uprawnień do emisji gazów cieplarnianych, o których mowa w ustawie z dnia 12 czerwca 2015 r. o systemie handlu uprawnieniami do emisji gazów cieplarnianych (Dz. U. z 2021 r. poz. 332 i 1047) |
-| GTU_12   | Provision of intangible services | Świadczenie usług o charakterze niematerialnym | The provision of intangible services, but only consulting, including legal, tax consultancy and management consultancy (PKWiU 62.02.1, 62.02.2, 66.19.91, 69.20.3, 70.22.11, 70.22.12, 70.22.13, 70.22.14, 70.22.15, 70.22.16, 70.22.3, 71.11.24, 71.11.42, 71.12.11, 71.12.31, 74.90.13, 74.90.15, 74.90.19), accounting and financial audit (PKWiU 69.20.1, 69.20.2), legal (PKWiU 69.1), management (PKWiU 62.03, 63.11.12, 66.11.19, 66.30, 68.32, 69.20.4, 70.22.17, 70.22.2, 90.02.19.1), head offices (PKWiU 70.1), marketing  or advertising (PKWiU 73.1), market and public opinion research (PKWiU 73.2), in the field of scientific research and development work (PKWiU 72) anin the field of out-of-school forms of education (PKWiU 85.5) | Świadczenie usług o charakterze niematerialnym - wyłącznie: doradczych, w tym doradztwa prawnego i podatkowego oraz doradztwa związanego z zarządzaniem (PKWiU 62.02.1, 62.02.2, 66.19.91, 69.20.3, 70.22.11, 70.22.12, 70.22.13, 70.22.14, 70.22.15, 70.22.16, 70.22.3, 71.11.24, 71.11.42, 71.12.11, 71.12.31, 74.90.13, 74.90.15, 74.90.19), w zakresie rachunkowości i audytu finansowego (PKWiU 69.20.1, 69.20.2), prawnych (PKWiU 69.1), zarządczych (PKWiU 62.03, 63.11.12, 66.11.19, 66.30, 68.32, 69.20.4, 70.22.17, 70.22.2, 90.02.19.1), firm centralnych (PKWiU 70.1), marketingowych lub reklamowych (PKWiU 73.1), badania rynku i opinii publicznej (PKWiU 73.2), w zakresie badań naukowych i prac rozwojowych (PKWiU 72) oraz w zakresie pozaszkolnych form edukacji (PKWiU 85.5) |
-| GTU_13   | Transport services and storage management | Usług transportowych i gospodarki magazynowej | TThe provision of transport services and storage management, as described in PKWiU 49.4, 52.1 | Świadczenie usług transportowych i gospodarki magazynowej - PKWiU 49.4, 52.1 |
+| GTU_12   | Provision of intangible services | Świadczenie usług o charakterze niematerialnym | The provision of intangible services, but only consulting, including legal, tax consultancy and management consultancy (PKWiU 62.02.1, 62.02.2, 66.19.91, 69.20.3, 70.22.11, 70.22.12, 70.22.13, 70.22.14, 70.22.15, 70.22.16, 70.22.3, 71.11.24, 71.11.42, 71.12.11, 71.12.31, 74.90.13, 74.90.15, 74.90.19), accounting and financial audit (PKWiU 69.20.1, 69.20.2), legal (PKWiU 69.1), management (PKWiU 62.03, 63.11.12, 66.11.19, 66.30, 68.32, 69.20.4, 70.22.17, 70.22.2, 90.02.19.1), head offices (PKWiU 70.1), marketing  or advertising (PKWiU 73.1), market and public opinion research (PKWiU 73.2), in the field of scientific research and development work (PKWiU 72) and in the field of out-of-school forms of education (PKWiU 85.5) | Świadczenie usług o charakterze niematerialnym - wyłącznie: doradczych, w tym doradztwa prawnego i podatkowego oraz doradztwa związanego z zarządzaniem (PKWiU 62.02.1, 62.02.2, 66.19.91, 69.20.3, 70.22.11, 70.22.12, 70.22.13, 70.22.14, 70.22.15, 70.22.16, 70.22.3, 71.11.24, 71.11.42, 71.12.11, 71.12.31, 74.90.13, 74.90.15, 74.90.19), w zakresie rachunkowości i audytu finansowego (PKWiU 69.20.1, 69.20.2), prawnych (PKWiU 69.1), zarządczych (PKWiU 62.03, 63.11.12, 66.11.19, 66.30, 68.32, 69.20.4, 70.22.17, 70.22.2, 90.02.19.1), firm centralnych (PKWiU 70.1), marketingowych lub reklamowych (PKWiU 73.1), badania rynku i opinii publicznej (PKWiU 73.2), w zakresie badań naukowych i prac rozwojowych (PKWiU 72) oraz w zakresie pozaszkolnych form edukacji (PKWiU 85.5) |
+| GTU_13   | Transport services and storage management | Usług transportowych i gospodarki magazynowej | The provision of transport services and storage management, as described in PKWiU 49.4, 52.1 | Świadczenie usług transportowych i gospodarki magazynowej - PKWiU 49.4, 52.1 |
 | Inne     | Other | | | |
 
 > [!NOTE]
@@ -334,7 +338,7 @@ The following table shows the lookup results for **PurchaseDocumentTypesSelector
 > [!NOTE]
 > It's important that you add **Inne** (**Other**), which must collect data from other cases as the last item in the list. The **Line** value must be the last value in your table. In the **Tax code** column in the **Inne** lookup result, select **\*Not blank\***.
 
-## Import a package of data entities that includes a predefined electronic message setup
+## <a id="import-data-entities-vdek"></a>Import a package of data entities that includes a predefined electronic message setup
 
 The process of setting up the Electronic messaging functionality for JPK-V7M reporting has many steps. Because the names of some predefined entities are used in the ER configurations, it's important that you use a set of predefined values that are delivered in a package of data entities for the related tables.
 
@@ -368,7 +372,7 @@ You will receive a notification in **Messages**, or you can manually refresh the
 > [!IMPORTANT]
 > Some records in the data entities in the package include a link to ER configurations. Therefore, be sure to import ER configurations into Finance before you start to import the data entities package.
 
-## Set up General ledger parameters
+## <a id="general-ledger-parameters-vdek"></a>Set up General ledger parameters
 
 To work with the Electronic messaging functionality, you must define related number sequences.
 
@@ -378,7 +382,7 @@ To work with the Electronic messaging functionality, you must define related num
     - Message
     - Message item
 
-## Save the executable class parameters for Electronic messaging
+## <a id="executable-class-parameters-vdek"></a>Save the executable class parameters for Electronic messaging
 
 The JPK-V7M processing uses the **EMGenerateJPKVDEKReportController_PL** executable class to initiate data collection for the report data provider and further report generation. Before you use this class for the first time, you must save its parameters.
 
@@ -390,7 +394,9 @@ In the dialog box for the executable class, the **Retail-specific sales marking*
 
 The dialog box for the executable class includes the **Consider VAT report date codes** parameter. Use this parameter to collect VAT transactions in the report, based on rules that you define in VAT report date codes. This parameter doesn't affect retail-specific transactions that will be reported as the **FP** document type. For more information about the VAT report date codes feature, see [Set up VAT report date codes](/dynamicsax-2012/appuser-itpro/pol-set-up-vat-report-date-codes).
 
-## Set up security roles for electronic message processing
+KB5007691 ("Poland: Jednolitego Pliku Kontrolnego VDEK (JPK-V7M, VDEK) January 2022 changes in Dynamics 365 Finance") introduces the **Schema version** parameter. Use this parameter to specify that the additional field contains the version of the schema of JPK-V7M that must be reported. Select **Wersja schematu** as the value for this field.
+
+## <a id="security-roles-vdek"></a>Set up security roles for electronic message processing
 
 Different groups of users might require access to the JPK-V7M processing. You can limit access to the processing, based on security groups that are defined in the system.
 
@@ -399,10 +405,458 @@ Follow these steps to limit access to the JPK-V7M processing.
 1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**.
 2. Select the **JPK-V7M** processing, and then, on the **Security roles** FastTab, add the security groups that must work with it. If no security group is defined for the processing, only a system admin can see it on the **Electronic messages** page.
 
-## Set up an office code for electronic message processing
+## <a id="office-code-vdek"></a>Set up an office code for electronic message processing
 
 Follow these steps to enter an office code in the **KodUrzedu** additional field.
 
-1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**.
+1. Go to **Tax** > **Setup** > **Electronic messages** > **Electronic message processing**.
 2. Select the **JPK-V7M** processing.
 3. On the **Additional field** FastTab, select the **KodUrzedu** additional field, and then, in the **Default value** field, specify the office code that should be reported in the **\<KodUrzedu\>** element of the report.
+
+## <a id="sales-tax-reporting-codes-vdek"></a>Set up sales tax codes and sales tax reporting codes
+
+The [sales tax reporting code](../general-ledger/tasks/set-up-sales-tax-reporting-codes.md) is an integer value. Sales tax reporting codes should be numbered according to the company's rules. However, we recommend that you vary the codes by tax direction. For example, use a five-digit code. Then, for all outgoing transactions that should be reflected in the first part of the VAT scheme, set the codes so that they are less than or equal to 19999. For all incoming transactions that should be reflected in the second part of the VAT scheme, set the codes so that they are more than or equal to 20000. In this way, you simplify the setup for reports and for data export that is based on tax transactions that are aggregated by sales tax reporting codes. The following example shows how you can use sales tax reporting codes to generate a SAF VAT sales and purchase register. For this example, sales tax reporting codes are in the format *ABBCC*. This format consists of the following parts:
+
+- **A** – The transaction direction. The value is **1** for outgoing transactions, **2** for incoming transactions, and **3** for corrections.
+- **BB** – The tax code. The numbering is sequential among all tax codes.
+- **CC** – The transaction type number in a tax code. See the following table.
+
+    | Transaction type                  | Transaction type number     |
+    |-----------------------------------|-----------------------------|
+    | Taxable Sales                     | 01                          |
+    | Tax-free sales                    | 02                          |
+    | Sales tax payable                 | 03                          |
+    | Taxable sales credit note         | 04                          |
+    | Tax exempt sales credit note      | 05                          |
+    | Sales tax on sales credit note    | 06                          |
+    | Taxable purchases                 | 07                          |
+    | Tax-free purchase                 | 08                          |
+    | Sales tax receivable              | 09                          |
+    | Taxable import                    | 10                          |
+    | Offset taxable import             | 11                          |
+    | Use tax                           | 12                          |
+    | Offset use tax                    | 13                          |
+    | Taxable purchase credit note      | 14                          |
+    | Tax exempt purchase credit note   | 15                          |
+    | Sales tax on purchase credit note | 16                          |
+    | Taxable import credit note        | 17                          |
+    | Offset taxable import credit note | 18                          |
+
+The following table shows the sales tax codes and sales tax reporting codes for this example.
+
+<table>
+<thead>
+<tr>
+<th>Sales tax code</th>
+<th>Sales tax reporting code</th>
+<th>Description</th>
+<th>Tag name in JPK-V7M</th>
+<th>Sign in JPK-V7M</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="4">ExportCust</td>
+<td>10101</td>
+<td>Taxable sales</td>
+<td>K_11</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10102</td>
+<td>Tax-free sale</td>
+<td>K_11</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10104</td>
+<td>Taxable sales credit note</td>
+<td>K_11</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10105</td>
+<td>Tax exempt sales credit note</td>
+<td>K_11</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="2">Art100_1.4</td>
+<td>10201</td>
+<td>Taxable sales</td>
+<td>K_11, K_12</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10204</td>
+<td>Taxable sales credit note</td>
+<td>K_11, K_12</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="5">VAT22_23</td>
+<td>10301</td>
+<td>Taxable sales</td>
+<td>K_19</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10302</td>
+<td>Tax-free sale</td>
+<td>K_10</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10303</td>
+<td>Sales tax payable</td>
+<td>K_20</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10304</td>
+<td>Taxable sales credit note</td>
+<td>K_19</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10306</td>
+<td>Sales tax on sales credit note</td>
+<td>K_20</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="5">VAT7_8</td>
+<td>10401</td>
+<td>Taxable sales</td>
+<td>K_17</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10402</td>
+<td>Tax-free sale</td>
+<td>K_10</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10403</td>
+<td>Sales tax payable</td>
+<td>K_18</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10404</td>
+<td>Taxable sales credit note</td>
+<td>K_17</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10406</td>
+<td>Sales tax on sales credit note</td>
+<td>K_18</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="5">VAT5</td>
+<td>10501</td>
+<td>Taxable sales</td>
+<td>K_15</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10502</td>
+<td>Tax-free sale</td>
+<td>K_10</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10503</td>
+<td>Sales tax payable</td>
+<td>K_16</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10504</td>
+<td>Taxable sales credit note</td>
+<td>K_15</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10506</td>
+<td>Sales tax on sales credit note</td>
+<td>K_16</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="3">VAT0</td>
+<td>10601</td>
+<td>Taxable sales</td>
+<td>K_13</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10602</td>
+<td>Tax-free sale</td>
+<td>K_10</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10604</td>
+<td>Taxable sales credit note</td>
+<td>K_13</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="4">ART129</td>
+<td>10701</td>
+<td>Taxable sales</td>
+<td>K_13, K_14</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10702</td>
+<td>Tax-free sale</td>
+<td>K_13, K_14</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10704</td>
+<td>Taxable sales credit note</td>
+<td>K_13, K_14</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10705</td>
+<td>Tax exempt sales credit note</td>
+<td>K_13, K_14</td>
+<td>-</td>
+</tr>
+<tr>
+<tr>
+<td rowspan="4">VAT17_1.5</td>
+<td>11901</td>
+<td>Taxable sales</td>
+<td>K_31</td>
+<td>-</td>
+</tr>
+<tr>
+<td>11903</td>
+<td>Sales tax payable</td>
+<td>K_32</td>
+<td>-</td>
+</tr>
+<tr>
+<td>11904</td>
+<td>Taxable sales credit note</td>
+<td>K_31</td>
+<td>-</td>
+</tr>
+<tr>
+<td>11906</td>
+<td>Sales tax on sales credit note</td>
+<td>K_32</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="4">IntraEUGoods</td>
+<td>10801</td>
+<td>Tax-free sale</td>
+<td>K_21</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10810</td>
+<td>Taxable import</td>
+<td>K_23</td>
+<td>+</td>
+</tr>
+<tr>
+<td>10811</td>
+<td>Taxable sales (Reverse charge)</td>
+<td>K_23</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10812</td>
+<td>Use tax</td>
+<td>K_24</td>
+<td>+</td>
+</tr>
+<tr>
+<td rowspan="2">ExportOfGoods</td>
+<td>10901</td>
+<td>Tax-free sale</td>
+<td>K_22</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10905</td>
+<td>Tax exempt sales credit note</td>
+<td>K_22</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="4">ImportOfGoodsART33</td>
+<td>20207</td>
+<td>Taxable import</td>
+<td>K_45</td>
+<td>+</td>
+</tr>
+<tr>
+<td>11010</td>
+<td>Offset Taxable import</td>
+<td>K_25</td>
+<td>-</td>
+</tr>
+<tr>
+<td>20209</td>
+<td>Use tax</td>
+<td>K_46</td>
+<td>+</td>
+</tr>
+<tr>
+<td>11012</td>
+<td>Offset use tax</td>
+<td>K_26</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="5">ImportOfServices</td>
+<td>20207</td>
+<td>Taxable import</td>
+<td>K_45</td>
+<td>+</td>
+</tr>
+<tr>
+<td>11110</td>
+<td>Offset Taxable import</td>
+<td>K_27</td>
+<td>-</td>
+</tr>
+<tr>
+<td>11117</td>
+<td>Taxable sales (Reverse charge)</td>
+<td>K_27</td>
+<td>+</td>
+</tr>
+<tr>
+<td>20209</td>
+<td>Use tax</td>
+<td>K_46</td>
+<td>+</td>
+</tr>
+<tr>
+<td>11112</td>
+<td>Offset use tax</td>
+<td>K_28</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="5">ImportART28</td>
+<td>20207</td>
+<td>Taxable import</td>
+<td>K_45</td>
+<td>+</td>
+</tr>
+<tr>
+<td>11210</td>
+<td>Offset Taxable import</td>
+<td>K_29</td>
+<td>-</td>
+</tr>
+<tr>
+<td>11119</td>
+<td>Taxable sales (Reverse charge)</td>
+<td>K_29</td>
+<td>+</td>
+</tr>
+<tr>
+<td>20209</td>
+<td>Use tax</td>
+<td>K_46</td>
+<td>+</td>
+</tr>
+<tr>
+<td>11212</td>
+<td>Offset use tax</td>
+<td>K_30</td>
+<td>-</td>
+</tr>
+<td rowspan="4">FixedAssetPurch</td>
+<td>20107</td>
+<td>Taxable purchases</td>
+<td>K_40</td>
+<td>+</td>
+</tr>
+<tr>
+<td>20109</td>
+<td>Sales tax receivable</td>
+<td>K_41</td>
+<td>+</td>
+</tr>
+<tr>
+<td>20115</td>
+<td>Taxable purchase credit note</td>
+<td>K_40</td>
+<td>+</td>
+</tr>
+<tr>
+<td>20116</td>
+<td>Sales tax on purchase credit note</td>
+<td>K_44</td>
+<td>+</td>
+</tr>
+<tr>
+<td rowspan="4">GoodServPurch</td>
+<td>20207</td>
+<td>Taxable purchases</td>
+<td>K_42</td>
+<td>+</td>
+</tr>
+<tr>
+<td>20209</td>
+<td>Sales tax receivable</td>
+<td>K_43</td>
+<td>+</td>
+</tr>
+<tr>
+<td>20215</td>
+<td>Taxable purchase credit note</td>
+<td>K_42</td>
+<td>+</td>
+</tr>
+<tr>
+<td>20216</td>
+<td>Sales tax on purchase credit note</td>
+<td>K_44</td>
+<td>+</td>
+</tr>
+<tr>
+<td rowspan="2">CorrATR89b1</td>
+<td>30101</td>
+<td>Sales tax payable</td>
+<td>K_46</td>
+<td>+</td>
+</tr>
+<tr>
+<td>30102</td>
+<td>Sales tax receivable</td>
+<td>K_47</td>
+<td>+</td>
+</tr>
+<tr>
+<td rowspan="2">CorrATR89b4</td>
+<td>30201</td>
+<td>Sales tax payable</td>
+<td>K_47</td>
+<td>+</td>
+</tr>
+<tr>
+<td>30202</td>
+<td>Sales tax receivable</td>
+<td>K_47</td>
+<td>+</td>
+</tr>
+</tbody>
+</table>
+
+For invoices that aren't paid within 150 days, an [**Overdue debt VAT**](emea-pol-sales-tax-reports.md#allowance-for-bad-debts) periodic task can be applied. In this case, the same reporting codes that are used for K_41 and/or K_43 can be used. The system automatically interprets transactions for reporting in K_46 (Overdue invoice) and K_47 (Paid overdue invoice).

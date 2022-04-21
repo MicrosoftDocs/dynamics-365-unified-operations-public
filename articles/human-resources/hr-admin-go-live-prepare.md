@@ -34,6 +34,9 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [banner](../includes/banner.md)]
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 This topic describes how to prepare to go live with a Dynamics 365 Human Resources project by using Microsoft Dynamics Lifecycle Services (LCS). 
 
 This graphic shows the phases of the go-live process. 

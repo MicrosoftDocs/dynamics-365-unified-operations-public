@@ -30,12 +30,9 @@ ms.dyn365.ops.version: 10.0.13
 
 This topic describes how to set up a batch job that automatically confirms outbound transfer-order shipments for ready-to-ship loads. The batch job described here only applies to transfer order shipments, not to sales orders.
 
-## Enable the Confirm outbound shipments from batch jobs feature
+## Turn the Confirm outbound shipments from batch jobs feature on or off
 
-Before you can use this feature, it must be enabled on your system. Administrators can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to check the feature status and enable it if needed. The feature is listed as:
-
-- **Module** - *Warehouse management*
-- **Feature name** - *Confirm outbound shipments from batch jobs*
+To use the functionality described in this topic, the *Confirm outbound shipments from batch jobs* feature must be turned on for your system. As of Supply Chain Management version 10.0.21, this feature is turned on by default. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *Confirm outbound shipments from batch jobs* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Process outbound shipments
 

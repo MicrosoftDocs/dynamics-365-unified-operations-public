@@ -5,7 +5,7 @@ author: nhelgren
 ms.date: 05/08/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 1. Sign in to the Finance and Operations app environment that you want to link to your Dataverse environment.
 2. Go to **Workspaces \> Data management**, and select the **Dual Write** tile.

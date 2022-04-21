@@ -2,18 +2,28 @@
 title: Migrate Prospect to cash data from Data Integrator to dual-write
 description: This topic describes how to migrate Prospect to Cash data from Data Integrator to dual-write.
 author: RamaKrishnamoorthy
-ms.date: 01/04/2021
+ms.date: 02/01/2022
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
-ms.search.validFrom: 2020-01-06
+ms.search.validFrom: 2020-01-26
 ---
 
 # Migrate Prospect to cash data from Data Integrator to dual-write
 
 [!include [banner](../../includes/banner.md)]
+
+The Prospect to cash solution available for Data Integrator is not compatible with dual-write. The reason for this is the msdynce_AccountNumber index on the account table that came as part of the Prospect to cash solution. If this index exists, you cannot create the same customer account number in two different legal entities. You can either choose to start fresh with dual-write by migrating the Prospect to cash data from Data Integrator to dual-write or you can install the last "dorman" version of the Prospect to cash solution. This topic covers both of these approaches.
+
+## Install the last "dorman" version of the Data Integrator Prospect to cash solution
+
+**P2C Version 15.0.0.2** is considered the last "dorman" version of the data integrator Prospect to cash solution. You can download it from [FastTrack for Dynamics 365](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Dual-write/P2C).
+
+You need to install it manually. After installation, everything remains exactly the same, except the msdynce_AccountNumber index is removed.
+
+## Steps to migrate Prospect to cash data from Data Integrator to dual-write
 
 To migrate your Prospect to cash data from Data Integrator to dual-write, follow these steps.
 

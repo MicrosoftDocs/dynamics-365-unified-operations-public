@@ -16,7 +16,8 @@ ms.dyn365.ops.version: 10.0.20
 # Business documents supported by Global Inventory Accounting
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)] <!--KFM: Until 4/30/2022 -->
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!--KFM: Preview until 4/30/2022 -->
 
 After the Global Inventory Accounting Add-in is fully set up, it's ready to process inventory-related documents that are entered in Microsoft Dynamics 365 Supply Chain Management.
 

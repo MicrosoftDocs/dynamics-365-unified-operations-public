@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 273653
 ms.assetid: 119610df-3975-43ce-830b-84fe58266321
@@ -29,6 +29,9 @@ ms.search.validFrom: 2016-11-30
 
 # Create read-only entities that expose financial dimensions
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 
 In this topic, we describe how to build an entity for registered transactions that are registered. 

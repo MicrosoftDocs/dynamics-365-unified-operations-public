@@ -85,7 +85,7 @@ To add a breadcrumb module to a PDP and set the required properties, follow thes
 
 [Navigation menu module](nav-menu-module.md)
 
-[Site selector module](site-selector.md)
+[Site picker module](site-selector.md)
 
 [Overview of default category landing page and search results page](category-search-page-overview.md)
 

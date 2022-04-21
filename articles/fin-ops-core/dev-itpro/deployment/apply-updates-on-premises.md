@@ -6,8 +6,9 @@ description: This topic explains how to apply supported updates to Dynamics 365 
 author: PeterRFriis
 ms.date: 03/05/2020
 ms.topic: article
-ms.prod: 
+ms.prod: dynamics-365 
 ms.technology: 
+ms.service: 
 
 # optional metadata
 

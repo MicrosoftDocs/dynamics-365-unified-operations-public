@@ -3,7 +3,7 @@
 
 title: Monitor and manage IoT Intelligence
 description: This topic explains how to monitor and manage IoT Intelligence.
-author: robinarh
+author: tonyafehr
 ms.date: 08/16/2019
 ms.topic: article
 ms.prod: 
@@ -15,12 +15,12 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
 
@@ -63,7 +63,6 @@ You can simulate factory machine signals. For more information, see these topics
 
 + [Connect IoT DevKit AZ3166 to Azure IoT Hub](/azure/iot-hub/iot-hub-arduino-iot-devkit-az3166-get-started)
 + [Connect Raspberry Pi online simulator to Azure IoT Hub (Node.js)](/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started)
-+ [Device Simulation solution accelerator overview](/azure/iot-accelerators/iot-accelerators-device-simulation-overview)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

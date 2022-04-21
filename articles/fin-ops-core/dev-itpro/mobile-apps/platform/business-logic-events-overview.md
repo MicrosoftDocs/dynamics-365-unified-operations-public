@@ -3,9 +3,9 @@
 
 title: Business logic events
 description: Code that executes in business logic can make runtime modifications to the metadata of Pages, Actions, and Controls.
-author: robinarh
+author: tonyafehr
 ms.date: 08/14/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -15,13 +15,13 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: ["255544", "intro-internal"]
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
 

@@ -4,7 +4,7 @@ description: This topic explains how to set up intercompany trade
 author: GalynaFedorova
 ms.date: 09/01/2021
 ms.topic: article
-ms.search.form: CustTable, VendTable, EcoResProductListPage
+ms.search.form: CustTable, VendTable, EcoResProductListPage, InterCompanyTradingRelationSetupCustomer
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global

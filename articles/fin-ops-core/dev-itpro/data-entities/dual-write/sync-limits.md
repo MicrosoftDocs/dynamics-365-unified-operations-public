@@ -5,7 +5,7 @@ author: nhelgren
 ms.date: 08/31/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2021-08-31
@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 For more consistent availability and performance, limits apply when dual-write is used to write data to Finance and Operations apps and Microsoft Dataverse. These limits control dual-write transactions and are applied at the platform level. They are designed to ensure seamless writes and to help minimize failures.
 

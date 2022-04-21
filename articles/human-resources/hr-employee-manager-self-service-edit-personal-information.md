@@ -29,6 +29,9 @@ ms.dyn365.ops.version: Human Resources
 
 # Edit personal information
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 You can edit your personal information in Dynamics 365 Human Resources in the **Employee self service** workspace.
@@ -74,7 +77,7 @@ Parameters set on the **Global address book parameters** page determine which ro
     - To add an identification number, select **New**. Complete the fields as necessary and select **Save**.
     - To edit a number, select **Edit**. Edit the fields as necessary and select **Save**.
 
-7. To change the methods by which you're paid, select the **My payment information** tab. This tab is only available if payment methods are enabled in the **Human Resources parameters** form. HR can enable **Bank draft**, **Cash**, **Check**, **Electronic payment**, or **Other**. HR can also disable electronic payment validation (used for US Payroll), and bank account and routing number validation.
+7. To change the methods by which you're paid, select the **My payment information** tab. This tab is only available if payment methods are enabled in the **Human Resources parameters** page. HR can enable **Bank draft**, **Cash**, **Check**, **Electronic payment**, or **Other**. HR can also disable electronic payment validation (used for US Payroll), and bank account and routing number validation.
 
 8. To change the image that displays in Human Resources for your profile, select the **Image** tab. Depending on your organization's settings, images might be routed for approval.
 

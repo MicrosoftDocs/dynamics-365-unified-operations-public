@@ -4,7 +4,7 @@
 title: Setup options for vendor invoice automation (Preview)
 description: This topic describes the options that are available for setting up and configuring vendor invoice automation.
 author: sunfzam
-ms.date: 10/19/2021
+ms.date: 02/14/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form:  
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.assetid: 
@@ -60,7 +60,7 @@ The following parameters are available:
 
 - **Match product receipts to invoice lines prior to automatically submitting** – If you set this option to **Yes**, the imported invoice can't automatically be submitted to the workflow system until the matched product receipt quantity equals the invoice quantity. By setting this option to **Yes**, you enable automatic matching of posted product receipts to invoice lines that a three-way matching policy is defined for. That process will run until the matched product receipt quantity equals the invoice quantity. At that point, the invoice is automatically submitted to the workflow system.
 
-    The 'Match product receipts to invoice lines prior to automatically submitting option is available only if the **Enable invoice matching validation** option is selected. When this option is selected, the **Automatically match product receipts to invoice lines** option is automatically selected.
+    The **Match product receipts to invoice lines prior to automatically submitting** option is available only if the **Enable invoice matching validation** option is selected. When this option is selected, the **Automatically match product receipts to invoice lines** option is automatically selected.
 
 - **Require the calculated totals to equal the imported totals for automatic workflow submission** – If you set this option to **Yes**, the invoice can't automatically be submitted to the workflow system until the totals that are calculated for the invoice equal the imported totals. If this option is set to **No**, the invoice can automatically be submitted to the workflow system, but it can't be posted until the calculated totals are corrected so that they match the imported totals. If you don't import the invoice amount or the sales tax amount, this option should be set to **No**.
 - **Automatically match product receipts to invoice lines** – If you set this option to **Yes**, background processing can be used to do automatic matching of posted product receipts to invoice lines that a three-way matching policy is defined for. That process will run until the matched product receipt quantity equals the invoice quantity, or until the value of the **Number of times to attempt automatic matching** field is reached. The process can be run until the invoice has been submitted to the workflow system.

@@ -3,8 +3,8 @@
 
 title: Create analytical reports by using Power BI Desktop
 description: This topic walks you through the process of authoring Power BI reports by using the local Entity Store database. 
-author: MilindaV2
-ms.date: 01/29/2021
+author: RichdiMSFT
+ms.date: 12/02/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,13 +15,13 @@ ms.search.form: BIMeasurementDeployManagementEntityStore
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: sericks
 # ms.tgt_pltfrm: 
 ms.custom: 265864
 ms.assetid: e253a57a-979b-4ca5-8e09-2bfce97395a5
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: milindav
+ms.author: RICHDI
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 
@@ -41,7 +41,9 @@ When you use Power BI Desktop, you can create a report in your development or te
 > [!NOTE]
 > To develop or extend analytical workspaces and reports in the application suite, customers must use a development environment running in their own subscription or on local machines. You won’t be able to develop or extend embedded analytical reports in Microsoft-provided Tier-1 environments. You need administrator rights to install Power BI Desktop.
 
-> Tier-1 environments now include a service compatible version of Power BI Desktop. To develop or extend analytical workspaces and reports in the application suite, customers can use the Power BI Desktop application pre-installed on the development environment. Alternatively, you can use the latest compatible release of Power BI Desktop with Preview features turned off to author analytical reports for Finance and Operations apps. You can download the Power BI Desktop August 2020 release from the [LCS Shared asset library](https://lcs.dynamics.com/V2/SharedAssetLibrary) > **Model**.
+> Power BI embedded integration has upgraded the infrastructure as part of the 10.0.22 release. This was an infrastructure change and will happen automatically when an environment is upgraded to release 10.0.22. With this change, users are now able to use the *latest version* of Power BI desktop when editing workspace reports.
+
+> For environments running version 10.0.21 or earlier, you must still use the previous build of Power BI Desktop pre-installed on the development environment. Alternatively, you can use the *compatible* Power BI Desktop August 2020 release of Power BI Desktop with preview features turned off to author analytical reports for Finance and Operations apps. You can download the Power BI Desktop August 2020 release from the [LCS Shared asset library](https://lcs.dynamics.com/V2/SharedAssetLibrary).
 
 ### Step 1: Populate the local Entity Store database
 For this example, we will stage the aggregate models that the Commerce analytical solution consumes in the local Entity Store. The models that the application uses are defined in the RetailCube aggregate measurement. 

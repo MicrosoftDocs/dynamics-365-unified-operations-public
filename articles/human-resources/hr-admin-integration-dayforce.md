@@ -29,6 +29,9 @@ ms.dyn365.ops.version: Human Resources
 
 # Configure integration with Dayforce
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 The integration between Microsoft Dynamics 365 Human Resources and Ceridian Dayforce relies on several configuration steps that are described in this topic. You must configure the integration in both Human Resources and Dayforce before you can process a pay run.

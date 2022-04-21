@@ -16,7 +16,8 @@ ms.dyn365.ops.version: 10.0.20
 # Conventions
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)] <!--KFM: Until 4/30/2022 -->
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!--KFM: Preview until 4/30/2022 -->
 
 A convention is a container for a set of policies that affect system behavior. Based on your business requirements, you must define conventions by using a combination of the various policies that establish how costs should be accounted in Global Inventory Accounting. You can associate each convention with one or more ledgers to ensure consistency in accounting policies that are applied across ledgers.
 

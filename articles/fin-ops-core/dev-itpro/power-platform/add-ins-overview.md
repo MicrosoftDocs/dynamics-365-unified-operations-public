@@ -4,11 +4,10 @@
 title: Add-ins overview
 description: This topic provides information about add-ins, which can be used to extend the functionality of Finance and Operations apps.
 author: ankugo
-manager: AnnBe
-ms.date: 05/20/2021
-ms.topic: article
+ms.date: 02/11/2022
+ms.topic: overview
 ms.prod:
-ms.service: dynamics-ax-applications
+
 ms.technology: 
 
 # optional metadata
@@ -18,7 +17,7 @@ audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.search.region: Global
 # ms.search.industry:
 ms.author: ankugo
@@ -51,5 +50,9 @@ The Export to Azure Data Lake feature is based on a microservice that exports Fi
 ### IoT Intelligence
 
 IoT Intelligence is an add-in for Supply Chain Management. It integrates Internet of Things (IoT) signals with data in Supply Chain Management to produce actionable insights. To learn more, see [IoT Intelligence home page](../../../supply-chain/iot/iot-intelligence-home-page.md).
+
+### Finance insights
+
+Finance insights provides configurable solutions to help you intelligently predict your company's cash flow, predict when you may receive payment for outstanding receivables, and generate a budget proposal that can help speed up your budgeting process. These features use intelligent machine learning templates to build models using data you provide, including data from a third-party, such as consumer report information from a bureau. These intelligent capabilities inform decision making and help you take action to respond effectively to current and anticipated business challenges. For more information, see [Finance insights homepage](../../../finance/finance-insights/finance-insights-home-page.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

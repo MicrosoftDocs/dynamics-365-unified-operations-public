@@ -1,12 +1,12 @@
 ---
 title: While select statement
 description: This topic describes while select statements in the X++ language.
-author: robinarh
+author: tonyafehr
 ms.date: 06/16/2020
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
 ---

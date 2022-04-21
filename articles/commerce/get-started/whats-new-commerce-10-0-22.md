@@ -26,7 +26,7 @@ ms.search.validFrom: 2021-09-31
 ms.dyn365.ops.version: 10.0.22
 
 ---
-# what's new and changed in in Dynamics 365 Commerce 10.0.22 (November 2021)
+# What's new and changed in Dynamics 365 Commerce 10.0.22 (November 2021)
 
 [!include [banner](../includes/banner.md)]
 
@@ -44,11 +44,12 @@ The following features are included in this release. Some of the listed features
 
 | Feature area   | Feature                                                  | More information                                          |  Enabled by             |
 |----------------|----------------------------------------------------------|-----------------------------------------------------------|-------------------------|
-|  Customer management | [Site builder configuration for e-Com product search being inventory aware](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/save-customer-addresses-asynchronously-sync-async-customers) | [Customer management in stores](../customer-mgmt-stores.md) | Feature management |
+|  Customer management | Site builder configuration for product search being inventory aware | [Customer management in stores](../customer-mgmt-stores.md) | Feature management |
 |  Customer orders  |  [Enable order lookup for guest checkouts](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/enable-order-lookup-guest-checkouts)    |  [Enable order lookup for guest checkouts](../order-lookup-guest.md)<p>[Order lookup module](../order-lookup-module.md)</p> |  Feature management   |
 |  E-commerce      |   [Geo-detection and redirection for e-commerce sites](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/geo-detection-redirection-e-commerce-sites) | [Set up geo detection and redirection](../geo-detection-redirection.md)<p>[Country/region picker module](../country-region-picker-module.md)</p>   |                    Site builder settings    |
 | Extensibility | Set up your own local development environment for Dynamics 365 Commerce without Lifecycle Service | [Set up your own local development environment](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/tree/release/9.32/src/ScaleUnitSample/.vscode) | |
 | Extensibility | Develop Commerce Cloud Scale Unit (CRT and API) extension using Visual Studio Code | [Develop CSU extension using VS Code](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/tree/release/9.32/src/ScaleUnitSample/.vscode) | |
+| Globalization | (Italy) Lottery code validation | The validation of the lottery code that is specified in a customer master record or for a sales transaction is now based on the format defined for the corresponding registration type. See [Set up a registration type for the lottery code](../localizations/emea-ita-customer-information.md#set-up-a-registration-type-for-the-lottery-code) for more details. | Enabled by default |
 | Merchandising | Optimized product availability calculation | [Calculate inventory availability for retail channels](../calculated-inventory-retail-channels.md) | Feature management |
 | Merchandising | [Require moderator for ratings and reviews](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/require-moderator-ratings-reviews) | [Enable manual publishing of ratings and reviews by a moderator](../manual-publish-rating-reviews.md) | Site builder settings  |
 

@@ -3,7 +3,7 @@
 
 title: Development and administration for Finance and Operations apps
 description: This page helps developers and IT Pros get started with Finance and Operations.
-author: robinarh
+author: tonyafehr
 ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro, Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 
 # ms.tgt_pltfrm: 
 ms.custom: "intro-internal"
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Development and administration for Finance and Operations apps includes:
 

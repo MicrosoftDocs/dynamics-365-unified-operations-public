@@ -1,17 +1,17 @@
 ---
-title: X++ static classes
+title: X++ static class members
 description: This topic describes static classes in X++.
 author: RobinARH
 ms.date: 12/02/2019
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# X++ static classes
+# X++ static class members
 
 [!include [banner](../includes/banner.md)]
 

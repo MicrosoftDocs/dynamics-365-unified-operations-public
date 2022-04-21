@@ -5,7 +5,7 @@ title: Kuwait overview
 description: This topic provides an overview of functionality specific to Kuwait. 
 author: ilkond
 ms.date: 09/15/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.search.region: Kuwait
 # ms.search.industry: 
 ms.author: ilyako

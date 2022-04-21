@@ -5,7 +5,7 @@ title: Compliance overview
 description: This topic is an overview of the compliance guidance that is provided with Microsoft Dynamics 365 Commerce to help you make your company's sites compliant.
 author: BrianShook
 ms.date: 01/08/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,7 +16,7 @@ audience: Application user
 # ms.devlang: 
 ms.reviewer: v-chgri
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 

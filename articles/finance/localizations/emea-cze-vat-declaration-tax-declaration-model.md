@@ -4,7 +4,7 @@
 title: VAT declaration (Czech Republic)
 description: This topic provides information about the value-added tax (VAT) declaration for the Czech Republic. 
 author: anasyash
-ms.date: 09/18/2020
+ms.date: 01/04/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -143,7 +143,7 @@ Section A1 shows the documents that generate the amount in row 25 of the VAT dec
 |------------------------------------------------|---------------|
 | Tax document number                            | c\_evid\_dd   |
 | VAT number of the customer (numeric part only) | ic\_odb       |
-| Date (which is the date of VAT register)       | duzp          |
+| <p>Date</p><p>(This field specifies the date of the VAT register.)</p> | duzp          |
 | Subject code                                   | kod\_pred\_pl |
 | Tax base                                       | zakl\_dane1   |
 
@@ -177,7 +177,7 @@ This section contains the following information about each document.
 |-----------------------------------------------------|---------------|
 | Tax document number                                 | c\_evid\_dd   |
 | VAT number of the vendor (numeric part only)        | dic\_dod      |
-| Date (which is the date of incoming vendor invoice) | duzp          |
+| <p>Date</p><p>(This field specifies the date of the vendor VAT register or the incoming vendor invoice.)</p> | duzp          |
 | Subject code                                        | kod\_pred\_pl |
 | Tax base at standard rate                           | zakl\_dane1   |
 | Tax amount at standard rate                         | dan1          |
@@ -187,6 +187,8 @@ This section contains the following information about each document.
 | Tax amount at second reduced rate                   | dan3          |
 
 To automatically determine the subject code for the document, you should use the same settings that were described for section A1.
+
+For more information about how to define the date of the vendor VAT register, see [Date of vendor VAT register](emea-date-vendor-vat-register.md).
 
 ### Section A2: Purchases with reverse charge, excluding domestic reverse charge, with an obligation to pay VAT
 
@@ -199,7 +201,7 @@ This section contains the following information about each document.
 | Tax document number                                                    | c\_evid\_dd |
 | VAT number of the vendor from another Member State (numeric part only) | vatid\_dod  |
 | Country that allocated the VAT number to the vendor                    | k\_stat     |
-| Date (which is the date of VAT register)                               | Dppd        |
+| <p>Date</p><p>(This field specifies the date of the VAT register.)</p> | Dppd        |
 | Tax base at standard rate                                              | zakl\_dane1 |
 | Tax amount at standard rate                                            | dan1        |
 | Tax base at first reduced rate                                         | zakl\_dane2 |
@@ -220,7 +222,7 @@ This section contains the following information about each document.
 | Tax document number                                           | c\_evid\_dd      |
 | VAT number of the customer (numeric part only) if it exists   | vatid\_odb       |
 | Country that allocated the VAT number to the customer         | k\_stat          |
-| Date (VAT register)                                           | dup              |
+| <p>Date</p><p>(This field specifies the date of the VAT register.)</p> | dup              |
 | The value of the sales                                        | osv\_plneni      |
 | Place of residence of the customer if there is no VAT number  | m\_pobytu\_sidlo |
 | First and last name of the customer if there is no VAT number | jm\_prijm\_obch  |
@@ -274,7 +276,7 @@ Section B2 contains the following information about each document.
 |-----------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
 | Tax document number                                                                                                                                 | c\_evid\_dd |
 | VAT number of the vendor                                                                                                                            | dic\_dod    |
-| Date (date of the incoming vendor invoice)                                                                                                          | Dppd        |
+| <p>Date</p><p>(This field specifies the date of the vendor VAT register or the incoming vendor invoice.)</p>                                                              | Dppd        |
 | Tax base at standard rate                                                                                                                           | zakl\_dane1 |
 | Tax amount at standard rate                                                                                                                         | dan1        |
 | Tax base at first reduced rate                                                                                                                      | zakl\_dane2 |
@@ -506,7 +508,7 @@ For more information about how to set up and use reverse charge functionality, s
 2. On the **Setup** FastTab, in the **Sales/purchase** field, select **Purchase**.
 3. Create a line, and select an item code, item group, or procurement category code to associate the purchase with the new reverse charge item group. 
 4. In the **Item code** field, select **Table**, **Group**, or **Category**.
-5. If you selected **Table** or **Group** in the **Item code** field, in the **Item relation** field, select an item code or item group respectively.
+5. If you selected **Table** or **Group** in the **Item code** field, in the **Item relation** field, select an item code or item group, respectively.
 6. If you selected **Category** in the **Item code** field, in the **Category** field, select a procurement category.
 7. On the **Setup** FastTab, in the **Sales/purchase** field, select **Sales**, and associate the item, item group, or procurement category as described in steps 4 through 6.
 
@@ -536,7 +538,7 @@ To generate the XML file for the VAT declaration, follow these steps.
     | Field                                                                                                                               | Description |
     |-------------------------------------------------------------------------------------------------------------------------------------|-------------|
     | Tax settlement period                                                                                                               | If you selected **Collect data** in step 5, leave this field blank. Otherwise, select the applicable settlement period. |
-    | Tax declaration version                                                                                                             | <p>If you selected **Collect data** in step 5, leave this field blank. In this case, the report will be generated for sales tax transactions that are included in the collected sales tax payments. Otherwise, select one of the following values:</p><ul><li>**Original** – Generate a report for sales tax transactions of the original sales tax payment or before the sales tax payment is generated (the **Sales tax payment version** field is set to **Original**).</li><li>**Corrections** – Generate a report for sales tax transactions of all the subsequent sales tax payments for the period (the **Sales tax payment version** field is set to **Lastest corrections**).</li><li>**Total list** – Generate a report for all sales tax transactions for the period, icnluding the original and all corrections.</li></ul> |
+    | Tax declaration version                                                                                                             | <p>If you selected **Collect data** in step 5, leave this field blank. In this case, the report will be generated for sales tax transactions that are included in the collected sales tax payments. Otherwise, select one of the following values:</p><ul><li>**Original** – Generate a report for sales tax transactions of the original sales tax payment or before the sales tax payment is generated (the **Sales tax payment version** field is set to **Original**).</li><li>**Corrections** – Generate a report for sales tax transactions of all the subsequent sales tax payments for the period (the **Sales tax payment version** field is set to **Latest corrections**).</li><li>**Total list** – Generate a report for all sales tax transactions for the period, including the original and all corrections.</li></ul> |
     | Tax jurisdiction                                                                                                                    | Select **Default** to use the information about the company that is included in the additional fields for Electronic messages. Select **The Czech Republic** to use the company information in the local Czech fields on the **General ledger parameters** page. |
     | Contact person                                                                                                                      | Select the employee who created the report. The first name, last name, and telephone number of the employee will be exported to the XML file. |
     | Signatory                                                                                                                           | Select the employee who signed the report. The first name, last name, and position of the employee in the company will be exported to the XML file. |
@@ -585,7 +587,7 @@ To generate the XML file for the VAT control statement, follow these steps.
     | Field                     | Description |
     |---------------------------|-------------|
     | Settlement period         | Select the settlement period. |
-    | Sales tax payment version | <p>Select one of the following values:</p><ul><li>**Original** – Generate a report for sales tax transactions of the original sales tax payment or before the sales tax payment is generated (the **Sales tax payment version** field is set to **Original**).</li><li>**Corrections** – Generate a report for sales tax transactions of all the subsequent sales tax payments for the period (the **Sales tax payment version** field is set to **Lastest corrections**).</li><li>**Total list** – Generate a report for all sales tax transactions for the period, including the original and all corrections.</li></ul> |
+    | Sales tax payment version | <p>Select one of the following values:</p><ul><li>**Original** – Generate a report for sales tax transactions of the original sales tax payment or before the sales tax payment is generated (the **Sales tax payment version** field is set to **Original**).</li><li>**Corrections** – Generate a report for sales tax transactions of all the subsequent sales tax payments for the period (the **Sales tax payment version** field is set to **Latest corrections**).</li><li>**Total list** – Generate a report for all sales tax transactions for the period, including the original and all corrections.</li></ul> |
     | From date                 | Select the first date of the reporting period. |
 
 3. Select **OK**, and review the Excel file that is generated.

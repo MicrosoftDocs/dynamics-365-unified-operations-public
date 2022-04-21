@@ -3,9 +3,9 @@
 
 title: Master plans overview
 description: Use various master plans to support your company's daily working operations, simulate different planning strategies that you want to monitor, and implement a company policy, such as a policy about internal performance or customer satisfaction. 
-author: ChristianRytt
+author: t-benebo
 ms.date: 05/28/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -21,7 +21,7 @@ ms.custom: ["7911", "intro-internal"]
 ms.assetid: a116b7de-3d6d-4321-87ba-5a5d99c2f64e
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

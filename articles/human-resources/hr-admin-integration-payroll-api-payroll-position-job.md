@@ -26,6 +26,9 @@ ms.dyn365.ops.version: Human Resources
 
 # Payroll position job
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This topic describes the Payroll position job entity for Dynamics 365 Human Resources.

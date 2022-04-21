@@ -4,7 +4,7 @@ description: This topic describes operator precedence.
 author: pvillads
 ms.date: 07/01/2019
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28

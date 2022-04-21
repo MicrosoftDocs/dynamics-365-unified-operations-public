@@ -2,9 +2,9 @@
 # required metadata
 
 title: Create questionnaires
-description: This article describes the process for creating a questionnaire. The first step is to design the questionnaire. When you design a questionnaire, you not only write the questions and answers, but also create the structure that enables answers to be recorded and tabulated. 
-author: andreabichsel
-ms.date: 06/20/2017
+description: This topic describes the process for creating a questionnaire. 
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.custom: 17341
 ms.assetid: b27e2f12-c7a0-4a54-b8d8-17819f8a1c72
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
@@ -29,9 +29,12 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 # Create questionnaires
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This article describes the process for creating a questionnaire. The first step is to design the questionnaire. When you design a questionnaire, you not only write the questions and answers, but also create the structure that enables answers to be recorded and tabulated. 
+This topic describes the process for creating a questionnaire. The first step is to design the questionnaire. When you design a questionnaire, you not only write the questions and answers, but also create the structure that enables answers to be recorded and tabulated. 
 
 A carefully designed questionnaire can help increase the quality of the data that you collect. Through careful design, you can better select the appropriate options at the appropriate time for a questionnaire. The following points can help you plan an effective questionnaire:
 
@@ -68,7 +71,7 @@ Some prerequisites must be in place before you can create questionnaires, answer
 
 ### Questionnaire types
 
-Questionnaire types are required and must be assigned when you create a questionnaire. Questionnaire types help you manage and classify questionnaires more easily. Use questionnaire types to classify questionnaires and differentiate them from each other. For example, if you have multiple questionnaires to select from, you can filter them by type to help make it easier to find a particular questionnaire. Here are some examples of questionnaire types:
+**Questionnaire types** are required and must be assigned when you create a questionnaire. **Questionnaire types** help you manage and classify questionnaires more easily. Use questionnaire types to classify questionnaires and differentiate them from each other. For example, if you have multiple questionnaires to select from, you can filter them by type to help make it easier to find a particular questionnaire. Here are some examples of questionnaire types:
 
 -   Human resource development
 -   Customer surveys
@@ -76,9 +79,9 @@ Questionnaire types are required and must be assigned when you create a question
 
 ### Question types
 
-Question types are required and must be assigned when you create a question. 
+**Question types** are required and must be assigned when you create a question. 
 
-Use question types to categorize questions for reporting. Question types also make it easier to find questions, because you can use types as filters on the **Questions** page. Here are some examples of question types:
+Use **Question types** to categorize questions for reporting. **Question types** also make it easier to find questions, because you can use types as filters on the **Questions** page. Here are some examples of question types:
 
 -   Human resource
 -   Managing business
@@ -110,7 +113,7 @@ To provide a list of possible answers for closed-ended questions, you can create
 
 Answer groups and answers are components that make up the main body of information that questions are created from. After you create an answer group, you can associate the answer group with a question in the **Answer group** field on the **Questions** page. 
 
-An answer group can be used for more than one question on the same questionnaire, and can also be used on more than one questionnaire. 
+An **Answer group** can be used for more than one question on the same questionnaire, and can also be used on more than one questionnaire. 
 
 > [!NOTE]
 > If you modify answer text in answer groups that have already been used on completed questionnaires, data can become difficult to evaluate, and questionnaire results might no longer be valid. If you must change an answer group, consider creating a new answer group instead of changing an existing one. You can't delete answer groups that are attached to a question or answer, or that have been answered.
@@ -176,7 +179,7 @@ In a questionnaire, you can't delete the following types of questions:
 
 ### Result groups
 
-Result groups are optional when you attach questions to a questionnaire. 
+**Result groups** are optional when you attach questions to a questionnaire. 
 
 A result group is used to calculate points and categorize the results of a questionnaire. If you use result groups, you can perform the following tasks:
 

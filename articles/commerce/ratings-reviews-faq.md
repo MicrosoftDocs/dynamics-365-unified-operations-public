@@ -45,4 +45,16 @@ For instructions about how to enable and enforce the manual publishing of rating
 
 [Enable manual publishing of ratings and reviews by a moderator](manual-publish-rating-reviews.md)
 
+[Manage ratings and reviews](manage-reviews.md)
+
+[Configure ratings and reviews](configure-ratings-reviews.md)
+
+[Sync product ratings](sync-product-ratings.md)
+
+[Enable manual publishing of ratings and reviews by a moderator](manual-publish-rating-reviews.md)
+
+[Import and export ratings and reviews](import-export-reviews.md)
+
+[Configure Service-to-Service authentication](service-to-service-auth.md)
+
 [Ratings refiner appears on search results and category pages when the ratings and reviews solution isn't enabled](troubleshoot/hide-ratings-refiner.md)

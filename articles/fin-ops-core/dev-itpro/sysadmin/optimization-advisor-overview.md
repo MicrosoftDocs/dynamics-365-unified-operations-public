@@ -5,7 +5,7 @@ title: Optimization advisor overview
 description: This topic describes how you can use Optimization advisor to help ensure optimal configuration of Finance and Operations. 
 author: roxanadiaconu
 ms.date: 07/23/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: 

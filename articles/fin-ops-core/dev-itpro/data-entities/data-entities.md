@@ -5,7 +5,7 @@ title: Data entities overview
 description: This topic describes data entities, the scenarios that they support, the categories that are used for them, and the methods for creating them.
 author: peakerbl
 ms.date: 04/20/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -30,6 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 # Data entities overview
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 This topic defines and provides an overview of data entities. It includes information about the capabilities of data entities, the scenarios that they support, the categories that are used for them, and the methods for creating them.
 
@@ -134,7 +137,7 @@ Entities are categorized based on their functions and the type of data that they
 ### Transaction
 
 - The operational transaction data of the business.
-- Posted transactions. These are non idempotent items such as posted invoiced and balances. Typically, these items are excluded during a full dataset copy to reduce the volume of data that is copied/migrated. Migrating completed transactions can also lead to further complexity in trying to preserve the referential integrity of related data in the new system. In general, transactions from a completed business process are not migrated in detail but in summary.
+- Posted transactions. These are non idempotent items such as posted invoices and balances. Typically, these items are excluded during a full dataset copy to reduce the volume of data that is copied/migrated. Migrating completed transactions can also lead to further complexity in trying to preserve the referential integrity of related data in the new system. In general, transactions from a completed business process are not migrated in detail but in summary.
 - Examples include pending invoices.
 
 ## Building an entity
@@ -226,7 +229,7 @@ The next step is to drill into the data entity to view the impact of configurati
 ### Child entities 
 Certain entities have other entities as data sources, or are composite data entities: configuration key information for these entities is shown in the **Child entities** form. Use this form in the similar way to the entities list page described above. The target fields form for the child entity also behaves like what is described above.
 
-![Target fields.](./media/Target_fields_2.png)
+![Child entities.](./media/Target_fields_2.png)
 
 ### Run time validations for configuration keys
 Using the configuration key metadata built during entity refresh list, run time validations are performed in the following use cases.
@@ -245,7 +248,7 @@ Using the configuration key metadata built during entity refresh list, run time 
 ### Managing configuration key changes
 Anytime that you update configuration keys at the entity, table, or field level, the entity list in the data management framework must be refreshed. This process ensures that the framework picks up the latest configuration key settings. Until the entity list is refreshed, the following warning will be shown in the entity list page. The updated configuration key changes will take effect immediately after the entity list is refreshed. We recommend that you validate existing data projects and jobs to make sure that they function as expected after the configuration keys changes are put in effect.
 
-![Target fields.](./media/Target_fields_3.png)
+![Configuration keys.](./media/Target_fields_3.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

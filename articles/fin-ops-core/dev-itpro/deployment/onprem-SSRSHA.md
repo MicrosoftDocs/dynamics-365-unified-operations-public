@@ -4,9 +4,10 @@
 title: Configure high availability for SQL Server Reporting Services (SSRS) nodes
 description: This topic explains how to configure Microsoft SQL Server Reporting Services (SSRS) nodes for Dynamics 365 Finance + Operations (on-premises) deployments.
 author: faix
-ms.date: 03/22/2021
+ms.date: 02/22/2022
 ms.topic: article
-ms.prod:
+ms.prod: dynamics-365 
+ms.service:
 ms.technology: 
 
 # optional metadata
@@ -153,7 +154,7 @@ param (
     $ServiceAccount,
 
     [string]
-    $ssrsServicePort = ""
+    $SsrsServicePort = "443"
 )
 
 $ErrorActionPreference = "Stop"
@@ -178,7 +179,7 @@ foreach ($component in $configJson.components)
         $component.parameters.biReporting.persistentVirtualMachineIPAddressSSRS.value = $Listener
         $component.parameters.biReporting.reportingServers.value = $MachinesList
         $component.parameters.biReporting.ssrsUseHttps.value = "True"
-        $component.parameters.biReporting.ssrsHttpsPort.value = $ssrsServicePort
+        $component.parameters.biReporting.ssrsHttpsPort.value = $SsrsServicePort
     }
     elseif($component.name -eq "ReportingServices")
     {
@@ -188,7 +189,7 @@ foreach ($component in $configJson.components)
         $component.parameters.principalUserAccountType.value = "ManagedServiceAccount"
         $component.parameters.principalUserAccountName.value = $ServiceAccount
         $component.parameters.reportingServers.value = $MachinesList
-        $component.parameters.ssrsHttpsPort.value = $ssrsServicePort
+        $component.parameters.ssrsHttpsPort.value = $SsrsServicePort
     }
 
     $updatedComponents += $component

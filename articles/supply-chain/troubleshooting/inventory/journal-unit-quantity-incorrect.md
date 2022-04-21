@@ -27,7 +27,7 @@ You might encounter one or both of the following issues when you work with units
 
 To fix this issue, follow these steps.
 
-1. In the **Feature management** workspace, make sure that the *Using unit of measure and unit quantity in inventory journals* feature is turned on. This feature adds the **Unit** and **Unit quantity** fields to the journal.
+1. In the **Feature management** workspace, make sure that the *Using unit of measure and unit quantity in inventory journals* feature is turned on. This feature adds the **Unit** and **Unit quantity** fields to the journal. (As of Supply Chain Management version 10.0.21, this feature is turned on by default.)
 1. After the feature is turned on, use the **Quantity**, **Unit quantity**, and **Unit** fields in the following way:
 
     - **Quantity** – Specify the quantity by using the default unit that is defined for the released product. However, the default unit itself isn't shown here. If a conversion is set up between the default unit and the unit that is selected in the **Unit** field, the **Quantity** field is automatically updated, based on the selections in the **Unit quantity** and **Unit** fields.
