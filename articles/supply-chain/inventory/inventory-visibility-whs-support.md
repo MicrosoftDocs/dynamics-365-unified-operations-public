@@ -17,6 +17,7 @@ ms.dyn365.ops.version: 10.0.26
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!--KFM: Preview until further notice. GA with 10.0.26? -->
 
 This topic describes Inventory Visibility support for items that are enabled for advanced warehouse processes (WHS items). The feature that adds this capability to Inventory Visibility is named *Advanced WHS*.
 

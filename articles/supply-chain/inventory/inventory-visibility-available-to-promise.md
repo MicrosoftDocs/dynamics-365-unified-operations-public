@@ -16,6 +16,8 @@ ms.dyn365.ops.version: 10.0.26
 # Inventory Visibility on-hand change schedules and available to promise
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!--KFM: Preview until further notice. GA with 10.0.26? -->
 
 This topic describes how to set up the *On-hand change schedule* feature to schedule future on-hand changes and calculate available-to-promise (ATP) quantities. ATP is the quantity of an item that is available and can be promised to a customer in the next period. Use of this calculation can greatly increase your order fulfillment capability.
 
