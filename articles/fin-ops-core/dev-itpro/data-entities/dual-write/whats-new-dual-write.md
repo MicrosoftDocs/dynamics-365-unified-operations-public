@@ -20,7 +20,7 @@ Dual-write is an out-of-box infrastructure that provides near-real-time interact
 
 ## April 2022 release
 
-The April release of Dual-write Party and Global Address Book Solutions 3.3.0.5 contains the following features and bug fixes.
+The April release of Dual-write Party and Global Address Book Solutions 3.5.0.1 contains the following features and bug fixes.
 | Feature | Description |Status |
 |---|---|---|
 |Address roles dropdown	|	Addresses can be classified as invoice, business, home etc. through address purpose or roles. With this release, we are replacing the address roles text field with a PCF control which is a multi-select option set. This new control allows you to select one or more address roles and assign it to the given address. This dropdown is available for both postal addresses and electronic addresses.|	General availability |
@@ -37,11 +37,11 @@ The April release of Dual-write Party and Global Address Book Solutions 3.3.0.5 
 ### Solution details
 | Solution Name | Has New Changes? | Previous Version | New Version |
 |---|---|---|---|
-|Party	| Yes |	3.3.0.5 |	TBD |
-|Dynamics365GABExtended	| Yes	| 3.3.0.5	| TBD |
-|Dynamics365GABDualWriteEntityMaps	| Yes	| 3.3.0.5	| TBD |
-|Dynamics365GABPartyAnchor	| Yes |	3.3.0.5	| TBD |
-|Dynamics365GABPartyCommon	| Yes |	3.3.0.5	| TBD |
+|Party	| Yes |	3.3.0.5 |	3.5.0.1 |
+|Dynamics365GABExtended	| Yes	| 3.3.0.5	| 3.5.0.1 |
+|Dynamics365GABDualWriteEntityMaps	| Yes	| 3.3.0.5	| 3.5.0.1 |
+|Dynamics365GABPartyAnchor	| Yes |	3.3.0.5	| 3.5.0.1 |
+|Dynamics365GABPartyCommon	| Yes |	3.3.0.5	| 3.5.0.1 |
 
 
 This release includes following map changes:
