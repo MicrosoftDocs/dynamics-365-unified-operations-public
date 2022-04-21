@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Priority-based throttling
+title: Throttling prioritization
 description: This topic provides information about priority-based throttling for OData and custom service-based integrations.
-author: hasaid
-ms.date: 11/18/2021
+author: jaredha
+ms.date: 04/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.custom: 21311
 ms.assetid: 5ff7fd93-1bb8-4883-9cca-c8c42ddc1746
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sunilg
+ms.author: jaredha
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Platform update 37
 
@@ -31,9 +31,9 @@ ms.dyn365.ops.version: Platform update 37
 
 [!include [banner](../includes/banner.md)]
 
-Resource-based service protection API limits work together with the user-based service protection API limits as protective settings that prevent the over-utilization of resources. This helps to preserve the system's responsiveness and ensures consistent availability and performance for environments running Finance and Operations apps. The resource-based limits will throttle service requests when the aggregate consumption of web server resources reaches levels that threaten service performance and availability.
+Resource-based service protection API limits work together with the user-based service protection API limits as protective settings that prevent the over-utilization of resources. This helps to preserve the system's responsiveness and ensure consistent availability and performance for environments running Finance and Operations apps. The resource-based limits will throttle service requests when the aggregate consumption of web server resources reaches levels that threaten service performance and availability.
 
-For resource-based service protection API limits, you can set the relative priority for OData and custom service-based integrations, depending on your business-critical need for these integrations. The throttling manager will then honor these priorities set for the requests. For OData and custom service requests, an error which states ```Too many requests``` will be sent when system health and performance are affected. 
+For resource-based service protection API limits, you can set the relative priority for OData and custom service-based integrations, depending on your business-critical need for these integrations. The throttling manager will then honor these priorities set for the requests. For OData and custom service requests, an error which states "Too many requests" will be sent when system health and performance are affected. 
 
 The **Throttling Priority Mapping** page is used to assign priorities for integrations so that priorities can be honored when requests are throttled. 
 
