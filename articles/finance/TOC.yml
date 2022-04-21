@@ -412,6 +412,8 @@
           href: accounts-receivable/subscription-billing-summary.md
         - name: Recurring contract billing
           items:
+          - name: Set up recurring contact billing
+            href: accounts-receivable/sb-recur-bill-parameters.md
           - name: Create billing schedules
             href: accounts-receivable/sb-billing-schedules.md
           - name: Copy a billing schedule
@@ -420,12 +422,18 @@
             href: accounts-receivable/sb-schedule-billing-features.md
           - name: Milestone billing
             href: accounts-receivable/sb-milestonebilling.md
+          - name: Revenue allocation
+            href: accounts-receivable/sb-rev-allocation.md
           - name: Support and renewal process
             href: accounts-receivable/sb-support-renewals.md
+          - name: Unbilled revenue
+            href: accounts-receivable/sb-unbilled-revenue.md
           - name: Consumer price index schedules
             href: accounts-receivable/cpischedules.md
           - name: Terminate billing schedules
             href: accounts-receivable/terminate-billing-schedule.md
+          - name: Alignment date scenarios
+            href: accounts-receivable/sb-alignment-date-examples.md                  
         - name: Revenue and expense deferrals
           items:
           - name: Set up revenue and expense deferrals
