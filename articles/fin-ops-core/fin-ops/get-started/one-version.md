@@ -86,10 +86,6 @@ For more information on deprecation guidelines and deprecated methods and metada
 
 Customers on version 8.1 or later will only be able to apply the 8.1.x or v10.x service updates. Platform only service updates cannot be applied to version 8.1.x or later. 
 
-### Will Platform updates be able to be scheduled and delay/pause by customers?
-
-Yes, customers who are on version 7.3 are able to schedule platform updates directly in Lifecycle Services. A delay/pause experience is also available.
-
 ### Service updates for on-premises deployments
 
 The policy and schedule for service updates are now the same for both cloud and on-premises deployments. This includes, for example, the option to delay applying up to three consecutive updates. How to apply each of these updates remains slightly different. For more information, see [Apply updates to on-premises deployments](../../dev-itpro/deployment/apply-updates-on-premises.md#update-an-on-premises-deployment).
