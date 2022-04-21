@@ -63,19 +63,26 @@ In scenarios where external integration systems require the schema of the payloa
 In summary, the business event catalog helps identify the business events that are required for an implementation. It also helps identify the schema for each business event.
 
 The next step is to manage the endpoints.
-## Business events parameters and processing
-The application allocates dedicated batch threads to process business events in near real time. The maximum number of threads cannot exceed the total threads available in the system (**System administration > Server configuration**). Because threads are a shared resource for all batch processing, care must be taken when deciding to change the thread allocation for business events. The total threads allocated for business events is controlled using a parameter in the business events parameter table. This setting is not exposed from the user interface (UI), so a support case must be created to get this count changed in production environments as this will need database access.
+## Business events parameters
 
-> [!IMPORTANT]
-> There may be reliability issues with dedicated batch threads. Microsoft is working to resolve this issue and as a result, we recommend that you schedule the manual batch job to process business events, as explained below. We will update this topic when this issue is resolved.
+### General
+The **General** tab of the **Business events parameters** page provides general settings applied to business events.
 
-The business events batch processing job is available as a workaround to mitigate issues with the dedicated processing, if needed. The batch job can be enabled and scheduled from the **Business events parameters** page. 
+- **Retry count**: In the event of an error while sending business events to its end point, the system retries to send the business events. The number of times the system will retry sending the event is configured in this field. The default value is 3.
+- **Wait time between retries**: This is the interval between retries for sending a business event to its endpoint, measured in milliseconds. The default value is 1000 milliseconds.
+- **Endpoints allowed per event**: This is the maximum number of endpoints that can subscribe to the same business event in a legel entity. The value is set to 10 by default.
+- **Use business events batch job**: The business events batch processing job is available as a workaround to mitigate issues with dedicated processing, when needed. When enabling the toggle, select the **Business events batch job** action to select settings for the batch job processor. See the description of the **Performance** tab below for more information on settings for dedicated processing.
+- **Key vault secret cache interval**: The interval in minutes that the key vault secrets used for business events are cached in memory before being read and cached again from the configured key vault. The default value is 5 minutes.
 
-In the event of an error while sending business events to its end point, the system retries to send the business events three times with an interval of one second per retry. This is the default setting that can be changed on the **Business events parameters** page.
+### Performance
+The business events framework has two primary settings that can affect performance: processing threads and bundle size. The application allocates dedicated batch threads to process business events in near real time. Because threads are a shared resource for all batch processing, care must be taken when deciding to change the thread allocation for business events. 
 
-The number of endpoints that can subscribe to the same business event in a legal entity is limited to ten by default. This can be changed on the **Business events parameters** page.
-
-The out-of-the-box default settings for the above described parameters can be restored on the **Business events parameters** page.
+- **Processing threads**: This value determines how many threads to use for processing business events. The maximum value allowed is 4.
+  - If using dedicated processing for business events, this thread count is per Batch AOS instance.
+  - If using batch job, this thread count is the total number of additional batch tasks that will be used to process events.
+- **Bundle size**: This determines how many events to group together for processing at a time by a thread.
+  - Increasing this number will produce fewer bundles and less ability to distribute the events to parallel threads.
+  - Decreasing this number will produce more bundles and more ability to distribute the events. However, making it too small will mean unnecessary parallelization on small bundles.
 
 ## Activating business events
 
