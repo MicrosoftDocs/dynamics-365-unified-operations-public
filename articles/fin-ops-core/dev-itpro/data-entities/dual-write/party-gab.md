@@ -134,7 +134,7 @@ The grid includes the following columns:
 
 You can use the **New Electronic Address** button above the grid to create as many addresses as you want.
 
-Electronic addresses are available only in this grid. In future releases, all postal address and electronic address fields will be removed from other tabs, for example, the **Summary** and **Details** tabs. Contact details displayed on the **Details** tab are read-only copies of the primary electronic address, like primary phone, primary email, primary telephone, primary fax, and primary Twitter ID. During the lead qualification process you can provide both a business phone number and a mobile phone number. The business phone number is considered the primary phone if **IsMobile=No** and the mobile phone number is considered the secondary phone if **IsMobile=Yes**.
+During the lead qualification process you can provide both a business phone number and a mobile phone number. The business phone number is considered the primary phone if **IsMobile=No** and the mobile phone number is considered the secondary phone if **IsMobile=Yes**.
 
 > [!TIP]
 > Use **Addresses** and **Electronic Addresses** tabs on the **Account** and **Contact** forms to manage postal and electronic addresses. This ensures that address data synchronizes to finance and operations apps.
@@ -143,7 +143,7 @@ Electronic addresses are available only in this grid. In future releases, all po
 
 1. Open your customer engagement app environment.
 
-2. Install the latest version (2.2.2.60 or later) of [Dual-write application orchestration solution](https://aka.ms/dual-write-app).
+2. Install all pre-requisite solutions as described under [separated solutions]() page.  
 
 3. Install [Dual-write Party and Global Address Book Solutions](https://aka.ms/dual-write-gab).
 
@@ -160,8 +160,8 @@ Electronic addresses are available only in this grid. In future releases, all po
 
     Map | Update to this version | Changes
     ---|---|---
-    `CDS Parties (msdyn_parties)`| 1.0.0.0 | This is a new map added as part of this release.
-    `Contacts V2 (msdyn_contactforparties)`| 1.0.0.5 | This is a new map added as part of this release.
+    `CDS Parties (msdyn_parties)`| 1.0.0.2 | This is a new map added as part of this release.
+    `Contacts V2 (msdyn_contactforparties)`| 1.0.0.6 | This is a new map added as part of this release.
     `Customers V3 (accounts)` | 1.0.0.5 |Removed `PartyNumber` and other party-related fields like name, personal details, postal address fields, and electronic contact address.
     `Customer V3 (contacts)` | 1.0.0.5 | Removed `PartyNumber` and other party-related fields like name, personal details, postal address fields, and electronic contact address.
     `Vendors V2 (msdyn_vendors)` | 1.0.0.6 | Removed `PartyNumber` and other party-related fields like name, personal details, postal address fields, and electronic contact address.
@@ -169,7 +169,7 @@ Electronic addresses are available only in this grid. In future releases, all po
     `Sales invoice headers V2 (invoices)` | 1.0.0.4 | Replaced the contact person with `ContactforParty` reference.
     `CDS Sales order headers (salesorders)` | 1.0.0.5 | Replaced the contact person with `ContactforParty` reference.
     `CDS Party postal address locations (msdyn_partypostaladdresses)` | 1.0.0.1  | This is a new map added as part of this release.
-    `CDS postal address history V2 (msdyn_postaladdresses)` | 1.0.0.1 | This is a new map added as part of this release.
+    `CDS postal address history V2 (msdyn_postaladdresses)` | 1.0.0.2 | This is a new map added as part of this release.
     `CDS postal address locations (msdyn_postaladdresscollections)` | 1.0.0.0 | This is a new map added as part of this release.
     `Party Contacts V3 (msdyn_partyelectronicaddresses)` | 1.0.0.0 | This is a new map added as part of this release.
     `Complimentary Closings ( msdyn_compliemntaryclosings)` | 1.0.0.0 | This is a new map added as part of this release.
@@ -179,7 +179,8 @@ Electronic addresses are available only in this grid. In future releases, all po
     `Personal character types (msdyn_personalcharactertypes)` | 1.0.0.0 | This is a new map added as part of this release.
     `Salutations (msdyn_salutations)` | 1.0.0.0 | This is a new map added as part of this release.
     `Employment job functions (msdyn_employmentjobfunctions)` | 1.0.0.0 | This is a new map added as part of this release.
-
+    `CDS Address roles (msdyn_addressroles)` | 1.0.0.0 | This is a new map added as part of this release.
+    
 8. Before running the above maps, you must update the integration keys manually as described in the following steps. Then select **Save**.
 
     | Map | Keys |
@@ -246,6 +247,7 @@ Electronic addresses are available only in this grid. In future releases, all po
     [CDS sales quotation header](mapping-reference.md#215) | quotes
     [CDS sales order headers](mapping-reference.md#217) | salesorders
     [Sales invoice headers V2](mapping-reference.md#118) | invoices
+    [CDS Address roles]() | msdyn_addressroles
 
 > [!NOTE]
 > The `CDS Contacts V2 (contacts)` map is the map that you stopped in the step 1. When you try to run other maps, these 2 maps may appear in the list of dependents. Don't run these maps.
@@ -285,6 +287,7 @@ A collection of table maps work together for party and global address book inter
 | [Sales invoice headers V2](mapping-reference.md#118) | invoices |
 | [Salutations](mapping-reference.md#228) | msdyn\_salutations |
 | [Vendors V2](mapping-reference.md#202) | msdyn\_vendors |
+| [CDS Address roles]() |msdyn\_addressroles|
 
 For more information, see [Dual-write mapping reference](mapping-reference.md).
 
@@ -297,7 +300,6 @@ A postal address or an electronic address can serve more than one purpose. Say f
 
 + In finance and operations apps, when you create a customer along with address and save it, the address might not synchronize to the **Address** table. This is because of a dual-write platform sequencing issue. As a workaround, create the customer first and save it. Then add the address.
 + In finance and operations apps, when a customer record has a primary address and you create a new contact for that customer, then the contact record inherits a primary address from the associated customer record. This happens for vendor contact, too. Dataverse doesn’t currently support this behavior. If dual-write is enabled, a customer contacts that is inherited with a primary address from the finance and operations app is synchronized to Dataverse along with its address.
-+ Electronic addresses set on the electronic address tab of the **Account**, **Contact**, and **Vendor** forms come from the `msdyn_partyelectronicaddress` table. This information does not flow to its associated transactions like sales order, quotation, and purchase order. We plan to fix this issue in an incremental release. The existing data on the electronic address fields on the account and contact records will continue to work on transactions like sales order, quotation, and purchase order.
 + In finance and operations apps, you can create a contact record from the **Add Contact** form. When you try to create a new contact from the **View Contact** form, the action fails. This is a known issue.
 
     ![Known issue with Add Contact.](media/party-gab-contact-issue.png)
