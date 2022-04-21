@@ -33,7 +33,8 @@ In July 2018 we announced a [change to the way we deliver Dynamics 365 updates](
 For more information about One Version service updates, see [One Version service updates overview](../../dev-itpro/lifecycle-services/oneversion-overview.md).
 
 ### Can the update be delayed? What is the policy?
-Yes, the customer can pause, delay, or opt-out of an update via Update Settings in the Lifecycle Services projects provided that all of their sandbox and production environments are no more than three versions behind the latest available update.  A customer can choose to pause up to 3 consecutive updates. The following is an example of a delayed update: 
+Yes, the customer can pause, delay, or opt-out of an update via Update Settings in Lifecycle Services projects provided that all of their sandbox and production environments are no more than three versions behind the latest available update.  A customer can choose to pause up to three consecutive updates. The following is an example of a delayed update: 
+
 - The customer is currently on version 10.0.22.
 - The customer can pause updates 10.0.23, 10.0.24, and 10.0.25.
 - The customer must take the 10.0.26 update when it is available.
@@ -53,8 +54,7 @@ Customers can always choose to apply the update at an earlier time, or if there'
 
 | Version       | Description |
 |---------------|-------------|
-| 8.1 and later | All customers on version 8.1 and later will be scheduled for automatic monthly updates. These updates will be combined application and platform updates. You will be required to be on an update that's no more than three updates behind the current update. To pause an update, refer to [Pause service updates](../../dev-itpro/lifecycle-services/pause-service-updates.md). |
-
+| 8.1 and later | All customers on version 8.1 and later will be scheduled for automatic monthly updates. These updates will be combined application and platform updates. You are required to be on an update that's no more than three updates behind the current update. To pause an update, refer to [Pause service updates](../../dev-itpro/lifecycle-services/pause-service-updates.md). |
 
 ### What does the service update contain?
 
@@ -70,9 +70,9 @@ Service updates are available. You have the option to apply the update when it's
 
 To see a targeted release schedule, see [Service update availability](public-preview-releases.md).
 
-### Are there any major updates post 8.1?ou will be required to be on an update that's no more than three updates behind the current update.
+### Are there any major updates post 8.1?
 
-There will be 2 major updates in April and October where new experiences can be enabled. Major updates won't require code or data upgrade. Breaking changes will be communicated 12 months in advance such that customers can plan accordingly. Such a change will only be introduced during a major update. The 10.0 release, which will be available in April 2019, will also be an update and not an upgrade.
+There are two major updates each year: the April update and the October update. New experiences can be enabled with these updates. Major updates won't require code or data upgrade. Breaking changes will be communicated 12 months in advance such that customers can plan accordingly. Such a change will only be introduced during a major update.
 
 ### What does it mean when an update is backward compatible?
 
@@ -84,7 +84,7 @@ For more information on deprecation guidelines and deprecated methods and metada
 
 ### Can I apply a Platform service update to my existing 8.1 or later environments?
 
-Customers on version 8.1 or later will only be able to apply the 8.1.x or v10.x Service updates. Platform only service updates cannot be applied to version 8.1.x or later. 
+Customers on version 8.1 or later will only be able to apply the 8.1.x or v10.x service updates. Platform only service updates cannot be applied to version 8.1.x or later. 
 
 ### Will Platform updates be able to be scheduled and delay/pause by customers?
 
@@ -92,7 +92,7 @@ Yes, customers who are on version 7.3 are able to schedule platform updates dire
 
 ### Service updates for on-premises deployments
 
-The policy and schedule for service updates are now the same for both cloud and on-premises deployments. This includes, for example, the option to delay applying up to 3 consecutive updates. How to apply each of these updates remains slightly different. For more information, see [Apply updates to on-premises deployments](../../dev-itpro/deployment/apply-updates-on-premises.md#update-an-on-premises-deployment).
+The policy and schedule for service updates are now the same for both cloud and on-premises deployments. This includes, for example, the option to delay applying up to three consecutive updates. How to apply each of these updates remains slightly different. For more information, see [Apply updates to on-premises deployments](../../dev-itpro/deployment/apply-updates-on-premises.md#update-an-on-premises-deployment).
 
 ## Process
 
@@ -133,7 +133,7 @@ For breaking changes that only affect compilation time, but are binary compatibl
 
 You can pause an update up to 4 months or 3 consecutive service updates by way of LCS configuration. After this period, an update will be scheduled and auto-applied by Microsoft. The update experience for a delayed update will incur additional downtime.
 
-### Can I delay an update for longer than 3 consecutive service updates due to seasonal activity or other business reason? 
+### Can I delay an update for longer than three consecutive service updates due to seasonal activity or other business reason? 
 
 No, service updates will be automatically applied to the sandbox, then 7 days later the update will be applied to all additional sandbox and production environments if the environments are more than three service updates old. A customer can only pause up to three consecutive updates in a row. For example, if a customer on version 10.0.22 chooses to pause updates 10.0.23, 10.0.24, and 10.0.25 then service update 10.0.26 will be auto applied to the sandbox and later followed by all additional sandbox and production environments. 
 
@@ -153,9 +153,11 @@ After you apply a service update for a supported version, this functionality wil
 > [!NOTE]
 > In this topic, versions are noted in the following ways:
 >
-> - Version N is the latest version (for example, 10.0.24).
-> - Version N-2 is one version older than N (for example, 10.0.23).
-> - Version N-3 is two versions older than N (for example, 10.0.22).
+> - Version N is the latest version, for example: 10.0.25
+> - Version N-1 is one version older than N, for example: 10.0.24
+> - Version N-2 is two versions older than N, for example: 10.0.23
+> - Version N-3 is three versions older than N, for example: 10.0.22
+> - Version N-4 is four versions older than N, for example: 10.0.22  (Customers on version 10.0.22 **can't** pause updates in this example.)
 
 ### How do the automatic updates affect my Microsoft-managed additional sandbox environments in my LCS implementation project? 
 
