@@ -4,26 +4,13 @@
 title: Service protection API limits
 description: This topic provides information about service protection API limits for the Finance and Operations service.
 author: jaredha
-ms.date: 04/06/2022
+ms.date: 04/21/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jaredha
-ms.search.validFrom: 2022-04-16
-ms.dyn365.ops.version: Platform update 52
+ms.search.validFrom: 2022-04-21
 
 ---
 
@@ -50,9 +37,9 @@ The service protection limits are high enough that it should be rare for an indi
 Client application developers should not simply throw the error to display the message to the user. The error message is not intended for end users. See [Retry operations](service-protection-retry-operations) for specific strategies on managing a throttling response when API requests exceed the service protection limits.
 
 ### Data integration applications
-Applications designed to load data into Finance and Operations or perform bulk data operations must also be able to manage service protection API limit errors. These applications must prioritize throughput so they can complete their work in the minimum amount of time. They must have a strategy to retry operations and achieve maximum throughput.
+Applications designed to load data into Finance and Operations apps or perform bulk data operations must also be able to manage service protection API limit errors. These applications must prioritize throughput so they can complete their work in the minimum amount of time. They must have a strategy to retry operations and achieve maximum throughput.
 
-For more information, see [Maximizing API throughput](service-protection-maximizing-api-throughput).
+For more information, see [Maximizing API throughput](service-protection-maximizing-api-throughput.md).
 
 ### Anonymous users
 Some applications will send requests from anonymous users through a service principal account. For the service protection API limits that are based on a per-user basis, these applications can hit service protection API limits based on the volume of traffic the application experiences across all client users. Like interactive client applications, it isn't expected that the service protection API limit errors should be displayed to the application end user. It is expected that the UI should disable further requests and display a message that the server is busy. The message may include the time when the application can begin accepting new requests.
@@ -64,7 +51,7 @@ There are two types of service protection API limits for Finance and Operations 
 > Service protection API limits are subject to change and may vary between environments. These numbers represent default values and are provided to give you an idea of what values you can expect in your environment. These limits are not configurable and are not specific to legal entities.
 
 ### User-based service protection API limits
-Two of the user-based service protection API limits are evaluated within a 5-minute(300 seconds) sliding window. If either limit is exceeded within the preceding 300 seconds, a service protection API limit error will be returned on subsequent requests to protect the service until the [Retry-After interval](service-protection-retry-operations.md#retry-after-intervals) has ended.
+Two of the user-based service protection API limits are evaluated within a 5 minute (300 seconds) sliding window. If either limit is exceeded within the preceding 300 seconds, a service protection API limit error will be returned on subsequent requests to protect the service until the [Retry-After interval](service-protection-retry-operations.md#retry-after-intervals) has ended.
 
 The service protection API limits are evaluated per user. Each authenticated user is limited independently. Only the user accounts which are making extraordinary demands will be limited. Other users will not be impacted.
 
@@ -86,7 +73,7 @@ The following table describes the default user-based service protection API limi
 ### Resource-based service protection API limits
 While user-based service protection API limits are specified per user per web server, resource-based service protection API limits are enforced based on environment resource utilization thresholds. The resource limits will throttle service requests when the aggregate consumption of web server resources reaches levels that threaten service performance and availability. Resource-based service protection API limits work together with user-based limits as protective settings that prevent the over-utilization of resources. This helps to preserve the system's responsiveness and ensures consistent availability and performance for environments running Finance and Operations apps.
 
-For resource-based service protection API limits, you can define the prioritized order in which integrations are throttled when resource thresholds are reached. See [Throttling prioritization](priority-based-throttling) for more information.
+For resource-based service protection API limits, you can define the prioritized order in which integrations are throttled when resource thresholds are reached. See [Throttling prioritization](priority-based-throttling.md) for more information.
 
 ## Service protection API response
 When client applications make extraordinarily demanding requests, the Finance and Operations service returns an error indicating that too many requests have been made. We follow a common pattern for online services by returning a [429 Too Many Requests response](https://developer.mozilla.org/docs/Web/HTTP/Status/429).
@@ -101,6 +88,7 @@ This limit counts the total number of requests during the preceding 300-second p
 It is not expected that a typical user of an interactive application will be able to send 1200 requests per minute to exceed this limit unless the application enables users to perform bulk operations. For example, if a list view enables the selection of 250 records at a time and allows a user to perform an operation on all records with a single action, the user would need to perform this operation 24 times in a span of 300 seconds to reach the service protection API limit.
 
 If your application provides this capability, you should consider some of the following strategies:
+
 - Decrease the total number of records that can be selected in a list. If the number of items displayed in a list is reduced to 50, the user would need to perform this operation 120 times within 300 seconds. The user would have to complete teh operation on each list within 2.5 seconds. 
 - Combine the selected operations into a batch. A batch can contain up to 5000 operations and will avoid the number of requests limit. However, you will need to be prepared for the execution time limit.
 
@@ -120,27 +108,26 @@ This limit tracks the number of concurrent requests for the user. The following 
 
 Client applications are not limited to sending requests individually in succession. The client may apply parallel programming patterns or various methods to send multiple requests simultaneously. If this number of concurrent requests is exceeded, the error is returned with the API response.
 
-Sending concurrent requests can be a key part of a strategy to maximize throughput, but don't overuse this strategy. When using [Parallel Programming in .NET](https://docs.microsoft.com/en-us/dotnet/standard/parallel-programming) the default degree of parallelism depends on the number of CPU cores on the server running the code. It should not exceed 52. The [ParallelOptions.MaxDegreeOfParallelism](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.paralleloptions.maxdegreeofparallelism) property can be set to define a maximum number of concurrent tasks.
-
+Sending concurrent requests can be a key part of a strategy to maximize throughput, but don't overuse this strategy. When using [Parallel Programming in .NET](/dotnet/standard/parallel-programming) the default degree of parallelism depends on the number of CPU cores on the server running the code. It should not exceed 52. The [ParallelOptions.MaxDegreeOfParallelism](/dotnet/api/system.threading.tasks.paralleloptions.maxdegreeofparallelism) property can be set to define a maximum number of concurrent tasks.
 
 ### Resource utilization threshold
 This limit tracks the cumulative utilization thresholds of server resources. The following error message is returned with the API response:
 
 ```This request could not be processed at this time due to system experiencing high resource utilization.```
 
-When this error is received it isn't necessarily an indication of any one user or integration causing the issue. This message indicates that the cumulative utilization of web server resources across all service integrations has exceeded a threshold that threatens the performance and availability of the service. When this occurs, general strategies for optimizing API integrations, like those outlined in [Maximizing API throughput](service-protection-maximizing-api-throughput) are useful. Also ensure you have defined the [throttling prioritization](priority-based-throttling) for your API integrations.
+When this error is received it isn't necessarily an indication of any one user or integration causing the issue. This message indicates that the cumulative utilization of web server resources across all service integrations has exceeded a threshold that threatens the performance and availability of the service. When this occurs, general strategies for optimizing API integrations, like those outlined in [Maximizing API throughput](service-protection-maximizing-api-throughput.md) are useful. Also ensure you have defined the [throttling prioritization](priority-based-throttling.md) for your API integrations.
 
 ## Exceptions to service protection limits
 The service protection API limits do not apply to some Microsoft services. The following services are currently exempt from the limits:
-- [Document Routing Agent (DRA)](../analytics/install-document-routing-agent)
-- [Warehouse Management mobile app (WHSMobile)](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/configure-app-field-names-priorities-warehouse)
-- [Retail Server API](../consume-retail-server-api)
-- [Office Integration](../office-integration/office-integration)
-- [Data Import/Export Framework (DIXF)](./data-import-export-job)
-- [Data Integrator](https://docs.microsoft.com/power-platform/admin/data-integrator)
-- [Dual-write](./dual-write/dual-write-overview)
-- [Power Platform virtual tables for Finance and Operations apps](../power-platform/virtual-entities-overview)
-- [Finance and Operations apps Connector](fin-ops-connector)
+- [Document Routing Agent (DRA)](../analytics/install-document-routing-agent.md)
+- [Warehouse Management mobile app (WHSMobile)](../../../supply-chain/warehousing/configure-app-field-names-priorities-warehouse.md)
+- [Retail Server API](../consume-retail-server-api.md)
+- [Office Integration](../office-integration/office-integration.md)
+- [Data Import/Export Framework (DIXF)](data-import-export-job.md)
+- [Data Integrator](/power-platform/admin/data-integrator)
+- [Dual-write](dual-write/dual-write-overview.md)
+- [Power Platform virtual tables for Finance and Operations apps](../power-platform/virtual-entities-overview.md)
+- [Finance and Operations apps Connector](fin-ops-connector.ms)
 
 Though these services are currently exempt from the limits, the services are prioritizing the implementation of the service protection limits. Notifications will be provided ahead of any changes, and the documentation will be updated when exemptions are removed for these services.
 
