@@ -4,7 +4,7 @@
 title: Set up Retail SDK build pipeline
 description: This topic shows how to set up the Azure DevOps build pipeline for the Retail SDK.
 author: mugunthanm 
-ms.date: 04/12/2022
+ms.date: 04/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
