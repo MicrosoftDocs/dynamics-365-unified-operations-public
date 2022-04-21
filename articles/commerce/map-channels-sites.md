@@ -33,11 +33,11 @@ This topic describes some of the more common channel mapping scenarios in Micros
 Dynamics 365 Commerce supports many business scenarios to map [online channels](#channels) with a configured set of products, prices, and discounts to [e-commerce site](#e-commerce-site) experiences for their customers.
 
 Scenarios covered in this topic include:
-- **A single language channel with a single e-commerce site experience.** For example, this could be a single brand site configured for the United States English market.
-- **A multilanguage channel with a single localized site experience.** For example, this could be a single brand site configured for Canada with French and English language support where users opting for either language get the same site experience localized into their language of choice.
-- **A multilanguage channel with different site experiences per language.** For example, this could be a single brand site configured for Canada with French and English language support where there are unique site experiences for each language.
-- **Multiple channels (with single and/or multiple languages) with a single localized site experience.** For example, this could be a single brand site configured for Australia and New Zealand, where both countries share the same site experience in English but each country is configured with different products, currency, prices, discounts, and shipping modes.
-- **Multiple channels (with single and/or multiple languages) with different site experiences per channel.** For example, this could be a single brand site configured for Australia, Canada, and Germany in multiple languages where each country has a unique site experience configured with different products, currency, prices, discounts, and shipping modes.
+- **A single language channel with a single e-commerce site experience.** For example, this scenario could be a single brand site configured for the United States English market.
+- **A multilanguage channel with a single localized site experience.** For example, this scenario could be a single brand site configured for Canada with French and English language support where users who opt for either language get the same site experience localized into their language of choice.
+- **A multilanguage channel with different site experiences per language.** For example, this scenario could be a single brand site configured for Canada with French and English language support where there are unique site experiences for each language.
+- **Multiple channels (with single and/or multiple languages) with a single localized site experience.** For example, this scenario could be a single brand site configured for Australia and New Zealand, where both countries share the same site experience in English but each country is configured with different products, currency, prices, discounts, and shipping modes.
+- **Multiple channels (with single and/or multiple languages) with different site experiences per channel.** For example, this scenario could be a single brand site configured for Australia, Canada, and Germany in multiple languages where each country has a unique site experience configured with different products, currency, prices, discounts, and shipping modes.
 
 ## Channels
 
