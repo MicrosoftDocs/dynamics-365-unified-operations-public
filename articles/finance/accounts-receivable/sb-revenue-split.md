@@ -2,9 +2,9 @@
 # required metadata
 
 title: Revenue split in Subscription billing
-description: This topic explains how to setup revenue split templates for items that are sold as bundles. The bundle contains a parent item and a child item sold together as one item to customers. 
+description: This topic explains how to setup revenue split templates for items that are sold as bundles. 
 author: JodiChristiansen
-ms.date: 11/04/2021
+ms.date: 04/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -26,11 +26,9 @@ ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
 
 ---
-# Revenue Split Template
+# Revenue split template
 
-Modules > Subscription billing > Recurring contract billing > Setup > Revenue split template
-
-Use this page to set up templates for the revenue split functionality that consists of a parent item with child items. This type of item is often sold as a single item or bundle to customers. 
+Use the **Revenue split template** page to set up templates for the revenue split. This consists of a parent item with child items. This type of item is often sold as a single item or bundle to customers. 
 
 When creating the parent item, keep the following restrictions in mind: 
 * An item can be specified as a parent item only once.
@@ -53,10 +51,9 @@ A computer item can be created as follows:
 
 ## Processes
 
-Create a parent item with child items: 
+In the **Revenue split template** page, create a parent item with child items: 
 1. Select **New**. 
-1. Select a **Parent item**.   
-The **Variant number** is automatically updated, which can be change as needed. 
+1. Select a **Parent item**. The **Variant number** is automatically updated, which can be change as needed. 
 1. Select **Allocation method**. 
 1. In the **Component items** list, select **Add** to add child items. 
    1. If **Allocation method** is **Percentage**,  specify the **Percentage**. 
@@ -66,14 +63,14 @@ The **Variant number** is automatically updated, which can be change as needed.
 
 ## Fields
 
-This page contains the following fields:
+The **Revenue splite template** page contains the following fields:
 
 
 | Field        | Description           |
 | :------------- |:-------------| 
 | **Parent item**     | Select an item number. <br />This item becomes the parent item for the bundle item that you create.  | 
 | **Product name**     | Displays the product name.       |  
-| **Allocation method**	  | Select the allocation method: <br />* **Equal Amount**: The allocation percentages are automatically calculated and equally split among the items within the template.<br />* **Percentage**: A percentage amount can be specified for the allocation. The sum of all percentages must equal 100. <br /> * **Variable Amount**: Child items are added with a zero (0) net amount. The price of the child items must be specified at the transaction level. <br /> * **Zero Amount**: The parent item retains its unit price and net amount. All child items have a zero (0) net amount.<br /> * **Zero parent amount**: The parent item has a fixed  zero (0) net amount. All child items are treated similar to standard items. Also, no validation is performed to verify that the sum of the child items equals the parent amount.       |    
+| **Allocation method**	  | Select the allocation method: <br />* **Equal Amount**: The allocation percentages are automatically calculated and equally split among the items within the template.<br />* **Percentage**: A percentage amount can be specified for the allocation. The sum of all percentages must equal 100. <br /> * **Variable Amount**: Child items are added with a zero (0) net amount. The price of the child items must be specified at the transaction level. <br /> * **Zero Amount**: The parent item retains its unit price and net amount. All child items have a zero (0) net amount.<br /> * **Zero parent amount**: The parent item has a fixed zero (0) net amount. All child items are treated similar to standard items. Also, no validation is performed to verify that the sum of the child items equals the parent amount.       |    
 | **Component items**     |  | 
 | **Component item**     | Select an item number. This item is a child item.       |  
 | **Variant number**	  | Select the variant number for the item.     |    
@@ -83,17 +80,20 @@ This page contains the following fields:
 ## Revenue split on a sales order
 
 To create a sales order that has an item setup with revenue split, follow these steps: 
-1. On the **Sales order** page, create a sales order with items. 
-1. For each item that is setup for revenue split, select the **Revenue split** check box for the line. This item becomes the parent item, and if the template is already set up, the child items automatically appear in the list. 
-1. To add more child items, select **Add revenue split child**, and select the child item you want to add. 
-1. Save the order and process it when you are ready. 
+1. On the **Sales order** page, create a sales order. 
+2. For each item that is set up for revenue split, select the **Revenue split** check box for the line. This item becomes the parent item, and if the template is already set up, the child items automatically appear in the list. 
+3. To add more child items, select **Add revenue split child**, and select the child item you want to add. 
+4. Save the order. 
 
 ## Revenue split with billing schedules
 
 To create a billing schedule that has an item that setup for revenue split, follow these steps: 
-1. Create a billing schedule using the on the **All/Active billing schedules** page. 
-1. For each item that is setup for revenue split, select the **Revenue split** check box for the line. This item becomes the parent item, and if the template is already set up, the child items automatically appear in the list. 
-1. To add more child items, click **Add revenue split child**, and select the child item you want to add. 
-1. Continue with the steps for working with the billing schedule. 
+1. On the **All/Active billing schedules** page, create a billing schedule. 
+2. For each item that is set up for revenue split, select the **Revenue split** check box for the line. This item becomes the parent item, and if the template is already set up, the child items automatically appear in the list. 
+3. To add more child items, click **Add revenue split child**, and select the child item you want to add. 
+4. Continue with the steps for working with the billing schedule. 
 
-**Note:** If **Automatically create revenue split** is set to **Yes** in **Recurring contract billing parameters** then the Revenue split checkbox will automatically be marked if the line item is setup as the parent item on a Revenue split template. The child items will default on the sales order or billing schedule line automatically. When set to **No** the behavior is as explained above.
+> [!Note]
+> If **Automatically create revenue split** is set to **Yes** in **Recurring contract billing parameters**:
+   - The **Revenue split** checkbox will automatically be marked if the line item is setup as the parent item on a **Revenue split** template. 
+   - The child items will default on the sales order or billing schedule line automatically. When set to **No**, the behavior is as explained above.
