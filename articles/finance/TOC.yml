@@ -432,8 +432,8 @@
             href: accounts-receivable/cpischedules.md
           - name: Terminate billing schedules
             href: accounts-receivable/terminate-billing-schedule.md
-           - name: Alignment date scenarios
-             href: accounts-receivable/sb-alignment-date-exmples.md
+          - name: Alignment date scenarios
+            href: accounts-receivable/sb-alignment-date-exmples.md
         - name: Revenue and expense deferrals
           items:
           - name: Set up revenue and expense deferrals
