@@ -4,7 +4,7 @@
 title: Deployment guidelines for cash registers for India
 description: This topic is a deployment guide for the Commerce localization for India.
 author: AlexChern0v
-ms.date: 04/12/2022
+ms.date: 04/21/2022
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -27,6 +27,7 @@ ms.dyn365.ops.version: 7.3.1
 # Deployment guidelines for cash registers for India
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 This topic is a deployment guide that shows how to enable the requirements for Goods and Services Tax (GST) in the Dynamics 365 Commerce app's localization for India. For more information about the localization for India, see [Goods and Services Tax (GST) integration for cash registers for India](./apac-ind-cash-registers.md).
 
