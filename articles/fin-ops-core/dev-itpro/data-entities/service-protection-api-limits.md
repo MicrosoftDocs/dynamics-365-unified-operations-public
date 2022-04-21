@@ -34,7 +34,7 @@ It is the responsibility of client applications to manage service protection API
 ### Interactive client applications
 The service protection limits are high enough that it should be rare for an individual using an interactive client application to encounter them during normal usage. However, it is possible if the client application allows for bulk operations. Client application developers should be aware of how service protection API limits are enforced and design the UI to reduce the potential for users to send extremely demanding requests to the server. But they should still expect that service protection API limit errors can occur and be prepared to handle them.
 
-Client application developers should not simply throw the error to display the message to the user. The error message is not intended for end users. See [Retry operations](service-protection-retry-operations) for specific strategies on managing a throttling response when API requests exceed the service protection limits.
+Client application developers should not simply throw the error to display the message to the user. The error message is not intended for end users. See [Retry operations](service-protection-retry-operations.md) for specific strategies on managing a throttling response when API requests exceed the service protection limits.
 
 ### Data integration applications
 Applications designed to load data into Finance and Operations apps or perform bulk data operations must also be able to manage service protection API limit errors. These applications must prioritize throughput so they can complete their work in the minimum amount of time. They must have a strategy to retry operations and achieve maximum throughput.
@@ -60,7 +60,7 @@ User-based service protection API limits are enforced based on three factors:
 - The combined execution time required to process requests sent by a user
 - The number of concurrent requests sent by a user
 
-Each web server available to your environment will enforce the service protection API limits independently. Most environments will have more than one web server. Trial environments are allocated only a single web server. The actual number of web servers that are avaiable to your environment depends on multiple factors that are part of the Finance and Operations managed service. One of the factors is how many user licenses you have purchased. See [Monitoring for API throttling](service-protection-monitoring) for information on utilization of web resources available in your environment.
+Each web server available to your environment will enforce the service protection API limits independently. Most environments will have more than one web server. Trial environments are allocated only a single web server. The actual number of web servers that are avaiable to your environment depends on multiple factors that are part of the Finance and Operations managed service. One of the factors is how many user licenses you have purchased. See [Monitoring for API throttling](service-protection-monitoring.md) for information on utilization of web resources available in your environment.
 
 The following table describes the default user-based service protection API limits enforced *per user per web server*.
 
@@ -121,13 +121,13 @@ When this error is received it isn't necessarily an indication of any one user o
 The service protection API limits do not apply to some Microsoft services. The following services are currently exempt from the limits:
 - [Document Routing Agent (DRA)](../analytics/install-document-routing-agent.md)
 - [Warehouse Management mobile app (WHSMobile)](../../../supply-chain/warehousing/configure-app-field-names-priorities-warehouse.md)
-- [Retail Server API](../consume-retail-server-api.md)
+- [Retail Server API](../../../commerce/dev-itpro/consume-retail-server-api.md)
 - [Office Integration](../office-integration/office-integration.md)
 - [Data Import/Export Framework (DIXF)](data-import-export-job.md)
 - [Data Integrator](/power-platform/admin/data-integrator)
 - [Dual-write](dual-write/dual-write-overview.md)
 - [Power Platform virtual tables for Finance and Operations apps](../power-platform/virtual-entities-overview.md)
-- [Finance and Operations apps Connector](fin-ops-connector.ms)
+- [Finance and Operations apps Connector](fin-ops-connector.md)
 
 Though these services are currently exempt from the limits, the services are prioritizing the implementation of the service protection limits. Notifications will be provided ahead of any changes, and the documentation will be updated when exemptions are removed for these services.
 
