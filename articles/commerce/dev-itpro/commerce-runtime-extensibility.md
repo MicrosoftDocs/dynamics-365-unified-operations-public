@@ -4,7 +4,7 @@
 title: Commerce runtime (CRT) extensibility
 description: This topic describes various ways that you can extend the commerce runtime (CRT) and Retail Server.
 author: mugunthanm
-ms.date: 03/16/2022
+ms.date: 04/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -37,7 +37,7 @@ CRT contains the core business logic. If you want to add or modify any business 
 
 Every CRT service consists of a group of one or more requests and responses. POS sends a request to Retail Server, and Retail Server calls CRT. CRT then processes the request and sends back the response.
 
-For example, the Product service in CRT contains all the product-related requests and responses, each of which is run in a different flow. Likewise, the Customer service in CRT contain all the customer-related requests and responses. The following table shows the requests in the Customer service.
+For example, the Product service in CRT contains all the product-related requests and responses, each of which is run in a different flow. Likewise, the Customer service in CRT contains all the customer-related requests and responses. The following table shows the requests in the Customer service.
 
 | Request                                      | Purpose                                                                          |
 |----------------------------------------------|----------------------------------------------------------------------------------|
@@ -59,7 +59,7 @@ For example, the Product service in CRT contains all the product-related request
 Before you learn about the CRT extension patterns, you should understand how a CRT extension can be created. CRT is just a collection of C# class libraries (.NET assemblies). You can create a class library project in C# and do all the CRT extension by using the patterns that are shown in the following subsections. Always use the samples that Microsoft provides as templates for your extension, because these samples have the correct assembly references, Microsoft .NET Framework version, output type, and build parameters. Additionally, all the other required parameters are preconfigured. You can find the CRT sample extension in the Retail software development kit (SDK), at …\\RetailSDK\\SampleExtensions\\CommerceRuntime.
 
 > [!NOTE]
-> As of version 10.0.16 of Finance and Operations apps, all class libraries for CRT extension projects must use .NET Standard 2.0 for the target framework.
+> As of version 10.0.26, all class libraries for CRT extension projects must use .NET 6 as the target framework.
 
 ### Create a new CRT service
 
@@ -89,7 +89,7 @@ For example, you can search for a **Product** using the out-of-box Azure Search 
 
 ### NotHandledResponse
 
-If in the the overridden handler, you want to run the base handler and return the base response instead of custom logic, then return **NotHandledResponse()**. If **NotHandledResponse** is returned, the CRT framework will run the out-of-box handler. **NotHandledResponse** can be used in scenarios where you want to run custom logic only on certain conditions (otherwise, run the base handler logic).
+If in the overridden handler, you want to run the base handler and return the base response instead of custom logic, then return **NotHandledResponse()**. If **NotHandledResponse** is returned, the CRT framework will run the out-of-box handler. **NotHandledResponse** can be used in scenarios where you want to run custom logic only on certain conditions (otherwise, run the base handler logic).
 
 ### CRT data service and data service with entities
 
@@ -128,7 +128,7 @@ For details about the attributes, see the following topics:
 
 ### Extend Commerce Data Exchange - Real-time Service classes
 
-You can do synchronous call from CRT to Commerce headquarters.
+You can do synchronous calls from CRT to Commerce headquarters.
 
 For information about how to extend Commerce Data Exchange - Real-time service, see [Extend Commerce Data Exchange - Real-time Service](extend-commerce-data-exchange.md).
 
