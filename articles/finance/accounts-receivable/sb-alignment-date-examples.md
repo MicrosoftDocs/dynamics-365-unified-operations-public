@@ -34,7 +34,7 @@ This topic provides examples that show how alignment dates work in Subscription 
 For these examples, a billing detail for a billing schedule has an alignment date of October 31, 2019. The first billing detail for the line ends on October 31, 2019 and is prorated accordingly. The line is automatically renewed by using a renewal start date of November 11.
 
 > [!NOTE]
-> The year is relevant because it can cause the alignment date to be shorter or longer than a year. For these examples, the proration method is set to **Monthly** on the **Recurring contract billing parameters** page. If it's set to **Daily**, some partial amounts will differ.
+> The year is relevant because it can cause the alignment date to be more or less than a year. For these examples, the proration method is set to **Monthly** on the **Recurring contract billing parameters** page. If it's set to **Daily**, some partial amounts will differ.
 
 ## Scenario 1: No alignment
 
