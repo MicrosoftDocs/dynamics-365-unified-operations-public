@@ -4,7 +4,7 @@
 title: One Version service updates FAQ
 description: This topic provides clarity on service updates, processes, and tools that you can use to stay current in a consistent, predictable, and seamless manner.
 author: ShellyBakke
-ms.date: 04/19/2022
+ms.date: 04/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -32,8 +32,8 @@ In July 2018 we announced a [change to the way we deliver Dynamics 365 updates](
 
 For more information about One Version service updates, see [One Version service updates overview](../../dev-itpro/lifecycle-services/oneversion-overview.md).
 
-### Can the update be delayed, what is the policy?
-Yes, the customer can pause, delay, or opt-out of an update via Update Settings in the Lifecycle Services projects provided that all of their sandboxes and Production environments are no more than three versions behind the latest available update.  A customer can choose to pause up to 3 consecutive updates. The following is an example of a delayed update: 
+### Can the update be delayed? What is the policy?
+Yes, the customer can pause, delay, or opt-out of an update via Update Settings in the Lifecycle Services projects provided that all of their sandbox and production environments are no more than three versions behind the latest available update.  A customer can choose to pause up to 3 consecutive updates. The following is an example of a delayed update: 
 - The customer is currently on version 10.0.22.
 - The customer can pause updates 10.0.23, 10.0.24, and 10.0.25.
 - The customer must take the 10.0.26 update when it is available.
@@ -53,7 +53,7 @@ Customers can always choose to apply the update at an earlier time, or if there'
 
 | Version       | Description |
 |---------------|-------------|
-| 8.1 and later | All customers on 8.1 and later will be scheduled for automatic monthly updates with a combined application and platform update starting November 2018. You will be required to be on an update that's no older than 4 months or 3 service updates. To pause an update, refer to [Pause service updates](../../dev-itpro/lifecycle-services/pause-service-updates.md). |
+| 8.1 and later | All customers on version 8.1 and later will be scheduled for automatic monthly updates. These updates will be combined application and platform updates. You will be required to be on an update that's no more than three updates behind the current update. To pause an update, refer to [Pause service updates](../../dev-itpro/lifecycle-services/pause-service-updates.md). |
 
 
 ### What does the service update contain?
@@ -66,11 +66,11 @@ A regulatory update is a new feature or an existing feature change required by l
 
 ### What's the upcoming schedule of updates?
 
-Service updates are available since November 2018. You have the option to apply the update when it's convenient for you, or let Microsoft auto-apply the service updates based on the selected maintenance window. You're required to have an update no older than 4 months.
+Service updates are available. You have the option to apply the update when it's convenient for you, or let Microsoft auto-apply the service updates based on the selected maintenance window. You are required to be on an update that's no more than three updates behind the current update.
 
 To see a targeted release schedule, see [Service update availability](public-preview-releases.md).
 
-### Are there any major updates post 8.1?
+### Are there any major updates post 8.1?ou will be required to be on an update that's no more than three updates behind the current update.
 
 There will be 2 major updates in April and October where new experiences can be enabled. Major updates won't require code or data upgrade. Breaking changes will be communicated 12 months in advance such that customers can plan accordingly. Such a change will only be introduced during a major update. The 10.0 release, which will be available in April 2019, will also be an update and not an upgrade.
 
