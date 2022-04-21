@@ -96,4 +96,4 @@ To create a billing schedule that has an item that setup for revenue split, foll
 1. To add more child items, click **Add revenue split child**, and select the child item you want to add. 
 1. Continue with the steps for working with the billing schedule. 
 
-**Note** If **Automatically create revenue split** is set to **Yes** in **Recurring contract billing parameters** then the Revenue split checkbox will automatically be marked if the line item is setup as the parent item on a Revenue split template. The child items will default on the sales order or billing schedule line automatically. When set to **No** the behavior is as explained above.
+**Note:** If **Automatically create revenue split** is set to **Yes** in **Recurring contract billing parameters** then the Revenue split checkbox will automatically be marked if the line item is setup as the parent item on a Revenue split template. The child items will default on the sales order or billing schedule line automatically. When set to **No** the behavior is as explained above.
