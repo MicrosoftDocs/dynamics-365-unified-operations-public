@@ -47,9 +47,46 @@ was initially published.
 | Feature name | Overview | Release status  |
 |----|----|----|
 |Recruit job candidates*|     |Preview     | 
+|Absence manager to manage leave	|This feature enables users to be assigned an absence manager role who can manage leave requests and balances across departments and teams.	|GA|
+|Balance adjustment reason code and comment (Leave)|	This feature allows human resources to include reason codes and comments when adjusting leave balances.|	GA|
+|Buy and sell leave	|This feature allows users to buy and sell leaves.|	GA|
+|Configure leave units per leave type**	|This feature enables administrators to configure leave units (hours or days) for each leave type. The leave types in that legal entity will be defaulted to the leave units from the leave parameters configuration at the legal entity level.	|GA|
+|Configure multiple leave types on a single leave plan**|	This feature allows for leave types to be defined per row in the leave accrual schedule instead of per plan.	|GA|
+|Configure required attachment for leave requests	|This feature enables admins to configure attachment to be required when submitting leave requests for specific leave types.	|GA|
+|Cross company leave view|	This feature gives employees and managers the ability to see their leave records across all legal entities in which they are employed.|	GA|
+|Leave accrual auditing|	This feature can be used to audit leave and absence accruals and deletions.|	GA|
+|Leave accrual deletion|	This feature can be used to delete Leave Accruals.	|GA|
+|Leave accrual for a single company or a single plan	|This feature allows processing leave accruals for a specific company or leave plan.|	GA|
+|Leave accrual holiday corrections	|This feature can be used to subtract holidays from balances when accruing time off.	|GA|
+|Leave accrual rounding	|This feature can be used to round prorated Leave Accruals.|	GA|
+|Leave accrual transaction auditing|	This feature can be used to audit leave and absence accrual transactions.	|GA|
+|Leave and absence accrual suspension|	This feature allows suspending a worker's leave accruals for a specified date range.|	GA|
+|Leave and absence calendar|	This feature allows users to see employee time off in a calendar view.	|GA|
+|Leave and absence calendar enhancements	|This feature allows users to see the leave and absence calendar enhancements.	|GA|
+|Leave balance view enhancements	|This feature provides more insight into leave balances so employees and managers can find answers themselves.|	GA|
+|Leave carry-forward rules	|This feature allows transferring carry-forward balance to another leave type and defining expiration rules for leave plan balance.|	GA|
+|Leave request workflow experience enhancements	|This feature enables a more intuitive leave request workflow experience for users.|	GA|
+|Update time off enhancements (Leave)	|This feature allows updating details of approved time off. It also adds a new page to view the time off requests that are associated with the time off for a particular calendar day.|	GA|
+|Use an employee's FTE for accruals (Leave)	|This feature allows an employee's position full time equivalency to be used when calculating a leave and absence accrual.|	GA|
+|Configure multiple compensation levels per job** 	|This feature allows for multiple compensation levels to be defined per job.|	GA|
 
 * Human resources user experience enhancements must be turned on in Feature management.
 * Recruiting process management must be turned on in Feature management.
+
+## Enabling Human resources user experience enhancements feature
+
+When using **Feature management** workspace to enable the Human resources capabilities as part of the infrastructure merge, the **Human resources user experience enhancements** (HRUX) feature must be enabled. 
+The following features are required to be enabled prior to enabling the HRUX feature: 
+ - Managers can view performance-related information for extended reports
+ - (Preview) Task management
+ - Future-dated worker transfer with cross company compensation
+ - Configure multiple compensation levels per job**
+ - Filter active positions
+ 
+ ** Feature cannot be turned off once it has been enabled. 
+
+## Leave Accrual Rounding
+This feature allows prorated rounding of leave accruals on enrollment or unenrollment. Previously, the feature only allowed rounding when a leave plan was set to prorate, and an employee was enrolled/unenrolled during mid-period. This is not updated to round regardless of enrollment/unenrollment at mid-period or at the start of a period. 
 
 
 ## Feature enhancements included in this release
@@ -68,7 +105,10 @@ Because they are only enhancements, they are not listed in the [release plan](/d
 
 | Issue summary | More information |
 |---------------|------------------|
-|Signing limits will not to work with multiple compensation levels|When the **Multiple compensation levels** feature is turned on, and the **Signing limit** parameter is set to **Compensation level**, the signing limits will not process. Issue #670843
+|Signing limits will not to work with multiple compensation levels|When the **Multiple compensation levels** feature is turned on, and the **Signing limit** parameter is set to **Compensation level**, the signing limits will not process. Issue #670843|
+|Wrong leave type being used to determine half day definition	|When there are multiple leave types with the same name for different company, the half-day definition is not correctly enabled. Issue #660494|
+|Main Account can’t be specified on the Earning code	|When the Human Resources user experience enhancement feature is turned on, the main account and the accounting tab for the earning code is not available. Issue #667727|
+
 
 ## Additional resources
 
