@@ -60,7 +60,7 @@ User-based service protection API limits are enforced based on three factors:
 - The combined execution time required to process requests sent by a user
 - The number of concurrent requests sent by a user
 
-Each web server available to your environment will enforce the service protection API limits independently. Most environments will have more than one web server. Trial environments are allocated only a single web server. The actual number of web servers that are avaiable to your environment depends on multiple factors that are part of the Finance and Operations managed service. One of the factors is how many user licenses you have purchased. See [Monitoring for API throttling](service-protection-monitoring.md) for information on utilization of web resources available in your environment.
+Each web server available to your environment will enforce the service protection API limits independently. Most environments will have more than one web server. Trial environments are allocated only a single web server. The actual number of web servers that are available to your environment depends on multiple factors that are part of the Finance and Operations managed service. One of the factors is how many user licenses you have purchased. See [Monitoring for API throttling](service-protection-monitoring.md) for information on utilization of web resources available in your environment.
 
 The following table describes the default user-based service protection API limits enforced *per user per web server*.
 
@@ -89,7 +89,7 @@ It is not expected that a typical user of an interactive application will be abl
 
 If your application provides this capability, you should consider some of the following strategies:
 
-- Decrease the total number of records that can be selected in a list. If the number of items displayed in a list is reduced to 50, the user would need to perform this operation 120 times within 300 seconds. The user would have to complete teh operation on each list within 2.5 seconds. 
+- Decrease the total number of records that can be selected in a list. If the number of items displayed in a list is reduced to 50, the user would need to perform this operation 120 times within 300 seconds. The user would have to complete the operation on each list within 2.5 seconds. 
 - Combine the selected operations into a batch. A batch can contain up to 5000 operations and will avoid the number of requests limit. However, you will need to be prepared for the execution time limit.
 
 ### Execution time
