@@ -69,6 +69,12 @@ was initially published.
 |Update time off enhancements (Leave)	|This feature allows updating details of approved time off. It also adds a new page to view the time off requests that are associated with the time off for a particular calendar day.|	GA|
 |Use an employee's FTE for accruals (Leave)	|This feature allows an employee's position full time equivalency to be used when calculating a leave and absence accrual.|	GA|
 |Configure multiple compensation levels per job** 	|This feature allows for multiple compensation levels to be defined per job.|	GA|
+|Human Resources user experience enhancements|	This feature brings enhancements to user experience flows across several Human Resources modules.|	GA|
+|Streamlined employee entry|	This feature allows for efficient entry of employee and employment data. You can quickly update work history information for past, active, and future employees and contractors along with more intuitive navigation options.	|GA|
+|Task management|	This feature provides the ability to create custom checklists and tasks for onboarding, offboarding and position changes for employees.|	GA|
+|Benefits management| 	This feature enables benefits management.|	GA|
+|Enable eligibility rules using custom fields in benefits management|	(Preview) This feature allows custom fields on the Worker, Job, Employment (and related tables) to be included in Eligibility Rules for Benefits Management.|	Preview|
+
 
 * Human resources user experience enhancements must be turned on in Feature management.
 * Recruiting process management must be turned on in Feature management.
@@ -83,10 +89,7 @@ The following features are required to be enabled prior to enabling the HRUX fea
  - Configure multiple compensation levels per job**
  - Filter active positions
  
- ** Feature cannot be turned off once it has been enabled. 
-
-## Leave Accrual Rounding
-This feature allows prorated rounding of leave accruals on enrollment or unenrollment. Previously, the feature only allowed rounding when a leave plan was set to prorate, and an employee was enrolled/unenrolled during mid-period. This is not updated to round regardless of enrollment/unenrollment at mid-period or at the start of a period. 
+** Feature cannot be turned off once it has been enabled. 
 
 
 ## Feature enhancements included in this release
@@ -98,6 +101,8 @@ Because they are only enhancements, they are not listed in the [release plan](/d
 |--------------|------------------|
 | Display tasks on default dashboard     |A new option has been added to view the task list on the default dashboard. The task management feature must be on for the option to display.           | 
 |  People search and people hub  | The **People** search and people hub are now available when the **Human Resources User Experience** switch is on. The user must have the **View the people hub workspace** privilege to see the **People hub**.  |
+|Display tasks on default dashboard|	A new option has been introduced to view the task list on the default dashboard. The task management feature must be on for the option to display.|
+|People search and people hub|	The people search and people hub are now available when the **Human resources user experience** switch is on. The user must have the **View the people hub workspace** privilege to see the **People hub**. |
 
 
 
@@ -108,7 +113,7 @@ Because they are only enhancements, they are not listed in the [release plan](/d
 |Signing limits will not to work with multiple compensation levels|When the **Multiple compensation levels** feature is turned on, and the **Signing limit** parameter is set to **Compensation level**, the signing limits will not process. Issue #670843|
 |Wrong leave type being used to determine half day definition	|When there are multiple leave types with the same name for different company, the half-day definition is not correctly enabled. Issue #660494|
 |Main Account can’t be specified on the Earning code	|When the Human Resources user experience enhancement feature is turned on, the main account and the accounting tab for the earning code is not available. Issue #667727|
-
+|Signing limits will not work with multiple compensation levels |When the **Multiple compensation levels** feature is turned on, and **Signing limit** parameters are set to the **Compensation level**, signing limits will not process. Issue #670843|
 
 ## Additional resources
 
