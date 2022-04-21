@@ -4,7 +4,7 @@
 title: Set up and deploy on-premises environments (Platform update 41 and later)
 description: This topic explains how to plan, set up, and deploy Microsoft Dynamics 365 Finance + Operations (on-premises) with Platform update 41 and later.
 author: faix
-ms.date: 04/05/2022
+ms.date: 04/21/2022
 ms.topic: article
 ms.prod: dynamics-365 
 ms.service:
@@ -220,7 +220,7 @@ The following table shows the prerequisite software that is installed on the VMs
 | AOS       | SNAC – ODBC driver 17.5.x | [ODBC driver 17.5.2](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#1752) |
 | AOS       | The Microsoft .NET Framework version 2.0–3.5 (CLR 2.0) | **Windows features:** NET-Framework-Features, NET-Framework-Core, NET-HTTP-Activation, NET-Non-HTTP-Activ |
 | AOS       | The Microsoft .NET Framework version 4.0–4.6 (CLR 4.0) | **Windows features:** NET-Framework-45-Features, NET-Framework-45-Core, NET-Framework-45-ASPNET, NET-WCF-Services45, NET-WCF-TCP-PortSharing45 |
-| AOS       | The Microsoft .NET Framework version 4.7.2 (CLR 4.0) | https://dotnet.microsoft.com/download/thank-you/net472-offline |
+| AOS       | The Microsoft .NET Framework version 4.7.2 (CLR 4.0) | https://go.microsoft.com/fwlink/?LinkID=863265 |
 | AOS       | Microsoft Internet Information Services (IIS) | **Windows features:** WAS, WAS-Process-Model, WAS-NET-Environment, WAS-Config-APIs, Web-Server, Web-WebServer, Web-Security, Web-Filtering, Web-App-Dev, Web-Net-Ext, Web-Mgmt-Tools, Web-Mgmt-Console |
 | AOS       | SQL Server Management Studio 17.9.1 | [SSMS 17.9.1](/sql/ssms/release-notes-ssms#1791) |
 | AOS       | Microsoft Visual C++ Redistributable Packages for Microsoft Visual Studio 2013 | <https://support.microsoft.com/help/3179560> |
@@ -228,13 +228,13 @@ The following table shows the prerequisite software that is installed on the VMs
 | AOS       | Microsoft Access Database Engine 2010 Redistributable | <https://www.microsoft.com/download/details.aspx?id=13255> |
 | BI        | The .NET Framework version 2.0–3.5 (CLR 2.0) | **Windows features:** NET-Framework-Features, NET-Framework-Core, NET-HTTP-Activation, NET-Non-HTTP-Activ |
 | BI        | The .NET Framework version 4.0–4.6 (CLR 4.0) | **Windows features:** NET-Framework-45-Features, NET-Framework-45-Core, NET-Framework-45-ASPNET, NET-WCF-Services45, NET-WCF-TCP-PortSharing45 |
-| BI        | The .NET Framework version 4.7.2 (CLR 4.0) | https://dotnet.microsoft.com/download/thank-you/net472-offline |
+| BI        | The .NET Framework version 4.7.2 (CLR 4.0) | https://go.microsoft.com/fwlink/?LinkID=863265 |
 | BI        | SQL Server Management Studio 17.9.1 | [SSMS 17.9.1](/sql/ssms/release-notes-ssms#1791) |
 | MR        | The .NET Framework version 2.0–3.5 (CLR 2.0) | **Windows features:** NET-Framework-Features, NET-Framework-Core, NET-HTTP-Activation, NET-Non-HTTP-Activ |
 | MR        | The .NET Framework version 4.0–4.6 (CLR 4.0) | **Windows features:** NET-Framework-45-Features, NET-Framework-45-Core, NET-Framework-45-ASPNET, NET-WCF-Services45, NET-WCF-TCP-PortSharing45 |
-| MR        | The .NET Framework version 4.7.2 (CLR 4.0) | https://dotnet.microsoft.com/download/thank-you/net472-offline |
+| MR        | The .NET Framework version 4.7.2 (CLR 4.0) | https://go.microsoft.com/fwlink/?LinkID=863265 |
 | MR        | Visual C++ Redistributable Packages for Visual Studio 2013 | <https://support.microsoft.com/help/3179560> |
-| ORCH      | The Microsoft .NET Framework version 4.0–4.8 (CLR 4.0) | <https://dotnet.microsoft.com/download/thank-you/net48-offline> |
+| ORCH      | The Microsoft .NET Framework version 4.0–4.8 (CLR 4.0) | https://go.microsoft.com/fwlink/?linkid=2088631 |
 
 ### <a name="plandomain"></a>Step 1. Plan your domain name and DNS zones
 

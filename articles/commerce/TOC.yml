@@ -390,7 +390,7 @@
             href: dev-itpro/store-commerce.md
           - name: Device management implementation guidance
             href: implementation-considerations-devices.md
-          - name: Choose between MPOS and Cloud POS
+          - name: Choose between Store Commerce and Cloud POS
             href: MPOS-or-CPOS.md
           - name: Online and offline POS operations
             href: pos-operations.md
@@ -2470,6 +2470,10 @@
             href: dev-itpro/extension-resource-localization.md
       - name: Headless Commerce
         items:
+        - name: Overview
+          items:
+          - name: Introduction to Commerce Scale Unit (CSU) Core
+            href: dev-itpro/CSU-core.md
         - name: APIs and reference
           items:
           - name: Commerce Scale Unit customer and consumer APIs
@@ -2524,6 +2528,8 @@
             href: dev-itpro/extensions-shipping-carrier-integration.md
         - name: Packaging and deployment
           items:
+          - name: Create a Cloud Scale Unit extension package
+            href: dev-itpro/CSU-packaging.md
           - name: Remove Cloud Scale Unit extensions
             href: dev-itpro/retail-sdk/remove-csu-package.md
       - name: Store Commerce
@@ -2536,6 +2542,8 @@
             href: dev-itpro/pos-extension/pos-extension-basics.md
           - name: Migrate POS Extensions to the Commerce SDK
             href: dev-itpro/pos-extension/migrate-pos-extension.md
+          - name: Debug Store Commerce extensions using VS Code
+            href: dev-itpro/sc-debug.md
         - name: Environment setup
           items:
           - name: Local development environment
@@ -2610,6 +2618,8 @@
             href: dev-itpro/pos-extension/mpos-extension-signing.md 
           - name: Create a Cloud POS extension package
             href: dev-itpro/pos-extension/cpos-extension-package.md
+          - name: Create a Store Commerce extension installer package
+            href: dev-itpro/store-comm-extension-installer.md
       - name: E-commerce
         items:
         - name: Overview
@@ -2810,8 +2820,12 @@
             items:
             - name: Telemetry logger
               href: e-commerce-extensibility/telemetry-logger.md
-      - name: Commerce HQ
+      - name: Commerce headquarters
         items:
+        - name: CDX package extension
+          items:       
+          - name: Extend customer CDX package to add custom data
+            href: dev-itpro/extend-customer-CDX-package.md
         - name: Packaging and deployment
           items:
           - name: Create Commerce payment packaging for Finance and Operations deployment
