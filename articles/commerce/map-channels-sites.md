@@ -50,11 +50,9 @@ The following example illustration from Commerce headquarters shows the default 
 
 ![Default demo data channels in Commerce headquarters](media/channel-mapping-1.png)
 
-## E-commerce site
+## E-commerce sites
 
-An e-commerce site contains a set of site pages that customers use to browse and shop. E-commerce sites are managed from within Commerce site builder, as shown in the following example illustration.  
-
-![Site builder e-commerce site list](media/channel-mapping-2.png)
+An e-commerce site contains a set of site pages that customers use to browse and shop. E-commerce sites are managed from within Commerce site builder. 
 
 To learn more about how to create and manage sites from within site builder, see [E-commerce site overview](online-store-overview.md).
 
@@ -77,10 +75,6 @@ The single online channel can be mapped to a single e-commerce site within site 
 In this scenario, a single channel supports more than one language which allows for the localization of product names, descriptions, and attributes in headquarters. Marketing content on the site can also be localized within site builder to provide a complete localized site experience.  
 
 The limitation of this scenario is that a single channel can only be configured with one currency, one legal entity, and one set of products and prices. This configuration works best for countries with a single currency and multiple languages, for example Canada with English and French languages, a single legal entity, and a single set of products and prices.
-
-The following example illustration shows the Adventure Works online channel configured with multiple languages. 
-
-![Multiple languages configured for a single online channel in Commerce headquarters](media/channel-mapping-9.png)
 
 Different languages within a channel can be configured with their own domain names, for example `www.adventure-works.ca` for the Canada English version and `www.adventure-works-fr.ca` for the Canada French version. Alternatively, different languages within a channel can be configured within a single domain using different paths for each language, for example `www.adventure-works.ca` for the Canada English version and `www.adventure-works.ca/fr` for the Canada French version. [Geo detection](geo-detection-redirection.md) can also be enabled to automatically redirect a user to the correct site based on the user's location.
 
@@ -128,13 +122,9 @@ For more information, see [Create an e-commerce site](create-ecommerce-site.md).
 
 Instead of creating a new site as shown above that will start out as an empty site without any site pages (for example, home page, category pages, product pages), a better practice is to start out with a copy of one of the starter sites such as Fabrikam or Adventure Works that are provided in the Commerce module library. 
 
-To copy an existing site, in site builder go to the **Sites** list page and then select **Copy site**, which will bring up the **Copy site** dialog box where you can pick the source site and the destination site name as shown in the following example illustration.  
+To copy an existing site, in site builder go to the **Sites** list page and then select **Copy site**, which will bring up the **Copy site** dialog box where you can pick the source site and the destination site name.  
 
-![Site copy operation in site builder](media/channel-mapping-5.png)
-
-At this point you aren't able to select the default online channel and language for the site yet, but you can configure these properties once the site copy operation has completed. When you first select the site on the **Sites** list page in site builder, the **Setup your site** dialog box will appear where the default channel and language can be selected, as shown in the following example illustration.
-
-![Initialize site in site builder](media/channel-mapping-6.png)
+At this point you aren't able to select the default online channel and language for the site yet, but you can configure these properties once the site copy operation has completed. When you first select the site on the **Sites** list page in site builder, the **Setup your site** dialog box will appear where the default channel and language can be selected.
 
 For more information about the site copy operation, see [Copy an e-commerce site](copy-ecommerce-site.md).
 
@@ -158,15 +148,11 @@ Alternatively, a different domain name could be used for each site (for example,
 
 ## Configure multiple languages on a site
 
-Languages can be configured for the e-commerce site within site builder under **Site settings \> Channels**. In the following example illustration, each language has been configured with the locale for the path giving each language a unique URL.
+Languages can be configured for the e-commerce site within site builder under **Site settings \> Channels**. In the following example illustration, each language has been configured using the locale for the path, giving each language a unique URL.
 
 ![Multiple languages configured on a site](media/channel-mapping-10.png)
 
 To add a new channel language, go to **Site settings \> Channels** and select the channel link. In the pane that appears on the right, select **Add a locale** to select the channel and locale you want to add and specify the path to use for that channel.
-
-In the following example illustration, the **Adventure Works online store (default)** channel link and **Add a locale** are highlighted.
-
-![Add languages to a site](media/channel-mapping-11.png)
 
 ### Add and configure the site picker module
 
@@ -178,11 +164,11 @@ For more information on adding and configuring the site picker module, see [Site
 
 In this scenario there is only one channel but multiple languages. You can change how a page appears based on the selected language by creating a page variant for it. 
 
-In site builder, when you select the link at the top right that shows the current channel and language, a channel and language picker appears. If you want to override a page for this language, select another locale and then select **Change**. You will then be prompted to create a variant of the page if one does not exist, or if one does exist you will see the variant and can now make edits to that variant. 
+In site builder, when you have a page open and select the link at the top right that shows the current channel and language, a channel and language picker appears. If you want to override a page for this language, select another locale and then select **Change**. You will then be prompted to create a variant of the page if one does not exist, or if one does exist you will see the variant and can now make edits to that variant. 
 
 If no variant is created, the original page will render and show the appropriate language for module strings and product information pulled from headquarters. However, if text such as a page title or other marketing content has been specified directly in default page modules, those strings will remain in the original language, creating a page variant will allow you to add localized content. 
 
-Pages can also be exported as xliff files to be localized and the variants can then be imported.
+Pages can also be exported as XML Localization Interchange File Format (XLIFF) files to be sent off for localization and then imported as localized page variants.
 
 ![Change language for a page in site builder](media/channel-mapping-14.png)
 
@@ -200,13 +186,11 @@ You will see a warning message if the variant for the selected page or fragment 
 
 An alternative to manually creating each page and fragment is to export each page and fragment to an XLIFF file that can be sent off for localization and then reimported once it's translated. To see these options on a page or fragment, select **Localization** as shown in the following example illustration.
 
-![Import and export a page or fragment to xliff format](media/channel-mapping-18.png)
+![Import and export a page or fragment to XLIFF format](media/channel-mapping-18.png)
 
 ## Configure multiple channels on an e-commerce site
 
-Adding additional channels to an e-commerce site can be done in site builder by selecting **Add a channel** at **Site settings \> Channels**, as shown in the following example illustration. The **Add a channel** dialog will appear where you can select the online channel and default locale.  
-
-![Add a channel to an existing site](media/channel-mapping-15.png)
+Adding additional channels to an e-commerce site can be done in site builder by selecting **Add a channel** at **Site settings \> Channels**. The **Add a channel** dialog will then appear where you can select the online channel and default locale.  
 
 ## Additional resources
 
