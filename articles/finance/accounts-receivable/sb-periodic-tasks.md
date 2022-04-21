@@ -107,3 +107,52 @@ When you return to the list of billing schedules, you can see the status of the 
 **Note:** To remove a hold you must setup the **Remove hold user group override** in **Recurring contract billing parameters**. 
 
 For example, a billing line has a start date of February 1, 2022 and an end date of February 28, 2022 with a billing amount of $200. The **Hold date** is February 10, 2022 which means the February period is adjusted to exclude any date after February 10, inclusive. The new period is February 1, 2022 - February 9, 2022 with an amount of $64.29 (daily proration). All billing schedule lines after and including February 10, 2022 are removed. If the Remove hold process is then done with a **Remove date** of February 10, 2022 there are two billing periods now. The first billing period is Feb 1-Feb 9 for 64.29. The second is Feb 10-Feb 28 for $135.71.
+
+## Mass termination processing
+
+Use this page to terminate currently-displayed billing schedule lines using a specified termination date. 
+
+If yuou are using Revenue and expense deferrals, billing schedules that have ther **Termination date** set to **Adjust schedule** on the **All billing schedules** page are eligible for a refund. 
+
+Billing schedules that us the multiple element allocation functionality in Multiple element revenue allocation do not appear on this page. However, you can still terminate an individual billing schedule using the termination functionality on the billing schedule. 
+
+**Note:** Billing schedule lines that are currently included in a Generate invoice batch are not availble for this process. 
+
+See Terminate billing schedules for specific information on each field and the process. 
+
+## Mass archive process
+
+Use this page to archive multiple billing schedules. Only terminated billing schedules can be archived. After a billing schedule has been archived the following occurs. 
+- The status is changed to **Archived**.
+- The billing schedules are permanently locked.
+- The billing schedule lines are not available in the inquiry pages.
+
+**Note:** Archiving a billing schedule is a permanent action and cannot be reversed. 
+
+To archive billing schedules, follow these steps:
+1. Specify the **Billing end date**. To see all terminated billing schedules, leave this date empty.
+2. Expand the **Records to include** fastTab and use the **Filter** button to further restrict the records that appear after selecting **View preview**.
+3. Mark any records you do not want to archive and select **Remove**. 
+4. Select **OK** to archive the records on the page.
+
+## Mass stubbing process
+
+Use this page to mark all selected billing schedule lines as billed (stub) or unbilled (reverse stub). Stubbing or reverse stubbing is most often performed on imported billing schedule lines that were previously billed in another system. Stubbed billing schedule lines will show as stubbed and will not create an invoice for the customer. 
+
+### Stub records
+1. In **Process options** select **Stub**.
+2. Specify the **Cutoff date**, which displays the lines to which you want to apply the process. Only records that have a billing start date that is earlier than or the same as the cutoff date specified will show.
+3. Select **View preview** to display the lines you want to stub. 
+4. Mark a line and select **Remove** button to exclude that line from the process. 
+5. Select **Process** to stub the lines. 
+
+### Reverse stub records
+1. In **Process options** select **Reverse stub**.
+2. Specify the **Cutoff date**, which displays the lines to which you want to apply the process. Only records that have a billing start date that is earlier than or the same as the cutoff date specified will show.
+3. Select **View preview** to display the lines you want to reverse stub. 
+4. Mark a line and select **Remove** button to exclude that line from the process. 
+5. Select **Process** to reverse stub the lines. 
+
+## Update completion date process
+
+Use this page to update the completion date for specific milestone items for multiple billing schedules or customers. You can also update the completion percentage for items on milestone templates. 
