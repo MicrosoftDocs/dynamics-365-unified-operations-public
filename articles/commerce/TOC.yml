@@ -2529,7 +2529,7 @@
         - name: Packaging and deployment
           items:
           - name: Create a Cloud Scale Unit extension package
-            item: dev-itpro/CSU-packaging.md
+            href: dev-itpro/CSU-packaging.md
           - name: Remove Cloud Scale Unit extensions
             href: dev-itpro/retail-sdk/remove-csu-package.md
       - name: Store Commerce
