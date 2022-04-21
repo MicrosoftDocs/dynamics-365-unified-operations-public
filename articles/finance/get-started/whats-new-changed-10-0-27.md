@@ -46,6 +46,7 @@ The following table lists the features that are included in this release. We mig
 | Feature area | Feature | More information | Enabled by  |
 |----|----|----|----|
 | Accounts receivable | Deletion of orphaned pro forma invoice records | In the case of system interruption during the sales pro forma invoice process, a pro forma invoice can be orphaned. You can delete orphaned customer pro forma invoices by running the **Delete pro forma invoices manually** periodic job. To perform the task, go to **Sales and marketing** > **Periodic tasks** > **Clean up** > **Delete pro forma invoices manually**. | Default |
+| Cash and bank management | Reverse correction amount in advanced bank reconciliation | You can use this feature to reverse a reconciled bank reconciliation or cancel a reconciliation relation on a bank statement line with a correction amount. | Feature management |
 | Credit and collections  | Customer aging data storage  | This feature provides a new way to execute the customer aging data storage in cases where the existing Customer aging report times out because the report has too much data to print. After completion of the customer aging data storage the data can be exported to an external system.  | Feature management  | 
 | Credit and collections   | Customer aging performance  | The feature speeds up the process of aging customer accounts with many transactions by using top picking instead of bundling. Customer pools can be used with this performance enhancement. This feature can be used with or without the existing Customer aging performance enhancement enabled.  | Feature management   | 
 | Credit and collections  | Customer aging report option for Update collection status   |  The feature allows users to run the customer aging report without updating the collection status or creating collection tasks for the user running the report. Update collection status is the new parameter added to the Customer aging report.  | Parameter   |
@@ -61,8 +62,8 @@ The following table lists the feature enhancements included in this release. Eac
 
 | Feature area | Feature name | More information |  
 |--------------|--------------|------------------|
-| Import order | (India) Charge allocation on the Bill of the Entry page  |  Actual charge allocation is required on import order for each item line to determine the “customs assessable value” at the time of submission to Bill of Entry to customs authorities. This new feature will enable the Bill of entry form to edit and allocate actual charge amounts. For example, freight and insurance, on the item lines and deliver auto-computed assessable value. The new functionality becomes available as a new item on the **Feature Management** page.       | 
-|              |              |                  |
+| Cash and bank management | Allow recovery of bank reconciliation worksheets stuck in workflow  | With this enhancement, you can reset the status of bank reconciliation worksheets that are stuck in workflow. You can check the workflow history to locate the line where the **Bank reconciliation journal** is marked as **Unrecoverable**. Select the line and on the Action Pane, select **Reset**. The system will reset the bank reconciliation workflow so that you can resubmit the worksheet.      | 
+
 
 ## Additional resources
 
