@@ -1,5 +1,5 @@
 ---
-title: Preview of Dynamics 365 Supply Chain Management 10.0.27 (June 2022)
+title: Preview of Dynamics 365 Supply Chain Management 10.0.27 (July 2022)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.27. 
 author: kamaybac
 ms.date: 04/22/2022
@@ -13,16 +13,16 @@ ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.27
 ---
 
-# Preview of Dynamics 365 Supply Chain Management 10.0.27 (June 2022)
+# Preview of Dynamics 365 Supply Chain Management 10.0.27 (July 2022)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management preview version 10.0.27. This version has a build number of 10.0.1192<!-- KFM: Update build number --> and is available on the following schedule:
+This topic lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management preview version 10.0.27. This version has a build number of 10.0.1227 and is available on the following schedule:
 
 - **Preview of release:** April 2022
-- **General availability of release (self-update):** May 2022
-- **General availability of release (auto-update):** June 2022
+- **General availability of release (self-update):** June 2022
+- **General availability of release (auto-update):** July 2022
 
 ## Features included in this release
 
@@ -70,7 +70,7 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.27 includes platform updates
 
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of 10.0.27, sign in to Lifecycle Services (LCS) and view the [KB article](#x).<!-- KFM: Update link -->
+For information about the bug fixes included in each of the updates that are part of 10.0.27, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=673271).
 
 ### Dynamics 365 and industry clouds: 2022 release wave 1 plan
 
