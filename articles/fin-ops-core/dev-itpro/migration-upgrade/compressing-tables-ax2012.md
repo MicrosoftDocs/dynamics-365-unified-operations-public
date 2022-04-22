@@ -7,7 +7,7 @@ author: ttreen
 ms.date: 04/22/2022
 ms.topic: article
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: ttreen
 ms.search.validFrom: 
