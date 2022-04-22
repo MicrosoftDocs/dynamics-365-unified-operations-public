@@ -68,7 +68,7 @@ To embed the above link, create a fragment in site builder based off the [Metata
 
 ### Inline script
 
-The inline script provided by Customer Voice needs to be embedded as an inline script. The below is just a sample and note the **SURVEY_KEY** should match the one provided by Customer Voice.  Also notice the last line which calls the code to render the survey button after 1 second (to ensure time is given for the scripts to be loaded).  You may also need to add other meta data such as company name if needed, this will be dependent on if your survey requires it.  
+The inline script provided by Customer Voice needs to be embedded as an inline script. The below is just a sample and note the **SURVEY_KEY** should match the one provided by Customer Voice.  Also notice the last line which calls the code to render the survey button after 1 second to ensure time is given for the scripts to be loaded.  You may also need to add other meta data such as company name if needed, this will be dependent on if your survey requires it.  
 
 ```html
 function renderSurveyButton() {
