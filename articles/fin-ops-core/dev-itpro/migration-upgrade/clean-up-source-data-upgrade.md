@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Clean-up preparation for upgrade from Microsoft Dynamics AX 2012 to Microsoft Dynamics 365 Finance + Operations
+title: Clean up source data for upgrade from Microsoft Dynamics AX 2012 to Microsoft Dynamics 365 Finance + Operations
 description: This topic describes how to clean up source data as part of an upgrade from Microsoft Dynamics AX 2012 to Microsoft Dynamics 365 Finance + Operations.
 author: ttreen 
 ms.date: 04/22/2022
@@ -15,7 +15,7 @@ ms.search.form: 2022-04-08
 
 ---
 
-# Clean-up preparation for upgrade from Microsoft Dynamics AX 2012 to Microsoft Dynamics 365 Finance + Operations
+# Clean up source data for upgrade from Microsoft Dynamics AX 2012 to Microsoft Dynamics 365 Finance + Operations
 
 [!include [banner](../includes/banner.md)]
 
