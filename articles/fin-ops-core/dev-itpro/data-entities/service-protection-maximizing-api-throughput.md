@@ -39,11 +39,11 @@ When you have an application that must prioritize throughput to move the most da
 
 Don't try to calculate how many requests to send at a time. Each environment can be different. Gradually increase the rate you send requests until you begin to hit limits and then depend on the service protection API limit Retry-After interval value to tell you when to send more. This value will keep your total throughput at the highest possible level. 
 
-For more information, see [Retry operations](service-protection-retry-operations).
+For more information, see [Retry operations](service-protection-retry-operations.md).
 
 ## Use multiple threads
 
-The higher limit on the number of concurrent threads is something your application can use to have significant improvement in performance. This is true if your individual operations are relatively quick. Depending on the nature of the data you are processing, you may need to adjust the number of threads ot get optimum throughput.
+The higher limit on the number of concurrent threads is something your application can use to have significant improvement in performance. This is true if your individual operations are relatively quick. Depending on the nature of the data you are processing, you may need to adjust the number of threads to get optimum throughput.
 
 ## Distribute workloads across multiple service principals
 
@@ -53,7 +53,7 @@ User-based service protection API limits are implemented on a per-user basis. If
 
 *Batching* refers to sending multiple operations in a single request. Most scenarios will be fastest sending single requests with a high degree of parallelism. If you feel batch size might improve performance, it is best to start with a small batch size and increase concurrency until you start getting service protection API limit errors indicating the need to retry the operation. Batch size in Finance + Operations apps is limited to 5000 operations.
 
-For more information on batch requests with Finance + Operations service endpoints, see [Batch requests](./odata#batch-requests).
+For more information on batch requests with Finance + Operations service endpoints, see [Batch requests](../data-entities/odata#batch-requests).
 
 ## Remove the affinity cookie
 
