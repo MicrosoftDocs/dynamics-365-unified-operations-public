@@ -49,14 +49,19 @@ The external script block needs to be embedded on any pages that will have a Cus
 <script src=https://mfpembedcdnmsit.azureedge.net/mfpembedcontmsit/Embed.js type="text/javascript"></script>
 ```
 
-To embed the above external script, create a fragment in site builder based off the “External script” module then add the URL to the “Script source” configuration as shown below:
+To embed the above external script, create a fragment in site builder based off the [External script](script-module.md) module then add the URL to the **Script source** configuration as shown in the below image.
+
+![External script fragment](media/customer-voice-integration-2.png)
 
 
 ### External style sheet
 
-2.	The external stylesheet needs to be embedded on any pages that will have a survey. The best way is to create a fragment and ensure the fragment is added to the appropriate page template(s). The stylesheet link looks like this:
+The external stylesheet needs to be embedded on any pages that will have a survey. The best way is to create a fragment and ensure the fragment is added to the appropriate page template(s). The stylesheet link looks like this:
 
+```html
 <link rel="stylesheet" type="text/css" href=https://mfpembedcdnmsit.azureedge.net/mfpembedcontmsit/Embed.css />
+```
 
 To embed the above link, create a fragment in site builder based off the “Metatags” module and paste the link into the “Meta Tags” configuration field as shown below:
 
+![External script fragment](media/customer-voice-integration-3.png)
