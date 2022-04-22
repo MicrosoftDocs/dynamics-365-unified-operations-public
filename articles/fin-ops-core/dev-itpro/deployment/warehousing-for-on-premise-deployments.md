@@ -111,7 +111,7 @@ You can import connection settings from either a file or a QR code. For both app
 |----------------------------|-------------|
 | ConnectionName             | Specify the name of the connection setting. The maximum length is 20 characters. Because this value is the unique identifier for a connection setting, make sure that it's unique in the list. If a connection that has the same name already exists on the device, it will be overridden by the settings from the imported file. |
 | ActiveDirectoryClientAppId | Specify the client ID that you made a note of while you were setting up the AD FS application. |  
-| ActiveDirectoryResource    | Specify the root URL of Finance + Operation (on-premises). | 
+| ActiveDirectoryResource    | Specify the root URL of Finance + Operation (on-premises). **Note**: Be sure to include '/namespaces/AXSF' | 
 | ActiveDirectoryTenant      | Specify the oauth2 endpoint of your AD FS server. This value has the form https://your-adfs-server/adfs/oauth2. Here is an example: https://adfs.contoso.com/adfs/oauth2. | 
 | Company                    | Specify the legal entity in Finance + Operation (on-premises) that you want the application to connect to. | 
 | ConnectionType             | (Optional) Specify whether the connection setting should use a certificate or a client secret to connect to an environment. Valid values are "certificate" and "clientsecret". The default value is "certificate" **Note**: Client secrets can't be imported. |
@@ -127,7 +127,7 @@ The following example shows a valid connection settings file that contains two c
         {
             "ActiveDirectoryClientAppId":"aaaaaaaa-bbbb-ccccc-dddd-eeeeeeeeeeee",
             "ConnectionName": "Connection1",
-            "ActiveDirectoryResource": "https://ax.d365ffo.onprem.contoso.com",
+            "ActiveDirectoryResource": "https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF",
             "ActiveDirectoryTenant": "https://adfs.d365ffo.onprem.contoso.com/adfs/oauth2",
             "Company": "USMF",
             "IsEditable": false,
@@ -138,7 +138,7 @@ The following example shows a valid connection settings file that contains two c
         {
             "ActiveDirectoryClientAppId":"aaaaaaaa-bbbb-ccccc-dddd-eeeeeeeeeeee",
             "ConnectionName": "Connection2",
-            "ActiveDirectoryResource": "https://ax2.d365ffo.onprem.contoso.com",
+            "ActiveDirectoryResource": "https://ax2.d365ffo.onprem.contoso.com/namespaces/AXSF",
             "ActiveDirectoryTenant": "https://adfs2.d365ffo.onprem.contoso.com/adfs/oauth2",
             "Company": "USMF",
             "IsEditable": true,
