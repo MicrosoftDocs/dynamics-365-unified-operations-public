@@ -352,6 +352,8 @@
               href: tax-exempt-price-inclusive.md
             - name: Configure sales tax for online orders
               href: sales-tax-config.md
+            - name: Hide tax breakup information in order summaries
+              href: hide-taxes-breakup.md
           - name: Set up an email notification profile 
             href: email-notification-profiles.md
           - name: Number sequences 
