@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-[Customer Voice](https://dynamics.microsoft.com/customer-voice/overview/) can be used to collect, analyze and track real-time feedback within your e-commerce web site.  This topic will cover the steps needed to integrate the service into Dynamics 365 Commerce e-commerce platform.
+[Customer Voice](https://dynamics.microsoft.com/customer-voice/overview/) can be used to collect, analyze and track real-time feedback within your e-commerce web site.  This topic will cover the steps needed to integrate the service into the Dynamics 365 Commerce e-commerce platform.
 
 As a pre-requisite you will require an account within Dynamics 365 Customer Voice and have created the desired survey. 
 
