@@ -111,7 +111,3 @@ To fix these errors, from within site builder, select the **Extensions** tab on 
 Below shows where to add some of these:
 
 ![Inline script fragment](media/customer-voice-integration-6.png)
-
-* 
-
-![Inline script fragment](media/customer-voice-integration-5.png)
