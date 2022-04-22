@@ -4,7 +4,7 @@
 title: Service description for Finance and Operations apps
 description: This topic provides the service description for Finance and Operations apps.
 author: tomhig
-ms.date: 01/05/2022
+ms.date: 04/22/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
