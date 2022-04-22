@@ -4,7 +4,7 @@
 title: Business events overview
 description: This topic provides information about business events, which allow external systems to receive notifications from Finance and Operations apps.
 author: Sunil-Garg
-ms.date: 11/09/2021
+ms.date: 04/22/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -63,21 +63,22 @@ In scenarios where external integration systems require the schema of the payloa
 In summary, the business event catalog helps identify the business events that are required for an implementation. It also helps identify the schema for each business event.
 
 The next step is to manage the endpoints.
+
 ## Business events parameters
 
 ### General
 The **General** tab of the **Business events parameters** page provides general settings applied to business events.
 
-- **Retry count**: In the event of an error while sending business events to its end point, the system retries to send the business events. The number of times the system will retry sending the event is configured in this field. The default value is 3.
-- **Wait time between retries**: This is the interval between retries for sending a business event to its endpoint, measured in milliseconds. The default value is 1000 milliseconds.
-- **Endpoints allowed per event**: This is the maximum number of endpoints that can subscribe to the same business event in a legel entity. The value is set to 10 by default.
+- **Retry count**: In the event of an error while sending business events to an end point, the system retries to send the business events. The number of times the system will retry sending the event is configured in this field. The default value is **3**.
+- **Wait time between retries**: This is the interval between retries for sending a business event to its endpoint, measured in milliseconds. The default value is **1000** milliseconds.
+- **Endpoints allowed per event**: This is the maximum number of endpoints that can subscribe to the same business event in a legel entity. The value is set to **10** by default.
 - **Use business events batch job**: The business events batch processing job is available as a workaround to mitigate issues with dedicated processing, when needed. When enabling the toggle, select the **Business events batch job** action to select settings for the batch job processor. See the description of the **Performance** tab below for more information on settings for dedicated processing.
-- **Key vault secret cache interval**: The interval in minutes that the key vault secrets used for business events are cached in memory before being read and cached again from the configured key vault. The default value is 5 minutes.
+- **Key vault secret cache interval**: The interval in minutes that the key vault secrets used for business events are cached in memory before being read and cached again from the configured key vault. The default value is **5** minutes.
 
 ### Performance
-The business events framework has two primary settings that can affect performance: processing threads and bundle size. The application allocates dedicated batch threads to process business events in near real time. Because threads are a shared resource for all batch processing, care must be taken when deciding to change the thread allocation for business events. 
+The business events framework has two primary settings that can affect performance: processing threads and bundle size. The application allocates dedicated batch threads to process business events in near real-time. Because threads are a shared resource for all batch processing, care must be taken when deciding to change the thread allocation for business events. 
 
-- **Processing threads**: This value determines how many threads to use for processing business events. The maximum value allowed is 4.
+- **Processing threads**: This value determines how many threads to use for processing business events. The maximum value allowed is **4**.
   - If using dedicated processing for business events, this thread count is per Batch AOS instance.
   - If using batch job, this thread count is the total number of additional batch tasks that will be used to process events.
 - **Bundle size**: This determines how many events to group together for processing at a time by a thread.
