@@ -74,9 +74,9 @@
           href: data-entities/priority-based-throttling.md
         - name: Retry operations
           href: data-entities/service-protection-retry-operations.md
-        - name: Monitoring for API throttling
+        - name: Monitor API throttling
           href: data-entities/service-protection-monitoring.md
-        - name: Maximizing API throughput
+        - name: Maximize API throughput
           href: data-entities/service-protection-maximizing-api-throughput.md
       - name: Finance and Operations Connector
         href: data-entities/fin-ops-connector.md
