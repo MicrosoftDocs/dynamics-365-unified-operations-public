@@ -488,30 +488,30 @@
         items:
         - name: Overview
           href: ../human-resources/hr-recruit-overview.md
-       - name: Recruiting requests
-         items:
-        - name: Recruit job candidates
-          href: hr-personnel-recruit.md
-      - name: Recruiting projects
-        items:
-        - name: Manage recruiting project process
-          href: ../fin-ops-core/fin-ops/hr/manage-recruiting-process.md
-        - name: Manually enter applicant and application data
-          href: ../fin-ops-core/fin-ops/hr/tasks/enter-applicant-application-data-manually.md
-        - name: Develop and open job requisitions
-          href: ../fin-ops-core/fin-ops/hr/tasks/develop-open-job-requisition.md
-        - name: Set up positions
-          href: ../human-resources/hr-personnel-set-up-positions.md
-        - name: Hire candidates through recruitment
-          href: ../fin-ops-core/fin-ops/hr/tasks/hire-candidate-through-recruiting.md
-        - name: Hire an existing employees through recruitment
-          href: ../fin-ops-core/fin-ops/hr/tasks/hire-existing-employee-through-recruiting.md
-        - name: Identify and deploy candidate selection tools
-          href: ../fin-ops-core/fin-ops/hr/tasks/identify-deploy-candidate-selection-tools.md   
-        - name: Mass hire projects
-          href: ../human-resources/hr-personnel-mass-hire-projects.md
-        - name: Create mass hire projects
-          href: ../human-resources/hr-personnel-create-mass-hire-project.md
+        - name: Recruiting requests
+          items:
+         - name: Recruit job candidates
+           href: hr-personnel-recruit.md
+        - name: Recruiting projects
+          items:
+         - name: Manage recruiting project process
+           href: ../fin-ops-core/fin-ops/hr/manage-recruiting-process.md
+         - name: Manually enter applicant and application data
+           href: ../fin-ops-core/fin-ops/hr/tasks/enter-applicant-application-data-manually.md
+         - name: Develop and open job requisitions
+           href: ../fin-ops-core/fin-ops/hr/tasks/develop-open-job-requisition.md
+         - name: Set up positions
+           href: ../human-resources/hr-personnel-set-up-positions.md
+         - name: Hire candidates through recruitment
+           href: ../fin-ops-core/fin-ops/hr/tasks/hire-candidate-through-recruiting.md
+         - name: Hire an existing employees through recruitment
+           href: ../fin-ops-core/fin-ops/hr/tasks/hire-existing-employee-through-recruiting.md
+         - name: Identify and deploy candidate selection tools
+           href: ../fin-ops-core/fin-ops/hr/tasks/identify-deploy-candidate-selection-tools.md   
+         - name: Mass hire projects
+           href: ../human-resources/hr-personnel-mass-hire-projects.md
+         - name: Create mass hire projects
+           href: ../human-resources/hr-personnel-create-mass-hire-project.md
     - name: Task management
       href: hr-task-mgmt.md
     - name: Leave and absence
