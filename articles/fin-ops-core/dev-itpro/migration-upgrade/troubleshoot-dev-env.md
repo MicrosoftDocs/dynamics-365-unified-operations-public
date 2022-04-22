@@ -36,12 +36,12 @@ During the prerequisite steps to upgrading, during the additive or partial sync 
 
 **Possible causes:**
 
-- There could be a customization to extend the **Application** or **Info** classes that causes the Application Object Server (AOS) to crash.
+- There could be a customization to extend the **Application** or **Info** classes that cause the Application Object Server (AOS) to crash.
 - There are old or corrupted sessions in the **SysClientSessions** table.
 
 **Solution:**
 
-1. Check that the custom code base for the customer validate customization extensions around the **Application** or **Info** classes works against a demo database. 
+1. Check that the custom code base for the "customer validate" customization extensions around the **Application** or **Info** classes works against a demo database. 
 2. Truncate the records from the **SysClientSessions** table using the following SQL command, and then try again.
 ```SQL
 TRUNCATE TABLE SYSCLIENTSESSIONS;
