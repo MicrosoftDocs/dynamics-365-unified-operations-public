@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Troubleshoot PreSync and PostSync upgrade steps during upgrade to Dynamics 365 Finance + Operations
+title: Troubleshoot PreSync and PostSync upgrade scripts during upgrade to Dynamics 365 Finance + Operations
 description: This topic provides troubleshooting information for the PreSync and PostSync upgrade scripts that are run as part of the upgrade from Microsoft Dynamics AX 2012 to Microsoft Dynamics 365 Finance + Operations. 
 author: ttreen 
 ms.date: 04/22/2022
@@ -15,7 +15,7 @@ ms.search.form: 2022-04-08
 
 ---
 
-# Troubleshoot PreSync and PostSync upgrade steps during upgrade to Dynamics 365 Finance + Operations
+# Troubleshoot PreSync and PostSync upgrade scripts during upgrade to Dynamics 365 Finance + Operations
 
 [!include[banner](../includes/banner.md)]
 
