@@ -4,7 +4,7 @@
 title: What's new or changed in Dynamics 365 Commerce 10.0.26 (May 2022)
 description: This topic describes features that are either new or changed in Dynamics 365 Commerce 10.0.26. 
 author: josaw1
-ms.date: 03/22/2022
+ms.date: 04/22/2022
 ms.topic: article
 ms.technology: 
 
@@ -47,6 +47,7 @@ The following table lists the features that are included in this release. We mig
 |   Globalization      |    [Sample of direct fiscal integration from POS with EFR](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/direct-fiscal-integration-pos)    |     The feature extends the fiscal integration framework by adding a capability to create fiscal connectors that will be executed in POS. This type of connector will communicate with a fiscal device or service that provides an HTTP API and will not require a dedicated physical machine in the store to be plugged in or deployed on. This release provides a sample of the direct fiscal integration from POS with the Electronic Fiscal Register service (EFR) for [Austria](../localizations/emea-aut-fi-sample.md), [the Czech Republic](../localizations/emea-cze-fi-sample.md), and [Germany](../localizations/emea-deu-fi-sample.md).   | Feature management<p>*Direct fiscal integration from POS registers*<p>Configuration of fiscal registration process |
 |   Globalization      |    [Disable fiscal registration for selected POS registers](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/enhanced-fiscal-connector-configuration)    |   The feature extends the fiscal integration framework by adding an option to disable fiscal registration for selected POS registers in a fiscal registration-enabled store. Store associates will be able to use the registers for non-sales operations (such as inventory management operations), and to create sales that can then be completed on fiscal registration-enabled registers. For more information, see [Set up registers with fiscal registration restrictions](../localizations/setting-up-fiscal-integration-for-retail-channel.md#set-up-registers-with-fiscal-registration-restrictions). | Feature management<p>*Fiscal Registration State of POS Registers* |
 |  Payments  |   [PayPal Cart Checkout support in e-commerce](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/paypal-cart-checkout-support-e-commerce) | [Dynamics 365 Payment Connector for PayPal](../paypal.md)| Developer opt-in |
+| Store Commerce |  [Store Commerce supports dual display to show cart-related information](../retail-peripherals-overview.md) | Dual display shows cart-related information to the customer-facing display and [dual display can be extended to show custom information](../dev-itpro/pos-dual-display-extension.md).| Opt-in |
 
 
 
