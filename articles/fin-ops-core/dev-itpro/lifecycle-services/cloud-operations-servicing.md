@@ -78,6 +78,15 @@ Updates are applied as deployable package on an environment. A deployable packag
     - For Platform updates, verify that the version of the AOS Service Model under Microsoft is updated.
     - For Application updates, check the version of the model that included the fix. For example, if the fix was in Application suite, then the version of the Application suite is updated.
 
+## Servicing changes
+Microsoft has rolled out the new post servicing step that allows to perform index creations in online mode to reduce the overall servicing downtime. During this step, 
+the LCS dashboard will start showing 'Post-serciving' after offline servcing is complete and during this time certain index creation and modification will be done in an online mode and the environment will be accessible to perform normal activities and may experience degrdaded performance on the concerned package changes.
+
+The LCS dashboard will show 'Post-serciving Failed' when there's any failure in the post servicing stage. The environment will be still accessible to perform normal activities and may experience degrdaded performance. Upon retry if issue still persists please reach out to support team. 
+
+![image](https://user-images.githubusercontent.com/90061039/164792400-d8ca418c-6a5e-468c-a965-eae597bfb737.png)
+
+
 ## Upgrade your environment
 For information about how to upgrade to the latest version, see [Process for moving to the latest update of Finance and Operations](../migration-upgrade/upgrade-latest-update.md) and [What's new or changed in Finance and Operations home page](../../fin-ops/get-started/whats-new-changed.md).
 
