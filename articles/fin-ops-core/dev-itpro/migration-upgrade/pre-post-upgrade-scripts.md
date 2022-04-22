@@ -70,8 +70,8 @@ There can be a few causes for this issue:
     ```
     **Solution:**
 
-    1. Get the customer to compare the field sizes in the Dynamics AX 2012 **InventDim** table to the field sizes in Dynamics 365. If there are any differences, to fix these the customer must extend the string size for the associated fields using a customization extension.
-    2. If the job didn't run, try to resume the upgrade from the AX 2012 Database Upgrade Toolkit for Dynamics 365, or rerun the runbook step if on a Tier-1 development environment. 
+    1. Compare the field sizes in the Dynamics AX 2012 **InventDim** table with the field sizes in Dynamics 365. If there are any differences in the field sizes, to reconcile these differences you must extend the string size for the associated fields using a customization extension.
+    1. If the job didn't run, try to resume the upgrade from the AX 2012 Database Upgrade Toolkit for Dynamics 365, or rerun the runbook step if on a Tier-1 development environment. 
 
 ## Scenario 2: Error running ReleaseUpdateDB72_FixedAssets::postSyncUpgradeAssetDepBookJournalTransDimResolve job
 
@@ -163,7 +163,7 @@ The SQL database has issued an error." `
 
 1. Connect to the database using SQL Management Studio.
 1. In the Object Explorer, expand the database and tables and locate the table referenced in the error.
-1. Review the triggers on that table to check for custom triggers. Most standard triggers created in Dynamics 365 will be be prefixed with **SysDbLog**, **SysEvenCud**, and **AIF** (list not inclusive).
+1. Review the triggers on that table to check for custom triggers. Most standard triggers created in Dynamics 365 will be prefixed with **SysDbLog**, **SysEvenCud**, and **AIF** (list not inclusive).
 1. To script the custom triggers you think maybe causing the issue, right-click on each trigger and select **Script Trigger as \> CREATE To \> New Query Editor Window**.
 1. Once the script is completed, go to **Edit \> Find** to check if the field referenced in the error exists in the script. If you find a match in the trigger, then you will need to disable or drop the trigger. 
 
