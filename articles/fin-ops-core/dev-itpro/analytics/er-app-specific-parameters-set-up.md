@@ -4,7 +4,7 @@
 title: Set up the parameters of an ER format per legal entity
 description: This topic explains how you can set up the parameters of an Electronic reporting (ER) format per legal entity.
 author: NickSelin
-ms.date: 10/22/2021
+ms.date: 03/25/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -231,7 +231,7 @@ If you configure application-specific parameters for one version of an ER format
 When you select a file for import, the structure of the application-specific parameters in that file is compared with the structure of the corresponding data sources of the **Lookup** type in the ER format that is selected for import. By default, the import is completed only if the structure of each application-specific parameter matches the structure of the corresponding data source in the ER format that is selected for import. If the structures don't match, a warning message informs you that the import can't be completed. If you force the import, the existing application-specific parameters for the selected ER format will be cleaned up, and you must set them up from the beginning.
 
 
-Starting in Dynamics 365 Finance version 10.0.24, you can change the default behavior and avoid receiving a warning message by enabling the **Align ER application specific parameters while importing** feature in the **Feature management** workspace. When this feature is enabled, if the structure of application-specific parameters that you're importing differs from the structure of the corresponding data sources in the target ER format that is selected for import, the import will succeed in the following cases:
+As of Finance version 10.0.24, you can change the default behavior and avoid receiving a warning message by enabling the **Align ER application specific parameters while importing** feature in the **Feature management** workspace. When this feature is enabled, if the structure of application-specific parameters that you're importing differs from the structure of the corresponding data sources in the target ER format that is selected for import, the import will succeed in the following cases:
 
 - The structure of the target ER format has been changed by adding new condition columns to any existing data sources of the **Lookup** type. When the import is completed, the application-specific parameters are updated. In all the imported records of application-specific parameters, the values in every added condition column are initialized with the default value for the [data type](er-formula-supported-data-types-primitive.md) of that column.
 - The structure of the target ER format has been changed by removing some condition columns from any existing data sources of the **Lookup** type. When the import is completed, the application-specific parameters are updated. In all the imported records of application-specific parameters, the values in every removed condition column are deleted.
@@ -240,9 +240,33 @@ Starting in Dynamics 365 Finance version 10.0.24, you can change the default beh
 
 When the import is completed, in addition to the changes that were just described, the state of the imported application-specific parameters is changed to **In progress**. A warning message informs you that the automatically adjusted application-specific parameters must be manually edited.
 
+#### Replicate parameters
+
+As of Finance version 10.0.27, you can copy the parameters that you configured in one company to other companies at the same time.
+
+To copy parameters, complete the following steps.
+
+1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
+2. Select **Reporting configurations**.
+3. In the configurations tree, select the **Format to learn how to lookup LE data** format.
+4. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
+5. Select version **1.1.1** of the ER format.
+6. On the Action Pane, select **Replicate**.
+7. In the **Replicate** dialog box, on the **Companies** tab, select the companies that you want to copy parameters to.
+
+    > [!NOTE]
+    > The list of target companies is offered only to users who are assigned a security [role](../sysadmin/role-based-security.md#security-roles) that is configured to grant access to all organizations.
+
+8. Select **OK**.
+
+    > [!NOTE]
+    > The confirmation dialog box informs you if some target companies contain previously configured parameters for the selected version of an ER format. Select **Yes** to override the parameters by copying them from the current company.
+
+    The configured set of application-specific parameters is now copied to the selected companies.
+
 ### Reuse existing parameters
 
-Starting in Dynamics 365 Finance version 10.0.23, you can reuse application-specific parameters that have been configured for one version of an ER format, when you run a higher version of the same format. To do this, enable the **Use application specific parameters from previous versions of ER formats** feature in the **Feature management** workspace. When this feature is enabled and you run one version of an ER format that is trying to read application-specific parameters, ER will try to find application-specific parameters that have been configured for the running version of this format. Or, when they aren't available, for the nearest lower version of this format.
+As of Finance version 10.0.23, you can reuse application-specific parameters that have been configured for one version of an ER format when you run a higher version of the same format. To reuse existing parameters, enable the **Use application specific parameters from previous versions of ER formats** feature in the **Feature management** workspace. When this feature is enabled and you run one version of an ER format that is trying to read application-specific parameters, ER will try to find application-specific parameters that have been configured for the running version of the format. If they aren't available, ER will try to find them for the nearest lower version of the format.
 
 > [!NOTE]
 > You can reuse application-specific parameters only in the scope of the current legal entity.
