@@ -43,7 +43,7 @@ If the client is an interactive application, you should display a message that t
 
 ## Retry for non-interactive applications
 
-If the client is not interactive, the common practice is to wait for the duration of the provided interval before sending the request again. This is commonly done by pausing the execution of the current task using [Task.Delay](https://docs.microsoft.com/dotnet/api/system.threading.tasks.task.delay) or equivalent methods.
+If the client is not interactive, the common practice is to wait for the duration of the provided interval before sending the request again. This is commonly done by pausing the execution of the current task using [Task.Delay](/dotnet/api/system.threading.tasks.task.delay) or equivalent methods.
 
 ## Retry-After intervals
 
