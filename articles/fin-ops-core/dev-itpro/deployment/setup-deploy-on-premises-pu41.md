@@ -717,8 +717,7 @@ Only user accounts that have the Global Administrator directory role can add cer
     # If you have issues downloading the Azure PowerShell Az module, run the following:
     # [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
-    Install-Module Az -RequiredVersion 6.6.0
-    Import-Module Az
+    Install-Module Az -RequiredVersion 7.2.0
     .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint 'OnPremLocalAgent Certificate Thumbprint' -Test
     ```
 
