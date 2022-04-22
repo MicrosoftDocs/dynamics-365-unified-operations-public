@@ -486,12 +486,12 @@
         href: hr-personnel-maintain-employee-injury-illness-information.md
       - name: Recruiting
         items:
-         name: Overview
+       - name: Overview
          href: ../human-resources/hr-recruit-overview.md
-          name: Recruiting requests
-          items:
-         - name: Recruit job candidates
-           href: hr-personnel-recruit.md
+       - name: Recruiting requests
+         items:
+        - name: Recruit job candidates
+          href: hr-personnel-recruit.md
       - name: Recruiting projects
         items:
         - name: Manage recruiting project process
