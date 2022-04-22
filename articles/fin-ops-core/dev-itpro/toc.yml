@@ -14,12 +14,12 @@
         items:
         - name: What's new or changed in Platform updates home page
           href: get-started/whats-new-home-page.md
+        - name: Platform updates for version 10.0.27 (July 2022)
+          href: get-started/whats-new-platform-updates-10-0-27.md
         - name: Platform updates for version 10.0.26 (May 2022)
           href: get-started/whats-new-platform-updates-10-0-26.md
         - name: Platform updates for version 10.0.25 (April 2022)
           href: get-started/whats-new-platform-updates-10-0-25.md
-        - name: Platform updates for version 10.0.24 (February 2022)
-          href: get-started/whats-new-platform-updates-10-0-24.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -68,6 +68,8 @@
           href: data-entities/odata.md
         - name: Custom service development
           href: data-entities/custom-services.md
+        - name: Service request tracing
+          href: data-entities/service-request-tracing.md
         - name: Recurring integrations
           href: data-entities/recurring-integrations.md
         - name: Test services using third-party utilities
@@ -396,6 +398,8 @@
             href: deployment/onprem-SSRSHA.md
           - name: Configure proxies for on-premises environments
             href: deployment/onprem-reverseproxy.md
+          - name: Install network printer devices in on-premises environments
+            href: analytics/install-network-printer-onprem.md
           - name: On-premises diagnostics
             href: deployment/on-premises-diagnostics.md
           - name: On-premises disaster recovery configuration
@@ -496,6 +500,8 @@
           href: dev-tools/configure-developer-vm.md
         - name: Development and build VMs that don't allow admin access FAQ
           href: sysadmin/VMs-no-admin-access.md
+        - name: Set up the downloadable VHD for first use
+          href: dev-tools/vhd-setup.md
         - name: Rename local environments to access Azure DevOps
           href: migration-upgrade/vso-machine-renaming.md
         - name: Development system requirements
@@ -1028,6 +1034,8 @@
           href: lifecycle-services/use-translation-service-tm.md
         - name: Azure DevOps extension (Public Preview)
           href: lifecycle-services/dts-devops-extension.md
+        - name: Azure DevOps extension tutorial (Public Preview)
+          href: lifecycle-services/dts-ado-tutorial.md
     - name: Microsoft Power Platform integration
       items:
       - name: Overview
@@ -1506,6 +1514,8 @@
         href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
       - name: Run Regression suite automation tool (RSAT) with parallel execution
         href: perf-test/rsat/rsat-parallel-execution.md
+      - name: Integrate RSAT with Azure DevOps pipelines
+        href: perf-test/rsat/rsat-devops-extension.md
       - name: Troubleshooting
         href: perf-test/rsat/rsat-troubleshooting.md
     - name: Release solutions using Lifecycle Services

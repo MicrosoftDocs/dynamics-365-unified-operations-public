@@ -4,7 +4,7 @@
 title: Subscription billing overview
 description: This topic describes subscription billing in Microsoft Dynamics 365 Finance.
 author: JodiChristiansen
-ms.date: 02/09/2022
+ms.date: 04/13/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -38,6 +38,8 @@ The solution has three modules that can be used independently. Alternatively, al
 - **Recurring contract billing** – This module enables recurring billing and price management to provide control over pricing and billing parameters, contract renewal, and consolidated invoicing.
 - **Revenue and expense deferrals** – This module eliminates manual processes and dependency on external systems by managing revenue and enabling real-time insight into monthly recurring revenue.
 - **Multi-element revenue allocation** – This module helps with revenue compliance by handling pricing and revenue allocation across multiple items.
+
+For more information about subscription billing, see [Subscription billing Power BI content](sub-bill-power-bi.md).
 
 Subscription billing is enabled through **Feature management**. However, it can't be used with the **Revenue recognition** feature. Therefore, you must disable that feature before you enable subscription billing.
 

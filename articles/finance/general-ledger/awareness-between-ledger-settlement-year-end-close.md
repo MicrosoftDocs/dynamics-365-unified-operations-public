@@ -4,7 +4,7 @@
 title: Awareness between ledger settlement and year-end close
 description: This topic provides information about enhancements which impact ledger settlements and the General ledger year-end close.
 author: kweekley
-ms.date: 03/18/2022
+ms.date: 04/06/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -54,12 +54,16 @@ To support the new enhancements, changes were made to ledger settlement and year
 
 Because of the changes in functionality and the data model, it's important that you consider the following points before you enable the feature:
 
+- Because only settled transactions are brought forward into the opening balance, you must unsettle transactions from the current fiscal year that are settled iwth transactions in the previous fiscal year. The transactions must be resettled against transactions within the current fiscal year. This can be done through an adjusting entry in the current fiscal year. The adjustment reverses the summarized opening balances and offsets with the detailed transaction necessary to settle the ledger entries in the current year. 
+
+  > [!IMPORTANT]
+  > If this isn't done, you will receive an **out-of-balance** error when you run the year-end close for the current fiscal year. If it's not possible to unsettle and resettle the ledger transactions with the same fiscal year, don't enable this feature until after the year-end close is complete. Enable the feature immediately after year-end close is complete and before any new ledger transactions are settled in the next fiscal year. 
+  
 - All transactions that have been marked for settlement but haven't been settled will automatically be unmarked when the feature is enabled. To prevent any loss of work, settle all marked transactions before you enable the feature.
 - Some organizations run the year-end close multiple times for the same fiscal year. Don't enable the feature if the year-end close has already been run once and will be run again for the same fiscal year. The feature must be enabled before you process the first year-end close or after you process the last year-end close for the fiscal year.
 
   If you want to enable the feature, but the year-end close has already been run once, you must reverse the year-end close before you can enable the feature.
 
-- Because settlement across fiscal years is no longer permitted, we recommend that you enable the feature before you begin the year-end close process. Then, to ensure that the next fiscal year's opening balances aren't affected by previous cross-fiscal-year settlements, the opening balance transaction should be settled for the fiscal year that is being closed.
 - Because settlement across main accounts is no longer permitted, adjust your chart of accounts or processes as required to ensure that ledger settlement can be done in the same main account.
 - The feature can't be enabled if the public sector year-end close process is being used.
 

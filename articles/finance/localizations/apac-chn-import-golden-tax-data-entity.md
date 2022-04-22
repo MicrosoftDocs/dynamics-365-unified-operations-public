@@ -36,7 +36,7 @@ To import the files from a provider with external invoice numbers, complete the 
 1. Go to **Accounts receivable** > **Periodic tasks** > **VAT invoice integration**.
 2. On the Action Pane, select **Import**. 
 3. Select the model mapping for the import file from one of the providers, either Aisino or BaiWang, depending on which provider's software the company integrates exported invoices with. 
-   - To import a text file (<file name>_invoicing result.TXT) from the BaiWang provider, set the **Import BaiWang TXT file** option to **Yes**. Then, in the **Model mapping** field, select **BaiWang – txt file**.
+   - To import a text file (\<file name\>_invoicing result.TXT) from the BaiWang provider, set the **Import BaiWang TXT file** option to **Yes**. Then, in the **Model mapping** field, select **BaiWang – txt file**.
    - To import a text file from Aisino or an XML file from BaiWang, set the **Import BaiWang txt file** option to **No**. Then, in the **Model mapping** field, select **Asimo - txt** or **BaiWang-xml file**.
 6. Select a file for upload and then select **Upload**.
 7. Select **OK**.

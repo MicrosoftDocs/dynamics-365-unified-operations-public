@@ -1,5 +1,5 @@
 ---
-title: Preview of Dynamics 365 Supply Chain Management 10.0.26 (May 2022)
+title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.26 (May 2022)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.26. 
 author: kamaybac
 ms.date: 03/01/2022
@@ -13,12 +13,11 @@ ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.26
 ---
 
-# Preview of Dynamics 365 Supply Chain Management 10.0.26 (May 2022)
+# What's new or changed in Dynamics 365 Supply Chain Management 10.0.26 (May 2022)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management preview version 10.0.26. This version has a build number of 10.0.1192 and is available as follows:
+This topic lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management version 10.0.26. This version has a build number of 10.0.1192 and is available as follows:
 
 - **Preview of release:** March 2022
 - **General availability of release (self-update):** April 2022
@@ -30,7 +29,7 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
-| Inventory and logistics | [Inventory Visibility on-hand query to support advanced warehouse management items](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-visibility-support-advanced-warehouse-management) | Coming soon | Feature management:<br>*Enable warehouse items in Inventory Visibility* |
+| Inventory and logistics | [Inventory Visibility on-hand query to support advanced warehouse management items](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-visibility-support-advanced-warehouse-management) | [Inventory Visibility support for WHS items](../inventory/inventory-visibility-whs-support.md) | Feature management:<br>*Enable warehouse items in Inventory Visibility* |
 | Inventory and logistics | [Available-to-promise for the Inventory Visibility Add-in](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/available-to-promise-inventory-visibility-add-in) | [Inventory Visibility on-hand change schedules and available to promise](../inventory/inventory-visibility-available-to-promise.md) | Enabled by service configuration |
 | Manufacturing | [Catch weight items for the production floor execution interface](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/catch-weight-items-production-floor-execution-interface) | [How workers use the production floor execution interface](../production-control/production-floor-execution-use.md) | Feature management:<br>*(Preview) Report on catch weight items from the production floor execution interface* |
 | Manufacturing | My jobs tab on the production floor execution interface <!-- KFM: Add link to release plan when available --> | [How workers use the production floor execution interface](../production-control/production-floor-execution-use.md) | Feature management:<br>*My jobs tab on the production floor execution interface* |
@@ -47,7 +46,7 @@ If you want to turn any of these features on or off, you must do that in [featur
 | Procurement and sourcing | Synchronize tracking dimensions on intercompany sales and purchase order lines | This feature lets you control whether the serial and batch number tracking dimensions are synchronized across intercompany sales and purchase order lines. It adds new settings to both the **Purchase order policies** and **Sales order policies** tabs of the **Intercompany** setup page for customers and vendors. It also updates the names of a few related, nearby settings for clarity.<br><br>If you are using advanced warehouse management (WMS), then be aware that this feature will only synchronize batch and serial numbers when those dimensions are above location in the target destination reservation hierarchy. |
 | Product information management | Clean up product attribute values | This feature adds a periodic task called **Clean up product attribute values**, which cleans up product attribute value records that are no longer associated with any product via a product category. |
 | Inventory and warehouse management | (Russia) Prevent discrepancies when issuing GTDs for purchase orders that include WMS-enabled items | This feature is for Russian localization only. It prevents discrepancies that occur when issuing Russian customs declaration numbers (GTDs) for import purchase orders that include items enabled for advanced warehousing (WMS). The GTD-issuing process changes some inventory dimension values on the related inventory transactions for invoices included in the custom journal, which leads to discrepancies between the work records for the purchase order and the inventory transactions for the purchase. When this feature is enabled, the GTD-issuing process generates adjustment work that eliminates such discrepancies. |
-| Warehouse management | Enhanced parser for GS1 barcodes | This feature adds an enhanced parser for GS1 symbol data. The new parser implements the GS1 General Specification algorithm for parsing GS1 symbols and provides stronger data validation. |
+| Warehouse management | Enhanced parser for GS1 barcodes | This feature adds an enhanced parser for GS1 symbol data. The new parser implements the GS1 General Specification algorithm for parsing GS1 symbols and provides stronger data validation. For more information, see [GS1 bar code scanning](../warehousing/gs1-barcodes.md). |
 | Warehouse management | New load planning workbench pages | Adds two new load planning workbench pages: **Inbound load planning workbench** and **Outbound load planning workbench**. |
 | Warehouse management | Warehouse management application - blank GTD | This feature is for Russian localization only. It allows workers using the Warehouse Management mobile app to leave Russian customs declaration numbers (GTDs) blank when needed. If the GTD tracking dimension is set up to allow blank values, the system will accept blank values for GTD for inventory operations provided on-hand inventory is available. |
 
@@ -64,7 +63,7 @@ We have recently added or significantly updated the following help topics. These
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.26 includes platform updates. To learn more, see [Platform updates for version 10.0.26 of Finance and Operations apps (May 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-26.md).<!-- KFM Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.26 includes platform updates. To learn more, see [Platform updates for version 10.0.26 of Finance and Operations apps (May 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-26.md).
 
 ### Bug fixes
 

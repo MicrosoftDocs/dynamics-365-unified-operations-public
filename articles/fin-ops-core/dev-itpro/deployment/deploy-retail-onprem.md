@@ -6,7 +6,8 @@ description: This topic covers the installation steps for Commerce channel compo
 author: jashanno
 ms.date: 11/22/2021
 ms.topic: article
-ms.prod: 
+ms.prod: dynamics-365 
+ms.service:
 ms.technology: 
 
 # optional metadata

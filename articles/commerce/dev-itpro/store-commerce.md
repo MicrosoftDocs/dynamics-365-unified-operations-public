@@ -2,7 +2,7 @@
 title: Store Commerce app
 description: This topic explains how to set up and configure the Microsoft Dynamics 365 Commerce Store Commerce app.
 author: mugunthanm
-ms.date: 03/10/2022
+ms.date: 04/21/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -42,35 +42,35 @@ To render the user interface (UI), Store Commerce uses the Chromium engine inste
 
 The Store Commerce app runs on Windows devices and can be downloaded from the [Shared asset library in Microsoft Lifecycle Services (LCS)](https://lcs.dynamics.com/V2/SharedAssetLibrary). On the **Shared asset library** page, select **Retail Self-service package** as the asset type, and then find the file that ends with "Store Commerce." Be sure to select the version for the Commerce release that you're using (for example, 10.0.25 or 10.0.26).
 
-### Store Commerce deployment topology
+### Store Commerce deployment options
 
-Store Commerce supports two types of deployment topology:
+Store Commerce supports two types of deployment topologies:
 
-- **Online** – Connected to Cloud Scale Unit (CSU).
-- **Offline** – Connected to locally deployed Commerce runtime (CRT) with no connectivity to Commerce headquarters.
+- **In-app** – All the components, such as Modern Point of Sale (MPOS), are deployed locally. Offline and local Hardware Station (HWS) are supported.
+- **Hybrid** – Store Commerce renders the Cloud POS that is deployed in Commerce Scale Unit (CSU) and supports local Hardware Station. However, offline isn't supported.
 
-### Online deployment
+There are no separate installers for the hybrid and in-app topologies. The deployment options are determined by the parameters that are passed during installation.
 
-Store Commerce is a shell that renders CPOS and connects to Headless Commerce and Commerce headquarters by using CSU in online mode. There are two options for rendering the application in Store Commerce online mode:
+![Store Commerce deployment options.](../media/SC-Deployment.png)
 
-- **Remote app content** – Store Commerce app content is rendered from CPOS that is hosted in CSU.
-- **Local deployment** – Store Commerce app content is deployed locally in the Store Commerce app, like MPOS. This option is used by default.
+### In-app deployment
 
-#### Store Commerce app content rendered from CPOS hosted in CSU (Remote app content)
-
-For the remote app content option, Store Commerce downloads and renders the application content from CPOS that is hosted in CSU. To update Store Commerce, just update the CSU. Store Commerce automatically receives the update. Because the updates are centrally managed in CSU, they don't have to be managed at individual registers. The Store Commerce application shell still must be updated separately by using the installer. For more information about how to update the CSU, see [Apply updates and extensions to Commerce Scale Unit (cloud)](../../fin-ops-core/dev-itpro/deployment/update-retail-channel.md). 
-
-#### Store Commerce app content rendered from local deployment
-
-For the local deployment option, the application content is locally deployed in Store Commerce. Store Commerce then renders the application content from its local deployment. It doesn't connect to CPOS that is hosted in CSU to get the application content.
+For the in-app deployment option, the application content is locally deployed in Store Commerce, just as for MPOS. Store Commerce then renders the application content from its local deployment. It doesn't connect to CPOS that is hosted in CSU to get the application content.
 
 To update the application content, run the latest version of the Store Commerce installer. The application content won't be updated if you update the CSU. Therefore, you can manage the updates at individual registers.
 
-During the installation of Store Commerce, users can pass parameters to select either the remote app content option or the local deployment option. By default, Store Commerce uses local deployment.
+In-app mode supports offline. Therefore, during installation, pass the **--installoffline** parameter to deploy the offline database. During offline (that is, when there is no connectivity), the application won't be able to connect to CSU or Commerce headquarters, and will use the locally deployed CRT.
 
-### Offline deployment
+> [!NOTE]
+> During the installation of Store Commerce, users can pass parameters to select either the hybrid option or the in-app option. The default option is in-app deployment.
 
-For offline deployment, pass the **--installoffline** parameter during Store Commerce installation to deploy the offline database. During offline deployment, the application won't be able to connect to CSU or Commerce headquarters. Instead, it will use the locally deployed CRT.
+### Hybrid deployment
+
+Store Commerce is a shell that renders CPOS and connects to Headless Commerce and Commerce headquarters by using CSU in online mode. In hybrid mode, Store Commerce app content is rendered from CPOS that is hosted in CSU. When the Store Commerce app is opened, it will prompt for the CPOS URL.
+
+![Active Store Commerce dialog box prompting for the Cloud POS URL.](../media/SC-Hybrid.png)
+
+To update Store Commerce, just update the CSU. Store Commerce will then automatically receive the update. Because updates are centrally managed in CSU, they don't have to be managed at individual registers. The Store Commerce application shell must still be updated separately by using the installer. For more information about how to update the CSU, see [Apply updates and extensions to Commerce Scale Unit (cloud)](../../fin-ops-core/dev-itpro/deployment/update-retail-channel.md). 
 
 ## Store Commerce and MPOS parity
 
@@ -133,8 +133,9 @@ We recommend that you use Store Commerce or CPOS for all new deployments. Existi
 ### Prerequisites
 
 - Windows 10 version 17763.0 or later, Windows 11, or Windows Server 2019
-- Microsoft Edge, because the application uses the Microsoft Edge WebView2 control
-- Dynamics 365 Commerce (Commerce headquarters and CPOS)
+- [Microsoft Edge WebView2](https://developer.microsoft.com/en-us/microsoft-edge/webview2/) (Use the Evergreen Standalone Installer.)
+- SQL Server (required only for offline)
+- Dynamics 365 Commerce (Commerce headquarters and Cloud Scale Unit)
 
 ### Device setup in Commerce headquarters
 
@@ -149,7 +150,7 @@ You must create a [register](../tasks/create-associate-registers.md) and a [devi
 Store Commerce can be downloaded from the [LCS Shared asset library](https://lcs.dynamics.com/V2/SharedAssetLibrary). On the **Shared asset library** page, select **Retail Self-service package** as the asset type, and then find the file that ends with **Store Commerce**. After the file has been downloaded, follow these steps to install the app.
 
 1. Go to the folder where you downloaded Store Commerce, and open PowerShell in administrator mode.
-1. In the PowerShell, find the Store Commerce installer, and pass the **install** parameter to install the app. To install offline components, pass the **--installoffline** parameter. (For example, enter `Store_Commerce Installer_exe_name install --installoffline`.) If you want to enable debugging mode during installation, pass the **--enablewebviewdevtools** parameter. 
+1. In PowerShell, find the Store Commerce installer, and pass the **install** parameter to install the app. To install offline components, pass the **--installoffline** parameter. (For example, enter `Store_Commerce Installer_exe_name install --installoffline`.) If you want to enable debugging mode during installation, pass the **--enablewebviewdevtools** parameter. 
 
 ### Store Commerce installation parameters
 
@@ -183,15 +184,31 @@ To activate Store Commerce after installation, follow these steps.
 
 ### Troubleshooting setup issues
 
-#### Reset the app
+#### I can't activate the app and get a connectivity error message
 
-If the CPOS URL that you entered isn't valid and you want to change it, or if the app is in an error state during activation, you can restart the process by resetting the app.
+After you enter the valid CPOS URL, you might receive a connectivity error such as "A connectivity error has occurred, and your device can't connect to the Cloud POS. The Cloud POS URL typed may have some issues." In this case, review the URL for typographical errors, or determine whether Cloud POS can't be reached because it's offline.
+
+Additionally, verify that the CSU version is 10.0.25 (9.35.\*.\*) or later. CPOS version 10.0.25 or later is required to use Store Commerce.
+
+#### Installation issues
+
+During installation, you might receive an error such as "A version (9.\*.\*.\*) of this product (Modern POS) has been previously installed through the legacy installer." To fix the error, you must uninstall the MPOS app for all the users on the machine and try again. You can confirm whether MPOS has been removed for all the users by running the following PowerShell command.
+
+```PowerShell
+Get-AppxPackage | Where-Object {$_.PackageFullName -like "Microsoft.Dynamics.*.Pos"} | Remove-AppxPackage -Allusers
+```
+
+#### I can't activate the app due to an invalid URL or error state
+
+If the CPOS URL that you entered isn't valid and you want to change it, or if the app is in an error state during activation, you can restart the process by resetting the app. Note that the Store Commerce app will save only a valid CPOS URL.
+
+To reset the app, follow these steps.
 
 1. On the Windows **Start** menu, select and hold (or right-click) the app, and then select **More \> App settings**.
 2. Scroll down the app settings page until you find the **Reset** button.
 3. Select **Reset**, and then, when you're prompted, confirm that you want to reset the app.
 
-## Customizing the app
+## Customize the app
 
 Store Commerce can be customized by using the Commerce SDK. You can modify and create the POS user experience, enhance or modify out-of-box functionality, add validations, and add custom features. For more information, see [Point of Sale (POS) extension overview](pos-extension/pos-extension-overview.md), or review the samples on [GitHub](https://github.com/microsoft/Dynamics365Commerce.InStore).
 

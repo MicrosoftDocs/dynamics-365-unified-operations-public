@@ -6,7 +6,8 @@ description: This topic describes how to configure Dynamics 365 Finance + Operat
 author: faix
 ms.date: 09/11/2020
 ms.topic: article
-ms.prod: 
+ms.prod: dynamics-365 
+ms.service:
 ms.technology: 
 
 # optional metadata

@@ -16,8 +16,6 @@
           href: get-started/whats-new-changed-10-0-26.md
         - name: Finance 10.0.25 (April)
           href: get-started/whats-new-changed-10-0-25.md
-        - name: Finance 10.0.24 (February)
-          href: get-started/whats-new-changed-10-0-24.md
       - name: Removed or deprecated features
         items:
           - name: Removed or deprecated features home page
@@ -414,6 +412,8 @@
           href: accounts-receivable/subscription-billing-summary.md
         - name: Recurring contract billing
           items:
+          - name: Set up recurring contact billing
+            href: accounts-receivable/sb-recur-bill-parameters.md
           - name: Create billing schedules
             href: accounts-receivable/sb-billing-schedules.md
           - name: Copy a billing schedule
@@ -422,14 +422,30 @@
             href: accounts-receivable/sb-schedule-billing-features.md
           - name: Milestone billing
             href: accounts-receivable/sb-milestonebilling.md
+          - name: Revenue allocation
+            href: accounts-receivable/sb-rev-allocation.md
+          - name: Support and renewal process
+            href: accounts-receivable/sb-support-renewals.md
+          - name: Unbilled revenue
+            href: accounts-receivable/sb-unbilled-revenue.md
+          - name: Consumer price index schedules
+            href: accounts-receivable/cpischedules.md
           - name: Terminate billing schedules
             href: accounts-receivable/terminate-billing-schedule.md
+          - name: Alignment date scenarios
+            href: accounts-receivable/sb-alignment-date-examples.md                  
         - name: Revenue and expense deferrals
           items:
           - name: Set up revenue and expense deferrals
             href: accounts-receivable/sb-deferrals.md
+          - name: Create deferral schedules
+            href: accounts-receivable/sb-deferrals-schedules.md
+          - name: Deferral default transactions
+            href: accounts-receivable/sb-deferral-transactions.md
         - name: Multi-element revenue allocation
           items:
+          - name: Set up multiple element revenue allocation
+            href: accounts-receivable/sb-rev-alloc-setup.md
       - name: Payments and settlements
         items:
         - name: Customer payment overview
@@ -926,6 +942,8 @@
         items:
         - name: Plan your chart of accounts
           href: general-ledger/plan-chart-of-accounts.md
+        - name: Plan your local chart of accounts
+          href: general-ledger/plan-local-chart-of-accounts.md
         - name: Main accounts
           items:
           - name: Main account types
@@ -1470,6 +1488,8 @@
                 href: localizations/e-invoicing-submission-log.md?toc=/dynamics365/finance/toc.json
               - name: Work with the Electronic documents receiving log
                 href: localizations/e-invoicing-electronic-documents-receiving-log.md?toc=/dynamics365/finance/toc.json
+              - name: Usage management dashboard
+                href: localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/finance/toc.json
           - name: Country-specific scenarios
             items:
             - name: Availability of Electronic Invoicing features
@@ -3096,6 +3116,8 @@
           href: localizations/tasks/mx-00010-cancel-electronic-invoice.md
         - name: CFDI Version 3.3
           href: localizations/latam-mex-cfdi-3-3.md
+        - name: CFDI Version 4.0
+          href: localizations/latam-mex-cfdi-4-0.md       
         - name: Customer registration IDs and other information
           href: localizations/tasks/mx-00007-customer-registration-ids-other-information.md
         - name: DIOT declaration statement
@@ -3711,6 +3733,8 @@
           href: ../fin-ops-core/dev-itpro/analytics/recruiting-analysis-power-bi-content-pack.md?toc=/dynamics365/finance/toc.json
         - name: Sales and profitability performance
           href: ../fin-ops-core/dev-itpro/analytics/sales-profitability-performance-content-pack.md?toc=/dynamics365/finance/toc.json
+        - name: Subscription billing Power BI content
+          href: accounts-receivable/sub-bill-power-bi.md
         - name: Vendor payments
           href: accounts-payable/Vendor-payments-workspace.md
         - name: Workforce metrics

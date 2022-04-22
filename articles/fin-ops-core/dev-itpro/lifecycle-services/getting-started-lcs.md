@@ -21,7 +21,6 @@ ms.custom: ["84681", "intro-internal"]
 ms.assetid: 6d2dff1d-fc7c-4e91-b6e5-dc38853e6d82
 ms.search.region: Global
 # ms.search.industry: 
-ms.custom: intro-internal
 ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0

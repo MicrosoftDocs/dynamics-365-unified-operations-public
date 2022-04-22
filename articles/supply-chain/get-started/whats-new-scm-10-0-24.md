@@ -59,7 +59,7 @@ We have recently added or significantly updated the following help topics. These
 | Master planning | [Use the safety stock journal to update minimum coverage for items](../master-planning/safety-stock-journal.md) |
 | Production control | [Customize the production floor execution interface](../production-control/production-floor-execution-customize.md) |
 | Production control | [Style the production floor execution interface](../production-control/production-floor-execution-styles.md) |
-| Sales and marketing | [Sales history cleanup performance improvements](../sales-marketing/sales-update-history-cleanup-performance-improvements.md) |
+| Sales and marketing | [Schedule sales history data cleanup](../sales-marketing/sales-update-history-cleanup-performance-improvements.md) |
 | Warehouse management | [Mobile device user accounts](../warehousing/mobile-device-work-users.md) |
 
 ## Additional resources
