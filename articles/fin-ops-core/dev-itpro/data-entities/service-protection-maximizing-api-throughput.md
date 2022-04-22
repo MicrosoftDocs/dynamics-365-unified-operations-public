@@ -53,7 +53,7 @@ User-based service protection API limits are implemented on a per-user basis. If
 
 *Batching* refers to sending multiple operations in a single request. Most scenarios will be fastest sending single requests with a high degree of parallelism. If you feel batch size might improve performance, it is best to start with a small batch size and increase concurrency until you start getting service protection API limit errors indicating the need to retry the operation. Batch size in Finance + Operations apps is limited to 5000 operations.
 
-For more information on batch requests with Finance + Operations service endpoints, see [Batch requests](../data-entities/odata#batch-requests).
+For more information on batch requests with Finance + Operations service endpoints, see [Batch requests](../data-entities/odata.md#batch-requests).
 
 ## Remove the affinity cookie
 
