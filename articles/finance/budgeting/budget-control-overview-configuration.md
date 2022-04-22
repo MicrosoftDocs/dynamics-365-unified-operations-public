@@ -4,7 +4,7 @@
 title: Budget control overview
 description: This topic introduces the budget control feature and provides information to help you configure budget control to optimize management of your organization's financial resources.
 author: panolte
-ms.date: 11/08/2021
+ms.date: 03/28/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic introduces the budget control feature and provides information to help you configure budget control to optimize management of your organization's financial resources.
 
-Budget control supports management of an organization's financial resources through the chart of accounts, workflows, user groups, source documents and journals, configurable calculation of available funds, budget cycles, and thresholds. When controls are in place, an organization can plan, measure, manage, and forecast its financial resources throughout its fiscal year. 
+Budget control supports the management of an organization's financial resources through the chart of accounts, workflows, user groups, source documents and journals, configurable calculation of available funds, budget cycles, and thresholds. When controls are in place, an organization can plan, measure, manage, and forecast its financial resources throughout its fiscal year. 
 
 After budgets have been approved in the system, you can use budget plans to generate budget register entries to record the expenditure budget for an organization. Alternatively, you can create or import budget register entries from a third-party program instead of using budget planning functionality. 
 
@@ -83,7 +83,9 @@ Next, on the **Budget funds available** tab, you can define the formula that is 
 > [!NOTE]
 > If the calculation is modified during a budget cycle, the changes won't affect any documents that previously passed the budget control checks and were posted or completed. A feature that is named **Only track amounts in the budget funds available calculation** lets you change what data is tracked in the BudgetSourceTracking tables. When this feature is turned on, amounts are stored only if they are selected to be used in the available budget funds calculation. For more information, see [Budget funds available](budget-funds-available.md).
 
-Next, on the **Documents and journals** tab, you can select which source documents and journals will be subject to budget control checks, and whether the checks will occur at the level of the line entry or the whole document. 
+### Documents and journals
+
+On the **Documents and journals** tab, you can select which source documents and journals will be subject to budget control checks, and whether the checks will occur at the level of the line entry or the whole document. In addition, the new **Budget control document filtering enhancement** feature that is available as of Microsoft Dynamics 365 Finance version 10.0.27 provides a query-based filter option for each document that is included in budget control. Therefore, you can specify which budget control documents are budget checked. In this way, the feature enables only a subset of a document type to be budget checked. For example, you can check only purchase orders where the **Pool** field is set to **01**. A new column that is added to the **Documents and journals** tab indicates whether a query is defined for the selected document type. In addition, two new buttons that are added to the toolbar above the document grid let you add, edit, or delete filtering. 
 
 You should match the source documents that are selected with the check boxes for balances that are included in the calculation of available budget funds. For example, if you selected **Budget reservations for encumbrances**, you should select the **Purchase orders** option. When a budget check is performed for the amounts and accounts on a purchase line, the budget control category that is assigned to the reservation is **Encumbrance**. When a budget check is performed for the amounts and accounts on a purchase requisition, the budget control category that is assigned to the reservation is **Pre-encumbrance**. 
 
