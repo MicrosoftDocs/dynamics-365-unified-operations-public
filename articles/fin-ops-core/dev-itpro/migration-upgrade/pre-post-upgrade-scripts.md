@@ -73,20 +73,29 @@ There can be a few causes for this issue:
     1. Get the customer to compare the field sizes in the Dynamics AX 2012 **InventDim** table to the field sizes in Dynamics 365. If there are any differences, to fix these the customer must extend the string size for the associated fields using a customization extension.
     2. If the job didn't run, try to resume the upgrade from the AX 2012 Database Upgrade Toolkit for Dynamics 365, or rerun the runbook step if on a Tier-1 development environment. 
 
-## Scenario 2: Error in ReleaseUpdateDB72_FixedAssets::postSyncUpgradeAssetDepBookJournalTransDimResolve
+## Scenario 2: Error running ReleaseUpdateDB72_FixedAssets::postSyncUpgradeAssetDepBookJournalTransDimResolve job
 
-> Unable to return DimensionAttributeValue record for dimension SystemGeneratedAttributeFixedAsset with value ASSET00001, in legal entity USMF, because a record doesn't exist in table AssetTable through view DimAttributeAssetTable. Batch task failed: Unable to return DimensionAttributeValue record for dimension SystemGeneratedAttributeFixedAsset with value ASSET00001, in legal entity USMF, because a record doesn't exist in table AssetTable through view DimAttributeAssetTable.
+When running the post-sync job **ReleaseUpdateDB72_FixedAssets::postSyncUpgradeAssetDepBookJournalTransDimResolve**, you may get the following error:
+
+`> Unable to return DimensionAttributeValue record for dimension SystemGeneratedAttributeFixedAsset with value ASSET00001, in legal entity USMF, because a record doesn't exist in table AssetTable through view DimAttributeAssetTable. Batch task failed: Unable to return DimensionAttributeValue record for dimension SystemGeneratedAttributeFixedAsset with value ASSET00001, in legal entity USMF, because a record doesn't exist in table AssetTable through view DimAttributeAssetTable.`
  
 **Cause:**
-This is due to assets being purged or removed in AX 2012 from the AssetTable, but the associated records in the ledgerjournaltrans_asset remain.
-You can check for these orphaned records using the following SQL:
+
+This error is due to assets being purged or removed from the Dynamics AX 2012 **AssetTable**, but the associated records in the **ledgerjournaltrans_asset** table remain.
+
+You can check for these orphaned records using the following SQL script:
+
 ```SQL
 select * from ledgerjournaltrans_asset
 where assetid not in (select assetid from assettable)
 ```
 **Solution:**
-The records can be deleted using the following SQL:
-**Note:** Please ensure you have database backups before deleting any data
+
+> [!NOTE]
+> Ensure you have database backups before deleting any data.
+
+The records can be deleted by running the following SQL statement:
+
 ```SQL
 --
 -- This source code or script is freeware and is provided on an "as is" basis without warranties of any kind, 
@@ -98,9 +107,11 @@ delete from ledgerjournaltrans_asset
 where assetid not in (select assetid from assettable)
 ```
 
-## Scenario 3: Error on ReleaseUpdateDB10_CaseManagement::updateCaseCategoryTypeMajor
-During the post-sync job ReleaseUpdateDB10_CaseManagement::updateCaseCategoryTypeMajor you get the following error from the ReleaseUpdateScriptsErrorLog table:
-> === start of x++ data upgrade scripts that failed during the 'PostSync' step. ===
+## Scenario 3: Error running ReleaseUpdateDB10_CaseManagement::updateCaseCategoryTypeMajor job
+
+When running the post-sync job **ReleaseUpdateDB10_CaseManagement::updateCaseCategoryTypeMajor**, you get the following error from the **ReleaseUpdateScriptsErrorLog** table:
+
+`> === start of x++ data upgrade scripts that failed during the 'PostSync' step. ===
 { ClassName: "ReleaseUpdateDB10_CaseManagement", MethodName: "updateCaseCategoryTypeMajor", Company: "DAT", DataParition: "initial", ErrorCount: "1", ErrorMessage: " Cannot edit a record in Case category Security by Role (CaseCategoryRole). Category type: None.
 The record already exists. Batch task failed: Cannot edit a record in Case category Security by Role (CaseCategoryRole). Category type: None.
 The record already exists." }
@@ -109,13 +120,14 @@ The record already exists." }
 { ClassName: "ReleaseUpdateDB10_CaseManagement", MethodName: "updateCaseCategoryTypeMajor", Company: "DAT", DataParition: "initial", ErrorCount: "1", ErrorMessage: " Cannot edit a record in Case category Security by Role (CaseCategoryRole). Category type: None.
 The record already exists. Batch task failed: Cannot edit a record in Case category Security by Role (CaseCategoryRole). Category type: None.
 The record already exists." }
-_Stopped DBSync monitoring. Microsot.Dynamics.Ax.Xpp.ErrorException: Failed to create a session; confirm that the user has the proper privileges to log on to Microsoft Dynamics 365 for Finance and Operations._
+_Stopped DBSync monitoring. Microsot.Dynamics.Ax.Xpp.ErrorException: Failed to create a session; confirm that the user has the proper privileges to log on to Microsoft Dynamics 365 for Finance and Operations._`
 
 **Cause:**
-The reason for this is that in AX 2012 the enum **CaseCategoryType**, value **Web** in most cases used value 9:
-In D365 this **web** value is deprecated, and the same value in D365 can be used by enum value CaseCategoryType::FMLA
-The reason for this is that the enum is extensible, so it can be assigned the same value. 
-To check the enum values run the following SQL:
+
+The cause for this error is that in Dynamics AX 2012, the enum **CaseCategoryType** type **Web** in most cases uses the value "9". In Dynamics 365, the **Web** value is deprecated, and the same value in Dynamics 365 can be used by enum value **CaseCategoryType::FMLA**. The reason for this is that the enum is extensible, so it can be assigned the same value. 
+
+To check the enum values, run the following SQL statement:
+
 ```SQL
 select t1.name as enumvaluename, t1.enumvalue
 from enumvaluetable  t1
@@ -123,9 +135,11 @@ join enumidtable t2 on t2.id = t1.enumid
 where t2.name = 'CaseCategoryType'
 ```
 **Solution:**
-1. The record in CaseCategoryRole for type **Web** needs to be removed.
-2. Check the value of the enum in AX 2012, as per the screenshot above. As mentioned in most cases this will be 9.
-3. Delete the record in table CaseCategoryRole using the following SQL statement (edit value as needed):
+
+1. Remove the record in the **CaseCategoryRole** table for type **Web**.
+1. Check the value of the enum in Dynamics AX 2012. As mentioned previously, in most cases this will be "9".
+1. Delete the record in the **CaseCategoryRole** table using the following SQL statement (edit value as needed):
+
 ```SQL
 --
 -- This source code or script is freeware and is provided on an "as is" basis without warranties of any kind, 
@@ -138,16 +152,18 @@ where CaseCategoryType = 9 --Edit to be the enum value of CaseCategoryType::Web 
 ```
 
 ## Scenario 4: Error: Cannot edit a record in Table Name (TableName) - Invalid column name 'COLUMNNAME'
-If you get errors when running the pre-sync or post-syn upgrade jobs similar to the one below, and find the field being referenced is no longer in D365; it could be related to legacy table triggers.
->Cannot edit a record in Table Name (TableName).
+
+If you get errors similar to the one shown below when running the PreSync or PostSync upgrade jobs, and also find that the field being referenced is no longer in Dynamics 365, it could be related to legacy table triggers.
+
+`> Cannot edit a record in Table Name (TableName).
 The SQL database has issued an error. Object Server DataUpgrade_Batch: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'DEPRACATEDCOLUMNNAME'. UPDATE T1 SET VALUE=?,RECVERSION=? FROM TABLENAME session 10 (Admin) Batch task failed: Cannot edit a record in Bank accounts (TableName).
-The SQL database has issued an error." 
+The SQL database has issued an error." `
 
 **Solution:**
-1. Connect to the database via SQL Management Studio
-2. In the Obejct Explorer, expand out the database and tables and locate the table in question.
-3. Review the triggers on that table to check for custom triggers.
-   - Standard triggers created in D365 will be be prefixed with SysDbLog, SysEvenCud, AIF (list not inclusive of all D365 ones)
-4. Script the custom triggers you think maybe causing the issue, you can right click on the trigger and select **Script Trigger as** > **CREATE To** > **New Query Editor Window**
-5. Once the script is completed, go to menu **Edit > Find** to check for the field in the error exists in the script. If you find a match in the trigger, then you will need to disable or drop the trigger. 
+
+1. Connect to the database using SQL Management Studio.
+1. In the Object Explorer, expand the database and tables and locate the table referenced in the error.
+1. Review the triggers on that table to check for custom triggers. Most standard triggers created in Dynamics 365 will be be prefixed with **SysDbLog**, **SysEvenCud**, and **AIF** (list not inclusive).
+1. To script the custom triggers you think maybe causing the issue, right-click on each trigger and select **Script Trigger as \> CREATE To \> New Query Editor Window**.
+1. Once the script is completed, go to **Edit \> Find** to check if the field referenced in the error exists in the script. If you find a match in the trigger, then you will need to disable or drop the trigger. 
 
