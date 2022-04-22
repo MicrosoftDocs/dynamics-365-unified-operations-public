@@ -92,37 +92,32 @@ To enable Finance + Operations to use your AD FS application, you must create a 
 
 ## Certificates 
 
-Make sure that the devices where the app is installed have the correct certificates to access the resources. If you're using self-signed certificates, you must install them on each device by importing star(AX) and AD FS into the trusted root of the computer account/user account. For more information, see [Create and export a self-signed certificate](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ff710475(v=ws.10)).
+Make sure that the devices where the app is installed have the correct certificates to access the resources. If you're using self-signed certificates, you must install them on each device by importing the star certificate and the AD FS certificate into the trusted root of the computer account/user account. For more information, see [Create and export a self-signed certificate](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ff710475(v=ws.10)).
 
 > [!IMPORTANT]
 > Environments with self-signed certificates will not be accessible from Android devices. If you need to access the environment from an Android device, use publicly trusted certificates for AD FS and Finance + Operations. Alternatively, you can also use AD CS to generate the certificates for AD FS and Finance + Operations. However, if you do this you will have to manually import the certificate authority certificate into your Android device.   
 
 ## Configure the application
 
-You must configure the Warehousing app on the device to connect to the server through the AD FS application.
+You must configure the Warehousing app on the device to connect to the server through the AD FS application by setting up a connection. There are multiple ways to setup a new connection:
+- Add connections from file
+- Add connections from a QR code
+- Add connections manually
 
-1.  In the app, clic on **Select a connection**.
-2.  then **Server configuration**
+### Create a connection settings file or QR code
+You can import connection settings from either a file or a QR code. For both approaches, you must first create a settings file that uses JavaScript Object Notation (JSON) format and syntax. The file must include a connection list that contains the individual connections that have to be added. The following table summarizes the parameters that you must specify in the connection settings file.
 
-There is multiple way to set up a new connection :
-* Add from file
-* Add from QR code
-* Input manually
-
-### Create a connection settings file or QR code ###
-If you choose to "Add from file" you can import a .json file with th following information:
-
-| Parameter | Description | 
-|-----------|-----------|
-| ConnectionName | Specify the name of the connection setting. The maximum length is 20 characters. Because this value is the unique identifier for a connection setting, make sure that it's unique in the list. If a connection that has the same name already exists on the device, it will be overridden by the settings from the imported file. |
-|  ActiveDirectoryClientAppId         |      Specify the client ID that you made a note of while you were setting up Azure AD in the Create a web service application in Azure Active Directory section.     |  
-|       ActiveDirectoryResource    | Specify the root URL of Supply Chain Management.          | 
-|    ActiveDirectoryTenant       |     Specify the Azure AD domain name that you're using with the Supply Chain Management server. This value has the form https://login.windows.net/<your-Azure-AD-domain-name>. Here is an example: https://login.windows.net/contosooperations.onmicrosoft.com. For more information about how to find your Azure AD domain name, see Locate important IDs for a user.      | 
-|   Company        |   Specify the legal entity in Supply Chain Management that you want the application to connect to.        | 
-|   ConnectionType        |     (Optional) Specify whether the connection setting should use a certificate or a client secret to connect to an environment. Valid values are "certificate" and "clientsecret". The default value is "certificate" **Note**: Client secrets can't be imported.      | 
-|      IsEditable     |  (Optional) Specify whether the app user should be able to edit the connection setting. Valid values are "true" and "false". The default value is "true".         | 
-|      IsDefault     |       (Optional) Specify whether the connection is the default connection. A connection that is set as the default connection will automatically be preselected when the app is opened. Only one connection can be set as the default connection. Valid values are "true" and "false". The default value is "false".    | 
-|CertificateThumbprint| (Optional) For Windows devices, you can specify the certificate thumbprint for the connection. For Android devices, the app user must select the certificate the first time that a connection is used.          | 
+| Parameter                  | Description | 
+|----------------------------|-------------|
+| ConnectionName             | Specify the name of the connection setting. The maximum length is 20 characters. Because this value is the unique identifier for a connection setting, make sure that it's unique in the list. If a connection that has the same name already exists on the device, it will be overridden by the settings from the imported file. |
+| ActiveDirectoryClientAppId | Specify the client ID that you made a note of while you were setting up the AD FS application. |  
+| ActiveDirectoryResource    | Specify the root URL of Finance + Operation (on-premises). | 
+| ActiveDirectoryTenant      | Specify the oauth2 endpoint of your AD FS server. This value has the form https://your-adfs-server/adfs/oauth2. Here is an example: https://adfs.contoso.com/adfs/oauth2. | 
+| Company                    | Specify the legal entity in Finance + Operation (on-premises) that you want the application to connect to. | 
+| ConnectionType             | (Optional) Specify whether the connection setting should use a certificate or a client secret to connect to an environment. Valid values are "certificate" and "clientsecret". The default value is "certificate" **Note**: Client secrets can't be imported. |
+| IsEditable                 | (Optional) Specify whether the app user should be able to edit the connection setting. Valid values are "true" and "false". The default value is "true". | 
+| IsDefault                  | (Optional) Specify whether the connection is the default connection. A connection that is set as the default connection will automatically be preselected when the app is opened. Only one connection can be set as the default connection. Valid values are "true" and "false". The default value is "false". | 
+|CertificateThumbprint       | (Optional) For Windows devices, you can specify the certificate thumbprint for the connection. For Android devices, the app user must select the certificate the first time that a connection is used. | 
 
 The following example shows a valid connection settings file that contains two connections. As you can see, the connection list (named "ConnectionList" in the file) is an object that has an array that stores each connection as an object. Each object must be enclosed in braces ({}) and separated by commas, and the array must be enclosed in brackets ([]).
     
@@ -132,8 +127,8 @@ The following example shows a valid connection settings file that contains two c
         {
             "ActiveDirectoryClientAppId":"aaaaaaaa-bbbb-ccccc-dddd-eeeeeeeeeeee",
             "ConnectionName": "Connection1",
-            "ActiveDirectoryResource": "https://yourenvironment.cloudax.dynamics.com",
-            "ActiveDirectoryTenant": "https://login.windows.net/contosooperations.onmicrosoft.com",
+            "ActiveDirectoryResource": "https://ax.d365ffo.onprem.contoso.com",
+            "ActiveDirectoryTenant": "https://adfs.d365ffo.onprem.contoso.com/adfs/oauth2",
             "Company": "USMF",
             "IsEditable": false,
             "IsDefaultConnection": true,
@@ -143,8 +138,8 @@ The following example shows a valid connection settings file that contains two c
         {
             "ActiveDirectoryClientAppId":"aaaaaaaa-bbbb-ccccc-dddd-eeeeeeeeeeee",
             "ConnectionName": "Connection2",
-            "ActiveDirectoryResource": "https://yourenvironment2.cloudax.dynamics.com",
-            "ActiveDirectoryTenant": "https://login.windows.net/contosooperations.onmicrosoft.com",
+            "ActiveDirectoryResource": "https://ax2.d365ffo.onprem.contoso.com",
+            "ActiveDirectoryTenant": "https://adfs2.d365ffo.onprem.contoso.com/adfs/oauth2",
             "Company": "USMF",
             "IsEditable": true,
             "IsDefaultConnection": false,
@@ -153,28 +148,37 @@ The following example shows a valid connection settings file that contains two c
     ]
 }
 ```
+
+For more information on how to save the json file see [Save the connection settings file on each device](../../../supply-chain/warehousing/install-configure-warehousing-app.md#save-the-connection-settings-file-on-each-device)
+
+Once you have your file, you need to import it. See [Import the connection settings](../../../supply-chain/warehousing/install-configure-warehousing-app.md#import-the-connection-settings) for more information.
+
 ### Manually configure the application ###
 
-1.  In the app, clic on **Select a connection**.
-2.  then **Server configuration** 
-    
-    a.  **Active Directory Client ID** - The client ID that you obtained when  you created an application entry in AD FS (step 2 in "Create an application entry in AD FS").
+1. Open the warehouse app on your mobile device.
+1. Go to **Connection settings**.
+1. Toggle the **Use demo mode** option to **No**.
+1. Tap the **Select connection** dropdown to expand the settings that are required to manually enter the connection details.
+    1. **Use client secret** – Set this option to Yes to use a client secret to authenticate with Supply Chain Management. Set it to No to use a certificate for authentication.
+    1. **Connection name** – Enter a name for the new connection. This name will appear in the Select connection field the next time that you open the connection settings. The name that you enter must be unique. (In other words, it must differ from all other connection names that are stored on your device, if any other connection names are stored there.).
+    1. **Active Directory Client ID** - The client ID that you obtained when you created an application entry in AD FS (step 2 in "Create an application entry in AD FS").
+    1. **Active Directory Client Secret** - The client secret obtained when you created an application entry in AD FS.
+    1. **Active Directory Resource** - The DNS URL for the AOS. Append the URL with '/namespaces/AXSF'.
+    > [!NOTE]
+    > Don't end this value with a slash (/)
+    > For example: `https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF`
 
-    b  **Active Directory Client Secret** - The client secret obtained when you created an application entry in AD FS.
+    1.  **Active Directory Tenant** - The DNS URL for the AD FS machine. Append the URL with '/adfs/oauth2'. 
+    > [!NOTE]
+    > Don't end this value with a slash (/)
+    > For example: `https://adfs.d365ffo.onprem.contoso.com/adfs/oauth2`
 
-    c.  **Active Directory Resource** - The DNS URL for the AOS. Append the URL with '/namespaces/AXSF'. 
-        For example: `https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF`
+    1. **Company** - Enter the legal entity to which you want the application to connect.
 
-    d.  **Active Directory Tenant** - The DNS URL for the AD FS machine. Append the URL with '/adfs/oauth2'. 
-        For example: `https://adfs.d365ffo.onprem.contoso.com/adfs/oauth2`
-        Make sure to use the CNAME of the ADFS machine (in the example the CNAME is `https://adfs.d365ffo.onprem.contoso.com`)
-3. **Company** - Enter the legal entity to which you want the application to connect.
-
-4.  Select the **back** button in the top-left corner of the application.
-
-    The application will now connect to your server and the log-in screen for the warehouse worker will display.
-    
-5. If you do not have a telemetry ID for the Warehouse app, you might encounter some errors. This is a known issue. The workaround is to sign in to an existing client to get a Telemetry ID. This issue will be fixed in a future release.
-
+1. Select the **Save** button in the top-right corner of the application.
+1. If you're using an Android device and are using a certificate for authentication, the device prompts you to select the certificate.
+1. The application will now connect to Finance + Operations (on-premises) and the log-in screen for the warehouse worker will display.
+> [!NOTE]
+> In older releases if you do not have a telemetry ID for the Warehouse app user, you might encounter some errors. The workaround is to sign in to Finance + Operations (on-premises) through the webclient to get a Telemetry ID.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
