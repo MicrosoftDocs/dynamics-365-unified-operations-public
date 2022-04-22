@@ -111,7 +111,7 @@ The following table lists the feature enhancements that are included in this rel
 
 ### Platform updates for Finance and Operations apps
 
-Dynamics 365 Finance 10.0.27 includes platform updates. To learn more, see [Platform updates for version 10.0.27 of Finance and Operations apps](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-27.md).
+Dynamics 365 Finance 10.0.27 includes platform updates. To learn more, see [Platform updates for version 10.0.27 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-27.md).
 
 ### Bug fixes
 
