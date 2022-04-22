@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 Human Resources 10.0.27 (June 2022) 
+title: What's new or changed in Dynamics 365 Human Resources 10.0.27 (July 2022) 
 description: This topic describes features that are either new or changed in the Dynamics 365 Human Resources version 10.0.27 preview release.
 author: twheeloc
 ms.date: 04/07/2022
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 10.0.27
 
 ---
 
-# Preview of Dynamics 365 Human Resources 10.0.27 (June 2022)
+# Preview of Dynamics 365 Human Resources 10.0.27 (July 2022)
 
 [!include [banner](../../includes/preview-banner.md)]
 
@@ -36,8 +36,8 @@ available as follows:
 
 
 - **Preview of release**: April 2022
-- **General availability of release (self-update)**: May 2022
-- **General availability of release (auto-update)**: June 2022
+- **General availability of release (self-update)**: June 2022
+- **General availability of release (auto-update)**: July 2022
 
 ## Features included in this release
 
@@ -46,7 +46,7 @@ was initially published.
 
 | Feature name | Overview | Release status  |
 |----|----|----|
-|Recruit job candidates*|     |Preview     | 
+|Recruit job candidates*| This feature enables recruiting functionality, including recruiting requests and candidate profiles. Hiring managers are able to use **Manager self service** or **Personnel management** to create a recruiting request for a new worker. The feature also includes candidate records that display in **Personnel management**.    |Preview     | 
 |Absence manager to manage leave	|This feature enables users to be assigned an absence manager role who can manage leave requests and balances across departments and teams.	|GA|
 |Balance adjustment reason code and comment (Leave)|	This feature allows human resources to include reason codes and comments when adjusting leave balances.|	GA|
 |Buy and sell leave	|This feature allows users to buy and sell leaves.|	GA|
