@@ -19,6 +19,22 @@ ms.dyn365.ops.version: 10.0.21
 
 This topic lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 
+## Version 2.0.21.0
+
+This version introduces the following new features, fixes, and improvements:
+
+-	Fixed several crashing issues.
+-	Fixed an issue where some characters would not be recognized when scanning or typing on the default page.
+-	Fixed an issue where typing a backspace would delete two characters at a time on the default page.
+-	Fixed an issue where the “Sort by” field on the **Work list** page would display an incorrect value that didn't correspond to the actual sorting order of the cards.
+-	Fixed an issue where an incorrect layout would be shown after resizing the app window while running on Microsoft Windows.
+-	Fixed an issue where scrolling in a pop-up list could result in some list items remaining hidden or becoming distorted.
+-	Redesigned the sign-in page to let it display the username and password fields on the same page when running on larger displays.
+-	Improved the way controls react to fast tapping.
+-	Added an in-app error log view.
+-	Added several accessibility improvements (improved narration, fixed missing placeholders on Android, enabled keyboard input for slider controls, and more).
+
+
 ## Version 2.0.20.0
 
 This version introduces the following new features, fixes, and improvements:
