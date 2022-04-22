@@ -71,8 +71,8 @@ join sqldictionary t2 on t1.TABLEID = t2.TABLEID and t2.FIELDID = 0
 
 There are two options to compress the tables:
 
-- [Option 1 - Compress the tables from the SysSqlAdmin form](#pption-1-compress-the-tables-from-the-syssqladmin-form) - One limitation with this form is that the compression is processed for all tables you have compression set on. You cannot be selective which ones you want to process. However, the index compression is selective. As you may want to control this process, especially on a live database, the SQL script in option 2 may be a better choice.
-- [Option 2 - Run a SQL script](#option-2-run-a-sql-script) - This option is more controllable and granular.
+- [Option 1 - Compress the tables from the SysSqlAdmin form](#option-1---compress-the-tables-from-the-syssqladmin-form) - One limitation with this form is that the compression is processed for all tables you have compression set on. You cannot be selective which ones you want to process. However, the index compression is selective. As you may want to control this process, especially on a live database, the SQL script in option 2 may be a better choice.
+- [Option 2 - Run a SQL script](#option-2---run-a-sql-script) - This option is more controllable and granular.
 
 ### Option 1 - Compress the tables from the SysSqlAdmin form
 
