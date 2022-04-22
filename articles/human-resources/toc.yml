@@ -450,8 +450,6 @@
         href: hr-personnel-positions.md
       - name: Create a working times calendar
         href: hr-personnel-create-working-time-calendar.md
-      - name: Recruit job candidates
-        href: hr-personnel-recruit.md
       - name: Personnel actions FAQ
         href: hr-personnel-actions-faq.md
       - name: Use workflows to manage employee information
@@ -486,14 +484,18 @@
         href: hr-personnel-set-up-injury-illness-information.md
       - name: Maintain employee injury and illness information
         href: hr-personnel-maintain-employee-injury-illness-information.md
-      - name: Recruitment projects
+      - name: Recruiting
         items:
-        - name: Manage recruiting processes
+         name: Overview
+         href: ../human-resources/hr-recruit-overview.md
+         name: Recruiting requests
+         items:
+        - name: Recruit job candidates
+          href: hr-personnel-recruit.md
+      - name: Recruiting projects
+        items:
+        - name: Manage recruiting project process
           href: ../fin-ops-core/fin-ops/hr/manage-recruiting-process.md
-        - name: Mass hire projects
-          href: ../human-resources/hr-personnel-mass-hire-projects.md
-        - name: Create mass hire projects
-          href: ../human-resources/hr-personnel-create-mass-hire-project.md
         - name: Manually enter applicant and application data
           href: ../fin-ops-core/fin-ops/hr/tasks/enter-applicant-application-data-manually.md
         - name: Develop and open job requisitions
@@ -506,6 +508,10 @@
           href: ../fin-ops-core/fin-ops/hr/tasks/hire-existing-employee-through-recruiting.md
         - name: Identify and deploy candidate selection tools
           href: ../fin-ops-core/fin-ops/hr/tasks/identify-deploy-candidate-selection-tools.md   
+        - name: Mass hire projects
+          href: ../human-resources/hr-personnel-mass-hire-projects.md
+        - name: Create mass hire projects
+          href: ../human-resources/hr-personnel-create-mass-hire-project.md
     - name: Task management
       href: hr-task-mgmt.md
     - name: Leave and absence
