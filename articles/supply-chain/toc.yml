@@ -12,6 +12,8 @@
         items:
         - name: What's new or changed in Supply Chain Management home page
           href: get-started/whats-new-home-page.md
+        - name: Supply Chain Management 10.0.27 (July 2022)
+          href: get-started/whats-new-scm-10-0-27.md
         - name: Supply Chain Management 10.0.26 (May 2022)
           href: get-started/whats-new-scm-10-0-26.md
         - name: Supply Chain Management 10.0.25 (April 2022)
@@ -2753,6 +2755,8 @@
           href: production-control/production-floor-execution-setup.md
         - name: How workers use the production floor execution interface
           href: production-control/production-floor-execution-use.md
+        - name: Show vacation balances in the production floor execution interface
+          href: production-control/production-floor-execution-payroll-stats.md
         - name: Style the production floor execution interface
           href: production-control/production-floor-execution-styles.md
         - name: Customize the production floor execution interface
