@@ -4,7 +4,7 @@
 title: Design a configuration for generating documents in Excel format
 description: This topic describes how to design an Electronic reporting (ER) format to fill in an Excel template, and then generate outbound Excel format documents.
 author: NickSelin
-ms.date: 02/28/2022
+ms.date: 03/25/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -146,7 +146,12 @@ You can configure your Excel template to use cells to present textual data. To e
 > [!NOTE]
 > Because of a known [Excel limitation](https://support.microsoft.com/topic/you-cannot-use-the-autofit-feature-for-rows-or-columns-that-contain-merged-cells-in-excel-34b54dd7-9bfc-6c8f-5ee3-2715d7db4353), even if you configure cells to wrap text, and you configure the rows that contain those cells to automatically adjust their height to fit the wrapped text, you might not be able to use the **AutoFit** and **Wrap text** Excel features for merged cells and the rows that contain them. 
 
-As of Dynamics 365 Finance version 10.0.23, you can force ER to calculate, in a generated document, the height of every row that was configured to automatically fit its height to the content of nested cells whenever that row contains at least one merged cell that was configured to wrap the text inside it. The calculated height is then used to resize the row to ensure that all the cells in the row are visible in the generated document. To start to use this functionality when you run any ER formats that were configured to use Excel templates to generate outbound documents, follow these steps.
+As of Dynamics 365 Finance version 10.0.23, when you're working in a generated document, you can force ER to calculate the height of every row that was configured to automatically fit its height to the content of nested cells whenever that row contains at least one merged cell that was configured to wrap the text inside it. The calculated height is then used to resize the row to ensure that all cells in the row are visible in the generated document.
+
+> [!NOTE]
+> Be aware that this functionality might not work as expected when a custom font is used to format a merged cell. Because Excel doesn't embed custom fonts, it doesn't provide information about custom font size. Therefore, the size of the merged cell can be incorrectly estimated.
+
+To start to use this functionality when you run any ER formats that were configured to use Excel templates to generate outbound documents, follow these steps.
 
 1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
 2. On the **Localization configurations** page, in the **Related links** section, select **Electronic reporting parameters**.
