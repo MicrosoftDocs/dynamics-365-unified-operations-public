@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Prepare document attachments
-description: An overview sentence that describes what this article is all about.
+title: Migrate document attachments from Dynamics AX 2012
+description: This topic describes how to migrate document attachments from Microsoft Dynamics AX 2012.
 author: ttreen 
 ms.date: 04/08/2022
 ms.topic: article
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: ttreen
 ms.search.validFrom: 
@@ -15,39 +15,45 @@ ms.search.form: 2022-04-08
 
 ---
 
-# Prepare document attachments
+# Migrate document attachments from Dynamics AX 2012
 
 [!include[banner](../includes/banner.md)]
 
-This topic provides information on how to migrate document attachments from Microsoft Dynamics AX 2012.
+This topic describes how to migrate document attachments from Microsoft Dynamics AX 2012.
 
 ## Background
-In Microsoft Dynamics AX 2012 attachments were stored in a number of locations: a file share, database or in a local Microsoft SharePoint server. 
 
-The location for the attachments was set within the **Document Types** form for each file type.  
+In Dynamics AX 2012, attachments are stored in a number of locations, such as a file share, database, or local Microsoft SharePoint server. The location for the attachments was set within the **Document Types** form for each file type.  
 
-In Microsoft Dynamics 365 Finance and Operations, the attachments are mostly stored in a private Azure Blob storage location assigned to the environment, or linked to a Microsoft Sharepoint On-Line site that is under the customer's own tenant. 
+In Microsoft Dynamics 365 Finance + Operations, attachments are mostly stored in a private Azure Blob Storage location assigned to the environment, or linked to a Sharepoint online site that is under the customer's tenant. 
 
-In order for the attchements to be avaiable in D365 after the upgrade they must be migrated to the AX 2012 database prior to the upgrade and then a post upgrade step migrates these into the Azure blob storage. 
+For attachments to be available in Dynamics 365 after the upgrade from Dynamics AX 2012, they must be migrated to the Dynamics AX 2012 database prior to the upgrade. A post-upgrade step then migrates the attachments into the Azure Blob Storage location. 
 
-## Migration Options
+## Migration options
 
-### Database Location
-Attachements already set to be stored in the AX 2012 database, table DocuValue, require no action
+To migrate document attachments from Dynamics AX 2012, you have the following options.
 
-### File Share Location
-Attachments that are stored in a file share on the AX 2012 environment need to be migrated to the database. Please see the following GitHub project to migrate these:
-[Move Documents from Shared Location to Database](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/AX2012DataUpgrade/MoveDocumentsToDatabase)
+###  Migrate attachments from a database location
 
-### Local SharePoint Location
-At this point there is no supported approach to migrate attachments from a local SharePoint site.
+Attachments already set to be stored in the Dynamics AX 2012 database table **DocuValue** require no action.
 
-## Post Upgrade Steps
-Once the upgrade is completed, existing documents or attachments that are stored in the database should be migrated to Microsoft Azure Blob storage. To complete this migration, use the **Migrate files** button on the **Migrate files** tab on the **Document management parameters page**. This operation is not critical as document management can still access file stored in the database, but the files can take considerable database storage and the retrieval is less efficient. The file migration process will migrate all possible database files to Microsoft Azure Blob storage, reporting on any failures and continuing. If any errors are reported, attempt running the file migration process again.
+###  Migrate attachments from a file share location
+
+Attachments that are stored in a file share on the Dynamics AX 2012 environment must be migrated to the Dynamics AX 2012 database. For more information, see [Move Documents from Shared Location to Database](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/AX2012DataUpgrade/MoveDocumentsToDatabase).
+
+### Migrate attachments from a local SharePoint site
+
+Currently there is no supported approach to migrate attachments from a local SharePoint site.
+
+## Post-upgrade steps
+
+Once the upgrade is completed, existing documents or attachments that are stored in the Dynamics AX 2012 database should be migrated to Microsoft Azure Blob storage. 
+
+To complete this migration, on the **Document management parameters page** select **Migrate files** on the **Migrate files** tab. This operation is not critical since document management can still access files stored in the database, but the files can use considerable database storage and the retrieval from the database is less efficient. The file migration process will migrate all possible database files to Microsoft Azure Blob storage, reporting on any failures while continuing the migration. If any errors are reported, try running the file migration process again.
 
 > [!NOTE] 
-> When doing the Production Go-Live, do not migrate the attachments until you have completed the [Self-service database refresh process](../database/database-refresh.md#self-service-database-refresh) to copy your upgraded database from the sandbox environment into your production environment.Otherwise the attachments will not be available in production as they were migrated to the Sandbox Azure Blob storage rather than the production one.
+> When doing the production go-live phase, do not migrate the attachments until you have completed the [Self-service database refresh process](../database/database-refresh.md#self-service-database-refresh) to copy your upgraded database from the sandbox environment into your production environment. Otherwise the attachments will not be available in production since they were migrated to the Sandbox Azure Blob Storage location rather than the production location.
 
-If the file migration process isn’t able to complete without failure, this may be that the files stored in the database are corrupt, which Microsoft is unable to repair. If this is the case, you can request a non-business critical support case be opened to enable conversion of the attachments into note records, which will retain any previous notes as well as the names of the files that were stored in the database. Note that the files themselves cannot be recovered.
+If the file migration process isn't able to complete without failure, this may be because the files stored in the database are corrupt. In this case, Microsoft will not be able to repair the files. If this is the case, Microsoft will not be able to repair the files but you can request that a non-business critical support case be opened to enable conversion of the attachments into note records. These note records will retain any previous notes as well as the names of the files that were stored in the database. The files themselves cannot be recovered.
 
 
