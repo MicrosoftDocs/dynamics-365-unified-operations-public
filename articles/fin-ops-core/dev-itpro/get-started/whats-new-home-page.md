@@ -4,7 +4,7 @@
 title: What's new or changed in Platform updates
 description: This topic points to topics that describe the new and changed features in each Platform update for Finance and Operations apps. 
 author: sericks007
-ms.date: 04/07/2022
+ms.date: 04/22/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
