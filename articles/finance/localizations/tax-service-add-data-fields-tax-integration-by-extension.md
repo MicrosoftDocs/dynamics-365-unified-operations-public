@@ -353,7 +353,7 @@ final static class TaxIntegrationCalculationActivityOnDocument_CalculationServic
         _destination.SetField(IOCostCenter, _source.getCostCenter());
         _destination.SetField(IOProject, _source.getProjectId());
 
-        // If an enum type is to be extended, use enum2Symbol to convert enum to string
+        // If the field to be extended is an enum type, use enum2Symbol to convert enum to string
         //_destination.SetField(IOEnumExample, enum2Symbol(_source.getExampleEnum()));
     }
 }
@@ -364,12 +364,12 @@ In this code, `_destination` is the wrapper object that is used to generate the 
 > [!NOTE]
 > Define the key that is used in the request form as **private const str**. The string should be exactly the same as the measure name added in the topic, [Add data fields in tax configurations](tax-service-add-data-fields-tax-configurations.md).
 >
-> Set the field in the **copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine** method by using the **SetField** method. The data type of the second parameter should be **string**. If the data type isn't **string**, convert it.
-> If an X++ **enum type** is extended, it is recommended that **enum2Symbol** method be used to convert enum to string. Note the difference between its value, label, and name.
+> Set the field in the **copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine** method by using the **SetField** method. The data type of the second parameter should be **string**. If the data type isn't **string**, convert it to string.
+> If data type is X++ **enum type**, it is recommended that **enum2Symbol** method should be used to convert the enum value to string. The enum value added in the tax configuration should be exactly the same as the enum name. Below are the differences between enum value, label, and name.
 > 
->   - The name of enum is recommended because it's fixed. **enum2Symbol** can be used to convert the enum to its name. The enumeration value added in the tax configuration should be exactly the same as the enum name.
+>   - The name of enum is a symbolic name in code. **enum2Symbol()** can convert the enum value to its name.
 >   - The value of the enum is integer.
->   - The label of the enum can be different across preferred languages. Don't use **enum2Str** to convert the enum type to string.
+>   - The label of the enum can be different across preferred languages. **enum2Str()** can convert the enum value to its label.
 
 ## Model dependency
 
