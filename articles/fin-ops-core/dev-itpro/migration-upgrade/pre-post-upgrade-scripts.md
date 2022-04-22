@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Pre/post upgrade scripts
-description: An overview sentence that describes what this article is all about.
+title: Troubleshoot PreSync and PostSync upgrade steps during upgrade to Dynamics 365 Finance + Operations
+description: This topic provides troubleshooting information for the PreSync and PostSync upgrade scripts that are run as part of the upgrade from Microsoft Dynamics AX 2012 to Microsoft Dynamics 365 Finance + Operations. 
 author: ttreen 
-ms.date: 04/08/2022
+ms.date: 04/22/2022
 ms.topic: article
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: ttreen
 ms.search.validFrom: 
@@ -15,21 +15,25 @@ ms.search.form: 2022-04-08
 
 ---
 
-# Pre Sync and Post Sync Upgrade Steps Troubleshooting
+# Troubleshoot PreSync and PostSync upgrade steps during upgrade to Dynamics 365 Finance + Operations
 
 [!include[banner](../includes/banner.md)]
 
-This topic provides troubleshooting information for the PreSync and PostSync upgrade sctipts that are run as part of an upgrade from Microsoft Dynamics AX 2012 to Microsoft Dynamics 365 Finance + Operations 
+This topic provides troubleshooting information for the PreSync and PostSync upgrade scripts that are run as part of the upgrade from Microsoft Dynamics AX 2012 to Microsoft Dynamics 365 Finance + Operations. 
 
 ## Scenario 1: Error - Duplicate key was found for the object name 'dbo.INVENTDIM' and the index name 'I_XXXSHA1HASHIDX'
-During the final sync you see an error in the downloaded sync log similar to the following (note table IDs in the index maybe different):
-> _The CREATE UNIQUE INDEX statement terminated because a duplicate key was found for the object name 'dbo.INVENTDIM' and the index name 'I_698SHA1HASHIDX'. The duplicate key value is (5637144576, gsmp, B92BAF2504FD67FC15A56F2DFACE09127715B54B). The statement has been terminated. CREATE UNIQUE INDEX I_698SHA1HASHIDX ON DBO.INVENTDIM(PARTITION,DATAAREAID,SHA1HASHHEX) WITH (MAXDOP = 1) ;_
 
-**Cause:**
-There can be a few issues for this issue, see below:
-1. This error normally comes up when the string size of one of the dimension fields in table **InventDim** has been extended in AX 2012, but the smae fields in D365 were not.  The extension could have been made on the table directly or the extended data types (EDT) that the fields are derived from.
+During the final sync you may see an error in the downloaded sync log similar to the following (table IDs in the index may be different):
 
-   The fields used to create the HASH are as follows:
+`> _The CREATE UNIQUE INDEX statement terminated because a duplicate key was found for the object name 'dbo.INVENTDIM' and the index name 'I_698SHA1HASHIDX'. The duplicate key value is (5637144576, gsmp, B92BAF2504FD67FC15A56F2DFACE09127715B54B). The statement has been terminated. CREATE UNIQUE INDEX I_698SHA1HASHIDX ON DBO.INVENTDIM(PARTITION,DATAAREAID,SHA1HASHHEX) WITH (MAXDOP = 1) ;_`
+
+**Causes:**
+
+There can be a few causes for this issue:
+
+- This error normally appears when the string size of one of the dimension fields in the **InventDim** table has been extended in Dynamics AX 2012, but the same fields in Dynamics 365 were not extended. The extension could have been made on the table directly or in the extended data types (EDT) that the fields are derived from.
+
+    The following fields are used to create the hash value:
     - ConfigId,InventBatchId
     - InventColorId
     - InventGtdId_RU
@@ -44,29 +48,33 @@ There can be a few issues for this issue, see below:
     - LicensePlateId
     - WMSlocationId
 
-   The actual data in the table isn't truncated, but it gets truncated in the buffer at runtime when the HASH value was created. 
+    The data in the table isn't truncated, but the data gets truncated in the buffer at runtime when the hash value is created. 
 
-   For example: INVENTSIZEID has a default size of 10 characters, but in AX 2012 the customer increased this to 12. Then, if you have two values like **1234567890AA** and **1234567890BB**, when these are read into the buffer at runtime both will just be **1234567890**. Therefore, it's a duplicate in the runtime buffer and the upgrade method **ReleaseUpdateDB72_Invent::updateSHA1HashHexInInventDim** which generates the new HASH will not generate all the HASH values as unique. 
+    For example, **InventSizeId** has a default size of 10 characters, but in AX 2012 the customer increased the size to 12. If you then have two values like **1234567890AA** and **1234567890BB**, when these values are read into the buffer at runtime both will be shortened to **1234567890**. Therefore it's a duplicate in the runtime buffer and the upgrade method **ReleaseUpdateDB72_Invent::updateSHA1HashHexInInventDim** that generates the new hash value will not generate all hash values as unique. 
 
-2. The data upgrade job didn't run or complete as expected. 
-Run the following SQL Query:
+- The data upgrade job didn't run or complete as expected. 
 
-```SQL
-SELECT PARTITION, DATAAREAID, SHA1HASHHEX, COUNT(*)
-FROM INVENTDIM
-GROUP BY PARTITION, DATAAREAID, SHA1HASHHEX
-HAVING COUNT(*) > 1
-```
-If you find that the SHA1HASHHEX is blank then the job didn't run. In that case use the following to check the data upgrade jobs:
-```SQL
-select * from RELEASEUPDATESCRIPTSLOG
-where METHODNAME = 'updateSHA1HashHexInInventDim'
-```
-**Solution:**
-1. Get the customer to compare the field sizes in AX2012 on the InventDim table to the field sizes on D365. If there any differences, then the customer will need to fix this by extending the string size for the associated fields through a customization extension.
-2. If the job didn't run, try to resume the upgrade from the Upgrade Toolkit, or rerun the runbook step if on a Dev\Tier 1 environment. 
+    First, run the following SQL query:
+
+    ```SQL
+    SELECT PARTITION, DATAAREAID, SHA1HASHHEX, COUNT(*)
+    FROM INVENTDIM
+    GROUP BY PARTITION, DATAAREAID, SHA1HASHHEX
+    HAVING COUNT(*) > 1
+    ```
+    If you find that **SHA1HASHHEX** is blank, then the job didn't run. In this case, use the following command to check the data upgrade jobs:
+
+    ```SQL
+    select * from RELEASEUPDATESCRIPTSLOG
+    where METHODNAME = 'updateSHA1HashHexInInventDim'
+    ```
+    **Solution:**
+
+    1. Get the customer to compare the field sizes in the Dynamics AX 2012 **InventDim** table to the field sizes in Dynamics 365. If there are any differences, to fix these the customer must extend the string size for the associated fields using a customization extension.
+    2. If the job didn't run, try to resume the upgrade from the AX 2012 Database Upgrade Toolkit for Dynamics 365, or rerun the runbook step if on a Tier-1 development environment. 
 
 ## Scenario 2: Error in ReleaseUpdateDB72_FixedAssets::postSyncUpgradeAssetDepBookJournalTransDimResolve
+
 > Unable to return DimensionAttributeValue record for dimension SystemGeneratedAttributeFixedAsset with value ASSET00001, in legal entity USMF, because a record doesn't exist in table AssetTable through view DimAttributeAssetTable. Batch task failed: Unable to return DimensionAttributeValue record for dimension SystemGeneratedAttributeFixedAsset with value ASSET00001, in legal entity USMF, because a record doesn't exist in table AssetTable through view DimAttributeAssetTable.
  
 **Cause:**
