@@ -1626,6 +1626,12 @@
               href: localizations/tcs-troubleshooting-failed-access-tax-service.md
             - name: Empty tax feature list in Tax calculation parameters
               href: localizations/tcs-troubleshooting-tax-feature-list-empty-tax-calculation-parameter.md
+            - name: Tax code cannot be determined
+              href: localizations/tcs-troubleshooting-tax-code-cannot-be-determined.md
+            - name: No matching result could be found
+              href: localizations/tcs-troubleshooting-no-matching-result.md
+            - name: Enable debug mode in the Tax Calculation service
+              href: localizations/tcs-troubleshooting-enable-debug-mode.md
           - name: Tax Calculation FAQ
             href: localizations/global-tax-calcuation-service-faq.md?toc=/dynamics365/finance/toc.json              
       - name: Tax
