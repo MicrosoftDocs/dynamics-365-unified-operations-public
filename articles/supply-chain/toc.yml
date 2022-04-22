@@ -2755,7 +2755,7 @@
           href: production-control/production-floor-execution-setup.md
         - name: How workers use the production floor execution interface
           href: production-control/production-floor-execution-use.md
-        - name: Display vacation balances in the production floor execution interface
+        - name: Show vacation balances in the production floor execution interface
           href: production-control/production-floor-execution-payroll-stats.md
         - name: Style the production floor execution interface
           href: production-control/production-floor-execution-styles.md
