@@ -80,9 +80,9 @@ Updates are applied as deployable package on an environment. A deployable packag
 
 ## Servicing changes
 Microsoft has rolled out the new post servicing step that allows to perform index creations in online mode to reduce the overall servicing downtime. During this step, 
-the LCS dashboard will start showing 'Post-serciving' after offline servcing is complete and during this time certain index creation and modification will be done in an online mode and the environment will be accessible to perform normal activities and may experience degrdaded performance on the concerned package changes.
+the LCS dashboard will start showing 'Post-serciving' after offline servcing is complete and during this time certain index creation and modification will be done in an online mode and the environment will be accessible to perform normal activities and may experience degrdaded performance on the concerned package changes.During post-servicing user will not be allowed to cancel or trigger new service request untill post servicing step is completed.
 
-The LCS dashboard will show 'Post-serciving Failed' when there's any failure in the post servicing stage. The environment will be still accessible to perform normal activities and may experience degrdaded performance. Upon retry if issue still persists please reach out to support team. 
+The LCS dashboard will show 'Post-serciving Failed' when there's any failure in the post servicing stage. The environment will be still accessible to perform normal activities and may experience degrdaded performance. Please contact Microsoft Support if expereince same issue upon retry.  
 
 ![image](https://user-images.githubusercontent.com/90061039/164792400-d8ca418c-6a5e-468c-a965-eae597bfb737.png)
 
