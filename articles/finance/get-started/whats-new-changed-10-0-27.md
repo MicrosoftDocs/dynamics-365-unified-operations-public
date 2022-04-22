@@ -4,7 +4,7 @@
 title: What's new or changed in Dynamics 365 Finance 10.0.27 (June 2022)
 description: This topic describes features that are either new or changed in the Microsoft Dynamics 365 Finance version 10.0.27 preview release.
 author: kfend
-ms.date: 04/20/2022
+ms.date: 04/22/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -27,17 +27,17 @@ ms.dyn365.ops.version: 10.0.27
 
 ---
 
-# What's new or changed in Dynamics 365 Finance 10.0.27 (June 2022)
+# What's new or changed in Dynamics 365 Finance 10.0.27 (July 2022)
 
 [!include [banner](../includes/banner.md)]
 
 [!include [banner](../includes/preview-banner.md)]
 
-This topic lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.27. This version has a build number of XXX and is available on the following schedule:
+This topic lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.27. This version has a build number of 10.0.1227 and is available on the following schedule:
 
 - **Preview of release:** April 2022
-- **General availability of release (self-update):** May 2022
-- **General availability of release (auto-update):** June 2022
+- **General availability of release (self-update):** June 2022
+- **General availability of release (auto-update):** July 2022
 
 ## Features included in this release
 
@@ -53,8 +53,8 @@ The following table lists the features that are included in this release. We mig
 | Credit and collections | Print pro forma documents when sales order is on credit hold | A pro forma document (confirmation, picking ticket, release to warehouse, packing slip, or invoice) can be printed while the sales order is on credit hold. The sales order remains on hold while the pro forma document is printed. | Feature management | 
 | Globalization | (India) Charge allocation on the Bill of entry page | Actual charge allocation is required on import orders for each item line, so that the customs assessable value can be determined at the time that the bill of entry is submitted to customs authorities. This new feature enables the **Bill of entry** page to edit and allocate actual charge amounts (for example, freight and insurance) on the line items, and to deliver an automatically calculated assessable value. | Feature management | 
 | Globalization | Asset management integration with Russian fixed assets | This functionality enhances the **Acquire to retire** asset lifecycle and end-to-end process flows that involve the **Russian Fixed assets** module. By integrating the **Asset management** and **Fixed assets** modules, you can link Russian fixed assets with maintenance assets. Fixed assets users can then create a maintenance asset from a new or existing fixed asset, and Asset management users can associate a maintenance asset with an existing fixed asset. For more information, see [Integration of the Asset management module with the Fixed asset (Russia) module](../localizations/rus-integration-eam-with-fixed-asset.md). | Feature management |
-| Globalization | Configurable business document-specific destinations by using printer management settings in the reports (phase 2) | The initial feature implementation let you set up and edit business document–specific destinations by using the print management user interface in the Electronic reporting (ER) framework. This feature extends the capability to all the remaining configurable reports that didn't use it in the initial release. For more information, see [Configure print management record-specific ER destinations](../fin-ops-core/dev-itpro/analytics/er-named-destinations.md). | Feature management |
-| Globalization | Run the Electronic reporting (ER) import of manually uploaded documents in batch | The original functionality of the ER framework enabled the ER application programming interface (API) to call a configured ER solution from the source code, to import data in batch mode from inbound files in SharePoint. You can use the new ER capability to import data from a manually selected file by scheduling a new batch job from the ER user interface. For more information, see [Import data from manually selected files in batch mode](../fin-ops-core/dev-itpro/analytics/er-configure-data-import-batch.md). | Feature management |
+| Globalization | Configurable business document-specific destinations by using printer management settings in the reports (phase 2) | The initial feature implementation let you set up and edit business document–specific destinations by using the print management user interface in the Electronic reporting (ER) framework. This feature extends the capability to all the remaining configurable reports that didn't use it in the initial release. For more information, see [Configure print management record-specific ER destinations](../../fin-ops-core/dev-itpro/analytics/er-named-destinations.md). | Feature management |
+| Globalization | Run the Electronic reporting (ER) import of manually uploaded documents in batch | The original functionality of the ER framework enabled the ER application programming interface (API) to call a configured ER solution from the source code, to import data in batch mode from inbound files in SharePoint. You can use the new ER capability to import data from a manually selected file by scheduling a new batch job from the ER user interface. For more information, see [Import data from manually selected files in batch mode](../../fin-ops-core/dev-itpro/analytics/er-configure-data-import-batch.md). | Feature management |
 
 ## Feature enhancements included in this release
 
@@ -72,7 +72,7 @@ Dynamics 365 Finance 10.0.27 includes platform updates. To learn more, see [Plat
 
 ### Bug fixes
 
-For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=xxxxxx).
+For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=673271).
 
 ### Regulatory updates
 
