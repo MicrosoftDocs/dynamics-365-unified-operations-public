@@ -43,9 +43,11 @@ The above code will be split into 3 parts
 
 ### External script link
 
-1.	The external script block needs to be embedded on any pages that will have a survey.  The best way to do this is to create a fragment that holds the script and embed the fragment on the page template(s). The script that will be embedded looks like this
+The external script block needs to be embedded on any pages that will have a Customer Service survey.  The best way to do this is to create a fragment that holds the script and embed the fragment on the page template(s). The script that will be embedded looks like this
 
+```html
 <script src=https://mfpembedcdnmsit.azureedge.net/mfpembedcontmsit/Embed.js type="text/javascript"></script>
+```
 
 To embed the above external script, create a fragment in site builder based off the “External script” module then add the URL to the “Script source” configuration as shown below:
 
