@@ -1714,22 +1714,22 @@
             href: migration-upgrade/migrate-upgraded-cube-entity-store.md
           - name: Upgrade budget planning
             href: migration-upgrade/upgrade-budget-planning.md
-        - name: Troubleshooting the upgrade
+        - name: Troubleshoot the upgrade
           items:
-          - name: Development environment troubleshooting
-            href: migration-upgrade/development-environment-troubleshooting.md
-          - name: Self-service environment
-            href: migration-upgrade/self-service-environment-upgrade.md
-          - name: Pre/post upgrade scripts
+          - name: Troubleshoot development environments during upgrade
+            href: migration-upgrade/troubleshoot-dev-env.md
+          - name: Troubleshoot upgrades to self-service environments
+            href: migration-upgrade/troubleshoot-self-service-env.md
+          - name: Troubleshoot PreSync and PostSync upgrade scripts
             href: migration-upgrade/pre-post-upgrade-scripts.md
         - name: Environment operations
           items:
-          - name: Prepare document attachments
-            href: migration-upgrade/prepare-document-attachments.md
-          - name: Clean-up preparation
-            href: migration-upgrade/clean-up-preparation.md
-          - name: Compressing tables in AX 2012 environments
-            href: migration-upgrade/compressing-tables-ax2012.md
+          - name: Migrate document attachments
+            href: migration-upgrade/migrate-doc-attachments-ax-2012.md
+          - name: Clean up source data for upgrade
+            href: migration-upgrade/clean-up-source-data-upgrade.md
+          - name: Compress tables in Dynamics AX 2012 environments
+            href: migration-upgrade/compress-tables-ax-2012.md
       - name: Migrate data from AX 2009
         items:
         - name: Migrate data from AX 2009 to Finance and Operations
