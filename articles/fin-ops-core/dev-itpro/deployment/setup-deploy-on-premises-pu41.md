@@ -4,7 +4,7 @@
 title: Set up and deploy on-premises environments (Platform update 41 and later)
 description: This topic explains how to plan, set up, and deploy Microsoft Dynamics 365 Finance + Operations (on-premises) with Platform update 41 and later.
 author: faix
-ms.date: 04/21/2022
+ms.date: 04/22/2022
 ms.topic: article
 ms.prod: dynamics-365 
 ms.service:
@@ -717,8 +717,7 @@ Only user accounts that have the Global Administrator directory role can add cer
     # If you have issues downloading the Azure PowerShell Az module, run the following:
     # [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
-    Install-Module Az -RequiredVersion 6.6.0
-    Import-Module Az
+    Install-Module Az -RequiredVersion 7.2.0
     .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint 'OnPremLocalAgent Certificate Thumbprint' -Test
     ```
 
