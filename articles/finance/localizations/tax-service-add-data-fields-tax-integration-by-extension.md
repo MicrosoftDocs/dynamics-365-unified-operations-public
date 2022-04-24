@@ -353,8 +353,8 @@ final static class TaxIntegrationCalculationActivityOnDocument_CalculationServic
         _destination.SetField(IOCostCenter, _source.getCostCenter());
         _destination.SetField(IOProject, _source.getProjectId());
 
-        // If the field to be extended is an enum type, use enum2Symbol to convert enum to string
-        //_destination.SetField(IOEnumExample, enum2Symbol(_source.getExampleEnum()));
+        // If the field to be extended is an enum type, use enum2Symbol to convert a enum variable exampleEnum of ExampleEnumType to string
+        //_destination.SetField(IOEnumExample, enum2Symbol(enumNum(ExampleEnumType), _source.getExampleEnum()));
     }
 }
 ```
