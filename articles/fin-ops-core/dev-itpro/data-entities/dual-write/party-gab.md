@@ -143,7 +143,7 @@ During the lead qualification process you can provide both a business phone numb
 
 1. Open your customer engagement app environment.
 
-2. Install all pre-requisite solutions as described under [separated solutions]() page.  
+2. Install all pre-requisite solutions as described under [separated solutions](separated-solutions.md) page.  
 
 3. Install [Dual-write Party and Global Address Book Solutions](https://aka.ms/dual-write-gab).
 
@@ -247,7 +247,7 @@ During the lead qualification process you can provide both a business phone numb
     [CDS sales quotation header](mapping-reference.md#215) | quotes
     [CDS sales order headers](mapping-reference.md#217) | salesorders
     [Sales invoice headers V2](mapping-reference.md#118) | invoices
-    [CDS Address roles]() | msdyn_addressroles
+    [CDS Address roles](mapping-reference.md#301) | msdyn_addressroles
 
 > [!NOTE]
 > The `CDS Contacts V2 (contacts)` map is the map that you stopped in the step 1. When you try to run other maps, these 2 maps may appear in the list of dependents. Don't run these maps.
@@ -287,7 +287,7 @@ A collection of table maps work together for party and global address book inter
 | [Sales invoice headers V2](mapping-reference.md#118) | invoices |
 | [Salutations](mapping-reference.md#228) | msdyn\_salutations |
 | [Vendors V2](mapping-reference.md#202) | msdyn\_vendors |
-| [CDS Address roles]() |msdyn\_addressroles|
+| [CDS Address roles](mapping-reference.md#301) |msdyn\_addressroles|
 
 For more information, see [Dual-write mapping reference](mapping-reference.md).
 
