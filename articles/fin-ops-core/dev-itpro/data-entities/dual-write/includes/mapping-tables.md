@@ -2676,3 +2676,12 @@ GENDER | ><<br>`male` : `754400000`<br>`female` : `754400001`<br>`nonSpecific` :
 BIRTHDATE | = | cdm_birthdate |
 NAME | > | cdm_fullname |
 
+###  <a name="301"></a>CDS location roles (msdyn_addressroles)
+
+This template synchronizes data between Finance and Operations apps and Dataverse.
+
+Finance and Operations field | Map type | Customer engagement column | Default value
+---|---|---|---
+ISCONTACTINFORMATION | ><<br>`yes` : `true`<br>`no` : `false` | msdyn_iselectronicaddressrole |
+ISPOSTALADDRESS | ><<br>`yes` : `true`<br>`no` : `false` | msdyn_ispostaladdressrole |
+PURPOSE | = | msdyn_name |
