@@ -294,7 +294,7 @@ For more information, see [Dual-write mapping reference](mapping-reference.md).
 ## Address roles as a multi-select dropdown
 A postal address or an electronic address can serve more than one purpose. Say for example, a postal address can be serve as both billing address as well as delivery address. In such case, a user can choose 2 purposes 'invoice' and 'delivery' from the drop down control as shown below. 
 
-
+![purpose/role](media/purpose.png)
 
 ## Known issues and limitations
 
