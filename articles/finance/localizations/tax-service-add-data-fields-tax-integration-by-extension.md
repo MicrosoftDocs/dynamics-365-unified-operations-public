@@ -340,6 +340,7 @@ final static class TaxIntegrationCalculationActivityOnDocument_CalculationServic
     // Define key for the form in post request
     private const str IOCostCenter = 'Cost Center';
     private const str IOProject = 'Project';
+    //private const str IOEnumExample = 'Enum Example';
 
     /// <summary>
     /// Copies to <c>TaxableDocumentLineWrapper</c> from <c>TaxIntegrationLineObject</c> by line.
