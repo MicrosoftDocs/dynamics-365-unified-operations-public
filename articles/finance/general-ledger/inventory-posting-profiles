@@ -1,0 +1,145 @@
+---
+# required metadata
+
+title: Inventory posting profiles
+description: An overview of the inventory posting profiles.  
+author: raprofit
+ms.date: 04/25/2022
+ms.topic: overview
+ms.prod: 
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: InventPosting
+# ROBOTS: 
+audience: Application User
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: raprofit
+
+---
+# Inventory posting profiles
+
+[!include [banner](../includes/banner.md)]
+
+Inventory posting profiles control the posting of inventory subledger transactions to the general ledger. Inventory subledger transactions may be generated from many modules in the system including **Sales and marketing**, **Procurement and sourcing**, **Production control**, and more. Inventory subledger transactions may be posted any time an item is used in a sales order or purchase order, for example, and additional inventory subledger transactions may be posted each time the document is updated. For example, when a sales order packing slip or invoice is posted or when a purchase order product receipt or invoice is generated.
+
+For more information, refer to Inventory subledger transactions.
+
+## Inventory transaction overview
+
+Each inventory subledger transaction contains the quantity, price, and specific inventory details such as the site, warehouse, location, and so on. Inventory subledger transactions have two connections to the general ledger through what is referred to as the physical posting and the financial posting. For more information, refer to [Physical and financial updates](/supply-chain/cost-management/physical-financial-updates.md).
+
+Consider the following example of a purchase order with three lines. For this example, we will assume that the entire order is for a single site and warehouse. Each purchase order line has a single related InventTrans record also known as an inventory transaction. We will also assume each line is for a quantity of 10. The following diagram shows the relationship of one purchase order header, to three purchase order lines, each with one InventTrans record.
+
+
+
+Now, let's assume that you receive a quantity of 5 on the first purchase order line, the full quantity for the second line and nothing on the third line of the purchase order. You will now have a second inventory transaction related to the first purchase order line. The transaction for the second purchase order line will be updated to received, and the third transaction will remain the same. The following diagram shows the relationship with the additional InventTrans record for purchase order line 1.
+
+In this example, the system will post a voucher into the general ledger that we refer to as the physical voucher. We will assume in this example that you have configured the item model group to post physical inventory, and that all items are using the same item model group and the inventory posting profile is using a single set of main accounts, a single voucher will be created and the InventTrans record will link both InventTrans 1 and InventTrans 2 to the same voucher.
+
+Next, let's assume that you receive an invoice for the quantity that is received on lines 1 and 2. The system will create another voucher into the general ledger that we refer to as the financial voucher. We will assume that you have configured the item model group to post financial inventory. The new second voucher will be related to InventTrans 1 and InventTrans 2.
+
+Depending on the costing model you are using, a third general ledger posting may exist for your inventory subledger transactions related to the closing and settlement of the inventory. For more information about, refer to [Invenotry close](/supply-chain/cost-management/inventory-close.md). You can view the details of all inventory transactions by opening **Inventory management > Inquiries and reports > Transactions**.
+
+One important thing to note about the behavior of inventory transactions is that the system will automatically split the inventory transaction for each unique combination of inventory dimensions and for each partial update, which was shown in the example above for partial updates.
+
+To illustrate an example of splitting inventory transactions based on inventory dimension, let's assume that the purchase order line 3 in the example is a serialized item. Later you register 10 serial numbers for the purchase order during the receiving process, the system will split the single inventory transaction into 10 inventory transactions. The following diagram shows the relationship and additional inventory transaction each with their own serial number related to purchase order line 3.
+
+In the example above, if each serial number is received on a single product receipt, there would be one additional voucher created and the physical voucher field will be linked to each serial number. The same is true for the financial update when you invoice the purchase order.
+
+The following table describes each of the fields in the **Inventory transactions** page.
+
+| Field            | Description                                                                                                                                                                                                                                                                        |
+|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Item number      | The item number related to the transaction.                                                                                                                                                                                                                                        |
+| Physical date    | The date the inventory arrives at the warehouse, leaves the warehouse, is consumed in production, or is produced. For example, the posting date on the packing slip posting for a sales order, or of the product receipt posting for a purchase order.                             |
+| Financial date   | The date the inventory transaction is closed and the cost is recorded in the general ledger. For example, the posting date on the invoice generation for a sales or purchase order. Updates to the reference document are no longer allowed after the financial date is populated. |
+| Reference        | Indicates the source of the transaction and the type of document that is displayed in the **Number** field. For example, sales order, purchase order, transfer order receipt, and so on.                                                                                           |
+| Number           | Indicates the reference ID for a transaction. For example, if the **Reference** field indicates sales order, the **Number** field indicates the sales order number.                                                                                                                |
+| Receipt (status) | For inventory transactions that are receipts, this field indicates the status of the receipt. For example, a purchase order is a receipt, and the statuses may be Ordered or Purchased.                                                                                            |
+| Issue (status)   | For inventory transactions that are issues, this field indicates the status of the issue. For example, a sales order is an issue, and the statuses may be On order or Sold.                                                                                                        |
+| Quantity         | The quantity of the inventory transaction. Positive numbers are used for receipts to inventory while negative numbers are used for issues from inventory.                                                                                                                          |
+| Unit             | The unit of measure that the quantity is expressed in.                                                                                                                                                                                                                             |
+| CW quantity      | The catch weight quantity for the transaction. For more information, refer to [About catch weight items](/dynamicsax-2012/appuser-itpro/about-catch-weight-items.).                                                                                                             |
+| CW unit          | The catch weight unit of measure the catch weight quantity is expressed in.                                                                                                                                                                                                        |
+| Cost amount      | The final cost of the inventory transaction. This field is only populated when a transaction is financially updated. Depending on the costing methodology that you use, the Inventory close and adjustment process may update the amount in this field.                            |
+
+## Inventory statuses
+
+Each inventory transaction has a status that is displayed in either the **Receipt** field or the **Issue** field. The field that is used depends on the type of inventory transactions. Receipts are simply any transaction that increases the inventory. For example, a purchase order with a positive quantity, or a sales order return with a negative quantity. Issues are simply any inventory transaction that decreased the inventory. For example, a sales order with a positive quantity, or a purchase order return with a negative quantity.
+
+### Receipt statuses
+
+The following table shows the receipt statuses and describes when they are used.
+
+| **Receipt status** | **Description**                                                                                                                                                                                                                                                                                                                                                   |
+|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Ordered            | This is the initial status of any inventory transaction that represents a receipt. This includes but is not limited to, Purchase orders with a positive quantity, Production orders (finished good), Sales order returns with a negative quantity.                                                                                                                |
+| Registered         | This status is used when a two-step receiving process is in place or when Item arrival is used to indicate product has arrived. It is also commonly used when batch or serial numbers are "allocated" or registered to the order. For more information about item arrival, refer to [Arrival overview](/supply-chain/inventory/arrival-overview.md) |
+| Received           | This status is used when the transaction is physically updated. For a purchase order this would be the product receipt is posted, or for a sales order return this would be the packing slip is posted.                                                                                                                                                           |
+| Purchased          | This is the status used when the transaction is financially updated. For a purchase order or sales order return this is when the invoice is generated.                                                                                                                                                                                                            |
+
+### Issue statuses
+
+The following table shows the issue statuses and describes when they are used.
+
+| **Issue status**  | **Description**                                                                                                                                                                                                                                                                                                                                                                             |
+|-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| On order          | This is the initial status of any inventory transaction that represents an issue. This includes but is not limited to Sales orders with a positive quantity, Production orders BOM or Formula lines, Purchase order returns with a negative quantity.                                                                                                                                       |
+| Reserved ordered  | This inventory status is used to indicate that inventory is reserved against an order that is created, but not yet physically received in inventory. When the inventory is received, the status will automatically update to Reserved physical. For more information about reservations, refer to [Reserve inventory quantities](/supply-chain/inventory/reserve-inventory-quantities.md). |
+| Reserved physical | This status is used to indicate that the inventory has been allocated or reserved against a specific order. When inventory is reserved, it is not physically available for other orders.                                                                                                                                                                                                    |
+| Picked            | This status is used to indicate that the inventory has been picked from the warehouse. The inventory is still physically in warehouse and has not been removed physically but is not available for other orders.                                                                                                                                                                            |
+| Deducted          | This status is used when the transaction is physically updated. For a sales order this would be the packing slip is posted, or for a purchase order return this would be the product receipt is posted.                                                                                                                                                                                     |
+| Sold              | This is the status used when the transaction is financially updated. For a purchase order or sales order this is when the invoice is generated.                                                                                                                                                                                                                                             |
+
+For more information about the inventory transactions, refer to [Inventory transactions detail](supply-chain/inventory/inventory-transactions.md).
+
+## Configure an inventory posting profile
+
+To configure an inventory posting profile, follow these steps.
+
+1.  Open **Inventory management > Setup > Posting > Posting**.
+
+2.  Select the tab for the type of transaction you want to configure, for example, select **Purchase order**.
+
+3.  Select the radio button for the posting type you want to configure, for example, select **Purchase expenditure for expense**.
+
+4.  Click **New**.
+
+5.  In the **Item code** field select an option for Table, Group, All, or Category. For example, to configure a posting profile for a specific item group, select Group.
+
+    1.  If you selected Table in step 5, select the specific Item number for the posting profile in the **Item relation** field.
+
+    2.  If you selected Group in step 5, select the Item group for the posting profile in the **Item relation** field.
+
+    3.  If you selected All in step 5, the **Item relation** field will be left blank.
+
+    4.  If you selected Category in step 5, the **Item relation** field will be left blank. Use the **Category relation** field to select the category the posting profile applies to.
+
+6.  In the **Account code** field select an option for Table, Group, or All. For example, to apply the posting profile to all vendors, select All.
+
+    1.  If you selected Table in step 5, select the specific Vendor number for the posting profile in the **Account relation** field.
+
+    2.  If you selected Group in step 5, select the Vendor group for the posting profile in the **Account relation** field.
+
+    3.  If you selected All in step 5, the **Account relation** field will be left blank.
+
+7.  To associate a particular tax group that has the selected posting type, select a **Sales tax group**. If you leave this field blank, the posting type applies to all existing tax groups. Posting that is specified for tax groups applies only to transactions that are made for sales and purchases.
+
+8.  Specify the account number to post the account type to in the **Main account** field. Select one of the existing account numbers in the chart of accounts. If you have not already created an account number for use as the accounting type, you can create a new account. You create a new account in the **Main account details** page in General ledger.
+
+## Additional resources
+
+Each tab on the **Inventory posting profile** page relates to a subledger in Dynamics 365 Supply Chain Management. Use the following pages for more details about each.
+
+-   [Sales order posting](general-ledger/sales-order-posting.md)
+
+-   [Purchase order posting](general-ledger/Purchase-order-posting.md)
+
+-   [Inventory posting](general-ledger/inventory-posting.md)
+
+-   [Production control posting](general-ledger/Production-control-posting.md)
+
+-   [Standard cost variance posting](general-ledger/Standard-cost-variance-posting.md)
