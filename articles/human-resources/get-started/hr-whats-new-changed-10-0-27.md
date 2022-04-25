@@ -70,7 +70,7 @@ The following table lists the features that are included in this release. We mig
 | Streamlined employee entry | This feature enables efficient entry of employee and employment data. You can quickly update work history information for past, active, and future employees and contractors. The feature also provides more intuitive navigation options. | GA |
 | Task management | This feature enables custom checklists and tasks to be created for onboarding, offboarding, and position changes for employees. | GA |
 | Benefits management | This feature enables benefits management. | GA |
-| Enable eligibility rules using custom fields in benefits management | (Preview) This feature enables custom fields on the worker, job, and employment (and related tables) to be included in eligibility rules for benefits management. | Preview |
+| Enable eligibility rules using custom fields in benefits management | (Preview) This feature enables custom fields on the worker, job, and employment (and related tables) to be included in eligibility rules for benefits management. | GA |
 
 \* Human resources user experience enhancements must be turned on in Feature management.
 
@@ -83,7 +83,7 @@ When you use the **Feature management** workspace to enable the Human resources 
 The following features must be enabled before the **Human resources user experience enhancements** feature:
 
 - Managers can view performance-related information for extended reports
-- (Preview) Task management
+- Task management
 - Future-dated worker transfer with cross company compensation
 - Configure multiple compensation levels per job\*
 - Filter active positions
