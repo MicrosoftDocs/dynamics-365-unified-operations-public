@@ -36,6 +36,8 @@ Use this page to create mass monthly recurring invoices with the information tha
 
 ## Generate invoice batch processing
 
+Use this page to create recurring invoices in a recurring batch process. The same parameters are available as on the Generate invoice page but they can be saved in a batch process to run again. 
+
 ## Price update
 
 Use this utility to update the prices of several items on multiple billing schedules in a single action. The prices can be updated based on a specified percent or a specified amount. The lines list shows the current unit prices of the items only. It does not show the prices after the price update. 
@@ -155,4 +157,21 @@ Use this page to mark all selected billing schedule lines as billed (stub) or un
 
 ## Update completion date process
 
-Use this page to update the completion date for specific milestone items for multiple billing schedules or customers. You can also update the completion percentage for items on milestone templates. 
+Use this page to update the completion date for specific milestone items for multiple billing schedules or End users. 
+You can also update the completion percentage for items on milestone templates that use the Percent completed method. Under Milestone processing select **Update completion percentage**. Enter the total percentage complete in the **Percentage** amount field. Select the item number that relates to the milestone template. Under **Records to include** select the Filter button to select a specific **End user account**, **Billing schedule number** or **Item numbers** in the Criteria. Click Ok to process the change. When complete, this will add a new line to the milestone allocation representing the percentage complete for the milestone template. 
+
+## Unbilled revenue mass processing
+
+Use this page to create the unbilled revenue journal entry or stub the journal entry for one or more selected billing schedules or billing detail lines. 
+
+1. **Create journal entry** creates the unbilled revenue journal entries for multiple billing schedule lines
+2. **Stub journal entry** marks the billing schedule lines that have the unbilled journal entries already created. This option is typically used if the unbilled journal entry was already posted in another system so this only marks the unbilled revenue journal as stubbed. 
+3. **Reverse stub journal entry** reverses out any stub journal entries that have been processed. 
+4. **Stub billing detail line** 
+5. **Reverse stub billing detail line**
+
+The Transaction date displays the transaction date. The default is the current date and can be updated as needed. 
+The Journal name is used to post the Create journal entry to the General ledger. The default is from the **Recurring contract billing parameters** page, **Default journal name** under **Unbilled revenue**.
+
+**Note:** The stub process does not post any amounts to the General ledger so the **Journal name** field is disabled for all stub and reverse stub processes. 
+
