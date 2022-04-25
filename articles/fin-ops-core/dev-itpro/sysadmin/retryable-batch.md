@@ -31,7 +31,7 @@ We recommended that you use this option when you want a batch job task always to
 
 Currently, if Finance and Operations apps experience a brief loss of connection to Microsoft SQL Server, all batch jobs that are running fail. This behavior disrupts business processes. Because connection loss is inevitable in a cloud service, Microsoft enables automated retries when failures of this type occur.
 
-By default, all batch classes that are idempotent and produce same results even after multiple runs are retryable. You can set an idempotency flag in the batch class instance by using **classinstance.BatchInfo().parmIdempotent(boolean)**. 
+By default, all batch classes that are idempotent and produce the same results even after multiple runs are retryable. You can set an idempotency flag in the batch class instance by using **classinstance.BatchInfo().parmIdempotent(boolean)**. 
 
 Because not all batch jobs might be idempotent (for example, when a batch runs credit card transactions), retries can't be enabled equally across all batch jobs. To help ensure that retries can be safely enabled, Microsoft has added metadata to the batch jobs to indicate whether they can automatically be retried. Between versions 10.0.18 and 10.0.19, more than 90 percent of the Microsoft batch jobs have explicitly implemented the **BatchRetryable** interface, and the **isRetryable** value has been set appropriately. For any jobs where the **BatchRetryable** interface isn't implemented, the default value of **isRetryable** is **False**.
 
@@ -44,6 +44,9 @@ Precedence for the retryable flag for a class evaluation is in the following ord
 3. If the **isIdempotent** flag is **False**, and the batch class override configuration isn't implemented, the **isRetryable** flag is evaluated. If the value is **True**, the task will be retried. If it's **False**, the task won't be retried.
 
 The maximum number of retries and the retry interval are controlled by the batch platform. The **BatchRetryable** interface starts after five seconds and stops retrying after the interval time reaches five minutes. (Interval time increases in the following way: 5, 8, 16, 32, and so on.)
+
+> [!NOTE]
+> For SQL transient errors, the batch platform will retry the task if the exception that is thrown from the customer class is an exception of the **TransientSqlConnectionError** type, or if **TransientSqlConnectionError** can be wrapped as a nested exception inside a custom exception and thrown.
 
 ## Batch OData action capability
 
@@ -113,4 +116,4 @@ In this context, *idempotent* means that a retry won't change or affect the over
 
 ### Can I change the maximum number of retries and the retry interval?
 
-The **BatchRetryable** interface enables transient SQL connection issues to be handled. It's mainly controlled by the framework. Customers can't update setting for **BatchRetryable**, such as the maximum number of retries and the retry interval.
+The **BatchRetryable** interface enables transient SQL connection issues to be handled. It's mainly controlled by the framework. Customers can't update settings for **BatchRetryable**, such as the maximum number of retries and the retry interval.
