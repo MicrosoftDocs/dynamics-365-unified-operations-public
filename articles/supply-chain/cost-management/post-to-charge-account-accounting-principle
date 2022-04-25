@@ -1,0 +1,143 @@
+---
+# required metadata
+
+title: Post to charge account accounting principle
+description: An overview of the post to charge account accounting principle.
+author: raprofit
+ms.date: 04/25/2022
+ms.topic: overview
+ms.prod: 
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: InventPosting, InventItemGroup
+# ROBOTS: 
+audience: Application User
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: raprofit
+
+---
+
+# Post to charge account accounting principle
+
+The post to charge accounting principle is enabled by selecting the **Post to charge account in ledger** parameter on the **Invoice** tab in the **Accounts payable parameters** page. This parameter allows you to account for and more easily reconcile when there is a difference in the unit price between the physical and financial posting, indirect costs on purchased items, or charges on a purchase order.
+
+Charges on a purchase order can affect the valuation of inventory assets when configured in two ways. When the **Charges codes** are configured in **Accounts payable** with either of the following:
+
+-   The **Debit Type** is set to Item and the **Credit Type** is set to Ledger account. In this example, the ledger account selected as the absorption account acts as a stock variation account.
+-   The **Debit Type** is set to Item and the **Credit Type** is set to Customer/Vendor. In this example, the charge will be accounted as material cost, and the stock variation account of the item will be used.
+
+## European special accounting rule
+
+In Europe, the Post to charge account accounting principle is commonly used for incorporating a special accounting rule. For example, there are two common ways one can account for inventory changes.
+
+The first method is referred to as the "cost of sales method". This approach is supported with standard inventory posting profile configuration without the Post to charge account option.
+
+The second method is referred to as the "nature of expense" method. It is very common that smaller organizations follow this process, which typically involves the following steps.
+
+1.  At the time goods or services are received, they are fully expensed.
+2.  At the end of the period, a cycle count is performed.
+3.  A manual adjustment is posted for the quantity and value into inventory. The offset account is a stock variation account that offsets the expense posted in the first step. As a result, you only see the variation in the stock value on this account.
+
+By making use of the post to charge account principle one can fully automate the two postings, which eliminates a manual period end closing adjustment posting.
+
+## Enable the post to charge account accounting principle
+
+To enable the post to charge account accounting principle, follow these steps.
+
+1.  Open **Accounts payable &gt; Setup &gt; Accounts payable parameters**.
+2.  Click the **Invoice** tab.
+3.  Select the **Post to charge account in ledger** parameter in the **Invoice** FastTab.
+4.  Close the form.
+
+## Prerequisites and recommended parameters for the post to charge accounting principle
+
+If you plan to account for purchase charges and stock variations, the following conditions must be met:
+
+-   The **Post to charge account in ledger** check box must be select in the **Accounts payable parameters** page on the **Invoice** tab.
+-   The **Post physical inventory** in ledger check box must be selected in the **Item model group** page for the item selected on the purchase order line.
+-   The **Post financial inventory** in ledger check box must be selected in the **Item model group** page for the item selected on the purchase order line.
+-   The **Accrue liability on product receipt** check box must be selected in the **Item model group** page for the item selected on the purchase order line.
+-   The **Generate charges on product receipt** check box must be selected in the **Procurement and sourcing parameters** page.
+-   The **Post packing slip in ledger** check box must be selected in the Inventory and warehouse management parameters page.
+-   The main accounts must be specified in the **Inventory posting profile** page for the following posting types:
+    -   Purchase expenditure, un-invoiced
+    -   Purchase expenditure for product
+    -   Stock variation
+
+## Example 1: Change in unit cost price
+
+Prerequisites for this example:
+
+-   FIFO costing model
+
+**Steps:**
+
+1.  Create a purchase order for an item with a quantity of 1 and a unit price of 100.00.
+2.  Confirm the purchase order.
+3.  Post the product receipt for the purchase order.
+4.  Validate the voucher on the product receipt. The following table shows a sample voucher.
+
+| Posting type                         | Main account example | Main account name example | Account type | Debit/ Credit? | Clearing account | Physical or Financial | Amount  |
+|--------------------------------------|----------------------|---------------------------|--------------|----------------|------------------|-----------------------|---------|
+| Purchase, stock variation            | 600170               | Stock variation materials | Expense      | Credit         | No               | P                     | -100.00 |
+| Cost of purchased materials received | 140100               | Materials Inventory       | Asset        | Debit          | Yes              | P                     | 100.00  |
+| Purchase expenditure, un-invoiced    | 600180               | Material Receipts         | Expense      | Debit          | Yes              | P                     | 100.00  |
+| Purchase, accrual                    | 200140               | Accrued Purchases         | Liability    | Credit         | Yes              | P                     | -100.00 |
+
+5.  Post the invoice for the purchase order with an updated unit price of 110.00.
+6.  Validate the voucher on the invoice. The following table shows a sample voucher.
+
+| Posting type                         | Main account example | Main account name example | Account type | Debit/ Credit? | Clearing account | Physical or Financial | Amount  |
+|--------------------------------------|----------------------|---------------------------|--------------|----------------|------------------|-----------------------|---------|
+| Purchase, stock variation            | 600170               | Stock variation materials | Expense      | Credit         | No               | F                     | -10.00  |
+| Cost of purchased materials received | 140100               | Materials Inventory       | Asset        | Debit          | Yes              | F                     | -100.00 |
+| Purchase expenditure, un-invoiced    | 600180               | Material Receipts         | Expense      | Debit          | Yes              | F                     | -100.00 |
+| Purchase, accrual                    | 200140               | Accrued Purchases         | Liability    | Credit         | Yes              | F                     | 100.00  |
+| Cost of purchased materials invoiced | 140100               | Materials Inventory       | Asset        | Debit          | No               | F                     | 110.00  |
+| Purchase expenditure for product     | 600180               | Materials Receipt         | Expense      | Credit         | No               | F                     | 110.00  |
+| Vendor balance                       | 211000               | Accounts Payable Trade    | Liability    | Credit         | No               | F                     | -110.00 |
+
+## Example 2: Charges and indirect costs on the purchase order
+
+Prerequisites for this example:
+
+-   FIFO costing model
+-   Charges code 1: Debit item and Credit Ledger account for 10%
+-   Charges code 2: Debit item and Credit Customer/Vendor for 10.00 Proportional
+-   Indirect cost: 2.005 added to the purchase price
+
+**Steps:**
+1.  Create a purchase order for an item with a quantity of 1 and a unit price of 100.00.
+2.  Add one charges code for 10% that Debits the item and Credits the Ledger.
+3.  Add one charges code for 10.00 that Debits the item and Credits the Customer/Vendor.
+4.  Allocate the charges to the lines of the purchase order.
+5.  Confirm the purchase order.
+6.  Post the product receipt for the purchase order.
+7.  Validate the voucher on the product receipt. The following table shows a sample voucher.
+
+| Posting type                         | Main account example | Main account name example     | Account type | Debit/ Credit? | Clearing account | Physical or Financial | Amount  |
+|--------------------------------------|----------------------|-------------------------------|--------------|----------------|------------------|-----------------------|---------|
+| Purchase, stock variation            | 600170               | Stock variation materials     | Expense      | Credit         | No               | P                     | -110.00 |
+| Estimated indirect cost absorbed     | 600520               | Absorbed Indirect Costs       | Expense      | Credit         | Yes              | P                     | -2.40   |
+| Purchase freight                     | 600120               | Freight/ Transportation Costs | Expense      | Credit         | No               | P                     | -10.00  |
+| Cost of purchased materials received | 140100               | Materials Inventory           | Asset        | Debit          | Yes              | P                     | 122.40  |
+| Purchase expenditure, un-invoiced    | 600180               | Material Receipts             | Expense      | Debit          | Yes              | P                     | 110.00  |
+| Purchase, accrual                    | 200140               | Accrued Purchases             | Liability    | Credit         | Yes              | P                     | -110.00 |
+
+8.  Post the invoice for the purchase order.
+9.  Validate the voucher on the invoice. The following table shows a sample voucher.
+
+| Posting type                         | Main account example | Main account name example | Account type | Debit/ Credit? | Clearing account | Physical or Financial | Amount  |
+|--------------------------------------|----------------------|---------------------------|--------------|----------------|------------------|-----------------------|---------|
+| Purchase, stock variation            | 600170               | Stock variation materials | Expense      | Credit         | No               | F                     | 0.00    |
+| Estimated indirect cost absorbed     | 600520               | Absorbed Indirect Costs   | Expense      | Debit          | Yes              | F                     | 2.40    |
+| Indirect cost absorbed               | 600520               | Absorbed Indirect Costs   | Expense      | Debit          | No               | F                     | -2.40   |
+| Cost of purchased materials received | 140100               | Materials Inventory       | Asset        | Credit         | Yes              | F                     | -110.00 |
+| Purchase expenditure, un-invoiced    | 600180               | Material Receipts         | Expense      | Credit         | Yes              | F                     | -110.00 |
+| Purchase, accrual                    | 200140               | Accrued Purchases         | Liability    | Debit          | Yes              | F                     | 110.00  |
+| Cost of purchased materials invoiced | 140100               | Materials Inventory       | Asset        | Debit          | No               | F                     | 110.00  |
+| Purchase expenditure for product     | 600180               | Materials Receipt         | Expense      | Credit         | No               | F                     | 110.00  |
+| Vendor balance                       | 211000               | Accounts Payable Trade    | Liability    | Credit         | No               | F                     | -110.00 |
