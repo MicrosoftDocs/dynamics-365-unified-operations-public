@@ -80,7 +80,7 @@ For any data source of the USER INPUT PARAMETER type, the following properties c
     >   - When a data source is configured in the format component, it's visible by default.
     >   - When a data source is configured in the model mapping component, it's visible only if the value of this data source affects the outcome of an ER component run. For example, if you added a data source but didn't use it in expressions and bindings of the current model mapping component, by default the relevant data entry field will not be offered for user at runtime on the dialog box. 
 
- - On the **Formula designer** page, in the **Formula** field, configure an expression that returns the *Boolean* value.
+    - On the **Formula designer** page, in the **Formula** field, configure an expression that returns the *Boolean* value.
 
         - When the expression is configured and returns a value of **True** at runtime or the expression isn't configured at all, the related data entry field is visible on the dialog box at runtime.
         - When the expression is configured and returns a value of **False**, the related data entry field is hidden on the dialog box at runtime. When it's called by other expressions at runtime, it returns the default value, the previously used value, or the default for the current data type value depending on other settings.
