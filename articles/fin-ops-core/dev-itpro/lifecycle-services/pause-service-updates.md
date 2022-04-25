@@ -3,7 +3,7 @@
 
 title: Pause service updates through Lifecycle Services (LCS)
 description: This topic explains how to pause service updates to your environments.
-author: angelmarshall
+author: laneswenka 
 ms.date: 04/21/2022
 ms.topic: article
 ms.prod: 
@@ -20,7 +20,7 @@ ms.reviewer: sericks
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tsmarsha
+ms.author: laswenka
 ms.search.validFrom: 2019-3-31 
 ms.dyn365.ops.version: Platform update 24 
 
