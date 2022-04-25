@@ -2,7 +2,7 @@
 title: Separated Dual-write Application Orchestration package
 description: The Dual-write Application Orchestration package is no longer a single package but has been separated into smaller packages. This topic explains the solutions and maps that each package contains, and its dependency on other packages.
 author: RamaKrishnamoorthy
-ms.date: 11/29/2021
+ms.date: 04/25/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
@@ -334,7 +334,7 @@ The following maps are available in this package.
 
 **Dependency information**
 
-The Dual-write party and global address book solutions depend on the following three packages. Therefore, you should install these packages before you install the Dual-write party and global address book solutions package.
+The dual-write party and global address book solutions depend on the following three packages. Therefore, you should install these packages before you install the dual-write party and global address book solutions package.
 
 - Dual-write Application Core package
 - Dual-write Finance package
