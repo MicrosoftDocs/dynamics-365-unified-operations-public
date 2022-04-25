@@ -44,7 +44,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | We are removing support for XML URL resolution, since this has been identified as a potential security vulnerability. This means that external resources associated with XLM files will no longer be resolved.  |
+| **Reason for deprecation/removal** | We are removing support for XML URL resolution since this has been identified as a potential security vulnerability. This means that external resources associated with XML files will no longer be resolved.  |
 | **Replaced by another feature?**   | No. |
 | **Product areas affected**         | Finance and Operations apps |
 | **Deployment option**              | All |
