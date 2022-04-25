@@ -3,7 +3,7 @@
 
 title: One Version service updates FAQ
 description: This topic provides clarity about the service updates, processes, and tools that you can use to stay current in a consistent, predictable, and seamless manner.
-author: ShellyBakke
+author: laneswenka
 ms.date: 04/21/2022
 ms.topic: article
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: sericks
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: smiller
+ms.author: laswenka
 ms.search.validFrom: 2018-10-31 
 ms.dyn365.ops.version: 8.1
 ---
