@@ -79,9 +79,9 @@ Updates are applied as deployable package on an environment. A deployable packag
     - For Application updates, check the version of the model that included the fix. For example, if the fix was in Application suite, then the version of the Application suite is updated.
 
 ## Servicing changes
-Microsoft has rolled out the new post-servicing step that allows you to perform index creations in online mode to reduce the overall servicing downtime. During this step, the LCS dashboard will start showing **Post-serciving** after offline servcing is complete and during this time certain index creation and modification will be done in an online mode and the environment will be accessible to perform normal activities and may experience degrdaded performance on the concerned package changes. During post-servicing, users will not be allowed to cancel or trigger new service request until the post-servicing step is completed.
+Microsoft has rolled out a new post-servicing step that allows you to perform index creations in online mode to reduce the overall servicing downtime. During this step, the LCS dashboard will start showing **Post-serciving** after offline servcing is complete, and during this time, certain index creation and modification will be done in an online mode and the environment will be accessible to perform normal activities and may experience degrdaded performance on the concerned package changes. During post-servicing, users will not be allowed to cancel or trigger new service requests until the post-servicing step is completed.
 
-The LCS dashboard will show **Post-serciving failed** when there's any failure in the post-servicing stage. The environment will be still accessible to perform normal activities and may experience degrdaded performance. Please contact Microsoft Support if you expereince the same issue upon retry.  
+The LCS dashboard will show **Post-serciving failed** when there's any failure in the post-servicing step. The environment will be still accessible to perform normal activities and may experience degrdaded performance. Please contact Microsoft Support if you expereince the same issue upon retry.  
 
 ![image](https://user-images.githubusercontent.com/90061039/164792400-d8ca418c-6a5e-468c-a965-eae597bfb737.png)
 
