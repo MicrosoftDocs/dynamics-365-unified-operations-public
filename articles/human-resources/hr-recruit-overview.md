@@ -33,24 +33,21 @@ ms.dyn365.ops.version: Version 10.0.27
 In human resources management, recruitment is the process of finding and hiring the best and most qualified candidate for a job opening. It can also be defined as the 
 process for searching for prospective employees. 
 
-In Dynamics 365 Human Resrouces (merged infrastructure), there are two recruiting experiences: **Recruitment projects** and **HR Recruitment**. The default setting 
+In Dynamics 365 Human Resources (merged infrastructure), there are two recruiting experiences: **Recruitment projects** and **HR Recruitment**. The default setting 
 is **Recruitment projects** until **HR Recruitment** is enabled through feature management and HR parameters.  
 
 Recruitment projects organize the steps to complete when filling open positions in a legal entity. An applicant is a person who applies for 
-employment to your enterprise. An application is an applicant's expression of interest in being employed by a company and and may be tied to a recruitment project. 
-A single applicant may have multiple applications within the same legal entity or across multiple companies in an organization. (Link to Recruitment projects) 
+employment to your enterprise. An application is an applicant's expression of interest in being employed by a company and may be tied to a recruitment project. 
+A single applicant may have multiple applications within the same legal entity or across multiple companies in an organization. 
 
 HR Recruitment helps manage recruiting requests. It also helps to transition job candidates to employees. If your organization uses a separate 
 recruiting application, your recruiting process might include the following steps: 
 
-Enter your recruiting request in Human Resources. 
+1. Enter your recruiting request in Human Resources. 
+2. Receive candidate referrals in Human Resources from the recruiting application. 
+3. Complete the candidate approval process in Human Resources. 
 
-Receive candidate referrals in Human Resources from the recruiting application. 
-
-Complete the candidate approval process in Human Resources. 
-
-If you aren't using a separate recruiting application, you can also manually manage candidates in Human Resources. 
-(link to Recruit job candidates: Say Enable recruiting requests on merged infrastructure ) ***see below*** 
+If you aren't using a separate recruiting application, you can manually manage candidates in Human Resources. 
 
 > [!Important] 
 > Dynamics 365 Human Resources (stand-alone) helps you to manage recruiting requests. It also helps you seamlessly transition job candidates to employees.
