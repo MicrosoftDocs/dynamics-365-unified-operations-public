@@ -45,6 +45,8 @@ Precedence for the retryable flag for a class evaluation is in the following ord
 
 The maximum number of retries and the retry interval are controlled by the batch platform. The **BatchRetryable** interface starts after five seconds and stops retrying after the interval time reaches five minutes. (Interval time increases in the following way: 5, 8, 16, 32, and so on.)
 
+Note: For SQL transient errors batch platform will retry if exception thrown from customer class is of type TransientSqlConnectionError exception or TransientSqlConnectionError can be wrapped as nested exception inside custom exception and thrown.
+
 ## Batch OData action capability
 
 This option isn't a direct execution retry like the previous two options. It enables the customer to add custom logic before the job is retriggered. When job execution fails, you can listen to corresponding business events and decide whether the failure can be retried. The batch platform has exposed a new Open Data Protocol (OData) action from version 10.0.22 (with Platform update 46). When a job ID is provided in a call to the endpoint, the job will be requeued for execution.
