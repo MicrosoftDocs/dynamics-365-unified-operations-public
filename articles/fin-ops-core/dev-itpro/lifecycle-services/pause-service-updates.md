@@ -32,9 +32,6 @@ ms.dyn365.ops.version: Platform update 24
 
 This topic explains how to pause updates to your sandbox and production cloud environments by using Microsoft Dynamics Lifecycle Services (LCS). This topic doesn't apply to on-premises environments.
 
-> [!IMPORTANT]
-> This feature is available only to customers who are using **version 8.1 and later** or are using **version 7.3**, and who are **not** part of the [First release](../../../fin-ops-core/fin-ops/get-started/public-preview-releases.md) program. Microsoft is working to make the feature available to First release customers. For customers who are using version 7.1, 7.2, or 8.0, you can manually take the update by using the regular servicing flows.
-
 Microsoft updates your configured sandbox and production environments to the latest service update that Microsoft has released. Microsoft notifies you about upcoming updates to your environments via email and through notifications in LCS. At that point, if you can't proceed with the update for some reason, you can pause it through LCS.
 
 For more information about how to change the configured sandbox environment and set the production update cadence, see [Configure service updates through Lifecycle Services (LCS)](configure-service-updates.md).
@@ -45,7 +42,7 @@ Only users (customers or partners) who are assigned to the **project owner** rol
 
 Staying current with service updates helps guarantee that customers always run on the latest set of fixes that Microsoft has released, so that they have the best service experience. Therefore, Microsoft doesn't allow updates to be paused indefinitely.
 
-You can't use LCS to pause updates if you're four updates behind the latest update that Microsoft has released. This limitation includes being behind in any sandbox and production environments in your project. For example, if the latest update that Microsoft has released is version 10.0.25, customers who have environments that are on version 10.0.22, 10.0.23, or 10.0.24 **can** pause updates. However, customers who have environments on version 10.0.21 **can't** pause updates, because they are four updates behind. If any sandbox or production environment is too far behind, you will receive the following error message if you try to pause updates via LCS: 
+You can't use LCS to pause updates if any sandbox and production environments in your project are four updates behind the latest update that Microsoft has released. For example, if the latest update that Microsoft has released is version 10.0.25, customers who have environments that are on version 10.0.22, 10.0.23, or 10.0.24 **can** pause updates. However, customers who have environments on version 10.0.21 **can't** pause updates, because they are four updates behind. If any sandbox or production environment is too far behind, you will receive the following error message if you try to pause updates via LCS: 
 
 > One or more sandbox and/or production environments are not compliant with Microsoft's service update policy. All your environments need to be compliant before you can pause updates.
 
@@ -103,7 +100,7 @@ Any time that you pause updates or edit an existing pause, a notification appear
 > [!IMPORTANT]
 > You can pause updates through LCS until four hours before the start of the downtime window.
 >
-> You can cancel a pause and resume updates only seven days before the start of the downtime date. If you're past that date, you won't be able to cancel a pause.
+> You can cancel a pause and resume updates only seven days or more before the start of the downtime date. If there is less than seven days before your downtime starts you won't be able to cancel a pause.
 
 ## What happens after the pause duration expires?
 
