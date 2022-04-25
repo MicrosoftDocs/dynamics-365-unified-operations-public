@@ -58,7 +58,7 @@ The following illustration shows the class structure of the extension.
 ## Create a new Retail Server API
 
 1. Create the CRT extension. You must create the CRT extension before you create the Retail Server extension. A Retail Server API should have no logic except logic that calls the CRT with the parameters.
-2. Create a new C# class library project that uses the Microsoft .NET Framework version netstandard 2.0 as the target framework. As of version 10.0.26, the SDK supports only .NET 6 as the target framework. Alternatively, use one of the Retail Server samples in the Retail SDK as a template.
+2. Create a new C# class library project that uses the Microsoft .NET Framework version netstandard 2.0 as the target framework. Alternatively, use one of the Retail Server samples in the Retail SDK as a template.
 3. In the Retail Server extension project, add a reference to your CRT extension library or project. This reference lets you call the CRT request, response, and entities.
 4. In the Retail Server extension project, add the **Microsoft.Dynamics.Commerce.Runtime.Hosting.Contracts** package using the NuGet package manager. The NuGet packages can be found in the **RetailSDK\\pkgs** folder.
 5. Create a new public controller class and extend it from **IController**. This controller class will contain the method that the Retail Server API must expose, the controller class must be public.
