@@ -4,7 +4,7 @@
 title: Removed or deprecated platform features
 description: This topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
 author: sericks007
-ms.date: 04/14/2022
+ms.date: 04/25/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -38,7 +38,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
 
-## Platform updates for version 10.0.28 of Finance and Operations apps
+## Feature deprecation effective April 2022
 
 ### XML URL resolution in Data management 
 
@@ -46,7 +46,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 |------------|--------------------|
 | **Reason for deprecation/removal** | We are removing support for XML URL resolution, since this has been identified as a potential security vulnerability. This means that external resources associated with XLM files will no longer be resolved.  |
 | **Replaced by another feature?**   | No. |
-| **Product areas affected**         | Finance and Operations apps. |
+| **Product areas affected**         | Finance and Operations apps |
 | **Deployment option**              | All |
 | **Status**                         | Deprecated. |
 
