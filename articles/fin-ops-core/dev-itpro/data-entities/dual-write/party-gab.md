@@ -134,7 +134,7 @@ The grid includes the following columns:
 
 You can use the **New Electronic Address** button above the grid to create as many addresses as you want.
 
-During the lead qualification process you can provide both a business phone number and a mobile phone number. The business phone number is considered the primary phone if **IsMobile=No** and the mobile phone number is considered the secondary phone if **IsMobile=Yes**.
+During the lead qualification process, you can provide both a business phone number and a mobile phone number. The business phone number is considered the primary phone if **IsMobile=No** and the mobile phone number is considered the secondary phone if **IsMobile=Yes**.
 
 > [!TIP]
 > Use **Addresses** and **Electronic Addresses** tabs on the **Account** and **Contact** forms to manage postal and electronic addresses. This ensures that address data synchronizes to finance and operations apps.
@@ -143,7 +143,7 @@ During the lead qualification process you can provide both a business phone numb
 
 1. Open your customer engagement app environment.
 
-2. Install all pre-requisite solutions as described under [separated solutions](separated-solutions.md) page.  
+2. Install all prerequisite solutions as described in [sSeparated solutions](separated-solutions.md).  
 
 3. Install [Dual-write Party and Global Address Book Solutions](https://aka.ms/dual-write-gab).
 
