@@ -295,3 +295,47 @@ Project Operations depends on the following packages. Therefore, you should inst
 - Dual-write Supply Chain package
 - Dual-write Asset Management package
 - Dual-write Human Resources package
+
+## Dual-write party and global address book solutions
+
+The Dual-write party and global address book package contains the following solutions and maps that are required to sync party and global address book data. 
+
+| Unique name                          | Display name                              |
+|--------------------------------------|-------------------------------------------|
+| Party           | Party             |
+| Dynamics365GABExtended        | Dynamics 365 GAB Extended          |
+| Dynamics365GABDualWriteEntityMaps   | Dynamics 365 GAB Dual Write Entity Maps |
+| Dynamics365GABParty_Anchor | Dynamics 365 GAB and Party   |
+
+The following maps are available in this package.
+
+| Finance and operations app | Customer engagement app  | 
+|     ----------------------------|------------------------
+|     CDS Parties | msdyn_parties | 
+|     CDS postal address locations | msdyn_postaladdresscollections | 
+|     CDS postal address history V2 | msdyn_postaladdresses | 
+|     CDS Party postal address locations | msdyn_partypostaladdresses | 
+|     Party contacts V3 | msdyn_partyelectronicaddresses | 
+|     Customers V3 | accounts | 
+|     Customers V3 | contacts | 
+|     Vendors V2 | msdyn_vendors | 
+|     Contact person titles | msdyn_salescontactpersontitles | 
+|     Complimentary closings | msdyn_complimentaryclosings | 
+|     Salutations | msdyn_salutations | 
+|     Decision making roles| msdyn_decisionmakingroles | 
+|     Employment job functions | msdyn_employmentjobfunctions | 
+|     Loyalty levels| msdyn_loyaltylevels | 
+|     Personal character types | msdyn_personalcharactertypes | 
+|     Contacts V2 | msdyn_contactforparties | 
+|     CDS sales quotation header | quotes | 
+|     CDS sales order headers | salesorders | 
+|     Sales invoice headers V2 | invoices | 
+| CDS Address roles |msdyn_addressroles |
+
+**Dependency information**
+
+The Dual-write party and global address book solutions depend on the following three packages. Therefore, you should install these packages before you install the Dual-write party and global address book solutions package.
+
+- Dual-write Application Core package
+- Dual-write Finance package
+- Dual-write Supply Chain package
