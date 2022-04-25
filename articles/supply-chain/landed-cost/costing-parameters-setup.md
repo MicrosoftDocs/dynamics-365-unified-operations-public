@@ -127,7 +127,7 @@ The following table describes the settings that are available for each template.
 
 ## Volumetric divisors
 
-Volumetric divisors are used to calculate the volumetric weight. Each shipping/freight company formulates its own volumetric divisors. In addition, a company's divisors typically vary, depending on the mode of delivery. For example, air and sea often have very different divisors. A company can also make its rules more complex, depending on where it ships from. The volumetric devisor is used in following formula:  VolumetricWeight = Volume ÷ VolumetricDivisor.
+Volumetric divisors are used to calculate the volumetric weight. Each shipping/freight company formulates its own volumetric divisors. In addition, a company's divisors typically vary, depending on the mode of delivery. For example, air and sea often have very different divisors. A company can also make its rules more complex, depending on where it ships from. The system uses the following formula to find the volumetric weight: VolumetricWeight = Volume ÷ VolumetricDivisor.
 
 For example, a package that is sent by air has a volume of 3 cubic meters (m³). The company charges by volumetric weight and applies a volumetric divisor of 6. This divisor is divided by the volume to determine the volumetric weight. Therefore, the volumetric weight for this example is 3 ÷ 6 = 0.5 kilograms (kg).
 
