@@ -23,8 +23,7 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 10.0.27 
 ---
-# Set up positions
-
+# Dynamics 365 Human Resources recruitment
 
 [!INCLUDE [PEAP](../includes/peap-1.md)]
 
