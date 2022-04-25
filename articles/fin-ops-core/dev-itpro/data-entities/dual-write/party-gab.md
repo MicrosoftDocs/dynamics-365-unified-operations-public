@@ -2,7 +2,7 @@
 title: Party and global address book
 description: This topic describes the Party and global address book functionality of dual-write.
 author: RamaKrishnamoorthy
-ms.date: 03/10/2022
+ms.date: 04/25/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: josaw
@@ -288,8 +288,8 @@ A collection of table maps work together for party and global address book inter
 
 For more information, see [Dual-write mapping reference](mapping-reference.md).
 
-## Address roles as a multi-select dropdown
-A postal address or an electronic address can serve more than one purpose. Say for example, a postal address can be serve as both billing address as well as delivery address. In such case, a user can choose 2 purposes 'invoice' and 'delivery' from the drop down control as shown below. 
+## Address roles as a multi-select drop-down list
+A postal address or an electronic address can serve more than one purpose. For example, a postal address can serve as both a billing address as well as a delivery address. In such cases, a user can choose both **Invoice** and **Delivery** from the drop-down control, as shown below. 
 
 ![Purpose/Role.](media/purpose.png)
 
