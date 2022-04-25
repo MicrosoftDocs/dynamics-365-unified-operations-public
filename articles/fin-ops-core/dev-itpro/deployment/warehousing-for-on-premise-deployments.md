@@ -149,28 +149,30 @@ The following example shows a valid connection settings file that contains two c
 }
 ```
 
-For more information on how to save the json file see [Save the connection settings file on each device](../../../supply-chain/warehousing/install-configure-warehousing-app.md#save-the-connection-settings-file-on-each-device)
+For more information on how to save the json file, see [Save the connection settings file on each device](../../../supply-chain/warehousing/install-configure-warehousing-app.md#save-the-connection-settings-file-on-each-device)
 
 Once you have your file, you need to import it. See [Import the connection settings](../../../supply-chain/warehousing/install-configure-warehousing-app.md#import-the-connection-settings) for more information.
 
-### Manually configure the application ###
+### Manually configure the application
 
-1. Open the warehouse app on your mobile device.
+1. Open the Warehousing app on your mobile device.
 1. Go to **Connection settings**.
 1. Toggle the **Use demo mode** option to **No**.
-1. Tap the **Select connection** dropdown to expand the settings that are required to manually enter the connection details.
-    1. **Use client secret** – Set this option to Yes to use a client secret to authenticate with Supply Chain Management. Set it to No to use a certificate for authentication.
-    1. **Connection name** – Enter a name for the new connection. This name will appear in the Select connection field the next time that you open the connection settings. The name that you enter must be unique. (In other words, it must differ from all other connection names that are stored on your device, if any other connection names are stored there.).
-    1. **Active Directory Client ID** - The client ID that you obtained when you created an application entry in AD FS (step 2 in "Create an application entry in AD FS").
+1. Tap the **Select connection** drop-down control to expand the settings that are required to manually enter the connection details.
+    1. **Use client secret** – Set this option to **Yes** to use a client secret to authenticate with Supply Chain Management. Set it to **No** to use a certificate for authentication.
+    1. **Connection name** – Enter a name for the new connection. This name will appear in the **Select connection** field the next time that you open the connection settings. The name that you enter must be unique. (In other words, it must differ from all other connection names that are stored on your device, if any other connection names are stored there.).
+    1. **Active Directory Client ID** - The client ID that you obtained when you created an application entry in AD FS (step 2 in [Create an application entry in AD FS](#create-an-application-entry-in-ad-fs).
     1. **Active Directory Client Secret** - The client secret obtained when you created an application entry in AD FS.
     1. **Active Directory Resource** - The DNS URL for the AOS. Append the URL with '/namespaces/AXSF'.
+    
     > [!NOTE]
-    > Don't end this value with a slash (/)
+    > Don't end this value with a slash (/).
     > For example: `https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF`
 
     1.  **Active Directory Tenant** - The DNS URL for the AD FS machine. Append the URL with '/adfs/oauth2'. 
+    
     > [!NOTE]
-    > Don't end this value with a slash (/)
+    > Don't end this value with a slash (/).
     > For example: `https://adfs.d365ffo.onprem.contoso.com/adfs/oauth2`
 
     1. **Company** - Enter the legal entity to which you want the application to connect.
@@ -178,7 +180,8 @@ Once you have your file, you need to import it. See [Import the connection setti
 1. Select the **Save** button in the top-right corner of the application.
 1. If you're using an Android device and are using a certificate for authentication, the device prompts you to select the certificate.
 1. The application will now connect to Finance + Operations (on-premises) and the log-in screen for the warehouse worker will display.
+
 > [!NOTE]
-> In older releases if you do not have a telemetry ID for the Warehouse app user, you might encounter some errors. The workaround is to sign in to Finance + Operations (on-premises) through the webclient to get a Telemetry ID.
+> In older releases, if you do not have a telemetry ID for the Warehousing app user, you might encounter some errors. The workaround is to sign in to Finance + Operations (on-premises) through the web client to get a Telemetry ID.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
