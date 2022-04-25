@@ -298,7 +298,7 @@ Project Operations depends on the following packages. Therefore, you should inst
 
 ## Dual-write party and global address book solutions
 
-The Dual-write party and global address book package contains the following solutions and maps that are required to sync party and global address book data. 
+The dual-write party and global address book package contains the following solutions and maps that are required to sync party and global address book data. 
 
 | Unique name                          | Display name                              |
 |--------------------------------------|-------------------------------------------|
