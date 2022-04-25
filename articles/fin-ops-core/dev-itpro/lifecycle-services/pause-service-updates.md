@@ -100,7 +100,7 @@ Any time that you pause updates or edit an existing pause, a notification appear
 > [!IMPORTANT]
 > You can pause updates through LCS until four hours before the start of the downtime window.
 >
-> You can cancel a pause and resume updates only seven days or more before the start of the downtime date. If there is less than seven days before your downtime starts you won't be able to cancel a pause.
+> You can cancel a pause and resume updates only seven days or more before the start of the downtime date. If there is less than seven days before your downtime starts, you won't be able to cancel a pause.
 
 ## What happens after the pause duration expires?
 
