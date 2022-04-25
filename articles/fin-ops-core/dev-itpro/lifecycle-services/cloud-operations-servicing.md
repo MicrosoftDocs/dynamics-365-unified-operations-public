@@ -62,7 +62,8 @@ Currently, service updates require production tenant downtime and are applied in
 - **Customer initiated maintenance window** - A customer selects the maintenance window through LCS as a part of the package application flow. Updates are done in this maintenance window.
 
 ### Search for and apply an update in Lifecycle Services
-Updates are applied as deployable packages on an environment. A deployable package is a format that is used to apply updates to all the environments in a project. When you encounter an issue in the production environment, you can quickly find and apply a hotfix on all of the environments (Dev/Sandbox and Prod).
+Updates are applied as deployable packages on an environment. A deployable package is a format that is used to apply updates to all the environments in a project. When you encounter an issue in the production environment, you can quickly find and apply a hotfix to all of the environments in a project.
+
 - **Search for and download an update**
   In LCS, you can search for an update using [Issue search in Lifecycle Services (LCS)](issue-search-lcs.md) or the [Download updates from Lifecycle Services (LCS)](../migration-upgrade/download-hotfix-lcs.md). Because the steps to prepare an update differ based on the update type, after the update is downloaded, use the following list to determine how to proceed with preparation.
   - Platform update: Platform updates are cumulative and binary. This means that they can be applied directly to an environment. After the update is downloaded, it can be automatically applied to an environment by uploading it to the Asset Library.
