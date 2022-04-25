@@ -60,7 +60,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Replaced by another feature?**   | No. Customers and ISVs should consider reimplementing their solutions based on X++ language, in place of XSLT scripting. |
 | **Product areas affected**         | Finance and Operations apps. |
 | **Deployment option**              | All. |
-| **Status**                         | Deprecated - planned removal date is March 14, 2022.<br><br>Exception: Customers who are currently using XLST scripting. They can continue to use it until they update to version 10.0.30 or later. Customers with this exception have received a notification in the Message center available in the Microsoft 365 Admin Center. |
+| **Status**                         | Deprecated - planned removal date is March 14, 2022.<br><br>Exception: Customers who are currently using XLST scripting. They can continue to use it until they update to version 10.0.30 or later. For earlier versions the exception will expire effectiveJanuary 31, 2023. Customers with this exception have received a notification in the Message center available in the Microsoft 365 Admin Center. |
 
 ## Feature removal effective October 2021
 
