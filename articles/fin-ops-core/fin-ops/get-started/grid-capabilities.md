@@ -110,7 +110,7 @@ To use this feature, right-click the column that you want to group by, and selec
 - Number of data rows in this group
 - Subtotals for any column configured to show totals
 
-With [Saved views](saved-views.md) enabled, this grouping can be saved by personalization as part of a view for quick access the next time you visit the page.
+With [Saved views](saved-views.md) enabled, grouping can be saved as part of a view on pages that allow queries to be saved to views (i.e. those with large view selectors). See the [Switching between views](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/saved-views#switching-between-views) section for more details. 
 
 ### Multiple levels of grouping
 After you've grouped data by a single column, you can group the data by a different column by selecting **Group by this column** on the desired column. This process can be repeated until you have 5 nested levels of grouping, which is the maximum supported depth. At this point, you will no longer be able to group by additional columns.
