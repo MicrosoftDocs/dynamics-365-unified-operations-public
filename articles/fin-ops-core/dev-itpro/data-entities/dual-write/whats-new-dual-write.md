@@ -1,13 +1,13 @@
 ---
 title: What's new or changed in dual-write
 description: This topic provides links to the release plans, major announcements, and documentation for dual-write.
-author: tonyafehr
-ms.date: 04/06/2022
+author: RamaKrishnamoorthy
+ms.date: 04/25/2022
 ms.topic: article
 audience: Developer, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: Global
-ms.author: tfehr
+ms.author: sericks
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.8
 ---
