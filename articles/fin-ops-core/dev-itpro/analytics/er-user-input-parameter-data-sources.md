@@ -33,13 +33,13 @@ ms.dyn365.ops.version: Version 10.0.27
 
 When you design [Electronic reporting](general-electronic-reporting.md) (ER) [model mapping](er-overview-components.md#model-mapping-component) and ER [format](er-overview-components.md#format-component) components, use the data sources of the USER INPUT PARAMETER type to obtain the necessary values that can be specified at runtime on the dialog box in data entry fields before the execution of an ER format begins. The currently supported data sources of the USER INPUT PARAMETER type are described in this topic. 
 
-## Mandatory properties
+## <a name="mandatory-properties"></a>Mandatory properties
 
 Regardless of the USER INPUT PARAMETER type of the added data source, you must specify the following properties:
 
 - In the **Name** field, enter the data source internal name. You can use this name in other [expressions](er-formula-language.md) and bindings of the configured model mapping or format component.
 
-## Optional properties
+## <a name="optional-properties"></a>Optional properties
 
 For any data source of the USER INPUT PARAMETER type, the following properties can be specified:
 
