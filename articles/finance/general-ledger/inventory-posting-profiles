@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: InventPosting
+ms.search.form: InventPosting, InventTrans
 # ROBOTS: 
 audience: Application User
 ms.search.region: Global
@@ -33,9 +33,11 @@ Each inventory subledger transaction contains the quantity, price, and specific 
 
 Consider the following example of a purchase order with three lines. For this example, we will assume that the entire order is for a single site and warehouse. Each purchase order line has a single related InventTrans record also known as an inventory transaction. We will also assume each line is for a quantity of 10. The following diagram shows the relationship of one purchase order header, to three purchase order lines, each with one InventTrans record.
 
-
+[![Relationship diagram for a purchase order with three lines each with one InventTrans record.](./media/InventTransRelationship.PNG)](./media/InventTransRelationship.PNG)
 
 Now, let's assume that you receive a quantity of 5 on the first purchase order line, the full quantity for the second line and nothing on the third line of the purchase order. You will now have a second inventory transaction related to the first purchase order line. The transaction for the second purchase order line will be updated to received, and the third transaction will remain the same. The following diagram shows the relationship with the additional InventTrans record for purchase order line 1.
+
+[![Relationship diagram for a purchase order with three lines. One line is partially received and shows two InventTrans records.](./media/InventTransRelationshipPartialReceipt.PNG)](./media/InventTransRelationshipPartialReceipt.PNG)
 
 In this example, the system will post a voucher into the general ledger that we refer to as the physical voucher. We will assume in this example that you have configured the item model group to post physical inventory, and that all items are using the same item model group and the inventory posting profile is using a single set of main accounts, a single voucher will be created and the InventTrans record will link both InventTrans 1 and InventTrans 2 to the same voucher.
 
@@ -47,9 +49,12 @@ One important thing to note about the behavior of inventory transactions is that
 
 To illustrate an example of splitting inventory transactions based on inventory dimension, let's assume that the purchase order line 3 in the example is a serialized item. Later you register 10 serial numbers for the purchase order during the receiving process, the system will split the single inventory transaction into 10 inventory transactions. The following diagram shows the relationship and additional inventory transaction each with their own serial number related to purchase order line 3.
 
+[![Relationship diagram for a purchase order with three lines. One line is serialized and shows addditional InventTrans records.](./media/InventTransRelationshipSerialNumbers.PNG)](./media/InventTransRelationshipSerialNumbers.PNG)
+
 In the example above, if each serial number is received on a single product receipt, there would be one additional voucher created and the physical voucher field will be linked to each serial number. The same is true for the financial update when you invoice the purchase order.
 
-The following table describes each of the fields in the **Inventory transactions** page.
+##Inventory transactions
+You can view inventory transcations in the system by opening the **Inventory transcations** page from the main menu under **Inventory and warehouse management** or **Cost management** modules. You can also view inventory transactions related to a specific source document line such as a purchase order line or sales order line by clicking **Inventory** and selecting **Transactions**. The following table describes each of the fields in the **Inventory transactions** page.
 
 | Field            | Description                                                                                                                                                                                                                                                                        |
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -68,7 +73,7 @@ The following table describes each of the fields in the **Inventory transactions
 
 ## Inventory statuses
 
-Each inventory transaction has a status that is displayed in either the **Receipt** field or the **Issue** field. The field that is used depends on the type of inventory transactions. Receipts are simply any transaction that increases the inventory. For example, a purchase order with a positive quantity, or a sales order return with a negative quantity. Issues are simply any inventory transaction that decreased the inventory. For example, a sales order with a positive quantity, or a purchase order return with a negative quantity.
+Each inventory transaction has a status that is displayed in either the **Receipt** field or the **Issue** field. The field that is used depends on the type of inventory transactions. Receipts are  any transaction that increases the inventory. For example, a purchase order with a positive quantity, or a sales order return with a negative quantity. Issues are any inventory transaction that decreased the inventory. For example, a sales order with a positive quantity, or a purchase order return with a negative quantity.
 
 ### Receipt statuses
 
