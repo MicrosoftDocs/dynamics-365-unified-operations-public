@@ -4,7 +4,7 @@
 title: Business continuity and disaster recovery
 description: This topic describes the business continuity and disaster recovery that Microsoft provides for production instances of Microsoft Dynamics 365 SaaS applications if an Azure region-wide outage occurs.
 author: MicroSri
-ms.date: 04/14/2022
+ms.date: 04/25/2022
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
@@ -61,4 +61,4 @@ The following table describes responsibilities for disaster recovery.
 | <p>If an outage occurs, and Microsoft determines that a region failover must be done, we don't require customer consent, because there will be no data loss. However, if a cross-region failover must be done for the customer, there might be up to five seconds of data loss. For more information, see [Azure SQL Database Geo-Restore](https://azure.microsoft.com/blog/azure-sql-database-geo-restore/).</p><p>In the event of data loss, Microsoft will contact the customer to request its sign-off on a failover.</p> | In the event of data loss, the customer must provide written sign-off to trigger the failover. |
 | If a failover occurs, the applicable service works in limited mode. Update maintenance can't be triggered in failover mode. | The customer can't request package deployments or other regular maintenance requests in failover mode. |
 | When the datacenter becomes operational, Microsoft fails back to the production instance in the primary Azure region. Normal operations are resumed. A notification will be published to customers. Although customers might experience brief interruptions or disconnections during this window, they won't have to take a full downtime. | None |
-| None | The customer should plan disaster recovery for external resources that aren't provisioned by Microsoft. |
+| None | The customer should plan disaster recovery for resources that aren't provisioned by Microsoft as part of the service. This includes resources that run independently, as well as ones that are hosted in customer subscriptions in Azure. |
