@@ -293,6 +293,15 @@ You can select **Update from Excel** on the **Import** tab of the Action Pane to
 
 ![Create Excel Sheet format element option in the Update from Excel dialog box.](./media/er-excel-format-update-template.png)
 
+In version 10.0.28 and later, you can use the **Update Excel Header and Excel Footer format elements** option.
+
+-   When you set this option to **No**, Excel Header and Excel Footer format elements remain unchanged even if the corresponding headers or footers have been updated in worksheets of the imported template in the Excel workbook format.
+-   When you set this option to **Yes**, Excel Header and Excel Footer format elements will be changed when the corresponding headers or footers have been updated in worksheets of the imported template in the Excel workbook format.
+    -   If the structure of a worksheet header or footer has not been changed or has been only appended, the structure of the corresponding to it Excel Header of Excel Footer format element will be updated. Bindings of format elements that are nested under this Excel Header of Excel Footer format element will be preserved.
+    -   If the structure of a worksheet header or footer has been changed, the corresponding to it Excel Header of Excel Footer format element will be re-created. Bindings of format elements that are nested under this Excel Header of Excel Footer format element will be removed.
+
+![Create Excel Sheet format element option in the Update from Excel dialog box.](./media/er-excel-format-update-template2.png)
+
 To learn more about this feature, follow the steps in [Modify Electronic reporting formats by reapplying Excel templates](modify-electronic-reporting-format-reapply-excel-template.md).
 
 ## Validate an ER format
