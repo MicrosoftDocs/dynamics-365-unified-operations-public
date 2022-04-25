@@ -5,7 +5,7 @@ author: RamaKrishnamoorthy
 ms.date: 04/25/2022
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.custom: "separate-solution"
 ms.search.region: global
 ms.author: ramasri
