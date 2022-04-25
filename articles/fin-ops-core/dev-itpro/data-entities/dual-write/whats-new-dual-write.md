@@ -21,14 +21,15 @@ Dual-write is an out-of-box infrastructure that provides near-real-time interact
 ## April 2022 release
 
 The April release of Dual-write Party and Global Address Book Solutions 3.5.0.1 contains the following features and bug fixes.
+
 | Feature | Description |Status |
 |---|---|---|
-|Address roles dropdown	|	Addresses can be classified as invoice, business, home etc. through address purpose or roles. With this release, we are replacing the address roles text field with a PCF control which is a multi-select option set. This new control allows you to select one or more address roles and assign it to the given address. This dropdown is available for both postal addresses and electronic addresses.|	General availability |
+|Address roles dropdown	|	Addresses can be classified as invoice, business, home, etc. through address purpose or roles. With this release, we are replacing the address roles text field with a PCF control which is a multi-select option set. This new control allows you to select one or more address roles and assign it to the given address. This drop-down list is available for both postal addresses and electronic addresses.|	General availability |
 |Bug fix	|	Updating electronic address fields on Account table (email, phone, fax) should update the primary electronic address in msdyn_partyelectronicaddress table.	|	General availability |
 |Bug fix	|	Updating electronic address fields on Contact table (email, phone, fax) should update the primary electronic address in msdyn_partyelectronicaddress table.	|	General availability |
 |Bug fix	|	Display primary contact name for the primary contact selected in Associated contacts tab on account, contact and vendor forms.	|	General availability |
 |Bug fix	|	Initial sync of accounts/contacts is not creating electronic addresses in accounts/contacts tables even though electronic addresses are created under Electronic Addresses tab (msdyn_partyelectronicaddress table).	|	General availability |
-|Bug fix	|	Addresses of account are not available under Ship To/ Bill To address on quote form after the address is updated in Finance and Operations apps for the account.	|	General availability |
+|Bug fix	|	Addresses of account are not available under Ship To/Bill To address on quote form after the address is updated in Finance and Operations apps for the account.	|	General availability |
 |Bug fix	|	Fix duplicate address record error while creating new address in Customer Address table in Dataverse.	|	General availability |
 |Bug fix	|	Fix language transformation issue on party record when en-us language is selected in Dataverse.	|	General availability |
 |Bug fix	|	Fixed the error "The length of the 'msdyn_firstname' attribute of the 'msdyn_vendor' entity exceeded the maximum allowed" during update of account record if workflows to sync data between accounts and msdyn_vendor tables are activated.	|	General availability |
