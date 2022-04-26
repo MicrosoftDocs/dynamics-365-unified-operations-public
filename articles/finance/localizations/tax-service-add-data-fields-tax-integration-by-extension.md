@@ -337,10 +337,10 @@ Extend the `copyToTaxableDocumentHeaderWrapperFromTaxIntegrationDocumentObject` 
 [ExtensionOf(classStr(TaxIntegrationCalculationActivityOnDocument_CalculationService))]
 final static class TaxIntegrationCalculationActivityOnDocument_CalculationService_Extension
 {
-    // Define key for the form in post request
+    // Define the field name in request
     private const str IOCostCenter = 'Cost Center';
     private const str IOProject = 'Project';
-    //private const str IOEnumExample = 'Enum Example';
+    // private const str IOEnumExample = 'Enum Example';
 
     /// <summary>
     /// Copies to <c>TaxableDocumentLineWrapper</c> from <c>TaxIntegrationLineObject</c> by line.
@@ -355,18 +355,15 @@ final static class TaxIntegrationCalculationActivityOnDocument_CalculationServic
         _destination.SetField(IOProject, _source.getProjectId());
 
         // If the field to be extended is an enum type, use enum2Symbol to convert a enum variable exampleEnum of ExampleEnumType to string
-        //_destination.SetField(IOEnumExample, enum2Symbol(enumNum(ExampleEnumType), _source.getExampleEnum()));
+        // _destination.SetField(IOEnumExample, enum2Symbol(enumNum(ExampleEnumType), _source.getExampleEnum()));
     }
 }
 ```
 
-In this code, `_destination` is the wrapper object that is used to generate the post request, and `_source` is the `TaxIntegrationLineObject` object.
+In this code, `_destination` is the wrapper object that is used to generate the request, and `_source` is the `TaxIntegrationLineObject` object.
 
 > [!NOTE]
-> Define the key that is used in the request form as **private const str**. The string should be exactly the same as the **measure name** added in the topic [Add data fields in tax configurations](tax-service-add-data-fields-tax-configurations.md).
-> 
->   - Measure is the new tax measure added in tax configuration. Please refer to [Add data fields in tax configurations](tax-service-add-data-fields-tax-configurations.md).
->   - The IO string should be the same as the **measure name**, not label.
+> Define the field name that is used in the request as **private const str**. The string should be exactly the same as the **node name**(not label) added in the topic [Add data fields in tax configurations](tax-service-add-data-fields-tax-configurations.md).
 > 
 > Set the field in the **copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine** method by using the **SetField** method. The data type of the second parameter should be **string**. If the data type isn't **string**, convert it to string.
 > If the data type is X++ **enum type**, it is recommended that **enum2Symbol** method should be used to convert the enum value to string. The enum value added in the tax configuration should be exactly the same as the enum name. Below are the differences between enum value, label, and name.
@@ -537,7 +534,7 @@ final class TaxIntegrationPurchTableDataRetrieval_Extension
 [ExtensionOf(classStr(TaxIntegrationCalculationActivityOnDocument_CalculationService))]
 final static class TaxIntegrationCalculationActivityOnDocument_CalculationService_Extension
 {
-    // Define key for the form in post request
+    // Define the field name in request
     private const str IOCostCenter = 'Cost Center';
     private const str IOProject = 'Project';
 
