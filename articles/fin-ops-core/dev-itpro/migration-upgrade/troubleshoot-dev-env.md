@@ -2,7 +2,7 @@
 # required metadata
 
 title: Troubleshoot development environments during upgrade 
-description: This topic provides troubleshooting guidance for upgrades of Microsoft Dynamics AX 2012 to Microsoft Dynamics 365 Finance + Operations development environments (Tier 1).
+description: This topic provides troubleshooting guidance for upgrades of Microsoft Dynamics AX 2012 to Dynamics 365 Finance + Operations (on-premises) Tier-1 development environments.
 author: ttreen 
 ms.date: 04/22/2022
 ms.topic: article
@@ -19,31 +19,36 @@ ms.search.form: 2022-04-08
 
 [!include[banner](../includes/banner.md)]
 
-This topic provides troubleshooting guidance for upgrades of Microsoft Dynamics AX 2012 to Microsoft Dynamics 365 Finance + Operations Tier-1 development environments.
+This topic provides troubleshooting guidance for upgrades of Microsoft Dynamics AX 2012 to Dynamics 365 Finance + Operations (on-premises) Tier-1 development environments.
 
-## Scenario 1: The data upgrade is running slowly on the Tier 1 development environment.
+## Scenario 1: The data upgrade is running slowly on the Tier-1 development environment.
 
-**Solution:** Use premium storage when deploying the virtual machine (VM) from Microsoft Dynamics Lifecycle Services (LCS).
+**Solution**
 
-## Scenario 2: Log files on Dynamics AX 2012 SQL database AX fill up disk
+Use premium storage when you deploy the virtual machine (VM) from Microsoft Dynamics Lifecycle Services (LCS).
 
-**Solution:** Set the recovery mode on the database to **Simple**.
+## Scenario 2: Log files on Dynamics AX 2012 SQL database AX fill up the disk.
 
-## Scenario 3: "Failed to create a session" error generated during prerequisite step 
+**Solution**
 
-During the prerequisite steps to upgrading, during the additive or partial sync you may see an error in the downloaded sync log similar to the following:
- `> _Stopped DBSync monitoring. Microsot.Dynamics.Ax.Xpp.ErrorException: Failed to create a session; confirm that the user has the proper privileges to log on to Microsoft Dynamics 365 for Finance and Operations._`
+Set the recovery mode on the database to **Simple**.
 
-**Possible causes:**
+## Scenario 3: A "Failed to create a session" error is generated during a prerequisite step.
 
-- There could be a customization to extend the **Application** or **Info** classes that cause the Application Object Server (AOS) to crash.
-- There are old or corrupted sessions in the **SysClientSessions** table.
+During the additive or partial synchronization that is done as part of the prerequisite steps for the upgrade, you might receive an error that resembles the following example in the downloaded synchronization log:
 
-**Solution:**
+> Stopped DBSync monitoring. Microsot.Dynamics.Ax.Xpp.ErrorException: Failed to create a session; confirm that the user has the proper privileges to log on to Microsoft Dynamics 365 for Finance and Operations.
 
-1. Check that the custom code base for the "customer validate" customization extensions around the **Application** or **Info** classes works against a demo database. 
-2. Truncate the records from the **SysClientSessions** table using the following SQL command, and then try again.
-```SQL
-TRUNCATE TABLE SYSCLIENTSESSIONS;
-```
+**Possible causes**
 
+- There might be a customization to extend the **Application** or **Info** classes, and that customization might cause Application Object Server (AOS) to stop responding.
+- There might be old or corrupted sessions in the **SysClientSessions** table.
+
+**Solution**
+
+1. Make sure that the custom code base for the "customer validate" customization extensions around the **Application** or **Info** classes works against a demo database.
+2. Truncate the records from the **SysClientSessions** table by using the following SQL command, and then try again.
+
+    ```SQL
+    TRUNCATE TABLE SYSCLIENTSESSIONS;
+    ```
