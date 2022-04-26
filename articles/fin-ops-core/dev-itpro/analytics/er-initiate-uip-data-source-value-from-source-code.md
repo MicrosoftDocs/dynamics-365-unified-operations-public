@@ -112,7 +112,7 @@ For more information, review the source code of the `BankStatementImportBatch` a
             var traverser = new ERModelDefinitionParametersTraverser(parameters);
             while (traverser.moveNext())
             {
-                ERIImportFormatDataSourceContract current = ERCast::asObject(traverser.current()) as ERImportFormatDataSourceContract;
+                ERIImportFormatDataSourceContract current = ERCast::asObject(traverser.current()) as ERIImportFormatDataSourceContract;
                 if (current)
                 {
                     current.parmInputDataStream(File::UseFileFromURL(DMFStagingWriter::getDownloadURLFromFileId(_uploadedStatement)));
