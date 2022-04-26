@@ -84,7 +84,7 @@ Microsoft has introduced a new post-servicing step that lets you do index creati
 
 ![LCS dashboard showing the the post-processing step is progress.](https://user-images.githubusercontent.com/90061039/164792400-d8ca418c-6a5e-468c-a965-eae597bfb737.png)
 
-If any failure occurs during the post-processing step, the LCS dashboard will show **Post-servicing failed**. The environment will still be accessible so that users can perform regular activities, and performance might be degraded. If you experience the same issue when you retry, contact Microsoft Support.  
+If any failure occurs during the post-processing step, the LCS dashboard will show **Post-servicing failed**. The environment will still be accessible so that users can perform regular activities, and performance might be degraded. If you experience the issue not resolved in 24 hours then contact Microsoft Support. 
 
 ## Upgrade your environment
 For information about how to upgrade to the latest version, see [Process for moving to the latest update of Finance and Operations](../migration-upgrade/upgrade-latest-update.md) and [What's new or changed in Finance and Operations home page](../../fin-ops/get-started/whats-new-changed.md).
