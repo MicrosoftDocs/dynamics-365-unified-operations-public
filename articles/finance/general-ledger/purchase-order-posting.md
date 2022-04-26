@@ -3,7 +3,7 @@
 
 title: Purchase order posting
 description: Details about the purchase order tab of the inventory posting profiles page.
-author: raprofit
+author: rachelprofitt
 ms.date: 04/25/2022
 ms.topic: overview
 ms.prod: 
@@ -134,7 +134,7 @@ The following table shows examples of the default posting types with sample main
 
 ## Fixed asset posting with purchase orders
 
-If you use the **Fixed asset** module and plan to purchase fixed assets through purchase orders, you must also configure the **Fixed asset receipt** posting type on the **Purchase order** tab of the **Inventory posting profile** page. For more information refer to [Fixed assets integration](https://docs.microsoft.com/en-us/dynamics365/finance/fixed-assets/fixed-asset-integration) and [Create and acquire assets from Accounts payable](https://docs.microsoft.com/en-us/dynamics365/finance/fixed-assets/tasks/create-acquire-assets-accounts-payable).
+If you use the **Fixed asset** module and plan to purchase fixed assets through purchase orders, you must also configure the **Fixed asset receipt** posting type on the **Purchase order** tab of the **Inventory posting profile** page. For more information refer to [Fixed assets integration](/fixed-assets/fixed-asset-integration.md) and [Create and acquire assets from Accounts payable](/fixed-assets/tasks/create-acquire-assets-accounts-payable.md).
 
 ## Prepayment purchase order invoice posting
 
