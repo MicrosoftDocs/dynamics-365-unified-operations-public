@@ -70,11 +70,18 @@ After the package is in the project asset library, follow these steps to update 
 4. Select the package to apply. Use the filter at the top to find your package. The list will include application and platform binary packages and application deployable packages that have passed validation from the asset library.
 5. Select **Apply**.
 
-    The status in the upper-right corner of the environment details page changes from **Queued** to **Servicing**. Then, when package application is completed, the status changes to **Deployed**.
+    The status in the upper-right corner of the environment details page changes from **Queued** to **Servicing** and then **Post-servicing** and when package application is completed, the status changes to **Deployed**.
 
 6. After package application is completed, the environment history is updated. To view the environment history, select **History \> Environment changes** on the environment details page.
 7. You can also download the logs from the environment history page.
 8. After the validations are completed, you can sign-off on the update from the environment history page by selecting either **Sign off** or **Sign off with issues**.
+
+## Servicing changes
+Microsoft has introduced a new post-servicing step that lets you do index creation in online mode to help reduce the overall servicing downtime. While the post-processing step is occurring, the LCS dashboard will show **Post-servicing** after offline servicing is completed. During this time, some index creation and modification will be done in online mode. The environment will be accessible so that users can perform regular activities, but performance on the package changes that are involved might be degraded. During post-servicing, users won't be able cancel or trigger new service requests.
+
+![LCS dashboard showing the the post-processing step is progress.](https://user-images.githubusercontent.com/90061039/164792400-d8ca418c-6a5e-468c-a965-eae597bfb737.png)
+
+If any failure occurs during the post-processing step, the LCS dashboard will show **Post-servicing failed**. The environment will still be accessible so that users can perform regular activities, and performance might be degraded. If you experience the issue, contact Microsoft Support. 
 
 #### Uninstalling a module
 
