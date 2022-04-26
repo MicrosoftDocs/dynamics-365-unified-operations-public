@@ -18,9 +18,12 @@ ms.dyn365.ops.version: AX 7.0.0
 You can use the **Dynamics Lifecycle Services (LCS) Asset Deployment** task in Microsoft Azure DevOps to automate the deployment of assets that are stored in the Asset library in Microsoft Dynamics Lifecycle Services (LCS) to specific environments. However, this task has the following limitations that you should consider:
 
 * The task is available only in **Releases** pipelines.
-* The deployment of Software deployable packages, Commerce Cloud Scale Unit (CSU) Extension or e-Commerce Package to production environments can't be automated.
-* Software deployable packages, Commerce Cloud Scale Unit (CSU) Extension or e-Commerce Package can't be deployed to build environments.
+* The deployment of Software deployable packages to production environments can't be automated.
+* Software deployable packages can't be deployed to build environments.
 * Software deployable packages, Commerce Cloud Scale Unit (CSU) Extension or e-Commerce Package can't be deployed to local business data (LBD) environments on-premises.
+
+> [!NOTE]
+> Commerce Cloud Scale Unit (CSU) Extension or e-Commerce Package can be deployed to production, UAT or Sandbox environment using the **Dynamics Lifecycle Services (LCS) Asset Deployment**
 
 This topic assumes that you have a working knowledge of [Azure Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started).
 
