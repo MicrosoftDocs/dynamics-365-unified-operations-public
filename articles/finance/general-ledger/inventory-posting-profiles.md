@@ -189,8 +189,8 @@ in General ledger.
 
 Each tab on the **Inventory posting profile** page relates to a subledger in Dynamics 365 Supply Chain Management. 
 See the following pages for more details:
--   [Sales order posting](general-ledger/sales-order-posting.md)
--   [Purchase order posting](general-ledger/purchase-order-posting.md)
--   [Inventory posting](general-ledger/inventory-posting.md)
--   [Production control posting](general-ledger/production-control-posting.md)
--   [Standard cost variance posting](general-ledger/standard-cost-variance-posting.md)
+-   [Sales order posting](sales-order-posting)
+-   [Purchase order posting](purchase-order-posting.md)
+-   [Inventory posting](inventory-posting.md)
+-   [Production control posting](production-control-posting.md)
+-   [Standard cost variance posting](standard-cost-variance-posting.md)
