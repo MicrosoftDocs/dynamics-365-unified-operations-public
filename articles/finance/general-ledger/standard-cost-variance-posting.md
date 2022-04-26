@@ -3,7 +3,7 @@
 
 title: Standard cost variance posting
 description: A detailed look at the standard cost tab in the inventory posting profile. 
-author: raprofit
+author: rachelprofitt
 ms.date: 04/25/2022
 ms.topic: overview
 ms.prod: 
