@@ -44,33 +44,6 @@ All warehouse locations have been labeled in the scope of pre-go-live activities
 
 Follow the steps in [Configure the ER framework](er-quick-start2-customize-report.md#ConfigureFramework) to set up the minimal set of ER parameters. You must complete this setup before you start to use the ER framework to design a new ER solution.
 
-## Design a domain-specific data model
-
-Create a new ER configuration that contains a [data model](er-overview-components.md#data-model-component) component for the Warehouse management domain. This data model will be used as a data source later, when you design an ER format to generate warehouse location labels.
-
-### Import a data model configuration
-
-Follow these steps to import the required data model from an XML file that is provided by Microsoft. Alternatively, you can create your own data model as described in the next section.
-
-1. Download the [Warehouse model.version.1.xml](https://download.microsoft.com/download/9/f/1/9f136e9b-bf5f-403a-b089-a2b2ed1da2ba/Warehouse-model.version.1.xml) file, and save it to your local computer.
-2. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
-3. In the **Electronic reporting** workspace, select **Reporting configurations**.
-4. On the **Configurations** page, on the Action Pane, select **Exchange** \> **Load from XML file**.
-5. Select **Browse**, and then find and select the **Warehouse model.version.1.xml** file.
-6. Select **OK** to import the configuration.
-
-![Imported ER data model configuration on the Configurations page.](./media/er-design-zpl-labels-imported-model.png)
-
-### Create a data model configuration
-
-Instead of importing the Microsoft-provided data model file, you can create a data model from scratch. For an example that shows how to complete this task, see [Create a new data model configuration](er-quick-start1-new-solution.md#DesignDataModel).
-
-### Review the data model
-
-You can view an editable version of the configured data model on the **Data model designer** page.
-
-![Structure of the ER data model on the Data model designer page.](./media/er-design-zpl-labels-model.png)
-
 ## Design a model mapping for the configured data model
 
 As a user in the Electronic Reporting Developer role, you must create a new ER configuration that contains a [model mapping](er-overview-components.md#model-mapping-component) component for the Warehouse data model. This component implements the configured data model for Dynamics 365 Finance and is specific to that app. You must configure it to specify the application objects that will be used to fill in the configured data model with application data at runtime. To complete this task, you must understand how the data structure of the Warehouse management business domain is implemented in Finance.
