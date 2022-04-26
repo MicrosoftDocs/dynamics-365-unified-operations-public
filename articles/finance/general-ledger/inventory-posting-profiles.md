@@ -3,7 +3,7 @@
 
 title: Inventory posting profiles
 description: This topic provides an overview of inventory posting profiles.  
-author: raprofit
+author: rachelprofitt
 ms.date: 04/25/2022
 ms.topic: overview
 ms.prod: 
@@ -65,7 +65,7 @@ Next, an invoice is received for the quantity that is received on lines 1 and 2.
 The item model group is configured to post financial inventory. The new second voucher is related to InventTrans 1 and InventTrans 2.
 
 Depending on the costing model, a third general ledger posting may exist for your inventory subledger transactions related to the closing and settlement
-of the inventory. For more information, see to [Invenotry close](/supply-chain/cost-management/inventory-close.md). You can view the details of all inventory 
+of the inventory. For more information, see [Inventory close](/supply-chain/cost-management/inventory-close.md). You can view the details of all inventory 
 transactions by going to **Inventory management > Inquiries and reports > Transactions**.
 
 >[!Important]
@@ -79,7 +79,7 @@ transaction will be split into 10 inventory transactions.
 The following diagram shows the relationship and additional inventory transaction each with their own serial number related to purchase order
 line 3.
 
-[![Relationship diagram for a purchase order with three lines. One line is serialized and shows addditional InventTrans records.](./media/InventTransRelationshipSerialNumbers.PNG)](./media/InventTransRelationshipSerialNumbers.PNG)
+[![Relationship diagram for a purchase order with three lines. One line is serialized and shows addditional InventTrans records](./media/InventTransRelationshipSerialNumber.PNG)]
 
 In the example above, if each serial number is received on a single product receipt, there would be one additional voucher created. The physical voucher field will
 be linked to each serial number. The same is true for the financial update when you invoice the purchase order.
@@ -124,7 +124,8 @@ return with a negative quantity.
 
 The following table describes **Receipt** statuses:
 
-| **Receipt status** | **Description**                                                                                                                                                                                                                                                                                                                                                   |
+| **Receipt status** | **Description**       |
+
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | Ordered            | The initial status of any inventory transaction that represents a receipt. This includes but is not limited to, Purchase orders with a 
 positive quantity, Production orders (finished good), Sales order returns with a negative quantity.                                                   |
@@ -140,7 +141,7 @@ generated.                                                                      
 
 The following table describes **Issue** statuses:
 
-| **Issue status**  | **Description**                                                                                                                                                                                                                                                                                                                                                                             |
+| **Issue status**  | **Description**            |
 |-------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
 | On order          | The initial status of any inventory transaction that represents an issue. This includes but is not limited to Sales orders with a
 positive quantity, Production orders BOM or Formula lines, Purchase order returns with a negative quantity.                                             |
