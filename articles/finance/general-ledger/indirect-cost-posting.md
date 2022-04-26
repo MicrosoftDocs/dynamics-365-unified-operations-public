@@ -3,7 +3,7 @@
 
 title: Indirect cost posting
 description: Details about how to post indirect costs, create cost groups, add nodes to the costing sheet and so on for indirect costs.
-author: raprofit
+author: rachelprofitt
 ms.date: 04/25/2022
 ms.topic: overview
 ms.prod: 
