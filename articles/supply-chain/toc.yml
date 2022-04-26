@@ -1723,8 +1723,6 @@
           href: iot/iot-azure-setup.md
         - name: Message schema formats for IoT Hub
           href: iot/iot-schema-format.md
-        - name: Install the add-in in LCS
-          href: iot/iot-lcs-setup.md
         - name: Set up metrics
           href: iot/iot-metrics-setup.md
         - name: Scenario setup
