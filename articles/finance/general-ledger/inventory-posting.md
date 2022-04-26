@@ -3,7 +3,7 @@
 
 title: Inventory posting 
 description: Details of the inventory posting tab of the inventory posting profile page.  
-author: raprofit
+author: rachelprofitt
 ms.date: 04/25/2022
 ms.topic: overview
 ms.prod: 
@@ -58,7 +58,7 @@ To optionally use a Fixed receipt price for a product, you must configure the fo
 
     -   Fixed receipt price loss
 
-For more information, refer to [Fixed receipt price](fixed-receipt-price.md).
+For more information, see [Fixed receipt price](fixed-receipt-price.md).
 
 ## Catch weight posting
 
@@ -72,8 +72,9 @@ The following table shows examples of the default posting types with sample main
 > The suggested main accounts and main account names are only suggestions, we recommend that you work with your accountant to determine the best configuration for your business needs.
 
 
-| Posting type                | Main account example | Main account name example | Account type | Debit/ Credit? | Clearing account | P/F  | Follow                      | Description                                                                                           |
-|-----------------------------|----------------------|---------------------------|--------------|----------------|------------------|------|-----------------------------|-------------------------------------------------------------------------------------------------------|
+| Posting type                | Main account example | Main account name example | Account type | Debit/ Credit? | Clearing account | P/F  | Follow    | Description  |
+|-------|----------------------|--------------------|--------------|----------------|------------------|------|--------------|------------------------------------|
+
 | Catch weight loss account   | 510520               | Inventory Adjustment      | Expense      |                | No               | Both | Catch weight profit account | This account is used when posting an inventory transaction with a catch weight amount that is lower.  |
 | Catch weight profit account | 510520               | Inventory Adjustment      | Expense      |                | No               | Both | Catch weight loss account   | This account is used when posting an inventory transaction with a catch weight amount that is higher. |
 
@@ -89,8 +90,9 @@ The following table shows examples of the default posting types with sample main
 > The suggested main accounts and main account names are only suggestions, we recommend that you work with your accountant to determine the best configuration for your business needs.
 
 
-| Posting type      | Main account example | Main account name example | Account type | Debit/ Credit? | Clearing account | P/F  | Follow | Description                                                                                                                             |
-|-------------------|----------------------|---------------------------|--------------|----------------|------------------|------|--------|-----------------------------------------------------------------------------------------------------------------------------------------|
+| Posting type      | Main account example | Main account name example | Account type | Debit/ Credit? | Clearing account | P/F  | Follow | Description   |
+|-------------------|----------------------|---------------------------|--------------|----------------|------------------|------|--------|-------------------------|
+
 | Fixed asset issue | 180100               | Tangible Fixed Assets     | Asset        | Credit         | No               | Both | N/A    | This account is used when you post an inventory to fixed asset journal to remove an item from inventory and convert into a fixed asset. |
 
 ## Moving average posting
@@ -103,8 +105,9 @@ The following table shows examples of the default posting types with sample main
 > The suggested main accounts and main account names are only suggestions, we recommend that you work with your accountant to determine the best configuration for your business needs.
 
 
-| Posting type                        | Main account example | Main account name example       | Account type | Debit/ Credit? | Clearing account | P/F  | Follow | Description                                                                  |
-|-------------------------------------|----------------------|---------------------------------|--------------|----------------|------------------|------|--------|------------------------------------------------------------------------------|
+| Posting type   | Main account example | Main account name example       | Account type | Debit/ Credit? | Clearing account | P/F  | Follow | Description        |
+|---------------|----------------------|-------------|--------------|----------------|------------------|------|--------|-----------------------------|
+
 | Price difference for moving average | 510600               | Moving Average Price Difference | Expense      | Both           | No               | Both | N/A    | Used when there is a difference in the cost between the receipt and invoice. |
 | Revaluation for moving average      | 510610               | Moving Average Revaluation      | Expense      | Both           | No               | Both | N/A    | Used when you adjust the moving average cost of a product                    |
 
@@ -116,8 +119,9 @@ The following table shows examples of the default posting types with sample main
 > The suggested main accounts and main account names are only suggestions, we recommend that you work with your accountant to determine the best configuration for your business needs.
 
 
-| Posting type                  | Main account example | Main account name example | Account type | Debit/ Credit? | Clearing account | P/F  | Follow                        | Description                                                                                                                                                                                                                                                                          |
-|-------------------------------|----------------------|---------------------------|--------------|----------------|------------------|------|-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Posting type      | Main account example | Main account name example | Account type | Debit/ Credit? | Clearing account | P/F  | Follow    | Description        |
+|-------------------------------|----------------------|-----------------|--------------|----------------|------------------|------|--------------|-------------------|
+
 | Inventory issue               | 140100               | Materials Inventory       | Asset        | Credit         | N                | Both | Inventory receipt             | Used when you post an inventory transaction that is an issue (negative quantity) that is not related to sales, purchases, or production. The offset to this account is the Inventory expenditure, loss account. This account typically represents inventory in the balance sheet.    |
 | Inventory expenditure, loss   | 510100               | Inventory Profit and Loss | Expense      | Debit          | N                | Both | Inventory expenditure, profit | Used when you post an inventory transaction that is an issue (negative quantity) that is not related to sales, purchases, or production. The offset to this account is the Inventory issue.                                                                                          |
 | Inventory receipt             | 140100               | Materials Inventory       | Asset        | Debit          | N                | Both | Inventory issue               | Used when you post an inventory transaction that is a receipt (positive quantity) that is not related to sales, purchases, or production. The offset to this account is the Inventory expenditure, profit account. This account typically represents inventory in the balance sheet. |
