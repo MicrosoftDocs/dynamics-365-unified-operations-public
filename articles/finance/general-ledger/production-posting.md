@@ -3,7 +3,7 @@
 
 title: Production posting
 description: Details of production order posting in the inventory posting profile.  
-author: raprofit
+author: rachelprofitt
 ms.date: 04/25/2022
 ms.topic: overview
 ms.prod: 
@@ -20,7 +20,7 @@ ms.author: raprofit
 
 ---
 
-# Production posting
+# Production postings
 
 This article provides information about different types of postings in the production process.
 
