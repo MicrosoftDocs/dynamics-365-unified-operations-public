@@ -1468,6 +1468,8 @@
               href: localizations/e-invoicing-complete-publish-deploy-globalization-feature.md?toc=/dynamics365/finance/toc.json
             - name: Share with other organizations
               href: localizations/e-invoicing-share-other-organizations.md?toc=/dynamics365/finance/toc.json
+            - name: Usage management dashboard
+              href: localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/finance/toc.json   
             - name: Process incoming electronic documents
               items: 
               - name: Processing incoming electronic documents
@@ -1476,12 +1478,12 @@
                 href: localizations/e-invoicing-configure-email.md?toc=/dynamics365/finance/toc.json
               - name: Configure a SharePoint channel
                 href: localizations/e-invoicing-configure-sharepoint-channel.md
-            - name: Set up and use Electronic invoicing with Finance and Supply Chain Management
-              items: 
-              - name: Activate and set up integration with Electronic Invoicing
-                href: localizations/e-invoicing-activate-setup-integration.md?toc=/dynamics365/finance/toc.json
-              - name: Set up Electronic Invoicing parameters
-                href: localizations/e-invoicing-set-up-parameters.md?toc=/dynamics365/finance/toc.json
+          - name: Set up and use Electronic invoicing with Finance and Supply Chain Management
+            items: 
+            - name: Activate and set up integration with Electronic Invoicing
+              href: localizations/e-invoicing-activate-setup-integration.md?toc=/dynamics365/finance/toc.json
+            - name: Set up Electronic Invoicing parameters
+              href: localizations/e-invoicing-set-up-parameters.md?toc=/dynamics365/finance/toc.json
             - name: Work with Electronic Invoicing
               items:
               - name: Submit electronic documents to Electronic Invoicing
@@ -1490,8 +1492,6 @@
                 href: localizations/e-invoicing-submission-log.md?toc=/dynamics365/finance/toc.json
               - name: Work with the Electronic documents receiving log
                 href: localizations/e-invoicing-electronic-documents-receiving-log.md?toc=/dynamics365/finance/toc.json
-              - name: Usage management dashboard
-                href: localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/finance/toc.json
           - name: Country-specific scenarios
             items:
             - name: Availability of Electronic Invoicing features
