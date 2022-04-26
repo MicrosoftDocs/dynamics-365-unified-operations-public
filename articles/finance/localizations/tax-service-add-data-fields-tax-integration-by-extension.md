@@ -363,7 +363,7 @@ final static class TaxIntegrationCalculationActivityOnDocument_CalculationServic
 In this code, `_destination` is the wrapper object that is used to generate the post request, and `_source` is the `TaxIntegrationLineObject` object.
 
 > [!NOTE]
-> Define the key that is used in the request form as **private const str**. The string should be exactly the same as the **measure name** added in the topic, [Add data fields in tax configurations](tax-service-add-data-fields-tax-configurations.md).
+> Define the key that is used in the request form as **private const str**. The string should be exactly the same as the **measure name** added in the topic [Add data fields in tax configurations](tax-service-add-data-fields-tax-configurations.md).
 > 
 >   - Measure is the new tax measure added in tax configuration. Please refer to [Add data fields in tax configurations](tax-service-add-data-fields-tax-configurations.md).
 >   - The IO string should be the same as the **measure name**, not label.
