@@ -43,6 +43,8 @@ To show tax breakup information in order summaries, select the **Show taxes brea
 The following illustration shows the **Show taxes breakup in order summary** checkbox highlighted and selected in site builder.
 
 ![Show taxes breakup in order summary option in site builder.](media/prices-include-sales-tax-e-Commerce-site-settings.png)
+>[!Note]
+>If you have customized e-Commerce order summary modules, and do not want to inherit above changes (in 10.0.27 or later versions), refer to **[Troubleshoot: How to revert changes to salestransaction and order properties in 10.0.27 version](/troubleshoot/How-to-revert-changes-to-salestransaction-and-order-properties-in-10.0.27-version.md)**.
 
 ## Additional resources
 
