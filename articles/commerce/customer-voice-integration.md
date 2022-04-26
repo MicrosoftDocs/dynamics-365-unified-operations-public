@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Integrate Customer Voice into an an e-commerce site page
-description: This topic describes how to integrate Microsoft Dynamics 365 Customer Voice into an a Microsoft Dynamics 365 Commerce e-commerce site page.
+title: Integrate Customer Voice into an e-commerce site page
+description: This topic describes how to integrate Microsoft Dynamics 365 Customer Voice into a Microsoft Dynamics 365 Commerce e-commerce site page.
 author: samjarawan
 ms.date: 04/26/2022
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.validFrom: 2019-10-31
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to integrate Microsoft Dynamics 365 Customer Voice into an a Microsoft Dynamics 365 Commerce e-commerce site page.
+This topic describes how to integrate Microsoft Dynamics 365 Customer Voice into a Microsoft Dynamics 365 Commerce e-commerce site page.
 
 [Customer Voice](https://dynamics.microsoft.com/customer-voice/overview/) can be used to collect, analyze and track real-time feedback within your e-commerce web site.  This topic will cover the steps needed to integrate the service into the Dynamics 365 Commerce e-commerce platform.
 
@@ -88,7 +88,7 @@ Once the fragments have been created, they can be added to the page templates th
 
 ## Content security policy
 
-After making the above changes, the survey should fail to load due to content security policy since the web site by default can't call out to other services. To see errors caused by this, open developer tools within a browser (F12) and navigate to the page that has the survey and notice CSP errors in the console output.  For more information see [Content security policy](manage-csp.md) topic.
+After making the above changes, the survey should fail to load due to content security policy since the web site by default can't call out to other services. To see errors caused by this, open developer tools within a browser (F12) and navigate to the page that has the survey and notice CSP errors in the console output.  For more information, see [Content security policy](manage-csp.md).
 
 To fix these errors, from within site builder, select the **Extensions** tab on the bottom left and then the **Content security policy** tab and add the following URLs:
 
