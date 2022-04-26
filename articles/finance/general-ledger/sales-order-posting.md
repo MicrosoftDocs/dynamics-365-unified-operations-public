@@ -3,7 +3,7 @@
 
 title: Sales order posting
 description: Detailed information about the Sales order tab of the inventory posting profile page.   
-author: raprofit
+author: rachelprofitt
 ms.date: 04/25/2022
 ms.topic: overview
 ms.prod: 
