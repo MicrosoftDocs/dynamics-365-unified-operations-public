@@ -125,8 +125,8 @@ return with a negative quantity.
 The following table describes **Receipt** statuses:
 
 | **Receipt status** | **Description**       |
-
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------|
+
 | Ordered            | The initial status of any inventory transaction that represents a receipt. This includes but is not limited to, Purchase orders with a 
 positive quantity, Production orders (finished good), Sales order returns with a negative quantity.                                                   |
 | Registered         | This status is used when a two-step receiving process is in place or when Item arrival is used to indicate product has arrived. It is used when 
@@ -143,6 +143,7 @@ The following table describes **Issue** statuses:
 
 | **Issue status**  | **Description**            |
 |-------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+
 | On order          | The initial status of any inventory transaction that represents an issue. This includes but is not limited to Sales orders with a
 positive quantity, Production orders BOM or Formula lines, Purchase order returns with a negative quantity.                                             |
 | Reserved ordered  | This inventory status indicates that inventory is reserved against an order that is created, but not yet physically received in 
@@ -189,7 +190,7 @@ in General ledger.
 Each tab on the **Inventory posting profile** page relates to a subledger in Dynamics 365 Supply Chain Management. 
 See the following pages for more details:
 -   [Sales order posting](general-ledger/sales-order-posting.md)
--   [Purchase order posting](general-ledger/Purchase-order-posting.md)
+-   [Purchase order posting](general-ledger/purchase-order-posting.md)
 -   [Inventory posting](general-ledger/inventory-posting.md)
--   [Production control posting](general-ledger/Production-control-posting.md)
--   [Standard cost variance posting](general-ledger/Standard-cost-variance-posting.md)
+-   [Production control posting](general-ledger/production-control-posting.md)
+-   [Standard cost variance posting](general-ledger/standard-cost-variance-posting.md)
