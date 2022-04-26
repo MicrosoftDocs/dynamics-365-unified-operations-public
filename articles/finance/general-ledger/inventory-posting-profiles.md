@@ -189,7 +189,7 @@ in General ledger.
 
 Each tab on the **Inventory posting profile** page relates to a subledger in Dynamics 365 Supply Chain Management. 
 See the following pages for more details:
--   [Sales order posting](sales-order-posting)
+-   [Sales order posting](sales-order-posting.md)
 -   [Purchase order posting](purchase-order-posting.md)
 -   [Inventory posting](inventory-posting.md)
 -   [Production control posting](production-control-posting.md)
