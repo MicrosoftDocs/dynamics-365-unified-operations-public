@@ -1437,7 +1437,7 @@
               - name: Set up Azure resources for Electronic invoicing
                 href: localizations/e-invoicing-set-up-azure-resources.md?toc=/dynamics365/finance/toc.json
               - name: Create an Azure Key Vault in the Azure portal
-                href: localizations/e-invoicing-create-azure-storage-account-azure-portal.md?toc=/dynamics365/finance/toc.json
+                href: localizations/e-invoicing-create-azure-key-vault-azure-portal.md?toc=/dynamics365/finance/toc.json
               - name: Create an Azure storage account in the Azure portal
                 href: localizations/e-invoicing-create-azure-storage-account-azure-portal.md
               - name: Configure a SharePoint connection
