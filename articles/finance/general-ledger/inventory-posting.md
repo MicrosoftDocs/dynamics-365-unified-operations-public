@@ -113,7 +113,6 @@ The following table shows examples of the default posting types with sample main
 
 | Posting type   | Main account example | Main account name example       | Account type | Debit/ Credit? | Clearing account | P/F  | Follow | Description        |
 |---------------|----------------------|-------------|--------------|----------------|------------------|------|--------|-----------------------------|
-
 | Price difference for moving average | 510600               | Moving average price difference | Expense      | Both           | No               | Both | N/A    | Used when there is a difference in the cost between the receipt and invoice. |
 | Revaluation for moving average      | 510610               | Moving average revaluation      | Expense      | Both           | No               | Both | N/A    | Used when you adjust the moving average cost of a product                    |
 
@@ -131,7 +130,6 @@ The following table shows examples of the default posting types with sample main
 
 | Posting type      | Main account example | Main account name example | Account type | Debit/ Credit? | Clearing account | P/F  | Follow    | Description        |
 |-------------------------------|----------------------|-----------------|--------------|----------------|------------------|------|--------------|-------------------|
-
 | Inventory issue               | 140100               | Materials inventory       | Asset        | Credit         | N                | Both | Inventory receipt   | Used when an inventory transaction is posted that is an issue (negative quantity) and is not related to sales, purchases, or production. The offset to this account is the Inventory expenditure, loss account. This account typically represents inventory in the balance sheet.    |
 | Inventory expenditure, loss   | 510100               | Inventory profit and loss | Expense      | Debit          | N                | Both | Inventory expenditure, profit | Used when an inventory transaction posted that is an issue (negative quantity) and not related to sales, purchases, or production. The offset to this account is the Inventory issue.                                                                                          |
 | Inventory receipt             | 140100               | Materials inventory       | Asset        | Debit          | N                | Both | Inventory issue               | Used when an inventory transaction is posted that is a receipt (positive quantity) and not related to sales, purchases, or production. The offset to this account is the Inventory expenditure, profit account. This account typically represents inventory in the balance sheet. |
