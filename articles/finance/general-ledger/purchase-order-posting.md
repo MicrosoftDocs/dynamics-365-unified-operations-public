@@ -2,7 +2,7 @@
 # required metadata
 
 title: Purchase order posting
-description: This topice describes the Purchase order tab of the Inventory posting profiles page.
+description: This topic describes the Purchase order tab of the Inventory posting profiles page.
 author: rachelprofitt
 ms.date: 04/25/2022
 ms.topic: overview
@@ -36,7 +36,7 @@ For a physical transaction (product receipt) to post to the general ledger on a 
     -   Purchase, accrual
 
 For a financial transaction (invoice) to post to the general ledger on a purchase order, the following conditions must be met:
--   The **Post financial inventory** in ledger check box must be selected in the **Item model group** page for the item selected on the purchase order line.
+-   The **Post financial inventory** check box must be selected in the **Item model group** page for the item selected on the purchase order line.
 -   The main accounts must be specified in the **Inventory posting profile** page for the following posting types:
     -   Cost of purchased materials invoiced
     -   Purchase expenditure for product
@@ -45,9 +45,9 @@ For a financial transaction (invoice) to post to the general ledger on a purchas
 
 ## Fixed receipt price posting
 
-Fixed receipt price is an alternative way to use a standard cost for a product than selecting the Standard cost option on the **Inventory model** field in the **Item model group** page for an item. The main difference is that when using the **Fixed receipt price** the system will use the current cost price configured for the item when the receipt into inventory is posted. There is no cost revaluation process for **Fixed receipt price** and when a financial update is posted the current cost price is used at the time of posting. If there is a difference between the cost price used at receipt and invoice, the system will post the variance to the Fixed receipt price profit and loss accounts.
+Fixed receipt price is an alternative way to use a standard cost for a product then selecting the Standard cost option on the **Inventory model** field in the **Item model group** page for an item. The main difference is that when using the **Fixed receipt price** the system will use the current cost price configured for the item when the receipt into inventory is posted. There is no cost revaluation process for **Fixed receipt price** and when a financial update is posted the current cost price is used at the time of posting. If there is a difference between the cost price used at receipt and invoice, the system will post the variance to the Fixed receipt price profit and loss accounts.
 
-To optionally use a Fixed receipt price for a product, you must configure the following:
+To use a Fixed receipt price for a product, you must configure the following:
 -   The **Post physical inventory** and the **Fixed receipt price** check boxes must be selected on the **Item model groups** page.
 -   The **Post packing slip in ledger** check box must be selected on the **Inventory and warehouse management parameters** page.
 -   The main accounts must be specified on the **Inventory posting profile** page for the following posting types:
@@ -89,17 +89,17 @@ The following table shows examples of the default posting types with sample main
 | Posting type | Main account example | Main account name example | Account type | Debit/ Credit? | Clearing account | P/F | Follow | Description |
 |--------------|---------------------|-------------------------|----------------|----------------|--------------------|----|----------|-----------|
 
-| Cost of purchased materials received | 140100</br>140101 | Materials inventory</br>Materials shipped not invoiced | Asset | Debit | Yes | P | Cost of purchased materials invoiced | Used when a purchase order product receipt is posted. The offset to the account is the Purchase expenditure, un-invoiced. The amount in this account is reversed when a purchase order invoice is posted. |
-| Purchase expenditure, un-invoiced | 600180 | Material receipts | Expense | Debit | Yes | P | Used when a purchase order product receipt is posted. Two vouchers are created for the receipt to track purchase price variances when using standard cost. The offset to the account on the first voucher is the Purchase accrual. The offset on the second voucher is the sum of the Cost of purchased materials received and Purchase price variance accounts. The amounts posted in this account are reversed when a purchase order invoice is posted. |
-| Cost of purchased materials invoiced | 140100 | Materials inventory | Asset | Debit | No | F | Cost of purchased materials received | Used when a purchase order invoice is posted. The offset to this account is the Purchase expenditure for product. This account represents the inventory on your balance sheet. The account used here is typically the same account used for Cost of units delivered and Cost of units invoiced for sales order. |
+| Cost of purchased materials received | 140100</br>140101 | Materials inventory</br>Materials shipped not invoiced | Asset | Debit | Yes | P | Cost of purchased materials invoiced | Used when a purchase order product receipt is posted. The offset to the account is the Purchase expenditure, uninvoiced. The amount in this account is reversed when a purchase order invoice is posted. |
+| Purchase expenditure, uninvoiced | 600180 | Material receipts | Expense | Debit | Yes | P | Used when a purchase order product receipt is posted. Two vouchers are created for the receipt to track purchase price variances when using standard cost. The offset to the account on the first voucher is the Purchase accrual. The offset on the second voucher is the sum of the Cost of purchased materials received and Purchase price variance accounts. The amounts posted in this account are reversed when a purchase order invoice is posted. |
+| Cost of purchased materials invoiced | 140100 | Materials inventory | Asset | Debit | No | F | Cost of purchased materials received | Used when a purchase order invoice is posted. The offset to this account is the Purchase expenditure for product. This account represents the inventory on your balance sheet. The account used is typically the same account used for Cost of units delivered and Cost of units invoiced for sales order. |
 | Purchase expenditure for product | 600180 | Materials receipt | Expense | Credit | No | F  | Used when a purchase order invoice is posted. The offset to this account is the Cost of purchased materials purchased. This account represents the inventory on your balance sheet. |
 | Fixed receipt price profit (Purchase, fixed receipt price profit*) | 510310 | Purchase price variance | Expense | Credit | No | F | Fixed receipt price loss | Used when a purchase order invoice is posted and there is a difference between the invoiced price and the default cost for the item. This account is used when the difference is higher. The offset to this account is the Fixed receipt price offset. |
 | Fixed receipt price loss (Purchase, fixed receipt price loss*) | 510310 | Purchase price variance | Expense | Debit | No | F | Fixed receipt price profit | Used when a purchase order invoice is posted and there is a difference between the invoiced price and the default cost for the item. This account is used when the difference is lower. The offset to this account is the Fixed receipt price offset. |
 | Fixed receipt price offset (Purchase, fixed receipt price offset*) | 140900 | Stock variation | Asset | Both | No | F  | Used when a purchase order invoice is posted and there is a difference between the invoiced price and the default cost for the item. This account is the offset to the Fixed receipt price profit and loss accounts. |
-| Charge | NA | NA | NA | NA | NA | NA | NA | This account is no longer used and is obsolete in Dynamics 365. Use the Stock variation instead. |
-| Stock variation | 600170 | Stock variation | Expense | Credit | No | Both  | This account is used when there is a difference in the unit price between product receipt and invoice, when there are charges that are posted to the item, or when there are indirect costs added to the purchased items. The offset to this account is the Purchase expenditure, un-invoiced account. |
+| Charge | NA | NA | NA | NA | NA | NA | NA | This account is no longer used. Use the Stock variation instead. |
+| Stock variation | 600170 | Stock variation | Expense | Credit | No | Both  | This account is used when there is a difference in the unit price between product receipt and invoice, when there are charges that are posted to the item, or when there are indirect costs added to the purchased items. The offset to this account is the Purchase expenditure, uninvoiced account. |
 | Purchase, accrual | 200140 | Accrued Purchases | Liability | Credit | Y | P | Used when a purchase order product receipt is posted and the option to accrue purchase amounts is enabled. |
-| Accrued sales tax on receipt | 250500 | Accrued Sales Tax | Liability | Credit | Y | Both  | This account is used when you select the Post physical tax option on the **Inventory and warehouse management parameters** and you have a purchase order with tax. The amount is posted when you update the purchase order physically (product receipt), and reversed when you post the purchase order financially (invoice). |
+| Accrued sales tax on receipt | 250500 | Accrued Sales Tax | Liability | Credit | Y | Both  | This account is used when you select the **Post physical tax** option on the **Inventory and warehouse management parameters** and you have a purchase order with tax. The amount is posted when you update the purchase order physically (product receipt), and reversed when you post the purchase order financially (invoice). |
 | Fixed asset receipt (Fixed asset debit*) | 180100 | Tangible fixed assets | Asset | Debit | N | Both | Both | This account is used when you select the option on purchase order line for Fixed assets. The purchase order integration has been configured to acquire the fixed asset upon product receipt or invoice. For more information about Fixed asset purchase order integration, see [Acquire assets through procurement](/fixed-assets/acquire-assets-procurement). |
 | Purchase expenditure for expense | 618900 | Miscellaneous expense | Expense | Debit | N | Both  | Used when posting a product receipt or invoice for a purchase order where the items are not stocked, or a procurement category is used. |
 | Prepayment | 132190 | Prepaid expense | Asset | Debit | N | Both  | Used when processing a prepayment invoice on a purchase order. |
@@ -123,7 +123,7 @@ Purchase requisitions and Purchase order confirmations can also be configured to
 
 As an alternative to setting up the inventory posting for all items, a group of items, or a single item, you can set up categories and control the ledger posting by procurement categories. For more information about setting up categories and assigning them to products, see the Sales order category posting section above.
 
-When using categories with purchase orders or vendor invoices, the category hierarchy needs to be assinged to the **Procurement category** **hierarchy** type in the **Category hierarchy role assignments** page.
+When using categories with purchase orders or vendor invoices, the category hierarchy needs to be assigned to the **Procurement category** **hierarchy** type in the **Category hierarchy role assignments** page.
 
 ### Vendor invoices with procurement categories
 
@@ -134,8 +134,8 @@ The exact number of categories will vary based on the number of expense accounts
 ### Benefits of using procurement categories for vendor invoices
 
 There are many benefits of using procurement categories for vendor invoices include:
--   Consistent user experience: When you configure procurement categories for all non-purchase order related expenses, your users can be trained on one process for invoicing using the **Pending vendor invoices** page.
--   Improved reporting experience: When you configure procurement categories for all items and all non-purchase order related expenses,the procurement spend reporting will analyze your spend by vendor, category and more.
+-   Consistent user experience: When you configure procurement categories for all non-purchase order related expenses, users can be trained on one process for invoicing using the **Pending vendor invoices** page.
+-   Improved reporting experience: When you configure procurement categories for all items and all non-purchase order related expenses, the procurement spend report will analyze spend by vendor, category and more.
 -   Consistent workflow: When you use **Pending vendor invoices** to process all invoices, you can create a consistent workflow and approval process using a single workflow.
 
 ## Consignment inventory posting
