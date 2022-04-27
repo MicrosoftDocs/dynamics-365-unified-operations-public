@@ -4,7 +4,7 @@
 title: Dynamics 365 Commerce e-commerce localization guide
 description: This topic describes how to localize a Microsoft Dynamics 365 Commerce e-commerce site into additional languages and configure the site to support multiple channels.
 author: bicyclingfool
-ms.date: 04/12/2022
+ms.date: 04/27/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -17,17 +17,17 @@ ms.search.validFrom: 2017-06-20
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to localize a Microsoft Dynamics 365 Commerce e-commerce site into additional languages and configure the site to support multiple channels, and also covers the necessary concepts and terminology related to the process.
+This topic describes how to localize a Microsoft Dynamics 365 Commerce e-commerce site into additional languages and configure the site to support multiple channels, and also covers the concepts and terminology related to the process.
 
-The e-commerce capabilities in Dynamics 365 Commerce have been designed to enable online experiences that can be tailored for specific countries and languages while allowing for the maximum reuse of templates, pages, content, and media. It is also possible to start by creating a basic site and then expanding into new markets by adding support for additional countries and languages over time.
+The e-commerce capabilities in Dynamics 365 Commerce have been designed to enable online experiences that can be tailored to specific countries and languages, but at the same time allowing for the maximum reuse of templates, pages, content, and media. You can also create a basic site and then expand into new markets by adding support for additional countries and languages over time.
 
 ## Definitions
 
 **Locale, locale identifier**: A locale (also known as a locale identifier) defines a language that is associated with a country or region. For example, the locale identifier "fr-ca" is associated with Canadian French.
 
-**Base language**: The language you develop your site content in and export for localization.
+**Base language**: The language that you develop your site content in before you export it for localization.
 
-**Channel, online store**: Channels (also known as online stores) define the payment methods, price groups, product hierarchies, assortments, and products for an online e-commerce storefront.
+**Channel, online store**: A channel (also known as an online store) defines the payment methods, price groups, product hierarchies, assortments, and products for an online e-commerce storefront.
 
 ## Concepts
 
