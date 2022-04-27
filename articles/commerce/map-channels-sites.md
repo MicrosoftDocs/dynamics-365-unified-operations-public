@@ -174,9 +174,7 @@ If the variant for the selected page or fragment has not been created yet, you w
 
 If no variant is created, the original page will render and show the appropriate language for module strings and product information pulled from headquarters. However, if text such as a page title or other marketing content has been specified directly in default page modules, those strings will remain in the original language.  
 
-Pages can also be exported as XML Localization Interchange File Format (XLIFF) files to be sent off for localization and then imported as localized page variants.
-
-An alternative to manually creating each page and fragment is to export each page and fragment to an XML Localization Interchange File Format (XLIFF) file that can be sent off for localization. Once localized, each XLIFF can then be imported as localized page variants. To see these options on a page or fragment, select **Localization** on the command bar as shown in the following example illustration.
+An alternative to manually creating each page and fragment is to export each page and fragment to an XML Localization Interchange File Format (XLIFF) file that can be sent off for localization. Once localized, each XLIFF file can then be imported as a localized page variant. To export or import an XLIFF file from a page or fragment in site builder, on the command bar select **Localization** and then select either **Export XLIFF** or **Import XLIFF** as shown in the following example illustration.
 
 ![Import and export a page or fragment to XLIFF format](media/channel-mapping-18.png)
 
