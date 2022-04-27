@@ -45,7 +45,7 @@ Self-service environments use a special approach to performing updates, because 
 - An **AOT deployable package**, which is an all-in-one package that is the sum of all the custom code that the customer wants to apply to its environment.
 - An **Update name** value that the customer provides in LCS. 
  
-<img src="media/SelfServiceUpdate.png" width=600px alt="Self-service update image conceptual model." />
+![Self-service update image conceptual model.](media/SelfServiceUpdate.png)
  
 The combination of these binaries is the basis for an image that is used to create an instance of an Application Object Server (AOS). The **Update name** value lets customers provide a meaningful name that indicates what the update contains.
 
