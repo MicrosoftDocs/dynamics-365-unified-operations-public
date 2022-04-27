@@ -4,7 +4,7 @@
 title: Commerce posting parameters
 description: This topic describes the parameters that are specific to the posting of financial and physical transactions in Microsoft Dynamics 365 Commerce.
 author: analpert
-ms.date: 04/22/2022
+ms.date: 04/27/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,8 +29,9 @@ ms.dyn365.ops.version: 10.0.27
 # Commerce posting parameters
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
-This topic describes the parameters that are specific to the posting of financial and physical transactions in Microsoft Dynamics 365 Commerce.
+This topic describes the parameters that are specific to the posting of financial and physical transactions in Microsoft Dynamics 365 Commerce. Commerce posting parameters are located in Commerce headquarters at **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters \> Posting**.
 
 ## Periodic discount parameters
 
@@ -38,7 +39,7 @@ The following table lists the periodic discount parameters that are specific to 
 
 | Parameter | Description |
 |-----------|-------------|
-| Post periodic discount | This option controls whether periodic offers are posted to the ledger accounts. Periodic discounts include mix and match discounts, quantity discounts, and discount offers. When this parameter is enabled, additional fields can be set in the periodic discount parameters section. |
+| Post periodic discount | This option controls whether periodic offers are posted to the ledger accounts. Periodic discounts include mix and match discounts, quantity discounts, and discount offers. When this parameter is enabled, additional fields can be set in the **Periodic discounts** section. |
 | Ledger account type | <p>Select the type of account that is used to post periodic discounts:</p><ul><li>**Standard** – The system doesn't use the discount-related fields on this page. Instead, it uses the accounts that are defined on the **Posting** page in Commerce headquarters (**Inventory management \> Setup \> Posting \> Posting forms**).</li><li>**Periodic** – The system uses the Commerce discount accounts that are specified by the discount-related fields on this page. If you select this option, you must specify the general ledger (GL) account for each type of offer (discount, mix and match, quantity, and threshold). When you set up each discount, you can define an account. When the discount account posting feature is used on the discount setup page, an additional debit entry and credit entry are made to reclassify the discount posting from the Commerce discount GL account to the discount GL account. For more information, see [Retail discounts](retail-discounts-overview.md).</li></ul> |
 | Post info code discount | This option is no longer used in the standard Commerce solution and will be deprecated. |
 | Post periodic discount for orders | This option controls whether retail periodic discounts are posted to the ledger for customer order and call center orders. |
@@ -95,8 +96,8 @@ The following table lists the invoice parameters that are specific to the postin
 | Journal name | The payment journal name that is used when customer payment journals for sales order payments are created. This setting applies to all order payments that are posted for point of sale (POS), call center, and e-commerce channel orders. |
 | Account name | The payment account name. |
 | Prioritize dimensions from payment method | When this flag is enabled, payment journals prioritize dimensions from the payment method instead of dimensions from the store. |
-| Taxes \| Tax calculation behavior | This parameter specifies the behavior when sales orders that are created during statement posting are invoiced:<ul><li>**Recalculate** – Calculate taxes again.</li><li> **Don't recalculate** – Use the tax amounts that are calculated in POS.</li></ul> |
-| Refund \| Journal name | The journal name that is used when a customer payment journal for refunds is created. This setting applies to all order payments that are posted for POS, call center, and e-commerce channel orders. |
+| Tax calculation behavior | This parameter specifies the behavior when sales orders that are created during statement posting are invoiced:<ul><li>**Recalculate** – Calculate taxes again.</li><li> **Don't recalculate** – Use the tax amounts that are calculated in POS.</li></ul> |
+| Journal name | The journal name that is used when a customer payment journal for refunds is created. This setting applies to all order payments that are posted for POS, call center, and e-commerce channel orders. |
 
 ## Statement parameters
 
