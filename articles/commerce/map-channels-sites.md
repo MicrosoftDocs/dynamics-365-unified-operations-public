@@ -164,23 +164,29 @@ For more information on adding and configuring the site picker module, see [Site
 
 In this scenario there is only one channel but multiple languages. You can change how a page appears based on the selected language by creating a page variant for it. Creating a page variant allows you to add localized content to the variant. 
 
-In site builder, when you have a page open and select the link at the top right that shows the current channel and language, a channel and language picker appears. If you want to override a page for this language, select another locale and then select **Change**. You will then be prompted to create a variant of the page if one does not exist, or if one does exist you will see the variant and be able make edits to that variant. 
+In site builder, when you have a page open and select the link at the top right that shows the current channel and language, a channel and language picker appears. If you want to override a page for this language, select another locale and then select **Change**. 
+
+![Change language for a page in site builder](media/channel-mapping-14.png)
+
+You will see a warning message if the variant for the selected page or fragment has not been created yet. Selecting **Create page variant** gives you options to start with a copy of an existing variant or create a brand new page from one of the templates.
+
+![Prompt to create a page variant in site builder](media/channel-mapping-16.png)
 
 If no variant is created, the original page will render and show the appropriate language for module strings and product information pulled from headquarters. However, if text such as a page title or other marketing content has been specified directly in default page modules, those strings will remain in the original language.  
 
 Pages can also be exported as XML Localization Interchange File Format (XLIFF) files to be sent off for localization and then imported as localized page variants.
 
-![Change language for a page in site builder](media/channel-mapping-14.png)
+An alternative to manually creating each page and fragment is to export each page and fragment to an XLIFF file that can be sent off for localization. Once localized, the XLeimported once it's translated. To see these options on a page or fragment, select **Localization** on the command bar as shown in the following example illustration.
+
+![Import and export a page or fragment to XLIFF format](media/channel-mapping-18.png)
 
 ## Manage site content with multiple channels and languages
 
 A site that has multiple channels and/or languages stores unique variants of each page and fragment per channel/language combination. This allows the page variants to contain localized data but also provides the flexibility to change the look and feel of a page for that variant.  
 
-You will see a warning message if the variant for the selected page or fragment has not been created yet. Selecting **Create page variant** gives you options to start with a copy of an existing variant or create a brand new page from one of the templates.
 
-An alternative to manually creating each page and fragment is to export each page and fragment to an XLIFF file that can be sent off for localization and then reimported once it's translated. To see these options on a page or fragment, select **Localization** on the command bar as shown in the following example illustration.
 
-![Import and export a page or fragment to XLIFF format](media/channel-mapping-18.png)
+
 
 ## Configure multiple channels on an e-commerce site
 
