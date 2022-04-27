@@ -6,24 +6,12 @@ description: This topic describes how to configure the number sequences that are
 author: analpert
 ms.date: 04/27/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: RetailParameters
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+audience: Application User, Developer, IT Pro
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: analpert
 ms.search.validFrom: 2022-04-12
-ms.dyn365.ops.version: 10.0.21
+
 ---
 
 # Set up number sequences for retail statements
