@@ -496,6 +496,8 @@
           href: tasks/configure-functionality-profile-sales-representative.md
         - name: Create financial dimensions for retail channels and configure values on stores 
           href: tasks/create-financial-dimensions-retail-channels.md
+        - name: Set up number sequences for retail statements
+          href: retail-statements-number-sequences.md
         - name: Enable consistent delivery mode handling in e-commerce channels
           href: consistent-delivery-mode-handling.md
       - name: Set up an online channel
@@ -884,6 +886,8 @@
       items:
       - name: Statements overview
         href: retail-statements.md
+      - name: Commerce posting parameters
+        href: commerce-posting-parameters.md
       - name: Validate store transactions for statement calculation 
         href: valid-checker.md
       - name: Disable rules in retail transaction consistency checker
