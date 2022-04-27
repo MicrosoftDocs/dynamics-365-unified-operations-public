@@ -4,10 +4,10 @@
 title: Create returns in POS
 description: This topic describes how to initiate returns for cash-and-carry transactions or customer orders in the Microsoft Dynamics 365 Commerce Point of Sale (POS) application.
 author: hhainesms
-ms.date: 04/14/2022
+ms.date: 04/27/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro 
-ms.reviewer: v-chgri
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
