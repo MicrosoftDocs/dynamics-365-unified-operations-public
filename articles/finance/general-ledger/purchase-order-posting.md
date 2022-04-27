@@ -32,7 +32,7 @@ For a physical transaction (product receipt) to post to the general ledger on a 
 -   The **Accrue liability on product receipt** check box must be selected in the **Item model group** page for the item selected on the purchase order line.
 -   The main accounts must be specified in the **Inventory posting profile** page for the following posting types:
     -   Cost of purchases materials received
-    -   Purchase expenditure, un-invoiced
+    -   Purchase expenditure, uninvoiced
     -   Purchase, accrual
 
 For a financial transaction (invoice) to post to the general ledger on a purchase order, the following conditions must be met:
@@ -66,7 +66,7 @@ If you plan to account for purchase charges and stock variations, the following 
 -   The **Post packing slip in ledger** check box on the **Inventory and warehouse management parameters** page.
 
 The main accounts must be specified in the **Inventory posting profile** page for the following posting types:
-    -   Purchase expenditure, un-invoiced
+    -   Purchase expenditure, uninvoiced
     -   Purchase expenditure for product
     -   Stock variation
 
@@ -128,7 +128,7 @@ When using categories with purchase orders or vendor invoices, the category hier
 
 If your organization uses purchases order for some purchases and not for others, there are a variety of ways that you can process the non-purchase order related invoices. This includes using journals in **Accounts payable** or by the **Pending vendor invoices** page that is used to generate invoices for purchase orders. When creating invoices for non-purchase order related invoices, you will need to create Procurement categories for each type of expense. You will also need to map the category to the correct expense account in the **Inventory posting profiles** page.
 
-The exact number of categories will vary based on the number of expense accounts that you use to post your invoices. At a minimum, you will need at least one procurement category for each main account that you expense non-purchase order invoices to. However, you can use many categories for a single main account. This can be useful for usability, searchability, and reporting of the types of expenses you use.
+The exact number of categories will vary based on the number of expense accounts that you use to post your invoices. At a minimum, you will need at least one procurement category for each main account that you expense non-purchase order invoices to. Many categories can be used for a single main account. This can be useful for usability, searchability, and reporting of the types of expenses you use.
 
 ### Benefits of using procurement categories for vendor invoices
 
