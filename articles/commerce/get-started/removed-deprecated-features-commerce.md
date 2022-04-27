@@ -43,15 +43,15 @@ This list is intended to help you consider these removals and deprecations for y
 
 ### Modern Point of Sale (MPOS)
 
-The Modern Point of Sale (MPOS) application will be deprecated in 10.0.25 and replaced with the new Store Commerce app.
+The Modern Point of Sale (MPOS) application will be deprecated in the Commerce version 10.0.25 release and replaced with the Store Commerce app.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Our in-store apps are the cornerstone of our Dynamics 365 Commerce omnichannel offering. We continuously innovate to provide Modern and Intelligent store experiences and to further modernize our solution, we are rolling out new sets of changes that will significantly improve IT operations and the end-user experience with our existing in-store applications on Windows. The new Store Commerce application is a technology upgrade of the existing Modern point of sale (MPOS). It provides improved performance, reliability, and long-term support on the Windows platform and eliminating the need to repackage the app with each update. |
+| **Reason for deprecation/removal** | In-store apps are the cornerstone of the Dynamics 365 Commerce omnichannel offering. We continuously innovate to provide modern and intelligent store experiences, and to further modernize our solution we are rolling out new sets of changes that will significantly improve IT operations and user experiences with our existing in-store applications on Windows. The new Store Commerce application is a technology upgrade of the existing MPOS. It provides improved performance, reliability, and long-term support on the Windows platform and eliminates the need to repackage the app with each update. |
 | **Replaced by another feature?**   |  [Store Commerce](../dev-itpro/store-commerce.md) |
 | **Product areas affected**         | Modern Point of Sale |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: As of release 10.0.25, the MPOS installer shipped via the LCS VMs will be removed in Oct 2023. |
+| **Status**                         | Deprecated: As of the Commerce version 10.0.25 release, the MPOS installer shipped via the LCS virtual machines (VMs) will be removed in Oct 2023. |
 
 ## Features removed or deprecated in the Commerce 10.0.21 release
 
