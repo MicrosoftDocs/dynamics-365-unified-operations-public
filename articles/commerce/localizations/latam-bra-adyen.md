@@ -14,7 +14,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-#ms.search.scope: Retail
+#
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Brazil

@@ -263,7 +263,8 @@
         "fin-ops-core/fin-ops/organization-administration/tasks/**/**.md": "Core, Operations",
         "supply-chain/**/**.md": "Core, Operations",
         "supply-chain/localizations/**/**.md": "Core, Operations",
-        "talent/**/**.md": "Human Resources"
+        "talent/**/**.md": "Human Resources",
+        "human-resources/**/**.md": "Human Resources"
       }
     },
     "template": [],

@@ -16,7 +16,7 @@ ms.search.form: AssetLease
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations, Finance
+# 
 
 # ms.tgt_pltfrm: 
 ms.custom: 4464
