@@ -60,7 +60,7 @@ The following table shows the various results that can be shown after a fit anal
 
 | Feature | Listed issue | Explanation | Expected availability |
 | --- | --- | --- | --- |
-| Actions | Coverage groups with Actions calculation enabled: _\#_ | This feature is pending. Currently, actions aren't generated during master planning when Planning Optimization is enabled, regardless of this setting. The main purpose of actions is to suggest changes to existing orders. Evaluate if actions are actively applied as part of your business processes or if the delay information related to the orders is sufficient. | April 2022 |
+| Actions | Coverage groups with Actions calculation enabled: _\#_ | This feature is pending. Currently, actions aren't generated during master planning when Planning Optimization is enabled, regardless of this setting. The main purpose of actions is to suggest changes to existing orders. Evaluate if actions are actively applied as part of your business processes or if the delay information related to the orders is sufficient. | Supported |
 | Base calendars | Calendars using base calendar: _\#_ | This feature is now supported. | March 2022 | 
 | Batch disposition codes | Non-nettable batch disposition masters: _\#_ | This feature is pending. Currently, batch disposition codes are ignored when Planning Optimization is enabled. | October 2022 or later |
 | Capable to promise (CTP) | Default order settings with delivery date control set to CTP: _\#_ | This feature is pending. Currently, CTP is ignored when Planning Optimization is enabled, regardless of this setting. | October 2022 |
