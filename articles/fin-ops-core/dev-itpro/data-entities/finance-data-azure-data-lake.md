@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform Update 34
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> The **Export to Data Lake** feature is generally available in the United States, Canada, United Kingdom, Europe, South East Asia, East Asia, Australia, India, and Japan regions. If your Finance and Operations environment is in any of those regions, you will be able to install the **Export to Data Lake** add-in in it. Microsoft will enable this feature in additional regions in the future. You can join the [preview Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all) to stay in touch and ask questions that will help you understand the feature and upcoming improvements.
+> The **Export to Data Lake** feature is generally available in the United States, Canada, United Kingdom, Europe, South East Asia, East Asia, Australia, India, Latin America and Japan regions. If your Finance and Operations environment is in any of those regions, you will be able to install the **Export to Data Lake** add-in in it. Microsoft will enable this feature in additional regions in the future. You can join the [preview Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all) to stay in touch and ask questions that will help you understand the feature and upcoming improvements.
 
 The **Export to Data Lake** feature lets you copy data from your Finance and Operations apps into your own data lake (Azure Data Lake Storage Gen2). The system lets you select the tables and entities that are included. After you select the data that you want, the system makes an initial copy. The system then keeps the selected data up to date by applying changes, deletions, and additions. After data changes in your Finance and Operations app instances, there might be a delay of a few minutes before the data is available in your data lake.
 
@@ -104,7 +104,7 @@ Ask your administrator to re-install the Export to Data Lake add-in. If this iss
 If you see this error for a prolonged period of time, contact Support.  
 
 ### Memo Fields are missing in the Data Lake
-At present, the system does not export fields of type Memo, nVarchar(max), VarBinary or Blob types into the Data lake. If you choose a table with fields of this type, system will ignore these fields and export others. We are working on enabling these fields in the future. If you would like to stay in touch with product team and learn about upcmoing features, you can join the [preview Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all).
+At present, the system does not export fields of type Memo, nVarchar(max), VarBinary or Blob types into the Data lake. If you choose a table with fields of these types, system will ignore these fields and export others. We are working on enabling these special fields in the future. If you would like to stay in touch with product team and learn about upcmoing features, you can join the [preview Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all).
 
 ### Status codes with extended errors
 When an error occurs in a table that you added to Export to Data Lake, you may see an error code in the status column. The following error codes provide the cause of the error and how to correct the issue.
