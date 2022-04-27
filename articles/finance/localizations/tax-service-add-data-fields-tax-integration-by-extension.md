@@ -4,7 +4,7 @@
 title: Add data fields in the tax integration by using extensions
 description: This topic explains how to use X++ extensions to add data fields in the tax integration.
 author: qire
-ms.date: 02/17/2022
+ms.date: 04/27/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -354,7 +354,7 @@ final static class TaxIntegrationCalculationActivityOnDocument_CalculationServic
         _destination.SetField(IOCostCenter, _source.getCostCenter());
         _destination.SetField(IOProject, _source.getProjectId());
 
-        // If the field to be extended is an enum type, use enum2Symbol to convert a enum variable exampleEnum of ExampleEnumType to string
+        // If the field to be extended is an enum type, use enum2Symbol to convert an enum variable exampleEnum of ExampleEnumType to a string
         // _destination.SetField(IOEnumExample, enum2Symbol(enumNum(ExampleEnumType), _source.getExampleEnum()));
     }
 }
@@ -363,10 +363,10 @@ final static class TaxIntegrationCalculationActivityOnDocument_CalculationServic
 In this code, `_destination` is the wrapper object that is used to generate the request, and `_source` is the `TaxIntegrationLineObject` object.
 
 > [!NOTE]
-> Define the field name that is used in the request as **private const str**. The string should be exactly the same as the **node name** (not label) added in the topic [Add data fields in tax configurations](tax-service-add-data-fields-tax-configurations.md).
+> Define the field name that is used in the request as **private const str**. The string should be exactly the same as the node name (not the label) added in the topic [Add data fields in tax configurations](tax-service-add-data-fields-tax-configurations.md).
 > 
 > Set the field in the **copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine** method by using the **SetField** method. The data type of the second parameter should be **string**. If the data type isn't **string**, convert it to string.
-> If the data type is X++ **enum type**, it is recommended that **enum2Symbol** method should be used to convert the enum value to string. The enum value added in the tax configuration should be exactly the same as the enum name. Below are the differences between enum value, label, and name.
+> If the data type is X++ **enum type**, we recommend you use the **enum2Symbol** method to convert the enum value to a string. The enum value added in the tax configuration should be exactly the same as the enum name. The following is a list of differences between enum value, label, and name.
 > 
 >   - The name of enum is a symbolic name in code. **enum2Symbol()** can convert the enum value to its name.
 >   - The value of the enum is integer.
