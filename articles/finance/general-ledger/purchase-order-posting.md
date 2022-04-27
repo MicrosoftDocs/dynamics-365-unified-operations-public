@@ -74,7 +74,7 @@ To optionally use a Fixed receipt price for a product, you must configure the fo
 
     -   Fixed receipt price offset
 
-For more information, refer to [Fixed receipt price](fixed-receipt-price.md).
+For more information, see [Fixed receipt price](fixed-receipt-price.md).
 
 ## Purchase charges and stock variation posting
 
@@ -102,7 +102,7 @@ If you plan to account for purchase charges and stock variations, the following 
 
 **NOTE:** The Charge posting type is obsolete when you use the **Post to charge account in ledger** parameter.
 
-For more information, refer to [Post to charge account accounting principle](post-to-charge-account-accounting-principle.md).
+For more information, see [Post to charge account accounting principle](post-to-charge-account-accounting-principle.md).
 
 ## Sample posting profile configuration
 
@@ -113,7 +113,8 @@ The following table shows examples of the default posting types with sample main
 
 
 | Posting type | Main account example | Main account name example | Account type | Debit/ Credit? | Clearing account | P/F | Follow | Description |
-|-------------------------|-------------------------|-------------------------|-------------------------|-------------------------|-------------------------|-------------------------|-------------------------|-------------------------|
+|--------------|---------------------|-------------------------|----------------|----------------|------|-----------|----------|-------------------------|
+
 | Cost of purchased materials received | 140100</br>140101 | Materials Inventory</br>Materials Shipped Not Invoiced | Asset | Debit | Yes | P | Cost of purchased materials invoiced | Used when a purchase order product receipt is posted. The offset to the account is the Purchase expenditure, un-invoiced. The amount in this account is reversed when a purchase order invoice is posted. |
 | Purchase expenditure, un-invoiced | 600180 | Material Receipts | Expense | Debit | Yes | P |  | Used when a purchase order product receipt is posted. Two vouchers are created for the receipt to track purchase price variances when using standard cost. The offset to the account on the first voucher is the Purchase accrual. The offset on the second voucher is the sum of the Cost of purchased materials received and Purchase price variance accounts. The amounts posted in this account are reversed when a purchase order invoice is posted. |
 | Cost of purchased materials invoiced | 140100 | Materials Inventory | Asset | Debit | No | F | Cost of purchased materials received | Used when a purchase order invoice is posted. The offset to this account is the Purchase expenditure for product. This account represents the inventory on your balance sheet. The account used here is typically the same account used for Cost of units delivered and Cost of units invoiced for sales order. |
@@ -125,7 +126,7 @@ The following table shows examples of the default posting types with sample main
 | Stock variation | 600170 | Stock Variation | Expense | Credit | No | Both |  | This account is used when there is a difference in the unit price between product receipt and invoice, when there are charges that are posted to the item, or when there are indirect costs added to the purchased items. The offset to this account is the Purchase expenditure, un-invoiced account. |
 | Purchase, accrual | 200140 | Accrued Purchases | Liability | Credit | Y | P |  | Used when a purchase order product receipt is posted and the option to accrue purchase amounts is enabled. |
 | Accrued sales tax on receipt | 250500 | Accrued Sales Tax | Liability | Credit | Y | Both |  | This account is used when you select the Post physical tax option in the inventory and warehouse management parameters and you have a purchase order with tax. The amount is posted when you update the purchase order physically (product receipt), and reversed when you post the purchase order financially (invoice). |
-| Fixed asset receipt (Fixed asset debit*) | 180100 | Tangible Fixed Assets | Asset | Debit | N | Both | Both | This account is used when you select the option on purchase order line for Fixed asset and you have configured the purchase order integration to acquire the fixed asset upon product receipt or invoice. For more information about Fixed asset purchase order integration, refer to [Acquire assets through procurement](/fixed-assets/acquire-assets-procurement). |
+| Fixed asset receipt (Fixed asset debit*) | 180100 | Tangible Fixed Assets | Asset | Debit | N | Both | Both | This account is used when you select the option on purchase order line for Fixed asset and you have configured the purchase order integration to acquire the fixed asset upon product receipt or invoice. For more information about Fixed asset purchase order integration, see [Acquire assets through procurement](/fixed-assets/acquire-assets-procurement). |
 | Purchase expenditure for expense | 618900 | Miscellaneous Expense | Expense | Debit | N | Both |  | Used when posting a product receipt or invoice for a purchase order where the items are not stocked, or a procurement category is used. |
 | Prepayment | 132190 | Prepaid Expense | Asset | Debit | N | Both |  | Used when processing a prepayment invoice on a purchase order. |
 
@@ -138,11 +139,11 @@ If you use the **Fixed asset** module and plan to purchase fixed assets through 
 
 ## Prepayment purchase order invoice posting
 
-If you plan to use the Prepayment invoice feature for purchase orders, you must also configure the **Prepayment** posting type on the Purchase order tab of the **Inventory posting profile** page. For more information, refer to [Prepayment invoices vs. prepayments](/accounts-payable/prepayments-invoices-vs-prepayments.md).
+If you plan to use the Prepayment invoice feature for purchase orders, you must also configure the **Prepayment** posting type on the Purchase order tab of the **Inventory posting profile** page. For more information, see [Prepayment invoices vs. prepayments](/accounts-payable/prepayments-invoices-vs-prepayments.md).
 
 ## Purchase requisition and purchase order confirmation posting
 
-Purchase requisitions and Purchase order confirmations can also be configured to post pre-encumbrances and encumbrances to the general ledger. However, these postings are controlled by a posting definition. For more information, refer to [About purchase order encumbrances](/dynamicsax-2012/appuser-itpro/about-purchase-order-encumbrances).
+Purchase requisitions and Purchase order confirmations can also be configured to post pre-encumbrances and encumbrances to the general ledger. However, these postings are controlled by a posting definition. For more information, see [About purchase order encumbrances](/dynamicsax-2012/appuser-itpro/about-purchase-order-encumbrances).
 
 ## Procurement category posting
 
@@ -168,4 +169,4 @@ There are many benefits of using procurement categories for vendor invoices incl
 
 ## Consignment inventory posting
 
-Consignment inventory uses the same ledger posting as other purchased items. However, the key difference is that when the inventory is received, no ledger transactions are recorded. When an Inventory ownership change journal is posted, to transfer the ownership to the organization, a voucher is generated to record the cost of the item. For more information refer to [Set up consignment](/supply-chain/inventory/consignment.md).
+Consignment inventory uses the same ledger posting as other purchased items. However, the key difference is that when the inventory is received, no ledger transactions are recorded. When an Inventory ownership change journal is posted, to transfer the ownership to the organization, a voucher is generated to record the cost of the item. For more information, see [Set up consignment](/supply-chain/inventory/consignment.md).
