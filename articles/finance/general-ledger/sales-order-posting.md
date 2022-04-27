@@ -76,7 +76,6 @@ The following table shows examples of the default posting types with sample main
 
 | Posting type | Main account example | Main account name example | Account type | Debit/ Credit? | Clearing account | P/F | Follow | Description |
 |------------|------------------------|-------------------------|--------------|---------|-------------------|------------|------|-------------------------|
-
 | Cost of units, delivered | 140100</br>140101 | Materials inventory</br>Materials shipped not invoiced | Asset | Credit | Yes | P | Cost of units, invoiced | Used when a sales order packing slip is posted. The offset to the account is the Cost of goods sold, delivered. The amount in this account is reversed when a sales order invoice is posted. You may want to use a Materials shipped not invoiced account to represent the physical inventory, and reserve the Materials inventory account for the financial update. |
 | Cost of goods sold, delivered | 500150 | Deferred COGS | Expense | Debit | Yes | P  | Used when a sales order packing slip is posted. The offset to the account is the Cost of units, delivered. The amount in this account is reversed when a sales order invoice is posted. |
 | Cost of units, invoiced | 140100 | Materials inventory | Asset | Credit | No | F | Cost of units, delivered | Used when a sales order invoice is posted. The offset to this account is the Cost of goods sold, invoiced. This account represents the inventory on your balance sheet. |
