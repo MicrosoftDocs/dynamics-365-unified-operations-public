@@ -22,14 +22,15 @@ This topic provides guidelines for setting up the fiscal integration functionali
 
 ## Enable features in Commerce headquarters
 
-To enable features related to fiscal integration functionality for Commerce channels, follow these steps.
+To enable features that are related to fiscal integration functionality for Commerce channels, follow these steps.
 
 1. In Commerce headquarters, go to **System administration \> Workspaces \> Feature management**.
-1. Find and enable the following features: 
-    - **Direct fiscal integration from POS registers** - The feature extends the fiscal integration framework by adding a capability to create fiscal connectors that will be executed in POS. This type of connector communicates with a fiscal device or service that provides an HTTP API and doesn't require a dedicated physical machine in the store to be plugged in or deployed on. For example, this functionality enables fiscal integration for mobile devices with no shared hardware station required.
-    - **Fiscal integration technical profile overrides** - This feature allows expanding the configuration of fiscal integration and enables the capability to check connection parameters in the settings page of a POS register. When this feature is enabled, you can override the parameters of a technical profile.
-    - **Fiscal Registration State of POS Registers** - When this feature is enabled, you can disable the fiscal registration process for specific POS registers. If fiscal registration is disabled for a POS register, it's not possible to complete sales transactions on the register.
-    - **Fiscal integration local storage backup** - This feature extends the error handling capabilities of the fiscal integration framework. It also enables automatic backup of fiscal registration data in case of data loss to restore the data in local storage while activating a device.
+1. Find and enable the following features:
+
+    - **Direct fiscal integration from POS registers** – This feature extends the fiscal integration framework by adding the capability to create fiscal connectors that will be run in point of sale (POS). This type of connector communicates with a fiscal device or service that provides an HTTP application programming interface (API) and doesn't require that a dedicated physical machine in the store be plugged in or deployed on. For example, this functionality enables fiscal integration for mobile devices without requiring shared hardware station.
+    - **Fiscal integration technical profile overrides** – This feature enables the configuration of fiscal integration to be expanded and adds the capability to check connection parameters on the settings page of a POS register. When this feature is enabled, you can override the parameters of a technical profile.
+    - **Fiscal Registration State of POS Registers** – When this feature is enabled, you can disable the fiscal registration process for specific POS registers. If fiscal registration is disabled for a POS register, sales transactions can't be completed on that register.
+    - **Fiscal integration local storage backup** – This feature extends the error handling capabilities of the fiscal integration framework. It also enables automatic backup of fiscal registration data in the event of data loss, so that the data in local storage is restored while a device is being activated.
 
 ## Set up Commerce parameters
 
@@ -37,9 +38,11 @@ To set up Commerce parameters, follow these steps.
 
 1. On the **Commerce shared parameters** page, on the **General** tab, set the **Enable fiscal integration** option to **Yes**.
 1. On the **Number sequences** tab, define the number sequences for the following references:
-    - Fiscal technical profile number.
-    - Fiscal connector group number.
-    - Registration process number.
+
+    - Fiscal technical profile number
+    - Fiscal connector group number
+    - Registration process number
+
 1. On the **Commerce parameters** page, define the number sequence for the fiscal functional profile number.
 
 > [!NOTE]
@@ -52,7 +55,7 @@ The process of setting up the fiscal integration includes the following tasks:
 - Configure fiscal connectors that represent fiscal devices or services that are used for fiscal registration purposes, such as fiscal printers.
 - Configure document providers that generate fiscal documents that will be registered in fiscal devices or services by fiscal connectors.
 - Configure the fiscal registration process that defines a sequence of fiscal registration steps and the fiscal connectors and fiscal document providers that are used for each step.
-- Assign the fiscal registration process to point of sale (POS) functionality profiles.
+- Assign the fiscal registration process to POS functionality profiles.
 - Assign connector technical profiles to hardware profiles.
 - Assign connector technical profiles to POS hardware or functionality profiles.
 
@@ -185,7 +188,7 @@ The fiscal registration flow is defined by the fiscal registration process and a
 - The subscription of events and transactions to fiscal registration is predefined in the fiscal document provider.
 - The fiscal document provider is also responsible for identifying the fiscal connector that is used for fiscal registration. It matches the connector functional profiles that are included in the fiscal connector group that is specified for the current step of the fiscal registration process with the connector technical profile that is assigned to the hardware profile of the Hardware station that the POS is paired to.
 - The fiscal document provider uses the data mapping settings from the fiscal document provider configuration to transform transaction/event data such as taxes and payments while a fiscal document is generated.
-- When the fiscal document provider generates a fiscal document, the fiscal connector can either send it to the fiscal device as is, or parse it and transform it into a sequence of commands of the device application programming interface (API), depending on how the communication is handled.
+- When the fiscal document provider generates a fiscal document, the fiscal connector can either send it to the fiscal device as is, or parse it and transform it into a sequence of commands of the device API, depending on how the communication is handled.
 
 ### Set up registers with fiscal registration restrictions
 
@@ -296,13 +299,16 @@ To enable manual execution of a postponed fiscal registration, you should add a 
 To view connection parameters and other information in POS, follow these steps.
 
 1. Open Modern POS (MPOS) or Cloud POS (CPOS).
-1. Select **Settings**. If fiscal integration is enabled, in the **Fiscal Integration** section on the right of the screen you will be able to view the following:
-    - Status of fiscal registration.
-    - State of the last fiscal transaction.
-    - Number of pending audit events.
-1. Select **Details** to view the following:
-    - Registration process steps.
-    - Connection parameters.
-    - Audit events details.
+1. Select **Settings**. If fiscal integration is enabled, the **Fiscal Integration** section on the right will show the following information:
+
+    - The status of fiscal registration
+    - The state of the last fiscal transaction
+    - The number of pending audit events
+
+1. Select **Details** to view the following information:
+
+    - Registration process steps
+    - Connection parameters
+    - Audit events details
  
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
