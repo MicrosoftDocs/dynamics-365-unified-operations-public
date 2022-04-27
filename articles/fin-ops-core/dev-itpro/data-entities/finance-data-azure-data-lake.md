@@ -89,7 +89,7 @@ The Export to Data Lake page in a Finance and Operations environment shows the t
 ### Export to Data Lake feature is not available in your region and/or your environment at this time
 This feature is not available in Tier-1 (developer) environments. You need a sandbox environment (Tier 2 or higher) with Platform updates for version 10.0.13 or higher.
 
-This feature is in limited preview and may not be available in all Azure regions where Finance and Operations apps are available, or this feature may not be available for your environment. If you would like to join a future preview, [complete the survey](https://aka.ms/FnODataLakePreviewSurvey). We will contact you when we are ready to include you. You can also join a Yammer group by completing the survey. You can use the Yammer group to stay in contact and ask questions that will help you understand the feature. We are working hard to make this feature available soon.
+This feature may not be available in all Azure regions where Finance and Operations apps are available, or this feature may not be available for your environment. If you would like to join a future preview, [complete the survey](https://aka.ms/FnODataLakePreviewSurvey). We will contact you when we are ready to include you. You can also join a Yammer group by completing the survey. You can use the Yammer group to stay in contact and ask questions that will help you understand the feature. We are working hard to make this feature available soon.
 
 ### Export to Data Lake feature is currently being installed for your environment. Please check back later.
 Before you can use this feature, you need to configure the export to Data Lake. For more information, see [Configure export to Azure Data Lake](configure-export-data-lake.md).
@@ -102,6 +102,9 @@ Ask your administrator to re-install the Export to Data Lake add-in. If this iss
 
 ### Export to Data Lake feature is temporarily unavailable. Please check back later.
 If you see this error for a prolonged period of time, contact Support.  
+
+### Memo Fields are missing in the Data Lake
+At present, the system does not export fields of type Memo, nVarchar(max), VarBinary or Blob types into the Data lake. If you choose a table with fields of this type, system will ignore these fields and export others. We are working on enabling these fields in the future. If you would like to stay in touch with product team and learn about upcmoing features, you can join the [preview Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all).
 
 ### Status codes with extended errors
 When an error occurs in a table that you added to Export to Data Lake, you may see an error code in the status column. The following error codes provide the cause of the error and how to correct the issue.
