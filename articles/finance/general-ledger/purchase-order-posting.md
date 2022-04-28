@@ -45,7 +45,7 @@ For a financial transaction (invoice) to post to the general ledger on a purchas
 
 ## Fixed receipt price posting
 
-Fixed receipt price is an alternative way to use a standard cost for a product then selecting the Standard cost option on the **Inventory model** field in the **Item model group** page for an item. The main difference is that when using the **Fixed receipt price** the system will use the current cost price configured for the item when the receipt into inventory is posted. There is no cost revaluation process for **Fixed receipt price** and when a financial update is posted the current cost price is used at the time of posting. If there is a difference between the cost price used at receipt and invoice, the system will post the variance to the Fixed receipt price profit and loss accounts.
+Fixed receipt price is an alternative way to use a standard cost for a product then selecting the **Standard cost** option in the **Inventory model** field on the **Item model group** page for an item. The main difference is when using the **Fixed receipt price**, the current cost price will be used for the item when the receipt into inventory is posted. There is no cost revaluation process for **Fixed receipt price** and when a financial update is posted the current cost price is used at the time of posting. If there is a difference between the cost price used at receipt and invoice, the variance will post to the fixed receipt price profit and loss accounts.
 
 To use a Fixed receipt price for a product, you must configure the following:
 -   The **Post physical inventory** and the **Fixed receipt price** check boxes must be selected on the **Item model groups** page.
@@ -60,10 +60,10 @@ For more information, see [Fixed receipt price](fixed-receipt-price.md).
 ## Purchase charges and stock variation posting
 
 If you plan to account for purchase charges and stock variations, the following check boxes must be selected: :
--   The **Post to charge account in ledger** check box on the **Accounts payable parameters** page on the **Invoice** tab.
--   The **Post physical inventory**, **Post financial inventory**, and the **Accrue liability on product receipt** check boxes on the **Item model groups** page for the item selected on the purchase order line.
--   The **Generate charges on product receipt** check box on the **Procurement and sourcing parameters** page.
--   The **Post packing slip in ledger** check box on the **Inventory and warehouse management parameters** page.
+-   The **Post to charge account in ledger** on the **Accounts payable parameters** page on the **Invoice** tab.
+-   The **Post physical inventory**, **Post financial inventory**, and the **Accrue liability on product receipt** on the **Item model groups** page for the item selected on the purchase order line.
+-   The **Generate charges on product receipt** on the **Procurement and sourcing parameters** page.
+-   The **Post packing slip in ledger** on the **Inventory and warehouse management parameters** page.
 
 The main accounts must be specified in the **Inventory posting profile** page for the following posting types:
     -   Purchase expenditure, uninvoiced
@@ -78,12 +78,12 @@ For more information, see [Post to charge account accounting principle](post-to-
 ## Sample posting profile configuration
 
 The following table shows examples of the default posting types with sample main accounts and descriptions:
- - The **Clearing account** column indicates the posting type is a clearing account. This means the amount posted in this account is automatically reversed when a later transaction is posted. 
+ - The **Clearing account** column indicates the posting type is a clearing account. The amount posted in this account is automatically reversed when a later transaction is posted. 
  - The **P/F** column indicates **P** for physical posting and **F** for financial posting. 
  - The **Follow** column indicates if the main account for a specific posting type is typically the same as another posting type. The value in the column indicates the posting type that is typically used.
 
 > [!NOTE]
-> The suggested main accounts and main account names are only suggestions. It is recommended that you work with your accountant to determine the best configuration for your business needs.
+> The main accounts and main account names are only suggestions. It is recommended that you work with your accountant to determine the best configuration for your business needs.
 
 
 | Posting type | Main account example | Main account name example | Account type | Debit/ Credit? | Clearing account | P/F | Follow | Description |
@@ -126,13 +126,13 @@ When using categories with purchase orders or vendor invoices, the category hier
 
 ### Vendor invoices with procurement categories
 
-If your organization uses purchases order for some purchases and not for others, there are a variety of ways that you can process the non-purchase order related invoices. This includes using journals in **Accounts payable** or by the **Pending vendor invoices** page that is used to generate invoices for purchase orders. When creating invoices for non-purchase order related invoices, you will need to create Procurement categories for each type of expense. You will also need to map the category to the correct expense account in the **Inventory posting profiles** page.
+If your organization uses purchases order for some purchases and not for others, there are a variety of ways that you can process the non-purchase order related invoices. This includes using journals in **Accounts payable** or by the **Pending vendor invoices** page that is used to generate invoices for purchase orders. When creating invoices for non-purchase order related invoices, you will need to create procurement categories for each type of expense. You will need to map the category to the correct expense account on the **Inventory posting profiles** page.
 
-The exact number of categories will vary based on the number of expense accounts that you use to post your invoices. At a minimum, you will need at least one procurement category for each main account that you expense non-purchase order invoices to. Many categories can be used for a single main account. This can be useful for usability, searchability, and reporting of the types of expenses you use.
+The exact number of categories will vary based on the number of expense accounts that you use to post your invoices. You will need at least one procurement category for each main account that you expense non-purchase order invoices to. Many categories can be used for a single main account. This can be useful for usability, searchability, and reporting of the types of expenses you use.
 
 ### Benefits of using procurement categories for vendor invoices
 
-There are many benefits of using procurement categories for vendor invoices include:
+Some benefits of using procurement categories for vendor invoices include:
 -   Consistent user experience: When you configure procurement categories for all non-purchase order related expenses, users can be trained on one process for invoicing using the **Pending vendor invoices** page.
 -   Improved reporting experience: When you configure procurement categories for all items and all non-purchase order related expenses, the procurement spend report will analyze the spend by vendor, category and more.
 -   Consistent workflow: When you use **Pending vendor invoices** to process all invoices, you can create a consistent workflow and approval process using a single workflow.
