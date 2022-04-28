@@ -5,7 +5,7 @@
 title: Commerce catalogs for B2B FAQ
 description: This topic provides answer to frequently asked questions about Microsoft Dynamics 365 Commerce catalogs.
 author: ashishmsft
-ms.date: 03/18/2022
+ms.date: 04/28/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
