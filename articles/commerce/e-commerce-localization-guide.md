@@ -33,9 +33,9 @@ The e-commerce capabilities in Dynamics 365 Commerce have been designed to enabl
 
 ### URL-driven experience
 
-Dynamics 365 Commerce e-commerce sites deliver unique marketized and localized experiences for customers through channels and locale identifiers. Channels define the unique products, categories, currencies, and payment methods for a market, and locale identifiers determine the language of the content that customers will see. An e-commerce site uses URLs to differentiate between marketized and localized experiences. Site URLs for these unique channel and locale experiences are defined for a site in the **Channels** site settings page in Dynamics 365 Commerce site builder.
+Dynamics 365 Commerce e-commerce sites deliver unique marketized and localized experiences for customers through channels and locale identifiers. Channels define the unique products, categories, currencies, and payment methods for a market, and locale identifiers determine the language of the content that customers see. An e-commerce site uses URLs to differentiate between marketized and localized experiences. Site URLs for these unique channel and locale experiences are defined for a site on the **Site settings \> Channels** page in Dynamics 365 Commerce site builder.
 
-A URL in site builder is a combination of a domain and a path that defines the entry point for a unique pairing of channel and locale. In the following example, a fictitious online store called Fabrikam Inc. defines four unique combinations of channels and locales, and maps each to a unique URL that serves them to customers.
+In site builder, a URL is a combination of a domain and a path that defines the entry point for a unique combination of a channel and a locale. In the following example, a fictitious online store called Fabrikam Inc. defines four unique combinations of a channel and a locale, and maps each combination to a unique URL that serves content to customers.
 
 | Domain                     |  Path      | Channel       |   Locale     |
 |------------------------|--------|--------------------------------|--------|
