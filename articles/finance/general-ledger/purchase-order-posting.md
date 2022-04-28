@@ -28,7 +28,7 @@ The **Purchase order** tab on the **Inventory posting profiles** page is used to
 
 For a physical transaction (product receipt) to post to the general ledger on a purchase order, the following check boxes must be selected:
 -   The **Post product receipt in ledger** check box on the **Inventory and warehouse management parameters** page.
--   The **Post physical inventory** and **Accrue liability on product receipt** check boxes on the **Item model groups** page
+-   The **Post physical inventory** and **Accrue liability on product receipt** check boxes on the **Item model groups** page.
 
 The main accounts must be specified in the **Inventory posting profile** page for the following posting types:
     -   Cost of purchases materials received
