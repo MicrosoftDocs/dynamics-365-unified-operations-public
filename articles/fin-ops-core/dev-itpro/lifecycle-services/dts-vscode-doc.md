@@ -2,7 +2,7 @@
 # required metadata
 
 title: Dynamics 365 Translation Service Visual Studio Code extension (Public Preview)
-description: This topic explains how to integrate the Dynamics 365 Translation Service (DTS) extension for Visual Studio Code into your Visual Studio Code workflow.
+description: This topic explains how to integrate the Microsoft Dynamics 365 Translation Service (DTS) extension for Visual Studio Code into your Visual Studio Code workflow.
 author: joshftb
 ms.date: 4/18/2022
 ms.topic: article
@@ -18,82 +18,75 @@ ms.search.validFrom: 2022-05-02
 [!include[banner](../includes/banner.md)]
 [!include[preview banner](../includes/preview-banner.md)]
 
-The Microsoft Dynamics 365 Translation Service (DTS) extension for Visual Studio Code (VS Code) allows users to interact with DTS from the editor. It was created for Dynamics 365 Business Central users developing extensions in AL. This extension provides a user interface for creating, submitting, and retrieving new DTS translation requests.
+The Microsoft Dynamics 365 Translation Service (DTS) extension for Visual Studio Code (VS Code) lets users interact with DTS from the VS Code editor. This extension was created for Dynamics 365 Business Central users who develop extensions in AL. It provides a user interface (UI) for creating, submitting, and retrieving new DTS translation requests.
 
-Before you start, you should be familiar with development in AL, as well as working with translation files from within the Business Central development environment. For more information, see:
+Before you start, you should be familiar with development in AL. You should also know how to work with translation files in the Business Central development environment. For more information, see the following topics:
 
-* [Developing extensions in AL](/dynamics365/business-central/dev-itpro/developer/devenv-dev-overview)
+- [Developing extensions in AL](/dynamics365/business-central/dev-itpro/developer/devenv-dev-overview)
+- [Working with translation files](/dynamics365/business-central/dev-itpro/developer/devenv-work-with-translation-files)
 
-* [Working with translation files](/dynamics365/business-central/dev-itpro/developer/devenv-work-with-translation-files)
+## Install VS Code and the DTS extension
 
+If you haven't already done so, install [VS Code](https://code.visualstudio.com/).
 
+Next, install the DTS extension for VS Code from the Visual Studio Marketplace. For more information about how to install extensions, see [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-marketplace).
 
-## Install Visual Studio Code and the Dynamics Translation Service extension
+## Access the DTS extension
 
-If you have not already done so, install [VS Code](https://code.visualstudio.com/).
+The extension will be active if you're in an AL workspace. To access the extension, select the DTS icon in the Activity Bar on the side of the VS Code window, as shown in the following illustration.
 
-Next, install the Dynamics 365 Translation Service extension for VS Code from the Visual Studio Marketplace. For additional details on installing extensions, see [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-marketplace).
+![DTS icon in the Activity Bar in VS Code.](media/dtsvsc-icon.png)
 
-## Using the extension
+The DTS view is opened. It consists of the resource file explorer and the translation request configuration view.
 
-The extension will be active if you are in an AL workspace. To access the extension, first select the DTS icon in the sidebar, as shown in the image below.
+![DTS view.](media/dtsvsc-dtsview.png)
 
-![Screenshot of Visual Studio Code with the DTS extension icon in the sidebar](media/dtsvsc-icon.png)
-
-This will open the DTS view, which is comprised of the resource file explorer and the translation request configuration view.
-
-If you don’t have any resource files yet, see [Working with translation files](/dynamics365/business-central/dev-itpro/developer/devenv-work-with-translation-files) for guidance on generating those. Once you have generated the XLIFF, you will be able to see it in the resource file explorer view.
-
-![A screenshot of the DTS view](media/dtsvsc-dtsview.png)
+If you don't yet have any resource files, see [Working with translation files](/dynamics365/business-central/dev-itpro/developer/devenv-work-with-translation-files) for information about how to generate them. After you've generated the XML Localization Interchange File Format (XLIFF), it will appear in the resource file explorer.
 
 ## Resource file explorer
 
-The resource file explorer contributes a tree view for navigating through your project’s resources.
+The resource file explorer provides a tree view that you can use to navigate your project's resources.
 
-In the image below, we are working with multiple AL project folders within one workspace. To see the translation files for a given source XLIFF, select the source node to expand it. You may also use the refresh button if the tree view wasn’t automatically refreshed after a translation job.
+The following illustration shows an example where you're working with multiple AL project folders in one workspace. To view the translation files for a given source XLIFF, select the source node to expand it. You can also use the **Refresh** button if the tree view wasn't automatically updated after a translation job.
 
-![A screenshot of the resource file explorer](media/dtsvsc-resourceexplorer.png)
+![Resource file explorer.](media/dtsvsc-resourceexplorer.png)
 
-## Configuring translation requests
+## Configure translation requests
 
-You can configure the translation request using the following steps.
+Follow these steps to configure a translation request.
 
-1.  From the configuration view, select the AL project you wish to configure. Note that only one project will be available, unless you are working with multiple AL project folders within one workspace.
+1. In the translation request configuration view, select the AL project that you want to configure. Unless you're working with multiple AL project folders in one workspace, only one project will be available.
+2. In the **Target Languages** list, select the target languages.
+3. If you have any XLIFF files to recycle, you can add them by using the **Choose Files** button.
+4. If you want all data to be processed in the European Union (EU), select the **Process request within the European Union** checkbox.
+5. Select **Save**.
 
-2.  Select the target languages from the language list.
+![Translation request configuration view.](media/dtsvsc-reqconfig.png)
 
-3.  If you have any XLIFF files for recycling, you may add them using the **Choose files** button.
+## Submit translation requests
 
-4.  If you wish to have all data processed within the European Union (EU), select the last checkbox.
+Before you submit a new translation request, make sure that you've saved the configuration for translation requests. That configuration will be used for all future requests, unless it's overridden by a new save operation.
 
-5.  Select the blue **Save** button.
+To submit a new request, use the **Submit Translation Request** command in the **Resources View** context menu.
 
-![Screenshot of the DTS Translation configuration view](media/dtsvsc-reqconfig.png)
+![Submit Translation Request command.](media/dtsvsc-submit.png) 
 
-## Submitting translation requests
+You will receive a notification when the processing of the request begins and another notification when it's completed.
 
-Before you submit a new translation request, make sure that you have saved the configuration for the requests. This configuration will be used for future requests, unless overridden by a new save.
+![Notifications about request status.](media/dtsvsc-processing.png)
 
-To submit a new request, use the **Submit Translation Request** command, located in the **Resources View** context menu.  
-
-![A screenshot of the "Submit Request" toolbar item](media/dtsvsc-submit.png) 
-
-You will receive a notification when the request begins processing and another upon completion.
-
-Each translation file is written to the same folder that the source translation file is located in.
-
-![A screenshot of notifications regarding request status](media/dtsvsc-submit.png)
+Each translation file is written to the folder where the source translation file is located.
 
 ## Authentication
 
-If you aren’t logged in, you will be prompted to do so. Take note of the authentication code, then select the blue **Open URL** button. This should open a new browser window. If a new browser window doesn’t open, you can use your browser to visit the page listed in the prompt. From the browser, enter the authentication code. You will be redirected to a sign-in page. Log in with your credentials.
+If you aren't signed in, you're prompted to authenticate. Make a note of the authentication code in the prompt, and then select **Open URL**.
 
-![A screenshot of an authentication notification ](media/dtsvsc-auth.png)
+![Authentication prompt.](media/dtsvsc-auth.png)
+
+A new web browser window should be opened. If a new browser window isn't opened, open one, and then, in the address bar, enter the URL from the prompt. In the browser window, enter the authentication code. You will be redirected to a sign-in page. Sign in by using your credentials.
 
 ## Pending requests
 
-If you terminate your VS Code session before all translation requests have been downloaded, you will receive a notification allowing you to download those completed requests.
+If you terminate your VS Code session before all translation requests have been downloaded, you will receive a notification that lets you download the completed requests.
 
-![A screenshot of a pending DTS request](media/dtsvsc-pending.png)
-
-
+![Pending DTS request notification.](media/dtsvsc-pending.png)
