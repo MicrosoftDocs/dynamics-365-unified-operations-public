@@ -4,7 +4,7 @@
 title: Set up the fiscal integration for Commerce channels
 description: This topic provides guidelines for setting up the fiscal integration functionality for Commerce channels. 
 author: EvgenyPopovMBS
-ms.date: 04/22/2022
+ms.date: 04/28/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -27,7 +27,7 @@ To enable features that are related to fiscal integration functionality for Comm
 1. In Commerce headquarters, go to **System administration \> Workspaces \> Feature management**.
 1. Find and enable the following features:
 
-    - **Direct fiscal integration from POS registers** – This feature extends the fiscal integration framework by adding the capability to create fiscal connectors that will be run in point of sale (POS). This type of connector communicates with a fiscal device or service that provides an HTTP application programming interface (API) and doesn't require that a dedicated physical machine in the store be plugged in or deployed on. For example, this functionality enables fiscal integration for mobile devices without requiring shared hardware station.
+    - **Direct fiscal integration from POS registers** – This feature extends the fiscal integration framework by adding the capability to create fiscal connectors that will be run in point of sale (POS). This type of connector communicates with a fiscal device or service that provides an HTTP application programming interface (API) and doesn't require a dedicated physical machine in the store. For example, this functionality enables fiscal integration for mobile devices without requiring shared hardware station.
     - **Fiscal integration technical profile overrides** – This feature enables the configuration of fiscal integration to be expanded and adds the capability to check connection parameters on the settings page of a POS register. When this feature is enabled, you can override the parameters of a technical profile.
     - **Fiscal Registration State of POS Registers** – When this feature is enabled, you can disable the fiscal registration process for specific POS registers. If fiscal registration is disabled for a POS register, sales transactions can't be completed on that register.
     - **Fiscal integration local storage backup** – This feature extends the error handling capabilities of the fiscal integration framework. It also enables automatic backup of fiscal registration data in the event of data loss, so that the data in local storage is restored while a device is being activated.
