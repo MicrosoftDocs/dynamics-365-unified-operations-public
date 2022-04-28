@@ -226,6 +226,9 @@ Labels of a base ER component can be referred to in a derived version of the ER 
 > [!TIP]
 > When you design your own ER solution, you can derive your own ER [data model](er-overview-components.md#data-model-component) component from the provided one. In this derived data model, you can introduce your own ER labels and use them in all ER formats that will use this data model as the data source. Then, you can derive your own ER [format](er-overview-components.md#format-component) component from the provided one selecting your derived ER data model as the alternative of the provided one. In version 10.0.28 and later, you can enable the **Enhanced access to labels of the ascendent ER data model** feature to access labels of an ascendent ER data model in derived ER format components even when you selected for the derived ER component an ER data model that differs from the one that was used in the base ER component.
 
+> [!TIP]
+> When the same label name was used in your derived component as well as in its ascendent components, your translation of this label is used as the most relevant one.
+
 ER versioning controls label assignment to any attribute in an ER component. Changes to the label assignment are recorded in the list of changes (delta) of an editable ER component that has been created as a derived version of the provided ER component. These changes will be validated when a derived version is rebased to a new base version.
 
 ## Functions
