@@ -5,7 +5,7 @@
 title: Create Commerce catalogs for B2B sites
 description: This topic describes how to create Commerce catalogs for Microsoft Dynamics 365 Commerce business-to-business (B2B) sites.
 author: ashishmsft
-ms.date: 03/18/2022
+ms.date: 04/28/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -95,14 +95,14 @@ To configure catalog-specific prices, you must link one or more price groups to 
 For more information about price groups, see [Price groups](price-management.md#price-groups).
 
 > [!NOTE]
-> You can't create a new price group from the catalogs page. Instead, you must create it from the **All price groups** page. You must then be able to associate it with the catalog in this view.
+> You can't create a new price group from the **All catalogs** page. Instead, you must create it from the **All price groups** page. You must then associate it with the catalog on the **All catalogs** page.
 
 #### Associate a customer hierarchy
 
 To associate customer hierarchies, in Commerce headquarters, go to **Retail and Commerce \> Catalogs and assortments \> All catalogs**. Then, on the **Catalogs** tab, under **Customer hierarchy**, select **Assign hierarchies** to link one or more customer hierarchies to the catalog.
 
 > [!NOTE]
-> You can't create a new customer hierarchy from the catalogs page. Instead, you must create it from the **Customer hierarchies** page. You must then be able to associate it with the catalog in this view.
+> You can't create a new customer hierarchy from the **All catalogs** page. Instead, you must create it from the **Customer hierarchies** page. You must then associate it with the catalog on the **All catalogs** page.
 
 #### Associate default dimension attribute group for refiners such as size, style, and color
 
@@ -118,7 +118,7 @@ Before a new catalog is available to use, it must be validated and published.
 
 To validate a catalog, follow these steps.
 
-1. On the **Catalogs** menu, select **Validate catalog** to run a validation. This step is required. It will validate that the required setup is accurate.
+1. On the **Catalogs** tab of the **All catalogs** page, under **Validate** select **Validate catalog** to run a validation. This step is required. It will validate that the required setup is accurate.
 1. Select **View results** to view the details of the validation. If errors are found, you must correct the data and then run the validation again until it passes.
 
 ### Approve the catalog
@@ -127,8 +127,7 @@ After a catalog is validated, it must be approved.
 
 To start the catalog approval workflow, follow these steps.
 
-1. On the menu, select **Workflow**.
-1. Select **Workflow \> Submit** to run the process.
+1. On the action pane of the **All catalogs** page, select **Workflow \> Submit**.
 1. Go to **Retail and Commerce \> Headquarters setup \> Commerce workflows** to configure the steps and authorized users for the workflow. The workflow will define the steps that are required to get the catalog into an **Approved** status.
 
 ### Publish the catalog
