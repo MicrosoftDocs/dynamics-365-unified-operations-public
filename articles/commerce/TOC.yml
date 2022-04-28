@@ -1316,6 +1316,14 @@
         href: b2b/payment-method.md
       - name: Set product quantity limits for B2B e-commerce sites
         href: b2b/quantity-limits.md
+      - name: Commerce catalogs for B2B sites
+        items:
+        - name: Create Commerce catalogs for B2B sites
+          href: catalogs-b2b-sites.md
+        - name: Extensibility impact of Commerce catalogs for B2B customizations
+          href: catalogs-b2b-sites-dev.md
+        - name: Commerce catalogs for B2B FAQ
+          href: catalogs-b2b-sites-FAQ.md         
     - name: Monitoring and analysis
       items:
       - name: Monitor sales and margin performance
