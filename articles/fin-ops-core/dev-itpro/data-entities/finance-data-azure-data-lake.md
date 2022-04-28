@@ -4,7 +4,7 @@
 title: Export to Data Lake in Finance and Operations apps
 description: This topic explains how to choose data in a Finance and Operations apps environment so that the data is available in a data lake.
 author: MilindaV2
-ms.date: 04/27/2022
+ms.date: 04/28/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform Update 34
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> The **Export to Data Lake** feature is generally available in the United States, Canada, United Kingdom, Europe, South East Asia, East Asia, Australia, India, Latin America, and Japan regions. If your Finance and Operations environment is in any of those regions, you will be able to install the **Export to Data Lake** add-in in it. Microsoft will enable this feature in additional regions in the future. You can join the [preview Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all) to stay in touch and ask questions that will help you understand the feature and upcoming improvements.
+> The **Export to Data Lake** feature is generally available in the United States, Canada, United Kingdom, Europe, South East Asia, East Asia, Australia, India, Latin America, and Japan regions. If your Finance and Operations environment is in any of those regions, you will be able to install the **Export to Data Lake** add-in in it. Microsoft will enable this feature in additional regions in the future. You can join the [Project Como Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all) to stay in touch and ask questions that will help you understand the feature and upcoming improvements.
 
 The **Export to Data Lake** feature lets you copy data from your Finance and Operations apps into your own data lake (Azure Data Lake Storage Gen2). The system lets you select the tables and entities that are included. After you select the data that you want, the system makes an initial copy. The system then keeps the selected data up to date by applying changes, deletions, and additions. After data changes in your Finance and Operations app instances, there might be a delay of a few minutes before the data is available in your data lake.
 
