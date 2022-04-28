@@ -164,32 +164,35 @@ You can also update the completion percentage for items on milestone templates t
 
 Use this page to create the unbilled revenue journal entry or stub the journal entry for one or more selected billing schedules or billing detail lines. 
 
-### Create journal entry
+1. **Create journal entry** - This process creates the unbilled revenue journal entries for multiple billing schedule lines. It is the same process as Create journal entry for one billing schedule. Use **Filter** button under Records to include to select only the range of records that you want to appear in the list. Only billing schedule lines where the unbilled revenue journal entries have not been created appear in the list. The initial journal entries are created. For deferral items, the deferral schedules are also created.
 
-This process creates the unbilled revenue journal entries for multiple billing schedule lines. It is the same process as Create journal entry for one billing schedule. Use **Filter** button under Records to include to select only the range of records that you want to appear in the list. Only billing schedule lines where the unbilled revenue journal entries have not been created appear in the list. The initial journal entries are created. For deferral items, the deferral schedules are also created.
+2. **Stub journal entry** - This process marks the billing schedule lines that have the unbilled journal entries already created. This option is typically used if the unbilled journal entry was already posted in another system so this only marks the unbilled revenue journal as stubbed. It does not post a transaction to the General ledger. 
 
+3. **Reverse stub journal entry** - Use this process to reverse out any stub journal entries that have been processed. In case a mistake was made when processing **Stub journal entry** this will remove the Stubbed checkbox for the billing schedule line. 
 
-### Stub journal entry
+4. **Stub billing detail line** - Use this process in the case where the Unbilled revenue was processed in an external system and some of the billing detail lines have already been billed. This will make sure the correct amount is in the unbilled revenue accounts. 
 
-This process marks the billing schedule lines that have the unbilled journal entries already created. This option is typically used if the unbilled journal entry was already posted in another system so this only marks the unbilled revenue journal as stubbed. It does not post a transaction to the General ledger. 
-
-### Reverse stub journal entry
-
-Use this process to reverse out any stub journal entries that have been processed. In case a mistake was made when processing **Stub journal entry** this will remove the Stubbed checkbox for the billing schedule line. 
-
-### Stub billing detail line
-
-Use this process in the case where the Unbilled revenue was processed in an external system and some of the billing detail lines have already been billed. This will make sure the correct amount is in the unbilled revenue accounts. 
-
-5. **Reverse stub billing detail line**
+5. **Reverse stub billing detail line** - Use this process to reverse out any Stub billing detail line actions. 
 
 The Transaction date displays the transaction date. The default is the current date and can be updated as needed. 
 The Journal name is used to post the Create journal entry to the General ledger. The default is from the **Recurring contract billing parameters** page, **Default journal name** under **Unbilled revenue**.
 
-For example, a billing schedule is setup for one year, July 2021 to June 2022. The unbilled revenue was already processed in the external system and 6 months of the billing schedule has already been billed. Each billing period is $250. 
-
 **Note:** The stub process does not post any amounts to the General ledger so the **Journal name** field is disabled for all stub and reverse stub processes. 
 
-**Note**: The unbilled revenue journal entry can be created for any renewal term, provided all billing detail lines from the previous term have been billed. For example, a billing schedule line has an annual billing frequency for a 12-month period, January to December 2021. The line has three terms: the initial term, a second term (January to December 2022), and a third term (January to December 2023). After the invoice has been created for all billing detail lines from the initial term, the journal entry for unbilled revenue can be created for the second term. 
-For deferral items that use the unbilled revenue feature, the billing line as well as the discount lines are processes. For these items, the unbilled revenue journal entry and the deferral schedule for the the billing line and the discount line are created. 
+### Unbilled revenue stub example
+
+A billing schedule is setup for one year, October 2021 to September 2022. The unbilled revenue was already processed in an external system and 9 months of the billing schedule have already been billed. Each billing period is $250. The total amount posted to Unbilled revenue would be $3000 at the beginning of the year. After 9 months $750 would be left in unbilled revenue and $2250 has already been billed. 
+
+To setup the billing schedule with only the 3 months left in unbilled revenue follow these steps.
+1. Create a billing schedule October 2021 to September 2022, Item S0001 for $250 per month in View billing detail. 
+2. Use **Create journal entry** for the billing schedule and this will post the $3000 to unbilled revenue. 
+3. Use **Stub billing detail line** with a transaction date of June 2022 (9 months). The billing schedule lines do not show in the preview as the lines affected are based on the transaction date. Select OK.
+4. This will stub the first 9 months that have already been billed. 
+
+6. This will also reverse out the $3000 from unbilled revenue and then post the $750 that is left for unbilled revenue. The unbilled revenue postings can be seen in the Line Details, Renewals tab, **Unbilled revenue journal entry audit** button. 
+
+[![View billing detail lines stub.](./media/01_View-billing-detail-stub.png)](./media/01_View-billing-detail-stub.png)
+
+**Note**: The unbilled revenue journal entry can be created for any renewal term, provided all billing detail lines from the previous term have been billed. For example, a billing schedule line has a monthly billing frequency for a 12-month period, January to December 2021. The line has three terms: the initial term, a second term (January to December 2022), and a third term (January to December 2023). After the invoice has been created for all billing detail lines from the initial 12 months in 2021, the journal entry for unbilled revenue can be created for the second term. 
+For deferral items that use the unbilled revenue feature, the billing line as well as the discount lines are processed. For these items, the unbilled revenue journal entry and the deferral schedule for the the billing line and the discount line are created. 
 The journal entries that are created for non-deferrable items and the deferrable items post a credit to different revenue accounts. 
