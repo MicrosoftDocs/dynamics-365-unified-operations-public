@@ -26,17 +26,17 @@ The **Purchase order** tab on the **Inventory posting profiles** page is used to
  - the product receipt
  - the invoice
 
-For a physical transaction (product receipt) to post to the general ledger on a purchase order, the following conditions must be met:
--   The **Post product receipt in ledger** check box must be selected in the **Inventory and warehouse management parameters** page.
--   The **Post physical inventory** in ledger check box must be selected in the **Item model group** page for the item selected on the purchase order line.
--   The **Accrue liability on product receipt** check box must be selected in the **Item model group** page for the item selected on the purchase order line.
--   The main accounts must be specified in the **Inventory posting profile** page for the following posting types:
+For a physical transaction (product receipt) to post to the general ledger on a purchase order, the following check boxes must be selected:
+-   The **Post product receipt in ledger** check box on the **Inventory and warehouse management parameters** page.
+-   The **Post physical inventory** and **Accrue liability on product receipt** check boxes on the **Item model groups** page
+
+The main accounts must be specified in the **Inventory posting profile** page for the following posting types:
     -   Cost of purchases materials received
     -   Purchase expenditure, uninvoiced
     -   Purchase, accrual
 
 For a financial transaction (invoice) to post to the general ledger on a purchase order, the following conditions must be met:
--   The **Post financial inventory** check box must be selected in the **Item model group** page for the item selected on the purchase order line.
+-   The **Post financial inventory** check box must be selected in the **Item model groups** page for the item selected on the purchase order line.
 -   The main accounts must be specified in the **Inventory posting profile** page for the following posting types:
     -   Cost of purchased materials invoiced
     -   Purchase expenditure for product
@@ -45,7 +45,7 @@ For a financial transaction (invoice) to post to the general ledger on a purchas
 
 ## Fixed receipt price posting
 
-Fixed receipt price is an alternative way to use a standard cost for a product then selecting the **Standard cost** option in the **Inventory model** field on the **Item model group** page for an item. The main difference is when using the **Fixed receipt price**, the current cost price will be used for the item when the receipt into inventory is posted. There is no cost revaluation process for **Fixed receipt price** and when a financial update is posted the current cost price is used at the time of posting. If there is a difference between the cost price used at receipt and invoice, the variance will post to the fixed receipt price profit and loss accounts.
+Fixed receipt price is an alternative way to use a standard cost for a product then selecting the **Standard cost** option in the **Inventory model** field on the **Item model groups** page for an item. The main difference is when using the **Fixed receipt price**, the current cost price will be used for the item when the receipt into inventory is posted. There is no cost revaluation process for **Fixed receipt price** and when a financial update is posted the current cost price is used at the time of posting. If there is a difference between the cost price used at receipt and invoice, the variance will post to the fixed receipt price profit and loss accounts.
 
 To use a Fixed receipt price for a product, you must configure the following:
 -   The **Post physical inventory** and the **Fixed receipt price** check boxes must be selected on the **Item model groups** page.
@@ -104,7 +104,7 @@ The following table shows examples of the default posting types with sample main
 | Prepayment | 132190 | Prepaid expense | Asset | Debit | N | Both  | Used when processing a prepayment invoice on a purchase order. |
 
 
-\*Values shown in parenthesis represent the value that is used in the**Posting type** field on the **Voucher transactions** page. You can view the **Posting type** in the **Voucher transactions** page on the **General** tab.
+\*Values shown in parenthesis represent the value that is used in the**Posting type** field on the **Voucher transactions** page. You can view the **Posting type** on the **Voucher transactions** page on the **General** tab.
 
 ## Fixed asset posting with purchase orders
 
