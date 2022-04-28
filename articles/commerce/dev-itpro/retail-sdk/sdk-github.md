@@ -190,7 +190,7 @@ Keep your branch strategy simple. Build your strategy from these three concepts:
 
 ### Create a new feature branch for development and bug fixes
 
-Create a new feature main branch for your extension, following the naming convention in [Git branching doc for sample naming convention](/azure/devops/repos/git/git-branching-guidance.md#name-your-feature-branches-by-convention).
+Create a new feature main branch for your extension, following the naming convention in [Git branching doc for sample naming convention](/azure/devops/repos/git/git-branching-guidance#name-your-feature-branches-by-convention).
 
 ### Create a new development branch
 
