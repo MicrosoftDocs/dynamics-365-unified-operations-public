@@ -189,9 +189,11 @@ To setup the billing schedule with only the 3 months left in unbilled revenue fo
 3. Use **Stub billing detail line** with a transaction date of June 2022 (9 months). The billing schedule lines do not show in the preview as the lines affected are based on the transaction date. Select OK.
 4. This will stub the first 9 months that have already been billed. 
 
+[![View billing detail lines stub.](./media/01_View-billing-detail-stub.png)](./media/01_View-billing-detail-stub.png)
+
 6. This will also reverse out the $3000 from unbilled revenue and then post the $750 that is left for unbilled revenue. The unbilled revenue postings can be seen in the Line Details, Renewals tab, **Unbilled revenue journal entry audit** button. 
 
-[![View billing detail lines stub.](./media/01_View-billing-detail-stub.png)](./media/01_View-billing-detail-stub.png)
+[![Unbilled revenue journal entry audit.](./media/02_Unbilled-rev-journal-audit.png)](./media/02_Unbilled-rev-journal-audit.png)
 
 **Note**: The unbilled revenue journal entry can be created for any renewal term, provided all billing detail lines from the previous term have been billed. For example, a billing schedule line has a monthly billing frequency for a 12-month period, January to December 2021. The line has three terms: the initial term, a second term (January to December 2022), and a third term (January to December 2023). After the invoice has been created for all billing detail lines from the initial 12 months in 2021, the journal entry for unbilled revenue can be created for the second term. 
 For deferral items that use the unbilled revenue feature, the billing line as well as the discount lines are processed. For these items, the unbilled revenue journal entry and the deferral schedule for the the billing line and the discount line are created. 
