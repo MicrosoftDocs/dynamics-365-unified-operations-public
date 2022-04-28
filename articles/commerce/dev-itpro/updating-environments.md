@@ -56,7 +56,7 @@ Third-party packages resemble application packages, but they are developed by ot
 
 In one useful and typical operation, the whole database is moved from one environment to another. For example, you might move the production database to development environments when you're preparing to develop additional features. Alternatively, you might move the golden setup database to the production database as part of the go-live process.
 
-For more details, see [Copy Database From Azure SQL to SQL Server](/dynamics365/commerce/dev-itpro/dbmovement-operations). If source and destination environments don't have the same binary version, you should also do either a build and a database synchronization (for a development environment), or a deployment (for a sandbox or production environment).
+For more details, see [Copy Database From Azure SQL to SQL Server](/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-operations). If source and destination environments don't have the same binary version, you should also do either a build and a database synchronization (for a development environment), or a deployment (for a sandbox or production environment).
 
 Every time that a database that has been moved from a different environment is restored, specific links in the database can be broken. The Environment reprovisioning tool fixes all these broken links for the default database group, regardless of type of environment that is used. The general guideline is that if the database comes from a different environment, the Environment reprovisioning tool must be run.
 
