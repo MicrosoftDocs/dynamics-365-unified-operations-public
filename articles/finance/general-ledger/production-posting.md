@@ -22,7 +22,7 @@ ms.author: raprofit
 
 # Production postings
 
-This article provides information about different types of postings in the production process.
+This topic provides information about different types of postings in the production process.
 
 Production posting activities follow production processes that are described in the sections below.
 
