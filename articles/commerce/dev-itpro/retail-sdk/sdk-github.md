@@ -180,7 +180,7 @@ To set up an Azure pipeline, see [Set up a build pipeline for the independent-pa
 
 For detailed information about the Git branching strategy, see [Git branching strategy](/azure/devops/repos/git/git-branching-guidance).
 
-The following branching strategies are based on the way that Microsoft uses Git. For more information, see [How we use Git at Microsoft](/azure/devops/learn/devops-at-microsoft/use-git-microsoft.md).
+The following branching strategies are based on the way that Microsoft uses Git. For more information, see [How we use Git at Microsoft](/azure/devops/learn/devops-at-microsoft/use-git-microsoft).
 
 Keep your branch strategy simple. Build your strategy from these three concepts:
 
