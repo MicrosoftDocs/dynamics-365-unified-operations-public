@@ -100,7 +100,7 @@ The following table shows examples of the default posting types with sample main
 | Purchase, accrual | 200140 | Accrued Purchases | Liability | Credit | Y | P | |Used when a purchase order product receipt is posted and the option to accrue purchase amounts is enabled. |
 | Accrued sales tax on receipt | 250500 | Accrued Sales Tax | Liability | Credit | Y | Both  | |This account is used when you select the **Post physical tax** option on the **Inventory and warehouse management parameters** and you have a purchase order with tax. The amount is posted when you update the purchase order physically (product receipt), and reversed when you post the purchase order financially (invoice). |
 | Fixed asset receipt (Fixed asset debit*) | 180100 | Tangible fixed assets | Asset | Debit | N | Both | Both | This account is used when you select the option on purchase order line for Fixed assets. The purchase order integration has been configured to acquire the fixed asset upon product receipt or invoice. For more information about Fixed asset purchase order integration, see [Acquire assets through procurement](/fixed-assets/acquire-assets-procurement). |
-| Purchase expenditure for expense | 618900 | Miscellaneous expense | Expense | Debit | N | Both | | Used when posting a product receipt or invoice for a purchase order where the items are not stocked, or a procurement category is used. |
+| Purchase expenditure for expense | 618900 | Miscellaneous expense | Expense | Debit | N | Both | |Used when posting a product receipt or invoice for a purchase order where the items are not stocked, or a procurement category is used. |
 | Prepayment | 132190 | Prepaid expense | Asset | Debit | N | Both | | Used when processing a prepayment invoice on a purchase order. |
 
 
