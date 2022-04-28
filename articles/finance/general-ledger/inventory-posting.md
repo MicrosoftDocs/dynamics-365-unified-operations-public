@@ -80,7 +80,7 @@ For more information about catch weight products and their processing, see [Abou
 
 ## Inventory to fixed asset transfer posting
 
-The **Inventory to fixed asset journal** on the **Fixed assets** module under **Journals**. This journal is used to move items out of inventory and convert them into a Fixed asset. For more information about **Inventory to fixed asset** journals, see [Fixed assets integration](/fixed-assets/fixed-asset-integration.md).
+The **Inventory to fixed asset journal** in **Fixed assets** under **Journals**. This journal is used to move items out of inventory and convert them into a Fixed asset. For more information about **Inventory to fixed asset** journals, see [Fixed assets integration](/fixed-assets/fixed-asset-integration.md).
 
 The following table shows examples of the default posting types with sample main accounts and descriptions. 
  - The **Debit/Credit** column indicates if the transaction typically Debit or Credits or in some cases can post either. 
@@ -119,7 +119,7 @@ The following table shows examples of the default posting types with sample main
 ## Sample posting profile configuration
 
 The following table shows examples of the default posting types with sample main accounts and descriptions. 
- - The **Debit/Credit** column indicates if the transaction typically Debit or Credits or in some cases can post either. 
+ - The **Debit/Credit** column indicates if the transaction is typically a Debit or Credit or in some cases can post either. 
  - The **Clearing account** column indicates the posting type is a clearing account. This means the amount posted in this account is automatically reversed when a later transaction is posted. 
  - The **P/F** column indicates **P** for physical posting and **F** for financial posting. 
  - The **Follow** column indicates if the main account for a specific posting type is typically the same as another posting type. The value in the column indicates the posting type that is typically followed.
