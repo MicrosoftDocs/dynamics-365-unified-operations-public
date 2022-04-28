@@ -50,7 +50,7 @@ This topic shows how to set up a shipping carrier and define details such as ser
 2. Select **New**.
 3. In the **Carrier service** field, type a value.
 4. In the **Name** field, type a value.
-5. In the **Load template ID** field, select a load template to associate with the service. The load template defines maximum measurements for weight and volume of an entire load. For example, the load template might represent the size of a container or truck. Load templates are also used in load building templates and in the [load building workbench](load-building-workbench.md), which helps you apply load building strategies to create loads. As a result, you'll be able to assign each new load to a suitable shipping carrier service.
+5. In the **Load template ID** field, select a load template to associate with the service. The load template defines the maximum measurements for weight and volume of an entire load. For example, the load template might represent the size of a container or truck. Load template IDs are also specified in load building templates and when using the [load building workbench](load-building-workbench.md), which helps you apply load building strategies to create loads. As a result, the system will be able to match each new load to a suitable shipping carrier service by comparing the specified load template IDs.
 6. In the **Transportation method** field, select an option from the drop-down menu.
 
 ## Set up the address for the carrier (optional)
