@@ -51,7 +51,7 @@ Domains are established when you set up your e-commerce site in Microsoft Dynami
 #### Path
 
 - A path is an arbitrary string that, in combination with the domain, is mapped to a unique combination of a channel and a locale. In the preceding example, the string that is used as the path matches the locale identifier that the path is mapped to. but this is not a requirement. However, you can use a different approach.
-- A combination of a channel and a locale can be mapped to a domain and an empty path ("/"). In the preceding example, customers who visit `https://fabrikam.ca/` will get the products and assortments for the Canadian market in Canadian French..
+- A combination of a channel and a locale can be mapped to a domain and an empty path ("/"). In the preceding example, customers who visit `https://fabrikam.ca/` will get the products and assortments for the Canadian market in Canadian French.
 - Commerce site builder prevents you from creating duplicate combinations of a domain and a path. However, you can map duplicate combinations of a channel and a locale to a different combination of a domain and a path.
 
 #### Channel
@@ -89,7 +89,7 @@ The process of configuring a new language for an e-commerce site has three steps
 #### Step 1: Add the language to your channel (online store) in Commerce headquarters
 
 1. In Commerce headquarters, go to the channel that you want to add the new language to. To find the list of channels that you've configured in Commerce headquarters, go to **Retail and Commerce \> Channels \> Online stores**.
-1. Open the online store that is mapped to your site by selecting its  **Retail Channel ID** value. You can verify the online store that is mapped to your site by opening the **Channels** site setting page in Commerce site builder and looking at the name of the online store in the **Channels** column.. 
+1. Open the online store that is mapped to your site by selecting its  **Retail Channel ID** value. You can verify the online store that is mapped to your site by opening the **Channels** site setting page in Commerce site builder and looking at the name of the online store in the **Channels** column. 
 1. On the **Languages** FastTab, select **Add**. In the **Language** field, select the locale code for the new language. Then select **Save**.
 1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**, and run job **1070 Channel configuration**. When the job has finished running, you can move on to step 2 and add the language to a channel for your site in site builder.
 
