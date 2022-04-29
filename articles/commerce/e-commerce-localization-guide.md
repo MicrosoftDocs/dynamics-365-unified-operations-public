@@ -44,19 +44,17 @@ In site builder, a URL is a combination of a domain and a path that defines the 
 | `https://fabrikam.ca`  | /      | Contoso online store    | fr-ca  |
 | `https://fabrikam.ca`  | /en-ca | Contoso online store    | en-ca  |
 
-#### Domains
+#### Domain
 
-Domains are established when you set up your e-commerce site in the Microsoft Lifecycle Services (LCS) portal. After your e-commerce environment is provisioned, additional domains can be added by opening a service request. For more information about setting up domains for your e-commerce site, see [Domains in Dynamics 365 Commerce](domains-commerce.md).
+Domains are established when you set up your e-commerce site in Microsoft Dynamics Lifecycle Services (LCS). After your e-commerce environment is provisioned, you can add more domains by opening a service request. For more information about how to set up domains for your e-commerce site, see [Domains in Dynamics 365 Commerce](domains-commerce.md).
 
-#### Paths
+#### Path
 
-A path is an arbitrary string that, in combination with the domain, maps to a unique pairing of channel and locale. The string used as the path often matches the locale identifier it maps to, but this is not a requirement.
+- A path is an arbitrary string that, in combination with the domain, is mapped to a unique combination of a channel and a locale. In the preceding example, the string that is used as the path matches the locale identifier that the path is mapped to. but this is not a requirement. However, you can use a different approach.
+- A combination of a channel and a locale can be mapped to a domain and an empty path ("/"). In the preceding example, customers who visit `https://fabrikam.ca/` will get the products and assortments for the Canadian market in Canadian French..
+- Commerce site builder prevents you from creating duplicate combinations of a domain and a path. However, you can map duplicate combinations of a channel and a locale to a different combination of a domain and a path.
 
-A channel and locale pairing can be mapped to a domain with an empty path ("/"). In the Fabrikam examples above, customers who visit `https://fabrikam.ca/` (the domain `https://fabrikam.ca` paired with the blank path "/") would be served products and assortments for the Canada market in Canadian French (fr-ca).
-
-Commerce site builder prevents you from creating duplicate identical combinations of a domain and path. However, it is possible to map duplicate combinations of channel and locale to different domain and path combinations.
-
-#### Channels
+#### Channel
 
 - Channels (also known as online stores) define the payment methods, price groups, product hierarchies, assortments, and products for an online e-commerce storefront.
 - Channels are defined, configured, and published in Dynamics 365 Commerce headquarters.
