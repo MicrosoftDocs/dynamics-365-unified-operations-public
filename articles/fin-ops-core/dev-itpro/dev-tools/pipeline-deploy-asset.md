@@ -18,9 +18,9 @@ ms.dyn365.ops.version: AX 7.0.0
 You can use the **Dynamics Lifecycle Services (LCS) Asset Deployment** task in Microsoft Azure DevOps to automate the deployment of assets that are stored in the Asset library in Microsoft Dynamics Lifecycle Services (LCS) to specific environments. However, this task has the following limitations that you should consider:
 
 * The task is available only in **Releases** pipelines.
-* The deployment of Software deployable packages to production environments can't be automated.
+* The deployment of software deployable packages to production environments can't be automated.
 * Software deployable packages can't be deployed to build environments.
-* Software deployable packages, Commerce Cloud Scale Unit (CSU) Extension or e-Commerce Package can't be deployed to local business data (LBD) environments on-premises.
+* Software deployable packages, Commerce Cloud Scale Unit (CSU) extension packages, and e-commerce packages can't be deployed to local business data (LBD) environments on-premises.
 
 > [!NOTE]
 > Commerce Cloud Scale Unit (CSU) Extension or e-Commerce Package can be deployed to production, UAT or Sandbox environment using the **Dynamics Lifecycle Services (LCS) Asset Deployment**
@@ -32,9 +32,13 @@ This topic assumes that you have a working knowledge of [Azure Pipelines](/azure
 
 ## Dynamics 365 Commerce Cloud Scale Unit (CSU) extension and e-Commerce package deployment
 
-Starting version 3.\* **Dynamics Lifecycle Services (LCS) Asset Deployment** task supports deploying Commerce packages. In version 3.\* new field type called **Type of asset** is added to select the commerce package deployment type. The default value for the **Type of asset** field is Software deployable package, Select **Software deployable package - Finance and Operation environment deployment,  Commerce Cloud Scale Unit Extension - CSU Extension package deployment and e-Commerce Package - e-Commerce environment deployment**.
+Starting with version 3.\*, the **Dynamics Lifecycle Services (LCS) Asset Deployment** task supports deploying Commerce packages. A new field type called **Type of asset** has been added to select the Commerce package deployment type. The values available for this field are:
 
-CSU Extension package deployment and e-Commerce Package deployment will override the previous deployments, if you have multiple CSU extensions packages then all CSU packages must be merged as one package for deployment.
+- **Software deployable package - Finance and Operation environment deployment** (default value)
+- **Commerce Cloud Scale Unit Extension - CSU Extension package deployment** 
+- **e-Commerce Package - e-Commerce environment deployment**.
+
+CSU extension package deployment and Commerce package deployment will override the previous deployments. If you have multiple CSU extensions packages, then all CSU packages must be merged as one package for deployment.
 
 ## Make sure that MSAL.PS is installed
 
