@@ -435,7 +435,9 @@
           - name: Terminate billing schedules
             href: accounts-receivable/terminate-billing-schedule.md
           - name: Alignment date scenarios
-            href: accounts-receivable/sb-alignment-date-examples.md                  
+            href: accounts-receivable/sb-alignment-date-examples.md
+          - name: Revenue split
+            href: accounts-receivable/sb-revenue-split.md
         - name: Revenue and expense deferrals
           items:
           - name: Set up revenue and expense deferrals
