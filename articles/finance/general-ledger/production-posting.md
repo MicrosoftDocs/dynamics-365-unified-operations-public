@@ -43,9 +43,9 @@ For a picking list journal to post to the general ledger for a production order,
 
 ## Time consumption
 
-The time that workers spend on production jobs is recorded in the **Route card journal** or the **Job card journal**. When these journals are posted, ledger posting to a dedicated account for resources that are in progress (WIP) is processed. This posting represents the value of the time that is spent on the production order. After the production order is registered as ended, the WIP accounts are settled.
+The time that workers spend on production jobs is recorded in the **Route card journal** or the **Job card journal**. When these journals are posted, the ledger posting to a dedicated account for resources that are in progress (WIP) is processed. This posting represents the value of the time that is spent on the production order. After the production order is registered as ended, the WIP accounts are settled.
 
-There are three possible ways to configure the posting for time consumption. The technique that is used is determined by the option in the **Ledger posting** field on the **Production control parameters** page.
+There are three possible ways to post time consumption depending on the option selected in the **Ledger posting** field on the **Production control parameters** page.
 
 ## Reporting finished goods and error quantities
 
