@@ -130,7 +130,9 @@ The steps in this section aren't related to a specific legal entity. You must co
 7. Go to **Tax Data Model**, expand the file tree, and then select **Tax Configuration**.
 8. Select the correct [tax configuration version](global-tax-calcuation-service-overview.md#versions), based on you Finance version, and then select **Import**.
 9. In the **Globalization features** workspace, select **Features**, select the **Tax Calculation** tile, and then select **Add**.
-10. Select one of the following feature types:
+    > [!NOTE]
+    > On 10.0.26 and higher versions, a demo feature can be imported for the demo legal entity **DEMF**. See [import feature demo data](tax-calculation-import-export-feature.md).
+11. Select one of the following feature types:
 
     - **New feature** – Create a feature setup that has blank content.
     - **Based on existing feature** – Create a feature from an existing feature, and copy the content from the existing feature setup.
