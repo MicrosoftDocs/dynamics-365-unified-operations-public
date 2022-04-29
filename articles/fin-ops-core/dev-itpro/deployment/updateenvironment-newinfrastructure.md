@@ -70,7 +70,7 @@ After the package is in the project asset library, follow these steps to update 
 4. Select the package to apply. Use the filter at the top to find your package. The list will include application and platform binary packages and application deployable packages that have passed validation from the asset library.
 5. Select **Apply**.
 
-  The status in the upper-right corner of the environment details page changes from **Queued** to **Servicing** and then to **Post-servicing**. When package application is completed, the status changes to **Deployed**.
+    The status in the upper-right corner of the environment details page changes from **Queued** to **Servicing** and then to **Post-servicing**. When package application is completed, the status changes to **Deployed**.
 
 6. After package application is completed, the environment history is updated. To view the environment history, select **History \> Environment changes** on the environment details page.
 7. You can also download the logs from the environment history page.
@@ -118,7 +118,7 @@ After you've successfully applied the update in the sandbox environment and are 
 
     The **Is Release Candidate** option is set to **Yes**.
 
-After you've marked an update as a release candidate, follow these steps to update your environment.
+    After you've marked an update as a release candidate, follow these steps to update your environment.
 
 1. Open the environment details page for the production environment.
 2. Select **Maintain \> Update environment** to apply an update.
