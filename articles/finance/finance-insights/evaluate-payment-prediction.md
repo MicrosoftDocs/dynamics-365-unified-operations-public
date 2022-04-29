@@ -98,6 +98,6 @@ After you understand the results of your first model better, you might want to i
 
 ## For more information
 
-For more information about how to evaluate prediction models, [Results of machine learning models](/confusion-matrix.md)
+For more information about how to evaluate prediction models, [Results of machine learning models](/dynamics365/finance/finance-insights/confusion-matrix)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
