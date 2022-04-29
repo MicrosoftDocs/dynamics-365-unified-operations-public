@@ -4,7 +4,7 @@
 title: Archive inventory transactions
 description: This topic describes how to archive inventory transaction data to help improve system performance.
 author: yufeihuang
-ms.date: 03/01/2021
+ms.date: 04/29/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -119,3 +119,10 @@ The toolbar above the grid provides the following buttons that you can use to wo
 - **Pause archiving** – Pause a selected archive that is currently being processed. The pause takes effect only after the archiving task has been generated. Therefore, there might be a short delay before the pause takes effect. If an archive has been paused, a check mark appears in its **Stop current update** field.
 - **Resume archiving** – Resume processing for a selected archive that is currently paused.
 - **Reverse** – Reverse the selected archive. You can reverse an archive only if its **State** field is set to *Finished*. If an archive has been reversed, a check mark appears in its **Reverse** field.
+
+## Extend your code to support custom fields
+
+If your system includes custom fields, then you may need to extend the code to support them, depending on how they are named.
+
+- If the custom fields in the `inventTrans` table have the same field names as in the `inventtransArchive` table, that means they are mapped 1:1. Therefore, you can just put the custom fields into the `InventoryArchiveFields` fields group of the `inventTrans` table.
+- If the custom field names in the `inventTrans` table don't match the field names in the `inventtransArchive` table, then you must add code to map them. For example, if you have a system field called `inventTrans.ModifiedTime`, then you must create a field in the `inventtransArchive` table with a different name such as `inventtransArchive.InventTransModifiedTime`. For sample code, download this [InventTransArchiveExtension.zip](https://github.com/ShaominWang/dynamics-365-unified-operations-public/files/8588769/InventTransArchiveExtension.zip) file.
