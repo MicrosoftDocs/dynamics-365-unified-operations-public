@@ -38,7 +38,7 @@ Starting with version 3.\*, the **Dynamics Lifecycle Services (LCS) Asset Deploy
 - **Commerce Cloud Scale Unit Extension - CSU Extension package deployment** 
 - **e-Commerce Package - e-Commerce environment deployment**.
 
-CSU extension package deployment and Commerce package deployment will override the previous deployments. If you have multiple CSU extensions packages, then all CSU packages must be merged as one package for deployment.
+Selecting either the **Commerce Cloud Scale Unit Extension - CSU Extension package deployment** or **e-Commerce Package - e-Commerce environment deployment** options will override previous deployments. If you have multiple CSU extensions packages, then all CSU packages must be merged as one package for deployment.
 
 ## Make sure that MSAL.PS is installed
 
