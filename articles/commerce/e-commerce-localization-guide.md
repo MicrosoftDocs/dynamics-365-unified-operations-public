@@ -4,7 +4,7 @@
 title: Dynamics 365 Commerce e-commerce localization guide
 description: This topic describes how to localize a Microsoft Dynamics 365 Commerce e-commerce site into additional languages and configure the site to support multiple channels.
 author: bicyclingfool
-ms.date: 04/27/2022
+ms.date: 04/29/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -58,60 +58,55 @@ Domains are established when you set up your e-commerce site in Microsoft Dynami
 
 - Channels (also known as online stores) define the payment methods, price groups, product hierarchies, assortments, and products for an online e-commerce storefront.
 - Channels are defined, configured, and published in Dynamics 365 Commerce headquarters.
-- In Commerce site builder you can see the online stores that have been configured in headquarters and are available to be mapped to a site.
+- Site builder can detect the online stores that have been configured in Commerce headquarters and are available to be mapped to a site.
 
-For more information about channels, see [Channels overview](channels-overview.md). For more information about setting up an online channel, see [Set up an online channel](channel-setup-online.md).
+For more information about channels, see [Channels overview](channels-overview.md). For more information about how to set up an online channel, see [Set up an online channel](channel-setup-online.md).
 
-#### Locale identifier
+#### Locale
 
-A locale identifier specifies the country and language used for an online store. The locale identifier is also used when you export and hand off files for localization. Locales are defined and published for each channel in headquarters. 
-
-The same locale can be mapped to multiple channels so that a common language can be offered across multiple markets.
+- The locale is the actual identifier used when you hand off XML Localization Interchange File Format (XLIFF) files for localization. Locales are defined and published for each channel in Commerce headquarters. For information about how to configure languages and channels in site builder, see the next section.
+- The same locale can be mapped to multiple channels. In this way, a common language can be offered across multiple markets.
 
 ## Configure languages and channels for your e-commerce site
 
-Out of the box, all Dynamics 365 Commerce e-commerce sites are configured to use a single online channel and a single language. This is the case whether you start with the Fabrikam demo site or create a new site from scratch.
+Out of the box, all Dynamics 365 Commerce e-commerce sites are configured to use a single online channel and a single language, regardless of whether you start with the Fabrikam demo site or create a new site from scratch.
 
-In this configuration, customers and partners typically develop all the assets that will be used across countries and languages such as templates, pages, fragments, content, and media. All site content is developed in the first language you chose for your site, or English if using the Fabrikam demo site.
+In this configuration, customers and partners typically develop all the assets that will be used across countries and languages. These assets include templates, pages, fragments, content, and media. All site content is developed in the first language you selected for your site, or if you're using the Fabrikam demo site, site content will be developed in English.
 
 ![Out of the box Dynamics 365 Commerce e-commerce site](media/loc-guide-1.png)
 
 > [!NOTE]
-> It is possible to configure the Fabrikam demo site to use an additional language for content development instead of English.
+> You can configure the Fabrikam demo site for an additional language so that content development can be done in tjat language. For information about how to for add a new language to a site and a channel, see the [Configure an additional language for your site](#configure-an-additional-language-for-your-site) section later in this guide.
 
-The content management system (CMS) and page model for Dynamics 365 Commerce e-commerce sites have been designed to enable expansion into new markets and locales so that it is possible to manage the assets for an online store that spans multiple markets and languages through a single e-commerce site.
+However, the content management system (CMS) and page model for Dynamics 365 Commerce e-commerce sites have been designed to enable expansion into new markets and locales. Therefore, through a single e-commerce site, you can manage the assets for an online store that spans multiple markets and languages.
 
 ![Dynamics 365 Commerce e-commerce site that spans multiple markets and languages](media/loc-guide-2.png)
 
 ### Configure an additional language for your site
 
-Configuring a new language for an e-commerce site is a three-step process.
+The process of configuring a new language for an e-commerce site has three steps.
 
-#### Step 1: Add a language to your channel in headquarters
+#### Step 1: Add the language to your channel (online store) in Commerce headquarters
 
-> [!NOTE] 
-> Before you add a language to your channel in headquarters, you can confirm the channels(s) mapped to your site by going to **Site settings \> Channels** in site builder. The channels mapped to your site are listed in the **Channels** column.
-
-To add a language to your channel in headquarters, follow these steps.
-
-1. Go to **Retail and Commerce \> Channels \> Online stores** to see the channel(s) that you have configured.
-1. For the channel/online store to which you want to add a language, select its **Retail Channel ID**. 
-1. On the **Languages** FastTab, select **+ Add**. In the new row that is created, in the **Language** column enter the locale code for the new language or select it  from the drop-down list, and then select **Save**.
-1. Go to **Retail and Commerce \> Retail and commerce IT \> Distribution schedule** and run job **1070 Channel configuration**. When the job has completed, you can proceed to the next section of this topic to add the language to a channel in site builder.
+1. In Commerce headquarters, go to the channel that you want to add the new language to. To find the list of channels that you've configured in Commerce headquarters, go to **Retail and Commerce \> Channels \> Online stores**.
+1. Open the online store that is mapped to your site by selecting its  **Retail Channel ID** value. You can verify the online store that is mapped to your site by opening the **Channels** site setting page in Commerce site builder and looking at the name of the online store in the **Channels** column.. 
+1. On the **Languages** FastTab, select **Add**. In the **Language** field, select the locale code for the new language. Then select **Save**.
+1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**, and run job **1070 Channel configuration**. When the job has finished running, you can move on to step 2 and add the language to a channel for your site in site builder.
 
 ![Languages FastTab of an online store in Commerce headquarters](media/loc-guide-3.png)
 
-#### Step 2: Add a language to a channel in site builder
+#### Step 2: Add the language to a channel in site builder
 
 To add a language to a channel in site builder, follow these steps.
 
-1. Open your site in site builder and go to **Site settings \> Channels**.
-1. Select on the name of the channel to which you want to add the language.
-1. In the right pane, select **+ Add a locale**.
-1. In the **Add a locale** dialog box, under **Add a locale** select the locale for the language you previously added to the channel in headquarters., and then select **OK**.
-1. Under **Domain**, select the domain that customers will visit to view your site in this channel and language.
-1. Under **Path**, select the path that customers will visit to view your site in this channel and language.
-1. If you want this language to be the default language for viewing, creating, and updating site builder pages and fragments, select the **Use as default authoring channel language** checkbox. This setting only affects site builder and does not influence the published site experience for your customers.
+1. In Commerce site builder, open your site, and then open the **Channels** page in site settings.
+1. Select the name of the channel that you want to add the language to.
+1. In the right pane, select **Add a locale**.
+1. In the **Add a locale** dialog box, under **Add a locale** select the locale for the language that you previously added to the channel in Commerce headquarters.
+1. Select the domain and path that customers will request to view your site in this channel and language.
+1. If you want the language to be the default language for viewing, creating, and updating site builder pages and fragments, select the **Use as default authoring channel language** checkbox. 
+    > [!NOTE]
+    > This setting affects only site builder. It doesn't influence the published site experience for your customers.
 1. Select **OK**.
 1. Select **Save and Publish**.
 
