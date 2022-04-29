@@ -4,7 +4,7 @@
 title: Periodic tasks in Recurring contract billing
 description: This topic describes the periodic tasks in Recurring contract billing
 author: JodiChristiansen
-ms.date: 11/04/2021
+ms.date: 04/29/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -53,7 +53,7 @@ A billing schedule is created and a renewal item is added. The unit price is $75
 - The first year of the item is paid on December 15, 2021. 
 - The billing schedule is created for the period January 1, 2022 to December 31, 2022. 
 
-At renewal time, **Generate invoice** creates the sales order for the year 2022. Some time after the price update utility is run and updates the price from $750 to $800. 
+At renewal time, **Generate invoice** creates the sales order for the year 2022. After the price update utility is run, the price is updated from $750 to $800. 
 
 The sales order and billing schedule for 2022 are not affected and the unit price remains at $750 because the billing schedule for 2022 has already been billed. The billing schedule line and line detail for 2023 are updated to $800 since it has not been billed yet.
 
