@@ -50,7 +50,7 @@ Domains are established when you set up your e-commerce site in Microsoft Dynami
 
 #### Path
 
-- A path is an arbitrary string that, in combination with the domain, is mapped to a unique combination of a channel and a locale. In the preceding example, the string that is used as the path matches the locale identifier that the path is mapped to. but this is not a requirement. However, you can use a different approach.
+- A path is an arbitrary string that, in combination with the domain, is mapped to a unique combination of a channel and a locale. In the preceding example, the string that is used as the path matches the locale identifier that the path is mapped to. However, you can use a different approach.
 - A combination of a channel and a locale can be mapped to a domain and an empty path ("/"). In the preceding example, customers who visit `https://fabrikam.ca/` will get the products and assortments for the Canadian market in Canadian French.
 - Commerce site builder prevents you from creating duplicate combinations of a domain and a path. However, you can map duplicate combinations of a channel and a locale to a different combination of a domain and a path.
 
@@ -76,7 +76,7 @@ In this configuration, customers and partners typically develop all the assets t
 ![Out of the box Dynamics 365 Commerce e-commerce site](media/loc-guide-1.png)
 
 > [!NOTE]
-> You can configure the Fabrikam demo site for an additional language so that content development can be done in tjat language. For information about how to for add a new language to a site and a channel, see the [Configure an additional language for your site](#configure-an-additional-language-for-your-site) section later in this guide.
+> You can configure the Fabrikam demo site for an additional language so that content development can be done in that language. For information about how to for add a new language to a site and a channel, see the [Configure an additional language for your site](#configure-an-additional-language-for-your-site) section later in this topic.
 
 However, the content management system (CMS) and page model for Dynamics 365 Commerce e-commerce sites have been designed to enable expansion into new markets and locales. Therefore, through a single e-commerce site, you can manage the assets for an online store that spans multiple markets and languages.
 
@@ -118,7 +118,7 @@ The process for localizing the content of your pages and fragments is covered in
 
 ### Configure a new channel for your site
 
-Dynamics 365 Commerce e-commerce sites can serve experiences that are defined across multiple online channels configured in Commerce headquarters. A site uses multiple channels to show customers a unique configuration of payment methods, price groups, product hierarchies, assortments, and a set of products. A channel is typically used to configure these dimensions to suit the requirements and preferences for the experience that is associated with individual countries. However, this approach is a business decision that the customer makes. It isn't a requirement.
+Dynamics 365 Commerce e-commerce sites can serve experiences that are defined across multiple online channels that are configured in Commerce headquarters. A site uses multiple channels to show customers a unique configuration of payment methods, price groups, product hierarchies, assortments, and a set of products. A channel is typically used to configure these dimensions to suit the requirements and preferences for the experience that is associated with individual countries. However, this approach is a business decision that the customer makes. It isn't a requirement.
 
 The prerequisites and tasks that are associated with setting up a channel (online store) are beyond the scope of this document. For more information about how to set up an online channel in Commerce headquarters, see [Channel setup basics](channels-overview.md#channel-setup-basics). For information about the steps and requirements specific to online channels, see [Set up an online channel](channel-setup-online.md).
 
@@ -130,7 +130,7 @@ To add a channel to your site in site builder, follow these steps.
     > [!NOTE]
     > You can only add channels that haven't already been added to your site.
 1. Select the default locale for the channel. If you add new languages to the channel, you can change the default language to one of them.
-1.Specify the domain and path that will constitute the URL that serves content and experiences for this combination of a channel and a language.
+1. Specify the domain and path that will constitute the URL that serves content and experiences for this combination of a channel and a language.
 1. Select **OK**.
 1. Select **Save and Publish**.
 
