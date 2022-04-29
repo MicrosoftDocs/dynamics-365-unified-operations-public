@@ -109,7 +109,7 @@ When you return to the list of billing schedules, you can see the status of the 
 > [Note]
 > To remove a hold, you must set up the **Remove hold user group override** on **Recurring contract billing parameters** page. 
 
-For example, a billing line has a start date of February 1, 2022 and an end date of February 28, 2022 with a billing amount of $200. The **Hold date** is February 10, 2022 which means the February period is adjusted to exclude any date after February 10, inclusive. The new period is February 1, 2022 - February 9, 2022 with an amount of $64.29 (daily proration). All billing schedule lines after and including February 10, 2022 are removed. If the **Remove hold** process is done with a **Remove date** of February 10, 2022 there will be two billing periods. The first billing period is Feb 1-Feb 9 for 64.29. The second is Feb 10-Feb 28 for $135.71.
+For example, a billing line has a start date of February 1, 2022 and an end date of February 28, 2022 with a billing amount of $200. The **Hold date** is February 10, 2022 which means the February period is adjusted to exclude any date after February 10, inclusive. The new period is February 1, 2022 - February 9, 2022 with an amount of $64.29 (daily proration). All billing schedule lines after and including February 10, 2022 are removed. If the **Remove hold** process is completed with a **Remove date** of February 10, 2022, there will be two billing periods. The first billing period is Feb 1-Feb 9 for $64.29. The second is Feb 10-Feb 28 for $135.71.
 
 ## Mass termination processing
 
@@ -126,7 +126,8 @@ See Terminate billing schedules for specific information on each field and the p
 
 ## Mass archive process
 
-Use the **Mass archive** page to archive multiple billing schedules. Only terminated billing schedules can be archived. After a billing schedule has been archived, the following occurs. 
+Use the **Mass archive** page to archive multiple billing schedules. Only terminated billing schedules can be archived. 
+After a billing schedule has been archived, the following occurs: 
 - The status is changed to **Archived**.
 - The billing schedules are permanently locked.
 - The billing schedule lines are not available in the inquiry pages.
@@ -172,30 +173,28 @@ You can also update the completion percentage for items on milestone templates t
 
 Use the **Unbilled revenue mass processing** page to create the unbilled revenue journal entry or stub the journal entry for one or more selected billing schedules or billing detail lines. 
 
-1. **Create journal entry** - This process creates the unbilled revenue journal entries for multiple billing schedule lines. It is the same process as **Create journal entry** for one billing schedule. Use **Filter** button under Records to include to select only the range of records that you want to appear in the list. Only billing schedule lines where the unbilled revenue journal entries have not been created appear in the list. The initial journal entries are created. For deferral items, the deferral schedules are also created.
+1. **Create journal entry** - This will create unbilled revenue journal entries for multiple billing schedule lines. Use **Filter** button under Records to include to select only the range of records that you want to appear in the list. Only billing schedule lines where the unbilled revenue journal entries have not been created appear in the list. The initial journal entries are created. For deferral items, the deferral schedules are also created.
 
-2. **Stub journal entry** - This process marks the billing schedule lines that have the unbilled journal entries already created. This option is typically used if the unbilled journal entry was already posted in another system so this only marks the unbilled revenue journal as stubbed. It does not post a transaction to the General ledger. 
+2. **Stub journal entry** - This marks the billing schedule lines that have the unbilled journal entries already created. This option is used if the unbilled journal entry was already posted in another system. This marks the unbilled revenue journal as stubbed and does not post a transaction to the General ledger. 
 
-3. **Reverse stub journal entry** - Use this process to reverse out any stub journal entries that have been processed. In case a mistake was made when processing **Stub journal entry** this will remove the Stubbed checkbox for the billing schedule line. 
+3. **Reverse stub journal entry** - This will reverse stub journal entries that have been processed. If a mistake was made when processing **Stub journal entry**, this will clear the **Stubbed** checkbox for the billing schedule line. 
 
-4. **Stub billing detail line** - Use this process in the case where the Unbilled revenue was processed in an external system and some of the billing detail lines have already been billed. This will make sure the correct amount is in the unbilled revenue accounts. 
+4. **Stub billing detail line** - Use this process when Unbilled revenue was processed in an external system and some of the billing detail lines have already been billed. This will make sure the correct amount is in the unbilled revenue accounts. 
 
-5. **Reverse stub billing detail line** - Use this process to reverse out any Stub billing detail line actions. 
-
-The Transaction date displays the transaction date. The default is the current date and can be updated as needed. 
-The Journal name is used to post the Create journal entry to the General ledger. The default is from the **Recurring contract billing parameters** page, **Default journal name** under **Unbilled revenue**.
+5. **Reverse stub billing detail line** - This process will reverse any Stub billing detail line actions. 
+The **Journal name** is used to post the **Create journal entry** to the General ledger. This value is from the **Recurring contract billing parameters** page, **Default journal name** under **Unbilled revenue**.
 
 >[!Note]
->The stub process does not post any amounts to the General ledger. The **Journal name** field is disabled for all stub and reverse stub processes. 
+>The stub process does not post amounts to the General ledger. The **Journal name** field is not available for all stub and reverse stub processes. 
 
 ### Unbilled revenue stub example
 
-A billing schedule is set up for one year, October 2021 to September 2022. The unbilled revenue was already processed in an external system and nine months of the billing schedule have already been billed. Each billing period is $250. The total amount posted to Unbilled revenue would be $3000 at the beginning of the year. After nine months, $750 would be left in unbilled revenue and $2250 has already been billed. 
+A billing schedule is set up for one year, October 2021 to September 2022. The unbilled revenue was already processed in an external system. Nine months of the billing schedule have already been billed. Each billing period is $250. The total amount posted to Unbilled revenue would be $3000 at the beginning of the year. After nine months, $750 would be left in unbilled revenue and $2250 has already been billed. 
 
-To set up the billing schedule with only three months left in unbilled revenue follow these steps.
+To set up the billing schedule with only three months left in unbilled revenue, follow these steps:
 1. Create a billing schedule October 2021 to September 2022, Item S0001 for $250 per month in View billing detail. 
 2. Use **Create journal entry** for the billing schedule. This will post $3000 to unbilled revenue. 
-3. Use **Stub billing detail line** with a transaction date of June 2022 (9 months). The billing schedule lines do not show in the preview as the lines affected are based on the transaction date. Select **OK**.
+3. Use **Stub billing detail line** with a transaction date of June 2022 (9 months). The billing schedule lines won't show in preview, the lines affected are based on the transaction date. Select **OK**.
 4. This will stub the first nine months that have been billed. 
 
 [![View billing detail lines stub.](./media/01_View-billing-detail-stub.png)](./media/01_View-billing-detail-stub.png)
