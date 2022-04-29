@@ -101,3 +101,19 @@ The Excel worksheet that you downloaded contains the structure of the **Set up t
 2. In RCS, on the **Tax calculation** feature page, on the **Tax group applicability** tab, select **Add** to insert an empty record at the bottom of the **Set up tax group applicability** grid.
 3. Select **Ctrl+V** to paste the copied rows into the grid.
 4. Select **Save**.
+
+## Import feature demo data
+
+1. Sign in to [RCS](https://marketing.configure.global.dynamics.com/).
+2. In the **Globalization features** workspace, select **Features**, and then select the **Tax calculation** tile.
+3. Select **Import** to open the **Import feature from Global repository** page.
+4. Select **Synchronize**, the **tax-calculation-feature-demo-data** feature shall be available in the table, select **Import**.
+5. Select **View** to check the defined tax codes, groups and applicability rules in the imported feature.
+6. In Finance, switch to legal entity **DEMF**, go to **Tax > Setup > Tax configuration > Tax calculation parameters**.
+7. On the General tab, select **Enable Tax Calculation Service**.
+8. Select **tax-calculation-feature-demo-data** in the drop down list of the **Feature setup name** option.
+9. Select **Settlement period** and **Ledger posting group** for the new demo tax codes, select **Confirm**.
+10. Select **Save**.
+
+> [!NOTE]
+> the **tax-calculation-feature-demo-data** demo feature is based on feature version **40.54.234** and designed for the demo legal entity **DEMF**. Make sure your Finance and RCS is upgraded to 10.0.26 or higher versions.
