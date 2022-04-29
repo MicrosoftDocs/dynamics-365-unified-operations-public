@@ -34,7 +34,9 @@ ms.dyn365.ops.version: 10.0.28
 This topic provides troubleshooting guidance that can help when facing statement posting failures.
 
 ## Error-based troubleshooting
+
 If an error that occurs doesn't appear in the following table, create a support request, as required, so that Microsoft Support can help you fix the issue. This topic is focused on issues that you can work on directly, without the help of Microsoft Support.
+
 
 | Error | Description |
 |-------|-------------|
@@ -43,6 +45,6 @@ If an error that occurs doesn't appear in the following table, create a support 
 
 ## Additional resources
 
-[Edit and audit cash and carry and cash management transactions](https://docs.microsoft.com/en-us/dynamics365/commerce/edit-cash-trans)
-[Create an Excel workbook to edit retail transactions](https://docs.microsoft.com/en-us/dynamics365/commerce/create-excel-edit)
-[Validate store transactions for statement calculation](https://docs.microsoft.com/en-us/dynamics365/commerce/valid-checker)
+- [Edit and audit cash and carry and cash management transactions](https://docs.microsoft.com/en-us/dynamics365/commerce/edit-cash-trans)
+- [Create an Excel workbook to edit retail transactions](https://docs.microsoft.com/en-us/dynamics365/commerce/create-excel-edit)
+- [Validate store transactions for statement calculation](https://docs.microsoft.com/en-us/dynamics365/commerce/valid-checker)
