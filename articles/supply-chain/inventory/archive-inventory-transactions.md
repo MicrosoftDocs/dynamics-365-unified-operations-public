@@ -119,3 +119,8 @@ The toolbar above the grid provides the following buttons that you can use to wo
 - **Pause archiving** – Pause a selected archive that is currently being processed. The pause takes effect only after the archiving task has been generated. Therefore, there might be a short delay before the pause takes effect. If an archive has been paused, a check mark appears in its **Stop current update** field.
 - **Resume archiving** – Resume processing for a selected archive that is currently paused.
 - **Reverse** – Reverse the selected archive. You can reverse an archive only if its **State** field is set to *Finished*. If an archive has been reversed, a check mark appears in its **Reverse** field.
+
+## How to extend the code for customer fields
+1. If the customer fields on inventTrans has the same fields name as inventtransArchive, that means they are 1:1 map, just put the customer fields into InventoryArchiveFields fields group of inventTrans table.
+2. if the customer fields has different name such as we have a filed inventTrans.ModifiedTime(system field), and we need to create a fields in inventtransArchive with different name such as inventtransArchive.InventTransModifiedTime, then we need to use code to map it. The sample code can be found as attached below.
+[InventTransArchiveExtension.zip](https://github.com/ShaominWang/dynamics-365-unified-operations-public/files/8588769/InventTransArchiveExtension.zip)
