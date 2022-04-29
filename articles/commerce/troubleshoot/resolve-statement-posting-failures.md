@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Resolve 
+title: Resolve statement posting failures
 description: This topic provides troubleshooting guidance that can help resolve failures during statement posting process
 author: Frank-Zhang
 ms.date: 04/29/2022
