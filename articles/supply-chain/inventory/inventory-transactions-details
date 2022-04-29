@@ -32,12 +32,12 @@ The **Transactions details** page is split into several FastTabs. The following 
 | FastTab | Description |
 |---|---|
 | General | Displays basic information about the current inventory transaction, including information shown on the **Inventory transactions** page, plus the additional fields described later in this topic. |
-| Updates | Displays information related to the physical, financial, and settlement aspects of the current inventory transaction. Depending on the current status of the transaction, some fields may  be blank, but these will automatically populated later once transactions are posted. It includes information shown on the **Inventory transactions** page, plus the additional fields described later in this topic. |
-| Ledger postings | Displays the posting type and ledger account used for the physical update, financial update, physical revenue, physical chare, financial revenue, and financial charge related to the current inventory transaction. |
-| References | Displays additional information about the source transaction that created the current inventory transaction. For example, these may include details from the purchase order or sales order. |
+| Updates | Displays information related to the physical, financial, and settlement aspects of the current inventory transaction. Depending on the current status of the transaction, some fields may  be blank, but these will automatically be populated later once transactions are posted. It includes information shown on the **Inventory transactions** page, plus the additional fields described later in this topic. |
+| Ledger postings | Displays the posting type and ledger account used for the physical update, financial update, physical revenue, physical charges, financial revenue, and financial charges related to the current inventory transaction. |
+| References | Displays additional information about the source transaction that created the current inventory transaction. For example, this may include details from the purchase order or sales order. |
 | Related information | Displays additional information about the current inventory transaction. These fields may not be populated if you aren't using certain features such as procurement categories or projects. |
-| Financial dimensions – physical | Displays the financial dimension values that were used when the physical update was posted. If the physical update has not been posted, these fields will be blank. |
-| Financial dimensions – financial | Displays the financial dimension values that were used when the financial update was posted. If the financial update has not been posted, these fields will be blank. |
+| Financial dimensions – physical | Displays the financial dimension values that were used when the physical update was posted. If the physical update hasn't been posted, these fields will be blank. |
+| Financial dimensions – financial | Displays the financial dimension values that were used when the financial update was posted. If the financial update hasn't been posted, these fields will be blank. |
 | Inventory dimensions | Displays the inventory dimension values that are assigned to the current inventory transaction including site, warehouse, size, color, configuration, location, batch number, serial number, inventory status, license plate, and owner. |
 
 ## Fields on the General FastTab
@@ -50,10 +50,10 @@ The following table describes the fields on the **General** FastTab that aren't 
 | Inventory reference | Identifies the type of another inventory transaction that is related to the current inventory transaction. For example, if a purchase order is marked against a sales order, the purchase order transaction's **Inventory reference** would be *Sales order*. Marking occurs automatically for direct deliver orders and intercompany orders. When you use marking with costing methods other than *standard cost* or *moving average*, the system will create settlements and adjustments to the exact transactions that are marked. In this way you can achieve "actual" costing that overrides the logic for FIFO, LIFO, or weighted average. |
 | Inventory number | This field identifies the specific transaction that is related to the current inventory transaction. For example, if a purchase order is marked against a sales order, the purchase order transaction's **Inventory number** would be the sales order number. |
 | Project ID | If the current inventory transaction is related to a project, this field shows the project number. |
-| Lot ID | Shows the unique lot ID that Supply Chain Management has assigned to the current inventory transaction. |
+| Lot ID | Shows the unique lot ID that the system has assigned to the current inventory transaction. |
 | Reference lot | Shows the lot ID of another inventory transaction that is related to the current inventory transaction. For example, if a purchase order is marked against a sales order, the purchase order transaction's **Reference lot** would be the **Lot ID** of the sales order line's inventory transaction. |
 | Dimension number | Shows a unique ID that represents the combination of all the inventory dimension values assigned to the current inventory transaction. |
-| Value open | Indicates whether the current inventory transaction has been settled by the inventory closing process. If **Value open** is *Yes*, the transaction has not been settled. |
+| Value open | Indicates whether the current inventory transaction has been settled by the inventory closing process. If **Value open** is *Yes*, the transaction hasn't been settled. |
 | Expected date | For receipt transactions, this is the date the inventory receipt is expected to occur. For example, the **Expected date** could show the expected receipt date on an inventory blocking order or the delivery date on a purchase order line. |
 | Inventory date | This field is populated when a registration transaction has been done on the receipt order prior to posting a physical receipt. |
 | Non-financial transfer | Shows whether the current inventory transaction is a non-financial transfer. A non-financial transfer occurs when a change in inventory dimensions isn't tracked financially on the **Item model group** page. |
@@ -79,8 +79,8 @@ The following table describes the fields on the **Updates** FastTab that aren't 
 | Invoice | Shows the invoice number that was generated, for example, for a purchase or sales order. |
 | Adjustment | Shows the amount that was adjusted on the current inventory transaction from the inventory close and adjustment process. |
 | Profit and loss, posted amount | The amount of the current inventory transaction that was posted to the profit and loss statement. |
-| Unposted invoice | Shows the invoice number related to a purchase order that is on the **Pending vendor invoice** page. |
+| Unposted invoice | Shows the invoice number of a related purchase order that is on the **Pending vendor invoice** page. |
 | Financially closed | Shows the date that the transaction was fully settled. |
 | Covered CW quantity | Shows the catch weight quantity that is covered by the settlement. |
-| Settled quantity | Shows the quantity of the current inventory transaction that has been settled. |
-| Amount settled | Shows the value of the current inventory transaction that has been settled. |
+| Settled quantity | Shows the quantity that has been settled for the current inventory transaction. |
+| Amount settled | Shows the value that has been settled for the current inventory transaction. |
