@@ -474,14 +474,12 @@
           href: help/contributor-guide.md
       - name: Deployment considerations
         items:
-        - name: Sovereign and local cloud deployment options for Dynamics 365 Finance and Dynamics 365 Supply Chain Management
+        - name: Commerce, Finance, and Supply Chain Management in local geographies
           href: deployment/deployment-options-geo.md
         - name: Finance and Supply Chain Management in US Government Community Cloud (GCC)
           href: deployment/us-gcc-deployment.md
         - name: Finance and Supply Chain Management operated by 21Vianet in China
           href: deployment/china-local-deployment.md
-        - name: Finance and Operations apps in France
-          href: deployment/france-local-deployment.md
     - name: Develop and customize
       items:
       - name: Develop and customize home page
