@@ -92,7 +92,7 @@ For more information, see [Download Electronic reporting configurations from Lif
 <p>Format</p>
 </td>
 <td>
-<p>Select the required format of the field. For more information about the available formats, see the <a href="https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/IT_Yearly_tax_communication/articles/finance/localizations/emea-ita-yearly-tax-communication.md#formats-of-the-fields">Formats of the fields</a> section later in this topic.</p>
+<p>Select the required format of the field. For more information about the available formats, see the <a href="https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/main/articles/finance/localizations/emea-ita-yearly-tax-communication.md#formats-of-the-fields">Formats of the fields</a> section later in this topic.</p>
 </td>
 </tr>
 <tr>
