@@ -169,39 +169,43 @@ An XLIFF file named **\<assetname\>.xlf** will be downloaded to your browser's d
 
 #### Step 2: Localize the XLIFF file
 
-In most cases, you'll work with a localization vendor to translate your XLIFF files. If you are localizing assets internally or testing the localization process, you must make the following changes to each XLIFF file:
+In most cases, you'll work with a localization vendor to translate your XLIFF files. However, if you're localizing assets internally, or if you just want to test the localization process, you must make the following changes to an XLIFF file:
 
-- Add a target language attribute to the /xliff/file element whose value is the locale identifier of the language you're localizing to. This locale identifier must match the locale identifier specified on the **Channels** site settings page.
-- For each //source element, add a target element sibling whose text value is the localized version of what's contained in that source element.
+- Add a target language attribute to the /xliff/file element and set the value to the locale identifier of the language you're localizing to. 
+    > [!NOTE]
+    > This locale identifier must match the locale identifier from the **Channels** page in site settings.
+- For each //source element, add a target element sibling where the text value is the localized version of the content of that source element.
 
-For information about the schema that governs XLIFF files, see [XLIFF 1.2 Specification](http://docs.oasis-open.org/xliff/xliff-core/xliff-core.html).
+For information about the schema that governs XLIFF files, see the [XLIFF 1.2 Specification](http://docs.oasis-open.org/xliff/xliff-core/xliff-core.html).
 
 > [!NOTE]
-> To localize an asset into multiple languages, a localized XLIFF file must be created for every language into which you're localizing the asset.
+> To localize an asset into multiple languages, you must create a localized XLIFF file for each of those languages.
 
 #### Step 3: Import the localized XLIFF file
 
 To import an XLIFF file for an asset, follow these steps.
 
-1. Open the page, fragment, or image asset in site builder.
-1. In the channel and locale picker on the upper right, select the channel and language you're importing localized content for.
-1. On the command bar, select **Localization \> Import XLIFF**, and then browse to the localized XLIFF file to import for this asset and language.
+1. In Commerce site builder, open the asset that you want to import an XLIFF file for.
+1. In the channel and locale picker in the upper right, select the channel and language that you're importing localized content for.
+1. On the command bar, select **Localization \> Import XLIFF**. Then browse to and select the localized XLIFF file for the selected asset and language.
 
-Once the XLIFF file is successfully imported, a variant of the page, fragment, or asset is created. From here forward, changes made to the localized variant only affect the variant and not the base asset that it was derived from. Similarly, changes to the base asset will not be reflected in the variant of that asset. However, for site pages it is possible to make changes across variants by modifying the template or layout they're associated with. Similarly, changes to a fragment will affect all pages that are dependent on that variant.
+After the XLIFF file is successfully imported, a "variant" of the page, fragment, or asset is created. From that point onward, all changes that are made to the localized variant will affect only that variant. They won't affect the base asset that the variant was derived from. Likewise, changes to the base asset won't affect the variant of that asset. 
+
+However, in the case of pages, you can make changes across variants by modifying the template or layout that those pages are bound to. Likewise, changes to a fragment will affect all pages that take a dependency on that variant.
 
 ### Images
 
-The content metadata associated with images must be localized in order for that image to be rendered in a page or module variant. The following metadata within a media asset are localizable:
+Images can be rendered in a page or module variant only if the content metadata that is associated with those images is localized. Currently, the following metadata in a media asset is localizable:
 
 - Alt text
 - Description
 - Title
 
-It is not currently possible to localize the binary for a digital asset such as an image or video. The Dynamics 365 Commerce product team is currently working on this capability.
+Currently, you can't localize the binary for a digital asset such as an image or a video. The Dynamics 365 Commerce product team is currently working on this capability.
 
 ### Localize modules
 
-Strings that are rendered as part of the module itself (for example, **Previous** and **Next** buttons in a carousel module) are localized separately from module content. For more information, see [Localize a module](e-commerce-extensibility/localize-module.md).
+Strings that are rendered as part of the module itself (for example, "Previous" and "Next" in a carousel module) are localized separately from module content. For instructions, see [Localize a module](e-commerce-extensibility/localize-module.md).
 
 ## Additional resources
 
