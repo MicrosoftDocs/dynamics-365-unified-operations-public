@@ -61,93 +61,16 @@ For more information, see [Download Electronic reporting configurations from Lif
 
 9. On the **Field setup** tab, create lines, and set the following fields on them.
 
-<table>
-<tbody>
-<tr>
-<td>
-<p><strong>Field</strong></p>
-</td>
-<td>
-<p><strong>Description</strong></p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Field ID</p>
-</td>
-<td>
-<p>Enter the identification number of the field.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Description</p>
-</td>
-<td>
-<p>Enter a description of the field.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Format</p>
-</td>
-<td>
-<p>Select the required format of the field. For more information about the available formats, see the <a href="https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/IT_Yearly_tax_communication/articles/finance/localizations/emea-ita-yearly-tax-communication.md#formats-of-the-fields">Formats of the fields</a> section later in this topic.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Calculation</p>
-</td>
-<td>
-<p>Select a calculation method:</p>
-<ul>
-<li><strong>Manual</strong> &ndash; The value is manually entered.</li>
-<li><strong>Tax transaction</strong> &ndash; The value is collected from the tax transactions.</li>
-<li><strong>Total</strong> &ndash; The value is calculated by using a formula that consists of the values of other fields (but only fields where in <strong>Calculation</strong> field value is not selected).</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>
-<p>Value</p>
-</td>
-<td>
-<p>Enter a value for the field. You can edit this value only when the <strong>Calculation</strong> field is set to <strong>Manual.</strong></p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Tax</p>
-</td>
-<td>
-<p>Select one of the following values:</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Tax base</strong> &ndash; The field should represent a tax base.</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Tax amount </strong>&ndash; The field should represent a tax amount.</p>
-<p>You can edit this value only when the <strong>Calculation</strong> field is set to <strong>Tax transactions.</strong></p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Sign</p>
-</td>
-<td>
-<p>Enter <strong>1</strong> if the value should be represented as is. Enter <strong>-1</strong> if the value should be inverted.</p>
-<p>You can edit this value only when the <strong>Calculation</strong> field is set to <strong>Tax transactions or Total.</strong></p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Nondeductible sales tax</p>
-</td>
-<td>
-<p>If the <strong>Calculation field is set to Tax transaction, </strong>and the <strong>Tax field is set to Tax amount, select this check box</strong> to reduce the calculated tax amount on the non-deductible tax amount.</p>
-</td>
-</tr>
-</tbody>
-</table>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+    | Field     | Description                             |
+    |-----------|-----------------------------------------|
+    | Field ID                | Enter the identification number   of the field.   |
+    | Description             | Enter   a description of the field. |
+    | Format                  | Select   the required format of the field. For more information about the available   formats, see the [Formats of the fields](#formats) section later in this   topic. |
+    | Calculation             | Select a calculation method:   <br>- **Manual** - The value is manually entered. <br>- **Tax   transaction** - The value is collected from the tax transactions. <br>-   **Total** - The value is calculated by using a formula that consists fo the   values of other fields (but only fields where the **Calculation** field isn't   selected). |
+    | Value                   | Enter   a value for the field. You can edit this value only when   the **Calculation** field is set to **Manual**.    |
+    | Tax                     | Select one of the following   values: <br>- **Tax base** - The field should represent a tax base.   <br>- **Tax amount** - The field should represent a tax amount. <br> You can edit this value only when the **Calculation** field is set   to **Tax transactions**.  |
+    | Sign                    | Enter **1** if the value should   be represented as is. Enter **-1** if the value should be inverted.   <br> You can edit this value only when the **Calculation** field is set   to **Tax transactions** or **Total**.  |
+    | Nondeductible sales tax | If   the **Calculation** field is set to **Tax transaction**, and   the **Tax** field is set to **Tax amount**, select this checkbox to   reduce the calculated tax amount on the non-deductible tax amount.    |
 
 > [!NOTE]
 > If any changes are made in the declaration, you must change the field settings.
@@ -178,7 +101,7 @@ You can do the following additional setup for fields where the **Calculation** f
     | Sign       | Enter **1** if the value from the field should be taken as is. Enter **-1** if the value from the field should be inverted. |
     | Field ID   | Select the field that should be totaled. Fields where the **Calculation** field is set to **Total** can't be selected here. |
 
-### Formats of the fields
+### <a name="formats"></a> Formats of the fields
 
 Usually, fields values can be either numeric (**NU** format) or alphanumeric (**AN** format).
 
