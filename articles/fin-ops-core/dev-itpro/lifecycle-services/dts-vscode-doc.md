@@ -67,7 +67,7 @@ Follow these steps to configure a translation request.
 
 Before you submit a new translation request, make sure that you've saved the configuration for translation requests. That configuration will be used for all future requests, unless it's overridden by a new save operation.
 
-To submit a new request, use the **Submit Translation Request** command in the **Resources View** context menu.
+To submit a new request, select the ellipsis button (**...**) in the resource file explorer, and then select **Submit Translation Request** on the menu.
 
 ![Submit Translation Request command.](media/dtsvsc-submit.png) 
 
