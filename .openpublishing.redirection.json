@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/fin-ops-core/dev-itpro/deployment/france-local-deployment.md",
+      "redirect_url": "deployment-options-geo",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/finance/localizations/e-invoicing-get-started.md",
       "redirect_url": "e-invoicing-working-globalization-features",
       "redirect_document_id": "false"
