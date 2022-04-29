@@ -118,7 +118,7 @@ After you've successfully applied the update in the sandbox environment and are 
 
     The **Is Release Candidate** option is set to **Yes**.
 
-    After you've marked an update as a release candidate, follow these steps to update your environment.
+After you've marked an update as a release candidate, follow these steps to update your environment.
 
 1. Open the environment details page for the production environment.
 2. Select **Maintain \> Update environment** to apply an update.
