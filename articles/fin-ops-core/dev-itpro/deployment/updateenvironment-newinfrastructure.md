@@ -70,7 +70,7 @@ After the package is in the project asset library, follow these steps to update 
 4. Select the package to apply. Use the filter at the top to find your package. The list will include application and platform binary packages and application deployable packages that have passed validation from the asset library.
 5. Select **Apply**.
 
- The status in the upper-right corner of the environment details page changes from **Queued** to **Servicing** and then to **Post-servicing**. When package application is completed, the status changes to **Deployed**.
+  The status in the upper-right corner of the environment details page changes from **Queued** to **Servicing** and then to **Post-servicing**. When package application is completed, the status changes to **Deployed**.
 
 6. After package application is completed, the environment history is updated. To view the environment history, select **History \> Environment changes** on the environment details page.
 7. You can also download the logs from the environment history page.
@@ -87,9 +87,9 @@ If any failure occurs during the post-processing step, the LCS dashboard will di
 
 AOT deployable packages consist of one or many customer modules. They might be a combination of ISV modules, partner modules, or a customer's own customization modules. If you want to completely uninstall an AOT deployable package, there are two options in the sandbox environments:
 
-- *Recommended option:* Use the ModuleToRemove.txt process that is outlined in [Uninstall a package](uninstall-deployable-package.md). This option does everything that the previous option does, but the resulting image can be promoted to production environments.
+- **Recommended option:** Use the ModuleToRemove.txt process that is outlined in [Uninstall a package](uninstall-deployable-package.md). This option does everything that the previous option does, but the resulting image can be promoted to production environments.
 
-- *Option not supported for production:* Create a new AOT deployable package that no longer includes the module that you want to remove. When you apply this package directly to your sandbox environment, a message in LCS will warn you that a module that is included in the current image of the environment is missing from your package.
+- **Option not supported for production:** Create a new AOT deployable package that no longer includes the module that you want to remove. When you apply this package directly to your sandbox environment, a message in LCS will warn you that a module that is included in the current image of the environment is missing from your package.
 
     - You can proceed in LCS. Microsoft will create a new image that combines the Microsoft binary from the last update and the current AOT package that doesn't contain the module that you want to remove. In effect, the module will be uninstalled.
     - This option is advised only in situations where you don't yet have a production environment, or where you must quickly test the resulting environment but don't plan to promote this AOT package to production.
