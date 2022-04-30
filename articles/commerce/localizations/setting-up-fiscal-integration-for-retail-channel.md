@@ -294,6 +294,7 @@ To enable manual execution of a postponed fiscal registration, you should add a 
     1. Add a new button, and set the **Complete fiscal registration process** button property.
     1. On the **Distribution schedule** page, run the **1090** job to transfer your changes to the channel database.
 
+
 ## View connection parameters and other information in POS
 
 To view connection parameters and other information in POS, follow these steps.

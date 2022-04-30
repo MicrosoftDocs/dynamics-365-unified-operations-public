@@ -34,7 +34,7 @@ Previously, the attribute framework supported attributes only in online orders. 
 
 Headquarters now includes pages for editing and updating attribute values, which means that you can set the values for call center orders in Headquarters. In POS, use the Attributes panel to set or update the attribute value in POS. If you don't need to use a user interface and just want to add business logic, you can add the business logic directly in CRT. You can create new attributes by using the Headquarters configurations. No database changes are required. Previously, you had to create new tables in Headquarters and the channel database, and then modify those tables.
 
-## Why and when you should order attributes
+## Why and when you should add order attributes
 
 If you want to add new fields to cash-and-carry transactions, customer orders, or call center orders, and if you want to capture the information in the POS or Headquarters, use order attributes. Previously, to add a new field to a cash-and-carry transaction (transaction header or lines) or a customer order in the POS, you had to create a new extension table in Headquarters and the channel database, and then make inline changes to CRT and POS code to handle the various screens and operations. You also had to configure Commerce Data Exchange to synchronize the data between the channel database and Headquarters. However, order attributes now let you complete all these actions through configuration. You don't have to write any code or create custom extension tables, but you still need to create the core business logic and the POS UI.
 
