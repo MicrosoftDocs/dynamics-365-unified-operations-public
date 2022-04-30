@@ -2,7 +2,7 @@
 title: Introduction to Commerce Scale Unit (CSU) Core
 description: This topic provides an introduction to Commerce Scale Unit (CSU) Core in Microsoft Dynamics 365 Commerce.
 author: mugunthanm
-ms.date: 04/21/2022
+ms.date: 04/27/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: v-chgriffin
@@ -28,7 +28,7 @@ CSU Core provides the following benefits:
 
 - It has better application programming interface (API) performance than the existing Commerce Scale Unit.
 - It runs on .NET Core and uses .NET version 6.
-- It's backward compatible with extensions that were built by using the Commerce software development kit (SDK), .NET 6, and Visual Studio 2022.
+- It's backward compatible with extensions that were built by using the Commerce software development kit (SDK), .NET Standard 2.0, and Visual Studio 2022.
 
 ## CSU Core release plan
 
@@ -40,7 +40,7 @@ CSU Core offers highly performant headless commerce APIs and the benefits of .NE
 
 ### Extensions
 
-If you plan to create extensions for headless commerce, it must be built by using the following target frameworks and .NET 6 or later. .NET 6 development is supported only in Visual Studio version 2022 or later.
+If you plan to create extensions for headless commerce, it must be built by using NET Standard 2.0 as the target framework.
 
 #### Validate your extension compatibility with CSU Core
 

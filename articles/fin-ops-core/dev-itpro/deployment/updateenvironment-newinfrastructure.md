@@ -4,7 +4,7 @@
 title: Update an environment
 description: This topic explains how to update an environment that was deployed by using the self-service deployment experience.
 author: laneswenka
-ms.date: 10/27/2021
+ms.date: 04/29/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -45,7 +45,7 @@ Self-service environments use a special approach to performing updates, because 
 - An **AOT deployable package**, which is an all-in-one package that is the sum of all the custom code that the customer wants to apply to its environment.
 - An **Update name** value that the customer provides in LCS. 
  
-<img src="media/SelfServiceUpdate.png" width=600px alt="Self-service update image conceptual model." />
+![Self-service update image conceptual model.](media/SelfServiceUpdate.png)
  
 The combination of these binaries is the basis for an image that is used to create an instance of an Application Object Server (AOS). The **Update name** value lets customers provide a meaningful name that indicates what the update contains.
 
@@ -70,23 +70,30 @@ After the package is in the project asset library, follow these steps to update 
 4. Select the package to apply. Use the filter at the top to find your package. The list will include application and platform binary packages and application deployable packages that have passed validation from the asset library.
 5. Select **Apply**.
 
-    The status in the upper-right corner of the environment details page changes from **Queued** to **Servicing**. Then, when package application is completed, the status changes to **Deployed**.
+    The status in the upper-right corner of the environment details page changes from **Queued** to **Servicing** and then to **Post-servicing**. When package application is completed, the status changes to **Deployed**.
 
 6. After package application is completed, the environment history is updated. To view the environment history, select **History \> Environment changes** on the environment details page.
 7. You can also download the logs from the environment history page.
 8. After the validations are completed, you can sign-off on the update from the environment history page by selecting either **Sign off** or **Sign off with issues**.
 
+## Servicing changes
+Microsoft has introduced a new post-servicing step that lets you do index creation in online mode to help reduce the overall servicing downtime. While the post-processing step is occurring, the LCS dashboard will show **Post-servicing** after offline servicing is completed. During this time, some index creation and modification will be done in online mode. The environment will be accessible so that users can perform regular activities, but performance on the package changes that are involved might be degraded. During post-servicing, users won't be able to cancel or trigger new service requests.
+
+![LCS dashboard showing the the post-processing step is progress.](https://user-images.githubusercontent.com/90061039/164792400-d8ca418c-6a5e-468c-a965-eae597bfb737.png)
+
+If any failure occurs during the post-processing step, the LCS dashboard will display **Post-servicing failed**. The environment will still be accessible so that users can perform regular activities, but performance might be degraded. If you experience that the issue is not resolved in 24 hours, then contact Microsoft Support.
+
 #### Uninstalling a module
 
 AOT deployable packages consist of one or many customer modules. They might be a combination of ISV modules, partner modules, or a customer's own customization modules. If you want to completely uninstall an AOT deployable package, there are two options in the sandbox environments:
 
-- Create a new AOT deployable package that no longer includes the module that you want to remove. When you apply this package directly to your sandbox environment, a message in LCS will warn you that a module that is included in the current image of the environment is missing from your package.
+- **Recommended option:** Use the ModuleToRemove.txt process that is outlined in [Uninstall a package](uninstall-deployable-package.md). This option does everything that the previous option does, but the resulting image can be promoted to production environments.
+
+- **Option not supported for production:** Create a new AOT deployable package that no longer includes the module that you want to remove. When you apply this package directly to your sandbox environment, a message in LCS will warn you that a module that is included in the current image of the environment is missing from your package.
 
     - You can proceed in LCS. Microsoft will create a new image that combines the Microsoft binary from the last update and the current AOT package that doesn't contain the module that you want to remove. In effect, the module will be uninstalled.
     - This option is advised only in situations where you don't yet have a production environment, or where you must quickly test the resulting environment but don't plan to promote this AOT package to production.
     - Promotion of the resulting image of the sandbox environment to production environments will be blocked.
-
-- *Recommended option:* Use the ModuleToRemove.txt process that is outlined in [Uninstall a package](uninstall-deployable-package.md). This option does everything that the previous option does, but the resulting image can be promoted to production environments.
 
 #### Microsoft automatic updates in sandbox environments
 

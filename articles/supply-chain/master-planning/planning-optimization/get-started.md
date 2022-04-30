@@ -43,7 +43,7 @@ Before you turn on Planning Optimization, we strongly recommend that you evaluat
 
 ## Availability
 
-Planning Optimization is currently available in the following Azure geographies: United States, Canada, Europe, United Kingdom, Australia, Asia Pacific, Japan, and India. If you try to install the add-in from another geographic region, then LCS will show a message that this geographic is not supported. For more information about Azure geographies and the related regions, see [Azure geographies](https://azure.microsoft.com/global-infrastructure/geographies/#geographies).
+Planning Optimization is currently available in the following Azure geographies: United States, Canada, Brazil, Europe, United Kingdom, Australia, Asia Pacific, Japan, and India. If you try to install the add-in from another geographic region, then LCS will show a message that this geographic is not supported. For more information about Azure geographies and the related regions, see [Azure geographies](https://azure.microsoft.com/global-infrastructure/geographies/#geographies).
 
 Note that Planning Optimization does not support on-premises deployments of Dynamics 365 Supply Chain Management.
 

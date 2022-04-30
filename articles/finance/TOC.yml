@@ -1437,7 +1437,7 @@
               - name: Set up Azure resources for Electronic invoicing
                 href: localizations/e-invoicing-set-up-azure-resources.md?toc=/dynamics365/finance/toc.json
               - name: Create an Azure Key Vault in the Azure portal
-                href: localizations/e-invoicing-create-azure-storage-account-azure-portal.md?toc=/dynamics365/finance/toc.json
+                href: localizations/e-invoicing-create-azure-key-vault-azure-portal.md?toc=/dynamics365/finance/toc.json
               - name: Create an Azure storage account in the Azure portal
                 href: localizations/e-invoicing-create-azure-storage-account-azure-portal.md
               - name: Configure a SharePoint connection
@@ -1468,6 +1468,8 @@
               href: localizations/e-invoicing-complete-publish-deploy-globalization-feature.md?toc=/dynamics365/finance/toc.json
             - name: Share with other organizations
               href: localizations/e-invoicing-share-other-organizations.md?toc=/dynamics365/finance/toc.json
+            - name: Usage management dashboard
+              href: localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/finance/toc.json   
             - name: Process incoming electronic documents
               items: 
               - name: Processing incoming electronic documents
@@ -1476,12 +1478,12 @@
                 href: localizations/e-invoicing-configure-email.md?toc=/dynamics365/finance/toc.json
               - name: Configure a SharePoint channel
                 href: localizations/e-invoicing-configure-sharepoint-channel.md
-            - name: Set up and use Electronic invoicing with Finance and Supply Chain Management
-              items: 
-              - name: Activate and set up integration with Electronic Invoicing
-                href: localizations/e-invoicing-activate-setup-integration.md?toc=/dynamics365/finance/toc.json
-              - name: Set up Electronic Invoicing parameters
-                href: localizations/e-invoicing-set-up-parameters.md?toc=/dynamics365/finance/toc.json
+          - name: Set up and use Electronic invoicing with Finance and Supply Chain Management
+            items: 
+            - name: Activate and set up integration with Electronic Invoicing
+              href: localizations/e-invoicing-activate-setup-integration.md?toc=/dynamics365/finance/toc.json
+            - name: Set up Electronic Invoicing parameters
+              href: localizations/e-invoicing-set-up-parameters.md?toc=/dynamics365/finance/toc.json
             - name: Work with Electronic Invoicing
               items:
               - name: Submit electronic documents to Electronic Invoicing
@@ -1490,18 +1492,10 @@
                 href: localizations/e-invoicing-submission-log.md?toc=/dynamics365/finance/toc.json
               - name: Work with the Electronic documents receiving log
                 href: localizations/e-invoicing-electronic-documents-receiving-log.md?toc=/dynamics365/finance/toc.json
-              - name: Usage management dashboard
-                href: localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/finance/toc.json
           - name: Country-specific scenarios
             items:
             - name: Availability of Electronic Invoicing features
               href: localizations/e-invoicing-country-specific-availability.md?toc=/dynamics365/finance/toc.json
-            - name: Get started with Electronic Invoicing service administration
-              href: localizations/e-invoicing-get-started-service-administration.md?toc=/dynamics365/finance/toc.json
-            - name: Get started with Electronic Invoicing
-              href: localizations/e-invoicing-get-started.md?toc=/dynamics365/finance/toc.json
-            - name: Create a new Electronic invoicing feature
-              href: localizations/e-invoicing-create-new-e-invoicing-feature.md
             - name: Get started with Electronic Invoicing for Brazil
               href: localizations/e-invoicing-bra-get-started.md?toc=/dynamics365/finance/toc.json
             - name: Get started with Electronic Invoicing for Egypt
@@ -1514,10 +1508,6 @@
               href: localizations/e-invoicing-ita-fatturapa-get-started.md
             - name: Use the electronic invoicing service to import vendor invoices
               href: localizations/e-invoicing-get-started-import-vendor-invoices.md
-            - name: Set up Electronic Invoicing
-              href: localizations/e-invoicing-setup.md?toc=/dynamics365/finance/toc.json
-            - name: Power Platform plug-in admin reference
-              href: localizations/e-invoicing-power-platform-plug-in.md
           - name: Electronic Invoicing FAQ
             href: localizations/e-invoicing-faq.md?toc=/dynamics365/finance/toc.json
         - name: Tax Calculation
