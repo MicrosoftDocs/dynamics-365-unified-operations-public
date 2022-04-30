@@ -165,6 +165,9 @@ For developer access, you must be an administrator on the instance. For environm
 > [!NOTE]
 > The Admin user provisioning tool isn't supported in environments that are provisioned through LCS. It should be used only on local VMs.
 
+> [!NOTE]
+> For local VMs that use the virtual hard drive (VHD) that was released for versions 10.0.24 and later, the instructions in [Set up the downloadable VHD for first use](vhd-setup.md) should be used instead.
+
 ### Commerce configuration
 
 Follow the steps in this section if you are also configuring for Commerce.
@@ -271,3 +274,6 @@ If an existing environment can't be deleted and redeployed, its URL must be adde
     ```
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+
+### While running the Admin user provisioning tool on my local development environment, I get the error "The value's length for key 'password' exceeds it's limit of '128'."
+If you are using the virtual hard drive (VHD) that was released for versions 10.0.24 and later, the Generate Self-Signed Certificates tool needs to be run before the Admin user provisioning tool. See [Set up the downloadable VHD for first use](vhd-setup.md) for more information.

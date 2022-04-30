@@ -81,8 +81,9 @@ To start to work with the VAT declaration, follow these steps.
 
     | Processing | Processing code | Description |
     |---|---|---|
-    | VAT declaration 2021 | НДС 5.05 (2021) | Декларация по налогу на добавленную стоимость (2021) |
-    | VAT declaration 2022 | НДС 5.06 (2022) | Декларация по налогу на добавленную стоимость (2022) |
+
+    | VAT declaration 2021 | НДС 5.08 (2021) | Декларация по налогу на добавленную стоимость (2021) |
+    | VAT declaration 2022 | НДС 5.09 (2022) | Декларация по налогу на добавленную стоимость (2022) |
 
 8. Follow these steps to set up the ER format that is run when the VAT declaration is generated in electronic format:
 
