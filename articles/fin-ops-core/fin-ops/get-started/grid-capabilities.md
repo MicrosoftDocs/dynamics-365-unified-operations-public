@@ -4,7 +4,7 @@
 title: Grid capabilities
 description: This topic describes several powerful features of the grid control. You must enable the new grid feature to have access to these capabilities. 
 author: jasongre
-ms.date: 03/21/2022
+ms.date: 04/25/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -27,7 +27,6 @@ ms.dyn365.ops.version: Platform update 33
 # Grid capabilities
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 The new grid control provides several useful and powerful capabilities that you can use to enhance user productivity, construct more interesting views of your data, and get meaningful insights into your data. This article will cover the following capabilities: 
 
@@ -111,7 +110,7 @@ To use this feature, right-click the column that you want to group by, and selec
 - Number of data rows in this group
 - Subtotals for any column configured to show totals
 
-With [Saved views](saved-views.md) enabled, this grouping can be saved by personalization as part of a view for quick access the next time you visit the page.
+With [Saved views](saved-views.md) enabled, you can save grouping as part of a view on pages that allow queries to be saved to views. For example, those with large view selectors. See the [Switching between views](saved-views.md#switching-between-views) section for more details. 
 
 ### Multiple levels of grouping
 After you've grouped data by a single column, you can group the data by a different column by selecting **Group by this column** on the desired column. This process can be repeated until you have 5 nested levels of grouping, which is the maximum supported depth. At this point, you will no longer be able to group by additional columns.

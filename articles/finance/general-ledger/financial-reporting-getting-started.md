@@ -215,7 +215,7 @@ Here are some steps you can take to make your conversation with Microsoft suppor
 The following steps walk through the process of turning on Event viewer messages for Financial reporting. The logs that Event viewer generates will help support engineers to identify the source of the connection issue quickly. Submit copies of these logs together with your ticket when contacting support.
 
 
-1. Copy the RegisterETW.zip file to the client workstation (preferably the Desktop) and extract [RegisterETW.zip](https://dev.azure.com/msdyneng/e6f12261-a46a-4af1-ac0c-e22bc2c5a478/_apis/git/repositories/ff923027-67f0-43fb-b63c-6d6b6423840f/Items?path=%2F.attachments%2FRegisterETW-c1a35291-6aa6-4462-a2bc-4ba117fd5f8e.zip&download=false&resolveLfs=true&%24format=octetStream&api-version=5.0-preview.1&sanitize=true&versionDescriptor.version=wikiMaster).
+1. Copy the RegisterETW.zip file to the client workstation (preferably the Desktop) and extract [RegisterETW.zip](https://mbs2.microsoft.com/fileexchange/?fileID=60b1106b-d5f8-4e0f-8041-039102505122).
 2. Make sure Windows Event viewer is closed.
 3. Open an Administrator PowerShell command prompt and go to the directory where RegisterETW.ps1 is located.
 4. Run the following command: .\RegisterETW.ps1

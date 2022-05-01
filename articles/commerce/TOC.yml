@@ -12,14 +12,12 @@
         items:
         - name: What's new or changed in Commerce home page
           href: get-started/whats-new-home-page.md
+        - name: Commerce 10.0.27 (July 2022)
+          href: get-started/whats-new-commerce-10-0-27.md
         - name: Commerce 10.0.26 (May 2022)
           href: get-started/whats-new-commerce-10-0-26.md
         - name: Commerce 10.0.25 (April 2022)
           href: get-started/whats-new-commerce-10-0-25.md 
-        - name: Commerce 10.0.24 (February 2022)
-          href: get-started/whats-new-commerce-10-0-24.md 
-        - name: Commerce 10.0.23 (January 2022)
-          href: get-started/whats-new-commerce-10-0-23.md 
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -356,6 +354,8 @@
               href: tax-exempt-price-inclusive.md
             - name: Configure sales tax for online orders
               href: sales-tax-config.md
+            - name: Hide tax breakup information in order summaries
+              href: hide-taxes-breakup.md
           - name: Set up an email notification profile 
             href: email-notification-profiles.md
           - name: Number sequences 
@@ -394,7 +394,7 @@
             href: dev-itpro/store-commerce.md
           - name: Device management implementation guidance
             href: implementation-considerations-devices.md
-          - name: Choose between MPOS and Cloud POS
+          - name: Choose between Store Commerce and Cloud POS
             href: MPOS-or-CPOS.md
           - name: Online and offline POS operations
             href: pos-operations.md
@@ -496,6 +496,8 @@
           href: tasks/configure-functionality-profile-sales-representative.md
         - name: Create financial dimensions for retail channels and configure values on stores 
           href: tasks/create-financial-dimensions-retail-channels.md
+        - name: Set up number sequences for retail statements
+          href: retail-statements-number-sequences.md
         - name: Enable consistent delivery mode handling in e-commerce channels
           href: consistent-delivery-mode-handling.md
       - name: Set up an online channel
@@ -884,6 +886,8 @@
       items:
       - name: Statements overview
         href: retail-statements.md
+      - name: Commerce posting parameters
+        href: commerce-posting-parameters.md
       - name: Validate store transactions for statement calculation 
         href: valid-checker.md
       - name: Disable rules in retail transaction consistency checker
@@ -1100,6 +1104,8 @@
             href: adventure-works-theme.md
           - name: Install the Adventure Works theme
             href: install-adventure-works.md
+        - name: Commerce localization guide
+          href: e-commerce-localization-guide.md
       - name: Manage digital assets
         items:
         - name: Digital asset management overview
@@ -1312,6 +1318,14 @@
         href: b2b/payment-method.md
       - name: Set product quantity limits for B2B e-commerce sites
         href: b2b/quantity-limits.md
+      - name: Commerce catalogs for B2B sites
+        items:
+        - name: Create Commerce catalogs for B2B sites
+          href: catalogs-b2b-sites.md
+        - name: Extensibility impact of Commerce catalogs for B2B customizations
+          href: catalogs-b2b-sites-dev.md
+        - name: Commerce catalogs for B2B FAQ
+          href: catalogs-b2b-sites-FAQ.md         
     - name: Monitoring and analysis
       items:
       - name: Monitor sales and margin performance
@@ -2474,13 +2488,17 @@
             href: dev-itpro/extension-resource-localization.md
       - name: Headless Commerce
         items:
+        - name: Overview
+          items:
+          - name: Introduction to Commerce Scale Unit (CSU) Core
+            href: dev-itpro/CSU-core.md
         - name: APIs and reference
           items:
           - name: Commerce Scale Unit customer and consumer APIs
             href: dev-itpro/retail-server-customer-consumer-api.md
           - name: Consume Retail Server APIs in external applications
             href: dev-itpro/consume-retail-server-api.md
-          - name: Typescript and C# proxies for Retail POS
+          - name: TypeScript and C# proxies for Retail POS
             href: dev-itpro/typescript-proxy-retail-pos.md
           - name: Commerce runtime (CRT) architecture and configuration
             href: dev-itpro/commerce-runtime-overview.md
@@ -2528,6 +2546,8 @@
             href: dev-itpro/extensions-shipping-carrier-integration.md
         - name: Packaging and deployment
           items:
+          - name: Create a Cloud Scale Unit extension package
+            href: dev-itpro/CSU-packaging.md
           - name: Remove Cloud Scale Unit extensions
             href: dev-itpro/retail-sdk/remove-csu-package.md
       - name: Store Commerce
@@ -2540,6 +2560,8 @@
             href: dev-itpro/pos-extension/pos-extension-basics.md
           - name: Migrate POS Extensions to the Commerce SDK
             href: dev-itpro/pos-extension/migrate-pos-extension.md
+          - name: Debug Store Commerce extensions using VS Code
+            href: dev-itpro/sc-debug.md
         - name: Environment setup
           items:
           - name: Local development environment
@@ -2614,6 +2636,8 @@
             href: dev-itpro/pos-extension/mpos-extension-signing.md 
           - name: Create a Cloud POS extension package
             href: dev-itpro/pos-extension/cpos-extension-package.md
+          - name: Create a Store Commerce extension installer package
+            href: dev-itpro/store-comm-extension-installer.md
       - name: E-commerce
         items:
         - name: Overview
@@ -2814,8 +2838,12 @@
             items:
             - name: Telemetry logger
               href: e-commerce-extensibility/telemetry-logger.md
-      - name: Commerce HQ
+      - name: Commerce headquarters
         items:
+        - name: CDX package extension
+          items:       
+          - name: Extend customer CDX package to add custom data
+            href: dev-itpro/extend-customer-CDX-package.md
         - name: Packaging and deployment
           items:
           - name: Create Commerce payment packaging for Finance and Operations deployment
