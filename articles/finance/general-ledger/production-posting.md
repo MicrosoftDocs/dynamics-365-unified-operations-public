@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Production posting
-description: Details of production order posting in the inventory posting profile.  
+title: Production order posting
+description: This topic provides information about different type of production order posting.  
 author: rachelprofitt
 ms.date: 04/25/2022
 ms.topic: overview
@@ -22,17 +22,16 @@ ms.author: raprofit
 
 # Production postings
 
-This topic provides information about different types of postings in the production process.
+This topic provides information about different types of posting in the production order process.
 
-Production posting activities follow production processes that are described in the sections below.
 
 ## Material consumption
 
-Materials are registered as consumed during production when the production picking list journal is posted. This creates transactions that deduct the on-hand inventory. In the **Production parameters**, you can specify whether the value of raw materials that are in progress (work in process \[WIP\]) should be posted in the ledger.
+Materials are registered as consumed during production when the production picking list journal is posted. This creates transactions that deduct the on-hand inventory. In the **Production parameters**, you can specify if the value of raw materials that are in progress (work in process \[WIP\]) should be posted in the ledger.
 
 The value of raw materials that are in progress (WIP) is posted to the **Estimated cost of materials consumed** and **Estimated cost of materials consumed, WIP** accounts. The picking list process for the production order is a physical update to the inventory transactions related to the production order. When a production order is registered as ended: the physical transactions are reversed, and the related inventory transactions are financially updated. When the ending journal is posted, the **Cost of materials consumed** and **Cost of materials consumed, WIP** posting types are used.
 
-The **Production** tab on the **Inventory posting profiles** page is used to control how production orders will post to the general ledger. This is used when the **Ledger posting** field is set to either **Item and resource** or **Item and category** on the **Production control parameters** page. 
+The **Production** tab on the **Inventory posting profiles** page controls how production orders will post to the general ledger. This is used when the **Ledger posting** field is set to either **Item and resource** or **Item and category** on the **Production control parameters** page. 
 
 For a picking list journal to post to the general ledger for a production order, the following conditions must be met:
 -   The **Post picking list in ledger** check box must be selected on the **Production control parameters** page. This setting can be overridden for a specific site on the **Production control parameters by site** page.
@@ -55,7 +54,7 @@ The value of raw materials that are in progress (WIP) is posted to the **Estimat
 
 The **Production** tab on the **Inventory posting profiles** page is used to control how production orders will post to the general ledger. This is used when the **Ledger posting** field is set to either **Item and resource** or **Item and category** on the **Production control parameters** page. The **Ledger-items** FastTab on the **Production groups** page can also be used to control posting for production orders when the field is set to **Production groups**.
 
-For a report as finished journal to post to the general ledger for a production order, the following conditions must be met:
+For a **Report as finished** journal to post to the general ledger for a production order, the following conditions must be met:
 -   The **Post report as finished in ledger** check box must be selected in the **Production control parameters** page. This setting can be overridden for a specific site on the **Production control parameters by site** page.
 -   The **Post physical inventory** check box must be selected on the **Item model group** page for the item selected on the purchase order line.
 -   The main accounts must be specified in the **Inventory posting profile** page for the following posting types:
