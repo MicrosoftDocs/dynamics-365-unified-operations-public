@@ -3,7 +3,7 @@
 
 title: Backflush costing
 description: This topic introduces the concept of backflush costing that is used for Lean manufacturing. 
-author: AndersGirke
+author: JennySong-SH
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 272063
 ms.assetid: 62a2a7da-ff79-49bf-a6e8-29460ba5252f
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: aevengir
+ms.author: yanansong
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 

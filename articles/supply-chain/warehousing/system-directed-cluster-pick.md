@@ -20,7 +20,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: perlynne
+ms.author: mirzaab
 ms.search.validFrom: 2019-12-31
 ms.dyn365.ops.version: 10.0.1
 

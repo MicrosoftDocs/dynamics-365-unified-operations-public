@@ -3,7 +3,7 @@
 
 title: Responding to vendor questions on Request for quotations
 description: Vendors that have questions related to an RFP can submit their questions and read the answers on **Vendor collaboration** page.
-author: Henrikan
+author: GalynaFedorova
 ms.date: 01/22/2020
 ms.topic: article
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: kamaybac
 # ms.custom: 
 ms.search.region: Global
 ms.search.industry: public sector
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2020-1-22
 ms.dyn365.ops.version: 10.0.9
 

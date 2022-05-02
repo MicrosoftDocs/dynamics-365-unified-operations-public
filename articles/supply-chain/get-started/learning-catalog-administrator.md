@@ -1,10 +1,10 @@
 ---
 title: Learning catalog for Dynamics 365 Supply Chain Management administrators
 description: Find all the training options for Supply Chain Management administrators.
-author: margoc
+author: kamaybac
 ms.topic: article
 ms.date: 07/23/2020
-ms.author: margoc
+ms.author: kamaybac
 
 ms.prod:
 ms.technology:
@@ -13,7 +13,7 @@ ms.technology:
 
 # ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: Application user
-ms.reviewer: margoc
+ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.1
