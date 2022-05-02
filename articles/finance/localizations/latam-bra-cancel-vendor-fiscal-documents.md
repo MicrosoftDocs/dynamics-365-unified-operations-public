@@ -46,9 +46,9 @@ You can cancel incorrect vendor fiscal documents that a legal entity generates a
 
 ## See also
 
-[Cancel a purchase complementary fiscal document](https://github.com/MicrosoftDocs/DynamicsAX2012-technet/blob/master/dynamicsax2012-technet/bra-cancel-a-purchase-complementary-fiscal-document.md)
+[Cancel a purchase complementary fiscal document](/dynamicsax-2012/appuser-itpro/bra-cancel-a-purchase-complementary-fiscal-document)
 
-[Cancel a customer fiscal document](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/bra-cancel-cus-fis-doc/articles/financials/localizations/latam-bra-cancel-customer-fiscal-documents.md)
+[Cancel a customer fiscal document](/dynamicsax-2012/appuser-itpro/bra-cancel-a-customer-fiscal-document)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
