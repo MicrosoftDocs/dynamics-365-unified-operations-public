@@ -20,7 +20,7 @@ ms.reviewer: kfend
 ms.custom: 273023
 ms.search.region: Belgium
 # ms.search.industry: 
-ms.author: v-oloski
+ms.author: anasyash
 ms.dyn365.ops.version: AX 7.0.1
 ms.search.validFrom: 2016-05-31
 
