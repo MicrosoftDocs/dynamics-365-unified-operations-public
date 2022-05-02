@@ -3,8 +3,8 @@
 
 title: Set up fixed asset locations and numbering (Russia)
 description: This topic explains how to set up locations and numbering for Russian fixed asset.
-author: ShylaThompson
-ms.date: 10/28/2018
+author: anasyash
+ms.date: 05/02/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -20,7 +20,7 @@ ms.reviewer: kfend
 # ms.custom: 
 ms.search.region: Russia
 ms.search.industry: 
-ms.author: roschlom
+ms.author: anasyash
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 
