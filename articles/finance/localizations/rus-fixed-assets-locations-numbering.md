@@ -41,7 +41,7 @@ You can use the **FA location** page to set up a fixed asset location and specif
 1. Select **Fixed assets (Russia)** \> **Setup** \> **Location** to open the **FA location** page.
 2. Select **New** to create a fixed asset location.
 3. In the **Location** field, enter a location code. In the **Name** field, enter a description for the location.
-4. If the fixed asset location is somewhere other than the company's head office, in the **Separate division ID** field, select a separate division. If you don't specify a separate division, the location of the fixed asset is the head office. If the selected division is independent, the **Independent** option is automatically set to **Yes** (**[Division setup](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/rus-set-up-division/articles/financials/localizations/rus-company-divisions.md)**). 
+4. If the fixed asset location is somewhere other than the company's head office, in the **Separate division ID** field, select a separate division. If you don't specify a separate division, the location of the fixed asset is the head office. If the selected division is independent, the **Independent** option is automatically set to **Yes** (**[Division setup](/dynamicsax-2012/appuser-itpro/rus-set-up-a-division-for-a-company-and-associate-it-with-a-vendor)**). 
 5. On the **Fixed asset posting profiles** FastTab, select **New** to create a line.
 7. In the **Groupings** field, select the grouping for the fixed asset posting profile:
 
