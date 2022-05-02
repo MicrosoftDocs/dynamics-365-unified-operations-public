@@ -34,7 +34,7 @@ The **Yearly tax communication** report contains annual tax information for Ital
 
 ## Prerequisites
 
-Set up Italian sales tax books by following the instructions in [Italian sales tax books](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/finance/localizations/emea-ita-fiscal-books.md#set-up-sales-tax-books).
+Set up Italian sales tax books by following the instructions in [Italian sales tax books](/dynamics365/finance/localizations/emea-ita-fiscal-books#set-up-sales-tax-books).
 
 ## Set up the Yearly tax communication report
 
@@ -57,7 +57,7 @@ For more information, see [Download Electronic reporting configurations from Lif
 ![Yearly tax communication setup page.](media/1_Yearly_tax_communication_setup.png)
 
 > [!NOTE]
-> To view the "Yearly VAT communication" form for the year 2020, and instructions for it, see [Model and instructions - VAT 2020](https://www.agenziaentrate.gov.it/portale/web/guest/iva-2020/modello-e-istruzioni-imprese).
+> To view the "Yearly VAT communication" form for the year 2020, and instructions for it, see [Model and instructions - VAT 2020](https://www.agenziaentrate.gov.it/portale/web/guest/iva-2020/modello-e-istruzioni).
 
 9. On the **Field setup** tab, create lines, and set the following fields on them.
 
@@ -139,7 +139,7 @@ In the **Format** column, you can specify a field format. In addition to **NU**a
     |----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Tax communication ID | The identification number of the **Yearly tax communication** report.                                                                                                                                                                                                                                                      |
     | Years                | The year of the tax communication. This field is automatically set to the previous year. For example, if you're creating the report in 2020, this field is set to **2019**.                                                                                                                                                |
-    | ATECOFIN Code        | The tax code that is associated with the classification of possible company activities. This field is filled in from the **Italian sales tax books** page. For more information, see [Italian sales tax books](./emea-ita-fiscal-books.md#set-up-sales-tax-books). |
+    | ATECOFIN Code        | The tax code that is associated with the classification of possible company activities. This field is filled in from the **Italian sales tax books** page. For more information, see [Italian sales tax books](/dynamics365/finance/localizations/emea-ita-fiscal-books#set-up-sales-tax-books). |
     | Exported             | A value that indicates whether the .ivc file has been exported. This field and the next two fields are automatically set when you select **Export and generate file**.                                                                                                                                                     |
     | Date of export       | The date when the .ivc file was exported.                                                                                                                                                                                                                                                                                  |
     | Export file name     | The name of the .ivc file that was exported.                                                                                                                                                                                                                                                                               |
