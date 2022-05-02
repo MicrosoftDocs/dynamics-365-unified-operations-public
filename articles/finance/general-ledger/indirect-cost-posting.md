@@ -22,15 +22,15 @@ ms.author: raprofit
 
 # Indirect cost posting
 
-Indirect costs are costs that are not directly related to a single activity in the production activity. Examples of indirect costs might include administrative costs such as salaries of employees, accounting department costs, and overhead costs such as rent, utilities, and machinery costs.
+Indirect costs are costs that aren't directly related to a single activity in the production activity. Examples of indirect costs might include administrative costs such as salaries of employees, accounting department costs, and overhead costs such as rent, utilities, and machinery costs.
 
 ## Calculating indirect costs
 
-Dynamics 365 Finance does not have an automated way to calculate the rate for indirect costs. You will need to determine your indirect costs and create indirect cost codes and maintain the rate for each indirect cost in the costing sheet. The exact process that you use to calculate indirect costs might vary slightly from company to company. 
+Dynamics 365 Finance doesn't have an automated way to calculate the rate for indirect costs. You'll need to determine your indirect costs and create indirect cost codes and maintain the rate for each indirect cost in the costing sheet. The exact process that you use to calculate indirect costs might vary slightly from company to company. 
 
 The basic process includes:
-1.  Create a list of indirect costs to recognize in production. This list might include rent, administrative expenses, accounting and legal fees. The list should not include raw material costs or labor costs that are recognized in production routes.
-2.  Sum all the indirect costs. You can choose to group similar types of indirect costs or keep them separated. Each indirect cost that are configured can have different main accounts for posting to the general ledger.
+1.  Create a list of indirect costs to recognize in production. This list might include rent, administrative expenses, accounting and legal fees. The list shouldn't include raw material costs or labor costs that are recognized in production routes.
+2.  Sum all the indirect costs. You can choose to group similar types of indirect costs or keep them separated. Each indirect cost that is configured can have different main accounts for posting to the general ledger.
 3.  Compare the indirect costs to a factor, which is also referred to as the absorption basis. The factor can be anything you choose. 
 A few common examples are: 
  - revenue 
@@ -51,7 +51,7 @@ Indirect cost rate = Total indirect cost expenses / Total factor
 
 ## Create cost groups for indirect costs
 
-You will need to create at least one cost group to be used for indirect costs. There is no limit to the number of cost groups. Consider how you calculate your costs and if there are different rates for different types of costs. For example, your organization manufactures food products. Some raw materials and finished goods are dry goods and have one indirect cost for warehousing. Other raw materials and finished goods are refrigerated, which have a higher indirect cost. In this example, you might want to create two cost groups. One for **Dry material overhead** and another for **Refrigerated material overhead**.
+You'll need to create at least one cost group to be used for indirect costs. There's no limit to the number of cost groups. Consider how you calculate your costs and if there are different rates for different types of costs. For example, your organization manufactures food products. Some raw materials and finished goods are dry goods and have one indirect cost for warehousing. Other raw materials and finished goods are refrigerated, which have a higher indirect cost. In this example, you might want to create two cost groups. One for **Dry material overhead** and another for **Refrigerated material overhead**.
 
 To create a cost group for indirect costs, follow these steps:
 1.  Go to **Production control &gt; Setup &gt; Routes &gt; Cost groups**.
@@ -63,7 +63,7 @@ To create a cost group for indirect costs, follow these steps:
 
 ## Configure the costing sheet for indirect costs
 
-After you have created one or more cost groups, you can configure your costing sheet with indirect costs and define your calculation. You may want to group indirect costs in the costing sheet. This can be done by creating an optional header in the costing sheet. You will need to also create at least one node for each cost group in the costing sheet. Under each cost group for indirect costs, you can add one more indirect cost calculations.
+After you've created one or more cost groups, you can configure your costing sheet with indirect costs and define your calculation. You may want to group indirect costs in the costing sheet. This can be done by creating an optional header in the costing sheet. You'll need to also create at least one node for each cost group in the costing sheet. For each cost group for indirect costs, you can add one more indirect cost calculation.
 
 ### Indirect cost node types
 
@@ -82,7 +82,7 @@ The absorption basis is defined by selecting the cost groups that are linked to 
 An **Output unit based** indirect cost is calculated by multiplying the amount is specified on the **Rate** FastTab by the **Subtype** selected. You can select the quantity, weight, or volume of the finished good to be the multiplier for the indirect cost. One example is to use the quantity to calculate $1.50 USD of machine depreciation for each quantity produced. Another example is to use the volume to calculate $2.00 of refrigeration costs for volume of space of the finished goods in your refrigeration units.
 
 **Input unit based**
-An **Input unit based** indirect cost is calculated by multiplying the amount of raw materials that are consumed in a production order by an amount. You can use the weight or volume of the inputs in the production order to calculate the total. You can limit the calculation to a subset of materials by selecting one or more cost groups on the **Absorption basis** FastTab. One example is to use the volume of inputs for a specific cost group linked to refrigerated products to add $1.00 USD to the production order.
+An **Input unit based** indirect cost is calculated by multiplying the number of raw materials that are consumed in a production order by an amount. You can use the weight or volume of the inputs in the production order to calculate the total. You can limit the calculation to a subset of materials by selecting one or more cost groups on the **Absorption basis** FastTab. One example is to use the volume of inputs for a specific cost group linked to refrigerated products to add $1.00 USD to the production order.
 
 ### Create a total node in the costing sheet for indirect costs
 To create a total node in the costing sheet for indirect costs:
