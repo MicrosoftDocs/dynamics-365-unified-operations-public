@@ -4,7 +4,7 @@
 title: Yearly tax communication
 description: This topic provides information about the yearly tax communication report in Italy. 
 author: anasyash
-ms.date: 11/03/2020
+ms.date: 05/02/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -34,11 +34,11 @@ The **Yearly tax communication** report contains annual tax information for Ital
 
 ## Prerequisites
 
-Set up Italian sales tax books by following the instructions in [Italian sales tax books](/dynamics365/finance/localizations/emea-ita-fiscal-books#set-up-sales-tax-books).
+Set up Italian sales tax books by following the instructions in [Italian sales tax books](emea-ita-fiscal-books.md#set-up-sales-tax-books).
 
 ## Set up the Yearly tax communication report
 
-1. In Microsoft Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**.
+1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**.
 2. On the **Registration numbers** FastTab, in the **Tax registration number** field, enter the tax registration number of your company.
 3. On the **Tax registration** FastTab, in the **Fiscal code** field, enter the fiscal code of your company.
 4. In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2), in the Shared asset library, download the latest versions of the Electronic reporting (ER) configurations for the following value-added tax (VAT) declaration formats:
