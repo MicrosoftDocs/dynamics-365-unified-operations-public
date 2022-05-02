@@ -4,7 +4,7 @@
 title: Sales tax report for Sweden
 description: This topic explains how to set up and generate the sales tax report for legal entities in Sweden.
 author: anasyash
-ms.date: 03/24/2022
+ms.date: 05/02/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -46,7 +46,7 @@ To generate a sales tax report in the correct format for the appropriate tax aut
 
 ## Set up sales tax reporting codes for VAT reporting
 
-Set up sales tax reporting codes by following the instructions in [Set up sales tax reporting codes](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/SE-VAT-declaration/articles/finance/general-ledger/tasks/set-up-sales-tax-reporting-codes.md). The following table provides an example of sales tax reporting codes for Sweden.
+Set up sales tax reporting codes by following the instructions in [Set up sales tax reporting codes](../general-ledger/tasks/set-up-sales-tax-reporting-codes.md). The following table provides an example of sales tax reporting codes for Sweden.
 
 | **Code and corresponding box in the VAT declaration** | **Description**                                                                                                                                                                                    |
 |-------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -84,27 +84,27 @@ Set up sales tax reporting codes by following the instructions in [Set up sales 
 
 Set up sales tax codes by following the instructions in the topics, [Sales tax codes for VAT reporting](emea-vat-reporting.md#sales-tax-codes-for-vat-reporting) and [Sales tax overview](../general-ledger/indirect-taxes-overview.md).
 
-## Generate a sales tax payment and print the Swedish sales tax report
+## <a name="generate"></a> Generate a sales tax payment and print the Swedish sales tax report
 
 At the end of the VAT reporting period, calculate the sales tax amounts for the settlement period.
 
 1. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Settle and post sales tax**.
 2. In the **Report sales tax for settlement period** dialog box, set the following fields.
 
-| **Field**                 | **Description**                                                                                                                                                                                                                                                                         |
-|---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Settlement period         | Select the applicable reporting period.                                                                                                                                                                                                                                                 |
-| From date                 | Enter the first date of the sales tax settlement period that sales tax should be calculated for. This value corresponds to the date in the **From** field on the **Sales tax settlement periods** page.                                                                                 |
-| Transaction date          | Enter the date when the sales tax report is calculated. The default value is the current date. The sales tax payment is calculated for all transactions that were posted during the settlement period.                                                                                  |
-| Sales tax payment version | Select the type of sales tax settlement. If this sales tax settlement is the first sales tax settlement for the period, select **Original**. If a sales tax settlement has already been generated, select **Latest corrections**. For more information, see [Create a sales tax payment](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/finance/general-ledger/tasks/create-sales-tax-payment.md). |
+    | **Field**                 | **Description**                                                                                                                                                                                                                                                                         |
+    |---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | Settlement period         | Select the applicable reporting period.                                                                                                                                                                                                                                                 |
+    | From date                 | Enter the first date of the sales tax settlement period that sales tax should be calculated for. This value corresponds to the date in the **From** field on the **Sales tax settlement periods** page.                                                                                 |
+    | Transaction date          | Enter the date when the sales tax report is calculated. The default value is the current date. The sales tax payment is calculated for all transactions that were posted during the settlement period.                                                                                  |
+    | Sales tax payment version | Select the type of sales tax settlement. If this sales tax settlement is the first sales tax settlement for the period, select **Original**. If a sales tax settlement has already been generated, select **Latest corrections**. For more information, see [Create a sales tax payment](../general-ledger/tasks/create-sales-tax-payment.md). |
 
 3. Select **OK**. Fill in the following fields on the dialog **Swedish sales tax report**.
 
-| **Field**                       | **Description**                                                                                                                                                                                                                                                 |
-|---------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Tax currency                    | Select the currency that determines which transactions are included on the report. The report will include both transactions that are generated by using the tax currency and transactions that are generated by using the tax codes that use the tax currency. |
-| Reporting currency              | Select the foreign currency that the report should be generated in.                                                                                                                                                                                             |
-| Currency rate on reporting date | Set this option to **Yes** to specify that that the currency rate on the reporting date should be used for all transactions on the report.                                                                                                                      |
+    | **Field**                       | **Description**                                                                                                                                                                                                                                                 |
+    |---------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | Tax currency                    | Select the currency that determines which transactions are included on the report. The report will include both transactions that are generated by using the tax currency and transactions that are generated by using the tax codes that use the tax currency. |
+    | Reporting currency              | Select the foreign currency that the report should be generated in.                                                                                                                                                                                             |
+    | Currency rate on reporting date | Set this option to **Yes** to specify that that the currency rate on the reporting date should be used for all transactions on the report.                                                                                                                      |
 
 4. Select **OK** to generate the sales tax payment.
 
@@ -119,7 +119,7 @@ At the end of the VAT reporting period, calculate the sales tax amounts for the 
 You can also generate a Swedish sales tax report by using the **Report sales tax for settlement period** inquiry.
 
 1. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**.
-2. Set the **Settlement period**, **From date**, **Tax currency**, and **Reporting currency** fields as described in the [Generate a sales tax payment and print the Swedish sales tax report](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/SE-VAT-declaration/articles/finance/localizations/emea-swe-Sales-tax-payment-report-for-Sweden.md#generate-a-sales-tax-payment-and-print-the-swedish-sales-tax-report) section earlier in this topic.
+2. Set the **Settlement period**, **From date**, **Tax currency**, and **Reporting currency** fields as described in the [Generate a sales tax payment and print the Swedish sales tax report](#generate) section earlier in this topic.
 3. In **Sales tax payment version** field, select one of the following options:
 
     - **Original** – Generate a report for sales tax transactions of the first posted settlement calculation for the period.
@@ -127,7 +127,7 @@ You can also generate a Swedish sales tax report by using the **Report sales tax
     - **Total list** – Generate a report for all sales transactions for the period. These transactions include original and corrected transactions.
 
 4. Select **OK**.
-5. Set the **Tax currency**, **Reporting currency**, and **Currency rate on reporting date** fields as described in the [Generate a sales tax payment and print the Swedish sales tax report](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/SE-VAT-declaration/articles/finance/localizations/emea-swe-Sales-tax-payment-report-for-Sweden.md#generate-a-sales-tax-payment-and-print-the-swedish-sales-tax-report) section.
+5. Set the **Tax currency**, **Reporting currency**, and **Currency rate on reporting date** fields as described in the section, [Generate a sales tax payment and print the Swedish sales tax report](#generate).
 
 ## Example
 
@@ -135,57 +135,57 @@ The following example shows how you can set up sales tax codes and sales tax rep
 
 1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**, and set up the following sales tax codes.
 
-| **Sales tax code** | **Percentage** | **Description**                                                                        |
-|--------------------|----------------|----------------------------------------------------------------------------------------|
-| SE25               | 25             | Domestic sales and purchases at a rate of 25 percent                                   |
-| SE12               | 12             | Domestic sales and purchases at a rate of 12 percent                                   |
-| SE6                | 6              | Domestic sales and purchases at a rate of 6 percent                                    |
-| SEEU25             | 25             | EU purchases at a rate of 25 percent where the **Use tax** option is set to **Yes**.   |
-| SEEU12             | 12             | EU purchases at a rate of 12 percent where the **Use tax** option is set to **Yes**.   |
-| SEEU6              | 6              | EU purchases at a rate of 6 percent where the **Use tax** option is set to **Yes**.    |
-| SEImp25            | 25             | Import at a rate of 25 percent where the **Use tax** option is set to **Yes**.         |
-| SEImp12            | 12             | Import at a rate of 12 percent where the **Use tax** option is set to **Yes**.         |
-| SEImp6             | 6              | Import at a rate of 6 percent where the **Use tax** option is set to **Yes**.          |
-| SERC25             | 25             | Reverse charge at a rate of 25 percent where the **Use tax** option is set to **Yes**. |
-| SERC12             | 12             | Reverse charge at a rate of 12 percent where the **Use tax** option is set to **Yes**. |
-| SERC6              | 6              | Reverse charge at a rate of 6 percent where the **Use tax** option is set to **Yes**.  |
-| SEEUS              | 0              | EU sales where the **Exempt** option is set to **Yes**.                                |
-| SEThird            | 0              | Export sales where the **Exempt** option is set to **Yes**.                            |
+    | **Sales tax code** | **Percentage** | **Description**                                                                        |
+    |--------------------|----------------|----------------------------------------------------------------------------------------|
+    | SE25               | 25             | Domestic sales and purchases at a rate of 25 percent                                   |
+    | SE12               | 12             | Domestic sales and purchases at a rate of 12 percent                                   |
+    | SE6                | 6              | Domestic sales and purchases at a rate of 6 percent                                    |
+    | SEEU25             | 25             | EU purchases at a rate of 25 percent where the **Use tax** option is set to **Yes**.   |
+    | SEEU12             | 12             | EU purchases at a rate of 12 percent where the **Use tax** option is set to **Yes**.   |
+    | SEEU6              | 6              | EU purchases at a rate of 6 percent where the **Use tax** option is set to **Yes**.    |
+    | SEImp25            | 25             | Import at a rate of 25 percent where the **Use tax** option is set to **Yes**.         |
+    | SEImp12            | 12             | Import at a rate of 12 percent where the **Use tax** option is set to **Yes**.         |
+    | SEImp6             | 6              | Import at a rate of 6 percent where the **Use tax** option is set to **Yes**.          |
+    | SERC25             | 25             | Reverse charge at a rate of 25 percent where the **Use tax** option is set to **Yes**. |
+    | SERC12             | 12             | Reverse charge at a rate of 12 percent where the **Use tax** option is set to **Yes**. |
+    | SERC6              | 6              | Reverse charge at a rate of 6 percent where the **Use tax** option is set to **Yes**.  |
+    | SEEUS              | 0              | EU sales where the **Exempt** option is set to **Yes**.                                |
+    | SEThird            | 0              | Export sales where the **Exempt** option is set to **Yes**.                            |
 
 2. On the **Sales tax codes** page, on the **Report setup** FastTab, assign reporting codes to sales tax codes.
 
    The following table shows how to assign the sales tax reporting codes to sales tax codes.
 
-| **Sales tax code** | **Taxable sales** | **Tax-free sale** | **Sales tax payable** | **Taxable purchases** | **Sales tax receivable** | **Taxable import** | **Use tax** | **Offset use tax** |
-|--------------------|-------------------|-------------------|-----------------------|-----------------------|--------------------------|--------------------|-------------|--------------------|
-| SE25               | 05                |                   | 10                    |                       | 48                       |                    |             |                    |
-| SE12               | 05                |                   | 11                    |                       | 48                       |                    |             |                    |
-| SE6                | 05                |                   | 12                    |                       | 48                       |                    |             |                    |
-| SEEU25             |                   |                   |                       |                       |                          | 20                 | 48          | 30                 |
-| SEEU12             |                   |                   |                       |                       |                          | 20                 | 48          | 31                 |
-| SEEU6              |                   |                   |                       |                       |                          | 20                 | 48          | 32                 |
-| SEImp25            |                   |                   |                       |                       |                          | 50                 | 48          | 60                 |
-| SEImp12            |                   |                   |                       |                       |                          | 50                 | 48          | 61                 |
-| SEImp6             |                   |                   |                       |                       |                          | 50                 | 48          | 62                 |
-| SERC25             |                   |                   |                       |                       |                          | 23                 | 48          | 30                 |
-| SERC12             |                   |                   |                       |                       |                          | 23                 | 48          | 31                 |
-| SERC6              |                   |                   |                       |                       |                          | 23                 | 48          | 32                 |
-| SEEUS              |                   | 35                |                       |                       |                          |                    |             |                    |
-| SEThird            |                   | 36                |                       |                       |                          |                    |             |                    |
+    | **Sales tax code** | **Taxable sales** | **Tax-free sale** | **Sales tax payable** | **Taxable purchases** | **Sales tax receivable** | **Taxable import** | **Use tax** | **Offset use tax** |
+    |--------------------|-------------------|-------------------|-----------------------|-----------------------|--------------------------|--------------------|-------------|--------------------|
+    | SE25               | 05                |                   | 10                    |                       | 48                       |                    |             |                    |
+    | SE12               | 05                |                   | 11                    |                       | 48                       |                    |             |                    |
+    | SE6                | 05                |                   | 12                    |                       | 48                       |                    |             |                    |
+    | SEEU25             |                   |                   |                       |                       |                          | 20                 | 48          | 30                 |
+    | SEEU12             |                   |                   |                       |                       |                          | 20                 | 48          | 31                 |
+    | SEEU6              |                   |                   |                       |                       |                          | 20                 | 48          | 32                 |
+    | SEImp25            |                   |                   |                       |                       |                          | 50                 | 48          | 60                 |
+    | SEImp12            |                   |                   |                       |                       |                          | 50                 | 48          | 61                 |
+    | SEImp6             |                   |                   |                       |                       |                          | 50                 | 48          | 62                 |
+    | SERC25             |                   |                   |                       |                       |                          | 23                 | 48          | 30                 |
+    | SERC12             |                   |                   |                       |                       |                          | 23                 | 48          | 31                 |
+    | SERC6              |                   |                   |                       |                       |                          | 23                 | 48          | 32                 |
+    | SEEUS              |                   | 35                |                       |                       |                          |                    |             |                    |
+    | SEThird            |                   | 36                |                       |                       |                          |                    |             |                    |
 
    > [!NOTE]
    > The preceding configuration is just an example and depends on the structure of the sales tax codes that are used. If you want values to be calculated and transferred to the sales tax report, for each tax code that is used in the sales tax payment process, you must set a relevant sales tax reporting code in one or more fields on the **Report setup** tab.
    
 3. Post the following transactions. For example for Customer invoices go to **Accounts receivable** \> **Invoices** \> **All free text invoices**, for Vendor invoices go to **Accounts payable** \> **Invoices** \> **Invoice journal**.
 
-| **Date**        | **Transaction type**            | **Amount net** | **VAT amount** | **Sales tax code** | **Expected tax base – reporting code** | **Expected tax amount – reporting code** |
-|-----------------|---------------------------------|----------------|----------------|--------------------|----------------------------------------|------------------------------------------|
-| January 1, 2020 | Customer invoice                | 100            | 25             | SE25               | 5                                      | 10                                       |
-| January 1, 2020 | Vendor invoice (EU)             | 100            | 12             | SEEU12             | 20                                     | 31 – Tax payable 48 – Tax deduction      |
-| January 1, 2020 | Vendor invoice (import)         | 100            | 6              | SEImp6             | 50                                     | 62 – Tax payable 48 – Tax deduction      |
-| January 1, 2020 | Customer invoice (EU)           | 100            | 0              | SEEUS              | 35                                     | Not applicable                           |
-| January 1, 2020 | Customer invoice (export)       | 100            | 0              | SEThird            | 36                                     | Not applicable                           |
-| January 1, 2020 | Vendor invoice (reverse charge) | 100            | 25             | SERC25             | 23                                     | 30 – Tax payable 48 – Tax deduction      |
+    | **Date**        | **Transaction type**            | **Amount net** | **VAT amount** | **Sales tax code** | **Expected tax base – reporting code** | **Expected tax amount – reporting code** |
+    |-----------------|---------------------------------|----------------|----------------|--------------------|----------------------------------------|------------------------------------------|
+    | January 1, 2020 | Customer invoice                | 100            | 25             | SE25               | 5                                      | 10                                       |
+    | January 1, 2020 | Vendor invoice (EU)             | 100            | 12             | SEEU12             | 20                                     | 31 – Tax payable 48 – Tax deduction      |
+    | January 1, 2020 | Vendor invoice (import)         | 100            | 6              | SEImp6             | 50                                     | 62 – Tax payable 48 – Tax deduction      |
+    | January 1, 2020 | Customer invoice (EU)           | 100            | 0              | SEEUS              | 35                                     | Not applicable                           |
+    | January 1, 2020 | Customer invoice (export)       | 100            | 0              | SEThird            | 36                                     | Not applicable                           |
+    | January 1, 2020 | Vendor invoice (reverse charge) | 100            | 25             | SERC25             | 23                                     | 30 – Tax payable 48 – Tax deduction      |
 
 4. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Settle and post sales tax**. In the **Report sales tax for settlement period** dialog box in the **Sales tax payment version** field, select **Original**.
 5. Print the report, and review the data.
@@ -194,9 +194,9 @@ The following example shows how you can set up sales tax codes and sales tax rep
 
 6. Post the new transaction. For example, go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
 
-| **Date**        | **Transaction type**   | **Amount net** | **VAT amount** | **Sales tax code** | **Expected tax base – reporting code** | **Expected tax amount – reporting code** |
-|-----------------|------------------------|----------------|----------------|--------------------|----------------------------------------|------------------------------------------|
-| January 1, 2020 | Customer invoice (dom) | 100            | 6              | SE6                | 5                                      | 12                                       |
+    | **Date**        | **Transaction type**   | **Amount net** | **VAT amount** | **Sales tax code** | **Expected tax base – reporting code** | **Expected tax amount – reporting code** |
+    |-----------------|------------------------|----------------|----------------|--------------------|----------------------------------------|------------------------------------------|
+    | January 1, 2020 | Customer invoice (dom) | 100            | 6              | SE6                | 5                                      | 12                                       |
 
 7. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Settle and post sales tax**. In the **Report sales tax for settlement period** dialog box in the **Sales tax payment version** field, select **Latest corrections**.
 8. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**. In the **Report sales tax for settlement period** dialog box in the **Sales tax payment version** field, select **Corrections**. The following illustration shows the result.

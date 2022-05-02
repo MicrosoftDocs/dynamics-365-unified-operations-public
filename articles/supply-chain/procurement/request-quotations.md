@@ -3,7 +3,7 @@
 
 title: Requests for quotation (RFQs) overview
 description: This topic provides an overview of requests for quotation (RFQs). Organizations issue RFQs when they want to receive competitive offers from several vendors for the items or services that they must purchase.
-author: Henrikan
+author: GalynaFedorova
 ms.date: 10/05/2020
 ms.topic: overview
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: ["2154", "intro-internal"]
 ms.assetid: 3936996e-d943-46ca-8385-84c042990f1d
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

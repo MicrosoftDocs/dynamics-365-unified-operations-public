@@ -3,7 +3,7 @@
 
 title: Work split
 description: This topic provides information about work split functionality. This functionality lets you split large work orders into several smaller work orders that you can then assign to multiple warehouse workers. In this way, the same work can be picked simultaneously by several warehouse workers.
-author: mirzaab
+author: Mirzaab
 ms.date: 10/15/2020
 ms.topic: article
 ms.prod: 

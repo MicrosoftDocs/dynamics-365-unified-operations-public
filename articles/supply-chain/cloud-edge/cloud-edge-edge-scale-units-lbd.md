@@ -1,7 +1,7 @@
 ---
 title: Deploy edge scale units on custom hardware using LBD
 description: This topic explains how to provision on-premises edge scale units by using custom hardware and deployment that is based on local business data (LBD). 
-author: cabeln
+author: Mirzaab
 ms.date: 01/24/2022
 ms.topic: article
 ms.prod: dynamics-365 
@@ -10,7 +10,7 @@ ms.service:
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: cabeln
+ms.author: mirzaab
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.21
 ---
