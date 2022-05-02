@@ -1,7 +1,7 @@
 ---
 title: Release to warehouse
 description: This topic provides details about the release to warehouse process. It describes entities that are created when you release an order to the warehouse and options that you can use to initiate the process.
-author: mirzaab
+author: Mirzaab
 ms.date: 8/13/2021
 ms.topic: article
 ms.search.form: WHSReleaseToWarehouse, WHSReleaseToWarehouseSalesOrder, WHSReleaseToWarehouseTransferOrder, WHSLoadPlanningWorkbench, WHSWaveTemplateTable, WHSWorkTemplateTable, WHSLocDirTable 

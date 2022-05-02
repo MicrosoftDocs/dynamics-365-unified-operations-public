@@ -3,7 +3,7 @@
 
 title: Plan loads using hub consolidation overview
 description: This article describes the feature for consolidating shipments in a hub when you deliver goods from different warehouses to the same customer, or when you receive goods from multiple vendors in the same warehouse.
-author: Henrikan
+author: Weijiesa
 ms.date: 07/25/2019
 ms.topic: overview
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: ["92273", "intro-internal"]
 ms.assetid: d27b0926-a534-4caf-a2a3-acbc7c440bca
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: henrikan
+ms.author: weijiesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

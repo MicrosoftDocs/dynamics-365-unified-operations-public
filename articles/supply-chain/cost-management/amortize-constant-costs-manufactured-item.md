@@ -3,7 +3,7 @@
 
 title: Amortize constant costs for a manufactured item
 description: A manufactured item’s constant costs reflect the operation setup times and the components that have a constant quantity or a constant scrap amount. 
-author: AndersGirke
+author: JennySong-SH
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 274503
 ms.assetid: 535ab25d-a031-4e8c-84ec-478f2987a1ad
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: aevengir
+ms.author: yanansong
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
 

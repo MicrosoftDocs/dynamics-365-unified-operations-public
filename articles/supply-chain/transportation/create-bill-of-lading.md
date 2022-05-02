@@ -3,7 +3,7 @@
 
 title: Create a bill of lading
 description: This topic describes how to create a bill of lading when using warehouse management processes.  
-author: Henrikan
+author: Weijiesa
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 193583
 ms.assetid: 1ad0c1cb-4346-4042-a59b-923115fac03e
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: henrikan
+ms.author: weijiesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

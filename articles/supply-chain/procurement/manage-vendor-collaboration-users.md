@@ -3,7 +3,7 @@
 
 title: Manage vendor collaboration users
 description: This topic describes how you can request the provisioning of new vendor collaboration users, and how to add new vendor collaboration contacts. 
-author: Henrikan
+author: GalynaFedorova
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -22,7 +22,7 @@ ms.assetid: edc19ad0-3565-4d47-98ac-dda6098f63ac
 ms.search.region: Global
 
 # ms.search.industry: 
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 

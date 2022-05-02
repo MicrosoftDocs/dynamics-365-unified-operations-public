@@ -1,14 +1,14 @@
 ---
 title: Safety stock fulfillment for items
 description: This topic discusses safety stock fulfillment and how to set up safety stock quantity for items. 
-author: thethehelga
+author: t-benebo
 ms.date: 8/23/2021
 ms.topic: article
 ms.search.form: ReqSafetyKey, ReqItemTableSetup, ReqItemJournalName, ReqItemTable, EcoResProductDetailsExtended, ReqSafetyKeyDefaultDataWizard
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: v-oldolg
+ms.author: benebotg
 ms.dyn365.ops.version: 7.3 
 ms.search.validFrom: 2017-12-31
 ---

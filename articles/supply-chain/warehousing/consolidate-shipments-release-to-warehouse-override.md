@@ -3,7 +3,7 @@
 
 title: Consolidate shipments when the shipment consolidation policy is overridden
 description: This topic presents a scenario where one or more sales lines must be manually released to the warehouse from the Release to warehouse page, and the system-defined shipment consolidation policy must be overridden before the release.
-author: GarmMSFT
+author: Mirzaab
 ms.date: 05/12/2020
 ms.topic: article
 ms.prod:
