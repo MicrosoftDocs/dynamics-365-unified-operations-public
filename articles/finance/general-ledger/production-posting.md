@@ -28,7 +28,7 @@ Production posting activities follow production processes that are described in 
 
 ## Material consumption
 
-Materials are registered as consumed during production when the production picking list journal is posted. This will generate issue transactions that deduct the on-hand inventory. In the **Production parameters**, you can specify whether the value of raw materials that are in progress (work in process \[WIP\]) should be posted in the ledger.
+Materials are registered as consumed during production when the production picking list journal is posted. This creates transactions that deduct the on-hand inventory. In the **Production parameters**, you can specify whether the value of raw materials that are in progress (work in process \[WIP\]) should be posted in the ledger.
 
 The value of raw materials that are in progress (WIP) is posted to the **Estimated cost of materials consumed** and **Estimated cost of materials consumed, WIP** accounts. The picking list process for the production order is a physical update to the inventory transactions related to the production order. When a production order is registered as ended: the physical transactions are reversed, and the related inventory transactions are financially updated. When the ending journal is posted, the **Cost of materials consumed** and **Cost of materials consumed, WIP** posting types are used.
 
@@ -49,7 +49,7 @@ There are three possible ways to post time consumption depending on the option s
 
 ## Reporting finished goods and error quantities
 
-When a production order is reported as finished, the quantity of the finished goods that have been completed is updated in inventory through the **Report as finished** journal. If you're using WIP accounting, a ledger journal is posted to reduce the WIP accounts and increase the inventory of the finished goods. The journal uses the standard cost that is defined for the product. If the **Use estimated cost price** option is selected on the **Production control parameters** page, then the estimated cost from the production order will be used.
+When a production order is **Reported as finished**, the finished goods that have been completed is updated in inventory through the **Report as finished** journal. If you're using WIP accounting, a ledger journal is posted to reduce the WIP accounts and increase the inventory of the finished goods. The journal uses the standard cost that is defined for the product. If the **Use estimated cost price** option is selected on the **Production control parameters** page, then the estimated cost from the production order will be used.
 
 The value of raw materials that are in progress (WIP) is posted to the **Estimated manufactured cost** and **Estimated manufactured cost, WIP** accounts. The **Report as finished** process for the production order is a physical update to the inventory transactions related to the production order. When a production order is ended, the physical transactions are reversed, and the related inventory transactions are financially updated. When the ending journal is posted, the **Manufactured cost** and **Manufactured cost, WIP** posting types are used.
 
@@ -105,7 +105,7 @@ When you select the **Item and category** option in the **Ledger posting** field
 
 ### Production group
 
-When you select the **Production groups** option in the **Ledger posting** field, the posting accounts come from the **Production groups** page. **Production groups** are typically used when there are more than one production line that run similar products or has similar equipment. You can use this option to compare the costs between two different production groups.  
+When you select the **Production groups** option in the **Ledger posting** field, the posting accounts come from the **Production groups** page. **Production groups** are typically used when there are more than one production line that runs similar products or has similar equipment. You can use this option to compare the costs between two different production groups.  
   
 > [!NOTE]
 > If the standard method for calculating the cost of the finished item is used, the final transactions will reflect this. If actual costs and the costs that are calculated by using the standard method differ, the differences are posted to the account that shows profit or loss.
@@ -119,7 +119,7 @@ For a **Route card** or **Job card journal** to post to the general ledger for a
     -   Estimated manufacturing cost absorbed
     -   Estimated cost of manufacturing consumed, WIP
 
-The following diagram shows the relationship of the route group to the calculation of the total cost for each operation (route line) in a given route. Each route line has one route group. The route group controls parameters for setup time, run time and quantity. The **Cost category** tab has three options for the **Setup**, **Run** and **Quantity** that are enabled based on the route groups setting. The **Timings** FastTab has three fields that are enabled and costed based on the route group.
+The following diagram shows the relationship of the route group to the calculation of the total cost for each operation (route line) in a given route. Each route line has one route group. The route group controls parameters for setup time, run time and quantity. The **Cost category** tab has three options for the **Setup**, **Run** and **Quantity** that are enabled based on the route groups setting. The **Timings** FastTab has three fields that are based on the route group.
 
 The formula that is used is based on whether the option is enabled in the route group. The cost from the selected cost category is multiplied by the quantity that is entered in the timings to calculate the total cost.
 
@@ -129,7 +129,7 @@ The formula that is used is based on whether the option is enabled in the route 
 
 The following table shows examples of the default posting types with sample main accounts and descriptions. 
  - The **Debit/Credit** column indicates if the transaction typically Debit or Credits or in some cases can post either. 
- - The **Clearing account** column indicates of the posting type is a clearing account. The amount posted in this account is automatically reversed when a later transaction is posted. 
+ - The **Clearing account** column indicates if the posting type is a clearing account. The amount posted in this account is automatically reversed when a later transaction is posted. 
  - The **P/F** column indicates **P** for physical posting and **F** for financial posting. 
  - The **Follow** column indicates if the main account for a specific posting type is typically the same as another posting type. The value in the column indicates the posting type that is typically followed.
 
