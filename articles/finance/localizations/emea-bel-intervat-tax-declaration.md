@@ -112,7 +112,7 @@ Examples of sales tax reporting code are provided in the [Set up sales tax repor
     -   In the **Tax exempt number** field, enter the tax-exempt number of the counterparty.
     -   In the **Company name** field, enter the name of the counterparty.
 
-For more information about how to set up the VAT statement, see [VAT reporting for Europe](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/finance/localizations/emea-vat-reporting.md).
+For more information about how to set up the VAT statement, see [VAT reporting for Europe](/dynamics365/finance/localizations/emea-vat-reporting).
 
 ## Settings
 
@@ -124,7 +124,7 @@ Create lines on the **INTERVAT setup** page (**Tax \> Setup \> Sales tax \> INTE
 
 ### Set up sales tax reporting codes
 
-For information about how to set up sales tax reporting codes, see [Set up sales tax reporting codes](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/finance/general-ledger/tasks/set-up-sales-tax-reporting-codes.md).
+For information about how to set up sales tax reporting codes, see [Set up sales tax reporting codes](/dynamics365/finance/general-ledger/tasks/set-up-sales-tax-reporting-codes).
 
 If users are allowed to manually correct a reporting code, select the **Tax corrections** check box. The following table provides an example of sales tax reporting codes for Belgium.
 
@@ -805,7 +805,7 @@ Notice that the amount in **62** code equals **200**.
     
 ## Reconciliation reports for Belgium
 
-For information about reconciliation reports for Belgium, see [Reconciliation reports for Belgium](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/finance/localizations/emea-bel-reconciliation-reports.md).
+For information about reconciliation reports for Belgium, see [Reconciliation reports for Belgium](/dynamics365/finance/localizations/emea-bel-reconciliation-reports).
 
 
 
