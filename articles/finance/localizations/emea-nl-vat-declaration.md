@@ -37,7 +37,7 @@ This topic explains how to set up and generate the value-added tax (VAT) declara
 
 ## Set up sales tax reporting codes for VAT reporting
 
-Set up sales tax reporting codes by following the instructions in [Set up sales tax reporting codes](../general-ledger/tasks/set-up-sales-tax-reporting-.md). The following table provides an example of sales tax reporting codes for the Netherlands.
+Set up sales tax reporting codes by following the instructions in [Set up sales tax reporting codes](../general-ledger/tasks/set-up-sales-tax-reporting-codes.md). The following table provides an example of sales tax reporting codes for the Netherlands.
 
 | **Sales tax reporting code** | **Description**                                                                                                                                                                                                 | **Corresponding box in the declaration** | **Element in XML**                                           |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------|--------------------------------------------------------------|
