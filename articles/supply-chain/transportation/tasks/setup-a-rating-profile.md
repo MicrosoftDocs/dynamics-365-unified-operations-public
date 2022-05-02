@@ -3,7 +3,7 @@
  
 title: Rating profiles
 description: This topic describes how to set up data for rating profiles.
-author: Henrikan
+author: Weijiesa
 ms.date: 10/30/2020
 ms.topic: business-process 
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: kamaybac
 # ms.custom: 
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: henrikan
+ms.author: weijiesa
 ms.search.validFrom: 2020-10-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---

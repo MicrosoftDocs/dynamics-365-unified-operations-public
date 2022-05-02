@@ -3,7 +3,7 @@
 
 title: Moving average fallback cost sequence
 description: This topic provides information about fallback cost sequences for moving average calculations in Microsoft Dynamics 365 Supply Chain Management.
-author: AndersGirke
+author: JennySong-SH
 ms.date: 03/25/2020
 ms.topic: article
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: kamaybac
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: aevengir
+ms.author: yanansong
 ms.search.validFrom: 2020-03-25
 ms.dyn365.ops.version: 10.0.11
 ---

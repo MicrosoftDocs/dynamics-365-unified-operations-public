@@ -19,7 +19,7 @@ ms.reviewer: kamaybac
 ms.custom: 269384
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: Mirzaab
+ms.author: mirzaab
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
 

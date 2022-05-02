@@ -4,7 +4,7 @@
 title: Evaluate the initial customer payment prediction model
 description: This topic describes the steps that you can take to understand the customer payment prediction model and evaluate its effectiveness. 
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 05/02/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
@@ -98,6 +98,6 @@ After you understand the results of your first model better, you might want to i
 
 ## For more information
 
-For more information about how to evaluate prediction models, [Results of machine learning models](/confusion-matrix.md)
+For more information about how to evaluate prediction models, [Results of machine learning models](confusion-matrix.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

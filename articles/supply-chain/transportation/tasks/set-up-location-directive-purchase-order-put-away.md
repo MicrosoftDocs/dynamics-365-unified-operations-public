@@ -3,7 +3,7 @@
  
 title: Set up a location directive for purchase order put-away
 description: This topic explains how to set up a simple location directive. 
-author: Henrikan
+author: Weijiesa
 ms.date: 08/08/2019
 ms.topic: business-process 
 ms.prod:  
@@ -19,7 +19,7 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: henrikan
+ms.author: weijiesa
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
