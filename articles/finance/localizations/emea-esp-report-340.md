@@ -144,8 +144,8 @@ For more information, see [Download Electronic reporting configurations from Lif
 > [!NOTE]
 > For codes that have a negative tax percentage, the **Allow negative sales tax percentage** option on the **Calculation** FastTab must be set to **Yes**.
 
-2.  Set up sales tax. For instructions, see [Sales tax overview](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/finance/general-ledger/indirect-taxes-overview.md).
-3.  Set up intra-community VAT for EU purchases. For instructions, see [Intra-community VAT for Spain](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/finance/localizations/emea-esp-intra-community-vat.md).
+2.  Set up sales tax. For instructions, see [Sales tax overview](/dynamics365/finance/general-ledger/indirect-taxes-overview).
+3.  Set up intra-community VAT for EU purchases. For instructions, see [Intra-community VAT for Spain](/dynamics365/finance/localizations/emea-esp-intra-community-vat).
 
 4.  Post the following transactions.
 
