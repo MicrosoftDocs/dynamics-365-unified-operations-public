@@ -224,8 +224,11 @@ This is only possible if you lower a user's security role in the project to *Pro
 ### Are cloud-hosted environments supported with Azure Bastion?
 These environments have not been tested, nor are they supported with Azure Bastion.  
 
-### Environment is in a failed state and the error message is "Updated AAD Tenant is missing reply URL configuration"
-This message indicates that a Tier 1/customer-managed environment is configured with an Azure AD tenant that is different than the tenant used at the time of deployment. (Perhaps an update was done using the Admin user provisioning tool.) The updated tenant currently being used is missing the reply URL configuration required for successful login into the environment. The missing configuration causes the error. You should delete the environment and redeploy with a user from the tenant that the environment will be used with.
+### Environment is in a failed state with error message "Updated AAD Tenant is missing reply URL configuration" and environment URL points to this link:
+This message indicates that a Tier 1/customer-managed environment is configured with an Azure AD tenant that is different than the tenant used at the time of deployment. (Perhaps an update was done using the Admin user provisioning tool.) The updated tenant currently being used is missing the reply URL configuration required for successful login into the environment. The missing configuration causes the error.  There are three possible solutions:
+1. (Recommended) You can delete the environment and redeploy with a user from the tenant that the environment will be used with. May be this enviornment now needs to be used under the new tenant the best way to do that is to redeploy it with the new tenant configuration.
+2. You can revert the settings back to the tenant configuration using which the environment was initially deployed with.
+3. Alternatively if you cannot revert the settings or redeploy the environment, you can try to follow the [instructions](access-instances.md#how-can-i-fix-my-existing-environment-when-my-environment-is-in-a-failed-state-or-i-am-getting-sign-in-errors) to perform steps necessary to update reply URL in the target tenant  
 
 ### As a partner/ISV, how can I facilitate cloud-hosted deployments for customers that I work with?
 A Tier 1/customer-managed environment should be deployed under the customer's Azure AD tenant, to ensure that all the configuration and integrations are correctly provisioned for any given environment. The tenant and environment association is determined based on the user who deployed the environment.
@@ -244,7 +247,7 @@ As was stated earlier, it's very important that Finance and Operations environme
 
 If you have environments where the Admin user provisioning tool was previously used to update the tenant settings, we recommend that you delete those environments and then redeploy them under the correct Azure AD tenant.
 
-If an existing environment can't be deleted and redeployed, its URL must be added to the configured Azure AD tenant. The following commands can be run by the tenant admin.
+If an existing environment can't be deleted and redeployed, its URL must be added to the configured Azure AD tenant. The following commands can be run by the tenant admin. Please note that since these URLs are being added manually, the cleanup of these URLs will also have to be done manually when the environment is deleted.
 
 1. Retrieve the following values from the web.config file.
 
@@ -272,6 +275,9 @@ If an existing environment can't be deleted and redeployed, its URL must be adde
     #Set/Update Reply URL
     Set-AzureADServicePrincipal -ObjectId $SP.ObjectId -ReplyUrls $SP.ReplyUrls
     ```
+    
+### I have fixed my environment but it is in failed state and URL still points to the documentation link:
+If you are able to fix your enviornment either by reverting the settings or by adding reply URLs then please restart your enviornment from LCS by first perfoming Stop and then start operation against your environment. If the environment configuration is found to be correct then the enviornment URL will be restored automatically within 2 hours of the start operation.  If any issue is still detected with the configuration then environment will go back to failed state and the URL will continue to point to the documentation link. 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 
