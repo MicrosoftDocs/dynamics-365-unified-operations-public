@@ -28,7 +28,7 @@ Indirect costs are costs that aren't directly related to a single activity in th
 
 Dynamics 365 Finance doesn't have an automated way to calculate the rate for indirect costs. You'll need to determine your indirect costs and create indirect cost codes and maintain the rate for each indirect cost in the costing sheet. The exact process that you use to calculate indirect costs might vary slightly from company to company. 
 
-The basic process includes:
+The process includes:
 1.  Create a list of indirect costs to recognize in production. This list might include rent, administrative expenses, accounting and legal fees. The list shouldn't include raw material costs or labor costs that are recognized in production routes.
 2.  Sum all the indirect costs. You can choose to group similar types of indirect costs or keep them separated. Each indirect cost that is configured can have different main accounts for posting to the general ledger.
 3.  Compare the indirect costs to a factor, which is also referred to as the absorption basis. The factor can be anything you choose. 
@@ -44,7 +44,7 @@ Indirect cost rate = Total indirect cost expenses / Total factor
 6.  Maintain the cost for your indirect costs in the Costing version.
 
 > [!NOTE]
-> You can use the Cost accounting module to accumulate costs and determine your overheads from a variety of sources including production, projects, and the general ledger. For more information, see [Cost accounting home page](/cost-accounting/cost-accounting-home-page.md).
+> You can use the Cost accounting module to accumulate costs and determine your overheads from a variety of sources including production, projects, and the general ledger. For more information, see [Cost accounting](/cost-accounting/cost-accounting-home-page.md).
 
 > [!IMPORTATNT] 
 > Different regulatory establishments have published guidance on what types of costs can be included as indirect cost or overhead in the costs of your finished goods. Before you start to configure indirect costs, it's recommended to check with your accountant and local regulations to ensure you are complaint.
