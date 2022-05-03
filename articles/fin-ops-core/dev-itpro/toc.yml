@@ -472,13 +472,13 @@
           href: help/language-locale.md
         - name: Extend, customize, and collaborate on the help
           href: help/contributor-guide.md
-      - name: Deployment considerations
+      - name: Finance and Operations apps regional services
         items:
-        - name: Finance, Supply Chain Management, and Commerce in local geographies
+        - name: Local geographies
           href: deployment/deployment-options-geo.md
-        - name: Finance, Supply Chain Management, and Commerce in US Government Community Cloud (GCC)
+        - name: US Government Community Cloud (GCC)
           href: deployment/us-gcc-deployment.md
-        - name: Finance, Supply Chain Management, and Commerce operated by 21Vianet in China
+        - name: China Operated by 21Vianet
           href: deployment/china-local-deployment.md
     - name: Develop and customize
       items:
