@@ -3,7 +3,7 @@
 
 title: Cancel vendor fiscal documents
 description: This topic provides information about how to cancel a vendor fiscal document for Brazil.
-author: ShylaThompson
+author: kfend
 ms.date: 06/05/2018
 ms.topic: article
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom: 
 ms.search.region: Brazil
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 
