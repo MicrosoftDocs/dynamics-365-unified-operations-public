@@ -76,7 +76,7 @@ A **Rate** indirect cost type is used to add a fixed amount of cost to the produ
  - **Setup** - based on the Setup time in the route.
  - **Quantity** - based on the Quantity produced. 
 
-The absorption basis is defined by selecting the cost groups that are linked to the material or time components in the costing sheet. An example of a rate is $2.00 USD are added to each production order based on the run time on the route for the labor cost group in your costing sheet.
+The absorption basis is defined by selecting the cost groups that are linked to the material or time components in the costing sheet. An example is $2.00 USD added to each production order based on the run time on the route for the labor cost group in your costing sheet.
 
 **Output unit based**
 An **Output unit based** indirect cost is calculated by multiplying the amount is specified on the **Rate** FastTab by the **Subtype** selected. You can select the quantity, weight, or volume of the finished good to be the multiplier for the indirect cost. One example is to use the quantity to calculate $1.50 USD of machine depreciation for each quantity produced. Another example is to use the volume to calculate $2.00 of refrigeration costs for volume of space of the finished goods in your refrigeration units.
