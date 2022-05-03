@@ -52,8 +52,8 @@ Customers will be able to take up to 8 service updates per year and are required
 |     10.0.33     | March 3, 2023               | April 14, 2023                    | April 28, 2023                                                       | July 14, 2023      |
 |     10.0.32\*   | January 30, 2023            | March 17, 2023                    | March 31, 2023                                                       | June 9, 2023       |
 |     10.0.31     | October 14, 2022            | January 13, 2023                  | February 3, 2023                                                     | April 14, 2023     |
-|     10.0.30     | September 2, 2022           | October 21, 2022                  | November 4, 2022                                                     | January 13, 2023   |
-|     10.0.29\*   | August 1, 2022              | September 16, 2022                | September 30, 2022                                                   | December 9, 2022   |
+|     10.0.30     | September 2, 2022           | October 21, 2022                  | November 4, 2022                                                     | March 17, 2023   |
+|     10.0.29\*   | August 1, 2022              | September 16, 2022                | September 30, 2022                                                   | January 13, 2023   |
 |     10.0.28     | May 27, 2022                | July 15, 2022                     | July 29, 2022                                                        | October 21, 2022   |
 |     10.0.27     | April 22, 2022              | June 17, 2022                     | July 1, 2022                                                         | September 16, 2022 |
 |     10.0.26     | March 4, 2022               | April 15, 2022                    | April 29, 2022                                                       | July 15, 2022      |
@@ -63,6 +63,9 @@ Customers will be able to take up to 8 service updates per year and are required
  
 > [!NOTE]
 > The [Software lifecycle policy](../../dev-itpro/migration-upgrade/versions-update-policy.md) applies to customers enrolled in First Release and when the service update is made generally available.
+
+> [!NOTE]
+> Beginning in 2022, we are making adjustments to end-of-year service update availability. Servicing for the October and November service updates will be extended into January and March, respectively. The service update for the January broadcast has been cancelled to accommodate the October and November updates servicing extensions.
 
 Previews are made available as a deployable package via the Shared Asset Library in Lifecycle Services. For more details, see [One Version service updates FAQ](one-version.md). 
 
