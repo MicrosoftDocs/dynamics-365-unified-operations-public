@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Regional services for Dynamics 365 Commerce, Finance, and Supply Chain Management
+title: Dynamics 365 Finance, Supply Chain Management, and Commerce in local geographies
 description: This topic provides information about the supported geographies and endpoints for Microsoft Dynamics 365 Commerce, Dynamics 365 Finance, and Dynamics 365 Supply Chain Management.
 author: Shailesh4all
 ms.date: 04/28/2022
@@ -13,7 +13,7 @@ ms.author: hasaid
 ms.search.validFrom: 2022-04-28
 ---
 
-# Regional services for Dynamics 365 Commerce, Finance, and Supply Chain Management
+# Dynamics 365 Finance, Dynamics 365 Supply Chain Management, and Dynamics 365 Commerce in local geographies
 
 [!include[banner](../includes/banner.md)]
 
