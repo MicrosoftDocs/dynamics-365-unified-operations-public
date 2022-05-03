@@ -3191,8 +3191,8 @@
           href: warehousing/tasks/register-items-advanced-warehousing.md
         - name: Register items for a basic warehousing enabled item using an item arrival journal
           href: warehousing/tasks/register-items-basic-warehousing.md
-        - name: Import inbound ASNs through the V2 data entity
-          href: warehousing/import-asn-v2-data-entity.md
+        - name: Import inbound ASNs through data entity
+          href: warehousing/import-asn-data-entity.md
         - name: Cross-dock products from receiving warehouse to stores
           href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
         - name: Set up a location directive for purchase order put-away
