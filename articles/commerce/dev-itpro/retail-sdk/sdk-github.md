@@ -143,16 +143,16 @@ Use the packages from [index.json](https://pkgs.dev.azure.com/commerce-partner/R
 
 | Package version  | Application release      |
 | ---------------- | ------------------------ |
-| 9.28.x.x-preview | 10.0.18 PEAP release     |
+| 9.28.x.x-preview | 10.0.18 PEAP/Preview release     |
 | 9.28.x.x         | 10.0.18 Customer preview |
 | 9.28.x.x         | 10.0.18 GA               |
-| 9.29.x.x-preview | 10.0.19 PEAP release     |
+| 9.29.x.x-preview | 10.0.19 PEAP/Preview release     |
 | 9.29.x.x         | 10.0.19 Customer preview |
 | 9.29.x.x         | 10.0.19 GA               |
-| 9.30.x.x-preview | 10.0.20 PEAP release     |
+| 9.30.x.x-preview | 10.0.20 PEAP/Preview release     |
 | 9.30.x.x         | 10.0.20 Customer preview |
 | 9.30.x.x         | 10.0.20 GA               |
-| 9.31.x.x-preview | 10.0.21 PEAP release     |
+| 9.31.x.x-preview | 10.0.21 PEAP/Preview release     |
 | 9.31.x.x         | 10.0.21 Customer preview |
 | 9.31.x.x         | 10.0.21 GA               |
 
