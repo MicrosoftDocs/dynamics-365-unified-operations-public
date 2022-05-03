@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: SysPolicySourceDocumentRuleType, SysPolicyListPage, SysPolicy, HcmBenefitEligibilityPolicy, HcmBenefit, BenefitWorkspace, HcmBenefitSummaryPart  
 audience: Application User 
 # ms.devlang:  
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global

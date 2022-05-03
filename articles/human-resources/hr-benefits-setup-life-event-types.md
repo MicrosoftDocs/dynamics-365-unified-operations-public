@@ -15,7 +15,7 @@ ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart, BenefitLifeEventTypes
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 

@@ -15,8 +15,8 @@ ms.search.form:
 # ROBOTS: 
 audience: Admin
 # ms.devlang: 
-# ms.search.scope: Human Resources
-ms.search.scope: Human Resources
+# 
+
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 

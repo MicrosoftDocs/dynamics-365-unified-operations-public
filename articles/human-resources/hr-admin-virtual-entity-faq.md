@@ -14,7 +14,7 @@ ms.technology:
 # ms.search.form:
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 # ms.custom: NotInToc
 ms.search.region: Global
