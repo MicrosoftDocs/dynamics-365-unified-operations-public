@@ -13,7 +13,7 @@ ms.author: hasaid
 ms.search.validFrom: 2021-11-09
 ---
 
-# Dynamics 365 Finance and Dynamics 365 Supply Chain Management in US Government Community Cloud (GCC)
+# Dynamics 365 Finance, Dynamics 365 Supply Chain Management, and Dynamics 365 Commerce in US Government Community Cloud (GCC)
 
 [!include [banner](../includes/banner.md)]
 
