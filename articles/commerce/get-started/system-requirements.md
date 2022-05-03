@@ -36,7 +36,7 @@ This topic lists the system requirements for cloud deployments of the current ve
 
 The web application can run in any of the following web browsers that run on the specified operating systems:
 
-- Microsoft Edge (latest publicly available version) on Windows 10
+- Microsoft Edge (latest publicly available version) on Windows 11, 10
 - Google Chrome (latest publicly available version) 
 - Apple Safari (latest publicly available version)
 
@@ -50,14 +50,14 @@ To find the latest release for each web browser, go to the software manufacturer
 > [!NOTE]
 > - To enable Task Recorder to capture screenshots and include them in Microsoft Word documents that are generated, you must install a pre-release Chrome extension. <!---For instructions about how to install the extension, see [Screenshot Extension setup](../../dev-itpro/user-interface/task-recorder).-->
 > - The Workflow Editor and Report Designer for Financial reporting are started as ClickOnce applications. They require a 64-bit-compatible operating system. Only Microsoft Edge and Internet Explorer (on a supported version of Microsoft Windows) support ClickOnce applications out of the box. If you're using Chrome, you must install a ClickOnce extension, such as [Meta4](https://chrome.google.com/webstore/detail/meta4-clickonce-launcher/jkncabbipkgbconhaajbapbhokpbgkdc) to use ClickOnce applications. If you use Chrome in incognito mode, make sure that the ClickOnce extension is also enabled for incognito mode.
-> - To preview PDF files, we recommend that you use browsers such as Microsoft Edge (latest publicly available version) on Windows 10, or Google Chrome (latest publicly available version) on Windows 10, Windows 8.1, Windows 8, Windows 7, or Google Nexus 10 tablet.
+> - To preview PDF files, we recommend that you use browsers such as Microsoft Edge (latest publicly available version) on Windows 11, 10 or Google Chrome (latest publicly available version) on Windows 11, 10, 8.1, 8, 7, or Google Nexus 10 tablet.
 
 ### Supported web browsers for Cloud POS
 
 Cloud point of sale (POS) can run in any of the following web browsers that run on the specified operating systems:
 
-- Microsoft Edge (latest publicly available version) on Windows 10
-- Chrome (latest publicly available version) on Windows 10, Windows 8.1, or Windows 7
+- Microsoft Edge (latest publicly available version) on Windows 11, 10
+- Chrome (latest publicly available version) on Windows 11, 10, 8.1, 7
 
 ## Network requirements
 
@@ -102,14 +102,13 @@ This section lists the supported operating systems for each Commerce self-servic
 
 #### Modern POS
 
-- Windows 10 (Pro, Enterprise, LTSC, and IOT Enterprise editions) with the latest available updates are supported.
+- Windows 11, 10 (Pro, Enterprise, LTSC, and IOT Enterprise editions) with the latest available updates are supported.
 
     > [!NOTE]
     > Windows 10 Pro isn't recommended, except as part of a domain, so that Windows updates can be appropriately scheduled.
 
 - Windows Server 2019 is supported.
 - We don't recommend that you use Modern POS on the same computer as another self-service component (for example, Hardware station or Commerce Scale Unit \[self-hosted\]).
-- The legacy self-service installer also supports Windows Server 2016 and Windows 10 LTSB with the latest available updates.
 - Modern POS for iOS supports iOS version 11 or later.
 - Modern POS for Android supports Android version 6.0 or later.
 
@@ -118,7 +117,7 @@ This section lists the supported operating systems for each Commerce self-servic
 
 #### Hardware station and Commerce Scale Unit (self-hosted)
 
-- Windows 10 (Pro, Enterprise, LTSC, and IOT Enterprise editions) with the latest available updates are supported.
+- Windows 11, 10 (Pro, Enterprise, LTSC, and IOT Enterprise editions) with the latest available updates are supported.
 
     > [!NOTE]
     > Windows 10 Pro isn't recommended, except as part of a domain, so that Windows updates can be appropriately scheduled.
@@ -184,7 +183,7 @@ The Connector for Microsoft Dynamics AX 2012 R3 has two separate installers: one
 - Both components are 32-bit applications, but they will run on both x86 and x64 architectures.
 - Both components are supported on the following operating systems:
 
-    - Windows 10 Pro, Enterprise, and Enterprise LTSB editions
+    - Windows 11, 10 Pro, Enterprise, and Enterprise LTSB editions
 
         > [!NOTE]
         > Windows 10 Pro isn't recommended, except as part of a domain, so that Windows updates can be appropriately scheduled.
