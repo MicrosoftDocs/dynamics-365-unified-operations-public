@@ -44,7 +44,7 @@ The following limitations currently exist and are planned to be resolved in upco
 
 - In-app notifications are not available.
 - If you have multiple Commerce Scale Units in a sandbox UAT environment, Commerce Scale Unit will only be auto-updated based on the first Commerce Scale Unit in that environment (alphabetically). The remaining Commerce Scale Units in each sandbox UAT environment will need to be self-updated.
-- Auto-update for Commerce Scale Unit is not currently available for First Release customers, and is not currently applicable for Preview Early Access Program (PEAP).
+- Auto-update for Commerce Scale Unit is not currently available for First Release customers, and is not currently applicable for Preview builds.
 
 ## Downtime duration and impact
 
