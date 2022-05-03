@@ -13,7 +13,7 @@ ms.author: hasaid
 ms.search.validFrom: 2022-04-28
 ---
 
-# Dynamics 365 Finance, Dynamics 365 Supply Chain Management, and Dynamics 365 Commerce in local geographies
+# Dynamics 365 Finance, Supply Chain Management, and Commerce in local geographies
 
 [!include[banner](../includes/banner.md)]
 
