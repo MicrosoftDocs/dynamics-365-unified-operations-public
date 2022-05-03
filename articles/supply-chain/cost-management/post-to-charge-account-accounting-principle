@@ -99,7 +99,7 @@ Prerequisites for this example:
 - FIFO costing model
 - Charges code 1: Debit item and credit ledger account for 10%
 - Charges code 2: Debit item and credit customer/vendor for 10.00 proportional
-- Indirect cost: 2.005 added to the purchase price
+- Indirect cost: 2.00%  added to the purchase price
 
 The following procedure shows an example of what happens when you include charges and indirect costs on a purchase order:
 
