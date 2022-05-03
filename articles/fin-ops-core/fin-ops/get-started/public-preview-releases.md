@@ -3,8 +3,8 @@
 
 title: Service update availability
 description: This topic provides information about the different release options.
-author: ShellyBakke
-ms.date: 04/18/2022
+author: hmahl
+ms.date: 05/03/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,9 +21,10 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: smiller
+ms.author: hmahl
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Platform update 11
+
 ---
 
 # Service update availability
