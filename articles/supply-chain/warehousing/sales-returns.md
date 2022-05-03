@@ -194,7 +194,8 @@ During the arrival process, returns are integrated with the general process for 
 
 ### Identify products in the Arrival overview list
 
-The **Arrival overview** page lists all the planned incoming arrivals. 
+The **Arrival overview** page lists all the planned incoming arrivals.
+
 >[!NOTE] 
 >Arrivals from return orders must be processed separately from other types of arrival transactions. After you've identified an incoming package on the **Arrival overview** page (for example, by using the accompanying RMA document), on the Action Pane, click **Start arrival** to create and initialize an Arrival journal that matches the arrival.
 
@@ -260,9 +261,10 @@ Although the **Return order** page contains the information and actions that are
 
 ### Credit correction
 
-As part of the invoicing process, verify that any miscellaneous charges are correct. To cause the ledger postings to become corrections (Storno), consider using the **Credit correction** option on the **Other** tab of the **Posting invoice** page when you post the invoice/credit note. 
->[!NOTE] 
->By default, the **Credit correction** option is activated if the **Credit note as correction** option on the **Accounts receivable parameters** page has been enabled. However, we recommend that you not post returns with Storno.
+As part of the invoicing process, verify that any miscellaneous charges are correct. To cause the ledger postings to become corrections (Storno), consider using the **Credit correction** option on the **Other** tab of the **Posting invoice** page when you post the invoice/credit note.
+
+> [!NOTE]
+> By default, the **Credit correction** option is activated if the **Credit note as correction** option on the **Accounts receivable parameters** page has been enabled. However, we recommend that you not post returns with Storno.
 
 ## Create intercompany return orders
 Return orders can be completed between two companies within your organization. The following scenarios are supported:
@@ -316,8 +318,8 @@ The return order doesn't reference a customer invoice. The returned item is cred
 
 ![Return order doesn't reference a customer invoic.](./media/SalesReturn09.png)  
 
->[!NOTE]
->The item master price is used as the default value for the **Return cost price** parameter. The default price differs from the cost price at the time of inventory issue. Therefore, the implication is that a loss of 3 has been incurred. Additionally, the return order doesn't include the discount that was given to the customer on the sales order. Therefore, an excessive credit occurs.
+> [!NOTE]
+> The item master price is used as the default value for the **Return cost price** parameter. The default price differs from the cost price at the time of inventory issue. Therefore, the implication is that a loss of 3 has been incurred. Additionally, the return order doesn't include the discount that was given to the customer on the sales order. Therefore, an excessive credit occurs.
 
 ### Example 2: Credit correction is selected for the return order
 
@@ -334,8 +336,8 @@ In this example, the return order line is created by using the **Find sales orde
 
 ![Return order line that is created by using Find sales order .](./media/SalesReturn11.png)  
 
->[!NOTE] 
->**Discount** and **Return cost price** are set correctly. Therefore, an exact reversal of the customer invoice occurs.
+> [!NOTE]
+> **Discount** and **Return cost price** are set correctly. Therefore, an exact reversal of the customer invoice occurs.
 
 
 
