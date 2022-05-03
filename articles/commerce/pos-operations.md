@@ -31,15 +31,17 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-Most actions that users take in the point of sale (POS) are considered operations. Operations are configured and managed in the Dynamics 365 Commerce back office. Many operations can be added to buttons in the POS button grid. Users can then select the buttons to invoke the operations and perform their function. Other operations are part of the main POS application, and are invoked either from on-screen buttons or as part of other workflows or processes.
+Most actions that users take in the point of sale (POS) are considered operations. Operations are configured and managed in the Dynamics 365 Commerce back office. Many operations can be added to buttons in the POS button grid. Users can then select the buttons to invoke the operations and perform their function. To make an operation available to be added to a button grid in button grid designer, it must first be marked as a user operation on the POS operations view in Headquarters (Retail and Commerce > Channel Setup > POS setup > POS > POS Operations.)
 
-The following table provides details about the operations that are available in Modern POS and Cloud POS. The table also specifies where in the application the operations can be invoked, and whether they are available when the POS is in offline mode.
+Other operations are part of the main POS application, and are invoked either from on-screen buttons or as part of other workflows or processes.
 
 Some operations aren't currently available in Modern POS or Cloud POS. Some of these operations are locale-specific operations that require additional extensions and configuration. Others are features from Microsoft Dynamics AX 2012 that aren't currently supported.
 
+The table below provides details about the operations that are available in Modern POS and Cloud POS. The table also specifies where in the application the operations can be invoked, and whether they are available when the POS is in offline mode.
+
 The following columns specify where the operations can be invoked:
 
-- **Button grid** – The operation can be assigned to buttons in POS button grids, which are part of a POS screen layout.
+- **Button grid** – The operation can be assigned to buttons in POS button grids for users to take action, which are part of a POS screen layout.
 - **Transaction screen** – The operation can be invoked from POS button grids that are configured on the POS transaction screen.
 - **Welcome screen** – The operation can be invoked from POS button grids that are configured on the POS welcome screen.
 
