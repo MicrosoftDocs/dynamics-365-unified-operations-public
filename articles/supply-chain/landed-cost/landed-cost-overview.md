@@ -3,7 +3,7 @@
 
 title: Landed cost module
 description: The Landed cost module helps businesses streamline inbound shipping operations by giving users complete financial and logistical control over imported freight, from the manufacturer to the warehouse.
-author: sherry-zheng
+author: Weijiesa
 ms.date: 12/07/2020
 ms.topic: overview
 ms.prod: 
@@ -20,7 +20,7 @@ ms.search.scope: Core, Operations
 
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: chuzheng
+ms.author: weijiesa
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: 10.0.17
 ---

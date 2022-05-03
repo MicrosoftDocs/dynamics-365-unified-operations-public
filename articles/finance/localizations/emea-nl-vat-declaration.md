@@ -4,7 +4,7 @@
 title: VAT declaration for the Netherlands
 description: This topic explains how to set up and generate the value-added tax (VAT) declaration for legal entities in the Netherlands. 
 author: anasyash
-ms.date: 03/24/2022
+ms.date: 05/02/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -37,7 +37,7 @@ This topic explains how to set up and generate the value-added tax (VAT) declara
 
 ## Set up sales tax reporting codes for VAT reporting
 
-Set up sales tax reporting codes by following the instructions in [Set up sales tax reporting codes](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/SE-VAT-declaration/articles/finance/general-ledger/tasks/set-up-sales-tax-reporting-codes.md). The following table provides an example of sales tax reporting codes for the Netherlands.
+Set up sales tax reporting codes by following the instructions in [Set up sales tax reporting codes](../general-ledger/tasks/set-up-sales-tax-reporting-codes.md). The following table provides an example of sales tax reporting codes for the Netherlands.
 
 | **Sales tax reporting code** | **Description**                                                                                                                                                                                                 | **Corresponding box in the declaration** | **Element in XML**                                           |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------|--------------------------------------------------------------|
@@ -75,12 +75,12 @@ Note that "OB declaration" stands for "Omzetbelasting declaration" where Omzetbe
 
 1. Go to **Organization administration \> Organizations \> Legal entities**.
 2. On the **Legal entities** page, on the **Tax registration** FastTab, in the **Tax registration number** field, enter the tax registration number.
-3. Select **Registration IDs**, and enter the same tax registration number. For more information about how to set up registration IDs, see [Registration IDs](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/NL-VAT-declaration/articles/finance/localizations/emea-registration-ids.md).
+3. Select **Registration IDs**, and enter the same tax registration number. For more information about how to set up registration IDs, see [Registration IDs](emea-registration-ids.md).
 4. In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index), in the Shared asset library, download the latest versions of the Electronic reporting (ER) configurations for the following VAT declaration format:
 
 -   OB declaration (NL)
 
-   For more information, see [Download Electronic reporting configurations from Lifecycle Services](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/NL-VAT-declaration/articles/fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+   For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 5. Go to **Tax** \> **Sales tax** \> **Electronic tax declaration parameters**.
 6. On the **General** tab, in the **VAT contact type** field, select either **Tax payer** or **Agent**.

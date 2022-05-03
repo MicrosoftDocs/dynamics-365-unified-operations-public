@@ -3,7 +3,7 @@
 
 title: Costing parameter values setup
 description: When you set up the Landed cost module, you can define several sets of common values that will be available when you select specific types of costing parameter values in other parts of the app. This topic explains how to set up these sets of values.
-author: sherry-zheng
+author: Weijiesa
 ms.date: 12/07/2020
 ms.topic: article
 ms.prod: 
@@ -20,7 +20,7 @@ ms.search.scope: Core, Operations
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: chuzheng
+ms.author: weijiesa
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: 10.0.17
 ---
@@ -127,9 +127,9 @@ The following table describes the settings that are available for each template.
 
 ## Volumetric divisors
 
-Volumetric divisors are used to calculate the volumetric weight. Each shipping/freight company formulates its own volumetric divisors. In addition, a company's divisors typically vary, depending on the mode of delivery. For example, air and sea often have very different divisors. A company can also make its rules more complex, depending on where it ships from.
+Volumetric divisors are used to calculate the volumetric weight. Each shipping/freight company formulates its own volumetric divisors. In addition, a company's divisors typically vary, depending on the mode of delivery. For example, air and sea often have very different divisors. A company can also make its rules more complex, depending on where it ships from. The system uses the following formula to find the volumetric weight: VolumetricWeight = Volume ÷ VolumetricDivisor.
 
-For example, a package that is sent by air has a volume of 3 cubic meters (m³). The company charges by volumetric weight and applies a volumetric divisor of 6. This divisor is multiplied by the volume to determine the volumetric weight. Therefore, the volumetric weight for this example is 3 × 6 = 18 kilograms (kg).
+For example, a package that is sent by air has a volume of 3 cubic meters (m³). The company charges by volumetric weight and applies a volumetric divisor of 6. This divisor is divided by the volume to determine the volumetric weight. Therefore, the volumetric weight for this example is 3 ÷ 6 = 0.5 kilograms (kg).
 
 To set up volumetric divisors, go to **Landed cost \> Costing setup \> Volumetric divisors**. The **Volumetric divisors** page provides a grid that lists all existing volumetric divisors. You can use the buttons on the Action Pane to add, remove, and edit rows in the grid.
 
@@ -140,4 +140,7 @@ The following table describes the fields that are available on each row in the g
 | Shipping company | Select the vendor account of the shipping company that is associated with the volumetric divisor. |
 | Cost type code | Select the cost type code that is associated with the volumetric divisor. Use this field to put cost types into reporting buckets. Reports can be printed either by reporting categories or by cost type. |
 | From port | Select the "from" port that the volumetric divisor applies to. |
-| Volumetric divisor | Enter the volumetric divisor value that applies to the row. The value that you enter will be *multiplied* by the volume of each package to determine that package's volumetric weight. |
+| Volumetric divisor | Enter the volumetric divisor value that applies to the row. The volume of each package will be divided by value that you enter here to determine that package's volumetric weight. |
+
+> [!NOTE]
+> The system will use the maximum value between **actual weight** and **volumetric weight**.

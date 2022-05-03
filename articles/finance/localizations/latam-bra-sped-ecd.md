@@ -125,7 +125,7 @@ To generate and validate the text file for the SPED ECD statement, follow these 
 
 ## Additional resources
 
-[Generate the Sintegra tax statement](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/bra-parameters-tax/articles/financials/localizations/latam-bra-set-up-parameters-for-tax-statements.md)
+[Generate the Sintegra tax statement](/dynamicsax-2012/appuser-itpro/bra-generate-the-sintegra-tax-statement)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

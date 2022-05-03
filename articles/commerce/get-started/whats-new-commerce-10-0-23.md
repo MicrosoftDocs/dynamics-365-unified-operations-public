@@ -4,7 +4,7 @@
 title: What's new or changed in Dynamics 365 Commerce 10.0.23 (January 2022)
 description: This topic describes features that are either new or changed in the preview release of Dynamics 365 Commerce 10.0.23. 
 author: josaw1
-ms.date: 12/13/2021
+ms.date: 04/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -42,6 +42,7 @@ The following features are included in this release. Some of the listed features
 
 | Feature area   | Feature                                                  | More information                                          |  Enabled by             |
 |----------------|----------------------------------------------------------|-----------------------------------------------------------|-------------------------|
+| Dynamics 365 Sales integration |   Leverage Dynamics 365 Sales for managing leads generated from a Commerce business-to-business (B2B) site.  | Use Sales to manage business partner approvals for Commerce B2B websites. Organizations that have already invested in the Sales solution can use its lead and opportunity concepts for the B2B e-commerce business partner approval process. See [Manage business partner users on B2B e-commerce websites using Dynamics 365 Sales](../b2b/prospect-management-sales.md) for more details. | Use the App source  |
 |  Global address book| Define a default state/province for each country/region in address setup | You can now define a default state/province for each country/region in the address setup for the global address book. When a default state/province is set, it will be the default value entered in state/province fields when you create a new county or city record for that country/region. For more information, see [Address setup](../../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md). | Enabled by default |
 |   Globalization |  [(India) GST in e-commerce](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/gst-e-commerce-india)    |  This feature enables Dynamics 365 Commerce customers in India to implement e-commerce capabilities by ensuring that Goods and Services Tax (GST) is calculated on e-commerce orders. For more information, see [Goods and Services Tax (GST) integration for e-commerce sites for India](../localizations/apac-ind-e-commerce.md).  |  Feature management  |
 |   Globalization |   (Eastern Europe) Improvements in settlement of sales invoices and payments for retail statements   |  The feature ensures correct automatic settlement of sales invoices and payments that are generated from retail statements. The feature is applicable to the Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, and Russia.   |  Enabled by default  |

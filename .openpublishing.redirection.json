@@ -1,5 +1,26 @@
 {
-  "redirections": [    {
+  "redirections": [
+    {
+      "source_path": "articles/finance/localizations/e-invoicing-get-started.md",
+      "redirect_url": "e-invoicing-working-globalization-features",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/e-invoicing-create-new-e-invoicing-feature.md",
+      "redirect_url": "e-invoicing-working-globalization-features",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/e-invoicing-setup.md",
+      "redirect_url": "e-invoicing-working-globalization-features",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/e-invoicing-get-started-service-administration.md",
+      "redirect_url": "e-invoicing-set-up-overview",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/talent/access-preview-feature.md",
       "redirect_url": "/dynamics365/human-resources/index",
       "redirect_document_id": "false"

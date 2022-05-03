@@ -14,6 +14,8 @@
         items:
         - name: What's new or changed in Platform updates home page
           href: get-started/whats-new-home-page.md
+        - name: Platform updates for version 10.0.27 (July 2022)
+          href: get-started/whats-new-platform-updates-10-0-27.md
         - name: Platform updates for version 10.0.26 (May 2022)
           href: get-started/whats-new-platform-updates-10-0-26.md
         - name: Platform updates for version 10.0.25 (April 2022)
@@ -1716,6 +1718,22 @@
             href: migration-upgrade/migrate-upgraded-cube-entity-store.md
           - name: Upgrade budget planning
             href: migration-upgrade/upgrade-budget-planning.md
+        - name: Troubleshoot the upgrade
+          items:
+          - name: Troubleshoot development environments during upgrade
+            href: migration-upgrade/troubleshoot-dev-env.md
+          - name: Troubleshoot upgrades to self-service environments
+            href: migration-upgrade/troubleshoot-self-service-env.md
+          - name: Troubleshoot PreSync and PostSync upgrade scripts
+            href: migration-upgrade/pre-post-upgrade-scripts.md
+        - name: Environment operations
+          items:
+          - name: Migrate document attachments
+            href: migration-upgrade/migrate-doc-attachments-ax-2012.md
+          - name: Clean up source data for upgrade
+            href: migration-upgrade/clean-up-source-data-upgrade.md
+          - name: Compress tables in Dynamics AX 2012 environments
+            href: migration-upgrade/compress-tables-ax-2012.md
       - name: Migrate data from AX 2009
         items:
         - name: Migrate data from AX 2009 to Finance and Operations
@@ -2002,3 +2020,5 @@
     href: ../../finance/index.md
   - name: Dynamics 365 Commerce
     href: ../../commerce/index.md
+  - name: Dynamics 365 Human Resources
+    href: ../../human-resources/index.md

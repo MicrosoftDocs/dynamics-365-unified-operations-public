@@ -4,7 +4,7 @@
 title: Removed or deprecated platform features
 description: This topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
 author: sericks007
-ms.date: 03/08/2022
+ms.date: 04/26/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -38,17 +38,29 @@ This list is intended to help you consider these removals and deprecations for y
 
 Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
 
-## Feature removal effective March 14, 2022
+## Feature deprecation effective April 2022
+
+### XML URL resolution in Data management 
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | We are removing support for XML URL resolution since this has been identified as a potential security vulnerability. This means that external resources associated with XML files will no longer be resolved.  |
+| **Replaced by another feature?**   | No. |
+| **Product areas affected**         | Finance and Operations apps |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated. |
+
+## Feature deprecation effective March 14, 2022
 
 ### XSLT scripting in Data management
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | The support for XSLT scripting in Data management is deprecated to improve security and data protection within the Finance and Operations apps.  |
+| **Reason for deprecation/removal** | The support for XSLT scripting in Data management is deprecated to improve security and data protection within Finance and Operations apps.  |
 | **Replaced by another feature?**   | No. Customers and ISVs should consider reimplementing their solutions based on X++ language, in place of XSLT scripting. |
-| **Product areas affected**         | Finance and Operations apps. |
-| **Deployment option**              | All. |
-| **Status**                         | Deprecated - planned removal date is March 14, 2022.<br><br>Exception: Customers who are currently using XLST scripting. They can continue to use it until they update to version 10.0.30 or later. Customers with this exception have received a notification in the Message center available in the Microsoft 365 Admin Center. |
+| **Product areas affected**         | Finance and Operations apps |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated <br><br>**Exception:** Customers who are currently using XLST scripting. They can continue to use it until they update to version 10.0.30 or later. For earlier versions, the exception will expire effective January 31, 2023. Customers with this exception have received a notification in the Message center available in the Microsoft 365 Admin Center. |
 
 ## Feature removal effective October 2021
 

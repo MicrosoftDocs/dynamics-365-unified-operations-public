@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Typescript and C# proxies for Retail point of sale (POS)
+title: TypeScript and C# proxies for Retail point of sale (POS)
 description: This topic provides information about the Commerce proxy and explains how to generate it.
 author: mugunthanm
 ms.date: 08/26/2020
@@ -26,7 +26,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail October 2017 update
 
 ---
 
-# Typescript and C# proxies for Retail point of sale (POS)
+# TypeScript and C# proxies for Retail point of sale (POS)
 
 [!include [banner](../../includes/banner.md)]
 
@@ -42,12 +42,12 @@ The Commerce proxy reduces this effort by automatically generating the proxy for
 
 There two types of proxy to support cross-platform scenarios:
 
-- **Typescript proxy** – The POS uses the Typescript proxy to access the Retail Server APIs and CRT entities. If the POS uses Retail Server, it requires the Typescript proxy. Otherwise, the POS can't communicate with the Retail Server for any operations or workflows.
+- **TypeScript proxy** – The POS uses the TypeScript proxy to access the Retail Server APIs and CRT entities. If the POS uses Retail Server, it requires the TypeScript proxy. Otherwise, the POS can't communicate with the Retail Server for any operations or workflows.
 - **C# proxy** – The POS uses the C# proxy when it's offline. (When the POS is offline, it communicates directly with CRT, without using Retail Server.) The POS also uses this proxy for the Dynamics e-Commerce platform. If you want your customization to work when the POS is offline, and you want your e-Commerce client to access the Retail Server APIs, you must generate the C# proxy.
 
-The steps to generate the Typescript proxy and the C# proxy differ. The rest of this topic explains how to generate each type of proxy.
+The steps to generate the TypeScript proxy and the C# proxy differ. The rest of this topic explains how to generate each type of proxy.
 
-## Generate the Typescript proxy (10.0.11 or lower) Retail Server
+## Generate the TypeScript proxy (10.0.11 or lower) Retail Server
 
 If you are using Microsoft Dynamics Commerce version 10.0.12 or greater, follow the steps mentioned in [Create a new Retail Server extension API](retail-server-icontroller-extension.md).
 
@@ -60,11 +60,11 @@ Use the CommerceProxyGenerator.exe file from the Retail SDK\\Reference\\Microsof
 2. Open a Command Prompt window as an administrator, and go to the **...\\Retail SDK\\Reference\\Microsoft.Dynamics.Commerce.Tools.CoreProxyGenerator\<version_number>\tools** folder. Run the following command to generate the proxy. The proxy files will be generated in the same folder.
 
   
-  POS Typescript proxy
+  POS TypeScript proxy
 ```Console 
     CommerceProxyGenerator.exe <Path>\Microsoft.Dynamics.Retail.RetailServerLibrary.dll <FilePathNameForRetailServerExtensionDLL> /application:typescriptextensions
 ```
- e-Commerce Typescript proxy
+ e-Commerce TypeScript proxy
  ```Console 
     CommerceProxyGenerator.exe <Path>\Microsoft.Dynamics.Retail.RetailServerLibrary.dll <FilePathNameForRetailServerExtensionDLL> /application:typescriptmoduleextensions
 ```

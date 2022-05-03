@@ -4,7 +4,7 @@
 title: Cloud operations and servicing
 description: This topic describes cloud operations and servicing.
 author: laneswenka
-ms.date: 10/03/2019
+ms.date: 04/27/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -62,7 +62,8 @@ Currently, service updates require production tenant downtime and are applied in
 - **Customer initiated maintenance window** - A customer selects the maintenance window through LCS as a part of the package application flow. Updates are done in this maintenance window.
 
 ### Search for and apply an update in Lifecycle Services
-Updates are applied as deployable package on an environment. A deployable package is a format that is used to apply updates to all the environments in a project. When you encounter an issue in the production environment, you can quickly find and apply a hotfix on all of the environments (Dev/Sandbox and Prod).
+Updates are applied as deployable packages on an environment. A deployable package is a format that is used to apply updates to all the environments in a project. When you encounter an issue in the production environment, you can quickly find and apply a hotfix to all of the environments in a project.
+
 - **Search for and download an update**
   In LCS, you can search for an update using [Issue search in Lifecycle Services (LCS)](issue-search-lcs.md) or the [Download updates from Lifecycle Services (LCS)](../migration-upgrade/download-hotfix-lcs.md). Because the steps to prepare an update differ based on the update type, after the update is downloaded, use the following list to determine how to proceed with preparation.
   - Platform update: Platform updates are cumulative and binary. This means that they can be applied directly to an environment. After the update is downloaded, it can be automatically applied to an environment by uploading it to the Asset Library.
@@ -77,6 +78,13 @@ Updates are applied as deployable package on an environment. A deployable packag
   - Verify that the build information was updated to reflect an update to the binaries.
     - For Platform updates, verify that the version of the AOS Service Model under Microsoft is updated.
     - For Application updates, check the version of the model that included the fix. For example, if the fix was in Application suite, then the version of the Application suite is updated.
+
+## Servicing changes
+Microsoft has introduced a new post-servicing step that lets you do index creation in online mode to help reduce the overall servicing downtime. While the post-processing step is occurring, the LCS dashboard will show **Post-servicing** after offline servicing is completed. During this time, some index creation and modification will be done in online mode. The environment will be accessible so that users can perform regular activities, but performance on the package changes that are involved might be degraded. During post-servicing, users won't be able cancel or trigger new service requests.
+
+![LCS dashboard showing the the post-processing step is progress.](https://user-images.githubusercontent.com/90061039/164792400-d8ca418c-6a5e-468c-a965-eae597bfb737.png)
+
+If any failure occurs during the post-processing step, the LCS dashboard will display **Post-servicing failed**. The environment will still be accessible so that users can perform regular activities, however performance might be degraded. If you experience that the issue is not resolved in 24 hours, then contact Microsoft Support. 
 
 ## Upgrade your environment
 For information about how to upgrade to the latest version, see [Process for moving to the latest update of Finance and Operations](../migration-upgrade/upgrade-latest-update.md) and [What's new or changed in Finance and Operations home page](../../fin-ops/get-started/whats-new-changed.md).
