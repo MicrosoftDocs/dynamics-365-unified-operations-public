@@ -46,7 +46,7 @@ For more information see:
 [Generate and post recurring free text invoices](tasks/post-recurring-free-text-invoices.md)
 
 
-A **pro forma invoice** is an invoice that is prepared as an estimate of the actual invoice amounts before the invoice is posted. You can print a pro forma invoice either for a customer invoice for a sales order or for a free text invoice.
+A **pro forma invoice** is an invoice that is prepared as an estimate of the actual invoice amounts before the invoice is posted. You can print a pro forma invoice either for a customer invoice for a sales order or for a free text invoice. In the case of system interruption during the sales pro forma invoice process, a pro forma invoice can be orphaned. An orphaned pro forma invoice can be deleted by running the **Delete pro forma invoices manually** periodic job. (**Sales and marketing > Periodic tasks > Clean up > Delete pro forma invoices manually**).
 
 ## Using sales order customer invoice data entities
 You can use data entities to import and export information about a customer invoice for a sales order. There are different entities for the information on the sales invoice header and the sales invoice lines.
