@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: joshsantana
 ms.search.validFrom: 03-28-2022
 
-
 ---
 
 # Dynamics 365 Translation Service Azure DevOps extension tutorial (Public Preview)
