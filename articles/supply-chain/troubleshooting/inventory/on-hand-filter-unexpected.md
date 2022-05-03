@@ -23,6 +23,6 @@ The filters in the filter pane on the **On-hand list** page don't filter results
 
 The **On-hand list** page is assembled from a detailed on-hand inventory table that includes all available dimensions. However, the list on this page is a summary. Therefore, it might combine rows from the source table by aggregating values according to the dimensions that are shown.
 
-Filters that are set up in the filter pane apply to the source table, not to the aggregated list. This behavior can sometimes produce unexpected results, as shown in [these examples](/dynamics365/supply-chain/inventory/inventory-on-hand-list.md#examples).
+Filters that are set up in the filter pane apply to the source table, not to the aggregated list. This behavior can sometimes produce unexpected results, as shown in [these examples](/dynamics365/supply-chain/inventory/inventory-on-hand-list#examples).
 
-However, the [filters that are provided in the grid](/dynamics365/supply-chain/inventory/inventory-on-hand-list.md#grid-filters) *do* apply to the aggregated list. These filters include both the QuickFilter at the top of the grid and the filter for each column heading.
+However, the [filters that are provided in the grid](/dynamics365/supply-chain/inventory/inventory-on-hand-list#grid-filters) *do* apply to the aggregated list. These filters include both the QuickFilter at the top of the grid and the filter for each column heading.
