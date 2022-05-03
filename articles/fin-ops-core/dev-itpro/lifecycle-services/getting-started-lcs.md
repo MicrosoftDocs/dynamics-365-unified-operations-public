@@ -46,7 +46,6 @@ After you sign up as a partner for the current version, you can create two types
 
 Work with new prospects to help them understand the business processes that are available, and to help them evaluate their subscription needs. Note that only partners can provision a new cloud environment. 
 
-![Prospective presales project.](https://msdnshared.blob.core.windows.net/media/2016/05/27-1024x514.png)
 
 #### Migrate, create solutions, and learn the project for Finance and Operations apps 
 
