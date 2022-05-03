@@ -226,13 +226,13 @@ For information about how to pause an update, see [Pause service updates through
 
 ### How can I get early access to non-released platform updates?
 
-Beginning with 10.0.26, the preview package for all service updates is made available to all customers through the Shared Asset Library in LCS, under **Software deployable package**. Preview packages can only be deployed to Dev/Test environments, and cannot be used in production. You agree to the program terms at install time. Sign up for access to preview (formerly known as the Preview Early Access Program (PEAP)) is no longer required.
+Beginning with version 10.0.26, the preview package for all service updates is made available to all customers through the Shared Asset Library in LCS, under **Software deployable package**. Preview packages can be deployed to development or test environments. They can't be used in production environments. You agree to the program terms at installation. Sign up for access to preview packages (formerly known as the Preview Early Access Program (PEAP)) is no longer required.
 
 You can join the [First release program](https://experience.dynamics.com/insider/), where Microsoft will keep your system always current with the latest updates. If you're not already a member of the Dynamics 365 Insider Program, you'll need to:
 
 1. Sign up for the Insider Program using this URL: https://experience.dynamics.com
 2. Accept the terms and conditions to become a Dynamics 365 Insider.
-3. After your application has been approved (approximately 24 hours) you can then sign back into the Insider Portal to find the different preview programs available for you to join.
+3. After your application has been approved (approximately 24 hours), you can then sign back into the Insider Portal to find the different preview programs available for you to join.
 
 ### Is any tooling available to support testing of the latest release?
 
