@@ -224,11 +224,11 @@ This is only possible if you lower a user's security role in the project to *Pro
 ### Are cloud-hosted environments supported with Azure Bastion?
 These environments have not been tested, nor are they supported with Azure Bastion.  
 
-### Environment is in a failed state with error message "Updated AAD Tenant is missing reply URL configuration" and environment URL points to this link:
-This message indicates that a Tier 1/customer-managed environment is configured with an Azure AD tenant that is different than the tenant used at the time of deployment. (Perhaps an update was done using the Admin user provisioning tool.) The updated tenant currently being used is missing the reply URL configuration required for successful login into the environment. The missing configuration causes the error.  There are three possible solutions:
-1. (Recommended) You can delete the environment and redeploy with a user from the tenant that the environment will be used with. May be this enviornment now needs to be used under the new tenant the best way to do that is to redeploy it with the new tenant configuration.
-2. You can revert the settings back to the tenant configuration using which the environment was initially deployed with.
-3. Alternatively if you cannot revert the settings or redeploy the environment, you can try to follow the [instructions](access-instances.md#how-can-i-fix-my-existing-environment-when-my-environment-is-in-a-failed-state-or-i-am-getting-sign-in-errors) to perform steps necessary to update reply URL in the target tenant  
+### Environment is in a failed state with error message "Updated AAD Tenant is missing reply URL configuration" and environment URL takes me to this page:
+This message indicates that a Tier 1/customer-managed environment is configured with an Azure AD tenant different than used at the time of deployment. There are different options available to help resolve this issue:
+1. (Recommended) Delete the environment and redeploy with the tenant in which the environment will be used. 
+2. Revert the settings to the tenant configuration used at the time of deployment.
+3. Follow the [instructions](access-instances.md#how-can-i-fix-my-existing-environment-when-my-environment-is-in-a-failed-state-or-i-am-getting-sign-in-errors) to perform steps necessary to update reply URL in the target tenant  
 
 ### As a partner/ISV, how can I facilitate cloud-hosted deployments for customers that I work with?
 A Tier 1/customer-managed environment should be deployed under the customer's Azure AD tenant, to ensure that all the configuration and integrations are correctly provisioned for any given environment. The tenant and environment association is determined based on the user who deployed the environment.
@@ -275,11 +275,11 @@ If an existing environment can't be deleted and redeployed, its URL must be adde
     #Set/Update Reply URL
     Set-AzureADServicePrincipal -ObjectId $SP.ObjectId -ReplyUrls $SP.ReplyUrls
     ```
-    
-### I have fixed my environment but it is in failed state and URL still points to the documentation link:
-If you are able to fix your enviornment either by reverting the settings or by adding reply URLs then please restart your enviornment from LCS by first perfoming Stop and then start operation against your environment. If the environment configuration is found to be correct then the enviornment URL will be restored automatically within 2 hours of the start operation.  If any issue is still detected with the configuration then environment will go back to failed state and the URL will continue to point to the documentation link. 
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+### I have fixed my environment, but it is in failed state and URL still points to the documentation link:
+Restart your environment from LCS by first performing **Stop** and then **Start** operation against your environment. If the environment configuration is found to be correct, then the environment URL will be restored automatically **within 2 hours** of the Start operation.
 
 ### While running the Admin user provisioning tool on my local development environment, I get the error "The value's length for key 'password' exceeds it's limit of '128'."
 If you are using the virtual hard drive (VHD) that was released for versions 10.0.24 and later, the Generate Self-Signed Certificates tool needs to be run before the Admin user provisioning tool. See [Set up the downloadable VHD for first use](vhd-setup.md) for more information.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
