@@ -16,7 +16,7 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-# ms.search.scope: Core, Operations
+# 
 # ms.tgt_pltfrm: 
 ms.custom: 26181
 ms.assetid: 10f56dea-ea2d-48ea-9622-4ef715eb1179

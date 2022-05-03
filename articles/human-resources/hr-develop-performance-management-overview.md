@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: ["221024", "intro-internal"]
 ms.assetid: d88e30ab-c6e9-4daf-b89d-f4386a299e22

@@ -71,7 +71,9 @@ We have recently added or significantly updated the following help topics. These
 | Warehouse management | [Global mobile device parameters](../warehousing/mobile-device-parameters.md) |
 | Warehouse management | [Anchoring](../warehousing/anchoring.md) |
 | Sales and marketing | Intercompany trade is now described in detail, starting with [Set up intercompany trade](../sales-marketing/intercompany-trade-set-up.md) and its related topics. |
+| Sales and marketing | [Sales history cleanup performance improvements](../sales-marketing/sales-update-history-cleanup-performance-improvements.md) |
 | Inventory management | Inventory Visibility documentation has been expanded and updated, starting with [Inventory Visibility Add-in overview](../inventory/inventory-visibility.md) and its related topics. |
+| Warehouse management | [Mobile device user accounts](../warehousing/mobile-device-work-users.md) |
 
 ## Additional resources
 
