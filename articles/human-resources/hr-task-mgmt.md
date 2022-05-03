@@ -62,18 +62,14 @@ The **Offboarding** tab contains a list of employees who are exiting the company
 The **Transitions** tab contains an **All tasks** list that shows all tasks for all employees who will be changing positions or who have recently changed positions. There is also a list of overdue tasks and a list of tasks that are assigned to the current user.
 
 On all three tabs, HR assistants and managers can complete the following activities:
-
-- Apply a checklist to an employee.
-- Update the status of a task.
-- Reassign a task.
-- Update the due date of a task.
+- Apply a checklist to an employee
+- Update the status of a task
+- Reassign a task
+- Update the due date of a task
 
 > [!NOTE]
 > By default, the **Onboarding** tab shows employees who were hired in the last seven days. To change this setting, on the **Human resources parameters** page, on the **General** tab, in the **Recent hires** field, enter a time frame. The information in the **Recent hires** list can be shown for a specific number of days, months, or years. For example, to view the list of employees who were hired in the last 14 days, set the **Period** field to **14** and the **Unit** field to **Days**.
->
-> On the **Human resources parameters** page, you can also update the date range for the lists of exiting and exited employees that are shown on the **Offboarding** tab.
->
-> These settings also apply to the **Personnel management** workspace.
+> On the **Human resources parameters** page, you can also update the date range for the lists of exiting and exited employees that are shown on the **Offboarding** tab. These settings also apply to the **Personnel management** workspace.
 
 ## Setting up tasks
 
