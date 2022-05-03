@@ -27,7 +27,7 @@ ms.dyn365.ops.version:
 
 ---
 
-# Dynamics 365 Finance, Dynamics 365 Supply Chain Management, and Dynamics 365 Commerce operated by 21Vianet in China
+# Dynamics 365 Finance, Supply Chain Management, and Commerce operated by 21Vianet in China
 
 [!include [banner](../includes/banner.md)]
 
