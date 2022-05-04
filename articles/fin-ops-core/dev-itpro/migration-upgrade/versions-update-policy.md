@@ -4,7 +4,7 @@
 title: Software lifecycle policy and cloud releases
 description: This topic outlines the lifecycle and support policies for the Finance and Operations online service.
 author: ShellyBakke
-ms.date: 02/26/2020
+ms.date: 05/04/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -35,11 +35,11 @@ This topic outlines the lifecycle and support policies for the Finance and Opera
 ## Modern Lifecycle Policy
 The Finance and Operations online service is covered by the Modern Lifecycle Policy. The Modern Lifecycle Policy covers products and services that are serviced and supported continuously. For more information about this policy, see [Modern Lifecycle Policy](https://support.microsoft.com/help/30881). Licensed customers must stay current with updates to the Finance and Operations online service in accordance with the following servicing and system requirements:
 
-- Customers purchasing subscriptions of Finance and Operations and operating on the following application versions will experience continuous updates of the Platform and Financial Reporting. Microsoft will continually update these components with the option to postpone up to 3 consecutive service updates.
+- Customers purchasing subscriptions of Finance and Operations apps and operating on the following application versions will experience continuous updates of the Platform and Financial Reporting. Microsoft will continually update these components with the option to postpone up to 3 consecutive service updates.
     - Finance and Operations apps, version 10.0+ (April 2019)
     - Finance and Operations apps, version 8.0 (April 2018)
-    - Dynamics 365 for Finance and Operations, Enterprise edition 7.3    
-    - Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)
+    - Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (December 2017)   
+    - Dynamics 365 for Finance and Operations, Enterprise edition (June 2017)
     - Dynamics 365 for Operations version 1611 (November 2016)
     
 
@@ -53,8 +53,8 @@ The Finance and Operations online service is covered by the Modern Lifecycle Pol
     
       - Finance and Operations apps, version 10.0+ (April 2019)
       - Finance and Operations apps, version 8.0+ (April 2018)
-      - Dynamics 365 for Finance and Operations, Enterprise edition 7.3    
-      - Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)
+      - Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (December 2017)   
+      - Dynamics 365 for Finance and Operations, Enterprise edition (June 2017)
       - Dynamics 365 for Operations version 1611 (November 2016)          
 
 > [!NOTE]
@@ -70,14 +70,10 @@ To see more details on dates and versions for application and platform releases,
 
 > [!NOTE]
 > -  Service updates are cumulative in nature and may include updates for some or all of the following components:  Platform, Application, Financial Reporting, Retail, and operating system updates. 
-> -  You will be required to have an update that's no older than 3 service updates. For more information, see [One Version service updates FAQ](../../fin-ops/get-started/one-version.md).
+> -  You will be required to have an update that's no older than 4 service updates. For more information, see [Can the updates be delayed? What is the policy?](../../fin-ops/get-started/one-version.md#can-the-updates-be-delayed-what-is-the-policy).
 > -  All customers were required to be on the latest version of Finance and Operations by April 2019, except for those with unfulfilled [extension requests](../extensibility/extensibility-home-page.md) submitted to Microsoft. Customers who submitted extensibility requests by January 1, 2019, are supported on version 7.3 until their extensibility requests are fulfilled. Customers are expected to upgrade to the latest version within 90 days of the extensibility request being fulfilled. For more information, see [One Version service updates FAQ](../../fin-ops/get-started/one-version.md). 
 
-## Support matrix
-
-Platform updates are compatible with all application versions that are supported at the time of release.
-
-### Table 5: Downloadable virtual hard drive (VHD) releases
+## Downloadable virtual hard drive (VHD) releases
 
 Use of the VHDs is subject to the [Software license terms](https://go.microsoft.com/fwlink/?linkid=851163).
 
