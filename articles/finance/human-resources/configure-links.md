@@ -62,7 +62,7 @@ Each link that you create will have the following information defined:
    2. Copy the menu item from the URL. For example, if you want the link to take you to the employee list in Finance and Operations, enter the value that appears after the "&mi" in the URL. 
    3. The menu item to navigate to the employee list page in this example is: HcmWorkerListPage_Employees.
 
-**Link to data source**: Select the source of data that the link is referencing. The most common sources like **Worker** and **Position** are available.
+ - **Link to data source**: Select the source of data that the link is referencing. The most common sources like **Worker** and **Position** are available.
 
 ### Access to links
 
