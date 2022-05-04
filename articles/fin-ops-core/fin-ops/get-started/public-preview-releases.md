@@ -36,7 +36,7 @@ Microsoft is committed to delivering predictable service updates. These service 
 Customers will be able to take up to 7 service updates per year and are required to take a minimum of 2 service updates per year. Customers can choose to pause up to 3 consecutive updates at a time. Pausing a service update can apply to the designated user acceptance testing (UAT) sandbox, production, or both environments. After the pause window has ended and if the customer has not self-updated to a supported service update, Microsoft will auto-apply the latest update based on the configuration selection made available in Lifecycle Services (LCS). To learn more about how to pause service updates, see [Pause service updates through Lifecycle Services](../../dev-itpro/lifecycle-services/pause-service-updates.md).
 
 > [!NOTE] 
-> Service updates will not be provided during the months of March, June, September, and December. 
+> Service updates will not be provided during the months of January, March, June, September, and December. 
 
 ### Targeted release schedule (dates subject to change)
 
