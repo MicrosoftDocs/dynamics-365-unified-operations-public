@@ -29,7 +29,7 @@ There are a variety of types of variances that can occur for purchases and produ
 ## Sample posting profile configuration
 
 The following table shows examples of the default posting types with sample main accounts and descriptions. 
- - The **Debit/Credit** column indicates if the transaction typically **Debits** or **Credits** or in some cases can post either. 
+ - The **Debit/Credit** column indicates if the transaction is typically a **Debit** or **Credit** or in some cases can post either. 
  - The **Clearing account** column indicates the posting type is a clearing account. This means the amount posted in this account is automatically reversed when a later transaction is posted. 
  - The **P/F** column indicates **P** for physical posting and **F** for financial posting. 
  - The **Follow** column indicates if the main account for a specific posting type is typically the same as another posting type. The value in the column indicates the posting type that is typically followed.
@@ -40,11 +40,11 @@ The following table shows examples of the default posting types with sample main
 
 | Posting type   | Main account example | Main account name example  | Account type | Debit/ Credit? | Clearing account | Physical or Financial | Follow | Description|
 |----------------|----------------------|------------------------|--------------|----------------|------------------|-----------------------|--------|---------------|
-| Purchase price variance     | 510310  | Purchase price variance  | Expense   | Both    | No  | F  | N/A    | This account is used when there's a variance between the purchase price and standard cost on a purchase order.                |
-| Inventory cost revaluation  | 510330  | Inventory cost revaluation | Expense | Both  | No   | F   | N/A    | This account is used when a new costing version is activated for a standard cost item to revalue the on-hand inventory.         |
-| Cost change variance  | 510320  | Cost change variance  | Expense   | Both  | No | F   | N/A    | This account is used when there's a difference in standard costs between sites or when an item is returned and there is a change between the original standard cost and the current standard cost for a product. |
-| Production lot size variance   | 510370   | Production lot size variance   | Expense  | Both | No  | F  | N/A    | This account is used when there are differences between the BOM calculation basis and the actual quantity for the production order cost calculation.       |
-| Production price variance  | 510340 | Production price variance   | Expense   | Both  | No  | F  | N/A    | This account is used when there are price differences between the estimated cost and actual cost for a production order.      |
-| Production quantity variance     | 510350  | Production quantity variance     | Expense | Both  | No  | F   | N/A    | This account is used when there are quantity differences between the estimated cost and actual costs for a production order.            |
-| Production substitution variance | 510360   | Production substitution variance | Expense  | Both  | No  | F  | N/A    | This account is used when there's unexpected consumption on a production order.             |
-| Rounding variance    | 618160 | Rounding difference | Expense | Both   | No   | F   | N/A | This account is used when there's a rounding difference when calculating the production costs from the standard costs.             |
+| Purchase price variance     | 510310  | Purchase price variance  | Expense   | Either   | No  | F  | N/A    | This account is used when there's a variance between the purchase price and standard cost on a purchase order.                |
+| Inventory cost revaluation  | 510330  | Inventory cost revaluation | Expense | Either | No   | F   | N/A    | This account is used when a new costing version is activated for a standard cost item to revalue the on-hand inventory.         |
+| Cost change variance  | 510320  | Cost change variance  | Expense   | Either  | No | F   | N/A    | This account is used when there's a difference in standard costs between sites or when an item is returned and there is a change between the original standard cost and the current standard cost for a product. |
+| Production lot size variance   | 510370   | Production lot size variance   | Expense  | Either | No  | F  | N/A    | This account is used when there are differences between the BOM calculation basis and the actual quantity for the production order cost calculation.       |
+| Production price variance  | 510340 | Production price variance   | Expense   | Either  | No  | F  | N/A    | This account is used when there are price differences between the estimated cost and actual cost for a production order.      |
+| Production quantity variance     | 510350  | Production quantity variance     | Expense | Either  | No  | F   | N/A    | This account is used when there are quantity differences between the estimated cost and actual costs for a production order.            |
+| Production substitution variance | 510360   | Production substitution variance | Expense  | Either  | No  | F  | N/A    | This account is used when there's unexpected consumption on a production order.             |
+| Rounding variance    | 618160 | Rounding difference | Expense | Either   | No   | F   | N/A | This account is used when there's a rounding difference when calculating the production costs from the standard costs.             |
