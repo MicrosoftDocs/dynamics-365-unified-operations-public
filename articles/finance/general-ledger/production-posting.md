@@ -27,7 +27,7 @@ This topic provides information about different types of posting in the producti
 
 ## Material consumption
 
-Materials are registered as consumed during production when the production picking list journal is posted. This creates transactions that deduct the on-hand inventory. In the **Production parameters**, you can specify if the value of raw materials that are in progress (work in process \[WIP\]) should be posted in the ledger.
+Materials are registered as consumed during production when the production picking list journal is posted. This creates transactions that deduct the on-hand inventory. In the **Production parameters**, you can specify if the value of raw materials that are in progress, WIP, should be posted in the ledger.
 
 The value of raw materials that are in progress (WIP) is posted to the **Estimated cost of materials consumed** and **Estimated cost of materials consumed, WIP** accounts. The picking list process for the production order is a physical update to the inventory transactions related to the production order. When a production order is registered as ended: the physical transactions are reversed, and the related inventory transactions are financially updated. When the ending journal is posted, the **Cost of materials consumed** and **Cost of materials consumed, WIP** posting types are used.
 
@@ -35,7 +35,7 @@ The **Production** tab on the **Inventory posting profiles** page controls how p
 
 For a picking list journal to post to the general ledger for a production order, the following conditions must be met:
 -   The **Post picking list in ledger** check box must be selected on the **Production control parameters** page. This setting can be overridden for a specific site on the **Production control parameters by site** page.
--   The **Post physical inventory** check box must be selected on the **Item model group** page for the item selected on the purchase order line.
+-   The **Post physical inventory** check box must be selected on the **Item model groups** page for the item selected on the purchase order line.
 -   The main accounts must be specified on the **Inventory posting profile** page for the following posting types:
     -   **Estimated cost of materials consumed**
     -   **Estimated cost of materials consumed, WIP**
@@ -56,7 +56,7 @@ The **Production** tab on the **Inventory posting profiles** page is used to con
 
 For a **Report as finished** journal to post to the general ledger for a production order, the following conditions must be met:
 -   The **Post report as finished in ledger** check box must be selected in the **Production control parameters** page. This setting can be overridden for a specific site on the **Production control parameters by site** page.
--   The **Post physical inventory** check box must be selected on the **Item model group** page for the item selected on the purchase order line.
+-   The **Post physical inventory** check box must be selected on the **Item model groups** page for the item selected on the purchase order line.
 -   The main accounts must be specified in the **Inventory posting profile** page for the following posting types:
     -   **Estimated manufactured cost**
     -   **Estimated manufactured cost, WIP**
