@@ -97,14 +97,6 @@ For example, customers who are currently on version 10.0.26 can pause updates fo
 
 ## Additional resources
 
-### One Version service updates
-
-For more information about One Version service updates, see the following resources:
-
-- [One Version service updates FAQ](../fin-ops-core/fin-ops/get-started/one-version.md)
-- [Modernizing the way we update Dynamics 365](https://cloudblogs.microsoft.com/dynamics365/bdm/2018/07/06/modernizing-the-way-we-update-dynamics-365/)
-- [New flexible service updates for Finance and Operations apps](https://cloudblogs.microsoft.com/dynamics365/bdm/2019/06/03/new-flexible-service-updates-for-dynamics-365-for-finance-and-operations/)
-
 ### Component selection
 
 For more information about how to select the correct components to meet your needs, see the following topics:
