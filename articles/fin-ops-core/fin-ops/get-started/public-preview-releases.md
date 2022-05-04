@@ -45,8 +45,8 @@ Customers will be able to take up to 7 service updates per year and are required
 
 |     Version     | Preview availability        | Generally available (self-update) | Auto-update schedule (via LCS Update Settings) production start date | End of service     |
 |-----------------|-----------------------------|-----------------------------------|----------------------------------------------------------------------|--------------------|
-|     10.0.38: the "February" release     | October 13, 2023            | January 12, 2024                  | February 2, 2024                                                     | April 12, 2024     |
-|     10.0.37: the "November" release     | September 1, 2023           | October 20, 2023                  | November 3, 2023                                                     | January 12, 2024   |
+|     10.0.38:<br><br>The "February" release     | October 13, 2023            | January 12, 2024                  | February 2, 2024                                                     | April 12, 2024     |
+|     10.0.37:<br><br>The "November" release     | September 1, 2023           | October 20, 2023                  | November 3, 2023                                                     | January 12, 2024   |
 |     10.0.36\*: the "October" release   | July 31, 2023               | September 15, 2023                | September 29, 2023                                                   | December 8, 2023   |
 |     10.0.35: the "August" release     | May 26, 2023                | July 14, 2023                     | July 28, 2023                                                        | October 20, 2023   |
 |     10.0.34: the "July" release     | April 21, 2023              | June 16, 2023                     | June 30, 2023                                                        | September 15, 2023 |
