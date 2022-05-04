@@ -69,8 +69,8 @@ The Finance and Operations online service is covered by the Modern Lifecycle Pol
 To see more details on dates and versions for application and platform releases, please visit the [What's new or changed in Finance and Operations apps home page](../../fin-ops/get-started/whats-new-changed).
 
 > [!NOTE]
-> -  Service updates are cumulative in nature and may include updates for some or all of the following components:  Platform, Application, Financial Reporting, Retail, and operating system updates. 
-> -  You will be required to have an update that's no older than 4 service updates. For more information, see [Can the updates be delayed? What is the policy?](../../fin-ops/get-started/one-version.md#can-the-updates-be-delayed-what-is-the-policy).
+> -  Service updates are cumulative in nature and may include updates for some or all of the following components:  Platform, Application, Financial Reporting, Commerce, and operating system updates. 
+> -  Customers can pause, delay, or opt out of an update via the update settings in Microsoft Dynamics Lifecycle Services (LCS) projects, provided that all their sandbox and production environments are no more than three versions behind the latest available update. For more information, see [Can the updates be delayed? What is the policy?](../../fin-ops/get-started/one-version.md#can-the-updates-be-delayed-what-is-the-policy)
 > -  All customers were required to be on the latest version of Finance and Operations by April 2019, except for those with unfulfilled [extension requests](../extensibility/extensibility-home-page.md) submitted to Microsoft. Customers who submitted extensibility requests by January 1, 2019, are supported on version 7.3 until their extensibility requests are fulfilled. Customers are expected to upgrade to the latest version within 90 days of the extensibility request being fulfilled. For more information, see [One Version service updates FAQ](../../fin-ops/get-started/one-version.md). 
 
 ## Downloadable virtual hard drive (VHD) releases
