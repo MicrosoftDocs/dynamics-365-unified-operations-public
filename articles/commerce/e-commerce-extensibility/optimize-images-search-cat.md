@@ -21,7 +21,7 @@ This topic describes how to optimize images on search and category pages in Micr
 
 One way to improve the performance of e-commerce site category and search pages is to optimize the way that product images are rendered. Prior to the Commerce version 10.0.26 release, product images were loaded on the client side to support image fallback to a default image when a product variant or master image didn't exist. 
 
-As of the Commerce 10.0.26 release, support has been added to the SDK image component and content management system (CMS) search API responsible for returning an image to directly handle the fallback logic when a primary image isn't available. The CMS API now accepts a new query string parameter named **fallback** that intakes a list of alternate fallback images to try if the primary image isn't found. The client-side rendering logic previously used is no longer needed, which improves the page load performance on category and search pages according to Largest Contentful Paint (LCP) metrics.  
+As of the Commerce 10.0.26 release, support has been added to the SDK image component and content management system (CMS) search API to directly handle the fallback logic when a primary image isn't available. The CMS API now accepts a new query string parameter named **fallback** that intakes a list of alternate fallback images to try if the primary image isn't found. The client-side rendering logic previously used is no longer needed, which improves the page load performance on category and search pages according to Largest Contentful Paint (LCP) metrics.  
 
 ## CMS API example
 
@@ -33,10 +33,11 @@ In the following CMS API example, the main image requested (**productVariant1.pn
 
 Commerce module library release 10.0.26 contains code changes that use the new CMS API placeholder query string when requesting images. The main code change located in the **\node_modules\@msdyn365-commerce\components\src\product-card\product.component.tsx** component passes an empty placeholder fallback image and an optional **bypassHideOnFailure** parameter to enable the fallback feature.  
 
-The [app settings](app-settings.md) file now includes the new **Empty placeholder image** site setting that allows a site builder user to specify the fallback image from images uploaded to the media library. The specified placeholder image name is uploaded to the tenant for empty placeholders to display in case the primary image isn't available. The product component reads this image name and passes it as the fallback option while calling the SDK image component.
+The [app settings](app-settings.md) file now includes a new **Empty placeholder image** site setting that allows a site builder user to specify the fallback image from images uploaded to the media library. The specified placeholder image name is uploaded to the tenant for empty placeholders to display in case the primary image isn't available. The product component reads the placeholder image name and passes it as the fallback option when calling the SDK image component.
 
 > [!NOTE]
-> If the **product.component.tsx** component has been overwritten with customized code, or if the search result container module has been cloned and/or custom code is making image calls directly, then you must modify the customized code to improve performance. The following example code shows the changes needed to pass in a placeholder image to the CMS API.
+> If the **product.component.tsx** component has been overwritten with customized code, or if the search result container module has been cloned and/or custom code is making image calls directly, then you must modify the customized code to improve performance. The following example code shows the changes needed to pass a placeholder image to the CMS API.
+
 ## Add fallback image code support to customized code
 
 The following **renderProductPlacementImage** function is included in the **product.component.tsx** file in Commerce releases prior to 10.0.26.
@@ -98,4 +99,4 @@ The following modified **renderProductPlacementImage** function includes changes
             />
         );
 ```
-In the example code above, the image source is the primary image to be rendered (for example, a blue product variant image), the fallback image is used if the primary image isn't available (for example, the product master image in case the variant image doesn't exist), and the placeholder image is read from the application config file if the primary and fallback images are both unavailable.
+In the example code above, the image source is the primary image to be rendered (for example, a blue product variant image), the fallback image is used if the primary image isn't available (for example, the product master image), and the placeholder image is read from the application config file if the primary and fallback images are both unavailable.
