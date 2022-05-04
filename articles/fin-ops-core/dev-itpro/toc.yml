@@ -557,7 +557,7 @@
           - name: Create models and data model elements overview
             href: dev-tools/create-data-model-elements.md
           - name: Naming guidelines for extensions
-            href: /dynamics365/fin-ops-core/dev-itpro/naming-guidelines-extensions
+            href: /dynamics365/fin-ops-core/dev-itpro/extensibility/naming-guidelines-extensions
           - name: Turn off model customization and deprecate functionality
             href: dev-tools/lock-models.md
         - name: Customization Analysis Report
