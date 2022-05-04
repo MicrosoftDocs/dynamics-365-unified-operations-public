@@ -4,7 +4,7 @@
 title: Maximize API throughput
 description: This topic describes strategies that can help you manage throttling responses for service protection application programming interface (API) limits and maximize API throughput.
 author: jaredha
-ms.date: 04/22/2022
+ms.date: 05/04/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -51,9 +51,9 @@ User-based service protection API limits are implemented on a per-user basis. If
 
 ## Avoid large batches
 
-*Batching* refers to the process of sending multiple operations in a single request. Most scenarios will be fastest if single requests are sent and there is a high degree of parallelism. If you think that batch size might help improve performance, the best strategy is to start with a small batch size and then increase concurrency until you start to receive service protection API limit errors that indicate that the operation must be retried. In Microsoft Dynamics 365 Finance + Operations apps, batch size is limited to 5,000 operations.
+*Batching* refers to the process of sending multiple operations in a single request. Most scenarios will be fastest if single requests are sent and there is a high degree of parallelism. If you think that batch size might help improve performance, the best strategy is to start with a small batch size and then increase concurrency until you start to receive service protection API limit errors that indicate that the operation must be retried. In Finance and Operations apps, batch size is limited to 5,000 operations.
 
-For more information about batch requests that have Finance + Operations service endpoints, see [Batch requests](../data-entities/odata.md#batch-requests).
+For more information about batch requests that have Finance and Operations apps service endpoints, see [Batch requests](../data-entities/odata.md#batch-requests).
 
 ## Remove the affinity cookie
 
