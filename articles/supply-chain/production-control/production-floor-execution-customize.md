@@ -2,7 +2,7 @@
 title: Customize the production floor execution interface
 description: This topic explains how to extend current forms or create new forms and buttons for the production floor execution interface.
 author: johanhoffmann
-ms.date: 11/08/2021
+ms.date: 05/04/2022
 ms.topic: article
 ms.search.form:
 ms.technology:
@@ -11,7 +11,7 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-11-08
-ms.dyn365.ops.version: 10.0.24
+ms.dyn365.ops.version: 10.0.25
 ---
 
 # Customize the production floor execution interface
@@ -137,6 +137,81 @@ formRun.setNumpadController(numpadController);
 numpadController.setValueToNumpad(333.56);
 formRun.run();
 ```
+
+## Add a date and time controls to a form or dialog
+
+<!-- KFM: The following correction needs to go somewhere above:
+
+    JmgProductionFloorExecutionMenuItemProvider 
+
+-->
+
+Date and time controls enable workers to specify dates and times, respectively. The following screenshots show how the controls typically appear on the page.
+
+<!-- KFM: I added this short intro that mentions the images. Do we have anything more interesting to say? -->
+
+![Date control example.](media/pfe-customize-date-control.png "Date control example")
+
+![Time control example.](media/pfe-customize-time-control.png "Time control example")
+
+The following procedure shows an example of how to add a date control to a form.
+
+1. The number of date and time controls controllers that each form contains must equal the number of date and time controls in that form. <!-- KFM: "controls controllers"? Rephrase as an instruction. -->
+
+    ```xpp
+    private JmgProductionFloorExecutionDateTimeController  dateFromController; 
+    private JmgProductionFloorExecutionDateTimeController  dateToController; 
+    private JmgProductionFloorExecutionDateTimeController  timeFromController; 
+    private JmgProductionFloorExecutionDateTimeController  timeToController;
+    ```
+
+1. Declare the `utcdatetime` variable.
+
+    ```xpp
+    private utcdatetime fromDateTime;
+    private utcdatetime toDateTime;
+    ```
+
+1. Create a method where the datetime will be updated from a Date Time controllers. <!-- KFM: Please clarify -->
+
+    ```xpp
+    private void setFromDateTime(utcdatetime _value)
+        {
+            fromDateTime= _value;
+        }
+    ```
+
+1. Set up the behavior of each numeric keypad controller and connect each date and time controllers to a date and time form parts. <!-- KFM: Please clarify -->
+
+    ```xpp
+    /// <summary>
+    /// Initializes all date and time controllers, defines their behavior and connects them with the form parts.
+    /// </summary>
+    private void initializeDateControlControllers()
+    {
+        dateFromController= new JmgProductionFloorExecutionDateTimeController();
+        dateFromController.setDateControlValueToCallerFormDelegate += eventhandler(this.setFromDateTime);
+        dateFromController.parmDateTimeValue(fromDateTime);
+    
+        timeFromController= new JmgProductionFloorExecutionDateTimeController();
+        timeFromController.setDateControlValueToCallerFormDelegate += eventhandler(this.setFromDateTime);
+        timeFromController.parmDateTimeValue(fromDateTime);
+        
+        DateFromFormPart.getPartFormRun().setDateControlController(dateFromController, timeFromController);
+        imeFromFormPart.getPartFormRun().setTimeControlController(timeFromController, dateFromController);
+        
+        ...
+    }
+    ```
+    <!-- KFM: Confirm use of ellipsis above -->
+
+<!-- KFM: How does the following relate to the above procedure? -->
+
+If all you need is a date control on a form, you can skip the time control setup, and instead just set up the date control as shown in the following example:
+
+    ```xpp
+    DateFromFormPart.getPartFormRun().setDateControlController(dateFromController, null);
+    ```
 
 ## Additional resources
 
