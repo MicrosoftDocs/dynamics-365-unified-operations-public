@@ -2,9 +2,9 @@
 # required metadata
 
 title: Integrate Customer Voice into an e-commerce site page
-description: This topic describes how to integrate Microsoft Dynamics 365 Customer Voice into a Microsoft Dynamics 365 Commerce e-commerce site page.
+description: This topic describes how to integrate Microsoft Dynamics 365 Customer Voice into a Microsoft Dynamics 365 Commerce site page.
 author: samjarawan
-ms.date: 04/26/2022
+ms.date: 05/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -13,20 +13,21 @@ ms.author: samjar
 ms.search.validFrom: 2019-10-31
 
 ---
-# Integrate Customer Voice into an e-commerce page
+# Integrate Customer Voice into an e-commerce site page
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to integrate Microsoft Dynamics 365 Customer Voice into a Microsoft Dynamics 365 Commerce e-commerce site page.
+This topic describes how to integrate Microsoft Dynamics 365 Customer Voice into a Microsoft Dynamics 365 Commerce site page.
 
-[Customer Voice](https://dynamics.microsoft.com/customer-voice/overview/) can be used to collect, analyze and track real-time feedback within your e-commerce web site.  This topic will cover the steps needed to integrate the service into the Dynamics 365 Commerce e-commerce platform.
+You can integrate [Customer Voice](https://dynamics.microsoft.com/customer-voice/overview/) into your e-commerce site to collect, analyze, and track real-time customer feedback. To get started integrating Customer Voice, you must first create an account and select a Customer Voice project template for the type of feedback you want to collect. 
 
-As a prerequisite you will require an account within Dynamics 365 Customer Voice and have created the desired survey. 
+## Service integration
 
-## Service Integration
+To select a Customer Voice project template for the type of feedback you want to collect, follow these steps. 
 
-1. Select the survey you will be using from the [Customer Voice](https://customervoice.microsoft.com/Pages/ProjectPage.aspx.) portal.
-2. Select the **Send** tab and the **Embed** link which will provide the necessary code to embed within the site builder tool and select the type of survey you want as shown below.  We'll use the **Button** type for this example.
+1. Go to the [Customer Voice project template page](https://customervoice.microsoft.com/Pages/ProjectPage.aspx).
+1. Select the project template for the type of feedback you want to collect.
+1. Select the **Send** tab, and then under **Choose an embed format**, select the embed format. This will provide the necessary code to embed within the site builder tool and select the type of survey you want as shown below.  We'll use the **Button** type for this example.
 
 ![Customer Voice survey screen](media/customer-voice-integration-1.png)
 
@@ -34,7 +35,7 @@ The above code will be split into 3 parts described in the below sections.
 
 ### External script link
 
-The external script block needs to be embedded on any pages that will have a Customer Service survey.  The best way to do this is to create a fragment that holds the script and embed the fragment on the page template(s). The script that will be embedded looks like this:
+The following external script block must be embedded on any pages that will have a Customer Service survey. The best way to do this is to create a fragment that holds the script and embed the fragment on the page template(s). The script that will be embedded looks like this:
 
 ```html
 <script src=https://mfpembedcdnmsit.azureedge.net/mfpembedcontmsit/Embed.js type="text/javascript"></script>
