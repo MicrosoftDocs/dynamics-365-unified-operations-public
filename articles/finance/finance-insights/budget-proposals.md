@@ -14,7 +14,7 @@ ms.technology:
 # ms.search.form: BudgetProposalConfiguration, BudgetProposalConfigurationWizard  
 audience: Developer
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: [Global for most topics. Set Country/Region name for localizations]
