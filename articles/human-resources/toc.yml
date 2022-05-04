@@ -798,6 +798,8 @@
         href: hr-admin-integration-common-data-service-virtual-entities.md
       - name: Configure integration with Finance
         href: hr-admin-integration-finance.md
+      - name: Create links from Human resources to another environment
+        href: configure-links.md
       - name: Configure integration with Dayforce
         href: hr-admin-integration-dayforce.md
       - name: Create a recurring data export app
