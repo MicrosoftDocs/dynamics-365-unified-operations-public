@@ -4,7 +4,7 @@
 title: Dynamics 365 Commerce component versioning requirements
 description: This topic provides an overview of the component versioning requirements and dependencies for all components in the Microsoft Dynamics 365 Commerce ecosystem.
 author: rezaassadi
-ms.date: 04/13/2022
+ms.date: 05/04/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -89,7 +89,7 @@ For example, customers who are currently on version 10.0.23 can pause updates to
 ### In-store components
 
 Customers can pause up to three consecutive updates across the following components:
-- Commerce Scale Unit (Self-hosted)
+- Commerce Scale Unit (self-hosted)
 - Modern POS or Store Commerce
 - Hardware station
 
