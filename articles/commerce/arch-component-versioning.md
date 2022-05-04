@@ -74,7 +74,7 @@ The following table describes the current supported versions of various Commerce
 
 ## One Version requirements
 
-Commerce components follow the same [One Version service updates](https://cloudblogs.microsoft.com/dynamics365/bdm/2018/07/06/modernizing-the-way-we-update-dynamics-365/) that were announced in July 2018, and also the subsequently published [flexible service updates for Finance and Operations apps](https://cloudblogs.microsoft.com/dynamics365/bdm/2019/06/03/new-flexible-service-updates-for-dynamics-365-for-finance-and-operations/) that were announced in June 2019. For more information, see [One Version service updates FAQ](../fin-ops-core/fin-ops/get-started/one-version.md).
+Commerce components follow the One Version service updates. For more information, see [One Version service updates FAQ](../fin-ops-core/fin-ops/get-started/one-version.md).
 
 ### Cloud components
 
