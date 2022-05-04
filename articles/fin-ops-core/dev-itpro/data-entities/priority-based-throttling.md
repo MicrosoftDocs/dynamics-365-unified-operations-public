@@ -31,20 +31,20 @@ ms.dyn365.ops.version: Platform update 37
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about priority-based throttling for OData and custom service-based integrations.
+This topic provides information about priority-based throttling for Open Data Protocol (OData) and custom service-based integrations.
 
-Resource-based service protection API limits work together with the user-based service protection API limits as protective settings that prevent the over-utilization of resources. This helps to preserve the system's responsiveness and ensure consistent availability and performance for environments running Microsoft Dynamics 365 Finance + Operations apps. The resource-based limits will throttle service requests when the aggregate consumption of web server resources reaches levels that threaten service performance and availability.
+Resource-based limits for service protection application programming interfaces (APIs) work together with the user-based limits for service protection APIs as protective settings that help prevent the over-utilization of resources. In this way, they help preserve the system's responsiveness and ensure consistent availability and performance for environments that run Microsoft Dynamics 365 Finance + Operations apps. The resource-based limits will throttle service requests when the aggregate consumption of web server resources reaches levels that threaten service performance and availability.
 
-For resource-based service protection API limits, you can set the relative priority for Open Data Protocol (OData) and custom service-based integrations, depending on your business-critical need for these integrations. The throttling manager will then honor these priorities set for the requests. For OData and custom service requests, an error which states "Too many requests" will be sent when system health and performance are affected. 
+For resource-based service protection API limits, you can set the relative priority for OData and custom service-based integrations, depending on your business-critical need for these integrations. The throttling manager will then honor the priorities that are set for the requests. For OData and custom service-based requests, a "Too many requests" error will be sent if system health and performance are affected.
 
 The **Throttling Priority Mapping** page is used to assign priorities for integrations so that priorities can be honored when requests are throttled. 
 
 Setting appropriate priorities ensures that low-priority integrations will be throttled before high-priority integrations. For more information about how to set up integration, see [Enable connectivity with external services](/learn/modules/integrate-azure-finance-operations/7-connect-external). 
 
-There are two kinds of applications supported in Microsoft Azure Active Directory (Azure AD):
+Two kinds of applications are supported in Azure Active Directory (Azure AD):
 
-- User based - This flow uses a username and password for authentication and authorization. 
-- Azure AD app based - A confidential client is an application that can keep a client password confidential. The authorization server assigned this client password to the client application. 
+- **User based** – This flow uses a username and password for authentication and authorization. 
+- **Azure AD app based** – A confidential client is an application that can keep a client password confidential. The authorization server assigned this client password to the client application. 
 
 For more information, see [Authentication](services-home-page.md).
  
