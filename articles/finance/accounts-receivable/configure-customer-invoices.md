@@ -92,7 +92,7 @@ Use this process when one or more sales orders are ready to be invoiced, and you
 You can select multiple invoices on the **Sales order** list page and then use **Generate invoices** to consolidate them. On the **Posting invoice** page, you can change the **Summary order** setting to summarize by order number (where there are multiple packing slips for a single sales order) or by invoice account (where there are multiple sales orders for a single invoice account). Use the **Arrange** button to consolidate sales orders into single invoices, based on the **Summary order** settings.
 
 ## Post to Revenue account for sales order lines that have no price
-You will have the option to update the **Revenue** account in the **General ledger** for sales order lines that have no price. To set up or view this information, go to the **Post to Revenue account for zero priced sales order invoice lines** parameter on the **Ledger and sales tax** tab of the **Accounts receivable parameters** page. (**Accounts receivable > Setup > Accounts receivable parameters**). Select **Yes** to update the **Revenue** account for sales order invoice lines that have no price. A revenue account is defined on the **Inventory posting** parameter page, on the **Sales order** account definition tab. If this option is not selected, lines that do not have price information will not post to the **Revenue** account.
+You'll have the option to update the **Revenue** account in the **General ledger** for sales order lines that have no price. To set up or view this information, go to the **Post to Revenue account for zero priced sales order invoice lines** parameter on the **Ledger and sales tax** tab of the **Accounts receivable parameters** page. (**Accounts receivable > Setup > Accounts receivable parameters**). Select **Yes** to update the **Revenue** account for sales order invoice lines that have no price. A revenue account is defined on the **Inventory posting** parameter page, on the **Sales order** account definition tab. If this option isn't selected, lines that don't have price information won't post to the **Revenue** account.
 
 ## Additional settings that change the posting behavior
 The following fields change the behavior of the posting process.
@@ -160,7 +160,7 @@ The following fields change the behavior of the posting process.
 <td>Check credit limit</td>
 <td>Select the information that should be analyzed when a credit limit check is performed.
 <ul>
-<li><strong>None</strong> – There is no requirement for the credit limit check.</li>
+<li><strong>None</strong> – There's no requirement for the credit limit check.</li>
 <li><strong>Balance</strong> – The credit limit is checked against the customer balance.</li>
 <li><strong>Balance + packing slip or product receipt</strong> – The credit limit is checked against the customer balance and deliveries.</li>
 <li><strong>Balance+All</strong> – The credit limit is checked against the customer balance, deliveries, and open orders.</li>
