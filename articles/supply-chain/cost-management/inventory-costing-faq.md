@@ -1,40 +1,29 @@
 ---
-# required metadata
-
 title: Inventory costing frequently asked questions
-description: This document outlines frequently asked questions about inventory costing in Dynamics 365 Supply Chain Management.
-author: raprofit
+description: This topic outlines frequently asked questions about inventory costing in Dynamics 365 Supply Chain Management.
+author: rachel-profitt
 ms.date: 05/03/2022
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS:
+ms.search.form:
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm:
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-ms.search.industry: Manufacturing
 ms.author: raprofit
 ms.search.validFrom: 2022-05-03
-ms.dyn365.ops.version: AX 7.0.0
-
+ms.dyn365.ops.version: 10.0.27
 ---
+
 # Inventory costing frequently asked questions
 
-This document outlines frequently asked questions about inventory costing in Dynamics 365 Supply Chain Management.
+[!include [banner](../includes/banner.md)]
+
+This topic outlines frequently asked questions about inventory costing in Dynamics 365 Supply Chain Management.
 
 ## Inventory close, adjustments, and recalculation
 
 **Is the inventory close required?**
 
-Yes, if you plan to use the inventory archiving feature, the inventory close is required. If you do not plan to use the inventory archiving feature, we strongly recommend that you run the inventory close regardless of the costing model(s) that you use.
+Yes, if you plan to use the inventory archiving feature, the inventory close is required. If you don't plan to use the inventory archiving feature, we strongly recommend that you run the inventory close regardless of the costing model(s) that you use.
 
 **How frequently should the inventory close be run?**
 
@@ -42,45 +31,45 @@ The inventory close should be run at least once per ledger period. For example, 
 
 **Is inventory recalculation required?**
 
-No, the inventory recalculation is not required. If you use a periodic costing model such as FIFO, LIFO, or Weighted average, you should consider carefully if you run the inventory recalculation. Running the recalculation can provide more accurate costing in the heuristic model(s) you have selected.
+No, the inventory recalculation isn't required. If you use a periodic costing model such as FIFO, LIFO, or weighted average, you should consider carefully if you run the inventory recalculation. Running the recalculation can provide more accurate costing in the heuristic model(s) you have selected.
 
 **How frequently should the inventory recalculation be run?**
 
-If you are planning to run the inventory recalculation, we recommend that you consider running it daily as a batch process. If your organization does not require frequent reporting of the inventory values for periodic costing models, you can consider running this less frequently.
+If you're planning to run the inventory recalculation, we recommend that you consider running it daily as a batch process. If your organization doesn't require frequent reporting of the inventory values for periodic costing models, you can consider running this less frequently.
 
-**When should I use the on-hand inventory adjustment in the Closing and adjustments page?**
+**When should I use the on-hand inventory adjustment on the Closing and adjustments page?**
 
-The on-hand inventory adjustment can only be run after an inventory close is completed. It is typically run for the date after the last close. The on-hand adjustment can only adjust inventory that is still on-hand as of the date you run the adjustment.
+The on-hand inventory adjustment can only be run after an inventory close is completed. It's typically run for the date after the last close. The on-hand adjustment can only adjust inventory that is still on-hand as of the date you run the adjustment.
 
-**When should I use the inventory transaction adjustment in the Closing and adjustments page?**
+**When should I use the inventory transaction adjustment on the Closing and adjustments page?**
 
-The inventory transaction adjustment should be used before you run an inventory close. This process is typically used to correct an incorrect receipt. You cannot post an inventory transaction adjustment after an inventory close is run and the transaction is settled.
+You should use the inventory transaction adjustment before you run an inventory close. This process is typically used to correct an incorrect receipt. You can't post an inventory transaction adjustment after an inventory close is run and the transaction is settled.
 
 **Are purchase order returns treated like other issues during inventory close?**
 
-Yes, a purchase order receipt is an issue that is settled to a receipt in the heuristic model that you select for the item. If you are using a periodic costing model, you can use marking to override the heuristic cost.
+Yes, a purchase order receipt is an issue that is settled to a receipt in the heuristic model that you select for the item. If you're using a periodic costing model, you can use marking to override the heuristic cost.
 
 **What happens to sales order returns during inventory close?**
 
-A sales order return is treated as a receipt into inventory and issues are settled against the inventory based on the heuristic model you select for the item when you run the inventory close.
+When you run the inventory close, a sales order return is treated as a receipt into inventory and issues are settled against the inventory based on the heuristic model you select for the item.
 
 **What cost price is used on a sales order return?**
 
-When you create a return related to sales order, the **Unit price** field is copied from the original sales order, and the **Return cost price** field on the return is populated with the adjusted cost price from the original inventory transaction for the sales order line that is being returned. If the related inventory transaction is not Value open = No, the inventory close can cause updates to the issue cost on the original sales order. The **Return cost price** field is not updated in this scenario. However, when you post a Return order packing slip, the system will check the cost price and use the update cost on the return inventory transaction.
+When you create a return related to sales order, the **Unit price** field is copied from the original sales order, and the **Return cost price** field on the return is populated with the adjusted cost price from the original inventory transaction for the sales order line that is being returned. If the related inventory transaction isn't **Value open** = *No*, the inventory close can cause updates to the issue cost on the original sales order. The **Return cost price** field isn't updated in this scenario. However, when you post a return order packing slip, the system will check the cost price and use the update cost on the return inventory transaction.
 
 For a return on standard cost item that is related to sales order, the system will use the standard cost from the time of the original sales order, even if a new standard cost is active for the item.
 
-When you create a return that is not related to a sales order, the **Return cost price** is populated from the active **Item price** that you have for the item in the **Site** you are creating the return order for. If you do not have an active cost price in a costing version for the item, the value will be zero. If you leave the value as zero, a warning will be presented that the **Return lot ID** or **Return cost price** are not specified.
+When you create a return that isn't related to a sales order, the **Return cost price** is populated from the active **Item price** that you have for the item in the **Site** you're creating the return order for. If you don't have an active cost price in a costing version for the item, the value will be zero. If you leave the value as zero, a warning will be presented that the **Return lot ID** or **Return cost price** aren't specified.
 
 **What is the expected performance of the inventory close?**
 
-There are many factors that can affect the performance of the inventory close. This includes the total number of items, the total number of transactions in the period, the inventory model(s) that you use, and the number of batch helpers you configure in the Inventory and warehouse management parameters. You can expect that the closing may take as littles as a few minutes to many hours to complete. There is no specific guidance on the length of time the close should take to run. You should define your nonfunctional business requirements for performance of the inventory close and work closely with your partner to define the schedule for running the inventory close process. If you are experiencing unexpected deficient performance of the inventory closing process, you should open a support ticket.
+Many factors can affect the performance of the inventory close. This includes the total number of items, the total number of transactions in the period, the inventory model(s) you use, and the number of batch helpers you configure in the inventory and warehouse management parameters. You can expect that the closing may take as little as a few minutes to as many as several hours to complete. There's no specific guidance on the length of time the close should take to run. You should define your nonfunctional business requirements for performance of the inventory close and work closely with your partner to define the schedule for running the inventory close process. If you're experiencing unexpectedly deficient performance of the inventory closing process, you should open a support ticket.
 
 ## Costing sheet and indirect costs
 
 **Which costing models support the costing sheet?**
 
-While the costing sheet is most typically used in organizations that use standard costing, you can use the costing sheet with any costing model available in Dynamics 365 Supply Chain Management.
+While the costing sheet is most typically used in organizations that use standard costing, you can use the costing sheet with any costing model available in Supply Chain Management.
 
 **Can I have multiple costing sheets for various parts of my organization?**
 
@@ -88,105 +77,105 @@ You can only have one costing sheet per legal entity.
 
 **Can I have different costing sheets for each site?**
 
-You cannot have a different costing sheet for each site. You can only create one costing sheet for each legal entity. You can, however, configure total nodes, cost groups, or indirect cost nodes per site. This process would be manual, and you would need to maintain the hierarchy and item assignments into the costing sheet when you have organizational or operational changes. It should be noted that if a single item is produced or purchased into more than one site, there is no mechanism to treat the item differently on the costing sheet for each site. It is also important to note that all indirect cost codes have a rate or surcharge defined in your costing version. The costs that you define are always site specific.
+You can't have a different costing sheet for each site. You can only create one costing sheet for each legal entity. You can, however, configure total nodes, cost groups, or indirect cost nodes per site. This process would be manual, and you would need to maintain the hierarchy and item assignments into the costing sheet when you have organizational or operational changes. Note that if a single item is produced or purchased into more than one site, there is no mechanism to treat the item differently on the costing sheet for each site. Note also that all indirect cost codes have a rate or surcharge defined in your costing version. The costs that you define are always site specific.
 
 **Can I deactivate and activate versions of the costing sheet?**
 
-While the costing sheet does not keep a detailed version history, you can make changes to the costing sheet and when you are ready, save and validate the costing sheet. There is no mechanism to go back to an older version of a costing sheet or see the changes that are made to the costing sheet. If you start changes and do not want the changes to be effective you can close the screen without saving and validating. You will be prompted to discard the changes.
+While the costing sheet doesn't keep a detailed version history, you can make changes to the costing sheet and when you're ready, save and validate the costing sheet. There's no mechanism to go back to an older version of a costing sheet or see the changes that are made to the costing sheet. If you start changes and don't want the changes to be effective, you can close the screen without saving and validating. You'll be prompted to discard the changes.
 
 **Can I create indirect costs for each item?**
 
 You can create indirect cost codes in your costing sheet that are of the **Node types** Surcharge, Rate, and Output unit based and define the rate or surcharge to be specific to an item number. You do this by creating a new row in either the **Rate** FastTab or **Surcharge** FastTab. In the **Valid for** field, you can select Table, and in the **Relation** field, you can select the specific item number.
 
-**Can I create an indirect cost that is not related to a specific item?**
+**Can I create an indirect cost that isn't related to a specific item?**
 
-Yes, you can create an indirect cost code with the Node type set to Output unit based. The Subtype field can be set to the Quantity, Weight, or Volume of the item you are producing. The rate that you specify on the Rate FastTab will be applied to the subtype you have selected. For example, if you select Quantity in the Subtype field and enter the rate as 1.00 USD, then you create a production or batch order for a quantity of 10, the indirect cost added to the finished good is 10.00 USD.
+Yes, you can create an indirect cost code with the **Node type** set to *Output unit based*. The **Subtype** field can be set to the *Quantity*, *Weight*, or *Volume* of the item you're producing. The rate that you specify on the **Rate** FastTab will be applied to the subtype you selected. For example, if you set **Subtype** to *Quantity* and **Rate** to *1.00 USD*, then you will create a production or batch order for a quantity of 10, the indirect cost added to the finished good is 10.00 USD.
 
 **Can I use the costing sheet to split my production costs by hours and materials?**
 
-Yes, you can create **Total** nodes in your costing sheet to separate the costs by any grouping you choose. For example, you can create one **Total** node called Hours, and another **Total** row called Materials. Under each total node you would add each cost group that related to your hours and materials respectively.
+Yes, you can create **Total** nodes in your costing sheet to separate the costs by any grouping you choose. For example, you can create one **Total** node called Hours, and another **Total** row called Materials. Under each total node, you would add each cost group that related to your hours and materials respectively.
 
 ## Dimension groups
 
 **Can I manage cost at a batch or serial number level?**
 
-Yes, if you are using a periodic costing model such as FIFO, LIFO, LIFO Date, Weighted average, or Weighted average date, you can select the **Financial inventory** option for **Batch** or **Serial number** on the **Tracking dimension group** to track costs at the detailed level.
+Yes, if you're using a periodic costing model such as FIFO, LIFO, LIFO Date, weighted average, or weighted average date, you can select the **Financial inventory** option for **Batch** or **Serial number** on the **Tracking dimension group** to track costs at the detailed level.
 
 **Can I manage costs at a location level?**
 
-No, you cannot select the **Financial inventory** option for the **Location** dimension in the **Storage dimension group**. If your organization needs to track costs at a more granular level, consider if you can create virtual warehouses and select the option for **Financial inventory** on the **Warehouse** dimension in your **Storage dimension group**.
+No, you can't select the **Financial inventory** option for the **Location** dimension in the **Storage dimension group**. If your organization needs to track costs at a more granular level, consider if you can create virtual warehouses and select the option for **Financial inventory** on the **Warehouse** dimension in your **Storage dimension group**.
 
 **Should I enable the Use warehouse management processes option on the Storage dimension group?**
 
-Yes, if you think that you might want to use the advanced warehouse management features in the future, you should enable this option. Once you save the **Storage dimension group**, you can no longer make any changes to the **Use warehouse management processes** option on the **Storage dimension group**. If you decide to use warehouse management processes later, you will be required to create a new warehouse with the option enabled. There is no automated process to move all the inventory from one warehouse to another warehouse or to copy related configurations to a new warehouse.
+Yes, if you think that you might want to use the advanced warehouse management features in the future, you should enable this option. Once you save the **Storage dimension group**, you can no longer make any changes to the **Use warehouse management processes** option on the **Storage dimension group**. If you decide to use warehouse management processes later, you'll be required to create a new warehouse with the option enabled. There's no automated process to move all the inventory from one warehouse to another warehouse or to copy related configurations to a new warehouse.
 
 **Can I enable the Use warehouse management processes on the Storage dimension group even if I am not planning to use advanced warehousing?**
 
-Yes, even if you do not plan to use the advanced warehouse management options, you can enable the **Use warehouse management processes** option on the **Storage dimension group**. It is important to note that you will need to complete the minimum configuration such as Reservation hierarchies, Unit sequence groups, and so on to create and process transactions. However, the settings for advanced warehousing are generally ignored when you manually process picking lists, packing slips, and product receipts, for example in the sales order and purchase order pages.
+Yes, even if you don't plan to use the advanced warehouse management options, you can enable the **Use warehouse management processes** option on the **Storage dimension group**. Note that you'll need to complete the minimum configuration (such as reservation hierarchies, unit sequence groups, and so on) to create and process transactions. However, the settings for advanced warehousing are generally ignored when you manually process picking lists, packing slips, and product receipts (for example, on the sales order and purchase order pages).
 
 **When should I enable the Physical inventory option on a storage or tracking dimension group?**
 
-You should select the **Physical inventory** option on storage and tracking dimension groups when you need to keep detailed inventory records by that dimension. Typically, any dimension that is active, will also be tracked physically. This means that any receipt, issue, or movement of the inventory will be tracked at the dimension you have selected. If a dimension is not mandatory, for example the license plate, you can select the **Blank receipt allowed** and **Blank issue allowed** options to allow users to receive, issue, or move inventory without the dimension specified.
+You should select the **Physical inventory** option on storage and tracking dimension groups when you need to keep detailed inventory records by that dimension. Typically, any dimension that is active, will also be tracked physically. This means that any receipt, issue, or movement of the inventory will be tracked at the dimension you've selected. If a dimension isn't mandatory, for example the license plate, you can select the **Blank receipt allowed** and **Blank issue allowed** options to allow users to receive, issue, or move inventory without the dimension specified.
 
 **When should I enable the Financial inventory option on a storage or tracking dimension group?**
 
-You should select **Financial inventory** option on a storage and tracking dimension groups when you need to keep detailed financial records by that dimension. The **Site** dimensions are always tracked financially. Additional dimensions are optional for tracking financially. If you use a periodic costing model such as FIFO, LIFO, or Weighted average, selecting the financial inventory option for a dimension indicates that you will only make settlements where the receipt and issue have the same dimension values. For example, if you select **Financial inventory** for the **Warehouse** dimension, then you will have a different cost in each warehouse and receipts and issues from different warehouses cannot be settled.
+You should select **Financial inventory** option on a storage and tracking dimension groups when you need to keep detailed financial records by that dimension. The **Site** dimensions are always tracked financially, while other dimensions are optional for tracking financially. If you use a periodic costing model such as FIFO, LIFO, or weighted average, selecting the financial inventory option for a dimension indicates that you will only make settlements where the receipt and issue have the same dimension values. For example, if you select **Financial inventory** for the **Warehouse** dimension, then you will have a different cost in each warehouse and receipts and issues from different warehouses can't be settled.
 
 **Can I make changes to a product, storage, or tracking dimension group after transactions exist?**
 
-The only changes you can make to an item model group after you create it are to the **Coverage plan by dimension**, **For purchase prices**, and **For sales prices** fields where the **Active** check box is selected on a dimension in the item model group. Any other changes including selecting or deselecting the **Active**, **Blank issue allowed**, **Blank receipt allowed**, **Physical inventory**, and **Financial inventory** options are not allowed.
+The only changes you can make to an item model group after you create it are to the **Coverage plan by dimension**, **For purchase prices**, and **For sales prices** fields where the **Active** check box is selected on a dimension in the item model group. Any other changes including selecting or deselecting the **Active**, **Blank issue allowed**, **Blank receipt allowed**, **Physical inventory**, and **Financial inventory** options aren't allowed.
 
 **Can I change the product, storage, or tracking dimension group on a released product?**
 
-If the on-hand inventory for a product is zero and all the inventory transactions are Value open = No, you can change the storage and tracking dimension groups on the released production page. You cannot change the Product dimension group after the record is created.
+If the on-hand inventory for a product is zero and all the inventory transactions are Value open = No, you can change the storage and tracking dimension groups on the released production page. You can't change the Product dimension group after the record is created.
 
 ## Item model groups
 
 **When should I select the option for Stocked product?**
 
-You should select the **Stocked product** option for any item that will be tracked in your inventory. When this option is selected detailed inventory transactions are kept tracking the receipt and issue of the item. This option is typically selected for any tangible item that you keep in your warehouse, for example. You should also select this option if you plan to add a non-tangible item such as a service item into your BOM or formulas. When you do not select the **Stocked product** option, no inventory transactions are tracked in the inventory sub ledger and the cost of the items are typically expensed into your general ledger. This option is often used for shop supplies or services, for example that are not included in your BOMs or Formulas.
+You should select the **Stocked product** option for any item that will be tracked in your inventory. When this option is selected detailed inventory transactions are kept tracking the receipt and issue of the item. This option is typically selected for any tangible item that you keep in your warehouse, for example. You should also select this option if you plan to add a non-tangible item such as a service item into your BOM or formulas. When you don't select the **Stocked product** option, no inventory transactions are tracked in the inventory sub ledger and the cost of the items are typically expensed into your general ledger. This option is often used for shop supplies or services, for example that aren't included in your BOMs or Formulas.
 
 **When should I select the option for post physical inventory?**
 
-The **Post physical inventory** option is typically selected when the **Stocked product** option is selected. When you select this option, the system will track the physical update to the item on the inventory transaction. This option is used in coordination with parameters in Accounts payable, Accounts receivable, and Production control that indicate the physical update should create a voucher. You will typically select this option when you want to update the ledger when you physically update the inventory. If Dynamics 365 is not your system of record for financials you may choose to disable this option.
+The **Post physical inventory** option is typically selected when the **Stocked product** option is selected. When you select this option, the system will track the physical update to the item on the inventory transaction. This option is used in coordination with parameters in Accounts payable, Accounts receivable, and Production control that indicate the physical update should create a voucher. You will typically select this option when you want to update the ledger when you physically update the inventory. If Supply Chain Management isn't your system of record for financials you may choose to disable this option.
 
 **When should I select the option for post financial inventory?**
 
-The **Post financial inventory** option is typically selected when the **Stocked product** option is selected. This option is used in coordination with parameters in Accounts payable, Accounts receivable, and Production control that indicate the financial update should create a voucher. You will typically select this option when you want to update the ledger when you financially update the inventory (such as invoicing sales orders and purchase orders or ending a production order. If Dynamics 365 is not your system of record for financials you may choose to disable this option.
+The **Post financial inventory** option is typically selected when the **Stocked product** option is selected. This option is used in coordination with parameters in Accounts payable, Accounts receivable, and Production control that indicate the financial update should create a voucher. You will typically select this option when you want to update the ledger when you financially update the inventory (such as invoicing sales orders and purchase orders or ending a production order. If Supply Chain Management isn't your system of record for financials you may choose to disable this option.
 
 **When should I select the option for Post to Deferred Revenue Account on Sales Delivery?**
 
-The **Post to Deferred Revenue Account on Sales Delivery** is used to indicate if you want to recognize revenue in the general ledger when you post a packing slip for a sales order. This option is typically used when you have a long delay between the packing slip and invoice on a sales order or when it is not possible to invoice all sales orders in the period. It is not uncommon to leave this option clear if you post your sales order invoices immediately after you post the packing slip to avoid the additional general ledger postings which are immediately reversed when you invoice a sales order.
+The **Post to Deferred Revenue Account on Sales Delivery** is used to indicate if you want to recognize revenue in the general ledger when you post a packing slip for a sales order. This option is typically used when you have a long delay between the packing slip and invoice on a sales order or when it isn't possible to invoice all sales orders in the period. It isn't uncommon to leave this option clear if you post your sales order invoices immediately after you post the packing slip to avoid the additional general ledger postings which are immediately reversed when you invoice a sales order.
 
 **When should I select the option for Accrue liability on product receipt?**
 
-In most organizations, you will want to select the **Accrue liability on product receipt** option for all item model groups whether you have a stocked product or a not-stocked product. This option is used to post an accrual to the general ledger based on product receipt price. Because there is typically a delay between posting the product receipt for a purchase order and posting of the invoice, most organization have a need to recognize the liability in the balance sheet to be compliant with local regulations such as Generally Accepted Accounting Practices (GAAP). If Dynamics 365 is not your system of record for financials, you may choose to clear this option. If your organization uses **Procurement categories** on purchase orders, you can control the accrual requirement in the **Purchasing policies** page on the **Category policy rule** by selecting the **Accrue purchase expense on receipt** option.
+In most organizations, you will want to select the **Accrue liability on product receipt** option for all item model groups whether you have a stocked product or a not-stocked product. This option is used to post an accrual to the general ledger based on product receipt price. Because there is typically a delay between posting the product receipt for a purchase order and posting of the invoice, most organization have a need to recognize the liability in the balance sheet to be compliant with local regulations such as Generally Accepted Accounting Practices (GAAP). If Supply Chain Management isn't your system of record for financials, you may choose to clear this option. If your organization uses **Procurement categories** on purchase orders, you can control the accrual requirement in the **Purchasing policies** page on the **Category policy rule** by selecting the **Accrue purchase expense on receipt** option.
 
-**How can I prevent a user from posting a purchase order product receipt if a receipt registration is not yet posted?**
+**How can I prevent a user from posting a purchase order product receipt if a receipt registration isn't yet posted?**
 
 You can prevent a user from posting a purchase order product receipt if a purchase order registration has not yet occurred by selecting the **Registration requirements** option on the **Item model group**. This option is typically used in organizations that use a two-step receiving process or in scenarios when you need to register a batch or serial number, for example, on the items you are receiving. It is important to note that the **Registration requirement** option applies to all inventory receipts for an item and not just purchase orders. For example, an inventory journal that has a positive quantity, or a production order report as finished journal.
 
-**How can I prevent a user from posting a purchase order invoice if a product receipt is not yet posted?**
+**How can I prevent a user from posting a purchase order invoice if a product receipt isn't yet posted?**
 
 You can prevent a user from posting a purchase order product invoice if a purchase order product receipt has not yet occurred by selecting the **Receiving requirements** option on the **Item model group**. This option is typically used in organizations that require receipts to be physically recognized in the general ledger for accruals. It is important to note that the **Receiving requirement** option applies to all inventory receipts for an item and not just purchase orders. For example, an inventory journal that has a positive quantity, or a production order report as finished journal. If your organization uses **Procurement categories** on purchase orders, you can control the requirement of a receipt in the **Purchasing policies** page on the **Category policy rule** by selecting the **Receiving requirements** option.
 
-**How can I prevent a user from posting a sales order packing slip if a sales order picking list is not yet posted?**
+**How can I prevent a user from posting a sales order packing slip if a sales order picking list isn't yet posted?**
 
 You can prevent a user from posting a sales order packing slip or invoice if a sales order picking list has not yet occurred by selecting the **Picking requirements** option on the **Item model group**. This option is typically used in organizations that perform a physical picking process in the warehouse, for example picking with the warehouse mobile device. It is important to note that the **Picking requirement** option applies to all inventory issues for an item and not just sales orders. For example, an inventory journal that has a negative quantity, or a production order picking list journal.
 
-**How can I prevent a user from posting a sales order invoice if the sales order packing slip is not yet posted?**
+**How can I prevent a user from posting a sales order invoice if the sales order packing slip isn't yet posted?**
 
 You can prevent a user from posting a sales order invoice if a sales order packing slip has not yet occurred by selecting the **Deduction requirements** option on the **Item model group**. This option is typically used in organizations that perform a physical packing process in the warehouse, for example packing with the warehouse mobile device or generating a document to include with the items being shipped. It is important to note that the **Deduction requirement** option applies to all inventory issues for an item and not just sales orders. For example, an inventory journal that has a negative quantity, or a production order picking list journal.
 
 **Can I prevent items that are registered from being sold?**
 
-When an item is registered in your inventory in Dynamics 365 the quantity is physically available for issuing in the system. If you require items that are registered but not yet received to *not* be available for issuing to sales orders or production orders for example, consider using the Inventory status, Inventory blocking, Quality orders, Quarantine orders, or Reservations features to manage the business process.
+When an item is registered in your inventory in Supply Chain Management the quantity is physically available for issuing in the system. If you require items that are registered but not yet received to *not* be available for issuing to sales orders or production orders for example, consider using the Inventory status, Inventory blocking, Quality orders, Quarantine orders, or Reservations features to manage the business process.
 
 ## Production costing
 
 **Can I use one costing model for raw materials, and a different costing model for finished goods?**
 
-Yes, you can use different costing models for each item. It is not uncommon for manufacturers to use a periodic costing model for raw materials, and standard cost for semi-finished and finished goods.
+Yes, you can use different costing models for each item. It isn't uncommon for manufacturers to use a periodic costing model for raw materials, and standard cost for semi-finished and finished goods.
 
 **How can you drive overheads off machine costs?**
 
@@ -196,19 +185,19 @@ To drive overheads off your machine costs, you will need to create resources gro
 
 You can generally recognize costs related to energy consumption in one of two ways:
 
-1.  Creating a line in your **BOM** or **Formula**. Typically, this is done as a service item, and you can specify the unit of measure that you are consuming in relationship to the quantity you are producing. This allows the user to consume a different amount during the production process. You can automatically consume the items based on the value you select in the **Flushing principle**.
+1. Creating a line in your **BOM** or **Formula**. Typically, this is done as a service item, and you can specify the unit of measure that you are consuming in relationship to the quantity you are producing. This allows the user to consume a different amount during the production process. You can automatically consume the items based on the value you select in the **Flushing principle**.
 
-2.  Creating an indirect cost in your **Costing sheet**. Typically, this is done to allocate the total cost of your energy consumption across your production process. You can use the **Cost group** and the **Absorption basis** to scale the consumption based on materials or labor in your route, for example.
+2. Creating an indirect cost in your **Costing sheet**. Typically, this is done to allocate the total cost of your energy consumption across your production process. You can use the **Cost group** and the **Absorption basis** to scale the consumption based on materials or labor in your route, for example.
 
 You should select the best option based on your reporting, reconciliation, and operational requirements.
 
 **Can I capture resource details in the BOM or Formula?**
 
-Resource details can only be captured in a route operation. While you can create a service item to represent a resource and assign a cost to increase the cost calculation for a finished good, we do not typically recommend this approach. It would instead be recommended to create a simple route with one line to track the resource costs and configure the operation to be automatically consumed at either the start or the finish of the production order.
+Resource details can only be captured in a route operation. While you can create a service item to represent a resource and assign a cost to increase the cost calculation for a finished good, we don't typically recommend this approach. It would instead be recommended to create a simple route with one line to track the resource costs and configure the operation to be automatically consumed at either the start or the finish of the production order.
 
 **Can you view the calculation details if the cost is entered manually?**
 
-No, if you manually enter the price in the **Item price** page, the **View calculation details** and **Report calculation details** buttons are not available. If you click the **Cost rollup by cost group** button for a cost price that is entered manually, you will receive a summarized line and all costs are rolled up to the finished good item.
+No, if you manually enter the price in the **Item price** page, the **View calculation details** and **Report calculation details** buttons aren't available. If you click the **Cost rollup by cost group** button for a cost price that is entered manually, you will receive a summarized line and all costs are rolled up to the finished good item.
 
 **Does the system calculate variances on a production order when you enter the cost manually?**
 
@@ -216,7 +205,7 @@ Yes, the system calculates variances when you manually enter a standard cost. Ho
 
 **How can I carry the variances from a sub production order to the parent production order?**
 
-When you use a periodic costing model such as FIFO, LIFO, or Weighted average, the costs from a sub-production will be recognized in the heuristic model you have selected for the items. If you need actual costing, consider using the **Marking** principle to indicate which sub-production is issued to a parent production order, or you can consider using the **Financial inventory** option on the **Tracking dimension group** for **Batch** or **Serial number**, for example.
+When you use a periodic costing model such as FIFO, LIFO, or weighted average, the costs from a sub-production will be recognized in the heuristic model you have selected for the items. If you need actual costing, consider using the **Marking** principle to indicate which sub-production is issued to a parent production order, or you can consider using the **Financial inventory** option on the **Tracking dimension group** for **Batch** or **Serial number**, for example.
 
 **How does the flushing principle affect consumption?**
 
@@ -250,27 +239,27 @@ There is no limit to the number of inventory value report configurations you can
 
 **Can you use the inventory value report to analyze the cost of an item in each warehouse?**
 
-Yes, you can select the option for **View** or **Total** on the **Warehouse dimension** in the **Inventory value report** configuration. However, it is critical to note that only dimensions where the **Financial inventory** option is enabled on the **Storage dimension group** will show values on the report. Other dimensions will show only blank columns. For more information, refer to [Inventory value report examples and logic.](/inventory-value-report-examples.md)
+Yes, you can select the option for **View** or **Total** on the **Warehouse dimension** in the **Inventory value report** configuration. However, it is critical to note that only dimensions where the **Financial inventory** option is enabled on the **Storage dimension group** will show values on the report. Other dimensions will show only blank columns. For more information, see [Inventory value report examples and logic](inventory-value-report-examples.md).
 
 **How can I view the inventory quantity as of a specific date with the weighted average?**
 
-You can use the **Inventory aging report** which includes an **Average unit cost** column to see the value of inventory as of a specific date. For more information, refer to [Inventory aging report examples and logic](/inventory-aging-report.md).
+You can use the **Inventory aging report** which includes an **Average unit cost** column to see the value of inventory as of a specific date. For more information, see [Inventory aging report examples and logic](inventory-aging-report.md).
 
 **How can you view which receipt transactions are settled against an issue transaction?**
 
-You can view the settlements for an inventory transaction by clicking **Settlements** or **Cost explorer** in the **Inventory** tab of the Action Pane on the **Inventory transaction** or **Inventory transaction details** page. If you select a receipt to view the issues related to the transaction, the Cost explorer does not show the details, only if you select an issue transaction.
+You can view the settlements for an inventory transaction by clicking **Settlements** or **Cost explorer** in the **Inventory** tab of the Action Pane on the **Inventory transaction** or **Inventory transaction details** page. If you select a receipt to view the issues related to the transaction, the Cost explorer doesn't show the details, only if you select an issue transaction.
 
 **How does the inventory value report display items with a positive physical quantity and a negative financial value?**
 
-The inventory value report separates the physical and financial amounts and quantities into their own columns. The values displayed on the report are as of the date range you have selected when running the report. The level of summarization displayed is dependent on the settings you choose. If an item has transactions that have been physically received and financially issued, you will see the quantities and values summed independently. If you select to view the detail level as Transactions, you will see the rows for each receipt and issue separately with the physical and financial quantities and amounts respectively. For more information, refer to [Inventory value report examples and logic.](/inventory-value-report-examples.md)
+The inventory value report separates the physical and financial amounts and quantities into their own columns. The values displayed on the report are as of the date range you have selected when running the report. The level of summarization displayed is dependent on the settings you choose. If an item has transactions that have been physically received and financially issued, you will see the quantities and values summed independently. If you select to view the detail level as Transactions, you will see the rows for each receipt and issue separately with the physical and financial quantities and amounts respectively. For more information, see [Inventory value report examples and logic](inventory-value-report-examples.md).
 
 **What is the impact of storage and tracking dimension groups on the inventory value report?**
 
-If you select the **Financial value** option for a dimension on **Storage** or **Tracking dimension group**, you can select to **View** the dimension or the **Total** for the dimension in the **Inventory value report** configuration. If you select the **View** or **Total** option for a dimension where the **Financial value** option for a dimension is not selected, the column will display with blank values on the report output. If you have enabled the **Financial value** option for a dimension on a **Storage** or **Tracking dimension group**, and you do not select the **View** or **Total** option on the **Inventory value report** configuration, the system will summarize the values for the dimensions you have selected where they are financially tracked.
+If you select the **Financial value** option for a dimension on **Storage** or **Tracking dimension group**, you can select to **View** the dimension or the **Total** for the dimension in the **Inventory value report** configuration. If you select the **View** or **Total** option for a dimension where the **Financial value** option for a dimension isn't selected, the column will display with blank values on the report output. If you have enabled the **Financial value** option for a dimension on a **Storage** or **Tracking dimension group**, and you don't select the **View** or **Total** option on the **Inventory value report** configuration, the system will summarize the values for the dimensions you have selected where they are financially tracked.
 
 **Can you customize the Power BI embedded reports for costing?**
 
-Yes, users with the correct security can make updates to the report design canvas for any Power BI embedded report in Dynamics 365. For more information, refer to [Customize embedded reports in analytical workspaces](/fin-ops-core/dev-itpro/analytics/customize-analytical-workspace.md).
+Yes, users with the correct security can make updates to the report design canvas for any Power BI embedded report in Supply Chain Management. For more information, see [Customize embedded reports in analytical workspaces](../../fin-ops-core/dev-itpro/analytics/customize-analytical-workspace.md).
 
 **Where can you view the variance analysis statement?**
 
@@ -284,7 +273,7 @@ Yes, you can select the **Use cost price by variant** option on the **Manage cos
 
 **Can I maintain the cost for each warehouse?**
 
-No, you cannot maintain the **Item price** by warehouse. However, you can maintain trade agreements for purchase prices or sales prices by warehouse. To do this you must first select the **For purchase prices** or **For sales prices** option for the dimension in the **Storage dimension group** page. Then when you create the Trade agreement journal, and open the Lines the dimensions you can click In**ventory &gt; Display dimensions** to select which dimension should be displayed in the grid. To save the setup and persist the selected dimensions each time you open the page, select the **Save setup** option, and then click **OK**. You can only enter the dimensions for items that have the dimensions active in their **Product dimension group**.
+No, you can't maintain the **Item price** by warehouse. However, you can maintain trade agreements for purchase prices or sales prices by warehouse. To do this you must first select the **For purchase prices** or **For sales prices** option for the dimension in the **Storage dimension group** page. Then when you create the Trade agreement journal, and open the Lines the dimensions you can click In**ventory &gt; Display dimensions** to select which dimension should be displayed in the grid. To save the setup and persist the selected dimensions each time you open the page, select the **Save setup** option, and then click **OK**. You can only enter the dimensions for items that have the dimensions active in their **Product dimension group**.
 
 **What are the price charges?**
 
@@ -298,19 +287,19 @@ When you create a **Trade agreement journal**, you can specify the currency you 
 
 **How should you configure costs for items that are procured in multiple currencies?**
 
-Costs cannot be configured in more than one currency. The cost that you specify on the Item price or default costs that you enter in the **Price** field on the **Manage cost** FastTab of the **Released product** page are always expressed in the **Accounting currency** of the **Ledger** for the **Legal entity** you have selected.
+Costs can't be configured in more than one currency. The cost that you specify on the Item price or default costs that you enter in the **Price** field on the **Manage cost** FastTab of the **Released product** page are always expressed in the **Accounting currency** of the **Ledger** for the **Legal entity** you have selected.
 
 If your organization uses Standard costing, you should define a strategy for defining the costs when there are multiple currencies, and define a process for regularly updating the cost to reduce the number of variances that are posted.
 
 **Can you use the Profit setting on the Cost group to calculate sales prices?**
 
-Yes, you can use the Profit setting on the Cost group page to add a percentage when calculating sales prices by using a Cost calculation. For more information refer to, [BOM calculations](/bom-calculations.md).
+Yes, you can use the Profit setting on the Cost group page to add a percentage when calculating sales prices by using a Cost calculation. For more information see, [BOM calculations](bom-calculations.md).
 
 ## Marking
 
 **How does marking affect periodic costing models?**
 
-When you use a periodic costing model such as FIFO, LIFO, or Weighted average, and you have marked a receipt transaction against an issue transaction, the heuristic model of the item is ignored during the inventory closing process. Instead, the system will use the actual cost of the receipt for the cost of the issue.
+When you use a periodic costing model such as FIFO, LIFO, or weighted average, and you have marked a receipt transaction against an issue transaction, the heuristic model of the item is ignored during the inventory closing process. Instead, the system will use the actual cost of the receipt for the cost of the issue.
 
 **What happens during inventory close when I use marking?**
 
@@ -318,7 +307,7 @@ When you mark receipts and issues, the inventory close will settle the transacti
 
 **Can you manually mark transactions when you use standard costing or moving average?**
 
-No, you cannot manually mark receipts or issues when you use standard costing or moving average. If transactions are marked automatically, for example direct delivery or intercompany orders, the marking record will remain which acts as a hard reservation. However, when you use standard costing or moving average, marking of records has no effect on the cost of the items.
+No, you can't manually mark receipts or issues when you use standard costing or moving average. If transactions are marked automatically, for example direct delivery or intercompany orders, the marking record will remain which acts as a hard reservation. However, when you use standard costing or moving average, marking of records has no effect on the cost of the items.
 
 **How does marking affect the profit and loss statement?**
 
@@ -326,23 +315,23 @@ When you mark an issue transaction against a receipt, the cost for the issue wil
 
 **How does marking affect master planning?**
 
-You can optionally select an option in the Master planning parameters pate on the Standard update tab for the Update marking field. The option you select here is used when you firm a planned order that is generated by master planning. When you select the option for No, the system does not perform any marking. If you select Standard, the system will mark receipts against issues according to the pegging. A requirement order is marked against a fulfillment order. If there is some quantity remaining on the fulfillment the fulfillment order is not marked. The final option you can select is Extended. This option marks both the requirement orders and fulfillment orders regardless of whether any quantity remains open on the fulfillment order.
+You can optionally select an option in the Master planning parameters pate on the Standard update tab for the Update marking field. The option you select here is used when you firm a planned order that is generated by master planning. When you select the option for No, the system doesn't perform any marking. If you select Standard, the system will mark receipts against issues according to the pegging. A requirement order is marked against a fulfillment order. If there is some quantity remaining on the fulfillment the fulfillment order isn't marked. The final option you can select is Extended. This option marks both the requirement orders and fulfillment orders regardless of whether any quantity remains open on the fulfillment order.
 
 ## Negative inventory
 
 **When should I allow physical negative inventory?**
 
-In general, it not recommended to allow physical negative inventory. (It is not possible to have less than zero of a tangible item in your warehouse). However, some industries and business scenarios may have business processes that restrict operations that require the system to allow the inventory to go negative physically. For example, retailers may not want to prevent the sale of an item at the point of sale if an item is brought to the register even if the system identifies that no items are available. Another example is process manufacturers who can consume more than what is recommended in the formula or the consumption is estimated rather than precise that causes the consumption to exceed the amount in a specific location such as a tank. When possible, you should evaluate your business process and try to make improvements to the business process to ensure that inventory cannot be negative. If you need to allow negative inventory, you should have a clear business process for correcting the negative inventory as it can have a negative impact on costing.
+In general, it not recommended to allow physical negative inventory. (It isn't possible to have less than zero of a tangible item in your warehouse). However, some industries and business scenarios may have business processes that restrict operations that require the system to allow the inventory to go negative physically. For example, retailers may not want to prevent the sale of an item at the point of sale if an item is brought to the register even if the system identifies that no items are available. Another example is process manufacturers who can consume more than what is recommended in the formula or the consumption is estimated rather than precise that causes the consumption to exceed the amount in a specific location such as a tank. When possible, you should evaluate your business process and try to make improvements to the business process to ensure that inventory can't be negative. If you need to allow negative inventory, you should have a clear business process for correcting the negative inventory as it can have a negative impact on costing.
 
 **When should I allow financial negative inventory?**
 
-In general, it is recommended that most organizations allows financial negative inventory. (In most cases purchase order invoices are not processed before you can ship the items.) You should select this option when you have specific business processes that require the final cost of the purchase order to be reflected in the sales price. This may be required for example in a make-to-order industry or in certain regions where it is required by law.
+In general, it is recommended that most organizations allows financial negative inventory. (In most cases purchase order invoices aren't processed before you can ship the items.) You should select this option when you have specific business processes that require the final cost of the purchase order to be reflected in the sales price. This may be required for example in a make-to-order industry or in certain regions where it is required by law.
 
 **What happens to the cost of my issues when the inventory is negative?**
 
-When the inventory for your item is negative, and you issue more items than what you physically have, the system will use the default item price for calculating the running average when you use a periodic costing model such as FIFO, LIFO, or Weighted average. If there is no default price specified for the item, the system will issue the inventory with a value of zero. This can cause future calculations of your running average or moving average to be inaccurate.
+When the inventory for your item is negative, and you issue more items than what you physically have, the system will use the default item price for calculating the running average when you use a periodic costing model such as FIFO, LIFO, or weighted average. If there is no default price specified for the item, the system will issue the inventory with a value of zero. This can cause future calculations of your running average or moving average to be inaccurate.
 
-**Can I prevent items from being picked, packed, or sold on sales orders and production orders if there is not enough on-hand inventory?**
+**Can I prevent items from being picked, packed, or sold on sales orders and production orders if there isn't enough on-hand inventory?**
 
 Yes, it is recommended to ensure that the **Physical negative** option on the **Item model group** is NOT selected to prevent items from being picked, packed, or sold on sales orders and production orders.
 
@@ -352,7 +341,7 @@ Ywa, when you have this requirement, it is recommended that you clear the **Fina
 
 **How does negative inventory impact financial ratios such as gross profit margin?**
 
-When you allow your inventory to go negative, the inventory value in your balance sheet and cost of goods sold in your profit and loss statement can be understated. This is especially true if you do not have a default price configured for your items. Therefore, financial reporting and ratios such as gross profit margins can be overstated because the cost is incorrect. If you use a periodic costing model such as FIFO, LIFO, or Weighted average the value of the issues can be adjusted when you run the inventory close and adjustment process after the negative inventory quantities have been corrected. However, if you use moving average, there is no way to revalue the individual transactions.
+When you allow your inventory to go negative, the inventory value in your balance sheet and cost of goods sold in your profit and loss statement can be understated. This is especially true if you don't have a default price configured for your items. Therefore, financial reporting and ratios such as gross profit margins can be overstated because the cost is incorrect. If you use a periodic costing model such as FIFO, LIFO, or weighted average the value of the issues can be adjusted when you run the inventory close and adjustment process after the negative inventory quantities have been corrected. However, if you use moving average, there is no way to revalue the individual transactions.
 
 **How should I correct negative inventory?**
 
@@ -366,9 +355,9 @@ No, if your organization allows the inventory to go physically negative and you 
 
 **Can I post sales order picking lists for not-stocked products?**
 
-When you generate a picking list for a sales order that includes items that are in an item model group that is not-stocked, you do not see any lines for those not-stocked items. You cannot use the warehouse mobile device to process not-stocked items by using the warehouse mobile device.
+When you generate a picking list for a sales order that includes items that are in an item model group that isn't stocked, you don't see any lines for those not-stocked items. You can't use the warehouse mobile device to process not-stocked items by using the warehouse mobile device.
 
-When you generate a packing slip for a sales order that includes items that are in an item model group that is not stocked, you can set the **Quantity** parameter to **Picked quantity and not stocked products** to include the not-stocked items in the document generation. If you select **All** only stocked items will be included in the packing slip.
+When you generate a packing slip for a sales order that includes items that are in an item model group that isn't stocked, you can set the **Quantity** parameter to **Picked quantity and not stocked products** to include the not-stocked items in the document generation. If you select **All** only stocked items will be included in the packing slip.
 
 **Should I use a not-stocked product or a category (sales category or procurement category)?**
 
@@ -378,23 +367,23 @@ The choice to use a not-stocked product or a category depends on your specific b
 
 **What is the difference between a Service item and a Not-Stocked product?**
 
-A service item is a product type. When you create a newly released product you can select the product type is either Item or Service. Item is typically used to indicate the item is tangible, while Service it typically used to indicate the item is not tangible.
+A service item is a product type. When you create a newly released product you can select the product type is either Item or Service. Item is typically used to indicate the item is tangible, while Service it typically used to indicate the item isn't tangible.
 
-Any released product, whether it is an Item or Service type can be stocked or not-stocked. The stocked or not-stocked setting is controlled by the Item model group that you select for the released product. When you select an item group that is not-stocked, the system does not create inventory transactions for the related sales order or purchase order, for example.
+Any released product, whether it is an Item or Service type can be stocked or not-stocked. The stocked or not-stocked setting is controlled by the Item model group that you select for the released product. When you select an item group that isn't stocked, the system doesn't create inventory transactions for the related sales order or purchase order, for example.
 
 **Can you include not-stocked items in a BOM?**
 
-No, you cannot include a released product that is linked to an Item model group where the Stocked option is not selected in a BOM or Formula. It does not matter if you mark the Product type as Item or Service. Only items that are Stocked can be included in the BOM or Formula lines.
+No, you can't include a released product that is linked to an Item model group where the Stocked option isn't selected in a BOM or Formula. It doesn't matter if you mark the Product type as Item or Service. Only items that are Stocked can be included in the BOM or Formula lines.
 
 ## Costing model specific questions
 
 **Which costing model should I use?**
 
-The costing model(s) you should select are dependent on your business requirements. Before selecting a costing model to use in Dynamics 365 Supply Chain Management, you should validate that the model is allowed by your local regulations. We recommend that you validate your selection with a certified account in your region.
+The costing model(s) you should select are dependent on your business requirements. Before selecting a costing model to use in Supply Chain Management, you should validate that the model is allowed by your local regulations. We recommend that you validate your selection with a certified account in your region.
 
 **Can I use more than one costing model in my organization?**
 
-Yes, there is no limit to the number of item model groups or costing models you select in Dynamics 365 Supply Chain Management.
+Yes, there is no limit to the number of item model groups or costing models you select in Supply Chain Management.
 
 **Can I use more than one costing model on each item?**
 
@@ -406,37 +395,37 @@ The costing model(s) you should select are dependent on your business requiremen
 
 **When is FEFO used?**
 
-FEFO or first expired, first out is not a costing methodology. Instead, it is a reservation technique that is commonly used in manufacturing organizations. You can enable FEFO reservations on the Item model group by selecting the **FEFO date-controlled** option in the **Reservation** group, and then selecting the **Pick criteria** and **Validate batch expiration on** parameters.
+FEFO or first expired, first out isn't a costing methodology. Instead, it is a reservation technique that is commonly used in manufacturing organizations. You can enable FEFO reservations on the Item model group by selecting the **FEFO date-controlled** option in the **Reservation** group, and then selecting the **Pick criteria** and **Validate batch expiration on** parameters.
 
 **Are there performance benefits to selecting one costing model over another?**
 
-In general, the costing model you select for an item has a minimal impact on the overall performance of the system. However, the amount of time that is required to run the inventory close or recalculation process may be affected by the inventory costing model you select. For example, if you use Standard cost or Moving average, the inventory close process has minimal impact on the system as it does not update each inventory transaction and create settlements. While using a periodic costing model such as FIFO, LIFO, or Weighted average can increase the amount of time the inventory closing takes to complete. Specifically, the close process can be longer when you enter a high number for the **Maximum number of iterations allowed per item** or a low number for the **Minimum amount allowed** parameter on the **Close inventory** process.
+In general, the costing model you select for an item has a minimal impact on the overall performance of the system. However, the amount of time that is required to run the inventory close or recalculation process may be affected by the inventory costing model you select. For example, if you use Standard cost or Moving average, the inventory close process has minimal impact on the system as it doesn't update each inventory transaction and create settlements. While using a periodic costing model such as FIFO, LIFO, or weighted average can increase the amount of time the inventory closing takes to complete. Specifically, the close process can be longer when you enter a high number for the **Maximum number of iterations allowed per item** or a low number for the **Minimum amount allowed** parameter on the **Close inventory** process.
 
 **When should I use the Fixed receipt price option?**
 
 When you select the **Fixed receipt price** check box on the **Item model group** page for an item, the system will use receipt price as a standard cost for the inventory receipt. If there is a difference between the purchase price and the default item cost price configured for a product, the difference will be posted to the **Fixed receipt price profit** or **Fixed receipt price** **loss** account and offset to the **Fixed receipt price offset** account that you specify on the **Inventory posting profile** page.
 
-You should select this option when you use a periodic costing model such as FIFO, LIFO, or Weighted average and you have a requirement to track a purchase price variance in the ledger when the price of a receipt is different than the default item cost.
+You should select this option when you use a periodic costing model such as FIFO, LIFO, or weighted average and you have a requirement to track a purchase price variance in the ledger when the price of a receipt is different than the default item cost.
 
 ### Moving average
 
 **Is moving average the same as a floating average?**
 
-The terms moving average, floating average, and running average are often used synonymously. Of these terms, Moving average is the only official costing model available in Dynamics 365 Supply Chain Management. While the term running average is not an official costing model, it is the technique that is used when you use a periodic costing model such as FIFO, LIFO, or Weighted average. The term floating average is not used in Dynamics 365 Supply Chain Management and may have different connotations in other systems.
+The terms moving average, floating average, and running average are often used synonymously. Of these terms, Moving average is the only official costing model available in Supply Chain Management. While the term running average isn't an official costing model, it is the technique that is used when you use a periodic costing model such as FIFO, LIFO, or weighted average. The term floating average isn't used in Supply Chain Management and may have different connotations in other systems.
 
 **How can I accommodate the difference between the product receipt price and invoice price when I use moving average?**
 
-When you use moving average, the physical cost (receipt price) is used to calculate the moving average for all issue transactions. If there is a difference between the physical cost (receipt price) and the financial cost (invoice price) the system will automatically post the difference to the Main account that you specify on the **Price difference for moving average** posting type found in the **Inventory** tab of the **Inventory posting profile** page.
+When you use moving average, the physical cost (receipt price) is used to calculate the moving average for all issue transactions. If there's a difference between the physical cost (receipt price) and the financial cost (invoice price), the system will automatically post the difference to the Main account that you specify on the **Price difference for moving average** posting type found in the **Inventory** tab of the **Inventory posting profile** page.
 
 **Where is the price difference for moving average presented in the general ledger?**
 
-When there is a price difference between posting a physical update and a financial update for a receipt, the difference is posted to the **Main account** that you specify in the **Price difference for moving average** posting type on the **Inventory** tab of the **Inventory posting profile** page. For more information, refer to [Moving average](/moving-average.md).
+When there's a price difference between posting a physical update and a financial update for a receipt, the difference is posted to the **Main account** that you specify in the **Price difference for moving average** posting type on the **Inventory** tab of the **Inventory posting profile** page. For more information, see [Moving average](moving-average.md).
 
 **When I use moving average, what happens if there is an issue before the receipt?**
 
-This is typically the result of either allowing **Physical negative inventory** on the **Item model group**, or the backdating of a issue. See the [questions above](#negative-inventory) about allowing physical negative inventory.
+This is typically the result of either allowing **Physical negative inventory** on the **Item model group**, or the backdating of an issue. For more information, see the [Negative inventory](#negative-inventory) section of this topic.
 
-If you are backdating transactions, we recommend that you carefully consider your business process and operations to determine if there is a way you can avoid this scenario. When you backdate a transaction for an item that is using moving average, they system will assign the current moving average to the transaction. Later issues are not adjusted. For more information about moving average with backdated transactions, refer to [Moving average](/moving-average.md).
+If you're backdating transactions, we recommend that you carefully consider your business process and operations to determine if there's a way you can avoid this scenario. When you backdate a transaction for an item that is using moving average, they system will assign the current moving average to the transaction. Later issues aren't adjusted. For more information about moving average with backdated transactions, see [Moving average](moving-average.md).
 
 ### Standard costing
 
@@ -444,7 +433,7 @@ If you are backdating transactions, we recommend that you carefully consider you
 
 Standard costing requires that you define an item price and activate the cost in a costing version. This cost is used for all receipts and issues. Variances for the receipts to inventory are recorded in the general ledger using the Standard cost variance accounts that you specify on the Inventory posting profile in the Standard cost tab.
 
-However, when you use Fixed receipt price, only the cost for receipts is fixed and the system used the cost that you specify on the Manage costs FastTab of the Released product. Differences between the default cost and the purchase order price will cause the purchase price variance to post into the Fixed receipt price profit and loss accounts. Issues do not use the fixed receipt price. Instead, issues will be valued at the running average at the time of posting (unless you use marking) and revalued to the heuristic model you select when you run inventory closing.
+However, when you use Fixed receipt price, only the cost for receipts is fixed and the system used the cost that you specify on the Manage costs FastTab of the Released product. Differences between the default cost and the purchase order price will cause the purchase price variance to post into the Fixed receipt price profit and loss accounts. Issues don't use the fixed receipt price. Instead, issues will be valued at the running average at the time of posting (unless you use marking) and revalued to the heuristic model you select when you run inventory closing.
 
 **Can you use FEFO reservations with standard costing?**
 
@@ -454,29 +443,29 @@ Yes, you can use FEFO reservations on an Item model group when you select Standa
 
 Yes, you can use the Excel add-in or the Data Management Framework to upload a pending price. The current entities that are recommended to use are as follows:
 
--   Pending item prices (V2)
--   Pending route cost category unit costs
--   Costing sheet node calculation factors (V2)
+- Pending item prices (V2)
+- Pending route cost category unit costs
+- Costing sheet node calculation factors (V2)
 
 **How frequently can you update the standard cost for an item?**
 
-There is no limit to the frequency that you can activate a new standard cost. If you activate a new cost for an item on the same day that last cost was activated, the system will use the most recent activated cost on new transactions or updates (such as to existing transactions
+There's no limit to the frequency that you can activate a new standard cost. If you activate a new cost for an item on the same day that last cost was activated, the system will use the most recent activated cost on new transactions or updates (such as to existing transactions
 
 **Can you deactivate or delete an activated cost?**
 
-No, you cannot deactivate or delete an activated cost. If you have incorrectly activated a cost, you can activate a new cost with the correct cost.
+No, you can't deactivate or delete an activated cost. If you've incorrectly activated a cost, you can activate a new cost with the correct cost.
 
 **Are calculation groups used with Standard costing?**
 
-Yes, calculation groups can be used with any item regardless of the item model group you choose. The calculation groups are used during the cost rollup or cost calculation process to determine the settings that should be used for the item(s) you are running a calculation for. For more information about calculation groups, refer to [BOM calculations groups](/bom-calculation-groups.md).
+Yes, calculation groups can be used with any item regardless of the item model group you choose. The calculation groups are used during the cost rollup or cost calculation process to determine the settings that should be used for the item(s) you're running a calculation for. For more information about calculation groups, see [BOM calculations groups](bom-calculation-groups.md).
 
 **When should I use a planned costing version?**
 
-Costing versions can have a type of standard cost or planned cost. The standard cost type is used for the costs that are active in the system and will be posted in transactions. The planned cost type is used for running simulations on costs and does not impact the cost of transactions.
+Costing versions can have a type of standard cost or planned cost. The standard cost type is used for the costs that are active in the system and will be posted in transactions. The planned cost type is used for running simulations on costs and doesn't affect the cost of transactions.
 
 **Can the total cost from one entity be transferred to another entity as the selling cost?**
 
-There is no automated way to copy costs from one company to another. Additionally, there is no automated way to copy costs from a purchase price to a sales price. If your organization has requirements to do this, consider if you can use the Data Management Framework to export the data out of your costing version and upload into a different company as either a sales price in the costing version or as a trade agreement. Manual manipulation of the files may be necessary.
+There is no automated way to copy costs from one company to another. Additionally, there's no automated way to copy costs from a purchase price to a sales price. If your organization needs to do this, consider whether you can use the Data Management Framework to export the data out of your costing version and upload into a different company as either a sales price in the costing version or as a trade agreement. Manual manipulation of the files may be necessary.
 
 **What is the best way to copy planned costs into a standard costing version?**
 
