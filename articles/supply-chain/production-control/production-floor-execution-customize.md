@@ -145,8 +145,7 @@ formRun.run();
     JmgProductionFloorExecutionMenuItemProvider 
 
 -->
-
-Date and time controls enable workers to specify dates and times, respectively. The following screenshots show how the controls typically appear on the page.
+This section shows how to add date and time controls to a form. Date and time controls enable workers to specify dates and times, respectively. The following screenshots show how the controls typically appear on the page.
 
 <!-- KFM: I added this short intro that mentions the images. Do we have anything more interesting to say? -->
 
@@ -154,9 +153,9 @@ Date and time controls enable workers to specify dates and times, respectively. 
 
 ![Time control example.](media/pfe-customize-time-control.png "Time control example")
 
-The following procedure shows an example of how to add a date control to a form.
+The following procedure shows an example of how to add a date control to a form. <!-- KFM: Also a time control?-->
 
-1. The number of date and time controls controllers that each form contains must equal the number of date and time controls in that form. <!-- KFM: "controls controllers"? Rephrase as an instruction. -->
+1. Add a controller to the form for each date and time control that the form should contain. (The number of controllers must equal the number of date and time controls in the form.) <!-- KFM: Confirm this reformulation -->
 
     ```xpp
     private JmgProductionFloorExecutionDateTimeController  dateFromController; 
@@ -165,14 +164,14 @@ The following procedure shows an example of how to add a date control to a form.
     private JmgProductionFloorExecutionDateTimeController  timeToController;
     ```
 
-1. Declare the `utcdatetime` variable.
+1. Declare the `utcdatetime` variable. <!-- KFM: But we show two variables here. Is `utcdatetime` the type, followed by the var name? Why two? -->
 
     ```xpp
     private utcdatetime fromDateTime;
     private utcdatetime toDateTime;
     ```
 
-1. Create a method where the datetime will be updated from a Date Time controllers. <!-- KFM: Please clarify -->
+1. Create a method where the datetime will be updated from a Date Time controllers. <!-- KFM: Please clarify. Confirm spacing in the example. -->
 
     ```xpp
     private void setFromDateTime(utcdatetime _value)
@@ -185,7 +184,7 @@ The following procedure shows an example of how to add a date control to a form.
 
     ```xpp
     /// <summary>
-    /// Initializes all date and time controllers, defines their behavior and connects them with the form parts.
+    /// Initializes all date and time controllers, defines their behavior, and connects them with the form parts.
     /// </summary>
     private void initializeDateControlControllers()
     {
@@ -201,17 +200,18 @@ The following procedure shows an example of how to add a date control to a form.
         imeFromFormPart.getPartFormRun().setTimeControlController(timeFromController, dateFromController);
         
         ...
+
     }
     ```
     <!-- KFM: Confirm use of ellipsis above -->
 
-<!-- KFM: How does the following relate to the above procedure? -->
+<!-- KFM: How does the following relate to the above procedure? Maybe a new subsection? -->
 
-If all you need is a date control on a form, you can skip the time control setup, and instead just set up the date control as shown in the following example:
+If all you need is a date control, you can skip the time control setup and instead just set up the date control as shown in the following example:
 
-    ```xpp
-    DateFromFormPart.getPartFormRun().setDateControlController(dateFromController, null);
-    ```
+```xpp
+DateFromFormPart.getPartFormRun().setDateControlController(dateFromController, null);
+```
 
 ## Additional resources
 
