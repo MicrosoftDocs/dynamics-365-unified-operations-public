@@ -13,7 +13,7 @@ ms.author: samjar
 ms.search.validFrom: 2019-10-31
 
 ---
-# Image optimization on search and category page
+# Optimize images on search and category pages
 
 [!include [banner](../includes/banner.md)]
 
