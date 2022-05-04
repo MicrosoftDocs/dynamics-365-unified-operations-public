@@ -263,7 +263,7 @@ The customer's tenant administrator can access production instances or non-produ
 |---|---|---|
 | **Non-production**<br>Tier 1 sandbox | A non-production environment that customers deploy for development, demonstration, or training purposes. | A Tier 1 sandbox (also referred to as a cloud-hosted environment) is a customer-managed VM that is deployed to the customer's Azure subscription from LCS. Because it is a VM in the customer's Azure subscription, the customer has full administrative access to the environment via Remote Desktop. |
 | **Non-production**<br>Tier 2 (or higher) sandbox | A non-production environment that customers deploy for user acceptance testing, integration testing, training, staging, or any other pre-production scenario. | Tier 2 and higher sandboxes are deployed to the Finance and Operations SaaS subscription. Access to Azure SQL databases that are associated with the non-production environment is granted via [just-in-time access](../../dev-itpro/database/database-just-in-time-jit-access.md). Remote Desktop access isn't available. |
-| **Production** | A production environment is deployed when the project is [ready for initial go-live](/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/environment-planning#production-system-readiness). | Production environments are deployed to the SaaS subscription. All access is through the browser, service endpoints, or LCS. |
+| **Production** | A production environment is deployed when the project is [ready for initial go-live](../imp-lifecycle/environment-planning.md#production-system-readiness). | Production environments are deployed to the SaaS subscription. All access is through the browser, service endpoints, or LCS. |
 
 ### Microsoft administrative access
 
