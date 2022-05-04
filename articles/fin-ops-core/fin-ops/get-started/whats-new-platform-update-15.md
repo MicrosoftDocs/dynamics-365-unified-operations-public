@@ -88,7 +88,7 @@ The Message Center has been upgraded to the new Action Center. Not only have the
 
 Dynamics 365 Talent provides "getting started" workbooks so users can use Excel to interactively view, edit, and create data. These workbooks, powered by the Excel add-in, provide a productive environment configuration experience. With this enhancement, you can move data from one environment to another by reading data into Excel from one environment, change the environment address, and then publish the data into the new environment.
 
-For more information, see [Copy environment data](/dynamics365/fin-ops-core/dev-itpro/office-integration/use-excel-add-in#copy-environment-data).
+For more information, see [Copy environment data](../../dev-itpro/office-integration/use-excel-add-in.md#copy-environment-data).
 
 ## Power users can add custom fields to forms without developer customization
 
