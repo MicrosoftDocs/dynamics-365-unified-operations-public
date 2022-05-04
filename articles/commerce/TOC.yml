@@ -2834,6 +2834,10 @@
               href: e-commerce-extensibility/instance-cache.md
             - name: Module CSS optimization
               href: e-commerce-extensibility/module-css-optimization.md
+            - name: Optimize images on product details pages
+              href: e-commerce-extensibility/optimize-images-pdp.md
+            - name: Optimize images on search and category pages
+              href: e-commerce-extensibility/optimize-images-search-cat.md
           - name: Telemetry and analytics
             items:
             - name: Telemetry logger
