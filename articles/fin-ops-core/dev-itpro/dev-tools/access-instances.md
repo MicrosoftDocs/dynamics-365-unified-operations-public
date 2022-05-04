@@ -224,7 +224,7 @@ This is only possible if you lower a user's security role in the project to *Pro
 ### Are cloud-hosted environments supported with Azure Bastion?
 These environments have not been tested, nor are they supported with Azure Bastion.  
 
-### Environment is in a failed state with the error message, "Updated AAD Tenant is missing reply URL configuration" and environment URL takes me to this page:
+### Environment is in a failed state with the error message, "Updated AAD Tenant is missing reply URL configuration". How do I resolve this?
 This message indicates that a Tier 1/customer-managed environment is configured with an Azure AD tenant different from the one used at the time of deployment. There are different options available to help resolve this issue:
 1. (Recommended) Delete the environment and redeploy with the tenant in which the environment will be used. 
 2. Revert the settings to the tenant configuration used at the time of deployment.
@@ -279,7 +279,7 @@ If an existing environment can't be deleted and redeployed, its URL must be adde
     Set-AzureADServicePrincipal -ObjectId $SP.ObjectId -ReplyUrls $SP.ReplyUrls
     ```
 
-### I have fixed my environment, but it is still in a failed state and the URL points to the documentation link:
+### I have fixed my environment, but it is still in a failed state. How do I resolve this?
 Restart your environment from LCS by first performing **Stop** and then **Start** operations against your environment. If the environment configuration is found to be correct, then the environment URL will be restored automatically **within 2 hours** of the **Start** operation.
 
 ### While running the Admin user provisioning tool on my local development environment, I get the error "The value's length for key 'password' exceeds it's limit of '128'."
