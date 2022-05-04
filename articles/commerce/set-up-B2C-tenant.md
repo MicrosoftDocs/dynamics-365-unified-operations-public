@@ -351,7 +351,7 @@ To add your Azure AD B2C tenant application information to Commerce, follow thes
 1. Select **OK**. You should now see the name of your B2C application appear in the list.
 1. Select **Save** to save your changes.
 
-The optional **Login custom domain** field should only be used if you are setting up a custom domain for the Azure AD B2C tenant. For additional details and considerations regarding the usage of the **Login custom domain** field, see [Additional B2C information](#additional-B2C-information) below.
+The optional **Login custom domain** field should only be used if you are setting up a custom domain for the Azure AD B2C tenant. For additional details and considerations regarding the usage of the **Login custom domain** field, see [Additional B2C information](#additional-b2c-information) below.
 
 ### Associate the B2C application to your site and channel
 
