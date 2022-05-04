@@ -35,7 +35,7 @@ A **Customer invoice for a sales order** is a bill that is related to a sale, an
 
 A **Free text invoice** isn't related to a sales order. It contains order lines that include ledger accounts, free-text descriptions, and a sales amount that you enter. You can't enter an item number on this kind of invoice. You must enter the appropriate sales tax information. A main account for the sale is indicated on each invoice line, which you can distribute to multiple ledger accounts by clicking **Distribute amounts** on the **Free text invoice** page. Additionally, the customer balance is posted to the summary account from the posting profile that is used for the free text invoice.
 
-For more information see:
+For more information, see:
 
 [Create free text invoices](../accounts-receivable/create-free-text-invoice-new.md)
 
@@ -78,7 +78,7 @@ You can view the status of the sales orders on the **All sales orders** list pag
 ## Post and print individual customer invoices that are based on packing slips and the date
 Use this process when one or more packing slips have been posted for the sales order. The customer invoice is based on these packing slips and reflects the quantities from them. The financial information for the invoice is based on the information that is entered when you post the invoice. 
 
-You can create a customer invoice that is based on the packing slip line items that have been shipped to date, even if all the items for a particular sales order haven't yet been shipped. You might do this if, for example, your legal entity issues one invoice per customer per month that covers all the deliveries that you ship during that month. Each packing slip represents a partial or complete delivery of the items on the sales order. 
+You can create a customer invoice that is based on the packing slip line items that have been shipped to date, even if all the items for a particular sales order haven't been shipped. You might do this if, for example, your legal entity issues one invoice per customer per month that covers all the deliveries that you ship during that month. Each packing slip represents a partial or complete delivery of the items on the sales order. 
 
 When you post the invoice, the **Invoice remainder** quantity for each item is updated with the total of the delivered quantities from the selected packing slips. If both the **Invoice remainder** quantity and the **Deliver remainder** quantity for all items on the sales order are 0 (zero), the status of the sales order is changed to **Invoiced**. If the **Invoice remainder** quantity isn't 0 (zero), the status of the sales order remains unchanged, and additional invoices can be entered for it. 
 
