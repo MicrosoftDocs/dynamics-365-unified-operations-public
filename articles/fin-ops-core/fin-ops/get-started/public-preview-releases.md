@@ -47,18 +47,18 @@ Customers will be able to take up to 7 service updates per year and are required
 |-----------------|-----------------------------|-----------------------------------|----------------------------------------------------------------------|--------------------|
 |     10.0.38:<br>The "February" release     | October 13, 2023            | January 12, 2024                  | February 2, 2024                                                     | April 12, 2024     |
 |     10.0.37:<br>The "November" release     | September 1, 2023           | October 20, 2023                  | November 3, 2023                                                     | January 12, 2024   |
-|     10.0.36\*: the "October" release   | July 31, 2023               | September 15, 2023                | September 29, 2023                                                   | December 8, 2023   |
-|     10.0.35: the "August" release     | May 26, 2023                | July 14, 2023                     | July 28, 2023                                                        | October 20, 2023   |
-|     10.0.34: the "July" release     | April 21, 2023              | June 16, 2023                     | June 30, 2023                                                        | September 15, 2023 |
-|   10.0.33: the "May" release    | March 3, 2023               | April 14, 2023                    | April 28, 2023                                                       | July 14, 2023      |
-|     10.0.32\*: the "April" release   | January 30, 2023            | March 17, 2023                    | March 31, 2023                                                       | June 9, 2023       |
-|     10.0.31: the "February" release     | October 14, 2022            | January 13, 2023                  | February 3, 2023                                                     | April 14, 2023     |
-|     10.0.30: the "November" release     | September 2, 2022           | October 21, 2022                  | November 4, 2022                                                     | March 17, 2023   |
-|     10.0.29\*: the "October" release  | August 1, 2022              | September 16, 2022                | September 30, 2022                                                   | January 13, 2023   |
-|     10.0.28: the "August" release     | May 27, 2022                | July 15, 2022                     | July 29, 2022                                                        | October 21, 2022   |
-|     10.0.27: the "July" release     | April 22, 2022              | June 17, 2022                     | July 1, 2022                                                         | September 16, 2022 |
-|     10.0.26: the "May" release    | March 4, 2022               | April 15, 2022                    | April 29, 2022                                                       | July 15, 2022      |
-|     10.0.25\*: the "April" release   | January 31, 2022            | March 18, 2022                    | April 1, 2022                                                        | June 10, 2022      |
+|     10.0.36\*:<br>The "October" release   | July 31, 2023               | September 15, 2023                | September 29, 2023                                                   | December 8, 2023   |
+|     10.0.35:<br>The "August" release     | May 26, 2023                | July 14, 2023                     | July 28, 2023                                                        | October 20, 2023   |
+|     10.0.34:<br>The "July" release     | April 21, 2023              | June 16, 2023                     | June 30, 2023                                                        | September 15, 2023 |
+|   10.0.33:<br>The "May" release    | March 3, 2023               | April 14, 2023                    | April 28, 2023                                                       | July 14, 2023      |
+|     10.0.32\*:<br>The "April" release   | January 30, 2023            | March 17, 2023                    | March 31, 2023                                                       | June 9, 2023       |
+|     10.0.31:<br>The "February" release     | October 14, 2022            | January 13, 2023                  | February 3, 2023                                                     | April 14, 2023     |
+|     10.0.30:<br>The "November" release     | September 2, 2022           | October 21, 2022                  | November 4, 2022                                                     | March 17, 2023   |
+|     10.0.29\*:<br>The "October" release  | August 1, 2022              | September 16, 2022                | September 30, 2022                                                   | January 13, 2023   |
+|     10.0.28:<br>The "August" release     | May 27, 2022                | July 15, 2022                     | July 29, 2022                                                        | October 21, 2022   |
+|     10.0.27:<br>The "July" release     | April 22, 2022              | June 17, 2022                     | July 1, 2022                                                         | September 16, 2022 |
+|     10.0.26:<br>The "May" release    | March 4, 2022               | April 15, 2022                    | April 29, 2022                                                       | July 15, 2022      |
+|     10.0.25\*:<br>The "April" release   | January 31, 2022            | March 18, 2022                    | April 1, 2022                                                        | June 10, 2022      |
 
 \* Denotes a major release.
  
@@ -66,7 +66,7 @@ Customers will be able to take up to 7 service updates per year and are required
 > The [Software lifecycle policy](../../dev-itpro/migration-upgrade/versions-update-policy.md) applies to customers enrolled in First Release and when the service update is made generally available.
 
 > [!NOTE]
-> Beginning in 2022, we are making adjustments to end-of-year service update availability. Servicing for the major October release will be extended into January.  Similarly, servicing for the November release will be extended into March. The January release has been cancelled to accommodate the servicing extensions for October and November.
+> Beginning in 2022, we are making adjustments to end-of-year service update availability. Servicing for the major October release will be extended into January.  Similarly, servicing for the November release will be extended into March. The January release has been cancelled.
 
 Previews are made available as a deployable package via the Shared Asset Library in Lifecycle Services. For more details, see [One Version service updates FAQ](one-version.md). 
 
