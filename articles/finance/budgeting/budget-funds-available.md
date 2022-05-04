@@ -3,7 +3,7 @@
 
 title: Budget funds available
 description: This topic introduces the budget funds available feature and provides information that can help you configure budget control to optimize management of your organization's financial resources.
-author: rcarlson
+author: RyanCCarlson2
 ms.date: 11/22/2021
 ms.topic: article
 ms.prod: 
@@ -15,7 +15,7 @@ ms.search.form: BudgetControlConfiguration
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: ["60493", "intro-internal"]
 ms.assetid: be964167-43bc-431d-9adb-48bff32d68d5
