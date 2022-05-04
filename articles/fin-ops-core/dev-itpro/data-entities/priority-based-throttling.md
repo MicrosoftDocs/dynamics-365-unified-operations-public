@@ -4,7 +4,7 @@
 title: Throttling prioritization
 description: This topic provides information about priority-based throttling for OData and custom service-based integrations.
 author: jaredha
-ms.date: 04/22/2022
+ms.date: 05/04/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 37
 
 This topic provides information about priority-based throttling for Open Data Protocol (OData) and custom service-based integrations.
 
-Resource-based limits for service protection application programming interfaces (APIs) work together with the user-based limits for service protection APIs as protective settings that help prevent the over-utilization of resources. In this way, they help preserve the system's responsiveness and ensure consistent availability and performance for environments that run Microsoft Dynamics 365 Finance + Operations apps. The resource-based limits will throttle service requests when the aggregate consumption of web server resources reaches levels that threaten service performance and availability.
+Resource-based limits for service protection application programming interfaces (APIs) work together with the user-based limits for service protection APIs as protective settings that help prevent the over-utilization of resources. In this way, they help preserve the system's responsiveness and ensure consistent availability and performance for environments that run Finance and Operations apps. The resource-based limits will throttle service requests when the aggregate consumption of web server resources reaches levels that threaten service performance and availability.
 
 For resource-based service protection API limits, you can set the relative priority for OData and custom service-based integrations, depending on your business-critical need for these integrations. The throttling manager will then honor the priorities that are set for the requests. For OData and custom service-based requests, a "Too many requests" error will be sent if system health and performance are affected.
 
