@@ -44,9 +44,9 @@ For information about how to pause an update, see [Pause service updates through
 
 ### If the release date is in early April, when will the general availability package become available?
 
-Production updates for a monthly release will be scheduled for the first, second, and third weeks of the month. Depending on the configuration that you set up in LCS, you will receive updates during that specific week.
- 
-For the April 10.0 release, Microsoft will perform updates during the weekends of April 6, April 13, or April 20, depending on the configuration that you set up in LCS. Sandbox updates will always be scheduled a week before the update. The configuration setup is available in LCS.
+Production updates for a release will be scheduled for the first, second, and third weeks of the month. Depending on the configuration that you set up in LCS, you will receive updates during that specific week. Sandbox updates will always be scheduled the week before the production update. The configuration setup is available in LCS.
+
+As an example, for the April 10.0.25 release Microsoft performs updates during the weekends of April 1, April 8, or April 15, depending on the configuration that you set up in LCS. Sandbox updates will always be scheduled a week before the update.
 
 Customers can always choose to apply the update at an earlier time or at a time that is more convenient than the suggested times in LCS. If a customer is already on the latest version, the automatic update will be canceled.
 
@@ -68,7 +68,7 @@ A regulatory update is a new feature or an existing feature change that is requi
 
 ### What is the upcoming schedule of updates?
 
-Service updates are available. You have the option to apply them when it's convenient for you, or you can let Microsoft automatically apply them, based on the selected maintenance window. You are required to be on an update that is no more than three updates behind the current update.
+Each year, seven service updates are released. You have the option to apply them when it's convenient for you, or you can let Microsoft automatically apply them, based on the selected maintenance window. You are required to be on an update that is no more than three updates behind the current update.
 
 To view a targeted release schedule, see [Service update availability](public-preview-releases.md).
 
