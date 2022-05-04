@@ -4,7 +4,7 @@
 title: Retry operations
 description: This topic describes retry operations that can be implemented if application programming interface (API) requests are throttled because they have reached service protection API limits.
 author: jaredha
-ms.date: 04/22/2022
+ms.date: 05/04/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
