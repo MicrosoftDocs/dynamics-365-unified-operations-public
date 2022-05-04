@@ -2,9 +2,9 @@
 # required metadata
 
 title: Service protection API limits
-description: This topic provides information about limits for service protection application programming interfaces (APIs) for the Microsoft Dynamics 365 Finance + Operations service.
+description: This topic provides information about limits for service protection application programming interfaces (APIs) for the Finance and Operations apps service.
 author: jaredha
-ms.date: 04/22/2022
+ms.date: 05/04/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: v-chgriffin
@@ -18,17 +18,17 @@ ms.search.validFrom: 2022-04-21
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about limits for service protection application programming interfaces (APIs) for the Microsoft Dynamics 365 Finance + Operations service.
+This topic provides information about limits for service protection application programming interfaces (APIs) for the Finance and Operations apps service.
 
 > [!IMPORTANT]
 > Resource-based service protection API limits are enabled in Finance and Operations apps environments as of version 10.0.19. The user-based service protection API limits that are described in this topic will be enabled in environments in version 10.0.30 with 2022 release wave 2.
 
-To ensure consistent availability and performance of the Finance + Operations service, Microsoft applies limits to the way that the service APIs are used. These limits are designed to protect the service when client applications make extraordinary demands on server resources. Sudden bursts of high incoming API traffic or concurrent long-running requests against the server can exhaust server resources, and can cause outages or have other impacts on the availability and performance of the service.
+To ensure consistent availability and performance of the Finance and Operations apps service, Microsoft applies limits to the way that the service APIs are used. These limits are designed to protect the service when client applications make extraordinary demands on server resources. Sudden bursts of high incoming API traffic or concurrent long-running requests against the server can exhaust server resources, and can cause outages or have other impacts on the availability and performance of the service.
 
 The limits should not affect regular users of interactive clients. They are designed to affect only client applications that perform extraordinary API requests. The limits provide a level of protection from random and unexpected surges in request volume that threaten the availability and performance of the Finance and Operations platform.
 
 > [!NOTE]
-> Service protection API limits are available only for the Finance + Operations online service, including production and sandbox environments. They aren't available for on-premises or development environments.
+> Service protection API limits are available only for the Finance and Operations apps online service, including production and sandbox environments. They aren't available for on-premises or development environments.
 
 ## Impact on client applications
 
@@ -42,7 +42,7 @@ Client application developers should not just throw errors so that users receive
 
 ### Data integration applications
 
-Applications that are designed to load data into Finance + Operations apps or perform bulk data operations must be able to manage service protection API limit errors. These applications must prioritize throughput, so that they can complete their work in the minimum amount of time. They must have a strategy for retrying operations and achieving maximum throughput.
+Applications that are designed to load data into Finance and Operations apps or perform bulk data operations must be able to manage service protection API limit errors. These applications must prioritize throughput, so that they can complete their work in the minimum amount of time. They must have a strategy for retrying operations and achieving maximum throughput.
 
 For more information, see [Maximize API throughput](service-protection-maximizing-api-throughput.md).
 
@@ -52,7 +52,7 @@ Some applications will send requests from anonymous users through a service prin
 
 ## Enforcement of the service protection API limits
 
-There are two types of service protection API limits for Finance + Operations apps: user-based and resource-based. User-based limits help prevent individual users or integrations from harming system performance and availability. Resource-based limits help protect the environment by enforcing thresholds of high environment resource utilization. When high thresholds are reached, service requests are limited. 
+There are two types of service protection API limits for Finance and Operations apps: user-based and resource-based. User-based limits help prevent individual users or integrations from harming system performance and availability. Resource-based limits help protect the environment by enforcing thresholds of high environment resource utilization. When high thresholds are reached, service requests are limited. 
 
 > [!IMPORTANT]
 > Service protection API limits are subject to change and might vary among environments. The numbers represent default values and are provided to give you an idea of the values that you can expect in your environment. These limits aren't configurable, and they aren't specific to legal entities.
@@ -69,7 +69,7 @@ User-based service protection API limits are enforced based on three factors:
 - The combined execution time that is required to process the requests that a user sent
 - The number of concurrent requests that a user sent
 
-Each web server that is available to your environment will independently enforce the service protection API limits. Most environments will have more than one web server. However, only one web server is allocated to trial environments. The actual number of web servers that are available to your environment depends on multiple factors that are part of the managed Finance + Operations service. One of these factors is the number of user licenses that you've purchased. For information about how to use web resources that are available in your environment, see [Monitoring for API throttling](service-protection-monitoring.md).
+Each web server that is available to your environment will independently enforce the service protection API limits. Most environments will have more than one web server. However, only one web server is allocated to trial environments. The actual number of web servers that are available to your environment depends on multiple factors that are part of the managed Finance and Operations apps service. One of these factors is the number of user licenses that you've purchased. For information about how to use web resources that are available in your environment, see [Monitoring for API throttling](service-protection-monitoring.md).
 
 The following table describes the default user-based service protection API limits that are enforced *per user per web server*.
 
@@ -81,13 +81,13 @@ The following table describes the default user-based service protection API limi
 
 ### Resource-based service protection API limits
 
-Whereas user-based service protection API limits are specified per user per web server, resource-based service protection API limits are enforced based on environment resource utilization thresholds. The resource limits will throttle service requests when the aggregate consumption of web server resources reaches levels that threaten service performance and availability. Resource-based service protection API limits work together with user-based limits as protective settings that help prevent the over-utilization of resources. In this way, they help preserve the system's responsiveness and ensure consistent availability and performance for environments that run Finance + Operations apps.
+Whereas user-based service protection API limits are specified per user per web server, resource-based service protection API limits are enforced based on environment resource utilization thresholds. The resource limits will throttle service requests when the aggregate consumption of web server resources reaches levels that threaten service performance and availability. Resource-based service protection API limits work together with user-based limits as protective settings that help prevent the over-utilization of resources. In this way, they help preserve the system's responsiveness and ensure consistent availability and performance for environments that run Finance and Operations apps.
 
 For resource-based service protection API limits, you can define the prioritized order that integrations are throttled in when resource thresholds are reached. For more information, see [Throttling prioritization](priority-based-throttling.md).
 
 ## Service protection API response
 
-When client applications make extraordinarily demanding requests, the Finance + Operations service returns an error that indicates that too many requests have been made. We follow a common pattern for online services by returning a [429 Too Many Requests response](https://developer.mozilla.org/docs/Web/HTTP/Status/429).
+When client applications make extraordinarily demanding requests, the Finance and Operations apps service returns an error that indicates that too many requests have been made. We follow a common pattern for online services by returning a [429 Too Many Requests response](https://developer.mozilla.org/docs/Web/HTTP/Status/429).
 
 For the 429 Too Many Requests response, a specific error message is returned for each service protection API limit. This section describes the error messages and possible mitigation strategies for each.
 
