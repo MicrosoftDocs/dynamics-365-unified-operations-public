@@ -31,7 +31,6 @@ ms.dyn365.ops.version: Human Resources
 # Create links from Human Resources to another Finance environment
 
 A customer might have two Dynamics 365 environments that they're working in. 
-
 As an example, the customer might have a Dynamics 365 Human Resources environment on the Finance infrastructure and need to connect to another Dynamics 365 Finance environment. This feature will allow links from a Human Resources page to a specific page in another Finance environment. When the links are configured, you can specify where the link will be available in Human Resources, and the target page that will be opened in the other environment.
 
 > [!Note] 
@@ -42,7 +41,7 @@ As an example, the customer might have a Dynamics 365 Human Resources environmen
 In Human Resources, system administrators can define links that will surface on **Human Resources** pages. Parts of the configuration are Finance environments that you would like to navigate to as the target of the link. 
 
 To configure the target system:
-1. On the **Configure links** page, select **Configure target system** button.  
+1. On the **Configure links** page, select **Configure target system**.  
 2. Enter the target system name and provide the URL of the Finance environment. After you've configured your target systems, you can define your links.
 
 ## Configure links
