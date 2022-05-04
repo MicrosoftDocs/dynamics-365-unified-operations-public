@@ -4,7 +4,7 @@
 title: Dynamics 365 Commerce component versioning requirements
 description: This topic provides an overview of the component versioning requirements and dependencies for all components in the Microsoft Dynamics 365 Commerce ecosystem.
 author: rezaassadi
-ms.date: 04/13/2022
+ms.date: 05/04/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -88,13 +88,12 @@ For example, customers who are currently on version 10.0.23 can pause updates to
 
 ### In-store components
 
-Customers can pause up to seven consecutive updates across the following components. (Seven updates correspond to approximately twelve calendar months.)
+Customers can pause up to three consecutive updates across the following components:
+- Commerce Scale Unit (self-hosted)
+- Modern POS or Store Commerce
+- Hardware station
 
-- Commerce Scale Unit (in-store hosted)
-- Modern POS
-- Hardware Station
-
-For example, customers who are currently on version 10.0.23 can pause updates to versions 10.0.24, 10.0.25, and 10.0.26. However, they must then update to version 10.0.27. In this scenario, after version 10.0.28 becomes available, version 10.0.23 is no longer supported.
+For example, customers who are currently on version 10.0.26 can pause updates for the released versions 10.0.27, 10.0.28, and 10.0.29. However, the following release of version 10.0.30 would remove support of version 10.0.26. In this scenario, after version 10.0.30 becomes available, version 10.0.26 is no longer supported and an update to the in-store components would be necessary.
 
 ## Additional resources
 
