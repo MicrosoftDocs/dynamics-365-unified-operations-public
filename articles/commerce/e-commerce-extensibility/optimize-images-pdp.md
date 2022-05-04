@@ -29,7 +29,7 @@ Some configuration is required to turn on the media gallery image optimization f
 
 ## Enable media gallery image optimization
 
-Since the change in behavior is different, to use the image optimizaton feature you must opt in to ensure backwards compatibility for existing implementations. The steps required to enable the media image optimization feature for the default media gallery module differ from the steps required for a customized media gallery module.
+Since the change in behavior is different, to use the image optimization feature you must opt in to ensure backwards compatibility for existing implementations. The steps required to enable the media image optimization feature for the default media gallery module differ from the steps required for a customized media gallery module.
 
 ### Enable image optimization for the default media gallery module
 
