@@ -51,7 +51,7 @@ The ability to color grid rows without overlayering is now possible via the OnDi
 
 ## Accessibility support for controls and forms developed using the cloud platform
 
-Reaffirming our commitment to providing accessible software, this update focuses on broadening our already rich accessibility feature set. These updates improve many platform components such as grids, tables, and forms to comply with Microsoft's Accessibility Standards. With additional support for performing tasks via the keyboard, there is richer integration with screen readers, high contrast theming and full label support, and applications built using the cloud platform which provide additional opportunities for users with disabilities.
+Reaffirming our commitment to providing accessible software, this update focuses on broadening our already rich accessibility feature set. These updates improve many platform components such as grids, tables, and forms to comply with Microsoft's Accessibility Standards. With additional support for performing tasks via the keyboard, there is richer integration with screen readers, high contrast theming and full label support, and applications built using the cloud platform which provides additional opportunities for users with disabilities.
 
 ## Client-based alerts
 
@@ -63,7 +63,7 @@ For more information about alerts, see [Alerts overview](alerts-overview.md).
 
 ## Data entity behavior with configuration keys
 
-Data management honors the configuration key settings on data entities, tables, and fields. Because of the hierarchial structure of these artifacts, data management will allow a child in the hierarchy to be used if the configuration key on itself and it's parent is enabled. If a parent's configuration key is disabled, none of the children will be made available for use in imports and exports. For a detailed explaination of this behavior, see [Configuration keys and data entities](../../dev-itpro/data-entities/config-key-entities.md)
+Data management honors the configuration key settings on data entities, tables, and fields. Because of the hierarchical structure of these artifacts, data management will allow a child in the hierarchy to be used if the configuration key on itself and its parent is enabled. If a parent's configuration key is disabled, none of the children will be made available for use in imports and exports. For a detailed explanation of this behavior, see [Configuration keys and data entities](../../dev-itpro/data-entities/config-key-entities.md)
 
 ## Embed Power Apps
 
@@ -92,7 +92,7 @@ For more information, see [Copy environment data](../../dev-itpro/office-integra
 
 ## Power users can add custom fields to forms without developer customization
 
-Many application customizations involve adding one or more fields to existing tables and including them in application forms. Most of your customizations may be comprised of adding fields.
+Many application customizations involve adding one or more fields to existing tables and including them in application forms. Most of your customizations may be composed of adding fields.
 
 Customizations are expensive because they require developer intervention for development, test, and code life cycle management. Customizations also need to be managed and migrated from one environment to another.
 
