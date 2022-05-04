@@ -2,7 +2,7 @@
 title: Deploy and access development environments
 description: This topic describes how to access development instances, configure local development VMs, and find configuration settings for developers and administrators.
 author: laneswenka
-ms.date: 03/15/2022
+ms.date: 05/04/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -225,10 +225,10 @@ This is only possible if you lower a user's security role in the project to *Pro
 These environments have not been tested, nor are they supported with Azure Bastion.  
 
 ### Environment is in a failed state with error message "Updated AAD Tenant is missing reply URL configuration" and environment URL takes me to this page:
-This message indicates that a Tier 1/customer-managed environment is configured with an Azure AD tenant different than used at the time of deployment. There are different options available to help resolve this issue:
+This message indicates that a Tier 1/customer-managed environment is configured with an Azure AD tenant different from the one used at the time of deployment. There are different options available to help resolve this issue:
 1. (Recommended) Delete the environment and redeploy with the tenant in which the environment will be used. 
 2. Revert the settings to the tenant configuration used at the time of deployment.
-3. Follow the [instructions](access-instances.md#how-can-i-fix-my-existing-environment-when-my-environment-is-in-a-failed-state-or-i-am-getting-sign-in-errors) to perform steps necessary to update reply URL in the target tenant  
+3. Follow the instructions in [How can I fix my existing environment when my environment is in a failed state or I am getting sign-in errors?](access-instances.md#how-can-i-fix-my-existing-environment-when-my-environment-is-in-a-failed-state-or-i-am-getting-sign-in-errors) to update the reply URL in the target tenant.  
 
 ### As a partner/ISV, how can I facilitate cloud-hosted deployments for customers that I work with?
 A Tier 1/customer-managed environment should be deployed under the customer's Azure AD tenant, to ensure that all the configuration and integrations are correctly provisioned for any given environment. The tenant and environment association is determined based on the user who deployed the environment.
@@ -247,7 +247,10 @@ As was stated earlier, it's very important that Finance and Operations environme
 
 If you have environments where the Admin user provisioning tool was previously used to update the tenant settings, we recommend that you delete those environments and then redeploy them under the correct Azure AD tenant.
 
-If an existing environment can't be deleted and redeployed, its URL must be added to the configured Azure AD tenant. The following commands can be run by the tenant admin. Please note that since these URLs are being added manually, the cleanup of these URLs will also have to be done manually when the environment is deleted.
+If an existing environment can't be deleted and redeployed, its URL must be added to the configured Azure AD tenant. The following commands can be run by the tenant admin. 
+
+> [!Note]
+> Since these URLs are being added manually, the clean-up of these URLs will also have to be done manually when the environment is deleted.
 
 1. Retrieve the following values from the web.config file.
 
@@ -276,8 +279,8 @@ If an existing environment can't be deleted and redeployed, its URL must be adde
     Set-AzureADServicePrincipal -ObjectId $SP.ObjectId -ReplyUrls $SP.ReplyUrls
     ```
 
-### I have fixed my environment, but it is in failed state and URL still points to the documentation link:
-Restart your environment from LCS by first performing **Stop** and then **Start** operation against your environment. If the environment configuration is found to be correct, then the environment URL will be restored automatically **within 2 hours** of the Start operation.
+### I have fixed my environment, but it is still in a failed state and the URL points to the documentation link:
+Restart your environment from LCS by first performing **Stop** and then **Start** operations against your environment. If the environment configuration is found to be correct, then the environment URL will be restored automatically **within 2 hours** of the **Start** operation.
 
 ### While running the Admin user provisioning tool on my local development environment, I get the error "The value's length for key 'password' exceeds it's limit of '128'."
 If you are using the virtual hard drive (VHD) that was released for versions 10.0.24 and later, the Generate Self-Signed Certificates tool needs to be run before the Admin user provisioning tool. See [Set up the downloadable VHD for first use](vhd-setup.md) for more information.
