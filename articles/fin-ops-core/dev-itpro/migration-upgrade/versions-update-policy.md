@@ -58,8 +58,6 @@ The Finance and Operations online service is covered by the Modern Lifecycle Pol
       - Dynamics 365 for Operations version 1611 (November 2016)          
 
 > [!NOTE]
-> Application and platform releases expire at the end of the month of their software lifecycle.
->
 > Microsoft won't provide any fixes to issues on versions that have reached their end of service. Microsoft also won't investigate or troubleshoot any issue that you encounter on a version that is older than three service updates. If you encounter an issue on a version that has reached its end of service, you must update to the latest update and then report the issue if it persists.
 >
 > All environments will continue to be operated by Microsoft. All automatic processes around your environments, such as monitoring or self-healing, will also continue as is for supported versions.
@@ -69,7 +67,7 @@ The Finance and Operations online service is covered by the Modern Lifecycle Pol
 To see more details on dates and versions for application and platform releases, please visit the [What's new or changed in Finance and Operations apps home page](../../fin-ops/get-started/whats-new-changed).
 
 > [!NOTE]
-> -  Service updates are cumulative in nature and may include updates for some or all of the following components:  Platform, Application, Financial Reporting, Commerce, and operating system updates. 
+> -  Service updates are cumulative in nature and may include updates for some or all of the following components:  platform, application, Financial Reporting, Commerce, and operating system updates. 
 > -  Customers can pause, delay, or opt out of a service update via the update settings in Microsoft Dynamics Lifecycle Services (LCS) projects, provided that all their sandbox and production environments are no more than three versions behind the latest available update. For more information, see [Can the updates be delayed? What is the policy?](../../fin-ops/get-started/one-version.md#can-the-updates-be-delayed-what-is-the-policy)
 > -  All customers were required to be on the latest version of Finance and Operations by April 2019, except for those with unfulfilled [extension requests](../extensibility/extensibility-home-page.md) submitted to Microsoft. Customers who submitted extensibility requests by January 1, 2019, are supported on version 7.3 until their extensibility requests are fulfilled. Customers are expected to upgrade to the latest version within 90 days of the extensibility request being fulfilled. For more information, see [One Version service updates FAQ](../../fin-ops/get-started/one-version.md). 
 
