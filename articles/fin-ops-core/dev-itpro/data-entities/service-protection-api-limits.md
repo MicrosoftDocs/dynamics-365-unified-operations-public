@@ -44,7 +44,7 @@ Client application developers should not just throw errors so that users receive
 
 Applications that are designed to load data into Finance + Operations apps or perform bulk data operations must be able to manage service protection API limit errors. These applications must prioritize throughput, so that they can complete their work in the minimum amount of time. They must have a strategy for retrying operations and achieving maximum throughput.
 
-For more information, see [Maximizing API throughput](service-protection-maximizing-api-throughput.md).
+For more information, see [Maximize API throughput](service-protection-maximizing-api-throughput.md).
 
 ### Anonymous users
 
@@ -132,7 +132,7 @@ This limit tracks the cumulative utilization thresholds of server resources. The
 
 > This request could not be processed at this time due to system experiencing high resource utilization.
 
-This error doesn't necessarily indicate that any single user or integration is causing the issue. Instead, it indicates that the cumulative utilization of web server resources across all service integrations has exceeded a threshold that threatens the performance and availability of the service. In this case, general strategies for optimizing API integrations are useful, such as the strategies that are outlined in [Maximizing API throughput](service-protection-maximizing-api-throughput.md). Additionally, make sure that you've defined the [throttling prioritization](priority-based-throttling.md) for your API integrations.
+This error doesn't necessarily indicate that any single user or integration is causing the issue. Instead, it indicates that the cumulative utilization of web server resources across all service integrations has exceeded a threshold that threatens the performance and availability of the service. In this case, general strategies for optimizing API integrations are useful, such as the strategies that are outlined in [Maximize API throughput](service-protection-maximizing-api-throughput.md). Additionally, make sure that you've defined the [throttling prioritization](priority-based-throttling.md) for your API integrations.
 
 ## Exceptions to service protection limits
 
