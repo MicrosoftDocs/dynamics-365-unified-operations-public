@@ -31,9 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-A **customer invoice for a sales order** is a bill that is related to a sale, and that an organization gives to a customer. This type of customer invoice is created based on a sales order, which includes order lines and item numbers. Item numbers are specified and posted in the ledger. Subledger journal entries aren't available for a customer invoice for a sales order. For more information, see [Create sales order invoices](tasks/create-sales-order-invoices.md).
+A **Customer invoice for a sales order** is a bill that is related to a sale, and that an organization gives to a customer. This type of customer invoice is created based on a sales order, which includes order lines and item numbers. Item numbers are specified and posted in the ledger. Subledger journal entries aren't available for a customer invoice for a sales order. For more information, see [Create sales order invoices](tasks/create-sales-order-invoices.md).
 
-A **free text invoice** isn't related to a sales order. It contains order lines that include ledger accounts, free-text descriptions, and a sales amount that you enter. You can't enter an item number on this kind of invoice. You must enter the appropriate sales tax information. A main account for the sale is indicated on each invoice line, which you can distribute to multiple ledger accounts by clicking **Distribute amounts** on the **Free text invoice** page. Additionally, the customer balance is posted to the summary account from the posting profile that is used for the free text invoice.
+A **Free text invoice** isn't related to a sales order. It contains order lines that include ledger accounts, free-text descriptions, and a sales amount that you enter. You can't enter an item number on this kind of invoice. You must enter the appropriate sales tax information. A main account for the sale is indicated on each invoice line, which you can distribute to multiple ledger accounts by clicking **Distribute amounts** on the **Free text invoice** page. Additionally, the customer balance is posted to the summary account from the posting profile that is used for the free text invoice.
 
 For more information see:
 
@@ -46,7 +46,10 @@ For more information see:
 [Generate and post recurring free text invoices](tasks/post-recurring-free-text-invoices.md)
 
 
-A **pro forma invoice** is an invoice that is prepared as an estimate of the actual invoice amounts before the invoice is posted. You can print a pro forma invoice either for a customer invoice for a sales order or for a free text invoice. In the case of system interruption during the sales pro forma invoice process, a pro forma invoice can be orphaned. An orphaned pro forma invoice can be deleted by running the **Delete pro forma invoices manually** periodic job. (**Sales and marketing > Periodic tasks > Clean up > Delete pro forma invoices manually**).
+A **Pro forma invoice** is an invoice that is prepared as an estimate of the actual invoice amounts before the invoice is posted. You can print a pro forma invoice either for a customer invoice for a sales order or for a free text invoice. 
+
+>[!NOTE]
+> In the case of a system interruption during the sales pro forma invoice process, a pro forma invoice can be orphaned. An orphaned pro forma invoice can be deleted by running the **Delete pro forma invoices manually** periodic job. Go to **Sales and marketing > Periodic tasks > Clean up > Delete pro forma invoices manually**.
 
 ## Using sales order customer invoice data entities
 You can use data entities to import and export information about a customer invoice for a sales order. There are different entities for the information on the sales invoice header and the sales invoice lines.
