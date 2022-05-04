@@ -2,7 +2,7 @@
 # required metadata
 
 title: Maximize API throughput
-description: This topic provides information on strategies for managing throttling responses for service protection API limits and maximizing API throughput.
+description: This topic describes strategies that can help you manage throttling responses for service protection application programming interface (API) limits and maximize API throughput.
 author: jaredha
 ms.date: 04/22/2022
 ms.topic: article
@@ -31,38 +31,38 @@ ms.dyn365.ops.version: Platform update 52
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information on strategies for managing throttling responses for service protection API limits and maximizing API throughput.
+This topic describes strategies that can help you manage throttling responses for service protection application programming interface (API) limits and maximize API throughput.
 
-When you have an application that must prioritize throughput to move the most data in the shortest period, there are some strategies you can apply.
+If you have an application that must prioritize throughput to move the most data in the shortest period, there are some strategies that you can apply.
 
 ## Let the server tell you when to retry the request
 
-Don't try to calculate how many requests to send at a time. Each environment can be different. Gradually increase the rate you send requests until you begin to hit limits and then depend on the service protection API limit Retry-After interval value to tell you when to send more. This value will keep your total throughput at the highest possible level. 
+Don't try to calculate the number of requests that you should send at a time. Each environment can differ. Gradually increase the rate that you send requests at until you begin to hit limits. Then depend on the **Retry-After** interval value of the service protection API limit to tell you when to send more. That value will help keep your total throughput at the highest possible level. 
 
 For more information, see [Retry operations](service-protection-retry-operations.md).
 
 ## Use multiple threads
 
-The higher limit on the number of concurrent threads is something your application can use to have significant improvement in performance. This is true if your individual operations are relatively quick. Depending on the nature of the data you are processing, you may need to adjust the number of threads to get optimum throughput.
+If your individual operations are relatively quick, your application can use the higher limit on the number of concurrent threads to significantly improve performance. Depending on the nature of the data that you're processing, you might have to adjust the number of threads to achieve optimum throughput.
 
 ## Distribute workloads across multiple service principals
 
-User-based service protection API limits are implemented on a per-user basis. If your integration is performing large bulk data operations using a single service principal, or is an interactive client application that uses a single service principal to send all user requests to the server, then it's possible to reach the service protection API limits fairly quickly. This can be avoided by distributing the workload in smaller batches across multiple service principals.
+User-based service protection API limits are implemented on a per-user basis. If your integration is using a single service principal to perform large bulk data operations, or if it's an interactive client application that uses a single service principal to send all user requests to the server, the service protection API limits can be reached fairly quickly. You can help prevent this situation by distributing the workload in smaller batches across multiple service principals.
 
 ## Avoid large batches
 
-*Batching* refers to sending multiple operations in a single request. Most scenarios will be fastest sending single requests with a high degree of parallelism. If you feel batch size might improve performance, it is best to start with a small batch size and increase concurrency until you start getting service protection API limit errors indicating the need to retry the operation. Batch size in Finance + Operations apps is limited to 5000 operations.
+*Batching* refers to the process of sending multiple operations in a single request. Most scenarios will be fastest if single requests are sent and there is a high degree of parallelism. If you think that batch size might help improve performance, the best strategy is to start with a small batch size and then increase concurrency until you start to receive service protection API limit errors that indicate that the operation must be retried. In Microsoft Dynamics 365 Finance + Operations apps, batch size is limited to 5,000 operations.
 
-For more information on batch requests with Finance + Operations service endpoints, see [Batch requests](../data-entities/odata.md#batch-requests).
+For more information about batch requests that have Finance + Operations service endpoints, see [Batch requests](../data-entities/odata.md#batch-requests).
 
 ## Remove the affinity cookie
 
-When you make a connection to a service on Azure, a cookie is returned with the response and all your subsequent requests will attempt to be routed to the same server unless capacity management forces it to go to another server. If you remove this cookie, each request you send will be routed to any of the eligible servers. This increases throughput because limits are applied per server. This simply allows you to use more servers if they are available.
+When you make a connection to a service in Azure, a cookie is returned that has the response. All your subsequent requests will try to be routed to the same server, unless capacity management forces them to go to another server. If you remove the cookie, every request that you send will be routed to any of the eligible servers. Therefore, throughput increases because limits are applied per server. This strategy lets you use more servers if they are available.
 
 > [!NOTE]
-> This strategy should only be used by applications that are seeking to optimize throughput. Interactive client applications benefit from the affinity cookie because it allows for reusing cached data that would otherwise need to be recreated, leading to poorer performance.
+> This strategy should be used only by applications that are trying to optimize throughput. Interactive client applications benefit from the affinity cookie, because it allows for reuse of cached data that must otherwise be re-created. Performance is affected if data must be re-created.
 
-The following code shows how to disable cookies when initializing an **HttpClient** with web services, assuming you are using a custom **HttpMessageHandler** to manage authentication.
+The following code shows how to disable cookies when you initialize an **HttpClient** with web services. It's assumed that you're using a custom **HttpMessageHandler** to manage authentication.
 
 ```C#
 HttpMessageHandler messageHandler = new OAuthMessageHandler(
@@ -74,7 +74,7 @@ HttpClient httpClient = new HttpClient(messageHandler)
 
 ## Optimize your connection
 
-You can expect greater throughput by optimizing your connection. Supporting .NET sample code uses these settings:
+You can expect greater throughput if you optimize your connection. Supporting .NET sample code uses the following settings.
 
 ```C#
 //Change max connections from .NET to a remote service default: 2
@@ -88,6 +88,5 @@ System.Net.ServicePointManager.UseNagleAlgorithm = false;
 ```
 
 For more information, see [Managing connections](/dotnet/framework/network-programming/managing-connections).
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
