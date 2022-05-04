@@ -35,7 +35,7 @@ This topic outlines the lifecycle and support policies for the Finance and Opera
 ## Modern Lifecycle Policy
 The Finance and Operations online service is covered by the Modern Lifecycle Policy. The Modern Lifecycle Policy covers products and services that are serviced and supported continuously. For more information about this policy, see [Modern Lifecycle Policy](https://support.microsoft.com/help/30881). Licensed customers must stay current with updates to the Finance and Operations online service in accordance with the following servicing and system requirements:
 
-- Customers purchasing subscriptions of Finance and Operations apps and operating on the following application versions will experience continuous updates of the Platform and Financial Reporting. Microsoft will continually update these components with the option to postpone up to 3 consecutive service updates.
+- Customers purchasing subscriptions of Finance and Operations apps and operating on the following application versions will experience continuous updates of the platform and Financial Reporting. Microsoft will continually update these components. Customers have the option to postpone up to 3 consecutive service updates.
     - Finance and Operations apps, version 10.0+ (April 2019)
     - Finance and Operations apps, version 8.0 (April 2018)
     - Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (December 2017)   
@@ -70,7 +70,7 @@ To see more details on dates and versions for application and platform releases,
 
 > [!NOTE]
 > -  Service updates are cumulative in nature and may include updates for some or all of the following components:  Platform, Application, Financial Reporting, Commerce, and operating system updates. 
-> -  Customers can pause, delay, or opt out of an update via the update settings in Microsoft Dynamics Lifecycle Services (LCS) projects, provided that all their sandbox and production environments are no more than three versions behind the latest available update. For more information, see [Can the updates be delayed? What is the policy?](../../fin-ops/get-started/one-version.md#can-the-updates-be-delayed-what-is-the-policy)
+> -  Customers can pause, delay, or opt out of a service update via the update settings in Microsoft Dynamics Lifecycle Services (LCS) projects, provided that all their sandbox and production environments are no more than three versions behind the latest available update. For more information, see [Can the updates be delayed? What is the policy?](../../fin-ops/get-started/one-version.md#can-the-updates-be-delayed-what-is-the-policy)
 > -  All customers were required to be on the latest version of Finance and Operations by April 2019, except for those with unfulfilled [extension requests](../extensibility/extensibility-home-page.md) submitted to Microsoft. Customers who submitted extensibility requests by January 1, 2019, are supported on version 7.3 until their extensibility requests are fulfilled. Customers are expected to upgrade to the latest version within 90 days of the extensibility request being fulfilled. For more information, see [One Version service updates FAQ](../../fin-ops/get-started/one-version.md). 
 
 ## Downloadable virtual hard drive (VHD) releases
