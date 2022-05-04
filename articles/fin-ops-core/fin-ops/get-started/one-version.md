@@ -46,7 +46,7 @@ For information about how to pause an update, see [Pause service updates through
 
 Production updates for a release will be scheduled for the first, second, and third weeks of the month. Depending on the configuration that you set up in LCS, you will receive updates during that specific week. Sandbox updates will always be scheduled the week before the production update. The configuration setup is available in LCS.
 
-As an example, for the April 10.0.25 release Microsoft performs updates during the weekends of April 1, April 8, or April 15, depending on the configuration that you set up in LCS. Sandbox updates will always be scheduled a week before the update.
+As an example, for the April 10.0.25 release, Microsoft performed updates during the weekends of April 1, April 8, or April 15, depending on the configuration that you set up in LCS. Sandbox updates will always be scheduled a week before the update.
 
 Customers can always choose to apply the update at an earlier time or at a time that is more convenient than the suggested times in LCS. If a customer is already on the latest version, the automatic update will be canceled.
 
