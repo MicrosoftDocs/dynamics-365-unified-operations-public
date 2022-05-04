@@ -83,13 +83,13 @@ The list below describes the minimum and maximum Adyen firmware versions that ar
 ### Dynamics 365 Retail POS version 10.0.26
 | Minimum Adyen Firmware version | Maximum Adyen Firmware version |
 | --- | --- |
-| adyen_v1_71p16 | adyen_v1_75p13 |
+| adyen_v1_73p6 | adyen_v1_75p13 |
 
 # [10.0.27](#tab/10-0-27)
 ### Dynamics 365 Retail POS version 10.0.27
 | Minimum Adyen Firmware version | Maximum Adyen Firmware version |
 | --- | --- |
-| adyen_v1_71p16 | adyen_v1_75p13 |
+| adyen_v1_73p6 | adyen_v1_75p13 |
 
 ---
 
