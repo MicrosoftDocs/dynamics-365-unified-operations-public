@@ -60,7 +60,7 @@ The Finance and Operations online service is covered by the Modern Lifecycle Pol
 > [!NOTE]
 > Application and platform releases expire at the end of the month of their software lifecycle.
 >
-> Microsoft will not provide any fixes to issues on versions that have reached end of service. Microsoft will also not investigate or troubleshoot any issue that you may encounter on an older version. If you encounter an issue on a version that has reached end of service, you will be required to update to the latest update and report the issue if it persists.
+> Microsoft won't provide any fixes to issues on versions that have reached their end of service. Microsoft also won't investigate or troubleshoot any issue that you encounter on a version that is older than three service updates. If you encounter an issue on a version that has reached its end of service, you must update to the latest update and then report the issue if it persists.
 >
 > All environments will continue to be operated by Microsoft. All automatic processes around your environments, such as monitoring or self-healing, will also continue as is for supported versions.
 
