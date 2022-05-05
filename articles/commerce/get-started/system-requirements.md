@@ -82,9 +82,9 @@ The following Microsoft Office applications are supported:
 
 ## System requirements for Commerce client components
 
-It is critical to perform proper performance testing prior to going live in production. The following are considered minimum system requirements for applications to function. To achieve desired performance, consider concepts like data volumes, transactional load per hour, and customization impact. Proper performance testing both early into implementation and again prior to final testing will allow for any necessary performance improvements to be made and to validate that the base solution meets the expected operation times required.
+It's critical to perform proper performance testing prior to going live in production. The following are considered minimum system requirements for applications to function. To achieve desired performance, consider concepts like data volumes, transactional load per hour, and customization impact. Proper performance testing, both early into implementation and again prior to final testing, allows for any necessary performance improvements to be made and validates that the base solution meets the expected operation times required.
 
-If the self-service component will use a SQL database, we highly recommend that you review [SQL Server versions and licenses](../dev-itpro/implementation-considerations-cdx.md#sql-server-versions-and-licenses). We recommend that you use a SQL Server version that is currently still within the mainstream support date. You can search for support dates by product in [Search Product and Services Lifecycle Information](/lifecycle/products/). SQL databases for self-service components require SQL Server 2017 or later. The SQL Server version that is used must have the Full-Text Search feature installed. We recommend that you always use the latest version that is available, and that you install all the latest service packs. By following these recommendations, you can help ensure both compatibility and security. The legacy self-service installers also support SQL Server 2016 with Service Pack 2 or later.
+If the self-service component will use an SQL database, we highly recommend that you review [SQL Server versions and licenses](../dev-itpro/implementation-considerations-cdx.md#sql-server-versions-and-licenses). We recommend that you use a SQL Server version that is currently still within the mainstream support date. You can search for support dates by product in [Search Product and Services Lifecycle Information](/lifecycle/products/). SQL databases for self-service components require SQL Server 2017 or later. The SQL Server version that is used must have the Full-Text Search feature installed. We recommend that you always use the latest version that is available, and install all the latest service packs. By following these recommendations, you can help ensure both compatibility and security. The legacy self-service installers also support SQL Server 2016 with Service Pack 2 or later.
 
 If the self-service component will use a server certificate, it's critical that you manage certificates for expiration. By default, certificates expire after one calendar year (365 days). Self-service components that use a server certificate include Hardware station or Commerce Scale Unit (self-hosted).
 
@@ -134,7 +134,7 @@ Remember that performance testing is crucial to the successful use of Commerce s
 - 3 GB of RAM.
 - Internet access and enough network throughput to handle the flow of requests and responses. (Note that this requirement is at both a computer level and a network level.)
 - Component-specific system requirements, such as requirements for SQL Server and Internet Information Services (IIS).
-- At least 10 percent of disk space is available. (We recommend that you have no less than 10 GB of available disk space when SQL Server is used.)
+- At least 10 percent of disk space is available. (We recommend that you've no less than 10 GB of available disk space when SQL Server is used.)
 
 Additionally, as customizations and performance requirements are generated, each component typically requires a more powerful system to meet user needs.
 
@@ -180,7 +180,7 @@ Given the separated nature and specific usage of previous Dynamics AX 2012 R3 co
 
 The Connector for Microsoft Dynamics AX 2012 R3 has two separate installers: one for Async Server Connector service and one for Real-time service for Microsoft Dynamics AX 2012 R3.
 
-- Both components are 32-bit applications, but they will run on both x86 and x64 architectures.
+- Both components are 32-bit applications, but they'll run on both x86 and x64 architectures.
 - Both components are supported on the following operating systems:
 
     - Windows 11, Windows 10 Pro, Windows Enterprise, and Windows Enterprise LTSB editions
@@ -192,7 +192,7 @@ The Connector for Microsoft Dynamics AX 2012 R3 has two separate installers: one
 
 ### Minimum system requirements
 
-As for Commerce Scale Unit (self-hosted), much larger, server-grade hardware is often required to handle the throughput of a whole enterprise architecture of legacy POS systems. Nevertheless, here is the absolute minimum that is required to test functionality:
+As for Commerce Scale Unit (self-hosted), much larger, server-grade hardware is often required to handle the throughput of a whole enterprise architecture of legacy POS systems. Nevertheless, here's the absolute minimum that is required to test functionality:
 
 - 2 GB of RAM (However, 4 GB of RAM are recommended.)
 - 1.6 GHz peak CPU speed per core (Two cores are the minimum.)
