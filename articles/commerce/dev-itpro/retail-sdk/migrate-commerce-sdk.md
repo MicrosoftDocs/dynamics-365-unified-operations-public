@@ -2,7 +2,7 @@
 title: Migrate to the Commerce SDK
 description: This topic explains how to migrate to the Commerce software development kit (SDK).
 author: mugunthanm
-ms.date: 11/02/2021
+ms.date: 05/05/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -99,7 +99,6 @@ Development of Commerce extensions for CRT is more streamlined and follows the s
 
 ### Sample code to migrate the helper classes consumed in Legacy SDK to Commerce SDK
 
-
 <table>
 <tr>
 <td> Legacy SDK helper methods </td> <td> Commerce SDK (Request/Response)  </td>
@@ -110,7 +109,6 @@ Development of Commerce extensions for CRT is more streamlined and follows the s
 ```C#
 TransactionServiceClient transactionService = new TransactionServiceClient(request.RequestContext);
 transactionService.InvokeExtensionMethod("getSalesOrderDetails")
- 
 ```
     
 </td>
@@ -130,7 +128,6 @@ InvokeExtensionMethodRealtimeRequest extensionRequest = new InvokeExtensionMetho
 ```C#
 var request = new GetSalesOrderDetailsByTransactionIdServiceRequest(transactionIdToLoad, SearchLocation.Local);
                      response = await context.ExecuteAsync<GetSalesOrderDetailsServiceResponse>(request).ConfigureAwait(false);
-
 ``` 
     
 </td>
