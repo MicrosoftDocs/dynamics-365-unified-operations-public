@@ -21,33 +21,47 @@ This topic describes how to integrate Microsoft Dynamics 365 Customer Voice into
 
 You can integrate [Customer Voice](https://dynamics.microsoft.com/customer-voice/overview/) into your e-commerce site to collect, analyze, and track real-time customer feedback. To get started integrating Customer Voice, you must first create an account and select a Customer Voice project template for the type of feedback you want to collect. 
 
-## Service integration
+## Integrate the Customer Voice service
 
-To select a Customer Voice project template for the type of feedback you want to collect, follow these steps. 
+First, you must select a Customer Voice project template for the type of feedback you want to collect.
+
+To select a Customer Voice project template, follow these steps. 
 
 1. Go to the [Customer Voice project template page](https://customervoice.microsoft.com/Pages/ProjectPage.aspx).
-1. Select the project template for the type of feedback you want to collect.
-1. Select the **Send** tab, and then under **Choose an embed format**, select the embed format. This will provide the necessary code to embed within the site builder tool and select the type of survey you want as shown below.  We'll use the **Button** type for this example.
+1. Select **Get started**.
+1. Select the project template for the type of feedback you want to collect, and then select **Next**.
+1. Select the **Send** tab, and then under **Choose an embed format**, select the embed format. The necessary code to embed within site builder appears below **Embedded code**. 
 
-![Customer Voice survey screen](media/customer-voice-integration-1.png)
+The following example illustration shows the **Periodic customer survey** page with the **Button** embed code option selected and the embedd code provided under **Embedded code**. The embedded code will be split into three parts as described in the sections below.
 
-The above code will be split into 3 parts described in the below sections.
+![Customer Voice Periodic customer survey page with the button option selected](media/customer-voice-integration-1.png)
 
-### External script link
+### Embed the external script URL block
 
-The following external script block must be embedded on any pages that will have a Customer Service survey. The best way to do this is to create a fragment that holds the script and embed the fragment on the page template(s). The script that will be embedded looks like this:
+You must embed the following external script URL block on all pages that will have a Customer Voice survey. The best way to embed the script on multiple pages  is to create a fragment in Commerce site builder that contains the script and then add the fragment to the appropriate page template(s). The embedded external script code will look like the following example code:
 
 ```html
 <script src=https://mfpembedcdnmsit.azureedge.net/mfpembedcontmsit/Embed.js type="text/javascript"></script>
 ```
 
-To embed the above external script, create a fragment in site builder based off the [External script](script-module.md) module then add the URL to the **Script source** configuration as shown in the below image.
+For information on fragments, see [Work with fragments](work-with-fragments.md).
 
-![External script fragment 2](media/customer-voice-integration-2.png)
+To embed the external script into a fragment, follow these steps.
 
-### External style sheet
+1. Create a fragment in site builder based off the [External script module](script-module.md).
+1. In the fragment, select the **Default external script** slot. 
+1. In the **Default external script** properties pane, under **Script source**, add the external script URL as shown in the following example illustration.
 
-The external stylesheet needs to be embedded on any pages that will have a survey. The best way is to create a fragment and ensure the fragment is added to the appropriate page template(s). The stylesheet link looks like this:
+    ![External script fragment 2](media/customer-voice-integration-2.png)
+
+1. Select **Save**, and then select **Finish editing**.
+1. Select **Publish** to publish the fragment.
+
+You can then add the new fragment to the appropriate page template.
+
+### Embed the external style sheet
+
+You must embed the the external stylesheet on all pages that will have a Customer Voice survey. The best way to embed the external style sheet on multiple pages is to create a fragment in Commerce site builder that contains the style sheet and then add the fragment to the appropriate page template(s). The embedded external style sheet code will look like the following example code:
 
 ```html
 <link rel="stylesheet" type="text/css" href=https://mfpembedcdnmsit.azureedge.net/mfpembedcontmsit/Embed.css />
