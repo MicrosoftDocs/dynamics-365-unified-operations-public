@@ -163,7 +163,7 @@ To create a sign-up and sign-in user flow policy, follow these steps.
 
 1. Select **Create**.
 
-The following image is an example of the Azure AD B2C sign up and sign-in user flow.
+The following image is an example of the Azure AD B2C sign-up and sign-in user flow.
 
 ![Sign Up and Sign In policy settings.](./media/B2CImage_11.png)
 
