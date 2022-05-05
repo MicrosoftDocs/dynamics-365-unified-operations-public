@@ -72,14 +72,9 @@ To see more details on dates and versions for application and platform releases,
 > -  All customers were required to be on the latest version of Finance and Operations by April 2019, except for those with unfulfilled [extension requests](../extensibility/extensibility-home-page.md) submitted to Microsoft. Customers who submitted extensibility requests by January 1, 2019, are supported on version 7.3 until their extensibility requests are fulfilled. Customers are expected to upgrade to the latest version within 90 days of the extensibility request being fulfilled. For more information, see [One Version service updates FAQ](../../fin-ops/get-started/one-version.md). 
 
 ## Downloadable virtual hard drive (VHD) releases
+Updates to the downloadable VHD are released 2x annually concurrent with the Finance and Operations April and October major service updates. The VHD is bundled with the latest service update, and therefore its release always trails that of the associated service update. You can expect the VHD update to release after the major service update has been made generally available to all customers. Finance and Operations release dates are published under [Service update availability](/fin-ops/get-started/public-preview-releases#targeted-release-schedule-dates-subject-to-change).
 
 Use of the VHDs is subject to the [Software license terms](https://go.microsoft.com/fwlink/?linkid=851163).
-
-| **Release**                                  | **VHD name**                 | **VHD expiration date** |
-|----------------------------------------------|------------------------------|-------------------------|
-| Platform update 12 / Application release 7.2 | FinandOps7.2PlatUpdate12.vhd | May 24, 2018            |
-| Platform update 12 / Application release 7.3 | FinandOps7.3PlatUpdate12.vhd | June 05, 2018           |
-| Platform update 15 / Application release 7.3 | FinandOps7.3withPlatUpdate15 | December 08, 2018       |
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
