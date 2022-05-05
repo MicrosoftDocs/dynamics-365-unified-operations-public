@@ -2,7 +2,7 @@
 # required metadata
 
 title: Choose a data integration technology
-description: This topic provides information about integrating with data managed by Human Resources. 
+description: This topic provides information about integrating with data managed by Human resources. 
 author: twheeloc
 ms.date: 08/19/2021
 ms.topic: article
@@ -21,7 +21,7 @@ ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Human Resources
 
 
 
-This topic provides information for integrating with data managed by Dynamics 365 Human Resources. It describes different integration technologies to help you decide which technologies best fit your needs.
+This topic provides information for integrating with data managed by Dynamics 365 Human resources. It describes different integration technologies to help you decide which technologies best fit your needs.
 
 ## Data integration background
 
