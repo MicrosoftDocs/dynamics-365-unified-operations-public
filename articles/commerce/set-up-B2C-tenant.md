@@ -385,7 +385,7 @@ For additional information regarding customizing Azure AD B2C interactions and p
 
 An optional, secondary administrator account can be added in the **Users** section of your B2C tenant. This can be a direct account or a general account. If you need to share an account across team resources, a common account can also be created. Due to the sensitivity of the data stored in Azure AD B2C, a common account should be monitored closely per your company's security practices.
 
-### Login custom domain
+### Set up a custom login domain
 
 Azure AD B2C allows you to set up a custom login domain for the Azure AD B2C tenant. For instructions, see [Enable custom domains for Azure Active Directory B2C](/azure/active-directory-b2c/custom-domain). 
 
@@ -393,14 +393,14 @@ If you use a custom login domain, the domain must be entered into Commerce site 
 
 To enter a custom login domain into site builder, follow these steps.
 
-1. In the top left corner of site builder, select the site switcher, and then select **Manage sites**.
+1. In the top right corner of site builder, select the site switcher, and then select **Manage sites**.
 1. In the left navigation pane, select **Tenant settings \> Site authentication setup**.
 1. In the **Site authentication profiles** section, select **Manage**.
-1. In the right flyout menu, select the **Edit** button (pencil symbol) next to the site authentication profile you want to enter a custom domain for.
+1. In the flyout menu on the right, select the **Edit** button (pencil symbol) next to the site authentication profile you want to enter a custom domain for.
 1. In the **Edit site authentication profile** dialog box, under **Login custom domain**, enter you custom domain (for example, 'login.fabrikam.com').
 
 > [!WARNING]
-> When you update to a custom domain for the Azure AD B2C tenant, the change affects the tenant's issuer details for the token generated. Issuer details will then include the custom domain instead of the default domain provided by Azure AD B2C. A different issuer configuration in Dynamics changes the system's interaction against a site user, potentially creating a new customer record if a user is authenticating against the new issuer. Any custom domain changes should be thoroughly tested before switching to the custom domain in a live Azure AD B2C environment.
+> When you update to a custom domain for the Azure AD B2C tenant, the change affects the tenant's issuer details for the token generated. Issuer details will then include the custom domain instead of the default domain provided by Azure AD B2C. A different **Issuer** configuration in Commerce headquarters (**Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters \> Identity Providers**) changes the system's interaction with site users, potentially creating a new customer record if a user is authenticating against the new issuer. Any custom domain changes should be thoroughly tested before switching to the custom domain in a live Azure AD B2C environment.
 
 ## Additional resources
 
