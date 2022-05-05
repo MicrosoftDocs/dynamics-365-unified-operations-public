@@ -196,6 +196,10 @@ There are a few limitations to this approach. You must have administrative acces
 
 Although caching reduces the amount of time that is required to fetch data again, it costs memory. Use caching in cases where the amount of fetched data isn't very large. For more information and an example that shows how to use caching, see [Improve the model mapping based on information from the execution trace](trace-execution-er-troubleshoot-perf.md#improve-the-model-mapping-based-on-information-from-the-execution-trace).
 
+#### <a name="reduce-fetched-data"></a>Reduce volume of data fetched
+
+You can reduce memory consumption for caching by limiting the number of fields in records of an application table that you fetch at runtime. In this case you will fetch the only values of fields of an application table that you need in your ER model mapping. Other fields of this table will not be fetched reducing the volume of memory that is needed to cache fetched records. For more information, see [Improve performance of ER solutions by reducing the number of table fields that are fetched at runtime](er-reduce-fetched-fields-number.md).
+
 #### <a name="cached-parameterized"></a>Use a cached, parameterized calculated field
 
 Sometimes, values must be looked up repeatedly. Examples include account names and account numbers. To help save time, you can create a calculated field that has parameters on the top level, and then add the field to the cache.
