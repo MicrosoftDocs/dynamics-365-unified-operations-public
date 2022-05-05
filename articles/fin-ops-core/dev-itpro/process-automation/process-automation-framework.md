@@ -29,14 +29,15 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Process automation enables simple scheduling of processes that will be run by the batch framework. The process automation framework is a set of APIs that lets you implement process automation.
 
-As with any customization, you should use the documented approach to extend the process automation framework and follow the guidelines to avoid [intrusive customizations](../extensibility/intrusive-customizations.md). You should also follow these specific guidelines:
+As with any customization, you should use the documented approach to extend the process automation framework and follow the general guidelines to avoid [intrusive customizations](../extensibility/intrusive-customizations.md). You should also follow these specific guidelines:
 
 - Don't integrate directly with the process automation framework tables.
 - Don't extend the framework or integrate directly with the framework classes.
 - Don't subscribe to table events on the framework tables. The process automation framework skips most of those events.
 - If functionality that you require is missing, submit an extensibility request.
 
-If you integrate with the process automation framework in an unsupported way, your integration might break bcause it did not follow the best practices.
+> [!NOTE]
+> If you integrate with the process automation framework in an unsupported way, your integration might break bcause it did not follow the best practices.
 
 For more information about process automation, see [Process automation](../sysadmin/process-automation.md).
 
