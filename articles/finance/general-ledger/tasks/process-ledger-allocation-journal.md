@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: LedgerAllocationRequest, LedgerJournalTable, LedgerJournalTransAllocation   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 This topic explains how to process an allocation request. Use the Process allocation request page to create an allocation journal that can be reviewed and approved before posting to General ledger, or posted directly to General ledger. Before you can create an allocations journal, there must be least one active Ledger allocation rule. This task uses the USMF demo company.
 
-1. In the navigation pane, go to **Modules > General ledger > Allocations > Process allocation request**.
+1. In the navigation pane, go to **General ledger > Allocations > Process allocation request**.
 2. In the **Rule** field, select the desired record in the drop-down menu.
 3. In the **As of date** field, enter a date.
 
