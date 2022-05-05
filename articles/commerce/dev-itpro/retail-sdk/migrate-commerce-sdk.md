@@ -90,14 +90,14 @@ This new implementation simplifies the upgrade and development process. To downl
 
 Development of Commerce extensions for CRT is more streamlined and follows the standard best practices for .NET development.
 
-### Reference Package difference between Legacy Retail SDK and Commerce SDK
+### Reference package difference between legacy Retail SDK and Commerce SDK
 
-| Legacy SDK Package |  Commerce SDK (new) |
+| Legacy SDK package |  Commerce SDK (new) |
 |--------------------| -------------------|
 |Microsoft.Dynamics.Commerce.Runtime.Services, Microsoft.Dynamics.Commerce.Runtime.TransactionService, Microsoft.Dynamics.Commerce.Runtime.Workflow, Microsoft.Dynamics.Commerce.Runtime.Services.Messages, Microsoft.Dynamics.Commerce.Runtime.Data |Microsoft.Dynamics.Commerce.Sdk.Runtime |
 | Microsoft.Dynamics.Commerce.Runtime.Services.PricingEngine | Microsoft.Dynamics.Commerce.Runtime.Services.PricingEngine.Contracts |
 
-### Sample code to migrate the helper classes consumed in Legacy SDK to Commerce SDK
+### Sample code to migrate the helper classes consumed in legacy SDK to Commerce SDK
 
 <table>
 <tr>
