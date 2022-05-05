@@ -105,7 +105,7 @@ This section lists the supported operating systems for each Commerce self-servic
 - Windows 11, 10 (Pro, Enterprise, LTSC, and IOT Enterprise editions) with the latest available updates are supported.
 
     > [!NOTE]
-    > Windows 10 Pro isn't recommended, except as part of a domain, so that Windows updates can be appropriately scheduled.
+    > Windows 10 Pro and Windows 11 Pro are not recommended, except as part of a domain, so that Windows updates can be appropriately scheduled.
 
 - Windows Server 2019 is supported.
 - We don't recommend that you use Modern POS on the same computer as another self-service component (for example, Hardware station or Commerce Scale Unit \[self-hosted\]).
@@ -120,7 +120,7 @@ This section lists the supported operating systems for each Commerce self-servic
 - Windows 11, 10 (Pro, Enterprise, LTSC, and IOT Enterprise editions) with the latest available updates are supported.
 
     > [!NOTE]
-    > Windows 10 Pro isn't recommended, except as part of a domain, so that Windows updates can be appropriately scheduled.
+    > Windows 10 Pro and Windows 11 Pro are not recommended, except as part of a domain, so that Windows updates can be appropriately scheduled.
 
 - Windows Server 2019 is supported.
 - We don't recommend that you use a self-service component on the same computer as another self-service component (for example, Modern POS).

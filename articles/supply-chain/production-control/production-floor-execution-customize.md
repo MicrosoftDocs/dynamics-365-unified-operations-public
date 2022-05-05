@@ -2,7 +2,7 @@
 title: Customize the production floor execution interface
 description: This topic explains how to extend current forms or create new forms and buttons for the production floor execution interface.
 author: johanhoffmann
-ms.date: 11/08/2021
+ms.date: 05/04/2022
 ms.topic: article
 ms.search.form:
 ms.technology:
@@ -11,7 +11,7 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-11-08
-ms.dyn365.ops.version: 10.0.24
+ms.dyn365.ops.version: 10.0.25
 ---
 
 # Customize the production floor execution interface
@@ -55,7 +55,7 @@ When you've finished, the new button (action) will automatically be listed on th
 1. Create an extension that is named `<ExtensionPrefix>_JmgProductionFloorExecution<FormName>_Extension`, where the `getMainMenuItemsList` method is extended by adding the new menu item to the list. The following code shows an example.
 
     ```xpp
-    [ExtensionOf(classStr(JmgProductionFloorExecutionForm))]
+    [ExtensionOf(classStr(JmgProductionFloorExecutionMenuItemProvider))]
     public final class <ExtensionPrefix>_JmgProductionFloorExecutionForm<FormName>_Extension{
         static public List getMainMenuItemsList()
         {
@@ -137,6 +137,79 @@ formRun.setNumpadController(numpadController);
 numpadController.setValueToNumpad(333.56);
 formRun.run();
 ```
+
+## Add a date and time controls to a form or dialog
+
+This section shows how to add date and time controls to a form or dialog. The touch-friendly date and time controls enable workers to specify dates and times. The following screenshots show how the controls typically appear on the page. The time control provides both 12-hour and 24-hour versions; the version shown will follow the preference set for the user account under which the interface is running.
+
+![Date control example.](media/pfe-customize-date-control.png "Date control example")
+
+![Time control example with 12-hour clock.](media/pfe-customize-time-control-12h.png "Time control example with 12-hour clock")
+
+![Time control example with 24-hour clock.](media/pfe-customize-time-control-24h.png "Time control example with 24-hour clock")
+
+The following procedure shows an example of how to add date and time controls to a form.
+
+1. Add a controller to the form for each date and time control that the form should contain. (The number of controllers must equal the number of date and time controls in the form.)
+
+    ```xpp
+    private JmgProductionFloorExecutionDateTimeController  dateFromController; 
+    private JmgProductionFloorExecutionDateTimeController  dateToController; 
+    private JmgProductionFloorExecutionDateTimeController  timeFromController; 
+    private JmgProductionFloorExecutionDateTimeController  timeToController;
+    ```
+
+1. Declare the required variables (of type `utcdatetime`).
+
+    ```xpp
+    private utcdatetime fromDateTime;
+    private utcdatetime toDateTime;
+    ```
+
+1. Create methods where the datetime will be updated by the datetime controllers. The following example shows one such method.
+
+    ```xpp
+    private void setFromDateTime(utcdatetime _value)
+        {
+            fromDateTime = _value;
+        }
+    ```
+
+1. Set up the behavior of each datetime controller and connect each controller to a form part. The following example shows how to set up data for date-from and time-from controls. You could add similar code for date-to and time-to controls (not shown).
+
+    ```xpp
+    /// <summary>
+    /// Initializes all date and time controllers, defines their behavior, and connects them with the form parts.
+    /// </summary>
+    private void initializeDateControlControllers()
+    {
+        dateFromController = new JmgProductionFloorExecutionDateTimeController();
+        dateFromController.setDateControlValueToCallerFormDelegate += eventhandler(this.setFromDateTime);
+        dateFromController.parmDateTimeValue(fromDateTime);
+    
+        timeFromController = new JmgProductionFloorExecutionDateTimeController();
+        timeFromController.setDateControlValueToCallerFormDelegate += eventhandler(this.setFromDateTime);
+        timeFromController.parmDateTimeValue(fromDateTime);
+        
+        DateFromFormPart.getPartFormRun().setDateControlController(dateFromController, timeFromController);
+        TimeFromFormPart.getPartFormRun().setTimeControlController(timeFromController, dateFromController);
+        
+        ...
+
+    }
+    ```
+
+    If all you need is a date control, you can skip the time control setup and instead just set up the date control as shown in the following example:
+
+    ```xpp
+    {
+        dateFromController = new JmgProductionFloorExecutionDateTimeController();
+        dateFromController.setDateControlValueToCallerFormDelegate += eventhandler(this.setFromDateTime);
+        dateFromController.parmDateTimeValue(fromDateTime);
+    
+        DateFromFormPart.getPartFormRun().setDateControlController(dateFromController, null);
+    }
+    ```
 
 ## Additional resources
 

@@ -3,7 +3,7 @@
 
 title: Software lifecycle policy and cloud releases
 description: This topic outlines the lifecycle and support policies for the Finance and Operations online service.
-author: ShellyBakke
+author: sericks007
 ms.date: 02/26/2020
 ms.topic: article
 ms.prod: 
@@ -20,7 +20,7 @@ ms.reviewer: sericks
 ms.custom: 69914
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: smiller
+ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 
