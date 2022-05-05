@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Integrate Customer Voice into an e-commerce site page
-description: This topic describes how to integrate Microsoft Dynamics 365 Customer Voice into a Microsoft Dynamics 365 Commerce site page.
+title: Integrate Customer Voice into e-commerce site pages
+description: This topic describes how to integrate Microsoft Dynamics 365 Customer Voice into Microsoft Dynamics 365 Commerce e-commerce site pages.
 author: samjarawan
-ms.date: 05/04/2022
+ms.date: 05/05/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -13,11 +13,11 @@ ms.author: samjar
 ms.search.validFrom: 2019-10-31
 
 ---
-# Integrate Customer Voice into an e-commerce site page
+# Integrate Customer Voice into e-commerce site pages
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to integrate Microsoft Dynamics 365 Customer Voice into a Microsoft Dynamics 365 Commerce site page.
+This topic describes how to integrate Microsoft Dynamics 365 Customer Voice into Microsoft Dynamics 365 Commerce e-commerce site pages.
 
 You can integrate [Customer Voice](https://dynamics.microsoft.com/customer-voice/overview/) into your e-commerce site to collect, analyze, and track real-time customer feedback. To get started integrating Customer Voice, you must first create an account and select a Customer Voice project template for the type of feedback you want to collect. 
 
