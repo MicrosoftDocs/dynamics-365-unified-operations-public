@@ -101,16 +101,16 @@ Development of Commerce extensions for CRT is more streamlined and follows the s
 
 <table>
 <tr>
-<td> Legacy SDK helper methods </td> <td> Commerce SDK (Request/Response)  </td>
+    <td><b>Legacy SDK helper methods</b></td><td><b>Commerce SDK (Request/Response)</b></td>
 </tr>
 <tr>
-<td> TransactionServiceClient
+    <td> TransactionServiceClient</br></br>
 
 ```C#
 TransactionServiceClient transactionService = new TransactionServiceClient(request.RequestContext);
 transactionService.InvokeExtensionMethod("getSalesOrderDetails")
-```
-    
+``` 
+
 </td>
 <td>
 
@@ -118,30 +118,30 @@ transactionService.InvokeExtensionMethod("getSalesOrderDetails")
 InvokeExtensionMethodRealtimeRequest extensionRequest = new InvokeExtensionMethodRealtimeRequest("getSalesOrderDetails ")
         InvokeExtensionMethodRealtimeResponse response = await request.RequestContext.ExecuteAsync<InvokeExtensionMethodRealtimeResponse>   (extensionRequest).ConfigureAwait(false); 
 ``` 
-
+    
 </td>
 </tr>
 <tr>
 <td> LoadSalesTransactionForReturn </td>
-<td>
-    
+<td> 
+
 ```C#
 var request = new GetSalesOrderDetailsByTransactionIdServiceRequest(transactionIdToLoad, SearchLocation.Local);
                      response = await context.ExecuteAsync<GetSalesOrderDetailsServiceResponse>(request).ConfigureAwait(false);
-``` 
-    
+```   
+
 </td>
 </tr>
 <tr>
 <td> GetProductsInCartLines </td>
-<td>
-    
+<td> 
+
 ```C#
 var serviceRequest = new GetProductsInCartLinesServiceRequest(request.CartLines);
                  var serviceResponce = await request.RequestContext.ExecuteAsync<GetProductsInCartLinesServiceResponse>(serviceRequest).ConfigureAwait(false);
                  return new GetProductsInCartLinesResponse(serviceResponce.ProductsByRecordId);
-``` 
-    
+```  
+
 </td>
 </tr>
 <tr>
@@ -156,8 +156,8 @@ var serviceRequest = new GetProductsInCartLinesServiceRequest(request.CartLines)
                 ignoreProductDiscontinuedNotification: ignoreProductDiscontinuedNotification);
 
 var getCartResponse = await context.ExecuteAsync<GetCartResponse>(getCartRequest).ConfigureAwait(false);
-``` 
-    
+```    
+
 </td>
 </tr>
 <tr>
@@ -168,6 +168,7 @@ var getCartResponse = await context.ExecuteAsync<GetCartResponse>(getCartRequest
 var saveTransactionRequest = new SaveSalesTransactionDataRequest(transaction);
  await request.RequestContext.Runtime.ExecuteAsync<NullResponse>(saveTransactionRequest, request.RequestContext).ConfigureAwait(false);
 ``` 
+
 </td>
 </tr>
 <tr>
@@ -178,8 +179,8 @@ var saveTransactionRequest = new SaveSalesTransactionDataRequest(transaction);
 var saveCartRequest = new SaveCartRequest(cart, calculationModes: null, isGiftCardOperation: isGiftCardOperation, isTransactionResume: true);
 saveCartRequest.SalesTransaction = transaction;
 cart = (await request.RequestContext.ExecuteAsync<SaveCartResponse>(saveCartRequest).ConfigureAwait(false)).Cart;
-``` 
-    
+```    
+
 </td>
 </tr>
 </table>
