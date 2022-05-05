@@ -67,13 +67,22 @@ You must embed the the external stylesheet on all pages that will have a Custome
 <link rel="stylesheet" type="text/css" href=https://mfpembedcdnmsit.azureedge.net/mfpembedcontmsit/Embed.css />
 ```
 
-To embed the above link, create a fragment in site builder based off the [Metatags](metatags-module.md) module and paste the link into the **Meta Tags** configuration field as shown below:
+To embed the external style sheet into a fragment, follow these steps.
 
-![External script fragment 3](media/customer-voice-integration-3.png)
+1. Create a fragment in site builder based off the [Metatags](metatags-module.md).
+1. In the fragment, select the **Default metatags** slot. 
+1. In the **Default metatags** properties pane, under **Meta tags**, add the style sheet URL as shown in the following example illustration.
+
+    ![External script fragment 3](media/customer-voice-integration-3.png)
+
+1. Select **Save**, and then select **Finish editing**.
+1. Select **Publish** to publish the fragment.
+
+You can then add the new fragment to the appropriate page template.
 
 ### Inline script
 
-The inline script provided by Customer Voice needs to be embedded as an inline script. The below is just a sample and note the **SURVEY_KEY** should match the one provided by Customer Voice.  Also notice the last line which calls the code to render the survey button after 1 second to ensure time is given for the scripts to be loaded.  You may also need to add other meta data such as company name if needed, this will be dependent on if your survey requires it.  
+The inline script provided by Customer Voice needs to be embedded as an inline script. The below is just a sample and note that **SURVEY_KEY** should match the actual survey key provided by Customer Voice.  Also notice the last line which calls the code to render the survey button after 1 second to ensure time is given for the scripts to be loaded.  You may also need to add other meta data such as company name if needed, this will be dependent on if your survey requires it.  
 
 ```html
 function renderSurveyButton() {
@@ -97,7 +106,7 @@ The below image shows the above code added an [inline script](script-module.md) 
 
 ## Enable scripts on e-commerce site
 
-Once the fragments have been created, they can be added to the page templates that you plan to use them on. The below screenshot shows the three fragments added to a product details page template.  Once the changes are published the survey will appear on the pages they were added to.
+Once the fragments have been created, they can be added to the page templates that you plan to use them on. The below screenshot shows the three fragments added to a product details page template. Once the changes are published the survey will appear on the pages controlled by the template that the fragments were added to.
 
 ![Inline script fragment 5](media/customer-voice-integration-5.png)
 
