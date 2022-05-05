@@ -3,7 +3,7 @@
 
 title: Purchasing cXML Enhancements
 description: The Purchasing cXML Enhancements feature builds on the existing external catalog functionality, PunchOut, that is used for purchase requisitions.
-author: Henrikan
+author: GalynaFedorova
 ms.date: 08/03/2020
 ms.topic: article
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: kamaybac
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2020-08-03
 ms.dyn365.ops.version: 10.0.13
 ---

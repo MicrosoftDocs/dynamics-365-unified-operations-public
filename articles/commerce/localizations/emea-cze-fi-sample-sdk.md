@@ -16,7 +16,6 @@ ms.search.validFrom: 2019-3-1
 # Deployment guidelines for the fiscal registration service integration sample for the Czech Republic (legacy)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This topic provides guidelines for deploying the fiscal registration service integration sample for the Czech Republic from the Microsoft Dynamics 365 Commerce Retail software development kit (SDK) on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). For more information about this fiscal integration sample, see [Fiscal registration service integration sample for the Czech Republic](emea-cze-fi-sample.md). 
 

@@ -3,7 +3,7 @@
 
 title: Purchase order overview
 description: This article provides general information about purchase orders (POs) and links to additional articles that are related to the various stages that a PO goes through.
-author: Henrikan
+author: GalynaFedorova
 ms.date: 06/20/2017
 ms.topic: overview
 ms.prod: 
@@ -23,7 +23,7 @@ ms.custom: ["93083", "intro-internal"]
 ms.assetid: e9b7bc5b-1d7e-4ec2-97be-d655274b0613
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

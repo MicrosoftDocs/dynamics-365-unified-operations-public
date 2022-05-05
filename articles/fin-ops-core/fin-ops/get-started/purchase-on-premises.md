@@ -6,7 +6,8 @@ description: This topic explains how to purchase and deploy Microsoft Dynamics 3
 author: cabeln 
 ms.date: 11/30/2021
 ms.topic: article
-ms.prod: 
+ms.prod: dynamics-365
+ms.service:
 ms.technology: 
 
 # optional metadata

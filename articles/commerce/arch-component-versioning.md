@@ -4,7 +4,7 @@
 title: Dynamics 365 Commerce component versioning requirements
 description: This topic provides an overview of the component versioning requirements and dependencies for all components in the Microsoft Dynamics 365 Commerce ecosystem.
 author: rezaassadi
-ms.date: 03/18/2022
+ms.date: 05/04/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -45,15 +45,15 @@ To ensure compatibility between all Commerce components that are serviced and de
 
 - **Commerce headquarters and Finance and Operations apps must be on the same version as, or a newer version than, Commerce Scale Unit (both cloud and self-hosted).**
 
-    For example, if Commerce headquarters and Finance and Operations apps are on version 10.0.25, Commerce Scale Unit must be on version 10.0.25 or earlier (for example, 10.0.24 or 10.0.23).
+    For example, if Commerce headquarters and Finance and Operations apps are on version 10.0.26, Commerce Scale Unit must be on version 10.0.26 or earlier (for example, 10.0.25 or 10.0.24).
 
 - **Commerce Scale Unit must be on the same version as, or a newer version than, Modern Point of Sale (POS), Hardware Station, and the Commerce software development kit (SDK) and associated local site configurations (such as modules, data actions, and themes).**
 
-    For example, if Commerce Scale Unit is on version 10.0.25, Modern POS, Hardware Station, and the Commerce storefront must be on version 10.0.25 or earlier (for example, 10.0.24 or 10.0.23).
+    For example, if Commerce Scale Unit is on version 10.0.26, Modern POS, Hardware Station, and the Commerce storefront must be on version 10.0.26 or earlier (for example, 10.0.25 or 10.0.24).
 
 - **Extension packages must be compiled against the same version as, or a newer version than, the target component that the extension applies to.**
 
-    For example, if the deployed Commerce Scale Unit is on version 10.0.25, the corresponding extension packages must be compiled against version 10.0.25 or earlier (for example, 10.0.24 or 10.0.23).
+    For example, if the deployed Commerce Scale Unit is on version 10.0.26, the corresponding extension packages must be compiled against version 10.0.26 or earlier (for example, 10.0.25 or 10.0.24).
 
 ### Quality updates
 
@@ -61,20 +61,20 @@ During quality updates, no specific versioning requirements must be followed for
 
 ## Current supported versions
 
-The following table describes the current supported versions of various Commerce components as of **March 18th, 2022**.
+The following table describes the current supported versions of various Commerce components as of **April 15th, 2022**.
 
 | Component | Latest available release (first release available in Sandbox) | Latest available component version number (first release available in Sandbox) | Earliest supported release | Earliest supported component version number |
 |---|---|---|---|---|
-| Finance and Operations apps | 10.0.25 | 10.0.25 | 10.0.21 | 10.0.21 |
-| Commerce Scale Unit (cloud-hosted) | 10.0.25 | 9.35 | 10.0.21 | 9.31 |
-| Commerce module library | 10.0.25 | 9.35 | 10.0.21 | 9.31 |
-| Commerce Scale Unit (self-hosted) | 10.0.25 | 9.35 | 10.0.17 | 9.27 |
-| Modern POS | 10.0.25 | 9.35 | 10.0.17 | 9.27 |
-| Hardware Station | 10.0.25 | 9.35 | 10.0.17 | 9.27 |
+| Finance and Operations apps | 10.0.26 | 10.0.26 | 10.0.22 | 10.0.22 |
+| Commerce Scale Unit (cloud-hosted) | 10.0.26 | 9.36 | 10.0.22 | 9.32 |
+| Commerce module library | 10.0.26 | 9.36 | 10.0.22 | 9.32 |
+| Commerce Scale Unit (self-hosted) | 10.0.26 | 9.36 | 10.0.18 | 9.28 |
+| Modern POS | 10.0.26 | 9.36 | 10.0.18 | 9.28 |
+| Hardware Station | 10.0.26 | 9.36 | 10.0.18 | 9.28 |
 
 ## One Version requirements
 
-Commerce components follow the same [One Version service updates](https://cloudblogs.microsoft.com/dynamics365/bdm/2018/07/06/modernizing-the-way-we-update-dynamics-365/) that were announced in July 2018, and also the subsequently published [flexible service updates for Finance and Operations apps](https://cloudblogs.microsoft.com/dynamics365/bdm/2019/06/03/new-flexible-service-updates-for-dynamics-365-for-finance-and-operations/) that were announced in June 2019. For more information, see [One Version service updates FAQ](../fin-ops-core/fin-ops/get-started/one-version.md).
+Commerce components follow the One Version service updates. For more information, see [One Version service updates FAQ](../fin-ops-core/fin-ops/get-started/one-version.md).
 
 ### Cloud components
 
@@ -84,27 +84,18 @@ Customers can pause up to three consecutive updates across the following compone
 - Commerce Scale Unit (cloud-hosted)
 - Commerce SDK and associated local site configurations (such as modules, data actions, and themes)
 
-For example, customers who are currently on version 10.0.22 can pause updates to versions 10.0.23, 10.0.24, and 10.0.25. However, they must then update to version 10.0.26. In this scenario, after version 10.0.27 becomes available, version 10.0.22 is no longer supported.
+For example, customers who are currently on version 10.0.23 can pause updates to versions 10.0.24, 10.0.25, and 10.0.26. However, they must then update to version 10.0.27. In this scenario, after version 10.0.28 becomes available, version 10.0.23 is no longer supported.
 
 ### In-store components
 
-Customers can pause up to seven consecutive updates across the following components. (Seven updates correspond to approximately twelve calendar months.)
+Customers can pause up to three consecutive updates across the following components:
+- Commerce Scale Unit (self-hosted)
+- Modern POS or Store Commerce
+- Hardware station
 
-- Commerce Scale Unit (in-store hosted)
-- Modern POS
-- Hardware Station
-
-For example, customers who are currently on version 10.0.22 can pause updates to versions 10.0.23, 10.0.24, and 10.0.25. However, they must then update to version 10.0.26. In this scenario, after version 10.0.27 becomes available, version 10.0.22 is no longer supported.
+For example, customers who are currently on version 10.0.26 can pause updates for the released versions 10.0.27, 10.0.28, and 10.0.29. However, the following release of version 10.0.30 would remove support of version 10.0.26. In this scenario, after version 10.0.30 becomes available, version 10.0.26 is no longer supported and an update to the in-store components would be necessary.
 
 ## Additional resources
-
-### One Version service updates
-
-For more information about One Version service updates, see the following resources:
-
-- [One Version service updates FAQ](../fin-ops-core/fin-ops/get-started/one-version.md)
-- [Modernizing the way we update Dynamics 365](https://cloudblogs.microsoft.com/dynamics365/bdm/2018/07/06/modernizing-the-way-we-update-dynamics-365/)
-- [New flexible service updates for Finance and Operations apps](https://cloudblogs.microsoft.com/dynamics365/bdm/2019/06/03/new-flexible-service-updates-for-dynamics-365-for-finance-and-operations/)
 
 ### Component selection
 

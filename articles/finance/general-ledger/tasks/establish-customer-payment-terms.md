@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: PaymDay, PaymTerm, CashDisc   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 This procedure defines a cash discount and due date setup. This task guide uses the USMF demo company.
 
-1. Go to **Navigation pane > Modules > Accounts receivable > Payments setup > Payment days**. The setup for the **Terms of payment** is shared for **Accounts receivable** and **Accounts payable**. If you define it in module, it will be available in the other module also. For this task guide, I set up all the terms of payment under **Accounts receivable**.
+1. Go to **Navigation pane > Modules > Accounts receivable > Payments setup > Payment days**. The setup for the **Terms of payment** is shared for **Accounts receivable** and **Accounts payable**. If you define it in module, it will be available in the other module also. For this task guide, all of the terms of payment under **Accounts receivable** are set up.
 2. Click **New**. Create a payment day if your terms of payment require a specific day of the week (Monday, Tuesday, etc) or a specific date of the month (5th, 10th, etc). 
 3. In the **Payment day** field, enter an ID.
 4. In the **Description** field, enter a description of the payment day.

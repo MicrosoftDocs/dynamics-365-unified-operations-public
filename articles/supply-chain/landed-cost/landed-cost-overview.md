@@ -3,7 +3,7 @@
 
 title: Landed cost module
 description: The Landed cost module helps businesses streamline inbound shipping operations by giving users complete financial and logistical control over imported freight, from the manufacturer to the warehouse.
-author: sherry-zheng
+author: Weijiesa
 ms.date: 12/07/2020
 ms.topic: overview
 ms.prod: 
@@ -15,12 +15,12 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
+
 # ms.tgt_pltfrm: 
 
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: chuzheng
+ms.author: weijiesa
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: 10.0.17
 ---
@@ -44,7 +44,7 @@ Landed cost provides accurate and timely cost estimates for overhead landed cost
 
 ### Voyages
 
-In Landed cost, a voyage is a distinct movement from an outbound location, through a specific set of destinations over a specified period, to a specified inbound warehouse location. Purchase orders and order lines can be added to either a single container or multiple containers for a voyage, and the costs will be correctly allocated back to the item line. Orders and order lines can also be added across legal entities for a single voyage.
+In Landed cost, a voyage is a distinct movement from an outbound location, through a specific set of destinations over a specified period, to a specified inbound warehouse location. Purchase orders and order lines can be added to either a single container or multiple containers for a voyage, and the costs will be correctly allocated back to the item line. 
 
 ### Item ownership
 

@@ -3,7 +3,7 @@
 
 title: Transportation management statuses
 description: This topic explains how to create a transportation status and map that status to a carrier status.
-author: Henrikan
+author: Weijiesa
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: kamaybac
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: henrikan
+ms.author: weijiesa
 ms.search.validFrom: 2020-09-08
 ms.dyn365.ops.version: 10.0.14
 ---

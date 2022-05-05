@@ -4,7 +4,7 @@
 title: Configure the customer account payment method for B2B e-commerce sites
 description: This topic describes how to configure the customer account payment method in Microsoft Dynamics 365 Commerce. It also describes how credit limits affect on-account payment capture on business-to-business (B2B) e-commerce sites.
 author: josaw1
-ms.date: 02/16/2022
+ms.date: 04/19/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -13,7 +13,7 @@ ms.search.form: RetailOperations
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: v-chgri
-#ms.search.scope: Core, Operations, Retail
+#
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -83,22 +83,22 @@ The values that the **Credit limit type** property supports are **None**, **Bala
 > [!NOTE]
 > We recommend that you set the **Credit limit type** property to **Balance + packaging slip or product slip**, so that open sales orders don't contribute to the balance calculation. Then, if your customers place future orders, they don't have to worry that those orders will affect their current balance.
 
-Another property that affects on-account ordering is the **Mandatory credit limit** property, which is located on the **Credit and collections** FastTab of the customer record. By setting this property to **Yes** for specific customers, you can force the system to check their credit limit, even if the **Credit limit type** property has been set to **None** to specify that the credit limit should not be checked for any customer.
+Another property that affects on-account ordering is the **Mandatory credit limit** property, which is located on the **Credit and collections** FastTab of the customer record. By setting this property to **Yes** for specific customers, you can force the system to check their credit limit, even if the **Credit limit type** property has been set to **None** to specify that the credit limit shouldn't be checked for any customer.
 
-Currently, B2B sites where the **Mandatory credit limit** property is enabled have additional functionality. If the property is enabled on a customer record, when the customer places an order, the B2B site prevents them from using the on-account payment method to pay more than the remaining credit balance. For example, if the customer's remaining credit balance is $1,000, but the order is worth $1,200, the customer can pay only $1,000 by using the on-account method. They must use some other payment method to pay the balance. If the **Mandatory credit limit** property is disabled on a customer record, the customer can pay any amount by using the on-account payment method. However, even though a customer can place orders, the system won't allow those orders to be fulfilled if they exceed the credit limit. If you must check the credit limit for all customers who are eligible for on-account payments, we recommend that you set the **Credit limit type** property to **Balance + packaging slip or product slip** and the **Mandatory credit limit** property to **No**.
+Currently, a customer using the on-account payment method can't pay more than the remaining credit balance for an order. For example, if a customer's remaining credit balance is $1,000 but the order value is $1,200, the customer can only pay $1,000 by using the on-account method. The customer must then use some other payment method to pay the balance. In a future release, a Commerce configuration will allow the users to spend beyond their credit limit when placing orders.
 
 The **Credit and collections** module has new credit management capabilities. To turn on these capabilities, enable the **Credit management** feature in the **Feature management** workspace. One of the new capabilities enables sales orders to be put on hold based on blocking rules. The credit manager persona can then release or reject the orders after further analysis. However, the capability to put sales orders on hold isn't applicable to Commerce orders, because sales orders often have a prepayment, and the **Credit management** feature doesn't completely support prepayment scenarios. 
 
 Regardless of whether the **Credit management** feature is enabled, if a customer balance goes over the credit limit during order fulfillment, the sales orders won't go on hold. Instead, Commerce will generate either a warning message or an error message, depending on the value of the **Message when exceeding credit limit** field on the **Credit limits** FastTab.
 
-The **Exclude from credit management** property that prevents Commerce sales orders from going on hold is located on the sales order header (**Retail and commerce \> Customers \> All sales orders**). If this property is set to **Yes** (the default value) for Commerce sales orders, the orders will be excluded from the on hold workflow of credit management. Note that, although the property is named **Exclude from credit management**, the defined credit limit will still be used during order fulfillment. The orders just won't go on hold.
+The **Exclude from credit management** property that prevents Commerce sales orders from going on hold is located on the sales order header (**Retail and commerce \> Customers \> All sales orders**). If this property is set to **Yes** (the default value) for Commerce sales orders, the orders will be excluded from the on hold workflow of credit management. Although the property is named **Exclude from credit management**, the defined credit limit will still be used during order fulfillment. The orders just won't go on hold.
 
 The capability to put Commerce sales orders on hold based on blocking rules is planned for future Commerce releases. Until it's supported, if you must force Commerce sales orders to go through the new credit management flows, you can customize the following XML files in your Visual Studio solution. In the files, modify the logic so that the **CredManExcludeSalesOrder** flag is set to **No**. In this way, the **Exclude from credit management** property will be set to **No** by default for Commerce sales orders.
 
 - RetailCreateCustomerOrderExtensions_CredMan_Extension.xml
 - RetailCallCenterOrderExtensions_CredMan_Extension.xml
 
-Note that, if the **CredManExcludeSalesOrder** flag is set to **No**, and a B2B customer can purchase from stores by using the point of sale (POS) application, the posting of cash and carry transactions might fail. For example, there is a blocking rule on the cash payment type, and the B2B customer bought some items in the store by using cash. In this case, the resulting sales order won't be successfully invoiced because it will go on hold. Therefore, the posting will fail. For this reason, we recommend that you do end-to-end testing after you implement this customization.
+If the **CredManExcludeSalesOrder** flag is set to **No**, and a B2B customer can purchase from stores by using the point of sale (POS) application, the posting of cash and carry transactions might fail. For example, there's a blocking rule on the cash payment type, and the B2B customer bought some items in the store by using cash. In this case, the resulting sales order won't be successfully invoiced because it will go on hold. Therefore, the posting will fail. For this reason, we recommend that you do end-to-end testing after you implement this customization.
 
 ## Additional resources
 

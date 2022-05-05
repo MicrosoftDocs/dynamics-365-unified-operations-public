@@ -6,7 +6,8 @@ description: This topic provides information about local agent pre-deployment an
 author: faix
 ms.date: 08/07/2019
 ms.topic: article
-ms.prod: 
+ms.prod: dynamics-365
+ms.service:
 ms.technology: 
 
 # optional metadata

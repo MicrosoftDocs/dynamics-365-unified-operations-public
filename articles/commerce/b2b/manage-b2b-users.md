@@ -4,7 +4,7 @@
 title: Manage business partner users on B2B e-commerce websites
 description: This topic describes how to add, delete, and edit business partner users on Microsoft Dynamics 365 Commerce business-to-business (B2B) e-commerce websites and in Commerce headquarters.
 author: josaw1
-ms.date: 02/17/2022
+ms.date: 04/19/2022
 ms.topic: article
 ms.prod: 
 ms.technology:
@@ -15,7 +15,7 @@ ms.search.form:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: v-chgri
-#ms.search.scope: Core, Operations, Retail
+#
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -33,7 +33,8 @@ ms.dyn365.ops.version: 10.0.14
 This topic describes how to add, delete, and edit business partner users on Microsoft Dynamics 365 Commerce business-to-business (B2B) e-commerce websites and in Commerce headquarters.
 
 > [!NOTE]
-> The [Manage B2B business partners using customer hierarchies](partners-customer-hierarchies.md) topic is a prerequisite for this document. 
+> - The [Manage B2B business partners using customer hierarchies](partners-customer-hierarchies.md) topic is a prerequisite for this document.
+> - Ensure that you initialize the document types entity in Commerce headquarters by opening the **Document types** form at **Organization administration \> Document management \> Document types**.
 
 B2B e-commerce websites require that organizations register to become business partners. After an organization submits registration details to a B2B e-commerce website, the registration request goes through a qualification process. If the organization is successfully qualified, it's onboarded as a business partner.
 

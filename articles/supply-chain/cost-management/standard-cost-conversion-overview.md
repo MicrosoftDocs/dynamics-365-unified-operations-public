@@ -3,7 +3,7 @@
 
 title: Standard cost conversion overview
 description: This article provides a process overview to help you set up and run a standard cost conversion. The steps listed are intended to be completed after you've completed the prerequisites for a standard cost conversion. 
-author: AndersGirke
+author: JennySong-SH
 ms.date: 06/20/2017
 ms.topic: overview
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: ["78212", "intro-internal"]
 ms.assetid: d601d9d5-1de3-4868-aff4-534dca01d624
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: mguada
+ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

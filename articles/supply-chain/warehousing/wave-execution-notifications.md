@@ -3,7 +3,7 @@
 
 title: Wave execution notifications 
 description: This topic describes wave execution notifications and explains how to set them up.
-author: mirzaab
+author: Mirzaab
 ms.date: 04/03/2021
 ms.topic: article
 ms.prod:

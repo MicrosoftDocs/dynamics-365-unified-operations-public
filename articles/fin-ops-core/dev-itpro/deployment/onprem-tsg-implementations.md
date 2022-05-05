@@ -4,7 +4,8 @@ description: This topic will serve as a central repository for scripts that you 
 author: faix
 ms.date: 07/01/2021
 ms.topic: article
-ms.prod: 
+ms.prod: dynamics-365 
+ms.service:
 ms.technology: 
 
 # optional metadata

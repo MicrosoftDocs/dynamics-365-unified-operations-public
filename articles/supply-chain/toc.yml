@@ -12,14 +12,12 @@
         items:
         - name: What's new or changed in Supply Chain Management home page
           href: get-started/whats-new-home-page.md
+        - name: Supply Chain Management 10.0.27 (July 2022)
+          href: get-started/whats-new-scm-10-0-27.md
         - name: Supply Chain Management 10.0.26 (May 2022)
           href: get-started/whats-new-scm-10-0-26.md
         - name: Supply Chain Management 10.0.25 (April 2022)
           href: get-started/whats-new-scm-10-0-25.md
-        - name: Supply Chain Management 10.0.24 (February 2022)
-          href: get-started/whats-new-scm-10-0-24.md
-        - name: Supply Chain Management 10.0.23 (January 2022)
-          href: get-started/whats-new-scm-10-0-23.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -1725,8 +1723,6 @@
           href: iot/iot-azure-setup.md
         - name: Message schema formats for IoT Hub
           href: iot/iot-schema-format.md
-        - name: Install the add-in in LCS
-          href: iot/iot-lcs-setup.md
         - name: Set up metrics
           href: iot/iot-metrics-setup.md
         - name: Scenario setup
@@ -2757,6 +2753,8 @@
           href: production-control/production-floor-execution-setup.md
         - name: How workers use the production floor execution interface
           href: production-control/production-floor-execution-use.md
+        - name: Show vacation balances in the production floor execution interface
+          href: production-control/production-floor-execution-payroll-stats.md
         - name: Style the production floor execution interface
           href: production-control/production-floor-execution-styles.md
         - name: Customize the production floor execution interface
@@ -2929,7 +2927,7 @@
         href: sales-marketing/trade-allowance.md
       - name: Create a new trade agreement
         href: sales-marketing/tasks/create-new-trade-agreement.md
-      - name: Sales history cleanup performance improvements
+      - name: Schedule sales history data cleanup
         href: sales-marketing/sales-update-history-cleanup-performance-improvements.md
     - name: Service management
       items:

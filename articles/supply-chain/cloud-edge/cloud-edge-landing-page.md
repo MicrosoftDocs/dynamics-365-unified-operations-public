@@ -1,14 +1,14 @@
 ---
 title: Scale units in a distributed hybrid topology
 description: This topic provides information about cloud and edge scale units for manufacturing and warehouse management workloads.
-author: cabeln
+author: Mirzaab
 ms.date: 04/22/2021
 ms.topic: article
 ms.search.form: ScaleUnitWorkloadsWorkspace
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: cabeln
+ms.author: mirzaab
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
 ---

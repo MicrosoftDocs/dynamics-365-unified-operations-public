@@ -3,7 +3,7 @@
 
 title: Compare item prices storage report
 description: Learn how to generate a Compare item prices storage report and then browse and/or export the result.
-author: AndersGirke
+author: JennySong-SH
 ms.date: 01/30/2020
 ms.topic: article
 ms.prod:
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: aevengir
+ms.author: yanansong
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: 10.0.9
 
