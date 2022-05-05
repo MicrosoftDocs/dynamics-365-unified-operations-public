@@ -134,7 +134,7 @@ The grid includes the following columns:
 
 You can use the **New Electronic Address** button above the grid to create as many addresses as you want.
 
-During the lead qualification process, you can provide both a business phone number and a mobile phone number. The business phone number is considered the primary phone if **IsMobile=No** and the mobile phone number is considered the secondary phone if **IsMobile=Yes**.
+During the lead qualification process, you can provide both a business phone number and a mobile phone number. The business phone number is considered the primary phone number if **IsMobile=No**, and the mobile phone number is considered the secondary phone number if **IsMobile=Yes**.
 
 > [!TIP]
 > Use **Addresses** and **Electronic Addresses** tabs on the **Account** and **Contact** forms to manage postal and electronic addresses. This ensures that address data synchronizes to finance and operations apps.
@@ -143,7 +143,7 @@ During the lead qualification process, you can provide both a business phone num
 
 1. Open your customer engagement app environment.
 
-2. Install all prerequisite solutions as described in [sSeparated solutions](separated-solutions.md).  
+2. Install all prerequisite solutions, as described in [Separated Dual-write Application Orchestration package](separated-solutions.md).
 
 3. Install [Dual-write Party and Global Address Book Solutions](https://aka.ms/dual-write-gab).
 
@@ -172,7 +172,7 @@ During the lead qualification process, you can provide both a business phone num
     `CDS postal address history V2 (msdyn_postaladdresses)` | 1.0.0.2 | This is a new map added as part of this release.
     `CDS postal address locations (msdyn_postaladdresscollections)` | 1.0.0.0 | This is a new map added as part of this release.
     `Party Contacts V3 (msdyn_partyelectronicaddresses)` | 1.0.0.0 | This is a new map added as part of this release.
-    `Complimentary Closings ( msdyn_compliemntaryclosings)` | 1.0.0.0 | This is a new map added as part of this release.
+    `Complimentary Closings (msdyn_compliemntaryclosings)` | 1.0.0.0 | This is a new map added as part of this release.
     `Decision making roles (msdyn_decisionmakingroles)` | 1.0.0.0 | This is a new map added as part of this release.
     `Loyalty levels (msdyn_loyaltylevels)` | 1.0.0.0 | This is a new map added as part of this release.
     `Contact person titles (msdyn_salescontactpersontitles)` | 1.0.0.0 | This is a new map added as part of this release.
@@ -180,7 +180,7 @@ During the lead qualification process, you can provide both a business phone num
     `Salutations (msdyn_salutations)` | 1.0.0.0 | This is a new map added as part of this release.
     `Employment job functions (msdyn_employmentjobfunctions)` | 1.0.0.0 | This is a new map added as part of this release.
     `CDS Address roles (msdyn_addressroles)` | 1.0.0.0 | This is a new map added as part of this release.
-    
+
 8. Before running the above maps, you must update the integration keys manually as described in the following steps. Then select **Save**.
 
     | Map | Keys |
@@ -250,12 +250,12 @@ During the lead qualification process, you can provide both a business phone num
     [CDS Address roles](mapping-reference.md#301) | msdyn_addressroles
 
 > [!NOTE]
-> The `CDS Contacts V2 (contacts)` map is the map that you stopped in the step 1. When you try to run other maps, these 2 maps may appear in the list of dependents. Don't run these maps.
+> The `CDS Contacts V2 (contacts)` map is the map that you stopped in step 1. When you try to run other maps, these 2 maps may appear in the list of dependents. Don't run these maps.
 >
-> If the party and global address book solution is installed, you must disable the pluging named `Microsoft.Dynamics.SCMExtended.Plugins.Plugins.LeadPrimaryContactPostCreate: QualifyLead of lead`. If you uninstall the party and global address book solution, then you must re-enable the plugin.
+> If the party and global address book solution is installed, you must disable the plugin named `Microsoft.Dynamics.SCMExtended.Plugins.Plugins.LeadPrimaryContactPostCreate: QualifyLead of lead`. If you uninstall the party and global address book solution, then you must re-enable the plugin.
 >
 > The `msdyn_*partynumber` field (a single line text field) that is included in the **Account**, **Contact** and **Vendor** tables should not be used going forward. The label name has a prefix of **(Deprecated)** for clarity. Instead, use the **msdyn_partyid** field. The field is a lookup to the **msdyn_party** table.
-
+>
 > Table Name | Old field | New field
 > --------|-------|--------
 > Account | `msdyn_partynumber` | `msdyn_partyid`
@@ -292,17 +292,17 @@ A collection of table maps work together for party and global address book inter
 For more information, see [Dual-write mapping reference](mapping-reference.md).
 
 ## Address roles as a multi-select drop-down list
-A postal address or an electronic address can serve more than one purpose. For example, a postal address can serve as both a billing address as well as a delivery address. In such cases, a user can choose both **Invoice** and **Delivery** from the drop-down control, as shown below. 
+A postal address or an electronic address can serve more than one purpose. For example, a postal address can serve as both a billing address and a delivery address. In these cases, a user can select both **Invoice** and **Delivery** in the drop-down list, as shown in the following illustration. 
 
-![Purpose/Role.](media/purpose.png)
+![Purpose/Role drop-down list.](media/purpose.png)
 
 ## Known issues and limitations
 
 + In finance and operations apps, when you create a customer along with address and save it, the address might not synchronize to the **Address** table. This is because of a dual-write platform sequencing issue. As a workaround, create the customer first and save it. Then add the address.
-+ In finance and operations apps, when a customer record has a primary address and you create a new contact for that customer, then the contact record inherits a primary address from the associated customer record. This happens for vendor contact, too. Dataverse doesn’t currently support this behavior. If dual-write is enabled, a customer contacts that is inherited with a primary address from the finance and operations app is synchronized to Dataverse along with its address.
++ In finance and operations apps, when a customer record has a primary address and you create a new contact for that customer, then the contact record inherits a primary address from the associated customer record. This happens for vendor contact, too. Dataverse doesn't currently support this behavior. If dual-write is enabled, a customer contacts that is inherited with a primary address from the finance and operations app is synchronized to Dataverse along with its address.
 + In finance and operations apps, you can create a contact record from the **Add Contact** form. When you try to create a new contact from the **View Contact** form, the action fails. This is a known issue.
 
     ![Known issue with Add Contact.](media/party-gab-contact-issue.png)
 
-+ **Initial sync** does not support the **Available From** and **Available To** time fields on **ContactForParty**, because DIXF converts the value into a string instead of an integer. The conversion triggers the error `Cannot convert the literal '<say 08:00:00>’ to the expected type edm.int32`.
++ **Initial sync** does not support the **Available From** and **Available To** time fields on **ContactForParty**, because DIXF converts the value into a string instead of an integer. The conversion triggers the error `Cannot convert the literal '<say 08:00:00>' to the expected type edm.int32`.
 + You can't enter a forward-dated postal address using a finance and operations app with dual-write, because Dataverse does not support date effectivity. If you enter a future-dated postal address using a finance and operations app, it synchronizes to Dataverse fully and you will see the address on the user interface immediately. Any updates to this record will result in an error as it is future-dated and not current in the finance and operations app.
