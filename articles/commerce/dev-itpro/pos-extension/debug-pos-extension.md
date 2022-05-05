@@ -1,6 +1,6 @@
 ---
 title: Debug POS extensions
-description: This topic explains how to debug Point of Sale (POS) extensions.
+description: This topic explains how to debug Modern Point of Sale (Sealed) and Cloud POS extensions.
 author: mugunthanm
 ms.date: 01/04/2022
 ms.topic: article
@@ -12,13 +12,16 @@ ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
 ---
 
-# Debug POS extensions
+# Debug MPOS (Sealed) and CPOS extensions
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to debug Point of Sale (POS) extensions. It applies to version 10.0.18 and later of the Retail software development kit (SDK).
+This topic explains how to debug **Sealed** Modern Point of Sale (MPOS) and Cloud POS extensions. It applies to version 10.0.18 and later of the Retail software development kit (SDK). 
 
-## Debug Modern POS by using Visual Studio 2017
+ > [!NOTE]
+ > To debug Store Commerce app see [Debug Store Commerce extensions using Visual Studio Code](../sc-debug.md)
+
+## Debug Sealed Modern POS by using Visual Studio 2017
 
 Follow these steps to debug your extension.
 
