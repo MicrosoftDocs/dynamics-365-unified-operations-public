@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Order summary is showing different values for sub-total, shipping charges in prices include sales tax scenario. 
-description: This topic provides troubleshooting guidance that can help to revert sub-total, shipping chargest etc. values in order summary values in in prices include sales tax scenario in Microsoft Dynamics 365 Commerce.
+title: Order summary is showing different values for subtotal, shipping charges in prices include sales tax scenario. 
+description: This topic provides troubleshooting guidance that can help to revert subtotal, shipping charges etc. values in order summary values in prices include sales tax scenario in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 05/06/2022
 ms.topic: article 
@@ -14,9 +14,9 @@ ms.author: gmohanv
 ms.search.validFrom: 2022-04-22
 ---
 
-# Order summary is showing different values for sub-total, shipping charges in prices include sales tax scenario. 
+# Order summary is showing different values for subtotal, shipping charges in prices include sales tax scenario. 
 
-This topic provides troubleshooting guidance that can help to revert sub-total, shipping charges etc. values in order summary values in in prices include sales tax scenario in Microsoft Dynamics 365 Commerce.
+This topic provides troubleshooting guidance that can help to revert subtotal, shipping charges etc. values in order summary values in prices include sales tax scenario in Microsoft Dynamics 365 Commerce.
 
 ## Description
 
@@ -30,7 +30,7 @@ In prices include sales tax scenario, starting from 10.0.27 version, Dynamics 36
     - ShippingChargeAmount
     - OtherChargeAmount
 
-If you have customized e-Commerce order summary modules, and do not want to inherit the above changes (in 10.0.27 or later versions), follow the below resolution:
+If you have customized e-Commerce order summary modules, and don't want to inherit the above changes (in 10.0.27 or later versions), follow the below resolution:
 
 ## Resolution
 
