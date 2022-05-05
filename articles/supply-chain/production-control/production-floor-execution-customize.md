@@ -140,15 +140,15 @@ formRun.run();
 
 ## Add a date and time controls to a form or dialog
 
-This section shows how to add date and time controls to a form or dialog. The touch-friendly date and time controls enable workers to specify dates and times. The following screenshots show how the controls typically appear on the page.
+This section shows how to add date and time controls to a form or dialog. The touch-friendly date and time controls enable workers to specify dates and times. The following screenshots show how the controls typically appear on the page. The time control provides both 12-hour and 24-hour versions; the version shown will follow the preference set for the user account under which the interface is running.
 
 ![Date control example.](media/pfe-customize-date-control.png "Date control example")
 
-![Time control example.](media/pfe-customize-time-control.png "Time control example")
+![Time control example with 12-hour clock.](media/pfe-customize-time-control-12h.png "Time control example with 12-hour clock")
 
-<!-- KFM: Add third screenshot, and mention in above text-->
+![Time control example with 24-hour clock.](media/pfe-customize-time-control-24h.png "Time control example with 24-hour clock")
 
-The following procedure shows an example of how to add a date and time controls to a form.
+The following procedure shows an example of how to add date and time controls to a form.
 
 1. Add a controller to the form for each date and time control that the form should contain. (The number of controllers must equal the number of date and time controls in the form.)
 
@@ -159,14 +159,14 @@ The following procedure shows an example of how to add a date and time controls 
     private JmgProductionFloorExecutionDateTimeController  timeToController;
     ```
 
-1. Declare the required variables of type `utcdatetime`.
+1. Declare the required variables (of type `utcdatetime`).
 
     ```xpp
     private utcdatetime fromDateTime;
     private utcdatetime toDateTime;
     ```
 
-1. Create methods where the datetime will be updated by the date time controllers. The following example shows one such method.
+1. Create methods where the datetime will be updated by the datetime controllers. The following example shows one such method.
 
     ```xpp
     private void setFromDateTime(utcdatetime _value)
@@ -175,7 +175,7 @@ The following procedure shows an example of how to add a date and time controls 
         }
     ```
 
-1. Set up the behavior of each date and time controller and connect each controller to a date and time form part. The following example shows how to set up data for date-from and time-from controls. You could add similar code for date-to and time-to controls (not shown).
+1. Set up the behavior of each datetime controller and connect each controller to a form part. The following example shows how to set up data for date-from and time-from controls. You could add similar code for date-to and time-to controls (not shown).
 
     ```xpp
     /// <summary>
