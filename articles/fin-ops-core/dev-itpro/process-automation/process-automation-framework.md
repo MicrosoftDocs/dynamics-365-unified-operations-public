@@ -37,7 +37,7 @@ As with any customization, you should use the documented approach to extend the 
 - If functionality that you require is missing, submit an extensibility request.
 
 > [!NOTE]
-> If you integrate with the process automation framework in an unsupported way, your integration might break bcause it did not follow the best practices.
+> If you integrate with the process automation framework in an unsupported way, your integration might break because it did not follow the best practices.
 
 For more information about process automation, see [Process automation](../sysadmin/process-automation.md).
 
