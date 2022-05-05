@@ -2,7 +2,7 @@
 title: What's new or changed in dual-write
 description: This topic provides links to the release plans, major announcements, and documentation for dual-write.
 author: RamaKrishnamoorthy
-ms.date: 04/25/2022
+ms.date: 05/05/2022
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -24,7 +24,7 @@ The April release of Dual-write Party and Global Address Book Solutions 3.5.0.1 
 
 | Feature | Description | Status |
 |---|---|---|
-| Address roles dropdown | Addresses can be classified as invoice addresses, business addresses, home addresses, and so on, through address purposes or roles. In this release, we are replacing the address roles text field with a PCF control that is a multi-select option set. This new control lets you select one or more address roles to assign to a given address. The drop-down list is available for both postal addresses and electronic addresses. | General availability |
+| Address roles dropdown | Addresses can be classified as invoice addresses, business addresses, home addresses, and so on, through address purposes or roles. In this release, we are replacing the address roles text field with a Power Apps Component Framework (PCF) control that is a multi-select option set. This new control lets you select one or more address roles to assign to a given address. The drop-down list is available for both postal addresses and electronic addresses. | General availability |
 | Bug fix | Updates to electronic address fields on the Account table (email, phone, fax) should update the primary electronic address in the msdyn_partyelectronicaddress table. | General availability |
 | Bug fix | Updates to electronic address fields on the Contact table (email, phone, fax) should update the primary electronic address in the msdyn_partyelectronicaddress table. | General availability |
 | Bug fix | Show the primary contact name for the primary contact that is selected on the **Associated contacts** tab on account, contact, and vendor pages. | General availability |
