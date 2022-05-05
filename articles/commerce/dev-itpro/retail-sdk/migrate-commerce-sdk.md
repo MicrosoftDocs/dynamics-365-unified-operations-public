@@ -211,7 +211,7 @@ You can download the new sealed installers from LCS by going to the [Shared Asse
 
 ### POS
 
-In the Commerce SDK, a few improvements that have been made to the development process for POS extensions will require changes when you migrate existing extensions. The following tables summarizes the most important changes. For a complete list of changes and steps to migrate an extension, see [Migrate a POS extension to the independent packaging model](../pos-extension/migrate-pos-extension.md).
+In the Commerce SDK, a few improvements that have been made to the development process for POS extensions will require changes when you migrate existing extensions. The following table summarizes the most important changes. For a complete list of changes and steps to migrate an extension, see [Migrate a POS extension to the independent packaging model](../pos-extension/migrate-pos-extension.md).
 
 | Change | Description | Purpose |
 |---|---|---|
@@ -226,7 +226,7 @@ For information about how to set up the build pipeline for the Commerce SDK, see
 
 A new packaging type is added to separate the self-service components from the Cloud Scale Unit extensions. The new ScaleUnit package will contain only the Cloud Scale Unit components. You can upload the self-service components to LCS by using the build pipeline. Alternatively, they can be manually uploaded and synced to the back office.
 
-If you use the Retail SDK to generate the package, you must update the Customization.Settings file and the extension configuration files. In the Commerce SDK packaging, all these steps are automated. Therefore, you don't have to include or update the configuration files.
+If you use the Retail SDK to generate the package, you must update the **Customization.Settings** file and the extension configuration files. In the Commerce SDK packaging, all these steps are automated. Therefore, you don't have to include or update the configuration files.
 
 For more information, see [Generate a separate package for Commerce Cloud Scale Unit (CSU)](retail-sdk-packaging.md#generate-a-separate-package-for-commerce-cloud-scale-unit-csu).
 
