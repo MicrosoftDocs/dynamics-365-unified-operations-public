@@ -33,7 +33,7 @@ Previously, the Dual-write Application Orchestration package was a single packag
 - Currency Exchange Rates
 - Field Service Common
 
-Because it was a single package, this package created an "all or nothing" situation for customers. However, Microsoft has now separated it into smaller packages. Therefore, customer can select just the packages for the solutions that they require. For example, if you're a Microsoft Dynamics 365 Supply Chain Management customer, and don't require integration with Dynamics 365 Human Resources, notes, and asset management, you can exclude those solutions from the solutions that are installed. Because the underlying solution names, publisher, and map versions remain the same, this change is non-breaking. Existing installations be upgraded.
+Because it was a single package, this package created an "all or nothing" situation for customers. However, Microsoft has now separated it into smaller packages. Therefore, customers can select just the packages for the solutions that they require. For example, if you're a Microsoft Dynamics 365 Supply Chain Management customer, and don't require integration with Dynamics 365 Human Resources, notes, and asset management, you can exclude those solutions from the solutions that are installed. Because the underlying solution names, publisher, and map versions remain the same, this change is non-breaking. Existing installations be upgraded.
 
 ![Separated package.](media/separated-package-1.png)
 
@@ -300,37 +300,37 @@ Project Operations depends on the following packages. Therefore, you should inst
 
 The dual-write party and global address book package contains the following solutions and maps that are required to sync party and global address book data. 
 
-| Unique name                          | Display name                              |
-|--------------------------------------|-------------------------------------------|
-| Party           | Party             |
-| Dynamics365GABExtended        | Dynamics 365 GAB Extended          |
-| Dynamics365GABDualWriteEntityMaps   | Dynamics 365 GAB Dual Write Entity Maps |
-| Dynamics365GABParty_Anchor | Dynamics 365 GAB and Party   |
+| Unique name                       | Display name                            |
+|-----------------------------------|-----------------------------------------|
+| Party                             | Party                                   |
+| Dynamics365GABExtended            | Dynamics 365 GAB Extended               |
+| Dynamics365GABDualWriteEntityMaps | Dynamics 365 GAB Dual Write Entity Maps |
+| Dynamics365GABParty_Anchor        | Dynamics 365 GAB and Party              |
 
 The following maps are available in this package.
 
-| Finance and operations app | Customer engagement app  | 
-|     ----------------------------|------------------------
-|     CDS Parties | msdyn_parties | 
-|     CDS postal address locations | msdyn_postaladdresscollections | 
-|     CDS postal address history V2 | msdyn_postaladdresses | 
-|     CDS Party postal address locations | msdyn_partypostaladdresses | 
-|     Party contacts V3 | msdyn_partyelectronicaddresses | 
-|     Customers V3 | accounts | 
-|     Customers V3 | contacts | 
-|     Vendors V2 | msdyn_vendors | 
-|     Contact person titles | msdyn_salescontactpersontitles | 
-|     Complimentary closings | msdyn_complimentaryclosings | 
-|     Salutations | msdyn_salutations | 
-|     Decision making roles| msdyn_decisionmakingroles | 
-|     Employment job functions | msdyn_employmentjobfunctions | 
-|     Loyalty levels| msdyn_loyaltylevels | 
-|     Personal character types | msdyn_personalcharactertypes | 
-|     Contacts V2 | msdyn_contactforparties | 
-|     CDS sales quotation header | quotes | 
-|     CDS sales order headers | salesorders | 
-|     Sales invoice headers V2 | invoices | 
-| CDS Address roles |msdyn_addressroles |
+| Finance and operations apps | Customer engagement apps | 
+|-----------------------------|--------------------------|
+| CDS Parties | msdyn_parties | 
+| CDS postal address locations | msdyn_postaladdresscollections | 
+| CDS postal address history V2 | msdyn_postaladdresses | 
+| CDS Party postal address locations | msdyn_partypostaladdresses | 
+| Party contacts V3 | msdyn_partyelectronicaddresses | 
+| Customers V3 | accounts | 
+| Customers V3 | contacts | 
+| Vendors V2 | msdyn_vendors | 
+| Contact person titles | msdyn_salescontactpersontitles | 
+| Complimentary closings | msdyn_complimentaryclosings | 
+| Salutations | msdyn_salutations | 
+| Decision making roles | msdyn_decisionmakingroles | 
+| Employment job functions | msdyn_employmentjobfunctions | 
+| Loyalty levels | msdyn_loyaltylevels | 
+| Personal character types | msdyn_personalcharactertypes | 
+| Contacts V2 | msdyn_contactforparties | 
+| CDS sales quotation header | quotes | 
+| CDS sales order headers | salesorders | 
+| Sales invoice headers V2 | invoices | 
+| CDS Address roles | msdyn_addressroles |
 
 **Dependency information**
 
