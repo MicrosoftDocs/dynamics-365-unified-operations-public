@@ -55,7 +55,7 @@ When you've finished, the new button (action) will automatically be listed on th
 1. Create an extension that is named `<ExtensionPrefix>_JmgProductionFloorExecution<FormName>_Extension`, where the `getMainMenuItemsList` method is extended by adding the new menu item to the list. The following code shows an example.
 
     ```xpp
-    [ExtensionOf(classStr(JmgProductionFloorExecutionForm))]
+    [ExtensionOf(classStr(JmgProductionFloorExecutionMenuItemProvider))]
     public final class <ExtensionPrefix>_JmgProductionFloorExecutionForm<FormName>_Extension{
         static public List getMainMenuItemsList()
         {
@@ -140,78 +140,76 @@ formRun.run();
 
 ## Add a date and time controls to a form or dialog
 
-<!-- KFM: The following correction needs to go somewhere above:
-
-    JmgProductionFloorExecutionMenuItemProvider 
-
--->
-This section shows how to add date and time controls to a form. Date and time controls enable workers to specify dates and times, respectively. The following screenshots show how the controls typically appear on the page.
-
-<!-- KFM: I added this short intro that mentions the images. Do we have anything more interesting to say? -->
+This section shows how to add date and time controls to a form or dialog. The touch-friendly date and time controls enable workers to specify dates and times. The following screenshots show how the controls typically appear on the page.
 
 ![Date control example.](media/pfe-customize-date-control.png "Date control example")
 
 ![Time control example.](media/pfe-customize-time-control.png "Time control example")
 
-The following procedure shows an example of how to add a date control to a form. <!-- KFM: Also a time control?-->
+<!-- KFM: Add third screenshot, and mention in above text-->
 
-1. Add a controller to the form for each date and time control that the form should contain. (The number of controllers must equal the number of date and time controls in the form.) <!-- KFM: Confirm this reformulation -->
+The following procedure shows an example of how to add a date and time controls to a form.
+
+1. Add a controller to the form for each date and time control that the form should contain. (The number of controllers must equal the number of date and time controls in the form.)
 
     ```xpp
-    private JmgProductionFloorExecutionDateTimeController  dateFromController; 
-    private JmgProductionFloorExecutionDateTimeController  dateToController; 
-    private JmgProductionFloorExecutionDateTimeController  timeFromController; 
-    private JmgProductionFloorExecutionDateTimeController  timeToController;
+    private JmgProductionFloorExecutionDateTimeController  dateFromController; 
+    private JmgProductionFloorExecutionDateTimeController  dateToController; 
+    private JmgProductionFloorExecutionDateTimeController  timeFromController; 
+    private JmgProductionFloorExecutionDateTimeController  timeToController;
     ```
 
-1. Declare the `utcdatetime` variable. <!-- KFM: But we show two variables here. Is `utcdatetime` the type, followed by the var name? Why two? -->
+1. Declare the required variables of type `utcdatetime`.
 
     ```xpp
-    private utcdatetime fromDateTime;
-    private utcdatetime toDateTime;
+    private utcdatetime fromDateTime;
+    private utcdatetime toDateTime;
     ```
 
-1. Create a method where the datetime will be updated from a Date Time controllers. <!-- KFM: Please clarify. Confirm spacing in the example. -->
+1. Create methods where the datetime will be updated by the date time controllers. The following example shows one such method.
 
     ```xpp
-    private void setFromDateTime(utcdatetime _value)
+    private void setFromDateTime(utcdatetime _value)
         {
-            fromDateTime= _value;
+            fromDateTime = _value;
         }
     ```
 
-1. Set up the behavior of each numeric keypad controller and connect each date and time controllers to a date and time form parts. <!-- KFM: Please clarify -->
+1. Set up the behavior of each date and time controller and connect each controller to a date and time form part. The following example shows how to set up data for date-from and time-from controls. You could add similar code for date-to and time-to controls (not shown).
 
     ```xpp
-    /// <summary>
-    /// Initializes all date and time controllers, defines their behavior, and connects them with the form parts.
-    /// </summary>
-    private void initializeDateControlControllers()
+    /// <summary>
+    /// Initializes all date and time controllers, defines their behavior, and connects them with the form parts.
+    /// </summary>
+    private void initializeDateControlControllers()
     {
-        dateFromController= new JmgProductionFloorExecutionDateTimeController();
-        dateFromController.setDateControlValueToCallerFormDelegate += eventhandler(this.setFromDateTime);
+        dateFromController = new JmgProductionFloorExecutionDateTimeController();
+        dateFromController.setDateControlValueToCallerFormDelegate += eventhandler(this.setFromDateTime);
         dateFromController.parmDateTimeValue(fromDateTime);
     
-        timeFromController= new JmgProductionFloorExecutionDateTimeController();
-        timeFromController.setDateControlValueToCallerFormDelegate += eventhandler(this.setFromDateTime);
+        timeFromController = new JmgProductionFloorExecutionDateTimeController();
+        timeFromController.setDateControlValueToCallerFormDelegate += eventhandler(this.setFromDateTime);
         timeFromController.parmDateTimeValue(fromDateTime);
         
-        DateFromFormPart.getPartFormRun().setDateControlController(dateFromController, timeFromController);
-        imeFromFormPart.getPartFormRun().setTimeControlController(timeFromController, dateFromController);
+        DateFromFormPart.getPartFormRun().setDateControlController(dateFromController, timeFromController);
+        TimeFromFormPart.getPartFormRun().setTimeControlController(timeFromController, dateFromController);
         
         ...
 
     }
     ```
-    <!-- KFM: Confirm use of ellipsis above -->
 
-<!-- KFM: How does the following relate to the above procedure? Maybe a new subsection? -->
+    If all you need is a date control, you can skip the time control setup and instead just set up the date control as shown in the following example:
 
-If all you need is a date control, you can skip the time control setup and instead just set up the date control as shown in the following example:
-
-```xpp
-DateFromFormPart.getPartFormRun().setDateControlController(dateFromController, null);
-```
+    ```xpp
+    {
+        dateFromController = new JmgProductionFloorExecutionDateTimeController();
+        dateFromController.setDateControlValueToCallerFormDelegate += eventhandler(this.setFromDateTime);
+        dateFromController.parmDateTimeValue(fromDateTime);
+    
+        DateFromFormPart.getPartFormRun().setDateControlController(dateFromController, null);
+    }
+    ```
 
 ## Additional resources
 
