@@ -2560,18 +2560,20 @@
             href: dev-itpro/pos-extension/pos-extension-basics.md
           - name: Migrate POS Extensions to the Commerce SDK
             href: dev-itpro/pos-extension/migrate-pos-extension.md
+          - name: Create a POS extension package project
+            href: dev-itpro/pos-extension/create-pos-extension-package.md
           - name: Debug Store Commerce extensions using VS Code
             href: dev-itpro/sc-debug.md
+          - name: Sealed MPOS and CPOS extensions
+            items:
+              - name: Create an .appx file for a Modern POS extension package
+                href: dev-itpro/pos-extension/create-pos-extension-appx.md
+              - name: Debug MPOS (Sealed) and CPOS extensions
+                href: dev-itpro/pos-extension/debug-pos-extension.md
         - name: Environment setup
           items:
           - name: Local development environment
             href: dev-itpro/setup-local-dev-env.md
-          - name: Create a POS extension package project
-            href: dev-itpro/pos-extension/create-pos-extension-package.md
-          - name: Create an .appx file for a Modern POS extension package
-            href: dev-itpro/pos-extension/create-pos-extension-appx.md
-          - name: Debug POS extensions
-            href: dev-itpro/pos-extension/debug-pos-extension.md
         - name: APIs and reference
           items: 
           - name: View POS extension package information
