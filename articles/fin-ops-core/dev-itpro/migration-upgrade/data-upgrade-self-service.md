@@ -4,7 +4,7 @@
 title: Upgrade from AX 2012 - Data upgrade in self-service environments
 description: This topic explains how to do a data upgrade from Microsoft Dynamics AX 2012 in self-service environments.
 author: veeravendhan-s 
-ms.date: 03/21/2022
+ms.date: 05/05/2022
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
@@ -33,7 +33,7 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
 > [!NOTE]
 > Keep the following points in mind:
 > 
-> - The Microsoft Dynamics AX 2012 data upgrade process is for D365 self-service Sandbox (UAT) environments only, it can never be run against production environment.
+> - The Microsoft Dynamics AX 2012 data upgrade process is for Finance and Operations self-service, sandbox (UAT) environments only. It can never be run against a production environment.
 > - Make sure you download the latest version of the **AX 2012 Database Upgrade Toolkit for Dynamics 365** from LCS.
 > - Do not deploy or use the linked Power Platform environment for the AX 2012 data upgrade. The Power Platform environemnt can be deployed and used after the data upgrade is completed.
 
@@ -293,7 +293,7 @@ You can use the following options to review the reports of the replication valid
 
 ## Troubleshooting
 
-For troubleshooting see: [Troubleshoot upgrades to Dynamics 365 Finance + Operations self-service environments](troubleshoot-self-service-env.md)
+For troubleshooting information, see [Troubleshoot upgrades to Dynamics 365 Finance + Operations self-service environments](troubleshoot-self-service-env.md).
 
 ## Learn about the replication configuration and status via SQL Server Management Studio
 
