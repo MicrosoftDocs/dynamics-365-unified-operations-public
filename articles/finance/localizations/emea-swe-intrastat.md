@@ -7,7 +7,7 @@ author: andosip
 ms.date: 8/24/2021
 ms.topic: article
 audience: Application User
-ms.reviewer: kfender
+ms.reviewer: kfend
 ms.search.region: Global
 ms.author: v-aosipov
 ms.search.validFrom: 
