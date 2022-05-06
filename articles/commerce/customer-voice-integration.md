@@ -4,7 +4,7 @@
 title: Integrate Customer Voice into e-commerce site pages
 description: This topic describes how to integrate Microsoft Dynamics 365 Customer Voice into Microsoft Dynamics 365 Commerce e-commerce site pages.
 author: samjarawan
-ms.date: 05/05/2022
+ms.date: 05/06/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -32,7 +32,7 @@ To select a Customer Voice project template, follow these steps.
 1. Select the project template for the type of feedback you want to collect, and then select **Next**.
 1. Select the **Send** tab, and then under **Choose an embed format**, select the embed format. The necessary code to embed within site builder appears below **Embedded code**. 
 
-The following example illustration shows the **Periodic customer survey** page with the **Button** embed code option selected and the embedd code provided under **Embedded code**. The embedded code will be split into three parts as described in the sections below.
+The following example illustration shows the **Periodic customer survey** page with the **Button** embed code option selected and the embed code provided under **Embedded code**. The embedded code will be split into three parts as described in the sections below.
 
 ![Customer Voice Periodic customer survey page with the button option selected](media/customer-voice-integration-1.png)
 
@@ -61,7 +61,7 @@ You can then add the new fragment to the appropriate page template.
 
 ### Embed the external style sheet
 
-You must embed the the external stylesheet on all pages that will have a Customer Voice survey. The best way to embed the external style sheet on multiple pages is to create a fragment in Commerce site builder that contains the style sheet and then add the fragment to the appropriate page template(s). The embedded external style sheet code will look like the following example code:
+You must embed the external stylesheet on all pages that will have a Customer Voice survey. The best way to embed the external style sheet on multiple pages is to create a fragment in Commerce site builder that contains the style sheet and then add the fragment to the appropriate page template(s). The embedded external style sheet code will look like the following example code:
 
 ```html
 <link rel="stylesheet" type="text/css" href=https://mfpembedcdnmsit.azureedge.net/mfpembedcontmsit/Embed.css />
