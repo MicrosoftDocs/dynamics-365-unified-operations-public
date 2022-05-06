@@ -272,6 +272,8 @@
           href: accounts-payable/tasks/research-resolve-exceptions.md
       - name: Vendor posting profiles
         href: accounts-payable/vendor-posting-profiles.md
+      - name: Create charges codes
+        href: accounts-receivable/create-charges-codes.md
       - name: Vendor invoice dates
         href: accounts-payable/vendor-invoice-dates.md
       - name: Foreign currency revaluation for Accounts payable and Accounts receivable
@@ -292,6 +294,8 @@
         items:
         - name: Centralized payments for Accounts payable
           href: accounts-payable/centralized-payments-accounts-payable.md
+        - name: Set up and process bridged payments
+          href: accounts-receivable/set-up-and-process-bridged-payments.md
         - name: Configure settlement
           href: cash-bank-management/configure-settlement.md
         - name: Settle remainder
@@ -354,8 +358,12 @@
         href: accounts-receivable/set-up-process-recurring-invoices.md
       - name: Accounting distributions and subledger journal entries for free text invoices
         href: accounts-receivable/accounting-distributions-subledger-journal-entries-free-text-invoices.md
+      - name: Accounts receivable posting
+        href: general-ledger/accts-recvble-posting.md
       - name: Customer posting profiles
         href: accounts-receivable/customer-posting-profiles.md
+      - name: Create charges codes
+        href: accounts-receivable/create-charges-codes.md
       - name: SEPA direct debit overview
         href: accounts-receivable/sepa-direct-debit-overview.md
       - name: Set up SEPA direct debit mandate
@@ -454,6 +462,8 @@
         items:
         - name: Customer payment overview
           href: cash-bank-management/tasks/customer-payment-overview.md
+        - name: Set up and process bridged payments
+          href: accounts-receivable/set-up-and-process-bridged-payments.md
         - name: Centralized payments for Accounts receivable
           href: accounts-receivable/centralized-payments-accounts-receivable.md
         - name: Deposit customer payments
@@ -1028,6 +1038,14 @@
             href: general-ledger/import-currency-exchange-rates.md
           - name: Dual currency
             href: general-ledger/dual-currency.md
+        - name: Posting profiles
+          items:
+           -name: Posting profiles overview
+            href: general-ledger/pstg-prfles-ovrvw.md
+          - name: Recommended practices for posting profiles
+            href: general-ledger/recommended-practices-pstg-prfles.md
+          - name: Accounts for automatic transations
+            href: general-ledger/accounts-for-auto-transactions.md 
         - name: Allocation rules
           items:
           - name: Ledger allocation rules
