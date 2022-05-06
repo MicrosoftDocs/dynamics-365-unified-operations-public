@@ -4,7 +4,7 @@
 title: Create a data integration project
 description: This topic explains how to create a data integration project.
 author: ShivamPandey-msft
-ms.date: 02/09/2022
+ms.date: 05/06/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -64,8 +64,9 @@ This topic explains how to create a data integration project.
         - Customer payment insights result (CDS to Fin and Ops 10.0.17+)
         - Cash flow time series results (CDS to Fin and Ops)
         - Budget time series results (CDS to Fin and Ops)
-        - > [!NOTE]
->Creating multiple data integration projects for each template may cause errors that will block the updates from occurring.
+
+      > [!NOTE]
+      > Creating multiple data integration projects for each template may cause errors that will block the updates.
 
     2. Set the appropriate scheduling for each project.
 
