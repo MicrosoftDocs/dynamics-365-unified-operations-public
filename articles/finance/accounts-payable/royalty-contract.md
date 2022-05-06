@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: MCRBrokerCommission, MCRRoyaltyContractLineInfoPart, PdsRebatePayment 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: July 2017 update
 
 Royalty contract management is intended for companies that exercise the right to use a third party's assets and/or intellectual property. It helps companies better manage their royalty agreements by automating tasks that are involved in administering, tracking, and making royalty payments.
 
-This topic provides a broad overview of the typical process for handling royalty fees:
+This topic provides an overview of the typical process for handling royalty fees:
 
 - Register details of the negotiated royalty contract.
 - Run negotiated contracts through ongoing sales, and generate royalty claims.
