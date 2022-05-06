@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 2
 
 [!include [banner](../includes/banner.md)]
 
-This topic outlines the lifecycle and support policies for the Finance and Operations online service.
+This article outlines the lifecycle and support policies for the Finance and Operations online service.
 
 ## Modern Lifecycle Policy
 The Finance and Operations online service is covered by the Modern Lifecycle Policy. The Modern Lifecycle Policy covers products and services that are serviced and supported continuously. For more information about this policy, see [Modern Lifecycle Policy](https://support.microsoft.com/help/30881). Licensed customers must stay current with updates to the Finance and Operations online service in accordance with the following servicing and system requirements:
@@ -43,7 +43,7 @@ The Finance and Operations online service is covered by the Modern Lifecycle Pol
     - Dynamics 365 for Operations version 1611 (November 2016)
     
 
-- Platform versions maintain backward compatibility with the application versions that are supported at the time of the platform release within the application support lifecycle. For more information about platform versions, see [One Version service updates FAQ](../../fin-ops/get-started/one-version.md).
+- Platform versions maintain backward compatibility with the application versions that are supported at the time of the platform release within the application support lifecycle. For more information about platform versions, see [What's new or changed in Platform updates](../get-started/whats-new-home-page.md).
 
 - Critical fixes and non-critical updates are handled in the following way:
 
