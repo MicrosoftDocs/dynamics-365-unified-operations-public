@@ -82,7 +82,9 @@ You can then add the new fragment to the appropriate page template.
 
 ### Inline script
 
-The inline script provided by Customer Voice needs to be embedded as an inline script. The below is just a sample and note that **SURVEY_KEY** should match the actual survey key provided by Customer Voice.  Also notice the last line which calls the code to render the survey button after 1 second to ensure time is given for the scripts to be loaded.  You may also need to add other meta data such as company name if needed, this will be dependent on if your survey requires it.  
+The inline script provided by Customer Voice must be embedded as an inline script. 
+
+The following example of inline script code is just a sample and note that **SURVEY_KEY** should match the actual survey key provided by Customer Voice.  Also notice the last line which calls the code to render the survey button after 1 second to ensure time is given for the scripts to be loaded.  You may also need to add other meta data such as company name if needed, this will be dependent on if your survey requires it.  
 
 ```html
 function renderSurveyButton() {
@@ -100,13 +102,22 @@ function renderSurveyButton() {
 setTimeout(renderSurveyButton, 4000);
 ```
 
-The below image shows the above code added an [inline script](script-module.md) module.
+To embed the inline script into a fragment, follow these steps.
 
-![Inline script fragment 4](media/customer-voice-integration-4.png)
+1. Create a fragment in site builder based off the [inline script](script-module.md).
+1. In the fragment, select the **Default inline script** slot. 
+1. In the **Default inline script** properties pane, under **Inline script**, add the inline script code as shown in the following example illustration.
+
+    ![Inline script fragment 4](media/customer-voice-integration-4.png)
+
+1. Select **Save**, and then select **Finish editing**.
+1. Select **Publish** to publish the fragment.
+
+You can then add the new fragment to the appropriate page template.
 
 ## Enable scripts on e-commerce site
 
-Once the fragments have been created, they can be added to the page templates that you plan to use them on. The below screenshot shows the three fragments added to a product details page template. Once the changes are published the survey will appear on the pages controlled by the template that the fragments were added to.
+Once the fragments containing the Customer Voice embedded code have been created, you must add the fragments to the page templates associated with the sites you want to use them on. The following example illustration shows the three fragments added to a product details page (PDP) template. Once the updated template is published, the Customer Voice survey will appear on the pages controlled by the template.
 
 ![Inline script fragment 5](media/customer-voice-integration-5.png)
 
