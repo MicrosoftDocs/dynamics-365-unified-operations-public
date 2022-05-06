@@ -143,6 +143,6 @@ To add a quantitative test to a test group, follow these steps.
 - [Quality management tests](quality-management-processes.md)
 - [Quality management test variables](quality-management-processes.md)
 - [Quality associations](quality-management-processes.md)
-- [Batch attributes](/supply-chain/production-control/batch-attributes.md)
+- [Batch attributes](/dynamics365/supply-chain/production-control/batch-attributes)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
