@@ -3,7 +3,7 @@
 
 title: Subledger transfer to the general ledger
 description: This topic describes capabilities that are related to the subledger transfer process in General ledger.
-author: rcarlson
+author: RyanCCarlson2
 ms.date: 12/08/2021
 ms.topic: article
 ms.prod: 
@@ -15,13 +15,13 @@ ms.search.form: LedgerJournalSetup, LedgerJournalTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: peakerbl
+ms.author: rcarlson
 ms.search.validFrom: 2020-01-18
 ms.dyn365.ops.version: AX 10.0.8
 
