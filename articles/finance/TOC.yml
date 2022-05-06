@@ -1040,7 +1040,7 @@
             href: general-ledger/dual-currency.md
         - name: Posting profiles
           items:
-           -name: Posting profiles overview
+          - name: Posting profiles overview
             href: general-ledger/pstg-prfles-ovrvw.md
           - name: Recommended practices for posting profiles
             href: general-ledger/recommended-practices-pstg-prfles.md
