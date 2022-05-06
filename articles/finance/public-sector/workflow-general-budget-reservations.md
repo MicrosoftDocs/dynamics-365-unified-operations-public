@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up general budget reservations and submit them to a workflow
-description: This topic explains how to set up  general budget reservations and submit them to a workflow for Public sector.
+description: This topic explains how to set up general budget reservations and submit them to a workflow for Public sector.
 author: AlexRenney
 ms.date: 04/24/2019
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form: BudgetReservation_PSN, BudgetReservationType_PSN
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
