@@ -3,7 +3,7 @@
 
 title: Financial reporting FAQ
 description: This topic provides answers to some frequently asked questions about Financial reporting.
-author: jiwo
+author: jinniew
 ms.date: 07/07/2021
 ms.topic: index-page
 ms.prod: 
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 
 # ms.tgt_pltfrm: 
 # ms.custom: 
