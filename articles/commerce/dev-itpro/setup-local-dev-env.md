@@ -92,7 +92,7 @@ Before you set up the self-hosted or IIS-hosted environment, complete the follow
     + To verify that the **PATH** variable is set correctly, run the command `msbuild/version` from a regular command prompt. Don't use Developer Command Prompt. The command should print a version number of at least 15. After you've finished setting up MSBuild, restart Visual Studio Code.
 
 5. Install Microsoft.NET.Sdk by using the previously downloaded Visual Studio tools. Go to **Individual components**, enter **.NET SDK**, select the checkbox for the .NET SDK, and then select **Install**.
-6. Install the 64-bit version of Node.JS from [Download and Install Node](https://nodejs.org/en/download/). Make sure that the **PATH** environment variable point to the location. If you're prompted, select the **Automatically install the necessary tools** checkbox.
+6. Install the 64-bit version of Node.js from [Download and Install Node](https://nodejs.org/en/download/). Make sure that the **PATH** environment variable point to the location. If you're prompted, select the **Automatically install the necessary tools** checkbox.
 7. Install the 64-bit version of Visual Studio Code for Windows from [Download Visual Studio Code](https://code.visualstudio.com/download).
 8. Install the C# for Visual Studio Code (powered by OmniSharp) extension for Visual Studio Code by following the instructions in [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-marketplace).
 9. Clone or download the [Scale Unit GitHub repository (repo)](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit).

@@ -29,7 +29,6 @@ ms.dyn365.ops.version: Version 7.0.0
 
 This procedure shows how to create a consolidation account group and then add accounts to the group. This procedure uses the demo data company USMF.
 
-
 ## Create a consolidation account group
 1. Go to **General ledger > Chart of accounts > Accounts > Consolidation account groups**.
 2. Click **New**.
@@ -37,14 +36,12 @@ This procedure shows how to create a consolidation account group and then add ac
 4. In the **Name** field, type a value.
 
 ## Add accounts to consolidation account group
-1. Go to General ledger > Chart of accounts > Accounts > Additional consolidation accounts.
-2. Click New.
-3. In the Main account field, click the drop-down button to open the lookup.
-4. In the list, click the main account that you want to map.
-5. In the Consolidation account group field, click the drop-down button to open the lookup.
-6. In the list, click the consolidation account group.
-7. In the Consolidation account field, type a value.
-8. In the Consolidation account name field, type a value.
+1. Go to **General ledger > Chart of accounts > Accounts > Additional consolidation accounts**.
+2. Click **New**.
+3. In the **Main account** field, in the list, select the main account that you want to map.
+4. In the **Consolidation account group** field, in the list, click the consolidation account group.
+5. In the **Consolidation account** field, type a value.
+6. In the **Consolidation account name** field, type a value.
 
 
 

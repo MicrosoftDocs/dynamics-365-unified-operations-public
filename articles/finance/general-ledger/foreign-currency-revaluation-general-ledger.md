@@ -15,7 +15,7 @@ ms.search.form: CurrencyLedgerGainLossAccount
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 62153
 ms.assetid: 842e8561-560f-4cc6-8668-70cca60b1ba3

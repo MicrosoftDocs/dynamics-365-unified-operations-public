@@ -3,7 +3,7 @@
 
 title: Global withholding tax
 description: This topic provides information about global withholding tax functionality and how to set it up. Global withholding tax functionality is enhanced for vendor and customer transactions, so that withholding tax is calculated at the item level.
-author: roschlom
+author: kailiang
 ms.date: 01/12/2021
 ms.topic: overview
 ms.prod: 
@@ -15,8 +15,8 @@ ms.search.form: LedgerParameters
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
+ms.reviewer: kfend
+# 
 # ms.tgt_pltfrm: 
 ms.custom: ["15721", "intro-internal"]
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef

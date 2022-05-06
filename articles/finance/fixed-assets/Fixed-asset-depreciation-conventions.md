@@ -15,7 +15,7 @@ ms.search.form: AssetDepreciationProfile
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 13891
 ms.assetid: 36d1112d-921c-4fff-abe0-0ff2429848d3

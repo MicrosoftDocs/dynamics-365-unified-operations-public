@@ -4,7 +4,7 @@
 title: One Version service updates FAQ
 description: This topic provides clarity about the service updates, processes, and tools that you can use to stay current in a consistent, predictable, and seamless manner.
 author: laneswenka
-ms.date: 04/21/2022
+ms.date: 05/03/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 8.1
 
 [!include[banner](../includes/banner.md)]
 
-In July 2018, Microsoft announced a [change to the way that we deliver Dynamics 365 updates](https://cloudblogs.microsoft.com/dynamics365/2018/07/06/modernizing-the-way-we-update-dynamics-365/), to help you stay current in a consistent, predictable, and seamless manner. In June 2019, based on customer feedback, we announced [new flexible service updates that were being made available](https://cloudblogs.microsoft.com/dynamics365/bdm/2019/06/03/new-flexible-service-updates-for-dynamics-365-for-finance-and-operations/). This FAQ is intended to provide clarity about the service updates, processes, and tools that you can use to prepare for the change. We will continue to add information to this topic as required.
+This FAQ is intended to provide clarity about the service updates, processes, and tools that you can use to prepare for the change. We will continue to add information to this topic as required.
 
 For more information about One Version service updates, see [One Version service updates overview](../../dev-itpro/lifecycle-services/oneversion-overview.md).
 
@@ -44,9 +44,9 @@ For information about how to pause an update, see [Pause service updates through
 
 ### If the release date is in early April, when will the general availability package become available?
 
-Production updates for a monthly release will be scheduled for the first, second, and third weeks of the month. Depending on the configuration that you set up in LCS, you will receive updates during that specific week.
- 
-For the April 10.0 release, Microsoft will perform updates during the weekends of April 6, April 13, or April 20, depending on the configuration that you set up in LCS. Sandbox updates will always be scheduled a week before the update. The configuration setup is available in LCS.
+Production updates for a release will be scheduled for the first, second, and third weeks of the month. Depending on the configuration that you set up in LCS, you will receive updates during that specific week. Sandbox updates will always be scheduled the week before the production update. The configuration setup is available in LCS.
+
+As an example, for the April 10.0.25 release, Microsoft performed updates during the weekends of April 1, April 8, or April 15, depending on the configuration that you set up in LCS. Sandbox updates will always be scheduled a week before the update.
 
 Customers can always choose to apply the update at an earlier time or at a time that is more convenient than the suggested times in LCS. If a customer is already on the latest version, the automatic update will be canceled.
 
@@ -68,7 +68,7 @@ A regulatory update is a new feature or an existing feature change that is requi
 
 ### What is the upcoming schedule of updates?
 
-Service updates are available. You have the option to apply them when it's convenient for you, or you can let Microsoft automatically apply them, based on the selected maintenance window. You are required to be on an update that is no more than three updates behind the current update.
+Each year, seven service updates are released. You have the option to apply them when it's convenient for you, or you can let Microsoft automatically apply them, based on the selected maintenance window. You are required to be on an update that is no more than three updates behind the current update.
 
 To view a targeted release schedule, see [Service update availability](public-preview-releases.md).
 
@@ -226,12 +226,13 @@ For information about how to pause an update, see [Pause service updates through
 
 ### How can I get early access to non-released platform updates?
 
-You can join the [First release program](https://experience.dynamics.com/insider/). Microsoft will then always keep your system current with the latest updates. If you aren't already a member of the Dynamics 365 Insider Program, you must follow these steps.
+Beginning with version 10.0.26, the preview package for all service updates is made available to all customers through the Shared Asset Library in LCS, under **Software deployable package**. Preview packages can be deployed to development or test environments. They can't be used in production environments. You agree to the program terms at installation. Sign up for access to preview packages (formerly known as the Preview Early Access Program (PEAP)) is no longer required.
 
-1. Sign up for the Insider Program at <https://experience.dynamics.com>.
-2. Accept the terms and conditions for becoming a Dynamics 365 Insider.
-3. When your application has been approved (after approximately 24 hours), you can sign back in to the Insider Portal to find the different preview programs that are available for you to join. 
-4. Preview Early Access Program (PEAP) and First Release: You must accept additional terms and conditions to join the program. After your nomination is accepted, look for these programs in the Dynamics 365 Insider Program.
+You can join the [First release program](https://experience.dynamics.com/insider/), where Microsoft will keep your system always current with the latest updates. If you're not already a member of the Dynamics 365 Insider Program, you'll need to:
+
+1. Sign up for the Insider Program using this URL: https://experience.dynamics.com
+2. Accept the terms and conditions to become a Dynamics 365 Insider.
+3. After your application has been approved (approximately 24 hours), you can then sign back into the Insider Portal to find the different preview programs available for you to join.
 
 ### Is any tooling available to support testing of the latest release?
 

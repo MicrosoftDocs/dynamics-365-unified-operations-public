@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: SysQueryForm, LedgerTransVoucher, LedgerTransBase, Originaldocuments   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global

@@ -15,7 +15,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -62,18 +62,14 @@ The **Offboarding** tab contains a list of employees who are exiting the company
 The **Transitions** tab contains an **All tasks** list that shows all tasks for all employees who will be changing positions or who have recently changed positions. There is also a list of overdue tasks and a list of tasks that are assigned to the current user.
 
 On all three tabs, HR assistants and managers can complete the following activities:
-
-- Apply a checklist to an employee.
-- Update the status of a task.
-- Reassign a task.
-- Update the due date of a task.
+- Apply a checklist to an employee
+- Update the status of a task
+- Reassign a task
+- Update the due date of a task
 
 > [!NOTE]
 > By default, the **Onboarding** tab shows employees who were hired in the last seven days. To change this setting, on the **Human resources parameters** page, on the **General** tab, in the **Recent hires** field, enter a time frame. The information in the **Recent hires** list can be shown for a specific number of days, months, or years. For example, to view the list of employees who were hired in the last 14 days, set the **Period** field to **14** and the **Unit** field to **Days**.
->
-> On the **Human resources parameters** page, you can also update the date range for the lists of exiting and exited employees that are shown on the **Offboarding** tab.
->
-> These settings also apply to the **Personnel management** workspace.
+> On the **Human resources parameters** page, you can also update the date range for the lists of exiting and exited employees that are shown on the **Offboarding** tab. These settings also apply to the **Personnel management** workspace.
 
 ## Setting up tasks
 
@@ -193,6 +189,13 @@ You can also apply a checklist to an employee by opening their **Worker** page a
 ## Completing tasks
 
 On the **Employee self service** page, an employee can view all the tasks that are assigned to them. For each assigned task, **Task**, **Description**, **Instructions**, and **Contact person** values are shown. Additionally, for each task, the employee can open the associated external webpage or the associated page in the Dynamics 365 app.
+
+Tasks can also be displayed on the default dashboard. To display tasks on the default dashboard:
+1. Go to **User Options – Preferences – Task Management** 
+2. Select the **Display tasks on default dashboard** to **On**.  
+
+>[!Note] 
+>The **Task management** feature must be turned on in **Feature management** for the option to display in **User options**.
 
 Tasks can be marked as **In progress**, **Canceled**, or **Completed**. If a task was assigned to a group, it will be marked as **Completed** when one person in the group completes it.
 
