@@ -157,6 +157,18 @@ To configure optional features for your Commerce evaluation environment, see [Co
 > [!NOTE]
 > Commerce evaluation environments come with a preloaded Azure Active Directory (Azure AD) business-to-consumer (B2C) tenant for demonstration purposes. Configuring your own Azure AD B2C tenant is not required for evaluation environments. However, if you are configuring the evaluation environment to use your own Azure AD B2C tenant, please make sure to add ``https://login.commerce.dynamics.com/_msdyn365/authresp`` as a reply URL in the Azure AD B2C application via the Azure Portal.
 
+
+## Troubleshooting
+
+### Site builder channel list is empty when configuring site
+If the site builder does not show any online store channels, ensure that the channels have been added to the commerce scale unit within headquarters as outlined in the above **Before you start** section.  Also, ensure you run **Initialize commerce schedule** with the **Delete existing configuration** set to yes from within headquarters.  Once these are steps are done, run the **9999** job on the commerce scale unit from within the **Channel database** page in headquarters.
+
+### Color swatches are not rendering on the category page, but are on the PDP page
+Ensure the color and size swatches are set to "refinable" in the headquarters **Channel categories and product attributes** page.  Select the online store channel and then **Set attribute metadata** and set the size and color as refinable by turning on the **Show attribute on channel** button and the **Can be refined** setting.  Once the settings are saved, select **Publish channel updates**. Once these are steps are done, run the **9999** job on the commerce scale unit from within the **Channel database** page in headquarters.
+
+### Business features don't appear to be turned on the AW Business site
+Ensure the headquarters online store channel was configured with **Customer type** set to **B2B**.  If the channel was configured with **B2C** a new channel will need to be created, since it can't be edited after.  Demo data shipped in 10.0.26 release and earlier had a bug where the **AW Business online store** was misconfigured in this way, the work around is to create a new channel with the same settings and configurations, ensuring the **Customer type** is set to **B2B**.
+
 ## Additional resources
 
 [Dynamics 365 Commerce evaluation environment overview](cpe-overview.md)
