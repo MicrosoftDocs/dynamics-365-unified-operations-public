@@ -35,7 +35,7 @@ To add a catalog picker module to your site, follow these steps.
 1. Locate your 'My accounts' page and add a link to this 'Catalog-picker' page as shown below
 1. Also, from the header fragment, add a link to 'My catalogs' and associate the 'view page' to 'catalog-picker' page. 
 
-# Additional resources 
+## Additional resources 
 
 [Create Commerce catalogs for B2B sites](catalogs-b2b-sites.md)
 
