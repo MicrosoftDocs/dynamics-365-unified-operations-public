@@ -45,6 +45,7 @@ After your Commerce evaluation environment has been provisioned end to end, addi
 1. Make sure that the **USRT** legal entity is selected in the upper-right corner.
 1. Go to **Commerce parameters > Configuration parameters** and make sure there's an entry for **ProductSearch.UseAzureSearch** set to **true**. If this entry is missing, you can add this entry and run **Channel Database > Full Sync** for the Commerce Scale unit associated with your eCommerce website.
 1. Run **Initialize commerce schedule**, ensure **Delete existing configuration** is set to **yes** then hit the **OK** button.
+1. Add channels to the scale unit by going to the **Channel database** page, selecting the scale unit found on the left side and under **Retail channel** add the **AW online store**, **AW Business online store** and **Fabrikam extended online store**, optionally add some retail stores if you will be using POS such as Seattle, San Francisco and San Jose.
 
 During post-provisioning activities in Commerce headquarters, make sure that the **USRT** legal entity is always selected.
 
@@ -90,6 +91,8 @@ To start to set up your evaluation site in Commerce, follow these steps.
 1. Select **en-us** as the default language.
 1. Leave the value of the **Path** field as it is.
 1. Select **OK**. The list of pages on the site appears.
+1. Repeat the same set of steps for the **Adventure Works** site which maps to the **Adventure Works online store** channel and **Adventure Works Business** site which will map tot he **Adventure Works B2B online store** channel.  If the **Path** field was left empty for the Fabrikam site above, then you'll need to add a path for these two sites, such as "aw" and "awbusiness".
+2. 
 
 ## Enable jobs
 
