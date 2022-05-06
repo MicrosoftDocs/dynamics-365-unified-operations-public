@@ -23,7 +23,9 @@ You can integrate [Customer Voice](https://dynamics.microsoft.com/customer-voice
 
 ## Integrate the Customer Voice service
 
-First, you must select a Customer Voice project template for the type of feedback you want to collect.
+To create a Customer Voice account, go the [Customer Voice](https://dynamics.microsoft.com/customer-voice/overview/) and follow the prompts.
+
+After creating a Customer Voice account and signing in, the next step is to select a project template for the type of feedback you want to collect.
 
 To select a Customer Voice project template, follow these steps. 
 
@@ -32,13 +34,15 @@ To select a Customer Voice project template, follow these steps.
 1. Select the project template for the type of feedback you want to collect, and then select **Next**.
 1. Select the **Send** tab, and then under **Choose an embed format**, select the embed format. The necessary code to embed within site builder appears below **Embedded code**. 
 
-The following example illustration shows the **Periodic customer survey** page with the **Button** embed code option selected and the embed code provided under **Embedded code**. The embedded code will be split into three parts as described in the sections below.
+For our examples, we will use the **Periodic customer survey** project template with the **Button** embed code option selected.
+
+The following example illustration shows the **Periodic customer survey** project template page with the **Button** embed code option selected and the associated embed code for that option provided under **Embedded code**. Embedding the provided code in your site pages will require three separate actions, as described in the sections below.
 
 ![Customer Voice Periodic customer survey page with the button option selected](media/customer-voice-integration-1.png)
 
-### Embed the external script URL block
+### Embed the external script URL
 
-You must embed the following external script URL block on all pages that will have a Customer Voice survey. The best way to embed the script on multiple pages  is to create a fragment in Commerce site builder that contains the script and then add the fragment to the appropriate page template(s). The embedded external script code will look like the following example code:
+You must embed the external script URL provided by Customer Voice on all site pages that will have a Customer Voice survey. The best way to embed the script on multiple site pages is to create a fragment in Commerce site builder that contains the external script UR and then add the fragment to the appropriate page template(s). After you publish an updated template, on affected site pages the embedded external script code will look like the following example code:
 
 ```html
 <script src=https://mfpembedcdnmsit.azureedge.net/mfpembedcontmsit/Embed.js type="text/javascript"></script>
@@ -46,10 +50,13 @@ You must embed the following external script URL block on all pages that will ha
 
 For information on fragments, see [Work with fragments](work-with-fragments.md).
 
-To embed the external script into a fragment, follow these steps.
+> [!NOTE]
+> You only need to add the URL to the fragment. The external script module will add the additional script code.
+
+To embed the external script URL into a fragment, follow these steps.
 
 1. Create a fragment in site builder based off the [External script module](script-module.md).
-1. In the fragment, select the **Default external script** slot. 
+1. In the new fragment, select the **Default external script** slot. 
 1. In the **Default external script** properties pane, under **Script source**, add the external script URL as shown in the following example illustration.
 
     ![External script fragment 2](media/customer-voice-integration-2.png)
@@ -57,17 +64,17 @@ To embed the external script into a fragment, follow these steps.
 1. Select **Save**, and then select **Finish editing**.
 1. Select **Publish** to publish the fragment.
 
-You can then add the new fragment to the appropriate page template.
+The new fragment with the embedded external script block is now ready to be added to the appropriate page template.
 
-### Embed the external style sheet
+### Embed the external style sheet code
 
-You must embed the external stylesheet on all pages that will have a Customer Voice survey. The best way to embed the external style sheet on multiple pages is to create a fragment in Commerce site builder that contains the style sheet and then add the fragment to the appropriate page template(s). The embedded external style sheet code will look like the following example code:
+You must embed the external stylesheet code provided by Customer Voice on all site pages that will have a Customer Voice survey. Similar to the other embedded code, the best way to embed the external style sheet code on multiple site pages is to create a fragment in Commerce site builder that contains the style sheet code and then add the fragment to the appropriate page template(s). The embedded external style sheet code will look like the following example code:
 
 ```html
 <link rel="stylesheet" type="text/css" href=https://mfpembedcdnmsit.azureedge.net/mfpembedcontmsit/Embed.css />
 ```
 
-To embed the external style sheet into a fragment, follow these steps.
+To embed the external style sheet code into a fragment, follow these steps.
 
 1. Create a fragment in site builder based off the [Metatags](metatags-module.md).
 1. In the fragment, select the **Default metatags** slot. 
@@ -78,13 +85,13 @@ To embed the external style sheet into a fragment, follow these steps.
 1. Select **Save**, and then select **Finish editing**.
 1. Select **Publish** to publish the fragment.
 
-You can then add the new fragment to the appropriate page template.
+The new fragment with the embedded external style sheet code is now ready to be added to the appropriate page template.
 
-### Embed the inline script
+### Embed the inline script code 
 
-The inline script provided by Customer Voice must be embedded as an inline script. 
+Next, you must embed the inline script code provided by Customer Voice on all site pages that will have a Customer Voice survey. Similar to the other embedded code, the best way to embed the inline script code on multiple site pages is to create a fragment in Commerce site builder that contains the inline script code and then add the fragment to the appropriate page template(s).
 
-The following example of inline script code is just a sample and note that **SURVEY_KEY** should match the actual survey key provided by Customer Voice.  Also notice the last line which calls the code to render the survey button after 1 second to ensure time is given for the scripts to be loaded.  You may also need to add other meta data such as company name if needed, this will be dependent on if your survey requires it.  
+In the following example of inline script code, **SURVEY_KEY** is a placeholder. The value for **SURVEY_KEY** should match the actual survey key provided by Customer Voice. The last line calls the code to render the survey button after one second to ensure that enough time is given for the scripts to load. Depending on the survey you selected, you may also need to add or update other metadata such as company name.  
 
 ```html
 function renderSurveyButton() {
@@ -113,17 +120,21 @@ To embed the inline script into a fragment, follow these steps.
 1. Select **Save**, and then select **Finish editing**.
 1. Select **Publish** to publish the fragment.
 
-You can then add the new fragment to the appropriate page template.
+The new fragment with the embedded inline script code is now ready to be added to the appropriate page template.
 
-## Enable scripts on e-commerce site
+## Add fragments to a template
 
-Once the fragments containing the Customer Voice embedded code have been created, you must add the fragments to the page templates associated with the sites you want to use them on. The following example illustration shows the three fragments added to a product details page (PDP) template. Once the updated template is published, the Customer Voice survey will appear on the pages controlled by the template.
+Once the fragments containing the Customer Voice embedded code have been created, you must add the fragments to the page templates associated with the sites you want to use them on. The following example illustration shows our three example fragments added to a product details page (PDP) template. 
 
 ![Inline script fragment 5](media/customer-voice-integration-5.png)
 
+Once the updated template is published, the Customer Voice survey will appear on the pages controlled by the template.
+
+For information on templates, see [Work with templates](work-with-templates.md).
+
 ## Configure content security policy
 
-After making the above changes, the survey should fail to load due to content security policy since the web site by default can't call out to other services. To see errors caused by this, open developer tools within a browser (F12) and navigate to the page that has the survey and notice CSP errors in the console output. For more information, see [Content security policy](manage-csp.md).
+After publishing the updated template(s), the survey should fail to load on the relevant site pages since by default content security policy (CSP) won't allow calls to other services without additional configuration. To see the errors, open developer tools within a browser (F12), navigate to a page that has the survey to see the CSP errors in the console output. For more information, see [Content security policy](manage-csp.md).
 
 To configure content security policy in site builder to fix the errors, follow these steps. 
 
@@ -132,7 +143,3 @@ To configure content security policy in site builder to fix the errors, follow t
 1. Add `https://customervoice.microsoft.com/` to the **child-src** directive.
 1. Add `https://customervoice.microsoft.com/` to the **frame-src** directive.
 1. Add `https://mfpembedcdnmsit.azureedge.net` and ".azureedge.net" to the **img-src**  directive.
-
-Below shows where to add some of these:
-
-![Inline script fragment 6](media/customer-voice-integration-6.png)
