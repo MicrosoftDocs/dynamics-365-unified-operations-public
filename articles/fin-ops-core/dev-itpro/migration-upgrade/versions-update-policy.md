@@ -64,7 +64,7 @@ The Finance and Operations online service is covered by the Modern Lifecycle Pol
 
 ## Dates and versions for application and platform releases
 
-To see more details on dates and versions for application and platform releases, please visit the [What's new or changed in Finance and Operations apps home page](../../fin-ops/get-started/whats-new-changed.md).
+To see details on dates and versions for application and platform releases, see the [What's new or changed in Finance and Operations apps home page](../../fin-ops/get-started/whats-new-changed.md).
 
 > [!NOTE]
 > -  Service updates are cumulative in nature and may include updates for some or all of the following components:  platform, application, Financial Reporting, Commerce, and operating system updates. 
