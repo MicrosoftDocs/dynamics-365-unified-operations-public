@@ -14,7 +14,9 @@ ms.author: asharchw
 ms.search.validFrom: 2022-04-21
 ---
 
-## Catalog picker module
+# Catalog picker module
+
+[!include [banner](includes/banner.md)]
 
 This topic covers catalog picker module and describes how to add them to site pages in Microsoft Dynamics 365 Commerce. 
 
