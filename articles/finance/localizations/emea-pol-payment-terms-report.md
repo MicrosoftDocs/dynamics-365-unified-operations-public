@@ -4,7 +4,7 @@
 title: Payment terms in commercial transactions report (PL-00053)
 description: This topic provides information about the Payment terms report, and explains how to configure and generate it.
 author: sndray
-ms.date: 01/07/2022
+ms.date: 05/06/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -54,7 +54,7 @@ For more information about how to download ER configurations, see [Download ER c
 Import the most recent versions of the configurations. The version description usually includes the number of the Microsoft Knowledge Base (KB) article that explains the changes that were introduced in the configuration version. Use **Issue search** feature of the [LCS](https://lcs.dynamics.com/v2) portal to find information about the changes by the KB number.
 
 > [!NOTE]
-> After you import all the ER configurations from the preceding table, set the **Default for model mapping** option to **Yes** for the **Payment terms model mapping** configuration.
+> After you import all the ER configurations from the preceding table, set **Default for model mapping** to **Yes** for the **Payment terms model mapping** configuration.
 
 ### Enable features in Feature management
 
@@ -95,7 +95,7 @@ Report generation covers the following scenarios:
 
 ### Payment terms in commercial transactions report and One voucher
 
-Using the One voucher functionality introduces a limitation of further Payment terms in commercial transactions reporting for data if one voucher was applied. We recommend that you set the **Allow multiple transactions within one voucher** parameter on the **General ledger parameters** page to **No** in your legal entity if you post transactions that are part of the Payment terms in commercial transactions report. For information about One voucher functionality, see [One voucher](../general-ledger/one-voucher.md).
+Using the One voucher functionality introduces a limitation of further Payment terms in commercial transactions reporting for data if one voucher was applied. If you post transactions that are part of the Payment terms in commercial transactions report, we recommend that you set the **Allow multiple transactions within one voucher** parameter on the **General ledger parameters** page to **No** in your legal entity. For information about One voucher functionality, see [One voucher](../general-ledger/one-voucher.md).
 
 ## Run the Statistics on invoices process
 
