@@ -3,8 +3,8 @@
 
 title: Software lifecycle policy and cloud releases
 description: This topic outlines the lifecycle and support policies for the Finance and Operations online service.
-author: ShellyBakke
-ms.date: 05/04/2022
+author: sericks007
+ms.date: 05/06/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -20,7 +20,7 @@ ms.reviewer: sericks
 ms.custom: 69914
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: smiller
+ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 
@@ -72,7 +72,7 @@ To see more details on dates and versions for application and platform releases,
 > -  All customers were required to be on the latest version of Finance and Operations by April 2019, except for those with unfulfilled [extension requests](../extensibility/extensibility-home-page.md) submitted to Microsoft. Customers who submitted extensibility requests by January 1, 2019, are supported on version 7.3 until their extensibility requests are fulfilled. Customers are expected to upgrade to the latest version within 90 days of the extensibility request being fulfilled. For more information, see [One Version service updates FAQ](../../fin-ops/get-started/one-version.md). 
 
 ## Downloadable virtual hard drive (VHD) releases
-Updates to the downloadable VHD are released 2x annually concurrent with the Finance and Operations April and October major service updates. The VHD is bundled with the latest service update, and therefore its release always trails that of the associated service update. You can expect the VHD update to release after the major service update has been made generally available to all customers. Finance and Operations release dates are published under [Service update availability](/fin-ops/get-started/public-preview-releases#targeted-release-schedule-dates-subject-to-change).
+Updates to the downloadable VHD are released twice per year, concurrent with the major releases, in April and October, for Finance and Operations apps. The VHD is bundled with the latest service update, and therefore its release always trails that of the associated service update. You can expect the VHD update to release after the major service update has been made generally available to all customers. Finance and Operations release dates are published in [Service update availability](/fin-ops/get-started/public-preview-releases#targeted-release-schedule-dates-subject-to-change).
 
 Use of the VHDs is subject to the [Software license terms](https://go.microsoft.com/fwlink/?linkid=851163).
 
