@@ -4,7 +4,7 @@
 title: Domains in Dynamics 365 Commerce
 description: This topic describes how domains are handled in Microsoft Dynamics 365 Commerce.
 author: BrShoo
-ms.date: 03/17/2021
+ms.date: 05/06/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
