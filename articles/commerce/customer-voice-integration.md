@@ -80,7 +80,7 @@ To embed the external style sheet into a fragment, follow these steps.
 
 You can then add the new fragment to the appropriate page template.
 
-### Inline script
+### Embed the inline script
 
 The inline script provided by Customer Voice must be embedded as an inline script. 
 
@@ -121,15 +121,17 @@ Once the fragments containing the Customer Voice embedded code have been created
 
 ![Inline script fragment 5](media/customer-voice-integration-5.png)
 
-## Content security policy
+## Configure content security policy
 
-After making the above changes, the survey should fail to load due to content security policy since the web site by default can't call out to other services. To see errors caused by this, open developer tools within a browser (F12) and navigate to the page that has the survey and notice CSP errors in the console output.  For more information, see [Content security policy](manage-csp.md).
+After making the above changes, the survey should fail to load due to content security policy since the web site by default can't call out to other services. To see errors caused by this, open developer tools within a browser (F12) and navigate to the page that has the survey and notice CSP errors in the console output. For more information, see [Content security policy](manage-csp.md).
 
-To fix these errors, from within site builder, select the **Extensions** tab on the bottom left and then the **Content security policy** tab and add the following URLs:
+To configure content security policy in site builder to fix the errors, follow these steps. 
 
-* Add `https://customervoice.microsoft.com/` to **child-src**
-* Add `https://customervoice.microsoft.com/` to **frame-src**
-* Add `https://mfpembedcdnmsit.azureedge.net` and ".azureedge.net" to the **img-src** section
+1. Go to **Site settings \> Extensions**.
+1. Select the **Content security policy** tab.
+1. Add `https://customervoice.microsoft.com/` to the **child-src** directive.
+1. Add `https://customervoice.microsoft.com/` to the **frame-src** directive.
+1. Add `https://mfpembedcdnmsit.azureedge.net` and ".azureedge.net" to the **img-src**  directive.
 
 Below shows where to add some of these:
 
