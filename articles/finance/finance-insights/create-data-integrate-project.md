@@ -59,11 +59,13 @@ This topic explains how to create a data integration project.
 
 5. Open the [Power Apps environments](https://admin.powerapps.com/environments), and follow these steps:  
 
-    1. Create data integration projects for the following templates by using the connection set that you just created:
+    1. Create a single data integration project for each of the following templates by using the connection set that you just created:
 
         - Customer payment insights result (CDS to Fin and Ops 10.0.17+)
         - Cash flow time series results (CDS to Fin and Ops)
         - Budget time series results (CDS to Fin and Ops)
+        - > [!NOTE]
+>Creating multiple data integration projects for each template may cause errors that will block the updates from occurring.
 
     2. Set the appropriate scheduling for each project.
 
