@@ -91,8 +91,7 @@ To start to set up your evaluation site in Commerce, follow these steps.
 1. Select **en-us** as the default language.
 1. Leave the value of the **Path** field as it is.
 1. Select **OK**. The list of pages on the site appears.
-1. Repeat the same set of steps for the **Adventure Works** site which maps to the **Adventure Works online store** channel and **Adventure Works Business** site which will map tot he **Adventure Works B2B online store** channel.  If the **Path** field was left empty for the Fabrikam site above, then you'll need to add a path for these two sites, such as "aw" and "awbusiness".
-2. 
+1. Repeat the same set of steps for the **Adventure Works** site which maps to the **Adventure Works online store** channel and **Adventure Works Business** site which will map to the **Adventure Works B2B online store** channel.  If the **Path** field was left empty for the Fabrikam site above, then you'll need to add a path for these two sites, such as "aw" and "awbusiness".
 
 ## Enable jobs
 
