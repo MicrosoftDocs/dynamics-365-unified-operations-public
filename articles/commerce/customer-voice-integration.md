@@ -32,7 +32,7 @@ To select a Customer Voice project template, follow these steps.
 1. Go to the [Customer Voice project template page](https://customervoice.microsoft.com/Pages/ProjectPage.aspx).
 1. Select **Get started**.
 1. Select the project template for the type of feedback you want to collect, and then select **Next**.
-1. Select the **Send** tab, and then under **Choose an embed format**, select the embed format. The necessary code to embed within site builder appears below **Embedded code**. 
+1. Select the **Send** tab, and then under **Choose an embed format**, select the embed format. The necessary code to embed within Commerce site builder appears below **Embedded code**. 
 
 For our examples, we will use the **Periodic customer survey** project template with the **Button** embed code option selected.
 
@@ -42,7 +42,7 @@ The following example illustration shows the **Periodic customer survey** projec
 
 ### Embed the external script URL
 
-You must embed the external script URL provided by Customer Voice on all site pages that will have a Customer Voice survey. The best way to embed the script on multiple site pages is to create a fragment in Commerce site builder that contains the external script UR and then add the fragment to the appropriate page template(s). After you publish an updated template, on affected site pages the embedded external script code will look like the following example code:
+You must embed the external script URL provided by Customer Voice on all site pages that will have a Customer Voice survey. The best way to embed the script on multiple site pages is to create a fragment in site builder that contains the external script URL and then add the fragment to the appropriate page template(s). After you publish an updated template, on affected site pages the embedded external script code will look like the following example code:
 
 ```html
 <script src=https://mfpembedcdnmsit.azureedge.net/mfpembedcontmsit/Embed.js type="text/javascript"></script>
@@ -68,7 +68,7 @@ The new fragment with the embedded external script block is now ready to be adde
 
 ### Embed the external style sheet code
 
-You must embed the external stylesheet code provided by Customer Voice on all site pages that will have a Customer Voice survey. Similar to the other embedded code, the best way to embed the external style sheet code on multiple site pages is to create a fragment in Commerce site builder that contains the style sheet code and then add the fragment to the appropriate page template(s). The embedded external style sheet code will look like the following example code:
+You must embed the external stylesheet code provided by Customer Voice on all site pages that will have a Customer Voice survey. Similar to the other embedded code, the best way to embed the external style sheet code on multiple site pages is to create a fragment in site builder that contains the style sheet code and then add the fragment to the appropriate page template(s). The embedded external style sheet code will look like the following example code:
 
 ```html
 <link rel="stylesheet" type="text/css" href=https://mfpembedcdnmsit.azureedge.net/mfpembedcontmsit/Embed.css />
@@ -89,9 +89,9 @@ The new fragment with the embedded external style sheet code is now ready to be 
 
 ### Embed the inline script code 
 
-Next, you must embed the inline script code provided by Customer Voice on all site pages that will have a Customer Voice survey. Similar to the other embedded code, the best way to embed the inline script code on multiple site pages is to create a fragment in Commerce site builder that contains the inline script code and then add the fragment to the appropriate page template(s).
+Next, you must embed the inline script code provided by Customer Voice on all site pages that will have a Customer Voice survey. Similar to the other embedded code, the best way to embed the inline script code on multiple site pages is to create a fragment in site builder that contains the inline script code and then add the fragment to the appropriate page template(s).
 
-In the following example of inline script code, **SURVEY_KEY** is a placeholder. The value for **SURVEY_KEY** should match the actual survey key provided by Customer Voice. The last line calls the code to render the survey button after one second to ensure that enough time is given for the scripts to load. Depending on the survey you selected, you may also need to add or update other metadata such as company name.  
+In the following example of inline script code, **SURVEY_KEY** is a placeholder. The value for **SURVEY_KEY** should match the actual survey key provided by Customer Voice. The last line calls the code to render the survey button after one second to ensure that enough time is given for the scripts to load. Depending on the survey you selected, you may also need to add or update other metadata such as the company name.  
 
 ```html
 function renderSurveyButton() {
@@ -109,9 +109,9 @@ function renderSurveyButton() {
 setTimeout(renderSurveyButton, 4000);
 ```
 
-To embed the inline script into a fragment, follow these steps.
+To embed the inline script code into a fragment, follow these steps.
 
-1. Create a fragment in site builder based off the [inline script](script-module.md).
+1. Create a fragment in site builder based off the [Inline script module](script-module.md).
 1. In the fragment, select the **Default inline script** slot. 
 1. In the **Default inline script** properties pane, under **Inline script**, add the inline script code as shown in the following example illustration.
 
@@ -124,7 +124,7 @@ The new fragment with the embedded inline script code is now ready to be added t
 
 ## Add fragments to a template
 
-Once the fragments containing the Customer Voice embedded code have been created, you must add the fragments to the page templates associated with the sites you want to use them on. The following example illustration shows our three example fragments added to a product details page (PDP) template. 
+Once the fragments containing the Customer Voice embedded code have been created, you must add the fragments to the page templates associated with the site pages you want to use them on. The following example illustration shows our three example fragments added to a product details page (PDP) template. 
 
 ![Inline script fragment 5](media/customer-voice-integration-5.png)
 
@@ -134,7 +134,7 @@ For information on templates, see [Work with templates](work-with-templates.md).
 
 ## Configure content security policy
 
-After publishing the updated template(s), the survey should fail to load on the relevant site pages since by default content security policy (CSP) won't allow calls to other services without additional configuration. To see the errors, open developer tools within a browser (F12), navigate to a page that has the survey to see the CSP errors in the console output. For more information, see [Content security policy](manage-csp.md).
+After publishing the updated template(s), the survey will likely fail to load on the relevant site pages, since by default content security policy (CSP) won't allow calls to other services without additional configuration. To see the CSP-related errors, open developer tools within a browser (F12) and navigate to a page that has the survey. The CSP-related errors will appear in the console output. 
 
 To configure content security policy in site builder to fix the errors, follow these steps. 
 
@@ -143,3 +143,19 @@ To configure content security policy in site builder to fix the errors, follow t
 1. Add `https://customervoice.microsoft.com/` to the **child-src** directive.
 1. Add `https://customervoice.microsoft.com/` to the **frame-src** directive.
 1. Add `https://mfpembedcdnmsit.azureedge.net` and ".azureedge.net" to the **img-src**  directive.
+
+For more information, see [Content security policy](manage-csp.md).
+
+## Additional resources
+
+[External script module](script-module.md)
+
+[Metatags](metatags-module.md)
+
+[Inline script module](script-module.md)
+
+[Content security policy](manage-csp.md)
+
+[Work with fragments](work-with-fragments.md)
+
+[Work with templates](work-with-templates.md)
