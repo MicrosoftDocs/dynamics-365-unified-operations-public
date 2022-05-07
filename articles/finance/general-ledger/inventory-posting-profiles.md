@@ -136,7 +136,7 @@ For more information about the inventory transactions, go to [Inventory transact
 
 To configure an inventory posting profile, follow these steps:
 
-1.  Open **Inventory management > Setup > Posting > Posting**.
+1.  Open **Inventory management** > **Setup** > **Posting** > **Posting**.
 2.  Select the tab for the type of transaction. For example, select **Purchase order**.
 3.  Select the radio button for the posting type. For example, select **Purchase expenditure for expense**.
 4.  Select **New**.
