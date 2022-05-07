@@ -15,7 +15,7 @@ ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 14511
 ms.assetid: 3e42ccb5-b9d7-4a70-8db9-4206d10fd433

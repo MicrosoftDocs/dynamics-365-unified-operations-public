@@ -3,7 +3,7 @@
 
 title: Tax engine applicability
 description: This topic provides information about Tax engine applicability.
-author: yijialuan
+author: EricWangChen
 ms.date: 10/07/2018
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.technology:
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, GTE, Applicability
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: pacheren
+ms.author: wangchen
 ms.search.validFrom: 2018-10-07
 ms.dyn365.ops.version: 7.3
 
