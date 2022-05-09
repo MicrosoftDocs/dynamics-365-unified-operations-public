@@ -15,13 +15,13 @@ ms.search.form: CAMDimensionMember, CAMAllocationBaseDetail, CAMFormulaAllocatio
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 223174
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -119,7 +119,7 @@ After cost element 10001 (Salaries) is applied as the allocation base, the resul
 **Journal**
 
 | Journal | Journal type                          | Fiscal calendar period | Year | Period   | Version                                                                 |
-|---------|---------------------------------------|------------------------|------|----------|-------------------------------------------------------------------------|
+|---------|---------------------------------------|------------------------|------|----------|---------------------------------------------|
 | 00001   | Cost distribution calculation journal | Fiscal                 | 2017 | Period 1 | Overhead calculation / 01-02-2017 11:51:00 PM / Ledger /2017 / Period 1 |
 
 **Cost object balance journal entries**
