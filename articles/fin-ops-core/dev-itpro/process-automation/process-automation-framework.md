@@ -2,7 +2,7 @@
 title: Process automation framework development
 description: This topic provides an overview of development that uses the process automation framework.
 author: RyanCCarlson2
-ms.date: 09/10/2020
+ms.date: 05/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -27,18 +27,17 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-Process automation enables simple scheduling of processes that will be run by the batch server. The process automation framework is a set of APIs that lets you implement process automation.
+Process automation enables simple scheduling of processes that will be run by the batch framework. The process automation framework allows you to build and implement your own process automations.
 
-You should use only the public APIs to implement process automation, and you should follow these guidelines:
+As with any customization, you should use the documented approach to extend the process automation framework and follow the general guidelines to avoid [intrusive customizations](../extensibility/intrusive-customizations.md). You should also follow these specific guidelines:
 
-- Don't select from, insert into, or directly reference the process automation tables.
-- Don't extend the framework or integrate your code with the classes.
-- Don't subscribe to table events such as insert, update, and delete. Finance and Operations apps skip most of those events.
-- If functionality that you require is missing, submit feature requests.
+- Don't integrate directly with the process automation framework tables.
+- Don't extend the framework or integrate directly with the framework classes.
+- Don't subscribe to table events on the framework tables. The process automation framework skips most of those events.
+- If functionality that you require is missing, submit an extensibility request.
 
-Microsoft plans to add features in the future. If you integrate too deeply with the process automation framework, your integration might break when those features are added.
-
-Some of the examples for the process automation framework aren't representative of release-quality code. As always, the expectation is that processes that are built by using the framework will follow all best practices and quality standards.
+> [!NOTE]
+> If you integrate with the process automation framework in an unsupported way, your integration might break because it did not follow the best practices.
 
 For more information about process automation, see [Process automation](../sysadmin/process-automation.md).
 
