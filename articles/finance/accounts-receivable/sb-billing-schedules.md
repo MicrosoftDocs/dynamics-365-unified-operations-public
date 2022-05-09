@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Billing schedule overview
+title: Create billing schedules
 description: This topic explains how to create, delete, and edit billing schedules.
 author: JodiChristiansen
 ms.date: 02/09/2022
@@ -16,7 +16,7 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: Core, Operations
+
 # ms.tgt_pltfrm: 
 ms.custom: 539093
 ms.search.region: Global
@@ -27,10 +27,9 @@ ms.dyn365.ops.version: 10.0.24
 
 ---
 
-# Billing schedule overview
+# Create billing schedules
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 On the **Billing schedule** page, you can create, delete, or edit billing schedules. You can also review the list of billing schedules. When you create a billing schedule, the default values for it are determined by the billing group that is associated with it. Additional information is set up on the **Recurring contract billing parameters** page.
 

@@ -1,14 +1,14 @@
 ---
 title: Integrate with third-party manufacturing execution systems
 description: This topic explains how you can integrate Microsoft Dynamics 365 Supply Chain Management with a third-party manufacturing execution system (MES).
-author: t-benebo
+author: johanhoffmann
 ms.date: 10/01/2021
 ms.topic: article
 ms.search.form:
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: benebotg
+ms.author: johanho
 ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
 ---
@@ -59,7 +59,9 @@ You can enable any or all of the following processes for integration.
 
 ## Monitor incoming messages
 
-To monitor the incoming messages to the system, open the **Manufacturing execution systems integration** page. There, you can view, process, and troubleshoot issues.
+To monitor the incoming messages to the system, open the **Manufacturing execution systems integration** page. There you can view, process, and troubleshoot issues.
+
+All messages for a specific production order are processed in the sequence they are received. However, messages for different production orders may not be processed in the received sequence because batch jobs are processed in parallel. In case of failure, the batch job will attempt to process each message three times before setting it to *Failed* status.
 
 ## Call the API
 
@@ -114,13 +116,13 @@ The following table shows the fields that each line in the `ReportFinishedLines`
 | `ReportedGoodQuantity` | Optional | Real|
 | `ReportedErrorCatchWeightQuantity` | Optional | Real |
 | `ReportedGoodCatchWeightQuantity` | Optional | Real |
-| `AcceptError` | Optional |Boolean |
+| `AcceptError` | Optional | Enum (Yes \| No) |
 | `ErrorCause` | Optional | Enum (None \| Material \| Machine \| OperatingStaff), extensible |
 | `ExecutedDateTime` | Optional | DateTime |
 | `ReportAsFinishedDate` | Optional | Date |
 | `AutomaticBOMConsumptionRule` | Optional | Enum (FlushingPrincip \| Always \| Never) |
 | `AutomaticRouteConsumptionRule` | Optional |Enum (RouteDependent \| Always \| Never) |
-| `RespectFlushingPrincipleDuringOverproduction` | Optional | Boolean |
+| `RespectFlushingPrincipleDuringOverproduction` | Optional | Enum (Yes \| No) |
 | `ProductionJournalNameId` | Optional | String |
 | `PickingListProductionJournalNameId` | Optional | String|
 | `RouteCardProductionJournalNameId` | Optional | String |
@@ -128,11 +130,11 @@ The following table shows the fields that each line in the `ReportFinishedLines`
 | `ToOperationNumber` | Optional | Integer|
 | `InventoryLotId` | Optional | String |
 | `BaseValue` | Optional | String |
-| `EndJob` | Optional | Boolean |
-| `EndPickingList` | Optional | Boolean |
-| `EndRouteCard` | Optional | Boolean |
-| `PostNow` | Optional | Boolean |
-| `AutoUpdate` | Optional | Boolean |
+| `EndJob` | Optional | Enum (Yes \| No) |
+| `EndPickingList` | Optional | Enum (Yes \| No) |
+| `EndRouteCard` | Optional | Enum (Yes \| No) |
+| `PostNow` | Optional | Enum (Yes \| No) |
+| `AutoUpdate` | Optional | Enum (Yes \| No) |
 | `ProductColorId` | Optional | String|
 | `ProductConfigurationId` | Optional | String |
 | `ProductSizeId` | Optional | String |
@@ -176,7 +178,7 @@ The following table shows the fields that each line in the `PickingListLines` se
 | `OperationNumber` | Optional | Integer |
 | `LineNumber` | Optional | Real |
 | `PositionNumber` | Optional | String |
-| `IsConsumptionEnded` | Optional | Boolean |
+| `IsConsumptionEnded` | Optional | Enum (Yes \| No) |
 | `ErrorCause` | Optional | Enum (None \| Material \| Machine \| OperatingStaff), extensible |
 | `InventoryLotId` | Optional | String |
 
@@ -212,9 +214,9 @@ The following table shows the fields that each line in the `RouteCardLines` sect
 | `ConsumptionDate` | Optional | Date |
 | `TaskType` | Optional | Enum (QueueBefore \| Setup \| Process \| Overlap \| Transport \| QueueAfter \| Burden) |
 | `ErrorCause` | Optional | Enum (None \| Material \| Machine \| OperatingStaff), extensible |
-| `OperationCompleted` | Optional | Boolean |
-| `BOMConsumption` | Optional | Boolean |
-| `ReportAsFinished` | Optional | Boolean |
+| `OperationCompleted` | Optional | Enum (Yes \| No) |
+| `BOMConsumption` | Optional | Enum (Yes \| No) |
+| `ReportAsFinished` | Optional | Enum (Yes \| No) |
 
 ### End production order message
 
@@ -225,9 +227,13 @@ For the *end production order* message, the `_messageType` value is `ProdProduct
 | `ProductionOrderNumber` | Mandatory | String |
 | `ExecutedDateTime` | Optional | DateTime |
 | `EndedDate` | Optional | Date |
-| `UseTimeAndAttendanceCost` | Optional | Boolean |
-| `AutoReportAsFinished` | Optional | Boolean |
-| `AutoUpdate` | Optional | Boolean |
+| `UseTimeAndAttendanceCost` | Optional | Enum (Yes \| No) |
+| `AutoReportAsFinished` | Optional | Enum (Yes \| No) |
+| `AutoUpdate` | Optional | Enum (Yes \| No) |
+
+## Other production information
+
+The messages support actions or events that happen on the shop floor. They are processed using the MES integration framework described in this topic. The design assumes that other reference information to be shared with the MES (such as product-related information, or the bill of materials or route (with its specific setup and configuration times) used in a specific production order) will be retrieved from the system using [data entities](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#data-entities) via file transfer or OData.
 
 ## Receive feedback about the state of a message
 

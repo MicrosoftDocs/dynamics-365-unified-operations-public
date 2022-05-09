@@ -3,7 +3,7 @@
 
 title: Throttling in Human Resources FAQ
 description: This topic provides answers to some frequently asked questions (FAQs) about throttling for Open Data Protocol (OData) and custom service-based integrations in Dynamics 365 Human Resources.
-author: andreabichsel
+author: twheeloc
 ms.date: 01/22/2021
 ms.topic: article
 ms.prod: 
@@ -15,14 +15,14 @@ ms.search.form:
 # ROBOTS: 
 audience: Admin
 # ms.devlang: 
-# ms.search.scope: Human Resources
-ms.search.scope: Human Resources
+# 
+
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2021-01-22
 ms.dyn365.ops.version: Human Resources
 

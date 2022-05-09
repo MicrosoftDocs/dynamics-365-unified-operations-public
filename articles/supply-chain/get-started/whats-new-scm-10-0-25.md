@@ -1,8 +1,8 @@
 ---
-title: Preview of Dynamics 365 Supply Chain Management 10.0.25 (April 2022)
+title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.25 (April 2022)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.25. 
 author: kamaybac
-ms.date: 02/01/2022
+ms.date: 03/14/2022
 ms.topic: article
 # ms.search.form: [Operations AOT form name to tie this topic to]
 audience: Application User
@@ -13,12 +13,11 @@ ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.25
 ---
 
-# Preview of Dynamics 365 Supply Chain Management 10.0.25 (April 2022)
+# What's new or changed in Dynamics 365 Supply Chain Management 10.0.25 (April 2022)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management preview of version 10.0.25. This version has a build number of 10.0.1149 and is available as follows:
+This topic lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management version 10.0.25. This version has a build number of 10.0.1149 and is available as follows:
 
 - **Preview of release:** February 2022
 - **General availability of release (self-update):** March 2022
@@ -30,11 +29,12 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
-| Inventory&nbsp;and&nbsp;logistics | Hazardous materials enhancements | These enhancements build on existing hazardous materials functionality to better help companies stay in compliance with local regulations when transporting hazardous materials across different geographies. <!-- KFM: Update to 2022w1 link when published -->| Feature management:<br>*Hazardous materials enhancements* |
-| Inventory&nbsp;and&nbsp;logistics | Packing work for packing stations | This feature greatly improves the flexibility and agility of your packing and shipping operations. During the packing process, warehouse workers can now pack and ship individual parcels that are related to same shipment and load. Order lines that are part of the same shipment don't necessarily need to be shipped together if some items are ready for shipment right away. A single order can be packed and shipped in multiple parcels at different shipping times, thereby reducing wait times and adding agility.<!-- KFM: Update to 2022w1 link when published --> | Feature management:<br>*Packing work for packing stations* |
-| Inventory&nbsp;and&nbsp;logistics | [Scan barcodes in the warehouse using GS1 format standards](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) <!-- KFM: Update to 2022w1 link when published --> | [GS1 bar codes and QR codes](../warehousing/gs1-barcodes.md) | Feature management:<br>*Scan GS1 barcodes* |
-| Manufacturing | [Material consumption and reservations in the production floor execution interface](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/material-consumption-reservations-production-floor-execution-interface) | [How workers use the production floor execution interface](../production-control/production-floor-execution-use.md) | Feature management:<br>*(Preview) Register material consumption on the production floor execution interface (WMS-enabled)* |
+| Inventory&nbsp;and&nbsp;logistics | [Hazardous materials enhancements](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/hazardous-materials-enhancements) | Coming soon | Feature management:<br>*Hazardous materials enhancements* |
+| Inventory&nbsp;and&nbsp;logistics | [Packing work for packing stations](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/packing-work-packing-stations) | Coming soon | Feature management:<br>*Packing work for packing stations* |
+| Inventory&nbsp;and&nbsp;logistics | [Scan barcodes in the warehouse using GS1 format standards](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | [GS1 bar codes and QR codes](../warehousing/gs1-barcodes.md) | Feature management:<br>*Scan GS1 barcodes* |
+| Manufacturing | [Material consumption and reservations in the production floor execution interface](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/material-consumption-reservations-production-floor-execution-interface) | [How workers use the production floor execution interface](../production-control/production-floor-execution-use.md) | Feature management:<br>*(Preview) Register material consumption on the production floor execution interface (non-WMS)*<br><br>And/or:<br><br>Feature management:<br>*(Preview) Register material consumption on the production floor execution interface (WMS-enabled)* |
 | Manufacturing | [Register material consumption on scale units](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/register-material-consumption-scale-units) | [Manufacturing execution workloads for cloud and edge scale units](../cloud-edge/cloud-edge-workload-manufacturing.md) | Feature management:<br>*Register material consumption on the mobile app on a scale unit* |
+| Planning | [Planning Optimization centralized calendar maintenance](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-centralized-calendar-maintenance) | [Calendars and master planning](../master-planning/supply-chain-calendars-master-planning.md) | Enabled by default |
 | Planning | [Planning Optimization suggestions to optimize existing supply](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-suggestions-optimize-existing-supply) | [Action messages](../master-planning/action-messages.md) | Enabled by default |
 | Planning | Planned orders simplified | [Planned orders simplified](../master-planning/planning-optimization/planned-orders-simplified.md ) | Feature management:<br>*Planned orders simplified* |
 

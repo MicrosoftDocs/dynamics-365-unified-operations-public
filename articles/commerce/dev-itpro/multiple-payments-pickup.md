@@ -7,7 +7,7 @@ author: BrianShook
 ms.date: 12/03/2021
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+
 ms.technology: 
 
 # optional metadata
@@ -16,7 +16,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgriffin
-ms.search.scope: Retail, Core, Operations
+
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 

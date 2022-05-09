@@ -1,13 +1,13 @@
 ---
 title: Planning Optimization release process and release history
 description: This topic provides information about the release process and release history for Planning Optimization.
-author: ChristianRytt
+author: t-benebo
 ms.date: 09/21/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.21
 ---
@@ -28,6 +28,7 @@ Because notifications aren't shown when Planning Optimization is updated in your
 
 | Changes | Feature management details | Release dates |
 |---|---|---|
+| <p>General performance, quality, and stability improvements.<p>[Planning Optimization centralized calendar maintenance](../supply-chain-calendars-master-planning.md)<p>[Planning Optimization suggestions to optimize existing supply](../action-messages.md)<p>[Planning Optimization support for subcontracting](../../production-control/manage-subcontract-work-production.md) | No feature management is required. | March 7-11, 2022 |
 | <p>Added planning priority support for production orders. | Available with version 10.0.25 as part of the feature named *Priority driven MRP support for Planning Optimization*. | November 12-18, 2021 |
 | <p>General performance, quality, and stability improvements. | No feature management is required. | November 12-18, 2021 |
 | <p>Added support for process time calculation formulas, production route with overlap, and production operation number on requirement transactions.</p><p>Enhanced error messages for production scheduling related to timeout, capacity could not be found, and cyclic route.</p><p>Improved consistency when calculating receipt dates and issue dates on both planned orders and firmed orders.</p><p>General performance, quality, and stability improvements. | Feature name: *Infinite capacity scheduling for Planning Optimization* | October 22-27, 2021 |

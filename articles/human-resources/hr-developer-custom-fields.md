@@ -3,7 +3,7 @@
 
 title: Custom fields
 description: You can add custom fields to pages in Dynamics 365 Human Resources. 
-author: andreabichsel
+author: twheeloc
 ms.date: 03/10/2020
 ms.topic: article
 ms.prod: 
@@ -15,13 +15,13 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 

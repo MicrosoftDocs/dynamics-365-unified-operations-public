@@ -4,7 +4,7 @@
 title: Data mart resets FAQ
 description: This topic provides answers to some frequently asked questions about data mart resets.
 author: jinniew
-ms.date: 02/14/2022
+ms.date: 03/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -14,8 +14,8 @@ ms.technology:
 ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+ms.reviewer: kfend
+
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
@@ -53,10 +53,14 @@ If one or more of the following statements apply to your situation, your organiz
 Here are some of the circumstances where we don't recommend that you reset the data mart:
 
 - You're experiencing data integration performance issues.
+- Your Financial Reporter integration isn't enabled. 
+
+    - This means that General Ledger data is no longer being synchronized to your Financial Reporting datamart. Your Financial Reporter may not be getting up-to-date numbers for your financial reports. This typically occurs if you have not use Financial Reporter for a long time.
+    - You will be prompted to enable integration by resetting the data mart. You can proceed by selecting **Yes**. You may also choose to reset the data mart at a later time. After integration is enabled, your general ledger data is synchronized in Financial Reporter again. 
 - You have a recurring reset pattern for any of the following reasons:
 
     - **Missing or unexpected data in the report** – If you notice that data is missing, open a support ticket with Microsoft to review your report format and possible data synchronization issues.
-    - **Stuck integration state**
+    - **Stuck integration state** - If you notice the integration status is stuck in running, this may be due to a large volume of transactions in the system. This state will resolve itself. However, if you notice the intregration status is stuck for more than four hours, open open a support ticket with Microsoft. 
    
 ## If I reset the data mart, will I lose reports that I've already designed?
 

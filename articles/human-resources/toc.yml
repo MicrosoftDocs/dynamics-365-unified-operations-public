@@ -4,106 +4,60 @@
     items:
     - name: Dynamics 365 Human Resources home page
       href: index.md  
-    - name: Infrastructure release 10.0.25
-      href: hr-infrastructure.md
-    - name: What's new or changed in Dynamics 365 Human Resources merged infrastructure
-      href: ./get-started/hr-whats-new-changed-10-0-25.md
+    - name: What's new or changed
+      items:
+      - name: What's new or changed in Finance and Operations apps
+        href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
+      - name: What's new or changed in Human Resources
+        items:
+        - name: Human Resourcse 10.0.27 (merged infrastructure)
+          href: ./get-started/hr-whats-new-changed-10-0-27.md
+        - name: Human Resources 10.0.26 (merged infrastructure)
+          href: ./get-started/hr-whats-new-changed-10-0-26.md
+        - name: Human Resources 10.0.25 (merged infrastructure)
+          href: ./get-started/hr-whats-new-changed-10-0-25.md
+        - name: What's new in Dynamics 365 Human Resources (stand-alone)
+          items: 
+          - name: What's new in Dynamics 365 Human Resources (stand-alone) archives 2021
+            href: hr-admin-whats-new.md    
+          - name: November 29, 2021
+            href: hr-whats-new-2021-11-29.md
+          - name: October 5, 2021
+            href: hr-whats-new-2021-10-04.md
+          - name: September 20, 2021
+            href: hr-whats-new-2021-09-20.md
+          - name: September 6, 2021
+            href: hr-whats-new-2021-09-06.md
+          - name: August 23, 2021
+            href: hr-whats-new-2021-08-23.md
+          - name: August 9, 2021
+            href: hr-whats-new-2021-08-09.md
+          - name: July 26, 2021
+            href: hr-whats-new-2021-07-26.md
+          - name: July 12, 2021
+            href: hr-whats-new-2021-07-12.md
+          - name: June 22, 2021
+            href: hr-whats-new-2021-06-22.md
+          - name: May 20, 2021
+            href: hr-whats-new-2021-05-20.md
+          - name: May 3, 2021
+            href: hr-whats-new-2021-05-03.md
+          - name: April 19, 2021
+            href: hr-whats-new-2021-04-19.md
+          - name: April 5, 2021
+            href: hr-whats-new-2021-04-05.md
+          - name: March 22, 2021
+            href: hr-whats-new-2021-03-22.md
+          - name: March 8, 2021 
+            href: hr-whats-new-2021-03-08.md
+          - name: February 22, 2021
+            href: hr-whats-new-2021-02-22.md
+          - name: January 28, 2021
+            href: hr-whats-new-2021-01-28.md
+          - name: January 21, 2021
+            href: hr-whats-new-2021-01-21.md
     - name: Get started   
       items:
-      - name: What's new
-        href: hr-admin-whats-new.md    
-      - name: What's new or changed archives 2021
-        items: 
-        - name: November 29, 2021
-          href: hr-whats-new-2021-11-29.md
-        - name: October 5, 2021
-          href: hr-whats-new-2021-10-04.md
-        - name: September 20, 2021
-          href: hr-whats-new-2021-09-20.md
-        - name: September 6, 2021
-          href: hr-whats-new-2021-09-06.md
-        - name: August 23, 2021
-          href: hr-whats-new-2021-08-23.md
-        - name: August 9, 2021
-          href: hr-whats-new-2021-08-09.md
-        - name: July 26, 2021
-          href: hr-whats-new-2021-07-26.md
-        - name: July 12, 2021
-          href: hr-whats-new-2021-07-12.md
-        - name: June 22, 2021
-          href: hr-whats-new-2021-06-22.md
-        - name: May 20, 2021
-          href: hr-whats-new-2021-05-20.md
-        - name: May 3, 2021
-          href: hr-whats-new-2021-05-03.md
-        - name: April 19, 2021
-          href: hr-whats-new-2021-04-19.md
-        - name: April 5, 2021
-          href: hr-whats-new-2021-04-05.md
-        - name: March 22, 2021
-          href: hr-whats-new-2021-03-22.md
-        - name: March 8, 2021 
-          href: hr-whats-new-2021-03-08.md
-        - name: February 22, 2021
-          href: hr-whats-new-2021-02-22.md
-        - name: January 28, 2021
-          href: hr-whats-new-2021-01-28.md
-        - name: January 21, 2021
-          href: hr-whats-new-2021-01-21.md
-      - name: What's new archives 2020
-        items:
-        - name: December 2, 2020
-          href: hr-whats-new-2020-12-02.md
-        - name: October 22, 2020
-          href: hr-whats-new-2020-10-22.md
-        - name: October 6, 2020
-          href: hr-whats-new-2020-10-06.md
-        - name: September 26, 2020
-          href: hr-whats-new-2020-09-26.md
-        - name: September 16, 2020
-          href: hr-whats-new-2020-09-16.md
-        - name: September 3, 2020
-          href: hr-whats-new-2020-09-03.md
-        - name: August 20, 2020
-          href: hr-whats-new-2020-08-20.md
-        - name: August 6, 2020
-          href: hr-whats-new-2020-08-06.md
-        - name: July 23, 2020
-          href: hr-whats-new-2020-07-23.md
-        - name: July 8, 2020
-          href: hr-whats-new-2020-07-08.md
-        - name: June 25, 2020
-          href: hr-whats-new-2020-06-23.md
-        - name: June 11, 2020
-          href: hr-whats-new-2020-06-11.md
-        - name: May 28, 2020
-          href: hr-whats-new-2020-05-28.md
-        - name: May 14, 2020
-          href: hr-whats-new-2020-05-14.md
-        - name: May 1, 2020
-          href: hr-whats-new-2020-05-01.md
-        - name: April 13, 2020
-          href: hr-whats-new-2020-04-13.md
-        - name: April 3, 2020
-          href: hr-whats-new-2020-04-03.md
-        - name: March 24, 2020
-          href: hr-whats-new-2020-03-24.md
-        - name: March 19, 2020
-          href: hr-whats-new-2020-03-19.md
-        - name: March 10, 2020
-          href: hr-whats-new-2020-03-10.md
-        - name: March 3, 2020
-          href: hr-whats-new-2020-03-03.md
-        - name: February 25, 2020
-          href: hr-whats-new-2020-02-25.md
-        - name: February 18, 2020
-          href: hr-whats-new-2020-02-18.md
-        - name: February 12, 2020
-          href: hr-whats-new-2020-02-12.md
-        - name: February 7, 2020
-          href: hr-whats-new-2020-02-07.md
-        - name: February 3, 2020
-          href: hr-whats-new-2020-02-03.md
       - name: Overview
         href: hr-admin-overview.md
       - name: System requirements
@@ -498,8 +452,6 @@
         href: hr-personnel-positions.md
       - name: Create a working times calendar
         href: hr-personnel-create-working-time-calendar.md
-      - name: Recruit job candidates
-        href: hr-personnel-recruit.md
       - name: Personnel actions FAQ
         href: hr-personnel-actions-faq.md
       - name: Use workflows to manage employee information
@@ -534,26 +486,34 @@
         href: hr-personnel-set-up-injury-illness-information.md
       - name: Maintain employee injury and illness information
         href: hr-personnel-maintain-employee-injury-illness-information.md
-      - name: Recruit candidates
+      - name: Recruiting
         items:
-        - name: Manage recruiting processes
-          href: ../fin-ops-core/fin-ops/hr/manage-recruiting-process.md
-        - name: Mass hire projects
-          href: ../human-resources/hr-personnel-mass-hire-projects.md
-        - name: Create mass hire projects
-          href: ../human-resources/hr-personnel-create-mass-hire-project.md
-        - name: Manually enter applicant and application data
-          href: ../fin-ops-core/fin-ops/hr/tasks/enter-applicant-application-data-manually.md
-        - name: Develop and open job requisitions
-          href: ../fin-ops-core/fin-ops/hr/tasks/develop-open-job-requisition.md
-        - name: Set up positions
-          href: ../human-resources/hr-personnel-set-up-positions.md
-        - name: Hire candidates through recruitment
-          href: ../fin-ops-core/fin-ops/hr/tasks/hire-candidate-through-recruiting.md
-        - name: Hire an existing employees through recruitment
-          href: ../fin-ops-core/fin-ops/hr/tasks/hire-existing-employee-through-recruiting.md
-        - name: Identify and deploy candidate selection tools
-          href: ../fin-ops-core/fin-ops/hr/tasks/identify-deploy-candidate-selection-tools.md   
+        - name: Overview
+          href: ../human-resources/hr-recruit-overview.md
+        - name: Recruiting requests
+          items:
+          - name: Recruit job candidates
+            href: hr-personnel-recruit.md
+        - name: Recruiting projects
+          items:
+          - name: Manage recruiting project process
+            href: ../fin-ops-core/fin-ops/hr/manage-recruiting-process.md
+          - name: Manually enter applicant and application data
+            href: ../fin-ops-core/fin-ops/hr/tasks/enter-applicant-application-data-manually.md
+          - name: Develop and open job requisitions
+            href: ../fin-ops-core/fin-ops/hr/tasks/develop-open-job-requisition.md
+          - name: Set up positions
+            href: ../human-resources/hr-personnel-set-up-positions.md
+          - name: Hire candidates through recruitment
+            href: ../fin-ops-core/fin-ops/hr/tasks/hire-candidate-through-recruiting.md
+          - name: Hire an existing employees through recruitment
+            href: ../fin-ops-core/fin-ops/hr/tasks/hire-existing-employee-through-recruiting.md
+          - name: Identify and deploy candidate selection tools
+            href: ../fin-ops-core/fin-ops/hr/tasks/identify-deploy-candidate-selection-tools.md   
+          - name: Mass hire projects
+            href: ../human-resources/hr-personnel-mass-hire-projects.md
+          - name: Create mass hire projects
+            href: ../human-resources/hr-personnel-create-mass-hire-project.md
     - name: Task management
       href: hr-task-mgmt.md
     - name: Leave and absence
@@ -846,6 +806,8 @@
         href: hr-admin-integration-common-data-service-virtual-entities.md
       - name: Configure integration with Finance
         href: hr-admin-integration-finance.md
+      - name: Create links from Human resources to another environment
+        href: configure-links.md
       - name: Configure integration with Dayforce
         href: hr-admin-integration-dayforce.md
       - name: Create a recurring data export app

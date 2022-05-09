@@ -4,7 +4,7 @@
 
 title: Manage employee leave
 description: Manage employee leave in Dynamics 365 Human Resources.
-author: andreabichsel
+author: twheeloc
 ms.date: 07/16/2021
 ms.topic: article
 ms.prod: 
@@ -16,7 +16,7 @@ ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -30,8 +30,9 @@ ms.dyn365.ops.version: Human Resources
 
 # Manage employee leave
 
+>[!Important]
+>The functionality noted in this topic is currently available for customers on the stand-alone Dynamics 365 Human Resources. Some or all of the functionality will be available as part of a future release on the Finance infrastructure after Finance release 10.0.26.
 
-[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

@@ -15,7 +15,7 @@ ms.search.form: SystemAdministrationWorkspaceForm, FeatureManagementWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -34,7 +34,6 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Every two weeks, we provide a new release for Microsoft Dynamics 365 Human Resources. The topics listed here detail the changes made with each release.
 
 For more information about upcoming features or the update process for Human Resources, see the following articles: 
 

@@ -4,7 +4,7 @@
 title: Dynamics 365 Commerce online SDK FAQ
 description: This topic summarizes answers to questions frequently asked by users of the Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
-ms.date: 02/08/2022
+ms.date: 04/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -28,8 +28,17 @@ ms.dyn365.ops.version: Release 10.0.5
 # Dynamics 365 Commerce online SDK FAQ
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 This topic summarizes answers to questions frequently asked by users of the Dynamics 365 Commerce online software development kit (SDK).
+
+### Why does my e-commerce extension package fail to build due to an incompatible version of Node.js?
+
+If you updated to version 1.37 or higher of the online SDK package, you may experience a build break if you are using Node version 12.x since version 1.37 has been updated to support Node.js version 16.x. You will see the following error message:
+
+`The engine "node" is incompatible with this module. Expected version ">=16.x.x". Got "12.22.6".` 
+
+To resolve this issue you must update Node.js to version 16.x on local build environments and any automated build environments such as Azure DevOps pipelines. 
 
 ### How do I resolve heap out of memory errors?
 
@@ -57,9 +66,9 @@ The default memory setting should be sufficient for most customization scenarios
 "build": "SET NODE_OPTIONS=--max_old_space_size=4096 && yarn msdyn365b build --use-eslint",
 ```
 
-### Upload of my e-commerce packages fails, and I receive the following error message: "The e-commerce package cannot be deployed due to an outdated online SDK. Please create a new package and retry deployment." Why?
+### During package upload, I receive this error message: "The e-commerce package has an outdated online SDK. Please create a new package and retry." Or, during package deployment, I receive this error message: "The e-commerce package cannot be deployed due to an outdated online SDK. Please create a new package and retry deployment." Why?
 
-To help decrease deployment time during package deployment, uploaded packages are pre-built while running the **yarn msdyn365 pack** [command-line interface (CLI) command](cli-command-reference.md#pack) using the latest online SDK. If package upload fails, and you receive that error message, rebuild your package and redeploy it by using the **yarn msdyn365 pack** command. This command will force the latest online SDK to be pulled into the package and then redeploy the package.
+To help decrease deployment time during package deployment, uploaded packages are prebuilt while the **yarn msdyn365 pack** [command-line interface (CLI) command](cli-command-reference.md#pack) is run by using the latest online SDK. If package upload fails, and you receive one of the error messages, update to the latest SDK by using the **[yarn msdyn365 update-versions sdk](cli-command-reference.md#update-versions)** CLI command. In this way, you ensure that the yarn.lock file is deleted before you run yarn to pull down the latest online SDK. You can then rebuild the package by using the **yarn msdyn365 pack** command, and then redeploy the new package.
 
 ### Can I opt in to using Webpack 5 to bundle the Commerce application?
 

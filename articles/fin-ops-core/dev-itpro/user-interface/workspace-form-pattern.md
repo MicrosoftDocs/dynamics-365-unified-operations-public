@@ -4,7 +4,7 @@
 title: Workspace form pattern
 description: This topic discusses workspace form patterns. Workspaces are the primary way that users navigate to tasks and specific pages.
 author: jasongre
-ms.date: 02/08/2022
+ms.date: 03/03/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,7 +30,6 @@ ms.dyn365.ops.version: AX 7.0.0
 # Workspace form pattern
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic discusses workspace form patterns. Workspaces are the primary way that users navigate to tasks and specific pages. A workspace should be created for every significant business activity that is supported.  
 
@@ -181,6 +180,7 @@ Any form extension that adds content to a workspace might also require minor adj
 After you've completed the metadata migration to a vertical workspace, you will want to do a fit and finish review of the workspace to optimize it for a vertical orientation. Here are the primary areas of focus:
 
 - **Tiles** – In the new workspace layout, tiles are laid out horizontally from left to right and will wrap automatically when there isn't enough space for another tile. This layout means that a mixture of tiles (or other elements) of various sizes might result in less than ideal visuals. Therefore, we recommend that all your tiles have the same height. Ideally, they all should be the same size.
+    -  Starting in version 10.0.26, the **Allow users to select and change tile sizes** feature enables users to modify the size of non-KPI tiles to one of four available sizes via personalization. Users adding new tiles to a workspace will also be able to choose the desired tile size from the **Configure tile** dialog.    
 - **Simple lists** – Because list grids don't use the full width of the page, they aren't ideal for a vertical layout. When list grids appear by themselves in the list section, you should consider switching them to either a tabular grid (in which case you might have to add more columns to the grid) or a card list (which can be laid out horizontally and make more optimal use of the page space).
 - **Card lists** – Card lists can be adjusted so that they flow horizontally and make better use of the page space in a vertical layout. To change a card list so that it flows horizontally and wraps to a new line as required, make the following adjustments to the form that includes the card list:
 

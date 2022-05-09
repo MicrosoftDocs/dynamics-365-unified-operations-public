@@ -4,7 +4,7 @@
 title: Report 340 for Spain
 description: This topic provides information about how to set up and generate Report 340 for Spain.
 author: anasyash
-ms.date: 07/23/2020
+ms.date: 05/02/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom: 
 ms.search.region: Spain
 # ms.search.industry: 
-ms.author: epodkolz
+ms.author: anasyash
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -86,8 +86,8 @@ For more information, see [Download Electronic reporting configurations from Lif
 | Start numbering (in the **Manual numbering** section) | Enter the first line number.                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | Template   (in the **Manual numbering** section)        | Enter the template for the line   number. For example, enter #####.                                                                                                                                                                                                                                                                                                                                                                                                       |
 | Replacement   declaration                               | Set this option to **Yes** to   replace the previous declaration.                                                                                                                                                                                                                                                                                                                                                                                                         |
-| Rprevious   declaration number                          | Enter the 13-digit number of the   previous declaration. This field can be edited only if the **Replacement   declaration** option is set to **Yes**.                                                                                                                                                                                                                                                                                                                     |
-| Minimum   payment account in cash                       | Enter the minimum cash payment   amount that should be reported in the declaration.                                                                                                                                                                                                                                                                                                                                                                                       |
+| Previous   declaration number                          | Enter the 13-digit number of the   previous declaration. This field can be edited only if the **Replacement   declaration** option is set to **Yes**.                                                                                                                                                                                                                                                                                                                     |
+| Minimum   payment account in cash                       | Enter the minimum cash payment   amount that should be reported in the declaration. If you don't need to include cash payments in the report, enter 9999999999 in this field.                                                                                                                                                                                                                                                                                                                                                                                      |
 
 10.  Select **OK** to create a line on the **Spanish VAT reports** page, based on the criteria that you defined in the previous step.
 11.  Review the line that is created.
@@ -144,8 +144,8 @@ For more information, see [Download Electronic reporting configurations from Lif
 > [!NOTE]
 > For codes that have a negative tax percentage, the **Allow negative sales tax percentage** option on the **Calculation** FastTab must be set to **Yes**.
 
-2.  Set up sales tax. For instructions, see [Sales tax overview](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/finance/general-ledger/indirect-taxes-overview.md).
-3.  Set up intra-community VAT for EU purchases. For instructions, see [Intra-community VAT for Spain](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/finance/localizations/emea-esp-intra-community-vat.md).
+2.  Set up sales tax. For instructions, see [Sales tax overview](../general-ledger/indirect-taxes-overview.md).
+3.  Set up intra-community VAT for EU purchases. For instructions, see [Intra-community VAT for Spain](emea-esp-intra-community-vat.md).
 
 4.  Post the following transactions.
 

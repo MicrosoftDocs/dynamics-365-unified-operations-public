@@ -8,7 +8,7 @@ manager: annbe
 ms.date: 08/10/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
+
 ms.technology: 
 
 # optional metadata
@@ -38,7 +38,7 @@ A fiscal archive can be exported from a closed period grand total journal. (For 
 
 You can verify the integrity of the fiscal archive and its data by using the [Fiscal archive integrity verification tool](#fiscal-archive-integrity-verification-tool).
 
-The XML format of the fiscal archive is implemented by using [Electronic reporting (ER)](../../dev-itpro/analytics/general-electronic-reporting.md). For information about how to import and apply the ER configurations that are required to export fiscal archives, see [Configure the archive export format](./emea-fra-cash-registers.md#configure-the-archive-export-format).
+The XML format of the fiscal archive is implemented by using [Electronic reporting (ER)](/dynamics365/fin-ops-core/dev-itpro/analytics/general-electronic-reporting). For information about how to import and apply the ER configurations that are required to export fiscal archives, see [Configure the archive export format](./emea-fra-cash-registers.md#configure-the-archive-export-format).
 
 ## Fiscal archive structure
 

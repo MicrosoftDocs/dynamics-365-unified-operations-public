@@ -3,7 +3,7 @@
 
 title: Update process
 description: Microsoft Dynamics 365 Human Resources is a true software as a service (SaaS) that provides continuous, touchless service updates for application and platform changes.
-author: andreabichsel
+author: twheeloc
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: 
@@ -15,13 +15,13 @@ ms.search.form: SystemAdministrationWorkspaceForm
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
 
@@ -43,7 +43,7 @@ Updates are released on a regular cadence to all environments. Human Resources i
 
 Human Resources updates are applied to all environments automatically. Human Resources provides two types of releases:
 
-- **Service updates**: Updates occur every two weeks that include bug fixes and new features. Service updates also include applicable Platform updates when they release. To get an idea of when Platform updates are released, see [Table 3: Platform releases](../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md#table-3-platform-releases). Biweekly updates have a staged global rollout across regions. For more information about biweekly updates, see [What's new or changed in Dynamics 365 Human Resources](hr-admin-whats-new.md).
+- **Service updates**: Updates occur every two weeks that include bug fixes and new features. Service updates also include applicable platform updates when they release. For more information about platform releases, see [What's new or changed in Platform updates](../fin-ops-core/dev-itpro/get-started/whats-new-home-page.md). Biweekly updates have a staged global rollout across regions. For more information about biweekly updates, see [What's new or changed in Dynamics 365 Human Resources](hr-admin-whats-new.md).
 
     All supported data centers update every two weeks, unless otherwise noted. US, Australia, Europe, UK, Asia, and Canada regions are included in biweekly updates. 
 

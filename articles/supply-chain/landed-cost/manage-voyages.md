@@ -3,7 +3,7 @@
 
 title: Manage voyages
 description: This topic describes how to work with voyages. A voyage typically represents a vessel. However, depending on your practices and procedures, it can represent a vendor, a purchase order, or some other item that makes sense for your organization.
-author: sherry-zheng
+author: Weijiesa
 ms.date: 12/14/2020
 ms.topic: article
 ms.prod: 
@@ -15,12 +15,12 @@ ms.search.form: ITMTableListPage, ITMTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
+
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: chuzheng
+ms.author: weijiesa
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
 ---
@@ -70,9 +70,9 @@ The following table describes the actions that are available on the **Manage** t
 | In transit | Update the **Voyage status** field to the in-transit status that is established on the **[Landed cost parameters](landed-cost-parameters.md)** page. There is no further logic on this process. A voyage can also be automatically updated to the in-transit status, based on settings in the [Tracking control center](delivery-information-setup.md).
 | Ready for costing | Update the **Voyage status** field to the ready for costing status that is established on the **[Landed cost parameters](landed-cost-parameters.md)** page. A voyage can be costed when all the invoices have been processed (both stock invoices and voyage cost invoices) and the goods have been received. If the estimated costs that are associated with a voyage haven't been costed, an error occurs when you try to process the costing of a voyage. |
 | Costed | Clean up any costing irregularities after an invoice exists for all purchase orders and voyage costs. When you select this button, the **Voyage update - Costed** dialog box appears. There, you can select to post on the standard financial date or specify a posting date, and then run the action. You can rerun the action as many times as you want. You can also use the **Voyage update - Costed** dialog box to establish a schedule to run the action as a periodic task (batch job). We recommend that you regularly run the action by setting it up as a batch job. |
-| Post receipts list | Post a receipt list for all purchase order lines in the voyage. If multi-company voyages are used, a new receipt list posting dialog box is opened for each company and must be processed in each legal entity. |
-| Post product receipt | Post a product receipt for all purchase order lines in the voyage. The product receipt process for the purchase order lines that are associated with a voyage will be used only if the goods will **not** go through goods-in-transit processing. If the goods will go through goods-in-transit processing, you receive an error when you try to post the product receipt for a purchase order line. If multi-company voyages are used, a new delivery note posting dialog box is opened for each company. |
-| Post invoice | Post an invoice for all purchase order lines in the voyage. If the goods on the voyage will go through goods-in-transit processing, the purchase order lines will be invoiced before the receiving process is done. When the original purchase order is invoiced, the goods-in-transit orders that are associated with the original purchase order lines will be created. Those orders can then be received by the warehouse. If multi-company shipments are used, a new invoice posting dialog box is opened for each company. |
+| Post receipts list | Post a receipt list for all purchase order lines in the voyage.  |
+| Post product receipt | Post a product receipt for all purchase order lines in the voyage. The product receipt process for the purchase order lines that are associated with a voyage will be used only if the goods will **not** go through goods-in-transit processing. If the goods will go through goods-in-transit processing, you receive an error when you try to post the product receipt for a purchase order line.  |
+| Post invoice | Post an invoice for all purchase order lines in the voyage. If the goods on the voyage will go through goods-in-transit processing, the purchase order lines will be invoiced before the receiving process is done. When the original purchase order is invoiced, the goods-in-transit orders that are associated with the original purchase order lines will be created. Those orders can then be received by the warehouse.  |
 | Ship transfer order | Post a transfer order voyage for all transfer order lines in the voyage. When this button is selected, only transfer orders will be available for update. |
 | Receive transfer order | Post a transfer order receipt for all transfer order lines in the voyage. |
 | Receive goods in transit | Receive all order lines that are in transit in the voyage. This button is one of three options that are available for receiving goods in transit on a voyage. (The other two options are the **Create arrival journal** button that is described later in this table, and the Warehouse Management mobile app.) This option is the simplest option, and will process the goods in transit out of the goods-in-transit warehouse and into the final destination warehouse. If you want more control over the process, use the arrival journal or a mobile device to process the receipt of goods. |
@@ -88,7 +88,7 @@ The following table describes the buttons that are available on the **General** 
 
 | Button | Description |
 |---|---|
-| Receipts list | Open a list of product receipts for all purchase order lines in the voyage. If multi-company voyages are used, a new receipts list is opened for each company. If no product receipt lists have been processed, this button is unavailable. |
+| Receipts list | Open a list of product receipts for all purchase order lines in the voyage.  If no product receipt lists have been processed, this button is unavailable. |
 | Product receipt | Open the product receipt record for the purchase order lines that are associated with the voyage, if that record is used. If no product receipts have been posted, this button is unavailable. The product receipt process won't be used if you're using goods-in-transit processing. |
 | Item arrival | Open the item arrival journal, if it's used. |
 | Tracking | Open the **Inbound tracking** page, where you can update the expected arrival date of goods in a shipping container and a voyage, and subsequently update the expected delivery dates of purchase order lines. |

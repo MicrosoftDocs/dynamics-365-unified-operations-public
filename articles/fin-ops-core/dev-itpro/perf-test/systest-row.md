@@ -16,7 +16,6 @@ ms.search.validFrom: 2022-01-13
 
 [!include [banner](../includes/banner.md)]
 
-[!include [preview banner](../includes/preview-banner.md)]
 
 Sometimes, tests must test multiple input values for the same feature. To make troubleshooting and reporting easier, you should avoid testing multiple things in the same test method. Instead of creating multiple methods, you can use the **SysTestRow** attribute that the SysTest framework now supports. This attribute works like the **DataRow** attribute in C\#.
 

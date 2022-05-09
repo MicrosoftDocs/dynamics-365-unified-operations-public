@@ -3,7 +3,7 @@
 
 title: Inventory marking with Planning Optimization
 description: This topic provides information about the options that are available for marking inventory in firmed orders when you use Planning Optimization.
-author: ChristianRytt
+author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
 

@@ -4,7 +4,7 @@
 title: Configure Lifecycle Services (LCS) security
 description: This topic explains how security in Microsoft Dynamics Lifecycle Services (LCS) is controlled at both the organization level and the project level.
 author: AngelMarshall
-ms.date: 04/13/2021
+ms.date: 03/15/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -39,6 +39,26 @@ Project-level access to LCS is by invitation. You can invite members of your org
 
 > [!IMPORTANT]
 > We strongly recommend that you manage all users within your company at the organization level. Additionally, you help ensure that users can access the benefits that are available to your organization.
+
+## Organizational roles
+There are three types of organizational roles in LCS:
+
+- Admin
+- Contributor
+- Delegated admin
+
+### Organization admin
+At the organization or tenant level, anyone who has the Global Administrator role in Azure AD automatically becomes an organization admin when they sign in to LCS. These admins can then promote other users who are currently contributors to admins. Admins have unique capabilities. For example, they can add themselves as a project owner to any project that is owned by their tenant, even if they weren't previously part of that project.
+
+![Message in LCS that states that organization admins can add themselves to any project.](media/OrgAdminProjectInject.png "Message in LCS that states that organization admins can add themselves to any project")
+
+In addition, admins can create additional LCS implementation projects by following the steps in [Create multiple LCS projects](../../fin-ops/get-started/implement-multiple-projects-aad-tenant.md#create-multiple-lcs-projects).
+
+### Organization contributor
+Contributors are other users from your Azure AD tenant, but they don't have admin capabilities. Contributors can create projects. They can also create the first implementation project if they are the first user of their tenant to sign in, and if they do so after the purchase of applicable Finance and Operations apps licenses.
+
+### Delegated admin
+The delegated admin role is identical to the admin role, except the user is from a Microsoft partner tenant and has an established relationship with the customer organization. The delegated admin can sign in on behalf of the customer, and can perform required operations and provide required support.
 
 ## Manage LCS organization users
 Only an administrator can manage users. Follow these steps.
@@ -106,8 +126,6 @@ After you've configured security for one project, you can import the users to an
 
 ## Configure implementation roles 
 If you have an implementation project, you will have the option to specify project user's implementation roles. For more information, see [Roles in a Dynamics 365 implementation](/learn/modules/get-started-implementation-project/01-2-roles).
-
-
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

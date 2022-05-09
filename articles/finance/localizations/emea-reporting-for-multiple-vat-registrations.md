@@ -352,7 +352,7 @@ All tax registrations have the same settings for EU sales list parameters.
     | 10.0.23 | Germany | VAT Declaration XML (DE).version.101.16<br>VAT Declaration Excel (DE).version.101.16.12 | [VAT declaration (Germany)](emea-deu-vat-declaration-germany.md) |
     | 10.0.21 | Norway | Tax declaration model.version.112<br>Tax declaration model mapping.version.112.192<br>VAT Declaration XML (NO).version.112.54<br>VAT Declaration Excel (NO).version.112.54.39 | [VAT return with direct submission to Altinn](emea-nor-vat-return.md) |
     | 10.0.23 | Spain | VAT Declaration TXT(ES).version.101.28<br>VAT Declaration Excel (ES).version.101.28.17 | [VAT declaration (Spain)](emea-esp-vat-declaration-spain.md) |
-    | 10.0.25 | Denmark | VAT Declaration Excel (DK).version.101.8 | VAT declaration (Denmark) |
+    | 10.0.25 | Denmark | VAT Declaration Excel (DK).version.101.8 | [VAT declaration (Denmark)](emea-dnk-vat-declaration-denmark.md) |
 
 ## Generate a VAT declaration for multiple VAT registrations
 

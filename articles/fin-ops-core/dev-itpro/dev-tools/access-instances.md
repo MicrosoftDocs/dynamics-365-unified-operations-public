@@ -2,7 +2,7 @@
 title: Deploy and access development environments
 description: This topic describes how to access development instances, configure local development VMs, and find configuration settings for developers and administrators.
 author: laneswenka
-ms.date: 09/08/2021
+ms.date: 05/04/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -81,6 +81,30 @@ For any environments deployed **on or after Platform update 12**, there are dist
 
 After you sign in to the environment through Remote Desktop, if you want to access the local application from the browser, use the same base URL that you use to access the application from a remote computer. The previous section explains how to obtain this base URL from LCS.
 
+### Deleting cloud-hosted developer environments
+
+When you are done with the developer environment, or in some cases where troubleshooting an infrastructure issue is too time consuming, you can always delete the environment from LCS and create a new one later.  To delete a cloud-hosted environment from LCS, use the following steps:
+
+1. Go to your LCS project navigation menu, and select **Cloud-hosted environments**.
+2. Highlight the environment that you want to remove and select **Deallocate**.  This will power down the machine in your Azure subscription.
+3. After the deallocation is successful, the environment will be in a *Deallocated* state.  You may now use the **Delete** button to start the deletion process.
+
+You cannot delete a cloud-hosted environment if the virtual network (VNET) that was created with it is also being used by other cloud-hosted environments.  This is not common, but in some cases customers want their developer environments to all re-use an existing VNET so that they can share files more easily between them.  If this is something you also have done, you will need to delete the other environments before deleting the base environment that created the original VNET.
+
+If the delete operation fails, check to see if one of the following may have occurred:
+
+- The Azure connector management certificate has expired.
+- The Azure subscription has been moved to a different tenant than where it was originally.
+- The Azure subscription has been disabled.
+- There are Azure policies in your subscription that prevent you from deleting one or more resources in your environment's resource group.
+
+If LCS was not able to successfully complete the delete operation, the operation will be marked as *Incomplete*. Use the **Delete LCS metadata** button to clean up this environment's metadata from the LCS backend systems. 
+
+> [!NOTE]
+> This operation will not try to delete the resources in the Azure subscription. It is the customer's responsibility to manually remove the environment's resource group if it still exists. 
+
+You can easily identify the environment’s resource group in the Azure subscription, as it will have the same name as the environment in LCS.
+
 ## VM that is running locally
 A virtual hard disk (VHD) is made available for download from LCS, so that you can set it up on a local machine. This system is intended to be accessed by a developer and is a pre-configured one-box development environment of Finance and Operations apps. The VHD is available in the Shared Asset library of LCS under the asset type **Downloadable VHD**.
 
@@ -141,72 +165,12 @@ For developer access, you must be an administrator on the instance. For environm
 > [!NOTE]
 > The Admin user provisioning tool isn't supported in environments that are provisioned through LCS. It should be used only on local VMs.
 
+> [!NOTE]
+> For local VMs that use the virtual hard drive (VHD) that was released for versions 10.0.24 and later, the instructions in [Set up the downloadable VHD for first use](vhd-setup.md) should be used instead.
+
 ### Commerce configuration
 
 Follow the steps in this section if you are also configuring for Commerce.
-
-#### For Dynamics 365 for Operations, Version 1611
-
-1. Run the RetailTenantUpdateTool.
-
-    - The icon for this tool is available on the desktop.
-    - This tool is also available at the following location: C:\windows\System32\WindowsPowerShell\v1.0\PowerShell.exe -File C:\RetailSDK\Tools\RetailTenantUpdateTool.ps1
-
-2. Double-click the icon to start this tool. You will be prompted for your Azure AD credentials. You must use the same credentials that you used in the admin user provisioning tool earlier.
-
-#### For Dynamics 365 for Operations 7.0
-
-1. Install [Microsoft Online Services Sign-In Assistant for IT Professionals RTW](https://go.microsoft.com/fwlink/?LinkID=286152).
-2. Install [Azure Active Directory Module for Windows PowerShell (64-bit version)](/collaborate/connect-redirect?DownloadID=59185).
-3. Query Azure AD for your tenant and user ID. Open a Windows PowerShell Integrated Scripting Environment (ISE) window with administrative privileges, and run the following command. You will be prompted for Azure AD credentials. Use the same user account that you used in the admin user provisioning tool earlier.
-
-    ```powershell
-    $msocred = Get-Credential 
-    Connect-MsolService -Credential $msocred 
-    $company = Get-MsolCompanyInformation 
-    Write-Host "TenantID: $($company.ObjectId)" 
-    $msocred.UserName 
-    $users = Get-MsolUser -SearchString "$($msocred.username)" 
-    foreach($u in $users) 
-    { 
-        if($u.SignInName -eq $msocred.UserName) 
-        { 
-            Write-Host "SignInName:$($u.SignInName) UserId: $($u.ObjectId)" 
-        } 
-    }
-    ```
-
-    [![Command in the Windows PowerShell ISE window.](./media/retailconfig02-1024x529.png)](./media/retailconfig02.png)
-
-4. Update the following SQL script, and run it in on AXDB for that environment. Supply values for the following parameters from the preceding Windows PowerShell script output:
-
-    - **TenantID** – For example, c83429a6-782b-4275-85cf-60ebe81250ee
-    - **UserId** – For example, a036b5d8-bc8c-4abe-8eec-17516ea913ec
-
-    <!-- -->
-    ```sql
-    DECLARE @TenantId NVARCHAR(1024)         DECLARE @UserId NVARCHAR(1024) 
-    SET @TenantId = '' 
-    SET @UserId = '' 
-    IF(LEN(@TenantId) > 0 AND LEN(@UserId) > 0) 
-        BEGIN 
-        UPDATE AxDBRAIN.dbo.SYSSERVICECONFIGURATIONSETTING SET [VALUE] = @TenantId WHERE [NAME] = 'TENANTID' 
-        UPDATE RetailHoustonStore.ax.SYSSERVICECONFIGURATIONSETTING SET [VALUE] = @TenantId WHERE [NAME] = 'TENANTID' 
-        UPDATE AxDBRAIN.dbo.RETAILSTAFFTABLE SET EXTERNALIDENTITYID = @TenantId, EXTERNALIDENTITYSUBID = @UserId WHERE STAFFID = '000160'
-        END 
-    ELSE 
-        BEGIN 
-        RAISERROR (15600, -1, -1, 'TenantId and UserId must be set before running this script') 
-        END
-    ```
-
-5. Reset Internet Information Services (IIS) by running **IISRESET** in an elevated **Command Prompt** window.
-6. Update the Real-time service profile to use the new admin user.
-
-    1. Go to **Retail and Commerce** &gt; **Headquarters setup** &gt; **Commerce scheduler** &gt; **Real-time service profiles**.
-    2. Edit the JBB record so that it uses the user that you used earlier (for example, `administrator@contosoax7.onmicrosoft.com`).
-    3. Run CDX Job 1070 (Staff) for the default channel database.
-    4. Verify that the job succeeded by viewing the **Download Sessions** page on the client.
 
 ### Base URL of the local application
 
@@ -251,8 +215,20 @@ This process might take a while. The process is completed when the cmd.exe windo
 
 ## Frequently asked questions
 
-### Environment is in a failed state and the error message is "Updated AAD Tenant is missing reply URL configuration"
-This message indicates that a Tier 1/customer-managed environment is configured with an Azure AD tenant that is different than the tenant used at the time of deployment. (Perhaps an update was done using the Admin user provisioning tool.) The updated tenant currently being used is missing the reply URL configuration required for successful login into the environment. The missing configuration causes the error. You should delete the environment and redeploy with a user from the tenant that the environment will be used with.
+### Can we join cloud-hosted environments to our Azure AD domain as it is currently deployed in a workgroup?
+These environments are self-contained and have not been tested, nor are they supported when joined to an Azure AD domain when deployed via Azure.  
+
+### Is there a way to hide the local account passwords in LCS?
+This is only possible if you lower a user's security role in the project to *Project team member* role, and it is not possible to hide the local account passwords for the *Environment manager*, or *Project owner* roles.
+
+### Are cloud-hosted environments supported with Azure Bastion?
+These environments have not been tested, nor are they supported with Azure Bastion.  
+
+### Environment is in a failed state with the error message, "Updated AAD Tenant is missing reply URL configuration". How do I resolve this?
+This message indicates that a Tier 1/customer-managed environment is configured with an Azure AD tenant different from the one used at the time of deployment. There are different options available to help resolve this issue:
+1. (Recommended) Delete the environment and redeploy with the tenant in which the environment will be used. 
+2. Revert the settings to the tenant configuration used at the time of deployment.
+3. Follow the instructions in [How can I fix my existing environment when my environment is in a failed state or I am getting sign-in errors?](access-instances.md#how-can-i-fix-my-existing-environment-when-my-environment-is-in-a-failed-state-or-i-am-getting-sign-in-errors) to update the reply URL in the target tenant.  
 
 ### As a partner/ISV, how can I facilitate cloud-hosted deployments for customers that I work with?
 A Tier 1/customer-managed environment should be deployed under the customer's Azure AD tenant, to ensure that all the configuration and integrations are correctly provisioned for any given environment. The tenant and environment association is determined based on the user who deployed the environment.
@@ -271,7 +247,10 @@ As was stated earlier, it's very important that Finance and Operations environme
 
 If you have environments where the Admin user provisioning tool was previously used to update the tenant settings, we recommend that you delete those environments and then redeploy them under the correct Azure AD tenant.
 
-If an existing environment can't be deleted and redeployed, its URL must be added to the configured Azure AD tenant. The following commands can be run by the tenant admin.
+If an existing environment can't be deleted and redeployed, its URL must be added to the configured Azure AD tenant. The following commands can be run by the tenant admin. 
+
+> [!Note]
+> Since these URLs are being added manually, the clean-up of these URLs will also have to be done manually when the environment is deleted.
 
 1. Retrieve the following values from the web.config file.
 
@@ -299,5 +278,11 @@ If an existing environment can't be deleted and redeployed, its URL must be adde
     #Set/Update Reply URL
     Set-AzureADServicePrincipal -ObjectId $SP.ObjectId -ReplyUrls $SP.ReplyUrls
     ```
+
+### I have fixed my environment, but it is still in a failed state. How do I resolve this?
+Restart your environment from LCS by first performing **Stop** and then **Start** operations against your environment. If the environment configuration is found to be correct, then the environment URL will be restored automatically **within 2 hours** of the **Start** operation.
+
+### While running the Admin user provisioning tool on my local development environment, I get the error "The value's length for key 'password' exceeds it's limit of '128'."
+If you are using the virtual hard drive (VHD) that was released for versions 10.0.24 and later, the Generate Self-Signed Certificates tool needs to be run before the Admin user provisioning tool. See [Set up the downloadable VHD for first use](vhd-setup.md) for more information.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

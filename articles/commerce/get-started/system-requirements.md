@@ -4,7 +4,7 @@
 title: System requirements for cloud deployments of Dynamics 365 Commerce
 description: This topic lists the system requirements for cloud deployments for the current version of Dynamics 365 Commerce.
 author: jashanno 
-ms.date: 03/01/2022
+ms.date: 05/05/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,6 +29,7 @@ ms.dyn365.ops.version: 10.0.5
 # System requirements for cloud deployments of Dynamics 365 Commerce
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 This topic lists the system requirements for cloud deployments of the current version of Dynamics 365 Commerce. If this step is appropriate, before you install Commerce, you should verify that the system that you're working with meets or exceeds the minimum network, hardware, and software requirements.
 
@@ -36,7 +37,7 @@ This topic lists the system requirements for cloud deployments of the current ve
 
 The web application can run in any of the following web browsers that run on the specified operating systems:
 
-- Microsoft Edge (latest publicly available version) on Windows 10
+- Microsoft Edge (latest publicly available version) on Windows 11, Windows 10
 - Google Chrome (latest publicly available version) 
 - Apple Safari (latest publicly available version)
 
@@ -50,14 +51,14 @@ To find the latest release for each web browser, go to the software manufacturer
 > [!NOTE]
 > - To enable Task Recorder to capture screenshots and include them in Microsoft Word documents that are generated, you must install a pre-release Chrome extension. <!---For instructions about how to install the extension, see [Screenshot Extension setup](../../dev-itpro/user-interface/task-recorder).-->
 > - The Workflow Editor and Report Designer for Financial reporting are started as ClickOnce applications. They require a 64-bit-compatible operating system. Only Microsoft Edge and Internet Explorer (on a supported version of Microsoft Windows) support ClickOnce applications out of the box. If you're using Chrome, you must install a ClickOnce extension, such as [Meta4](https://chrome.google.com/webstore/detail/meta4-clickonce-launcher/jkncabbipkgbconhaajbapbhokpbgkdc) to use ClickOnce applications. If you use Chrome in incognito mode, make sure that the ClickOnce extension is also enabled for incognito mode.
-> - To preview PDF files, we recommend that you use browsers such as Microsoft Edge (latest publicly available version) on Windows 10, or Google Chrome (latest publicly available version) on Windows 10, Windows 8.1, Windows 8, Windows 7, or Google Nexus 10 tablet.
+> - To preview PDF files, we recommend that you use browsers such as Microsoft Edge (latest publicly available version) on Windows 11 or Windows 10, or Google Chrome (latest publicly available version) on Windows 11, Windows 10, Windows 8.1, Windows 8, Windows 7, or Google Nexus 10 tablet.
 
 ### Supported web browsers for Cloud POS
 
 Cloud point of sale (POS) can run in any of the following web browsers that run on the specified operating systems:
 
-- Microsoft Edge (latest publicly available version) on Windows 10
-- Chrome (latest publicly available version) on Windows 10, Windows 8.1, or Windows 7
+- Microsoft Edge (latest publicly available version) on Windows 11, Windows 10
+- Chrome (latest publicly available version) on Windows 11, Windows 10, Windows 8.1, Windows 7
 
 ## Network requirements
 
@@ -82,9 +83,9 @@ The following Microsoft Office applications are supported:
 
 ## System requirements for Commerce client components
 
-It is critical to perform proper performance testing prior to going live in production. The following are considered minimum system requirements for applications to function. To achieve desired performance, consider concepts like data volumes, transactional load per hour, and customization impact. Proper performance testing both early into implementation and again prior to final testing will allow for any necessary performance improvements to be made and to validate that the base solution meets the expected operation times required.
+It's critical to perform proper performance testing prior to going live in production. The following are considered minimum system requirements for applications to function. To achieve desired performance, consider concepts like data volumes, transactional load per hour, and customization impact. Proper performance testing, both early into implementation and again prior to final testing, allows for any necessary performance improvements to be made and validates that the base solution meets the expected operation times required.
 
-If the self-service component will use a SQL database, we highly recommend that you review [SQL Server versions and licenses](../dev-itpro/implementation-considerations-cdx.md#sql-server-versions-and-licenses). We recommend that you use a SQL Server version that is currently still within the mainstream support date. You can search for support dates by product in [Search Product and Services Lifecycle Information](/lifecycle/products/). SQL databases for self-service components require SQL Server 2017 or later. The SQL Server version that is used must have the Full-Text Search feature installed. We recommend that you always use the latest version that is available, and that you install all the latest service packs. By following these recommendations, you can help ensure both compatibility and security. The legacy self-service installers also support SQL Server 2016 with Service Pack 2 or later.
+If the self-service component will use an SQL database, we highly recommend that you review [SQL Server versions and licenses](../dev-itpro/implementation-considerations-cdx.md#sql-server-versions-and-licenses). We recommend that you use a SQL Server version that is currently still within the mainstream support date. You can search for support dates by product in [Search Product and Services Lifecycle Information](/lifecycle/products/). SQL databases for self-service components require SQL Server 2017 or later. The SQL Server version that is used must have the Full-Text Search feature installed. We recommend that you always use the latest version that is available, and install all the latest service packs. By following these recommendations, you can help ensure both compatibility and security. The legacy self-service installers also support SQL Server 2016 with Service Pack 2 or later.
 
 If the self-service component will use a server certificate, it's critical that you manage certificates for expiration. By default, certificates expire after one calendar year (365 days). Self-service components that use a server certificate include Hardware station or Commerce Scale Unit (self-hosted).
 
@@ -102,14 +103,13 @@ This section lists the supported operating systems for each Commerce self-servic
 
 #### Modern POS
 
-- Windows 10 (Pro, Enterprise, LTSC, and IOT Enterprise editions) with the latest available updates are supported.
+- Windows 11, Windows 10 (Pro, Enterprise, LTSC, and IOT Enterprise editions) with the latest available updates are supported.
 
     > [!NOTE]
-    > Windows 10 Pro isn't recommended, except as part of a domain, so that Windows updates can be appropriately scheduled.
+    > Windows 10 Pro and Windows 11 Pro are not recommended, except as part of a domain, so that Windows updates can be appropriately scheduled.
 
 - Windows Server 2019 is supported.
 - We don't recommend that you use Modern POS on the same computer as another self-service component (for example, Hardware station or Commerce Scale Unit \[self-hosted\]).
-- The legacy self-service installer also supports Windows Server 2016 and Windows 10 LTSB with the latest available updates.
 - Modern POS for iOS supports iOS version 11 or later.
 - Modern POS for Android supports Android version 6.0 or later.
 
@@ -118,10 +118,10 @@ This section lists the supported operating systems for each Commerce self-servic
 
 #### Hardware station and Commerce Scale Unit (self-hosted)
 
-- Windows 10 (Pro, Enterprise, LTSC, and IOT Enterprise editions) with the latest available updates are supported.
+- Windows 11, 10 (Pro, Enterprise, LTSC, and IOT Enterprise editions) with the latest available updates are supported.
 
     > [!NOTE]
-    > Windows 10 Pro isn't recommended, except as part of a domain, so that Windows updates can be appropriately scheduled.
+    > Windows 10 Pro and Windows 11 Pro are not recommended, except as part of a domain, so that Windows updates can be appropriately scheduled.
 
 - Windows Server 2019 is supported.
 - We don't recommend that you use a self-service component on the same computer as another self-service component (for example, Modern POS).
@@ -135,7 +135,7 @@ Remember that performance testing is crucial to the successful use of Commerce s
 - 3 GB of RAM.
 - Internet access and enough network throughput to handle the flow of requests and responses. (Note that this requirement is at both a computer level and a network level.)
 - Component-specific system requirements, such as requirements for SQL Server and Internet Information Services (IIS).
-- At least 10 percent of disk space is available. (We recommend that you have no less than 10 GB of available disk space when SQL Server is used.)
+- At least 10 percent of disk space is available. (We recommend that you've no less than 10 GB of available disk space when SQL Server is used.)
 
 Additionally, as customizations and performance requirements are generated, each component typically requires a more powerful system to meet user needs.
 
@@ -181,10 +181,10 @@ Given the separated nature and specific usage of previous Dynamics AX 2012 R3 co
 
 The Connector for Microsoft Dynamics AX 2012 R3 has two separate installers: one for Async Server Connector service and one for Real-time service for Microsoft Dynamics AX 2012 R3.
 
-- Both components are 32-bit applications, but they will run on both x86 and x64 architectures.
+- Both components are 32-bit applications, but they'll run on both x86 and x64 architectures.
 - Both components are supported on the following operating systems:
 
-    - Windows 10 Pro, Enterprise, and Enterprise LTSB editions
+    - Windows 11, Windows 10 Pro, Windows Enterprise, and Windows Enterprise LTSB editions
 
         > [!NOTE]
         > Windows 10 Pro isn't recommended, except as part of a domain, so that Windows updates can be appropriately scheduled.
@@ -193,7 +193,7 @@ The Connector for Microsoft Dynamics AX 2012 R3 has two separate installers: one
 
 ### Minimum system requirements
 
-As for Commerce Scale Unit (self-hosted), much larger, server-grade hardware is often required to handle the throughput of a whole enterprise architecture of legacy POS systems. Nevertheless, here is the absolute minimum that is required to test functionality:
+As for Commerce Scale Unit (self-hosted), much larger, server-grade hardware is often required to handle the throughput of a whole enterprise architecture of legacy POS systems. Nevertheless, here's the absolute minimum that is required to test functionality:
 
 - 2 GB of RAM (However, 4 GB of RAM are recommended.)
 - 1.6 GHz peak CPU speed per core (Two cores are the minimum.)

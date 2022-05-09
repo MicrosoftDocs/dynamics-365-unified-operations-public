@@ -9,7 +9,7 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.custom: "intro-internal"
 ms.search.region: Global
-ms.author: v-gfedorova
+ms.author: gfedorova
 ms.search.validFrom: 2021-06-11
 ms.dyn365.ops.version: 10.0.19
 ---

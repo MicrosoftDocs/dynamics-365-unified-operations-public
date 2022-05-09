@@ -1,14 +1,14 @@
 ---
 title: Inventory value reports
 description: This topic explains how to set up, generate, and use inventory value reports. These reports provide details about your inventory physical and financial quantities and amounts.
-author: banluo-ms
+author: JennySong-SH
 ms.date: 10/19/2021
 ms.topic: article
 ms.search.form: InventValueProcess, InventValueReportSetup
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: banluo
+ms.author: yanansong
 ms.search.validFrom: 2021-10-19
 ms.dyn365.ops.version: 10.0.9
 ---
@@ -97,7 +97,7 @@ Use the **Inventory value reports** page to set up the content that is included 
         - Received and not yet invoiced items when the **Post physical inventory** option is cleared for the relevant item model group.
         - Received and not yet invoiced items when the **Post product receipt in ledger** option is cleared on the **Product receipt** FastTab on the **General** tab of the **Accounts payable parameters** page (**Accounts payable \> Setup \> Accounts payable parameters**).
 
-    - **Calculate average unit cost** – Set this option to *Yes* to display a column that shows the average unit cost. The average unit cost is the total quantity divided by the total amount.
+    - **Calculate average unit cost** – Set this option to *Yes* to display a column that shows the average unit cost. The average unit cost is the total amount divided by the total quantity.
     - **Total quantity and value** – Set this option to *Yes* to display columns that show the total quantity of physical inventory (and financial quantities) and the total amount of physical inventory (and financial amounts). You can set this option to *Yes* only if the **Summarize physical and financial values** option is set to *No*.
     - **Inventory dimensions** – In this grid, select the **View** checkbox for each dimension that you want to show on the report. Only dimensions where the **Financial inventory** option is enabled will show values on the report. Other dimensions will show only blank columns. For those dimensions that you select to show, you can select the **Total** checkbox to include totals too.
     - **Resource ID** – Set the **View** option to *Yes* to display a column that identifies the item for each row. Set the **Total** option to *Yes* to include totals too. Depending on the type of item that is listed in each row, the column shows one of the following types of information:

@@ -41,6 +41,4 @@ After the main components are configured, work with RCS to set up the main logic
 
 After everything is set up, you can create your own Globalization features that define different scenarios for processing electronic documents and transforming data, or for importing the documents from the Global repository. For more information about how to work with Globalization features, see [Work with Globalization features](e-invoicing-working-globalization-features.md).
 
-For information about the actions in the processing pipelines that make up the process that you will build in Globalization features, see **[COMPLETE!: Document processing actions]**.
-
 If your scenarios require integration with email or SharePoint to process inbound electronic documents, see [Processing incoming electronic documents](e-invoicing-process-incoming-electronic-documents.md) for information about how to set up and use those channels.

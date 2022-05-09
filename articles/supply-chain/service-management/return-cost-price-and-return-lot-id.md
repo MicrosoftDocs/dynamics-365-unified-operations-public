@@ -3,7 +3,7 @@
 
 title: Return cost price and return lot ID    
 description: You might want the cost of the returned products to equal the cost of the products at the time when you sold the products to the customer. You can do this by using the **Return lot ID**.
-author: kamaybac
+author: sorenva
 ms.date: 04/30/2018
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kamaybac
+ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

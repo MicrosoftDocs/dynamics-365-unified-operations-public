@@ -3,7 +3,7 @@
 
 title: Development overview
 description: This Developer Guide provides an API and custom fields reference. It also provides information on integrating with other apps.
-author: andreabichsel
+author: twheeloc
 ms.date: 02/03/2020
 ms.topic: overview
 ms.prod: 
@@ -15,13 +15,13 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 

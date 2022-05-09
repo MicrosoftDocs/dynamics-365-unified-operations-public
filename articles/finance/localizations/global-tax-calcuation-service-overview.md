@@ -4,7 +4,7 @@
 title: Tax Calculation overview
 description: This topic explains the overall scope and features of the Tax Calculation capability.
 author: wangchen
-ms.date: 11/17/2021
+ms.date: 03/02/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.search.form: TaxIntegrationTaxServiceParameters
 audience: Application user
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+
 # ms.tgt_pltfrm: 
 
 ms.search.region: Global
@@ -63,6 +63,7 @@ Tax Calculation is deployed in the following Azure geographies. More Azure geogr
 - Canada
 - Europe
 - Japan
+- Switzerland
 - United Kingdom
 - United States
 
@@ -82,6 +83,8 @@ We recommend that you import and set up your Tax Calculation configuration with 
 | 10.0.23         | Tax Calculation Configuration 40.50.221 |
 | 10.0.24         | Tax Calculation Configuration 40.50.225 |
 | 10.0.25         | Tax Calculation Configuration 40.50.225 |
+| 10.0.26         | Tax Calculation Configuration 40.54.234 |
+| 10.0.27         | Tax Calculation Configuration 40.54.234 |
 
 
 ## Data flow
@@ -141,6 +144,11 @@ The following transactions are supported in version 10.0.23:
 
 - Free text invoice
 
+The following transactions are supported in version 10.0.26: 
+
+- General journals
+- Vendor invoice journal
+
 ## Supported countries/regions
 
 Tax Calculation can be enabled by legal entity. 
@@ -192,6 +200,12 @@ The following countries/regions for a legal entity's primary address are support
 The following countries/regions for a legal entity's primary address are supported in version 10.0.24:
 
 - Mexico
+
+The following countries/regions for a legal entity's primary address are supported in version 10.0.26:
+
+- China
+- Czech Republic
+- Spain
 
 ## Related resources
 

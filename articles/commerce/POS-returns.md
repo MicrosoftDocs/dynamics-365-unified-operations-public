@@ -4,22 +4,11 @@
 title: Create returns in POS
 description: This topic describes how to initiate returns for cash-and-carry transactions or customer orders in the Microsoft Dynamics 365 Commerce Point of Sale (POS) application.
 author: hhainesms
-ms.date: 02/24/2022
+ms.date: 04/27/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+audience: Application User, Developer, IT Pro 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.20
@@ -112,9 +101,64 @@ The following list provides the minimum version requirements for the various com
 ## Enable proper tax calculation for returns with partial quantity
 
 This feature ensures that when an order is returned using multiple invoices, the taxes will ultimately be equal to the tax amount originally charged.
-1.	Go to the **Feature management** workspace and search for **Enable proper tax calculation for returns with partial quantity**.
-2.	Select **Enable proper tax calculation for returns with partial quantity** and then click **Enable**.
 
+1. In the **Feature management** workspace, search for **Enable proper tax calculation for returns with partial quantity**.
+1. Select the **Enable proper tax calculation for returns with partial quantity** feature, and then select **Enable**.
+
+## Set up return locations for retail stores
+
+Commerce lets you set up return locations that are based on retail info codes and sales and marketing reason codes. When customers return purchases, cashiers often indicate the reason for the return. You can specify that returned products should be assigned to different return locations in inventory, based on info codes and reason codes that cashiers select at the POS register.
+
+For example, a customer returns a defective product, and the cashier processes the return transaction. When Retail POS shows the info code for returns, the cashier selects the subcode for defective returns. The returned product is then automatically assigned to a specific return location.
+
+A return location can be a warehouse, a location in a warehouse, or even a specific pallet, depending on the inventory locations that your organization has set up. You can map each return location to one or more retail info codes and sales and marketing reason codes.
+
+### Prerequisites
+
+Before you can set up return locations, you must set up the following elements:
+
+- **Retail info codes** – Prompts at the POS register that are set up in the **Retail** module. For more information, see [Setting up info codes](/dynamicsax-2012/appuser-itpro/setting-up-info-codes).
+- **Sales and marketing reason codes** – Prompts at the POS register that are set up in the **Sales and marketing** module. For more information, see [Setting up reason codes](/dynamicsax-2012/appuser-itpro/set-up-return-reason-codes).
+- **Inventory locations** – The places where inventory is kept. For more information, see [Setting up inventory locations](/dynamicsax-2012/appuser-itpro/about-locations).
+	
+### Set up return locations
+
+To set up return locations, follow these steps.
+
+1. Go to **Retail and Commerce \> Channel setup \> Warehouses**, and select a warehouse.
+1. On the **Retail** FastTab, in the **Default return location** field, select the inventory location to use for returns where the info codes or reason codes aren't mapped to return locations.
+1. In the **Default return pallet** field, select the pallet to use for returns where the info codes or reason codes aren't mapped to return locations.
+1. Go to **Retail and Commerce \> Inventory management \> Return locations**.
+1. Select **New** to create a return location policy.
+1. Enter a unique name and a description for the return location.
+
+    > [!NOTE]
+    > If a number sequence has been set up for return locations, the name is automatically entered.
+
+1. On the **General** FastTab, set the **Print labels** option to **Yes** to print labels for all the products that are assigned to return locations.
+1. Set the **Block inventory** option to **Yes** to take returned products in the default return location out of inventory and prevent them from being sold.
+1. To map specific retail info codes and subcodes to return locations, follow these steps:
+
+    1. On the **Retail info codes** FastTab, select **Add**.
+    1. In the **Info code** field, select an info code for returns.
+    1. In the **Subcode** field, select a subcode for the reason for the return. The **Description** field shows the description of the selected subcode.
+    1. In the **Store** field, select the store where the info code is used.
+    1. Use the **Warehouse**, **Location**, and **Pallet ID** fields to specify a return location. For example, to specify a location in a store, select a store in the **Store** field and a location in the **Location** field.
+    1. Select the **Block inventory** checkbox to take returned products out of inventory and prevent them from being sold.
+
+1. To map specific sales and marketing reason codes to return locations, follow these steps:
+
+    1. On the **Sales and marketing reason codes** FastTab, select **Add**.
+    1. In the **Reason code** field, select a reason code for returns. The **Description** field shows the description of the selected reason code.
+    1. In the **Store** field, select the store where the reason code is used.
+    1. Use the **Warehouse**, **Location**, and **Pallet ID** fields to specify a return location. For example, to specify a pallet in a location in a warehouse, select a warehouse in the **Warehouse** field, a location in the **Location** field, and a pallet in the **Pallet ID** field.
+    1. Select the **Block inventory** checkbox to take returned products out of inventory and prevent them from being sold.
+
+    > [!NOTE]
+    > If a return location policy is used for an item, but the return reason that a cashier selects doesn't match any code that is specified on the **Retail info codes** or **Sales and marketing reason codes** FastTab, the item is sent to the default return location that is defined on the **Warehouse** page. Additionally, the setting of the **Block inventory** checkbox on the **General** FastTab of the **Return locations** page determines whether the returned item should be inventory blocked.
+
+1. Go to the **Retail and Commerce \> Commerce product hierarchy**.
+1. On the **Manage inventory category properties** FastTab, in the **Return location** field, select a return location. Because multiple return location policies can be defined for the same store, the value that you select here determines the return location policy that is used.
 
 ## Additional resources
 

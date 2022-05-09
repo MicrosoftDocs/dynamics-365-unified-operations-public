@@ -3,7 +3,7 @@
 
 title: Get started with Planning Optimization
 description: This topic explains how to start to use the Planning Optimization functionality. 
-author: ChristianRytt
+author: t-benebo
 ms.date: 05/20/2021
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: "intro-internal"
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
 
@@ -43,7 +43,7 @@ Before you turn on Planning Optimization, we strongly recommend that you evaluat
 
 ## Availability
 
-Planning Optimization is currently available in the following Azure geographies: United States, Canada, Europe, United Kingdom, Australia, Asia Pacific, Japan, and India. If you try to install the add-in from another geographic region, then LCS will show a message that this geographic is not supported. For more information about Azure geographies and the related regions, see [Azure geographies](https://azure.microsoft.com/global-infrastructure/geographies/#geographies).
+Planning Optimization is currently available in the following Azure geographies: United States, Canada, Brazil, Europe, United Kingdom, Australia, Asia Pacific, Japan, and India. If you try to install the add-in from another geographic region, then LCS will show a message that this geographic is not supported. For more information about Azure geographies and the related regions, see [Azure geographies](https://azure.microsoft.com/global-infrastructure/geographies/#geographies).
 
 Note that Planning Optimization does not support on-premises deployments of Dynamics 365 Supply Chain Management.
 

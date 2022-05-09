@@ -7,7 +7,7 @@ author: ankugo
 ms.date: 02/11/2022
 ms.topic: overview
 ms.prod:
-ms.service: dynamics-ax-applications
+
 ms.technology: 
 
 # optional metadata

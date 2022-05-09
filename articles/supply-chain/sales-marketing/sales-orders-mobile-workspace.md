@@ -3,7 +3,7 @@
 
 title: Sales orders mobile workspace
 description: This topic provides information about the Sales orders mobile workspace. This workspace helps you stay up to date about your sales orders anywhere and anytime. 
-author: Mirzaab
+author: Henrikan
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 267134
 ms.assetid: 0ce96511-002b-4de7-b31e-4303f94edc84
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: mirzaab
+ms.author: henrikan
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 

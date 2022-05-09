@@ -5,7 +5,7 @@ title: VAT statement for Norway
 description: This topic explains how to set up and generate the VAT statement for legal entities that have a primary address in Norway. 
 author: epodkolz
 ms.author: epodkolz
-ms.date: 11/10/2017
+ms.date: 03/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,6 +30,9 @@ ms.dyn365.ops.version: July 2017 update
 [!include [banner](../includes/banner.md)]
 
 This topic includes country-specific information about how to set up the value-added tax (VAT) statement for legal entities that have a primary address in Norway. For more information about general VAT reporting, see [VAT reporting for Europe](emea-vat-reporting.md).
+
+> [!NOTE]
+> As part of the modernization of VAT systems, the Norwegian Tax Administration introduced a new format for VAT return reporting for periods that start on or after January 1, 2022. VAT returns for periods before that date, and corrections to those VAT returns, must be reported in the format that is described in this topic. For more information about the new VAT return format, see [VAT return with direct submission to Altinn](emea-nor-vat-return.md).
 
 ## Set up sales tax authorities
 To generate a VAT declaration in the required format for a specific tax authority, you must set up the report layout for the sales tax authorities.

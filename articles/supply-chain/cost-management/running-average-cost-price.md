@@ -1,7 +1,7 @@
 ---
 title: Running average cost price
 description: The inventory close process settles issue transactions to receipt transactions, based on the inventory valuation method that is selected in the item’s item model group. However, before inventory close is run, the system calculates a running average cost price that is typically used when issue transactions are posted.
-author: AndersGirke
+author: JennySong-SH
 ms.date: 02/02/2022
 ms.topic: article
 ms.search.form: InventModelGroup, InventOnhandItem, InventTrans
@@ -9,7 +9,7 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 79003
 ms.search.region: Global
-ms.author: aevengir
+ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

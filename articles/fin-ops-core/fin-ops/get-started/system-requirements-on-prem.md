@@ -6,7 +6,8 @@ description: This topic lists the system requirements for on-premises deployment
 author: PeterRFriis
 ms.date: 02/08/2022
 ms.topic: article
-ms.prod: 
+ms.prod: dynamics-365
+ms.service:
 ms.technology: 
 
 # optional metadata
@@ -30,7 +31,6 @@ ms.dyn365.ops.version: Platform update 8
 # System requirements for on-premises deployments
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic lists the system requirements for the current version of Microsoft Dynamics 365 Finance + Operations (on-premises) deployments. Verify that the system that you're working with meets or exceeds the minimum network, hardware, and software requirements.
 

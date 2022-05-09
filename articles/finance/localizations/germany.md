@@ -40,7 +40,6 @@ This topic includes information and links to resources that should be considered
 ## Depreciation
 -   [Additional acquisition depreciation](emea-deu-additional-acquisition-depreciation.md)
 -   [Depreciation adjustments for additional acquisitions in the second year](tasks/de-00002-depreciation.md)
--   [Intrastat](emea-deu-intrastat.md)
 
 ## VAT declaration 
 -   [VAT declaration for Germany](emea-deu-vat-declaration-germany.md)
@@ -64,6 +63,10 @@ On the **Legal entities** page, you can use the **Print corrective invoice on a 
 
 ## Reports for Germany
 [German journal list report](emea-deu-journal-list-report.md).
+
+## Intra-community reporting
+-   [EU sales list for Germany](emea-deu-eu-sales-list.md)
+-   [Intrastat](emea-deu-intrastat.md)
 
 ## Additional resources
 - [Microsoft Dynamics Localization Portal: Germany report](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/Germany.html)

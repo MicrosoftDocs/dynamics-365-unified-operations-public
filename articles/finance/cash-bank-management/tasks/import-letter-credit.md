@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: VendTable, VendBankAccounts, PurchTable, PurchCreateOrder, InventItemIdLookupPurchase, BankLCImport,  PurchEditLines, VendEditInvoice, SrsReportViewerForm, LedgerJournalTable, LedgerJournalTransVendPaym, VendOpenTrans, SysQueryForm, BankAccountTableLookUp   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global

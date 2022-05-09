@@ -6,7 +6,8 @@ description: This topic describes the process for upgrading Microsoft Dynamics A
 author: faix
 ms.date: 12/16/2020
 ms.topic: article
-ms.prod: 
+ms.prod: dynamics-365
+ms.service:
 ms.technology: 
 
 # optional metadata

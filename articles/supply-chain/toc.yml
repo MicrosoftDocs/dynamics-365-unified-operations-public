@@ -12,12 +12,12 @@
         items:
         - name: What's new or changed in Supply Chain Management home page
           href: get-started/whats-new-home-page.md
+        - name: Supply Chain Management 10.0.27 (July 2022)
+          href: get-started/whats-new-scm-10-0-27.md
+        - name: Supply Chain Management 10.0.26 (May 2022)
+          href: get-started/whats-new-scm-10-0-26.md
         - name: Supply Chain Management 10.0.25 (April 2022)
           href: get-started/whats-new-scm-10-0-25.md
-        - name: Supply Chain Management 10.0.24 (February 2022)
-          href: get-started/whats-new-scm-10-0-24.md
-        - name: Supply Chain Management 10.0.23 (January 2022)
-          href: get-started/whats-new-scm-10-0-23.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -378,6 +378,8 @@
       items:
       - name: Scale units in a distributed hybrid topology
         href: cloud-edge/cloud-edge-landing-page.md
+      - name: Try out scale units in a distributed hybrid topology
+        href: cloud-edge/cloud-edge-try-out.md
       - name: Deploy edge scale units on custom hardware using LBD
         href: cloud-edge/cloud-edge-edge-scale-units-lbd.md
       - name: Manufacturing execution workloads for cloud and edge scale units
@@ -743,8 +745,32 @@
           href: cost-management/simulate-cost-changes-costing-version-planned-costs.md
         - name: Compare item prices storage report
           href: cost-management/compare-item-price.md
+      - name: Costing methodologies
+        items:
+        - name: Running average cost price
+          href: cost-management/running-average-cost-price.md
+        - name: Tracking running average cost per inventory dimension
+          href: cost-management/track-running-average-cost-per-inventory-dimension.md
+        - name: FIFO with physical value and marking
+          href: cost-management/fifo-physical-value-marking.md
+        - name: LIFO date with physical value and marking
+          href: cost-management/lifo-date-physical-value-marking.md
+        - name: LIFO with physical value and marking
+          href: cost-management/lifo-physical-value-marking.md
+        - name: Weighted average with physical value and marking
+          href: cost-management/weighted-average-physical-value-marking.md
+        - name: Weighted average date with physical value and marking
+          href: cost-management/weighted-average-date.md
+        - name: Moving average
+          href: cost-management/moving-average.md
+        - name: Moving average fallback cost sequence
+          href: cost-management/moving-average-fallback.md
       - name: Inventory accounting
         items:
+        - name: Physical and financial updates
+          href: cost-management/physical-financial-updates.md
+        - name: Include physical value
+          href: cost-management/include-physical-value.md
         - name: Cost objects
           href: cost-management/cost-object.md
         - name: View cost object balance
@@ -756,31 +782,9 @@
         - name: View cost entries for a cost object
           href: cost-management/tasks/view-cost-entries-cost-object.md
         - name: Cost groups
-          href: cost-management/cost-groups.md
-        - name: FIFO with physical value and marking
-          href: cost-management/fifo-physical-value-marking.md
-        - name: Include physical value
-          href: cost-management/include-physical-value.md
+          href: cost-management/cost-groups.md   
         - name: Inventory object values
           href: cost-management/physical-quantity.md
-        - name: LIFO date with physical value and marking
-          href: cost-management/lifo-date-physical-value-marking.md
-        - name: LIFO with physical value and marking
-          href: cost-management/lifo-physical-value-marking.md
-        - name: Moving average
-          href: cost-management/moving-average.md
-        - name: Moving average fallback cost sequence
-          href: cost-management/moving-average-fallback.md
-        - name: Physical and financial updates
-          href: cost-management/physical-financial-updates.md
-        - name: Running average cost price
-          href: cost-management/running-average-cost-price.md
-        - name: Tracking running average cost per inventory dimension
-          href: cost-management/track-running-average-cost-per-inventory-dimension.md
-        - name: Weighted average date
-          href: cost-management/weighted-average-date.md
-        - name: Weighted average with physical value and marking
-          href: cost-management/weighted-average-physical-value-marking.md
         - name: Inventory close
           href: cost-management/inventory-close.md
         - name: Adjust on-hand inventory cost values
@@ -1263,6 +1267,10 @@
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/supply-chain/toc.json
             - name: Run formats to dynamically add columns to Excel reports
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Design an ER format to paginate generated documents in Excel
+              href: ../fin-ops-core/dev-itpro/analytics/er-paginate-excel-reports.md?toc=/dynamics365/supply-chain/toc.json 
+            - name: Design an ER format to keep rows together on the same Excel page
+              href: ../fin-ops-core/dev-itpro/analytics/er-keep-excel-rows-together.md?toc=/dynamics365/supply-chain/toc.json 
         - name: Design configurations to generate reports in Word format
           items:
           - name: Design a new ER configuration to generate reports in Word format
@@ -1423,6 +1431,10 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/supply-chain/toc.json 
           - name: Debug data sources
             href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Configure data models
+          items: 
+          - name: Support parameterized calls of ER data models
+            href: ../fin-ops-core/dev-itpro/analytics/er-data-model-parameterized-calls.md?toc=/dynamics365/supply-chain/toc.json
         - name: Configure model mappings
           items: 
           - name: Configure country context dependent ER model mappings
@@ -1691,10 +1703,14 @@
           href: inventory/inventory-visibility-setup.md
         - name: Configure Inventory Visibility
           href: inventory/inventory-visibility-configuration.md
+        - name: Inventory Visibility support for WHS items
+          href: inventory/inventory-visibility-whs-support.md
         - name: Use the Inventory Visibility app
           href: inventory/inventory-visibility-power-platform.md
         - name: Inventory Visibility reservations
           href: inventory/inventory-visibility-reservations.md
+        - name: Inventory Visibility on-hand change schedule and available to promise
+          href: inventory/inventory-visibility-available-to-promise.md
         - name: Inventory Visibility public APIs
           href: inventory/inventory-visibility-api.md
         - name: Inventory Visibility tips
@@ -1707,8 +1723,6 @@
           href: iot/iot-azure-setup.md
         - name: Message schema formats for IoT Hub
           href: iot/iot-schema-format.md
-        - name: Install the add-in in LCS
-          href: iot/iot-lcs-setup.md
         - name: Set up metrics
           href: iot/iot-metrics-setup.md
         - name: Scenario setup
@@ -2739,6 +2753,8 @@
           href: production-control/production-floor-execution-setup.md
         - name: How workers use the production floor execution interface
           href: production-control/production-floor-execution-use.md
+        - name: Show vacation balances in the production floor execution interface
+          href: production-control/production-floor-execution-payroll-stats.md
         - name: Style the production floor execution interface
           href: production-control/production-floor-execution-styles.md
         - name: Customize the production floor execution interface
@@ -2911,7 +2927,7 @@
         href: sales-marketing/trade-allowance.md
       - name: Create a new trade agreement
         href: sales-marketing/tasks/create-new-trade-agreement.md
-      - name: Sales history cleanup performance improvements
+      - name: Schedule sales history data cleanup
         href: sales-marketing/sales-update-history-cleanup-performance-improvements.md
     - name: Service management
       items:
@@ -3471,7 +3487,7 @@
         items:
         - name: Install, set up, and use mobile devices
           items:
-          - name: What's new or changed in Warehouse Management mobile app
+          - name: What's new or changed in the Warehouse Management mobile app
             href: warehousing/whats-new-wma.md
           - name: Install and connect the Warehouse Management mobile app
             href: warehousing/install-configure-warehouse-management-app.md
@@ -3723,7 +3739,7 @@
           href: troubleshooting/procurement/consolidate-multiple-receipts.md
         - name: Default tax group and cash discount aren't filled in from the invoice account
           href: troubleshooting/procurement/default-tax-group-and-discount.md
-        - name: The delivery name isn't synced after changing a purchase order delivery address
+        - name: The delivery name isn't synced after changing a purchase order delivery address
           href: troubleshooting/procurement/delivery-name-isnt-synced.md
         - name: An exception occurs during vendor invoice posting
           href: troubleshooting/procurement/invocation-target-exception.md
@@ -3847,10 +3863,14 @@
         items:
         - name: Warehouse mobile app
           items:
+          - name: Unexpected difference between request and session data during testing
+            href: troubleshooting/warehousing/request-session-data-difference.md
           - name: Trust anchor for certification path not found when setting up app connection
             href: troubleshooting/warehousing/certification-path-app-connection-error.md
           - name: Trust anchor for certification path not found when updating and migrating to WMS
             href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md
+        - name: Can't post packing slip for a stopped a sales order line
+          href: troubleshooting/warehousing/unable-to-post-packi.md
         - name: Processing issues occur after installing a scale unit warehouse workload
           href: troubleshooting/warehousing/Scale-unit-warehouse-workload-installation-issues.md
         - name: Auto-reservation prompt for batch number is shown even with available inventory

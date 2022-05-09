@@ -61,7 +61,7 @@ After you've installed Xamarin, you must update it to the latest stable version 
 
 1. When installation is complete, launch Visual Studio and sign in with your Microsoft account (this is the same account that you use with Windows). Check for Xamarin updates by clicking **Tools > Options > Xamarin** or **Tools > Options > Xamarin > Other**. Here you'll find a **Check Now** link. If you do not see an option for Xamarin in **Tools > Options**, review your installation, or try restarting Visual Studio. You can also search for Xamarin in the **Options** dialog box. If needed, download and install the latest version.
       
-2.  In the Retail SDK folder, open SampleExtensions\HybridApp\Android\solution. Build and deploy using the emulator and verify that everything appears as it should.
+2.  In the [Retail SDK folder](retail-sdk/retail-sdk-overview.md#download-the-retail-sdk), open SampleExtensions\HybridApp\Android\solution. Build and deploy using the emulator and verify that everything appears as it should.
   
 3.  Using the [Visual Studio Emulator for Android](https://visualstudio.microsoft.com/vs/msft-android-emulator/ "Visual Studio Emulator for Android") or any emulator for Android, launch the POS hybrid app and enter the Commerce Scale Unit URL and save.
   
@@ -85,7 +85,7 @@ For more detailed steps on installing Xamarin on iOS, refer to [Xamarin.iOS inst
   
   ### Build the iOS Retail hybrid app
   
-  1.  In the Retail SDK folder, open SampleExtensions\HybridApp\iOS\solution.
+  1.  In the [Retail SDK folder](retail-sdk/retail-sdk-overview.md#download-the-retail-sdk), open SampleExtensions\HybridApp\iOS\solution.
       After connecting to the Mac and building the application in Visual Studio, select the iOS device type and deploy the app on the selected device.
       
        ![POS iOS app VS setting for deployment.](./media/iOSSetting.png)

@@ -3,7 +3,7 @@
  
 title: EE-00015 Payment reference generation tool
 description: This procedure walks you through generating the payment references. 
-author: v-oloski
+author: v-oskinaolga
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom:  
 ms.search.region: Estonia
 # ms.search.industry: 
-ms.author: v-oloski
+ms.author: v-oskinaolga
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---

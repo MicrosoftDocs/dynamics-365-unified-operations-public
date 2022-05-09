@@ -4,7 +4,7 @@
 title: Keyboard shortcuts
 description: This topic provides an overview of the shortcut key combinations that you can use when you're working with Finance and Operations apps.
 author: jasongre
-ms.date: 02/11/2022
+ms.date: 03/03/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,7 +30,6 @@ ms.dyn365.ops.version: AX 7.0.0
 # Keyboard shortcuts
 
 [!include [banner](../includes/banner.md)]
-
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
@@ -204,6 +203,9 @@ Users can discover currently available shortcuts directly from the user interfac
 | Close the navigation list on Details form (with focus in the navigation list) | Esc                        |
 | Move to the main page content (with focus in another pane)                    | Alt+M,M                    |
 | Move to the FactBox pane (which may include opening it)                       | Alt+M,B or Ctrl+F2         |
+
+> [!NOTE]
+> The **Streamline tabbing behavior in full-page forms** feature, introduced in version 10.0.26, allows users to tab through all regions of a page without requiring the mouse or a dedicated keyboard shortcut to move between regions. You can still use the existing keyboard shortcuts (such as Alt+M key chord shortcuts) to move quickly between the regions on a page.
 
 ## [Personalization](personalize-user-experience.md) shortcuts 
 

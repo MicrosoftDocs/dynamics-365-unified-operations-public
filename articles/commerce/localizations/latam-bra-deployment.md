@@ -4,10 +4,10 @@
 title: Set up and deploy the Dynamics 365 Commerce localization for Brazil
 description: This topic covers how to set up and deploy the Microsoft Dynamics 365 Commerce localization for Brazil.
 author: akviklis
-ms.date: 01/12/2022
+ms.date: 03/04/2022
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
+
 ms.technology: 
 
 # optional metadata
@@ -27,13 +27,13 @@ ms.dyn365.ops.version:
 ---
 # Set up and deploy the Dynamics 365 Commerce localization for Brazil
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic covers how to set up and deploy the Microsoft Dynamics 365 Commerce localization for Brazil.
 
 The Dynamics 365 Commerce localization for Brazil includes several extensions of the following Commerce components: the Commerce runtime (CRT), Retail Server, and point of sale (POS). These extensions let you calculate Brazil-specific taxes, generate electronic fiscal documents for retail sales, print DANFE (Documento Auxiliar de Nota Fiscal Eletrônica) and CF-e-SAT (Cupom Fiscal Eletrônico - Sistema Autenticador e Transmissor de Cupons Fiscais Eletrônicos) fiscal receipts that have custom fields, manage Brazil-specific customer information, and issue sales in offline contingency mode where registration of electronic fiscal documents is postponed. For more information about the Commerce localization for Brazil, see [Brazilian localization scope](../../finance/localizations/latam-bra-scope.md) and [Commerce localization for Brazil](latam-bra-commerce-localization.md).
 
-The extensions that are described in this topic were developed based on the fiscal integration framework. For information about the fiscal integration functionality, see [Overview of fiscal integration for Commerce channels](fiscal-integration-for-retail-channel.md). [Electronic reporting (ER)](../../dev-itpro/analytics/general-electronic-reporting.md) is used to implement formats for Brazilian electronic fiscal documents.
+The extensions that are described in this topic were developed based on the fiscal integration framework. For information about the fiscal integration functionality, see [Overview of fiscal integration for Commerce channels](fiscal-integration-for-retail-channel.md). [Electronic reporting (ER)](/dynamics365/fin-ops-core/dev-itpro/analytics/general-electronic-reporting) is used to implement formats for Brazilian electronic fiscal documents.
 
 ## Enable Brazil-specific Commerce functionality
 
@@ -51,7 +51,7 @@ To enable and use the Brazil-specific functionality, you must configure the foll
 
 ## Set up electronic reporting
 
-You can download the ER configurations for the electronic fiscal documents from Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Import Electronic reporting (ER) configurations](../../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md). You must download the latest versions of the configurations that are listed in the following procedure.
+You can download the ER configurations for the electronic fiscal documents from Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Import Electronic reporting (ER) configurations](/dynamics365/fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations). You must download the latest versions of the configurations that are listed in the following procedure.
 
 To set up electronic reporting in Commerce headquarters, follow these steps.
 
@@ -416,6 +416,18 @@ To help ensure that the Hardware station loads the SAT extension component, you 
 </hardwareStationExtension>
 ```
 
+#### Payments.Connector.Adyen.Device.Brazil component
+
+To help ensure that the Hardware station loads the extension component for the Payment Connector for Adyen in POS for Brazil, you must set the corresponding assembly reference in the **HardwareStation.Extension.config** file that is located in the **Assets** folder in the Retail SDK.
+
+```xml
+<hardwareStationExtension>
+    <composition>
+        <add source="assembly" value="Microsoft.Dynamics.Commerce.Payments.Connector.Adyen.Device.Brazil" />
+    </composition>
+</hardwareStationExtension>
+```
+
 ### Enable Modern POS extension components
 
 To enable Modern POS extension components, follow these steps.
@@ -481,3 +493,4 @@ To enable the Cloud POS extension components to be loaded in the **extensions.js
 
 [Configure and install Retail hardware station](../retail-hardware-station-configuration-installation.md)
 
+[Dynamics 365 Payment Connector for Adyen in Commerce POS for Brazil](latam-bra-adyen.md)

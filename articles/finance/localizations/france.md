@@ -3,8 +3,8 @@
 
 title: France overview
 description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for France. 
-author: ShylaThompson
-ms.date: 07/25/2019
+author: kfend
+ms.date: 03/04/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 
 ms.search.region: France
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -43,6 +43,7 @@ This topic includes information and links to resources that can help you set up 
 - [Customer and vendor account statements](tasks/fr-00002-customer-vendor-account-statements.md)
 - [Daily interest calculation for late payment and lump sum in the invoice and collection letter](tasks/fr-00018-daily-interest.md)
 - [Derogatory depreciation](emea-fra-derogatory-depreciation.md)
+- [EU sales list for France (DES)](emea-fra-eu-sales-list.md)
 - [French bills of exchange and promissory notes](tasks/fr-00004-french-bills-exchange-promissory-notes.md)
 - [Audit File for France (FEC) overview](emea-fra-fec-audit-file.md)
 - [French Intrastat](emea-fra-intrastat.md)

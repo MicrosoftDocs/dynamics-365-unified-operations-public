@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: SysPolicySourceDocumentRuleType, SysFieldLookUp, SysPolicyListPage, SysPolicy, AuditPolicyRule, SysQueryForm, SysQueryFieldLookUp, AuditPolicyDateSelection, AuditPolicyAdditionalOption, BatchJob, CaseDetail   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global

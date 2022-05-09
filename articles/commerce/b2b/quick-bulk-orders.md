@@ -12,7 +12,7 @@ ms.search.form: RetailOperations
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: v-chgriffin
-#ms.search.scope: Core, Operations, Retail
+#
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global

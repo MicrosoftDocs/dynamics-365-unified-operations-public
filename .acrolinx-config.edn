@@ -1,5 +1,5 @@
 {:allowed-branchname-matches ["^main$"]
- :allowed-filename-matches ["(?i)articles/(?:(?!finance/localizations|fin-ops-core/dev-itpro/data-entities/dual-write/includes))"]
+ :allowed-filename-matches ["(?i)^articles/(?:(?!commerce/localizations|commerce/tasks|fin-ops-core/dev-itpro/analytics/tasks|fin-ops-core/dev-itpro/data-entities/dual-write/includes|fin-ops-core/dev-itpro/data-entities/tasks|fin-ops-core/dev-itpro/database/api/v1|fin-ops-core/dev-itpro/dev-tools/code|fin-ops-core/dev-itpro/mobile-apps/platform/client-apis|/talent|fin-ops-core/fin-ops/get-started/tasks|fin-ops-core/fin-ops/hr/localizations|fin-ops-core/fin-ops/hr/tasks|fin-ops-core/fin-ops/organization-administration/tasks|finance/accounts-payable/tasks|finance/accounts-receivable/tasks|finance/cash-bank-management/tasks|finance/cost-accounting/tasks|finance/fixed-assets/tasks|finance/general-ledger/tasks|finance/localizations|finance/public-sector/tasks|supply-chain/cost-management/tasks|supply-chain/inventory/tasks|supply-chain/localizations|supply-chain/master-planning/tasks|supply-chain/pim/tasks|supply-chain/procurement/tasks|supply-chain/production-control/tasks|supply-chain/sales-marketing/tasks|supply-chain/transportation/tasks|supply-chain/warehousing/tasks|talent))"]
  :use-skip-label true
  :targets
  {

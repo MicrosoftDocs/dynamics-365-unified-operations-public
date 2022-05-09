@@ -53,7 +53,7 @@ If you require the ability to enter, maintain, and view product quantities with 
 
 Bill of materials, formulas, and production orders allow maintaining quantities with four decimals by default.
 
-If you require more than four decimals, extend the nuymber of decimals for the **BOMProductQuantity** extended data type.
+If you require more than four decimals, extend the number of decimals for the **BOMProductQuantity** extended data type.
 
 ### Related data types
 

@@ -3,7 +3,7 @@
 
 title: External data in cash flow forecasts
 description: This topic describes the setup steps that must be completed so that external data can be entered or imported into cash flow forecasts.
-author: rcarlson
+author: RyanCCarlson2
 ms.date: 02/16/2022
 ms.topic: article
 ms.prod: 
@@ -15,13 +15,13 @@ ms.search.form: LedgerJournalSetup, LedgerJournalTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: peakerbl
+ms.author: rcarlson
 ms.search.validFrom: 2020-06-08
 ms.dyn365.ops.version: AX 10.0.12
 
