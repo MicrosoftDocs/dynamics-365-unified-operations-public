@@ -47,13 +47,17 @@ If you aren't using a separate recruiting application, you can also manually man
 >
 > You can also find recruiting integration apps on [AppSource](https://appsource.microsoft.com/marketplace/apps?search=recruiting%20dynamics).
 >
-## Enable recruiting requests
+## Enable recruiting requests on the merged infrastructure
 
-If you want to submit recruiting requests in Human Resources, you must first enable the functionality in **Human resources shared parameters**.
+If you want to submit recruiting requests in HR recruitment, you must first enable the **HR user experience** and **Recruiting process management** features.
 
-1. In the **Personnel management** workspace, select **Links**.
-2. Under **Setup**, select **Human resources shared parameters**.
-3. On the **Recruitment** tab, under **Recruiting**, set **Enable recruiting requests** to **Yes**.
+Once the features are turned on, select the functionality with the following steps: 
+1. Go to **Human resources** > **Setup** > **Human resources parameters**.
+2. On the **Recruitment** tab, set the **Recruitment disabled** field to **No**.
+3. In the **Recruitment experience** dropdown, select **HR recruitment**.   
+
+> [!Note] 
+> Once **HR recruitment** is selected, **Recruitment projects** (legacy) will be read only. 
 
 ## Add a recruiting request location
 
