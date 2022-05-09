@@ -14,12 +14,12 @@ ms.technology:
 # ms.search.form: [Operations AOT form name to tie this topic to]
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 ms.search.industry: public sector
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2019-10-07
 ms.dyn365.ops.version: 10.0.7
 
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.7
 [!include [banner](../includes/banner.md)]
 
 
-This topic provides information about the Cash position inquiry. This inquiry lets you determine the corresponding cash positions for financial dimension sets that contain self-balancing dimensions. It shows the following items:
+This topic provides information about the **Cash position** inquiry. This inquiry lets you determine the corresponding cash positions for financial dimension sets that contain self-balancing dimensions. It shows the following items:
 
 - The beginning cash balance
 - The effect of the addition of cash receipts
