@@ -50,7 +50,7 @@ Alternatively, your organization may already have a Power Platform environment w
 
 With the purchase of any Finance and Operations apps license such as Finance, or Supply Chain Management for example, your tenant is entitled to an additional 10GB of Microsoft Dataverse database capacity.  In addition, for each user license you have purchased you receive an incremental amount of database capacity.  This can be seen in the screenshot below in PPAC:
 
-:::image type="content" source="media/LinkedPowerPlatformEnvironment.png" alt-text="Linked Power Platform environment":::
+:::image type="content" source="media/PPI-Capacity.png" alt-text="Capacity view in Power Platform admin center":::
 
 With the same purchase of licenses, you are entitled to a single Self-service Sandbox and a Production environment in LCS.  Because of this the automatic creation of the initial Power Platform environment for every Finance and Operations apps environment is possible.  Each initial environment in PPAC is without Dataverse and hence only utilizes 1GB of database capacity for provisioning Power Apps and Power Automate flows.  When you setup Power Platform Integration, this adds a Dataverse database to the same environment which often consumes 3GB or more.  
 
@@ -152,14 +152,23 @@ Once you complete the setup, the action is irreversible outside of deleting the 
 
 ### Enable integration with an existing Power Platform environment
 
-If you already have a Dataverse environment you wish to connect with Finance and Operations, you may do so during Power Platform Integration setup.  
+If you already have a Dataverse environment you wish to connect with Finance and Operations, you may do so during Power Platform Integration setup.
 
 :::image type="content" source="media/PPI-ConnectToExisting.png" alt-text="Connect to an existing Power Platform environment":::
 
 To get the Power Platform environment ID you can copy and paste it from the address bar of your browser when visiting the environment in PPAC:
+
 :::image type="content" source="media/PPI-ExistingEnvironmentID.png" alt-text="Connect to an existing Power Platform environment":::
 
 This is most useful for customers who are already live with Power Platform environments or other Dynamics 365 apps, and want to add Finance and Operations apps to that existing setup.  Once you complete the setup, just like setting up with a new Dataverse database in the initial environment as mentioned above, the action is irreversible outside of deleting the environment in LCS.  Relinking or linking to another environment is not supported.
+
+### Validations for bringing your existing Power Platform environment
+
+If you connect an existing Power Platform environment, the following validations must pass or the request will not proceed:
+
+1. Power Platform environment must have Dataverse deployed with the **Enable D365 apps** option.  This is the only type of Dataverse that supports Dynamics 365 apps, which includes connecting to Finance and Operations.
+2. The Power Platform environment must be in the same geography as Finance and Operations.  In LCS you may see an Azure Region such as 'West US 2', and in Power Platform the environment should be deployed in 'United States' as an example.  This is for performance and data residency.
+3. The user in LCS who is performing the Power Platform Integration setup must be an administrator of the environment in Dataverse, and have an applicable Finance, Supply Chain Management, or Commerce license assigned.
 
 ### Environments that are already using Dual-write, Virtual tables, Business events, or Add-ins before enabling Power Platform Integration
 
