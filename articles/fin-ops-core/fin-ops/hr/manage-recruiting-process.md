@@ -3,7 +3,7 @@
 
 title: Manage recruiting processes
 description: This topic describes a concept that recruiters can use to track the steps in a recruiting process.
-author: andreabichsel
+author: twheeloc
 ms.date: 01/10/2022
 ms.topic: article
 ms.prod: 
@@ -15,13 +15,13 @@ ms.search.form: HRMApplication, HRMRecruitingTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 7501
 ms.assetid: 1ad725bf-20e2-42a1-8068-111f7ddddad9
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 # Manage recruiting processes
 
 > [!IMPORTANT]
-> The functionality noted in this topic is currently available for Human Resources customers on the Finance infrastructure.  
+> The recruiting functionality in this topic will be referred to as Recruitment projects and focuses on applicants, applications, and recruitment projects. 
 
 
 This topic describes a concept that recruiters can use to track the steps in a recruiting process, including efforts to advertise open positions and recruit applicants, tracking applicant and application information, interviewing applicants, and selecting one or more candidates to fill the open positions in your organization.
