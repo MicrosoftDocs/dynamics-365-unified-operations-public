@@ -2,7 +2,7 @@
 # required metadata
 
 title: Balance sheet financial reports
-description: This article describes the default reports for balance sheets. It also describes the building blocks that are associated with these reports. 
+description: This topic describes the default reports for balance sheets. It also describes the building blocks that are associated with these reports. 
 author: jcart1106
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form: FinanicalReports
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 12274
 ms.assetid: 52f78229-f531-4d16-b337-e2628994acb6
@@ -31,14 +31,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article describes the default reports for balance sheets. It also describes the building blocks that are associated with these reports. 
+This topic describes the default reports for balance sheets. It also describes the building blocks that are associated with these reports. 
 
 ## Default balance sheet reports
 
 There are two default balance sheet reports. On one report, the sections are stacked. On the other report, the sections are side by side.
 
 | Default report                       | What it does                                                                                                                           |
-|--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
+|--------------------------------------|----------------------------------------------------------------------------------------------|
 | Balance Sheet – Default              | Provides a view of the organization's financial position for the year.                                                                 |
 | Side by Side Balance Sheet – Default | Provides a view of the organization's financial position for the year. Assets and liability and shareholder’s equity are side by side. |
 
