@@ -158,7 +158,7 @@ If you already have a Dataverse environment you wish to connect with Finance and
 
 To get the Power Platform environment ID you can copy and paste it from the address bar of your browser when visiting the environment in PPAC:
 
-:::image type="content" source="media/PPI-ExistingEnvironmentID.png" alt-text="Connect to an existing Power Platform environment":::
+:::image type="content" source="media/PPI-ExistingEnvironmentID.png" alt-text="Retrieve the environment ID from the browser address bar":::
 
 This is most useful for customers who are already live with Power Platform environments or other Dynamics 365 apps, and want to add Finance and Operations apps to that existing setup.  Once you complete the setup, just like setting up with a new Dataverse database in the initial environment as mentioned above, the action is irreversible outside of deleting the environment in LCS.  Relinking or linking to another environment is not supported.
 

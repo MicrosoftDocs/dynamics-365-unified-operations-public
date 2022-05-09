@@ -40,7 +40,7 @@ By default, all Finance and Operations apps environments that are managed by LCS
 
 This environment can't be deleted or reset, and a Dataverse database can't be manually added to it. To add Dataverse and fully set up the Microsoft Power Platform integration, follow the instructions in [Enable the Microsoft Power Platform integration](enable-power-platform-integration.md).
 
-Alternatively, if you want to reuse an existing Dataverse environment for your Microsoft Power Platform integration scenarios (virtual entities, add-ins, dual-write functionality, and more), follow the instructions in [Set up dual-write for an existing Dataverse environment](../data-entities/dual-write/lcs-setup.md#set-up-dual-write-for-an-existing-dataverse-environment).
+Alternatively, if you want to reuse an existing Dataverse environment for your Microsoft Power Platform integration scenarios (virtual entities, add-ins, dual-write functionality, and more), follow the instructions in [Enable integration with an existing Power Platform environment](enable-power-platform-integration.md#enable-integration-with-an-existing-power-platform-environment).
 
 ## Prerequisite reading
 
