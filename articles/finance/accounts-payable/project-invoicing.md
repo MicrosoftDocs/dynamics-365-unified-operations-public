@@ -21,7 +21,7 @@ ms.custom: 23111
 ms.assetid: 1812d6f2-8b34-4258-8f5f-dcf12281547f
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2020-07-06
 ms.dyn365.ops.version: AX 10.0.13
 

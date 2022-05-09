@@ -15,13 +15,13 @@ ms.search.form: EcoResCategory, EcoResCategoryHierarchyListPage, EcoResCategoryH
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 20911
 ms.assetid: a1b30d2a-a370-402a-b3bd-d562adca55f0
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

@@ -15,13 +15,13 @@ ms.search.form: AdvancedLedgerEntry, BudgetControlConfiguration, LedgerParameter
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 19511
 ms.assetid: 3db0233e-d767-4dc0-b008-733098b6ca70
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
