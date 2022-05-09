@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom: 
 ms.search.region: Italy
 # ms.search.industry: 
-ms.author: ilyako
+ms.author: anasyash
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: 10.0.9
 
