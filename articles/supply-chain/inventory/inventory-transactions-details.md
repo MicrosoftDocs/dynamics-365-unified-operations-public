@@ -1,7 +1,7 @@
 ---
 title: Inventory transaction details
 description: This topic provides an overview of the Transactions details page that shows details of a selected inventory transaction. 
-author: raprofit
+author: rachel-profitt
 ms.date: 04/25/2022
 ms.topic: article
 ms.search.form: InventTrans, InventTransDetails
