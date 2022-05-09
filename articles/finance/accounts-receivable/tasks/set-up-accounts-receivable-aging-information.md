@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: CustVendReportInterval, CustAgingSnapshot, CustCollectionsPoolsListPage, CustCollections   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This guide will help you set up an aging period definition, age customer balances, and view balances in the Aged balance list and the Collections page. This recording uses the USMF demo company.
+This guide will help you set up an aging period definition, age customer balances, and view balances in the **Aged balance** list and the **Collections** page. This recording uses the USMF demo company.
 
 
 ## Create an aging period definition
