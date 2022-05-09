@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains the purpose of a cross rate, and how to specify the cross rate when you settle a payment with an invoice. Use a cross rate when all of the following criteria apply: 
+This topic explains the purpose of a cross rate, and how to specify the cross rate when you settle a payment with an invoice. Use a cross rate when the following criteria apply: 
 -	You are settling a payment with an invoice. 
 -	The payment line and the invoice line use different currencies. 
 -	Neither currency is the accounting currency. 
