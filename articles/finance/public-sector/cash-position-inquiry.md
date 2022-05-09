@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 ms.search.industry: public sector
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2019-10-24
 ms.dyn365.ops.version: 10.0.7
 
