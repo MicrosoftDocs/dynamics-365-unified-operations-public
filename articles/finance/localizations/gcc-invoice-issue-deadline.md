@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom: 
 ms.search.region: GBL
 # ms.search.industry: 
-ms.author: v-oloski
+ms.author: v-olgaoskina
 ms.search.validFrom: 2020-07-03
 ms.dyn365.ops.version: 10.0.13
 
