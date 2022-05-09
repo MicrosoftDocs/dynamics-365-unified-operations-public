@@ -1016,6 +1016,8 @@
           href: lifecycle-services/azure-data-explorer.md
       - name: Restart environment services
         href: lifecycle-services/restart-environment-services.md
+      - name: Update environment administrator
+        href: lifecycle-services/update-environment-admin.md
       - name: Report a production outage
         href: lifecycle-services/report-production-outage.md
       - name: Track user sign-ins
