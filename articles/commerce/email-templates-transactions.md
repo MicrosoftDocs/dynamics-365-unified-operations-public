@@ -68,8 +68,8 @@ The packing completed notification type supports the following additional email 
 | ------------------- | ------- |
 | `pickupstorename`     | The name of the store where the order is available for pickup. |
 | `pickupstoreaddress`  | The address of the store where the order is available for pickup. |
-| `pickupstorehourfrom` | The opening hour of the pickup store. |
-| `pickupstorehourto`   | The closing hour of the pickup store. |
+| `pickupstoreopenfrom` | The opening hour of the pickup store. |
+| `pickupstoreopento` | The closing hour of the pickup store. |
 | `pickupchannelid`     | The store channel ID of the pickup store. |
 | `packingslipid`      | The ID of the packing slip for the order that will be picked up. |
 | `confirmationid`      | The order confirmation ID of the order that will be picked up. (This ID is sometimes referred to as the channel reference ID.) |
@@ -106,7 +106,7 @@ The issue gift card notification type supports the following additional placehol
 | Placeholder name      | Purpose |
 | --------------------- | ------- |
 | `giftcardnumber`        | The gift card number, for products of the gift card type. |
-| `giftcardbalance`       | The gift card balance, for products of the gift card type. |
+| `availablebalance` | The remaining balance on the gift card. |
 | `giftcardmessage`       | The gift card message, for products of the gift card type. |
 | `giftcardpin`         | The personal identification number (PIN) of the gift card, for products of the gift card type. (This placeholder is specific to external gift cards.) |
 | `giftcardexpiration`    | The expiration date of the gift card, for products of the gift card type. (This placeholder is specific to external gift cards.) |

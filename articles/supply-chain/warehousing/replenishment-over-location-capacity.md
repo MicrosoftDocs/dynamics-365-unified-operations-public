@@ -3,7 +3,7 @@
 
 title: Replenishment over location capacity
 description: This topic provides information about the Replenishment over location capacity feature. This feature enables all replenishment work that will be required for the day to be created and manages availability of that replenishment work to ensure that the picking location neither runs out of inventory nor goes above capacity. 
-author: mirzaab
+author: Mirzaab
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 

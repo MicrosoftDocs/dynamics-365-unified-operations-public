@@ -4,7 +4,7 @@
 title: Yearly tax communication
 description: This topic provides information about the yearly tax communication report in Italy. 
 author: anasyash
-ms.date: 11/03/2020
+ms.date: 05/02/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -34,11 +34,11 @@ The **Yearly tax communication** report contains annual tax information for Ital
 
 ## Prerequisites
 
-Set up Italian sales tax books by following the instructions in [Italian sales tax books](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/finance/localizations/emea-ita-fiscal-books.md#set-up-sales-tax-books).
+Set up Italian sales tax books by following the instructions in [Italian sales tax books](emea-ita-fiscal-books.md#set-up-sales-tax-books).
 
 ## Set up the Yearly tax communication report
 
-1. In Microsoft Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**.
+1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**.
 2. On the **Registration numbers** FastTab, in the **Tax registration number** field, enter the tax registration number of your company.
 3. On the **Tax registration** FastTab, in the **Fiscal code** field, enter the fiscal code of your company.
 4. In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2), in the Shared asset library, download the latest versions of the Electronic reporting (ER) configurations for the following value-added tax (VAT) declaration formats:
@@ -57,7 +57,7 @@ For more information, see [Download Electronic reporting configurations from Lif
 ![Yearly tax communication setup page.](media/1_Yearly_tax_communication_setup.png)
 
 > [!NOTE]
-> To view the "Yearly VAT communication" form for the year 2020, and instructions for it, see [Model and instructions - VAT 2020](https://www.agenziaentrate.gov.it/portale/web/guest/iva-2020/modello-e-istruzioni-imprese).
+> To view the "Yearly VAT communication" form for the year 2020, and instructions for it, see [Model and instructions - VAT 2020](https://www.agenziaentrate.gov.it/portale/web/guest/iva-2020/modello-e-istruzioni).
 
 9. On the **Field setup** tab, create lines, and set the following fields on them.
 
@@ -139,7 +139,7 @@ In the **Format** column, you can specify a field format. In addition to **NU**a
     |----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Tax communication ID | The identification number of the **Yearly tax communication** report.                                                                                                                                                                                                                                                      |
     | Years                | The year of the tax communication. This field is automatically set to the previous year. For example, if you're creating the report in 2020, this field is set to **2019**.                                                                                                                                                |
-    | ATECOFIN Code        | The tax code that is associated with the classification of possible company activities. This field is filled in from the **Italian sales tax books** page. For more information, see [Italian sales tax books](./emea-ita-fiscal-books.md#set-up-sales-tax-books). |
+    | ATECOFIN Code        | The tax code that is associated with the classification of possible company activities. This field is filled in from the **Italian sales tax books** page. For more information, see [Italian sales tax books](/dynamics365/finance/localizations/emea-ita-fiscal-books#set-up-sales-tax-books). |
     | Exported             | A value that indicates whether the .ivc file has been exported. This field and the next two fields are automatically set when you select **Export and generate file**.                                                                                                                                                     |
     | Date of export       | The date when the .ivc file was exported.                                                                                                                                                                                                                                                                                  |
     | Export file name     | The name of the .ivc file that was exported.                                                                                                                                                                                                                                                                               |

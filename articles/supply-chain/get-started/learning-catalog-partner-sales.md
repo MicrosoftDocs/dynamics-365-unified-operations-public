@@ -1,10 +1,10 @@
 ---
 title: Learning Catalog for Microsoft Partner sales and marketing roles for Dynamics 365 Supply Chain Management
 description: Find all the training options for people in Microsoft Partner sales and marketing roles who work with Dynamics 365 Supply Chain Management.
-author: margoc
+author: kamaybac
 ms.topic: article
 ms.date: 07/27/2020
-ms.author: margoc
+ms.author: kamaybac
 
 ms.prod:
 ms.technology:
@@ -13,7 +13,7 @@ ms.technology:
 
 # ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: Application user
-ms.reviewer: margoc
+ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.1

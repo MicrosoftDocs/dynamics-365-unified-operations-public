@@ -3,7 +3,7 @@
  
 title: Set up shipping carriers
 description: This topic shows how to set up a shipping carrier and define details such as service, shipment mode, transportation tender, transportation constraints, and shipping rate. 
-author: Henrikan
+author: Weijiesa
 ms.date: 07/19/2019
 ms.topic: business-process 
 ms.prod:  
@@ -18,7 +18,7 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: henrikan
+ms.author: weijiesa
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---

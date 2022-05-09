@@ -108,7 +108,6 @@ Only terminated workers can be deleted from Human Resources. Follow these steps 
 
 Compensation isn't assigned to contractors. Therefore, those steps can be skipped in the preceding process.
 
-An admin can search and export personal data in Microsoft Dynamics 365 Talent: Attract and Microsoft Dynamics 365 Talent: Onboard via <https://attract.talent.dynamics.com/personreport>.
 
 ## Additional resources
 You can learn more about the GDPR on the [European Union's website](https://europa.eu/) and on the [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx).

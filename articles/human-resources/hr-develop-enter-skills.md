@@ -17,7 +17,7 @@ ms.search.form: HcmSkill, HcmSkillGapProfile, HcmSkillMapping, HcmSkillType, Hcm
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 3361
 ms.assetid: c2ce94c0-933d-4edb-822c-7f0e7b49e4ee

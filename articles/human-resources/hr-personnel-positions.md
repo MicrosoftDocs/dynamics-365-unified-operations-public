@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.author: twheeloc
 ms.reviewer: twheeloc
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 269054
 ms.search.region: Global

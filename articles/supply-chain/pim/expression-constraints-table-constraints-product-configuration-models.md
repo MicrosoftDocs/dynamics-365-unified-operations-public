@@ -110,7 +110,7 @@ The following tables list the operators and infix notation that you can use when
 <tbody>
 <tr class="odd">
 <td>Implies</td>
-<td>This is true if the first condition is false, the second condition is true, or both.</td>
+<td>If condition a is true, then apply the contraint b.</td>
 <td>Implies[a, b], infix: a -: b</td>
 <td><ul>
 <li><strong>Operator:</strong> Implies[x != 0, y &gt;= 0]</li>
