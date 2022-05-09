@@ -3,7 +3,7 @@
 
 title: Create a new transportation management engine
 description: This topic describes how to create a new transportation management engine in Dynamics 365 Supply Chain Management. 
-author: Henrikan
+author: Weijiesa
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 51661
 ms.assetid: 0473acef-755e-4b42-acf5-5e5aa902dc0e
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: henrikan
+ms.author: weijiesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

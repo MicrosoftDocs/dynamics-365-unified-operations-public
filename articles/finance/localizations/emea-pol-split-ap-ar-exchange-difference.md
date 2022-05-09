@@ -4,7 +4,7 @@
 title: Split the realized exchange difference amount into the difference of the invoice net value and the VAT amount
 description: This topic explains how to split the realized exchange difference amount into the difference of the invoice net value and the value-added tax (VAT) amount.
 author: anasyash
-ms.date: 04/07/2020
+ms.date: 04/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 ms.custom: 414136
 ms.search.region: Poland
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: anasyash
 ms.dyn365.ops.version: 
 ms.search.validFrom: 2020-04-01
 
@@ -61,6 +61,10 @@ Follow these steps to set up a ledger account that can be used to post the excha
 ## Post and settle customer and vendor transactions
 
 Post and settle documents in the usual way. The exchange difference transaction that is created during settlement will generate a voucher, where the exchange difference amount that is related to the tax amount is posted separately to the ledger account that you selected in the **Tax posting account** field on the **Currency revaluation accounts** page.
+
+## Known limitations
+
+You shouldn't use this feature if you post vendor invoices by using the **Invoice register** and **Invoice approval** journals.
 
 ## Examples
 

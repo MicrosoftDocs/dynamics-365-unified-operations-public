@@ -15,7 +15,7 @@ ms.search.form: LedgerPeriodCloseProjectWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 13791
 ms.assetid: 6ee51758-639b-448e-9cb2-56cf1d804273

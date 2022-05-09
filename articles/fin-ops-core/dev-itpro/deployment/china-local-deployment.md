@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Dynamics 365 Finance and Dynamics 365 Supply Chain Management operated by 21Vianet in China 
-description: This topic provides information about Dynamics 365 Finance and Dynamics 365 Supply Chain Management - operated by 21Vianet in China.
+title: Dynamics 365 Finance, Supply Chain Management, and Commerce operated by 21Vianet in China 
+description: This topic provides information about Dynamics 365 Finance, Supply Chain Management, and Commerce operated by 21Vianet in China.
 author: kfend
 ms.date: 04/11/2022
 ms.topic: article
@@ -27,7 +27,7 @@ ms.dyn365.ops.version:
 
 ---
 
-# Dynamics 365 Finance and Dynamics 365 Supply Chain Management operated by 21Vianet in China
+# Dynamics 365 Finance, Supply Chain Management, and Commerce operated by 21Vianet in China
 
 [!include [banner](../includes/banner.md)]
 
@@ -88,7 +88,7 @@ Due to certain technical dependencies, the following features listed will not be
 
     -   The **System administration \> Setup \> B2B Invitation configuration** page will not be available due to business-to-business (B2B) being unavailable in Azure Active Directory in China. For more information, see [What is guest user access in Azure Active Directory B2B](/azure/active-directory/b2b/what-is-b2b).
 
--   [Conditional access](/azure/active-directory/conditional-access/technical-reference) is an Azure Active Directory feature that is available for the Azure Active Directory Premium 2 SKU. This is unavailable in China. 
+-   [Conditional access](/azure/active-directory/conditional-access/technical-reference) is an Azure Active Directory feature that is available for the Azure Active Directory Premium 1 SKU. 
 -   The Microsoft Dynamics 365 Payment Connector for PayPal is not available in China.
 
 ## Additional resources

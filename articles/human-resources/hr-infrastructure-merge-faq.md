@@ -16,7 +16,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -237,6 +237,3 @@ Existing users of Dynamics 365 apps and users of stand-alone Dynamics 365 Financ
 
 Additional environments aren't required to support the infrastructure change.
 
-### Where should I go if I have additional questions about product licensing?
-
-If you have licensing questions, you can find more information on [Biz Apps Hub – D365 Pricing and Licensing](https://businessapplications.transform.microsoft.com/resources/pricing-and-licensing?tab=grandfathering). If that information doesn't help with your issue, open a request with LicenseQ.

@@ -14,8 +14,8 @@ ms.technology:
 ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschloma
-ms.search.scope: Core, Operations
+ms.reviewer: twheeloc
+
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global

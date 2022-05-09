@@ -16,7 +16,7 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: 
+
 # ms.tgt_pltfrm: 
 ms.custom: ["260624", "intro-internal"]
 ms.assetid: 

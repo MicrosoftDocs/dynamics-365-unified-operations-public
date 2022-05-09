@@ -3,7 +3,7 @@
 
 title: Warehouse slotting
 description: This topic provides information about warehouse slotting. Warehouse slotting lets you consolidate demand by item and unit of measure from orders that have a status of Ordered, Reserved, or Released. It helps warehouse managers intelligently plan picking locations before they release orders to the warehouse and create picking work.
-author: mirzaab
+author: Mirzaab
 ms.date: 11/13/2020
 ms.topic: article
 ms.prod: 

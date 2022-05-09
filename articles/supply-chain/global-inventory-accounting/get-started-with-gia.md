@@ -1,7 +1,7 @@
 ---
 title: Get started with Global Inventory Accounting
 description: This topic describes how to get started with Global Inventory Accounting.
-author: AndersGirke
+author: JennySong-SH
 ms.date: 06/18/2021
 ms.topic: article
 # ms.search.form: [Operations AOT form name to tie this topic to]
@@ -9,7 +9,7 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.custom: "intro-internal"
 ms.search.region: Global
-ms.author: aevengir
+ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
 ---

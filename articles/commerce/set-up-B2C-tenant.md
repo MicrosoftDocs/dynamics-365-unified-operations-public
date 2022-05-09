@@ -4,7 +4,7 @@
 title: Set up a B2C tenant in Commerce
 description: This topic describes how to set up your Azure Active Directory (Azure AD) business-to-consumer (B2C) tenants for user site authentication in Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 02/11/2022
+ms.date: 05/05/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -141,9 +141,9 @@ You can choose to use the default user flows provided by Azure AD, which will di
 
 To customize the user policy pages with pages built in Dynamics 365 Commerce, see [Set up custom pages for user logins](custom-pages-user-logins.md). For additional information, see [Customize the interface of user experiences in Azure Active Directory B2C](/azure/active-directory-b2c/tutorial-customize-ui).
 
-### Create a sign up and sign in user flow policy
+### Create a sign-up and sign-in user flow policy
 
-To create a sign up and sign in user flow policy, follow these steps.
+To create a sign-up and sign-in user flow policy, follow these steps.
 
 1. In the Azure portal, select **User flows (policies)** in the left navigation pane.
 1. On the **Azure AD B2C – User flows (policies)** page, select **New User Flow**.
@@ -163,7 +163,7 @@ To create a sign up and sign in user flow policy, follow these steps.
 
 1. Select **Create**.
 
-The following image is an example of the Azure AD B2C sign up and sign in user flow.
+The following image is an example of the Azure AD B2C sign-up and sign-in user flow.
 
 ![Sign Up and Sign In policy settings.](./media/B2CImage_11.png)
 
@@ -243,15 +243,15 @@ To add and set up a social identity provider, follow these steps.
 
 1. In the Azure portal, navigate to **Identity Providers**.
 1. Select **Add**. The **Add identity provider** screen appears.
-1. Under **Name**, enter the name to be displayed to users on your sign in screen.
+1. Under **Name**, enter the name to be displayed to users on your sign-in screen.
 1. Under **Identity provider type**, select an identity provider from the list.
 1. Select **OK**.
 1. Select **Set up this identity provider** to access the **Set up the social identity provider** screen.
 1. Under **Client ID**, enter the client ID as obtained from the identity provider application setup.
 1. Under **Client secret**, enter the client secret as obtained from the identity provider application setup.
-1. Attach user flow for sign in sign up policies:
+1. Attach user flow for sign-in/sign-up policies:
 1. Go to **Azure AD B2C – User flows (policies) \> {your sign-in sign-up policy} \> Identity providers**.
-1. To attach the sign in/sign up user flow policy, select each identity provider you have set up for your account. To test these, select **Run user flow** for each identity provider. A new tab will display the sign-in page displaying the new identity provider selection box.
+1. To attach the sign-in/sign-up user flow policy, select each identity provider you have set up for your account. To test these, select **Run user flow** for each identity provider. A new tab will display the sign-in page displaying the new identity provider selection box.
 
 The following image shows examples of the **Add identity provider** and **Set up the social identity provider** screens in Azure AD B2C.
 
@@ -336,27 +336,28 @@ To add your Azure AD B2C tenant application information to Commerce, follow thes
 
 1. Sign in as an administrator to Commerce site builder for your environment.
 1. In the left navigation pane, select **Tenant Settings**  to expand it.
-1. Under **Tenant Settings**, select **B2C Settings**. 
-1. In the main window next **B2C Applications**, select **Manage**. (If your tenant appears in the B2C Applications list, then it was already added by an administrator. Verify that the items in step 6 below match your B2C Application.)
-1. Select **Add B2C Application**.
+1. Under **Tenant Settings**, select **Site authentication setup**. 
+1. In the main window next to **Site authentication profiles**, select **Manage**. (If your tenant appears in the site authentication profiles list, then it was already added by an administrator. Verify that the items in step 6 below match those for your intended B2C setup. A new profile can also be created using similar Azure AD B2C tenants or applications to account for minor differences, such as differing user policy IDs).
+1. Select **Add site authentication profile**.
 1. Enter the following required items in the form displayed, using values from your B2C tenant and application. Fields that are not required (those without an asterisk) may be left blank.
 
     - **Application Name**: The name for your B2C Application, for example "Fabrikam B2C".
     - **Tenant Name**: The name of your B2C tenant (for example, use "fabrikam" if the domain appears as "fabrikam.onmicrosoft.com" for the B2C tenant). 
     - **Forget Password Policy ID**: The forget password user flow policy ID, for example "B2C_1_PasswordReset".
-    - **Signup Signin Policy ID**: The sign up and sign in user flow policy ID, for example "B2C_1_signup_signin".
+    - **Signup Signin Policy ID**: The sign-up and sign-in user flow policy ID, for example "B2C_1_signup_signin".
     - **Client GUID**: The B2C application ID, for example "22290eb2-c52e-42e9-8b35-a2b0a3bcb9e6".
     - **Edit Profile Policy ID**: The profile editing user flow policy ID, for example "B2C_1A_ProfileEdit".
 
 1. Select **OK**. You should now see the name of your B2C application appear in the list.
 1. Select **Save** to save your changes.
 
+The optional **Login custom domain** field should only be used if you are setting up a custom domain for the Azure AD B2C tenant. For additional details and considerations regarding the usage of the **Login custom domain** field, see [Additional B2C information](#additional-b2c-information) below.
+
 ### Associate the B2C application to your site and channel
 
 > [!WARNING]
-> If your site is already associated with a B2C application, changing to a different B2C application will remove the current references established for users already signed up in this environment. If changed, any credentials associated with the currently-assigned B2C application will not be available to users. 
-> 
-> Only update the B2C application if you are setting up the channel's B2C application for the first time or if you intend to have users re-sign up with new credentials to this channel with the new B2C application. Take caution when associating channels to B2C applications, and name applications clearly. If a channel is not associated to a B2C application in the steps below, users signing into that channel for your site will be entered into the B2C application showing as **default** in the **Tenant Settings \> B2C Settings** list of B2C applications.
+> - If your site is already associated with a B2C application, changing to a different B2C application will remove the current references established for users already signed up in this environment. If changed, any credentials associated with the currently-assigned B2C application will not be available to users. 
+> - Only update the B2C application if you are setting up the channel's B2C application for the first time or if you intend to have users sign up again with new credentials to this channel with the new B2C application. Take caution when associating channels to B2C applications, and name applications clearly. If a channel is not associated to a B2C application in the steps below, users signing into that channel for your site will be entered into the B2C application showing as **default** in the **Tenant Settings \> B2C Settings** list of B2C applications.
 
 To associate the B2C application to your site and channel, follow these steps.
 
@@ -382,6 +383,23 @@ For additional information regarding customizing Azure AD B2C interactions and p
 ### Secondary admin
 
 An optional, secondary administrator account can be added in the **Users** section of your B2C tenant. This can be a direct account or a general account. If you need to share an account across team resources, a common account can also be created. Due to the sensitivity of the data stored in Azure AD B2C, a common account should be monitored closely per your company's security practices.
+
+### Set up a custom sign-in domain
+
+Azure AD B2C allows you to set up a custom sign-in domain for the Azure AD B2C tenant. For instructions, see [Enable custom domains for Azure Active Directory B2C](/azure/active-directory-b2c/custom-domain). 
+
+If you use a custom sign-in domain, the domain must be entered into Commerce site builder.
+
+To enter a custom sign-in domain in site builder, follow these steps.
+
+1. In the top right corner of site builder, select the site switcher, and then select **Manage sites**.
+1. In the left navigation pane, select **Tenant settings \> Site authentication setup**.
+1. In the **Site authentication profiles** section, select **Manage**.
+1. In the flyout menu on the right, select the **Edit** button (pencil symbol) next to the site authentication profile you want to enter a custom domain for.
+1. In the **Edit site authentication profile** dialog box, under **Login custom domain**, enter your custom sign-in domain (for example, 'login.fabrikam.com').
+
+> [!WARNING]
+> When you update to a custom domain for the Azure AD B2C tenant, the change affects the tenant's issuer details for the token generated. Issuer details will then include the custom domain instead of the default domain provided by Azure AD B2C. A different **Issuer** configuration in Commerce headquarters (**Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters \> Identity Providers**) changes the system's interaction with site users, potentially creating a new customer record if a user is authenticating against the new issuer. Any custom domain changes should be thoroughly tested before switching to the custom domain in a live Azure AD B2C environment.
 
 ## Additional resources
 

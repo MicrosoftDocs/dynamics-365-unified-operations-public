@@ -59,6 +59,7 @@ Once the features are turned on, select the functionality with the following ste
 > [!Note] 
 > Once **HR recruitment** is selected, **Recruitment projects** (legacy) will be read only. 
 
+
 ## Add a recruiting request location
 
 If your organization has multiple locations, you can add them so requestors can select a location where the new recruit will be working. The location will be included in the job posting.

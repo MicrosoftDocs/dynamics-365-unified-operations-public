@@ -15,7 +15,7 @@ ms.search.form: DefaultDashboard
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: ["260624", "intro-internal"]
 ms.assetid: 

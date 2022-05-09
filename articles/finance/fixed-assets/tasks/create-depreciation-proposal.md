@@ -12,7 +12,7 @@ ms.technology:
 ms.search.form: LedgerJournalTable, LedgerJournalTransAsset   
 audience: Application User 
 # ms.devlang:
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -31,7 +31,7 @@ This topic describes how depreciation batch proposals work and explains how to p
 
 
 ## Create a depreciation proposal
-1. In the navigation pane, go to **Modules > Fixed assets > Journal entries > Create depreciation proposal**.
+1. In the navigation pane, go to **Fixed assets > Journal entries > Create depreciation proposal**.
 2. In the **Name of journal** field, select an option from the drop-down menu.
 3. In the **To date** field, enter a date.
 

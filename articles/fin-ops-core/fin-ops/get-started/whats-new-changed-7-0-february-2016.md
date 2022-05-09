@@ -974,7 +974,7 @@ There is an improved "low-touch" client component installation via self-service 
 </tr>
 <tr>
 <td>Monitor the health of the system, and diagnose errors and issues.</td>
-<td>This functionality requires <a href="https://www.microsoft.com/download/details.aspx?id=42636">System Center 2012 Management Pack for Microsoft Dynamics AX 2012 R3 CU8 Retail</a>.</td>
+<td>This functionality requires <a href="https://www.microsoft.com/en-us/download/details.aspx?id=58205">System Center 2012 Management Pack for Microsoft Dynamics AX 2012 R3 CU8 Retail</a>.</td>
 <td>Monitoring and diagnostics for Retail components is now available through the <strong>Operational Insights</strong> dashboard in LCS.</td>
 <td>The <strong>Operational Insights</strong> dashboard is a cloud-based monitoring portal that replaces the need to install the System Center Operations Manager (SCOM) infrastructure.</td>
 </tr>

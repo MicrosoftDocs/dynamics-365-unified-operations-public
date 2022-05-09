@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: PurchTable, PurchCreateOrder, PurchEditLines, VendEditInvoice, VendEditInvoiceDefaultQuantityForLinesDropDialog,  VendJournalMatch_PackingSlip, VendInvoiceMatchingDetails   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global

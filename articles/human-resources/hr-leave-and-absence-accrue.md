@@ -16,7 +16,7 @@ ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -110,8 +110,10 @@ Delete accrual records for a specific plan and date range. Accrual dates must be
 **Leave accrual audit** displays each time you run or delete an accrual for one or all employees. The date and person who performed the action also displays.
 
 1. On the **Leave and absence** page, select the **Links** tab.
-
 2. Under **Manage leave**, select **Delete leave accrual audit**.
+
+## Leave accrual rounding
+When an employee is either enrolled or unenrolled, leave accrual rounding will be prorated. Previously, rounding was only allowed when a leave plan was set to prorate, and an employee was enrolled/unenrolled during mid-period. Leave accruals will now round regardless of enrollment/unenrollment at mid-period or at the start of a period.
 
 ## Leave accrual transaction auditing
 

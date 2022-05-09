@@ -3,7 +3,7 @@
 
 title: Cancel a return order  
 description: You can cancel a return order, instead of deleting it, when you want to save a record of the planned return.
-author: kamaybac
+author: sorenva
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kamaybac
+ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

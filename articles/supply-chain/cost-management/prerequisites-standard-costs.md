@@ -3,7 +3,7 @@
 
 title: Prerequisites for standard costs overview
 description: This topic describes the basic steps for using standard costs. 
-author: AndersGirke
+author: JennySong-SH
 ms.date: 07/25/2019
 ms.topic: overview
 ms.prod: 
@@ -21,7 +21,7 @@ ms.reviewer: kamaybac
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: aevengir
+ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

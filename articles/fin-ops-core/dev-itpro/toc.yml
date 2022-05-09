@@ -14,6 +14,8 @@
         items:
         - name: What's new or changed in Platform updates home page
           href: get-started/whats-new-home-page.md
+        - name: Platform updates for version 10.0.27 (July 2022)
+          href: get-started/whats-new-platform-updates-10-0-27.md
         - name: Platform updates for version 10.0.26 (May 2022)
           href: get-started/whats-new-platform-updates-10-0-26.md
         - name: Platform updates for version 10.0.25 (April 2022)
@@ -48,10 +50,6 @@
       items:
       - name: Integration between Finance and Operations apps and third-party services
         href: data-entities/integration-overview.md
-      - name: Priority-based throttling
-        hreF: data-entities/priority-based-throttling.md
-      - name: Priority-based throttling FAQ
-        href: data-entities/throttling-faq.md
       - name: Data integration APIs
         items:
         - name: Data management package REST API
@@ -72,6 +70,18 @@
           href: data-entities/recurring-integrations.md
         - name: Test services using third-party utilities
           href: data-entities/third-party-service-test.md
+      - name: Service protection limits
+        items:
+        - name: Service protection API limits
+          href: data-entities/service-protection-api-limits.md
+        - name: Throttling prioritization
+          href: data-entities/priority-based-throttling.md
+        - name: Retry operations
+          href: data-entities/service-protection-retry-operations.md
+        - name: Monitor API throttling
+          href: data-entities/service-protection-monitoring.md
+        - name: Maximize API throughput
+          href: data-entities/service-protection-maximizing-api-throughput.md
       - name: Finance and Operations Connector
         href: data-entities/fin-ops-connector.md
       - name: Development for integration
@@ -470,16 +480,14 @@
           href: help/language-locale.md
         - name: Extend, customize, and collaborate on the help
           href: help/contributor-guide.md
-      - name: Deployment considerations
+      - name: Finance and Operations apps regional services
         items:
-        - name: Sovereign and local cloud deployment options for Dynamics 365 Finance and Dynamics 365 Supply Chain Management
+        - name: Local geographies
           href: deployment/deployment-options-geo.md
-        - name: Finance and Supply Chain Management in US Government Community Cloud (GCC)
+        - name: US Government Community Cloud (GCC)
           href: deployment/us-gcc-deployment.md
-        - name: Finance and Supply Chain Management operated by 21Vianet in China
+        - name: China Operated by 21Vianet
           href: deployment/china-local-deployment.md
-        - name: Finance and Operations apps in France
-          href: deployment/france-local-deployment.md
     - name: Develop and customize
       items:
       - name: Develop and customize home page
@@ -557,7 +565,7 @@
           - name: Create models and data model elements overview
             href: dev-tools/create-data-model-elements.md
           - name: Naming guidelines for extensions
-            href: /dynamics365/fin-ops-core/dev-itpro/naming-guidelines-extensions
+            href: /dynamics365/fin-ops-core/dev-itpro/extensibility/naming-guidelines-extensions
           - name: Turn off model customization and deprecate functionality
             href: dev-tools/lock-models.md
         - name: Customization Analysis Report
@@ -1716,6 +1724,22 @@
             href: migration-upgrade/migrate-upgraded-cube-entity-store.md
           - name: Upgrade budget planning
             href: migration-upgrade/upgrade-budget-planning.md
+        - name: Troubleshoot the upgrade
+          items:
+          - name: Troubleshoot development environments during upgrade
+            href: migration-upgrade/troubleshoot-dev-env.md
+          - name: Troubleshoot upgrades to self-service environments
+            href: migration-upgrade/troubleshoot-self-service-env.md
+          - name: Troubleshoot PreSync and PostSync upgrade scripts
+            href: migration-upgrade/pre-post-upgrade-scripts.md
+        - name: Environment operations
+          items:
+          - name: Migrate document attachments
+            href: migration-upgrade/migrate-doc-attachments-ax-2012.md
+          - name: Clean up source data for upgrade
+            href: migration-upgrade/clean-up-source-data-upgrade.md
+          - name: Compress tables in Dynamics AX 2012 environments
+            href: migration-upgrade/compress-tables-ax-2012.md
       - name: Migrate data from AX 2009
         items:
         - name: Migrate data from AX 2009 to Finance and Operations
@@ -2002,3 +2026,5 @@
     href: ../../finance/index.md
   - name: Dynamics 365 Commerce
     href: ../../commerce/index.md
+  - name: Dynamics 365 Human Resources
+    href: ../../human-resources/index.md

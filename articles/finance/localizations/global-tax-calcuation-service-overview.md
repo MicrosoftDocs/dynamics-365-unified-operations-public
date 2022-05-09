@@ -15,7 +15,7 @@ ms.search.form: TaxIntegrationTaxServiceParameters
 audience: Application user
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+
 # ms.tgt_pltfrm: 
 
 ms.search.region: Global
@@ -84,6 +84,7 @@ We recommend that you import and set up your Tax Calculation configuration with 
 | 10.0.24         | Tax Calculation Configuration 40.50.225 |
 | 10.0.25         | Tax Calculation Configuration 40.50.225 |
 | 10.0.26         | Tax Calculation Configuration 40.54.234 |
+| 10.0.27         | Tax Calculation Configuration 40.54.234 |
 
 
 ## Data flow

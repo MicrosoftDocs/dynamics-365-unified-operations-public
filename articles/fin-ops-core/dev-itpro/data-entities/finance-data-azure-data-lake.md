@@ -4,7 +4,7 @@
 title: Export to Data Lake in Finance and Operations apps
 description: This topic explains how to choose data in a Finance and Operations apps environment so that the data is available in a data lake.
 author: MilindaV2
-ms.date: 04/19/2022
+ms.date: 04/28/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform Update 34
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> The **Export to Data Lake** feature is generally available in the United States, Canada, United Kingdom, Europe, South East Asia, East Asia, Australia, India, and Japan regions. If your Finance and Operations environment is in any of those regions, you will be able to install the **Export to Data Lake** add-in in it. Microsoft will enable this feature in additional regions in the future. You can join the [preview Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all) to stay in touch and ask questions that will help you understand the feature and upcoming improvements.
+> The **Export to Data Lake** feature is generally available in the United States, Canada, United Kingdom, Europe, South East Asia, East Asia, Australia, India, Latin America, and Japan regions. If your Finance and Operations environment is in any of those regions, you will be able to install the **Export to Data Lake** add-in in it. Microsoft will enable this feature in additional regions in the future. You can join the [Project Como Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all) to stay in touch and ask questions that will help you understand the feature and upcoming improvements.
 
 The **Export to Data Lake** feature lets you copy data from your Finance and Operations apps into your own data lake (Azure Data Lake Storage Gen2). The system lets you select the tables and entities that are included. After you select the data that you want, the system makes an initial copy. The system then keeps the selected data up to date by applying changes, deletions, and additions. After data changes in your Finance and Operations app instances, there might be a delay of a few minutes before the data is available in your data lake.
 
@@ -42,16 +42,16 @@ Before you can use this feature, see [Install the Export to Azure Data Lake Add-
 ## Select data
 
 > [!NOTE]
-> If the feature, **Export to Azure Data Lake** isn't available in the **Feature management** module in your environment, sign in to the environment and add the following to the URL in your browser address: &mi=DataFeedsDefinitionWorkspace. For example, https://ax123456.cloud.test.dynamics.com/?cmp=USMF&mi=DataFeedsDefinitionWorkspace.
+> If the feature, **Export to Azure Data Lake** isn't available in the **Feature management** module in your environment, sign in to the environment and add the following to the URL in your browser address: &mi=DataFeedsDefinitionWorkspace. For example, `https://ax123456.cloud.test.dynamics.com/?cmp=USMF&mi=DataFeedsDefinitionWorkspace`.
 
-You can select the tables and entities that should be staged in Data Lake.
+You can select the tables and entities that should be staged in data lake.
 
 1. In your environment, go to **System Administration** \> **Setup** \> **Export to Data Lake**.
 
     You can also open the **Export to Data Lake** page by using the search field on the navigation bar. Enter **Configure** in the search field. The search results should include a link to the page.
 
-2. On the **Export to Data Lake** page, on the **Choose Tables** tab, select the data tables that should be staged in Data Lake. You can search for tables by either display name or system name. You can also see whether a table is being synced. 
-3. When you've finished, select **Add Tables** to add the selected tables to Data Lake.
+2. On the **Export to Data Lake** page, on the **Choose Tables** tab, select the data tables that should be staged in the data lake. You can search for tables by either display name or system name. You can also see whether a table is being synced. 
+3. When you've finished, select **Add Tables** to add the selected tables to the data lake.
 
     ![Selecting tables.](./media/Export-Table-to-Data-lake-Tables-Running-state.png)
 
@@ -70,11 +70,11 @@ You can select the tables and entities that should be staged in Data Lake.
 
     ![Selecting tables by using entities.](./media/Export-Table-to-Data-lake-Entities-Running-state.png)
 
-    Regardless of the method that you use to select tables, the tables will be staged in Data Lake.
+    Regardless of the method that you use to select tables, the tables will be staged in the data lake.
 
-## Monitor the tables in Data Lake
+## Monitor the tables in the data lake
 
-You don't have to monitor or schedule data exports, because the system keeps the data updated in Data Lake. However, you can view the status of ongoing data exports in the **Status** column on the **Export to Data Lake** page. 
+You don't have to monitor or schedule data exports, because the system keeps the data updated in the data lake. However, you can view the status of ongoing data exports in the **Status** column on the **Export to Data Lake** page. 
 
 When you select data, the Export to Azure Data Lake service makes an initial copy of the data in the data lake. If you select multiple tables, the system makes the initial copy by taking 10 tables at a time. Depending on the size of the data and the number of records in the table, this process might take a few minutes or even a few hours. The export progress is shown on-screen.
 
@@ -89,19 +89,22 @@ The Export to Data Lake page in a Finance and Operations environment shows the t
 ### Export to Data Lake feature is not available in your region and/or your environment at this time
 This feature is not available in Tier-1 (developer) environments. You need a sandbox environment (Tier 2 or higher) with Platform updates for version 10.0.13 or higher.
 
-This feature is in limited preview and may not be available in all Azure regions where Finance and Operations apps are available, or this feature may not be available for your environment. If you would like to join a future preview, [complete the survey](https://aka.ms/FnODataLakePreviewSurvey). We will contact you when we are ready to include you. You can also join a Yammer group by completing the survey. You can use the Yammer group to stay in contact and ask questions that will help you understand the feature. We are working hard to make this feature available soon.
+This feature may not be available in all Azure regions where Finance and Operations apps are available, or this feature may not be available for your environment. If you would like to join a future preview, [complete the survey](https://aka.ms/FnODataLakePreviewSurvey). We will contact you when we are ready to include you. You can also join a Yammer group by completing the survey. You can use the Yammer group to stay in contact and ask questions that will help you understand the feature. We are working hard to make this feature available soon.
 
 ### Export to Data Lake feature is currently being installed for your environment. Please check back later.
-Before you can use this feature, you need to configure the export to Data Lake. For more information, see [Configure export to Azure Data Lake](configure-export-data-lake.md).
+Before you can use this feature, you need to configure the export to the data lake. For more information, see [Configure export to Azure Data Lake](configure-export-data-lake.md).
 
 ### Export to Data Lake add-in is not installed. 
-Ask your administrator to install this add-in using Dynamics Lifecycle Services (LCS). Before you can use this feature, you need to configure the export to Data Lake. For more information, see [Configure export to Azure Data Lake](configure-export-data-lake.md).
+Ask your administrator to install this add-in using Dynamics Lifecycle Services (LCS). Before you can use this feature, you need to configure the export to the data lake. For more information, see [Configure export to Azure Data Lake](configure-export-data-lake.md).
 
 ### Export to Data Lake feature failed to install in Dynamics Life Cycle Services (LCS). 
 Ask your administrator to re-install the Export to Data Lake add-in. If this issue persists, contact Support. When you configure the Export to Data Lake feature, the system may report an error. Or, there may be an error when you access the data lake after configuration due to a change in your environments. For more information, see [Configure export to Azure Data Lake](configure-export-data-lake.md).
 
 ### Export to Data Lake feature is temporarily unavailable. Please check back later.
 If you see this error for a prolonged period of time, contact Support.  
+
+### Memo fields are missing in the data lake
+The system does not export fields of type Memo, nVarchar(max), VarBinary, or Blob types into the data lake. If you choose a table with fields of these types, the system will ignore these fields and export others. We are working on enabling these special fields in the future. If you would like to stay in touch with the product team and learn about upcmoing features, you can join the [Project Como Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all).
 
 ### Status codes with extended errors
 When an error occurs in a table that you added to Export to Data Lake, you may see an error code in the status column. The following error codes provide the cause of the error and how to correct the issue.
@@ -110,7 +113,7 @@ When an error occurs in a table that you added to Export to Data Lake, you may s
 
 | Error code | Issue                                                                  | Next steps                                                                                                                                                                                                                                                                                                                                                                     |
 |------------|-----------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 400        | The table you added doesn't contain a RecID field.                   | RecID fields are used by the system to index table data. Tables that don't contain a RecID field can't be added to the Data Lake. If this issue is from a table in a Finance and Operations app, contact Microsoft support. If this table was developed by your partner or ISV, contact the developer to include a RecID field.                                  |
+| 400        | The table you added doesn't contain a RecID field.                   | RecID fields are used by the system to index table data. Tables that don't contain a RecID field can't be added to the data lake. If this issue is from a table in a Finance and Operations app, contact Microsoft support. If this table was developed by your partner or ISV, contact the developer to include a RecID field.                                  |
 | 401        | The table you added is missing in the database. | The table you added is no longer available in the database and the system can't continue updating data in the lake. The table may have been removed because of a software or database update. To resolve this issue, contact your database administrator or a developer. If this table was developed by your partner or ISV, contact the developer.  <br><br> You may also encounter this issue when you add "derived tables" such as the DirPerson table. Derived tables are currently not supported by the service. To choose derived tables, you need to choose the base table. There are plans to add support for derived tables in a future release.               |
 | 402        | The RecID field isn't indexed.                                            | The system has detected that the RecID field contained in the table isn't part of an index or is not the first field in an index. This may lead to poor performance in updating the data lake and updates may take longer to reflect in the data lake. You can include the RecID field in an index to resolve this issue. If this issue is from a table in a Finance and Operations app, contact Microsoft support. If this table was developed by your partner or ISV, contact the developer. |
 | 409        | Failed to access the storage account due to permissions. Verify the storage account configuration.      | The system is unable to access and write to the storage account. Ensure that you have enabled Hierarchical Name Spaces (HNS) and validate access roles. For more information, see [Configure export to Azure Data Lake - Grant access](configure-export-data-lake.md#grantaccess). To resolve this issue, contact the system administrator or the LCS administrator who configured the system. |

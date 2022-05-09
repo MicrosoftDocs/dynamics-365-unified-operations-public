@@ -3,8 +3,8 @@
 
 title: End of mainstream support for Microsoft Dynamics AX 2009, Dynamics AX 2012, Dynamics AX 2012 R2, and Dynamics AX 2012 R3
 description: This topic provides details about the end of  mainstream support for Microsoft Dynamics AX 2009, Dynamics AX 2012, Dynamics AX 2012 R2, and Dynamics AX 2012 R3.
-author: ShellyBakke
-ms.date: 04/19/2022
+author: sericks007
+ms.date: 05/03/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -19,7 +19,7 @@ ms.reviewer: sericks
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: smiller
+ms.author: sericks
 ms.search.validFrom: 2018-10-31 
 ms.dyn365.ops.version: 8.1
 ---
@@ -87,10 +87,10 @@ Yes, in LCS Issue Search, information is published regarding upcoming regulatory
 Yes, for larger features, we publish this information in [Globalization resources](../../dev-itpro/lcs-solutions/country-region.md).
 
 ### Can I view and try actual regulatory features in Dynamics 365 prior to a release?
-Yes, you can do this if you have purchased cloud licenses for Dynamics 365 and you have access to the Preview Early Access Program (PEAP). For regulatory changes specified by authorities early, the features will be available in PEAP prior to the law-enforced date (or latest date for first filing).
+Yes, you can do this if you have purchased cloud licenses for Dynamics 365. All service updates are made available for preview through the Shared Asset Library in Lifecycle Services. For regulatory changes specified by authorities early, the features will be available in Preview prior to the law-enforced date (or latest date for first filing).
 
 ### Can I access the code and configurations for regulatory features prior to a release?
-Yes, the code will be available in the LCS project **PEAP Assets**, in the Shared asset library under **Software deployable package**.  To sign  up for the PEAP program, complete the [Preview Early Access Program for Finance and Operations applications](https://aka.ms/peap) survey. 
+Yes, beginning with 10.0.26, preview packages for every service update are made available to all customers through the Shared Asset Library in LCS, under **Software deployable package**. 
 
 Configurations are available in the Global repository. For more information, see [Download ER configurations from the Global repository of Configuration service](../../dev-itpro/analytics/er-download-configurations-global-repo.md).
 

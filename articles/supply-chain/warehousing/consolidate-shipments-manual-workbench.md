@@ -3,7 +3,7 @@
 
 title: Consolidate shipments by using the shipment consolidation workbench
 description: This topic presents a scenario where multiple orders are released to the warehouse and then consolidated into shipments later by using the shipment consolidation workbench.
-author: GarmMSFT
+author: Mirzaab
 ms.date: 05/12/2020
 ms.topic: article
 ms.prod:

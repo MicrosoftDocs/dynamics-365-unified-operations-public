@@ -5,7 +5,7 @@ title: Auto-update for Commerce Scale Unit (cloud)
 description: This topic describes auto-updates for Commerce Scale Unit (cloud).
 author: AamirAllaq
 manager: tonyafehr
-ms.date: 07/19/2021
+ms.date: 05/03/2022
 ms.topic: article
 ms.prod: 
 
@@ -17,7 +17,7 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Retail, Operations 
+
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -44,7 +44,7 @@ The following limitations currently exist and are planned to be resolved in upco
 
 - In-app notifications are not available.
 - If you have multiple Commerce Scale Units in a sandbox UAT environment, Commerce Scale Unit will only be auto-updated based on the first Commerce Scale Unit in that environment (alphabetically). The remaining Commerce Scale Units in each sandbox UAT environment will need to be self-updated.
-- Auto-update for Commerce Scale Unit is not currently available for First Release customers, and is not currently applicable for Preview Early Access Program (PEAP).
+- Auto-update for Commerce Scale Unit is not currently available for First Release customers, and is not currently applicable for Preview builds.
 
 ## Downtime duration and impact
 

@@ -2,7 +2,7 @@
 title: Download Retail SDK samples and reference packages from GitHub and NuGet
 description: This topic explains to how to download Retail software development kit (SDK) samples from GitHub and reference packages from a public feed.
 author: mugunthanm
-ms.date: 08/13/2020
+ms.date: 05/03/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -143,16 +143,16 @@ Use the packages from [index.json](https://pkgs.dev.azure.com/commerce-partner/R
 
 | Package version  | Application release      |
 | ---------------- | ------------------------ |
-| 9.28.x.x-preview | 10.0.18 PEAP release     |
+| 9.28.x.x-preview | 10.0.18 PEAP/Preview release     |
 | 9.28.x.x         | 10.0.18 Customer preview |
 | 9.28.x.x         | 10.0.18 GA               |
-| 9.29.x.x-preview | 10.0.19 PEAP release     |
+| 9.29.x.x-preview | 10.0.19 PEAP/Preview release     |
 | 9.29.x.x         | 10.0.19 Customer preview |
 | 9.29.x.x         | 10.0.19 GA               |
-| 9.30.x.x-preview | 10.0.20 PEAP release     |
+| 9.30.x.x-preview | 10.0.20 PEAP/Preview release     |
 | 9.30.x.x         | 10.0.20 Customer preview |
 | 9.30.x.x         | 10.0.20 GA               |
-| 9.31.x.x-preview | 10.0.21 PEAP release     |
+| 9.31.x.x-preview | 10.0.21 PEAP/Preview release     |
 | 9.31.x.x         | 10.0.21 Customer preview |
 | 9.31.x.x         | 10.0.21 GA               |
 
@@ -180,7 +180,7 @@ To set up an Azure pipeline, see [Set up a build pipeline for the independent-pa
 
 For detailed information about the Git branching strategy, see [Git branching strategy](/azure/devops/repos/git/git-branching-guidance).
 
-The following branching strategies are based on the way that Microsoft uses Git. For more information, see [How we use Git at Microsoft](/azure/devops/learn/devops-at-microsoft/use-git-microsoft.md).
+The following branching strategies are based on the way that Microsoft uses Git. For more information, see [How we use Git at Microsoft](/azure/devops/learn/devops-at-microsoft/use-git-microsoft).
 
 Keep your branch strategy simple. Build your strategy from these three concepts:
 
@@ -190,7 +190,7 @@ Keep your branch strategy simple. Build your strategy from these three concepts:
 
 ### Create a new feature branch for development and bug fixes
 
-Create a new feature main branch for your extension, following the naming convention in [Git branching doc for sample naming convention](/azure/devops/repos/git/git-branching-guidance.md#name-your-feature-branches-by-convention).
+Create a new feature main branch for your extension, following the naming convention in [Git branching doc for sample naming convention](/azure/devops/repos/git/git-branching-guidance#name-your-feature-branches-by-convention).
 
 ### Create a new development branch
 

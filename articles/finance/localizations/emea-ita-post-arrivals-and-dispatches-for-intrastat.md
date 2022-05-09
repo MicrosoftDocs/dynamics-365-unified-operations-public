@@ -3,13 +3,13 @@
 
 title: Post arrivals and dispatches for Intrastat
 description: This topic provides an example that shows how to post arrivals and dispatches for Intrastat.
-author: andosip
+author: anasyash
 ms.date: 8/23/2021
 ms.topic: article
 audience: Application User
-ms.reviewer: kfender
+ms.reviewer: kfend
 ms.search.region: Global
-ms.author: v-aosipov
+ms.author: anasyash
 ms.search.validFrom: 
 ---
 

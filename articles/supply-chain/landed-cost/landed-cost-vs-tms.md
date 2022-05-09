@@ -3,7 +3,7 @@
 
 title: Landed cost vs. Transportation management
 description: Microsoft Dynamics 365 Supply Chain Management provides two different modules for working with transportation, Transportation management (TMS) and Landed cost. This topic summarizes the functionality that the two modules have in common and highlights the differences between them.
-author: sherry-zheng
+author: Weijiesa
 ms.date: 12/04/2020
 ms.topic: article
 ms.prod: 
@@ -15,12 +15,12 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
+
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: chuzheng
+ms.author: weijiesa
 ms.search.validFrom: 2020-12-04
 ms.dyn365.ops.version: 10.0.17
 ---
