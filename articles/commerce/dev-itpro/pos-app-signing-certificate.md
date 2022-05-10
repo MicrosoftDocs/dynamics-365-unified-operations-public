@@ -141,7 +141,7 @@ It is highly recommended that you renew the previously used certificate. We stro
  
 - **Preferred** - Obtain a code signing certificate from a trusted certificate authority.
 
-- **Preferred** - Generate a self-signed code signing certificate to use. This is typically used when within a domain.
+- **Not Preferred** - Generate a self-signed code signing certificate to use. This is typically used when within a domain and for development purpose only, not recommended for production. 
 
 - **Available as a temporary Solution** - Use the renewed Contoso code signing certificate. This is typically used for testing purposes, so it's not recommended that it be deployed in production.
  
