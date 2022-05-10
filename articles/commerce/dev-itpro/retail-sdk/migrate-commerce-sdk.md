@@ -2,7 +2,7 @@
 title: Migrate to the Commerce SDK
 description: This topic explains how to migrate to the Commerce software development kit (SDK).
 author: mugunthanm
-ms.date: 05/05/2022
+ms.date: 05/11/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -186,15 +186,15 @@ cart = (await request.RequestContext.ExecuteAsync<SaveCartResponse>(saveCartRequ
 </tr>
 <tr>
 <td> PricingEngine </td>
-<td> Extensions should not call PricingEngine directly, instead use CalculatePricesServiceRequest, CalculateDiscountsServiceRequest </td>
+<td> Extensions should not call PricingEngine directly, instead use CalculatePricesServiceRequest, CalculateDiscountsServiceRequest. </td>
 </tr>
 <tr>
 <td> PriceEvents </td>
-<td> Telemetries are subject to be used only for internal purpose, extenson should not use this. </td>
+<td> Telemetries should only be used for internal purposes, extensions should not use this. </td>
 </tr>
 <tr>
 <td> PricingDatabaseAccessor </td>
-<td> Obsolete since version 10.0.1, use the relevant CRT Data requests. </td>
+<td> Obsolete since version 10.0.1, use the relevant CRT data requests. </td>
 </tr>
 </table>
 
