@@ -134,7 +134,7 @@ We recommend that you use Store Commerce or CPOS for all new deployments. Existi
 
 - Windows 10 version 17763.0 or later, Windows 11, or Windows Server 2019
 - [Microsoft Edge WebView2](https://developer.microsoft.com/en-us/microsoft-edge/webview2/) (Use the Evergreen Standalone Installer.)
-- SQL Server (required only for offline)
+- SQL Server Express, Standard or Enterprise (required only for offline), refer this doc for [which SQL Server edition to use](implementation-considerations-offline.md)
 - Dynamics 365 Commerce (Commerce headquarters and Cloud Scale Unit)
 
 ### Device setup in Commerce headquarters
