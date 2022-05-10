@@ -122,10 +122,10 @@ The toolbar above the grid provides the following buttons that you can use to wo
 
 ## Extend your code to support custom fields
 
-If `InventTrans` table contains any custom fields, then you may need to extend the code to support them, depending on how they are named.
+If the `InventTrans` table contains one or more custom fields, then you may need to extend the code to support them, depending on how they are named.
 
-- If the custom fields from the `InventTrans` table have the same field names as from the `InventtransArchive` table, that means they are 1:1 mapped, Therefore, you can just put the custom fields into the `InventoryArchiveFields` fields group of the `inventTrans` table.
-- If the custom field name in the `InventTrans` table don't match the field name in the `InventtransArchive` table, then you need to add code to map them. For example, if you have a system field called  `InventTrans.CreatedDateTime`, then you need to create a field in the `InventTransArchive` table with a different name such as `InventtransArchive.InventTransCreatedDateTime`, and need to do extension on class `InventTransArchiveProcessTask` and  `InventTransArchiveSqlStatementHelper` as sample code below.
+- If the custom fields from the `InventTrans` table have the same field names as in the `InventtransArchive` table, that means they are 1:1 mapped, Therefore, you can just put the custom fields into the `InventoryArchiveFields` fields group of the `inventTrans` table.
+- If the custom field names in the `InventTrans` table don't match the field names in the `InventtransArchive` table, then you need to add code to map them. For example, if you have a system field called  `InventTrans.CreatedDateTime`, then you must create a field in the `InventTransArchive` table with a different name (such as `InventtransArchive.InventTransCreatedDateTime`) and add an extension to the classes `InventTransArchiveProcessTask` and  `InventTransArchiveSqlStatementHelper`, as shown in the following sample code.
 
 ```xpp
 [ExtensionOf(classStr(InventTransArchiveProcessTask))]
@@ -175,7 +175,7 @@ final class InventTransArchiveSqlStatementHelper_Extension
         
         if (inventTransModifiedBy)
         {
-	        ret += ',';
+            ret += ',';
             ret += strFmt('%1',  new SysDictField(tablenum(InventTransArchive), fieldNum(InventTransArchive, InventTransModifiedBy)).name(DbBackend::Sql));
         }
 
@@ -202,7 +202,7 @@ final class InventTransArchiveSqlStatementHelper_Extension
 
         if (inventTransModifiedBy)
         {
- 	        ret += ',';
+            ret += ',';
             ret += strFmt('%1', inventTransModifiedBy);
         }
 
@@ -214,7 +214,7 @@ final class InventTransArchiveSqlStatementHelper_Extension
 
         if (inventTransCreatedDateTime)
         {
-	        ret += ',';
+            ret += ',';
             ret += strFmt('%1', inventTransCreatedDateTime);
         }
 
