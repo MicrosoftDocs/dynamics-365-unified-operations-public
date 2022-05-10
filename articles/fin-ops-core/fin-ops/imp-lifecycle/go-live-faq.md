@@ -73,7 +73,7 @@ For information that can help you select the correct datacenter, see the [Networ
 Your production environment will be sized based on the current user license count and the information in the subscription estimate that is active when you request the production environment.
 
 > [!NOTE]
-> If you submit a new subscription estimate, your production environment might have to be resized, depending on the number of users, the type of user licenses, and the expected peak transaction volume. After the new estimate is processed, within 3 days, the next servicing operation on the environment will apply the update automatically. Alternatively, a support ticket can be created to request a specific downtime to apply the changes.
+> If you submit a new subscription estimate, your production environment might have to be resized, depending on the number of users, the type of user licenses, and the expected peak transaction volume. After the new estimate is processed, within 3 days, the next servicing operation on the environment will apply the update automatically. Alternatively, a support ticket can be created to request a specific time to apply the changes.
 
 ## I submitted the request for a production environment, but I made a mistake. Can I still change it?
 
