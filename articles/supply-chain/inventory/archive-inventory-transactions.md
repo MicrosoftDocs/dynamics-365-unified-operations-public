@@ -4,7 +4,7 @@
 title: Archive inventory transactions
 description: This topic describes how to archive inventory transaction data to help improve system performance.
 author: yufeihuang
-ms.date: 04/29/2022
+ms.date: 05/10/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
