@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Order summary shows different values for subtotal and shipping charges in the "price includes sales tax" scenario when using customized order summary modules
+title: Order summary shows different values for subtotal and shipping charges when using customized order summary modules
 description: This topic provides troubleshooting guidance for when you use customized order summary modules and the order summary shows different values for subtotal and shipping charges in the "price includes sales tax" scenario.
 author: gvrmohanreddy
 ms.date: 05/10/2022
@@ -14,7 +14,7 @@ ms.author: gmohanv
 ms.search.validFrom: 2022-04-22
 ---
 
-# Order summary shows different values for subtotal and shipping charges in the "price includes sales tax" scenario when using customized order summary modules 
+# Order summary shows different values for subtotal and shipping charges when using customized order summary modules 
 
 This topic provides troubleshooting guidance for when you use customized order summary modules and the order summary shows different values for subtotal and shipping charges in the "price includes sales tax" scenario.
 
