@@ -184,6 +184,18 @@ cart = (await request.RequestContext.ExecuteAsync<SaveCartResponse>(saveCartRequ
 
 </td>
 </tr>
+<tr>
+<td> PricingEngine </td>
+<td> Extensions should not call PricingEngine directly, instead use CalculatePricesServiceRequest, CalculateDiscountsServiceRequest </td>
+</tr>
+<tr>
+<td> PriceEvents </td>
+<td> Telemetries are subject to be used only for internal purpose, extenson should not use this. </td>
+</tr>
+<tr>
+<td> PricingDatabaseAccessor </td>
+<td> Obsolete since version 10.0.1, use the relevant CRT Data requests. </td>
+</tr>
 </table>
 
 ### Retail Server or Headless Commerce API extensions
