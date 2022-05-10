@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-This topic applies to the sealed framework, component installers that are released every month, beginning with the 10.0.18 release, and that are made available in the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). Note that the first several releases of these new installers are designated as **(Preview)**. However, the only purpose of this designation is to differentiate the new installers while Microsoft determines whether there are any additional functional requirements to use them. It doesn't mean that the installers aren't valid for production. Based on the release of these new installers, Microsoft plans to deprecate the old (legacy) installers in or around October 2022. 
+This topic applies to the sealed framework, component installers that are released every month, beginning with the 10.0.18 release, and that are made available in the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). Note that the first several releases of these new installers are designated as **(Preview)**. However, the only purpose of this designation is to differentiate the new installers while Microsoft determines whether there are any additional functional requirements to use them. It doesn't mean that the installers aren't valid for production. Based on the release of these new installers, Microsoft plans to deprecate the old (legacy) installers in or around October 2023. 
 
 This topic explains how to use the new installers to perform silent installation and servicing updates via command-line arguments. These arguments let you do mass deployment in several different ways.
 
