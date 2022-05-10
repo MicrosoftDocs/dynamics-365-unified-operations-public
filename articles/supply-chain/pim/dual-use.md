@@ -38,7 +38,7 @@ Consider the following scenario:
 2. The **Released product details** page for product X-100 indicates that it's a dual-use good. Together, the code, category, group, and regime indicate the export control classification that the product belongs to.
 3. The **Dual use certificates** page includes a certificate for product X-100 when it's shipped to France. This certificate expires January 1, 2020.
 4. On June 17, 2020, you create a sales order for a customer company that is based in France, and the order includes product X-100.
-5. When you save the sales order, the system determines the following information:
+5. When you confirm the sales order, the system determines the following information:
 
     1. Does the order include any products that are dual-use goods?
     2. If the order includes dual-use goods, does the destination country require dual-use certificates?
