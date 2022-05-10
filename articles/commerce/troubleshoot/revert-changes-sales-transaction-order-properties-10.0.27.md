@@ -22,7 +22,7 @@ that can help to revert subtotal and shipping charges values in order summary va
 
 ## Description
 
-As of the Commerce version 10.0.27 release, the following changes have been made to the "price includes sales tax" scenario to provide a consistent experience in order summary module across e-commerce site pages. 
+As of the Commerce version 10.0.27 release, the following changes have been made to the "price includes sales tax" scenario to provide a consistent experience in order summary modules across e-commerce site pages. 
 
 - Added two new fields: **TaxOnShippingCharge** and **TaxOnNonShippingCharges**. 
 - The **GetSalesOrderBySalesId** and **GetSalesOrderByTransactionId** APIs will have accurate values for the following fields in the "price includes sales tax" scenario: 
