@@ -42,14 +42,14 @@ The table below provides details about the operations that are available in Mode
 
 The following columns specify where the operations can be invoked:
 
-- **Button grid** – An operation can be assigned to buttons in POS button grids that are part of a POS screen layout.
+- **User operation** – An operation can be assigned to buttons in POS button grids that are part of a POS screen layout.
 - **Transaction screen** – An operation can be invoked from POS button grids that are configured on the POS transaction screen.
 - **Welcome screen** – An operation can be invoked from POS button grids that are configured on the POS welcome screen.
 
 > [!NOTE]
 > The operations listed below apply to the latest version of Commerce. Some operations may have changed or may not be available in previous versions.
 
-| ID   | Operation                                         | Description                                                                                                                                                                                                    | Button grid    | Transaction screen | Welcome screen | Available offline? | Locale-specific |
+| ID   | Operation                                         | Description                                                                                                                                                                                                    | User operation    | Transaction screen | Welcome screen | Available offline? | Locale-specific |
 | ---- | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ------------------ | -------------- | ----------------- | --------------- |
 | 100  | Product sale                                      | Add a specified product to the transaction.                                                                                                                                                                    | Yes            | Yes                | Yes            | Yes               | No              |
 | 101  | Price check                                       | Look up the price for a specified product.                                                                                                                                        | Yes            | Yes                | Yes            | Yes               | No              |
