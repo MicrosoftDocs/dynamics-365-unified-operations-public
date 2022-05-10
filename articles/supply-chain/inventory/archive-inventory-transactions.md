@@ -124,10 +124,10 @@ The toolbar above the grid provides the following buttons that you can use to wo
 
 If the `InventTrans` table contains one or more custom fields, then you may need to extend the code to support them, depending on how they are named.
 
-- If the custom fields from the `InventTrans` table have the same field names as in the `InventtransArchive` table, that means they are 1:1 mapped, Therefore, you can just put the custom fields into the `InventoryArchiveFields` fields group of the `inventTrans` table.
+- If the custom fields from the `InventTrans` table have the same field names as in the `InventtransArchive` table, that means they are 1:1 mapped. Therefore, you can just put the custom fields into the `InventoryArchiveFields` fields group of the `inventTrans` table.
 - If the custom field names in the `InventTrans` table don't match the field names in the `InventtransArchive` table, then you need to add code to map them. For example, if you have a system field called  `InventTrans.CreatedDateTime`, then you must create a field in the `InventTransArchive` table with a different name (such as `InventtransArchive.InventTransCreatedDateTime`) and add extensions to the `InventTransArchiveProcessTask` and  `InventTransArchiveSqlStatementHelper` classes, as shown in the following sample code.
 
-The following code shows an example of how to add the required extension to the `InventTransArchiveProcessTask` class.
+The following sample code shows an example of how to add the required extension to the `InventTransArchiveProcessTask` class.
 
 ```xpp
 [ExtensionOf(classStr(InventTransArchiveProcessTask))]
@@ -153,7 +153,7 @@ Final class InventTransArchiveProcessTask_Extension
 }
 ```
 
-The following code shows an example of how to add the required extension to the `InventTransArchiveSqlStatementHelper` class.
+The following sample code shows an example of how to add the required extension to the `InventTransArchiveSqlStatementHelper` class.
 
 ```xpp
 [ExtensionOf(classStr(InventTransArchiveSqlStatementHelper))]
