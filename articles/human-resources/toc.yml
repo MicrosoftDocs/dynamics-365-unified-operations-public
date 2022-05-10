@@ -461,7 +461,7 @@
       - name: Modify reporting relationships for a position
         href: hr-personnel-modify-reporting-relationships-position.md
       - name: Streamlined employee entry
-        href: ../talent/streamlined-employee-entry.md?toc=/dynamics365/human-resources/toc.json
+        href: stream-employee-entry.md
       - name: Enter worker information
         href: hr-personnel-enter-worker-information.md
       - name: Workers without employment
