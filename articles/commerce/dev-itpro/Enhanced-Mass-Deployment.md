@@ -4,24 +4,13 @@
 title: Mass deployment of sealed Commerce self-service components
 description: This topic explains how to use the framework for self-service component installers to silently install and service deployments.
 author: jashanno
-ms.date: 11/22/2021
+ms.date: 05/11/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this topic to]
-audience: IT Pro
-# ms.devlang: 
+audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global 
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: jashanno
 ms.search.validFrom: 2021-04-30
-ms.dyn365.ops.version: 10.0.18
 
 ---
 
