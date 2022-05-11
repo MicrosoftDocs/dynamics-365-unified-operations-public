@@ -186,7 +186,7 @@ cart = (await request.RequestContext.ExecuteAsync<SaveCartResponse>(saveCartRequ
 </tr>
 <tr>
 <td> PricingEngine </td>
-<td> Extensions should not call PricingEngine directly, instead use CalculatePricesServiceRequest, CalculateDiscountsServiceRequest. </td>
+<td> Extensions should not call PricingEngine directly and instead should use CalculatePricesServiceRequest, CalculateDiscountsServiceRequest. </td>
 </tr>
 <tr>
 <td> PriceEvents </td>
