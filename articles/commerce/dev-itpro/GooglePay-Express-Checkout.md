@@ -110,7 +110,7 @@ Before configuring your fragments or pages with Google Pay, make sure your Conte
 
 - Open **Site Settings** > **Extensions** and go to the **Content security policy** tab.
 
-- Click **Add** and add a line with "*.google.com" to the **child-src**, **connect-src**, **frame-src**, **img-src**, **script-src**, and **style-src** sections.
+- Click **Add** and add a line with "*.google.com" to the **child-src**, **connect-src**, **frame-ancestors**, **frame-src**, **img-src**, **script-src**, and **style-src** sections.
 
 - When completed, click the **Save and publish** button at the top of the page to commit the changes.
 
