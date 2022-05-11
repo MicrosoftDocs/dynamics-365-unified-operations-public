@@ -4,26 +4,14 @@
 title: Sign MPOS with a code signing certificate
 description: This topic explains how to sign MPOS with a code signing certificate.
 author: mugunthanm
-ms.date: 10/21/2021
+ms.date: 05/11/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
+audience: Application User, Developer, IT Pro
 ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
 ms.custom: 28021
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: mumani
 ms.search.validFrom: 2019-09-2019
-ms.dyn365.ops.version: AX 10.0.5
 
 ---
 
@@ -141,7 +129,7 @@ It is highly recommended that you renew the previously used certificate. We stro
  
 - **Preferred** - Obtain a code signing certificate from a trusted certificate authority.
 
-- **Preferred** - Generate a self-signed code signing certificate to use. This is typically used when within a domain.
+- **Not Preferred** - Generate a self-signed code signing certificate to use. This is typically used only for development purposes within a domain and is not recommended for production. 
 
 - **Available as a temporary Solution** - Use the renewed Contoso code signing certificate. This is typically used for testing purposes, so it's not recommended that it be deployed in production.
  
