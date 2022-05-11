@@ -404,7 +404,7 @@ Alternatively, you can create a customer's VAT registration number by using the 
 
 ## Set up the Intrastat authority
 
--   Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax authorities**, and enter the following information for the Intrastat authority:
+Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax authorities**, and enter the following information for the Intrastat authority:
 -   Authority identification
 -   Address
 -   Contact information
@@ -467,9 +467,9 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 2.  In the grid, select the **DEMF** legal entity.
 3.  On the **Addresses** FastTab, select **Edit**, and then, in the **Country/region** field, select **LTU (Lithuania)**.
 4.  Import the latest version of the following ER configurations:
--   Intrastat model
--   Intrastat report
--   INSTAT XML(LT)
+    -   Intrastat model
+    -   Intrastat report
+    -   INSTAT XML(LT)
 
 ### Set up a company address
 
@@ -726,7 +726,7 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 | Region                                                                  | LT-VL                                             |
 | Total number of detailed lines                                          | 1                                                 |
 
-1.  Review the report in Excel format that is generated.
+17.  Review the report in Excel format that is generated.
 
     ![A picture containing table Description automatically generated](media/585cb5e53b7ec91b3818d14751f7d812.png)
 
@@ -818,7 +818,7 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 | Region                                                                  | LT-VL                                             |
 | Total number of detailed lines                                          | 1                                                 |
 
-1.  Review the report in Excel format that is generated.
+17.  Review the report in Excel format that is generated.
 
     ![Graphical user interface Description automatically generated with low confidence](media/536b01cd91e70bb8872abbbcc8460150.png)
 
