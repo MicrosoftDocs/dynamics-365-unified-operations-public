@@ -1,8 +1,8 @@
 ---
-title: Import inbound ASNs through data entity
+title: Import inbound ASNs through the V3 data entity
 description: This topic explains how to manage the import of inbound advanced shipping notices (ASNs) through the Inbound ASN data entity.
 author: GalynaFedorova
-ms.date: 05/31/2021
+ms.date: 05/11/2022
 ms.topic: article
 ms.search.form: WHSInboundASNV3Entity, WHSInboundASNEntity, DMFEntity
 audience: Application User
