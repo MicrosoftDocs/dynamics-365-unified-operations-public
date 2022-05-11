@@ -1,11 +1,6 @@
 {
   "redirections": [
     {
-      "source_path": "articles/supply-chain/warehousing/import-asn-v2-data-entity.md",
-      "redirect_url": "/dynamics365/supply-chain/warehousing/import-asn-data-entity",
-      "redirect_document_id": "false"
-    },
-    {
       "source_path": "articles/finance/asset-leasing/post-transition-adjust-journal.md",
       "redirect_url": "adjust-lease",
       "redirect_document_id": "false"
