@@ -4,7 +4,7 @@
 title: Online and offline point of sale (POS) operations
 description: This topic provides details about the point of sale (POS) operations in Dynamics 365 Commerce. It specifies where in the application the operations can be invoked, and whether they are available in offline mode.
 author: jblucher
-ms.date: 05/05/2022
+ms.date: 05/11/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -49,7 +49,7 @@ The following columns specify where the operations can be invoked:
 > [!NOTE]
 > The operations listed below apply to the latest version of Commerce. Some operations may have changed or may not be available in previous versions.
 
-| ID   | Operation                                         | Description                                                                                                                                                                                                    | User operation    | Transaction screen | Welcome screen | Available offline? | Locale-specific |
+| ID   | Operation                                         | Description                                                                                                                                                                                                    | User operation?    | Transaction screen | Welcome screen | Available offline? | Locale-specific |
 | ---- | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ------------------ | -------------- | ----------------- | --------------- |
 | 100  | Product sale                                      | Add a specified product to the transaction.                                                                                                                                                                    | Yes            | Yes                | Yes            | Yes               | No              |
 | 101  | Price check                                       | Look up the price for a specified product.                                                                                                                                        | Yes            | Yes                | Yes            | Yes               | No              |
