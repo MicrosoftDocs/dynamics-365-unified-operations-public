@@ -88,6 +88,9 @@ Use this process when one or more sales orders are ready to be invoiced, and you
 
 You can select multiple invoices on the **Sales order** list page and then use **Generate invoices** to consolidate them. On the **Posting invoice** page, you can change the **Summary order** setting to summarize by order number (where there are multiple packing slips for a single sales order) or by invoice account (where there are multiple sales orders for a single invoice account). Use the **Arrange** button to consolidate sales orders into single invoices, based on the **Summary order** settings.
 
+## Split sales order invoices by site and delivery information
+You can configure the splitting of sales order customer invoices by site or by delivery address on the **Summary update** tab of the **Accounts receivable parameters** page (Accounts receivable > Setup > Accounts receivable parameters > Summary update). Select the option **Split based on invoice site** to produce one invoice per site when posting. Select the option **Split based on invoice delivery information** to produce one invoice per sales order line delivery address when posting. 
+
 ## Post to Revenue account for sales order lines that have no price
 You will have the option to update the **Revenue** account in the **General ledger** for sales order lines that have no price. To set up or view this information, go to the **Post to Revenue account for zero priced sales order invoice lines** parameter on the **Ledger and sales tax** tab of the **Accounts receivable parameters** page. (**Accounts receivable > Setup > Accounts receivable parameters**). Select **Yes** to update the **Revenue** account for sales order invoice lines that have no price. A revenue account is defined on the **Inventory posting** parameter page, on the **Sales order** account definition tab. If this option is not selected, lines that do not have price information will not post to the **Revenue** account.
 
