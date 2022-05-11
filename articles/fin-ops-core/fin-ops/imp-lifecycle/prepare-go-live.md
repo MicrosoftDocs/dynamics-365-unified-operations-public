@@ -4,7 +4,7 @@
 title: Prepare for go-live
 description: This topic describes how to prepare to go live with a project by using Microsoft Dynamics Lifecycle Services (LCS).
 author: ClaudiaBetz-Haubold
-ms.date: 10/27/2021
+ms.date: 05/11/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
