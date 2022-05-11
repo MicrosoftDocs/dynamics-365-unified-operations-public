@@ -1,4 +1,20 @@
+---
+# required metadata
+
+title: Belgium Intrastat
+description: This topic contains information about the Belgium Intrastat report.
+author: andosip
+ms.date: 10/28/2021
+ms.topic: article
+audience: 
+ms.reviewer: kfend 
+ms.search.region: Global
+ms.author: anasyash
+ms.search.validFrom: 
+---
 # Lithuanian Intrastat
+
+[!include [banner](../includes/banner.md)]
 
 The **Intrastat** page is used to generate and report information about trade among European Union (EU) countries. The Lithuanian Intrastat declaration contains information about the trade of goods for reporting.
 
@@ -805,3 +821,5 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 1.  Review the report in Excel format that is generated.
 
     ![Graphical user interface Description automatically generated with low confidence](media/536b01cd91e70bb8872abbbcc8460150.png)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
