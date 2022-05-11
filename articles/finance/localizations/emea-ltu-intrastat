@@ -1,4 +1,22 @@
-﻿# Lithuanian Intrastat declaration
+---
+# required metadata
+
+title: Lithuanian Intrastat
+description: This topic contains information about the Lithuanian Intrastat report.
+author: andosip
+ms.date: 05/11/2022
+ms.topic: article
+audience: 
+ms.reviewer: kfend 
+ms.search.region: Global
+ms.author: anasyash
+ms.search.validFrom: 
+---
+
+# Lithuanian Intrastat
+
+[!include [banner](../includes/banner.md)]
+
 The **Intrastat** page is used to generate and report information about trade among European Union (EU) countries. The Lithuanian Intrastat declaration contains information about the trade of goods for reporting.
 
 The following fields are included in the Lithuanian Intrastat declaration. All the fields except **VAT number of trading partner** are included on both arrivals and dispatches. The **VAT number of trading partner** field is included only on dispatches.
@@ -505,7 +523,7 @@ Description automatically generated](Aspose.Words.5c4f158a-5715-4a64-8ff7-20cbaf
 |Total number of detailed lines|1|
 1. Review the report in Excel format that is generated.
 
-![Graphical user interface
+![Graphical user interface Description automatically generated with low confidence](Aspose.Words.5c4f158a-5715-4a64-8ff7-20cbaf8e8203.006.png)
 
-Description automatically generated with low confidence](Aspose.Words.5c4f158a-5715-4a64-8ff7-20cbaf8e8203.006.png)
 
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
