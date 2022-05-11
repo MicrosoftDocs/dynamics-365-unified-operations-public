@@ -600,6 +600,8 @@
             href: wallets.md
           - name: Enhanced payments in storefront checkout
             href: dev-itpro/enhanced-sca.md
+          - name: Configure express payments for PayPal
+            href: dev-itpro/express-payments-paypal.md
           - name: Payments FAQ 
             href: dev-itpro/payments-retail.md
         - name: Email and notifications
@@ -966,6 +968,8 @@
           href: create-ecommerce-site.md
         - name: Copy an e-commerce site
           href: copy-ecommerce-site.md
+        - name: Map channels to e-commerce sites
+          href: map-channels-sites.md
         - name: Associate a Dynamics 365 Commerce site with an online channel
           href: associate-site-online-store.md
         - name: Manage robots.txt files
