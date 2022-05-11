@@ -2,7 +2,7 @@
 title: Migrate to the Commerce SDK
 description: This topic explains how to migrate to the Commerce software development kit (SDK).
 author: mugunthanm
-ms.date: 05/05/2022
+ms.date: 05/11/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -184,6 +184,18 @@ cart = (await request.RequestContext.ExecuteAsync<SaveCartResponse>(saveCartRequ
 
 </td>
 </tr>
+<tr>
+<td> PricingEngine </td>
+<td> Extensions should not call PricingEngine directly and instead should use CalculatePricesServiceRequest, CalculateDiscountsServiceRequest. </td>
+</tr>
+<tr>
+<td> PriceEvents </td>
+<td> Telemetries should only be used for internal purposes, extensions should not use this. </td>
+</tr>
+<tr>
+<td> PricingDatabaseAccessor </td>
+<td> Obsolete since version 10.0.1, use the relevant CRT data requests. </td>
+</tr>
 </table>
 
 ### Retail Server or Headless Commerce API extensions
@@ -235,10 +247,10 @@ For more information, see [Generate a separate package for Commerce Cloud Scale 
 
 ### Do I have to migrate?
 
-The Commerce SDK provides several benefits that the Retail SDK doesn't provide, such as a simplified development and update experience, and improved performance. The Retail SDK and installers will be deprecated in April 2023, and all extensions must be migrated before then. After April 2023, the Retail SDK will no longer be released or supported.
+The Commerce SDK provides several benefits that the Retail SDK doesn't provide, such as a simplified development and update experience, and improved performance. The Retail SDK and installers will be deprecated in April 2023, and all extensions must be migrated before then. After October 2023, the Retail SDK will no longer be released or supported.
 
 ### When do I have to migrate?
 
-Extensions must be migrated to the new Commerce SDK and new installers by April 2023.
+Extensions must be migrated to the new Commerce SDK and new installers by October 2023.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
