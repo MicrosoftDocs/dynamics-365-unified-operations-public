@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.24
 
 Certain Data export projects have been restricted from execution on environments on version 10.0.22 or older.
 
-If you have received the following error message: “This data export project is no longer supported for execution. To run this project, it is first required to update the environment to a supported version.”, then it will be required to update the environment to a supported version. Otherwise tit will not be possible to execute these data projects. 
+If you have received the following error message: “This data export project is no longer supported for execution. To run this project, it is first required to update the environment to a supported version.”, then it will be required to update the environment to a supported version. Otherwise it will not be possible to execute these data projects. 
 For more information about supported versions, see [Service update availability](../ fin-ops/get-started/public-preview-releases.md).
 
 More information as to why this restriction had to be applied without further announcements, will be added here at a later time.
