@@ -2,9 +2,9 @@
 # required metadata
 
 title: Web API authentication transfer to E-commerce using Azure AD B2C
-description: This template contains examples of Markdown syntax, as well as guidance on setting the metadata.
-author: This topic reviews the capability to transfer an Azure AD B2C token to the E-commerce service from a user's own web API.
-ms.date: 05/10/2022
+description: This topic describes the capability to transfer an Azure Active Directory business-to-consumer (B2C) token to the e-commerce service from a user's web API.
+author: BrianShook
+ms.date: 05/11/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
