@@ -27,12 +27,12 @@ Before you can use ATP, you must set up one or more calculated measures to calcu
 
 ### Set up calculated measures for ATP quantities
 
-The *ATP calculated measure* is a predefined calculated measure that is typically used to find the on-hand quantity that is currently available. The sum of quantities for those physical measures which modifier type are addition is the supply quantity, and the sum of quantities for those physical measures which modifier type are subtraction is the demand quantity.
+The *ATP calculated measure* is a predefined calculated measure that is typically used to find the on-hand quantity that is currently available. The *supply quantity* is the sum of quantities for those physical measures that have a modifier type of *addition*, and the *demand quantity* is the sum of quantities for those physical measures that have a modifier type of *subtraction*.
 
 You can add multiple calculated measures to calculate multiple ATP quantities. However, the total number of distinct physical measures across all ATP calculated measures should less than nine.
 
 > [!IMPORTANT]
-> A calculated measure is a composition of physical measures. It’s formula can only include physical measures without duplicates, not calculated measures.
+> A calculated measure is a composition of physical measures. Its formula can only include physical measures without duplicates, not calculated measures.
 
 For example, you set up the following calculated measure:
 
@@ -42,11 +42,11 @@ The sum (*PhysicalInvent* + *OnHand* + *Unrestricted* + *QualityInspection* + *I
 
 **On-hand-available** = *Supply* – *Demand*
 
-You could add another calculated measure to calculate **On-hand-physical** ATP quantity.
+You could add another calculated measure to calculate the **On-hand-physical** ATP quantity.
 
 **On-hand-physical** = (*PhysicalInvent* + *OnHand* + *Unrestricted* + *QualityInspection* + *Inbound*) – (*Outbound*)
 
-There are 8 distinct physical measures across those two ATP calculated measures, which are *PhysicalInvent*, *OnHand*, *Unrestricted*, *QualityInspection*, *Inbound*, *ReservPhysical*, *SoftReservePhysical*, *Outbound*.
+There are 8 distinct physical measures across those two ATP calculated measures, which are *PhysicalInvent*, *OnHand*, *Unrestricted*, *QualityInspection*, *Inbound*, *ReservPhysical*, *SoftReservePhysical*, and *Outbound*.
 
 For more information about calculated measures, see [Calculated measures](inventory-visibility-configuration.md#calculated-measures).
 
@@ -207,9 +207,10 @@ For more information, see [Inventory Visibility public APIs](inventory-visibilit
 
 An on-hand change schedules is made by submitting a `POST` request to the relevant Inventory Visibility service URL (see the [Submit change schedules, change events, and ATP queries through the API](#api-urls) section). You can also submit bulk requests.
 
-To create an on-hand change schedule, the scheduled date must be between the current date and the end of the current schedule period. And the format of datetime should be "year-month-day", like "2022-02-01". And the time format only needs to be accurate to the day.
+To create an on-hand change schedule, the scheduled date must be between the current date and the end of the current schedule period. The format of datetime should be *year-month-day*, for example, "2022-02-01". The time format only needs to be accurate to the day.
 
 This API creates a single on-hand change schedule.
+
 ```txt
 Path:
     /api/environment/{environmentId}/onhand/changeschedule
@@ -239,7 +240,7 @@ Body:
     }
 ```
 
-The following example shows sample body content without dimensionDataSource.
+The following example shows sample body content without `dimensionDataSource`.
 
 ```json
 {
@@ -263,9 +264,10 @@ The following example shows sample body content without dimensionDataSource.
     }
 }
 ```
+
 ### Create multiple on-hand change schedules
 
-This API can create multiple records at the same time. The only differences between this API and the single-event API are the Path and Body values. For this API, Body provides an array of records. The maximum number of records is 512, which means that the on-hand change schedule bulk API can support up to 512 change events at a time.
+This API can create multiple records at the same time. The only differences between this API and the single-event API are the `Path` and `Body` values. For this API, `Body` provides an array of records. The maximum number of records is 512, which means that the on-hand change schedule bulk API can support up to 512 change events at a time.
 
 ```txt
 Path:
@@ -378,7 +380,7 @@ The following example shows a request body that contains a single on-hand change
 
 ## Query the scheduled on-hand changes and ATP results
 
-You can query scheduled on-hand changes and ATP results by submitting either a `POST` request or a `GET` request to the appropriate API URL (see the [Submit change schedules, change events, and ATP queries through the API](#api-urls) section). 
+You can query scheduled on-hand changes and ATP results by submitting either a `POST` request or a `GET` request to the appropriate API URL (see the [Submit change schedules, change events, and ATP queries through the API](#api-urls) section).
 
 In your request, set `QueryATP` to *true* if you want to query scheduled on-hand changes and ATP results.
 
@@ -430,6 +432,7 @@ The following example shows how to create a request body that can be submitted t
 ```
 
 ### GET method example
+
 ```txt
 Path:
     /api/environment/{environmentId}/onhand
