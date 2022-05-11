@@ -1,41 +1,278 @@
-# Lithuanian Intrastat declaration
+# Lithuanian Intrastat
 
 The **Intrastat** page is used to generate and report information about trade among European Union (EU) countries. The Lithuanian Intrastat declaration contains information about the trade of goods for reporting.
 
 The following fields are included in the Lithuanian Intrastat declaration. All the fields except **VAT number of trading partner** are included on both arrivals and dispatches. The **VAT number of trading partner** field is included only on dispatches.
 
-| Field name                                                              | Description                                                                                                                                                  |
-|-------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Report header**                                                       |                                                                                                                                                              |
-| Reference period                                                        | The period (year and month) that the declaration applies to.                                                                                                 |
-| Completion date and time                                                | The date and time when the Intrastat report was created.                                                                                                     |
-| Information about the declaration's receiver                            | The following information about the authorities is presented: Identification number Name Legal address Email address Fax number Web address (URL)            |
-| Information about the declaration's sender                              | The following information about the company is presented: Value-added tax (VAT) code Legal address Phone number Email address Fax number URL                 |
-| Information about the contact person                                    | The following information about the person who is submitting the declaration is presented: Name Phone number Fax number Email address                        |
-| Software used                                                           | Information about the software that was used to fill in the declaration.                                                                                     |
-| Declaration identifier                                                  | The number that a respondent gave to the Intrastat report.                                                                                                   |
-| VAT registration number                                                 | The VAT ID of the company that is providing the statistical declaration.                                                                                     |
-| Function code                                                           | For an original Intrastat declaration, "O" is printed. For a correction Intrastat declaration, "M" is printed.                                               |
-| Report direction                                                        | For arrivals, "A" is printed. For dispatches, "D" is printed.                                                                                                |
-| Currency                                                                | The company's accounting currency.                                                                                                                           |
-| Registration number of previous declaration                             | In the case of a correction Intrastat declaration, the Intrastat report's 11-symbol registration number at the Customs Department and the correction number. |
-| Total invoiced amount                                                   | The sum of all items.                                                                                                                                        |
-| **Report lines**                                                        |                                                                                                                                                              |
-| Commodity code                                                          | The commodity code according to the Combined Nomenclature (CN) classification. This code is set on the product page.                                         |
-| Description of goods                                                    | The trade name of the commodity.                                                                                                                             |
-| Country of consignment (arrivals) / Country of destination (dispatches) | The International Organization for Standardization (ISO) code of the country or region of the counterparty.                                                  |
-| Country/region of origin                                                | The ISO code of the country or region where the goods were produced.                                                                                         |
-| Net mass                                                                | The quantity of goods in net mass. The last three symbols are the digits after the decimal point.                                                            |
-| Quantity of supplementary goods                                         | For some commodities, you must report the supplementary unit. The unit itself (for example, "pairs" or "dozens") isn't reported.                             |
-| Invoice amount                                                          | The invoice value. You can view the invoice value in the **Invoice amount** field in the Intrastat journal.                                                  |
-| Statistical amount                                                      | The statistical value. You can view the statistical value in the **Statistical value** field in the Intrastat journal.                                       |
-| VAT number of trading partner                                           | The customer's foreign VAT number in an EU member state.                                                                                                     |
-| Nature of transaction                                                   | The transaction code.                                                                                                                                        |
-| Mode of transport                                                       | The code for the mode of transport.                                                                                                                          |
-| Delivery terms                                                          | The code for the terms of delivery of goods.                                                                                                                 |
-| Region                                                                  | The Intrastat code for the company's region.                                                                                                                 |
-| **Report footer**                                                       |                                                                                                                                                              |
-| Total number of detailed lines                                          | The total number of detailed lines in the Intrastat declaration.                                                                                             |
+<table>
+<tbody>
+<tr>
+<td>
+<p><strong>Field name</strong></p>
+</td>
+<td>
+<p><strong>Description</strong></p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p style="text-align: center;"><strong>Report header</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Reference period</p>
+</td>
+<td>
+<p>The period (year and month) that the declaration applies to.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Completion date and time</p>
+</td>
+<td>
+<p>The date and time when the Intrastat report was created.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Information about the declaration's receiver</p>
+</td>
+<td>
+<p>The following information about the authorities is presented:</p>
+<ul>
+<li>Identification number</li>
+<li>Name</li>
+<li>Legal address</li>
+<li>Email address</li>
+<li>Fax number</li>
+<li>Web address (URL)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>Information about the declaration's sender</p>
+</td>
+<td>
+<p>The following information about the company is presented:</p>
+<ul>
+<li>Value-added tax (VAT) code</li>
+<li>Legal address</li>
+<li>Phone number</li>
+<li>Email address</li>
+<li>Fax number</li>
+<li>URL</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>Information about the contact person</p>
+</td>
+<td>
+<p>The following information about the person who is submitting the declaration is presented:</p>
+<ul>
+<li>Name</li>
+<li>Phone number</li>
+<li>Fax number</li>
+<li>Email address</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>Software used</p>
+</td>
+<td>
+<p>Information about the software that was used to fill in the declaration.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Declaration identifier</p>
+</td>
+<td>
+<p>The number that a respondent gave to the Intrastat report.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>VAT registration number</p>
+</td>
+<td>
+<p>The VAT ID of the company that is providing the statistical declaration.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Function code</p>
+</td>
+<td>
+<p>For an original Intrastat declaration, "O" is printed.</p>
+<p>For a correction Intrastat declaration, "M" is printed.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Report direction</p>
+</td>
+<td>
+<p>For arrivals, "A" is printed.</p>
+<p>For dispatches, "D" is printed.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Currency</p>
+</td>
+<td>
+<p>The company's accounting currency.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Registration number of previous declaration</p>
+</td>
+<td>
+<p>In the case of a correction Intrastat declaration, the Intrastat report's 11-symbol registration number at the Customs Department and the correction number.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Total invoiced amount</p>
+</td>
+<td>
+<p>The sum of all items.</p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p style="text-align: center;"><strong>Report lines</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Commodity code</p>
+</td>
+<td>
+<p>The commodity code according to the Combined Nomenclature (CN) classification. This code is set on the product page.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Description of goods</p>
+</td>
+<td>
+<p>The trade name of the commodity.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Country of consignment (arrivals) / Country of destination (dispatches)</p>
+</td>
+<td>
+<p>The International Organization for Standardization (ISO) code of the country or region of the counterparty.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Country/region of origin</p>
+</td>
+<td>
+<p>The ISO code of the country or region where the goods were produced.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Net mass</p>
+</td>
+<td>
+<p>The quantity of goods in net mass. The last three symbols are the digits after the decimal point.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Quantity of supplementary goods</p>
+</td>
+<td>
+<p>For some commodities, you must report the supplementary unit. The unit itself (for example, "pairs" or "dozens") isn't reported.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Invoice amount</p>
+</td>
+<td>
+<p>The invoice value. You can view the invoice value in the <strong>Invoice amount</strong> field in the Intrastat journal.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Statistical amount</p>
+</td>
+<td>
+<p>The statistical value. You can view the statistical value in the <strong>Statistical value</strong> field in the Intrastat journal.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>VAT number of trading partner</p>
+</td>
+<td>
+<p>The customer's foreign VAT number in an EU member state.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Nature of transaction</p>
+</td>
+<td>
+<p>The transaction code.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Mode of transport</p>
+</td>
+<td>
+<p>The code for the mode of transport.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Delivery terms</p>
+</td>
+<td>
+<p>The code for the terms of delivery of goods.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Region</p>
+</td>
+<td>
+<p>The Intrastat code for the company's region.</p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p style="text-align: center;"><strong>Report footer</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Total number of detailed lines</p>
+</td>
+<td>
+<p>The total number of detailed lines in the Intrastat declaration.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 
 ## Set up Intrastat
 
