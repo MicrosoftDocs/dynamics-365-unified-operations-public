@@ -600,6 +600,8 @@
             href: wallets.md
           - name: Enhanced payments in storefront checkout
             href: dev-itpro/enhanced-sca.md
+          - name: Configure express payments for PayPal
+            href: dev-itpro/express-payments-paypal.md
           - name: Payments FAQ 
             href: dev-itpro/payments-retail.md
         - name: Email and notifications
