@@ -13,7 +13,7 @@ ms.author: gmohanv
 ms.search.validFrom: 2022-04-22
 ---
 
-# Order summary shows different values for subtotal and shipping charges when using customized order summary modules 
+# Order summary subtotal doesn't include taxes on charges when using customized order summary modules 
 
 This topic provides troubleshooting guidance for when you use customized order summary modules and the order summary subtotal doesn't include taxes on charges in the "price includes sales tax" scenario.
 
@@ -29,13 +29,13 @@ As of the Commerce version 10.0.27 release, the following changes have been made
     - **ShippingChargeAmount**
     - **OtherChargeAmount**
 
-However, these changes may affect order summary values if you are using customized order summary modules.
+However, if you're using customized order summary modules these changes may affect order summary subtotal values by not including taxes on charges.
 
 ## Resolution
 
-If you are using customized order summary modules and don't want to inherit the changes made to the "price includes sales tax" scenario in Commerce version 10.0.27 and later, follow the instructions below.
+If you're using customized order summary modules and don't want to inherit the changes made to the "price includes sales tax" scenario in Commerce version 10.0.27 and later, follow the instructions below.
 
-Reverting to the previous order summary behavior of the **salesTransaction.SubtotalAmount** and **salesTransaction.SubtotalAmountWithoutTax** fields restores the inclusion of the total charge tax amount (**TaxOnShippingCharge** and **TaxOnNonShippingCharges**) in the subtotal amounts (**SubtotalAmount** and **SubtotalAmountWithoutTax**).
+Reverting to the previous (before version 10.0.27) order summary behavior of the **salesTransaction.SubtotalAmount** and **salesTransaction.SubtotalAmountWithoutTax** fields restores the inclusion of the total charge tax amount (**TaxOnShippingCharge** and **TaxOnNonShippingCharges**) in the subtotal amounts (**SubtotalAmount** and **SubtotalAmountWithoutTax**).
 
 To revert to the previous order summary behavior, follow these steps.
 
