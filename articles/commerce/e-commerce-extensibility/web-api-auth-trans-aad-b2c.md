@@ -32,13 +32,13 @@ Set up your Azure AD B2C tenant in accordance with the [Enable authentication in
 
 There are various paths to create the authentication token using the application above. Configurations will vary further depending on the developmental approach.  Applications may choose to use direct API authentication, resource owner password credentials (ROPC), or Open ID Connect (OIDC) methods supported by AAD B2C. 
 
-## E-commerce Site Authentication with transferred token
+## E-commerce site authentication with transferred token
 
-Users entering the site from a transferred authenticated session will operate within the site similar to normal user authentication against AAD B2C in the site directly. When set up as described above, all current site authenticated activities will act similarly for transferred AAD B2C authenticated users as the in-site AAD user flow authenticated users.
+Users entering the site from a transferred authenticated session will operate within the site similar to normal user authentication against AAD B2C in the site directly. When set up as described above, all current site authenticated activities will act similarly for transferred Azure AD B2C authenticated users as the in-site AAD user flow authenticated users.
 
-The tokens must be set with a 'B2CToken ' prefix (example: "Authorization: B2CToken <token>") for the Commerce E-commerce rendering services to utilize the token.
+The tokens must be set with a **B2CToken** prefix (for example `Authorization: B2CToken <token>`) for the Commerce e-commerce rendering services to utilize the token.
 
-The Authentication token must also reflect the Azure AD B2C **Tenant name** and **Client GUID** (as set up in the Commerce [site builder Site authentication profile](mock-sign-in.md) and the Issuer (as set up in [Commerce Headquarters](mock-sign-in.md) for the E-commerce site. 
+The authentication token must also reflect the Azure AD B2C **Tenant name** and **Client GUID** (as set up in the Commerce site builder site authentication profile) and the Issuer (as set up in Commerce headquarters for the e-commerce site. 
 
 ## Additional References
 
