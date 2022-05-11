@@ -18466,6 +18466,11 @@
       "source_path": "articles/retail/tasks/worker.md",
       "redirect_url": "/dynamics365/commerce/tasks/worker",
       "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/warehousing/import-asn-v2-data-entity.md",
+      "redirect_url": "/dynamics365/supply-chain/warehousing/import-asn-data-entity",
+      "redirect_document_id": "false"
     }
   ]
 }
