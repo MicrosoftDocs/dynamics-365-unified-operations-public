@@ -171,6 +171,9 @@ If the data source is Supply Chain Management, you don't have to re-create the d
 
 You can use Inventory Visibility to query on both inventory physical measures and *custom calculated measures*. Calculated measures provide a customized computation formula that consists of a combination of physical measures. This functionality lets you define a set of physical measures that will be added, and/or a set of physical measures that will be subtracted, to form the customized measurement.
 
+> [!IMPORTANT]
+> A calculated measure is a composition of physical measures. It’s formula can only include physical measures without duplicates, not calculated measures.
+
 The configuration lets you define a set of modifiers that are added or subtracted to get the total aggregated output quantity.
 
 To set up a custom calculated measure, follow these steps.
