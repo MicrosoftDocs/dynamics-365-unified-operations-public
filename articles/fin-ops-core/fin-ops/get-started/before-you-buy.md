@@ -3,8 +3,8 @@
 
 title: Before you buy
 description: Step-by-step guidance to use when you're considering purchasing Dynamics 365 Finance, Dynamics 365 Supply Chain Management, or Dynamics 365 Commerce.  
-author: ShellyBakke
-ms.date: 11/23/2020
+author: sericks007
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -20,7 +20,7 @@ ms.reviewer: sericks
 ms.custom: 21761
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: smiller
+ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
 
@@ -48,7 +48,7 @@ The following considerations must be taken when you choose on-premises as a depl
 - [System requirements for on-premises deployments](system-requirements-on-prem.md).
 
 > [!IMPORTANT]
-> On-premises deployments are not supported on any public cloud infrastructure, including Microsoft Azure.
+> On-premises deployments are not supported on any public cloud infrastructure, including Microsoft Azure. However, they are supported to run on [Microsoft Azure Stack HCI](https://azure.microsoft.com/products/azure-stack/hci/) and [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/).
 
 For more information, see [Deployment options](../../dev-itpro/deployment/choose-deployment-type.md).
 

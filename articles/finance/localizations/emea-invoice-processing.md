@@ -3,7 +3,7 @@
 title: Invoice processing
 description: This topic provides information about invoice processing for Eastern Europe.
 author: EvgenyPopovMBS
-ms.date: 10/19/2020
+ms.date: 02/02/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -71,7 +71,8 @@ This topic briefly describes some country-specific scenarios, such as intra-comm
 <td>
 <p>Legislation provides different rules for selecting valid exchange rates for business transactions. In the <strong>Exchange rate date</strong> field on the <strong>Accounts receivable parameters</strong> and <strong>Accounts payable parameters</strong> pages, you can select the date that should be used for amounts in the accounting currency calculation on purchase and sales documents. During data entry, the system retrieves the exchange rate for the transaction, based on this parameter.</p>
 <blockquote>[!NOTE]<br>For Italy, this functionality is only applicable in the Accounts payable module. In the Accounts payable parameters, a user can select <strong>Posting date</strong> or <strong>Document date</strong> in the <strong>Exchange rate date</strong> field.   </blockquote>
-<blockquote>[!NOTE]<br>When you set the <strong>Exchange rate date</strong> field to <strong>Document date (for EU trade only)</strong>, the system uses the sales tax group. For the sales tax group, there is a <strong>EU trade</strong> parameter on the <strong>General</strong> tab. If the <strong>EU trade</strong> option is set to <strong>Yes</strong> for the sales tax group, and if this sales tax group exists on the header of the document, the system retrieves the exchange rate based on the document date. If the <strong>EU trade</strong> option is set to <strong>No</strong> for this sales tax group, the system retrieves the exchange rate based on the posting date of the document.</blockquote>
+<blockquote><br>When you set the <strong>Exchange rate date</strong> field to <strong>Document date (for EU trade only)</strong>, the system uses the sales tax group. For the sales tax group, there is a <strong>EU trade</strong> parameter on the <strong>General</strong> tab. If the <strong>EU trade</strong> option is set to <strong>Yes</strong> for the sales tax group, and if this sales tax group exists on the header of the document, the system retrieves the exchange rate based on the document date. If the <strong>EU trade</strong> option is set to <strong>No</strong> for this sales tax group, the system retrieves the exchange rate based on the posting date of the document.</blockquote>
+  <blockquote><br>For Poland, in the <strong>Accounts receivable</strong> module, an additional <strong>Automatic date determination</strong> value of this parameter is available. When selected, the system automatically selects the earliest date from the invoice posting date, sales date, and payment dates.</blockquote>
 </td>
 </tr>
 <tr>

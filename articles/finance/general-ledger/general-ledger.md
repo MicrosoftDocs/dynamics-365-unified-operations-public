@@ -3,9 +3,9 @@
 
 title: General ledger and Financial reporting overview
 description: Use General ledger to define and manage the legal entity’s financial records.  
-author: ShylaThompson
+author: kfend
 ms.date: 08/14/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -15,13 +15,13 @@ ms.search.form: GeneralJournalEntryWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: ["65431", "intro-internal"]
 ms.assetid: d2c604df-daae-42cd-82d9-c80e3dee4a60
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

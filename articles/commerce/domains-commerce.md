@@ -4,7 +4,7 @@
 title: Domains in Dynamics 365 Commerce
 description: This topic describes how domains are handled in Microsoft Dynamics 365 Commerce.
 author: BrShoo
-ms.date: 03/17/2021
+ms.date: 05/10/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -33,6 +33,9 @@ This topic describes how domains are handled in Microsoft Dynamics 365 Commerce.
 
 Domains are web addresses used to navigate to Dynamics 365 Commerce sites in a web browser. You control management of your domain with a chosen Domain Name Server (DNS) provider. Domains are referenced throughout Dynamics 365 Commerce site builder to coordinate how a site will be accessed when published. This topic reviews how domains are handled and referenced throughout the lifecycle of the Commerce site development and launch.
 
+> [!NOTE]
+> As of May 6th, 2022, all environments created in Dynamics 365 Commerce will be provisioned with the `.dynamics365commerce.ms` domain, replacing the earlier pattern of `.commerce.dynamics.com`. Existing environments provisioned with the `.commerce.dynamics.com` domain will continue to work.
+
 ## Provisioning and supported host names
 
 When provisioning an e-commerce environment in [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/), the **Supported host names** box on the e-commerce provisioning screen is used to enter domains that will be associated with the deployed Commerce environment. These domains will be the customer-facing Domain Name Server (DNS) names where e-commerce websites will be hosted. Entering a domain at this stage does not start diverting traffic for the domain to Dynamics 365 Commerce. Traffic for a domain will only be routed to the Commerce endpoint when the DNS CNAME record is updated to use the Commerce endpoint with the domain.
@@ -48,7 +51,7 @@ You can create a service request to add additional domains to an environment if 
 
 ## Commerce-generated URLs
 
-When provisioning a Dynamics 365 Commerce e-commerce environment, Commerce will generate a URL that will be the working address for the environment. This URL is referenced in the e-commerce site link shown in LCS after the environment is provisioned. A Commerce-generated URL is in the format `https://<e-commerce tenant name>.commerce.dynamics.com`, where the e-commerce tenant name is the name entered in LCS for the Commerce environment.
+When provisioning a Dynamics 365 Commerce e-commerce environment, Commerce will generate a URL that will be the working address for the environment. This URL is referenced in the e-commerce site link shown in LCS after the environment is provisioned. A Commerce-generated URL is in the format `https://<e-commerce tenant name>.dynamics365commerce.ms`, where the e-commerce tenant name is the name entered in LCS for the Commerce environment.
 
 You can use production site host names in a sandbox environment as well. This option is ideal when you will be copying a site from a sandbox environment to production.
 
@@ -71,11 +74,11 @@ The **Path** box can be left blank, or an additional path string can be added th
 
 For example, if you have a site in site builder called "fabrikam" in an e-commerce tenant named "xyz," and if you set up the site with a blank path, then you would access the published site content in a web browser by going directly to the base Commerce-generated URL:
 
-`https://xyz.commerce.dynamics.com`
+`https://xyz.dynamics365commerce.ms`
 
 Alternately, if you had added a path of "fabrikam" during this same site's setup, you would access the published site content in a web browser using the following URL:
 
-`https://xyz.commerce.dynamics.com/fabrikam`
+`https://xyz.dynamics365commerce.ms/fabrikam`
 
 ## Pages and URLs
 
@@ -96,16 +99,16 @@ The supported host names values are available to be associated as a domain when 
 When working with sites in site builder, if you have two sites set up with two different domains, you can append the **?domain=** attribute to your working URL to access the published site content in a browser.
 
 For example, environment "xyz" has been provisioned, and two sites have been created and associated in site builder: one with the domain `www.fabrikam.com` and the other with the domain `www.constoso.com`. Each site was set up using a blank path. These two sites could then be accessed in a web browser as follows using the **?domain=** attribute:
-- `https://xyz.commerce.dynamics.com?domain=www.fabrikam.com`
-- `https://xyz.commerce.dynamics.com?domain=www.contoso.com`
+- `https://xyz.dynamics365commerce.ms?domain=www.fabrikam.com`
+- `https://xyz.dynamics365commerce.ms?domain=www.contoso.com`
 
-When a domain query string is not given in an environment with multiple domains provided, Commerce uses the first domain you provided. For example, if the path "fabrikam" was provided first during site setup, the URL `https://xyz.commerce.dynamics.com` could be used to access the published site content site for `www.fabrikam.com`.
+When a domain query string is not given in an environment with multiple domains provided, Commerce uses the first domain you provided. For example, if the path "fabrikam" was provided first during site setup, the URL `https://xyz.dynamics365commerce.ms` could be used to access the published site content site for `www.fabrikam.com`.
 
 ## Traffic forwarding in production
 
-You can simulate multiple domains using domain query string parameters on the commerce.dynamics.com endpoint itself. But when you need to go live in production, you must forward the traffic for your custom domain to the `<e-commerce tenant name>.commerce.dynamics.com` endpoint.
+You can simulate multiple domains using domain query string parameters on the commerce.dynamics.com endpoint itself. But when you need to go live in production, you must forward the traffic for your custom domain to the `<e-commerce tenant name>.dynamics365commerce.ms` endpoint.
 
-The `<e-commerce tenant name>.commerce.dynamics.com` endpoint does not support custom domain Secure Sockets Layers (SSLs), so you must set up custom domains using a front door service or content delivery network (CDN). 
+The `<e-commerce tenant name>.dynamics365commerce.ms` endpoint does not support custom domain Secure Sockets Layers (SSLs), so you must set up custom domains using a front door service or content delivery network (CDN). 
 
 To set up custom domains using a front door service or CDN, you have two options:
 

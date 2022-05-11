@@ -5,7 +5,7 @@ title: Custom Help overview
 description: This topic explains how you can extend the Microsoft Help system so that it reflects your solution and then connect your content to the Help pane. 
 author: edupont04
 ms.date: 05/11/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: IT Pro
 # ms.devlang: 
 ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 # ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -30,6 +30,9 @@ ms.dyn365.ops.version: Operations
 # Custom Help overview
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Finance and Operations apps are often customized and extended to fit an organization's needs. If your solution is based on Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, or Dynamics 365 Commerce, you can connect solution-specific and customer-specific Help content to the [Help pane](../../fin-ops/get-started/help-overview.md#in-product-help) in the Finance and Operations client. This topic describes the main steps and decision points.
 

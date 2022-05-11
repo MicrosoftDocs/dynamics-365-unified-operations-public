@@ -64,7 +64,7 @@ As a user in the Electronic Reporting Functional Consultant or Electronic Report
 ### Configure ER parameters
 
 1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
-2. On the **Localization configurations** page, in the **Related links** section, select **Electronic reporting parameters**.
+2. On the **Localization blueprint** page, in the **Related links** section, select **Electronic reporting parameters**.
 3. On the **Electronic reporting parameters** page, on the **General** tab, set the **Enable design mode** option to **Yes**.
 4. On the **Attachments** tab, in the **Configurations** field, select **File**.
 5. In the **Job archive**, **Temporary**, **Baseline**, and **Others** fields, select the **File** type.
@@ -81,13 +81,13 @@ Every ER configuration that is added is marked as owned by an ER configuration p
 #### Review the list of ER configuration providers
 
 1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
-2. On the **Localization configurations** page, in the **Related links** section, select **Configuration providers**.
+2. On the **Localization blueprint** page, in the **Related links** section, select **Configuration providers**.
 3. On the **Configuration provider table** page, each provider record has a unique name and URL. Review the contents of this page. If a record for **Litware, Inc.** (`https://www.litware.com`) already exists, skip the next procedure, [Add a new ER configuration provider](#AddProvider).
 
 #### <a id="AddProvider"></a>Add a new ER configuration provider
 
 1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
-2. On the **Localization configurations** page, in the **Related links** section, select **Configuration providers**.
+2. On the **Localization blueprint** page, in the **Related links** section, select **Configuration providers**.
 3. On the **Configuration providers** page, select **New**.
 4. In the **Name** field, enter **Litware, Inc.**
 5. In the **Internet address** field, enter `https://www.litware.com`.
@@ -96,7 +96,7 @@ Every ER configuration that is added is marked as owned by an ER configuration p
 #### Activate an ER configuration provider
 
 1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
-2. On the **Localization configurations** page, in the **Configuration providers** section, select the **Litware, Inc.** tile, and then select **Set active**.
+2. On the **Localization blueprint** page, in the **Configuration providers** section, select the **Litware, Inc.** tile, and then select **Set active**.
 
 For more information about ER configuration providers, see [Create configuration providers and mark them as active](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
@@ -105,7 +105,7 @@ For more information about ER configuration providers, see [Create configuration
 To add the standard ER configurations to your current Finance instance, you must import them from the ER [repository](general-electronic-reporting.md#Repository) that was configured for that instance.
 
 1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
-2. On the **Localization configurations** page, in the **Configuration providers** section, select the **Microsoft** tile, and then select **Repositories** to view the list of repositories for the Microsoft provider.
+2. On the **Localization blueprint** page, in the **Configuration providers** section, select the **Microsoft** tile, and then select **Repositories** to view the list of repositories for the Microsoft provider.
 3. On the **Configuration repositories** page, select the repository of the **Global** type, and then select **Open**. If you're prompted for authorization to connect to Regulatory Configuration Service, follow the authorization instructions.
 4. On the **Configuration repository** page, in the configuration tree in the left pane, select the **Peppol Sales Invoice** format configuration.
 5. On the **Versions** FastTab, select version **11.2.2**.
@@ -119,11 +119,11 @@ To add the standard ER configurations to your current Finance instance, you must
 ### Review the imported ER configurations
 
 1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
-2. On the **Localization configurations** page, in the **Configurations** section, select the **Reporting configurations** tile.
+2. On the **Localization blueprint** page, in the **Configurations** section, select the **Reporting configurations** tile.
 3. On the **Configurations** page, expand the **Configuration components** FastTab.
 4. In the configuration tree in the left pane, expand **Invoice model**, and then expand **UBL Sales invoice**.
 
-Notice that, in addition to the selected **Peppol Sales Invoice** ER format, other required ER configurations were imported. Because new versions of ER configurations are constantly published to the Global repository and LCS to keep the corresponding solutions compliant with new requirements, the latest versions of the required [data model](general-electronic-reporting.md#data-model-and-model-mapping-components) configuration and its [model mapping](general-electronic-reporting.md#data-model-and-model-mapping-components) configurations were imported.
+Notice that, in addition to the selected **Peppol Sales Invoice** ER format, other required ER configurations were imported. Because new versions of ER configurations are constantly published to the Global repository and LCS to keep the corresponding solutions compliant with new requirements, the latest versions of the required data model configuration and its model mapping configurations were imported.
 
 ![Configurations page.](./media/er-quick-start3-imported-solution1a.png)
 
@@ -136,7 +136,7 @@ Then verify that the following configurations are available in the configuration
 
 - **Invoice model** ER data model configuration (initially named **Customer invoice model**):
 
-    - Version 11 contains version 10 of the [data model](general-electronic-reporting.md#data-model-and-model-mapping-components) ER component that represents the data structure of the invoicing business domain. This ER configuration has been imported as an ancestor of the **Peppol Sales Invoice** ER format that was selected for import.
+    - Version 11 contains version 10 of the data model ER component that represents the data structure of the invoicing business domain. This ER configuration has been imported as an ancestor of the **Peppol Sales Invoice** ER format that was selected for import.
     - Version 50 contains version 31 of the data model ER component. This ER configuration has been imported as an ancestor of the August 7, 2019, version of the **Invoice model mapping** ER model mapping configuration.
 
     ![Invoice model ER data model configuration on the Configurations page.](./media/er-quick-start3-imported-solution1b1.png)
@@ -146,7 +146,7 @@ Then verify that the following configurations are available in the configuration
 
 - **Invoice model mapping** ER model mapping configuration (initially named **Customer invoice model mapping**):
 
-    - Version 50.19 has been imported as the latest implementation of version 50 of the **Invoice model** ER data model configuration. It contains two [model mapping](general-electronic-reporting.md#data-model-and-model-mapping-components) ER components that describe how the data model is filled in with application data at runtime.
+    - Version 50.19 has been imported as the latest implementation of version 50 of the **Invoice model** ER data model configuration. It contains two model mapping ER components that describe how the data model is filled in with application data at runtime.
 
     ![Invoice model mapping ER model mapping configuration on the Configurations page.](./media/er-quick-start3-imported-solution1b2.png)
 
@@ -155,7 +155,7 @@ Then verify that the following configurations are available in the configuration
 
 - **UBL Sales invoice** ER format configuration:
 
-    - Version 11.2 contains the [format](general-electronic-reporting.md#FormatComponentOutbound) and format mapping ER components. The format component specifies the report layout. The format mapping component contains the model data source and specifies how this data source is used to fill in the report layout at runtime. This ER format was configured to generate e-invoices in Universal Business Language (UBL) format. It has been imported as a parent of the **Peppol Sales Invoice** ER format that was selected for import.
+    - Version 11.2 contains the format and format mapping ER components. The format component specifies the report layout. The format mapping component contains the model data source and specifies how this data source is used to fill in the report layout at runtime. This ER format was configured to generate e-invoices in Universal Business Language (UBL) format. It has been imported as a parent of the **Peppol Sales Invoice** ER format that was selected for import.
 
 - **Peppol Sales Invoice** ER format configuration:
 

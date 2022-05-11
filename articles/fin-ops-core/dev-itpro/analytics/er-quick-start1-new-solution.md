@@ -184,7 +184,7 @@ For more information about ER configuration providers, see [Create configuration
 
 ## <a name="DesignModel"></a>Design a domain-specific data model
 
-You must create a new ER configuration that contains a [data model](general-electronic-reporting.md#data-model-and-model-mapping-components) component for the **Questionnaire** business domain. This data model will later be used as a data source when you design an ER format to generate the **Questionnaire** report.
+You must create a new ER configuration that contains a data model component for the **Questionnaire** business domain. This data model will later be used as a data source when you design an ER format to generate the **Questionnaire** report.
 
 By completing the steps in the [Import a new data model configuration](#ImportDataModel) section, you can import the required data model from the provided XML file. Alternatively, you can complete the steps in the [Create a new data model configuration](#DesignDataModel) section to design this data model from scratch.
 
@@ -299,7 +299,7 @@ For more information about versioning for ER configurations, see [Electronic rep
 
 ## <a name="DesignMapping"></a>Design a model mapping for the configured data model
 
-As a user in the Electronic Reporting Developer role, you must create a new ER configuration that contains a [model mapping](general-electronic-reporting.md#data-model-and-model-mapping-components) component for the **Questionnaire** data model. Because this component implements the configured data model for Finance, it's Finance-specific. You must configure the model mapping component to specify the application objects that must be used to fill in the configured data model with application data at runtime. To complete this task, you must be aware of the implementation details of the data structure of the **Questionnaire** business domain in Finance.
+As a user in the Electronic Reporting Developer role, you must create a new ER configuration that contains a model mapping component for the **Questionnaire** data model. Because this component implements the configured data model for Finance, it's Finance-specific. You must configure the model mapping component to specify the application objects that must be used to fill in the configured data model with application data at runtime. To complete this task, you must be aware of the implementation details of the data structure of the **Questionnaire** business domain in Finance.
 
 By completing the steps in the [Import a new model mapping configuration](#ImportModelMapping) section that follows, you can import the required model mapping configuration from the provided XML file. Alternatively, you can complete the steps in the [Create a new model mapping configuration](#CreateModelMapping) section to design this model mapping from scratch.
 
@@ -571,7 +571,7 @@ As the following illustration shows, the custom report header has been specified
 
 ## <a name="DesignFormat"></a>Design a format
 
-As a user in the Electronic Reporting Functional Consultant role, you must create a new ER configuration that contains a [format](general-electronic-reporting.md#FormatComponentOutbound) component. You must configure the format component to specify how a report template will be filled in with required data at runtime.
+As a user in the Electronic Reporting Functional Consultant role, you must create a new ER configuration that contains a format component. You must configure the format component to specify how a report template will be filled in with required data at runtime.
 
 By completing the steps in the [Import a designed format configuration](#FormatImport) section, you can import the required format from the provided XML file. Alternatively, you can complete the steps in the [Create a new format configuration](#FormatCreate) section to design this format from scratch.
 

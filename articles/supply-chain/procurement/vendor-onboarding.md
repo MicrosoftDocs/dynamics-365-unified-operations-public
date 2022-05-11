@@ -3,7 +3,7 @@
 
 title: Onboard vendors
 description: This topic describes the process for onboarding new vendors. It explains the actions that are required by various roles during this process.
-author: Henrikan
+author: GalynaFedorova
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: kamaybac
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2017-12-31 
 ms.dyn365.ops.version: 7.3
 ---

@@ -5,7 +5,7 @@ title: Database movement API - Reference - v1 - Overview
 description: This topic provides a reference for version 1 (v1) of the Database Movement application programming interface (API).
 author: laneswenka
 ms.date: 09/30/2020
-ms.topic: reference
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,7 +16,7 @@ audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: laswenka

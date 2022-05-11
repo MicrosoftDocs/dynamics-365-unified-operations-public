@@ -4,7 +4,7 @@
 title: Finance and Operations virtual entities FAQ
 description: This topic is a list of frequently asked questions about Finance and Operations virtual entities.
 author: Sunil-Garg
-ms.date: 03/31/2021
+ms.date: 01/05/2022
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.12
 
 [!include[banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 > [!IMPORTANT]
 > This functionality requires version 10.0.12 for Finance and Operations apps, while service update 189 is required for Dataverse. The release information for Dataverse is published on the [latest version availability page](/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
@@ -126,5 +126,24 @@ There could be several reasons why performance is slow when a virtual entity has
 When virtual entities have relationships to other entities, the virtual entity framework needs to query the related entities if the field select list includes the foreign key values for the related entities. By default, queries against the entities return all fields unless the caller requests a specific set of fields. The best practice is to specify a narrow select list. This can help to prevent slow performance.
 
 An example of this issue is explained in [Optimize Dataverse virtual table queries](../../../human-resources/hr-developer-optimize-virtual-table-queries.md).
+
+### Can I configure virtual entities to connect other Power Platform environments to the Finance and Operations environment even if the Power Platform integration is enabled?
+
+While some features of the Microsoft Power Platform integration, like the [synchronization of business events and data events with Dataverse](../business-events/business-events-flow.md), will only work between the Finance and Operations apps and Power Platform environments linked through the Microsoft Power Platform integration, it is still possible to manually configure virtual entities between multiple Power Platform environments and the Finance and Operations environment. 
+
+When the Microsoft Power Platform integration is enabled, the Finance and Operations environment is linked to a single Power Platform environment. This becomes a one-to-one environment relationship for the integration. When this is enabled, the virtual entities are automatically configured between the two environments. This means that the manual virtual entity configuration defined in the [Configure Dataverse virtual entities](admin-reference.md) documentation is not required. If any manual virtual entity configuration was done prior to enabling the Microsoft Power Platform integration between the two environments, the manual configuration will be ignored after enabling the integration, and the automatic configuration will be used to connect the two environments.
+
+Although the automatic virtual entity configuration will be used for the Power Platform environment linked to the Finance and Operations environment through the Microsoft Power Platform integration, virtual entities can be manually configured in additional Power Platform environments to enable virtual entities for the Finance and Operations environment with more than one Power Platform environment.
+
+### Can I use Dataverse virtual entities as a data source with the Data Integrator?
+
+No. Virtual entities are not supported as a source for data integration with the [Data Integrator](/power-platform/admin/data-integrator). Technical limitations prevent the Data Integrator from getting the deltas in the source data to push data to the destination environment.
+
+### I'm getting an error that paging is not supported. How do I work around this?
+
+When running a query against a virtual entity you may get an error response with the message, "Paging is not supported for queries with temporary tables." This is by design. The error will be returned if the query includes any temporary tables. If this error is returned, you will need to determine which temporary tables are included in the query, and then modify the query to exclude the temporary table.
+Disabled configuration keys may also cause this error. The default virtual entities provided in the Dynamics 365 ERP Virtual Entities solution do not include temporary tables when all configurations are enabled. However, when a configuration key is not enabled for the backing table of an entity, the physical table is replaced with a temporary table so the system doesn't need to be recompiled for schema changes. This results in a temporary table included in the virtual entity query. In these scenarios the solution is to enable the associated configuration key to resolve the error.
+
+For additional information about the impact of configuration keys on data entities, see [Configuration keys and data entities](../data-entities/config-key-entities.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,7 +4,7 @@
 title: Set up an email notification profile
 description: This topic describes how to create an email notification profile in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-ms.date: 03/01/2021
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.8
 
 This topic describes how to create an email notification profile in Microsoft Dynamics 365 Commerce.
 
-When you create channels, you can set up an email notification profile. In that way, emails can be sent to customers for various transactional events, such as order creation, order shipping status, and payment failure.
+When you create channels, you can set up an email notification profile. The email notification profile defines the events of a sales transaction (such as order created, order packed, and order invoiced events) for which you will send notifications to your customers. 
 
 For additional email configuration information, see [Configure and send email](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
 
@@ -47,7 +47,7 @@ To create an email notification profile, follow these steps.
 
 ### Create an email template
 
-Before an email notification type can be enabled, you must create an organization email template in Commerce headquarters. This template defines the email subject, sender, default language, and email body for each language that you want to support.
+Before an email notification type can be enabled, you must create an organization email template in Commerce headquarters for each notification type you want to support. This template defines the email subject, sender, default language, and email body for each supported language.
 
 To create an email template, follow these steps.
 
@@ -65,6 +65,8 @@ The following image shows some example email template settings.
 
 ![Email template settings.](media/email-template.png)
 
+For more information about creating email templates, see [Create email templates for transactional events](email-templates-transactions.md). 
+
 ### Create an email event
 
 To create an email event, follow these steps.
@@ -80,10 +82,25 @@ The following image shows some example event notification settings.
 
 ![Event notification settings.](media/email-notification-profile.png)
 
+> [!NOTE]
+> The customer created notification type requires a customization to be implemented before an email notification can be sent.
+
+### Schedule a recurring email notification process job
+
+To send out email notifications, you must have the **Process retail order email notification** job running.
+
+To set up the **Process retail order email notification** job in Commerce headquarters if you haven't already done so, follow these steps.
+
+1. Go to **Retail and Commerce \> Retail and Commerce IT \> Email and notifications \> Send email notification**.
+1. In the **Process retail order email notification** dialog box, select **Recurrence**.
+1. In the **Define recurrence** dialog box, select **No end date**.
+1. Under **Recurrence pattern**, select **Minutes**, and then set the **Count** field to **1**. These settings will ensure that email notifications are processed as quickly as possible.
+1. Select **OK** to return to the **Process retail order email notification** dialog box.
+1. Select **OK** to complete the job setup.
+
 ### Next steps
 
 Before you can send mails, you must configure your outgoing mail service and set up a batch job. For more information, see [Configure and send email](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
-
 
 ## Additional resources
 

@@ -2,8 +2,8 @@
 # required metadata
 
 title: Funds in the public sector
-description: A fund is a self-balancing set of financial books that is used to control and monitor the planned use of resources, often in compliance with legal and administrative requirements. Public-sector organizations use funds to demonstrate their fiscal accountability.
-author: ShylaThompson
+description: This topic explains how public sector entities can use funds to demonstrate their fiscal accountability. A fund is a self-balancing set of financial books that's used to control and monitor the planned use of resources, often in compliance with legal and administrative requirements.
+author: v-kiarnd
 ms.date: 08/07/2017
 ms.topic: article
 ms.prod: 
@@ -15,13 +15,13 @@ ms.search.form: LedgerFund, LedgerFundType
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 19571
 ms.assetid: c746c09f-dc9e-4381-ae92-e1af484064b6
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: brpotter
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -38,7 +38,7 @@ A fund is a self-balancing set of financial books that is used to control and mo
 To learn about the General ledger parameters required for funds, see [General ledger in the public sector](general-ledger-public-sector.md).
 
 ## What fund classes and fund types do I need to set up?
-The Governmental Accounting Standards Board (GASB) recommends a set of Generally Accepted Accounting Principles (GAAP) for state and local governmental accounting.  The GAAP identifies eight fund types that are categorized under the three fund classes:
+The Governmental Accounting Standards Board (GASB) recommends a set of Generally Accepted Accounting Principles (GAAP) for state and local governmental accounting. The GAAP identifies eight fund types that are categorized under the three fund classes:
 
 -   Governmental funds
     -   General fund

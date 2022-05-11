@@ -5,7 +5,7 @@ author:  negudava
 ms.date: 11/09/2020
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
 ms.author: negudava
 ms.search.validFrom: 2020-01-06

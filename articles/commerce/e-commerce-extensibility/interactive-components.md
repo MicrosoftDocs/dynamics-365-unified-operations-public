@@ -5,7 +5,7 @@ title: Interactive components overview
 description: This topic covers interactive components that let site authors edit fields for text, rich text, links, images, and videos directly on the WYSIWYG preview canvas in Microsoft Dynamics 365 Commerce site builder.
 author: samjarawan
 ms.date: 08/06/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,7 +16,7 @@ audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 

@@ -4,7 +4,7 @@
 title: Upload images
 description: This topic describes how to upload images in Microsoft Dynamics 365 Commerce site builder.
 author: psimolin
-ms.date: 08/25/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -45,7 +45,8 @@ When uploading an image, the following information can be specified.
 - **Publish assets after upload**: When this check box is selected, the image or images are published immediately after upload.
 
 > [!NOTE]
-> Image assets with a category assigned are also automatically tagged with the category as a keyword to aid searching for assets of a specific category.
+> - Image assets with a category assigned are also automatically tagged with the category as a keyword to aid searching for assets of a specific category.
+> - Product detail pages dynamically generate the **Alt Text** using the product name, so changing the **Alt Text** for a product image will have no impact on the rendered image.
 
 ### Naming conventions for omni-channel images 
 

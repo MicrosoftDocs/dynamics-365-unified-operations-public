@@ -5,7 +5,7 @@ author: pvillads
 ms.date: 11/03/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 48071
 ms.assetid: 4fe671c4-c556-4942-8570-307cf68ae0a7
 ms.search.region: Global

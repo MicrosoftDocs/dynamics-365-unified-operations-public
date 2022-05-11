@@ -192,12 +192,9 @@ You can choose how strict the system should be when validating quantities entere
 
 Strict validation applies to **Standard order quantity** values specified on the **Purchase order**, **Inventory**, and **Sales order** FastTabs of the **Default order settings** page. Each FastTab has its own **Multiple** setting, which is used to validate the **Standard order quantity** value specified for that FastTab.
 
-### Enable the strict validation option
+### Turn the strict validation option on or off
 
-Before you can use the strict validation option, it must be enabled on your system. Administrators can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to check the feature status and enable it if needed. Here, the feature is listed as:
-
-- **Module** - *Product information management*
-- **Feature name** - *Strict validation on default order quantities*
+To use strict validation, the *Strict validation on default order quantities* feature must be turned on for your system. As of Supply Chain Management version 10.0.21, this feature is turned on by default. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.25, then you can turn this functionality on or off by going to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and searching for the *Strict validation on default order quantities* feature.
 
 ### Set the validation option
 

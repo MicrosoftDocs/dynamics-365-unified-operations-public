@@ -3,7 +3,7 @@
 
 title: Collections management key concepts
 description: The topics defines key concepts for collections management.
-author: mikefalkner
+author: JodiChristiansen
 ms.date: 11/27/2019
 ms.topic: article
 ms.prod: 
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschloma
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 

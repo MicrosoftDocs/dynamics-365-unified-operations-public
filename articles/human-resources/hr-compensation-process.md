@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
@@ -28,6 +28,9 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 ---
 
 # Process compensation
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -47,10 +50,10 @@ After the parameters of the process event have been saved, you can click the **S
 
 Click the **Add** button on the **Plans** tab to add a compensation plan to the process event. The **Use other leverage**, **Leverage factor**, and **Leverage description** columns are used for variable compensation plans only and are not be covered in this topic.
 
-Save the record, then click the **Add** button on the **Actions** tab to add fixed compensation actions for the selected plan. Use the **Enable recommendation** option to enter an amount that's different than the calculated guideline increase for the action. To calculate an action that's based on the result of the previous action to link multiple compensation actions, mark the **Use previous result** option. Fixed compensation actions are types of compensation logic that you can give descriptive names to. For Grade and Band plans, you can only add fixed compensation actions that are of the following Types:
+Save the record, then click the **Add** button on the **Actions** tab to add fixed compensation actions for the selected plan. Use the **Enable recommendation** option to enter an amount that's different than the calculated guideline increase for the action. To calculate an action that's based on the result of the previous action to link multiple compensation actions, mark the **Use previous result** option. Fixed compensation actions are types of compensation logic that you can give descriptive names to. For **Grade** and **Band** plans, you can only add fixed compensation actions that are of the following Types:
 
-| Fixed compensation action type | Functionality                                                                                                                                                                                                                                                                                                                                                                                                    |
-|-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Fixed compensation action type | Functionality                  |
+|-------------------------------|-------------------------------------------------------------------------|
 | Equity                        | Equity actions will compare the employee’s rate of pay as of the cycle end date with the lowest reference point for the level indicated on the employee’s job. If the employee’s pay rate is less than the minimum reference point, the increase needed to bring the employee to the minimum point in the range will be calculated.                                                                                |
 | Merit                         | Merit actions will calculate an increase based on the employee’s pay rate as of the cycle end date and the increase percent found in the fixed increase budget for the employee’s department, labor union, and location.                                                                                                                                                                                         |
 | General                       | General actions will calculate an increase based on either a Percent or give the employees a flat amount. This is determined based on the **Fixed compensation** settings on the **General** tab.                                                                                                                                                                                                                        |
@@ -59,12 +62,12 @@ Save the record, then click the **Add** button on the **Actions** tab to add fix
 
 You can only add **Fixed compensation** actions with a type of Step to a Step plan.
 
-| Fixed compensation action type | Functionality                                                                                                                                                                                           |
-|--------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Fixed compensation action type | Functionality                |
+|--------------------------------|------------------------------|
 | Step                           | On the **General** tab, indicate whether this Step action should move the employees forward 0 steps, 1 step, or two steps.                                                                                  |
 |                                | **0 steps** - The employee will receive the pay rate for the current step they are on.                                                                                                                      |
 |                                | **1 step** - The system will check whether the employee is already at the last reference point for their level.                                                                                             |
-|                                | **2 steps** - The system will move the employee forward two steps on their current level. The system might only move the employee one or zero steps if they reach the last reference point for their level. |
+|                                | **2 steps** - The employee will move forward two steps on their current level. The employee might only move one or zero steps if they reach the last reference point for their level. |
 
 ## Run the compensation process
 After the process event has been set up with the necessary date fields, plans and actions, click **Run process** on the **Process event** page, this opens the **Run compensation process events** dialog. Click the **Show processing results** option to seen how the compensation amounts were calculated for each employee. Clicking **OK** will run the compensation process for all employees who in the selected compensation plans as of the cycle end date.

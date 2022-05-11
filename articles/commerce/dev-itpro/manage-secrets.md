@@ -4,7 +4,7 @@
 title: Manage secrets for retail channels
 description: This topic explains how to manage secrets when you're using an extension with channels that require access to secrets.
 author: AamirAllaq
-ms.date: 08/06/2020
+ms.date: 04/21/2022
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS:
 audience: Developer
 # ms.devlang:
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm:
 ms.custom: 83892
 ms.search.region: Global
@@ -59,6 +59,10 @@ To consume the secret in the extension, add the following request and response.
 | GetUserDefinedSecretStringValueServiceResponse | string **SecretStringValue** | The response class that is used to get user-defined secrets from Headquarters. The response returns a **SecretStringValue** value, and extensions can type-cast this value to **X509Certificate2** or use it as string value. |
 
 To read the secret in the CRT extension, follow these steps.
+
+### Cache the key vault in memory in CRT/Retail Server
+
+Whenever a call is made to read the Key Vault secret value in CRT, CRT calls Headquarters in real time to get the value. Headquarters then calls the key vault to get the value. Because multiples hops are involved in reading the value, the latency for the call is increased. Therefore, we recommend that you cache the Key Vault secret value in memory on the CRT/Retail Server side to help improve performance. If the value is often changed in Key Vault, you must decide the correct strategy for cache expiration, based on your scenario.
 
 1. Create a new CRT extension project (C\# class library project type). Use the sample templates from the Retail software development kit (SDK) (**RetailSDK\\SampleExtensions\\CommerceRuntime**).
 2. In the CRT extension, you can create a new request/response, or you can add a pre-trigger or post-trigger for the existing CRT request, and then call it. In the following example, a trigger was added for **SaveCartRequest**. It calls **GetUserDefinedSecretStringValueServiceRequest** to read the secret by passing the secret key that is configured in Headquarters. You don't have to write custom code to read the secret from Headquarters. You can use the request and response to read the value.
@@ -126,7 +130,7 @@ To read the secret in the CRT extension, follow these steps.
 
 ## Credential rotation
 
-When this approach is used for credential management, credential rotation is more streamlined. To update a secret, an IT admin just has to update the secret in Key Vault. No change is required to the extension. After a secret is updated, the new value starts to be used when the cache expires.
+When this approach is used for credential management, credential rotation is more streamlined. To update a secret, an IT administrator just has to update the secret in Key Vault. No change is required to the extension. 
 
 ## Offline support
 

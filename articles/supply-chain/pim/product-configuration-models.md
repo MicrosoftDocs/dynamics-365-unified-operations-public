@@ -5,7 +5,7 @@ title: Product configuration models overview
 description: This article defines terms and concepts that are relevant to product configuration models. Product configuration models let you build a generic product structure that can be used to configure many product variants for a single product.
 author: t-benebo
 ms.date: 06/20/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 

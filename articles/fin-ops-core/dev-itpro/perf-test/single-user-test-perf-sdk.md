@@ -11,7 +11,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 9954
 ms.assetid: 7b605810-e4da-4eb8-9a26-5389f99befcf
@@ -76,7 +76,7 @@ Before you run a single-user test, you must work with your business team to defi
 When you've finished recording the end-to-end scenario, you must generate a C\# performance test script that is based the task recording. 
 
 1. In a development environment, open Microsoft Visual Studio as an admin.
-2. From your **PerfSDK** folder, open the **PerfSDKSample** solution. In a tier-1 sandbox or a cloud-hosted-environment, the PerfSDK folder is typically in \<Service volumne\>:\\PerfSDK\\PerfSDKLocalDirectory.
+2. From your **PerfSDK** folder, open the **PerfSDKSample** solution. In a tier-1 sandbox or a cloud-hosted-environment, the PerfSDK folder is typically in \<Service volume\>:\\PerfSDK\\PerfSDKLocalDirectory.
 
     [![PerfSDK directory.](./media/single-user-test-05.png)](./media/single-user-test-05.png)
 

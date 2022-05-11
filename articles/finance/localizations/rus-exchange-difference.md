@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom: 
 ms.search.region: Russia
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 

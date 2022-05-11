@@ -4,7 +4,7 @@
 title: Extend POS views to add custom columns and app bar buttons
 description: This topic explains how you can extend existing POS views such as the Customer Add/Edit screen.
 author: mugunthanm
-ms.date: 03/24/2020
+ms.date: 04/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 24411
 ms.search.region: Global
@@ -39,6 +39,7 @@ POS views support the following extension points and patterns:
 - **Custom app bar buttons** – Add custom buttons to the app bar on selected pages.
 - **Custom column sets** – Replace the grid columns with custom columns on selected pages.
 - **Custom controls** – Add new controls to selected pages.
+- **Custom filters** – Add custom filters to selected pages.
 
 ## POS views that currently support extensions
 
@@ -57,7 +58,7 @@ The following table shows the POS views that currently support extensions. It al
 | InventoryLookupView             | No                            | Yes                          | Yes                                  |
 | ShowJournalView                 | No                            | Yes                          | Yes                                  |
 | SimpleProductDetailsView        | Yes                           | No                           | Yes                                  |
-| AddressAddEditView              | Yes                           | No                           | Yes                                    |
+| AddressAddEditView              | Yes                           | No                           | Yes                                  |
 | PaymentView                     | No                            | No                           | Yes                                  |
 | PriceCheckView                  | Yes                           | No                           | Yes                                   |
 | PriceCheckViewPhone             | No                            | No                           | Yes                                   |
@@ -86,14 +87,26 @@ The following table shows the POS views that currently support extensions. It al
 
 > [!NOTE]
 > The table shown above is updated based on the latest released version and hotfix. In earlier versions, some of these extension points will not be available.
-
+>
 > In Show journal (lines grid) and Return transaction view, custom columns are supported using the row sub fields. These sub fields will be displayed as rows instead of columns, like the info code messages or serial number or discounts values.
 
 ## Custom filter extension
 
-Custom filter extensions are supported in **Show journal view**, **Search order view**, **FulfillmentLine view**, and **Inventory Document Shipping and Receiving view**. **Search order views** also supports setting default parameters for search in the user interface (UI) using extensions. For example, if you want to add a default store search parameter you can do that by using an extension and showing that in the UI. 
+Custom filter extensions are supported in the POS views in the following table. **Search order views** also supports using extensions to set default parameters for search in the user interface (UI). For example, if you want to add a default store search parameter, you can use an extension and show that parameter in the UI. 
 
-Sample code for custom filter extensions are available in the Retail SDK (...\RetailSDK\Code\POS\Extensions\SampleExtensions\ViewExtensions\SearchOrders\SampleOrderSearchTextFilter.ts).
+| POS view                                   | Custom filters supported?  | Default filter parameters?    | Release |
+|--------------------------------------------|-------------------------------|-----------------------------|--------------------------------|
+| ShowJournalView                            | Yes                           | No                          |                                |
+| SearchOrdersView                           | Yes                           | Yes                         |                                |
+| FulfillmentLineView                        | Yes                           | No                          |                                |
+| InventoryDocumentListView                  | Yes                           | No                          | 10.0.23                        |
+| InventoryDocumentShippingAndReceivingView  | Yes                           | No                          | 10.0.25                        |
+| InventoryAdjustmentDocumentListView        | Yes                           | No                          | 10.0.25                        |
+| InventoryAdjustmentDocumentWorkingView     | Yes                           | No                          | 10.0.25                        |
+| InventoryDocumentStockCountingListView     | Yes                           | No                          | 10.0.25                        |
+| InventoryDocumentStockCountingWorkingView  | Yes                           | No                          | 10.0.25                        |
+
+Sample code for custom filter extensions is available in the Retail SDK (...\RetailSDK\Code\POS\Extensions\SampleExtensions\ViewExtensions\SearchOrders\SampleOrderSearchTextFilter.ts).
 
 ## Add a custom column and an app bar button
 

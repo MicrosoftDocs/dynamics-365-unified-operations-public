@@ -8,7 +8,7 @@ manager: beya
 ms.date: 04/29/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+
 ms.technology: 
 
 # optional metadata
@@ -17,7 +17,7 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: India

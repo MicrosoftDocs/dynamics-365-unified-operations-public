@@ -1,10 +1,10 @@
 ---
 title: Learning Catalog for Dynamics 365 Supply Chain Management functional consultants
 description: Find all the training options for functional consultants who work with Dynamics 365 Supply Chain Management.
-author: margoc
+author: kamaybac
 ms.topic: article
 ms.date: 07/27/2020
-ms.author: margoc
+ms.author: kamaybac
 
 ms.prod:
 ms.technology:
@@ -13,7 +13,7 @@ ms.technology:
 
 # ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: Application user
-ms.reviewer: margoc
+ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.1
@@ -113,7 +113,7 @@ For functional consultants, our job-task analysis research showed that everyone 
 | [Configure Asset Management for Dynamics 365 Supply Chain Management](/learn/paths/configure-asset-management-dyn365-supply-chain-mgmt/) | Asset Management is an add-in for Dynamics 365 Supply Chain Management, that is used to manage assets that are used in the daily operation of your company. Some examples of these types of assets are machinery, production equipment, and fork lifts. | Free, self-paced online learning path | 7 hours |
 | [Work with Asset Management for Dynamics 365 Supply Chain Management](/learn/paths/work-asset-management-dyn365-supply-chain-mgmt/) | Asset Management is an add-in to Dynamics 365 Supply Chain Management, that is used to manage assets that are used in the daily operation of your company. Some examples of these types of assets are machinery, production equipment, and fork lifts. | Free, self-paced online learning path | 12.5 hours |
 | [Manage product version information in Dynamics 365 Supply Chain Management](/learn/paths/manage-product-version-engineering-change-management/) | The Engineering Change Management Add-in for Dynamics 365 Supply Chain Management provides a structured process for managing product version information during the life cycle of an engineering product. | Free, self-paced online learning path | 4 hours |
-| [Set up engineering change management for Dynamics 365 Supply Chain Management](/learn/paths/set-up-engineering-change-management/) | Today's manufacturers require strong product data management, version control, and engineering change management to succeed in a world of constantly shrinking product life cycles, increased quality and reliability requirements, and an increased focus on product safety. Learn how to set up engineering change management in this learning path. | Free, self-paced online learning path | 4 hours |
+| [Set up engineering change management for Dynamics 365 Supply Chain Management](/learn/paths/set-up-engineering-change-management/) | Today's manufacturers require strong product data management, version control, and engineering change management to succeed in a world of constantly shrinking product life cycles, increased quality and reliability requirements, and an increased focus on product safety. Learn how to set up engineering change management in this learning path. | Free, self-paced online learning path | 4 hours |
 | [Microsoft Certified: Dynamics 365 for Finance and Operations, Supply Chain Management Functional Consultant Associate](https://www.microsoft.com/learning/d365-functional-consultant-supply-chain-management.aspx) | Microsoft Certified: Dynamics 365 for Finance and Operations, Supply Chain Management Functional Consultants streamline cost accounting, inventory management, master planning, and warehouse management for their clients. | Certification, cost varies by region | |
 
 ## Exams<a name="exams"></a>

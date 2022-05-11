@@ -3,8 +3,8 @@
 
 title: Customer management in stores
 description: This topic explains how retailers can enable customer management capabilities at the point of sale (POS) in Microsoft Dynamics 365 Commerce.
-author: josaw1
-ms.date: 09/01/2021
+author: gvrmohanreddy
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -13,7 +13,7 @@ ms.search.form: RetailOperations
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: v-chgri
-#ms.search.scope: Core, Operations, Retail
+#
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -45,38 +45,13 @@ Retailers can use the **All stores** page in Commerce headquarters (**Retail and
 
 Sales associates can capture multiple addresses for a customer. The customer's name and phone number are inherited from the contact information that is associated with each address. The **Addresses** FastTab of a customer record includes a **Purpose** field that sales associates can edit. If the customer type is **Person**, the default value is **Home**. If the customer type is **Organization**, the default value is **Business**. Other values that this field supports include **Home**, **Office**, and **Post box**. The value of the **Country** field for an address is inherited from the primary address that is specified on the **Operating unit** page in Commerce headquarters at **Organization administration \> Organizations \> Operating units**.
 
-## Sync customers and Async customers
 
-> [!IMPORTANT]
-> Whenever the POS goes offline, the system automatically creates the customers asynchronously, even if the Async customer creation mode is disabled. Therefore, regardless of your selection between Sync and Async customer creation, Commerce headquarters administrators must create and schedule a recurring batch job for the **P-job**, the **Synchronize customers and business partners from async mode** job (formerly named the **Synchronize customers and business partners from async mode** job), and the **1010** job, so that any Async customers are converted to Sync customers in Commerce headquarters.
-
-In Commerce, there are two modes of customer creation: Synchronous (or Sync) and Asynchronous (or Async). By default, customers are created synchronously. In other words, they are created in Commerce headquarters in real time. The Sync customer creation mode is beneficial because new customers are immediately searchable across channels. However, it also has a drawback. Because it generates [Commerce Data Exchange: Real-time Service](dev-itpro/define-retail-channel-communications-cdx.md#realtime-service) calls to Commerce headquarters, performance can be affected if many concurrent customer creation calls are made.
-
-If the **Create customer in async mode** option is set to **Yes** in the store's functionality profile (**Retail and Commerce \> Channel setup \> Online store setup \> Functionality profiles**), Real-time Service calls aren't used to create customer records in the channel database. The Async customer creation mode doesn't affect the performance of Commerce headquarters. A temporary globally unique identifier (GUID) is assigned to every new Async customer record and used as the customer account ID. This GUID isn't shown to POS users. Instead, those users will see **Pending sync** as the customer account ID. 
-
-### Convert Async customers to Sync customers
-
-To convert Async customers to Sync customers, you must first run the **P-job** to send the Async customers to Commerce headquarters. Then run the **Synchronize customers and business partners from async mode** job (formerly named the **Synchronize customers and business partners from async mode** job) to create customer account IDs. Finally, run the **1010** job to sync the new customer account IDs to the channels.
-
-### Async customer limitations
-
-The Async customer functionality currently has the following limitations:
-
-- Async customer records can't be edited unless the customer has been created in Commerce headquarters and the new customer account ID has been synced back to the channel. Therefore, the address can't be saved for an Async customer until that customer is synced to Commerce headquarters, because the addition of a customer address is internally implemented as an edit operation on the customer profile. However, if the **Enable the asynchronous creation for customer addresses** feature is enabled, the customer addresses can also be saved for Async customers.
-- Affiliations can't be associated with Async customers. Therefore, new Async customers don't inherit affiliations from the default customer.
-- Loyalty cards can't be issued to Async customers unless the new customer account ID has been synced back to the channel.
-- Secondary email addresses and phone numbers can't be captured for Async customers.
-
-Although some of the previously mentioned limitations might make you inclined to choose the Sync customer option for your business, the Commerce team is working to make the Async customer capabilities more closely match the Sync customer capabilities. For example, as of the Commerce version 10.0.22 release, a new **Enable the asynchronous creation for customer addresses** feature that you can enable in the **Feature management** workspace asynchronously saves newly created customer addresses for both Sync customers and Async customers. To save these addresses on the customer profile in Commerce headquarters, you must schedule a recurring batch job for the **P-job**, the **Synchronize customers and business partners from async mode** job, and the **1010** job, so that any Async customers are converted to Sync customers in Commerce headquarters.
-
-### Customer creation in POS offline mode
-
-Whenever the POS goes offline, the system automatically creates the customers asynchronously, even if the Async customer creation mode is disabled. Therefore, as was mentioned earlier, Commerce headquarters administrators must create and schedule a recurring batch job for the **P-job**, the **Synchronize customers and business partners from async mode** job, and the **1010** job, so that any Async customers are converted to Sync customers in Commerce headquarters.
-
-> [!NOTE]
-> If the **Filter shared customer data tables** option is set to **Yes** on the **Commerce channel schema** page (**Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Channel database group**), customer records aren't created in POS offline mode. For more information, see [Offline data exclusion](dev-itpro/implementation-considerations-cdx.md#offline-data-exclusion).
 
 ## Additional resources
+
+[Asynchronous customer creation mode](async-customer-mode.md)
+
+[Convert asynchronous customers to synchronous customers](convert-async-to-sync.md)
 
 [Customer attributes](dev-itpro/customer-attributes.md)
 

@@ -4,7 +4,7 @@
 title: Commerce offline implementation and troubleshooting
 description: This topic provides an overview of Microsoft Dynamics 365 Commerce offline implementation considerations and troubleshooting.
 author: jashanno
-ms.date: 10/01/2021
+ms.date: 11/22/2021
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
@@ -35,7 +35,7 @@ For details regarding features that enhance or alter the data synchronization of
 | Feature name | Description |
 |--------------|-------------|
 | Advanced offline | This feature consists of a series of settings in the offline profile. These settings make additional offline switching scenarios available, give users the ability to switch to offline mode before they sign in to the POS, and allow for enhanced Commerce headquarters availability testing so that you can easily switch to offline mode and return to online status. |
-| Offline status dashboard | A new dashboard, provided in release 10.0.20 and later, shows the latest offline status, error, and details of the database for each device.  This dashboard can be found at **Retail and Commerce > Channel setup > POS setup > Register offline status**. |
+| Offline status dashboard | A new dashboard, provided as of the Commerce version 10.0.20 release, shows the latest offline status, error, and details of the database for each device.  This dashboard can be found at **Retail and Commerce \> Channel setup \> POS setup \> Register offline status**. For this dashboard to function correctly the **Modern POS offline monitoring** feature must be turned on in the **Feature management** workspace, followed by the execution of an 1110 distribution schedule job. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). |
 | Performance-based offline switching (POS seamless offline for performance degradation) | This feature, provided in release 10.0.20 and later, enables Modern POS devices to switch to offline mode seamlessly when encountering outbound web request performance degradation.  This feature requires the **Enable advanced offline switching** functionality to be enabled from the **Offline profile** page in Headquarters. The **POS seamless offline for performance degradations** feature must be turned on in the Feature management workspace. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). |
 
 ### Advanced offline feature

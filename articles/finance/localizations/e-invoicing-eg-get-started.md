@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Get started with Electronic invoicing for Egypt
-description: This topic provides information that will help you get started with Electronic invoicing for Egypt in Finance and Supply Chain Management.
+title: Electronic invoicing for Egypt
+description: This topic provides information that will help you get started with Electronic invoicing for Egypt in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: gionoder
-ms.date: 04/20/2021
+ms.date: 02/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -27,59 +27,83 @@ ms.dyn365.ops.version: AX 10.0.12
 
 ---
 
-# Get started with Electronic invoicing for Egypt
+# Electronic invoicing for Egypt
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information that will help you get started with Electronic invoicing for Egypt. The topic guides you through the configuration steps that are country-dependent in Regulatory Configuration Services (RCS), and complement the steps described in [Get started with Electronic invoicing](e-invoicing-get-started.md).
+This topic provides information that will help you get started with Electronic invoicing for Egypt. It guides you through the configuration steps that are country-dependent in Regulatory Configuration Service (RCS). These steps complement the steps that are described in [Set up Electronic invoicing](e-invoicing-set-up-overview.md).
 
-## Country-specific configuration for Egyptian electronic invoice (EG) Electronic invoicing feature
+## Prerequisites
 
-Some of the parameters from the **Egyptian electronic invoice (EG) Electronic invoicing feature** are published with default values. Review the values and if necessary, update the values to better reflect your business operation before you deploy the Electronic invoicing feature to the Service environment.
+Before you begin the procedures in this topic, complete the following prerequisites:
 
-This section complements the **Country-specific configuration for Electronic invoicing feature** section in the topic [Get started with Electronic invoicing](e-invoicing-get-started.md).
+- Become familiar with Electronic invoicing as it's described in [Electronic invoicing overview](e-invoicing-service-overview.md).
+- Sign up for RCS, and set up Electronic invoicing. For more information, see the following topics:
 
-### Prerequisites
+    - [Sign up for and install the Electronic Invoicing service](e-invoicing-sign-up-install.md)
+    - [Set up Azure resources for Electronic invoicing](e-invoicing-set-up-azure-resources.md)
+    - [Install the add-in for microservices in Lifecycle Services](e-invoicing-install-add-in-microservices-lcs.md)
+	
+- Activate the integration between your Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management application and the Electronic Invoicing service as described in [Activate and setup integration with Electronic invoicing](e-invoicing-activate-setup-integration.md).
+- Create a digital certificate secret in Azure Key Vault, and set it up it as described in [Customer certificates and secrets](e-invoicing-customer-certificates-secrets.md). For testing purposes, the Egyptian tax authority provides specific test digital certificates that must be used only during testing and solution validation phases. For more information, go to the Egyptian tax authority website by using the link that is provided in [Egyptian e-invoicing SDK](https://sdk.invoicing.eta.gov.eg/faq/).
 
-Before you complete the procedure in this section, you must:
+## Country-specific configuration for the Egyptian electronic invoice (EG) feature
 
-- Create a digital certificate secret, as described in the **Create digital certificate secret** section in [Get started with Electronic invoicing service administration](e-invoicing-get-started-service-administration.md). For testing purposes, the Egyptian tax authority provides specific test digital certificates that must be used only during testing and solution validation phases. For more information, consult the Egyptian tax authority website using the link provided in the [Egyptian e-invoicing SDK](https://sdk.sit.invoicing.eta.gov.eg/faq/).
+Some of the parameters from the **Egyptian electronic invoice (EG)** electronic invoicing feature are published with default values. Before you deploy the electronic invoicing feature to the service environment, review the default values, and update them as required so that they better reflect your business operation.
 
-1. In RCS, in the **Features** section of the **Globalization feature** workspace, select the **Electronic invoicing** tile.
-2. On the **Electronic invoicing Features** page, verify that the **Egyptian electronic invoice (EG)** Electronic invoicing feature you created is selected.
-3. On the **Versions** tab, verify the **Draft** version is selected.
-4. On the **Setups** tab, in the grid, select **Sales invoice** feature setup.
-5. Select **Edit**, and on the **Actions** tab in the **Actions** field group, select **Sign json document for Egyptian Tax Authority**.
-6. In the **Parameters** field group, select the parameter, **Certificate name** and select the name of the digital certificate created to use with the Electronic invoicing feature.
-7. In the **Actions** field group, select **Integrate with Egyptian ETA service**. Repeat this step for the two occurrences of this action.
-8. In the **Parameters** field group, select **Web service URL** and **Login service URL** and, if necessary, review the URL parameters. Consult the Egyptian tax authority website to get the Testing and Production URL, using the link provided in the [Egyptian e-invoicing SDK](https://sdk.sit.invoicing.eta.gov.eg/faq/).
-9. Select **Save** and close the page.
-10. To deploy the Electronic invoicing feature to the Service environment, see [Get started with Electronic invoicing](e-invoicing-get-started.md).
-
-## Country-specific configuration of the application setup for the Egyptian electronic invoice (EG) Electronic invoicing feature
-
-Complete these steps before you deploy the Application setup to your Finance or Supply Chain Management Connected application.
-
-This section complements the **Country-specific configuration of application setup** section in the topic [Get started with Electronic invoicing](e-invoicing-get-started.md).
-
-1. In RCS, in the **Features** section of the **Globalization feature** workspace, select the **Electronic invoicing** tile.
-2. In the **Electronic invoicing Features** page, verify that the **Egyptian electronic invoice (EG)** Electronic invoicing feature is selected.
+1. Import the latest version of the **Egyptian electronic invoice (EG)** Globalization feature as described in [Import features from the Global repository](e-invoicing-import-feature-global-repository.md).
+2. Create a copy of the imported Globalization feature, and select your configuration provider for it, as described in [Create a Globalization feature](e-invoicing-create-new-globalization-feature.md).
 3. On the **Versions** tab, verify that the **Draft** version is selected.
-4. On the **Setups** tab, select **Application setup** and in the **Connected application** field, select the application where you want to deploy.
-5. In the **Table name** field, verify that the customer invoice journal is selected.
-6. Select **Response types**, and then select **New**.
-7. In the **Response type** field, enter "Response" and in the **Description** field, enter "Description".
-8. In the **Submission status** field, select **Pending**.
-9. In the **Model mapping** field, select **Model mapping from response message**, with **(Preview) Response message import format**, and then select **Save**.
-10. Select **New** and in the **Response type** field, enter "ResponseData" as a fixed value. In the **Description** field, enter "Description".
-11. In the **Submission status** field, select **Pending**.
-12. In the **Data entity name** field, select **Sales invoice headers V2**.
-13. In the **Model mapping** field, select **Egypt response data import**, with **(Preview) Egypt response data import** and then select **Save**.
-14. To deploy the application setup to the Finance or Supply Chain Management connected application, see [Get started with Electronic invoicing](e-invoicing-get-started.md).
+4. On the **Setups** tab, in the grid, select the **Sales invoice derived** feature setup.
+5. Select **Edit**.
+6. On the **Processing pipeline** tab, in the **Processing pipeline** section, select **Sign json document for Egyptian Tax Authority**.
+7. In the **Parameters** section, select **Certificate name**, and then select the name of the digital certificate that you created.
+8. In the **Processing pipeline** section, select **Integrate with Egyptian ETA service**. Repeat this step for the two occurrences of this action.
+9. In the **Parameters** section, select **Web service URL** and **Login service URL**. Then review the URL parameters. To get the testing and production URL, go to the Egyptian tax authority website by using the link that is provided in [Egyptian e-invoicing SDK](https://sdk.invoicing.eta.gov.eg/faq/).
+10. Select **Save**, and close the page.
+11. Repeat the steps 4 through 10 for the **Project invoice derived** feature setup.
+
+## Country-specific configuration for the Egyptian electronic invoice (EG) application setup
+
+There are parameters that must be set up in your Finance or Supply Chain Management environment. You can complete this setup in either of two places:
+
+- Directly in your Finance or Supply Chain Management environment. For more information, see [Setup Electronic Invoicing parameters](e-invoicing-set-up-parameters.md).
+- In RCS. In the scope of electronic invoicing feature setup, you can define all parameters and then deploy them directly to your Finance or Supply Chain Management environment when you deploy the electronic invoicing feature.
+
+For both options, the parameters are the same. If you're setting up your first feature in the Electronic Invoicing service, we recommend that you follow these steps to set up the parameters in RCS and then deploy them to your connected application.
+
+> [!NOTE]
+> Some electronic invoicing feature versions might contain a predefined set of application-specific parameters for Finance or Supply Chain Management. In this case, you should verify that the data is correct. Otherwise, manually set the parameters.
+
+1. Find the copy of the **Egyptian electronic invoice (EG)** Globalization feature that you created.
+2. On the **Versions** tab, verify that the **Draft** version is selected.
+3. On the **Setups** tab, select **Application setup**.
+4. In the **Connected applications** field, select the application where you want to deploy the parameters.
+5. On the **Electronic document types** page, select **Add** to create a record.
+6. In the **Table name** field, add **CustInvoiceJour**.
+7. In the **Context** field, add a reference to the **Customer invoice context** mapping name. The configuration is **Customer invoice context model**.
+8. In the **Electronic document mapping** field, add a reference to the **Customer invoice** mapping name. The configuration is **Invoice model mapping**.
+9. Select **Save**.
+10. On **Response types** page, select **Add**.
+11. In the **Response type** field, enter **Response**.
+12. In the **Description** field, enter **Process response**.
+13. In the **Submission status** field, select **Pending**.
+14. In the **Model mapping** field, select **Response message import**. The configuration is **Egypt response message import (EG)**.
+15. Select **Save**.
+16. Select **Add**.
+17. In the **Response type** field, enter **ResponseData**.
+18. In the **Description** field, enter **Process response data**.
+19. In the **Submission status** field, select **Pending**.
+20. In the **Data entity name** field, select **SalesInvoiceHeaderV2Entity**.
+21. In the **Model mapping** field, select **Response data import**. The configuration is **Egypt response data import format (EG)**.
+22. Select **Save**, and close the page.
+23. Close the page.
+
+To deploy a feature to the service environment and an application setup to the Finance or Supply Chain Management connected application, see [Complete, publish, and deploy a Globalization feature](e-invoicing-complete-publish-deploy-globalization-feature.md)
 
 ## Privacy notice
 
-Enabling the **Egyptian electronic invoice (EG)** feature may require sending limited data, including the organization tax registration ID. This data will be transmitted to third-party agencies authorized by the tax authority for the purpose of sending electronic invoices to this tax authority in the predefined format that's required for integration with the government's web service. An administrator can enable and disable the feature by navigating to **Organization administration** > **Setup** > **Electronic document parameters**. On the **Features** tab, select the row that contains the **Egyptian electronic invoice (EG)** feature, and then make the appropriate selection. Data imported from these external systems into this Dynamics 365 online service are subject to our [privacy statement](https://go.microsoft.com/fwlink/?LinkId=512132). Consult the Privacy notice sections in country-specific feature documentation for more information.
+Enabling the **Egyptian electronic invoice (EG)** feature might require that limited data be sent. This data includes the organization's tax registration ID. The data will be transmitted to third-party agencies that have been authorized by the tax authority to send electronic invoices to that tax authority in the predefined format that is required for integration with the government's web service. An administrator can enable and disable the feature by going to **Organization administration** \> **Setup** \> **Electronic document parameters**. On the **Features** tab, select the row that contains the **Egyptian electronic invoice (EG)** feature, and then make the appropriate selection. Data that is imported from external systems into this Dynamics 365 online service are subject to our [privacy statement](https://go.microsoft.com/fwlink/?LinkId=512132). For more information, see the "Privacy notice" section in country-specific feature documentation.
 
 ## Additional resources
 
@@ -87,6 +111,5 @@ Enabling the **Egyptian electronic invoice (EG)** feature may require sending li
 - [Get started with Electronic invoicing service administration](e-invoicing-get-started-service-administration.md)
 - [Get started with Electronic invoicing](e-invoicing-get-started.md)
 - [Customer electronic invoices in Egypt](emea-egy-e-invoices.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

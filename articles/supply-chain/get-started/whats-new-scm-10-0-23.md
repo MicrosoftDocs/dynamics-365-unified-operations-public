@@ -1,5 +1,5 @@
 ---
-title: Preview of Dynamics 365 Supply Chain Management 10.0.23
+title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.23 (January 2022)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.23. 
 author: kamaybac
 ms.date: 10/15/2021
@@ -13,15 +13,15 @@ ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
 ---
 
-# Preview of Dynamics 365 Supply Chain Management 10.0.23
+# What's new or changed in Dynamics 365 Supply Chain Management 10.0.23 (January 2022)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management preview of version 10.0.23. This version has a build number of 10.0.1037 and is available as follows:
+This topic lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management version 10.0.23. This version has a build number of 10.0.1037 and is available as follows:
 
 - **Preview of release:** October 2021
 - **General availability of release (self-update):** December 2021
+- **General availability of release (auto-update):** January 2022
 
 ## Features included in this release
 
@@ -32,7 +32,9 @@ The following table lists the features that are included in this release. The *F
 | Global address book | Define a default state/province for each country/region in address setup | You can now define a default state/province for each country/region in the address setup for the global address book. When a default state/province is set, it will be the default value entered in state/province fields when you create a new county or city record for that country/region. See also [Address setup](../../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/supply-chain/toc.json) | Enabled by default. |
 | Inventory&nbsp;and&nbsp;logistics | [Pause tasks in the Warehouse Management mobile app](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/park-tasks-warehouse-management-mobile-app) | [Configure detours for steps in mobile device menu items](../warehousing/warehouse-app-detours.md) | Feature management (*Warehouse management app detours*) |
 | Inventory&nbsp;and&nbsp;logistics | [Warehouse app promoted fields](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-app-step-instructions) | [Configure promoted fields for steps in the mobile device](../warehousing/warehouse-app-promoted-fields.md)| Feature management (*Warehouse app promoted fields*) |
-| Production control | [Report on co- and by-products from the production floor execution interface](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-process-manufacturing) | [How workers use the production floor execution interface](../production-control/production-floor-execution-use.md) | Feature management (*Report on co- and by-products from the production floor execution interface*) |
+| Manufacturing | [Manufacturing execution systems integration](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-systems-integration) | [Integrate with third-party manufacturing execution systems](../production-control/mes-integration.md) | Feature management (*Manufacturing execution system integration*) |
+| Manufacturing | [Report on co- and by-products from the production floor execution interface](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-process-manufacturing) | [How workers use the production floor execution interface](../production-control/production-floor-execution-use.md) | Feature management (*Report on co- and by-products from the production floor execution interface*) |
+| Planning | [Planning Optimization support for priority-based planning](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-priority-based-planning) | [Priority-based planning](../master-planning/planning-optimization/priority-based-planning.md) | Feature management (*Priority driven MRP support for Planning Optimization*) |
 
 ## Feature enhancements included in this release
 
@@ -43,13 +45,15 @@ If you want to turn any of these features on or off, you must do so in [feature 
 | Module | Feature name in feature management | More information |
 |---|---|---|
 | Asset management | Offset accounts for expenses in work order journals | This feature lets you specify an offset account for each expense listed in a work order journal. You might typically associate a vendor account with each expense, but other account types are also supported. It adds two new columns (**Offset account type** and **Offset account**) to the **Expense** FastTab on the **Work order journal** page.|
+| Cost management | Create related vouchers for standard cost rounding revaluations | <p>When an inventory financial posting (such as a sales order invoice or inventory transaction) is made, this feature causes the system to create a separate voucher for any related standard cost rounding revaluations and attach it to the financial posting voucher as a related voucher.</p><p>Without this feature, the system records standard cost rounding revaluations on the same voucher posting. That behavior can sometimes cause conflicting date information, because the revaluations use the session or system date, whereas financial postings use the posting date.</p> |
 | Inventory and warehouse management | \[Russia\] Post storno financial inventory transactions according to the correction flag in the financial voucher for sales orders | This feature impacts the credit note corrections functionality for Russia. It enables posting of inventory transactions for sales invoices in accordance with the correction option in the general ledger. When this feature is enabled, there are no more discrepancies between **Correction** flag on financial voucher of inventory transaction and **Storno** flag on inventory transactions. |
 | Inventory and warehouse management | (Russia) Run Inventory balance turnover report calculation in batch | For Russian localizations of Supply Chain Management, this feature provides the possibility to run the *Inventory balance turnover* report in batch, to store it, and to view the reports generated earlier. |
 | Inventory and warehouse management | (Russia) Use translations to local language in country or region-specific primary forms in Inventory management | For Russian localizations of Supply Chain Management, this feature enables the use of Russian translations for product/item names and units of measure in the following Russian-specific inventory printouts: Counting list (INV-3), Counting list (INV-5), and Counting list (INV-6). |
+| Master planning | Azure Machine Learning Service for demand forecasting | This feature enables the Azure Machine Learning Service to generate demand forecasts based on historical data. For more information, see [Demand forecasting setup](../master-planning/demand-forecasting-setup.md). |
 | Procurement and sourcing | Clean up purchase-order update history | This feature lets you clean up temporary historical records related to purchase-order updates. It adds a new button called **Clean up purchase update history** to the Action Pane on the **All purchase orders** page. This feature is enabled by default. |
 | Production control | (Preview) Auto-picking of warehouse enabled materials for auto-posted picking lists | This feature lets you auto-pick and resolve inventory dimensions for auto-posted, derived, and backflushed picking list journals. |
 | Production control | Validate expiration of raw materials against planned consumption date | This feature changes how batch expiration dates are validated when reserving a batch of raw material to be used during production. When this feature is enabled, the batch expiration date is validated against the planned consumption date (the raw material date), as established on the production BOM line or batch order formula line. When this feature is disabled, the batch expiration date is validated against the planned delivery date of the production or batch order (as previously). |
-| Sales and marketing | Clean up sales-order update history | This feature lets you clean up temporary historical records related to sales order updates. It adds a new button called **Clean up sales update history** to the Action Pane of the detail and list pages for sales orders. |
+| Sales and marketing | Clean up sales update history based on age | This feature lets you set the maximum age of records to keep when running the **Sales update history cleanup** periodic task. Older records will be deleted. This is useful for when you set the task to run periodically because the age is always calculated relative to the date the task is run. Without this feature, you can only set a specific date for the oldest records to keep. For more information, see [Schedule sales history data cleanup](../sales-marketing/sales-update-history-cleanup-performance-improvements.md). |
 | Sales and marketing | Improve "Top 100" customers report performance | This feature improves the performance of the **Top 100** customers report by always running the report across all customers (which is its intended use) rather than by allowing custom queries. When this feature is enabled, all **Records to include** settings are disabled in the **Top 100** report dialog. |
 | Warehouse management | Scale unit support for release to warehouse of outbound orders | When this feature is enabled, outbound orders can be released from the hub directly to the scale unit where the orders will be fulfilled. |
 
@@ -67,7 +71,9 @@ We have recently added or significantly updated the following help topics. These
 | Warehouse management | [Global mobile device parameters](../warehousing/mobile-device-parameters.md) |
 | Warehouse management | [Anchoring](../warehousing/anchoring.md) |
 | Sales and marketing | Intercompany trade is now described in detail, starting with [Set up intercompany trade](../sales-marketing/intercompany-trade-set-up.md) and its related topics. |
+| Sales and marketing | [Sales history cleanup performance improvements](../sales-marketing/sales-update-history-cleanup-performance-improvements.md) |
 | Inventory management | Inventory Visibility documentation has been expanded and updated, starting with [Inventory Visibility Add-in overview](../inventory/inventory-visibility.md) and its related topics. |
+| Warehouse management | [Mobile device user accounts](../warehousing/mobile-device-work-users.md) |
 
 ## Additional resources
 

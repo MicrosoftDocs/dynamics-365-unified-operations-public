@@ -2,9 +2,9 @@
 # required metadata
 
 title: Manage recruiting processes
-description: This article describes a concept that recruiters can use to track the steps in a recruiting process.
-author: andreabichsel
-ms.date: 06/20/2017
+description: This topic describes a concept that recruiters can use to track the steps in a recruiting process.
+author: twheeloc
+ms.date: 01/10/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,13 +15,13 @@ ms.search.form: HRMApplication, HRMRecruitingTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 7501
 ms.assetid: 1ad725bf-20e2-42a1-8068-111f7ddddad9
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -29,7 +29,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Manage recruiting processes
 
-[!include [banner](../includes/banner.md)]
+> [!IMPORTANT]
+> The recruiting functionality in this topic will be referred to as Recruitment projects and focuses on applicants, applications, and recruitment projects. 
+
 
 This topic describes a concept that recruiters can use to track the steps in a recruiting process, including efforts to advertise open positions and recruit applicants, tracking applicant and application information, interviewing applicants, and selecting one or more candidates to fill the open positions in your organization.
 
@@ -47,7 +49,7 @@ Recruitment projects allow recruiters to track progress against filling one or m
 - The application deadline
 - The estimated start date
 
-The recruitment project contains the **Job ad** used on the **Employee self service** to advertise the opening. To display the opening to employees, the recruitment project must have a **Job ad**, the **Display on employee self service** field must be set to Yes, the **Application deadline** must be set to a future date, and the recruitment project must have a **Project status** of Started. The following table lists the possible recruitment project statuses and their description.
+The recruitment project contains the **Job ad** value that is used on the **Employee self service** page to advertise the opening. The opening can be shown to employees only if the recruitment project has a **Job ad** value, the **Display on employee self service** field is set to **Yes**, the **Application deadline** field is set to a future date, and the recruitment project has a **Project status** value of **Started**. The following table lists the possible recruitment project statuses and their description.
 
 | Status    | Indicates that…                                                                         |
 |-----------|-----------------------------------------------------------------------------------------|
@@ -60,7 +62,7 @@ Recruiters can also record the **Media** used to advertise the opening through e
 
 ## Applicants
 
-An applicant is a person who applies for a job in your enterprise. Applicants are shared among all legal entities in your organization giving you a large pool of talent to search from. You can maintain competencies, references, accommodation requests, and personal information for applicants. When you create an applicant record, a person record for that applicant is created in the global address book. You can use the **Applicant** page to update the following global address book information for people who are applicants:
+An applicant is a person who applies for a job in your enterprise. Applicants are shared among all legal entities in your organization. Therefore, you have a large pool of talent to search in. You can maintain competencies, references, accommodation requests, and personal information for applicants. When you create an applicant record, a person record for that applicant is created in the global address book. You can use the **Applicant** page to update the following global address book information for people who are applicants:
 
 - Address information
 - Contact information
@@ -89,7 +91,7 @@ The application status indicates where an application is in the recruitment proc
 
 ### Correspondence actions
 
-An **Application's** correspondence action determines the document or e-mail template that you use to communicate with the applicant who submitted the application. You can associate **Application bookmarks** with correspondence actions to allow you to use values from the Application, Applicant, Interview, and Recruitment project pages in your communications with applicants. **Application e-mail templates** can be created for the correspondence actions to quickly send e-mails to applicants who have an application with a certain status and correspondence action combination. For example, you may send a Confirmation e-mail to all Applications with a **Status** of Received and a **Correspondence action** of Received. After sending the e-mail, you have the option to automatically update the status of the applications.
+An application's correspondence action determines the document or email template that you use to communicate with the applicant who submitted the application. By associating **application bookmarks** with correspondence actions, you can use values from the **Application**, **Applicant**, **Interview**, and **Recruitment project** pages in your communications with applicants. By creating **application email templates** for the correspondence actions, you can quickly send emails to applicants whose applications have a specific combination of a status and a correspondence action. For example, you can send a confirmation email to all applications that have a **Status** value of **Received** and a **Correspondence action** value of **Received**. After you send the email, you have the option to automatically update the status of the applications.
 
 ## Application routing
 
@@ -106,6 +108,5 @@ If an application must be reviewed by several workers, you can use the **Applica
 ## Hiring applicants
 
 Use the **Applications** page to hire an applicant. When you hire an applicant, the application record will have a status of **Employed** and the applicant's global address book person record is associated with the new worker record. Modifications to the global address book information for the new worker record are also displayed in the applicant record. This can help reduce data entry if the new worker ever applies for a different job within your enterprise. To hire an existing worker into a new position, click **Change position** in the **Application status** drop down to initiate the transfer process.
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

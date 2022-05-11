@@ -14,7 +14,7 @@ ms.technology:
 # ms.search.form: BatchJob, BatchJobEnhanced
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -27,6 +27,9 @@ ms.dyn365.ops.version: Platform update 24
 
 
 # Optimize performance with auto cleanup tasks
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

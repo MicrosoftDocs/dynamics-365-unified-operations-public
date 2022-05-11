@@ -5,7 +5,7 @@ title: Online channel extensibility
 description: This topic covers online platform extensibility in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 09/15/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,7 +16,7 @@ audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 

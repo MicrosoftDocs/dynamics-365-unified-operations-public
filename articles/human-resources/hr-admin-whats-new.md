@@ -4,7 +4,7 @@
 title: What's new or changed in Human Resources
 description: Every two weeks, we provide a new release for Microsoft Dynamics 365 Human Resources. The topics listed here detail the changes made each week.
 author: twheeloc
-ms.date: 04/21/2021
+ms.date: 12/09/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.search.form: SystemAdministrationWorkspaceForm, FeatureManagementWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -29,9 +29,11 @@ ms.dyn365.ops.version: Human Resources
 
 # What's new or changed in Human Resources
 
+> [!IMPORTANT]
+> The functionality noted in this topic is currently available for customers on the stand alone Dynamics 365 Human Resources. Some or all of the functionality will be available as part of a future release on the Finance infrastructure after Finance release 10.0.25.  
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Every two weeks, we provide a new release for Microsoft Dynamics 365 Human Resources. The topics listed here detail the changes made with each release.
 
 For more information about upcoming features or the update process for Human Resources, see the following articles: 
 
@@ -45,6 +47,7 @@ For more information about upcoming features or the update process for Human Res
 
 To find out what's new or changed in each biweekly release of Human Resources, see the following topics:
 
+[November 29, 2021](hr-whats-new-2021-11-29.md)<br>
 [October 5, 2021](hr-whats-new-2021-10-04.md)</br>
 [September 20, 2021](hr-whats-new-2021-09-20.md)</br>
 [September 6, 2021](hr-whats-new-2021-09-06.md)</br>

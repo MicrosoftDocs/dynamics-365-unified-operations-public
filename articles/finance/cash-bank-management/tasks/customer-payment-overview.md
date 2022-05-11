@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: LedgerJournalTable, CustPaymEntry, CustTableLookup, LedgerJournalTransCustPaym, CustOpenTrans, BankAccountTableLookUp   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm:  
 ms.custom: "intro-internal"
 ms.search.region: Global

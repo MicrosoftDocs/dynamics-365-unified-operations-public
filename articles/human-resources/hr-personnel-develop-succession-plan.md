@@ -3,8 +3,8 @@
  
 title: Develop a succession plan
 description: As your organization grows, you must begin succession planning.
-author: andreabichsel
-ms.date: 08/29/2018
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: business-process 
 ms.prod:  
 ms.technology:  
@@ -14,17 +14,20 @@ ms.technology:
 ms.search.form: HcmSkillMapping, HcmPersonnelManagementWorkspace  
 audience: Application User 
 # ms.devlang:  
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
 # Develop a succession plan
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -39,8 +42,8 @@ As your organization grows, you must begin succession planning. During successio
 7. Select **Person**.
 8. In the **Person** field, type in a name, or select the drop-down.
 9. Select **OK**.
-10. Expand the **Certificates** fast tab to view or edit the certificates included in the skill mapping.
-11. Expand the **Skills** fast tab to view or edit the skills to be included.
+10. Expand the **Certificates** FastTab to view or edit the certificates included in the skill mapping.
+11. Expand the **Skills** FastTab to view or edit the skills to be included.
 12. In the list, mark the first row. Example:  Accounting.
 13. Select the **Optional** checkbox.
 14. In the **Importance** field, select an option. When you mark a skill as optional, you must select the importance level of the skill.  
@@ -52,8 +55,8 @@ As your organization grows, you must begin succession planning. During successio
 20. In the **Importance** field, select an option.
 21. In the list, select row 4.
 22. Select the **Optional** checkbox.
-23. In the Importance field, select an option.
-24. Expand the **Education** fast tab to view or edit the education competencies to be included in the skill mapping.
+23. In the **Importance** field, select an option.
+24. Expand the **Education** FastTab to view or edit the education competencies to be included in the skill mapping.
 25. Select **Execute**.
 26. Select **OK**.
 27. Select **Result**.

@@ -12,7 +12,7 @@ ms.technology:
 # ROBOTS:
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 # ms.custom:
 ms.search.region: Global
@@ -421,7 +421,7 @@ In a CoC extension method, the next call must not be called conditionally. Howev
         try
         {
             //...
-            next updateBalances();
+            next someMethod();
             //...
         }
         catch(Exception::Error)

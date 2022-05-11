@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Configuration for Finance insights for public preview (preview) - version 10.0.20 and later
-description: This topic explains how to configure your system to use the capabilities that are available in Finance insights for public preview in version 10.0.20 and later.
+title: Configuration for Finance insights - version 10.0.20 and later
+description: This topic explains how to configure your system to use the capabilities that are available in Finance insights in version 10.0.20 and later.
 author: ShivamPandey-msft
 ms.date: 06/16/2021
 ms.topic: article
@@ -12,10 +12,10 @@ ms.technology:
 # optional metadata
 
 ms.search.form: 
-# ROBOTS: 
+ROBOTS: noindex,nofollow
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
@@ -26,13 +26,13 @@ ms.search.validFrom: 2021-06-03
 ms.dyn365.ops.version: AX 10.0.20
 
 ---
-# Configuration for Finance insights for public preview (preview) - version 10.0.20 and later
+# Configuration for Finance insights - version 10.0.20 and later
 
 [!include [banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Finance insights combines functionality from Microsoft Dynamics 365 Finance with Dataverse, Azure, and AI Builder to provide powerful forecasting tools for your organization. This topic explains how to configure Dynamics 365 Finance version 10.0.20 so that your system can use the capabilities that are available in Finance insights public preview.
+
+Finance insights combines functionality from Microsoft Dynamics 365 Finance with Dataverse, Azure, and AI Builder to provide powerful forecasting tools for your organization. This topic explains how to configure Dynamics 365 Finance version 10.0.20 so that your system can use the capabilities that are available in Finance insights.
 
 > [!NOTE]
 > The configuration steps that are described in this topic apply only to Finance version 10.0.20 and later. 'To set up Finance insights on version 10.0.19 and earlier, see [Configuration for Finance insights - versions up to 10.0.19](configure-for-fin-insites.md).
@@ -755,6 +755,6 @@ The add-in might take several minutes to install.
 
 ## Feedback and support
 
-If you're interested in providing feedback, or if you require support, send an email to [Finance insights (Preview)](mailto:fiap@microsoft.com).
+If you're interested in providing feedback, or if you require support, send an email to [Finance insights](mailto:fiap@microsoft.com).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

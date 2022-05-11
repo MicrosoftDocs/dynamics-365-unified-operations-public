@@ -3,7 +3,7 @@
 
 title: Posting definition examples
 description: This article provides examples that show how posting definitions are used for purchase order encumbrances and budget appropriations.
-author: ShylaThompson
+author: kweekley
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -15,13 +15,13 @@ ms.search.form: JournalizingDefinition, JournalizingDefinitionTrans
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 15772
 ms.assetid: 3864e4da-853f-403d-b906-79631d80b363
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: peakerbl
+ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

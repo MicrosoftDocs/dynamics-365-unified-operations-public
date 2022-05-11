@@ -2,10 +2,10 @@
 # required metadata
 
 title: Leave and absence overview
-description: In Dynamics 365 Human Resources, the Leave and absence workspace provides a flexible framework for creating new leave plans. It also provides workflows for managing requests and an intuitive self-service page for employees to request time off. 
-author: andreabichsel
-ms.date: 07/16/2021
-ms.topic: article
+description: In Dynamics 365 Human Resources, the Leave and absence workspace provides a flexible framework for creating new leave plans. 
+author: twheeloc
+ms.date: 10/28/2021
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -15,19 +15,25 @@ ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
 ---
 
 # Leave and absence overview
+
+
+>[!Important]
+>The functionality noted in this topic is currently available for customers on the stand-alone Dynamics 365 Human Resources. Some or all of the functionality will be available as part of a future release on the Finance infrastructure after Finance release 10.0.26.
+
+
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

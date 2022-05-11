@@ -16,7 +16,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region:
@@ -29,8 +29,6 @@ ms.dyn365.ops.version: AX 10.0.23
 # Tax settlement rounding based on customized currency decimal places
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 This topic explains how to do tax settlement rounding that is based on customized currency decimal places.
 

@@ -11,7 +11,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 89563
 ms.assetid: 8DA4DA85-0C2D-4CAF-B350-DAC9C1BE4DF9
@@ -53,7 +53,7 @@ If you require the ability to enter, maintain, and view product quantities with 
 
 Bill of materials, formulas, and production orders allow maintaining quantities with four decimals by default.
 
-If you require more than four decimals, extend the nuymber of decimals for the **BOMProductQuantity** extended data type.
+If you require more than four decimals, extend the number of decimals for the **BOMProductQuantity** extended data type.
 
 ### Related data types
 

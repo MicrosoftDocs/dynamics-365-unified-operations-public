@@ -4,7 +4,7 @@
 title: VAT declaration (Netherlands)
 description: This topic provides information about VAT declaration for Netherlands.
 author: anasyash
-ms.date: 09/20/2021
+ms.date: 02/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -453,7 +453,7 @@ To set up XSD schema and namespaces, follow these steps:
     | **Name**           | **Lookup result**                                                                  |
     |--------------------|------------------------------------------------------------------------------------|
     | XSDSchema          | http://www.nltaxonomie.nl/nt15/bd/20201209/entrypoints/bd-rpt-ob-aangifte-2021.xsd |
-    | SchemaInstanceData | http://www.nltaxonomie.nl/nt15/bd/20201209/dictionary/bd-data                      |
+    | SchemaInstanceData | http://www.nltaxonomie.nl/nt15/bd/20201209/dictionary/bd-data.xsd                      |
 
 
     For information about how to get these values from official documentation, see [How-to get XSD schema and namespaces for the Dutch taxonomy](emea-nl-eu-sales-list.md#get-xsd-schema-and-namespaces-for-the-dutch-taxonomy).
@@ -472,6 +472,11 @@ To set up VAT reporting format, follow these steps:
 
 1. Go to **General ledger** > **Setup** > **General ledger parameters**.
 2. If you configure VAT declaration for multiple VAT registrations, on the tab **Sales tax**, on the **Electronic reporting for countries/regions** FastTab, for the **NLD country/region** line, select the ER format, **VAT Declaration Excel (NL)**.
+3. In the **Feature management** workspace, enable the **VAT statement format reports** feature.
+4.	Go to **General ledger** > **Setup** > **General ledger parameters**.
+5.	On the **Sales tax** tab, on the **Tax options** FastTab, in the **VAT statement format mapping** field, select the **VAT declaration Excel (NL)** ER format. This format will be printed when you run the **Report sales tax for settlement period** report. The format will also be printed when you select **Print** on the **Sales tax payments** page.
+If you configure VAT declaration for multiple VAT registrations, on the **Sales tax** tab, on the **Electronic reporting for countries/regions** FastTab, for the **NLD country/region** line, select the ER format, **VAT Declaration Excel (NL)**.
+4.	On the **Tax authorities** page, select the tax authority, and then, in the **Report layout** field, select **Default**.
 
 ## Preview VAT declaration in Excel
 

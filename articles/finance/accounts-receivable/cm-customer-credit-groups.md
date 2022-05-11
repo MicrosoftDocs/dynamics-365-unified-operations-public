@@ -3,7 +3,7 @@
 
 title: Customer credit groups
 description: This topic provides information about customer credit groups.
-author: mikefalkner
+author: JodiChristiansen
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: 
@@ -15,13 +15,13 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschloma
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 

@@ -4,7 +4,7 @@
 title: Design ER configurations to fill in PDF templates
 description: This topic provides information about how to design an Electronic reporting (ER) format to fill in a PDF template.
 author: NickSelin
-ms.date: 03/24/2021
+ms.date: 03/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -260,10 +260,14 @@ Because both properties are optional for a **Field** format element, the followi
 - If the **Name** attribute is defined, and the **Name** expression is configured, the PDF field that the same name as the value that is returned by the **Name** expression of the format element is filled in.
 
 > [!NOTE]
-> A PDF check box can be filled in as selected in the following ways:
+> When a checkbox in the PDF template doesn't belong to a group of checkboxes, it's represented in the editable ER format as a **Field** element that is nested under the **PDF File** element. This type of PDF checkbox can be set as selected in the following ways:
 >
-> - When the corresponding **Field** format element is bound to a data source field of the **Boolean** data type that has the **True** value
-> - When the corresponding **Field** format element contains a nested **String** format element that is bound to a data source field that has a text value of **1**, **True**, or **Yes**
+> - The corresponding **Field** format element is bound to a data source field of the *[Boolean](er-formula-supported-data-types-primitive.md#boolean)* data type that has a value of **True**.
+> - The corresponding **Field** format element contains a nested **String** format element that is bound to a data source field that has a text value of **1**, **True**, or **Yes**.
+>
+> Your template can contain a group of checkboxes where only one checkbox can be selected at a time. Those checkboxes are represented in a PDF template as multiple form fields of the *CHECKBOX* type. Each field has the same name but a different export value. When you import the template into the editable ER format, each checkbox will be represented in the format hierarchical structure as a **Check box group item** element that is nested under the same **Check box group** element. The name of the **Check box group** element will equal the name of the checkbox fields in the PDF template. The name of each **Check box group item** element will equal the export value of the corresponding checkbox field in the PDF template.
+>
+> You can bind a **Check box group item** element to a data source field of the *Boolean* data type only.
 
 ## Run the format configuration
 
@@ -302,6 +306,20 @@ The follow illustration shows an example of the first page of the report that is
 The follow illustration shows an example of another page of the report that is generated.
 
 ![Other page of the generated report.](media/rcs-ger-filloutpdf-generatedreport2.png)
+
+## Limitations
+
+The names of fillable fields should be unique in the PDF form that you plan to use as a report template. For every such field, an individual format element with the corresponding name is created in the editable ER format when a PDF form is imported. If a PDF form contain several fields with the same name, a single format element is created for the fields that doesn't allow them to be individually filled in at runtime.
+
+## Frequently asked questions
+
+### When I run the ER format to generate a report in PDF format, why do I get the following errors:  **Cannot handle iref streams. The current implementation of PDFSharp cannot handle this PDF feature introduced with Acrobat 6.** and **A PDF name must start with a slash (/).**
+
+The ER framework uses version 1.5 of the PDFSharp library to generate these PDF reports. Some features of PDF 1.5 (Adobe Reader 6.0) are not yet implemented in this library. Therefore, PDFSharp can't yet open some files that are marked as **for PDF 1.5 or higher** and can result in the errors received. Use one of the following solutions to resolve the issue:
+
+-   When you use your own PDF template: Downgrade the template to an earlier Adobe version and start using a new template in your ER format.
+-   When you use an ER format template that was shared with you by another configuration provider as part of an ER solution: Contact the owner of this ER solution and provide a description of the issue.
+-   When you use the ISV solution that contains an earlier version of the PDFSharp library: Contact the owner of the solution and suggest an upgrade to the newer PDFSharp version.
 
 ## Additional resources
 

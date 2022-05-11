@@ -3,7 +3,7 @@
  
 title: Propose fixed asset acquisitions
 description: This topic describes how to acquire a fixed asset using the acquisition proposal in the Fixed assets journal. 
-author: saraschi2
+author: moaamer
 ms.date: 03/17/2021
 ms.topic: business-process 
 ms.prod:  
@@ -14,12 +14,12 @@ ms.technology:
 ms.search.form: AssetTable, AssetBook, LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---

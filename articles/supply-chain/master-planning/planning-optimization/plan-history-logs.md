@@ -3,7 +3,7 @@
 
 title: View plan history and planning logs
 description: This topic explains how to view the history of planning jobs that are triggered by the Planning Optimization functionality.
-author: ChristianRytt
+author: t-benebo
 ms.date: 10/30/2019
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
 

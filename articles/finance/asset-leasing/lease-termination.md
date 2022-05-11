@@ -15,8 +15,8 @@ ms.search.form: AssetLeaseTerminateLeaseListPage
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
-# ms.search.scope: Core, Operations, Finance
+ms.reviewer: kfend
+# 
 
 # ms.tgt_pltfrm: 
 ms.custom: 4464

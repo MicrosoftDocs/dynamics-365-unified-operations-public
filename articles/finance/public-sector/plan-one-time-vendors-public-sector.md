@@ -2,8 +2,8 @@
 # required metadata
 
 title: Plan for one-time vendors in the public sector
-description: This article explains how to prepare to import and create multiple one-time vendors and invoices. 
-author: ShylaThompson
+description: This topic explains how organizations in the public sector can prepare to import and create multiple one-time vendors and invoices. 
+author: v-kiarnd
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -15,13 +15,13 @@ ms.search.form: LedgerTransVoucher, SysConfiguration, Tax1099Summary, VendTableL
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 27251
 ms.assetid: 936570cb-932f-4027-b3c7-2235ad79bc1c
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: brpotter
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to prepare to import and create multiple one-time vendors and invoices. 
+This topic explains how to prepare to import and create multiple one-time vendors and invoices. 
 
 Typically, if you plan to mass-import vendor and invoice information, you first create a data file in spreadsheet format and save it in CSV (comma-separated values) format.
 

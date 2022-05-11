@@ -3,7 +3,7 @@
 
 title: Advanced load building during wave
 description: This topic provides information about advanced wave load building, which automatically assigns shipments to existing waves during wave execution. Therefore, you can create meaningful loads that represent trucks without having to use the load planning workbench.
-author: mirzaab
+author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: 

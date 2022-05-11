@@ -3,7 +3,7 @@
 
 title: Settlement priority in the public sector
 description: This topic provides information about how public sector can automatically or manually prioritize settlements by using billing classifications. 
-author: ShylaThompson
+author: v-kiarnd
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 19551
 ms.assetid: b6f96e12-5614-4edf-9f67-47bf011b6ee7
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: brpotter
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

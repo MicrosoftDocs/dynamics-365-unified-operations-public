@@ -1,14 +1,14 @@
 ---
 title: Create and invoice an intercompany sales order for an external customer
 description: This topic explains how to create and invoice an intercompany sales order for an external customer
-author: GalynaFedorova
+author: Henrikan
 ms.date: 09/01/2021
 ms.topic: article
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: v-gfedorova
+ms.author: henrikan
 ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
 ---
@@ -70,5 +70,18 @@ Do these steps in legal entity B. This procedure corresponds to the box labeled 
 1. Select the sales order, and then select **OK**.
 
 The customer invoice for the intercompany sales order is automatically posted in legal entity B. The intercompany vendor invoice then is automatically created and posted in legal entity A. If the original sales order is set up as a direct delivery, the customer invoice is created for the original sales order in legal entity A.
+
+> [!NOTE]
+> Previously, for intercompany sales scenarios, if the vendor invoice workflow was configured in the intercompany purchasing company, the intercompany sales order could not be successfully invoiced. Therefore, the vendor invoice workflow had to be turned off for the intercompany purchasing company. 
+> 
+> This limitation has been fixed by a recent feature in release 10.0.25. Intercompany sales orders can now be invoiced when the vendor invoice workflow is configured in the intercompany purchasing company.
+> 
+> To enable this feature, follow these steps.
+>
+> 1. Select the intercompany sales legal entity.  
+> 2. Go to **Accounts receivable \> Customers \> All customers**.
+> 3. Select the customer for the intercompany purchasing company.
+> 4. Go to **General \> Set up \> Intercompany**.
+> 5. On the **Purchase order policies** tab, select the **Bypass vendor invoice workflow for intercompany vendor invoices** parameter.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

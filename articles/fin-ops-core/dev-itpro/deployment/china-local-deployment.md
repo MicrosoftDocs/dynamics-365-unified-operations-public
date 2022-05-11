@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Dynamics 365 Finance and Dynamics 365 Supply Chain Management operated by 21Vianet in China 
-description: This topic provides information about Dynamics 365 Finance and Dynamics 365 Supply Chain Management - operated by 21Vianet in China.
+title: Dynamics 365 Finance, Supply Chain Management, and Commerce operated by 21Vianet in China 
+description: This topic provides information about Dynamics 365 Finance, Supply Chain Management, and Commerce operated by 21Vianet in China.
 author: kfend
-ms.date: 09/08/2020
+ms.date: 04/11/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -27,11 +27,11 @@ ms.dyn365.ops.version:
 
 ---
 
-# Dynamics 365 Finance and Dynamics 365 Supply Chain Management operated by 21Vianet in China
+# Dynamics 365 Finance, Supply Chain Management, and Commerce operated by 21Vianet in China
 
 [!include [banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Microsoft Dynamics 365 online services operated by 21Vianet is designed to comply with regulatory requirements in China. The services are a physically separated instance of cloud services operated and transacted by a local operator, Shanghai Blue Cloud Technology Co., Ltd (“**21Vianet**”). This is a wholly owned subsidiary of Beijing 21Vianet Broadband Data Center Co., Ltd. located in mainland China.
 
@@ -58,6 +58,8 @@ Due to certain technical dependencies, the following features listed will not be
 -   Certain **mobile apps** (e.g., [Install and configure the Warehousing app overview](../../../supply-chain/warehousing/install-configure-warehousing-app.md) and [Project time entry mobile workspace](/dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace)) will be unavailable due to the Google Play Store not being available in China; however, alternatives are being considered.
 
 -   The **[mobile platform](../mobile-apps/platform/mobile-platform-home-page.md)** will not be available because certain App store dependencies are unavailable in China.
+
+-  **SharePoint integration** isn't available, because the authentication mechanism that Finance and Operations apps use with SharePoint isn't supported in this configuration.
 
 -   The following **Microsoft Dynamics Lifecycle Services (LCS)** features will have a different experience or will be unavailable due to the dependencies that are not available:
 
@@ -86,7 +88,7 @@ Due to certain technical dependencies, the following features listed will not be
 
     -   The **System administration \> Setup \> B2B Invitation configuration** page will not be available due to business-to-business (B2B) being unavailable in Azure Active Directory in China. For more information, see [What is guest user access in Azure Active Directory B2B](/azure/active-directory/b2b/what-is-b2b).
 
--   [Conditional access](/azure/active-directory/conditional-access/technical-reference) is an Azure Active Directory feature that is available for the Azure Active Directory Premium 2 SKU. This is unavailable in China. 
+-   [Conditional access](/azure/active-directory/conditional-access/technical-reference) is an Azure Active Directory feature that is available for the Azure Active Directory Premium 1 SKU. 
 -   The Microsoft Dynamics 365 Payment Connector for PayPal is not available in China.
 
 ## Additional resources

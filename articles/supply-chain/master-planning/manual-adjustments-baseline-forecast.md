@@ -3,7 +3,7 @@
 
 title: Make manual adjustments to the baseline forecast
 description: This topic explains how you can make manual adjustments to a baseline forecast and view details of the forecast. 
-author: ChristianRytt
+author: t-benebo
 ms.date: 01/07/2020
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 72704
 ms.assetid: e7c5d44e-07bc-40b1-a4b3-8ba46483ef9e
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -71,9 +71,9 @@ The **Demand forecast details** page shows the following information in graphica
 
 **Notes:**
 
--   If you enable **Forecast model selection on Demand forecast details** from Feature management, you will be able to select the forecast models to be include, for the historical forecast, on the **Demand forecast details** page.
--   The confidence interval that appears in the **Forecast** section of the page represents the difference between the confidence interval upper limit and the confidence interval lower limit. To see the values for the upper and lower limits, hover over the chart in the **Historical demand and forecast graphically** section.
--   If you use the Demand forecasting Microsoft Azure Machine Learning, you can specify the confidence level percentage that the forecast that is generated should have. A confidence interval consists of a range of values that act as good estimates for the demand forecast. A 95-percent confidence level percentage indicates that there is a 5-percent risk that the demand forecast falls outside the confidence interval range.
+- The *Forecast model selection on Demand forecast details* feature adds settings on the **Demand forecast details** page that let you select the forecast models to be included. As of Supply Chain Management version 10.0.21, this feature is turned on by default. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *Forecast model selection on Demand forecast details* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+- The confidence interval that appears in the **Forecast** section of the page represents the difference between the confidence interval upper limit and the confidence interval lower limit. To see the values for the upper and lower limits, hover over the chart in the **Historical demand and forecast graphically** section.
+- If you use the Demand forecasting Microsoft Azure Machine Learning, you can specify the confidence level percentage that the forecast that is generated should have. A confidence interval consists of a range of values that act as good estimates for the demand forecast. A 95-percent confidence level percentage indicates that there is a 5-percent risk that the demand forecast falls outside the confidence interval range.
 
 You can also make manual adjustments to the forecast on the **Demand forecast details** page, by modifying the values in the **Forecast** row in the **Forecast** section.
 

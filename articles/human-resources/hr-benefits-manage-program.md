@@ -15,7 +15,7 @@ ms.search.form: HcmBenefitEligibilityDetail, HcmBenefitSelection, SysPolicyListP
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 15681
 ms.assetid: 6aee97ac-29f7-4b3c-8aa1-c65810de3090
@@ -28,6 +28,9 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 ---
 
 # Define and manage a benefits program
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

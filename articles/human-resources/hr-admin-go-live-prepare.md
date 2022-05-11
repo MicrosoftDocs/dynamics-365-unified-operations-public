@@ -16,7 +16,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -33,6 +33,9 @@ ms.dyn365.ops.version: Human Resources
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 This topic describes how to prepare to go live with a Dynamics 365 Human Resources project by using Microsoft Dynamics Lifecycle Services (LCS). 
 

@@ -1,14 +1,14 @@
 ---
 title: Mobile device user accounts
 description: This topic describes how to set up and manage user accounts that enable workers to sign in and use the warehouse app.
-author: MarkusFogelberg
+author: Mirzaab
 ms.date: 09/15/2021
 ms.topic: article
 ms.search.form:
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: mafoge
+ms.author: mirzaab
 ms.search.validFrom: 2021-09-15
 ms.dyn365.ops.version: 10.0.22
 ---
@@ -85,8 +85,8 @@ When a worker signs in to the Warehouse Management mobile app, the language, num
 1. On the Action Pane, select **User options**.
 1. On the **Preferences** tab, set the following fields:
 
-    - **Language** – Select the language that the worker prefers. This field also controls the date format that is shown in the warehouse app.
-    - **Date, time, and number format** – Select the language that will determine the number formats that are shown in the warehouse app. Note that the date and time formats that are shown in the warehouse app are actually determined by the **Language** field, not by this field.
+    - **Language** – Select the language that the worker prefers. This field also controls the number format that is shown in the warehouse app.
+    - **Date, time, and number format** – Select the date and time format that the worker prefers. The warehouse app uses the number format associated with the language chosen for the **Language** field instead of this setting.
     - **Time zone** – Select the time zone where the worker works. This field affects the time stamp for all registrations that the worker makes by using the app.
 
 > [!NOTE]

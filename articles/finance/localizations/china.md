@@ -5,7 +5,7 @@ title: China overview
 description: This topic provides an overview of functionality specific to China.
 author: ShylaThompson
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.search.region: China (PRC)
 # ms.search.industry: 
 ms.author: roschlom
@@ -44,7 +44,7 @@ This topic includes information and links to resources that can help you set up 
     -   [Set up basic tax integration profile](tasks/set-up-basic-tax-integration-profile-china.md)
 -   [Fixed assets depreciation methods ](apac-chn-depreciation-methods-fixed-assets.md)
     -   [Setup fixed asset depreciation allocation ](tasks/fixed-asset-depreciation-allocation.md)
--   [Import the Chinese Golden Tax data entity](apac-chn-import-golden-tax-data-entity.md)
+-   [Import the Chinese Golden Tax files](apac-chn-import-golden-tax-data-entity.md)
     -   [Golden tax integration export setup](tasks/golden-tax-integration-export-setup.md)
 -   [Monthly average cost model](apac-chn-monthly-average-cost-model.md)
 -   [Post inventory main accounts by site](apac-chn-post-inventory-main-accounts-by-site.md)

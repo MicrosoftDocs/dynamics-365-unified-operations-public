@@ -3,25 +3,14 @@
 
 title: Improvements to statement posting functionality
 description: This topic describes improvements that have been made to the statement posting feature.
-author: josaw1
-ms.date: 05/14/2019
+author: analpert
+ms.date: 04/27/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this topic to]
-audience: Application User
-# ms.devlang: 
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global 
-ms.search.industry: retail
-ms.author: anpurush
+ms.author: analpert
 ms.search.validFrom: 2018-04-30
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ---
 
 # Improvements to statement posting functionality
@@ -57,15 +46,8 @@ As part of the improvements to the statement posting feature, three new paramete
 
 - **Disable counting required** – When this option is set to **Yes**, the posting process for a statement continues, even if the difference between the counted amount and the transaction amount on the statement is outside the threshold that is defined on the **Statement** FastTab for stores.
 
-Additionally, the following parameters have been introduced on the **Batch processing** FastTab on the **Posting** tab of the **Commerce parameters** page: 
-
-- **Maximum number of parallel statement posting** – This field defines the number of batch tasks that will be used to post multiple statements. 
-- **Max thread for order processing per statement** – This field represents the maximum number of threads used by the statement posting batch job to create and invoice sales orders for a single statement. The total number of threads that will be used by the statement posting process will be computed based on the value in this parameter multiplied by the value in the **Maximum number of parallel statement posting** parameter. Setting the value of this parameter too high can negatively impact the performance of the statement posting process.
-- **Max transaction lines included in aggregation** – This field defines the number of transaction lines that will be included in a single aggregated transaction before a new one is created. Aggregated transactions are created based on different aggregation criteria such as customer, business date, or financial dimensions. It is important to note that the lines from a single transaction will not be split across different aggregated transactions. This means that there is a possibility that the number of lines in a aggregated transaction is slightly higher or lower based on factors such as number of distinct products.
-- **Maximum number of threads to validate store transactions** – This field defines the number of threads that will be used to validate transactions. Validating transactions is a required step that needs to occur before the transactions can be pulled into the statements. You also need to define a **Gift card product** on the **Gift card** FastTab on the **Posting** tab of the **Commerce parameters** page. This needs to defined even if gift cards are not used by the organization.
-
 > [!NOTE]
-> All settings and parameters that are related to statement postings, and that are defined on stores and on the **Commerce parameters** page, are applicable to the improved statement posting feature.
+> As of the Commerce version 10.0.14 release, when the **Retail statements - Trickle feed** feature is enabled, the **Post inventory** batch job is no longer applicable and can't be run.
 
 ## Processing
 
@@ -120,9 +102,17 @@ A statement goes through various operations (for example, Create, Calculate, Cle
 
 ### Aggregated transactions
 
-During the posting process, the sales transactions are aggregated based on the configuration. These aggregated transactions are stored in the system and used to create sales orders. Every aggregated transaction creates one corresponding sales order in the system. You can view the aggregated transactions by using the **Aggregated transactions** button in the **Execution details** group of the statement.
+During the posting process, cash-and-carry transactions are aggregated by customer and product. Therefore, the number of sales orders and lines that are created is reduced. The aggregated transactions are stored in the system and used to create sales orders. Every aggregated transaction creates one corresponding sales order in the system. 
 
-The **Sales order detail** tab of an aggregated transaction shows the following information:
+If a statement isn't fully posted, you can view aggregated transactions in the statement. On the Action Pane, on the **Statement** tab, in the **Execution details** group, select **Aggregated transactions**.
+
+![Aggregated transactions button for a statement that isn't fully posted.](media/aggregated-transactions.png)
+
+For posted statements, you can view aggregated transactions on the **Posted statements** page. On the Action Pane, select **Inquiries**, and then select **Aggregated transactions**.
+
+![Aggregated transactions command for posted statements.](media/aggregated-transactions-posted-statements.png)
+
+The **Sales order details** FastTab of an aggregated transaction shows the following information:
 
 - **Record ID** – The ID of the aggregated transaction.
 - **Statement number** – The statement that the aggregated transaction belongs to.
@@ -131,17 +121,33 @@ The **Sales order detail** tab of an aggregated transaction shows the following 
 - **Number of aggregated lines** – The total number of lines for the aggregated transaction and sales order.
 - **Status** – The last status of the aggregated transaction.
 - **Invoice ID** – When the sales order for the aggregated transaction is invoiced, the sales invoice ID. If this field is blank, the invoice for the sales order hasn't been posted.
+- **Error code** – This field is set if the aggregation is in an error state.
+- **Error message** – This field is set if the aggregation is in an error state. It shows details about what caused the process to fail. You can use the information in the error code to fix the issue, and then manually restart the process. Depending on the type of resolution, aggregated sales might have to be deleted and processed on a new statement.
 
-The **Transaction details** tab of an aggregated transaction shows all the transactions that have been pulled into the aggregated transaction. The aggregated lines on the aggregated transaction show all the aggregated records from the transactions. The aggregated lines also show details such as the item, variant, quantity, price, net amount, unit, and warehouse. Basically, each aggregated line corresponds to one sales order line.
+![Fields on the Sales order details FastTab of an aggregated transaction.](media/aggregated-transactions-error-message-view.png)
 
-From the **Aggregated transactions** page, you can download the XML for a specific aggregated transaction by using the **Export sales order XML** button. You can use the XML to debug issues that involve sales order creation and posting. Just download the XML, upload it to a test environment, and debug the issue in the test environment. The functionality for downloading the XML for aggregated transactions isn't available for statements that have been posted.
+The **Transaction details** FastTab of an aggregated transaction shows all the transactions that have been pulled into the aggregated transaction. The aggregated lines on the aggregated transaction show all the aggregated records from the transactions. The aggregated lines also show details such as the item, variant, quantity, price, net amount, unit, and warehouse. Basically, each aggregated line corresponds to one sales order line.
 
-The aggregated transaction view provides the following benefits:
+![Transaction details FastTab of an aggregated transaction.](media/aggregated-transactions-sales-details.png)
+
+In some situations, aggregated transactions might fail to post their consolidated sales order. In these situations, an error code will be associated with the statement status. To view only aggregated transactions that have errors, you can enable the **Show only failures** filter in the aggregated transactions view by selecting the checkbox. By enabling this filter, you limit the results to aggregated transactions that have errors that require resolution. For information about how to fix these errors, see [Edit and audit online order and asynchronous customer order transactions](edit-order-trans.md).
+
+![Checkbox for the Show only failures filter in the aggregated transactions view.](media/aggregated-transactions-failure-view.png)
+
+On the **Aggregated transactions** page, you can download the XML for a specific aggregated transaction by selecting **Export aggregation data**. You can review the XML in any XML formatter to see the actual data details that involve sales order creation and posting. The functionality for downloading the XML for aggregated transactions isn't available for statements that have been posted.
+
+![Export aggregation data button on the Aggregated transactions page.](media/aggregated-transactions-export.png)
+
+In the event that you can't fix the error by correcting data on the sales order or data that supports the sales order, a **Delete customer order** button is available. To delete an order, select the aggregated transaction that failed, and then select **Delete customer order**. Both the aggregated transaction and the corresponding sales order will be deleted. You can now review the transactions by using the edit and audit functionality. Alternatively, they can be reprocessed through a new statement. After all failures are fixed, you can resume statement posting by running the post statement function for the relevant statement.
+
+![Delete customer order button in the aggregated transactions view.](media/aggregated-transactions-delete-cust-order.png)
+
+The aggregated transactions view provides the following benefits:
 
 - The user has visibility into the aggregated transactions that failed during sales order creation and the sales orders that failed during invoicing.
 - The user has visibility into how transactions are aggregated.
 - The user has a complete audit trail, from transactions, to sales orders, to sales invoices. This audit trail wasn't available in the legacy statement posting feature.
-- Aggregated XML file make it easier to identify issues during sales order creation and invoicing.
+- Aggregated XML file makes it easier to identify issues during sales order creation and invoicing.
 
 ### Journal vouchers
 

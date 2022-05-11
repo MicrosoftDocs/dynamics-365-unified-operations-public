@@ -5,7 +5,7 @@ author: nhelgren
 ms.date: 04/26/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2021-04-26
@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 In Finance and Operations apps, global tables are not associated with a company or legal entity. For these tables, you can specify a team and not use a default team as owner when writing to Microsoft Dataverse using dual-write. 
 

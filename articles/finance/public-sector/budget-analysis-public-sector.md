@@ -3,8 +3,8 @@
 
 title: Budget analysis in the public sector
 description: This topic describes how to use the Budget analysis page to view revenues and expenditures by financial dimension, and it answers frequently asked questions, including differences between the Budget analysis page and the Budget control statistics page. 
-author: ShylaThompson
-ms.date: 02/07/2018
+author: v-kiarnd
+ms.date: 01/28/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,13 +15,13 @@ ms.search.form: BudgetAnalysisInquiry_PSN, BudgetControlStatistics, DimensionDet
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 19641
 ms.assetid: a1055712-0a20-425d-939d-de8564c358b8
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: brpotter
+ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -104,9 +104,8 @@ If the grids are empty in the **Budget analysis** page, try the following action
 ## How do I see updated numbers in the columns when I change the dimension set, dates, posting layers, and other settings?
 After you change the settings at the top of the page, click **Update totals** to see the results of your query.
 
-
-
-
+## Feature: Budget control statistics date range enhancements
+This feature provides a new view to display only actual amounts inside the date range that's provided on the **Budget control statistics** inquiry. This feature is turned on by default in the 2022 Wave 2 release. 
 
 
 

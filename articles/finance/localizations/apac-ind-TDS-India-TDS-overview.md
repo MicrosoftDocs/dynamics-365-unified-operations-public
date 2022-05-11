@@ -5,9 +5,9 @@ title: Indian Tax Deducted at Source (TDS) overview
 description: This topic provides detailed information about Indian Tax Deducted at Source (TDS). The TDS documentation covers the functionality of this capability. 
 author: kailiang
 ms.date: 03/19/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: 
-ms.service: dynamics-ax-applications
+
 ms.technology: 
 
 # optional metadata
@@ -16,8 +16,8 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
+ms.reviewer: kfend
+# 
 # ms.tgt_pltfrm: 
 ms.custom: ["15721", "intro-internal"]
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef

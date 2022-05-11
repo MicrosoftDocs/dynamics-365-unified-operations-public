@@ -4,7 +4,7 @@
 title: Set up compensation grids
 description: Compensation grids are used to define and maintain the pay structures for fixed compensation plans. 
 author: twheeloc
-ms.date: 08/25/2021
+ms.date: 01/03/2022
 ms.topic: business-process 
 ms.prod:  
 ms.technology:  
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: HRCCompGrid, HRCCompGridView, HcmCompensationWorkspace
 audience: Application User 
 # ms.devlang:  
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -26,6 +26,9 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 
 # Set up compensation grids
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -72,28 +75,16 @@ Compensation grids are used to define and maintain the pay structures for fixed 
 7. In the **Adjustment type** field, select an option.
 8. In the **Adjustment amount** field, enter a number.
 9. In the list, find and select the desired record.
-10. In the list, find and select the desired record.
-11. In the list, find and select the desired record.
-12. In the list, find and select the desired record.
-13. Click **Apply to grid**.
-14. In the list, find and select the desired record.
-15. In the list, find and select the desired record.
-16. In the list, find and select the desired record.
-17. Click **Apply to grid**.
-18. In the list, find and select the desired record.
-19. In the list, find and select the desired record.
-20. Click **Apply to grid**.
-21. In the list, find and select the desired record.
-22. Click Apply to grid.
+10. Click **Apply to grid**.
     * Now we'll use the mass change function to adjust the Minimum and Maximum reference points for each level. This example will use a 50% spread so the Minimum reference point will be adjusted -20% and the Maximum will be adjusted +20%.  
-23. In the **Adjustment amount** field, enter a number.
-24. In the **Reference point** field, enter or select a value.
-25. In the list, mark or unmark all rows.
-26. Click **Apply to grid**.
-27. In the **Adjustment amount** field, enter a number.
-28. In the **Reference point** field, enter or select a value.
-29. In the list, mark or unmark all rows.
-30. Click **Apply to grid**.
+11. In the **Adjustment amount** field, enter a number.
+12. In the **Reference point** field, enter or select a value.
+13. In the list, mark or unmark all rows.
+14. Click **Apply to grid**.
+15. In the **Adjustment amount** field, enter a number.
+16. In the **Reference point** field, enter or select a value.
+17. In the list, mark or unmark all rows.
+18. Click **Apply to grid**.
 
 
 

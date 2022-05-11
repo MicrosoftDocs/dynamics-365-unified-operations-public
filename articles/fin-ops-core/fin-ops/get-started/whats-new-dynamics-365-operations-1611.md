@@ -501,7 +501,7 @@ This topic describes features that are either new or changed in Dynamics 365 for
 <li>ISO20022 Direct debit payment format for Italy</li>
 <li>RIBA collection remittance format for Italy</li>
 <li>Domestic tax transactions report for Italy</li>
-<li>Blacklist report for Italy</li>
+<li>Blocklist report for Italy</li>
 <li>Modello770 report for Italy</li>
 <li>Yearly tax communication report for Italy</li>
 </ul>
@@ -821,7 +821,7 @@ Currently, Retail Modern POS is available only as a Windows 8.1 application for 
 | As a vendor, get information about the amount of consigned inventory that is transferred to the customer. | To bill a customer, the vendor requires information about the raw materials that were purchased from the consignment inventory and the date of purchase. The vendor can also monitor the on-hand inventory at the customer site by using the vendor collaboration interface. |
 | Move vendor-owned inventory by using a transfer journal. | To track the physical position of the vendor-owned inventory, you must be able to record the position in the system. By using use a transfer journal, you can record the physical movement of inventory, such as the movement from one location in a warehouse to another location in that warehouse. |
 | Adjust vendor-owned inventory by using a counting journal. | It's important that you keep the system on-hand inventory in sync with the actual physical inventory. The vendor-owned inventory can be adjusted in and out by using counting processes such as quantity adjustment and counting journal processes. |
-| Find out more about consignment support in Dynamics 365 for Operations | For more information about the support for consignment processes, see [Consignment](../../../supply-chain/inventory/consignment.md), [Setting up consignment](../../../supply-chain/inventory/set-up-consignment.md), [Create a consignment replenishment order (Task guide)](../../../supply-chain/inventory/tasks/create-consignment-replenishment-order.md), and [Change the ownership of consignment inventory based on production demand (Task guide)](../../../supply-chain/inventory/tasks/change-ownership-consignment.md). |
+| Find out more about consignment support in Dynamics 365 for Operations | For more information about the support for consignment processes, see [Consignment](../../../supply-chain/inventory/consignment.md), [Setting up consignment](/d365F-O/fin-ops-core/fin-ops/get-started/consignment), [Create a consignment replenishment order (Task guide)](../../../supply-chain/inventory/tasks/create-consignment-replenishment-order.md), and [Change the ownership of consignment inventory based on production demand (Task guide)](../../../supply-chain/inventory/tasks/change-ownership-consignment.md). |
 
 ### Vendor collaboration (previously known as the Vendor portal)
 

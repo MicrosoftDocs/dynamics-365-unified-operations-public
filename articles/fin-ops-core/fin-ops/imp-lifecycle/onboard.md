@@ -4,7 +4,7 @@
 title: Onboard an implementation project
 description: This topic describes how to onboard a project by using Microsoft Dynamics Lifecycle Services (LCS).
 author: ClaudiaBetz-Haubold
-ms.date: 05/21/2020
+ms.date: 02/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -34,15 +34,18 @@ This topic describes how to onboard a Finance and Operations project by using Mi
 
 After your organization has purchased a subscription to Finance and Operations, it must be activated on your organization's Azure Active Directory (Azure AD) tenant by your Tenant Administrator, who completes the following steps:
 
-1. Open an InPrivate/Incognito browser session and go to the [Microsoft 365 Admin Center](https://admin.microsoft.com/).
-2. Sign in with the Tenant Administrator credentials.
+
+1. Open an InPrivate or Incognito browser session and go to the [Microsoft 365 Admin Center](https://admin.microsoft.com/).
+2. Sign in with the tenant administrator credentials.
 3. Go to **Billing > Products & services** and confirm that there is an active subscription for the application that you want to deploy. 
    > [!NOTE]
-   > If you do not see an active subscription, consult with your Licensing Partner to confirm the status of the subscription transaction as well as the tenant for the subscription. By default, all Microsoft Online Services should be running on the same Azure AD tenant.
+   > If you do not see an active subscription, consult with your licensing partner to confirm the status of the subscription transaction. It is important to confirm that the subscriptions were purchased for the correct Azure AD tenant.  By default, all Microsoft online services should be running on the same Azure AD tenant. The most frequent cause for onboarding delays is that subscriptions are inadvertently placed on an incorrect Azure AD tenant. 
 4. If the subscription in question is shown as active, proceed to the next step by signing in to LCS to trigger the Implementation Project creation flow.
 5. Open another private browser tab and go to [Lifecycle Services](https://lcs.dynamics.com). Select **Login** to access LCS with your current Tenant Admin credentials.
-6. Accept and confirm any other prompts displayed to complete the Implementation Project provisioning.
-7. The Tenant Administrator is assigned the Project Owner security role in the provisioned Implementation Project.  
+   > [!NOTE]
+   > Connection endpoints might be different for Government Community Cloud (GCC) and other local cloud deployment options. For more information see, [Sovereign and local cloud deployment options for Dynamics 365 Finance and Dynamics 365 Supply Chain Management](../../dev-itpro//deployment/deployment-options-geo.md).
+7. Accept and confirm any other prompts displayed to complete the implementation project provisioning.
+8. The tenant administrator is assigned the Project Owner security role in the provisioned implementation project.  
    > [!NOTE]
    > If the Tenant Administrator will not be a participant in the implementation, at least one additional Project Owner must be assigned to the implementation project.
 

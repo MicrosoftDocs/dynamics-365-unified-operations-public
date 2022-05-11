@@ -2,8 +2,8 @@
 # required metadata 
  
 title: Set up fixed asset posting profiles
-description: This task guide will set up Fixed asset posting profiles. 
-author: saraschi2
+description: This procedure shows how to set up Fixed asset posting profiles. 
+author: moaamer
 ms.date: 07/22/2019
 ms.topic: business-process 
 ms.prod:  
@@ -14,12 +14,12 @@ ms.technology:
 ms.search.form: AssetPosting   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This task guide will set up Fixed asset posting profiles.  It uses the Accountant role and demo data for the USMF legal entity.  Examples given in the task guide are for a basic posting profile, though posting profiles must be created for your specific chart of accounts and financial reporting requirements.
+This procedure shows how to set up Fixed asset posting profiles. The examples given in the topic are for a basic posting profile, though posting profiles must be created for your specific chart of accounts and financial reporting requirements.
 
 1. In the Navigation pane, go to **Modules > Fixed assets > Setup > Fixed asset posting profiles**.
 2. Click **New**.

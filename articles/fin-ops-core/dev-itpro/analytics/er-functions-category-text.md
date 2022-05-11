@@ -4,7 +4,7 @@
 title: List of ER functions of the text category
 description: This topic provides information about the text functions that are supported in Electronic reporting (ER).
 author: NickSelin
-ms.date: 09/09/2021
+ms.date: 02/28/2022
 ms.prod: 
 ms.technology: 
 
@@ -40,6 +40,7 @@ Electronic reporting (ER) text functions can be used to perform operations on da
 | [Concatenate](er-functions-text-concatenate.md) | This function returns all the specified text strings as a *String* value after they have been joined into one string. |
 | [Format](er-functions-text-format.md) | This function returns the specified string a *String* value after it has been formatted by substituting any occurrences of **%N** with the *N*th argument. |
 | [GetEnumValueByName](er-functions-text-getenumvaluebyname.md) | This function searches for a specific *Enum* value in the specified enumeration data source by using the enumeration name that is specified as a *String* value. If the *Enum* value is found, the function returns it. |
+| [GetLabelText](er-functions-text-getlabeltext.md) | This function searches for a specific label to return a *[String](er-formula-supported-data-types-primitive.md#string)* value that represents the translation of the specified label in the specified language. |
 | [GuidValue](er-functions-text-guidvalue.md) | This function converts the specified input of the *String* type to a data item of the *GUID* type. |
 | [JsonValue](er-functions-text-jsonvalue.md) | This function parses data in JavaScript Object Notation (JSON) format that is accessed at the specified path, and it extracts a scalar value that is based on the specified ID. It then returns the extracted scalar value as a *String* value. |
 | [Left](er-functions-text-left.md) | This function returns a *String* value that presents the specified number of characters from the start of the specified string. |
@@ -55,7 +56,7 @@ Electronic reporting (ER) text functions can be used to perform operations on da
 | [Right](er-functions-text-right.md) | This function returns a *String* value that presents the specified number of characters from the end of the specified string. |
 | [Text](er-functions-text-text.md) | This function returns the specified number as a *String* value after it has been converted to a text string that is formatted according to the server locale settings of the current application instance. |
 | [Translate](er-functions-text-translate.md) | This function returns a *String* value that contains the result of the replacement the specified text in characters for another provided set of characters. |
-| [Trim](er-functions-text-trim.md) | This function returns the specified text string as a *String* value after leading and trailing spaces have been truncated, and after multiple spaces between words have been removed. |
+| [Trim](er-functions-text-trim.md) | This function returns the specified text string as a *String* value after tab, carriage return, line feed, and form feed characters have been replaced by a single space character, after leading and trailing spaces have been truncated, and after multiple spaces between words have been removed. |
 | [Upper](er-functions-text-upper.md) | This function returns the specified text string as a *String* value after it has been converted to uppercase letters. |
 
 ## Additional resources

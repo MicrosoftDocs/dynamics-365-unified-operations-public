@@ -3,7 +3,7 @@
 
 title: Manage folios
 description: This topic describes how to work with folios. A folio typically consists of one vendor's goods for one entity or company per shipment. The goods in a folio can be in one container, or they can be spread among multiple containers.
-author: sherry-zheng
+author: Weijiesa
 ms.date: 12/14/2020
 ms.topic: article
 ms.prod: 
@@ -15,12 +15,12 @@ ms.search.form: ITMFolioTable, ITMFolioTableListPage
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
+
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: chuzheng
+ms.author: weijiesa
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
 ---
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../../includes/banner.md)]
 
-A folio is often determined by customs regulations. It can consist of one vendor's goods for one entity or company per shipment. The goods in a folio can be in one container, or they can be spread among multiple containers.
+A folio is often determined by customs regulations. It can consist of one vendor's goods for one entity or company per shipment. The goods in a folio are managed in one container.
 
 To open the **All folios** page, go to **Landed cost \> Folios \> All folios**. This page shows a list of all current folios. You can use the buttons on the Action Pane to create, delete, and work with folios. Select any folio in the list to view its details on the **Folios** page.
 

@@ -4,7 +4,7 @@
 title: Add data fields in the tax integration by using extensions
 description: This topic explains how to use X++ extensions to add data fields in the tax integration.
 author: qire
-ms.date: 04/20/2021
+ms.date: 04/27/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.search.form:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Global
@@ -337,9 +337,10 @@ Extend the `copyToTaxableDocumentHeaderWrapperFromTaxIntegrationDocumentObject` 
 [ExtensionOf(classStr(TaxIntegrationCalculationActivityOnDocument_CalculationService))]
 final static class TaxIntegrationCalculationActivityOnDocument_CalculationService_Extension
 {
-    // Define key for the form in post request
+    // Define the field name in the request
     private const str IOCostCenter = 'Cost Center';
     private const str IOProject = 'Project';
+    // private const str IOEnumExample = 'Enum Example';
 
     /// <summary>
     /// Copies to <c>TaxableDocumentLineWrapper</c> from <c>TaxIntegrationLineObject</c> by line.
@@ -352,19 +353,85 @@ final static class TaxIntegrationCalculationActivityOnDocument_CalculationServic
         // Set the field we need to integrated for tax service
         _destination.SetField(IOCostCenter, _source.getCostCenter());
         _destination.SetField(IOProject, _source.getProjectId());
+
+        // If the field to be extended is an enum type, use enum2Symbol to convert an enum variable exampleEnum of ExampleEnumType to a string
+        // _destination.SetField(IOEnumExample, enum2Symbol(enumNum(ExampleEnumType), _source.getExampleEnum()));
     }
 }
 ```
 
-In this code, `_destination` is the wrapper object that is used to generate the post request, and `_source` is the `TaxIntegrationLineObject` object. 
+In this code, `_destination` is the wrapper object that is used to generate the request, and `_source` is the `TaxIntegrationLineObject` object.
 
 > [!NOTE]
-> * Define the key that is used in the request form as `private const str`.
-> * Set the field in the `copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine` method by using the `SetField` method. The data type of the second parameter should be `string`. If the data type isn't `string`, convert it to `string`.
+> Define the field name that is used in the request as **private const str**. The string should be exactly the same as the node name (not the label) added in the topic [Add data fields in tax configurations](tax-service-add-data-fields-tax-configurations.md).
+> 
+> Set the field in the **copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine** method by using the **SetField** method. The data type of the second parameter should be **string**. If the data type isn't **string**, convert it to string.
+> If the data type is X++ **enum type**, we recommend you use the **enum2Symbol** method to convert the enum value to a string. The enum value added in the tax configuration should be exactly the same as the enum name. The following is a list of differences between enum value, label, and name.
+> 
+>   - The name of enum is a symbolic name in code. **enum2Symbol()** can convert the enum value to its name.
+>   - The value of the enum is integer.
+>   - The label of the enum can be different across preferred languages. **enum2Str()** can convert the enum value to its label.
+
+## Model dependency
+
+To successfully build the project, add the following reference models to the model dependencies:
+
+- ApplicationPlatform
+- ApplicationSuite
+- Tax Engine
+- Dimensions, if financial dimension is used
+- Other necessary models referenced in the code
+
+## Validation
+
+After you complete the previous steps, you can validate your changes.
+
+1. In Finance, go to **Accounts payable** and add **&debug=vs%2CconfirmExit&** to the URL. For example, `https://usnconeboxax1aos.cloud.onebox.dynamics.com/?cmp=DEMF&mi=PurchTableListPage&debug=vs%2CconfirmExit&`. The final **&** is essential.
+2. Open the **Purchase order** page and select **New** to create a purchase order.
+3. Set the value for the customized field, and then select **Sales tax**. A troubleshooting file with prefix, **TaxServiceTroubleshootingLog** is downloaded automatically. This file contains the transaction information posted to the Tax Calculation Service. 
+4. Check if the customized field added is present in the **Tax service calculation input JSON** section and if its value is correct. If the value isn't correct, double check the steps in this document.
+
+File example:
+
+```
+===Tax service calculation input JSON:===
+{
+  "TaxableDocument": {
+    "Header": [
+      {
+        "Lines": [
+          {
+            "Line Type": "Normal",
+            "Item Code": "",
+            "Item Type": "Item",
+            "Quantity": 0.0,
+            "Amount": 1000.0,
+            "Currency": "EUR",
+            "Transaction Date": "2022-1-26T00:00:00",
+            ...
+            /// The new fields added at line level
+            "Cost Center": "003",
+            "Project": "Proj-123"
+          }
+        ],
+        "Amount include tax": true,
+        "Business Process": "Journal",
+        "Currency": "",
+        "Vendor Account": "DE-001",
+        "Vendor Invoice Account": "DE-001",
+        ...
+        // The new fields added at header level, no new fields in this example
+        ...
+      }
+    ]
+  },
+}
+...
+```
 
 ## Appendix
 
-This appendix shows the complete sample code for the integration of financial dimensions (**Cost center** and **Project**) at the line level.
+This appendix shows the complete sample code for the integration of the financial dimensions, **Cost center** and **Project** at the line level.
 
 ### TaxIntegrationLineObject_Extension.xpp
 
@@ -467,7 +534,7 @@ final class TaxIntegrationPurchTableDataRetrieval_Extension
 [ExtensionOf(classStr(TaxIntegrationCalculationActivityOnDocument_CalculationService))]
 final static class TaxIntegrationCalculationActivityOnDocument_CalculationService_Extension
 {
-    // Define key for the form in post request
+    // Define the field name in the request
     private const str IOCostCenter = 'Cost Center';
     private const str IOProject = 'Project';
 

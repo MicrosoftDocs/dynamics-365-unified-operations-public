@@ -3,7 +3,7 @@
 
 title: Change work pool on work
 description: This topic explains how you can use the Change work pool button for work items to change the work pool of existing work.
-author: mirzaab
+author: Mirzaab
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
@@ -32,12 +32,9 @@ You can use work pools to organize work into groups. For example, you can create
 
 The *Change work pool on work* feature adds a **Change work pool** button to the Action Pane for work items. Therefore, warehouse managers can easily change the work pool of existing work. This feature lets managers react quickly to changes on the warehouse shop floor, and it helps improve their ability to adapt to changing situations and the need to transfer work to another work pool.
 
-## Turn on the Change work pool on work feature
+## Turn the Change work pool on work feature on or off
 
-Before you begin to set up or use this feature, you must make sure that it's available in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on if it's required. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** *Warehouse management*
-- **Feature name:** *Change work pool on work*
+As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *Change work pool on work* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Set up the Change work pool on work feature
 

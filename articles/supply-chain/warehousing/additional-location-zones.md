@@ -35,12 +35,9 @@ Three new zone fields are available in Microsoft Dynamics 365 Supply Chain Manag
 
 No additional setup is required to use the zone fields.
 
-## Turn on the Additional location zone feature
+## Turn the Additional location zone feature on or off
 
-Before you can use the *Additional location zone* feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on if it's required. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** *Warehouse management*
-- **Feature name:** *Additional location zone*
+As of Supply Chain Management version 10.0.25, this feature is turned on by default. Admins can turn this functionality on or off by searching for the *Additional location zone* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Use location zones
 

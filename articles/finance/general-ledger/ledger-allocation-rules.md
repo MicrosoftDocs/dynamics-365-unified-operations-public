@@ -3,7 +3,7 @@
 
 title: Ledger allocation rules
 description: This article provides information about ledger allocation rules. It describes the various components of these allocation rules and the allocation methods that can be used for them.
-author: ShylaThompson
+author: kweekley
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -15,13 +15,13 @@ ms.search.form: LedgerAllocation, LedgerAllocationBasisRule, LedgerAllocationReq
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 15402
 ms.assetid: 8147e148-7c11-45ef-95c6-f9889a875b54
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: peakerbl
+ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article provides information about ledger allocation rules. It describes the various components of these allocation rules and the allocation methods that can be used for them.
+This topic provides information about ledger allocation rules. It describes the various components of these allocation rules and the allocation methods that can be used for them.
 
 Ledger allocation rules are used to automatically calculate and generate allocation journals and account entries for the allocation of ledger balances or fixed amounts. Allocation methods can be variable or fixed. The following allocation methods can be used for ledger allocation rules:
 

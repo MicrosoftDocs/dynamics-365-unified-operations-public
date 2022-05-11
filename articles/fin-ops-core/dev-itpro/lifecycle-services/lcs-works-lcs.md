@@ -5,7 +5,7 @@ title: Lifecycle Services (LCS) for Finance and Operations apps customers
 description: This topic describes Lifecycle Services (LCS) for Finance and Operations apps customers.
 author: angelmarshall
 ms.date: 10/23/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -30,6 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 # Lifecycle Services (LCS) for Finance and Operations apps customers
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 This topic is intended for customers who have signed up for the current versions of Finance and Operations apps. Partners who are working with customers to help them move through the lifecycle of their Lifecycle Services (LCS) project will also find this information useful. 
 
@@ -77,7 +80,7 @@ After you've completed the worksheets, enter the data from the summary sheet int
 ## New deployment experience
 To provision your environment, you must to complete a configuration checklist. As you make progress through the methodology, environments become available to you. Click **Configure** to add deployment information. 
 
-![Configuration checklist.](https://msdnshared.blob.core.windows.net/media/2016/02/Capture1.jpg)]
+
 
 Because the information that you enter determines your experience, carefully review your input. After you've entered all the required information, sign-off is required for the deployment request. The user who completes the sign-off becomes the system administrator on the instance. Verify that the correct user completes the sign-off for the deployment. After the sign-off is completed, the Microsoft site reliability engagement team reviews the request. After the team has reviewed the information that you entered, it initiates the provisioning. If the information isn't correct, the team will contact you. After the provisioning is completed, the status is updated to indicate that the environment has been deployed, as shown in the following screenshot. If the provisioning takes longer than expected, the Microsoft site reliability engagement team reviews the status and takes appropriate actions. These actions might include contacting you. After the environment is provisioned, click **Full details** to open the **Detailed environment** page, where you can sign in to the system, view the monitoring status, or view relevant updates. 
 

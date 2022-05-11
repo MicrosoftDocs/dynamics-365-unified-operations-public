@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom: 
 ms.search.region: Global
 ms.search.industry: public sector
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2019-9-03
 ms.dyn365.ops.version: 10.0.7
 

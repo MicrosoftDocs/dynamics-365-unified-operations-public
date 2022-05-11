@@ -2,7 +2,7 @@
 # required metadata
 
 title: Bank statement file import troubleshooting
-description: It's important that the bank statement file from the bank matches the layout that Microsoft Dynamics 365 Finance supports. Because of strict standards for bank statements, most integrations will work correctly. However, sometimes the statement file can't be imported or has incorrect results. Typically, these issues are caused by small differences in the bank statement file. This article explains how to fix these differences and resolve the issues.
+description: This article explains how to fix issues are caused by small differences in the bank statement file.
 author: panolte
 ms.date: 03/29/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form: BankStatementFormat
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 141273
 ms.assetid: 3ee2f32b-02aa-420b-8990-e6aa5fc6bda3

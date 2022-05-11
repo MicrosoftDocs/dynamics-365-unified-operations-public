@@ -4,7 +4,7 @@
 title: Year-end close
 description: This topic describes the required setup and steps for running the general ledger year-end close process. 
 author: kweekley
-ms.date: 07/10/2021
+ms.date: 12/06/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.search.form: LedgerClosingSheet
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 14091
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
@@ -49,7 +49,7 @@ On the **Main account** page:
 On the **General ledger parameters** page under **Fiscal year close**:
 
 - The **Delete existing year-end entries when re-closing the year** option is used to specify whether the system-generated opening transaction from a previous year-end close should be deleted when the year-end close is rerun. If this option is set to **Yes**, the previous opening and optional closing transactions are deleted, and a new opening or closing transaction is created based on the current balances. If this option is set to **No**, the previous opening and optional closing transactions remain, and an additional opening or closing transaction is created to move the balances forward from adjusting transactions that are posted after the previous year-end close.
-- The **Create closing transactions during transfer** option is used to create closing transactions in the fiscal year that is being closed, to bring the balances of the profit and loss accounts to 0 (zero). If this option is set to **Yes**, both the opening transaction and the closing transaction are created. If this option is set to **No**, only the opening transaction is created in the next fiscal year to transfer the balances. The profit and loss account balances remain at the end of the fiscal year.
+- The **Create closing transactions during transfer** option is used to create closing transactions in the fiscal year that is being closed, to bring the balances of all main accounts to 0 (zero). If this option is set to **Yes**, both the opening transaction and the closing transaction are created. If this option is set to **No**, only the opening transaction is created in the next fiscal year to transfer the balances. The main account balances remain at the end of the fiscal year.
 - The **Set fiscal year status to permanently closed** option is used to set the fiscal year to a permanently closed status. Use this option carefully, because periods that have a permanently closed status can't be reopened. Therefore, adjustments can't be posted to the fiscal year. As a best practice, this option should be set to **No**.
 - The **Voucher number must be filled in** option has been removed. A voucher is now required when the year-end close process is run. At that time, the voucher number is manually entered.
 

@@ -13,7 +13,7 @@ ms.search.form: RetailOperations
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: v-chgri
-#ms.search.scope: Core, Operations, Retail
+#
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -80,7 +80,7 @@ To turn on the B2B order quantity limits feature in Commerce site builder, follo
 
 [Set up a B2B e-commerce site](set-up-b2b-site.md)
 
-[Create org modeling hierarchies for B2B organizations](org-model.md)
+[Manage B2B business partners using customer hierarchies](partners-customer-hierarchies.md)
 
 [Manage business partner users on B2B e-commerce sites](manage-b2b-users.md)
 

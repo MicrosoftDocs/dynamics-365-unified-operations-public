@@ -5,7 +5,7 @@ title: Customer payment insights (Preview)
 description: This topic describes the payment insights capability that helps improve understanding of individual customers' typical payment practices. The feature can help you identify circumstances that justify initiating collection processes earlier than you might have done otherwise.
 author: ShivamPandey-msft
 ms.date: 11/06/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -15,7 +15,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: ["14151", "intro-internal"]
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674

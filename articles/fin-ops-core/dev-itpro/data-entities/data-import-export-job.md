@@ -4,8 +4,8 @@
 title: Data import and export jobs overview
 description: Use the Data management workspace to create and manage data import and export jobs.
 author: peakerbl
-ms.date: 10/21/2021
-ms.topic: article
+ms.date: 04/25/2022
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: Application user
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: peakerbl
@@ -29,6 +29,9 @@ ms.dyn365.ops.version: AX 7.0.0
 # Data import and export jobs overview
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 To create and manage data import and export jobs, you use the **Data management** workspace. By default, the data import and export process creates a staging table for each entity in the target database. Staging tables let you verify, clean up, or convert data before you move it.
 
@@ -78,8 +81,11 @@ When you select an entity, you must select the format of the data that will be e
 > [!NOTE]
 > It is important to select the correct value for **Row delimiter**, **Column delimiter**, and **Text qualifier**, if the **File format** option is set to **Delimited**. Make sure that your data doesn't contain the character used as delimiter or qualifier, as this may result in errors during import and export.
 
+> [!NOTE]
+> For XML-based file formats, make sure to only use legal characters. For more details about valid characters, see [Valid Characters in XML 1.0](https://www.w3.org/TR/2006/REC-xml-20060816/Overview.html#charsets/). XML 1.0 does not allow any control characters except for tabs, carriage returns, and line feeds. Examples of illegal characters are square brackets, curly brackets, and backslashes. 
+
 ### Sequence the entities
-Entities can be sequenced in a data template, or in import and export jobs. When you run a job that contains more than one data entity, you must make sure that the data entities are correctly sequenced. You sequence entities primarily so that you can address any functional dependencies among entities. If entities don’t have any functional dependencies, they can be scheduled for parallel import or export.
+Entities can be sequenced in a data template, or in import and export jobs. When you run a job that contains more than one data entity, you must make sure that the data entities are correctly sequenced. You sequence entities primarily so that you can address any functional dependencies among entities. If entities don’t have any functional dependencies, they can be scheduled for parallel import or export. 
 
 #### Execution units, levels, and sequences
 The execution unit, level in the execution unit, and sequence of an entity help control the order that the data is exported or imported in.

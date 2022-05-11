@@ -3,8 +3,8 @@
 
 title: Personnel management workspace
 description: This topic describes the conceptual elements of the Personnel management workspace. 
-author: andreabichsel
-ms.date: 07/01/2021
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,9 +15,9 @@ ms.search.form: HcmPosition, HcmPersonnelManagementWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.author: anbichse
-ms.reviewer: anbichse
-ms.search.scope: Human Resources
+ms.author: twheeloc
+ms.reviewer: twheeloc
+
 # ms.tgt_pltfrm: 
 ms.custom: 269054
 ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
@@ -30,19 +30,22 @@ ms.dyn365.ops.version: Version 1611
 
 # Personnel management workspace
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-The **Personnel management** workspace includes a vast amount of content. It contains personnel movements, it tracks employee changes, open positions, address changes, expiring records, and analytics, and it provides links to specific information. This topic provides detailed information about each part of the workspace.
+The **Personnel management** workspace includes a vast amount of content. It contains personnel movements, tracks employee changes, open positions, address changes, expiring records, and analytics, and provides links to specific information. This topic provides detailed information about each part of the workspace.
 
 ## Activity tab
 
 The **Activity** tab contains sections that group workers based on their stage in the employment process:
 
-- Candidates to hire
-- Starting soon
-- Recent hires
-- Exiting
-- Exited
+- **Candidates to hire**
+- **Starting soon**
+- **Recent hires**
+- **Exiting**
+- **Exited**
 
 When a worker is in one of these stages, specific actions are available as a button on the card, or on the menu that appears when you select the ellipsis (**...**) in the upper-right corner. The following subsections describe the sections of the **Activity** tab and list the actions that are available.
 
@@ -56,9 +59,9 @@ The **Candidates to hire** section of the workspace is filled in from multiple s
 
 When candidates appear in the **Candidates to hire** section, you can perform the following actions by selecting the ellipsis on the candidate card:
 
-- Dismiss candidate
-- Do not hire
-- Hire
+- **Dismiss candidate**
+- **Do not hire**
+- **Hire**
 
 > [!NOTE]
 > If the candidate list is being populated from Microsoft Dataverse, the same candidates will display across all legal entities because a legal entity has not been associated to the candidate.
@@ -70,7 +73,7 @@ The **Starting soon** section lists workers who have a start date in the future.
 If the manager doesn't appear on the card, a position hasn't been assigned for the worker.
 
 > [!NOTE] 
-> We recommend that you assign a position to a worker before you apply a checklist, because onboarding tasks are sometimes assigned to a newly hired employee's manager. However, if no position is assigned, the new employee's manager can't be determined. In that case, the onboarding tasks that are intended for the manager will be assigned to the checklist owner instead.
+> We recommend that you assign a position to a worker before you apply a checklist. Sometimes, onboarding tasks are assigned to a newly hired employee's manager. However, if no position is assigned, the new employee's manager can't be determined. In that case, the onboarding tasks that are intended for the manager will be assigned to the checklist owner instead.
 
 When workers appear in the **Starting soon** section, the following actions are available for them:
 
@@ -90,7 +93,7 @@ The **Recent hires** section lists workers who have a start date in the recent p
 By default, the list shows workers who were hired in the last seven days. To change this setting, on the **Human Resources parameters** page, on the **General** tab, define a time frame for **Recent hires**. The data in the **Recent hires** section can be shown for a specific number of days, months, or years. For example, to view the list of workers who were hired in the last 14 days, set the **Period** field to **14** and the **Unit** field to **Days**.
 
 > [!NOTE]
-> The settings on the **Human Resources parameters** page are company specific. Therefore, the time frame that you view recent hires for can vary by company. For example, in the USMF company, you might want to view all new hires from the last seven days. However, in the USSI company, you want to view all new hires from the last 14 days. In this case, you must open the **Human Resources parameters** page in each company, and set the parameters as required.
+> The settings on the **Human Resources parameters** page are company specific. Therefore, the time frame that you view recent hires for can vary by company. For example, in the USMF company, you might want to view all new hires from the last seven days. However, in the USSI company, you might want to view all new hires from the last 14 days. In this case, open the **Human Resources parameters** page in each company, and set the parameters as required.
 
 If the manager doesn't appear on the card, a position hasn't been assigned for the worker.
 
@@ -137,13 +140,9 @@ When worker appear in the **Exited** section, the following actions are availabl
 
 The **Employee changes** tab provides a list of all worker personnel actions. This list isn't available by default. To enable the functionality, on the **Human resources shared parameters** page, on the **Personnel actions** tab, set the **Enable worker actions** option to **Yes**.
 
-For more information about personnel actions, see (Link to Personnel Actions page).
-
 ## Position changes tab
 
 The **Position changes** tab provides a list of all position personnel actions. This list isn't available by default. To enable the functionality, on the **Human resources shared parameters** page, on the **Personnel actions** tab, set the **Enable position actions** option to **Yes**.
-
-For more information about personnel actions, see (Link to Personnel Actions page).
 
 ## Open positions tab
 
@@ -156,11 +155,11 @@ The **Open positions** tab lists all open positions. To appear in the list, posi
 
 The **Expiring records** tab lists all items that have expired or will expire for the workers in the company that the user is signed in to. The following items appear in the list:
 
-- Certificates
-- Identification
-- Probations
-- Screenings
-- Tests
+- **Certificates**
+- **Identification**
+- **Probations**
+- **Screenings**
+- **Tests**
 
 To specify whether the list shows expired records or expiring records, on the **Human Resources parameters** page, on the **General** tab, define a time frame for either **Expiring records** or **Expired records**. The data on the **Expiring records** tab can be shown for a specific number of days. For example, to view the list of records that will expire in the next 14 days, set the **Number of days** field to **14**.
 

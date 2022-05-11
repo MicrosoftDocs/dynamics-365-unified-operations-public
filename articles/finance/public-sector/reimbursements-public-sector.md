@@ -3,7 +3,7 @@
 
 title: Reimbursements in the public sector
 description: This topic answers common questions related to reimbursements in the public sector. 
-author: ShylaThompson
+author: v-kiarnd
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -15,13 +15,13 @@ ms.search.form: CustBillingClassification
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 27311
 ms.assetid: 9d61d1d8-1672-4bd0-ae0d-605b09240890
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: brpotter
+ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

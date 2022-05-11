@@ -3,9 +3,9 @@
 
 title: Cash overview Power BI content
 description: This topic describes the Cash overview Power BI content. It explains how to access the reports that are included in the content, and provides information about the data model and entities that were used to build the content.
-author: saraschi2
+author: panolte
 ms.date: 07/16/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -14,12 +14,12 @@ ms.technology:
 ms.search.form:  BankTreasurerWorkspace
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: saraschi
+ms.author: panolte
 ms.search.validFrom: 2017-06-30 
 ms.dyn365.ops.version: July 2017 update 
 ---

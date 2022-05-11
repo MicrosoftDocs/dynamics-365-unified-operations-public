@@ -14,12 +14,12 @@ ms.technology:
 ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: GBL
 # ms.search.industry: 
-ms.author: v-oloski
+ms.author: v-olgaoskina
 ms.search.validFrom: 2020-07-03
 ms.dyn365.ops.version: 10.0.13
 

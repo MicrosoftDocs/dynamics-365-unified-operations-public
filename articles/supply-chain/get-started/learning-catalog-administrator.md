@@ -1,10 +1,10 @@
 ---
 title: Learning catalog for Dynamics 365 Supply Chain Management administrators
 description: Find all the training options for Supply Chain Management administrators.
-author: margoc
+author: kamaybac
 ms.topic: article
 ms.date: 07/23/2020
-ms.author: margoc
+ms.author: kamaybac
 
 ms.prod:
 ms.technology:
@@ -13,7 +13,7 @@ ms.technology:
 
 # ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: Application user
-ms.reviewer: margoc
+ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.1
@@ -68,7 +68,7 @@ The following catalog is organized from core knowledge to specific domains, and 
 
 | Content | Description | Format | Length |
 |---------|-------------|--------|--------|
-| [Set up engineering change management for Dynamics 365 Supply Chain Management](/learn/paths/set-up-engineering-change-management/) | Today's manufacturers require strong product data management, version control, and engineering change management to succeed in a world of constantly shrinking product life cycles, increased quality and reliability requirements, and an increased focus on product safety. Learn how to set up engineering change management in this learning path. | Free, self-paced online learning path | 4 hours |
+| [Set up engineering change management for Dynamics 365 Supply Chain Management](/learn/paths/set-up-engineering-change-management/) | Today's manufacturers require strong product data management, version control, and engineering change management to succeed in a world of constantly shrinking product life cycles, increased quality and reliability requirements, and an increased focus on product safety. Learn how to set up engineering change management in this learning path. | Free, self-paced online learning path | 4 hours |
 
 ## Servicing<a name="servicing"></a>
 

@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 10.0.6
 
 [!include [banner](../includes/banner.md)]
 
-To generate reports as Microsoft Word documents, you must design a template for the reports as a Word document. This template must contain Word content controls as placeholders for data that will be filled in at runtime. To use the Word document that is created as a template for your reports, you can [configure](er-design-configuration-word.md) a new [Electronic reporting (ER)](general-electronic-reporting.md) [solution](er-quick-start1-new-solution.md). The solution must include an ER [configuration](general-electronic-reporting.md#Configuration) that contains an ER [format](general-electronic-reporting.md#FormatComponentOutbound) component. This ER format must be configured to use the designed template for report generation.
+To generate reports as Microsoft Word documents, you must design a template for the reports as a Word document. This template must contain Word content controls as placeholders for data that will be filled in at runtime. To use the Word document that is created as a template for your reports, you can [configure](er-design-configuration-word.md) a new [Electronic reporting (ER)](general-electronic-reporting.md) [solution](er-quick-start1-new-solution.md). The solution must include an ER [configuration](general-electronic-reporting.md#Configuration) that contains an ER format component. This ER format must be configured to use the designed template for report generation.
 
 In version 10.0.6 and later of Dynamics 365 Finance, you can configure formulas in your ER format to suppress some Word content controls in generated documents.
 

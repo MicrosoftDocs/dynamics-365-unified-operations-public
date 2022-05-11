@@ -5,7 +5,7 @@ author: RobinARH
 ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 23921
 ms.assetid: 6be739c0-30da-4f91-97be-a8764fb8078c
 ms.search.region: Global
@@ -119,7 +119,7 @@ class PVsClass
 Put a breakpoint on the print statements by pressing F9 while that statement is selected. This will create a normal, unconditional breakpoint. Now, use the mouse to open the context menu for the breakpoint and select **Condition**. Put in a condition that indicates that the breakpoint should happen when the value of the 'i' variable exceeds 5. Set the class as a startup project, and the class containing the code as the startup item in the project. Run the code. Feel free to modify the value of 'i' using the debugger. Now, remove this breakpoint, and use the Hit count feature to accomplish the same thing.
 
 > [!NOTE]
-> A breakpoint can have several conditions. It's often helpful to hover the cursor over the breakpoint, causing an informative tooltip to appear. Trace points are often useful tot race execution. Insert a trace point on the line in question and log the value of the variable. The trace output will appear in the output window in the debugger.
+> A breakpoint can have several conditions. It's often helpful to hover the cursor over the breakpoint, causing an informative tooltip to appear. Trace points are often useful to trace execution. Insert a trace point on the line in question and log the value of the variable. The trace output will appear in the output window in the debugger.
 
 ## The Immediate window
 

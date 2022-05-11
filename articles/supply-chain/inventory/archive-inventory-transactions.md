@@ -4,7 +4,7 @@
 title: Archive inventory transactions
 description: This topic describes how to archive inventory transaction data to help improve system performance.
 author: yufeihuang
-ms.date: 03/01/2021
+ms.date: 05/10/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -119,3 +119,110 @@ The toolbar above the grid provides the following buttons that you can use to wo
 - **Pause archiving** – Pause a selected archive that is currently being processed. The pause takes effect only after the archiving task has been generated. Therefore, there might be a short delay before the pause takes effect. If an archive has been paused, a check mark appears in its **Stop current update** field.
 - **Resume archiving** – Resume processing for a selected archive that is currently paused.
 - **Reverse** – Reverse the selected archive. You can reverse an archive only if its **State** field is set to *Finished*. If an archive has been reversed, a check mark appears in its **Reverse** field.
+
+## Extend your code to support custom fields
+
+If the `InventTrans` table contains one or more custom fields, then you may need to extend the code to support them, depending on how they are named.
+
+- If the custom fields from the `InventTrans` table have the same field names as in the `InventtransArchive` table, that means they are 1:1 mapped. Therefore, you can just put the custom fields into the `InventoryArchiveFields` fields group of the `inventTrans` table.
+- If the custom field names in the `InventTrans` table don't match the field names in the `InventtransArchive` table, then you need to add code to map them. For example, if you have a system field called  `InventTrans.CreatedDateTime`, then you must create a field in the `InventTransArchive` table with a different name (such as `InventtransArchive.InventTransCreatedDateTime`) and add extensions to the `InventTransArchiveProcessTask` and  `InventTransArchiveSqlStatementHelper` classes, as shown in the following sample code.
+
+The following sample code shows an example of how to add the required extension to the `InventTransArchiveProcessTask` class.
+
+```xpp
+[ExtensionOf(classStr(InventTransArchiveProcessTask))]
+Final class InventTransArchiveProcessTask_Extension
+{
+
+    protected void addInventTransFields(SysDaSelection _selectionObject)
+    {
+        _selectionObject.add(fieldStr(InventTrans, ModifiedBy))
+            .add(fieldStr(InventTrans, CreatedBy)).add(fieldStr(InventTrans, CreatedDateTime));
+
+        next addInventTransFields(_selectionObject);
+    }
+
+
+    protected void addInventTransArchiveFields(SysDaSelection _selectionObject)
+    {
+        _selectionObject.add(fieldStr(InventTransArchive, InventTransModifiedBy))
+            .add(fieldStr(InventTransArchive, InventTransCreatedBy)).add(fieldStr(InventTransArchive, InventTransCreatedDateTime));
+
+        next addInventTransArchiveFields(_selectionObject);
+    }
+}
+```
+
+The following sample code shows an example of how to add the required extension to the `InventTransArchiveSqlStatementHelper` class.
+
+```xpp
+[ExtensionOf(classStr(InventTransArchiveSqlStatementHelper))]
+final class InventTransArchiveSqlStatementHelper_Extension
+{
+    private str     inventTransModifiedBy;  
+    private str     inventTransCreatedBy;
+    private str     inventTransCreatedDateTime;
+
+    protected void initialize()
+    {
+        next initialize();
+        inventTransModifiedBy = new SysDictField(tablenum(InventTrans), fieldNum(InventTrans, ModifiedBy)).name(DbBackend::Sql);
+        inventTransCreatedDateTime = new SysDictField(tablenum(InventTrans), fieldNum(InventTrans, CreatedDateTime)).name(DbBackend::Sql);
+        inventTransCreatedBy = new SysDictField(tablenum(InventTrans), fieldNum(InventTrans, CreatedBy)).name(DbBackend::Sql);
+    }
+
+    protected str buildInventTransArchiveSelectionFieldsStatement()
+    {
+        str     ret;
+
+        ret = next buildInventTransArchiveSelectionFieldsStatement();
+        
+        if (inventTransModifiedBy)
+        {
+            ret += ',';
+            ret += strFmt('%1',  new SysDictField(tablenum(InventTransArchive), fieldNum(InventTransArchive, InventTransModifiedBy)).name(DbBackend::Sql));
+        }
+
+        if (inventTransCreatedBy)
+        {
+            ret += ',';
+            ret += strFmt('%1',  new SysDictField(tablenum(InventTransArchive), fieldNum(InventTransArchive, InventTransCreatedBy)).name(DbBackend::Sql));
+        }
+
+        if (inventTransCreatedDateTime)
+        {
+            ret += ',';
+            ret += strFmt('%1',  new SysDictField(tablenum(InventTransArchive), fieldNum(InventTransArchive, InventTransCreatedDateTime)).name(DbBackend::Sql));
+        }
+
+        return ret;
+    }
+
+    protected str buildInventTransTargetFieldsStatement()
+    {
+        str     ret;
+
+        ret = next buildInventTransTargetFieldsStatement();
+
+        if (inventTransModifiedBy)
+        {
+            ret += ',';
+            ret += strFmt('%1', inventTransModifiedBy);
+        }
+
+        if (inventTransCreatedBy)
+        {
+            ret += ',';
+            ret += strFmt('%1', inventTransCreatedBy);
+        }
+
+        if (inventTransCreatedDateTime)
+        {
+            ret += ',';
+            ret += strFmt('%1', inventTransCreatedDateTime);
+        }
+
+        return ret;
+    }
+}
+```

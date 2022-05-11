@@ -3,7 +3,7 @@
 
 title: Sales tax rates based on the Marginal base and Calculation methods
 description: This topic explains how the values in the fields Marginal base and Calculation method determine the tax rate(s) in sales and purchase transactions.
-author: ShylaThompson
+author: kailiang
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
@@ -15,13 +15,13 @@ ms.search.form: TaxTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 7171
 ms.assetid: 381fc309-b32a-4927-b5b8-fa1c31b0bd72
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: kailiang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

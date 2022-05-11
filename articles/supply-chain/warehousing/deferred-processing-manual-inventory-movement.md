@@ -8,7 +8,7 @@ ms.search.form: WHSWorkProcessingPolicy, WHSWorkDeferredPutProcessingTask
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: Mirzaab
+ms.author: mirzaab
 ms.search.validFrom: 2021-04-27
 ms.dyn365.ops.version: 10.0.17
 ---
@@ -27,10 +27,10 @@ Background processing is achieved by using the [Process warehouse app events fea
 
 To make this feature available, turn on the following features in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). You must turn them on in this order:
 
-1. Organization-wide work blocking
-1. Process warehouse app events
-1. Deferred put operations
-1. Deferred processing of manual inventory movement operation
+1. *Organization-wide work blocking*<br>(As of Supply Chain Management version 10.0.21, this feature is mandatory, so it is turned on by default and can't be turned off again.)
+1. *Process warehouse app events*<br>(As of Supply Chain Management version 10.0.25, this feature is turned on by default.)
+1. *Deferred put operations*
+1. *Deferred processing of manual inventory movement operation*<br>(As of Supply Chain Management version 10.0.25, this feature is mandatory, so it is turned on by default and can't be turned off again.)
 
 ## Configure the work processing policies
 

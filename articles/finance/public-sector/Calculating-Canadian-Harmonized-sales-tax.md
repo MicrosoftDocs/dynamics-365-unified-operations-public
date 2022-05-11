@@ -14,12 +14,12 @@ ms.technology:
 ms.search.form: PSNCanadianHSTTaxFeature
 audience: Application User
 ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Global
 ms.search.industry: public sector
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2020-4-01
 ms.dyn365.ops.version: 10.0.12
 ---
@@ -44,7 +44,8 @@ Note: This functionality does not apply to the Accounts payable Invoice journal.
 
 
 
-### Note: Only the financial dimensions that are used in the current legal entity will be available.
+> [!Note] 
+> Only the financial dimensions that are used in the current legal entity will be available.
 
 ## Set up HST rules
 

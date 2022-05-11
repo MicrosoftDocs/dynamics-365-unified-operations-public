@@ -1,7 +1,7 @@
 ---
 title: Release to warehouse
 description: This topic provides details about the release to warehouse process. It describes entities that are created when you release an order to the warehouse and options that you can use to initiate the process.
-author: mirzaab
+author: Mirzaab
 ms.date: 8/13/2021
 ms.topic: article
 ms.search.form: WHSReleaseToWarehouse, WHSReleaseToWarehouseSalesOrder, WHSReleaseToWarehouseTransferOrder, WHSLoadPlanningWorkbench, WHSWaveTemplateTable, WHSWorkTemplateTable, WHSLocDirTable 
@@ -120,6 +120,7 @@ To set up the batch job that releases sales orders, follow these steps.
     - **Quantity to release** – Select whether the whole quantity or only the physically reserved quantity should be released to the warehouse.
     - **Allow release of partially released orders** – Specify whether remaining quantities for partially released orders should be released to the warehouse.
     - **Keep reservations on release failure** – Specify whether quantities that were automatically reserved for a sales order should remain reserved if the release to warehouse process fails.
+    - **Group releases by customer** – Specify whether the system should process release to warehouse operations separately for each customer or release all sales orders at the same time. When this option is set to *Yes*, the system will collect all the sales order lines for a selected customer, release those orders to the warehouse, and then process the next customer. When this option is set to *No*, the system will release all available sales order lines in a single release to warehouse operation. By enabling this option, you can help improve the performance and resilience of the release to warehouse process. However, you must be careful when you use this option together with wave templates that are configured to process waves at release to warehouse, because this combination might generate many single-customer waves, each of which has work that has been generated for that customer only. If you want to generate work that combines shipments for multiple customers, you should either turn off the *Group releases by customer* option or configure your wave templates to use postponed processing.
     - **Locked order handling** – Select how the system should handle sales orders that are currently locked because they are being edited by other users or processes:
 
         - *Wait for orders to unlock* – The system should wait for the orders to become unlocked before it releases them to the warehouse. In this case, the release to warehouse process might take more time.

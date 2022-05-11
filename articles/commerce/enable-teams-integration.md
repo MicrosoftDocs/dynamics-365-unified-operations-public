@@ -3,7 +3,7 @@
 title: Enable Dynamics 365 Commerce and Microsoft Teams integration
 description: This topic describes how to enable Microsoft Dynamics 365 Commerce and Microsoft Teams integration.
 author: gvrmohanreddy
-ms.date: 03/31/2021
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -13,7 +13,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
+
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -41,15 +41,23 @@ Before you can enable Microsoft Teams integration with Commerce, you must regist
 To register the Teams application with your tenant in the Azure portal, follow these steps.
 
 1. Follow the steps in [Quickstart: Register an app in the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app) to register the Teams application with your tenant in the Azure portal.
-1. Copy the **Application (client) ID** value from the **Overview** page for the registered app. You will use this value to enable Teams integration in Commerce headquarters.
-1. Copy the certificate value that was entered when you [added a certificate](/azure/active-directory/develop/quickstart-register-app#add-a-certificate) in step 1. The certificate is also known as the public key or application key. You will use this value to enable Teams integration in Commerce headquarters.
+1. On the **App Registration** tab, select the app that you created in the previous step. Then, on the **Authentication** tab, select **Add a platform**.
+1. In the dialog box, select **Web**. Then, in the **Redirect URLs** field, enter a URL in the format **\<HQUrl\>/oauth**. Replace **\<HQUrl\>** with your Commerce headquarters URL (for example, `https://hxennugbjtweufmdeo385f47fadb6aa9a0aos.cloudax.int.dynamics.com/oauth`).
+1. On the **Overview** page of the registered app, copy the **Application (client) ID** value. You will have to provide this value to enable Teams integration in Commerce headquarters in the next section.
+1. Follow the instructions in [Add a client secret](/azure/active-directory/develop/quickstart-register-app#add-a-client-secret) to add a client secret. Then copy the **Secret value** value for the client. You will have to provide this value to enable Teams integration in Commerce headquarters in the next section.
+1. Select **API permissions**, and then select **Add a permission**.
+1. In the **Request API permissions** dialog box, select **Microsoft Graph**, select **Delegated permissions**, expand **Group**, select **Group.ReadWrite.All**, and then select **Add permissions**.
+1. In the **Request API permissions** dialog box, select **Add a permission**, select **Microsoft Graph**, select **Application permissions**, expand **Group**, select **Group.ReadWrite.All**, and then select **Add permissions**.
+1. In the **Request API permissions** dialog box, select **Add a permission**. On the **APIs my organization uses** tab, search for **Microsoft Teams Retail Service**, and select it.
+1. Select **Delegated permissions**, expand **TaskPublishing**, select **TaskPublising.ReadWrite.All**, and then select **Add permissions**. For more information, see [Configure a client application to access a web API](/azure/active-directory/develop/quickstart-configure-app-access-web-apis).
 
 To enable Teams integration in Commerce headquarters, follow these steps.
 
 1. Go to **Retail and Commerce \> Channel setup \> Microsoft Teams integration configuration**.
 1. On the Action Pane, select **Edit**.
 1. Set the **Enable Microsoft Teams integration** option to **Yes**.
-1. In the **Application ID** and **Application key** fields, enter the values you obtained when you registered the Teams application in the Azure portal.
+1. In the **Application ID** field, enter the **Application (client) ID** value that you obtained while you registered the Teams application in the Azure portal.
+1. In the **Application key** field, enter the **Secret value** value that you obtained while you added a client secret in the Azure portal.
 1. On the Action Pane, select **Save**.
 
 The following illustration shows an example of the configuration of Teams integration in Commerce headquarters.

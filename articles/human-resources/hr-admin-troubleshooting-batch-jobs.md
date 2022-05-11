@@ -3,7 +3,7 @@
 
 title: Optimize performance by scheduling batch jobs after hours
 description: This topic explains how to resolve performance issues with Microsoft Dynamics 365 Human Resources by scheduling long-running batch jobs after hours.
-author: andreabichsel
+author: twheeloc
 ms.date: 06/23/2020
 ms.topic: article
 ms.prod: 
@@ -14,13 +14,13 @@ ms.technology:
 # ms.search.form: BatchJob, BatchJobEnhanced
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-06-23
 ms.dyn365.ops.version: Platform update 24
 ---
@@ -28,9 +28,12 @@ ms.dyn365.ops.version: Platform update 24
 
 # Optimize performance by scheduling batch jobs after hours
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 ## Issue
 

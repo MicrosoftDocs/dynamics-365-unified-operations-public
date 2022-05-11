@@ -5,7 +5,7 @@ title: Integration between Finance and Operations apps and third-party services
 description: This topic is intended to help architects and developers make sound design decisions when they implement integration scenarios.
 author: peakerbl
 ms.date: 11/23/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 # ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 This topic is intended to help architects and developers make sound design decisions when they implement integration scenarios.
 

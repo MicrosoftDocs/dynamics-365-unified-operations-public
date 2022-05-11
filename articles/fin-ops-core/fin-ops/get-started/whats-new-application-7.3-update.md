@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 7.3
 
 [!include [banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3. This version was released in December 2017 and has a build number of 7.3.11971.56116.
 
@@ -255,7 +255,7 @@ For more information, see [Product lifecycle state](../../../supply-chain/pim/pr
 
 Previously you needed to modify the retail proxy project inline to generate the Retail proxy to support your new CRT/RS extension in POS offline mode or e-Commerce extensions. Now, you can generate proxy without any inline changes as a completely new extension. We also added support for multiple ISV/Partner extension proxies without any code merge between the extension proxies. This will help you with a seamless upgrade for proxy extensions.
 
-For more information, see [Retail Typescript and C# proxies](../../../retail/dev-itpro/typescript-proxy-retail-pos.md).
+For more information, see [Retail Typescript and C# proxies](/dynamics365/commerce/dev-itpro/typescript-proxy-retail-pos).
 
 ## Safety stock replenishment enhancements
 

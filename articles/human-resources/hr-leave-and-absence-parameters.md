@@ -2,9 +2,9 @@
 # required metadata
 
 title: Configure leave and absence parameters
-description: Define human resources parameters for leave and absence in Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 11/02/2020
+description: This topic describe how to define human resources parameters for leave and absence in Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,13 +15,13 @@ ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
@@ -29,9 +29,13 @@ ms.dyn365.ops.version: Human Resources
 
 # Configure leave and absence parameters
 
+>[!Important]
+>The functionality noted in this topic is currently available for customers on the stand-alone Dynamics 365 Human Resources. Some or all of the functionality will be available as part of a future release on the Finance infrastructure after Finance release 10.0.26.
+
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Before you set up leave and absence plans in Dynamics 365 Human Resources, it's a good idea to verify the settings for all related human resources parameters, including:
+Before you set up leave and absence plans in Dynamics 365 Human Resources, it's a good idea to verify the settings for all related **Human resources parameters**, including:
 
 - Number sequence for leave requests
 - Family Medical and Leave Act (FMLA) settings
@@ -79,7 +83,7 @@ Before you set up leave and absence plans in Dynamics 365 Human Resources, it's 
 
     - Select **Balance calculation** to display balances as of today or as of the accrual period. If you select **Balance as of today**, the balance displays the total of all accruals, adjustments, and requests as of today. If you select **Balance as of accrual period**, the balance displays the total of all accruals, adjustments, and requests as of the accrual period defined by the frequency in the leave plan. 
 
-    - Set the start time for the carry forward expiration batch job.  
+    - Set the **Start time** for the **Carry forward expiration** batch job.  
     
     - Select **Yes** for **Allow employees to buy leave** and **Allow employees to sell leave**. If you select **Yes** for these options, you can create buy and sell leave policies and enable employees to submit buy and sell leave requests.
 

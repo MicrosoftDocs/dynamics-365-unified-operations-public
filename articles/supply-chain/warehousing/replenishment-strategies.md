@@ -3,7 +3,7 @@
 
 title: Replenishment strategies
 description: This topic provides information about replenishment strategies and explains how you can use the Replenishment strategy field on wave demand replenishment template lines to select how replenishment is done.
-author: mirzaab
+author: Mirzaab
 ms.date: 10/29/2020
 ms.topic: article
 ms.prod: 

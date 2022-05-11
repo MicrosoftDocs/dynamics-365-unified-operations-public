@@ -2,10 +2,10 @@
 # required metadata
 
 title: SEPA credit transfer overview
-description: This article provides general information about ISO 20022 credit transfers, which include Single Euro Payments Area (SEPA) credit transfers and any other electronic payments for vendors. A SEPA credit transfer is a specific type of payment in euros from one company or individual to another company or individual. The topic also explains how to set up and transmit a credit transfer payment file.
+description: This topic provides general information about ISO 20022 credit transfers, which include Single Euro Payments Area (SEPA) credit transfers and any other electronic payments for vendors. 
 author: sunfzam
 ms.date: 06/20/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -15,7 +15,7 @@ ms.search.form: LedgerJournalTransVendInvoice, LedgerJournalTransVendPaym, VendP
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: ["11124", "intro-internal"]
 ms.assetid: 36b0f870-16d4-4bbb-8da5-e747e69b970d
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article provides general information about ISO 20022 credit transfers, which include Single Euro Payments Area (SEPA) credit transfers and any other electronic payments for vendors. A SEPA credit transfer is a specific type of payment in euros from one company or individual to another company or individual. The topic also explains how to set up and transmit a credit transfer payment file.
+This topic provides general information about ISO 20022 credit transfers, which include Single Euro Payments Area (SEPA) credit transfers and any other electronic payments for vendors. A SEPA credit transfer is a specific type of payment in euros from one company or individual to another company or individual. The topic also explains how to set up and transmit a credit transfer payment file.
 
 ## What is a credit transfer message?
 The credit transfer message is a request that an initiating party (your company) sends to move funds from its own account to a creditor. There are many country/region-specific and bank-specific implementations of credit transfer messages. Some of them are used within one country/region, and some are becoming standards. One well-established global standard is ISO 20022 and its initiation messages, such as Credit transfer. The following illustration shows the relations and coverage for selected credit transfer messages. 

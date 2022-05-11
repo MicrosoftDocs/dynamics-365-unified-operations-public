@@ -4,7 +4,7 @@
 title: Work with fragments
 description: This topic describes why, when, and how to use fragments in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-ms.date: 10/16/2020
+ms.date: 02/03/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -125,6 +125,20 @@ To edit a fragment in Commerce site builder, follow these steps.
 1. Edit the fragment's module properties and structure as you require. The process resembles the process for editing modules are edited in the page editor view.
 
 You can also edit a fragment by selecting it on a page, in a template, or in a parent fragment, and then selecting **Edit Fragment** in the properties pane on the right.
+
+### Rename a fragment
+
+To rename an existing fragment in site builder, follow these steps.
+
+1. In the left navigation pane, select **Fragments**.
+1. Select the fragment name of the fragment that you want to rename.
+1. Select **Edit** to start editing the fragment. Note that you cannot edit a fragment if someone else is already editing the fragment.
+1. In the fragment properties pane, select the pen symbol next to the fragment name.
+1. Edit the fragment name as needed.
+1. Select the check mark to confirm the name change.
+1. Select **Finish editing**.
+
+You can rename a fragment after it is created by editing it and then selecting the pen symbol next to the fragment name in the property pane.
 
 ## Additional resources
 

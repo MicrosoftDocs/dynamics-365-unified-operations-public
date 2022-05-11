@@ -4,7 +4,7 @@
 title: Keyboard shortcuts
 description: This topic provides an overview of the shortcut key combinations that you can use when you're working with Finance and Operations apps.
 author: jasongre
-ms.date: 10/12/2021
+ms.date: 03/03/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,9 +30,10 @@ ms.dyn365.ops.version: AX 7.0.0
 # Keyboard shortcuts
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-The following keyboard shortcuts can help you quickly and efficiently enter data in Finance and Operations apps .
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+Keyboard shortcuts can help you quickly and efficiently enter data in Finance and Operations apps. 
 
 > [!NOTE]
 > The keyboard shortcuts described here refer to the United States keyboard layout. Keys on other keyboard layouts might not correspond exactly to the keys on a US keyboard.
@@ -41,7 +42,7 @@ Some of the shortcuts on this page are *key chords*, meaning they require two co
 
 ## Finding a shortcut
 
-As of Platform update 11, users can discover currently available shortcuts directly from the user interface. Simply right-click on a control and select **View shortcuts**. This will open a dialog box showing the shortcuts you can use based on where you are on the page.
+Users can discover currently available shortcuts directly from the user interface. Simply right-click on a control and select **View shortcuts**. This will open a dialog box showing the shortcuts you can use based on where you are on the page. Alternatively, you can press Alt+Shift+K to open this dialog box (and press Alt+Shift+K a second time to see all currently available shortcuts for the page).    
 
 ## Action shortcuts
 
@@ -136,6 +137,8 @@ As of Platform update 11, users can discover currently available shortcuts direc
 
 | To do this                                                                                                             | Press                           |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------|
+| Vertical scrolling                                                                                                     | Mouse wheel                     |
+| Horizontal scrolling                                                                                                   | Shift + Mouse wheel             |
 | Move to the next/previous column                                                                                       | Tab / Shift+Tab                 |
 | Move to the next/previous row                                                                                          | Down arrow / Up arrow           |
 | Move to the next/previous row without selecting<blockquote>[!NOTE] This shortcut applies to multi-select scenarios only.</blockquote> | Ctrl+Up arrow / Ctrl+Down arrow |
@@ -147,15 +150,16 @@ As of Platform update 11, users can discover currently available shortcuts direc
 | Move to the first record                                                                                               | Ctrl+Home                       |
 | Move to the last record                                                                                                | Ctrl+End                        |
 | Select or clear all rows                                                                                               | Ctrl+Shift+M                    |
-| Move to the first marked row                                                                                           | Alt+Shift+M, F                    |
-| Move to the next marked row                                                                                            | Alt+Shift+M, L                    |
-| Move to the previous marked row                                                                                        | Alt+Shift+M, P                    |
-| Moved to the last marked row                                                                                           | Alt+Shift+M, N                    |
+| Move to the first marked row                                                                                           | Alt+Shift+M, F                  |
+| Move to the next marked row                                                                                            | Alt+Shift+M, L                  |
+| Move to the previous marked row                                                                                        | Alt+Shift+M, P                  |
+| Moved to the last marked row                                                                                           | Alt+Shift+M, N                  |
 | Execute the default action in a grid<blockquote>[!NOTE] This shortcut is enabled when focus is on a cell containing a hyperlink and all cells in that column have hyperlinks.</blockquote> | Enter                           |
 | Toggle focus between the selected row and the header row                                                               | Alt+Shift+H                     |
 | Make the current column larger/smaller (with focus in the header row)                                                  | Right arrow / Left arrow        |
+| Move the current column to the next/previous position (with focus in the header row)                                   | Ctrl+Shift+Right arrow / Ctrl+Shift+Left arrow |
 | Open grid filtering for the current column (with focus in the header row)                                              | Enter                           |
-| Resize the current column to fit the contents (with focus in the header row)                                           | A                               |
+| Resize the current column to fit the contents (with focus in the header row)                                           | A  (or double click on the column sizing handle) |
 
 ## Input control shortcuts
 
@@ -199,6 +203,9 @@ As of Platform update 11, users can discover currently available shortcuts direc
 | Close the navigation list on Details form (with focus in the navigation list) | Esc                        |
 | Move to the main page content (with focus in another pane)                    | Alt+M,M                    |
 | Move to the FactBox pane (which may include opening it)                       | Alt+M,B or Ctrl+F2         |
+
+> [!NOTE]
+> The **Streamline tabbing behavior in full-page forms** feature, introduced in version 10.0.26, allows users to tab through all regions of a page without requiring the mouse or a dedicated keyboard shortcut to move between regions. You can still use the existing keyboard shortcuts (such as Alt+M key chord shortcuts) to move quickly between the regions on a page.
 
 ## [Personalization](personalize-user-experience.md) shortcuts 
 
@@ -257,10 +264,14 @@ As of Platform update 11, users can discover currently available shortcuts direc
 | Expand/collapse the animated pop-up prompt (while playing a task guide)              | Alt+R,C                    |
 | Show more/less information in the animated pop-up prompt (while playing a task guide) | Alt+R,M                    |
 
+## Focus management 
+Focus management describes how user focus is handled in an application. Finance and Operations apps have specialized focus behaviors that are intended to optimize user productivity, especially for data entry scenarios. Focus behaviors include the following:  
+
+-  When a page is loaded, the first editable input control on the page will have focus and can accept user input immediately. If there is no editable input control on the page, the fallback option for initial focus is the first input control on the page followed by the first, focusable control on the page.   
+-  Typically when a button is selected, the action is processed and focus may return to the page. When this happens, focus tends to return to the button control that was selected. This is true in Finance and Operations apps **except** when the button is located in the Action Pane or on a toolbar. In these cases, when the action completes, focus returns to the last control *outside* of the Action Pane (or toolbar) that had focus before the button was selected.
+
 ## Additional resources
 
 [Keyboard shortcuts for missing account analysis](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -5,7 +5,7 @@ title: Depreciation book upgrade overview
 description: This topic describes the current book functionality in Fixed assets. This functionality is based on the value model functionality that was available in earlier versions, but it also includes all the functionality that was previously provided only in depreciation books.
 author: moaamer
 ms.date: 06/20/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, Developer
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: ["221624", "intro-internal"]
 ms.assetid: cf434099-36f9-4b0f-a7c8-bed091e34f39

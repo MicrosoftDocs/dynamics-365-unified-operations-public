@@ -4,7 +4,7 @@
 title: Set up Accounts payable invoice matching validation
 description: This topic provides information on how to set up Accounts payable invoice matching validation. 
 author: abruer
-ms.date: 06/26/2019
+ms.date: 02/14/2022
 ms.topic: business-process 
 ms.prod:  
 ms.technology:  
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: VendParameters   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -57,7 +57,7 @@ Four different types of matching validation are available.
 12. In the **Purchase price total tolerance** field, enter an amount in the accounting currency. This field is available when **Match price totals** is set to **Amount**, or **Percentage and amount**.
 13. In the **Display price total match icon** field, select when an icon is displayed if a discrepancy for invoice matching exceeds the tolerance. The icon can be displayed when a positive discrepancy exceeds the tolerance, or when either a positive or a negative discrepancy exceeds the tolerance.
 For example, the tolerance is 5 percent, and the line price total on the purchase order is 10.00. Therefore, a price match icon is displayed if the line price total on the invoice exceeds 10.50. If you select **If greater than or less than tolerance**, the icon is also displayed if the line price total on the invoice is less than 9.50.
-13. Set the Charges matching.
+13. Set the **Charges matching**.
 14. To match actual charges with expected charges, based on information on the purchase order, select the **Match charges** check box.
 
 ## Set up unit price tolerance percentages
@@ -78,7 +78,7 @@ By default, negative price discrepancies are allowed. However, you cannot enter 
 
 ## Set up matching policy override
 
-Go to **Accounts payable > Setup > Invoice matching setup > Matching policy** to define the default entry for the Matching policy field for lines in the Purchase order form. This is an optional setup. Use this form to set up two-way matching or three-way matching for items, vendors, or item and vendor combinations. These entries allow you to define more granular matching policies than the legal entity matching policy that you defined on the **Accounts payable parameters** page. The default legal entity line matching policy applies to all items and vendors except those for which a different line matching policy is specified on this page.
+Go to **Accounts payable > Setup > Invoice matching setup > Matching policy** to define the default entry for the **Matching policy** field for lines in the **Purchase order** page. This is an optional setup. Use this page to set up two-way matching or three-way matching for items, vendors, or item and vendor combinations. These entries allow you to define more granular matching policies than the legal entity matching policy that you defined on the **Accounts payable parameters** page. The default legal entity line matching policy applies to all items and vendors except those for which a different line matching policy is specified on this page.
 
 On this page, select the **Matching policy level**. Select the level in the matching policy hierarchy to set line matching policies for.
 

@@ -4,7 +4,7 @@
 title: Revenue recognition setup 
 description: This topic describes the setup options for Revenue recognition, and their implications.
 author: kweekley
-ms.date: 08/24/2018
+ms.date: 04/28/2022
 ms.topic: index-page
 ms.prod: 
 ms.technology: 
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: Customer
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global 
@@ -66,7 +66,7 @@ The first scenario occurs after all the contractual obligations are met, when th
 
 The second scenario occurs when a journal is created after reallocation occurs. Reallocation occurs when a sales order line is added to a previously invoiced sales order, or when a new sales order is created that includes a line that is part of the original contract. If an invoice was posted before the new sales order line is added, a correcting accounting entry must be created for the posted customer invoice.
 
-The journal is set up on the **Journal names** page (**Revenue recognition \> Setup \> Journal names**). The journal type must be set to **Revenue recognition**. The revenue recognition journal lets you select the posting layer to post to.
+The journal is set up on the **Journal names** page (**Revenue recognition \> Setup \> Journal names**). The journal type must be set to **Revenue recognition**. 
 
 ## Parameters for revenue recognition
 
@@ -105,7 +105,7 @@ Enter descriptive values in the **Revenue schedule** and **Description** fields.
     - **Occurrences** – The amount is allocated equally across the occurrences, but it can include an extra period if you select **Actual start date** as the recognition convention.
     - **Fiscal period by days** – The amount is allocated based on the actual days in each fiscal period. 
 
-    The results of **Monthly by days** and **Fiscal period by days** will be the same when the fiscal periods follow calendar months. The only exception is when the recognition convention is set to **End of month/period**, and the **Contract start date** and **End date** fields are left blank on a sales order line.
+         - The results of **Monthly by days** and **Fiscal period by days** will be the same when the fiscal periods follow calendar months. The only exception is when the recognition convention is set to **End of month/period**, and the **Contract start date** and **End date** fields are left blank on a sales order line.
 
 - **Recognition convention** – The recognition convention determines the dates that are set on the revenue schedule for the invoice.
 
@@ -113,7 +113,7 @@ Enter descriptive values in the **Revenue schedule** and **Description** fields.
     - **1st day of month/period** – The date on the first schedule line is the contract start date (or invoice date). However, all subsequent schedules lines are created for the first of the month or fiscal period.
     - **Mid-month split** – The date on the first schedule line depends on the invoice date. If the invoice is posted on the first through fifteenth of the month, the revenue schedule is created by using the first day of the month. If the invoice is posted on the sixteenth or later, the revenue schedule is created by using the first day of the next month.
 
-        **Mid-month split** can't be selected if the recognition basis is set to **Fiscal period by days**.
+        - **Mid-month split** can't be selected if the recognition basis is set to **Fiscal period by days**.
 
     - **1st day of next month/period** – The date that the schedule begins on is the first day of the next month or fiscal period.
     - **End of month/period** – The date on the first schedule line is the contract start date (or invoice date). However, all subsequent schedule lines are created for the last day of the month or fiscal period. 

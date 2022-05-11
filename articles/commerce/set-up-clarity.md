@@ -4,7 +4,7 @@
 title: Set up Microsoft Clarity in Dynamics 365 Commerce
 description: This topic covers how to set up Microsoft Clarity in your Dynamics 365 Commerce environment. 
 author: BrianShook
-ms.date: 04/23/2021
+ms.date: 01/28/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
+
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -57,19 +57,6 @@ To configure CSP for Clarity in Commerce site builder, follow these steps.
 1. In the **child-src** directive section, select **Add**.
 1. Enter **``https://www.clarity.ms``**.
 1. Repeat steps 4 and 5 for the **connect-src** and **script-src** directives.
-1. Select **Save and Publish**.
-
-### Add Clarity to the correlation header excluded domains allow list
-
-For Clarity to function on your site, you'll need to add the Clarity domain to the **Correlation header excluded domains** allow list. 
-
-To add Clarity to the correlation header excluded domains list in Commerce site builder, follow these steps.
-
-1. Navigate to your Commerce site.
-1. Select **Site Settings > Extensions**.
-1. Select the **Configuration** tab.
-1. In the **Correlation header excluded domains** section, select **Add**.
-1. Enter **\*.clarity.ms**.
 1. Select **Save and Publish**.
 
 ### Embed Clarity tracking script code into site pages

@@ -3,8 +3,8 @@
 
 title: Service update availability
 description: This topic provides information about the different release options.
-author: ShellyBakke
-ms.date: 09/17/2021
+author: hmahl
+ms.date: 05/03/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,9 +21,10 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: smiller
+ms.author: hmahl
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Platform update 11
+
 ---
 
 # Service update availability
@@ -32,37 +33,45 @@ ms.dyn365.ops.version: Platform update 11
 
 Microsoft is committed to delivering predictable service updates. These service updates will be made generally available for self-deployment approximately 2 weeks prior to Microsoft automatically applying the update. 
 
-Customers will be able to take up to 8 service updates per year and are required to take a minimum of 2 service updates per year. Customers can choose to pause up to 3 consecutive updates at a time. Pausing a service update can apply to the designated user acceptance testing (UAT) sandbox, production, or both environments. After the pause window has ended and if the customer has not self-updated to a supported service update, Microsoft will auto-apply the latest update based on the configuration selection made available in Lifecycle Services (LCS). To learn more about how to pause service updates, see [Pause service updates through Lifecycle Services](../../dev-itpro/lifecycle-services/pause-service-updates.md).
+Customers will be able to take up to 7 service updates per year and are required to take a minimum of 2 service updates per year. Customers can choose to pause up to 3 consecutive updates at a time. Pausing a service update can apply to the designated user acceptance testing (UAT) sandbox, production, or both environments. After the pause window has ended and if the customer has not self-updated to a supported service update, Microsoft will auto-apply the latest update based on the configuration selection made available in Lifecycle Services (LCS). To learn more about how to pause service updates, see [Pause service updates through Lifecycle Services](../../dev-itpro/lifecycle-services/pause-service-updates.md).
 
 > [!NOTE] 
-> Service updates will not be provided during the months of March, June, September, and December. 
+> Service updates will not be provided during the months of January, March, June, September, and December. 
 
 ### Targeted release schedule (dates subject to change)
 
 > [!NOTE] 
 > Sandbox auto-update takes place 7 days prior to the production update.  End of service indicates the date when no new cumulative service updates will be provided.
 
-|     Version     | Preview availability (PEAP) | Generally available (self-update) | Auto-update schedule (via LCS Update Settings) production start date |   End of service   |
+|     Version     | Preview availability        | Generally available (self-update) | Auto-update schedule (via LCS Update Settings) production start date | End of service     |
 |-----------------|-----------------------------|-----------------------------------|----------------------------------------------------------------------|--------------------|
-|     10.0.30     |      September 2, 2022      |        October 21, 2022           |                          November 4, 2022                            | January 13, 2023   |
-|     10.0.29     |      August 1, 2022         |        September 16, 2022         |                          September 30, 2022                          | December 9, 2022   |
-|     10.0.28     |      May 27, 2022           |        July 15, 2022              |                          July 29, 2022                               | October 21, 2022   |
-|     10.0.27     |      April 22, 2022         |        June 17, 2022              |                          July 1, 2022                                | September 16, 2022 |
-|     10.0.26     |      March 4, 2022          |        April 15, 2022             |                          April 29, 2022                              | July 15, 2022      |
-|     10.0.25     |      January 31, 2022       |        March 18, 2022             |                          April 1, 2022                               | June 10, 2022      |
-|     10.0.24     |      December 3, 2021       |        January 14, 2022           |                          February 4, 2022                            | April 15, 2022     |
-|     10.0.23     |      October 15, 2021       |        December 10, 2021          |                          December 31, 2021                           | March 18, 2022     |
-|     10.0.22     |      September 3, 2021      |        October 22, 2021           |                          November 5, 2021                            | January 14, 2022   |
-|     10.0.21     |      August 2, 2021         |        September 17, 2021         |                          October 1, 2021                             | December 10, 2021  |
-|     10.0.20     |      May 28, 2021           |        July 16, 2021              |                          July 30, 2021                               | October 22, 2021   |
-|     10.0.19     |      April 23, 2021         |        June 18, 2021              |                          July 2, 2021                                | September 17, 2021 | 
-            
+|     10.0.38<br>(The "February" release)     | October 13, 2023            | January 12, 2024                  | February 2, 2024                                                     | April 12, 2024     |
+|     10.0.37<br>(The "November" release)     | September 1, 2023           | October 20, 2023                  | November 3, 2023                                                     | January 12, 2024   |
+|     10.0.36\*<br>(The "October" release)   | July 31, 2023               | September 15, 2023                | September 29, 2023                                                   | December 8, 2023   |
+|     10.0.35<br>(The "August" release)     | May 26, 2023                | July 14, 2023                     | July 28, 2023                                                        | October 20, 2023   |
+|     10.0.34<br>(The "July" release)     | April 21, 2023              | June 16, 2023                     | June 30, 2023                                                        | September 15, 2023 |
+|   10.0.33<br>(The "May" release)    | March 3, 2023               | April 14, 2023                    | April 28, 2023                                                       | July 14, 2023      |
+|     10.0.32\*<br>(The "April" release)   | January 30, 2023            | March 17, 2023                    | March 31, 2023                                                       | June 9, 2023       |
+|     10.0.31<br>(The "February" release)     | October 14, 2022            | January 13, 2023                  | February 3, 2023                                                     | April 14, 2023     |
+|     10.0.30<br>(The "November" release)     | September 2, 2022           | October 21, 2022                  | November 4, 2022                                                     | March 17, 2023   |
+|     10.0.29\*<br>(The "October" release)  | August 1, 2022              | September 16, 2022                | September 30, 2022                                                   | January 13, 2023   |
+|     10.0.28<br>(The "August" release)     | May 27, 2022                | July 15, 2022                     | July 29, 2022                                                        | October 21, 2022   |
+|     10.0.27<br>(The "July" release)     | April 22, 2022              | June 17, 2022                     | July 1, 2022                                                         | September 16, 2022 |
+|     10.0.26<br>(The "May" release)    | March 4, 2022               | April 15, 2022                    | April 29, 2022                                                       | July 15, 2022      |
+|     10.0.25\*<br>(The "April" release)   | January 31, 2022            | March 18, 2022                    | April 1, 2022                                                        | June 10, 2022      |
+
+\* Denotes a major release.
+ 
 > [!NOTE]
 > The [Software lifecycle policy](../../dev-itpro/migration-upgrade/versions-update-policy.md) applies to customers enrolled in First Release and when the service update is made generally available.
 
-Sign up for the PEAP program by joining the Insider Program available at https://experience.dynamics.com. After your nomination has been accepted, join the program.
+> [!NOTE]
+> Beginning in 2022, we are making adjustments to end-of-year service update availability. Servicing for the major October release will be extended into January.  Similarly, servicing for the November release will be extended into March. The January release has been cancelled.
 
-Public previews are made available as a deployable package via the Shared Asset Library in Lifecycle Services. For more details, see [One Version service updates FAQ](one-version.md). 
+> [!Note]
+> The name of the month given to a release doesn't always indidicate when the auto-update may occur.  For example, you'll notice in the table above that the auto-update schedule for the "October" release in 2022 actually starts on September 30, 2022.
+
+Previews are made available as a deployable package via the Shared Asset Library in Lifecycle Services. For more details, see [One Version service updates FAQ](one-version.md). 
 
 ## Service update overview
 Service updates are continuous, touchless updates that provide new features and functionality. They eliminate the need to do expensive upgrades every few years. The service updates maintain backward compatibility, which means there is no need to ‘merge your code’.  We recommend leveraging tools such as the Regression suite automation tool (RSAT) for regression testing.
@@ -75,7 +84,7 @@ Service updates contain both application and platform changes that are critical 
 
 Each new release is designed and developed by the Dynamics 365 team. Any new release is first validated by the feature team, then by the Finance and Operations teams. During this time, extensive testing is done on various test topologies. A compatibility checker also runs tests to ensure backward compatibility. In addition, a [Release Validation Program](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR56j8lZs0FdAvwT75_WNFyxUQVdKVkVORjVDNloxTEkwS1JUSUxWN1pSWi4u) is available for customers to join. This program allows customers to share artifacts, such as databases and code, that is used for benchmarking and tested with automation to provide an additional layer of quality assurance.
 
-Preview Early Access Program (PEAP) is available to partners, customers, and ISV’s who opt in through the [PEAP Survey](https://aka.ms/PEAP).  As a participant in the PEAP program you will have first access and visibility into the preview for the upcoming service update.  The preview service update is used to validate customizations, learn about new features, and provide feedback to Microsoft.  During this phase, the service update must be deployed on a Dev/Test environment.  This release cannot be used in production. To join the PEAP program, sign up via the [PEAP Survey](https://aka.ms/PEAP). 
+Early access to the upcoming service update is available to all customers by taking advantage of its preview. The preview service update is used to validate customizations, learn about new features, and provide feedback to Microsoft.  During this phase, the service update must be deployed on a Dev/Test environment.  This release cannot be used in production. Once released, the package can be downloaded from the Shared Asset Library in LCS. You agree to the program terms at install time. Sign up for access to preview (formerly known as the Preview Early Access Program (PEAP)) is no longer required.
 
 The First Release program is open to all customers. Customers who join the First Release program will be the first, select group of customers to take the service update all the way to production.  Microsoft will manage the deployment of this service update to a UAT sandbox and then 7 days later will auto-deploy the update to production. Customers participating in this program have the additional benefit of having dedicated Microsoft engineers closely monitoring the environments for any issues after updates have been applied. To join First Release, sign up via the [First Release Survey](https://aka.ms/FirstReleaseFnO).  
 

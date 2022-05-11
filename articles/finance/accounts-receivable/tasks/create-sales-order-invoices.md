@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: SalesTableListPage, SalesEditLines,  SysQueryForm, SysRecurrence   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global

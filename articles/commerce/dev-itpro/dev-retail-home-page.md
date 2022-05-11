@@ -5,10 +5,10 @@ author: RobinARH
 ms.date: 08/26/2021
 ms.topic: article
 audience: Developer, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: "intro-internal"
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ---
@@ -25,7 +25,7 @@ This page lists the resources that are available for IT pros and developers who 
 
 ## Components and architecture
 
-- [Commerce components](/dynamics365/commerce/dev-itpro/commerce-architecture)
+- [Commerce components](/dynamics365/commerce/commerce-architecture)
 - [Modern POS (MPOS) architecture](retail-modern-pos-architecture.md)
 - [Headless commerce engine architecture](retail-server-architecture.md)
 - [Publish an online store channel](retail-online-store-publishing-architecture.md)
@@ -123,6 +123,7 @@ This page lists the resources that are available for IT pros and developers who 
 
 ## Retail SDK
 
+- [Migrate to the Commerce SDK](retail-sdk/migrate-commerce-sdk.md)
 - [Retail software development kit (SDK) architecture](retail-sdk/retail-sdk-overview.md)
 - [Set up a build pipeline for the independent-packaging SDK](build-pipeline.md)
 - [Create deployable packages](retail-sdk/retail-sdk-packaging.md)
@@ -161,6 +162,5 @@ This page lists the resources that are available for IT pros and developers who 
 - [Create Windows installers for payment connectors](create-windows-installer-payment-connector.md)
 - [Deploy payment connectors](deploy-payment-connector.md)
 - [Create Commerce payment packaging for Finance and Operations deployment](payment-connector-package.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

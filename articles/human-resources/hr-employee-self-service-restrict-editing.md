@@ -15,7 +15,7 @@ ms.search.form: EssWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -27,6 +27,9 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Restrict editing of personal information
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [applies to](../includes/applies-to-hr.md)]
 [!include [preview feature](./includes/preview-feature.md)]

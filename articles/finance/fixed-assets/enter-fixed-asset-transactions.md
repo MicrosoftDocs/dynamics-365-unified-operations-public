@@ -15,7 +15,7 @@ ms.search.form: AssetTable, PurchCreateOrder
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 23061
 ms.assetid: 338c495b-a4d8-461e-b85b-a83faf673730
@@ -30,7 +30,6 @@ ms.dyn365.ops.version: AX 7.0.0
 # Fixed asset transaction options
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic describes the different methods available for creating fixed asset transactions.
 

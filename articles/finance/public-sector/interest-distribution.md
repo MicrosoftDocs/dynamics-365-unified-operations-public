@@ -3,8 +3,8 @@
 
 title:  Set up interest distribution for cash accounts
 description: This topic explains how to set up your participating cash accounts on the Interest distribution rules page. You must complete this setup before you distribute the interest.
-author: velofog
-ms.date: 06/14/2019
+author: v-kiarnd
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -14,12 +14,12 @@ ms.technology:
 ms.search.form: PSNLedgerInterestDistributionRules, PSNLedgerInterestDistributionResults
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 ms.search.industry: public sector
-ms.author: roschlom
+ms.author: v-kiarnd
 ms.search.validFrom: 2019-6-30
 ms.dyn365.ops.version: 10.0.3
 
@@ -28,6 +28,7 @@ ms.dyn365.ops.version: 10.0.3
 # Set up interest distribution for cash accounts
 
 [!include[banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Your agency can allocate (distribute) the interest on a bank account to specific General ledger accounts, based on the average daily balance in cash accounts. You can use this process to generate an advanced ledger entry for the interest amounts. Alternatively, you can generate the interest amounts for review, without posting them.
 
@@ -71,6 +72,17 @@ Before you distribute the interest, you must set up your participating cash acco
     - In the **Posting definition** field, select the posting definition to use for the Advanced ledger entry.
 
 6. Select **OK**. A message shows the number of the Advanced ledger entry that is automatically created.
+
+## Pre-processing for increased performance
+
+If your organization frequently changes the chart of accounts or accounts that are related to cash accounts, the interest distribution process might take a significant amount of time to run. However, you can help reduce the time by using the **Use batch processing to update accounts for interest distribution** feature to set up pre-processing for those accounts. 
+ 
+Before you can use the feature, it must be turned on in your system. Admins can use the **[Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
+ 
+- **Module:** General ledger
+- **Feature name:** Use batch processing to update accounts for interest distribution
+ 
+When you turn the feature on, the system will set up two batch jobs. An initial batch job will be run once to pre-process the data and the rules that are used in the interest distribution process. A recurring batch job that is named **Run the scheduled preprocessing of ledger accounts used for interest distribution** will also be created. By default, the process will be rerun every evening. However, you can change the frequency in the batch jobs area.
 
 ## Calculated amounts
 

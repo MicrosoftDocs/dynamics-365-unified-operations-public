@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Configure export to Azure Data Lake
+title: Install Export to Azure Data Lake add-in
 description: This topic provides information about configuring the export to Azure Data Lake.
 author: MilindaV2
-ms.date: 09/02/2021
+ms.date: 11/22/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -27,22 +27,20 @@ ms.dyn365.ops.version: Platform Update 33
 
 ---
 
-# Configure export to Azure Data Lake
+# Install Export to Azure Data Lake add-in
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> The **Export to Data Lake** feature is in public preview in the United States, Canada, United Kingdom, Europe, South East Asia, East Asia, Australia, and Japan regions. If your Finance and Operations environment is in any of those regions, you can enable this feature in your environment by using Microsoft Dynamics Lifecycle Services (LCS).
+> The **Export to Data Lake** add-in is generally available in the United States, Canada, United Kingdom, Europe, South East Asia, East Asia, Australia, India, and Japan regions. If your Finance and Operations environment is in any of those regions, you will be able to install the **Export to Data Lake** add-in in it. Microsoft will enable this feature in additional regions in the future. You can join the [preview Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all) to stay in touch and ask questions that will help you understand the feature and upcoming improvements.
 >
-> **The feature may be temporarily unavailable during the preview period in your environment, or the feature may not be available in your region.**
-> 
-> In the coming months, Microsoft will enable this feature in additional regions, and also in additional environments. If your environment isn't in one of the previously listed regions, [complete the survey and let us know](https://aka.ms/FnODataLakePreviewSurvey). You can also join the [preview Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all). You can use the Yammer group to stay in contact and ask questions that will help you understand the feature. 
->
-> The **Export to Data Lake** feature isn't available in Tier-1 (developer) environments. You must have a cloud-based Tier-2 or higher sandbox environment to enable this feature. 
-> 
-> In your Tier-1 (developer) environment, you can prototype or plan the feature implementation by using [GitHub tools](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Analytics/AzureDataFactoryARMTemplates/SQLToADLSFullExport/ReadmeV2.md). The tools let you export data from your Tier-1 or sandbox environment into a storage account in the same format that is exported by the feature. 
-> 
-> **Use of this feature in production environments isn't supported while it's in preview.** You can't enable this feature in production environments. You can preview it only in your sandbox (Tier-2 or above) environments.
+> The **Export to Data Lake** feature isn't available in Tier-1 (developer) environments. You must have a cloud-based Tier-2 or higher sandbox environment to enable this feature. However, you can prototype the feature in a Tier-1 (developer) environment by using [GitHub tools](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Analytics/AzureDataFactoryARMTemplates/SQLToADLSFullExport/ReadmeV2.md). These tools let you export data from your Tier-1 or sandbox environment into a data lake in the same format that is exported by the feature. 
+
+Before you can use the **Export to Data Lake** feature in Finance and Operations environments, your administrator must install the **Export to Data Lake** add-in and connect your environment with a data lake. The **Export to Data Lake** add-in must be installed in your environment via LCS. You must contact your LCS administrator to perform this operation.
+
+The **Export to Data Lake** add-in requires connection information for your data lake. Therefore, before you install it, you must create a storage account (that is, an Azure data lake) if you haven't already created one. To create the required Azure resources, you might have to contact an administrator who can create Azure resources on your behalf. 
+
+The following step-by-step instructions will guide you through the process. 
 
 ## <a name="createServicePrincipal"></a> Create Service Principal for Microsoft Dynamics ERP Microservices
 
@@ -131,7 +129,7 @@ The Data Lake Storage account will be used to store data from your Finance and O
     - **Performance**: We recommend you select **Standard**.
     - **Account kind**: You must select **StorageV2**. In the **Advanced options** dialog box, you will see the option, **Data Lake storage Gen2**.
 
-3. On the **Advanced tab**, select **Data Lake storage Gen2** \> **Hierarchical namespaces**, and then select **Enabled**. If you disable this option, you may not be able to consume data that is written by Finance and Operations apps with services such as Power BI data flows and AI builder.
+3. On the **Advanced tab**, select **Data Lake storage Gen2** \> **Hierarchical namespaces**, and then select **Enabled**. If you disable this option, the **Export to Data lake** feature may fail with an error.
 4. Select **Review and create**. When the deployment is complete, the new resource will be shown in the Azure portal.
 5. In the Azure portal, select the storage account you created. Copy and save the <a name="storageaccount"></a>storage account name.
 
@@ -160,7 +158,7 @@ You need to grant your application permissions to read and write to the storage 
 
 ## <a name="createkeyvault"></a>Create a key vault
 
-A key vault is a secure way to share details such as storage account name to your Finance and Operations apps. Complete the following steps to create a key vault and a secret.
+A key vault is a secure way to share details such as storage account name to your Finance and Operations apps. Complete the following steps to create a key vault and a secret. We recommend that you create a key vault for the use of the Export to Data lake feature. We do not recommend using the same key vault to provide access to multiple services.
 
 1. In the Azure portal, select **Create a new resource** and then search for and select, **Key Vault**.
 2. In the **Create key vault** dialog box, in the **Location** field, select the datacenter where your environment is located.

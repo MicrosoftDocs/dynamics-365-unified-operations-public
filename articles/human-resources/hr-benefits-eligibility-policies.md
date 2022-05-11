@@ -15,7 +15,7 @@ ms.search.form: HcmBenefitEligibilityDetail, SysPolicyListPage, SysPolicySourceD
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 16441
 ms.assetid: 4ad0106f-5b07-4fd5-bc1a-5834fa9b198e
@@ -28,6 +28,9 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 ---
 
 # Benefit eligibility policies
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

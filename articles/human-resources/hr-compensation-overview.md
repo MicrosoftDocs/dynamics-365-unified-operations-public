@@ -5,7 +5,7 @@ title: Compensation plans
 description: This topic describes how to use compensation management to manage and process compensation plans.
 author: twheeloc
 ms.date: 08/25/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -15,9 +15,9 @@ ms.search.form: HcmCompensationLevel, HRCCompGrid, HRMCompFixedAction, HRMCompFi
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
 # ms.search.industry: 
@@ -28,6 +28,9 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 ---
 
 # Compensation plans
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

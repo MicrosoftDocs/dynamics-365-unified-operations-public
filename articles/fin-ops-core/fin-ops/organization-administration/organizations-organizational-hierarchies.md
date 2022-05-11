@@ -4,8 +4,8 @@
 title: Organizations and organizational hierarchies overview
 description: Organizational hierarchies represent the relationships between the organizations that make up your business.
 author: sericks007
-ms.date: 07/25/2019
-ms.topic: article
+ms.date: 01/03/2022
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -57,7 +57,7 @@ The types of operating units include cost centers, business units, value streams
 | Business unit       | A semi-autonomous operating unit that is created to meet strategic business objectives. | Used for financial reporting that is based on industries or product lines that the organization serves independently of legal entities. |
 | Value stream        | An operating unit that controls one or more production flows. | Commonly used in lean manufacturing to control the activities and flows that are required to supply a product or service to consumers. |
 | Department          | An operating unit that represents a category or functional part of an organization that performs a specific task, such as sales or accounting. | Used to report on functional areas. A department may have profit and loss responsibility, and may consist of a group of cost centers. |
-| Commerce channel      | An operating unit that represents a brick and mortar store, an online store or an online marketplace. | Used for the management and operational control of one or more stores within or across legal entities. |
+| Retail channel      | An operating unit that represents a brick and mortar store, an online store, or call center. | Used for the management and operational control of one or more stores within or across legal entities. |
 
 ### Teams
 
@@ -67,9 +67,19 @@ A team is an organization in which the members share a common responsibility, in
 
 Set up organizational hierarchies to view and report on your business from different perspectives. For example, you can set up a hierarchy of legal entities for tax, legal, or statutory reporting. Set up a hierarchy that is based on operating units to report financial information that is not legally required, but that is used for internal control. For example, you can create a purchasing hierarchy to control purchasing policies, rules, and business processes.
 
+> [!NOTE]
+> After an operating unit has been added to a hierarchy, the operating unit cannot be deleted. 
+
 Each hierarchy is assigned a purpose. The purpose of a hierarchy determines the types of organizations that can be included in the hierarchy. The purpose also determines which application scenarios a hierarchy can be used in.
 
 Organizations in a hierarchy can share parameters, policies, and transactions. An organization can inherit or override the parameters of its parent organization. However, shared master data, such as products and address books, applies to the whole organization and cannot be overridden for individual organizations. Creating organizations and hierarchies requires careful planning. For more information, see [Plan your organizational hierarchy](plan-organizational-hierarchy.md).
+
+## Additional resources
+- [Plan your organizational hierarchy](plan-organizational-hierarchy.md)
+- [Create an organization hierarchy](tasks/create-organization-hierarchy.md)
+- [Create a legal entity](tasks/create-legal-entity.md)
+- [Create an operating unit](tasks/create-operating-unit.md)
+
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,7 +4,7 @@
 title: Regulatory updates
 description: This topic provides a list of planned and released regulatory updates for Microsoft Dynamics 365 Finance.
 author: VStamberg
-ms.date: 07/15/2021
+ms.date: 04/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: vastrup
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10.0
 
@@ -31,53 +31,45 @@ ms.dyn365.ops.version: 10.0
 
 This topic lists the regulatory updates that are planned and released in Dynamics 365 Finance supported localizations. Delivery timelines might change, and projected functionality might be different or might not be released. For more information, see [Microsoft policy](https://go.microsoft.com/fwlink/p/?linkid=2007332). 
 
-Regulatory updates are features that are implemented to support new or changed country-specific legislation. For additional information about planned and released country-specific features, refer to the [Dynamics 365 and Power Platform release plans](/business-applications-release-notes/index).
+Regulatory updates are features that are implemented to support new or changed country-specific legislation. For more information about planned and released country-specific features, see [Dynamics 365 and Power Platform release plans](/business-applications-release-notes/index).
 
 Microsoft strives to implement new regulatory requirements as early as possible. The actual delivery date depends on the law announcement date, availability of the requirement details from the local authorities, the availability of the validation tools, and on the size and complexity of the change.
 
-We plan to deliver regulatory updates in One Version service updates that are released in time for customers to update and be ready for the enforcement date (for transactional regulatory updates), or for the first mandatory reporting deadline (for regulatory updates related to reporting). Customers and partners can preview the new regulatory updates in the Preview Early Adoption Program (PEAP).
+We plan to deliver regulatory updates in One Version service updates that are released in time for customers to update and be ready for the enforcement date (for transactional regulatory updates), or for the first mandatory reporting deadline (for regulatory updates related to reporting). Customers and partners can preview the new regulatory updates in the preview package provided for each service update.
 
 In case of late announcement dates, late availability of requirement details or validation tools, or exceptionally large and complex changes, it might not be possible to make a regulatory update available by the General Availability date of a monthly update. In these cases, the regulatory update will be shipped as hot fixes for relevant available monthly updates.
 
-Regulatory updates that are released as part of the monthly updated are indicated by release version only. Regulatory updates that are delivered either as hot fixes or as part of a release preview can be identified through the abbreviations HF and PEAP, respectively. 
+Regulatory updates that are released as part of the monthly updated are indicated by release version only. Regulatory updates that are delivered either as hot fixes or as part of a release preview can be identified through the abbreviations HF and Preview, respectively. 
 
 For the latest regulatory update plans, refer to the following table.   
 
 |Country|Release date|Release version|Regulatory update|
 |--------------------|---------------|-------|-------| 
-|      Australia         |   June 2021      | 10.0.21      |   AU - Payment Times Reporting Bill 2020 for Microsoft Dynamics 365 Finance   |
-|      Brazil         |   May 2021, February 2021      | 10.0.20, 10.0.19      |   NF-e NT2020.006  - Identification of the digital platform intermediary (Layout and validation rules updates)   |
-|      Brazil         |   March 2021         | 10.0.19         |    SPED REINF layout 1.5.1  |
-|      Brazil         |   April 2021         | 10.0.20        |    SPED ECD Layout 9  |
-|      Brazil         |   May 2021         | 10.0.20         |    SPED Contributions - Version Guide 1.34  |
-|      Brazil         |   June 2021         | 10.0.21         |    SPED ECF - Layout 7  |
-|      Brazil         |   May 2021         | 10.0.20         |    NF-e NT2020.005  v1.10 - Validation rules and updates PED ECF - Layout 7  |
-|      Brazil         |   May 2021         | 10.0.21         |    SPED Reinf 1.5.1 - Changes in webservice method of EVENT 5011  |
-|      France        |   April 2021       | 10.0.20      |   French data archiving export (FEC) enhancement  |
-|      Germany        |   March 2021       | 10.0.19      |   GDPDU extensions for Fixed Assets table and transactions  |
-|      Germany        |   April 2021       | 10.0.20HF      |   Changes in E-invoicing format (xRechnung) in Germany since 2021  |
-|      India         |   March 2021      | 10.0.19      |   GST e-invoices: Export orders, Deemed export, SEZ  |
-|      India         |   March 2021      | 10.0.19      |   Dynamics QR Code on B2C invoice  |
-|      India         |   June 2021      | 10.0.21      |   New API version for e-invoice (v.1.04)  |
-|      Italy         |   March 2021      | 10.0.19      |   Invoices communication (Esterometro) format changes v.2.1.1  |
-|      Italy        |   May 2021      | 10.0.19      |   Retail - Fiscal printer integration sample update to support XML RT 2.0  |
-|      Italy         |   March 2021      | 10.0.19      |   Retail - Enable retail-specific invoices violiting chronological posting  |
-|      Italy         |   February 2021      | 10.0.19      |   Unique certification - 2021  |
-|      Oman         |   June 2021      | 10.0.21      |   VAT declaration  |
-|      Poland          |   June 2021     | 10.0.21     |   JPK_V7M (VDEK) - Procedural markings enhancement |
-|      Poland          |   July 2021     | 10.0.21     |   JPK-V7M new rules for completing starting from July 2021 |
-|      Russia          |   March 2021     | 10.0.19    |   The 2020 property tax declaration will have to indicate the average annual value of movable fixed assets|
-|      Russia          |   March 2021     | 10.0.19HF    |   Profit tax declaration version 5.09 for 2020 reporting|
-|      Russia          |   March 2021     | 10.0.19    |   Government decree N 2200 21.12.2020 application 4 new forma for transport invoice is required|
-|      Russia          |   June 2021     | 10.0.21HF, 10.0.20HF, 10.0.19 HF    |   Changes in printable layouts of invoices-factures and corrective factures|
-|      Spain          |   July 2021     | 10.0.21    |    OSS / IOSS scenario - ClaveRegimenEspecialOTrascendencia = 17- KB4623605|
-|      Sweden          |   July 2021     | 10.0.21    |    VAT declaration format including reverse charge amounts|
-|      United Arab Emirates   |   May 2021     | 10.0.20    |   Posting payment journal with postdated checks to bank account |
+|      Brazil         |   December 2021         | 10.0.25         |    SPED Fiscal layout 2022  |
+|      Brazil         |   March 2022    | 10.0.25HF, 10.0.26HF, 10.0.27        |    ICMS-DIFAL collection in operations aimed at non-tax taxpayers (Complementary Law No. 190/22)  |
+|      Brazil         |   March 2022         | 10.0.26HF         |    Sped Fiscal - New fields in the record C500 (34-40) for incoming fiscal documents  |
+|      Brazil         |   March 2022         | 10.0.27         |    NF-e NT2021.004  v1.00 - Layout and validation rules updates  |
+|      Brazil         |   March 2022         | 10.0.27         |    NF-e NT2021.004  v1.00 - Layout and validation rules updates - Retail  |
+|      Denmark         |   January 2022  | 10.0.25HF         |    VAT declaration preview in Excel |
+|      Finland         |   January 2022  | 10.0.26         |    VAT declaration in TXT and preview in Excel |
+|      France   |   November 2021 | 10.0.25         |    French data archiving export (FEC) - "Missing numbers justification" annex |
+|      Italy         |   February 2022 | 10.0.25HF, 10.0.26| Unique Certification - 2022 in Dynamics 365 Finance  |
+|      Lithuania|   February 2022 | 10.0.25HF, 10.0.26HF, 10.0.27 | i.SAF changes from 2022-01-01 in Dynamics 365 Finance  |
+|      Malaysia|   February 2022 |10.0.26HF | SST-02 tax return declaration. Changes in boxes  |
+|      Mexico         |   January 2022      | 10.0.26      |   MX - CFDI version 4.0 (Cancelation)  |
+|      Mexico         |   March 2022      | 10.0.25, 10.0.26, 10.0.26      |   CFDI formats version 4.0 (invoices and payments)  |
+|      Mexico         |   February 2022      | 10.0.27      |   As of January 1, 2022, version 4.0 of the CFDI comes into force, with a coexistence period between version 3.3 and version 4.0, which runs from January 1 to June 30, 2022.  |
+|      Mexico         |   March 2022      | 10.0.25, 10.0.26, 10.0.27      |   CFDI formats version 4.0 (withholding)  |
+|      Poland          |   April 2022     | 10.0.25HF, 10.0.26HF, 10.0.27HF     |   JPK_FA version 4 starting from April 1, 2022JPK_V7M - new schema version from January 2022 |
+|      Russia          |   January 2022     | 10.0.25    |   Enable Electronic reporting (ER) destination for storing Russian accounting documents (primary documents and accounting reports)|
+|      Russia          |   December 2021     | 10.0.25    |   Integration Fixed asset (Russia) module with Asset management module|
+|      Russia          |   March - April 2022     | 10.0.25, 10.0.26    |  New format of transport invoice (Government decree N 2116 30.11.2021)|
+|      Spain      |   March 2022| 10.0.25HF, 10.0.26HF, 10.0.27 | VAT declaration Model 303 changes January 1, 2022 in Dynamics 365 Finance|
 
 
 
 ## Additional resources
-- Find all planned and released regulatory updates on [Lifecycle Service - Issue search](https://lcs.dynamics.com/Logon/Index) (sign in required).
+- For more information about all planned and released country-specific regulatory updates, see [Search for country-specific regulatory updates](search-for-regulatory-updates.md). (Sign-in is required.)
 - For a list of the localizations that are supported, see the [International availability guide](https://aka.ms/dynamics_365_international_availability_deck).
 
 

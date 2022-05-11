@@ -3,7 +3,7 @@
  
 title: Set up hub accessorial charges and accessorial masters
 description: This procedure shows how to create an accessorial master for a hub and use that master to create a hub accessorial charge. 
-author: Henrikan
+author: Weijiesa
 ms.date: 11/11/2016
 ms.topic: business-process 
 ms.prod:  
@@ -18,7 +18,7 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: henrikan
+ms.author: weijiesa
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---

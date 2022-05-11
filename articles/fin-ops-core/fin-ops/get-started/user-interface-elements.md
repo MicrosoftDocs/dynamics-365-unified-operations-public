@@ -26,6 +26,9 @@ ms.dyn365.ops.version: 7.3
 
 # User interface elements
 
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
 This topic describes the user interface (UI) elements used in the app. Before users can navigate the interface, it's important to know the names and functions of the elements that make up the interface.
 
 ## Overview

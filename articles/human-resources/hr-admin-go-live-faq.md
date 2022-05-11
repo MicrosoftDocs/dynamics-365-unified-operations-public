@@ -16,7 +16,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -30,9 +30,12 @@ ms.dyn365.ops.version: Human Resources
 
 # Go-live FAQ 
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 This topic lists frequently asked questions about how to go live with a Dynamics 365 Human Resources implementation project. 
 

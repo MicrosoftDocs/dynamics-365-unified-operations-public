@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
 This article describes how to view field descriptions and how to use the Field descriptions page to export descriptions.
 
 Some of the more complex fields have field descriptions. These descriptions appear when you hover over a field. You can also view and export descriptions on the **Field descriptions** page.

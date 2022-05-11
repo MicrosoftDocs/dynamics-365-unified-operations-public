@@ -3,7 +3,7 @@
 
 title: Credit limit adjustments
 description: This topic explains how to set up and add credit limit adjustments.
-author: mikefalkner
+author: JodiChristiansen
 ms.date: 09/04/2019
 ms.topic: article
 ms.prod: 
@@ -15,13 +15,13 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschloma
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 
@@ -35,7 +35,7 @@ Credit limit adjustments let credit managers update the credit limits and expira
 
 ## Set up credit limit adjustments
 
-You can create entries in the Credit limit adjustment journal on the **Credit limit adjustment** page (**Credit management \> Credit limit adjustments \> Credit limit adjustments**).
+You can create entries in the **Credit limit adjustment** journal on the **Credit limit adjustment** page (**Credit management \> Credit limit adjustments \> Credit limit adjustments**).
 
 1. Select **New**. A new group of entries is created that has a credit limit adjustment number.
 2. Select the credit limit adjustment type:

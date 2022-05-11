@@ -15,7 +15,7 @@ ms.search.form: HRMParameters, EssWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 51941
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
@@ -29,6 +29,9 @@ ms.dyn365.ops.version: Human Resources
 
 # Create custom links in Manager self service
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 You can add custom links on the **My team** tab in **Manager self service**. This feature lets you provide quick access to important information. It's similar to adding custom links in the **My information** tab in **Employee self service**.
@@ -41,11 +44,11 @@ To use this feature, enable **Custom links in Manager self service** in the **Fe
 
 1. In **Human Resources parameters**, select **Manager self service**.
 
-2. Under **Set up links for Managers**, you can add, edit, or remove a link. You can also group the links together so they display in a group in Manager self service.
+2. Under **Set up links for Managers**, you can add, edit, or remove a link. You can also group the links together so they display in a group in **Manager self service**.
 
    ![Set up custom links in Manager self-service.](./media/hr-employee-manager-self-service-custom-links-setup.png)
 
-3. To see the links, go to the **My team** tab in Employee self service.
+3. To see the links, go to the **My team** tab in **Employee self service**.
 
    ![View custom links in Manager self-service.](./media/hr-employee-manager-self-service-custom-links-view.png)
 

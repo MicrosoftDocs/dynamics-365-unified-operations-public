@@ -4,7 +4,7 @@
 title: Immediate Supply of Information on VAT (Suministro Inmediato de Información del IVA, SII)
 description: This topic describes how to set up and use Dynamics 365 Finance to interoperate with the SII system of Spain.
 author: liza-golub
-ms.date: 10/13/2021
+ms.date: 11/09/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -152,12 +152,12 @@ For more information about how to set up Key Vault, see [Setting up Azure Key Va
 
 | **Web service name** | **Description**                                                                                                                                                                                                                 | **Testing internet address**                               |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------|
-| Cust invoice         | This web service is provided by AEAT. It's used to submit information about issued invoices, and it sends back a response that contains information about invoice processing on the SII system side.                            | `https://www7.aeat.es/wlpl/SSII-FACT/ws/fe/SiiFactFEV1SOAP`  |
-| Vend invoice         | This web service is provided by AEAT. It's used to submit information about received invoices, and it sends back a response that contains information about invoice processing on the SII system side.                          | `https://www7.aeat.es/wlpl/SSII-FACT/ws/fr/SiiFactFRV1SOAP`  |
-| Intra-community      | This web service is provided by AEAT. It's used to submit information about intra-community invoices, and it sends back a response that contains information about invoice processing on the SII system side.                   | `https://www7.aeat.es/wlpl/SSII-FACT/ws/oi/SiiFactOIV1SOAP`  |
-| Cust payment         | This web service is provided by AEAT. It's used to submit information about payments from customers for specific invoice types, and it sends back a response that contains information about processing on the SII system side. | `https://www7.aeat.es/wlpl/SSII-FACT/ws/fe/SiiFactCOBV1SOAP` |
-| Vend payment         | This web service is provided by AEAT. It's used to submit information about payments to vendors for specific invoice types, and it sends back a response that contains information about processing on the SII system side.     | `https://www7.aeat.es/wlpl/SSII-FACT/ws/fr/SiiFactPAGV1SOAP` |
-| CollectionInCash     | This web service is provided by AEAT. It's used to submit information about payment transactions in cash from customers, and it sends back a response that contains information about processing on the SII system side.        | `https://www7.aeat.es/wlpl/SSII-FACT/ws/pm/SiiFactCMV1SOAP`  |
+| Cust invoice         | This web service is provided by AEAT. It's used to submit information about issued invoices, and it sends back a response that contains information about invoice processing on the SII system side.                            | `https://prewww1.aeat.es/wlpl/SSII-FACT/ws/fe/SiiFactFEV1SOAP`  |
+| Vend invoice         | This web service is provided by AEAT. It's used to submit information about received invoices, and it sends back a response that contains information about invoice processing on the SII system side.                          | `https://prewww1.aeat.es/wlpl/SSII-FACT/ws/fr/SiiFactFRV1SOAP`  |
+| Intra-community      | This web service is provided by AEAT. It's used to submit information about intra-community invoices, and it sends back a response that contains information about invoice processing on the SII system side.                   | `https://prewww1.aeat.es/wlpl/SSII-FACT/ws/oi/SiiFactOIV1SOAP`  |
+| Cust payment         | This web service is provided by AEAT. It's used to submit information about payments from customers for specific invoice types, and it sends back a response that contains information about processing on the SII system side. | `https://prewww1.aeat.es/wlpl/SSII-FACT/ws/fe/SiiFactCOBV1SOAP` |
+| Vend payment         | This web service is provided by AEAT. It's used to submit information about payments to vendors for specific invoice types, and it sends back a response that contains information about processing on the SII system side.     | `https://prewww1.aeat.es/wlpl/SSII-FACT/ws/fr/SiiFactPAGV1SOAP` |
+| CollectionInCash     | This web service is provided by AEAT. It's used to submit information about payment transactions in cash from customers, and it sends back a response that contains information about processing on the SII system side.        | `https://prewww1.aeat.es/wlpl/SSII-FACT/ws/pm/SiiFactCMV1SOAP`  |
 
 Internet addresses are subject to change by AEAT. Therefore, we recommend that you check for actual internet addresses on the [official website of the SII system](https://www.agenciatributaria.es/AEAT.internet/en_gb/SII.html). The official documentation also has information about the actual *production* internet addresses that you should set up.
 
@@ -626,9 +626,12 @@ As of Finance version 10.0.22, if you're using the [Tax Calculation](global-tax-
 After the **Support multiple VAT registration numbers** feature is enabled, provide the following setup so that you can report to the SII system from a legal entity with a primary address outside of Spain.
 
 1. In the **Feature management** workspace, enable the **Sales tax declaration for multiple VAT registrations** feature.
-2. On the **Tax calculation parameters** page, on the **Multiple VAT registrations** tab, select the **VAT delcarion** check box.
+2. On the **Tax calculation parameters** page, on the **Multiple VAT registrations** tab, select the **VAT declaration** check box.
 3. Define the VAT registration number of the company from the name that you will be reporting to SII system of Spain in the **Company Tax Id** field in the [**SIIGenerateItems executable class**](#siigenerateitems) parameters.
 4. Specify the **Transfer order history** data source on **Records to include** FastTab of the [**SIIGenerateItems executable class**](#siigenerateitems) parameters.
+
+> [!NOTE]
+> When the **Support multiple VAT registration numbers** and **Sales tax declaration for multiple VAT registrations** features are enabled, the SII system of Spain collects the value in the **NombreRazon** field from the **Name or description** field on the **Manage addresses** page instead of from the name of the legal entity.
 
 ## Use EM functionality to report to the SII system
 

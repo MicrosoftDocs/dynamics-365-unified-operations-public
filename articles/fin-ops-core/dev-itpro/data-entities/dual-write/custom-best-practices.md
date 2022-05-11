@@ -5,7 +5,7 @@ author: RamaKrishnamoorthy
 ms.date: 09/15/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2021-09-15
@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Dual-write provides out-of-box maps for some business processes. However, there might be scenarios where you need additional fields, maps, or transformations. The dual-write platform is extensible. You can create custom maps and extend existing maps with custom fields to sync data between Finance and Operations apps and Microsoft Dataverse. This topic provides guidance and best practices for these customizations.
 
@@ -59,7 +59,7 @@ In some situations, the entities exist in both environments, but create and upda
 
 If the entities don't exist in either environment, you can create tables in both environments and then create the app by following these steps.
 
-1. In Dataverse, create a new table that has all the required fields. Follow the steps in [Create a custom table](/modules/create-manage-entities/2-custom-entity). If the table should store legal entity–specific data, be sure to add a lookup field to **cdm\_companies** in the new Dataverse table. If the table stores global data, a field for the company isn't required in the Dataverse table.
+1. In Dataverse, create a new table that has all the required fields. Follow the steps in [Create a custom table](/powerapps/maker/data-platform/data-platform-create-entity). If the table should store legal entity–specific data, be sure to add a lookup field to **cdm\_companies** in the new Dataverse table. If the table stores global data, a field for the company isn't required in the Dataverse table.
 2. In the Finance and Operations app, create a new entity that has all the required fields. Make sure that the entity is enabled for Data management and public, so that it can be consumed by OData. For more information about how to create a new entity, see [Build and consume data entities](../build-consuming-data-entities.md).
 3. To enable table maps for dual-write, define an alternative key in the Dataverse table. The value of the alternative key in Dataverse must match the key that is defined in the Finance and Operations app. For example, in the Finance and Operations app, **CustomerAccount** is the key for the **Account** table, as shown in the following illustration.
 

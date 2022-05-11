@@ -3,7 +3,7 @@
 
 title: Replenishment over location capacity
 description: This topic provides information about the Replenishment over location capacity feature. This feature enables all replenishment work that will be required for the day to be created and manages availability of that replenishment work to ensure that the picking location neither runs out of inventory nor goes above capacity. 
-author: mirzaab
+author: Mirzaab
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
@@ -36,7 +36,7 @@ The feature enables more replenishment work to be created than will fit in a loc
 
 To make this feature available, turn on the following features in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (in this order):
 
-1. Organization-wide work blocking
+1. Organization-wide work blocking (As of Supply Chain Management version 10.0.21, this feature is mandatory, so it is turned on by default and can't be turned off again.)
 1. Replenishment over location capacity
 
 ## Set up the feature for the example scenario

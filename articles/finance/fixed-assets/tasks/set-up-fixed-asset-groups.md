@@ -3,7 +3,7 @@
  
 title: Set up fixed asset groups
 description: This topic explains how to create a new fixed asset group. 
-author: saraschi2
+author: moaamer
 ms.date: 08/02/2019
 ms.topic: business-process 
 ms.prod:  
@@ -14,12 +14,12 @@ ms.technology:
 ms.search.form: AssetGroup, AssetGroupBookSetup   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---

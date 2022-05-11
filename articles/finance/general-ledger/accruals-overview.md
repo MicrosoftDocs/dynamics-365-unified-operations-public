@@ -2,10 +2,10 @@
 # required metadata
 
 title: Accruals overview
-description: This article describes accruals, and provides information about how to set them up and create transactions.
+description: This topic describes accruals, and provides information about how to set them up and create transactions.
 author: aprilolson
 ms.date: 01/11/2018
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -15,7 +15,7 @@ ms.search.form: LedgerAccuralTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: ["14131", "intro-internal"]
 ms.assetid: 0489b59a-37a7-4a78-87bf-4b597e9efad9
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article describes accruals, and provides information about how to set them up and create transactions.
+This topic describes accruals, and provides information about how to set them up and create transactions.
 
 Accruals are used in accrual accounting to track revenue that is recognized in the period that it's earned in, not when payment is received, and to track expenses (costs) that are recognized when they occur, not when payment is made.
 

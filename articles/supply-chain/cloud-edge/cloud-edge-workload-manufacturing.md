@@ -3,7 +3,7 @@
 
 title: Manufacturing execution workloads for cloud and edge scale units
 description: This topic describes how manufacturing execution workloads work with cloud and edge scale units.
-author: cabeln
+author: johanhoffmann
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid:
 ms.search.region: global
 ms.search.industry: SCM
-ms.author: cabeln
+ms.author: johanho
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
 ---
@@ -30,9 +30,12 @@ ms.dyn365.ops.version: 10.0.15
 
 [!include [banner](../includes/banner.md)]
 
-> [!WARNING]
-> The manufacturing execution workload is available in preview at this point in time.
+> [!IMPORTANT]
+> The manufacturing execution workload is currently available only in preview.
+>
 > Some business functionality isn't fully supported in the public preview when workload scale units are used.
+>
+> You can't run the preview manufacturing execution workload on a scale unit where the warehouse execution workload is also installed.
 
 In manufacturing execution, scale units deliver the following capabilities:
 
@@ -131,6 +134,22 @@ In the current release, report as finished and putaway operations (for finished 
 ### Customize report as finished and putaway functionality
 
  -->
+
+## Enable and use the start operation on a scale unit
+
+In the current release, the start operation for production and batch orders is supported by the [warehouse execution workload](cloud-edge-workload-warehousing.md) (not the manufacturing execution workload). Therefore, to use this functionality when you're connected to a scale unit, you must complete these tasks:
+
+- Install both the warehouse execution workload and the manufacturing execution workload on your scale unit.
+- Enable the *Start production order on warehouse management workload for the cloud and edge scale unit* feature in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- Use the Warehouse Management mobile app to start the production or batch order.
+
+## Enable and use material consumption on a scale unit
+
+In the current release, the flow in the Warehouse Management mobile app for registering material consumption is supported by the [warehouse execution workload](cloud-edge-workload-warehousing.md) (not the manufacturing execution workload). Therefore, to use this functionality when you're connected to a scale unit, you must complete these tasks:
+
+- Install both the warehouse execution workload and the manufacturing execution workload on your scale unit.
+- Enable the *Register material consumption on the mobile app on a scale unit* feature in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- Use the Warehouse Management mobile app to register material consumption.
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 

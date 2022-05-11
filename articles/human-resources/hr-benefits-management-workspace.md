@@ -4,7 +4,7 @@
 title: Benefits management workspace
 description: This topic describes the Benefits management workspace in Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 09/21/2021
+ms.date: 01/03/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -28,6 +28,9 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Benefits management workspace
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [applies to](../includes/applies-to-hr.md)]
 
@@ -99,7 +102,7 @@ To view a different benefits period, select it from the **Period** drop-down lis
 You can view action items by selecting either a tile or a tab. If you select a tab, you can view and select workers on the workspace page.
 The **Open enrollment** tab provides key metrics for the open enrollment process. 
 
-Information regarding open enrollment will be displayed 30 days before the **Enrollment start date**. This is defined in the **Periods** setup in **Benefits management** > **Links** > **Periods**, in the **Enrollment start date** field.  To change this setting, go to **Human Resource Shared parameters** > **Benefits management** > **Open enrollment options** and update the **Number of** field.  
+Information regarding open enrollment will be displayed 30 days before the **Enrollment start date**. This is defined in the **Periods** setup in **Benefits management** > **Links** > **Periods**, in the **Enrollment start date** field.  To change this setting, go to **Human resources shared parameters** > **Benefits management** > **Open enrollment options** and update the **Number of** field.  
 
 The following information is available on the **Open enrollment** tab:
  - Employees that have not started the open enrollment process
@@ -114,11 +117,11 @@ The following information is available on the **Open enrollment** tab:
   > [!NOTE]
   > If you do not want to track the open enrollment progress for a **Plan type**, you can exclude it by going to **Benefits management** > **Links** > **Employee self service parameters** > **Benefit plans tile setup** and updating the **Track open enrollment progress** field.  For example, you may have plans created where **Plan type** = **Other**. These plans might be optional plans that you don’t want to track enrollment progress for. If you do not select this plan type, plans of these types will be ignored when tracking enrollment progress or completion on the **Open enrollment** tab. This setting applies to the plan type that is selected for all periods and legal entities.
 
-- **In progress** – The **In progress** tile gives a count of employees that have elections in progress. The **In progress** tile is a filtered list that shows only employees that have at least one plan that is waived or selected. Mandatory plans are ignored and not included because they are selected by default for the employee. You can drill back from this tile to see the selected and waived plans on the **Worker Benefit Plans Bulk Update** page.
+- **In progress** – The **In progress** tile gives a count of employees that have elections in progress. The **In progress** tile is a filtered list that shows only employees that have at least one plan that is waived or selected. Mandatory plans are ignored and not included because they are selected by default for the employee. You can drill back from this tile to see the selected and waived plans on the **Worker benefit plans bulk update** page.
 
 - **Enrolled in benefits** – The **Enrolled in benefits** tile gives a count of employees that are fully enrolled in benefits. The **Enrolled in benefits** tile is a filtered list that shows employees who have either selected or waived all plans. The query will exclude plans that are not being tracked for open enrollment on the **Employee self service parameters** page. You can drill back from this tile to see a list of employees on the **Worker benefit plans** page.
 
-- **Unconfirmed selections** – The **Unconfirmed selections** tile shows a count of employees that have plans that are selected or waived and need to be confirmed. You can drill back from this tile to display the **Worker Benefit Plans Bulk Update** page.
+- **Unconfirmed selections** – The **Unconfirmed selections** tile shows a count of employees that have plans that are selected or waived and need to be confirmed. You can drill back from this tile to display the **Worker benefit plans bulk update** page.
 
 **Activity**
 

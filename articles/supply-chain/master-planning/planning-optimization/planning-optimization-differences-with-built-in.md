@@ -1,13 +1,13 @@
 ---
 title: Differences between built-in master planning and Planning Optimization
 description: This topic lists features that Planning Optimization doesn't yet support and that aren't listed on the Planning Optimization fit analysis page.
-author: ChristianRytt
+author: t-benebo
 ms.date: 07/30/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
 ---
@@ -31,6 +31,8 @@ Planning Optimization results might differ from results from the built-in master
 | Safety stock fulfillment | Planning Optimization always uses the *Today's date + procurement time* option for the **Fulfill minimum** field on the **Item coverage** page. This helps to prevent unwanted planned orders and other issues because if the procurement time isn't included for safety stock, planned orders that are created for low on-hand inventory would always be delayed because of the lead time. |
 | Safety stock pegging and net requirements | The *Safety stock* requirement type isn't included and isn't displayed on the **Net requirements** page. Safety stock doesn't represent demand and doesn't have a requirement date associated with it. Instead, it sets a constraint on how much inventory must be present at all times. However, the **Minimum** field value is still taken into account when calculating planned orders during master planning. We suggest that you inspect the **Accumulated quantity** column on the **Net requirements** page to see that this value was considered. |
 | Transport calendars | The value in the **Transport calendar** column on the **Modes of delivery** page is ignored. |
+| Min/max coverage code with no values| With the built-in planning engine, when you use a min/max coverage code where no minimum or maximum values are set, the planning engine treats the coverage code as a requirement and creates one order for each requirement. With Planning Optimization, the system will create one order per day to cover the full amount for that day.  |
+| Net requirements and manually created planned orders | With the built-in planning engine, manually created supply orders for an item automatically appear among the net requirements for that item. For example, when creating a purchase order from a sales order, the purchase order appears on the **Net requirements** page without requiring any prior actions. This is because the built-in planning engine logs inventory transactions in the `inventLogTTS` table and shows changes on the **Net requirements** page for dynamic plans. However, with Planning Optimization, manually created orders won't appear among the net requirements of an item until Planning Optimization is run (using a plan that includes the item), or until you select **Update \> Master planning** on the Action Pane on the **Net requirements** page, which will run master planning for the item. For more information about how to work with the **Net requirements** page, see [Net requirements and pegging information with Planning Optimization](net-requirements.md). |
 
 ## Additional resources
 

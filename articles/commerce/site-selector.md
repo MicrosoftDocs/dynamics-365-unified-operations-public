@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Site selector module
-description: This topic covers the site selector module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
+title: Site picker module
+description: This topic covers the site picker module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
-ms.date: 10/20/2020
+ms.date: 05/04/2022
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -26,33 +26,46 @@ ms.dyn365.ops.version: Release 10.0.13
 
 ---
 
-# Site selector module
+# Site picker module
 
 [!include [banner](includes/banner.md)]
 
-This topic covers the site selector module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
+This topic covers the site picker module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 
-When a business has different sites across markets, regions, and locales, site users need an easy way to switch between sites and select their preferred shopping site. To accommodate this scenario, the site selector module lets users browse across multiple sites.
+When a business has different sites across markets, regions, and locales, site users need an easy way to switch between sites and select their preferred shopping site. To accommodate this scenario, the site picker module lets users browse across multiple sites. A site picker is also recommended when [geo detection and redirection](geo-detection-redirection.md) have been implemented for your e-commerce site, so that customers have a way to override the site preference that they indicate by using the [country/region picker](country-region-picker-module.md) module. 
 
-The site selector module must be configured with the list of sites (markets, regions, or locales) that site users can browse.
+The site picker module must be configured with the list of sites (markets, regions, or locales) that site users can browse. The following illustration shows an example of a site picker module that is featured in the header of a site page.
 
-> [!NOTE]
-> The site selector module is available in the Dynamics 365 Commerce 10.0.14 release.
+![Example of a site picker module in the header of a site page.](./media/ecommerce-sitepicker.PNG)
 
-The following illustration shows an example of a site selector module that is featured in the header of a site page.
-
-![Example of a site selector module in the header of a site page.](./media/ecommerce-sitepicker.PNG)
-
-## Site selector module properties
+## Site picker module properties
 
 | Property name | Value                 | Description |
 |---------------|-----------------------|-------------|
 | Heading       | Text                  | The heading for the module. |
 | Site options  | Name, Image, URL      | This property specifies a name, a link to the site's home page, and an optional image to show for each site that is included in the module. The image can be a flag, or some representation of a market, region, or locale. |
 
-## Add a site selector module to a page
+## Add a site picker module to a page
 
-The site selector module can be added to the [Header module](author-header-module.md) under the site selector slot. After it's added, you can define the module heading and site options.
+The site picker module can be added to the **Site picker** slot of the [header module](author-header-module.md). After a site picker module is added, you can define the module heading and site options. Generally, a header module is contained in a header fragment that can be shared across e-commerce pages for a site. 
+
+To add the site picker module to a header module, follow these steps.
+
+1. In the **Site picker** slot of the header fragment's header module, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Select modules** dialog box, add a **Site picker** module, and then select **OK**.
+1. In the **Site picker** properties pane, select **Add site options list**. An editable **Site options list** option appears.
+1. Select **Site options list**. The **Site options list** dialog box appears.
+1. Under **Site name**, enter the site name text that will be shown in the site picker drop-down list.
+1. Under **Site redirect URL**, select **Add a link**. The **Add a link** flyout pane appears.
+1. In the **Add a link** flyout pane, select **Custom page**, and then select **Next**.
+1. From the site URL list, select the URL with the path you created when adding the channel to the site (for example, `www.adventure-works.com/fr-ca`), and then select **Apply**.
+1. Select **OK**.
+1. Select **Save**, and then select **Finish editing**.
+1. Select **Publish** to publish the page.
+
+In the following example, the site picker module has been added to the **Site picker** slot of a header module that is contained in a header fragment that is named **HeaderContainer**.
+
+![Example of a site picker module in a header fragment.](./media/ecommerce-sitepicker-2.png)
 
 ## Additional resources
 

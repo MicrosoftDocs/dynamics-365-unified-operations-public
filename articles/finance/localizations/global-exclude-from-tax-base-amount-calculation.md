@@ -16,7 +16,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region:
@@ -30,8 +30,6 @@ ms.dyn365.ops.version: AX 10.0.21
 
 [!include [banner](../includes/banner.md)]
 
-
-[!include [banner](../includes/preview-banner.md)]
 
 This topic provides information about how the **Exclude from base amount calculation** parameter of a tax code is used.
 

@@ -2,8 +2,8 @@
 # required metadata
 
 title: Whole amount and Interval calculation options for sales tax codes
-description: This article explains the options for the Calculation method field on sales tax codes and how sales tax is calculated for intervals and whole amounts.
-author: ShylaThompson
+description: This topic explains the options for the Calculation method field on sales tax codes and how sales tax is calculated for intervals and whole amounts.
+author: kailiang
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -15,14 +15,14 @@ ms.search.form: TaxData, TaxTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 
 # ms.tgt_pltfrm: 
 ms.custom: 5624
 ms.assetid: 96166db4-b7ca-470b-aeb7-0a66fe0554c4
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: kailiang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -32,9 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article explains the options for the Calculation method field on sales tax codes and how sales tax is calculated for intervals and whole amounts.
+This topic explains the options for the **Calculation method** field on sales tax codes and how sales tax is calculated for intervals and whole amounts.
 
-You can set up a sales tax code to be calculated based on a whole amount or an interval amount. In the Sales tax codes page, use the Calculation method field on the Calculation FastTab to select how to calculate a sales tax code.
+You can set up a sales tax code to be calculated based on a whole amount or an interval amount. On the **Sales tax codes** page, use the **Calculation method** field on the **Calculation** FastTab to select the calculation method for a sales tax code.
 - Whole amount – The tax rate is applied to the whole taxable amount.
 - Interval – The taxable amount is divided into parts, each of which falls in a range that has a specific sales tax rate. The part of the amount that falls in a given interval is taxed according to the tax rate for that interval. The sales tax is the sum of the tax amounts that are calculated for each amount interval.
   > [!NOTE]                                                                                                                              

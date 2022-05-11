@@ -22,7 +22,7 @@ This topic provides information about the composite data types that are supporte
 
 The *class* data type refers to a public application class. In ER, it's represented as a [*record*](#record) that contains a separate field for every public method of the referenced class. When the call of the method is parameterized, you must also specify the required arguments of the appropriate types in an ER expression that is configured to call the method.
 
-In ER [mapping](general-electronic-reporting.md#data-model-and-model-mapping-components) and [format](general-electronic-reporting.md#FormatComponentOutbound) components, you can add the **Class** data source that is presented as a data source and that returns a value of the *class* type. This data source exposes public methods of the class that can be called at runtime.
+In ER mapping and format components, you can add the **Class** data source that is presented as a data source and that returns a value of the *class* type. This data source exposes public methods of the class that can be called at runtime.
 
 > [!NOTE]
 > Only methods that return a value can be called from ER expressions.
@@ -76,7 +76,7 @@ A *record list* is a list of items of the *record* type. Usually, a *record list
 
 By default, records of a *record list* are accessed sequentially. To access a specific record, you can use the [INDEX](er-functions-list-index.md) function and specify the *integer* index.
 
-The default value of a *record list* is **empty**. You can use the [ISEMPTY](/er-functions-list-isempty.md) function to evaluate whether a *record list* is empty.
+The default value of a *record list* is **empty**. You can use the [ISEMPTY](er-functions-list-isempty.md) function to evaluate whether a *record list* is empty.
 
 > [!NOTE]
 > If a *record list* is empty, any attempt to get a field value for a *record* in it causes an exception to be thrown at runtime. To learn how you can help prevent runtime exceptions of this type, see [Consideration of empty list cases](er-components-inspections.md#i9).

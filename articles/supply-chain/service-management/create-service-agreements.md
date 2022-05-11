@@ -3,7 +3,7 @@
 
 title: Create service agreements
 description: This topic describes how to use features in the Service management and the Project management and accounting modules to create service agreements.
-author: kamaybac
+author: sorenva
 ms.date: 02/19/2018
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kamaybac
+ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

@@ -3,8 +3,8 @@
 
 title: Priority-based batch scheduling
 description: This topic provides information about the functionality for priority-based batch scheduling.
-author: peakerbl
-ms.date: 12/05/2019
+author: matapg007
+ms.date: 02/03/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,13 +15,13 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: sericks
 # ms.tgt_pltfrm: 
 ms.custom: 62333
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: peakerbl
+ms.author: matgupta
 ms.search.validFrom: 2019-10-29
 ms.dyn365.ops.version: Platform Update31
 
@@ -31,21 +31,42 @@ ms.dyn365.ops.version: Platform Update31
 
 [!include [banner](../includes/banner.md)]
 
-In Platform update 31, you can turn on the **Batch priority-based scheduling** feature in [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md). Priority-based scheduling decouples batch groups from the batch server. Instead, relative scheduling priorities are used to determine the order that tasks are run in across available batch servers.
+In Platform update 31, you can turn on the **Batch priority-based scheduling** feature in [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md). Priority-based scheduling decouples batch groups from the batch server and allows you to define priorities for batch groups. It is no longer necessary to assign batch jobs to batch servers. Instead, relative scheduling priorities based on business requirements are used to determine the order in which tasks are run across available batch servers.
 
 > [!IMPORTANT]
-> This feature is available only in a restricted preview as part of Platform update 31.
+> This feature is available with version 10.0.25.
 
-A scheduling priority is defined for batch groups, but it can be overridden for specific batch jobs. The scheduling priority classifications are used to declare relative priorities, and to determine the processing order of jobs and business processes. The available values for the scheduling priority are **Low**, **Normal**, **High**, **Critical**, and **Reserved capacity**. **Normal** is the default value and is also applied to all existing batch groups when the feature is turned on. **Reserved capacity** represents the highest priority. In Platform update 32 and later versions, you can use it to dedicate reserved capacity for jobs. For more information, see the <a name="reserved">Set the batch reserved capacity</a> section later in this topic.
+A scheduling priority is defined for batch groups, but it can be overridden for specific batch jobs. The scheduling priority classifications are used to declare relative priorities, and to determine the processing order of jobs and business processes. The available values for the scheduling priority are **Low**, **Normal**, **High**, **Critical**, and **Reserved capacity**. 
+
+**Normal** is the default value and is applied to all existing batch groups when the feature is turned on. **Reserved capacity** represents the highest priority. In Platform update 32 and later versions, you can use it to dedicate reserved capacity for jobs. For more information, see the [Set the batch reserved capacity level](priority-based-batch-scheduling.md#set-the-batch-reserved-capacity-level) section later in this topic.
+
+For example, there are 100 batch tasks for processing. Forty tasks will be served from the reserved queue, 30 from the critical queue, 15 from the high queue, ten from the normal queue, and five from the low queue. It isn't the priority-based order of execution that will be selected for processing, but the weight of the batch tasks from each priority.
+
+| Priority | Weight |
+|----------|--------|
+| Low | 5% |
+| Normal | 10% |
+| High | 15% |
+| Critical | 30% |
+| Reserved capacity | 40% + Dedicated X threads |
 
 > [!NOTE]
 > Because the schedule priority is set to **Normal** for all existing batch groups when the feature is turned on, it's important that you plan and update the scheduling priority for each batch group so that it represents the relative priorities according to business requirements for the related batch jobs and their related business processes.
 
-Platform update 32 includes upgrade support for existing batch jobs. For more information, see the <a name="#automatic">Automatic batch group migration for batch jobs</a> section later in this topic.
+Platform update 32 includes upgrade support for existing batch jobs. For more information, see the [Automatic batch group migration for batch jobs](priority-based-batch-scheduling.md#automatic-batch-group-migration-for-batch-jobs) section later in this topic.
 
-Priority-based batch scheduling requires that you turn on the **Batch framework contention reduction** feature in Feature management.
+Advantages of priority-based batch scheduling include:
 
-The following procedures explain how to work with batch groups, jobs, and tasks, when the **Priority based batch scheduling** feature is turned on.
+- Priorities are introduced up to the batch job level.
+- It serves as a prerequisite for near-zero downtime servicing.
+- It doesn't tie a batch job to a particular server.
+
+The following steps explain how to work with batch groups, jobs, and tasks, when the **Priority-based batch scheduling** feature is turned on.
+
+1. **Identify** – Identify the priorities of the existing batch jobs.
+2. **Enable** – Enable priority-based scheduling in Feature management. By default, all existing batch jobs in will be given the **Normal** priority.
+3. **Update** – Selectively update the priorities for jobs that are not **Normal** priority (such as **Reserved capacity**, **Critical**, **High**, and **Low**).
+4. **Apply** – Apply **Reserved capacity** if there is a need to dedicate capacity for some jobs beyond the priority.
 
 ## Batch groups
 
@@ -105,7 +126,7 @@ A batch job is a group of tasks that are submitted for automatic processing. Bat
 14. If the batch task supports input parameters, select **Parameters**, and then set task-specific parameters.
 15. Select **OK**, and then select **Save**.
 
-## <a name="reserved">Set the batch reserved capacity level</a>
+## Set the batch reserved capacity level
 
 1. Go to **System administration** \> **Setup** \> **System parameters**.
 2. On the **Batch global settings** tab, in the **Batch reserved capacity level** field, select the reserved capacity level to use for batch jobs that have **Reserved capacity** priority:
@@ -115,8 +136,10 @@ A batch job is a group of tasks that are submitted for automatic processing. Bat
     - **Medium reserved capacity** – Fifteen percent of the cumulative batch threads are reserved.
     - **High reserved capacity** – Twenty-five percent of the cumulative batch threads are reserved.
 
+    For example, there are ten Batch AOS instances, each of which is configured with 12 threads. Therefore, the cumulative number of batch threads is 120. If you configure the batch-reserved capacity level as high reserved capacity, 25 percent of the cumulative threads (that is, 30 threads) will be dedicated to processing batch tasks from the reserved queue. These 30 threads will be allocated among three AOS instances. Therefore, three of the ten AOS instances will be dedicated to processing the reserved queue. If there are no batch tasks to process under reserved capacity, those three AOS instances will be idle.
+
     > [!NOTE]
-    > Sample values are for the purpose of illustration only. The actual reserved capacity depends on the configuration of the batch server and the number of available batch threads at any given point.
+    > Sample values are for the purpose of illustration only. The actual reserved capacity depends on the configuration of the batch server and the number of available batch threads at any given point. Don't configure the dedicated X threads unless there is a use case where there is a constant number of batch tasks to run under the reserved category.
 
 3. Select **Save**.
 
@@ -125,7 +148,7 @@ A batch job is a group of tasks that are submitted for automatic processing. Bat
 
 A new internal system batch job, **System job to clean up expired batch heartbeat records**, cleans up the new BatchHeartbeatTable table. This batch job has the class name **SysCleanupBatchHeartbeatTable**. BatchHeartbeatTable is an internal monitoring table that is used to determine, configure, and distribute reserved capacity threads among online nodes.
 
-## <a name="automatic">Automatic batch group migration for batch jobs</a>
+## Automatic batch group migration for batch jobs
 
 After the feature is turned on, batch group information on the task is duplicated on the job that will be used. The batch group assignment on a job is based on the batch group that is most used for the tasks for the job.
 
@@ -137,5 +160,6 @@ The batch job is also run when the feature is turned on, to migrate any batch jo
 
 We recommend that you review the automatic batch group assignment after the feature is turned on and the migration is completed. To facilitate this review, the **Batch group** field for tasks is read-only. To support backward compatibility, the value of this field will be propagated from the job when new batch tasks are added.
 
+As a best practice, we recommend that you do not assign a high or critical priority to all batch jobs.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,7 +4,7 @@
 title: Cash position
 description: This topic describes how the Cash flow forecasting feature predicts an organization's cash position for specific times. It also describes the options that are available for showing forecasts for different periods. 
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 12/21/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
@@ -50,7 +50,16 @@ The lower section of the **Cash position** tab shows details for the position, c
 
 To save and edit the cash position, create a snapshot. For more information about how to work with snapshots, see [Snapshots overview](payment-snapshots.md).
 
-#### Privacy notice
-Previews (1) might use less privacy and fewer security measures than the Dynamics 365 Finance and Operations service, (2) aren't included in the service level agreement (SLA) for this service, (3) should not be used to process personal data or other data that is subject to legal or regulatory compliance requirements, and (4) have limited support.
+## Details of the Cash position capability 
+
+The Cash position feature includes the following functionality. 
+
+- Cash position feature shows the cashflow based on existing documents in the system and cash inflow and outflow lines imported from external systems.
+- Makes it easy to integrate cash flow data from external systems to Dynamics 365 Finance. Cash position can also use the data import-export framework. This framework makes it easy to integrate with Excel OData. You can also combine data from multiple sources to create a comprehensive cash position solution.
+- Introduces intelligent cash position. Cash position is created based on customer’s payment behavior to predict when a company can expect cash to arrive in their accounts.
+- For Customer orders and invoices, customer payment prediction AI functionality is used to determine the historical customer payment behavior when an order or invoice will be paid.
+- For vendor orders and invoices, we use average time between shipping and invoice and paying an invoice per vendor to determine when a vendor order or invoice will be paid making cash outflows more accurate.
+
+This creates a more accurate view of cash flow based on historical payment behavior for the treasurer. 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

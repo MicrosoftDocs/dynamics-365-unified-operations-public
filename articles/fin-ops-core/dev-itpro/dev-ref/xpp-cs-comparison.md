@@ -4,9 +4,9 @@ description: This topic compares X++ and C# syntax and programming.
 author: RobinARH
 ms.date: 04/10/2020
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -44,7 +44,7 @@ The following table lists X++ features that are different in C#.
 | char `type` | There is no `char` or character type in X++. You can declare a `str` of length one, but it is still a string:<br> `str 1 myString = "a";` | There is a `char` in C#. You cannot pass a `char` as the parameter to a method that inputs a `string` parameter, although you can first explicitly convert the `char` to a `string`.| For more information about X++ data types, see Primitive Data Types.|
 | Output of messages| X++ delivers messages to the user in the Infolog window. Common methods include the following:<ul><li>The <strong>print</strong> statement:</li><li>static methods on the `Global` class:<ul><li>Global::info</li><li>Global::warning</li><li>Global::error</li></ul></li></ul>| For a command line program, messages can be delivered to the console. Common methods include the following:<ul><li>`Console.Out.WriteLine`</li><li>`Console.Error.WriteLine`</li></ul>|  |
 
-### X++ and C++ Samples
+### X++ and C# Samples
 
 This section contains two simple code samples. One sample is written in X++, and the other is in C\#. Both samples achieve the same result. The following X++ features are demonstrated:
 -   `//` single line comment
@@ -1477,7 +1477,7 @@ The following table lists several .NET Framework classes for C\# that are in the
 | WINAPI::createDirectory WINAPI::folderExists WINAPI::removeDirectory| `Directory` `DirectoryInfo` `Path`| X++ can use static methods in the `WINAPI` class for many basic operating system functions that involve directories.|
 | WINAPI::getDriveType| `DriveInfo` `DriveType`| These classes and methods are used to obtain drive related information.|
 | WINAPI::copyFile WINAPI::createFile WINAPI::deleteFile WINAPI::fileExists| `File` `FileAttributes` `FileInfo`| X++ can use static methods in the `WINAPI` class for many basic operating system functions that involve files.|
-| `CommaIo` `Comma7Io`| (No corresponding class.)| These X++ classes can generate files that Microsoft Excel can import. In X++ an <a href="https://epplus.codeplex.com/">EPPlus</a> library reference is available for additional interaction with Excel.|
+| `CommaIo` `Comma7Io`| (No corresponding class.)| These X++ classes can generate files that Microsoft Excel can import. In X++ an <a href="">EPPlus</a> library reference is available for additional interaction with Excel.|
 | `AsciiIo` `TextIo`| `FileStream` `TextReader` `TextWriter`| These classes use different code pages.|
 | `Io`| `Stream` `StreamReader` `StreamWriter` `FileStream`| These are often used as base classes that other classes extend.|
 | `CodeAccessPermission` `FileIoPermission`| `System.Security` `.CodeAccessPermission` The namespace `System.Security.Permissions` includes the following classes:<ul><li>`CodeAccessSecurityAttribute`</li><li>`FileIOPermissionAttribute`</li><li>`FileIOPermission`</li><li>`FileIOPermissionAccess`</li></ul>| The concepts and methods of `assert`, `demand`, and `revertAssert` apply to both languages. However, the `deny` and `revertDeny` methods that are available in C# are not available in X++.|

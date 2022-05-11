@@ -4,9 +4,9 @@ description: This topic describes primitive data types in X++.
 author: RobinARH
 ms.date: 08/27/2021
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -179,7 +179,7 @@ The **guid** data type holds a *globally unique identifier* (GUID) value. A GUID
 
 - It must have 32 hexadecimal digits.
 - It must have four dash characters that are embedded at the following locations: 8-4-4-4-12.
-- Braces ({}) at the beginning and end of a string are optional. For example, both "12345678-BBBb-cCCCC-0000-123456789012" and "{12345678-BBBb-cCCCC-0000-123456789012}" are valid GUID strings.
+- Braces ({}) at the beginning and end of a string are optional. For example, both "12345678-BBBb-cCCC-0000-123456789012" and "{12345678-BBBb-cCCC-0000-123456789012}" are valid GUID strings.
 - It must have a total of either 36 or 38 characters, depending on whether braces are added.
 - The hexadecimal digits a–f (or A–F) can be uppercase, lowercase, or mixed.
 
@@ -437,7 +437,7 @@ void StringMethod()
 
 ### String truncation
 
-String values can be declared in X++ to contain a maximum number of characters. Typically, this is achieved by encoding this information in an extended data type and setting the **String Size** in the **Properties** window. In the following screenshot, **FMCreditCardNum**cannot exceed 20 characters.
+String values can be declared in X++ to contain a maximum number of characters. Typically, this is achieved by encoding this information in an extended data type and setting the **String Size** in the **Properties** window. In the following screenshot, **FMCreditCardNum** cannot exceed 20 characters.
 
 ![FMCreditCardNum string size.](media/stringtruncation.png)
 

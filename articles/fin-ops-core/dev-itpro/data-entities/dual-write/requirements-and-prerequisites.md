@@ -2,10 +2,10 @@
 title: System requirements and prerequisites
 description: This topic describes the system requirements and prerequisites that must be in place before you can enable dual-write for Finance and Operations apps.
 author: NHelgren
-ms.date: 08/18/2021
+ms.date: 02/09/2022
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
@@ -16,22 +16,29 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 ## What regions are available?
 
 Currently, we support dual-write in the following regions:
-    
-   + Asia
-   + Australia
-   + Canada
-   + Europe
-   + India
-   + Japan
-   + South America
-   + United Arab Emirates
-   + United Kingdom
-   + United States
+
++ Asia
++ Australia
++ Brazil
++ Canada
++ Europe
++ France
++ India
++ Japan
++ South America
++ Switzerland
++ United Arab Emirates
++ United Kingdom
++ United States
+
+
+> [!NOTE]
+> There are currently no plans to support any additional regions.
 
 ## Verify requirements and grant access
 
@@ -86,47 +93,26 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App user with id 6f7d0213-62b1-43a8-b7f4-ff2bb8b7b452 exists<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App user with id 2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b exists*
 
-4. Grant a Finance and Operations app access so that it can connect to Dataverse.
+4. Grant a Finance and Operations app access so that it can connect to Dataverse. Follow the steps in [Create an application user](/power-platform/admin/manage-application-users#create-an-application-user), using the following information for applications IDs and security roles.
 
-    1. In Power Apps, select the **Settings** button (gear symbol) in the upper-right corner, go to **Advanced settings \> Security**, and then select **Users**.
+    + **Applications**: Add users to these applications:
 
-        ![Users.](media/selecting-users.png)
+        + 00000015-0000-0000-c000-000000000000
+        + 2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b
 
-    2. Use the drop-down menu to change the view from **Enabled Users** to **Application Users**.
+    + **Security roles**: Select a preconfigured **Security Role** to grant a **Read** privilege with a **User** scope for each table integrated through dual-write.
 
-        ![Switching to the Application users view.](media/selecting-application-users.png)
+        >[!NOTE]
+        > Company and currency exchange tables are global in nature and all dual-write users require read access to these 2 tables.
+        > All dual-write users will need to be added to the **Dual-Write App User** security role.
+        > In order to allow non-administrator users to create rows in a dual-write enabled table, they will need to be assigned the **Dual-Write Runtime User** security role.
 
-    3. Create a new user, and then, on the **User** menu, select **Application User**.
+        For instructions on how to create a Security Role, see [Create or configure a custom security role](/power-platform/admin/database-security#create-or-configure-a-custom-security-role).
 
-        ![Switching to Application user.](media/create-new-user.png)
-
-    4. In the **Application ID** column, enter **00000015-0000-0000-c000-000000000000**. This application ID is for a Finance and Operations app and will enable the app to connect to Dataverse. When you've finished, follow the prompts to fill in the other columns, and then save the user account.
-
-        ![Entering the application ID.](media/add-application-id.png)
-
-    5. Provide a primary email address.
-    6. Select **Manage Roles**, and then, in the **Manage User Roles** dialog box, select the **System Administrator** check box to provide system admin rights to the selected application user.
-
-        ![Assigning the System Administrator role.](media/manage-user-roles.png)
-
-    7. Go to **Dynamics 365 \> Settings \> Security**, select **Teams**, and then change the view to **All Owner Teams**.
-    8. Select **default team for the root Business Unit**, select **Manage Roles**, and then, in the **Manage Team Roles** dialog box, select a preconfigured **Security Role** to grant a **Read** privilege with a **User** scope for each table integrated through dual-write. 
-    
-    >[!NOTE]
-    > Company and currency exchange tables are global in nature and all dual-write users require read access to these 2 tables.
-    > All dual-write users will need to be added to the **Dual-Write App User** security role.
-    > In order to allow non-administrator users to create rows in a dual-write enabled table, they will need to be assigned the **Dual-Write Runtime User** security role.
-
-      For instructions on how to create a Security Role, see [Create or configure a custom security role](/power-platform/admin/database-security#create-or-configure-a-custom-security-role).
-      
-      > [!NOTE]
-      > The root business unit’s default team will become the default owner for all rows integrated through dual-write.
-      > Because that team must be assigned a security role, this means that all users in the root business unit will inherit the security role.
-      > This means that at the very least, **users from that business unit will have read access to all the rows that are owned by that team**. If this isn’t the desired behavior, make sure that users are not a member of the root business unit.
-
-    9. Repeat the previous five steps for application ID **2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b**.
-
-        ![Assigning the application ID.](media/assign-application-id.png)
+        > [!NOTE]
+        > The root business unit’s default team will become the default owner for all rows integrated through dual-write.
+        > Because that team must be assigned a security role, this means that all users in the root business unit will inherit the security role.
+        > This means that at the very least, **users from that business unit will have read access to all the rows that are owned by that team**. If this isn’t the desired behavior, make sure that users are not a member of the root business unit.
 
     **Related health check result:**<br>
     *The Finance and Operations app can connect to the Dataverse*<br>
@@ -136,7 +122,7 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
 
 5. Provide app consent in the tenant.
    For dual-write core solution version 1.0.16.0 or above, this step is no longer needed.
-        
+
     **Related health check result:**<br>
     *Apps in tenant*<br>
     *The required dual-write applications need to be installed in the tenant.<br>

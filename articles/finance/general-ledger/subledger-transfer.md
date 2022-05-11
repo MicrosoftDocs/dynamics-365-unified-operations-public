@@ -3,8 +3,8 @@
 
 title: Subledger transfer to the general ledger
 description: This topic describes capabilities that are related to the subledger transfer process in General ledger.
-author: rcarlson
-ms.date: 07/20/2021
+author: RyanCCarlson2
+ms.date: 12/08/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,13 +15,13 @@ ms.search.form: LedgerJournalSetup, LedgerJournalTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: peakerbl
+ms.author: rcarlson
 ms.search.validFrom: 2020-01-18
 ms.dyn365.ops.version: AX 10.0.8
 
@@ -44,7 +44,7 @@ In version 10.0.8, improvements were made to enhance the performance of the **As
 
 The functionality for asynchronous transfer of subledger batches helps improve the transfer of data from the subledger to the general ledger. By grouping sets of smaller transactions and transferring the transactions in groups, the functionality processes transactions more efficiently. When transactions are grouped, the batch server's resources are used more efficiently.
 
-Asynchronous transfer of subledger batches requires that the batch server be set up, online, and working. Otherwise, the **Asynchronous** transfer option won't work.
+Asynchronous transfer of subledger batches requires that the batch server be set up, online, and working because batch tasks are created for immediate execution on the batch server. When the  **Subledger transfer to General Ledger performance optimization** feature is enabled, the **Process automation** system batch job named **Process automation polling system job** must be also be enabled. For more information, see [Process automation](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
 
 The efficiency change at the batch level uses a single recurring batch job for all legal entities in the system. At runtime, a new batch job is created to process the required records that haven't yet been transferred. More settings can be controlled from the **Process automation** page in system administration. On that page, you can modify the background process, change the frequency, and define a sleep period.
 

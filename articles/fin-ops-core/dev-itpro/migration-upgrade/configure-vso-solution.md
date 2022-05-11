@@ -1,8 +1,8 @@
 ---
 title: Configure the Azure DevOps mapping during code migration
 description: This tutorial shows how to map your development box to the Azure DevOps project after the LCS code upgrade service has completed. 
-author: RobinARH
-ms.date: 08/26/2021
+author: jorisdg 
+ms.date: 01/10/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: sericks
@@ -30,16 +30,14 @@ The LCS code upgrade service automatically checks your upgraded code into Azure 
 - **Projects** are solutions that you can use during upgrade. One solution, CodeMergeSolution, is the solution that contains projects with the elements that have conflicts and need to be resolved. Another solution, UpgradedSolution, contains a collection of projects, one for each upgraded model.
 
 ## Map Azure DevOps to your development box
-1.  In Visual Studio, connect to your account by going to **Team Explorer &gt; Select Team Projects &gt; Servers &gt; Add.**
-2.  Enter the URL to your team project. Select **Close**.
-3.  Make sure the Azure DevOps account shows up. On the right, choose the project that you want to work on. Select **Connect**.
+1.  In Visual Studio, open the **Team Explorer** window by selecting **View &gt; Team Explorer** from the top menu.
+2.  In the **Team Explorer** window, select **Connect**, and then select **Manage Connections > Connect to a Project**.
+3.  Follow the prompts to connect. From the list of available projects for your account, choose the project that you want to work on. Select **Connect**.
 4.  Now you need to map your workspace to the Azure DevOps folders. Go to the **Source Code Explorer** and do this mapping:
     1.  Projects &gt;
-        - For **Visual Studio 2015** : C:\\Users\\&lt;username&gt;\\Documents\\Visual Studio 2015\\Projects
-        - For **Visual Studio 2017** or newer : C:\\Users\\&lt;username&gt;\\source\\repos
+        - Select a folder where you plan to save your projects, or use the default **Visual Studio** folder: C:\\Users\\&lt;username&gt;\\source\\repos
     2.  Metadata &gt; C:\\AOSService\\PackagesLocalDirectory
         -   On cloud VMs, this folder is located on the I:\\, J:\\ or K:\\ drive
-        -   On earlier versions, this folder is C:\\packages
         -   **Important**:
             -   If you are migrating from Dynamics AX 2012 R3 or earlier, you will be mapping to the metadata folder under the **Main** branch.
             -   If you are migrating between two product versions, you will be mapping to the metadata folder under one of the **Releases** branch.

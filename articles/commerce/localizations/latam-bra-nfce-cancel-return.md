@@ -4,10 +4,10 @@ title: Cancellation and return of NFC-e documents in Commerce POS for Brazil
 description: This topic gives an overview of the cancellation and return functionality for NFC-e documents in Microsoft Dynamics 365 Commerce point of sale (POS) for Brazil.
 author: akviklis
 manager: annbe
-ms.date: 06/10/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
+
 ms.technology: 
 
 
@@ -78,9 +78,38 @@ To initiate a return of sold goods, follow these steps.
 
 ## Simplified DANFE for model 55 fiscal receipt
 
-In addition to the [common list of custom fields for DANFE](latam-bra-nfce.md), a simplified DANFE for model 55 fiscal receipt can include the following custom field:
+In addition to the [common list of custom fields for DANFE](latam-bra-nfce.md#custom-fields-for-danfe-fiscal-receipts), a simplified DANFE for model 55 fiscal receipt can include the custom fields that are described in this section.
 
-- **Barcode (Código de barras)** – You can add a bar code field to simplified DANFE for model 55 fiscal receipts for returns.
+### Configure custom fields so that they can be used in receipt formats for sales receipts
+
+Add the following POS labels to the **POS** section of the **Language text** page.
+
+| Language ID | Text ID | Text                                      |
+|-------------|---------|-------------------------------------------|
+| en-US       | 900101  | Barcode                                   |
+| en-US       | 900102  | Barcode block 1 (22 digits)               | 
+| en-US       | 900103  | Barcode block 2 (22 digits)               | 
+
+On the **Custom fields** page, add the following records for the custom fields for receipt layouts. The **Caption text ID** values must correspond to the **Text ID** values that you specified on the **Language text** page.
+
+| Name                            | Type    | Caption text ID |
+|---------------------------------|---------|-----------------|
+| BARCODE\_BR  					  | Receipt | 900101          |
+| FISCALDOCUMENTBARCODEFIRST\_BR  | Receipt | 900102          |
+| FISCALDOCUMENTBARCODESECOND\_BR | Receipt | 900103          |
+
+### Configure receipt formats
+
+For every receipt format that is required, change the value of the **Print behavior** field to **Always print**.
+
+In the receipt format designer, add the following custom fields to the appropriate receipt sections. Note that the field names correspond to the language text values that you defined in the previous section.
+
+- **Header:** Add the following fields:
+
+    - **Barcode (Código de barras)** – You can add a bar code field to simplified DANFE for model 55 fiscal receipts for returns.
+    - **Barcode block 1**, **Barcode block 2** – You can add 22-digit bar code fields to simplified DANFE for model 55 fiscal receipts for returns that are printed on the till roll. The bar code is a graphical representation of the **Access key (Chave de acesso)** value that is divided into two parts, each of which has 22 digits.
+
+For more information about how to work with receipt formats, see [Set up and design receipt formats](../receipt-templates-printing.md).
 
 ## Additional resources
 
@@ -95,3 +124,5 @@ In addition to the [common list of custom fields for DANFE](latam-bra-nfce.md), 
 [Postponed registration of NFC-e documents issued in offline contingency mode](latam-bra-nfce-contingency-mode.md)
 
 [Post Brazilian fiscal documents via retail statements in Commerce headquarters](latam-bra-retail-statements.md)
+
+[Set up and design receipt formats](../receipt-templates-printing.md).

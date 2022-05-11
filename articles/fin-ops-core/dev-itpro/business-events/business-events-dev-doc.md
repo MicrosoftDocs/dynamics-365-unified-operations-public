@@ -3,8 +3,8 @@
 
 title: Business events developer documentation
 description: This topic walks you through the development process and best practices for implementing business events.
-author: Sunil-Garg
-ms.date: 09/19/2019
+author: jaredha
+ms.date: 02/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -18,7 +18,7 @@ ms.reviewer: sericks
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global for most topics. Set Country/Region name for localizations
 # ms.search.industry: 
-ms.author: sunilg
+ms.author: jaredha
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
 ---
@@ -574,13 +574,17 @@ extends BusinessEventsContract
 }
 ```
 
-#### Step 6: Wrap the buildContract method
+#### Step 6: Extend the business event class to wrap the buildContract and getExtendedBusinessEventsContractName methods
 
-Provide a build contract implementation that calls **next** to load the standard business event contract and populates any payload extensions. Here is the complete class.
+Provide a **buildContract** implementation that calls **next** to load the standard business event contract and populates any payload extensions. 
+
+Provide a **getExtendedBusinessEventsContractName** implementation that returns the name of your new extended contract class. This will allow the new contract name and fields to be present in the UI of the Business Events catalog.
+
+Here is the complete class.
 
 ```xpp
 [ExtensionOf(classStr(CustFreeTextInvoicePostedBusinessEvent))]
-public final class FreeTextInvoicePostedBusinessEventContract_Extension
+public final class CustFreeTextInvoicePostedBusinessEvent_Extension
 {
     public BusinessEventsContract buildContract()
     {
@@ -589,6 +593,13 @@ public final class FreeTextInvoicePostedBusinessEventContract_Extension
         buildContract());
         businessEventContract.parmCustomerClassification(CustomerClassifier::deriveCustomerClassification(businessEventContract.parmInvoiceAccount()));
         return businessEventContract;
+    }
+    
+    public BusinessEventsContractEDT getExtendedBusinessEventsContractName()
+    {
+        next getExtendedBusinessEventsContractName();
+
+        return classStr(CustFreeTextInvoicePostedBusinessEventExtendedContract);
     }
 }
 ```
@@ -609,9 +620,9 @@ A custom payload context must be extended from the **BusinessEventsCommitLogPayl
 class CustomCommitLogPayloadContext extends BusinessEventsCommitLogPayloadContext
 {
     private utcdatetime eventTime;
-    public utcdatetime parmEventTime(utcdatetime \_eventTime = eventTime)
+    public utcdatetime parmEventTime(utcdatetime _eventTime = eventTime)
     {
-        eventTime = \_eventTime;
+        eventTime = _eventTime;
         return eventTime;
     }
 }
@@ -626,7 +637,7 @@ A Chain of Command (CoC) extension must be written for the **BusinessEventsSende
 public final class CustomPayloadContextBusinessEventsSender_Extension
 {
     protected BusinessEventsCommitLogPayloadContext
-    buildPayloadContext(BusinessEventsCommitLogEntry \_commitLogEntry)
+    buildPayloadContext(BusinessEventsCommitLogEntry _commitLogEntry)
     {
         BusinessEventsCommitLogPayloadContext payloadContext = next
         buildPayloadContext(_commitLogEntry);
@@ -646,17 +657,18 @@ Adapters that consume payload context are written in such a way that they expose
 The **BusinessEventsServiceBusAdapter** class has the CoC method that is named **addProperties**.
 
 ```xpp
+using Microsoft.ServiceBus.Messaging;
+
 [ExtensionOf(classStr(BusinessEventsServiceBusAdapter))]
 public final class CustomBusinessEventsServiceBusAdapter_Extension
 {
-    protected void addProperties(BrokeredMessage \_message,
-    BusinessEventsEndpointPayloadContext \_context)
+    protected void addProperties(BrokeredMessage _message, BusinessEventsEndpointPayloadContext _context)
     {
+        next addProperties(_message, _context);
         if (_context is CustomCommitLogPayloadContext)
         {
-            CustomCommitLogPayloadContext customPayloadContext = \_context as
-            CustomCommitLogPayloadContext;
-            var propertyBag = \_message.Properties;
+            CustomCommitLogPayloadContext customPayloadContext = _context as CustomCommitLogPayloadContext;
+            var propertyBag = _message.Properties;
             propertyBag.Add('EventId', customPayloadContext.parmEventId());
             propertyBag.Add('BusinessEventId', customPayloadContext.parmBusinessEventId());
             // Convert the enum to string to be able to serialize the property.
@@ -664,6 +676,28 @@ public final class CustomBusinessEventsServiceBusAdapter_Extension
             customPayloadContext.parmBusinessEventCategory()));
             propertyBag.Add('LegalEntity', customPayloadContext.parmLegalEntity());
             propertyBag.Add('EventTime', customPayloadContext.parmEventTime());
+        }
+    }
+}
+```
+
+
+The **BusinessEventsEventGridAdapter** class has the CoC method that is named **setContextProperties**. The following example shows what this step looks like for the Event Grid Adapter. The eventGridMessage has a Subject that can be filtered on.
+
+```xpp
+using Microsoft.Azure.EventGrid.Models;
+
+[ExtensionOf(classStr(BusinessEventsEventGridAdapter))]
+public final class CustomBusinessEventsEventGridAdapter_Extension
+{
+    protected void setContextProperties(EventGridEvent _eventGridEvent, BusinessEventsEndpointPayloadContext _context)
+    {
+        next setContextProperties(_eventGridEvent, _context);
+        if (_context is CustomCommitLogPayloadContext)
+        {
+            CustomCommitLogPayloadContext customPayloadContext = _context as CustomCommitLogPayloadContext;
+
+            _eventGridEvent.Subject = _eventGridEvent.Subject + customPayloadContext.parmLegalEntity();
         }
     }
 }
@@ -705,10 +739,9 @@ The **initialize** method should be implemented to check the type of the **Busin
 if (!(_endpoint is CustomBusinessEventsEndpoint))
 {
     BusinessEventsEndpointManager::logUnknownEndpointRecord(tableStr(CustomBusinessEventsEndpoint),
-    \_endpoint.RecId);
+    _endpoint.RecId);
 }
-CustomBusinessEventsEndpoint customBusinessEventsEndpoint = \_endpoint as
-CustomBusinessEventsEndpoint;
+CustomBusinessEventsEndpoint customBusinessEventsEndpoint = _endpoint as CustomBusinessEventsEndpoint;
 customField = customBusinessEventsEndpoint.CustomField;
 if (!customField)
 {

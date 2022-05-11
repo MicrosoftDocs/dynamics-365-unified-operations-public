@@ -4,9 +4,10 @@
 title: Troubleshoot on-premises deployments
 description: This topic provides troubleshooting information for deployments of Microsoft Dynamics 365 Finance + Operations (on-premises).
 author: PeterRFriis
-ms.date: 09/27/2021
+ms.date: 04/05/2022
 ms.topic: article
-ms.prod:
+ms.prod: dynamics-365 
+ms.service:
 ms.technology:
 
 # optional metadata
@@ -584,22 +585,24 @@ Some examples of encryption errors include "AXBootstrapperAppType," "Bootstrappe
 
 You might receive one of these errors if the data encipherment certificate that was used to encrypt the AOS account password wasn't installed on the machine. This certificate might be in the certificates (local computer), or the provider type might be incorrect.
 
-To resolve the error, validate the credentials.json file. Verify that the text is correctly decrypted by entering the following command (on AOS1).
+To resolve the error, validate the credentials.json file. Copy your infrastructure folder to an AOS node, or run the script from an AOS node if your infrastructure folder is in a file share.
 
-```powershell
-Invoke-ServiceFabricDecryptText -CipherText 'longstring' -StoreLocation LocalMachine | Set-Clipboard
-```
+1. Verify that the text is correctly decrypted by running the following command (on AOS1).
 
-This error can also occur if the **''** parameter isn't defined in the ApplicationManifest file. To determine whether this parameter is defined, in Event Viewer, go to **Custom Views** \> **Administrative Events**, and verify the following information:
+    ```powershell
+    .\Configure-CredentialsJson.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Action Decrypt
+    ```
 
-- The encrypt credentials for the credentials.json file have the correct layout/structure. For more information, see the "Encrypt credentials" section of the appropriate setup and deployment topic for your environment:
+2. Open the **Credentials.json** file, and confirm that the credentials are correct.
+3. Re-encrypt the **Credentials.json** file.
 
-    - [Platform update 41 and later](setup-deploy-on-premises-pu41.md#encryptcred)
-    - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#encryptcred)
+    ```powershell
+    .\Configure-CredentialsJson.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Action Encrypt
+    ```
 
-- A closing quotation mark appears at the end of the line or on the next line.
+4. If any of the credentials had to be updated, you must trigger a servicing operation. If an ongoing servicing operation failed, you can ensure that the credentials are updated by retrying the operation from [LCS](https://lcs.dynamics.com). If the environment is already in a deployed state, in [LCS](https://lcs.dynamics.com), select the **Full Details** link for the environment where you want to update the SQL Server, select **Maintain**, and then select **Update Settings**. Don't change any settings. Select **Prepare**, wait for the preparation to be completed, and then select **Update environment** to start to update your environment.
 
-In Event Viewer, under **Custom Views** \> **Administrative Events**, note any errors in the **Microsoft-Service Fabric** source category.
+This error can also occur if the **''** parameter isn't defined in the ApplicationManifest file. To determine whether this parameter is defined, in Event Viewer, go to **Custom Views** \> **Administrative Events**, and note any errors in the **Microsoft-Service Fabric** source category.
 
 ## Properties to create a DataEncryption certificate
 
@@ -623,21 +626,10 @@ If you're missing a certificate and ACL, or if you have the wrong thumbprint ent
 You can also validate the encrypted text by using the following command.
 
 ```powershell
-Invoke-ServiceFabricDecryptText -CipherText 'longstring' -StoreLocation LocalMachine | Set-Clipboard
+.\Configure-CredentialsJson.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Action Decrypt
 ```
 
 If you receive the message, "Cannot find the certificate and private key to use for decryption," verify the axdataenciphermentcert and svc-AXSF$ AXServiceUser ACLs.
-
-If the credentials.json file has changed, the action you should take depends on the status of the environment in LCS.
-
-- If your environment appears to be deployed in LCS, do the following:
-    1. Go to your environment page and select **Maintain**.
-    1. Select **Update settings**.
-    1. Do not change any settings. Select **Prepare**.
-    1. After a few minutes your environment will be prepared and you can select **Deploy**.
-
-- If your environment is in a failed state in LCS, do the following:
-    1. Select **Retry**. The new Credentials.json file will be used during the retry operation.
 
 If none of the preceding solutions work, follow these steps.
 
@@ -655,7 +647,7 @@ If none of the preceding solutions work, follow these steps.
     On one of the AOS machines, run the following command to verify that the data encryption certificate is correct.
 
     ```powershell
-    Invoke-ServiceFabricDecryptText '<encrypted string>' -StoreLocation LocalMachine
+    .\Configure-CredentialsJson.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Action Encrypt
     ```
 
 7. If any of the certificates must be changed, or if the configuration was incorrect, follow these steps:
@@ -663,7 +655,16 @@ If none of the preceding solutions work, follow these steps.
     1. Edit the **ConfigTemplate.xml** file so that it has the correct values.
     2. Run all the setup scripts and the **Test-D365FOConfiguration** script.
 
-8. In LCS, reconfigure the environment.
+8. If the credentials.json file has changed, the action that you should take depends on the status of the environment in LCS:
+
+    - If your environment appears to be deployed in LCS, follow these steps:
+
+        1. Go to your environment page, and select **Maintain**.
+        1. Select **Update settings**.
+        1. Don't change any settings. Select **Prepare**.
+        1. After a few minutes, your environment will be prepared, and you can select **Deploy**.
+
+    - If your environment is in a failed state in LCS, select **Retry**. The new Credentials.json file will be used during the retry operation.
 
 ## Gateway fails to deploy
 
@@ -702,7 +703,7 @@ Category does not exist.
 
 ## Management Reporter
 
-Additional logging can be done by registering providers. Download [ETWManifest.zip](https://go.microsoft.com/fwlink/?linkid=864672) to the **primary** orchestrator machine, and then run the following commands. To determine which machine is the primary instance, in Service Fabric Explorer, expand **Cluster** \> **Applications** \> **LocalAgentType** \> **fabric:/LocalAgent/OrchestrationService** \> **(GUID)**.
+You can do additional logging by registering providers. To register providers, in the LCS Shared asset library, select **Model** as the asset type, and then download the **Microsoft Dynamics 365 Finance + Operations (on-premises), LBDMRDeployerTroubleshooter** asset. Copy the zip file that is downloaded to the **primary** orchestrator machine, unzip it, and then run the following commands. (To determine which machine is the primary instance, in Service Fabric Explorer, expand **Cluster** \> **Applications** \> **LocalAgentType** \> **fabric:/LocalAgent/OrchestrationService** \> **(GUID)**.)
 
 > [!NOTE]
 > If results in Event Viewer don't appear correct (for example, if words are truncated), get the latest manifest and .dll files. To get the latest manifest and .dll files, go to the WP folder in the agent file share. This share was created in the "Set up file storage" section of the appropriate setup and deployment topic for your environment:
@@ -825,7 +826,7 @@ update Reporting.ControlColumnMaster set checkedoutto = null where checkedoutto 
 **Steps:**
 
 1. Remove the axdbadmin user from the database, if it already exists.
-2. In the **ConfigTemplate.xml** file, specify the user name that must be added to the AXDB database.
+2. In the **ConfigTemplate.xml** file, specify the user name that must be added to the AXDB database by updating the **userName** attribute.
 
     ```xml
     <Security>
@@ -833,7 +834,7 @@ update Reporting.ControlColumnMaster set checkedoutto = null where checkedoutto 
     </Security>
     ```
 
-3. Run the initialize database script again to add the axdbadmin user.
+3. Run the initialize database script again to add the axdbadmin user as described in [Configure the databases](./setup-deploy-on-premises-pu41.md#configuredb).
 
 ## Unable to resolve the xPath value
 
@@ -1350,17 +1351,6 @@ Here are some examples of errors:
         > 
         > **DB sync failed.**
 
-## A "No subscription found in the context" error occurs when you run Add-CertToServicePrincipal
-
-Recent versions of Windows PowerShell might cause a "No subscription found in the context" error. To resolve this issue, install and load an older version of Windows PowerShell, such as version 5.7.0.
-
-```powershell
-# Install version 5.7.0 of Azure PowerShell
-Install-Module -Name AzureRM -RequiredVersion 5.7.0
-
-# Load version 5.7.0 of Azure PowerShell
-Import-Module -Name AzureRM -RequiredVersion 5.7.0
-```
 ## Service Fabric Explorer warnings occur after you restart a machine
 
 **Error:**
@@ -1472,7 +1462,7 @@ The located assembly's manifest definition does not match the assembly reference
 **Resolution:** Use TSG\_SysClassRunner.ps1. For more information, see [TSG_SysClassRunner.ps1](onprem-tsg-implementations.md#sysclassrunner).
 
 ## DBSync fails with PEAP APP version 10.0.9 Platform update 33
-**Issue:** During deployment of the APP 10.0.9 PU33 PEAP-package, the deployment fails with the AXSF applications staying in "InBuild" status in Service Fabric explorer. When reviewing the logs on the AXSF nodes's work directories, the following DBSync error can be found. 
+**Issue:** During deployment of the APP 10.0.9 PU33 PEAP-package, the deployment fails with the AXSF applications staying in "InBuild" status in Service Fabric explorer. When reviewing the logs on the AXSF nodes' work directories, the following DBSync error can be found. 
 
 Error message from DBSync:
  ```stacktrace
@@ -1509,7 +1499,7 @@ truncate table databaselog
 
 ## DBSync fails to start
 
-**Issue:** During deployment, the deployment fails with the AXSF applications staying in "InBuild" status in Service Fabric explorer. When reviewing the logs on the AXSF nodes's work directories, the following DBSync error can be found.
+**Issue:** During deployment, the deployment fails with the AXSF applications staying in "InBuild" status in Service Fabric explorer. When reviewing the logs on the AXSF nodes' work directories, the following DBSync error can be found.
 
 ```stacktrace
 Microsoft.Dynamics.AX.InitializationException: Database login failed. Please check SQL credentials and try again.
@@ -1534,7 +1524,7 @@ Microsoft.Dynamics.AX.InitializationException: Database login failed. Please che
 
 ## DBSync fails with PEAP and first release APP version 10.0.14 Platform update 38
 
-**Issue:** During deployment, the deployment fails with the AXSF applications staying in "InBuild" status in Service Fabric explorer. When reviewing the logs on the AXSF nodes's work directories, the following DBSync error is present multiple times.
+**Issue:** During deployment, the deployment fails with the AXSF applications staying in "InBuild" status in Service Fabric explorer. When reviewing the logs on the AXSF nodes' work directories, the following DBSync error is present multiple times.
 
 ```stacktrace
 10/01/2020 14:49:25: Failed when creating deadlock capture session event System.Data.SqlClient.SqlException (0x80131904): User does not have permission to perform this action.
@@ -1626,7 +1616,7 @@ Microsoft.Dynamics.AX.Framework.Management.Reports.PublishReportCommand
     ```
 
 > [!IMPORTANT]
-> If you used remoting, be sure to run the cleanup steps after the setup is completed. For instructions, see [Step 20. Tear down CredSSP, if remoting was used](./setup-deploy-on-premises-pu41.md#teardowncredssp).
+> If you used remoting, be sure to run the cleanup steps after the setup is completed. For instructions, see [Tear down CredSSP, if remoting was used](./setup-deploy-on-premises-pu41.md#teardowncredssp).
 
 #### Manually add these permissions:
 1. Go to your BI node.
@@ -1648,10 +1638,41 @@ Microsoft.Dynamics.AX.Framework.Management.Reports.PublishReportCommand
     .\Set-ServiceControlManagerPermissions.ps1
     ```
     
-1. Run the following command in Powershell with Administrator privileges to verify the setup.
+1. Run the following command in PowerShell with Administrator privileges to verify the setup.
 
     ```powershell
     .\Set-ServiceControlManagerPermissions.ps1 -Test
     ```
+
+## Deployment fails on version 10.0.21 and later
+
+**Issue:** The deployment fails with the following error.
+
+```stacktrace
+System.AggregateException: One or more errors occurred. ---> 
+LocalAgentCommon.LocalAgentInvalidOperationException: Unable to convert the topology file [\\DC1\D365FFOAgent\assets\topology.xml\088f79e2-3a60-4c2a-9911-c3aadb15959f\7819ab4b-31a1-4738-8ca2-02231239ddbb\Topology.xml] to a valid [config.json]. --->
+Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: F. Path
+```
+
+**Reason:** The configuration generation method was changed in version 10.0.21.
+
+**Resolution:**  To be able to generate the new configuration, you must upgrade to local agent 2.7.0 or later. We recommended that you upgrade to the latest version available.
+
+## Add-CertToServicePrincipal fails
+
+**Issue:** The execution ends unexpectedly with the following error.
+
+```stacktrace
+Where-Object : Cannot convert null to type "System.DateTime".
+At C:\InfrastructureScripts\Scripts\Add-CertToServicePrincipal.ps1:93 char:44
++ ... edentials | Where-Object {[datetime]$_.EndDate -eq $localAgentCertEnd ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   + CategoryInfo          : InvalidArgument: (:) [Where-Object], RuntimeException
+   + FullyQualifiedErrorId : nullToObjectInvalidCast,Microsoft.PowerShell.Commands.WhereObjectCommand
+```
+
+**Reason:** Version 7.0 of the Azure PowerShell module has introduced breaking changes that are not compatible with the scripts.
+
+**Resolution:** Downgrade the version of the Azure PowerShell module to version 6.6.0.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

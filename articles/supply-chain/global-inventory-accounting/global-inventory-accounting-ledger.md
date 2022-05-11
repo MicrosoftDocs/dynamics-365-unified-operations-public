@@ -1,14 +1,14 @@
 ---
 title: Global Inventory Accounting ledger
 description: This topic describes Global Inventory Accounting ledgers, which are defined by a combination of a currency, a calendar, a convention, and an association with a legal entity.
-author: AndersGirke
+author: JennySong-SH
 ms.date: 06/18/2021
 ms.topic: article
 # ms.search.form: [Operations AOT form name to tie this topic to]
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: aevengir
+ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
 ---
@@ -16,7 +16,8 @@ ms.dyn365.ops.version: 10.0.20
 # Global Inventory Accounting ledger
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)] <!--KFM: Until 4/30/2022 -->
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!--KFM: Preview until 4/30/2022 -->
 
 Global Inventory Accounting has its own set of ledgers. Each time an inventory-related transaction is processed for a relevant legal entity, the system can account for that transaction in any number of Global Inventory Accounting ledgers, as required.
 

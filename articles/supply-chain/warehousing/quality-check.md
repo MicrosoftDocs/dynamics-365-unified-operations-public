@@ -3,7 +3,7 @@
 
 title: Quality check
 description: This topic provides information about the Quality check feature. This feature lets warehouse workers do quick spot checks for quality while they receive items to the inbound dock area.
-author: mirzaab
+author: Mirzaab
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
@@ -43,12 +43,9 @@ When you use this feature, the arrival and quality check occur in the following 
 
 This process can also be set up so that all scanned license plates are immediately diverted to the quality check location.
 
-## Turn on the Quality check feature
+## Turn the Quality check feature on or off
 
-Before you can use the *Quality check* feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on if it's required. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** *Warehouse management*
-- **Feature name:** *Quality check*
+To use the functionality described in this topic, the *Quality check* feature must be turned on for your system. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *Quality check* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Set up the feature for the example scenario
 

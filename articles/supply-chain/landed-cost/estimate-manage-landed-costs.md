@@ -3,7 +3,7 @@
 
 title: Estimate and manage landed costs
 description: The system uses your auto cost setup to determine an estimate for your landed cost. This topic explains how you can define various scenarios to deliver a more accurate estimate.
-author: sherry-zheng
+author: Weijiesa
 ms.date: 01/26/2021
 ms.topic: article
 ms.prod: 
@@ -15,12 +15,12 @@ ms.search.form: ITMCostTemplateTable, ITM CostEstimateDialog, ITMCostEstimateTab
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
+
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: chuzheng
+ms.author: weijiesa
 ms.search.validFrom: 2021-01-26
 ms.dyn365.ops.version: 10.0.17
 ---

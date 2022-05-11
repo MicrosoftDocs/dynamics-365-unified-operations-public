@@ -3,8 +3,8 @@
 
 title: Manage leave requests in Teams
 description: This topic shows how to request time off in the Dynamics 365 Human Resources app in Microsoft Teams.
-author: andreabichsel
-ms.date: 07/16/2021
+author: twheeloc
+ms.date: 12/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,13 +15,13 @@ ms.search.form: LeaveAbsenceWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
 
@@ -41,12 +41,15 @@ You can find the Dynamics 365 Human Resources app in the Teams store.
  
 2. Search for Dynamics 365 Human Resources, and then select the **Human Resources** tile.
 
+> [!NOTE]
+> Starting December 20, 2021, the Human Resources App bot services (version 1.1.4) hosted in Microsoft tenant will be decommissioned. The most up-to-date extension (version 1.1.5) is available for install. For more information, see [Manage leave requests in Teams](hr-admin-teams-leave-app.md#update-app).
+
 3. Select the **Add** button to install the app.
 
 If the app doesn't automatically sign you in, select the **Settings** tab to sign in.
 
 > [!NOTE]
-> If you don’t see a sign-in dialog box, check your browser settings to allow pop-ups. 
+> If you don't see a sign-in dialog box, update your browser settings to allow pop-ups. 
 
 If you have access to more than one instance of Human Resources, you can select which environment you want to connect to in the **Settings** tab.
 
@@ -58,13 +61,13 @@ If you have access to more than one instance of Human Resources, you can select 
 After the app installs, a welcome message appears, letting you know the types of actions the bot can take on your behalf.
 
 > [!NOTE]
-> When first interacting with the bot, you might need to sign in. If you don’t see a sign-in dialog box, check your browser settings to allow pop-ups.
+> When you first interact with the bot, you might have to sign in. If you don't see a sign-in dialog box, update your browser settings to allow pop-ups.
 
 You can ask the bot to:
 
 - View your current leave balances. For example, send a message that says, "View leave balances."
 
-- Start a leave request for you. For example, send a message that says, “Take time off” or “I want to take vacation time off next Thursday and Friday” to be more specific for requesting leave for the vacation leave type. 
+- Start a leave request for you. For example, send a message that says, "Take time off" or "I want to take vacation time off next Thursday and Friday" to be more specific for requesting leave for the vacation leave type. 
 
   ![Start a leave request in Teams chat.](./media/hr-teams-leave-app-initiate.png)
 
@@ -88,7 +91,7 @@ The **Time off** tab allows you to view:
 
 - Upcoming leave requests
 
-- Time-off requests
+- Time off requests
 
 - Draft leave requests
  
@@ -118,11 +121,11 @@ The **Time off** tab allows you to view:
    
 ### Respond to Teams notifications
 
-When you or a worker you're an approver for submits a leave request, you'll receive a notification in the Human Resources app in Teams. You can select the notification to view it. Notifications also appear in the **Chat** area.
+When you or a worker that you're an approver for submits a leave request, you will receive a notification in the Human Resources app in Teams. You can select the notification to view the leave request. Notifications also appear in the **Chat** area.
 
 If you're an approver, you can select **Approve** or **Deny** in the notification. You can also provide an optional message.
 
-## Send upcoming time-off information to your coworkers
+## Send upcoming time off information to your coworkers
 
 After you install the Human Resources app for Teams, you can easily send information about your upcoming time off to your coworkers in teams or chats.
 
@@ -172,7 +175,7 @@ If you're having trouble signing into or using the Dynamics 365 Human Resources 
 
 If you can't sign into the app, it's possible that the account you're using to sign into Microsoft Teams isn't associated with an employee record in Dynamics 365 Human Resources. Contact your system administrator to ensure your employee record is correctly associated.
 
-### Can't find the Dynamics 365 Human Resources environment in Settings
+### Can't find the Dynamics 365 Human Resources environment in settings
 
 If you can't select the correct Dynamics 365 environment, the user record might not have been correctly synced. Contact your system administrator to re-create the user record and associate it with the user credentials. Then try to sign in to the Human Resources app for Microsoft Teams in a few minutes.
 
@@ -204,7 +207,7 @@ If you receive an error when you're trying to approve leave requests in the Team
 
 2. Ensure users are signed into the **Chats** tab with the same credentials they use for approving leave requests. Use the messages "sign out" and then "sign in" to sign in with the correct credentials.
 
-3. If the issue persists, check the status of the Business Events system batch job as a system administrator. If it's in a waiting or executing stage, check back in a few minutes. If the status remains unchanged, log a support ticket so our team can help resolve the issue.
+3. If the issue persists, check the status of the **Business Events system** batch job as a system administrator. If it's in a **Waiting** or **Executing** stage, check again in a few minutes. If the status remains unchanged, log a support ticket so that our team can help fix the issue.
 
 ## Known accessibility issues
 
@@ -213,7 +216,7 @@ The Human Resources app in Teams has the following accessibility issues that we'
 | Issue | Workaround or explanation |
 | --- | --- |
 | Zooming to 400% on desktop hides some of the action buttons from view. | We recommend using a magnifier instead until we can support this zoom level. |
-| On the **Time off** tab, voiceover announces a button action while reading the header for the time-off grid. | The header and elements within the grid are grouped by year, and they're collapsible. Voiceover interprets this as an actionable item, but it isn't. |
+| On the **Time off** tab, voiceover announces a button action while it reads the header for the time off grid. | The header and elements in the grid are grouped by year, and they are collapsible. Voiceover interprets this presentation as an actionable item, but it isn't. |
 | On the **Time off** tab, there's an extra swipe gesture when navigating to **Reason code** in a new request. | There is no hidden control that the swipe navigation is trying to get to. |
 | On the **Time off** tab, if you swipe while the calendar is open, you end up outside the control instead of at the top in a new request or while editing a request. | When you reach **Go to today**, consider that to be the end of the control and swipe in the reverse direction to get back to the top. |
 | On the **Chat** tab, the focus jumps back to the top when you enter a date while using the assistive tool or keyboard navigation. | Tab until you reach your input area again. |
@@ -222,19 +225,19 @@ The Human Resources app in Teams has the following accessibility issues that we'
 
 ### Microsoft Language Understanding Intelligent Service (LUIS)
 
-With the Dynamics 365 Human Resources bot in Microsoft Teams, the user’s text inputs are analyzed for understanding the underlying query/intent. The user’s input such as “Search account Contoso” is routed to one of Microsoft’s Cognitive Service called Language Understanding Intelligent Service (LUIS). Read more about LUIS [here](https://www.luis.ai/). The LUIS service disambiguates or understands the intent of user input (in this case, the intent is to find information) and the target entity (in this case, the intended entity is an account named Contoso). This information is then passed on to Microsoft’s [Azure bot framework](https://azure.microsoft.com/services/bot-service/), which interacts with data from Dynamics 365 Human Resources and retrieves the desired information for the user query. 
+With the Dynamics 365 Human Resources bot in Microsoft Teams, the user's text inputs are analyzed for understanding the underlying query/intent. The user's input such as "Search account Contoso" is routed to one of Microsoft's Cognitive Service called Language Understanding Intelligent Service (LUIS). Read more about LUIS [here](https://www.luis.ai/). The LUIS service disambiguates or understands the intent of user input (in this case, the intent is to find information) and the target entity (in this case, the intended entity is an account named Contoso). This information is then passed on to Microsoft's [Azure bot framework](https://azure.microsoft.com/services/bot-service/), which interacts with data from Dynamics 365 Human Resources and retrieves the desired information for the user query. 
 
-By installing and allowing access to use of the bot, you agree to allow the LUIS service and Azure bot framework to process the intent behind the input,  which results in an enhanced conversational user experience. The LUIS service and Azure bot framework may have varying levels of compliance compared to Dynamics 365 Human Resources. While the LUIS service has access to only the user queries and is not designed to be connected to the user’s Dynamics 365 Human Resources data or account, a user of the Dynamics 365 Human Resources bot could voluntarily enter a query containing Customer Data, Personal Data, or other data and such query content could get sent to the LUIS service and the Azure bot framework. 
+By installing and allowing access to use of the bot, you agree to allow the LUIS service and Azure bot framework to process the intent behind the input,  which results in an enhanced conversational user experience. The LUIS service and Azure bot framework may have varying levels of compliance compared to Dynamics 365 Human Resources. While the LUIS service has access to only the user queries and is not designed to be connected to the user's Dynamics 365 Human Resources data or account, a user of the Dynamics 365 Human Resources bot could voluntarily enter a query containing Customer Data, Personal Data, or other data and such query content could get sent to the LUIS service and the Azure bot framework. 
 
-The content of user’s queries and messages is retained in LUIS system for a maximum of 30 days, is encrypted at rest, and is not used for training or service improvement. Read more about Cognitive Services [here](https://azure.microsoft.com/services/cognitive-services/language-understanding-intelligent-service/). 
+The content of user's queries and messages is retained in LUIS system for a maximum of 30 days, is encrypted at rest, and is not used for training or service improvement. Read more about Cognitive Services [here](https://azure.microsoft.com/services/cognitive-services/language-understanding-intelligent-service/). 
 
 To manage admin settings for apps in Microsoft Teams, go to the [Microsoft Teams admin center](https://admin.teams.microsoft.com/).
 
 ### Microsoft Teams, Azure Event Grid, and Azure Cosmos DB
 
-When using the Dynamics 365 Human Resources app in Microsoft Teams, certain customer data may flow outside of the geographic region where your tenant’s Human Resources service is deployed.
+When using the Dynamics 365 Human Resources app in Microsoft Teams, certain customer data may flow outside of the geographic region where your tenant's Human Resources service is deployed.
 
-Dynamics 365 Human Resources transmits the employee’s leave request and workflow task details to Microsoft Azure Event Grid and Microsoft Teams. This data may be stored in Microsoft Azure Event Grid for up to 24 hours and will be processed in the United States, is encrypted in transit and at rest, and is not used by Microsoft or its subprocessors for training or service improvements. To understand where your data is stored in Teams, please see: [Location of data in Microsoft Teams](/microsoftteams/location-of-data-in-teams?preserve-view=true&view=o365-worldwide).
+Dynamics 365 Human Resources transmits the employee's leave request and workflow task details to Microsoft Azure Event Grid and Microsoft Teams. This data may be stored in Microsoft Azure Event Grid for up to 24 hours and will be processed in the United States, is encrypted in transit and at rest, and is not used by Microsoft or its subprocessors for training or service improvements. To understand where your data is stored in Teams, please see: [Location of data in Microsoft Teams](/microsoftteams/location-of-data-in-teams?preserve-view=true&view=o365-worldwide).
 
 While conversing with the chat bot in the Human Resources app, the conversation content may be stored in Azure Cosmos DB and transmitted to Microsoft Teams. This data may be stored in Azure Cosmos DB for up to 24 hours and may be processed outside of the geographic region where your tenant's Human Resources service is deployed, is encrypted in transit and at rest, and is not used by Microsoft or its subprocessors for training or service improvements. To understand where your data is stored in Teams, please see: [Location of data in Microsoft Teams](/microsoftteams/location-of-data-in-teams?preserve-view=true&view=o365-worldwide).
  

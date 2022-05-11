@@ -15,7 +15,7 @@ ms.search.form: BankReconciliationMatchRule, BankReconciliationMatchRuleSet
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 12971
 ms.assetid: b5073f83-31dc-404f-af42-3fd84a02a7c6

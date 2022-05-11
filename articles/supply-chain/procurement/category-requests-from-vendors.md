@@ -1,14 +1,14 @@
 ---
 title: Category requests from vendors
 description: This topic describes how vendors can request procurement categories for their account. It also describes the approval process that is completed by procurement agents.
-author: Henrikan
+author: GalynaFedorova
 ms.date: 04/19/2021
 ms.topic: article
 ms.search.form: VendRequestNewCategory
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2021-04-19
 ms.dyn365.ops.version: 10.0.18
 ---
@@ -21,11 +21,11 @@ The category request process lets vendors request that new procurement categorie
 
 Category requests are initiated by vendors in the **Vendor information** workspace. They are then submitted to your agency for review and approval. Approved categories are added to the list of procurement categories for the vendor's account.
 
-## Turn on the feature in your system
+## Turn the category requests from vendors feature on or off
 
-If your system doesn't already include the feature that is described in this topic, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the *Allow vendors to apply for procurement categories through vendor collaboration* feature.
+As of Supply Chain Management version 10.0.25, this feature is turned on by default. Admins can turn this functionality on or off by searching for the *Allow vendors to apply for procurement categories through vendor collaboration* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
-After the feature is turned on, you can still manually add procurement categories to vendor accounts. For information, see [Approve vendors for specific procurement categories](tasks/approve-vendors-specific-procurement-categories.md).
+If this feature is turned on, you can still manually add procurement categories to vendor accounts. For information, see [Approve vendors for specific procurement categories](tasks/approve-vendors-specific-procurement-categories.md).
 
 ## Vendor collaboration requirements
 

@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 262034
 ms.assetid: 9db38b3f-26b3-436e-8449-7ff243568a18
@@ -38,6 +38,9 @@ Organizations that pay vendors on a recurring schedule can now automate the proc
 - What vendor payment journal the resulting payments are saved in
 
 Payment proposal automations don't automatically post the payments. Therefore, you can continue to use any validation and workflow processes that you currently use to approve the payments that are created.
+
+> [!NOTE]
+> The **Vendor payment proposal automation** feature must be enabled in Feature management to utilize this functionality. 
 
 ## Define the occurrence of vendor payment proposals
 

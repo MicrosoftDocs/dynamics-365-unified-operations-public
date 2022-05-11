@@ -3,9 +3,9 @@
 
 title: Purchase requisition overview
 description: This topic describes the purchase requisition workflow and the different statuses that a purchase requisition can have.
-author: Henrikan
+author: GalynaFedorova
 ms.date: 11/02/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -21,7 +21,7 @@ ms.custom: ["2174", "intro-internal"]
 ms.assetid: 77d07119-4d9f-4c0e-acbe-d319203571ab
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
