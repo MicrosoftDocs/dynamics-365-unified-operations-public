@@ -167,7 +167,7 @@ For more information about how to add and configure the site picker module, see 
 
 In this scenario, there is only one channel, but there are multiple languages. You can change the appearance of a page based on the selected language by creating a page variant for it. You can then add localized content to the variant.
 
-When you have a page open in site builder, and you select the link in the upper right that shows the current channel and language, a channel and language picker appears, as shown in the following example illustration. If you want to override the page for the current language, select another locale, and then select **Change**. You can also change the channel if you're [managing a site with multiple channels and languages](#manage-site-content-with-multiple-channels-and-languages).
+When you have a page open in site builder, and you select the link in the upper right that shows the current channel and language, a channel and language picker appears, as shown in the following example illustration. If you want to override the page for the current language, select another locale, and then select **Change**. You can also change the channel if you're [managing a site that has multiple channels and languages](#manage-site-content-that has-multiple-channels-and-languages).
 
 ![Changing the language for a page in site builder.](media/channel-mapping-14.png)
 
