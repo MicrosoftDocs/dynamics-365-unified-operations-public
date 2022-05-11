@@ -4,7 +4,7 @@
 title: Configure express payments for PayPal
 description: This topic describes how to configure express payments for PayPal to enable faster checkout capabilities in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 04/15/2022
+ms.date: 05/11/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
