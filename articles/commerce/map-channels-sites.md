@@ -5,7 +5,7 @@
 title: Map channels to e-commerce sites
 description: This topic describes some of the more common channel mapping scenarios in Microsoft Dynamics 365 Commerce that can be extrapolated for most other business requirements.
 author: samjarawan
-ms.date: 04/27/2022
+ms.date: 05/11/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
