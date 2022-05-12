@@ -37,13 +37,18 @@ Because many entities that are available in Finance and Operations apps are enab
 
 ## Generate virtual entities
 
-1. In Dataverse, select the **Advanced find** filter button.
-2. Search for **Available Finance and Operations Entities**, and select **Results**.
+1. Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and select the **Environments** tab.
+2. On the **Environments** list, select the Power Platform environment associated with your Finance and Operations apps environment.
+3. In the **Details** section of the environment page, select the **Environment URL** link to open the Power Platform environment.
+4. At the top right of the page, select the **Settings** gear icon, and select **Advanced Settings**.
+5. At the top right of the **Settings** page, select the **Advanced Find** filter icon.
+6. In the **Advanced Find** page, select **Available Finance and Operations Entities** in the **Look for** drop-down list. 
+7. Enter any additional filter criteria to restrict the results to specific entities, and select **Results**.
 
     ![Catalog of entities.](../media/fovecatalog.png)
 
-3. Find and open the entity that you want to enable.
-4. Select the **Visible** checkbox, and then save your change.
+8. Find and open the entity that you want to enable.
+9. Select the **Visible** checkbox, and then save your change.
 
     ![Visible checkbox selected for an entity.](../media/foveenable.png)
 
