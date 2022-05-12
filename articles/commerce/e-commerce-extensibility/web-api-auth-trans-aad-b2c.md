@@ -29,13 +29,11 @@ You must set up your Azure AD B2C tenant in accordance with the guidance in [Ena
 
 There are various methods available to create the authentication token using the Azure AD B2C tenant application. Configurations will vary further depending on the developmental approach. The direct API authentication, resource owner password credentials (ROPC), and the Open ID Connect (OIDC) methods are supported by Azure AD B2C. 
 
-## How e-commerce site authentication with transferred tokens works
+## How e-commerce site authentication with transferred tokens
 
 Users entering an e-commerce site from a transferred authenticated session will be handled like users who directly authenticated against Azure AD B2C. When set up as described above, all current site authenticated activities will act similarly for transferred Azure AD B2C authenticated users as the in-site Azure AD user flow authenticated users.
 
-The tokens must be set with a **B2CToken** prefix (for example `Authorization: B2CToken <token>`) for the Commerce e-commerce rendering services to use the token.
-
-The authentication token must also reflect the Azure AD B2C **Tenant name** and **Client GUID** (as set up in the Commerce site builder site authentication profile) and the **Issuer** (as set up in Commerce headquarters for the e-commerce site). 
+Authentication tokens must be set with a **B2CToken** prefix (for example `Authorization: B2CToken <token>`) for the Commerce rendering service to use the token. The authentication token must also reflect the Azure AD B2C **Tenant name** and **Client GUID** (as set up in the Commerce site builder site authentication profile at **Tenant Settings \> B2C Settings**), and the **Issuer** (as set up in Commerce headquarters for the e-commerce site at **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters \> Identity Providers**). 
 
 ## Additional resources
 
