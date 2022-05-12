@@ -69,7 +69,7 @@ To create an email notification profile, open Headquarters and follow these step
 1. In the **Description** field, enter a relevant description.
 1. Set the **Active** switch to **Yes**.
 
-## Create a notification type
+## Add a notification type
 
 To create an email event, follow these steps.
 
