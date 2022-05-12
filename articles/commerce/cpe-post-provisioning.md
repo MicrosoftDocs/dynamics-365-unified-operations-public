@@ -161,21 +161,21 @@ To configure optional features for your Commerce evaluation environment, see [Co
 
 ### Site builder channel list is empty when configuring site
 
-If site builder does not show any online store channels, ensure that in headquarters the channels have been added to the Commerce Scale Unit as outlined in the [Before you start](#before-you-start) section. Also, ensure that you run **Initialize commerce scheduler** with the **Delete existing configuration** value set to **Yes**.  Once these are steps are completed, run the **9999** job on the Commerce Scale Unit the **Channel database** page.
+If site builder does not show any online store channels, in headquarters ensure that the channels have been added to the Commerce Scale Unit as described in the [Before you start](#before-you-start) section. Also, run **Initialize commerce scheduler** with the **Delete existing configuration** value set to **Yes**.  Once these are steps are completed, on the **Channel database** page (**Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Channel database**), run the **9999** job on the Commerce Scale Unit.
 
 ### Color swatches are not rendering on the category page, but are rendering on the product details page (PDP) page
 
-Ensure that the color and size swatches are set to be refinable:
+Follow these steps to ensure that the color and size swatches are set to be refinable.
 
 1. In headquarters, go to **Retail and Commerce \> Channel setup \> Channel categories and product attributes**.
 1. In the left pane, select the online store channel, and then select **Set attribute metadata**.
 1. Set the **Show attribute on channel** option to **Yes**, set the **Can be refined** option to **Yes**, and then select **Save**. 
-1. Return to the the online store channel page, and then select **Publish channel updates**.
-1. Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \>Channel database** and run the **9999** job on the Commerce Scale Unit.
+1. Return to the online store channel page, and then select **Publish channel updates**.
+1. Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Channel database** and run the **9999** job on the Commerce Scale Unit.
 
 ### Business features don't appear to be turned on the AW Business site
 
-In headquarters, ensure that the online store channel is configured with the **Customer type** set to **B2B**. If the channel is configured with **B2C**, a new channel will need to be created since the existing channel can't be edited. 
+In headquarters, ensure that the online store channel is configured with the **Customer type** set to **B2B**. If the **Customer type** is set to **B2C**, a new channel must be created since the existing channel can't be edited. 
 
 Demo data shipped in Commerce version 10.0.26 and earlier had a bug where the **AW Business online store** was misconfigured. The workaround is to create a new channel with the same settings and configurations except for **Customer type**, which should be set to **B2B**.
 
