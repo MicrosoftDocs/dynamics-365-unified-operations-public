@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Set up web API authentication transfer to Commerce using Azure Active Directory B2C
-description: This topic describes the capability to transfer an Azure Active Directory business-to-consumer (B2C) token to the e-commerce service from a user's web API.
+title: Set up web API authentication transfer using Azure Active Directory B2C
+description: This topic describes how to set up web API authentication transfer to a Microsoft Dynamics 365 Commerce e-commerce site using Azure Active Directory (Azure AD) business-to-consumer (B2C).
 author: BrianShook
 ms.date: 05/12/2022
 ms.topic: article
@@ -13,33 +13,34 @@ ms.author: brshoo
 ms.search.validFrom: 2017-06-20
 ---
 
-# Web API authentication transfer to E-commerce using Azure AD B2C
+# Set up web API authentication transfer using Azure Active Directory B2C
 
-This topic describes the Dynamics 365 Commerce E-commerce ability to receive a valid Azure Active Directory (Azure AD) business-to-consumer (B2C) token from an external web API or service. Users authenticating against the dedicated Azure AD B2C tenant from a separate service can be transferred to the E-commerce site to continue shopping, checkout, or authenticated site activities.
+This topic describes how to set up web API authentication transfer to a Microsoft Dynamics 365 Commerce e-commerce site using Azure Active Directory (Azure AD) business-to-consumer (B2C). 
 
-Dynamics 365 Commerce uses Azure AD B2C to support user credential and authentication flows. When developing external services or applications that may extend upon your Commerce E-commerce's site users authenticating against your established Azure AD B2C tenant can be transferred to the E-commerce site in an authentication state. The Commerce rendering service now handles the AAD B2C authenticated token to use within the site. 
+Microsoft Dynamics 365 Commerce uses Azure AD B2C to support user credential and authentication flows and has the ability to receive valid Azure AD B2C tokens from an external web API or service. The Commerce rendering service handles the Azure AD B2C authenticated tokens to use within a Commerce e-commerce site. Users authenticating against the dedicated Azure AD B2C tenant from a separate service can be transferred to an e-commerce site in an authenticated state to continue shopping, checkout, or authentication activities.
 
 ## Prerequisites
 
-Be sure to set up your E-commerce site with the Azure AD B2C tenant as instructed in the [Set up a B2C tenant in Commerce](../set-up-b2c-tenant.md).
+Be sure to set up your e-commerce site with the Azure AD B2C tenant as instructed in [Set up a B2C tenant in Commerce](../set-up-b2c-tenant.md).
 
-## Set up your web API settings for authentication
+## Set up web API settings for authentication
 
-Set up your Azure AD B2C tenant in accordance with the [Enable authentication in your own web API by using Azure AD B2C](/azure/active-directory-b2c/enable-authentication-web-api) article. Per the article instructions, you will need to:
+You must set up your Azure AD B2C tenant in accordance with the guidance in [Enable authentication in your own web API by using Azure AD B2C](/azure/active-directory-b2c/enable-authentication-web-api). According to the guidance, you must create an app registration for the Azure AD B2C tenant application that will handle web, mobile, or single page apps. This process is also documented in [Create a native application](mock-sign-in.md#create-a-native-application). The native application uses the mobile or standalone application to acquire the authentication token for the Azure AD B2C tenant.
 
-- Create an app registration for the Azure AD B2C tenant application which will handle web, mobile, or single page apps. This application will be used with the mobile or stand-alone application to acquire the token for the Azure AD B2C application which is also configured in the E-commerce settings for your Commerce site (the same application as the **Client GUID** used in configurations). App ID: 1 in the documentation above
-  - This process is also documented under the [Create a native application section](mock-sign-in.md#create-a-native-application) of the [Mock Sign in](mock-sign-in.md) article.
+There are various methods available to create the authentication token using the Azure AD B2C tenant application. Configurations will vary further depending on the developmental approach. The direct API authentication, resource owner password credentials (ROPC), and the Open ID Connect (OIDC) methods are supported by Azure AD B2C. 
 
-There are various paths to create the authentication token using the application above. Configurations will vary further depending on the developmental approach.  Applications may choose to use direct API authentication, resource owner password credentials (ROPC), or Open ID Connect (OIDC) methods supported by AAD B2C. 
+## How e-commerce site authentication with transferred tokens works
 
-## E-commerce site authentication with transferred token
+Users entering an e-commerce site from a transferred authenticated session will be handled like users who directly authenticated against Azure AD B2C. When set up as described above, all current site authenticated activities will act similarly for transferred Azure AD B2C authenticated users as the in-site Azure AD user flow authenticated users.
 
-Users entering the site from a transferred authenticated session will operate within the site similar to normal user authentication against AAD B2C in the site directly. When set up as described above, all current site authenticated activities will act similarly for transferred Azure AD B2C authenticated users as the in-site Azure AD user flow authenticated users.
+The tokens must be set with a **B2CToken** prefix (for example `Authorization: B2CToken <token>`) for the Commerce e-commerce rendering services to use the token.
 
-The tokens must be set with a **B2CToken** prefix (for example `Authorization: B2CToken <token>`) for the Commerce e-commerce rendering services to utilize the token.
+The authentication token must also reflect the Azure AD B2C **Tenant name** and **Client GUID** (as set up in the Commerce site builder site authentication profile) and the **Issuer** (as set up in Commerce headquarters for the e-commerce site). 
 
-The authentication token must also reflect the Azure AD B2C **Tenant name** and **Client GUID** (as set up in the Commerce site builder site authentication profile) and the Issuer (as set up in Commerce headquarters for the e-commerce site. 
+## Additional resources
 
-## Additional References
+[Set up a B2C tenant in Commerce](../set-up-b2c-tenant.md)
+
+[Enable authentication in your own web API by using Azure AD B2C](/azure/active-directory-b2c/enable-authentication-web-api)
 
 [Mock the signed-in state during local development](mock-sign-in.md)
