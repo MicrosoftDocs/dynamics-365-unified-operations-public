@@ -62,7 +62,7 @@ Google Pay is a digital wallet payment method. Set up payment mapping for Google
 - Select **OK**, and select **Save** back in the **Card Types** page. 
 
 ## Configure a Commerce online store for Google Pay
-In Commerce Headquarters, navigate to the **Retail and Commerce > Channels > Online stores** and select your site's online store channel by clicking the channel's **Retail Channel Id**. In the **Set up** menu, drop down the **Payment accounts** section. If not already set up, add the **Dynamics 365 Payment Connector for Adyen** according to the directions described in the [Set up Dynamics 365 Payment Connector for Adyen](adyen-connector-setup.md) article.
+In Commerce Headquarters, navigate to the **Retail and Commerce > Channels > Online stores** and select your site's online store channel by clicking the channel's **Retail Channel Id**. In the **Set up** menu, drop down the **Payment accounts** section. If not already set up, add the **Dynamics 365 Payment Connector for Adyen** according to the directions described in the [Set up Dynamics 365 Payment Connector for Adyen](adyen-connector-setup.md) article. In most cases, the **Dynamics 365 Payment Connector for Adyen** must be listed as the first Connector for your channel (as the primary).  Then followed by other connectors to be used (the **Dynamics 365 Payment Connector for PayPal** and **Dynamics 365 Payment Connector for GooglePay**).
 
 Once the Adyen Connector is configured, click on **Add** to add the **Dynamics 365 Payment Connector for GooglePay**. Fill in the following merchant properties for the connector:
 
@@ -89,16 +89,15 @@ Ensure to add "GooglePay" to the list of **Supported Tender Types** listed (sepa
 The previous Card Types > Processor mapping maps for the Adyen connector will capture the wallet card types used by Google Pay at the POS terminal. 
 
 
-
 ### Using the Payment Express module with Google Pay
-The **Payment Express** module works with supporting payment methods to offer site customers the option to checkout faster using their payment service account information in the checkout process. The module references the configured connector button and returns the user selected order details (addresses, contact information, and paying against the underlying payment method selected) to pre-populate the checkout form.
+The **Payment Express** module works with supporting payment methods to offer site customers the option to checkout faster using their payment service account information in the checkout process. The module references the configured connector button and returns the user-selected order details (addresses, contact information, and paying against the underlying payment method selected) to pre-populate the checkout form.
 
 With Google Pay, selecting the Google Pay button in the Payment Express section will launch the Google Pay payment iFrame window. A user will log in to their Google account and can use their account shipping address, billing address, email, and Google Pay payment method of choice to pay for the transaction.
 
-As the user completes the action in the Google Pay iFrame, they are directed to the Commerce site checkout page with the checkout form pre-populated with their chosen details. Note upon return of the user from Google Pay to the checkout page:
+As the user completes the action in the Google Pay iFrame, they are directed to the Commerce site checkout page with the checkout form pre-populated with their chosen details. Note that upon return of the user from the Google Pay window back to the checkout page:
 
 - In the Payment Express flow, the first **Delivery Option** available for the shipping address returned will be pre-selected for the customer.  
-- With Google Pay, a contact **email address** is not returned. Guest checkout users will still need to input an email address in the contact section of the checkout page. Signed-in users will have the data populated from their Dynamics customer account (their primary email used for authentication).
+- With Google Pay, a contact **email address** is **not** returned. Guest checkout users will still need to input an email address in the contact section of the checkout page. Signed-in users will have the contact data populated from their Dynamics customer account (their primary email used for authentication).
 
 The customer has the option to review the order, change checkout order details if desired, and will then select the **Place order** button to finalize the order.
 
@@ -124,7 +123,7 @@ To set up the Payment Express fragment with Google Pay for the online store, fol
 
 3. Click **Ok** to create the fragment.
 
-4. In the module tree, select the 'Default Container' module (showing under the pre-labeled root node named per the fragment name given in the step above. (example: 'Checkout express').
+4. In the module tree, select the 'Default Container' module (showing under the pre-labeled root node as the fragment name entered in the step above. (example: 'Checkout express').
 
 5. In the Properties section, update the Header to a heading you want to display for the express checkout section in your site (Example: Express Checkout)
 
@@ -132,12 +131,12 @@ To set up the Payment Express fragment with Google Pay for the online store, fol
 
    - **Container layout**: "Flow"
    - **Width**:"Fill container"
-   - **Children shown**: "Three"
+   - **Children shown**: "Three" (typically in use with other Payment express modules, for example a text box, payment express for PayPal, payment express for Google Pay)
    - **CSS class name**: "msc-express-payment-container" {required, see note below}
 
    >[!IMPORTANT]
 
-   >The **CSS class name** value must maintain the "msc-express-payment-container" style listed to control the behavior of the composable container during checkout. This includes hiding, collapsing, and actions designed for the Express Checkout section during the checkout flow. Additional styles can be included against the **CSS class name**. If customizing the behavior of the module, cross-check the style controls if using the same module library coded behavior in the Checkout module for Express Checkout behavior.
+   >The **CSS class name** value must maintain the "msc-express-payment-container" style listed to control the behavior of the composable container during checkout. This includes hiding, collapsing, and actions designed for the Express Checkout section during the checkout flow. Additional styles can be included against the **CSS class name**. If customizing the behavior of the module, cross-check the style controls if using the same module library coded behavior in the Checkout module for Express Checkout behavior. The "msc-express-payment-container" reference works with the default operations shipped with the module library starter kit Checkout module.
 
 7. In the module node tree, select the ellipses (...) on the **Default container** and click **add module**.
 
@@ -166,7 +165,7 @@ To set up the Payment Express fragment with Google Pay in the Checkout page, fol
 5. In the **Container** module properties, it is recommended to use the following property settings:
 	- **Container Layout**: Stacked
 	- **Width**: Fill container
-	- **Children Shown**: Three
+	- **Children Shown**: Three (this figure depends on the number of intended payment express modules and text block based on the visual arrangement desired)
 6. With the **Container** module still selected in the module tree, select the ellipsis (...), and then select **Add Fragment**.
 7. In the **Add Fragment** dialogue box, find and select your named created express payment fragment and click **OK.**
 8. Click the **Save** button to save your changes.
