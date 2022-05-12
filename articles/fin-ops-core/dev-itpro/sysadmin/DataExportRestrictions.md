@@ -6,6 +6,7 @@ description: This topic provides information for execution restriction for speci
 author: peakerbl
 ms.date: 05/12/2022
 ms.topic: article
+ROBOTS: NOINDEX, NOFOLLOW
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
