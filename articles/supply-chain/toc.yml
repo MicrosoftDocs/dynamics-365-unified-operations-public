@@ -12,6 +12,8 @@
         items:
         - name: What's new or changed in Supply Chain Management home page
           href: get-started/whats-new-home-page.md
+        - name: Supply Chain Management 10.0.28 (July 2022)
+          href: get-started/whats-new-scm-10-0-28.md
         - name: Supply Chain Management 10.0.27 (July 2022)
           href: get-started/whats-new-scm-10-0-27.md
         - name: Supply Chain Management 10.0.26 (May 2022)
