@@ -4,7 +4,7 @@
 title: Configure a Dynamics 365 Commerce evaluation environment
 description: This topic explains how to configure a Microsoft Dynamics 365 Commerce evaluation environment after it's provisioned.
 author: psimolin
-ms.date: 12/10/2021
+ms.date: 05/12/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
