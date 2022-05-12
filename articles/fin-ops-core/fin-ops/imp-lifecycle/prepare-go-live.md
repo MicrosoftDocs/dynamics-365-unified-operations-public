@@ -2,7 +2,7 @@
 # required metadata
 
 title: Prepare for go-live
-description: This topic describes how to prepare to go live with a project by using Microsoft Dynamics Lifecycle Services (LCS).
+description: This topic provides guidance about how to prepare for the go-live for Finance and Operations apps.
 author: ClaudiaBetz-Haubold
 ms.date: 05/12/2022
 ms.topic: article
@@ -28,112 +28,114 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides guidance about how to prepare for the go-live for Dynamics 365 Finance and Operations apps.
+This topic provides guidance about how to prepare for the go-live for Finance and Operations apps.
 
-To ensure that the production environment is used for live operations, Microsoft provisions the production instance when the solution is ready, and after the project readiness is validated as part of the go-live readiness review with Microsoft. For more information about the environments in your subscription, see the [Licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409).
+To ensure that the production environment is used for live operations, Microsoft provisions the production instance when the solution is ready and after project readiness has been validated as part of the Go-live Readiness Review with Microsoft. For more information about the environments in your subscription, see the [Licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409).
 
-For answers to common questions about go-live, see the [Go-live FAQ](go-live-faq.md). 
+For answers to common questions about go-live, see the [Go-live FAQ](go-live-faq.md).
 
 The following table lists the key steps in the go-live process.
 
 | Step | Duration/When | Who | Notes |
-|-|-|-|-|
-| Validate prerequisites | When a project is close to the end of the testing phase and you are planning the go-live review. | Customer/Partner | See the section, [Go-live readiness review prerequisites](#prerequisites) for more information. |
-| Go-live readiness review with Microsoft | No later than four weeks before the go-live. | Customer/Partner submits answers to review questions on the FastTrack for Dynamics 365 implementation portal. Microsoft FastTrack provides a review report. | See the section [Go-live readiness review with Microsoft](#readiness)for more information.  |
-| Go-live review workshop with Microsoft (only for eligible projects) | The workshop is part of the go-live readiness review. | Microsoft FastTrack solution architect with the project team | This applies only to eligible projects with [FastTrack engagement](/dynamics365/fasttrack/eligibility). For more information about the workshop, see [Go-live Readiness workshops](/dynamics365/fasttrack/go-live-workshops).  
-| Production deployment | Production deployment can be initiated as soon as the go-live readiness review is complete. After deployment is triggered, production deployment takes approximately 30 minutes. | Customer/Partner triggers the deployment in Lifecycle Services (LCS). | After the go-live review is successfully completed, the **Configure** button is enabled for the production environment. Selecting this button [triggers the production deployment](../../dev-itpro/deployment/deployenvironment-newinfrastructure). | 
-| Deployable package installation | An average of 30 minutes | Customer/Partner | Follow the instructions in the topic, [Promote an update to production environments](../../dev-itpro/deployment/updateenvironment-newinfrastructure.md#promote-an-update-to-production-environments). The packages must contain all the models and binaries consolidated in [all-in-one deployable packages](../../dev-itpro/dev-tools/aio-deployable-packages.md). |
-| Data migration to production | Depends on the chosen method | Customer/Partner | &nbsp; |
-| Cutover activities | Depends on the project | Customer/Partner | &nbsp; |
-| Go-live |&nbsp;  | Customer/Partner | &nbsp;  |
+|---|---|---|---|
+| Validation of prerequisites | A project is close to the end of the testing phase, and you're planning the go-live review. | Customer/Partner | For more information, see the [Go-live Readiness Review prerequisites](#prerequisites) section. |
+| Go-live Readiness Review with Microsoft | No later than four weeks before the go-live | Customer/Partner submits answers to review questions in the FastTrack for Dynamics 365 implementation portal. Microsoft FastTrack provides a review report. | For more information, see the [Go-live Readiness Review with Microsoft](#readiness) section. |
+| Go-live review workshop with Microsoft (only for eligible projects) | The workshop is part of the Go-live Readiness Review. | Microsoft FastTrack solution architect together with the project team | This step applies only to eligible projects that have [FastTrack engagement](/dynamics365/fasttrack/eligibility). For more information about the workshop, see [Go-live Readiness workshops](/dynamics365/fasttrack/go-live-workshops). |
+| Production deployment | Production deployment can be initiated as soon as the Go-live Readiness Review is completed. After deployment is triggered, production deployment takes approximately 30 minutes. | Customer/Partner triggers the deployment in Microsoft Dynamics Lifecycle Services (LCS). | After the go-live review is successfully completed, the **Configure** button is enabled for the production environment. Selection of this button [triggers the production deployment](../../dev-itpro/deployment/deployenvironment-newinfrastructure). |
+| Deployable package installation | An average of 30 minutes | Customer/Partner | Follow the instructions in [Promote an update to production environments](../../dev-itpro/deployment/updateenvironment-newinfrastructure.md#promote-an-update-to-production-environments). The packages must contain all the models and binaries consolidated into [all-in-one deployable packages](../../dev-itpro/dev-tools/aio-deployable-packages.md). |
+| Data migration to production | The duration/time depends on the method that is used. | Customer/Partner | |
+| Cutover activities | The duration/time depends on the project. | Customer/Partner | |
+| Go-live | | Customer/Partner | |
 
-## <a name="prerequisites"></a> Go-live readiness review prerequisites
+## <a name="prerequisites"></a>Go-live Readiness Review prerequisites
 
-The project team should validate solution readiness. The following prerequisites must be met before initiating the Go-live Readiness Review with Microsoft. The production environment can be deployed after the Go-live Readiness Review with Microsoft has been successfully completed. 
+The project team should validate solution readiness. The following prerequisites must be met before the Go-live Readiness Review with Microsoft can be initiated. The production environment can be deployed after the Go-live Readiness Review with Microsoft has been successfully completed.
 
-- UAT and performance testing is complete or almost complete on a Tier-2 (or higher) environment. Tier-1 environments must not be used for UAT or performance testing. For more information, see [Tier-1 vs. Tier-2 and higher](environment-planning.md#tier-1-vs-tier-2-and-higher). To identify the correct sandbox environment tier based on your transaction volumes, see [Selecting the correct Tier-2 or higher environment](environment-planning.md#selecting-the-correct-tier-2-or-higher-environment). 
+- User acceptance testing (UAT) and performance testing have been completed or almost completed in a Tier-2 (or higher) environment. Tier-1 environments must not be used for UAT or performance testing. For more information, see [Tier-1 vs. Tier-2 and higher](environment-planning.md#tier-1-vs-tier-2-and-higher). For information about how to identify the correct sandbox environment tier, based on your transaction volumes, see [Selecting the correct Tier-2 or higher environment](environment-planning.md#selecting-the-correct-tier-2-or-higher-environment).
 
-  During the UAT phase, test all the business processes that you've implemented and any customizations that you've made. 
-  
-    -	Test cases should cover the entire scope of requirements.
-    -	Use migrated data for testing. This data should include master data and opening balances, even if they aren't yet final.
-    -	Use the correct security roles for testing, including default roles and custom roles that are assigned to users.
-    -	Make sure that the solution complies with any company-specific and industry-specific regulatory requirements.
-    -	Obtain sign-off from the customer.
+    During the UAT phase, test all the business processes that you've implemented and any customizations that you've made.
 
-  Perfomance testing is a crucial part of validating the readiness of your solution. For detailed guidance on the recommeded practices, review the [Performance Testing Techtalks](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/performance-testing-in-microsoft-dynamics-365-techtalk-series). 
+    - Test cases should cover the entire scope of requirements.
+    - Use migrated data for testing. This data should include master data and opening balances, even if they aren't yet final.
+    - Use the correct security roles for testing, including default roles and custom roles that are assigned to users.
+    - Make sure that the solution complies with any company-specific and industry-specific regulatory requirements.
+    - Obtain sign-off from the customer.
 
-- The environment version planned for the go-live is compliant with the [Software lifecycle policy](../../dev-itpro/migration-upgrade/versions-update-policy.md). If you use Commerce Scale Units (CSU), the CSU version must be in sync with the environment version. For more information, see [Dynamics 365 Commerce component versioning requirements](/commerce/arch-component-versioning.md#component-dependencies). 
-- Key customer team members are added to the LCS project.
-- A generic service account is added to LCS, which will be used to deploy the production environment.
-- All licenses that are needed for go-live are purchased on the correct tenant. 
-- The final subscription estimator is uploaded and activated in LCS, after all licences were purchased. For more information, see [Subscription estimator in Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/subscription-estimator.md).
-- The Customization analysis report (CAR) has been run and critical issues have been addressed. For more information, see [Customization Analysis Report (CAR)](../../dev-itpro/dev-tools/customization-analysis-report.md).
-- The go-live date in LCS correctly represents the go-live date you are targeting. This is the date when end users will start live operations, not cutover activities.
-- All relevant tasks and phases in the [LCS methodology](../../dev-itpro/lifecycle-services/lcs-works-lcs.md#methodologies) are complete. It is possible to deploy production only when all phases including the **Test phase**, are complete. To complete a phase in LCS, first complete every required step in that phase. When all the steps in a phase are completed, you can complete the whole phase. You can always reopen a phase later if you must make changes. The process of completing a step has two parts:
+    Performance testing is a crucial part of validating the readiness of your solution. For detailed guidance about the recommended practices, review the [Performance Testing Techtalks](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/performance-testing-in-microsoft-dynamics-365-techtalk-series).
 
-    - Do the actual work, such as a fit-gap analysis or user acceptance testing (UAT).
-    -	Mark the corresponding step in the LCS methodology as you complete it.
-   
-   Complete the steps in the methodology as you make progress with the implementation. Don't wait until the last minute.
+- The environment version that is planned for the go-live complies with the [Software lifecycle policy](../../dev-itpro/migration-upgrade/versions-update-policy.md). If you use Commerce Scale Units (CSU), the CSU version must be in sync with the environment version. For more information, see [Component dependencies](/commerce/arch-component-versioning.md#component-dependencies).
+- Key customer team members have been added to the LCS project.
+- A generic service account that will be used to deploy the production environment has been added to LCS.
+- All licenses that are required for go-live have been purchased in the correct tenant.
+- After all licenses have been purchased, the final subscription estimator has been uploaded and activated in LCS. For more information, see [Subscription estimator in Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/subscription-estimator.md).
+- The Customization analysis report (CAR) has been run, and critical issues have been addressed. For more information, see [Customization Analysis Report (CAR)](../../dev-itpro/dev-tools/customization-analysis-report.md).
+- The go-live date in LCS correctly represents the go-live date that you're targeting. This date is the date when end users will start live operations, not cutover activities.
+- All relevant tasks and phases in the [LCS methodology](../../dev-itpro/lifecycle-services/lcs-works-lcs.md#methodologies) have been completed. Production can be deployed only after all phases, including the Test phase, have been completed. To complete a phase in LCS, first complete every required step in that phase. When all the steps in a phase have been completed, you can complete the whole phase. You can always reopen a phase later if you must make changes. The process of completing a step has two parts:
 
-## <a name="readiness"></a> Go-live Readiness Review with Microsoft
+    - Do the actual work, such as a fit-gap analysis or UAT.
+    - Mark the corresponding step in the LCS methodology as you complete it.
+
+    Complete the steps in the methodology as you make progress with the implementation. Don't wait until the last minute.
+
+## <a name="readiness"></a>Go-live Readiness Review with Microsoft
 
 > [!IMPORTANT]
-> In May 2022, the process has transitioned from a Microsoft Word checklist to the FastTrack for Dynamics 365 implementation portal. 
-> 
-> As of June 15, 2022, Word Go-live checklists will no longer be accepted. Go-live reviews should be only be initiated in the portal.
-> 
-> If you are already in the process of using a Word checklist, you can continue if you plan to submit the Word checklist before June 15th. However, questions on the portal are the same as in the checklist, so we invite you to use the portal. 
+> In May 2022, the process transitioned from a Word checklist to the FastTrack for Dynamics 365 implementation portal.
+>
+> As of June 15, 2022, Word checklists will no longer be accepted. Go-live reviews can be initiated only in the portal.
+>
+> If you're already in the process of using a Word checklist, you can continue if you plan to submit the Word checklist before June 15, 2022. However, because the portal and the Word checklist include the same questions, we invite you to use the portal.
 
-All Finance and Operations apps customers must complete a Go-live Readiness Review with the [Microsoft FastTrack for Dynamics 365](/dynamics365/fasttrack/) team before production environment can be deployed. The key goal of the review is to assess project readiness and help you have a smooth and successful go-live experience. LCS project users will receive an e-mail reminder about the Go-live Readiness Review based on the go-live date in LCS.
+All Finance and Operations apps customers must complete a Go-live Readiness Review with the [Microsoft FastTrack for Dynamics 365](/dynamics365/fasttrack/) team before production environments can be deployed. The main purpose of the review is to assess project readiness and help you have a smooth and successful go-live experience. LCS project users will receive an email reminder about the Go-live Readiness Review, based on the go-live date in LCS.
 
-The review may take up to three business days for the initial report, plus additional time for risk mitigation, if required. Determine the right time to start this review to meet the go-live timeline. 
+The review might require up to three business days for the initial report, plus additional time for any risk mitigation that is required. Determine an appropriate time to start this review, so that you can meet the go-live timeline.
 
-The Go-live Readiness Review is executed on the FastTrack for Dynamics 365 implementation portal. 
+The Go-live Readiness Review is done in the FastTrack for Dynamics 365 implementation portal.
 
 ### Initiate the Go-live Readiness Review
 
-1.	The customer/partner should send an e-mail to d365fogl@microsoft.com that:
+1. The customer/partner sends an e-mail to <d365fogl@microsoft.com> and includes the following information:
 
-    -	Confirms the project is ready to start the Go-live Readiness Review.
-    -	Confirm the project LCS ID. 
-    -	Confirm which users from the LCS project will be Go-live Readiness Review particiants and should be granted with access to the portal for the Go-live Readiness Review process.
+    - Confirmation that the project is ready to start the Go-live Readiness Review
+    - Confirmation of the LCS project ID
+    - Confirmation of the users from the LCS project who will participate in the Go-live Readiness Review and should be granted access to the portal for the Go-live Readiness Review process
 
     > [!NOTE]
-    > Key stakeholders from the customer organization that are participating in the review must be selected as **Review participants** on the portal. 
+    > Key stakeholders from the customer organization who are participating in the review must be selected as **Review participants** in the portal.
 
-2. Microsoft grants portal access to the requested LCS project users and confirms this by responding to an e-mail.
-3. The customer/partner starts the review on the portal by following the guidance provided in the [Portal Help article]( https://experience.dynamics.com/FTimplementationportal/help/help-details-page/?id=a275750e-2ffb-eb11-94ef-0022482594cd&searchtxt=). Users who have access to the portal can access this article.
+2. Microsoft grants portal access to the requested LCS project users and confirms that this task has been completed by responding to the email.
+3. The customer/partner starts the review in the portal by following the guidance in the [Portal Help article](https://experience.dynamics.com/FTimplementationportal/help/help-details-page/?id=a275750e-2ffb-eb11-94ef-0022482594cd&searchtxt=). All users who have access to the portal can access this article.
 
 ### Submit the review
-- The project team should provide answers to all questions in the review. The review process on the portal supports multi-user scenarios. Multiple team members can provide details for the go-live review at the same time. 
-- When all answers to the Go-live Readiness Review questions are provided, submit the review to Microsoft by selecting **Submit**. 
+
+- The project team should provide answers to all questions in the review. The review process in the portal supports multi-user scenarios. Multiple team members can provide details for the go-live review at the same time.
+- When answers have been provided to all the questions in the Go-live Readiness Review, submit the review to Microsoft by selecting **Submit**.
 
 ### After the review is submitted in the portal
-- Microsoft FastTrack reviews the project and provides a report that describes the potential risks, best practices, and recommendations for a successful go-live of the project. The review may take up to three business days for the initial report, plus additional time for risk mitigation, if required.
-- Users who are selected in the portal as **Review participants** will receive e-mail communication with updates about the review. 
-- When all critical risks are addressed and the review is complete, Microsoft will enable the production environment slot in LCS and the project. The customer/partner can now trigger the prodcution environment deployment.
+
+- Microsoft FastTrack reviews the project and provides a report that describes the potential risks, best practices, and recommendations for a successful go-live of the project. The review might require up to three business days for the initial report, plus additional time for any risk mitigation that is required.
+- Users who have been selected as **Review participants** in the portal receive email communication that provides updates about the review.
+- When all critical risks have been addressed, and the review has been completed, Microsoft enables the production environment slot in LCS and the project. The customer/partner can then trigger the production environment deployment.
 
 > [!NOTE]
-> If you face any issue with the portal, reach out to the portal Support team by selecting **Contact us** in the top-right corner of the portal or by sending an email to ftd365ip-support@microsoft.com. In the email, specify the LCS ID for your project and provide details describing the issue.
+> If you encounter any issue with the portal, contact the portal Support team by selecting **Contact us** in the upper-right corner of the portal or sending an email to <ftd365ip-support@microsoft.com>. In the email, specify the ID of your project in LCS, and provide details that describe the issue.
 
 ## Production environment deployment
 
 > [!NOTE]
-> The production environment must be used exclusively to run your business operations. Do not use the production environment for testing, demo, or training purposes. You will be able to perform the cutover and if planned, mock the cutover in production. To test the solution, use an appropriate sandbox environment, which is designed with the necessary elements and services for testing.
+> The production environment must be used exclusively to run your business operations. Don't use it for testing, demo, or training purposes. You will be able to do the cutover, and mock the cutover (if a mock cutover is planned), in production. To test the solution, use an appropriate sandbox environment that has been designed so that it includes all the elements and services that are required for testing.
 
-We recommend that you select a service account for environment deployment. For example, as the admin user of the environments that you deploy, select a generic user account. If you select a named user account, you might not be able to access an environment if that user isn't available. There are some scenarios where the admin user must access an environment. For example:
+We recommend that you select a service account for environment deployment. For example, select a generic user account as the admin user of the environments that you deploy. If you select a named user account, you might not be able to access an environment if that user is unavailable. Here are some examples of scenarios where the admin user must access an environment:
 
-- **First sign-in to any environment after initial deployment** – The Admin user is the only user who can access the environment.
-- **First sign-in to a sandbox environment after a database refresh from the production environment** – All user accounts except the admin account are unable to sign in.
+- **First sign-in to any environment after initial deployment** – The admin user is the only user who can access the environment.
+- **First sign-in to a sandbox environment after a database refresh from the production environment** – No user accounts except the admin account can sign in.
 
-The production environment should be deployed to the same datacenter where your sandbox environments are deployed and where UAT and performance testing were executed. To understand network requirements and how to perform latency testing, see [Network requirements](../get-started/system-requirements.md#network-requirements).
+The production environment should be deployed to the same datacenter where your sandbox environments are deployed, and where UAT and performance testing were done. For information about network requirements and how to do latency testing, see [Network requirements](../get-started/system-requirements.md#network-requirements).
 
-Production deployment lasts for approximately 30 minutes. An email notification is sent to the environment administrator when deployment is complete. 
+Production deployment takes approximately 30 minutes. When deployment has been completed, an email notification is sent to the environment administrator.
 
-The production environment is sized based on number of licences allocated to the LCS project and the transaction volumes in the [Subscription estimator](../../dev-itpro/lifecycle-services/subscription-estimator.md). 
+The production environment is sized based on the number of licenses that have been allocated to the LCS project and the transaction volumes in the [Subscription estimator](../../dev-itpro/lifecycle-services/subscription-estimator.md).
 
-After production is deployed, the project team can apply the deployable package by following the process described in the topic, [Update an environment](../../dev-itpro/deployment/updateenvironment-newinfrastructure.md#promote-an-update-to-production-environments) and then migrate the data. For data migration, we recommend that you prepare and validate data in a non-production environment and then [copy the sandbox databse to production](../../dev-itpro/database/dbmovement-scenario-goldenconfig.md#copy-the-sandbox-database-to-production). 
+After production has been deployed, the project team can apply the deployable package by following the instructions in [Promote an update to production environments](../../dev-itpro/deployment/updateenvironment-newinfrastructure.md#promote-an-update-to-production-environments) and then migrate the data. For data migration, we recommend that you prepare and validate data in a non-production environment and then [copy the sandbox database to production](../../dev-itpro/database/dbmovement-scenario-goldenconfig.md#copy-the-sandbox-database-to-production).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
