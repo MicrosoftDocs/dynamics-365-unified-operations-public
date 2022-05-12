@@ -30,7 +30,7 @@ The following table lists the features that are included in this release.
 
 | Feature area    | Feature | More information | Enabled by |
 |-----------------|---------|------------------|---------------------------|
-|Feature area  | [Name of feature](URL to feature description in the Release Plans)  | [Topic name](URL to topic with more information in core documentation)  | How do you turn this feature on? If you turn it on in Feature management, say: [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md)  |
+| Web client | <p>**Upgrade charting JS library to v9**</p><p>This feature upgrades the charting JS library to version 9 for Finance and Operations aplications. The new library enables a richer set of visualizations when building, deploying and using dashboards, charts and graphs in an app. Before enabling this feature, you should test any extensible controls or custom JavaScript code on charts and dashboard. This feature is targeted to be required with a future release, but is currently optional to allow time for migration of affected APIs.</p> | Not applicable | [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) |
 | Feature area  | [Name of feature](URL to feature description in the Release Plans)  | [Topic name](URL to topic with more information in core documentation)  | How do you turn this feature on? If you turn it on in Feature management, say: [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md)   |
 
 ### Bug fixes
