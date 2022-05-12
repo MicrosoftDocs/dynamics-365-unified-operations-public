@@ -20,10 +20,12 @@ ms.search.validFrom: 2022-05-12
 
 Certain data export projects have been restricted from execution on Finance and Operations environments running version 10.0.22 or older.
 
-If you have received the following error message: “This data export project is no longer supported for execution. To run this project, it is first required to update the environment to a supported version.” 
+If you have received the following error message, you must update the environment to a supported version.  
 
-You are required to update the environment to a supported version. Otherwise, it will not be possible to execute these data projects. 
+*This data export project is no longer supported for execution. To run this project, it is first required to update the environment to a supported version.*
 
-For more information about supported versions, see [Service update availability](../ fin-ops/get-started/public-preview-releases.md).
+If you do not update the environment to a supported version, it will not be possible to execute certain data projects. 
 
-More information is planned to be added at a later time.
+For more information about supported versions, see [Service update availability](../../fin-ops/get-started/public-preview-releases.md).
+
+More information is planned to be added to this topic at a later time.
