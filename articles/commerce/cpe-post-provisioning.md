@@ -43,9 +43,9 @@ After your Commerce evaluation environment has been provisioned end to end, addi
 1. Select your environment in the list.
 1. In the environment information on the right, select **Log on to environment**. You will be sent to Commerce headquarters.
 1. Make sure that the **USRT** legal entity is selected in the upper-right corner.
-1. Go to **Commerce parameters \> Configuration parameters** and make sure there's an entry for **ProductSearch.UseAzureSearch** and that the value is set to **true**. If this entry is missing, you can add it, set the value to **true**, and then run **Channel Database \> Full Sync** for the Commerce Scale unit associated with your e-commerce website.
-1. Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Initialize Commerce scheduler**. On the **Initialize commerce scheduler** flyout menu, Set the **Delete existing configuration** option to **Yes**, and then select **OK**.
-1. To add channels to the scale unit, go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \>Channel database**, select the scale unit in the left pane, and under the **Retail channel** FastTab add the **AW online store**, **AW Business online store**, and **Fabrikam extended online store** channels. Optionally, you can also add some retail stores if you will be using POS (for example, **Seattle**, **San Francisco**, and **San Jose**).
+1. Go to **Commerce parameters \> Configuration parameters** and ensure that there's an entry for **ProductSearch.UseAzureSearch** and that the value is set to **true**. If this entry is missing, you can add it, set the value to **true**, and then select **Channel Database \> Full data sync** for the Commerce Scale Unit associated with your e-commerce website.
+1. Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Initialize Commerce scheduler**. On the **Initialize commerce scheduler** flyout menu, set the **Delete existing configuration** option to **Yes**, and then select **OK**.
+1. To add channels to the Commerce Scale Unit, go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \>Channel database**, and then in the left pane select the Commerce Scale Unit. On the **Retail channel** FastTab, add the **AW online store**, **AW Business online store**, and **Fabrikam extended online store** channels. Optionally, you can also add retail stores if you will be using POS (for example, **Seattle**, **San Francisco**, and **San Jose**).
 
 During post-provisioning activities in Commerce headquarters, make sure that the **USRT** legal entity is always selected.
 
@@ -91,7 +91,7 @@ To start to set up your evaluation site in Commerce, follow these steps.
 1. Select **en-us** as the default language.
 1. Leave the value of the **Path** field as it is.
 1. Select **OK**. The list of pages on the site appears.
-1. Repeat steps 2-7 for the **Adventure Works** site (which maps to the **Adventure Works online store** channel) and the **Adventure Works Business** site (which maps to the **Adventure Works B2B online store** channel). If the **Path** field was left empty for the Fabrikam site, then you must to add paths for these two sites (for example, "aw" and "awbusiness").
+1. Repeat steps 2-7 for the **Adventure Works** site (which maps to the **Adventure Works online store** channel) and the **Adventure Works Business** site (which maps to the **Adventure Works B2B online store** channel). If the **Path** field for the Fabrikam site is empty, then you must to add paths for the two AdventureWorks sites (for example, "aw" and "awbusiness").
 
 ## Enable jobs
 
@@ -161,7 +161,7 @@ To configure optional features for your Commerce evaluation environment, see [Co
 
 ### Site builder channel list is empty when configuring site
 
-If site builder does not show any online store channels, in headquarters ensure that the channels have been added to the Commerce Scale Unit as described in the [Before you start](#before-you-start) section. Also, run **Initialize commerce scheduler** with the **Delete existing configuration** value set to **Yes**.  Once these are steps are completed, on the **Channel database** page (**Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Channel database**), run the **9999** job on the Commerce Scale Unit.
+If site builder does not show any online store channels, in headquarters ensure that the channels have been added to the Commerce Scale Unit as described in the [Before you start](#before-you-start) section above. Also, run **Initialize commerce scheduler** with the **Delete existing configuration** value set to **Yes**.  Once these are steps are completed, on the **Channel database** page (**Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Channel database**), run the **9999** job on the Commerce Scale Unit.
 
 ### Color swatches are not rendering on the category page, but are rendering on the product details page (PDP) page
 
@@ -173,7 +173,7 @@ Follow these steps to ensure that the color and size swatches are set to be refi
 1. Return to the online store channel page, and then select **Publish channel updates**.
 1. Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Channel database** and run the **9999** job on the Commerce Scale Unit.
 
-### Business features don't appear to be turned on the AW Business site
+### Business features don't appear to be turned on for the AW Business site
 
 In headquarters, ensure that the online store channel is configured with the **Customer type** set to **B2B**. If the **Customer type** is set to **B2C**, a new channel must be created since the existing channel can't be edited. 
 
