@@ -4,7 +4,7 @@
 title: Set up web API authentication transfer to Commerce using Azure Active Directory B2C
 description: This topic describes the capability to transfer an Azure Active Directory business-to-consumer (B2C) token to the e-commerce service from a user's web API.
 author: BrianShook
-ms.date: 05/11/2022
+ms.date: 05/12/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
