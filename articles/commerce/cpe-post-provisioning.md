@@ -91,7 +91,7 @@ To start to set up your evaluation site in Commerce, follow these steps.
 1. Select **en-us** as the default language.
 1. Leave the value of the **Path** field as it is.
 1. Select **OK**. The list of pages on the site appears.
-1. Repeat steps 2-7 for the **Adventure Works** site (which maps to the **Adventure Works online store** channel) and the **Adventure Works Business** site (which maps to the **Adventure Works B2B online store** channel). If the **Path** field for the Fabrikam site is empty, then you must to add paths for the two AdventureWorks sites (for example, "aw" and "awbusiness").
+1. Repeat steps 2-7 for the **AdventureWorks** site (which maps to the **AW online store** channel) and the **AdventureWorks Business** site (which maps to the **AW Business online store** channel). If the **Path** field for the Fabrikam site is empty, then you must to add paths for the two AdventureWorks sites (for example, "aw" and "awbusiness").
 
 ## Enable jobs
 
@@ -173,11 +173,11 @@ Follow these steps to ensure that the color and size swatches are set to be refi
 1. Return to the online store channel page, and then select **Publish channel updates**.
 1. Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Channel database** and run the **9999** job on the Commerce Scale Unit.
 
-### Business features don't appear to be turned on for the AW Business site
+### Business features don't appear to be turned on for the AdventureWorks business site
 
 In headquarters, ensure that the online store channel is configured with the **Customer type** set to **B2B**. If the **Customer type** is set to **B2C**, a new channel must be created since the existing channel can't be edited. 
 
-Demo data shipped in Commerce version 10.0.26 and earlier had a bug where the **AW Business online store** was misconfigured. The workaround is to create a new channel with the same settings and configurations except for **Customer type**, which should be set to **B2B**.
+Demo data shipped in Commerce version 10.0.26 and earlier had a bug where the **AW Business online store** channel was misconfigured. The workaround is to create a new channel with the same settings and configurations except for **Customer type**, which should be set to **B2B**.
 
 ## Additional resources
 
