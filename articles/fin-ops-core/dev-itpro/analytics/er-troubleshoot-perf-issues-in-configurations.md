@@ -4,7 +4,7 @@
 title: Troubleshooting performance issues in ER configurations
 description: This topic explains how to find and fix performance issues in Electronic reporting (ER) configurations.
 author: NickSelin
-ms.date: 06/08/2021
+ms.date: 05/12/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -198,7 +198,7 @@ Although caching reduces the amount of time that is required to fetch data again
 
 #### <a name="reduce-fetched-data"></a>Reduce volume of data fetched
 
-You can reduce memory consumption for caching by limiting the number of fields in records of an application table that you fetch at runtime. In this case you will fetch the only values of fields of an application table that you need in your ER model mapping. Other fields of this table will not be fetched reducing the volume of memory that is needed to cache fetched records. For more information, see [Improve performance of ER solutions by reducing the number of table fields that are fetched at runtime](er-reduce-fetched-fields-number.md).
+You can reduce memory consumption for caching by limiting the number of fields in the records of an application table that you fetch at runtime. In this case, you will only fetch the field values of an application table that you need in your ER model mapping. Other fields in this table will not be fetched, reducing the volume of memory that is needed to cache fetched records. For more information, see [Improve performance of ER solutions by reducing the number of table fields that are fetched at runtime](er-reduce-fetched-fields-number.md).
 
 #### <a name="cached-parameterized"></a>Use a cached, parameterized calculated field
 
