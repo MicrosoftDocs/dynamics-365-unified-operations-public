@@ -25,13 +25,16 @@ When a new customer is created in Commerce headquarters, a welcome email isn't s
 
 ## Resolution
 
-### Set the correct Email ID value for the Customer created email notification type
+### Associate an email notification profile under Commerce parameters
 
-To set the correct **Email ID** value for the **Customer created** email notification type in headquarters, follow these steps.
+1. Open Headquarters and go to **Commerce parameters** (**Retail and Commerce** > **Headquarters setup** > **Parameters** > **Commerce parameters**)
+2. In the Email notification profile field under the **General** tab, select the email notification profile that contains a mapping between the customer created notification type and a customer created email template.  
 
-1. Go to **Retail and Commerce \> Headquarters setup \> Commerce email notification profile**.
-1. In the left navigation pane, select the email notification profile.
-1. Under **Retail event notifications settings**, for the **Customer created** email notification type, set the **Email ID** field to **NewCust**.
+> [!NOTE] When customer created notifications are enabled, customers that are created in all channels within the legal entity will receive a customer created email. Customer created notifications cannot currently be limited to a single channel.
+
+For more information about how to configure the customer created notification type, see the [Customer created](../email-templates-transactions.md#customer-created) section in the [Create email templates for transactional events](../email-templates-transactions.md) help topic. 
+
+
 
 ## Additional resources
 

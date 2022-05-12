@@ -121,7 +121,15 @@ The *order cancellation* notification type is triggered when an order is cancele
 
 ### Customer created
 
-The *customer created* notification type is triggered when a new customer entity is created in Commerce headquarters.
+The *customer created* notification type is triggered when a new customer entity is created in Commerce headquarters. 
+
+To enable customer created notifications, an email notification profile containing the customer created notification type must be selected in the Email notification profile field under General in Commerce parameters (**Retail and Commerce** > **Headquarters setup** > **Parameters** > **Commerce parameters**.) 
+
+By default, customer created events are uploaded to HQ with the **Synchronize customers and channel requests** batch job. If you wish to use a real time service call to send these events, set the email ID of the customer created template to **newCust**. However, this is not recommended as real time service calls are a "fire and forget" call and do not the fallback or retry logic that batch jobs provide.
+
+> [!NOTE] When customer created notifications are enabled, customers that are created in all channels within the legal entity will receive a customer created email. Customer created notifications cannot currently be limited to a single channel.  
+
+
 
 ### B2B prospect approved
 
