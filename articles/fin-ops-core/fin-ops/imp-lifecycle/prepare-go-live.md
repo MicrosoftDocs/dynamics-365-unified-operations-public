@@ -116,7 +116,7 @@ The Go-live Readiness Review is executed on the FastTrack for Dynamics 365 imple
 - When all critical risks are addressed and the review is complete, Microsoft will enable the production environment slot in LCS and the project. The customer/partner can now trigger the prodcution environment deployment.
 
 > [!NOTE]
-> If you face any issue with the portal, reach out to the portal Support team by selecting **Contact us** in the top-right corner of the portal or by sending an email to **ftd365ip-support@microsoft.com**. In the email, specify the LCS ID for your project and provide details describing the issue.
+> If you face any issue with the portal, reach out to the portal Support team by selecting **Contact us** in the top-right corner of the portal or by sending an email to ftd365ip-support@microsoft.com. In the email, specify the LCS ID for your project and provide details describing the issue.
 
 ## Production environment deployment
 
