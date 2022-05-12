@@ -115,7 +115,7 @@ The Go-live Readiness Review is done in the FastTrack for Dynamics 365 implement
 
 - Microsoft FastTrack reviews the project and provides a report that describes the potential risks, best practices, and recommendations for a successful go-live of the project. The review might require up to three business days for the initial report, plus additional time for any risk mitigation that is required.
 - Users who have been selected as **Review participants** in the portal receive email communication that provides updates about the review.
-- When all critical risks have been addressed, and the review has been completed, Microsoft enables the production environment slot in LCS and the project. The customer/partner can then trigger the production environment deployment.
+- When all critical risks have been addressed, and the review has been completed, Microsoft enables the production environment slot in the LCS project. The customer/partner can then trigger the production environment deployment.
 
 > [!NOTE]
 > If you encounter any issue with the portal, contact the portal Support team by selecting **Contact us** in the upper-right corner of the portal or sending an email to <ftd365ip-support@microsoft.com>. In the email, specify the ID of your project in LCS, and provide details that describe the issue.
