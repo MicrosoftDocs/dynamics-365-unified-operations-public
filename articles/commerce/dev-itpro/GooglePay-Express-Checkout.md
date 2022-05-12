@@ -84,8 +84,6 @@ Once the merchant information has been filled, run the **1070** Channel configur
 ## Configure Commerce Point-of-Sale for Google Pay
 The Point-of-Sale (POS) configuration will utilize the hardware profile's **EFT service** field configuration for the **Dynamics 365 Payment Connector for Adyen**. In headquarters, configure the EFT service for Dynamics 365 Payment Connector for Adyen as described in the [Set up Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/adyen-connector-setup) article's [Set up a Dynamics 365 POS hardware profile section](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/adyen-connector-setup). 
 
-Ensure to add "GooglePay" to the list of **Supported Tender Types** listed (separated by semi-colon).
-
 The previous Card Types > Processor mapping maps for the Adyen connector will capture the wallet card types used by Google Pay at the POS terminal. 
 
 
