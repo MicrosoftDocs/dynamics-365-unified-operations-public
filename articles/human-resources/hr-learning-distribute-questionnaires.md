@@ -15,7 +15,7 @@ ms.search.form: KMConnectionType, KMKnowledgeCollectorPlanningTabel, SysEmailPar
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 17424
 ms.assetid: fd8d867a-2446-400a-b91f-ad4085427470

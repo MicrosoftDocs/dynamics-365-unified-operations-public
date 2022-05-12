@@ -113,7 +113,7 @@ Follow these steps to enable the Azure Connector and, as required, add an LCS us
 Complete this procedure only if you didn't complete steps 6 through 8 of the previous procedure, "Enable the Azure connector and add an LCS user." 
 
 1.  In LCS, on the **Microsoft Azure setup** page, select **Download**. Make a note of the location of the certificate file that is downloaded. You will use this information to upload the certificate to the Azure subscription.
-2.  In the [Azure classic portal](https://manage.windowsazure.com/), in the left pane, select **Settings**.
+2.  In the [Azure classic portal](https://ms.portal.azure.com), in the left pane, select **Settings**.
 3.  Filter to the Azure subscription that is used, and then, on the **Management certificates** tab, select **Upload**.
 4.  Select the management certificate that you downloaded in step 1, and then select **OK**.
 

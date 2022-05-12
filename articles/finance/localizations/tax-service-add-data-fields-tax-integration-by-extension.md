@@ -15,7 +15,7 @@ ms.search.form:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Global

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create checks that have Blank status 
-description: This topic explains how to create blank checks for a bank account on the Checks page. 
+description: This topic explains how to create blank checks for a bank account. 
 author: abruer
 ms.date: 10/26/2017
 ms.topic: index-page
@@ -15,7 +15,7 @@ ms.search.form: BankChequeTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 21941
 ms.assetid: d7e22bd8-fd0d-47e1-843f-45ab0193ff8d

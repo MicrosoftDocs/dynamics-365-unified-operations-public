@@ -276,7 +276,7 @@ This section describes the setup that is required before you run the Party posta
 
     ![Running the Party postal address and Party electronic address templates.](media/ADF-7.png)
 
-10. To update the Finance and Operations app with this data, you must convert the .csv files into an Excel workbook and [import it into the Finance and Operations app](/data-entities/data-import-export-job). Alternatively, if the CSV import works for you, you can import the .csv files directly. This step might take a few hours to be completed, depending on the volume.
+10. To update the Finance and Operations app with this data, you must convert the .csv files into an Excel workbook and [import it into the Finance and Operations app](../data-import-export-job.md). Alternatively, if the CSV import works for you, you can import the .csv files directly. This step might take a few hours to be completed, depending on the volume.
 
     ![Successful import.](media/ADF-8.png)
 

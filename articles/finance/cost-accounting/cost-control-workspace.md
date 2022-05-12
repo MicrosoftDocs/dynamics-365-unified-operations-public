@@ -15,13 +15,13 @@ ms.search.form: CAMCostControlWorkspaceConfiguration, CAMCostControlWorkspace, C
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -58,7 +58,7 @@ On the **Data filtering** FastTab, you define the data foundation for the report
 | Cost accounting ledger                                            | The **Cost accounting ledger** that the report is based on. The value is derived from the **Cost control unit** field. |
 | Cost control unit                                                 | The value that you select determines the cost accounting ledger and cost objects that this report will be based on. |
 | Statistical dimension hierarchy, Cost element dimension hierarchy | A **Cost control** workspace configuration record can report either non-monetary or monetary values, but not in the same layout. Select a value in the **Cost element dimension hierarchy** field to report monetary values. Select a value in the **Statistical dimension hierarchy** field to report non-monetary values. The dimension hierarchy record that you select determines the structure of the reporting and aggregation levels.<blockquote>[!NOTE]<br>To view non-monetary and monetary values side by side, you can export data to Microsoft Excel for the Microsoft Power BI content pack.</blockquote> |
-| Cost object dimension hierarchy                                   | Select the dimension hierarchy of the cost object dimension that suits the purpose of the reporting that you're defining. |
+| Cost object dimension hierarchy      | Select the dimension hierarchy of the cost object dimension that suits the purpose of the reporting that you're defining. |
 | Budget original version                                           | Select the budget version ID that acts as the original budget in the context of this report. |
 | Budget revised version                                            | Select the budget version ID that acts as the revised budget in the context of this report. |
 

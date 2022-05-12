@@ -600,6 +600,8 @@
             href: wallets.md
           - name: Enhanced payments in storefront checkout
             href: dev-itpro/enhanced-sca.md
+          - name: Configure express payments for PayPal
+            href: dev-itpro/express-payments-paypal.md
           - name: Payments FAQ 
             href: dev-itpro/payments-retail.md
         - name: Email and notifications
@@ -958,6 +960,8 @@
         href: online-store-overview.md
       - name: Create an e-commerce site
         items:
+        - name: Map channels to e-commerce sites
+          href: map-channels-sites.md
         - name: Configure your domain name
           href: configure-your-domain-name.md
         - name: Deploy a new e-commerce tenant
@@ -2560,18 +2564,20 @@
             href: dev-itpro/pos-extension/pos-extension-basics.md
           - name: Migrate POS Extensions to the Commerce SDK
             href: dev-itpro/pos-extension/migrate-pos-extension.md
+          - name: Create a POS extension package project
+            href: dev-itpro/pos-extension/create-pos-extension-package.md
           - name: Debug Store Commerce extensions using VS Code
             href: dev-itpro/sc-debug.md
+          - name: Sealed MPOS and CPOS extensions
+            items:
+              - name: Create an .appx file for a Modern POS extension package
+                href: dev-itpro/pos-extension/create-pos-extension-appx.md
+              - name: Debug MPOS (Sealed) and CPOS extensions
+                href: dev-itpro/pos-extension/debug-pos-extension.md
         - name: Environment setup
           items:
           - name: Local development environment
             href: dev-itpro/setup-local-dev-env.md
-          - name: Create a POS extension package project
-            href: dev-itpro/pos-extension/create-pos-extension-package.md
-          - name: Create an .appx file for a Modern POS extension package
-            href: dev-itpro/pos-extension/create-pos-extension-appx.md
-          - name: Debug POS extensions
-            href: dev-itpro/pos-extension/debug-pos-extension.md
         - name: APIs and reference
           items: 
           - name: View POS extension package information
@@ -2834,6 +2840,10 @@
               href: e-commerce-extensibility/instance-cache.md
             - name: Module CSS optimization
               href: e-commerce-extensibility/module-css-optimization.md
+            - name: Optimize images on product details pages
+              href: e-commerce-extensibility/optimize-images-pdp.md
+            - name: Optimize images on search and category pages
+              href: e-commerce-extensibility/optimize-images-search-cat.md
           - name: Telemetry and analytics
             items:
             - name: Telemetry logger

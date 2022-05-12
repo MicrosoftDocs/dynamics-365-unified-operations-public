@@ -16,7 +16,7 @@ ms.search.form: CustPosting, LedgerJournalTransCustPaym, CustParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: Core, Operations
+
 # ms.tgt_pltfrm: 
 ms.custom: 24651
 ms.assetid: cb82245e-8c02-429c-b36e-8db0e3e6f7e5

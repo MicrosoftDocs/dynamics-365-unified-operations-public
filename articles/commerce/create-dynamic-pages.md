@@ -8,7 +8,6 @@ ms.date: 05/12/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
-#ms.search.scope: Core, Operations, Retail
 ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30

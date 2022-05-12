@@ -14,7 +14,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -40,11 +40,11 @@ To access their benefits for enrollment, the employee goes to **Employee self se
 On the **Benefits self-service** page, benefit plans are grouped by plan type. To view the benefit plans in a plan type, the employee selects a tile on the **Employee benefits** page. The employee will see only the benefits that they are eligible for.
 
 > [!IMPORTANT]
-> Before a plan type can be shown in **Employee self service**, it must be configured. For more information, see [Configure Employee self service](/hr-benefits-setup-employee-self-service.md).
+> Before a plan type can be shown in **Employee self service**, it must be configured. For more information, see [Configure Employee self service](/dynamics365/human-resources/hr-benefits-setup-employee-self-service).
 
 Depending on the plan type, one or more benefits can be selected for enrollment. For example, a medical plan type might be configured to limit the employee to one medical plan. A life insurance plan type might allow the employee to select multiple life insurance plans.
 
-After the employee has decided which plan to enroll in, they might be required to select dependents. If the employee has selected a coverage option that is **Employee +1**, **Employee + children**, or **Family**, dependents must be selected. For more information about coverage options, see [Create coverage options](/hr-benefits-setup-coverage-options.md).
+After the employee has decided which plan to enroll in, they might be required to select dependents. If the employee has selected a coverage option that is **Employee +1**, **Employee + children**, or **Family**, dependents must be selected. For more information about coverage options, see [Create coverage options](/dynamics365/human-resources/hr-benefits-setup-coverage-options).
 
 To select a benefit plan, the employee selects either the ellipsis button (**...**) or **Add to cart**. After the employee has finished adding all the benefit selections to the cart, they select **View cart**. The employee is then taken to the **Plans** page, where they can view their selected and waived benefit plans.
 

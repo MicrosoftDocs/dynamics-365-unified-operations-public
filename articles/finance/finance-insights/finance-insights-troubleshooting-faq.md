@@ -15,13 +15,13 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: ["14151", "intro-internal"]
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shpandey
+ms.author: panolte
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
 

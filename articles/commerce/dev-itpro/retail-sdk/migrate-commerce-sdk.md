@@ -2,7 +2,7 @@
 title: Migrate to the Commerce SDK
 description: This topic explains how to migrate to the Commerce software development kit (SDK).
 author: mugunthanm
-ms.date: 11/02/2021
+ms.date: 05/11/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -15,6 +15,7 @@ ms.dyn365.ops.version: AX 10.0.19
 # Migrate to the Commerce SDK
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
 The Commerce software development kit (SDK) and sealed installers simplify the Commerce developer and upgrade experience. The new Commerce SDK minimizes the effort that is involved in upgrades, and helps reduce the time and effort that must be spent on the upgrade process. Additionally, integration with Git, Microsoft Azure DevOps, and Visual Studio Code brings the .NET development experience to the Commerce SDK.
 
@@ -90,6 +91,113 @@ This new implementation simplifies the upgrade and development process. To downl
 
 Development of Commerce extensions for CRT is more streamlined and follows the standard best practices for .NET development.
 
+### Reference package difference between legacy Retail SDK and Commerce SDK
+
+| Legacy SDK package |  Commerce SDK (new) |
+|--------------------| -------------------|
+|Microsoft.Dynamics.Commerce.Runtime.Services, Microsoft.Dynamics.Commerce.Runtime.TransactionService, Microsoft.Dynamics.Commerce.Runtime.Workflow, Microsoft.Dynamics.Commerce.Runtime.Services.Messages, Microsoft.Dynamics.Commerce.Runtime.Data |Microsoft.Dynamics.Commerce.Sdk.Runtime |
+| Microsoft.Dynamics.Commerce.Runtime.Services.PricingEngine | Microsoft.Dynamics.Commerce.Runtime.Services.PricingEngine.Contracts |
+
+### Sample code to migrate the helper classes consumed in legacy SDK to Commerce SDK
+
+<table>
+<tr>
+    <td><b>Legacy SDK helper methods</b></td><td><b>Commerce SDK (Request/Response)</b></td>
+</tr>
+<tr>
+    <td> TransactionServiceClient</br></br>
+
+```C#
+TransactionServiceClient transactionService = new TransactionServiceClient(request.RequestContext);
+transactionService.InvokeExtensionMethod("getSalesOrderDetails")
+``` 
+
+</td>
+<td>
+
+```C#
+InvokeExtensionMethodRealtimeRequest extensionRequest = new InvokeExtensionMethodRealtimeRequest("getSalesOrderDetails ")
+        InvokeExtensionMethodRealtimeResponse response = await request.RequestContext.ExecuteAsync<InvokeExtensionMethodRealtimeResponse>   (extensionRequest).ConfigureAwait(false); 
+``` 
+    
+</td>
+</tr>
+<tr>
+<td> LoadSalesTransactionForReturn </td>
+<td> 
+
+```C#
+var request = new GetSalesOrderDetailsByTransactionIdServiceRequest(transactionIdToLoad, SearchLocation.Local);
+                     response = await context.ExecuteAsync<GetSalesOrderDetailsServiceResponse>(request).ConfigureAwait(false);
+```   
+
+</td>
+</tr>
+<tr>
+<td> GetProductsInCartLines </td>
+<td> 
+
+```C#
+var serviceRequest = new GetProductsInCartLinesServiceRequest(request.CartLines);
+                 var serviceResponce = await request.RequestContext.ExecuteAsync<GetProductsInCartLinesServiceResponse>(serviceRequest).ConfigureAwait(false);
+                 return new GetProductsInCartLinesResponse(serviceResponce.ProductsByRecordId);
+```  
+
+</td>
+</tr>
+<tr>
+<td> LoadSalesTransaction </td>
+<td>
+
+```C#
+ var getCartRequest = new GetCartRequest(
+                new CartSearchCriteria(cartId, cartVersion),
+                QueryResultSettings.SingleRecord,
+                includeHistoricalTenderLines: false,
+                ignoreProductDiscontinuedNotification: ignoreProductDiscontinuedNotification);
+
+var getCartResponse = await context.ExecuteAsync<GetCartResponse>(getCartRequest).ConfigureAwait(false);
+```    
+
+</td>
+</tr>
+<tr>
+<td> SaveSalesTransaction </td>
+<td>
+
+```C#
+var saveTransactionRequest = new SaveSalesTransactionDataRequest(transaction);
+ await request.RequestContext.Runtime.ExecuteAsync<NullResponse>(saveTransactionRequest, request.RequestContext).ConfigureAwait(false);
+``` 
+
+</td>
+</tr>
+<tr>
+<td> CartWorkflowHelper.PerformSaveCartOperations </td>
+<td>
+
+```C#
+var saveCartRequest = new SaveCartRequest(cart, calculationModes: null, isGiftCardOperation: isGiftCardOperation, isTransactionResume: true);
+saveCartRequest.SalesTransaction = transaction;
+cart = (await request.RequestContext.ExecuteAsync<SaveCartResponse>(saveCartRequest).ConfigureAwait(false)).Cart;
+```    
+
+</td>
+</tr>
+<tr>
+<td> PricingEngine </td>
+<td> Extensions should not call PricingEngine directly and instead should use CalculatePricesServiceRequest, CalculateDiscountsServiceRequest. </td>
+</tr>
+<tr>
+<td> PriceEvents </td>
+<td> Telemetries should only be used for internal purposes, extensions should not use this. </td>
+</tr>
+<tr>
+<td> PricingDatabaseAccessor </td>
+<td> Obsolete since version 10.0.1, use the relevant CRT data requests. </td>
+</tr>
+</table>
+
 ### Retail Server or Headless Commerce API extensions
 
 In older versions of Retail SDK extensions, you must use the packages from the Retail SDK \Pkgs folder and extend from the `CommerceController` class to create new API extensions. In the Commerce SDK, an extension uses the packages from the public feed and extends the API controller class from the `IController` interface. For more information, see [Create a Retail Server extension API (Retail SDK version 10.0.11 and later)](../retail-server-icontroller-extension.md).
@@ -116,7 +224,7 @@ You can download the new sealed installers from LCS by going to the [Shared Asse
 
 ### POS
 
-In the Commerce SDK, a few improvements that have been made to the development process for POS extensions will require changes when you migrate existing extensions. The following tables summarizes the most important changes. For a complete list of changes and steps to migrate an extension, see [Migrate a POS extension to the independent packaging model](../pos-extension/migrate-pos-extension.md).
+In the Commerce SDK, a few improvements that have been made to the development process for POS extensions will require changes when you migrate existing extensions. The following table summarizes the most important changes. For a complete list of changes and steps to migrate an extension, see [Migrate a POS extension to the independent packaging model](../pos-extension/migrate-pos-extension.md).
 
 | Change | Description | Purpose |
 |---|---|---|
@@ -131,7 +239,7 @@ For information about how to set up the build pipeline for the Commerce SDK, see
 
 A new packaging type is added to separate the self-service components from the Cloud Scale Unit extensions. The new ScaleUnit package will contain only the Cloud Scale Unit components. You can upload the self-service components to LCS by using the build pipeline. Alternatively, they can be manually uploaded and synced to the back office.
 
-If you use the Retail SDK to generate the package, you must update the Customization.Settings file and the extension configuration files. In the Commerce SDK packaging, all these steps are automated. Therefore, you don't have to include or update the configuration files.
+If you use the Retail SDK to generate the package, you must update the **Customization.Settings** file and the extension configuration files. In the Commerce SDK packaging, all these steps are automated. Therefore, you don't have to include or update the configuration files.
 
 For more information, see [Generate a separate package for Commerce Cloud Scale Unit (CSU)](retail-sdk-packaging.md#generate-a-separate-package-for-commerce-cloud-scale-unit-csu).
 
@@ -139,10 +247,10 @@ For more information, see [Generate a separate package for Commerce Cloud Scale 
 
 ### Do I have to migrate?
 
-The Commerce SDK provides several benefits that the Retail SDK doesn't provide, such as a simplified development and update experience, and improved performance. The Retail SDK and installers will be deprecated in April 2023, and all extensions must be migrated before then. After April 2023, the Retail SDK will no longer be released or supported.
+The Commerce SDK provides several benefits that the Retail SDK doesn't provide, such as a simplified development and update experience, and improved performance. The Retail SDK and installers will be deprecated in April 2023, and all extensions must be migrated before then. After October 2023, the Retail SDK will no longer be released or supported.
 
 ### When do I have to migrate?
 
-Extensions must be migrated to the new Commerce SDK and new installers by April 2023.
+Extensions must be migrated to the new Commerce SDK and new installers by October 2023.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
