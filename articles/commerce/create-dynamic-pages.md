@@ -4,7 +4,7 @@
 title: Create dynamic e-commerce pages based on URL parameters
 description: This topic describes how to set up a Microsoft Dynamics 365 Commerce e-commerce page that can serve dynamic content, based on URL parameters. 
 author: StuHarg
-ms.date: 05/12/2022
+ms.date: 05/27/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
