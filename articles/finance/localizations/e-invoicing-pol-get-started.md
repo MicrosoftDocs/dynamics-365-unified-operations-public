@@ -61,8 +61,7 @@ Some of the parameters from the **Polish electronic invoice (PL)** electronic in
 8. In the **Processing pipeline** section, select **Integrate with ZZZZZZZZZZZZZZZZZZZZZZZ**. Repeat this step for the two occurrences of this action.
 9. In the **Parameters** section, select **Web service URL** and **Login service URL**. Then review the URL parameters. To get the testing and production URL, go to the website of Polish National system for electronic invoicing [KSEF](https://www.podatki.gov.pl/ksef).
 10. Select **Save**, and close the page.
-11. Repeat the steps 4 through 10 for the **Project invoice derived** feature setup.
-12. Advance ?????????? ZZZZZZZZZZZZZZZ
+11. Repeat the steps 4 through 10 for the **Project invoice derived** and **Advance invoice derived** feature setups ZZZZZZZZZZZZZZZZZZZZ.
 
 ## Country-specific configuration for the Polish electronic invoice (PL) application setup
 
