@@ -4,27 +4,14 @@
 title: Create dynamic e-commerce pages based on URL parameters
 description: This topic describes how to set up a Microsoft Dynamics 365 Commerce e-commerce page that can serve dynamic content, based on URL parameters. 
 author: StuHarg
-ms.date: 01/28/2021
+ms.date: 05/12/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-ROBOTS: 
-audience: Application user
-# ms.devlang: 
-ms.reviewer: v-chgri
+audience: Application User, Developer, IT Pro
+ms.reviewer: v-chgriffin
 #ms.search.scope: Core, Operations, Retail
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: global
-# ms.search.industry: Retail
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
-ms.dyn365.ops.version: 10.0.17
 
 ---
 # Create dynamic e-commerce pages based on URL parameters
@@ -35,9 +22,9 @@ This topic describes how to set up a Microsoft Dynamics 365 Commerce e-commerce 
 
 An e-commerce page can be configured to serve different content, based on a segment in the URL path. Therefore, the page is known as a dynamic page. The segment is used as a parameter to retrieve the page content. For example, a page that is created in site builder and named **blog\_viewer** gets mapped to the URL `https://fabrikam.com/blog`. This page can then be used to show different content, based on the last segment in the URL path. For example, the last segment in the URL `https://fabrikam.com/blog/article-1` is **article-1**.
 
-You can also override a parameterized URL segment with a site builder page. For example, a page that is created in site builder and named **blog\_summary** can be mapped to the URL `https://fabrikam.com/blog/about-this-blog`. When the `https://fabrikam.com/blog` URL is requested with the `/about-this-blog` segment on the end, the **blog\_summary** page content is returned rather than the `/about-this-blog` segment being interpreted as a parameter to be used by the `https://fabrikam.com/blog` page. 
+You can also override a parameterized URL segment with a site builder page. For example, a page that is created in site builder and named **blog\_summary** can be mapped to the URL `https://fabrikam.com/blog/about-this-blog`. When the `https://fabrikam.com/blog` URL is requested with the `/about-this-blog` segment on the end, the **blog\_summary** page content is returned instead of the `/about-this-blog` segment being interpreted as a parameter to be used by the `https://fabrikam.com/blog` page. 
 
-When selecting names for the parameters to be passed to the dynamic page, the name of the dynamic page as it appears in the URL (`/blog` in the example above) may not be used as a parameter name or a substring of a parameter name. 
+When selecting names for the parameters to be passed to the dynamic page, the name of the dynamic page as it appears in the URL (`/blog` in the example above) can't be used as a parameter name or a substring of a parameter name. 
 
 > [!NOTE]
 > The functionality for hosting, retrieving, and showing dynamic page content is implemented by using a custom module. For more information, see [Online channel extensibility](e-commerce-extensibility/overview.md).
