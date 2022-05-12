@@ -2,7 +2,7 @@
 # required metadata
 
 title: Execution restrictions for specific data export projects
-description: This topic provides information about execution restrictiona for specific data export projects in older, out-of-service environments.
+description: This topic provides information about execution restrictions for specific data export projects in older, out-of-service environments.
 author: peakerbl
 ms.date: 05/12/2022
 ms.topic: article
