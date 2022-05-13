@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up an e-commerce development environment to debug against a Tier 1 Retail Server virtual machine
+title: Troubleshoot Store Commerce setup and installation issues
 description: This topic explains how to troubleshoot Store Commerce setup and installation issues.
 author: Mugunthan-Mani
 ms.date: 12/05/2022
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.25
 ---
 
 
-### Setup and installations
+### Troubleshoot Store Commerce setup and installation issues
 
 This topic explains how to troubleshoot Store Commerce setup and installation issues.
 
@@ -36,7 +36,7 @@ This topic explains how to troubleshoot Store Commerce setup and installation is
 
 After you enter the valid CPOS URL, you might receive a connectivity error such as "A connectivity error has occurred, and your device can't connect to the Cloud POS. The Cloud POS URL typed may have some issues." In this case, review the URL for typographical errors, or determine whether Cloud POS can't be reached because it's offline.
 
-Additionally, verify that the CSU ccversion is 10.0.25 (9.35.\*.\*) or later. CPOS version 10.0.25 or later is required to use Store Commerce.
+Additionally, verify that the CSU version is 10.0.25 (9.35.\*.\*) or later. CPOS version 10.0.25 or later is required to use Store Commerce.
 
 #### Installation issues
 
