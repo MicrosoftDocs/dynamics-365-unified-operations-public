@@ -54,7 +54,7 @@ When you create an order confirmation page, you can add other relevant modules i
 To add an order confirmation module to a new page and set the required properties, follow these steps.
 
 1. Go to **Templates**, and select **New** to create a new template.
-1. In the **New Template** dialog box, under **Template name**, enter the name **Order confirmation template**, and then select **OK**.
+1. In the **New template** dialog box, under **Template name**, enter the name **Order confirmation template**, and then select **OK**.
 1. In the **Body** slot, select the ellipsis (**...**), and then select **Add Module**.
 1. In the **Select modules** dialog box, select the **Default page** module, and then select **OK**.
 1. In the **Main** slot of the **Default Page** module, select the ellipsis (**...**), and then select **Add Module**.
@@ -62,7 +62,7 @@ To add an order confirmation module to a new page and set the required propertie
 1. Select **Save**, and then select **Preview** to preview the template. The order confirmation module won't be rendered, because it requires the context of the order confirmation number.
 1. Select **Finish editing** to check in the template, and then select **Publish** to publish it.
 1. Go to **Pages**, and select **New** to create a new page.
-1. In the **Choose a template** dialog box, select **Order confirmation template**. Under **Page name**, enter **Order confirmation page**, and then select **OK**.
+1. In the **Create a new page** dialog box, select **Order confirmation template**. Under **Page name**, enter **Order confirmation page**, and then select **OK**.
 1. In the **Main** slot of the **Default Page** module, select the ellipsis (**...**), and then select **Add Module**.
 1. In the **Select modules** dialog box, select the **Order confirmation** module, and then select **OK**.
 1. In the properties pane for the order confirmation module, select **Heading** next to the pencil symbol.
