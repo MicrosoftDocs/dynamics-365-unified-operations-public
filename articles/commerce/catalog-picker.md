@@ -2,8 +2,8 @@
   
 # required metadata
 
-title: Add a catalog picker to your eCommerce website
-description: This topic describes how to add a catalog picker for Microsoft Dynamics 365 Commerce business-to-business (B2B) sites.
+title: Catalog picker module
+description: This topic covers catalog picker modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: ashishmsft
 ms.date: 05/06/2022
 ms.topic: article
@@ -18,9 +18,11 @@ ms.search.validFrom: 2022-04-21
 
 [!include [banner](includes/banner.md)]
 
-This topic covers catalog picker module and describes how to add them to site pages in Microsoft Dynamics 365 Commerce. 
+This topic covers catalog picker modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce. 
 
-A catalog picker module is a special container that is used to list all the catalogs that are available to a business-to-business (B2B) user for shopping. The following example image shows an example of a catalog-picker module. 
+A catalog picker module is a special container that is used to list all the catalogs that are available to a business-to-business (B2B) site user for shopping. 
+
+The following example image shows an example of a catalog-picker module. 
 
 ## Add a catalog picker module to your site
 
@@ -33,7 +35,9 @@ To add a catalog picker module to your site, follow these steps.
 1. Review and finish page creation wizard experience. 
 1. Next, go to page and click on 'Edit' 
 1. From the page structure, under 'Main slot' add 'Container' fragment and to that add 'Catalog-picker' module. Here you can define 'Heading' and 'Text' to showcase on the loading of this page. Upon completing your edits, make sure to 'Publish' your changes for 'Catalog-picker' page. 
-1. Now, we will hook the entry to this page from My accounts page 
+
+Now, we will hook the entry to this page from My accounts page 
+
 1. Locate your 'My accounts' page and add a link to this 'Catalog-picker' page as shown below
 1. Also, from the header fragment, add a link to 'My catalogs' and associate the 'view page' to 'catalog-picker' page. 
 
