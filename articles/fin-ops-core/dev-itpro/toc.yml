@@ -406,6 +406,8 @@
             href: deployment/onprem-SSRSHA.md
           - name: Configure proxies for on-premises environments
             href: deployment/onprem-reverseproxy.md
+          - name: Configure the Warehousing app for on-premises deployments
+            href: deployment/warehousing-for-on-premise-deployments.md
           - name: Install network printer devices in on-premises environments
             href: analytics/install-network-printer-onprem.md
           - name: On-premises diagnostics
