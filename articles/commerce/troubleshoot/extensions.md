@@ -28,13 +28,13 @@ ms.dyn365.ops.version: 10.0.25
 ---
 
 
-### Troubleshoot Store Commerce extension issues
+# Troubleshoot Store Commerce extension issues
 
 This topic explains how to troubleshoot Store Commerce extension issues.
 
-### Extensions are not loading
+## Extensions are not loading
 
-# Extensions are packages not showing up in the POS > Setting page
+### Extensions are packages not showing up in the POS > Setting page
 CRT Triggers is not updated to include the extension package or not deployed, refer this doc to update the CRT trigger.
 
 Extensions are showing up in the POS > Settings page but manifest is not loading Check the **C:\Program Files\Microsoft Dynamics 365\10.0\Store Commerce\Extensions** to see if extension package exists in the folder. 
