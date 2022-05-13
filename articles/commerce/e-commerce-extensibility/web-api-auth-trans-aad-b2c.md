@@ -21,7 +21,7 @@ Microsoft Dynamics 365 Commerce uses Azure AD B2C to support user credential and
 
 ## Prerequisites
 
-As a prequisite, set up your e-commerce site with the Azure AD B2C tenant as instructed in [Set up a B2C tenant in Commerce](../set-up-b2c-tenant.md).
+As a prerequisite, set up your e-commerce site with the Azure AD B2C tenant as instructed in [Set up a B2C tenant in Commerce](../set-up-b2c-tenant.md).
 
 ## Set up web API settings for authentication
 
