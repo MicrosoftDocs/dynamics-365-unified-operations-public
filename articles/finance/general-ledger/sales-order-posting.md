@@ -108,7 +108,7 @@ To assign ledger postings for a sales order based on a sales category, follow th
 4. Select **New**.
 5. In the **Item code** field, select **Category**.
 6. Use the **Category relation** field to select the category for the posting profile.
-7. In the **Account code** field, select an option for **Table**, **Group**, or **All**. For example, to apply the posting profile to all customers, select **All**.<!--note from editor: The following aren't sequential steps, so bullets are the right format.-->
+7. In the **Account code** field, select an option for **Table**, **Group**, or **All**. For example, to apply the posting profile to all customers, select **All**.
    - If you selected **Table** in step 6, select the specific **Vendor number** for the posting profile in the **Account relation** field.
    - If you selected **Group** in step 6, select the **Vendor group** for the posting profile in the **Account relation** field.
    - If you selected **All** in step 6, the **Account relation** field will be left blank.
