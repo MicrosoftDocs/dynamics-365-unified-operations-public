@@ -42,8 +42,8 @@ Extensions are showing up in the POS > Settings page but manifest is not loading
 If the packages do exist, there should be a POS folder that contains the manifest.  
 
 If there is no POS folder, check the Store Commerce project is properly referencing the POS extension project. Validate the project reference path and make sure it exists, the below image shows the installer project is having issues with the referenced extension project. 
-![Store Commerce deployment options.](../media/ReferenceNotValid.png)
+![Store Commerce deployment options.](media/ReferenceNotValid.png)
  
 If the reference for the extension project is added correctly then there will not be any warning or dependency issue in the installer project.
-![Store Commerce deployment options.](../media/ReferenceValid.png)
+![Store Commerce deployment options.](media/ReferenceValid.png)
  
