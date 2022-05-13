@@ -75,11 +75,11 @@ The product collection module supports the [quick view module](quick-view-module
 To add a product collection module to a category page, follow these steps.
 
 1. Go to **Pages**, and select **New** to create a new page.
-1. In the **Choose a template** dialog box, select the same template as that used by your default category page. Under **Page name**, enter an appropriate name, and then select **OK**.
+1. In the **Create a new page** dialog box, select the same template as that used by your default category page. Under **Page name**, enter an appropriate name, and then select **OK**.
 1. In the **Sub footer** slot, select the ellipsis (**...**), and then select **Add Module**.
-1. In the **Add Module** dialog box, select the **Container** module, and then select **OK**.
+1. In the **Select modules** dialog box, select the **Container** module, and then select **OK**.
 1. In the **Container** slot, select the ellipsis (**...**), and then select **Add Module**.
-1. In the **Add Module** dialog box, select the **Product collection** module, and then select **OK**.  
+1. In the **Select modules** dialog box, select the **Product collection** module, and then select **OK**.  
 1. In the properties pane for the product collection module, select **Add a product list**.
 1. In the **Select product list configuration** dialog box, select the type of list, the list source, and enter the number of items. Configure any other options that are available for the list type. For more information about list types, see the table that follows. 
 1. Select **OK**.
