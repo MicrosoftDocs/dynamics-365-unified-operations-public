@@ -66,7 +66,7 @@ To add a script module to a template, follow these steps.
 
     ![Adding a new module.](media/script-modules-2.png)
 
-1. In the **Add Module** dialog box, select either the **External script** module or the **Inline script** module, and then select **OK**.
+1. In the **Select modules** dialog box, select either the **External script** module or the **Inline script** module, and then select **OK**.
 
     ![Adding a script module.](media/script-modules-3.png)
 
