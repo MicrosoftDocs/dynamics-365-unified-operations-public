@@ -2898,6 +2898,14 @@
             href: dev-itpro/create-retail-experience-app.md
     - name: Troubleshooting
       items: 
+      - name: Store Commerce
+        items:
+        - name: Setup and installations
+          href: troubleshoot/setup-installation.md
+        - name: Performance
+          href: troubleshoot/Performance.md
+        - name: Extensions
+          href: troubleshoot/extensions.md
       - name: Order processing
         items:
         - name: Payment type must be credit card error
