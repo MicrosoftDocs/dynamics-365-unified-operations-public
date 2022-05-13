@@ -40,7 +40,7 @@ The following table lists the key steps in the go-live process.
 |---|---|---|---|
 | Validation of prerequisites | A project is close to the end of the testing phase, and you're planning the go-live review. | Customer/Partner | For more information, see the [Go-live Readiness Review prerequisites](#prerequisites) section. |
 | Go-live Readiness Review with Microsoft | No later than four weeks before the go-live | Customer/Partner submits answers to review questions in the FastTrack for Dynamics 365 implementation portal. Microsoft FastTrack provides a review report. | For more information, see the [Go-live Readiness Review with Microsoft](#readiness) section. |
-| Go-live review workshop with Microsoft (only for eligible projects) | The workshop is part of the Go-live Readiness Review. | Microsoft FastTrack solution architect together with the project team | This step applies only to eligible projects that have [FastTrack engagement](/dynamics365/fasttrack/eligibility). For more information about the workshop, see [Go-live Readiness workshops](/dynamics365/fasttrack/go-live-workshops). |
+| Go-live review workshop with Microsoft (only for eligible projects) | The workshop is part of the Go-live Readiness Review. | Microsoft FastTrack together with the project team | This step applies only to eligible projects that have [FastTrack engagement](/dynamics365/fasttrack/eligibility). For more information about the workshop, see [Go-live Readiness workshops](/dynamics365/fasttrack/go-live-workshops). |
 | Production deployment | Production deployment can be initiated as soon as the Go-live Readiness Review is completed. After deployment is triggered, production deployment takes approximately 30 minutes. | Customer/Partner triggers the deployment in Microsoft Dynamics Lifecycle Services (LCS). | After the go-live review is successfully completed, the **Configure** button is enabled for the production environment. Selection of this button [triggers the production deployment](../../dev-itpro/deployment/deployenvironment-newinfrastructure.md). |
 | Deployable package installation | An average of 30 minutes | Customer/Partner | Follow the instructions in [Promote an update to production environments](../../dev-itpro/deployment/updateenvironment-newinfrastructure.md#promote-an-update-to-production-environments). The packages must contain all the models and binaries consolidated into [all-in-one deployable packages](../../dev-itpro/dev-tools/aio-deployable-packages.md). |
 | Data migration to production | The duration/time depends on the method that is used. | Customer/Partner | |
@@ -82,9 +82,9 @@ The project team should validate solution readiness. The following prerequisites
 > [!IMPORTANT]
 > In May 2022, the process transitioned from a Word checklist to the FastTrack for Dynamics 365 implementation portal.
 >
-> As of June 15, 2022, Word checklists will no longer be accepted. Go-live reviews can be initiated only in the portal.
+> **As of June 20, 2022, Word checklists will no longer be accepted. Go-live reviews can be initiated only in the portal.**
 >
-> If you're already in the process of using a Word checklist, you can continue if you plan to submit the Word checklist before June 15, 2022. However, because the portal and the Word checklist include the same questions, we invite you to use the portal.
+> If you're already in the process of using a Word checklist, you can continue if you plan to submit it before June 20. However, because the portal and the Word checklist include the same questions, we invite you to use the portal.
 
 All Finance and Operations apps customers must complete a Go-live Readiness Review with the [Microsoft FastTrack for Dynamics 365](/dynamics365/fasttrack/) team before production environments can be deployed. The main purpose of the review is to assess project readiness and help you have a smooth and successful go-live experience. LCS project users will receive an email reminder about the Go-live Readiness Review, based on the go-live date in LCS.
 
@@ -92,13 +92,17 @@ The review might require up to three business days for the initial report, plus 
 
 The Go-live Readiness Review is done in the FastTrack for Dynamics 365 implementation portal.
 
-### Initiate the Go-live Readiness Review
+There are two exceptions that will not use the FastTrack for Dynamics 365 implementation portal:
+- Projects that are in [United States (US) Government Community Cloud (GCC)](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/us-gcc-deployment). Please [download the Go-live checklist](https://aka.ms/d365fogolivechecklist), fill in all necessary details and send it via email to d365fogccglr@microsoft.com. Always include a key stakeholder from the customer and the implementation partner on the email. Microsoft FastTrack will review the project and follow up.
+- For projects that are already live, but planning to move the live solution to a new tenant if the solution is not changing, completing another Go-live Readiness review is not necessary. Please follow the steps described in this [article](https://docs.microsoft.com/lv-lv/dynamics365/fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant?toc=/dynamics365/commerce/toc.json#move-your-production-environment-to-the-new-tenant) to get the production slot enabled on the new tenant.
+
+### Initiate the Go-live Readiness Review in the Portal
 
 1. The customer/partner sends an e-mail to <d365fogl@microsoft.com> and includes the following information:
 
     - Confirmation that the project is ready to start the Go-live Readiness Review
     - Confirmation of the LCS project ID
-    - Confirmation of the users from the LCS project who will participate in the Go-live Readiness Review and should be granted access to the portal for the Go-live Readiness Review process
+    - **Confirmation of the users from the LCS project who will participate in the Go-live Readiness Review and should be granted access to the portal for the Go-live Readiness Review process**
 
     > [!NOTE]
     > Key stakeholders from the customer organization who are participating in the review must be selected as **Review participants** in the portal.
@@ -113,7 +117,7 @@ The Go-live Readiness Review is done in the FastTrack for Dynamics 365 implement
 
 ### After the review is submitted in the portal
 
-- Microsoft FastTrack reviews the project and provides a report that describes the potential risks, best practices, and recommendations for a successful go-live of the project. The review might require up to three business days for the initial report, plus additional time for any risk mitigation that is required.
+- Microsoft FastTrack reviews the project and provides a report that describes the potential risks, best practices, and recommendations for a successful go-live of the project. **The review might require up to three business days for the initial report, plus additional time for any risk mitigation that is required.**
 - Users who have been selected as **Review participants** in the portal receive email communication that provides updates about the review.
 - When all critical risks have been addressed, and the review has been completed, Microsoft enables the production environment slot in the LCS project. The customer/partner can then trigger the production environment deployment.
 
