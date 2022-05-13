@@ -58,7 +58,7 @@ To add a metatags module to a template, follow these steps.
 
     ![Adding a new module.](media/metatags-module-2.png)
 
-1. In the **Add Module** dialog box, select the **Metatags** module, and then select **OK**.
+1. In the **Select modules** dialog box, select the **Metatags** module, and then select **OK**.
 
     ![Adding a metatags module.](media/metatags-module-3.png)
 
