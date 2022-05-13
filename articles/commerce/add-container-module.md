@@ -4,7 +4,7 @@
 title: Container module
 description: This topic covers container modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 09/15/2020
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
