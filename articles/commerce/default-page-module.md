@@ -56,7 +56,7 @@ To add a default page module to a template, follow these steps.
 
     ![Adding a new module.](media/page-module-2.png)
 
-1. In the **Add Module** dialog box, select the **Default Page** module, and then select **OK**.
+1. In the **Select modules** dialog box, select the **Default Page** module, and then select **OK**.
 
     ![Adding a default page module.](media/page-module-3.png)
 
