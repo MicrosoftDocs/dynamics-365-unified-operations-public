@@ -4,7 +4,7 @@
 title: Default page module
 description: This topic covers default page modules and describes how to add them to page templates in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 04/02/2021
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
