@@ -103,18 +103,19 @@ The Excel worksheet that you downloaded contains the structure of the **Set up t
 4. Select **Save**.
 
 ## Import feature demo data
-Complete the following steps to import feature demo data.
+
+Follow these steps to import feature demo data.
 
 1. Sign in to [RCS](https://marketing.configure.global.dynamics.com/).
 2. In the **Globalization features** workspace, select **Features**, and then select the **Tax calculation** tile.
-3. Select **Import**, and on the **Import feature from Global repository** page, select **Synchronize**. 
+3. Select **Import**, and then, on the **Import feature from Global repository** page, select **Synchronize**. 
 4. In the table, select the **tax-calculation-feature-demo-data** feature, and then select **Import**.
-5. Select **View** to check the defined tax codes, groups, and applicability rules in the imported feature.
-6. In Finance, switch to legal entity **DEMF**, and go to **Tax** > **Setup** > **Tax configuration** > **Tax calculation parameters**.
-7. On the General tab, select **Enable Tax Calculation Service**.
-8. In the **Feature setup name** drop-down, select **tax-calculation-feature-demo-data**.
+5. Select **View** to review the tax codes, groups, and applicability rules that are defined in the imported feature.
+6. In Finance, switch to the **DEMF** legal entity, and then go to **Tax** \> **Setup** \> **Tax configuration** \> **Tax calculation parameters**.
+7. On the **General** tab, select **Enable Tax Calculation Service**.
+8. In the **Feature setup name** field, select **tax-calculation-feature-demo-data**.
 9. Select **Settlement period** and **Ledger posting group** for the new demo tax codes, and then select **Confirm**.
 10. Select **Save**.
 
 > [!NOTE]
-> The **tax-calculation-feature-demo-data** demo feature is based on feature version **40.54.234** and designed for the demo legal entity **DEMF**. Make sure that your Finance and RCS is upgraded to version 10.0.26 or higher.
+> The **tax-calculation-feature-demo-data** demo feature is based on feature version **40.54.234** and designed for the **DEMF** demo legal entity. Make sure that Finance and RCS are upgraded to version 10.0.26 or later.
