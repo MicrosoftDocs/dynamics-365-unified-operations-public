@@ -46,9 +46,9 @@ The following terms and concepts are useful when discussing inventory allocation
 - **Allocated** - this shows the allocated quota that can be consumed by the allocation groups. It is a physical measure
 - **Consumed** - this indicates how many quantities have been consumed against the original allocated quantity. It is a physical measure. By adding numbers to this physical measure, it will automatically reduce the Allocated physical measure.
 
-The following illustration shows the inventory allocation workflow.
+The following illustration shows the inventory allocation business workflow.
 
-![Allocation business flow](media/inventory-visibility-allocation-flow.png "Invetory Visibility allocation business flow")
+![Inventory Visibility allocation business workflow](media/inventory-visibility-allocation-flow.png "Inventory Visibility allocation business workflow")
 
 ## Set up inventory allocation
 
