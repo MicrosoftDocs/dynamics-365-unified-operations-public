@@ -2644,6 +2644,10 @@
             href: dev-itpro/pos-extension/cpos-extension-package.md
           - name: Create a Store Commerce extension installer package
             href: dev-itpro/store-comm-extension-installer.md
+        - name: Troubleshooting
+          items: 
+          - name: Extensions
+            href: troubleshoot/extensions.md
       - name: E-commerce
         items:
         - name: Overview
