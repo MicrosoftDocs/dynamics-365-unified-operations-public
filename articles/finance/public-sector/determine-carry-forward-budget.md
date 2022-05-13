@@ -24,11 +24,11 @@ For information about how purchase orders are processed at year end, see [Proces
 
 ## Turn carry-forward budget reductions for invoice variances on or off
 
-The system can always update the carry-forward budget when a purchase order is canceled or reduced. However, if you want the system also to update the carry-forward budget when an invoice is reduced, you must turn on the *Reduce carry-forward budget when an invoice against a purchase order is reduced with a variance* feature in your system. Admins can turn this feature on or off by searching for it in the **[Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** workspace.
+The system can always update the carry-forward budget when a purchase order is canceled or reduced. However, if you want to update the carry-forward budget when an invoice is reduced, you must turn on the *Reduce carry-forward budget when an invoice against a purchase order is reduced with a variance* feature. Admins can turn this feature on or off by searching for it in the **[Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** workspace.
 
 ## Purchase order reductions and cancellations
 
-Regardless of whether the *Reduce carry-forward budget when an invoice against a purchase order is reduced with a variance* feature is turned on for your system, the system can always update the carry-forward budget when a qualifying purchase order is canceled or reduced. You can set each general ledger fund to respond in one of the following ways:
+Regardless of whether the *Reduce carry-forward budget when an invoice against a purchase order is reduced with a variance* feature is turned on, the carry-forward budget will be updated when a qualifying purchase order is canceled or reduced. You can set each general ledger fund to respond in one of the following ways:
 
 - Preserve the carry-forward budget as it was created.
 - Automatically adjust the carry-forward budget to remove the canceled or reduced amount.
@@ -37,7 +37,7 @@ Only purchase order lines that have distributions that include a fund are availa
 
 ## Invoice reductions
 
-When the *Reduce carry-forward budget when an invoice against a purchase order is reduced with a variance* feature is turned on in your system, you can specify whether each fund should reduce the carry-forward budget when an invoice is reduced, in addition to when a purchase order is reduced or canceled. The invoice must be for a purchase order that has carry-forward budget. Reductions include price variances, charge variances, and tax variances. When a carry-forward purchase order is reduced during invoicing, a variance is created. When the invoice is posted, the purchase order encumbrance will be reduced by the amount of the variance. The feature will also create the automatic budget adjustment for the amount of the variance.
+When the *Reduce carry-forward budget when an invoice against a purchase order is reduced with a variance* feature is turned on, you can specify whether each fund should reduce the carry-forward budget when an invoice is reduced, in addition to when a purchase order is reduced or canceled. The invoice must be for a purchase order that has carry-forward budget. Reductions include price variances, charge variances, and tax variances. When a carry-forward purchase order is reduced during invoicing, a variance is created. When the invoice is posted, the purchase order encumbrance will be reduced by the amount of the variance. The feature will also create the automatic budget adjustment for the amount of the variance.
 
 When the *Reduce carry-forward budget when an invoice against a purchase order is reduced with a variance* feature is turned off, the carry-forward budget isn't reduced in this scenario. Therefore, the remaining carry-forward budget for the amount of the variance is left behind.
 
