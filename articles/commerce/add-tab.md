@@ -59,16 +59,16 @@ To add a tab module to a page and set the properties, follow these steps.
 
 1. Use the Fabrikam marketing template (or any template that has no restrictions) to create a new page that is named **Store policies page**.
 1. In the **Main** slot of the **Default page**, select the ellipsis (**...**), and then select **Add Module**.
-1. In the **Add Module** dialog box, select the **Container** module, and then select **OK**.
+1. In the **Select modules** dialog box, select the **Container** module, and then select **OK**.
 1. In the **Container** slot, select the ellipsis (**...**), and then select **Add Module**.
-1. In the **Add Module** dialog box, select the **Tab** module, and then select **OK**.
+1. In the **Select modules** dialog box, select the **Tab** module, and then select **OK**.
 1. In the property pane of the tab module, select **Heading** next to the pencil symbol.
 1. In the **Heading** dialog box, under **Heading Text**, enter heading text (for example, **Policies**). Then select **OK**.
 1. In the **Tab** slot, select the ellipsis (**...**), and then select **Add Module**.
-1. In the **Add Module** dialog box, select the **Tab item** module, and then select **OK**.
+1. In the **Select modules** dialog box, select the **Tab item** module, and then select **OK**.
 1. In the property pane of the tab item module, under **Title**, enter title text (for example, **Delivery**).
 1. In the **Tab item** slot, select the ellipsis (**...**), and then select **Add Module**.
-1. In the **Add Module** dialog box, select the **Text block** module, and then select **OK**.
+1. In the **Select modules** dialog box, select the **Text block** module, and then select **OK**.
 1. In the property pane of the text block module, under **Rich text**, enter a paragraph of text.
 1. In the **Tab** slot, add a few more tab item modules that have titles. In each tab item module, add a text block module that has content.
 1. Select **Save**, and then select **Preview** to preview the page. The page will show a tab module that contains tab item modules have the content that you added.
