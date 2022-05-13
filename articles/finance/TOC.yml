@@ -1264,6 +1264,8 @@
           href: public-sector/accounts-payable-public-sector.md
         - name: Purchase order codes in the public sector
           href: public-sector/purchase-order-codes-public-sector.md
+        - name: Purchase orders and carry-forward budget 
+          href: public-sector/determine-carry-forward-budget.md
         - name: Create and assign a trading partner code in the public sector
           href: public-sector/tasks/create-assign-trading-partner-code-public-sector.md
         - name: Posting definitions in the public sector
@@ -1287,7 +1289,7 @@
       - name: Accounts receivable in the public sector
         items:
         - name: Accounts receivable in the public sector overview
-          href: public-sector/accounts-receivable-public-sector.md
+          href: public-sector/accounts-receivable-public-sector.md         
         - name: Billing classifications and billing codes in the public sector
           href: public-sector/billing-classifications-billing-codes-public-sector.md
         - name: Create a billing classification in the public sector
