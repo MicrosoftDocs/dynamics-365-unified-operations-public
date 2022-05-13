@@ -4,7 +4,7 @@
 title: Order confirmation module
 description: This topic covers order confirmation modules and describes how to use them in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 11/06/2020
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -56,15 +56,15 @@ To add an order confirmation module to a new page and set the required propertie
 1. Go to **Templates**, and select **New** to create a new template.
 1. In the **New Template** dialog box, under **Template name**, enter the name **Order confirmation template**, and then select **OK**.
 1. In the **Body** slot, select the ellipsis (**...**), and then select **Add Module**.
-1. In the **Add Module** dialog box, select the **Default page** module, and then select **OK**.
+1. In the **Select modules** dialog box, select the **Default page** module, and then select **OK**.
 1. In the **Main** slot of the **Default Page** module, select the ellipsis (**...**), and then select **Add Module**.
-1. In the **Add Module** dialog box, select the **Order confirmation** module, and then select **OK**.
+1. In the **Select modules** dialog box, select the **Order confirmation** module, and then select **OK**.
 1. Select **Save**, and then select **Preview** to preview the template. The order confirmation module won't be rendered, because it requires the context of the order confirmation number.
 1. Select **Finish editing** to check in the template, and then select **Publish** to publish it.
 1. Go to **Pages**, and select **New** to create a new page.
 1. In the **Choose a template** dialog box, select **Order confirmation template**. Under **Page name**, enter **Order confirmation page**, and then select **OK**.
 1. In the **Main** slot of the **Default Page** module, select the ellipsis (**...**), and then select **Add Module**.
-1. In the **Add Module** dialog box, select the **Order confirmation** module, and then select **OK**.
+1. In the **Select modules** dialog box, select the **Order confirmation** module, and then select **OK**.
 1. In the properties pane for the order confirmation module, select **Heading** next to the pencil symbol.
 1. In the **Heading Text** field of the **Heading** dialog box, enter the heading text **Order confirmation**, and then select **OK**.
 1. Select **Save**, and then select **Preview** to preview the page.
