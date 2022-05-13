@@ -86,7 +86,7 @@ When an ER data model is configured in this way, its content will be presented t
 
 ### Model mapping component
 
-Because the ER model mapping is based on an ER data model, the labels of the data model elements that are referred to are appeared in the user's preferred language in the model mapping designer. The following illustration shows how the meaning of the **PurchaseOrder** field is explained in the editable model mapping by using the label of the **Description** attribute that has been added to the configured data model. Notice that this label is presented in the user's preferred language (DE-AT in this example).
+Because the ER model mapping is based on an ER data model, the labels of the data model elements that are referred to appear in the user's preferred language in the model mapping designer. The following illustration shows how the meaning of the **PurchaseOrder** field is explained in the editable model mapping by using the label of the **Description** attribute that has been added to the configured data model. Notice that this label is presented in the user's preferred language (DE-AT in this example).
 
 ![Layout of the ER model mapping designer for a user having DE-AT set as the preferred language.](./media/er-multilingual-labels-show-mapping.png)
 
@@ -94,7 +94,7 @@ When the **Label** attribute of the **User input parameter** data source is conf
 
 ### Format component
 
-When you configure an ER format, you can add ER labels for it. The **Label** and **Help text** attributes of every configured data source can be linked to an ER label that is added to the ER format. The **Label** and **Description** attributes of every <a id="LinkFormatEnum"></a>format enumeration value can be also linked to an ER label that is accessible from the editable ER format.
+When you configure an ER format, you can add ER labels for it. The **Label** and **Help text** attributes of every configured data source can be linked to an ER label that is added to the ER format. The **Label** and **Description** attributes of every <a id="LinkFormatEnum"></a>format enumeration value can also be linked to an ER label that is accessible from the editable ER format.
 
 > [!NOTE]
 > You can also link these attributes to an ER label of the parent ER data model that reuses the model's labels in every ER format that is configured for this ER data model.
@@ -224,10 +224,9 @@ Labels of an ER component that can be edited are kept, together with other conte
 Labels of a base ER component can be referred to in a derived version of the ER component that you create to introduce your modifications.
 
 > [!TIP]
-> When you design your own ER solution, you can derive your own ER [data model](er-overview-components.md#data-model-component) component from the provided one. In this derived data model, you can introduce your own ER labels and use them in all ER formats that will use this data model as the data source. Then, you can derive your own ER [format](er-overview-components.md#format-component) component from the provided one by selecting your derived ER data model as the alternative to the provided one. In version 10.0.28 and later, you can enable the **Enhanced access to labels of the ascendent ER data model** feature to access labels of an ascendent ER data model in derived ER format components even when you selected an ER data model for the derived ER component that differs from the one that was used in the base ER component.
-
-> [!TIP]
-> When the same label name is used in your derived component and in its ascendent components, your translation of this label is used as the most relevant one.
+> When you design a ER solution, you can derive your own ER [data model](er-overview-components.md#data-model-component) component from the one that is provided. In this derived data model, you can introduce your own ER labels and use them in all ER formats that will use the data model as the data source. You can then derive your own ER [format](er-overview-components.md#format-component) component from the one that is provided by selecting your derived ER data model instead of the provided one. In version 10.0.28 and later, you can enable the **Enhanced access to labels of the ascendent ER data model** feature to access labels of an ascendent ER data model in derived ER format components, even when the ER data model that you selected for the derived ER component differs from the one that was used in the base ER component.
+>
+> When the same label name is used in your derived component and its ascendent components, your translation of that label is used as the most relevant one.
 
 ER versioning controls label assignment to any attribute in an ER component. Changes to the label assignment are recorded in the list of changes (delta) of an editable ER component that has been created as a derived version of the provided ER component. These changes will be validated when a derived version is rebased to a new base version.
 
@@ -251,7 +250,7 @@ When you change the status of an ER configuration version from **Draft** to **Co
 
 We recommend that you enable the **Accelerate the ER labels storage** feature in the **Feature management** workspace. This feature helps improve network bandwidth utilization and overall system performance because, in most cases, ER labels of a single language are used when you work with a single ER configuration.
 
-To apply the selected storage schema for keeping labels of all ER configurations in the currenet Finance instance, complete the following steps.
+To apply the selected storage schema for keeping labels of all ER configurations in the current Finance instance, complete the following steps.
 
 1. Go to **Organization administration** > **Periodic** > **Apply the selected labels storing schema for all ER configurations**.
 2. Select **OK**.
