@@ -31,11 +31,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-A **customer invoice for a sales order** is a bill that is related to a sale, and that an organization gives to a customer. This type of customer invoice is created based on a sales order, which includes order lines and item numbers. Item numbers are specified and posted in the ledger. Subledger journal entries aren't available for a customer invoice for a sales order. For more information, see [Create sales order invoices](tasks/create-sales-order-invoices.md).
+A **Customer invoice for a sales order** is a bill that is related to a sale, and that an organization gives to a customer. This type of customer invoice is created based on a sales order, which includes order lines and item numbers. Item numbers are specified and posted in the ledger. Subledger journal entries aren't available for a customer invoice for a sales order. For more information, see [Create sales order invoices](tasks/create-sales-order-invoices.md).
 
-A **free text invoice** isn't related to a sales order. It contains order lines that include ledger accounts, free-text descriptions, and a sales amount that you enter. You can't enter an item number on this kind of invoice. You must enter the appropriate sales tax information. A main account for the sale is indicated on each invoice line, which you can distribute to multiple ledger accounts by clicking **Distribute amounts** on the **Free text invoice** page. Additionally, the customer balance is posted to the summary account from the posting profile that is used for the free text invoice.
+A **Free text invoice** isn't related to a sales order. It contains order lines that include ledger accounts, free-text descriptions, and a sales amount that you enter. You can't enter an item number on this kind of invoice. You must enter the appropriate sales tax information. A main account for the sale is indicated on each invoice line, which you can distribute to multiple ledger accounts by clicking **Distribute amounts** on the **Free text invoice** page. Additionally, the customer balance is posted to the summary account from the posting profile that is used for the free text invoice.
 
-For more information see:
+For more information, see:
 
 [Create free text invoices](../accounts-receivable/create-free-text-invoice-new.md)
 
@@ -46,7 +46,10 @@ For more information see:
 [Generate and post recurring free text invoices](tasks/post-recurring-free-text-invoices.md)
 
 
-A **pro forma invoice** is an invoice that is prepared as an estimate of the actual invoice amounts before the invoice is posted. You can print a pro forma invoice either for a customer invoice for a sales order or for a free text invoice.
+A **Pro forma invoice** is an invoice that is prepared as an estimate of the actual invoice amounts before the invoice is posted. You can print a **Pro forma invoice** either for a customer invoice for a sales order or for a free text invoice. 
+
+>[!NOTE]
+> In the case of a system interruption during the sales pro forma invoice process, a pro forma invoice can be orphaned. An orphaned pro forma invoice can be deleted by running the **Delete pro forma invoices manually** periodic job. Go to **Sales and marketing > Periodic tasks > Clean up > Delete pro forma invoices manually**.
 
 ## Using sales order customer invoice data entities
 You can use data entities to import and export information about a customer invoice for a sales order. There are different entities for the information on the sales invoice header and the sales invoice lines.
@@ -75,7 +78,7 @@ You can view the status of the sales orders on the **All sales orders** list pag
 ## Post and print individual customer invoices that are based on packing slips and the date
 Use this process when one or more packing slips have been posted for the sales order. The customer invoice is based on these packing slips and reflects the quantities from them. The financial information for the invoice is based on the information that is entered when you post the invoice. 
 
-You can create a customer invoice that is based on the packing slip line items that have been shipped to date, even if all the items for a particular sales order haven't yet been shipped. You might do this if, for example, your legal entity issues one invoice per customer per month that covers all the deliveries that you ship during that month. Each packing slip represents a partial or complete delivery of the items on the sales order. 
+You can create a customer invoice that is based on the packing slip line items that have been shipped to date, even if all the items for a particular sales order haven't been shipped. You might do this if, for example, your legal entity issues one invoice per customer per month that covers all the deliveries that you ship during that month. Each packing slip represents a partial or complete delivery of the items on the sales order. 
 
 When you post the invoice, the **Invoice remainder** quantity for each item is updated with the total of the delivered quantities from the selected packing slips. If both the **Invoice remainder** quantity and the **Deliver remainder** quantity for all items on the sales order are 0 (zero), the status of the sales order is changed to **Invoiced**. If the **Invoice remainder** quantity isn't 0 (zero), the status of the sales order remains unchanged, and additional invoices can be entered for it. 
 
@@ -94,7 +97,7 @@ You can configure the splitting of sales order customer invoices by site or by d
  - Select the **Split based on invoice delivery information** option to create one invoice per sales order line delivery address when posting. 
 
 ## Post to Revenue account for sales order lines that have no price
-You will have the option to update the **Revenue** account in the **General ledger** for sales order lines that have no price. To set up or view this information, go to the **Post to Revenue account for zero priced sales order invoice lines** parameter on the **Ledger and sales tax** tab of the **Accounts receivable parameters** page. (**Accounts receivable > Setup > Accounts receivable parameters**). Select **Yes** to update the **Revenue** account for sales order invoice lines that have no price. A revenue account is defined on the **Inventory posting** parameter page, on the **Sales order** account definition tab. If this option is not selected, lines that do not have price information will not post to the **Revenue** account.
+You'll have the option to update the **Revenue** account in the **General ledger** for sales order lines that have no price. To set up or view this information, go to the **Post to Revenue account for zero priced sales order invoice lines** parameter on the **Ledger and sales tax** tab of the **Accounts receivable parameters** page. (**Accounts receivable > Setup > Accounts receivable parameters**). Select **Yes** to update the **Revenue** account for sales order invoice lines that have no price. A revenue account is defined on the **Inventory posting** parameter page, on the **Sales order** account definition tab. If this option isn't selected, lines that don't have price information won't post to the **Revenue** account.
 
 ## Additional settings that change the posting behavior
 The following fields change the behavior of the posting process.
@@ -162,7 +165,7 @@ The following fields change the behavior of the posting process.
 <td>Check credit limit</td>
 <td>Select the information that should be analyzed when a credit limit check is performed.
 <ul>
-<li><strong>None</strong> – There is no requirement for the credit limit check.</li>
+<li><strong>None</strong> – There's no requirement for the credit limit check.</li>
 <li><strong>Balance</strong> – The credit limit is checked against the customer balance.</li>
 <li><strong>Balance + packing slip or product receipt</strong> – The credit limit is checked against the customer balance and deliveries.</li>
 <li><strong>Balance+All</strong> – The credit limit is checked against the customer balance, deliveries, and open orders.</li>
