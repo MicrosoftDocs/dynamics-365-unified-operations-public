@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Update environment administrator
+title: Update the environment administrator
 description: This topic explains how to restart individual services in environments that are deployed through Microsoft Dynamics Lifecycle Services (LCS).
 author: laneswenka
 ms.date: 05/10/2022
@@ -15,25 +15,26 @@ ms.search.validFrom: 2018-03-05
 
 ---
 
-# Update environment administrator
+# Update the environment administrator
 
 [!include [banner](../includes/banner.md)]
 
-When creating a Finance and Operations apps environment in Microsoft Dynamics Lifecycle Services (LCS), one of the required configuration options is to select a user as the environment administrator.  This becomes the email account associated with the default **Admin** user record inside of the Finance and Operations application with the System Administrator role assigned.  The Admin user is critical for situations in the application, such as system batch jobs that need to run with administrator privileges and should not be associated to a regular user from your company who could leave your organization and hence have their Azure Active Directory account disabled.
+When you create a Finance and Operations apps environment in Microsoft Dynamics Lifecycle Services (LCS), one of the configuration options requires that you select a user as the environment administrator. This user becomes the email account that is associated with the default **Admin** user record that the System Administrator role is assigned to in Finance and Operations apps.
 
-However, we know that from time-to-time that the Admin user account is disabled in Azure Active Directory and the ability to change this Admin user record in the application does not exist.  To date this has been supported manually via a support ticket, but has now been made as a self-service action in LCS.
+The Admin user is critical in some situations in the apps, such as when system batch jobs are run. These jobs must run with administrator privileges. They should not be associated with a regular user from your company, because that user's Azure Active Directory (Azure AD) account will be disabled if they leave your organization.
 
-## Changing the environment administrator account
+However, we know that the Admin user account is occasionally disabled in Azure AD, and there is no way to change the **Admin** user record in the apps. Previously, this issue was manually supported via a support ticket, but it has now been made a self-service action in LCS.
 
-To change the environment administrator, you will need to be a Project Owner in the LCS project.  From there, you can visit your environment details page and use the following steps to make the change:
+## Change the environment administrator account
 
-1. Select **Maintain > Update environment admin**.
-2. A new slider window appears, where you may select another Project Owner or Environment Admin user from your LCS project.
-3. Click the **Save** button.
+To change the environment administrator, you must be a project owner in the LCS project.
+
+1. In LCS, go to your project, and open your environment details page.
+2. Select **Maintain \> Update environment admin**.
+3. In the dialog box that appears, select another Project Owner or Environment Admin user from your LCS project.
+4. Select **Save**.
 
 > [!IMPORTANT]
-> Changing the environment administrator account causes downtime on the target Finance and Operations apps environment.  Please use this capability appropriately after scheduling the downtime within your organization.
-
-    
+> Changes to the environment administrator account cause downtime in the target Finance and Operations apps environment. Therefore, use this capability in the appropriate way and only after you schedule the downtime in your organization.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
