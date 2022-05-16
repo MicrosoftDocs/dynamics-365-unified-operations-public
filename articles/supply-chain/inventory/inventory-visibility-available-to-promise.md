@@ -19,7 +19,7 @@ ms.dyn365.ops.version: 10.0.26
 
 This topic describes how to set up the *On-hand change schedule* feature to schedule future on-hand changes and calculate available-to-promise (ATP) quantities. ATP is the quantity of an item that is available and can be promised to a customer in the next period. Use of this calculation can greatly increase your order fulfillment capability.
 
-For many manufactures, retailors, or sellers, it isn't enough just to know what is currently on hand. They must have full visibility into future availability. This future availability should consider future supply, future demand, and ATP.
+For many manufacturers, retailers, or sellers, it isn't enough just to know what is currently on hand. They must have full visibility into future availability. This future availability should consider future supply, future demand, and ATP.
 
 ## <a name="setup"></a>Enable and set up the features
 
@@ -29,10 +29,10 @@ Before you can use ATP, you must set up one or more calculated measures to calcu
 
 The *ATP calculated measure* is a predefined calculated measure that is typically used to find the on-hand quantity that is currently available. The *supply quantity* is the sum of quantities for those physical measures that have a modifier type of *addition*, and the *demand quantity* is the sum of quantities for those physical measures that have a modifier type of *subtraction*.
 
-You can add multiple calculated measures to calculate multiple ATP quantities. However, the total number of distinct physical measures across all ATP calculated measures should less than nine.
+You can add multiple calculated measures to calculate multiple ATP quantities. However, the total number of distinct physical measures across all ATP calculated measures should be less than nine.
 
 > [!IMPORTANT]
-> A calculated measure is a composition of physical measures. Its formula can only include physical measures without duplicates, not calculated measures.
+> A calculated measure is a composition of physical measures. Its formula can include only physical measures without duplicates, not calculated measures.
 
 For example, you set up the following calculated measure:
 
@@ -42,11 +42,11 @@ The sum (*PhysicalInvent* + *OnHand* + *Unrestricted* + *QualityInspection* + *I
 
 **On-hand-available** = *Supply* – *Demand*
 
-You could add another calculated measure to calculate the **On-hand-physical** ATP quantity.
+You can add another calculated measure to calculate the **On-hand-physical** ATP quantity.
 
 **On-hand-physical** = (*PhysicalInvent* + *OnHand* + *Unrestricted* + *QualityInspection* + *Inbound*) – (*Outbound*)
 
-There are 8 distinct physical measures across those two ATP calculated measures, which are *PhysicalInvent*, *OnHand*, *Unrestricted*, *QualityInspection*, *Inbound*, *ReservPhysical*, *SoftReservePhysical*, and *Outbound*.
+There are eight distinct physical measures across those two ATP calculated measures: *PhysicalInvent*, *OnHand*, *Unrestricted*, *QualityInspection*, *Inbound*, *ReservPhysical*, *SoftReservePhysical*, and *Outbound*.
 
 For more information about calculated measures, see [Calculated measures](inventory-visibility-configuration.md#calculated-measures).
 
@@ -84,7 +84,7 @@ For example, you place an order for 10 bikes and expect it to arrive tomorrow. T
 
 When you query Inventory Visibility for on-hand and ATP quantities, it returns the following information for each day in the schedule period:
 
-- **Date** – The date that the result applies to. The timezone is UTC.
+- **Date** – The date that the result applies to. The time zone is Coordinated Universal Time (UTC).
 - **On-hand quantity** – The actual on-hand quantity for the specified date. This calculation is made according to the ATP calculated measure that is configured for Inventory Visibility.
 - **Scheduled supply** – The sum of all scheduled inbound quantities that haven't become physically available for immediate consumption or shipment as of the specified date.
 - **Scheduled demand** – The sum of all scheduled outbound quantities that haven't been consumed or shipped as of the specified date.
@@ -205,9 +205,9 @@ For more information, see [Inventory Visibility public APIs](inventory-visibilit
 
 ### Create one on-hand change schedule
 
-An on-hand change schedules is made by submitting a `POST` request to the relevant Inventory Visibility service URL (see the [Submit change schedules, change events, and ATP queries through the API](#api-urls) section). You can also submit bulk requests.
+An on-hand change schedule is created by submitting a `POST` request to the relevant Inventory Visibility service URL (see the [Submit change schedules, change events, and ATP queries through the API](#api-urls) section). You can also submit bulk requests.
 
-To create an on-hand change schedule, the scheduled date must be between the current date and the end of the current schedule period. The format of datetime should be *year-month-day*, for example, "2022-02-01". The time format only needs to be accurate to the day.
+An on-hand change schedule can be created only if the scheduled date is between the current date and the end of the current schedule period. The datetime format should be *year-month-day* (for example, **2022-02-01**). The time format must be accurate only to the day.
 
 This API creates a single on-hand change schedule.
 
@@ -231,7 +231,7 @@ Body:
             [key:string]: string,
         },
         quantitiesByDate: {
-            [datetime:datetime]: {                    
+            [datetime:datetime]: {
                 [dataSourceName:string]: {
                     [key:string]: number,
                 },
@@ -267,7 +267,7 @@ The following example shows sample body content without `dimensionDataSource`.
 
 ### Create multiple on-hand change schedules
 
-This API can create multiple records at the same time. The only differences between this API and the single-event API are the `Path` and `Body` values. For this API, `Body` provides an array of records. The maximum number of records is 512, which means that the on-hand change schedule bulk API can support up to 512 change events at a time.
+This API can create multiple records at the same time. The only differences between this API and the single-event API are the `Path` and `Body` values. For this API, `Body` provides an array of records. The maximum number of records is 512. Therefore, the on-hand change schedule bulk API can support up to 512 scheduled changes at a time.
 
 ```txt
 Path:
@@ -291,7 +291,7 @@ Body:
             },
             quantityDataSource: string, # optional
             quantitiesByDate: {
-                [datetime:datetime]: {                    
+                [datetime:datetime]: {
                     [dataSourceName:string]: {
                         [key:string]: number,
                     },
@@ -305,7 +305,6 @@ Body:
 The following example shows sample body content.
 
 ```json
-
 [
     {
         "id": "id-bike-0001",
