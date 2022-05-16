@@ -45,7 +45,7 @@ The following illustration shows the **Show taxes breakup in order summary** che
 ![Show taxes breakup in order summary option in site builder.](media/prices-include-sales-tax-e-Commerce-site-settings.png)
 
 > [!NOTE]
-> If you have customized order summary modules and do not want to inherit the "hide the tax breakup information in order summaries" functionality in Commerce version 10.0.27 or later, see [Order summary subtotal doesn't include taxes on charges when using customized order summary modules](troubleshoot/summary-taxes-custom-modules-10.0.27.md#resolution).
+> If you have customized order summary modules and don't want to inherit the "hide the tax breakup information in order summaries" functionality in Commerce version 10.0.27 or later, see [Order summary subtotal doesn't include taxes on charges when using customized order summary modules](troubleshoot/summary-taxes-custom-modules-10.0.27.md#resolution).
 
 ## Additional resources
 
