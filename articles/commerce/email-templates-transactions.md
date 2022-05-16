@@ -144,8 +144,6 @@ When invoked through a real time service call, the customer created notification
 | Phone            | The phone number of the customer who created an account      |
 | Url              |                                                              |
 
-
-
 ### B2B prospect approved
 
 The *B2B prospect approved* notification type is triggered when a prospect's onboarding request is approved in Commerce headquarters. For more information about how to approve or reject B2B prospects, see [Set up the administrator user for a new business partner](b2b/manage-b2b-users.md#set-up-the-administrator-user-for-a-new-business-partner). 
