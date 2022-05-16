@@ -2,7 +2,7 @@
 title: Dual-write setup from Lifecycle Services
 description: This topic explains how to set up a dual-write connection from Microsoft Dynamics Lifecycle Services (LCS).
 author: laneswenka
-ms.date: 05/10/2022
+ms.date: 05/16/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
@@ -23,10 +23,10 @@ This article explains how to enable dual-write from Microsoft Dynamics Lifecycle
 
 You must complete the Power Platform integration as described in the following topics.  
 
-For customers who don't already use Power Platform and want to expand their Finance and Operations apps environments with platform capabilities see the below article:
+For customers who don't already use Power Platform and want to expand their Finance and Operations environments with platform capabilities see the below article:
 + [Power Platform Integration - Enable during environment deployment](../../power-platform/enable-power-platform-integration.md#enable-during-deploy)
 
-For customers who already have Dataverse and Power Platform environments and want to connect those to Finance and Operations, see the below article:
+For customers who already have Dataverse and Power Platform environments and want to connect those to Finance and Operations ennvironments, see the below article:
 + [Power Platform integration - Enable after environment deployment](../../power-platform/enable-power-platform-integration.md#enable-after-deploy)
 
 ## Set up dual-write for new or existing Dataverse environments
@@ -61,7 +61,7 @@ If your environment has a linking mismatch, LCS displays a warning on your envir
 
 :::image type="content" source="media/powerplat_integration_mismatchLink.png" alt-text="Power Platform integration link mismatched.":::
 
-If you encounter this error you may do either of the following solutions:
+If you encounter this error, you may try either of the following solutions:
 
 - If your LCS environment has never had Power Platform integration set up, then you can connect to the Dataverse instance configured in dual-write by following this article.
 - If your LCS environment is already set up for Power Platform integration, you should unlink dual-write and reconnect it to the one specified by LCS using the [Scenario: Reset or change linking](relink-environments.md#scenario-reset-or-change-linking).
