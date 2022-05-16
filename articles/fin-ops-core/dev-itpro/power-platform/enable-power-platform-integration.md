@@ -4,7 +4,7 @@
 title: Enable the Microsoft Power Platform integration
 description: This topic explains how to enable the Microsoft Power Platform integration by using Microsoft Dynamics Lifecycle Services (LCS) for Finance and Operations apps and Dataverse.
 author: jaredha
-ms.date: 05/10/2022
+ms.date: 05/16/2022
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.0
 
 The integration of Finance and Operations apps with Microsoft Power Platform can be enabled when you create a new Finance and Operations apps environment in Microsoft Dynamics Lifecycle Services (LCS). Alternatively, Microsoft Power Platform can be enabled in an existing Finance and Operations apps environment. For both options, you must complete the setup prerequisites.
 
-With Power Platform Integration you can:
+With Power Platform integration you can:
 
 * Create Power Apps and Flows using the new Power Platform environment that is created for you automatically.
 * Integrate Finance and Operations apps data to the Microsoft Dataverse platform using virtual tables, business events, and dual-write features.
@@ -40,7 +40,7 @@ With Power Platform Integration you can:
 
 ## Initial Power Platform environment
 
-By default, all Finance and Operations apps environments (sandbox and production) that are managed by LCS will receive an initial Power Platform environment **without** Dataverse. This environment is linked to Finance and Operations, as shown, in the image below.  The relationship is one to one. Over time, your Finance and Operations apps will be migrated to this location in Power Platform admin center (PPAC). You can determine whether an environment in PPAC is linked to an environment from LCS by looking at the Finance and Operations apps URL on the environment details page in PPAC.
+By default, all Finance and Operations apps environments (sandbox and production) that are managed by LCS will receive an initial Power Platform environment **without** Dataverse. This environment is linked to your Finance and Operations environment, as shown, in the image below.  The relationship is one to one. Over time, your Finance and Operations apps will be migrated to this location in the Power Platform admin center (PPAC). You can determine whether an environment in PPAC is linked to an environment from LCS by looking at the Finance and Operations apps URL on the environment details page in PPAC.
 
 :::image type="content" source="media/LinkedPowerPlatformEnvironment.png" alt-text="Linked Power Platform environment":::
 
