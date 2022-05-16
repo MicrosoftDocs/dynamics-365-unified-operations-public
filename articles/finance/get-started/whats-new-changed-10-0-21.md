@@ -188,7 +188,7 @@ For information about regulatory updates for Finance and Operations apps, see [R
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out [Dynamics 365 Finance 2021 release wave 1](/dynamics365/release-plan/2021wave1/finance-operations/dynamics365-finance) and [Dynamics 365 Finance 2021 release wave 2](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance). We've captured all the details, end to end, top to bottom, that you can use for planning.
+Check out [Dynamics 365 Finance 2021 release wave 1](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance) and [Dynamics 365 Finance 2021 release wave 2](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance). We've captured all the details, end to end, top to bottom, that you can use for planning.
 
 ### Removed and deprecated features
 
