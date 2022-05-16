@@ -172,7 +172,7 @@ If the data source is Supply Chain Management, you don't have to re-create the d
 You can use Inventory Visibility to query on both inventory physical measures and *custom calculated measures*. Calculated measures provide a customized computation formula that consists of a combination of physical measures. This functionality lets you define a set of physical measures that will be added, and/or a set of physical measures that will be subtracted, to form the customized measurement.
 
 > [!IMPORTANT]
-> A calculated measure is a composition of physical measures. It’s formula can only include physical measures without duplicates, not calculated measures.
+> A calculated measure is a composition of physical measures. Its formula can include only physical measures without duplicates, not calculated measures.
 
 The configuration lets you define a set of modifiers that are added or subtracted to get the total aggregated output quantity.
 
@@ -295,7 +295,7 @@ The solution includes this partition configuration by default. Therefore, *you d
 
 ## <a name="index-configuration"></a>Product index hierarchy configuration
 
-Most of the time, the inventory on-hand query won't be only at the highest "total" level. Instead, you might want also to see results that are aggregated based on the inventory dimensions.
+Most of the time, the inventory on-hand query won't be only at the highest "total" level. Instead, you might also want to see results that are aggregated based on the inventory dimensions.
 
 Inventory Visibility provides flexibility by letting you set up the _indexes_. These indexes are based on a dimension or a combination of dimensions. An index consists of a *set number*, a *dimension*, and a *hierarchy*, as defined in the following table.
 
