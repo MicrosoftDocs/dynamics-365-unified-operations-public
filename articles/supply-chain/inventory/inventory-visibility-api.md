@@ -534,7 +534,7 @@ The following example shows sample body content.
 }
 ```
 
-The following examples shows how to query all products in a specific site and location.
+The following example shows how to query all products in a specific site and location.
 
 ```json
 {
