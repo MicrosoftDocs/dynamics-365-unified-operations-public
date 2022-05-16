@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Use USER INPUT PARAMETER data sources to specify parameters for a report that you want to generate
-description: This topic explains how to use USER INPUT PARAMETER data sources to specify parameters for a report that you want to generate.
+title: Use USER INPUT PARAMETER data sources to specify parameters for a report
+description: This topic explains how to use USER INPUT PARAMETER data sources to specify parameters for reports that you generate.
 author: NickSelin
 ms.date: 04/20/2022
 ms.topic: article
@@ -27,104 +27,102 @@ ms.dyn365.ops.version: Version 10.0.27
 
 ---
 
-# Use USER INPUT PARAMETER data sources to specify parameters for a report that you want to generate
+# Use USER INPUT PARAMETER data sources to specify parameters for a report
 
 [!include[banner](../includes/banner.md)]
 
-When you design [Electronic reporting](general-electronic-reporting.md) (ER) [model mapping](er-overview-components.md#model-mapping-component) and ER [format](er-overview-components.md#format-component) components, use the data sources of the USER INPUT PARAMETER type to obtain the necessary values that can be specified at runtime on the dialog box in data entry fields before the execution of an ER format begins. The currently supported data sources of the USER INPUT PARAMETER type are described in this topic. 
+When you design [Electronic reporting](general-electronic-reporting.md) (ER) [model mapping](er-overview-components.md#model-mapping-component) and ER [format](er-overview-components.md#format-component) components, you can use data sources of a *USER INPUT PARAMETER* type to obtain the required values that can be specified in data entry fields in the dialog box at runtime, before execution of an ER format begins. This topic describes the *USER INPUT PARAMETER* data sources that are currently supported.
 
 ## <a name="mandatory-properties"></a>Mandatory properties
 
-Regardless of the USER INPUT PARAMETER type of the added data source, you must specify the following properties:
+You must specify the following properties for data sources of every *USER INPUT PARAMETER* type:
 
-- In the **Name** field, enter the data source internal name. You can use this name in other [expressions](er-formula-language.md) and bindings of the configured model mapping or format component.
+- In the **Name** field, enter the internal name of the data source. You can use this name in other [expressions](er-formula-language.md) and bindings of the configured model mapping or format component.
 
 ## <a name="optional-properties"></a>Optional properties
 
-For any data source of the USER INPUT PARAMETER type, the following properties can be specified:
+You can optionally specify the following properties for data sources of a *USER INPUT PARAMETER* type:
 
-- In the **Label** field, specify the label that is used at runtime on the dialog box for the related data entry field. Notice that you can add different label text for different language codes. For doing this, activate the **Label** field and select **Translate**.
-- In the **Help** field, specify the help text to show at design time in the bottom of the **Format designer** page or the **Model mapping designer** page when the editable data source of the **USER INPUT PARAMETER** type is selected. This text may provide additional details about this data source for a user while he configures the editable format or model mapping component. Notice that you can add different help text for different language codes. To do this, select **Translate**.
-
-    > [!NOTE]
-    > You must add this data source, save changes, and open then open it for editing again to see the **Translate** button that you can use to add [language specific labels](er-design-multilingual-reports.md#format-component).
-
-- In the **Read only** field, configure an expression that returns the *[Boolean](er-formula-supported-data-types-primitive.md#boolean)* value.
-    - When the expression is configured and returns a value of **True** at runtime, the related data entry field is grayed out on the dialog box and you can't change its value.
-    - When the expression is configured and returns a value of **False** at runtime, or the expression isn't configured, the related data entry field is enabled on the dialog box and you can change its value.
-
-- In the **Default value** field, configure an expression that returns the value of the referred parameter type. This value can be used to initiate the value of the related data entry field on the dialog box at runtime.
-
-    > [!TIP]
-    > When you run an ER format and fill in the related data entry field at runtime on the dialog box, the entered value is memorized individually for each field, running ER format, current user, and current organization (company) as the previously used value.
-
-    - Set the **Always reset to default value** option to **Yes** to always use the returned by the **Default value** expression value as a default one regardless of its the previously used value.
-    - Set the **Always reset to default value** option to **No** to use the returned by the **Default value** expression value as a default one only when its previously used value is missing.
+- In the **Label** field, specify the label that is used for the related data entry field in the dialog box at runtime. You can add different label text for different language codes by activating the **Label** field and then selecting **Translate**.
+- In the **Help** field, specify the help text that is shown at design time at the bottom of the **Format designer** page or the **Model mapping designer** page when an editable data source of a *USER INPUT PARAMETER* type is selected. This text might provide additional details about the data source to help users when they configure the editable format or model mapping component. You can add different help text for different language codes by selecting **Translate**.
 
     > [!NOTE]
-    > When you set the **Always reset to default value** option to **Yes**, the **Default value** expression must be specified.
+    > The **Translate** button that you can use to add [language-specific labels](er-design-multilingual-reports.md#format-component) becomes available only after you add the data source, save your changes, and then reopen the data source for editing.
 
-- Set the **Allow multiple selection** field to **Yes** so that at runtime you can select multiple values for the configured parameter. When you set it to **No**, the only single value can be selected.
+- In the **Read only** field, configure an expression that returns a *[Boolean](er-formula-supported-data-types-primitive.md#boolean)* value.
+
+    - If the configured expression returns a value of **True** at runtime, the related data entry field appears dimmed in the dialog box, and you can't change its value.
+    - If the configured expression returns a value of **False** at runtime, or if no expression is configured, the related data entry field is available in the dialog box, and you can change its value.
+
+- In the **Default value** field, configure an expression that returns the value of the referenced parameter type. This value can be used to initiate the value of the related data entry field in the dialog box at runtime.
+
+    When you run an ER format, the value that you enter in the related data entry field in the dialog box at runtime is saved in memory as the previously used value. Previously used values are saved individually for each field, running ER format, current user, and current organization (company).
+
+    - Set the **Always reset to default value** option to **Yes** if the value that is returned by the **Default value** expression should always be used as the default value, regardless of the previously used value.
+    - Set the **Always reset to default value** option to **No** if the value that is returned by the **Default value** expression value should be used as the default value only when the previously used value is missing.
 
     > [!NOTE]
-    > This option isn't applicable for all USER INPUT PARAMETER types. An exception is thrown at design time informing that the configured user input parameter doesn't support multiple selection and only single value selection or entry is allowed.
+    > If you set the **Always reset to default value** option to **Yes**, an expression must be configured in the **Default value** field.
+
+- If you set the **Allow multiple selection** option to **Yes**, you can select multiple values for the configured parameter at runtime. If you set it to **No**, you can select only a single value.
 
     > [!NOTE]
-    > When you set the **Allow multiple selection** field to **Yes** and configured the **Default value** expression, this expression can be used to set the only a single default value.
-
-- Select the **Edit visibility** option to specify whether the configured parameter will be shown at runtime on the dialog box.
-
-    > [!TIP]
-    > The default visibility a data source of the USER INPUT PARAMETER type depends on an ER component that holds it.
+    > This option isn't applicable to all *USER INPUT PARAMETER* types. At design time, an exception is thrown to inform the user that the configured user input parameter doesn't support multiple selection, and that only a single value can be selected or entered.
     >
-    >   - When a data source is configured in the format component, it's visible by default.
-    >   - When a data source is configured in the model mapping component, it's visible only if the value of this data source affects the outcome of an ER component run. For example, if you added a data source but didn't use it in expressions and bindings of the current model mapping component, by default the relevant data entry field will not be offered for user at runtime on the dialog box. 
+    > If you set the **Allow multiple selection** option to **Yes**, and you specified an expression in the **Default value** field, that expression can be used to set only a single default value.
 
-    - On the **Formula designer** page, in the **Formula** field, configure an expression that returns the *Boolean* value.
+- Select the **Edit visibility** option to specify whether the configured parameter should be shown in the dialog box at runtime.
 
-        - When the expression is configured and returns a value of **True** at runtime or the expression isn't configured at all, the related data entry field is visible on the dialog box at runtime.
-        - When the expression is configured and returns a value of **False**, the related data entry field is hidden on the dialog box at runtime. When it's called by other expressions at runtime, it returns the default value, the previously used value, or the default for the current data type value depending on other settings.
+    > [!NOTE]
+    > The default visibility of data sources of a *USER INPUT PARAMETER* type depends on the ER component that holds them.
+    >
+    > - If a data source is configured in the format component, it's visible by default.
+    > - If a data source is configured in the model mapping component, it's visible only if the value of the data source affects the outcome when an ER component is run. For example, you added a data source but didn't use it in expressions and bindings of the current model mapping component. In this case, by default, the relevant data entry field won't be shown in the dialog box at runtime. 
 
-## Type specific properties
+    On the **Formula designer** page, in the **Formula** field, configure an expression that returns a *Boolean* value.
 
-### Application dependent user input parameter
+    - If the configured expression returns a value of **True** at runtime, or if no expression is configured, the related data entry field is visible in the dialog box at runtime.
+    - If the configured expression returns a value of **False**, the related data entry field is hidden in the dialog box at runtime. When it's called by other expressions at runtime, it returns the default value, the previously used value, or the default for the current data type value, depending on other settings.
 
-Use a data source of the **General** > **User input parameter** type to obtain the necessary value or values of a data type that is specified for the current instance of the Finance application. When you add a data source of this type to an ER component, specify the following properties:
+## Type-specific properties
 
--   In the **Operations data type name (EDT, enum)**, select an application [extended data type (EDT)](../extensibility/extensible-edts.md) or an application enumeration.
+### Application-dependent user input parameter
+
+Use a data source of the **General** \> **User input parameter** type to obtain the required value or values of a data type that is specified for the current instance of the Microsoft Dynamics 365 Finance application. When you add a data source of this type to an ER component, specify the following properties:
+
+- In the **Operations data type name (EDT, enum)** field, select an application [extended data type (EDT)](../extensibility/extensible-edts.md) or an application enumeration.
 
 > [!NOTE]
-> We recommend that you review the configured **Read only** and **Default value** expressions when you change the **Operations data type name (EDT, enum)** reference in the editable data source of the **USER INPUT PARAMETER** type.
+> We recommend that you review the expressions that are configured in the **Read only** and **Default value** fields when you change the **Operations data type name (EDT, enum)** reference in an editable data source of this *USER INPUT PARAMETER* type.
 
-The following illustration shows properties of the **`$TaxRegNum`** data source that was configured in the **Instat XML (DE)** ER format configuration. This data source is configured as using the *Description* EDT to offer at runtime on the dialog box the **Tax registration number** data entry field.
+The following illustration shows properties of the `$TaxRegNum` data source that was configured in the **Instat XML (DE)** ER format configuration. This data source is configured to use the *Description* EDT to offer the **Tax registration number** data entry field in the dialog box at runtime.
 
-![Reviewing properties of the data source of the USER INPUT PARAMETER type on the dialog box of the Format designer page.](./media/er-user-input-parameter-data-sources-01.png)
+![Properties of a data source of the USER INPUT PARAMETER type in the dialog box of the Format designer page.](./media/er-user-input-parameter-data-sources-01.png)
 
-The following illustration shows the dialog box that is offered at runtime when the **Instat XML (DE)** ER format configuration is running to [generate](../../../finance/localizations/tasks/eur-00002-eu-intrastat-declaration.md) the Intrastat declaration. Notice that the configured **Tax registration number** field is available for data entry.  
+The following illustration shows the dialog box that is shown at runtime when the **Instat XML (DE)** ER format configuration is run to [generate](../../../finance/localizations/tasks/eur-00002-eu-intrastat-declaration.md) the Intrastat declaration. Notice that the configured **Tax registration number** field is available for data entry.
 
-![Reviewing the 'Intrastat Report' dialog box of the running ER format on the Intrastat page.](./media/er-user-input-parameter-data-sources-02.png)
+![Intrastat Report dialog box of the running ER format on the Intrastat page.](./media/er-user-input-parameter-data-sources-02.png)
 
 ### Data model enumeration user input parameter
 
-Use a data source of the **Data model** > **Enumeration user input parameter** type to obtain the necessary value or values of a single data model [enumeration](er-formula-supported-data-types-primitive.md#enumeration). When you add a data source of this type to an ER component, specify the following properties:
+Use a data source of the **Data model** \> **Enumeration user input parameter** type to obtain the required value or values of a single data model [enumeration](er-formula-supported-data-types-primitive.md#enumeration). When you add a data source of this type to an ER component, specify the following properties:
 
-  - In the **Model** field, refer to the base data model.
-  - In the **Model enumeration** field, refer to an enumeration of the referred data model.
-  - In the **Version** field, select the revision number of the ER data model component that contains the referred model enumeration.
+- In the **Model** field, specify a reference to the base data model.
+- In the **Model enumeration** field, specify a reference to an enumeration of the referenced data model.
+- In the **Version** field, select the revision number of the ER data model component that contains the referenced model enumeration.
 
     > [!TIP]
-    > At design time, you can keep this field blank to access the list of enumerations for the referred data model component that resides in the draft version of the corresponding ER data model configuration. This allows you to simultaneously edit the draft version of your model mapping or format component with the draft version of the base data model component.
-    
-    > [!NOTE]
-    > The **Version** field can be blank only in the draft version of a model mapping or format component. When you change the status of an ER model mapping or format configuration from **Draft** to **Completed**, this field is automatically filled in by the highest model revision number that is available in the current Finance instance. If you introduce a new enumeration or a new enumeration value in the draft version of your base data model and refer to it in the editable model mapping or format component, complete that draft version of the base data model configuration before the draft version of your model mapping or format configuration is complete. Otherwise, the **Path not found** exception will be thrown when you change the status of an ER model mapping or format configuration from **Draft** to **Completed** informing you that the referred enumeration or enumeration value is missing in the base data model.
+    > At design time, you can leave the **Version** field blank to access the list of enumerations for the referenced data model component that resides in the draft version of the corresponding ER data model configuration. In this way, you can simultaneously edit the draft version of your model mapping or format component and the draft version of the base data model component.
+    >
+    > However, note that the **Version** field can be left blank only in the draft version of a model mapping or format component. When you change the status of an ER model mapping or format configuration from **Draft** to **Completed**, this field is automatically filled in by the highest model revision number that is available in the current Finance instance. If you introduce a new enumeration or a new enumeration value in the draft version of your base data model and refer to it in the editable model mapping or format component, complete that draft version of the base data model configuration before the draft version of your ER model mapping or format configuration is completed. Otherwise, a "Path not found" exception will be thrown when you change the status of the model mapping or format configuration from **Draft** to **Completed**. The message will inform you that the referenced enumeration or enumeration value is missing in the base data model.
 
-The following illustration shows properties of the **`$ReportDirection`** data source that was configured in the **Instat XML (DE) Contoso** ER format configuration. The **Instat XML (DE) Contoso** configuration has been [derived](general-electronic-reporting.md#Configuration) from the **Instat XML (DE)** one. This data source is configured as using the *ReportDirection* model enumeration to offer at runtime on the dialog box the appropriate lookup field.
+The following illustration shows properties of the `$ReportDirection` data source that was configured in the **Instat XML (DE) Contoso** ER format configuration. The **Instat XML (DE) Contoso** configuration has been [derived](general-electronic-reporting.md#Configuration) from the **Instat XML (DE)** configuration. This data source is configured to use the *ReportDirection* model enumeration to offer the appropriate lookup field in the dialog box at runtime.
 
-![Reviewing properties of the data source of the USER INPUT PARAMETER type on the dialog box of the Format designer page.](./media/er-user-input-parameter-data-sources-03.png)
+![Properties of the data source of the USER INPUT PARAMETER type in the dialog box of the Format designer page.](./media/er-user-input-parameter-data-sources-03.png)
 
 ### Format enumeration user input parameter
 
-Use a data source of the **Format enumeration**> **Enumeration user input parameter** type to obtain the necessary value or values of a single format enumeration. When you add a data source of this type to an ER component, specify the following properties:
+Use a data source of the **Format enumeration** \> **Enumeration user input parameter** type to obtain the required value or values of a single format enumeration. When you add a data source of this type to an ER component, specify the following properties:
 
 - In the **Format enumeration** field, specify an enumeration of the editable format.
 
