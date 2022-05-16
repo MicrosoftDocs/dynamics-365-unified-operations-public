@@ -258,6 +258,8 @@
         href: accounts-payable/positive-pay-overview.md
       - name: Set up and generate positive pay files
         href: accounts-payable/set-up-generate-positive-pay-files.md
+      - name: Set up and generate positive pay files using Electronic reporting
+        href: accounts-payable/set-up-positive-pay-ER.md
       - name: Default offset accounts for vendor invoice journals and invoice approval journals
         href: accounts-payable/default-offset-accounts-vendor-invoice-journals.md
       - name: Vendor workflow
