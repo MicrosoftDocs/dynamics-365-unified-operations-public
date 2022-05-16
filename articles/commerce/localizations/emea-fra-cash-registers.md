@@ -207,7 +207,7 @@ The information that is included on X and Z reports is based on French requireme
 
 The totals are also stored in the closed shift record and transferred to Commerce headquarters.
 
-It is possible to export a Z report from a closed shift in Commerce headquarters. An exported Z report is an XML file that includes the totals for the closed shift. Specifically, the file includes the data in the following table.
+You can export a Z report from a closed shift in Commerce headquarters. An exported Z report is an XML file that includes the totals for the closed shift. Specifically, the file includes the data that is described in the following table.
 
 | Element/Node                     | Comment |
 |----------------------------------|---------|
@@ -308,7 +308,7 @@ To enforce daily shift closing, you must make the following changes:
 
 You can configure the language text and custom fields that are used in the POS receipt formats. The default company of the user who creates the receipt setup should be the same legal entity where the language text setup is created. Alternatively, the same language texts should be created in both the user's default company and the legal entity of the store that the setup is created for.
 
-On the **Language text** page, add the following records for the labels of the custom fields for receipt layouts. Note that the **Language ID**, **Text ID**, and **Text** values that are shown in the table are just examples. You can change them to meet to your requirements. However, the **Text ID** values that you use must be unique, and they must be equal to or higher than 900001.
+On the **Language text** page, add the following records for the labels of the custom fields for receipt layouts. Note that the **Language ID**, **Text ID**, and **Text** values that are shown in the table are just examples. You can change them to meet your requirements. However, the **Text ID** values that you use must be unique, and they must be equal to or higher than 900001.
 
 | Language ID | Text ID | Text ID                   |
 |-------------|---------|---------------------------|
