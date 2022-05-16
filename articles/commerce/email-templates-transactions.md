@@ -129,6 +129,21 @@ By default, customer created events are uploaded to HQ with the **Synchronize cu
 
 > [!NOTE] When customer created notifications are enabled, customers that are created in all channels within the legal entity will receive a customer created email. Customer created notifications cannot currently be limited to a single channel.  
 
+When invoked through the batch job, the customer created notification type supports the following placeholders.
+
+| Placeholder name | Purpose                                                      |
+| ---------------- | ------------------------------------------------------------ |
+| customername     | The first and last name of the customer who created an account |
+
+When invoked through a real time service call, the customer created notification type supports the following placeholders.
+
+| Placeholder name | Purpose                                                      |
+| ---------------- | ------------------------------------------------------------ |
+| Name             | The first and last name of the customer who created an account |
+| Email            | The email address of the customer who created an account     |
+| Phone            | The phone number of the customer who created an account      |
+| Url              |                                                              |
+
 
 
 ### B2B prospect approved
