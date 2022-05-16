@@ -50,13 +50,13 @@ Alternatively, your organization may already have a Power Platform environment w
 
 ## Licensing and capacity considerations
 
-With the purchase of any Finance and Operations apps license such as Finance, or Supply Chain Management for example, your tenant is entitled to an additional 10 GB of Microsoft Dataverse database capacity.  In addition, for each user license you have purchased you receive an incremental amount of database capacity.  This can be seen in the image below in PPAC:
+With the purchase of any Finance and Operations apps license such as Finance, or Supply Chain Management for example, your tenant is entitled to an additional 10 GB of Microsoft Dataverse database capacity.  In addition, for each user license you have purchased, you receive an incremental amount of database capacity. This can be seen in the image below in PPAC:
 
 :::image type="content" source="media/PPI-Capacity.png" alt-text="Capacity view in Power Platform admin center":::
 
-With the same purchase of licenses, you are entitled to a single self-service sandbox and production environment in LCS.  Because of this, the automatic creation of the initial Power Platform environment for every Finance and Operations apps environment is possible.  Each initial environment in PPAC is without Dataverse and hence only utilizes 1 GB of database capacity for provisioning Power Apps and Power Automate flows.  When you setup Power Platform integration, this adds a Dataverse database to the same environment which often consumes 3 GB or more.  
+With the same purchase of licenses, you are entitled to a single, self-service sandbox and production environment in LCS.  Because of this, the automatic creation of the initial Power Platform environment for every Finance and Operations apps environment is possible.  Each initial environment in PPAC is without Dataverse, and hence only utilizes 1 GB of database capacity for provisioning Power Apps and Power Automate flows.  When you set up Power Platform integration, this adds a Dataverse database to the same environment, which often consumes 3 GB or more.  
 
-When customers purchase additional add-on sandbox environments for use in LCS, these do **not** come entitled with additional Dataverse database capacity.  Customers who will require Power Platform integration capabilities will want to purchase add-on Dataverse database storage.  For more information on managing capacity in PPAC, please see [These docs].
+When customers purchase additional add-on, sandbox environments for use in LCS, these do **not** come entitled with additional Dataverse database capacity.  Customers who will require Power Platform integration capabilities will want to purchase add-on Dataverse database storage.  For more information on managing capacity in PPAC, please see [These docs].
 
 ## Prerequisites for setting up the Microsoft Power Platform integration
 
