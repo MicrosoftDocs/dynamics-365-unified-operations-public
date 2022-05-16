@@ -2,7 +2,7 @@
 # required metadata
 
 title: Update the environment administrator
-description: This topic explains how to restart individual services in environments that are deployed through Microsoft Dynamics Lifecycle Services (LCS).
+description: This topic explains how to change the environment administrator for a Finance and Operations apps environment in Microsoft Dynamics Lifecycle Services (LCS).
 author: laneswenka
 ms.date: 05/10/2022
 ms.topic: article
