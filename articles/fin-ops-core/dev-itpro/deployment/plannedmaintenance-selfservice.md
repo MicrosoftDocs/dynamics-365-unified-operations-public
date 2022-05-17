@@ -35,13 +35,14 @@ A planned maintenance window is typically during the dark hours of the geographi
 
 | Month and year | Americas (5:00 AM–8:00 AM UTC) | EMEA (2:00 AM–5:00 AM UTC) | APAC (6:00 PM–9:00 PM UTC) |
 |----------|--------------------------|----------------------|----------------------|
-| December 2021 | January 9, 2022 | January 8, 2022 | January 8, 2022 |
-| January 2022 | January 23, 2022 | January 22, 2022 | January 22, 2022 |
-| February 2022 | February 20, 2022 | February 19, 2022 | February 19, 2022 |
-| March 2022 | March 20, 2022 | March 19, 2022 | March 19, 2022 |
 | April 2022 | April 24, 2022 | April 23, 2022 | April 23, 2022 |
 | May 2022 | May 22, 2022 | May 21, 2022 | May 21, 2022 |
 | June 2022 | June 26, 2022 | June 25, 2022 | June 25, 2022 |
+| July 2022 | July 24, 2022 | July 23, 2022 | July 23, 2022 |
+| August 2022 | August 21, 2022 | August 20, 2022 | August 20, 2022 |
+| September 2022 | September 24, 2022 | September 23, 2022 | September 23, 2022 |
+| October 2022 | October 23, 2022 | October 22, 2022 | October 22, 2022 |
+| November 2022 | November 20, 2022 | November 19, 2022 | November 19, 2022 |
 
 ## How are operating system maintenance updates applied?
 This service maintenance is planned outside normal business hours to help minimize any potential impact on your environment. For environments that have users in other parts of the world, we recognize that "outside normal business hours" might affect you differently. We are working hard to improve Microsoft Dynamics 365 and minimize the impact of these maintenance windows in the future. Going forward, infrastructure maintenance schedules will be posted here, and you won't receive future notifications for infrastructure maintenance.
