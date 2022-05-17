@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.1
 This topic explains how to set up positive pay and generate positive pay files by using Electronic reporting.
 
 > [!NOTE] 
-> Before using the **Generage bank positive pay file** function, you will need to refresh the entity list first.
+> Before using the **Generate bank positive pay file** function, you will need to refresh the entity list first.
 > Go to **Data management > Import / Export > Framework parameters** 
 > **Entity settings** FastTab, select **Refresh entity list**.
 
