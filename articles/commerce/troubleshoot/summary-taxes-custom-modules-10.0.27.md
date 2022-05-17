@@ -4,7 +4,7 @@
 title: Order summary subtotal doesn't include taxes on charges when using customized order summary modules
 description: This topic provides troubleshooting guidance that can help when you use customized order summary modules and the order summary subtotal doesn't include taxes on charges in the "price includes sales tax" scenario.
 author: gvrmohanreddy
-ms.date: 05/11/2022
+ms.date: 05/17/2022
 ms.topic: article 
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
