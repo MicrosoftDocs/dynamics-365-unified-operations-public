@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Sign MPOS with a code signing certificate
+title: Sign the MPOS .appx file with a code signing certificate
 description: This topic explains how to sign MPOS with a code signing certificate.
 author: mugunthanm
 ms.date: 05/27/2022
@@ -15,7 +15,7 @@ ms.search.validFrom: 2019-09-2019
 
 ---
 
-# Sign MPOS .appx file with a code signing certificate
+# Sign the MPOS .appx file with a code signing certificate
 
 [!include [banner](../includes/banner.md)]
 
