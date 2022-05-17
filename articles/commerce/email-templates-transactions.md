@@ -123,25 +123,26 @@ The *order cancellation* notification type is triggered when an order is cancele
 
 The *customer created* notification type is triggered when a new customer entity is created in Commerce headquarters. 
 
-To enable customer created notifications, an email notification profile containing the customer created notification type must be selected in the Email notification profile field under General in Commerce parameters (**Retail and Commerce** > **Headquarters setup** > **Parameters** > **Commerce parameters**.) 
+To enable customer created notifications, an email notification profile containing the customer created notification type must be selected in the email notification profile field under General in Commerce parameters (**Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters**.) 
 
-By default, customer created events are uploaded to HQ with the **Synchronize customers and channel requests** batch job. If you wish to use a real time service call to send these events, set the email ID of the customer created template to **newCust**. However, this is not recommended as real time service calls are a "fire and forget" call and do not the fallback or retry logic that batch jobs provide.
+By default, customer created events are uploaded to headquarters with the **Synchronize customers and channel requests** batch job. If you wish to use a real time service call to send these events, set the email ID of the customer created template to **newCust**. However, this is not recommended as real time service calls are a "fire and forget" call and do not have the fallback or retry logic that batch jobs provide.
 
-> [!NOTE] When customer created notifications are enabled, customers that are created in all channels within the legal entity will receive a customer created email. Customer created notifications cannot currently be limited to a single channel.  
+> [!NOTE] 
+> When customer created notifications are enabled, customers that are created in all channels within the legal entity will receive a customer created email. Customer created notifications cannot currently be limited to a single channel.  
 
 When invoked through the batch job, the customer created notification type supports the following placeholders.
 
 | Placeholder name | Purpose                                                      |
 | ---------------- | ------------------------------------------------------------ |
-| customername     | The first and last name of the customer who created an account |
+| customername     | The first and last name of the customer who created an account. |
 
 When invoked through a real time service call, the customer created notification type supports the following placeholders.
 
 | Placeholder name | Purpose                                                      |
 | ---------------- | ------------------------------------------------------------ |
-| Name             | The first and last name of the customer who created an account |
-| Email            | The email address of the customer who created an account     |
-| Phone            | The phone number of the customer who created an account      |
+| Name             | The first and last name of the customer who created an account. |
+| Email            | The email address of the customer who created an account.    |
+| Phone            | The phone number of the customer who created an account.      |
 | Url              | The URL provided by the customer when they created the account. |
 
 ### B2B prospect approved
