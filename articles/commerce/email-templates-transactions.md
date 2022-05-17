@@ -142,7 +142,7 @@ When invoked through a real time service call, the customer created notification
 | Name             | The first and last name of the customer who created an account |
 | Email            | The email address of the customer who created an account     |
 | Phone            | The phone number of the customer who created an account      |
-| Url              |                                                              |
+| Url              | The URL provided by the customer when they created the account. |
 
 ### B2B prospect approved
 
