@@ -85,7 +85,10 @@ To add a search results module to a category page in site builder, follow these 
 1. In the **Search results** properties pane, enter the value **1** for **Min Occurs**, and then set any other required properties for the search results module. By setting these properties in the template, you ensure that any customizations to a specific category page will automatically include these settings.
 1. Select **Finish editing**, and then select **Publish** to publish the template.
 1. Go to **Pages**, and select **New** to create a new page.
-1. In the **Create a new page** dialog box, select the **Search results** template that you created, enter **Category page** for **Page name**, and then select **OK**. Because all the values are set in the template, the page is ready to be published.
+1. In the **Create a new page** dialog box, under **Page name**, enter **Category page**, and then select **Next**.
+1. Under **Choose a template**, select **Search results** template that you created, and then select **Next**.
+1. Under **Choose a layout**, select a page layout (for example, **Flexible layout**), and then select **Next**.
+1. Under **Review and finish**, review the page configuration. If you need to edit the page information, select **Back**. If the page information is correct, select **Create page**.
 1. Select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
 ## Enable inventory awareness for the search results module
