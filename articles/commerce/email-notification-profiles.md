@@ -90,7 +90,7 @@ The following image shows some example event notification settings.
 
 To send out email notifications, you must have the **Process retail order email notification** job running.
 
-To set up the **Process retail order email notification** job in Commerce headquarters if you haven't already done so, follow these steps.
+To set up the batch job in Commerce headquarters for sending transactional emails, follow these steps.
 
 1. Go to **Retail and Commerce \> Retail and Commerce IT \> Email and notifications \> Send email notification**.
 1. In the **Process retail order email notification** dialog box, select **Recurrence**.
