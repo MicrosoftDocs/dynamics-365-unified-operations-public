@@ -1300,6 +1300,10 @@
         items:
         - name: Build custom response pages for 4xx/5xx status code errors
           href: build-pages-400-500-errors.md
+      - name: Service integration
+        items:
+        - name: Integrate Customer Voice into e-commerce site pages
+          href: customer-voice-integration.md
     - name: Fraud protection 
       items:
       - name: Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce 
