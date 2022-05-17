@@ -108,38 +108,49 @@ To create a billing schedule that has an item that is set up for revenue split, 
 
 When you add an item that is part of a revenue split, note the following information: 
 
-1. The **Parent amount** can't be deferred.
-2. The start date, end date, quantity, unit, site, and warehouse values for child items are based on the parent item. These values can't be changed for the child items. Any changes must be made on the parent item. 
-3. The **Pricing method** is **Flat** and can't be changed.
-4. Child items can be added or removed.
-5. Parent and child items must use the same item group. 
-6. Child items can have one of the following:
-   a. The same **Billing frequency** and **Billing intervals** as the parent item. 
-   b. The **Billing frequency** set to **One-time**, which automatically sets the **Billing intervals** to 1. 
-7. The sum of the net amount of the child items is equal to the **Parent amount**. When the allocation method is **Zero amounts**, both the sum of the child items and the Parent amount are zero (0). 
+- The parent amount can't be deferred.
+- The start date, end date, quantity, unit, site, and warehouse values of child items are based on the parent item. These values can't be changed for the child items. All changes must be made to the parent item. 
+- The pricing method is **Flat** and can't be changed.
+- Child items can be added or removed.
+- Parent and child items must use the same item group. 
+- Child items can have one of the following setups:
 
->[!Note]
->When the allocation method is **Zero parent amount**, the sum of the child items (non-zero) is not equal to the parent amount, which is zero (0). This allocation method is used for internal purposes so that employees can see the child items, but the customer can only see the parent item.
+    - The **Billing frequency** and **Billing intervals** fields are set to the same value as the parent item. 
+    - The **Billing frequency** field is set to **One-time**. In this case, the **Billing intervals** field is automatically set to **1**. 
 
-8. If the MEA type for the sales order is single, the corresponding Multiple element revenue allocation transaction line is created when the parent and child items are added. 
-9. When the allocation method for a revenue split is **Equal amounts** and the **Parent amount** is changed, the amounts for all child lines are recalculated. 
-10. For a revenue split that has the **Allocation method** set to **Variable amount**:<br/>
-    a. The net amount of the parent item appears in the **Parent amount** column. This value can be edited. However, the unit price, net amount, and discount can't be edited and show a zero (0) amount.<br/>
-    b. The unit price for child items shows a zero (0) value. You can edit the unit price or net amount. When you edit one value, the other value is updated automatically. <br/>
-11. For a revenue split that has the **Allocation method** set to **Percentage**:<br/>
-    a. The net amount of the parent item appears in the **Parent amount** column. This value can be edited. However, the unit price, net amount and discount can't be edited and show a zero (0) amount. <br/>
-    b. The net amount for child items is calculated as follows: **Percentage * Parent amount**<br/>
-12. For a revenue split that has the **Allocation method** set to **Equal amount**:<br/>
-    a. The net amount of the parent item appears in the **Parent amount** column. This value can be edited. However, the unit price, net amount, and discount can't be edited and show a zero (0) amount. <br/>
-    b. The net amount of the child items is calculated by dividing the **Parent amount** equally among all child items. <br/>
-    c. When child items are removed or added, the net amount and unit prices are recalculated so that all child lines have equal amounts. <br/>
-    d. If the **Parent amount** can't be divided equally, the net amount and unit price of the last child item may be slightly more or less than the other child items. <br/>
-13. For a revenue split that has the **Allocation method** set to **Zero amount**:<br/>
-    a. The unit price, net amount, and discount can be edited. The **Parent amount** can't be edited and show a zero (0) amount. <br/>
-    b. The quantity, unit, site, and warehouse values for child items are based on the parent item. You can't change these values for the child items. Any changes must be made for the parent item. <br/>
-    c. The unit price and net price for the child items can't be edited and show a zero (0) amount. <br/>
-14. For a revenue split that has the **Allocation method** set to **Zero parent amount**:<br/>
-    a. For the parent item; the unit price, parent amount, and net amount are zero (0).<br/>
-    b. In a billing schedule, the child lines appear as if they had been manually added and all values are updated based on the selected billing schedule group. These values can be edited. For child items, you can access the **Escalation and discount** and **Advanced pricing** options using the following fields in **View billing details**: **Quantity entered**, **Unit price**, **Discount**, and **Net amount**. <br/>
-    c. In a sales order, the child lines have a discount and discount percentage of zero (0). <br/>
-    d. The billing frequency for the parent and the child items can be changed, and each line can have a different frequency. However, the parent item is automatically updated to use the shortest frequency from its child lines. For example, for a revenue split with two child items that use the billing frequencies **Monthly** and **Annually**; the billing frequency of the parent item is updated to **Monthly**. 
+- The sum of the net amounts of the child items equals the parent amount. If the allocation method is **Zero amounts**, both the sum of the child item amounts and the parent amount are 0 (zero). 
+
+    > [!NOTE]
+    > If the allocation method is **Zero parent amount**, the (non-zero) sum of the child items doesn't equal parent amount, which is 0 (zero). This allocation method is used for internal purposes, so that employees can see the child items. However, customers can only see the parent item.
+
+- If the multiple element arrangement (MEA) type of the sales order is **Single**, the corresponding multiple element revenue allocation transaction line is created when the parent and child items are added. 
+- If the allocation method for a revenue split is **Equal amounts**, and the parent amount is changed, the amounts are recalculated for all child lines. 
+- For a revenue split where the allocation method is **Variable amount**, the following behavior occurs:
+
+    - The net amount of the parent item appears in the **Parent amount** column. This value can be edited. However, the unit price, net amount, and discount are 0 (zero) and can't be edited.
+    - The unit price of child items is 0 (zero). You can edit the unit price or net amount. When you edit one value, the other value is automatically updated.
+
+- For a revenue split where the allocation method is **Percentage**, the following behavior occurs:
+
+    - The net amount of the parent item appears in the **Parent amount** column. This value can be edited. However, the unit price, net amount, and discount are 0 (zero) and can't be edited. 
+    - The net amount of child items is calculated as *Percentage* &times; *Parent amount*.
+
+- For a revenue split where the allocation method is **Equal amount**, the following behavior occurs:
+
+    - The net amount of the parent item appears in the **Parent amount** column. This value can be edited. However, the unit price, net amount, and discount are 0 (zero) and can't be edited. 
+    - The net amount of child items is calculated by dividing the parent amount equally among all the child items. 
+    - If child items are removed or added, the net amount and unit prices are recalculated so that all child lines have equal amounts. 
+    - If the parent amount can't be divided equally, the net amount and unit price of the last child item might be slightly more or less than the net amount and unit price of the other child items. 
+
+- For a revenue split where the allocation method is **Zero amount**, the following behavior occurs:
+
+    - The unit price, net amount, and discount can be edited. The parent amount is 0 (zero) and can't be edited. 
+    - The quantity, unit, site, and warehouse values of child items are based on the parent item. You can't change these values for the child items. All changes must be made to the parent item. 
+    - The unit price and net price of child items is 0 (zero) and can't be edited. 
+
+- For a revenue split where the allocation method is **Zero parent amount**, the following behavior occurs:
+
+    - The unit price, parent amount, and net amount of the parent item are 0 (zero).
+    - In a billing schedule, the child lines appear as if they were manually added, and all values are updated based on the selected billing schedule group. These values can be edited. For child items, you can access the **Escalation and discount** and **Advanced pricing** options by using the **Quantity entered**, **Unit price**, **Discount**, and **Net amount** fields in **View billing details**. 
+    - On a sales order, the child lines have a discount and discount percentage of 0 (zero). 
+    - The billing frequency of the parent and the child items can be changed, and each line can have a different frequency. However, the parent item is automatically updated so that it uses the shortest frequency from among its child lines. For example, a revenue split has two child items, one of which uses the **Monthly** billing frequency and the other of which uses the **Annually** billing frequency. In this case, the billing frequency of the parent item is updated to **Monthly**.
