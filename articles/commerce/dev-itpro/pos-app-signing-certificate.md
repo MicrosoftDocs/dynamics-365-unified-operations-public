@@ -61,9 +61,11 @@ Download the [DownloadFile task](/visualstudio/msbuild/downloadfile-task) and ad
     <ModernPOSPackageCertificateKeyFile Condition="'$(ModernPOSPackageCertificateKeyFile)' ==''">$(MySigningCert)</ModernPOSPackageCertificateKeyFile>
     ```
     This step is required if the certificate is not password protected. If the certificate is password protected, continue with the following steps.
+    
+7. While signing MPOS appx with a certificate, if you want to timestamp it then specify your timestamp provider in the variable ModernPOSPackageCertificateTimestamp, open the Customization.settings file from RetailSDK\BuildTools and update the ModernPOSPackageCertificateTimestamp with the timestamp provider. Ex: http://timestamp.digicert.com
  
-7. On the pipeline’s **Variables** tab, add a new secure-text variable. Set the name to **MySigningCert.secret** and set the value of the password for the certificate. Select the lock icon to secure the variable.
-8. Add a **Powershell Script** task to the pipeline (after the Download Secure File and before the Build step). Provide the **Display** name and set the Type as **Inline**. Copy and paste the following into the script section.
+8. On the pipeline’s **Variables** tab, add a new secure-text variable. Set the name to **MySigningCert.secret** and set the value of the password for the certificate. Select the lock icon to secure the variable.
+9. Add a **Powershell Script** task to the pipeline (after the Download Secure File and before the Build step). Provide the **Display** name and set the Type as **Inline**. Copy and paste the following into the script section.
 
     ```powershell
     Write-Host "Start adding the PFX file to the certificate store."
@@ -72,7 +74,7 @@ Download the [DownloadFile task](/visualstudio/msbuild/downloadfile-task) and ad
     Import-PfxCertificate -FilePath $pfxpath -CertStoreLocation Cert:\CurrentUser\My -Password $secureString
     ```
 
-9. Open the **Customization.settings** file from **RetailSDK\\BuildTools** and update the **ModernPOSPackageCertificateThumbprint** with the certificate thumbprint value.
+10. Open the **Customization.settings** file from **RetailSDK\\BuildTools** and update the **ModernPOSPackageCertificateThumbprint** with the certificate thumbprint value.
 
     ```Xml
        <ModernPOSPackageCertificateThumbprint Condition="'$(ModernPOSPackageCertificateThumbprint)' == ''"></ModernPOSPackageCertificateThumbprint>
