@@ -2944,6 +2944,8 @@
           href: troubleshoot/items-without-inventory-checked-out.md
         - name: Ratings refiner appears on search results and category pages when the ratings and reviews solution isn't enabled
           href: troubleshoot/hide-ratings-refiner.md
+        - name: Order summary subtotal doesn't include taxes on charges when using customized order summary modules
+          href: troubleshoot/summary-taxes-custom-modules-10.0.27.md
       - name: Customer management
         items:
         - name: Welcome email is not sent when new customers are created
