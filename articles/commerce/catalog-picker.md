@@ -5,7 +5,7 @@
 title: Catalog picker module
 description: This topic covers catalog picker modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: ashishmsft
-ms.date: 05/06/2022
+ms.date: 05/17/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -26,7 +26,7 @@ The following example image shows an example of a catalog-picker module.
 
 ## Add a catalog picker module to your site
 
-To add a catalog picker module to your site, follow these steps.
+To add a catalog picker module to your site in Commerce site builder, follow these steps.
 
 1. Create a page for 'Catalog-picker' 
 1. Provide details like page name, page URL etc.
