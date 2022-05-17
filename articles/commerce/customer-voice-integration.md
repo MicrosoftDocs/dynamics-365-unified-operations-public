@@ -4,7 +4,7 @@
 title: Integrate Customer Voice into e-commerce site pages
 description: This topic describes how to integrate Microsoft Dynamics 365 Customer Voice into Dynamics 365 Commerce e-commerce site pages.
 author: samjarawan
-ms.date: 05/06/2022
+ms.date: 05/17/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -70,7 +70,7 @@ The new fragment that contains the embedded external script block is now ready t
 
 Next, on all site pages that should have a Customer Voice survey, you must embed the external stylesheet code that Customer Voice provided in the embed code. As in the previous section, the best way to embed the external style sheet code on multiple site pages is to create a fragment in site builder that contains the style sheet code, and then add the fragment to the appropriate page templates. The embedded external style sheet code will resemble the following example code.
 
-```html
+```typescript
 <link rel="stylesheet" type="text/css" href=https://mfpembedcdnmsit.azureedge.net/mfpembedcontmsit/Embed.css />
 ```
 
