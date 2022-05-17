@@ -95,7 +95,7 @@ To add a buy box module to a new page and set the required properties, follow th
 1. In the **New fragment** dialog box, select the **Buy box** module.
 1. Under **Fragment name**, enter the name **Buy box fragment**, and then select **OK**.
 1. In the **Media Gallery** slot of the buy box module, select the ellipsis (**...**), and then select **Add Module**.
-1. In the **Select modulese** dialog box, select the **Media gallery** module, and then select **OK**.
+1. In the **Select modules** dialog box, select the **Media gallery** module, and then select **OK**.
 1. In the **Store selector** slot of the buy box module, select the ellipsis (**...**), and then select **Add Module**.
 1. In the **Select modules** dialog box, select the **Store selector** module, and then select **OK**.
 1. Select **Save**, select **Finish editing** to check in the fragment, and then select **Publish** to publish it.
