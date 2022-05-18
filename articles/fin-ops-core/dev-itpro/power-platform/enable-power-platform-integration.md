@@ -109,7 +109,7 @@ When you set up a new Finance and Operations apps environment in LCS, the deploy
 Follow these steps to configure the **Power Platform Integration** section.
 
 1. Set the **Configure Power Platform Environment** option to **Yes**. Several additional settings become available.
-2. In the **Power Platform template** field.  For more details see XXX.
+2. In the **Power Platform template** field.  For more details see [Provisioning templates](#provisioning-templates).
 
 3. If you're deploying a DevTest or cloud-hosted environment, the **Environment Type** field is available. There, you can select the type of Dataverse instance that is created and linked. Otherwise, by default, the environment type is set to **Sandbox** for Tier 2 through Tier 5 acceptance test environments and **Production** for production environments.
 4. Select **Agree** to agree to the terms and conditions of the integration.
