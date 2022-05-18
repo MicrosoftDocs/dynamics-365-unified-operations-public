@@ -32,7 +32,7 @@ The following fields are included in the Lithuanian Intrastat declaration. All t
 </tr>
 <tr>
 <td colspan="2">
-<h4 style="text-align: center;"><strong>Report header</strong></h4>
+<h4><strong>Report header</strong></h4>
 </td>
 </tr>
 <tr>
@@ -165,7 +165,7 @@ The following fields are included in the Lithuanian Intrastat declaration. All t
 </tr>
 <tr>
 <td colspan="2">
-<h4 style="text-align: center;"><strong>Report lines</strong></h4>
+<h4><strong>Report lines</strong></h4>
 </td>
 </tr>
 <tr>
@@ -274,7 +274,7 @@ The following fields are included in the Lithuanian Intrastat declaration. All t
 </tr>
 <tr>
 <td colspan="2">
-<h4 style="text-align: center;"><strong>Report footer</strong></h4>
+<h4><strong>Report footer</strong></h4>
 </td>
 </tr>
 <tr>
