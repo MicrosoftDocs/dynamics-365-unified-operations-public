@@ -64,10 +64,10 @@ To add an iframe module to a page to show an external video, follow these steps.
 1. Under **Choose a template**, select the **Marketing template** you created, and then select **Next**.
 1. Under **Choose a layout**, select a page layout (for example, **Flexible layout**), and then select **Next**.
 1. Under **Review and finish**, review the page configuration. If you need to edit the page information, select **Back**. If the page information is correct, select **Create page**. 
-1. In the **Main** slot of the new page, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Main** slot of the new page, select the ellipsis (**...**), and then select **Add module**.
 1. In the **Select modules** dialog box, select the **Container** module, and then select **OK**.
 1. In the module's properties pane, set the **Width** value to **Fill Container**.
-1. In the **Container** slot, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Container** slot, select the ellipsis (**...**), and then select **Add module**.
 1. In the **Select modules** dialog box, select the **iframe** module, and then select **OK**.
 1. In the module's properties pane, set the **Target URL** value to an external URL for a video.
 1. Set other properties, such as **Heading** and **Height**, as you require.
