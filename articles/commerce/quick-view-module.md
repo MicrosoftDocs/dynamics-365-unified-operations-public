@@ -66,7 +66,7 @@ A quick view module can be added to the product collection and search results mo
 To add a quick view module to a product collection module in Commerce site builder, follow these steps.
 
 1. Go to **Pages**, and then select the home page for the Fabrikam site.
-1. Go to any **Product Collection** module on the homepage, select the ellipsis (**...**), and then select **Add Module**.
+1. Go to any **Product Collection** module on the homepage, select the ellipsis (**...**), and then select **Add module**.
 1. In the **Select modules** dialog box, select the **Quick View** module, and then select **OK**.
 1. In the properties pane of the **Quick View** module, select **Heading**. In the **Heading** dialog box, set the **Heading Level** field to **H2**, and then select **OK**.
 1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
