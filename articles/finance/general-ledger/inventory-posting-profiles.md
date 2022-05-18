@@ -31,20 +31,18 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-Inventory posting profiles control the posting of inventory subledger transactions to the general ledger. Inventory subledger transactions can<!--note from editor: Writing Style Guide says to avoid "may." It seems that "can" works in this case, but maybe "might" would be better.--> be generated from many modules including **Sales and marketing**, **Procurement and sourcing**, **Production control**, and more. Inventory subledger transactions might be posted any time an item is used in a sales order or purchase order. 
+Inventory posting profiles control the posting of inventory subledger transactions to the general ledger. Inventory subledger transactions can be generated from many modules including **Sales and marketing**, **Procurement and sourcing**, **Production control**, and more. Inventory subledger transactions might be posted any time an item is used in a sales order or purchase order. 
 
 Additional inventory subledger transactions might be posted:
-<!--note from editor: When a list item completes the introduction, it takes a period (unless it's three words or fewer).-->
 - Each time a document is updated.
 - When a sales order packing slip or invoice is posted.
 - When a purchase order product receipt or invoice is generated.
 
-For more information, go to Inventory subledger transactions.<!--note from editor: I assume this links to a separate topic that doesn't exist? If it's meant to go to the section below, you don't need this link at all.-->
+For more information, go to Inventory subledger transactions.
 
 ## Inventory transaction overview
 
 Each inventory subledger transaction contains:
-<!--note from editor: Even though having a leading space in each list item works, it's a good practice to use the proper markdown for bulleted lists. If you don't, you can run into odd behavior if the topic has a lot of lists and images (not the case here).-->
  - Quantity 
  - Price 
  - Site 
@@ -52,12 +50,11 @@ Each inventory subledger transaction contains:
  - Location 
 
 Inventory subledger transactions create two entries in the general ledger through the physical posting and the financial posting. For more information, go to [Physical and financial updates](/supply-chain/cost-management/physical-financial-updates.md).
-<!--note from editor: You don't want to have line breaks in the middle of a paragraph. One paragraph, one line.-->
 The following example is a purchase order with three lines. For this example, assume that the entire order is for a single site and warehouse. Each purchase order line has a single related InventTrans record—also known as an inventory transaction —and each line is for a quantity of 10. The following diagram shows the relationship of one purchase order header to three purchase order lines, each with one InventTrans record.
 
 ![Relationship diagram for a purchase order with three lines each with one InventTrans record.](./media/InventTransRelationship.PNG)
 
-A quantity of 5 is received on the first purchase order line. The full quantity for the second line and nothing on the third line of the purchase order<!--note from editor: I don't know what this means.-->. There's now a second inventory transaction related to the first purchase order line. The transaction for the second purchase order line will be updated to **Received**, and the third transaction will remain the same. The following diagram shows the relationship with the additional InventTrans record for purchase order line 1.
+A quantity of 5 is received on the first purchase order line. The full quantity for the second line and no quantity received on the third line of the purchase order. There's now a second inventory transaction related to the first purchase order line. The transaction for the second purchase order line will be updated to **Received**, and the third transaction will remain the same. The following diagram shows the relationship with the additional InventTrans record for purchase order line 1.
 
 ![Relationship diagram for a purchase order with three lines. One line is partially received and shows two InventTrans records.](./media/InventTransRelationshipPartialReceipt.PNG)
 
@@ -102,7 +99,6 @@ generation for a sales or purchase order. Updates to the reference document are 
 | Cost amount      | The final cost of the inventory transaction. This field is populated when a transaction is financially updated. Depending on the costing methodology, the Inventory close and adjustment process might update this field.                            |
 
 ## Inventory status
-<!--note from editor: "Status" doesn't have a plural form.-->
 
 Each inventory transaction has a status that's displayed in either the **Receipt** or the **Issue** field. The field that's used depends on the type of inventory transactions. Receipts are transactions that increases the inventory. For example, a purchase order with a positive quantity or a sales order return with a negative quantity. Issues are inventory transactions that decreased the inventory. For example, a sales order with a positive quantity or a purchase order return with a negative quantity.
 
