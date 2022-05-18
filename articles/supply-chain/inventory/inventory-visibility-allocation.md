@@ -105,7 +105,7 @@ You set the group names on the **Inventory Visibility Power App Configuration** 
 
 For example, if you use four group names and set them to \[`channel`, `customerGroup`, `region`, `orderType`\], these names will be valid for allocation-related requests when you call the configuration update API.
 
-### Using the allocation API
+### <a name="using-allocation-api"></a>Using the allocation API
 
 For detailed API information, visit the [Inventory Visibility Swagger page](https://inventoryservice.wus-il101.gateway.prod.island.powerapps.com/swagger/index.html).
 
