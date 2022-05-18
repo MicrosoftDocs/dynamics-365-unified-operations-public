@@ -53,11 +53,11 @@ The following illustration shows an example of a subscribe module in the footer 
 To add a subscribe list module to a new page and set the required properties in Commerce site builder, follow these steps.
 
 1. Go to **Templates**, and open the marketing template for your site's home page (or create a new marketing template).
-1. In the **Main** slot of the default page, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Main** slot of the default page, select the ellipsis (**...**), and then select **Add module**.
 1. In the **Select modules** dialog box, select the **Subscribe** module, and then select **OK**.
 1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it.
 1. Go to **Pages**, and open the site's home page (or create a new home page by using the marketing template).
-1. In the **Main** slot of the default page, select the ellipsis button (**...**), and then select **Add Module**.
+1. In the **Main** slot of the default page, select the ellipsis button (**...**), and then select **Add module**.
 1. In the **Select modules** dialog box, select the **Subscribe** module, and then select **OK**.
 1. In the property pane of the subscribe module, add a heading, such as **Subscribe**.
 1. Add paragraph text, such as **Latest trends, styles, & promotions. Are you on the list? Subscribe and get the latest hot deals!**
