@@ -51,7 +51,7 @@ When you complete the steps of these task guides, the following items are prepar
 
 You must also download and save the following template for the sample report:
 
-- [Bounded Template 2 of Payment Report (SampleVendPaymDocReportBounded2.docx)]()
+- [Bounded Template 2 of Payment Report (SampleVendPaymDocReportBounded2.docx)](https://download.microsoft.com/download/1/9/b/19b36e39-861a-414e-9150-9880d9d2487c/SampleVendPaymDocReportBounded2.docx)
 
 ## <a id="tag-control"></a>Review the downloaded Word template
 
