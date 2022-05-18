@@ -413,7 +413,7 @@ By using a **pre-release** Chromium browser extension that works for both the ne
     ...
     "content_scripts": [
         {
-            "matches": ["https://*.dynamics.cn/*", "https://*.microsoftdynamics.us/*"],
+            "matches": ["https://*.dynamics.com/*", "https://*.microsoftdynamics.us/*"],
             "js": ["screenshot.js"]
         }
         ...
