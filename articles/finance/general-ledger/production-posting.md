@@ -43,7 +43,7 @@ For a picking list journal to post to the general ledger for a production order,
 
 ## Time consumption
 
-The time that workers spend on production jobs is recorded in the **Route card journal** or the **Job card journal**. When these journals are posted, the ledger posting to a dedicated account for resources that are in progress (WIP)<!--note from editor: Why not use the abbreviation instead of tucking it into parentheses? Could this simply be "WIP resources"?--> is processed. This posting represents the value of the time that is spent on the production order. After the production order is registered as ended, the WIP accounts are settled.
+The time that workers spend on production jobs is recorded in the **Route card journal** or the **Job card journal**. When these journals are posted, the ledger posting to a dedicated account for resources that are in progress (WIP) is processed. This posting represents the value of the time that is spent on the production order. After the production order is registered as ended, the WIP accounts are settled.
 
 There are three possible ways to post time consumption depending on the option selected in the **Ledger posting** field on the **Production control parameters** page.
 
@@ -124,7 +124,7 @@ For a **Route card** or **Job card journal** to post to the general ledger for a
 
 The following diagram shows the relationship of the route group to the calculation of the total cost for each operation (route line) in a given route. Each route line has one route group. The route group controls parameters for setup time, run time, and quantity. The **Cost category** tab has three options for **Setup**, **Run**, and **Quantity** that are enabled based on the route groups setting. The **Timings** FastTab has three fields that are based on the route group.
 
-The formula that's used is based on whether the option is enabled in the route group. The cost from the selected cost category is multiplied by the quantity that was entered in the timings to calculate the total cost.<!--note from editor: This is excellent alt text! The way to get it to not be truncated is to use the complex image tag (see https://review.docs.microsoft.com/en-us/help/contribute/markdown-reference?branch=main#images)-->
+The formula that's used is based on whether the option is enabled in the route group. The cost from the selected cost category is multiplied by the quantity that was entered in the timings to calculate the total cost.
 
 :::image type="complex" source="media/RouteGroupRelationship.png" alt-text="The relationship of route groups to the total calculated cost.":::
 The relationship of route groups to the total calculated cost. Each route line has one route group. The route group controls parameters for setup time, run time and quantity. The cost category tab has three options for the Setup, Run, and Quantity that are enabled based on the route groups setting. The Timings FastTab has three fields that are enabled and costed based on the route group. The formula that is used is based on if the option is enabled in the route group. The cost from the selected cost category is multiplied by the quantity that is entered in the timings to calculate the total cost.
