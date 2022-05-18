@@ -4,7 +4,7 @@
 title: Improvements to statement posting functionality
 description: This topic describes improvements that have been made to the statement posting feature.
 author: analpert
-ms.date: 04/27/2022
+ms.date: 05/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -148,6 +148,9 @@ The aggregated transactions view provides the following benefits:
 - The user has visibility into how transactions are aggregated.
 - The user has a complete audit trail, from transactions, to sales orders, to sales invoices. This audit trail wasn't available in the legacy statement posting feature.
 - Aggregated XML file makes it easier to identify issues during sales order creation and invoicing.
+
+> [!NOTE]
+> When transactions are aggregated, the staff member assigned to the transaction is no longer available to the Top Staff Sales Report. This will result in the Top Staff Sales Report not showing all transactions. It is recommended to not use the Top Staff Sales Report with Aggregated Transactions..
 
 ### Journal vouchers
 
