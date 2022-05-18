@@ -150,7 +150,7 @@ The aggregated transactions view provides the following benefits:
 - Aggregated XML file makes it easier to identify issues during sales order creation and invoicing.
 
 > [!NOTE]
-> When transactions are aggregated, the staff member assigned to the transaction is no longer available to the Top Staff Sales Report. This will result in the Top Staff Sales Report not showing all transactions. It is recommended to not use the Top Staff Sales Report with Aggregated Transactions..
+> When transactions are aggregated, the staff member assigned to the transaction is no longer available to the **Top Staff Sales Report**, meaning that the **Top Staff Sales Report** won't show all transactions. We recommend that you don't use the **Top Staff Sales Report** with aggregated transactions.
 
 ### Journal vouchers
 
