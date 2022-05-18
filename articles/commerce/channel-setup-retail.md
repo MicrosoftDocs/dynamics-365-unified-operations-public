@@ -4,7 +4,7 @@
 title: Set up a retail  channel
 description: This topic describes how to create a new retail channel in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 04/23/2021
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -94,6 +94,13 @@ To set up payment methods, for each payment type supported on this channel follo
 The following image shows an example of a cash payment method.
 
 ![Example payment methods.](media/channel-setup-retail-5.png)
+
+The following image shows an example of a cash payment method and the **Amount** tab configuration.
+
+![Example payment method setup for amounts.](media/payment-methods-recount.png)
+
+> [!NOTE]
+> Values for the **Amount** tab are cached in the Retail Server and will not immediately take effect after you run the Distribution Schedule jobs. You may need to restart the Cloud Scale Unit to immediatly apply these values for testing.
 
 ### Set up cash declaration
 
