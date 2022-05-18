@@ -61,12 +61,12 @@ The following illustration highlights an example of a social share module used o
 To add a social share module to a buy box module, follow these steps.
 
 1. In the Fabrikam site, select **Pages**, and then select the **DefaultPDP** page to open the product details page. 
-1. In the **Buybox (required)** slot, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Buybox (required)** slot, select the ellipsis (**...**), and then select **Add module**.
 1. In the **Select modules** dialog box, select the **Social Share** module, and then select **OK**.
-1. In the **Social Share** slot, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Social Share** slot, select the ellipsis (**...**), and then select **Add module**.
 1. In the **Select modules** dialog box, select the **SocialShare** module, and then select **OK**.
 1. In the properties pane of the **SocialShare** module, under **Orientation**, select **Horizontal**. Add a caption as needed.
-1. In the **SocialShare** slot, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **SocialShare** slot, select the ellipsis (**...**), and then select **Add module**.
 1. In the **Select modules** dialog box, select the **SocialShareItem** module, and then select **OK**.
 1. In the properties pane of the **SocialShareItem** module, under **Social Media**, select **Facebook**.
 1. In the properties pane of the **SocialShareItem** module, under **Icon**, select **+ Add an image**.
