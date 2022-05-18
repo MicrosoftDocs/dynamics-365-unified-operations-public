@@ -4,13 +4,25 @@
 title: Country/region picker module
 description: This topic covers the country/region picker module and describes how to configure it in Microsoft Dynamics 365 Commerce. 
 author: stuharg
-ms.date: 05/18/2022
+ms.date: 04/06/2022
 ms.topic: article
-audience: Application User, Developer, IT Pro
+ms.prod:
+ms.technology:
+
+# optional metadata
+# ms.search.form:
+# ROBOTS:
+audience: Application User
+# ms.devlang:
 ms.reviewer: v-chgri
+# ms.tgt\_pltfrm:
+ms.custom:
+ms.assetid:
 ms.search.region: Global
+ms.search.industry:
 ms.author: stuharg
 ms.search.validFrom: 2021-08-12
+ms.dyn365.ops.version: Release 10.0.22
 
 ---
 
