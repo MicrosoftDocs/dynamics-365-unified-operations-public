@@ -4,7 +4,7 @@
 title: Footer module 
 description: This topic covers footer modules and how to author them in Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 03/02/2022
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -50,15 +50,15 @@ Like most containers, a footer module supports properties for the heading and th
 ## Create a footer module
 
 1. Go to **Fragments**, and select **New** to create a new fragment.
-1. In the **New fragment** dialog box, select the **Container** module, enter a name for the fragment, and then select **OK**.
-1. In the **Default container** slot, select the ellipsis (**...**), and then select **Add Module**.
-1. In the **Add Module** dialog box, select the **Footer category** module, and then select **OK**.
-1. In the **Footer category** slot, select the ellipsis (**...**), and then select **Add Module**.
-1. In the **Add Module** dialog box, select the **Footer item** module, and then select **OK**.
+1. In the **Select a fragment** dialog box, select the **Container** module, enter a name for the fragment, and then select **OK**.
+1. In the **Default container** slot, select the ellipsis (**...**), and then select **Add module**.
+1. In the **Select modules** dialog box, select the **Footer category** module, and then select **OK**.
+1. In the **Footer category** slot, select the ellipsis (**...**), and then select **Add module**.
+1. In the **Select modules** dialog box, select the **Footer item** module, and then select **OK**.
 1. Select the **Footer item** slot, and then, in the properties pane on the right, configure the heading, link and link text, and image as needed.
 1. To add more footer items, repeat steps 5 through 7 for each.
-1. To add a "back to top" link to your footer, select the ellipsis (**...**) in the **Footer category** slot, and then select **Add Module**.
-1. In the **Add Module** dialog box, select the **Back to top** module, and then select **OK**.
+1. To add a "back to top" link to your footer, select the ellipsis (**...**) in the **Footer category** slot, and then select **Add module**.
+1. In the **Select modules** dialog box, select the **Back to top** module, and then select **OK**.
 1. Select the **Back to top** slot, and then, in the properties pane on the right, configure the text and other module properties as needed.
 1. Select **Finish editing** to check in the fragment, and then select **Publish** to publish it.
 
