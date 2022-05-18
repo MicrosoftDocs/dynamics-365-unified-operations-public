@@ -168,7 +168,7 @@ To get the Power Platform environment ID, you can copy and paste it from the add
 
 :::image type="content" source="media/PPI-ExistingEnvironmentID.png" alt-text="Retrieve the environment ID from the browser address bar":::
 
-During the integration process, Microsoft will apply the packages for the **Dynamics 365 standard** provisioning template.  If you require packages from the other templates, you will need to install them manually.  For more details see <a href="#Provisioning-Templates">Provisioning templates</a>.
+During the integration process, Microsoft will apply the packages for the **Dynamics 365 standard** provisioning template.  If you require packages from the other templates, you will need to install them manually.  For more details, see [Provisioning templates](#provisioning-templates).
 
 Bringing your existing Dataverse instance is most useful for customers who are already live with Power Platform environments or other Dynamics 365 apps, and want to add Finance and Operations apps to that existing ecosystem.  Once you complete the integration setup, just like setting up with a new Dataverse database in the initial environment as mentioned above, the action is irreversible outside of deleting the environment in LCS.  Relinking or linking to another environment is not supported.
 
