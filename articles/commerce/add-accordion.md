@@ -60,17 +60,17 @@ The following image shows an example of an accordion module that is used to orga
 To add an accordion module to a FAQ page and set its properties in site builder, follow these steps.
 
 1. Go to **Pages**, and use the Fabrikam marketing template (or any template that has no restrictions) to create a new page that is named **Store FAQ**.
-1. In the **Main** slot of the **Default page**, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Main** slot of the **Default page**, select the ellipsis (**...**), and then select **Add module**.
 1. In the **Select modules** dialog box, select the **Container** module, and then select **OK**.
-1. In the **Container** slot, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Container** slot, select the ellipsis (**...**), and then select **Add module**.
 1. In the **Select modules** dialog box, select the **Accordion** module, and then select **OK**.
 1. In the property pane of the accordion module, select **Heading** next to the pencil symbol.
 1. In the **Heading** dialog box, under **Heading Text**, enter **Frequently asked questions**. Then select **OK**.
 1. In the property pane of the accordion module, select the **Show expand all** check box, and then, in the **Interaction style** field, select **Independent**.
-1. In the **Accordion** slot, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Accordion** slot, select the ellipsis (**...**), and then select **Add module**.
 1. In the **Select modules** dialog box, select the **Accordion item** module, and then select **OK**.
 1. In the property pane of the accordion item module, under **Title**, enter title text (for example, **How do returns work?**).
-1. In the **Accordion item** slot, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Accordion item** slot, select the ellipsis (**...**), and then select **Add module**.
 1. In the **Select modules** dialog box, select the **Text block** module, and then select **OK**.
 1. In the property pane of the text block module, enter a paragraph of text (for example, **Returns must be processed via the call center. Contact 1-800-FABRIKAM for returns. Products have a 30-day return policy. Returns must be initiated within this time frame.**).
 1. In the **Accordion** slot, add a few more accordion item modules. In each accordion item module, add a text block module that has content.
