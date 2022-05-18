@@ -83,7 +83,7 @@ To add a cart module to a new page and set the required properties, follow these
 1. Under **Fragment name**, enter the name **Cart fragment**, and then select **OK**.
 1. Select the **Cart** slot.
 1. In the properties pane on the right, select the pencil symbol, enter heading text in the field, and then select the check mark symbol.
-1. In the **Cart** slot, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Cart** slot, select the ellipsis (**...**), and then select **Add module**.
 1. In the **Select modules** dialog box, select the **Store selector** module, and then select **OK**.
 1. Select **Save**, select **Finish editing** to check in the fragment, and then select **Publish** to publish it.
 1. Go to **Templates**, and select **New** to create a new template.
