@@ -95,6 +95,13 @@ The following image shows an example of a cash payment method.
 
 ![Example payment methods.](media/channel-setup-retail-5.png)
 
+The following image shows an example of a cash payment method and the **Amount** tab configuration.
+
+![Example payment method setup for amounts.](media/payment-methods-recount.png)
+
+> [!NOTE]
+> Values for the **Amount** tab are cached in the Retail Server and will not immedaitly take effect after running the Distribution Schedule jobs. It may be required to restart the Cloud Scale Unit to immediatly apply these values for testing.
+
 ### Set up cash declaration
 
 1. On the Action Pane, select the **Set Up** tab, and then select **Cash declaration**.
