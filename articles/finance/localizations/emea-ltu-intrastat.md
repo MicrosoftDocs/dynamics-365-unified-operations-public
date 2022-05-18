@@ -32,7 +32,7 @@ The following fields are included in the Lithuanian Intrastat declaration. All t
 </tr>
 <tr>
 <td colspan="2">
-<p style="text-align: center;"><strong>Report header</strong></p>
+<h4 style="text-align: center;"><strong>Report header</strong></h4>
 </td>
 </tr>
 <tr>
@@ -165,7 +165,7 @@ The following fields are included in the Lithuanian Intrastat declaration. All t
 </tr>
 <tr>
 <td colspan="2">
-<p style="text-align: center;"><strong>Report lines</strong></p>
+<h4 style="text-align: center;"><strong>Report lines</strong></h4>
 </td>
 </tr>
 <tr>
@@ -274,7 +274,7 @@ The following fields are included in the Lithuanian Intrastat declaration. All t
 </tr>
 <tr>
 <td colspan="2">
-<p style="text-align: center;"><strong>Report footer</strong></p>
+<h4 style="text-align: center;"><strong>Report footer</strong></h4>
 </td>
 </tr>
 <tr>
@@ -298,7 +298,7 @@ From the Global repository, import the latest version of the following Electroni
 -   Intrastat report
 -   INSTAT XML(LT)
 
-For more information, see [Download ER configurations from the Global repository of Configuration service](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo).
+For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
 ## Set up region codes
 
@@ -369,7 +369,7 @@ You must create VAT ID registration types for all the countries or regions that 
 6.  In the **Registration number** field, enter the company's VAT number.
 7.  On the Action Pane, select **Save**. Then close the page.
 
-For more information, see [Registration IDs](https://docs.microsoft.com/dynamics365/finance/localizations/emea-registration-ids).
+For more information, see [Registration IDs](emea-registration-ids.md).
 
 Alternatively, you can create a customer's VAT registration number by using the **Tax exempt number** page.
 
@@ -409,7 +409,7 @@ Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax authorities*
 -   Address
 -   Contact information
 
-For more information, see [Set up sales tax authorities](https://docs.microsoft.com/dynamics365/finance/general-ledger/tasks/set-up-sales-tax-authorities).
+For more information, see [Set up sales tax authorities](../general-ledger/tasks/set-up-sales-tax-authorities.md).
 
 ## Set up foreign trade parameters
 
@@ -670,11 +670,11 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 7.  Select **OK** to close the **Intrastat Filter** dialog box.
 8.  Select **OK** to close the **Intrastat (Transfer)** dialog box, and review the result. The line represents the sales order that you created earlier.
 
-    ![Graphical user interface, text, application, chat or text message Description automatically generated](media/c9e819e34623a683eb32b1121168688d.png)
+    ![Line that represents the sales order on the Intrastat page](media/c9e819e34623a683eb32b1121168688d.png)
 
 9.  Select the transaction line, and then select the **General** tab to view more details.
 
-    ![A screenshot of a computer Description automatically generated with medium confidence](media/c82dc5af9a072825fb20d9a26aa4e735.png)
+    ![Sales order details on the General tab of the Intrastat page](media/c82dc5af9a072825fb20d9a26aa4e735.png)
 
 10. On the Action Pane, select **Output** \> **Report**.
 11. In the **Intrastat Report** dialog box, on the **Parameters** FastTab, in the **Date** section, in the **From date** field, select the first day of the current month.
@@ -728,7 +728,7 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 17.  Review the report in Excel format that is generated.
 
-    ![A picture containing table Description automatically generated](media/585cb5e53b7ec91b3818d14751f7d812.png)
+    ![Intrastat report on dispatches](media/585cb5e53b7ec91b3818d14751f7d812.png)
 
 ### Create a purchase order
 
@@ -763,11 +763,11 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 7.  Select **OK** to close the **Intrastat Filter** dialog box.
 8.  Select **OK** to transfer the transactions, and review the Intrastat journal.
 
-    ![Graphical user interface, text, application, email Description automatically generated](media/db5a105238b632ceb9e26e3e35adb0fe.png)
+    ![Line that represents the purchase order on the Intrastat page](media/db5a105238b632ceb9e26e3e35adb0fe.png)
 
 9.  Review the information on the **General** tab for the purchase order.
 
-    ![Graphical user interface, text, application Description automatically generated](media/7e626e71ad5a302dd78f523f3aa413da.png)
+    ![Purchase order details on the General tab of the Intrastat page](media/7e626e71ad5a302dd78f523f3aa413da.png)
 
 10. On the Action Pane, select **Output** \> **Report**.
 11. In the **Intrastat Report** dialog box, on the **Parameters** FastTab, in the **Date** section, in the **From date** field, select the first day of the current month.
@@ -820,6 +820,6 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 17.  Review the report in Excel format that is generated.
 
-    ![Graphical user interface Description automatically generated with low confidence](media/536b01cd91e70bb8872abbbcc8460150.png)
+    ![Intrastat report on arrivals](media/536b01cd91e70bb8872abbbcc8460150.png)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
