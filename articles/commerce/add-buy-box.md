@@ -94,14 +94,14 @@ To add a buy box module to a new page and set the required properties, follow th
 1. Go to **Fragments**, and select **New** to create a new fragment.
 1. In the **New fragment** dialog box, select the **Buy box** module.
 1. Under **Fragment name**, enter the name **Buy box fragment**, and then select **OK**.
-1. In the **Media Gallery** slot of the buy box module, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Media Gallery** slot of the buy box module, select the ellipsis (**...**), and then select **Add module**.
 1. In the **Select modules** dialog box, select the **Media gallery** module, and then select **OK**.
-1. In the **Store selector** slot of the buy box module, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Store selector** slot of the buy box module, select the ellipsis (**...**), and then select **Add module**.
 1. In the **Select modules** dialog box, select the **Store selector** module, and then select **OK**.
 1. Select **Save**, select **Finish editing** to check in the fragment, and then select **Publish** to publish it.
 1. Go to **Templates**, and select **New** to create a new template.
 1. In the **New template** dialog box, under **Template name**, enter **PDP template**, and then select **OK**.
-1. In the **Body** slot, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Body** slot, select the ellipsis (**...**), and then select **Add module**.
 1. In the **Select modules** dialog box, select the **Default Page** module, and then select **OK**.
 1. In the **Main** slot of the default page, select the ellipsis (**...**), and then select **Add fragment**.
 1. In the **Select a fragment** dialog box, select the **Buy box fragment** fragment that you created, and then select **OK**.
