@@ -378,7 +378,7 @@ By using a **pre-release** Chromium browser extension that works for both the ne
 1.  Download the **FMLabTaskRecorderScreenshot** folder that contains the extension from GitHub, at <https://github.com/Microsoft/FMLab>.
 2.  **On-premises deployments only:** Adjust the manifest for the extension so that it matches the following code. Replace \<hostname\> with the base URL for your environment.
 
-    ```xpp
+    ```json
     ...
     "content_scripts": [
         {
@@ -389,7 +389,7 @@ By using a **pre-release** Chromium browser extension that works for both the ne
     ```
 
 3.  **21Vianet deployments only:** Adjust the manifest for the extension so that it matches the following code. Replace **.com** with **.cn**
-    ```xpp
+    ```json
     ...
     "content_scripts": [
         {
@@ -398,13 +398,33 @@ By using a **pre-release** Chromium browser extension that works for both the ne
         }
         ...
     ```
-4.  Open the latest Microsoft Edge browser or Google Chrome.
-5.  Select **Settings and more &gt; Extensions** in Microsoft Edge (or **Customize and control Google Chrome &gt; More tools &gt; Extensions** in Google Chrome).
-6.  Select **Developer mode**.
-7.  Click **Load unpacked extension**.
-8.  Browse to the folder that contains the Task recorder extension by using the path **FMLab-master \> FMLab \> TaskRecorderScreenshot**, and then select **Select Folder**.
-9.  Make sure that **Enabled** is selected so that extension is turned on.
-10.  Restart the browser.
+4.  **GCC deployments only:** Adjust the manifest for the extension so that it matches the following code. Replace **dynamics.com** with **microsoftdynamics.us**
+    ```json
+    ...
+    "content_scripts": [
+        {
+            "matches": ["https://*.microsoftdynamics.us/*"],
+            "js": ["screenshot.js"]
+        }
+        ...
+    ```
+4.  **Multiple deployments:** Add additional string values to the matches clause, separating them with a comma.
+    ```json
+    ...
+    "content_scripts": [
+        {
+            "matches": ["https://*.dynamics.cn/*", "https://*.microsoftdynamics.us/*"],
+            "js": ["screenshot.js"]
+        }
+        ...
+    ```
+6.  Open the latest Microsoft Edge browser or Google Chrome.
+7.  Select **Settings and more &gt; Extensions** in Microsoft Edge (or **Customize and control Google Chrome &gt; More tools &gt; Extensions** in Google Chrome).
+8.  Select **Developer mode**.
+9.  Click **Load unpacked extension**.
+10.  Browse to the folder that contains the Task recorder extension by using the path **FMLab-master \> FMLab \> TaskRecorderScreenshot**, and then select **Select Folder**.
+11.  Make sure that **Enabled** is selected so that extension is turned on.
+12.  Restart the browser.
 
 Task recorder will now take screenshots of the tab where the client is running. These screenshots are available for one week after the recording has been played. (If you're running a platform version that is earlier than Platform update 16, the screenshots are available for only 15 minutes.) If the screenshots have expired, you can regenerate them by playing the task recording again.
 
