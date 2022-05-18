@@ -99,6 +99,13 @@ The following illustration image shows an example where the **Disable Lazy Load*
 
 ![Disable lazy load option selected in Commerce site builder.](media/best-practices-dev-1.png)
 
+### Enable lazy load on modules 
+
+A module that is below the fold can be configured to load the Javascript and render on demand as the user scrolls down the page. This way the page is rendered faster by rendering the modules which are in visible area of the page only. **Note** This feature requires JS bundles to be generated per module, to enable add the following [platform setting](platform-settings.md#enablemoduleentrypoints) in **platform.settings.json** file under src/settings folder: "enableModuleEntryPoints": true
+
+![Enalbe lazy load on modules](media/best-practices-dev-3.png)
+
+
 ### Enable lazy loading for a product collection module
 
 The data action calls for the [product collection module](../product-collection-module-overview.md) can cause a small increase in page load times. Therefore, the product collection module has an **Enable module lazy load** configuration setting that enables the module to be rendered on the client side after the page has been rendered. In this way, the page is available for user interaction sooner. However, if a product collection module is placed near the top of the page it is recommended to have lazy loading disabled so that the images appear immediately when the web page loads.
@@ -107,9 +114,10 @@ The following illustration shows an example where the **Enable module lazy load*
 
 ![Enable module lazy load option selected in Commerce site builder.](media/best-practices-dev-2.png)
 
-### Modules that don't support lazy loading but rely on user context
+### Modules that require user context should load on client
 
-Some module library modules don't include the **Enable module lazy load** configuration setting since they require user context data and have been designed to automatically render on the client. For custom modules that require user context (for example, custom cookie compliance modules), you should ensure that the modules are rendered on the client side.
+For custom modules that require user context (for example, custom cookie compliance modules), you should ensure that the modules are rendered on the client side.
+
 
 ## Cache configuration
 
