@@ -68,14 +68,14 @@ The interactive feature module can support various layouts and styles, based on 
 To add an interactive feature module to a new page and set the required properties in Commerce site builder, follow these steps.
 
 1. Go to **Templates**, and open the marketing template for your site's home page (or create a new marketing template).
-1. In the **Main** slot of the default page, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Main** slot of the default page, select the ellipsis (**...**), and then select **Add module**.
 1. In the **Select modules** dialog box, select the **Interactive feature** module, and then select **OK**.
 1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it.
 1. Go to **Pages**, and open the site's home page (or create a new home page by using the marketing template).
-1. In the **Main** slot of the default page, select the ellipsis button (**...**), and then select **Add Module**.
+1. In the **Main** slot of the default page, select the ellipsis button (**...**), and then select **Add module**.
 1. In the **Select modules** dialog box, under **Select Modules**, select the **Interactive feature** module, and then select **OK**.
 1. In the property pane of the interactive feature module, add a heading.
-1. In the **Interactive feature** slot, select the ellipsis button (**...**), and then select **Add Module**.
+1. In the **Interactive feature** slot, select the ellipsis button (**...**), and then select **Add module**.
 1. In the **Select modules** dialog box, select the **Interactive feature item** module, and then select **OK**.
 1. In the property pane of the interactive feature item module, add an image, heading text, paragraph text, and a URL.
 1. Add and configure additional interactive feature item modules as you require.
