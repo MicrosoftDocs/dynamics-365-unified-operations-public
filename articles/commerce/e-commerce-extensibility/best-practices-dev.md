@@ -98,16 +98,17 @@ The following illustration image shows an example where the **Disable Lazy Load*
 
 ![Disable lazy load option selected in Commerce site builder.](media/best-practices-dev-1.png)
 
-### Enable lazy load on modules 
+### Enable lazy loading for modules 
 
-A module that is below the fold (only visible as the user scrolls down a page) can be configured to load the Javascript and render on demand as the user scrolls down the page. This way the page is rendered faster by rendering only the modules which are in visible area of the page only. 
+A module that is below the fold (in other words, only visible when a user scrolls down the page) can be configured to load JavaScript and render on demand as a user scrolls down the page. The visible part of the page then loads faster since the modules above the fold render before the modules below the fold. 
 
-This feature requires JS bundles to be generated per module, to enable add the following **"enableModuleEntryPoints": true** to [platform settings](platform-settings.md#enablemoduleentrypoints) in the **platform.settings.json** file under src/settings folder.
+The lazy loading for modules feature requires JavaScript bundles to be generated per module. To enable the feature, add the **"enableModuleEntryPoints": true** [platform setting](platform-settings.md#enablemoduleentrypoints) to the **src/settings/platform.settings.json** file.
 
-To enable the module to lazy load ensure the **Render module client side** option is enabled as shown below.  Note: the product collection module lazy loading is handled differently, see the next section for details.
+To enable the module to lazy load ensure, ensure that the **Render module client side** option is enabled as shown in the following example illustration. 
+> NOTE
+> The product collection module lazy loading is handled differently, see the next section for details.
 
 ![Enable lazy load on modules](media/best-practices-dev-3.png)
-
 
 ### Enable lazy loading for a product collection module
 
