@@ -4,7 +4,7 @@
 title: Electronic reporting (ER) destinations
 description: This topic provides information about the management of Electronic reporting destinations, the types of supported destinations, and security considerations.
 author: nselin
-ms.date: 09/16/2021
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -178,11 +178,11 @@ In versions of Finance **before version 10.0.18**, the PDF conversion option can
 
 ### Limitations
 
-The PDF conversion option is available only for cloud deployments.
+As of Finance **version 10.0.9**, the PDF conversion option is available only for cloud deployments. Starting in Finance version **10.0.27**, the PDF conversion option is available for any on-premises deployment that has [Internet connectivity](../user-interface/client-disconnected.md) enabled.
 
 The PDF document that is produced is limited to a maximum length of 300 pages.
 
-In Finance **version 10.0.9**, only landscape page orientation is supported in the PDF document that is produced from Excel output. In Finance **version 10.0.10 (May 2020) and later**, you can [specify the page orientation](#SelectPdfPageOrientation) of the PDF document that is produced from Excel output while you configure an ER destination.
+As of Finance **version 10.0.9**, only landscape page orientation is supported in the PDF document that is produced from Excel output. Starting in Finance **version 10.0.10**, you can [specify the page orientation](#SelectPdfPageOrientation) of the PDF document that is produced from Excel output while you configure an ER destination.
 
 Only the common system fonts of the Window operating system are used to convert output that contains no embedded fonts.
 
