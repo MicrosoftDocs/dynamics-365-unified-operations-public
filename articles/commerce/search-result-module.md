@@ -73,14 +73,14 @@ To add a search results module to a category page in site builder, follow these 
 
 1. Go to **Templates**, and select **New** to create a new template.
 1. In the **New template** dialog box, enter the name **Search results**, and then select **OK**.
-1. In the **Body** slot, select the ellipsis (...), and then select **Add Module**.
+1. In the **Body** slot, select the ellipsis (...), and then select **Add module**.
 1. In the **Select modules** dialog box, select the **Default Page** module, and then select **OK**.
-1. In the **Main** slot of the **Default Page** module, select the ellipsis (...), and then select **Add Module**.
+1. In the **Main** slot of the **Default Page** module, select the ellipsis (...), and then select **Add module**.
 1. In the **Select modules** dialog box, select the **Container** module, and then select **OK**.
-1. In the **Container** slot, select the ellipsis (...), and then select **Add Module**.
+1. In the **Container** slot, select the ellipsis (...), and then select **Add module**.
 1. In the **Select modules** dialog box, select the **Breadcrumb** module, and then select **OK**.
 1. In the **Breadcrumb** properties pane, enter the value **1** for **Min Occurs**.
-1. In the **Container** slot, select the ellipsis (...), and then select **Add Module**.
+1. In the **Container** slot, select the ellipsis (...), and then select **Add module**.
 1. In the **Select modules** dialog box, select the **Search results** module, and then select **OK**.
 1. In the **Search results** properties pane, enter the value **1** for **Min Occurs**, and then set any other required properties for the search results module. By setting these properties in the template, you ensure that any customizations to a specific category page will automatically include these settings.
 1. Select **Finish editing**, and then select **Publish** to publish the template.
