@@ -67,11 +67,11 @@ To add a breadcrumb module to a PDP and set the required properties, follow thes
 
 1. Go to **Site Settings \> Extensions**, and then, for the **Breadcrumb display type on PDP** setting, select **Show category hierarchy**.
 1. Go to **Templates**, and select the PDP template.
-1. In the **Container** slot that contains the buy box module, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Container** slot that contains the buy box module, select the ellipsis (**...**), and then select **Add module**.
 1. In the **Select modules** dialog box, select the **Breadcrumb** module, and then select **OK**.
 1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it.
 1. Go to **Pages**, and open a PDP that uses the PDP template. If a PDP doesn't yet exist, create one.
-1. In the **Container** slot that contains the buy box module, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Container** slot that contains the buy box module, select the ellipsis (**...**), and then select **Add module**.
 1. In the **Select modules** dialog box, select the **Breadcrumb** module, and then select **OK**.
 1. In the properties pane of the **Breadcrumb** slot, under **Root**, select **Link text**.
 1. In the **Link text** dialog box, enter **Home**, and then, under **Link target**, select **Add a link**.
