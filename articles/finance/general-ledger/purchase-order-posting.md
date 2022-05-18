@@ -22,7 +22,7 @@ ms.author: raprofit
 
 # Purchase order posting
 
-The **Purchase order** tab on the **Inventory posting profiles** page is used to control how purchase orders will post to the general ledger. Two main activities post<!--note from editor: Suggested, to avoid "there are" (Writing Style Guide suggestion).--> to the general ledger for a purchase order: 
+The **Purchase order** tab on the **Inventory posting profiles** page is used to control how purchase orders will post to the general ledger. Two main activities post to the general ledger for a purchase order: 
 
 - Product receipt
 - Invoice
@@ -49,11 +49,11 @@ For a financial transaction (invoice) to post to the general ledger on a purchas
 
 ## Fixed receipt price posting
 
-You can use fixed receipt price as the standard cost for a product as an alternative to selecting the **Standard cost** option in the **Inventory model** field on the **Item model groups** page for an item.<!--note from editor: Edit okay? I didn't know what "an alternative way...then selecting" meant. I presumed it actually meant "than selecting."--> The main difference is that when **Fixed receipt price** is used<!--note from editor: Passive voice suggested to fix misplaced modifier.-->, the current cost price will be used for the item when the inventory receipt is posted. There's no cost revaluation process for **Fixed receipt price**; when a financial update is posted, the current cost price is used at the time of posting. If there's a difference between the cost price used at receipt and invoice, the variance will post to the fixed receipt price profit and loss accounts.
+You can use fixed receipt price as the standard cost for a product as an alternative to selecting the **Standard cost** option in the **Inventory model** field on the **Item model groups** page for an item. The main difference is that when **Fixed receipt price** is used, the current cost price will be used for the item when the inventory receipt is posted. There's no cost revaluation process for **Fixed receipt price**; when a financial update is posted, the current cost price is used at the time of posting. If there's a difference between the cost price used at receipt and invoice, the variance will post to the fixed receipt price profit and loss accounts.
 
-To use a fixed receipt price for a product, you must configure the following:<!--note from editor: Edits here and throughout, to meet Writing Style Guide guideline, "Make sure the customer knows where the action should take place before you describe the action."-->
+To use a fixed receipt price for a product, you must configure the following:
 
-- On the **Item model groups** page, select the **Post physical inventory** and the **Fixed receipt price** checkboxes 
+- On the **Item model groups** page, select the **Post physical inventory** and the **Fixed receipt price** checkboxes. 
 - On the **Inventory and warehouse management parameters** page, select the **Post packing slip in ledger** checkbox.
 - On the **Inventory posting profile** page, specify the main accounts for the following posting types:
   - Fixed receipt price profit
@@ -96,7 +96,7 @@ The following table shows examples of the default posting types with sample main
 
 | Posting type | Main account example | Main account name example | Account type | Debit/ Credit? | Clearing account | P/F | Follow | Description |
 |--------------|---------------------|-------------------------|----------------|----------------|--------------------|----|----------|-----------|
-| Cost of purchased materials received | 140100</br>140101 | Materials inventory</br>Materials shipped not invoiced | Asset | Debit | Yes | P | Cost of purchased materials invoiced | Used when a purchase order product receipt is posted. The offset to the account is the Purchase expenditure, uninvoiced<!--note from editor: Can you use bold formatting for this and the other capitalized strings? I'm not sure whether the Operations style sheet will allow that, but it would make it easier to parse these names.-->. The amount in this account is reversed when a purchase order invoice is posted. |
+| Cost of purchased materials received | 140100</br>140101 | Materials inventory</br>Materials shipped not invoiced | Asset | Debit | Yes | P | Cost of purchased materials invoiced | Used when a purchase order product receipt is posted. The offset to the account is the Purchase expenditure, uninvoiced. The amount in this account is reversed when a purchase order invoice is posted. |
 | Purchase expenditure, uninvoiced | 600180 | Material receipts | Expense | Debit | Yes | P | |Used when a purchase order product receipt is posted. Two vouchers are created for the receipt to track purchase price variances when standard cost is used. The offset to the account on the first voucher is the Purchase accrual. The offset on the second voucher is the sum of the Cost of purchased materials received and Purchase price variance accounts. The amounts posted in this account are reversed when a purchase order invoice is posted. |
 | Cost of purchased materials invoiced | 140100 | Materials inventory | Asset | Debit | No | F  |Cost of purchased materials received | Used when a purchase order invoice is posted. The offset to this account is the Purchase expenditure for product. This account represents the inventory on your balance sheet. The account used is typically the same account used for Cost of units delivered and Cost of units invoiced for sales order. |
 | Purchase expenditure for product | 600180 | Materials receipt | Expense | Credit | No | F  | |Used when a purchase order invoice is posted. The offset to this account is the Cost of purchased materials purchased. This account represents the inventory on your balance sheet. |
@@ -128,13 +128,13 @@ Purchase requisitions and purchase order confirmations can also be configured to
 
 ## Procurement category posting
 
-As an alternative to setting up the inventory posting for all items, a group of items, or a single item, you can set up categories and control the ledger posting by procurement categories. For more information about setting up categories and assigning them to products, go to [Sample posting profile configuration](#sample-posting-profile-configuration)<!--note from editor: Is this the section you're referring to?--> earlier in this topic.
+As an alternative to setting up the inventory posting for all items, a group of items, or a single item, you can set up categories and control the ledger posting by procurement categories. For more information about setting up categories and assigning them to products, go to [Sample posting profile configuration](#sample-posting-profile-configuration) earlier in this topic.
 
 When using categories with purchase orders or vendor invoices, the category hierarchy needs to be assigned to the **Procurement category hierarchy** type on the **Category hierarchy role assignments** page.
 
 ### Vendor invoices with procurement categories
 
-If your organization uses purchases orders for some purchases and not for others, you can process non–purchase order related invoices in a variety of ways<!--note from editor: Suggested.-->. This includes using journals in **Accounts payable** or by the **Pending vendor invoices** page that's used to generate invoices for purchase orders. When creating invoices for non–purchase order related invoices, you'll need to create procurement categories for each type of expense. You'll need to map the category to the correct expense account on the **Inventory posting profiles** page.
+If your organization uses purchases orders for some purchases and not for others, you can process non–purchase order related invoices in a variety of ways. This includes using journals in **Accounts payable** or by the **Pending vendor invoices** page that's used to generate invoices for purchase orders. When creating invoices for non–purchase order related invoices, you'll need to create procurement categories for each type of expense. You'll need to map the category to the correct expense account on the **Inventory posting profiles** page.
 
 The exact number of categories will vary based on the number of expense accounts that you use to post your invoices. You'll need at least one procurement category for each main account that you expense non–purchase order invoices to. Many categories can be used for a single main account. This can be useful for usability, searchability, and reporting the types of expenses you use.
 
