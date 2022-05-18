@@ -77,7 +77,7 @@ To add an interactive feature module to a new page and set the required properti
 1. In the property pane of the interactive feature module, add a heading.
 1. In the **Interactive feature** slot, select the ellipsis button (**...**), and then select **Add Module**.
 1. In the **Select modules** dialog box, select the **Interactive feature item** module, and then select **OK**.
-1. In the property pane of the interactive feature item module, add an image, heading text, paragraph text, and an URL.
+1. In the property pane of the interactive feature item module, add an image, heading text, paragraph text, and a URL.
 1. Add and configure additional interactive feature item modules as you require.
 1. Select **Save**, and then select **Preview** to preview the page.
 1. Select **Finish editing** to check in the template, and then select **Publish** to publish it.
