@@ -670,11 +670,11 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 7.  Select **OK** to close the **Intrastat Filter** dialog box.
 8.  Select **OK** to close the **Intrastat (Transfer)** dialog box, and review the result. The line represents the sales order that you created earlier.
 
-    ![Line that represents the sales order on the Intrastat page](media/c9e819e34623a683eb32b1121168688d.png)
+![Line that represents the sales order on the Intrastat page](media/c9e819e34623a683eb32b1121168688d.png)
 
 9.  Select the transaction line, and then select the **General** tab to view more details.
 
-    ![Sales order details on the General tab of the Intrastat page](media/c82dc5af9a072825fb20d9a26aa4e735.png)
+![Sales order details on the General tab of the Intrastat page](media/c82dc5af9a072825fb20d9a26aa4e735.png)
 
 10. On the Action Pane, select **Output** \> **Report**.
 11. In the **Intrastat Report** dialog box, on the **Parameters** FastTab, in the **Date** section, in the **From date** field, select the first day of the current month.
@@ -728,7 +728,7 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 17.  Review the report in Excel format that is generated.
 
-    ![Intrastat report on dispatches](media/585cb5e53b7ec91b3818d14751f7d812.png)
+![Intrastat report on dispatches](media/585cb5e53b7ec91b3818d14751f7d812.png)
 
 ### Create a purchase order
 
@@ -763,11 +763,11 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 7.  Select **OK** to close the **Intrastat Filter** dialog box.
 8.  Select **OK** to transfer the transactions, and review the Intrastat journal.
 
-    ![Line that represents the purchase order on the Intrastat page](media/db5a105238b632ceb9e26e3e35adb0fe.png)
+![Line that represents the purchase order on the Intrastat page](media/db5a105238b632ceb9e26e3e35adb0fe.png)
 
 9.  Review the information on the **General** tab for the purchase order.
 
-    ![Purchase order details on the General tab of the Intrastat page](media/7e626e71ad5a302dd78f523f3aa413da.png)
+![Purchase order details on the General tab of the Intrastat page](media/7e626e71ad5a302dd78f523f3aa413da.png)
 
 10. On the Action Pane, select **Output** \> **Report**.
 11. In the **Intrastat Report** dialog box, on the **Parameters** FastTab, in the **Date** section, in the **From date** field, select the first day of the current month.
@@ -820,6 +820,6 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 17.  Review the report in Excel format that is generated.
 
-    ![Intrastat report on arrivals](media/536b01cd91e70bb8872abbbcc8460150.png)
+![Intrastat report on arrivals](media/536b01cd91e70bb8872abbbcc8460150.png)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
