@@ -23,7 +23,7 @@ This topic provides answer to frequently asked questions about Microsoft Dynamic
 
 ## Why can't I configure a catalog-specific navigation hierarchy or see an option to associate a customer hierarchy?
 
-Make sure that the **Enable use of multiple catalogs on retails channels** feature is enabled in the **Feature management** workspace in Commerce headquarters. Additionally, make sure that your environment is using the Commerce version 10.0.26 or later release.
+Make sure that the **Enable use of multiple catalogs on retails channels** feature is enabled in the **Feature management** workspace in Commerce headquarters. Additionally, make sure that your environment is using the Commerce version 10.0.27 or later release.
 
 ## Can I view the catalog-specific hierarchy and enrich category pages in Commerce site builder?
 
