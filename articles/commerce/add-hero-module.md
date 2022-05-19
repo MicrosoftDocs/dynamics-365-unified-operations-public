@@ -4,7 +4,7 @@
 title: Content block module 
 description: This topic covers content block modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
-ms.date: 09/15/2020
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -81,8 +81,8 @@ To add a hero module to a new page and set the required properties, follow these
 1. In the **Main** slot of the default page, add a hero module.
 1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it.
 1. Use the hero template that you just created to create a page that is named **Content block page**.
-1. In the **Main** slot of the default page, select the ellipsis button (**...**), and then select **Add Module**.
-1. In the **Add Module** dialog box, under **Select Modules**, select the hero module, and then select **OK**.
+1. In the **Main** slot of the default page, select the ellipsis button (**...**), and then select **Add module**.
+1. In the **Select modules** dialog box, select the hero module, and then select **OK**.
 1. In the outline tree on the left, select the content block module.
 1. In the properties pane on the right, select **Add an image**. Then either select an existing image or upload a new image.
 1. Select **Heading**.

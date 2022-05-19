@@ -5,7 +5,7 @@ title: Store selector module
 description: This topic covers the store selector module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
 manager: annbe
-ms.date: 05/04/2022
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -139,26 +139,29 @@ For **Pickup in store** mode, the module can be used only on PDPs and cart pages
 To configure the store selector module to show available stores for a store locations page, as in the illustration that appears earlier in this topic, follow these steps.
 
 1. Go to **Templates**, and select **New** to create a new template.
-1. In the **New Template** dialog box, under **Template name**, enter **Marketing template**, and then select **OK**.
+1. In the **New template** dialog box, under **Template name**, enter **Marketing template**, and then select **OK**.
 1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it.
 1. Go to **Pages**, and select **New** to create a new page.
-1. In the **Choose a template** dialog box, select the **Marketing template** template. Under **Page name**, enter **Store locations**, and then select **OK**.
-1. In the **Main** slot of the new page, select the ellipsis (**...**), and then select **Add Module**.
-1. In the **Add Module** dialog box, select the **Container** module, and then select **OK**.
-1. In the **Container** slot, select the ellipsis (**...**), and then select **Add Module**.
-1. In the **Add Module** dialog box, select the **Container with 2 columns** module, and then select **OK**.
+1. In the **Create a new page** dialog box, under **Page name**, enter **Store locations**, and then select **Next**.
+1. Under **Choose a template**, select the **Marketing template** that you created, and then select **Next**.
+1. Under **Choose a layout**, select a page layout (for example, **Flexible layout**), and then select **Next**.
+1. Under **Review and finish**, review the page configuration. If you need to edit the page information, select **Back**. If the page information is correct, select **Create page**. 
+1. In the **Main** slot of the new page, select the ellipsis (**...**), and then select **Add module**.
+1. In the **Select modules** dialog box, select the **Container** module, and then select **OK**.
+1. In the **Container** slot, select the ellipsis (**...**), and then select **Add module**.
+1. In the **Select modules** dialog box, select the **Container with 2 columns** module, and then select **OK**.
 1. In the module's properties pane, set the **Width** value to **Fill Container**.
 1. Set the **X-Small view port column configuration** value to **100%**.
 1. Set the **Small view port column configuration** value to **100%**.
 1. Set the **Medium view port column configuration** value to **33% 67%**.
 1. Set the **Large view port column configuration** value to **33% 67%**.
-1. In the **Container with 2 columns** slot, select the ellipsis (**...**), and then select **Add Module**.
-1. In the **Add Module** dialog box, select the **Store selector** module, and then select **OK**.
+1. In the **Container with 2 columns** slot, select the ellipsis (**...**), and then select **Add module**.
+1. In the **Select modules** dialog box, select the **Store selector** module, and then select **OK**.
 1. In the module's properties pane, set the **Mode** value to **Find stores**.
 1. Set the **Search radius** value in miles.
 1. Set other properties, such as **Set as preferred store**, **Show all stores**, and **Enable auto suggestion**, as you require.
-1. In the **Container with 2 columns** slot, select the ellipsis (**...**), and then select **Add Module**.
-1. In the **Add Module** dialog box, select the **Map** module, and then select **OK**.
+1. In the **Container with 2 columns** slot, select the ellipsis (**...**), and then select **Add module**.
+1. In the **Select modules** dialog box, select the **Map** module, and then select **OK**.
 1. In the module's properties pane, set any additional properties as you require.
 1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
  

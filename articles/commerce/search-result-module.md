@@ -4,7 +4,7 @@
 title: Search results module
 description: This topic covers search results modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 04/21/2022
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -69,23 +69,26 @@ The search results module supports the [quick view module](quick-view-module.md)
 
 ## Add a search results module to a category page
 
-To add a search results module to a category page, follow these steps.
+To add a search results module to a category page in site builder, follow these steps.
 
 1. Go to **Templates**, and select **New** to create a new template.
 1. In the **New template** dialog box, enter the name **Search results**, and then select **OK**.
-1. In the **Body** slot, select the ellipsis (...), and then select **Add Module**.
-1. In the **Add Module** dialog box, select the **Default Page** module, and then select **OK**.
-1. In the **Main** slot of the **Default Page** module, select the ellipsis (...), and then select **Add Module**.
-1. In the **Add Module** dialog box, select the **Container** module, and then select **OK**.
-1. In the **Container** slot, select the ellipsis (...), and then select **Add Module**.
-1. In the **Add Module** dialog box, select the **Breadcrumb** module, and then select **OK**.
+1. In the **Body** slot, select the ellipsis (...), and then select **Add module**.
+1. In the **Select modules** dialog box, select the **Default Page** module, and then select **OK**.
+1. In the **Main** slot of the **Default Page** module, select the ellipsis (...), and then select **Add module**.
+1. In the **Select modules** dialog box, select the **Container** module, and then select **OK**.
+1. In the **Container** slot, select the ellipsis (...), and then select **Add module**.
+1. In the **Select modules** dialog box, select the **Breadcrumb** module, and then select **OK**.
 1. In the **Breadcrumb** properties pane, enter the value **1** for **Min Occurs**.
-1. In the **Container** slot, select the ellipsis (...), and then select **Add Module**.
-1. In the **Add Module** dialog box, select the **Search results** module, and then select **OK**.
+1. In the **Container** slot, select the ellipsis (...), and then select **Add module**.
+1. In the **Select modules** dialog box, select the **Search results** module, and then select **OK**.
 1. In the **Search results** properties pane, enter the value **1** for **Min Occurs**, and then set any other required properties for the search results module. By setting these properties in the template, you ensure that any customizations to a specific category page will automatically include these settings.
 1. Select **Finish editing**, and then select **Publish** to publish the template.
 1. Go to **Pages**, and select **New** to create a new page.
-1. In the **Choose a template** dialog box, select the **Search results** template that you created, enter **Category page** for **Page name**, and then select **OK**. Because all the values are set in the template, the page is ready to be published.
+1. In the **Create a new page** dialog box, under **Page name**, enter **Category page**, and then select **Next**.
+1. Under **Choose a template**, select **Search results** template that you created, and then select **Next**.
+1. Under **Choose a layout**, select a page layout (for example, **Flexible layout**), and then select **Next**.
+1. Under **Review and finish**, review the page configuration. If you need to edit the page information, select **Back**. If the page information is correct, select **Create page**.
 1. Select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
 ## Enable inventory awareness for the search results module
@@ -106,7 +109,7 @@ Inventory-aware product search uses product attributes to obtain inventory avail
 
 To create dedicated product attributes to support the inventory-aware search results module, follow these steps.
 
-1. Go to **Retail and Commerce \> Retail and Commerce IT \> Products and inventory**.
+1. In headquarters, go to **Retail and Commerce \> Retail and Commerce IT \> Products and inventory**.
 1. Select and open **Populate product attributes with inventory level**.
 1. In the dialog box, enter the following information:
 
@@ -120,11 +123,11 @@ To create dedicated product attributes to support the inventory-aware search res
 
 To configure the product attributes for an online channel, follow these steps. 
 
-1. Go to **Retail and Commerce \> Channel setup \> Channel categories and product attributes**.
-2. Select an online channel to enable the inventory-aware search results module for.
-3. Select and open an associated attribute group, and then add the newly created product attribute to it.
-4. For Commerce versions before the 10.0.27 release, select **Set attribute metadata**, select the newly added product attribute, and then turn on the **Show attribute on channel**, **Retrievable**, **Can be refined**, and **Can be queried** options.
-5. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**, and run the **1150 (Catalog)** job. If you schedule the **Populate product attributes with inventory level** job as a batch process, we recommend that you also schedule the 1150 job as a batch process that runs at the same frequency.
+1. In headquarters, go to **Retail and Commerce \> Channel setup \> Channel categories and product attributes**.
+1. Select an online channel to enable the inventory-aware search results module for.
+1. Select and open an associated attribute group, and then add the newly created product attribute to it.
+1. For Commerce versions before the 10.0.27 release, select **Set attribute metadata**, select the newly added product attribute, and then turn on the **Show attribute on channel**, **Retrievable**, **Can be refined**, and **Can be queried** options.
+1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**, and run the **1150 (Catalog)** job. If you schedule the **Populate product attributes with inventory level** job as a batch process, we recommend that you also schedule the 1150 job as a batch process that runs at the same frequency.
 
 > [!NOTE]
 > For products that are shown in the search results module, the inventory level is shown at the master product level instead of the individual variant level. It has only two possible values: "available" and "out of stock". The actual label for the value is retrieved from the [inventory level profile](inventory-buffers-levels.md) definition. A master product is considered out of stock only when all its variants are out of stock.

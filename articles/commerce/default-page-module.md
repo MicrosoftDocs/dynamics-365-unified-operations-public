@@ -4,7 +4,7 @@
 title: Default page module
 description: This topic covers default page modules and describes how to add them to page templates in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 04/02/2021
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -56,7 +56,7 @@ To add a default page module to a template, follow these steps.
 
     ![Adding a new module.](media/page-module-2.png)
 
-1. In the **Add Module** dialog box, select the **Default Page** module, and then select **OK**.
+1. In the **Select modules** dialog box, select the **Default Page** module, and then select **OK**.
 
     ![Adding a default page module.](media/page-module-3.png)
 
