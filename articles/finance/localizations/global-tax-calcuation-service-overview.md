@@ -149,6 +149,11 @@ The following transactions are supported in version 10.0.26:
 - General journals
 - Vendor invoice journal
 
+The following transactions are supported in version 10.0.28: 
+
+- Vendor payment journal
+- Customer payment journal
+
 ## Supported countries/regions
 
 Tax Calculation can be enabled by legal entity. 
