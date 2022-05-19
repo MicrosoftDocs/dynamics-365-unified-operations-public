@@ -113,7 +113,7 @@ To enable lazy loading for a module, in site builder ensure that the **Render mo
 
 ### Enable lazy loading for a product collection module
 
-The data action that calls for the [product collection module](../product-collection-module-overview.md) can cause a small increase in page load times. Therefore, the product collection module has an **Enable module lazy load** configuration setting that enables the module to be rendered on the client side after the page has been rendered. In this way, the page is available for user interaction sooner. However, if a product collection module is placed near the top of the page it is recommended to have lazy loading disabled so that the images appear immediately when the web page loads. The **enableModuleEntryPoints** platform setting is not needed for this feature to work.
+The data action that calls for the [product collection module](../product-collection-module-overview.md) can cause a small increase in page load times. Therefore, the product collection module has an **Enable module lazy load** configuration setting that enables the module to be rendered on the client side after the page has been rendered. In this way, the page is available for user interaction sooner. However, if a product collection module is placed near the top of the page it is recommended to have lazy loading disabled so that the images appear immediately when the web page loads. The **enableModuleEntryPoints** platform setting does not need to be added to the **src/settings/platform.settings.json** file for this feature to work.
 
 The following illustration shows an example where the **Enable module lazy load** option is selected for a product collection module in Commerce site builder.
 
