@@ -104,12 +104,12 @@ A module that is below the fold (in other words, only visible when a user scroll
 
 The lazy loading for modules feature requires JavaScript bundles to be generated per module. To enable the feature, add the **"enableModuleEntryPoints": true** [platform setting](platform-settings.md#enablemoduleentrypoints) to the **src/settings/platform.settings.json** file.
 
-To enable lazy loading for a module, in site builder ensure that the **Render module client side** option is enabled in the module's properties pane as shown in the following example illustration. 
+To enable lazy loading for a module, in site builder ensure that the **Render module client side** option is enabled in the module's properties pane, as shown in the following example illustration. 
 
-![Enable lazy load on modules](media/best-practices-dev-3.png)
+!["Render module client side" option in a module's site builder properties pane](media/best-practices-dev-3.png)
 
 > [!NOTE]
-> The product collection module lazy loading is handled differently, see the next section for details.
+> Lazy loading for a product collection module is handled differently, see the next section for details.
 
 ### Enable lazy loading for a product collection module
 
