@@ -4,7 +4,7 @@
 title: Prepare for go-live
 description: This topic provides guidance about how to prepare for the go-live for Finance and Operations apps.
 author: ClaudiaBetz-Haubold
-ms.date: 05/12/2022
+ms.date: 05/19/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -93,7 +93,7 @@ The review might require up to three business days for the initial report, plus 
 The Go-live Readiness Review is done in the FastTrack for Dynamics 365 implementation portal.
 
 There are two exceptions that will not use the FastTrack for Dynamics 365 implementation portal:
-- Projects that are in [United States (US) Government Community Cloud (GCC)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/deployment/us-gcc-deployment). Please [download the Go-live checklist](https://aka.ms/d365fogolivechecklist), fill in all necessary details and send it via email to <d365fogccglr@microsoft.com>. Always include a key stakeholder from the customer and the implementation partner on the email. Microsoft FastTrack will review the project and follow up.
+- Projects that are in [United States (US) Government Community Cloud (GCC)](../../dev-itpro/deployment/us-gcc-deployment.md). Please [download the Go-live checklist](https://aka.ms/d365fogolivechecklist), fill in all necessary details and send it via email to <d365fogccglr@microsoft.com>. Always include a key stakeholder from the customer and the implementation partner on the email. Microsoft FastTrack will review the project and follow up.
 - For projects that are already live, but planning to move the live solution to a new tenant if the solution is not changing, completing new Go-live Readiness review is not necessary. Please follow the steps described in this [article](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant?toc=/dynamics365/commerce/toc.json#move-your-production-environment-to-the-new-tenant) to get the production slot enabled on the new tenant.
 
 ### Initiate the Go-live Readiness Review in the Portal
