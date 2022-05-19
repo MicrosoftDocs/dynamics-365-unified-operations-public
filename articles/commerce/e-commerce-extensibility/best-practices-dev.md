@@ -4,7 +4,7 @@
 title: Best practices for Dynamics 365 Commerce development 
 description: This topic describes some best practices to follow when developing Dynamics 365 Commerce customizations. 
 author: samjarawan
-ms.date: 05/18/2022
+ms.date: 05/19/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -104,25 +104,24 @@ A module that is below the fold (in other words, only visible when a user scroll
 
 The lazy loading for modules feature requires JavaScript bundles to be generated per module. To enable the feature, add the **"enableModuleEntryPoints": true** [platform setting](platform-settings.md#enablemoduleentrypoints) to the **src/settings/platform.settings.json** file.
 
-To enable the module to lazy load ensure, ensure that the **Render module client side** option is enabled as shown in the following example illustration. 
+To enable lazy loading for a module, in site builder ensure that the **Render module client side** option is enabled in the module's properties pane as shown in the following example illustration. 
+
+![Enable lazy load on modules](media/best-practices-dev-3.png)
 
 > [!NOTE]
 > The product collection module lazy loading is handled differently, see the next section for details.
 
-![Enable lazy load on modules](media/best-practices-dev-3.png)
-
 ### Enable lazy loading for a product collection module
 
-The data action calls for the [product collection module](../product-collection-module-overview.md) can cause a small increase in page load times. Therefore, the product collection module has an **Enable module lazy load** configuration setting that enables the module to be rendered on the client side after the page has been rendered. In this way, the page is available for user interaction sooner. However, if a product collection module is placed near the top of the page it is recommended to have lazy loading disabled so that the images appear immediately when the web page loads.  The **enableModuleEntryPoints** platform setting is not needed for this feature to work.
+The data action that calls for the [product collection module](../product-collection-module-overview.md) can cause a small increase in page load times. Therefore, the product collection module has an **Enable module lazy load** configuration setting that enables the module to be rendered on the client side after the page has been rendered. In this way, the page is available for user interaction sooner. However, if a product collection module is placed near the top of the page it is recommended to have lazy loading disabled so that the images appear immediately when the web page loads. The **enableModuleEntryPoints** platform setting is not needed for this feature to work.
 
 The following illustration shows an example where the **Enable module lazy load** option is selected for a product collection module in Commerce site builder.
 
 ![Enable module lazy load option selected in Commerce site builder.](media/best-practices-dev-2.png)
 
-### Modules that require user context should load on client
+### Modules that require user context should load on the client side
 
 For custom modules that require user context (for example, custom cookie compliance modules), you should ensure that the modules are rendered on the client side.
-
 
 ## Cache configuration
 
