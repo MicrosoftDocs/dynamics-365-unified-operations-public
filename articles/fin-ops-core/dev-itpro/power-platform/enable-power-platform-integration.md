@@ -40,7 +40,7 @@ Power Platform integration lets you complete the following tasks:
 
 By default, all Finance and Operations apps environments (sandbox and production) that are managed by LCS will receive an initial Power Platform environment **without** Dataverse. This environment is linked to your Finance and Operations environment, as shown in the following illustration. The relationship is one to one. Over time, your Finance and Operations apps will be migrated to this location in Power Platform admin center. You can determine whether an environment in Power Platform admin center is linked to an environment from LCS by looking at the Finance and Operations apps URL on the environment details page in Power Platform admin center.
 
-:::image type="content" source="media/LinkedPowerPlatformEnvironment.png" alt-text="A Power Platform environment in Power Platform admin center is created with the same name as the Finance and Operations environment from LCS.  The Finance and Operations URL is populated with the URL of the Finance and Operations instance.":::
+![A Power Platform environment in Power Platform admin center is created with the same name as the Finance and Operations environment from LCS. The Finance and Operations URL is populated with the URL of the Finance and Operations instance.](media/LinkedPowerPlatformEnvironment.png)
 
 The Power Platform environment that is connected to your environment in LCS enables Finance and Operations apps customers to take advantage of Microsoft Power Platform. This Power Platform environment can't be deleted or reset, and a Dataverse database can't be manually added to it in Power Platform admin center. To add Dataverse and fully enable Microsoft Power Platform integration capabilities, follow the instructions in the [Enable integration with an existing Power Platform environment](#connect-to-existing-dataverse) section of this topic.
 
@@ -50,7 +50,7 @@ Alternatively, your organization might already have a Power Platform environment
 
 When you purchase a license for any Finance and Operations app, such as Dynamics 365 Finance or Dynamics 365 Supply Chain Management, your tenant is entitled to an additional 10 gigabytes (GB) of Dataverse database capacity. In addition, for each user license that you purchased, you receive an incremental amount of database capacity, as shown in the following illustration from Power Portal admin center.
 
-:::image type="content" source="media/PPI-Capacity.png" alt-text="Capacity view in Power Platform admin center.":::
+![Capacity view in Power Platform admin center.](media/PPI-Capacity.png)
 
 The same purchase of licenses entitles you to one self-service sandbox environment and production environment in LCS. Because of this, an initial Power Platform environment can automatically be created for every Finance and Operations apps environment. Every initial environment in Power Platform admin center is without Dataverse. Therefore, it uses only 1 GB of database capacity to provision apps that are created by using Power Apps and flows that are created by using Power Automate. When you set up Power Platform integration, a Dataverse database is added to the same environment. This database often consumes 3 GB or more.
 
