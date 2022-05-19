@@ -47,14 +47,14 @@ You can optionally specify the following properties for data sources of a *USER 
 - In the **Help** field, specify the help text that is shown at design time at the bottom of the **Format designer** page or the **Model mapping designer** page when an editable data source of a *USER INPUT PARAMETER* type is selected. This text might provide additional details about the data source to help users when they configure the editable format or model mapping component. You can add different help text for different language codes by selecting **Translate**.
 
     > [!NOTE]
-    > The **Translate** button that you can use to add [language-specific labels](er-design-multilingual-reports.md#format-component) becomes available only after you add the data source, save your changes, and then reopen the data source for editing.
+    > The **Translate** button that you can use to add [language specific labels and text](er-design-multilingual-reports.md#format-component) becomes available only after you add the data source, save your changes, and then reopen the data source for editing.
 
 - In the **Read only** field, configure an expression that returns a *[Boolean](er-formula-supported-data-types-primitive.md#boolean)* value.
 
     - If the configured expression returns a value of **True** at runtime, the related data entry field appears dimmed in the dialog box, and you can't change its value.
     - If the configured expression returns a value of **False** at runtime, or if no expression is configured, the related data entry field is available in the dialog box, and you can change its value.
 
-- In the **Default value** field, configure an expression that returns the value of the referenced parameter type. This value can be used to initiate the value of the related data entry field in the dialog box at runtime.
+- In the **Default value** field, configure an expression that returns the value of the referenced parameter type. This value can be used to fill in a default value for the related data entry field in the dialog box at runtime.
 
     When you run an ER format, the value that you enter in the related data entry field in the dialog box at runtime is saved in memory as the previously used value. Previously used values are saved individually for each field, running ER format, current user, and current organization (company).
 
