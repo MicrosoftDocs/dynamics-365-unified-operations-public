@@ -160,7 +160,7 @@ After you complete the setup, the only way to reverse the action is to delete th
 
 If you already have a Dataverse instance that you want to connect to a Finance and Operations environment, you can connect it during the setup of Power Platform integration from a previously deployed Finance and Operations environment. However, note that this option isn't available when you deploy a new Finance and Operations environment.
 
-![Connecting to an existing Power Platform environment.](media/PPI-ConnectToExisting.png.png)
+![Connecting to an existing Power Platform environment.](media/PPI-ConnectToExisting.png)
 
 To get the Power Platform environment ID, you can copy it from the address bar of your browser when you visit the environment in Power Platform admin center.
 
