@@ -55,7 +55,7 @@ To optionally use a fixed receipt price for a product, you must complete the fol
     - Fixed receipt price profit
     - Fixed receipt price loss
 
-For more information, see [Fixed receipt price](fixed-receipt-price.md).
+For more information, see [Fixed receipt price](/supply-chain/cost-management/fixed-receipt-price.md).
 
 ## Catch weight posting
 
