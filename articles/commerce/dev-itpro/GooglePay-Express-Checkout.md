@@ -23,10 +23,10 @@ This topic provides an overview of the Microsoft Dynamics 365 payments support f
 | Term | Description |
 |---|---|
 | Google Pay | Also known as the Google Pay "button", Google Pay is a wallet payment offering supported through the Adyen connector, allowing the customer experience and integration supported by the Dynamic's Google Pay Connector. |
-| Wallet | A payment type that does not include traditional payment characteristics, such as the BIN range and expiration date, which are used to differentiate among credit and debit card types. |
+| Wallet | A payment type that doesn't include traditional payment characteristics, such as the BIN range and expiration date, which are used to differentiate among credit and debit card types. |
 |Payment Express |Added module in Dynamics 365 Commerce to support faster checkout behavior with supported payment methods, with this article addressing PayPal|
 
-Microsoft Dynamics 365 Commerce offers an out-of-box integration for Google Pay when using the Adyen payment gateway service. Google Pay is a digital wallet payment method using a Google Pay merchant account in coordination with the Adyen payment service. When configured, the Google Pay button is a selectable payment method as part of online order checkout. When users select **Google Pay** from a supported browser or device, they are directed to complete their payment directly with the Google Pay service and then are returned to the online storefront for order completion. Using Google Pay with the express checkout module in Commerce, users can utilize their payment account information to pre-fill the checkout form and get through the checkout process faster. Commerce includes a Payment Express module to allow for express checkout behavior. The Payment Express module can be used in a Fragment and included in the checkout or cart page. The **Dynamics 365 Payment Connector for Google Pay** connector reference is used in addition to the **Dynamics 365 Payment Connector for Adyen** to enable both the Payment Express or regular checkout options when PayPal is configured. Google Pay can also be configured to use in store with Adyen payment terminals and the Commerce point-of-sale.
+Microsoft Dynamics 365 Commerce offers an out-of-box integration for Google Pay when using the Adyen payment gateway service. Google Pay is a digital wallet payment method using a Google Pay merchant account in coordination with the Adyen payment service. When configured, the Google Pay button is a selectable payment method as part of online order checkout. When users select **Google Pay** from a supported browser or device, they're directed to complete their payment directly with the Google Pay service and then are returned to the online storefront for order completion. Using Google Pay with the express checkout module in Commerce, users can utilize their payment account information to pre-fill the checkout form and get through the checkout process faster. Commerce includes a Payment Express module to allow for express checkout behavior. The Payment Express module can be used in a Fragment and included in the checkout or cart page. The **Dynamics 365 Payment Connector for Google Pay** connector reference is used in addition to the **Dynamics 365 Payment Connector for Adyen** to enable both the Payment Express or regular checkout options when PayPal is configured. Google Pay can also be configured to use in store with Adyen payment terminals and the Commerce point-of-sale.
 
 ## Prerequisites
 
@@ -48,7 +48,7 @@ Google Pay is a digital wallet payment method. Set up payment mapping for Google
   - Type = Wallet
   - Issuer = Google
 - Select the **Processor mapping** menu to bring up the Processor payment mapping methods dialogue
-- In the **Unmapped Processor Payment Methods** center column, you will see payment methods supported listed against each of the Connectors available (Adyen, PayPal, Google). 
+- In the **Unmapped Processor Payment Methods** center column, you'll see payment methods supported listed against each of the Connectors available (Adyen, PayPal, Google). 
 - Map any of the supported payment methods you wish against both the **Dynamics 365 Payment Connector for Adyen** (for use at POS) and the **Dynamics 365 Payment Connector for Google Pay** (for online channel) connectors. Select each mapping line to support in the **Unmapped Processor Payment Methods** column and select **Add** to move the selections to the **Mapped Processor Payment Methods** column to map them. 
 - Select **OK**, and select **Save** back in the **Card Types** page. 
 
@@ -61,13 +61,13 @@ Once the Adyen Connector is configured, click on **Add** to add the **Dynamics 3
 | Field                                  | Description                                                  | Required | Automatically set | Sample value         |
 | -------------------------------------- | ------------------------------------------------------------ | -------- | ----------------- | -------------------- |
 | Assembly Name                          | Auto populated name of the assembly for the Dynamics 365 Payment Connector for GooglePay | Yes      | Yes               | *Binary name*        |
-| Service account ID                     | Auto populated unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes (such as invoicing) should use. | Yes      | Yes               | *Guid*               |
-| Google merchant ID (Optional for test) | Required for **Production** environments and optional for test environments, the Google Merchant ID assigned to your Google Merchant account.  (See https://pay.google.com/ for additional details). | Yes      | No                | *numeric Identifier* |
-| Merchant account ID                    | Enter the unique Adyen merchant identifier. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](adyen-connector-setup.md#sign-up-with-adyen) section. | Yes      | No                | *MerchantIdentifier* |
-| Cloud API Key                          | Enter the Adyen cloud API key. You can obtain this key by following the instructions on the [How to get the API key](https://docs.adyen.com/developers/user-management/how-to-get-the-api-key) page on the Adyen website. | Yes      | No                | *abcdefg*            |
-| Gateway environment                    | Enter the Adyen gateway environment to map to. The possible values are **Test** and **Live**. You should set this field to **Live** only for production devices and transactions. | Yes      | Yes               | *Live*               |
-| Supported Currencies                   | Enter the currencies that the connector should process. In card-present scenarios, Adyen can support additional currencies through [Dynamic Currency Conversion](https://www.adyen.com/pos-payments/dynamic-currency-conversion) after the transaction request is sent to the payment terminal. Contact Adyen support to get a list of supported currencies. | Yes      | Yes               | *USD;EUR*            |
-| Supported Tender Types                 | Enter the tender types that the connector should process.    | Yes      | Yes               | *GooglePay*          |
+| Service account ID                     | Auto populated unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes (such as invoicing) should use. | Yes      | Yes               | "GUID"               |
+| Google merchant ID (Optional for test) | Required for **Production** environments and optional for test environments, the Google Merchant ID assigned to your Google Merchant account.  (See https://pay.google.com/ for additional details). | Yes      | No                | *Numeric identifier* |
+| Merchant account ID                    | Enter the unique Adyen merchant identifier. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](adyen-connector-setup.md#sign-up-with-adyen) section. | Yes      | No                | *Merchant Identifier* |
+| Cloud API Key                          | Enter the Adyen cloud API key. You can obtain this key by following the instructions on the [How to get the API key](https://docs.adyen.com/developers/user-management/how-to-get-the-api-key) page on the Adyen website. | Yes      | No                | "abcdefg"            |
+| Gateway environment                    | Enter the Adyen gateway environment to map to. The possible values are **Test** and **Live**. You should set this field to **Live** only for production devices and transactions. | Yes      | Yes               | "Live"               |
+| Supported Currencies                   | Enter the currencies that the connector should process. In card-present scenarios, Adyen can support additional currencies through [Dynamic Currency Conversion](https://www.adyen.com/pos-payments/dynamic-currency-conversion) after the transaction request is sent to the payment terminal. Contact Adyen support to get a list of supported currencies. | Yes      | Yes               | "USD;EUR"            |
+| Supported Tender Types                 | Enter the tender types that the connector should process.    | Yes      | Yes               | "GooglePay"          |
 
 Once the merchant information has been filled, run the **1070** Channel configuration distribution schedule.
 
@@ -80,7 +80,7 @@ The previous Card Types > Processor mapping maps for the Adyen connector will ca
 
 ### Using the Payment Express module with Google Pay
 
-The **Payment Express** module works with supporting payment methods to offer site customers the option to checkout faster using their payment service account information in the checkout process. The module references the configured connector button and returns the user-selected order details (addresses, contact information, and paying against the underlying payment method selected) to pre-populate the checkout form.
+The **Payment Express** module works with supporting payment methods to offer site customers the option to check out faster using their payment service account information in the checkout process. The module references the configured connector button and returns the user-selected order details (addresses, contact information, and paying against the underlying payment method selected) to pre-populate the checkout form.
 
 With Google Pay, selecting the Google Pay button in the Payment Express section will launch the Google Pay payment iFrame window. A user will log in to their Google account and can use their account shipping address, billing address, email, and Google Pay payment method of choice to pay for the transaction.
 
@@ -142,7 +142,7 @@ To set up the Payment Express fragment with Google Pay in the Checkout page, fol
 3. In the **Main slot**, select the ellipsis (...), and then select **Add Module.**
 4. In the **Add Module** dialogue box, add the **Container** module.
 5. Note: If a Container already exists for your site with the **checkout** fragment- to have the Payment Express section  render above the normal checkout container, position it above the existing checkout container within the **Main slot** section. You can move container positions by selecting their ellipsis (...), and choosing the "Move up" or "Move down" options.
-5. In the **Container** module properties, it is recommended to use the following property settings:
+5. In the **Container** module properties, it's recommended to use the following property settings:
 	- **Container Layout**: Stacked
 	- **Width**: Fill container
 	- **Children Shown**: Three (this figure depends on the number of intended payment express modules and text block based on the visual arrangement desired)
@@ -170,16 +170,16 @@ Users can include up to three supported **Payment Express** modules in the cart 
 
 To set up Google Pay as a normal payment option in the **Payment Method** section of the checkout page, follow the steps below. This is for payment-only, non-express functionality (the checkout form will be filled out by the user and returning from the Google Pay payment page will only ready the checkout for payment by Google Pay- no Google account information will be used to overwrite the filled checkout details).
 
-1. In site builder, if using the Checkout fragment, follow the steps similar to the [payment module](../payment-module.md) article. This assumes a Checkout fragment has been created with included Pickup information, Shipping address, Delivery options, Contact information, Terms and Conditions (optional), and a section for Checkout elements. The store starter kit checkout module ships with the **Checkout section container** having a Text block for user notice instructions, the Loyalty points, Gift Card, and payment modules. 
+1. In site builder, if using the Checkout fragment, follow the steps similar to the [payment module](../payment-module.md) article. This assumes a Checkout fragment has been created with included Pickup information, Shipping address, Delivery options, Contact information, Terms and Conditions (optional), and a section for Checkout elements. The module library checkout module ships with the **Checkout section container** having a text block for user notice instructions, the loyalty points, gift card, and payment modules. 
 2. While in **Edit** mode in the Checkout fragment, select the **Checkout section container** and click **Add module**.
 3. Choose the **Payment** module from the Select modules dialogue and click **OK**.
 4. You can name this module for site builder user clarity by selecting the pencil in the Properties window next to the module's name reference, renaming the module (example: "Google Pay"), and selecting the check mark to save this update. The module will now appear in the tree view with this friendly name for future reference.
 5. Change the value of the **Height of the iFrame** in the module properties panel to meet your desired design height in pixels (example: "75"). 
 6. Under **Supported tender types**, enter "GooglePay" to match the headquarters configuration for the Google Pay connector.
 7. Leave **Is primary payment** blank (this is typically checked for the Adyen checkout module).
-8. The **Payment style override** is not supported for the Google Pay configuration.
+8. The **Payment style override** isn't supported for the Google Pay configuration.
 9. Select the **Use connector id**. This property must be selected when using multiple payment connectors on the page (example: Adyen main, PayPal).
-10. Position the module where desired with other payment modules by selecting the elipsis (...) next to the module in the module tree outline, and selecting either **Move up** or **Move down**.
+10. Position the module where desired with other payment modules by selecting the ellipsis ("**...**") next to the module in the module tree outline, and selecting either **Move up** or **Move down**.
 11. Select **Save** to save your changes.
 12. Click on **Finish editing** to complete editing the page, and **Publish** to publish your changes live.
 
