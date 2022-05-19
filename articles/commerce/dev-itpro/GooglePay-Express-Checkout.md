@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Set up Google Pay with Adyen in Dynamics 365 Commerce
-description: This topic provides an overview of the Microsoft Dynamics 365 Payment support for Google Pay with Adyen, including connector setup and using express checkout module for faster checkout capabilities.
+title: Configure Google Pay with Adyen
+description: This topic describes how to configure Google Pay with Adyen in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 05/17/2022
+ms.date: 05/20/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -14,15 +14,17 @@ ms.search.validFrom: 2017-06-20
 
 ---
 
-# Set up Google Pay with Adyen in Dynamics 365 Commerce
+# Configure Google Pay with Adyen
 
-This topic provides an overview of the Microsoft Dynamics 365 payments support for PayPal Cart Checkout capability. It reviews additions of Payment Express modules for faster checkout capabilities, and setup of PayPal Cart Checkout with a Commerce site page.
+[!include [banner](includes/banner.md)]
+
+This topic describes how to configure Google Pay with Adyen in Microsoft Dynamics 365 Commerce.
 
 ## Key terms
 
 | Term | Description |
 |---|---|
-| Google Pay | Also known as the Google Pay "button", Google Pay is a wallet payment offering supported through the Adyen connector, allowing the customer experience and integration supported by the Dynamic's Google Pay Connector. |
+| Google Pay | Also known as the Google Pay "button", Google Pay is a wallet payment offering supported via the Adyen connector, allowing the customer experience and integration supported by the Dynamics Google Pay Connector. |
 | Wallet | A payment type that doesn't include traditional payment characteristics, such as the BIN range and expiration date, which are used to differentiate among credit and debit card types. |
 |Payment Express |Added module in Dynamics 365 Commerce to support faster checkout behavior with supported payment methods, with this article addressing PayPal|
 
