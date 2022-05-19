@@ -88,6 +88,7 @@ The following list describes the prerequisites for setting up the Microsoft Powe
     - Dynamics 365 Service Admin
     - Power Platform Admin
 
+
     > [!NOTE]
     > The preceding roles might provide more permissions than the Finance and Operations apps environment administrator account requires. Therefore, a more limited role for this integration will eventually be added to Azure AD. The new role won't require any of the preceding roles. If you want to keep the administrator that has the least privileges, you can temporarily grant one of the preceding roles. Then, after the Microsoft Power Platform integration is set up, remove that role.
 
