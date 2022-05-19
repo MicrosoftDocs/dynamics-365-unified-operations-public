@@ -94,7 +94,7 @@ Lazy loading defers the initialization of resources until they are needed and ca
 
 Modules that show images, such as the [content block module](../add-hero-module.md), generally don't load the images until they are needed. This "lazy loading" behavior might cause a perception of performance issues, because an image isn't loaded when the user is ready to view it. For example, when a user selects the "next" arrow in a carousel module, the next image might take a second or two to be loaded if lazy loading is enabled. Therefore, these types of modules that show images have a configuration setting that lets you disable lazy loading. Images are then loaded before they are needed, and users might perceive improved performance in some scenarios.
 
-The following illustration image shows an example where the **Disable Lazy Load** option is selected for a content block module in Commerce site builder.
+The following illustration image shows an example where the **Disable Lazy Load** option is enabled for a content block module in Commerce site builder.
 
 ![Disable lazy load option selected in Commerce site builder.](media/best-practices-dev-1.png)
 
@@ -109,7 +109,7 @@ To enable lazy loading for a module, in site builder ensure that the **Render mo
 !["Render module client side" option in a module's site builder properties pane](media/best-practices-dev-3.png)
 
 > [!NOTE]
-> Lazy loading for a product collection module is handled differently, see the next section for details.
+> Lazy loading for product collection modules is handled differently, see the next section for details.
 
 ### Enable lazy loading for a product collection module
 
