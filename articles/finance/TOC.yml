@@ -2098,6 +2098,8 @@
           href: localizations/tasks/create-post-free-text-invoice-public-sector-customer.md
         - name: Create and post a project invoice for a public sector customer
           href: localizations/tasks/create-post-project-invoice-public-sector-customer.md
+        - name: EU sales list
+          href: localizations/emea-dnk-eu-sales-list.md
         - name: Import OIOUBL electronic invoicing configurations
           href: localizations/tasks/import-oioubl-electronic-invoicing-configurations.md
         - name: Post a free text invoice with a payment slip
