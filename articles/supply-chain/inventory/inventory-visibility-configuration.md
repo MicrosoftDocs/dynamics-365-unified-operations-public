@@ -55,7 +55,7 @@ The Inventory Visibility Add-in adds several new features to your Power Apps ins
 
 If you don't know the correct Inventory Visibility service endpoint, open the **Configuration** page in Power Apps, and then select **Show Service Endpoint** in the upper-right corner. The page will show the correct service endpoint.
 
-## Data source configuration
+## <a name="data-source-configuration"></a>Data source configuration
 
 Each data source represents a system that your data comes from. Example data source names include `fno` (which stands for "Dynamics 365 Finance and Operations apps") and `pos` (which stands for "point of sale"). By default, Supply Chain Management is set up as a default data source (`fno`) in Inventory Visibility.
 
@@ -136,7 +136,7 @@ To add dimension mappings, follow these steps.
 
 For example, if your data source includes a product color dimension, you can map it to the `ColorId` base dimension to add a `ProductColor` custom dimension in the `exterchannel` data source. It's then mapped to the `ColorId` base dimension.
 
-### Physical measures
+### <a name="data-source-configuration-physical-measures"></a>Physical measures
 
 When a data source posts an inventory change to Inventory Visibility, it posts that change by using *physical measures*. Physical measures modify the quantity and reflect the inventory status. You can define your own physical measures, based on your requirements. Queries can be based on the physical measures.
 
