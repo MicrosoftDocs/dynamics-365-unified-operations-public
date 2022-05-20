@@ -196,7 +196,7 @@ For general information about how to create a setup, postings, and transfer tran
 1.  Go to **Tax** \> **Declarations** \> **Foreign trade** \> **EU sales list**.
 2.  Verify that the grid on the **EU sales list** page includes one service line and one item line.
 
-![EUSL-lines](media/eusl_example.png)
+![EUSL-lines](media/EUSL_example.png)
 
 3.  Select a service line.
 4.  In the **Invoice date** field, enter **5/2/2021** (May 2, 2021).
