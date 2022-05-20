@@ -5,7 +5,7 @@
 title: Catalog picker module
 description: This topic covers catalog picker modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: ashishmsft
-ms.date: 05/17/2022
+ms.date: 05/20/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -28,13 +28,36 @@ The following example image shows an example of a catalog-picker module.
 
 To add a catalog picker module to your site in Commerce site builder, follow these steps.
 
-1. Create a page for 'Catalog-picker' 
-1. Provide details like page name, page URL etc.
-1. Choose template as 'General content' 
-1. Choose layout as 'Flexible layout' 
-1. Review and finish page creation wizard experience. 
-1. Next, go to page and click on 'Edit' 
-1. From the page structure, under 'Main slot' add 'Container' fragment and to that add 'Catalog-picker' module. Here you can define 'Heading' and 'Text' to showcase on the loading of this page. Upon completing your edits, make sure to 'Publish' your changes for 'Catalog-picker' page. 
+1. Go to **Pages**, and select **New** to create a new page.
+1. In the **Create a new page** dialog box, under **Page name**, enter **Catalog picker**. and then select **Next**.
+1. Under **Page URL**, enter a URL for the page, and then select **Next**.
+1. Under **Choose a template**, select **General content**, and then select **Next**.
+1. Under **Choose a layout**, select **Flexible layout**, and then select **Next**.
+1. Under **Review and finish**, review the page configuration. If you need to edit the page information, select **Back**. If the page information is correct, select **Create page**.
+1. In the **Main** slot of the new page, select the ellipsis (**...**), and then select **Add module**.
+1. In the **Select modules** dialog box, select the **Container** module, and then select **OK**.
+1. In the **Container** slot, select the ellipsis (**...**), and then select **Add module**.
+1. In the **Select modules** dialog box, select the **Catalog picker** module, and then select **OK**.
+1. In the **Catalog picker** properties pane, under **Heading**, select **Heading**.enter heading and 
+1. In the **Heading** dialog box, under **Heading text**, enter a heading for the catalog picker page.
+1. Under **Heading level**, select a heading level, and then select **OK**.
+1. Under **Rich text**, enter text that will appear at the top of the catalog picker page.
+1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
+1. Go to **Pages**, find and select your site's "My account" page, and then select **Edit**.
+1. Under the **Main** slot of the page, select the **Account generic tile** slot. 
+1. In the **Account generic tile** properties pane, under **Links**, select **Add action link**, and then select **Action link**.
+1. In the **Action link** dialog box, under **Link text**, enter link text for the link to your catalog picker page.
+1. Under **Link target**, select **Add a link**.
+1. On the **Add a link** flyout menu, select **Custom page**, and then select **Next**.
+1. Under **Name**, select your catalog picker page, select **Apply**, and then select **OK**.
+
+
+
+
+
+and the URL to your catalog picker page, and then select **OK**.
+
+
 
 Now, we will hook the entry to this page from My accounts page 
 
