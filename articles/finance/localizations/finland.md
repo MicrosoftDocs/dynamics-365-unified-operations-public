@@ -38,4 +38,9 @@ This topic contains information about the Finnish Intrastat report.
 
 - [Finnish Intrastat](emea-fin-intrastat.md)
 
+This topic contains information about the EU sales list for Finland.
+
+- [EU sales list for Finland](emea-fin-eu-sales-list.md)
+
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
