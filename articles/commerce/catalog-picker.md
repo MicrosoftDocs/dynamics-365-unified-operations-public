@@ -48,7 +48,7 @@ To add a catalog picker module to your site in Commerce site builder, follow the
 1. Under **Link target**, select **Add a link**.
 1. On the **Add a link** flyout menu, select **Custom page**, and then select **Next**.
 1. Under **Name**, select your catalog picker page, select **Apply**, and then select **OK**.
-1. Select **Save**, select **Finish editing** to check in the my account page, and then select **Publish** to publish it.
+1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
 1. Go to **Fragments**, find and select your site's header fragment, and then select **Edit**.
 1. Select the **Header** slot. 
 1. In the **Header** properties pane, under **My account links**, select **Add action link**, and then select **Action link**.
