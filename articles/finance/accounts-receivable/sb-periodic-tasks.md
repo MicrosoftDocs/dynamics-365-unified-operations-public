@@ -128,12 +128,12 @@ Use the **Mass termination** page to terminate billing schedule lines that are c
 
 If you're using revenue and expense deferrals, billing schedules where the **Termination date** field is set to **Adjust schedule** on the **All billing schedules** page are eligible for a refund.
 
-Billing schedules that use the multiple element allocation (MEA) functionality don't appear on this page. You can still terminate an individual billing schedule by using the termination functionality on the billing schedule.
+Billing schedules that use the multiple element allocation (MEA) functionality don't appear on the **Mass termination** page. You can still terminate an individual billing schedule by using the termination functionality on the billing schedule.
 
 > [!NOTE]
 > Billing schedule lines that are currently included in a **Generate invoice** batch aren't available for this process.
 
-For information about each field and the process, see Terminate billing schedules.
+For information about each field and the process, see [Terminate billing schedules](terminate-billing-schedules.md).
 
 ## Mass archive process
 
@@ -180,7 +180,7 @@ Use the **Mass stubbing** page to mark all selected billing schedule lines as bi
 
 Use the **Update completion date** page to update the completion date for specific milestone items for multiple billing schedules or users. You can also update the completion percentage for items on milestone templates that use the **Percent completed** method.
 
-1. Go to **Milestone processing**, and select **Update completion percentage**.
+1. On the **Update completion date** page, go to **Milestone processing**, and select **Update completion percentage**.
 2. In the **Percentage amount** field, enter the total percentage that has been completed.
 3. Select the item number that is related to the milestone template.
 4. On the **Records to include** FastTab, select **Filter** to select a specific **End user account**, **Billing schedule number**, or **Item numbers** value as a filter criterion.
