@@ -3,7 +3,7 @@
 # required metadata
 
 title: Catalog picker module
-description: This topic covers catalog picker modules and describes how to add them to sites in Microsoft Dynamics 365 Commerce.
+description: This topic covers catalog picker modules and describes how to add them to Microsoft Dynamics 365 Commerce business-to-business (B2B) e-commerce sites.
 author: ashishmsft
 ms.date: 05/20/2022
 ms.topic: article
@@ -18,9 +18,9 @@ ms.search.validFrom: 2022-04-21
 
 [!include [banner](includes/banner.md)]
 
-This topic covers catalog picker modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce. 
+This topic covers catalog picker modules and describes how to add them to Microsoft Dynamics 365 Commerce business-to-business (B2B) e-commerce sites. 
 
-A catalog picker module is a special container that is used to list all the catalogs that are available to a business-to-business (B2B) site user for shopping. 
+A catalog picker module is a special container that is used to list all the product catalogs that are available to B2B site users for shopping. Multiple catalogs are  currently only supported for B2B sites.  
 
 ## Add a catalog picker module to your site
 
