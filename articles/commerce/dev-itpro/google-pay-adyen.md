@@ -34,14 +34,13 @@ When using Google Pay with the express checkout module in Commerce, users have t
 
 ## Prerequisites
 
-Using Google Pay with Adyen in Commerce requires a Google merchant account. Please review the [Adyen documentation on Google Pay](https://docs.adyen.com/payment-methods/google-pay/), and Google's [Integration checklist](https://developers.google.com/pay/api/web/guides/test-and-deploy/integration-checklist) to set up your Google Merchant account.
+Using Google Pay with Adyen in Commerce requires a Google merchant account. For information on setting up your Google Merchant account, see the [Adyen documentation on Google Pay](https://docs.adyen.com/payment-methods/google-pay/) and Google's [Integration checklist](https://developers.google.com/pay/api/web/guides/test-and-deploy/integration-checklist).
 
-The Google Pay payment method must also be integrated with your Adyen account. Follow the integration link instructions on the [Adyen Google Pay](https://www.adyen.com/payment-methods/google-pay) site.
+The Google Pay payment method must also be integrated with your Adyen account. For integration link instructions, see [Adyen Google Pay](https://www.adyen.com/payment-methods/google-pay).
 
-Enable the enhanced wallet feature flag in Commerce headquarters. Go to **Workspaces \> Feature management** and search for the **Enhanced wallet support and payment improvements** feature. Select the feature, and then click **Enable**. After the feature has been enabled, run the **1110** distribution schedule to make the change available in all channels.
+You must also enable the enhanced wallet feature in Dynamics 365 Commerce headquarters. To do so, go to **Workspaces \> Feature management** and search for the **Enhanced wallet support and payment improvements** feature, select the feature, and then select **Enable**. After the feature has been enabled, run the **1110** distribution schedule to make the change available in all channels.
 
-
-## Map the Google Pay Payment Method
+## Map the Google Pay payment method
 
 Google Pay is a digital wallet payment method. Set up payment mapping for Google Pay as described in the [Wallet payment support](../wallets.md) article. 
 
@@ -58,7 +57,7 @@ Google Pay is a digital wallet payment method. Set up payment mapping for Google
 
 ## Configure a Commerce online store for Google Pay
 
-In Commerce Headquarters, navigate to the **Retail and Commerce \> Channels \> Online stores** and select your site's online store channel by clicking the channel's **Retail Channel Id**. In the **Set up** menu, drop down the **Payment accounts** section. If not already set up, add the **Dynamics 365 Payment Connector for Adyen** according to the directions described in the [Set up Dynamics 365 Payment Connector for Adyen](adyen-connector-setup.md) article. In most cases, the **Dynamics 365 Payment Connector for Adyen** must be listed as the first Connector for your channel (as the primary).  Then followed by other connectors to be used (the **Dynamics 365 Payment Connector for PayPal** and **Dynamics 365 Payment Connector for GooglePay**).
+In Commerce headquarters, navigate to the **Retail and Commerce \> Channels \> Online stores** and select your site's online store channel by clicking the channel's **Retail Channel Id**. In the **Set up** menu, drop down the **Payment accounts** section. If not already set up, add the **Dynamics 365 Payment Connector for Adyen** according to the directions described in the [Set up Dynamics 365 Payment Connector for Adyen](adyen-connector-setup.md) article. In most cases, the **Dynamics 365 Payment Connector for Adyen** must be listed as the first Connector for your channel (as the primary).  Then followed by other connectors to be used (the **Dynamics 365 Payment Connector for PayPal** and **Dynamics 365 Payment Connector for GooglePay**).
 
 Once the Adyen Connector is configured, click on **Add** to add the **Dynamics 365 Payment Connector for GooglePay**. Fill in the following merchant properties for the connector:
 
