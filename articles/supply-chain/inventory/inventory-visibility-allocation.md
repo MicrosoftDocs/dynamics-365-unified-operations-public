@@ -107,8 +107,6 @@ For example, if you use four group names and set them to \[`channel`, `customerG
 
 ### <a name="using-allocation-api"></a>Using the allocation API
 
-For detailed API information, visit the [Inventory Visibility Swagger page](https://inventoryservice.wus-il101.gateway.prod.island.powerapps.com/swagger/index.html).
-
 Currently, five allocation APIs are opened:
 
 - POST ​/api​/environment​/{environmentId}​/allocation​/allocate
@@ -327,3 +325,62 @@ When you want to consume a quantity of 3 and directly reserve this quantity, you
 ```
 
 In this request, notice that `iv.softreserved` has the value `Addition`, not `Subtraction`.
+
+#### Query
+
+Use the `Query` API to retrieve allocation related infomation for some products. You can use dimension filters and allocation group filters to narrow down the results. The dimensions must match exatcly the one you want to retrieve, for example, \[site=1, location=11\] will have non-related results compared with \[site=1, location=11, color=red\].
+
+```json
+{
+    "productId": "string",
+    "organizationId": "string",
+    "dimensions": {
+        "dimension1": "string",
+        "dimension2": "string",
+        "dimension3": "string"
+    },
+    "groups": {
+        "additionalProp1": "string",
+        "additionalProp2": "string",
+        "additionalProp3": "string"
+    },
+}
+```
+
+For example, use \[site=1, location=11, color=red\] and empty groups field to get all allocation records:
+
+```json
+{
+    "organizationId": "usmf",
+    "productId": "Bike",
+    "dimensions": {
+        "siteId": "1",
+        "locationId": "11",
+        "colorId": "red"
+    },
+    "groups": {
+        "channel": "Online",
+        "customerGroup": "VIP",
+        "region": "US"
+    },
+}
+```
+
+Use \[site=1, location=11, color=red\] and groups \[channel=Online, customerGroup=VIP, region=US\] to get allocation records for this group:
+
+```json
+{
+    "organizationId": "usmf",
+    "productId": "Bike",
+    "dimensions": {
+        "siteId": "1",
+        "locationId": "11",
+        "colorId": "red"
+    },
+    "groups": {
+        "channel": "Online",
+        "customerGroup": "VIP",
+        "region": "US"
+    },
+}
+```
