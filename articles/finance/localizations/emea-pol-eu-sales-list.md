@@ -90,7 +90,7 @@ For more information, see Download Electronic reporting configurations from Life
 
 1.  Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax authorities**.
 2.  Create a sales tax authority.
-3.  In the **Authority identification** field, enter a code.
+3.  In the **Authority identification** field, enter the code of the tax authority.
 
 ## Work with the EU sales list
 
