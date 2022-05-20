@@ -107,7 +107,7 @@ For example, if you use four group names and set them to \[`channel`, `customerG
 
 ### Allcoation using Tips
 
-- For every product, the allocation function should use in the same dimension level according to the product index hierarchy you set in the [product index hierarchy configuration](inventory-visibility-configuration.md#index-configuration). For example, index hierarchy is Site, Location, Corlor, Size. If you allocate some quantity for one product in the Site, Location, Color Level. The Next time you use to allocate, should also at Site, Location, Color lever, if you use Site, Location, Corlor, Size level or Site, Location level, the data will not be consistent.
+- For every product, the allocation function should use in the same dimension level according to the product index hierarchy you set in the [product index hierarchy configuration](inventory-visibility-configuration.md#index-configuration). For example, index hierarchy is Site, Location, Corlor, Size. If you allocate some quantity for one product in the Site, Location, Color level. The Next time you use to allocate, should also at Site, Location, Color level, if you use Site, Location, Color, Size level or Site, Location level, the data will not be consistent.
 - Allocation group name changing will not impact data saved in the service.
 - Allocation should happen after the product has the positive on hand quantity.
 
@@ -289,7 +289,9 @@ Now, three bikes are sold, and they are taken from the allocation pool. To regis
 ```
 
 After this call, the allocated quantity for the product will be reduced by 3. In addition, Inventory Visibility will generate an on-hand change event where `pos.inbound` = *-3*. Alternatively, you can keep the `pos.inbound` value as it is and just consume the allocated quantity. However, in this case, you must either create another physical measure to keep the consumed quantities or use the predefined measure `@iv.@consumed`.
+
 In this request, notice that the physical measure you use in the comsume reqeust body should use the opposite modifer type(Addition or Subtraction), compared with the modifier type used in the calculated measure. So in this consume body,  `iv.inbound`  has the value `Subtraction`, not `Addition`.
+
 `fno` data source can not be used in the consume body as we always claimed that Inventory Visibility can't change any data for the `fno` data source. The data flow is one-way, which means that all quantity changes for the `fno` data source must come from your Supply Chain Management environment.
 
 #### <a name="consume-to-soft-reserved"></a>Consume as a soft reservation
