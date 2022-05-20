@@ -1,14 +1,43 @@
+---
+# required metadata
+
+title: EU Sales list for Belgium
+description: This topic provides information about the European Union (EU) sales list report for Belgium.
+author: AKroshkina
+ms.date: 20/05/2022
+ms.topic: article
+ms.prod: 
+ms.technology: 
+
+# optional metadata
+
+#ms.search.form:
+audience: IT Pro, Application User
+# ms.devlang: 
+ms.reviewer: kfend
+# ms.suite: 
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: 
+# ms.search.industry: 
+ms.author: anasyash
+ms.dyn365.ops.version: 
+ms.search.validFrom: 
+---
+
+# EU sales list for Belgium
+
 This topic provides information about the European Union (EU) sales list report for Belgium. The Belgian EU sales list report contains information about the sale of goods and services for reporting in XML format.
 
 The following fields are included in the Belgian EU sales list report:
 
 -   **EU sales list header:**
--   Company's enterprise ID
+    -   Company's enterprise ID
     -   Company name and primary address
     -   Company's primary email and telephone number
     -   Reporting period
 -   **EU sales list lines:**
--   Customer VAT ID
+    -   Customer VAT ID
     -   The total amount of items
     -   The total amount of services
     -   Total amount of the triangular trade
@@ -44,7 +73,7 @@ Create a registration type, and assign it to the **VAT ID** registration categor
 ### Import Electronic reporting configurations
 
 -   In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index), import the latest versions of the following Electronic reporting (ER) configurations for the EU sales list:
--   EU Sales list model
+    -   EU Sales list model
     -   EU Sales list by columns report
     -   EU Sales list by rows report
     -   EU Sales list (BE)
@@ -63,10 +92,10 @@ For more information, see Download Electronic reporting configurations from Life
 3.  On the **Electronic reporting** FastTab, in the **File format mapping** field, select **EU Sales list (BE)**.
 4.  In the **Report format mapping** field, select **EU Sales list by rows report** or **EU Sales list by columns report**.
 5.  On the **Country/region properties** tab, select **New**, and specify the following information:
--   In the **Country/region** column, select **BEL**.
+    -   In the **Country/region** column, select **BEL**.
     -   In the **Country/region type** column, select **Domestic**.
-1.  List all the countries or regions that your company does business with. For each country that is part of the EU, in the **Country/region type** field, select **EU** to show trade with those countries on the **EU sales list** page.
-2.  On the **Number sequences** FastTab, for **EU sales list ID** reference, verify that the **Number sequence code** field is set (that is, it isn't blank).
+6.  List all the countries or regions that your company does business with. For each country that is part of the EU, in the **Country/region type** field, select **EU** to show trade with those countries on the **EU sales list** page.
+7.  On the **Number sequences** FastTab, for **EU sales list ID** reference, verify that the **Number sequence code** field is set (that is, it isn't blank).
 
 ## Work with the EU sales list
 
@@ -95,7 +124,7 @@ For general information about the types of transactions that are included in the
 | Correction                         | Set this option to **Yes** to include corrective lines on reports.                                                                                                                                                                                             |
 | Replaced EU sales list declaration | Enter the reference ID of the previous EU sales list declaration that is being replaced. If this field is set when the .xml file for the report is created, the reference ID that you enter will appear in the **Replaced intra listing** field on the report. |
 
-1.  Select **OK**, and review the generated reports.
+3.  Select **OK**, and review the generated reports.
 
 ## Example
 
@@ -117,9 +146,9 @@ For general information about the types of transactions that are included in the
 | City                | Gorod           |
 | Primary             | Yes             |
 
-1.  Select **OK**.
-2.  On the **Contact information** FastTab, select **Add**.
-3.  Create the email address contoso@contoso.com and the telephone number **+49 123 456 789**, and mark them as primary.
+6.  Select **OK**.
+7.  On the **Contact information** FastTab, select **Add**.
+8.  Create the email address contoso@contoso.com and the telephone number **+49 123 456 789**, and mark them as primary.
 
 ### Set up enterprise IDs
 
@@ -169,12 +198,12 @@ For general information about how to create a setup, postings, and transfer tran
 
 ![Graphical user interface, text, application, email Description automatically generated](media/ec0289b4ca44c4c386d789860ac8afe6.png)
 
-1.  Select a service line.
-2.  In the **Invoice date** field, enter **5/2/2021** (May 2, 2021).
-3.  Switch to **Correction** view, and set the **Corrected** option to **Yes**. Then, in the **Declaration type** field, select **Quarter**.
-4.  On the Action Pane, select **Reporting**.
-5.  In the **EU sales list reporting** dialog box, on the **Parameters** FastTab, set the following fields:
--   In the **Reporting period** field, select **Monthly**.
+3.  Select a service line.
+4.  In the **Invoice date** field, enter **5/2/2021** (May 2, 2021).
+5.  Switch to **Correction** view, and set the **Corrected** option to **Yes**. Then, in the **Declaration type** field, select **Quarter**.
+6.  On the Action Pane, select **Reporting**.
+7.  In the **EU sales list reporting** dialog box, on the **Parameters** FastTab, set the following fields:
+    -   In the **Reporting period** field, select **Monthly**.
     -   In the **From date** field, select **8/1/2021** (August 1, 2021).
     -   Set the **Generate file** option to **Yes**.
     -   In the **File name** field, enter **BE-001F**.
@@ -183,7 +212,7 @@ For general information about how to create a setup, postings, and transfer tran
     -   Set the **Official declaration** option to **Yes**.
     -   Set the **Correction** option to **Yes**.
     -   In the **Replaced EU sales list declaration** field, enter **003**.
-1.  Select **OK,** and review the report in XML format that is generated. The following tables show the values in the example report.
+8.  Select **OK,** and review the report in XML format that is generated. The following tables show the values in the example report.
 
 **EU sales list header**
 
@@ -217,6 +246,6 @@ For general information about how to create a setup, postings, and transfer tran
 | Quarter **Note:** Depending on the corrective period type, this field might be named **Month** instead of **Quarter**. |           | 2              | The corrective quarter or month.                                                                            |
 | Year                                                                                                                   |           | 2021           | The corrective year.                                                                                        |
 
-1.  Review the report in Excel format that is generated.
+9.  Review the report in Excel format that is generated.
 
 ![Graphical user interface, text, application Description automatically generated](media/0812b6a358f58983a415db6ff5de783b.png)
