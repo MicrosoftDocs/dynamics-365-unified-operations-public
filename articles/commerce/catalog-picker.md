@@ -3,7 +3,7 @@
 # required metadata
 
 title: Catalog picker module
-description: This topic covers catalog picker modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+description: This topic covers catalog picker modules and describes how to add them to sites in Microsoft Dynamics 365 Commerce.
 author: ashishmsft
 ms.date: 05/20/2022
 ms.topic: article
@@ -21,8 +21,6 @@ ms.search.validFrom: 2022-04-21
 This topic covers catalog picker modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce. 
 
 A catalog picker module is a special container that is used to list all the catalogs that are available to a business-to-business (B2B) site user for shopping. 
-
-The following example image shows an example of a catalog-picker module. 
 
 ## Add a catalog picker module to your site
 
@@ -50,19 +48,15 @@ To add a catalog picker module to your site in Commerce site builder, follow the
 1. Under **Link target**, select **Add a link**.
 1. On the **Add a link** flyout menu, select **Custom page**, and then select **Next**.
 1. Under **Name**, select your catalog picker page, select **Apply**, and then select **OK**.
-
-
-
-
-
-and the URL to your catalog picker page, and then select **OK**.
-
-
-
-Now, we will hook the entry to this page from My accounts page 
-
-1. Locate your 'My accounts' page and add a link to this 'Catalog-picker' page as shown below
-1. Also, from the header fragment, add a link to 'My catalogs' and associate the 'view page' to 'catalog-picker' page. 
+1. Select **Save**, select **Finish editing** to check in the my account page, and then select **Publish** to publish it.
+1. Go to **Fragments**, find and select your site's header fragment, and then select **Edit**.
+1. Select the **Header** slot. 
+1. In the **Header** properties pane, under **My account links**, select **Add action link**, and then select **Action link**.
+1. In the **Action link** dialog box, under **Link text**, enter link text for the link to your catalog picker page.
+1. Under **Link target**, select **Add a link**.
+1. On the **Add a link** flyout menu, select **Custom page**, and then select **Next**.
+1. Under **Name**, select your catalog picker page, select **Apply**, and then select **OK**.
+1. Select **Save**, select **Finish editing** to check in the header fragment, and then select **Publish** to publish it.
 
 ## Additional resources 
 
@@ -71,3 +65,7 @@ Now, we will hook the entry to this page from My accounts page
 [Extensibility impact of Commerce catalogs for B2B customizations](catalogs-b2b-sites-dev.md)
 
 [Commerce catalogs for B2B FAQ](catalogs-b2b-sites-FAQ.md)
+
+[Account management pages and modules](account-management.md)
+
+[Header module](author-header-module.md)
