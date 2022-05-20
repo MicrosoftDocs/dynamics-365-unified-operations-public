@@ -3242,6 +3242,8 @@
           href: localizations/emea-pol-correction-notes.md
         - name: Duplicate sales invoice numbering
           href: localizations/emea-pol-sales-invoice-duplicates-numbering.md
+        - name: EU sales list
+          href: localizations/emea-pol-eu-sales-list.md
         - name: Fixed asset depreciation
           href: localizations/emea-pol-fixed-assets-depreciation.md
         - name: Fixed asset disposal functionality extension
