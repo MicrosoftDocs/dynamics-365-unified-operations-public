@@ -1,9 +1,38 @@
+---
+# required metadata
+
+title: EU Sales list for Denmark
+description: This topic provides information about the European Union (EU) sales list report for Denmark.
+author: AKroshkina
+ms.date: 20/05/2022
+ms.topic: article
+ms.prod: 
+ms.technology: 
+
+# optional metadata
+
+#ms.search.form:
+audience: IT Pro, Application User
+# ms.devlang: 
+ms.reviewer: kfend
+# ms.suite: 
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: 
+# ms.search.industry: 
+ms.author: anasyash
+ms.dyn365.ops.version: 
+ms.search.validFrom: 
+---
+
+# EU Sales list for Denmark
+
 This topic provides information about the European Union (EU) sales list report for Denmark. The Danish EU sales list report contains information about the sale of goods and services for reporting in text format. The following fields are included on the Danish EU sales list report:
 
 -   **EU sales list header:**
--   Company's VAT ID without country/region code
+    -   Company's VAT ID without country/region code
 -   **EU sales list lines:**
--   Dispatch ID
+    -   Dispatch ID
     -   The last day of the selected period
     -   Company's VAT ID without country/region code
     -   Customer VAT ID
@@ -11,7 +40,7 @@ This topic provides information about the European Union (EU) sales list report 
     -   The total amount of services
     -   Total amount of the triangular trade
 -   **EU sales list footer:**
--   Total amount
+    -   Total amount
     -   Number of EU sales list lines
 
 ## Setup
@@ -36,7 +65,7 @@ Create a registration type, and assign it to the **VAT ID** registration categor
 ### Import Electronic reporting configurations
 
 -   In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index), import the latest versions of the following Electronic reporting (ER) configurations for the EU sales list:
--   EU Sales list model
+    -   EU Sales list model
     -   EU Sales list by columns report
     -   EU Sales list by rows report
     -   EU Sales list (DK)
@@ -50,9 +79,9 @@ For more information, see Download Electronic reporting configurations from Life
 3.  On the **Electronic reporting** FastTab, in the **File format mapping** field, select **EU Sales list (DK)**.
 4.  In the **Report format mapping** field, select **EU Sales list by rows report** or **EU Sales list by columns report**.
 5.  On the **Country/region properties** tab, select **New**, and specify the following information:
--   In the **Country/region** column, select **DNK**.
+    -   In the **Country/region** column, select **DNK**.
     -   In the **Country/region type** column, select **Domestic**.
-1.  List all the countries or regions that your company does business with. For each country that is part of the EU, in the **Country/region type** field, select **EU**.
+6.  List all the countries or regions that your company does business with. For each country that is part of the EU, in the **Country/region type** field, select **EU**.
 
 ## Work with the EU sales list
 
@@ -74,7 +103,7 @@ For general information about the types of transactions that are included in the
 | Generate report  | Set this option to **Yes** to generate an .xlsx file for your EU sales list report. |
 | Report file name | Enter the name of the .xlsx file.                                                   |
 
-1.  Select **OK**, and review the generated reports.
+5.  Select **OK**, and review the generated reports.
 
 ## Example
 
@@ -85,9 +114,9 @@ For information about how to create a general setup, create postings, and transf
 1.  Go to **Tax** \> **Declarations** \> **Foreign trade** \> **EU sales list**.
 2.  On the Action Pane, select **Reporting**.
 3.  In the **EU sales list reporting** dialog box, on the **Parameters** FastTab, set the following fields:
--   In the **Reporting period** field, select **Monthly**.
+    -   In the **Reporting period** field, select **Monthly**.
     -   In the **From date** field, select **8/1/2021** (August 1, 2021).
-1.  Select **OK**, and review the report in text format that is generated. The following tables show the values on the example report.
+4.  Select **OK**, and review the report in text format that is generated. The following tables show the values on the example report.
 
 **EU sales list header**
 
@@ -119,6 +148,6 @@ For information about how to create a general setup, create postings, and transf
 | Number of EU sales list lines | 2     |
 | Total amount                  | 360   |
 
-1.  Review the report in Excel format that is generated.
+5.  Review the report in Excel format that is generated.
 
-![Text Description automatically generated with medium confidence](media/d91336676db675cb3ed2e604d9fdac17.png)
+![eusl Denmark](media/EUSL-dnk.png)
