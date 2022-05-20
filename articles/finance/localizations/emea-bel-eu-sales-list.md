@@ -254,4 +254,3 @@ For general information about how to create a setup, postings, and transfer tran
 
     ![Generated EUSL report in Excel.](media/EUSL-bel.png)
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
