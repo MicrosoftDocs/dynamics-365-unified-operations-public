@@ -1781,7 +1781,9 @@
         - name: Create and transfer transactions to the BLWI
           href: localizations/tasks/be-00011-create-transfer-blwi.md
         - name: Export ledger transactions
-          href: localizations/emea-bel-export-ledger-transactions.md          
+          href: localizations/emea-bel-export-ledger-transactions.md  
+        - name: EU sales list
+          href: localizations/emea-bel-eu-sales-list.md    
         - name: INTERVAT tax declaration
           href: localizations/emea-bel-intervat-tax-declaration.md
         - name: Reconciliation reports
