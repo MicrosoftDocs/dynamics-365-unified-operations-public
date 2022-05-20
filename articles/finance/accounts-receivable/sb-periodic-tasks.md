@@ -133,7 +133,7 @@ Billing schedules that use the multiple element allocation (MEA) functionality d
 > [!NOTE]
 > Billing schedule lines that are currently included in a **Generate invoice** batch aren't available for this process.
 
-For information about each field and the process, see [Terminate billing schedules](terminate-billing-schedule).
+For information about each field and the process, see [Terminate billing schedules](terminate-billing-schedule.md).
 
 ## Mass archive process
 
