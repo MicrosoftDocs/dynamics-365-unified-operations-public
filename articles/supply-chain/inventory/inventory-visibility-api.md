@@ -40,13 +40,18 @@ The following table lists the APIs that are currently available:
 | /api/environment/{environmentId}/onhand/changeschedule/bulk | Post | [Create multiple scheduled on-hand changes](inventory-visibility-available-to-promise.md) |
 | /api/environment/{environmentId}/onhand/indexquery | Post | [Query by using the post method](#query-with-post-method) |
 | /api/environment/{environmentId}/onhand | Get | [Query by using the get method](#query-with-get-method) |
+| /api/environment/{environmentId}/allocation​/allocate | Post | [Create one allocate event](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation​/unallocate | Post | [Create one unallocate event](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation​/reallocate | Post | [Create one reallocate event](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation​/consume | Post | [Create one consume event](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation​/query | Post | [Query allocation result](inventory-visibility-allocation.md#using-allocation-api) |
 
 > [!NOTE]
 > The {environmentId} part of the path is the environment ID in Microsoft Dynamics Lifecycle Services (LCS).
 > 
 > The bulk API can return a maximum of 512 records for each request.
 
-Microsoft has provided an out-of-box *Postman* request collection. You can import this collection into your *Postman* software by using the following shared link: <https://www.getpostman.com/collections/90bd57f36a789e1f8d4c>.
+Microsoft has provided an out-of-box *Postman* request collection. You can import this collection into your *Postman* software by using the following shared link: <https://www.getpostman.com/collections/ad8a1322f953f88d9a55>.
 
 ## Find the endpoint according to your Lifecycle Services environment
 
@@ -576,5 +581,9 @@ Here is a sample get URL. This get request is exactly the same as the post sampl
 ## Available to promise
 
 You can set up Inventory Visibility to let you schedule future on-hand changes and calculate ATP quantities. ATP is the quantity of an item that is available and can be promised to a customer in the next period. Use of the ATP calculation can greatly increase your order fulfillment capability. For information about how to enable this feature, and how to interact with Inventory Visibility through its API after the feature is enabled, see [Inventory Visibility on-hand change schedules and available to promise](inventory-visibility-available-to-promise.md#api-urls).
+
+## Allocation
+
+Allocattion related APIs are located in [Inventory Visibility allocation](inventory-visibility-allocation.md#using-allocation-api).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
