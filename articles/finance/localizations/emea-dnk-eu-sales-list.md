@@ -47,7 +47,7 @@ This topic provides information about the European Union (EU) sales list report 
 
 ## Setup
 
-For general setup information, see [EU Sales list reporting](emea-eu-sales-list#prerequisites.md).
+For general setup information, see [EU Sales list reporting](emea-eu-sales-list.md#prerequisites).
 
 ### Set up information about the company
 
@@ -73,7 +73,7 @@ Create a registration type, and assign it to the **VAT ID** registration categor
     - EU Sales list by rows report
     - EU Sales list (DK)
 
-For more information, see [Download Electronic reporting configurations from Lifecycle Services](../..fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 ### Set up foreign trade parameters
 
