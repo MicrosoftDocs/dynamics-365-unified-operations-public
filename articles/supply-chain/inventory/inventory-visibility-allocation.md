@@ -89,13 +89,13 @@ Here are the initial calculated measures:
 
 - `@iv`
 
-    - `@available_to_allocate` = `??` – `??` – `@allocated`
+    - `@iv.@available_to_allocate` = `??` – `??` – `@iv.@allocated`
 
 ### Add other physical measures to the available-to-allocate calculated measure
 
-To use allocation, you must set up the available-to-allocate calculated measure (`@iv`.`@available_to_allocate`). For example, you have the `fno` data source and the `onordered` measure, and you want to do allocation for this measure. In this case, `@iv.@available_to_allocate` should contain `fno.onordered` in the formula. Here is an example:
+To use allocation, you must set up the available-to-allocate calculated measure (`@iv`.`@available_to_allocate`). For example, you have `fno` data source and the `onordered` measure, the `pos` data source and the `inbound` measure, and you want to do allocation on the on hand for the sum of `fno.onordered` and `pos.inbound`. In this case, `@iv.@available_to_allocate` should contain `pos.inbound` and `fno.onordered` in the formula. Here is an example:
 
-`@iv.@available_to_allocate` = `fno.onordered` – `@allocated`
+`@iv.@available_to_allocate` = `fno.onordered` + `pos.inbound` – `@iv.@allocated`
 
 ### Change the allocation group name
 
@@ -105,9 +105,13 @@ You set the group names on the **Inventory Visibility Power App Configuration** 
 
 For example, if you use four group names and set them to \[`channel`, `customerGroup`, `region`, `orderType`\], these names will be valid for allocation-related requests when you call the configuration update API.
 
-### <a name="using-allocation-api"></a>Using the allocation API
+### Allcoation using Tips
 
-For detailed API information, visit the [Inventory Visibility Swagger page](https://inventoryservice.wus-il101.gateway.prod.island.powerapps.com/swagger/index.html).
+- For every product, the allocation function should use in the same dimension level according to the product index hierarchy you set in the [product index hierarchy configuration](inventory-visibility-configuration.md#index-configuration). For example, index hierarchy is Site, Location, Corlor, Size. If you allocate some quantity for one product in the Site, Location, Color Level. The Next time you use to allocate, should also at Site, Location, Color lever, if you use Site, Location, Corlor, Size level or Site, Location level, the data will not be consistent.
+- Allocation group name changing will not impact data saved in the service.
+- Allocation should happen after the product has the positive on hand quantity.
+
+### <a name="using-allocation-api"></a>Using the allocation API
 
 Currently, five allocation APIs are opened:
 
@@ -254,9 +258,9 @@ Use the `Consume` API to post the consumption quantity against allocation. For e
 
 For example, there are eight allocated bikes that have the dimensions \[site=1, location=11, color=red\] for allocation group \[Online, VIP, US\]. The following available-to-allocate formula is used:
 
-`@iv.@available_to_allocate` = `fno.onordered` – `@allocated`
+`@iv.@available_to_allocate` = `fno.onordered` + `pos.inbound` – `@iv.@allocated`
 
-The eight bikes are allocated from the `fno.onordered` measure.
+The eight bikes are allocated from the `pos.inbound` measure.
 
 Now, three bikes are sold, and they are taken from the allocation pool. To register this move, you can make a call that has the following request body.
 
@@ -277,14 +281,16 @@ Now, three bikes are sold, and they are taken from the allocation pool. To regis
     },
     "quantity": 3,
     "physicalMeasures": {
-        "fno": {
-            "onordered": "Subtraction"
+        "pos": {
+            "inbound": "Subtraction"
         }
     }
 }
 ```
 
-After this call, the allocated quantity for the product will be reduced by 3. In addition, Inventory Visibility will generate an on-hand change event where `fno.onordered` = *-3*. Alternatively, you can keep the `fno.onordered` value as it is and just consume the allocated quantity. However, in this case, you must either create another physical measure to keep the consumed quantities or use the predefined measure `@iv.@consumed`.
+After this call, the allocated quantity for the product will be reduced by 3. In addition, Inventory Visibility will generate an on-hand change event where `pos.inbound` = *-3*. Alternatively, you can keep the `pos.inbound` value as it is and just consume the allocated quantity. However, in this case, you must either create another physical measure to keep the consumed quantities or use the predefined measure `@iv.@consumed`.
+In this request, notice that the physical measure you use in the comsume reqeust body should use the opposite modifer type(Addition or Subtraction), compared with the modifier type used in the calculated measure. So in this consume body,  `iv.inbound`  has the value `Subtraction`, not `Addition`.
+`fno` data source can not be used in the consume body as we always claimed that Inventory Visibility can't change any data for the `fno` data source. The data flow is one-way, which means that all quantity changes for the `fno` data source must come from your Supply Chain Management environment.
 
 #### <a name="consume-to-soft-reserved"></a>Consume as a soft reservation
 
@@ -292,11 +298,11 @@ The `Consume` API can also consume the allocated quantity as a soft reservation.
 
 For example, you have set a soft reservation modifier (measure) as `iv.softreserved`. The following formula is used for the available-to-reserve calculated measure:
 
-`iv.available_to_reserve` = `fno.onordered` – `iv.softreserved`
+`iv.available_to_reserve` = `fno.onordered` + `pos.inbound` – `iv.softreserved`
 
 To use this setup with the allocation feature, add `@iv.@allocated` to `iv.available_to_reserve` to produce the following formula:
 
-`iv.available_to_reserve` = `fno.onordered` – `iv.softreserved` – `@iv.@allocated`
+`iv.available_to_reserve` = `fno.onordered` + `pos.inbound` – `iv.softreserved` – `@iv.@allocated`
 
 Then update `@iv.@available_to_allocate` to the same value.
 

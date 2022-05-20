@@ -40,6 +40,11 @@ The following table lists the APIs that are currently available:
 | /api/environment/{environmentId}/on-hand/changeschedule/bulk | Post | [Create multiple scheduled on-hand changes](inventory-visibility-available-to-promise.md) |
 | /api/environment/{environmentId}/onhand/indexquery | Post | [Query by using the post method](#query-with-post-method) |
 | /api/environment/{environmentId}/onhand | Get | [Query by using the get method](#query-with-get-method) |
+| /api/environment/{environmentId}/allocation​/allocate | Post | [Create one allocate event](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation​/unallocate | Post | [Create one unallocate event](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation​/reallocate | Post | [Create one reallocate event](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation​/consume | Post | [Create one consume event](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation​/query | Post | [Query allocation result](inventory-visibility-allocation.md#using-allocation-api) |
 
 > [!NOTE]
 > The {environmentId} part of the path is the environment ID in Microsoft Dynamics Lifecycle Services (LCS).
