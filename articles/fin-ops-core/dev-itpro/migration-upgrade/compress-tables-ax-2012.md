@@ -196,6 +196,7 @@ BEGIN
                     INNER JOIN sys.tables AS T2 ON T2.object_id = T1.object_id
                     INNER JOIN sys.indexes AS T3 ON T3.object_id = T1.object_id AND T3.index_id = T1.index_id
                     WHERE T1.index_id > 1
+                    AND T2.schema_id = (select schema_id from sys.schemas where name = 'DBO')
                     AND T2.name = @tablename;
                 OPEN indexCursor;
                 FETCH NEXT FROM indexCursor INTO @indexName, @dataCompression;
