@@ -34,6 +34,7 @@ This topic provides links to documentation resources for Poland.
 - [Calculate line discounts from the unit price](emea-pol-line-discount-calculation-from-unit-price.md)
 - [Correction notes](emea-pol-correction-notes.md)
 - [Duplicate sales invoice numbering](emea-pol-sales-invoice-duplicates-numbering.md)
+- [EU sales list for Poland](emea-pol-eu-sales-list.md)
 - [Fixed asset depreciation](emea-pol-fixed-assets-depreciation.md)
 - [Fixed asset disposal](emea-pol-fixed-asset-disposal-functionality-extension.md)
 - [Foreign currency revaluation for bank accounts](emea-foreign-currency-revaluation.md)
