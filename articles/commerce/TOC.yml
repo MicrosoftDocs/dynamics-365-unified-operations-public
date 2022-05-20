@@ -1254,6 +1254,8 @@
             href: site-selector.md
           - name: Country/region picker module
             href: country-region-picker-module.md
+          - name: Catalog picker module
+            href: catalog-picker.md
         - name: Search modules
           items:
           - name: Search results module
