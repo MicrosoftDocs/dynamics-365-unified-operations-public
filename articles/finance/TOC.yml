@@ -2302,6 +2302,8 @@
           href: localizations/emea-fin-intrastat.md
         - name: VAT declaration
           href: localizations/emea-fin-vat-declaration.md
+        - name: EU sales list
+          href: localizations/emea-fin-eu-sales-list.md
       - name: France
         items:
         - name: France overview
