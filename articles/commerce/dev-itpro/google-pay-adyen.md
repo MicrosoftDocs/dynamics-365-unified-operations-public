@@ -89,10 +89,9 @@ With Google Pay, selecting the Google Pay button in the Payment Express section 
 As the user completes the action in the Google Pay iFrame, they are directed to the Commerce site checkout page with the checkout form pre-populated with their chosen details. Note that upon return of the user from the Google Pay window back to the checkout page:
 
 - In the Payment Express flow, the first **Delivery Option** available for the shipping address returned will be pre-selected for the customer.  
-- With Google Pay, a contact **email address** is **not** returned. Guest checkout users will still need to input an email address in the contact section of the checkout page. Signed-in users will have the contact data populated from their Dynamics customer account (their primary email used for authentication).
+- With Google Pay, a contact email address is not returned. Guest checkout users will still need to enter an email address in the contact section of the checkout page. Signed-in users will have their contact data automatically populated from their Dynamics customer account (their primary email used for authentication).
 
 The customer has the option to review the order, change checkout order details if desired, and will then select the **Place order** button to finalize the order.
-
 
 ### Configure your Commerce site builder site for Google Pay
 
