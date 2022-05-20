@@ -1,14 +1,43 @@
+---
+# required metadata
+
+title: EU Sales list for Poland
+description: This topic provides information about the European Union (EU) sales list report for Poland.
+author: AKroshkina
+ms.date: 03/04/2022
+ms.topic: article
+ms.prod: 
+ms.technology: 
+
+# optional metadata
+
+#ms.search.form:
+audience: IT Pro, Application User
+# ms.devlang: 
+ms.reviewer: kfend
+# ms.suite: 
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: 
+# ms.search.industry: 
+ms.author: anasyash
+ms.dyn365.ops.version: 
+ms.search.validFrom: 
+---
+
+# EU Sales list for Poland
+
 This topic provides information about the European Union (EU) sales list report for Poland. The Polish EU sales list report contains information about sale and purchase of goods and services for reporting in XML format.
 
 The following fields are included in the Polish EU sales list report:
 
 -   **EU sales list header:**
--   Reporting period
+    -   Reporting period
     -   Company name
     -   Authority ID
     -   Company VAT ID
 -   **EU sales list lines:**
--   Customer VAT ID or Vendor VAT ID
+    -   Customer VAT ID or Vendor VAT ID
     -   Total amount of items
     -   Total amount of services
     -   Total amount of triangular trade
@@ -38,7 +67,7 @@ Create a registration type, and assign it to the **VAT ID** registration categor
 ### Import Electronic reporting configurations
 
 -   In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index), import the latest versions of the following Electronic reporting (ER) configurations for the EU sales list:
--   EU Sales list model
+    -   EU Sales list model
     -   EU Sales list by columns report
     -   EU Sales list by rows report
     -   EU Sales list (PL)
@@ -53,9 +82,9 @@ For more information, see Download Electronic reporting configurations from Life
 4.  On the **Electronic reporting** FastTab, in the **File format mapping** field, select **EU Sales list (PL)**.
 5.  In the **Report format mapping** field, select **EU Sales list by rows report** or **EU Sales list by columns report**.
 6.  On the **Country/region properties** tab, select **New**, and specify the following information:
--   In the **Country/region** column, select **POL**.
+    -   In the **Country/region** column, select **POL**.
     -   In the **Country/region type** column, select **Domestic**.
-1.  List all the countries or regions that your company does business with. For each country that is part of the EU, in the **Country/region type** field, select **EU** to show trade with those countries on the **EU sales list** page.
+7.  List all the countries or regions that your company does business with. For each country that is part of the EU, in the **Country/region type** field, select **EU** to show trade with those countries on the **EU sales list** page.
 
 ### Set up a sales tax authority
 
@@ -85,7 +114,7 @@ For general information about the types of transactions that are included in the
 | Authority                                                                                                                          | Select the sales tax authority.                                                     |
 | I acknowledge that for providing untruths or concealing the truth, there is a risk of liability described in the Fiscal Penal Code | Set this option to **Yes** to generate files.                                       |
 
-1.  Select **OK**, and review the generated reports.
+5.  Select **OK**, and review the generated reports.
 
 ## Example
 
@@ -104,14 +133,14 @@ For information about how to set up purchases and create a vendor invoice, see [
 1.  Go to **Tax** \> **Declarations** \> **Foreign trade** \> **EU sales list**.
 2.  On the Action Pane, select **Reporting**.
 3.  In the **EU sales list reporting** dialog box, on the **Parameters** FastTab, set the following fields:
--   In the **Reporting period** field, select **Monthly**.
+    -   In the **Reporting period** field, select **Monthly**.
     -   In the **From date** field, select **8/1/2021** (August 1, 2021).
     -   Set the **Generate file** option to **Yes**.
     -   In the **File name** field, enter **PL-001F**.
     -   Set the **Generate report** option to **Yes**.
     -   In the **Report file name** field, enter **PL-001R**.
     -   Set the **I acknowledge that for providing untruths or concealing the truth, there is a risk of liability described in the Fiscal Penal Code** option to **Yes**.
-1.  Select **OK**, and review the report in XML format that is generated. The following tables show the values in the example report.
+4.  Select **OK**, and review the report in XML format that is generated. The following tables show the values in the example report.
 
 **EU sales list header**
 
@@ -133,6 +162,6 @@ For information about how to set up purchases and create a vendor invoice, see [
 | c          | 120.00    | 240.00       | The sum of all invoices by customer/vendor.                                                                                                                                                                                                       |
 | d          |           |              | The value is **1** for a record where the **List code** field is set to **Triangular/Prod. on toll**. The value is **2** for a record where the **List code** field is set to **Triangular/EU trade**. For all other records, the field is blank. |
 
-1.  Review the report in Excel format that is generated.
+5.  Review the report in Excel format that is generated.
 
-![Table Description automatically generated](media/743fccf159786addb2bcdf70f9c3eab9.png)
+![EUSL for Poland](media/EUSL-pol.png)
