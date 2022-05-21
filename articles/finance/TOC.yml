@@ -1781,7 +1781,9 @@
         - name: Create and transfer transactions to the BLWI
           href: localizations/tasks/be-00011-create-transfer-blwi.md
         - name: Export ledger transactions
-          href: localizations/emea-bel-export-ledger-transactions.md          
+          href: localizations/emea-bel-export-ledger-transactions.md  
+        - name: EU sales list
+          href: localizations/emea-bel-eu-sales-list.md    
         - name: INTERVAT tax declaration
           href: localizations/emea-bel-intervat-tax-declaration.md
         - name: Reconciliation reports
@@ -2302,6 +2304,8 @@
           href: localizations/emea-fin-intrastat.md
         - name: VAT declaration
           href: localizations/emea-fin-vat-declaration.md
+        - name: EU sales list
+          href: localizations/emea-fin-eu-sales-list.md
       - name: France
         items:
         - name: France overview
@@ -3238,6 +3242,8 @@
           href: localizations/emea-pol-correction-notes.md
         - name: Duplicate sales invoice numbering
           href: localizations/emea-pol-sales-invoice-duplicates-numbering.md
+        - name: EU sales list
+          href: localizations/emea-pol-eu-sales-list.md
         - name: Fixed asset depreciation
           href: localizations/emea-pol-fixed-assets-depreciation.md
         - name: Fixed asset disposal functionality extension
