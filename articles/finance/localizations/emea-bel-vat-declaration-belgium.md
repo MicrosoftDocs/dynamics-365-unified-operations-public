@@ -515,7 +515,7 @@ steps in the previous section.
 >   period** report. It's also printed when you select **Print** on the **Sales
 >   tax payments** page.
 
-1.  On the **Tax authorities** page, select the tax authority, and then, in the
+4.  On the **Tax authorities** page, select the tax authority, and then, in the
     **Report layout** field, select **Default**.
 
 If you're configuring the VAT declaration in a legal entity that has [multiple
@@ -597,26 +597,10 @@ messaging](https://docs.microsoft.com/dynamics365/finance/general-ledger/electro
 | Field                                    | Description                                                                                                                                                                             |
 |------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 91 Deposit amount to be paid in December | Enter the amount, if applicable.                                                                                                                                                        |
-| Generate reports                         | Select the reports that should be generated:                                                                                                                                            |
-| Include fields                           | Select the columns that should be visible on the **Incoming operations** and **Outgoing operations** reports, in addition to the **Date**, **Supplier**, and **Customer name** columns: |
+| Generate reports                         | Select the reports that should be generated:</br> -   Incoming operations </br>-   Outgoing operations</br>-   VAT declaration preview                                                                                                                                    |
+| Include fields                           | Select the columns that should be visible on the **Incoming operations** and **Outgoing operations** reports, in addition to the **Date**, **Supplier**, and **Customer name** columns: </br> -   Document date</br>-   Document number </br>   -   Account </br> -   Voucher </br> -   Vat ID|
 
--   Incoming operations
-
--   Outgoing operations
-
--   VAT declaration preview
-
--   Document date
-
--   Document number
-
--   Account
-
--   Voucher
-
--   Vat ID
-
-1.  Select **OK**, and review the Excel report.
+4.  Select **OK**, and review the Excel report.
 
 ### Settle and post sales tax
 
@@ -628,16 +612,10 @@ messaging](https://docs.microsoft.com/dynamics365/finance/general-ledger/electro
 | Field                     | Description                                    |
 |---------------------------|------------------------------------------------|
 | Settlement period         | Select the settlement period.                  |
-| Sales tax payment version | Select one of the following values:            |
+| Sales tax payment version | Select one of the following values:  </br> -   **Original** – Generate the original sales tax payment for the settlement period.  </br>    -   **Latest corrections** – Generate a correction sales tax payment after the original sales tax payment for the settlement period was created.   |
 | From date                 | Select the start date of the reporting period. |
 
--   **Original** – Generate the original sales tax payment for the settlement
-    period.
-
--   **Latest corrections** – Generate a correction sales tax payment after the
-    original sales tax payment for the settlement period was created.
-
-1.  Select **OK**.
+3.  Select **OK**.
 
 ### Preview the VAT declaration, incoming operations, and outgoing operations in Excel from a sales tax payment
 
@@ -649,13 +627,13 @@ messaging](https://docs.microsoft.com/dynamics365/finance/general-ledger/electro
 3.  Review the Excel file that is generated for the selected sales tax payment
     line.
 
-[!NOTE]
-
-The report is generated only for the selected line of the sales tax payment. If
-you must generate, for example, a corrective declaration that contains all
-corrections for the period, or a replacement declaration that contains original
-data and all corrections, use the **Report sales tax for settlement period**
-periodic task.
+> [!NOTE]
+> 
+> The report is generated only for the selected line of the sales tax payment. If
+> you must generate, for example, a corrective declaration that contains all
+> corrections for the period, or a replacement declaration that contains original
+> data and all corrections, use the **Report sales tax for settlement period**
+> periodic task.
 
 ## Generate a VAT declaration, incoming operations, and outgoing operations from electronic messages
 
@@ -683,59 +661,60 @@ that you imported earlier from the LCS Shared asset library.
 
 >   Steps 5 through 7 are optional.
 
-1.  Optional: On the **Messages** FastTab, select **Collect data**, and then
+5.  Optional: On the **Messages** FastTab, select **Collect data**, and then
     select **OK**. The sales tax payments that were generated earlier are added
     to the message. For more information, see the [Settle and post sales
     tax](#settle-and-post-sales-tax) section earlier in this topic. If you skip
     this step, you can still generate a VAT declaration by using the **Tax
     declaration version** field in the **Declaration** dialog box.
 
-2.  Optional: On the **Message items** FastTab, review the sales tax payments
+6.  Optional: On the **Message items** FastTab, review the sales tax payments
     that are transferred for processing. By default, all sales tax payments of
     the selected period that weren't included in any other message of the same
     processing are included.
 
-3.  Optional: Select **Original document** to review the sales tax payments or
+7.  Optional: Select **Original document** to review the sales tax payments or
     select **Delete** to exclude sales tax payments from processing. If you skip
     this step, you can still generate a VAT declaration by using the **Tax
     declaration version** field in the **Declaration** dialog box.
 
-4.  On the **Messages** FastTab, select **Update status**. In the **Update
+8.  On the **Messages** FastTab, select **Update status**. In the **Update
     status** dialog box, select **Ready to generate**, and then select **OK**.
     Verify that the message status is changed to **Ready to generate**.
 
-5.  Select **Generate report**. To preview the VAT declaration amounts, in the
+9.  Select **Generate report**. To preview the VAT declaration amounts, in the
     **Run processing** dialog box, select **Preview report**, and then select
     **OK**.
 
-6.  In the **Electronic reporting parameters** dialog box, set the fields as
+10.  In the **Electronic reporting parameters** dialog box, set the fields as
     described in the [Preview the VAT declaration in Excel from the Report sales
     tax for settlement period periodic
     task](#preview-the-vat-declaration-in-excel-from-the-report-sales-tax-for-settlement-period-periodic-task)
     section earlier in this topic, and then select **OK**.
 
-7.  Select the **Attachments** button (paper clip symbol) in the upper-right
+11.  Select the **Attachments** button (paper clip symbol) in the upper-right
     corner of the page, and then select **Open** to open the file. Review the
     amounts in the Excel documents.
 
-8.  Select **Generate report**.
+12.  Select **Generate report**.
 
-9.  To generate a report in XML format, in the **Run processing** dialog box,
+13.  To generate a report in XML format, in the **Run processing** dialog box,
     select **Generate report**, and then select **OK**.
 
-10. Set the following fields.
+14. Set the following fields.
 
-| Field                                                                                                                                                                                                                                                                                                                                                                              | Description                                                                                                                                                                                                                                                                                                                                                                                                       |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Field                       | Description                  |
+|-----------------------------|------------------------------|
 | Report periodicity                                                                                                                                                                                                                                                                                                                                                                 | Select **Monthly** or **Quarterly**.                                                                                                                                                                                                                                                                                                                                                                              |
-| 61 VAT regularizations due amount carried over 62 VAT regularizations deduction amount carried over 81 Purchases goods amount carried over 82 Purchases services amount carried over 83 Purchases capital goods amount carried over 86 EU purchases goods amount carried over 87 Other purchases with VAT payable amount carried over 88 EU purchases services amount carried over | In these fields, you can enter an amount that will be added to the subsequent box amount. You can enter a negative amount. For example, you might have to set these fields if the amount in a box was negative in the previous period, and you had to report 0 (zero) because negative amounts aren't allowed for the box. However, you can carry over the amount from the previous period to the current period. |
+| 61 VAT regularizations due amount carried over</br> 62 VAT regularizations deduction amount carried over</br> 81 Purchases goods amount carried over</br> 82 Purchases services amount carried over</br> 83 Purchases capital goods amount carried over</br> 86 EU purchases goods amount carried over</br> 87 Other purchases with VAT payable amount carried over</br> 88 EU purchases services amount carried over | In these fields, you can enter an amount that will be added to the subsequent box amount. You can enter a negative amount. For example, you might have to set these fields if the amount in a box was negative in the previous period, and you had to report 0 (zero) because negative amounts aren't allowed for the box. However, you can carry over the amount from the previous period to the current period. |
 | 91 Deposit amount to be paid in December                                                                                                                                                                                                                                                                                                                                           | Enter the amount, if applicable.                                                                                                                                                                                                                                                                                                                                                                                  |
 | Replaced VAT declaration                                                                                                                                                                                                                                                                                                                                                           | Enter the number of the declaration that you're replacing, if you're reporting corrections.                                                                                                                                                                                                                                                                                                                       |
 | Request for reimbursement                                                                                                                                                                                                                                                                                                                                                          | Select **Yes**, or leave the value set to **No**.                                                                                                                                                                                                                                                                                                                                                                 |
 | Request for payment forms                                                                                                                                                                                                                                                                                                                                                          | Select **Yes**, or leave the value set to **No**.                                                                                                                                                                                                                                                                                                                                                                 |
 | Nil annual listing                                                                                                                                                                                                                                                                                                                                                                 | Select **Yes**, or leave the value set to **No**.                                                                                                                                                                                                                                                                                                                                                                 |
 
-11. Select the **Attachments** button (paper clip symbol) in the upper-right
+15. Select **OK** 
+16. Select the **Attachments** button (paper clip symbol) in the upper-right
     corner of the page, and download the electronic file that was generated. You
     should then manually upload this file to the government portal.
 
@@ -764,7 +743,7 @@ legal entities.
 >   existing records, this field shows the identifier of the current legal
 >   entity.
 
-1.  In the **Datasources setup** grid, add a line for each additional legal
+5.  In the **Datasources setup** grid, add a line for each additional legal
     entity that must be included in reporting. For each new line, set the
     following fields.
 
@@ -780,7 +759,7 @@ legal entities.
 | Company                | Select the ID of the legal entity.                                                                                            |
 | User query             | This checkbox is automatically selected when you define criteria by selecting **Edit query**.                                 |
 
-2.  For each new line, select **Edit query**, and specify a related settlement
+6.  For each new line, select **Edit query**, and specify a related settlement
     period for the legal entity that is specified in the **Company** field on
     the line.
 
@@ -795,17 +774,17 @@ INTERVAT declaration that is based on the reporting codes framework to the setup
 of VAT declaration (BE) that is based on application-specific parameters in the
 **Electronic reporting** workspace.
 
-[!NOTE]
-
-In the examples that follow, the same sales tax code is used for different types
-of transactions: domestic sales, intra-community sales, domestic purchases,
-intra-community purchases, and so on. This approach has been used only for the
-purpose of illustration. For an easier experience when you reconcile your taxes,
-we recommend that you to create as many sales tax codes as possible, so that
-each sales tax code can uniquely identify a specific transaction type. Then,
-during a tax audit, you will be able to explain the source of each transaction
-based on the sales tax code and will have to use only standard sales tax
-reconciliation reports.
+> [!NOTE]
+> 
+> In the examples that follow, the same sales tax code is used for different types
+> of transactions: domestic sales, intra-community sales, domestic purchases,
+> intra-community purchases, and so on. This approach has been used only for the
+> purpose of illustration. For an easier experience when you reconcile your taxes,
+> we recommend that you to create as many sales tax codes as possible, so that
+> each sales tax code can uniquely identify a specific transaction type. Then,
+> during a tax audit, you will be able to explain the source of each transaction
+> based on the sales tax code and will have to use only standard sales tax
+> reconciliation reports.
 
 Additionally, in the examples, all negative tax transactions are configured so
 that they are considered credit notes. This approach has also been used only for
