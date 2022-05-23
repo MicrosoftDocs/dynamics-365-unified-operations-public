@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 3
 # Client-side design APIs
 
 [!include [banner](../../../includes/banner.md)]
-[!include [banner](../includes/mobile-app-deprecation-banner.md)]
+[!include [mobile app deprecated](../includes/mobile-app-deprecation-banner.md)]
 
 This topic provides an overview of the application programming interfaces (APIs) for client-side design and includes recommendations for using them.
 
