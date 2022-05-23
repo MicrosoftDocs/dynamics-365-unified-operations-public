@@ -12,6 +12,7 @@ ms.author: tfehr
 # Event module
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 ## Index
 
