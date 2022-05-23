@@ -45,9 +45,9 @@ This topic includes information and links to resources that should be considered
 -   [VAT declaration for Germany](emea-deu-vat-declaration-germany.md)
 
 ## Electronic transmission of VAT declaration (ELSTER)
+This feature is deprecated. For more information, see [Removed and deprecated features](https://docs.microsoft.com//dynamics365/finance/get-started/removed-deprecated-features-finance#elster-declaration-for-germany-design-based-on-reporting-codes). For more information about VAT declaration, see [VAT declaration (Germany)](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-deu-vat-declaration-germany)
 - [Electronic transmission of VAT declaration (ELSTER)](tasks/de-00003-electronic-transmission-elster.md)
-- [Elster Testmerker (PDF download)](https://msdnshared.blob.core.windows.net/media/2018/04/Dyn365_ElsterTestmerker.pdf)
-- [VAT declaration for Germany](emea-de-vat-declaration.md)
+- [ELSTER VAT statement for Germany](emea-de-vat-declaration.md)
 
 ## Electronic invoices in Germany
 - [Customer electronic invoices export](emea-deu-e-invoices.md)
