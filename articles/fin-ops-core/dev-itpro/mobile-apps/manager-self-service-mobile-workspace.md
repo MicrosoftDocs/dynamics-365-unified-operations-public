@@ -27,7 +27,7 @@ ms.dyn365.ops.version: July 2017 update
 # My team mobile workspace
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/mobile-app-deprecation-banner.md)]
+[!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
 This topic provides information about the **My team** mobile workspace. This workspace lets managers view their direct reports and extended staff. They can also send praise to individuals in their reporting chain.
 
