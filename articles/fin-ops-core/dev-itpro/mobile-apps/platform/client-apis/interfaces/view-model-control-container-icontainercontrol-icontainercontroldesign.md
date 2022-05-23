@@ -12,7 +12,7 @@ ms.author: tfehr
 # ContainerControlDesign type
 
 [!include [banner](../../../../includes/banner.md)]
-[!include [mobile app deprecated](../includes/mobile-app-deprecation-banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 Container control design object has properties specific to all container controls.
 
