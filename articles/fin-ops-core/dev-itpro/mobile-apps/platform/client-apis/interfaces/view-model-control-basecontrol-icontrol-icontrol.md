@@ -12,6 +12,7 @@ ms.author: tfehr
 # Control type
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../includes/mobile-app-deprecation-banner.md)]
 
 Control interface with base methods and attributes for all controls.
 This represents the runtime instance of a control. Modifying the properties are immediately reflected in the UI.
