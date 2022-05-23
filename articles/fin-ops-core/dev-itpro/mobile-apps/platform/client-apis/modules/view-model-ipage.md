@@ -12,6 +12,7 @@ ms.author: tfehr
 # Page module
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 The IPage interface encapsulates the various properties, life cycle and event hooks associated with a page in a workspace.
 ### Page data Synchronization
