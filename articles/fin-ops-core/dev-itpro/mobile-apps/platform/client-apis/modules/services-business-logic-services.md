@@ -12,6 +12,7 @@ ms.author: tfehr
 # Services module
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 Various services that are available to the application in client runtime.
 
