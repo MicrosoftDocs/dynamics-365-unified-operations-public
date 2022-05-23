@@ -12,6 +12,7 @@ ms.author: tfehr
 # ContainerControl type
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../includes/mobile-app-deprecation-banner.md)]
 
 Container control interface with methods and attributes for all container controls.
 A container control can contain any number of controls.
