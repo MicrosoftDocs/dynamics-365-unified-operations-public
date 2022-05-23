@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 3
 # Mobile platform
 
 [!include [banner](../../includes/banner.md)]
-[!include [banner](../includes/mobile-app-deprecation-banner.md)]
+[!include [mobile app deprecated](../includes/mobile-app-deprecation-banner.md)]
 
 This topic has been replaced with the [Get started with the mobile platform](mobile-platform-getting-started.md) and [Architecture and design considerations for the mobile platform](mobile-platform-architecture.md) topics.
 
