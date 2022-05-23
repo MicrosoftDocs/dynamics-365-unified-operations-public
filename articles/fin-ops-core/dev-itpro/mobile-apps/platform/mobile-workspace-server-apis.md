@@ -25,6 +25,7 @@ ms.dyn365.ops.version: Platform update 3
 # Server-side development (workspace X++ APIs)
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../includes/mobile-app-deprecation-banner.md)]
 
 ## Class SysAppActionAttribute
 
