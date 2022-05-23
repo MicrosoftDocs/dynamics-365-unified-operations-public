@@ -12,7 +12,7 @@ ms.author: tfehr
 # Application type
 
 [!include [banner](../../../../includes/banner.md)]
-[!include [mobile app deprecated](../includes/mobile-app-deprecation-banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 Represents a runtime instance of an application.
 
