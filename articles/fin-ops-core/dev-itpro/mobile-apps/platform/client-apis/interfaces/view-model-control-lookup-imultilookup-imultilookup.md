@@ -12,6 +12,7 @@ ms.author: tfehr
 # MultiLookup type
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 Multi-Lookup control type. Multi-Lookup controls are similar to regular lookups except they allow multiple selections at once.
 
