@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 3
 # Business logic events
 
 [!include [banner](../../includes/banner.md)]
-[!include [banner](../includes/mobile-app-deprecation-banner.md)]
+[!include [mobile app deprecated](../includes/mobile-app-deprecation-banner.md)]
 
 Mobile workspace business logic events provide places for developers to specify workspace configuration to enhance capability, and implement business-scenario-specific behaviors. All mobile business logic executes in the process of the mobile app, and business logic execution flow is controlled by the Operations mobile app framework. 
 
