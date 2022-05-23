@@ -12,6 +12,7 @@ ms.author: tfehr
 # Design type
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 Design object type.
 For more information on design, please reference the [Design Introduction](../../scenarios/client-api-design-overview.md).
