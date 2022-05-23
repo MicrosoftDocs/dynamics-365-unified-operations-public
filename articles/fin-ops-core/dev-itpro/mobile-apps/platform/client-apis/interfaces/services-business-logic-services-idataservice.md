@@ -12,7 +12,7 @@ ms.author: tfehr
 # DataService type
 
 [!include [banner](../../../../includes/banner.md)]
-[!include [mobile app deprecated](../includes/mobile-app-deprecation-banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 Provides ability access data under the application workspace.
 
