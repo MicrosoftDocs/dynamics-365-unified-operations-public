@@ -12,6 +12,7 @@ ms.author: tfehr
 # InputControl type
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../includes/mobile-app-deprecation-banner.md)]
 
 Input control interface with methods and attributes for all input controls.
 Input controls are typically used on task pages for collecting user input, for example, for a new control.
