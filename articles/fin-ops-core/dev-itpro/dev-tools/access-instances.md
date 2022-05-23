@@ -24,6 +24,7 @@ This topic describes how to access development instances, configure local develo
 > - Microsoft Support may provide limited troubleshooting on Tier 1 development environments.
 > - In certain circumstances, a fresh deploy of a Tier 1 environment may be requested by Microsoft Support to resolve an issue.
 > - Development environments should not contain business critical data and are considered disposable.
+> - Only 120 per tenant environments are supported, so we recommend to limit the number of cloud hosted environments under a specific tenant to allow enough capacity to be able to deploy sandbox and production environments.
  
 
 ## Definitions
