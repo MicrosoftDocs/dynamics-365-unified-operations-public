@@ -45,7 +45,7 @@ This topic includes information and links to resources that should be considered
 -   [VAT declaration for Germany](emea-deu-vat-declaration-germany.md)
 
 ## Electronic transmission of VAT declaration (ELSTER)
-This feature is deprecated. For more information, see [Removed and deprecated features](https://docs.microsoft.com//dynamics365/finance/get-started/removed-deprecated-features-finance#elster-declaration-for-germany-design-based-on-reporting-codes). For more information about VAT declaration, see [VAT declaration (Germany)](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-deu-vat-declaration-germany)
+This feature is deprecated. For more information, see [Removed and deprecated features](https://docs.microsoft.com//dynamics365/finance/get-started/removed-deprecated-features-finance#elster-declaration-for-germany-design-based-on-reporting-codes). For more information about VAT declaration, see [VAT declaration (Germany)](emea-deu-vat-declaration-germany.md)
 - [Electronic transmission of VAT declaration (ELSTER)](tasks/de-00003-electronic-transmission-elster.md)
 - [ELSTER VAT statement for Germany](emea-de-vat-declaration.md)
 
