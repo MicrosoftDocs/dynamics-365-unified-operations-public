@@ -35,7 +35,12 @@ This topic covers earch engine optimization (SEO) considerations for your site f
 
 ## A site that is under development
 
-While a site is under development, all site pages should have the **NOINDEX** and **NOFOLLOW** meta tags, so that search engines don't index the pages and store development versions of your site in their cache. To do this configuration, you must add the default meta tags module to the site page template. The default meta tags properties will then be available in the SEO properties section in the page editor. You can use these properties to manage the meta tags.
+While a site is under development, all site pages should have the **noindex** and **nofollow** meta tags, so that search engines do not index the pages and store development versions of your site in their cache. To do this configuration, you must add the default [meta tags module](metatags-module.md) to the site page template and add the below meta tags. The default meta tags properties will then be available in the SEO properties section in the page editor. You can use these properties to manage the meta tags.
+
+```html
+<meta name="robots" content="noindex" /> 
+<meta name="robots" content="nofollow" /> 
+```
 
 ## Soft launch of a site
 
