@@ -30,6 +30,8 @@ ms.search.validFrom: 2016-11-30
 [!include [banner](../includes/banner.md)]
 
 An advance invoice is a document that you can create for a customer or vendor. It states the amount that must be prepaid on a sales order. This topic provides information about advance invoices for Eastern Europe.
+Alternatively, you can use prepayment invoice functionality (see description of this functionality [Prepayment invoices vs. prepayments](https://docs.microsoft.com/en-us/dynamics365/finance/accounts-payable/prepayments-invoices-vs-prepayments)). Starting from the version 10.0.28 (Build 10.0.1238.0) this functionality can be used either the configuration key **Journalizing customer\vendor settlement transactions** is enable or disable.
+To use prepayment invoices functionality set the option **Use prepayment invoice** to **Yes** (Accounts payable parameters > Ledger and sales tax, **Prepayment invoice** FastTab).  
 
 Advance invoice functionality lets you perform the following tasks:
 
