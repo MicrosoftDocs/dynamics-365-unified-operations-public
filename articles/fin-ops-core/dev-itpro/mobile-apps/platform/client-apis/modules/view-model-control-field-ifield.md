@@ -12,6 +12,7 @@ ms.author: tfehr
 # Field module
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 Represents the run-time instance of a field.
 
