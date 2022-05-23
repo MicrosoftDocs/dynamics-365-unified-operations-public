@@ -46,7 +46,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | We are removing deprecating the Finance and Operations (Dynamics 365) mobile application and platform to consolidate to a single mobile platform, which is Power Apps. |
-| **Replaced by another feature?**   | Yes, Power Apps. Mobile experiences over Finance and Operations app data are to be built using Power Apps from now on. |
+| **Replaced by another feature?**   | Yes, mobile experiences over Finance and Operations app data can be built with Power Platform integration. See [Building mobile experiences](../power-platform/build-mobile-experiences.md) for more details. |
 | **Product areas affected**         | Finance and Operations apps |
 | **Deployment option**              | All |
 | **Status**                         | Deprecated. End of support date is targeted at October 2024. |
@@ -58,8 +58,8 @@ Detailed information about objects in Finance and Operations apps can be found i
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Horizontally-scrolling pages align to out-dated layout patterns which has known usability issues.  |
-| **Replaced by another feature?**   | No; however, the other tab styles are still available |
+| **Reason for deprecation/removal** | Horizontally-scrolling pages align to out-dated layout patterns which has known usability and accessibility issues.  |
+| **Replaced by another feature?**   | No, but other tab styles are still available. |
 | **Product areas affected**         | Web client |
 | **Deployment option**              | All |
 | **Status**                         | Deprecated. |
