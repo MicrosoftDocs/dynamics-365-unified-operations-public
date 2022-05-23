@@ -15,6 +15,7 @@ ms.dyn365.ops.version: Platform update 3
 # Configure workspaces by using the SysAppWorkspace class
 
 [!include [banner](../../../includes/banner.md)]
+[!include [banner](../includes/mobile-app-deprecation-banner.md)]
 
 Workspace class, **SysAppWorkspace**, is the starting point to create, configure and publish workspaces on the server. The following categories of APIs are available for use in sysAppWorkspace
 
