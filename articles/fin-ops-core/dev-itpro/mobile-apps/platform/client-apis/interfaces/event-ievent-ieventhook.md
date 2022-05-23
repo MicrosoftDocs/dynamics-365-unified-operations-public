@@ -13,7 +13,7 @@ ms.author: tfehr
 # EventHook type&lt;T&gt;
 
 [!include [banner](../../../../includes/banner.md)]
-[!include [mobile app deprecated](../includes/mobile-app-deprecation-banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 ### Hierarchy
 
