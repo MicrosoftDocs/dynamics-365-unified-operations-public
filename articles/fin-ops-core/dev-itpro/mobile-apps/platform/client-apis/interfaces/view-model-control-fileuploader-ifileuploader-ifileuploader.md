@@ -12,6 +12,7 @@ ms.author: tfehr
 # FileUploader type
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 File uploader control type.
 A control for uploading files such as images.
