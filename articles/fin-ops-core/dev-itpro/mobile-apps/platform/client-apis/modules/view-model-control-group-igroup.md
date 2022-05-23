@@ -12,6 +12,7 @@ ms.author: tfehr
 # Group module
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 A group control is a container control that has any number of controls as children.
 
