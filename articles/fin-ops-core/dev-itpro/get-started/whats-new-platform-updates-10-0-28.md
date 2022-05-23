@@ -22,7 +22,7 @@ This topic lists the features that are included in the platform updates for vers
 
 - **Preview of release:** May 2021
 - **General availability of release (self-update):** July 2022
-- **General availability of release (auto-update):** August 2022
+- **General availability of release (auto-update):** July 2022
 
 ## Features included in this release
 
