@@ -14,6 +14,7 @@ ms.search.validFrom: 08/09/2017
 # Client APIs home page
 
 [!include [banner](../../../includes/banner.md)]
+[!include [mobile app deprecated](../includes/mobile-app-deprecation-banner.md)]
 
 * [Application](modules/services-application.md)
 
