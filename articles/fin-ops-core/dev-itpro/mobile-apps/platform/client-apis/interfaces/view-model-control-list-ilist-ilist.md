@@ -12,6 +12,7 @@ ms.author: tfehr
 # List type
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 List control type.
 A list is a control that contains any numbers of rows.
