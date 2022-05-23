@@ -30,7 +30,7 @@ ms.search.validFrom: 2017-02-28
 # Publish mobile workspaces
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/mobile-app-deprecation-banner.md)]
+[!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
 This topic describes the steps that system administrators must follow to publish a mobile workspace. A mobile workspace must be published so that users can access it in the mobile app. 
 
