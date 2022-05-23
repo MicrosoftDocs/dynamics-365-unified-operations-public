@@ -12,6 +12,7 @@ ms.author: tfehr
 # Value module
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 This is the base class for single value controls.
 
