@@ -12,7 +12,7 @@ ms.author: tfehr
 # PageData type
 
 [!include [banner](../../../../includes/banner.md)]
-[!include [mobile app deprecated](../includes/mobile-app-deprecation-banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 Represents the data that is loaded into a page.
 
