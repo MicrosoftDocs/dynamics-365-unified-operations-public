@@ -12,6 +12,7 @@ ms.author: tfehr
 # PageSubmitArgs type
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../includes/mobile-app-deprecation-banner.md)]
 
 Args supplied to the OnSubmit event of the page.
 
