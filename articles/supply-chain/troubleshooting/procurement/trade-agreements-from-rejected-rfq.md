@@ -21,4 +21,4 @@ Trade agreements can be created from rejected RFQs. Therefore, the system doesn'
 
 ## Resolution
 
-This is the expected behavior. You can create trade agreements for any replies for a request for quotation (RFQ), regardless of whether they were accepted or rejected. For more information, see [Requests for quotation (RFQs) overview](/dynamics365/supply-chain/procurement/request-quotations.md).
+This is the expected behavior. You can create trade agreements for any replies for a request for quotation (RFQ), regardless of whether they were accepted or rejected. For more information, see [Requests for quotation (RFQs) overview](/dynamics365/supply-chain/procurement/request-quotations).
