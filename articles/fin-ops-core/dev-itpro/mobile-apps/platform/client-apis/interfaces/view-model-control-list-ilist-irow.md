@@ -12,6 +12,7 @@ ms.author: tfehr
 # Row type
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 Row controls are what make up a list. A list contains any number of row controls.
 
