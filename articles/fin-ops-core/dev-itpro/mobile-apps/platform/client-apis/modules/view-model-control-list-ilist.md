@@ -12,6 +12,7 @@ ms.author: tfehr
 # List module
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 A list is a control that contains any numbers of rows.
 Each row follows a template for the layout of any number of controls.
