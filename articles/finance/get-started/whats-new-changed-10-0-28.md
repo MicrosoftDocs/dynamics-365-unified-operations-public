@@ -45,10 +45,10 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |----|----|----|----|
-|    |    |    |    |
-|    |    |    |    |
-|    |    |    |    | 
-|    |    |    |    | 
+| General ledger | Unmark all ledger transactions within ledger settlement   | Sometimes, ledger transactions that can’t be settled are marked to ledger settlement. This is because the system thinks that the transactions have been settled. To work around this, you can unmark all of the ledger transactions for all users and legal entities in the system. With this feature enabled, a new button, **Unmark all transactions** is added to the **Ledger settlement** page. Select this button to unmark all ledger settled transactions for all users and legal entities in the system. This button is only available to administrators. | Default  |
+| General ledger   | Option to disply main account category on trial balance | This feature allwos you to add the main account category as a column on the **Trial balance** list page. The option, **Display main account category** has been added under the **Columns to display** button on the trial balance.   | Default |
+| Tax calculation  | Integration with general journal   |  [Tax Calculation integration with Finance and Operations](../localizations/global-tax-calcuation-service-overview.md)  | Parameter   | 
+| Tax calculation  | Integration with vendor invoice journal   | [Tax Calculation integration with Finance and Operations](../localizations/global-tax-calcuation-service-overview.md)  | Parameter   | 
 |    |    |    |    |
 |    |    |    |    | 
 |    |    |    |    | 
