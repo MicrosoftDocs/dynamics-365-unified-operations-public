@@ -101,6 +101,47 @@ For both options, the parameters are the same. If you're setting up your first f
 
 To deploy a feature to the service environment and an application setup to the Finance or Supply Chain Management connected application, see [Complete, publish, and deploy a Globalization feature](e-invoicing-complete-publish-deploy-globalization-feature.md)
 
+
+
+## Microcost Dynamics D365 configuration
+
+### Configure legal entity data
+
+#### Enter a legal entity's address
+
+1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
+2. Select a legal entity, and then, on the **Addresses** FastTab, add a valid primary address for the legal entity.
+
+#### Enter a legal entity's tax registration number
+
+1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
+2. Select a legal entity, and then, on the **Tax registration** FastTab, in the **Tax registration number** field, enter a valid tax registration number for the legal entity. This number will be used as the seller's value-added tax (VAT) identifier.
+
+### Configure customer data
+
+#### Enter a customer's address
+
+1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
+2. Select a customer, and then, on the **Addresses** FastTab, add a valid address for the customer.
+
+#### Enter a customer's tax registration number
+
+1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
+2. Select a customer, and then, on the **Invoice and delivery** FastTab, in the **Tax exempt number** field, enter a valid tax registration number for the customer. This number will be used as the buyer's VAT identifier.
+
+![Invoice printout](media/sau-qr-invoice.jpg)
+
+### Configure additional data
+
+Electronic properties.
+
+### Issue electronic invoices
+
+When you've completed all the required configuration steps, you can generate electronic invoices for posted invoices. For more information about how to generate electronic invoices, see [Issue electronic invoices in Finance and Supply chain management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md).
+
+
+
+
 ## Privacy notice
 
 Enabling the **Polish electronic invoice (PL)** feature might require that limited data be sent. This data includes the organization's tax registration ID. The data will be transmitted to third-party agencies that have been authorized by the tax authority to send electronic invoices to that tax authority in the predefined format that is required for integration with the government's web service. An administrator can enable and disable the feature by going to **Organization administration** \> **Setup** \> **Electronic document parameters**. On the **Features** tab, select the row that contains the **Polish electronic invoice (PL)** feature, and then make the appropriate selection. Data that is imported from external systems into this Dynamics 365 online service are subject to our [privacy statement](https://go.microsoft.com/fwlink/?LinkId=512132). For more information, see the "Privacy notice" section in country-specific feature documentation.
@@ -110,6 +151,5 @@ Enabling the **Polish electronic invoice (PL)** feature might require that limit
 - [Electronic invoicing overview](e-invoicing-service-overview.md)
 - [Get started with Electronic invoicing service administration](e-invoicing-get-started-service-administration.md)
 - [Get started with Electronic invoicing](e-invoicing-get-started.md)
-- [Electronic invoices in Poland](emea-pol-e-invoices.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
