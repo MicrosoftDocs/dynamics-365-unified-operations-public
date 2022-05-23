@@ -14,6 +14,8 @@
         items:
         - name: What's new or changed in Platform updates home page
           href: get-started/whats-new-home-page.md
+        - name: Platform updates for version 10.0.28 (August 2022)
+          href: get-started/whats-new-platform-updates-10-0-28.md
         - name: Platform updates for version 10.0.27 (July 2022)
           href: get-started/whats-new-platform-updates-10-0-27.md
         - name: Platform updates for version 10.0.26 (May 2022)
