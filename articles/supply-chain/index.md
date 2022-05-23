@@ -103,7 +103,7 @@ There are many topics about manufacturing and supply chain management on the [Dy
 ## White papers
 
 - [Lean manufacturing: Capable to promise and kanban job scheduling](/dynamics/s-e/)
-- [BOM calculation by using a costing sheet](https://www.microsoft.com/download/details.aspx?id=101937/)
+- [BOM calculation by using a costing sheet](https://www.microsoft.com/download/details.aspx?id=101937)
 
 ## eLearning courses
 
