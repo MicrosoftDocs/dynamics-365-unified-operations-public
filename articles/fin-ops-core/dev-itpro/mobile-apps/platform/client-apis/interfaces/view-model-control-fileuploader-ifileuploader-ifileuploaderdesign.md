@@ -12,6 +12,7 @@ ms.author: tfehr
 # FileUploaderDesign type
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 File uploader design object type.
 
