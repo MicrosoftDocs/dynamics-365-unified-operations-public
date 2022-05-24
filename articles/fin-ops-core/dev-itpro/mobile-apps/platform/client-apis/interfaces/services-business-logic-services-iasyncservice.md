@@ -2,7 +2,7 @@
 title: AsyncService type
 description: Provides ability to perform async operations from business logic code.
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/24/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
