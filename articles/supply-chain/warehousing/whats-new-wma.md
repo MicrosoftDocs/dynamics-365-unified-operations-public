@@ -19,6 +19,21 @@ ms.dyn365.ops.version: 10.0.21
 
 This topic lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 
+## Version 2.0.24.0
+
+This version introduces the following new features, fixes, and improvements:
+
+- Improved scanner pages to enable the scan option on Details pages. 
+- Improved gestures, such as touch/tap screen.
+- Improved performance issues for Android.
+- Fixed placement of multiple headers to allow more cards to display on the Inquiry page.
+- Improved scrolling so less distance for scrolling pagination is enabled.
+- Added long press to display additional text on the Inquiry page.
+- Fixed missing device ID information for Android.
+- Increased stability.
+- Optimized the login layout.
+- Added swipe right motion to close dialog pop-up pages on the number pad, Details page, and input pages.
+
 ## Version 2.0.22.0
 
 This version introduces the following new features, fixes, and improvements:
