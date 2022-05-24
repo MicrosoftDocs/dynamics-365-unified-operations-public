@@ -60,7 +60,7 @@ To use a fixed receipt price for a product, you must configure the following:
   - Fixed receipt price loss
   - Fixed receipt price offset
 
-For more information, go to [Fixed receipt price](fixed-receipt-price.md).
+For more information, go to [Fixed receipt price](/supply-chain/cost-management/fixed-receipt-price.md).
 
 ## Purchase charges and stock variation posting
 
@@ -80,7 +80,7 @@ On the **Inventory posting profile** page, you must specify the main accounts fo
 > [!NOTE]
 > The **Charge** posting type isn't used when the **Post to charge account in ledger** parameter is selected.
 
-For more information, go to [Post to charge account accounting principle](post-to-charge-account-accounting-principle.md).
+For more information, go to [Post to charge account accounting principle](/supply-chain/cost-management/post-to-charge-account-accounting-principle.md).
 
 ## Sample posting profile configuration
 
