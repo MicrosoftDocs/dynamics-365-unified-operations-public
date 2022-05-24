@@ -98,9 +98,9 @@ The Commerce payment express module works with supporting payment methods to off
 
 With Google Pay, selecting the Google Pay button in the **Payment Express** section launches the Google Pay iframe window where users can sign in to their Google account to use their account shipping address, billing address, email, and Google Pay payment method of choice to pay for the transaction.
 
-When users complete the action in the Google Pay window, they are directed to the Commerce site checkout page with the checkout form prepopulated with their Google Pay account details. After users return to the checkout page from the Google Pay window:
+When users complete the action in the Google Pay window, they are directed to the Commerce site checkout page with the checkout form prepopulated with their Google Pay account details. After users return to the checkout page from the Google Pay window, they will see the following:
 
-- In the Payment Express flow, the first **Delivery Option** available for the shipping address returned will be preselected for the customer.  
+- In the payment express flow, the first delivery option available for the shipping address returned will be preselected for the customer.  
 - With Google Pay, a contact email address is not returned. Guest checkout users will need to enter an email address in the contact section of the checkout page. Signed-in users will have their contact data automatically populated from their Dynamics customer account (their primary email used for authentication).
 
 Customers have the option to review orders and change checkout order details before selecting **Place order** to finalize the order.
@@ -118,10 +118,11 @@ To ensure that your content security policies are set in site builder, follow th
 
 ### Configure the payment express fragment with Google Pay in site builder
 
-To set up the Payment Express fragment with Google Pay for the online store, follow these steps:
+To set up the payment express fragment with Google Pay for the online store, follow these steps.
 
-1. In site builder, select the site and navigate to the **Fragments** menu and select **New**
-2. In the New Fragment dialogue, find and select the **Container** module in the module select menu, and give your Fragment a name (example: Checkout Express). 
+1. In site builder, go to **Fragments**. 
+1. Select **New**.
+1. In the **New fragment** dialog box, find and select the **Container** module in the module select menu, and give your Fragment a name (example: Checkout Express). 
 3. Click **Ok** to create the fragment.
 4. In the module tree, select the 'Default Container' module (showing under the pre-labeled root node as the fragment name entered in the step above. (example: 'Checkout express').
 5. In the Properties section, update the Header to a heading you want to display for the express checkout section in your site (Example: Express Checkout)
@@ -133,7 +134,6 @@ To set up the Payment Express fragment with Google Pay for the online store, fol
    - **CSS class name**: "msc-express-payment-container" {required, see note below}
 
    >[!IMPORTANT]
-
    >The **CSS class name** value must maintain the "msc-express-payment-container" style listed to control the behavior of the composable container during checkout. This includes hiding, collapsing, and actions designed for the Express Checkout section during the checkout flow. Additional styles can be included against the **CSS class name**. If customizing the behavior of the module, cross-check the style controls if using the same module library coded behavior in the Checkout module for Express Checkout behavior. The "msc-express-payment-container" reference works with the default operations shipped with the module library starter kit Checkout module.
 
 7. In the module node tree, select the ellipses (...) on the **Default container** and click **add module**.
