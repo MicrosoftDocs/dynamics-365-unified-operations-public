@@ -147,7 +147,7 @@ You can use the filters on this page to narrow the information logs. Here are so
 
 For advanced troubleshooting, you can view raw information logs. You can use a set of predefined queries to get raw logs for an issue. You can then export the logs to do more advanced analysis. The following types of queries are available:
 
-- Slow queries
+- Long queries
 - Deadlocks
 - Crashes
 - Financial reporting issues
