@@ -75,24 +75,24 @@ To configure a Commerce online store to use Google Pay, follow these steps.
 
 | Field                                  | Description                                                  | Required | Automatically set | Sample value         |
 | -------------------------------------- | ------------------------------------------------------------ | -------- | ----------------- | -------------------- |
-| Assembly Name                          | Auto populated name of the assembly for the Dynamics 365 Payment Connector for GooglePay | Yes      | Yes               | *Binary name*        |
-| Service account ID                     | Auto populated unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes (such as invoicing) should use. | Yes      | Yes               | "GUID"               |
-| Google merchant ID (Optional for test) | Required for **Production** environments and optional for test environments, the Google Merchant ID assigned to your Google Merchant account.  (See https://pay.google.com/ for additional details). | Yes      | No                | *Numeric identifier* |
-| Merchant account ID                    | Enter the unique Adyen merchant identifier. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](adyen-connector-setup.md#sign-up-with-adyen) section. | Yes      | No                | *Merchant Identifier* |
-| Cloud API Key                          | Enter the Adyen cloud API key. You can obtain this key by following the instructions on the [How to get the API key](https://docs.adyen.com/developers/user-management/how-to-get-the-api-key) page on the Adyen website. | Yes      | No                | "abcdefg"            |
-| Gateway environment                    | Enter the Adyen gateway environment to map to. The possible values are **Test** and **Live**. You should set this field to **Live** only for production devices and transactions. | Yes      | Yes               | "Live"               |
-| Supported Currencies                   | Enter the currencies that the connector should process. In card-present scenarios, Adyen can support additional currencies through [Dynamic Currency Conversion](https://www.adyen.com/pos-payments/dynamic-currency-conversion) after the transaction request is sent to the payment terminal. Contact Adyen support to get a list of supported currencies. | Yes      | Yes               | "USD;EUR"            |
-| Supported Tender Types                 | Enter the tender types that the connector should process.    | Yes      | Yes               | "GooglePay"          |
+| **Assembly Name**                          | The auto populated name of the assembly for the Dynamics 365 Payment Connector for GooglePay. | Yes      | Yes               | *Binary name*        |
+| **Service account ID**                     | The auto populated unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes (such as invoicing) should use. | Yes      | Yes               | *GUID*               |
+| **Google merchant ID** | Required for **Production** environments and optional for test environments, the Google Merchant ID assigned to your Google Merchant account.  (See https://pay.google.com/ for additional details). | Yes      | No                | *Numeric identifier* |
+| **Merchant account ID**                    | The unique Adyen merchant identifier. This value is provided when you sign up with Adyen as described in [Sign up with Adyen](adyen-connector-setup.md#sign-up-with-adyen). | Yes      | No                | *Merchant Identifier* |
+| **Cloud API Key**                          | The Adyen cloud API key. Obtain this key by following the instructions in [How to get the API key](https://docs.adyen.com/developers/user-management/how-to-get-the-api-key). | Yes      | No                | "abcdefg"            |
+| **Gateway environment**                    | The Adyen gateway environment to map to. The possible values are **Test** and **Live**. You should set this field to **Live** only for production devices and transactions. | Yes      | Yes               | "Live"               |
+| **Supported Currencies**                   | The currencies that the connector should process. In card-present scenarios, Adyen can support additional currencies through [Dynamic Currency Conversion](https://www.adyen.com/pos-payments/dynamic-currency-conversion) after the transaction request is sent to the payment terminal. Contact Adyen support to get a list of supported currencies. | Yes      | Yes               | "USD;EUR"            |
+| **Supported Tender Types**                 | The tender types that the connector should process.    | Yes      | Yes               | "GooglePay"          |
 
 5. Once the connector properties have been set, run the **1070 (Channel configuration**) distribution schedule job.
 
-## Configure Commerce Point-of-Sale for Google Pay
+## Configure Commerce POS for Google Pay
 
-The Point-of-Sale (POS) configuration will utilize the hardware profile's **EFT service** field configuration for the **Dynamics 365 Payment Connector for Adyen**. In headquarters, configure the EFT service for Dynamics 365 Payment Connector for Adyen as described in the [Set up Dynamics 365 Payment Connector for Adyen](adyen-connector-setup.md) article's [Set up a Dynamics 365 POS hardware profile section](adyen-connector-setup.md). 
+The POS configuration uses the hardware profile's **EFT service** field configuration for the **Dynamics 365 Payment Connector for Adyen**. For information on configuring the EFT service for the Dynamics 365 Payment Connector for Adyen in headquarters, see [Set up a Dynamics 365 POS hardware profile section](adyen-connector-setup.md#set-up-a-dynamics-365-pos-hardware-profile). 
 
-The previous Card Types > Processor mapping maps for the Adyen connector will capture the wallet card types used by Google Pay at the POS terminal. 
+The processor mapping for the Adyen connector captures the wallet card types used by Google Pay at the POS terminal. 
 
-### Using the payment express module with Google Pay
+### Usie the payment express module with Google Pay
 
 The **Payment Express** module works with supporting payment methods to offer site customers the option to check out faster using their payment service account information in the checkout process. The module references the configured connector button and returns the user-selected order details (addresses, contact information, and paying against the underlying payment method selected) to pre-populate the checkout form.
 
