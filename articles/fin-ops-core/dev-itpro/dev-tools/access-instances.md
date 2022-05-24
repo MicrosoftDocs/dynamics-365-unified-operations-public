@@ -2,7 +2,7 @@
 title: Deploy and access development environments
 description: This topic describes how to access development instances, configure local development VMs, and find configuration settings for developers and administrators.
 author: laneswenka
-ms.date: 05/04/2022
+ms.date: 05/024/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -11,7 +11,7 @@ ms.assetid: 4be8b7a1-9632-4368-af41-6811cd100a37
 ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+
 ---
 
 # Deploy and access development environments
@@ -24,7 +24,7 @@ This topic describes how to access development instances, configure local develo
 > - Microsoft Support may provide limited troubleshooting on Tier 1 development environments.
 > - In certain circumstances, a fresh deploy of a Tier 1 environment may be requested by Microsoft Support to resolve an issue.
 > - Development environments should not contain business critical data and are considered disposable.
-> - Only 120 per tenant environments are supported, so we recommend to limit the number of cloud hosted environments under a specific tenant to allow enough capacity to be able to deploy sandbox and production environments.
+> - Only 120 per tenant environments are supported. We recommend that you limit the number of cloud-hosted environments under a specific tenant to allow enough capacity to be able to deploy sandbox and production environments.
  
 
 ## Definitions
