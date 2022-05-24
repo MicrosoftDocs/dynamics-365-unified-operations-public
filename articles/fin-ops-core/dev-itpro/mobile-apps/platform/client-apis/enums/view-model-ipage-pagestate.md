@@ -2,7 +2,7 @@
 title: PageState enumeration
 description: Represents the various high-level states the page can be in.
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/24/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
