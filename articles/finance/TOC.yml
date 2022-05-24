@@ -270,6 +270,8 @@
           href: accounts-payable/resolve-invoice-totals-invoice-matching-discrepancies.md
         - name: Research or resolve exceptions
           href: accounts-payable/tasks/research-resolve-exceptions.md
+      - name: Accounts payable posting
+        href: general-ledger/accts-payble-posting.md
       - name: Vendor posting profiles
         href: accounts-payable/vendor-posting-profiles.md
       - name: Create charges codes
@@ -348,8 +350,12 @@
         href: accounts-receivable/tasks/establish-customer-payment-fees.md
       - name: Customer payment insights (preview)
         href: accounts-receivable/payment-insights-overview.md
+      - name: Accounts receivable posting
+        href: general-ledger/accts-recvble-posting.md 
       - name: Customer posting profiles
         href: accounts-receivable/customer-posting-profiles.md
+      - name: Create charges codes
+        href: accounts-receivable/create-charges-codes.md
       - name: Copy customers by using shared number sequences
         href: accounts-receivable/copy-customer.md
       - name: Customer workflow
@@ -470,6 +476,8 @@
           href: accounts-receivable/centralized-payments-accounts-receivable.md
         - name: Deposit customer payments
           href: accounts-receivable/tasks/deposit-customer-payments.md
+        - name: Set up and process bridged payments
+          href: accounts-receivable/set-up-and-process-bridged-payments.md          
         - name: SEPA direct debit overview
           href: accounts-receivable/sepa-direct-debit-overview.md
         - name: SEPA direct debit mandate
@@ -1049,7 +1057,15 @@
           - name: Recommended practices for posting profiles
             href: general-ledger/recommended-practices-pstg-prfles.md
           - name: Accounts for automatic transations
-            href: general-ledger/accounts-for-auto-transactions.md 
+            href: general-ledger/accounts-for-auto-transactions.md
+          - name: Accounts payable posting
+            href: general-ledger/accts-payable-posting.md
+          - name: Accounts receivable posting
+            href: general-ledger/accts-recvble-posting.md
+          - name: Asset leasing posting
+            href: asset-leasing/set-up-lease-posting-accts.md
+          - name: Fixed asset posting
+            href: fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md 
         - name: Allocation rules
           items:
           - name: Ledger allocation rules
