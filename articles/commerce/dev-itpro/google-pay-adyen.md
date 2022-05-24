@@ -42,7 +42,7 @@ You must also enable the enhanced wallet feature in Dynamics 365 Commerce headqu
 
 ## Map the Google Pay payment method
 
-Google Pay is a digital wallet payment method. Set up payment mapping for Google Pay as described in the [Wallet payment support](../wallets.md) article. 
+Google Pay is a digital wallet payment method. For information on setting up payment mapping for Google Pay, see [Wallet payment support](../wallets.md). 
 
 To map the Google Pay payment method to card tender types for both point of sale (POS) and online channels, follow these steps.
 
@@ -62,9 +62,16 @@ To map the Google Pay payment method to card tender types for both point of sale
 
 ## Configure a Commerce online store for Google Pay
 
-In Commerce headquarters, navigate to the **Retail and Commerce \> Channels \> Online stores** and select your site's online store channel by clicking the channel's **Retail Channel Id**. In the **Set up** menu, drop down the **Payment accounts** section. If not already set up, add the **Dynamics 365 Payment Connector for Adyen** according to the directions described in the [Set up Dynamics 365 Payment Connector for Adyen](adyen-connector-setup.md) article. In most cases, the **Dynamics 365 Payment Connector for Adyen** must be listed as the first Connector for your channel (as the primary).  Then followed by other connectors to be used (the **Dynamics 365 Payment Connector for PayPal** and **Dynamics 365 Payment Connector for GooglePay**).
+To configure a Commerce online store to use Google Pay, follow these steps.
 
-Once the Adyen Connector is configured, click on **Add** to add the **Dynamics 365 Payment Connector for GooglePay**. Fill in the following merchant properties for the connector:
+1. In Commerce headquarters, navigate to the **Retail and Commerce \> Channels \> Online stores**.
+1. Select your site's online store channel by selecting the channel's **Retail Channel Id**. 
+1. On the **Payment accounts** FastTab, under **Connector**, check to see if the **Dynamics 365 Payment Connector for Adyen** connector is listed. If not, follow the directions in [Set up Dynamics 365 Payment Connector for Adyen](adyen-connector-setup.md) to add the connector. 
+
+    > [!NOTE]
+    > In most cases, the **Dynamics 365 Payment Connector for Adyen** must be listed as the first connector for your channel (otherwise known as the primary connector), followed by other connectors to be used such as the **Dynamics 365 Payment Connector for PayPal** and **Dynamics 365 Payment Connector for GooglePay** connectors.
+
+1. Once the **Dynamics 365 Payment Connector for Adyen** has been added, select **Add** to add the **Dynamics 365 Payment Connector for GooglePay**, and then set the following properties for the connector:
 
 | Field                                  | Description                                                  | Required | Automatically set | Sample value         |
 | -------------------------------------- | ------------------------------------------------------------ | -------- | ----------------- | -------------------- |
@@ -77,7 +84,7 @@ Once the Adyen Connector is configured, click on **Add** to add the **Dynamics 3
 | Supported Currencies                   | Enter the currencies that the connector should process. In card-present scenarios, Adyen can support additional currencies through [Dynamic Currency Conversion](https://www.adyen.com/pos-payments/dynamic-currency-conversion) after the transaction request is sent to the payment terminal. Contact Adyen support to get a list of supported currencies. | Yes      | Yes               | "USD;EUR"            |
 | Supported Tender Types                 | Enter the tender types that the connector should process.    | Yes      | Yes               | "GooglePay"          |
 
-Once the merchant information has been filled, run the **1070** Channel configuration distribution schedule.
+5. Once the connector properties have been set, run the **1070 (Channel configuration**) distribution schedule job.
 
 ## Configure Commerce Point-of-Sale for Google Pay
 
