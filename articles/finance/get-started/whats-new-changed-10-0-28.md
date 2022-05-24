@@ -49,10 +49,10 @@ The following table lists the features that are included in this release. We mig
 | General ledger   | Option to disply main account category on trial balance | This feature allwos you to add the main account category as a column on the **Trial balance** list page. The option, **Display main account category** has been added under the **Columns to display** button on the trial balance.   | Default |
 | Tax calculation  | Integration with general journal   |  [Tax Calculation integration with Finance and Operations](../localizations/global-tax-calcuation-service-overview.md)  | Parameter   | 
 | Tax calculation  | Integration with vendor invoice journal   | [Tax Calculation integration with Finance and Operations](../localizations/global-tax-calcuation-service-overview.md)  | Parameter   | 
-|    |    |    |    |
+|  Accounts payable  |  Enabling purchase order prepayment functionality    |  Prepayment invoice functionality can be used either the configuration key **Journalizing customer\vendor settlement transactions** is enable or disable. To use prepayment invoices functionality set the option **Use prepayment invoice** to **Yes** (Accounts payable parameters > Ledger and sales tax, **Prepayment invoice** FastTab).   |  Parameter  |
+|  Fixed assets (Russia)  |  Start and finish date of depreciation   |  You can select the **From date when put into operation** value in the **Depreciation start date** field. In this case the system calculates the depreciation from the date of putting into operation and complete the depreciation to the date of disposal.   | Parameter   | 
 |    |    |    |    | 
 |    |    |    |    | 
-
 
 
 ## Feature enhancements included in this release
