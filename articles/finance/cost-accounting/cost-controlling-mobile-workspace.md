@@ -4,7 +4,7 @@
 title: Cost controlling mobile workspace
 description: This topic provides information about the Cost controlling mobile workspace. This workspace lets cost center managers view information about cost center performance anytime and anywhere. 
 author: AndersGirke
-ms.date: 12/01/2017
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,7 +30,7 @@ ms.search.validFrom: 2016-11-30
 # Cost controlling mobile workspace
 
 [!include [banner](../includes/banner.md)]
-[!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
+[!include [mobile app deprecation](../../fin-ops-core/dev-itpro/includes/mobile-app-deprecation-banner.md)]
 
 This topic provides information about the **Cost controlling** mobile workspace. This workspace lets cost center managers view information about cost center performance anytime and anywhere.
 
