@@ -2,7 +2,7 @@
 title: Value type
 description: Value control type. This is the base class for single value controls.
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/24/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
