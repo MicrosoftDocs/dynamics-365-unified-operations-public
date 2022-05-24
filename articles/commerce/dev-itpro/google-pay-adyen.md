@@ -4,7 +4,7 @@
 title: Configure Google Pay with Adyen
 description: This topic describes how to configure Google Pay with Adyen in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 05/20/2022
+ms.date: 05/24/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -80,8 +80,7 @@ The Point-of-Sale (POS) configuration will utilize the hardware profile's **EFT 
 
 The previous Card Types > Processor mapping maps for the Adyen connector will capture the wallet card types used by Google Pay at the POS terminal. 
 
-
-### Using the Payment Express module with Google Pay
+### Using the payment express module with Google Pay
 
 The **Payment Express** module works with supporting payment methods to offer site customers the option to check out faster using their payment service account information in the checkout process. The module references the configured connector button and returns the user-selected order details (addresses, contact information, and paying against the underlying payment method selected) to pre-populate the checkout form.
 
@@ -94,7 +93,7 @@ As the user completes the action in the Google Pay iFrame, they are directed to 
 
 The customer has the option to review the order, change checkout order details if desired, and will then select the **Place order** button to finalize the order.
 
-### Configure your Commerce site builder site for Google Pay
+### Configure Google Pay in site builder 
 
 Before configuring your fragments or pages with Google Pay, make sure your Content security policy's are set in Commerce site builder for your site. To do this, log in to your Commerce site builder tool:
 
@@ -103,7 +102,7 @@ Before configuring your fragments or pages with Google Pay, make sure your Conte
 1. Click **Add** and add a line with `*.google.com` to the **child-src**, **connect-src**, **frame-ancestors**, **frame-src**, **img-src**, **script-src**, and **style-src** directives.
 1. When completed, click the **Save and publish** button at the top of the page to commit the changes.
 
-### Set up the Payment Express fragment with Google Pay in site builder
+### Configure the payment express fragment with Google Pay in site builder
 
 To set up the Payment Express fragment with Google Pay for the online store, follow these steps:
 
@@ -135,7 +134,7 @@ To set up the Payment Express fragment with Google Pay for the online store, fol
 12. Select **Save** to save your changes, and click **Finish editing** to complete editing the fragment.
 13. Click **Publish** to publish the fragment for use.
 
-### Set up the Checkout page with the Payment Express fragment
+### Set up the checkout page with the payment express fragment
 
 To set up the Payment Express fragment with Google Pay in the Checkout page, follow these steps.
 
@@ -153,7 +152,7 @@ To set up the Payment Express fragment with Google Pay in the Checkout page, fol
 8. Click the **Save** button to save your changes.
 9. Click on **Finish editing** to complete editing the page, and **Publish** to publish your changes live.
 
-### Set up the Cart page with the Payment Express fragment
+### Set up the cart page with the payment express fragment
 
 To set up the Payment Express fragment with Google Pay in the Cart page, follow these steps.
 
@@ -168,7 +167,7 @@ To set up the Payment Express fragment with Google Pay in the Cart page, follow 
 
 Users can include up to three supported **Payment Express** modules in the cart **Payment Express** slot (Three available supported payment options).
 
-### Set up Google Pay as an option in the Checkout payment section
+### Set up Google Pay as an option in the checkout payment section
 
 To set up Google Pay as a normal payment option in the **Payment Method** section of the checkout page, follow the steps below. This is for payment-only, non-express functionality (the checkout form will be filled out by the user and returning from the Google Pay payment page will only ready the checkout for payment by Google Pay- no Google account information will be used to overwrite the filled checkout details).
 
@@ -185,7 +184,7 @@ To set up Google Pay as a normal payment option in the **Payment Method** sectio
 11. Select **Save** to save your changes.
 12. Click on **Finish editing** to complete editing the page, and **Publish** to publish your changes live.
 
-### Modes of Delivery
+### Modes of delivery
 
 With the Payment Express module using Google Pay, the first delivery option returned against the shipping address selected from the Google Pay account will be pre-selected. Users will have a chance to click **change** and adjust the shipping address to a different option if desired. 
 
