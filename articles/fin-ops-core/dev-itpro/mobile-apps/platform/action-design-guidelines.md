@@ -2,7 +2,7 @@
 title: Action design guidelines
 description: This topic provides action design guidelines for mobile apps.
 author: tonyafehr
-ms.date: 09/17/2019
+ms.date: 05/24/2022
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: tfehr
