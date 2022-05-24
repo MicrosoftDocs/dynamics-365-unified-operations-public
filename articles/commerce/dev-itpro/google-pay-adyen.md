@@ -92,18 +92,18 @@ The POS configuration uses the hardware profile's **EFT service** field configur
 
 The processor mapping for the Adyen connector captures the wallet card types used by Google Pay at the POS terminal. 
 
-### Usie the payment express module with Google Pay
+### Use the payment express module with Google Pay
 
-The **Payment Express** module works with supporting payment methods to offer site customers the option to check out faster using their payment service account information in the checkout process. The module references the configured connector button and returns the user-selected order details (addresses, contact information, and paying against the underlying payment method selected) to pre-populate the checkout form.
+The Commerce payment express module works with supporting payment methods to offer site customers the option to check out faster using their payment service account information during the checkout process. The payment express module references the configured connector button and returns the user-selected order details (address, contact information, and payment method) to prepopulate the checkout form.
 
-With Google Pay, selecting the Google Pay button in the Payment Express section will launch the Google Pay payment iFrame window. A user will log in to their Google account and can use their account shipping address, billing address, email, and Google Pay payment method of choice to pay for the transaction.
+With Google Pay, selecting the Google Pay button in the **Payment Express** section launches the Google Pay iframe window where users can sign in to their Google account to use their account shipping address, billing address, email, and Google Pay payment method of choice to pay for the transaction.
 
-As the user completes the action in the Google Pay iFrame, they are directed to the Commerce site checkout page with the checkout form pre-populated with their chosen details. Note that upon return of the user from the Google Pay window back to the checkout page:
+When users complete the action in the Google Pay window, they are directed to the Commerce site checkout page with the checkout form prepopulated with their Google Pay account details. After users return to the checkout page from the Google Pay window:
 
-- In the Payment Express flow, the first **Delivery Option** available for the shipping address returned will be pre-selected for the customer.  
-- With Google Pay, a contact email address is not returned. Guest checkout users will still need to enter an email address in the contact section of the checkout page. Signed-in users will have their contact data automatically populated from their Dynamics customer account (their primary email used for authentication).
+- In the Payment Express flow, the first **Delivery Option** available for the shipping address returned will be preselected for the customer.  
+- With Google Pay, a contact email address is not returned. Guest checkout users will need to enter an email address in the contact section of the checkout page. Signed-in users will have their contact data automatically populated from their Dynamics customer account (their primary email used for authentication).
 
-The customer has the option to review the order, change checkout order details if desired, and will then select the **Place order** button to finalize the order.
+Customers have the option to review orders and change checkout order details before selecting **Place order** to finalize the order.
 
 ### Configure Google Pay in site builder 
 
