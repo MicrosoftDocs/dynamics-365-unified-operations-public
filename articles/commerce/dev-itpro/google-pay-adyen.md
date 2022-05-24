@@ -107,12 +107,14 @@ Customers have the option to review orders and change checkout order details bef
 
 ### Configure Google Pay in site builder 
 
-Before configuring your fragments or pages with Google Pay, make sure your Content security policy's are set in Commerce site builder for your site. To do this, log in to your Commerce site builder tool:
+Before configuring your fragments or pages with Google Pay, you must ensure that your content security policies are set in Commerce site builder for your site. 
+
+To ensure that your content security policies are set in site builder, follow these steps.
 
 1. Navigate to your site in site builder (choosing the site from the **Home** screen, or selecting the site in the upper right site-picker menu).
-1. Open **Site Settings** > **Extensions** and go to the **Content security policy** tab.
-1. Click **Add** and add a line with `*.google.com` to the **child-src**, **connect-src**, **frame-ancestors**, **frame-src**, **img-src**, **script-src**, and **style-src** directives.
-1. When completed, click the **Save and publish** button at the top of the page to commit the changes.
+1. In your site, go to **Site settings \> Extensions**.
+1. On the **Content security policy** tab, add a line with `*.google.com` to the **child-src**, **connect-src**, **frame-ancestors**, **frame-src**, **img-src**, **script-src**, and **style-src** directives.
+1. When done, select **Save and publish**.
 
 ### Configure the payment express fragment with Google Pay in site builder
 
