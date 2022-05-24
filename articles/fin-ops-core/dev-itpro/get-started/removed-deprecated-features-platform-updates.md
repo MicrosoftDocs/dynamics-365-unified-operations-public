@@ -4,7 +4,7 @@
 title: Removed or deprecated platform features
 description: This topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
 author: sericks007
-ms.date: 04/26/2022
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -45,11 +45,11 @@ Detailed information about objects in Finance and Operations apps can be found i
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | We are removing deprecating the Finance and Operations (Dynamics 365) mobile application and platform to consolidate to a single mobile platform, which is Power Apps. |
+| **Reason for deprecation/removal** | We are deprecating the Finance and Operations (Dynamics 365) mobile application and platform to consolidate to a single mobile platform, which is Power Apps. |
 | **Replaced by another feature?**   | Yes, mobile experiences over Finance and Operations app data can be built with Power Platform integration. See [Building mobile experiences](../power-platform/build-mobile-experiences.md) for more details. |
 | **Product areas affected**         | Finance and Operations apps |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated. End of support date is targeted at October 2024. |
+| **Status**                         | Deprecated. End of support date is targeted for October 2024. |
 
 
 ## Platform updates for version 10.0.29 of Finance and Operations apps
