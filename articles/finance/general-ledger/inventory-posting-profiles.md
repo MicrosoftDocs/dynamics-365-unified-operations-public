@@ -126,7 +126,7 @@ The following table describes **Issue** status.
 | Deducted          | This status is used when the transaction is physically updated. For a sales order, this is when the packing slip is posted; for a purchase order return, this when the product receipt is posted.                                                                      |
 | Sold              | This is the status used when the transaction is financially updated. For a purchase order or sales order, this is when the invoice is generated.|
 
-For more information about the inventory transactions, go to [Inventory transactions detail](supply-chain/inventory/inventory-transactions-details.md).
+For more information about the inventory transactions, go to [Inventory transactions detail](/supply-chain/inventory/inventory-transactions-details.md).
 
 ## Configure an inventory posting profile
 
