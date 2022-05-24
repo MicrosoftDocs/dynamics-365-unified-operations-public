@@ -20,7 +20,7 @@ ms.search.validFrom: 2022-05-19
 
 This topic explains new changes introduced to the servicing process.  
 
-Microsoft has introduced new steps in servicing pipeline pre-servicing and post-servicing that enables DB sync precheck and index creation on tables out of offline servicing. This means the environment will be up and running, accessible to perform regular activities but it cannot service as all servicing operations are restricted during pre-servicing and post-servicing. The main benefit of the change is to help reduce the overall servicing downtime. 
+Microsoft has introduced new steps in pre-servicing and post-servicing that enables DB sync precheck and index creation on tables out of offline servicing. This means the environment will be up and running, accessible to perform regular activities but it cannot service as all servicing operations are restricted during pre-servicing and post-servicing. The main benefit of the change is to help reduce the overall servicing downtime. 
 
 ## Pre-servicing
 
