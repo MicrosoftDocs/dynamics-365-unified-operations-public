@@ -2,7 +2,7 @@
 title: FileUploaderDesign type
 description: File uploader design object type. 
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/24/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
