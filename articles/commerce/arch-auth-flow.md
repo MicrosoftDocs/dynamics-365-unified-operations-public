@@ -4,7 +4,7 @@
 title: Dynamics 365 Commerce authentication flows
 description: This topic provides an overview of the various authentication flows in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 06/30/2020
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -66,8 +66,8 @@ The following table describes the set of supported authentication methods for AP
 | Scenario | Unsupported authentication method | Details |
 |----------|-----------|------------|
 | Dynamics 365 POS authentication flows | Authentication without device activation (that is, without a device token) | All POS-related Commerce Scale Unit APIs require a device activation token for authentication. |
-| Dynamics 365 Commerce authentication flows | Site user authentication by using Azure AD B2C with auth code flow or On-behalf-of flows | Auth code flow and On-behalf-of flows are not currently supported with e-Commerce site user authentication |
-| Third-party e-Commerce authentication flows | Site user authentication by using an external identity provider that supports OpenID Connect with auth code flow or On-behalf-of flows | Auth code flow and On-behalf-of flows are not currently supported with E-commerce site user authentication |
+| Dynamics 365 Commerce authentication flows | Site user authentication by using Azure AD business-to-consumer (B2C) with authorization code or On-Behalf-Of flows | Authorization code and On-Behalf-Of flows are not currently supported with e-commerce site user authentication. |
+| Third-party e-commerce authentication flows | Site user authentication by using an external identity provider that supports OpenID Connect with authorization code or On-behalf-of flows | Authorization code and On-behalf-of flows are not currently supported with e-commerce site user authentication. |
 
 ## Dynamics 365 POS employee authentication flows
 
