@@ -4,7 +4,7 @@
 title: Business logic events
 description: Code that executes in business logic can make runtime modifications to the metadata of Pages, Actions, and Controls.
 author: tonyafehr
-ms.date: 08/14/2017
+ms.date: 05/24/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
