@@ -4,7 +4,7 @@
 title: External and inline script modules
 description: This topic covers external and inline script modules and describes how to add them to templates in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 04/02/2021
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -66,7 +66,7 @@ To add a script module to a template, follow these steps.
 
     ![Adding a new module.](media/script-modules-2.png)
 
-1. In the **Add Module** dialog box, select either the **External script** module or the **Inline script** module, and then select **OK**.
+1. In the **Select modules** dialog box, select either the **External script** module or the **Inline script** module, and then select **OK**.
 
     ![Adding a script module.](media/script-modules-3.png)
 

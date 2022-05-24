@@ -130,9 +130,9 @@ This section describes some typical environment and data management events that 
 
 LCS provides [self-service tools](../../dev-itpro/deployment/infrastructure-stack.md) and [database movement operations](../../dev-itpro/database/dbmovement-operations.md) that are used to perform environment and data management tasks. Here are some examples:
 
-**Event:** [Requesting a production instance](../imp-lifecycle/prepare-go-live.md#requesting-the-production-environment)
+**Event:** [Requesting a production instance](../imp-lifecycle/go-live-faq.md#when-can-i-configure-and-request-my-production-environment)
 
-- Complete the [Go-live checklist](../imp-lifecycle/prepare-go-live.md), and submit it to the [Microsoft FastTrack](/dynamics365/fasttrack/) team.
+- Complete the [Go-live readiness review](../imp-lifecycle/prepare-go-live.md), and submit it to the [Microsoft FastTrack](/dynamics365/fasttrack/) team.
 - Complete the [LCS Subscription estimator](../../dev-itpro/lifecycle-services/subscription-estimator.md) before you request a production instance.
 - Complete all the implementation tasks that are specified in the [LCS methodology](../../dev-itpro/lifecycle-services/create-methodology.md).
 
@@ -284,7 +284,7 @@ Microsoft has invested in an extensive toolset to monitor and diagnose customers
 |---|---|
 | <ul><li>Monitor availability of the service.</li><li>Continuously monitor and alert through health metrics and watchdogs for critical components such as Application Object Server (AOS), Batch, Data Import/Export Framework (DIXF), Commerce, and Management Reporter.</li><li>Monitor for performance degradation that is caused by infrastructure services (such as Azure Active Directory \[Azure AD\] and Azure SQL).</li><li>If Microsoft determines that a single process or batch job is causing aberrations, that process or job will be terminated after communication with the customer.</li></ul> | <ul><li>Monitor changes to application configurations and extensions that can cause functional and performance issues.</li><li>Application errors must be diagnosed by using the monitoring tools. Use these tools to diagnose user-reported performance aberrations.</li><li>Inform Microsoft if there is expected load on the system beyond projected peak usage.</li><li>If the applicable service is unavailable in the production instance, the customer can use LCS to report a [production outage](../../dev-itpro/lifecycle-services/report-production-outage.md).</li></ul> |
 
-By submitting support requests online, via LCS, customers enable Microsoft to deliver fast and deep technical expertise in the most effective and efficient manner. Although a phone option is available, it should only be used  if the online option is not available. For more information, see [Phone support options](/power-platform/admin/support-overview.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json#is-there-a-phone-number-i-can-call-to-contact-support).
+By submitting support requests online, via LCS, customers enable Microsoft to deliver fast and deep technical expertise in the most effective and efficient manner. Although a phone option is available, it should only be used  if the online option is not available. For more information, see [Phone support options](/power-platform/admin/support-overview?toc=%2Fdynamics365%2Ffin-ops-core%2Fdev-itpro%2Ftoc.json&bc=%2Fdynamics365%2Fbreadcrumb%2Ftoc.json#is-there-a-phone-number-i-can-call-to-contact-support).
 
 ## Incident management
 

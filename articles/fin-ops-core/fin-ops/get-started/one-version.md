@@ -155,7 +155,7 @@ After you apply a service update for a supported version, this functionality wil
 > - Version N-1 is one version older than N, such as 10.0.24
 > - Version N-2 is two versions older than N, such as 10.0.23
 > - Version N-3 is three versions older than N, such as 10.0.22
-> - Version N-4 is four versions older than N, such as 10.0.22 (In this example, customers on version 10.0.22 **can't** pause updates.)
+> - Version N-4 is four versions older than N, such as 10.0.21 (In this example, customers on version 10.0.21 **can't** pause updates.)
 
 ### How do the automatic updates affect my Microsoft-managed additional sandbox environments in my LCS implementation project? 
 

@@ -2,7 +2,7 @@
 title: Dual-write FAQ
 description: This topic answers frequently asked questions about dual-write.
 author: tonyafehr
-ms.date: 07/21/2020
+ms.date: 05/20/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -24,7 +24,7 @@ This topic lists frequently asked questions about dual-write and provides brief 
 
 ### Do you plan to enable dual-write to use Dataverse as a hub between multiple Finance and Operations environments? If Dataverse is used as a hub, data can be synced between two or more Finance and Operations environments.
 
-The current plan of row is to restrict dual-write to a one-to-one (1:1) mapping between a single Finance and Operations environment and a single Dataverse environment.
+The current plan of record is to restrict dual-write to a one-to-one (1:1) mapping between a single Finance and Operations environment and a single Dataverse environment.
 
 ### Can I control the sequencing of maps in dual-write, as I can in Data integrator?
 

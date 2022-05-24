@@ -2,7 +2,7 @@
 # required metadata
 
 title: Accounting distributions
-description: This topic provides information about accounting distributions and describes the options that are available for processing them.
+description: This topic provides information about accounting distributions and describes available processing options.
 author: sunfzam
 ms.date: 09/17/2020
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form: AccountingDistribution
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 17231
 ms.assetid: 9030355d-8e6e-408b-9e7d-7b346eaa652c

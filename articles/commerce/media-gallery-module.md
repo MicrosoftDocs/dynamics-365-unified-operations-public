@@ -4,7 +4,7 @@
 title: Media gallery module
 description: This topic covers media gallery modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 08/02/2021
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -83,18 +83,21 @@ When the image source is derived from the page context, the product ID from the 
 To add a media gallery module to a marketing page, follow these steps.
 
 1. Go to **Templates**, and select **New** to create a new template.
-1. In the **New Template** dialog box, under **Template name**, enter **Marketing template**, and then select **OK**.
-1. In the **Body** slot, select the ellipsis (**...**), and then select **Add Module**.
-1. In the **Add Module** dialog box, select the **Default Page** module, and then select **OK**.
-1. In the **Main** slot of the default page, select the ellipsis (**...**), and then select **Add Module**.
-1. In the **Add Module** dialog box, select the **Container** module, and then select **OK**.
+1. In the **New template** dialog box, under **Template name**, enter **Marketing template**, and then select **OK**.
+1. In the **Body** slot, select the ellipsis (**...**), and then select **Add module**.
+1. In the **Select modules** dialog box, select the **Default Page** module, and then select **OK**.
+1. In the **Main** slot of the default page, select the ellipsis (**...**), and then select **Add module**.
+1. In the **Select modules** dialog box, select the **Container** module, and then select **OK**.
 1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it.
 1. Go to **Pages**, and select **New** to create a new page.
-1. In the **Choose a template** dialog box, select the **Marketing template** template. Under **Page name**, enter **Media gallery page**, and then select **OK**.
-1. In the **Main** slot of the new page, select the ellipsis (**...**), and then select **Add Module**.
-1. In the **Add Module** dialog box, select the **Container** module, and then select **OK**.
-1. In the **Container** slot, select the ellipsis (**...**), and then select **Add Module**.
-1. In the **Add Module** dialog box, select the **Media gallery** module, and then select **OK**.
+1. In the **Create a new page** dialog box, under **Page name**, enter **Media gallery page**, and then select **Next**.
+1. Under **Choose a template**, select the **Marketing template** you created, and then select **Next**.
+1. Under **Choose a layout**, select a page layout (for example, **Flexible layout**), and then select **Next**.
+1. Under **Review and finish**, review the page configuration. If you need to edit the page information, select **Back**. If the page information is correct, select **Create page**. 
+1. In the **Main** slot of the new page, select the ellipsis (**...**), and then select **Add module**.
+1. In the **Select modules** dialog box, select the **Container** module, and then select **OK**.
+1. In the **Container** slot, select the ellipsis (**...**), and then select **Add module**.
+1. In the **Select modules** dialog box, select the **Media gallery** module, and then select **OK**.
 1. In the property pane for the media gallery module, under **Image source**, select **Productid**. Then, in the **Product id** field, enter a product ID.
 1. Select **Save**, and then select **Preview** to preview the page. You should be able to see the images for the product in a gallery view.
 1. To use only curated images, in the property pane, under **Image source**, select **Productid**. Then, under **Images**, select **Add an image** as many times as required to add images from the Media Library.

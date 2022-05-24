@@ -406,6 +406,8 @@
             href: deployment/onprem-SSRSHA.md
           - name: Configure proxies for on-premises environments
             href: deployment/onprem-reverseproxy.md
+          - name: Configure the Warehousing app for on-premises deployments
+            href: deployment/warehousing-for-on-premise-deployments.md
           - name: Install network printer devices in on-premises environments
             href: analytics/install-network-printer-onprem.md
           - name: On-premises diagnostics
@@ -1016,6 +1018,8 @@
           href: lifecycle-services/azure-data-explorer.md
       - name: Restart environment services
         href: lifecycle-services/restart-environment-services.md
+      - name: Update environment administrator
+        href: lifecycle-services/update-environment-admin.md
       - name: Report a production outage
         href: lifecycle-services/report-production-outage.md
       - name: Track user sign-ins

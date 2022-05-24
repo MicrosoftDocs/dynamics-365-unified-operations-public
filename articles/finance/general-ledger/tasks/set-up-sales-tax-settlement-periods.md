@@ -14,12 +14,12 @@ ms.technology:
 ms.search.form: TaxPeriod   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -31,7 +31,7 @@ This topic explains how to set up sales tax settlement periods. Sales tax settle
 
 This task uses the USMF demo company.
 
-1. In the navigation pane, go to **Modules > Tax > Indirect taxes > Sales tax > Sales tax settlement periods**.
+1. Go to **Tax > Indirect taxes > Sales tax > Sales tax settlement periods**.
 2. Select **New**.
 3. In the **Settlement period** field, type a value.
 4. In the **Description** field, type a value.

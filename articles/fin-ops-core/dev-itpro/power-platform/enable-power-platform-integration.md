@@ -4,7 +4,7 @@
 title: Enable the Microsoft Power Platform integration
 description: This topic explains how to enable the Microsoft Power Platform integration by using Microsoft Dynamics Lifecycle Services (LCS) for Finance and Operations apps and Dataverse.
 author: jaredha
-ms.date: 04/11/2022
+ms.date: 05/16/2022
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -27,25 +27,50 @@ ms.dyn365.ops.version: 10.0.0
 
 [!include[banner](../includes/banner.md)]
 
-
-
 The integration of Finance and Operations apps with Microsoft Power Platform can be enabled when you create a new Finance and Operations apps environment in Microsoft Dynamics Lifecycle Services (LCS). Alternatively, Microsoft Power Platform can be enabled in an existing Finance and Operations apps environment. For both options, you must complete the setup prerequisites.
 
-## Environment lifecycle considerations
+Power Platform integration lets you complete the following tasks:
 
-By default, all Finance and Operations apps environments that are managed by LCS will receive a linked Power Platform environment without Dataverse. The relationship is one to one. Over time, your Finance and Operations apps will be migrated to this location. You can determine whether an environment is linked to an environment from LCS by looking at the Finance and Operations apps URL on the environment details page in the Power Platform admin center.
+* Create apps and flows by using the new Power Platform environment that is automatically created for you.
+* Integrate Finance and Operations apps data with the Dataverse platform by using virtual tables, business events, and dual-write features.
+* Install and connect other Dynamics 365 applications with your Finance and Operations apps.
+* Install add-ins, and connect them with your Finance and Operations apps.
 
-:::image type="content" source="media/LinkedPowerPlatformEnvironment.png" alt-text="Linked Power Platform environment":::
+## Initial Power Platform environment
 
-This environment can't be deleted or reset, and a Dataverse database can't be manually added to it. To add Dataverse and fully set up the Microsoft Power Platform integration, follow the steps later in this topic.
+By default, all Finance and Operations apps environments (sandbox and production) that are managed by LCS will receive an initial Power Platform environment **without** Dataverse. This environment is linked to your Finance and Operations environment, as shown in the following illustration. The relationship is one to one. Over time, your Finance and Operations apps will be migrated to this location in Power Platform admin center. You can determine whether an environment in Power Platform admin center is linked to an environment from LCS by looking at the Finance and Operations apps URL on the environment details page in Power Platform admin center.
 
-Alternatively, if you want to reuse an existing Dataverse environment for your Microsoft Power Platform integration scenarios (virtual entities, add-ins, dual-write functionality, and more), follow the instructions in [Set up dual-write for an existing Dataverse environment](../data-entities/dual-write/lcs-setup.md#set-up-dual-write-for-an-existing-dataverse-environment).
+![A Power Platform environment in Power Platform admin center is created with the same name as the Finance and Operations environment from LCS. The Finance and Operations URL is populated with the URL of the Finance and Operations instance.](media/LinkedPowerPlatformEnvironment.png)
+
+The Power Platform environment that is connected to your environment in LCS enables Finance and Operations apps customers to take advantage of Microsoft Power Platform. This Power Platform environment can't be deleted or reset, and a Dataverse database can't be manually added to it in Power Platform admin center. To add Dataverse and fully enable Microsoft Power Platform integration capabilities, follow the instructions in the [Enable integration with an existing Power Platform environment](#connect-to-existing-dataverse) section of this topic.
+
+Alternatively, your organization might already have a Power Platform environment with Dataverse that you want to connect to your Finance and Operations environment. To reuse an existing Dataverse instance, follow the instructions in [Enable integration with an existing Power Platform environment](#connect-to-existing-dataverse). In this case, the initial Power Platform environment that was created when your Finance and Operations environment was created is disconnected and will no longer show the Finance and Operations apps URL. At that point, the initial environment can be deleted or used for another purpose.
+
+## Licensing and capacity considerations
+
+When you purchase a license for any Finance and Operations app, such as Dynamics 365 Finance or Dynamics 365 Supply Chain Management, your tenant is entitled to an additional 10 gigabytes (GB) of Dataverse database capacity. In addition, for each user license that you purchased, you receive an incremental amount of database capacity, as shown in the following illustration from Power Portal admin center.
+
+![Capacity view in Power Platform admin center.](media/PPI-Capacity.png)
+
+The same purchase of licenses entitles you to one self-service sandbox environment and production environment in LCS. Because of this, an initial Power Platform environment can automatically be created for every Finance and Operations apps environment. Every initial environment in Power Platform admin center is without Dataverse. Therefore, it uses only 1 GB of database capacity to provision apps that are created by using Power Apps and flows that are created by using Power Automate. When you set up Power Platform integration, a Dataverse database is added to the same environment. This database often consumes 3 GB or more.
+
+Additional add-on sandbox environments that customers purchase to use in LCS do **not** entitle them to additional Dataverse database capacity. Customers who will require Power Platform integration capabilities should purchase add-on Dataverse database storage. For more information about how to manage capacity in Power Platform admin center, see [Free up storage space](/power-platform/admin/free-storage-space).
+
+## Provisioning templates
+
+In several of the scenarios that are described in this topic, you will create a brand-new Power Platform environment with Dataverse. To help you quickly add all the applications that are required for your new instance, we have prepared several provisioning templates that bundle them together. The following table provides details about these templates.
+
+| Template name | Description | Apps included |
+|---------------|-------------|---------------|
+| Dynamics 365 Standard | This basic template prepares all the platform components for business events, virtual tables, dual-write functionality, and add-in support. Dual-write isn't enabled and won't automatically sync data when this template is selected. Select this template if you don't require a more specific template. | MicrosoftOperationsVEAnchor, DualWriteCoreAnchor, MsDynCE_CRMHub, MsDyn_FnOIntegrationMDLApp_Anchor |
+| Dynamics 365 Standard with dual-write | This template is the same as **Dynamics 365 Standard**, but it includes all the applications that are required for dual-write, so that you can quickly enable that feature after environment deployment. | MicrosoftOperationsVEAnchor, DualWriteCoreAnchor, MsDynCE_CRMHub, MsDyn_FnOIntegrationMDLApp_Anchor, MsDyn_DualWriteAppCoreAnchor |
+| Project Operations | This template is specific to the Dynamics 365 Project Operations scenario. It's available only if your tenant has licenses and entitlement for Project Operations. | MicrosoftOperationsVEAnchor, Dynamics365FinanceAndOperationsAnchor, ProjectOperations_Anchor |
 
 ## Prerequisites for setting up the Microsoft Power Platform integration
 
 The following list describes the prerequisites for setting up the Microsoft Power Platform integration.
 
-- Make sure that at least one gigabyte (GB) of Microsoft Power Platform database storage capacity space is available for your tenant. If this space isn't available, the setup will fail. View your capacity in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/resources/capacity). 
+- Make sure that at least 1 GB of Microsoft Power Platform database storage capacity space is available for your tenant. If this space isn't available, the setup will fail. View your capacity in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/resources/capacity). 
 
 - Identify your Finance and Operations apps environment administrator. You can find that information in the **Environment details** section.
 
@@ -58,18 +83,23 @@ The following list describes the prerequisites for setting up the Microsoft Powe
 
         ![Power Platform settings pane.](media/PowerPlatformSettings.png)
 
-- For organizations that **don't allow everyone** to create Microsoft Power Platform production environments, the Finance and Operations apps environment administrator account for your environment must be added to one of the following Microsoft Power Platform admin roles. To make this change, you must have the **Global administrator** role.
+- For organizations that **don't allow everyone** to create Microsoft Power Platform environments, the Finance and Operations apps environment administrator account for your environment must be added to one of the following roles in Azure Active Directory (Azure AD). To make this change, you must be assigned to the **Global administrator** role.
 
-    - Global admins
-    - Dynamics 365 admins
-    - Microsoft Power Platform admins
+    - Dynamics 365 Service Admin
+    - Power Platform Admin
+
 
     > [!NOTE]
-    > The preceding roles might provide more permissions than the Finance and Operations apps environment administrator account requires. Therefore, a more limited role for this integration will eventually be added to Azure Active Directory (Azure AD). The new role won't require any of the preceding roles. If you want to keep the administrator that has the least privileges, you can temporarily grant one of the preceding roles. Then, after the Microsoft Power Platform integration is set up, remove that role.
+    > The preceding roles might provide more permissions than the Finance and Operations apps environment administrator account requires. Therefore, a more limited role for this integration will eventually be added to Azure AD. The new role won't require any of the preceding roles. If you want to keep the administrator that has the least privileges, you can temporarily grant one of the preceding roles. Then, after the Microsoft Power Platform integration is set up, remove that role.
 
 - All users who create Microsoft Power Platform environments must be licensed. The Microsoft 365 admin center should be used to apply the **Dynamics 365 Unified Operations Plan** license, the **AX Enterprise** license, or an application-specific license such as **Dynamics 365 Finance** to the Finance and Operations apps environment administrator account.
 
 ## <a name="enable-during-deploy"></a>Enable integration during environment deployment
+
+> [!IMPORTANT]
+> When you enable Power Platform integration, a new Dataverse database is added to the initial Power Platform environment that was described earlier. If your organization already has a Dataverse instance that you want to connect to the Finance and Operations environment, **do not enable** Power Platform integration during environment creation in LCS. After deployment of the Finance and Operations environment is completed, you will be able to connect to an existing Power Platform environment by using the **Setup** button.
+>
+> Power Platform integration is **irreversible**, and the link can't be changed or removed. As part of the setup, you connect your Finance and Operations environment to a Power Platform environment. Runtime features such as virtual entities, business events, and dual-write all depend on this connection. Therefore, it can't be removed until you delete the Finance and Operations environment. This behavior resembles the behavior when you apply a service update from Microsoft. The only way to redo this action is to redeploy the environment.
 
 When you set up a new Finance and Operations apps environment in LCS, the deployment wizard includes several sections where you can set values. One of those sections is named **Power Platform Integration**.
 
@@ -78,32 +108,31 @@ When you set up a new Finance and Operations apps environment in LCS, the deploy
 Follow these steps to configure the **Power Platform Integration** section.
 
 1. Set the **Configure Power Platform Environment** option to **Yes**. Several additional settings become available.
-2. In the **Power Platform template** field, select one of the following values:
-
-    - **Dynamics 365 Standard** – This basic template is applicable to all Finance and Operations apps environments. Select this value if you don't require a more specific template.
-    - **Project Operations** – This template is specific to the Dynamics 365 Project Operations scenario. This value is available only if your tenant has licenses and entitlement for Project Operations.
-
-3. If you're deploying a DevTest or cloud-hosted environment, the **Environment Type** field is available. There, you can select the type of Dataverse environment that is created and linked. Otherwise, by default, the environment type is set to **Sandbox** for Tier 2 through Tier 5 acceptance test environments and **Production** for production environments.
+2. In the **Power Platform template** field, select a template. For more information, see the [Provisioning templates](#provisioning-templates) section of this topic.
+3. If you're deploying a DevTest or cloud-hosted environment, the **Environment Type** field is available. There, you can select the type of Dataverse instance that is created and linked. Otherwise, by default, the environment type is set to **Sandbox** for Tier 2 through Tier 5 acceptance test environments and **Production** for production environments.
 4. Select **Agree** to agree to the terms and conditions of the integration.
 
 > [!IMPORTANT]
-> The **language** and **currency** values of the Dataverse environment that is created and linked to your Finance and Operations apps environment are automatically determined, based on the physical address of your Azure AD tenant. For example, if the address is in Redmond, Washington, USA, the language will be English by default, and the currency will be US dollars (USD).
+> The **language** and **currency** values of the Dataverse instance that is created and linked to your Finance and Operations apps environment are automatically determined, based on the physical address of your Azure AD tenant. For example, if the address is in Redmond, Washington, USA, the language will be English by default, and the currency will be US dollars (USD).
 >
-> If you require values that differ from the default values, contact Microsoft support. We can help link an existing Dataverse environment that you manually provision to the Finance and Operations apps environment. Eventually, fields for the language and currency will be added as setup options, so that you can manually set them or accept the default values.
+> If you require values that differ from the default values, contact Microsoft support. We can help link an existing Dataverse instance that you manually provision to the Finance and Operations apps environment. Eventually, fields for the language and currency will be added as setup options, so that you can manually set them or accept the default values.
 
 ## <a name="enable-after-deploy"></a>Enable integration after environment deployment
 
-If the Microsoft Power Platform integration isn't enabled during deployment of the Finance and Operations apps environment, you can enable it in LCS after deployment. To do the setup after the Finance and Operations apps environment has been deployed, follow these steps.
+In many cases, you might want to enable the Power Platform integration after you've already deployed Finance and Operations apps. For example, you went live with Finance and Operations apps first and now want a new Dataverse instance to go with it, or you chose to connect to an existing Dataverse instance as described in the next section.
+
+> [!IMPORTANT]
+> Power Platform integration is **irreversible**, and the link can't be changed or removed. As part of the setup, you connect your Finance and Operations environment to a Power Platform environment. Runtime features such as virtual entities, business events, and dual-write all depend on this connection. Therefore, it can't be removed until you delete the Finance and Operations environment. This behavior resembles the behavior when you apply a service update from Microsoft. The only way to redo this action is to redeploy the environment.
 
 1. After the Finance and Operations apps environment has been deployed through LCS, open the **Environment details** page in LCS.
-2. In the **Power Platform integration** section, select **Setup**.
+2. In the **Power Platform integration** section, select **Setup**. *If you want to connect to an existing Dataverse organization, see the next section of this topic.*
 
     ![Setup button in the Power Platform Integration section.](media/powerplat_integration_step1.png) 
 
 3. In the **Power Platform environment setup** dialog box, agree to the terms and conditions, and then select **Setup**.
 
     > [!NOTE]
-    > A Dataverse-based environment will now be provisioned in the Power Platform admin center. The environment typically requires 1 GB of database storage capacity and will have the same name as your Finance and Operations apps environment. Dual-write platform-level components will be installed, but dual-write application components won't be set up or enabled. Those actions are separate.
+    > A Dataverse-based environment will now be provisioned in Power Platform admin center. The environment typically requires 1 GB of database storage capacity and will have the same name as your Finance and Operations apps environment. Dual-write platform-level components will be installed, but dual-write application components won't be set up or enabled. Those actions are separate.
 
 4. When you receive a message that states that the Microsoft Power Platform environment is being provisioned, select **OK**.
 
@@ -114,48 +143,52 @@ If the Microsoft Power Platform integration isn't enabled during deployment of t
 
     Typically, the setup takes between 60 and 90 minutes.
 
-    After the Dataverse environment is provisioned, the **Install a new add-in** and **Dual-write application** buttons become available in the **Power Platform integration** section.
+    After the Dataverse instance is provisioned, the **Install a new add-in** and **Dual-write application** buttons become available in the **Power Platform integration** section.
 
     ![Install a new add-in button.](media/InstallANewAddIn.png)
 
     ![Dual-write application button.](media/powerplat_integration_dwApp_button.png)
 
 > [!IMPORTANT]
-> The **language** and **currency** values of the Dataverse environment that is created and linked to your Finance and Operations apps environment are automatically determined, based on the physical address of your Azure AD tenant. For example, if that address is in Redmond, Washington, USA, the language will be English by default, and the currency will be US dollars (USD).
+> The **language** and **currency** values of the Dataverse instance that is created and linked to your Finance and Operations apps environment are automatically determined, based on the physical address of your Azure AD tenant. For example, if the address is in Redmond, Washington, USA, the language will be English by default, and the currency will be USD.
 >
-> If you require values that differ from the default values, contact Microsoft support. We can help link an existing Dataverse environment that you manually provision to the Finance and Operations apps environment. Eventually, fields for the language and currency will be added as setup options, so that you can manually set them or accept the default values.
+> If you require values that differ from the default values, manually create a new Power Platform environment that meets your specifications. You can then follow the instructions in the next section to connect your existing Dataverse instance via LCS.
 
-## Enable integration with an existing Power Platform environment
+After you complete the setup, the only way to reverse the action is to delete the environment in LCS. Relinking or linking to another environment isn't supported.
 
-When you enable the Microsoft Power Platform integration for a Finance and Operations apps environment in LCS, either during or after deployment, the process creates a new Dataverse-enabled Power Platform environment and links the Finance and Operations apps environment to it. However, you might want to enable the integration by linking your Finance and Operations apps environment to an existing Power Platform environment instead of the environment that was automatically created during deployment. Currently, LCS doesn't let you select an existing Power Platform environment that you can use to enable the Microsoft Power Platform integration. However, this option will be available soon.
+### <a name="connect-to-existing-dataverse"></a>Enable integration with an existing Power Platform environment
 
-You can also connect Dataverse and a Finance and Operations apps environment in the following ways. These options aren't considered Microsoft Power Platform integration.
+If you already have a Dataverse instance that you want to connect to a Finance and Operations environment, you can connect it during the setup of Power Platform integration from a previously deployed Finance and Operations environment. However, note that this option isn't available when you deploy a new Finance and Operations environment.
 
-- **Dual-write** – The dual-write configuration lets you create a link to a Dataverse environment in any Power Platform environment on the tenant. We don't recommend that you connect dual-write to an environment other than your Microsoft Power Platform integration environment.
-- **Virtual entities** – The virtual entity configuration in the Power Platform environment lets you select the Finance and Operations apps environment. We don't recommend that you connect virtual entities to an environment other than your Microsoft Power Platform integration environment.
+![Connecting to an existing Power Platform environment.](media/PPI-ConnectToExisting.png)
 
-If a Microsoft Power Platform integration environment is set up in LCS, but one of the other technologies (for example, dual-write) is connected to another instance, LCS detects the mismatch. It then shows a warning message that states this approach isn't recommended. If you haven't yet set up the Microsoft Power Platform integration from LCS, and you want to connect to an existing Dataverse-based Power Platform environment, follow the instructions in [Set up dual-write for an existing Dataverse environment](../data-entities/dual-write/lcs-setup.md#set-up-dual-write-for-an-existing-dataverse-environment).
+To get the Power Platform environment ID, you can copy it from the address bar of your browser when you visit the environment in Power Platform admin center.
 
-### Finance and Operations apps connected to a single Microsoft Power Platform environment
+![Retrieving the environment ID from the browser's address bar.](media/PPI-ExistingEnvironmentID.png)
 
-If the Finance and Operations apps environment is configured with links to a single Microsoft Power Platform environment, these environments are identified as a one-to-one linking. For these environments, in Finance and Operations apps version 10.0.22 (Platform update 46) a one-to-one linked environment will automatically be updated to enable the full Microsoft Power Platform integration for the Finance and Operations apps environment. 
+During the integration process, Microsoft will apply the packages for the **Dynamics 365 standard** provisioning template. If you require packages from the other templates, you must manually install. For more information, see the [Provisioning templates](#provisioning-templates) section of this topic.
 
-In version 10.0.22, you can verify that the Microsoft Power Platform integration was automatically enabled by viewing the **Power Platform Integration** section of the **Environment details** page for the Finance and Operations apps environment in LCS. If the integration was successfully enabled, the **Environment name** field will show the name of the integrated Microsoft Power Platform environment, and the **Status** field is set to **Setup completed successfully**.
+Customers who are already live with Power Platform environments or other Dynamics 365 apps, and who want to add Finance and Operations apps to that ecosystem, will find it most useful to bring their existing Dataverse instance. For the integration, you use the same setup process that is described earlier for a new Dataverse database in the initial environment. After you complete the integration setup, the only way to reverse the action is to delete the environment in LCS. Relinking or linking to another environment is not supported.
+
+#### Validations for bringing your existing Power Platform environment
+
+If you connect an existing Power Platform environment, the following validations must pass. Otherwise, the request won't proceed.
+
+1. The **Enable D365 apps** option must be enabled when Dataverse is deployed in the Power Platform environment. This type of Dataverse deployment is the only type that supports Dynamics 365 apps, including connections to Finance and Operations apps.
+2. The Power Platform environment must be in the same geography as Finance and Operations apps. For example, in LCS, you might see an Azure Region such as **West US 2**. In Microsoft Power Platform, the environment should be deployed in **United States**. This requirement is in place for performance and data residency reasons.
+3. The user in LCS who is doing the Power Platform integration setup must be an administrator of the environment in Dataverse, and must have an applicable Finance, Supply Chain Management, or Commerce license assigned.
+
+### Environments that already use dual-write, virtual tables, business events, or add-ins before Power Platform integration is enabled
+
+For customers who enabled dual-write, virtual tables, or business events before the Power Platform integration feature existed, we are in the process of automatically creating Dataverse where it's missing in LCS.
+
+You can verify that the Microsoft Power Platform integration was automatically enabled by viewing the **Power Platform Integration** section of the **Environment details** page for the Finance and Operations apps environment in LCS. If the integration was successfully enabled, the **Environment name** field will show the name of the integrated Microsoft Power Platform environment, and the **Status** field will be set to **Setup completed successfully**.
 
 > [!NOTE]
 > The Microsoft Power Platform integration will automatically be enabled for Finance and Operations apps environments that are already connected to a single Microsoft Power Platform environment and that already use business events functionality. However, these environments won't be able to use the new business events and data events functionality starting in release 10.0.22. The business events endpoints that are already used in these environments will be migrated to the Dataverse platform in version 10.0.23. At that point, the new business events and data events functionality will become available in the environments. Until then, business events will continue to work as they are currently configured in the environment.
 > 
 > For more information about the new business events and data events functionality that will be delayed for these environments until the migration is completed, see [Finance and Operations business events in Dataverse](/dynamics365-release-plan/2021wave2/finance-operations/finance-operations-crossapp-capabilities/new-scenarios-enabled-power-platform-convergence#finance-and-operations-business-events-in-dataverse) and [Finance and Operations CUD events in Dataverse](/dynamics365-release-plan/2021wave2/finance-operations/finance-operations-crossapp-capabilities/new-scenarios-enabled-power-platform-convergence#finance-and-operations-cud-events-in-dataverse) in the 2021 release wave 2 plan. 
 
-### Finance and Operations apps connected to multiple Microsoft Power Platform environments
-
-If a Finance and Operations apps environment has been manually linked to multiple Microsoft Power Platform environments, the process of enabling the Microsoft Power Platform integration for the environment can't be automated. The system can't automatically determine to which Power Platform environment the Finance and Operations apps environment should be linked for the Power Platform integration.
-
-There are two options to enable the Power Platform integration for a Finance and Operations environment that has links to multiple Power Platform environments:
-- Reconfigure your dual-write and/or virtual entity solutions to link the Finance and Operations apps environment to the Power Platform environment created at deployment. When all links are configured for the single Power Platform environment, you can enable the Power Platform integration in LCS following the steps outlined in the [Enable integration after environment deployment](enable-power-platform-integration.md#enable-after-deploy) section above. This is the preferred solution because it can be managed without Microsoft support.
-- To enable the Power Platform integration with a linked Power Platform environment other than the Power Platform environment created during deployment of the Finance and Operations environment, either work with your FastTrack solution architect or contact Microsoft Support to enable the Power Platform integration with a selected environment.
-
-For more information about dual-write configuration options, see [Linking mismatch](../data-entities/dual-write/lcs-setup.md#linking-mismatch).
 
 ## Troubleshooting the setup
 
@@ -517,13 +550,13 @@ GET [Organization URI]/api/data/v9.1/RetrieveFinanceAndOperationsIntegrationDeta
 | Property<br>**Physical name**<br>***Type*** | Use | Description |
 | --- | --- | --- |
 | Environment URL<br>**Url**<br>***String*** | Read-only<br>Required | The URL of the Finance and Operations apps environment linked to the Power Platform environment through the Power Platform integration. |
-| Tenant ID<br>**TenantId**<br>***GUID*** | Read-only<br>Required | The ID of the Azure Active Directory (AAD) tenant on which both the Finance and Operations apps environment and Power Platform environment are located. |
+| Tenant ID<br>**TenantId**<br>***GUID*** | Read-only<br>Required | The ID of the Azure AD tenant on which both the Finance and Operations apps environment and Power Platform environment are located. |
 | Environment ID<br>**Id**<br>***GUID*** | Read-only<br>Required | The ID of the Finance and Operations apps environment linked to the Power Platform environment through the Power Platform integration. |
 
 If the environment is not linked to a Finance and Operations apps environment through the Power Platform integration, the following error is returned in the API response:
 
 | Error code | Message |
 | --- | --- |
-| 0x80048d0b | Dataverse environment is not integrated with Finance and Operations. |
+| 0x80048d0b | Dataverse instance is not integrated with Finance and Operations. |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

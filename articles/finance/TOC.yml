@@ -86,8 +86,6 @@
           href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/finance/toc.json
         - name: Buy Finance + Operations (on-premises)
           href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/finance/toc.json
-        - name: Configure Warehousing for on-premises deployments
-          href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/finance/toc.json
       - name: Documentation resources
         items:
         - name: Help system
@@ -260,6 +258,8 @@
         href: accounts-payable/positive-pay-overview.md
       - name: Set up and generate positive pay files
         href: accounts-payable/set-up-generate-positive-pay-files.md
+      - name: Set up and generate positive pay files using Electronic reporting
+        href: accounts-payable/set-up-positive-pay-ER.md
       - name: Default offset accounts for vendor invoice journals and invoice approval journals
         href: accounts-payable/default-offset-accounts-vendor-invoice-journals.md
       - name: Vendor workflow
@@ -446,6 +446,8 @@
             href: accounts-receivable/sb-alignment-date-examples.md
           - name: Revenue split
             href: accounts-receivable/sb-revenue-split.md
+          - name: Periodic tasks
+            href: accounts-receivable/sb-periodic-tasks.md
         - name: Revenue and expense deferrals
           items:
           - name: Set up revenue and expense deferrals
@@ -664,6 +666,8 @@
           href: cash-bank-management/configure-advanced-bank-reconciliation.md
         - name: Set up the advanced bank reconciliation import process
           href: cash-bank-management/set-up-advanced-bank-reconciliation-import-process.md
+        - name: Set up advanced bank reconciliation import process using Electronic reporting
+          href: accounts-payable/import-bai2-er.md
         - name: Set up bank reconciliation matching rules
           href: cash-bank-management/set-up-bank-reconciliation-matching-rules.md
         - name: Reconcile bank statements by using advanced bank reconciliation
@@ -1779,7 +1783,9 @@
         - name: Create and transfer transactions to the BLWI
           href: localizations/tasks/be-00011-create-transfer-blwi.md
         - name: Export ledger transactions
-          href: localizations/emea-bel-export-ledger-transactions.md          
+          href: localizations/emea-bel-export-ledger-transactions.md  
+        - name: EU sales list
+          href: localizations/emea-bel-eu-sales-list.md    
         - name: INTERVAT tax declaration
           href: localizations/emea-bel-intervat-tax-declaration.md
         - name: Reconciliation reports
@@ -2096,6 +2102,8 @@
           href: localizations/tasks/create-post-free-text-invoice-public-sector-customer.md
         - name: Create and post a project invoice for a public sector customer
           href: localizations/tasks/create-post-project-invoice-public-sector-customer.md
+        - name: EU sales list
+          href: localizations/emea-dnk-eu-sales-list.md
         - name: Import OIOUBL electronic invoicing configurations
           href: localizations/tasks/import-oioubl-electronic-invoicing-configurations.md
         - name: Post a free text invoice with a payment slip
@@ -2298,6 +2306,8 @@
           href: localizations/emea-fin-intrastat.md
         - name: VAT declaration
           href: localizations/emea-fin-vat-declaration.md
+        - name: EU sales list
+          href: localizations/emea-fin-eu-sales-list.md
       - name: France
         items:
         - name: France overview
@@ -3090,6 +3100,8 @@
           href: localizations/tasks/lt-00003-fixed-asset-transfer.md
         - name: VAT statement details
           href: localizations/emea-ltu-vat-statement-details.md
+        - name: Lithuanian Intrastat
+          href: localizations/emea-ltu-intrastat.md
         - name: i.SAF reporting for Lithuania
           href: localizations/emea-ltu-isaf.md
         - name: Standard Audit File for Tax (SAF-T) for Lithuania
@@ -3232,6 +3244,8 @@
           href: localizations/emea-pol-correction-notes.md
         - name: Duplicate sales invoice numbering
           href: localizations/emea-pol-sales-invoice-duplicates-numbering.md
+        - name: EU sales list
+          href: localizations/emea-pol-eu-sales-list.md
         - name: Fixed asset depreciation
           href: localizations/emea-pol-fixed-assets-depreciation.md
         - name: Fixed asset disposal functionality extension
@@ -4341,6 +4355,8 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-lookup-data-sources.md?toc=/dynamics365/finance/toc.json 
           - name: Use DATA COLLECTION data sources in ER formats
             href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/finance/toc.json 
+          - name: Use USER INPUT PARAMETER data sources to specify parameters for a report that you want to generate
+            href: ../fin-ops-core/dev-itpro/analytics/er-user-input-parameter-data-sources.md?toc=/dynamics365/finance/toc.json 
           - name: Debug data sources
             href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/finance/toc.json
         - name: Configure data models

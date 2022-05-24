@@ -5,7 +5,7 @@ title: Fiscal archive for France
 description: This topic provides information about the fiscal archive and the Fiscal archive integrity verification tool that are available in the Microsoft Dynamics 365 Commerce localization for France.
 author: EvgenyPopovMBS
 manager: annbe
-ms.date: 08/10/2021
+ms.date: 05/17/2022
 ms.topic: article
 ms.prod: 
 
@@ -38,7 +38,7 @@ A fiscal archive can be exported from a closed period grand total journal. (For 
 
 You can verify the integrity of the fiscal archive and its data by using the [Fiscal archive integrity verification tool](#fiscal-archive-integrity-verification-tool).
 
-The XML format of the fiscal archive is implemented by using [Electronic reporting (ER)](/dynamics365/fin-ops-core/dev-itpro/analytics/general-electronic-reporting). For information about how to import and apply the ER configurations that are required to export fiscal archives, see [Configure the archive export format](./emea-fra-cash-registers.md#configure-the-archive-export-format).
+The XML format of the fiscal archive is implemented by using [Electronic reporting (ER)](../../dev-itpro/analytics/general-electronic-reporting.md). For information about how to import and apply the ER configurations that are required to export fiscal archives, see [Configure the Z report and archive export formats](./emea-fra-cash-registers.md#configure-the-z-report-and-archive-export-formats).
 
 ## Fiscal archive structure
 
@@ -156,7 +156,7 @@ The **Receipt** node of a fiscal archive contains the following elements.
 | TaxRate                 | The tax rate. |
 | TaxAmount               | The total amount of tax for the tax rate. |
 | SequentialNumber        | The sequential number of the signed sales transaction for the register. |
-| DataToSign              | The string that was [built from the elements of the sales transaction record](./emea-fra-cash-registers.md#digital-signing-of-sales-transactions) and used for signing. |
+| DataToSign              | The string that was [built from the elements of the sales transaction record](./emea-fra-cash-registers.md#digital-signing-of-sales-and-return-transactions) and used for signing. |
 | DataToSignFormatVersion | The internal version of the format of data that was used for signing. |
 | Signature               | The digital signature of the sales transaction record. |
 | HashAlgorithm           | The hash algorithm that was used to hash the data before signing. |

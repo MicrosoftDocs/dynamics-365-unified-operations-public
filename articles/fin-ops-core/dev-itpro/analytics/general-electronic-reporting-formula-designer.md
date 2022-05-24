@@ -4,7 +4,7 @@
 title: Formula designer in Electronic reporting (ER)
 description: This topic provides information about how to use the formula designer in Electronic reporting (ER).
 author: NickSelin
-ms.date: 12/05/2019
+ms.date: 04/08/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -46,7 +46,8 @@ You can open the **Formula designer** page when you perform any of the following
 - Bind data source items to data model components.
 - Bind data source items to format components.
 - Complete maintenance of calculated fields that are part of data sources.
-- Define the visibility conditions for user input parameters.
+- Define the visibility and editability conditions for user input parameters.
+- Define the default values for user input parameters.
 - Design a format's transformations.
 - Define the enabling conditions for the format's components.
 - Define the file names for the format's FILE components.

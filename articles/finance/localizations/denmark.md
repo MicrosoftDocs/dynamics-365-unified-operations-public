@@ -35,6 +35,7 @@ This topic provides links to documentation resources for Denmark.
 - [Create and post a customer invoice for a public sector customer](tasks/create-post-customer-invoice-public-sector-customer.md)
 - [Create and post a free text invoice for a public sector customer](tasks/create-post-free-text-invoice-public-sector-customer.md)
 - [Create and post a project invoice for a public sector customer](tasks/create-post-project-invoice-public-sector-customer.md)
+- [EU sales list for Denmark](emea-dnk-eu-sales-list.md)
 - [Import OIOUBL electronic invoicing configurations](tasks/import-oioubl-electronic-invoicing-configurations.md)
 - [Post a free text invoice with a payment slip](tasks/post-free-text-invoice-payment-slip.md)
 - [Post a project invoice with a payment slip](tasks/post-project-invoice-payment-slip.md)

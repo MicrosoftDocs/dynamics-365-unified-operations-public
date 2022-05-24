@@ -88,12 +88,12 @@ For example, customers who are currently on version 10.0.23 can pause updates to
 
 ### In-store components
 
-Customers can pause up to three consecutive updates across the following components:
+Customers can pause up to seven consecutive updates across the following components:
 - Commerce Scale Unit (self-hosted)
 - Modern POS or Store Commerce
 - Hardware station
 
-For example, customers who are currently on version 10.0.26 can pause updates for the released versions 10.0.27, 10.0.28, and 10.0.29. However, the following release of version 10.0.30 would remove support of version 10.0.26. In this scenario, after version 10.0.30 becomes available, version 10.0.26 is no longer supported and an update to the in-store components would be necessary.
+For example, customers who are currently on version 10.0.23 can pause updates for the released versions 10.0.24, 10.0.25, 10.0.26, 10.0.27, 10.0.28, 10.0.29 and 10.0.30. However, they must then update to version 10.0.31. In this scenario, after version 10.0.31 becomes available, version 10.0.23 is no longer supported.
 
 ## Additional resources
 

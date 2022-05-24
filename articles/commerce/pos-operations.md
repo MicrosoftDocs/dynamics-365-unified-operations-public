@@ -4,7 +4,7 @@
 title: Online and offline point of sale (POS) operations
 description: This topic provides details about the point of sale (POS) operations in Dynamics 365 Commerce. It specifies where in the application the operations can be invoked, and whether they are available in offline mode.
 author: jblucher
-ms.date: 05/05/2022
+ms.date: 05/11/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -42,14 +42,14 @@ The table below provides details about the operations that are available in Mode
 
 The following columns specify where the operations can be invoked:
 
-- **Button grid** – An operation can be assigned to buttons in POS button grids that are part of a POS screen layout.
+- **User operation** – An operation can be assigned to buttons in POS button grids that are part of a POS screen layout.
 - **Transaction screen** – An operation can be invoked from POS button grids that are configured on the POS transaction screen.
 - **Welcome screen** – An operation can be invoked from POS button grids that are configured on the POS welcome screen.
 
 > [!NOTE]
 > The operations listed below apply to the latest version of Commerce. Some operations may have changed or may not be available in previous versions.
 
-| ID   | Operation                                         | Description                                                                                                                                                                                                    | Button grid    | Transaction screen | Welcome screen | Available offline? | Locale-specific |
+| ID   | Operation                                         | Description                                                                                                                                                                                                    | User operation?    | Transaction screen | Welcome screen | Available offline? | Locale-specific |
 | ---- | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ------------------ | -------------- | ----------------- | --------------- |
 | 100  | Product sale                                      | Add a specified product to the transaction.                                                                                                                                                                    | Yes            | Yes                | Yes            | Yes               | No              |
 | 101  | Price check                                       | Look up the price for a specified product.                                                                                                                                        | Yes            | Yes                | Yes            | Yes               | No              |
@@ -196,10 +196,10 @@ The following columns specify where the operations can be invoked:
 | 651  | Edit fulfillment line                             | Edit the fulfillment line.                                                                                                                                                                                    | No             | No                 | No             | No                | No              |
 | 652  | Accept fulfillment line                           | Accept the fulfillment line.                                                                                                                                                                                  | No             | No                 | No             | No                | No              |
 | 653  | Reject fulfillment line                           | Reject the fulfillment lines.                                                                                                                                                                                 | No             | No                 | No             | No                | No              |
-| 654  | Pick fulfillment line                             | Select the lines for pick up.                                                                                                                                                                                  | No             | No                 | No             | No                | No              |
+| 654  | Pick fulfillment line                             | Select the lines for pickup.                                                                                                                                                                                  | No             | No                 | No             | No                | No              |
 | 655  | Pack fulfillment line                             | Select the lines for packing.                                                                                                                                                                                  | No             | No                 | No             | No                | No              |
 | 656  | Ship fulfillment line                             | Select the lines for shipping.                                                                                                                                                                                 | No             | No                 | No             | No                | No              |
-| 657  | Pickup fulfillment line                           | Select the lines for pick up.                                                                                                                                                                                  | No             | No                 | No             | No                | No              |
+| 657  | Pickup fulfillment line                           | Select the lines for pickup.                                                                                                                                                                                  | No             | No                 | No             | No                | No              |
 | 658  | Change pickup lines                               | Allow store associates to change pickup items based on the user’s choice.                                                                                                                                      | Yes            | Yes                | No             | Yes               | No              |
 | 700  | Log on                                            | Sign in  to POS.                                                                                                                                                                                                  | No             | No                 | No             | Yes               | No              |
 | 701  | Log off                                           | Sign the current user out of the register.                                                                                                                                                                     | Yes            | Yes                | Yes            | Yes               | No              |
