@@ -2,7 +2,7 @@
 # required metadata
 
 title: Standard cost variance posting
-description: This topic provides information about the Standard cost tab of the inventory posting profile.
+description: This topic provides information about setting up posting profiles for standard costing.
 author: rachelprofitt
 ms.date: 04/25/2022
 ms.topic: overview
