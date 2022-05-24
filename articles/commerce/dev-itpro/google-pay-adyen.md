@@ -44,7 +44,7 @@ You must also enable the enhanced wallet feature in Dynamics 365 Commerce headqu
 
 Google Pay is a digital wallet payment method. Set up payment mapping for Google Pay as described in the [Wallet payment support](../wallets.md) article. 
 
-To map the Google Pay payment method, follow these steps.
+To map the Google Pay payment method to card tender types for both point of sale (POS) and online channels, follow these steps.
 
 1. In Commerce headquarters, go to **Retail and Commerce \> Channel setup \> Payment methods \> Card types**. 
 1. Select **New** to add a line for GooglePay. 
@@ -53,15 +53,12 @@ To map the Google Pay payment method, follow these steps.
 1. For **Type**, enter **Wallet**.
 1. For **Issuer**, enter **Google**.
 1. On the action pane, select **Processor mapping** to bring up the **Processor payment mapping methods** dialog box.
-1. Under **Unmapped Processor Payment Methods**, you'll see a list of umapped processor payment methods, each paired with the appropriate connector.  
-
-
-menu to bring up the Processor payment mapping methods dialogue
-- In the **Unmapped Processor Payment Methods** center column, you'll see payment methods supported listed against each of the Connectors available (Adyen, PayPal, Google). 
-- Map any of the supported payment methods you wish against both the **Dynamics 365 Payment Connector for Adyen** (for use at POS) and the **Dynamics 365 Payment Connector for Google Pay** (for online channel) connectors. Select each mapping line to support in the **Unmapped Processor Payment Methods** column and select **Add** to move the selections to the **Mapped Processor Payment Methods** column to map them. 
-- Select **OK**, and select **Save** back in the **Card Types** page. 
-
-
+1. Under **Unmapped Processor Payment Methods**, you'll see a list of umapped processor payment methods, each paired with the appropriate connector. To map unmapped Google Pay processor payment methods to card tender types, do the following for each card tender type:
+    1. Under **Card tender types**, select a card tender type.
+    1. Under **Unmapped Processor Payment Methods**, select both the **Dynamics 365 Payment Connector for Adyen** (for use at POS) and the **Dynamics 365 Payment Connector for Google Pay** (for online channel) connectors.
+    1. Select **Add**. This moves the selections to the **Mapped Processor Payment Methods** column.
+1. When you're done mapping payment methods, select **Save**.
+1. On the **Card types** page, select **Save**.
 
 ## Configure a Commerce online store for Google Pay
 
