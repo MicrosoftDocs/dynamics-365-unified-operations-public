@@ -2,7 +2,7 @@
 title: Client APIs home page
 description: Mobile platform client APIs
 author: tonyafehr
-ms.date: 07/23/2019
+ms.date: 05/24/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.custom: "intro-internal"
