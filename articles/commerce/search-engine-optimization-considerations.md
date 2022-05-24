@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic covers earch engine optimization (SEO) considerations for your site from development to production.
+This topic covers search engine optimization (SEO) considerations for your site from development to production.
 
 ## A site that is under development
 
@@ -53,7 +53,7 @@ To optimize search engine indexing, the rendering framework uses both informatio
 
 ### Page SEO settings for internal preview, limited audiences, and all audiences
 
-Because Dynamics 365 Commerce supports "what you see is what you get" (WYSIWYG) authenticated previews in visual page builder, authors can prepare their page content without having to worry that the information will become visible to site visitors. If a page must be published, but its exposure must be limited, it should have the **noindex** meta tag, so that it won't be indexed by search engines. Then, when the page is ready for all audiences, all the basic SEO metadata should be present, to maximize the efficiency of search engine indexing. Additionally, the **NOLIMIT** meta tag should be removed.
+Because Dynamics 365 Commerce supports "what you see is what you get" (WYSIWYG) authenticated previews in visual page builder, authors can prepare their page content without having to worry that the information will become visible to site visitors. If a page must be published, but its exposure must be limited, it should have the **noindex** meta tag, so that it won't be indexed by search engines. Then, when the page is ready for all audiences, all the basic SEO metadata should be present, to maximize the efficiency of search engine indexing. Additionally, the **nolimit** meta tag should be removed.
 
 ## Additional resources
 
