@@ -4,31 +4,20 @@
 title: Troubleshoot Store Commerce setup and installation issues
 description: This topic explains how to troubleshoot Store Commerce setup and installation issues.
 author: Mugunthan-Mani
-ms.date: 12/05/2022
-ms.topic: Troubleshooting
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application user
-# ms.devlang: 
+ms.date: 05/27/2022
+ms.topic: article
+audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: rassadi
-ms.search.validFrom: 2022-05-12
-ms.dyn365.ops.version: 10.0.25
+ms.search.validFrom: 2017-06-20
 
 ---
 
+# Troubleshoot Store Commerce setup and installation issues
 
-### Troubleshoot Store Commerce setup and installation issues
+[!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 This topic explains how to troubleshoot Store Commerce setup and installation issues.
 
