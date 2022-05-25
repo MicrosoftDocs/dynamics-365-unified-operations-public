@@ -4,25 +4,14 @@
 title: Search engine optimization (SEO) considerations for your site
 description: This topic covers search engine optimization (SEO) considerations for your site from development to production.
 author: psimolin
-ms.date: 10/01/2019
+ms.date: 05/25/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-audience: Application user
+audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
 
 ---
 
@@ -35,7 +24,7 @@ This topic covers search engine optimization (SEO) considerations for your site 
 
 ## A site that is under development
 
-To ensure search engines do not index a site under development, all site pages should have the **noindex** and **nofollow** meta tags. A good practice is to create a fragment based on the [MetaTags module](metatags-module.md) with the below meta tag entry and ensure that fragment is added to "HTML Head" section of all templates being used on the site.
+To ensure search engines do not index a site under development, all site pages should have the **noindex** and **nofollow** meta tags. A good practice is to create a fragment based on the [MetaTags module](metatags-module.md) that contains the following meta tag entry and ensure that the fragment is added to the HTML \<head\>" section of all templates used on your site.
 
 ```html
 <meta name="robots" content="noindex,nofollow" /> 
