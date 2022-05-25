@@ -4,7 +4,7 @@
 title: Monitoring and diagnostics tools in Lifecycle Services (LCS)
 description: This topic describes the tools that Microsoft Dynamics Lifecycle Services provides to help you monitor, diagnose, and analyze the health of the environments.
 author: angelmarshall
-ms.date: 08/23/2021
+ms.date: 05/25/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -147,7 +147,7 @@ You can use the filters on this page to narrow the information logs. Here are so
 
 For advanced troubleshooting, you can view raw information logs. You can use a set of predefined queries to get raw logs for an issue. You can then export the logs to do more advanced analysis. The following types of queries are available:
 
-- Slow queries
+- Long queries
 - Deadlocks
 - Crashes
 - Financial reporting issues
