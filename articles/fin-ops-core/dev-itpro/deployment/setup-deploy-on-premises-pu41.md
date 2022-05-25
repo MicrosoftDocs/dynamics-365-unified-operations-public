@@ -969,7 +969,7 @@ Finance + Operations requires additional configuration of AD FS, beyond the defa
     ```
 
     > [!NOTE]
-    > These commands can only be run on an AD FS server running Windows Server 2019 or later. AD FS on Windows Server 2016 has been deprecated. [./onprem-compatibility.md#active-directory-federation-services-ad-fs]
+    > These commands can only be run on an AD FS server running Windows Server 2019 or later. AD FS on Windows Server 2016 has been deprecated. For more information see [Microsoft Dynamics 365 Finance + Operations (on-premises) supported software](./onprem-compatibility.md#active-directory-federation-services-ad-fs)
 
 Before AD FS can trust Finance + Operations for the exchange of authentication, various application entries must be registered under an AD FS application group in AD FS. To speed up the setup process and help reduce errors, you can use the Publish-ADFSApplicationGroup.ps1 script for registration. Run the script by using a user account that has enough permissions to administer AD FS. (For example, use an administrator account.)
 
