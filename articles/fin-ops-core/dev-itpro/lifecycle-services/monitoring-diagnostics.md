@@ -4,7 +4,7 @@
 title: Monitoring and diagnostics tools in Lifecycle Services (LCS)
 description: This topic describes the tools that Microsoft Dynamics Lifecycle Services provides to help you monitor, diagnose, and analyze the health of the environments.
 author: angelmarshall
-ms.date: 05/09/2022
+ms.date: 05/25/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
