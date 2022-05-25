@@ -24,7 +24,7 @@ This topic covers search engine optimization (SEO) considerations for your site 
 
 ## A site that is under development
 
-To ensure search engines do not index a site under development, all site pages should have the **noindex** and **nofollow** meta tags. A good practice is to create a fragment based on the [MetaTags module](metatags-module.md) that contains the following meta tag entry and ensure that the fragment is added to the HTML \<head\>" section of all templates used on your site.
+To ensure that search engines do not index a site under development, all site pages should have the **noindex** and **nofollow** meta tags. A good practice is to create a fragment based on the [MetaTags module](metatags-module.md) that contains the following meta tag entry and ensure that the fragment is added to the HTML \<head\> section of all templates used on your site.
 
 ```html
 <meta name="robots" content="noindex,nofollow" /> 
