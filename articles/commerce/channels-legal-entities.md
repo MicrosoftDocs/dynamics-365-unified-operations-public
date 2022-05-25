@@ -66,7 +66,7 @@ To create a new legal entity in Dynamics 365 Commerce, follow these steps.
 1. In the **Dashboard image** section, view or change the logo and dashboard image associated with the legal entity.
 1. In the **Tax registration** section, enter the registration numbers that are used to report to tax authorities.
 1. In the **Tax 1099** section, enter 1099 information for the legal entity.
-1. In the **Tax invormation** section, enter tax information for the legal entity.
+1. In the **Tax information** section, enter tax information for the legal entity.
 1. Select **Save**.
 
 The following image shows details of an example legal entity.
