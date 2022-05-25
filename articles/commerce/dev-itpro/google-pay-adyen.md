@@ -4,7 +4,7 @@
 title: Configure Google Pay with Adyen
 description: This topic describes how to configure Google Pay with Adyen in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 05/24/2022
+ms.date: 05/25/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -53,7 +53,7 @@ To map the Google Pay payment method to card tender types for both point of sale
 1. For **Type**, enter **Wallet**.
 1. For **Issuer**, enter **Google**.
 1. On the action pane, select **Processor mapping** to bring up the **Processor payment mapping methods** dialog box.
-1. Under **Unmapped Processor Payment Methods**, you'll see a list of umapped processor payment methods, each paired with the appropriate connector. To map unmapped Google Pay processor payment methods to card tender types, do the following for each card tender type:
+1. Under **Unmapped Processor Payment Methods**, you'll see a list of unmapped processor payment methods, each paired with the appropriate connector. To map unmapped Google Pay processor payment methods to card tender types, do the following for each card tender type:
     1. Under **Card tender types**, select a card tender type.
     1. Under **Unmapped Processor Payment Methods**, select both the **Dynamics 365 Payment Connector for Adyen** (for use at POS) and the **Dynamics 365 Payment Connector for Google Pay** (for online channel) connectors.
     1. Select **Add**. This moves the selections to the **Mapped Processor Payment Methods** column.
