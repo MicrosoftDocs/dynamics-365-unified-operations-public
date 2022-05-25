@@ -136,7 +136,7 @@ To set up the payment express fragment with Google Pay for the online store, fol
    > - Additional styles can be included against the **CSS class name**. If customizing the behavior of the module, cross-check the style controls if using the same module library coded behavior in the Checkout module for Express Checkout behavior.
 
 1. In the **Default container** slot, select the ellipsis (**...**), and then select **Add module**.
-1. In the **Select modules** dialog box, select the **Payment express** module.
+1. In the **Select modules** dialog box, select the **Payment express** module, and then select **OK**.
 1. In the **Payment express** module properties pane, set or adjust the **Height of the iFrame** value in pixels (for example, **60**).
 1. For **Supported tender types**, enter **GooglePay**. This value must match what was used as the **Supported Tender Types** string in the connector set up for the channel (as described in the [Configure a Commerce online store for Google Pay](#configure-a-commerce-online-store-for-google-pay) section above).
 
@@ -151,29 +151,29 @@ To set up the payment express fragment with Google Pay for the online store, fol
 
 To set up the Payment Express fragment with Google Pay in the Checkout page, follow these steps.
 
-1. In site builder, with your site context set, navigate to the **Pages** menu and select your Checkout page.
-2. Click **Edit** to edit the page.
-3. In the **Main slot**, select the ellipsis (...), and then select **Add Module.**
-4. In the **Add Module** dialogue box, add the **Container** module.
-5. Note: If a Container already exists for your site with the **checkout** fragment- to have the Payment Express section  render above the normal checkout container, position it above the existing checkout container within the **Main slot** section. You can move container positions by selecting their ellipsis (...), and choosing the "Move up" or "Move down" options.
-5. In the **Container** module properties, it's recommended to use the following property settings:
-	- **Container Layout**: Stacked
-	- **Width**: Fill container
-	- **Children Shown**: Three (this figure depends on the number of intended payment express modules and text block based on the visual arrangement desired)
-6. With the **Container** module still selected in the module tree, select the ellipsis (...), and then select **Add Fragment**.
-7. In the **Add Fragment** dialogue box, find and select your named created express payment fragment and click **OK.**
-8. Click the **Save** button to save your changes.
-9. Click on **Finish editing** to complete editing the page, and **Publish** to publish your changes live.
+1. In site builder, go to **Pages**, and then select your site's checkout page.
+1. Select **Edit**.
+1. In the **Main slot**, select the ellipsis (...), and then select **Add module**.
+1. In the **Select modules** dialog box, select the **Container** module, and then select **OK**.
+1. If a Container already exists for your site with the **checkout** fragment- to have the Payment Express section  render above the normal checkout container, position it above the existing checkout container within the **Main slot** section. You can move container positions by selecting their ellipsis (...), and choosing the "Move up" or "Move down" options.
+1. In the **Container** module properties, it's recommended to use the following property settings:
+    - **Container Layout**: Stacked
+    - **Width**: Fill container
+    - **Children Shown**: Three (this figure depends on the number of intended payment express and text block modules based on the visual arrangement desired)
+1. With the **Container** module still selected in the module tree, select the ellipsis (**...**), and then select **Add fragment**.
+1. In the **Select a fragment** dialog box, select the express payment fragment you created, and then select **OK.**
+1. Select **Save** to save your changes, and then select **Finish editing**.
+1. Select **Publish** to publish the page.
 
 ### Set up the cart page with the payment express fragment
 
 To set up the Payment Express fragment with Google Pay in the Cart page, follow these steps.
 
-1. In site builder, with your site context set, navigate to the **Pages** menu and select your Cart page.
-2. Click **Edit** to edit the page.
-3. Expand the **Main slot** in the tree view and locate the container which includes **Cart** module. The **Cart** module will contain a new specific slot for **Payment Express.**
-4. In the **Cart** module, select the **Payment Express** slot and select the ellipsis (...), and then select **Add Module.**
-5. In the **Add Module** dialogue box, add the **Payment express** module and click **OK.**
+1. In site builder, go to **Pages**, and then select your site's cart page.
+2. Select **Edit**.
+3. In the outline view, expand the **Main slot** in the tree view and locate the container that contains the **Cart** module.
+4. In the **Cart** module, select the **Payment Express** slot, select the ellipsis (**...**), and then select **Add module.**
+5. In the **Select modules** dialog box, select the **Payment express** module, and then select **OK*.*
 6. With the express fragment still selected, in Properties add "GooglePay" to the **Supported tender types** property. This field must match what was used as the **Supported Tender Types** string supplied in the connector set up for the channel (as described in the section above **Configure a Commerce online store for Google Pay**).
 7. Click the **Save** button to save your changes.
 8. Click on **Finish editing** to complete editing the page, and **Publish** to publish your changes live.
