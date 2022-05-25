@@ -19,30 +19,34 @@ ms.search.validFrom: 2022-05-19
 [!include[banner](../includes/banner.md)]
 
 This topic explains new changes introduced to the servicing process.  
-
-Microsoft has introduced new steps in pre-servicing and post-servicing that enables DB sync precheck and index creation on tables out of offline servicing. This means the environment will be up and running, accessible to perform regular activities but it cannot service as all servicing operations are restricted during pre-servicing and post-servicing. The main benefit of the change is to help reduce the overall servicing downtime. 
+Microsoft has introduced new steps in servicing pipeline pre-servicing and post-servicing that enables DB sync precheck and index creation on tables out of offline servicing. This means the environment will be up and running, accessible to perform regular activities but it cannot service as all servicing operations are restricted during pre-servicing and post-servicing.  The main benefit of the change is to help reduce the overall servicing downtime. 
 
 ## Pre-servicing
 
-For service updates, Db sync precheck will run once the servicing operation is triggered and status in the LCS dashboard will show the environment state as **Pre-servicing**. This means the environment will be online and accessible during this time, but no other service operation allowed.
+For service updates, pre-servicing step will run once the servicing operation is triggered and status in the LCS dashboard will show the environment state as **Pre-servicing**. This means the environment will be online and accessible during this time, but no other service operation allowed.
 
-DB Sync precheck helps to identify the pre-defined set of errors that will cause the servicing to fail. Precheck failure will immediately trigger a soft rollback (no PITR) and env will be brought back to deployed state. From the environment history logs, precheck errors can be fetched to apply the required mitigation before re-triggering the update.
+Pre-servicing step helps to identify the pre-defined set of errors that will cause the servicing to fail. Precheck failure will immediately trigger a soft rollback (no PITR) and env will be brought back to deployed state. From the environment history logs, precheck errors can be fetched to apply the required mitigation before re-triggering the update.
 
-Once pre-servicing succeeds, the environment state will change to **Servicing** where the system goes offline and remains inaccessible until state changes to **Post-servicing**. 
+![image](https://user-images.githubusercontent.com/90061039/170361108-a669f070-5001-44b0-8e0b-81c5edca51cd.png)
+
+Once pre-servicing succeeds, the environment state will change to **Servicing** where the system goes offline and remains inaccessible until the state changes to **post-servicing**. Email notifications will be sent to environment admins after completion of servicing step.
+ 
 
 ## Post-servicing
 
-While the post-processing step is occurring, the LCS dashboard will show **Post-servicing** after offline servicing is completed. During this time, the index creation and modification that are not done during offline servicing steps will be done in online mode. The environment will be accessible so that users can perform regular activities, but performance on the package changes that are involved might be degraded. During post-servicing, users won't be able to cancel or trigger new service requests. There is option to download the logs to check the process.
+While the post-processing step is occurring, the LCS dashboard will show **post-servicing** after offline servicing is completed. During this time, the index creation and modification that are not done during offline servicing steps will be done in online mode.  The environment will be accessible so that users can perform regular activities, but performance on the changes that are involved in the update package might be degraded. During post-servicing, users won't be able to cancel or trigger new service requests.  There is an option to download the logs to check the process.  
 
-If any failure occurs during the post-processing step, the LCS dashboard will display post-servicing failed. The environment will still be accessible so that users can perform regular activities, but performance might be degraded. If you experience that the issue is not resolved in 24 hours, then contact Microsoft Support.
+![image](https://user-images.githubusercontent.com/90061039/170360282-65acc76f-e7d9-4980-86c3-d8d9224fb08c.png)
 
-## Recommended best practices for servicing custom packages to reduce downtime 
+If any failure occurs during the post-Servicing step, the LCS dashboard will display **post-servicing failed**. The environment will still be accessible so that users can perform regular activities, but performance may be degraded on the specific table where index change has failed.  If you experience that the issue is not resolved in 24 hours, then contact Microsoft Support  . 
 
-We recommend restricting table schema changes to support schema synchronization in online mode. All operations below require either index to be dropped and recreated which is not supported in online mode. 
+
+## Recommended best practices for reduced servicing downtime
+
+We recommend restricting table schema changes to support faster schema synchronization which eventually can be done in online fashion, all schema change operations below require either an index to be dropped and recreated or needs a considerable amount of down time which results in longer servicing window.
 
 ### Field property changes
 
-- 'Size' property decrease for String type field 
 - 'Scale'property changes for Real Number type field 
 - 'Size' property changes from '(Memo)' to 'n' (some fixed size) or vice versa in String type field 
 
