@@ -4,7 +4,7 @@
 title: Product search and customer search in the point of sale (POS)
 description: This topic provides an overview of improvements that have been made to product and customer search functionality in Dynamics 365 Commerce. 
 author: ShalabhjainMSFT
-ms.date: 10/26/2021
+ms.date: 05/25/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -111,6 +111,8 @@ To set search criteria as shortcuts, the admin must open the **Commerce paramete
 > If you add too many shortcuts, the drop-down menu on the search bar in POS will become cluttered, and the employee's search experience can be affected. We recommend that you add only as many shortcuts as you require.
 
 The **Display order** field determines the order in which shortcuts are shown in POS. The criteria that are shown are the out-of-box properties that the customer search algorithm uses to search customers. However, partners can add custom properties as search shortcuts. To add custom properties as search shortcuts, the system admin must extend the extensible enumeration (enum) that is used for the customer search criteria and then mark the partner's custom properties as shortcuts. Partners are responsible for writing the code to find results when their custom shortcuts are used for searches.
+
+Translations for shortcuts are required if you want shortcuts to be rendered on the POS. If your channel language is different than the system default language, you must define the translation for each shortcut in the expected language. You can define translations by selecting **Translate** for each shortcut. 
 
 > [!NOTE]
 > A custom property that is added to the enum doesn't affect the standard customer search algorithm. In other words, the customer search algorithm won't search in the custom property. Users can use a custom property for searches only if that custom property is added as a shortcut, or if the default search algorithm is overridden.
