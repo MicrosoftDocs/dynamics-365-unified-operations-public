@@ -122,31 +122,30 @@ To set up the payment express fragment with Google Pay for the online store, fol
 
 1. In site builder, go to **Fragments**. 
 1. Select **New**.
-1. In the **New fragment** dialog box, find and select the **Container** module in the module select menu, and give your Fragment a name (example: Checkout Express). 
-3. Click **Ok** to create the fragment.
-4. In the module tree, select the 'Default Container' module (showing under the pre-labeled root node as the fragment name entered in the step above. (example: 'Checkout express').
-5. In the Properties section, update the Header to a heading you want to display for the express checkout section in your site (Example: Express Checkout)
-6. Set the following properties for the container module:
+1. In the **New fragment** dialog box, select the **Container** module, and enter a **Fragment name** (for example, "Express Checkout"), and then select **OK**. 
+1. Select the new fragment's **Default Container** slot.
+1. In the properties pane on the right, set the properties for the container module as follows:
+   - **Heading**: Enter a heading to display for the express checkout section of your site (for example, "Express Checkout").
+   - **Container layout**: Select **Flow**.
+   - **Width**: Select **Fill container**.
+   - **Children shown**: Select **Three** to specify the number of children that will fit in a row of the Express Checkout section of the checkout page (for example, a text box, payment express for PayPal, payment express for Google Pay).
+   - **CSS class name**: Enter **msc-express-payment-container** (required).
 
-   - **Container layout**: "Flow"
-   - **Width**:"Fill container"
-   - **Children shown**: "Three" (typically in use with other Payment express modules, for example a text box, payment express for PayPal, payment express for Google Pay)
-   - **CSS class name**: "msc-express-payment-container" {required, see note below}
+   > [!IMPORTANT]
+   > - The **CSS class name** value must be set to **msc-express-payment-container** to control the behavior of the container during checkout. This includes hiding, collapsing, and other actions that apply to the Express Checkout section during the checkout flow. The **msc-express-payment-container** class works with the default operations shipped with the module library checkout module.
+   > - Additional styles can be included against the **CSS class name**. If customizing the behavior of the module, cross-check the style controls if using the same module library coded behavior in the Checkout module for Express Checkout behavior.
 
-   >[!IMPORTANT]
-   >The **CSS class name** value must maintain the "msc-express-payment-container" style listed to control the behavior of the composable container during checkout. This includes hiding, collapsing, and actions designed for the Express Checkout section during the checkout flow. Additional styles can be included against the **CSS class name**. If customizing the behavior of the module, cross-check the style controls if using the same module library coded behavior in the Checkout module for Express Checkout behavior. The "msc-express-payment-container" reference works with the default operations shipped with the module library starter kit Checkout module.
-
-7. In the module node tree, select the ellipses (...) on the **Default container** and click **add module**.
-8. Choose the **Payment Express** module
-9. In the **Payment Express** module properties panel, set or adjust the **Height of the iFrame** in pixels (Example: 60)
-10. Add "GooglePay" to the **Supported tender types** field. This field must match what was used as the **Supported Tender Types** string supplied in the connector set up for the channel (as described in the section above **Configure a Commerce online store for Google Pay**)
+1. In the **Default container** slot, select the ellipsis (**...**), and then select **Add module**.
+1. In the **Select modules** dialog box, select the **Payment express** module.
+1. In the **Payment express** module properties pane, set or adjust the **Height of the iFrame** value in pixels (for example, **60**).
+1. For **Supported tender types**, enter **GooglePay**. This value must match what was used as the **Supported Tender Types** string in the connector set up for the channel (as described in the [Configure a Commerce online store for Google Pay](#configure-a-commerce-online-store-for-google-pay) section above).
 
     > [!NOTE]
-    > You can repeat the **Payment Express** addition for other payment methods in this section. Align the **Supported tender types** against the configured additional payment types (example: 'Paypal').
+    > You can repeat the **Payment Express** addition for other payment methods in this section. Align the **Supported tender types** woth the additional configured payment types (for example, **Paypal**).
 
-11. You may also choose to add a **Text block** module above or below the **Payment express** modules within the **Default Container** to include instructional or disclosure information. Click on the **Default Container** and add a module. Select the **Text block** module and fill out the **Rich text** field with the desired text. You can select the ellipses (...) on the **Text block** and choose to "Move up" or "Move down" to position the text above or below the payment express modules.
-12. Select **Save** to save your changes, and click **Finish editing** to complete editing the fragment.
-13. Click **Publish** to publish the fragment for use.
+1. You may also choose to add a text block module to the default container module that will appear above or below the payment express modules to include instructions or disclosure information. After adding the module, in the properties pane enter the desired text in the **Rich text** field. You can position the text above or below the payment express modules by selecting the ellipsis (**...**) in the **Text block** slot and selecting **Move up** or **Move down**.
+1. Select **Save** to save your changes, and then select **Finish editing**.
+1. Select **Publish** to publish the fragment.
 
 ### Set up the checkout page with the payment express fragment
 
