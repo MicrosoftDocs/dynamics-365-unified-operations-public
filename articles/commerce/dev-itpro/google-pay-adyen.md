@@ -98,10 +98,10 @@ The Commerce payment express module works with supporting payment methods to off
 
 With Google Pay, selecting the Google Pay button in the **Payment Express** section launches the Google Pay iframe window where users can sign in to their Google account to use their account shipping address, billing address, email, and Google Pay payment method of choice to pay for the transaction.
 
-When users complete the action in the Google Pay window, they are directed to the Commerce site checkout page with the checkout form prepopulated with their Google Pay account details. After users return to the checkout page from the Google Pay window, they will see the following:
+When users complete the action in the Google Pay window, they're directed to the Commerce site checkout page with the checkout form prepopulated with their Google Pay account details. After users return to the checkout page from the Google Pay window, they'll see the following:
 
 - In the payment express flow, the first delivery option available for the shipping address returned will be preselected for the customer.  
-- With Google Pay, a contact email address is not returned. Guest checkout users will need to enter an email address in the contact section of the checkout page. Signed-in users will have their contact data automatically populated from their Dynamics customer account (their primary email used for authentication).
+- With Google Pay, a contact email address isn't returned. Guest checkout users will need to enter an email address in the contact section of the checkout page. Signed-in users will have their contact data automatically populated from their Dynamics customer account (their primary email used for authentication).
 
 Customers have the option to review orders and change checkout order details before selecting **Place order** to finalize the order.
 
