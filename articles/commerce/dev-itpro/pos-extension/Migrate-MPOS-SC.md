@@ -14,7 +14,11 @@ ms.author: mumani
 ms.search.validFrom: 05-24-2022
 ms.dyn365.ops.version: AX 10.0.25
 ---
+
 # Migrate Modern POS to Store Commerce
+
+[!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
 This topic explains how to migrate from Modern POS(MPOS) to Store Commerce app. The Store Commerce offers all the rich functionalities of Modern POS including the integrated Hardware support and Offline.
 
