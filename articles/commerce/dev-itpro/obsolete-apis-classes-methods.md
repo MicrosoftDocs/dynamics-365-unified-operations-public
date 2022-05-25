@@ -16,10 +16,13 @@ ms.dyn365.ops.version: AX 10.0.25
 ---
 # Obsolete and removed APIs, classes, and methods
 
+[!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
+
 Several APIs, Classes, and Methods have been either removed or marked as obsolete in Dynamics 365 Commerce. Dynamics 365 Commerce changes over time, each new version adds new APIs and Classes, and Methods that provide new functionality. Existing APIs and Classes, and Methods also change over time. For example, some APIs become less important as the functionality they support is replaced by a new functionality, and some methods are superseded by newer methods that are superior in some way or the underlying technologies changed to provide better performance, reliability etc.
 Dynamics 365 Commerce strives to support backward compatibility (allowing extensions that were developed with one version of Dynamics 365 Commerce to run on the next version of Dynamics 365 Commerce). This makes it difficult to simply remove APIs, Classes, or Methods. Instead, Dynamics 365 Commerce indicates that an API, Class, or a Method should no longer be used by marking it as obsolete or deprecated. Deprecating an API, Class or a method involves marking it so that developers are aware it will go away and have time to respond to its removal. The terms obsolete and deprecated have the same meaning when applied to .NET types and members.
 
-## Obsolete Attribute
+## Obsolete attribute
 
 In Dynamic 365 Commerce an API, Class or Method is made obsolete by marking it with the Obsolete attribute. Applying the attribute to an API, Class or Method indicates that API, Class, or Method will be removed in some future version of the Dynamic 365 Commerce. 
 
