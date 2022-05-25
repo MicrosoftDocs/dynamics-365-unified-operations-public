@@ -893,6 +893,14 @@ In this case, go to the C:\\ProgramData\\SF\\AOS\_1\\Fabric\\work\\Applications\
 
 You can also use Psping to try to reach the remote server. For information about Psping, see [Psping](/sysinternals/downloads/psping).
 
+### You get authentication errors
+
+If you are having issues authenticating with the Workflow editor or with the excel add-ins try to verify your configuration with the following script.
+
+    ```powershell
+    .\Test-ADFSConfiguration.ps1 -ConfigurationJsonFilePath "\\Fileserver\agent\wp\EN10\StandaloneSetup-746342\config.json"
+    ```
+
 ### Redirect sign-in questions and issues
 
 If you're having issues when you sign-in, in Service Fabric Explorer, verify that the **Provisioning\_AdminPrincipalName** and **Provisioning\_AdminIdentityProvider** values are valid. Here is an example:
@@ -900,9 +908,9 @@ If you're having issues when you sign-in, in Service Fabric Explorer, verify tha
 - **Provisioning\_AdminPrincipalName**: `AXServiceUser@contoso.com`
 - **Provisioning\_AdminIdentityProvider**: `https://DC1.contoso.com/adfs`
 
-If the values aren't valid, you won't be able to proceed, and you must redeploy from LCS.
+If the values aren't valid, you won't be able to proceed, and you must update the admin user information or ADFS information in LCS.
 
-If you used Reset-DatabaseUsers.ps1, you must restart the Dynamics Service before your changes take effect. If you still have sign-in issues, in the USERINFO table, note the **NETWORKDOMAIN** and **NETWORKALIAS** values. Here is an example:
+If you used Reset-DatabaseUsers.ps1, you must restart the AOS before your changes take effect. If you still have sign-in issues, in the USERINFO table, note the **NETWORKDOMAIN** and **NETWORKALIAS** values. Here is an example:
 
 - **NETWORKDOMAIN:** `https://DC1.contoso.com/adfs`
 - **NETWORKALIAS:** `AXServiceUser@contoso.com`
@@ -1194,25 +1202,25 @@ You will receive the following error when you deploy an additional environment:
 
 You can skip or modify the following sections in the deployment instructions.
 
-### Plan and acquire your certificates (as documented for [Platform update 42 and later](setup-deploy-on-premises-pu41.md#plancert) or [Platform updates 12 through 40](./setup-deploy-on-premises-pu12.md#plancert))
+### Plan and acquire your certificates (as documented for [Platform update 41 and later](setup-deploy-on-premises-pu41.md#plancert) or [Platform updates 12 through 40](./setup-deploy-on-premises-pu12.md#plancert))
 
 - You must use the same on-premises local agent certificate.
 - You can use same star certificates (AOS SSL and Service Fabric).
 - The remaining certificates should probably differ from the certificates for the existing environment.
 
-### Download setup scripts from LCS (as documented for [Platform update 42 and later](setup-deploy-on-premises-pu41.md#downloadscripts) or [Platform updates 12 through 40](./setup-deploy-on-premises-pu12.md#downloadscripts))
+### Download setup scripts from LCS (as documented for [Platform update 41 and later](setup-deploy-on-premises-pu41.md#downloadscripts) or [Platform updates 12 through 40](./setup-deploy-on-premises-pu12.md#downloadscripts))
 
 - The scripts that are downloaded should be copied into a new folder.
 
-### Set up a standalone Service Fabric cluster (as documented for [Platform update 42 and later](setup-deploy-on-premises-pu41.md#setupsfcluster) or [Platform updates 12 through 40](./setup-deploy-on-premises-pu12.md#setupsfcluster))
+### Set up a standalone Service Fabric cluster (as documented for [Platform update 41 and later](setup-deploy-on-premises-pu41.md#setupsfcluster) or [Platform updates 12 through 40](./setup-deploy-on-premises-pu12.md#setupsfcluster))
 
 - The scripts that are downloaded should be copied into a new folder.
 
-### Configure LCS connectivity for the tenant (as documented for [Platform update 42 and later](setup-deploy-on-premises-pu41.md#configurelcs) or [Platform updates 12 through 40](./setup-deploy-on-premises-pu12.md#configurelcs))
+### Configure LCS connectivity for the tenant (as documented for [Platform update 41 and later](setup-deploy-on-premises-pu41.md#configurelcs) or [Platform updates 12 through 40](./setup-deploy-on-premises-pu12.md#configurelcs))
 
 - You must complete this task only one time for the tenant.
 
-### Configure AD FS (as documented for [Platform update 42 and later](setup-deploy-on-premises-pu41.md#configureadfs) or [Platform updates 12 through 40](./setup-deploy-on-premises-pu12.md#configureadfs))
+### Configure AD FS (as documented for [Platform update 41 and later](setup-deploy-on-premises-pu41.md#configureadfs) or [Platform updates 12 through 40](./setup-deploy-on-premises-pu12.md#configureadfs))
 
 - Configure AD FS according to the [Reuse the same AD FS instance for multiple environments](./onprem-reuseadfs.md) guide.
 

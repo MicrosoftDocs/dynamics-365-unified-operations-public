@@ -56,12 +56,14 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
     - If the schema versions haven't changed, copy the **ConfigTemplate.xml** file from the **InfrastructureOld** folder to the **Infrastructure** folder.
     - If the schema versions have changed, follow these steps:
 
+        1. In the **Infrastructure** folder rename **ConfigTemplate.xml** to **EmptyConfigTemplate.xml**
         1. Copy the **ConfigTemplate.xml** file from the **InfrastructureOld** folder to the **Infrastructure** folder.
-        2. Run the following command.
+        1. Run the following command.
         
             ```powershell
-            .\Update-ConfigTemplate.ps1 -OldConfigTemplate .\ConfigTemplateOld.xml -NewConfigTemplate .\ConfigTemplate.xml
+            .\Update-ConfigTemplate.ps1 -OldConfigTemplate .\ConfigTemplateOld.xml -NewConfigTemplate .\EmptyConfigTemplate.xml
             ```
+        1. The **ConfigTemplate.xml** file is now upgraded. You need to go through the file and fill in additional information that may be needed.
 
         > [!NOTE]
         > Newer versions of the scripts (version 2.14.0 and later) that introduce changes to the schema of the configuration file will include logic that migrates the configuration file to the new schema.
@@ -108,7 +110,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
         .\Export-Scripts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
         ```
 
-    2. Copy the contents of each `infrastructure\VMs<VMName>` folder into the corresponding VM (if remoting scripts are used, they will automatically copy the content to the target VMs), and then run the following scripts, if they exist. Perform these steps as an Administrator.
+    2. Copy the contents of each `infrastructure\VMs<VMName>` folder into the corresponding VM (if remoting scripts are used, they will automatically copy the content to the target VMs), and then run the following script. Perform this step as an Administrator.
 
         ```powershell
         # If remoting, only execute
@@ -117,14 +119,14 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
         .\Configure-PreReqs.ps1
         ```
 
-    3. Run the following scripts, if they exist. Perform these steps as an administrator.
+    3. Run the following script to ensure all prerequisites are completed. Perform this step as an administrator.
 
         ```powershell
         # If remoting, only execute
         # .\Complete-PreReqs-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml 
 
         .\Complete-PreReqs.ps1
-        ```       
+        ```
 
     4. Run the following script to validate the VM setup.
     
@@ -142,96 +144,93 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 
 ## Activate new certificates within Service Fabric cluster
 
-### <a name="sfcertrotationnotexpired"></a>Service Fabric with certificates that aren't expired
+In order to ease the certificate rotation process, Microsoft is recommending that certificate common names (subject name) are used instead of thumbprints for your Service Fabric standalone cluster configuration. If you have an existing cluster and want to migrate from using thumbprints to certificate common names you can do so by doing the following steps.
 
-1. Locate the **Clusterconfig.json** file for editing. If you cannot find this file, follow steps 2 and 3, otherwise continue to step 4.
-2. Run the following command to connect to the Service Fabric Cluster.
+1.  Run the following script to generate an updated cluster configuration file.
+    ```powershell
+        Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -UpgradeToCommonNames
+    ```
+
+    > [!NOTE]
+    > To provide defense in depth, we recommend that you restrict who the issuer of the certificates should be. Without this option then any certificate that matches 
+    > ```powershell
+    >    Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -UpgradeToCommonNames -RestrictCertificateIssuers
+    > ```
+
+1. Follow step 2 in the [Service Fabric with certificates that are not expired](#sfcertrotationnotexpired) section later in this topic. 
+
+### <a name=""></a> Service Fabric cluster with certificate common names
+
+#### Service Fabric with certificates that are not expired
+
+No further action is required. Service Fabric will automatically detect the new certificates. 
+
+If you have changed the certificate common name, then you need to upgrade your service fabric cluster configuration.
+
+1.  Run the following script to generate an updated cluster configuration file.
+    ```powershell
+        Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -UpdateCommonNames
+    ```
+
+    >[!NOTE]
+    > If the issuers have also changed, use this command instead
+    > ```powershell
+    >    Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -UpdateCommonNames -UpdateIssuers
+    > ```
+
+1. Follow step 2 in the [Service Fabric with certificates that are not expired](#sfcertrotationnotexpired) section later in this topic. 
+
+#### Service Fabric with certificates that are expired
+
+If your cluster is not available after 10 minutes from when you finished provisioning the new certificates to all of the nodes, consider restarting the nodes where the Service Fabric service is not started.
+
+If you have changed the certificate common name (subject name), then the Service Fabric cluster will not start up. If you can't generate new certificates with the previous common name you will need to cleanup and recreate the cluster.
+
+#### Service Fabric with restricted certificate issuers
+
+If your cluster configuration has the sections below defined then it has restricted the allowed certificate issuers. 
+
+```json
+        "ClusterCertificateIssuerStores": [
+          {
+            "IssuerCommonName": "EN14-CA",
+            "X509StoreNames": "Root"
+          }
+        ],
+        "ServerCertificateIssuerStores": [
+          {
+            "IssuerCommonName": "EN14-CA",
+            "X509StoreNames": "Root"
+          }
+        ],
+        "ClientCertificateIssuerStores": [
+          {
+            "IssuerCommonName": "EN14-CA",
+            "X509StoreNames": "Root"
+          }
+        ],
+```
+
+In such cases, if your new certificates have a different issuer than is defined in these configurations then you will need to go through a cluster configuration upgrade to add the new issuers. However, keep in mind that if your cluster defines a root CA as the issuer instead of an intermediate certificate, then as long as the certificate chain of your new certificates contains the root CA the certificate will be valid.
+
+In case you do need to update the list of issuers then you must do this while the existing certificates are still valid.
+
+1.  Run the following script to generate an updated cluster configuration file.
+    ```powershell
+        Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -UpdateIssuers
+    ```
+
+### <a name=""></a> Service Fabric cluster defined with certificate thumbprints
+
+#### <a name="sfcertrotationnotexpired"></a>Service Fabric with certificates that aren't expired
+
+1. Run the following script from a node belonging to the Service Fabric cluster to generate an updated cluster configuration file.
 
     ```powershell
-    #Connect to the Service Fabric Cluster from a node within the cluster
-    Connect-ServiceFabricCluster 
+        Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -UpdateThumbprints
     ```
 
-3. Run the following command to save the configuration file to C:\\Temp\\ClusterConfig.json. (Make sure that the C:\\Temp path exists.)
-
-    ```powershell
-    Get-ServiceFabricClusterConfiguration > C:\Temp\ClusterConfig.json
-    ```
-
-4. Open the **Clusterconfig.json** file for editing and find the following section. If a secondary thumbprint is defined, go to [Clean up old Service Fabric certificates](#cleanupoldsfcerts) before you continue.
-
-    ```json
-    "security": {
-        "metadata":  "The Credential type X509 indicates this cluster is secured using X509 Certificates. 
-        The thumbprint format is - d5 ec 42 3b 79 cb e5 07 fd 83 59 3c 56 b9 d5 31 24 25 42 64.",
-        "ClusterCredentialType":  "X509",
-        "ServerCredentialType":  "X509",
-        "CertificateInformation":  {
-            "ClusterCertificate":  {
-                                       "X509StoreName":  "My",
-                                        "Thumbprint": "*Old server thumbprint(Star/SF)*"
-                                   },
-            "ServerCertificate":   {
-                                        "X509StoreName":  "My",
-                                        "Thumbprint": "*Old server thumbprint(Star/SF)*"
-                                   },
-            "ClientCertificateThumbprints":  [
-                                       {
-                                            "CertificateThumbprint": "*Old client thumbprint*",
-                                            "IsAdmin":  true
-                                       }
-                                             ]
-                                   }
-                },
-    ```
-
-5. Replace that section in the file with the following code.
-
-    ```json
-    "security":  {
-        "metadata":  "The Credential type X509 indicates this cluster is secured using X509 Certificates. 
-        The thumbprint format is - d5 ec 42 3b 79 cb e5 07 fd 83 59 3c 56 b9 d5 31 24 25 42 64.",
-        "ClusterCredentialType":  "X509",
-        "ServerCredentialType":  "X509",
-        "CertificateInformation":  {
-            "ClusterCertificate":  {
-                                       "X509StoreName":  "My",
-                                        "Thumbprint": "*New server thumbprint(Star/SF)*",
-                                        "ThumbprintSecondary": "Old server thumbprint(Star/SF)"
-                                   },
-            "ServerCertificate":   {
-                                        "X509StoreName":  "My",
-                                        "Thumbprint": "*New server thumbprint(Star/SF)*",
-                                        "ThumbprintSecondary": "Old server thumbprint(Star/SF)"
-                                   },
-            "ClientCertificateThumbprints":  [
-                                       {
-                                            "CertificateThumbprint": "*Old client thumbprint*",
-                                            "IsAdmin":  false
-                                       },
-                                       {
-                                            "CertificateThumbprint": "*New client thumbprint*",
-                                            "IsAdmin":  true
-                                       }
-                                             ]
-                                   }
-                },
-    ```
-
-6. Edit the new and old thumbprint values. 
-
-7. Change clusterConfigurationVersion to the new version, for example 2.0.0.
-
-    ```json
-    {
-    "name": "Dynamics365Operations",
-    "clusterConfigurationVersion": "2.0.0",
-    "apiVersion": "10-2017",
-    ```
-
-8. Save the new ClusterConfig.json file.
-
-9. Run the following PowerShell command.
+1. Run the following PowerShell command.
 
     ```powershell
     # Connect to the Service Fabric Cluster
@@ -256,7 +255,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
     > [!NOTE] 
     > You might receive the following error message: "Upgrading from two different certificates to two different certificates is not allowed." This message indicates that you didn't clean up old Service Fabric certificates on the previous certificate rotation exercise. In this case, see the [Clean up old Service Fabric certificates](certificate-rotation-on-prem.md#cleanupoldsfcerts) section later in this topic, and then repeat the steps in this section.  
 
-### Service Fabric with or without expired certificates (cluster not accessible)
+#### Service Fabric with or without expired certificates (cluster not accessible)
 
 Continue this process following the steps in [Troubleshoot on-premises deployments](troubleshoot-on-prem.md#clean-up-an-existing-environment-and-redeploy).
 
@@ -355,6 +354,9 @@ Because you've updated your certificates, the configuration file that is present
 
 If you've generated a new **axdataencipherment** certificate, you must re-encrypt the **Credentials.json** file.
 
+> [!NOTE]
+> Make sure that you run the script from an Application Object Server (AOS) node.
+
 ```powershell
 .\Configure-CredentialsJson.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Action Rotate
 ```
@@ -374,9 +376,6 @@ Alternatively, if you also want to rotate the existing credentials, follow these
     ```powershell
     .\Configure-CredentialsJson.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Action Encrypt
     ```
-
-> [!NOTE]
-> Make sure that you run the script from an Application Object Server (AOS) node.
 
 ## Update deployment settings in LCS
 
@@ -425,34 +424,12 @@ Alternatively, if you also want to rotate the existing credentials, follow these
 
 This procedure should be completed either after a successful certificate rotation or before the next certificate rotation.
 
-1. Remove the old/secondary thumbprints from the cluster configuration. After you've removed them, the appropriate section should resemble the following example.
-
-    ```json
-    "security": {
-        "metadata":  "The Credential type X509 indicates this is cluster is secured using X509 Certificates.
-        The thumbprint format is - d5 ec 42 3b 79 cb e5 07 fd 83 59 3c 56 b9 d5 31 24 25 42 64.",
-        "ClusterCredentialType":  "X509",
-        "ServerCredentialType":  "X509",
-        "CertificateInformation":  {
-            "ClusterCertificate":  {
-                                       "X509StoreName":  "My",
-                                        "Thumbprint": "server thumbprint(Star/SF)"
-                                   },
-            "ServerCertificate":   {
-                                        "X509StoreName":  "My",
-                                        "Thumbprint": "server thumbprint(Star/SF)"
-                                   },
-            "ClientCertificateThumbprints":  [
-                                       {
-                                            "CertificateThumbprint": "client thumbprint",
-                                            "IsAdmin":  true
-                                       }
-                                             ]
-                                   }
-                },
+1.  Run the following script to generate an updated cluster configuration file.
+    ```powershell
+        Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -RemoveOldThumbprints
     ```
 
-1. Follow steps 4 through 6 in the [Service Fabric with certificates that are not expired](#sfcertrotationnotexpired) section earlier in this topic. 
+1. Follow step 2 in the [Service Fabric with certificates that are not expired](#sfcertrotationnotexpired) section earlier in this topic. 
 
 ## <a name="aftercertrotation"></a> After certificate rotation
 
