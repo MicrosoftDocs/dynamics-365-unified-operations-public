@@ -4,21 +4,11 @@
 title: Troubleshoot Store Commerce performance issues
 description: This topic explains how to troubleshoot Store Commerce performance issues.
 author: Mugunthan-Mani
-ms.date: 12/05/2022
-ms.topic: Troubleshooting
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application user
-# ms.devlang: 
+ms.date: 05/27/2022
+ms.topic: article
+audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 # ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: rassadi
@@ -28,7 +18,10 @@ ms.dyn365.ops.version: 10.0.25
 ---
 
 
-### Troubleshoot Store Commerce performance issues
+# Troubleshoot Store Commerce performance issues
+
+[!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 This topic explains how to troubleshoot Store Commerce performance issues.
 
