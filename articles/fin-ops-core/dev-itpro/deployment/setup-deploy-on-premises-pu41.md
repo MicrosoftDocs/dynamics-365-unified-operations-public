@@ -4,7 +4,7 @@
 title: Set up and deploy on-premises environments (Platform update 41 and later)
 description: This topic explains how to plan, set up, and deploy Microsoft Dynamics 365 Finance + Operations (on-premises) with Platform update 41 and later.
 author: faix
-ms.date: 05/03/2022
+ms.date: 05/25/2022
 ms.topic: article
 ms.prod: dynamics-365 
 ms.service:
@@ -961,7 +961,17 @@ Finance + Operations requires additional configuration of AD FS, beyond the defa
     Set-AdfsClaimsProviderTrust -TargetIdentifier 'AD AUTHORITY' -AlternateLoginID mail -LookupForests $domainName
     ```
 
-Before AD FS can trust Finance + Operations for the exchange of authentication, various application entries must be registered under an AD FS application group in AD FS. To speed up the setup process and help reduce errors, you can use the Publish-ADFSApplicationGroup.ps1 script for registration. Copy this script and the D365FO-OP directory to a machine where the AD FS role service is installed. Then run the script by using a user account that has enough permissions to administer AD FS. (For example, use an administrator account.)
+4. To be able to sign-in through the office Add-ins CORS headers need to be enabled.
+
+    ```powershell
+    Set-AdfsResponseHeaders -EnableCORS $true
+    Set-AdfsResponseHeaders -CORSTrustedOrigins https://az689774.vo.msecnd.net
+    ```
+
+    > [!NOTE]
+    > These commands can only be run on an AD FS server running Windows Server 2019 or later. AD FS on Windows Server 2016 has been deprecated. [./onprem-compatibility.md#active-directory-federation-services-ad-fs]
+
+Before AD FS can trust Finance + Operations for the exchange of authentication, various application entries must be registered under an AD FS application group in AD FS. To speed up the setup process and help reduce errors, you can use the Publish-ADFSApplicationGroup.ps1 script for registration. Run the script by using a user account that has enough permissions to administer AD FS. (For example, use an administrator account.)
 
 For more information about how to use the script, see the documentation that is listed in the script. Make a note of the client IDs that are specified in the output, because you will need this information in LCS later. If you lose the client IDs, sign in to the machine where AD FS is installed, open Server Manager, and go to **Tools** \> **AD FS Management** \> **Application Groups** \> **Microsoft Dynamics 365 for Operations On-premises**. You can find the client IDs under the native applications.
 
