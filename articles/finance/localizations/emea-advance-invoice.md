@@ -4,7 +4,7 @@
 title: Advance invoices for Eastern Europe
 description: An advance invoice is a document that you can create for a customer or vendor. It states the amount that must be prepaid on a sales order. This topic provides information about advance invoices for Eastern Europe.
 author: EvgenyPopovMBS
-ms.date: 04/10/2017
+ms.date: 05/25/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,9 +29,10 @@ ms.search.validFrom: 2016-11-30
 
 [!include [banner](../includes/banner.md)]
 
-An advance invoice is a document that you can create for a customer or vendor. It states the amount that must be prepaid on a sales order. This topic provides information about advance invoices for Eastern Europe.
-Alternatively, you can use prepayment invoice functionality (see description of this functionality [Prepayment invoices vs. prepayments](https://docs.microsoft.com/en-us/dynamics365/finance/accounts-payable/prepayments-invoices-vs-prepayments)). Starting from the version 10.0.28 (Build 10.0.1238.0) this functionality can be used either the configuration key **Journalizing customer\vendor settlement transactions** is enable or disable.
-To use prepayment invoices functionality set the option **Use prepayment invoice** to **Yes** (Accounts payable parameters > Ledger and sales tax, **Prepayment invoice** FastTab).  
+An advance invoice is a document that you can create for a customer or vendor. The invoice states the amount that must be prepaid on a sales order. This topic provides information about advance invoices for Eastern Europe.
+
+Another option is to use the prepayment invoice functionality. For more information, see [Prepayment invoices vs. prepayments](../accounts-payable/prepayments-invoices-vs-prepayments.md). Starting from Dynamics 365 Finance version 10.0.28, this functionality can be used by going to **Accounts payable** > **Setup** > **Parameters** > **Ledger and sales tax**, and on the **Prepayment invoice** FastTab, setting teh **Use prepayment invoice** option to **Yes**.
+ 
 
 Advance invoice functionality lets you perform the following tasks:
 
