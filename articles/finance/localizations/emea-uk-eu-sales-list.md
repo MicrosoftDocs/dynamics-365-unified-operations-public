@@ -48,7 +48,8 @@ This topic provides information about the European Union (EU) sales list report 
 
 For general setup information, see [EU Sales list reporting](https://docs.microsoft.com/dynamics365/finance/localizations/emea-eu-sales-list#prerequisites).
 
-[!NOTE] The value from the **Tax registration number** field on the **Tax registration** FastTab of the **Legal entities** page is used in the .txt and .xlsx files for the EU sales list report.
+>[!NOTE] 
+>The value from the **Tax registration number** field on the **Tax registration** FastTab of the **Legal entities** page is used in the .txt and .xlsx files for the EU sales list report.
 
 ### Set up information about the company
 
@@ -63,7 +64,7 @@ Create a registration type, and assign it to the **VAT ID** registration categor
     -   EU Sales list TXT (UK)
     -   EU Sales list XML (UK)
 
-For more information, see Download Electronic reporting configurations from Lifecycle Services.
+For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 
 ### Set up foreign trade parameters
 
@@ -72,9 +73,9 @@ For more information, see Download Electronic reporting configurations from Life
 3.  On the **Electronic reporting** FastTab, in the **File format mapping** field, select **EU Sales list TXT (UK)** or **EU Sales list XML (UK)**.
 4.  In the **Report format mapping** field, select **EU Sales list by rows report** or **EU Sales list by columns report**.
 5.  On the **Country/region properties** tab, select **New**, and specify the following information:
--   In the **Country/region** column, select **GBR**.
+    -   In the **Country/region** column, select **GBR**.
     -   In the **Country/region type** column, select **Domestic**.
-1.  List all the countries or regions that your company does business with. For each country that is part of the EU, in the **Country/region type** field, select **EU**.
+6.  List all the countries or regions that your company does business with. For each country that is part of the EU, in the **Country/region type** field, select **EU**.
 
 ## Work with the EU sales list
 
@@ -97,7 +98,7 @@ For general information about the types of transactions that are included in the
 | Report file name | Enter the name of the .xlsx file.                                                         |
 | Worker           | Select the contact for the person who is responsible for the report.                      |
 
-1.  Select **OK**, and review the generated reports.
+5.  Select **OK**, and review the generated reports.
 
 ## Example
 
@@ -108,10 +109,10 @@ For information about how to create a general setup, create postings, and transf
 1.  Go to **Tax** \> **Declarations** \> **Foreign trade** \> **EU sales list**.
 2.  On the Action Pane, select **Reporting**.
 3.  In the **EU sales list reporting** dialog box, on the **Parameters** FastTab, set the following fields:
--   In the **Reporting period** field, select **Monthly**.
+    -   In the **Reporting period** field, select **Monthly**.
     -   In the **From date** field, select **8/1/2021** (August 1, 2021).
     -   In the **Worker** field, select **Jodi Christiansen**.
-1.  Select **OK**, and review the report in text format that is generated. The following tables show the values on the example report.
+4.  Select **OK**, and review the report in text format that is generated. The following tables show the values on the example report.
 
 **EU sales list header**
 
@@ -135,6 +136,6 @@ For information about how to create a general setup, create postings, and transf
 | Sum of all invoices by customer             | 120          | 240          |                                                                                                             |
 | Transaction Indicator                       | 0            | 3            | The value is **3** for a service record, **0** for an item record, and **2** for a triangular trade record. |
 
-1.  Review the report in Excel format that is generated.
+5.  Review the report in Excel format that is generated.
 
 ![Table Description automatically generated](media/EUSL-uk.png)
