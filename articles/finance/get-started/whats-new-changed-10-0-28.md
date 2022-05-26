@@ -4,7 +4,7 @@
 title: What's new or changed in Dynamics 365 Finance 10.0.28 (July 2022)
 description: This topic describes features that are either new or changed in the Microsoft Dynamics 365 Finance version 10.0.28 preview release.
 author: kfend
-ms.date: 05/19/2022
+ms.date: 05/26/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -45,14 +45,13 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |----|----|----|----|
-|  Accounts payable  |  Enabling purchase order prepayment functionality    |  Prepayment invoice functionality can be used either the configuration key **Journalizing customer\vendor settlement transactions** is enable or disable. To use prepayment invoices functionality set the option **Use prepayment invoice** to **Yes** (Accounts payable parameters > Ledger and sales tax, **Prepayment invoice** FastTab).   |  Parameter  |
-|  Fixed assets (Russia)  |  Start and finish date of depreciation   |  You can select the **From date when put into operation** value in the **Depreciation start date** field. In this case the system calculates the depreciation from the date of putting into operation and complete the depreciation to the date of disposal.   | Parameter   | 
+|  Accounts payable  |  Enabling purchase order prepayment functionality    |  Prepayment invoice functionality can be used whether you are using the **Journalizing customer\vendor settlement transactions** functionality. To use prepayment invoices functionality, go to **Accounts payable parameters** > **Ledger and sales tax**. amd on the **Prepayment invoice** FastTab, set the option **Use prepayment invoice** to **Yes**.   |  Parameter  |
+| Budget control | Budget control document filtering enhancement | This feature introduces the ability to specify which budget control documents are budget checked by providing a query-based filter option for each document included in budget control. This allows for only a subset of a document type to be checked. For example, only purchase orders with Pool = “01” are checked.   | Feature management |
+|  Fixed assets (Russia)  |  Start and finish date of depreciation   |  You can select the **From date when put into operation** value in the **Depreciation start date** field. With this value selected, the system calculates the depreciation from the date of putting into operation and completes the depreciation on the date of disposal.   | Parameter   | 
 | General ledger | Unmark all ledger transactions within ledger settlement   | Sometimes, ledger transactions that can’t be settled are marked to ledger settlement. This is because the system thinks that the transactions have been settled. To work around this, you can unmark all of the ledger transactions for all users and legal entities in the system. With this feature enabled, a new button, **Unmark all transactions** is added to the **Ledger settlement** page. Select this button to unmark all ledger settled transactions for all users and legal entities in the system. This button is only available to administrators. | Default  |
-| General ledger   | Option to disply main account category on trial balance | This feature allwos you to add the main account category as a column on the **Trial balance** list page. The option, **Display main account category** has been added under the **Columns to display** button on the trial balance.   | Default |
+| General ledger   | Option to disply main account category on trial balance | This feature allows you to add the main account category as a column on the **Trial balance** list page. The option, **Display main account category** has been added under the **Columns to display** button on the trial balance.   | Default |
 | Tax calculation  | Integration with general journal   |  [Tax Calculation integration with Finance and Operations](../localizations/global-tax-calcuation-service-overview.md)  | Parameter   | 
 | Tax calculation  | Integration with vendor invoice journal   | [Tax Calculation integration with Finance and Operations](../localizations/global-tax-calcuation-service-overview.md)  | Parameter   | 
-|    |    |    |    | 
-|    |    |    |    | 
 
 
 ## Feature enhancements included in this release
@@ -62,8 +61,7 @@ The following table lists the feature enhancements that are included in this rel
 | Feature area | Feature name | More information |
 |--------------|--------------|------------------|
 | Credit and collections  | Update collection status when payment is manually settled | This enhancement updates the collection status when a payment is manually settled outside the payment journal. Previously, the collection status was only updated if the invoice was settled in the customer payment journal. Now, the collection status will update to the appropriate status when a payment is manually settled. |
-|              |              |                  |
-|              |              |                  |
+
 
 ## Additional resources
 
