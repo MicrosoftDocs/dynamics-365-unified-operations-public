@@ -184,9 +184,9 @@ To activate Store Commerce after installation, follow these steps.
 1. Activate Store Commerce by following the steps in the [POS activation guide](retail-device-activation.md#activate-a-modern-pos-or-cloud-pos-device-by-using-guided-activation).
 1. After activation is completed, sign in to the application by using an employee account.
 
-### Troubleshooting setup issues
+### Troubleshoot setup issues
 
-Refer the [Store Commerce setup troubleshooting document](../troubleshoot/setup-installation.md) for more information.
+For troubleshooting information, see [Troubleshoot Store Commerce setup and installation issues](../troubleshoot/store-commerce-setup-installation.md) .
 
 ## Customize the app
 
