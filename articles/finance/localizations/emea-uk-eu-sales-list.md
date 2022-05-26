@@ -1,3 +1,32 @@
+---
+# required metadata
+
+title: EU Sales list for UK (Northern Ireland)
+description: This topic provides information about the European Union (EU) sales list report for UK (Northern Ireland).
+author: AKroshkina
+ms.date: 05/26/2022
+ms.topic: article
+ms.prod: 
+ms.technology: 
+
+# optional metadata
+
+#ms.search.form:
+audience: IT Pro, Application User
+# ms.devlang: 
+ms.reviewer: kfend
+# ms.suite: 
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: 
+# ms.search.industry: 
+ms.author: anasyash
+ms.dyn365.ops.version: 
+ms.search.validFrom: 
+---
+
+# EU Sales list for UK (Northern Ireland)
+
 This topic provides information about the European Union (EU) sales list report for the UK (Northern Ireland). The UK (Northern Ireland) EU sales list report contains information about the sale of goods and services for reporting in text and XML formats. The following fields are included on the UK (Northern Ireland) EU sales list report:
 
 -   **EU sales list header:**
