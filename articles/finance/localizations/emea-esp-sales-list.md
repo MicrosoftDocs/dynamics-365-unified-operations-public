@@ -3,7 +3,7 @@
 
 title: EU sales list for Spain (Report 349)
 description: This topic provides information about the European Union (EU) sales list report for Spain, also known as Report 349. 
-author: anasyash
+author: AKroshkina
 ms.date: 05/25/2022
 ms.topic: article
 ms.prod: 
