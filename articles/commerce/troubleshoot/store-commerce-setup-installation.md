@@ -3,7 +3,7 @@
 
 title: Troubleshoot Store Commerce setup and installation issues
 description: This topic explains how to troubleshoot Store Commerce setup and installation issues.
-author: Mugunthan-Mani
+author: mugunthanm
 ms.date: 05/27/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
