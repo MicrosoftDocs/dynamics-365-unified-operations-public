@@ -259,7 +259,11 @@ For information about how to set up purchases and create a vendor invoice, see [
 ### Create a corrective EU sales list report
 
 1. Go to **Tax** > **Declarations** > **Foreign trade** > **EU sales list**.
-2. Select an item line, and then follow these steps:
+2. Verify that there are one service line and one item line in the EU sales list page.
+
+  ![EU sales list for Spain.](media/EUSL_esp_ex.png)
+  
+3. Select an item line, and then follow these steps:
 
     1. Switch to the **Correction** view.
     2. On the Action Pane, select **Edit**.
@@ -270,7 +274,7 @@ For information about how to set up purchases and create a vendor invoice, see [
     7. Switch to the **Overview** view.
     8. In the **Items value** field, enter **213** (= 333 – 120).
 
-3. Select a service line, and then follow these steps:
+4. Select a service line, and then follow these steps:
 
     1. Switch to the **Correction** view.
     2. In the **Fiscal year** field, enter **2021**.
@@ -280,9 +284,9 @@ For information about how to set up purchases and create a vendor invoice, see [
     6. Switch to the **Overview** view.
     7. In the **Services value** field, enter **171** (= 411 – 240).
 
-4.	On the Action Pane, select **Save**.
-5.	On the Action Pane, select **Reporting**.
-6.	In the **EU sales list reporting** dialog box, on the **Parameters** FastTab, set the following fields:
+5.	On the Action Pane, select **Save**.
+6.	On the Action Pane, select **Reporting**.
+7.	In the **EU sales list reporting** dialog box, on the **Parameters** FastTab, set the following fields:
 
     1. In the **Reporting period** field, select **Monthly**.
     2. In the **From date** field, select **8/1/2021** (August 1, 2021).
@@ -292,9 +296,9 @@ For information about how to set up purchases and create a vendor invoice, see [
     6. In the **Contact ID** field, select the contact that you created earlier.
     7. In the **Presentation type** field, select **Telematic**.
 
-7.	In the **Correction** field, select **Complementary**.
-8.	In the **Corrected declaration** field, enter **3490000000001**.
-9.	Select **OK**, and review the correction report in text format that is generated. The following tables show the values in the example report.
+8.	In the **Correction** field, select **Complementary**.
+9.	In the **Corrected declaration** field, enter **3490000000001**.
+10.	Select **OK**, and review the correction report in text format that is generated. The following tables show the values in the example report.
 
     **EU sales list header**
     
