@@ -2,7 +2,7 @@
 title: Control module
 description: Controls are what make up the content of a page.
 author: tonyafehr
-ms.date: 11/10/2017
+ms.date: 05/26/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
