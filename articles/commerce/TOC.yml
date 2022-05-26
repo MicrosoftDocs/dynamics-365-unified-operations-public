@@ -2651,7 +2651,7 @@
         - name: Troubleshooting
           items: 
           - name: Extensions
-            href: troubleshoot/extensions.md
+            href: troubleshoot/store-commerce-extensions.md
       - name: E-commerce
         items:
         - name: Overview
