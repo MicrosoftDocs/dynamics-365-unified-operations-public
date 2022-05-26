@@ -4,7 +4,7 @@
 title: EU sales list for Spain (Report 349)
 description: This topic provides information about the European Union (EU) sales list report for Spain, also known as Report 349. 
 author: AKroshkina
-ms.date: 05/25/2022
+ms.date: 05/26/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 ms.custom: 12811
 ms.search.region: Spain
 # ms.search.industry: 
-ms.author: epopov
+ms.author: v-akroshkina
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -261,7 +261,7 @@ For information about how to set up purchases and create a vendor invoice, see [
 1. Go to **Tax** > **Declarations** > **Foreign trade** > **EU sales list**.
 2. Verify that there are one service line and one item line in the EU sales list page.
 
-  ![EU sales list for Spain.](media/EUSL_esp_ex.png)
+  ![EU sales list page.](media/EUSL_esp_ex.png)
   
 3. Select an item line, and then follow these steps:
 
