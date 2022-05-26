@@ -67,7 +67,7 @@ The following fields are included on the Spanish EU sales list report:
 For general setup information, see [EU sales list reporting](emea-eu-sales-list.md).
 
 > [!NOTE]
-> ] The company name and the value from the **Tax registration number** field on the **Tax registration** FastTab of the **Legal entities** page are used in the .xlsx file for the EU sales list report.
+> The company name and the value from the **Tax registration number** field on the **Tax registration** FastTab of the **Legal entities** page are used in the .xlsx file for the EU sales list report.
 
 
 ### Set up company information
