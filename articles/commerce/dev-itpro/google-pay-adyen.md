@@ -147,9 +147,9 @@ To set up the payment express fragment with Google Pay for the online store, fol
 1. Select **Save** to save your changes, and then select **Finish editing**.
 1. Select **Publish** to publish the fragment.
 
-### Set up the checkout page with the payment express fragment
+### Add the payment express fragment to the checkout page
 
-To set up the Payment Express fragment with Google Pay in the Checkout page, follow these steps.
+To add the payment express fragment to the checkout page, follow these steps.
 
 1. In site builder, go to **Pages**, and then select your site's checkout page.
 1. Select **Edit**.
@@ -165,18 +165,18 @@ To set up the Payment Express fragment with Google Pay in the Checkout page, fol
 1. Select **Save** to save your changes, and then select **Finish editing**.
 1. Select **Publish** to publish the page.
 
-### Set up the cart page with the payment express fragment
+### Add the payment express fragment to the cart page 
 
-To set up the Payment Express fragment with Google Pay in the Cart page, follow these steps.
+To add the payment express fragment to the cart page, follow these steps.
 
 1. In site builder, go to **Pages**, and then select your site's cart page.
 2. Select **Edit**.
 3. In the outline view, expand the **Main slot** in the tree view and locate the container that contains the **Cart** module.
 4. In the **Cart** module, select the **Payment Express** slot, select the ellipsis (**...**), and then select **Add module.**
 5. In the **Select modules** dialog box, select the **Payment express** module, and then select **OK*.*
-6. With the express fragment still selected, in Properties add "GooglePay" to the **Supported tender types** property. This field must match what was used as the **Supported Tender Types** string supplied in the connector set up for the channel (as described in the section above **Configure a Commerce online store for Google Pay**).
-7. Click the **Save** button to save your changes.
-8. Click on **Finish editing** to complete editing the page, and **Publish** to publish your changes live.
+6. Select the **Payment express** module slot. In the properties pane on the right, under **Supported tender types**, enter **GooglePay**. This value must match what was used as the **Supported Tender Types** string in the connector set up for the channel (as described in the [Configure a Commerce online store for Google Pay](#configure-a-commerce-online-store-for-google-pay) section above*).
+1. Select **Save** to save your changes, and then select **Finish editing**.
+1. Select **Publish** to publish the page.
 
 Users can include up to three supported **Payment Express** modules in the cart **Payment Express** slot (Three available supported payment options).
 
