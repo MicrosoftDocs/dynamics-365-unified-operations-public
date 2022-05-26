@@ -4,7 +4,7 @@
 title: Service protection API limits
 description: This topic provides information about limits for service protection application programming interfaces (APIs) for the Finance and Operations apps service.
 author: jaredha
-ms.date: 05/10/2022
+ms.date: 05/26/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: v-chgriffin
@@ -71,7 +71,7 @@ User-based service protection API limits are enforced based on three factors:
 
 Each web server that is available to your environment will independently enforce the service protection API limits. Most environments will have more than one web server. However, only one web server is allocated to trial environments. The actual number of web servers that are available to your environment depends on multiple factors that are part of the managed Finance and Operations apps service. One of these factors is the number of user licenses that you've purchased. For information about how to use web resources that are available in your environment, see [Monitoring for API throttling](service-protection-monitoring.md).
 
-The following table describes the default user-based service protection API limits that are enforced *per user per web server*.
+The following table describes the default user-based service protection API limits that are enforced *per user, per application ID, per web server*.
 
 | Measure | Description | Service protection limit |
 | --- | --- | --- |
