@@ -393,7 +393,7 @@
           - name: Store Commerce app
             href: dev-itpro/store-commerce.md
           - name: Migrate Modern POS to Store Commerce
-            href: dev-itpro/pos-extension/Migrate-MPOS-SC.md
+            href: dev-itpro/pos-extension/migrate-mpos-store-commerce.md
           - name: Device management implementation guidance
             href: implementation-considerations-devices.md
           - name: Choose between Store Commerce and Cloud POS
