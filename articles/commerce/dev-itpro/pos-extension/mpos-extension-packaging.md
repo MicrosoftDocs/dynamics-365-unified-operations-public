@@ -42,6 +42,7 @@ To create the extension installer for a Modern POS extension, follow these steps
 
     1. In Solution Explorer, select and hold (or right-click) the project, and then select **Add &gt; Reference**.
     2. In Reference Manager, on the **Projects** tab on the left, select the **Modern POS** project that you created earlier.
+    3. After the project is added as reference, edit the csproj file and add <ReferenceOutputAssembly>false</ReferenceOutputAssembly> for the reference added
 
 6. **For offline channel database extension script projects only:** Add a reference from the Modern POS project to the channel database project:
 
