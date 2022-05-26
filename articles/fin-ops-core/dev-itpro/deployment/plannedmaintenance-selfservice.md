@@ -51,7 +51,7 @@ Microsoft recommends that you avoid the following activities during the maintena
 | June 2022 | June 26, 2022 | June 25, 2022 | June 25, 2022 |
 
 > [!NOTE] 
-> Effective July 2022 through September 2022, Microsoft will start to roll out updates to the production environment during any weekend and outside normal business hours, to help minimize any potential impact on your environments. All sandbox environment will be updated during any night, outside of business hours.
+> Effective July 2022 through September 2022, Microsoft will start to roll out updates to the production environment during any weekend, and outside of normal business hours, to help minimize any potential impact on your environments. All sandbox environment will be updated during any night, outside of business hours.
 > 
 > All the maintenance activity (operating system patching, security hotfixes, and quality updates) will be performed during the dark hour window to provide a near-zero-downtime experience. 
 
