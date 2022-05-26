@@ -4,7 +4,7 @@
 title: Spain overview
 description: This topic provides links to documentation resources for Spain. 
 author: kfend
-ms.date: 01/15/2022
+ms.date: 05/26/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -49,7 +49,7 @@ This topic provides links to documentation resources for Spain.
 - [Sales and purchase cycles](emea-esp-sales-purchase-cycle.md)
 - [Special entries and opening sheets](emea-esp-opening-sheets-spain.md)
 - [Immediate Supply of Information on VAT (Suministro Inmediato de Información del IVA, SII)](emea-esp-sii.md)
-- [EU sales list for Spain (Report 349)]( emea-esp-sales-list.md)
+- [EU sales list for Spain (Report 349)](emea-esp-sales-list.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
