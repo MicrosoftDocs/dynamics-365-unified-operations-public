@@ -72,11 +72,12 @@ Users who are connected to the environment might experience a brief disconnectio
 For example, the user may be working on a sales order creating lines or posting. After the interruption, the user might return to the Sales workspace, but the new order and lines should still be available. We recommend that users go back to the main form and check their work. 
 
 ### Batch service
-Batch service can be unavailable for up to 25 minutes. The following activities will occur: 
+Individual batch servers will not be available for up to 30 minutes.The following activities will occur: 
 - Any executing batch jobs will be terminated.
 - Jobs that were terminated will be automatically restarted when the batch service recovers. Set the maximum number of retries to zero for any jobs that should not be restarted automatically.
   - Check printing 
   - Statement posting
+Please refer https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/retryable-batch#can-i-change-the-maximum-number-of-retries-and-the-retry-interval to leran more about batch retry.
 
 ### Priority-based scheduling
 - If priority-based scheduling is enabled, users will experience reduced Application Object Server (AOS) capacity during the maintenance window. Batch jobs will be served by the available AOS instances. Therefore, there will eventually be no complete downtime during the servicing window.
