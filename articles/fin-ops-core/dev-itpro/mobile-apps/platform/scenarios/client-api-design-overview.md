@@ -4,7 +4,7 @@
 title: Client-side design APIs
 description: This topic provides an overview of the client-side design APIs and includes recommendations for using them.
 author: tonyafehr
-ms.date: 07/01/2017
+ms.date: 05/26/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
