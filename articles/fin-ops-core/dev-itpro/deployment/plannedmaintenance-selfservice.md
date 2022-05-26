@@ -20,9 +20,6 @@ Because of the changing nature of technology, the continual appearance of new se
 ## Infrastructure maintenance in self-service environments
 Infrastructure maintenance is the process of updating the environments with the latest security updates and critical hotfixes. Microsoft must complete this process on your environments to ensure security, availability, reliability. This topic provides answers to frequently asked questions about Microsoft planned maintenance in self-service environments.
 
-> [!NOTE] 
-> Effective July 2022 through September 2022, Microsoft will start to roll out updates to the environment during any weekend and outside normal business hours, to help minimize any potential impact on your environments. All the maintenance activity (operating system patching, security hotfixes, and quality updates) will be performed during the dark hour window to provide near-zero-downtime experience. As environments are onboarded to the new process, prior notification will be sent to the message center.
-
 ## What are the types of planned maintenance activities that are performed on an environment?
 Some of the common planned maintenance activities performed by Microsoft are:
 
@@ -33,9 +30,12 @@ Some of the common planned maintenance activities performed by Microsoft are:
 ## What are the planned maintenance windows?
 A planned maintenance window is typically during the dark hours of the geographic region that your environment is deployed in. The following list shows the maintenance windows for each geography in Coordinated Universal Time (UTC).
 
-- Americas: 5:00 AM to 8:00 AM UTC
-- EMEA: 2:00 AM to 5:00 AM UTC
-- APAC: 6:00 PM to 9:00 PM UTC
+- US, BR, CA: 4:00 AM to 10:00 AM UTC 
+- CH, FR, EU, GB: 10:00 PM to 4:00 AM UTC
+- AE, NO, ZA: 6:00 PM to 12:00 AM UTC
+- CN, JP: 4:00 PM to 10:00 PM UTC
+- AU: 1:00 PM to 7:00 PM UTC
+- IN: 6:30 PM to 00:30 AM UTC
 
 Microsoft recommends that you avoid the following activities during the maintenance window:
 
@@ -50,11 +50,8 @@ Microsoft recommends that you avoid the following activities during the maintena
 | May 2022 | May 22, 2022 | May 21, 2022 | May 21, 2022 |
 | June 2022 | June 26, 2022 | June 25, 2022 | June 25, 2022 |
 
-## How are operating system maintenance updates applied?
-This service maintenance is planned outside normal business hours to help minimize any potential impact on your environment. For environments that have users in other parts of the world, we recognize that "outside normal business hours" might affect you differently. We are working hard to improve Microsoft Dynamics 365 and minimize the impact of these maintenance windows in the future. Going forward, infrastructure maintenance schedules will be posted here, and you won't receive future notifications for infrastructure maintenance.
-
-## How are quality updates applied?
-TBD
+> [!NOTE] 
+> Effective July 2022 through September 2022, Microsoft will start to roll out updates to the environment during any weekend and outside normal business hours, to help minimize any potential impact on your environments. All the maintenance activity (operating system patching, security hotfixes, and quality updates) will be performed during the dark hour window to provide near-zero-downtime experience. As environments are onboarded to the new process, prior notification will be sent to the message center.
 
 ## Can operating system updates be applied in zero downtime?
 Yes, Microsoft began to roll out near-zero-downtime infrastructure maintenance in May 2021.
@@ -63,7 +60,7 @@ Yes, Microsoft began to roll out near-zero-downtime infrastructure maintenance i
 Customers can continue to operate the system during the maintenance activity. They may experience brief interruptions or disconnects during this window, but will not need to take a full downtime.
 
 ## What is the experience during the near-zero-downtime maintenance window?
-Upgrades will occur in batches. Therefore, most capacity is always online, and only a subset is upgraded at a time to help eliminate complete downtime. We recommend that customers adopt priority-based scheduling of batch jobs. In this way, they can eliminate the stickiness of batch jobs that are associated with a batch server and enable near-zero-downtime servicing for security patching and quality updates. By design, all Tier 2 and Tier 3 environments might experience approximately 30 minutes of downtime during the servicing.
+Upgrades will occur in batches. Therefore, most capacity is always online, and only a subset is upgraded at a time to help eliminate complete downtime. We recommend that customers adopt priority-based scheduling https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/priority-based-batch-scheduling of batch jobs. In this way, they can eliminate the stickiness of batch jobs that are associated with a batch server and enable near-zero-downtime servicing for security patching and quality updates. By design, all Tier 2 and Tier 3 environments might experience approximately 30 minutes of downtime during the servicing.
 
 ### Interactive usage
 Users who are connected to the environment might experience a brief disconnection of less than 60 seconds a few times during the servicing window. After recovery, users might experience one of the following outcomes:
@@ -86,13 +83,6 @@ Batch service can be unavailable for up to 25 minutes. The following activities 
 
 > [!NOTE] 
 > We are working to reduce the downtime for batch service to be few minutes. This will require customers to adopt priority-based scheduling of batch jobs.
-
-### Known issues
-The following issues are known to occur during the near-zero-downtime maintenance window:
-- Classic Material Resource Planning: Material Resource Planning jobs are currently not recreated on restart.
-  - Ensure Material Resource Planning jobs are not scheduled during the planned maintenance window. This will be fixed in a future Microsoft update.
-- Recurring integration: Messages that were in progress at the time of restart will remain stuck in an in-progress state.
-  - Review the integration messages that were published during the planned maintenance window. If you find any that are in an in-process state, these should be terminated and re-published.
 
 ## Is it possible to reschedule near-zero-downtime operating system maintenance?
 To meet regulatory and security compliance standards, Microsoft will perform the planned maintenance during the dark hours of the geographic region where your environment is deployed. The main objective of planned maintenance is to regularly patch environments to remediate security vulnerabilities and apply critical quality updates. If you delay updates, you will put data security, availability, and reliability at risk. 
