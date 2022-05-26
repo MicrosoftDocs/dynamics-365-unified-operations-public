@@ -4,7 +4,7 @@
 title: Publish mobile workspaces
 description: This topic describes the steps that system administrators must follow to publish a mobile workspace.
 author: sericks007
-ms.date: 09/18/2019
+ms.date: 05/26/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
