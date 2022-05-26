@@ -4,7 +4,7 @@
 title: Mobile platform 
 description: This topic describes the platform for the mobile phone app which enables rich offline and mobile interactions, and an easy-to-use designer experience.
 author: tonyafehr
-ms.date: 06/20/2017
+ms.date: 05/26/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
