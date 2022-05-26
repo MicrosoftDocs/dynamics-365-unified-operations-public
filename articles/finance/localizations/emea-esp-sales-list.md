@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the European Union (EU) sales list report for Spain, also known as Report 349. The Spanish EU sales list report contains information about the trade of goods and services for reporting in text format.
+This topic provides information about the European Union (EU) sales list report for Spain, also known as Report 349. The Spanish EU sales list report contains information about sale and purchase of goods and services for reporting in text format.
 
 The following fields are included on the Spanish EU sales list report:
 
@@ -52,7 +52,8 @@ The following fields are included on the Spanish EU sales list report:
 
 - **EU sales list lines:**
 
-  - Fiscal year; company VAT ID
+  - Fiscal year
+  - Company tax registration number
   - Customer or vendor VAT ID
   - Customer or vendor name	
   - Delivery code
@@ -118,7 +119,7 @@ For more information, see [Download Electronic reporting configurations from Lif
 6. Select **Save**.
 
 > [!NOTE]
-> The first name, last name, and primary telephone number of the contact will be shown in the .txt file for the EU sales list report.
+> Values from the **First name** and **Last name** fields and primary telephone number of the contact will be shown in the .txt file for the EU sales list report.
 
 ## Work with the EU sales list
 For general information about which types of transactions are included in the EU sales list, how to generate the EU sales list report, and how to close the EU sales list reporting period, see [EU sales list reporting](emea-eu-sales-list.md#working-with-the-esl).
@@ -293,7 +294,7 @@ For information about how to set up purchases and create a vendor invoice, see [
 
 7.	In the **Correction** field, select **Complementary**.
 8.	In the **Corrected declaration** field, enter **3490000000001**.
-9.	Select OK, and review the correction report in text format that is generated. The following tables show the values in the example report.
+9.	Select **OK**, and review the correction report in text format that is generated. The following tables show the values in the example report.
 
     **EU sales list header**
     
