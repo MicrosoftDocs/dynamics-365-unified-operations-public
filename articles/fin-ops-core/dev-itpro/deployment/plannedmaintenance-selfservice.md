@@ -37,7 +37,7 @@ A planned maintenance window is typically during the dark hours of the geographi
 - AU: 1:00 PM to 7:00 PM UTC
 - IN: 6:30 PM to 00:30 AM UTC
 
-Please refer here for Geo https://docs.microsoft.com/en-us/azure/traffic-manager/traffic-manager-geographic-regions
+To view a list of the geographical regions, see [Country/Region hierarchy used by Azure Traffic Manager for geographic traffic routing method](/azure/traffic-manager/traffic-manager-geographic-regions).
 
 Microsoft recommends that you avoid the following activities during the maintenance window:
 
