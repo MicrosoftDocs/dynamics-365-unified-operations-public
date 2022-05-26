@@ -1,7 +1,7 @@
 This topic provides information about the European Union (EU) sales list report for the UK (Northern Ireland). The UK (Northern Ireland) EU sales list report contains information about the sale of goods and services for reporting in text and XML formats. The following fields are included on the UK (Northern Ireland) EU sales list report:
 
 -   **EU sales list header:**
--   Company's tax registration number (only for the .txt file format)
+    -   Company's tax registration number (only for the .txt file format)
     -   Branch ID (only for the .txt file format)
     -   The last month of the reporting period (only for the .txt file format)
     -   Contact person
@@ -9,7 +9,7 @@ This topic provides information about the European Union (EU) sales list report 
     -   Reporting year
     -   Reporting month (only for the .xml file format)
 -   **EU sales list lines:**
--   Customer VAT ID
+    -   Customer VAT ID
     -   The total amount of items
     -   The total amount of services
     -   Total amount of the triangular trade
@@ -28,7 +28,7 @@ Create a registration type, and assign it to the **VAT ID** registration categor
 ### Import Electronic reporting configurations
 
 -   In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index), import the latest versions of the following Electronic reporting (ER) configurations for the EU sales list:
--   EU Sales list model
+    -   EU Sales list model
     -   EU Sales list by columns report
     -   EU Sales list by rows report
     -   EU Sales list TXT (UK)
@@ -108,4 +108,4 @@ For information about how to create a general setup, create postings, and transf
 
 1.  Review the report in Excel format that is generated.
 
-![Table Description automatically generated](media/726f07744d241b89bcec7aad69206800.png)
+![Table Description automatically generated](media/EUSL-uk.png)
