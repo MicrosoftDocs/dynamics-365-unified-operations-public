@@ -47,7 +47,7 @@ To learn more about Store Commerce app, refer this [document](https://aka.ms/Sto
 
     The existing offline database can be updated by passing the correct SQL instance in the installer parameter or you can also create a new offline database, this required only if you need offline.
 
-7.	After installing the app, launch the app from the start menu and [activate the app](../dev-itpro/retail-device-activation.md).
+7.	After installing the app, launch the app from the start menu and [activate the app](../retail-device-activation.md).
 8.	After activation login to the app using the employee credentials.
 
 ## Migrate extensions
