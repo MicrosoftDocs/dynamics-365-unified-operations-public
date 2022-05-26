@@ -101,7 +101,7 @@ With Google Pay, selecting the Google Pay button in the **Payment Express** sect
 When users complete the action in the Google Pay window, they're directed to the Commerce site checkout page with the checkout form prepopulated with their Google Pay account details. After users return to the checkout page from the Google Pay window, they'll see the following:
 
 - In the payment express flow, the first delivery option available for the shipping address returned will be preselected for the customer.  
-- With Google Pay, a contact email address isn't returned. Guest checkout users will need to enter an email address in the contact section of the checkout page. Signed-in users will have their contact data automatically populated from their Dynamics customer account (their primary email used for authentication).
+- With Google Pay, a contact email address isn't returned. Guest checkout users will need to enter an email address in the contact section of the checkout page. Signed-in users will have their contact data automatically populated from their Dynamics customer account (the primary email used for authentication).
 
 Customers have the option to review orders and change checkout order details before selecting **Place order** to finalize the order.
 
@@ -155,15 +155,17 @@ To add the payment express fragment to the checkout page, follow these steps.
 1. Select **Edit**.
 1. In the **Main slot**, select the ellipsis (...), and then select **Add module**.
 1. In the **Select modules** dialog box, select the **Container** module, and then select **OK**.
-1. If a Container already exists for your site with the **checkout** fragment- to have the Payment Express section  render above the normal checkout container, position it above the existing checkout container within the **Main slot** section. You can move container positions by selecting their ellipsis (...), and choosing the "Move up" or "Move down" options.
-1. In the **Container** module properties, it's recommended to use the following property settings:
-    - **Container Layout**: Stacked
-    - **Width**: Fill container
-    - **Children Shown**: Three (this figure depends on the number of intended payment express and text block modules based on the visual arrangement desired)
-1. With the **Container** module still selected in the module tree, select the ellipsis (**...**), and then select **Add fragment**.
+1. In the properties pane on the right, set the properties for the container module as follows:
+    - **Container Layout**: Select **Stacked**.
+    - **Width**: Select **Fill container**.
+    - **Children Shown**: Select **Three** to specify the number of children that will fit in a row of the Express Checkout section of the checkout page (for example, a text box, payment express for PayPal, payment express for Google Pay).
+1. In the **Container** module slot, select the ellipsis (**...**), and then select **Add fragment**.
 1. In the **Select a fragment** dialog box, select the express payment fragment you created, and then select **OK.**
 1. Select **Save** to save your changes, and then select **Finish editing**.
 1. Select **Publish** to publish the page.
+
+> [!NOTE]
+> If the checkout page already has a container with the **checkout** fragment, to have the payment express module render above the normal checkout container, you can position it above or below the existing checkout by selecting the ellipsis (**...**) in the **Main slot** and then selecting **Move up** or **Move down**.
 
 ### Add the payment express fragment to the cart page 
 
@@ -178,28 +180,28 @@ To add the payment express fragment to the cart page, follow these steps.
 1. Select **Save** to save your changes, and then select **Finish editing**.
 1. Select **Publish** to publish the page.
 
-Users can include up to three supported **Payment Express** modules in the cart **Payment Express** slot (Three available supported payment options).
+Users can include up to three supported **Payment Express** modules (in other words, three available supported payment options) in the cart **Payment Express** slot.
 
 ### Set up Google Pay as an option in the checkout payment section
 
 To set up Google Pay as a normal payment option in the **Payment Method** section of the checkout page, follow the steps below. This is for payment-only, non-express functionality (the checkout form will be filled out by the user and returning from the Google Pay payment page will only ready the checkout for payment by Google Pay- no Google account information will be used to overwrite the filled checkout details).
 
 1. In site builder, if using the Checkout fragment, follow the steps similar to the [payment module](../payment-module.md) article. This assumes a Checkout fragment has been created with included Pickup information, Shipping address, Delivery options, Contact information, Terms and Conditions (optional), and a section for Checkout elements. The module library checkout module ships with the **Checkout section container** having a text block for user notice instructions, the loyalty points, gift card, and payment modules. 
-2. While in **Edit** mode in the Checkout fragment, select the **Checkout section container** and click **Add module**.
-3. Choose the **Payment** module from the Select modules dialogue and click **OK**.
-4. You can name this module for site builder user clarity by selecting the pencil in the Properties window next to the module's name reference, renaming the module (example: "Google Pay"), and selecting the check mark to save this update. The module will now appear in the tree view with this friendly name for future reference.
-5. Change the value of the **Height of the iFrame** in the module properties panel to meet your desired design height in pixels (example: "75"). 
-6. Under **Supported tender types**, enter "GooglePay" to match the headquarters configuration for the Google Pay connector.
-7. Leave **Is primary payment** blank (this is typically checked for the Adyen checkout module).
-8. The **Payment style override** isn't supported for the Google Pay configuration.
-9. Select the **Use connector id**. This property must be selected when using multiple payment connectors on the page (example: Adyen main, PayPal).
-10. Position the module where desired with other payment modules by selecting the ellipsis ("**...**") next to the module in the module tree outline, and selecting either **Move up** or **Move down**.
-11. Select **Save** to save your changes.
-12. Click on **Finish editing** to complete editing the page, and **Publish** to publish your changes live.
+1. While in **Edit** mode in the Checkout fragment, select the **Checkout section container** and click **Add module**.
+1. Choose the **Payment** module from the Select modules dialogue and click **OK**.
+1. You can name this module for site builder user clarity by selecting the pencil in the Properties window next to the module's name reference, renaming the module (example: "Google Pay"), and selecting the check mark to save this update. The module will now appear in the tree view with this friendly name for future reference.
+1. Change the value of the **Height of the iFrame** in the module properties panel to meet your desired design height in pixels (example: "75"). 
+1. Under **Supported tender types**, enter "GooglePay" to match the headquarters configuration for the Google Pay connector.
+1. Leave **Is primary payment** blank (this is typically checked for the Adyen checkout module).
+1. The **Payment style override** isn't supported for the Google Pay configuration.
+1. Select the **Use connector id**. This property must be selected when using multiple payment connectors on the page (example: Adyen main, PayPal).
+1. Position the module where desired with other payment modules by selecting the ellipsis ("**...**") next to the module in the module tree outline, and selecting either **Move up** or **Move down**.
+1. Select **Save** to save your changes.
+1. Select **Finish editing**, and then **Publish**.
 
 ### Modes of delivery
 
-With the Payment Express module using Google Pay, the first delivery option returned against the shipping address selected from the Google Pay account will be pre-selected. Users will have a chance to click **change** and adjust the shipping address to a different option if desired. 
+With the payment express module using Google Pay, the first delivery option returned against the shipping address selected from the Google Pay account will be preselected. Users have a chance to adjust the shipping address to a different option if desired. 
 
 The order of the delivery methods is configured in HQ on the Channel's **Modes of delivery** section. Additional information on setting up modes of delivery can be found in the [Set up modes of delivery](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery) article. The checkout module will also use the **delivery options module** when rendering modes of delivery during checkout. See additional details in the [delivery options module](../delivery-options-module.md) article.
 
