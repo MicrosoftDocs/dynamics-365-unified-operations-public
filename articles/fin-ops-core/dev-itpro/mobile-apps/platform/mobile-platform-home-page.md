@@ -4,7 +4,7 @@
 title: Mobile platform resources
 description: The mobile platform lets you create mobile apps for your workspaces.
 author: tonyafehr
-ms.date: 10/26/2020
+ms.date: 05/26/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
