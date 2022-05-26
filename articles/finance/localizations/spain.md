@@ -49,6 +49,7 @@ This topic provides links to documentation resources for Spain.
 - [Sales and purchase cycles](emea-esp-sales-purchase-cycle.md)
 - [Special entries and opening sheets](emea-esp-opening-sheets-spain.md)
 - [Immediate Supply of Information on VAT (Suministro Inmediato de Información del IVA, SII)](emea-esp-sii.md)
+- [EU sales list for Spain]( emea-esp-sales-list.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
