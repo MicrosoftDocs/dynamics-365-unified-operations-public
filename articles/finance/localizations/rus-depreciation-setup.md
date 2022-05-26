@@ -4,7 +4,7 @@
 title: Set up depreciation (Russia)
 description: This topic explains how to set up depreciation for Russian fixed assets.
 author: anasyash
-ms.date: 04/20/2020
+ms.date: 05/25/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -113,6 +113,9 @@ If a fixed asset is registered after it's put into operation, depreciation is ca
     - **Next half year start** – Depreciation is calculated from the half-year after the fixed asset is put into operation after acquisition.
     - **Next year start** – Depreciation is calculated from the year after the fixed asset is put into operation after acquisition.
     - **Date of the registration** – Depreciation is calculated from the date of registration.
+
+    > [!NOTE]
+    > Starting in Finance version 10.0.24, you can select the **From date when put into operation** value in the **Depreciation start date** field. If this value is selected, the system calculates the depreciation from the date of putting into operation and completes the depreciation on the date of disposal. 
 
 9. In the **Depreciation bonus** field, enter the maximum depreciation bonus percentage. The **Depreciation bonus** percentage that is selected in the **Putting into operation** transaction can't exceed this value.
 10. On the **Deferrals** FastTab, in the field above the grid, select **Disposal** to set up the parameters that are used to create deferrals on the disposal of fixed assets that accrue a loss. Select **Partial dismantlement** to set up the parameters that are used create deferrals on the partial write-off of fixed assets that accrue a loss.
