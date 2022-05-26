@@ -2,7 +2,7 @@
 title: Page design guidelines
 description: This topic provides page design guidelines for mobile apps.
 author: tonyafehr
-ms.date: 04/23/2018
+ms.date: 05/26/2022
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: tfehr
