@@ -19,7 +19,7 @@ ms.reviewer: kfend
 ms.custom: 12811
 ms.search.region: Spain
 # ms.search.industry: 
-ms.author: v-akroshkina
+ms.author: anasyash
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
