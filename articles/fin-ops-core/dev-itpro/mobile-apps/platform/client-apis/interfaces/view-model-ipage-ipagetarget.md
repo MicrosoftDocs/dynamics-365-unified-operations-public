@@ -2,7 +2,7 @@
 title: PageTarget type
 description: PageTarget type
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/26/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
