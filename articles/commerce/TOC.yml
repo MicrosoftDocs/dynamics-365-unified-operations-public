@@ -2471,7 +2471,7 @@
           - name: Legacy Retail SDK migration
             href: dev-itpro/retail-sdk/migrate-commerce-sdk.md
           - name: Obsolete and Removed APIs, Classes, and Methods
-            href: dev-itpro/Obsolete.md
+            href: dev-itpro/obsolete-apis-classes-methods.md
           - name: Modernizing the Commerce in-store technology stack (white paper)
             href: https://www.microsoft.com/download/details.aspx?id=103896
         - name: Environment setup
@@ -2909,11 +2909,11 @@
       - name: Store Commerce
         items:
         - name: Setup and installations
-          href: troubleshoot/setup-installation.md
+          href: troubleshoot/store-commerce-setup-installation.md
         - name: Performance
-          href: troubleshoot/Performance.md
+          href: troubleshoot/store-commerce-performance.md
         - name: Extensions
-          href: troubleshoot/extensions.md
+          href: troubleshoot/store-commerce-extensions.md
       - name: Order processing
         items:
         - name: Payment type must be credit card error
