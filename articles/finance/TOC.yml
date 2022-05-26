@@ -3586,6 +3586,8 @@
           href: localizations/emea-esp-conditional-sales-tax.md
         - name: Credit invoicing
           href: localizations/tasks/emea-esp-credit-invoicing.md
+        - name: EU sales list
+          href: localizations/emea-esp-sales-list.md
         - name: Fiscal data invoice account
           href: localizations/emea-esp-fiscal-data-invoice-account.md
         - name: Fixed asset group revaluation
