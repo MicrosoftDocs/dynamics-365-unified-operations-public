@@ -3708,6 +3708,8 @@
             href: localizations/emea-gbr-mtd-vat-integration-vat100.md
         - name: Statistics on payment practices report
           href: localizations/emea-gbr-statistics-on-payment-practices-report.md
+        - name: EU sales list
+          href: localizations/emea-uk-eu-sales-list.md
       - name: United States
         items:
         - name: United States overview
