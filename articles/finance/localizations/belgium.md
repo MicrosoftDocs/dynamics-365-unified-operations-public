@@ -4,7 +4,7 @@
 title: Belgium overview
 description: This topic provides an overview of functionality specific to Belgium.
 author: anasyash
-ms.date: 10/27/2021
+ms.date: 05/27/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -37,7 +37,14 @@ CODA is a report format that is used in the Belgian electronic banking system. F
 ## Export ledger transactions
 You can export ledger transactions for a specific interval, such as a fiscal year as an ASCII file in the CED format. You can use batch processing to export transactions. To set up batch processing, go to **General ledger** > **Periodic** > **Export ledger transactions**. For more information, see [Export ledger transactions](emea-bel-export-ledger-transactions.md).
 
+## VAT declaration
+For information about how to set up and work with new VAT declaration in Belgium, review [VAT declaration (Belgium)](emea-bel-vat-declaration-belgium.md).
+
 ## INTERVAT tax declaration
+
+> [!NOTE]
+> This feature has been replaced with the VAT declaration functionality. For more information, see [VAT declaration (Belgium)](emea-bel-vat-declaration-belgium.md).
+
 For information about how to set up and create the INTERVAT tax declaration for legal entities in Belgium only, see [INTERVAT tax declaration](emea-bel-intervat-tax-declaration.md). 
 For information about standard reports that can help you with the INTERVAT tax declaration and reconciliation analysis, see [Reconciliation reports for Belgium](emea-bel-reconciliation-reports.md).
 
