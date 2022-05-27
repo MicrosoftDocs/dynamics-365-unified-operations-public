@@ -47,7 +47,7 @@ The Store Commerce app runs on Windows devices and can be downloaded from the [S
 
 Store Commerce supports two types of deployment topologies:
 
-- **In-app** – All the components, such as Modern Point of Sale (MPOS), are deployed locally. Offline and local Hardware Station (HWS) are supported.
+- **In-app** – All the components, such as Modern Point of Sale (MPOS), are deployed locally. Offline mode and local Hardware Station (HWS) are supported.
 - **Hybrid** – Store Commerce renders the Cloud POS that is deployed in Commerce Scale Unit (CSU) and supports local Hardware Station. However, offline isn't supported.
 
 There are no separate installers for the hybrid and in-app topologies. The deployment options are determined by the parameters that are passed during installation.
@@ -60,7 +60,7 @@ For the in-app deployment option, the application content is locally deployed in
 
 To update the application content, run the latest version of the Store Commerce installer. The application content won't be updated if you update the CSU. Therefore, you can manage the updates at individual registers.
 
-In-app mode supports offline. Therefore, during installation, pass the **--installoffline** parameter to deploy the offline database. During offline (that is, when there is no connectivity), the application won't be able to connect to CSU or Commerce headquarters, and will use the locally deployed CRT.
+In-app mode supports offline mode. Therefore, during installation, pass the **--installoffline** parameter to deploy the offline database. During offline mode (that is, when there is no connectivity), the application won't be able to connect to CSU or Commerce headquarters, and will use the locally deployed CRT.
 
 > [!NOTE]
 > During the installation of Store Commerce, users can pass parameters to select either the hybrid option or the in-app option. The default option is in-app deployment.
@@ -135,7 +135,7 @@ We recommend that you use Store Commerce or CPOS for all new deployments. Existi
 
 - Windows 10 version 17763.0 or later, Windows 11, or Windows Server 2019
 - [Microsoft Edge WebView2](https://developer.microsoft.com/en-us/microsoft-edge/webview2/) (Use the Evergreen Standalone Installer.)
-- SQL Server Express, SQL Server Standard, or SQL Server Enterprise (required only for offline). For information on which SQL Server edition to use, see [Commerce offline implementation and troubleshooting](implementation-considerations-offline.md).
+- SQL Server Express, SQL Server Standard, or SQL Server Enterprise (required only for offline mode). For information on which SQL Server edition to use, see [Commerce offline implementation and troubleshooting](implementation-considerations-offline.md).
 - Dynamics 365 Commerce (Commerce headquarters and Cloud Scale Unit)
 - NET Framework version 4.7.2 or later, see [Install the .NET Framework](https://dotnet.microsoft.com/en-us/download/dotnet-framework)
 
