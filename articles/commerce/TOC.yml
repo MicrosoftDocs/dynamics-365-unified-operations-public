@@ -2734,6 +2734,8 @@
                 href: e-commerce-extensibility/interactive-components.md
               - name: Mock the signed-in state during local development
                 href: e-commerce-extensibility/mock-sign-in.md
+              - name: Set up web API authentication transfer using Azure Active Directory B2C
+                href: e-commerce-extensibility/web-api-auth-trans-aad-b2c.md
               - name: Configure module properties to be shown based on context
                 href: e-commerce-extensibility/configure-properties-context.md
               - name: Globalize modules by using the CultureInfoFormatter class
