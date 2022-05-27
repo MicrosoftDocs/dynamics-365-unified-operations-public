@@ -12,6 +12,8 @@
         items:
         - name: What's new or changed in Finance home page
           href: get-started/whats-new-home-page.md
+        - name: Finance 10.0.28 (August)
+          href: get-started/whats-new-changed-10-0-28.md
         - name: Finance 10.0.27 (July)
           href: get-started/whats-new-changed-10-0-27.md
         - name: Finance 10.0.26 (May)
