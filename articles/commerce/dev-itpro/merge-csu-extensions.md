@@ -1,6 +1,6 @@
 ---
-title: Merge Cloud Scale Unit extension packages
-description: This topics describes how to merge Microsoft Dynamics 365 Commerce Cloud Scale Unit (CSU) extension packages.
+title: Merge Cloud Scale Unit extension packages for deployment
+description: This topics describes how to merge Microsoft Dynamics 365 Commerce Cloud Scale Unit (CSU) extension packages for deployment.
 author: mugunthanm
 ms.date: 05/27/2022
 ms.topic: article
@@ -12,7 +12,7 @@ ms.search.validFrom: 03-30-2022
 ms.dyn365.ops.version: AX 10.0.25
 ---
 
-# Merge Cloud Scale Unit extension packages
+# Merge Cloud Scale Unit extension packages for deployment
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
