@@ -111,7 +111,6 @@ Before configuring your fragments or pages with Google Pay, you must ensure that
 
 To ensure that your content security policies are set in site builder, follow these steps.
 
-1. Navigate to your site in site builder (choosing the site from the **Home** screen, or selecting the site in the upper right site-picker menu).
 1. In your site, go to **Site settings \> Extensions**.
 1. On the **Content security policy** tab, add a line with `*.google.com` to the **child-src**, **connect-src**, **frame-ancestors**, **frame-src**, **img-src**, **script-src**, and **style-src** directives.
 1. When done, select **Save and publish**.
