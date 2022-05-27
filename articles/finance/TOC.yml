@@ -1818,6 +1818,8 @@
           href: localizations/emea-bel-annual-vat-listing-of-domestic-sales.md
         - name: Belgium Intrastat
           href: localizations/emea-bel-intrastat.md
+        - name: VAT declaration
+          href: localizations/emea-bel-vat-declaration-belgium.md
       - name: Brazil
         items:
         - name: Brazil overview
