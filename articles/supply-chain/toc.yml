@@ -711,6 +711,8 @@
       items:
       - name: Cost management home page
         href: cost-management/cost-management-home-page.md
+      - name: Inventory costing frequently asked questions
+        href: cost-management/inventory-costing-faq.md
       - name: Prerequisites for standard costs
         items:
         - name: Prerequisites for standard costs overview
