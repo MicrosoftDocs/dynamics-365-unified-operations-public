@@ -65,7 +65,11 @@ To post a reservation request, you must enter a value in the request body. Use t
 
 ## <a name="inventory-summary"></a>Inventory summary
 
-**Inventory summary** is a customized view for the *Inventory OnHand Sum* entity. It provides an inventory summary for products together with all dimensions. The inventory summary data will periodically be synced from Inventory Visibility. Before you can see data on the **Inventory summary** tab, you must turn on the *OnHandMostSpecificBackgroundService* feature on the **Feature Management** tab.
+**Inventory summary** is a customized view for the *Inventory OnHand Sum* entity. It provides an inventory summary for products together with all dimensions. The inventory summary data will periodically be synced from Inventory Visibility every 15 minutes. Before you can see data on the **Inventory summary** tab, you must turn on the *OnHandMostSpecificBackgroundService* feature on the **Feature Management** tab and click **update configuration** button.
+
+> [!Note]
+> *OnHandMostSpecificBackgroundService* feature just tracks the products which has on-hand changes after you turn on the feature. If the product doesn’t have the changes after you turn on the feature, it will not sync the data from inventory service cache to the Dataverse. If you find that inventory summary page doesn't contain all of the product onhand information, the workaround is that you can go to the FNO, go to Inventory Management > Periodic > Inventory Visibility Integration, disable the batch job and reenable it. It will do the initial push, the all data will sync to the *Inventory OnHand Sum* entity in next 15 minutes.
+If you want to use this feature, we suggest that you turn on this feature before you create any on-hand change and enable the Inventory Visiblity Integration batch job.
 
 By using the **Advanced filter** that Dataverse provides, you can create a personal view that shows the rows that are important to you. The advanced filter options let you create a wide range of views, from simple to complex. They also let you add grouped and nested conditions to the filters. To learn more about how to use the **Advanced filter**, see [Edit or create personal views using advanced grid filters](/powerapps/user/grid-filters-advanced).
 

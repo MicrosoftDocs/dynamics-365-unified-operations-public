@@ -105,11 +105,12 @@ You set the group names on the **Inventory Visibility Power App Configuration** 
 
 For example, if you use four group names and set them to \[`channel`, `customerGroup`, `region`, `orderType`\], these names will be valid for allocation-related requests when you call the configuration update API.
 
-### Allcoation using Tips
+### Allocation using Tips
 
-- For every product, the allocation function should use in the same dimension level according to the product index hierarchy you set in the [product index hierarchy configuration](inventory-visibility-configuration.md#index-configuration). For example, index hierarchy is Site, Location, Corlor, Size. If you allocate some quantity for one product in the Site, Location, Color level. The Next time you use to allocate, should also at Site, Location, Color level, if you use Site, Location, Color, Size level or Site, Location level, the data will not be consistent.
+- For every product, the allocation function should use in the same **dimension level** according to the product index hierarchy you set in the [product index hierarchy configuration](inventory-visibility-configuration.md#index-configuration). For example, index hierarchy is \[`Site`, `Location`, `Color`, `Size`\]. If you allocate some quantity for one product in the dimension level \[`Site`, `Location`, `Color`\]. The Next time you want to allocate this product, you should allocate also at the same level  \[`Site`, `Location`, `Color`\], if you use the level \[`Site`, `Location`, `Color`, `Size`\] or \[`Site`, `Location`\], the data will not be consistent.
 - Allocation group name changing will not impact data saved in the service.
 - Allocation should happen after the product has the positive on hand quantity.
+- If you want to allocate some products from the high **allocation level** group to the sub-group, please use reallocate API. For example, you have a allocation group hierarchy \[`channel`, `customerGroup`, `region`, `orderType`\], if yuo want to allocate some product from allocation group \[Online, VIP\] to the sub allocation group \[Online, VIP, EU\], please use reallocate to move the quantity. If you use allocate API, it will allocate the quantity from the virtual common pool.
 
 ### <a name="using-allocation-api"></a>Using the allocation API
 

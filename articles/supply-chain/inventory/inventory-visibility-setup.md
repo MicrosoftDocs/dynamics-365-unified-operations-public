@@ -73,6 +73,21 @@ After you register an application and add a client secret to Azure AD, follow th
 > [!IMPORTANT]
 > If you have more than one LCS environment, create a different Azure AD application for each environment. If you use same application ID and tenant ID to install the Inventory Visibility Add-in for different environments, a token issue will occur for older environments. Only the last one that was installed will be valid.
 
+> [!Note]
+> If you are stuck in installing status for more than one hour from the LCS page, It most likely happens for the reason that the user who triggers to install IV add-in doesn't have the access to install IV solution in your Dataverse environment.
+Please follow the below steps to fix the issue:
+
+1. Abort the inventory visibility add-in installation process from the LCS page.
+1. Install the inventory visibility add-in in power platform admin center. Make sure that the user has the access to install the solution, if you don't have the access, please add license "Dynamics 365 Unified Operations Plan" to the user in admin.microsoft.com
+
+    1. Log into power platform
+    1. Click on the environment where we wanted to install the add-in
+    1. Click 'Dynamics 365 Apps
+    1. Click "Install App"
+    1. Select "Inventory Visibility"
+
+1. After installing the IV solution in power platform admin center finished, go to the LCS page to reinstall the inventory visibility add-in.
+
 ## <a name="uninstall-add-in"></a>Uninstall the Inventory Visibility Add-in
 
 To uninstall the Inventory Visibility Add-in, select **Uninstall** on the LCS page. The uninstallation process terminates the Inventory Visibility Add-in, unregisters the add-in from LCS, and deletes any temporary data that is stored in the Inventory Visibility Add-in data cache. However, the primary inventory data that is stored in your Dataverse subscription isn't deleted.
