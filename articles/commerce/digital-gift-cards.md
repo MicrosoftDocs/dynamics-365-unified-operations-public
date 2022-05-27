@@ -4,7 +4,7 @@
 title: E-commerce digital gift cards
 description: This topic describes how digital gift cards work in the e-commerce implementation of Microsoft Dynamics 365 Commerce. It also provides an overview of important configuration steps.
 author: anupamar-ms
-ms.date: 12/15/2020
+ms.date: 05/27/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -28,7 +28,6 @@ ms.dyn365.ops.version: Release 10.0.15
 # E-commerce digital gift cards
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic describes how digital gift cards work in the e-commerce implementation of Microsoft Dynamics 365 Commerce. It also provides an overview of important configuration steps.
 
@@ -56,10 +55,11 @@ Digital gift card products should be configured in Commerce headquarters. The pr
     ![Gift card product field in Commerce headquarters.](./media/PostGiftcard.png)
 
 - If a gift card must support multiple predefined amounts (for example, $25, $50, and $100), the **Size** dimension should be used to set up those predefined amounts. Each predefined amount will be a product variant. For more information, see [Product dimensions](../supply-chain/pim/product-dimensions.md?toc=%2fdynamics365%2fretail%2ftoc.json).
-- If customers must be able to specify a **custom** amount for a gift card along with predefined amounts, first set up a variant that allows for a custom amount. The **Size** attribute can support **custom** amount variants. Next, open the product from the **Released products in category** page, and then, on the **Commerce** FastTab, set the **Key in price** field to **Must key in new price**, as shown in the following illustration. This setting ensures that customers can enter a price when they browse the product on a PDP.
+- If customers must be able to specify a custom amount for a gift card in addition to predefined amounts, first set up a variant that allows for a custom amount. The **Size** attribute supports custom amount variants. Next, open the product from the **Released products in category** page, and then, on the **Commerce** FastTab, set the **Key in price** field to **Must key in new price**, as shown in the following example illustration. This setting ensures that customers can enter a price when they browse the product on a PDP.
 
     ![Key in price field in Commerce headquarters.](./media/KeyInPrice.png)
     
+    The following example illustration shows a list of digital gift card product variants in Commerce headquarters, including two custom price variants.
     ![Digital gift card product variants with custom price variant example](./media/DigitalGiftCards_ProductVariantsWithCustom.png)
 
 - The mode of delivery for a digital gift card must be set to **Electronic**. On the **Modes of delivery** page (**Retail and commerce \> Channel setup \> Modes of delivery**), select the **Electronic** mode of delivery in the list pane, and then add the digital gift card product to the grid on the **Products** FastTab, as shown in the following illustration. For more information, see [Set up modes of delivery](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
