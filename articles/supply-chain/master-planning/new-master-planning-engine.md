@@ -51,7 +51,7 @@ As has been mentioned, you will receive an error message in version 10.0.16 and 
 
 ### New deployments
 
-Planning Optimization should be considered the default master planning engine for all new deployments in the cloud. In general, Planning Optimization should be used for all new deployments that don't generate planned production orders during master planning. If a new deployment depends on functionality that Planning Optimization doesn't currently support, you can request an exception so that you can continue to use the built-in master planning engine.
+Planning Optimization must be considered the default master planning engine for all new deployments in the cloud. In general, Planning Optimization should be used for all new deployments that don't generate planned production orders during master planning. If a new deployment depends on functionality that Planning Optimization doesn't currently support, you can request an exception so that you can continue to use the built-in master planning engine.
 
 ### Existing deployments
 
@@ -67,7 +67,7 @@ Currently, exceptions for Planning Optimization migration are only relevant if y
 
 After the required features become available, Microsoft will provide a grace period until the exception expires. The environment admin will be informed when the required features have become available and the grace period has started.
 
-The following flowchart summarizes the information provided in this topic so you can quickly find out whether you should request an exception. If you do need to request an exception, please fill out and submit the [Planning Optimization migration and exception questionnaire](https://go.microsoft.com/fwlink/?linkid=2144962).
+The following flowchart summarizes the information provided in this topic so you can quickly find out whether you should request an exception. If you do need to request an exception, please fill out and submit the [Planning Optimization migration and exception questionnaire](https://go.microsoft.com/fwlink/?linkid=2144962). The product group is responsible for evaluating and approving each exception request, so please submit your request directly to the product group using the link provided and don't create a support ticket for it. If your request is rejected, please don't create a support ticket because Microsoft Support isn't able to re-evaluate or grant exceptions.
 
 ![Exception flowchart.](media/exception-diagram.png "Exception flowchart")
 
