@@ -2558,8 +2558,8 @@
           items:
           - name: Create a Cloud Scale Unit extension package
             href: dev-itpro/CSU-packaging.md
-          - name: Merge Cloud Scale Unit Extensions packages for deployment
-            href: dev-itpro/Merge_CSU_Extenion.md
+          - name: Merge Cloud Scale Unit extension packages for deployment
+            href: dev-itpro/merge-csu-extensions.md
           - name: Remove Cloud Scale Unit extensions
             href: dev-itpro/retail-sdk/remove-csu-package.md
       - name: Store Commerce
