@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 Finance 10.0.28 (July 2022)
+title: What's new or changed in Dynamics 365 Finance 10.0.28 (August 2022)
 description: This topic describes features that are either new or changed in the Microsoft Dynamics 365 Finance version 10.0.28 preview release.
 author: kfend
-ms.date: 05/26/2022
+ms.date: 05/27/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -27,13 +27,13 @@ ms.dyn365.ops.version: 10.0.28
 
 ---
 
-# What's new or changed in Dynamics 365 Finance 10.0.28 (July 2022)
+# What's new or changed in Dynamics 365 Finance 10.0.28 (August 2022)
 
 [!include [banner](../includes/banner.md)]
 
 [!include [banner](../includes/preview-banner.md)]
 
-This topic lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.28. This version has a build number of x.x.xxxx and is available on the following schedule:
+This topic lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.28. This version has a build number of 10.0.1264 and is available on the following schedule:
 
 - **Preview of release:** May 2022
 - **General availability of release (self-update):** July 2022
