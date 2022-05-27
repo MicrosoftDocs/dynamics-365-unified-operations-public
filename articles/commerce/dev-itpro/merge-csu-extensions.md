@@ -1,6 +1,6 @@
 ---
 title: Merge Cloud Scale Unit extension packages for deployment
-description: This topics describes how to merge Microsoft Dynamics 365 Commerce Cloud Scale Unit (CSU) extension packages for deployment.
+description: This topic describes how to merge Microsoft Dynamics 365 Commerce Cloud Scale Unit (CSU) extension packages for deployment.
 author: mugunthanm
 ms.date: 05/27/2022
 ms.topic: article
@@ -17,11 +17,11 @@ ms.dyn365.ops.version: AX 10.0.25
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topics describes how to merge Microsoft Dynamics 365 Commerce Cloud Scale Unit (CSU) extension packages.
+This topic describes how to merge Microsoft Dynamics 365 Commerce Cloud Scale Unit (CSU) extension packages.
 
 Extensions packages generated for CSU from independent software vendors (ISVs), partners, and customers must be merged into a single package before deploying to [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index). Currently, LCS doesn’t support deploying multiple extension packages. The last deployed extension package will override the previous extension deployment.
 
-There are multiple options to merge a CSU extension package. In this topic we will walk through how to merge CSU extension packages by generating a NuGet package for the ISV CSU extensions.
+There are multiple options to merge a CSU extension package. In this topic we'll walk through how to merge CSU extension packages by generating a NuGet package for the ISV CSU extensions.
 
 > [!NOTE]
 > Extension package merging is not required for on-premises CSU deployments, Store Commerce, or shared Hardware Station. On-premises components supports multiple extension deployments.
@@ -36,15 +36,15 @@ Since LCS doesn't support deploying multiple packages, you must merge all of the
 To merge the packages by generating a NuGet package for the ISV extension, follow these steps.
 
 1. For the ISV extensions, ask the ISVs to generate NuGet packages for their CSU extensions.
-1. Consume the ISVs NuGet packages in your CSU packaging project by adding them as references to the project.
+1. Consume the ISV NuGet packages in your CSU packaging project by adding them as references to the project.
 1. Build your CSU packaging project. The output CSU extension package will have the extensions from the ISVs and your extensions.
 
 ### Generate NuGet package for the ISVs extensions
 
 If you have the ISV extension projects, to generate the NuGet package follow these steps (or ask your ISV to follow them).
 
-1. Open the ISVs extension CSU packaging project using Visual Studio Code or Visual Studio.
-1. Edit the ISVs CSU packaging project file and add the following build property to [generate the NuGet package on build](/nuget/create-packages/creating-a-package-msbuild#automatically-generate-package-on-build) in addition to the CSU extension package.
+1. Open the ISV extension CSU packaging project using Visual Studio Code or Visual Studio.
+1. Edit the ISV CSU packaging project file and add the following build property to [generate the NuGet package on build](/nuget/create-packages/creating-a-package-msbuild#automatically-generate-package-on-build) in addition to the CSU extension package.
 
     ```XML
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
