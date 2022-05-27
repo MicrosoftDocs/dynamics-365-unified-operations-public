@@ -4,7 +4,7 @@
 title: Prepare your environment to interoperate with ID-porten and Altinn web services
 description: This topic explains how to prepare your environment to interoperate with ID-porten and Altinn web services.
 author: liza-golub
-ms.date: 03/21/2022
+ms.date: 05/27/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -467,7 +467,7 @@ Follow these steps to set up a URL that is used in ID-porten.
 2. In the **Base URL** field, enter one of the following internet addresses:
 
     - `https://oidc-ver2.difi.no/idporten-oidc-provider` to interoperate with the *sandbox* endpoint of ID-porten
-    - `https://oidc.difi.no/idporten-oidc-provider/` to interoperate with the *production* endpoint of ID-porten
+    - `https://oidc.difi.no/idporten-oidc-provider` to interoperate with the *production* endpoint of ID-porten
 
     > [!IMPORTANT]
     > For actual internet addresses, go to <https://docs.digdir.no/oidc_func_wellknown.html>.
@@ -481,7 +481,14 @@ Follow these steps to set up a URL that is used in ID-porten.
 Follow these steps to set up an internet address that is used by Altinn web services.
 
 1. Go to **Tax** \> **Setup** \> **Parameters** \> **Electronic messages** \> **Web applications**, and select the **NO Altinn** web application in the list on the left.
-2. In the **Base URL** field, enter `https://platform.tt02.altinn.no/authentication/api/v1/exchange/id-porten`.
+2. In the **Base URL** field, enter one of the following internet addresses:
+
+    - `https://platform.tt02.altinn.no/authentication/api/v1/exchange/id-porten` to interoperate with the *sandbox* endpoint of Altinn
+    - `https://platform.altinn.no/authentication/api/v1/exchange/id-porten` to interoperate with the *production* endpoint of Altinn
+
+    > [!IMPORTANT]
+    > For actual internet addresses, go to <https://skatteetaten.github.io/mva-meldingen/english/test/#production-environment>.
+
 3. Go to **Tax** \> **Setup** \> **Parameters** \> **Electronic messages** \> **Web service settings**, and enter the following information to define the internet address for web services to interoperate with the *sandbox APIs* that the Norwegian Tax Administration provides.
 
     | Web service name | Internet address |
