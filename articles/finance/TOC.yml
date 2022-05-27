@@ -3705,7 +3705,7 @@
         - name: Statistics on payment practices report
           href: localizations/emea-gbr-statistics-on-payment-practices-report.md
         - name: EU sales list
-          href: emea-uk-eu-sales-list.md
+          href: localizations/emea-uk-eu-sales-list.md
       - name: United States
         items:
         - name: United States overview
