@@ -139,6 +139,9 @@ If the Dynamics 365 Human Resources and Finance and Operations environments that
 
 However, if the Dynamics 365 Human Resources and Finance and Operations environments are currently connected to separate Dataverse environments, the two Dataverse environments will have to be combined so that they are connected to a single environment on the new infrastructure. For this Dataverse migration, the Dataverse tables that are standard to the Human Resources solutions can be connected to and resynchronized with the new Dataverse environment. Any extensions to the Dataverse environment won't be migrated automatically but must be redeployed in the new environment. We recommend that you use managed solutions to manage your Dataverse extensions. For more information, see [Introduction to solutions](/powerapps/developer/data-platform/introduction-solutions).
 
+### We have utilized the custom field functionality within Dynamics 365 Human Resources, will those custom fields migrate automatically?
+Yes, the custom fields that have been added will migrate to the new infrastructure.
+
 ### We have configured Microsoft Power Automate flows and/or Microsoft Power Apps to work with Dynamics 365 Human Resources. Will these Microsoft Power Platform components be migrated and work automatically after the infrastructure change is completed?
 
 Power Apps, Power Automate flows, and other Microsoft Power Platform customizations are similar to Dataverse extensions. Whether they work automatically after the migration to the new infrastructure depends on whether the Human Resources app and the Finance and Operations apps are connected to the same Power Apps environment before the migration.
