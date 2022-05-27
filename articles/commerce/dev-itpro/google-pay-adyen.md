@@ -4,7 +4,7 @@
 title: Configure Google Pay with Adyen
 description: This topic describes how to configure Google Pay with Adyen in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 05/26/2022
+ms.date: 05/27/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -184,7 +184,9 @@ Users can include up to three supported **Payment Express** modules (in other wo
 
 ### Set up Google Pay as an option in the checkout payment section
 
-To set up Google Pay as a normal payment option in the **Payment Method** section of the checkout page, follow the steps below. This is for payment-only, non-express functionality (the checkout form will be filled out by the user and returning from the Google Pay payment page will only ready the checkout for payment by Google Pay- no Google account information will be used to overwrite the filled checkout details).
+This is for payment-only, non-express functionality (the checkout form will be filled out by the user and returning from the Google Pay payment page will only ready the checkout for payment by Google Pay- no Google account information will be used to overwrite the filled checkout details).
+ 
+To set up Google Pay as a normal payment option in the **Payment Method** section of the checkout page, follow these steps.
 
 1. In site builder, if using the Checkout fragment, follow the steps similar to the [payment module](../payment-module.md) article. This assumes a Checkout fragment has been created with included Pickup information, Shipping address, Delivery options, Contact information, Terms and Conditions (optional), and a section for Checkout elements. The module library checkout module ships with the **Checkout section container** having a text block for user notice instructions, the loyalty points, gift card, and payment modules. 
 1. While in **Edit** mode in the Checkout fragment, select the **Checkout section container** and click **Add module**.
@@ -203,9 +205,11 @@ To set up Google Pay as a normal payment option in the **Payment Method** sectio
 
 With the payment express module using Google Pay, the first delivery option returned against the shipping address selected from the Google Pay account will be preselected. Users have a chance to adjust the shipping address to a different option if desired. 
 
-The order of the delivery methods is configured in HQ on the Channel's **Modes of delivery** section. Additional information on setting up modes of delivery can be found in the [Set up modes of delivery](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery) article. The checkout module will also use the **delivery options module** when rendering modes of delivery during checkout. See additional details in the [delivery options module](../delivery-options-module.md) article.
+The order of the delivery methods displayed in the payment express module is configured in headquarters on the channel's **Modes of delivery** page. In headquarters, go to **Retail and Commerce \> Channels \> Online stores** and select the **Retail channel ID** for your store. On the action pane, select the **Setup** tab, and then select **Modes of delivery**. The modes of delivery listed will be displayed in the payment express module in the same order. Select the **Manage modes of delivery** on the action pane to add or remove modes of delivery for a retail channel or product. For more information on setting up modes of delivery, see [Set up modes of delivery](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery). 
 
-Modes of delivery are displayed as added to the list in the Online Store. In Headquarters, navigate to **Retail and Commerce > Channels > online stores** and select the channel ID for your store. Under the **Setup** menu section, select **Modes of delivery**. The module modes of delivery will be displayed on the site similarly to the configuration shown. Use the **Manage modes of delivery** action item to add or remove modes of delivery for a Retail Channel or a Product.
+The checkout module also uses the delivery options module when rendering modes of delivery during checkout. For more information, see [Delivery options module](../delivery-options-module.md).
+
+Modes of delivery are displayed as added to the **Modes of delivery** list in the online store. 
 
 ## Additional resources
 
