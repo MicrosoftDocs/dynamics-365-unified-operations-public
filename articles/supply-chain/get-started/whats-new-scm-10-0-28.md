@@ -1,5 +1,5 @@
 ---
-title: Preview of Dynamics 365 Supply Chain Management 10.0.28 (July 2022)
+title: Preview of Dynamics 365 Supply Chain Management 10.0.28 (August 2022)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.28. 
 author: kamaybac
 ms.date: 05/27/2022
@@ -13,7 +13,7 @@ ms.search.validFrom: 2022-05-27
 ms.dyn365.ops.version: 10.0.28
 ---
 
-# Preview of Dynamics 365 Supply Chain Management 10.0.28 (July 2022)
+# Preview of Dynamics 365 Supply Chain Management 10.0.28 (August 2022)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -21,7 +21,7 @@ ms.dyn365.ops.version: 10.0.28
 This topic lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management preview version 10.0.28. This version has a build number of 10.0.1227 <!--KFM: Update build number --> and is available on the following schedule:
 
 - **Preview of release:** May 2022
-- **General availability of release (self-update):** June 2022
+- **General availability of release (self-update):** July 2022
 - **General availability of release (auto-update):** July 2022
 
 ## Features included in this release
@@ -32,7 +32,6 @@ The following table lists the features that are included in this release. We mig
 |---|---|---|---|
 | Inventory and logistics | [Landed cost integration entities for third-party freight forwarders](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/landed-cost-integration-third-party-freight-forwarders) | [Landed cost entities overview](../landed-cost/landed-cost-entities-overview.md) | Enabled by default |
 | Planning | DDMRP for Planning Optimization <!-- KFM: Add link to release plan when that topic is published --> | Coming soon | Feature management:<br>*(Preview) DDMRP for Planning Optimization* |
-| Planning | [Planning Optimization support for resource scheduling with finite capacity](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-resource-scheduling-finite-capacity) | Coming soon <!-- KFM:Link to topic where we will note that one parameter that will no longer be used --> | Enabled by default |
 | Planning | [Planning Optimization support for shelf life](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-shelf-life) | Coming soon <!-- KFM: Vendor is preparing this. Expected May 20. --> | Enabled by default |
 
 ## Feature enhancements included in this release
