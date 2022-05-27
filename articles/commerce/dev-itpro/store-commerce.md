@@ -2,7 +2,7 @@
 title: Store Commerce app
 description: This topic explains how to set up and configure the Microsoft Dynamics 365 Commerce Store Commerce app.
 author: mugunthanm
-ms.date: 05/11/2022
+ms.date: 05/27/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -30,14 +30,14 @@ To render the user interface (UI), Store Commerce uses the Chromium engine inste
 
 ## Benefits of Store Commerce
 
-- Application lifecycle management is simplified
-- Extension or independent software vendor (ISV) code that is developed for MPOS or CPOS by using the Commerce software development kit (SDK) can be reused in Store Commerce with minimal changes
-- Industry standard Developer experience using Visual Studio Code and GitHub
-- Store Commerce provides the benefits of both MPOS and CPOS
-- Performance is significantly improved
-- POS and extension upgrades are simplifies using the commerce sealed installer framework
-- Dedicated hardware station is supported
-- Offline deployment is supported
+- Application lifecycle management is simplified.
+- Extension or independent software vendor (ISV) code that is developed for MPOS or CPOS by using the Commerce software development kit (SDK) can be reused in Store Commerce with minimal changes.
+- Industry standard developer experience using Microsoft Visual Studio Code and GitHub.
+- Store Commerce provides the benefits of both MPOS and CPOS.
+- Performance is significantly improved.
+- POS and extension upgrades are simplified using the Commerce sealed installer framework.
+- Dedicated hardware station is supported.
+- Offline deployment is supported.
 
 ## Application lifecycle management
 
