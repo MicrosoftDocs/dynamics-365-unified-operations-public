@@ -2,7 +2,7 @@
 title: Action design guidelines
 description: This topic provides action design guidelines for mobile apps.
 author: tonyafehr
-ms.date: 09/17/2019
+ms.date: 05/24/2022
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: tfehr
@@ -16,6 +16,7 @@ ms.dyn365.ops.version: Platform update 3
 # Action design guidelines
 
 [!include [banner](../../includes/banner.md)]
+[!include [mobile app deprecated](../../includes/mobile-app-deprecation-banner.md)]
 
 Actions let users create, update, or delete data, and also run business processes on that data (such as *submit*, *confirm*, and *post*). A user who completes an action first supplies the data for the action (if the action accepts data input). When the user has finished supplying the data, the action is put into a queue of similar actions (which are sometimes referred to as *data sync operations*). If the device is connected/online, the queue is processed immediately. Otherwise, it's processed the next time that the device is connected. The queue is processed asynchronously and doesn’t require the user’s attention unless there is an error during data synchronization. Errors of this type can occur because of server-side data validation. Actions are powered by a server-side mechanism that resembles Task recordings. This mechanism extracts the user’s input from the action and then automatically runs the business process steps on the server by using the input values that the user supplied. The mechanism automatically opens forms, clicks buttons on the forms, and enters the user's input into controls on the forms. This process of playing back the action against the forms on the server occurs asynchronously, against “headless” forms. The mobile app informs the user when the process is completed, and shows the user any info, warning, or error messages that the forms logged. When you design an action, it’s important that you first consider what entity the action is related to. In the current framework, an action must operate on only one entity. An action should not update multiple entities at the same time. For example, an action to create a new sales order should create only the header for the order. It should not also try to create lines, because the lines are separate entities. When you decide to design the action, consider the following questions to determine how to proceed.
 
