@@ -55,15 +55,17 @@ Digital gift card products should be configured in Commerce headquarters. The pr
 
     ![Gift card product field in Commerce headquarters.](./media/PostGiftcard.png)
 
-- If a gift card must support multiple predefined amounts (for example, $25, $50, and $100), the **Size** dimension should be used to set up those predefined amounts. Each predefined amount will be a variant. For more information, see [Product dimensions](../supply-chain/pim/product-dimensions.md?toc=%2fdynamics365%2fretail%2ftoc.json).
-- If customers must be able to specify a custom amount for a gift card, first set up a variant that allows for a custom amount. Next, open the product from the **Released products in category** page, and then, on the **Commerce** FastTab, set the **Key in price** field to **Must key in new price**, as shown in the following illustration. This setting ensures that customers can enter a price when they browse the product on a PDP.
+- If a gift card must support multiple predefined amounts (for example, $25, $50, and $100), the **Size** dimension should be used to set up those predefined amounts. Each predefined amount will be a product variant. For more information, see [Product dimensions](../supply-chain/pim/product-dimensions.md?toc=%2fdynamics365%2fretail%2ftoc.json).
+- If customers must be able to specify a **custom** amount for a gift card along with predefined amounts, first set up a variant that allows for a custom amount. The **Size** attribute can support **custom** amount variants. Next, open the product from the **Released products in category** page, and then, on the **Commerce** FastTab, set the **Key in price** field to **Must key in new price**, as shown in the following illustration. This setting ensures that customers can enter a price when they browse the product on a PDP.
 
     ![Key in price field in Commerce headquarters.](./media/KeyInPrice.png)
+    
+    ![Digital gift card product variants with custom price variant example](./media/DigitalGiftCards_ProductVariantsWithCustom.png)
 
 - The mode of delivery for a digital gift card must be set to **Electronic**. On the **Modes of delivery** page (**Retail and commerce \> Channel setup \> Modes of delivery**), select the **Electronic** mode of delivery in the list pane, and then add the digital gift card product to the grid on the **Products** FastTab, as shown in the following illustration. For more information, see [Set up modes of delivery](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
 
     ![Digital gift card products on the Mode of delivery page in Commerce headquarters.](./media/ElectronicMode.PNG)
-
+    
 - Make sure that an online functionality profile has been created and associated with your online store in Commerce headquarters. In the functionality profile, set the **Aggregate products** option to **Yes**. This setting ensures that all items except gift cards are aggregated. For more information, see [Create an online functionality profile](online-functionality-profile.md).
 - To ensure that customers receive an email after a gift card is invoiced, create a new email notification type on the **Email notification profiles** page, and set the **Email notification type** field to **Issue gift card**. For more information, see [Set up an email notification profile](email-notification-profiles.md).
 
