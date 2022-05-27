@@ -2,7 +2,7 @@
 title: Inventory Visibility app
 description: This topic describes how to use the Inventory Visibility app.
 author: yufeihuang
-ms.date: 08/02/2021
+ms.date: 05/27/2022
 ms.topic: article
 ms.search.form:
 audience: Application User
@@ -65,11 +65,11 @@ To post a reservation request, you must enter a value in the request body. Use t
 
 ## <a name="inventory-summary"></a>Inventory summary
 
-**Inventory summary** is a customized view for the *Inventory OnHand Sum* entity. It provides an inventory summary for products together with all dimensions. The inventory summary data will periodically be synced from Inventory Visibility every 15 minutes. Before you can see data on the **Inventory summary** tab, you must turn on the *OnHandMostSpecificBackgroundService* feature on the **Feature Management** tab and click **update configuration** button.
+**Inventory summary** is a customized view for the *Inventory OnHand Sum* entity. It provides an inventory summary for products together with all dimensions. The inventory summary data will periodically be synced from Inventory Visibility every 15 minutes. Before you can see data on the **Inventory summary** tab, you must turn on the *OnHandMostSpecificBackgroundService* feature on the **Feature Management** tab and select **Update configuration**.
 
-> [!Note]
-> *OnHandMostSpecificBackgroundService* feature just tracks the products which has on-hand changes after you turn on the feature. If the product doesn’t have the changes after you turn on the feature, it will not sync the data from inventory service cache to the Dataverse. If you find that inventory summary page doesn't contain all of the product onhand information, the workaround is that you can go to the FNO, go to Inventory Management > Periodic > Inventory Visibility Integration, disable the batch job and reenable it. It will do the initial push, the all data will sync to the *Inventory OnHand Sum* entity in next 15 minutes.
-If you want to use this feature, we suggest that you turn on this feature before you create any on-hand change and enable the Inventory Visiblity Integration batch job.
+> [!NOTE]
+> The *OnHandMostSpecificBackgroundService* feature tracks the products that have on-hand changes after you turn on the feature. If the product doesn’t have the changes after you turn on the feature, it will not sync the data from inventory service cache to the Dataverse. If you **Inventory summary** page doesn't contain all of the product on-hand information, go to **Inventory Management > Periodic > Inventory Visibility Integration**, disable the batch job and reenable it. This will do the initial push, and all data will sync to the *Inventory OnHand Sum* entity in next 15 minutes.
+If you want to use this feature, we suggest that you turn this on before you create any on-hand changes and enable the **Inventory Visiblity Integration** batch job.
 
 By using the **Advanced filter** that Dataverse provides, you can create a personal view that shows the rows that are important to you. The advanced filter options let you create a wide range of views, from simple to complex. They also let you add grouped and nested conditions to the filters. To learn more about how to use the **Advanced filter**, see [Edit or create personal views using advanced grid filters](/powerapps/user/grid-filters-advanced).
 
