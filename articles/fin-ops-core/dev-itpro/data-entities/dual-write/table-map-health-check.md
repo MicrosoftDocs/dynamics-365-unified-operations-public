@@ -75,4 +75,19 @@ The error message is, "Table: \{datasourceTable.Key.subscribedTableName\} for en
 
 If the same table is tracked by multiple entities, any change to the table will trigger dual-write evaluation for the linked entities. Although the filter clauses will send only the valid records, the evaluation might cause a performance issue if there are long-running queries or unoptimized query plans. This issue might not be avoidable from the business perspective. However, if there are many intersecting tables across multiple entities, you should consider simplifying the entity or checking optimizations for entity queries.
 
+## Error 1800
+The error message is, "Datasource : {} for entity CustCustomerV3Entity includes a range value. Inbound record upserts from Dataverse to Finance & Operations can be affected by range values on entity. Please test record updates from Dataverse to Finance & Operations with records that do not match the filter criteria to validate your settings."
+
+If there is a range specified on the entity in FnO then the inbound sync from DV -> FnO should be tested for update behavior on records that do not match this range criteria.Any record that does not match the range would get treated as insert by the entity but if there is an existing record in the underlying table then the insert will fail. So its recommended to test this use case for all scenarios before deploying to production.
+
+## Error 1900
+The error message is, "Entity: has {} data sources which are not being tracked for outbound dual write. This can affect live sync query performance. Please remodel the entity in Finance and Operations to remove unused data sources and tables or implement getEntityRecordIdsImpactedByTableChange to optimize the runtime queries."
+
+If there are many data sources which are not being used for tracking in the actual live sync from FnO then there is a possibility that entity performance can affect live sync. To Optimize the tracked tables use the method getEntityRecordIdsImpactedByTableChange.
+
+## Error 5000
+The error message is, "Synchronous plugins are registered for data management events for entity accounts. These can impact initial sync and live sync import performance into Dataverse . For best performance, please change the plugins to asynchronous processing. List of registered plugins {}."
+
+Synchronous plugins on dataverse entity can affect live sync and intial sync performance as it adds to the transaction load. Its recommended to either turn off or make these plugins async if you are facing slow load times in initial sync or live sync for a particular entity.
+
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
