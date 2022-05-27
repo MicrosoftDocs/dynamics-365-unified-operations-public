@@ -1,5 +1,5 @@
 ---
-title: Migrate
+title: Migrate Modern POS to Store Commerce
 description: This topic explains how to migrate from Microsoft Dynamics 365 Commerce Modern POS (MPOS) to the Microsoft Dynamics 365 Commerce Store Commerce app.
 author: mugunthanm
 ms.date: 05/27/2022
@@ -8,7 +8,6 @@ ms.prod:
 ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
-
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 05-24-2022
@@ -43,12 +42,12 @@ To learn more about Store Commerce app, see [Store Commerce app](../store-commer
 1. [Create a new device in headquarters](../../tasks/create-associate-device.md), or if you want to migrate an existing device, select the device and change the application type to **Store Commerce** on the headquarters **Devices** page and then run the **Registers (1070)** and **Channel configuration (1090)* jobs.
 1. Uninstall MPOS. You don’t have to uninstall the offline database.
 1. Download the Store Commerce installer from [LCS Shared asset library](https://lcs.dynamics.com/V2/SharedAssetLibrary). On the **Shared asset library** page, select **Retail Self-service package** as the asset type, and then find the file that ends with **Store Commerce**.
-1. Install the Store Commerce app by passing the required parameters and related details. For information on offline mode setup and installation, see [Store Commerce app](../store-commerce). 
+1. Install the Store Commerce app by passing the required parameters and related details. For information on offline mode setup and installation, see [Store Commerce app](../store-commerce.md). 
 
     [!NOTE]
     The existing offline database can be updated by passing the correct SQL instance in the installer parameter, or you can also create a new offline database. These steps are only required if you need offline mode.
 
-1. After installing the app, launch the app from the start menu and then activate the app. For instructions on activating the app, see [Point of sale (POS) device activation](../retail-device-activation).
+1. After installing the app, launch the app from the start menu and then activate the app. For instructions on activating the app, see [Point of sale (POS) device activation](../retail-device-activation.md).
 1. After activation, sign in to the app using your employee credentials.
 
 ## Migrate extensions
