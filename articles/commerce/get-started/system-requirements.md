@@ -4,7 +4,7 @@
 title: System requirements for cloud deployments of Dynamics 365 Commerce
 description: This topic lists the system requirements for cloud deployments for the current version of Dynamics 365 Commerce.
 author: jashanno 
-ms.date: 05/05/2022
+ms.date: 05/27/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -92,7 +92,7 @@ If the self-service component will use a server certificate, it's critical that 
 > [!NOTE]
 > The legacy Commerce Scale Unit (self-hosted) self-service component uses Azure Service to Service authentication. It's critical that you manage both the generated Azure web application keys (formerly called *secrets*) and the server certificate for expiration. By default, a certificate and a generated Azure web application key expire after one calendar year (365 days).
 >
-> The supported versions of the .NET Framework have been updated. Self-service client-side components like (Commerce Scale Unit - Self hosted, Store Commerce, Modern POS and Hardware Station) require that the .NET Framework version 4.7.2 or later be installed. For installation instructions, see [Install the .NET Framework for developers](/dotnet/framework/install/guide-for-developers). For the sealed installers, we recommend that you always have the latest version of the .NET Framework installed on the target computer.
+> The supported versions of the .NET Framework have been updated. Self-service client-side components like Commerce Scale Unit - Self hosted, Store Commerce, Modern POS and Hardware Station require that the .NET Framework version 4.7.2 or later be installed. For installation instructions, see [Install the .NET Framework for developers](/dotnet/framework/install/guide-for-developers). For the sealed installers, we recommend that you always have the latest version of the .NET Framework installed on the target computer.
 
 ### Supported operating systems
 
