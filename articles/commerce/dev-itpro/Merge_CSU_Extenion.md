@@ -12,11 +12,9 @@ ms.search.validFrom: 03-30-2022
 ms.dyn365.ops.version: AX 10.0.25
 ---
 
-# Create a Cloud Scale Unit extension package
+# Merge Cloud Scale Unit Extensions packages from ISVs, partners, or Customers for cloud deployments
 
 [!include [banner](../includes/banner.md)]
-
-# Merge Cloud Scale Unit Extensions packages from ISVs, partners, or Customers for cloud deployments
 
 This document explains how to merge Commerce cloud Scale Unit (CSU) extensions deployed to CSU from [Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index).
 Extension packages generated for Commerce cloud Scale Unit (CSU) from ISVs, partners and customers must be merged into single package before deploying to LCS, Currently the LCS doesn’t support deploying multiple extension packages, the last deployed extension package will override the previous extension deployment.
