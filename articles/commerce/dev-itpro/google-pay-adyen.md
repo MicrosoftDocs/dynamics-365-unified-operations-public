@@ -198,7 +198,7 @@ To set up Google Pay as a regular payment option in the **Payment Method** secti
     1. **Heading**: Enter a heading to display for the express checkout section of your site (for example, "Google Pay").
     1. **Height of the iFrame**: Change the value to your preferred design height in pixels (for example, "75"). 
     1. **Supported tender types**: Enter "GooglePay" to match the headquarters configuration for the Google Pay connector.
-    1. **Is primary payment**: Leave blank (this is typically checked for the Adyen checkout module).
+    1. **Is primary payment**: Leave the check box deselected (this property is typically enabled for the Adyen checkout module).
     1. **Payment style override**: Not supported for the Google Pay configuration.
     1. **Use connector id**. This property must be selected when using multiple payment connectors on the page.
 1. Position the module above or below other payment modules by selecting the ellipsis ("**...**") in the **Payment** slot and then selecting **Move up** or **Move down**.
