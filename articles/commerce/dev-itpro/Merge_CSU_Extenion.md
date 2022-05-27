@@ -60,6 +60,8 @@ Before consuming the NuGet package from your ISV, set up the [package feed locat
     <PackageReference Include="Contoso.Extension.Sample.Package" Version="2.0.*” />
     ```
     You can specify the exact package version or use wildcards to pick up the updated version if available. 
+    
+    If there are multiple ISVs NuGet package, repeat step 2 as required.
 
 3.	Build the Scale Unit packaging project. The output CSU extension package generated will have the extensions from the ISVs and your extensions.
 
