@@ -54,7 +54,7 @@ Dynamics 365 Finance 10.0.28 includes platform updates. To learn more, see [Plat
 
 ### Bug fixes
 
-For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=).
+For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=694438).
 
 ### Dynamics 365 and industry clouds: 2022 release wave 1 plan
 
