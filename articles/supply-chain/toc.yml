@@ -3291,6 +3291,18 @@
         href: landed-cost/landed-cost-inquiries.md
       - name: Landed cost reports
         href: landed-cost/landed-cost-reports.md
+      - name: Landed cost data entities
+        items:
+        - name: Landed cost entities overview
+          href: landed-cost\landed-cost-entities-overview.md
+        - name: Voyage creation entities
+          href: landed-cost\landed-cost-entities-voyage-creation.md
+        - name: Cost transaction entities
+          href: landed-cost\landed-cost-entities-cost-transactions.md
+        - name: Container activities entity
+          href: landed-cost\landed-cost-entities-container-activities.md
+        - name: Vendor invoice entities
+          href: landed-cost\landed-cost-entities-vendor-invoices.md
     - name: Warehouse management
       items:
       - name: Warehouse management overview
