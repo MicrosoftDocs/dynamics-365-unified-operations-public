@@ -30,7 +30,7 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
-| Inventory and logistics | [Inventory allocation for the Inventory Visibility Add-in](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-allocation-inventory-visibility-add-in) | Coming soon | Enabled by default |
+| Inventory and logistics | [Inventory allocation for the Inventory Visibility Add-in](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-allocation-inventory-visibility-add-in) | [Inventory Visibility inventory allocation](../inventory/inventory-visibility-allocation.md) | Enabled by default |
 | Manufacturing | "My day" view for the production floor execution interface | [How workers use the production floor execution interface](../production-control/production-floor-execution-use.md) and [Show vacation balances in the production floor execution interface](../production-control/production-floor-execution-payroll-stats.md) | Feature management:<br>*"My day" view for the production floor execution interface* |
 | Planning | [Planning Optimization support for subcontracting](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-subcontracting) | [Manage subcontracting work in production](../production-control/manage-subcontract-work-production.md) | Enabled by default |
 
