@@ -2,20 +2,22 @@
 title: Vendor invoice entities
 description: This topic provides information about vendor invoice entities, which enable cost type codes to be configured for internal costs or externally derived costs.
 author: yufeihuang
-ms.date: 12/16/2021
+ms.date: 05/27/2022
 ms.topic: article
 ms.search.form:
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: yufeihuang
-ms.search.validFrom: 2021-12-16
-ms.dyn365.ops.version: 10.0.25
+ms.search.validFrom: 2022-05-27
+ms.dyn365.ops.version: 10.0.28
 ---
 
 # Vendor invoice entities
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!-- KFM: Preview until GA with 10.0.28 -->
 
 The **Landed cost** module enables cost type codes to be configured for internal costs or externally derived costs. If a cost is external to a business, an invoice is expected from the service provider. This invoice is processed as an invoice journal that can be associated with a voyage, and the value of the invoice can be distributed across one or more costs of the voyage.
 

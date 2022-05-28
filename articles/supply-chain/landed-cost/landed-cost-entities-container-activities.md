@@ -2,20 +2,22 @@
 title: Container activities entity
 description: This topic provides information about container activities, which are used to track the progress of shipping containers. 
 author: yufeihuang
-ms.date: 12/16/2021
+ms.date: 05/27/2022
 ms.topic: article
 ms.search.form:
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: yufeihuang
-ms.search.validFrom: 2021-12-16
-ms.dyn365.ops.version: 10.0.25
+ms.search.validFrom: 2022-05-27
+ms.dyn365.ops.version: 10.0.28
 ---
 
 # Container activities entity
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!-- KFM: Preview until GA with 10.0.28 -->
 
 Container activities are used to track the progress of shipping containers. A record is created for each leg that is assigned to the journey template that is selected at the time of shipping container creation. Records are also created when the shipping container is created via a data entity.
 
