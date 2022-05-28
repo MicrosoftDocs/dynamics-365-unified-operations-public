@@ -4,7 +4,7 @@
 title: Mobile platform resources
 description: The mobile platform lets you create mobile apps for your workspaces.
 author: tonyafehr
-ms.date: 10/26/2020
+ms.date: 05/26/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,6 +30,7 @@ ms.dyn365.ops.version: Platform update 9
 # Mobile platform resources
 
 [!include [banner](../../includes/banner.md)]
+[!include [mobile app deprecated](../../includes/mobile-app-deprecation-banner.md)]
 
 By using mobile apps, you can reuse business logic and modeling. Mobile apps enable rich offline and mobile interactions, and provide an easy-to-use designer experience. Developers can create simplified forms in Microsoft Visual Studio and then design mobile apps that expose this functionality. The mobile platform makes it easy to change the forms and mobile app definitions to include customizations that are made to your cloud app. 
 

@@ -4,7 +4,7 @@
 title: Company directory mobile workspace
 description: This topic provides information about the Company directory mobile workspace, which lets users view and contact other employees in their organization.
 author: jcart1106
-ms.date: 09/17/2019
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -27,6 +27,7 @@ ms.dyn365.ops.version: July 2017 update
 # Company directory mobile workspace
 
 [!include [banner](../includes/banner.md)]
+[!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
 This topic provides information about the **Company directory** mobile workspace. This workspace lets users view and contact other employees in their organization.
 

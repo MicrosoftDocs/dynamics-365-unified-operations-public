@@ -4,7 +4,7 @@
 title: Localize mobile workspaces
 description: This topic describes how you can use workspace classes to provide localization support to workspaces.
 author: tonyafehr
-ms.date: 07/01/2017
+ms.date: 05/26/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,6 +30,7 @@ ms.dyn365.ops.version: Platform update 3
 # Localize mobile workspaces
 
 [!include [banner](../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../includes/mobile-app-deprecation-banner.md)]
 
 You can use workspace classes in several ways to provide localization support to workspaces.
 

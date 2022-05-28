@@ -2,7 +2,7 @@
 title: Image type
 description: Image control interface for representing images in the mobile app.
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/24/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
@@ -12,6 +12,7 @@ ms.author: tfehr
 # Image type
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 Image control interface for representing images in the mobile app.
 Images can be of any of the following types: DataUri, Base64, URL, AOTResource, or Symbol.

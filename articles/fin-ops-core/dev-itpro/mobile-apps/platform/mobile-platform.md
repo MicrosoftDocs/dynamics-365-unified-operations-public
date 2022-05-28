@@ -4,7 +4,7 @@
 title: Mobile platform 
 description: This topic describes the platform for the mobile phone app which enables rich offline and mobile interactions, and an easy-to-use designer experience.
 author: tonyafehr
-ms.date: 06/20/2017
+ms.date: 05/26/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,6 +30,7 @@ ms.dyn365.ops.version: Platform update 3
 # Mobile platform
 
 [!include [banner](../../includes/banner.md)]
+[!include [mobile app deprecated](../../includes/mobile-app-deprecation-banner.md)]
 
 This topic has been replaced with the [Get started with the mobile platform](mobile-platform-getting-started.md) and [Architecture and design considerations for the mobile platform](mobile-platform-architecture.md) topics.
 

@@ -51,6 +51,7 @@ This topic provides links to documentation resources for United Kingdom.
   - [Generate a VAT declaration in paper format (VAT 100 report)](emea-gbr-mtd-vat-integration-vat100.md)
 - [Statistics on payment practices report](emea-gbr-statistics-on-payment-practices-report.md)
 - [Finance (Globalization) guidance about Brexit impact](https://businesscenter.mbs.microsoft.com/#contentdetail/GuidanceBrexitImpact)
+- [EU sales list for United Kingdom (Northern Ireland)](emea-uk-eu-sales-list.md)
 
 ## Regulatory updates for the United Kingdom
 

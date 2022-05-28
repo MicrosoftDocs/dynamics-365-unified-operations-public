@@ -4,7 +4,7 @@
 title: Design a configuration for generating documents in Excel format
 description: This topic describes how to design an Electronic reporting (ER) format to fill in an Excel template, and then generate outbound Excel format documents.
 author: NickSelin
-ms.date: 03/25/2022
+ms.date: 05/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -292,6 +292,16 @@ You can select **Update from Excel** on the **Import** tab of the Action Pane to
 > If the editable ER format originally contained **Sheet** elements, we recommend that you set the **Create Excel Sheet format element** option to **Yes** when you import an updated template. Otherwise, all nested elements of the original **Sheet** element will be created from scratch. Therefore, all bindings of the re-created format elements will be lost in the updated ER format.
 
 ![Create Excel Sheet format element option in the Update from Excel dialog box.](./media/er-excel-format-update-template.png)
+
+In version 10.0.28 and later, you can use the **Update Excel Header and Excel Footer format elements** option.
+
+- When you set this option to **No**, the Excel Header and Excel Footer format elements remain unchanged, even if the corresponding headers or footers have been updated in the worksheets of the imported template in the Excel workbook format.
+- When you set this option to **Yes**, Excel Header and Excel Footer format elements will change when the corresponding headers or footers are updated in worksheets of the imported template in the Excel workbook format.
+
+    - If the structure of a worksheet header or footer hasn't been changed, or if it has only been appended, the structure of the corresponding Excel Header or Excel Footer format element is updated. Bindings of format elements that are nested under this Excel Header or Excel Footer format element will be preserved.
+    - If the structure of a worksheet header or footer has been changed, the corresponding Excel Header or Excel Footer format element is re-created. Bindings of format elements that are nested under this Excel Header or Excel Footer format element will be removed.
+
+![Update Excel Header and Excel Footer format elements option in the Update from Excel dialog box.](./media/er-excel-format-update-template2.png)
 
 To learn more about this feature, follow the steps in [Modify Electronic reporting formats by reapplying Excel templates](modify-electronic-reporting-format-reapply-excel-template.md).
 

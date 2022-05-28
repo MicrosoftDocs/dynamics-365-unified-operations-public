@@ -12,6 +12,8 @@
         items:
         - name: What's new or changed in Finance home page
           href: get-started/whats-new-home-page.md
+        - name: Finance 10.0.28 (August)
+          href: get-started/whats-new-changed-10-0-28.md
         - name: Finance 10.0.27 (July)
           href: get-started/whats-new-changed-10-0-27.md
         - name: Finance 10.0.26 (May)
@@ -3708,6 +3710,8 @@
             href: localizations/emea-gbr-mtd-vat-integration-vat100.md
         - name: Statistics on payment practices report
           href: localizations/emea-gbr-statistics-on-payment-practices-report.md
+        - name: EU sales list
+          href: localizations/emea-uk-eu-sales-list.md
       - name: United States
         items:
         - name: United States overview

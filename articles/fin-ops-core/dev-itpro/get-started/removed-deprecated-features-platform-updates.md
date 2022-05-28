@@ -4,7 +4,7 @@
 title: Removed or deprecated platform features
 description: This topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
 author: sericks007
-ms.date: 04/26/2022
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -37,6 +37,33 @@ This topic describes features that have been removed, or that are planned for re
 This list is intended to help you consider these removals and deprecations for your own planning. 
 
 Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
+
+
+## Feature deprecation effective June 2022
+
+### Finance and Operations (Dynamics 365) mobile application and mobile platform 
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | We are deprecating the Finance and Operations (Dynamics 365) mobile application and platform to consolidate to a single mobile platform, which is Power Apps. |
+| **Replaced by another feature?**   | Yes, mobile experiences over Finance and Operations app data can be built with Power Platform integration. See [Building mobile experiences](../power-platform/build-mobile-experiences.md) for more details. |
+| **Product areas affected**         | Finance and Operations apps |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated. End of support date is targeted for October 2024. |
+
+
+## Platform updates for version 10.0.29 of Finance and Operations apps
+
+### Panorama tab style
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Horizontally-scrolling pages align to out-dated layout patterns which has known usability and accessibility issues.  |
+| **Replaced by another feature?**   | No, but other tab styles are still available. |
+| **Product areas affected**         | Web client |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated. |
+
 
 ## Feature deprecation effective April 2022
 
