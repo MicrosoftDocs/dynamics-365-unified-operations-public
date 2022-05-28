@@ -18,7 +18,7 @@ ms.dyn365.ops.version: 10.0.28
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management preview version 10.0.28. This version has a build number of 10.0.1227 <!--KFM: Update build number --> and is available on the following schedule:
+This topic lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management preview version 10.0.28. This version has a build number of 10.0.1264 and is available on the following schedule:
 
 - **Preview of release:** May 2022
 - **General availability of release (self-update):** July 2022
@@ -31,8 +31,10 @@ The following table lists the features that are included in this release. We mig
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
 | Inventory and logistics | [Landed cost integration entities for third-party freight forwarders](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/landed-cost-integration-third-party-freight-forwarders) | [Landed cost entities overview](../landed-cost/landed-cost-entities-overview.md) | Enabled by default |
-| Planning | DDMRP for Planning Optimization <!-- KFM: Add link to release plan when that topic is published --> | Coming soon | Feature management:<br>*(Preview) DDMRP for Planning Optimization* |
 | Planning | [Planning Optimization support for shelf life](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-shelf-life) | Coming soon <!-- KFM: Vendor is preparing this. Expected May 20. --> | Enabled by default |
+
+<!-- KFM: Confirm status of this feature:
+| Planning | [Demand Driven Material Requirements Planning (DDMRP)](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/demand-driven-material-requirements-planning-ddmrp) | Coming soon | Feature management:<br>*(Preview) DDMRP for Planning Optimization* | -->
 
 ## Feature enhancements included in this release
 
@@ -67,7 +69,7 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.28 includes platform updates
 
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of 10.0.28, sign in to Lifecycle Services (LCS) and view the [KB article](#1).<!-- KFM Get new link -->
+For information about the bug fixes included in each of the updates that are part of 10.0.28, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=694438).
 
 ### Dynamics 365 and industry clouds: 2022 release wave 1 plan
 
