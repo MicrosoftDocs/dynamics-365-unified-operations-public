@@ -67,25 +67,24 @@ After you register an application and add a client secret to Azure AD, follow th
 1. Select **Install**. The status of the add-in is shown as **Installing**. When the installation is completed, refresh the page. The status should change to **Installed**.
 1. In Dataverse, select the **Apps** section in the left navigation, and verify that the **Inventory Visibility** Power Apps is installed successfully. If the **Apps** section doesn't exist, contact the Inventory Visibility product team at [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com).
 
-> [!NOTE]
+> [!TIP]
 > We recommend that you join the Inventory Visibility Add-in user group, where you can find useful guides, get our latest updates, and post any questions you may have about using Inventory Visibility. To join, please send email to the Inventory Visibility product team at [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) and include your Supply Chain Management environment ID.
 
-> If you have more than one LCS environment, create a different Azure AD application for each environment. If you use same application ID and tenant ID to install the Inventory Visibility Add-in for different environments, a token issue will occur for older environments. Only the last one that was installed will be valid.
+> [!IMPORTANT]
+> If you have more than one LCS environment, create a different Azure AD application for each of them. If you use same application ID and tenant ID to install the Inventory Visibility Add-in for different environments, a token issue will occur for older environments. As a result, only the last installation will be valid.
 
-> If you are unable to install from the LCS page for more than one hour, most likely the user who triggers the install to the Inventory add-in doesn't have the access to install solution in the Dataverse environment.
-> 
-Follow these steps to resolve the issue:
-
-1. Cancel the Inventory visibility add-in installation process from the LCS page.
-1. Install the inventory visibility add-in in power platform admin center. Make sure that the user has the access to install the solution, if you don't have the access, please add license "Dynamics 365 Unified Operations Plan" to the user in admin.microsoft.com
-
-    1. Sign in to Power Platform.
-    1. Select the environment where we want to install the add-in.
-    1. Select **Dynamics 365 Apps**.
-    1. Select **Install App**.
-    1. Select **Inventory Visibility**
-
-1. After the installation is completef, go to the LCS page to reinstall the **Inventory Visibility** add-in.
+> [!NOTE]
+> If it takes more than an hour to install from the LCS page, then your user account probably lacks permission to install solutions in the Dataverse environment. Follow these steps to resolve the issue:
+>
+> 1. Cancel the Inventory visibility add-in installation process from the LCS page.
+> 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) and make sure that the user account you want to use to install the add-in has the "Dynamics 365 Unified Operations Plan" license assigned to it. Assign the license if needed.
+> 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) using the relevant user account. Then install the inventory visibility add-in by doing the following steps:
+>     1. Select the environment where you want to install the add-in.
+>     1. Select **Dynamics 365 Apps**.
+>     1. Select **Install App**.
+>     1. Select **Inventory Visibility**
+>
+> 1. After the installation completes, go to back to the LCS page and try again to reinstall the **Inventory Visibility** add-in.
 
 ## <a name="uninstall-add-in"></a>Uninstall the Inventory Visibility Add-in
 
