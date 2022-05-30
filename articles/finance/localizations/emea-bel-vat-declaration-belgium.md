@@ -127,7 +127,7 @@ You can use the following table to determine how a lookup result that is preconf
 |--------------|-----|---------------|
 | Actual VAT due for the period from December 1 to December 20 in the monthly declaration, or for the period from October 1 to December 20 in the quarterly declaration | 91  | The **91 Deposit amount to be paid in December** input parameter in the user dialog box |
 
-### Purchase reverse charge VAT
+## Purchase reverse charge VAT
 
 If you configure sales tax codes to post incoming reverse charge VAT by using use tax, associate your sales tax codes with the lookup result of **Report field lookup** that contains "UseTax" in the name.
 
@@ -149,7 +149,7 @@ In this case, amounts that use the **VAT_S_EU** sales tax code are reflected in 
 
 For more information about how to configure reverse charge VAT, see [Reverse charges](emea-reverse-charge.md).
 
-### Credit notes and negative corrections
+## Credit notes and negative corrections
 
 In Belgium, amounts of credit notes and negative corrections are shown in separate boxes on the VAT declaration. Therefore, in the preceding tables, specific lookup results for **Report field lookup** are dedicated to credit notes and negative corrections.
 
@@ -198,7 +198,9 @@ The following examples show what these reports look like for the examples in the
 | Invoice 2       | 1,000.00 | 210.00 | 00.00  | 00.00  |
 | Credit note 2   | \-400.00 | 00.00  | 400.00 | 84.00  |
 
-## Configure system parameters
+## Set up a VAT declaration for Belgium
+
+### Configure system parameters
 
 To generate a VAT declaration, you must configure the enterprise tax number.
 
@@ -210,8 +212,6 @@ To generate a VAT declaration, you must configure the enterprise tax number.
 6. On the **General** tab, in the **Effective** field, enter the date when the number becomes effective.
 
 For more information about how to set up registration categories and registration types, see [Registration IDs](emea-registration-ids.md).
-
-## Set up a VAT declaration for Belgium
 
 ### Import ER configurations
 
