@@ -41,11 +41,12 @@ This topic provides information about the European Union (EU) sales list report 
 
 For general setup information, see [EU Sales list reporting](https://docs.microsoft.com/dynamics365/finance/localizations/emea-eu-sales-list#prerequisites).
 
-[!NOTE] The value from the **Tax registration number** field on the **Tax registration** FastTab of the **Legal entities** page will be used in the .xlsx file for the EU sales list report.
+>[!NOTE] 
+>The value from the **Tax registration number** field on the **Tax registration** FastTab of the **Legal entities** page will be used in the .xlsx file for the EU sales list report.
 
 ### Set up company information
 
-Create a registration type, and assign it to the **Enterprise ID (COID)** registration category for the company. For more information, see Registration IDs.
+Create a registration type, and assign it to the **Enterprise ID (COID)** registration category for the company. For more information, see [Registration IDs](emea-registration-ids.md).
 
 1.  In Microsoft Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**.
 2.  In the grid, select your company.
@@ -61,11 +62,11 @@ Create a registration type, and assign it to the **Enterprise ID (COID)** regist
 In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index), import the latest versions of the following Electronic reporting (ER) configurations for the EU sales list:
 
 -   EU Sales list model
-    -   EU Sales list by columns report
-    -   EU Sales list by rows report
-    -   EU Sales list (EE)
+-   EU Sales list by columns report
+-   EU Sales list by rows report
+-   EU Sales list (EE)
 
-For more information, see Download Electronic reporting configurations from Lifecycle Services.
+For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 ### Set up foreign trade parameters
 
@@ -74,9 +75,9 @@ For more information, see Download Electronic reporting configurations from Life
 3.  On the **Electronic reporting** FastTab, in the **File format mapping** field, select **EU Sales list (EE)**.
 4.  In the **Report format mapping** field, select **EU Sales list by rows report** or **EU Sales list by columns report**.
 5.  On the **Country/region properties** tab, select **New**, and specify the following information:
--   In the **Country/region** column, select **EST**.
+    -   In the **Country/region** column, select **EST**.
     -   In the **Country/region type** column, select **Domestic**.
-1.  List all the countries or regions that your company does business with. For each country that is part of the EU, in the **Country/region type** field, select **EU**.
+6.  List all the countries or regions that your company does business with. For each country that is part of the EU, in the **Country/region type** field, select **EU**.
 
 ## Work with the EU sales list
 
@@ -98,7 +99,7 @@ For information about the transaction types that are included in the EU sales li
 | Generate report  | Set this option to **Yes** to generate an .xlsx file for your EU sales list report. |
 | Report file name | Enter the name of the .xlsx file.                                                   |
 
-1.  Select **OK**, and review the generated reports.
+5.  Select **OK**, and review the generated reports.
 
 ## Example
 
@@ -109,9 +110,9 @@ For information about how to create a general setup, create postings, and transf
 1.  Go to **Tax** \> **Declarations** \> **Foreign trade** \> **EU sales list**.
 2.  On the Action Pane, select **Reporting**.
 3.  In the **EU sales list reporting** dialog box, on the **Parameters** FastTab, set the following fields:
--   In the **Reporting period** field, select **Monthly**.
+    -   In the **Reporting period** field, select **Monthly**.
     -   In the **From date** field, select **8/1/2021** (August 1, 2021).
-1.  Select **OK**, and review the report in XML format that is generated. The following tables show the values on the example report.
+4.  Select **OK**, and review the report in XML format that is generated. The following tables show the values on the example report.
 
 **EU sales list header**
 
@@ -130,6 +131,6 @@ For information about how to create a general setup, create postings, and transf
 | kolmnurktehing |              |              | The sum of triangular trade by customer.     |
 | teenusteMyyk   |              | 240          | The sum of all service invoices by customer. |
 
-1.  Review the report in Excel format that is generated.
+5.  Review the report in Excel format that is generated.
 
-![Table Description automatically generated](media/2bd2bff6ed344debd9b31f1db6587736.png)
+![Table Description automatically generated](media/EUSL-est.png)
