@@ -107,7 +107,7 @@ To deploy a feature to the service environment and an application setup to the F
 
 ### Prerequisites
 
-The primary address of the legal entity must be in Poland. ??????????????????
+The primary address of the legal entity must be in Poland.
 
 ### Configure legal entity data
 
@@ -121,7 +121,7 @@ The primary address of the legal entity must be in Poland. ??????????????????
 #### Enter a legal entity's tax registration number
 
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
-2. Select a legal entity, and then, on the **Tax registration** FastTab, in the **Tax registration number** field, enter a valid tax registration number for the legal entity. This number will be used as the seller's value-added tax (VAT) identifier.
+2. Select a legal entity, and then, on the **Tax registration** FastTab, in the **Tax registration number** field, enter a valid tax registration number for the legal entity. This number will be used as the seller's Tax identification number (**NIP**).
 
 ### Configure customer data
 
@@ -135,7 +135,7 @@ The primary address of the legal entity must be in Poland. ??????????????????
 #### Enter a customer's tax registration number
 
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
-2. Select a customer, and then, on the **Invoice and delivery** FastTab, in the **Tax exempt number** field, enter a valid tax registration number for the customer. This number will be used as the buyer's VAT identifier.
+2. Select a customer, and then, on the **Invoice and delivery** FastTab, in the **Tax exempt number** field, enter a valid tax registration number for the customer. This number will be used as the buyer's Tax identification number (**NIP**).
 
 ![Invoice printout](media/sau-qr-invoice.jpg)
 
