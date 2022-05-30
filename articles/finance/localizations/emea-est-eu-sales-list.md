@@ -1,10 +1,38 @@
+---
+# required metadata
+title: EU Sales list for Estonia
+description: This topic provides information about the European Union (EU) sales list report for Estonia.
+author: AKroshkina
+ms.date: 05/30/2022
+ms.topic: article
+ms.prod: 
+ms.technology: 
+
+# optional metadata
+
+#ms.search.form:
+audience: IT Pro, Application User
+# ms.devlang: 
+ms.reviewer: kfend
+# ms.suite: 
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: 
+# ms.search.industry: 
+ms.author: anasyash
+ms.dyn365.ops.version: 
+ms.search.validFrom: 
+---
+
+# EU Sales list for Estonia
+
 This topic provides information about the European Union (EU) sales list report for Estonia. The Estonian EU sales list report contains information about the sale of goods and services for reporting in XML format. The following fields are included on the Estonian EU sales list report:
 
 -   **EU sales list header:**
--   Company's enterprise number
+    -   Company's enterprise number
     -   Reporting period
 -   **EU sales list lines:**
--   Customer VAT ID
+    -   Customer VAT ID
     -   Sum of all item invoices by customer
     -   Sum of triangular trade by customer
     -   Sum of all service invoices by customer
