@@ -29,6 +29,9 @@ ms.search.validFrom: 2016-05-31
 
 [!include [banner](../includes/banner.md)]
 
+> [!NOTE]
+> This feature has been replaced with the VAT declaration functionality. For more information, see [VAT declaration (Belgium)](emea-bel-vat-declaration-belgium.md).
+
 Dynamics 365 Finance has evolved into purpose-built applications to help you manage specific business functions. For more information about these changes, see [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
 
 This topic describes the standard reports that are provided to help you with the INTERVAT tax declaration and reconciliation analysis.
