@@ -105,12 +105,18 @@ To deploy a feature to the service environment and an application setup to the F
 
 ## Microcost Dynamics D365 configuration
 
+### Prerequisites
+
+The primary address of the legal entity must be in Poland. ??????????????????
+
 ### Configure legal entity data
 
 #### Enter a legal entity's address
 
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
 2. Select a legal entity, and then, on the **Addresses** FastTab, add a valid primary address for the legal entity.
+> [!NOTE]
+> Make shure that the following mandatory address elements are defined: Country code, ZIP code, City and Building number.
 
 #### Enter a legal entity's tax registration number
 
@@ -123,6 +129,8 @@ To deploy a feature to the service environment and an application setup to the F
 
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
 2. Select a customer, and then, on the **Addresses** FastTab, add a valid address for the customer.
+> [!NOTE]
+> Make shure that for addressed located in Poland the following mandatory elements are defined: Country code, ZIP code, City and Building number. For foreign addresses at least the following mandatory elements are defined: Country code and City.
 
 #### Enter a customer's tax registration number
 
