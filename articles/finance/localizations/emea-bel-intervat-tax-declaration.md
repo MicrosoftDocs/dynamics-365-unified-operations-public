@@ -29,6 +29,8 @@ ms.search.validFrom: 2016-05-31
 # INTERVAT tax declaration
 
 [!include [banner](../includes/banner.md)]
+> [!NOTE]
+> This feature has been replaced with the VAT declaration functionality. For more information, see [VAT declaration (Belgium)](emea-bel-vat-declaration-belgium.md).
 
 ## Overview
 
