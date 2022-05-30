@@ -1,7 +1,36 @@
+---
+# required metadata
+
+title: EU Sales list for Latvia
+description: This topic provides information about the European Union (EU) sales list report for Latvia.
+author: AKroshkina
+ms.date: 05/30/2022
+ms.topic: article
+ms.prod: 
+ms.technology: 
+
+# optional metadata
+
+#ms.search.form:
+audience: IT Pro, Application User
+# ms.devlang: 
+ms.reviewer: kfend
+# ms.suite: 
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: 
+# ms.search.industry: 
+ms.author: anasyash
+ms.dyn365.ops.version: 
+ms.search.validFrom: 
+---
+
+# EU Sales list for Latvia
+
 This topic provides information about the European Union (EU) sales list report for Latvia. The Latvian EU sales list report contains information about the sale of goods and services for reporting in XML format. The following fields are included on the Latvian EU sales list report:
 
 -   **EU sales list lines:**
--   Customer VAT ID
+    -   Customer VAT ID
     -   Sum of all item invoices by customer
     -   Sum of all service invoices by customer
     -   Sum of triangular trade by customer
@@ -10,14 +39,14 @@ This topic provides information about the European Union (EU) sales list report 
 The following fields are included on the Latvian EU sales list corrective report:
 
 -   **EU sales list header:**
--   Company routing number
+    -   Company routing number
     -   Company name
     -   Responsible person title
     -   Company's primary phone
     -   Date and time of the report creation
     -   Name of the responsible person
 -   **EU sales list lines:**
--   New transaction year and month
+    -   New transaction year and month
     -   Customer country/region code
     -   Customer VAT ID without country/region code
     -   New line amount
@@ -37,14 +66,13 @@ For general setup information, see [EU Sales list reporting](https://docs.micros
 ### Import Electronic reporting configurations
 
 In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index), import the latest versions of the following Electronic reporting (ER) configurations for the EU sales list:
-
 -   EU Sales list model
-    -   EU Sales list by columns report
-    -   EU Sales list by rows report
-    -   EU Sales list (LV)
-    -   EU Sales list corrections (LV)
+-   EU Sales list by columns report
+-   EU Sales list by rows report
+-   EU Sales list (LV)
+-   EU Sales list corrections (LV)
 
-For more information, see Download Electronic reporting configurations from Lifecycle Services.
+For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 
 ### Set up foreign trade parameters
 
@@ -54,9 +82,9 @@ For more information, see Download Electronic reporting configurations from Life
 4.  In the **Report format mapping** field, select **EU Sales list by rows report** or **EU Sales list by columns report**.
 5.  In the **Corrections file format mapping** field, select **EU Sales list corrections (LV)**.
 6.  On the **Country/region properties** tab, select **New**, and specify the following information:
--   In the **Country/region** column, select **LVA**.
+    -   In the **Country/region** column, select **LVA**.
     -   In the **Country/region type** column, select **Domestic**.
-1.  List all the countries or regions that your company does business with. For each country that is part of the EU, in the **Country/region type** field, select **EU**.
+7.  List all the countries or regions that your company does business with. For each country that is part of the EU, in the **Country/region type** field, select **EU**.
 
 ## Work with the EU sales list
 
@@ -76,7 +104,7 @@ For general information about which types of transactions are included in the EU
 | Generate report  | Set this option to **Yes** to generate an .xml file for your EU sales list report. |
 | Report file name | Enter the name of the .xml file.                                                   |
 
-1.  Select **OK**, and review the generated reports.
+5.  Select **OK**, and review the generated reports.
 
 **Generate a corrective EU sales list report**
 
@@ -101,9 +129,9 @@ For information about how to create a general setup, create postings, and transf
 1.  Go to **Tax** \> **Declarations** \> **Foreign trade** \> **EU sales list**.
 2.  On the Action Pane, select **Reporting**.
 3.  In the **EU sales list reporting** dialog box, on the **Parameters** FastTab, set the following fields:
--   In the **Reporting period** field, select **Monthly**.
+    -   In the **Reporting period** field, select **Monthly**.
     -   In the **From date** field, select **8/1/2021** (August 1, 2021).
-1.  Select **OK**, and review the report in XML format that is generated. The following tables show the values on the example report.
+4.  Select **OK**, and review the report in XML format that is generated. The following tables show the values on the example report.
 
 **EU sales list lines**
 
@@ -119,19 +147,19 @@ For information about how to create a general setup, create postings, and transf
 1.  Go to **Tax** \> **Declarations** \> **Foreign trade** \> **EU sales list**.
 2.  Verify that there are one service line and one item line in the grid.
 
-![](media/e9ecb8b4037b2e4fd89efc27accf512f.png)
+![EU sales list for Latvia](media/EUSL-lva-ex.png)
 
-1.  Select a service line, and then, on the Action Pane, select **Copy lines** \> **To lines with status Included**.
-2.  For the corrective line, set the following fields:
--   In the **Country/region** field, select **ESP**.
+3.  Select a service line, and then, on the Action Pane, select **Copy lines** \> **To lines with status Included**.
+4.  For the corrective line, set the following fields:
+    -   In the **Country/region** field, select **ESP**.
     -   In the **Tax exempt number** field, select **ES1234567**.
     -   In the **Invoice date** field, select **9/8/2021** (September 8, 2021).
     -   In the **Items value** field, enter **20**.
     -   In the **Services value** field, enter **0**.
     -   Select the **Corrected** checkbox.
-1.  On the Action Pane, select **Reporting corrections**.
-2.  In the **EU sales list reporting** dialog box, on the **Parameters** FastTab, in the **Person responsible for reporting** field, select **Jodi Christiansen**.
-3.  Select **OK**, and review the report in XML format that is generated. The following tables show the values on the example report.
+5.  On the Action Pane, select **Reporting corrections**.
+6.  In the **EU sales list reporting** dialog box, on the **Parameters** FastTab, in the **Person responsible for reporting** field, select **Jodi Christiansen**.
+7.  Select **OK**, and review the report in XML format that is generated. The following tables show the values on the example report.
 
 **EU sales list header**
 
