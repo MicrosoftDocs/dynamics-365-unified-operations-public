@@ -372,6 +372,8 @@ The index lets you query the on-hand inventory in the following ways:
 > Base dimensions that are defined in the partition configuration should not be defined in index configurations.
 > 
 > If you must query only inventory that is aggregated by all dimension combinations, you can set up a single index that contains the base dimension `Empty`.
+>
+> You should at least have one index hierarchy such as only containing the base dimension `Empty`, otherwise the query will fail with the error no index hierarchy has been set.
 
 ## <a name="reservation-configuration"></a>Reservation configuration (optional)
 
