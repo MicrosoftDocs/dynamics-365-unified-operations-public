@@ -59,6 +59,7 @@ The following table shows the list of features that Electronic invoicing may sup
 |CFDI - Mexican electronic invoice                  |Mexico          |
 |Dutch electronic invoice                           |Netherlands     |
 |Norwegian electronic invoice                       |Norway          |
+|Polish electronic invoice                          |Poland          |
 |Spanish electronic invoice                         |Spain           |
 
 When there is a legacy Electronic invoicing feature that is supported in a country/region's localizations scope, activating one of these features turns off the legacy feature and enables electronic invoices to be issued through Electronic invoicing.
