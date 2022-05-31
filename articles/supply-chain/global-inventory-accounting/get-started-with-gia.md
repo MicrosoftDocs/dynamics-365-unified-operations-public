@@ -34,18 +34,18 @@ Global Inventory Accounting is an add-in. To make its features available, you mu
 
 Global Inventory Accounting doesn't currently support all the cost management features that are built into Supply Chain Management. Therefore, it's important that you evaluate whether the set of features that is currently available will meet your requirements.
 
-## <a name="sign-up"></a>How to get the Global Inventory Accounting
+## <a name="sign-up"></a>How to get the Global Inventory Accounting add-in
 
 > [!IMPORTANT]
 > To use Global Inventory Accounting, you must have an LCS-enabled high-availability environment (not a OneBox environment). Additionally, you must be running Supply Chain Management version 10.0.19 or later.
 
 ### Supply Chain Management version 10.0.19 to 10.0.26
 
-To install the Global Inventory Accounting, you can [install the add-in](#install). Once the add-in is installed, send your LCS environment ID and company name by email to the [Global Inventory Accounting team](mailto:GlobalInvAccount@microsoft.com). The team will send you a follow-up email that contains a Global Inventory Accounting service endpoints. 
+To install Global Inventory Accounting for Supply Chain Management version 10.0.19 to 10.0.26, start by [installing the add-in](#install). Then send your LCS environment ID and company name by email to the [Global Inventory Accounting team](mailto:GlobalInvAccount@microsoft.com). The team will send you a follow-up email that contains your Global Inventory Accounting service endpoints.
 
 ### Supply Chain Management version 10.0.27 and later
 
-To install the Global Inventory Accounting, you can [install the add-in](#install). There is no need to input Global Inventory Accounting service endpoints during integration setup. For any issue, please contact the [Global Inventory Accounting team](mailto:GlobalInvAccount@microsoft.com). 
+To install Global Inventory Accounting for Supply Chain Management version 10.0.27 and later, just [install the add-in](#install). For these versions of Supply Chain Management, the Global Inventory Accounting service endpoints will be set up automatically, so you don't need to find them manually. If you do experience any issues while setting up the add-in, please contact the [Global Inventory Accounting team](mailto:GlobalInvAccount@microsoft.com).
 
 ## Licensing
 
@@ -86,7 +86,7 @@ Next, create application users for Global Inventory Accounting in Dataverse by f
 1. Go to **Advanced Setting \> System \> Security \> Users**, and create an application user. Use the **View** field to change the page view to *Application users*.
 1. Select **New**.
 1. Set the **Application ID** field to *7a1dd80f-c961-4a67-a2f5-d6a5d2f52cf9*.
-1. Select **Assign Role**, and then select *System Administrator*. If there is a role that is named *Common Data Service User*, select it too.
+1. Select **Assign Role**, and then select *System Administrator*. If there's a role that is named *Common Data Service User*, select it too.
 1. Repeat the preceding steps, but set the **Application ID** field to *5f58fc56-0202-49a8-ac9e-0946b049718b*.
 
 For more information, see [Create an application user](/power-platform/admin/create-users-assign-online-security-roles#create-an-application-user).
@@ -122,6 +122,8 @@ Follow these steps to set up the integration between Global Inventory Accounting
 1. On the **All** tab, search for the feature that is named *(Preview) Global inventory accounting*.
 1. Select **Enable now**.
 1. Go to **Global inventory accounting \> Setup \> Global inventory accounting parameters \> Integrations parameters**.
-1. In the **Data service endpoint** and **Global inventory accounting endpoint** fields, enter the URLs from the email that the Global Inventory Accounting team sent when you signed up for the preview. (Since 10.0.27, there is no need to input the Global inventory accounting endpoint.)
+1. Depending on which version of Supply Chain Management you're running, do one of the following steps:
+    - **Supply Chain Management version 10.0.19 to 10.0.26**: In the **Data service endpoint** and **Global inventory accounting endpoint** fields, enter the URLs that were sent to you by email from the Global Inventory Accounting team (see also [How to get the Global Inventory Accounting add-in](#sign-up)).
+    - **Supply Chain Management version 10.0.27 and newer**: You don't need to enter the endpoints, so you can skip this step.
 
 Global Inventory Accounting is now ready to use.
