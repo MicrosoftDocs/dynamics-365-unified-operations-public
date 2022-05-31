@@ -186,6 +186,17 @@ As of Finance **version 10.0.9**, only landscape page orientation is supported i
 
 Only the common system fonts of the Window operating system are used to convert output that contains no embedded fonts.
 
+### Resources
+
+In versions of Finance **before version 10.0.29**, PDF conversion can be only performed beyond the current Finance instance. For doing PDF conversion, a generated file is sent out of Finance to the conversion service that returns back a converted document. However, in version **10.0.29 and later**, in addition to the **Convert Electronic Reporting outbound documents from Microsoft Office formats to PDF** feature enabling, you can enable the **Utilize application resources to perform CBD documents conversion from Word to PDF format** feature to perform conversion of generated Word documents to PDF format locally by using resources of application servers of the current Finance instance. 
+
+> [!TIP]
+> Take into account the following advantages of the PDF conversion when the **Utilize application resources to perform CBD documents conversion from Word to PDF format** feature is enabled:
+>
+> - The PDF document that is produced is not [limited](#limitations) to a maximum number of pages.
+> - The Word document that is converted can contain [large number of content controls](https://fix.lcs.dynamics.com/Issue/Details?bugId=647877&dbType=3).
+> - Internet connectivity is not required in on-premises deployments.
+
 ### Use the PDF conversion option
 
 To turn on PDF conversion for a file destination, select the **Convert to PDF** check box.
