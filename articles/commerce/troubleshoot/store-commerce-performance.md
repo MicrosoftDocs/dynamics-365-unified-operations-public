@@ -17,7 +17,6 @@ ms.dyn365.ops.version: 10.0.25
 
 ---
 
-
 # Troubleshoot Store Commerce performance issues
 
 [!include [banner](../includes/banner.md)]
@@ -25,6 +24,6 @@ ms.dyn365.ops.version: 10.0.25
 
 This topic explains how to troubleshoot performance issues in the Microsoft Dynamics 365 Commerce Store Commerce app.
 
-- When troubleshooting performance issues for Store Commerce, avoid remote sign-in and instead sign in directly to the Store Commerce device.
-- If the Store Commerce app is slow, check the CPU, memory, network, and disk usage using Task Manager or Resource Monitor. Ensure that there's no significant consumption of the device resources.
-- Check your network connectivity status and confirm that https requests/responses aren't taking more than few seconds. 
+- When you troubleshoot performance issues for Store Commerce, avoid remote sign-in. Instead, sign in directly to the Store Commerce device.
+- If the Store Commerce app is slow, check the CPU, memory, network, and disk usage by using Task Manager or Resource Monitor. Ensure that there is no significant consumption of the device resources.
+- Check your network connectivity status, and confirm that HTTPS requests/responses aren't taking more than a few seconds.
