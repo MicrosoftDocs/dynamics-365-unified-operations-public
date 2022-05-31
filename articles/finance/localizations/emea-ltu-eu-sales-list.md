@@ -1,7 +1,35 @@
+---
+# required metadata
+title: EU Sales list for Lithuania
+description: This topic provides information about the European Union (EU) sales list report for Lithuania.
+author: AKroshkina
+ms.date: 05/31/2022
+ms.topic: article
+ms.prod: 
+ms.technology: 
+
+# optional metadata
+
+#ms.search.form:
+audience: IT Pro, Application User
+# ms.devlang: 
+ms.reviewer: kfend
+# ms.suite: 
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: 
+# ms.search.industry: 
+ms.author: anasyash
+ms.dyn365.ops.version: 
+ms.search.validFrom: 
+---
+
+# EU Sales list for Lithuania
+
 This topic provides information about the European Union (EU) sales list report for Lithuania. The Lithuanian EU sales list report contains information about the sale of goods and services for reporting in XML format. The following fields are included on the Lithuanian EU sales list report:
 
 -   **EU sales list header:**
--   Information about application
+    -   Information about application
     -   Date of the report creation
     -   Number of pages
     -   Number of the current page
@@ -13,14 +41,14 @@ This topic provides information about the European Union (EU) sales list report 
     -   Reporting month
     -   Contact information
 -   **EU sales list lines:**
--   Identifier for corrective line
+    -   Identifier for corrective line
     -   Line number
     -   Customer VAT ID
     -   Sum of all item invoices by customer
     -   Sum of triangular trade by customer
     -   Sum of all service invoices by customer
 -   **EU sales list footer:**
--   Information about correction in the report
+    -   Information about correction in the report
     -   Total number of pages
     -   Total amount of items on the current page / on all pages
 
@@ -30,7 +58,7 @@ For general setup information, see [EU Sales list reporting](https://docs.micros
 
 ### Set up information about the company
 
-Create a registration type, and assign it to the **VAT ID** registration category for Lithuania and all the countries or regions that your company does business with, as described in Registration IDs.
+Create a registration type, and assign it to the **VAT ID** registration category for Lithuania and all the countries or regions that your company does business with, as described in [Registration IDs](emea-registration-ids.md).
 
 1.  In Microsoft Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**.
 2.  In the grid, select your company.
@@ -48,9 +76,9 @@ Create a registration type, and assign it to the **VAT ID** registration categor
 In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index), import the latest versions of the following Electronic reporting (ER) configurations for the EU sales list:
 
 -   EU Sales list model
-    -   EU Sales list by columns report
-    -   EU Sales list by rows report
-    -   EU Sales list (LT)
+-   EU Sales list by columns report
+-   EU Sales list by rows report
+-   EU Sales list (LT)
 
 For more information, see Download Electronic reporting configurations from Lifecycle Services.
 
@@ -61,9 +89,9 @@ For more information, see Download Electronic reporting configurations from Life
 3.  On the **Electronic reporting** FastTab, in the **File format mapping** field, select **EU Sales list (LT)**.
 4.  In the **Report format mapping** field, select **EU Sales list by rows report** or **EU Sales list by columns report**.
 5.  On the **Country/region properties** tab, select **New**, and specify the following information:
--   In the **Country/region** column, select **LTU**.
+    -   In the **Country/region** column, select **LTU**.
     -   In the **Country/region type** column, select **Domestic**.
-1.  List all the countries or regions that your company does business with. For each country that is part of the EU, in the **Country/region type** field, select **EU**.
+6.  List all the countries or regions that your company does business with. For each country that is part of the EU, in the **Country/region type** field, select **EU**.
 
 ## Work with the EU sales list
 
@@ -77,8 +105,8 @@ For general information about which types of transactions are included in the EU
 
 [!NOTE] To ensure the correct display of information on a report that includes correction lines, don't report both lines that have corrections and lines that don’t have corrections at the same time for one customer.
 
-1.  On the Action Pane, select **Reporting**.
-2.  In the **EU sales list reporting** dialog box, on the **Parameters** FastTab, set the following fields.
+4.  On the Action Pane, select **Reporting**.
+5.  In the **EU sales list reporting** dialog box, on the **Parameters** FastTab, set the following fields.
 
 | Field               | Description                                                                                                                                                                                                                                                                                         |
 |---------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -92,23 +120,23 @@ For general information about which types of transactions are included in the EU
 | Contact information | Enter contact information.                                                                                                                                                                                                                                                                          |
 | Report type         | Select **Primary** to create files that don’t include corrective lines. Select **Corrected** to create a correction file that includes only corrective lines. Select **Partially corrected** to create a correction file that includes both corrective lines and lines that don’t have corrections. |
 
-1.  Select **OK**, and review the generated reports.
+6.  Select **OK**, and review the generated reports.
 
 ## Example
 
-For information about how to create a general setup, create postings, and transfer transactions by using the **DEMF** legal entity for Lithuania, see Example for generic EU Sales list. However, for the example in this topic, create **LT123456789** as the company’s VAT ID. Enter this VAT ID in the **VAT exempt number export** field in the **Intrastat** section on the **Foreign trade and logistics** FastTab of the **Legal entities** page’. Additionally, create **000000009** as the company’s routing number.
+For information about how to create a general setup, create postings, and transfer transactions by using the **DEMF** legal entity for Lithuania, see Example for generic [Example for generic EU Sales list](emea-eu-sales-list-example.md). However, for the example in this topic, create **LT123456789** as the company’s VAT ID. Enter this VAT ID in the **VAT exempt number export** field in the **Intrastat** section on the **Foreign trade and logistics** FastTab of the **Legal entities** page’. Additionally, create **000000009** as the company’s routing number.
 
 **Create an EU sales list report**
 
 1.  Go to **Tax** \> **Declarations** \> **Foreign trade** \> **EU sales list**.
 2.  On the Action Pane, select **Reporting**.
 3.  In the **EU sales list reporting** dialog box, on the **Parameters** FastTab, set the following fields:
--   In the **Reporting period** field, select **Monthly**.
+    -   In the **Reporting period** field, select **Monthly**.
     -   In the **From date** field, select **8/1/2021** (August 1, 2021).
     -   In the **Filing date** field, select **9/25/2021** (September 25, 2021).
     -   In the **Contact information** field, enter **Contact information**.
     -   In the **Report type** field, select **Primary**.
-1.  Select **OK**, and review the report in XML format that is generated. The following tables show the values on the example report.
+4.  Select **OK**, and review the report in XML format that is generated. The following tables show the values on the example report.
 
 **EU sales list header**
 
@@ -157,6 +185,6 @@ For information about how to create a general setup, create postings, and transf
 | Text-LT       |       | A constant value. The field doesn't appear on the first page.                                                                                                                                                                                          |
 | E6            | 1     | The report type. If the **Report type** field is set to **Primary**, the value is **1**. If the **Report type** field is set to **Corrected**, the value is **2**. If the **Report type** field is set to **Partially corrected**, the value is **3**. |
 
-1.  Review the report in Excel format that is generated.
+5.  Review the report in Excel format that is generated.
 
 ![A picture containing scatter chart Description automatically generated](media/ccf9760733ae572f7c705c3c62e00fa7.png)
