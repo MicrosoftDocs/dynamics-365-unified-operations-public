@@ -1529,6 +1529,8 @@
             href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/supply-chain/toc.json
           - name: Troubleshoot performance issues in ER configurations
             href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/supply-chain/toc.json
+          - name: Reduce the number of table fields that are fetched at runtime
+            href: ../fin-ops-core/dev-itpro/analytics/er-reduce-fetched-fields-number.md?toc=/dynamics365/supply-chain/toc.json
         - name: Business document management (BDM)
           items:
           - name: BDM overview
