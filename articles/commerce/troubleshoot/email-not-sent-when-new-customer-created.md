@@ -4,7 +4,7 @@
 title: Welcome email is not sent when new customers are created
 description: This topic provides troubleshooting guidance that can help if a welcome email notification isn't sent when a new customer is created in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 02/24/2022
+ms.date: 05/31/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -27,11 +27,11 @@ When a new customer is created in Commerce headquarters, a welcome email isn't s
 
 ### Associate an email notification profile under Commerce parameters
 
-1. In headquarters, go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters**.
-2. In the email notification profile field under the **General** tab, select the email notification profile that contains a mapping between the customer created notification type and a customer created email template.  
+1. In headquarters, go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters \> General**.
+2. In the **Email notification profile** drop-down list, select the email notification profile that contains a mapping between the customer created notification type and a customer created email template.  
 
 > [!NOTE] 
-> When customer created notifications are enabled, customers that are created in all channels within the legal entity will receive a customer created email. Customer created notifications cannot currently be limited to a single channel.
+> When you enable customer created notifications, customers that are created in all channels within the legal entity will receive a customer created email. Currently, customer created notifications can't be limited to a single channel.
 
 For more information see [Create email templates for transactional events](../email-templates-transactions.md). 
 
