@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 Human Resources 10.0.28 (July 2022)
+title: What's new or changed in Dynamics 365 Human Resources 10.0.28 (August 2022)
 description: This topic describes features that are either new or changed in the Microsoft Dynamics 365 Human Resources version 10.0.28 preview release.
 author: twheeloc
 ms.date: 05/19/2022
@@ -27,11 +27,11 @@ ms.dyn365.ops.version: 10.0.27
 
 ---
 
-# What's new or changed in Dynamics 365 Human Resources 10.0.28 (July 2022)
+# What's new or changed in Dynamics 365 Human Resources 10.0.28 (August 2022)
 
 [!include [banner](../../includes/preview-banner.md)]
 
-This topic lists features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.28. This version has a build number of xx.x.xxxx and is 
+This topic lists features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.28. This version has a build number of 10.0.1264 and is 
 available on the following schedule:
 
 - **Preview of release:** May 2022
@@ -43,15 +43,6 @@ available on the following schedule:
 The following table lists the features that are included in this release. We might update this topic to include features that made it into the build after this topic 
 was initially published.
 
-| Feature area | Feature | More information | Enabled by |
-|----|----|----|----|
-|    |    |    |    |
-|    |    |    |    |
-|    |    |    |    | 
-|    |    |    |    | 
-|    |    |    |    |
-|    |    |    |    | 
-|    |    |    |    | 
 
 
 
@@ -60,11 +51,11 @@ was initially published.
 The following table lists the feature enhancements that are included in this release. Each of these enhancements provides an incremental improvement to an existing 
 feature. Because they are only enhancements, they aren't listed in the [release plan](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance).
 
-| Feature area | Feature name | More information |
-|--------------|--------------|------------------|
-|              |              |                  |
-|              |              |                  |
-|              |              |                  |
+| Feature name | More information |
+|--------------|------------------|
+|**Task management** information added to **Personnel management** workspace.            | The employee cards have been updated to include a checklist button, with the following options: **Apply checklist**, **“N” overdue tasks**, and **“N” open tasks**. For more information, see [Personnel workspace](/hr-personnel-personnel-management-workspace#starting-soon)           |
+| Signing limits logic updated to account for multiple compensation levels             |When the multiple compensation level feature is on and there's more than one compensation level is assigned to a job, the most recent fixed compensation record will be retrieved from the employee and be used in determining the compensation level needed for signing limits. If only one compensation level exists on the job, the compensation level on the job will be used. This is how it works when the multiple compensation level feature is off.               |
+
 
 ## Additional resources
 
@@ -74,7 +65,7 @@ Dynamics 365 Finance 10.0.28 includes platform updates. To learn more, see [Plat
 
 ### Bug fixes
 
-For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=).
+For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=694438).
 
 
 
