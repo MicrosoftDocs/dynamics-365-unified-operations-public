@@ -137,13 +137,34 @@ The primary address of the legal entity must be in Poland.
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
 2. Select a customer, and then, on the **Invoice and delivery** FastTab, in the **Tax exempt number** field, enter a valid tax registration number for the customer. This number will be used as the buyer's Tax identification number (**NIP**).
 
-![Invoice printout](media/sau-qr-invoice.jpg)
-
 ### Configure additional data
 
 You can add to invoices any additional arbitrary data which will be placed in a special section *DodatkowyOpis* of electronic invoices.
-
 Electronic properties.
+
+#### Configure electronic document properties
+
+1. Go to **Accounts receivable** > **Setup** > **Electronic document property types**.
+2. Select **New** to add a property type.
+2. In the **Type** field, enter **DocumentType**. 
+3. Select **Applicability** to add an applicable table. 
+4. On the **Electronic document property type applicability setup** page, in **Table name** field, select **Vendor invoice journal**.
+5. Save and return to the **Electronic document property types** page.
+
+   ![Property type added on the Electronic document property types page.](media/emea-ita-invoice-type-parameter.jpg)
+
+#### Enter additional data
+
+Follow these steps to register invoice types.
+
+1. Go to **Accounts payable** \> **Inquiries and reports** \> **Invoice** \> **Invoice journal**.
+2. Select an invoice in the list, and then select **Electronic document properties**.
+
+    ![Electronic document properties button.](media/emea-ita-invoice-type-in-invoice.jpg)
+
+3. Enter a required invoice type. The value of the **Value** field for the invoice type overrides any automatically created codes when XML files are generated for electronic invoices.
+
+    ![Invoice type value entered on the Electronic document properties page.](media/emea-ita-invoice-type-value.jpg)
 
 ### Issue electronic invoices
 
