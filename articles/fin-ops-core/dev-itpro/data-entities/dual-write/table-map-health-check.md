@@ -27,13 +27,13 @@ The feature requires platform updates for version 10.0.19 or later of Finance an
 
 ## Error 400
 
-The error message is, "No business events registration data found for the entity \{Finance and Operations UniqueEntityName\} which means either the map is not running or all the field mapping are unidirectional."
+The error message is, "No business events registration data found for the entity \{Finance and Operations UniqueEntityName\} which means either the map isn't running or all the field mapping are unidirectional."
 
 ## Error 500
 
-The error message is, "No project configurations found for project \{project name\}. This could be either the project is not enabled or all the field mappings are unidirectional from customer engagement to Finance and Operations."
+The error message is, "No project configurations found for project \{project name\}. This could be either the project isn't enabled or all the field mappings are unidirectional from customer engagement to Finance and Operations."
 
-Check the mappings for the table map. If they are unidirectional from customer engagement apps to Finance and Operations apps, no traffic is generated for live synchronization from Finance and Operations apps to Dataverse.
+Check the mappings for the table map. If they're unidirectional from customer engagement apps to Finance and Operations apps, no traffic is generated for live synchronization from Finance and Operations apps to Dataverse.
 
 ## Error 900
 
@@ -73,12 +73,12 @@ select * from <EntityName> where <filter criteria for the records> on SQL.
 
 The error message is, "Table: \{datasourceTable.Key.subscribedTableName\} for entity \{datasourceTable.Key.entityName\} is tracked for entity \{origTableToEntityMaps.EntityName\}. Same tables tracked for multiple entities can impact system performance for live sync transactions."
 
-If the same table is tracked by multiple entities, any change to the table will trigger dual-write evaluation for the linked entities. Although the filter clauses will send only the valid records, the evaluation might cause a performance issue if there are long-running queries or unoptimized query plans. This issue might not be avoidable from the business perspective. However, if there are many intersecting tables across multiple entities, you should consider simplifying the entity or checking optimizations for entity queries.
+If the same table is tracked by multiple entities, any change to the table will trigger dual-write evaluation for the linked entities. Although the filter clauses will send only the valid records, the evaluation might cause a performance issue if there're long-running queries or unoptimized query plans. This issue might not be avoidable from the business perspective. However, if there are many intersecting tables across multiple entities, you should consider simplifying the entity or checking optimizations for entity queries.
 
 ## Error 1800
 The error message is, "Datasource : {} for entity CustCustomerV3Entity includes a range value. Inbound record upserts from Dataverse to Finance and Operations can be affected by range values on entity. Please test record updates from Dataverse to finance and operations with records that do not match the filter criteria to validate your settings."
 
-If there is a range specified on the entity in finance and operations apps, then the inbound sync from Dataverse to finance and operations apps should be tested for update behavior on records that do not match this range criteria. Any record that does not match the range would get treated as an insert operations by the entity. If there is an existing record in the underlying table, then the insert will fail. We recommended that you test this use case for all scenarios before deploying to production.
+If there is a range specified on the entity in finance and operations apps, then the inbound sync from Dataverse to finance and operations apps should be tested for update behavior on records that don't match this range criteria. Any record that does not match the range would get treated as an insert operations by the entity. If there is an existing record in the underlying table, then the insert will fail. We recommend you test this use case for all scenarios before deploying to production.
 
 ## Error 1900
 The error message is, "Entity: has {} data sources which are not being tracked for outbound dual write. This can affect live sync query performance. Please remodel the entity in Finance and Operations to remove unused data sources and tables or implement getEntityRecordIdsImpactedByTableChange to optimize the runtime queries."
