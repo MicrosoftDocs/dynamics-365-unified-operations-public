@@ -3134,6 +3134,8 @@
           href: localizations/emea-ltu-saf-t.md
         - name: Set up the transfer documents for goods movement inside a company
           href: localizations/tasks/set-up-transfer-documents-goods-movement-inside-company.md
+        - name: EU sales list
+          href: localizations/emea-ltu-eu-sales-list.md
       - name: Malaysia
         items:
         - name: Malaysia overview
