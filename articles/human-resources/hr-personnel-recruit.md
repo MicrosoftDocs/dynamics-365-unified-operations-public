@@ -53,11 +53,12 @@ If you want to submit recruiting requests in HR recruitment, you must first enab
 
 Once the features are turned on, select the functionality with the following steps: 
 1. Go to **Human resources** > **Setup** > **Human resources parameters**.
-2. On the **Recruitment** tab, set the **Recruitment disabled** field to **No**.
-3. In the **Recruitment experience** dropdown, select **HR recruitment**.   
+2. On the **Recruitment** tab, set the **Recruitment enabled** field to **Yes**.
+3. In the **Recruitment experience** dropdown, select **HR recruitment**.  
+4. Click **Save**. 
 
 > [!Note] 
-> Once **HR recruitment** is selected, **Recruitment projects** (legacy) will be read only. 
+> Once **HR recruitment** is selected, **Recruitment projects** (legacy) will not be available. 
 
 
 ## Add a recruiting request location
