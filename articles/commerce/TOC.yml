@@ -2470,7 +2470,7 @@
             href: dev-itpro/retail-sdk/sdk-github.md
           - name: Legacy Retail SDK migration
             href: dev-itpro/retail-sdk/migrate-commerce-sdk.md
-          - name: Obsolete and Removed APIs, Classes, and Methods
+          - name: Obsolete and removed APIs, classes, and methods
             href: dev-itpro/obsolete-apis-classes-methods.md
           - name: Modernizing the Commerce in-store technology stack (white paper)
             href: https://www.microsoft.com/download/details.aspx?id=103896
@@ -2650,7 +2650,7 @@
             href: dev-itpro/store-comm-extension-installer.md
         - name: Troubleshooting
           items: 
-          - name: Extensions
+          - name: Troubleshoot Store Commerce extension issues
             href: troubleshoot/store-commerce-extensions.md
       - name: E-commerce
         items:
@@ -2908,11 +2908,11 @@
       items: 
       - name: Store Commerce
         items:
-        - name: Setup and installations
+        - name: Troubleshoot Store Commerce setup and installation issues
           href: troubleshoot/store-commerce-setup-installation.md
-        - name: Performance
+        - name: Troubleshoot Store Commerce performance issues
           href: troubleshoot/store-commerce-performance.md
-        - name: Extensions
+        - name: Troubleshoot Store Commerce extensions issues
           href: troubleshoot/store-commerce-extensions.md
       - name: Order processing
         items:
