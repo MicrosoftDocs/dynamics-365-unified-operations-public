@@ -2,9 +2,9 @@
 # required metadata
 
 title: Manage the Electronic reporting (ER) configuration lifecycle
-description: This topic describes how to manage the lifecycle of Electronic reporting (ER) configurations for Dynamics 365 Finance.
+description: This article describes how to manage the lifecycle of Electronic reporting (ER) configurations for Dynamics 365 Finance.
 author: NickSelin
-ms.date: 07/23/2021
+ms.date: 05/31/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to manage the lifecycle of [Electronic reporting](general-electronic-reporting.md) (ER) [configurations](general-electronic-reporting.md#Configuration) for Dynamics 365 Finance.
+This article describes how to manage the lifecycle of [Electronic reporting](general-electronic-reporting.md) (ER) [configurations](general-electronic-reporting.md#Configuration) for Dynamics 365 Finance.
 
 ## Overview
 
@@ -111,40 +111,40 @@ In some cases, you might require that the system ignore the configured prerequis
     > [!NOTE]
     > This parameter is user-specific and company-specific.
 
-## Dependency on other components
+## Dependencies on other components
 
 ER configurations can be configured as being [dependent](er-download-configurations-global-repo.md#import-filtered-configurations) on other configurations. For example, you can [import](er-download-configurations-global-repo.md) an ER [data model](er-overview-components.md#data-model-component) configuration from the Global repository to your [Microsoft Regulatory Configuration Services (RCS)](../../../finance/localizations/rcs-overview.md) or Dynamics 365 Finance instance and create a new ER [format](er-overview-components.md#format-component) configuration [deriving](er-quick-start2-customize-report.md#DeriveProvidedFormat) it from the imported ER data model configuration. The derived ER format configuration will be dependent on the base ER data model configuration.
 
 ![Review the derived ER format configuration on the Configurations page.](./media/ger-configuration-lifecycle-img1.png)
 
-When you finish design of this format, you can change the status of your initial [version](general-electronic-reporting.md#component-versioning) of this ER format configuration from **Draft** to **Completed**. Then you can share the completed version of this ER format configuration [publishing](../../../finance/localizations/rcs-global-repo-upload.md) it to the Global repository. Then, you can access the Global repository from any RCS or Finance cloud instance to import from this repository to this application any ER configuration version that is applicable for this application.
+When you finish designing this format, you can change the status of your initial [version](general-electronic-reporting.md#component-versioning) of this ER format configuration from **Draft** to **Completed**. You can then share the completed version of this ER format configuration by [publishing](../../../finance/localizations/rcs-global-repo-upload.md) it to the Global repository. Next, you can access the Global repository from any RCS or Finance cloud instance and import any ER configuration version that is applicable for this application from this repository to this application.
 
 ![Review the published ER format configuration on the Configuration repository page.](./media/ger-configuration-lifecycle-img2.png)
 
-Based on the configurations dependency, when you selected this ER format configuration in the Global repository to import it to a newly deployed RCS or Finance instance, the base ER data model configuration will be automatically found in the Global repository and imported along with the selected ER format configuration as the base configuration.
+Based on the configurations dependency, when you select this ER format configuration in the Global repository to import it to a newly deployed RCS or Finance instance, the base ER data model configuration is automatically found in the Global repository and imported along with the selected ER format configuration as the base configuration.
 
-You can also export your ER format configuration version  out of your current RCS or Finance instance to store it locally as an XML file.
+You can also export your ER format configuration version out of your current RCS or Finance instance and store it locally as an XML file.
 
 ![Export the ER format configuration version on the Configuration page.](./media/ger-configuration-lifecycle-img3.png)
 
-In versions of Finance **before version 10.0.29**, when you try to import this ER format configuration version from that XML file or from any repository other than the Global repository to a newly deployed RCS or Finance instance that contains no ER configurations yet, the following exception will be thrown informing you that a base configuration cannot be obtained:
+In versions of Finance **before version 10.0.29**, when you try to import this ER format configuration version from that XML file or from any repository other than the Global repository to a newly deployed RCS or Finance instance that contains no ER configurations yet, the following exception will be thrown to inform you that a base configuration can't be obtained:
 
 **Unresolved references left <br>
 Reference of the object '\<imported configuration name\>' to the object 'Base' (\<globally unique identifier of the missed base configuration\>,\<version of the missed base configuration\>) cannot be established**
 
 ![Import the ER format configuration version on the Configuration repository page.](./media/ger-configuration-lifecycle-img4.gif)
 
-In version **10.0.29 and later**, when you try to perform the same configuration import, whenever a base configuration cannot be found neither in the current application instance nor in the currently using source repository (if applicable), the ER framework will try to automatically find the name of the missed base configuration in the Global repository cache and present it in the text of the thrown exception alogn with the globally unique identifier of the missed base configuration.
+In version **10.0.29 and later**, when you try to perform the same configuration import, whenever a base configuration can't be found in the current application instance or in the source repository you're currently using (if applicable), the ER framework will try to automatically find the name of the missed base configuration in the Global repository cache and present it in the text of the thrown exception along with the globally unique identifier of the missed base configuration.
 
 **Unresolved references left <br>
 Reference of the object '\<imported configuration name\>' to the object 'Base' (\<name of the missed base configuration\> \<globally unique identifier of the missed base configuration\>,\<version of the missed base configuration\>) cannot be established**
 
 ![Import the ER format configuration version on the Configuration repository page.](./media/ger-configuration-lifecycle-img5.png)
 
-So, you can use the provided name of the missed base configuration to find it and import it manually.
+You can use the provided name of the missed base configuration to find it and then import it manually.
 
-> [!Note]
-> Be aware that this new option works only when at least one user has already signed-in to the Global repository either by using the [Configuration repositories](er-download-configurations-global-repo.md#open-configurations-repository) page or by using one of the Global repository [lookup](er-extended-format-lookup.md) fields in the current Finance instance and the Global repository content has been cached.
+> [!NOTE]
+> This new option works only when at least one user has already signed-in to the Global repository by using the [Configuration repositories](er-download-configurations-global-repo.md#open-configurations-repository) page or by using one of the Global repository [lookup](er-extended-format-lookup.md) fields in the current Finance instance and the Global repository content has been cached.
 
 ## Additional resources
 
