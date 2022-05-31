@@ -4,7 +4,7 @@
 title: Set up an email notification profile
 description: This topic describes how to create an email notification profile in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-ms.date: 02/11/2022
+ms.date: 05/31/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -61,10 +61,10 @@ For more information about creating email templates, see [Create email templates
 
 ## Create an email notification profile
 
-To create an email notification profile, open Headquarters and follow these steps.
+To create an email notification profile in headquarters, follow these steps.
 
 1. In the navigation pane, go to **Modules \> Retail and commerce \> Headquarters setup \> Commerce email notification profile**.
-1. On the action pane, click **New**.
+1. On the action pane, select **New**.
 1. In the **Email notification profile** field, enter a name to identify the profile.
 1. In the **Description** field, enter a relevant description.
 1. Set the **Active** switch to **Yes**.
@@ -74,10 +74,10 @@ To create an email notification profile, open Headquarters and follow these step
 To create an email event, follow these steps.
 
 1. In the navigation pane, go to **Modules \> Retail and commerce \> Headquarters setup \> Commerce email notification profile**.
-1. Under Retail email notification settings, click **+New**
+1. Under **Retail email notification settings**, select **New**.
 1. Select the appropriate **Email notification type** from the drop-down list.
 1. Select the email template you created above from the **Email ID** drop-down list.
-1. Select the **Active** check box.
+1. Select the **Active** checkbox.
 1. On the action pane, select **Save**.
 
 The following image shows some example event notification settings.
@@ -85,12 +85,11 @@ The following image shows some example event notification settings.
 ![Event notification settings.](media/email-notification-profile.png)
 
 
-
 ## Schedule a recurring email notification process job
 
 To send out email notifications, you must have the **Process retail order email notification** job running.
 
-To set up the batch job in Commerce headquarters for sending transactional emails, follow these steps.
+To set up a batch job in headquarters for sending transactional emails, follow these steps.
 
 1. Go to **Retail and Commerce \> Retail and Commerce IT \> Email and notifications \> Send email notification**.
 1. In the **Process retail order email notification** dialog box, select **Recurrence**.
