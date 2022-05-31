@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: TaxAuthority, TaxPeriod, TaxTable
+ms.search.form: TaxTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -73,7 +73,7 @@ Calculation and Rounding behavior
 | 2        | Code 1         | 42.42         | 4.25             |
 | 2        | Code 2         | 42.42         | 4.25             |
 
-**Tax base amount is calculated per line ** 
+**Tax base amount is calculated per line** 
 
 Line 1: 42.42
 
@@ -89,7 +89,7 @@ Line 2: sales tax code 1 tax amount = 42.42 * 10% = 4.242
 
 Line 2: sales tax code 2 tax amount = 42.42 * 10% = 4.242 
 
-**Tax amount is rounded per sales tax code **
+**Tax amount is rounded per sales tax code**
 
 Line 1: rounded sales tax code 1 tax amount = 4.25 
 
@@ -155,7 +155,7 @@ Calculation and Rounding behavior
 | 2        | Code 1         | 42.42         | 4.72             |
 | 2        | Code 2         | 42.42         | 4.72             |
 
-**Tax base amount is calculated per line ** 
+**Tax base amount is calculated per line** 
 
 Line 1: 42.42
 
@@ -286,7 +286,7 @@ Calculation and Rounding behavior
 | 2        | Code 1         | 42.42         | 4.24             |
 | 2        | Code 2         | 42.42         | 4.24             |
 
-**Tax base amount is calculated per document **
+**Tax base amount is calculated per document**
 
 Tax base amount = 42.42 + 42.42 = 84.84 
 
@@ -329,7 +329,7 @@ Calculation and Rounding behavior
 | 2        | Code 1         | 42.42         | 4.71             |
 | 2        | Code 2         | 42.42         | 4.72             |
 
-**Tax base amount is calculated per line ** 
+**Tax base amount is calculated per line** 
 
 Line 1: 42.42
 
