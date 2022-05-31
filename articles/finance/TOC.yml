@@ -2167,7 +2167,9 @@
         - name: VAT statement
           href: localizations/emea-est-vat-statement-details.md
         - name: Estonian Intrastat
-          href: localizations/emea-est-intrastat.md         
+          href: localizations/emea-est-intrastat.md  
+        - name: EU sales list
+          href: localizations/emea-est-eu-sales-list.md
       - name: Europe
         items:
         - name: Europe overview
@@ -3112,6 +3114,8 @@
           href: localizations/emea-lva-vat-statement-details.md
         - name: Latvian Intrastat
           href: localizations/emea-lva-intrastat.md
+        - name: EU sales list
+          href: localizations/emea-lva-eu-sales-list.md
       - name: Lithuania
         items:
         - name: Lithuania overview
@@ -3130,6 +3134,8 @@
           href: localizations/emea-ltu-saf-t.md
         - name: Set up the transfer documents for goods movement inside a company
           href: localizations/tasks/set-up-transfer-documents-goods-movement-inside-company.md
+        - name: EU sales list
+          href: localizations/emea-ltu-eu-sales-list.md
       - name: Malaysia
         items:
         - name: Malaysia overview
@@ -4483,6 +4489,8 @@
             href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
           - name: Troubleshoot performance issues in ER configurations
             href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/finance/toc.json
+          - name: Reduce the number of table fields that are fetched at runtime
+            href: ../fin-ops-core/dev-itpro/analytics/er-reduce-fetched-fields-number.md?toc=/dynamics365/finance/toc.json
         - name: Business document management (BDM)
           items:
           - name: BDM overview

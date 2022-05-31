@@ -1,13 +1,13 @@
 ---
 title: Errors codes for the table map health check
 description: This topic describes error codes for the table map health check.
-author: nhelgren
-ms.date: 10/04/2021
+author: RamaKrishnamoorthy
+ms.date: 05/31/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
-ms.author: nhelgren
+ms.author: ramasri
 ms.search.validFrom: 2021-10-04
 ---
 
@@ -27,13 +27,13 @@ The feature requires platform updates for version 10.0.19 or later of Finance an
 
 ## Error 400
 
-The error message is, "No business events registration data found for the entity \{Finance and Operations UniqueEntityName\} which means either the map is not running or all the field mapping are unidirectional."
+The error message is, "No business events registration data found for the entity \{Finance and Operations UniqueEntityName\} which means either the map isn't running or all the field mapping are unidirectional."
 
 ## Error 500
 
-The error message is, "No project configurations found for project \{project name\}. This could be either the project is not enabled or all the field mappings are unidirectional from customer engagement to Finance and Operations."
+The error message is, "No project configurations found for project \{project name\}. This could be either the project isn't enabled or all the field mappings are unidirectional from customer engagement to Finance and Operations."
 
-Check the mappings for the table map. If they are unidirectional from customer engagement apps to Finance and Operations apps, no traffic is generated for live synchronization from Finance and Operations apps to Dataverse.
+Check the mappings for the table map. If they're unidirectional from customer engagement apps to Finance and Operations apps, no traffic is generated for live synchronization from Finance and Operations apps to Dataverse.
 
 ## Error 900
 
@@ -74,5 +74,20 @@ select * from <EntityName> where <filter criteria for the records> on SQL.
 The error message is, "Table: \{datasourceTable.Key.subscribedTableName\} for entity \{datasourceTable.Key.entityName\} is tracked for entity \{origTableToEntityMaps.EntityName\}. Same tables tracked for multiple entities can impact system performance for live sync transactions."
 
 If the same table is tracked by multiple entities, any change to the table will trigger dual-write evaluation for the linked entities. Although the filter clauses will send only the valid records, the evaluation might cause a performance issue if there are long-running queries or unoptimized query plans. This issue might not be avoidable from the business perspective. However, if there are many intersecting tables across multiple entities, you should consider simplifying the entity or checking optimizations for entity queries.
+
+## Error 1800
+The error message is, "Datasource : {} for entity CustCustomerV3Entity includes a range value. Inbound record upserts from Dataverse to Finance and Operations can be affected by range values on entity. Please test record updates from Dataverse to Finance and Operations with records that don't match the filter criteria to validate your settings."
+
+If there's a range specified on the entity in finance and operations apps, then the inbound sync from Dataverse to finance and operations apps should be tested for update behavior on records that don't match this range criteria. Any record that doesn't match the range gets treated as an insert operation by the entity. If there's an existing record in the underlying table, then the insert will fail. We recommend that you test this use case for all scenarios before deploying to production.
+
+## Error 1900
+The error message is, "Entity: has {} data sources which aren't being tracked for outbound dual write. This can affect live sync query performance. Please remodel the entity in Finance and Operations to remove unused data sources and tables or implement getEntityRecordIdsImpactedByTableChange to optimize the runtime queries."
+
+If there are many data sources which aren't being used for tracking in the actual live sync from finance and operations apps, then there's a possibility that entity performance can affect live sync. To optimize the tracked tables, use the method getEntityRecordIdsImpactedByTableChange.
+
+## Error 5000
+The error message is, "Synchronous plugins are registered for data management events for entity accounts. These can impact initial sync and live sync import performance into Dataverse. For best performance, please change the plugins to asynchronous processing. List of registered plugins {}."
+
+Synchronous plugins on a Dataverse entity can affect live sync and intial sync performance as it adds to the transaction load. The recommended approach is to either turn off the plugins or make these plugins async if you are facing slow load times in initial sync or live sync for a particular entity.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

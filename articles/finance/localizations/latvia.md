@@ -36,6 +36,7 @@ This topic provides links to documentation resources for Latvia.
 - [Tax on natural resources report](emea-lva-tax-natural-resources.md)
 - [VAT statement details](emea-lva-vat-statement-details.md)
 - [Latvian Intrastat](emea-lva-intrastat.md)
+- [EU sales list for Latvia](emea-lva-eu-sales-list.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
