@@ -3,7 +3,7 @@
 title: Obsolete and removed APIs, classes, and methods
 description: This topic lists the obsolete and removed APIs, classes, and methods in Microsoft Dynamics 365 Commerce.
 author: mugunthanm
-ms.date: 05/27/2022
+ms.date: 05/31/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
