@@ -32,10 +32,10 @@ To render the user interface (UI), Store Commerce uses the Chromium engine inste
 
 - Application lifecycle management is simplified.
 - Extension or independent software vendor (ISV) code that is developed for MPOS or CPOS by using the Commerce software development kit (SDK) can be reused in Store Commerce with minimal changes.
-- Industry standard developer experience using Microsoft Visual Studio Code and GitHub.
+- The industry-standard developer experience uses Microsoft Visual Studio Code and GitHub.
 - Store Commerce provides the benefits of both MPOS and CPOS.
 - Performance is significantly improved.
-- POS and extension upgrades are simplified using the Commerce sealed installer framework.
+- POS and extension upgrades are simplified through the Commerce sealed installer framework.
 - Dedicated hardware station is supported.
 - Offline deployment is supported.
 
@@ -134,10 +134,10 @@ We recommend that you use Store Commerce or CPOS for all new deployments. Existi
 ### Prerequisites
 
 - Windows 10 version 17763.0 or later, Windows 11, or Windows Server 2019
-- [Microsoft Edge WebView2](https://developer.microsoft.com/en-us/microsoft-edge/webview2/) (Use the Evergreen Standalone Installer.)
+- [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2/) (Use the Evergreen Standalone Installer.)
 - SQL Server Express, SQL Server Standard, or SQL Server Enterprise (required only for offline mode). For information on which SQL Server edition to use, see [Commerce offline implementation and troubleshooting](implementation-considerations-offline.md).
 - Dynamics 365 Commerce (Commerce headquarters and Cloud Scale Unit)
-- NET Framework version 4.7.2 or later, see [Install the .NET Framework](https://dotnet.microsoft.com/en-us/download/dotnet-framework)
+- The .NET Framework version 4.7.2 or later. See [Install the .NET Framework](https://dotnet.microsoft.com/download/dotnet-framework)
 
 ### Device setup in Commerce headquarters
 
@@ -186,7 +186,7 @@ To activate Store Commerce after installation, follow these steps.
 
 ### Troubleshoot setup issues
 
-For troubleshooting information, see [Troubleshoot Store Commerce setup and installation issues](../troubleshoot/store-commerce-setup-installation.md) .
+For troubleshooting information, see [Troubleshoot Store Commerce setup and installation issues](../troubleshoot/store-commerce-setup-installation.md).
 
 ## Customize the app
 
