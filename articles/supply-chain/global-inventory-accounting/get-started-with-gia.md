@@ -100,7 +100,6 @@ If the default language of your Dataverse installation isn't English, follow the
 
 Follow these steps to install the add-in so that you can use Global Inventory Accounting.
 
-1. [Sign up](#sign-up) for the Global Inventory Accounting public preview.
 1. Sign in to [LCS](https://lcs.dynamics.com/Logon/Index).
 1. Open the LCS environment where you want to add the service.
 1. Go to **Full details**.
