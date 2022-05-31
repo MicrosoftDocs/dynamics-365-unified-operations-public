@@ -171,7 +171,7 @@ For information about how to create a general setup, create postings, and transf
 
     **EU sales list header**
 
-    | Field        | Value                               |                                                |
+    | Field        | Value                               |   Comment                                      |
     |--------------|-------------------------------------|------------------------------------------------|
     | Nmr Kods     | 000000009                           | The company's routing number.                  |
     | Nm Nosaukums | Contoso Entertainment System Latvia | The company's name.                            |
