@@ -53,7 +53,7 @@ feature. Because they are only enhancements, they aren't listed in the [release 
 
 | Feature name | More information |
 |--------------|------------------|
-|**Task management** information added to **Personnel management** workspace.            | The employee cards have been updated to include a checklist button, with the following options: **Apply checklist**, **“N” overdue tasks**, and **“N” open tasks**. For more information, see [Personnel workspace](/hr-personnel-personnel-management-workspace#starting-soon)           |
+|**Task management** information added to **Personnel management** workspace.            | The employee cards have been updated to include a checklist button, with the following options: **Apply checklist**, **“N” overdue tasks**, and **“N” open tasks**. For more information, see [Personnel workspace](/hr-personnel-personnel-management-workspace#starting-soon).           |
 | Signing limits logic updated to account for multiple compensation levels             |When the multiple compensation level feature is on and there's more than one compensation level is assigned to a job, the most recent fixed compensation record will be retrieved from the employee and be used in determining the compensation level needed for signing limits. If only one compensation level exists on the job, the compensation level on the job will be used. This is how it works when the multiple compensation level feature is off.               |
 
 
