@@ -141,6 +141,8 @@ The primary address of the legal entity must be in Poland.
 
 ### Configure additional data
 
+You can add to invoices any additional arbitrary data which will be placed in a special section *DodatkowyOpis* of electronic invoices.
+
 Electronic properties.
 
 ### Issue electronic invoices
