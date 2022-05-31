@@ -4,7 +4,7 @@
 title: Electronic reporting (ER) destinations
 description: This topic provides information about the management of Electronic reporting destinations, the types of supported destinations, and security considerations.
 author: nselin
-ms.date: 05/18/2022
+ms.date: 05/31/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -188,13 +188,13 @@ Only the common system fonts of the Window operating system are used to convert 
 
 ### Resources
 
-In versions of Finance **before version 10.0.29**, PDF conversion can be only performed beyond the current Finance instance. For doing PDF conversion, a generated file is sent out of Finance to the conversion service that returns back a converted document. However, in version **10.0.29 and later**, in addition to the **Convert Electronic Reporting outbound documents from Microsoft Office formats to PDF** feature enabling, you can enable the **Utilize application resources to perform CBD documents conversion from Word to PDF format** feature to perform conversion of generated Word documents to PDF format locally by using resources of application servers of the current Finance instance. 
+Prior to Finance version 10.0.29, PDF conversions could only performed beyond the current Finance instance. For a PDF conversion, a generated file is sent out of Finance to the conversion service that then returns a converted document. However, in version **10.0.29 and later**, in addition to the **Convert Electronic Reporting outbound documents from Microsoft Office formats to PDF** feature, you can enable the **Utilize application resources to perform CBD documents conversion from Word to PDF format** feature to convert generated Word documents to PDF format locally by using application server resources in the current Finance instance. 
 
 > [!TIP]
 > Take into account the following advantages of the PDF conversion when the **Utilize application resources to perform CBD documents conversion from Word to PDF format** feature is enabled:
 >
 > - The PDF document that is produced is not [limited](#limitations) to a maximum number of pages.
-> - The Word document that is converted can contain [large number of content controls](https://fix.lcs.dynamics.com/Issue/Details?bugId=647877&dbType=3).
+> - The Word document that is converted can contain a [large number of content controls](https://fix.lcs.dynamics.com/Issue/Details?bugId=647877&dbType=3).
 > - Internet connectivity is not required in on-premises deployments.
 
 ### Use the PDF conversion option
