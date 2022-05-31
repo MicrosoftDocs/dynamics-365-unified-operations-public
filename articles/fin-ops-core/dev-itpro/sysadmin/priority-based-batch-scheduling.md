@@ -4,7 +4,7 @@
 title: Priority-based batch scheduling
 description: This topic provides information about the functionality for priority-based batch scheduling.
 author: matapg007
-ms.date: 05/27/2022
+ms.date: 05/31/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
