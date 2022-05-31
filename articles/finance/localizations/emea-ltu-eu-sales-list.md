@@ -80,7 +80,7 @@ In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/
 -   EU Sales list by rows report
 -   EU Sales list (LT)
 
-For more information, see Download Electronic reporting configurations from Lifecycle Services.
+For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 ### Set up foreign trade parameters
 
@@ -103,7 +103,8 @@ For general information about which types of transactions are included in the EU
 2.  Transfer transactions.
 3.  Optional: To create correction files, select the **Corrected** checkbox for each corrective line.
 
-[!NOTE] To ensure the correct display of information on a report that includes correction lines, don't report both lines that have corrections and lines that don’t have corrections at the same time for one customer.
+>[!NOTE] 
+>To ensure the correct display of information on a report that includes correction lines, don't report both lines that have corrections and lines that don’t have corrections at the same time for one customer.
 
 4.  On the Action Pane, select **Reporting**.
 5.  In the **EU sales list reporting** dialog box, on the **Parameters** FastTab, set the following fields.
@@ -187,4 +188,4 @@ For information about how to create a general setup, create postings, and transf
 
 5.  Review the report in Excel format that is generated.
 
-![A picture containing scatter chart Description automatically generated](media/ccf9760733ae572f7c705c3c62e00fa7.png)
+![EU sales list report](media/EUSL-ltu.png)
