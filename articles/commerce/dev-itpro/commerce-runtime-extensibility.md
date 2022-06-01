@@ -4,7 +4,7 @@
 title: Commerce runtime (CRT) extensibility
 description: This topic describes various ways that you can extend the commerce runtime (CRT) and Retail Server.
 author: mugunthanm
-ms.date: 04/27/2022
+ms.date: 06/01/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -218,7 +218,8 @@ Implement the following classes for a new CRT service:
 For serialization to work, the new request type must implement the **\[DataContract\]** and **\[DataMember\]** attributes.
 
 > [!NOTE]
-> We recommend that for the extension code, you use ConfigureAwait(false) when executing the request.
+> - We recommend that for the extension code, you use **ConfigureAwait(false)** when executing the request.
+> - Using Microsoft Distributed Transaction Coordinator (MSDTC) in a CRT database extension is not supported.
 
 
 ### Request class
