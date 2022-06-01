@@ -63,6 +63,32 @@ To copy a site between two e-commerce environments, follow these steps.
 
 After the information has been validated, a notification indicates that a new site copy job has been created. You can monitor the progress of the job in the [right pane of the **Tenant jobs** page](#monitor-the-site-copy-operation). When the copy operation has been successfully completed, the new site appears in the list of sites in site list view.
 
+## Channel mapping (optional)
+
+Source channels and locales can be mapped to destination channels and locales as part of the site copy. If the channel mapping is done as part of the site copy, FRE (site setup) and configuring the channels later in the site settings is not required on the destination site. 
+
+![Site copy view](media/channel_mapping_1.png)
+  
+To map all the channels and locales **as-is**, perform the following steps:
+1.	Make sure that **New site name**, **Source tenant** and **Source site** have been entered
+1.	Click “Add channel mappings”
+1.	In the “Configure site channels and locales” dialog, select the “Source channel” 
+1.	Select the same channel  for the “Destination channel”
+1.	Click “Add locale”
+1.	Select “Source locale”
+1.	Select the same locale from “Destination locale”
+1.	Enter unique URL path that is not in use in the destination environment
+1.	Repeat steps for each locale
+1.	Click “Apply”
+1.	Repeat steps for each source channel
+1.	Press “Close” to close the “Configure site channels and locales” dialog
+1.	Review the configuration and proceed by clicking “Copy site”
+ 
+![Channel mapping complete](media/channel_mapping_2.png)
+
+> [!NOTE]
+> All source channels and locales must be mapped and can be mapped only once.
+
 ## Monitor the site copy operation
 
 To monitor the progress of the site copy operation, follow these steps.
