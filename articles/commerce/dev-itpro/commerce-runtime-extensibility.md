@@ -220,6 +220,9 @@ For serialization to work, the new request type must implement the **\[DataContr
 > [!NOTE]
 > We recommend that for the extension code, you use ConfigureAwait(false) when executing the request.
 
+> [!NOTE]
+> Using Microsoft Distributed Transaction Coordinator (MSDTC) in CRT database extension is not supported.
+
 
 ### Request class
 
