@@ -2904,11 +2904,11 @@
       items: 
       - name: Store Commerce
         items:
-        - name: Store Commerce setup and installation issues
+        - name: Setup and installation issues
           href: troubleshoot/store-commerce-setup-installation.md
-        - name: Store Commerce performance issues
+        - name: Performance issues
           href: troubleshoot/store-commerce-performance.md
-        - name: Store Commerce extensions issues
+        - name: Extension issues
           href: troubleshoot/store-commerce-extensions.md
       - name: Order processing
         items:
