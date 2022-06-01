@@ -39,18 +39,16 @@ A planned maintenance window is typically during the dark hours of the geographi
 
 To view a list of the geographical regions, see [Country/Region hierarchy used by Azure Traffic Manager for geographic traffic routing method](/azure/traffic-manager/traffic-manager-geographic-regions).
 
-Microsoft recommends that you avoid the following activities during the maintenance window:
-
-- Non-retryable batch jobs
-- No servicing actions
 
 ## What is the schedule for operating system maintenance?
 
 | Month and year | Americas (5:00 AM–8:00 AM UTC) | EMEA (2:00 AM–5:00 AM UTC) | APAC (6:00 PM–9:00 PM UTC) |
 |----------|--------------------------|----------------------|----------------------|
-| April 2022 | April 24, 2022 | April 23, 2022 | April 23, 2022 |
 | May 2022 | May 22, 2022 | May 21, 2022 | May 21, 2022 |
 | June 2022 | June 26, 2022 | June 25, 2022 | June 25, 2022 |
+| July 2022 | July 24, 2022 | July 23, 2022 | July 23, 2022 |
+| August 2022 | August 21, 2022 | August 20, 2022 | August 20, 2022 |
+| September 2022 | September 25, 2022 | September 24, 2022 | September 24, 2022 |
 
 > [!NOTE] 
 > Effective July 2022 through September 2022, Microsoft will start to roll out updates to the production environment during any weekend, and outside of normal business hours, to help minimize any potential impact on your environments. All sandbox environment will be updated during any night, outside of business hours.
