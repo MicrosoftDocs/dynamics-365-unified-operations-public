@@ -2,7 +2,7 @@
 title: Migrate to the Commerce SDK
 description: This topic explains how to migrate to the Commerce software development kit (SDK).
 author: mugunthanm
-ms.date: 05/11/2022
+ms.date: 05/31/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -247,7 +247,7 @@ For more information, see [Generate a separate package for Commerce Cloud Scale 
 
 ### Do I have to migrate?
 
-The Commerce SDK provides several benefits that the Retail SDK doesn't provide, such as a simplified development and update experience, and improved performance. The Retail SDK and installers will be deprecated in April 2023, and all extensions must be migrated before then. After October 2023, the Retail SDK will no longer be released or supported.
+The Commerce SDK provides several benefits that the Retail SDK doesn't provide, such as a simplified development and update experience, and improved performance. The Retail SDK and installers will be deprecated in October 2023, and all extensions must be migrated before then. After October 2023, the Retail SDK will no longer be released or supported.
 
 ### When do I have to migrate?
 
