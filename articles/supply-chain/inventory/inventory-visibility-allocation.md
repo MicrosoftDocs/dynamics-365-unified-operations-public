@@ -2,7 +2,7 @@
 title: Inventory Visibility inventory allocation
 description: This topic explains how to set up and use the inventory allocation feature, which lets you set aside dedicated inventory to ensure that you can fulfill your most profitable channels or customers.
 author: yufeihuang
-ms.date: 05/20/2022
+ms.date: 05/27/2022
 ms.topic: article
 ms.search.form:
 audience: Application User
@@ -21,7 +21,7 @@ ms.dyn365.ops.version: 10.0.27
 
 In many cases, manufacturers, retailers, and other supply chain business holders must pre-allocate stock for important sales channels, locations, or customers, or for specific sales events. Inventory allocation is a typical practice in the sales operational planning process, and is done before the actual sales activities occur and a sales order is created.
 
-For example, a bicycle company has limited stock available for a very popular bike. This company does both online and in-store sales. In each sales channel, the company has a few important corporate partners (marketplaces and big retailers) that demand that a specific portion of the bike's available inventory be saved for them. Therefore, the bicycle company must be able to balance stock distribution across channels and also manage the expectations of its VIP partners. The best way to achieve both goals is to use inventory allocation, so that each channel and retailer can receive specific allocated quantities that can be sold to consumers later.
+For example, a bicycle company has limited stock available for a very popular bike. This company does both online and in-store sales. In each sales channel, the company has a few important corporate partners (marketplaces and large retailers) that demand that a specific portion of the bike's available inventory be saved for them. Therefore, the bicycle company must be able to balance stock distribution across channels and also manage the expectations of its VIP partners. The best way to achieve both goals is to use inventory allocation, so that each channel and retailer can receive specific allocated quantities that can be sold to consumers later.
 
 Inventory allocation has two basic business purposes:
 
@@ -30,7 +30,7 @@ Inventory allocation has two basic business purposes:
 
 ## Allocation definition in Inventory Visibility Service
 
-Although the allocation feature in Inventory Visibility service doesn't set aside physical inventory quantities, it does refer to available physical inventory quantity to define its initial *available to allocate* virtual pool quantity. Inventory allocation in Inventory Visibility is a soft allocation. It's done before actual sales transactions occur and doesn't depend on sales orders. For example, you can allocate stock to your most important sales channels or big corporate retailers before any end customers visit the sales channel or retail store to purchase it.
+Although the allocation feature in Inventory Visibility service doesn't set aside physical inventory quantities, it does refer to available physical inventory quantity to define its initial *available to allocate* virtual pool quantity. Inventory allocation in Inventory Visibility is a soft allocation. It's done before actual sales transactions occur and doesn't depend on sales orders. For example, you can allocate stock to your most important sales channels or large corporate retailers before any end customers visit the sales channel or retail store to purchase it.
 
 The difference between inventory allocation and [inventory soft reservation](inventory-visibility-reservations.md) is that soft reservation is usually linked to actual sales transactions (sales order lines). Therefore, if you want to use the allocation and soft reservation features together, we recommend that you do inventory allocation first and then soft reserve against the allocated quantities. For more information, see [Consume as a soft reservation](#consume-to-soft-reserved).
 
@@ -93,7 +93,7 @@ Here are the initial calculated measures:
 
 ### Add other physical measures to the available-to-allocate calculated measure
 
-To use allocation, you must set up the available-to-allocate calculated measure (`@iv`.`@available_to_allocate`). For example, you have `fno` data source and the `onordered` measure, the `pos` data source and the `inbound` measure, and you want to do allocation on the on hand for the sum of `fno.onordered` and `pos.inbound`. In this case, `@iv.@available_to_allocate` should contain `pos.inbound` and `fno.onordered` in the formula. Here is an example:
+To use allocation, you must set up the available-to-allocate calculated measure (`@iv.@available_to_allocate`). For example, you have `fno` data source and the `onordered` measure, the `pos` data source and the `inbound` measure, and you want to do allocation on the on hand for the sum of `fno.onordered` and `pos.inbound`. In this case, `@iv.@available_to_allocate` should contain `pos.inbound` and `fno.onordered` in the formula. Here's an example:
 
 `@iv.@available_to_allocate` = `fno.onordered` + `pos.inbound` – `@iv.@allocated`
 
@@ -105,11 +105,12 @@ You set the group names on the **Inventory Visibility Power App Configuration** 
 
 For example, if you use four group names and set them to \[`channel`, `customerGroup`, `region`, `orderType`\], these names will be valid for allocation-related requests when you call the configuration update API.
 
-### Allcoation using Tips
+### Allocation using Tips
 
-- For every product, the allocation function should use in the same dimension level according to the product index hierarchy you set in the [product index hierarchy configuration](inventory-visibility-configuration.md#index-configuration). For example, index hierarchy is Site, Location, Corlor, Size. If you allocate some quantity for one product in the Site, Location, Color level. The Next time you use to allocate, should also at Site, Location, Color level, if you use Site, Location, Color, Size level or Site, Location level, the data will not be consistent.
-- Allocation group name changing will not impact data saved in the service.
+- For every product, the allocation function should use in the same *dimension level* according to the product index hierarchy you set in the [product index hierarchy configuration](inventory-visibility-configuration.md#index-configuration). For example, suppose your index hierarchy is \[`Site`, `Location`, `Color`, `Size`\]. If you allocate some quantity for one product in the dimension level \[`Site`, `Location`, `Color`\], the next time you want to allocate this product, you should also allocate at the same level, \[`Site`, `Location`, `Color`\]. If you use the level \[`Site`, `Location`, `Color`, `Size`\] or \[`Site`, `Location`\], the data will be inconsistent.
+- Allocation group name changing won't impact data saved in the service.
 - Allocation should happen after the product has the positive on hand quantity.
+- To allocate products from a high *allocation level* group to a subgroup, use the `Reallocate` API. For example, you have an allocation group hierarchy \[`channel`, `customerGroup`, `region`, `orderType`\], and you want to allocate some product from allocation group \[Online, VIP\] to the sub allocation group \[Online, VIP, EU\], use the `Reallocate` API to move the quantity. If you use the `Allocate` API, it will allocate the quantity from the virtual common pool.
 
 ### <a name="using-allocation-api"></a>Using the allocation API
 
@@ -123,7 +124,7 @@ Currently, five allocation APIs are opened:
 
 #### Allocate
 
-Call the `Allocate` API to allocate a product that has specific dimensions. Here is the schema for the request body.
+Call the `Allocate` API to allocate a product that has specific dimensions. Here's the schema for the request body.
 
 ```json
 {
@@ -174,7 +175,7 @@ Use the `Unallocate` API to reverse the `Allocate` operation. Negative quantity 
 
 #### Reallocate
 
-Use the `Reallocate` API to move some allocated quantity to another group combination. Here is the schema for the request body.
+Use the `Reallocate` API to move some allocated quantity to another group combination. Here's the schema for the request body.
 
 ```json
 {
@@ -229,7 +230,7 @@ For example, you can move two bikes that have the dimensions \[site=1, location=
 
 #### Consume
 
-Use the `Consume` API to post the consumption quantity against allocation. For example, you might use this API to move allocated quantity to some real measures. Here is the schema for the request body.
+Use the `Consume` API to post the consumption quantity against allocation. For example, you might use this API to move allocated quantity to some real measures. Here's the schema for the request body.
 
 ```json
 {
@@ -262,7 +263,7 @@ For example, there are eight allocated bikes that have the dimensions \[site=1, 
 
 The eight bikes are allocated from the `pos.inbound` measure.
 
-Now, three bikes are sold, and they are taken from the allocation pool. To register this move, you can make a call that has the following request body.
+Now, three bikes are sold, and they're taken from the allocation pool. To register this move, you can make a call that has the following request body.
 
 ```json
 {
@@ -290,9 +291,9 @@ Now, three bikes are sold, and they are taken from the allocation pool. To regis
 
 After this call, the allocated quantity for the product will be reduced by 3. In addition, Inventory Visibility will generate an on-hand change event where `pos.inbound` = *-3*. Alternatively, you can keep the `pos.inbound` value as it is and just consume the allocated quantity. However, in this case, you must either create another physical measure to keep the consumed quantities or use the predefined measure `@iv.@consumed`.
 
-In this request, notice that the physical measure you use in the comsume reqeust body should use the opposite modifer type(Addition or Subtraction), compared with the modifier type used in the calculated measure. So in this consume body,  `iv.inbound`  has the value `Subtraction`, not `Addition`.
+In this request, notice that the physical measure you use in the consume request body should use the opposite modifier type(Addition or Subtraction), compared with the modifier type used in the calculated measure. So in this consume body,  `iv.inbound`  has the value `Subtraction`, not `Addition`.
 
-`fno` data source can not be used in the consume body as we always claimed that Inventory Visibility can't change any data for the `fno` data source. The data flow is one-way, which means that all quantity changes for the `fno` data source must come from your Supply Chain Management environment.
+The `fno` data source can't be used in the consume body as we always claimed that Inventory Visibility can't change any data for the `fno` data source. The data flow is one-way, which means that all quantity changes for the `fno` data source must come from your Supply Chain Management environment.
 
 #### <a name="consume-to-soft-reserved"></a>Consume as a soft reservation
 
@@ -338,7 +339,7 @@ In this request, notice that `iv.softreserved` has the value `Addition`, not `Su
 
 #### Query
 
-Use the `Query` API to retrieve allocation related infomation for some products. You can use dimension filters and allocation group filters to narrow down the results. The dimensions must match exatcly the one you want to retrieve, for example, \[site=1, location=11\] will have non-related results compared with \[site=1, location=11, color=red\].
+Use the `Query` API to retrieve allocation related information for some products. You can use dimension filters and allocation group filters to narrow down the results. The dimensions must match exactly the one you want to retrieve, for example, \[site=1, location=11\] will have non-related results compared with \[site=1, location=11, color=red\].
 
 ```json
 {
