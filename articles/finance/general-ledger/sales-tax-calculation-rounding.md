@@ -4,7 +4,7 @@
 title: Sales tax calculation and rounding
 description: This topic provides an overview of sales tax calculation and rounding and explains the parameters of the sales tax calculation and rounding setup.
 author: wangchen
-ms.date: 05/31/2022
+ms.date: 06/01/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
