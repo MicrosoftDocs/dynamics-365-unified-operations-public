@@ -2,7 +2,7 @@
 # required metadata
 
 title: Improvements to statement posting functionality
-description: This topic describes improvements that have been made to the statement posting feature.
+description: This article describes improvements that have been made to the statement posting feature.
 author: analpert
 ms.date: 05/18/2022
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.validFrom: 2018-04-30
 
 [!include [banner](includes/banner.md)]
 
-This topic describes the first set of improvements that have been made to the statement posting feature. These improvements are available in Microsoft Dynamics 365 for Finance and Operations 7.3.2.
+This article describes the first set of improvements that have been made to the statement posting feature. These improvements are available in Microsoft Dynamics 365 for Finance and Operations 7.3.2.
 
 ## Activation
 

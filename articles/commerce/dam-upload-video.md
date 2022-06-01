@@ -3,7 +3,7 @@
 # required metadata
 
 title: Upload videos
-description: This topic describes how to upload videos in Microsoft Dynamics 365 Commerce site builder.
+description: This article describes how to upload videos in Microsoft Dynamics 365 Commerce site builder.
 author: psimolin
 ms.date: 06/09/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to upload videos in Microsoft Dynamics 365 Commerce site builder.
+This article describes how to upload videos in Microsoft Dynamics 365 Commerce site builder.
 
 The Commerce site builder Media Library allows you to upload videos. You should always upload the version of a video with the highest bitrate and resolution, because the video will be automatically converted to be suitable for different viewports and their breakpoints.
 

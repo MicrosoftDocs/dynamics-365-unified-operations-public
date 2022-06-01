@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add custom controls to Modern POS (MPOS) transaction pages
-description: This topic explains how to add a new custom control on a transaction page by using the screen layout designer.
+description: This article explains how to add a new custom control on a transaction page by using the screen layout designer.
 author: mugunthanm
 ms.date: 11/22/2017
 ms.topic: article
@@ -30,10 +30,10 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](../../includes/banner.md)]
 
-You can add more information to a transaction page by using custom controls. You can add a custom control to a transaction page by using the screen layout designer. In the designer, you can use a drag-and-drop operation to add the custom control, and then set the location, height, and width of the control. You can implement business logic for the custom control in your own extensions by using the POS extension framework. This topic explains how to add a new custom control that shows the details for the selected line item, the item ID, and the description.
+You can add more information to a transaction page by using custom controls. You can add a custom control to a transaction page by using the screen layout designer. In the designer, you can use a drag-and-drop operation to add the custom control, and then set the location, height, and width of the control. You can implement business logic for the custom control in your own extensions by using the POS extension framework. This article explains how to add a new custom control that shows the details for the selected line item, the item ID, and the description.
 
 > [!NOTE]
-> This topic applies to Dynamics 365 for Finance and Operations, and to Microsoft Dynamics 365 Retail with platform update 8 and Retail App update 4 hotfix.
+> This article applies to Dynamics 365 for Finance and Operations, and to Microsoft Dynamics 365 Retail with platform update 8 and Retail App update 4 hotfix.
 
 ## Add a new custom control
 

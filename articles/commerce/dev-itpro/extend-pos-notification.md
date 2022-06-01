@@ -2,7 +2,7 @@
 # required metadata
 
 title: Show custom notifications in the POS
-description: This topic explains how to add custom notifications in the point of sale (POS).
+description: This article explains how to add custom notifications in the point of sale (POS).
 author: mugunthanm
 ms.date: 09/17/2019
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to add custom notifications in the point of sale (POS). This topic applies to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 and Dynamics 365 for Retail 7.3, and later versions that have the latest binary fix.
+This article explains how to add custom notifications in the point of sale (POS). This article applies to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 and Dynamics 365 for Retail 7.3, and later versions that have the latest binary fix.
 
 You can extend the POS notification framework for these scenarios:
 

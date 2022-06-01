@@ -1,6 +1,6 @@
 ---
 title: Integrate the POS with a new hardware device and generate the extension installer
-description: This topic explains how to integrate the point of sale (POS) with a new hardware device and generate the extension installer.
+description: This article explains how to integrate the point of sale (POS) with a new hardware device and generate the extension installer.
 author: mugunthanm
 ms.date: 07/27/2020
 ms.topic: article
@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.3.0, Retail July 2017 update, AX 10.0.11
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to integrate the point of sale (POS) with a new hardware device and generate the extension installer. 
+This article explains how to integrate the point of sale (POS) with a new hardware device and generate the extension installer. 
 
 ## Hardware Station overview
 

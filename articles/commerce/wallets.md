@@ -2,7 +2,7 @@
 # required metadata
 
 title: Wallet payment support
-description: This topic provides an overview of wallet payment support for Microsoft Dynamics 365 Commerce.
+description: This article provides an overview of wallet payment support for Microsoft Dynamics 365 Commerce.
 author: BrianShook
 ms.date: 03/11/2022
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of wallet payment support for Microsoft Dynamics 365 Commerce.  
+This article provides an overview of wallet payment support for Microsoft Dynamics 365 Commerce.  
 
 ## Key terms
 

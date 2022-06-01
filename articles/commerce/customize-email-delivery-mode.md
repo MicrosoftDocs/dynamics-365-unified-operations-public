@@ -2,7 +2,7 @@
 # required metadata
 
 title: Customize transactional emails by mode of delivery
-description: This topic describes how to set up custom email templates for specific notification types and modes of delivery in Microsoft Dynamics 365 Commerce.
+description: This article describes how to set up custom email templates for specific notification types and modes of delivery in Microsoft Dynamics 365 Commerce.
 author: stuharg
 ms.date: 11/16/2020
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.16
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to set up custom email templates for specific notification types and modes of delivery in Microsoft Dynamics 365 Commerce.
+This article describes how to set up custom email templates for specific notification types and modes of delivery in Microsoft Dynamics 365 Commerce.
 
 Transactional emails can now be customized for a combination of a notification type (for example, **Order created**, **Order packed**, or **Order invoiced**) and a mode of delivery (for example, overnight, in-store pickup, or curbside pickup). Custom transactional emails let retailers provide their customers order with fulfillment experiences that are tailored to the order's mode of delivery. For example, the "order packed" event can be customized so that it provides curbside pickup instructions for customers who choose curbside pickup. Alternatively, it can provide shipping carrier and delivery information for customers who choose to have their order shipped.
 

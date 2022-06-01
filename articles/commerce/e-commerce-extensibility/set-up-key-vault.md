@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up Azure Key Vault for secure key management
-description: This topic describes how to set up Azure Key Vault to provide secure key management in Dynamics 365 Commerce.  
+description: This article describes how to set up Azure Key Vault to provide secure key management in Dynamics 365 Commerce.  
 author: samjarawan
 ms.date: 09/17/2021
 ms.topic: article
@@ -29,11 +29,11 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to set up Azure Key Vault to provide secure key management in Dynamics 365 Commerce.
+This article describes how to set up Azure Key Vault to provide secure key management in Dynamics 365 Commerce.
 
 Some Dynamics 365 Commerce e-commerce development scenarios require business-sensitive data such as credentials or access tokens that must be stored securely. [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) provides the capability to import, store, and manage cryptographic keys and certificates that can be securely accessed as needed. 
 
-This topic shows how to do the following: 
+This article shows how to do the following: 
 
 - Create a Key Vault to securely store sensitive information.
 - Configure your e-commerce site to securely communicate with Retail Server.

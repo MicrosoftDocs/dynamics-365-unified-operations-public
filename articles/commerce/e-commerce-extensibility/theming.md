@@ -2,7 +2,7 @@
 # required metadata
 
 title: Theming overview
-description: This topic presents an overview of online site theming in Microsoft Dynamics 365 Commerce.
+description: This article presents an overview of online site theming in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 11/22/2021
 ms.topic: overview
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic presents an overview of online site theming in Microsoft Dynamics 365 Commerce.
+This article presents an overview of online site theming in Microsoft Dynamics 365 Commerce.
 
 A Dynamics 365 Commerce theme (also known as a *theme pack*) defines the look and feel of the site brand and modules that make up an e-commerce page for merchants and their customers. Only one theme pack can be set for each e-commerce site.
 

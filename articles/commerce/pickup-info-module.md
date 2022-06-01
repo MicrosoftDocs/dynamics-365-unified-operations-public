@@ -2,7 +2,7 @@
 # required metadata
 
 title: Pickup information module
-description: This topic covers the pickup information module and describes how to add it to checkout pages in Microsoft Dynamics 365 Commerce.
+description: This article covers the pickup information module and describes how to add it to checkout pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 11/06/2020
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.15
 
 [!include [banner](includes/banner.md)]
 
-This topic covers the pickup information module and describes how to add it to checkout pages in Microsoft Dynamics 365 Commerce.
+This article covers the pickup information module and describes how to add it to checkout pages in Microsoft Dynamics 365 Commerce.
 
 The pickup information module can be used in a checkout module to show order pickup information. Customers can view available pickup dates and time slots, and then select a suitable time to pick up their order. For example, a customer can choose to pick up an order at 3 PM on March 21 from the San Francisco store.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Migrate from legacy Commerce functionality for France
-description: This topic explains how to migrate from the legacy digital signing solution in the Microsoft Dynamics 365 Commerce localization for France to the solution that is based on the Commerce fiscal integration framework.
+description: This article explains how to migrate from the legacy digital signing solution in the Microsoft Dynamics 365 Commerce localization for France to the solution that is based on the Commerce fiscal integration framework.
 author: EvgenyPopovMBS
 manager: annbe
 ms.date: 08/10/2021
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to migrate from the [legacy digital signing solution](emea-fra-deployment.md) in the Microsoft Dynamics 365 Commerce localization for France to the solution that is based on the [Commerce fiscal integration framework](emea-fra-fi-deployment.md).
+This article explains how to migrate from the [legacy digital signing solution](emea-fra-deployment.md) in the Microsoft Dynamics 365 Commerce localization for France to the solution that is based on the [Commerce fiscal integration framework](emea-fra-fi-deployment.md).
 
 If you're using the [legacy digital signing solution for France](emea-fra-deployment.md), you must migrate to the [current Commerce fiscal integration solution](./emea-fra-fi-deployment.md) to uptake the changes and receive timely updates for France-specific features in the future. No major changes are required in the extension logic that you created. However, because this update is a major update, some of your customizations will stop working unless changes are made on your side. Therefore, you should plan, prepare for, and complete the uptake for your environment.
 
@@ -53,7 +53,7 @@ To complete the migration process, follow these steps.
 1. Restart the POS.
 
 > [!NOTE]
-> Depending on the type of environment, you can find more technical details about the migration process in either the [Migration in a development environment](#migration-in-a-development-environment) section of this topic or the [Migration in a production environment](#migration-in-a-production-environment) section.
+> Depending on the type of environment, you can find more technical details about the migration process in either the [Migration in a development environment](#migration-in-a-development-environment) section of this article or the [Migration in a production environment](#migration-in-a-production-environment) section.
 
 ## Configure fiscal integration
 

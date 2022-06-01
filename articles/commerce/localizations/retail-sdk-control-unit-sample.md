@@ -2,7 +2,7 @@
 # required metadata
 
 title: Sample for POS integration with control units for Sweden (legacy)
-description: This topic is the building and installation guide for the sample for control unit integration for Sweden. 
+description: This article is the building and installation guide for the sample for control unit integration for Sweden. 
 author: EvgenyPopovMBS
 ms.date: 12/20/2019
 ms.topic: article
@@ -35,12 +35,12 @@ This sample shows how to create Dynamics 365 Commerce extensions to integrate Re
 
 This sample is a part of the Retail software development kit (SDK). For information about how to install and use the Retail SDK, see the [Retail software development kit (SDK) architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
-This sample consists of extensions for the Hardware station, commerce runtime (CRT), and point of sale (POS). To run this sample, you must modify and build the Hardware station, CRT, and POS projects. We recommend that use you an unmodified Retail SDK to make the changes that are described in this topic. We also recommend that you use a source control system, such as Microsoft Visual Studio Online (VSO), where no files have been changed yet.
+This sample consists of extensions for the Hardware station, commerce runtime (CRT), and point of sale (POS). To run this sample, you must modify and build the Hardware station, CRT, and POS projects. We recommend that use you an unmodified Retail SDK to make the changes that are described in this article. We also recommend that you use a source control system, such as Microsoft Visual Studio Online (VSO), where no files have been changed yet.
 
 > [!NOTE]
-> Some steps in the procedures in this topic differ, depending on the version of Commerce that you're using. For more information, see [What's new or changed in Dynamics 365 Retail](../get-started/whats-new.md).
+> Some steps in the procedures in this article differ, depending on the version of Commerce that you're using. For more information, see [What's new or changed in Dynamics 365 Retail](../get-started/whats-new.md).
 >
-> In Commerce 10.0.8 and above, Retail Server is known as Commerce Scale Unit. Because this topic applies to multiple previous versions of the app, *Retail Server* is used throughout the topic.
+> In Commerce 10.0.8 and above, Retail Server is known as Commerce Scale Unit. Because this article applies to multiple previous versions of the app, *Retail Server* is used throughout the article.
 
 
 ## Overview of integration with control units

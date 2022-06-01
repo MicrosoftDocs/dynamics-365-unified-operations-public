@@ -2,7 +2,7 @@
 # required metadata
 
 title: Petty cash management for Commerce for Eastern Europe
-description: This topic describes how to set up and use cash management features in Commerce for Eastern Europe.
+description: This article describes how to set up and use cash management features in Commerce for Eastern Europe.
 author: epopov
 ms.date: 10/03/2018
 ms.topic: article

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Save, preview, and publish a page
-description: This topic describes how to save, preview, and publish a page in Microsoft Dynamics 365 Commerce.
+description: This article describes how to save, preview, and publish a page in Microsoft Dynamics 365 Commerce.
 author: psimolin
 ms.date: 04/14/2020
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to save, preview, and publish a page in Microsoft Dynamics 365 Commerce.
+This article describes how to save, preview, and publish a page in Microsoft Dynamics 365 Commerce.
 
 ## Save a page
 

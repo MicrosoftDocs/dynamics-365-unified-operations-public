@@ -2,7 +2,7 @@
 # required metadata
 
 title: Preview features in Dynamics 365 Retail version 10.0.7
-description: This topic describes features that are new and changed in Dynamics 365 Retail. 
+description: This article describes features that are new and changed in Dynamics 365 Retail. 
 author: josaw1
 ms.date: 01/09/2020
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.7
 [!include [banner](../../includes/banner.md)]
 
 
-This topic describes features that are new or changed in Microsoft Dynamics 365 Retail in 10.0.7. This version has a build number of 10.0.283, and is available as follows:
+This article describes features that are new or changed in Microsoft Dynamics 365 Retail in 10.0.7. This version has a build number of 10.0.283, and is available as follows:
 
 - Preview release is in October 2019.
 - General availability (self-update) is in November 2019.
@@ -69,12 +69,12 @@ Check out the [Dynamics 365: 2019 release wave 2 plan](/dynamics365-release-plan
 
 ### Removed and deprecated features
 
-The [Removed or deprecated features](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
+The [Removed or deprecated features](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) article describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
-Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
+Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) article 12 months prior to the removal.
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
 

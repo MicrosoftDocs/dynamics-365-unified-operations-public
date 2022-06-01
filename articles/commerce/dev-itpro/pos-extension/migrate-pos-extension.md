@@ -1,6 +1,6 @@
 ---
 title: Migrate a POS extension to the independent packaging model
-description: This topic explains how to migrate Point of Sale (POS) extensions to the independent packaging model.
+description: This article explains how to migrate Point of Sale (POS) extensions to the independent packaging model.
 author: mugunthanm
 ms.date: 04/13/2021
 ms.topic: article
@@ -16,11 +16,11 @@ ms.dyn365.ops.version: AX 10.0.18
 
 [!include [banner](../../../includes/banner.md)]
 
-This topic applies to version 10.0.18 and later of the Retail software development kit (SDK).
+This article applies to version 10.0.18 and later of the Retail software development kit (SDK).
 
 The independent packaging model in the Retail SDK provides an updated and improved developer experience for the development of Microsoft Dynamics 365 Commerce extensions. The independent packaging model creates more separation between the Retail SDK and the extension that is being developed. The Retail SDK consists of a set of NuGet packages. These packages contain artifacts that enable Commerce development. Because of the scope of changes in the independent packaging model, a few changes are required. Conversion of customizations so that they use the independent packaging model requires a code migration that takes slightly more work than a standard version update.
 
-This topic explains the benefits and changes of the independent packaging model. It also provides a high-level set of steps for converting existing Point of Sale (POS) extensions to the independent packaging model.
+This article explains the benefits and changes of the independent packaging model. It also provides a high-level set of steps for converting existing Point of Sale (POS) extensions to the independent packaging model.
 
 ## Benefits of the independent packaging model in the Retail SDK
 
@@ -91,7 +91,7 @@ To migrate existing POS extensions from the **Pos.Extensions** project in the Re
     3. Do another global search for **PosUISdk** to confirm that all uses of POS UI SDK controls have been replaced.
 
 5. **Required only if you're using Knockout.js:** Update all references to **Knockout.js** so that they use a copy of the library that is included in your extension package instead of the global instance that is used in POS. For more information, see [Use Knockout.js in POS extensions](knockout-pos-extension.md).
-6. Convert all references to **ExtensionViewControllerBase** to **CustomViewControllerBase**. For more information, see the [Changes when you create a custom view](#custom-view) section earlier in this topic.
+6. Convert all references to **ExtensionViewControllerBase** to **CustomViewControllerBase**. For more information, see the [Changes when you create a custom view](#custom-view) section earlier in this article.
 7. Build your POS extension project, and verify that it's successfully built.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
