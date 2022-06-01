@@ -188,14 +188,13 @@ Only the common system fonts of the Window operating system are used to convert 
 
 ### Resources
 
-Prior to Finance version 10.0.29, PDF conversions could only performed beyond the current Finance instance. For a PDF conversion, a generated file is sent out of Finance to the conversion service that then returns a converted document. However, in version **10.0.29 and later**, in addition to the **Convert Electronic Reporting outbound documents from Microsoft Office formats to PDF** feature, you can enable the **Utilize application resources to perform CBD documents conversion from Word to PDF format** feature to convert generated Word documents to PDF format locally by using application server resources in the current Finance instance. 
+Before Finance version 10.0.29, PDF conversion could be done only outside the current Finance instance. A generated file was sent out of Finance to the conversion service, and that service then returned the converted document. However, in version **10.0.29 and later**, in addition to the **Convert Electronic Reporting outbound documents from Microsoft Office formats to PDF** feature, you can enable the **Utilize application resources to perform CBD documents conversion from Word to PDF format** feature. This feature lets you convert generated Word documents to PDF format locally by using application server resources in the current Finance instance. 
 
-> [!TIP]
-> Take into account the following advantages of the PDF conversion when the **Utilize application resources to perform CBD documents conversion from Word to PDF format** feature is enabled:
->
-> - The PDF document that is produced is not [limited](#limitations) to a maximum number of pages.
-> - The Word document that is converted can contain a [large number of content controls](https://fix.lcs.dynamics.com/Issue/Details?bugId=647877&dbType=3).
-> - Internet connectivity is not required in on-premises deployments.
+Here are the advantages of local PDF conversion when the **Utilize application resources to perform CBD documents conversion from Word to PDF format** feature is enabled:
+
+- The PDF document that is produced isn't [limited](#limitations) to a maximum number of pages.
+- The Word document that is converted can contain a [large number of content controls](https://fix.lcs.dynamics.com/Issue/Details?bugId=647877&dbType=3).
+- Internet connectivity isn't required in on-premises deployments.
 
 ### Use the PDF conversion option
 
@@ -246,7 +245,7 @@ On the **General** FastTab, in the **Send folder as** field, select one of the f
 - **Separate files** – Deliver every file of a generated zip file as an individual file.
 
     > [!NOTE]
-    > When you select **Separate files**, the generated output is collected in memory in a zipped state. Therefore, the maximum [file size limit](er-compress-outbound-files.md) is applied for zipped output when the real file size might exceed this limit. We recommend that you select this value when you expect the size of the generated output too be quite large.
+    > When you select **Separate files**, the generated output is collected in memory in a zipped state. Therefore, the maximum [file size limit](er-compress-outbound-files.md) is applied for zipped output when the real file size might exceed this limit. We recommend that you select this value when you expect the size of the generated output to be quite large.
 
 [![Configuring a destination for a Folder format component.](./media/er_destinations-set-unfolding-option.png)](./media/er_destinations-set-unfolding-option.png)
 
