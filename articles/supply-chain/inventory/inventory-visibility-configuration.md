@@ -316,6 +316,13 @@ To set up your product hierarchy index, follow these steps.
     - **Set number** – Dimensions that belong to the same group (index) will be grouped together, and the same set number will be allocated to them.
     - **Hierarchy** – The hierarchy is used to define the supported dimension combinations that can be queried in a dimension group (index). For example, if you set up a dimension group that has a hierarchy sequence of *Style*, *Color*, and *Size*, the system supports the result of three query groups. The first group is style only. The second group is a combination of style and color. And the third group is a combination of style, color, and size. The other combinations aren't supported.
 
+> [!TIP]
+> Here are a few tips to keep in mind when setting up your index hierarchy:
+>
+> - Base dimensions that are defined in the partition configuration shouldn't be defined in index configurations. If a base dimension is defined again in the index configuration, you won't be able to query by this index.
+> - If you only need to query inventory that is aggregated by all dimension combinations, then set up a single index that contains the base dimension `Empty`.
+> - You must have at least one index hierarchy (for example, containing the base dimension `Empty`), otherwise queries will fail with the error "No index hierarchy has been set."
+
 ### Example
 
 This section provides an example that shows how the hierarchy works.
@@ -367,13 +374,6 @@ The index lets you query the on-hand inventory in the following ways:
     - T-shirt, Red, Small, Wide, 5
     - T-shirt, Red, Small, Regular, 6
     - T-shirt, Red, Large, Regular, 7
-
-> [!NOTE]
-> Base dimensions that are defined in the partition configuration should not be defined in index configurations.
-> 
-> If you must query only inventory that is aggregated by all dimension combinations, you can set up a single index that contains the base dimension `Empty`.
->
-> You must have at least one index hierarchy (for example, containing the base dimension `Empty`), otherwise the query will fail with the error "No index hierarchy has been set."
 
 ## <a name="reservation-configuration"></a>Reservation configuration (optional)
 
