@@ -43,7 +43,7 @@ Before you can start to use the DTS Visual Studio extension, you must authentica
 
 The DTS commands can be accessed in two ways:
 
-- Select **Tools** on the main toolbar, and then select a DTS command on the menu. Four DTS commands are available: **Translate with DTS**, **Regenerate with DTS**, **Download Translation Requests**, and **Log out of DTS**.
+- Select **Tools** on the main toolbar, then select Dynamics 365 Translation Service, and then select a DTS command on the menu. Five DTS commands are available: **Translate**, **Regenerate**, **Download translation result**, **Align**, and **Log out**.
 
     ![Tools menu in the Visual Studio IDE.](media/dts-vs-tools-menu.PNG)
 
@@ -61,12 +61,13 @@ The **Label file** wizard appears. Complete this wizard to create new label file
 
 ![Label file wizard.](media/dts-vs-label-wizard.PNG)
 
-You're now ready to create a new translation request. On the **Tools** menu, select **Translate with DTS**. Alternatively, select and hold (or right-click) a resource file in Solution Explorer, and then select **Translate with DTS**. A dialog box appears, where you can configure the new translation request.
+You're now ready to create a new translation request. On the **Tools** menu, select **Dynamics 365 Translation Services**, and then select **Translate**. A dialog box appears, where you can configure the new translation request.
 
-The following table describes the fields in the **Translate with DTS** dialog box.
+The following table describes the fields in the **Translate with Dynamics 365 Translation Service** dialog box.
 
 | Field              | Required | Description |
 |--------------------|----------|-------------|
+| Region             | Yes | Select the region. |
 | Request name       | Yes | Enter a name for the request. |
 | Product            | Yes | Select the product type. |
 | Project            | Yes | Select the project that contains the resource files. |
@@ -78,19 +79,27 @@ The following table describes the fields in the **Translate with DTS** dialog bo
 
 ![Translate with DTS dialog box.](media/dts-vs-translate.png)
 
-When you've finished configuring the translation request, select **Submit** to send it to DTS. After a short time, the **Output** window will show the status of the request. When the request is completed, output files (translation memory files and translated resource files) are downloaded. These output files are put in the appropriate language subfolder for the module.
+When you've finished configuring the translation request, select **Submit** to send it to DTS. You will receive a confirmation window stating next steps.
+
+![Confirmation window for the DTS extension.](media/dts-vs-confirmation.PNG)
+
+After a short time, the **Output** window will show the status of the request. 
 
 ![Output window for the DTS extension.](media/dts-vs-outputwindow.PNG)
 
-If Visual Studio is closed before the output files are downloaded, you can manually download the files by selecting **Download Translation Request Results** on the **Tools** menu.
+When the request is completed, you will see a Download Translation window stating that the output files (translation memory files and translated resource files) have been downloaded. These output files are put in the appropriate language subfolder for the module.
+
+![Download Translations window for the DTS extension.](media/dts-vs-downloadtranslations.PNG)
+
+If Visual Studio is closed before the output files are downloaded, you can manually download the files by selecting **Download translation results** on the **Tools** menu.
 
 ### Regeneration workflow
 
 We recommend that you review and edit the translations that DTS provides. The XML Localization Interchange File Format (XLIFF) files will be in the same directory as their corresponding translated resource files. For more information about how to edit XLIFF files, see [Translation memory files](use-translation-service-tm.md).
 
-When you've finished reviewing and editing the XLIFF translation files, you can regenerate the translated native format files. On the **Tools** menu, select **Regenerate with DTS**. Alternatively, select and hold (or right-click) a resource file in Solution Explorer, and then select **Regenerate with DTS**. A dialog box appears, where you can configure the regeneration request.
+When you've finished reviewing and editing the XLIFF translation files, you can regenerate the translated native format files. On the **Tools** menu, select **Dynamics 365 Translation Services**, and then select **Regenerate**. A dialog box appears, where you can configure the regeneration request.
 
-The following table describes the fields in the **Regenerate with DTS** dialog box.
+The following table describes the fields in the **Regenerate** dialog box.
 
 | Input             | Required | Description |
 |-------------------|----------|-------------|
@@ -99,4 +108,30 @@ The following table describes the fields in the **Regenerate with DTS** dialog b
 
 ![Regenerate with DTS dialog box.](media/dts-vs-regenerate.PNG)
 
-When you've finished configuring the regeneration request, select **Submit** to send it to DTS. The **Output** window will show the status of the request. When the request is completed, output files (translation memory files and target translated files) are downloaded.
+When you've finished configuring the regeneration request, select **Submit** to send it to DTS. The **Output** window will show the status of the request. When the request is completed, you will see a Download Translation window stating that output files (translation memory files and target translated files) have been downloaded.
+
+![Download Translations window for the DTS extension.](media/dts-vs-downloadtranslations.PNG)
+
+### Creating a translation memory (alignment)
+
+If you have files that were previously translated, you can recycle the translated files for a newer version of the source files by creating a translation memory (TM) that uses XLIFF.
+
+On the **Tools** menu, select **Dynamics 365 Translation Services**, and then select **Align**. A dialog box appears, where you can configure the alignment request.
+
+| Field              | Required | Description |
+|--------------------|----------|-------------|
+| Region             | Yes | Select the region. |
+| Source Language    | Yes | Select the language of the source files and upload the file or folder. |
+| Target Language    | Yes | Select the language of the target files and upload the file or folder. |
+| Output Path        | Yes | Select the output path. |
+
+![Align with DTS dialog box.](media/dts-vs-alignment.PNG)
+
+When you've finished configuring the alignment request, select **Submit** to send it to DTS. You will be notified that the process has started.
+
+![Align with DTS dialog box.](media/dts-vs-alignmentinprocess.PNG)
+
+
+The **Output** window will show the status of the request. When the request is completed, you will see a window stating that output files are available.
+
+![Align with DTS dialog box.](media/dts-vs-alignedfiles.PNG)
