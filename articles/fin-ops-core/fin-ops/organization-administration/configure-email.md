@@ -314,24 +314,55 @@ Consider signing in to the affected (or all) user mailboxes to verify that they 
 
 ### Specific Exchange email issues
 
-#### Issue: 401 unauthorized error in combination with using Exchange email 
-
-**Issue**: Users are seeing a 401 unauthorized error when using Exchange for sending email. 
+#### Issue: (401) Unauthorized or (403) Forbidden error when sending email via Exchange 
 
 **Explanation**: This issue may indicate an invalid or improperly set up mailbox in Office 365. To get more information about the specific error, do the following:
 
+**Fix**: To resolve this issue, make sure that the specified user exists in Office 365 with appropriate permissions. To find the impacted user(s), do the following: 
+
 1.  Navigate to the **Email history** page.
 2.  Add a filter to **Email status** field for **Failed** emails. 
-3.  Note the value in the **Email sender** field, as that is the user that Exchange is indicating isn't a valid user with a mailbox in Office 365. 
-4.  For the appropriate emails, examine the **Last email failure message** field in the **Failure details** section.
+3.  Note the value in the **Email sender** field, as that is the user that Exchange is indicating isn't a valid or properly permissed user in Office 365. 
 
-**Fix**: To resolve this issue, make sure that the specified user has a valid mailbox in Office 365 and that they are enabled for sign in.
+#### Issue: (404) "Not found" error when sending email via Exchange 
+
+**Explanation**: This issues indicates that no mailbox exists for the user account in Exchange.
+
+**Fix**: To resolve this issue, make sure that the specified user exists in Office 365 with appropriate permissions or use alternate user accounts with valid Exchange mailboxes. To find the impacted user(s), do the following: 
+
+1.  Navigate to the **Email history** page.
+2.  Add a filter to **Email status** field for **Failed** emails. 
+3.  Note the value in the **Email sender** field, as that is the user that doesn't have a mailbox in Exchange.
 
 ### Specific SMTP email issues 
 
 If you continue to experience issues when email is sent via SMTP, you may be running into one of the specific errors below. If not, consider entering the SMTP account information in a tool such as [SMTPer.net](https://www.smtper.net/) to verify that the SMTP server and account are valid and working correctly.
 
-### Issue: SMTP emails fail to send with "If your SMTP server doesn't support authentication, please clear the SMTP user name and password"
+#### Issue: SMTP emails fail to send with "Recipient addresses in single label domains not accepted"
+
+**Explanation:** Your email failed to send because a recipient is using a single label domain, which is not supported by O365. Single label domains are DNS names that don't contain a suffix, such as .com, .corp, .net, or .org. For example, contoso would be an SLD. However, contoso.com, contoso.net, or contoso.local would not be an SLD.
+
+**Fix:** Specify alternate addresses for email recipients that are not single label domains.  
+
+#### Issue: SMTP emails fail to send with "Mailbox full"
+
+**Explanation:** An email failed to send because at least one recipient's mailbox is full. See [Error (554 5.2.2 mailbox full) when sending email to mail-enabled public folders in Office 365](https://docs.microsoft.com/en-us/exchange/troubleshoot/email-delivery/cannot-send-mail-mepf) for more details. 
+
+**Fix:** Use an alternate address for the recipient or contact the recipient using alternate means before trying again.  
+
+#### Issue: SMTP emails fail to send with "Authentication unsuccessful, the request did not meet the criteria to be authenticated successfully"
+
+**Explanation:** An email failed to send because the SMTP user account requires additional criteria to be authenticated successfully. This may be because multifactor authentication is configured, which is not currently supported within the Finance and Operations apps. 
+
+**Fix:** Adjust the user account configuration appropriately in Office 365 before trying again. See [Fix issues with printers, scanners, and LOB applications that send email using Microsoft 365 or Office 365](https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/fix-issues-with-printers-scanners-and-lob-applications-that-send-email-using-off#error-authentication-unsuccessful) for more details. 
+
+#### Issue: SMTP emails fail to send with "Authentication unsuccessful, SmtpClientAuthentication is disabled for the Mailbox"
+
+**Explanation:** An email failed to send because SMTP client authentication is disabled for the SMTP user account. 
+
+**Fix:** Enable SMTP client authentication in Office 365 for the user account before trying again. See [Enable or disable authenticated client SMTP submission](https://aka.ms/smtp_auth_disabled) for more details.
+
+#### Issue: SMTP emails fail to send with "If your SMTP server doesn't support authentication, please clear the SMTP user name and password"
 
 **Issue:** After moving to version 10.0.19/Platform update 39 or later, SMTP emails may fail to send and are accompanied by the following message: "If your SMTP server doesn't support authentication, please clear the SMTP user name and password"
 
@@ -339,7 +370,7 @@ If you continue to experience issues when email is sent via SMTP, you may be run
 
 **Fix:** The user needs to go to the **Email parameters** page (under **System administration > Setup > Email**), and clear the **User name** and **Password** fields on the **SMTP settings** tab page.
 
-### Issue: SMTP emails fail to send with "5.7.57 SMTP" error or an indication that you're not authenticated or authentication is required
+#### Issue: SMTP emails fail to send with "5.7.57 SMTP" error or an indication that you're not authenticated or authentication is required
 
 **Issue:** Emails sent via SMTP fail to send for one of the following reasons: 
 -  An "5.5.57 SMTP" exception
@@ -350,7 +381,7 @@ If you continue to experience issues when email is sent via SMTP, you may be run
 
 **Fix:** Verify that the SMTP user credentials are correct.  
 
-### Issue: SMTP emails fail to send with "Microsoft.Dynamics.Ax.Xpp.Security.CryptoEncryptionException: Encryption error occurred with exception"
+#### Issue: SMTP emails fail to send with "Microsoft.Dynamics.Ax.Xpp.Security.CryptoEncryptionException: Encryption error occurred with exception"
 
 **Issue:** Emails sent via SMTP fail to send and trigger the following exception: "Microsoft.Dynamics.Ax.Xpp.Security.CryptoEncryptionException: Encryption error occurred with exception"
 
@@ -358,7 +389,7 @@ If you continue to experience issues when email is sent via SMTP, you may be run
 
 **Fix:** Clear and reenter the SMTP password on the [SMTP settings tab](#smtp-settings-tab) on the **Email parameters** page. 
 
-### Issue: SMTP emails fail to send with "Client does not have permissions to send as this sender"
+#### Issue: SMTP emails fail to send with "Client does not have permissions to send as this sender"
 
 **Issue:** When sending email using SMTP, some emails may fail to send with the following error: "Client does not have permissions to send as this sender."  
 
