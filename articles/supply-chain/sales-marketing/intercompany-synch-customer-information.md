@@ -1,6 +1,6 @@
 ---
 title: Synchronize intercompany customer information
-description: This topic explains synchronization of customer information for intercompany orders
+description: This article explains synchronization of customer information for intercompany orders
 author: Henrikan
 ms.date: 09/01/2021
 ms.topic: article

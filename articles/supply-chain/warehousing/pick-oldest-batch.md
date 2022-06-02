@@ -2,7 +2,7 @@
 # required metadata
 
 title: Pick oldest batch on a mobile device
-description: This topic describes how you set up and apply the options to pick the oldest batch from a mobile device.
+description: This article describes how you set up and apply the options to pick the oldest batch from a mobile device.
 author: Mirzaab
 ms.date: 05/26/2017
 ms.topic: article

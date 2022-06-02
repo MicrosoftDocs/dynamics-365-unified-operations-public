@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create service agreement groups  
-description: This topic provides a procedure that shows how to create service agreement groups.
+description: This article provides a procedure that shows how to create service agreement groups.
 author: sorenva
 ms.date: 02/19/2018
 ms.topic: article
@@ -42,7 +42,7 @@ Service agreement groups are useful for sorting and filtering service agreements
 > [!NOTE]
 > If a service agreement group is defined in the **Service agreement group** field of the **Service management parameters** page, the program suggests this group for all new service agreements that you create.
 
-## Related topics
+## Related articles
 
 [Service agreement overview](service-agreement-groups.md)
 

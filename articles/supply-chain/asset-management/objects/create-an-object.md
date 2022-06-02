@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create an asset
-description: This topic describes how to create an asset in Asset Management.
+description: This article describes how to create an asset in Asset Management.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
  
 
-This topic describes how to create an asset in Asset Management.
+This article describes how to create an asset in Asset Management.
 
 1. Click **Asset management** > **Common** > **assets** > **All assets** or **Active assets**.
 2. Click the **New** button.

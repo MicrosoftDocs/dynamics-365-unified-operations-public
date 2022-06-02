@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manual update of asset counters
-description: This topic describes manual update of asset counters in Asset Management.
+description: This article describes manual update of asset counters in Asset Management.
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article

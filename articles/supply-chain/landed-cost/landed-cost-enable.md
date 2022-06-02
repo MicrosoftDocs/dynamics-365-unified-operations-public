@@ -1,6 +1,6 @@
 ---
 title: Turn on the Landed cost module for your system
-description: This topic describes how to turn on the Landed cost module for your system.
+description: This article describes how to turn on the Landed cost module for your system.
 author: Weijiesa
 ms.date: 09/24/2021
 ms.topic: article

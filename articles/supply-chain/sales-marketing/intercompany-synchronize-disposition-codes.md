@@ -1,6 +1,6 @@
 ---
 title: Synchronize disposition codes
-description: This topic explains synchronization of disposition codes for intercompany commerce
+description: This article explains synchronization of disposition codes for intercompany commerce
 author: Henrikan
 ms.date: 09/01/2021
 ms.topic: article

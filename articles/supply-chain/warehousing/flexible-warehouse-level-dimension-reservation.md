@@ -2,7 +2,7 @@
 # required metadata
 
 title: Flexible warehouse-level dimension reservation policy
-description: This topic describes the inventory reservation policy that lets businesses that sell batch-tracked products and run their logistics as WMS-enabled operations reserve specific batches for customer sales orders, even though the reservation hierarchy that is associated with the products disallows reservation of specific batches.
+description: This article describes the inventory reservation policy that lets businesses that sell batch-tracked products and run their logistics as WMS-enabled operations reserve specific batches for customer sales orders, even though the reservation hierarchy that is associated with the products disallows reservation of specific batches.
 author: perlynne
 ms.date: 07/31/2020
 ms.topic: article
@@ -35,7 +35,7 @@ When an inventory reservation hierarchy of the *Batch-below\[location\]* type is
 
 In a similar way, specific license plates can't be reserved for products on sales orders when those products are associated with the default reservation hierarchy.
 
-This topic describes the inventory reservation policy that lets these businesses reserve specific batches or license plates, even when the products are associated with a *Batch-below\[location\]* reservation hierarchy.
+This article describes the inventory reservation policy that lets these businesses reserve specific batches or license plates, even when the products are associated with a *Batch-below\[location\]* reservation hierarchy.
 
 ## Inventory reservation hierarchy
 

@@ -39,7 +39,7 @@ When a dimension is mandatory, a dimension value must be entered on all inventor
 
 When the warehouse is not set to mandatory, it may not be known from the initial demand. The planning engine must determine which warehouse to use based on the settings that are defined for the item, individual warehouses, and the details of the order line.
 
-The following topics describe how the planning engine works, when different settings are defined, to determine the warehouse to use.
+The following articles describe how the planning engine works, when different settings are defined, to determine the warehouse to use.
 
 [Master planning for site and warehouse coverage, warehouse mandatory](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
 

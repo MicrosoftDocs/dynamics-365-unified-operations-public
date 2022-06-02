@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Rating profiles
-description: This topic describes how to set up data for rating profiles.
+description: This article describes how to set up data for rating profiles.
 author: Weijiesa
 ms.date: 10/30/2020
 ms.topic: business-process 
@@ -59,7 +59,7 @@ On the **Rating profiles** page, you can review all available rating profiles. Y
 1. Go to **Transportation management \> Setup \> Carriers \> Shipping carriers**.
 1. Select a shipping carrier in the list.
 1. On the **Rating profiles** FastTab, select **New** to create a rating profile.
-1. Set the fields for the new rating profile. These fields correspond to the fields on the **Rating profiles** page, as described in previous section of this topic.
+1. Set the fields for the new rating profile. These fields correspond to the fields on the **Rating profiles** page, as described in previous section of this article.
 
 > [!NOTE]
 > Profiles that are created on the **Shipping carriers** page are also shown on the **Rating profiles** page.

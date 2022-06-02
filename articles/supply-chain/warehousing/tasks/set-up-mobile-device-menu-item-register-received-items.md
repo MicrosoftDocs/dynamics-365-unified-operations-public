@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Set up a mobile device menu item to register received items
-description: This topic focuses on the setup of a mobile device menu item. 
+description: This article focuses on the setup of a mobile device menu item. 
 author: Mirzaab
 ms.date: 08/16/2019
 ms.topic: business-process 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic focuses on the setup of a mobile device menu item. This menu item is used for registration of the receipt of items ordered via purchase orders. 
+This article focuses on the setup of a mobile device menu item. This menu item is used for registration of the receipt of items ordered via purchase orders. 
 
 You can use this guide in demo data company USMF. This procedure is intended for the warehouse manager.
 

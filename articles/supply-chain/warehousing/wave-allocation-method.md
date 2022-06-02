@@ -2,7 +2,7 @@
 # required metadata
 
 title: Wave allocation
-description: This topic describes how to set up the wave allocation step, including how to enable parallel processing for it.
+description: This article describes how to set up the wave allocation step, including how to enable parallel processing for it.
 author: Mirzaab
 ms.date: 03/08/2021
 ms.topic: article
@@ -11,13 +11,13 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.18
 
 Wave processing can be time consuming, and most of the processing time is spent in the allocation step and in the work creation step.
 
-It is now possible to run each of these steps in parallel, which can improve the performance of the wave processing, and allow for a larger throughput of waves in the same warehouse. This topic explains how to set up the wave allocation method to run in parallel. For more information about how to set up work creation to run in parallel, see [Schedule work creation during wave](configure-wave-schedule-work-creation.md).
+It is now possible to run each of these steps in parallel, which can improve the performance of the wave processing, and allow for a larger throughput of waves in the same warehouse. This article explains how to set up the wave allocation method to run in parallel. For more information about how to set up work creation to run in parallel, see [Schedule work creation during wave](configure-wave-schedule-work-creation.md).
 
 Previously it was only possible to allocate one wave at a warehouse at a time. This constraint has been removed and replaced by a new constraint that only locks the item and dimensions that are above location in the reservation hierarchy. Dimensions above the location always include product dimensions. For example, if an item is configured using *Color*, then variants for *Red*, *Blue*, and *Yellow* could each be processed in parallel.
 

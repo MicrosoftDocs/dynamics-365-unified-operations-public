@@ -2,7 +2,7 @@
 # required metadata
 
 title: Warehouse app events
-description: This topic describes the warehouse app event processing used to process warehouse app event messages as part of a batch job.
+description: This article describes the warehouse app event processing used to process warehouse app event messages as part of a batch job.
 author: perlynne
 ms.date: 09/02/2020
 ms.topic: article

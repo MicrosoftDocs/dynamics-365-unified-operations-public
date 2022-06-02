@@ -1,6 +1,6 @@
 ---
 title: Update tracking for put away
-description: This topic describes how to set up and run the Update tracking for put away periodic task.
+description: This article describes how to set up and run the Update tracking for put away periodic task.
 author: Weijiesa
 ms.date: 08/02/2021
 ms.topic: article

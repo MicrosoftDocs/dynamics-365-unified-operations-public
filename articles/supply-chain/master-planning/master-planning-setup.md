@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up master planning
-description: This topic describes various important strategies and parameters that are used to set up master planning.
+description: This article describes various important strategies and parameters that are used to set up master planning.
 author: t-benebo
 ms.date: 07/01/2019
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 10.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes various important strategies and parameters that are used to set up master planning. It includes an overview of the types of plans that are used by master planning and explains which plan strategy you should use, depending on your business requirements. It also describes the main parameters that affect the plan and explains how those parameters influence the planned orders that are suggested.
+This article describes various important strategies and parameters that are used to set up master planning. It includes an overview of the types of plans that are used by master planning and explains which plan strategy you should use, depending on your business requirements. It also describes the main parameters that affect the plan and explains how those parameters influence the planned orders that are suggested.
 
 ## Types of master plans
 

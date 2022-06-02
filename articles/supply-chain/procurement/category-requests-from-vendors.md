@@ -1,6 +1,6 @@
 ---
 title: Category requests from vendors
-description: This topic describes how vendors can request procurement categories for their account. It also describes the approval process that is completed by procurement agents.
+description: This article describes how vendors can request procurement categories for their account. It also describes the approval process that is completed by procurement agents.
 author: GalynaFedorova
 ms.date: 04/19/2021
 ms.topic: article

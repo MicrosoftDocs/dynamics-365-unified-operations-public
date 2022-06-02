@@ -2,7 +2,7 @@
 # required metadata
 
 title: Target entities
-description: This topic explains how to get an overview of target entities in Asset Management.
+description: This article explains how to get an overview of target entities in Asset Management.
 author: johanhoffmann
 ms.date: 09/26/2019
 ms.topic: article

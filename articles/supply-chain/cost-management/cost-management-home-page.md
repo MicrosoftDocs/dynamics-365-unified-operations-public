@@ -58,7 +58,7 @@ features are in development.
 
 #### White paper
 
-[BOM calculation by using a costing sheet](https://www.microsoft.com/download/details.aspx?id=101937) describes how to set up a costing sheet that includes material and manufacturing, and how the setup affects the BOM calculation results. To better explain the topics, it provides concrete scenarios and data that demonstrates the effect of the various settings and configurations.
+[BOM calculation by using a costing sheet](https://www.microsoft.com/download/details.aspx?id=101937) describes how to set up a costing sheet that includes material and manufacturing, and how the setup affects the BOM calculation results. To better explain the articles, it provides concrete scenarios and data that demonstrates the effect of the various settings and configurations.
 
 #### Blogs
 

@@ -1,10 +1,10 @@
 ---
 title: Product information management FAQ
-description: This topic provides answers to frequently asked questions (FAQs) about the product information management functionality of Supply Chain Management.
+description: This article provides answers to frequently asked questions (FAQs) about the product information management functionality of Supply Chain Management.
 author: t-benebo
 ms.date: 06/03/2021
 ms.topic: article
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides answers to frequently asked questions (FAQs) about the product information management functionality of Supply Chain Management.
+This article provides answers to frequently asked questions (FAQs) about the product information management functionality of Supply Chain Management.
 
 ## Can I change the item number of a released product?
 

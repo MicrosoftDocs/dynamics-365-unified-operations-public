@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Create and maintain an inventory blocking
-description: This topic describes how to use an inventory blocking to prevent physical on-hand inventory from being reserved by other outbound source documents.
+description: This article describes how to use an inventory blocking to prevent physical on-hand inventory from being reserved by other outbound source documents.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: business-process 
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how to use an inventory blocking to prevent physical on-hand inventory from being reserved by other outbound source documents. Before you start the procedures in this topic, you must have an item that physical on-hand inventory is available for.
+This article describes how to use an inventory blocking to prevent physical on-hand inventory from being reserved by other outbound source documents. Before you start the procedures in this article, you must have an item that physical on-hand inventory is available for.
 
 ## Block inventory
 

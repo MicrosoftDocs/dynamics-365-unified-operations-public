@@ -2,7 +2,7 @@
 # required metadata
 
 title: Landed cost vs. Transportation management
-description: Microsoft Dynamics 365 Supply Chain Management provides two different modules for working with transportation, Transportation management (TMS) and Landed cost. This topic summarizes the functionality that the two modules have in common and highlights the differences between them.
+description: Microsoft Dynamics 365 Supply Chain Management provides two different modules for working with transportation, Transportation management (TMS) and Landed cost. This article summarizes the functionality that the two modules have in common and highlights the differences between them.
 author: Weijiesa
 ms.date: 12/04/2020
 ms.topic: article
@@ -11,13 +11,13 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: [Operations AOT form name to tie this topic to]
+# ms.search.form: [Operations AOT form name to tie this article to]
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: weijiesa
@@ -29,9 +29,9 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../../includes/banner.md)]
 
-Microsoft Dynamics 365 Supply Chain Management provides two different modules for working with transportation: **Transportation management** (TMS) and **Landed cost**. This topic summarizes the functionality that the two modules have in common and highlights the differences between them. You can use this information to decide which module best fits your business practices. You might find that some business practices work better with TMS, whereas others work best with Landed cost. Then, depending on your business requirements, you might choose to use one module exclusively, or you might combine the two modules.
+Microsoft Dynamics 365 Supply Chain Management provides two different modules for working with transportation: **Transportation management** (TMS) and **Landed cost**. This article summarizes the functionality that the two modules have in common and highlights the differences between them. You can use this information to decide which module best fits your business practices. You might find that some business practices work better with TMS, whereas others work best with Landed cost. Then, depending on your business requirements, you might choose to use one module exclusively, or you might combine the two modules.
 
-This topic isn't a comprehensive review of all the features of either module. Instead, it highlights the available functionality as it pertains to the transportation of goods from a vendor to your business's warehouse, where it can be consumed.
+This article isn't a comprehensive review of all the features of either module. Instead, it highlights the available functionality as it pertains to the transportation of goods from a vendor to your business's warehouse, where it can be consumed.
 
 ## Terminology, reference data, and reporting differences
 

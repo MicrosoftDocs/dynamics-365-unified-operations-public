@@ -2,7 +2,7 @@
 # required metadata
 
 title: Introduction to functional locations
-description: This topic provides an overview of functional locations in Asset Management.
+description: This article provides an overview of functional locations in Asset Management.
 author: johanhoffmann
 ms.date: 06/25/2019
 ms.topic: article
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
  
 
-This topic provides an overview of functional locations in Asset Management. Functional locations are elements of a technical structure, such as the functional units in a system. Functional locations are created hierarchically, and you install assets on them. The setup of functional locations in your company depends on the company's requirements.
+This article provides an overview of functional locations in Asset Management. Functional locations are elements of a technical structure, such as the functional units in a system. Functional locations are created hierarchically, and you install assets on them. The setup of functional locations in your company depends on the company's requirements.
 
 Here are some examples of how you can use functional locations:
 

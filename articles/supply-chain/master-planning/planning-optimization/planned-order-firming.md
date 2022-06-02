@@ -1,6 +1,6 @@
 ---
 title: Firm planned orders
-description: This topic explains how to firm planned orders. When planned orders are firmed, they become actual purchase orders, transfer orders, or production orders.
+description: This article explains how to firm planned orders. When planned orders are firmed, they become actual purchase orders, transfer orders, or production orders.
 author: t-benebo
 ms.date: 04/22/2021
 ms.search.form: ReqTransPo, ReqTransFirmLog
@@ -24,11 +24,11 @@ There are three methods for firming planned orders:
 - **Auto-firming** – Define a default firming time fence for coverage groups, individual items, and combinations of items and master plans. Then, during master planning runs, planned orders will automatically be firmed if the order date is within the specified time fence for firming.
 - **Query-based firming** – Define a query to select planned orders based on their properties. You can set up a batch job to run the query and firm matching orders on a regular schedule.
 
-This topic describes each method in detail.
+This article describes each method in detail.
 
-## <a name="enable-features"></a>Enable the features that are described in this topic
+## <a name="enable-features"></a>Enable the features that are described in this article
 
-Most planned order features are available in all standard installations of Microsoft Dynamics 365 Supply Chain Management that use Planning Optimization. However, a few of the features that are described in this topic must be turned on in Feature management before you can use them.
+Most planned order features are available in all standard installations of Microsoft Dynamics 365 Supply Chain Management that use Planning Optimization. However, a few of the features that are described in this article must be turned on in Feature management before you can use them.
 
 ### Turn parallelized firming of planned orders on or off
 
@@ -92,7 +92,7 @@ Automatic firming lets you firm planned orders as part of the master planning pr
 > Derived orders (that is, subcontract purchase orders) that are firmed will have a status of *In-review* if change tracking is turned on.
 
 > [!IMPORTANT]
-> Before the feature that is described in this section can be used with Planning Optimization, the [*Auto-firming for Planning Optimization* feature](#enable-features) must be turned on in your system, as described at the beginning of this topic. Auto-firming can always be used with the built-in master planning engine.
+> Before the feature that is described in this section can be used with Planning Optimization, the [*Auto-firming for Planning Optimization* feature](#enable-features) must be turned on in your system, as described at the beginning of this article. Auto-firming can always be used with the built-in master planning engine.
 
 ### Auto-firming with Planning Optimization vs. the built-in planning engine
 
@@ -125,7 +125,7 @@ Query-based firming lets you plan firming based on criteria that are defined in 
 You can combine auto-firming with query-based firming. For example, a query-based firming job has a forward time fence that is longer than the time fence for a matching auto-firming coverage configuration. Therefore, the query-based firming job will process its planned orders before the auto-firming is triggered. You can take advantage of this behavior to schedule orders for specific vendors differently than orders for similar products from other vendors.
 
 > [!IMPORTANT]
-> Before the feature that is described in this section can be used, the [*Planned order firming with filtering* feature](#enable-features) must be turned on in your system, as described at the beginning of this topic.
+> Before the feature that is described in this section can be used, the [*Planned order firming with filtering* feature](#enable-features) must be turned on in your system, as described at the beginning of this article.
 
 To firm a planned order by using the query-based firming process, follow these steps.
 

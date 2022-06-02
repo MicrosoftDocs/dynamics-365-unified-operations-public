@@ -2,7 +2,7 @@
 # required metadata
 
 title: License plate receiving via the Warehouse Management mobile app
-description: This topic explains how to set up the Warehouse Management mobile app to support using a license plate receiving process to receive physical inventory.
+description: This article explains how to set up the Warehouse Management mobile app to support using a license plate receiving process to receive physical inventory.
 author: perlynne
 ms.date: 04/29/2020
 ms.topic: article
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: perlynne
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.11
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up the Warehouse Management mobile app so that it supports using a license plate receiving process to receive physical inventory.
+This article explains how to set up the Warehouse Management mobile app so that it supports using a license plate receiving process to receive physical inventory.
 
 You can use this functionality to quickly record the receipt of inbound inventory that is related to an advance ship notice (ASN). The system automatically creates an ASN when warehouse management processes are used to ship a transfer order. For the purchase order process, an ASN can be manually recorded, or it can be automatically imported by using an inbound ASN data entity process.
 

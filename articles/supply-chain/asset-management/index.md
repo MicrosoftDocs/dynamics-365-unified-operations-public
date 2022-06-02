@@ -2,7 +2,7 @@
 # required metadata
 
 title: Asset management overview
-description: This topic describes Asset Management functionality in Dynamics 365 Supply Chain Management.
+description: This article describes Asset Management functionality in Dynamics 365 Supply Chain Management.
 author: johanhoffmann
 ms.date: 07/24/2019
 ms.topic: overview

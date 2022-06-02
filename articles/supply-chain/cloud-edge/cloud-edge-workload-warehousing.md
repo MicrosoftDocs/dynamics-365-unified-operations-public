@@ -2,7 +2,7 @@
 # required metadata
 
 title: Warehouse management workloads for cloud and edge scale units
-description: This topic provides information about the feature that enables scale units to run selected processes from your warehouse management workload.
+description: This article provides information about the feature that enables scale units to run selected processes from your warehouse management workload.
 author: perlynne
 ms.date: 09/03/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.22
 [!include [banner](../includes/banner.md)]
 
 > [!WARNING]
-> Not all warehouse management business functionality is fully supported for warehouses running a workload on a scale unit. Be sure to use only the processes that this topic explicitly describes as supported.
+> Not all warehouse management business functionality is fully supported for warehouses running a workload on a scale unit. Be sure to use only the processes that this article explicitly describes as supported.
 
 ## Warehouse execution on scale units
 
@@ -187,7 +187,7 @@ No other types of source document processing or warehouse work are currently sup
 >
 > A few extra steps are required to set up the Warehouse Management mobile app to work against a cloud or edge scale unit. For more information, see [Configure the Warehouse Management mobile app for cloud and edge scale units](cloud-edge-workload-setup-warehouse-app.md).
 >
-> When you run a workload on a scale unit, you can't run unsupported processes for that specific warehouse on the hub. The tables provided later in this topic document the supported capabilities.
+> When you run a workload on a scale unit, you can't run unsupported processes for that specific warehouse on the hub. The tables provided later in this article document the supported capabilities.
 >
 > Selected warehouse work types can be created both on the hub and on scale units, but can only be maintained by the owning hub or scale unit (the deployment which created the data).
 >

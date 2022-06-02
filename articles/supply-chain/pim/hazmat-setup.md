@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up hazardous materials
-description: This topic explains how to set up the data that is required to classify items as hazardous materials. When you create a sales order that includes an item that is classified as a hazardous material, the system generates hazardous material documentation for that sales order when it's shipped.
+description: This article explains how to set up the data that is required to classify items as hazardous materials. When you create a sales order that includes an item that is classified as a hazardous material, the system generates hazardous material documentation for that sales order when it's shipped.
 author: t-benebo
 ms.date: 06/10/2020
 ms.topic: article
@@ -11,12 +11,12 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: benebotg

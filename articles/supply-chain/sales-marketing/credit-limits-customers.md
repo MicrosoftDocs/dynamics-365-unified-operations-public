@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: henrikan
@@ -186,7 +186,7 @@ master (CustCustomersMaintain) duty assigned to it to make changes in this form.
     identification in the **Government identification** field.
 
 > [!NOTE]
-> In the **Accounts receivable parameters** form, a credit limit type is typically selected. However, if the credit limit type is set to **None**, you must also select the **Mandatory credit limit** check box in the **Customers** form in order to check the customer’s credit limit against the customer’s balance. For more information about credit limit types, see “What documents and processes can I check credit limits for?” in this topic. 
+> In the **Accounts receivable parameters** form, a credit limit type is typically selected. However, if the credit limit type is set to **None**, you must also select the **Mandatory credit limit** check box in the **Customers** form in order to check the customer’s credit limit against the customer’s balance. For more information about credit limit types, see “What documents and processes can I check credit limits for?” in this article. 
 
 **How do I manually check credit limits on sales orders?**
 
