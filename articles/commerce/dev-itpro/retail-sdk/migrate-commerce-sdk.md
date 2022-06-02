@@ -214,6 +214,13 @@ if (!result.IsNullOrEmpty())
 </td>
 </tr>
 <tr>
+<td> DataCacheAccessor </td>
+<td>
+
+DataCacheAccessor is internal. Please use .NET memory cache or similar approach.
+
+</td>
+<tr>
 <td> PricingEngine </td>
 <td> Extensions should not call PricingEngine directly and instead should use CalculatePricesServiceRequest, CalculateDiscountsServiceRequest. </td>
 </tr>
