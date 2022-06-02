@@ -2,7 +2,7 @@
 # required metadata
 
 title: Unique certification
-description: This topic provides information about the Unique certification for companies in Italy.
+description: This article provides information about the Unique certification for companies in Italy.
 author: ilkond
 ms.date: 03/22/2022
 ms.topic: article

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Withholding tax in Thailand
-description: This topic provides information about withholding tax and how to set it up for Thailand.
+description: This article provides information about withholding tax and how to set it up for Thailand.
 author: ShylaThompson
 ms.date: 03/05/2021
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about withholding tax and how to set it up for Thailand. The withholding tax functionality is enhanced for vendor and customer transactions, so that withholding tax is calculated and withholding tax reports are generated.
+This article provides information about withholding tax and how to set it up for Thailand. The withholding tax functionality is enhanced for vendor and customer transactions, so that withholding tax is calculated and withholding tax reports are generated.
 
 ## Set up Thailand withholding tax
 

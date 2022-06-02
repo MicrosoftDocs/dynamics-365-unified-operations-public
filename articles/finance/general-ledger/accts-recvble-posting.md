@@ -2,7 +2,7 @@
 # required metadata
 
 title: Accounts receivable posting
-description: This topic explains how postings are configured in Accounts receivable and provides examples of posting configurations.
+description: This article explains how postings are configured in Accounts receivable and provides examples of posting configurations.
 author: rachel-profitt
 ms.date: 12/03/2021
 ms.topic: article

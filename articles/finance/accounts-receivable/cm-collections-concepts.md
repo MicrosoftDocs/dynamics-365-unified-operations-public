@@ -41,7 +41,7 @@ Before you start to set up or work with collections, you should understand the f
 - Write-off transactions can be created in one step.
 - Not sufficient funds (NSF) payments can be processed in one step.
 
-This topic describes each concept.
+This article describes each concept.
 
 ## Customer aging snapshots
 
@@ -93,7 +93,7 @@ The Action Pane contains buttons that let you view related information for the s
 
 You can waive, reinstate, or reverse whole interest notes, or the fees and transaction interest that are part of interest notes. On the **Collect** tab on the Action Pane of the **All customers** list page, select **Interest note**, **Transaction interest**, or **Fee**.
 
-These adjustments affect only interest notes, and the interest and fees that they include. For information about how to write off all the charges that a customer owes, see the [Creating write-off transactions](#creating-write-off-transactions) section of this topic.
+These adjustments affect only interest notes, and the interest and fees that they include. For information about how to write off all the charges that a customer owes, see the [Creating write-off transactions](#creating-write-off-transactions) section of this article.
 
 For more information see, Create an interest code with a range and Process interest.
 

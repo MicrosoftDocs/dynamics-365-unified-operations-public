@@ -2,7 +2,7 @@
 # required metadata
 
 title: Free text invoices in the public sector
-description: This topic describes the free text invoice functionality that's available for public sector entities, and answers common questions about using billing classifications and billing codes with free text invoices.
+description: This article describes the free text invoice functionality that's available for public sector entities, and answers common questions about using billing classifications and billing codes with free text invoices.
 author: v-kiarnd
 ms.date: 06/20/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the free text invoice functionality that's available for public sector entities, and answers common questions about using billing classifications and billing codes with free text invoices.
+This article describes the free text invoice functionality that's available for public sector entities, and answers common questions about using billing classifications and billing codes with free text invoices.
 
 ## Do I have to select a billing classification for every free text invoice?
 

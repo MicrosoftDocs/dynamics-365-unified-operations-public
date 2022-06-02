@@ -2,7 +2,7 @@
 # required metadata
 
 title: VAT declaration for Oman (OM-00003)
-description: This topic explains how to configure and generate the value-added tax (VAT) return form for Oman.
+description: This article explains how to configure and generate the value-added tax (VAT) return form for Oman.
 author: sndray
 ms.date: 09/01/2021
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.22
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up and generate the value-added tax (VAT) return form for legal entities in Oman.
+This article explains how to set up and generate the value-added tax (VAT) return form for legal entities in Oman.
 
 The VAT return form for Oman is the standard document that summarizes the total output VAT amount due, the total input VAT amount recoverable, and the related VAT amount liability. The form is used for all types of taxpayers and should be manually completed through the tax authority portal. The VAT return form is commonly referred to as *Filing VAT returns*.
 
@@ -58,7 +58,7 @@ In the **Electronic reporting** workspace, import the **VAT Return Filing Excel 
 > [!NOTE]
 > This format is based on the **Tax declaration model** configuration and uses the **Tax declaration model mapping** configuration. These additional configurations are automatically imported.
 
-After you've finished downloading the ER configurations from Microsoft Dynamics Lifecycle Services (LCS) or the global repository, complete the remaining procedures in this topic.
+After you've finished downloading the ER configurations from Microsoft Dynamics Lifecycle Services (LCS) or the global repository, complete the remaining procedures in this article.
 
 ## Set up application-specific parameters
 

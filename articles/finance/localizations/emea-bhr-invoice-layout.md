@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure invoice layout for Bahrain
-description: This topic explains how to configure the invoice layout for Bahrain.
+description: This article explains how to configure the invoice layout for Bahrain.
 author: ilkond
 ms.date: 09/08/2020
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.13
 
 [!include [banner](../includes/preview-banner.md)]
 
-This topic explains how to configure printable invoice layouts to ensure compliance with Bahraini legal requirements. Bahrain-specific invoice layouts are implemented by using the concept of *configurable business documents*. For more information about configurable business documents, see the [Business document management overview](../../fin-ops-core/dev-itpro/analytics/er-business-document-management.md). 
+This article explains how to configure printable invoice layouts to ensure compliance with Bahraini legal requirements. Bahrain-specific invoice layouts are implemented by using the concept of *configurable business documents*. For more information about configurable business documents, see the [Business document management overview](../../fin-ops-core/dev-itpro/analytics/er-business-document-management.md). 
 
 ## Prerequisites
 
@@ -138,7 +138,7 @@ In the **Electronic reporting** workspace, select the **Project invoice model ma
 
 ## Generate invoices
 
-After you've completed all the previous procedures in this topic, you can print invoices that are based on sales orders and free text invoices, in accordance with Bahraini legal requirements.
+After you've completed all the previous procedures in this article, you can print invoices that are based on sales orders and free text invoices, in accordance with Bahraini legal requirements.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

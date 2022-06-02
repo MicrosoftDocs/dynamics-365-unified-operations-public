@@ -2,7 +2,7 @@
 # required metadata
 
 title: JPK-V7M reporting
-description: This topic explains how to run a VAT declaration with registers (also known as a JPK-V7M, VDEK) in Poland. 
+description: This article explains how to run a VAT declaration with registers (also known as a JPK-V7M, VDEK) in Poland. 
 author: liza-golub
 ms.date: 03/21/2022
 ms.topic: article
@@ -39,7 +39,7 @@ The PL JPK_V7M EM setup.zip package provides a setup for the JPK-V7M processing 
 
 ## Initial assumptions for the JPK-V7M report
 
-The implementation of the JPK-V7M report is based on the same example in the topic, [Prepare for JPK-V7M reporting](emea-pol-vdek-setup.md) for the JPK_VAT report. 
+The implementation of the JPK-V7M report is based on the same example in the article, [Prepare for JPK-V7M reporting](emea-pol-vdek-setup.md) for the JPK_VAT report. 
 For more information, see [Generate a SAF VAT sales and purchase register](emea-pol-standard-audit-file-saf.md#generate-a-saf-vat-sales-and-purchase-register).
 
 The following table shows an example of sales tax reporting codes and their mapping with **K_\*** elements of the JPK-V7M report.

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Nets import format
-description: This topic provides information about importing payment information in the Nets format.
+description: This article provides information about importing payment information in the Nets format.
 author: anasyash
 ms.date: 06/20/2017
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about importing payment information in the Nets format.
+This article provides information about importing payment information in the Nets format.
 
 You can import enrollment messages, AvtaleGiro and eInvoice, together with payment messages, optical character recognition (OCR), AvtaleGiro, and eInvoice, in the Nets file format.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Fixed assets depreciation methods for China
-description: This topic describes the depreciation method set up for legal entities in China.
+description: This article describes the depreciation method set up for legal entities in China.
 author: ShylaThompson
 ms.date: 03/21/2018
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the depreciation method set up for legal entities in China.
+This article describes the depreciation method set up for legal entities in China.
 
 The sum of the years' digits method of depreciation (SYD) is one of the accelerated depreciation techniques that is based on the assumption that assets are generally more productive when they are new and their productivity decreases as they become old. The formula to calculate depreciation under SYD method is:
 

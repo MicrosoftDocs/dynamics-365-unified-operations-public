@@ -2,7 +2,7 @@
 # required metadata
 
 title: India Goods and Services Tax (GST) overview
-description: This topic provides detailed information about India Goods and Services Tax (GST) for Microsoft Dynamics 365 Finance.
+description: This article provides detailed information about India Goods and Services Tax (GST) for Microsoft Dynamics 365 Finance.
 author: yijialuan
 ms.date: 05/20/2021
 ms.topic: overview
@@ -30,7 +30,7 @@ ms.search.validFrom: 2017-12-31
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides detailed information about India Goods and Services Tax (GST). For an overview of the tax engine using India GST examples, watch the following videos.
+This article provides detailed information about India Goods and Services Tax (GST). For an overview of the tax engine using India GST examples, watch the following videos.
 
 - [Tax engine overview (YouTube video)](https://www.youtube.com/watch?v=jAFpEBOtNWI&feature=youtu.be)
 - [GST overview (Tech Talk)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-gst-gte-part-1---overview-of-features-roadmap-july-8-2019)
@@ -160,7 +160,7 @@ Follow these steps to load the configurations and map them to a legal entity.
 
 ### Tax configurations
 
-Follow the process in the topic, [Tax engine import configuration](../general-ledger/tax-engine-import-configuration.md) to import the tax configurations and report configurations.
+Follow the process in the article, [Tax engine import configuration](../general-ledger/tax-engine-import-configuration.md) to import the tax configurations and report configurations.
 
 ### GST configurations
 

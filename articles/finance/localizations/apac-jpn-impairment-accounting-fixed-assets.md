@@ -2,7 +2,7 @@
 # required metadata
 
 title: Impairment accounting for fixed assets for Japan
-description: This topic includes information about impairment accounting for fixed assets in Japan.
+description: This article includes information about impairment accounting for fixed assets in Japan.
 author: EricWangChen
 ms.date: 03/21/2018
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic includes information about impairment accounting for fixed assets in Japan.
+This article includes information about impairment accounting for fixed assets in Japan.
 
 You can perform the following tasks to set up and calculate fixed asset impairments:
 

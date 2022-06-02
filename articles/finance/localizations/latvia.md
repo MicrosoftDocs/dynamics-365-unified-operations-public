@@ -2,7 +2,7 @@
 # required metadata
 
 title: Latvia overview
-description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for Latvia. 
+description: This article provides links to Microsoft Dynamics 365 Finance documentation resources for Latvia. 
 author: kfend
 ms.date: 01/18/2022
 ms.topic: overview
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides links to documentation resources for Latvia. 
+This article provides links to documentation resources for Latvia. 
 
 - [Fixed assets accounting for tax purposes](emea-lva-fixed-assets-accounting.md)
 - [Fixed assets location change tracking](emea-lva-fixed-assets-location-fields-change.md)

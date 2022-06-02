@@ -2,7 +2,7 @@
 # required metadata
 
 title: Details of specific business scenarios in the JPK-V7M report
-description: This topic explains details of specific business scenarios in the JPK-V7M report in Poland. 
+description: This article explains details of specific business scenarios in the JPK-V7M report in Poland. 
 author: liza-golub
 ms.date: 07/19/2021
 ms.topic: article
@@ -26,7 +26,7 @@ ms.author: elgolu
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains details of specific business scenarios in the JPK-V7M report in Poland.
+This article explains details of specific business scenarios in the JPK-V7M report in Poland.
 
 ## Reporting of overdue customer invoices
 

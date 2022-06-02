@@ -2,7 +2,7 @@
 # required metadata
 
 title: Stock card report for Thailand
-description: This topic provides information about stock card reports for legal entities in Thailand. 
+description: This article provides information about stock card reports for legal entities in Thailand. 
 author: ShylaThompson
 ms.date: 03/21/2018
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about stock card reports for legal entities in Thailand. A stock card report contains information about inventory movement, quantity, and cost for each item and warehouse, and must be generated when the government requests it. The stock card report is generated either before or after the inventory close process. 
+This article provides information about stock card reports for legal entities in Thailand. A stock card report contains information about inventory movement, quantity, and cost for each item and warehouse, and must be generated when the government requests it. The stock card report is generated either before or after the inventory close process. 
 
 You can generate the following stock card reports:
 

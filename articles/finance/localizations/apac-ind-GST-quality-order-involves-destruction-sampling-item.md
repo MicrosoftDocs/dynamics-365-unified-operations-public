@@ -2,7 +2,7 @@
 # required metadata
 
 title: Quality orders that involve destruction of the sampling item
-description: This topic provides information about quality orders that involve destroyed sample items.
+description: This article provides information about quality orders that involve destroyed sample items.
 author: EricWangChen
 ms.date: 06/04/2019
 ms.topic: article
