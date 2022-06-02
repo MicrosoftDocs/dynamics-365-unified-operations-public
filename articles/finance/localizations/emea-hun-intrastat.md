@@ -36,7 +36,7 @@ The following fields are included in the Hungarian Intrastat declaration. All th
 | Nature of transaction           | The transaction code. Companies in Hungary use two-digit codes.                                                                  |
 | Member state of consignment     | The International Organization for Standardization (ISO) code of the country or region of the counterparty.                      |
 | Country of origin               | The ISO code of the country or region where the goods were produced.                                                             |
-| Quantity in net mass            | The net mass of the goods item in kilograms. The unit itself ("kg") itself isn't printed.                                        |
+| Quantity in net mass            | The net mass of the goods item in kilograms. The unit itself ("kg") isn't printed.                                        |
 | Quantity in supplementary units | For some commodities, you must report the supplementary unit. The unit itself (for example, "pairs" or "dozens") isn't reported. |
 | Invoice amount                  | The invoice value in the reporting currency.                                                                                     |
 | Statistical value               | The statistical value in the accounting currency.                                                                                |
@@ -371,7 +371,7 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 18.  Review the report in Excel format that is generated.
 
-    ![Intrastat report on arrivals](media/sp7vy1sg8549b591a2d247c6deb85390.png)
+   ![Intrastat report on arrivals](media/sp7vy1sg8549b591a2d247c6deb85390.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
