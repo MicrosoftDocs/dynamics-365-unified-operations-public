@@ -152,7 +152,7 @@ In order to ease the certificate rotation process, Microsoft is recommending tha
     ```
 
     > [!NOTE]
-    > To provide defense in depth, we recommend that you restrict who the issuer of the certificates should be. Without this option then any certificate that matches 
+    > To provide defense in depth, we recommend that you restrict who the issuer of the certificates should be. Without this option then any certificate that matches the common name (subject name) defined in the Service Fabric cluster configuration could be used. 
     > ```powershell
     >   .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -UpgradeToCommonNames -RestrictCertificateIssuers
     > ```
