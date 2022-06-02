@@ -55,21 +55,13 @@ To get started connecting your experiment in Commerce site builder, follow these
 > If you want to schedule when your experiment is published to your live site, make sure the content you want to associate with the experiment is available in a publish group *before* you connect the experiment. For more information about publish groups, refer to [Work with publish groups](publish-groups.md).
 
 ## Edit your variations
-When you exit the wizard, variations are created for you. 
-
-Next, you'll edit the variations so they reflect the choices that you need to verify in the experiment hypothesis. Choose one of following procedures that corresponds to the scope you chose for your experiment in the [Determine the scope of your experiment](#determine-the-scope-of-your-experiment) section above.
-
-### Edit variations for experiments with partial scope
-Follow these steps if you defined the scope of your experiment as **partial** in the **Connect experiment** wizard.
+When you exit the **Connect experiment** wizard, variations are created for you. Follow the steps below to edit the variations so they reflect the choices that you need to verify in the experiment hypothesis.
 
 1. In editor view, use the variations drop-down menu below the command bar to edit each variation based on your original hypothesis. You may also want to establish a control or base variation by leaving one of the variations unchanged.
 1. Select the module to be experimented on, select the ellipsis (...), and then select **Add to experiment**.
 
-### Edit variations for experiments with entire scope
-If you defined the scope of your experiment as **entire** in the **Connect experiment** wizard, while in editor view, use the variations drop-down menu below the command bar to edit each variation based on your original hypothesis. 
-
 > [!NOTE]
-> In either case, you may also want to establish a control or base variation by leaving one of the variations unchanged.
+> Consider establishing a control or base variation by leaving one of the variations unchanged.
 
 ## Previous step
 [Set up an experiment](experimentation-setup.md) 
