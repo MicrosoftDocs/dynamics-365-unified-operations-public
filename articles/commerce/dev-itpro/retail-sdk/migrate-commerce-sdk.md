@@ -185,6 +185,42 @@ cart = (await request.RequestContext.ExecuteAsync<SaveCartResponse>(saveCartRequ
 </td>
 </tr>
 <tr>
+<td> CartWorkflowHelper.ConvertToCart </td>
+<td>
+
+```C#
+ConvertSalesTransactionToCartServiceRequest serviceRequest = new ConvertSalesTransactionToCartServiceRequest(salesTransaction);
+return (await context.ExecuteAsync<UpdateCartServiceResponse>(serviceRequest).ConfigureAwait(false)).Cart;
+```    
+
+</td>
+</tr>
+<tr>
+<td> RuntimeReceiptLocalizer.GetLocalizedString </td>
+<td>
+
+```C#
+var request = new GetLocalizedTextsDataRequest(cultureName, textId, QueryResultSettings.SingleRecord);
+var response = isAsync ?
+                await requestContext.ExecuteAsync<EntityDataServiceResponse<LocalizedText>>(request).ConfigureAwait(false) :
+var result = response.PagedEntityCollection;
+if (!result.IsNullOrEmpty())
+{
+   LocalizedText text = result.FirstOrDefault();
+   return text.Text;
+}
+```    
+
+</td>
+</tr>
+<tr>
+<td> DataCacheAccessor </td>
+<td>
+
+DataCacheAccessor is internal. Use .NET memory cache or a similar approach.
+
+</td>
+<tr>
 <td> PricingEngine </td>
 <td> Extensions should not call PricingEngine directly and instead should use CalculatePricesServiceRequest, CalculateDiscountsServiceRequest. </td>
 </tr>
