@@ -4,7 +4,7 @@
 title: Reconciliation reports for Belgium
 description: This topic describes the standard reports that Microsoft Dynamics 365 Finance provides to help you with the INTERVAT tax declaration and reconciliation analysis.
 author: anasyash
-ms.date: 07/27/2020
+ms.date: 06/02/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 ms.custom: 273103
 ms.search.region: Belgium
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: anasyash
 ms.dyn365.ops.version: AX 7.0.1
 ms.search.validFrom: 2016-05-31
 
