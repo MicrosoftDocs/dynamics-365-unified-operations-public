@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Retail 7.3
 
 This article provides links to other articles that will help new implementers of Commerce projects with important aspects of the implementation process, so that they can avoid complications. The guidelines that are mentioned are best practices that have been collected during previous implementation projects. Therefore, implementers can focus on the actual feature work and not become bogged down by the procedures.
 
-Some of the information in these articles can also be found on blogs and pages at other locations, such as [Development and administration for Finance and Operations](../../fin-ops-core/dev-itpro/index.md) and <https://dynamicsnotes.com>. You can read those blogs and pages separately, or you can read this article from beginning to end and review the linked documents within the subtopics as you require them during the implementation process.
+Some of the information in these articles can also be found on blogs and pages at other locations, such as [Development and administration for Finance and Operations](../../fin-ops-core/dev-itpro/index.md) and <https://dynamicsnotes.com>. You can read those blogs and pages separately, or you can read this article from beginning to end and review the linked documents within the articles as you require them during the implementation process.
 
 The information focuses on implementations of Finance and Operations apps that include Commerce functionality.
 
