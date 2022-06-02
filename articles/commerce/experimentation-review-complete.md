@@ -52,7 +52,7 @@ To promote the winning variation, follow these steps.
 ## Delete your experiment
 While it's not required that you delete a completed experiment in Commerce, you may choose to delete it to save space or clean up your workspace. 
 
-To delete an experiment in Commerce site builder, follow these steps.
+To delete a completed experiment in Commerce site builder, follow these steps.
 
 1. Select **Experiments** in the left navigation pane, and then select the experiment. 
     > [!NOTE]
