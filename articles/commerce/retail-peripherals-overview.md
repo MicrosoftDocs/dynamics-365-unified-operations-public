@@ -138,6 +138,10 @@ Modern POS supports UWP MSRs and scanners. Therefore, when Modern POS is ready f
 
 Additional classes of POS peripherals are being added to Windows, such as classes for cash drawers and receipt printers. Support for these new device classes in Modern POS is pending.
 
+> [NOTE] 
+>
+> Certain USB devices may become unresponsive or unreliable when managed by a Windows 10 power management feature called [USB Selective Suspend](https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/usb-selective-suspend). If a USB peripheral becomes unresponsive, it may be necessary to disable the slective suspend feature for that device. See the [Enabling Selective Suspend](https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/usb-selective-suspend#enabling-selective-suspend) section of the [USB Selective Suspend](https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/usb-selective-suspend) article for more information. 
+
 ### Keyboard wedge
 
 Keyboard wedge devices send data to the computer as if that data were typed on a keyboard. Therefore, by default, the field that is active at the POS will receive the data that is scanned or swiped. In some cases, this behavior can cause the wrong type of data to be scanned into the wrong field. For example, a bar code might be scanned into a field that is intended for input of credit card data. In many cases, there is logic at the POS that determines whether the data that is scanned or swiped is a bar code or card swipe. Therefore, the data is handled correctly. However, when devices are set up as OPOS instead of keyboard wedge devices, there is more control over how the data from those devices can be consumed, because more is "known" about the device that the data originates from. For example, data from a bar code scanner is automatically recognized as a bar code, and the associated record in the database is found more easily and faster than if a generic string search were used, as in the case of keyboard wedge devices.
