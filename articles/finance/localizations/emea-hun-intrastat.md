@@ -118,16 +118,17 @@ For more information, see [Registration IDs](emea-registration-ids.md).
 
 ## Set up compression of Intrastat
 
-Go to **Tax** > **Setup** > **Foreign trade** > **Compression of Intrastat**, and select the fields that should be compared when Intrastat information is summarized. For Hungary, select the following fields:
-    -   Commodity
-    -   Transaction code
-    -   Country/region of origin
-    -   Country/region of sender
-    -   Correction
-    -   Country/region
-    -   Tax exempt number
-    -   Invoice
-    -   Direction
+- Go to **Tax** > **Setup** > **Foreign trade** > **Compression of Intrastat**, and select the fields that should be compared when Intrastat information is summarized. For Hungary, select the following fields:
+
+    - Commodity
+    - Transaction code
+    - Country/region of origin
+    - Country/region of sender
+    - Correction
+    - Country/region
+    - Tax exempt number
+    - Invoice
+    - Direction
 
 ## Intrastat transfer
 
