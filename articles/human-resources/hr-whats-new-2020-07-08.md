@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Human Resources (July 08, 2020)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for July 8, 2020.
+description: This article describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for July 8, 2020.
 author: andreabichsel
 ms.date: 07/08/2020
 ms.topic: article
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Human Resources
 
 
 
-This topic describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3382. The numbers in parentheses in some headings refer to LCS support numbers for reference.
+This article describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3382. The numbers in parentheses in some headings refer to LCS support numbers for reference.
 
 ## Database logging
 

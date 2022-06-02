@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create custom links in Manager self service
-description: This topic describes how to create custom links in Manager self service in Dynamics 365 Human Resources.
+description: This article describes how to create custom links in Manager self service in Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 08/26/2021
 ms.topic: article
