@@ -1,4 +1,21 @@
+---
+# required metadata
+
+title: Hungarian Intrastat
+description: This topic contains information about the Hungarian Intrastat report.
+author: anasyash
+ms.date: 02/06/2022
+ms.topic: article
+audience: 
+ms.reviewer: kfend 
+ms.search.region: Global
+ms.author: anasyash
+ms.search.validFrom: 
+---
+
 # Hungarian Intrastat
+
+[!include[banner](../includes/banner.md)]
 
 You can use the **Intrastat** page to generate and report information about trade among European Union (EU) countries. The Hungarian Intrastat declaration contains information about the trade of goods for reporting.
 
@@ -246,20 +263,20 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 7.  Select **OK** to close the **Intrastat Filter** dialog box.
 8.  Select **OK** to close the **Intrastat (Transfer)** dialog box, and review the result. The line represents the sales order that you created earlier.
 
-![Graphical user interface, application Description automatically generated with medium confidence](media/f33cb79a2f28face83d3b40cb28d9f74.png)
+![Line that represents the sales order on the Intrastat page](media/f33cb79a2f28face83d3b40cb28d9f74.png)
 
-1.  Select the transaction line, and then select the **General** tab to view more details.
+9.  Select the transaction line, and then select the **General** tab to view more details.
 
-![A screenshot of a computer Description automatically generated with medium confidence](media/4dba8c5a429f89c87030c8a5cce226d4.png)
+![Sales order details on the General tab of the Intrastat page](media/4dba8c5a429f89c87030c8a5cce226d4.png)
 
-1.  On the Action Pane, select **Output** \> **Report**.
-2.  In the **Intrastat Report** dialog box, on the **Parameters** FastTab, in the **Date** section, in the **From date** field, select the first day of the current month.
-3.  In the **Export** **options** section, set the **Generate file** option to **Yes**.
-4.  Set the **Generate report** option to **Yes**. Then, in the **Report file name** field, enter the required name.
-5.  In the **Direction** field, select **Dispatches**.
-6.  In the **Comment** field enter **Report on dispatches**.
-7.  In the **File format mapping** section, in the **Minutes required for completion** field, enter **11**.
-8.  Select **OK**, and review the report in text format that is generated. The following table shows the values in the example report.
+10.  On the Action Pane, select **Output** \> **Report**.
+11.  In the **Intrastat Report** dialog box, on the **Parameters** FastTab, in the **Date** section, in the **From date** field, select the first day of the current month.
+12.  In the **Export** **options** section, set the **Generate file** option to **Yes**.
+13.  Set the **Generate report** option to **Yes**. Then, in the **Report file name** field, enter the required name.
+14.  In the **Direction** field, select **Dispatches**.
+15.  In the **Comment** field enter **Report on dispatches**.
+16.  In the **File format mapping** section, in the **Minutes required for completion** field, enter **11**.
+17.  Select **OK**, and review the report in text format that is generated. The following table shows the values in the example report.
 
 | Field name                    | Value                |
 |-------------------------------|----------------------|
@@ -282,9 +299,9 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 | Statistical value             | 2632                 |
 | VAT number of trading partner | DE9012               |
 
-1.  Review the report in Microsoft Excel format that is generated.
+18.  Review the report in Microsoft Excel format that is generated.
 
-![A picture containing scatter chart Description automatically generated](media/db0f9eecd6382d420a28ee198b1acf63.png)
+![Intrastat report on dispatches](media/db0f9eecd6382d420a28ee198b1acf63.png)
 
 ### Create a purchase order
 
@@ -315,20 +332,20 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 7.  Select **OK** to close the **Intrastat Filter** dialog box.
 8.  Select **OK** to transfer the transaction, and review the Intrastat journal.
 
-![Table Description automatically generated](media/6ef3b75ea2bc084217657c5a43502bbe.png)
+![Line that represents the purchase order on the Intrastat page](media/6ef3b75ea2bc084217657c5a43502bbe.png)
 
-1.  Review the information on the **General** tab for the purchase order.
+9.  Review the information on the **General** tab for the purchase order.
 
-![A screenshot of a computer Description automatically generated with medium confidence](media/2cb40917e7f84620199ce6a67925407b.png)
+![Purchase order details on the General tab of the Intrastat page](media/2cb40917e7f84620199ce6a67925407b.png)
 
-1.  On the Action Pane, select **Output** \> **Report**.
-2.  In the **Intrastat Report** dialog box, on the **Parameters** FastTab, in the **Date** section, in the **From date** field, select the first day of the current month.
-3.  In the **Export** **options** section, set the **Generate file** option to **Yes**. Then, in the **File name** field, enter the required name.
-4.  Set the **Generate report** option to **Yes**. Then, in the **Report file name** field, enter the required name.
-5.  In the **Direction** field, select **Arrivals**.
-6.  In the **Comment** field, enter **Report on arrivals**.
-7.  In the **File format mapping** section, in the **Minutes required for completion** field, enter **11**.
-8.  Select **OK**, and review the report in XML format that is generated. The following table shows the values in the example report.
+10.  On the Action Pane, select **Output** \> **Report**.
+11.  In the **Intrastat Report** dialog box, on the **Parameters** FastTab, in the **Date** section, in the **From date** field, select the first day of the current month.
+12.  In the **Export** **options** section, set the **Generate file** option to **Yes**. Then, in the **File name** field, enter the required name.
+13.  Set the **Generate report** option to **Yes**. Then, in the **Report file name** field, enter the required name.
+14.  In the **Direction** field, select **Arrivals**.
+15.  In the **Comment** field, enter **Report on arrivals**.
+16.  In the **File format mapping** section, in the **Minutes required for completion** field, enter **11**.
+17.  Select **OK**, and review the report in XML format that is generated. The following table shows the values in the example report.
 
 | Field name                                         | Value               |
 |----------------------------------------------------|---------------------|
@@ -351,6 +368,6 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 | Invoice amount                                     | 965                 |
 | Statistical value                                  | 965                 |
 
-1.  Review the report in Excel format that is generated.
+18.  Review the report in Excel format that is generated.
 
-![A picture containing calendar Description automatically generated](media/654fbe1b1549b591a2d247c6deb85390.png)
+![Intrastat report on arrivals](media/sp7vy1sg8549b591a2d247c6deb85390.png)
