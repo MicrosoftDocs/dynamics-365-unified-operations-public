@@ -2458,6 +2458,8 @@
           href: localizations/emea-hun-online-invoicing.md
         - name: Sales tax reports for Hungary
           href: localizations/emea-hun-sales-tax-reports.md
+        - name: Hungarian Intrastat
+          href: localizations/emea-hun-intrastat.md
         - name: Deferred sales tax calculations
           href: localizations/emea-hun-deferred-vat.md
       - name: Iceland
