@@ -302,7 +302,7 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 18.  Review the report in Microsoft Excel format that is generated.
 
-    ![Intrastat report on dispatches](media/db0f9eecd6382d420a28ee198b1acf63.png)
+   ![Intrastat report on dispatches](media/db0f9eecd6382d420a28ee198b1acf63.png)
 
 ### Create a purchase order
 
