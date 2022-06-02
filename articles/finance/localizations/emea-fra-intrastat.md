@@ -22,62 +22,62 @@ Companies in France that are registered for value-added tax (VAT), and that trad
 
 You can generate the DEB report in either of two electronic text file formats: SAISUNIC 330 or INTRACOM format.
 
-The following table shows the fields that are included in the French Intrastat declaration in SAISUNIC 330 format. The table also indicates the report level of the field. The field can be **4** (simplified), **1** (full), or both.
+The following table shows the fields that are included in the French Intrastat declaration in SAISUNIC 330 format. The table also indicates the report level of the field. The field can be **4** (filing of the tax declaration), **1** (fulfilling of the statistical response), or **5** (joint filling).
 
 | **Field**                   | **Report level** |
 |-----------------------------|------------------|
-| Period Of Reference         | 4, 1              | 
-| Number Of Declaration       | 4, 1              |
-| Line Number                 | 4, 1              |
-| Country ISO Code (FR)       | 4, 1              | 
-| Complementary Code          | 4, 1              | 
-| Siren Number                | 4, 1              | 
-| VAT Code Of Customer        | 4, 1              | 
-| Direction Code              | 4, 1              |
-| Transaction Type            | 4, 1              | 
-| Obligation Level            | 4, 1              |
-| Commodity Code              | 1                | 
-| National NGP                | 1                | 
-| County (Department)         | 1                |
-| Nature Of Transaction       | 1                | 
-| Country Of Origination      | 1                | 
-| Country Of Origin - Imports | 1                | 
-| Final Destination - Exports | 1                | 
-| Invoice Value               | 4, 1              | 
-| Statistical Value           | 1                |
-| Net Weight                  | 1                | 
-| Additional Units            | 1                |
-| Transport Code              | 1                | 
+| Period Of Reference         | 4, 1, 5              | 
+| Number Of Declaration       | 4, 1, 5              |
+| Line Number                 | 4, 1, 5              |
+| Country ISO Code (FR)       | 4, 1, 5              | 
+| Complementary Code          | 4, 1, 5              | 
+| Siren Number                | 4, 1, 5              | 
+| VAT Code Of Customer        | 4, 1, 5              | 
+| Direction Code              | 4, 1, 5              |
+| Transaction Type            | 4, 1, 5              | 
+| Obligation Level            | 4, 1, 5              |
+| Commodity Code              | 1, 5                | 
+| National NGP                | 1, 5                | 
+| County (Department)         | 1, 5                |
+| Nature Of Transaction       | 1, 5                | 
+| Country Of Origination      | 1, 5                | 
+| Country Of Origin - Imports | 1, 5                | 
+| Final Destination - Exports | 1, 5                | 
+| Invoice Value               | 4, 1, 5              | 
+| Statistical Value           | 1, 5                |
+| Net Weight                  | 1, 5                | 
+| Additional Units            | 1, 5                |
+| Transport Code              | 1, 5                | 
 
 The following table shows the fields that are included in the French Intrastat declaration in INTRACOM format.
-The table also indicates the report level of the field. The field can be **4** (simplified), **1** (full), or both.
+The table also indicates the report level of the field. The field can be **4** (filing of the tax declaration), **1** (filling of the statistical response), or **5** (joint filling).
 
 | **Field**                   | **Report level**   | 
 |-----------------------------|--------------------|
-| Code                        | 4, 1               | 
-| Number Of Declaration       | 4, 1               |
-| Number Of Line              | 4, 1               | 
-| Siren                       | 4, 1               |
-| County (Department)         | 1                  |          
-| Transport Code              | 1                  |          
-| Country Of Origin           | 1                  |            
-| Nature Of Transaction       | 1                  |             
-| Invoice Value               | 4, 1               |             
-| Modes Of Delivery           | 1                  |           
-| Transaction Type            | 4, 1               |            
-| Obligation Level            | 4, 1               |           
-| Commodity Code              | 1                  |            
-| National NGP                | 1                  |            
-| Net Weight                  | 1                  |            
-| Statistical Value           | 1                  |            
-| Additional Units            | 1                  |            
-| Country Of Origin - Imports | 1                  |            
-| Final Destination - Exports | 1                  |            
-| VAT Code Of Customer        | 4, 1               |            
-| Complementary Code          | 4, 1               |           
-| Period Of Reference         | 4, 1               |         
+| Direction code                        | 4, 1, 5               | 
+| Number Of Declaration       | 4, 1, 5               |
+| Number Of Line              | 4, 1, 5               | 
+| Siren                       | 4, 1, 5               |
+| County (Department)         | 1, 5                  |          
+| Transport Code              | 1, 5                  |          
+| Country Of Origin           | 1, 5                  |            
+| Nature Of Transaction       | 1, 5                  |             
+| Invoice Value               | 4, 1, 5               |             
+| Modes Of Delivery           | 1, 5                  |           
+| Transaction Type            | 4, 1, 5               |            
+| Obligation Level            | 4, 1, 5               |           
+| Commodity Code              | 1, 5                  |            
+| National NGP                | 1, 5                  |            
+| Net Weight                  | 1, 5                  |            
+| Statistical Value           | 1, 5                  |            
+| Additional Units            | 1, 5                  |            
+| Country Of Origin - Imports | 1, 5                  |            
+| Final Destination - Exports | 1, 5                  |            
+| VAT Code Of Customer        | 4, 1, 5               |            
+| Complementary Code          | 4, 1, 5               |           
+| Period Of Reference         | 4, 1, 5               |         
 
-### Set up Intrastat
+## Set up Intrastat
 
 1.  In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index), in the Shared asset library, download the latest versions of the following Electronic reporting (ER) configurations for the Intrastat declaration:
 
@@ -88,22 +88,15 @@ The table also indicates the report level of the field. The field can be **4** (
 
     For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
-2.  In Dynamics 365 Finance, go to **Tax** > **Setup** >  **Foreign trade** > **Foreign trade parameters**, and follow these steps:
+### Set up NAF codes
 
-    1. On the **Intrastat** tab, on the **Electronic reporting** FastTab, in the **File format mapping** field, select **Intrastat INTRACOM (FR)** or **Intrastat SAISUNIC (FR)**.
-    2. In the **Report format mapping** field, select **Intrastat report**.
-    3. On the **Commodity code hierarchy** FastTab, in the **Category hierarchy** field, select **Intrastat**.
-    4. On the **General** FastTab, in the **Transaction code** field, select the code that is used for transfers of goods.
-    5. In the **Credit note** field, select the code that is used for returns of goods.
-    6. In the **Obligation level for export** field, enter the level of detail for the export report. The level that you select affects the lines that are shown on the report. For more information, see the tables at the beginning of this topic.
-
-3. Go to **Organization administration** > **Organizations** > **Legal entities**, select your company, and then follow these steps:
+1. Go to **Organization administration** > **Organizations** > **Legal entities**, select your company, and then follow these steps:
 
     1. On the **Registration numbers** FastTab, in the **NAF code** field, enter your NAF code. For more information, see [FR-00003 NAF codes and Siret numbers](tasks/fr-00003-naf-codes-siret-numbers.md).
     2. On the **Foreign trade and logistics** FastTab, in the **Intrastat** section, set the **VAT exempt number export** and **VAT exempt number import** fields.
     3. On the **Tax registration** FastTab, in the **Tax registration number** field, enter your company's tax registration number.
 
-4. To specify NAF codes and tax-exempt numbers for customers, go to **Accounts receivable** > **Customers** > **All customers**, and follow these steps:
+2. To specify NAF codes and tax-exempt numbers for customers, go to **Accounts receivable** > **Customers** > **All customers**, and follow these steps:
 
     1. Select a customer.
     2. On the **Invoice and delivery** FastTab, in the **Sales tax** section, in the **Tax exempt number** field, enter the customer's tax-exempt number.
@@ -111,7 +104,7 @@ The table also indicates the report level of the field. The field can be **4** (
     4. In the **NAF code** field, enter the company's NAF code.
     5. Repeat these steps for other customers.
 
-5. To specify NAF codes and tax-exempt numbers for vendors, go to **Accounts payable** > **Vendors** > **All vendors**, and follow these steps:
+3. To specify NAF codes and tax-exempt numbers for vendors, go to **Accounts payable** > **Vendors** > **All vendors**, and follow these steps:
 
     1. Select a vendor.
     2. On the **Invoice and delivery** FastTab, in the **Sales tax** section, in the **Tax exempt number** field, enter the vendor's tax-exempt number.
@@ -119,12 +112,47 @@ The table also indicates the report level of the field. The field can be **4** (
     4. In the **NAF code** field, enter the company's NAF code.
     5. Repeat these steps for other vendors.
 
-6. Go to **Tax** > **Setup** > **Foreign trade** > **Compression of Intrastat**, and select the fields that should be compared when Intrastat information is summarized. For French Intrastat, select **Statistics procedure**, **State of origin**, **Country/region of origin**, **Delivery terms**, **Transport**, **Correction**, **Country/region**, **County of origin/destination**, **Direction**, **Country/region of sender**, **State of sender**, **State**, **Transaction code**, and **Commodity**.
+### Set up foreign trade parameters
 
-7. Go to **Warehouse management** > **Setup** > **Warehouse** > **Warehouses**, select a warehouse, and then follow these steps:
+In Dynamics 365 Finance, go to **Tax** > **Setup** >  **Foreign trade** > **Foreign trade parameters**, and follow these steps:
 
-    1. On the **Addresses** FastTab, select **Add** or **Edit**.
-    2. In the dialog box, in the **City** field, select the warehouse's city. The city's state will be used as a county for your DEB report.
+1. On the **Intrastat** tab, on the **Electronic reporting** FastTab, in the **File format mapping** field, select **Intrastat INTRACOM (FR)** or **Intrastat SAISUNIC (FR)**.
+2. In the **Report format mapping** field, select **Intrastat report**.
+3. On the **Commodity code hierarchy** FastTab, in the **Category hierarchy** field, select **Intrastat**.
+4. On the **General** FastTab, in the **Transaction code** field, select the code that is used for transfers of goods.
+5. In the **Credit note** field, select the code that is used for returns of goods.
+
+
+ ### Set up compression of Intrastat
+
+Go to **Tax** > **Setup** > **Foreign trade** > **Compression of Intrastat**, and select the fields that should be compared when Intrastat information is summarized. For French Intrastat, select the following fields:
+- Statistics procedure
+- State of origin
+- Country/region of origin
+- Delivery terms
+- Transport
+- Correction
+- Country/region
+- County of origin/destination
+- Direction
+- Country/region of sender
+- State of sender
+- State
+- Transaction code
+- Commodity
+
+
+### Set up product parameters for the Intrastat declaration
+1. Go to **Product information management** >** Products** > **Released products**.
+2. In the grid, select a product.
+3. On the **Foreign trade** FastTab, in the **Intrastat** section, in the **Commodity** field, select the commodity code. The name of the commodity will be printed in the **Description of commodities** field on the Intrastat report.
+3. In the **Origin** section, in the **Country/region** field, select the product's country or region of origin.
+4. On the **Manage inventory** FastTab, in the **Net weight** field, enter the product's weight in kilograms.    
+
+### Set up warehouse parameters for the Intrastat declaration
+Go to **Warehouse management** > **Setup** > **Warehouse** > **Warehouses**, select a warehouse, and then follow these steps:
+1. On the **Addresses** FastTab, select **Add** or **Edit**.
+2. In the dialog box, in the **City** field, select the warehouse's city. The city's state will be used as a county for your DEB report.
 
 ### NGP codes
 
@@ -133,7 +161,7 @@ On the DEB report, the codification of products consists of the following elemen
   - The eight-digit CN8 code that represents the tariff and statistical nomenclature of the EU.
   - If applicable, the one-digit Nomenclature Générale des Produits (NGP) national item code.
 
-In 2021, the NGP applies to only three types of products:
+In 2022, the NGP applies to only three types of products:
 
   - Some products from cows, sheep, and goats
   - Military equipment
@@ -154,19 +182,19 @@ In 2021, the NGP applies to only three types of products:
 2. In the grid, select a product.
 3. On the **Foreign trade** FastTab, in the **Intrastat** section, in the **NGP** field, select the appropriate NGP code.
 
-## Intrastat journal
+### Intrastat journal
 
 Go to **Tax** > **Declarations** > **Foreign** **trade** > **Intrastat** to manage your transactions that are applicable to foreign trade with EU countries. For more information, see [Intrastat overview](emea-intrastat.md).
 
 The **NGP** column is specific to France. It shows the NGP code for the product. If the NGP isn't applicable to a product, **0** (zero) is shown. You can adjust the NGP code. Select the transaction, and then, on the **General** tab, in the **Codes** section, in the **NGP** field, select the required NGP code.
 
-### Intrastat transfer
+#### Intrastat transfer
 
 On the **Intrastat** page, on the Action Pane, you can select **Transfer** to automatically transfer the information about intracommunity trade from your sales orders, free text invoices, purchase orders, vendor invoices, vendor product receipts, project invoices, and transfer orders. Only documents that have an EU country as the country or region of destination (for dispatches) or consignment (for arrivals) will be transferred.
 
 Because the DEB report is a combination of the EU Sales List and the Intrastat report, it also includes *triangular* transactions, where a direct delivery is made from one EU country (party A) to another EU country (party C), and a French legal entity (party B) is in the middle of the triangular deal.
 
-### Generate a DEB (Intrastat) report
+#### Generate a DEB (Intrastat) report
 
 1. Go to **Tax** > **Declarations** > **Foreign trade** > **Intrastat**.
 2. On the Action Pane, select **Output** > **Report**.
