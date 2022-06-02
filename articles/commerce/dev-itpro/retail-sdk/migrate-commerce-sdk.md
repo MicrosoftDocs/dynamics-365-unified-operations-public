@@ -217,7 +217,7 @@ if (!result.IsNullOrEmpty())
 <td> DataCacheAccessor </td>
 <td>
 
-DataCacheAccessor is internal. Please use .NET memory cache or similar approach.
+DataCacheAccessor is internal. Use .NET memory cache or a similar approach.
 
 </td>
 <tr>
