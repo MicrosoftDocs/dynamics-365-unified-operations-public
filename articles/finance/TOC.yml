@@ -1686,6 +1686,8 @@
             href: general-ledger/sales-tax-calculation-methods-origin-field.md
           - name: Whole amount and interval calculation options for sales tax codes
             href: general-ledger/whole-amount-interval-options-sales-tax-codes.md
+          - name: Sales tax calculation and rounding
+            href: general-ledger/sales-tax-calculation-rounding.md
           - name: Sales tax calculation on general journal lines
             href: general-ledger/sales-tax-calculation-on-general-journal.md          
           - name: Calculate and adjust sales tax on a vendor invoice
