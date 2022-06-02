@@ -3,7 +3,7 @@
 title: VAT declaration (Belgium)
 description: This topic provides information about the VAT declaration for Belgium.
 author: anasyash
-ms.date: 05/27/2022
+ms.date: 06/02/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
