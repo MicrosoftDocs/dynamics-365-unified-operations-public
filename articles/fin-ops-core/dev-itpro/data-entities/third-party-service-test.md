@@ -2,7 +2,7 @@
 # required metadata
 
 title: Test services by using third-party utilities
-description: This topic describes how to set up third-party utilities to test services.
+description: This article describes how to set up third-party utilities to test services.
 author: peakerbl
 ms.date: 12/05/2019
 ms.topic: article
@@ -40,7 +40,7 @@ At <https://github.com/Microsoft/Dynamics-AX-Integration>, Microsoft provides sa
 - Test the response of a service to a well-known request.
 - Determine how exceptions will appear to the other endpoint.
 
-Many frequently used tools that will help you perform these actions are available. This topic isn't an endorsement of any tool. Although it provides examples that use some frequently used software utilities, the principles should broadly apply to other, similar tools.
+Many frequently used tools that will help you perform these actions are available. This article isn't an endorsement of any tool. Although it provides examples that use some frequently used software utilities, the principles should broadly apply to other, similar tools.
 
 ## Prerequisites
 

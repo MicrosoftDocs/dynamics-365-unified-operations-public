@@ -2,7 +2,7 @@
 # required metadata
 
 title: Cloud operations and servicing
-description: This topic describes cloud operations and servicing.
+description: This article describes cloud operations and servicing.
 author: laneswenka
 ms.date: 04/27/2022
 ms.topic: article
@@ -70,7 +70,7 @@ Updates are applied as deployable packages on an environment. A deployable packa
   - Application hotfixes: Application hotfixes are code changes. After the application hotfix is downloaded, it must be applied on a dev environment to generate a deployable package. For more information, see [Create deployable packages of models](../deployment/create-apply-deployable-package.md) and [Install metadata hotfixes in development environments](../migration-upgrade/install-metadata-hotfix-package.md).
   - Application customizations: These are customizations that ISV or partners create. These are deployable packages that are uploaded to the Asset Library and can be applied from there.
 - **Apply an update**
-  Use the information in the topic, [Apply updates to cloud environments](../deployment/apply-deployable-package-system.md), to walk through the steps for applying a deployable package. The update package can be a binary hotfix for Application Object Server (AOS) or a deployable package that was created in your development environment.
+  Use the information in the article, [Apply updates to cloud environments](../deployment/apply-deployable-package-system.md), to walk through the steps for applying a deployable package. The update package can be a binary hotfix for Application Object Server (AOS) or a deployable package that was created in your development environment.
 - **Validate an update**
   After an update is applied, you should validate the application to:
   - Ensure that the update addressed the issue that it was applied for.

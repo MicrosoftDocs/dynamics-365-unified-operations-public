@@ -2,7 +2,7 @@
 # required metadata
 
 title: Apply the latest platform update to environments
-description: This topic explains how to apply the latest platform update to your Finance and Operations environment.
+description: This article explains how to apply the latest platform update to your Finance and Operations environment.
 author: tariqbell
 ms.date: 08/16/2019
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 3
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to apply the latest platform release to your Finance and Operations environment.
+This article explains how to apply the latest platform release to your Finance and Operations environment.
 
 ## Overview
 

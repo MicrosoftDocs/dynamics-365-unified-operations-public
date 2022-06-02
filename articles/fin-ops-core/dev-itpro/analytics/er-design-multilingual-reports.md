@@ -2,7 +2,7 @@
 # required metadata
 
 title: Design multilingual reports in Electronic reporting
-description: This topic explains how you can use Electronic reporting (ER) labels to design and generate multilingual reports.
+description: This article explains how you can use Electronic reporting (ER) labels to design and generate multilingual reports.
 author: NickSelin
 ms.date: 05/31/2022
 ms.topic: article
@@ -206,7 +206,7 @@ Configuration of an ER component is done in the draft version of the ER configur
 
 ![ER Configurations page offering access to the configuration's version in the Draft status.](./media/er-multilingual-labels-configurations.png)
 
-As described earlier in this topic, you can add required ER labels to an editable ER component. In this way, you can specify the text of the ER labels in the EN-US language. You can then export the labels of the ER component by using the built-in ER function. Select the draft version of an ER configuration that contains the editable ER component, and then select **Exchange \> Export labels**.
+As described earlier in this article, you can add required ER labels to an editable ER component. In this way, you can specify the text of the ER labels in the EN-US language. You can then export the labels of the ER component by using the built-in ER function. Select the draft version of an ER configuration that contains the editable ER component, and then select **Exchange \> Export labels**.
 
 ![ER Configurations page allowing to export ER labels from the selected conviguration version.](./media/er-multilingual-labels-export.png)
 
@@ -237,7 +237,7 @@ ER versioning controls label assignment to any attribute in an ER component. Cha
 
 The built-in [LISTOFFIELDS](er-functions-list-listoffields.md) ER function can access ER labels that have been configured for some items of ER components.
 
-As described earlier in this topic, the **Label** and **Description** attributes of every [model](#LinkModelEnum) or [format](#LinkFormatEnum) ER enumeration's value can be linked to an ER label that is accessible in the appropriate ER component. You can configure an ER expression where you call the **LISTOFFIELDS** function by using the ER enumeration as an argument. This expression returns a list that contains a record for every value of an ER enumeration that has been defined as an argument of this function. Every record contains the value of an ER label that is linked to an ER enumeration value:
+As described earlier in this article, the **Label** and **Description** attributes of every [model](#LinkModelEnum) or [format](#LinkFormatEnum) ER enumeration's value can be linked to an ER label that is accessible in the appropriate ER component. You can configure an ER expression where you call the **LISTOFFIELDS** function by using the ER enumeration as an argument. This expression returns a list that contains a record for every value of an ER enumeration that has been defined as an argument of this function. Every record contains the value of an ER label that is linked to an ER enumeration value:
 
 - The value of an ER label that is linked to the **Label** attributes is stored in the **Label** field of the returned record.
 - The value of an ER label that is linked to the **Description** attributes is stored in the **Description** field of the returned record.

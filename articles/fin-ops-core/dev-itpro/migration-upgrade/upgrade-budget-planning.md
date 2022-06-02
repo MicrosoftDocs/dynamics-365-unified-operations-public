@@ -2,7 +2,7 @@
 # required metadata
 
 title: Upgrade budget planning
-description: This topic explains what must be reconfigured and also describes new features that should be considered after the upgrade is completed.  
+description: This article explains what must be reconfigured and also describes new features that should be considered after the upgrade is completed.  
 author: panolte
 ms.date: 04/10/2017
 ms.topic: article
@@ -31,9 +31,9 @@ ms.search.validFrom: 2016-11-30
 
 [!include [banner](../includes/banner.md)]
 
-There are significant differences in budget planning between Microsoft Dynamics AX 2012 and Dynamics 365 Finance. Some features were not upgraded and therefore require reconfiguration. This topic explains what must be reconfigured and also describes new features that should be considered after the upgrade is completed.  
+There are significant differences in budget planning between Microsoft Dynamics AX 2012 and Dynamics 365 Finance. Some features were not upgraded and therefore require reconfiguration. This article explains what must be reconfigured and also describes new features that should be considered after the upgrade is completed.  
 
-Budget planning in Finance has many enhancements that weren't available in Dynamics AX 2012. This topic explains the changes that customers who upgrade must make. It also points out the new features that should be considered in the upgrade process. Because of the extent of the changes, any existing budget plans will not be able to be opened until the changes that are outlined in this topic are made. However, reports should continue to work and not require additional changes.
+Budget planning in Finance has many enhancements that weren't available in Dynamics AX 2012. This article explains the changes that customers who upgrade must make. It also points out the new features that should be considered in the upgrade process. Because of the extent of the changes, any existing budget plans will not be able to be opened until the changes that are outlined in this article are made. However, reports should continue to work and not require additional changes.
 
 ## Overview of changes
 Many significant changes have been made in Budgeting for Finance and Operations. These changes are intended to make Budget planning easier to configure and more reusable, to reduce year-over-year maintenance and setup. The following areas in AX 2012 no longer exist in Finance:
@@ -64,7 +64,7 @@ Budget planning processes are mostly the same as in AX 2012. The most significan
 In AX 2012, justification documents were saved to an attachment folder. No previous justification documents are upgraded. Justification documents are now stored in the database. If this information should be saved in the upgraded version, you can upload final justification documents for each plan as an attachment by using the **Justification** button on the Action Pane. In AX 2012, Excel worksheets for each budget plan were created based on the template. In Finance, all plans open a copy of the layout. However, no changes to the Excel file are saved. Any formulas or supporting information that were used on a per-plan basis must be added via comments, a justification document, or some other supplemental process.
 
 ## Configuring an upgraded environment from AX 2012
-To help you determine how to configure the upgraded system, the following example uses an upgraded budget process from AX 2012 demo data. Default configuration data for columns were created to help with the upgrade process. You can update or delete this default data if doesn't meet your configuration requirements. **Note:** There are new required fields that won't be set in the system. If you get stuck on a page, such as the **Budget planning configuration** page, and can't navigate away, you can close your browser and then reopen it to a different page to enter details in the correct order. There are required fields that aren't yet set. Therefore, issues might occur until everything is configured and all required fields have been set. This topic explains how to set these fields, as required. Here are some of these required fields:
+To help you determine how to configure the upgraded system, the following example uses an upgraded budget process from AX 2012 demo data. Default configuration data for columns were created to help with the upgrade process. You can update or delete this default data if doesn't meet your configuration requirements. **Note:** There are new required fields that won't be set in the system. If you get stuck on a page, such as the **Budget planning configuration** page, and can't navigate away, you can close your browser and then reopen it to a different page to enter details in the correct order. There are required fields that aren't yet set. Therefore, issues might occur until everything is configured and all required fields have been set. This article explains how to set these fields, as required. Here are some of these required fields:
 
 -   **Budget planning process** page: **Default account structure** field
 -   **Budget planning process** page: **Layout** field on the **Budget planning stage rules and layouts** FastTab

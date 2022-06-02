@@ -1,6 +1,6 @@
 ---
 title: Extend the scope of number sequences
-description: This topic explains how developers can extend number sequence scope.
+description: This article explains how developers can extend number sequence scope.
 author: RobinARH
 ms.date: 04/14/2017
 ms.topic: article
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic shows you how to extend the number sequence scope.
+This article shows you how to extend the number sequence scope.
 
 The scope of a number sequence defines which organization uses the number sequence. The scope can be **Shared**, **Company**, **Legal entity**, or **Operating unit**. **Company** and **Legal entity** scopes can be combined with fiscal calendar periods to create even more specific number sequences. New number sequence scopes can be added through extensions.  
 

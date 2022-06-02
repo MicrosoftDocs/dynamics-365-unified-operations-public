@@ -1,6 +1,6 @@
 ---
 title: Currency data-type migration for dual-write
-description: This topic describes how to change the number of decimal places that dual-write supports for currency.
+description: This article describes how to change the number of decimal places that dual-write supports for currency.
 author: RamaKrishnamoorthy 
 ms.date: 12/08/2021
 ms.topic: article

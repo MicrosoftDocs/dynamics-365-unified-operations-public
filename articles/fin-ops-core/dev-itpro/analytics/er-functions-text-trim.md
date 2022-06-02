@@ -2,7 +2,7 @@
 # required metadata
 
 title: TRIM ER function
-description: This topic provides information about how the TRIM Electronic reporting (ER) function is used.
+description: This article provides information about how the TRIM Electronic reporting (ER) function is used.
 author: NickSelin
 ms.date: 02/28/2022
 ms.prod: 

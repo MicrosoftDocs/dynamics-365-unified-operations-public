@@ -2,7 +2,7 @@
 # required metadata
 
 title: Behavioral properties on data entities
-description: This topic describes data entity properties that let you override property values on the tables or views that are the data sources of that entity. 
+description: This article describes data entity properties that let you override property values on the tables or views that are the data sources of that entity. 
 author: peakerbl
 ms.date: 10/01/2019
 ms.topic: article
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Every data entity has properties that let you override the same property values on the tables or views that are the data sources of that entity. Your choices affect the behavior of the entity. In the following table, the first column lists the properties that are discussed in this topic. The top row lists the levels where the property is found in the entity designer. The levels are listed in order of increasing granularity: the data source level is more granular than the entity level but less granular than the field level.
+Every data entity has properties that let you override the same property values on the tables or views that are the data sources of that entity. Your choices affect the behavior of the entity. In the following table, the first column lists the properties that are discussed in this article. The top row lists the levels where the property is found in the entity designer. The levels are listed in order of increasing granularity: the data source level is more granular than the entity level but less granular than the field level.
 
 |  &nbsp;           | Entity level | Data source level | Field level |
 |-------------------|--------------|-------------------|-------------|

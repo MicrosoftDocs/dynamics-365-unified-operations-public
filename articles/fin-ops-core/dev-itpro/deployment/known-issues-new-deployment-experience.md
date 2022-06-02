@@ -2,7 +2,7 @@
 # required metadata
 
 title: Known issues with self-service deployment
-description: This topic lists known issues that you might experience when using self-service deployment.
+description: This article lists known issues that you might experience when using self-service deployment.
 author: rashmansur
 ms.date: 03/31/2021
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 8.1.1
 [!include[banner](../includes/banner.md)]
 [!include [banner](../includes/limited-availability.md)]
 
-This topic describes the known issues with [self-service deployment](infrastructure-stack.md).
+This article describes the known issues with [self-service deployment](infrastructure-stack.md).
 
 ## Lifecycle Services (LCS)
 

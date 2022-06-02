@@ -2,7 +2,7 @@
 # required metadata
 
 title: Remove and reinstall, or add an AOS node
-description: This topic explains how to remove an Application Object Server (AOS) node in your on-premises environment to reduce or replace a failed node.
+description: This article explains how to remove an Application Object Server (AOS) node in your on-premises environment to reduce or replace a failed node.
 author: ttreen
 ms.date: 07/28/2021
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Platform update 34
 
 [!include[banner](../includes/banner.md)]
 
-This topic explains how to remove an Application Object Server (AOS) node in your on-premises environment to reduce or replace a failed node. It also explains how to add a new AOS node for scale-out performance.
+This article explains how to remove an Application Object Server (AOS) node in your on-premises environment to reduce or replace a failed node. It also explains how to add a new AOS node for scale-out performance.
 
 ## Remove a node
 

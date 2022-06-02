@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure the Warehousing app for on-premises deployments
-description: This topic describes the prerequisites for the warehousing app for on-premises deployments.
+description: This article describes the prerequisites for the warehousing app for on-premises deployments.
 author: faix
 ms.date: 04/05/2022
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 7.3
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to configure Dynamics 365 for Finance and Operations – Warehousing app for on-premises deployments.
+This article describes how to configure Dynamics 365 for Finance and Operations – Warehousing app for on-premises deployments.
 
 ## Prerequisites
 The Warehousing app is available on Android and Windows operating systems. To use the app for on-premises deployments, at a minimum, it must be version 1.1.1.0. You must also have one of the following supported versions of Dynamics 365 Finance + Operations (on-premises). Use the information in the following table to evaluate if your hardware and software environment supports the configuration.

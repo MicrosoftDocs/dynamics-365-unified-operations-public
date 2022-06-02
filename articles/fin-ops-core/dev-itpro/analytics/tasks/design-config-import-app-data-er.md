@@ -32,7 +32,7 @@ This procedure shows how to design Electronic reporting (ER) configurations to p
 
 This procedure is created for users with the assigned role of System administrator or Electronic reporting developer.
 
-These steps can be completed using any dataset. Before you begin, download and save the files listed in the topic, "Parse incoming documents to update application data" ([Parse incoming documents](../parse-incoming-electronic-documents.md)). The files are: EFSTA model.xml, EFSTA format.xml, Response1.xml, Response2.xml, Response3.xml, Response4.xml.
+These steps can be completed using any dataset. Before you begin, download and save the files listed in the article, "Parse incoming documents to update application data" ([Parse incoming documents](../parse-incoming-electronic-documents.md)). The files are: EFSTA model.xml, EFSTA format.xml, Response1.xml, Response2.xml, Response3.xml, Response4.xml.
 
 1. Go to Organization administration > Workspaces > Electronic reporting.
     * Make sure that the configuration provider for the sample company, Litware, Inc., is available and marked as Active. If you don't see this configuration provider, complete the steps in the procedure, "Create a configuration provider and mark it as active".

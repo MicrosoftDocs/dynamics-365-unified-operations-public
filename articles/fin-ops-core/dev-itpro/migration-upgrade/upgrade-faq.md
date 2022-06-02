@@ -2,7 +2,7 @@
 # required metadata
 
 title: Upgrade from AX 2012 - Data upgrade FAQ
-description: This topic answers some frequently asked questions about data upgrade during an upgrade from Microsoft Dynamics AX 2012.
+description: This article answers some frequently asked questions about data upgrade during an upgrade from Microsoft Dynamics AX 2012.
 author: ttreen
 ms.date: 08/02/2021
 ms.topic: article
@@ -18,7 +18,7 @@ ms.search.validFrom: 2021-07-01
 
 [!include[banner](../includes/banner.md)]
 
-This topic answers some frequently asked questions about data upgrade during an upgrade from Microsoft Dynamics AX 2012.
+This article answers some frequently asked questions about data upgrade during an upgrade from Microsoft Dynamics AX 2012.
 
 ## Is the Tier 2 Azure SQL database sized enough for upgrades of large databases?
 

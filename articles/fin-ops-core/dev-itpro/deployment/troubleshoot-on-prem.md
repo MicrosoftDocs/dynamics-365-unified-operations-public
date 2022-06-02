@@ -2,7 +2,7 @@
 # required metadata
 
 title: Troubleshoot on-premises deployments
-description: This topic provides troubleshooting information for deployments of Microsoft Dynamics 365 Finance + Operations (on-premises).
+description: This article provides troubleshooting information for deployments of Microsoft Dynamics 365 Finance + Operations (on-premises).
 author: PeterRFriis
 ms.date: 04/05/2022
 ms.topic: article
@@ -31,13 +31,13 @@ ms.dyn365.ops.version: Platform Update 8
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides troubleshooting information for deployments of Microsoft Dynamics 365 Finance + Operations (on-premises).
+This article provides troubleshooting information for deployments of Microsoft Dynamics 365 Finance + Operations (on-premises).
 
 ## Access Service Fabric Explorer
 
 You can access Service Fabric Explorer in a web browser by using the default address, `https://sf.d365ffo.onprem.contoso.com:19080`.
 
-To verify the address, note the value that was used in the "Create DNS zones and add A records" section of the appropriate setup and deployment topic for your environment:
+To verify the address, note the value that was used in the "Create DNS zones and add A records" section of the appropriate setup and deployment article for your environment:
 
 - [Platform update 41 and later](setup-deploy-on-premises-pu41.md#createdns)
 - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#createdns)
@@ -137,7 +137,7 @@ Note the current deployment status for the environment in Microsoft Dynamics Lif
 
 ## A time-out error occurs when a Service Fabric cluster is created
 
-Run Test-D365FOConfiguration.ps1 as noted in the "Set up a standalone Service Fabric cluster" section of the appropriate setup and deployment topic for your environment. Note any errors.
+Run Test-D365FOConfiguration.ps1 as noted in the "Set up a standalone Service Fabric cluster" section of the appropriate setup and deployment article for your environment. Note any errors.
 
 - [Platform update 41 and later](setup-deploy-on-premises-pu41.md#setupsfcluster)
 - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#setupsfcluster)
@@ -233,7 +233,7 @@ To clean up an existing environment and redeploy, follow these steps.
     - ConfigTemplate.xml
     - ClusterConfig.json
 
-    For information about how to correctly fill in the fields in the templates, see the appropriate setup and deployment topic for your environment:
+    For information about how to correctly fill in the fields in the templates, see the appropriate setup and deployment article for your environment:
 
     - [Platform update 41 and later](setup-deploy-on-premises-pu41.md)
     - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md)
@@ -247,7 +247,7 @@ To clean up an existing environment and redeploy, follow these steps.
 
     2. Download the latest local agent configuration, localagent-config.json.
 
-6. Deploy again by following the instructions in the appropriate setup and deployment topic for the environment:
+6. Deploy again by following the instructions in the appropriate setup and deployment article for the environment:
 
     - [Platform update 41 and later](setup-deploy-on-premises-pu41.md)
     - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md)
@@ -356,7 +356,7 @@ You can also manually add the following values in the **components** section of 
         </Certificate>
         ```
 
-3. Make sure that the same certificate that is specified in the local agent configuration in LCS was used to complete the steps in the "Configure LCS connectivity for the tenant" section of the appropriate setup and deployment topic for your environment:
+3. Make sure that the same certificate that is specified in the local agent configuration in LCS was used to complete the steps in the "Configure LCS connectivity for the tenant" section of the appropriate setup and deployment article for your environment:
 
     - [Platform update 41 and later](setup-deploy-on-premises-pu41.md#configurelcs)
     - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#configurelcs)
@@ -396,7 +396,7 @@ To resolve the error, run the .\Set-CertificateAcls.ps1 script to reset the ACLs
     </ADServiceAccount>
     ```
 
-3. Make sure that the "Set up file storage" section of the appropriate setup and deployment topic for your environment is completed:
+3. Make sure that the "Set up file storage" section of the appropriate setup and deployment article for your environment is completed:
 
     - [Platform update 41 and later](setup-deploy-on-premises-pu41.md#setupfile)
     - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#setupfile)
@@ -706,7 +706,7 @@ Category does not exist.
 You can do additional logging by registering providers. To register providers, in the LCS Shared asset library, select **Model** as the asset type, and then download the **Microsoft Dynamics 365 Finance + Operations (on-premises), LBDMRDeployerTroubleshooter** asset. Copy the zip file that is downloaded to the **primary** orchestrator machine, unzip it, and then run the following commands. (To determine which machine is the primary instance, in Service Fabric Explorer, expand **Cluster** \> **Applications** \> **LocalAgentType** \> **fabric:/LocalAgent/OrchestrationService** \> **(GUID)**.)
 
 > [!NOTE]
-> If results in Event Viewer don't appear correct (for example, if words are truncated), get the latest manifest and .dll files. To get the latest manifest and .dll files, go to the WP folder in the agent file share. This share was created in the "Set up file storage" section of the appropriate setup and deployment topic for your environment:
+> If results in Event Viewer don't appear correct (for example, if words are truncated), get the latest manifest and .dll files. To get the latest manifest and .dll files, go to the WP folder in the agent file share. This share was created in the "Set up file storage" section of the appropriate setup and deployment article for your environment:
 > 
 > - [Platform update 41 and later](setup-deploy-on-premises-pu41.md#setupfile)
 > - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#setupfile)
@@ -991,7 +991,7 @@ If this error occurs, follow these steps.
 5. Make sure that the **IdTokenIssuer** value matches the **Federation Service Identifier** value from step 3, and also the **Provisioning_AdminIdentityProvider** value on the **fabric:/AXSF Details** tab at **Service Fabric Explorer** \> **Cluster** \> **Applications** \> **AXSFType**.
 3. In Service Fabric Explorer, verify that the **Provisioning\_AdminPrincipalName** and **Provisioning\_AdminIdentityProvider** values are valid.
 
-If the preceding steps don't resolve the issue, see the [AD FS](troubleshoot-on-prem.md#ad-fs) section of this topic.
+If the preceding steps don't resolve the issue, see the [AD FS](troubleshoot-on-prem.md#ad-fs) section of this article.
 
 ## System.Data.SqlClient.SqlException (0x80131904) and System.ComponentModel.Win32Exception (0x80004005)
 
@@ -1005,7 +1005,7 @@ In this case, either the certificates haven't been installed, or they haven't gi
 
 ## Keyset doesn't exist
 
-If you find that the keyset doesn't exist, scripts weren't run on all machines. Review and complete the "Set up VMs" section of the appropriate setup and deployment topic for your environment:
+If you find that the keyset doesn't exist, scripts weren't run on all machines. Review and complete the "Set up VMs" section of the appropriate setup and deployment article for your environment:
 
 - [Platform update 41 and later](setup-deploy-on-premises-pu41.md#setupvms)
 - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#setupvms)
@@ -1058,7 +1058,7 @@ If you receive an "Unable to find certificate" error when you run Test-D365FOCon
 
 ## The client and server can't communicate because they don't have a common algorithm
 
-If the client and server can't communicate because they don't have a common algorithm, verify that the certificates that are created use the specified provider, as explained in the "Plan and acquire your certificates" section of the appropriate setup and deployment topic for your environment:
+If the client and server can't communicate because they don't have a common algorithm, verify that the certificates that are created use the specified provider, as explained in the "Plan and acquire your certificates" section of the appropriate setup and deployment article for your environment:
 
 - [Platform update 41 and later](setup-deploy-on-premises-pu41.md#plancert)
 - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#plancert)
@@ -1105,7 +1105,7 @@ Get-ADServiceAccount -Identity svc-LocalAgent$ -Properties PrincipalsAllowedToRe
 
 This issue occurs because AOS users aren't in the local administrator group, and User Account Control (UAC) hasn't been disabled correctly. To resolve the issue, follow these steps.
 
-1. Add AOS users as local admins, as described in the "Join VMs to the domain" section of the appropriate setup and deployment topic for your environment:
+1. Add AOS users as local admins, as described in the "Join VMs to the domain" section of the appropriate setup and deployment article for your environment:
 
     - [Platform update 41 and later](setup-deploy-on-premises-pu41.md#joindomain)
     - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#joindomain)
@@ -1173,7 +1173,7 @@ Follow these steps to configure the local agent with the updated tenant.
     .\LocalAgentCLI.exe Cleanup <path of localagent-config.json>
     ```
 
-2. Follow the steps in the "Configure LCS connectivity for the tenant" section of the appropriate setup and deployment topic for your environment:
+2. Follow the steps in the "Configure LCS connectivity for the tenant" section of the appropriate setup and deployment article for your environment:
 
     - [Platform update 41 and later](setup-deploy-on-premises-pu41.md#configurelcs)
     - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#configurelcs)

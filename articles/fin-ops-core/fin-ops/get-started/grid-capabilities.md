@@ -2,7 +2,7 @@
 # required metadata
 
 title: Grid capabilities
-description: This topic describes several powerful features of the grid control. You must enable the new grid feature to have access to these capabilities. 
+description: This article describes several powerful features of the grid control. You must enable the new grid feature to have access to these capabilities. 
 author: jasongre
 ms.date: 04/25/2022
 ms.topic: article

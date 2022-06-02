@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 10 (August 2017)
-description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 10. This version was released in August 2017.
+description: This article describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 10. This version was released in August 2017.
 author: tonyafehr
 ms.date: 08/17/2017
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 10
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 10. This version was released in August 2017 and has a build number of 7.0.4641.16233.
+This article describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 10. This version was released in August 2017 and has a build number of 7.0.4641.16233.
 
 Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to find supplemental information about new features and learn more about what new features are in development. For information about the bug fixes included in Platform update 10, log in to Lifecycle Services (LCS) and view this [KB article](https://go.microsoft.com/fwlink/?linkid=856083).
 
@@ -40,7 +40,7 @@ This feature will periodically prompt the user to provide feedback and rank thei
 
 ## Browser client - Support for keyboard shortcut sequences
 
-Dynamics 365 for Finance and Operations, Enterprise edition is a complex product that supports a large number of keyboard shortcuts to allow keyboard-only users to be productive. To ensure that there will be a sufficient number of choices for selecting keyboard shortcuts for upcoming features and to allow grouping of shortcuts for similar actions, key sequences are now supported. A key sequence allows a particular action to be triggered by pressing two key combinations sequentially. For example, the key sequence (Alt+M, N), which is Alt+M followed immediately by pressing the N key, is a new shortcut for moving focus to the navigation bar. See the [Keyboard shortcuts](shortcut-keys.md) topic for more examples of key sequences in the product, notably shortcuts for actions related to the Task recorder.
+Dynamics 365 for Finance and Operations, Enterprise edition is a complex product that supports a large number of keyboard shortcuts to allow keyboard-only users to be productive. To ensure that there will be a sufficient number of choices for selecting keyboard shortcuts for upcoming features and to allow grouping of shortcuts for similar actions, key sequences are now supported. A key sequence allows a particular action to be triggered by pressing two key combinations sequentially. For example, the key sequence (Alt+M, N), which is Alt+M followed immediately by pressing the N key, is a new shortcut for moving focus to the navigation bar. See the [Keyboard shortcuts](shortcut-keys.md) article for more examples of key sequences in the product, notably shortcuts for actions related to the Task recorder.
 
 ## Build and maintain mobile workspaces using X++ classes
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Validate applications for Finance and Operations apps
-description: This topic provides information about the requirements that are used to verify that custom code meets Microsoft guidelines.
+description: This article provides information about the requirements that are used to verify that custom code meets Microsoft guidelines.
 author: kfend
 ms.date: 04/13/2018
 ms.topic: article
@@ -30,7 +30,7 @@ ms.author: omarc
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the requirements that are used to verify that custom code meets Microsoft guidelines, and that a solution package can be successfully bundled and delivered in a Finance and Operations apps environment.
+This article provides information about the requirements that are used to verify that custom code meets Microsoft guidelines, and that a solution package can be successfully bundled and delivered in a Finance and Operations apps environment.
 
 Microsoft requires specific reviews in order to validate the following requirements:
 

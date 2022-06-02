@@ -1,6 +1,6 @@
 ---
 title: X++ variables
-description: This topic describes variables in X++.
+description: This article describes variables in X++.
 author: RobinARH
 ms.date: 08/27/2021
 audience: Developer
@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes variables in X++.
+This article describes variables in X++.
 
 - A *variable* is an identifier that points to a memory location where information of a specific data type is stored. The size, precision, default value, implicit and explicit [conversion](xpp-conversion-run-time-functions.md) functions, and range depend on the variable's data type.
 - The *scope* of a variable defines the area in the code where an item can be accessed.

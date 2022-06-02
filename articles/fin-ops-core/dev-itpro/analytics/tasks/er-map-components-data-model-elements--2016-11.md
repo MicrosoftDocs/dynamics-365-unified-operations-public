@@ -2,7 +2,7 @@
 # required metadata 
  
 title: ER Map components of the created format to data model elements (November 2016)
-description: This topic describes how to map data model elements to components of the created Electronic reporting (ER) configuration. 
+description: This article describes how to map data model elements to components of the created Electronic reporting (ER) configuration. 
 author: NickSelin
 ms.date: 08/29/2018
 ms.topic: business-process 

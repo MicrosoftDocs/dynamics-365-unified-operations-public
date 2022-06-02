@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up and deploy on-premises environments (Platform updates 12 through 40)
-description: This topic provides information about how to plan, set up, and deploy Dynamics 365 Finance + Operations (on-premises) with Platform updates 12 through 40.
+description: This article provides information about how to plan, set up, and deploy Dynamics 365 Finance + Operations (on-premises) with Platform updates 12 through 40.
 author: PeterRFriis
 ms.date: 11/30/2021
 ms.topic: article
@@ -32,11 +32,11 @@ ms.dyn365.ops.version: Platform update 12
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about how to plan, set up, and deploy Dynamics 365 Finance + Operations (on-premises) with Platform update 12-40.
+This article provides information about how to plan, set up, and deploy Dynamics 365 Finance + Operations (on-premises) with Platform update 12-40.
 
 The [Local Business Data Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=13595809&view=all) is available. You can post questions or feedback you may have about the on-premises deployment there.
 
-If you have questions or feedback about the content in this topic, please post them in the **Comments** section at the bottom of this page.
+If you have questions or feedback about the content in this article, please post them in the **Comments** section at the bottom of this page.
 
 ## Finance + Operations components
 
@@ -114,7 +114,7 @@ For more information, see [System requirements for on-premises deployments](../.
 
 Plan your infrastructure and Service Fabric cluster based on the recommended sizing in [Hardware sizing requirements for on-premises environments](../../fin-ops/get-started/hardware-sizing-on-premises-environments.md). For more information about how to plan the Service Fabric cluster, see [Plan and prepare your Service Fabric standalone cluster deployment](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
 
-The following table shows an example of a hardware layout. This example is used throughout this topic to illustrate the setup. You will need to replace the machine names and IP addresses given in the following instructions with the names and IP addresses for the machines in your environment.
+The following table shows an example of a hardware layout. This example is used throughout this article to illustrate the setup. You will need to replace the machine names and IP addresses given in the following instructions with the names and IP addresses for the machines in your environment.
 
 > [!NOTE]
 > The Primary node of the Service Fabric cluster must have at least three nodes. In this example, **OrchestratorType** is designated as the Primary node type.
@@ -257,7 +257,7 @@ DNS Name=*.d365ffo.onprem.contoso.com
 
 ### <a name="plansvcacct"></a> 3. Plan your users and service accounts
 
-You must create several user or service accounts for Finance + Operations to work. You must create a combination of group managed service accounts (gMSAs), domain accounts, and SQL accounts. The following table shows the user accounts, their purpose, and example names that will be used in this topic.
+You must create several user or service accounts for Finance + Operations to work. You must create a combination of group managed service accounts (gMSAs), domain accounts, and SQL accounts. The following table shows the user accounts, their purpose, and example names that will be used in this article.
 
 | User account                                            | Type           | Purpose | User name |
 |---------------------------------------------------------|----------------|---------|-----------|
@@ -891,7 +891,7 @@ For more information, see [Install integration services](/sql/integration-servic
 
 ### <a name="setupssrs"></a> 17. Set up SSRS
 
-1. Before you begin, make sure that the prerequisites that are listed at the beginning of this topic are installed.
+1. Before you begin, make sure that the prerequisites that are listed at the beginning of this article are installed.
 2. Follow the steps in [Configure SQL Server Reporting Services for on-premises deployments](../analytics/configure-ssrs-on-premises.md).
     > [!IMPORTANT]
     > You must install then database engine when you install SSRS.
@@ -1039,12 +1039,12 @@ If the previous remoting PowerShell window was accidentally closed and CredSSP w
 
     ![Reconfigure button is available.](./media/Failed.png)
 
-    See the [Reconfigure environments to take a new platform or topology](../lifecycle-services/reconfigure-environment.md) topic for details about how to reconfigure. The following graphic shows a successful deployment.
+    See the [Reconfigure environments to take a new platform or topology](../lifecycle-services/reconfigure-environment.md) article for details about how to reconfigure. The following graphic shows a successful deployment.
 
     ![Environment successfully deployed.](./media/Deployed.png)
 
 ### <a name="connect"></a> 22. Connect to your Finance + Operations environment
-In your browser, navigate to https://[yourD365FOdomain]/namespaces/AXSF, where yourD365FOdomain is the domain name that you defined in the [Plan your domain name and DNS zones](#plandomain) section of this topic.
+In your browser, navigate to https://[yourD365FOdomain]/namespaces/AXSF, where yourD365FOdomain is the domain name that you defined in the [Plan your domain name and DNS zones](#plandomain) section of this article.
 
 ## Additional resources
 - [Apply updates to on-premises deployments](apply-updates-on-premises.md)

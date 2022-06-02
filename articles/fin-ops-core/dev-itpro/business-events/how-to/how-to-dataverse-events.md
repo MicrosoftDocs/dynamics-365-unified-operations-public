@@ -1,6 +1,6 @@
 ---
 title: Subscribe to events in Dataverse
-description: This topic describes how to subscribe to and manage Finance and Operations apps business events and data events in Microsoft Dataverse.
+description: This article describes how to subscribe to and manage Finance and Operations apps business events and data events in Microsoft Dataverse.
 author: jaredha
 ms.date: 11/08/2021
 ms.topic: article
@@ -19,7 +19,7 @@ ms.dyn365.ops.version: 10.0.22
 > [!IMPORTANT]
 > Before you subscribe to Finance and Operations apps business events and data events in Microsoft Dataverse, you must enable the Microsoft Power Platform integration. For information about how to enable the Microsoft Power Platform integration for a Finance and Operations apps environment, see [Enabling the Power Platform integration](../../power-platform/enable-power-platform-integration.md).
 
-You can subscribe to Finance and Operations apps business events and data events in Dataverse by registering plug-ins and software development kit (SDK) steps on the events in Dataverse. This topic describes how to use the Power Platform Tools extension for Visual Studio to register a plug-in for a Finance and Operations apps event. The subscriptions are shown together with other subscriptions in the business event catalog in Finance and Operations apps. The endpoint then works like other endpoints in the Finance and Operations apps business event catalog.
+You can subscribe to Finance and Operations apps business events and data events in Dataverse by registering plug-ins and software development kit (SDK) steps on the events in Dataverse. This article describes how to use the Power Platform Tools extension for Visual Studio to register a plug-in for a Finance and Operations apps event. The subscriptions are shown together with other subscriptions in the business event catalog in Finance and Operations apps. The endpoint then works like other endpoints in the Finance and Operations apps business event catalog.
 
 ## Set up your development environment
 

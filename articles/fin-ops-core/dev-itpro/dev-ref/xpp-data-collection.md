@@ -1,6 +1,6 @@
 ---
 title: X++ collection classes
-description: This topic describes collection classes in X++.
+description: This article describes collection classes in X++.
 author: RobinARH
 ms.date: 09/01/2021
 audience: Developer

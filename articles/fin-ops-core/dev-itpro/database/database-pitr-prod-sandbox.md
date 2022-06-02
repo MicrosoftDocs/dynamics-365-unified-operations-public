@@ -2,7 +2,7 @@
 # required metadata
 
 title: Point-in-time restore of the production database to a sandbox environment
-description: This topic describes how to use Microsoft Dynamics Lifecycle Services to do a point-in-time restore of the production database.
+description: This article describes how to use Microsoft Dynamics Lifecycle Services to do a point-in-time restore of the production database.
 author: LaneSwenka
 ms.date: 11/01/2021
 ms.topic: article
@@ -45,7 +45,7 @@ To provide customers with data application lifecycle management (DataALM) capabi
 4. The restore operation begins immediately.
 
 > [!IMPORTANT]
-> Self-service point in time restore (PITR) is not supported between environments that are on different regions. For more details, refer to the "Known issues" section later in this topic.
+> Self-service point in time restore (PITR) is not supported between environments that are on different regions. For more details, refer to the "Known issues" section later in this article.
 
 ### Restore operation failure
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Right-to-left language support and bidirectional text
-description: This topic discusses the issue of bidirectional text and how it's handled.
+description: This article discusses the issue of bidirectional text and how it's handled.
 author: RobinARH
 ms.date: 06/20/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-In the area of right-to-left (RTL) language support, one consideration is the combination of RTL text and left-to-right (LTR) text in the same string. This topic discusses the issue of bidirectional text and how it's handled.
+In the area of right-to-left (RTL) language support, one consideration is the combination of RTL text and left-to-right (LTR) text in the same string. This article discusses the issue of bidirectional text and how it's handled.
 
 ## A great example of right-to-left language support: Microsoft Word
 

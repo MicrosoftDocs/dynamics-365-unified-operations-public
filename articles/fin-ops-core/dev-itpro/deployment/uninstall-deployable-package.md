@@ -2,7 +2,7 @@
 # required metadata
 
 title: Uninstall a package
-description: This topic explains how to remove a deployable package from your environment.
+description: This article explains how to remove a deployable package from your environment.
 author: laneswenka
 ms.date: 09/22/2020
 ms.topic: article

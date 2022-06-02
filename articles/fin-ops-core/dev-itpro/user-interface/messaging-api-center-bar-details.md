@@ -2,7 +2,7 @@
 # required metadata
 
 title: Messaging APIs - Action center, message bar, and message details
-description: This topic describes the messaging system.
+description: This article describes the messaging system.
 author: jasongre
 ms.date: 10/15/2021
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the messaging system in Finance and Operations apps, specifically in terms of the application programming interfaces (APIs) that are used to create and route messages to end users.  
+This article describes the messaging system in Finance and Operations apps, specifically in terms of the application programming interfaces (APIs) that are used to create and route messages to end users.  
 
 ## Introduction
 
