@@ -45,7 +45,7 @@ To get started connecting your experiment in Commerce site builder, follow these
 
     > [!NOTE]
     > - A page can only be connected to one experiment at a time. To connect a page to a different experiment, first delete the experiment that the page is currently connected to.
-    > - You can only experiment on pages with a flexible layout. If your page has a fixed layout, convert it to a flexible layout first.
+    > - You can only experiment on pages with a custom layout. If your page has a preset layout, convert it to a custom layout first. You can do this by going to the page and selecting **Convert to custom layout** on the command bar. For more information on layouts, see [Preset and custom layouts](templates-layouts-overview.md#preset-and-custom-layouts). 
 
 1. If you are connecting to an experiment from the **Experiments** tab in the left navigation pane, choose the experiment name from the list that appears.
 1. Choose the page or fragment you want to run your experiment on.
