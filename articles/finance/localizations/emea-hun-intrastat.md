@@ -44,7 +44,7 @@ The following fields are included in the Hungarian Intrastat declaration. All th
 
 ## Preliminary setup
 
-To work with the Intrastat report, you must activate the **Date of VAT register** feature. For more information, see [Tax point date (Date of VAT register)](https://docs.microsoft.com/dynamics365/finance/localizations/emea-tax-point-date).
+To work with the Intrastat report, you must activate the **Date of VAT register** feature. For more information, see [Tax point date (Date of VAT register)](emea-tax-point-date.md).
 
 ## Set up Intrastat
 
@@ -54,7 +54,7 @@ From the Global repository, import the latest version of the following Electroni
 -   Intrastat report
 -   Intrastat (HU)
 
-For more information, see [Download ER configurations from the Global repository of Configuration service](https://ancorofficeline-my.sharepoint.com/personal/aosipov_ancorofficeline_onmicrosoft_com/fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
+For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
 ## Set up VAT IDs
 
@@ -62,7 +62,7 @@ For more information, see [Download ER configurations from the Global repository
 
 You must create VAT ID registration types for all the countries or regions that your company does business with.
 
-1.  Go to **Organization administration** \> **Global address book** \> **Registration types** \> **Registration types**.
+1.  Go to **Organization administration** > **Global address book** > **Registration types** > **Registration types**.
 2.  On the Action Pane, select **New** to create a registration type for the VAT ID.
 3.  In the **Enter registration type details** dialog box, in the **Name** field, enter a name for the new registration type. For example, enter **VAT ID**.
 4.  In the **Country/region** field, select the country or region of the trading partner.
@@ -70,14 +70,14 @@ You must create VAT ID registration types for all the countries or regions that 
 
 ### Match the registration type with a registration category
 
-1.  Go to **Organization administration** \> **Global address book** \> **Registration types** \> **Registration categories**.
+1.  Go to **Organization administration** > **Global address book** > **Registration types** > **Registration categories**.
 2.  On the Action Pane, select **New** to create a link between a registration type and a registration category.
 3.  For the registration type for the VAT ID, select the **VAT ID** registration category.
 4.  Repeat steps 2 and 3 for the other registration types that you created for the countries or regions that your company does business with.
 
 ### Set up the VAT number of a trading partner
 
-1.  Go to **Accounts receivable** \> **Customers** \> **All customers.**
+1.  Go to **Accounts receivable** > **Customers** > **All customers.**
 2.  In the grid, select a customer.
 3.  On the Action Pane, on the **Customer** tab, in the **Registration** group, select **Registration IDs**.
 4.  On the **Registration ID** FastTab, select **Add** to create a registration ID.
@@ -86,17 +86,17 @@ You must create VAT ID registration types for all the countries or regions that 
 7.  On the Action Pane, select **Save**. Then close the page.
 8.  On the **Invoice and delivery** FastTab, in the **Sales tax** section, in the **Tax exempt number** field, select the tax-exempt code that you created earlier.
 
-For more information, see [Registration IDs](https://docs.microsoft.com/dynamics365/finance/localizations/emea-registration-ids).
+For more information, see [Registration IDs](emea-registration-ids.md).
 
 ### Set up the VAT ID of the data provider for your company
 
-1.  Go to **Organization administration** \> **Organizations** \> **Legal entities**.
+1.  Go to **Organization administration** > **Organizations** > **Legal entities**.
 2.  In the grid, select your company.
 3.  On the **Tax registration** FastTab, in the **Tax registration number** field, enter the VAT ID of your company's data provider.
 
 ## Set up product parameters for the Intrastat declaration
 
-1.  Go to **Product information management** \> **Products** \> **Released products**.
+1.  Go to **Product information management** > **Products** > **Released products**.
 2.  In the grid, select a product.
 3.  On the **Foreign trade** FastTab, in the **Intrastat** section, in the **Commodity** field, select the commodity code. The name of the commodity will be printed in the **Description of commodities** field on the Intrastat report.
 4.  In the **Origin** section, in the **Country/region** field, select the product's country or region of origin.
@@ -104,22 +104,22 @@ For more information, see [Registration IDs](https://docs.microsoft.com/dynamics
 
 ## Set up foreign trade parameters
 
-1.  Go to **Tax** \> **Setup** \> **Foreign trade parameters**.
+1.  Go to **Tax** > **Setup** > **Foreign trade parameters**.
 2.  On the **Intrastat** tab, on the **Electronic reporting** FastTab, in the **File format mapping** field, select **Intrastat (HU)**.
 3.  In the **Report format mapping** field, select **Intrastat report**.
 4.  On the **Commodity code hierarchy** FastTab, in the **Category hierarchy** field, select **Intrastat**.
 5.  In the **Transaction code** field, select the transaction code for property transfers. You use this code for transactions that produce actual or planned transfers of property against compensation (financial or otherwise). You also use it for corrections. Companies in Hungary use two-digit transaction codes.
 6.  In the **Credit note** field, select the transaction code for the return of goods.
 7.  On the **Contact** tab, add information about the person who is employed by the enterprise and who fills in the report.
-1.  In the **Name** field, enter the first and last names of the employee.
+8.  In the **Name** field, enter the first and last names of the employee.
     1.  In the **Telephone** field, enter the telephone number of the employee.
     2.  In the **Email** field, enter the email address of the employee.
-1.  On the **Country/region properties** tab, in the **Country/region** field, list all the countries or regions that your company does business with. For each country that is part of the EU, select **EU** in the **Country/region type** field, so that the country appears on your Intrastat report. For Hungary, select **Domestic** in the **Country/region type** field.
+9.  On the **Country/region properties** tab, in the **Country/region** field, list all the countries or regions that your company does business with. For each country that is part of the EU, select **EU** in the **Country/region type** field, so that the country appears on your Intrastat report. For Hungary, select **Domestic** in the **Country/region type** field.
 
 ## Set up compression of Intrastat
 
--   Go to **Tax** \> **Setup** \> **Foreign trade** \> **Compression of Intrastat**, and select the fields that should be compared when Intrastat information is summarized. For Hungary, select the following fields:
--   Commodity
+Go to **Tax** > **Setup** > **Foreign trade** > **Compression of Intrastat**, and select the fields that should be compared when Intrastat information is summarized. For Hungary, select the following fields:
+    -   Commodity
     -   Transaction code
     -   Country/region of origin
     -   Country/region of sender
@@ -137,8 +137,8 @@ You can also manually enter transactions by selecting **New** on the Action Pane
 
 ### Generate an Intrastat report
 
-1.  Go to **Tax** \> **Declarations** \> **Foreign trade** \> **Intrastat**.
-2.  On the Action Pane, select **Output** \> **Report**.
+1.  Go to **Tax** > **Declarations** > **Foreign trade** > **Intrastat**.
+2.  On the Action Pane, select **Output** > **Report**.
 3.  In the **Intrastat Report** dialog box, enter the start date for the report.
 4.  Set the **Generate file** option to **Yes** to generate a .csv file.
 5.  Set the **Generate report** option to **Yes** to generate an .xlsx file, and then enter a name for the file.
@@ -153,16 +153,16 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 ### Preliminary setup
 
-1.  Go to **Organization administration** \> **Organization** \> **Legal entities**.
+1.  Go to **Organization administration** > **Organization** > **Legal entities**.
 2.  In the grid, select the **DEMF** legal entity.
 3.  On the **Addresses** FastTab, select **Edit**, and then, in the **Country/region** field, select **HUN (Hungary)**.
 4.  Import the latest version of the following ER configurations:
 -   Intrastat model
 -   Intrastat report
 -   Intrastat (HU)
-1.  Go to **Workplaces** \> **Feature** **management** \> **All**.
+1.  Go to **Workplaces** > **Feature** **management** > **All**.
 2.  In the grid, select **Date of VAT register**, and then select **Enable now**.
-3.  Go to **Modules** \> **Tax** \> **Indirect** **taxes** \> **Sales tax** \> **Sales tax groups**.
+3.  Go to **Modules** > **Tax** > **Indirect** **taxes** > **Sales tax** > **Sales tax groups**.
 4.  In the grid, select **AR-DOM**. This sales tax group will be used when the sales order is created.
 5.  On the **General** FastTab, in the **Date validation** section, in the **Date of VAT register filling** field, select **Document date**.
 
@@ -170,13 +170,13 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 #### Set up the VAT ID of the data provider for your company
 
-1.  Go to **Organization administration** \> **Organizations** \> **Legal entities**.
+1.  Go to **Organization administration** > **Organizations** > **Legal entities**.
 2.  In the grid, select your company.
 3.  On the **Tax registration** FastTab, in the **Tax registration number** field, enter **12345678**.
 
 #### Create registration types for partner company codes
 
-1.  Go to **Organization administration** \> **Global address book** \> **Registration types** \> **Registration types**.
+1.  Go to **Organization administration** > **Global address book** > **Registration types** > **Registration types**.
 2.  On the Action Pane, select **New** to create a registration type for the VAT ID.
 3.  In the **Enter registration type details** dialog box, in the **Name** field, enter **VAT ID**.
 4.  In the **Country/region** field, select **DEU**.
@@ -184,13 +184,13 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 #### Match the registration type with a registration category
 
-1.  Go to **Organization administration** \> **Global address book** \> **Registration types** \> **Registration categories**.
+1.  Go to **Organization administration** > **Global address book** > **Registration types** > **Registration categories**.
 2.  On the Action Pane, select **New** to create a link between the registration type and the registration category.
 3.  For the **VAT ID** registration type of the **DEU** country, select the **VAT ID** registration category.
 
 #### Set up the customer's VAT registration number
 
-1.  Go to **Accounts receivable** \> **Customers** \> **All customers.**
+1.  Go to **Accounts receivable** > **Customers** > **All customers.**
 2.  **I**n the grid, select **DE-016**.
 3.  On the Action Pane, on the **Customer** tab, in the **Registration** group, select **Registration IDs**.
 4.  On the **Registration ID** FastTab, select **Add** to create a registration ID.
@@ -201,7 +201,7 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 ### Set up product information
 
-1.  Go to **Product information management** \> **Products** \> **Released** **products**.
+1.  Go to **Product information management** > **Products** > **Released** **products**.
 2.  In the grid, select **D0001**.
 3.  On the **Foreign trade** FastTab, in the **Intrastat** section, in the **Commodity** field, select **100 200 30**.
 4.  In the **Origin** section, in the **Country/region** field, select **HUN**.
@@ -215,7 +215,7 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 ### Set up foreign trade parameters
 
-1.  Go to **Tax** \> **Setup** \> **Foreign trade** \> **Foreign trade parameters**.
+1.  Go to **Tax** > **Setup** > **Foreign trade** > **Foreign trade parameters**.
 2.  On the **Intrastat** tab, on the **General** FastTab, in the **Transaction** **code** field, select **11**.
 3.  On the **Electronic reporting** FastTab, in the **File format mapping** field, select **Intrastat (HU)**.
 4.  In the **Report format mapping** field, select **Intrastat Report**.
@@ -230,7 +230,7 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 ### Change the site address
 
-1.  Go to **Warehouse management** \> **Setup** \> **Warehouse** \> **Sites**.
+1.  Go to **Warehouse management** > **Setup** > **Warehouse** > **Sites**.
 2.  In the grid, select **1**.
 3.  On the **Addresses** FastTab, select **Edit**.
 4.  In the **Edit address** dialog box, in the **Country/region** field, select **HUN**.
@@ -238,7 +238,7 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 ### Create a sales order with an EU customer
 
-1.  Go to **Accounts receivable** \> **Orders** \> **All sales orders**.
+1.  Go to **Accounts receivable** > **Orders** > **All sales orders**.
 2.  On the Action Pane, select **New**.
 3.  In the **Create sales order** dialog box, on the **Customer** FastTab, in the **Customer** section, in the **Customer account** field, select **DE-016**.
 4.  On the **General** FastTab, in the **Storage dimensions** section, in the **Site** field, select **1**.
@@ -254,7 +254,7 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 ### Transfer the transaction to the Intrastat journal and review the result
 
-1.  Go to **Tax** \> **Declarations** \> **Foreign trade** \> **Intrastat**.
+1.  Go to **Tax** > **Declarations** > **Foreign trade** > **Intrastat**.
 2.  On the Action Pane, select **Transfer**.
 3.  In the **Intrastat (Transfer)** dialog box, in the **Parameters** section, set the **Customer invoice** option to **Yes**.
 4.  Select **Filter**.
@@ -263,13 +263,13 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 7.  Select **OK** to close the **Intrastat Filter** dialog box.
 8.  Select **OK** to close the **Intrastat (Transfer)** dialog box, and review the result. The line represents the sales order that you created earlier.
 
-![Line that represents the sales order on the Intrastat page](media/f33cb79a2f28face83d3b40cb28d9f74.png)
+    ![Line that represents the sales order on the Intrastat page](media/f33cb79a2f28face83d3b40cb28d9f74.png)
 
 9.  Select the transaction line, and then select the **General** tab to view more details.
 
-![Sales order details on the General tab of the Intrastat page](media/4dba8c5a429f89c87030c8a5cce226d4.png)
+    ![Sales order details on the General tab of the Intrastat page](media/4dba8c5a429f89c87030c8a5cce226d4.png)
 
-10.  On the Action Pane, select **Output** \> **Report**.
+10.  On the Action Pane, select **Output** > **Report**.
 11.  In the **Intrastat Report** dialog box, on the **Parameters** FastTab, in the **Date** section, in the **From date** field, select the first day of the current month.
 12.  In the **Export** **options** section, set the **Generate file** option to **Yes**.
 13.  Set the **Generate report** option to **Yes**. Then, in the **Report file name** field, enter the required name.
@@ -301,11 +301,11 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 18.  Review the report in Microsoft Excel format that is generated.
 
-![Intrastat report on dispatches](media/db0f9eecd6382d420a28ee198b1acf63.png)
+    ![Intrastat report on dispatches](media/db0f9eecd6382d420a28ee198b1acf63.png)
 
 ### Create a purchase order
 
-1.  Go to **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
+1.  Go to **Accounts payable** > **Purchase orders** > **All purchase orders**.
 2.  On the Action Pane, select **New**.
 3.  In the **Create purchase order** dialog box, in the **Vendor account** field, select **DE-001**.
 4.  In the **Site** field select **1**.
@@ -323,7 +323,7 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 ### Create an Intrastat declaration for arrivals
 
-1.  Go to **Tax** \> **Declarations** \> **Foreign trade** \> **Intrastat**.
+1.  Go to **Tax** > **Declarations** > **Foreign trade** > **Intrastat**.
 2.  On the Action Pane, select **Transfer**.
 3.  In the **Intrastat (Transfer)** dialog box, set the **Vendor invoice** option to **Yes**.
 4.  Select **Filter**.
@@ -332,13 +332,13 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 7.  Select **OK** to close the **Intrastat Filter** dialog box.
 8.  Select **OK** to transfer the transaction, and review the Intrastat journal.
 
-![Line that represents the purchase order on the Intrastat page](media/6ef3b75ea2bc084217657c5a43502bbe.png)
+    ![Line that represents the purchase order on the Intrastat page](media/6ef3b75ea2bc084217657c5a43502bbe.png)
 
 9.  Review the information on the **General** tab for the purchase order.
 
-![Purchase order details on the General tab of the Intrastat page](media/2cb40917e7f84620199ce6a67925407b.png)
+    ![Purchase order details on the General tab of the Intrastat page](media/2cb40917e7f84620199ce6a67925407b.png)
 
-10.  On the Action Pane, select **Output** \> **Report**.
+10.  On the Action Pane, select **Output** > **Report**.
 11.  In the **Intrastat Report** dialog box, on the **Parameters** FastTab, in the **Date** section, in the **From date** field, select the first day of the current month.
 12.  In the **Export** **options** section, set the **Generate file** option to **Yes**. Then, in the **File name** field, enter the required name.
 13.  Set the **Generate report** option to **Yes**. Then, in the **Report file name** field, enter the required name.
@@ -370,4 +370,7 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 18.  Review the report in Excel format that is generated.
 
-![Intrastat report on arrivals](media/sp7vy1sg8549b591a2d247c6deb85390.png)
+    ![Intrastat report on arrivals](media/sp7vy1sg8549b591a2d247c6deb85390.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
