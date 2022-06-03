@@ -2,7 +2,7 @@
 # required metadata
 
 title: Default page module
-description: This topic covers default page modules and describes how to add them to page templates in Microsoft Dynamics 365 Commerce.
+description: This article covers default page modules and describes how to add them to page templates in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 05/18/2022
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic covers default page modules and describes how to add them to page templates in Microsoft Dynamics 365 Commerce.
+This article covers default page modules and describes how to add them to page templates in Microsoft Dynamics 365 Commerce.
 
 The default page module is a special module that becomes the root container of a page and can be added only to a template's **Body** slot. The default page module defines the core slots (**Header Slot**, **Sub Header Slot**, **Main Slot**, **Sub Footer Slot**, and **Footer Slot**) that appear in the Commerce site builder page editor, as shown in the following example illustration.
 

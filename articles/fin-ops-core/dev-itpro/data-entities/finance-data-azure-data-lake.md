@@ -2,7 +2,7 @@
 # required metadata
 
 title: Export to Data Lake in Finance and Operations apps
-description: This topic explains how to choose data in a Finance and Operations apps environment so that the data is available in a data lake.
+description: This article explains how to choose data in a Finance and Operations apps environment so that the data is available in a data lake.
 author: MilindaV2
 ms.date: 04/28/2022
 ms.topic: article

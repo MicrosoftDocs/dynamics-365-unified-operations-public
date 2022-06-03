@@ -1,6 +1,6 @@
 ---
 title: Migrate from overlayering to extensions
-description: This topic provides information about migration from customizations that are based on overlayered code to customizations that are based on extensions.
+description: This article provides information about migration from customizations that are based on overlayered code to customizations that are based on extensions.
 author: FrankDahl
 ms.date: 04/10/2018
 ms.topic: article
@@ -32,7 +32,7 @@ When the application was first released, we strongly recommended that extensions
 
 The amount of work that is required to change an implementation from overlayered code to extensions depends on the code itself. Some overlayered code can be changed relatively seamlessly. However, for some changes, you must rethink the customization to find an appropriate way to accomplish it through extension. Therefore, it can be a major undertaking to change complete solutions where multiple places have overlayered code. Such an undertaking requires an investment in the solution. The upside of this investment is a more seamless upgrade process, because customization is now based on application programming interfaces (APIs) through extensions. Additionally, a lengthy code upgrade process is no longer required as it was for overlayered code. More importantly, daily servicing of a running environment offers many benefits. The core application and extensions no longer have to be compiled together, and patching can be done by deploying precompiled assemblies. Therefore, customers can apply patches to their system in a relatively seamless manner, and the amount of downtime is minimized. However, there is work that must be done before this result can be achieved.
 
-Although there are multiple ways to approach this task, we have gained experience through our close work with independent software vendors (ISVs) and value-added resellers (VARs) that have already started to migrate from overlayering to extensions. In this topic, we share some of this experience.
+Although there are multiple ways to approach this task, we have gained experience through our close work with independent software vendors (ISVs) and value-added resellers (VARs) that have already started to migrate from overlayering to extensions. In this article, we share some of this experience.
 
 ### First things first
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Optimization advisor overview
-description: This topic describes how you can use Optimization advisor to help ensure optimal configuration of Finance and Operations. 
+description: This article describes how you can use Optimization advisor to help ensure optimal configuration of Finance and Operations. 
 author: roxanadiaconu
 ms.date: 07/23/2019
 ms.topic: overview
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 7.3
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how you can use Optimization advisor to help ensure optimal configuration of Finance and Operations.
+This article describes how you can use Optimization advisor to help ensure optimal configuration of Finance and Operations.
 
 ## Overview
 

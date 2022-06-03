@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure product filters for warehouse transactions
-description: This topic describes how to configure product filters and filter codes to categorize inventory items in a warehouse. You can also use filters to specify which customers can order a particular item and which items can be purchase from a particular vendor.
+description: This article describes how to configure product filters and filter codes to categorize inventory items in a warehouse. You can also use filters to specify which customers can order a particular item and which items can be purchase from a particular vendor.
 author: Mirzaab
 ms.date: 01/04/2021
 ms.topic: article
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.16
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to configure product filters and filter codes to categorize inventory items in a warehouse. You can also use filters to specify which customers can order a particular item and which items can be purchased from a particular vendor.
+This article describes how to configure product filters and filter codes to categorize inventory items in a warehouse. You can also use filters to specify which customers can order a particular item and which items can be purchased from a particular vendor.
 
 Additionally, you can set up and use product filters to automatically organize inventory items in a warehouse and combine filtered items into filter groups. Filters can be used to put items into categories for handling, purchasing, and selling processes. You might want to group items together or separate them from each other when the way that they are handled is based on weight or handling restrictions. You can also specify which customers or vendors an item can be purchased from or sold to.
 
@@ -52,7 +52,7 @@ Product filters provide up to 10 **Filter title** characteristics, which are enu
 
     ![Setting up a product filter.](media/Product_Filters10.png "Setting up a product filter")
 
-1. In the **Description** field, enter a name for the code. For example, *Code 2* might represent vendors. You can then create a product filter for a specific vendor or group of vendors. For more information, see the [Setup vendor filter codes](#vendor-product-filters) section later in this topic.
+1. In the **Description** field, enter a name for the code. For example, *Code 2* might represent vendors. You can then create a product filter for a specific vendor or group of vendors. For more information, see the [Setup vendor filter codes](#vendor-product-filters) section later in this article.
 
     ![Set of product filters.](media/Product_Filters.png "Set of product filters")
 

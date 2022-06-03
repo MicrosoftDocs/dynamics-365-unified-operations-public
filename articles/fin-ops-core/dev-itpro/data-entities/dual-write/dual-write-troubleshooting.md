@@ -1,6 +1,6 @@
 ---
 title: General troubleshooting
-description: This topic provides general troubleshooting information for dual-write integration between Finance and Operations apps and Dataverse.
+description: This article provides general troubleshooting information for dual-write integration between Finance and Operations apps and Dataverse.
 author: RamaKrishnamoorthy 
 ms.date: 04/18/2022
 ms.topic: article
@@ -17,10 +17,10 @@ ms.search.validFrom: 2020-03-16
 
 
 
-This topic provides general troubleshooting information for dual-write integration between Finance and Operations apps and Dataverse.
+This article provides general troubleshooting information for dual-write integration between Finance and Operations apps and Dataverse.
 
 > [!IMPORTANT]
-> Some of the issues that this topic addresses might require either the system admin role or Microsoft Azure Active Directory (Azure AD) tenant admin credentials. The section for each issue explains whether a specific role or credentials are required.
+> Some of the issues that this article addresses might require either the system admin role or Microsoft Azure Active Directory (Azure AD) tenant admin credentials. The section for each issue explains whether a specific role or credentials are required.
 
 ## <a id="enable-view-trace"></a>Enable and view the plug-in trace log in Dataverse to view error details
 

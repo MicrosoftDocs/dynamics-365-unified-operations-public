@@ -2,7 +2,7 @@
 # required metadata
 
 title: Czech Republic overview
-description: This topic provides an overview of Dynamics 365 Finance functionality that is specific to the Czech Republic.
+description: This article provides an overview of Dynamics 365 Finance functionality that is specific to the Czech Republic.
 author: kfend
 ms.date: 01/18/2022
 ms.topic: overview
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic includes information and links to resources that can help you set up legal entities with a primary address in the Czech Republic.
+This article includes information and links to resources that can help you set up legal entities with a primary address in the Czech Republic.
 
 ## Fixed assets
 The following topics cover information that pertains to fixed assets in the Czech Republic:

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Payment terms in commercial transactions report (PL-00053)
-description: This topic provides information about the Payment terms report, and explains how to configure and generate it.
+description: This article provides information about the Payment terms report, and explains how to configure and generate it.
 author: sndray
 ms.date: 05/06/2022
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.24
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up and generate the Payment terms report that is required for Polish legal entities. By January 31 of each year, some companies must submit a report about the payment terms of commercial transactions for the previous year. Companies submit the report through the tax authority application by entering the data that a wizard requests. The system will generate a report.
+This article explains how to set up and generate the Payment terms report that is required for Polish legal entities. By January 31 of each year, some companies must submit a report about the payment terms of commercial transactions for the previous year. Companies submit the report through the tax authority application by entering the data that a wizard requests. The system will generate a report.
 
 You can use the report to generate a summarized report and a detailed report to facilitate the manual entry of information in the tax authority application. Currently, there is no option for automatic integration with the tax authority site.
 

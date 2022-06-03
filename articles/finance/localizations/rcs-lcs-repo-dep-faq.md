@@ -2,7 +2,7 @@
 # required metadata
 
 title: Regulatory Configuration Service (RCS) - Lifecycle Services (LCS) storage deprecation
-description: This topic provides information about the deprecation of Microsoft Dynamics Lifecycle Services (LCS) storage that is planned as part of the rollout of the Regulatory Configuration Service (RCS) Global repository.
+description: This article provides information about the deprecation of Microsoft Dynamics Lifecycle Services (LCS) storage that is planned as part of the rollout of the Regulatory Configuration Service (RCS) Global repository.
 author: JaneA07
 ms.date: 10/27/2021
 ms.topic: article
@@ -89,7 +89,7 @@ RCS uses the concept of a *connected application*. A connected application forms
 
 ### Are there any examples that show the setup and management?
 
-There are no examples, but you can complete the steps earlier in this topic to migrate your configurations to the RCS Global repository.
+There are no examples, but you can complete the steps earlier in this article to migrate your configurations to the RCS Global repository.
 
 ### Is RCS a prerequisite to configure Electronic reporting?
 

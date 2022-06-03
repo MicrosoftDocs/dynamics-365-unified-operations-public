@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Human Resources January 21, 2021
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for January 21, 2021.
+description: This article describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for January 21, 2021.
 author: marcelbf
 ms.date: 01/21/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This topic describes features that are new, changed, or coming soon in Dynamics 365 Human Resources.
+This article describes features that are new, changed, or coming soon in Dynamics 365 Human Resources.
 
 For more information about our update process and schedule, see [Update process](hr-admin-setup-update-process.md).
 
@@ -59,7 +59,7 @@ The following features are generally available with this release.
 The following bug fixes are included in this release.
 
 > [!NOTE]
-> Our goal is to get you this information as soon as possible. We may update this topic to include bug fixes that made it into the build after this topic was initially published.
+> Our goal is to get you this information as soon as possible. We may update this article to include bug fixes that made it into the build after this article was initially published.
 
 | Issue number | Issue |  Description |
 | --- | --- | --- |

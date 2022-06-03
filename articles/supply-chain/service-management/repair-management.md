@@ -102,7 +102,7 @@ When a repair issue is resolved, you can close the repair line. Set the repair s
 
 ## Close a repair line for a resolved issue
 
-1.  Open the **Repair lines** form. Follow the procedure earlier in this topic to create a repair line.
+1.  Open the **Repair lines** form. Follow the procedure earlier in this article to create a repair line.
 
 2.  Select the repair line with the repair issue that you want to close.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add custom fields to the point of sale (POS) Totals panel
-description: This topic explains how to add a new custom field to the Totals panel on the POS transaction screen by using the screen layout designer.
+description: This article explains how to add a new custom field to the Totals panel on the POS transaction screen by using the screen layout designer.
 author: mugunthanm
 ms.date: 05/23/2018
 ms.topic: article
@@ -11,12 +11,12 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Developer
 # ms.devlang: 
 ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global 
 # ms.search.industry: retail
 ms.author: mumani
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 8.0.1
 
 [!include[banner](../includes/banner.md)]
 
-This topic explains how to add a new custom field to the **Totals** panel on the POS transaction screen by using the screen layout designer. This topic is applicable to Microsoft Dynamics 365 for Finance and Operations 7.3 and later, and to Microsoft Dynamics 365 Retail 7.3 and later.
+This article explains how to add a new custom field to the **Totals** panel on the POS transaction screen by using the screen layout designer. This article is applicable to Microsoft Dynamics 365 for Finance and Operations 7.3 and later, and to Microsoft Dynamics 365 Retail 7.3 and later.
 
 Custom fields that you add for the **Totals** panel on the **Custom fields** page will appear in the designer. You can then select which custom fields should be in the left and right columns. The logic for the custom fields should be coded in the point of sale (POS) extensions.
 
@@ -231,7 +231,7 @@ You can find similar sample code in the Retail software development kit (SDK), a
 14. Deploy the customized version of Retail Modern POS (MPOS) by selecting the **Local Machine** button. Make sure that the solution platform is x86. Alternatively, you can create a deployable package and install MPOS from it.
 
     > [!NOTE]
-    > Although MPOS is used in this topic, you can use either MPOS or Cloud POS.
+    > Although MPOS is used in this article, you can use either MPOS or Cloud POS.
 
 ## Validate the customization
 

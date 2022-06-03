@@ -2,7 +2,7 @@
 # required metadata
 
 title: Install the Document Routing Agent to enable network printing
-description: This topic describes how to install and configure the Document Routing Agent for deployments of Microsoft Dynamics 365 Finance.
+description: This article describes how to install and configure the Document Routing Agent for deployments of Microsoft Dynamics 365 Finance.
 author: RichdiMSFT
 ms.date: 03/21/2022
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to install and configure the Document Routing Agent.  The Document Routing Agent is a downloadable application that you can use to enable network printing scenarios. You can enable network printers for specific companies by using in-client administrative pages.
+This article describes how to install and configure the Document Routing Agent.  The Document Routing Agent is a downloadable application that you can use to enable network printing scenarios. You can enable network printers for specific companies by using in-client administrative pages.
 
 ## Preparing to install the Document Routing Agent
 
@@ -45,7 +45,7 @@ This topic describes how to install and configure the Document Routing Agent.  T
 Network printers that are registered for applications can be used by all legal entities (also known as companies) that are defined in the environment. Network printer settings are company-specific. Therefore, administrators can restrict access, based on the user's active company. For example, users in the active company might have access to all the network printers that are registered by the Document Routing Agent. However, users in another company won't have access to those printers until access is explicitly enabled for that company.
 
 ## Key concepts
-This topic will help you with the following tasks:
+This article will help you with the following tasks:
 
 - Identify the key components that are involved in the support for network printing in applications.
 - Learn about the function of the Document Routing Agent.

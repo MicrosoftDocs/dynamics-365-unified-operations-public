@@ -2,7 +2,7 @@
 # required metadata
 
 title: Respond to requests for personal data in AX 2012
-description: This topic can help businesses that use Microsoft Dynamics AX 2012, implementation partners, and independent software vendors (ISVs) comply with requests from a data subject concerning their personal data under the European Union’s General Data Protection Regulation (GDPR). 
+description: This article can help businesses that use Microsoft Dynamics AX 2012, implementation partners, and independent software vendors (ISVs) comply with requests from a data subject concerning their personal data under the European Union’s General Data Protection Regulation (GDPR). 
 author: ryanc
 ms.date: 07/09/2018
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic can help businesses that use Microsoft Dynamics AX 2012, implementation partners, and independent software vendors (ISVs) comply with requests from a data subject concerning their personal data under the European Union’s General Data Protection Regulation (GDPR). For more information about the GDPR and the related resources that Microsoft provides, see the [General Data Protection Regulation overview](./gdpr-guide.md). Although the "Guide to the GDPR for Finance and Operations" was written for Finance and Operations apps, the rights that a data subject has under the GDPR apply to organizations using Dynamics AX 2012. The steps listed in the "Guide to the GDPR for Finance and Operations" can be used by an organization responding to a request for personal data and are also appropriate for organizations using Dynamics AX 2012, with the exception of the **Person search** report, which is not available for Dynamics AX 2012. This topic lists additional points that are specific to Dynamics AX 2012. 
+This article can help businesses that use Microsoft Dynamics AX 2012, implementation partners, and independent software vendors (ISVs) comply with requests from a data subject concerning their personal data under the European Union’s General Data Protection Regulation (GDPR). For more information about the GDPR and the related resources that Microsoft provides, see the [General Data Protection Regulation overview](./gdpr-guide.md). Although the "Guide to the GDPR for Finance and Operations" was written for Finance and Operations apps, the rights that a data subject has under the GDPR apply to organizations using Dynamics AX 2012. The steps listed in the "Guide to the GDPR for Finance and Operations" can be used by an organization responding to a request for personal data and are also appropriate for organizations using Dynamics AX 2012, with the exception of the **Person search** report, which is not available for Dynamics AX 2012. This article lists additional points that are specific to Dynamics AX 2012. 
 
 ## Applicable product updates for Dynamics AX 2012
 

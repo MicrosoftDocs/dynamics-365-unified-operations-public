@@ -2,7 +2,7 @@
 # required metadata
 
 title: Warehouse handling of inbound loads for purchase orders
-description: This topic describes the warehouse handling process for inbound loads for purchase orders.
+description: This article describes the warehouse handling process for inbound loads for purchase orders.
 author: Mirzaab
 ms.date: 03/21/2020
 ms.topic: article
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.10
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the warehouse handling process for inbound loads for purchase orders.
+This article describes the warehouse handling process for inbound loads for purchase orders.
 
 For each inbound load, your system should already include a related sales order, and it might also contain a related load specification and/or transportation plan. For more information about how to create and manage inbound loads, see [Business process: Planning transportation for inbound loads](/dynamicsax-2012/appuser-itpro/business-process-planning-transportation-for-inbound-loads).
 
@@ -213,7 +213,7 @@ The following table summarizes the effects of the **Allow multiple product recei
 | Yes | No updates | _Received_, if the total registered load quantity is equal to or more than the load quantity | |
 | Yes | No updates | _Shipped_ or _In process_, if the total registered load quantity is less than the load quantity | |
 
-After the **Load status** field is set to _Received_, no more product receipt postings can be done for that load. However, the worker can register the remaining order quantity against the received load under the following conditions. (For more information, see the [Load over-receiving](#load-over-receiving) section earlier in this topic.)
+After the **Load status** field is set to _Received_, no more product receipt postings can be done for that load. However, the worker can register the remaining order quantity against the received load under the following conditions. (For more information, see the [Load over-receiving](#load-over-receiving) section earlier in this article.)
 
 - The version of Supply Chain Management is older than version 10.0.11.
 - The _Over receipt of load quantities_ feature is turned on, and the **Load line quantity over receipt** field on the mobile device menu item for the load item receiving action is set to _Allow_.

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configuration for Finance insights
-description: This topic explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights.
+description: This article explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights.
 author: ShivamPandey-msft
 ms.date: 01/27/2022
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 10.0.13
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Finance insights combines functionality from Microsoft Dynamics 365 Finance with Dataverse, Azure, and AI Builder to provide powerful forecasting tools for your organization. This topic explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights. To successfully complete the procedures in this topic, you must have System administrator and System Customizer access in the [Power Portal admin center](https://admin.powerplatform.microsoft.com/), System Administrator access in Dynamics 365 Finance, and access to create environments in Microsoft Dynamics Lifecycle Services (LCS).
+Finance insights combines functionality from Microsoft Dynamics 365 Finance with Dataverse, Azure, and AI Builder to provide powerful forecasting tools for your organization. This article explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights. To successfully complete the procedures in this article, you must have System administrator and System Customizer access in the [Power Portal admin center](https://admin.powerplatform.microsoft.com/), System Administrator access in Dynamics 365 Finance, and access to create environments in Microsoft Dynamics Lifecycle Services (LCS).
 
 > [!NOTE]
 > The following procedures for setting up Finance insights are valid for versions of Dynamics 365 Finance version 10.0.21, and later.

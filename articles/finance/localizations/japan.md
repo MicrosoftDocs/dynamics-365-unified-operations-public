@@ -2,7 +2,7 @@
 # required metadata
 
 title: Japan overview
-description: This topic provides an overview of functionality specific to Japan.
+description: This article provides an overview of functionality specific to Japan.
 author: ShylaThompson
 ms.date: 07/25/2019
 ms.topic: overview
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include[banner](../includes/banner.md)]
 
-This topic includes information and links to resources that can help you set up legal entities with a primary address in Japan.
+This article includes information and links to resources that can help you set up legal entities with a primary address in Japan.
 
 ## Cash and bank management
 

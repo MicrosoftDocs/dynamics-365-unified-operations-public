@@ -2,7 +2,7 @@
 # required metadata
 
 title: Accounts payable postings
-description: This topic explains how postings are configured in Accounts payable and provides examples of posting configurations.
+description: This article explains how postings are configured in Accounts payable and provides examples of posting configurations.
 author: rachel-profitt
 ms.date: 01/19/2022
 ms.topic: article

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enable multi-batch processing for GSTR reports
-description: This topic explains how to enable multi-batch processing for Goods and Services Tax return (GSTR) reports.
+description: This article explains how to enable multi-batch processing for Goods and Services Tax return (GSTR) reports.
 author: prabhatb
 ms.date: 09/03/2019
 ms.topic: article

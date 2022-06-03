@@ -2,7 +2,7 @@
 # required metadata
 
 title: Administration overview
-description: This topic provides a list of the help topics and other resources to set up, manage, and troubleshoot Dynamics 365 Human Resources.
+description: This article provides a list of the help topics and other resources to set up, manage, and troubleshoot Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 08/11/2021
 ms.topic: overview
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Human Resources
 
 
 
-This topic provides a list of the help topics and other resources to set up, manage, and troubleshoot Dynamics 365 Human Resources.
+This article provides a list of the help topics and other resources to set up, manage, and troubleshoot Dynamics 365 Human Resources.
 
 - [System requirements](hr-admin-system-requirements.md)
 

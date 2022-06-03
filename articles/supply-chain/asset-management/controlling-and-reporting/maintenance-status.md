@@ -2,7 +2,7 @@
 # required metadata
 
 title: Maintenance status
-description: This topic explains how to calculate maintenance status in Asset Management.
+description: This article explains how to calculate maintenance status in Asset Management.
 author: johanhoffmann
 ms.date: 08/23/2019
 ms.topic: article

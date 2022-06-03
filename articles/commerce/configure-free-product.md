@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure a product to be purchased for free
-description: This topic describes how to configure a product so that it can be purchased for free in Microsoft Dynamics 365 Commerce.
+description: This article describes how to configure a product so that it can be purchased for free in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
 ms.date: 10/27/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version:
 [!include [banner](includes/banner.md)]
 
 
-This topic describes how to configure a product so that it can be purchased for free in Microsoft Dynamics 365 Commerce.
+This article describes how to configure a product so that it can be purchased for free in Microsoft Dynamics 365 Commerce.
 
 ## Configure the product
 

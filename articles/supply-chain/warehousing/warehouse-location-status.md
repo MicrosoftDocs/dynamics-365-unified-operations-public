@@ -2,7 +2,7 @@
 # required metadata
 
 title: Warehouse location status
-description: This topic provides an overview of the Warehouse location status feature.
+description: This article provides an overview of the Warehouse location status feature.
 author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Import historical data for demand forecasts
-description: To get accurate demand forecasts, you require historical demand data per item or item allocation key. This topic explains how to use data entities to import historical demand data from any system, so that you have a longer history of demand forecast data.
+description: To get accurate demand forecasts, you require historical demand data per item or item allocation key. This article explains how to use data entities to import historical demand data from any system, so that you have a longer history of demand forecast data.
 author: t-benebo
 ms.date: 05/10/2017
 ms.topic: article
@@ -41,7 +41,7 @@ In the **Data management** workspace, you can see an overview of all the fields 
 
 To use the data entity, you must have a Microsoft Excel file or comma-separated values (CSV) file that contains the historical demand data. The following example shows how to import the data from a CSV file.
 
-For more information about how to import data, including how to clean up data after an import, see [Data import and export jobs overview](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md) and its related topics.
+For more information about how to import data, including how to clean up data after an import, see [Data import and export jobs overview](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md) and its related articles.
 
 See also [Generate a statistical baseline forecast](generate-statistical-baseline-forecast.md).
 

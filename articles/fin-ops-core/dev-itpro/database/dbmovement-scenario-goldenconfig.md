@@ -2,7 +2,7 @@
 # required metadata
 
 title: Golden configuration promotion
-description: This topic explains a golden configuration promotion for Finance and Operations.
+description: This article explains a golden configuration promotion for Finance and Operations.
 author: LaneSwenka
 ms.date: 09/17/2021
 ms.topic: article
@@ -149,7 +149,7 @@ SqlPackage.exe /a:export /ssn:localhost /sdn:<database to export> /tf:D:\Exporte
 
 Here is an explanation of the parameters:
 
-- **ssn (source server name)** – The name of the SQL Server to export from. For the purposes of this topic, the name should always be **localhost**.
+- **ssn (source server name)** – The name of the SQL Server to export from. For the purposes of this article, the name should always be **localhost**.
 - **sdn (source database name)** – The name of the database to export.
 - **tf (target file)** – The path and name of the file to export to. The folder should already exist, but the export process will create the file.
 

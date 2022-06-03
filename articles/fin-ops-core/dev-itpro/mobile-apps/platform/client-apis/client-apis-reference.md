@@ -2,7 +2,7 @@
 title: Client APIs home page
 description: Mobile platform client APIs
 author: tonyafehr
-ms.date: 07/23/2019
+ms.date: 05/24/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.custom: "intro-internal"
@@ -14,6 +14,7 @@ ms.search.validFrom: 08/09/2017
 # Client APIs home page
 
 [!include [banner](../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../includes/mobile-app-deprecation-banner.md)]
 
 * [Application](modules/services-application.md)
 

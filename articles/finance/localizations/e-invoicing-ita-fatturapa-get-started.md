@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up direct integration of Italian FatturaPA with SDI
-description: This topic provides information that will help you get started with Electronic invoicing for Italy and set up direct integration of Italian FatturaPA with the Exchange system (SDI).
+description: This article provides information that will help you get started with Electronic invoicing for Italy and set up direct integration of Italian FatturaPA with the Exchange system (SDI).
 author: abaryshnikov
 ms.date: 01/15/2022
 ms.topic: article
@@ -21,21 +21,21 @@ ms.dyn365.ops.version: AX 10.0.20
 > [!IMPORTANT]
 > Electronic invoicing for Italy might not currently support all the functions that are available for electronic invoices in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 
-This topic provides information that will help you to get started with Electronic invoicing for Italy in Finance and Supply Chain Management. It guides you through the configuration steps that are country/region-dependent in Regulatory Configuration Services (RCS). These steps complement the steps that are described in [Get started with Electronic invoicing](e-invoicing-get-started.md).
+This article provides information that will help you to get started with Electronic invoicing for Italy in Finance and Supply Chain Management. It guides you through the configuration steps that are country/region-dependent in Regulatory Configuration Services (RCS). These steps complement the steps that are described in [Get started with Electronic invoicing](e-invoicing-get-started.md).
 
 ## Prerequisites
 
-Before you complete the steps in this topic, the following prerequisites must be met:
+Before you complete the steps in this article, the following prerequisites must be met:
 
 - Complete the steps in [Get started with Electronic invoicing](e-invoicing-get-started.md).
-- Import the **Italian FatturaPA (IT)** electronic invoicing feature into RCS from the Global repository. For more information, see the [Import an Electronic invoicing feature from the Microsoft configuration provider](e-invoicing-get-started.md#import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider) section of the previously mentioned "Get started with Electronic invoicing" topic.
-- Add links from the required certificates to the service environment. The required certificates include the Digital signature certificate, Certificate authority (CA) certificate, and Clients certificate. For more information, see the [Create a digital certificate secret](e-invoicing-get-started-service-administration.md#create-a-digital-certificate-secret) section of the "Get started with Electronic invoicing service administration" topic.
+- Import the **Italian FatturaPA (IT)** electronic invoicing feature into RCS from the Global repository. For more information, see the [Import an Electronic invoicing feature from the Microsoft configuration provider](e-invoicing-get-started.md#import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider) section of the previously mentioned "Get started with Electronic invoicing" article.
+- Add links from the required certificates to the service environment. The required certificates include the Digital signature certificate, Certificate authority (CA) certificate, and Clients certificate. For more information, see the [Create a digital certificate secret](e-invoicing-get-started-service-administration.md#create-a-digital-certificate-secret) section of the "Get started with Electronic invoicing service administration" article.
 
 ## Country-specific configuration for the Italian FatturaPA (IT) Electronic invoicing feature
 
 Complete the following procedures before you deploy the application setup to your connected Finance or Supply Chain Management app.
 
-This section complements the [Country-specific configuration of application setup](e-invoicing-get-started.md#country-specific-configuration-of-application-setup) section of the "Get started with Electronic invoicing" topic.
+This section complements the [Country-specific configuration of application setup](e-invoicing-get-started.md#country-specific-configuration-of-application-setup) section of the "Get started with Electronic invoicing" article.
 
 ### Create a new feature
 
@@ -84,8 +84,8 @@ This section complements the [Country-specific configuration of application setu
 
 ### Deploy the feature
 
-1. Complete, publish, and deploy the feature to the service environment. For more information, see the [Deploy the Electronic invoicing feature to Service environment](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-service-environment) section of the "Get started with Electronic invoicing" topic.
-2. Deploy the feature to the connected application. For more information, see the [Deploy the Electronic invoicing feature to Connected application](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-connected-application) section of the "Get started with Electronic invoicing" topic.
+1. Complete, publish, and deploy the feature to the service environment. For more information, see the [Deploy the Electronic invoicing feature to Service environment](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-service-environment) section of the "Get started with Electronic invoicing" article.
+2. Deploy the feature to the connected application. For more information, see the [Deploy the Electronic invoicing feature to Connected application](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-connected-application) section of the "Get started with Electronic invoicing" article.
 
 ### Set up Finance
 

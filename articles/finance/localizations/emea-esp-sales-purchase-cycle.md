@@ -2,7 +2,7 @@
 # required metadata
 
 title: Sales and purchase cycles for Spain
-description: This topic describes how to set up sales order or purchase order cycles for a vendor or customer for legal entities in Spain.  
+description: This article describes how to set up sales order or purchase order cycles for a vendor or customer for legal entities in Spain.  
 author: ShylaThompson
 ms.date: 06/20/2017
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to set up sales order or purchase order cycles for a vendor or customer for legal entities in Spain.  
+This article describes how to set up sales order or purchase order cycles for a vendor or customer for legal entities in Spain.  
 
 Depending on the requirements of their customers and vendors, some Spanish companies don't update all documents that are included in the sales or purchase cycle. Here are some examples of sales or purchase documents that aren't updated:
 

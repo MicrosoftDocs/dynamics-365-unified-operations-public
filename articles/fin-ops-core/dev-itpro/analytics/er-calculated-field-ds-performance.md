@@ -2,7 +2,7 @@
 # required metadata
 
 title: Improve the performance of ER solutions by adding parameterized CALCULATED FIELD data sources
-description: This topic explains how you can help improve the performance of Electronic reporting (ER) solutions by adding parameterized CALCULATED FIELD data sources.
+description: This article explains how you can help improve the performance of Electronic reporting (ER) solutions by adding parameterized CALCULATED FIELD data sources.
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: article
@@ -31,21 +31,21 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how you can take [performance traces](trace-execution-er-troubleshoot-perf.md) of [Electronic reporting (ER)](general-electronic-reporting.md) formats that are run, and then use the information from those traces to help improve performance by configuring a parameterized **Calculated field** data source.
+This article explains how you can take [performance traces](trace-execution-er-troubleshoot-perf.md) of [Electronic reporting (ER)](general-electronic-reporting.md) formats that are run, and then use the information from those traces to help improve performance by configuring a parameterized **Calculated field** data source.
 
 As part of the process of designing ER configurations to generate business documents, you define the method that is used to retrieve data from the application and enter it in the generated output. By designing a parametrized ER data source of the **Calculated field** type, you can reduce the number of database calls, and significantly reduce the time and cost that are involved in collecting the details of ER format execution.
 
 ## Prerequisites
 
-- To complete the examples in this topic, you must have the access to one of the following [roles](../sysadmin/tasks/assign-users-security-roles.md):
+- To complete the examples in this article, you must have the access to one of the following [roles](../sysadmin/tasks/assign-users-security-roles.md):
 
     - Electronic reporting developer
     - Electronic reporting functional consultant
     - System administrator
 
 - The company must be set to **DEMF**.
-- Follow the steps in [Appendix 1](#appendix1) of this topic to download the components of the sample Microsoft ER solution that is required to complete the examples in this topic.
-- Follow the steps in [Appendix 2](#appendix2) of this topic to configure the minimal set of ER parameters that is required to use the ER framework to help improve the performance of the sample Microsoft ER solution.
+- Follow the steps in [Appendix 1](#appendix1) of this article to download the components of the sample Microsoft ER solution that is required to complete the examples in this article.
+- Follow the steps in [Appendix 2](#appendix2) of this article to configure the minimal set of ER parameters that is required to use the ER framework to help improve the performance of the sample Microsoft ER solution.
 
 ## Import the sample ER solution
 
@@ -54,7 +54,7 @@ Imagine that you must design an ER solution to generate a new report that shows 
 The first step is to import the sample ER solution to generate a vendor transactions report.
 
 1. Sign in to the instance of Microsoft Dynamics 365 Finance that is provisioned for your company.
-2. In this topic, you will create and modify configurations for the **Litware, Inc.** sample company. Make sure that this configuration provider has been added to your Finance instance and is marked as active. For more information, see [Create configuration providers and mark them as active](tasks/er-configuration-provider-mark-it-active-2016-11.md).
+2. In this article, you will create and modify configurations for the **Litware, Inc.** sample company. Make sure that this configuration provider has been added to your Finance instance and is marked as active. For more information, see [Create configuration providers and mark them as active](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 3. In the **Electronic reporting** workspace, select the **Reporting configurations** tile.
 4. On the **Configurations** page, import the ER configurations that you downloaded as a prerequisite into Finance, in the following order: data model, model mapping, format. For each configuration, follow these steps:
 
@@ -226,7 +226,7 @@ Follow these steps to use caching and a data source of the **Calculated field** 
 
 ## Run the modified ER solution to trace execution
 
-Repeat the steps in the [Run the ER format](#run-format) section earlier in this topic to generate a new performance trace.
+Repeat the steps in the [Run the ER format](#run-format) section earlier in this article to generate a new performance trace.
 
 ## Use the performance trace to analyze adjustments to the model mapping 
 

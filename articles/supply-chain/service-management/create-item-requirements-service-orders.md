@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create item requirements for service orders 
-description: This topic describes how to create item requirements for service orders.  
+description: This article describes how to create item requirements for service orders.  
 author: sorenva
 ms.date: 05/01/2018
 ms.topic: article

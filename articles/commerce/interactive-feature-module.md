@@ -2,7 +2,7 @@
 # required metadata
 
 title: Interactive feature module
-description: This topic covers interactive feature modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+description: This article covers interactive feature modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](includes/banner.md)]
 
-This topic covers interactive feature modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+This article covers interactive feature modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
 Interactive feature modules are mosaic-like modules that can be used to market multiple product categories or product brands by using a combination of images and text. For example, a retailer can add an interactive feature module to the home page of an e-commerce site to promote top-selling categories. The interactive feature module resembles the tile list module, but it has a different layout and different interaction functionality.
 

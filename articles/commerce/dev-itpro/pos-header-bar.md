@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add custom buttons to the POS header bar
-description: This topic explains how to add a new custom button to the POS header bar. 
+description: This article explains how to add a new custom button to the POS header bar. 
 author: mugunthanm
 ms.date: 09/16/2020
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 10.0.14
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to add a new custom button to the header bar in the point of sale (POS). The POS header bar extension is supported by Microsoft Dynamics 365 Commerce version 10.0.14 and later.
+This article explains how to add a new custom button to the header bar in the point of sale (POS). The POS header bar extension is supported by Microsoft Dynamics 365 Commerce version 10.0.14 and later.
 
 The custom header button must contain an HTML file that includes Cascading Style Sheets (CSS) code that describes the control user interface (UI), styles, and themes. It must also contain a TypeScript view model file that specifies the logic. The class inside the file view model file must extend the **CustomPackingItem** class, so that it inherits the header button properties and events. The **cartChangedHandler** event is exposed on the header button to provide notification if something changes in the cart. Your extension code can do custom logic that is based on cart events, or it can do custom business logic.
 

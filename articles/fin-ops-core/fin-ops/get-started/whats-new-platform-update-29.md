@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Platform update 29 for Finance and Operations apps (October 2019)
-description: This topic describes features in Platform update 29 for Finance and Operations apps. 
+description: This article describes features in Platform update 29 for Finance and Operations apps. 
 author: tonyafehr
 ms.date: 10/01/2019
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 29
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes features that are new or changed in Platform update 29 for Finance and Operations apps. This version has a build number of 7.0.5372. While the general availability date is in October, the new features are available for early release in August. For more information about Platform update 29, see [Additional resources](whats-new-platform-update-28.md#additional-resources).
+This article describes features that are new or changed in Platform update 29 for Finance and Operations apps. This version has a build number of 7.0.5372. While the general availability date is in October, the new features are available for early release in August. For more information about Platform update 29, see [Additional resources](whats-new-platform-update-28.md#additional-resources).
 
 
 ## Feature management
@@ -55,12 +55,12 @@ An attachment recovery feature has been added that provides a recycle bin for re
 The session idle timeout is the amount of time a user can be inactive before the user's session times out and is closed. With Platform update 29, the web browser session timeout setting is exposed in the user interface and is optimized for a default value of 30 minutes instead of 60 minutes. You can still change and set the value up to 60 minutes, but that may cause an extra load on the system. For more information, see [Set the session idle timeout](../../dev-itpro/sysadmin/session-idle-timeout.md).
 
 ## Visual refresh of the web client to align with the Fluent design language
-As part of the Dynamics 365 app-wide effort, we are incrementally working toward a visual refresh of the web client to more closely align controls and pages with the Microsoft Fluent design language. An initial set of changes are included in Platform update 29. For more information, see the [Visual refresh of the web client to align with the Fluent design language](/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/visual-refresh-web-client-align-fluent-design-language) topic in the Release Plans.
+As part of the Dynamics 365 app-wide effort, we are incrementally working toward a visual refresh of the web client to more closely align controls and pages with the Microsoft Fluent design language. An initial set of changes are included in Platform update 29. For more information, see the [Visual refresh of the web client to align with the Fluent design language](/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/visual-refresh-web-client-align-fluent-design-language) article in the Release Plans.
 
 As part of this change, the workspace tiles on the dashboard now have a new visual style. See [Create icons for workspace tiles](../../dev-itpro/user-interface/create-icons-workspace-tiles.md) for updated guidance on creating images for workspace tiles that are visually aligned to out-of-the-box workspace tiles.
 
 ##  Saved views (Preview)
-Saved views are now available in preview. This feature represents a significant enhancement to the personalization subsystem, and allows users to have multiple named sets of personalizations per page. For list pages, these views can also contain filters. Management of personalizations is also substantially easier with views, as views can be published to security roles. For more information about how to enable this feature in a developer environment, see [Saved views](saved-views.md). Also refer to the [Build forms that fully utilize saved views](../../dev-itpro/user-interface/understanding-saved-views.md) topic. Note that this preview feature will continue to evolve and change until it becomes generally available. 
+Saved views are now available in preview. This feature represents a significant enhancement to the personalization subsystem, and allows users to have multiple named sets of personalizations per page. For list pages, these views can also contain filters. Management of personalizations is also substantially easier with views, as views can be published to security roles. For more information about how to enable this feature in a developer environment, see [Saved views](saved-views.md). Also refer to the [Build forms that fully utilize saved views](../../dev-itpro/user-interface/understanding-saved-views.md) article. Note that this preview feature will continue to evolve and change until it becomes generally available. 
 
 ## New grid control (Preview) 
 The [new grid control](/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/user-productivity-new-grid) is now available in preview. This new grid serves as a replacement for the existing grid control and features faster rendering, smoother scrolling, easier navigation in the grid, and drag-and-drop column reordering. The new grid also allows for grand totals at the bottom of numeric columns in tabular grids in a footer that can be enabled using the right-click context menu from column headers. Once enabled, all tabular and list grids will automatically switch to use the new grid, unless the page has a grid with a non-react extensible control, in which case the existing grid control will be used on that page. Note that this preview feature will continue to evolve and change until it becomes generally available.
@@ -108,12 +108,12 @@ Wondering about upcoming and recently released capabilities in any of our busine
 Check out the [Dynamics 365: 2019 release wave 2 plan](/dynamics365-release-plan/2019wave2/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
-The [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated.
+The [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) article describes features that have been removed or deprecated.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
-Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
+Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) article 12 months prior to the removal.
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
 

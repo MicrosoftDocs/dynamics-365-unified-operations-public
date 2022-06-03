@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure tax integration for China
-description: This topic describes the process for configuring tax integration for China.
+description: This article describes the process for configuring tax integration for China.
 author: ShylaThompson
 ms.date: 06/20/2017
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the process for configuring tax integration for China.
+This article describes the process for configuring tax integration for China.
 
 ## Prerequisites for Dynamics 365 Finance version 10.0 and later
 

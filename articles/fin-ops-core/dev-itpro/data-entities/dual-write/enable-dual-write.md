@@ -28,7 +28,7 @@ The process of enabling dual-write has three parts:
 2. [Link your Finance and Operations app environment to Dataverse by using the dual-write wizard](link-your-environment.md).
 3. [Enable the table maps](enable-entity-map.md).
 
-Each part is described in a separate topic.
+Each part is described in a separate article.
 
 ## Next steps
 

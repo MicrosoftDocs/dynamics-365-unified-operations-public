@@ -1,6 +1,6 @@
 ---
 title: Form patterns for migrated forms
-description: This topic provides information that will help you select the best form pattern for the forms that you migrate. 
+description: This article provides information that will help you select the best form pattern for the forms that you migrate. 
 author: jasongre
 ms.date: 11/09/2017
 ms.topic: article
@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information that will help you select the best form pattern for the forms that you migrate. 
+This article provides information that will help you select the best form pattern for the forms that you migrate. 
 
 ## Introduction
 

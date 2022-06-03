@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Set up and create agreements 
-description: This topic provides information about creating purchase and sales agreements.
+description: This article provides information about creating purchase and sales agreements.
 author: v-nadyuz
 ms.date: 02/05/2020
 ms.topic: article
@@ -45,7 +45,7 @@ You can view all purchase agreements on the **Purchase agreements** list page an
 ## Create purchase agreement classifications
 
 1. Go to **Procurement and sourcing** \> **Setup** \> **Purchase agreement classification**.
-2. Specify the details as described in the previous section of this topic, [Create sales agreement classifications](#create-sales-agreement-classifications).
+2. Specify the details as described in the previous section of this article, [Create sales agreement classifications](#create-sales-agreement-classifications).
 
 ![Purchase agreement classification page.](media/2_Purchase_agreement_classifications.png)
 
@@ -146,7 +146,7 @@ For more information about how to create purchase agreements, see [Create a purc
 
     ![Create purchase agreement dialog box.](media/9_Create_purchase_agreement.png)
 
-5. On the **Purchase agreements** page, specify the details as described in the [Create a sales agreement](#create-sales-agreement) section earlier in this topic.
+5. On the **Purchase agreements** page, specify the details as described in the [Create a sales agreement](#create-sales-agreement) section earlier in this article.
 
 ## Set up agreement dimension control for settlements
 

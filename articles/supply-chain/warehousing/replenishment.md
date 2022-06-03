@@ -2,7 +2,7 @@
 # required metadata
 
 title: Replenishment overview
-description: This topic describes the replenishment strategies that are available for warehouses that use the functionality that is available in Warehouse management.
+description: This article describes the replenishment strategies that are available for warehouses that use the functionality that is available in Warehouse management.
 author: Mirzaab
 ms.date: 02/19/2020
 ms.topic: overview
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the replenishment strategies that are available for warehouses that use the functionality that is available in Warehouse management. The information in this topic doesn't apply to the warehousing solution that is available in Inventory management.
+This article describes the replenishment strategies that are available for warehouses that use the functionality that is available in Warehouse management. The information in this article doesn't apply to the warehousing solution that is available in Inventory management.
 
 The following replenishment strategies are available:
 

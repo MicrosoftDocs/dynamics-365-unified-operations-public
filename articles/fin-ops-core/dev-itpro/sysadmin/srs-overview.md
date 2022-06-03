@@ -2,7 +2,7 @@
 # required metadata
 
 title: Cross-company data sharing overview
-description: This topic provides an overview of cross-company data sharing. This is a mechanism for sharing reference and group data among companies in a deployment.
+description: This article provides an overview of cross-company data sharing. This is a mechanism for sharing reference and group data among companies in a deployment.
 author: ramasri
 ms.date: 02/15/2022
 ms.topic: article

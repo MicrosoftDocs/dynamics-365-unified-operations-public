@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](includes/banner.md)]
 
-Learn how to make Finance and Operations applications work for your business, using the resources in this topic to find great content for end users, developers, and IT professionals. 
+Learn how to make Finance and Operations applications work for your business, using the resources in this article to find great content for end users, developers, and IT professionals. 
 
 Much of this content also applies to the related products: Dynamics 365 Commerce and Dynamics 365 Human Resources. 
 

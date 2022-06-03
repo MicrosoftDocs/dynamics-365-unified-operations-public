@@ -1,8 +1,8 @@
 ---
 title: Deploy and access development environments
-description: This topic describes how to access development instances, configure local development VMs, and find configuration settings for developers and administrators.
+description: This article describes how to access development instances, configure local development VMs, and find configuration settings for developers and administrators.
 author: laneswenka
-ms.date: 05/04/2022
+ms.date: 05/24/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -11,19 +11,20 @@ ms.assetid: 4be8b7a1-9632-4368-af41-6811cd100a37
 ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+
 ---
 
 # Deploy and access development environments
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to access development instances, configure local development virtual machines (VMs), and find important configurations settings for developers and administrators.
+This article describes how to access development instances, configure local development virtual machines (VMs), and find important configurations settings for developers and administrators.
 
 > [!NOTE]
 > - Microsoft Support may provide limited troubleshooting on Tier 1 development environments.
 > - In certain circumstances, a fresh deploy of a Tier 1 environment may be requested by Microsoft Support to resolve an issue.
 > - Development environments should not contain business critical data and are considered disposable.
+> - Only 120 environments are support per tenant. We recommend that you limit the number of cloud-hosted environments under a specific tenant to allow enough capacity to be able to deploy sandbox and production environments.
  
 
 ## Definitions
@@ -69,7 +70,7 @@ The system can be accessed by end users. The administrator can add users to this
 
 ### Accessing the cloud instance through Remote Desktop
 
-Cloud environments can be accessed both as an end user and as a developer. The developer gets access to the system through Remote Desktop credentials. The Remote Desktop credentials are obtained from the environment page on the LCS project site (see the illustration earlier in this topic).
+Cloud environments can be accessed both as an end user and as a developer. The developer gets access to the system through Remote Desktop credentials. The Remote Desktop credentials are obtained from the environment page on the LCS project site (see the illustration earlier in this article).
 
 ![Restricted admin access.](media/restricted-admin.png)
 

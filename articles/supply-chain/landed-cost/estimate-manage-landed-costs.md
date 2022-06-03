@@ -2,7 +2,7 @@
 # Delivery information setup
 
 title: Estimate and manage landed costs
-description: The system uses your auto cost setup to determine an estimate for your landed cost. This topic explains how you can define various scenarios to deliver a more accurate estimate.
+description: The system uses your auto cost setup to determine an estimate for your landed cost. This article explains how you can define various scenarios to deliver a more accurate estimate.
 author: Weijiesa
 ms.date: 01/26/2021
 ms.topic: article
@@ -17,7 +17,7 @@ audience: Application User
 ms.reviewer: kamaybac
 
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: weijiesa
@@ -55,7 +55,7 @@ The following table describes the fields that are available for each template.
 
 Use the **Cost estimate** dialog box to generate a new cost estimate that is based on a selected cost template, a selected set of items, and other details of a journey. These settings are then used to determine the estimated landed costs of goods. These cost estimates are primarily used to work with standard cost items. By adding the estimated landed costs to the standard cost of goods in inventory, you should experience smaller variance transactions when the goods are added to a voyage, because the standard cost will reflect the estimates of those landed costs.
 
-To open the **Cost estimate** dialog box, go to **Landed cost \> Periodic tasks \> Cost estimate**. Then set the fields that are described in the following subsections. Finally, select **OK** to create the estimate. The **Cost estimate** page (**Landed cost \> Inquiries \> Cost estimates**) then appears and shows your new estimate, as described later in this topic.
+To open the **Cost estimate** dialog box, go to **Landed cost \> Periodic tasks \> Cost estimate**. Then set the fields that are described in the following subsections. Finally, select **OK** to create the estimate. The **Cost estimate** page (**Landed cost \> Inquiries \> Cost estimates**) then appears and shows your new estimate, as described later in this article.
 
 ### Settings on the Parameters tab
 
@@ -96,7 +96,7 @@ To view or adjust the volume and/or weight details for an item, select the item 
 
 ## Manage estimated costs
 
-To view and edit the cost estimates that you've created, go to **Landed cost \> Inquiries \> Cost estimates**. On the **Cost estimates** page, the list pane on the left shows all current cost estimates. You can use the buttons on the Action Pane to work with a selected estimate. Note that you can't create a new cost estimate from the **Cost estimates** page. Instead, use the **Cost estimate** dialog box (**Landed cost \> Periodic tasks \> Cost estimate**), as described earlier in this topic.
+To view and edit the cost estimates that you've created, go to **Landed cost \> Inquiries \> Cost estimates**. On the **Cost estimates** page, the list pane on the left shows all current cost estimates. You can use the buttons on the Action Pane to work with a selected estimate. Note that you can't create a new cost estimate from the **Cost estimates** page. Instead, use the **Cost estimate** dialog box (**Landed cost \> Periodic tasks \> Cost estimate**), as described earlier in this article.
 
 The **Cost estimates** page shows how each estimated cost was derived. It also shows the estimated landed cost for each item. You can modify a cost estimate by changing the cost price and/or currency that is associated with the various goods. You can also modify the associated voyage costs at both the voyage level and the container level. When you use this page to modify the costs, you're prompted to recalculate the estimated costs for the items in the cost estimate. When you're ready, you can use the estimates to update the cost price of the items in the cost template.
 

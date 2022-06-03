@@ -2,7 +2,7 @@
 # required metadata
 
 title: Service update availability
-description: This topic provides information about the different release options.
+description: This article provides information about the different release options.
 author: hmahl
 ms.date: 05/03/2022
 ms.topic: article

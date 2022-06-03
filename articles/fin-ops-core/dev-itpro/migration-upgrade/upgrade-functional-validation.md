@@ -2,7 +2,7 @@
 # required metadata
 
 title: Upgrade from AX 2012 - Functional test passes
-description: This topic explains how to perform a functional test pass to validate an upgraded Finance and Operations environment. 
+description: This article explains how to perform a functional test pass to validate an upgraded Finance and Operations environment. 
 author: tariqbell
 ms.date: 01/31/2018
 ms.topic: article

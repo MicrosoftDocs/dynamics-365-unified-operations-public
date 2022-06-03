@@ -2,7 +2,7 @@
 # required metadata
 
 title: Go-live for implementation projects FAQ
-description: This topic lists frequently asked questions about how to go live with an implementation project.
+description: This article lists frequently asked questions about how to go live with an implementation project.
 author: OlgaPetrovaFT
 ms.date: 05/10/2022
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists frequently asked questions about how to go live with an implementation project.
+This article lists frequently asked questions about how to go live with an implementation project.
 
 ## When can I configure and request my production environment?
 
@@ -66,7 +66,7 @@ For more information, see [Software lifecycle policy and cloud releases](../../d
 
 No. We will deny any request for a production environment that is in a different datacenter than your sandbox environment. We require that all your environments reside in the same datacenter. If you want your production environment to reside in the West US datacenter, you must first redeploy your sandbox environments to the West US datacenter, test them, and sign off.
 
-For information that can help you select the correct datacenter, see the [Network requirements](../get-started/system-requirements.md#network-requirements) section of the "System requirements" topic.
+For information that can help you select the correct datacenter, see the [Network requirements](../get-started/system-requirements.md#network-requirements) section of the "System requirements" article.
 
 ## How will my production environment be sized?
 
@@ -98,7 +98,7 @@ For more information, see [Learn about automatic SQL Database backups](/azure/sq
 No. However, you can submit a database refresh service request to copy your production database to your Tier 2 and higher sandbox environment. After the copy request is completed, you can back up your sandbox environment.
 
 ## My golden configuration database is in a Tier 1 sandbox environment. How can I copy and restore it to my production environment?
-To copy and restore your database, follow the instructions in the topic, [Golden configuration promotion](../../dev-itpro/database/dbmovement-scenario-goldenconfig.md). 
+To copy and restore your database, follow the instructions in the article, [Golden configuration promotion](../../dev-itpro/database/dbmovement-scenario-goldenconfig.md). 
 
 > [!NOTE]
 > If your golden configuration is in data packages, you must manually import the data packages to the production environment.
@@ -111,7 +111,7 @@ For more information, see [Apply updates to cloud environments](../../dev-itpro/
 
 ## What should I do if my production environment is down?
 
-To report a production outage, follow the process described in the topic, [Report a production outage](../../dev-itpro/lifecycle-services/report-production-outage.md).
+To report a production outage, follow the process described in the article, [Report a production outage](../../dev-itpro/lifecycle-services/report-production-outage.md).
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

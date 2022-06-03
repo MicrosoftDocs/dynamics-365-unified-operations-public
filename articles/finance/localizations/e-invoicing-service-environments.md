@@ -2,7 +2,7 @@
 # required metadata
 
 title: Service environments
-description: This topic provides information about service environments for Electronic invoicing and explains how to set them up.
+description: This article provides information about service environments for Electronic invoicing and explains how to set them up.
 author: dkalyuzh
 ms.date: 02/28/2022
 ms.topic: article

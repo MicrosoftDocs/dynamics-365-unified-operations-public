@@ -2,7 +2,7 @@
 # required metadata
 
 title: Globalization resources
-description: This topic includes lists of resources that can help you learn more about country/region-specific functionality and offerings.  
+description: This article includes lists of resources that can help you learn more about country/region-specific functionality and offerings.  
 author: kfend
 ms.date: 02/19/2021
 ms.topic: index-page
@@ -38,7 +38,7 @@ If your government regulations require data to be stored differently or serviced
 
 Finance and Operations apps include functionality for the country/regions documented in the [Product localization and translation availability guide](https://aka.ms/dynamics_365_international_availability_deck). This functionality is enabled based on the primary address of the active legal entity. 
 
-This topic includes lists of resources that can help you do the following: 
+This article includes lists of resources that can help you do the following: 
 - Learn more about developing country/region-specific solutions.
 - Get country/region specific updates.
 - Submit and review regulatory alerts.

@@ -3,7 +3,7 @@
 
 
 title: What's new or changed in Dynamics 365 for Retail version 10.0.5
-description: This topic describes features that are in new or changed in Dynamics 365 for Retail. 
+description: This article describes features that are in new or changed in Dynamics 365 for Retail. 
 author: josaw1
 ms.date: 09/16/2019
 ms.topic: article
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes features that are new or changed in Dynamics 365 Retail in 10.0.5. 
+This article describes features that are new or changed in Dynamics 365 Retail in 10.0.5. 
 
 
 To learn about the features in Microsoft Dynamics 365 for Finance and Operations, see [What's new or changed in Finance and Operations version 10.0.5 (October 2019)](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-5).

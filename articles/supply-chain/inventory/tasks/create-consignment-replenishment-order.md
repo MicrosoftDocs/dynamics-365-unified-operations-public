@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Create a consignment replenishment order
-description: This topic explains how to create a consignment replenishment order where you can track the expected delivery from a vendor into your consignment inventory. 
+description: This article explains how to create a consignment replenishment order where you can track the expected delivery from a vendor into your consignment inventory. 
 author: yufeihuang
 ms.date: 08/19/2019
 ms.topic: business-process 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to create a consignment replenishment order where you can track the expected delivery from a vendor into your consignment inventory. It also shows how to record a receipt of products so that the consignment inventory is registered as on-hand inventory owned by the vendor. This procedure would typically be done by a procurement professional. You can use this guide in demo data company USMF. This procedure is for a feature that was added in Dynamics 365 for Operations, version 1611.
+This article explains how to create a consignment replenishment order where you can track the expected delivery from a vendor into your consignment inventory. It also shows how to record a receipt of products so that the consignment inventory is registered as on-hand inventory owned by the vendor. This procedure would typically be done by a procurement professional. You can use this guide in demo data company USMF. This procedure is for a feature that was added in Dynamics 365 for Operations, version 1611.
 
 ## Create a consignment replenishment order
 1. In the navigation pane, go to **Modules > Procurement and sourcing > Consignment > Consignment replenishment orders**.

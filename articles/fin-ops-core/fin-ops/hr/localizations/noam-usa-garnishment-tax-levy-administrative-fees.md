@@ -2,7 +2,7 @@
 # required metadata
 
 title: Garnishments, tax levies, and administrative fees FAQ
-description: This topic lists frequently asked questions and answers about garnishments and tax levies.
+description: This article lists frequently asked questions and answers about garnishments and tax levies.
 author: andreabichsel
 ms.date: 06/20/2017
 ms.topic: article
@@ -31,9 +31,9 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../../includes/banner.md)]
 
-This topic lists frequently asked questions and answers about garnishments and tax levies. It provides information to help you quickly and accurately set up garnishments and tax levies to keep your organization in compliance with applicable laws, regulations, and court orders. If you have a question that isn't answered here or in the related topics, confer with your legal advisors.
+This article lists frequently asked questions and answers about garnishments and tax levies. It provides information to help you quickly and accurately set up garnishments and tax levies to keep your organization in compliance with applicable laws, regulations, and court orders. If you have a question that isn't answered here or in the related topics, confer with your legal advisors.
 
-In this topic, *garnishment* implies both garnishments and tax levies, unless otherwise specified.
+In this article, *garnishment* implies both garnishments and tax levies, unless otherwise specified.
 
 ## How do tax levies differ from other garnishments?
 

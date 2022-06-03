@@ -2,7 +2,7 @@
 # required metadata
 
 title: Process existing payroll payments
-description: This topic describes tasks such as reprinting pay statements, and replacing paychecks that have been lost or damaged.
+description: This article describes tasks such as reprinting pay statements, and replacing paychecks that have been lost or damaged.
 author: andreabichsel
 ms.date: 04/24/2019
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes tasks such as reprinting pay statements, and replacing paychecks that have been lost or damaged. It also explains how to complete similar tasks after pay statements have been generated or payments have been issued to workers.
+This article describes tasks such as reprinting pay statements, and replacing paychecks that have been lost or damaged. It also explains how to complete similar tasks after pay statements have been generated or payments have been issued to workers.
 
 ## Print or reprint pay statements for previously processed payments
 

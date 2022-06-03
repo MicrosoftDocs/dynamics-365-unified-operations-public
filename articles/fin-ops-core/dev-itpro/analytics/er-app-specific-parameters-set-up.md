@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up the parameters of an ER format per legal entity
-description: This topic explains how you can set up the parameters of an Electronic reporting (ER) format per legal entity.
+description: This article explains how you can set up the parameters of an Electronic reporting (ER) format per legal entity.
 author: NickSelin
 ms.date: 03/25/2022
 ms.topic: article
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Release 8.1.3
 
 To complete these steps, you must first complete the steps in [Configure ER formats to use parameters that are specified per legal entity](er-app-specific-parameters-configure-format.md).
 
-To complete the examples in this topic, you must have access to Microsoft Dynamics 365 Finance for one of the following roles:
+To complete the examples in this article, you must have access to Microsoft Dynamics 365 Finance for one of the following roles:
 
 - Electronic reporting developer
 - Electronic reporting functional consultant
@@ -226,7 +226,7 @@ The application-specific parameters of an ER format are legal entity–dependent
 
 You can also use this export-import approach to transfer ER format–related application-specific parameters that were originally configured in one instance of Finance to another instance of Finance.
 
-If you configure application-specific parameters for one version of an ER format and then import a later version of the same format into the current Finance instance, the existing application-specific parameters won't be applied to the imported version unless you use the **Use application specific parameters from previous versions of ER formats** feature. For more information, see the [Reuse existing parameters](#reuse-existing-parameters) section later in this topic.
+If you configure application-specific parameters for one version of an ER format and then import a later version of the same format into the current Finance instance, the existing application-specific parameters won't be applied to the imported version unless you use the **Use application specific parameters from previous versions of ER formats** feature. For more information, see the [Reuse existing parameters](#reuse-existing-parameters) section later in this article.
 
 When you select a file for import, the structure of the application-specific parameters in that file is compared with the structure of the corresponding data sources of the **Lookup** type in the ER format that is selected for import. By default, the import is completed only if the structure of each application-specific parameter matches the structure of the corresponding data source in the ER format that is selected for import. If the structures don't match, a warning message informs you that the import can't be completed. If you force the import, the existing application-specific parameters for the selected ER format will be cleaned up, and you must set them up from the beginning.
 

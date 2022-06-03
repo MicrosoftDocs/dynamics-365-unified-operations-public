@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configuration keys and data entities
-description: This topic describes the relationship between configuration keys and data entities.
+description: This article describes the relationship between configuration keys and data entities.
 author: peakerbl
 ms.date: 05/10/2019
 ms.topic: article

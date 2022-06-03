@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Ship orders as direct deliveries
-description: This topic demonstrates how to create a direct delivery for a sales order. 
+description: This article demonstrates how to create a direct delivery for a sales order. 
 author: Henrikan  
 ms.date: 07/11/2019  
 ms.topic: business-process 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic demonstrates how to create a direct delivery for a sales order. You use direct delivery when you want to ship goods to the customer directly from your vendor, instead of shipping them to your own warehouse first. You can run this procedure in demo data company USMF or on your own data. To successfully complete the second sub-task "Create direct deliveries from the workbench", make sure that the item that you choose on the sales order has a default Vendor specified on the Purchase FastTab of the Released product master.
+This article demonstrates how to create a direct delivery for a sales order. You use direct delivery when you want to ship goods to the customer directly from your vendor, instead of shipping them to your own warehouse first. You can run this procedure in demo data company USMF or on your own data. To successfully complete the second sub-task "Create direct deliveries from the workbench", make sure that the item that you choose on the sales order has a default Vendor specified on the Purchase FastTab of the Released product master.
 
 ## Set an individual order for direct delivery
 1. Go to **Navigation pane > Modules > Accounts receivable > Orders > All sales orders**.

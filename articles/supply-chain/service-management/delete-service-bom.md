@@ -2,7 +2,7 @@
 # required metadata
 
 title: Delete a service BOM 
-description: This topic provides a procedure that shows how to delete a service BOM.
+description: This article provides a procedure that shows how to delete a service BOM.
 author: sorenva
 ms.date: 05/01/2018
 ms.topic: article

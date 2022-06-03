@@ -2,7 +2,7 @@
 # required metadata
 
 title: Fixed asset inquiries and reports
-description: This topic provides information about the inquiries and reports for fixed asset acquisitions for Russia.
+description: This article provides information about the inquiries and reports for fixed asset acquisitions for Russia.
 author: v-oloski
 ms.date: 08/17/2021
 ms.topic: article
@@ -26,7 +26,7 @@ ms.dyn365.ops.version: 8.1
 ---
 # Fixed asset inquiries and reports
 
-This topic provides information about the inquiries and reports for fixed asset acquisitions for Russia.
+This article provides information about the inquiries and reports for fixed asset acquisitions for Russia.
 
 ## Inquiries
 

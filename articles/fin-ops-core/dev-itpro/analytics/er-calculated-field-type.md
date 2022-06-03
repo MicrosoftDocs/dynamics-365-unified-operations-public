@@ -2,7 +2,7 @@
 # required metadata
 
 title: Support parameterized calls of ER data sources of the Calculated field type
-description: This topic provides information about how to use the Calculated field type for ER data sources.
+description: This article provides information about how to use the Calculated field type for ER data sources.
 author: NickSelin
 ms.date: 01/04/2022
 ms.topic: article
@@ -31,10 +31,10 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how you can design an Electronic reporting (ER) data source by using the **Calculated field** type. This data source may contain an ER expression that, when executed, can be controlled by the values of the parameter arguments that are configured in a binding that calls this data source. By configuring parameterized calls of such a data source, you can reuse a single data source in many bindings, which reduces the total number of data sources that must be configured in ER model mappings or ER formats. It also simplifies the configured ER component, which reduces the maintenance costs and the cost of use by other consumers.
+This article explains how you can design an Electronic reporting (ER) data source by using the **Calculated field** type. This data source may contain an ER expression that, when executed, can be controlled by the values of the parameter arguments that are configured in a binding that calls this data source. By configuring parameterized calls of such a data source, you can reuse a single data source in many bindings, which reduces the total number of data sources that must be configured in ER model mappings or ER formats. It also simplifies the configured ER component, which reduces the maintenance costs and the cost of use by other consumers.
 
 ## Prerequisites
-To complete the examples in this topic, you must have the following access:
+To complete the examples in this article, you must have the following access:
 
 - Access to one of these roles:
 
@@ -312,7 +312,7 @@ When a parameterized calculated field returns a record, you need to support bind
 You can run the initial and improved ER formats to make sure that configured parameterized calculated fields work properly.
 
 ### Import ER configurations
-You can import reviewed configurations from RCS by using the ER repository of the **RCS** type. If you already went through the steps in the topic, [Import Electronic reporting (ER) configurations from Regulatory Configuration Services (RCS)](rcs-download-configurations.md), use the configured ER repository to import configurations discussed earlier in this topic to your environment. Otherwise, follow these steps:
+You can import reviewed configurations from RCS by using the ER repository of the **RCS** type. If you already went through the steps in the article, [Import Electronic reporting (ER) configurations from Regulatory Configuration Services (RCS)](rcs-download-configurations.md), use the configured ER repository to import configurations discussed earlier in this article to your environment. Otherwise, follow these steps:
 
 1. Select the **DEMF** company and on the default dashboard, select **Electronic reporting**.
 2. Select **Reporting configurations**.

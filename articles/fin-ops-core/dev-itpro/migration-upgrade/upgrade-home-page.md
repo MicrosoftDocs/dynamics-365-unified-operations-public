@@ -2,7 +2,7 @@
 # required metadata
 
 title: Upgrades, updates, and hotfixes resources
-description: This topic shows where to find information about upgrading, updating, and applying hotfixes to your Finance and Operations environment and data.
+description: This article shows where to find information about upgrading, updating, and applying hotfixes to your Finance and Operations environment and data.
 author: margoc
 ms.date: 07/23/2019
 ms.topic: index-page
@@ -60,7 +60,7 @@ If you are upgrading a cloud version of Finance and Operations, review the follo
 
 
 ### On-premises
-If you are applying updates to an on-premises version of Finance and Operations, review the following topic:
+If you are applying updates to an on-premises version of Finance and Operations, review the following article:
 
 - [Apply updates to on-premises deployments](../deployment/apply-updates-on-premises.md)
 - [Redeploy on-premises environments](../deployment/redeploy-on-prem.md)

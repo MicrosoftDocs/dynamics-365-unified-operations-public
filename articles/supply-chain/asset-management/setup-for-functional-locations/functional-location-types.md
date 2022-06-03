@@ -2,7 +2,7 @@
 # required metadata
 
 title: Functional location types
-description: This topic describes how to create functional location types in Asset Management.
+description: This article describes how to create functional location types in Asset Management.
 author: johanhoffmann
 ms.date: 06/24/2019
 ms.topic: article
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
  
 
-This topic describes how to create functional location types in Asset Management. Functional location types are used to manage requirements for functional locations, including how assets are installed on a functional location. You can set up asset types, maintenance plans, functional location attributes, and asset attribute requirements to be used on a functional location that uses the specific functional location type. When you create a functional location, the functional location type is mandatory.
+This article describes how to create functional location types in Asset Management. Functional location types are used to manage requirements for functional locations, including how assets are installed on a functional location. You can set up asset types, maintenance plans, functional location attributes, and asset attribute requirements to be used on a functional location that uses the specific functional location type. When you create a functional location, the functional location type is mandatory.
 
 >[!NOTE] 
 >In order to work with functional locations, you must create a default functional location to be used only for the purpose of creating new assets. For that default functional location, you should create a default functional location type that is really simple and allows multiple assets to be installed on the default functional location. See [Create functional locations](../functional-locations/create-functional-locations.md) for more information on how to set up functional locations.

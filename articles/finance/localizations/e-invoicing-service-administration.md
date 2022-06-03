@@ -2,7 +2,7 @@
 # required metadata
 
 title: Electronic invoicing administration components
-description: This topic provides information about the components that are related to administration of Electronic invoicing.
+description: This article provides information about the components that are related to administration of Electronic invoicing.
 author: gionoder
 ms.date: 08/31/2021
 ms.topic: article
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 10.0.12
 [!include [banner](../includes/banner.md)]
 
 
-This topic provides information about the components that are related to administration of Electronic invoicing. It also provides information about how to configure the Electronic invoicing service.
+This article provides information about the components that are related to administration of Electronic invoicing. It also provides information about how to configure the Electronic invoicing service.
 
 ## Azure
 
@@ -128,7 +128,7 @@ To enable communication between Finance and Supply Chain Management and Electron
 
 The service endpoint is the URL where Electronic invoicing is located. Before electronic invoices can be issued, the service endpoint must be configured in Finance and Supply Chain Management to allow for communication with the service.
 
-To configure the service endpoint, go to **Organization administration \> Setup \> Electronic document parameters**, and then, on the **Electronic invoicing** tab, in the **Endpoint URL** field, enter the appropriate URL from the table in the [Service endpoint](#svc-endpoint-uris) section earlier in this topic.
+To configure the service endpoint, go to **Organization administration \> Setup \> Electronic document parameters**, and then, on the **Electronic invoicing** tab, in the **Endpoint URL** field, enter the appropriate URL from the table in the [Service endpoint](#svc-endpoint-uris) section earlier in this article.
 
 #### Environments
 

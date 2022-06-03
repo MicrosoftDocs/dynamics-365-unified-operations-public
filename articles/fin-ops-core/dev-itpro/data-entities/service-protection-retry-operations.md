@@ -2,7 +2,7 @@
 # required metadata
 
 title: Retry operations
-description: This topic describes retry operations that can be implemented if application programming interface (API) requests are throttled because they have reached service protection API limits.
+description: This article describes retry operations that can be implemented if application programming interface (API) requests are throttled because they have reached service protection API limits.
 author: jaredha
 ms.date: 05/04/2022
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 52
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes retry operations that can be implemented if application programming interface (API) requests are throttled because they have reached service protection API limits.
+This article describes retry operations that can be implemented if application programming interface (API) requests are throttled because they have reached service protection API limits.
 
 If a service protection API limit error occurs, it provides a value that indicates the amount of time until new requests from the user can be processed. If a 429 error is returned from the web API, the response header includes a [Retry-After](https://developer.mozilla.org/docs/Web/HTTP/Headers/Retry-After) interval that indicates the number of seconds that the user must wait before they resubmit the request.
 

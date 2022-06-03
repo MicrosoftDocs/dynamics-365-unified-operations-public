@@ -1,6 +1,6 @@
 ---
 title: Business process modeler (BPM) in Lifecycle Services (LCS)
-description: This topic provides information about the Business process modeler tool in Lifecycle Services (LCS).
+description: This article provides information about the Business process modeler tool in Lifecycle Services (LCS).
 author: AngelMarshall 
 ms.date: 06/15/2020
 ms.topic: overview
@@ -37,7 +37,7 @@ BPM is compatible with the following products:
 - **Microsoft Visio** – You can export business process maps to Visio files.
 
 > [!NOTE]
-> The information in this topic is specific only to Finance and Operations apps. For information about Business process modeler and Microsoft Dynamics AX 2012, see [Business process modeler (BPM) in Lifecycle Services (LCS)](/dynamicsax-2012/appuser-itpro/business-process-modeler-lcs). 
+> The information in this article is specific only to Finance and Operations apps. For information about Business process modeler and Microsoft Dynamics AX 2012, see [Business process modeler (BPM) in Lifecycle Services (LCS)](/dynamicsax-2012/appuser-itpro/business-process-modeler-lcs). 
 
 ## Prerequisites
 

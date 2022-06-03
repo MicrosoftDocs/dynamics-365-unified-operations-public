@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Working clothes/special rigging accounting (Russia)
-description: This topic provides information about how to maintain working clothes and special rigging for Russia.
+description: This article provides information about how to maintain working clothes and special rigging for Russia.
 author: ShylaThompson
 ms.date: 10/04/2018
 ms.topic: article

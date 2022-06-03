@@ -2,7 +2,7 @@
 # required metadata
 
 title: Test recorder and Regression suite automation tool for Cloud POS
-description: This topic explains how to automate user acceptance testing (UAT) by using the POS test recorder and the Regression suite automation tool (RSAT).
+description: This article explains how to automate user acceptance testing (UAT) by using the POS test recorder and the Regression suite automation tool (RSAT).
 author: mugunthanm
 ms.date: 04/21/2022
 ms.topic: article
@@ -32,9 +32,9 @@ ms.dyn365.ops.version: AX 10.0.5
 [!include [banner](../includes/banner.md)]
 
 
-This topic explains how to use the new test recorder tool in Cloud POS to record business scenarios for user acceptance testing (UAT) and user interface (UI) testing. It also explains how to automate test validation by using the Regression suite automation tool (RSAT). RSAT uses the Microsoft Azure DevOps test suite to download test cases. It then reports the results, together with the test execution status, back to Azure DevOps. The test cases can be manually created in Azure DevOps, or they can be synced from the Business process modeler (BPM) tool in Microsoft Dynamics Lifecycle Services (LCS) to Azure DevOps and then to RSAT.
+This article explains how to use the new test recorder tool in Cloud POS to record business scenarios for user acceptance testing (UAT) and user interface (UI) testing. It also explains how to automate test validation by using the Regression suite automation tool (RSAT). RSAT uses the Microsoft Azure DevOps test suite to download test cases. It then reports the results, together with the test execution status, back to Azure DevOps. The test cases can be manually created in Azure DevOps, or they can be synced from the Business process modeler (BPM) tool in Microsoft Dynamics Lifecycle Services (LCS) to Azure DevOps and then to RSAT.
 
-This topic applies to Dynamics 365 Retail and Dynamics 365 Finance version 10.0.5 (October 2019) and later.
+This article applies to Dynamics 365 Retail and Dynamics 365 Finance version 10.0.5 (October 2019) and later.
 
 > [!NOTE]
 > The test recorder can be used only in Cloud POS with Google Chrome or Microsoft Edge web browser.

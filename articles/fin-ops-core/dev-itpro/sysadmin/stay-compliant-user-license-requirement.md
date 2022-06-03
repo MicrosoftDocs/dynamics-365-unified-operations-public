@@ -2,7 +2,7 @@
 # required metadata
 
 title: Stay compliant with user licensing requirements
-description: This topic provides information about how you can stay compliant with the user licensing requirements for Finance and Operations apps.
+description: This article provides information about how you can stay compliant with the user licensing requirements for Finance and Operations apps.
 author: peakerbl 
 ms.date: 10/06/2020
 ms.topic: article
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of how customers can stay compliant with the user licensing requirements for Finance and Operations apps, such as Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, and Dynamics 365 Commerce.
+This article provides an overview of how customers can stay compliant with the user licensing requirements for Finance and Operations apps, such as Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, and Dynamics 365 Commerce.
 
 The licensing requirements for users are determined by the security roles that are assigned to those users. Security roles are built based on a hierarchy of:
 
@@ -39,11 +39,11 @@ The licensing requirements for users are determined by the security roles that a
 
 For more information, see [Role-based security](./role-based-security.md).
 
-The licensing requirements for users are determined at the organization or tenant level. This topic is focused on the requirements for a single environment. If you have multiple environments, the requirements must be analyzed across all of them.
+The licensing requirements for users are determined at the organization or tenant level. This article is focused on the requirements for a single environment. If you have multiple environments, the requirements must be analyzed across all of them.
 
-A licensing requirement is assigned to every securable object. Examples of licensing requirements include **None**, **Team members**, **Activity**, and **Operations**. The **Operations** licensing requirement indicates that a full user license is required. Some privileges are unique to a specific full user license and require a *base* or *attach* license for the full user license be assigned to the user. For more information, see the [User license estimator report](#user-license-estimator-report) section later in this topic.
+A licensing requirement is assigned to every securable object. Examples of licensing requirements include **None**, **Team members**, **Activity**, and **Operations**. The **Operations** licensing requirement indicates that a full user license is required. Some privileges are unique to a specific full user license and require a *base* or *attach* license for the full user license be assigned to the user. For more information, see the [User license estimator report](#user-license-estimator-report) section later in this article.
 
-The rest of this topic describes the various tools that you can use to ensure that the actual licensing complies with the expected licensing requirements.
+The rest of this article describes the various tools that you can use to ensure that the actual licensing complies with the expected licensing requirements.
 
 ## Roles for selected user FactBox on the Users page
 

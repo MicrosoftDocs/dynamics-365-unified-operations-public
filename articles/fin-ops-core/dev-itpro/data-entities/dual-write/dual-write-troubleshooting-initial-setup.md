@@ -1,6 +1,6 @@
 ---
 title: Troubleshoot issues during initial setup
-description: This topic provides information that can help you fix issues that occur during the initial setup of dual-write integration.
+description: This article provides information that can help you fix issues that occur during the initial setup of dual-write integration.
 author: RamaKrishnamoorthy 
 ms.date: 08/10/2021
 ms.topic: article
@@ -17,10 +17,10 @@ ms.search.validFrom: 2020-03-16
 
 
 
-This topic provides troubleshooting information for dual-write integration between Finance and Operations apps and Dataverse. Specifically, it provides information that can help you fix issues that might occur during the initial setup of dual-write integration.
+This article provides troubleshooting information for dual-write integration between Finance and Operations apps and Dataverse. Specifically, it provides information that can help you fix issues that might occur during the initial setup of dual-write integration.
 
 > [!IMPORTANT]
-> Some of the issues that this topic addresses might require either the system admin role or Microsoft Azure Active Directory (Azure AD) tenant admin credentials. The section for each issue explains whether a specific role or credentials are required.
+> Some of the issues that this article addresses might require either the system admin role or Microsoft Azure Active Directory (Azure AD) tenant admin credentials. The section for each issue explains whether a specific role or credentials are required.
 
 ## You can't link a Finance and Operations app to Dataverse
 

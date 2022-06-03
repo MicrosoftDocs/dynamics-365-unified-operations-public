@@ -1,6 +1,6 @@
 ---
 title: Unlink and relink dual-write environments
-description: This topic describes how to unlink, clear the key tables, and then relink dual-write environments.
+description: This article describes how to unlink, clear the key tables, and then relink dual-write environments.
 author: RamaKrishnamoorthy
 ms.date: 04/07/2021
 ms.topic: article
@@ -18,7 +18,7 @@ ms.dyn365.ops.version:
 
 
 
-When you unlink and relink dual-write connection between environments, you need to delete the data from the key tables. This requirement applies to sandbox, production, and user acceptance test (UAT) environments during activities like backup and restore. This topic describes how to unlink, delete the data in the key tables, and then relink the dual-write environments.
+When you unlink and relink dual-write connection between environments, you need to delete the data from the key tables. This requirement applies to sandbox, production, and user acceptance test (UAT) environments during activities like backup and restore. This article describes how to unlink, delete the data in the key tables, and then relink the dual-write environments.
 
 The mappings are preserved when you unlink and relink, because the mappings are stored in Dataverse.
 

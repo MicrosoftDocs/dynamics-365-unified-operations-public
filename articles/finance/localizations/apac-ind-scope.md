@@ -2,7 +2,7 @@
 # required metadata
 
 title: Scope of the Indian localization
-description: This topic provides information about the strategy and scope of the tax, finance, and accounting laws and regulations in India that were implemented as part of Microsoft Dynamics 365 Finance. 
+description: This article provides information about the strategy and scope of the tax, finance, and accounting laws and regulations in India that were implemented as part of Microsoft Dynamics 365 Finance. 
 author: kfend
 ms.date: 08/21/2019
 ms.topic: article
@@ -32,11 +32,11 @@ ms.search.validFrom: 2019-6-21
 
 In general, Microsoft devotes significant resources to generating the business process functionality of our applications by developing features and functionality that address specific tax accounting or financial regulatory requirements in countries or regions where Dynamics 365 Finance is generally available.
 
-The software, which helps business operations comply with country/region-specific laws, regulations, and common business practices for handling routine activities, is designed to include features and functionality that address the specific central and state government tax, accounting, and financial or statutory reporting laws or regulations that usually govern business in India. However, because laws and regulations are diverse and numerous, not all laws, regulations, or commercial requirements in India are covered. For example, regulatory features that Microsoft develops and makes generally available in India don't usually support industry-specific laws or national standards, laws that are specific to particular states, or city or municipal legal requirements, except as noted in this topic.
+The software, which helps business operations comply with country/region-specific laws, regulations, and common business practices for handling routine activities, is designed to include features and functionality that address the specific central and state government tax, accounting, and financial or statutory reporting laws or regulations that usually govern business in India. However, because laws and regulations are diverse and numerous, not all laws, regulations, or commercial requirements in India are covered. For example, regulatory features that Microsoft develops and makes generally available in India don't usually support industry-specific laws or national standards, laws that are specific to particular states, or city or municipal legal requirements, except as noted in this article.
 
 Channel partners are a very important part of the global strategy for delivering Dynamics 365 Finance. Their deliberation helps crystallize the thought process and helps Microsoft design a roadmap for achieving excellence in localization requirements. The flexible, need-based architecture of Finance is useful to channel partners as they try to address a customer's specific business needs during development, configuration, and implementation. Although channel partners might provide solutions that meet specific regulatory requirements that are unique to cities, states, or other regions in India, Microsoft doesn't provide any guarantees or warranties (expressed, implied, statutory, or otherwise) that partner-created solutions comply with local business, tax, and regulatory, legal, or other applicable requirements. Channel partners and customers are solely responsible for any configurations, customizations, localizations, or translations (and any updates to these configurations, customizations, localizations, or translations) that they create or implement on behalf of customers. They are also solely responsible for any support or other service that is provided to customers for such solutions. Users must contact their channel partner for information about the solutions that the channel partner creates for licensed versions of Finance.
 
-This topic outlines the strategy and scope of the localization that Microsoft has implemented as part of the version of Finance that is commercially available in India.
+This article outlines the strategy and scope of the localization that Microsoft has implemented as part of the version of Finance that is commercially available in India.
 
 ## Definitions
 
@@ -52,16 +52,16 @@ This topic outlines the strategy and scope of the localization that Microsoft ha
 
 To address the tax (direct and indirect), financial accounting, and statutory reporting requirements for India, the strategy that Microsoft adopted involves providing localizations. This strategy consists of the following elements:
 
-- Meet the central-level tax requirements that are described in the [Indian localization scope](#indian-localization-scope) section of this topic.
+- Meet the central-level tax requirements that are described in the [Indian localization scope](#indian-localization-scope) section of this article.
 - Meet state-specific and region-specific tax requirements if they are generic across all states in India.
 - Meet tax requirements for export and import transactions.
-- Deliver new regulatory feature requirements through configurations or new development, according to the localization scope and rules that are specified in this topic, and according to implementation opportunities that are driven by the Finance roadmap.
+- Deliver new regulatory feature requirements through configurations or new development, according to the localization scope and rules that are specified in this article, and according to implementation opportunities that are driven by the Finance roadmap.
 - Deliver new regulatory features for all supported versions of Finance.
 
 > [!NOTE]
 > There is no focus on the requirements of specific businesses, segments, verticals, or regions, even when this focus is required by laws, statutes, or regulations at the federal, state, or city level. Only those city-specific tax requirements that are described in the [Indian localization scope](#indian-localization-scope) section are included.
 
-Some laws and requirements are out of scope for this app. The localization that Microsoft develops for Finance is limited to the features and functionality that are described in this topic. Therefore, the localization must be analyzed by prospective customers or a tax professional, such as an accounting and tax auditor, a tax law firm, or a tributary consulting firm that can assess whether the functionality will meet the customer's business needs, or whether custom solutions are required.
+Some laws and requirements are out of scope for this app. The localization that Microsoft develops for Finance is limited to the features and functionality that are described in this article. Therefore, the localization must be analyzed by prospective customers or a tax professional, such as an accounting and tax auditor, a tax law firm, or a tributary consulting firm that can assess whether the functionality will meet the customer's business needs, or whether custom solutions are required.
 
 ## Indian localization scope
 
@@ -80,7 +80,7 @@ The localization scope for Finance in India is limited to fiscal and financial a
 - Fixed assets
 - Retail
 
-The features that Microsoft delivers and supports as part of the Indian localization are listed later in this topic.
+The features that Microsoft delivers and supports as part of the Indian localization are listed later in this article.
 
 ## Market availability
 

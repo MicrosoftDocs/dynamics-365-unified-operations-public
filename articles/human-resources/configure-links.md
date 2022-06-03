@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create links from Human Resources to another environment
-description: This topic explains how to create a link from Microsoft Dynamics 365 Human Resources to another Dynamics 365 environment.
+description: This article explains how to create a link from Microsoft Dynamics 365 Human Resources to another Dynamics 365 environment.
 author: twheeloc
 ms.date: 03/18/2022
 ms.topic: article

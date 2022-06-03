@@ -2,7 +2,7 @@
 # required metadata
 
 title: Wave label printing
-description: This topic describes wave label printing and explains how to set it up.
+description: This article describes wave label printing and explains how to set it up.
 author: perlynne
 ms.date: 05/01/2020
 ms.topic: article
@@ -55,7 +55,7 @@ Wave label printing offers the following enhancements:
 These enhancements make it more efficient to label cartons before palletization. They especially benefit companies that ship to large retailers that automatically confirm order receipts by scanning each carton separately.
 
 > [!NOTE]
-> You can implement the configuration scenarios that are described in this topic either separately or in combination, depending on your business requirements. You can design several wave label templates that work in sequence (as illustrated in scenario 3). For example, you can use scenario 1 to print carton labels and scenario 2 to print pallet labels (if pallets in stock vary in size and composition).
+> You can implement the configuration scenarios that are described in this article either separately or in combination, depending on your business requirements. You can design several wave label templates that work in sequence (as illustrated in scenario 3). For example, you can use scenario 1 to print carton labels and scenario 2 to print pallet labels (if pallets in stock vary in size and composition).
 
 ## Turn on the Wave label printing feature
 

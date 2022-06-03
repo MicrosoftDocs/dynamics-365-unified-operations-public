@@ -1,6 +1,6 @@
 ---
 title: Application lifecycle management
-description: This topic describes the benefits of making dual-write solution-aware.
+description: This article describes the benefits of making dual-write solution-aware.
 author: nhelgren
 ms.date: 03/20/2020
 ms.topic: article
@@ -60,7 +60,7 @@ This section explains how to import table maps from AppSource and apply them to 
 1. Import the dual-write core solution.
 
     1. Create a new dual-write environment (a Finance and Operations app environment and a Dataverse environment).
-    2. Follow the instructions in the [Install the dual-write core solution](#install-the-dual-write-core-solution) section earlier in this topic to install the dual-write core solution from AppSource in Power Apps.
+    2. Follow the instructions in the [Install the dual-write core solution](#install-the-dual-write-core-solution) section earlier in this article to install the dual-write core solution from AppSource in Power Apps.
     3. Verify that the dual-write core solution is listed under **Solutions** in Power Apps.
 
 2. Import the Microsoft-published or ISV-published table maps solution.
@@ -172,7 +172,7 @@ Sometimes, a solution might contain different implementations of a table map. Fo
 
 1. Import the dual-write core solution.
 
-    1. Follow the instructions in the [Install the dual-write core solution](#install-the-dual-write-core-solution) section earlier in this topic to import the dual-write core solution from AppSource into Power Apps.
+    1. Follow the instructions in the [Install the dual-write core solution](#install-the-dual-write-core-solution) section earlier in this article to import the dual-write core solution from AppSource into Power Apps.
     2. Verify that the dual-write core solution is listed under **Solutions** in Power Apps.
 
 2. Upgrade the table maps.

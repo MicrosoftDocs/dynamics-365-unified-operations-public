@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up order fulfillment for stores
-description: This topic provides an overview of how to set up store order fulfillment. 
+description: This article provides an overview of how to set up store order fulfillment. 
 author: BrianShook
 ms.date: 10/30/2017
 ms.topic: article

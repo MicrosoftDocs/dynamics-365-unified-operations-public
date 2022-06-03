@@ -2,7 +2,7 @@
 # required metadata
 
 title: Maintenance requests
-description: This topic provides an overview about managing maintenance requests in Asset Management
+description: This article provides an overview about managing maintenance requests in Asset Management
 author: johanhoffmann
 ms.date: 10/01/2019
 ms.topic: overview

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Indonesia overview
-description: This topic provides an overview of functionality that is specific to Indonesia.
+description: This article provides an overview of functionality that is specific to Indonesia.
 author: sndray
 ms.date: 12/09/2021
 ms.topic: overview
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.20
 
 [!include [banner](../includes/banner.md)]
 
-This topic includes information and links to documentation resources for Indonesia.
+This article includes information and links to documentation resources for Indonesia.
 
 - [VAT declaration for Indonesia](apac-idn-ppn-declaration.md)
 - [Invoicing for Indonesia (ID-00002)](apac-idn-invoicing.md)

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create an end-to-end payment integration for a payment terminal
-description: This topic describes how to create an end-to-end payment integration for a payment terminal.
+description: This article describes how to create an end-to-end payment integration for a payment terminal.
 author: Reza-Assadi
 ms.date: 07/09/2020
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how to write a payment integration for Microsoft Dynamics 365 Retail Modern POS and Cloud POS (the POS) for a payment terminal that can directly communicate with the payment gateway.
+This article describes how to write a payment integration for Microsoft Dynamics 365 Retail Modern POS and Cloud POS (the POS) for a payment terminal that can directly communicate with the payment gateway.
 
 ## Key terms
 
@@ -44,7 +44,7 @@ The following illustration shows a high-level overview of the payment terminal i
 
 ![Payment connector integration overview.](media/PAYMENTS/PAYMENT-TERMINAL/Overview.jpg)
 
-This topic describes the following steps that are required to create an end-to-end payment integration for a payment terminal:
+This article describes the following steps that are required to create an end-to-end payment integration for a payment terminal:
 
 - **[Write a payment connector](#write-a-payment-connector):** The payment connector is the main integration point between the POS and the payment terminal. The section for this step describes how to implement and configure a new payment connector that can relay payment requests (for example, authorize, refund, and void requests) to the payment terminal. 
 - **[Write a payment processor](#write-a-payment-processor):** The payment processor is used to define the merchant properties that are used as part of the payment integration. The section for this step describes how to implement a new payment processor. It includes information about the interfaces that you should implement and patterns that you should follow.
@@ -84,7 +84,7 @@ namespace Contoso.Commerce.HardwareStation.PaymentSample
 }
 ```
 
-The **HandlerName** string is used to configure the payment connector that is used on a given POS register through the client (see the information later in this topic).
+The **HandlerName** string is used to configure the payment connector that is used on a given POS register through the client (see the information later in this article).
 
 #### Implement supported payment requests
 To process payment-related flows, the payment connector must define the supported request types that it can handle. Additionally, the **Execute** method must be implemented to route each request that the connector supports to a given method. The following example shows the complete list of supported request types and an example of a specific request (that is, an authorize request).
@@ -306,7 +306,7 @@ The **PaymentSdkData** property must contain the following data.
 
 | Namespace | Name | Description | Sample value |
 |---|---|---|---|
-| Connector | ConnectorName | The name of the **IPaymentProcessor** interface that is used for the transactions, as described in the "Write a payment processor" section later in this topic. |
+| Connector | ConnectorName | The name of the **IPaymentProcessor** interface that is used for the transactions, as described in the "Write a payment processor" section later in this article. |
 | AuthorizationResponse | Properties | The list of authorization responses. | See the next table. |
 
 The **Properties** field of the **PaymentSdkData** property must contain the following fields.

@@ -2,7 +2,7 @@
 # required metadata
 
 title: New or updated task guides (November 2016)
-description: This topic lists the new or updated Task guides that were released to the Microsoft (November 2016 - all languages) APQC Unified Library for Microsoft Dynamics 365 for Operations. No new Getting Started Library was released.
+description: This article lists the new or updated Task guides that were released to the Microsoft (November 2016 - all languages) APQC Unified Library for Microsoft Dynamics 365 for Operations. No new Getting Started Library was released.
 author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists the new or updated Task guides that were released to the Microsoft (November 2016 – all languages) APQC Unified Library for Microsoft Dynamics 365 for Operations. No new Getting Started Library was released.
+This article lists the new or updated Task guides that were released to the Microsoft (November 2016 – all languages) APQC Unified Library for Microsoft Dynamics 365 for Operations. No new Getting Started Library was released.
 
 The (November 2016 – all languages) APQC Unified Library contains the Task guides that are intended to be used for Help with Microsoft Dynamics 365 for Operations, Microsoft Dynamics 365 for Operations platform update 3, Microsoft Dynamics AX Platform update 2, the Dynamics AX May 2016 update, and the Microsoft Dynamics AX February 2016 release. For more information about these releases, see [What's new or changed in Finance and Operations home page](whats-new-changed.md). Localized versions of the Task guides are available in this library. For more information about how to connect the Help system to a Task guide library, see [Help system](help-overview.md).
 

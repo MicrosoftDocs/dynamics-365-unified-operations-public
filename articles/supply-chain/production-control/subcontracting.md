@@ -2,7 +2,7 @@
 # required metadata
 
 title: Subcontracting
-description: This topic will help you build a walkthrough of subcontracting in manufacturing in Dynamics 365 Supply Chain Management.
+description: This article will help you build a walkthrough of subcontracting in manufacturing in Dynamics 365 Supply Chain Management.
 author: johanhoffmann
 ms.date: 09/28/2018
 ms.topic: article
@@ -29,11 +29,11 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-This topic will help you build a walkthrough of subcontracting in manufacturing in Microsoft Dynamics 365 Supply Chain Management. The first part of this topic describes the setup of the data. The second part takes you through the steps in the walkthrough.
+This article will help you build a walkthrough of subcontracting in manufacturing in Microsoft Dynamics 365 Supply Chain Management. The first part of this article describes the setup of the data. The second part takes you through the steps in the walkthrough.
 
 ## Target audience
 
-In this topic, you will learn how to set up subcontracting in manufacturing. You will use existing data in the HQUS legal entity to do the basic setup of a subcontracting activity flow. The demo data in the HQUS legal entity includes setup parameters that have been preset to support the steps in the walkthrough. Even though the walkthrough addresses key pain points and challenges for various roles, it can be completed by the system admin.
+In this article, you will learn how to set up subcontracting in manufacturing. You will use existing data in the HQUS legal entity to do the basic setup of a subcontracting activity flow. The demo data in the HQUS legal entity includes setup parameters that have been preset to support the steps in the walkthrough. Even though the walkthrough addresses key pain points and challenges for various roles, it can be completed by the system admin.
 
 ## Demo scenario
 

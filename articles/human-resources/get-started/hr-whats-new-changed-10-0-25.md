@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Human Resources 10.0.25 
-description: This topic describes features that are either new or changed in the Dynamics 365 Human Resources version 10.0.25 preview release.
+description: This article describes features that are either new or changed in the Dynamics 365 Human Resources version 10.0.25 preview release.
 author: twheeloc
 ms.date: 01/24/2022
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.25
 
 [!include [banner](../../includes/preview-banner.md)]
 
-This topic lists features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.25. This version has a build number of 10.0.1149 and is available as 
+This article lists features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.25. This version has a build number of 10.0.1149 and is available as 
 follows:
 
 - **Preview of release**: January 2022
@@ -44,7 +44,7 @@ Management. For more information about the infrastructure merge, see [Dynamics 3
 
 ## Features included in this release
 
-The following table lists the features that are included in this release. We might update this topic to include features that made it into the build after this topic was 
+The following table lists the features that are included in this release. We might update this article to include features that made it into the build after this article was 
 initially published. If you want to use or turn off any of these features, you must do that in 
 [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 

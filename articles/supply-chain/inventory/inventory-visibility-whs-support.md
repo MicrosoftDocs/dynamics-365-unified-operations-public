@@ -1,6 +1,6 @@
 ---
 title: Inventory Visibility support for WHS items
-description: This topic describes Inventory Visibility support for items that are enabled for advanced warehouse processes (WHS items).
+description: This article describes Inventory Visibility support for items that are enabled for advanced warehouse processes (WHS items).
 author: yufeihuang
 ms.date: 03/10/2022
 ms.topic: article
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.26
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes Inventory Visibility support for items that are enabled for advanced warehouse processes (WHS items). The feature that adds this capability to Inventory Visibility is named *Advanced WHS*.
+This article describes Inventory Visibility support for items that are enabled for advanced warehouse processes (WHS items). The feature that adds this capability to Inventory Visibility is named *Advanced WHS*.
 
 ## WHS items
 

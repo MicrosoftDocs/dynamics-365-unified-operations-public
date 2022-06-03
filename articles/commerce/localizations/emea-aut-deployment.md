@@ -2,7 +2,7 @@
 # required metadata
 
 title: Deployment guidelines for cash registers for Austria
-description: This topic is a deployment guide for the Commerce localization for Austria.
+description: This article is a deployment guide for the Commerce localization for Austria.
 author: AlexChern0v
 ms.date: 01/31/2020
 ms.topic: article
@@ -28,12 +28,12 @@ ms.dyn365.ops.version:
 
 [!include[banner](../includes/banner.md)]
 
-This topic is a deployment guide that shows how to enable the Dynamics 365 Commerce localization for Austria. The localization consists of several extensions of Commerce components. For example, the extensions let you print custom fields on receipts, register additional audit events, includes samples of the integration with the EFSTA System and
+This article is a deployment guide that shows how to enable the Dynamics 365 Commerce localization for Austria. The localization consists of several extensions of Commerce components. For example, the extensions let you print custom fields on receipts, register additional audit events, includes samples of the integration with the EFSTA System and
 Electronical Fiscal Register Software. For more information about the localization for Austria, see [Fiscal registration service integration sample for Austria](./emea-aut-fi-sample.md).
 
 Integration samples were developed based on the fiscal integration framework. For details about the fiscal integration functionality, see [Overview of fiscal integration for Commerce channels](fiscal-integration-for-retail-channel.md), these samples are part of the Retail software development kit (SDK). For information about how to install and use the SDK, see the [Retail software development kit (SDK) architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
-This localization consists of extensions for the Commerce runtime (CRT), Hardware station, and POS. To run this sample, you must modify and build the CRT, Hardware station, and POS projects. We recommend that you use an unmodified Retail SDK to make the changes that are described in this topic. We also recommend that you use a source control system, such as Azure DevOps, where no files have been changed yet.
+This localization consists of extensions for the Commerce runtime (CRT), Hardware station, and POS. To run this sample, you must modify and build the CRT, Hardware station, and POS projects. We recommend that you use an unmodified Retail SDK to make the changes that are described in this article. We also recommend that you use a source control system, such as Azure DevOps, where no files have been changed yet.
 
 ## Development environment
 
@@ -200,7 +200,7 @@ For more information, see [Fiscal registration service integration sample for Au
 
 Follow these steps to create deployable packages that contain Commerce components, and to apply those packages in a production environment.
 
-1. Complete the steps in the [Cloud POS extension components](#cloud-pos-extension-components) or [Modern POS extension components](#modern-pos-extension-components) section earlier in this topic.
+1. Complete the steps in the [Cloud POS extension components](#cloud-pos-extension-components) or [Modern POS extension components](#modern-pos-extension-components) section earlier in this article.
 2. Make the following changes in the package configuration files under the **RetailSdk\\Assets** folder:
 
     1. In the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files, add the following lines to the **composition** section:

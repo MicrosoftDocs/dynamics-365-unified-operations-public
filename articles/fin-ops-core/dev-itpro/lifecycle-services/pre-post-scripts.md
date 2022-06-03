@@ -2,7 +2,7 @@
 # required metadata
 
 title: Local agent pre-deployment and post-deployment scripts
-description: This topic provides information about local agent pre-deployment and post-deployment scripts.
+description: This article provides information about local agent pre-deployment and post-deployment scripts.
 author: faix
 ms.date: 08/07/2019
 ms.topic: article
@@ -12,7 +12,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: [Operations AOT form name to tie this topic to]
+# ms.search.form: [Operations AOT form name to tie this article to]
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks

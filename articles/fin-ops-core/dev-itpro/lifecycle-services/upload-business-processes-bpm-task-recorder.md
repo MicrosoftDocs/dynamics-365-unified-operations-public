@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 In Microsoft Dynamics Lifecycle Services, you can record information about custom business processes by using an updated version of Task recorder. You can then upload the files that you record to Business process modeler.
 
-This topic explains where to find the updated version of Task recorder and how to upload the custom business process files that you record. The updated version of Task recorder is available as a hotfix. You can download the hotfix from the following sites:
+This article explains where to find the updated version of Task recorder and how to upload the custom business process files that you record. The updated version of Task recorder is available as a hotfix. You can download the hotfix from the following sites:
 
 -   Microsoft Dynamics AX 2012 and Microsoft Dynamics AX 2012 Feature Pack – Knowledgebase article [2863182](https://go.microsoft.com/fwlink/?LinkId=309910)
 -   Microsoft Dynamics AX 2012 R2 – Knowledgebase article [2863182](https://go.microsoft.com/fwlink/?LinkId=309911)

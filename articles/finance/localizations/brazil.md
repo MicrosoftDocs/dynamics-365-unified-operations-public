@@ -2,7 +2,7 @@
 # required metadata
 
 title: Brazil overview
-description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for Brazil. 
+description: This article provides links to Microsoft Dynamics 365 Finance documentation resources for Brazil. 
 author: kfend
 ms.date: 01/20/2022
 ms.topic: overview
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This topic includes information and links to resources that can help you set up legal entities with a primary address in Brazil. 
+This article includes information and links to resources that can help you set up legal entities with a primary address in Brazil. 
   
 - [Fiscal books](latam-bra-fiscal-books.md)
   - [Configure fiscal books](latam-bra-configure-fiscal-books.md)

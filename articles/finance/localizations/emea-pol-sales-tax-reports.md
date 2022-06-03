@@ -2,7 +2,7 @@
 # required metadata
 
 title: Sales tax reports for Poland
-description: This topic provides information about Polish VAT reporting and the information that is legally required in VAT registers for Poland.
+description: This article provides information about Polish VAT reporting and the information that is legally required in VAT registers for Poland.
 author: mrolecki
 ms.date: 12/06/2017
 ms.topic: article
@@ -28,7 +28,7 @@ ms.search.validFrom: 2016-05-31
 # Sales tax reports for Poland
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about Polish value-added tax (VAT) reporting and the information that is legally required in VAT registers for Poland.
+This article provides information about Polish value-added tax (VAT) reporting and the information that is legally required in VAT registers for Poland.
 
 ## VAT report date codes
 

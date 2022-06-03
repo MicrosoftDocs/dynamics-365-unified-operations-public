@@ -1,6 +1,6 @@
 ---
 title: Project onboarding
-description: This topic provides information about the Project onboarding wizard in Microsoft Dynamics Lifecycle Services.
+description: This article provides information about the Project onboarding wizard in Microsoft Dynamics Lifecycle Services.
 author: vetrivicky
 ms.date: 11/30/2020
 ms.topic: article

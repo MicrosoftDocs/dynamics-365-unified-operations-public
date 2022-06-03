@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up global withholding tax
-description: This topic lists the steps for setting up global withholding tax for sales and purchases. 
+description: This article lists the steps for setting up global withholding tax for sales and purchases. 
 
 author: kailiang
 ms.date: 01/12/2021
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 10.0.17
 
 # Set up global withholding tax
 
-This topic lists the steps for setting up global withholding tax for sales and purchases. 
+This article lists the steps for setting up global withholding tax for sales and purchases. 
 
 1. Set up withholding tax authorities on the **Withholding tax authorities** page.
 

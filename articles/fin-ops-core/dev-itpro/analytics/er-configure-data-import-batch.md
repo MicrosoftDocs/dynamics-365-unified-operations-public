@@ -2,7 +2,7 @@
 # required metadata
 
 title: Import data from manually selected files in batch mode
-description: This topic explains how to import data from manually selected files in batch mode.
+description: This article explains how to import data from manually selected files in batch mode.
 author: NickSelin
 ms.date: 01/07/2022
 ms.topic: article
@@ -35,11 +35,11 @@ To use the [Electronic reporting (ER)](general-electronic-reporting.md) framewor
 
 The new ER capability that supports data import in batch mode enables this process to be configured as unattended. You can use ER configurations to perform data import by scheduling a new batch job from the ER user interface (UI).
 
-This topic explains how to complete data import from a manually selected file in batch mode. The examples use vendor transactions as business data. The steps of these examples can be completed in the **USMF** company. No coding is required.
+This article explains how to complete data import from a manually selected file in batch mode. The examples use vendor transactions as business data. The steps of these examples can be completed in the **USMF** company. No coding is required.
 
 ## Prerequisites
 
-To complete the examples in this topic, you must have the following access:
+To complete the examples in this article, you must have the following access:
 
 - One of the following roles:
 

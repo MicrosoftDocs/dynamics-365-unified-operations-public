@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting guide for testing with the Performance SDK
-description: This topic provides troubleshooting information for issues that you might encounter during single-user or multi-user testing that uses the Performance SDK.
+description: This article provides troubleshooting information for issues that you might encounter during single-user or multi-user testing that uses the Performance SDK.
 author: hasaid
 ms.date: 05/28/2020
 ms.topic: article
@@ -37,7 +37,7 @@ This issue affects only single-user tests. When the test is running, a web clien
 
 ### Solution
 
-See [Multi-user testing using the Performance SDK](perfsdk-multi-user-testing.md). That topic explains how to create a correct certificate for this type of test. It also explains how to add the thumbprint of the certificate to the wif.config file.
+See [Multi-user testing using the Performance SDK](perfsdk-multi-user-testing.md). That article explains how to create a correct certificate for this type of test. It also explains how to add the thumbprint of the certificate to the wif.config file.
 
 ## Zoom factor
 

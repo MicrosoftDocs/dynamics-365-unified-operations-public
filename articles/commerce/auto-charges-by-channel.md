@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Enable and configure auto charges by channel
-description: This topic explains how to enable and configure auto charges by channel in Microsoft Dynamics 365 Commerce.
+description: This article explains how to enable and configure auto charges by channel in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 03/30/2020
 ms.topic: article
@@ -24,7 +24,7 @@ ms.dyn365.ops.version: 10.0.10
 
 # Enable and configure auto charges by channel
 
-This topic explains how to enable and configure automatic charges (auto charges) by channel in Microsoft Dynamics 365 Commerce.
+This article explains how to enable and configure automatic charges (auto charges) by channel in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 

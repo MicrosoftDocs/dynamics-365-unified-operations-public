@@ -2,7 +2,7 @@
 # required metadata
 
 title: File ER destination type
-description: This topic provides information about configuring a file destination for an ER format.
+description: This article provides information about configuring a file destination for an ER format.
 author: NickSelin
 ms.date: 01/27/2020
 ms.topic: article

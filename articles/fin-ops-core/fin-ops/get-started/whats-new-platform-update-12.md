@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 12 (November 2017)
-description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 12. This version was released in November 2017.
+description: This article describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 12. This version was released in November 2017.
 author: tonyafehr
 ms.date: 01/17/2018
 ms.topic: article
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 12
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 12. This version was released in November 2017 and has a build number of 7.0.4709.
+This article describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 12. This version was released in November 2017 and has a build number of 7.0.4709.
 
 Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to find supplemental information about new features and learn more about what new features are in development. For information about the bug fixes included in Platform update 12, log in to Lifecycle Services (LCS) and view this [KB article](https://go.microsoft.com/fwlink/?linkid=863949).
 
@@ -48,7 +48,7 @@ If you're a customer operating or implementing Finance and Operations, you are p
 
 Development and application management tasks performed by developers can be done without requiring local administrator rights on the development virtual machine (VM). Customers will not have access to the VM admin account of development and build environments running in the Microsoft subscription.
 
-For more information, refer to this LCS blog topic, [Restricted Admin Access](https://blogs.msdn.microsoft.com/lcs/2017/10/31/restricted-admin-access-with-platform-12-updates/).
+For more information, refer to this LCS blog article, [Restricted Admin Access](https://blogs.msdn.microsoft.com/lcs/2017/10/31/restricted-admin-access-with-platform-12-updates/).
 
 ## Enabling SQL triggers in 'bring your own database' (BYOD)
 

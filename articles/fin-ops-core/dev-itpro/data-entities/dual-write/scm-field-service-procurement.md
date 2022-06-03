@@ -1,6 +1,6 @@
 ---
 title: Integrate procurement between Supply Chain Management and Field Service
-description: This topic describes how dual-write integration supports purchase order creation and updates from both Supply Chain Management and Field Service.
+description: This article describes how dual-write integration supports purchase order creation and updates from both Supply Chain Management and Field Service.
 author: RamaKrishnamoorthy
 ms.date: 11/11/2020
 ms.topic: article

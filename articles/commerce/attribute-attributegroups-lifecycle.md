@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage attributes and attribute groups
-description: This topic describes how to use attributes to provide a way to describe a product and its characteristics through user-defined fields. 
+description: This article describes how to use attributes to provide a way to describe a product and its characteristics through user-defined fields. 
 author: ashishmsft
 ms.date: 04/28/2018
 ms.topic: article
@@ -89,7 +89,7 @@ Attributes are based on *attribute types*. The attribute type identifies the typ
 
 *Attribute metadata* lets you select options to specify how the attributes for each product should behave. For example, you can specify whether attributes are required, whether they can be used for searches, and whether they can be used as a filter.
 
-For products, the attribute metadata settings can be overridden at the channel level. This capability will be discussed later in this topic.
+For products, the attribute metadata settings can be overridden at the channel level. This capability will be discussed later in this article.
 
 As you might notice, the **Attributes** page includes options that are related to attribute metadata. Under **Attribute metadata for POS**, one option that is named **Can be refined** affects the behavior of the attribute values in the point of sale (POS) or the way that the system handles those attribute values. Only attributes for which you may set the **Can be refined** option to **Yes**, will show up for refinement or filtering of products in the POS.
 

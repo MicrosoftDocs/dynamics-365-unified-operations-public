@@ -2,7 +2,7 @@
 # required metadata
 
 title: Parse incoming documents in CSV format
-description: This topic provides information about how to set up Electronic reporting (ER) formats to parse incoming CSV formatted documents. 
+description: This article provides information about how to set up Electronic reporting (ER) formats to parse incoming CSV formatted documents. 
 author: nickselin
 ms.date: 12/01/2017
 ms.topic: article

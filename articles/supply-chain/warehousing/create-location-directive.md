@@ -2,7 +2,7 @@
 # required metadata
 
 title: Work with location directives
-description: This topic describes how to work with location directives. Location directives are user-defined rules that help identify pick and put locations for inventory movement.
+description: This article describes how to work with location directives. Location directives are user-defined rules that help identify pick and put locations for inventory movement.
 author: Mirzaab
 ms.date: 11/13/2020
 ms.topic: article
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.15
 Location directives are rules that help identify pick and put locations for inventory movement. For example, in a sales order transaction, a location directive determines where the items will be picked, and where the picked items will be put. Location directives consist of a header and associated lines. They are created for specific *work order types*.
 
 > [!NOTE]
-> This topic applies to features in the **Warehouse management** module. It doesn't apply to features in the [Inventory management](../inventory/inventory-home-page.md) module.
+> This article applies to features in the **Warehouse management** module. It doesn't apply to features in the [Inventory management](../inventory/inventory-home-page.md) module.
 
 You can use location directives to perform the following tasks:
 
@@ -112,7 +112,7 @@ The following table lists the fields that are specific to particular work order 
 
 To open the **Location directives** page, go to **Warehouse management \> Setup \> Location directives**.
 
-From there, you can view, create, and edit your location directives by using the commands on the Action Pane. See the remaining sections of this topic for information about how to use all the fields that are available on the page.
+From there, you can view, create, and edit your location directives by using the commands on the Action Pane. See the remaining sections of this article for information about how to use all the fields that are available on the page.
 
 ## Action Pane
 
@@ -165,7 +165,7 @@ The fields on the **Location directives** FastTab are specific to the work order
 - **Applicable disposition code** – Specify whether the disposition code of the location directive must match the disposition code that is applied when the item is received, or whether the location directive can be selected based on any disposition code. If you select *Exact match*, and the **Disposition code** field is blank, only blank disposition codes will be considered for this location directive.
 
     > [!NOTE]
-    > This field is available only for selected work order types where replenishment is permitted. For a complete list, see the [Fields that are specific to work order types](#fields-specific-types) section earlier in this topic.
+    > This field is available only for selected work order types where replenishment is permitted. For a complete list, see the [Fields that are specific to work order types](#fields-specific-types) section earlier in this article.
 
 - **Locate by** – Specify whether the putaway quantity should be the whole quantity on the license plate, or whether it should be item by item. Use this field to help ensure that all the contents on a license plate is put into one location, and that the system doesn't suggest that you split the contents into several locations for **ASN** (license plate receiving), **Mixed license plate** receiving, and **Cluster** receiving processes. (The **Cluster** receiving process requires that the [Cluster putaway feature](putaway-clusters.md) feature be turned on.) The behavior of the location directive query, the lines, and the location directive actions will vary, depending on the value that you select. The **Lines** FastTab is only used when the **Locate by** is set to *Item*.
 
@@ -257,7 +257,7 @@ After you create location directives, you can associate each directive code with
 ## Additional resources
 
 - Video: [Warehouse management configuration deep dive](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
-- Help topic: [Control warehouse work by using work templates and location directives](control-warehouse-location-directives.md)
+- Help article: [Control warehouse work by using work templates and location directives](control-warehouse-location-directives.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

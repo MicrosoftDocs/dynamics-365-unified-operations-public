@@ -1,6 +1,6 @@
 ---
 title: Fixed receipt price
-description: This topic explains how you can configure and use fixed receipt prices in Microsoft Dynamics 365 Supply Chain Management. 
+description: This article explains how you can configure and use fixed receipt prices in Microsoft Dynamics 365 Supply Chain Management. 
 author: raprofit
 ms.date: 04/25/2022
 ms.topic: article
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.27
 
 [!include [banner](../includes/banner.md)]
 
-**Fixed receipt price** is an option that you can select on an item model group when you use an inventory model other than *Standard cost* or *Moving weighted average*. In early versions of Microsoft Dynamics AX, this option was named **Standard cost**. It was renamed **Fixed receipt price** when the new standard cost inventory model was introduced in Dynamics AX 2012. This topic explains how you can configure and use fixed receipt prices in Dynamics 365 Supply Chain Management.
+**Fixed receipt price** is an option that you can select on an item model group when you use an inventory model other than *Standard cost* or *Moving weighted average*. In early versions of Microsoft Dynamics AX, this option was named **Standard cost**. It was renamed **Fixed receipt price** when the new standard cost inventory model was introduced in Dynamics AX 2012. This article explains how you can configure and use fixed receipt prices in Dynamics 365 Supply Chain Management.
 
 ## About fixed receipt prices
 

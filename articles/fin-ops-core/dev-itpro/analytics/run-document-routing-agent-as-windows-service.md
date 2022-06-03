@@ -2,7 +2,7 @@
 # required metadata
 
 title: Run the Document Routing Agent as a Windows service
-description: This topic provides information that will help you select the execution mode that is used by the Document Routing Agent. 
+description: This article provides information that will help you select the execution mode that is used by the Document Routing Agent. 
 author: RichdiMSFT
 ms.date: 02/11/2021
 ms.topic: article
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 2
 
 The Document Routing Agent includes an option that lets you select the mode of execution. The process can run as either a desktop application or a Microsoft Windows service. When the application runs as a Windows service, it can be started automatically after a computer restart. It can also be configured to run under the security context of a specific user account. This enhancement lets customers host the Document Routing Agent on secured domain resources such as network print servers.
 
-This topic provides important information that will help you select the correct execution mode.
+This article provides important information that will help you select the correct execution mode.
 
 ## Service applications
 An application is a program that a user interacts with on the desktop. A service is a process that runs in the background and doesn't have an active window. The Document Routing Agent now supports both execution modes. It's important that you understand why you might select one mode instead of the other and the steps that are involved in running the process as a service. For more information about Windows services, see [Introduction to Windows Service Applications](/dotnet/framework/windows-services/introduction-to-windows-service-applications). Here are some of the main benefits of running the Document Routing Agent as a background service:

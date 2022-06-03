@@ -2,7 +2,7 @@
 # required metadata
 
 title: IoT Intelligence home page
-description: This topic provides links to information about IoT Intelligence.
+description: This article provides links to information about IoT Intelligence.
 author: johanhoffmann
 ms.date: 12/09/2020
 ms.topic: article

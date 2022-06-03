@@ -1,6 +1,6 @@
 ---
 title: Write extensible tables
-description: This topic provides information about how to write extensible tables.
+description: This article provides information about how to write extensible tables.
 author: MichaelFruergaardPontoppidan
 ms.date: 09/09/2018
 ms.topic: article

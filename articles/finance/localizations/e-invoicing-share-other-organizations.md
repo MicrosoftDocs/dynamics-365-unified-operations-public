@@ -2,7 +2,7 @@
 # required metadata
 
 title: Share Globalization features with other organizations
-description: This topic explains how to share Globalization features with external organizations.
+description: This article explains how to share Globalization features with external organizations.
 author: dkalyuzh
 ms.date: 02/11/2022
 ms.topic: article

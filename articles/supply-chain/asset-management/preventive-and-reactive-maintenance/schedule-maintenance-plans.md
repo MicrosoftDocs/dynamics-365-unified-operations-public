@@ -2,7 +2,7 @@
 # required metadata
 
 title: Schedule maintenance plans
-description: This topic explains schedule maintenance plans in Asset Management.
+description: This article explains schedule maintenance plans in Asset Management.
 author: johanhoffmann
 ms.date: 08/27/2019
 ms.topic: article

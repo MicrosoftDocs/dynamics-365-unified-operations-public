@@ -2,7 +2,7 @@
 # required metadata
 
 title: Asset view
-description: This topic describes the asset view in Asset Management.
+description: This article describes the asset view in Asset Management.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
  
 
-This topic describes the asset view in Asset Management. The **Asset view** page shows active assets and functional locations in a tree view. Therefore, you can easily get an overview of asset relations to functional locations. Additionally, you can view detailed information about functional locations, assets, and related bills of materials (BOMs). You can also get a quick overview of active maintenance requests and work orders that are related to an asset.
+This article describes the asset view in Asset Management. The **Asset view** page shows active assets and functional locations in a tree view. Therefore, you can easily get an overview of asset relations to functional locations. Additionally, you can view detailed information about functional locations, assets, and related bills of materials (BOMs). You can also get a quick overview of active maintenance requests and work orders that are related to an asset.
 
 1. Select **Asset management** \> **Common** \> **Assets** \> **Asset view**.
 2. To change the view that is shown on the page, select a new value in the **View** field.

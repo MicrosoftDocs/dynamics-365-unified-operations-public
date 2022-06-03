@@ -2,9 +2,9 @@
 # required metadata
 
 title: System requirements for cloud deployments of Dynamics 365 Commerce
-description: This topic lists the system requirements for cloud deployments for the current version of Dynamics 365 Commerce.
+description: This article lists the system requirements for cloud deployments for the current version of Dynamics 365 Commerce.
 author: jashanno 
-ms.date: 05/05/2022
+ms.date: 06/01/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.5
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic lists the system requirements for cloud deployments of the current version of Dynamics 365 Commerce. If this step is appropriate, before you install Commerce, you should verify that the system that you're working with meets or exceeds the minimum network, hardware, and software requirements.
+This article lists the system requirements for cloud deployments of the current version of Dynamics 365 Commerce. If this step is appropriate, before you install Commerce, you should verify that the system that you're working with meets or exceeds the minimum network, hardware, and software requirements.
 
 ## Supported web browsers
 
@@ -72,7 +72,7 @@ In general, Commerce is optimized for the internet. The number of round trips fr
 
 ## .NET Framework requirements
 
-Commerce requires the Microsoft .NET Framework version 4.7.1 or later for all ClickOnce applications, such as the document routing agent. For installation instructions, see [Install the .NET Framework for developers](/dotnet/framework/install/guide-for-developers). For Commerce client components (sealed or legacy installers), we recommend that you always use the latest version of the .NET Framework that is available.
+Commerce requires the Microsoft .NET Framework version 4.7.2 or later for Call ClickOnce applications, such as the document routing agent. For installation instructions, see [Install the .NET Framework for developers](/dotnet/framework/install/guide-for-developers). For Commerce client components (sealed or legacy installers), we recommend that you always use the latest version of the .NET Framework that is available.
 
 ## Supported Microsoft Office applications
 
@@ -92,7 +92,7 @@ If the self-service component will use a server certificate, it's critical that 
 > [!NOTE]
 > The legacy Commerce Scale Unit (self-hosted) self-service component uses Azure Service to Service authentication. It's critical that you manage both the generated Azure web application keys (formerly called *secrets*) and the server certificate for expiration. By default, a certificate and a generated Azure web application key expire after one calendar year (365 days).
 >
-> The supported versions of the .NET Framework have been updated. Legacy self-service client-side components require that the .NET Framework version 4.7.1 or later be installed. For installation instructions, see [Install the .NET Framework for developers](/dotnet/framework/install/guide-for-developers). For the sealed installers, we recommend that you always have the latest version of the .NET Framework installed on the target computer.
+> The supported versions of the .NET Framework have been updated. Self-service client-side components such as Commerce Scale Unit - Self hosted, Store Commerce, Modern POS and Hardware Station require that the .NET Framework version 4.7.2 or later be installed. For installation instructions, see [Install the .NET Framework for developers](/dotnet/framework/install/guide-for-developers). For the sealed installers, we recommend that you always have the latest version of the .NET Framework installed on the target computer.
 
 ### Supported operating systems
 

@@ -1,6 +1,6 @@
 ---
 title: Validate expected values
-description: This topic shows how to use the Regression suite automation for validation of expected values. 
+description: This article shows how to use the Regression suite automation for validation of expected values. 
 author: FrankDahl
 ms.date: 01/15/2021
 ms.topic: article

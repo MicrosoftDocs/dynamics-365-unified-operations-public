@@ -2,7 +2,7 @@
 # required metadata
 
 title: Reduce JavaScript by excluding unused modules
-description: This topic describes how you can help improve performance by reducing the amount of JavaScript that is used in your Microsoft Dynamics 365 Commerce implementation.
+description: This article describes how you can help improve performance by reducing the amount of JavaScript that is used in your Microsoft Dynamics 365 Commerce implementation.
 author: mssle
 ms.date: 01/28/2022
 ms.topic: article
@@ -17,13 +17,13 @@ ms.search.validFrom: 2021-09-20
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes how you can help improve performance by reducing the amount of JavaScript that is used in your Microsoft Dynamics 365 Commerce implementation.
+This article describes how you can help improve performance by reducing the amount of JavaScript that is used in your Microsoft Dynamics 365 Commerce implementation.
 
 Dynamics 365 Commerce includes a large set of modules that is referred to as the Commerce [module library](../starter-kit-overview.md). If any modules won't be used on your e-commerce site, you can exclude them to help reduce the JavaScript chunk size. Excluded modules won't be rendered on the live e-commerce site. They also won't be available in Commerce site builder when you create pages.
 
 ## Applies to
 
-This topic applies to the following configurations:
+This article applies to the following configurations:
 
 - **Version:** Commerce 10.0.16 or later
 - **Component:** Business to consumer (B2C) or business to business (B2B)

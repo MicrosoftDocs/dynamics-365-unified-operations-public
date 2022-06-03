@@ -3,7 +3,7 @@
 # required metadata
 
 title: Microsoft Power Platform plug-in admin reference
-description: This topic provides information about how to set up and configure the Electronic invoicing solution in Microsoft Dataverse.
+description: This article provides information about how to set up and configure the Electronic invoicing solution in Microsoft Dataverse.
 author: germansh
 ms.date: 02/10/2022
 ms.topic: article
@@ -34,7 +34,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/preview-banner.md)]
 
-This topic provides information about how to set up and configure the Electronic invoicing solution in Microsoft Dataverse.
+This article provides information about how to set up and configure the Electronic invoicing solution in Microsoft Dataverse.
 
 ## Prerequisites
 

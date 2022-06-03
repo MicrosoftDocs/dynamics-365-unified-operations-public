@@ -2,7 +2,7 @@
 # required metadata
 
 title: Budget planning templates for Excel
-description: This topic describes how to create Microsoft Excel templates that can be used with budget plans.
+description: This article describes how to create Microsoft Excel templates that can be used with budget plans.
 author: panolte
 ms.date: 01/12/2018
 ms.topic: article
@@ -31,14 +31,14 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to create Microsoft Excel templates that can be used with budget plans.
+This article describes how to create Microsoft Excel templates that can be used with budget plans.
 
-This topic shows how to create Excel templates that will be used with budget plans using the standard demo data set and the Admin user login. For more information about budget planning, see [Budget planning overview](budget-planning-overview-configuration.md). 
+This article shows how to create Excel templates that will be used with budget plans using the standard demo data set and the Admin user login. For more information about budget planning, see [Budget planning overview](budget-planning-overview-configuration.md). 
 You can also follow the [Budget planning](budget-plan.md) tutorial to learn basic module configuration and usage principles.
 
 ## Generate a worksheet using budget plan document layout
 
-Budget plan documents can be viewed and edited using one or more layouts. Each layout can have an associated budget plan document template to view and edit the budget plan data in an Excel worksheet. In this topic, a budget plan document template will be generated using an existing layout configuration. 
+Budget plan documents can be viewed and edited using one or more layouts. Each layout can have an associated budget plan document template to view and edit the budget plan data in an Excel worksheet. In this article, a budget plan document template will be generated using an existing layout configuration. 
 
 1. Open the **Budget plans list** (**Budgeting** &gt; **Budget plans**). 
 2. Click **New** to create a new budget plan document. 

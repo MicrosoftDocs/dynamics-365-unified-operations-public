@@ -67,7 +67,7 @@ your tax authorities require.
 Go to the [Microsoft Dynamics 365 release plans](/dynamics365/release-plans/) to see what new features have been planned. 
 
 #### Financial reporting
-Go to the [Financial reporting overview](../../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md) topic for information about financial reports.
+Go to the [Financial reporting overview](../../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md) article for information about financial reports.
 
 #### Blogs
 

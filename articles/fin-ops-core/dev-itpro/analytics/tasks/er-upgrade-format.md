@@ -2,7 +2,7 @@
 # required metadata 
  
 title: ER Upgrade your format by adopting a new, base version of that format
-description: This topic describes how to maintain an Electronic reporting (ER) format configuration. 
+description: This article describes how to maintain an Electronic reporting (ER) format configuration. 
 author: NickSelin
 ms.date: 08/29/2018
 ms.topic: business-process 

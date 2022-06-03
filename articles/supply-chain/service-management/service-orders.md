@@ -2,7 +2,7 @@
 # required metadata
 
 title: Service orders  
-description: This topic provides an overview of how to work with service orders.
+description: This article provides an overview of how to work with service orders.
 author: sorenva
 ms.date: 05/01/2018
 ms.topic: article
