@@ -4,7 +4,7 @@
 title: Personalize the user experience
 description: This topic explains how you can personalize the app.
 author: jasongre
-ms.date: 03/03/2022
+ms.date: 06/03/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -292,7 +292,7 @@ For customers who haven't yet turned on the [Saved views](saved-views.md) featur
 - **System** – You can temporarily turn off personalization for all users in the system. In this case, all personalizations are deleted for all users, and all pages are reset to their default state. If you turn personalization back on later, all personalizations are reapplied. You can also permanently delete all personalizations for all users in the system. Personalizations that have been deleted can't be recovered. Therefore, before you perform this task, be sure to export any personalizations that you might want later.
 
 ### Service updates and personalization
-Personalization data does not need to be cleared or reset when moving to a new version of the product. Personalizations and saved views data will continue to work across updates. The exception would be changes to the form itself or the form's base query that invalidate a personalization (e.g. a control that was personalized was removed from the form) or the query associated with a view.  
+Personalization data does not need to be cleared or reset when moving to a new version of the product. Personalizations and saved views data will continue to work across updates. The exception would be changes to the form itself, the form's base query that invalidate a personalization, such as a control that was personalized and was removed from the form, or the query associated with a view.  
 
 ## Personalizing inventory dimensions
 
