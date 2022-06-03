@@ -4,7 +4,7 @@
 title: Synchronize self-service installers in Dynamics 365 Commerce
 description: This article explains how to upload and synchronize self-service installers so that they can be used with the standard self-service download mechanism.
 author: jashanno
-ms.date: 10/01/2021
+ms.date: 06/03/2022
 ms.topic: article
 ms.prod: 
 ms.technology:  
@@ -30,10 +30,10 @@ ms.dyn365.ops.version: 10.0.10
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to use the Asset library and Shared asset library in Microsoft Dynamics Lifecycle Services (LCS), and Dynamics 365 Headquarters, to upload and synchronize self-service installers so that they can be used with the standard self-service download mechanism. Note that this functionality applies only to environments that are continuously managed by Microsoft. For other environments, such as on-premises environments or virtual hard disks (VHDs), we highly recommend that you download and use the installers directly from LCS, where they are currently published.
+This article explains how to use the Asset library and Shared asset library in Dynamics Lifecycle Services (LCS), and Dynamics 365 Headquarters, to upload and synchronize self-service installers so that they can be used with the standard self-service download mechanism. Note that this functionality applies only to environments that are continuously managed by Microsoft. For other environments, such as on-premises environments or virtual hard disks (VHDs), we highly recommend that you download and use the installers directly from LCS, where they are currently published.
 
 > [!IMPORTANT]
-> The earlier method of uploading self-service packages is currently still supported. However, it's obsolete and will be removed in the future. At this time, it is highly recommended to instead retrieve self-service packages from Lifecycle Services (LCS). Configuration files can still be generated as needed, per standard steps.
+> The earlier method of uploading self-service packages is currently still supported. However, it's obsolete and will be removed in the future. It's strongly recommended that you retrieve self-service packages from Lifecycle Services (LCS) instead. You can generate configuration files as needed, per standard steps.
 
 ## Key terms
 
