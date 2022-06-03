@@ -51,28 +51,35 @@ To set up your success metrics for out-of-the-box modules, follow these steps.
 
 For custom module clicks, follow these steps to instrument the click events:
 
-1. Prepare a TelemetryContent object for the modle using the function below. This takes the page name, module name and SDK provided default telemetry object.
+1. Prepare a TelemetryContent object for the module using the function below. This function takes the page name, module name and SDK provided default telemetry object as inputs.
     ```Javascript
     getTelemetryObject(pageName: string, moduleName: string, telemetry: ITelemetry): ITelemetryContent
     ```
     The following is an example:
+    ```JavaScript
+    private readonly telemetryContent: ITelemetryContent = 
+    getTelemetryObject(this.props.context.request.telemetryPageName!, 
+        this.props.friendlyName, 
+        this.props.telemetry);
     ```
-    private readonly telemetryContent: ITelemetryContent = getTelemetryObject(this.props.context.request.telemetryPageName!, this.props.friendlyName, this.props.telemetry);
-    ```
-1. Create the payload data that contains information on what needs to be captured. For buttons and other static controls, you can include etext such as “Shop now” or “Search”. And for components like clicking on a product card, you can send the recid which is the record ID of the product or the product ID.
-    ```Javascript
+1. Create the payload data that contains information on what needs to be captured. For buttons and other static controls, you can include etext such as “Shop now” or “Search”. And for components with clicks such as clicking on a product card, you can send the recid which is the record ID of the product or the product ID.
+    ```JavaScript
     getPayloadObject(eventType: string, telemetryContent: ITelemetryContent, etext: string, recid?: string): IPayLoad
     ```
-    The following is an example:
+    As an example for static controls, pass the button text string as shown below:
+    ```JavaScript
+    const payLoad = getPayloadObject('click', this.props.telemetryContent, 'Shop Now', '');
     ```
-    const payLoad = getPayloadObject('click', this.props.telemetryContent, 'Shop Now', '');  : For static button scenario pass the button text string Or const payLoad = getPayloadObject('click', telemetryContent!, '', product.RecordId.toString());  : For product clicks pass the product recordId.
+    As an example for product clicks, pass the product recordId as shown below:
+    ```JavaScript
+    const payLoad = getPayloadObject('click', telemetryContent!, '', product.RecordId.toString());
     ```
 1. Call the OnClick function to register the event.
     ```Javascript
     onTelemetryClick = (telemetryContent: ITelemetryContent, payLoad: IPayLoad, linkText: string) => () =>
     ```
     The following is an example:
-    ```
+    ```JavaScript
     onClick: onTelemetryClick(this.props.telemetryContent, payLoad, linkText)
     ```
 
