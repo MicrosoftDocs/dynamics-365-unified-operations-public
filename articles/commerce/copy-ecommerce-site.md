@@ -37,7 +37,7 @@ To copy a site within an e-commerce environment, follow these steps.
 1. Sign in to site builder for the environment where you want to perform the copy operation.
 1. Open the site list view by selecting **Site switcher** in the upper-right corner and then selecting **Manage sites**.
 1. Find the site that you want to copy or clone, and select it by selecting the checkbox next to the site name.
-1. On the action pane, select **Copy site**.
+1. On the command bar, select **Copy site**.
 1. In the **Copy site** flyout menu, in the **New site name** field, enter a name for the new site. The new site name must be unique in the e-commerce environment. The **Source tenant** and **Source site** fields are automatically set to the information for the current tenant and the selected site.
 1. Select **Create copy**.
 
@@ -52,7 +52,7 @@ The following illustration shows an example of the **Copy site** flyout menu in 
 To copy a site between two e-commerce environments, follow these steps.
 
 1. Sign in to site builder for the destination e-commerce environment.
-1. On the action pane, select **Copy site**.
+1. On the command bar, select **Copy site**.
 1. In the **Copy site** flyout menu, in the **New site name** field, enter a name for the new site. The new site name must be unique in the e-commerce environment.
 1. In the **Source tenant** field, select the name of the source tenant.
 1. In the **Source site** field, select the source site.
@@ -98,9 +98,9 @@ To monitor the progress of the site copy operation, follow these steps.
 1. In the left pane, select **Tenant jobs**.
 1. On the **Tenant jobs** page, find and select the site copy job in the list. A pane appears on the right, and shows the status and details of the selected job.
 
-You can cancel a job that has a status of **In progress**. Select the job in the list, and then select **Cancel** on the Action Pane.
+You can cancel a job that has a status of **In progress**. Select the job in the list, and then select **Cancel** on the command bar.
 
-You can retry a job that has a status of **Failed** or **Completed with errors**. Select the job in the list, and then select **Retry** on the Action Pane.
+You can retry a job that has a status of **Failed** or **Completed with errors**. Select the job in the list, and then select **Retry** on the command bar.
 
 > [!NOTE]
 > Processing of video assets might continue after a site copy job is completed.
