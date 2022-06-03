@@ -67,28 +67,27 @@ After the information has been validated, a notification indicates that a new si
 
 Source channels and locales can be mapped to destination channels and locales as part of the site copy operation. If the channel mapping is done as part of the site copy operation, initializing the site using the FRE process and configuring the channels in site settings is not required on the destination site. 
 
-![Site copy view](media/channel_mapping_1.png)
-  
-To map all the channels and locales "as is" in site builder, follow these steps.
+To map all the channels and locales "as is" (1-to-1) in site builder, follow these steps.
 
-1.	Ensure that values for **New site name**, **Source tenant**, and **Source site** have been entered.
-1.	Select **Add channel mappings**.
-1.	In the **Configure site channels and locales** dialog box, select **Source channel**, and then specify the source channel.  
-1.	Select **Destination channel** and then specify the same channel as the source channel. 
-1.	Select **Add locale**.
-1.	Select **Source locale**, and then enter the source locale.
-1.	Select **Destination locale**, and then enter the same locale as the source locale. 
-1.	Enter unique URL path that is not in use in the destination environment.
-1.	Repeat steps for each locale.
-1.	Select **Apply**.
-1.	Repeat steps for each source channel.
-1.	Select **Close**.
-1.	Review the configuration for accuracy, and then select **Copy site**.
- 
-![Channel mapping complete](media/channel_mapping_2.png)
+1. Open the site list view by selecting **Site switcher** in the upper-right corner and then selecting **Manage sites**.
+1. Find the site that you want to copy or clone, and select it by selecting the checkbox next to the site name.
+1. On the command bar, select **Copy site**.
+1. In the **Copy site** flyout menu, entered values for **New site name**, **Source tenant**, and **Source site** if not already specified.
+1. Select **Add channel mappings**.
+1. In the **Configure site channels and locales** flyout menu, select **Source channel**, and then select the source channel.  
+1. Select **Destination channel** and then select the same channel as the source channel. 
+1. Select **Add locale**.
+1. Select **Source locale**, and then select the source locale.
+1. Select **Destination locale**, and then select the same locale as the source locale. 
+1. For **URL path**, enter a unique URL path that is not currently used in the destination environment.
+1. Repeat steps 8-11 for each locale to be mapped for the channel.
+1. Select **Apply**.
+1. Repeat steps 6-11 for each source channel.
+1. Select **Close**.
+1. Review the configuration for accuracy, and then select **Copy site**.
 
 > [!NOTE]
-> All source channels and locales must be mapped and can be mapped only once.
+> All source channels and locales must be mapped, and can only be mapped once.
 
 ## Monitor the site copy operation
 
