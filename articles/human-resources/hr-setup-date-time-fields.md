@@ -2,7 +2,7 @@
 # required metadata
 
 title: Understand Date and Time fields
-description: This topic explains what to expect when you use Date and Time fields in Microsoft Dynamics 365 Human Resources.
+description: This article explains what to expect when you use Date and Time fields in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article

@@ -84,7 +84,7 @@ Your performance journal will describe<!--note from editor: Suggested.--> activi
 
 If you want to attach a document to the goal, such as a certificate of completion, you can attach it in the **Attachments** section of the **Performance goals** page. A document viewer is provided so that you can quickly view the contents of any attached document. 
 
-You can create a template from a goal and then use the template to create new goals that are based on the template. When you create a template from a goal, the description, topics, and target measurements are saved. However, all actual measurements, completion dates, and topic comments are removed.
+You can create a template from a goal and then use the template to create new goals that are based on the template. When you create a template from a goal, the description, topics, and target measurements are saved. However, all actual measurements, completion dates, andarticle comments are removed.
 
 ## Performance reviews
 

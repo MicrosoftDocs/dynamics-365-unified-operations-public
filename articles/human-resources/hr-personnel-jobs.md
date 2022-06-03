@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up the components of a job
-description: This topic describes the conceptual elements that a job can include and provides examples of how you can use those elements in your organization. 
+description: This article describes the conceptual elements that a job can include and provides examples of how you can use those elements in your organization. 
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This topic describes the conceptual elements that a job can include and provides examples of how you can use those elements in your organization. 
+This article describes the conceptual elements that a job can include and provides examples of how you can use those elements in your organization. 
 
 Before you can create jobs, you must set up some reference information. You can create a job that has only a name. However, by including additional information, such as a job title, you provide default values for the positions that are assigned to the job. Additionally, some of the information that you enter can be used to filter compensation plans to specific jobs. If you want to set up eligibility that you can use to filter compensation plans to a specific job, you should set up job functions and job types before you set up jobs. By having these default values available, you will save time when you add positions to the job. 
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Human Resources October 22, 2020
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for October 22, 2020.
+description: This article describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for October 22, 2020.
 author: jcart1106
 ms.date: 10/22/2020
 ms.topic: article
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Human Resources
 
 
 
-This topic describes features that are new, changed, or coming soon in Dynamics 365 Human Resources. For more information about our update process and schedule, see [Update process](hr-admin-setup-update-process.md).
+This article describes features that are new, changed, or coming soon in Dynamics 365 Human Resources. For more information about our update process and schedule, see [Update process](hr-admin-setup-update-process.md).
 
 For more information about new features and their expected general availability dates, see [Overview of Dynamics 365 Human Resources 2020 release wave 2](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
 
@@ -55,7 +55,7 @@ The following features are generally available with this release.
 The following bug fixes are included in this release.
 
 > [!NOTE]
-> Our goal is to get you this information as soon as possible. We may update this topic to include bug fixes that made it into the build after this topic was initially published.
+> Our goal is to get you this information as soon as possible. We may update this article to include bug fixes that made it into the build after this article was initially published.
 
 | Issue number| Issue  | Description|
 | --- | --- | --- |
