@@ -69,17 +69,17 @@ SysSetup classes can be versioned and execute only once (and not on every DBSync
 
 Starting with version 10.0.27, the versioning feature is available for SysSetup classes. 
 
-# How does Versioning work for SysSetup classes?
-A new parameter “_version” is added to the attribute SysSetupConfigAttribute which is of type “Version” and accepts [Major].[Minor] values, for Ex: 1.0, 2.1, 4.5, 10.4, etc.
+### How does versioning work for SysSetup classes?
+A new parameter “_version” is added to the attribute SysSetupConfigAttribute which is of type “Version” and accepts [Major].[Minor] values, for example: 1.0, 2.1, 4.5, 10.4, etc.
 
-DBSync reads this Version parameter value and whenever there is a change in the version, the scripts get executed. Version parameter is optional and default value is “1.0”, which means, if the X++ classes being onboarded to SysSetup without version parameter then the X++ Class will run with a default version value “1.0”.
+DBSync reads this version parameter value and whenever there is a change in the version, the scripts get executed. Version parameter is optional and the default value is “1.0”, which means, if the X++ classes being onboarded to SysSetup without the version parameter, then the X++ class will run with a default version value “1.0”.
 
 > [!NOTE]
-> Versioned class(default) will run only once successfully unless the version number is updated again Ex: script with 1.0 will not re-run again on every DB sync request.
+> Versioned class (default) will run only once successfully, unless the version number is updated again Ex: script with 1.0 will not re-run again on every DB sync request.
 
 Version value “0.0” is dedicated for running X++ classes on each DBSync run. So to execute X++ classes on every DBSync operation then the version parameter value for the attribute SysSetupConfigAttribute must be set to “0.0”.
 
-# Onboarding X++ Class to SysSetup*:
+### Onboarding X++ Class to SysSetup*:
 SysSetup classes should start using “Version” parameter in the SysSetupConfigAttribute. Else, the X++ class executes with default behavior i.e., with Version value as “1.0” - Run Only Once per Version.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
