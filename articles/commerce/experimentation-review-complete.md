@@ -4,7 +4,7 @@
 title: Promote a variation and complete an experiment
 description: This topic describes how to promote a successful variation and complete an experiment in Dynamics 365 Commerce.
 author:  sushma-rao 
-ms.date: 10/21/2020
+ms.date: 06/03/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
