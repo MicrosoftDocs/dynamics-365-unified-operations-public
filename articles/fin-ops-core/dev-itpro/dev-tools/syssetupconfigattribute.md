@@ -2,7 +2,7 @@
 title: SysSetupConfigAttribute attribute
 description: This topic describes how to use the SysSetupConfigAttribute attribute on classes that implement the SysSetup interface.
 author: tonyafehr
-ms.date: 01/03/2022
+ms.date: 06/03/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -63,11 +63,11 @@ class DemoClass extends SysSetupAsync implements SysSetup
     // Class code here.
 }
 ```
-## Versioning SysSetup Classes
+## Versioning SysSetup classes
 
-SysSetup classes can be Versioned and execute only once (and not on every DBSync execution) i.e. whenever there is a change in the version, DBSync executes the X++ class. 
+SysSetup classes can be versioned and execute only once (and not on every DBSync execution). For example, whenever there is a change in the version, DBSync executes the X++ class. 
 
-Starting PU51 Versioning feature is available for SysSetup classes. 
+Starting with version 10.0.27, the versioning feature is available for SysSetup classes. 
 
 # How does Versioning work for SysSetup classes?
 A new parameter “_version” is added to the attribute SysSetupConfigAttribute which is of type “Version” and accepts [Major].[Minor] values, for Ex: 1.0, 2.1, 4.5, 10.4, etc.
