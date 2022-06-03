@@ -4,7 +4,7 @@
 title: Upgrade from AX 2012 - Data upgrade in development environments
 description: This topic explains the end-to-end process for upgrading from Microsoft Dynamics AX 2012 to the latest Finance and Operations development environment.
 author: laneswenka
-ms.date: 11/01/2021
+ms.date: 06/03/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -48,14 +48,14 @@ We strongly recommend that you run the [Upgrade analyzer](upgrade-analyzer-tool.
 
 ### Prerequisites
 
-Ensure you have completed the pre-upgrade checklist in AX 2012, see: [Pre-upgrade checklist for data upgrade](prepare-data-upgrade.md).
+Ensure that you have completed the pre-upgrade checklist in AX 2012. For more information, see [Pre-upgrade checklist for data upgrade](prepare-data-upgrade.md).
 
 ### Back up your AX 2012 database
 
 To back up your AX 2012 database, use the standard Microsoft SQL Server process to produce a BAK file. If you use the compression option when you create the backup, the file size will be smaller, and less time is required in order upload it to and download it from Microsoft Azure Storage.
 
 > [!NOTE]
-> The collation of the AX 2012 database must be **SQL_Latin1_General_CP1_CI_AS**. If you have a different collation to this, then please contact Microsoft Support for assistance. 
+> The collation of the AX 2012 database must be **SQL_Latin1_General_CP1_CI_AS**. If you're using a different collation, then please contact Microsoft Support for assistance. 
 
 ### Upload the backup to Azure Storage
 
@@ -68,7 +68,7 @@ If your developer environment is hosted as a VM locally or in Azure, you will ne
 
 When you restore the backup to the new development environment, don't overwrite the existing AXDB database. Instead, restore the AX 2012 database next to the original databases. As the upgrade process is very disk intensive, you may also want to consider deploying the cloud-hosted environment using premium storage to improve performance and timing.  
 
-To speed up the database restore process, you can change the SQL Server service account to the **BuiltIn\Admin** user, details for the user are available on the environmnet page in LCS. The restore process can then use instant file initialization. For more information, see [Database Instant File Initialization](/sql/relational-databases/databases/database-instant-file-initialization).
+To speed up the database restore process, you can change the SQL Server service account to the **BuiltIn\Admin** user. Details about that user account are available on the environmnet page in LCS. The restore process can then use instant file initialization. For more information, see [Database Instant File Initialization](/sql/relational-databases/databases/database-instant-file-initialization).
 
 After the database is restored, stop the following services:
 
@@ -98,35 +98,38 @@ To get the latest data upgrade deployable package for a target environment that 
 1. Sign in to [LCS](https://lcs.dynamics.com/).
 2. Select the **Shared asset library** tile.
 3. In the **Shared asset** library, under **Select asset type**, select **Software deployable package**.
-4. All data upgrade packages start with **AX2012DataUpgrade**. In the list find the data upgrade package that corresponds to your specifc D365 version. 
+4. All data upgrade packages start with **AX2012DataUpgrade**. In the list, find the data upgrade package that corresponds to your specifc Dynamics 365 version. 
    - For example, if you're upgrading to version 10.0.26, the package name will be: AX2012DataUpgrade-10.0.26
-5. Click on the data upgrade package to download and save\copy to the **C:\Temp** folder on the Cloud Hosted Environment
-6. **Right-Click** on the download and select **Properties**. Check the **Unblock** property and click **OK**, then extract the file. 
-7. Open a PowerShell Prompt as Admin and change to the deployable package folder, e.g. **C:\Temp\AX2012DataUpgrade 10.0.26**
-8. Run the deployable package using the following (if you wish you can edit the runbook id and file name in the script below):
+5. Click on the data upgrade package to download and save\copy to the **C:\Temp** folder on the cloud-hosted environment
+6. Right-click the download and select **Properties**. Check the **Unblock** property and click **OK**, then extract the file. 
+7. Open a PowerShell Prompt as an admin and change to the deployable package folder, such as **C:\Temp\AX2012DataUpgrade 10.0.26**.
+8. Run the deployable package using the following script. If you wish, you can edit the runbook ID and file name in the script below:
+
 ```PowerShell
 .\AXUpdateInstaller.exe generate -runbookid="MajorVersionDataUpgrade-runbook" -topologyfile="DefaultTopologyData.xml" -servicemodelfile="DefaultServiceModelData.xml" -runbookfile="MajorVersionDataUpgrade-runbook.xml"
 .\AXUpdateInstaller.exe import -runbookfile="MajorVersionDataUpgrade-runbook.xml"
 .\AXUpdateInstaller.exe execute -runbookid="MajorVersionDataUpgrade-runbook"
 ```
+
 > [!NOTE]
 > The data upgrade can take several hours to complete.
 
 ### Monitoring the data upgrade 
 
 The deployable package has a single runbook step that processes the whole upgrade. However, in this step there are a number of sub-steps that are run in the background, these are:
- - PreReqs
-    - Patches SQL Dictionary, Applies SQL Sequences instead of SystemSequences, Modifies UserInfo and System Variables, Database Synchronization of System Tables, and Additive Synchronization of new tables
- - PreSync
-    - Invokes the first set of upgrade jobs via batch- mostly to disable unique indexes
- - DBSync
-    - First Full Sync. Any unique indexes disabled pre-sync are not created at this time
- - PostSync
-    - Main data conversion jobs via batch
- - FinalDBSync
-    - Final DB Sync, synchronizes all remaining objects in the database.
 
-In order to check which step the upgrade servicing is on, you can run the following SQL Query on the AXDB database:
+ - PreReqs
+    - Patches SQL dictionary, applies SQL sequences instead of SystemSequences, modifies UserInfo and system variables, database synchronization of system tables, and additive synchronization of new tables.
+ - PreSync
+    - Invokes the first set of upgrade jobs via batch--mostly to disable unique indexes.
+ - DBSync
+    - First full synchronization. Any unique indexes disabled pre-sync are not created at this time.
+ - PostSync
+    - Main data conversion jobs via batch processing.
+ - FinalDBSync
+    - Final database syncronization, which synchronizes all remaining objects in the database.
+
+In order to check which step the upgrade servicing is on, you can run the following SQL query on the AXDB database:
 
 ```SQL
 SELECT StartTime, EndTime, Steps, SubSteps, Status
@@ -134,7 +137,7 @@ FROM [DBUPGRADE].[DATAUPGRADESTATUS]
 ORDER BY EndTime DESC
 ```
 
-You will see results similar to the following (date\times below are for ilustration only, times vary on data volumes and modules used in AX 2012):
+You will see results similar to the following information. The dates and times listed below are for ilustration purposes only. Times vary on data volumes and modules used in AX 2012.
 
 | **StartTime** | **EndTime** | **Steps** | **SubSteps** | **STATUS** |
 |---|---|---|---|---|
@@ -184,20 +187,26 @@ You will see results similar to the following (date\times below are for ilustrat
 ## Troubleshooting data upgrade errors
 
 ### Rerun the runbook after a failure
-Should the data upgrade runbook fail, you can retry the last step using the **-rerunstep** option, see example below (edit step number as needed)
+Should the data upgrade runbook fail, you can retry the last step using the **-rerunstep** option. See the example below and edit step number, as needed.
+
 ```PowerShell
 .\AXUpdateInstaller.exe execute -runbookid="MajorVersionDataUpgrade-runbook" -rerunstep=3
 ```
-### Runbook Logs
-Logs are located in a sub-folder under the deployable package. Drill into the logs folder, to locate the logs for the runbook step you are on and review errors. 
+
+### Runbook logs
+Logs are located in a sub-folder under the deployable package. Drill into the logs folder to locate the logs for the runbook step you are on and review errors. 
 
 ### View details about a PreSync or PostSync upgrade jon
-Upgrade PreSync and PostSync scripts are run in X++ by using a batch process that the data upgrade process starts. In Application Explorer in Visual Studio, some classes that you can view are prefixed with ReleaseUpdate. If an upgrade script fails during the runbook process, you can learn more about the reason for the error by opening Microsoft SQL Server Management Studio and running the following code to query ReleaseUpdateScriptsErrorLog.
+
+Upgrade PreSync and PostSync scripts are run in X++ by using a batch process that the data upgrade process starts. In Application explorer in Visual Studio, some classes that you can view are prefixed with **ReleaseUpdate**. If an upgrade script fails during the runbook process, you can learn more about the reason for the error by opening Microsoft SQL Server Management Studio and running the following code to query ReleaseUpdateScriptsErrorLog.
+
 ```SQL
 select * from RELEASEUPDATESCRIPTSERRORLOG
 ```
-### Additional Troubleshooting
-For further troubleshooting infomation see the following:
+
+### Additional resources
+For further troubleshooting infomation, see the following articles:
+
  - [Troubleshoot development environments during upgrade](troubleshoot-dev-env.md)
  - [Troubleshoot PreSync and PostSync upgrade scripts](pre-post-upgrade-scripts.md)
 
