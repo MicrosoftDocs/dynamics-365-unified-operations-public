@@ -4,7 +4,7 @@
 title: Connect an experiment and edit variations
 description: This topic describes how to connect an experiment in a third-party service to Dynamics 365 Commerce, and how to edit variations for the experiment.
 author:  sushma-rao 
-ms.date: 10/21/2020
+ms.date: 06/03/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -47,15 +47,16 @@ To get started connecting your experiment in Commerce site builder, follow these
     > - A page can only be connected to one experiment at a time. To connect a page to a different experiment, first delete the experiment that the page is currently connected to.
     > - You can only experiment on pages with a custom layout. If your page has a preset layout, convert it to a custom layout first. You can do this by going to the page and selecting **Convert to custom layout** on the command bar. For more information on layouts, see [Preset and custom layouts](templates-layouts-overview.md#preset-and-custom-layouts). 
 
-1. If you are connecting to an experiment from the **Experiments** tab in the left navigation pane, choose the experiment name from the list that appears.
-1. Choose the page or fragment you want to run your experiment on.
+1. If you are connecting to an experiment from the **Experiments** tab in the left navigation pane, select the experiment name from the list that appears.
+1. Select the page or fragment you want to run your experiment on.
 1. In the final step of the wizard, select **Generate variations and exit wizard**. Variations are created for the experiment. 
 
 > [!NOTE]
 > If you want to schedule when your experiment is published to your live site, make sure the content you want to associate with the experiment is available in a publish group *before* you connect the experiment. For more information about publish groups, refer to [Work with publish groups](publish-groups.md).
 
 ## Edit your variations
-When you exit the **Connect experiment** wizard, variations are created for you. Follow the steps below to edit the variations so they reflect the choices that you need to verify in the experiment hypothesis.
+
+When you exit the **Connect experiment** wizard, variations are created for you. Follow the steps below to edit the variations so that they reflect the choices that you need to verify in the experiment hypothesis.
 
 1. In editor view, use the variations drop-down menu below the command bar to edit each variation based on your original hypothesis. You may also want to establish a control or base variation by leaving one of the variations unchanged.
 1. Select the module to be experimented on, select the ellipsis (...), and then select **Add to experiment**.
