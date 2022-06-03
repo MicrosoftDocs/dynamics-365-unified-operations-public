@@ -72,7 +72,7 @@ To map all the channels and locales "as is" (1-to-1) in site builder, follow the
 1. Open the site list view by selecting **Site switcher** in the upper-right corner and then selecting **Manage sites**.
 1. Find the site that you want to copy or clone, and select it by selecting the checkbox next to the site name.
 1. On the command bar, select **Copy site**.
-1. In the **Copy site** flyout menu, entered values for **New site name**, **Source tenant**, and **Source site** if not already specified.
+1. In the **Copy site** flyout menu, enter values for **New site name**, **Source tenant**, and **Source site** (if not present already).
 1. Select **Add channel mappings**.
 1. In the **Configure site channels and locales** flyout menu, select **Source channel**, and then select the source channel.  
 1. Select **Destination channel** and then select the same channel as the source channel. 
