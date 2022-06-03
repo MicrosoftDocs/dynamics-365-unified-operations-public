@@ -38,11 +38,8 @@ A **Free text invoice** isn't related to a sales order. It contains order lines 
 For more information, see:
 
 [Create free text invoices](../accounts-receivable/create-free-text-invoice-new.md)
-
 [Create a free text invoice template](../accounts-receivable/create-free-text-invoice-template-new.md)
-
 [Assign free text invoice template to a customer](tasks/assign-free-text-invoice-template-customer.md)
-
 [Generate and post recurring free text invoices](tasks/post-recurring-free-text-invoices.md)
 
 
