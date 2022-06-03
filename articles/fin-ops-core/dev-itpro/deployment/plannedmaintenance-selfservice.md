@@ -2,9 +2,9 @@
 # required metadata
 
 title: Maintenance in self-service environments FAQ
-description: This topic provides answers to frequently asked questions about the Microsoft planned maintenance in self-service environments.
+description: This article provides answers to frequently asked questions about the Microsoft planned maintenance in self-service environments.
 author: matapg007
-ms.date: 05/26/2022
+ms.date: 06/02/2022
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -18,7 +18,7 @@ ms.search.validFrom: 2021-05-13
 Because of the changing nature of technology, the continual appearance of new security threats, and compliance requirements, environments must be updated with all critical security and quality updates. Microsoft has built the framework for performing all maintenance activity, such as operating system patching, deployment of security hotfixes, and deployment of quality updates, during the dark hours of the geographic region where your environment is deployed. To minimize application downtime, upgrades will occur in batches. Therefore, most capacity is always online, and only a subset is upgraded at a time. This approach enables servicing that involves a small window of service degradation instead of complete downtime.
 
 ## Infrastructure maintenance in self-service environments
-Infrastructure maintenance is the process of updating the environments with the latest security updates and critical hotfixes. Microsoft must complete this process on your environments to ensure security, availability, reliability. This topic provides answers to frequently asked questions about Microsoft planned maintenance in self-service environments.
+Infrastructure maintenance is the process of updating the environments with the latest security updates and critical hotfixes. Microsoft must complete this process on your environments to ensure security, availability, reliability. This article provides answers to frequently asked questions about Microsoft planned maintenance in self-service environments.
 
 ## What are the types of planned maintenance activities that are performed on an environment?
 Some of the common planned maintenance activities performed by Microsoft are:
@@ -39,18 +39,16 @@ A planned maintenance window is typically during the dark hours of the geographi
 
 To view a list of the geographical regions, see [Country/Region hierarchy used by Azure Traffic Manager for geographic traffic routing method](/azure/traffic-manager/traffic-manager-geographic-regions).
 
-Microsoft recommends that you avoid the following activities during the maintenance window:
-
-- Non-retryable batch jobs
-- No servicing actions
 
 ## What is the schedule for operating system maintenance?
 
 | Month and year | Americas (5:00 AM–8:00 AM UTC) | EMEA (2:00 AM–5:00 AM UTC) | APAC (6:00 PM–9:00 PM UTC) |
 |----------|--------------------------|----------------------|----------------------|
-| April 2022 | April 24, 2022 | April 23, 2022 | April 23, 2022 |
 | May 2022 | May 22, 2022 | May 21, 2022 | May 21, 2022 |
 | June 2022 | June 26, 2022 | June 25, 2022 | June 25, 2022 |
+| July 2022 | July 24, 2022 | July 23, 2022 | July 23, 2022 |
+| August 2022 | August 21, 2022 | August 20, 2022 | August 20, 2022 |
+| September 2022 | September 25, 2022 | September 24, 2022 | September 24, 2022 |
 
 > [!NOTE] 
 > Effective July 2022 through September 2022, Microsoft will start to roll out updates to the production environment during any weekend, and outside of normal business hours, to help minimize any potential impact on your environments. All sandbox environment will be updated during any night, outside of business hours.

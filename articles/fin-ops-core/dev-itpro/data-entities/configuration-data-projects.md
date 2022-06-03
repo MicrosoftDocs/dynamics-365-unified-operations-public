@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configuration data projects
-description: This topic describes configuration data projects and configuration data templates.
+description: This article describes configuration data projects and configuration data templates.
 author: rcarlson
 ms.date: 09/29/2017
 ms.topic: article
@@ -52,7 +52,7 @@ We recommend that you follow this process when you start to use configuration da
 3. Create and run a configuration data project for export.
 4. Create and run a configuration data project for import.
 
-The rest of this topic describes the **Data management** workspace and explains how to set up your system for data configuration projects.
+The rest of this article describes the **Data management** workspace and explains how to set up your system for data configuration projects.
 
 If you're ready to set up a configuration template, see [Configuration data templates](configuration-data-templates.md). If you're ready to create and run a configuration data project, see [Copy configuration data between companies or legal entities overview](copy-configuration.md).
 

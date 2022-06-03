@@ -2,7 +2,7 @@
 # required metadata
 
 title: Prorate header charges to matching sales lines
-description: This topic describes additional capabilities for calculating and applying auto-charges to Commerce channel orders by using the advanced auto-charges feature.
+description: This article describes additional capabilities for calculating and applying auto-charges to Commerce channel orders by using the advanced auto-charges feature.
 author: hhaines
 ms.date: 03/30/2020
 ms.topic: article
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.1
 
 [!include [banner](includes/banner.md)]
 
-This topic describes the functionality for grouping header-level auto-charges and prorating them to commerce sales lines. This functionality is available for transactions that are created at the point of sale (POS) in Retail version 10.0.1 and sales that are created in a call center in Retail version 10.0.2.
+This article describes the functionality for grouping header-level auto-charges and prorating them to commerce sales lines. This functionality is available for transactions that are created at the point of sale (POS) in Retail version 10.0.1 and sales that are created in a call center in Retail version 10.0.2.
 
 This functionality is available only if the [advanced auto-charges](/dynamics365/unified-operations/retail/omni-auto-charges) feature is turned on by using the option on the **Commerce parameters** page. Additionally, the enhanced calculation method for auto-charges can be applied only to sales orders that are created through commerce channels (the POS, a call center, and the Dynamics e-Commerce platform).
 

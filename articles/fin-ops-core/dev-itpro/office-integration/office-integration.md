@@ -2,7 +2,7 @@
 # required metadata
 
 title: Office integration overview
-description: This topic reviews Microsoft Office integration concepts and features.
+description: This article reviews Microsoft Office integration concepts and features.
 author: jasongre
 ms.date: 07/25/2019
 ms.topic: overview
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic reviews Microsoft Office integration concepts and features. The integration depends on several technologies:
+This article reviews Microsoft Office integration concepts and features. The integration depends on several technologies:
 
 -   Working in Microsoft Azure
 -   Working with Azure Active Directory (Azure AD)

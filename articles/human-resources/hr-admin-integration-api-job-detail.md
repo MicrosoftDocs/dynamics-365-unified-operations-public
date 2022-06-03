@@ -2,7 +2,7 @@
 # required metadata
 
 title: Job detail API
-description: This topic provides details and an example query for the Job detail entity in Dynamics 365 Human Resources.
+description: This article provides details and an example query for the Job detail entity in Dynamics 365 Human Resources.
 author: jcart
 ms.date: 04/07/2021
 ms.topic: article
@@ -26,7 +26,7 @@ ms.dyn365.ops.version: Human Resources
 
 # Job detail API
 
-This topic provides details and an example query for the Job detail entity in Dynamics 365 Human Resources.
+This article provides details and an example query for the Job detail entity in Dynamics 365 Human Resources.
 
 ## Properties
 

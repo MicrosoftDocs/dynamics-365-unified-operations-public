@@ -2,7 +2,7 @@
 # required metadata
 
 title: Health check for POS peripherals and services
-description: This topic provides an overview of the health check operation in the point of sale (POS).
+description: This article provides an overview of the health check operation in the point of sale (POS).
 author: BrianShook
 ms.date: 03/06/2020
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](includes/banner.md)]
 
-This topic describes the health check operation in the point of sale (POS).
+This article describes the health check operation in the point of sale (POS).
 
 ## Overview
 
@@ -44,7 +44,7 @@ Microsoft Dynamics 365 Commerce versions 10.0.10 and later include a health chec
 | Term | Description |
 |---|---|
 | Peripheral | Any device that the POS application uses to facilitate transactions and other operations in the store. Examples include cash drawers, bar code scanners, and payment terminals. |
-| Service | In this topic, a service is an ancillary application that the POS application depends on to perform transactions and daily operations. Examples include apps that help with tax or shipping calculations. |
+| Service | In this article, a service is an ancillary application that the POS application depends on to perform transactions and daily operations. Examples include apps that help with tax or shipping calculations. |
 
 ## Health check operation
 

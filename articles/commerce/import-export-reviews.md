@@ -2,7 +2,7 @@
 # required metadata
 
 title: Import and export ratings and reviews
-description: This topic describes how to import and export product ratings and reviews in Microsoft Dynamics 365 Commerce.
+description: This article describes how to import and export product ratings and reviews in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 01/12/2022
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.validFrom: 2017-06-20
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to import and export product ratings and reviews in Microsoft Dynamics 365 Commerce.
+This article describes how to import and export product ratings and reviews in Microsoft Dynamics 365 Commerce.
 
 Dynamics 365 Commerce offers [ratings and reviews](ratings-reviews-overview.md) as an omni-channel solution. When you switch to Dynamics 365 Commerce's ratings and reviews solution, you might want to move your existing ratings and reviews data over to the Commerce platform. You might also want to export ratings and reviews data from Commerce, based on your business requirements. A Power Automate connector lets you import ratings and reviews into Commerce and export them from Commerce.
 

@@ -1,6 +1,6 @@
 ---
 title: Update model versions in the automated build
-description: The topic explains how to update the models in a source package and deployable package of the build output with the version of the build that produced them.
+description: The article explains how to update the models in a source package and deployable package of the build output with the version of the build that produced them.
 author: jorisdg
 ms.date: 05/25/2017
 ms.topic: article
@@ -20,7 +20,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 In Platform update 6, a new task in the automated build definition updates the models in the source package and deployable package of the build output with the version of the build that produced them.
 
-Build definitions that were created before Platform update 6 must be manually updated to include this task. See the [Updating an existing build definition](#updating-an-existing-build-definition) section later in this topic.
+Build definitions that were created before Platform update 6 must be manually updated to include this task. See the [Updating an existing build definition](#updating-an-existing-build-definition) section later in this article.
 
 ## Version numbers 
 Even though models are compiled into one package, the metadata information of all models is retained inside the binary package. This information can be reviewed from Microsoft Dynamics Lifecycle Services (LCS) or from the client.

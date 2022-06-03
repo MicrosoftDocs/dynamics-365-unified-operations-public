@@ -2,7 +2,7 @@
 # required metadata
 
 title: Service order item requirements   
-description: This topic describes service order item requirements.
+description: This article describes service order item requirements.
 author: sorenva
 ms.date: 05/01/2018
 ms.topic: article

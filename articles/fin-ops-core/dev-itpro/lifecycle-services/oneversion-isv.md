@@ -1,6 +1,6 @@
 ---
 title: Delivering ISV solutions using One Version
-description: The topic provides information about how independent software vendors (ISVs) can use One Version to deliver their solutions.
+description: The article provides information about how independent software vendors (ISVs) can use One Version to deliver their solutions.
 author: FrankDahl
 ms.date: 05/03/2022
 ms.topic: article
@@ -41,9 +41,9 @@ In the One Version model, customer user acceptance testing (UAT) environments an
 + Functional issues that customers experience can be caused by the untimely introduction of new features. Microsoft will put any new functionality that might affect existing processes under feature management. In this way, customers can control when new functionality is adopted. Therefore, they have time to validate, document, and train their users about the new features.
 + Functional issues might also be unintended changes that cause functional regressions.
 
-Prevention of technical and functional issues is difficult and requires close coordination between Microsoft and you as an ISV partner. The Microsoft goal is that you will adopt practices that resemble Microsoft practices. This topic explains how you and Microsoft can achieve this goal together. Over the next several months, Microsoft will release new practices and tools to help you. This topic will be updated as the tools and practices evolve.
+Prevention of technical and functional issues is difficult and requires close coordination between Microsoft and you as an ISV partner. The Microsoft goal is that you will adopt practices that resemble Microsoft practices. This article explains how you and Microsoft can achieve this goal together. Over the next several months, Microsoft will release new practices and tools to help you. This article will be updated as the tools and practices evolve.
 
-This topic includes the following sections:
+This article includes the following sections:
 
 + [Servicing customers](#servicing-customers)
 + [Compatibility](#compatibility)
@@ -75,7 +75,7 @@ When Microsoft resolves an issue that requires a code fix, it generally includes
 
 Similar policies apply to your ISV solution, and you might also have to provide a code update. For your solution to be binary-compatible with all your customers, it must be built on the oldest platform release that you want to support. All new updates that Microsoft releases are intended to be binary backward-compatible. This compatibility gives you the option of maintaining only one servicing version of your solution that is based on the oldest of the three most recent updates. Therefore, you must maintain just one released solution. You can then use that solution to update all your customers, regardless of which of the three most recent updates they are running. As your customers adopt new Microsoft updates, you can rebase your maintained solution to a newer release to remain current with the three most recent updates.
 
-This recommendation applies to servicing and maintaining your released solution. You will use a different approach to develop new releases of your solution. For more information, see the [Developing new releases](#developing-new-releases) section of this topic.
+This recommendation applies to servicing and maintaining your released solution. You will use a different approach to develop new releases of your solution. For more information, see the [Developing new releases](#developing-new-releases) section of this article.
 
 ## Compatibility
 
@@ -119,7 +119,7 @@ Together, One Version and the fact that the Finance and Operations apps run as a
 
 We recommend that you follow a similar approach for your ISV solutions. You will benefit from quicker integration and extension of new standard features.
 
-As the following illustration shows, the frequency of your new releases can be independent of Microsoft releases. You should consider adopting a strategy for source code branching, as described in the [Branches and builds](#branches-and-builds) section of this topic.
+As the following illustration shows, the frequency of your new releases can be independent of Microsoft releases. You should consider adopting a strategy for source code branching, as described in the [Branches and builds](#branches-and-builds) section of this article.
 
 ![Branching strategy.](media/oneversion-isv-branch.png)
 
@@ -242,7 +242,7 @@ Here are some areas where alignment will be required:
 
 Binary compatibility is supported, provided that you don't recompile. We recommend that your ISV solution not be compiled in customer environments. Instead, you should deploy precompiled binaries that you've prepared and validated. Your solution binaries can then be created from your servicing branch, based on an earlier version, when this approach is practical.
 
-If an implementation partner or customer compiles your solution in an updated environment, new warnings and errors might occur, as was mentioned in the [Design-time compatibility](#design-time-compatibility) section of this topic. Therefore, we recommend that implementation partners not compile your solution. However, this recommendation doesn't mean that you shouldn't share your source code to help support debugging, for example. You should just consider taking steps to avoid compilation of your code, so that implementation partners aren't exposed to design-time issues.
+If an implementation partner or customer compiles your solution in an updated environment, new warnings and errors might occur, as was mentioned in the [Design-time compatibility](#design-time-compatibility) section of this article. Therefore, we recommend that implementation partners not compile your solution. However, this recommendation doesn't mean that you shouldn't share your source code to help support debugging, for example. You should just consider taking steps to avoid compilation of your code, so that implementation partners aren't exposed to design-time issues.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

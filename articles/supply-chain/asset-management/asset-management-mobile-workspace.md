@@ -3,7 +3,7 @@
 
 title: Use the Asset management mobile workspace
 
-description: This topic provides information about the Asset management mobile workspace.
+description: This article provides information about the Asset management mobile workspace.
 author: johanhoffmann 
 ms.date: 05/24/2022
 ms.topic: article
@@ -33,7 +33,7 @@ ms.search.validFrom: 2019-08-31
 [!include [banner](../../includes/banner.md)]
 [!include [mobile app deprecated](../../fin-ops-core/dev-itpro/includes/mobile-app-deprecation-banner.md)]
 
-This topic provides information about the **Asset management** mobile workspace. This workspace lets users view and create maintenance requests and work orders. Users can also view the assigned work order jobs in a calendar or list view. Assets and functional locations can also be viewed and searched for.
+This article provides information about the **Asset management** mobile workspace. This workspace lets users view and create maintenance requests and work orders. Users can also view the assigned work order jobs in a calendar or list view. Assets and functional locations can also be viewed and searched for.
 
 ## Overview
 

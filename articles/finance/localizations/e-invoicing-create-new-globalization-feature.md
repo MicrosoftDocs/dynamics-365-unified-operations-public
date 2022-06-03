@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create a Globalization feature
-description: This topic explains how to create a Globalization feature.
+description: This article explains how to create a Globalization feature.
 author: dkalyuzh
 ms.date: 02/14/2022
 ms.topic: article

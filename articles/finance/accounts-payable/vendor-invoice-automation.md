@@ -2,7 +2,7 @@
 # required metadata
 
 title: Invoice automation for scanned documents
-description: This topic explains the features that are available for end-to-end automation of vendor invoices, even invoices that include attachments.
+description: This article explains the features that are available for end-to-end automation of vendor invoices, even invoices that include attachments.
 author: abruer
 ms.date: 03/24/2021
 ms.topic: article
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains the data entities that are available for end-to-end automation of vendor invoices, including invoices with attachments.
+This article explains the data entities that are available for end-to-end automation of vendor invoices, including invoices with attachments.
 
 Organizations that want to streamline their Accounts payable (AP) processes often identify invoice processing as one of the top process areas that should be more efficient. In many cases, these organizations offload the processing of paper invoices to a third-party optical character recognition (OCR) service provider. They then receive machine-readable invoice metadata together with a scanned image of each invoice. To help with automation, a “last mile” solution is then built to enable consumption of these artifacts in the invoicing system. Now this “last mile” automation is enabled out of the box, through an invoice automation solution.
 
@@ -49,7 +49,7 @@ The solution footprint consists of the following components:
 + Exception processing for invoices
 + A side-by-side attachment viewer in invoices
 
-The rest of this topic provides detailed descriptions of these solution components.
+The rest of this article provides detailed descriptions of these solution components.
 
 ## Data entities
 

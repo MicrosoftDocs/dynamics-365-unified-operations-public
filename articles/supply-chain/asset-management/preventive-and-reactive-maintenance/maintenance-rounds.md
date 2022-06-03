@@ -2,7 +2,7 @@
 # required metadata
 
 title: Maintenance rounds
-description: This topic explains maintenance rounds in Asset Management.
+description: This article explains maintenance rounds in Asset Management.
 author: johanhoffmann
 ms.date: 08/27/2019
 ms.topic: article

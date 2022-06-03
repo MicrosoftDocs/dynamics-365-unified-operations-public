@@ -2,7 +2,7 @@
 # required metadata
 
 title: Upload and serve static files
-description: This topic describes how to upload a static file into Microsoft Dynamics 365 Commerce site builder, and how to create a custom URL and file name that can be used to request that file.
+description: This article describes how to upload a static file into Microsoft Dynamics 365 Commerce site builder, and how to create a custom URL and file name that can be used to request that file.
 author: StuHarg
 ms.date: 11/16/2020
 ms.topic: article
@@ -28,9 +28,9 @@ ms.dyn365.ops.version: Release 10.0.8
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to upload a static file into Microsoft Dynamics 365 Commerce site builder, and how to create a custom URL and file name that can be used to request that file.
+This article describes how to upload a static file into Microsoft Dynamics 365 Commerce site builder, and how to create a custom URL and file name that can be used to request that file.
 
-Some third-party connectors require that a file be hosted and served from the e-commerce site. These connectors expect that the file will be returned by requests to a specific callback URL path and file name. Therefore, this topic explains how to upload and serve a static file that has a user-definable URL and file name on a Dynamics 365 Commerce e-commerce site.
+Some third-party connectors require that a file be hosted and served from the e-commerce site. These connectors expect that the file will be returned by requests to a specific callback URL path and file name. Therefore, this article explains how to upload and serve a static file that has a user-definable URL and file name on a Dynamics 365 Commerce e-commerce site.
 
 ## Create a site URL that returns a static file
 
@@ -89,7 +89,7 @@ After a URL is created, its path can't be changed. If you must change the URL pa
 
 To change the URL path, follow these steps.
 
-1. To create a new URL and map it to the existing file or another resource, follow the instructions in the [Create a site URL that returns a static file](#create-a-site-url-that-returns-a-static-file) section earlier in this topic.
+1. To create a new URL and map it to the existing file or another resource, follow the instructions in the [Create a site URL that returns a static file](#create-a-site-url-that-returns-a-static-file) section earlier in this article.
 1. Select the new URL, and select **Publish** on the command bar. The new URL is published.
 1. To unpublish the old URL, select it, and then select **Unpublish** on the command bar. You can now delete the old URL if you want.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Goods and Services Tax (GST) integration for cash registers for India
-description: This topic provides an overview of the cash register functionality that is available for India. It also provides guidelines for setting up the functionality.
+description: This article provides an overview of the cash register functionality that is available for India. It also provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
 ms.date: 09/07/2021
 ms.topic: article
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 7.3.1
 [!include [banner](../includes/banner.md)]
 
 
-This topic provides a walkthrough of the features that are related to Goods and Services Tax (GST). It also highlights the effect of GST on various types of commerce business transactions, and shows the accounting and posting of transactions where the receipt is printed at the point of sale (POS).
+This article provides a walkthrough of the features that are related to Goods and Services Tax (GST). It also highlights the effect of GST on various types of commerce business transactions, and shows the accounting and posting of transactions where the receipt is printed at the point of sale (POS).
 
 
 ## Prerequisites

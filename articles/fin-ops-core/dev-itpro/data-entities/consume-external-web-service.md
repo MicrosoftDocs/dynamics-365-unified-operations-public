@@ -2,7 +2,7 @@
 # required metadata
 
 title: Consume external web services
-description: This topic describes how to consume external web services in Finance and Operations apps.
+description: This article describes how to consume external web services in Finance and Operations apps.
 author: peakerbl
 ms.date: 11/10/2017
 ms.topic: article

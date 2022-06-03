@@ -2,7 +2,7 @@
 # required metadata
 
 title: Define and maintain retail channels
-description: This topic provides an overview of the process for setting up brick-and-mortar stores, which are referred to as stores in Dynamics 365 Commerce. It includes information about the tasks that you must complete both before and after you set up a store.
+description: This article provides an overview of the process for setting up brick-and-mortar stores, which are referred to as stores in Dynamics 365 Commerce. It includes information about the tasks that you must complete both before and after you set up a store.
 author: mugunthanm
 ms.date: 01/06/2020
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-This topic provides an overview of the process for setting up brick-and-mortar stores, which are referred to as stores in Dynamics 365 Commerce. It includes information about the tasks that you must complete both before and after you set up a store.
+This article provides an overview of the process for setting up brick-and-mortar stores, which are referred to as stores in Dynamics 365 Commerce. It includes information about the tasks that you must complete both before and after you set up a store.
 
 Commerce supports multiple channels, such as online stores, call centers, and brick-and-mortar stores. A brick-and-mortar store is called a store. Each store can have its own payment methods, price groups, point of sale (POS) registers, income accounts and expense accounts, and staff. You must set up all these elements for a store before you create it. After you create the store, you assign the products that you want it to carry. You also assign employees, registers, and customers to the store. Finally, you add the new store to an organization hierarchy.
 

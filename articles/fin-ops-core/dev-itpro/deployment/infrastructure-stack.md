@@ -2,7 +2,7 @@
 # required metadata
 
 title: Self-service deployment overview
-description: This topic provides an overview of self-service deployment.
+description: This article provides an overview of self-service deployment.
 author: rashmansur
 ms.date: 05/29/2020
 ms.topic: overview
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks

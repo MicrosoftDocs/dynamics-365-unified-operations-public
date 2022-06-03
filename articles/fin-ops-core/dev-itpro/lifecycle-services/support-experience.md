@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up technical support for Finance and Operations apps
-description: This topic provides information about the support experience for cloud and on-premises deployments.
+description: This article provides information about the support experience for cloud and on-premises deployments.
 author: kfend
 ms.date: 10/13/2020
 ms.topic: article
@@ -156,7 +156,7 @@ In the LCS **Support** tile, issues are stored as work items in the Azure DevOp
 
 ### Edit issues
 1.  In the **Issues** grid, click the title of an issue.
-2.  If necessary, sign in to Azure DevOps by using an account that has access to the Azure DevOps project that you set up in the first section of this topic, **Create an Azure DevOps project**. 
+2.  If necessary, sign in to Azure DevOps by using an account that has access to the Azure DevOps project that you set up in the first section of this article, **Create an Azure DevOps project**. 
 
     > [!NOTE]
     > There is an issue in Azure DevOps, where the link to edit work items doesn't work correctly if sign-in is required. If you see the **Assigned to me** query after you sign in to Azure DevOps, go back to LCS, and click the title of the issue in the issue grid again.

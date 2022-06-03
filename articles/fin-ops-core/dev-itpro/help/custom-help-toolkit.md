@@ -2,7 +2,7 @@
 # required metadata
 
 title: Custom Help Toolkit
-description: This topic describes the components of the Custom Help Toolkit for Finance and Operations apps. 
+description: This article describes the components of the Custom Help Toolkit for Finance and Operations apps. 
 author: edupont04
 ms.date: 05/11/2020
 ms.topic: article

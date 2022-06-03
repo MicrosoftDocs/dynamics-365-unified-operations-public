@@ -1,7 +1,7 @@
 ---
 
 title: Post to charge account accounting principle
-description: This topic provides an overview of the post to charge account accounting principle.
+description: This article provides an overview of the post to charge account accounting principle.
 author: rachel-profitt
 ms.date: 05/02/2022
 ms.topic: article

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Customer information management for Russia
-description: This topic describes scenarios for handling customer information in Microsoft Dynamics 365 Commerce point of sale (POS) for Russia.
+description: This article describes scenarios for handling customer information in Microsoft Dynamics 365 Commerce point of sale (POS) for Russia.
 author: EvgenyPopovMBS
 ms.date: 09/21/2021
 ms.topic: article
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.21
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes scenarios for handling customer information in Microsoft Dynamics 365 Commerce point of sale (POS) for Russia.
+This article describes scenarios for handling customer information in Microsoft Dynamics 365 Commerce point of sale (POS) for Russia.
 
 Dynamics 365 Commerce lets you specify customer information such as a phone number or email address when you create or edit a customer master record in POS. You can also specify customer information for a sales transaction either by copying the information from the customer that is identified in the transaction or by manually entering it. Customer information can then be included on the fiscal receipt. For information about how to generate and print fiscal receipts, see [Fiscal printer integration sample for Russia](rus-fpi-sample.md).
 

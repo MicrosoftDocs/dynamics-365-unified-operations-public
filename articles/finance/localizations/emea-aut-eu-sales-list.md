@@ -2,7 +2,7 @@
 # required metadata
 
 title: EU Sales list for Austria
-description: This topic provides information about the European Union (EU) sales list report for Austria.
+description: This article provides information about the European Union (EU) sales list report for Austria.
 author: AKroshkina
 ms.date: 03/04/2022
 ms.topic: article
@@ -29,7 +29,7 @@ ms.search.validFrom:
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the European Union (EU) sales list report that is based on form U13. The Austrian EU sales list report contains information about the sale of goods and services for reporting in XML format.
+This article provides information about the European Union (EU) sales list report that is based on form U13. The Austrian EU sales list report contains information about the sale of goods and services for reporting in XML format.
 
 The following fields are included on the Austrian EU sales list report:
 

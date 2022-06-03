@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enable customer check-in notifications in point of sale (POS)
-description: This topic describes how to enable customer check-in notifications in Microsoft Dynamics 365 Commerce point of sale (POS).
+description: This article describes how to enable customer check-in notifications in Microsoft Dynamics 365 Commerce point of sale (POS).
 author: bicyclingfool
 ms.date: 12/03/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.19
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to enable customer check-in notifications in Microsoft Dynamics 365 Commerce point of sale (POS).
+This article describes how to enable customer check-in notifications in Microsoft Dynamics 365 Commerce point of sale (POS).
 
 In their "order ready for pickup" emails, organizations can provide a link or button that lets customers notify the store that they are on the premises and waiting for their package to be brought out to them. Customers then receive a check-in confirmation, and the store receives a notification as a task in its POS application. This task serves as a prompt for a sales associate to deliver the order to the customer's vehicle. Therefore, the customer doesn't have to enter the store.
 
@@ -75,7 +75,7 @@ To test the customer check-in feature, follow these steps.
 1. Check in the page, but don't publish it.
 1. Add the following link to an email template that is invoked by the packing complete notification type for a pick-up mode of delivery. For more information, see [Create email templates for transactional events](email-templates-transactions.md).
 
-    - **For pre-production (UAT) environments:** Add the code snippet from the [Configure the transactional email template](#configure-the-transactional-email-template) section earlier in this topic.
+    - **For pre-production (UAT) environments:** Add the code snippet from the [Configure the transactional email template](#configure-the-transactional-email-template) section earlier in this article.
     - **For production environments:** Add the following commented code so that existing customers aren't affected.
 
         `<!-- https://[DOMAIN]/[CHECK_IN_PAGE]?channelReferenceId=%confirmationid%&channelId=%pickupchannelid%&packingSlipId=%packingslipid%&preview=inprogress -->`

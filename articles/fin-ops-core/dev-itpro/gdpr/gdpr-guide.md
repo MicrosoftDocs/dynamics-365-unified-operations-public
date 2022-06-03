@@ -2,7 +2,7 @@
 # required metadata
 
 title: General Data Protection Regulation overview
-description: This topic provides information about the user log functionality in Finance and Operations.
+description: This article provides information about the user log functionality in Finance and Operations.
 author: ToddLefor
 ms.date: 07/23/2019
 ms.topic: overview
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 The European Union's General Data Protection Regulation (GDPR) sets a new global standard for privacy rights, security, and compliance for the citizens and residents of the European Union (EU). The GDPR governs the handling and use of personal data of EU citizens and residents. Enforcement of the GDPR begins May 25, 2018, and there are significant consequences for non-compliance. For more information about the regulation, see the [European Union site](https://europa.eu/).
 
 > [!NOTE]
-> For information about the scope and coverage of this documentation, see [Clarification of the scope of this content](#clarification-of-the-scope-of-this-content) section at the end of this topic.
+> For information about the scope and coverage of this documentation, see [Clarification of the scope of this content](#clarification-of-the-scope-of-this-content) section at the end of this article.
 >
 > Before utilizing any product features in support of your GDPR compliance efforts, please ensure that you have applied all of the related hotfixes.
 
@@ -275,7 +275,7 @@ Roles that are associated with party records are referred to as party roles. The
 
 ### The right to view and port: It's all about the party
 
-When a data subject approaches the controller to request a copy of their personal data, the controller might choose to use the Global address book information to locate the data that describes the person. As noted in the illustration earlier in this topic, a **person** is a type of **party** that plays a **role**.
+When a data subject approaches the controller to request a copy of their personal data, the controller might choose to use the Global address book information to locate the data that describes the person. As noted in the illustration earlier in this article, a **person** is a type of **party** that plays a **role**.
 
 Some organizations conduct their activities only through business-to-business relationships and will have modest DSR obligations. By contrast, other organizations conduct their activities through business-to-customer relationships. These organization might choose to use the Global address book and its associative data relationship to write custom reports, custom forms, custom queries, and custom data export features by using the extensibility and customization capabilities and [Open in Excel](..//office-integration/office-integration-edit-excel.md) experiences to serve the specific needs of the kinds of data that their business collects from their customers.
 
@@ -290,7 +290,7 @@ An entity represents an instance of a specific role. The data management functio
 
 The Person search report provides additional capabilities in the **Data management** workspace that export entity data by providing a party ID that is used to identify **all** roles (and corresponding entities) that are associated with the party. This capability lets you export all entity and transaction data in a single action, for either a single party or a collection of parties.
 
-When a data subject approaches the controller to request a copy of their personal data, the controller might choose to use the Global address book information to locate the data that describes the person. As noted in the illustration earlier in this topic, a **person** is a type of **party** that plays a **role**.
+When a data subject approaches the controller to request a copy of their personal data, the controller might choose to use the Global address book information to locate the data that describes the person. As noted in the illustration earlier in this article, a **person** is a type of **party** that plays a **role**.
 
 Some organizations conduct their activities only through business-to-business relationships and will have modest DSR obligations. By contrast, other organizations conduct their activities through business-to-customer relationships. These organization might choose to use the Global address book and its associative data relationship to write custom reports, custom forms, custom queries, and custom data export features by using the extensibility and customization capabilities and [Open in Excel](../office-integration/office-integration-edit-excel.md#how-do-i-add-an-explicit-button-for-a-template-open-in-excel-option) experiences to serve the specific needs of the kinds of data that their business collects from their customers.
 

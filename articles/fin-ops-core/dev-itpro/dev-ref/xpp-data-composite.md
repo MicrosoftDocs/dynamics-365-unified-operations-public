@@ -1,6 +1,6 @@
 ---
 title: X++ composite data types
-description: This topic describes composite data types in X++.
+description: This article describes composite data types in X++.
 author: RobinARH
 ms.date: 08/27/2021
 audience: Developer
@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes composite data types in X++. The composite data types in X++ are arrays, containers, classes as data types, delegates as data types, and tables as data types.
+This article describes composite data types in X++. The composite data types in X++ are arrays, containers, classes as data types, delegates as data types, and tables as data types.
 
 ## Array
 

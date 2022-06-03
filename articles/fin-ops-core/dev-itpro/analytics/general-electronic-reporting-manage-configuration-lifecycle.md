@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage the Electronic reporting (ER) configuration lifecycle
-description: This topic describes how to manage the lifecycle of Electronic reporting (ER) configurations for Dynamics 365 Finance.
+description: This article describes how to manage the lifecycle of Electronic reporting (ER) configurations for Dynamics 365 Finance.
 author: NickSelin
 ms.date: 07/23/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to manage the lifecycle of Electronic reporting (ER) configurations for Dynamics 365 Finance.
+This article describes how to manage the lifecycle of Electronic reporting (ER) configurations for Dynamics 365 Finance.
 
 ## Overview
 

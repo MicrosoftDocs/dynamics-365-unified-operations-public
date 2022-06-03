@@ -2,7 +2,7 @@
 # required metadata
 
 title: Transportation management overview
-description: This topic gives an overview of the transportation management functionality in Supply Chain Management.
+description: This article gives an overview of the transportation management functionality in Supply Chain Management.
 author: Weijiesa
 ms.date: 06/20/2017
 ms.topic: overview
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic gives an overview of the transportation management functionality in Supply Chain Management.
+This article gives an overview of the transportation management functionality in Supply Chain Management.
 
 Transportation management lets you use your company’s transportation, and also lets you identify vendor and routing solutions for inbound and outbound orders. For example, you can identify the fastest route or the least expensive rate for a shipment. The following table describes the main scenarios for using Transportation management.
 

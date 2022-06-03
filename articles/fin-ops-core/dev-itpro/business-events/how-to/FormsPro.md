@@ -2,7 +2,7 @@
 # required metadata
 
 title: Business events and Microsoft Forms Pro
-description: This topic goes through a scenario where a survey is sent to users when a product has been shipped.
+description: This article goes through a scenario where a survey is sent to users when a product has been shipped.
 author: murrayfife
 ms.date: 08/12/2019
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 2019-6-30
 
 [!include[banner](../../includes/banner.md)]
 
-This topic goes through a scenario where Microsoft Forms Pro is used to create a survey that can be used with business events. Specifically, in the scenario that is described here, a survey is sent to customers when a product has been shipped. The survey information is gathered by using Forms Pro.
+This article goes through a scenario where Microsoft Forms Pro is used to create a survey that can be used with business events. Specifically, in the scenario that is described here, a survey is sent to customers when a product has been shipped. The survey information is gathered by using Forms Pro.
 
 ## Prerequisites
 

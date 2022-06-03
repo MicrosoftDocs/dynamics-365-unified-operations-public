@@ -2,7 +2,7 @@
 # required metadata
 
 title: Priority-based throttling FAQ
-description: This topic provides answers to frequently asked questions about priority-based throttling for OData and custom service-based integrations.
+description: This article provides answers to frequently asked questions about priority-based throttling for OData and custom service-based integrations.
 author: hasaid
 ms.date: 06/17/2021
 ms.topic: article
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 37
 [!include [banner](../includes/banner.md)]
 
 
-This topic provides answers to some frequently asked questions about [priority-based throttling](priority-based-throttling.md) for Open Data Protocol (OData) and custom service-based integrations.
+This article provides answers to some frequently asked questions about [priority-based throttling](priority-based-throttling.md) for Open Data Protocol (OData) and custom service-based integrations.
 
 ## How do I access the Data management Yammer group?
 To access the Data management Yammer group, go to [Data management Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=13408417).

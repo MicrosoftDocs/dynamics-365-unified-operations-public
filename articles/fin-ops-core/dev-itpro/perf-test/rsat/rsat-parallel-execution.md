@@ -1,6 +1,6 @@
 ---
 title: Run the Regression suite automation tool (RSAT) with parallel execution
-description: This topic explains how you can use the Regression suite automation tool (RSAT) version 2.3 and later to run multiple RSAT apps in parallel.
+description: This article explains how you can use the Regression suite automation tool (RSAT) version 2.3 and later to run multiple RSAT apps in parallel.
 author: FrankDahl
 ms.date: 12/16/2021
 ms.topic: article

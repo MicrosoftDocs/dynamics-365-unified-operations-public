@@ -2,7 +2,7 @@
 # required metadata
 
 title: Active batch periods
-description: This topic provides information about setting up and working with active batch periods.
+description: This article provides information about setting up and working with active batch periods.
 author: hasaid
 ms.date: 10/25/2018
 ms.topic: article

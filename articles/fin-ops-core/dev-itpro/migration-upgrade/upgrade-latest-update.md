@@ -2,7 +2,7 @@
 # required metadata
 
 title: Process for moving to the latest update of Finance and Operations
-description: This topic explains the process for moving to the latest update of Finance and Operations.
+description: This article explains the process for moving to the latest update of Finance and Operations.
 author: laneswenka
 ms.date: 11/01/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 1
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains the process of updating or upgrading to the latest release of Finance and Operations. It describes the overall process and supported scenarios, but it doesn't provide detailed instructions for every step of the process.
+This article explains the process of updating or upgrading to the latest release of Finance and Operations. It describes the overall process and supported scenarios, but it doesn't provide detailed instructions for every step of the process.
 
 For information about the contents of each release of Finance and Operations, see [What's new or changed in Finance and Operations home page](../../fin-ops/get-started/whats-new-changed.md).
 
@@ -43,7 +43,7 @@ For information about One Version service updates, see the [One Version service 
 ## Definitions
 
 - **Upgrade** – The process of moving from one official release of Finance and Operations to the next release, for source environments prior to version 8.0. Some examples are the move from 7.1 to 7.3, or from 7.3 to 10.0.1. The process involves setup of a free sandbox environment, code upgrade, and data upgrade.
-- **Update** – The process of applying a binary package to an environment to move it from one official release of Finance and Operations to the next release, for source environments starting with version 8.0. This process has lower downtime requirements and doesn't involve data upgrade. For more information, see the [Rebuild and update](upgrade-latest-update.md#rebuild-and-update) section later in this topic.
+- **Update** – The process of applying a binary package to an environment to move it from one official release of Finance and Operations to the next release, for source environments starting with version 8.0. This process has lower downtime requirements and doesn't involve data upgrade. For more information, see the [Rebuild and update](upgrade-latest-update.md#rebuild-and-update) section later in this article.
 
 ## Paths to One Version
 <img src="../migration-upgrade/media/OneVersion_Paths.png" width="600px" alt="Paths to One Version" />

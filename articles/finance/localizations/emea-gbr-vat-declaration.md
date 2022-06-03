@@ -2,7 +2,7 @@
 # required metadata
 
 title: Support for multiple VAT registration numbers in the VAT return of the United Kingdom
-description: This topic explains how to support multiple value-added tax (VAT) registration numbers in a VAT return of the United Kingdom.
+description: This article explains how to support multiple value-added tax (VAT) registration numbers in a VAT return of the United Kingdom.
 author: liza-golub
 ms.date: 10/12/2021
 ms.topic: article

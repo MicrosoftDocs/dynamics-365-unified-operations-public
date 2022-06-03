@@ -1,9 +1,9 @@
 ---
 # required metadata
 title: VAT declaration (Belgium)
-description: This topic provides information about the VAT declaration for Belgium.
+description: This article provides information about the VAT declaration for Belgium.
 author: anasyash
-ms.date: 05/27/2022
+ms.date: 06/02/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.1
 [!include [banner](../includes/banner.md)]
 
 
-This topic describes how to set up the value-added tax (VAT) declaration for Belgium in XML format, and how to preview the VAT declaration and sales and purchase transactions in Microsoft Excel.
+This article describes how to set up the value-added tax (VAT) declaration for Belgium in XML format, and how to preview the VAT declaration and sales and purchase transactions in Microsoft Excel.
 
 To automatically generate the reports, first create enough sales tax codes to keep a separate VAT accounting for each box on the VAT declaration. Additionally, in the application-specific parameters of the Electronic reporting (ER) format for the VAT declaration, associate sales tax codes with the lookup result of the lookups for the boxes on the VAT declaration.
 
@@ -38,7 +38,7 @@ For Belgium, you must configure the following elements:
 - Nature
 - Advances that are related to intra-community acquisitions
 
-For more information about how to set up application-specific parameters, see the [Set up application-specific parameters for VAT declaration fields](#set-up-application-specific-parameters-for-vat-declaration-fields) section later in this topic.
+For more information about how to set up application-specific parameters, see the [Set up application-specific parameters for VAT declaration fields](#set-up-application-specific-parameters-for-vat-declaration-fields) section later in this article.
 
 In the following table, the "Lookup result" column shows the lookup result that is preconfigured for a specific VAT declaration row in the VAT declaration format. Use this information to correctly associate sales tax codes with the lookup result and then with the row of the VAT declaration.
 
@@ -127,7 +127,7 @@ You can use the following table to determine how a lookup result that is preconf
 |--------------|-----|---------------|
 | Actual VAT due for the period from December 1 to December 20 in the monthly declaration, or for the period from October 1 to December 20 in the quarterly declaration | 91  | The **91 Deposit amount to be paid in December** input parameter in the user dialog box |
 
-### Purchase reverse charge VAT
+## Purchase reverse charge VAT
 
 If you configure sales tax codes to post incoming reverse charge VAT by using use tax, associate your sales tax codes with the lookup result of **Report field lookup** that contains "UseTax" in the name.
 
@@ -149,7 +149,7 @@ In this case, amounts that use the **VAT_S_EU** sales tax code are reflected in 
 
 For more information about how to configure reverse charge VAT, see [Reverse charges](emea-reverse-charge.md).
 
-### Credit notes and negative corrections
+## Credit notes and negative corrections
 
 In Belgium, amounts of credit notes and negative corrections are shown in separate boxes on the VAT declaration. Therefore, in the preceding tables, specific lookup results for **Report field lookup** are dedicated to credit notes and negative corrections.
 
@@ -198,7 +198,9 @@ The following examples show what these reports look like for the examples in the
 | Invoice 2       | 1,000.00 | 210.00 | 00.00  | 00.00  |
 | Credit note 2   | \-400.00 | 00.00  | 400.00 | 84.00  |
 
-## Configure system parameters
+## Set up a VAT declaration for Belgium
+
+### Configure system parameters
 
 To generate a VAT declaration, you must configure the enterprise tax number.
 
@@ -210,8 +212,6 @@ To generate a VAT declaration, you must configure the enterprise tax number.
 6. On the **General** tab, in the **Effective** field, enter the date when the number becomes effective.
 
 For more information about how to set up registration categories and registration types, see [Registration IDs](emea-registration-ids.md).
-
-## Set up a VAT declaration for Belgium
 
 ### Import ER configurations
 
@@ -239,7 +239,7 @@ Follow these steps to define which sales tax codes generate which boxes on the V
 
     | Field     | Description   |
     |-----------|---------------|
-    | Lookup result  | Select the value of the report field. For more information about the values and their assignment to VAT declaration rows, see the [VAT declaration overview](#vat-declaration-overview) section earlier in this topic.  |
+    | Lookup result  | Select the value of the report field. For more information about the values and their assignment to VAT declaration rows, see the [VAT declaration overview](#vat-declaration-overview) section earlier in this article.  |
     | Tax code   | Select the sales tax code to associate with the report field. Posted tax transactions that use the selected sales tax code will be collected in the appropriate declaration box. We recommend that you separate sales tax codes in such a way that one sales tax code generates amounts in only one declaration box. |
     | Transaction classifier | Select a transaction classifier. The following transaction classifiers are available: </br> - **Purchase** (tax receivable) </br> - **PurchaseExempt** (tax-exempt purchase)  </br>- **PurchaseReverseCharge** (tax receivable from a purchase reverse charge)  </br> - **Sales** (tax payable) </br> -  **SalesExempt** (tax-exempt sale) </br>- **SalesReverseCharge** (tax payable from a purchase reverse charge) </br>- **Use tax** (use tax) </br> For each transaction classifier, a classifier for the credit note is also available. For example, one of these classifiers is **PurchaseCreditNote** (purchase credit note). Be sure to create two lines for each sales tax code: one that has the transaction classifier value and one that has the transaction classifier for the credit note value.  |
 
@@ -435,7 +435,7 @@ The data package contains electronic message settings that are used to preview t
 
 ## Generate a VAT declaration, incoming operations, and outgoing operations from electronic messages
 
-When you use electronic messages to generate the report, you can collect tax data from multiple legal entities. For more information, see the [Run a VAT declaration for multiple legal entities](#run-a-vat-declaration-for-multiple-legal-entities) section later in this topic.
+When you use electronic messages to generate the report, you can collect tax data from multiple legal entities. For more information, see the [Run a VAT declaration for multiple legal entities](#run-a-vat-declaration-for-multiple-legal-entities) section later in this article.
 
 The following procedure applies to the electronic message processing example that you imported earlier from the LCS Shared asset library.
 
@@ -447,12 +447,12 @@ The following procedure applies to the electronic message processing example tha
 > [!NOTE]
 > Steps 5 through 7 are optional.
 
-5. Optional: On the **Messages** FastTab, select **Collect data**, and then select **OK**. The sales tax payments that were generated earlier are added to the message. For more information, see the [Settle and post sales tax](#settle-and-post-sales-tax) section earlier in this topic. If you skip this step, you can still generate a VAT declaration by using the **Tax declaration version** field in the **Declaration** dialog box.
+5. Optional: On the **Messages** FastTab, select **Collect data**, and then select **OK**. The sales tax payments that were generated earlier are added to the message. For more information, see the [Settle and post sales tax](#settle-and-post-sales-tax) section earlier in this article. If you skip this step, you can still generate a VAT declaration by using the **Tax declaration version** field in the **Declaration** dialog box.
 6. Optional: On the **Message items** FastTab, review the sales tax payments that are transferred for processing. By default, all sales tax payments of the selected period that weren't included in any other message of the same processing are included.
 7. Optional: Select **Original document** to review the sales tax payments or select **Delete** to exclude sales tax payments from processing. If you skip this step, you can still generate a VAT declaration by using the **Tax declaration version** field in the **Declaration** dialog box.
 8. On the **Messages** FastTab, select **Update status**. In the **Update status** dialog box, select **Ready to generate**, and then select **OK**. Verify that the message status is changed to **Ready to generate**.
 9. Select **Generate report**. To preview the VAT declaration amounts, in the **Run processing** dialog box, select **Preview report**, and then select **OK**.
-10. In the **Electronic reporting parameters** dialog box, set the fields as described in the [Preview the VAT declaration in Excel from the Report sales tax for settlement period periodic task](#preview-the-vat-declaration-in-excel-from-the-report-sales-tax-for-settlement-period-periodic-task) section earlier in this topic, and then select **OK**.
+10. In the **Electronic reporting parameters** dialog box, set the fields as described in the [Preview the VAT declaration in Excel from the Report sales tax for settlement period periodic task](#preview-the-vat-declaration-in-excel-from-the-report-sales-tax-for-settlement-period-periodic-task) section earlier in this article, and then select **OK**.
 11. Select the **Attachments** button (paper clip symbol) in the upper-right corner of the page, and then select **Open** to open the file. Review the amounts in the Excel documents.
 12. Select **Generate report**.
 13. To generate a report in XML format, in the **Run processing** dialog box, select **Generate report**, and then select **OK**.
@@ -511,7 +511,7 @@ This section provides recommendations about how to migrate your setup of the INT
 > [!NOTE]
 > In the examples that follow, the same sales tax code is used for different types of transactions: domestic sales, intra-community sales, domestic purchases, intra-community purchases, and so on. This approach has been used only for the purpose of illustration. For an easier experience when you reconcile your taxes, we recommend that you to create as many sales tax codes as possible, so that each sales tax code can uniquely identify a specific transaction type. Then, during a tax audit, you will be able to explain the source of each transaction based on the sales tax code and will have to use only standard sales tax reconciliation reports.
 > 
-> Additionally, in the examples, all negative tax transactions are configured so that they are considered credit notes. This approach has also been used only for the purpose of illustration. To configure the correct settings, you should consider the information in the [Credit notes and negative corrections](#credit-notes-and-negative-corrections-1) section earlier in this topic.
+> Additionally, in the examples, all negative tax transactions are configured so that they are considered credit notes. This approach has also been used only for the purpose of illustration. To configure the correct settings, you should consider the information in the [Credit notes and negative corrections](#credit-notes-and-negative-corrections-1) section earlier in this article.
 
 The tables in this section use the following abbreviations:
 
@@ -688,7 +688,7 @@ In this case, you can have the following setup of application-specific parameter
 
 ## Examples of posting and reporting
 
-The examples in this section are provided for the setup of application-specific parameters for the [Commercial goods and services at a standard rate](#commercial-goods-and-services-at-a-standard-rate) section earlier in this topic.
+The examples in this section are provided for the setup of application-specific parameters for the [Commercial goods and services at a standard rate](#commercial-goods-and-services-at-a-standard-rate) section earlier in this article.
 
 ### Example 1: Sale in Belgium
 

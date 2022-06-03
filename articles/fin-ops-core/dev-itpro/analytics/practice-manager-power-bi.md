@@ -2,7 +2,7 @@
 # required metadata
 
 title: Practice manager Power BI content
-description: This topic describes what is included in the Practice manager Power BI content.
+description: This article describes what is included in the Practice manager Power BI content.
 author: kfend
 ms.date: 12/18/2017
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes what is included in the **Practice manager** Microsoft Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.
+This article describes what is included in the **Practice manager** Microsoft Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.
 
 ## Overview
 

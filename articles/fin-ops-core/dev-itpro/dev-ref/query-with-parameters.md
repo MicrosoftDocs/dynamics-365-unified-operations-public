@@ -1,6 +1,6 @@
 ---
 title: Mitigate a SQL injection attack
-description: This topic explains how to mitigate SQL injection attacks in X++.
+description: This article explains how to mitigate SQL injection attacks in X++.
 author: pvillads
 ms.date: 12/01/2020
 audience: Developer

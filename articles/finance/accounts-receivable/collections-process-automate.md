@@ -2,7 +2,7 @@
 # required metadata
 
 title: Collections process automation
-description: This topic describes the process of setting up collections process strategies that automatically identify customer invoices that require an email reminder, collection activity, or a collection letter to be sent to the customer. 
+description: This article describes the process of setting up collections process strategies that automatically identify customer invoices that require an email reminder, collection activity, or a collection letter to be sent to the customer. 
 author: JodiChristiansen
 ms.date: 03/12/2021
 ms.topic: article
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.13
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the process of setting up collections process strategies that automatically identify customer invoices that require an email reminder, collection activity (such as a phone call), or a collection letter to be sent to the customer. 
+This article describes the process of setting up collections process strategies that automatically identify customer invoices that require an email reminder, collection activity (such as a phone call), or a collection letter to be sent to the customer. 
 
 Organizations often spend significant time researching aged balance reports, customer accounts, and open invoices to learn which customers should be contacted about an open invoice or account balance. This research takes times away from a collection agent’s time spent communicating with customers to collect past due balances or resolving invoice disputes. Collections process automation lets you set up a strategy-based approach to your collection process. This helps you apply collection activities consistently by providing customized email reminders, or programmed process for sending collection letters. 
 

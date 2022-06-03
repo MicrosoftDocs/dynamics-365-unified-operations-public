@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enable just-in-time database access
-description: This topic provides the steps necessary to enable database access in a just-in-time (JIT) fashion.
+description: This article provides the steps necessary to enable database access in a just-in-time (JIT) fashion.
 author: laneswenka
 ms.date: 07/12/2021
 ms.topic: article
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Platform update 20
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides the steps necessary to enable database access using a just-in-time (JIT) fashion. This is useful if access to the database is required for various troubleshooting efforts, running unplanned queries, or data upgrade problem solving. This process is available for both self-service as well as Microsoft-managed sandbox acceptance test environments. For more information about the available environment types, see [Deployment overview](../deployment/cloud-deployment-overview.md).
+This article provides the steps necessary to enable database access using a just-in-time (JIT) fashion. This is useful if access to the database is required for various troubleshooting efforts, running unplanned queries, or data upgrade problem solving. This process is available for both self-service as well as Microsoft-managed sandbox acceptance test environments. For more information about the available environment types, see [Deployment overview](../deployment/cloud-deployment-overview.md).
 
 ## Microsoft-managed environments without RDP access
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure the Warehouse Management mobile app for cloud and edge scale units
-description: This topic explains how to set up your Warehouse Management mobile apps for warehouses that are served by a cloud or edge scale unit.
+description: This article explains how to set up your Warehouse Management mobile apps for warehouses that are served by a cloud or edge scale unit.
 
 author: perlynne
 ms.date: 12/15/2021
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.25
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up your Warehouse Management mobile apps so that they can be used at warehouses that are served by a cloud or edge scale unit.
+This article explains how to set up your Warehouse Management mobile apps so that they can be used at warehouses that are served by a cloud or edge scale unit.
 
 ## Prerequisites
 

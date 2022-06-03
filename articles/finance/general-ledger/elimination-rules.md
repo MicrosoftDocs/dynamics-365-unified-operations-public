@@ -2,7 +2,7 @@
 # required metadata
 
 title: Elimination rules
-description: This topic provides information about elimination rules and the various options for reporting about eliminations.
+description: This article provides information about elimination rules and the various options for reporting about eliminations.
 author: aprilolson
 ms.date: 01/11/2018
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about elimination rules and the various options for reporting about eliminations.
+This article provides information about elimination rules and the various options for reporting about eliminations.
 
 Elimination transactions are required when a parent legal entity does business with one or more subsidiary legal entities and uses consolidated financial reporting. Consolidated financial statements must include only transactions that occur between the consolidated organization and other entities outside that organizations. Therefore, transactions between legal entities that are part of the same organization must be removed, or eliminated, from the general ledger, so they don't appear on financial reports. There are multiple ways to report about eliminations:
 
@@ -39,7 +39,7 @@ Elimination transactions are required when a parent legal entity does business w
 -   Financial reporting can be used to show the eliminations accounts and dimensions on a specific row or column.
 -   A separate legal entity can be used to post manual transaction entries to track eliminations.
 
-This topic focuses on elimination rules that are processed in a consolidation or elimination company. You can set up elimination rules to create elimination transactions in a legal entity that is specified as the destination legal entity for eliminations. This destination legal entity is known as the elimination legal entity. Elimination journals can be generated either during the consolidation process or by using an elimination journal proposal. Before you set up elimination rules, you should become familiar with the following terms:
+This article focuses on elimination rules that are processed in a consolidation or elimination company. You can set up elimination rules to create elimination transactions in a legal entity that is specified as the destination legal entity for eliminations. This destination legal entity is known as the elimination legal entity. Elimination journals can be generated either during the consolidation process or by using an elimination journal proposal. Before you set up elimination rules, you should become familiar with the following terms:
 
 -   **Source legal entity** – The legal entity where the amounts that are being eliminated were posted.
 -   **Destination legal entity** – The legal entity where elimination rules are posted.

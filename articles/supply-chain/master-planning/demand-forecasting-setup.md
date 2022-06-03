@@ -1,6 +1,6 @@
 ---
 title: Demand forecasting setup
-description: This topic describes the setup tasks that you must perform to prepare for demand forecasting.  
+description: This article describes the setup tasks that you must perform to prepare for demand forecasting.  
 author: t-benebo
 ms.date: 11/23/2021
 ms.topic: article
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to set up demand forecasting.  
+This article describes how to set up demand forecasting.  
 
 ## Item allocation keys
 
@@ -240,7 +240,7 @@ Use the following procedure to create a new machine learning workspace.
 1. Complete the wizard by following the on-screen instructions. Keep the following points in mind as you work:
 
     - Use default settings unless other points in this list recommend different settings.
-    - Be sure to select the geographic region that matches the region where your instance of Supply Chain Management is deployed. Otherwise, some of your data might pass through region boundaries. For more information, see the [privacy notice](#privacy) later in this topic.
+    - Be sure to select the geographic region that matches the region where your instance of Supply Chain Management is deployed. Otherwise, some of your data might pass through region boundaries. For more information, see the [privacy notice](#privacy) later in this article.
     - Use dedicated resources, such as resource groups, storage accounts, container registries, Azure key vaults, and networking resources.
     - On the **Set up Azure Machine Learning Service connection parameters** page of the wizard, you must provide a storage account name. Use an account that is dedicated to demand forecasting. Demand forecasting input and output data will be stored in this storage account.
 

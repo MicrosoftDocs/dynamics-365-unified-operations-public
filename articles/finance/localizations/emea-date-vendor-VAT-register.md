@@ -2,7 +2,7 @@
 # required metadata
 
 title: Date of vendor VAT register
-description: This topic provides information about a feature for enabling date of vendor VAT register
+description: This article provides information about a feature for enabling date of vendor VAT register
 author: anasyash
 ms.date: 01/15/2022
 ms.topic: article

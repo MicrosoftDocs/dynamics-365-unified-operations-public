@@ -2,7 +2,7 @@
 # required metadata
 
 title: Build operational workspaces
-description: This topic provides detailed information about workspaces and the patterns and subpatterns that are used to build operational workspaces. 
+description: This article provides detailed information about workspaces and the patterns and subpatterns that are used to build operational workspaces. 
 author: jasongre
 ms.date: 02/08/2022
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides detailed information about workspaces and the patterns and subpatterns that are used to build operational workspaces. 
+This article provides detailed information about workspaces and the patterns and subpatterns that are used to build operational workspaces. 
 
 ## A workspace is defined as...
 

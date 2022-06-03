@@ -2,7 +2,7 @@
 # required metadata
 
 title: Implement a custom ER source of inbound documents
-description: This topic explains how to extend the list of Electronic reporting (ER) sources to access inbound documents for data import.
+description: This article explains how to extend the list of Electronic reporting (ER) sources to access inbound documents for data import.
 author: NickSelin
 ms.date: 10/05/2021
 ms.topic: article
@@ -35,7 +35,7 @@ To import data from an inbound document by using the [Electronic reporting (ER)]
 
 The application programming interface (API) of the ER framework now lets you [extend](er-apis-app10-0-23.md#er-api-extend-file-source) the list of ER sources that you can use to access inbound documents that ER formats [parse](er-parse-incoming-documents.md) for data import. Therefore, you can use ER configurations to perform data import from documents that are stored in your custom source.
 
-This topic includes an overview of the main tasks that you must complete to implement and start to use a custom ER source of inbound documents. To complete these tasks, you will use the same example for importing vendor transactions that is described in [Configure data import from SharePoint](er-configure-data-import-sharepoint.md). The steps of these tasks can be completed in the **USMF** company in Microsoft Dynamics 365 Finance.
+This article includes an overview of the main tasks that you must complete to implement and start to use a custom ER source of inbound documents. To complete these tasks, you will use the same example for importing vendor transactions that is described in [Configure data import from SharePoint](er-configure-data-import-sharepoint.md). The steps of these tasks can be completed in the **USMF** company in Microsoft Dynamics 365 Finance.
 
 ## Prerequisites
 
@@ -55,7 +55,7 @@ Follow the steps in [Configure the ER framework](er-quick-start2-customize-repor
 
 ### Import an ER format configuration
 
-Additional tasks use the ER configurations that are mentioned in [Configure data import from SharePoint](er-configure-data-import-sharepoint.md). If you haven't played the task guide of that topic, download the following files.
+Additional tasks use the ER configurations that are mentioned in [Configure data import from SharePoint](er-configure-data-import-sharepoint.md). If you haven't played the task guide of that article, download the following files.
 
 | Content description | File |
 |---------------------|------|

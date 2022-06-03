@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enable personalized product recommendations
-description: This topic describes how to make personalized product recommendations available for customers in Microsoft Dynamics 365 Commerce. 
+description: This article describes how to make personalized product recommendations available for customers in Microsoft Dynamics 365 Commerce. 
 author: bebeale
 ms.date: 08/18/2020
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to make personalized product recommendations available for customers in Microsoft Dynamics 365 Commerce.
+This article describes how to make personalized product recommendations available for customers in Microsoft Dynamics 365 Commerce.
 
 In Dynamics 365 Commerce, retailers can make personalized product recommendations (also known as personalization) available. In this way, personalized recommendations can be incorporated into the customer experience online and at the point of sale (POS). When the personalization functionality is turned on, the system can associate a user's purchase and product information to generate individualized product recommendations.
 

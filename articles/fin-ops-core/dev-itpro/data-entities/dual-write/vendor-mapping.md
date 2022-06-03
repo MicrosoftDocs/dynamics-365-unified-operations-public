@@ -1,6 +1,6 @@
 ---
 title: Integrated vendor master
-description: This topic describes vendor data integration between Finance and Operations apps and Dataverse.
+description: This article describes vendor data integration between Finance and Operations apps and Dataverse.
 author: RamaKrishnamoorthy 
 ms.date: 07/15/2019
 ms.topic: article

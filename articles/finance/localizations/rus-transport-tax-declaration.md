@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Transport tax declaration (Russia)
-description: This topic provides information about the Transport tax declaration for Russia.
+description: This article provides information about the Transport tax declaration for Russia.
 author: anasyash
 ms.date: 06/11/2019
 ms.topic: article
@@ -54,7 +54,7 @@ fixed asset is written off or sold during the accounting period, the tax
 calculation uses data for the month when legal registration and removal from the
 register occurred.
 
-This topic explains how to perform the following tasks:
+This article explains how to perform the following tasks:
 
 1.  [Set up transport tax](#set-up-transport-tax)
 
@@ -334,7 +334,7 @@ to company divisions.
     the separate division that is associated with the vehicle location. For
     information about how to associate a fixed asset with a location, see the
     [Specify the location of the vehicle](#specify-the-location-of-the-vehicle)
-    section later in this topic.
+    section later in this article.
 
     If the **Separate division ID** field is left blank, the location is the
     same as the location of the organization's head office.

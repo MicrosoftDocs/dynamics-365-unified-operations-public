@@ -2,7 +2,7 @@
 # required metadata
 
 title: Automatic update of asset counters
-description: This topic describes automatic update of asset counters in Asset Management.
+description: This article describes automatic update of asset counters in Asset Management.
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article

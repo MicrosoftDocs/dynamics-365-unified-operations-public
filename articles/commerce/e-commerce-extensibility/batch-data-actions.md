@@ -2,7 +2,7 @@
 # required metadata
 
 title: Batch data actions
-description: This topic describes how to batch data actions.
+description: This article describes how to batch data actions.
 author: samjarawan
 ms.date: 07/16/2020
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to batch data actions.
+This article describes how to batch data actions.
 
 Often you'll have an application that requires many calls to the same application programming interface (API) during the load of a single page. An example is a product feature page that showcases information about many products instead of just one product. In a typical approach, multiple calls are made to the data action to get products. However, because this approach uses many individual HTTP requests to get the product information, it might not be efficient. To solve this issue, the data action architecture supports batchable data actions.
 

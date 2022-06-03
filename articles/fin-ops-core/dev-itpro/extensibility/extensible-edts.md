@@ -1,6 +1,6 @@
 ---
 title: Extended data types
-description: This topic provides information about extended data types (EDTs).
+description: This article provides information about extended data types (EDTs).
 author: MichaelFruergaardPontoppidan
 ms.date: 09/09/2018
 ms.topic: article

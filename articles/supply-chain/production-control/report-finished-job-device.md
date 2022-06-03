@@ -2,7 +2,7 @@
 # required metadata
 
 title: Report as finished from the job card device
-description: This topic describes how to configure the system so that users of a job card device can report finished products from a production order to inventory.
+description: This article describes how to configure the system so that users of a job card device can report finished products from a production order to inventory.
 author: johanhoffmann
 ms.date: 07/31/2020
 ms.topic: article
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: johanho
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.13
 
 [!include [banner](../includes/banner.md)]
 
-Workers use the **Report progress** page on the job card device to report quantities that have been completed for a production job. This topic describes how to set up various options that establish how workers can report as finished using this page and what happens next. Options include:
+Workers use the **Report progress** page on the job card device to report quantities that have been completed for a production job. This article describes how to set up various options that establish how workers can report as finished using this page and what happens next. Options include:
 
 - Control whether and how quantities that are reported as finished are added to inventory.
 - Control whether and how batch numbers are generated and applied when reporting as finished.

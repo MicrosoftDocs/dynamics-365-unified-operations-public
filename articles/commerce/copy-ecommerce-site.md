@@ -2,7 +2,7 @@
 # required metadata
 
 title: Copy an e-commerce site
-description: This topic describes how to copy an existing e-commerce site within or between e-commerce environments in Microsoft Dynamics 365 Commerce site builder.
+description: This article describes how to copy an existing e-commerce site within or between e-commerce environments in Microsoft Dynamics 365 Commerce site builder.
 author: psimolin
 ms.date: 03/03/2022
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.validFrom: 2017-06-20
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to copy an existing e-commerce site within or between e-commerce environments in Microsoft Dynamics 365 Commerce site builder.
+This article describes how to copy an existing e-commerce site within or between e-commerce environments in Microsoft Dynamics 365 Commerce site builder.
 
 Dynamics 365 Commerce supports copying or cloning sites as a self-serve operation in Commerce site builder. Sites can be copied within a single e-commerce environment or between two e-commerce environments. The user who initiates the site copy operation must be a tenant administrator in both the source and destination e-commerce environments.
 

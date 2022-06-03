@@ -2,7 +2,7 @@
 # required metadata
 
 title: Austrian Intrastat
-description: This topic contains information about the Austrian Intrastat report.
+description: This article contains information about the Austrian Intrastat report.
 author: anasyash
 ms.date: 09/15/2021
 ms.topic: article

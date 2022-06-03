@@ -2,7 +2,7 @@
 # required metadata
 
 title: Custom service development
-description: This topic describes how to create a custom service.
+description: This article describes how to create a custom service.
 author: peakerbl
 ms.date: 02/07/2020
 ms.topic: article

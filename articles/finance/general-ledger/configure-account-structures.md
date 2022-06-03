@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure account structures
-description: This topic provides information about account structures and financial dimensions.
+description: This article provides information about account structures and financial dimensions.
 author: aprilolson
 ms.date: 06/03/2019
 ms.topic: article

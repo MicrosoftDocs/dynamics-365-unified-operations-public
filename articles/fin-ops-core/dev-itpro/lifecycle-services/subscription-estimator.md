@@ -2,7 +2,7 @@
 # required metadata
 
 title: Subscription estimator in Lifecycle Services (LCS)
-description: This topic explains how to use the Subscription estimator tool that is available in Lifecycle Services (LCS).
+description: This article explains how to use the Subscription estimator tool that is available in Lifecycle Services (LCS).
 author: angelmarshall
 ms.date: 01/25/2022
 ms.topic: article
@@ -91,7 +91,7 @@ The [Subscription estimator](subscription-estimator.md) is a required step befor
 When you're implementing several projects in the same tenant, a warning message in the Action center in LCS might state, "subscription estimate is not complete." This warning will indicate that the total number of estimated users for all implementation projects should not exceed the number of purchased licenses. This situation can occur if the total users in the active subscription estimates exceed the tenant license count of the same type. To edit the active subscription estimate, select the **Edit estimate** button in the Subscription estimator tool to update your license allocation.
 
 > [!NOTE]
-> FastTrack solutions architects aren't involved in uploading or updating the Subscription estimator. If you identify any warnings about the Subscription estimator in LCS, follow the instructions in this topic. If you continue to have issues, contact Microsoft Support.
+> FastTrack solutions architects aren't involved in uploading or updating the Subscription estimator. If you identify any warnings about the Subscription estimator in LCS, follow the instructions in this article. If you continue to have issues, contact Microsoft Support.
 
 If you receive any other error message or encounter other issues, create a support request, and attach your active estimate so that the Support team can address the issue.
 

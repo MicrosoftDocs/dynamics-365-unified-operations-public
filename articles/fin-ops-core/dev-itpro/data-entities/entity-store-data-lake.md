@@ -2,7 +2,7 @@
 # required metadata
 
 title: Make Entity store available as a Data Lake
-description: This topic explains how to make Entity store available as a Microsoft Azure Data Lake.
+description: This article explains how to make Entity store available as a Microsoft Azure Data Lake.
 author: MilindaV2
 ms.date: 09/23/2020
 ms.topic: article
@@ -144,7 +144,7 @@ The following sections describe each task in more detail.
 ## Work in Entity store in a Data Lake
 
 1. Go to **System administration** \> **Set up** \> **System parameters**.
-2. On the **Data connections** tab, enter the following information that you made a note of earlier in this topic:
+2. On the **Data connections** tab, enter the following information that you made a note of earlier in this article:
 
     - **Application ID:** Enter the application ID of the Azure AD application that you registered earlier.
     - **Application Secret:** Enter the application key (secret) for the Azure AD application.

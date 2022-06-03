@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure fields for the Warehouse Management mobile app
-description: This topic describes how to define and configure names and priorities of fields shown in the Warehouse Management mobile app. 
+description: This article describes how to define and configure names and priorities of fields shown in the Warehouse Management mobile app. 
 author: Mirzaab
 ms.date: 06/20/2017
 ms.topic: article
@@ -31,10 +31,10 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to define and configure names and priorities of fields shown in the Warehouse Management mobile app.
+This article describes how to define and configure names and priorities of fields shown in the Warehouse Management mobile app.
 
 > [!NOTE]
-> This topic applies to features in Warehouse management. It doesn’t apply to features in Inventory management. The Warehouse Management mobile app is an application that you can use to perform warehouse tasks. You can define and configure the field names that are used in the app, as well as configure the priority to which the field names should be assigned. This topic explains how to define and configure these Warehouse Management mobile app field names and priorities, and how they are used.
+> This article applies to features in Warehouse management. It doesn’t apply to features in Inventory management. The Warehouse Management mobile app is an application that you can use to perform warehouse tasks. You can define and configure the field names that are used in the app, as well as configure the priority to which the field names should be assigned. This article explains how to define and configure these Warehouse Management mobile app field names and priorities, and how they are used.
 
 ## Configure warehouse app field names
 

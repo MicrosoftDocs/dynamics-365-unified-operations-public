@@ -2,7 +2,7 @@
 # required metadata
 
 title: Refresh for training purposes
-description: This topic explains a general-purpose database refresh scenario for Microsoft Dynamics 365 Finance.
+description: This article explains a general-purpose database refresh scenario for Microsoft Dynamics 365 Finance.
 author: LaneSwenka
 ms.date: 01/28/2019
 ms.topic: article
@@ -132,7 +132,7 @@ First, sign in to the environment by using the admin account that can be found o
 * **System administration** \> **Setup** \> **Email** \> **Email parameters:** Enter the Simple Mail Transfer Protocol (SMTP) settings if you use email in your UAT environment.
 * **System administration** \> **Inquiries** \> **Batch jobs:** Select the jobs that you want to run in your UAT environment, and update the status to **Waiting**.
 
-To complete this reconfiguration more quickly, we recommend that you build a custom web service endpoint that can be called on demand after the refresh is completed. An example of this type of web service will be added in a future update of this topic.
+To complete this reconfiguration more quickly, we recommend that you build a custom web service endpoint that can be called on demand after the refresh is completed. An example of this type of web service will be added in a future update of this article.
 
 ## Open the environment to users
 

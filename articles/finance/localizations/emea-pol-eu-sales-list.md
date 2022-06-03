@@ -2,7 +2,7 @@
 # required metadata
 
 title: EU Sales list for Poland
-description: This topic provides information about the European Union (EU) sales list report for Poland.
+description: This article provides information about the European Union (EU) sales list report for Poland.
 author: AKroshkina
 ms.date: 05/20/2022
 ms.topic: article
@@ -29,7 +29,7 @@ ms.search.validFrom:
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the European Union (EU) sales list report for Poland. The Polish EU sales list report contains information about sale and purchase of goods and services for reporting in XML format.
+This article provides information about the European Union (EU) sales list report for Poland. The Polish EU sales list report contains information about sale and purchase of goods and services for reporting in XML format.
 
 The following fields are included in the Polish EU sales list report:
 

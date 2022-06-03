@@ -2,7 +2,7 @@
 # required metadata
 
 title: Plan your local chart of accounts
-description: This topic provides information that will help you plan the chart of accounts when you have requirements for statutory/local requirements for your organization.
+description: This article provides information that will help you plan the chart of accounts when you have requirements for statutory/local requirements for your organization.
 author: VeselinaE
 ms.date: 10/07/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information that will help you plan the chart of accounts when your organization includes legal entities that must meet requirements for specific localities where they do business. This topic uses the following terms to describe charts of accounts:
+This article provides information that will help you plan the chart of accounts when your organization includes legal entities that must meet requirements for specific localities where they do business. This article uses the following terms to describe charts of accounts:
 
 - **Global** – The chart of accounts that the organization uses globally. In most cases, you will consolidate to this chart of accounts.
 - **Local** – A chart of accounts that legal entities in a specific country or region use.

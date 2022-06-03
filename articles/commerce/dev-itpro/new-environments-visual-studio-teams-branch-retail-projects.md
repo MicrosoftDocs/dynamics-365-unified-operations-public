@@ -3,7 +3,7 @@
 # required metadata
 
 title: Set up new environments, Azure DevOps, and branches for projects
-description: This topic describes recommended practices for setting up new environments, Microsoft Azure DevOps, and branches for Microsoft Dynamics 365 Commerce projects.
+description: This article describes recommended practices for setting up new environments, Microsoft Azure DevOps, and branches for Microsoft Dynamics 365 Commerce projects.
 author: andreashofmann1
 ms.date: 07/09/2018
 ms.topic: article
@@ -17,7 +17,7 @@ audience: IT Pro
 # ms.devlang: 
 ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: andreash
@@ -90,7 +90,7 @@ Tier 2 and higher machines are multi-box environments for multiple test and veri
 
 ## Branches, build definitions, and environments
 
-Branching is an important practice in software development. The [Branching and Merging Primer](/previous-versions/aa730834(v=vs.80)) topic describes the advantages of branching:
+Branching is an important practice in software development. The [Branching and Merging Primer](/previous-versions/aa730834(v=vs.80)) article describes the advantages of branching:
 
 > [!NOTE]
 > A branching and merging strategy involves a tradeoff between risk and productivity. You trade the safety of working in isolation for the increased productivity of working with other people. The productivity increases come with a cost—the additional effort required for merging software assets sometime in the future.
@@ -131,7 +131,7 @@ The following sections explain each step in detail.
 
 ## Deploy a build environment and an empty Main branch in Azure DevOps
 
-Use the LCS portal to deploy a new build environment. We recommend that you use a cloud-hosted environment, because you will have more options and capabilities if you have administrative rights. See the table about the various environment hosting models in the "Development Tier 1 environments" section, earlier in this topic.
+Use the LCS portal to deploy a new build environment. We recommend that you use a cloud-hosted environment, because you will have more options and capabilities if you have administrative rights. See the table about the various environment hosting models in the "Development Tier 1 environments" section, earlier in this article.
 
 Start by creating a new Azure DevOps project if you don't already have one. In your Azure DevOps account, select **New project**.
 
@@ -196,7 +196,7 @@ At this point, Source Depot Explorer in Visual Studio resembles the following il
 
 Next, you must add the Retail SDK to each of the three code branches, so that code changes can be propagated from Dev to Main and eventually to ProdRel1. This step also enables separate changes between these branches, as for the X++ code. Therefore, we will have the Retail SDK in every branch, together with the X++ code. 
 
-First, add the mirror branch. The Retail SDK mirror branch is required as a baseline for code merges when updates from Microsoft are imported. The process for taking updates will be explained later in this topic.
+First, add the mirror branch. The Retail SDK mirror branch is required as a baseline for code merges when updates from Microsoft are imported. The process for taking updates will be explained later in this article.
 
 The mirror branch or folder is only required one time per project.
 
@@ -314,7 +314,7 @@ Next, on the **Customize virtual machine names** tab, enter a unique name, and t
 
 ## Prepare the build definitions
 
-After you complete the steps earlier in this topic, you should have one build definition and two agent queues, and each agent queue should have one agent. To build different branches, you must configure the build definition differently. Therefore, you must clone the build definition.
+After you complete the steps earlier in this article, you should have one build definition and two agent queues, and each agent queue should have one agent. To build different branches, you must configure the build definition differently. Therefore, you must clone the build definition.
 
 However, before you clone the build definition, you must add the Retail SDK into the build, so that you don't have to complete this step twice. To edit the existing build definition, which is named **Unified Operations platform - Build Main**, follow the steps in [Integrate the Retail SDK with the continuous build system (Azure DevOps)](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build) to integrate the Retail SDK into the metadata build of the Main branch.
 

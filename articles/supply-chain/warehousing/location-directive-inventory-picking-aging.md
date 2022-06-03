@@ -2,7 +2,7 @@
 # required metadata
 
 title: Location directive inventory picking aging
-description: This topic explains how to use first in, first out (FIFO) and last in, first out (LIFO) location directive strategies during picking.
+description: This article explains how to use first in, first out (FIFO) and last in, first out (LIFO) location directive strategies during picking.
 author: Mirzaab
 ms.date: 07/15/2020
 ms.topic: article
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.8
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to use first in, first out (FIFO) and last in, first out (LIFO) location directive strategies during picking. These strategies work in conjunction with the aging dates that are recorded for locations to track when inventory first entered the warehouse. The *Location directive inventory picking aging* feature uses the date on the location to determine aging. The *Warehouse location status* feature updates the date on the location, based on the date from the license plate.
+This article explains how to use first in, first out (FIFO) and last in, first out (LIFO) location directive strategies during picking. These strategies work in conjunction with the aging dates that are recorded for locations to track when inventory first entered the warehouse. The *Location directive inventory picking aging* feature uses the date on the location to determine aging. The *Warehouse location status* feature updates the date on the location, based on the date from the license plate.
 
 You can use FIFO and LIFO strategies to ship both batch-tracked items and non-batch-tracked items, based on the date when the inventory entered the warehouse. This capability can be especially useful for non-batch-tracked inventory, where an expiration date isn't available to use for sorting.
 

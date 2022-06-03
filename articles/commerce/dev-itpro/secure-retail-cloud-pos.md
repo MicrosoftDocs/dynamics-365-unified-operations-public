@@ -2,7 +2,7 @@
 # required metadata
 
 title: Security best practices for Cloud POS in shared environments
-description: This topic provides recommendations that can help secure Retail Cloud POS in a shared environment.
+description: This article provides recommendations that can help secure Retail Cloud POS in a shared environment.
 author: pdp1207
 ms.date: 06/17/2020
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-Retail Cloud POS is a web application that runs in the context of a browser. This topic provides recommendations that can help secure Retail Cloud POS in a shared environment.
+Retail Cloud POS is a web application that runs in the context of a browser. This article provides recommendations that can help secure Retail Cloud POS in a shared environment.
 
 Retail Cloud POS is a web application that runs in the context of a web browser. Therefore, it's vulnerable to attack when a user can run any script in the context of the web application. One requirement for such attacks is that the user must have physical access to the computer, either in person or by using Remote Desktop Connection. Vulnerability to attack is an existing issue in most browsers that provide developer tools, and that enable scripts to be run without sufficient privilege control. Because the web application will have little influence over its hosting environment, one way to mitigate security issues is to add defense-in-depth. The defense-in-depth can be built by taking advantage of the restrictive policies of both the browser and the operating system.
 

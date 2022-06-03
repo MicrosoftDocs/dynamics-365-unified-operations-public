@@ -2,9 +2,9 @@
 # required metadata
 
 title: Service protection API limits
-description: This topic provides information about limits for service protection application programming interfaces (APIs) for the Finance and Operations apps service.
+description: This article provides information about limits for service protection application programming interfaces (APIs) for the Finance and Operations apps service.
 author: jaredha
-ms.date: 05/26/2022
+ms.date: 06/02/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: v-chgriffin
@@ -18,10 +18,10 @@ ms.search.validFrom: 2022-04-21
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about limits for service protection application programming interfaces (APIs) for the Finance and Operations apps service.
+This article provides information about limits for service protection application programming interfaces (APIs) for the Finance and Operations apps service.
 
 > [!IMPORTANT]
-> Resource-based service protection API limits are enabled in Finance and Operations apps environments as of version 10.0.19. The user-based service protection API limits that are described in this topic will be available to enable in environments with version 10.0.28. In version 10.0.29, with Dynamics 365 2022 release wave 2, the API limits will be enabled by default in all environments, but may optionally be disabled. In version 10.0.32, with Dynamics 365 2023 release wave 1, the user-based API limits will be mandatory, and will no longer provide the option to disable the API limits.
+> Resource-based service protection API limits are enabled in Finance and Operations apps environments as of version 10.0.19. The user-based service protection API limits that are described in this article will be available to enable in environments with version 10.0.28. In version 10.0.29, with Dynamics 365 2022 release wave 2, the API limits will be enabled by default in all environments, but may optionally be disabled. In version 10.0.32, with Dynamics 365 2023 release wave 1, the user-based API limits will be mandatory, and will no longer provide the option to disable the API limits. For more information, see the [Preparing for Finance and Operations Service Protection API Limits](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/preparing-for-finance-and-operations-service-protection-api-limits-may-17-18-2022) TechTalk.
 
 To ensure consistent availability and performance of the Finance and Operations apps service, Microsoft applies limits to the way that the service APIs are used. These limits are designed to protect the service when client applications make extraordinary demands on server resources. Sudden bursts of high incoming API traffic or concurrent long-running requests against the server can exhaust server resources, and can cause outages or have other impacts on the availability and performance of the service.
 

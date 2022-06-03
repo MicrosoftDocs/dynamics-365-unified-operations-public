@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create an online functionality profile
-description: This topic describes how to create an online functionality profile in Microsoft Dynamics 365 Commerce.
+description: This article describes how to create an online functionality profile in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 01/27/2020
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.8
 
 [!include [banner](includes/banner.md)]
 
-This topic presents an overview of setting up an online functionality profile for Microsoft Dynamics 365 Commerce.
+This article presents an overview of setting up an online functionality profile for Microsoft Dynamics 365 Commerce.
 
 The online functionality profile provides various settings used for online channels. Each online channel must specify an online functionality profile.
 

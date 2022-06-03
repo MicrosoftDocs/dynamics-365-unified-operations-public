@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Human Resources 10.0.28 (August 2022)
-description: This topic describes features that are either new or changed in the Microsoft Dynamics 365 Human Resources version 10.0.28 preview release.
+description: This article describes features that are either new or changed in the Microsoft Dynamics 365 Human Resources version 10.0.28 preview release.
 author: twheeloc
 ms.date: 05/19/2022
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.27
 
 [!include [banner](../../includes/preview-banner.md)]
 
-This topic lists features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.28. This version has a build number of 10.0.1264 and is available on the following schedule:
+This article lists features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.28. This version has a build number of 10.0.1264 and is available on the following schedule:
 
 - **Preview of release:** May 2022
 - **General availability of release (self-update):** July 2022
@@ -39,7 +39,7 @@ This topic lists features that are new or changed for Microsoft Dynamics 365 Hum
 
 ## Features included in this release
 
-No new features are currently included in this release. However, we might update this topic to include features that made it into the build after this topic was initially published.
+No new features are currently included in this release. However, we might update this article to include features that made it into the build after this article was initially published.
 
 ## Feature enhancements included in this release
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Maintenance forecasts
-description: This topic explains maintenance forecasts in Asset Management.
+description: This article explains maintenance forecasts in Asset Management.
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article

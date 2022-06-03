@@ -2,7 +2,7 @@
 # required metadata
 
 title: Pick this up option doesn't appear on cart or product details pages
-description: This topic provides troubleshooting guidance that can help when the option for in-store pickup doesn't appear on the cart page or product details pages.
+description: This article provides troubleshooting guidance that can help when the option for in-store pickup doesn't appear on the cart page or product details pages.
 author: Reza-Assadi
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../../includes/banner.md)]
 
-This topic provides troubleshooting guidance that can help when the option for in-store pickup doesn't appear on the cart page or product details pages.
+This article provides troubleshooting guidance that can help when the option for in-store pickup doesn't appear on the cart page or product details pages.
 
 ## Description
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Auto-release shipment for cross-docking 
-description: This topic describes a cross-docking strategy that lets you automatically release a demand order to the warehouse when the production order that supplies the demand quantity is reported as finished, so that the quantity is moved directly from the production output location to the outbound location.
+description: This article describes a cross-docking strategy that lets you automatically release a demand order to the warehouse when the production order that supplies the demand quantity is reported as finished, so that the quantity is moved directly from the production output location to the outbound location.
 author: Mirzaab
 ms.date: 10/15/2019
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.6
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes a cross-docking strategy that lets you automatically release a demand order to the warehouse when the production order that supplies the demand quantity is reported as finished. In this way, the quantity that is required for fulfillment of the demand order is moved directly from the production output location to the outbound location.
+This article describes a cross-docking strategy that lets you automatically release a demand order to the warehouse when the production order that supplies the demand quantity is reported as finished. In this way, the quantity that is required for fulfillment of the demand order is moved directly from the production output location to the outbound location.
 
 Cross-docking is a warehouse handling flow where the quantity that is required to fulfill an outbound order is directed to the order's outbound dock or staging area from the location where the inbound order was received. (The inbound order can be a purchase order, a transfer order, or a production order.) Whereas the Advanced cross-docking feature supports all supply and demand orders, and it requires that the outbound demand be released before the cross-dock opportunity is identified, the Auto-release shipment feature has these characteristics:
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Other tax registers
-description: This topic provides information about other tax registers.
+description: This article provides information about other tax registers.
 ms.date: 08/16/2021
 ms.topic: article
 ms.prod: 
@@ -31,7 +31,7 @@ ms.search.validFrom:
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the following tax accounting registers. Although the system automatically fills in these registers, you can manually correct the results of the automatic calculation.
+This article provides information about the following tax accounting registers. Although the system automatically fills in these registers, you can manually correct the results of the automatic calculation.
 
 - Incomes - current period
 - Outlay - realized tax
@@ -78,7 +78,7 @@ The tax register lines show the following information:
 
 ### Outlay - realized tax register
 
-Create and set up the tax registers as described in the topic, [Create tax registers and the tax register journal](rus-profit-tax-registers.md#create-a-tax-register).
+Create and set up the tax registers as described in the article, [Create tax registers and the tax register journal](rus-profit-tax-registers.md#create-a-tax-register).
 
 The **Outlay - realized tax** register is used to summarize information about taxes and duties that are included in other expenses.
 

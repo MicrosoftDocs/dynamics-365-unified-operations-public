@@ -2,7 +2,7 @@
 # required metadata
 
 title: Channel setup prerequisites
-description: This topic presents an overview of channels setup prerequisites in Microsoft Dynamics 365 Commerce.
+description: This article presents an overview of channels setup prerequisites in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 02/21/2020
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.8
 
 [!include [banner](includes/banner.md)]
 
-This topic presents an overview of channel setup prerequisites in Microsoft Dynamics 365 Commerce.
+This article presents an overview of channel setup prerequisites in Microsoft Dynamics 365 Commerce.
 
 Before a Dynamics 365 Commerce channel can be created, several prerequisite tasks must be completed. The following lists of prerequisite tasks are organized by channel type.
 

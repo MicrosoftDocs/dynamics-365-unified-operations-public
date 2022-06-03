@@ -2,7 +2,7 @@
 # required metadata
 
 title: VAT return with direct submission to Altinn
-description: This topic provides information about the VAT return with direct submission to Altinn feature that can be used to submit value-added tax (VAT) returns in Norway.
+description: This article provides information about the VAT return with direct submission to Altinn feature that can be used to submit value-added tax (VAT) returns in Norway.
 author: liza-golub
 ms.author: elgolu
 ms.date: 03/21/2022
@@ -28,7 +28,7 @@ ms.search.validFrom: 2022-11-15
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the **VAT return with direct submission to Altinn** feature in Microsoft Dynamics 365 Finance. This feature can be used to submit value-added tax (VAT) returns in Norway.
+This article provides information about the **VAT return with direct submission to Altinn** feature in Microsoft Dynamics 365 Finance. This feature can be used to submit value-added tax (VAT) returns in Norway.
 
 In Skatteinfo no. 11/2020, the Norwegian Tax Administration introduced a requirement for VAT return reporting that includes direct digital submission from accounting systems to the Altinn tax portal. This digital submission process replaces the manual process for filing VAT returns for periods as of January 1, 2022. For more information about VAT returns with direct submission to Altinn, see [Mva-meldingen](https://skatteetaten.github.io/mva-meldingen/english/).
 

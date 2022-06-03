@@ -1,10 +1,10 @@
 ---
 title: Generate variants for engineering products
-description: This topic describes how to generate variants for engineering products
+description: This article describes how to generate variants for engineering products
 author: t-benebo
 ms.date: 06/08/2021
 ms.topic: article
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
@@ -17,11 +17,11 @@ ms.dyn365.ops.version: 10.0.20
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to generate variants for engineering products.
+This article describes how to generate variants for engineering products.
 
 ## Turn variant generation for engineering products on or off
 
-The functionality described in this topic requires that both the *Engineering Change Management* and *Variant generation for engineering products* features be turned on for your system. For details about how to turn these features on or off, see [Engineering change management overview](product-engineering-overview.md).
+The functionality described in this article requires that both the *Engineering Change Management* and *Variant generation for engineering products* features be turned on for your system. For details about how to turn these features on or off, see [Engineering change management overview](product-engineering-overview.md).
 
 ## Generate one or more new variants of an engineering product
 

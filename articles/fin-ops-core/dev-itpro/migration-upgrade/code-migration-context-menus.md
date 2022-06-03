@@ -2,7 +2,7 @@
 # required metadata
 
 title: Code migration - Context menu code
-description: This topic provides details about the programming model that is required for context menus (shortcut menus).
+description: This article provides details about the programming model that is required for context menus (shortcut menus).
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-A programming model is required for context menus (shortcut menus). This topic outlines the process for migrating context menu code from Microsoft Dynamics AX 2012 to Finance and Operations. It also includes user experience (UX) guidelines for context menus.
+A programming model is required for context menus (shortcut menus). This article outlines the process for migrating context menu code from Microsoft Dynamics AX 2012 to Finance and Operations. It also includes user experience (UX) guidelines for context menus.
 
 In Dynamics AX 2012 and earlier versions, developers modified right-click context menus (shortcut menus) by using the **PopupMenu** class. This class relied on Microsoft Windows application programming interfaces (APIs) that aren't available on the web. In Finance and Operations, the **ContextMenu** APIs have been created as replacements to provide similar functionality. Previously, the **context()** and **showContextMenu()** method overrides were the entry points for modifying context menus for specific controls. These overrides typically contained code to add options to the context menu, and also to process the user’s selection. The code for processing the user's selection used a wait model. Because these overrides are being removed and the wait model is being eliminated, developers must now create two overrides: **getContextMenuOptions()** to add options to the context menu and **selectedMenuOption()** to process the user’s selection.
 

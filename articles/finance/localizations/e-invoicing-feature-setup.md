@@ -2,7 +2,7 @@
 # required metadata
 
 title: Work with feature setups
-description: This topic explains how to set up Electronic invoicing features.
+description: This article explains how to set up Electronic invoicing features.
 author: dkalyuzh
 ms.date: 12/15/2021
 ms.topic: article

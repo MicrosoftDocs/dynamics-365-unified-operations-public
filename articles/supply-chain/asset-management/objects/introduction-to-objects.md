@@ -2,7 +2,7 @@
 # required metadata
 
 title: Introduction to assets
-description: This topic provides an overview of assets in Asset Management.
+description: This article provides an overview of assets in Asset Management.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -33,9 +33,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
  
 
-This topic provides an overview of assets in Asset Management. An *asset* is any type of equipment, such as a machine or a machine part, that requires maintenance, service, or repair.
+This article provides an overview of assets in Asset Management. An *asset* is any type of equipment, such as a machine or a machine part, that requires maintenance, service, or repair.
 
-An asset is automatically updated with related information. For example, this related information might be about new or updated work orders. You can create assets by using either the **All assets** menu item or the **Pending assets** menu item. This topic explains how to create assets by using the **All assets** menu item. For information about how to create assets by using the **Pending assets** menu item, see [Create assets based on purchase orders](../objects/create-objects-based-on-purchase-orders.md).
+An asset is automatically updated with related information. For example, this related information might be about new or updated work orders. You can create assets by using either the **All assets** menu item or the **Pending assets** menu item. This article explains how to create assets by using the **All assets** menu item. For information about how to create assets by using the **Pending assets** menu item, see [Create assets based on purchase orders](../objects/create-objects-based-on-purchase-orders.md).
 
 ## All assets
 

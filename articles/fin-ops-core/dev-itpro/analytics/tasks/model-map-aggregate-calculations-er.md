@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Use model mapping configurations for aggregate calculations at the database level
-description: This topic describes how to design a new Electronic reporting model mapping configuration and use built-in ER functions for efficient aggregate calculations. 
+description: This article describes how to design a new Electronic reporting model mapping configuration and use built-in ER functions for efficient aggregate calculations. 
 author: NickSelin
 ms.date: 12/12/2017
 ms.topic: business-process 

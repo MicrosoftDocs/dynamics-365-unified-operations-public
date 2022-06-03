@@ -2,7 +2,7 @@
 # required metadata
 
 title: Purchase complementary fiscal documents for Brazil
-description: This topic describes the concept of a purchase complementary invoice for the Brazilian localization.
+description: This article describes the concept of a purchase complementary invoice for the Brazilian localization.
 author: sndray
 ms.date: 08/08/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the concept of a purchase complementary invoice for the Brazilian localization.
+This article describes the concept of a purchase complementary invoice for the Brazilian localization.
 
 ## Overview
 

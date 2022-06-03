@@ -2,7 +2,7 @@
 # required metadata
 
 title: Sales complementary fiscal documents for Brazil
-description: This topic describes sales complementary invoice for the Brazilian localization.
+description: This article describes sales complementary invoice for the Brazilian localization.
 author: sndray
 ms.date: 08/08/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes sales complementary invoice for the Brazilian localization.
+This article describes sales complementary invoice for the Brazilian localization.
 
 ## Overview
 

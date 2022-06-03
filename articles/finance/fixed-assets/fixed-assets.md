@@ -2,7 +2,7 @@
 # required metadata
 
 title: Fixed assets home page
-description: This topic provides access to resources that can help you use Fixed assets for Microsoft Dynamics 365 Finance. 
+description: This article provides access to resources that can help you use Fixed assets for Microsoft Dynamics 365 Finance. 
 author: moaamer
 ms.date: 08/31/2017
 ms.topic: index-page
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides access to resources that can help you use Fixed assets for Microsoft Dynamics 365 Finance. Fixed assets are items of value are owned by an individual or organization. The items include buildings, vehicles, land, and equipment. 
+This article provides access to resources that can help you use Fixed assets for Microsoft Dynamics 365 Finance. Fixed assets are items of value are owned by an individual or organization. The items include buildings, vehicles, land, and equipment. 
 
 You can set up and enter acquisition information for fixed assets, and then manage the assets by depreciating them and setting a 
 capitalization threshold to determine depreciation. You can calculate adjustments to the fixed assets, and also dispose of them. 

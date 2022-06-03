@@ -2,7 +2,7 @@
 # required metadata 
  
 title: DE-00003 Electronic transmission of VAT declaration (ELSTER)
-description: This topic explains how to transmit a VAT declaration. 
+description: This article explains how to transmit a VAT declaration. 
 author: EvgenyPopovMBS
 ms.date: 08/29/2018
 ms.topic: business-process 

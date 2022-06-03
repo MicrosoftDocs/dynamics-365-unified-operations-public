@@ -1,6 +1,6 @@
 ---
 title: Insert data
-description: This topic describes how to insert data into tables by using X++.
+description: This article describes how to insert data into tables by using X++.
 author: tonyafehr
 ms.date: 06/16/2020
 audience: Developer

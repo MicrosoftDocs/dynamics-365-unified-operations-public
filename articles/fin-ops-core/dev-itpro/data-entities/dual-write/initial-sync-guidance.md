@@ -1,6 +1,6 @@
 ---
 title: Considerations for initial synchronization
-description: This topic provides information about constraints, known issues, and guidance for the initial synchronization of dual-write.
+description: This article provides information about constraints, known issues, and guidance for the initial synchronization of dual-write.
 author: RamaKrishnamoorthy
 ms.date: 10/12/2020
 ms.topic: article

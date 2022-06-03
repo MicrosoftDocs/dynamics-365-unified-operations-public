@@ -2,7 +2,7 @@
 # required metadata
 
 title: Incorrect tax amount after calculation
-description: This topic provides troubleshooting information that can help when the calculated tax amount is incorrect.
+description: This article provides troubleshooting information that can help when the calculated tax amount is incorrect.
 author: peter-xu
 ms.date: 04/28/2021
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.1
 
 [!include [banner](../includes/banner.md)]
  
-If the calculated tax on a business document is incorrect, follow the steps in this topic to troubleshoot the issue. The procedures use a purchase order as an example.
+If the calculated tax on a business document is incorrect, follow the steps in this article to troubleshoot the issue. The procedures use a purchase order as an example.
 
 ## Verify that the tax rate is correct
 

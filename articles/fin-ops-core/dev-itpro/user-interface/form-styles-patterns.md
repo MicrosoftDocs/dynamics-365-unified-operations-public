@@ -2,7 +2,7 @@
 # required metadata
 
 title: Form styles and patterns
-description: This topic describes the concept of form patterns and discusses the process for applying and removing patterns.
+description: This article describes the concept of form patterns and discusses the process for applying and removing patterns.
 author: jasongre
 ms.date: 11/09/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the concept of form patterns and discusses the process for applying and removing patterns. A list of frequent questions are also answered in this topic. 
+This article describes the concept of form patterns and discusses the process for applying and removing patterns. A list of frequent questions are also answered in this article. 
 
 ## Dynamics AX 2012: Form styles and templates
 
@@ -55,7 +55,7 @@ First, you must identify a target form and add it to your project. The **Form Pa
 
 ### Determine the pattern
 
-Decide which pattern to apply. The available patterns include those that are based on Dynamics AX 2012 form templates, and also patterns that are designed for Finance and Operations scenarios. If you require help selecting a pattern, see the [Selecting a Pattern](select-form-pattern.md) topic. For more detailed information about specific patterns, see the individual pattern guideline documents. For more information about applying a pattern, see [Select a form pattern](select-form-pattern.md).
+Decide which pattern to apply. The available patterns include those that are based on Dynamics AX 2012 form templates, and also patterns that are designed for Finance and Operations scenarios. If you require help selecting a pattern, see the [Selecting a Pattern](select-form-pattern.md) article. For more detailed information about specific patterns, see the individual pattern guideline documents. For more information about applying a pattern, see [Select a form pattern](select-form-pattern.md).
 
 ### Apply the pattern
 You can apply a pattern in three ways:

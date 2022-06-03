@@ -2,7 +2,7 @@
 # required metadata
 
 title: Customer attributes
-description: This topic provides information about customer attributes and explains how you can use configurations to add new fields to the customer master record.
+description: This article provides information about customer attributes and explains how you can use configurations to add new fields to the customer master record.
 author: mugunthanm 
 ms.date: 10/12/2017
 ms.topic: article

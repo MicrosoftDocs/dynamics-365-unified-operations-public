@@ -45,18 +45,18 @@ To see what's new or changed in each release of a Finance and Operations app, se
 
 ## Stand-alone applications
 
-To see what new or changed in the stand-alone Dynamics 365 Human Resources, see the following topic:
+To see what new or changed in the stand-alone Dynamics 365 Human Resources, see the following article:
 
 - **Human Resources:** [What's new or changed in Dynamics 365 Human Resources](../../../human-resources/hr-admin-whats-new.md)
 
 ## Platform updates
 
-To see what's new or changed in the Platform updates for Finance and Operations apps, see the following topic:
+To see what's new or changed in the Platform updates for Finance and Operations apps, see the following article:
 
 - [What's new or changed in Platform updates](../../dev-itpro/get-started/whats-new-home-page.md)
 
 ## Lifecycle Services releases
-To see what's new or changed in Lifecycle Services, see the following topic:
+To see what's new or changed in Lifecycle Services, see the following article:
 
 - [What's new or changed in Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/whats-new-lcs.md)
 

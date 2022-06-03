@@ -1,6 +1,6 @@
 ---
 title: Write extensible code
-description: This topic provides information about how to write extensible code.
+description: This article provides information about how to write extensible code.
 author: MichaelFruergaardPontoppidan
 ms.date: 09/18/2018
 ms.topic: article
@@ -41,7 +41,7 @@ When you write extensible code, you invite other people to interact with your so
 + **Trust that extenders will be well-behaved** – All responsible parties share the same goal: to create great, lasting solutions for the customer. When you create extension points, you give up control and share the responsibility with other people. Assume that extenders will be cautious and use your extension points as they were intended.
 
 ## Proven principles
-All the good engineering practices that you're already using still apply. Everything that you've learned still applies. You don't have to learn new principles or unlearn old practices. This topic is just highlighting three principles of software craftmanship that have been sought and taught for decades. These principles not only make your code easier to read, maintain, test, review, and refactor, but also make your code easier to extend. Apply and advocate these principles.
+All the good engineering practices that you're already using still apply. Everything that you've learned still applies. You don't have to learn new principles or unlearn old practices. This article is just highlighting three principles of software craftmanship that have been sought and taught for decades. These principles not only make your code easier to read, maintain, test, review, and refactor, but also make your code easier to extend. Apply and advocate these principles.
 
 ### Extend code by using the SOLID principles
 SOLID is an acronym for five principles that you can use to make your code easier to extend:

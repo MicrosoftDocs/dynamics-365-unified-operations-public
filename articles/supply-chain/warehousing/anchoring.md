@@ -1,6 +1,6 @@
 ---
 title: Anchoring
-description: This topic explains how to enable and use anchoring.
+description: This article explains how to enable and use anchoring.
 author: GalynaFedorova
 ms.date: 07/29/2021
 ms.topic: article
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.21
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides details about the anchoring process. It describes the configuration that is required and the logic that is run when a warehouse worker changes either the staging location or the loading location.
+This article provides details about the anchoring process. It describes the configuration that is required and the logic that is run when a warehouse worker changes either the staging location or the loading location.
 
 The anchoring feature lets you override the staging or loading location. All open puts will then be directed to the new staging or loading location that you specify.
 
@@ -31,11 +31,11 @@ You configure anchoring for mobile device menu items by using the **Anchor** opt
 > [!IMPORTANT]
 > The location for subsequent open puts will be changed only on the work lines that are generated from the same work template line. In other words, the system will anchor the put lines that originate from the same work template line.
 
-This topic provides a scenario that shows how anchoring works. During the scenario, you will create a set of sales orders and release them to the warehouse. You will then override the suggested staging location and verify that all the remaining put-away work is directed to the new location.
+This article provides a scenario that shows how anchoring works. During the scenario, you will create a set of sales orders and release them to the warehouse. You will then override the suggested staging location and verify that all the remaining put-away work is directed to the new location.
 
 ## Scenario prerequisite: Make demo data available
 
-The scenario in this topic references values and records that are included in the standard demo data that is provided for Microsoft Dynamics 365 Supply Chain Management. If you want to use the values that are provided here as you do the exercises, be sure to work in an environment where the demo data is installed, and set the legal entity to *USMF* before you begin.
+The scenario in this article references values and records that are included in the standard demo data that is provided for Microsoft Dynamics 365 Supply Chain Management. If you want to use the values that are provided here as you do the exercises, be sure to work in an environment where the demo data is installed, and set the legal entity to *USMF* before you begin.
 
 ## Scenario setup
 

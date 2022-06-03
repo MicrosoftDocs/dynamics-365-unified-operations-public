@@ -2,7 +2,7 @@
 # required metadata
 
 title: Tax invoice for goods delivered for free
-description: This topic provides information about tax invoices for goods that were delivered for free.
+description: This article provides information about tax invoices for goods that were delivered for free.
 author: ilkond
 ms.date: 09/15/2021
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.8
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to manage goods that were delivered free of charge. The functionality that is available through the **Tax invoice for goods delivered for free** feature lets you generate invoices that include the words "Free invoice." The total of these invoices equals the tax amount only.
+This article describes how to manage goods that were delivered free of charge. The functionality that is available through the **Tax invoice for goods delivered for free** feature lets you generate invoices that include the words "Free invoice." The total of these invoices equals the tax amount only.
 
 To generate these invoices, set up delivery reasons that can be used in the sales order.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Sales tax reports for Hungary
-description: This topic provides information about the Sales tax declaration information and Itemized VAT statement reports
+description: This article provides information about the Sales tax declaration information and Itemized VAT statement reports
 author: anasyash
 ms.date: 11/19/2020
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the **Sales tax declaration information** and **Itemized VAT statement** reports. You can generate these Microsoft Excel reports and use them to create the value-added tax (VAT) returns that must be submitted to the tax authorities.
+This article provides information about the **Sales tax declaration information** and **Itemized VAT statement** reports. You can generate these Microsoft Excel reports and use them to create the value-added tax (VAT) returns that must be submitted to the tax authorities.
 
 - **Sales tax declaration information** – This report includes a list of invoices that are grouped by sales tax direction (sales tax receivable, sales tax payable, or use tax) and by sales tax code. For each sales tax direction and sales tax code, the report also includes the total sales tax amount and total gross invoice amount.
 - **Itemized VAT statement** – This report includes the total number of invoices, total number of counteragents (partners), total VAT base, and total VAT amount for each item in the following table.

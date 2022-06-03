@@ -2,7 +2,7 @@
 # required metadata
 
 title: Ledger settlements
-description: This topic explains how to use the Ledger settlements page to settle ledger transactions and reverse settlements.
+description: This article explains how to use the Ledger settlements page to settle ledger transactions and reverse settlements.
 author: kweekley
 ms.date: 01/31/2022
 ms.topic: article

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configuration data templates
-description: This topic describes configuration data templates and explains how to create them.
+description: This article describes configuration data templates and explains how to create them.
 author: rcarlson
 ms.date: 08/09/2019
 ms.topic: article

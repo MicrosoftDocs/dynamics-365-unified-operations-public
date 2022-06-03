@@ -2,7 +2,7 @@
 # required metadata
 
 title: Upgrade from AX 2012 - Cutover testing (Mock cutover)
-description: This topic explains how to test the cutover process between turning off a Microsoft Dynamics AX 2012 environment and turning on Finance and Operations. 
+description: This article explains how to test the cutover process between turning off a Microsoft Dynamics AX 2012 environment and turning on Finance and Operations. 
 author: jorisdg
 ms.date: 08/27/2021
 ms.topic: article
@@ -52,7 +52,7 @@ The mock cutover process is very similar to data upgrade validation in a sandbox
     - Allow users back in. Notify your user base that the upgrade is completed and that they can use the system again.
 
 > [!NOTE]
-> In this topic, we use the term *sandbox* to refer to a Standard or Premier Acceptance Testing (Tier 2 or 3) or higher environment connected to a SQL Azure database.
+> In this article, we use the term *sandbox* to refer to a Standard or Premier Acceptance Testing (Tier 2 or 3) or higher environment connected to a SQL Azure database.
 
 ## Technical workstream
 

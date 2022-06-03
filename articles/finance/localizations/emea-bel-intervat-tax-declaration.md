@@ -2,9 +2,9 @@
 # required metadata
 
 title: INTERVAT tax declaration
-description: This topic provides country/region-specific information about how to set up and create the INTERVAT tax declaration for legal entities in Belgium only.
+description: This article provides country/region-specific information about how to set up and create the INTERVAT tax declaration for legal entities in Belgium only.
 author: anasyash
-ms.date: 05/02/2022
+ms.date: 06/02/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,10 +29,12 @@ ms.search.validFrom: 2016-05-31
 # INTERVAT tax declaration
 
 [!include [banner](../includes/banner.md)]
+> [!NOTE]
+> This feature has been replaced with the VAT declaration functionality. For more information, see [VAT declaration (Belgium)](emea-bel-vat-declaration-belgium.md).
 
 ## Overview
 
-This topic provides country/region-specific information about how to set up and create the INTERVAT tax declaration for legal entities in Belgium.
+This article provides country/region-specific information about how to set up and create the INTERVAT tax declaration for legal entities in Belgium.
 
 You can create the INTERVAT tax declaration as an XML file. You can also preview the amounts of the value-added tax (VAT) declaration in a printable format.
 
@@ -95,7 +97,7 @@ The following prerequisites must be set up before you begin to work with the INT
 
 If the **Sales tax correction** check box is selected for a sales tax reporting code, that code is available for selection on the **Additional sales tax report boxes** page.
 
-Examples of sales tax reporting code are provided in the [Set up sales tax reporting codes](#set-up-sales-tax-reporting-codes) section later in this topic.
+Examples of sales tax reporting code are provided in the [Set up sales tax reporting codes](#set-up-sales-tax-reporting-codes) section later in this article.
 
 ### Sales tax codes
 
@@ -647,7 +649,7 @@ Follow these steps to enter manual correction amounts.
 > [!NOTE]
 > Composed reporting codes that are used for credit notes. such as code **8185**, aren't available for selection. Nor are codes **71**, **72**, and **91**. Codes **71** and **72** are calculated automatically when Belgian sales tax reporting is run. Code **91** is entered in another way (see description of **Disbursement** field above).
 >
-> If a tax period is updated, a voucher number and a date will be shown. (For more information, see the description of the **Update** check box in the [Generate an INTERVAT tax declaration](#generate-an-intervat-tax-declaration) section later in this topic.) The period that has a voucher number and a date is a closed VAT period for Belgium. Therefore, all values on the **General** tab of the **Tax corrections** page are read-only. When new transactions that have taxes are entered for the closed VAT period, the taxes will be forwarded to the next available open tax period.
+> If a tax period is updated, a voucher number and a date will be shown. (For more information, see the description of the **Update** check box in the [Generate an INTERVAT tax declaration](#generate-an-intervat-tax-declaration) section later in this article.) The period that has a voucher number and a date is a closed VAT period for Belgium. Therefore, all values on the **General** tab of the **Tax corrections** page are read-only. When new transactions that have taxes are entered for the closed VAT period, the taxes will be forwarded to the next available open tax period.
 
 
 ## Generate an INTERVAT tax declaration
@@ -678,12 +680,12 @@ You can also close the tax period by generating a sales tax payment (**Tax \> De
 | **Field**                        | **Description**                                                                                                                                                                                                                                                                           |
 |----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Company name                     | The company name.                                                                                                                                                                                                                                                                         |
-| Sales tax number                 | The tax registration number that is transferred from the setting that you defined in the [Prerequisites](#prerequisites) section earlier in this topic.                                                                                                                                   |
+| Sales tax number                 | The tax registration number that is transferred from the setting that you defined in the [Prerequisites](#prerequisites) section earlier in this article.                                                                                                                                   |
 | Enterprise number                | The enterprise number that is transferred from the setting that you defined in the [Prerequisites](#prerequisites) section.                                                                                                                                                               |
 | Telephone, Email                 | Contact information that is transferred from the setting that you defined in the [Prerequisites](#prerequisites) section.                                                                                                                                                                 |
 | Request for reimbursement        | Select this check box to request a reimbursement of tax.                                                                                                                                                                                                                                  |
 | Request for payment forms        | Select this check box to request payment pages for the INTERVAT tax declarations.                                                                                                                                                                                                         |
-| Nil annual listing               | A selected check box indicates that this declaration is an empty declaration. The value is transferred from the **Additional sales tax report boxes** page that is described in the [Additional sales tax report boxes](#additional-sales-tax-report-boxes) section earlier in this topic |
+| Nil annual listing               | A selected check box indicates that this declaration is an empty declaration. The value is transferred from the **Additional sales tax report boxes** page that is described in the [Additional sales tax report boxes](#additional-sales-tax-report-boxes) section earlier in this article |
 | Replaced VAT declaration         | The identification number of the declaration, to replace what you defined in the **INTERVAT: Belgian sales tax reporting** dialog box that is described earlier in this section.                                                                                                          |
 | **Pro-rata percentages** section | Review the amounts in the **Pro-rata percentage**, **B1**, **B2**, **B3**, **B4**, and **B5** fields that you defined on the **Additional sales tax report boxes** page that is described in the [Additional sales tax report boxes](#additional-sales-tax-report-boxes) section.         |
 

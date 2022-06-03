@@ -1,6 +1,6 @@
 ---
 title: Container activities entity
-description: This topic provides information about container activities, which are used to track the progress of shipping containers. 
+description: This article provides information about container activities, which are used to track the progress of shipping containers. 
 author: yufeihuang
 ms.date: 05/27/2022
 ms.topic: article

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Deploy payment connectors
-description: This topic describes how to deploy a payment connector package to the appropriate components.
+description: This article describes how to deploy a payment connector package to the appropriate components.
 author: aamirallaqaband
 ms.date: 05/07/2018
 ms.topic: article
@@ -33,11 +33,11 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ## Overview
 
-This topic guides IT professionals or value-added resellers (VARs) through the process of deploying a payment connector to the appropriate components. We assume that the payment connector has been implemented and tested by the payment provider or the payment independent software vendor (ISV), and that it's ready for validation and subsequent production deployment in a customer environment.
+This article guides IT professionals or value-added resellers (VARs) through the process of deploying a payment connector to the appropriate components. We assume that the payment connector has been implemented and tested by the payment provider or the payment independent software vendor (ISV), and that it's ready for validation and subsequent production deployment in a customer environment.
 
-This topic doesn't include information about how to package a payment connector by using the Retail software development kit (SDK). For information about how to download the SDK, see [Retail software development kit (SDK) architecture](retail-sdk/retail-sdk-overview.md). For guidelines about how to package a payment connector, see the Retail SDK packaging document in the downloaded SDK.
+This article doesn't include information about how to package a payment connector by using the Retail software development kit (SDK). For information about how to download the SDK, see [Retail software development kit (SDK) architecture](retail-sdk/retail-sdk-overview.md). For guidelines about how to package a payment connector, see the Retail SDK packaging document in the downloaded SDK.
 
-This topic also doesn't include information about how to deploy the payment web application, payment front-end processor, or payment back-end processor, because those applications are managed by payment providers or payment ISVs. If you're using Microsoft Dynamics AX 7.0 (February 2016), you must apply KB 3183058 before you create the Commerce deployable package.
+This article also doesn't include information about how to deploy the payment web application, payment front-end processor, or payment back-end processor, because those applications are managed by payment providers or payment ISVs. If you're using Microsoft Dynamics AX 7.0 (February 2016), you must apply KB 3183058 before you create the Commerce deployable package.
 
 ## Payment packaging folder
 
@@ -110,7 +110,7 @@ The Payment Web Files folder usually contains a subfolder. Be sure to copy the w
 
 ## Use a payment connector with an e-commerce site
 
-E-commerce sites aren't deployed in LCS-managed environments. You should work with your partner to decide how to host an e-commerce site. If the payment connector requires payment web files, you must deploy those web files to your e-commerce site. If your payment connector doesn't require payment web files, no additional steps are required. For information about how to deploy payment web files to an e-commerce site, see the [Put the payment connector assemblies and files in the correct locations](deploy-payment-connector.md#put-the-payment-connector-assemblies-and-files-in-the-correct-locations) section earlier in this topic.
+E-commerce sites aren't deployed in LCS-managed environments. You should work with your partner to decide how to host an e-commerce site. If the payment connector requires payment web files, you must deploy those web files to your e-commerce site. If your payment connector doesn't require payment web files, no additional steps are required. For information about how to deploy payment web files to an e-commerce site, see the [Put the payment connector assemblies and files in the correct locations](deploy-payment-connector.md#put-the-payment-connector-assemblies-and-files-in-the-correct-locations) section earlier in this article.
 
 ## Additional resources
 

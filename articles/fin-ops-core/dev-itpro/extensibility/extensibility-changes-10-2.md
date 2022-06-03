@@ -1,6 +1,6 @@
 ---
 title: Extensibility changes in Dynamics 365 for Finance and Operations version 10.0.2
-description: This topic lists the extensibility features that were released in Microsoft Dynamics 365 for Finance and Operations version 10.0.2.
+description: This article lists the extensibility features that were released in Microsoft Dynamics 365 for Finance and Operations version 10.0.2.
 author: FrankDahl
 ms.date: 05/10/2019
 ms.topic: article
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: App 10.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists the extensibility features that were implemented in Microsoft Dynamics 365 for Finance and Operations version 10.0.2. For more information about the schedule of changes that support extensibility, see [Application extensibility plans](extensibility-roadmap.md).
+This article lists the extensibility features that were implemented in Microsoft Dynamics 365 for Finance and Operations version 10.0.2. For more information about the schedule of changes that support extensibility, see [Application extensibility plans](extensibility-roadmap.md).
 
 ## Enumerations made extensible
 

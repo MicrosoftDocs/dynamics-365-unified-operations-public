@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Human Resources
 # What's new or changed in Human Resources
 
 > [!IMPORTANT]
-> The functionality noted in this topic is currently available for customers on the stand alone Dynamics 365 Human Resources. Some or all of the functionality will be available as part of a future release on the Finance infrastructure after Finance release 10.0.25.  
+> The functionality noted in this article is currently available for customers on the stand alone Dynamics 365 Human Resources. Some or all of the functionality will be available as part of a future release on the Finance infrastructure after Finance release 10.0.25.  
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

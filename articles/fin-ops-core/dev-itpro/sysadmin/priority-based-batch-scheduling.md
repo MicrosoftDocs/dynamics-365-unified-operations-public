@@ -2,7 +2,7 @@
 # required metadata
 
 title: Priority-based batch scheduling
-description: This topic provides information about the functionality for priority-based batch scheduling.
+description: This article provides information about the functionality for priority-based batch scheduling.
 author: matapg007
 ms.date: 05/31/2022
 ms.topic: article
@@ -40,7 +40,7 @@ In Platform update 31, you can turn on the **Batch priority-based scheduling** f
 
 A scheduling priority is defined for batch groups, but it can be overridden for specific batch jobs. The scheduling priority classifications are used to declare relative priorities, and to determine the processing order of jobs and business processes. The available values for the scheduling priority are **Low**, **Normal**, **High**, **Critical**, and **Reserved capacity**. 
 
-**Normal** is the default value and is applied to all existing batch groups when the feature is turned on. **Reserved capacity** represents the highest priority. In Platform update 32 and later versions, you can use it to dedicate reserved capacity for jobs. For more information, see the [Set the batch reserved capacity level](priority-based-batch-scheduling.md#set-the-batch-reserved-capacity-level) section later in this topic.
+**Normal** is the default value and is applied to all existing batch groups when the feature is turned on. **Reserved capacity** represents the highest priority. In Platform update 32 and later versions, you can use it to dedicate reserved capacity for jobs. For more information, see the [Set the batch reserved capacity level](priority-based-batch-scheduling.md#set-the-batch-reserved-capacity-level) section later in this article.
 
 For example, there are 100 batch tasks for processing. Forty tasks will be served from the reserved queue, 30 from the critical queue, 15 from the high queue, ten from the normal queue, and five from the low queue. It isn't the priority-based order of execution that will be selected for processing, but the weight of the batch tasks from each priority.
 
@@ -55,7 +55,7 @@ For example, there are 100 batch tasks for processing. Forty tasks will be serve
 > [!NOTE]
 > Because the schedule priority is set to **Normal** for all existing batch groups when the feature is turned on, it's important that you plan and update the scheduling priority for each batch group so that it represents the relative priorities according to business requirements for the related batch jobs and their related business processes.
 
-Platform update 32 includes upgrade support for existing batch jobs. For more information, see the [Automatic batch group migration for batch jobs](priority-based-batch-scheduling.md#automatic-batch-group-migration-for-batch-jobs) section later in this topic.
+Platform update 32 includes upgrade support for existing batch jobs. For more information, see the [Automatic batch group migration for batch jobs](priority-based-batch-scheduling.md#automatic-batch-group-migration-for-batch-jobs) section later in this article.
 
 Advantages of priority-based batch scheduling include:
 

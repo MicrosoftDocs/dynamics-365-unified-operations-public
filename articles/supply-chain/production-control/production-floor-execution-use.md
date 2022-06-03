@@ -2,7 +2,7 @@
 # required metadata
 
 title: How workers use the production floor execution interface
-description: This topic describes how to use the production floor execution interface from a worker's point of view.
+description: This article describes how to use the production floor execution interface from a worker's point of view.
 author: johanhoffmann
 ms.date: 01/24/2022
 ms.topic: article
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: johanho
@@ -38,7 +38,7 @@ After the device has been prepared, the sign-in page appears on it. This page sh
 
 ![Production floor execution interface sign-in page.](media/pfei-sign-in-page.png "Production floor execution interface sign-in page")
 
-The remaining sections of this topic describe how workers interact with the interface.
+The remaining sections of this article describe how workers interact with the interface.
 
 ## All jobs tab
 

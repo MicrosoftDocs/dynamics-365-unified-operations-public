@@ -2,7 +2,7 @@
 # required metadata
 
 title: Financial dimensions
-description: This topic describes the various types of financial dimensions and how they are set up.
+description: This article describes the various types of financial dimensions and how they are set up.
 author: aprilolson
 ms.date: 03/07/2022
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains the various types of financial dimensions and how they are set up.
+This article explains the various types of financial dimensions and how they are set up.
 
 Use the **Financial dimensions** page to create financial dimensions that you can use as account segments for charts of accounts. There are two types of financial dimensions: custom dimensions and entity-backed dimensions. Custom dimensions are shared across legal entities, and the values are entered and maintained by users. For entity-backed dimensions, the values are defined somewhere else in the system, such as in Customers or Stores entities. Some entity-backed dimensions are shared across legal entities, whereas other entity-backed dimensions are company-specific.
 

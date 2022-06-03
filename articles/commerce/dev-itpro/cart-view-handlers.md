@@ -2,7 +2,7 @@
 # required metadata
 
 title: POS Cart view events and handlers
-description: This topic explains how extensions can consume the point of sale (POS) view events and handlers for custom scenarios.
+description: This article explains how extensions can consume the point of sale (POS) view events and handlers for custom scenarios.
 author: mugunthanm
 ms.date: 02/13/2020
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.10
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how extensions can consume the point of sale (POS) view events and handlers for custom scenarios. For example, the Cart view in POS exposes multiple events and handlers so that your extensions can perform custom business flows, based on events. The extensions can subscribe to an event and receive a notification when that event occurs.
+This article explains how extensions can consume the point of sale (POS) view events and handlers for custom scenarios. For example, the Cart view in POS exposes multiple events and handlers so that your extensions can perform custom business flows, based on events. The extensions can subscribe to an event and receive a notification when that event occurs.
 
 ## Cart view event handlers
 

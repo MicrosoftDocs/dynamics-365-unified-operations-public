@@ -2,7 +2,7 @@
 # required metadata
 
 title: Customer information management for Italy
-description: This topic describes how to handle customer information in POS for Italy.
+description: This article describes how to handle customer information in POS for Italy.
 author: sepism
 ms.date: 09/21/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.7
 
 ## Introduction
 
-This topic describes how you can handle customer information, such as the customer's lottery code, in the Commerce point of sale (POS) for Italy.
+This article describes how you can handle customer information, such as the customer's lottery code, in the Commerce point of sale (POS) for Italy.
 
 You can specify the customer information, such as the fiscal code or lottery code, when you create or edit a customer master record in POS. You can also specify the lottery code for a sales transaction by copying it from the transaction customer or entering it manually. The lottery code can then be printed on both regular and fiscal receipts, and it can be used for the national lottery. Personal fiscal codes can also be used to search for a customer in POS.
 
@@ -99,7 +99,7 @@ On the **Commerce parameters** page, on the **POS search criteria** tab, add a n
 
 ### Configure channel components
 
-To make the functionality that is specific to Italy available, you must configure extensions for commerce channel components. For more information, see the [Deployment guidelines](#deployment-guidelines) section later in this topic.
+To make the functionality that is specific to Italy available, you must configure extensions for commerce channel components. For more information, see the [Deployment guidelines](#deployment-guidelines) section later in this article.
 
 ## Example scenarios
 

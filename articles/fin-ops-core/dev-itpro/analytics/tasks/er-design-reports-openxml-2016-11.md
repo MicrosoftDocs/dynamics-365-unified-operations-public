@@ -2,7 +2,7 @@
 # required metadata 
  
 title: ER Design a configuration for generating reports in OPENXML format (November 2016)
-description: This topic describes how to create a new Electronic reporting configuration that contains a template for generating electronic documents in OPENXML format. 
+description: This article describes how to create a new Electronic reporting configuration that contains a template for generating electronic documents in OPENXML format. 
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: business-process 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how a user in the System Administrator or Electronic Reporting Developer role can create a new Electronic reporting (ER) configuration that contains a template for generating electronic documents in OPENXML format. This configuration will be used for processing vendor payments.
+This article explains how a user in the System Administrator or Electronic Reporting Developer role can create a new Electronic reporting (ER) configuration that contains a template for generating electronic documents in OPENXML format. This configuration will be used for processing vendor payments.
 
 In this example, you will create a configuration for sample company, Litware, Inc. These steps can be performed in GBSI company.
 

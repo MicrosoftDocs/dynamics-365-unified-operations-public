@@ -2,7 +2,7 @@
 # required metadata
 
 title: VALUEIN ER function
-description: This topic provides information about how the VALUEIN Electronic reporting (ER) function is used.
+description: This article provides information about how the VALUEIN Electronic reporting (ER) function is used.
 author: NickSelin
 ms.date: 12/14/2021
 ms.prod: 

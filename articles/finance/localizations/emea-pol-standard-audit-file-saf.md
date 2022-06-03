@@ -2,7 +2,7 @@
 # required metadata
 
 title: Standard audit file (SAF) for Poland
-description: Users in legal entities in Poland can generate a Standard Audit File for Tax (SAF-T) in XML format. This topic provides information about the formats for Poland. 
+description: Users in legal entities in Poland can generate a Standard Audit File for Tax (SAF-T) in XML format. This article provides information about the formats for Poland. 
 author: LizaGolub
 ms.date: 05/19/2022
 ms.topic: article
@@ -31,7 +31,7 @@ ms.search.validFrom: 2016-11-30
 
 [!include [banner](../includes/banner.md)]
 
-Users in legal entities in Poland can generate a Standard Audit File for Tax (SAF-T) in XML format. This topic provides information about the formats for Poland. 
+Users in legal entities in Poland can generate a Standard Audit File for Tax (SAF-T) in XML format. This article provides information about the formats for Poland. 
 
 -  [SAF Accounting books - JPK_KR](#jpk-kr)
 -  [SAF Bank statements - JPK_WB](#jpk-wb)
@@ -715,7 +715,7 @@ To review or change the configuration for the SAF VAT sales and purchase registe
 - [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 - [Localization requirements - Create an ER configuration](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md)
 
-Initially, the configuration is an example of the VAT Invoices report (JPK_FA) based on the reporting codes that are described in table earlier in this topic. If you have to adapt the configuration to another set of reporting codes, use the configuration to derive the format. 
+Initially, the configuration is an example of the VAT Invoices report (JPK_FA) based on the reporting codes that are described in table earlier in this article. If you have to adapt the configuration to another set of reporting codes, use the configuration to derive the format. 
 
 1. Select the format in the configuration's tree and then, in the **Main menu**, select **Create configuration**. 
 2. Mark **Derive from name:...**, enter the name and description of the new format and then select **Create configuration**. The created format is a copy of the parent format. 

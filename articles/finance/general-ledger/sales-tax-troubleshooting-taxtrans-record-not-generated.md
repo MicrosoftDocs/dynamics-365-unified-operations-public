@@ -2,7 +2,7 @@
 # required metadata
 
 title: TaxTrans record isn't generated
-description: This topic provides troubleshooting information that can help when a TaxTrans record isn't generated.
+description: This article provides troubleshooting information that can help when a TaxTrans record isn't generated.
 author: qire
 ms.date: 04/13/2021
 ms.topic: article

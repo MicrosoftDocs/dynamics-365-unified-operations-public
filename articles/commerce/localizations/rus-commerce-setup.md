@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up the Dynamics 365 Commerce localization for Russia
-description: This topic explains how to set up the Microsoft Dynamics 365 Commerce localization for Russia.
+description: This article explains how to set up the Microsoft Dynamics 365 Commerce localization for Russia.
 author: akviklis
 ms.date: 09/21/2021
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version:
 
 [!include[banner](../includes/banner.md)]
 
-This topic explains how to set up the Microsoft Dynamics 365 Commerce localization for Russia.
+This article explains how to set up the Microsoft Dynamics 365 Commerce localization for Russia.
 
 The Dynamics 365 Commerce localization for Russia includes an extension of the point of sale (POS) components. This extension provides the option to work with simplified Russian address formats for retail customers.
 

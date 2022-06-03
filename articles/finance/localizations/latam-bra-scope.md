@@ -2,7 +2,7 @@
 # required metadata
 
 title: Scope of the Brazilian localization
-description: This topic describes the strategy and scope for tax, finance, and accounting laws and regulations in Brazil. 
+description: This article describes the strategy and scope for tax, finance, and accounting laws and regulations in Brazil. 
 author: sndray
 ms.date: 11/22/2021
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 8.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the strategy and scope for Brazilian tax, finance, and accounting laws and regulations that Microsoft has included in Microsoft Dynamics 365 Finance for Brazil. 
+This article describes the strategy and scope for Brazilian tax, finance, and accounting laws and regulations that Microsoft has included in Microsoft Dynamics 365 Finance for Brazil. 
 
 In general, Microsoft invests significant resources on extending the business process functionality of Dynamics 365 Finance by developing features and functionality to address specific tax, accounting, or financial regulatory requirements in countries or regions where Microsoft makes Microsoft Dynamics generally available.
 
@@ -57,17 +57,17 @@ Channel partners or customers are solely responsible for any configurations, cus
 
 In general, the Microsoft strategy for addressing the tax, financial, accounting, or statutory reporting requirements for Brazil consists of providing localizations for Microsoft Dynamics that do the following:
 
-- They implement the federal tax requirements that are detailed in the [Brazilian localization scope](#brazilian-localization-scope) section of this topic.
+- They implement the federal tax requirements that are detailed in the [Brazilian localization scope](#brazilian-localization-scope) section of this article.
 - They implement, for the following states, the state/region requirements that are detailed in the [Brazilian localization scope](#brazilian-localization-scope) section: São Paulo (SP), Rio de Janeiro (RJ), Paraná (PR), Santa Catarina (SC), and Rio Grande do Sul (RS).
-- They deliver specific new regulatory features through configurations or development of new functionality that implements the federal and state/region requirements that are detailed in the [Brazilian localization scope](#brazilian-localization-scope) section, in accordance with the business rules that are specified in this topic and the Microsoft Dynamics roadmap on the [Microsoft Dynamics Localization Portal](/dynamics/s-e/).
+- They deliver specific new regulatory features through configurations or development of new functionality that implements the federal and state/region requirements that are detailed in the [Brazilian localization scope](#brazilian-localization-scope) section, in accordance with the business rules that are specified in this article and the Microsoft Dynamics roadmap on the [Microsoft Dynamics Localization Portal](/dynamics/s-e/).
 - They deliver specific new regulatory features in the most recent service pack that is available, or in a new service pack, for supported versions of Microsoft Dynamics.
 - They apply National Standards and competitive features that Microsoft, at its sole discretion, determines to be necessary or appropriate, based on business needs in the region.
 - They don't focus on the requirements of specific businesses, segments, verticals, regions, or large enterprises, even when these requirements are required by laws, statutes, or regulations at the federal, state, or city level.
 - They don't include municipal requirements, except the municipal requirements that are detailed in the [Brazilian localization scope](#brazilian-localization-scope) section.
 
-There are specific laws and requirements that are out of scope for Microsoft Dynamics. For a list, see the [Out of scope](#out-of-scope) section of this topic.
+There are specific laws and requirements that are out of scope for Microsoft Dynamics. For a list, see the [Out of scope](#out-of-scope) section of this article.
 
-The Brazilian localization that Microsoft developed for Microsoft Dynamics is limited to the features and functionality that are described in this topic. Therefore, Microsoft Dynamics must be analyzed by prospective customers or a tax professional, such as an accounting and tax auditor, tax law firm, or tax consulting firms, who can assess whether the functionality is appropriate to meet the customer's business needs, or whether custom solutions are required.
+The Brazilian localization that Microsoft developed for Microsoft Dynamics is limited to the features and functionality that are described in this article. Therefore, Microsoft Dynamics must be analyzed by prospective customers or a tax professional, such as an accounting and tax auditor, tax law firm, or tax consulting firms, who can assess whether the functionality is appropriate to meet the customer's business needs, or whether custom solutions are required.
 
 ## Brazilian localization scope
 
@@ -75,11 +75,11 @@ The user interface (UI) and online Help for Microsoft Dynamics are translated in
 
 The localization scope for Microsoft Dynamics available in Brazil is limited to tax calculation, accounting transactions, issuing/receiving fiscal documents, and issuing fiscal receipts in the following four scenarios: procure to pay, quote to cash, commerce, and regulatory/statutory reporting.
 
-The features that Microsoft delivers and supports as part of the Brazilian localization for Microsoft Dynamics are listed in the [Brazilian localization features](#brazilian-localization-features) section of this topic. Details about each of the features can be found in Help in Microsoft Dynamics, and in white papers that are published on the [Microsoft Dynamics Localization Portal](/dynamics/s-e/).
+The features that Microsoft delivers and supports as part of the Brazilian localization for Microsoft Dynamics are listed in the [Brazilian localization features](#brazilian-localization-features) section of this article. Details about each of the features can be found in Help in Microsoft Dynamics, and in white papers that are published on the [Microsoft Dynamics Localization Portal](/dynamics/s-e/).
 
 ## Market availability
 
-The Microsoft goal is to deliver regulatory features in enough time for installation. To implement the tax, accounting, financial, or regulatory/statutory reporting requirements that typically affect a majority of businesses in Brazil, Microsoft aims to release tax and regulatory updates that contain required changes before the effective date or other date that is mandated by the applicable government authority at either the federal or state level (but only for the states that are identified in the [Brazilian localization strategy](#brazilian-localization-strategy) section of this topic), so that our channel partners have enough time to update their customer solutions. Internally, we call this date the *market required date* (MRD).
+The Microsoft goal is to deliver regulatory features in enough time for installation. To implement the tax, accounting, financial, or regulatory/statutory reporting requirements that typically affect a majority of businesses in Brazil, Microsoft aims to release tax and regulatory updates that contain required changes before the effective date or other date that is mandated by the applicable government authority at either the federal or state level (but only for the states that are identified in the [Brazilian localization strategy](#brazilian-localization-strategy) section of this article), so that our channel partners have enough time to update their customer solutions. Internally, we call this date the *market required date* (MRD).
 
 Microsoft strives to meet its established MRDs and dates that are mandated by the applicable government authority. However, various factors can affect the timely delivery of tax and regulatory updates. Here are some examples:
 
@@ -251,7 +251,7 @@ The following sections list the features that are specific to Brazil. The sectio
 | Tax calculation according to Commerce headquarters configuration | Yes | Yes |
 | Fiscal printer integration for Daruma printers, models FS600, FS700 (H, L and M), FS800i, Mach 1, Mach 2, and Mach 3 | Yes | No |
 | Fiscal printer integration for Bematech printers, models MP2100 FI TH FI and MP4200 TH FI II | Yes | No |
-| POS legal requirements according to PAF-ECF law "ATO COTEPE/ICMS N°9" of 2013, except for any businesses identified as out of scope in the [Out of scope](#out-of-scope) section of this topic | Yes | No |
+| POS legal requirements according to PAF-ECF law "ATO COTEPE/ICMS N°9" of 2013, except for any businesses identified as out of scope in the [Out of scope](#out-of-scope) section of this article | Yes | No |
 | POS legal requirements according to PAF-ECF law "ATO COTEPE/ICMS N°46" of 2014, except for any businesses identified as out of scope in the [Out of scope](#out-of-scope) section | Yes | No |
 | Display approximated taxes in fiscal receipts | Yes | No |
 | Display approximated taxes in DANFE / CF-e-SAT | Yes | Yes |
@@ -312,7 +312,7 @@ The following sections list the features that are specific to Brazil. The sectio
 | Generate a text file and support for companies defined as Profile A <br> Available layout versions include Layout Code 15 and earlier | Yes | Yes |
 | Support for the following records for companies defined as Profile A:<br>- Block 0: 0000-0001-0002-0005-0015-0100-0150-0190-0200-0210-0220-0300-0305-0400-0450-0460-0500-0600-0990 <br>- Block C: C001-C100-C101-C110-C111-C113-C114-C120-C130-C140-C141-C160-C170-C172-C180-C185-C190-C191-C195-C400-C405-C410-C420-C460-C470-C490-C500(incoming)-C590 (incoming)-C990 <br>- Block D (only for incoming fiscal documents): D001-D100-D190-D195-D500-D590-D990 <br>- Block E: E001-E100-E110-E111-E116-E200-E210-E220-E250-E300-E310-E311-E312-E313-E316-E500-E510-E520-E530-E990 <br>- Block G: G001-G110-G125-G126-G130-G140-G990 <br>- Block H: H001-H005-H010-H020-H030-H990. Note: H005 and related records are only supported for reason code = 01, 05 for RS state and 06. <br>- Block K: K001-K100-K200-K220-K230-K235-K260-K265-K270-K275-K280-K290-K291-K292-K990 <br>- Block 1: 1001-1010-1250-12251990 <br>- Block 1900-1910-1920-1921-1923-1926-1990 only for Rio Grande do Sul state | Yes | Yes |
 | Resolution 13/2019 and Portaria SUCIEF 55/2019- RJ | Yes | Yes |
-| **Out of scope**: SPED Fiscal with specific requirements from the state/region, as described in the [Brazilian localization strategy](#brazilian-localization-strategy) section of this topic, and companies that are categorized as Profile B and Profile C. | Yes | Yes |
+| **Out of scope**: SPED Fiscal with specific requirements from the state/region, as described in the [Brazilian localization strategy](#brazilian-localization-strategy) section of this article, and companies that are categorized as Profile B and Profile C. | Yes | Yes |
 
 ### Portaria CAT 42/2018 - SP
 
@@ -387,8 +387,8 @@ Some capabilities of Microsoft Dynamics that are generally available in other co
 The following tax calculation requirements are out of scope for the Brazilian localization:
 
 - *Simples Nacional* or *Super Simples* taxation mode
-- *Regime especial* taxation mode (see the [Notes](#notes) section of this topic)
-- Requirements from states/regions other than the states/regions that are described in the [Brazilian localization strategy](#brazilian-localization-strategy) section of this topic
+- *Regime especial* taxation mode (see the [Notes](#notes) section of this article)
+- Requirements from states/regions other than the states/regions that are described in the [Brazilian localization strategy](#brazilian-localization-strategy) section of this article
 - Requirements from regulatory agencies or autarchies, such as SUFRAMA, ANVISA, or ANATEL
 
 ### Modules
@@ -465,9 +465,9 @@ The following features and functionality are out of scope for the Brazilian loca
 The following tax reporting requirements are out of scope for fiscal books for the Brazilian localization:
 
 - A printable version of fiscal books, in accordance with *AJUSTE SINIEF 2* from April 3, 2009, which the requirement for printed books obsolete
-- SPED Fiscal that has specific requirements from the states/regions that are described in the [Brazilian localization strategy](#brazilian-localization-strategy) section of this topic
+- SPED Fiscal that has specific requirements from the states/regions that are described in the [Brazilian localization strategy](#brazilian-localization-strategy) section of this article
 - *Simples Nacional* or *Super Simples* taxation mode
-- *Regime especial* taxation mode (see the [Notes](#notes) section of this topic)
+- *Regime especial* taxation mode (see the [Notes](#notes) section of this article)
 - Requirements from states/regions other than the states/regions that are described in the [Brazilian localization strategy](#brazilian-localization-strategy) section
 - Requirements from regulatory agencies or autarchies, such as SUFRAMA, ANVISA, and ANATEL
 - IN86
