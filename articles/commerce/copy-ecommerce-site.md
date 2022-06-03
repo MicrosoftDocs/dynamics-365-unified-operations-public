@@ -45,7 +45,7 @@ After the information has been validated, a notification indicates that a new si
 
 The following illustration shows an example of the **Copy site** flyout menu in site builder.
 
-![Copy site dialog box in site builder.](media/site-copy_1.png)
+![Copy site flyout menu in site builder.](media/site-copy_1.png)
 
 ## Copy a site between two e-commerce environments
 
@@ -65,7 +65,7 @@ After the information has been validated, a notification indicates that a new si
 
 ## Map channels during the site copy operation (optional)
 
-Source channels and locales can be mapped to destination channels and locales as part of the site copy operation. If the channel mapping is done as part of the site copy operation, initializing the site using the FRE process and configuring the channels in site settings is not required on the destination site. 
+Source channels and locales can be mapped to destination channels and locales as part of the site copy operation. If the channel mapping is done as part of the site copy operation, initializing the site using the FRE process and configuring the channels in site settings are not required. 
 
 To map all the channels and locales "as is" (1-to-1) in site builder, follow these steps.
 
