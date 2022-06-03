@@ -1,8 +1,8 @@
 > [!IMPORTANT]
-> When a Headquarters database (Previously called the AOS database) is migrated, the associated Commerce Scale Unit(s) (CSUs) are not moved as well. In several cases, depending on features in use, it might be required to perform a CSU redeployment. This must then be followed by a full synchronization of data to the CSU.  In extreme scenarios where data discrepancies still exist, the final action is to delete the CSU, deploy a fresh CSU to replace it, and then perform a full synchronization of data to the new CSU.
+> When a Commerce headquarters database (previously called AOS database) is migrated, the associated Commerce Scale Units (CSUs) are not moved. In several cases, depending on the features that are in use, a CSU redeployment may be required. This must then be followed by a full synchronization of data to the CSU. In extreme scenarios where data discrepancies still exist, the final action is to delete the CSU, deploy a fresh CSU to replace it, and then perform a full synchronization of data to the new CSU.
 > Some environment-specific records are not included in automated database movement operations and require additional steps. These include the following:
-> - Commerce self-service installer references
-> - Commerce Scale Unit channel database configuration records
+> - Commerce self-service installer references.
+> - Commerce Scale Unit channel database configuration records.
 
 If you copy a database between environments, Commerce capabilities in the destination environment will not be fully functional until you perform the following additional steps.
 
