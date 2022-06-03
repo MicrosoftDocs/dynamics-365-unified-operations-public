@@ -2,7 +2,7 @@
 # required metadata
 
 title: Default category landing page and search results page overview
-description: This topic provides an overview of the default category landing page and search results page in Dynamics 365 Commerce.
+description: This article provides an overview of the default category landing page and search results page in Dynamics 365 Commerce.
 author: ashishmsft
 ms.date: 06/30/2020
 ms.topic: overview
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic provides an overview of the default category landing page and search results page in Microsoft Dynamics 365 Commerce e-Commerce.
+This article provides an overview of the default category landing page and search results page in Microsoft Dynamics 365 Commerce e-Commerce.
 
 ## Default category landing page
 
@@ -37,7 +37,7 @@ The default category landing page is the page that website users typically are t
 
 ![Default category landing page.](./media/SimpleCategoryLandingDressCategory.png)
 
-At the top of the page is a header that shows all the product categories and other pages that the merchandising manager has categorized. Configuration is done as part of the configuration of the channel navigation hierarchy. At the bottom of the page is a footer that includes quick links to various topics that a shopper might be interested in.
+At the top of the page is a header that shows all the product categories and other pages that the merchandising manager has categorized. Configuration is done as part of the configuration of the channel navigation hierarchy. At the bottom of the page is a footer that includes quick links to various articles that a shopper might be interested in.
 
 The following components are essential for a category:
 

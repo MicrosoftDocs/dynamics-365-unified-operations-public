@@ -1,6 +1,6 @@
 ---
 title: Show vacation balances in the production floor execution interface
-description: This topic provides an example scenario that shows how to set up Microsoft Dynamics 365 Supply Chain Management so that it uses payroll statistics to provide workers an overview of their vacation balance for the current year.
+description: This article provides an example scenario that shows how to set up Microsoft Dynamics 365 Supply Chain Management so that it uses payroll statistics to provide workers an overview of their vacation balance for the current year.
 author: johanhoffmann
 ms.date: 04/22/2022
 ms.topic: article
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.XX
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an example scenario that shows how to set up Microsoft Dynamics 365 Supply Chain Management so that it uses payroll statistics to provide each worker with an overview of their vacation balance for the current year. Workers will be able to see their vacation balance in the **My day** dialog box in the production floor execution interface.
+This article provides an example scenario that shows how to set up Microsoft Dynamics 365 Supply Chain Management so that it uses payroll statistics to provide each worker with an overview of their vacation balance for the current year. Workers will be able to see their vacation balance in the **My day** dialog box in the production floor execution interface.
 
 This scenario uses the Danish holiday law, where the vacation year goes from September 1 through August 31. In this scenario, your company has hired a new worker and will grant that worker a balance of 10 vacation days for the rest of the current vacation year.
 

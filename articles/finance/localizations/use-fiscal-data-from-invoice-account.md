@@ -2,7 +2,7 @@
 # required metadata
 
 title: Use fiscal data from an invoice account
-description: This topic provides information about how to enable fiscal data to be automatically updated on sales orders, free text invoices, or purchase orders based on information from the invoice account.
+description: This article provides information about how to enable fiscal data to be automatically updated on sales orders, free text invoices, or purchase orders based on information from the invoice account.
 author: epodkolz
 ms.date: 01/23/2020
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.9
 
 [!include [banner](../includes/banner.md)]
 
-You can use fiscal data, such as the customer or vendor name, or the sales tax group and tax exempt numbers from an invoice account on sales orders, free text invoices, or purchase orders to be updated automatically based on the information from the invoice account. This topic explains how to configure the feature.
+You can use fiscal data, such as the customer or vendor name, or the sales tax group and tax exempt numbers from an invoice account on sales orders, free text invoices, or purchase orders to be updated automatically based on the information from the invoice account. This article explains how to configure the feature.
 
 ## Accounts payable and Accounts receivable parameters
 

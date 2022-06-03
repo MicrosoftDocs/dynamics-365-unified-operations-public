@@ -1,7 +1,7 @@
 ---
 
 title: Obsolete and removed APIs, classes, and methods
-description: This topic lists the obsolete and removed APIs, classes, and methods in Microsoft Dynamics 365 Commerce.
+description: This article lists the obsolete and removed APIs, classes, and methods in Microsoft Dynamics 365 Commerce.
 author: mugunthanm
 ms.date: 06/01/2022
 ms.topic: overview
@@ -19,7 +19,7 @@ ms.dyn365.ops.version: AX 10.0.25
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic lists the obsolete and removed APIs, classes, and methods in Microsoft Dynamics 365 Commerce.
+This article lists the obsolete and removed APIs, classes, and methods in Microsoft Dynamics 365 Commerce.
 
 Several APIs, classes, and methods have been either removed or marked as obsolete in Dynamics 365 Commerce. As Dynamics 365 Commerce changes over time, each new version adds new APIs, classes, and methods that provide new functionality. Existing APIs, classes, and methods also change over time. For example, some APIs become less important as the functionality that they support is replaced by new functionality, whereas other methods are superseded by newer methods that are superior in some way or use different underlying technologies to provide better performance and reliability.
 

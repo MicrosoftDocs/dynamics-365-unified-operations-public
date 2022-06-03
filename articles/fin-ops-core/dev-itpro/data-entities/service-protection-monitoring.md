@@ -2,7 +2,7 @@
 # required metadata
 
 title: Monitor API throttling
-description: This topic provides information about the tools that are available to monitor application programming interface (API) throttling when service protection limits are reached.
+description: This article provides information about the tools that are available to monitor application programming interface (API) throttling when service protection limits are reached.
 author: jaredha
 ms.date: 05/04/2022
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 52
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the tools that are available to monitor application programming interface (API) throttling when service protection limits are reached.
+This article provides information about the tools that are available to monitor application programming interface (API) throttling when service protection limits are reached.
 
 To have a successful onboarding experience that includes the throttling capability, you must be able to monitor your Open Data Protocol (OData) and custom service integration patterns. Microsoft Dynamics Lifecycle Services (LCS), which is the administration center for Finance and Operations apps, contains a collection of monitoring and diagnostics tools that can help ensure that you have an accurate view of the environments that you manage. For more information, see [Monitoring and diagnostics tools in Lifecycle Services (LCS)](../lifecycle-services/monitoring-diagnostics.md).
 

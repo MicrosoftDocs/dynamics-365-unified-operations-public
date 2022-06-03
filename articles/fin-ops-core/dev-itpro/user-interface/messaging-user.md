@@ -2,7 +2,7 @@
 # required metadata
 
 title: Messaging system for Finance and Operations apps
-description: This topic describes the rich, powerful messaging system in Finance and Operations apps.
+description: This article describes the rich, powerful messaging system in Finance and Operations apps.
 author: jasongre
 ms.date: 03/05/2020
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the rich, powerful messaging system in Finance and Operations apps.
+This article describes the rich, powerful messaging system in Finance and Operations apps.
 
 A new messaging system was created for Finance and Operations apps to improve this experience. Compared to earlier versions, the messaging system for Finance and Operations apps includes the following features:
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Maintenance schedule
-description: This topic explains maintenance schedule in Asset Management.
+description: This article explains maintenance schedule in Asset Management.
 author: johanhoffmann
 ms.date: 08/27/2019
 ms.topic: article

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up and report value-added tax (VAT)
-description: This topic explains how to set up and report value-added tax (VAT).
+description: This article explains how to set up and report value-added tax (VAT).
 author: kfend
 ms.date: 10/20/2021
 ms.topic: article

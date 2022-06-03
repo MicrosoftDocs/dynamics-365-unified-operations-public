@@ -1,6 +1,6 @@
 ---
 title: User-specified team owner
-description: This topic explains how set a user-specified team owner instead of using the default team owner.  
+description: This article explains how set a user-specified team owner instead of using the default team owner.  
 author: nhelgren
 ms.date: 04/26/2021
 ms.topic: article

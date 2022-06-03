@@ -1,6 +1,6 @@
 ---
 title: Note integration
-description: This topic describes the integration of note data in dual-write.
+description: This article describes the integration of note data in dual-write.
 author: RamaKrishnamoorthy 
 ms.date: 02/22/2021
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.validFrom: 2020-01-06
 
 
 
-During business processes, Microsoft Dynamics 365 users often gather information about their customers. This information is recorded as activities and notes. This topic describes the integration of note data in dual-write.
+During business processes, Microsoft Dynamics 365 users often gather information about their customers. This information is recorded as activities and notes. This article describes the integration of note data in dual-write.
 
 Customer information can be classified in the following ways:
 

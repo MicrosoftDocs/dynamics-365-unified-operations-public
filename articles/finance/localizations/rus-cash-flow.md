@@ -2,7 +2,7 @@
 # required metadata
 
 title: Cash flow management (Russia)
-description: This topic walks you through an example that shows how to set up and use cash flow management in Microsoft Dynamics 365 Finance.
+description: This article walks you through an example that shows how to set up and use cash flow management in Microsoft Dynamics 365 Finance.
 author: ShylaThompson
 ms.date: 11/03/2021
 ms.topic: article
@@ -40,10 +40,10 @@ Here are the main goals of a Treasury company:
 - Control the company's cash position.
 - Maintain the company's cash flows through centralized control.
 
-This topic provides a step-by-step example that shows the settings and user activities for cash flow management. 
+This article provides a step-by-step example that shows the settings and user activities for cash flow management. 
 
 > [!NOTE]
-> The data set that is used in this topic is for demo purposes only. The codes that you use for ledger accounts, value-added tax (VAT), rates, and so on, should comply with the rules that are accepted in your company.
+> The data set that is used in this article is for demo purposes only. The codes that you use for ledger accounts, value-added tax (VAT), rates, and so on, should comply with the rules that are accepted in your company.
 
 In this example, Contoso Retail RUS (RURT) is a subsidiary of an industrial holding company and does business as an operating legal entity. Contoso Entertainment Systems Russia (RUMF) is an internal bank of an industrial holding company and handles all payments.
 
@@ -97,7 +97,7 @@ The following table shows the stages of payment that a treasurer deals with duri
 </tbody>
 </table>
 
-After you complete the example that is provided in this topic, you will be able to perform the following tasks:
+After you complete the example that is provided in this article, you will be able to perform the following tasks:
 
 - Configure parameters for cash flow management to support the new functionality.
 - Process planned payments. Forecast transactions of incoming and outgoing payments are automatically created and updated based on purchase orders, sales orders, and free text invoices.

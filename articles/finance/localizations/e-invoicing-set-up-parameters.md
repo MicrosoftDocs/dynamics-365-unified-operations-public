@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up Electronic invoicing parameters
-description: This topic explains how to set up the Electronic invoicing parameters.
+description: This article explains how to set up the Electronic invoicing parameters.
 author: dkalyuzh
 ms.date: 12/15/2021
 ms.topic: article
@@ -39,7 +39,7 @@ Before you can submit documents to Electronic invoicing and process responses, y
 These steps are optional if you set up your connected application directly from Regulatory Configuration Service (RCS) by completing the procedures in the following topics:
 
 - [Set up Regulatory Configuration Service (RCS)](e-invoicing-set-up-rcs.md)
-- [Complete!!:(TBC) Work with Application setup] - note to PM to see about this topic.
+- [Complete!!:(TBC) Work with Application setup] - note to PM to see about this article.
 
 To set up, adjust, or review electronic documents directly in your Finance or Supply Chain Management environment, complete the following procedures.
 

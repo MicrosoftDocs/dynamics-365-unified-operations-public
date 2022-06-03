@@ -2,7 +2,7 @@
 # required metadata
 
 title: Advanced notes management
-description: This topic explains how to set up and print predefined notes for customers, vendors, and products.
+description: This article explains how to set up and print predefined notes for customers, vendors, and products.
 author: ilkond
 ms.date: 10/15/2021
 ms.topic: article

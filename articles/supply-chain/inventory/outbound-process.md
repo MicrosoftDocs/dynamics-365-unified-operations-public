@@ -2,7 +2,7 @@
 # required metadata
 
 title: Outbound process overview
-description: This topic provides an overview of the outbound process in Inventory management. 
+description: This article provides an overview of the outbound process in Inventory management. 
 author: yufeihuang
 ms.date: 07/25/2019
 ms.topic: overview
@@ -31,7 +31,7 @@ ms.search.validFrom: 2016-02-28
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of the outbound process in Inventory management.
+This article provides an overview of the outbound process in Inventory management.
 
 ## Output orders
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: India overview
-description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for India. 
+description: This article provides links to Microsoft Dynamics 365 Finance documentation resources for India. 
 author: kfend
 ms.date: 06/29/2021
 ms.topic: overview
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides links to documentation resources for India. 
+This article provides links to documentation resources for India. 
 
 ## India localization scope
 

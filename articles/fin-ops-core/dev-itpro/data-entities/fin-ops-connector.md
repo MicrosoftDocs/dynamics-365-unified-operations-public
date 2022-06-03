@@ -2,7 +2,7 @@
 # required metadata
 
 title: Application Connector
-description: This topic provides information about the Application Connector for Microsoft Power Automate and Logic Apps.
+description: This article provides information about the Application Connector for Microsoft Power Automate and Logic Apps.
 author: peakerbl
 ms.date: 03/08/2021
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks

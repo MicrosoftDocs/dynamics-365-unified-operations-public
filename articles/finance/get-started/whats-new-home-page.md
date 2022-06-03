@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Finance 
-description: This topic points to topics that describe the new and changed features in each release of Dynamics 365 Finance
+description: This article points to topics that describe the new and changed features in each release of Dynamics 365 Finance
 author: kfend
 ms.date: 01/31/2022
 ms.topic: article

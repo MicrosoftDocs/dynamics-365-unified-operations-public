@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up service intervals 
-description: This topic describes how to set up service intervals. Service interval indicates the frequency with which service order lines are created for service agreement lines when you create service orders.
+description: This article describes how to set up service intervals. Service interval indicates the frequency with which service order lines are created for service agreement lines when you create service orders.
 author: sorenva
 ms.date: 02/20/2018
 ms.topic: article
@@ -53,7 +53,7 @@ You want to create a service interval of 10 days.
 5. In the **Frequency** field, type 10.
 6. Press **Alt+S** to save the service interval.
 
-## Related topics
+## Related articles
 
 [Service intervals](service-intervals.md)  
 

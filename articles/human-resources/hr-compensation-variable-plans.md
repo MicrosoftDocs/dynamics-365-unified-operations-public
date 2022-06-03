@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create variable compensation plans
-description: This topic describes the components that must be set up before you can use variable compensation and enroll an employee in a variable compensation plan.
+description: This article describes the components that must be set up before you can use variable compensation and enroll an employee in a variable compensation plan.
 author: twheeloc
 ms.date: 08/24/2021
 ms.topic: article
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Variable compensation makes up an employee's irregular pay, such as bonuses or stock awards. This topic explains how to set up the components that are needed for variable compensation and enroll an employee in a variable compensation plan.
+Variable compensation makes up an employee's irregular pay, such as bonuses or stock awards. This article explains how to set up the components that are needed for variable compensation and enroll an employee in a variable compensation plan.
 
 The calculation of variable compensation amounts for your employees can be based on several factors, such as the employee's performance, the employee's compensation level, and the department's performance.
 

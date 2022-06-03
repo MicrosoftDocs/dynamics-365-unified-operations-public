@@ -2,7 +2,7 @@
 # required metadata
 
 title: Prepare for go-live
-description: This topic provides guidance about how to prepare for the go-live for Finance and Operations apps.
+description: This article provides guidance about how to prepare for the go-live for Finance and Operations apps.
 author: ClaudiaBetz-Haubold
 ms.date: 05/19/2022
 ms.topic: article
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides guidance about how to prepare for the go-live for Finance and Operations apps.
+This article provides guidance about how to prepare for the go-live for Finance and Operations apps.
 
 To ensure that the production environment is used for live operations, Microsoft provisions the production instance when the solution is ready and after project readiness has been validated as part of the Go-live Readiness Review with Microsoft. For more information about the environments in your subscription, see the [Licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409).
 

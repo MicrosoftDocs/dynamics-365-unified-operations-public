@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Ship sales orders without warehousing
-description: This topic explains how to update a sales order when products are shipped to the customer. 
+description: This article explains how to update a sales order when products are shipped to the customer. 
 author: Henrikan
 ms.date: 08/20/2019
 ms.topic: business-process 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to update a sales order when products are shipped to the customer. The guide is applicable to the fulfillment flow that is not set up for warehouse management (neither basic or advanced warehousing), and therefore does not require product picking to be registered before shipment. You can run this procedure on your own data or in demo data company USMF. In both cases, before you start this task, create a sales order for an inventoried product with a quantity of greater than 1. To avoid a posting error, you need to check that the product's on-hand quantity in the site and warehouse that you've selected on the order covers the order quantity.
+This article explains how to update a sales order when products are shipped to the customer. The guide is applicable to the fulfillment flow that is not set up for warehouse management (neither basic or advanced warehousing), and therefore does not require product picking to be registered before shipment. You can run this procedure on your own data or in demo data company USMF. In both cases, before you start this task, create a sales order for an inventoried product with a quantity of greater than 1. To avoid a posting error, you need to check that the product's on-hand quantity in the site and warehouse that you've selected on the order covers the order quantity.
 
 ## Post packing slip for an order
 1. In the navigation pane, go to **Modules > Sales and marketing > Sales orders > All sales orders**.

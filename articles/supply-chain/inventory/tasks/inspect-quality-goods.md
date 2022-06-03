@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Inspect the quality of goods
-description: This topic describes how to process quality orders.
+description: This article describes how to process quality orders.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: business-process 
@@ -28,9 +28,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how to process quality orders. Quality inspections are typically done by a quality clerk.
+This article describes how to process quality orders. Quality inspections are typically done by a quality clerk.
 
-If the standard demo data is installed, you can use it to complete the procedures in this topic. To use the demo data, select the *USMF* legal entity before you begin. You must then confirm purchase order *000016* and post a product receipt. A quality order is automatically generated.
+If the standard demo data is installed, you can use it to complete the procedures in this article. To use the demo data, select the *USMF* legal entity before you begin. You must then confirm purchase order *000016* and post a product receipt. A quality order is automatically generated.
 
 ## Step 1: Select a quality order
 

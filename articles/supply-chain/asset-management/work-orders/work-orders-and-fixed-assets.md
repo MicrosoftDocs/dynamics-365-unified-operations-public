@@ -2,7 +2,7 @@
 # required metadata
 
 title: Work orders and fixed assets
-description: This topic explains work orders and fixed assets in Asset Management.
+description: This article explains work orders and fixed assets in Asset Management.
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article

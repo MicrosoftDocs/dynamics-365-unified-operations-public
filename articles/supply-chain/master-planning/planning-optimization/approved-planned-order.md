@@ -2,7 +2,7 @@
 # required metadata
 
 title: View, manage, and approve planned orders
-description: This topic provides information about how to view, manage, and approve planned orders in Planning Optimization. 
+description: This article provides information about how to view, manage, and approve planned orders in Planning Optimization. 
 author: t-benebo
 ms.date: 04/07/2021
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.13
 
 [!include [banner](../../includes/banner.md)]
 
-This topic provides information about how to view, manage, and approve planned orders in Planning Optimization.
+This article provides information about how to view, manage, and approve planned orders in Planning Optimization.
 
 ## <a name="view-planned-orders"></a>View and manage planned orders
 

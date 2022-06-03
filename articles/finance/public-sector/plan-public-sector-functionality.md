@@ -2,7 +2,7 @@
 # required metadata
 
 title: Plan for public sector functionality
-description: This topic suggests the first steps to setting up Public sector functionality.
+description: This article suggests the first steps to setting up Public sector functionality.
 author: v-kiarnd
 ms.date: 02/18/2022
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic suggests the first steps to setting up Public sector functionality.
+This article suggests the first steps to setting up Public sector functionality.
 
 ## What should I do first?
 

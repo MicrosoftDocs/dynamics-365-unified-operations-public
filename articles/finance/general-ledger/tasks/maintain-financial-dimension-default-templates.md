@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Maintain financial dimension default templates
-description: This topic shows how to set up financial dimension default templates. 
+description: This article shows how to set up financial dimension default templates. 
 author: aprilolson
 ms.date: 07/30/2019
 ms.topic: business-process 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic shows how to set up financial dimension default templates. The templates can be used to quickly distribute amounts on source documents.
+This article shows how to set up financial dimension default templates. The templates can be used to quickly distribute amounts on source documents.
 
 1. In the navigation pane, go to **Modules > General ledger > Chart of accounts > Dimensions > Financial dimension default templates**.
 2. Select **New**.

@@ -1,6 +1,6 @@
 ---
 title: Extend, customize, and collaborate on the Help (contains video)
-description: This topic provides tips and tricks for working with the GitHub repos and Markdown files for Finance and Operations apps.
+description: This article provides tips and tricks for working with the GitHub repos and Markdown files for Finance and Operations apps.
 author: edupont04
 ms.topic: article
 
@@ -24,15 +24,15 @@ ms.author: edupont
 
 # Extend, customize, and collaborate on the Help
 
-The source files for the Microsoft Help for Finance and Operations apps are available in public GitHub repositories (repos). Any solution provider can easily extend and customize the content for specific solutions. This topic explains how to work with the GitHub repos and Markdown files.
+The source files for the Microsoft Help for Finance and Operations apps are available in public GitHub repositories (repos). Any solution provider can easily extend and customize the content for specific solutions. This article explains how to work with the GitHub repos and Markdown files.
 
 For information about how to create Markdown files in GitHub repos, see the [Docs contributor guide](/contribute/). For information about how to deploy custom Help, see [Custom Help overview](custom-help-overview.md).
 
 ## Contribute to the content
 
-One benefit of GitHub is that you can contribute to the core content that the Microsoft team provides in the [MicrosoftDocs/Dynamics-365-Unified-Operations-public](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-public) repo. For example, you have a new topic that you think will be helpful to other users, or you have a correction to an existing topic. If you want to contribute to the Dynamics-365-Unified-Operations-public repo, you can create a *pull request* from your repo to the Dynamics-365-Unified-Operations-public repo. The Microsoft team will then review the request and include your changes as appropriate.
+One benefit of GitHub is that you can contribute to the core content that the Microsoft team provides in the [MicrosoftDocs/Dynamics-365-Unified-Operations-public](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-public) repo. For example, you have a new article that you think will be helpful to other users, or you have a correction to an existing article. If you want to contribute to the Dynamics-365-Unified-Operations-public repo, you can create a *pull request* from your repo to the Dynamics-365-Unified-Operations-public repo. The Microsoft team will then review the request and include your changes as appropriate.
 
-You can also contribute and make edits to the existing documentation. To get started, select the **Edit** button (pencil symbol) in a topic. The following video shows how you can contribute to the Microsoft documentation.
+You can also contribute and make edits to the existing documentation. To get started, select the **Edit** button (pencil symbol) in a article. The following video shows how you can contribute to the Microsoft documentation.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE36liB]
 
@@ -49,7 +49,7 @@ When Microsoft publishes an update to the content, the *main* branch in the corr
 > In April 2021, the default branch in the public source repo has been renamed from *live* to *main*. If you have any scripts that rely on the *live* branch, please update them to rely on *main* instead. The default branches in the language-specific repos will be renamed later.
 
 > [!TIP]
-> If you just want to get the Microsoft content as it is, you don't have to be familiar with GitHub. For more information, see the [Get the content without a GitHub account](#get-the-content-without-a-github-account) section of this topic. However, if you want to extend or customize the Microsoft content, we recommend that you join Microsoft on GitHub.
+> If you just want to get the Microsoft content as it is, you don't have to be familiar with GitHub. For more information, see the [Get the content without a GitHub account](#get-the-content-without-a-github-account) section of this article. However, if you want to extend or customize the Microsoft content, we recommend that you join Microsoft on GitHub.
 
 <!--For guidance about what the Microsoft-provided content is all about, see [User Assistance Model](../user-assistance.md).-->
 

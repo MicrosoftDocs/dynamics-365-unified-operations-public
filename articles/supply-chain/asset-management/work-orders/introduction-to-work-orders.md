@@ -2,7 +2,7 @@
 # required metadata
 
 title: Introduction to work orders
-description: This topic provides an overview of work orders in Asset Management.
+description: This article provides an overview of work orders in Asset Management.
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Maximize API throughput
-description: This topic describes strategies that can help you manage throttling responses for service protection application programming interface (API) limits and maximize API throughput.
+description: This article describes strategies that can help you manage throttling responses for service protection application programming interface (API) limits and maximize API throughput.
 author: jaredha
 ms.date: 05/04/2022
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 52
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes strategies that can help you manage throttling responses for service protection application programming interface (API) limits and maximize API throughput.
+This article describes strategies that can help you manage throttling responses for service protection application programming interface (API) limits and maximize API throughput.
 
 If you have an application that must prioritize throughput to move the most data in the shortest period, there are some strategies that you can apply.
 

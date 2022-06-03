@@ -2,7 +2,7 @@
 # required metadata
 
 title: Embed images and shapes in documents that you generate by using ER
-description: This topic explains how to use the Electronic reporting tool to generate business documents that have embedded images and shapes.
+description: This article explains how to use the Electronic reporting tool to generate business documents that have embedded images and shapes.
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: article

@@ -1,6 +1,6 @@
 ---
 title: Net requirements and pegging information with Planning Optimization
-description: This topic provides information about calculated net requirements and pegging information in Planning Optimization.
+description: This article provides information about calculated net requirements and pegging information in Planning Optimization.
 author: t-benebo
 ms.date: 7/28/2021
 ms.topic: article

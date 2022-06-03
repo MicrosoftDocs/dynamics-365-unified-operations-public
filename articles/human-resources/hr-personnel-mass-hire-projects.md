@@ -2,7 +2,7 @@
 # required metadata
 
 title: Mass hire projects
-description: This topic describes mass hire projects, which allow human resources specialists to create multiple positions and efficiently hire workers into those positions.
+description: This article describes mass hire projects, which allow human resources specialists to create multiple positions and efficiently hire workers into those positions.
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article

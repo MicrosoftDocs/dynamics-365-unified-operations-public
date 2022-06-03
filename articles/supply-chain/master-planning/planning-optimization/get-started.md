@@ -2,7 +2,7 @@
 # required metadata
 
 title: Get started with Planning Optimization
-description: This topic explains how to start to use the Planning Optimization functionality. 
+description: This article explains how to start to use the Planning Optimization functionality. 
 author: t-benebo
 ms.date: 05/20/2021
 ms.topic: article
@@ -102,7 +102,7 @@ The connection status indicates the current status of the connection between Sup
 |---|---|---|
 | Connected | A connection has been established between the Planning Optimization service and Supply Chain Management. | Yes |
 | Enabling connection | A request to turn on the connection to the Planning Optimization service is currently in progress. | No |
-| Disconnected | There is no connection to the Planning Optimization service. The connection can be turned on from LCS, as described earlier in this topic. | No |
+| Disconnected | There is no connection to the Planning Optimization service. The connection can be turned on from LCS, as described earlier in this article. | No |
 | Disabling connection | A request to turn off the connection to the Planning Optimization service is currently in progress. | No |
 | Getting status | The system is waiting for status information from the Planning Optimization service. | No |
 

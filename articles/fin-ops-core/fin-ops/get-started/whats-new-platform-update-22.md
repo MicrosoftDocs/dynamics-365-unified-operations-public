@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 for Finance and Operations platform update 22 (December 2018)
-description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 22 (December 2018). 
+description: This article describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 22 (December 2018). 
 author: tonyafehr
 ms.date: 02/03/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform 22
 [!include [banner](../includes/banner.md)]
 
 
-This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations platform update 22. This version has a build number of 7.0.5095.
+This article describes features that are either new or changed in Dynamics 365 for Finance and Operations platform update 22. This version has a build number of 7.0.5095.
 
 ### Dynamics 365 October '18 release notes
 

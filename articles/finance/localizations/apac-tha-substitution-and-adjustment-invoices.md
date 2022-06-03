@@ -2,7 +2,7 @@
 # required metadata
 
 title: Substitution/adjustment tax invoices for Thailand
-description: This topic provides information about the substitution/adjustment tax invoice feature. This feature lets you track the printing of copies of tax invoices. You can also track adjustments that are made to customer information in the tax invoice header.
+description: This article provides information about the substitution/adjustment tax invoice feature. This feature lets you track the printing of copies of tax invoices. You can also track adjustments that are made to customer information in the tax invoice header.
 author: EvgenyPopovMBS
 ms.date: 06/16/2017
 ms.topic: article

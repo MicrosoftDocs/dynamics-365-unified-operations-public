@@ -1,6 +1,6 @@
 ---
 title: Migrate Prospect to cash data from Data Integrator to dual-write
-description: This topic describes how to migrate Prospect to Cash data from Data Integrator to dual-write.
+description: This article describes how to migrate Prospect to Cash data from Data Integrator to dual-write.
 author: RamaKrishnamoorthy
 ms.date: 02/01/2022
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.validFrom: 2020-01-26
 
 [!include [banner](../../includes/banner.md)]
 
-The Prospect to cash solution available for Data Integrator is not compatible with dual-write. The reason for this is the msdynce_AccountNumber index on the account table that came as part of the Prospect to cash solution. If this index exists, you cannot create the same customer account number in two different legal entities. You can either choose to start fresh with dual-write by migrating the Prospect to cash data from Data Integrator to dual-write or you can install the last "dorman" version of the Prospect to cash solution. This topic covers both of these approaches.
+The Prospect to cash solution available for Data Integrator is not compatible with dual-write. The reason for this is the msdynce_AccountNumber index on the account table that came as part of the Prospect to cash solution. If this index exists, you cannot create the same customer account number in two different legal entities. You can either choose to start fresh with dual-write by migrating the Prospect to cash data from Data Integrator to dual-write or you can install the last "dorman" version of the Prospect to cash solution. This article covers both of these approaches.
 
 ## Install the last "dorman" version of the Data Integrator Prospect to cash solution
 
@@ -45,7 +45,7 @@ To migrate your Prospect to cash data from Data Integrator to dual-write, follow
 5. Create a dual-write connection between the Finance and Operations app and the customer engagement app for one or more legal entities.
 6. Enable dual-write table maps, and run the initial synchronization for the required reference data. (For more information, see [Considerations for initial synchronization](initial-sync-guidance.md).) Examples of required data include customer groups, payment terms, and payment schedules. Don't enable the dual-write maps for tables that require initialization, such as the account, quote, quote line, order, and order line tables.
 7. In the customer engagement app, go to **Advanced Settings \> System Settings \> Data Management \> Duplicate detection rules**, and disable all the rules.
-8. Initialize the tables that are listed in step 2. For instructions, see the remaining sections of this topic.
+8. Initialize the tables that are listed in step 2. For instructions, see the remaining sections of this article.
 9. Open the Finance and Operations app, and enable the table maps, such as the account, quote, quote line, order, and order line table maps. Then run the initial synchronization. (For more information, see [Considerations for initial synchronization](initial-sync-guidance.md).) This process will sync additional information from the Finance and Operations app, such as processing status, shipping and billing addresses, sites, and warehouses.
 
 ## Account table
@@ -93,7 +93,7 @@ Because data from the **Products** table is designed to flow one way, from the F
 
 ## Quote and Quote product tables
 
-For the **Quote** table, follow the instructions in the [Order table](#order-table) section earlier in this topic. For the **Quote product** table, follow the instructions in the [Order products table](#order-products-table) section.
+For the **Quote** table, follow the instructions in the [Order table](#order-table) section earlier in this article. For the **Quote product** table, follow the instructions in the [Order products table](#order-products-table) section.
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

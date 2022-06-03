@@ -1,6 +1,6 @@
 ---
 title: Scheduling with infinite capacity
-description: This topic provides information about infinite capacity scheduling for Planning Optimization. It also describes current feature limitations.
+description: This article provides information about infinite capacity scheduling for Planning Optimization. It also describes current feature limitations.
 author: t-benebo
 ms.date: 09/21/2021
 ms.topic: article

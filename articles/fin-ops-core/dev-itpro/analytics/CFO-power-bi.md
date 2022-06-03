@@ -2,7 +2,7 @@
 # required metadata
 
 title: CFO overview Power BI content
-description: This topic describes the CFO overview Microsoft Power BI content. 
+description: This article describes the CFO overview Microsoft Power BI content. 
 author: kweekley
 ms.date: 08/24/2021
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application user, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include [banner](../includes/banner.md)] 
 
-This topic describes the **CFO overview** Microsoft Power BI content. This Power BI content applies to those using Microsoft Dynamics 365 for Finance and Operations version 7.2. If you are using version 7.3 or later, please refer to [Financial Insights](financial-insights.md).
+This article describes the **CFO overview** Microsoft Power BI content. This Power BI content applies to those using Microsoft Dynamics 365 for Finance and Operations version 7.2. If you are using version 7.3 or later, please refer to [Financial Insights](financial-insights.md).
 
 ## Accessing the Power BI content
 

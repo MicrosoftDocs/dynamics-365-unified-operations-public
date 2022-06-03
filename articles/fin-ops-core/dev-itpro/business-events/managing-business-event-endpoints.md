@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage business event endpoints
-description: This topic provides information about how to manage endpoints for Finance and Operations apps business events.
+description: This article provides information about how to manage endpoints for Finance and Operations apps business events.
 author: jaredha
 ms.date: 11/09/2021
 ms.topic: article
@@ -102,7 +102,7 @@ The business event registration itself will also be listed on either the **Busin
 
 Finance and Operations apps events can be subscribed to directly in Dataverse by using the tools in the Dataverse toolset, such as the Power Platform Tools extension for Visual Studio. For more information about this extension, see [Install Power Platform Tools](/powerapps/developer/data-platform/tools/devtools-install). These subscriptions will appear on the **Business event catalog** tab of the **Business events** page in Finance and Operations apps.
 
-Some attributes of service endpoints in Dataverse, such as the name and description, can be updated. These updates will also be reflected in Finance and Operations apps. However, updates that change the service endpoint type will be prevented if the service endpoint is used with Finance and Operations apps events. These updates include a change from a Service Bus topic to a Service Bus queue, which Dataverse usually allows. This behavior helps ensure design simplicity and consistency, because Finance and Operations apps don't allow these updates to endpoints after they have been created.
+Some attributes of service endpoints in Dataverse, such as the name and description, can be updated. These updates will also be reflected in Finance and Operations apps. However, updates that change the service endpoint type will be prevented if the service endpoint is used with Finance and Operations apps events. These updates include a change from a Service Bus article to a Service Bus queue, which Dataverse usually allows. This behavior helps ensure design simplicity and consistency, because Finance and Operations apps don't allow these updates to endpoints after they have been created.
 
 After service endpoints are created, Dataverse doesn't allow them to be deleted if they are being used. This limitation also applies to service endpoints that are used by Finance and Operations apps events. Any attempt to delete one of these endpoints will cause an error, and deletion will be prevented. 
 

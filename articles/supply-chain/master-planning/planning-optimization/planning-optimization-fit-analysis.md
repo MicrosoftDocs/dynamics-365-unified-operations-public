@@ -2,7 +2,7 @@
 # required metadata
 
 title: Planning Optimization fit analysis
-description: This topic explains how to verify your current setup and data against the capabilities of the Planning Optimization functionality. 
+description: This article explains how to verify your current setup and data against the capabilities of the Planning Optimization functionality. 
 author: t-benebo
 ms.date: 07/07/2021
 ms.topic: article

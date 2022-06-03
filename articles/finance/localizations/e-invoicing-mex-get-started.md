@@ -2,7 +2,7 @@
 # required metadata
 
 title: Get started with Electronic invoicing for Mexico
-description: This topic provides information that will help you get started with Electronic invoicing for Mexico.
+description: This article provides information that will help you get started with Electronic invoicing for Mexico.
 author: gionoder
 ms.date: 12/01/2020
 ms.topic: article
@@ -34,11 +34,11 @@ ms.dyn365.ops.version: AX 10.0.12
 > [!IMPORTANT]
 > Electronic invoicing for Mexico might not currently support all the functions that are available in the Comprobante Fiscal Digital por Internet (CFDI) document, and in the related integration that is built into Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management.
 
-This topic provides information that will help you get started with Electronic invoicing for Mexico. It guides you through the configuration steps that are country-dependent in Regulatory Configuration Services (RCS) and Finance. It also guides you through the steps that you must follow in Finance to submit CFDI invoices through the service, and it explains how to review the processing results and the status of CFDI invoices.
+This article provides information that will help you get started with Electronic invoicing for Mexico. It guides you through the configuration steps that are country-dependent in Regulatory Configuration Services (RCS) and Finance. It also guides you through the steps that you must follow in Finance to submit CFDI invoices through the service, and it explains how to review the processing results and the status of CFDI invoices.
 
 ## Prerequisites
 
-Before you complete the steps in this topic, you must complete the steps in [Get started with Electronic invoicing service administration](e-invoicing-get-started-service-administration.md) and [Get started with Electronic invoicing](e-invoicing-get-started.md).
+Before you complete the steps in this article, you must complete the steps in [Get started with Electronic invoicing service administration](e-invoicing-get-started-service-administration.md) and [Get started with Electronic invoicing](e-invoicing-get-started.md).
 
 ## Set up the Cadena XSLT
 

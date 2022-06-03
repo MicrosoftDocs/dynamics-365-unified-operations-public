@@ -2,7 +2,7 @@
 # required metadata
 
 title: Production support and monitoring
-description: This topic describes the types of support that are involved in the project lifecycle and best practices for monitoring your environments.
+description: This article describes the types of support that are involved in the project lifecycle and best practices for monitoring your environments.
 author: PedroTubal
 ms.date: 10/12/2021
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.14
 
 [!include[banner](../includes/banner.md)]
 
-To ensure a good experience during the implementation of a project and after go-live, it's important that you understand the different types of servicing that are available and how you can get the correct support for every scenario. This topic explains how to engage each type of support and learn about some of the tools available.
+To ensure a good experience during the implementation of a project and after go-live, it's important that you understand the different types of servicing that are available and how you can get the correct support for every scenario. This article explains how to engage each type of support and learn about some of the tools available.
 
 Microsoft tools and support help ensure the stability and effectiveness of your environment by providing infrastructure and application support. However, this support can be effective only if partners and clients correctly develop, test, configure, manage, and monitor the implemented system and its environments.
 

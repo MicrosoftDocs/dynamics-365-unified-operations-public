@@ -2,7 +2,7 @@
 # required metadata
 
 title: Active work order maintenance jobs overview
-description: This topic explains active work order maintenance jobs overview in Asset Management.
+description: This article explains active work order maintenance jobs overview in Asset Management.
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: overview

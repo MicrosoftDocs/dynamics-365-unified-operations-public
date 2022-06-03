@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up Azure resources for Electronic invoicing
-description: This topic provides an overview of the process for setting up Microsoft Azure resources for Electronic invoicing.
+description: This article provides an overview of the process for setting up Microsoft Azure resources for Electronic invoicing.
 author: dkalyuzh
 ms.date: 01/26/2022
 ms.topic: article

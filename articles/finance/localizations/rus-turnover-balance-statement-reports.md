@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Turnover balance statement reports
-description: This topic provides information about turnover balance sheets for customers, vendors, and advanced holders.
+description: This article provides information about turnover balance sheets for customers, vendors, and advanced holders.
 author: v-nadyuz
 ms.date: 04/15/2020
 ms.topic: article

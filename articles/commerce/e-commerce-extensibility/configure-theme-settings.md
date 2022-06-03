@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure theme settings
-description: This topic describes how to configure theme settings in Microsoft Dynamics 365 Commerce.
+description: This article describes how to configure theme settings in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 09/21/2021
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to configure theme settings in Microsoft Dynamics 365 Commerce.
+This article describes how to configure theme settings in Microsoft Dynamics 365 Commerce.
 
 The Dynamics 365 Commerce e-Commerce online software development kit (SDK) lets theme designers specify various layouts for each module. Theme designers can then control specific layout options for images. The layouts are specified in the **\\src\\themes\\\<THEME\_NAME\>\\\<THEME\_NAME\>.theme.settings.json** file.
 

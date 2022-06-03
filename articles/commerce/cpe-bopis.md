@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure BOPIS in a Dynamics 365 Commerce evaluation environment
-description: This topic explains how to configure buy online, pick up in store (BOPIS) in a Microsoft Dynamics 365 Commerce evaluation environment after it has been provisioned.
+description: This article explains how to configure buy online, pick up in store (BOPIS) in a Microsoft Dynamics 365 Commerce evaluation environment after it has been provisioned.
 author: BrianShook
 ms.date: 07/16/2020
 ms.topic: article
@@ -29,19 +29,19 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic explains how to configure buy online, pickup in store (BOPIS) in a Microsoft Dynamics 365 Commerce evaluation environment after the environment has been provisioned.
+This article explains how to configure buy online, pickup in store (BOPIS) in a Microsoft Dynamics 365 Commerce evaluation environment after the environment has been provisioned.
 
 ## Prerequisite
 
-Complete the procedures in this topic only after your Commerce evaluation environment has been provisioned and configured. For information about how to provision and configure your environment, see [Provision a Dynamics 365 Commerce evaluation environment](provisioning-guide.md) and [Configure a Dynamics 365 Commerce evaluation environment](./cpe-post-provisioning.md).
+Complete the procedures in this article only after your Commerce evaluation environment has been provisioned and configured. For information about how to provision and configure your environment, see [Provision a Dynamics 365 Commerce evaluation environment](provisioning-guide.md) and [Configure a Dynamics 365 Commerce evaluation environment](./cpe-post-provisioning.md).
 
-After your Commerce environment has been provisioned and configured end to end, you can use this topic to enable BOPIS scenarios.
+After your Commerce environment has been provisioned and configured end to end, you can use this article to enable BOPIS scenarios.
 
 ## Configure the POS
 
 ### Configure Modern POS
 
-BOPIS scenarios that involve a credit card payment require a hardware station. The hardware station is built into Modern POS for Windows and Android clients. If you're using Cloud POS or Modern POS for iOS, the point of sale (POS) client must be paired with a shared hardware station. This topic explains how to configure BOPIS for Windows and Android clients. For information about how to set up a shared hardware station, see [Configure and install Retail hardware station](./retail-hardware-station-configuration-installation.md).
+BOPIS scenarios that involve a credit card payment require a hardware station. The hardware station is built into Modern POS for Windows and Android clients. If you're using Cloud POS or Modern POS for iOS, the point of sale (POS) client must be paired with a shared hardware station. This article explains how to configure BOPIS for Windows and Android clients. For information about how to set up a shared hardware station, see [Configure and install Retail hardware station](./retail-hardware-station-configuration-installation.md).
 
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> Registers**.
 2. Select register **SANFRAN-5**, and then select **Edit**.
@@ -71,7 +71,7 @@ BOPIS scenarios that involve a credit card payment require a hardware station. T
 5. An authentication dialog box appears. Select the account that uses the email address that was previously associated with worker **000713 - Andrew Collette**.
 
     > [!NOTE]
-    > If you haven't yet associated a worker with your identity, activation will be unsuccessful. In this case, follow the steps under the "Associate a worker with your identity" section in the [Configure a Dynamics 365 Commerce evaluation environment](cpe-post-provisioning.md#associate-a-worker-with-your-identity) topic.
+    > If you haven't yet associated a worker with your identity, activation will be unsuccessful. In this case, follow the steps under the "Associate a worker with your identity" section in the [Configure a Dynamics 365 Commerce evaluation environment](cpe-post-provisioning.md#associate-a-worker-with-your-identity) article.
     
 6. When you're prompted to let your organization manage the device, select **This app only**.
 7. When activation is completed, select **Get started**.

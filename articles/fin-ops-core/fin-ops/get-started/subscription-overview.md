@@ -2,7 +2,7 @@
 # required metadata
 
 title: Subscriptions, LCS projects, and Azure Active Directory tenants FAQ
-description: This topic provides answers to frequently asked questions about subscriptions and licenses, Azure AD tenants, and LCS Implementation projects.
+description: This article provides answers to frequently asked questions about subscriptions and licenses, Azure AD tenants, and LCS Implementation projects.
 author: ClaudiaBetz-Haubold 
 ms.date: 08/11/2020
 ms.topic: overview
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0
 
 When customers subscribe through a Microsoft Volume Licensing agreement or a Microsoft Cloud Solution Provider (CSP) agreement, they usually have one Microsoft Azure Active Directory (Azure AD) tenant, one Microsoft Dynamics Lifecycle Services (LCS) Implementation project and any number of sandbox environments that are deployed to one data center of the customer's choice, and one production environment. For more information about these core concepts, see [Finance and Operations application architecture](../imp-lifecycle/architecture-overview.md). Although this setup works well for most projects, more advanced scenarios are sometimes required, or changes during the implementation lifecycle must be accommodated.
 
-This topic provides answers to frequently asked questions about subscriptions and licenses, Azure AD tenants, and LCS Implementation projects.
+This article provides answers to frequently asked questions about subscriptions and licenses, Azure AD tenants, and LCS Implementation projects.
 
 For more information, see the following topics:
 

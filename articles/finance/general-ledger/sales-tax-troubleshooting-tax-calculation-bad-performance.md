@@ -2,7 +2,7 @@
 # required metadata
 
 title: Tax calculation performance affects transactions
-description: This topic provides troubleshooting information that is related to tax calculation performance and its effect on transactions.
+description: This article provides troubleshooting information that is related to tax calculation performance and its effect on transactions.
 author: shtao
 ms.date: 04/07/2021
 ms.topic: article

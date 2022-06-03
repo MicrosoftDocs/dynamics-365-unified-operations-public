@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Register transactions with reference to agreements 
-description: This topic provides information about registering agreements transactions.
+description: This article provides information about registering agreements transactions.
 author: v-nadyuz
 ms.date: 02/06/2020
 ms.topic: article
@@ -111,7 +111,7 @@ For more information about dimension control for settlements, see [Set up dimens
 
 1. Go to **Accounts payable \> Vendors \> All vendors**.
 2. On the **Invoice** tab, in the **Settle** section, select **Facture and payment settlement**.
-3. Settle transactions in the context of agreements as described in the previous section of this topic, [Settle factures on a customer in the context of agreements](#settle-factures-customer-agreements).
+3. Settle transactions in the context of agreements as described in the previous section of this article, [Settle factures on a customer in the context of agreements](#settle-factures-customer-agreements).
 
 ### Periodically settle sales or purchase transactions
 

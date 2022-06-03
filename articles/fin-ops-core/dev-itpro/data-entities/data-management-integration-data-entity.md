@@ -2,7 +2,7 @@
 # required metadata
 
 title: Data management and integration by using data entities overview
-description: This topic provides a brief overview of the mechanics of synchronous and asynchronous integration.
+description: This article provides a brief overview of the mechanics of synchronous and asynchronous integration.
 author: peakerbl
 ms.date: 07/25/2019
 ms.topic: overview
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides a brief overview of the mechanics of synchronous and asynchronous integration.
+This article provides a brief overview of the mechanics of synchronous and asynchronous integration.
 
 ## Synchronous services
 

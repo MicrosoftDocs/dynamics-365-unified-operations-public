@@ -2,7 +2,7 @@
 # required metadata
 
 title: Provision Human Resources
-description: This topic explains the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources.
+description: This article explains the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 01/07/2022
 ms.topic: article
@@ -33,13 +33,13 @@ ms.dyn365.ops.version: Human Resources
 
 
 
-This topic explains the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources. 
+This article explains the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources. 
 
 ## Prerequisites
 
 Before you begin provisioning a new production environment, the following prerequisites must be in place:
 
-- You have purchased Human Resources through a Cloud Solution Provider (CSP) or enterprise architecture (EA) agreement. If you have an existing Microsoft Dynamics 365 license that already includes the Human Resources service plan, and you can't complete the steps in this topic, contact Support.
+- You have purchased Human Resources through a Cloud Solution Provider (CSP) or enterprise architecture (EA) agreement. If you have an existing Microsoft Dynamics 365 license that already includes the Human Resources service plan, and you can't complete the steps in this article, contact Support.
 
 - The global administrator has signed in to [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) and created a new Human Resources project. 
 

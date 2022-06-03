@@ -1,6 +1,6 @@
 ---
 title: Planned orders simplified
-description: This topic describes how you can view, manage, and firm planned orders by using the Planned orders simplified page.
+description: This article describes how you can view, manage, and firm planned orders by using the Planned orders simplified page.
 author: t-benebo
 ms.date: 01/24/2022
 ms.topic: article
@@ -17,13 +17,13 @@ ms.dyn365.ops.version: 10.0.25
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how you can view, manage, and firm planned orders by using the **Planned orders simplified** page.
+This article describes how you can view, manage, and firm planned orders by using the **Planned orders simplified** page.
 
 The **Planned orders simplified** page is a simplified version of the **Planned orders** page. It provides fewer options but is faster to work with when all you have to do is review, approve, and firm your planned orders.
 
 ## Turn on this feature for your system
 
-If your system doesn't already include the features that are described in this topic, go to [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the *Planned orders simplified* feature.
+If your system doesn't already include the features that are described in this article, go to [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the *Planned orders simplified* feature.
 
 ## View, manage, and firm planned orders
 

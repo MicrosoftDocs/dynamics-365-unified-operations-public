@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage business partner users on B2B e-commerce websites
-description: This topic describes how to add, delete, and edit business partner users on Microsoft Dynamics 365 Commerce business-to-business (B2B) e-commerce websites and in Commerce headquarters.
+description: This article describes how to add, delete, and edit business partner users on Microsoft Dynamics 365 Commerce business-to-business (B2B) e-commerce websites and in Commerce headquarters.
 author: josaw1
 ms.date: 04/19/2022
 ms.topic: article
@@ -30,10 +30,10 @@ ms.dyn365.ops.version: 10.0.14
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how to add, delete, and edit business partner users on Microsoft Dynamics 365 Commerce business-to-business (B2B) e-commerce websites and in Commerce headquarters.
+This article describes how to add, delete, and edit business partner users on Microsoft Dynamics 365 Commerce business-to-business (B2B) e-commerce websites and in Commerce headquarters.
 
 > [!NOTE]
-> - The [Manage B2B business partners using customer hierarchies](partners-customer-hierarchies.md) topic is a prerequisite for this document.
+> - The [Manage B2B business partners using customer hierarchies](partners-customer-hierarchies.md) article is a prerequisite for this document.
 > - Ensure that you initialize the document types entity in Commerce headquarters by opening the **Document types** form at **Organization administration \> Document management \> Document types**.
 
 B2B e-commerce websites require that organizations register to become business partners. After an organization submits registration details to a B2B e-commerce website, the registration request goes through a qualification process. If the organization is successfully qualified, it's onboarded as a business partner.
@@ -126,7 +126,7 @@ To onboard business partners and users in Commerce headquarters, follow these st
 
 ## Additional information
 
-- All the jobs that are mentioned in this topic can be configured to run on a schedule in a batch format. The expectation is that business partners will configure batch jobs as required.
+- All the jobs that are mentioned in this article can be configured to run on a schedule in a batch format. The expectation is that business partners will configure batch jobs as required.
 - Currently, only one user/customer record can be designated as an administrator user, and that role can be changed only in Commerce headquarters. There is no support for self-service capabilities that let business partners to designate multiple administrators or change administrators from B2B e-commerce websites.
 - Although spending limits can be defined for users, enforcement of spending limits during the order entry process hasn't yet been implemented.
 - All business logic and validation for a user's experience on a B2B e-commerce website are based on the configuration of the customer record that is mapped to the user in Commerce headquarters.

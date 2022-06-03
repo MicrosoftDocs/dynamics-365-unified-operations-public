@@ -2,7 +2,7 @@
 # required metadata
 
 title: Integration between Finance and Operations apps and third-party services 
-description: This topic is intended to help architects and developers make sound design decisions when they implement integration scenarios.
+description: This article is intended to help architects and developers make sound design decisions when they implement integration scenarios.
 author: peakerbl
 ms.date: 11/23/2020
 ms.topic: overview
@@ -33,9 +33,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 
 
-This topic is intended to help architects and developers make sound design decisions when they implement integration scenarios.
+This article is intended to help architects and developers make sound design decisions when they implement integration scenarios.
 
-The topic describes integration patterns, integration scenarios, and integration solutions and best practices. However, it doesn't include technical details about how to use or set up every integration pattern. It also doesn't include sample integration code.
+The article describes integration patterns, integration scenarios, and integration solutions and best practices. However, it doesn't include technical details about how to use or set up every integration pattern. It also doesn't include sample integration code.
 
 > [!NOTE]
 > When providing guidance and discussing scenarios for choosing a pattern, data volume numbers are mentioned. These numbers must be used only to gauge the pattern and must not be considered as hard system limits. The absolute numbers will vary in real production environments due to various factors, configurations are only one aspect of this scenario. 

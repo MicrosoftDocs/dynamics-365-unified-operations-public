@@ -2,7 +2,7 @@
 # required metadata
 
 title: Payment of invoices that include tax
-description: This topic provides information about payment of an invoice that includes tax.
+description: This article provides information about payment of an invoice that includes tax.
 author: EricWangChen
 ms.date: 06/03/2019
 ms.topic: article

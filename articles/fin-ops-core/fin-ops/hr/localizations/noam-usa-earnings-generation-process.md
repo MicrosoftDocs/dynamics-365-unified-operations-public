@@ -2,7 +2,7 @@
 # required metadata
 
 title: Earnings and earnings generation FAQ
-description: This topic answers some frequently asked questions about earnings and generating earnings.
+description: This article answers some frequently asked questions about earnings and generating earnings.
 author: andreabichsel
 ms.date: 06/20/2017
 ms.topic: article
@@ -31,9 +31,9 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../../includes/banner.md)]
 
-This topic answers some frequently asked questions about earnings and generating earnings. It includes questions about distributions and earning lines, recurring earnings, calculating salaries for workers who are on leave, and earnings generation.
+This article answers some frequently asked questions about earnings and generating earnings. It includes questions about distributions and earning lines, recurring earnings, calculating salaries for workers who are on leave, and earnings generation.
 
-This topic describes functionality that is available only if the **Payroll - USA** configuration key is selected.
+This article describes functionality that is available only if the **Payroll - USA** configuration key is selected.
 
 ## Can I change the distributions for an earning line?
 
@@ -50,7 +50,7 @@ Recurring earnings are earnings that are assigned to workers, and that occur reg
 
 ## How are earnings calculated for salaries?
 
-Salary earnings are generated automatically during the generation process that is described earlier in this topic. Here are some important notes about salary earnings:
+Salary earnings are generated automatically during the generation process that is described earlier in this article. Here are some important notes about salary earnings:
 
 - Positions that are identified as salaried positions should receive a base earning amount, even if they have earnings that have been entered manually. For example, if you enter eight hours of sick time, the earnings statement lines are adjusted so that a worker receives no more and no less than the salary amount that is authorized for that worker's position.
 - Recurring earnings and the earnings from schedules are created first, because salary amounts might be affected by other earnings that are automatically generated if those other earnings are considered base salary components.
@@ -82,7 +82,7 @@ When you generate earnings, you might receive the following message: "The select
 
 ## Don't see your question here?
 
-We're working to include as many questions as we can, so that Help will be more useful to people just like you. Tell us what question you would like to add to this topic. Send email to <adocs@microsoft.com>. Announcements: To see known issues and recent fixes, use [Issue search](/dynamicsax-2012/appuser-itpro/issue-search-lifecycle-services-lcs) in [Microsoft Dynamics Lifecycle Services](https://go.microsoft.com/fwlink/?LinkID=306505) (LCS).
+We're working to include as many questions as we can, so that Help will be more useful to people just like you. Tell us what question you would like to add to this article. Send email to <adocs@microsoft.com>. Announcements: To see known issues and recent fixes, use [Issue search](/dynamicsax-2012/appuser-itpro/issue-search-lifecycle-services-lcs) in [Microsoft Dynamics Lifecycle Services](https://go.microsoft.com/fwlink/?LinkID=306505) (LCS).
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up Business process modeler libraries 
-description: This topic explains how to create and work with Business process modeler (BPM) libraries.
+description: This article explains how to create and work with Business process modeler (BPM) libraries.
 author: kfend
 ms.date: 06/20/2017
 ms.topic: article
@@ -29,7 +29,7 @@ ms.author: omarc
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to create and work with Business process modeler (BPM) libraries.
+This article explains how to create and work with Business process modeler (BPM) libraries.
 
 ## Create a business process library
 

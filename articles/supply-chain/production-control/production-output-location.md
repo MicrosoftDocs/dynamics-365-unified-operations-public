@@ -2,7 +2,7 @@
 # required metadata
 
 title: Production output location
-description: This topic describes the hierarchy that is used to identify the production output location.
+description: This article describes the hierarchy that is used to identify the production output location.
 author: johanhoffmann
 ms.date: 04/04/2017
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the hierarchy that is used to identify the production output location.
+This article describes the hierarchy that is used to identify the production output location.
 
 The production output location is the location where a finished good is first stored after it's produced. Usually, this location is close to the production process that produces the finished good. The production output location is used as intermediate storage for the material before it's moved on to the shipment area, a storage location, a production input location for a downstream production process, and so on. 
 

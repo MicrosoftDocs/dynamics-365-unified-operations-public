@@ -43,7 +43,7 @@ Setting up an experiment, creating variations, and running an experiment is an i
 
 [ ![Experimentation lifecycle.](./media/experimentation_lifecycle.svg) ](./media/experimentation_lifecycle.svg#lightbox)
 
-To learn more about each step in the experimentation process, refer to the following topics.
+To learn more about each step in the experimentation process, refer to the following articles.
 - [Identify a hypothesis and determine metrics for an experiment](experimentation-identify.md)
 - [Set up an experiment](experimentation-setup.md)
 - [Connect and edit an experiment](experimentation-connect-edit.md)

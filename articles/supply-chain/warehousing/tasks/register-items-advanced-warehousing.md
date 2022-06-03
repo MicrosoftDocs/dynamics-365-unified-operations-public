@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Register items for an advanced warehousing enabled item using an item arrival journal
-description: This topic presents a scenario that shows how to register items using the item arrival journal when you are using advanced warehouse management processes. 
+description: This article presents a scenario that shows how to register items using the item arrival journal when you are using advanced warehouse management processes. 
 author: Mirzaab
 ms.date: 03/24/2021
 ms.topic: business-process 
@@ -27,11 +27,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic presents a scenario that shows how to register items using the item arrival journal when you are using advanced warehouse management processes. This would usually be done by a receiving clerk.
+This article presents a scenario that shows how to register items using the item arrival journal when you are using advanced warehouse management processes. This would usually be done by a receiving clerk.
 
 ## Enable sample data
 
-To work through this scenario using the sample records and values specified in this topic, you must be using a system where the standard demo data is installed, and you must select the *USMF* legal entity before you begin.
+To work through this scenario using the sample records and values specified in this article, you must be using a system where the standard demo data is installed, and you must select the *USMF* legal entity before you begin.
 
 You can instead work through this scenario by substituting values from your own data provided that you have the following data available:
 

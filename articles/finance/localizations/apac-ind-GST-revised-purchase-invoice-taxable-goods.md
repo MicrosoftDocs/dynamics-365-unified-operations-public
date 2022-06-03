@@ -2,7 +2,7 @@
 # required metadata
 
 title: Revise a purchase invoice that has taxable goods
-description: This topic explains how to revise a purchase invoice that has taxable goods.
+description: This article explains how to revise a purchase invoice that has taxable goods.
 author: EricWangChen
 ms.date: 06/04/2019
 ms.topic: article

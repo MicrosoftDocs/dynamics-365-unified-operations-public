@@ -2,7 +2,7 @@
 # required metadata
 
 title: File upload control
-description: This topic provides information about the file upload control. This control lets users upload files.
+description: This article provides information about the file upload control. This control lets users upload files.
 author: aneesmsft
 ms.date: 07/27/2020
 ms.topic: article
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 
-This topic provides information about the file upload control. This control lets users upload files.
+This article provides information about the file upload control. This control lets users upload files.
 
 ## Overview
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Data events
-description: This topic provides an overview of data events.
+description: This article provides an overview of data events.
 author: jaredha
 ms.date: 05/03/2022
 ms.topic: article

@@ -1,6 +1,6 @@
 ---
 title: Guidance for dual-write setup
-description: This topic describes the scenarios that are supported for dual-write setup.
+description: This article describes the scenarios that are supported for dual-write setup.
 author: RamaKrishnamoorthy
 ms.date: 10/12/2020
 ms.topic: article
@@ -73,11 +73,11 @@ To sync the existing Dataverse data to the Finance and Operations app, follow th
 3. [Bootstrap](bootstrap-company-data.md) the Dataverse data by using a three-letter International Organization for Standardization (ISO) company code.
 4. Run the **Initial sync** functionality for the tables that you want to sync data for.
 
-For links to an example and an alternative approach, see the [Example](#example) section later in this topic.
+For links to an example and an alternative approach, see the [Example](#example) section later in this article.
 
 ## <a id="new-data-new"></a>A new Finance and Operations app instance that has data and a new customer engagement app instance
 
-To set up a dual-write connection between a new instance of a Finance and Operations app that has data and a new instance of a customer engagement app, follow the steps in the [A new Finance and Operations app instance and a new customer engagement app instance](#new-new) section earlier in this topic. When the connection setup is completed, if you want to sync the data to the customer engagement app, follow these steps.
+To set up a dual-write connection between a new instance of a Finance and Operations app that has data and a new instance of a customer engagement app, follow the steps in the [A new Finance and Operations app instance and a new customer engagement app instance](#new-new) section earlier in this article. When the connection setup is completed, if you want to sync the data to the customer engagement app, follow these steps.
 
 1. Open the Finance and Operations app from the LCS page, sign in, and then go to **Data Management \> Dual-write**.
 2. Run the **Initial sync** functionality for the tables that you want to sync data for.
@@ -86,7 +86,7 @@ For links to an example and an alternative approach, see the [Example](#example)
 
 ## <a id="new-data-existing"></a>A new Finance and Operations app instance that has data and an existing customer engagement app instance
 
-To set up a dual-write connection between a new instance of a Finance and Operations app that has data and an existing instance of a customer engagement app, follow the steps in the [A new Finance and Operations app instance and an existing customer engagement app instance](#new-existing) section earlier in this topic. When the connection setup is completed, if you want to sync the data to the customer engagement app, follow these steps.
+To set up a dual-write connection between a new instance of a Finance and Operations app that has data and an existing instance of a customer engagement app, follow the steps in the [A new Finance and Operations app instance and an existing customer engagement app instance](#new-existing) section earlier in this article. When the connection setup is completed, if you want to sync the data to the customer engagement app, follow these steps.
 
 1. Open the Finance and Operations app from the LCS page, sign in, and then go to **Data Management \> Dual-write**.
 2. Run the **Initial sync** functionality for the tables that you want to sync data for.

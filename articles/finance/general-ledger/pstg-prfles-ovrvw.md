@@ -2,7 +2,7 @@
 # required metadata
 
 title: Posting profiles overview
-description: This topic explains how posting profiles are used throughout Microsoft Dynamics 365 apps.
+description: This article explains how posting profiles are used throughout Microsoft Dynamics 365 apps.
 author: rachel-profitt
 ms.date: 12/03/2021
 ms.topic: article

@@ -1,6 +1,6 @@
 ---
 title: Dual-write home page
-description: This topic provides links to information about dual-write.
+description: This article provides links to information about dual-write.
 author: tonyafehr
 ms.date: 11/24/2021
 ms.topic: article

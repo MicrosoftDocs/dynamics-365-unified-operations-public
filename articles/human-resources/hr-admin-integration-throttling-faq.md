@@ -2,7 +2,7 @@
 # required metadata
 
 title: Throttling in Human Resources FAQ
-description: This topic provides answers to some frequently asked questions (FAQs) about throttling for Open Data Protocol (OData) and custom service-based integrations in Dynamics 365 Human Resources.
+description: This article provides answers to some frequently asked questions (FAQs) about throttling for Open Data Protocol (OData) and custom service-based integrations in Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 01/22/2021
 ms.topic: article
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This topic provides answers to some frequently asked questions (FAQ) about throttling for Open Data Protocol (OData) and custom service-based integrations in Dynamics 365 Human Resources. Throttling prevents the over-utilization of resources. It preserves system responsiveness and ensures consistent availability and performance.
+This article provides answers to some frequently asked questions (FAQ) about throttling for Open Data Protocol (OData) and custom service-based integrations in Dynamics 365 Human Resources. Throttling prevents the over-utilization of resources. It preserves system responsiveness and ensures consistent availability and performance.
 
 ## What happens when a request is throttled?
 

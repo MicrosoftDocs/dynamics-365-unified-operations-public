@@ -2,7 +2,7 @@
 # required metadata
 
 title: Connect an experiment and edit variations
-description: This topic describes how to connect an experiment in a third-party service to Dynamics 365 Commerce, and how to edit variations for the experiment.
+description: This article describes how to connect an experiment in a third-party service to Dynamics 365 Commerce, and how to edit variations for the experiment.
 author:  sushma-rao 
 ms.date: 06/03/2022
 ms.topic: article
@@ -28,9 +28,9 @@ ms.dyn365.ops.version: AX 10.0.13
 
 # Connect an experiment and edit variations
 
-This topic describes how to connect your experiment in Commerce and make changes to your variations so that they align with your hypothesis. 
+This article describes how to connect your experiment in Commerce and make changes to your variations so that they align with your hypothesis. 
 
-The following diagram shows all of the steps involved in setting up and running an experiment on an e-Commerce website in Dynamics 365 Commerce. Additional steps are covered in separate topics.
+The following diagram shows all of the steps involved in setting up and running an experiment on an e-Commerce website in Dynamics 365 Commerce. Additional steps are covered in separate articles.
 
 [ ![Experimentation user journey - Connect & Edit.](./media/experimentation_connect_edit.svg) ](./media/experimentation_connect_edit.svg#lightbox)
 

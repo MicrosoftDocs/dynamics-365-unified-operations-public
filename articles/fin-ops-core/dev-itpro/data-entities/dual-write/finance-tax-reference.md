@@ -1,6 +1,6 @@
 ---
 title: Access to finance and tax reference data
-description: This topic provides information about access to finance and tax reference data.
+description: This article provides information about access to finance and tax reference data.
 author: RamaKrishnamoorthy
 ms.date: 01/27/2020
 ms.topic: article

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Business process modeler library (updated BPM experience)
-description: This topic explains how to create and work with the updated Business process modeler (BPM) libraries experience.
+description: This article explains how to create and work with the updated Business process modeler (BPM) libraries experience.
 author: kfend
 ms.date: 06/13/2018
 ms.topic: article
@@ -29,7 +29,7 @@ ms.author: omarc
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to create and work with Business process modeler (BPM) libraries.
+This article explains how to create and work with Business process modeler (BPM) libraries.
 
 ## Create a business process library
 

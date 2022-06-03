@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create a default customer
-description: This topic describes how to create a default customer to use when creating a channel in Microsoft Dynamics 365 Commerce.
+description: This article describes how to create a default customer to use when creating a channel in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 01/27/2020
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.8
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to create a default customer to use when creating a channel in Microsoft Dynamics 365 Commerce.
+This article describes how to create a default customer to use when creating a channel in Microsoft Dynamics 365 Commerce.
 
 When creating a channel, you will need to provide a default customer. A default customer can easily be created after first creating the customer group and customer address book.
 

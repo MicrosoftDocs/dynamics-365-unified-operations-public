@@ -2,7 +2,7 @@
 # required metadata
 
 title: Multi-level assets
-description: This topic explains how to create and delete multi-level assets.
+description: This article explains how to create and delete multi-level assets.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
  
 
-This topic explains how to create and delete multi-level assets. You can create assets and related sub-assets in a hierarchical tree structure. In this way, you can show relations and dependencies among assets. Maintenance jobs can be related to all levels of the tree structure. Statistics can also be created for an individual level or as a sum of all sub-asset levels.
+This article explains how to create and delete multi-level assets. You can create assets and related sub-assets in a hierarchical tree structure. In this way, you can show relations and dependencies among assets. Maintenance jobs can be related to all levels of the tree structure. Statistics can also be created for an individual level or as a sum of all sub-asset levels.
 
 On the **All Assets** list page (**Asset management** \> **Common** \> **Assets** \> **All assets**), the **Asset** column lists assets in hierarchical order. The **Parent** column shows the related parent. Additionally, if assets and sub-assets have already been created, the **Asset tree** section in the **Related information** pane shows the assets in a tree structure.
 

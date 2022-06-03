@@ -2,7 +2,7 @@
 # required metadata
 
 title: Linked refunds of previously approved and confirmed transactions
-description: This topic describes how to enable and use Linked refunds.
+description: This article describes how to enable and use Linked refunds.
 author: josaw1
 ms.date: 06/30/2021
 ms.topic: article
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Retail 10.0.1 update
 
 Returns are an important operation for retailers. The ability to accept returns for sales and refund payments to customers gives retailers a way to service the needs of customers and to help resolve their issues.
 
-This topic provides information about how to configure and use linked refunds. A linked refund is a refund of a transaction that was previously approved and confirmed. The refund can be either a full refund or a partial refund of the transaction, and it can't exceed the full amount of the original authorization. The functionality for linked refunds is available in Microsoft Dynamics 365 Retail version 10.0.1.
+This article provides information about how to configure and use linked refunds. A linked refund is a refund of a transaction that was previously approved and confirmed. The refund can be either a full refund or a partial refund of the transaction, and it can't exceed the full amount of the original authorization. The functionality for linked refunds is available in Microsoft Dynamics 365 Retail version 10.0.1.
 
 In Microsoft Dynamics 365 Retail version 10.0 and earlier, retailers can process refunds to cards, but cashiers must manually specify these refunds. Cashiers can process refunds to the original mode of payment only if the customer provides that mode of payment. Therefore, by providing new card details, customers can use the return process to move balances from one card to another and therefore do unauthorized card balance transfers.
 
@@ -46,7 +46,7 @@ By using linked refunds, retailers can greatly reduce risk by making sure that r
 
 ### Additional setup
 
-Customers who aren't using the out-of-box implementation of the Adyen Connector must set up the connector that supports tokenization of credit cards. All the scenarios that are described in this topic can be implemented by using the standard Payments software development kit (SDK) that is provided with Commerce. The [Dynamics 365 Payment Connector for Adyen](adyen-connector.md?tabs=8-1-3) provides an out-of-box implementation of every scenario that is described here.
+Customers who aren't using the out-of-box implementation of the Adyen Connector must set up the connector that supports tokenization of credit cards. All the scenarios that are described in this article can be implemented by using the standard Payments software development kit (SDK) that is provided with Commerce. The [Dynamics 365 Payment Connector for Adyen](adyen-connector.md?tabs=8-1-3) provides an out-of-box implementation of every scenario that is described here.
 
 ## Turn on the linked refunds functionality
 
@@ -106,7 +106,7 @@ When the cashier selects a credit card authorization, the payment refund is proc
 
 After the full amount is successfully refunded, the cashier can complete the transaction, and a receipt can be printed as configured.
 
-## Related topics
+## Related articles
 
 - [Payments FAQ](payments-retail.md)
 - [Dynamics 365 Payment Connector for Adyen](adyen-connector.md?tabs=8-1-3)

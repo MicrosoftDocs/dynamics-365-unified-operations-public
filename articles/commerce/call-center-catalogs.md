@@ -2,7 +2,7 @@
 # required metadata
 
 title: Call center catalogs
-description: This topic describes the call center–specific functionality for catalogs in Dynamics 365 Commerce.
+description: This article describes the call center–specific functionality for catalogs in Dynamics 365 Commerce.
 author: josaw1
 ms.date: 05/15/2018
 ms.topic: article
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-This topic describes the call center–specific functionality linked to the catalog capabilities in Dynamics 365 Commerce.
+This article describes the call center–specific functionality linked to the catalog capabilities in Dynamics 365 Commerce.
 
 The catalog features found in Commerce can be used for multiple purposes. Initially the catalog features were created to support third-party e-Commerce integrations. Catalog setup allowed companies to create a grouping of products and attributes that could be published externally for consumption by a third-party e-Commerce solution.
 

@@ -1,6 +1,6 @@
 ---
 title: Differences between built-in master planning and Planning Optimization
-description: This topic lists features that Planning Optimization doesn't yet support and that aren't listed on the Planning Optimization fit analysis page.
+description: This article lists features that Planning Optimization doesn't yet support and that aren't listed on the Planning Optimization fit analysis page.
 author: t-benebo
 ms.date: 07/30/2021
 ms.topic: article
@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.21
 
 [!include [banner](../../includes/banner.md)]
 
-Planning Optimization results might differ from results from the built-in master planning engine. The differences can be caused by pending features. This topic lists features that Planning Optimization doesn't yet support and that aren't listed on the **[Planning Optimization fit analysis](planning-optimization-fit-analysis.md)** page].
+Planning Optimization results might differ from results from the built-in master planning engine. The differences can be caused by pending features. This article lists features that Planning Optimization doesn't yet support and that aren't listed on the **[Planning Optimization fit analysis](planning-optimization-fit-analysis.md)** page].
 
 | Feature | Current behavior in Planning Optimization |
 |---|---|

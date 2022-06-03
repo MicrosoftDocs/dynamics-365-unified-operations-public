@@ -1,6 +1,6 @@
 ---
 title: Deploy and access development environments
-description: This topic describes how to access development instances, configure local development VMs, and find configuration settings for developers and administrators.
+description: This article describes how to access development instances, configure local development VMs, and find configuration settings for developers and administrators.
 author: laneswenka
 ms.date: 05/24/2022
 ms.topic: article
@@ -18,7 +18,7 @@ ms.search.validFrom: 2016-02-28
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to access development instances, configure local development virtual machines (VMs), and find important configurations settings for developers and administrators.
+This article describes how to access development instances, configure local development virtual machines (VMs), and find important configurations settings for developers and administrators.
 
 > [!NOTE]
 > - Microsoft Support may provide limited troubleshooting on Tier 1 development environments.
@@ -70,7 +70,7 @@ The system can be accessed by end users. The administrator can add users to this
 
 ### Accessing the cloud instance through Remote Desktop
 
-Cloud environments can be accessed both as an end user and as a developer. The developer gets access to the system through Remote Desktop credentials. The Remote Desktop credentials are obtained from the environment page on the LCS project site (see the illustration earlier in this topic).
+Cloud environments can be accessed both as an end user and as a developer. The developer gets access to the system through Remote Desktop credentials. The Remote Desktop credentials are obtained from the environment page on the LCS project site (see the illustration earlier in this article).
 
 ![Restricted admin access.](media/restricted-admin.png)
 

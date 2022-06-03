@@ -2,7 +2,7 @@
 # required metadata
 
 title: Prepare content for use with the Help pane
-description: This topic describes how you can prepare content so that it can be used with the Help pane. 
+description: This article describes how you can prepare content so that it can be used with the Help pane. 
 author: edupont04
 ms.date: 05/11/2020
 ms.topic: article
@@ -47,7 +47,7 @@ If you have existing content from AX 2012, you can reuse it for Finance, Supply 
 
 ## Creating new Help content
 
-You use the [AzureSearchCustomHelp](walkthrough-help-azure.md) solution that is provided as part of the [Custom Help Toolkit](custom-help-toolkit.md) to connect your content to the **Help** pane. The **Help** pane will generate a query that is run against the search service's index. Context-sensitive Help and full-text search in the **AzureSearchCustomHelp** solution require that each topic contain specific metadata.
+You use the [AzureSearchCustomHelp](walkthrough-help-azure.md) solution that is provided as part of the [Custom Help Toolkit](custom-help-toolkit.md) to connect your content to the **Help** pane. The **Help** pane will generate a query that is run against the search service's index. Context-sensitive Help and full-text search in the **AzureSearchCustomHelp** solution require that each article contain specific metadata.
 
 ### <a name="metadata"></a>Metadata requirements for custom Help topics
 
@@ -58,14 +58,14 @@ The following metadata must be present in your topics for context-sensitive Help
 | title | The value is used for full-text search from the **Help** pane. |
 | description | The value is used for full-text search from the **Help** pane. |
 | ms.search.form | The value contains the Application Object Tree (AOT) name of a page and is used for context-sensitive search from the **Help** pane. |
-| ms.locale | The value indicates the language of the topic. It's mapped against the current browser locale when the **Help** pane searches the content. Language fallback can be configured for the target custom Help website. For more information, see [Language and locale descriptors in the product and in Help](language-locale.md). |
-| ms.search.scope | The value determines which client the Help topic is shown in. You can specify one or more values. Values include **Core**, **Operations**, **Retail**, and **Human Resources**. |
+| ms.locale | The value indicates the language of the article. It's mapped against the current browser locale when the **Help** pane searches the content. Language fallback can be configured for the target custom Help website. For more information, see [Language and locale descriptors in the product and in Help](language-locale.md). |
+| ms.search.scope | The value determines which client the Help article is shown in. You can specify one or more values. Values include **Core**, **Operations**, **Retail**, and **Human Resources**. |
 
-The following table describes the values that can be specified for the **ms.search.scope** property. You can specify one or more values. The values determine which client a Help topic is shown in.
+The following table describes the values that can be specified for the **ms.search.scope** property. You can specify one or more values. The values determine which client a Help article is shown in.
 
 | Value | Description |
 |-------|-------------|
-| Core | If this value is present, the topic appears in the **Help** pane. Otherwise, the topic doesn't appear in the **Help** pane. This value is set for the part of the Microsoft content that must always be available in the **Help** pane, for all users across all supported Dynamics 365 solutions. |
+| Core | If this value is present, the article appears in the **Help** pane. Otherwise, the article doesn't appear in the **Help** pane. This value is set for the part of the Microsoft content that must always be available in the **Help** pane, for all users across all supported Dynamics 365 solutions. |
 | Operations | This value applies to solutions that are based on Finance or Supply Chain Management. |
 | Retail | This value applies to solutions that are based on Commerce. |
 | Human Resources | This value applies to solutions that are based on Dynamics 365 Human Resources. |

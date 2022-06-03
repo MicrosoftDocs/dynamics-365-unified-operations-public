@@ -2,7 +2,7 @@
 # required metadata
 
 title: List of ER functions in the type conversion category
-description: This topic provides information about the conversion functions that are supported in Electronic reporting (ER).
+description: This article provides information about the conversion functions that are supported in Electronic reporting (ER).
 author: NickSelin
 ms.date: 12/05/2019
 ms.prod: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-Electronic reporting (ER) type conversion functions can be used to convert values between types. This topic provides a summary of these functions.
+Electronic reporting (ER) type conversion functions can be used to convert values between types. This article provides a summary of these functions.
 
 ## Type conversion functions
 

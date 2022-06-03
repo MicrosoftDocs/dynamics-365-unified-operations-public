@@ -2,7 +2,7 @@
 # required metadata
 
 title: Parse incoming documents
-description: This topic provides information about how to set up Electronic reporting formats that can be used to parse incoming documents. 
+description: This article provides information about how to set up Electronic reporting formats that can be used to parse incoming documents. 
 author: nickselin
 ms.date: 11/24/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 7.3
 # Parse incoming documents
 [!include [banner](../includes/banner.md)]
 
-This topic covers the following three tasks:
+This article covers the following three tasks:
 
 - [Parse incoming documents to update application data](#parse-incoming-documents-to-update-application-data)
 - [Parse incoming documents in Excel format](#parse-incoming-documents-in-excel-format)

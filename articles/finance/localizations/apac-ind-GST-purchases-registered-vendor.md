@@ -2,7 +2,7 @@
 # required metadata
 
 title: Purchases from registered vendors
-description: This topic explains how to work with purchases that are made by registered vendors.
+description: This article explains how to work with purchases that are made by registered vendors.
 author: EricWangChen
 ms.date: 06/04/2019
 ms.topic: article

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Deploy custom Help to Azure
-description: This topic walks you through an example that shows how you can deploy Microsoft Dynamics 365 Help content to an Azure web app. 
+description: This article walks you through an example that shows how you can deploy Microsoft Dynamics 365 Help content to an Azure web app. 
 author: edupont04
 ms.date: 05/11/2020
 ms.topic: article
@@ -31,13 +31,13 @@ ms.dyn365.ops.version: Operations
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the steps for setting up a web app to host your content and for setting up a search service to make the content discoverable by the in-product **Help** pane. You will set up a Microsoft Azure web app and then use that web app to host content that is connected to the in-product **Help** pane.
+This article describes the steps for setting up a web app to host your content and for setting up a search service to make the content discoverable by the in-product **Help** pane. You will set up a Microsoft Azure web app and then use that web app to host content that is connected to the in-product **Help** pane.
 
-If you don't have an [Azure subscription](/azure/guides/developer/azure-developer-guide#understanding-accounts-subscriptions-and-billing), create an account before you follow the steps in this topic. You can start with a free account for 12 months. For more information, see [Create your Azure free account today](https://azure.microsoft.com/free/).
+If you don't have an [Azure subscription](/azure/guides/developer/azure-developer-guide#understanding-accounts-subscriptions-and-billing), create an account before you follow the steps in this article. You can start with a free account for 12 months. For more information, see [Create your Azure free account today](https://azure.microsoft.com/free/).
 
 ## Get started
 
-The [Prepare content for use with the Help pane](preparing-content.md) topic describes the steps for preparing Help content so that it can be used with the in-product **Help** pane. After you have a set of HTML files and their equivalent JavaScript Object Notation (JSON) files, you can set up the web app and the search service.
+The [Prepare content for use with the Help pane](preparing-content.md) article describes the steps for preparing Help content so that it can be used with the in-product **Help** pane. After you have a set of HTML files and their equivalent JavaScript Object Notation (JSON) files, you can set up the web app and the search service.
 
 ### Process overview
 
@@ -59,7 +59,7 @@ The general process for creating your Azure resources consists of the following 
 
     In this example, an API tool that is named [Postman](https://www.postman.com/) is used to make the REST API calls. To use a language-specific index analyzer, you must create language-specific indexes.
 
-In the remaining sections of this topic, the assumption is that you have an Azure account and a valid subscription. If you don't have an [Azure subscription](/azure/guides/developer/azure-developer-guide#understanding-accounts-subscriptions-and-billing), create an account before you begin. You can start with a free account for 12 months. For more information, see [Create your Azure free account today](https://azure.microsoft.com/free/).
+In the remaining sections of this article, the assumption is that you have an Azure account and a valid subscription. If you don't have an [Azure subscription](/azure/guides/developer/azure-developer-guide#understanding-accounts-subscriptions-and-billing), create an account before you begin. You can start with a free account for 12 months. For more information, see [Create your Azure free account today](https://azure.microsoft.com/free/).
 
 ## <a name="resgr"></a>Create a resource group
 
@@ -130,7 +130,7 @@ In the previous section, you created a search service. In this section, you will
 ### <a name="searchdatasource"></a>Create a data source
 
 1. Open Postman, and create a new POST request. If you're unfamiliar with this tool, see [Explore Azure Cognitive Search REST APIs using Postman](/azure/search/search-get-started-postman).
-2. In the **Enter request URL** field, enter `https://[AzureSearchServicename].search.windows.net/datasources?api-version=2017-11-11`. Replace **\[AzureSearchServicename\]** with the name of the search service that you created in the [Create a search service](#searchservice) section of this topic (for example, **mycustomhelpsearch**).
+2. In the **Enter request URL** field, enter `https://[AzureSearchServicename].search.windows.net/datasources?api-version=2017-11-11`. Replace **\[AzureSearchServicename\]** with the name of the search service that you created in the [Create a search service](#searchservice) section of this article (for example, **mycustomhelpsearch**).
 3. On the **Headers** tab, set **"Content-type"** to **application/json**, and set **api-key** to the key from your Azure Cognitive Search service. You can find the key in **Access keys** under **Settings** on the left side of the search service.
 4. In the **Authorization** tab, set **Type** to **No Auth**.
 5. On the **Body** tab, paste the following text.
@@ -252,7 +252,7 @@ You can optionally use Postman to test the search. For an example that shows how
 
 ## Next steps
 
-If you completed all the steps in this topic, your Help content has now been uploaded to an Azure web app, and it has been indexed.
+If you completed all the steps in this article, your Help content has now been uploaded to an Azure web app, and it has been indexed.
 
 The next step is to extend the **Help** pane so that it can detect your content. In that way, when users open the **Help** pane in your Dynamics 365 solution, the in-product **Help** pane will be able to generate context-sensitive links to your Help. For more information, see [Connect a custom Help website to the Help pane](connect-help-pane.md).
 

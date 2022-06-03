@@ -2,7 +2,7 @@
 # required metadata
 
 title: Close the general ledger at period end
-description: This topic describes the tasks that are typically completed when performing a period closing for General ledger. 
+description: This article describes the tasks that are typically completed when performing a period closing for General ledger. 
 author: aprilolson
 ms.date: 08/01/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the tasks that are typically completed when performing a period closing for General ledger. 
+This article describes the tasks that are typically completed when performing a period closing for General ledger. 
 
 In General ledger, you can complete closing procedures for a period or a year. Closing processes prepare the system for a new period. To prepare for a new year, you must run the year end close process. Each organization has different processes and steps that it performs for the end of a period. Here are some optional steps for period ends:
 

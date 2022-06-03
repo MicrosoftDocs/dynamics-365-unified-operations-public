@@ -1,6 +1,6 @@
 ---
 title: Uninstall dual-write application orchestration solutions
-description: This topic describes how to uninstall dual-write application orchestration solutions.
+description: This article describes how to uninstall dual-write application orchestration solutions.
 author: RamaKrishnamoorthy
 ms.date: 03/16/2022
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.validFrom: 2022-01-21
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how to uninstall dual-write application orchestration solutions.
+This article describes how to uninstall dual-write application orchestration solutions.
 
 Some customers unintentionally install the dual-write application orchestration package that installs multiple solutions in their Microsoft Dataverse environment. Installation of the extraneous solutions in the package can cause unexpected and undesirable issues.
 

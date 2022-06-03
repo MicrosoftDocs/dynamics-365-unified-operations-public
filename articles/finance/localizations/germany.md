@@ -2,7 +2,7 @@
 # required metadata
 
 title: Germany overview
-description: This topic provides an overview of Dynamics 365 Finance functionality that is specific to Germany.
+description: This article provides an overview of Dynamics 365 Finance functionality that is specific to Germany.
 author: anasyash
 ms.date: 05/09/2022
 ms.topic: overview
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include[banner](../includes/banner.md)]
 
-This topic includes information and links to resources that should be considered for legal entities with a primary address in Germany.
+This article includes information and links to resources that should be considered for legal entities with a primary address in Germany.
 
 ## Audit file
 - [German audit file (GDPdU/GoBD) overview](emea-deu-gdpdu-audit-data-export.md)

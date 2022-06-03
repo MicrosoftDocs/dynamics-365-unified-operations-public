@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Place B2B website orders quickly
-description: This topic describes the capabilities of Microsoft Dynamics 365 Commerce that let business-to-business (B2B) site users quickly place bulk and repeat orders.
+description: This article describes the capabilities of Microsoft Dynamics 365 Commerce that let business-to-business (B2B) site users quickly place bulk and repeat orders.
 author: shajain
 ms.date: 02/16/2022
 ms.topic: article
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 10.0.23
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes the capabilities of Microsoft Dynamics 365 Commerce that let business-to-business (B2B) site users quickly place bulk and repeat orders.
+This article describes the capabilities of Microsoft Dynamics 365 Commerce that let business-to-business (B2B) site users quickly place bulk and repeat orders.
 
 Dynamics 365 Commerce B2B e-commerce websites let users perform standard operations such as discovering new products via searching and browsing, viewing product details, adding items to the cart, and checking out. However, whereas the customers of business-to-consumer (B2C) sites generally order items in small quantities and order them only once, B2B customers typically order items in large quantities and reorder them multiple times. Because these customers usually know exactly what items they want to buy, they often they skip the product discovery phase and move directly to ordering. To meet the needs of these customers, Commerce B2B e-commerce websites provide various capabilities that help them place orders quickly.
 
@@ -67,4 +67,4 @@ The following illustration shows an example of a user's order history and the op
 
 ![Reordering from order history.](../media/Reorder.png)
 
-This topic has described just some of the ways that Commerce B2B sites help users quickly find, order, and reorder the products that they want. More capabilities are in development to further simplify the process of capturing bulk orders.
+This article has described just some of the ways that Commerce B2B sites help users quickly find, order, and reorder the products that they want. More capabilities are in development to further simplify the process of capturing bulk orders.

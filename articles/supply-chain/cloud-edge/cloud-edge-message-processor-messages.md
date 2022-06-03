@@ -2,7 +2,7 @@
 # required metadata
 
 title: Message processor messages
-description: This topic provides information about the Message processor messages feature for scale unit workloads.
+description: This article provides information about the Message processor messages feature for scale unit workloads.
 author: perlynne
 ms.date: 04/22/2021
 ms.topic: article

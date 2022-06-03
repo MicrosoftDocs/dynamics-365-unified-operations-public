@@ -1,6 +1,6 @@
 ---
 title: Create deployable packages in Azure Pipelines
-description: This topic explains how you can create a software deployable package when you run build automation in Microsoft Azure DevOps.
+description: This article explains how you can create a software deployable package when you run build automation in Microsoft Azure DevOps.
 author: jorisdg
 ms.date: 03/05/2020
 ms.topic: article
@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 If you want to deploy customizations to an environment, a deployable package is required in Microsoft Dynamics Lifecycle Services (LCS). You can create this package by using Azure Pipelines during a build or release process.
 
-This topic assumes a working knowledge of [Azure Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started).
+This article assumes a working knowledge of [Azure Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started).
 
 > [!NOTE]
 > Before you can add these steps to a pipeline, the [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension for Azure DevOps must be enabled and installed in the Azure DevOps account. For more information about how to install an extension for an organization, see [Install extensions](/azure/devops/marketplace/install-extension).
@@ -48,7 +48,7 @@ When this task is run on the build VM, NuGet is already available, and no action
 Compared to the legacy packaging on the build virtual machine, the packaging task has to specify which modules to package and where to find them. In a standard pipeline, X++ modules under compilation are output in the binaries folder of the Azure DevOps agent. The packaging task by default will look in this folder for any X++ binaries. The search looks for folder names. The task will check inside these folders if there is a `/bin/` subfolder with X++ assemblies.
 
 > [!NOTE]
-> If your source control repositores includes third-party binaries such as ISV modules, the packaging step has specifically includes those binaries. See the examples section of this topic.
+> If your source control repositores includes third-party binaries such as ISV modules, the packaging step has specifically includes those binaries. See the examples section of this article.
 
 ## Examples of search patterns
 

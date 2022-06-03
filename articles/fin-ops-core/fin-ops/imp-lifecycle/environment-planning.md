@@ -2,7 +2,7 @@
 # required metadata
 
 title: Environment planning
-description: This topic provides an overview of various aspects that you must consider while you plan for your project's environment.
+description: This article provides an overview of various aspects that you must consider while you plan for your project's environment.
 author: laneswenka
 ms.date: 02/01/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Finance and Operations
 
 [!include[banner](../includes/banner.md)]
 
-This topic provides an overview of various aspects that you must consider while you plan for your project's environment. To help guarantee a successful cloud implementation, it's important that you discuss and plan your environment early in the project.
+This article provides an overview of various aspects that you must consider while you plan for your project's environment. To help guarantee a successful cloud implementation, it's important that you discuss and plan your environment early in the project.
 
 ## Environment planning overview
 

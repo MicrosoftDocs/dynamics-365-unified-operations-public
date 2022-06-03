@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic walks you through the steps to map, export, and deliver eXtensible Business Reporting Language (XBRL) to the Dutch regulatory body.  
+This article walks you through the steps to map, export, and deliver eXtensible Business Reporting Language (XBRL) to the Dutch regulatory body.  
 
 The high-level process is a system-to-human-to-system process. The first system involved is Microsoft Dynamics 365 Finance. This system is responsible for creating all the necessary entries, chart of accounts, and mappings. After this is complete, a user will export the data into the Semansys DataBridge format. This exported data can then be uploaded into the XBRLOne portal to convert to XBRL, and then validated and delivered to the correct Dutch regulatory body. 
 

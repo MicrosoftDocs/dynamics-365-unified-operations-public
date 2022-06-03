@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 [!include [banner](../../includes/banner.md)]
 
 > [!IMPORTANT]
-> The recruiting functionality in this topic will be referred to as Recruitment projects and focuses on applicants, applications, and recruitment projects.  
+> The recruiting functionality in this article will be referred to as Recruitment projects and focuses on applicants, applications, and recruitment projects.  
 
 
 Recruitment projects help manage the recruiting process. For each recruitment project, you can set up information such as the job that recruiting is done for, the name of the recruiter, the status of the project, and the department where the job will be located. After you create a recruitment project, you can write a job advertisement for it, publish the ad on **Employee self service** page, associate applications for employment with the project, and track activities for that project. The **USMF** demo data company was used to create this procedure.

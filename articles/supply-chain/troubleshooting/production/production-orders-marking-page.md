@@ -1,6 +1,6 @@
 --- 
 title: Production orders not shown on the Marking page 
-description: Some production orders aren't shown on the Marking page. This topic explains the three product configurations that aren't available for marking. 
+description: Some production orders aren't shown on the Marking page. This article explains the three product configurations that aren't available for marking. 
 author: SmithaNataraj 
 ms.date: 06/24/2021 
 ms.topic: troubleshooting 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: User-defined certificate profiles for retail stores
-description: This topic provides an overview about how certificates are used in retail stores.
+description: This article provides an overview about how certificates are used in retail stores.
 author: josaw
 ms.date: 10/09/2020
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.15
 
 ## Overview
 
-This topic provides an overview of the certificate profiles that are available in Microsoft Dynamics 365 Commerce. This functionality extends the [Manage secrets for retail channels](../dev-itpro/manage-secrets.md) feature by adding support for local certificates.
+This article provides an overview of the certificate profiles that are available in Microsoft Dynamics 365 Commerce. This functionality extends the [Manage secrets for retail channels](../dev-itpro/manage-secrets.md) feature by adding support for local certificates.
 
 While the point of sale (POS) is running in offline mode, it can't access the certificates that are stored in the key vault. The local certificate should be used instead. The following capabilities are supported:
 

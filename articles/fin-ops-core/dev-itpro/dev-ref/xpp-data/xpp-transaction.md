@@ -1,6 +1,6 @@
 ---
 title: X++ transactional integrity
-description: This topic describes transactional integrity in the X++ language.
+description: This article describes transactional integrity in the X++ language.
 author: RobinARH
 ms.date: 06/16/2020
 audience: Developer
@@ -16,7 +16,7 @@ ms.search.validFrom: 2016-02-28
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes transactional integrity in the X++ language.
+This article describes transactional integrity in the X++ language.
 
 If you don't take steps to ensure the integrity of transactions, data corruption can occur. At the very least, you might experience poor scalability with respect to concurrent users on the system. Two internal checking features help ensure the integrity of transactions: the **forUpdate** check and the **ttsLevel** check.
 

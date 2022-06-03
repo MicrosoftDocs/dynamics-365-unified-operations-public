@@ -2,7 +2,7 @@
 # required metadata
 
 title: Tax calculation data model
-description: This topic provides information about the tax data model, and how the field values of each data model are determined by the context of tax calculation transactions.
+description: This article provides information about the tax data model, and how the field values of each data model are determined by the context of tax calculation transactions.
 author: kailiang
 ms.date: 10/15/2021
 ms.topic: overview
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 10.0.21
 ---
 # Tax calculation data model
 
-This topic provides information about how the field values in the tax data model are determined in tax calculation transactions.
+This article provides information about how the field values in the tax data model are determined in tax calculation transactions.
 
 The *tax data model* is made up of fields that are required for tax calculations. Microsoft provides the *tax calculation data model*, which includes the header fields and line fields of transaction documents in Finance and Operations apps. The fields that are defined in the tax calculation data model are the available columns of the applicability rules tables in the configuration of the tax calculation feature configuration.
 

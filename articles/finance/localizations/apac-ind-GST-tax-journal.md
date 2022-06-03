@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create a tax journal
-description: This topic explains how to create a tax journal.
+description: This article explains how to create a tax journal.
 author: EricWangChen
 ms.date: 06/05/2019
 ms.topic: article
