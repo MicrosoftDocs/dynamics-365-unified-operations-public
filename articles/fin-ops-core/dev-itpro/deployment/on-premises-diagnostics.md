@@ -2,7 +2,7 @@
 # required metadata
 
 title: On-premises diagnostics
-description: This topic provides information about how to expose the diagnostic data for Dynamics 365 Finance + Operations (on-premises) deployments. 
+description: This article provides information about how to expose the diagnostic data for Dynamics 365 Finance + Operations (on-premises) deployments. 
 author: PeterRFriis
 ms.date: 04/05/2021
 ms.topic: article
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform Update 12
 
 The Microsoft Dynamics 365 team monitors the health and performance of the Azure Services that provide functionality for our cloud-based customers by using state-of-the-art Azure diagnostic tools. For customers who have implemented Finance + Operations (on-premises) and would like to have the ability to monitor the health and performance of their on-premises solution, there are several third-party offerings available. 
 
-This topic describes the setup and configuration of Elastic Stack, a third-party product, and one of many choices that can provide  diagnostic monitoring of your on-premises solution.
+This article describes the setup and configuration of Elastic Stack, a third-party product, and one of many choices that can provide  diagnostic monitoring of your on-premises solution.
 
 When you consider a diagnostic solution, consider the following fundamentals of your implementation:
 
@@ -67,9 +67,9 @@ To meet the diagnostic data guidelines that are listed in the previous section, 
 > [!NOTE]
 > By default, communication in an Elastic Stack cluster is **not** sent over HTTPS. Don't set up the Elastic Stack unless you've considered the risks, and prepared or implemented mitigations for those risks. The [paid version](https://www.elastic.co/subscriptions) of X-Pack can be used to encrypt communication in the Elastic Stack. For setup information, see [Setting up TLS on a cluster](https://www.elastic.co/guide/en/x-pack/current/ssl-tls.html). There is also an open source [Elasticsearch plug-in](https://github.com/floragunncom/search-guard-ssl). Although Microsoft hasn't tested this plug-in, according to the documentation, it can enable HTTPS.
 
-If you deploy the Elastic Stack, your experience might vary if you follow the steps that are described in this topic. For its tests, Microsoft used version 6.2.3 of the Elastic Stack components and Microsoft Dynamics 365 for Finance and Operations 7.3 with platform update 12.
+If you deploy the Elastic Stack, your experience might vary if you follow the steps that are described in this article. For its tests, Microsoft used version 6.2.3 of the Elastic Stack components and Microsoft Dynamics 365 for Finance and Operations 7.3 with platform update 12.
 
-This topic describes how Microsoft handled the setup and configuration steps that are required for the Elastic Stack to work for an on-premises deployment. For guidance that isn't related to Finance + Operations (on-premises), see the documentation on Elastic.co.
+This article describes how Microsoft handled the setup and configuration steps that are required for the Elastic Stack to work for an on-premises deployment. For guidance that isn't related to Finance + Operations (on-premises), see the documentation on Elastic.co.
 
 ## Install and configure the Elastic Stack
 All hosted components of the Elastic Stack, except Winlogbeat, run on Java. For the test scenario, Microsoft first downloaded and installed the latest version of Java Runtime Environment (JRE) 8 (64-bit) on each node that will run Elasticsearch, Logstash, or Kibana (that is, all the Orchestrator nodes). You can get Java 8 from [https://www.oracle.com/technetwork/java/javase/downloads/index.html](https://www.oracle.com/technetwork/java/javase/downloads/index.html).
@@ -111,7 +111,7 @@ Depending on the number of Elasticsearch nodes that you set up, you can set the 
 
 For discoverability, in **Network settings**, Microsoft set the **Network host** value of each node to that node's IP address and added the IP addresses of all Elasticsearch nodes to the **Unicast Hosts** list for each node. For example, for Orchestrator #1, which has the IP address 10.0.0.12, Microsoft set the **Network host** value to **10.0.0.12** and added the following IP addresses to the **Unicast Hosts** list: 10.0.0.12 and 10.0.0.13, where 10.0.0.13 is Orchestrator #2.
 
-**If you're installing Elasticsearch version 6.3 or higher, you can disregard this paragraph.** You can install X-Pack either now or later. For more information about setup and whether you should install X-Pack, see the "X-Pack" section of this topic. For now, unless you know what X-Pack is for, don't install it.
+**If you're installing Elasticsearch version 6.3 or higher, you can disregard this paragraph.** You can install X-Pack either now or later. For more information about setup and whether you should install X-Pack, see the "X-Pack" section of this article. For now, unless you know what X-Pack is for, don't install it.
 
 > [!IMPORTANT]
 > Open the HTTP port (by default, port 9200) and the node communication port (by default, port 9300) in your firewall.

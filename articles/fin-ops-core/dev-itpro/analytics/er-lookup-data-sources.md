@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure Lookup data sources to use ER application-specific parameters
-description: This topic explains how you can configure Lookup data sources in Electronic reporting (ER) formats to use ER application-specific parameters.
+description: This article explains how you can configure Lookup data sources in Electronic reporting (ER) formats to use ER application-specific parameters.
 author: NickSelin
 ms.date: 08/11/2021
 ms.topic: article

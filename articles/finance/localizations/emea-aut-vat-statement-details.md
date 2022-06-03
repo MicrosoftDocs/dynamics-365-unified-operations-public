@@ -2,7 +2,7 @@
 # required metadata
 
 title: VAT statement details for Austria
-description: This topic explains how to set up the VAT statement for legal entities in Austria.
+description: This article explains how to set up the VAT statement for legal entities in Austria.
 author: ShylaThompson
 ms.date: 03/24/2022
 ms.topic: article
@@ -34,9 +34,9 @@ ms.dyn365.ops.version: AX 7.0.1
   > This feature is deprecated. For more information, see [Removed and deprecated features](../get-started/removed-deprecated-features-finance.md#vat-statement-for-austria-design-based-on-reporting-codes).
   > To learn more about VAT declaration, see [VAT declaration (Austria)](emea-aut-vat-declaration-austria.md)
 
-This topic explains how to set up the VAT statement for legal entities in Austria.
+This article explains how to set up the VAT statement for legal entities in Austria.
 
-This topic includes country/region-specific information about the setup of the value-added tax (VAT) statement for legal entities in Austria only. For more information about the setup of the VAT statement, see [VAT reporting for Europe](emea-vat-reporting.md). The rest of this topic shows how to set up sales tax codes and sales tax reporting codes for the Austrian VAT declaration, so that VAT statements can be generated.
+This article includes country/region-specific information about the setup of the value-added tax (VAT) statement for legal entities in Austria only. For more information about the setup of the VAT statement, see [VAT reporting for Europe](emea-vat-reporting.md). The rest of this article shows how to set up sales tax codes and sales tax reporting codes for the Austrian VAT declaration, so that VAT statements can be generated.
 
 ## Set up sales tax authorities
 To generate a VAT declaration in the correct format for the appropriate tax authority, you must set up the report layout for the sales tax authorities. On the **Sales tax authorities** page, in the **Report layout** field, select **Austrian report layout**. Select the same sales tax authority for the sales tax settlement period that will be used in the sales tax codes.

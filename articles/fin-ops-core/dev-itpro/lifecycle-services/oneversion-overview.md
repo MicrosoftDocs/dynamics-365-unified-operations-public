@@ -2,7 +2,7 @@
 # required metadata
 
 title: One Version service updates overview
-description: This topic gives an overview of the various steps that make up the experience for managing service updates initiated by Microsoft as part of One Version.
+description: This article gives an overview of the various steps that make up the experience for managing service updates initiated by Microsoft as part of One Version.
 author: angelmarshall
 ms.date: 05/21/2019
 ms.topic: overview
@@ -32,9 +32,9 @@ ms.dyn365.ops.version: Platform update 24
 
 The following set of topics provide information that is related to service updates for Microsoft Dynamics 365 for Finance and Operations version 8.1 (October 2018) and later. This is applicable for cloud releases only.
 
-- [Service update availability](../../fin-ops/get-started/public-preview-releases.md) – This topic provides information about the release cadence and release process.
-- [Software lifecycle policy and cloud releases](../migration-upgrade/versions-update-policy.md) – This topic provides information about the service updates, availability, and end of service.
-- [One Version service updates FAQ](../../fin-ops/get-started/one-version.md) – This topic answers questions about the update process, tools, planning, and Retail service updates.
+- [Service update availability](../../fin-ops/get-started/public-preview-releases.md) – This article provides information about the release cadence and release process.
+- [Software lifecycle policy and cloud releases](../migration-upgrade/versions-update-policy.md) – This article provides information about the service updates, availability, and end of service.
+- [One Version service updates FAQ](../../fin-ops/get-started/one-version.md) – This article answers questions about the update process, tools, planning, and Retail service updates.
 
 The experience for service updates consists of four distinct steps: 
 
@@ -43,7 +43,7 @@ The experience for service updates consists of four distinct steps:
 3. Update
 4. Validate
 
-The rest of this topic describes each step and provides links to related topics.
+The rest of this article describes each step and provides links to related topics.
 
 ## Configure
 

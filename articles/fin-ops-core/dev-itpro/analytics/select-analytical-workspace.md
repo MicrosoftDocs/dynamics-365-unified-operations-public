@@ -2,7 +2,7 @@
 # required metadata
 
 title: Select analytical workspaces from Power BI  (contains video)
-description: This topic explains how to select a report that is hosted in Power BI and use it for an application workspace.
+description: This article explains how to select a report that is hosted in Power BI and use it for an application workspace.
 author: RichdiMSFT
 ms.date: 07/09/2020
 ms.topic: article
@@ -36,7 +36,7 @@ The analytical workspaces that are bundled with the application suite offer user
 The world-class tooling that PowerBI.com provides lets you produce analytical reports that contain mashup views that use data from external sources. In Platform update 26 for Finance and Operations, power users can replace the standard embedded reports with those that are hosted on PowerBI.com.
 
 > [!IMPORTANT]
-> The functionality that this topic describes isn't a personalization. The customization of analytical workspaces applies to all users in the active legal entity.
+> The functionality that this article describes isn't a personalization. The customization of analytical workspaces applies to all users in the active legal entity.
 
 ### Motivations for embedding PowerBI.com reports
 

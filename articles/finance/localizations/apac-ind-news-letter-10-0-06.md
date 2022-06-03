@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed for  India GST in 10.0.06 (November 2019)
-description: This topic describes new or changed functionality for India GST features released in Dynamics 365 Finance version 10.0.06.
+description: This article describes new or changed functionality for India GST features released in Dynamics 365 Finance version 10.0.06.
 author: prabhatb
 ms.date: 06/15/2020
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.6
 
 [!include [banner](../includes/banner.md)]
 
-This topic includes a summary of the new features and critical bug fixes released in version 10.0.06 for India. You can learn more about the shipped features in the topic, [What's new or changed in Finance and Operations version 10.0.6](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-6.md).
+This article includes a summary of the new features and critical bug fixes released in version 10.0.06 for India. You can learn more about the shipped features in the article, [What's new or changed in Finance and Operations version 10.0.6](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-6.md).
 
 ## New features
 ### Validate non-existent and duplicate records when importing tax setup 

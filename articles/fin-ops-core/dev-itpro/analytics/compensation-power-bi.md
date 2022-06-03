@@ -2,7 +2,7 @@
 # required metadata
 
 title: Compensation Power BI content
-description: This topic describes the Compensation Power BI content. It explains how to access reports and provides information about the data model used.
+description: This article describes the Compensation Power BI content. It explains how to access reports and provides information about the data model used.
 author: jcart1106 
 ms.date: 12/19/2017
 ms.topic: article
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the **Compensation** Microsoft Power BI content. It explains how to access the reports, and provides information about the data model and entities that were used to build the content.
+This article describes the **Compensation** Microsoft Power BI content. It explains how to access the reports, and provides information about the data model and entities that were used to build the content.
 
 ## Accessing the Power BI content
 The **Compensation** Power BI content is shown in the **Compensation management** workspace if you use one of the following products:

@@ -2,7 +2,7 @@
 # required metadata
 
 title: General ledger simulations (Italy)
-description: This topic provides information about posting ledger transactions as a simulation from the general journal and then review reports that include the simulated transactions.
+description: This article provides information about posting ledger transactions as a simulation from the general journal and then review reports that include the simulated transactions.
 author: anasyash
 ms.date: 03/17/2020
 ms.topic: article

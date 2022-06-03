@@ -2,7 +2,7 @@
 # required metadata
 
 title: Evaluate the initial customer payment prediction model
-description: This topic describes the steps that you can take to understand the customer payment prediction model and evaluate its effectiveness. 
+description: This article describes the steps that you can take to understand the customer payment prediction model and evaluate its effectiveness. 
 author: ShivamPandey-msft
 ms.date: 05/02/2022
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 10.0.8
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to evaluate a prediction model after you've turned on Finance Insights and then generated and trained your first model. This topic addresses models for predicting customer payments. It describes the steps that you can take to understand the customer payment prediction model and evaluate its effectiveness.
+This article explains how to evaluate a prediction model after you've turned on Finance Insights and then generated and trained your first model. This article addresses models for predicting customer payments. It describes the steps that you can take to understand the customer payment prediction model and evaluate its effectiveness.
 
 ## Getting details about the model
 

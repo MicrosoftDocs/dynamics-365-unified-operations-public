@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Define ER model mappings and select data sources for them
-description: This topic describes how a System Administrator or an Electronic Reporting Developer can select data sources for an Electronic reporting data model.
+description: This article describes how a System Administrator or an Electronic Reporting Developer can select data sources for an Electronic reporting data model.
 author: NickSelin
 ms.date: 08/29/2018
 ms.topic: business-process 

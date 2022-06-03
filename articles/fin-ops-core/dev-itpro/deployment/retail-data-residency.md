@@ -2,7 +2,7 @@
 # required metadata
 
 title: Commerce data residency
-description: This topic provides information about data residency considerations when deploying the Commerce Scale Unit (cloud).
+description: This article provides information about data residency considerations when deploying the Commerce Scale Unit (cloud).
 author: AamirAllaq
 ms.date: 10/06/2020
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks

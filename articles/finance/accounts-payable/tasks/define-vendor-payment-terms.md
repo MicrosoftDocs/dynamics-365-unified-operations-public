@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Define vendor payment terms
-description: This topic explains how to set up payment terms for vendor invoices.  
+description: This article explains how to set up payment terms for vendor invoices.  
 author: abruer
 ms.date: 02/11/2022
 ms.topic: business-process 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to set up payment terms for vendor invoices. This task uses the USMF demo company.
+This article explains how to set up payment terms for vendor invoices. This task uses the USMF demo company.
 
 1. Go to **Navigation pane > Modules > Accounts payable > Payment setup > Terms of payment**.
 2. Select **New**. The **Terms of payment** page is used to define how the due date will be calculated. It is not used to define how the cash discount date will be calculated.  

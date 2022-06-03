@@ -2,7 +2,7 @@
 # required metadata
 
 title: Find information about standard data entities
-description: This topic describes how to get information about the standard data entities that are available and how to download the scripts to run the reports.
+description: This article describes how to get information about the standard data entities that are available and how to download the scripts to run the reports.
 author: tonyafehr
 ms.date: 09/18/2020
 ms.topic: article

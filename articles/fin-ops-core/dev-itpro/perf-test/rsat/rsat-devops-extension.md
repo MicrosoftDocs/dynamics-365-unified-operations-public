@@ -1,6 +1,6 @@
 ---
 title: Integrate RSAT with Azure DevOps pipelines
-description: This topic explains how to integrate the Regression suite automation tool (RSAT) with Microsoft Azure DevOps pipelines to automate validation.
+description: This article explains how to integrate the Regression suite automation tool (RSAT) with Microsoft Azure DevOps pipelines to automate validation.
 author: FrankDahl
 ms.date: 04/05/2022
 ms.topic: article
@@ -20,7 +20,7 @@ You can set up Microsoft Azure DevOps pipelines to seamlessly automate the sched
 
 Azure DevOps pipeline jobs can use the RSAT command-line program (Microsoft.Dynamics.RegressionSuite.ConsoleApp.exe, also referred to as the RSAT console app) to run RSAT via Windows PowerShell tasks. You can also add preconfigured RSAT tasks that are available in the Visual Studio Marketplace to your Azure DevOps pipelines. In this way, you can build or run RSAT test suites without having to write custom Windows PowerShell scripts.
 
-This topic assumes that you're familiar with the management of Azure DevOps organizations and [pipelines](/azure/devops/pipelines). It also assumes that you're familiar with RSAT functionality.
+This article assumes that you're familiar with the management of Azure DevOps organizations and [pipelines](/azure/devops/pipelines). It also assumes that you're familiar with RSAT functionality.
 
 ## Prerequisite: Install an Azure DevOps self-hosted Windows agent
 
@@ -84,7 +84,7 @@ After you've set up the Azure Dev Ops agent, follow these steps to create a pipe
 
 1. In Azure DevOps, select the project that should host the pipeline. Then go to **Pipelines**, and select **New pipeline** in the upper-right corner.
 
-    Pipelines can be designed by using YAML. Although this approach is quite powerful, it requires some experience to master. Because the purpose of this topic isn't to provide in-depth information about pipeline design but to help you get started, this procedure shows how to build a basic pipeline without using YAML.
+    Pipelines can be designed by using YAML. Although this approach is quite powerful, it requires some experience to master. Because the purpose of this article isn't to provide in-depth information about pipeline design but to help you get started, this procedure shows how to build a basic pipeline without using YAML.
 
 2. Select the **Use the classic editor** link to create a pipeline without using YAML.
 

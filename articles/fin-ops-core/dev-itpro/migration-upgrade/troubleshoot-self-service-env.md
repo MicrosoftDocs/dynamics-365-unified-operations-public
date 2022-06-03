@@ -2,7 +2,7 @@
 # required metadata
 
 title: Troubleshoot upgrades to Dynamics 365 Finance + Operations self-service environments
-description: This topic provides troubleshooting guidance for upgrades of Microsoft Dynamics AX 2012 to Dynamics 365 Finance + Operations (on-premises) self-service environments.
+description: This article provides troubleshooting guidance for upgrades of Microsoft Dynamics AX 2012 to Dynamics 365 Finance + Operations (on-premises) self-service environments.
 author: ttreen 
 ms.date: 04/26/2022
 ms.topic: article
@@ -18,7 +18,7 @@ ms.search.form: 2022-04-08
 
 [!include[banner](../includes/banner.md)]
 
-This topic provides troubleshooting guidance for upgrades of Microsoft Dynamics AX 2012 to Dynamics 365 Finance + Operations (on-premises) self-service environments.
+This article provides troubleshooting guidance for upgrades of Microsoft Dynamics AX 2012 to Dynamics 365 Finance + Operations (on-premises) self-service environments.
 
 ## Scenario 1: The migration app prompts you to enter Project-Id and Environment-Id values.
 

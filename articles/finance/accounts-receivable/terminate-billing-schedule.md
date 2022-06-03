@@ -2,7 +2,7 @@
 # required metadata
 
 title: Terminate billing schedules
-description: This topic explains how to terminate billing schedules and billing schedule lines in Subscription billing.
+description: This article explains how to terminate billing schedules and billing schedule lines in Subscription billing.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.24
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to terminate billing schedules and billing schedule lines in Subscription billing. When you terminate a billing schedule, it must have a status of **Active**. It can't have a status of **On hold**. Likewise, when you terminate a billing schedule line, it must have a status of **Active**. The header section of the billing schedule isn't affected when you terminate a billing schedule line.
+This article explains how to terminate billing schedules and billing schedule lines in Subscription billing. When you terminate a billing schedule, it must have a status of **Active**. It can't have a status of **On hold**. Likewise, when you terminate a billing schedule line, it must have a status of **Active**. The header section of the billing schedule isn't affected when you terminate a billing schedule line.
 
 To terminate a billing schedule or billing schedule line, go to one of the following places:
 

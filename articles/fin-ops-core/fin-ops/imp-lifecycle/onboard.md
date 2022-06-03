@@ -2,7 +2,7 @@
 # required metadata
 
 title: Onboard an implementation project
-description: This topic describes how to onboard a project by using Microsoft Dynamics Lifecycle Services (LCS).
+description: This article describes how to onboard a project by using Microsoft Dynamics Lifecycle Services (LCS).
 author: ClaudiaBetz-Haubold
 ms.date: 02/09/2022
 ms.topic: article
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to onboard a Finance and Operations project by using Microsoft Dynamics Lifecycle Services (LCS).
+This article describes how to onboard a Finance and Operations project by using Microsoft Dynamics Lifecycle Services (LCS).
 
 ## Microsoft 365 Admin Center
 
@@ -78,7 +78,7 @@ We recommend that you add key project members (such as project managers) from th
 
 Be sure to keep the milestone dates in your LCS project current. In this way, you help us connect with you at different project stages. When you're closer to your go-live date, we will contact you for a project Go-live assessment before we deploy your production environment.
 
-Milestone dates are stored in the LCS implementation methodology. For more information, see the [Methodologies](../../dev-itpro/lifecycle-services/lcs-works-lcs.md#methodologies) section of the "LCS for Customers" topic.
+Milestone dates are stored in the LCS implementation methodology. For more information, see the [Methodologies](../../dev-itpro/lifecycle-services/lcs-works-lcs.md#methodologies) section of the "LCS for Customers" article.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

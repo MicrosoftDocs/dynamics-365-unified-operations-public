@@ -2,7 +2,7 @@
 # required metadata
 
 title: Retrieve information about VAT payments and liabilities from HMRC
-description: This topic explains how to retrieve information about value-added tax (VAT) payments and liabilities from the Making Tax Digital for VAT (MTD VAT) application programming interface (API) of Her Majesty's Revenue and Customs (HMRC).
+description: This article explains how to retrieve information about value-added tax (VAT) payments and liabilities from the Making Tax Digital for VAT (MTD VAT) application programming interface (API) of Her Majesty's Revenue and Customs (HMRC).
 author: liza-golub
 ms.date: 08/17/2021
 ms.topic: article

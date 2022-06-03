@@ -2,7 +2,7 @@
 # required metadata
 
 title: Prepayment invoices vs. prepayments
-description: This topic describes and contrasts the two methods that organizations can use for advance payments (prepayments). 
+description: This article describes and contrasts the two methods that organizations can use for advance payments (prepayments). 
 author: abruer
 ms.date: 10/26/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes and contrasts the two methods that organizations can use for advance payments (prepayments). One method creates a prepayment invoice that's associated with a purchase order. The other method creates prepayment journal vouchers by creating journal entries and marking them as prepayment journal vouchers.
+This article describes and contrasts the two methods that organizations can use for advance payments (prepayments). One method creates a prepayment invoice that's associated with a purchase order. The other method creates prepayment journal vouchers by creating journal entries and marking them as prepayment journal vouchers.
 
 Organizations might issue prepayments (advance payments) to vendors for goods or services before those goods or services are fulfilled. Two methods can be used to issue prepayments to vendors. To minimize risk, you can track prepayments by defining the prepayment on a purchase order. For this method, you must create a prepayment invoice that is associated with a purchase order. This method is referred to as prepayment invoicing. Organizations that don't want to track prepayments as closely or don't receive a prepayment invoice from their vendor can use prepayment journal vouchers instead of the prepayment invoicing method. You can create prepayment journal vouchers by creating journal entries and marking them as prepayment journal vouchers. For this method, you can't track which prepayments to a vendor are made against which purchase orders. However, you can mark a posted prepayment for settlement against a purchase order.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Build forms that fully utilize saved views
-description: This topic explains some of the technical aspects of saved views and describes considerations with form development to ensure forms work well with saved views.
+description: This article explains some of the technical aspects of saved views and describes considerations with form development to ensure forms work well with saved views.
 author: jasongre
 ms.date: 02/08/2022
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Platform update 28
 
 [!include [banner](../includes/banner.md)]
 
-Saved views are an important expansion of personalization capabilities Finance and Operations applications. While the [Saved views](../../fin-ops/get-started/saved-views.md) topic provides general details about this feature, this topic focuses on the more technical elements of saved views as well as aspects of form development that may be impacted by views. 
+Saved views are an important expansion of personalization capabilities Finance and Operations applications. While the [Saved views](../../fin-ops/get-started/saved-views.md) article provides general details about this feature, this article focuses on the more technical elements of saved views as well as aspects of form development that may be impacted by views. 
 
 ## "User-perceived" pages
 Traditionally, a set of personalizations has a 1:1 link to a modeled form. For many pages, this makes sense to the user, as the user's perception of the page matches the way in which the form is modeled. However, in some cases the 1:1 link of a modeled form to a set of personalizations is not intuitive or obvious because users do not see or care about the boundaries between modeled forms. 

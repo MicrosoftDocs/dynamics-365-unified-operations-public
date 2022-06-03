@@ -1,6 +1,6 @@
 ---
 title: Link X++ modules from ISV packages by using ISV Studio
-description: This topic describes linking X++ packages by using ISV Studio.
+description: This article describes linking X++ packages by using ISV Studio.
 author: jorisdg
 ms.date: 04/08/2021
 ms.topic: article

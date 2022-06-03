@@ -2,7 +2,7 @@
 # required metadata
 
 title: Electronic messaging
-description: This topic provides overview and setup information for electronic messaging in Microsoft Dynamics 365 Finance.
+description: This article provides overview and setup information for electronic messaging in Microsoft Dynamics 365 Finance.
 author: liza-golub
 ms.date: 01/04/2022
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides overview and the setup information for the **Electronic messages** (EM) functionality.
+This article provides overview and the setup information for the **Electronic messages** (EM) functionality.
 
 Recently, the governments and legislative authorities of various countries and regions around the world have implemented reporting requirements for companies that are registered in those countries or regions. The purpose of the requirements is to enable data to be obtained from those companies in electronic format, directly from the systems where it was accounted, stored, and processed.
 

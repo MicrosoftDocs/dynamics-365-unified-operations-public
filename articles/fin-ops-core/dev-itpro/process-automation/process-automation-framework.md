@@ -1,6 +1,6 @@
 ---
 title: Process automation framework development
-description: This topic provides an overview of development that uses the process automation framework.
+description: This article provides an overview of development that uses the process automation framework.
 author: RyanCCarlson2
 ms.date: 05/09/2022
 ms.topic: article
@@ -48,7 +48,7 @@ For more information about process automation, see [Process automation](../sysad
 | Poller             | The poller is a system-critical batch process that runs every minute and invokes various subsystems of the process automation framework. It consults the schedule to determine which processes are ready to run, and then it invokes the runtime side of the framework to ensure that processes are run. |
 | Scheduled process  | A scheduled process is a process that is scheduled in the user interface (UI) by a user. Occurrences for these processes can be seen in a calendar view. |
 | Background process | A background process is also known as a *polled process*. It's a process that runs frequently, without requiring user input, and performs some background processing. Subledger transfer to the general ledger is an example. |
-| Type               | In this topic and related topics, the term *type* refers to **ProcessScheduleType**, as discussed in [Type registration](type-registration.md). |
+| Type               | In this article and related topics, the term *type* refers to **ProcessScheduleType**, as discussed in [Type registration](type-registration.md). |
 | Series             | Every process that has a registered type must have a series. Series for scheduled processes are created in the UI by users. Series for background processes are created through series registration. For more information, see [Series registration](series-registration.md). |
 | Date and time      | All framework dates are stored in Coordinated Universal Time (UTC) but shown in the user's preferred time zone. |
 

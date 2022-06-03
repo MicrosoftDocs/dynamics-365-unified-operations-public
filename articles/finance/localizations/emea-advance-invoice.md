@@ -2,7 +2,7 @@
 # required metadata
 
 title: Advance invoices for Eastern Europe
-description: This topic provides information about advance invoices for Eastern Europe. An advance invoice is a document that you can create for a customer or vendor. It states the amount that must be prepaid on a sales order.
+description: This article provides information about advance invoices for Eastern Europe. An advance invoice is a document that you can create for a customer or vendor. It states the amount that must be prepaid on a sales order.
 author: EvgenyPopovMBS
 ms.date: 05/25/2022
 ms.topic: article
@@ -29,7 +29,7 @@ ms.search.validFrom: 2016-11-30
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about advance invoices for Eastern Europe. An advance invoice is a document that you can create for a customer or vendor. It states the amount that must be prepaid on a sales order. 
+This article provides information about advance invoices for Eastern Europe. An advance invoice is a document that you can create for a customer or vendor. It states the amount that must be prepaid on a sales order. 
 
 > [!NOTE]
 > Another option is to use the prepayment invoice functionality. As of Microsoft Dynamics 365 Finance version 10.0.28, you can use this functionality by going to **Accounts payable** &gt; **Setup** &gt; **Parameters** &gt; **Ledger and sales tax** and setting the **Use prepayment invoice** option on the **Prepayment invoice** FastTab to **Yes**. For more information, see [Prepayment invoices vs. prepayments](../accounts-payable/prepayments-invoices-vs-prepayments.md).

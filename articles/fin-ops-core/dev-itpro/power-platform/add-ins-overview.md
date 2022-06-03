@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add-ins overview
-description: This topic provides information about add-ins, which can be used to extend the functionality of Finance and Operations apps.
+description: This article provides information about add-ins, which can be used to extend the functionality of Finance and Operations apps.
 author: ankugo
 ms.date: 02/11/2022
 ms.topic: overview

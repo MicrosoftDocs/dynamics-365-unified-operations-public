@@ -1,6 +1,6 @@
 ---
 title: X++ business runtime functions
-description: This topic describes the business run-time functions.
+description: This article describes the business run-time functions.
 author: RobinARH
 ms.date: 06/20/2017
 audience: Developer
@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the business run-time functions.
+This article describes the business run-time functions.
 
 These functions enter financial data and calculate formulas.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: External data in cash flow forecasts
-description: This topic describes the setup steps that must be completed so that external data can be entered or imported into cash flow forecasts.
+description: This article describes the setup steps that must be completed so that external data can be entered or imported into cash flow forecasts.
 author: RyanCCarlson2
 ms.date: 02/16/2022
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 10.0.12
 
 [!include [banner](../includes/banner.md)]
 
-External data can be entered or imported into cash flow forecasts. This topic describes the setup steps that are specific to the use of external data and that enable the external data to be included in a cash flow forecast.
+External data can be entered or imported into cash flow forecasts. This article describes the setup steps that are specific to the use of external data and that enable the external data to be included in a cash flow forecast.
 
 ## External data setup
 

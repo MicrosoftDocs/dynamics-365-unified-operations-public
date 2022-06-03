@@ -2,7 +2,7 @@
 # required metadata
 
 title: Maintenance in self-service environments FAQ
-description: This topic provides answers to frequently asked questions about the Microsoft planned maintenance in self-service environments.
+description: This article provides answers to frequently asked questions about the Microsoft planned maintenance in self-service environments.
 author: matapg007
 ms.date: 06/02/2022
 ms.topic: article
@@ -18,7 +18,7 @@ ms.search.validFrom: 2021-05-13
 Because of the changing nature of technology, the continual appearance of new security threats, and compliance requirements, environments must be updated with all critical security and quality updates. Microsoft has built the framework for performing all maintenance activity, such as operating system patching, deployment of security hotfixes, and deployment of quality updates, during the dark hours of the geographic region where your environment is deployed. To minimize application downtime, upgrades will occur in batches. Therefore, most capacity is always online, and only a subset is upgraded at a time. This approach enables servicing that involves a small window of service degradation instead of complete downtime.
 
 ## Infrastructure maintenance in self-service environments
-Infrastructure maintenance is the process of updating the environments with the latest security updates and critical hotfixes. Microsoft must complete this process on your environments to ensure security, availability, reliability. This topic provides answers to frequently asked questions about Microsoft planned maintenance in self-service environments.
+Infrastructure maintenance is the process of updating the environments with the latest security updates and critical hotfixes. Microsoft must complete this process on your environments to ensure security, availability, reliability. This article provides answers to frequently asked questions about Microsoft planned maintenance in self-service environments.
 
 ## What are the types of planned maintenance activities that are performed on an environment?
 Some of the common planned maintenance activities performed by Microsoft are:

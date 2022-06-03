@@ -2,7 +2,7 @@
 # required metadata
 
 title: VAT declaration with registers (JPK-V7M, VDEK)
-description: This topic provides information about the VAT declaration with registers (also known as a JPK-V7M, VDEK) in Poland.
+description: This article provides information about the VAT declaration with registers (also known as a JPK-V7M, VDEK) in Poland.
 author: liza-golub
 ms.date: 07/19/2021
 ms.topic: article
@@ -26,7 +26,7 @@ ms.author: elgolu
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the value-added tax (VAT) declaration with registers (also known as a JPK-V7M, VDEK) in Poland.
+This article provides information about the value-added tax (VAT) declaration with registers (also known as a JPK-V7M, VDEK) in Poland.
 
 As of October 1, 2020, businesses in Poland are responsible for reporting VAT in an electronic document that consists of a Jednolity Plik Kontrolny VAT (JPK_VAT) together with the declaration (Jednolity Plik Kontrolny VDEK). The requested electronic document includes the following information:
 

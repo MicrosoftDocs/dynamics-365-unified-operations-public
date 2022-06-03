@@ -2,7 +2,7 @@
 # required metadata
 
 title: Defer the execution of XML elements in ER formats
-description: This topic explains how to defer the execution of an XML element in an Electronic reporting (ER) format.
+description: This article explains how to defer the execution of an XML element in an Electronic reporting (ER) format.
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: article
@@ -37,7 +37,7 @@ You can use the Operations designer of the [Electronic reporting (ER)](general-e
 
 By turning on the <a name="DeferredXmlElementExecution"></a>**Deferred execution** option for an XML element in the configured format, you can defer (postpone) the execution of that element. In this case, the element isn't run until all other elements of its parent have been run.
 
-To learn more about this feature, complete the example in this topic.
+To learn more about this feature, complete the example in this article.
 
 ## Limitations
 
@@ -60,7 +60,7 @@ To complete this example, you must have access to the **USMF** company in Financ
 - Electronic reporting functional consultant
 - System administrator
 
-If you haven't yet completed the example in the [Defer the execution of sequence elements in ER formats](er-defer-sequence-element.md#Example) topic, download the following [configurations](general-electronic-reporting.md#Configuration) of the sample ER solution.
+If you haven't yet completed the example in the [Defer the execution of sequence elements in ER formats](er-defer-sequence-element.md#Example) article, download the following [configurations](general-electronic-reporting.md#Configuration) of the sample ER solution.
 
 | Content description            | File name |
 |--------------------------------|-----------|
@@ -100,7 +100,7 @@ Before you begin, you must also download and save the following configuration of
 ### Activate a configuration provider
 
 1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
-2. On the **Localization configurations** page, in the **Configuration providers** section, make sure that the [configuration provider](general-electronic-reporting.md#Provider) for the Litware, Inc. (`http://www.litware.com`) sample company is listed, and that it's marked as active. If this configuration provider isn't listed, or if it isn't marked as active, follow the steps in the [Create a configuration provider and mark it as active](./tasks/er-configuration-provider-mark-it-active-2016-11.md) topic.
+2. On the **Localization configurations** page, in the **Configuration providers** section, make sure that the [configuration provider](general-electronic-reporting.md#Provider) for the Litware, Inc. (`http://www.litware.com`) sample company is listed, and that it's marked as active. If this configuration provider isn't listed, or if it isn't marked as active, follow the steps in the [Create a configuration provider and mark it as active](./tasks/er-configuration-provider-mark-it-active-2016-11.md) article.
 
     ![Litware, Inc. sample company on the Localization configurations page.](./media/ER-DeferredXml-ElectronicReportingWorkspace.png)
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Workflow subsystem updates in Finance and Operations
-description: This topic reviews the workflow system in Finance and Operations.
+description: This article reviews the workflow system in Finance and Operations.
 author: ChrisGarty
 ms.date: 06/20/2017
 ms.topic: article
@@ -31,11 +31,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic reviews the workflow system in Finance and Operations. It describes the changes that have been implemented since Microsoft Dynamics AX 2012 and also includes links to more information about the workflow system. 
+This article reviews the workflow system in Finance and Operations. It describes the changes that have been implemented since Microsoft Dynamics AX 2012 and also includes links to more information about the workflow system. 
 
 The workflow system in Finance and Operations will be familiar to you if you've used Dynamics AX 2012. For more information about the workflow subsystem in Dynamics AX 2012, see the following topics.
 
-| To learn about this subject | See this topic                                             |
+| To learn about this subject | See this article                                             |
 |-----------------------------|------------------------------------------------------------|
 | The workflow system         | <https://technet.microsoft.com/library/dd309672.aspx> |
 | Workflow types by module    | <https://technet.microsoft.com/library/dd362043.aspx> |

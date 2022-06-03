@@ -2,7 +2,7 @@
 # required metadata
 
 title: Advance holders overview
-description: This topic provides information about advance holder functionality.
+description: This article provides information about advance holder functionality.
 author: liza-golub
 ms.date: 09/15/2021
 ms.topic: overview

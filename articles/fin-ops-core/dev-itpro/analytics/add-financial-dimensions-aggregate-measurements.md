@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add financial dimensions to aggregate measurements
-description: This topic explains how a power user can include financial dimensions in ready-made Power BI reports.
+description: This article explains how a power user can include financial dimensions in ready-made Power BI reports.
 author: MilindaV2 
 ms.date: 06/16/2017
 ms.topic: article
@@ -175,7 +175,7 @@ Both primary accounts and offset accounts must be associated with transaction da
 
 ![Example of role-playing dimensions.](media/062a0d860fe1633a6616bca6e871f95e.png)
 
-We have modeled two dimension references for LedgerActivityMeaureGroup. The first reference, DimensionCombination, is joined by using the **LedgerDimension** field. We saw this pattern earlier in this topic.
+We have modeled two dimension references for LedgerActivityMeaureGroup. The first reference, DimensionCombination, is joined by using the **LedgerDimension** field. We saw this pattern earlier in this article.
 
 The second reference, OffsetDimensionCombination, is another reference to the same dimension. We have reused the DimensionCombination aggregate dimension and given it a new name. In the second case, we can join by using the **OffsetLedgerDimension** field.
 

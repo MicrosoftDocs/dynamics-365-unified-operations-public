@@ -2,7 +2,7 @@
 # required metadata
 
 title: VAT declaration for the Netherlands
-description: This topic explains how to set up and generate the value-added tax (VAT) declaration for legal entities in the Netherlands. 
+description: This article explains how to set up and generate the value-added tax (VAT) declaration for legal entities in the Netherlands. 
 author: anasyash
 ms.date: 05/02/2022
 ms.topic: article
@@ -33,7 +33,7 @@ ms.dyn365.ops.version:
   > This feature is deprecated. For more information, see [Removed and deprecated features](../get-started/removed-deprecated-features-finance.md#ob-declaration-for-netherlands-design-based-on-reporting-codes).
   > For more information about VAT declaration, see [VAT declaration (Netherlands)](emea-nl-vat-declaration-netherlands.md)
 
-This topic explains how to set up and generate the value-added tax (VAT) declaration for legal entities in the Netherlands. For general information about how to set up the VAT statement, see [VAT reporting for Europe](emea-vat-reporting.md).
+This article explains how to set up and generate the value-added tax (VAT) declaration for legal entities in the Netherlands. For general information about how to set up the VAT statement, see [VAT reporting for Europe](emea-vat-reporting.md).
 
 ## Set up sales tax reporting codes for VAT reporting
 
@@ -277,7 +277,7 @@ At the end of the VAT reporting period, calculate the sales tax amounts for the 
 You can also generate the Dutch sales tax report by using the **Report sales tax for settlement period** inquiry.
 
 1. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**.
-2. In the dialog box, set the **Settlement period** and **From date** fields as described in the Generate a sales tax payment and print the Dutch sales tax report section earlier in this topic.
+2. In the dialog box, set the **Settlement period** and **From date** fields as described in the Generate a sales tax payment and print the Dutch sales tax report section earlier in this article.
 3. In the **Sales tax payment version** field, select one of the following values:
 
 - **Original** – Generate a report for sales tax transactions of the first posted settlement calculation for the period.

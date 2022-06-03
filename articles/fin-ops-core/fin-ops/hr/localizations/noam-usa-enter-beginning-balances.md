@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enter payroll beginning balances
-description: The topic describes the steps for entering beginning balances for earning codes, deductions, benefits, and taxes.
+description: The article describes the steps for entering beginning balances for earning codes, deductions, benefits, and taxes.
 author: andreabichsel
 ms.date: 11/20/2020
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-The topic describes the steps for entering beginning balances for earning codes, deductions, benefits, and taxes. This information is valuable for partners who transfer data for a new Payroll implementation from another system. To prepare to enter beginning payroll balances, we verify the following information:
+The article describes the steps for entering beginning balances for earning codes, deductions, benefits, and taxes. This information is valuable for partners who transfer data for a new Payroll implementation from another system. To prepare to enter beginning payroll balances, we verify the following information:
 
 - Employee records are entered and available in the system
 - The following data is set up and assigned to employees:

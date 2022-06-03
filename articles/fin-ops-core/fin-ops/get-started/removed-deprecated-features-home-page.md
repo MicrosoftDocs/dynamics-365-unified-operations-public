@@ -2,7 +2,7 @@
 # required metadata
 
 title: Removed or deprecated features home page
-description: This topic provides a list of help topics about removed or deprecated features in Finance and Operations apps.
+description: This article provides a list of help topics about removed or deprecated features in Finance and Operations apps.
 author: sericks007
 ms.date: 05/27/2021
 ms.topic: article
@@ -39,6 +39,6 @@ The following topics provide information about removed or deprecated features in
 - [Removed or deprecated features in previous releases](../../dev-itpro/migration-upgrade/deprecated-features.md)
 
 ## Deprecations in the Microsoft Power Platform
-The following topic provides information about deprecations in the Microsoft Power Platform:
+The following article provides information about deprecations in the Microsoft Power Platform:
 
 - [Important changes (deprecations) coming in Power Apps, Power Automate, and customer engagement apps](/power-platform/important-changes-coming)

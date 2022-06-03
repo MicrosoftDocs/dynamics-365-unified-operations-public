@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Configure country context dependent ER model mappings
-description: This topic explains how you can set up ER model mappings so that they depend on the country/region context of the legal entity that controls their use.
+description: This article explains how you can set up ER model mappings so that they depend on the country/region context of the legal entity that controls their use.
 author: NickSelin
 ms.date: 11/11/2019
 ms.topic: article
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: Release 8.1.2
 
 [!include[banner](../includes/banner.md)]
 
-You can configure Electronic reporting (ER) model mappings so that they implement a generic ER data model but are specific to Dynamics 365 Finance. This topic explains how to design multiple ER model mappings for an ER data model to control how they are used by corresponding ER formats that are run from companies that have different country/region contexts.
+You can configure Electronic reporting (ER) model mappings so that they implement a generic ER data model but are specific to Dynamics 365 Finance. This article explains how to design multiple ER model mappings for an ER data model to control how they are used by corresponding ER formats that are run from companies that have different country/region contexts.
 
 ## Prerequisites
 
-To complete the examples in this topic, you must have the following access:
+To complete the examples in this article, you must have the following access:
 
 - Access to Finance for one of the following roles:
     - Electronic reporting developer
@@ -46,11 +46,11 @@ To complete the examples in this topic, you must have the following access:
     - Electronic reporting functional consultant
     - System administrator
 
-Some steps in this topic require execution of an ER format. In some cases, execution of an ER format is affected by the country/region context of the company that you're currently signed in to. You can run an ER format in the current RCS instance if the company that has the required country/region context is available in RCS. Otherwise, you must upload a completed version of the ER model mapping and ER format configurations that use the ER data model to your Finance instance, and then run the ER format in that Finance instance. For information about how to import configurations that reside in RCS into a Finance instance, see [Import configurations from RCS](rcs-download-configurations.md).
+Some steps in this article require execution of an ER format. In some cases, execution of an ER format is affected by the country/region context of the company that you're currently signed in to. You can run an ER format in the current RCS instance if the company that has the required country/region context is available in RCS. Otherwise, you must upload a completed version of the ER model mapping and ER format configurations that use the ER data model to your Finance instance, and then run the ER format in that Finance instance. For information about how to import configurations that reside in RCS into a Finance instance, see [Import configurations from RCS](rcs-download-configurations.md).
 
 ## Single model mapping case
 
-Follow the steps in [Appendix 1](#appendix1) of this topic to design the required ER components. You now have the **Mapping (General)** model mapping configuration that contains the model mapping for the **Entry point 1** definition.
+Follow the steps in [Appendix 1](#appendix1) of this article to design the required ER components. You now have the **Mapping (General)** model mapping configuration that contains the model mapping for the **Entry point 1** definition.
 
 ![ER configurations page, Format to learn mappings configuration.](./media/RCS-Context-specific-mapping-Tree.PNG)
 
@@ -63,7 +63,7 @@ Notice that the web browser offers to download the text file that was generated 
 
 ## Multiple shared model mappings case
 
-Follow the steps in [Appendix 2](#appendix2) of this topic to design the required ER components. You now have **Mapping (General)** and **Mapping (General) custom** model mapping configurations, each of which contains the model mapping for the **Entry point 1** definition.
+Follow the steps in [Appendix 2](#appendix2) of this article to design the required ER components. You now have **Mapping (General)** and **Mapping (General) custom** model mapping configurations, each of which contains the model mapping for the **Entry point 1** definition.
 
 ![ER configurations page, Mapping general custom configuration.](./media/RCS-Context-specific-mapping-TreeCustom.PNG)
 
@@ -101,7 +101,7 @@ Notice that execution of the selected ER format succeeds. The web browser offers
 
 ## Multiple mixed model mappings case
 
-Follow the steps in [Appendix 3](#appendix3) of this topic to design the required ER components. You now have **Mapping (General)**, **Mapping (General) custom**, and **Mapping (FR) model mapping** configurations that contain the model mapping for the **Entry point 1** definition.
+Follow the steps in [Appendix 3](#appendix3) of this article to design the required ER components. You now have **Mapping (General)**, **Mapping (General) custom**, and **Mapping (FR) model mapping** configurations that contain the model mapping for the **Entry point 1** definition.
 
 Notice that version 1 of the **Mapping (FR)** model mapping configuration is configured so that it applies only to ER formats of the **Model to learn mappings** model that are run in Finance companies that have French country/region context.
 
@@ -142,10 +142,10 @@ Notice that execution of the selected ER format succeeds. The web browser offers
 
 As you've seen, the selection of a model mapping for the execution of an ER format works in the following way:
 
-- The model mapping definition that an ER format uses is specified (**Entry point 1** in the examples in this topic).
-- All mapping configurations that contain a mapping that has the specified definition, and that satisfy any country/region context restrictions that are configured, can potentially be used to run the ER format (**Mapping (General)**, **Mapping (General) custom**, and **Mapping (FR)** in the examples in this topic).
-- Any default model mapping that has country/region context restrictions has the highest priority for selection (**Mapping (FR)** in the examples in this topic).
-- Any default model mapping that doesn't have country/region context restrictions has the next higher priority for selection  (**Mapping (General) custom** in the examples in this topic).
+- The model mapping definition that an ER format uses is specified (**Entry point 1** in the examples in this article).
+- All mapping configurations that contain a mapping that has the specified definition, and that satisfy any country/region context restrictions that are configured, can potentially be used to run the ER format (**Mapping (General)**, **Mapping (General) custom**, and **Mapping (FR)** in the examples in this article).
+- Any default model mapping that has country/region context restrictions has the highest priority for selection (**Mapping (FR)** in the examples in this article).
+- Any default model mapping that doesn't have country/region context restrictions has the next higher priority for selection  (**Mapping (General) custom** in the examples in this article).
 - Any model mapping that has country/region context restrictions has higher priority for selection than a model mapping that doesn't have country/region context restrictions.
 
 The following table provides information about the results of model mapping selection for all possible cases for model mapping settings:

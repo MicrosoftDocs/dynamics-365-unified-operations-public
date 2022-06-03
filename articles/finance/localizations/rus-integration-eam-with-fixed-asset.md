@@ -2,7 +2,7 @@
 # required metadata
 
 title: Integration of the Asset management module with the Fixed asset (Russia) module 
-description: This topic provides information about the integration of the Asset management module with the Fixed asset (Russia) module.
+description: This article provides information about the integration of the Asset management module with the Fixed asset (Russia) module.
 author: v-oloski
 ms.date: 01/31/2022
 ms.topic: overview

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Generate demo data by using data packages
-description: This topic explains how to use demo data packages to generate data for your system.
+description: This article explains how to use demo data packages to generate data for your system.
 author: panolte
 ms.date: 04/28/2021
 ms.topic: article
@@ -97,7 +97,7 @@ Package names will include a release identifier. For example, for Finance and Op
 Before you load the data packages, you must manually follow these steps.
 
 1. If you want to sign in as a specific user, change the user's email address to the sign-in address that you want to use. You can make this change in the **User information** data entity spreadsheet or, after you load data, on the **Users** page (**System administration** &gt; **Users**).
-2. Start the **Ready to post** batch scheduler. This batch job automatically posts transactions. You must start the scheduler in every legal entity where data should be processed. Follow the steps in the "The Ready to post process" section later in this topic.
+2. Start the **Ready to post** batch scheduler. This batch job automatically posts transactions. You must start the scheduler in every legal entity where data should be processed. Follow the steps in the "The Ready to post process" section later in this article.
 3. If you aren't using the en-us locale, you may need to alter the source data format to match the format the packages were built on. 
 Once you've loaded a data entity, click into the source data format column which should be specified as value = Excel. From the next page, again select Excel. From within the source data formats page, the bottom fast-tab will be regional settings. Change the language locale to en-us if it isn't specified as en-us. After loading packages, you can change it back to its original non en-us value. 
 

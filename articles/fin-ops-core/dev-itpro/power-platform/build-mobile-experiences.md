@@ -2,7 +2,7 @@
 # required metadata
 
 title: Building mobile experiences
-description: This topic describes the high level steps needed to build mobile experiences in Power Apps using Finance and Operations app data 
+description: This article describes the high level steps needed to build mobile experiences in Power Apps using Finance and Operations app data 
 author: jasongre
 ms.date: 05/24/2022
 ms.topic: article

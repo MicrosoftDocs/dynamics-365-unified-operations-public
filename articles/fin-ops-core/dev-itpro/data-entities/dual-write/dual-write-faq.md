@@ -1,6 +1,6 @@
 ---
 title: Dual-write FAQ
-description: This topic answers frequently asked questions about dual-write.
+description: This article answers frequently asked questions about dual-write.
 author: tonyafehr
 ms.date: 05/20/2022
 ms.topic: article
@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 
 
-This topic lists frequently asked questions about dual-write and provides brief answers to help you quickly get the information that you require.
+This article lists frequently asked questions about dual-write and provides brief answers to help you quickly get the information that you require.
 
 ## Dual-write setup
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Lifecycle Services (LCS) for Finance and Operations apps customers
-description: This topic describes Lifecycle Services (LCS) for Finance and Operations apps customers.
+description: This article describes Lifecycle Services (LCS) for Finance and Operations apps customers.
 author: angelmarshall
 ms.date: 10/23/2017
 ms.topic: overview
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-This topic is intended for customers who have signed up for the current versions of Finance and Operations apps. Partners who are working with customers to help them move through the lifecycle of their Lifecycle Services (LCS) project will also find this information useful. 
+This article is intended for customers who have signed up for the current versions of Finance and Operations apps. Partners who are working with customers to help them move through the lifecycle of their Lifecycle Services (LCS) project will also find this information useful. 
 
 ## LCS workspace for the current versions of the Finance and Operations apps
 

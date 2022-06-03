@@ -2,7 +2,7 @@
 # required metadata
 
 title: Apply updates to on-premises deployments
-description: This topic explains how to apply supported updates to Dynamics 365 Finance + Operations (on-premises).
+description: This article explains how to apply supported updates to Dynamics 365 Finance + Operations (on-premises).
 author: PeterRFriis
 ms.date: 03/05/2020
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 12
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to apply supported updates to Dynamics 365 Finance + Operations (on-premises). All updates to on-premises environments are done through Microsoft Dynamics Lifecycle Services (LCS).
+This article explains how to apply supported updates to Dynamics 365 Finance + Operations (on-premises). All updates to on-premises environments are done through Microsoft Dynamics Lifecycle Services (LCS).
 
 ## Search for and download updates
 For more information about how to find the updates that you can apply to your on-premises environment, see [Issue search in Lifecycle Services (LCS)](../lifecycle-services/issue-search-lcs.md). For information about how to download updates from the tiles in the **Updates** section of the **Environment details** page in LCS, see [Download updates from Lifecycle Services (LCS)](../migration-upgrade/download-hotfix-lcs.md).
@@ -71,7 +71,7 @@ The following steps can be used to apply X++, All Binary, or Platform binary upd
     - **Customizations** – Follow the steps in [Develop and deploy custom models to on-premises environments](develop-deploy-custom-models-on-premises.md).
 
 ### Update a sandbox environment
-1. In the LCS Asset library, upload the deployable package that was generated in the "Prerequisites" section of this topic to the **Software deployable packages** tab.
+1. In the LCS Asset library, upload the deployable package that was generated in the "Prerequisites" section of this article to the **Software deployable packages** tab.
 2. In LCS, open the on-premises implementation project, and then open the **Environment details** page of the environment to update.
 3. Under **Maintain**, select **Apply updates**. A slider shows the updates that were uploaded to the Asset library. Note that only packages that are marked as **Valid** in the Asset library appear.
 
@@ -81,10 +81,10 @@ The following steps can be used to apply X++, All Binary, or Platform binary upd
     >[!NOTE]
     > During preparation, the environment state will be **Deployed** but the Deployment status field will show the progress of Preparation. Steps such formatting the package and downloading the package are executed during preparation. The environment is not directly touched during preparation and hence there is no downtime during the preparation phase. Users can continue to use the system during preparation. 
 
-2. After the preparation is complete, you will see **Abort** and **Update Environment** buttons. To start applying the update, click **Update Environment**. If preparation fails, see the "Resolve a failed update application" section later in this topic.
+2. After the preparation is complete, you will see **Abort** and **Update Environment** buttons. To start applying the update, click **Update Environment**. If preparation fails, see the "Resolve a failed update application" section later in this article.
 3. In the confirmation message, select **Yes**. The servicing operation has started on this environment. This is the start of the downtime on your environment. 
 4. The environment state is changed from **Deployed** to **Deploying**. 
-5. After the update is completed, the environment state is changed back to **Deployed**. If application of the update fails, the environment state is changed to **Failed**. For information about what to do if package application fails, see the "Resolve a failed update application" section later in this topic.
+5. After the update is completed, the environment state is changed back to **Deployed**. If application of the update fails, the environment state is changed to **Failed**. For information about what to do if package application fails, see the "Resolve a failed update application" section later in this article.
 6. Open the **History** and **Environment details** pages to view the operations that were performed on the environment. You can also view a record of major actions that were performed on the environment, such as deployments, servicing, and rollbacks.
 
 **If you are on local agent version lower than 2.1.0, complete the following steps.**
@@ -96,7 +96,7 @@ The following steps can be used to apply X++, All Binary, or Platform binary upd
     > During preparation, steps such formatting the package and downloading the package are executed during preparation. The environment is not directly touched during preparation and hence there is no downtime during the preparation phase. Users can continue to use the system during preparation. However, we recommend that the downtime starts when the environment enters the Preparing state.
  
 4. After preparation is complete, the environment state is changed from **Preparing** to **Deploying**. 
-5. After the update is completed, the environment state is changed back to **Deployed**. If application of the update fails, the environment state is changed to **Failed**. For information about what to do if package application fails, see the "Resolve a failed update application" section later in this topic.
+5. After the update is completed, the environment state is changed back to **Deployed**. If application of the update fails, the environment state is changed to **Failed**. For information about what to do if package application fails, see the "Resolve a failed update application" section later in this article.
 6. Open the **History** and **Environment details** pages to view the operations that were performed on the environment. You can also view a record of major actions that were performed on the environment, such as deployments, servicing, and rollbacks.
 
 ### Update a production environment

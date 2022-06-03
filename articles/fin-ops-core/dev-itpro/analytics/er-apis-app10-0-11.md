@@ -2,7 +2,7 @@
 # required metadata
 
 title: Electronic reporting framework API changes for Application update 10.0.11
-description: This topic describes how the APIs of the Electronic reporting framework have been changed in Microsoft Dynamics 365 Finance version 10.0.11.
+description: This article describes how the APIs of the Electronic reporting framework have been changed in Microsoft Dynamics 365 Finance version 10.0.11.
 author: NickSelin
 ms.date: 05/27/2020
 ms.topic: article
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.11
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how the application programming interfaces (APIs) of the Electronic reporting (ER) framework have been changed in Microsoft Dynamics 365 Finance version 10.0.11.
+This article describes how the application programming interfaces (APIs) of the Electronic reporting (ER) framework have been changed in Microsoft Dynamics 365 Finance version 10.0.11.
 
 ## API to run a format mapping for the generation of outbound documents
 

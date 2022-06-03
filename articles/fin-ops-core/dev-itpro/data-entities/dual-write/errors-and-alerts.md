@@ -1,6 +1,6 @@
 ---
 title: Error management and alert notifications
-description: This topic explains error logs and alert notifications that can help you troubleshoot issues.
+description: This article explains error logs and alert notifications that can help you troubleshoot issues.
 author: nhelgren
 ms.date: 03/20/2020
 ms.topic: article

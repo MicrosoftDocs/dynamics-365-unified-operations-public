@@ -2,7 +2,7 @@
 # required metadata
 
 title: List of ER functions in the Date and time category
-description: This topic provides information about the date and time functions that are supported in Electronic reporting (ER).
+description: This article provides information about the date and time functions that are supported in Electronic reporting (ER).
 author: NickSelin
 ms.date: 09/09/2021
 ms.prod: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-Electronic reporting (ER) date and time functions can be used to extract information from date and time values, and to perform operations on them. This topic provides a summary of these functions.
+Electronic reporting (ER) date and time functions can be used to extract information from date and time values, and to perform operations on them. This article provides a summary of these functions.
 
 ## List of supported functions
 

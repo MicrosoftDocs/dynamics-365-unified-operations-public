@@ -2,7 +2,7 @@
 # required metadata
 
 title: Asset library in Lifecycle Services (LCS)
-description: This topic provides information about the Asset Library functionality in Lifecycle Services (LCS).
+description: This article provides information about the Asset Library functionality in Lifecycle Services (LCS).
 author: laneswenka
 ms.date: 05/06/2021
 ms.topic: article

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Get support for Finance and Operations apps or Lifecycle Services (LCS)
-description: This topic explains how to get help with Finance and Operations apps or Microsoft Dynamics Lifecycle Services (LCS). 
+description: This article explains how to get help with Finance and Operations apps or Microsoft Dynamics Lifecycle Services (LCS). 
 author: EricMoos
 ms.date: 08/02/2021
 ms.topic: article
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!INCLUDE [PEAP](../../../includes/peap-2.md)]
 
-This topic explains how to get help with Finance and Operations apps or Microsoft Dynamics Lifecycle Services (LCS). 
+This article explains how to get help with Finance and Operations apps or Microsoft Dynamics Lifecycle Services (LCS). 
 
 <table>
 <thead>

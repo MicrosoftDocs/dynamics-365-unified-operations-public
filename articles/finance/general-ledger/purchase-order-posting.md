@@ -2,7 +2,7 @@
 # required metadata
 
 title: Purchase order posting
-description: This topic describes the Purchase order tab of the Inventory posting profiles page.
+description: This article describes the Purchase order tab of the Inventory posting profiles page.
 author: rachelprofitt
 ms.date: 04/25/2022
 ms.topic: overview
@@ -128,7 +128,7 @@ Purchase requisitions and purchase order confirmations can also be configured to
 
 ## Procurement category posting
 
-As an alternative to setting up the inventory posting for all items, a group of items, or a single item, you can set up categories and control the ledger posting by procurement categories. For more information about setting up categories and assigning them to products, go to [Sample posting profile configuration](#sample-posting-profile-configuration) earlier in this topic.
+As an alternative to setting up the inventory posting for all items, a group of items, or a single item, you can set up categories and control the ledger posting by procurement categories. For more information about setting up categories and assigning them to products, go to [Sample posting profile configuration](#sample-posting-profile-configuration) earlier in this article.
 
 When using categories with purchase orders or vendor invoices, the category hierarchy needs to be assigned to the **Procurement category hierarchy** type on the **Category hierarchy role assignments** page.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up default descriptions for posting of Tax fiscal documents
-description: This topic explains how to set up default descriptions for voucher transactions that are posted from Tax fiscal documents.
+description: This article explains how to set up default descriptions for voucher transactions that are posted from Tax fiscal documents.
 author: gionoder
 ms.date: 03/18/2022
 ms.topic: article

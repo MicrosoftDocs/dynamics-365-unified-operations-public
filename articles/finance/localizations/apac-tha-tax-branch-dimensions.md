@@ -2,7 +2,7 @@
 # required metadata
 
 title: Tax branch dimensions
-description: This topic provides information about tax branches for Thailand.
+description: This article provides information about tax branches for Thailand.
 author: anasyash
 ms.date: 01/25/2021
 ms.topic: article

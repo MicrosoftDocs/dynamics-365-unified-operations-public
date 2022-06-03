@@ -26,7 +26,7 @@ In this section, you'll create a new project in Azure DevOps. This project will 
 
 ### Sign up to Azure DevOps, create an account, and create a new project
 
-Navigate to <https://www.visualstudio.com/> to sign up for Azure DevOps. Click **Sign up**. If you already have an account in Azure DevOps, go to the Create a Azure DevOps project section later in this topic.
+Navigate to <https://www.visualstudio.com/> to sign up for Azure DevOps. Click **Sign up**. If you already have an account in Azure DevOps, go to the Create a Azure DevOps project section later in this article.
 
 1. Sign in with your Microsoft account.
 
@@ -44,7 +44,7 @@ Navigate to <https://www.visualstudio.com/> to sign up for Azure DevOps. Click *
 
 ### Create a Azure DevOps team project
 
-If you already have a Azure DevOps organization, go to your account using Internet Explorer. This topic uses **.visualstudio.com** as the example URL for illustration purposes.
+If you already have a Azure DevOps organization, go to your account using Internet Explorer. This article uses **.visualstudio.com** as the example URL for illustration purposes.
 
 1. Go to <https://www.visualstudio.com/>.
 2. Under **Recent projects & teams**, click **New** to create a new project.

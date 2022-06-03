@@ -2,7 +2,7 @@
 # required metadata
 
 title: Submit a VAT return to the Altinn web service
-description: This topic explains how to submit a VAT return to the Altinn web service of Norway.
+description: This article explains how to submit a VAT return to the Altinn web service of Norway.
 author: liza-golub
 ms.date: 12/13/2021
 ms.topic: article

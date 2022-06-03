@@ -2,7 +2,7 @@
 # required metadata
 
 title: Customer prepayments
-description: This topic explains how to set up and process customer prepayments (also known as customer deposits).
+description: This article explains how to set up and process customer prepayments (also known as customer deposits).
 author: twheeloc
 ms.date: 04/30/2021
 ms.topic: article

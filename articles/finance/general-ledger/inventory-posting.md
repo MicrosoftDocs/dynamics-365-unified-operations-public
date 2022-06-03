@@ -2,7 +2,7 @@
 # required metadata
 
 title: Inventory posting 
-description: This topic explains the Inventory posting tab on the Inventory posting profile page.
+description: This article explains the Inventory posting tab on the Inventory posting profile page.
 author: rachelprofitt
 ms.date: 04/25/2022
 ms.topic: overview

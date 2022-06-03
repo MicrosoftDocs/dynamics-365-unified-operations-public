@@ -2,7 +2,7 @@
 # required metadata
 
 title: Certificate rotation
-description: This topic explains how to place existing certificates and update the references within the environment to use the new certificates.
+description: This article explains how to place existing certificates and update the references within the environment to use the new certificates.
 author: PeterRFriis
 ms.date: 04/07/2022
 ms.topic: article
@@ -12,7 +12,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 25
 
 [!include[banner](../includes/banner.md)]
 
-You may need to rotate the certificates used by your Dynamics 365 Finance + Operations (on-premises) environment as they approach their expiration date. In this topic, you will learn how to replace the existing certificates and update the references within the environment to use the new certificates.
+You may need to rotate the certificates used by your Dynamics 365 Finance + Operations (on-premises) environment as they approach their expiration date. In this article, you will learn how to replace the existing certificates and update the references within the environment to use the new certificates.
 
 > [!WARNING]
 > The certificate rotation process should be initiated well before the certificates expire. This is very important for the Data Encryption certificate, which could cause data loss for encrypted fields. For more information, see [After certificate rotation](#aftercertrotation). 
@@ -254,7 +254,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
     ```
 
     > [!NOTE] 
-    > You might receive the following error message: "Upgrading from two different certificates to two different certificates is not allowed." This message indicates that you didn't clean up old Service Fabric certificates on the previous certificate rotation exercise. In this case, see the [Clean up old Service Fabric certificates](certificate-rotation-on-prem.md#cleanupoldsfcerts) section later in this topic, and then repeat the steps in this section.  
+    > You might receive the following error message: "Upgrading from two different certificates to two different certificates is not allowed." This message indicates that you didn't clean up old Service Fabric certificates on the previous certificate rotation exercise. In this case, see the [Clean up old Service Fabric certificates](certificate-rotation-on-prem.md#cleanupoldsfcerts) section later in this article, and then repeat the steps in this section.  
 
 ### Service Fabric with or without expired certificates (cluster not accessible)
 
@@ -452,7 +452,7 @@ This procedure should be completed either after a successful certificate rotatio
                 },
     ```
 
-1. Follow steps 4 through 6 in the [Service Fabric with certificates that are not expired](#sfcertrotationnotexpired) section earlier in this topic. 
+1. Follow steps 4 through 6 in the [Service Fabric with certificates that are not expired](#sfcertrotationnotexpired) section earlier in this article. 
 
 ## <a name="aftercertrotation"></a> After certificate rotation
 

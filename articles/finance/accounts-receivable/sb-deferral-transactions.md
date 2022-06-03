@@ -2,7 +2,7 @@
 # required metadata
 
 title: Deferral transactions in Subscription billing
-description: This topic describes the various transactions that can be used in deferral transactions as part of revenue and expense deferrals in Subscription billing.
+description: This article describes the various transactions that can be used in deferral transactions as part of revenue and expense deferrals in Subscription billing.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.24
 
 # Deferral default transactions
 
-This topic describes the transactions that allow for revenue and expense deferrals. Deferral schedules are always based on and depend on an originating document or billing schedule. Deferral schedules are created based on defaults, and can't be entered or created separately.
+This article describes the transactions that allow for revenue and expense deferrals. Deferral schedules are always based on and depend on an originating document or billing schedule. Deferral schedules are created based on defaults, and can't be entered or created separately.
 
 ## Sales order transaction deferral
 

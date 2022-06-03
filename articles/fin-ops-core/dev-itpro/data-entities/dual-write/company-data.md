@@ -1,6 +1,6 @@
 ---
 title: Company concept in Dataverse
-description: This topic describes the integration of company data between Finance and Operations and Dataverse.
+description: This article describes the integration of company data between Finance and Operations and Dataverse.
 author: RamaKrishnamoorthy 
 ms.date: 08/04/2020
 ms.topic: article
@@ -44,7 +44,7 @@ Because of this configuration, any row that is related to the USMF company will 
 
 As the preceding illustration shows, this 1:1 mapping between business unit, company, and team is just a starting point. In this example, a new "Europe" business unit is manually created in Dataverse as the parent for both DEMF and ESMF. This new root business unit is unrelated to dual-write. However, it can be used to give members of the "EUR Sales" team access to account data in both DEMF and ESMF by setting the data visibility to **Parent/Child BU** in the associated security role.
 
-A final topic to discuss is how dual-write determines which owner team it should assign rows to. This behavior is controlled by the **Default owning team** column on the cdm\_Company row. When a cdm\_Company row is enabled for dual-write, a plug-in automatically creates the associated business unit and owner team (if it doesn't already exist), and sets the **Default owning team** column. The admin can change this column to a different value. However, the admin can't clear the column as long as the table is enabled for dual-write.
+A final article to discuss is how dual-write determines which owner team it should assign rows to. This behavior is controlled by the **Default owning team** column on the cdm\_Company row. When a cdm\_Company row is enabled for dual-write, a plug-in automatically creates the associated business unit and owner team (if it doesn't already exist), and sets the **Default owning team** column. The admin can change this column to a different value. However, the admin can't clear the column as long as the table is enabled for dual-write.
 
 > [!div class="mx-imgBorder"]
 ![Default owning team column.](media/dual-write-default-owning-team.jpg)

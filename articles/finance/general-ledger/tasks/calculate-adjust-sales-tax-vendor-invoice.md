@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Calculate and adjust sales tax on a vendor invoice
-description: This topic explains how to adjust sales tax on a vendor invoice in Dynamics 365 Finance. 
+description: This article explains how to adjust sales tax on a vendor invoice in Dynamics 365 Finance. 
 author: twheeloc
 ms.date: 07/31/2019
 ms.topic: business-process 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to adjust sales tax on a vendor invoice. If the original source document displays different tax amounts as calculated, you can adjust those amounts before posting. This task uses the DEMF demo company.
+This article explains how to adjust sales tax on a vendor invoice. If the original source document displays different tax amounts as calculated, you can adjust those amounts before posting. This task uses the DEMF demo company.
 
 1. Go to **Accounts payable > Invoices > Invoice journal**.
 2. Select **New**.

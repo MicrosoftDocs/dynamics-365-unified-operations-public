@@ -2,7 +2,7 @@
 # required metadata
 
 title: Fixed assets roll forward report
-description: This topic explains how to use the Fixed assets roll forward report.
+description: This article explains how to use the Fixed assets roll forward report.
 author: moaamer
 ms.date: 01/08/2018
 ms.topic: article

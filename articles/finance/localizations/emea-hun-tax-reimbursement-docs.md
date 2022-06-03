@@ -2,7 +2,7 @@
 # required metadata
 
 title: Tax reimbursement documents for Hungary
-description: This topic explains how to set up and create tax reimbursement documents for Hungary.
+description: This article explains how to set up and create tax reimbursement documents for Hungary.
 author: ShylaThompson
 ms.date: 03/27/2017
 ms.topic: article

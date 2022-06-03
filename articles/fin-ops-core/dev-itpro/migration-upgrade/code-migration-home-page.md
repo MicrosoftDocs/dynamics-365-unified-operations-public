@@ -2,7 +2,7 @@
 # required metadata
 
 title: Code migration and upgrade home page
-description: This topic provides links to topics about code migration.
+description: This article provides links to topics about code migration.
 author: RobinARH
 ms.date: 03/22/2021
 ms.topic: article

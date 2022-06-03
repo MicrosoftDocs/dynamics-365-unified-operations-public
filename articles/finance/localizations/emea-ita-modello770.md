@@ -2,7 +2,7 @@
 # required metadata
 
 title: Modello 770 report
-description: This topic provides information about the Modello 770 report for Italy.
+description: This article provides information about the Modello 770 report for Italy.
 author: ilkond
 ms.date: 07/19/2021
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 7.3
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up, create, and export the Model 770 report that is used to report withholding tax.
+This article explains how to set up, create, and export the Model 770 report that is used to report withholding tax.
 
 The Model 770 report is an annual report that provides information about the taxes that a company withholds when it pays contractors and self-employed vendors. Companies remit the withheld taxes directly to the government throughout the year. At the end of the year, the company creates and transmits the Model 770 report. This report itemizes the payments that were made to each contractor and self-employed vendor, and the taxes that were withheld from those payments. The Model 770 report contains information only about contractors and self-employed vendors whose taxes were withheld from payments. 
 

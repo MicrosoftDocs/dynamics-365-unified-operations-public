@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enroll workers in garnishments or tax levies
-description: This topic describes the process for enrolling workers in garnishments, tax levies, and any associated administrative fees.
+description: This article describes the process for enrolling workers in garnishments, tax levies, and any associated administrative fees.
 author: andreabichsel
 ms.date: 04/01/2020
 ms.topic: article
@@ -31,9 +31,9 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes the process for enrolling workers in garnishments, tax levies, and any associated administrative fees. Garnishments and tax levies are managed by using the benefit framework. This framework helps ensure that the payroll impact of garnishments and tax levies is handled correctly.
+This article describes the process for enrolling workers in garnishments, tax levies, and any associated administrative fees. Garnishments and tax levies are managed by using the benefit framework. This framework helps ensure that the payroll impact of garnishments and tax levies is handled correctly.
 
-If you have questions about garnishments and tax levies that aren't answered in this topic, or in the [Set up garnishments and tax levies](noam-usa-garnishment-tax-levy-set-up-tasks.md) or [Garnishments, tax levies, and administrative fees FAQ](noam-usa-garnishment-tax-levy-administrative-fees.md) topics, contact your legal advisors. To learn more about the concepts that are discussed in this topic, see [Garnishments, tax levies, and administrative fees FAQ](noam-usa-garnishment-tax-levy-administrative-fees.md).
+If you have questions about garnishments and tax levies that aren't answered in this article, or in the [Set up garnishments and tax levies](noam-usa-garnishment-tax-levy-set-up-tasks.md) or [Garnishments, tax levies, and administrative fees FAQ](noam-usa-garnishment-tax-levy-administrative-fees.md) topics, contact your legal advisors. To learn more about the concepts that are discussed in this article, see [Garnishments, tax levies, and administrative fees FAQ](noam-usa-garnishment-tax-levy-administrative-fees.md).
 
 ## Enroll a worker in a garnishment or tax levy
 
@@ -123,7 +123,7 @@ This field is available only for tax levies, and only when the limit method is <
 </tbody>
 </table>
 
-If the worker is enrolled in more than one garnishment or tax levy, you must complete the steps in the "Additional setup requirements when a worker is enrolled in multiple garnishments or tax levies, and the garnishment enhancement hotfix isn't installed" section, later in this topic. If the garnishment enhancement hotfix is installed, enter the following information on the **Garnishment and tax levy details** FastTab. If you require more information about these fields, contact your legal advisors.
+If the worker is enrolled in more than one garnishment or tax levy, you must complete the steps in the "Additional setup requirements when a worker is enrolled in multiple garnishments or tax levies, and the garnishment enhancement hotfix isn't installed" section, later in this article. If the garnishment enhancement hotfix is installed, enter the following information on the **Garnishment and tax levy details** FastTab. If you require more information about these fields, contact your legal advisors.
 
 | Field              | Description |
 |--------------------|-------------|
@@ -231,11 +231,11 @@ On the **Payroll details** FastTab, enter the following information.
 
 This section applies only if the garnishment enhancement hotfix isn't installed. When a worker has more than one garnishment order or tax levy, you might not be able to deduct the full amount of every garnishment and tax levy. Federal and state laws dictate the maximum combined amount that can be deducted for all garnishments, tax levies, and administrative fees.
 
-State laws dictate how the total amount should be allocated among the various garnishments and tax levies. This allocation is partly based on the garnishment type and the calculation priority. When a worker's garnishments have the same type and calculation priority, the amounts are calculated automatically. If a worker has more than one type of garnishment, you might have to do some of the calculations manually. Procedures for both situations are described later in this topic.
+State laws dictate how the total amount should be allocated among the various garnishments and tax levies. This allocation is partly based on the garnishment type and the calculation priority. When a worker's garnishments have the same type and calculation priority, the amounts are calculated automatically. If a worker has more than one type of garnishment, you might have to do some of the calculations manually. Procedures for both situations are described later in this article.
 
 ### Setting up multiple garnishments of the same type
 
-When a worker has more than one garnishment of the same type and the same calculation priority, you must specify the multiple garnishment method that is used to allocate the amount of the deduction among the garnishments, as described in "Enrolling a worker in a garnishment or tax levy," earlier in this topic. When multiple garnishments must be processed together, make sure that the garnishments have the same values in the following fields on the **Maintain benefits** page:
+When a worker has more than one garnishment of the same type and the same calculation priority, you must specify the multiple garnishment method that is used to allocate the amount of the deduction among the garnishments, as described in "Enrolling a worker in a garnishment or tax levy," earlier in this article. When multiple garnishments must be processed together, make sure that the garnishments have the same values in the following fields on the **Maintain benefits** page:
 
 - Calculation priority
 - Garnishment type

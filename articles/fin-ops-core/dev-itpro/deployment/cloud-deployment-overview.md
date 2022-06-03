@@ -2,7 +2,7 @@
 # required metadata
 
 title: Cloud deployment overview
-description: This topic describes the cloud environment and subscription, who can perform which tasks, and the data and customizations that you need to manage.
+description: This article describes the cloud environment and subscription, who can perform which tasks, and the data and customizations that you need to manage.
 author: LaneSwenka
 ms.date: 06/01/2022
 ms.topic: overview
@@ -75,7 +75,7 @@ Users with the Environment Administrator or Project Owner roles in Lifecycle Ser
 | Lifecycle operation | Description | Learn more
 |---------------------|-------------|------------|
 | Apply software | Install Microsoft updates, ISV solutions, or your own customization packages. | [Apply updates to cloud environments](apply-deployable-package-system.md)
-| Enable access | Allow list your IP for Remote Desktop or database access | See the [Remote Desktop](cloud-deployment-overview.md#remote-desktop) section later in this topic
+| Enable access | Allow list your IP for Remote Desktop or database access | See the [Remote Desktop](cloud-deployment-overview.md#remote-desktop) section later in this article
 | Restart services | Ability to restart components of your environment | [Restart environment services](../lifecycle-services/restart-environment-services.md)
 | Move database | Full data lifecycle management | [Database movement operations](../database/dbmovement-operations.md)
 | Maintenance mode | Ability to change configuration with only admin access | [Maintenance mode](../sysadmin/maintenance-mode.md)
@@ -212,7 +212,7 @@ Microsoft-managed Tier 1 through Tier 5 sandbox environments require Remote Desk
 - Your IP has changed from the IP address listed in the safe list. 
 - Microsoft deleted the rule containing your IP address from the safe list because it violated a guideline.
 
-To regain access to the environment, you will need to add the IP address of the computer from which you are connecting to. To do this, complete the steps [Remote Desktop](#remote-desktop) section earlier in this topic.
+To regain access to the environment, you will need to add the IP address of the computer from which you are connecting to. To do this, complete the steps [Remote Desktop](#remote-desktop) section earlier in this article.
 
 ### When will the availability of reduced regions go into effect for new onboarding?
 Beginning August 1, 2020, new projects for Finance and Operations will be onboarded to the following regions:

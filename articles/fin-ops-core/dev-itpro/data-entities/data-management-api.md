@@ -2,7 +2,7 @@
 # required metadata
 
 title: Data management package REST API
-description: This topic describes the Data management framework's package REST API.
+description: This article describes the Data management framework's package REST API.
 author: peakerbl
 ms.date: 08/16/2021
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Platform update 5
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the Data management framework's package representational state transfer (REST) application programming interface (API). The package API lets you integrate by using data packages. The REST API can be used with both cloud deployments and on-premises deployments. 
+This article describes the Data management framework's package representational state transfer (REST) application programming interface (API). The package API lets you integrate by using data packages. The REST API can be used with both cloud deployments and on-premises deployments. 
 
 Although on-premises support has been added, API names haven't been changed. Therefore, Microsoft can keep a single API set for both cloud deployments and on-premises deployments.
 
@@ -45,7 +45,7 @@ Two APIs support file-based integration scenarios: the Data management framework
 | Supported protocols | SOAP and REST | REST |
 | Service type        | Custom service | Open Data Protocol (OData) action |
 
-If you decide that the recurring integrations API meets your requirement better than the Data management framework's package API, see [Recurring integrations](recurring-integrations.md). The rest of this topic discusses the Data management framework's package API.
+If you decide that the recurring integrations API meets your requirement better than the Data management framework's package API, see [Recurring integrations](recurring-integrations.md). The rest of this article discusses the Data management framework's package API.
 
 ## Authorization
 

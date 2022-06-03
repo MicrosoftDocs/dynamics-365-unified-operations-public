@@ -2,7 +2,7 @@
 # required metadata
 
 title: Archive printed customer invoices with hash numbers
-description: This topic explains how to enable archiving to store printed customer invoices with hash numbers.  
+description: This article explains how to enable archiving to store printed customer invoices with hash numbers.  
 author: ilkond
 ms.date: 09/15/2021
 ms.topic: article
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.18
 
 In some countries, there is a legal requirement to store calculated hash numbers in the system together with printouts of some documents. Hash numbers can be used for reporting to authorities and during audits.
 
-This topic explains how to configure archiving in order to store printed customer invoices with hash numbers.
+This article explains how to configure archiving in order to store printed customer invoices with hash numbers.
 
 ## Prerequisites
 

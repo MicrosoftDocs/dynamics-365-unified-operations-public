@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed for the Indian GST localization in 10.0.13 (September 2020)
-description: This topic describes new or changed functionality that was released in Microsoft Dynamics 365 Finance version 10.0.13 for the APAC India Goods and Services Tax (GST) features.
+description: This article describes new or changed functionality that was released in Microsoft Dynamics 365 Finance version 10.0.13 for the APAC India Goods and Services Tax (GST) features.
 author: prabhatb
 ms.date: 10/08/2020
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.13
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides a summary of the new features and critical bug fixes that were released in Microsoft Dynamics 365 Finance version 10.0.13 for the Indian Goods and Services Tax (GST) localization.
+This article provides a summary of the new features and critical bug fixes that were released in Microsoft Dynamics 365 Finance version 10.0.13 for the Indian Goods and Services Tax (GST) localization.
 
 ## New features
 

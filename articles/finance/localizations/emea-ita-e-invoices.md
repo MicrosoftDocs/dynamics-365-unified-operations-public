@@ -2,7 +2,7 @@
 # required metadata
 
 title: Customer electronic invoices
-description: This topic provides information about the management of customer electronic invoices for Italy.
+description: This article provides information about the management of customer electronic invoices for Italy.
 author: v-oloski
 ms.date: 05/06/2021
 ms.topic: article
@@ -27,7 +27,7 @@ ms.author: v-oloski
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to set up and work with the functionality for creating and sending sales invoices and project invoices in an electronic format (FatturaPA).
+This article describes how to set up and work with the functionality for creating and sending sales invoices and project invoices in an electronic format (FatturaPA).
 
 As of version 1.2 of the FatturaPA format, electronic invoices can be used for all types of businesses. These types include public administrations, private companies, and professionals.
 
@@ -35,7 +35,7 @@ As of version 1.2 of the FatturaPA format, electronic invoices can be used for a
 
 The primary address of the legal entity must be in Italy.
 
-This topic contains the following information:
+This article contains the following information:
 
 - [Setup information](#setup)
 - [Maintaining related base documents](#relateddoc)
@@ -157,11 +157,11 @@ In both cases, the system enters the value of this field in the **CodiceDestinat
 
 ![Authority office field on the Sales demographics FastTab of a customer record.](media/emea-ita-electronic-invocies-customer-authority-office.png)
 
-If the **Authority office** field is blank, the system considers the customer a private company or professional (the transmission format equals **FPR12**), and enters **0000000** in the **CodiceDestinatario** tag in the XML file. In this case, a certified email address (PEC) should be set up. For more information, see the table in the [Electronic documents properties](#edproperties) section earlier in this topic.
+If the **Authority office** field is blank, the system considers the customer a private company or professional (the transmission format equals **FPR12**), and enters **0000000** in the **CodiceDestinatario** tag in the XML file. In this case, a certified email address (PEC) should be set up. For more information, see the table in the [Electronic documents properties](#edproperties) section earlier in this article.
 
 #### Activate automatic creation of electronic invoices
 
-Go to **Accounts receivable** \> **Customers** \> **All customers**, and open a customer record in **Edit** mode. Then, on the **Invoice and delivery** FastTab, in the **E-invoice** section, find the **eInvoice register** option. If this option is set to **Yes**, the system automatically creates the record on the **Electronic customer invoices** list page. For more information, see the [Electronic invoice register](#einvoiceregister) section later in this topic.
+Go to **Accounts receivable** \> **Customers** \> **All customers**, and open a customer record in **Edit** mode. Then, on the **Invoice and delivery** FastTab, in the **E-invoice** section, find the **eInvoice register** option. If this option is set to **Yes**, the system automatically creates the record on the **Electronic customer invoices** list page. For more information, see the [Electronic invoice register](#einvoiceregister) section later in this article.
 
 ![E-invoice section on the Invoice and delivery FastTab of a customer record.](media/emea-ita-electronic-invocies-customer-e-invoice.png)
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Make fields mandatory by using workspace classes
-description: This topic explains how to use workspace classes to make a field mandatory.
+description: This article explains how to use workspace classes to make a field mandatory.
 author: tonyafehr
 ms.date: 05/26/2022
 ms.topic: article

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Parse incoming documents in JSON format
-description: This topic explains how to set up Electronic reporting (ER) formats to parse incoming documents in JavaScript Object Notation (JSON) format.
+description: This article explains how to set up Electronic reporting (ER) formats to parse incoming documents in JavaScript Object Notation (JSON) format.
 author: kfend
 ms.date: 05/20/2019
 ms.topic: article

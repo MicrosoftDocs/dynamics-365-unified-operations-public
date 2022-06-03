@@ -2,7 +2,7 @@
 # required metadata
 
 title: LISTDISTINCT ER function
-description: This topic provides information about how the LISTDISTINCT Electronic reporting (ER) function is used.
+description: This article provides information about how the LISTDISTINCT Electronic reporting (ER) function is used.
 author: NickSelin
 ms.date: 7/30/2020
 ms.prod: 

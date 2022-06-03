@@ -2,7 +2,7 @@
 # required metadata
 
 title: Subledger transfer to the general ledger
-description: This topic describes capabilities that are related to the subledger transfer process in General ledger.
+description: This article describes capabilities that are related to the subledger transfer process in General ledger.
 author: RyanCCarlson2
 ms.date: 12/08/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 10.0.8
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes capabilities that are related to the rules for transferring batches of subledger journal entries.
+This article describes capabilities that are related to the rules for transferring batches of subledger journal entries.
 
 In version 8.1, changes were made to allow the transfer of rules, which deprecated the **Synchronous** option. For more information, see [Removed or deprecated features for Finance and Operations](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=%2fdynamics365%2ffinance%2ftoc.json#finance-and-operations-81-with-platform-update-20).
 

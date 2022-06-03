@@ -1,6 +1,6 @@
 ---
 title: Sign up for preview subscriptions
-description: This topic explains how to subscribe to the preview/partner offer and deploy an environment.
+description: This article explains how to subscribe to the preview/partner offer and deploy an environment.
 author: RobinARH
 ms.date: 12/16/2020
 ms.topic: article
@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to subscribe to the preview/partner offer and deploy an environment. The subscription that you create gives you a Microsoft Online Services test tenant and a Microsoft Dynamics Lifecycle Services (LCS) project where you can deploy an environment. This topic will also help you set up additional users in your Microsoft Online Services tenant and gain experience with service administration capabilities. Here are the skills that you will learn:
+This article explains how to subscribe to the preview/partner offer and deploy an environment. The subscription that you create gives you a Microsoft Online Services test tenant and a Microsoft Dynamics Lifecycle Services (LCS) project where you can deploy an environment. This article will also help you set up additional users in your Microsoft Online Services tenant and gain experience with service administration capabilities. Here are the skills that you will learn:
 
 - Subscribe, and create a new Microsoft Online test tenant.
 - Navigate to LCS projects.

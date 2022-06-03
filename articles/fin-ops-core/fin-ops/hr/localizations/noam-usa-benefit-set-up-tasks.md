@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up benefits
-description: This topic describes how to set up benefits that workers and their dependents and beneficiaries can receive, and how to maintain payroll information for benefits.
+description: This article describes how to set up benefits that workers and their dependents and beneficiaries can receive, and how to maintain payroll information for benefits.
 author: andreabichsel
 ms.date: 10/01/2018
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how to set up current and future benefits that workers and their dependents and beneficiaries can receive, and how to maintain payroll information for benefits. Examples of benefits include medical insurance, retirement investments, workers' compensation plans, and parking benefits.
+This article describes how to set up current and future benefits that workers and their dependents and beneficiaries can receive, and how to maintain payroll information for benefits. Examples of benefits include medical insurance, retirement investments, workers' compensation plans, and parking benefits.
 
 Garnishments and tax levies are also set up as benefits, but the steps for setting them up differ. For more information, see [Set up garnishments and tax levies](noam-usa-garnishment-tax-levy-set-up-tasks.md). After you set up benefit elements by using the **Benefit elements** page, you must create the benefits so that they can be assigned to workers. When you create a benefit, you link an option to a benefit plan, designate a benefit period, and assign eligibility rules to the benefit.
 
@@ -204,7 +204,7 @@ If the benefit plan is offered by more than one legal entity in your organizatio
 ### Setting up benefit options
 
 > [!NOTE]
-> To create retirement benefits, you must first set up the contribution calculation rate tables. If you haven't yet set up the rate tables, continue with the "Setting up contribution calculation rates for retirement benefits" section and then the "Creating a new benefit" section, later in this topic.
+> To create retirement benefits, you must first set up the contribution calculation rate tables. If you haven't yet set up the rate tables, continue with the "Setting up contribution calculation rates for retirement benefits" section and then the "Creating a new benefit" section, later in this article.
 
 ## Setting up contribution calculation rates for retirement benefits
 

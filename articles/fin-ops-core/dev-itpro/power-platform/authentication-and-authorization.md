@@ -2,7 +2,7 @@
 # required metadata
 
 title: Authentication and authorization
-description: This topic describes the authentication and authorization models for user synchronization and permissions between Finance and Operations apps and Microsoft Power Platform. 
+description: This article describes the authentication and authorization models for user synchronization and permissions between Finance and Operations apps and Microsoft Power Platform. 
 author: jaredha
 ms.date: 10/18/2021
 ms.topic: article

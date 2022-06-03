@@ -2,7 +2,7 @@
 # required metadata
 
 title: Troubleshoot business events
-description: This topic provides information about troubleshooting business events.
+description: This article provides information about troubleshooting business events.
 author: Sunil-Garg
 ms.date: 04/01/2022
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 2019-02-28
 
 [!include[banner](../includes/banner.md)]
 
-This topic provides tips for troubleshooting issues that involve business events.
+This article provides tips for troubleshooting issues that involve business events.
 
 | Issue | Possible resolution | 
 |---------------|---------------------|

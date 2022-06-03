@@ -2,7 +2,7 @@
 # required metadata
 
 title: Audit trail and edit logs for accounting software
-description: This topic provides information about the new Indian tax legislation guidelines for accounting software.
+description: This article provides information about the new Indian tax legislation guidelines for accounting software.
 author: EricWangChen
 ms.date: 02/18/2022
 ms.topic: article
