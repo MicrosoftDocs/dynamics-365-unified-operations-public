@@ -2,7 +2,7 @@
 # required metadata
 
 title: Commerce analytics (Preview)
-description: This topic explains how to install and use the analytics capability in Microsoft Dynamics 365 Commerce. 
+description: This article explains how to install and use the analytics capability in Microsoft Dynamics 365 Commerce. 
 author: AamirAllaq
 ms.date: 02/24/2022
 audience: Application user
@@ -17,7 +17,7 @@ ms.search.validFrom: 2021-11-12
 
 [!include [banner](includes/banner.md)]
 
-This topic explains how to install Commerce analytics (Preview), the functional analytics capability that is included in Microsoft Dynamics 365 Commerce.
+This article explains how to install Commerce analytics (Preview), the functional analytics capability that is included in Microsoft Dynamics 365 Commerce.
 
 ## Commerce Analytics (Preview) live demo
 

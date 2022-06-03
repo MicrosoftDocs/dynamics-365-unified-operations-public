@@ -1,6 +1,6 @@
 ---
 title: Create a Cloud Scale Unit extension package
-description: This topic describes how to create an extension package for Microsoft Dynamics 365 Commerce Cloud Scale Unit (CSU).
+description: This article describes how to create an extension package for Microsoft Dynamics 365 Commerce Cloud Scale Unit (CSU).
 author: mugunthanm
 ms.date: 06/01/2022
 ms.topic: article
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: AX 10.0.25
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic describes how to create an extension package for Microsoft Dynamics 365 Commerce Cloud Scale Unit (CSU). 
+This article describes how to create an extension package for Microsoft Dynamics 365 Commerce Cloud Scale Unit (CSU). 
 
 A CSU extension package contains the extension code for the following components:
 

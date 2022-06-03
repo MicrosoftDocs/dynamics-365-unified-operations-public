@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure and install Commerce Scale Unit (self-hosted)
-description: This topic explains how to use self-service to configure and install Commerce Scale Unit (self-hosted) on computers in a brick-and-mortar store.
+description: This article explains how to use self-service to configure and install Commerce Scale Unit (self-hosted) on computers in a brick-and-mortar store.
 author: jashanno
 ms.date: 11/22/2021
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how you can use self-service to configure a Commerce Scale Unit (self-hosted, previously called Retail Store Scale Unit) in Microsoft Dynamics 365 Commerce Headquarters, download it, and install it on one or more computers in a brick-and-mortar store. Commerce Scale Unit (CSU) combines the Commerce channel database, Commerce Async Client, Retail Server, and Cloud point of sale (POS) components. A Commerce environment already provides these components in the cloud. However, you can now configure them so that they work locally in a store or datacenter, in either a single-computer setup (the default option) or a multiple-computer setup. This topic also explains how to uninstall and troubleshoot Commerce Scale Unit.
+This article explains how you can use self-service to configure a Commerce Scale Unit (self-hosted, previously called Retail Store Scale Unit) in Microsoft Dynamics 365 Commerce Headquarters, download it, and install it on one or more computers in a brick-and-mortar store. Commerce Scale Unit (CSU) combines the Commerce channel database, Commerce Async Client, Retail Server, and Cloud point of sale (POS) components. A Commerce environment already provides these components in the cloud. However, you can now configure them so that they work locally in a store or datacenter, in either a single-computer setup (the default option) or a multiple-computer setup. This article also explains how to uninstall and troubleshoot Commerce Scale Unit.
 
 > [!IMPORTANT]
 > - A basic design principle to follow is that if you are not able to customize in a requested manner on a Commerce Scale Unit (Cloud), you should not customize this way with a CSU (self-hosted).  It is critical to understand that direct database access is not supported and can easily cause breaks in customizations that use this concept.  A CSU (self-hosted) is primarily for enabling cross-terminal scenarios, reducing latency or backup for poor WAN connectivity, and providing scale-out to spread the load of POS terminals across multiple CSU components.
@@ -42,7 +42,7 @@ This topic explains how you can use self-service to configure a Commerce Scale U
 > [!IMPORTANT]
 > To help maintain a high level of security across the company, we strongly recommend that you create a new application ID (client ID) and key (secret) for each store that is created. This step requires a new Web app.
 
-1. Generate a Microsoft Azure Active Directory (Azure AD) app registration to create an application ID (client ID) and key (secret). For instructions, see [Create an Azure Active Directory application](/azure/azure-resource-manager/resource-group-create-service-principal-portal#create-an-azure-active-directory-application). This topic reviews Azure user permissions and requirements, and explains how to generate an app registration.
+1. Generate a Microsoft Azure Active Directory (Azure AD) app registration to create an application ID (client ID) and key (secret). For instructions, see [Create an Azure Active Directory application](/azure/azure-resource-manager/resource-group-create-service-principal-portal#create-an-azure-active-directory-application). This article reviews Azure user permissions and requirements, and explains how to generate an app registration.
 
     > [!IMPORTANT]
     > If you are installing Commerce Scale Unit for use with an on-premises environment using Active Directory Federation Services, instead of Azure, follow the instructions in the Commerce installation document for on-premises environments. For more information, see [Installation steps for Commerce channel components in an on-premises environment](../../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md).
@@ -51,7 +51,7 @@ This topic explains how you can use self-service to configure a Commerce Scale U
 
 ## Configure a new Commerce Scale Unit
 
-To create a functioning Commerce Scale Unit, complete the procedures in all sections of this topic until the "Multiple-computer installation" section. To complete the configuration and installation, you must first do the initial configuration in Headquarters. Next, you must complete the installation. Finally, you must return to Headquarters to finish the configuration, so that Commerce Scale Unit works correctly.
+To create a functioning Commerce Scale Unit, complete the procedures in all sections of this article until the "Multiple-computer installation" section. To complete the configuration and installation, you must first do the initial configuration in Headquarters. Next, you must complete the installation. Finally, you must return to Headquarters to finish the configuration, so that Commerce Scale Unit works correctly.
 
 > [!IMPORTANT]
 > Channel functionality in an on-premises environment is enabled exclusively via use of Commerce Scale Unit (self-hosted). For an overview, see Commerce Scale Unit (self-hosted). Unlike a cloud deployment, an on-premises environment does not enable seamless, high-availability deployment of channel components via Lifecycle Services (LCS). The only way to use channel components is by installing Commerce Scale Unit (self-hosted).
@@ -70,7 +70,7 @@ To create a functioning Commerce Scale Unit, complete the procedures in all sect
 4. In the **Channel data group** field, select the **Default** option. Select any option that has been created.
 
     > [!IMPORTANT]
-    > For on-premises deployments, this value will be the **Default** value that was previously described in this topic.
+    > For on-premises deployments, this value will be the **Default** value that was previously described in this article.
 
 5. In the **Type** field, leave the default value (**Channel database**) selected.
 6. You can leave the **Data sync interval** field blank. Alternatively, you can select a value in this field. For example, in the demo data, the value **D60-U15** specifies a 15-minute synchronization interval.
@@ -212,12 +212,12 @@ The Commerce Scale Unit installer first extracts the associated files. It then b
 
     > [!IMPORTANT]
     > - When installing Commerce Scale Unit for use with an on-premises environment, Cloud POS does not require an Azure or AD FS application to be configured, so it is important to unmark **Configure Retail Cloud POS**.
-    > - When installing Commerce Scale Unit for use with an on-premises environment, the Client ID (Application ID) and Secret (Key) used will be the values generated by the PowerShell script performed in the configuration steps performed in steps 6-8 in the [Installation steps for Commerce channel components in an on-premises environment](../../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md) topic. (Step 6 creates the Client ID and step 8 resets the Secret to be copied.)
+    > - When installing Commerce Scale Unit for use with an on-premises environment, the Client ID (Application ID) and Secret (Key) used will be the values generated by the PowerShell script performed in the configuration steps performed in steps 6-8 in the [Installation steps for Commerce channel components in an on-premises environment](../../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md) article. (Step 6 creates the Client ID and step 8 resets the Secret to be copied.)
 
     When you create the Web App, the initial URI and URL don't have to be any specific value. Only the application ID (client ID) and key (secret) that are created are important.
 
 9. After the application ID (client ID) and key (secret) are created for Commerce Scale Unit, the application ID (client ID) must be accepted in Commerce. Follow the next procedure to finish the configuration in Headquarters.
-10. After the installation is complete, the final health page appears. This page shows whether the installation was successful. It also shows the health of each component, based on basic connection tests, and the location of this topic. If the installation wasn't successful, the page shows the location of the log files. We recommend that you keep this final health page open until you've completed the configuration of Commerce Scale Unit and all components are working correctly (Requiring the completion of the following section).
+10. After the installation is complete, the final health page appears. This page shows whether the installation was successful. It also shows the health of each component, based on basic connection tests, and the location of this article. If the installation wasn't successful, the page shows the location of the log files. We recommend that you keep this final health page open until you've completed the configuration of Commerce Scale Unit and all components are working correctly (Requiring the completion of the following section).
 
 ### Finish the configuration in Headquarters
 
@@ -287,7 +287,7 @@ Only advanced users should install Commerce Scale Unit across multiple computers
 
 #### Installation on the first computer
 
-On the first computer, run the Commerce Scale Unit self-service installer as described earlier in this topic, but make the following changes.
+On the first computer, run the Commerce Scale Unit self-service installer as described earlier in this article, but make the following changes.
 
 1. Select only Commerce channel database and Async Client as the components to install. Then select **Next** to continue with the installation.
 
@@ -318,7 +318,7 @@ For detailed information about SQL Server and Windows Firewall, see [Configure a
 
 #### Installation on the second computer
 
-On the second computer, run the Commerce Scale Unit Self-service installer as described earlier in this topic, but make the following changes.
+On the second computer, run the Commerce Scale Unit Self-service installer as described earlier in this article, but make the following changes.
 
 1. Select only Retail Server and Cloud POS as the components to install. If you are installing only Retail Server, don't select Cloud POS. Then select **Next** to continue with the installation.
 2. Enter the domain user credentials (user name and password) that have permission to access SQL Server on the first computer. Then select **Next**.
@@ -359,7 +359,7 @@ On the second computer, run the Commerce Scale Unit Self-service installer as de
 
 11. In Commerce, go to **Retail and commerce** &gt; **Headquarters setup** &gt; **Commerce scheduler** &gt; **Channel database**, and follow these steps:
 
-    1. Select the channel database that you created at the beginning of this topic.
+    1. Select the channel database that you created at the beginning of this article.
     2. On the Action Pane, select **Full Sync** &gt; **Job 9999**. Full synchronization might require several minutes.
     3. In the Commerce Scale Unit installer, retest to verify that all functionality is working correctly.
 

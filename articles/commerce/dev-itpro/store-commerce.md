@@ -1,6 +1,6 @@
 ---
 title: Store Commerce app
-description: This topic explains how to set up and configure the Microsoft Dynamics 365 Commerce Store Commerce app.
+description: This article explains how to set up and configure the Microsoft Dynamics 365 Commerce Store Commerce app.
 author: mugunthanm
 ms.date: 06/01/2022
 ms.topic: article
@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 10.0.25
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up and configure the Microsoft Dynamics 365 Commerce Store Commerce app and applies to Microsoft Dynamics 365 Commerce version 10.0.25 and later.
+This article explains how to set up and configure the Microsoft Dynamics 365 Commerce Store Commerce app and applies to Microsoft Dynamics 365 Commerce version 10.0.25 and later.
 
 The Store Commerce app in Dynamics 365 Commerce is the next-generation offering for physical stores. It unifies Modern Point of Sale (MPOS) and Cloud Point of Sale (CPOS) into a single application, provides deployment choices to retailers, helps improve performance, and offers superior application lifecycle management (ALM). At the same, it retains all the functionality of MPOS and CPOS, including extensibility.
 

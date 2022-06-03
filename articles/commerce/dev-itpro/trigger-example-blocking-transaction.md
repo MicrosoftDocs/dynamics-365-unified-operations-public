@@ -2,7 +2,7 @@
 # required metadata
 
 title: Block transactions by using triggers
-description: This topic shows how you can use a trigger to block an invoice or credit transaction.
+description: This article shows how you can use a trigger to block an invoice or credit transaction.
 author: mugunthanm
 ms.date: 06/20/2017
 ms.topic: article
@@ -31,9 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This topic shows how you can use a trigger to block an invoice or credit transaction.
+This article shows how you can use a trigger to block an invoice or credit transaction.
 
-This topic shows how you can block an invoice or credit transaction.
+This article shows how you can block an invoice or credit transaction.
 
 1.  Open Visual Studio as an administrator. Create a new Visual C\# Class Library (Portable) project and name it CRTTriggerExtension. If you get a message that the selection makes this project incompatible with Visual Studio 2010, click **OK**.
 2.  In Solution Explorer, rename default class1.cs to GetCustomersServiceRequestTrigger.cs.

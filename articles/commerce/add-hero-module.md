@@ -2,7 +2,7 @@
 # required metadata
 
 title: Content block module 
-description: This topic covers content block modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+description: This article covers content block modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](includes/banner.md)]
 
-This topic covers content block modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+This article covers content block modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
 A content block module is used to market products or promotions through a combination of images and text. For example, a retailer can add a content block module to the home page of an e-Commerce site to promote a new product and attract the attention of customers.
 

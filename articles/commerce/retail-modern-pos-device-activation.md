@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure, install, and activate Modern POS (MPOS)
-description: This topic describes how to configure, download, and install Modern POS on various platforms. It then describes how to activate Modern POS through device activation.
+description: This article describes how to configure, download, and install Modern POS on various platforms. It then describes how to activate Modern POS through device activation.
 author: jashanno
 ms.date: 09/01/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to configure, download, and install Modern POS on various platforms. This topic is based on the legacy self-service installer. For more information about sealed self-service installers, see [Mass deployment of sealed Commerce self-service components](dev-itpro/Enhanced-Mass-Deployment.md). It then describes how to activate Modern POS through device activation.
+This article describes how to configure, download, and install Modern POS on various platforms. This article is based on the legacy self-service installer. For more information about sealed self-service installers, see [Mass deployment of sealed Commerce self-service components](dev-itpro/Enhanced-Mass-Deployment.md). It then describes how to activate Modern POS through device activation.
 
 > [!NOTE]
 > There are two Modern POS installers: Modern POS and Modern POS with offline (this installer also installs the offline database).
@@ -55,7 +55,7 @@ The self-service process lets you download the appropriate version of the Modern
 
 ## Setup
 
-Before you start the steps that are outlined in this topic, follow these steps.
+Before you start the steps that are outlined in this article, follow these steps.
 
 - Verify that you have credentials to sign in to Headquarters.
 - Verify that you have administrative or root access to install Modern POS on a device.
@@ -123,7 +123,7 @@ The Modern POS installer first extracts the associated files and then starts the
     - If a system restart is required, the installer informs you about this requirement, but the installation can typically continue.
     - A sideloaded installation of Modern POS requires a Group Policy change. The installer informs you if this change is required and then makes the change automatically.
 
-2. If you selected offline support, but a valid version of SQL Server isn't found, the installer will fail during the prerequisites check. If a prerequisite fails during this step, first retry the installer. If the installer continues to fail, see the [Troubleshooting](#troubleshooting) section of this topic.
+2. If you selected offline support, but a valid version of SQL Server isn't found, the installer will fail during the prerequisites check. If a prerequisite fails during this step, first retry the installer. If the installer continues to fail, see the [Troubleshooting](#troubleshooting) section of this article.
 3. The installer installs Modern POS.
 4. On the page that states that installation was successful, select **Close** to exit the installer.
 
@@ -149,7 +149,7 @@ You can now start the program.
 
 ## Create a worker
 
-For this topic, we have already created workers and assigned them to the Houston address book in the demo data that is provided. Therefore, this topic will use pre-generated data.
+For this article, we have already created workers and assigned them to the Houston address book in the demo data that is provided. Therefore, this article will use pre-generated data.
 
 ### Create a worker
 

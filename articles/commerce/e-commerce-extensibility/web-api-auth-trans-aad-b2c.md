@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up web API authentication transfer using Azure Active Directory B2C
-description: This topic describes how to set up the transfer of web API authentication to a Microsoft Dynamics 365 Commerce e-commerce site by using Azure Active Directory (Azure AD) business-to-consumer (B2C).
+description: This article describes how to set up the transfer of web API authentication to a Microsoft Dynamics 365 Commerce e-commerce site by using Azure Active Directory (Azure AD) business-to-consumer (B2C).
 author: BrianShook
 ms.date: 05/27/2022
 ms.topic: article
@@ -18,7 +18,7 @@ ms.search.validFrom: 2017-06-20
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic describes how to set up the transfer of web API authentication to a Microsoft Dynamics 365 Commerce e-commerce site by using Azure Active Directory (Azure AD) business-to-consumer (B2C).
+This article describes how to set up the transfer of web API authentication to a Microsoft Dynamics 365 Commerce e-commerce site by using Azure Active Directory (Azure AD) business-to-consumer (B2C).
 
 Dynamics 365 Commerce uses Azure AD B2C to support user credential and authentication flows, and can receive valid Azure AD B2C tokens from an external web API or service. The Commerce rendering service handles the Azure AD B2C authenticated tokens to use on a Commerce e-commerce site. Users who authenticate against the dedicated Azure AD B2C tenant from a separate service can be transferred to an e-commerce site in an authenticated state, and can then continue shopping, checkout, or authentication activities.
 

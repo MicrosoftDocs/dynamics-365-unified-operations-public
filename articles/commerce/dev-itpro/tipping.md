@@ -2,7 +2,7 @@
 # required metadata
 
 title: Support for tipping in the payments SDK
-description: This topic describes the support for accepting tips on payment terminals in the payments software development kit (SDK).
+description: This article describes the support for accepting tips on payment terminals in the payments software development kit (SDK).
 author: BrianShook
 ms.date: 11/18/2020
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how the payments software development kit (SDK) for Microsoft Dynamics 365 Commerce supports tip amounts that are entered through a payment terminal. The purpose of this feature is to add first-class support to the payments SDK by including a separate field for the tip amount in authorization responses.
+This article describes how the payments software development kit (SDK) for Microsoft Dynamics 365 Commerce supports tip amounts that are entered through a payment terminal. The purpose of this feature is to add first-class support to the payments SDK by including a separate field for the tip amount in authorization responses.
 
 This feature doesn't add support for tipping or tip reporting at the point of sale (POS). Implementation of full tipping capabilities requires POS extensions.
 
@@ -48,7 +48,7 @@ Tipping is common in some locales and industries. For example, in the quick serv
 
 Although this feature adds support for tipping at the level of the payments SDK, it doesn't include support for other important aspects of tipping functionality. For example, the feature doesn't support reporting of tip payouts at the end of shifts, the ability to pool tips, or the ability to report tips for payroll. To enable full tipping support, you must implement those capabilities through extensions.
 
-For more information about how to create the payment terminal integrations and SDK references that are mentioned in this topic, see [Create an end-to-end payment integration for a payment terminal](end-to-end-payment-extension.md).
+For more information about how to create the payment terminal integrations and SDK references that are mentioned in this article, see [Create an end-to-end payment integration for a payment terminal](end-to-end-payment-extension.md).
 
 ### Prerequisites
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Fiscal registration service integration sample for Germany
-description: This topic provides an overview of the fiscal integration sample for Germany in Microsoft Dynamics 365 Commerce.
+description: This article provides an overview of the fiscal integration sample for Germany in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
 ms.date: 03/04/2022
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.validFrom: 2020-5-29
 
 [!include[banner](../includes/banner.md)]
 
-This topic provides an overview of the fiscal integration sample for Germany in Microsoft Dynamics 365 Commerce.
+This article provides an overview of the fiscal integration sample for Germany in Microsoft Dynamics 365 Commerce.
 
 To meet local fiscal requirements for cash registers in Germany, the Microsoft Dynamics 365 Commerce functionality for Germany includes a sample integration of the point of sale (POS) with an external fiscal registration service. The sample extends the [fiscal integration functionality](fiscal-integration-for-retail-channel.md). It's based on the [EFR (Electronic Fiscal Register)](https://www.efsta.eu/de/fiskalloesungen/deutschland) solution from [EFSTA](https://www.efsta.eu/de/) and enables communication with the EFR service via the HTTPS protocol. The EFR service should be hosted on either the Retail Hardware station or a separate computer that can be connected to from the Hardware station. The sample is provided in the form of source code and is part of the Retail software development kit (SDK).
 

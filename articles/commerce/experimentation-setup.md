@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up an experiment
-description: This topic describes how to set up an experiment in a third-party service.
+description: This article describes how to set up an experiment in a third-party service.
 author:  sushma-rao 
 ms.date: 10/21/2020
 ms.topic: article
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 10.0.13
 
 # Set up an experiment
 
-After you [define a hypothesis and determine what success metrics you want to use](experimentation-identify.md), you'll need to set up your experiment in the third-party service. The following diagram shows all of the steps involved in setting up and running an experiment on an e-Commerce website in Dynamics 365 Commerce. Additional steps are covered in separate topics.
+After you [define a hypothesis and determine what success metrics you want to use](experimentation-identify.md), you'll need to set up your experiment in the third-party service. The following diagram shows all of the steps involved in setting up and running an experiment on an e-Commerce website in Dynamics 365 Commerce. Additional steps are covered in separate articles.
 
 [ ![Experimentation user journey - Setup.](./media/experimentation_setup.svg) ](./media/experimentation_setup.svg#lightbox)
 
