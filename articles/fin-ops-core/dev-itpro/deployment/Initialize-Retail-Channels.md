@@ -46,32 +46,34 @@ If you're using a Tier-2 sandbox or production environment that has application 
 ## Region availability
 Commerce Scale Unit is available for deployment in the following regions.
 
-| Global location | Region              | Availability        |
-|-----------------|---------------------|---------------------|
-| AMERICAS        | East US             | Generally available |
-| AMERICAS        | East US 2           | Generally available |
-| AMERICAS        | North Central US    | Generally available |
-| AMERICAS        | South Central US    | Generally available |
-| AMERICAS        | Central US          | Generally available |
-| AMERICAS        | West US             | Generally available |
-| AMERICAS        | West US 2           | Generally available |
-| AMERICAS        | Canada Central      | Limited capacity    |
-| AMERICAS        | Canada East         | Limited capacity    |
-| AMERICAS        | West Central US     | Limited capacity    |
-| APAC            | Australia East      | Generally available |
-| APAC            | Southeast Asia      | Generally available |
-| APAC            | Japan East          | Generally available |
-| APAC            | Japan West          | Generally available |
-| APAC            | Australia Southeast | Limited capacity    |
-| APAC            | East Asia           | Limited capacity    |
-| APAC            | India South         | Limited capacity    |
-| APAC            | India Central       | Limited capacity    |
-| EMEA            | West Europe         | Generally available |
-| EMEA            | North Europe        | Generally available |
-| EMEA            | UK South            | Limited capacity    |
-| EMEA            | UK West             | Limited capacity    |
+| Global location | Region              | Availability        | Comments                  |
+|-----------------|---------------------|---------------------|---------------------------|
+| AMERICAS        | East US             | Generally available |                           |
+| AMERICAS        | East US 2           | Generally available |                           |
+| AMERICAS        | North Central US    | Limited capacity    |                           |
+| AMERICAS        | South Central US    | Limited capacity    |                           |
+| AMERICAS        | Central US          | Generally available |                           |
+| AMERICAS        | West US             | Generally available |                           |
+| AMERICAS        | West US 2           | Generally available |                           |
+| AMERICAS        | Canada Central      | Limited capacity    |                           |
+| AMERICAS        | Canada East         | Limited capacity    |                           |
+| AMERICAS        | West Central US     | Limited capacity    |                           |
+| APAC            | Australia East      | Generally available |                           |
+| APAC            | Southeast Asia      | Capacity restricted | No deployments allowed    |
+| APAC            | Japan East          | Generally available |                           |
+| APAC            | Japan West          | Generally available |                           |
+| APAC            | Australia Southeast | Generally available |                           |
+| APAC            | East Asia           | Limited capacity    |                           |
+| APAC            | India South         | Capacity restricted | No deployments allowed    |
+| APAC            | India Central       | Limited capacity    | Requires approval process |
+| EMEA            | West Europe         | Generally available |                           |
+| EMEA            | North Europe        | Generally available |                           |
+| EMEA            | UK South            | Limited capacity    |                           |
+| EMEA            | UK West             | Limited capacity    |                           |
+| Switzerland     | Switzerland North   | Limited capacity    | Requires approval process |
+| UAE             | UAE North           | Limited capacity    | Requires approval process |
 
-Deployment capacity in Limited capacity regions is extremely constrained. Requests for deployment are evaluated on a case-by-case basis. If you have a compelling business need for deployment in Limited capacity regions, you can file a support request to be added to the waitlist.
+Deployment capacity in Limited capacity regions is extremely constrained. Requests for deployment are evaluated on a case-by-case basis. If you have a compelling business need for deployment in Limited capacity regions, you can file a support request to be added to the waitlist. Capacity restricted areas currently do not allow for Commerce Scale Unit deployment at this time. 
 
 ![Map showing region availability.](media/Commerce-Scale-Unit-Region-Availability.png "Map showing region availability")
 
