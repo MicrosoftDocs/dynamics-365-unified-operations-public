@@ -4,7 +4,7 @@
 title: Personalize the user experience
 description: This article explains how you can personalize the app.
 author: jasongre
-ms.date: 03/03/2022
+ms.date: 06/03/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -290,6 +290,9 @@ For customers who haven't yet turned on the [Saved views](saved-views.md) featur
 - **Clear** – You can clear all personalizations for a page or workspace for one or more users. First select a page or workspace to see a list of the users who have personalized it. Then select the users who should have personalizations for that page or workspace cleared, and select **Clear**. All personalizations that the selected users have applied to the selected page or workspace are deleted. This action can't be undone. However, if a personalization was saved for the page or workspace, that personalization can be reimported.
 - **Users** – Select a user to see a list of the pages that the user has personalized. You can then turn that user's ability to use personalizations for specific pages, or for the whole system, on or off. You can also import, export, or clear a personalization for the user. In addition, you can reset feature callouts for the user. In this case, if the user previously dismissed any pop-up windows that introduce new features, they will appear again the next time that the user encounters those features.
 - **System** – You can temporarily turn off personalization for all users in the system. In this case, all personalizations are deleted for all users, and all pages are reset to their default state. If you turn personalization back on later, all personalizations are reapplied. You can also permanently delete all personalizations for all users in the system. Personalizations that have been deleted can't be recovered. Therefore, before you perform this task, be sure to export any personalizations that you might want later.
+
+### Service updates and personalization
+Personalization data does not need to be cleared or reset when moving to a new version of the product. Personalizations and saved views data will continue to work across updates. Exceptions to this would include changes to the form itself that invalidate a personalization (such as a removed control) or changes to the form's base query that changes its data source subtree so that it no longer matches the data source subtree associated with the view query.
 
 ## Personalizing inventory dimensions
 
