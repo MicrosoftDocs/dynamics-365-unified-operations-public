@@ -1,6 +1,6 @@
 ---
 title: Synchronize intercompany charges
-description: This topic explains synchronization of intercompany charges
+description: This article explains synchronization of intercompany charges
 author: Henrikan
 ms.date: 09/01/2021
 ms.topic: article

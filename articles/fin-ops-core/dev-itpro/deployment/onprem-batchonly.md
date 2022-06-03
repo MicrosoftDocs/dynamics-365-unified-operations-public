@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure batch-only and interactive-only AOS nodes in on-premises deployments
-description: This topic explains how to configure your environment so that you can deploy batch-only and interactive-only AOS nodes.
+description: This article explains how to configure your environment so that you can deploy batch-only and interactive-only AOS nodes.
 author: faix
 ms.date: 07/08/2020
 ms.topic: article
@@ -12,7 +12,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: [Operations AOT form name to tie this topic to]
+# ms.search.form: [Operations AOT form name to tie this article to]
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 36
 > [!IMPORTANT]
 > This feature is supported starting in application update 10.0.12, Platform update 36.
 
-This topic explains how to configure your environment so that you can deploy batch-only and interactive-only Application Object Server (AOS) nodes.
+This article explains how to configure your environment so that you can deploy batch-only and interactive-only Application Object Server (AOS) nodes.
 
 To make this feature available, Microsoft has introduced two new Microsoft Azure Service Fabric node types. For batch-only AOS nodes, the new node type is **BatchOnlyAOSNodeType**. For interactive-only AOS nodes, the new node type is **InteractiveOnlyAOSNodeType**.
 

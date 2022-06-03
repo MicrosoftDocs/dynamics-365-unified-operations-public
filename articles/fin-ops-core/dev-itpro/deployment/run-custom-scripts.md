@@ -1,6 +1,6 @@
 ---
 title: Run custom X++ scripts with zero downtime
-description: This topic describes how to upload and run deployable packages that contain custom X++ scripts without having to suspend your system.
+description: This article describes how to upload and run deployable packages that contain custom X++ scripts without having to suspend your system.
 author: AndersGirke
 ms.date: 12/16/2021
 ms.topic: article
@@ -117,7 +117,7 @@ Use the following procedure to upload and run a script.
 
 1. In your Finance and Operations app, go to **System administration \> Periodic tasks \> Database \> Custom scripts**.
 1. Select **Upload**.
-1. Select the deployable package that you created as described earlier in this topic. You will be prompted to specify the purpose of the script.
+1. Select the deployable package that you created as described earlier in this article. You will be prompted to specify the purpose of the script.
 1. The script must now be approved by a user other than the user who uploaded it. The approver must follow these steps:
 
     1. Go to **System administration \> Periodic \> Data base \> Custom scripts**.

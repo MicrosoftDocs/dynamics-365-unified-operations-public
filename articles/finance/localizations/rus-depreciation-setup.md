@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up depreciation (Russia)
-description: This topic explains how to set up depreciation for Russian fixed assets.
+description: This article explains how to set up depreciation for Russian fixed assets.
 author: anasyash
 ms.date: 05/25/2022
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up depreciation for Russian fixed assets.
+This article explains how to set up depreciation for Russian fixed assets.
 
 ## Set up depreciation methods
 

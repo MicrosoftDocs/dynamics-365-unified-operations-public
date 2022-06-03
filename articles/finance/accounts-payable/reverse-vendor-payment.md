@@ -2,7 +2,7 @@
 # required metadata
 
 title: Reverse a vendor payment
-description: This topic describes the differences between reversing, deleting, voiding, and rejecting a payment. Additionally, it explains the two methods for reversing a vendor check. 
+description: This article describes the differences between reversing, deleting, voiding, and rejecting a payment. Additionally, it explains the two methods for reversing a vendor check. 
 author: abruer
 ms.date: 08/22/2017
 ms.topic: article

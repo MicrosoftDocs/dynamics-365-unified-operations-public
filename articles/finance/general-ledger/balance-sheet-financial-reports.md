@@ -2,7 +2,7 @@
 # required metadata
 
 title: Balance sheet financial reports
-description: This topic describes the default reports for balance sheets. It also describes the building blocks that are associated with these reports. 
+description: This article describes the default reports for balance sheets. It also describes the building blocks that are associated with these reports. 
 author: jcart1106
 ms.date: 06/20/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the default reports for balance sheets. It also describes the building blocks that are associated with these reports. 
+This article describes the default reports for balance sheets. It also describes the building blocks that are associated with these reports. 
 
 ## Default balance sheet reports
 

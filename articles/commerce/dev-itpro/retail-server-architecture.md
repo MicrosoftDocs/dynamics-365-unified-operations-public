@@ -1,6 +1,6 @@
 ---
 title: Headless commerce architecture
-description: This topic describes the architecture of the headless commerce.
+description: This article describes the architecture of the headless commerce.
 author: mugunthanm
 ms.date: 06/03/2021
 ms.topic: article
@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 10.0.16
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the architecture of the headless commerce (also known as Commerce Scale Unit). The headless commerce is an API-driven framework that enables extensible, personalized, friction-free commerce experiences, and integrated, optimized back-office operations.
+This article describes the architecture of the headless commerce (also known as Commerce Scale Unit). The headless commerce is an API-driven framework that enables extensible, personalized, friction-free commerce experiences, and integrated, optimized back-office operations.
 
 ![Commerce Scale Unit architecture.](media/CSUExtensionArchitecture.PNG)
 
@@ -36,7 +36,7 @@ The headless commerce contains these components:
 
 ### Consumer APIs
 
-The headless commerce exposes Open Data Protocol (OData) APIs for Dynamics 365 Commerce and third-party applications to consume. The API layer is built by using ASP.NET Core. It provides different authentication options so that the clients can consume the APIs. The APIs are a wrapper that exposes the business logic. For more information, see the following topics:
+The headless commerce exposes Open Data Protocol (OData) APIs for Dynamics 365 Commerce and third-party applications to consume. The API layer is built by using ASP.NET Core. It provides different authentication options so that the clients can consume the APIs. The APIs are a wrapper that exposes the business logic. For more information, see the following articles:
 
 + [Commerce Scale Unit customer and consumer APIs](retail-server-customer-consumer-api.md)
 + [Consume APIs](consume-retail-server-api.md)
@@ -44,7 +44,7 @@ The headless commerce exposes Open Data Protocol (OData) APIs for Dynamics 365 C
 
 ### Commerce runtime
 
-CRT is a collection of portable .NET libraries that contain the core commerce business logic. The consumer APIs expose the business logic for clients to consume. To add or modify business logic, customize CRT. For more information, see the following topics:
+CRT is a collection of portable .NET libraries that contain the core commerce business logic. The consumer APIs expose the business logic for clients to consume. To add or modify business logic, customize CRT. For more information, see the following articles:
 
 + [Commerce runtime (CRT) services](crt-services.md)
 + [CRT Extensions](commerce-runtime-extensibility.md)

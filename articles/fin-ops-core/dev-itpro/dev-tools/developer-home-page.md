@@ -1,6 +1,6 @@
 ---
 title: Develop and customize home page
-description: This topic provides links to topics about development.
+description: This article provides links to topics about development.
 author: RobinARH
 ms.date: 10/26/2021
 ms.topic: article
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides links to topics about development.
+This article provides links to topics about development.
 
 ## Overview
 

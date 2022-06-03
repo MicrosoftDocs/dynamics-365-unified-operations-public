@@ -2,7 +2,7 @@
 # required metadata
 
 title: Upgrade from AX 2012 - Data upgrade in development environments
-description: This topic explains the end-to-end process for upgrading from Microsoft Dynamics AX 2012 to the latest Finance and Operations development environment.
+description: This article explains the end-to-end process for upgrading from Microsoft Dynamics AX 2012 to the latest Finance and Operations development environment.
 author: laneswenka
 ms.date: 11/01/2021
 ms.topic: article
@@ -98,7 +98,7 @@ For more information, see [Upgrade data in development or demo environments](upg
 
 There are options that let you resume the data upgrade where it last stopped. You can also record any data upgrade script errors with call stacks to a table in the database. For development scenarios, you can skip failed scripts and continue to run the upgrade.
 
-For more details, see the [main data upgrade topic](upgrade-data-to-latest-update.md#troubleshoot-upgrade-script-errors).
+For more details, see the [main data upgrade article](upgrade-data-to-latest-update.md#troubleshoot-upgrade-script-errors).
 
 ### Recommendation for the first data upgrade run
 

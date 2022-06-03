@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Manage Finance and Operations updates and your custom code lifecycle
-description: This topic describes how to manage Finance and Operations updates and your custom code lifecycle.
+description: This article describes how to manage Finance and Operations updates and your custom code lifecycle.
 author: rbadawy
 ms.date: 11/08/2021
 ms.topic: article
@@ -16,22 +16,22 @@ ms.dyn365.ops.version: Platform update 10
 
 # Manage Finance and Operations updates and your custom code lifecycle
 
-This topic describes application lifecycle use cases for Finance and Operations implementations. It's focused on the following scenarios:
+This article describes application lifecycle use cases for Finance and Operations implementations. It's focused on the following scenarios:
 
 + Managing your source code development branches
 + Applying the next version of a Microsoft service update
 + Applying a new version of your custom code
 
-This topic applies to Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce, and Dynamics 365 Project Operations.
+This article applies to Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce, and Dynamics 365 Project Operations.
 
 The main goal is to show how to complete the following tasks:
 
 + Stay up to date and manage Microsoft service updates (or quality updates) for Finance and Operations apps (including Dynamics 365 Commerce) in incremental phases, independently of the lifecycle of your own customization. This approach simplifies the update process, and reduces the cost and risk of regressions that are associated with all-in-one upgrade projects.
 + Take advantage of source code branches for version control of your custom code. By using version control, you can isolate the rollout of critical changes and hotfixes from the development of new features and capabilities.
 
-This topic doesn't explain how to use the different tools in Azure DevOps and Microsoft Dynamics Lifecycle Services (LCS). Instead, it's focused on processes and best practices. The [Apply the next version of a Microsoft service update](#apply-next-update) and [Apply a new version of your custom code](#apply-new-custom-code) sections contain both an overview of the phases and the steps of the process.
+This article doesn't explain how to use the different tools in Azure DevOps and Microsoft Dynamics Lifecycle Services (LCS). Instead, it's focused on processes and best practices. The [Apply the next version of a Microsoft service update](#apply-next-update) and [Apply a new version of your custom code](#apply-new-custom-code) sections contain both an overview of the phases and the steps of the process.
 
-This topic includes the following sections:
+This article includes the following sections:
 
 + [Environments](#environments)
 
@@ -93,7 +93,7 @@ This topic includes the following sections:
 
 ## <a id="environments"></a>Environments
 
-This section describes the collection of Finance and Operations environments that the application lifecycle management (ALM) scenarios in this topic rely on. This configuration is typical for organizations that have implementations that rely on custom code (extensions). This custom code includes customizations that are provided by independent software vendors (ISVs).
+This section describes the collection of Finance and Operations environments that the application lifecycle management (ALM) scenarios in this article rely on. This configuration is typical for organizations that have implementations that rely on custom code (extensions). This custom code includes customizations that are provided by independent software vendors (ISVs).
 
 ### <a id="current-environments"></a>Environments that run your current release
 
@@ -154,7 +154,7 @@ When you take a Microsoft update, you don't have to update your custom code to t
 
 ### <a id="compatibility"></a>Backward compatibility of Microsoft updates
 
-It's important that you understand what Microsoft means by *backward compatibility of service updates*, so that you have context for the next sections of this topic. Service and quality updates are *runtime* backward-compatible. However, they aren't always *design-time* (*compile-time*) backward-compatible.
+It's important that you understand what Microsoft means by *backward compatibility of service updates*, so that you have context for the next sections of this article. Service and quality updates are *runtime* backward-compatible. However, they aren't always *design-time* (*compile-time*) backward-compatible.
 
 #### <a id="runtime-compatibility"></a>Runtime compatibility
 

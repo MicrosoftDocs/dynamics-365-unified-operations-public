@@ -2,7 +2,7 @@
 # required metadata
 
 title: Resolve issues after entity store maintenance
-description: This topic describes procedures that must be completed after entity store maintenance.
+description: This article describes procedures that must be completed after entity store maintenance.
 author: MilindaV2
 ms.date: 04/09/2021
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
@@ -33,7 +33,7 @@ When maintenance is performed on the entity store, it impacts the following comp
 - Application analytical workspaces.
 - Entity store-based reports that have been deployed to PowerBI.com.
 
-To resolve issues with these components, complete the procedures in this topic.
+To resolve issues with these components, complete the procedures in this article.
 
 > [!NOTE]
 > There will be **no impact** to the normal operation of your application.

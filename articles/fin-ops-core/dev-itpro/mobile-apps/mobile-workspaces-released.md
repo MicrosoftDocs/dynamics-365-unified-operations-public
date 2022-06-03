@@ -2,7 +2,7 @@
 # required metadata
 
 title: Available mobile workspaces
-description: This topic lists the mobile workspaces that are available for use.
+description: This article lists the mobile workspaces that are available for use.
 author: sericks007
 ms.date: 05/24/2022
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: July 2017 update
 [!include [banner](../includes/banner.md)]
 [!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
-This topic lists the mobile workspaces that are available for use with the Finance and Operations (Dynamics 365) mobile app. The below table indicates the deprecation plan for each of these mobile workspaces in terms of whether a replacement experience is planned or not.  
+This article lists the mobile workspaces that are available for use with the Finance and Operations (Dynamics 365) mobile app. The below table indicates the deprecation plan for each of these mobile workspaces in terms of whether a replacement experience is planned or not.  
 
 
 | Mobile workspace     | Description   | Deprecation plan   |

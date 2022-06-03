@@ -2,7 +2,7 @@
 # required metadata
 
 title: Immediate Supply of Information on VAT (Suministro Inmediato de Información del IVA, SII)
-description: This topic describes how to set up and use Dynamics 365 Finance to interoperate with the SII system of Spain.
+description: This article describes how to set up and use Dynamics 365 Finance to interoperate with the SII system of Spain.
 author: liza-golub
 ms.date: 11/09/2021
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 7.3
 
 [!include [banner](../includes/banner.md)]
 
-According to R.D. 596/2016 in Spain, a new value-added tax (VAT) management system that is based on the Immediate Supply of Information on VAT (Suministro Inmediato de Información del IVA [SII]) allows for a two-way, automated relationship between the Spanish Tax Agency (La Agencia Estatal de Administración Tributaria [AEAT]) and the taxpayer. In this topic, this system will be referred to as the SII system. Starting July 1, 2017, taxpayers who are subject to SII, and others who voluntarily adopt it, must send details of their billing records within four days through online filing on the AEAT website.
+According to R.D. 596/2016 in Spain, a new value-added tax (VAT) management system that is based on the Immediate Supply of Information on VAT (Suministro Inmediato de Información del IVA [SII]) allows for a two-way, automated relationship between the Spanish Tax Agency (La Agencia Estatal de Administración Tributaria [AEAT]) and the taxpayer. In this article, this system will be referred to as the SII system. Starting July 1, 2017, taxpayers who are subject to SII, and others who voluntarily adopt it, must send details of their billing records within four days through online filing on the AEAT website.
 
 For more information about the SII system of Spain, see the [Immediate Supply of Information on VAT (SII) official website](https://www.agenciatributaria.es/AEAT.internet/en_gb/Inicio/La_Agencia_Tributaria/Campanas/Suministro_Inmediato_de_Informacion_en_el_IVA__SII_/Suministro_Inmediato_de_Informacion_en_el_IVA__SII_.shtml).
 
@@ -49,7 +49,7 @@ As of Finance version 10.0.22, if you're using the [Tax Calculation](global-tax-
 - 'Libro de registro de facturas Expedidas': **Record book of issued invoices**
 - 'Libro de registro de facturas Recibidas': **Record book of received invoices**
 
-This topic describes how to set up and use Finance to interoperate with the SII system of Spain. It includes information about how to complete the following tasks:
+This article describes how to set up and use Finance to interoperate with the SII system of Spain. It includes information about how to complete the following tasks:
 
 -   Import Electronic reporting (ER) configurations.
 -   Set up Electronic messaging (EM) functionality.
@@ -130,7 +130,7 @@ The electronic message processing from the previous table works with the followi
 | FacturasСliente                   | **Customer invoices**                                                                                                                                                                                                                                                                                                                                                                                                         | SII              |
 | PagosCliente                      | **Customer payments:** Message items of this type are created for existing customer invoices where the **Special scheme code** value is set to **07**.                                                                                                                                                                                                                                                             | SII              |
 | PagosProveedores                  | **Vendor payments:** Message items of this type are created for existing vendor invoices where the **Special scheme code** value is set to **07**.                                                                                                                                                                                                                                                                  | SII              |
-| OperacionesIntracomunitarias      | **Intra-community operations:** Message items of this type are created for existing vendor invoices that meet specific intra-community criteria. For more information, see the description in the [Algorithm of to define the TipoOperacion (Intra-community operation type) additional field](#algorithm-to-define-the-tipooperacion-intra-community-operation-type-additional-field) section later in this topic. | SII              |
+| OperacionesIntracomunitarias      | **Intra-community operations:** Message items of this type are created for existing vendor invoices that meet specific intra-community criteria. For more information, see the description in the [Algorithm of to define the TipoOperacion (Intra-community operation type) additional field](#algorithm-to-define-the-tipooperacion-intra-community-operation-type-additional-field) section later in this article. | SII              |
 | CobrosEnMetálico                  | **Collections in cash records:** Message items of this type are filled in from preliminary information that is collected about payment transactions that are posted from customers to specific cash accounts.                                                                                                                                                                                                                 | CollectionInCash |
 
 To review the imported electronic message item types, go to **Tax** \> **Setup \> **Electronic messages** \> **Message item types**.
@@ -222,7 +222,7 @@ As of Finance version 10.0.22, if you're using the [Tax Calculation](global-tax-
    | CUSTOMER INVOICE JOURNAL      | This datasource populates data from the **Customer invoice journal** table as EM items of **FacturasСliente** type for reporting to the SII system of Spain. |
    | VENDOR INVOICE JOURNAL        | This datasource populates data from the **Vendor invoice journal** table as EM items of **FacturasProveedores** type for reporting to the SII system of Spain. |
    | PROJECT INVOICE               | This datasource populates data from the **Project invoice** table as EM items of **FacturasСliente** type for reporting to the SII system of Spain. |
-   | TRANSFER ORDER HISTORY        | This datasource populates data from the **Transfer order history** table as EM items of the **FacturasСliente** and **FacturasProveedores** types for reporting to the SII system of Spain. This datasource is available as of Finance version 10.0.22 if you're using the [Tax Calculation](global-tax-calcuation-service-overview.md) service and the [Support multiple VAT registration numbers](emea-multiple-vat-registration-numbers.md) feature is enabled in the **Feature management** workspace. For more information, see the [Reporting to the SII system of Spain for multiple VAT registrations](#multiple-vat) section later in this topic. |
+   | TRANSFER ORDER HISTORY        | This datasource populates data from the **Transfer order history** table as EM items of the **FacturasСliente** and **FacturasProveedores** types for reporting to the SII system of Spain. This datasource is available as of Finance version 10.0.22 if you're using the [Tax Calculation](global-tax-calcuation-service-overview.md) service and the [Support multiple VAT registration numbers](emea-multiple-vat-registration-numbers.md) feature is enabled in the **Feature management** workspace. For more information, see the [Reporting to the SII system of Spain for multiple VAT registrations](#multiple-vat) section later in this article. |
 
 5.  Select **OK** to initiate the executable class.
 
@@ -639,7 +639,7 @@ EM functionality automatically runs actions that are included in the processing 
 
 ### Process for reporting invoices to the SII system
 
-The **ES SII setup.zip** package provides the setup for **SII** processing in the EM functionality that supports interoperation with the SII system. The following illustration shows the schema for general **SII** processing. Manual user actions aren't included in this illustration but are explained later in this topic.
+The **ES SII setup.zip** package provides the setup for **SII** processing in the EM functionality that supports interoperation with the SII system. The following illustration shows the schema for general **SII** processing. Manual user actions aren't included in this illustration but are explained later in this article.
 
 ![Schema for general SII processing.](media/emea-esp-sii-process.png)
 

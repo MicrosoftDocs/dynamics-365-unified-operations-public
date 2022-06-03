@@ -2,7 +2,7 @@
 # required metadata
 
 title: Change data in Azure Data Lake
-description: This topic provides information about change data in a data lake and explains what you can do with it.
+description: This article provides information about change data in a data lake and explains what you can do with it.
 author: MilindaV2
 ms.date: 11/16/2021
 ms.topic: article
@@ -132,7 +132,7 @@ Because tables continue to add changes while they are in **Running** status, cha
 
 If you want to reduce the amount of data that is stored in your data lake, you can periodically delete the change log from the data lake. For example, you can run a job that deletes change log files that haven't been modified for 90 days or 180 days.
 
-Periodic deletion of the change log has no impact on data in the **Tables** folder. However, if you run consistency checks, as described earlier in this topic, you might want to keep the change log longer to facilitate those checks.
+Periodic deletion of the change log has no impact on data in the **Tables** folder. However, if you run consistency checks, as described earlier in this article, you might want to keep the change log longer to facilitate those checks.
 
 ### Creating reports that have header and line consistency
 

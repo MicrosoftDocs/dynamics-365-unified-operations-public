@@ -2,7 +2,7 @@
 # required metadata
 
 title: Server-to-server authentication for the ATS integration API
-description: This topic describes how to set up server-to-server authentication for integrations against the Dynamics 365 Human Resources Applicant Tracking System (ATS) integration API.
+description: This article describes how to set up server-to-server authentication for integrations against the Dynamics 365 Human Resources Applicant Tracking System (ATS) integration API.
 author: jaredha
 ms.date: 06/30/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This topic describes how to set up server-to-server authentication for application integrations against the Dynamics 365 Human Resources Applicant Tracking System (ATS) integration API. There are a couple of layers of security that need to be managed for the service principal to get access to the Microsoft Dataverse virtual table and associated data. The user needs to be granted access to the Dataverse virtual table in Microsoft Power Platform, and access to the data in Dynamics 365 Human Resources.
+This article describes how to set up server-to-server authentication for application integrations against the Dynamics 365 Human Resources Applicant Tracking System (ATS) integration API. There are a couple of layers of security that need to be managed for the service principal to get access to the Microsoft Dataverse virtual table and associated data. The user needs to be granted access to the Dataverse virtual table in Microsoft Power Platform, and access to the data in Dynamics 365 Human Resources.
 
 ## Enable access to Dataverse virtual tables in Power Platform
 

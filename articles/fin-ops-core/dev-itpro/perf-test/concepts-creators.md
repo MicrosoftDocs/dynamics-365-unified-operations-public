@@ -1,6 +1,6 @@
 ---
 title: Creators in the Acceptance test library
-description: This topic provides information about Acceptance test library creators.
+description: This article provides information about Acceptance test library creators.
 author: MichaelFruergaardPontoppidan
 ms.date: 03/27/2019
 ms.topic: article

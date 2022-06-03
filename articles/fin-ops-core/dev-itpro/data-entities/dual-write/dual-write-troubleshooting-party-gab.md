@@ -1,6 +1,6 @@
 ---
 title: Party and global address book troubleshooting
-description: This topic provides troubleshooting information that can help you fix issues that are related to dual-write party and global address book functions.
+description: This article provides troubleshooting information that can help you fix issues that are related to dual-write party and global address book functions.
 author: RamaKrishnamoorthy
 ms.date: 07/30/2021
 ms.topic: article
@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 
 
-This topic provides troubleshooting information that can help you fix issues that are related to dual-write party and global address book functions.
+This article provides troubleshooting information that can help you fix issues that are related to dual-write party and global address book functions.
 
 ## Verify these prerequisites
 
@@ -118,6 +118,6 @@ You might receive an error such as "the **Party** number could not be found" whe
 
 There is a range added to the **DirPartyCDSEntity** entity in Finance and Operations apps to filter only parties of type **Person** and **Organization**. As a result, the initial sync of the **CDS Parties – msdyn_parties** mapping will not sync parties of other types, including **Legal Entity** and **Operating Unit**. When the initial sync runs for **CDS Party postal addresses (msdyn_partypostaladdresses)** or **Party Contacts V3 (msdyn_partyelectronicaddresses)** you might see errors, for example, that the **Party** number could not be found in Dataverse.
 
-We are working to remove the party type range on the Finance and Operations apps entity so that parties of all types synchronize to Dataverse successfully. Check back to this topic for updates. 
+We are working to remove the party type range on the Finance and Operations apps entity so that parties of all types synchronize to Dataverse successfully. Check back to this article for updates. 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

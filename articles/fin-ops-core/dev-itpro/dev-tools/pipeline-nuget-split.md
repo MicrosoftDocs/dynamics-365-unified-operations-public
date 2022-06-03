@@ -1,6 +1,6 @@
 ---
 title: Update the hosted Azure Pipeline for new NuGet packages
-description: This topic explains how to update an Azure pipeline to use new NuGet packages.
+description: This article explains how to update an Azure pipeline to use new NuGet packages.
 author: jorisdg
 ms.date: 03/04/2021
 ms.topic: article
@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> This topic applies to pipelines that were set up for versions 10.0.17 or earlier. This does not apply to the legacy build pipeline that uses the build virtual machine.
+> This article applies to pipelines that were set up for versions 10.0.17 or earlier. This does not apply to the legacy build pipeline that uses the build virtual machine.
 
 Platform updates for [version 10.0.18](../get-started/whats-new-platform-updates-10-0-18.md) introduce a new NuGet package. The new package is a result of a package split for the Application Build Reference code. As a result, you have to make changes to pipelines created for 10.0.17 or earlier versions.
 

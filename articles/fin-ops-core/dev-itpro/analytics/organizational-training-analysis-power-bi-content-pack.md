@@ -2,7 +2,7 @@
 # required metadata
 
 title: Organizational training Power BI content
-description: This topic describes the Finance and Operations - Organizational training Power BI content.
+description: This article describes the Finance and Operations - Organizational training Power BI content.
 author: jcart1106
 ms.date: 12/19/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the Finance and Operations - Organizational training Power BI content.
+This article describes the Finance and Operations - Organizational training Power BI content.
 
 ## Reports that are included in the content pack
 After you've connected the content pack to your data, the reports show your organization's data. If you've never used Microsoft Power BI before, you can learn more about it on the [Guided Learning page for Power BI](https://powerbi.microsoft.com/guided-learning/?WT.mc_id=PBIService_GetData). The reports that are included in the content pack have both charts and tables that contain additional information. The following table describes the reports.

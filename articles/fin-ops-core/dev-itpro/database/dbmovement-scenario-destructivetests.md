@@ -2,7 +2,7 @@
 # required metadata
 
 title: Destructive testing 
-description: This topic explains a destructive testing scenario for Finance and Operations.
+description: This article explains a destructive testing scenario for Finance and Operations.
 author: LaneSwenka
 ms.date: 01/28/2019
 ms.topic: article

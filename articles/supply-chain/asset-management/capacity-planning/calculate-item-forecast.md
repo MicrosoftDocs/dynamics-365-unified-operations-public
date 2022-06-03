@@ -2,7 +2,7 @@
 # required metadata
 
 title: Calculate item forecast
-description: This topic explains how to calculate item forecast in Asset Management.
+description: This article explains how to calculate item forecast in Asset Management.
 author: johanhoffmann
 ms.date: 08/16/2019
 ms.topic: article

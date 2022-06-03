@@ -2,7 +2,7 @@
 # required metadata
 
 title: Information access and reporting
-description: This topic explains the various reporting options available as part of the platform.
+description: This article explains the various reporting options available as part of the platform.
 author: RichdiMSFT
 ms.date: 10/02/2019
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 1
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains the various reporting options available as part of the platform.
+This article explains the various reporting options available as part of the platform.
 
 ## Why information access is important
 
@@ -45,7 +45,7 @@ A *report* can be defined simply as a structured presentation of data. Under ide
 - **Financial reporting** providing all-up views across legal entities.
 - **Structured documents** distributed internally to employees or externally to customers and vendors.
 
-Although each of these scenarios at its core involves the presentation of structured business data, the process of accessing these reports and how the results are subsequently consumed varies greatly. Flexibility in the user tooling is essential for scenarios that involve data exploration. By contrast, layout precision is required for compliance with most regulatory documents. Given the diversity of information access scenarios it's understandable that not all reports are created equal. This topic is intended to help familiarize you with the various reporting options available as part of the platform.
+Although each of these scenarios at its core involves the presentation of structured business data, the process of accessing these reports and how the results are subsequently consumed varies greatly. Flexibility in the user tooling is essential for scenarios that involve data exploration. By contrast, layout precision is required for compliance with most regulatory documents. Given the diversity of information access scenarios it's understandable that not all reports are created equal. This article is intended to help familiarize you with the various reporting options available as part of the platform.
 
 ## Common myths of reporting
 To become a proficient *report* *maker*, it's often useful to let go of past inhibitions. The following section seeks to rebuke three common myths about reporting.

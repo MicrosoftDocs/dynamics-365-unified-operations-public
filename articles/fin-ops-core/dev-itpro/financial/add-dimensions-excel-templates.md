@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add lookup values for financial dimensions to Excel templates
-description: This topic provides information about how you can add the ability to look up dimension values in Microsoft Excel templates.
+description: This article provides information about how you can add the ability to look up dimension values in Microsoft Excel templates.
 author: RyanCCarlson2
 ms.date: 06/20/2017
 ms.topic: article
@@ -31,9 +31,9 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about how you can add the ability to look up dimension values in Microsoft Excel templates.
+This article provides information about how you can add the ability to look up dimension values in Microsoft Excel templates.
 
-The only value that is present on Microsoft Excel templates after installation is MainAccount. This is the only dimension that all customers will have. To add the dimensions to Microsoft Excel templates, you need to complete the steps in the [Add dimensions to Excel templates](dimensions-overview.md) topic. After you have added the dimensions, if you want the ability to look up a list of dimension values, complete the steps in this topic. 
+The only value that is present on Microsoft Excel templates after installation is MainAccount. This is the only dimension that all customers will have. To add the dimensions to Microsoft Excel templates, you need to complete the steps in the [Add dimensions to Excel templates](dimensions-overview.md) article. After you have added the dimensions, if you want the ability to look up a list of dimension values, complete the steps in this article. 
 
 > [!NOTE]
 > This information is subject to change for each release, so be sure to check back frequently for the most up-to-date information.

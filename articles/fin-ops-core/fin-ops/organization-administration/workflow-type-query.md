@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create a query for a workflow type
-description: This topic describes how to create a query for a workflow type.
+description: This article describes how to create a query for a workflow type.
 author: RobinARH
 ms.date: 06/19/2019
 ms.topic: article
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 1
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Before you create a workflow type, you must create a query that will access the table fields for the workflow document. This topic describes how to create a query for a workflow type.
+Before you create a workflow type, you must create a query that will access the table fields for the workflow document. This article describes how to create a query for a workflow type.
 
 ## Create a query for a workflow type
 

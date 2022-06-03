@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Security diagnostics for task recordings
-description: This topic provides information about how to analyze and manage security permission requirements based on a task recording.
+description: This article provides information about how to analyze and manage security permission requirements based on a task recording.
 author: Peakerbl
 ms.date: 05/05/2020
 ms.topic: business-process 
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Version 10.0.9
 
 ## Before you begin
 
-This topic provides information about how to analyze and manage security permission requirements based on a task recording. Before you complete the steps in this topic, you must have a task recording of the business process that you want to analyze. To record a business process, see [Task recorder resources](../../user-interface/task-recorder.md). 
+This article provides information about how to analyze and manage security permission requirements based on a task recording. Before you complete the steps in this article, you must have a task recording of the business process that you want to analyze. To record a business process, see [Task recorder resources](../../user-interface/task-recorder.md). 
 
 ## Manage security for a task recording
 

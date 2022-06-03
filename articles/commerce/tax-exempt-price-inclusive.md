@@ -2,7 +2,7 @@
 # required metadata
 
 title: Calculation of tax exemption
-description: This topic describes functionality for tax exemption calculations in the point of sale (POS) and call center. 
+description: This article describes functionality for tax exemption calculations in the point of sale (POS) and call center. 
 author: BrianShook
 ms.date: 09/01/2020
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes functionality for tax exemption calculations in the point of sale (POS) and call center.
+This article describes functionality for tax exemption calculations in the point of sale (POS) and call center.
 
 ## Key terms
 

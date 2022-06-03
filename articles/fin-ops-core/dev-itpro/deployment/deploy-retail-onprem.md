@@ -2,7 +2,7 @@
 # required metadata
 
 title: Installation steps for Retail channel components in an on-premises environment
-description: This topic covers the installation steps for Commerce channel components in an on-premises environment. 
+description: This article covers the installation steps for Commerce channel components in an on-premises environment. 
 author: jashanno
 ms.date: 11/22/2021
 ms.topic: article
@@ -12,7 +12,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 8.1.1
 
 [!include[banner](../includes/banner.md)]
 
-This topic covers the installation steps for Commerce channel components in an on-premises environment.
+This article covers the installation steps for Commerce channel components in an on-premises environment.
 
 > [!IMPORTANT]
 > There is currently a known issue where self-service packages will not correctly apply to on-premises environments. For that reason it is recommended to pull the installers directly from Microsoft Dynamics Lifecycle Services (LCS) and use them as needed. Commerce headquarters would thereby no longer be used to download the installers but only the configuration files as needed.

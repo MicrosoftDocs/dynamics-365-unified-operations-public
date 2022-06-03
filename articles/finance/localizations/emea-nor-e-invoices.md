@@ -2,7 +2,7 @@
 # required metadata
 
 title: Customer electronic invoices in Norway
-description: This topic explains how to set up and process customers electronic invoices in Norway.
+description: This article explains how to set up and process customers electronic invoices in Norway.
 author: ilkond
 ms.date: 11/03/2020
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.08
 
 For compliance with European Union Directive 2014/55/EU, the Norway-specific **EHF Billing 3.0** format for electronic invoices has been implemented based on the [PEPPOL Billing 3.0](https://docs.peppol.eu/poacc/billing/3.0/) specification.
 
-This topic provides information about how to configure and issue customer electronic invoices in Norway.
+This article provides information about how to configure and issue customer electronic invoices in Norway.
 
 ## Prerequisites
 

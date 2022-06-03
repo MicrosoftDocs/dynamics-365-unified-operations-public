@@ -2,7 +2,7 @@
 # required metadata
 
 title: Generate and work with pay statements
-description: This topic describes the process for generating pay statements.
+description: This article describes the process for generating pay statements.
 author: andreabichsel
 ms.date: 06/20/2017
 ms.topic: article
@@ -31,13 +31,13 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes the process for generating pay statements. It also describes other tasks, such as reversing a pay statement, that you might have to complete after you generate pay statements.
+This article describes the process for generating pay statements. It also describes other tasks, such as reversing a pay statement, that you might have to complete after you generate pay statements.
 
 When you generate pay statements, all worker deductions and employer contributions for benefits and taxes are calculated, benefit accruals are processed, and the worker's net pay is determined. We recommend that you use batch processing mode when you generate pay statements, to improve performance. Completed pay statements are used to issue worker payments. For more information, see [Issue worker payments](noam-usa-issue-worker-payments.md).
 
 ## Where pay statements fit in the payroll process
 
-The following illustration shows where the generation of pay statements fits into the larger picture of payroll processing. Other tasks that this topic describes aren't part of the end-to-end payroll process.
+The following illustration shows where the generation of pay statements fits into the larger picture of payroll processing. Other tasks that this article describes aren't part of the end-to-end payroll process.
 
 ![Basic steps for processing earnings.](https://i-technet.sec.s-msft.com/dynimg/IC766964.gif "Basic steps for processing earnings")
 

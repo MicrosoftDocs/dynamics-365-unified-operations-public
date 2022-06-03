@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Cash - Local primary forms and unified reports
-description: This topic provides information about cash transaction reports that are available for companies with Russian context.
+description: This article provides information about cash transaction reports that are available for companies with Russian context.
 author: v-nadyuz
 ms.date: 11/13/2019
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 8.1
 
 Several reports about cash transactions are available in companies that have Russian context.
 
-The [Petty cash for Eastern Europe and Russia](emea-petty-cash.md) topic provides information about the following reports:
+The [Petty cash for Eastern Europe and Russia](emea-petty-cash.md) article provides information about the following reports:
 
 - Slip journal
 - Cash book report
@@ -39,7 +39,7 @@ The [Petty cash for Eastern Europe and Russia](emea-petty-cash.md) topic provide
 - Cash transactions report
 - Journal of registration of documents report
 
-This topic provides information about following additional reports:
+This article provides information about following additional reports:
 
 - Cash due announcement
 - Cash counting statement (INV-15)
@@ -67,7 +67,7 @@ You can print a **Cash due announcement** report from either the **General journ
 1. Go to **General ledger \> Journal entries \> General journals**.
 2. Select a journal, and then, on the Action Pane, select **Lines**.
 3. Create a line for sending petty cash to the bank. Select a bank account in either the **Account** field or the **Offset account** field.
-4. On the **Payment** tab, in the **Bank transaction type** field, select the transaction type that you selected the **Allow cash due announcement** check box for earlier in this topic.
+4. On the **Payment** tab, in the **Bank transaction type** field, select the transaction type that you selected the **Allow cash due announcement** check box for earlier in this article.
 5. On the Action Pane, select **Print \> Cash due announcement** to generate and print the report. The report is generated as a Microsoft Excel document that uses the template for form **0402001**.
 
     ![Cash due announcement report.](media/cash-primary-01.png)

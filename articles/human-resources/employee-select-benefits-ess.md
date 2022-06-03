@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Employees select plans by using Employee self service (optional)
-description: This topic describes how employees can select or update their benefits.
+description: This article describes how employees can select or update their benefits.
 author: twheeloc
 ms.date: 12/06/2021
 ms.topic: article

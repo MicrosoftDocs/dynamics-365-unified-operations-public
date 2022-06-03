@@ -2,7 +2,7 @@
 # required metadata
 
 title: Define and set order attributes
-description: This topic explains how to edit and set attributes values for orders directly in Commerce Headquarters, the POS, and CRT.
+description: This article explains how to edit and set attributes values for orders directly in Commerce Headquarters, the POS, and CRT.
 author: mugunthanm
 ms.date: 09/25/2020
 ms.topic: article

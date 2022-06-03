@@ -2,7 +2,7 @@
 # required metadata
 
 title: Regulatory Configuration Services (RCS) - Globalization features
-description: This topic explains how to use Microsoft Regulatory Configuration Services (RCS) and the Global repository to create and use Globalization features. 
+description: This article explains how to use Microsoft Regulatory Configuration Services (RCS) and the Global repository to create and use Globalization features. 
 author: JaneA07
 ms.date: 06/04/2020
 ms.topic: article
@@ -68,7 +68,7 @@ To use a Globalization feature, you must first import it from the the Global rep
 
 ## Access Globalization features
 
-1. Make sure that the **Globalization features** feature is turned on in Feature management, as described earlier in this topic.
+1. Make sure that the **Globalization features** feature is turned on in Feature management, as described earlier in this article.
 2. Open the new **Globalization Features** workspace, and then, under **Features**, select the **e-Invoicing** tile.
 
     ![Global Features workspace.](./media/RCS_GlobalF_2%20Feature%20wrkspace.JPG)
@@ -165,7 +165,7 @@ The following actions are available for configurations:
 - **View** – View the underlying feature configurations that don't require any update.
 - **Edit** – Create a draft version of a selected configuration so that you can edit the format or format mapping in the Format designer.
 - **Delete** – Delete a selected configuration from the feature.
-- **Rebase** – Rebase the feature. For more information, see the [Rebase derived Globalization features](#rebase) section later in this topic.
+- **Rebase** – Rebase the feature. For more information, see the [Rebase derived Globalization features](#rebase) section later in this article.
 
 ### Setups
 
@@ -186,7 +186,7 @@ The following actions are available for feature setups:
 
 The following actions are available for environments:
 
-- **Enable** – For a selected feature version, select a published environment, and select an **Effective from** date when it should be available. For more information, see the [Configure environments for enablement](#configureenvironment) section later in this topic.
+- **Enable** – For a selected feature version, select a published environment, and select an **Effective from** date when it should be available. For more information, see the [Configure environments for enablement](#configureenvironment) section later in this article.
 - **Cancel** – Remove an environment for a feature setup.
 
 ### Organizations

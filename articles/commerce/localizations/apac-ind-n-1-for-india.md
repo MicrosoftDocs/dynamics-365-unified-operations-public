@@ -2,7 +2,7 @@
 # required metadata
 
 title: Support for upgrade and N-1 for India
-description: This topic provides an overview N-1 support for Commerce customers in India.
+description: This article provides an overview N-1 support for Commerce customers in India.
 author: kfend 
 ms.date: 10/03/2018
 ms.topic: article
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the steps needed to set up and use Phased Rollout (N-1) commerce components for India. The upgrade procedure and the workflow for N-1 are basically the same as for a general Dynamics 365 Commerce environment. For general information about N-1 installation and usage, see [Upgrade and N-1 support for Retail](../dev-itpro/overview-upgrade-n-minus1.md).
+This article describes the steps needed to set up and use Phased Rollout (N-1) commerce components for India. The upgrade procedure and the workflow for N-1 are basically the same as for a general Dynamics 365 Commerce environment. For general information about N-1 installation and usage, see [Upgrade and N-1 support for Retail](../dev-itpro/overview-upgrade-n-minus1.md).
 
 In addition, the following steps are important for upgrade:
 

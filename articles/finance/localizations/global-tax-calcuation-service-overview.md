@@ -2,7 +2,7 @@
 # required metadata
 
 title: Tax Calculation overview
-description: This topic explains the overall scope and features of the Tax Calculation capability.
+description: This article explains the overall scope and features of the Tax Calculation capability.
 author: wangchen
 ms.date: 03/02/2022
 ms.topic: overview

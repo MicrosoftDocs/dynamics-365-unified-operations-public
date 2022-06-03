@@ -2,7 +2,7 @@
 # required metadata
 
 title: Interactive components overview
-description: This topic covers interactive components that let site authors edit fields for text, rich text, links, images, and videos directly on the WYSIWYG preview canvas in Microsoft Dynamics 365 Commerce site builder.
+description: This article covers interactive components that let site authors edit fields for text, rich text, links, images, and videos directly on the WYSIWYG preview canvas in Microsoft Dynamics 365 Commerce site builder.
 author: samjarawan
 ms.date: 08/06/2020
 ms.topic: overview
@@ -29,11 +29,11 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic covers interactive components that let site authors edit fields for text, rich text, links, images, and videos directly in visual page builder, the what-you-see-is-what-you-get (WYSIWYG) preview canvas in Microsoft Dynamics 365 Commerce site builder.
+This article covers interactive components that let site authors edit fields for text, rich text, links, images, and videos directly in visual page builder, the what-you-see-is-what-you-get (WYSIWYG) preview canvas in Microsoft Dynamics 365 Commerce site builder.
 
 In Commerce site builder, page or fragment authors can use interactive components to edit fields for text, rich text, links, images, and videos directly in visual page builder. Interactive components are released with the Commerce online software development kit (SDK) and include **Msdyn365.Text** for text, **Msdyn365.RichTextComponent** for rich text, **Msdyn365.Links** for links, **Msdyn365.Image** for images, and **Msdyn365.Video** for videos. After the interactive components are implemented, site builder will allow for inline editing of text, and it will open a picker window for links, images, and videos.
 
-For the best authoring experience, module developers should use interactive components when they render configuration fields, to allow for inline editing. Any custom implementations of these components can be made interactive by wrapping the component in the **EditableField** higher-order component (HOC). Follow the guidelines in this topic to support interactive components inside a custom module.
+For the best authoring experience, module developers should use interactive components when they render configuration fields, to allow for inline editing. Any custom implementations of these components can be made interactive by wrapping the component in the **EditableField** higher-order component (HOC). Follow the guidelines in this article to support interactive components inside a custom module.
 
 ## How interactive components work
 

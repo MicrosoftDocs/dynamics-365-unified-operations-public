@@ -2,7 +2,7 @@
 # required metadata
 
 title: Checklist for Electronic messages setup for MTD VAT
-description: This topic provides information that will help determine whether the Electronic messages functionality is correctly set up for Making Tax Digital for value-added tax (MTD VAT).
+description: This article provides information that will help determine whether the Electronic messages functionality is correctly set up for Making Tax Digital for value-added tax (MTD VAT).
 author: liza-golub
 ms.date: 08/18/2021
 ms.topic: article
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 10.0.22
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about how the Electronic messages functionality should be set up so that it supports both the **UK MTD VAT TEST** processing for testing purposes and the **UK MTD VAT returns** processing for real-life interoperation with the production web application of Her Majesty's Revenue and Customs (HMRC). Use this information to determine whether the Electronic messages functionality is correctly set up.
+This article provides information about how the Electronic messages functionality should be set up so that it supports both the **UK MTD VAT TEST** processing for testing purposes and the **UK MTD VAT returns** processing for real-life interoperation with the production web application of Her Majesty's Revenue and Customs (HMRC). Use this information to determine whether the Electronic messages functionality is correctly set up.
 
-Although this topic includes the most important information about the setup, it doesn't include information about all the data. We recommend that you use a package of data entities that provides a predefined setup of the functionality and that includes all the data that is required to set up the processing for interoperation with Making Tax Digital for value-added tax (MTD VAT).
+Although this article includes the most important information about the setup, it doesn't include information about all the data. We recommend that you use a package of data entities that provides a predefined setup of the functionality and that includes all the data that is required to set up the processing for interoperation with Making Tax Digital for value-added tax (MTD VAT).
 
 ## Electronic message processing
 

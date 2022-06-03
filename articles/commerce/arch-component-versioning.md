@@ -2,7 +2,7 @@
 # required metadata
 
 title: Dynamics 365 Commerce component versioning requirements
-description: This topic provides an overview of the component versioning requirements and dependencies for all components in the Microsoft Dynamics 365 Commerce ecosystem.
+description: This article provides an overview of the component versioning requirements and dependencies for all components in the Microsoft Dynamics 365 Commerce ecosystem.
 author: rezaassadi
 ms.date: 05/04/2022
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.11
 
 [!include [banner](includes/banner.md)]
 
-This topic provides an overview of the component versioning requirements and dependencies for all components in the Microsoft Dynamics 365 Commerce ecosystem.
+This article provides an overview of the component versioning requirements and dependencies for all components in the Microsoft Dynamics 365 Commerce ecosystem.
 
 The following illustration shows an overview of Dynamics 365 Commerce components and corresponding versioning requirements and dependencies.
 
@@ -99,14 +99,14 @@ For example, customers who are currently on version 10.0.23 can pause updates fo
 
 ### Component selection
 
-For more information about how to select the correct components to meet your needs, see the following topics:
+For more information about how to select the correct components to meet your needs, see the following articles:
 
 - [Select an in-store topology](./dev-itpro/retail-in-store-topology.md)
 - [Choose between Modern POS (MPOS) and Cloud POS (CPOS)](mpos-or-cpos.md)
 
 ### Servicing instructions
 
-For more information about how to service individual components that are described in this topic, see the following topics:
+For more information about how to service individual components that are described in this article, see the following articles:
 
 - [Configure and install Commerce Scale Unit](./dev-itpro/retail-store-scale-unit-configuration-installation.md)
 - [Apply updates and extensions to Retail Cloud Scale Unit](../fin-ops-core/dev-itpro/deployment/update-retail-channel.md)

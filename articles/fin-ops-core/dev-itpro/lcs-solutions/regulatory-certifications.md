@@ -2,7 +2,7 @@
 # required metadata
 
 title: Regulatory certification information in feature titles
-description: This topic describes how information about certifications is used in the title of the feature.
+description: This article describes how information about certifications is used in the title of the feature.
 author: ShylaThompson
 ms.date: 06/20/2017
 ms.topic: article

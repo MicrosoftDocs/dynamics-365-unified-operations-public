@@ -2,7 +2,7 @@
 # required metadata
 
 title: Business events overview
-description: This topic provides information about business events, which allow external systems to receive notifications from Finance and Operations apps.
+description: This article provides information about business events, which allow external systems to receive notifications from Finance and Operations apps.
 author: Sunil-Garg
 ms.date: 04/22/2022
 ms.topic: overview
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
@@ -153,7 +153,7 @@ this information to subscribe to more specific topics as required.
 
 -   **Category** – This is the business event category as displayed in the
     business event catalog. This is useful as a filter criterion when a common
-    topic is used for receiving business events from multiple categories and
+    article is used for receiving business events from multiple categories and
     subscribers want to only receive business events for the category that they are
     interested in.
 

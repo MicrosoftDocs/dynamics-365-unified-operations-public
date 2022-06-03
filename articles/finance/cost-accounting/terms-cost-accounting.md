@@ -2,7 +2,7 @@
 # required metadata
 
 title: Cost accounting terminology
-description: This topic defines the key terms that are used in Cost accounting.
+description: This article defines the key terms that are used in Cost accounting.
 author: aprilolson
 ms.date: 08/31/2017
 ms.topic: article
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic defines the key terms that are used in Cost accounting.
+This article defines the key terms that are used in Cost accounting.
 
 **Allocation base**
 

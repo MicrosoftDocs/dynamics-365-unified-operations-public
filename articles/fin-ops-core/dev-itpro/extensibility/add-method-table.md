@@ -1,7 +1,7 @@
 ---
 
 title: Add methods to tables through extension
-description: This topic describes how to add a method to a table by using an extension.
+description: This article describes how to add a method to a table by using an extension.
 author: ivanv-microsoft
 ms.date: 10/22/2018
 ms.topic: article

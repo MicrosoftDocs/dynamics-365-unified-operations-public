@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Set up payment slip format
-description: This topic explains how to attach printed payment slips to invoices and provide a payment reference for posting and settlement. 
+description: This article explains how to attach printed payment slips to invoices and provide a payment reference for posting and settlement. 
 author: EvgenyPopovMBS
 ms.date: 08/29/2018
 ms.topic: business-process 

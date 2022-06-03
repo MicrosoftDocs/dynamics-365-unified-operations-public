@@ -2,7 +2,7 @@
 # required metadata
 
 title: Settle partial payment before discount date and final payment after discount date
-description: This topic walks you through a scenario where multiple partial payments are made, some within the cash discount period and others outside the cash discount period.
+description: This article walks you through a scenario where multiple partial payments are made, some within the cash discount period and others outside the cash discount period.
 author: abruer
 ms.date: 06/20/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic walks you through a scenario where multiple partial payments are made, some within the cash discount period and others outside the cash discount period.
+This article walks you through a scenario where multiple partial payments are made, some within the cash discount period and others outside the cash discount period.
 
 Fabrikam purchases goods from vendor 3057. Fabrikam receives a cash discount of 1 percent if the invoice is paid in 14 days. Invoices must be paid in 30 days. The vendor also lets Fabrikam take cash discounts on partial payments. The settlement parameters are located on the **Accounts payable parameters** page.
 

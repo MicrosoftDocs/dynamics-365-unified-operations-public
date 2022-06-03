@@ -2,7 +2,7 @@
 # required metadata
 
 title: Sales tax calculation and rounding
-description: This topic provides an overview of sales tax calculation and rounding and explains the parameters of the sales tax calculation and rounding setup.
+description: This article provides an overview of sales tax calculation and rounding and explains the parameters of the sales tax calculation and rounding setup.
 author: wangchen
 ms.date: 06/01/2022
 ms.topic: overview
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 10.0.28
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of sales tax calculation and rounding in Microsoft Dynamics 365 Finance. It also explains the parameters that are used in the setup for sales tax calculation and rounding, and how those parameters work together.
+This article provides an overview of sales tax calculation and rounding in Microsoft Dynamics 365 Finance. It also explains the parameters that are used in the setup for sales tax calculation and rounding, and how those parameters work together.
 
 ## Parameters
 
@@ -45,7 +45,7 @@ Several parameters control sales tax calculation and rounding:
 - **Marginal base** – This parameter is set for the sales tax code and determines which amount is used to select the appropriate tax rates on the **Sales tax code values** page. For more information, see [Sales tax rates based on the Marginal base and Calculation methods](marginal-base-field.md).
 - **Sales tax rounding rule** – This parameter is set for the sales tax code and defines how the determined sales tax amount is rounded, including the rounding precision and the rounding method.
 
-The rest of this topic presents some typical examples of sales tax calculation and rounding that use a combination of the preceding parameters.
+The rest of this article presents some typical examples of sales tax calculation and rounding that use a combination of the preceding parameters.
 
 ## Scenario for the examples
 

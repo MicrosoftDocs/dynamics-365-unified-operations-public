@@ -2,7 +2,7 @@
 # required metadata
 
 title: Parse incoming documents in Excel format
-description:  This topic provides information about designing Electronic reporting (ER) formats to parse content contained in incoming Microsoft Excel files. 
+description:  This article provides information about designing Electronic reporting (ER) formats to parse content contained in incoming Microsoft Excel files. 
 author: NickSelin
 ms.date: 05/25/2018
 ms.topic: article

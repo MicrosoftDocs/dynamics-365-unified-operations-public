@@ -1,6 +1,6 @@
 ---
 title: SysSetupConfigAttribute attribute
-description: This topic describes how to use the SysSetupConfigAttribute attribute on classes that implement the SysSetup interface.
+description: This article describes how to use the SysSetupConfigAttribute attribute on classes that implement the SysSetup interface.
 author: tonyafehr
 ms.date: 01/03/2022
 ms.topic: article
@@ -18,7 +18,7 @@ X++ classes that implement the `SysSetup` interface are processed as part of dat
 
 Attributes provide a powerful way to associate metadata, or declarative information, with code such as assemblies, types, methods, and properties. After an attribute is associated with a program entity, it can be queried at runtime by using reflection.
 
-This topic describes how to use the new `SysSetupConfigAttribute` attribute that the platform updates for [version 10.0.23 of Finance and Operations apps](../get-started/whats-new-platform-updates-10-0-23.md) introduce for X++ classes that implement the `SysSetup` interface.
+This article describes how to use the new `SysSetupConfigAttribute` attribute that the platform updates for [version 10.0.23 of Finance and Operations apps](../get-started/whats-new-platform-updates-10-0-23.md) introduce for X++ classes that implement the `SysSetup` interface.
 
 ## Usage
 

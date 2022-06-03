@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Supported standards for electronic invoicing in Europe
-description: This topic explains the level of coverage that exists for electronic invoicing for Europe. 
+description: This article explains the level of coverage that exists for electronic invoicing for Europe. 
 author: mrolecki
 ms.date: 11/19/2020
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains the level of coverage that exists for electronic invoicing for Europe. 
+This article explains the level of coverage that exists for electronic invoicing for Europe. 
 
 Implementation and adoption of European Union-wide electronic invoicing is regulated [Council Directive 2010/45/EU](https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2010:189:0001:0008:EN:PDF), which affects all EU member states. Companies that want to benefit from electronic invoicing must submit sales order invoices, free text invoices, project invoices, sales order credit notes, and project invoice credit notes as .xml files to the government or other trading parties that mandate use of electronic invoicing. These .xml files must comply with certain standards. The country-specific requirements and their implementation may differ across EU member states but commonly they are using Universal Business Language ([UBL](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=ubl)) in different versions with customizations as well as [PEPPOL](https://www.peppol.eu) specifications and access points for validation and transportation. The primary advantage of UBL is that business documents can be standardized for different purposes. Because UBL is a flexible, international standard that supports many business requirements, these business documents can be exchanged across national borders.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enable customer payments and cash discounts
-description: This topic explains how to enable recalculation of cash discounts.
+description: This article explains how to enable recalculation of cash discounts.
 author: kfend
 ms.date: 10/16/2019
 ms.topic: article

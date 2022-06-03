@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Set up deferrals (Russia)
-description: This topic explains how to set up deferrals.
+description: This article explains how to set up deferrals.
 author: anasyash
 ms.date: 06/16/2020
 ms.topic: article

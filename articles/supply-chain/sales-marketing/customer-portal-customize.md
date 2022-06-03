@@ -2,7 +2,7 @@
 # required metadata
 
 title: Customize and use the Customer portal
-description: This topic explains how to customize the Customer portal after it has been added to your system.
+description: This article explains how to customize the Customer portal after it has been added to your system.
 author: Henrikan
 ms.date: 04/22/2020
 ms.topic: article
@@ -11,12 +11,12 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: henrikan
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.13
 [!include [banner](../includes/banner.md)]
 
 
-This topic describes the different pages that available in the Customer portal out of the box. It explains what the pages do and how you can customize them.
+This article describes the different pages that available in the Customer portal out of the box. It explains what the pages do and how you can customize them.
 
 The Customer portal offers a few webpages and actions out of the box. The following site map provides an overview of those webpages and actions, and the roles that can perform the actions.
 
@@ -37,16 +37,16 @@ The Customer portal offers a few webpages and actions out of the box. The follow
 
 ## Typical customizations
 
-The following topics will help you learn the basics about Power Apps portals and how you can customize portals:
+The following articles will help you learn the basics about Power Apps portals and how you can customize portals:
 
-- [Work with templates](/powerapps/maker/portals/work-with-templates) – This topic provides a general overview of how Power Apps portals works and how you can do simple customizations of portals.
-- [Manage portal content](/dynamics365/portals/manage-portal-content) – This topic explains how you can manage and customize the content that you surface in your portal.
-- [Edit CSS](/powerapps/maker/portals/edit-css) – This topic helps you make more complex customizations to the user interface (UI) of your portal.
-- [Create a theme for your portal](/dynamics365/portals/create-theme) – This topic helps you create a UI theme for your portal.
-- [Create and expose portal content easily](/dynamics365/portals/create-expose-portal-content) – This topic helps you manage the underlying data and tables that you use for your portal.
-- [Configure a contact for use on a portal](/powerapps/maker/portals/configure/configure-contacts) – This topic explains how to create and customize user roles, and how security and authentication work in Power Apps portals.
-- [Configure notes for table forms and web forms on portals](/powerapps/maker/portals/configure-notes) – This topic explains how to add documents and additional storage to your portal.
-- [Error handling for portal website](/powerapps/maker/portals/admin/view-portal-error-log) – This topic explains how to view portal error logs and store them in your Microsoft Azure Blob storage account.
+- [Work with templates](/powerapps/maker/portals/work-with-templates) – This article provides a general overview of how Power Apps portals works and how you can do simple customizations of portals.
+- [Manage portal content](/dynamics365/portals/manage-portal-content) – This article explains how you can manage and customize the content that you surface in your portal.
+- [Edit CSS](/powerapps/maker/portals/edit-css) – This article helps you make more complex customizations to the user interface (UI) of your portal.
+- [Create a theme for your portal](/dynamics365/portals/create-theme) – This article helps you create a UI theme for your portal.
+- [Create and expose portal content easily](/dynamics365/portals/create-expose-portal-content) – This article helps you manage the underlying data and tables that you use for your portal.
+- [Configure a contact for use on a portal](/powerapps/maker/portals/configure/configure-contacts) – This article explains how to create and customize user roles, and how security and authentication work in Power Apps portals.
+- [Configure notes for table forms and web forms on portals](/powerapps/maker/portals/configure-notes) – This article explains how to add documents and additional storage to your portal.
+- [Error handling for portal website](/powerapps/maker/portals/admin/view-portal-error-log) – This article explains how to view portal error logs and store them in your Microsoft Azure Blob storage account.
 
 ## Customize the order creation process
 

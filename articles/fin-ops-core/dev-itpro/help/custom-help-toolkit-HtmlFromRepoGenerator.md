@@ -2,7 +2,7 @@
 # required metadata
 
 title: Custom Help Toolkit - The HtmlFromRepoGenerator tool
-description: This topic describes the HtmlFromRepoGenerator tool that is included in the Custom Help Toolkit for Finance and Operations apps. 
+description: This article describes the HtmlFromRepoGenerator tool that is included in the Custom Help Toolkit for Finance and Operations apps. 
 author: edupont04
 ms.date: 05/11/2020
 ms.topic: article
@@ -44,7 +44,7 @@ The **HtmlFromRepoGenerator** tool provides functionality that supports the crea
 
 - Generate HTML files that can be used to publish content.
 
-    The HTML files will be generated in the **d365F-O** subfolder. The files are generated based on style sheets and templates that are part of the tool. For more information, see the [Modifying the styling of the generated HTML files](#modifying-the-styling-of-the-generated-html-files) section of this topic.
+    The HTML files will be generated in the **d365F-O** subfolder. The files are generated based on style sheets and templates that are part of the tool. For more information, see the [Modifying the styling of the generated HTML files](#modifying-the-styling-of-the-generated-html-files) section of this article.
 
 - Compare a localized Microsoft repo to the en-US repo to identify differences and update links accordingly.
 

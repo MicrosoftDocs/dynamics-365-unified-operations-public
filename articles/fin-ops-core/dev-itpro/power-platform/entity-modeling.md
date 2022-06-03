@@ -2,7 +2,7 @@
 # required metadata
 
 title: Entity modeling
-description: This topic explains relational modeling concepts using virtual entities for Finance and Operations entities.
+description: This article explains relational modeling concepts using virtual entities for Finance and Operations entities.
 author: Sunil-Garg
 ms.date: 07/21/2020
 ms.topic: article
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 10.0.12
 
 > The public entity name that is exposed in Dataverse metadata for the Finance and Operations virtual entity uses the physical name of the Finance and Operations entity. This could be different from the public name of the entity as exposed by the OData metadata in Finance and Operations apps.
 
-Building an app requires capabilities to perform relational modeling between entities that are being used in the app. In the context of virtual entities, there will be scenarios where virtual entities and native entities in Dataverse must work together to enable the desired user experience. This topic explains concepts of relational modeling that can be implemented using virtual entities for Finance and Operations.
+Building an app requires capabilities to perform relational modeling between entities that are being used in the app. In the context of virtual entities, there will be scenarios where virtual entities and native entities in Dataverse must work together to enable the desired user experience. This article explains concepts of relational modeling that can be implemented using virtual entities for Finance and Operations.
 
 ## Generating virtual entities
 
@@ -66,7 +66,7 @@ Fields of the *real* and *long* data types in Finance and Operations are modeled
 | Dataverse has higher scale.        | Not applicable |
 | Finance and Operations has higher scale.     | Dataverse shows the Finance and Operations value, even if it exceeds 100 billion. However, there will be a loss of precision. For example, 987,654,100,000,000,000 is shown in Dataverse as "987,654,099,999,999,900". If the value of this field is edited in Dataverse, Dataverse validation throws an error that the value exceeds the maximum value before that value is sent to Finance and Operations. |
 
-The following data types in Finance and Operations aren't supported in Dataverse. Fields of these data types in Finance and Operations entities won't be made available in the corresponding virtual entities in Dataverse. If fields of these data types are used as parameters in Open Data Protocol (OData) actions, those actions won't be available for use in the corresponding virtual entities. For more information about OData actions, see the [OData actions](#odata-actions) section later in this topic.
+The following data types in Finance and Operations aren't supported in Dataverse. Fields of these data types in Finance and Operations entities won't be made available in the corresponding virtual entities in Dataverse. If fields of these data types are used as parameters in Open Data Protocol (OData) actions, those actions won't be available for use in the corresponding virtual entities. For more information about OData actions, see the [OData actions](#odata-actions) section later in this article.
 
 - AnyType
 - BLOB
@@ -131,7 +131,7 @@ Native entity–to–native entity relationships are the standard Dataverse func
 
 ### Virtual table–to–virtual table relationships
 
-The relationships between two Finance and Operations virtual entities are driven by the relation metadata in the Finance and Operations entities. As was explained earlier, these relations are generated as relationships in Dataverse when the virtual entity is generated. As in the behavior for native entities in Dataverse, these relationships use the GUID to identify the unique record of the entity in Finance and Operations. Semantically, the GUID on the Finance and Operations virtual entity behaves like the GUID on the native Dataverse table. For information about the implementation of the GUID in Finance and Operations virtual entities, see the [Entity key/primary key](entity-modeling.md#entity-keyprimary-key) section earlier in this topic.
+The relationships between two Finance and Operations virtual entities are driven by the relation metadata in the Finance and Operations entities. As was explained earlier, these relations are generated as relationships in Dataverse when the virtual entity is generated. As in the behavior for native entities in Dataverse, these relationships use the GUID to identify the unique record of the entity in Finance and Operations. Semantically, the GUID on the Finance and Operations virtual entity behaves like the GUID on the native Dataverse table. For information about the implementation of the GUID in Finance and Operations virtual entities, see the [Entity key/primary key](entity-modeling.md#entity-keyprimary-key) section earlier in this article.
 
 In the preceding example, the GUID of the related entity is the entity key of Entity B and will be used to build queries to identify a record in Finance and Operation. The relation that Entity A has to Entity B will be used.
 

@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0
 To create and manage data import and export jobs, you use the **Data management** workspace. By default, the data import and export process creates a staging table for each entity in the target database. Staging tables let you verify, clean up, or convert data before you move it.
 
 > [!NOTE]
-> This topic assumes that you are familiar with [data entities](data-entities.md).
+> This article assumes that you are familiar with [data entities](data-entities.md).
 
 ## Data import/export process
 Here are the steps to import or export data.
@@ -55,7 +55,7 @@ Here are the steps to import or export data.
 5. Validate that the job ran as expected by reviewing the job history.
 6. Clean up the staging tables.
 
-The remaining sections of this topic provide more details about each step of the process.
+The remaining sections of this article provide more details about each step of the process.
 
 > [!NOTE]
 > In order to refresh the Data import/export form to see the latest progress, use the form refresh icon. Browser level refresh is not recommended because it will interrupt any import/export jobs that are not run in batch.

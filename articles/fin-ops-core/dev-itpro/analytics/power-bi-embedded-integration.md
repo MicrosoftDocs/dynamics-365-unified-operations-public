@@ -2,7 +2,7 @@
 # required metadata
 
 title: Power BI Embedded integration
-description: This topic describes some of the ways that you can use the Power BI Embedded integration.
+description: This article describes some of the ways that you can use the Power BI Embedded integration.
 author: RichdiMSFT
 ms.date: 02/09/2018
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 4
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Power BI content that partners and independent software vendors (ISVs) developed can be embedded directly into the Microsoft Dynamics 365 Finance. This topic describes some of the ways that you can use the Microsoft Power BI Embedded integration.
+Microsoft Power BI content that partners and independent software vendors (ISVs) developed can be embedded directly into the Microsoft Dynamics 365 Finance. This article describes some of the ways that you can use the Microsoft Power BI Embedded integration.
 
 ## Overview
 The integration of the application and [Power BI](https://www.powerbi.com/) enables data mash-up scenarios that require access to external data sources that are supported through Microsoft Power Query for Excel. Users can personalize workspaces by embedding tiles that are hosted on PowerBI.com. Users can also add direct links to reports that are hosted on PowerBI.com. In this way, users can access and interact with the reports without leaving the application. Power BI content (PBIX files) that partners and ISVs develop can be embedded directly into the application. PBIX files that are associated with a model file are automatically published in Power BI Embedded as part of the application deployment process. Additionally, you can add X++ extensions for embedded reporting scenarios that require the following functionality:

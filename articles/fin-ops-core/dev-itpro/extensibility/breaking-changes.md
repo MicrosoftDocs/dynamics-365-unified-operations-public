@@ -1,6 +1,6 @@
 ---
 title: Breaking changes
-description: This topic provides information about breaking changes.
+description: This article provides information about breaking changes.
 author: smithanataraj
 ms.date: 09/09/2018
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Platform update 20
 
 When you make your solution extensible, you also help guarantee that you won't break the extension points later. A breaking change is any change that can break a consumer of your code.
 
-This topic lists some of the types of changes that can break your code. 
+This article lists some of the types of changes that can break your code. 
 
 > [!IMPORTANT]
 > This list isn't exhaustive. Other types of changes that aren't listed here could also be breaking changes.

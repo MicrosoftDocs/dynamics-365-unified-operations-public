@@ -4,7 +4,7 @@
 
 title: Upgrade warehouse management from Microsoft Dynamics AX 2012 to Supply Chain Management 
 
-description: This topic provides an overview of product and warehouse management migration options.
+description: This article provides an overview of product and warehouse management migration options.
 author: perlynne
 ms.date: 06/20/2017
 ms.topic: article
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of the process of upgrading from Microsoft Dynamics AX 2012 R3, running the WMSII module, to Supply Chain Management .
+This article provides an overview of the process of upgrading from Microsoft Dynamics AX 2012 R3, running the WMSII module, to Supply Chain Management .
 
 Supply Chain Management no longer supports the legacy **WMSII** module from Microsoft Dynamics AX 2012. Instead, you can use the **Warehouse management** module. In the WMSII module, the Location and Pallet ID inventory dimensions could be selected for financial inventory, however, the Pallet ID inventory dimension cannot be used for financial inventory in Supply Chain Management .
 

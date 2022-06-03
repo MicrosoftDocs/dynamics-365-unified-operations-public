@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up coupons for retail sales
-description: This topic provides an overview of coupons and explains how to set them up in Dynamics 365 Commerce.
+description: This article provides an overview of coupons and explains how to set them up in Dynamics 365 Commerce.
 author: josaw1
 ms.date: 10/05/2021
 ms.topic: article

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Trial balance with transactional detail report
-description: This topic describes the default report for trial balances. It also describes the building blocks that are associated with this report and how you can modify the report to fit your business requirements.
+description: This article describes the default report for trial balances. It also describes the building blocks that are associated with this report and how you can modify the report to fit your business requirements.
 author: v-kiarnd
 ms.date: 10/24/2019
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: [Operations AOT form name to tie this topic to]
+# ms.search.form: [Operations AOT form name to tie this article to]
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.13
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the default report for trial balances. The **Trial balance with transactional detail** report generates a trial balance and includes the detailed transactions that were posted to each ledger account. By selecting to include specific unposted transactions, you can use the report to generate a provisional trial balance together with detailed transactions.
+This article describes the default report for trial balances. The **Trial balance with transactional detail** report generates a trial balance and includes the detailed transactions that were posted to each ledger account. By selecting to include specific unposted transactions, you can use the report to generate a provisional trial balance together with detailed transactions.
 
 Electronic reporting (ER) was used to create the **Trial balance with transactional detail** report. Therefore, an organization can either use the version of the report that is included in the Global repository or create their own version of the report.
 

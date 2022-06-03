@@ -2,7 +2,7 @@
 # required metadata
 
 title: Calculations for product configuration models FAQ
-description: This topic describes calculations for product configuration models and explains how to use calculations together with constraints.
+description: This article describes calculations for product configuration models and explains how to use calculations together with constraints.
 author: t-benebo
 ms.date: 11/03/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes calculations for product configuration models and explains how to use calculations together with constraints.
+This article describes calculations for product configuration models and explains how to use calculations together with constraints.
 
 Calculations can be used for arithmetic or logical operations. They complement expression constraints in product configuration models. You can define calculations on the **Constraint-based product configuration model details** page and then build expressions for the calculations in the expression editor. For more information, see Create calculations.
 

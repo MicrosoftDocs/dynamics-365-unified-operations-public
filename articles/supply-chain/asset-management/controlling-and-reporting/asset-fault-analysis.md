@@ -2,7 +2,7 @@
 # required metadata
 
 title: Asset fault analysis
-description: This topic explains asset fault analysis in Asset Management.
+description: This article explains asset fault analysis in Asset Management.
 author: johanhoffmann
 ms.date: 08/23/2019
 ms.topic: article

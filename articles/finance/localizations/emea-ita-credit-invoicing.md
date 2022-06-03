@@ -2,7 +2,7 @@
 # required metadata
 
 title: Credit invoicing (Italy)
-description: This topic explains how to set up and use the credit invoicing functionality in Italy. 
+description: This article explains how to set up and use the credit invoicing functionality in Italy. 
 author: liza-golub
 ms.date: 09/15/2021
 ms.topic: article

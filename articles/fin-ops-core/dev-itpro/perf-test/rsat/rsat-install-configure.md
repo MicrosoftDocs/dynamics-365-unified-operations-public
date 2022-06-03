@@ -1,6 +1,6 @@
 ---
 title: Regression suite automation tool installation and configuration
-description: This topic contains information about how to install and configure the Regression suite automation tool (RSAT).
+description: This article contains information about how to install and configure the Regression suite automation tool (RSAT).
 author: FrankDahl
 ms.date: 08/19/2021
 ms.topic: article
@@ -26,7 +26,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic contains information about how to install and configure the Regression suite automation tool (RSAT).
+This article contains information about how to install and configure the Regression suite automation tool (RSAT).
 
 ## Prerequisites
 
@@ -249,7 +249,7 @@ To install the certificate, follow these steps:
 
     ![Certificate dialog showing thumbprint listing.](media/certificate-dialog.png)
 
-6. Copy and save the thumbprint. You will need it to configure the AOS as described earlier in this topic.
+6. Copy and save the thumbprint. You will need it to configure the AOS as described earlier in this article.
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

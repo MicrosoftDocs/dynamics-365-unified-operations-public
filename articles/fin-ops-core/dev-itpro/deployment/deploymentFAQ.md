@@ -2,7 +2,7 @@
 # required metadata
 
 title: Self-service deployment FAQ
-description: This topic provides answers to some frequently asked questions about self-service deployment.
+description: This article provides answers to some frequently asked questions about self-service deployment.
 author: rashmansur
 ms.date: 11/30/2021
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 8.1.1
 [!include[banner](../includes/banner.md)]
 [!include [banner](../includes/limited-availability.md)]
 
-This topic provides answers to some frequently asked questions about [self-service deployment](infrastructure-stack.md). Refer to the [known issues](known-issues-new-deployment-experience.md) list if your scenario is not listed here.  
+This article provides answers to some frequently asked questions about [self-service deployment](infrastructure-stack.md). Refer to the [known issues](known-issues-new-deployment-experience.md) list if your scenario is not listed here.  
 
 ## Why do I see only application version 8.1.1 and Platform update 21 and above when I try to deploy my sandbox environment using self-service deployment? 
 
@@ -89,13 +89,13 @@ Starting in the January 2019 release, you will able to restart services through 
 ### Configure the Regression suite automation tool
 Microsoft is working on tooling that will let you update certificate thumbprints in the wif.config file without having to use Remote Desktop. This tooling is scheduled for release in February 2019. If you must use the Regression suite automation tool before then, log a support request.
 
-## I must perform one of the critical actions that are listed earlier in this topic, but the self-service feature isn't yet available. How do I get help?
+## I must perform one of the critical actions that are listed earlier in this article, but the self-service feature isn't yet available. How do I get help?
 
 Log a support ticket, and Microsoft will help you perform the action on your environment.
 
-## I don't have Remote Desktop access to my sandbox environment, and the critical action that I must perform isn't listed in this topic. How do I get help?
+## I don't have Remote Desktop access to my sandbox environment, and the critical action that I must perform isn't listed in this article. How do I get help?
 
-If your critical action isn't listed earlier in this topic, add a comment to this topic or log a documentation bug, and Microsoft will address your requirement.
+If your critical action isn't listed earlier in this article, add a comment to this article or log a documentation bug, and Microsoft will address your requirement.
 
 ## What regions are supported on self-service in North America?
 We currently only support the following regions in North America.

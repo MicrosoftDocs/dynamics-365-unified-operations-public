@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Platform update 11
 
 [!include [banner](../includes/banner.md)]
 
-To extend table maps, we have refactored table maps into a model, which allows you to extend a solution with additional fields and methods. This topic discusses why you need a model to extend a table map.
+To extend table maps, we have refactored table maps into a model, which allows you to extend a solution with additional fields and methods. This article discusses why you need a model to extend a table map.
 
 Adding a field to an existing table map through extension can present some challenges. If these issues are not addressed during the implementation, there can be runtime errors. The errors occur because the developer cannot modify all the tables that are involved in implementing the table map. The same is true for adding a method to a table map if the method is called directly as an instance method on the table map. There is no way to enforce how fields on table maps must be mapped to fields on all tables that implement the table map. Similarly, there is no way to enforce how methods on table maps must also be methods on all tables that implement the table map.
 

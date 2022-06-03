@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enable product recommendations
-description: This topic explains how to make product recommendations that are based on artificial intelligence-machine learning (AI-ML) available for Microsoft Dynamics 365 Commerce customers. 
+description: This article explains how to make product recommendations that are based on artificial intelligence-machine learning (AI-ML) available for Microsoft Dynamics 365 Commerce customers. 
 author: bebeale
 ms.date: 08/31/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic explains how to make product recommendations that are based on artificial intelligence-machine learning (AI-ML) available for Microsoft Dynamics 365 Commerce customers. For more information about product recommendation lists, see [Product recommendations overview](product-recommendations.md).
+This article explains how to make product recommendations that are based on artificial intelligence-machine learning (AI-ML) available for Microsoft Dynamics 365 Commerce customers. For more information about product recommendation lists, see [Product recommendations overview](product-recommendations.md).
 
 ## Recommendations pre-check
 

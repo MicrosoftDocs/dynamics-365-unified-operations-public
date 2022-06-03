@@ -2,7 +2,7 @@
 # required metadata
 
 title: Store order fulfillment
-description: This topic provides an overview of store order fulfillment. 
+description: This article provides an overview of store order fulfillment. 
 author: BrianShook
 ms.date: 10/30/2017
 ms.topic: overview

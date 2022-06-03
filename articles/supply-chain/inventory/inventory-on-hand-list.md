@@ -2,7 +2,7 @@
 # required metadata
 
 title: Inventory on-hand list
-description: This topic describes how to use the On-hand list page to inspect on-hand inventory details. It shows a few of the ways that the various filtering and sorting options work together, and how those options can sometimes produce unexpected results when they are combined.
+description: This article describes how to use the On-hand list page to inspect on-hand inventory details. It shows a few of the ways that the various filtering and sorting options work together, and how those options can sometimes produce unexpected results when they are combined.
 author: yufeihuang
 ms.date: 07/07/2020
 ms.topic: article
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: yufeihuang
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.12
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to use the **On-hand list** page to inspect on-hand inventory details. It shows a few of the ways that the various filtering and sorting options work together, and how those options can sometimes produce unexpected results when they are combined.
+This article describes how to use the **On-hand list** page to inspect on-hand inventory details. It shows a few of the ways that the various filtering and sorting options work together, and how those options can sometimes produce unexpected results when they are combined.
 
 ## Query your on-hand inventory
 
@@ -39,9 +39,9 @@ The **On-hand list** page is automatically updated when transactions are made in
 Use the following tools to find the set of products that you're looking for:
 
 - On the Action Pane, select [**Dimensions**](#dimensions) to open a dialog box where you can add or remove columns that are shown in the **On-hand** grid.
-- In the [**Filters** pane](#filters-pane), enter values for specific fields to show only records that match those values. Note that filters that you define here apply to source tables that might be aggregated later, according to the dimensions that you've selected to show. For information about how this behavior can affect your results, see the [examples](#examples) later in this topic.
+- In the [**Filters** pane](#filters-pane), enter values for specific fields to show only records that match those values. Note that filters that you define here apply to source tables that might be aggregated later, according to the dimensions that you've selected to show. For information about how this behavior can affect your results, see the [examples](#examples) later in this article.
 - In the **Filters** pane, select **Apply** to generate the list of matching on-hand inventory in the **On-hand** grid.
-- In the **On-hand** grid, select any column heading to sort or filter by values in that column. A QuickFilter at the top of the grid provides additional filtering options. These filters apply to the results, not to the source tables. For information about how this behavior can affect your results, see the [examples](#examples) later in this topic.
+- In the **On-hand** grid, select any column heading to sort or filter by values in that column. A QuickFilter at the top of the grid provides additional filtering options. These filters apply to the results, not to the source tables. For information about how this behavior can affect your results, see the [examples](#examples) later in this article.
 
 For each matching item, the **On-hand** grid provides the following columns of inventory information.
 
@@ -68,7 +68,7 @@ Use the **Filters** pane to filter the on-hand inventory list so that it include
 > [!IMPORTANT]
 > The **On-hand list** page is assembled from a detailed on-hand inventory table that includes all available dimensions. However, the list on this page is a summary. Therefore, it might combine rows from the source table by aggregating values according to the dimensions that are shown.
 >
-> The filters that you define in the **Filters** pane apply to the source table, not to the aggregated list. This behavior can sometimes produce unexpected results. For information about how this behavior can affect your results, see the [examples](#examples) later in this topic.
+> The filters that you define in the **Filters** pane apply to the source table, not to the aggregated list. This behavior can sometimes produce unexpected results. For information about how this behavior can affect your results, see the [examples](#examples) later in this article.
 > 
 > However, the [filters that are provided in the grid](#grid-filters) *do* apply to the aggregated list. These filters include both the QuickFilter at the top of the grid and the filter for each column heading.
 
@@ -79,7 +79,7 @@ You can modify the set of filters that is available in the **Filters** pane by f
 
 ## <a name="dimensions"></a>Select which dimensions to show
 
-Dimensions tell you more about each item in the on-hand inventory list, and give you more ways to sort and filter the list. The dimensions that you select to show also affect how rows are aggregated on the **On-hand list** page. This aggregation, in turn, can affect how rows from the source tables are combined in the results that you see. For information about how this behavior can affect your results, see the [examples](#examples) later in this topic.
+Dimensions tell you more about each item in the on-hand inventory list, and give you more ways to sort and filter the list. The dimensions that you select to show also affect how rows are aggregated on the **On-hand list** page. This aggregation, in turn, can affect how rows from the source tables are combined in the results that you see. For information about how this behavior can affect your results, see the [examples](#examples) later in this article.
 
 To customize the selection of inventory dimensions that is shown, follow these steps.
 
@@ -93,7 +93,7 @@ To customize the selection of inventory dimensions that is shown, follow these s
 
 ## <a name="grid-filters"></a>Filter on the output of the inventory on-hand list
 
-You can select any column heading in the **On-hand** grid to sort or filter by values in that column. A QuickFilter at the top of the grid provides additional filtering options. These filters apply to the results, not to the source tables. For information about how this behavior can affect your results, see the [examples](#examples) later in this topic.
+You can select any column heading in the **On-hand** grid to sort or filter by values in that column. A QuickFilter at the top of the grid provides additional filtering options. These filters apply to the results, not to the source tables. For information about how this behavior can affect your results, see the [examples](#examples) later in this article.
 
 > [!NOTE]
 > You can't filter and sort by all columns. Most of the quantity columns don't include sorting and filtering controls, because they are calculated fields. The **On order** column is an exception.

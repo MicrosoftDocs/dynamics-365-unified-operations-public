@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 for Finance and Operations version 8.1.3 (January 2019)
-description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 8.1.3. This version will be released in January 2019.
+description: This article describes features that are either new or changed in Dynamics 365 for Finance and Operations version 8.1.3. This version will be released in January 2019.
 author: tonyafehr
 ms.date: 10/15/2019
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 8.1.3
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 8.1.3. This version will be released in January 2019 and has a build number of 8.1.227.
+This article describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 8.1.3. This version will be released in January 2019 and has a build number of 8.1.227.
 
 To learn about the new features and changes in the latest releases of Retail, see [What's new or changed in Dynamics 365 for Retail](../../../commerce/get-started/whats-new.md).
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Workspace form pattern
-description: This topic discusses workspace form patterns. Workspaces are the primary way that users navigate to tasks and specific pages.
+description: This article discusses workspace form patterns. Workspaces are the primary way that users navigate to tasks and specific pages.
 author: jasongre
 ms.date: 03/03/2022
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic discusses workspace form patterns. Workspaces are the primary way that users navigate to tasks and specific pages. A workspace should be created for every significant business activity that is supported.  
+This article discusses workspace form patterns. Workspaces are the primary way that users navigate to tasks and specific pages. A workspace should be created for every significant business activity that is supported.  
 
 ## Usage
 
@@ -44,7 +44,7 @@ Workspaces are intended to be the primary way that users navigate to tasks and s
 - (Deprecated) **Tabbed workspace** – This pattern was initially created to facilitate embedded Power BI reports and a more vertical orientation of workspaces. It's now deprecated and should be replaced by the **Operational workspace w/Tabs** pattern wherever possible.
 - (Obsolete) **Workspace** – This pattern is mentioned only for the sake of completeness and can't be used after version 10.0.25. We recommend that any remaining uses of this pattern be migrated to one of the other patterns.
 
-The rest of this topic will focus on the **Operational workspace** patterns.
+The rest of this article will focus on the **Operational workspace** patterns.
 
 ## Wireframe
 

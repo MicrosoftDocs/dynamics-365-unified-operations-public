@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 11 (October 2017)
-description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 11. This version was released in October 2017.
+description: This article describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 11. This version was released in October 2017.
 author: tonyafehr
 ms.date: 10/09/2017
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 11
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 11. This version was released in October 2017 and has a build number of 7.0.4679.35176.
+This article describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 11. This version was released in October 2017 and has a build number of 7.0.4679.35176.
 
 Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to find supplemental information about new features and learn more about what new features are in development. For information about the bug fixes included in Platform update 11, log in to Lifecycle Services (LCS) and view this [KB article](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4047244&bugId=3869536&qc=310ad7de90642ce961cc3f51358f3b40788c975dec466891d0fcc17c13145f56).
 

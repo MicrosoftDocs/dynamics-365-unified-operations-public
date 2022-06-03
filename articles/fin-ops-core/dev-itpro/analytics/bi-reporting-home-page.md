@@ -2,7 +2,7 @@
 # required metadata
 
 title: Reporting and analytics with Power BI home page
-description: This topic points you to resources that you can use to learn more about the business intelligence and reporting tools that are available.
+description: This article points you to resources that you can use to learn more about the business intelligence and reporting tools that are available.
 author: sericks007
 ms.date: 10/02/2019
 ms.topic: index-page
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic points you to resources that you can use to learn more about the business intelligence (BI) and reporting tools that are available.
+This article points you to resources that you can use to learn more about the business intelligence (BI) and reporting tools that are available.
 
 ## Get started
 - [Information access and reporting](information-access-reporting.md)

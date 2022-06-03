@@ -2,7 +2,7 @@
 # required metadata
 
 title: Purchase duties
-description: This topic provides information about purchase duties in Austria.
+description: This article provides information about purchase duties in Austria.
 author: ShylaThompson
 ms.date: 07/21/2021
 ms.topic: article

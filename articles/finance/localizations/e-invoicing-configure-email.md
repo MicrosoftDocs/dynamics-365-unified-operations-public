@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure an email channel
-description: This topic explains how to configure an email channel to receive electronic invoices.
+description: This article explains how to configure an email channel to receive electronic invoices.
 author: dkalyuzh
 ms.date: 02/09/2022
 ms.topic: article

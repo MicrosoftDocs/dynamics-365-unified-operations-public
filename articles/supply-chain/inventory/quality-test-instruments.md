@@ -2,7 +2,7 @@
 # required metadata
 
 title: Quality management test instruments
-description: This topic describes how to create test instruments that can be used for tests on quality orders in Microsoft Dynamics 365 Supply Chain Management.
+description: This article describes how to create test instruments that can be used for tests on quality orders in Microsoft Dynamics 365 Supply Chain Management.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to create test instruments that can be used for tests on quality orders in Microsoft Dynamics 365 Supply Chain Management.
+This article describes how to create test instruments that can be used for tests on quality orders in Microsoft Dynamics 365 Supply Chain Management.
 
 You use the **Test instruments** page to define and view details about the devices that are used to perform tests on quality orders. Test instruments are optional. However, they can help quality workers know which device or tool they should use to perform a specific test.
 

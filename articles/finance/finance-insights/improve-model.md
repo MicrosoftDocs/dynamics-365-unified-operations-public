@@ -2,7 +2,7 @@
 # required metadata
 
 title: Improve the prediction model
-description: This topic describes features that you can use to improve the performance of prediction models.
+description: This article describes features that you can use to improve the performance of prediction models.
 author: ShivamPandey-msft
 ms.date: 07/16/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 10.0.8
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes features that you can use to improve the performance of prediction models. You start to improve your model in the **Customer payment predictions** workspace in Microsoft Dynamics 365 Finance. The improvement steps are then completed in AI Builder.
+This article describes features that you can use to improve the performance of prediction models. You start to improve your model in the **Customer payment predictions** workspace in Microsoft Dynamics 365 Finance. The improvement steps are then completed in AI Builder.
 
 ## Select historical outcomes
 

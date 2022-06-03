@@ -2,7 +2,7 @@
 # required metadata
 
 title: Integration with Microsoft Dynamics 365 Field Service overview
-description: This topic provides an overview of the Integration with Microsoft Dynamics 365 Field Service. 
+description: This article provides an overview of the Integration with Microsoft Dynamics 365 Field Service. 
 author: Henrikan
 ms.date: 07/25/2019
 ms.topic: overview

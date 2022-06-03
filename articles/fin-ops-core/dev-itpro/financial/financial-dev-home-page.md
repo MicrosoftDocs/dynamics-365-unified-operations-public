@@ -2,7 +2,7 @@
 # required metadata
 
 title: Financials development home page
-description: This topic provides links to topics about financials development.
+description: This article provides links to topics about financials development.
 author: tonyafehr
 ms.date: 09/12/2020
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides links to topics about financials development.
+This article provides links to topics about financials development.
 
 - Financial dimension framework
 

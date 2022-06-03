@@ -1,6 +1,6 @@
 ---
 title: Container packing strategies
-description: This topic describes the differences between container packing strategies and provides examples.
+description: This article describes the differences between container packing strategies and provides examples.
 author: GalynaFedorova
 ms.date: 06/11/2021
 ms.topic: article
@@ -18,7 +18,7 @@ ms.dyn365.ops.version: 10.0.19
 
 [!include [banner](../includes/banner.md)]
 
-A *container packing strategy* is a strategy that you can use to define item allocations across containers. This topic explains the differences between the *Pack into all open containers* and *Pack into current container only* strategies.
+A *container packing strategy* is a strategy that you can use to define item allocations across containers. This article explains the differences between the *Pack into all open containers* and *Pack into current container only* strategies.
 
 - **Pack into all open containers** – The system must check all open containers that have already been created during the containerization cycle, to make sure that the item will fit into one of them. During packing, the system checks each item to determine whether it will fit into any of the previously created containers. If the item won't fit into an existing container, the system creates a new container and continues until it has finished packing the whole order.
 

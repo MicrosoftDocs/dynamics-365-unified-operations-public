@@ -2,7 +2,7 @@
 # required metadata
 
 title: Year-end close for Czech Republic and Hungary
-description: This topic provides information about the year-end closing process and opening transactions for the Czech Republic and Hungary.
+description: This article provides information about the year-end closing process and opening transactions for the Czech Republic and Hungary.
 author: EvgenyPopovMBS
 ms.date: 05/18/2018
 ms.topic: article
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 # Year-end close for Czech Republic and Hungary
 [!include[banner](../includes/banner.md)]
 
-This topic provides information about the year-end closing process and opening transactions for the Czech Republic and Hungary. This functionality allows user to set up the year-end closing process in the following ways:
+This article provides information about the year-end closing process and opening transactions for the Czech Republic and Hungary. This functionality allows user to set up the year-end closing process in the following ways:
 
 -    Posting to different accounts for closing and opening of balance accounts.
 -    Transfer of profit or loss year-end result into the newly opened year to a different account.

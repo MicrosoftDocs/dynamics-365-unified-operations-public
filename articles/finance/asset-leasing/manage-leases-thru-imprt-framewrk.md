@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage leases through the Lease import framework
-description: This topic explains how to use the Lease import framework to adjust multiple leases at the same time.
+description: This article explains how to use the Lease import framework to adjust multiple leases at the same time.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.14
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to use the Lease import framework to adjust multiple leases in one step. By using this capability, you can save time, and you can also ensure more accurate adjustments by reducing the chance of human error. Additionally, this capability can connect Microsoft Dynamics 365 Finance with external data entities to efficiently upload data.
+This article explains how to use the Lease import framework to adjust multiple leases in one step. By using this capability, you can save time, and you can also ensure more accurate adjustments by reducing the chance of human error. Additionally, this capability can connect Microsoft Dynamics 365 Finance with external data entities to efficiently upload data.
 
 The following data entities can be used to integrate Asset leasing with external systems:
 

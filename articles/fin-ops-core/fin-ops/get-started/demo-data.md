@@ -2,7 +2,7 @@
 # required metadata
 
 title: Demo data overview
-description: This topic provides an overview of the demo data.
+description: This article provides an overview of the demo data.
 author: sericks007
 ms.date: 09/20/2019
 ms.topic: overview
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of the demo data that is available.
+This article provides an overview of the demo data that is available.
 
 Demo data is the base data set that is released for implementation support and demonstration purposes. The current demo data set supports the following verticals:
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Connect a custom Help website to the Help pane
-description: This topic explains how you can extend the in-product Help pane with custom Help content. 
+description: This article explains how you can extend the in-product Help pane with custom Help content. 
 author: edupont04
 ms.date: 05/11/2020
 ms.topic: article

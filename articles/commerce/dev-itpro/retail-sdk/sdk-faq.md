@@ -2,7 +2,7 @@
 # required metadata
 
 title: Retail SDK FAQ
-description: This topic summarizes answers to questions that are frequently asked by users of the Retail SDK.
+description: This article summarizes answers to questions that are frequently asked by users of the Retail SDK.
 author: mugunthanm 
 ms.date: 06/30/2021
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.9
 
 [!include [banner](../../includes/banner.md)]
 
-This topic summarizes answers to questions that are frequently asked by users of the Retail SDK.
+This article summarizes answers to questions that are frequently asked by users of the Retail SDK.
 
 
 ## How do I handle a runtime error thrown when using ISupportedTypesAware in SDK version (10.0.420.10003~10.0.420.10033)?

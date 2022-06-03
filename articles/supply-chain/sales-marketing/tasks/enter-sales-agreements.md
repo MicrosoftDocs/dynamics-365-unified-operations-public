@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Enter sales agreements
-description: This topic explains how to create a sales agreement that commits one of your customers to buy a product for an agreed amount over time in exchange for special discounts. 
+description: This article explains how to create a sales agreement that commits one of your customers to buy a product for an agreed amount over time in exchange for special discounts. 
 author: Henrikan
 ms.date: 08/08/2019
 ms.topic: business-process 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to create a sales agreement that commits one of your customers to buy a product for an agreed amount over time in exchange for special discounts. You can run this procedure in demo data company USMF or on your own data.
+This article explains how to create a sales agreement that commits one of your customers to buy a product for an agreed amount over time in exchange for special discounts. You can run this procedure in demo data company USMF or on your own data.
 
 
 ## Set up sales agreement header

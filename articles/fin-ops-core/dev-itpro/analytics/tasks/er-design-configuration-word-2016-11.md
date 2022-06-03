@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Reuse ER configurations with Excel templates to generate reports in Word format
-description: This topic describes how report formats that were designed to generate reports as Excel workbooks can be configured to generate reports as Word documents.
+description: This article describes how report formats that were designed to generate reports as Excel workbooks can be configured to generate reports as Word documents.
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: business-process 

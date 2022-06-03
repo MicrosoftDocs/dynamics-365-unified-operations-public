@@ -2,7 +2,7 @@
 # required metadata
 
 title: Latvian Intrastat
-description: This topic contains information about the Latvian Intrastat report.
+description: This article contains information about the Latvian Intrastat report.
 author: anasyash
 ms.date: 01/18/2022
 ms.topic: article

@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: NFC-e fiscal document functionality in Commerce POS for Brazil
-description: This topic gives an overview of NFC-e fiscal document functionality in Microsoft Dynamics 365 Commerce point of sale (POS) for Brazil.
+description: This article gives an overview of NFC-e fiscal document functionality in Microsoft Dynamics 365 Commerce point of sale (POS) for Brazil.
 author: akviklis
 manager: annbe
 ms.date: 12/03/2021
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include[banner](../includes/banner.md)]
 
-This topic gives an overview of NFC-e (Nota Fiscal do Consumidor eletrônica) fiscal document functionality in Microsoft Dynamics 365 Commerce point of sale (POS) for Brazil. It also explains how to issue NFC-e documents and print DANFE (Documento Auxiliar da Nota Fiscal Eletrônica) fiscal receipts when retail sales of goods are completed in Commerce POS for Brazil.
+This article gives an overview of NFC-e (Nota Fiscal do Consumidor eletrônica) fiscal document functionality in Microsoft Dynamics 365 Commerce point of sale (POS) for Brazil. It also explains how to issue NFC-e documents and print DANFE (Documento Auxiliar da Nota Fiscal Eletrônica) fiscal receipts when retail sales of goods are completed in Commerce POS for Brazil.
 
 An NFC-e is an electronic fiscal document that is generated to register the sale of goods to a customer. It enables tax and fiscal control by tax authorities. It also lets customers verify the validity and authenticity of fiscal documents that they receive. Sales of services aren't supported.
 

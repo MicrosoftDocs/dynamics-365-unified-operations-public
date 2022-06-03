@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Identify and resolve conflicts in segregation of duties
-description: This topic explains how to identify and resolve conflicts in segregation of duties.
+description: This article explains how to identify and resolve conflicts in segregation of duties.
 author: peakerbl
 ms.date: 01/04/2021
 ms.topic: business-process 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to identify and resolve conflicts in segregation of duties. You can set up rules to separate duties that must be performed by different users. This concept is named segregation of duties. When the definition of a security role or the role assignments of a user violate the rules, the conflict is logged. All conflicts must be resolved by the administrator. Complete the following procedure to identify and resolve conflicts.
+This article explains how to identify and resolve conflicts in segregation of duties. You can set up rules to separate duties that must be performed by different users. This concept is named segregation of duties. When the definition of a security role or the role assignments of a user violate the rules, the conflict is logged. All conflicts must be resolved by the administrator. Complete the following procedure to identify and resolve conflicts.
 
 After a rule has been added, verify that all existing roles are compliant. 
 

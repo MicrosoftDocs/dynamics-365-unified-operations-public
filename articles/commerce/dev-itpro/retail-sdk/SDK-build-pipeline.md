@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up Retail SDK build pipeline
-description: This topic shows how to set up the Azure DevOps build pipeline for the Retail SDK.
+description: This article shows how to set up the Azure DevOps build pipeline for the Retail SDK.
 author: mugunthanm 
 ms.date: 04/21/2022
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.11
 
 [!include [banner](../../includes/banner.md)]
 
-This topic shows how to set up the Azure DevOps build pipeline for the Retail SDK, by using the Azure DevOps build agent (a Microsoft-hosted agent). To generate the build for Retail SDK, a dedicated build machine isn't required except for [Modern POS (MPOS)](mpos-build-agent.md#why-cant-i-use-an-azure-devops-hosted-agent). The setup works with the Azure DevOps build agent. This topic applies to Retail SDK version 10.0.11 or greater. 
+This article shows how to set up the Azure DevOps build pipeline for the Retail SDK, by using the Azure DevOps build agent (a Microsoft-hosted agent). To generate the build for Retail SDK, a dedicated build machine isn't required except for [Modern POS (MPOS)](mpos-build-agent.md#why-cant-i-use-an-azure-devops-hosted-agent). The setup works with the Azure DevOps build agent. This article applies to Retail SDK version 10.0.11 or greater. 
 
 ## Prerequisites
 

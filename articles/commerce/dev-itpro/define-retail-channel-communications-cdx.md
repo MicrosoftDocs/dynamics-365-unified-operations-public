@@ -2,7 +2,7 @@
 # required metadata
 
 title: Commerce Data Exchange and commerce channel communications
-description: This topic provides an overview of Commerce Data Exchange and its components.
+description: This article provides an overview of Commerce Data Exchange and its components.
 author: athinesh99
 ms.date: 11/14/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of Commerce Data Exchange and its components. It explains the part that each component plays in the transfer of data between Microsoft Dynamics 365 Commerce Headquarters and channels.
+This article provides an overview of Commerce Data Exchange and its components. It explains the part that each component plays in the transfer of data between Microsoft Dynamics 365 Commerce Headquarters and channels.
 
 Commerce Data Exchange is a system that transfers data between Headquarters and channels, such as online stores or brick-and-mortar stores. The database that stores data for a channel is separate from the Commerce database. The channel database holds only the data that is required for transactions. Master data is configured in Headquarters and distributed to channels. Transactional data is created in the point of sale (POS) system or the online store, and then uploaded to Headquarters. Data distribution is asynchronous. In other words, the process of gathering and packaging data at the source occurs separately from the process of receiving and applying data at the destination. For some scenarios, such as price and inventory lookups, data must be retrieved in real time. To support these scenarios, Commerce Data Exchange also includes a service that enables real-time communication between Headquarters and a channel. 
 

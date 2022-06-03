@@ -2,7 +2,7 @@
 # required metadata
 
 title: Year-end close missing opening balances 
-description: This topic explains why opening balances might be missing when you close a year, and how to rebuild those balances if they are missing.
+description: This article explains why opening balances might be missing when you close a year, and how to rebuild those balances if they are missing.
 author: kweekley
 ms.date: 05/12/2021
 ms.topic: index-page
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.14
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains why opening balances might be missing when you close a year, and how to rebuild those balances if they are missing.
+This article explains why opening balances might be missing when you close a year, and how to rebuild those balances if they are missing.
 
 ### Symptom
 
@@ -41,7 +41,7 @@ Here are things to check if you've closed a year in General ledger, and then gen
 
 If the **Undo previous close** field is set to **Yes**, the previous year-end close for the same fiscal year is being reversed. When running a process to reverse the year-end close, all entries for both closing and opening balances will be deleted, as if the year had never been closed. The vouchers are also deleted. The year-end close process will not run again automatically. You must start the process again, this time updating the **Undo previous close** option to **No**.
 
-This scenario is covered in the year-end close FAQ topic. For more information, see [Year-end activities FAQ](faq-year-end-activities.md).
+This scenario is covered in the year-end close FAQ article. For more information, see [Year-end activities FAQ](faq-year-end-activities.md).
 
 ### Symptom
 

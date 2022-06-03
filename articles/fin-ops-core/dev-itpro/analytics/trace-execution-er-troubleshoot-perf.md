@@ -2,7 +2,7 @@
 # required metadata
 
 title: Trace the execution of ER formats to troubleshoot performance issues
-description: This topic provides information about how to use the performance trace feature in Electronic reporting (ER) to troubleshoot performance issues.
+description: This article provides information about how to use the performance trace feature in Electronic reporting (ER) to troubleshoot performance issues.
 author: NickSelin
 ms.date: 06/22/2021
 ms.topic: article
@@ -311,27 +311,27 @@ It can also be useful to reduce the number of calls that are made to the LedgerT
 
 ### Import the modified ER model mapping configuration from RCS into the application
 
-Repeat the steps in the [Import an ER configuration from RCS into Finance and Operations](#import-configuration) section earlier in this topic to import version 1.2 of the **Performance trace mapping** configuration.
+Repeat the steps in the [Import an ER configuration from RCS into Finance and Operations](#import-configuration) section earlier in this article to import version 1.2 of the **Performance trace mapping** configuration.
 
 ## Run the modified ER solution to trace execution
 
 ### Run the ER format
 
-Repeat the steps in the [Run the ER format](#run-format) section earlier in this topic to generate a new performance trace.
+Repeat the steps in the [Run the ER format](#run-format) section earlier in this article to generate a new performance trace.
 
 ## Work with the execution trace
 
 ### Export the generated trace from the application
 
-Repeat the steps in the [Export the generated trace from the application](#export-trace) section earlier in this topic to save a new performance trace locally.
+Repeat the steps in the [Export the generated trace from the application](#export-trace) section earlier in this article to save a new performance trace locally.
 
 ### Import the generated trace into RCS
 
-Repeat the steps in the [Import the generated trace into RCS](#import-trace) section earlier in this topic to import the new performance trace into RCS.
+Repeat the steps in the [Import the generated trace into RCS](#import-trace) section earlier in this article to import the new performance trace into RCS.
 
 ### Use the performance trace for analysis in RCS – Model mapping
 
-Repeat the steps in the [Use the performance trace for analysis in RCS – Model mapping](#use-trace) section earlier in this topic to analyze the latest performance trace.
+Repeat the steps in the [Use the performance trace for analysis in RCS – Model mapping](#use-trace) section earlier in this article to analyze the latest performance trace.
 
 Notice that the adjustments that you made to the model mapping have eliminated duplicate queries to database. The number of calls to database tables and data sources for this model mapping has been also reduced. Therefore, the performance of the whole ER solution has improved.
 
@@ -361,7 +361,7 @@ If you use one of these versions, you can analyze the details of generated perfo
 
 ### Run the ER format
 
-Repeat the steps in the [Run the ER format](#run-format) section earlier in this topic to generate a new performance trace.
+Repeat the steps in the [Run the ER format](#run-format) section earlier in this article to generate a new performance trace.
 
 Notice that the web browser offers a zip file for download. This file contains the performance trace in PerfView format. You can then use the PerfView performance analysis tool to analyze the details of ER format execution.
 
@@ -385,7 +385,7 @@ Because of improvements that have been made to the ER framework, the performance
 
 ### Run the ER format
 
-Repeat the steps in the [Run the ER format](#run-format) section earlier in this topic to generate a new performance trace.
+Repeat the steps in the [Run the ER format](#run-format) section earlier in this article to generate a new performance trace.
 
 Notice that the web browser offers a zip file for download. This file contains the performance trace in PerfView format. You can then use the PerfView performance analysis tool to analyze the details of ER format execution. This trace now includes the details of SQL database access during the execution of the ER format.
 

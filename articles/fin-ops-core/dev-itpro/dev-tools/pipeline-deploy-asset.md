@@ -1,6 +1,6 @@
 ---
 title: Deploy assets by using Azure Pipelines
-description: This topic explains how you can deploy assets from the Asset library in Microsoft Dynamics Lifecycle Services (LCS) by using pipelines in Azure DevOps.
+description: This article explains how you can deploy assets from the Asset library in Microsoft Dynamics Lifecycle Services (LCS) by using pipelines in Azure DevOps.
 author: jorisdg
 ms.date: 04/29/2020
 ms.topic: article
@@ -25,7 +25,7 @@ You can use the **Dynamics Lifecycle Services (LCS) Asset Deployment** task in M
 > [!NOTE]
 > Commerce Cloud Scale Unit (CSU) Extension or e-Commerce Package can be deployed to production, UAT or Sandbox environment using the **Dynamics Lifecycle Services (LCS) Asset Deployment**
 
-This topic assumes that you have a working knowledge of [Azure Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started).
+This article assumes that you have a working knowledge of [Azure Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started).
 
 > [!NOTE]
 > Before you can add these steps to a pipeline, the [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension for Azure DevOps must be enabled and installed in the Azure DevOps account. For more information about how to install an extension for an organization, see [Install extensions](/azure/devops/marketplace/install-extension).

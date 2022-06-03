@@ -1,6 +1,6 @@
 ---
 title: Customization guidance for dual-write
-description: This topic provides guidance for customizing dual-write.
+description: This article provides guidance for customizing dual-write.
 author: RamaKrishnamoorthy
 ms.date: 09/15/2021
 ms.topic: article
@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 
 
-Dual-write provides out-of-box maps for some business processes. However, there might be scenarios where you need additional fields, maps, or transformations. The dual-write platform is extensible. You can create custom maps and extend existing maps with custom fields to sync data between Finance and Operations apps and Microsoft Dataverse. This topic provides guidance and best practices for these customizations.
+Dual-write provides out-of-box maps for some business processes. However, there might be scenarios where you need additional fields, maps, or transformations. The dual-write platform is extensible. You can create custom maps and extend existing maps with custom fields to sync data between Finance and Operations apps and Microsoft Dataverse. This article provides guidance and best practices for these customizations.
 
 Before you customize any maps, you should be familiar with the tasks in [Customize table and column mappings](customizing-mappings.md).
 

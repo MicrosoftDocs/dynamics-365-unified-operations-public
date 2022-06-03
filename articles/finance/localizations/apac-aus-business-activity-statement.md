@@ -2,7 +2,7 @@
 # required metadata
 
 title: Business activity statement 
-description: This topic provides information about the business activity statement (BAS) for Australia. The BAS is a form that all businesses submit to the Australian Taxation Office to report their taxation obligations.
+description: This article provides information about the business activity statement (BAS) for Australia. The BAS is a form that all businesses submit to the Australian Taxation Office to report their taxation obligations.
 author: anasyash
 ms.date: 01/19/2020
 ms.topic: article
@@ -27,7 +27,7 @@ ms.dyn365.ops.version:
 
 # Business activity statement (BAS)
 
-This topic provides information about the Business activity statement (BAS) for Australia. The BAS is a form that all businesses submit to the Australian Taxation Office (ATO) to report their taxation obligations.
+This article provides information about the Business activity statement (BAS) for Australia. The BAS is a form that all businesses submit to the Australian Taxation Office (ATO) to report their taxation obligations.
 
 The Business activity statement (BAS) feature is designed to help you fill in your BAS. The statement resembles the calculation worksheet that the ATO provides when you receive the BAS form in the mail.
 
@@ -328,7 +328,7 @@ Set up sales tax reporting codes by following the instructions in [Set up sales 
 </tbody>
 </table>
 
-You can also set up the following reporting codes, and then make transactions or manually fill in corresponding fields of the BAS report. For more information, see the [Generate additional BAS report boxes for the settlement period](#_Generate_additional_BAS) section later in this topic.
+You can also set up the following reporting codes, and then make transactions or manually fill in corresponding fields of the BAS report. For more information, see the [Generate additional BAS report boxes for the settlement period](#_Generate_additional_BAS) section later in this article.
 
 <table>
 <tbody>
@@ -654,11 +654,11 @@ For a list of fringe benefit reason codes, see [FBT reason codes](https://www.at
     | T1 Installment income | Enter the PAYG installment income. |
     | T2 Installment rate | Enter the PAYG commissioner&#39;s installment rate as a percentage. |
     | T3 New varied installment rate | Enter the PAYG new varied installment rate as a percentage. |
-    | T4 Reason for variation | Select the reason code for the variation. The list of available reason codes is shown on the **BAS PAYG reason codes** page. For more information, see the [Set up PAYG reason codes](#_Set_up_PAYG) section earlier in this topic. |
+    | T4 Reason for variation | Select the reason code for the variation. The list of available reason codes is shown on the **BAS PAYG reason codes** page. For more information, see the [Set up PAYG reason codes](#_Set_up_PAYG) section earlier in this article. |
     | F1 ATO fringe benefit | Enter the FBT installment that is calculated by the ATO. |
     | F2 Estimated total fringe benefits | Enter the estimated total FBT that must be paid. |
     | F3 Varied fringe benefits tax | Enter the varied FBT installment. |
-    | F4 Reason for variation | Select the reason code that explains why the amount on the BAS was changed. The list of available reason codes is shown on the **BAS fringe benefit reason codes** page. For more information, see the [Set up fringe benefit reason codes](#_Set_up_fringe) section earlier in this topic. |
+    | F4 Reason for variation | Select the reason code that explains why the amount on the BAS was changed. The list of available reason codes is shown on the **BAS fringe benefit reason codes** page. For more information, see the [Set up fringe benefit reason codes](#_Set_up_fringe) section earlier in this article. |
     | 7C Fuel tax credit over claim | This field isn&#39;t used in the official BAS form. **Note:** In earlier versions of the official BAS, you could use this field to enter the amount of credit that must be claimed on tax for fuel that was used for business activities, machinery, plant equipment, and heavy vehicles. |
     | 7D Fuel tax credit | This field isn&#39;t used in the official BAS form. **Note:** In earlier versions of the official BAS, you could use this field to enter the amount that you want to reduce your previously claimed fuel tax refund by. |
 
@@ -673,7 +673,7 @@ For a list of fringe benefit reason codes, see [FBT reason codes](https://www.at
 | From date | Enter the start date of the settlement period. |
 | Transaction date | Enter the posting date for the sales tax settlement. |
 | Sales tax payment version | Select the version of the sales tax report to settle:<ul></br><li>**Original** – Include sales tax transactions of the first settlement calculation that was posted for the period.</li></ul><ul><li>**Corrections** – Include sales tax transactions of subsequent settlement calculations for the period.</li></ul><ul><li>**Latest corrections** – Include sales tax transactions of the last settlement calculation that was posted for the period.</li><li>**Total list** – Include all sales transactions for the period. These transactions include original and corrected transactions.</li></br></ul> |
-| Post and settle GST | Set this option to **Yes** to post and settle the transactions for GST and create a sales tax payment.</br>Before you complete the <em>Post and settle GST</em> procedure, make sure that you set up the BAS reconciliation account as described in the [Set up an additional BAS reconciliation account](#_Set_up_an_additional_bas_reconciliation_account) section earlier in this topic. |
+| Post and settle GST | Set this option to **Yes** to post and settle the transactions for GST and create a sales tax payment.</br>Before you complete the <em>Post and settle GST</em> procedure, make sure that you set up the BAS reconciliation account as described in the [Set up an additional BAS reconciliation account](#_Set_up_an_additional_bas_reconciliation_account) section earlier in this article. |
 
 
 3. Select **OK**.
@@ -800,7 +800,7 @@ For a list of fringe benefit reason codes, see [FBT reason codes](https://www.at
 <p>Adjustments</p>
 </td>
 <td>
-<p>[7] or the manual calculation on the <strong>Additional BAS report boxes</strong> page. For more information, see the <a href="#_Generate_additional_BAS">Generate additional BAS report boxes for the settlement period</a> section earlier in this topic.</p>
+<p>[7] or the manual calculation on the <strong>Additional BAS report boxes</strong> page. For more information, see the <a href="#_Generate_additional_BAS">Generate additional BAS report boxes for the settlement period</a> section earlier in this article.</p>
 </td>
 <td>
 <p>This data isn't printed. It's used to calculate G9.</p>

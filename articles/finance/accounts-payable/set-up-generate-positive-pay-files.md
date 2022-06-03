@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up and generate positive pay files
-description: This topic explains how to set up positive pay and generate positive pay files. 
+description: This article explains how to set up positive pay and generate positive pay files. 
 author: panolte
 ms.date: 03/06/2019
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up positive pay and generate positive pay files. 
+This article explains how to set up positive pay and generate positive pay files. 
 
 Set up positive pay to generate an electronic list of checks that is provided to the bank. Then, when a check is presented to the bank, the bank compares it with the list of checks. If the check matches a check in the list, the bank clears it. If the check doesn't match a check in the list, the bank holds it for review.
 

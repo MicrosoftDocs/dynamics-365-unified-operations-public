@@ -1,6 +1,6 @@
 ---
 title: Create, edit, and browse Business process modeler (BPM) libraries
-description: This topic provides information about how to create or edit a BPM library and how to browse an existing library.
+description: This article provides information about how to create or edit a BPM library and how to browse an existing library.
 author: kfend
 ms.date: 04/03/2018
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 2012
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about how to create, edit, and browse Business process modeler (BPM) libraries. It's important to note You can browse a BPM library that is a global library or a corporate library. However, before you can edit and work with a BPM library, it must be part of your project in Microsoft Dynamics Lifecycle Services (LCS). Libraries that are distributed by Microsoft appear under **Global libraries**, whereas libraries that are published by your organization appear under **Corporate libraries**.
+This article provides information about how to create, edit, and browse Business process modeler (BPM) libraries. It's important to note You can browse a BPM library that is a global library or a corporate library. However, before you can edit and work with a BPM library, it must be part of your project in Microsoft Dynamics Lifecycle Services (LCS). Libraries that are distributed by Microsoft appear under **Global libraries**, whereas libraries that are published by your organization appear under **Corporate libraries**.
 
   >[!NOTE]
   >BPM localization is not supported. If you edit in the new BPM client in any language other than EN-US, your changes will only display when you view the BPM in the language in which the changes were made. To view any changes made in EN-US, you must synchronize with Visual Studio Team Server before the changes will display.

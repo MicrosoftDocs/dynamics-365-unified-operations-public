@@ -2,7 +2,7 @@
 # required metadata
 
 title: Business events and workflow approvals
-description: This topic explains how to use Microsoft Power Automate to configure and consume a workflow business event for purchase requisition approval.
+description: This article explains how to use Microsoft Power Automate to configure and consume a workflow business event for purchase requisition approval.
 author: Sunil-Garg
 ms.date: 11/13/2019
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: [Operations AOT form name to tie this topic to]
+# ms.search.form: [Operations AOT form name to tie this article to]
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
@@ -27,9 +27,9 @@ ms.dyn365.ops.version: 2019-6-30
 # Business events and workflow approvals
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to use Microsoft Power Automate to configure and consume a workflow business event for purchase requisition approval.
+This article explains how to use Microsoft Power Automate to configure and consume a workflow business event for purchase requisition approval.
 
-To complete this topic, you must be running Microsoft Dynamics 365 for Finance and Operations version 10.0.2 (May 2019) with platform update 26 or later.
+To complete this article, you must be running Microsoft Dynamics 365 for Finance and Operations version 10.0.2 (May 2019) with platform update 26 or later.
 
 ## Scenario overview
 

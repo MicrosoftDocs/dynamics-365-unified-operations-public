@@ -2,7 +2,7 @@
 # required metadata
 
 title: Search results module
-description: This topic covers search results modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+description: This article covers search results modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.8
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-This topic covers search results modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+This article covers search results modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
 The search results module returns product search results and a list of applicable refiners for the products. Search results modules on Dynamics 365 Commerce sites can be used to render pages for the following scenarios:
 

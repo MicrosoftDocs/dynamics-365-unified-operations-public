@@ -2,7 +2,7 @@
 # required metadata
 
 title: Checkout module
-description: This topic describes how to add a checkout module to a page and set the required properties.
+description: This article describes how to add a checkout module to a page and set the required properties.
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to add a checkout module to a page and set the required properties.
+This article describes how to add a checkout module to a page and set the required properties.
 
 A checkout module is a special container that hosts all modules that are required to create an order. It presents a step-by-step flow that a customer uses to enter all the relevant information to make a purchase. It captures the shipping address, shipping method, and billing information. It also provides an order summary and other information that is related to a customer order.
 

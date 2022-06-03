@@ -2,7 +2,7 @@
 # required metadata
 
 title: Indirect cost posting
-description: This topic explains how to post indirect costs, create cost groups, and add nodes to the costing sheet for indirect costs.
+description: This article explains how to post indirect costs, create cost groups, and add nodes to the costing sheet for indirect costs.
 author: rachelprofitt
 ms.date: 04/25/2022
 ms.topic: overview

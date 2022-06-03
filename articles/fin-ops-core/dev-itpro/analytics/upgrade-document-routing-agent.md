@@ -2,7 +2,7 @@
 # required metadata
 
 title: Update the Document Routing Agent
-description: This topic explains how to update the Document Routing Agent.
+description: This article explains how to update the Document Routing Agent.
 author: RichdiMSFT
 ms.date: 05/14/2020
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: kfend

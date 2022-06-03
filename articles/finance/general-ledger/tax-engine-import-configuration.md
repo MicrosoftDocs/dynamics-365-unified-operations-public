@@ -2,7 +2,7 @@
 # required metadata
 
 title: Tax engine import configuration
-description: This topic provides information about import tax engine configuration.
+description: This article provides information about import tax engine configuration.
 author: kailiang
 ms.date: 10/15/2018
 ms.topic: article
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 7.3
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about import tax engine configuration.
+This article provides information about import tax engine configuration.
 
 ### Create a Lifecycle Services (LCS) configuration repository
 1. Go to **Organization administration** > **Workspaces** > **Electronic reporting**.

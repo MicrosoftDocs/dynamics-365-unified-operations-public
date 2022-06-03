@@ -2,7 +2,7 @@
 # required metadata
 
 title: Export to Azure Data Lake overview
-description: This topic explains how you can connect your Finance and Operations environment to a data lake to unlock insights that are hidden in your data.
+description: This article explains how you can connect your Finance and Operations environment to a data lake to unlock insights that are hidden in your data.
 author: MilindaV2
 ms.date: 03/23/2022
 ms.topic: overview
@@ -68,7 +68,7 @@ Besides data, the data lake contains metadata that describes the name, data type
 
 ### What is Azure Data Lake, and what benefits do data lakes offer?
 
-Azure Data Lake is a technology in the Azure cloud that lets you store and work with "big data" for analytics, and apply machine learning and AI. When this topic mentions "Data Lake," it's referring specifically to storage technology that is based on Azure Data Lake Storage Gen2.
+Azure Data Lake is a technology in the Azure cloud that lets you store and work with "big data" for analytics, and apply machine learning and AI. When this article mentions "Data Lake," it's referring specifically to storage technology that is based on Azure Data Lake Storage Gen2.
 
 Data lakes provide cloud storage that is less expensive than the cloud storage that relational databases provide. Therefore, large amounts of data can be stored in the cloud. This data includes both business data that is traditionally stored in business systems and data warehouses, and device and sensor data, such as signals from devices. In addition, Data Lake supports a range of tools and programming languages that enable large amounts of data to be reported on, queried, and transformed.
 

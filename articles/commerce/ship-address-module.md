@@ -2,7 +2,7 @@
 # required metadata
 
 title: Shipping address module
-description: This topic covers the shipping address module and explains how to configure it in Microsoft Dynamics 365 Commerce.
+description: This article covers the shipping address module and explains how to configure it in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 02/11/2021
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.13
 
 [!include [banner](includes/banner.md)]
 
-This topic describes covers the shipping address module and explains how to configure it in Microsoft Dynamics 365 Commerce.
+This article describes covers the shipping address module and explains how to configure it in Microsoft Dynamics 365 Commerce.
 
 The shipping address module lets customers add or select the shipping address for an order during the checkout flow. If a customer is signed in, any addresses that were previously saved for that customer are shown, and the customer can select among them. The customer can also add a new address. The shipping address module is used for all items on an order that require shipping.
 

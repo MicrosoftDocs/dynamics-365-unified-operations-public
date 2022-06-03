@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Create configuration providers and mark them as active
-description: This topic explains how a user assigned to the System Administrator or Electronic Reporting Developer role can create a configuration provider. 
+description: This article explains how a user assigned to the System Administrator or Electronic Reporting Developer role can create a configuration provider. 
 author: NickSelin
 ms.date: 07/02/2019
 ms.topic: business-process 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how a user assigned to the System Administrator or Electronic Reporting Developer role can create a configuration provider for Electronic reporting (ER). Each ER configuration will refer to the provider as the author of the configuration. In this example, you will create a configuration provider for sample company, Litware, Inc. These steps can be performed in any company as ER configuration providers are shared among all companies.
+This article explains how a user assigned to the System Administrator or Electronic Reporting Developer role can create a configuration provider for Electronic reporting (ER). Each ER configuration will refer to the provider as the author of the configuration. In this example, you will create a configuration provider for sample company, Litware, Inc. These steps can be performed in any company as ER configuration providers are shared among all companies.
 
 ## Create a provider
 1. Go to the **navigation pane** in the upper left corner and select **Organization administration**.

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Submit a VAT return to HMRC's MTD web service
-description: This topic explains how to submit a value-added tax (VAT) return to the Making Tax Digital (MTD) web service of Her Majesty's Revenue and Customs (HMRC).
+description: This article explains how to submit a value-added tax (VAT) return to the Making Tax Digital (MTD) web service of Her Majesty's Revenue and Customs (HMRC).
 author: liza-golub
 ms.date: 08/19/2021
 ms.topic: article
@@ -29,7 +29,7 @@ ms.search.validFrom: 08/07/2021
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to submit a value-added tax (VAT) return to the Making Tax Digital (MTD) web service of Her Majesty's Revenue and Customs (HMRC).
+This article explains how to submit a value-added tax (VAT) return to the Making Tax Digital (MTD) web service of Her Majesty's Revenue and Customs (HMRC).
 
 The process of submitting a VAT return has two parts:
 

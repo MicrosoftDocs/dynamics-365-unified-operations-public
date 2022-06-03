@@ -2,7 +2,7 @@
 # required metadata
 
 title: DATEFORMAT ER function
-description: This topic provides information about how the DATEFORMAT Electronic reporting (ER) function is used.
+description: This article provides information about how the DATEFORMAT Electronic reporting (ER) function is used.
 author: NickSelin
 ms.date: 09/08/2021
 ms.prod: 

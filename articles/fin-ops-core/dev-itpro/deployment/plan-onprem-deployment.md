@@ -2,7 +2,7 @@
 # required metadata
 
 title: Plan and prepare for on-premises deployments
-description: This topic will help you plan and prepare for your on-premises deployment.
+description: This article will help you plan and prepare for your on-premises deployment.
 author: PeterRFriis
 ms.date: 01/26/2022
 ms.topic: article
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform Update 8
 
 Dynamics 365 Finance + Operations (on-premises) supports running business processes in customer data centers. With this deployment option, application servers and the Microsoft SQL Server database will run in the customer’s data center.
 
-This topic will help you plan and prepare for your on-premises deployment.
+This article will help you plan and prepare for your on-premises deployment.
 
 > [!IMPORTANT]
 > Dynamics 365 Finance + Operations (on-premises) is not supported on any public cloud infrastructure, including Microsoft Azure Cloud services. However, it is supported to run on [Microsoft Azure Stack HCI](https://azure.microsoft.com/products/azure-stack/hci/) and [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/).
@@ -142,7 +142,7 @@ As you understand the load that impacts your infrastructure, you also need to un
 - **Third-party solutions** – These solutions, like ISVs, have the same implications and recommendations as extensions.
 
 ## Sizing your environment
-To determine your sizing requirements, you must know the peak volume of transactions that you need to process. Most auxiliary systems, like Management Reporter or SSRS, are less mission critical. As a result, this topic focuses primarily on AOS and SQL Server.
+To determine your sizing requirements, you must know the peak volume of transactions that you need to process. Most auxiliary systems, like Management Reporter or SSRS, are less mission critical. As a result, this article focuses primarily on AOS and SQL Server.
 
 In general, the compute tiers scale out and should be set up in an N+1 fashion, meaning if you estimate three AOS, add a fourth AOS. The database tier should be set up in an Always On highly-available setup.
 
@@ -233,7 +233,7 @@ Additional services or components can be configured to extend an on-premises dep
 
 ## Next steps
 
-After you’ve completed the planning activities mentioned in this topic, you can begin the procedures listed in the [Onboard](on-premises-deployment-landing-page.md#onboard) section of the [On-premises deployment home page](on-premises-deployment-landing-page.md).
+After you’ve completed the planning activities mentioned in this article, you can begin the procedures listed in the [Onboard](on-premises-deployment-landing-page.md#onboard) section of the [On-premises deployment home page](on-premises-deployment-landing-page.md).
 
 Be sure to refer to the [On-premises deployment home page](on-premises-deployment-landing-page.md) throughout your implementation for more information about planning, deployment, maintenance, and troubleshooting.
 

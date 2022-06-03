@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure print management record-specific ER destinations
-description: This topic explains how to configure print management record specific-destinations for an Electronic reporting (ER) format that is configured to generate outbound documents.
+description: This article explains how to configure print management record specific-destinations for an Electronic reporting (ER) format that is configured to generate outbound documents.
 author: NickSelin
 ms.date: 08/03/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.21
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how a user in the System Administrator or Accounts Receivable Clerk role can perform the following tasks:
+This article explains how a user in the System Administrator or Accounts Receivable Clerk role can perform the following tasks:
 
 - Configure named [Electronic reporting (ER)](general-electronic-reporting.md) destinations for an ER solution that generates free text invoices.
 - Assign an ER destination to a single [print management](document-reporting-services.md) record.
