@@ -1,6 +1,6 @@
 ---
 title: Processing issues occur after a scale unit warehouse workload is installed
-description: This topic describes issues that can occur soon after a scale unit warehouse workload is installed, and gives advice for fixing them.
+description: This article describes issues that can occur soon after a scale unit warehouse workload is installed, and gives advice for fixing them.
 author: perlynne
 ms.date: 1/13/2022
 ms.topic: troubleshooting
@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.25
 
 # Processing issues occur after a scale unit warehouse workload is installed
 
-This topic describes issues that can occur soon after a scale unit warehouse workload is installed, and gives advice for fixing them.
+This article describes issues that can occur soon after a scale unit warehouse workload is installed, and gives advice for fixing them.
 
 ## Issue 1: Error after a load is released from a load planning workbench
 

@@ -1,10 +1,10 @@
 ---
 title: Engineering change management FAQ
-description: This topic provides answers to frequently asked questions about the engineering change management feature.
+description: This article provides answers to frequently asked questions about the engineering change management feature.
 author: t-benebo
 ms.date: 03/25/2021
 ms.topic: article
-# ms.search.form: [Operations AOT form name to tie this topic to]
+# ms.search.form: [Operations AOT form name to tie this article to]
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides answers to frequently asked questions about the engineering change management feature.
+This article provides answers to frequently asked questions about the engineering change management feature.
 
 ## Should I track the version in transactions?
 

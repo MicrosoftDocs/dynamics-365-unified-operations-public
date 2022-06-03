@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create work orders from maintenance requests
-description: This topic explains how to create a work order from a maintenance request in Asset Management.
+description: This article explains how to create a work order from a maintenance request in Asset Management.
 author: johanhoffmann
 ms.date: 10/01/2019
 ms.topic: article
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.5
  
 
 
-After you've created maintenance requests, you can easily convert them to work orders. This topic describes the quickest way to work with maintenance requests, update several maintenance requests at the same time, and then create a work order for several maintenance requests at the same time. On the **Active maintenance requests** or **My functional location maintenance requests** page, you can also work with one maintenance request at a time and convert one maintenance request to a work order.
+After you've created maintenance requests, you can easily convert them to work orders. This article describes the quickest way to work with maintenance requests, update several maintenance requests at the same time, and then create a work order for several maintenance requests at the same time. On the **Active maintenance requests** or **My functional location maintenance requests** page, you can also work with one maintenance request at a time and convert one maintenance request to a work order.
 
 > [!NOTE]
 > Every maintenance request can be related to only one work order. However, multiple maintenance requests can be included in one work order, even if the maintenance requests have different assets.

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Inventory on-hand mobile workspace
-description: This topic provides information about the Inventory on-hand mobile workspace. This workspace helps you gain mobile insights into reserved and available inventory anytime and anywhere.
+description: This article provides information about the Inventory on-hand mobile workspace. This workspace helps you gain mobile insights into reserved and available inventory anytime and anywhere.
 author: yufeihuang
 ms.date: 05/24/2022
 ms.topic: article
@@ -32,7 +32,7 @@ ms.search.validFrom: 2016-11-30
 [!include [banner](../includes/banner.md)]
 [!include [mobile app deprecation](../../fin-ops-core/dev-itpro/includes/mobile-app-deprecation-banner.md)]
 
-This topic provides information about the **Inventory on-hand** mobile workspace. This workspace helps you gain insights into reserved and available inventory anytime and anywhere.
+This article provides information about the **Inventory on-hand** mobile workspace. This workspace helps you gain insights into reserved and available inventory anytime and anywhere.
 
 This mobile workspace is intended to be used with the Finance and Operations (Dynamics 365) mobile app.
 

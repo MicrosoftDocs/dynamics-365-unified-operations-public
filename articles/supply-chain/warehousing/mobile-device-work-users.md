@@ -1,6 +1,6 @@
 ---
 title: Mobile device user accounts
-description: This topic describes how to set up and manage user accounts that enable workers to sign in and use the warehouse app.
+description: This article describes how to set up and manage user accounts that enable workers to sign in and use the warehouse app.
 author: Mirzaab
 ms.date: 09/15/2021
 ms.topic: article

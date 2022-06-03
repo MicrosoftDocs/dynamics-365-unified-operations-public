@@ -1,6 +1,6 @@
 ---
 title: Import inbound ASNs through the V3 data entity
-description: This topic explains how to manage the import of inbound advanced shipping notices (ASNs) through the Inbound ASN data entity.
+description: This article explains how to manage the import of inbound advanced shipping notices (ASNs) through the Inbound ASN data entity.
 author: GalynaFedorova
 ms.date: 05/11/2022
 ms.topic: article
@@ -21,7 +21,7 @@ Advanced shipping notices (ASNs) notify you about vendor deliveries. They help t
 
 ASNs can help warehouse workers learn what is arriving when. Therefore, they can prepare. In addition, warehouse workers can use ASNs to match the details of a shipment to the related purchase order that was previously created.
 
-This topic presents a collection of scenarios that show, through examples, how to work with ASN files.
+This article presents a collection of scenarios that show, through examples, how to work with ASN files.
 
 > [!IMPORTANT]
 > *Inbound ASN* import applies only to items that are enabled for advanced warehouse management (WMS). Before you receive an ASN, a purchase order must be registered in the system against the vendor who is sending that ASN.

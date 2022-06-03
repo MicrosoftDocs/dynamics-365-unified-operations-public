@@ -4,7 +4,7 @@ description: You can delete a released product and all its variants only if the 
 author: SmithaNataraj
 ms.date: 06/11/2021
 ms.topic: troubleshooting
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global

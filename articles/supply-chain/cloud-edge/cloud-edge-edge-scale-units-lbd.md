@@ -1,12 +1,12 @@
 ---
 title: Deploy edge scale units on custom hardware using LBD
-description: This topic explains how to provision on-premises edge scale units by using custom hardware and deployment that is based on local business data (LBD). 
+description: This article explains how to provision on-premises edge scale units by using custom hardware and deployment that is based on local business data (LBD). 
 author: Mirzaab
 ms.date: 01/24/2022
 ms.topic: article
 ms.prod: dynamics-365 
 ms.service:
-# ms.search.form: [Operations AOT form name to tie this topic to]
+# ms.search.form: [Operations AOT form name to tie this article to]
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
 ms.search.region: Global
@@ -23,7 +23,7 @@ Edge scale units play an important role in the distributed hybrid topology for s
 
 Edge scale units can be deployed by creating a local business data (LBD) [on-premises environment](../../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md) and then configuring it to function as a scale unit in your distributed hybrid topology for supply chain management. This is achieved by associating the on-premises LBD environment with a Supply Chain Management environment in the cloud, which has been configured to function as a hub.  
 
-This topic describes how to set up an on-premises LBD environment as an edge scale unit and then associate it with a hub.
+This article describes how to set up an on-premises LBD environment as an edge scale unit and then associate it with a hub.
 
 ## Infrastructure considerations
 
@@ -40,21 +40,21 @@ Here is an overview of the deployment steps.
 
 1. **Set up and deploy an LBD environment with an *empty* database.**
 
-    Use LCS to deploy the LBD environment with the latest topology and an empty database. For more information, see the [Setup and deploy an LBD environment with empty database](#set-up-deploy) section later in this topic. You must use Supply Chain Management version 10.0.21 or later across hub and scale unit environments.
+    Use LCS to deploy the LBD environment with the latest topology and an empty database. For more information, see the [Setup and deploy an LBD environment with empty database](#set-up-deploy) section later in this article. You must use Supply Chain Management version 10.0.21 or later across hub and scale unit environments.
 
 1. **Upload target packages into LBD project assets in LCS.**
 
-    Prepare application, platform, and customization packages that you use across the hub and the edge scale unit. For more information, see the [Upload target packages into LBD project assets in LCS](#upload-packages) section later in this topic.
+    Prepare application, platform, and customization packages that you use across the hub and the edge scale unit. For more information, see the [Upload target packages into LBD project assets in LCS](#upload-packages) section later in this article.
 
 1. **Service the LBD environment with the target packages.**
 
-    This step ensures that the same build and customizations are deployed on the hub and the spoke. For more information, see the [Service the LBD environment with target packages](#service-target-packages) section later in this topic.
+    This step ensures that the same build and customizations are deployed on the hub and the spoke. For more information, see the [Service the LBD environment with target packages](#service-target-packages) section later in this article.
 
 1. **Complete the scale unit configuration and workload assignment.**
 
-    For more information, see the [Assign your LBD edge scale unit to a hub](#assign-edge-to-hub) section later in this topic.
+    For more information, see the [Assign your LBD edge scale unit to a hub](#assign-edge-to-hub) section later in this article.
 
-The remaining sections of this topic provide more details about how to complete these steps.
+The remaining sections of this article provide more details about how to complete these steps.
 
 ## <a name="set-up-deploy"></a>Set up and deploy an LBD environment with an empty database
 
@@ -63,7 +63,7 @@ This step creates a functional LBD environment. However, the environment doesn't
 1. Follow the instructions in [Setup and deploy on-premises environments (Platform update 41 and later)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md). You must use Supply Chain Management version 10.0.21 or later across hub and scale unit environments. Additionally, you must use version 2.12.0 or later of the infrastructure scripts. 
 
     > [!IMPORTANT]
-    > Read the rest of this section **before** you complete the steps in that topic.
+    > Read the rest of this section **before** you complete the steps in that article.
 
 1. Before you describe your configuration in the infrastructure\\ConfigTemplate.xml file, run the following script:
 

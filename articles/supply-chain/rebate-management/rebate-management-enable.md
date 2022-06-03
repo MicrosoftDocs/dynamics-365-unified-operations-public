@@ -1,6 +1,6 @@
 ---
 title: Turn on the Rebate management module for your system
-description: This topic describes how to turn on the Rebate management module for your system.
+description: This article describes how to turn on the Rebate management module for your system.
 author: sherry-zheng
 ms.date: 08/02/2021
 ms.topic: article

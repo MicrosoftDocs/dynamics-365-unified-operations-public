@@ -2,7 +2,7 @@
 # required metadata
 
 title: Maintenance downtime activities
-description: This topic explains how maintenance downtime is used to get an overview of the capacity required to carry out maintenance jobs on specific assets during a specific period.
+description: This article explains how maintenance downtime is used to get an overview of the capacity required to carry out maintenance jobs on specific assets during a specific period.
 author: johanhoffmann
 ms.date: 08/27/2019
 ms.topic: article

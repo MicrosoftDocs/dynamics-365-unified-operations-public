@@ -1,6 +1,6 @@
 ---
 title: Inventory costing FAQ
-description: This topic answers some frequently asked questions about inventory costing in Microsoft Dynamics 365 Supply Chain Management.
+description: This article answers some frequently asked questions about inventory costing in Microsoft Dynamics 365 Supply Chain Management.
 author: rachel-profitt
 ms.date: 05/03/2022
 ms.topic: article
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.27
 
 [!include [banner](../includes/banner.md)]
 
-This topic answers some frequently asked questions about inventory costing in Microsoft Dynamics 365 Supply Chain Management.
+This article answers some frequently asked questions about inventory costing in Microsoft Dynamics 365 Supply Chain Management.
 
 ## Inventory close, adjustments, and recalculation
 
@@ -354,7 +354,7 @@ We recommend that you frequently monitor and correct negative inventory when you
 
 ### Do I have to create a new item if my inventory has gone negative and I use moving average?
 
-No. If your organization allows inventory to go physically negative, and you're using moving average as your inventory model, the system will use the fallback cost sequence that is assigned on the **Inventory and warehouse management parameters** page to determine how the cost will be assigned to your issues. In general, we recommend that you avoid allowing your inventory to go physically negative. For more information, see the other questions in the [Negative inventory](#negative-inventory) section of this topic.
+No. If your organization allows inventory to go physically negative, and you're using moving average as your inventory model, the system will use the fallback cost sequence that is assigned on the **Inventory and warehouse management parameters** page to determine how the cost will be assigned to your issues. In general, we recommend that you avoid allowing your inventory to go physically negative. For more information, see the other questions in the [Negative inventory](#negative-inventory) section of this article.
 
 ## Not-stocked products
 
@@ -428,7 +428,7 @@ When there is a price difference between the posting of a physical update and a 
 
 ### When I use moving average, what happens if there is an issue before the receipt?
 
-Typically, there might be an issue before the receipt either because you allow physical negative inventory for the item model group or because the issue is backdated. For more information, see the [Negative inventory](#negative-inventory) section of this topic.
+Typically, there might be an issue before the receipt either because you allow physical negative inventory for the item model group or because the issue is backdated. For more information, see the [Negative inventory](#negative-inventory) section of this article.
 
 If you're backdating transactions, we recommend that you carefully consider your business process and operations to determine whether there is a way to avoid this scenario. If you backdate a transaction for an item that uses moving average, the system will assign the current moving average to the transaction. Later issues aren't adjusted. For more information about moving average with backdated transactions, see [Moving average](moving-average.md).
 

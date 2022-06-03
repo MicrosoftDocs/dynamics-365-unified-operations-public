@@ -2,7 +2,7 @@
 # required metadata
 
 title: Move, replace, and install assets
-description: This topic explains how to move, replace, and install assets in Asset Management.
+description: This article explains how to move, replace, and install assets in Asset Management.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
  
 
-This topic explains how to move, replace, and install assets in Asset Management. You can create individual assets that have no relations to other assets, or you can create an asset structure that includes a parent asset (top-level asset) and related child assets (sub-assets). In Asset Management, there are three approaches to moving and changing the location of an asset:
+This article explains how to move, replace, and install assets in Asset Management. You can create individual assets that have no relations to other assets, or you can create an asset structure that includes a parent asset (top-level asset) and related child assets (sub-assets). In Asset Management, there are three approaches to moving and changing the location of an asset:
 
 - **Move** – Move an asset either to another asset structure or to another location in the same asset structure.
 - **Replace** – Temporarily remove an asset from an asset structure so that it can be repaired or refurbished, and then add the refurbished asset back to the asset structure later. Alternatively, permanently replace a used asset with a new asset.
@@ -47,7 +47,7 @@ This topic explains how to move, replace, and install assets in Asset Management
 Use the **Move asset** function to move an asset either to another asset structure or to another location in the same asset structure. You can also move an asset out of an asset structure so that it becomes a standalone asset that has no structure relations.
 
 > [!NOTE]
-> Don't use this function if assets are being repaired or temporarily replaced. Instead, use the **Replace asset** functionality that is described later in this topic.
+> Don't use this function if assets are being repaired or temporarily replaced. Instead, use the **Replace asset** functionality that is described later in this article.
 
 1. Select **Asset management** \> **Common** \> **Assets** \> **All assets** or **Active assets**.
 2. In the list, select the asset to move. If the asset has child assets, you also move those assets.

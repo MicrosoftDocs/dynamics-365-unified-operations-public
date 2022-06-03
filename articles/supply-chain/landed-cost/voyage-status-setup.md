@@ -2,7 +2,7 @@
 # required metadata
 
 title: Voyage status setup
-description: This topic describes how to establish the status values that users can assign to voyages.
+description: This article describes how to establish the status values that users can assign to voyages.
 author: Weijiesa
 ms.date: 01/13/2021
 ms.topic: article
@@ -17,7 +17,7 @@ audience: Application User
 ms.reviewer: kamaybac
 
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: weijiesa

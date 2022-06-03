@@ -2,7 +2,7 @@
 # required metadata
 
 title: Maintenance job types, categories, variants, trades, and checklists
-description: This topic describes maintenance job type categories and maintenance job types, maintenance job type variants, maintenance job trades, and maintenance checklists in Asset Management.
+description: This article describes maintenance job type categories and maintenance job types, maintenance job type variants, maintenance job trades, and maintenance checklists in Asset Management.
 author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article

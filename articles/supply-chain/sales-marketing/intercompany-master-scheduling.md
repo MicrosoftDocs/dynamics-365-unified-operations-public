@@ -1,6 +1,6 @@
 ---
 title: Intercompany master scheduling
-description: This topic explains intercompany master scheduling
+description: This article explains intercompany master scheduling
 author: Henrikan
 ms.date: 09/01/2021
 ms.topic: article

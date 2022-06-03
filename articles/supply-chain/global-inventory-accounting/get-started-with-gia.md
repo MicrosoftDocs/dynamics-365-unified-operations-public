@@ -1,10 +1,10 @@
 ---
 title: Get started with Global Inventory Accounting
-description: This topic describes how to get started with Global Inventory Accounting.
+description: This article describes how to get started with Global Inventory Accounting.
 author: JennySong-SH
 ms.date: 06/18/2021
 ms.topic: article
-# ms.search.form: [Operations AOT form name to tie this topic to]
+# ms.search.form: [Operations AOT form name to tie this article to]
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: "intro-internal"

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Work order report
-description: This topic describes work order reports in Asset Management.
+description: This article describes work order reports in Asset Management.
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article

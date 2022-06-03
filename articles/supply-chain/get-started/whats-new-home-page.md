@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Supply Chain Management 
-description: This topic points to topics that describe the new and changed features in each release of Dynamics 365 Supply Chain Management.
+description: This article points to articles that describe the new and changed features in each release of Dynamics 365 Supply Chain Management.
 author: kamaybac
 ms.date: 05/27/2022
 ms.topic: article
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.28
 
 ## Releases of Dynamics 365 Supply Chain Management
 
-To see what's new or changed in each release of Dynamics 365 Supply Chain Management, see the following topics.
+To see what's new or changed in each release of Dynamics 365 Supply Chain Management, see the following articles.
 
 | Version | Build number | Auto-update availability | Learn more |
 |---|---|---|---|
@@ -63,7 +63,7 @@ To see what's new or changed in each release of Dynamics 365 Supply Chain Manage
 
 ## Releases before November 2019
 
-To see what's new or changed in releases before November 2019, see the following topics.
+To see what's new or changed in releases before November 2019, see the following articles.
 
 | Release | Version | Build number | Availability | Learn more |
 |---|---|---|---|---|

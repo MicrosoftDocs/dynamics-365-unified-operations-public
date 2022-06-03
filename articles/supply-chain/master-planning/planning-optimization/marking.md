@@ -2,7 +2,7 @@
 # required metadata
 
 title: Inventory marking with Planning Optimization
-description: This topic provides information about the options that are available for marking inventory in firmed orders when you use Planning Optimization.
+description: This article provides information about the options that are available for marking inventory in firmed orders when you use Planning Optimization.
 author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 10.0.13
 
 [!include [banner](../../includes/banner.md)]
 
-This topic provides information about the options that are available for marking inventory in firmed orders when you use Planning Optimization.
+This article provides information about the options that are available for marking inventory in firmed orders when you use Planning Optimization.
 
 *Marking* is used to link supply and demand. It resembles *pegging*, which indicates how master planning expects to cover demand. From a planning point of view, the main difference is that marking is more permanent than pegging.
 

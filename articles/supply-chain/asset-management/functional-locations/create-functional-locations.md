@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create functional locations
-description: This topic explains how to create a functional location in Asset Management.
+description: This article explains how to create a functional location in Asset Management.
 author: johanhoffmann
 ms.date: 06/25/2019
 ms.topic: article
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
  
 
-This topic explains how to create a functional location in Asset Management.
+This article explains how to create a functional location in Asset Management.
 
 When you create a functional location structure, be aware once you have created a functional location, you cannot move it from the original location. This means that you should carefully consider the structure of your functional locations before you start creating them in Asset Management. If you regret a functional location, you can delete it, provided that it has not yet been taken into use.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Asset loans
-description: This topic describes how to register loan assets in Asset Management.
+description: This article describes how to register loan assets in Asset Management.
 author: johanhoffmann
 ms.date: 10/01/2019
 ms.topic: article

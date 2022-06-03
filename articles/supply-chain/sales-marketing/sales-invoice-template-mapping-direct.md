@@ -2,7 +2,7 @@
 # required metadata
 
 title: Synchronize sales invoice headers and lines directly from Supply Chain Management to Sales
-description: This topic discusses the templates and underlying tasks that are used to synchronize sales invoice headers and lines directly from Dynamics 365 Supply Chain Management to Dynamics 365 Sales. 
+description: This article discusses the templates and underlying tasks that are used to synchronize sales invoice headers and lines directly from Dynamics 365 Supply Chain Management to Dynamics 365 Sales. 
 author: Henrikan
 ms.date: 10/26/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.search.validFrom: 2017-07-8
 
 [!include [banner](../includes/banner.md)]
 
-This topic discusses the templates and underlying tasks that are used to synchronize sales invoice headers and lines directly from Dynamics 365 Supply Chain Management to Dynamics 365 Sales.
+This article discusses the templates and underlying tasks that are used to synchronize sales invoice headers and lines directly from Dynamics 365 Supply Chain Management to Dynamics 365 Sales.
 
 ## Data flow in Prospect to cash
 
@@ -128,7 +128,7 @@ The following illustrations show an example of a template mapping in Data integr
 
 
 
-## Related topics
+## Related articles
 
 [Prospect to cash](prospect-to-cash.md)
 

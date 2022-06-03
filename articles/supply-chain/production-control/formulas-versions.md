@@ -2,7 +2,7 @@
 # required metadata
 
 title: Formulas and formula versions
-description: This topic provides information about formulas and formula versions. A formula defines the materials, ingredients, and outcomes of a specific process in process manufacturing. Formulas are used to plan and produce products in process manufacturing.
+description: This article provides information about formulas and formula versions. A formula defines the materials, ingredients, and outcomes of a specific process in process manufacturing. Formulas are used to plan and produce products in process manufacturing.
 author: johanhoffmann 
 ms.date: 09/12/2017
 ms.topic: article

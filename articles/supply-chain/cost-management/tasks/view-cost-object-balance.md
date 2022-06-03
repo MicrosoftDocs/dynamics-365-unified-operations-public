@@ -2,7 +2,7 @@
 # required metadata 
  
 title: View cost object balance
-description: This topic describes how to view the cost object balance 
+description: This article describes how to view the cost object balance 
 author: JennySong-SH
 ms.date: 08/29/2018
 ms.topic: business-process 

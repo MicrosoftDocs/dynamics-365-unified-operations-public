@@ -2,7 +2,7 @@
 # required metadata
 
 title: Reserve inventory quantities
-description: This topic describes the different options that are available for reserving inventory.
+description: This article describes the different options that are available for reserving inventory.
 author: yufeihuang
 ms.date: 06/20/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the different options that are available for reserving inventory.
+This article describes the different options that are available for reserving inventory.
 
 You can automatically reserve inventory quantities for a specific sales order. This means that reserved inventory cannot be withdrawn from the warehouse for other orders unless the inventory reservation, or part of the inventory reservation, is canceled.
 

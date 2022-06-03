@@ -1,6 +1,6 @@
 ---
 title: Voyage creation entities
-description: This topic provides information about voyage creation data entities, which group the data entities that are required to create a working voyage.
+description: This article provides information about voyage creation data entities, which group the data entities that are required to create a working voyage.
 author: yufeihuang
 ms.date: 05/27/2022
 ms.topic: article
