@@ -14,16 +14,9 @@ ms.search.validFrom: 2021-06-10
 
 ---
 
-# Change data in Azure Data Lake (Preview)
+# Change data in Azure Data Lake 
 
-[!include [banner](../includes/banner.md)]
-
-> [!NOTE]
-> Preview features aren't complete. However, they are made available on a preview basis, so that customers can get early access and provide feedback. Preview features might have limited or restricted functionality, they aren't meant for production use, and they might be available only in selected geographic areas.
->
-> By enabling preview features, you agree to the [Supplemental Terms of Use](../../fin-ops/get-started/public-preview-terms.md).
-
-When you enable the **Enable near real-time data changes** preview feature, data is inserted, updated, and deleted in your data lake in near-real time. As data changes in your Finance and Operations environment, the same data is updated in the data lake within a few minutes. You also get the data changes in a separate **Change feed** folder. 
+When you select the **Enable near real-time data changes** option, data is inserted, updated, and deleted in your data lake in near-real time. As data changes in your Finance and Operations environment, the same data is updated in the data lake within a few minutes. You also get the data changes in a separate **Change feed** folder. 
 
 Change data in a data lake lets you build near-real-time data pipelines that react to data changes in Finance and Operations apps. The **Change feed** folder in the data lake contains every data change in Finance and Operations apps. This folder is automatically created and maintained by the **Export to Data Lake** feature. 
 
@@ -57,7 +50,7 @@ The following illustration shows how change feeds work in Finance and Operations
 
 ## Exploring the Change feed folder in your data lake
 
-When you enable the **Enable near real-time data changes** preview feature, change feeds are automatically added when you add tables to a data lake.
+When you enable the **Enable near real-time data changes** feature, change feeds are automatically added when you add tables to a data lake.
 
 When you add a table to a data lake, or when you activate a table that has been inactivated, the system makes an initial copy of the data in the data lake. At this point, the table's status is shown as **Initializing**. When the initial copy is completed, the system changes the status to **Running**. When the table is in **Running** status, changes in the Finance and Operations database are reflected in the data lake, and change feeds are added. The **Change feed** folder might be empty if there have been no changes to the table since it was initialized. 
 
