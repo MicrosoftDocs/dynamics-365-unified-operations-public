@@ -32,11 +32,13 @@ ms.dyn365.ops.version: 10.0.27
 The traceability system has been operational since July 8. 
 Its action begins from the moment of importation of imported goods into the territory of the Russian Federation, and ends with the disposal of such goods: sale to an individual, recycling, transfer to production, export.
 
-# Set up Report about operations with traceble goods
+# Set up and generate Report about operations with traceble goods
 These tasks will guide you through setting Microsoft Dynamics 365 Finance environment to generate the electronic file for the Report about operations with traceble goods for Russian.
 - [Import ER configurations](#import-er).
 - [Set up application-specific parameters for VAT declaration fields](#set-up).
 - [Download and import the data package for electronic messages](#import-em). 
+- [Set up category hierarchy](#cat-hier)
+- [Generate a Traceable goods operation report in electronic format](#gen-report)
 
 ## <a name="import-er"></a>Import ER configurations
 
@@ -64,7 +66,7 @@ Follow these steps to define which operations are related with Vendor accounts/V
     |---|---|
     | Lookup result | Select the value of operation for every Lookup (Vendor accounts/Vendor posting profile/Vendor groups, Customer accounts/ Customer posting profile/ Customer, Inventory journal names, Fixed asset reason codes) if needed.|
     | Name | Select Vendor accounts/Vendor posting profile/Vendor groups, Customer accounts/ Customer posting profile/ Customer, Inventory journal names, Fixed asset reason codes|
-    |---|---|
+
     
   5. Create additional two lines with ‘00’ operation for *Blank* and *Not blank* name value. This prevents potential errors when generating the report. 
   6. In the **State** field, change the value to **Completed**.
@@ -86,6 +88,45 @@ Electronic messaging (EM) functionality is provided to maintain the different pr
 8. Go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, and validate the electronic message processing that you imported (**Traceable goods operations 5.02**).
 
 For more information about how you can use the data management framework, see [Data management](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).
+
+## <a name="cat-hier"></a>Set up category hierarchy
+
+Run this setup if the category hierarchy was not set up earlier. 
+Create a new category hierarchy and relate this category with **Traceability hierarchy category** hierarchy type (see [Create a hierarchy of product classification](../../fin-ops-core//articles/supply-chain/pim/tasks/create-hierarchy-product-classification.md)   then classify traceable products with this category (see [Classify a product using category hierarchies](../fin-ops-core///articles/supply-chain/pim/tasks/classify-product-category-hierarchies.md)). 
+
+## <a name="gen-report"></a>Generate a Traceable goods operation report in electronic format
+
+Most operation codes are filled out in the report based on setting application-specific parameters. Operations codes '09' and '10' are filled out based on inventory transactions with **Counting** value in the **Reference** field and operation codes '01' and '12'  are filled out based on inventory transactions with **Production line** value in the **Reference** field.
+
+> [!NOTE]
+> You should sell a fixed asset only via free text invoice. 
+> Use different Invent journal names for receipt and write off of items.
+
+1.	To generate the **Traceable goods operation report** file, go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**.
+2.	In the left pane, select the **ОтчетОперПрТов 5.02 report** format to generate.
+3.	On the **Messages** FastTab, click New.
+4.	Select the message line that is created, and then enter a description, and specify the start date and end date for the report. The end date is treated as the base date for financial reports.
+5.	On the **Messages** FastTab, select **Update status** and In the **Run processing** dialog box, click OK.
+6.	Validate that the message status is changed to **Ready to generate**.
+7.	On the **Messages** FastTab, select **Generate report**.
+8.	In the **Electronic reporting parameters** dialog box, enter the following information and then click OK:
+
+| Field | Description |
+|---|---|
+|Signatory type | Specify who signs the profit tax declaration. Select either **Taxpayer** or **Representative**|
+|First name, Middle name, Last name | Enter the full name of the signatory |
+|Representative document | If you selected Representative as the signatory type, enter the document that confirms the representative's authority.|
+|Correction number|Enter the number of the correction|
+|Date from, Date to|Enter the reporting date, if you didn't specify it in step 6|
+
+
+> [!NOTE]. You can select Preview Traceable Goods operations 5.02 or Generate Traceable Goods operations 5.02 in the Action field. If Preview Traceable Goods operations 5.02 is selected, the system generates  excel file but status is not updated.
+> When the report is generated, the status of the message is changed to Generated. If an error occurs while the report is generated, the status of the message is changed to Technical error.
+
+9.	On the **Action log** FastTab, review all the user actions for the current message.
+10.	To review the report that is generated, select **Attachments** (the paper clip symbol) in the upper-right corner of the page. Then select **Open** to open the file.
+
+
 
     
 
