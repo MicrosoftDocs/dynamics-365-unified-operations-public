@@ -91,12 +91,12 @@ For more information about how you can use the data management framework, see [D
 
 ## <a name="cat-hier-fin-reason-fa"></a>Set up category hierarchy, financinal reasons and fixed asset for traceable goods
 
-Run this setup if the category hierarchy was not set up earlier. 
+- Run setup of a category hierarchy if the category hierarchy was not set up earlier. 
 Create a new category hierarchy and relate this category with **Traceability hierarchy category** hierarchy type (see [Create a hierarchy of product classification](../../supply-chain/pim/tasks/create-hierarchy-product-classification.md)   then classify traceable products with this category (see [Classify a product using category hierarchies](../../supply-chain/pim/tasks/classify-product-category-hierarchies.md)). 
 
-Set up financial reasons for fixed asset write-off transactions and use these reasons in fixed asset journal lines and also in a free text invoice when selling a fixed asset.
+- Set up financial reasons for fixed asset write-off transactions and use these reasons in fixed asset journal lines and also in a free text invoice when selling a fixed asset.
 
-Set 
+- For traceable fixed assets the **Traceable number** field (**Purchase/Sale** FastTab) should be filled out. This field is populated  automaticaly if GTD dimension is set when purchasing a fixed asset via the purchase order and the item in the puechase order line is associated with a category hierarchy with **Traceability hierarchy category** hierarchy type. You can set a value in the **Traceable number** field manually.  
 
 ## <a name="gen-report"></a>Generate a Traceable goods operation report in electronic format
 
