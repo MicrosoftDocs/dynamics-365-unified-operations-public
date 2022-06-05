@@ -25,15 +25,15 @@ ms.dyn365.ops.version: 10.0.27
 
 ---
 
-# Report about operations with traceble goods
+# Report about operations with traceable goods
 
 [!include [banner](../includes/banner.md)]
 
 Goods traceability is a system for recording and storing information about goods imported from other countries. The goal is to control imported goods from the importer to the buyer, i.e. reduce the share of illegally imported goods. 
 The action of this system begins from the moment of importation of goods into the territory of the Russian Federation, and ends with the disposal of such goods: sale to an individual, recycling, transfer to production, export.
 
-# Set up and generate Report about operations with traceble goods
-These tasks will guide you through setting Microsoft Dynamics 365 Finance environment to generate the electronic file for the Report about operations with traceble goods for Russian.
+# Set up and generate Report about operations with traceable goods
+These tasks will guide you through setting Microsoft Dynamics 365 Finance environment to generate the electronic file for the Report about operations with traceable goods for Russian.
 - [Import ER configurations](#import-er).
 - [Set up application-specific parameters for VAT declaration fields](#set-up).
 - [Download and import the data package for electronic messages](#import-em). 
@@ -50,7 +50,7 @@ Open the Electronic reporting workspace, and import the latest versions of these
 
 For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
-## <a name="set-up"></a>Set up application-specific parameters for Report about operations with traceble goods
+## <a name="set-up"></a>Set up application-specific parameters for Report about operations with traceable goods
 
 > [!NOTE]
 > We recommend that you enable the **Use application specific parameters from previous versions of ER formats** feature in the **Feature management** workspace. When this feature is enabled, parameters that are configured for an earlier version of an ER format automatically become applicable for a later version of the same format. If this feature isn't enabled, you must explicitly configure application-specific parameters for each format version. This feature is available in the **Feature management** workspace as of Finance version 10.0.23. For more information about how to set up the parameters of an ER format for each legal entity, see [Set up the parameters of an ER format per legal entity](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
