@@ -29,8 +29,8 @@ ms.dyn365.ops.version: 10.0.27
 
 [!include [banner](../includes/banner.md)]
 
-The traceability system has been operational since July 8. 
-Its action begins from the moment of importation of imported goods into the territory of the Russian Federation, and ends with the disposal of such goods: sale to an individual, recycling, transfer to production, export.
+Goods traceability is a system for recording and storing information about goods imported from other countries. The goal is to control imported goods from the importer to the buyer, i.e. reduce the share of illegally imported goods. 
+The action of this system begins from the moment of importation of goods into the territory of the Russian Federation, and ends with the disposal of such goods: sale to an individual, recycling, transfer to production, export.
 
 # Set up and generate Report about operations with traceble goods
 These tasks will guide you through setting Microsoft Dynamics 365 Finance environment to generate the electronic file for the Report about operations with traceble goods for Russian.
