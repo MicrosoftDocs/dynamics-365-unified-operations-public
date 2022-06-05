@@ -92,7 +92,7 @@ For more information about how you can use the data management framework, see [D
 ## <a name="cat-hier"></a>Set up category hierarchy
 
 Run this setup if the category hierarchy was not set up earlier. 
-Create a new category hierarchy and relate this category with **Traceability hierarchy category** hierarchy type (see [Create a hierarchy of product classification](../../fin-ops-core//articles/supply-chain/pim/tasks/create-hierarchy-product-classification.md)   then classify traceable products with this category (see [Classify a product using category hierarchies](../fin-ops-core///articles/supply-chain/pim/tasks/classify-product-category-hierarchies.md)). 
+Create a new category hierarchy and relate this category with **Traceability hierarchy category** hierarchy type (see [Create a hierarchy of product classification](../../supply-chain/pim/tasks/create-hierarchy-product-classification.md)   then classify traceable products with this category (see [Classify a product using category hierarchies](../../supply-chain/pim/tasks/classify-product-category-hierarchies.md)). 
 
 ## <a name="gen-report"></a>Generate a Traceable goods operation report in electronic format
 
