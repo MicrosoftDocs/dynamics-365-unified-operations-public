@@ -37,7 +37,7 @@ These tasks will guide you through setting Microsoft Dynamics 365 Finance enviro
 - [Import ER configurations](#import-er).
 - [Set up application-specific parameters for VAT declaration fields](#set-up).
 - [Download and import the data package for electronic messages](#import-em). 
-- [Set up category hierarchy](#cat-hier)
+- [Set up category hierarchy, financinal reasons and fixed asset for traceable goods](#cat-hier-fin-reason-fa)
 - [Generate a Traceable goods operation report in electronic format](#gen-report)
 
 ## <a name="import-er"></a>Import ER configurations
@@ -58,7 +58,7 @@ For more information, see [Download ER configurations from the Global repository
 Follow these steps to define which operations are related with Vendor accounts/Vendor posting profile/Vendor groups, Customer accounts/ Customer posting profile/ Customer, Inventory journal names, Fixed asset reason codes for generation Traceable goods operation report.
 
 1.	Go to **Workspaces** \> **Electronic reporting**, and select **Reporting configurations**.
-2.	Select the **Traceable goods operations 5.02 XML (RU) configuration**, and then, on the Action Pane, select **Configurations \> Application specific parameters setup**.
+2.	Select the **Traceable goods operations 5.02 XML (RU)** configuration, and then, on the Action Pane, select **Configurations \> Application specific parameters setup**.
 3.	On the **Application specific parameters** page, on the **Lookups** FastTab, select **$VendorsLookup**/ **$VendPostingProfilesLookup**/ **$VendGroupsLookup** or **$CustomersLookup**/ **$CustGroupsLookup**/ **$CustPostingProfilesLookup** or **$InventoryJournalNamesLookup** or **$FixedAssetReasonCodeLookup**.
 4.	On the **Conditions** FastTab, set the following fields to associate the **Vendor accounts**/ **Vendor posting profile**/ **Vendor groups**, **Customer accounts**/ **Customer posting profile**/ **Customer groups**, **Inventory journal names**, **Fixed asset reason codes** and report operations.
 
@@ -89,18 +89,22 @@ Electronic messaging (EM) functionality is provided to maintain the different pr
 
 For more information about how you can use the data management framework, see [Data management](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).
 
-## <a name="cat-hier"></a>Set up category hierarchy
+## <a name="cat-hier-fin-reason-fa"></a>Set up category hierarchy, financinal reasons and fixed asset for traceable goods
 
 Run this setup if the category hierarchy was not set up earlier. 
 Create a new category hierarchy and relate this category with **Traceability hierarchy category** hierarchy type (see [Create a hierarchy of product classification](../../supply-chain/pim/tasks/create-hierarchy-product-classification.md)   then classify traceable products with this category (see [Classify a product using category hierarchies](../../supply-chain/pim/tasks/classify-product-category-hierarchies.md)). 
+
+Set up financial reasons for fixed asset write-off transactions and use these reasons in fixed asset journal lines and also in a free text invoice when selling a fixed asset.
+
+Set 
 
 ## <a name="gen-report"></a>Generate a Traceable goods operation report in electronic format
 
 Most operation codes are filled out in the report based on setting application-specific parameters. Operations codes '09' and '10' are filled out based on inventory transactions with **Counting** value in the **Reference** field and operation codes '01' and '12'  are filled out based on inventory transactions with **Production line** value in the **Reference** field.
 
 > [!NOTE]
-> You should sell a fixed asset only via free text invoice. 
-> Use different Invent journal names for receipt and write off of items.
+> - You should sell a fixed asset only via free text invoice. 
+> - Use different Invent journal names for receipt and write off of items.
 
 1.	To generate the **Traceable goods operation report** file, go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**.
 2.	In the left pane, select the **ОтчетОперПрТов 5.02 report** format to generate.
@@ -120,11 +124,13 @@ Most operation codes are filled out in the report based on setting application-s
 |Date from, Date to|Enter the reporting date, if you didn't specify it in step 6|
 
 
-> [!NOTE]. You can select Preview Traceable Goods operations 5.02 or Generate Traceable Goods operations 5.02 in the Action field. If Preview Traceable Goods operations 5.02 is selected, the system generates  excel file but status is not updated.
-> When the report is generated, the status of the message is changed to Generated. If an error occurs while the report is generated, the status of the message is changed to Technical error.
+> [!NOTE]. You can select **Preview Traceable Goods operations 5.02** or **Generate Traceable Goods operations 5.02** in the **Action** field. If **Preview Traceable Goods operations 5.02** is selected, the system generates  excel file but status is not updated.
+> When the report is generated, the status of the message is changed to **Generated**. If an error occurs while the report is generated, the status of the message is changed to **Technical error**.
 
 9.	On the **Action log** FastTab, review all the user actions for the current message.
 10.	To review the report that is generated, select **Attachments** (the paper clip symbol) in the upper-right corner of the page. Then select **Open** to open the file.
+
+[!INCLUDEfooter-include]
 
 
 
