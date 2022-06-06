@@ -114,10 +114,10 @@ The tax amount is rounded per sales tax code:
 
 | Line number | Sales tax code | Amount origin | Sales tax amount |
 | ----------- | -------------- | ------------- | ---------------- |
-| 1           | Code 1         | 42.42         | 4.24             |
+| 1           | Code 1         | 42.42         | 4.25             |
 | 1           | Code 2         | 42.42         | 4.25             |
 | 2           | Code 1         | 42.42         | 4.24             |
-| 2           | Code 2         | 42.42         | 4.25             |
+| 2           | Code 2         | 42.42         | 4.24             |
 
 The tax base amount is calculated per document:
 
@@ -135,8 +135,8 @@ The tax amount is rounded per sales tax code:
 
 The rounded tax amount is allocated to each line per sales tax code:
 
-- Allocate the rounded tax amount for sales tax code 1 (8.49) to line 1 (4.24) and line 2 (4.25).
-- Allocate the rounded tax amount for sales tax code 2 (8.49) to line 1 (4.24) and line 2 (4.25).
+- Allocate the rounded tax amount for sales tax code 1 (8.49) to line 1 (4.25) and line 2 (4.24).
+- Allocate the rounded tax amount for sales tax code 2 (8.49) to line 1 (4.25) and line 2 (4.24).
 
 ## Example 3
 
@@ -196,10 +196,10 @@ The tax amount is rounded per sales tax code:
 
 | Line number | Sales tax code | Amount origin | Sales tax amount |
 | ----------- | -------------- | ------------- | ---------------- |
-| 1           | Code 1         | 42.42         | 4.71             |
+| 1           | Code 1         | 42.42         | 4.72             |
 | 1           | Code 2         | 42.42         | 4.72             |
 | 2           | Code 1         | 42.42         | 4.71             |
-| 2           | Code 2         | 42.42         | 4.72             |
+| 2           | Code 2         | 42.42         | 4.71             |
 
 The tax base amount is calculated per document:
 
@@ -217,8 +217,8 @@ The tax amount is rounded per sales tax code:
 
 The rounded tax amount is allocated to each line per sales tax code:
 
-- Allocate the tax amount for sales tax code 1 (9.43) to line 1 (4.71) and line 2 (4.72).
-- Allocate the tax amount for sales tax code 2 (9.43) to line 1 (4.71) and line 2 (4.72).
+- Allocate the tax amount for sales tax code 1 (9.43) to line 1 (4.72) and line 2 (4.71).
+- Allocate the tax amount for sales tax code 2 (9.43) to line 1 (4.72) and line 2 (4.71).
 
 ## Example 5
 
