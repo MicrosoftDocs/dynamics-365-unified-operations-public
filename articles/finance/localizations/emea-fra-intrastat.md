@@ -2,7 +2,7 @@
 # required metadata
 
 title: French Intrastat
-description: This topic contains information about Intrastat declaration in France.
+description: This article contains information about Intrastat declaration in France.
 author: anasyash
 ms.date: 07/9/2021
 ms.topic: article
