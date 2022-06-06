@@ -167,7 +167,7 @@ Follow these steps to enter additional invoice data.
     ![Value entered on the Electronic document properties page.](media/e-invoicing-pol-values.jpg)
     
 > [!NOTE]
-> Similarly, you can enter additional data for Project invoices in **Accounts payable** \> **Inquiries and reports** \> **Invoice** \> **Invoice journal**.
+> Similarly, you can enter additional data for Project invoices in **Project management and accounting** \> **Project Invoices** \> **Project invoicei**.
 
 ### Issue electronic invoices
 
