@@ -155,19 +155,19 @@ You can add to invoices any additional arbitrary data which will be placed in a 
 
 #### Enter additional data
 
-Follow these steps to register invoice types.
+Follow these steps to enter additional invoice data.
 
 1. Go to **Accounts payable** \> **Inquiries and reports** \> **Invoice** \> **Invoice journal**.
 2. Select an invoice in the list, and then select **Electronic document properties**.
 
-    ![Electronic document properties button.](media/emea-ita-invoice-type-in-invoice.jpg)
+    ![Electronic document properties button.](media/e-invoicing-pol-properties.jpg)
 
-3. Enter a required invoice type. The value of the **Value** field for the invoice type overrides any automatically created codes when XML files are generated for electronic invoices.
+3. Enter a required value. This value will be used in the *Wartosc* field in the resulting XML file of an e-invoice.
 
-    ![Invoice type value entered on the Electronic document properties page.](media/emea-ita-invoice-type-value.jpg)
+    ![Value entered on the Electronic document properties page.](media/e-invoicing-pol-values.jpg)
     
 > [!NOTE]
-> Similar Project.
+> Similarly, you can enter additional data for Project invoices in **Accounts payable** \> **Inquiries and reports** \> **Invoice** \> **Invoice journal**.
 
 ### Issue electronic invoices
 
