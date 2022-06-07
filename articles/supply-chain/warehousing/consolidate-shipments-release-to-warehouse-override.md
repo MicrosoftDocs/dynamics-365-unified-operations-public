@@ -2,7 +2,7 @@
 # required metadata
 
 title: Consolidate shipments when the shipment consolidation policy is overridden
-description: This topic presents a scenario where one or more sales lines must be manually released to the warehouse from the Release to warehouse page, and the system-defined shipment consolidation policy must be overridden before the release.
+description: This article presents a scenario where one or more sales lines must be manually released to the warehouse from the Release to warehouse page, and the system-defined shipment consolidation policy must be overridden before the release.
 author: Mirzaab
 ms.date: 05/12/2020
 ms.topic: article
@@ -29,13 +29,13 @@ ms.dyn365.ops.version: 10.0.6
 
 [!include [banner](../includes/banner.md)]
 
-This topic presents a scenario where one or more sales lines must be manually released to the warehouse from the **Release to warehouse** page, and the system-defined shipment consolidation policy must be overridden before the release. An override of the shipment consolidation policy might be required if, for example, an order that isn't usually consolidated with open shipments must be consolidated with open shipments.
+This article presents a scenario where one or more sales lines must be manually released to the warehouse from the **Release to warehouse** page, and the system-defined shipment consolidation policy must be overridden before the release. An override of the shipment consolidation policy might be required if, for example, an order that isn't usually consolidated with open shipments must be consolidated with open shipments.
 
 During the scenario, you will create a set of sales orders and then override the default shipment consolidation policy before you release the orders to the warehouse.
 
 ## Make demo data available
 
-The scenario in this topic references values and records that are included in the standard demo data that is provided for Microsoft Dynamics 365 Supply Chain Management. If you want to use the values that are provided here as you do the exercises, be sure to work in an environment where the demo data is installed, and set the legal entity to **USMF** before you begin.
+The scenario in this article references values and records that are included in the standard demo data that is provided for Microsoft Dynamics 365 Supply Chain Management. If you want to use the values that are provided here as you do the exercises, be sure to work in an environment where the demo data is installed, and set the legal entity to **USMF** before you begin.
 
 ## Set up shipment consolidation policies and product filters
 

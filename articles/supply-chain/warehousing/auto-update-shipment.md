@@ -2,7 +2,7 @@
 # required metadata
 
 title: Shipment auto-updates
-description: This topic provides an overview of functionality that provides automatic updates for shipments.
+description: This article provides an overview of functionality that provides automatic updates for shipments.
 author: Mirzaab
 ms.date: 11/04/2019
 ms.topic: article

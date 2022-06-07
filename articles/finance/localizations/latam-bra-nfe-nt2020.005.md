@@ -2,7 +2,7 @@
 # required metadata
 
 title: NT2020.005 - Layout and validation updates in the electronic fiscal document (NF-e)
-description: This topic provides information about the updates to the XML layout and validation rules in technical note NT2020.005.
+description: This article provides information about the updates to the XML layout and validation rules in technical note NT2020.005.
 author: gionoder
 ms.date: 08/03/2021
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 8.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the updates to the XML layout and validation rules that were introduced by technical note NT2020.005 for the generation of electronic fiscal document model 55 (NF-e).
+This article describes the updates to the XML layout and validation rules that were introduced by technical note NT2020.005 for the generation of electronic fiscal document model 55 (NF-e).
 
 ## Enable the technical note in Dynamics 365 Finance and Dynamics 365 Supply Chain Management
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Commerce 
-description: This topic points to topics that describe the new and changed features in each release of Dynamics 365 Commerce.
+description: This article points to articles that describe the new and changed features in each release of Dynamics 365 Commerce.
 author: josaw1
 ms.date: 04/18/2022
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.9
 [!include [banner](../includes/banner.md)]
 
 ## Releases of Dynamics 365 Commerce
-Dynamics 365 Commerce released to public preview in October 2019. To see what's new or changed in each release of Commerce, see the following topics.
+Dynamics 365 Commerce released to public preview in October 2019. To see what's new or changed in each release of Commerce, see the following articles.
 
 | Version | Build number | Auto-update availability | Learn more |
 |---------|--------------|--------------|-------------|
@@ -57,7 +57,7 @@ Dynamics 365 Commerce released to public preview in October 2019. To see what's 
 
 
 ## Releases before February 2020
-To see what's new or changed in releases before February 2020, see the following topics.
+To see what's new or changed in releases before February 2020, see the following articles.
 
 
  **Release**                                                           | **Version** | **Build number** | **Availability** | **Learn more**                                                                                                                                                                                                           |

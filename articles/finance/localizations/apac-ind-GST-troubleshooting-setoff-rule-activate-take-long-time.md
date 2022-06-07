@@ -2,7 +2,7 @@
 # required metadata
 
 title: Activating the setoff rule takes longer than expected
-description: This topic provides troubleshooting information to help speed up the activation process for setoff rules. 
+description: This article provides troubleshooting information to help speed up the activation process for setoff rules. 
 author: shaoling
 manager: beya
 ms.date: 04/29/2021
@@ -37,7 +37,7 @@ When you select **Activate** to activate the setoff hierarchy profile, it may ta
 
   [![Activate button.](./media/setoff-rule-activation-takes-long-time-Picture1.png)](./media/setoff-rule-activation-takes-long-time-Picture1.png)
 
- Complete the steps in this topic to troubleshoot this issue. 
+ Complete the steps in this article to troubleshoot this issue. 
 
 1. Go to **Workspaces** > **Feature management** and in the list, find the feature, **Activate setoff hierarchy profile in batch**.
 2. Select **Enable now**.

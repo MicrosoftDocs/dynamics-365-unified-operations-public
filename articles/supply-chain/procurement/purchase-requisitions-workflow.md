@@ -94,7 +94,7 @@ In this example, the workflow process for the purchase requisition lines include
 ## Configuring a workflow for purchase requisitions
 To route a purchase requisition for review, you must configure the purchase requisition workflow processes. The workflow process that you define controls the interaction between the user who requested the items (the requester) and the reviewer and approver in the workflow. The routing of the purchase requisition depends on the conditions that are specified in the workflow configuration. For example, these conditions determine when the purchase requisition should be routed, the user or role that it should be routed to, and the actions that users can take.  
 
-The examples in this topic show how a purchase requisition can be routed through a workflow as a single document or as individual purchase requisition lines. You can also configure a workflow for purchase requisitions that reflects the internal control review of purchase requisitions that is defined for your organization.  
+The examples in this article show how a purchase requisition can be routed through a workflow as a single document or as individual purchase requisition lines. You can also configure a workflow for purchase requisitions that reflects the internal control review of purchase requisitions that is defined for your organization.  
 
 The participants or the reviewers that a task is assigned to in a workflow can be members of a particular user group, users who have a particular security role, users who are associated with the submitter in a managerial hierarchy, or named users or users who have specific expenditure responsibilities.
 

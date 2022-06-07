@@ -2,7 +2,7 @@
 # required metadata
 
 title: Update the local agent
-description: This topic explains how to update the local agent.
+description: This article explains how to update the local agent.
 author: faix
 ms.date: 02/22/2022
 ms.topic: article
@@ -112,7 +112,7 @@ This topic explains how to update the local agent. The latest version of the loc
 - This release removes the monitoring agent and introduces a new service called LBDTelemetry, which will be used to install the ETWManifests.
 
 > [!IMPORTANT]
-> This release requires that a new local agent configuration file be downloaded from LCS. Refer to the [Troubleshoot on-premises deployments](../../dev-itpro/deployment/troubleshoot-on-prem.md) topic if you encounter problems. 
+> This release requires that a new local agent configuration file be downloaded from LCS. Refer to the [Troubleshoot on-premises deployments](../../dev-itpro/deployment/troubleshoot-on-prem.md) article if you encounter problems. 
 
 ## What's new in local agent 2.1.0
 - Local agent 2.1.0 enables the two-phased servicing where **Environment preparation** and **Environment update** are two distinct steps and explicit actions. This reduces the total downtime customers must take when applying updates to their on-premises environments by preparing upfront and allowing users to use the environment during preparation and then communicating the downtime when the actual update environment action is triggered.

@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This procedure walks through creating financial dimensions for point of sale (POS) registers, and demonstrates how to configure financial dimension values on registers. This procedure doesn't include other related steps, such as creating dimension sets and account structures. Those tasks can be found in other topics. This recording uses USRT demo company.
+This procedure walks through creating financial dimensions for point of sale (POS) registers, and demonstrates how to configure financial dimension values on registers. This procedure doesn't include other related steps, such as creating dimension sets and account structures. Those tasks can be found in other articles. This recording uses USRT demo company.
 
 1. Go to General ledger > Chart of accounts > Dimensions > Financial dimensions.
 2. Click New.

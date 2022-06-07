@@ -2,7 +2,7 @@
 # required metadata
 
 title: Unit of measure conversion per product variant
-description: This topic explains how to set up unit of measure conversions for product variants. It includes an example of the setup.
+description: This article explains how to set up unit of measure conversions for product variants. It includes an example of the setup.
 author: t-benebo
 ms.date: 05/11/2020
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up unit of measure conversions for various product variants.
+This article explains how to set up unit of measure conversions for various product variants.
 
 Instead of creating multiple individual products that must be maintained, you can use product variants to create variations of a single product. For example, a product variant might be a T-shirt of a given size and color.
 

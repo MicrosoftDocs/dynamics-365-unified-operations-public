@@ -2,7 +2,7 @@
 # required metadata
 
 title: Subscription billing Power BI content
-description: This topic describes what is included in the Subscription billing Microsoft Power BI content.
+description: This article describes what is included in the Subscription billing Microsoft Power BI content.
 author: JodiChristiansen
 ms.date: 04/13/2022
 ms.topic: article
@@ -18,7 +18,7 @@ ms.search.validFrom: 2021-04-13
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes what is included in the Subscription billing Microsoft Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content. 
+This article describes what is included in the Subscription billing Microsoft Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content. 
 
 ## Overview
 

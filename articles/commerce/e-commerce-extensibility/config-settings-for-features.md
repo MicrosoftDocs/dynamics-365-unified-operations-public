@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure site builder global configuration settings based on enabled features
-description: This topic describes how global configuration properties in Microsoft Dynamics 365 Commerce site builder can be made visible, hidden, or disabled when specific Commerce features are turned on.
+description: This article describes how global configuration properties in Microsoft Dynamics 365 Commerce site builder can be made visible, hidden, or disabled when specific Commerce features are turned on.
 author: samjarawan
 ms.date: 07/30/2021
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how global configuration properties in Microsoft Dynamics 365 Commerce site builder can be made visible, hidden, or disabled when specific Commerce features are turned on.
+This article describes how global configuration properties in Microsoft Dynamics 365 Commerce site builder can be made visible, hidden, or disabled when specific Commerce features are turned on.
 
 Global configuration properties that are available at **Site settings \> Extensions \> Configuration** in site builder can be set so that they are visible, hidden, or disabled (that is, read-only), based on the settings of the **hiddenWithFeatureFlags** and **disabledWithFeatureFlags** properties in the app settings file (/settings/app.settings.json). For more information about app settings, see [App settings](app-settings.md).
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Set up an inventory profile 
-description: This topic provides information about setting up inventory profile.
+description: This article provides information about setting up inventory profile.
 author: v-nadyuz
 ms.date: 05/11/2020
 ms.topic: article

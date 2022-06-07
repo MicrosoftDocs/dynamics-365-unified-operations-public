@@ -2,7 +2,7 @@
 # required metadata
 
 title: NT2019.001 - Tax benefits and exemptions rules for NF-e/NFC-e
-description: This topic provides information about the ICMS tax benefits and exemptions in fiscal documents for Brazil.
+description: This article provides information about the ICMS tax benefits and exemptions in fiscal documents for Brazil.
 author: gionoder
 ms.date: 12/01/2020
 ms.topic: article
@@ -40,7 +40,7 @@ For more information about the compatibility rules and exceptions, see the lates
 Technical note NT2019.001 also includes detailed information about the adoption of the rules by each state.
 
 > [!NOTE]
-> The concept, setup, and use of tax benefits and exemptions in the context of the Brazilian localization aren't in the scope of this topic. For more information, see [Brazil tax overview](latam-bra-calculate-taxes.md).
+> The concept, setup, and use of tax benefits and exemptions in the context of the Brazilian localization aren't in the scope of this article. For more information, see [Brazil tax overview](latam-bra-calculate-taxes.md).
 
 ## Feature overview
 

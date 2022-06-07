@@ -2,7 +2,7 @@
 # required metadata
 
 title: Retail price reports
-description: This topic provides an overview of the price report feature that can used to view the upcoming price changes for the assorted products. 
+description: This article provides an overview of the price report feature that can used to view the upcoming price changes for the assorted products. 
 author: shajain
 ms.date: 03/05/2019
 ms.topic: article

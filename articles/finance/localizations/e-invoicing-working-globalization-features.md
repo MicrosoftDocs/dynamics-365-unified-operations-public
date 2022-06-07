@@ -2,7 +2,7 @@
 # required metadata
 
 title: Globalization feature components
-description: This topic provides an overview of Globalization feature components.
+description: This article provides an overview of Globalization feature components.
 author: dkalyuzh
 ms.date: 02/11/2022
 ms.topic: article

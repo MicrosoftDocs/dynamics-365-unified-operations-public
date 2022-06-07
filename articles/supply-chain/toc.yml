@@ -12,6 +12,8 @@
         items:
         - name: What's new or changed in Supply Chain Management home page
           href: get-started/whats-new-home-page.md
+        - name: Supply Chain Management 10.0.28 (August 2022)
+          href: get-started/whats-new-scm-10-0-28.md
         - name: Supply Chain Management 10.0.27 (July 2022)
           href: get-started/whats-new-scm-10-0-27.md
         - name: Supply Chain Management 10.0.26 (May 2022)
@@ -58,6 +60,8 @@
           href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/supply-chain/toc.json
         - name: Configure service updates
           href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Pre-servicing and post-servicing
+          href: ../fin-ops-core/dev-itpro/lifecycle-services/pre-post-servicing.md?toc=/dynamics365/supply-chain/toc.json
         - name: Pause service updates
           href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?toc=/dynamics365/supply-chain/toc.json
         - name: Get notified about service updates
@@ -711,6 +715,8 @@
       items:
       - name: Cost management home page
         href: cost-management/cost-management-home-page.md
+      - name: Inventory costing frequently asked questions
+        href: cost-management/inventory-costing-faq.md
       - name: Prerequisites for standard costs
         items:
         - name: Prerequisites for standard costs overview
@@ -1525,6 +1531,8 @@
             href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/supply-chain/toc.json
           - name: Troubleshoot performance issues in ER configurations
             href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/supply-chain/toc.json
+          - name: Reduce the number of table fields that are fetched at runtime
+            href: ../fin-ops-core/dev-itpro/analytics/er-reduce-fetched-fields-number.md?toc=/dynamics365/supply-chain/toc.json
         - name: Business document management (BDM)
           items:
           - name: BDM overview
@@ -3289,6 +3297,18 @@
         href: landed-cost/landed-cost-inquiries.md
       - name: Landed cost reports
         href: landed-cost/landed-cost-reports.md
+      - name: Landed cost data entities
+        items:
+        - name: Landed cost entities overview
+          href: landed-cost\landed-cost-entities-overview.md
+        - name: Voyage creation entities
+          href: landed-cost\landed-cost-entities-voyage-creation.md
+        - name: Cost transaction entities
+          href: landed-cost\landed-cost-entities-cost-transactions.md
+        - name: Container activities entity
+          href: landed-cost\landed-cost-entities-container-activities.md
+        - name: Vendor invoice entities
+          href: landed-cost\landed-cost-entities-vendor-invoices.md
     - name: Warehouse management
       items:
       - name: Warehouse management overview

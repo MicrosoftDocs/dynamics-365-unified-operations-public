@@ -2,7 +2,7 @@
 # required metadata
 
 title: Generate online channel reports
-description: This topic describes how to generate reports for your online channel in Microsoft Dynamics 365 Commerce.
+description: This article describes how to generate reports for your online channel in Microsoft Dynamics 365 Commerce.
 author: psimolin
 ms.date: 10/01/2019
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to generate reports for your online channel in Microsoft Dynamics 365 Commerce.
+This article describes how to generate reports for your online channel in Microsoft Dynamics 365 Commerce.
 
 You can generate and view several reports in Commerce to see how your online channel is performing.
 

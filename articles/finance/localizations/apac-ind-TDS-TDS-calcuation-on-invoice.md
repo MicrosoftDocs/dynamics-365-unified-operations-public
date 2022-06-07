@@ -2,7 +2,7 @@
 # required metadata
 
 title: TDS calculation on invoices
-description: This topic provides a reference for transactions where the Tax Deducted at Source (TDS) is calculated at the invoice level.
+description: This article provides a reference for transactions where the Tax Deducted at Source (TDS) is calculated at the invoice level.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides a reference for transactions where the Tax Deducted at Source (TDS) is calculated at the invoice level.
+This article provides a reference for transactions where the Tax Deducted at Source (TDS) is calculated at the invoice level.
 
 | Serial number | Transaction type                                 | Transaction amount | Page name and selection path                                 | Account type and offset account type                         |
 | ------------- | ------------------------------------------------ | ------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |

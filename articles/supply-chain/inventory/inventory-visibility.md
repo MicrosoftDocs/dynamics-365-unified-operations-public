@@ -1,6 +1,6 @@
 ---
 title: Inventory Visibility Add-in overview
-description: This topic explains what Inventory Visibility is and describes its features.
+description: This article explains what Inventory Visibility is and describes its features.
 author: yufeihuang
 ms.date: 03/18/2022
 ms.topic: overview

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Default field value in tax information isn't as expected
-description: This topic provides troubleshooting information that can help when the default value of a tax information field isn't what you expect.
+description: This article provides troubleshooting information that can help when the default value of a tax information field isn't what you expect.
 author: yungu
 ms.date: 07/07/2021
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.1
 
 [!include [banner](../includes/banner.md)]
 
-If the default value of one of the following tax information fields isn't what you expect, use the information in this topic to troubleshoot and fix the issue:
+If the default value of one of the following tax information fields isn't what you expect, use the information in this article to troubleshoot and fix the issue:
 
 - Company location
 - HSN/SAC 
@@ -39,7 +39,7 @@ If the default value of one of the following tax information fields isn't what y
 > [!NOTE]
 > If the value of any other tax information field isn't what you expect, you can apply a general debug point.
 
-Each scenario in this topic lists the fields that the default value of the tax information field is derived from. The [appendix](#appendix) explains where you can find those fields.
+Each scenario in this article lists the fields that the default value of the tax information field is derived from. The [appendix](#appendix) explains where you can find those fields.
 
 ## Company location
 

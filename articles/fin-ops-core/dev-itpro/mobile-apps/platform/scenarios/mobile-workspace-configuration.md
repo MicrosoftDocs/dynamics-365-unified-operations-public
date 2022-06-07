@@ -1,8 +1,8 @@
 ---
 title: Configure workspaces by using the SysAppWorkspace class
-description: This topic explains how you can use the SysAppWorkspace class to configure and publish workspaces on the server. 
+description: This article explains how you can use the SysAppWorkspace class to configure and publish workspaces on the server. 
 author: tonyafehr
-ms.date: 10/09/2019
+ms.date: 05/26/2022
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: tfehr
@@ -15,6 +15,7 @@ ms.dyn365.ops.version: Platform update 3
 # Configure workspaces by using the SysAppWorkspace class
 
 [!include [banner](../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../includes/mobile-app-deprecation-banner.md)]
 
 Workspace class, **SysAppWorkspace**, is the starting point to create, configure and publish workspaces on the server. The following categories of APIs are available for use in sysAppWorkspace
 

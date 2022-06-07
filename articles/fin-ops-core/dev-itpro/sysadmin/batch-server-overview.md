@@ -2,7 +2,7 @@
 # required metadata
 
 title: Batch processing and batch servers
-description: This topic describes batch processing and batch servers, and how to plan for their use.
+description: This article describes batch processing and batch servers, and how to plan for their use.
 author: Peakerbl
 ms.date: 01/22/2020
 ms.topic: overview
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes batch processing and batch servers, and how to plan for their use.
+This article describes batch processing and batch servers, and how to plan for their use.
 
 The batch framework provides an asynchronous, server-based batch processing environment that can process tasks across multiple instances of Application Object Server (AOS). 
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: VAT declaration (Austria)
-description: This topic describes how to set up and generate an advance value-added tax (VAT) declaration U30 for Austria in the official XML format
+description: This article describes how to set up and generate an advance value-added tax (VAT) declaration U30 for Austria in the official XML format
 author: anasyash
 ms.date: 03/10/2022
 ms.topic: article
@@ -17,11 +17,11 @@ ms.search.validFrom:
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes how to set up and generate an advance value-added tax (VAT) declaration U30 for Austria in the official XML format. It also describes how to preview the VAT declaration in Microsoft Excel.
+This article describes how to set up and generate an advance value-added tax (VAT) declaration U30 for Austria in the official XML format. It also describes how to preview the VAT declaration in Microsoft Excel.
 
 To automatically generate the report, you must first create enough sales tax codes to keep a separate VAT accounting for each box on the VAT declaration. Additionally, in the application-specific parameters of the Electronic reporting (ER) format for the VAT declaration, you must associate sales tax codes with the lookup result of the lookups for the boxes on the VAT declaration.
 
-For Austria, you must configure two lookups: **Turnover lookup** and **Report field lookup**. For more information about how to set up application-specific parameters, see the [Set up application-specific parameters for VAT declaration fields](#set-up-application-specific-parameters-for-vat-declaration-fields) section later in this topic.
+For Austria, you must configure two lookups: **Turnover lookup** and **Report field lookup**. For more information about how to set up application-specific parameters, see the [Set up application-specific parameters for VAT declaration fields](#set-up-application-specific-parameters-for-vat-declaration-fields) section later in this article.
 
 In the following table, the "Lookup result" column shows the lookup result that is preconfigured for a specific VAT declaration row in the VAT declaration format. Use this information to correctly associate sales tax codes with the lookup result and then with the row of the VAT declaration.
 
@@ -203,7 +203,7 @@ Follow these steps to define which sales tax codes generate which boxes in the f
 <p>Lookup result</p>
 </td>
 <td>
-<p>Select the value of the turnover. For more information about the turnover values and their assignment to VAT declaration rows, see the <a href="#VAT_declaration_overview_1">VAT declaration overview</a> section earlier in this topic.</p>
+<p>Select the value of the turnover. For more information about the turnover values and their assignment to VAT declaration rows, see the <a href="#VAT_declaration_overview_1">VAT declaration overview</a> section earlier in this article.</p>
 </td>
 </tr>
 <tr>
@@ -343,7 +343,7 @@ The data package contains electronic message settings to generate the VAT declar
 
 ## Generate a VAT declaration from electronic messages
 
-When you use electronic messages to generate the report, you can collect tax data from multiple legal entities. For more information, see the [Run a VAT declaration for multiple legal entities](#run-a-vat-declaration-for-multiple-legal-entities) section later in this topic.
+When you use electronic messages to generate the report, you can collect tax data from multiple legal entities. For more information, see the [Run a VAT declaration for multiple legal entities](#run-a-vat-declaration-for-multiple-legal-entities) section later in this article.
 
 The following procedure applies to the example electronic message processing that you imported earlier from the LCS Shared asset library.
 
@@ -355,7 +355,7 @@ The following procedure applies to the example electronic message processing tha
     > [!NOTE]
     > Steps 5 through 7 are optional.
 
-5. Optional: On the **Messages** FastTab, select **Collect data**, and then select **OK**. The sales tax payments that were generated earlier are added to the message. For more information, see the [Settle and post sales tax](#settle-and-post-sales-tax) section earlier in this topic. If you skip this step, you can still generate a VAT declaration by using the **Tax declaration version** field in the **Declaration** dialog box.
+5. Optional: On the **Messages** FastTab, select **Collect data**, and then select **OK**. The sales tax payments that were generated earlier are added to the message. For more information, see the [Settle and post sales tax](#settle-and-post-sales-tax) section earlier in this article. If you skip this step, you can still generate a VAT declaration by using the **Tax declaration version** field in the **Declaration** dialog box.
 6. Optional: On the **Message items** FastTab, review the sales tax payments that are transferred for processing. By default, all sales tax payments of the selected period that weren't included in any other message of the same processing are included.
 7. Optional: Select **Original document** to review the sales tax payments, or select **Delete** to exclude sales tax payments from processing. If you skip this step, you can still generate a VAT declaration by using the **Tax declaration version** field in the **Declaration** dialog box.
 8. On the **Messages** FastTab, select **Update status**. In the **Update status** dialog box, select **Ready to generate**, and then select **OK**. Verify that the message status is changed to **Ready to generate**.

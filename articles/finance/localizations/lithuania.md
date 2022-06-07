@@ -2,7 +2,7 @@
 # required metadata
 
 title: Lithuania overview
-description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for Lithuania. 
+description: This article provides links to Microsoft Dynamics 365 Finance documentation resources for Lithuania. 
 author: kfend
 ms.date: 07/25/2019
 ms.topic: overview
@@ -29,8 +29,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides links to documentation resources for Lithuania. 
+This article provides links to documentation resources for Lithuania. 
 
+- [EU sales list for Lithuania](emea-ltu-eu-sales-list.md)
 - [Fixed asset repair statement](emea-ltu-fixed-asset-repair-statement.md)
 - [Generate a fixed asset transfer between warehouses document](tasks/lt-00003-fixed-asset-transfer.md)
 - [Invoice and packing slip numbering](emea-invoices-packing-slips-numbering.md)

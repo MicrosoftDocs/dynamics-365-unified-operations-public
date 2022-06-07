@@ -1,6 +1,6 @@
 ---
 title: Language Integrated Query (LINQ) provider for C#
-description: This topic discusses the LINQ provider.
+description: This article discusses the LINQ provider.
 author: pvillads
 ms.date: 11/03/2017
 ms.topic: article
@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic discusses the LINQ provider.
+This article discusses the LINQ provider.
 
 LINQ (Language Integrated Query) is a set of classes and methods that enable you to access data that is stored in a variety of places and formats. The LINQ framework is the standard for accessing data in managed languages. LINQ presents to programmers a unified and consistent API for data access from heterogeneous data sources, such as:
 
@@ -43,7 +43,7 @@ There are two syntactic mechanisms for accessing the LINQ provider in C\# (or in
 - By standard, or fluent, method call syntax.
 - By specialized syntax that the C\# compiler has been enhanced to understand as equivalent to the LINQ method calls. (Such syntax is sometimes called “syntactic sugar”.)
 
-This topic is going to review each syntactic mechanism for LINQ, starting with the easier specialized syntax.
+This article is going to review each syntactic mechanism for LINQ, starting with the easier specialized syntax.
 
 ## LINQ by specialized syntax in C\#
 

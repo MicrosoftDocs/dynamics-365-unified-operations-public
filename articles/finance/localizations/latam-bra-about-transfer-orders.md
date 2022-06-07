@@ -2,7 +2,7 @@
 # required metadata
 
 title: Transfer orders (Brazil)
-description: This topic provides information about transfer orders for Brazil. 
+description: This article provides information about transfer orders for Brazil. 
 author: ShylaThompson
 ms.date: 09/13/2018
 ms.topic: article

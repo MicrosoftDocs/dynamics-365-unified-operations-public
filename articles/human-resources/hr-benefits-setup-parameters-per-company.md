@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Configure Benefits management parameters per company
-description: This topic describes how to configure parameters for Benefits management per company in Microsoft Dynamics 365 Human Resources.
+description: This article describes how to configure parameters for Benefits management per company in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 8/24/2021
 ms.topic: article

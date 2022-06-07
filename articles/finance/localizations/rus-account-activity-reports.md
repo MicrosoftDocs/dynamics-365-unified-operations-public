@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Account activity reports
-description: This topic provides information about account activity reports including the Turnover sheet with correspondence.
+description: This article provides information about account activity reports including the Turnover sheet with correspondence.
 author: v-nadyuz
 ms.date: 02/07/2020
 ms.topic: article

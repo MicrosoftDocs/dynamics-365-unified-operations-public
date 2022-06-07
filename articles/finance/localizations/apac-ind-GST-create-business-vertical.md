@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create a business vertical
-description: This topic explains how to create a business vertical. This task is part of the master data setup that is required to make the India localization solution for Goods and Services Tax (GST) available.
+description: This article explains how to create a business vertical. This task is part of the master data setup that is required to make the India localization solution for Goods and Services Tax (GST) available.
 author: EricWangChen
 ms.date: 06/04/2019
 ms.topic: article

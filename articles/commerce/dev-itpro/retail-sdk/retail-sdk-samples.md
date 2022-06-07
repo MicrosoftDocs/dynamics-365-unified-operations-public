@@ -2,7 +2,7 @@
 # required metadata
 
 title: Extend Commerce Store receipts
-description: This topic describes how to extend Commerce store receipts.
+description: This article describes how to extend Commerce store receipts.
 author: mugunthanm
 ms.date: 03/02/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 2
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how to extend Commerce store receipts. Receipts can have two types of extensions:
+This article describes how to extend Commerce store receipts. Receipts can have two types of extensions:
 
  - **Custom fields** - Adds new receipt fields to the existing receipts.
  - **Custom receipt types** - Creates new receipts for custom scenarios.

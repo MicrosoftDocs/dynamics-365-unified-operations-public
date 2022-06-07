@@ -2,7 +2,7 @@
 # required metadata
 
 title: Singapore overview
-description: This topic provides links to documentation resources for Singapore. 
+description: This article provides links to documentation resources for Singapore. 
 author: ShylaThompson
 ms.date: 07/25/2019
 ms.topic: overview
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides links to documentation resources for Singapore. 
+This article provides links to documentation resources for Singapore. 
 
 - [Generate the Singapore GST-05 report](apac-sgp-generate-gst-05-report.md)
 - [Reverse charge VAT](emea-reverse-charge.md)

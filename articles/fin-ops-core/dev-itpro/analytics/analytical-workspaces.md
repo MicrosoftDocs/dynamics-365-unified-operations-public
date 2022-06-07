@@ -3,7 +3,7 @@
 
 
 title: Analytical workspaces
-description: This topic lists the embedded, analytical workspaces that are available and points you to resources where you can learn more about them.
+description: This article lists the embedded, analytical workspaces that are available and points you to resources where you can learn more about them.
 author: sericks007
 ms.date: 10/02/2019
 ms.topic: article
@@ -12,7 +12,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend

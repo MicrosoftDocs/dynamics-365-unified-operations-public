@@ -2,7 +2,7 @@
 # required metadata
 
 title: Finance and Operations virtual entities FAQ
-description: This topic is a list of frequently asked questions about Finance and Operations virtual entities.
+description: This article is a list of frequently asked questions about Finance and Operations virtual entities.
 author: Sunil-Garg
 ms.date: 01/05/2022
 ms.topic: article
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.12
 > [!IMPORTANT]
 > This functionality requires version 10.0.12 for Finance and Operations apps, while service update 189 is required for Dataverse. The release information for Dataverse is published on the [latest version availability page](/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
 
-This topic is a collection of frequently asked questions about Finance and Operations virtual entities. 
+This article is a collection of frequently asked questions about Finance and Operations virtual entities. 
 
 ### Do Tier 1 Finance and Operations environments or demo topologies work?
 

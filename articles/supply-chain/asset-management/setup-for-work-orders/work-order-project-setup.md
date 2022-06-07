@@ -2,7 +2,7 @@
 # required metadata
 
 title: Work order project setup
-description: This topic explains work order project setup in Asset Management.
+description: This article explains work order project setup in Asset Management.
 author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article
@@ -85,7 +85,7 @@ The setup allows for complete integration with the **Project management and acco
 ![Work orders project setup page, Add work order.](media/18-setup-for-work-orders.png)
 
 > [!NOTE]
-> Every time that a work order line is created, Asset Management searches for a project group that should be related to the work order job project. The search is based on the setup that is described in this topic. Every project group has a related project type. Project groups that have the **Time and material** or **Fixed-price** project type are valid only for assets that are related to a customer account.
+> Every time that a work order line is created, Asset Management searches for a project group that should be related to the work order job project. The search is based on the setup that is described in this article. Every project group has a related project type. Project groups that have the **Time and material** or **Fixed-price** project type are valid only for assets that are related to a customer account.
 >
 > For parent projects and project groups, when the system selects the available work order project or project group, the selection is based on the records that you created by using the preceding procedure. Asset Management goes through records that are related to the work order project to check for a possible match. It always checks the most specific combination first. In other words, for the work order parent project, Asset Management first checks for a possible match for the **Asset** field. If no match is found, it checks for a match for the **Asset type** field. If no match is found, it checks for a match for the **Functional location** field, and so on. As you can see in the layout of the **Work order project setup** page, this behavior means that, to find the most specific combination, Asset Management checks each record from right to left for a match. If no match is found, the default record where only a project ID is selected is used. The process for finding the related project group is similar. Asset Management first checks for a possible match for the **Asset** field, then the **Asset type** field, and then the **Work order type** field. If no match is found, the default record where only a project group is selected is used.
 

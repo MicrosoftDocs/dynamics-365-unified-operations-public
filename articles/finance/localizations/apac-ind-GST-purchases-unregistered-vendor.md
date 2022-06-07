@@ -2,7 +2,7 @@
 # required metadata
 
 title: Purchases from unregistered vendors
-description: This topic explains how to work with purchase requisitions for unregistered vendors.
+description: This article explains how to work with purchase requisitions for unregistered vendors.
 author: EricWangChen
 ms.date: 06/04/2019
 ms.topic: article

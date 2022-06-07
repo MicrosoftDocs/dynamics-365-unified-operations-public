@@ -2,7 +2,7 @@
 # required metadata
 
 title: Invoicing for Indonesia (ID-00002)
-description: This topic explains how to configure tax invoice numbering so that you can configure and run export sales invoices and import vendor invoices for Indonesia.
+description: This article explains how to configure tax invoice numbering so that you can configure and run export sales invoices and import vendor invoices for Indonesia.
 author: v-olgaoskina
 ms.date: 01/15/2022
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.23
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to configure tax invoice numbering so that you can configure and run export sales invoices and import vendor invoices for Indonesia.
+This article explains how to configure tax invoice numbering so that you can configure and run export sales invoices and import vendor invoices for Indonesia.
 
 Microsoft Dynamics 365 Finance includes the following functionality that has been implemented for value-added tax (VAT) declarations:
 

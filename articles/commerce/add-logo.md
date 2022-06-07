@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add a logo
-description: This topic describes how to add a logo to your site in Microsoft Dynamics 365 Commerce.
+description: This article describes how to add a logo to your site in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 ms.date: 09/15/2020
 ms.topic: article
@@ -31,11 +31,11 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to add a logo to your site in Microsoft Dynamics 365 Commerce.
+This article describes how to add a logo to your site in Microsoft Dynamics 365 Commerce.
 
 When you build your site, one of the first things that you will probably do is add your company or brand logo to the site's header. The Dynamics 365 Commerce online module library provides a module that makes this task easy.
 
-You can add a logo directly to a template, layout, or page. In this way, you can easily change the logo that appears on specific pages or groups of pages. However, this topic covers the most frequent scenario, where you add your logo to a header fragment that can be reused across all the pages of your site.
+You can add a logo directly to a template, layout, or page. In this way, you can easily change the logo that appears on specific pages or groups of pages. However, this article covers the most frequent scenario, where you add your logo to a header fragment that can be reused across all the pages of your site.
 
 ## Prerequisites
 

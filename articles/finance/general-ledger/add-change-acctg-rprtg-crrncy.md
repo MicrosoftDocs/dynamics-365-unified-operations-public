@@ -2,7 +2,7 @@
 # required metadata
 
 title: Change the accounting or reporting currency 
-description: This topic explains how to change the accounting or reporting currency, or add a reporting currency to the setup of a ledger.
+description: This article explains how to change the accounting or reporting currency, or add a reporting currency to the setup of a ledger.
 author: kweekley
 ms.date: 05/05/2021
 ms.topic: index-page
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.14
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to change the accounting or reporting currency, or add a reporting currency to the setup of a ledger.
+This article explains how to change the accounting or reporting currency, or add a reporting currency to the setup of a ledger.
 
 ## Symptom
 
@@ -78,7 +78,7 @@ Follow these steps to copy the setup and master data from the current legal enti
 10. In the **Selected entities** area, select **Add template**.
 11. Select the templates to use. Suggested templates for a new legal entity include **025 - General Ledger** and **Financials**. We recommend that you review all the other available templates to determine whether any of them apply to your requirements.
 12. Select **Copy into legal entity** to start a batch process that will create the selected entities and copy them into the destination legal entity.
-13. After the process is completed, but before any transaction are posted, go to the ledger, and update the accounting and reporting currencies as described earlier in this topic.
+13. After the process is completed, but before any transaction are posted, go to the ledger, and update the accounting and reporting currencies as described earlier in this article.
 
 If you created a new legal entity so that you can change the accounting or reporting currency, verify that the beginning balances are translated from the currencies of the old legal entity to the new currencies.
 

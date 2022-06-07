@@ -2,7 +2,7 @@
 # required metadata
 
 title: Scope of Mexican localization
-description: This topic describes the strategy and scope for tax, finance, and accounting laws and regulations in Mexico. 
+description: This article describes the strategy and scope for tax, finance, and accounting laws and regulations in Mexico. 
 author: sndray
 ms.date: 04/11/2018
 ms.topic: article
@@ -33,7 +33,7 @@ In general, Microsoft invests significant resources to extend business process f
 
 Dynamics 365 Finance helps organizations run their business operations and also manage their obligations to comply with country/region-specific laws, regulations, and common business practices for handling their daily activities. This software includes features and functionality that are designed to address specific federal tax, accounting, financial, or statutory reporting laws or regulations that commonly affect businesses in Mexico.
 
-However, Finance doesn't address all laws, regulations, or commercial requirements in Mexico, because laws and regulations vary in the way that they affect organizations. For example, regulatory features that Microsoft creates that are made generally available out-of-the-box for Finance in Mexico, don't typically include functionality that supports the following, except as noted in this topic:
+However, Finance doesn't address all laws, regulations, or commercial requirements in Mexico, because laws and regulations vary in the way that they affect organizations. For example, regulatory features that Microsoft creates that are made generally available out-of-the-box for Finance in Mexico, don't typically include functionality that supports the following, except as noted in this article:
 
 - National Standards
 - Payroll
@@ -52,7 +52,7 @@ Although channel partners might provide solutions that meet specific regulatory 
 
 Channel partners or customers are solely responsible for any configurations, customizations, localizations, or translations that they create or implement on behalf of customers, and also for any updates to such solutions. They are also solely responsible for any support or other service that is provided to customers for these solutions. Contact your channel partner for information about the solutions that the channel partner creates for licensed versions of Finance.
 
-This topic describes the strategy and scope of specific requirements that Microsoft has implemented as part of the Finance and Operations software that it made generally available in Mexico.
+This article describes the strategy and scope of specific requirements that Microsoft has implemented as part of the Finance and Operations software that it made generally available in Mexico.
 
 ## Terminology and abbreviations
 **Customization** refers to:
@@ -86,16 +86,16 @@ This topic describes the strategy and scope of specific requirements that Micros
 
 In general, the Microsoft strategy for addressing the tax, financial, accounting, or statutory reporting requirements for Mexico consists of providing localizations that:
 
-- Implement the federal tax requirements that are detailed in the [Mexican localization scope](#mexican-localization-scope) section later in this topic.
-- Deliver specific new regulatory features through configurations or through the development of new functionality that implements the federal requirements that are detailed in the [Mexican localization scope](#mexican-localization-scope) section, in accordance with the information that is specified in this topic.
+- Implement the federal tax requirements that are detailed in the [Mexican localization scope](#mexican-localization-scope) section later in this article.
+- Deliver specific new regulatory features through configurations or through the development of new functionality that implements the federal requirements that are detailed in the [Mexican localization scope](#mexican-localization-scope) section, in accordance with the information that is specified in this article.
 - Deliver specific new regulatory features in the most recent service pack that is available, or in a new service pack, for supported versions of Finance.
 - Apply National Standards and competitive features in the localization, as Microsoft, at its sole discretion, determines them to be necessary or appropriate, based on business needs in the region.
 - Don't focus on the requirements of specific businesses, segments, verticals, regions, or large enterprises, even when these requirements are required by laws, statutes, or regulations at the federal, state, or city levels.
 - Exclude municipal requirements, except for the municipal requirements that are detailed in the [Mexican localization scope](#mexican-localization-scope) section.
 
-There are specific laws and requirements that are out of scope for Finance. These laws and requirements are listed in the [Out of scope](#out-of-scope) section later in this topic.
+There are specific laws and requirements that are out of scope for Finance. These laws and requirements are listed in the [Out of scope](#out-of-scope) section later in this article.
 
-The Mexican localizations that Microsoft develops are limited to the features and functionality that is described in this topic. Therefore, Finance must be analyzed by prospective customers or by a tax professional (such as an accounting and tax auditor, tax law firm, or tax consulting firm) who can perform an assessment to determine whether the functionality is appropriate to meet the customer's business needs, or whether custom solutions are required.
+The Mexican localizations that Microsoft develops are limited to the features and functionality that is described in this article. Therefore, Finance must be analyzed by prospective customers or by a tax professional (such as an accounting and tax auditor, tax law firm, or tax consulting firm) who can perform an assessment to determine whether the functionality is appropriate to meet the customer's business needs, or whether custom solutions are required.
 
 ## Mexican localization scope
 The user interface and online Help are translated into Mexican Spanish. Additional documentation, such as white papers and training materials, might be available in English only and might not be available when the software is first made generally available in Mexico.
@@ -551,7 +551,7 @@ The following specific requirements are out of scope for Mexican localizations:
 
 - Generation of CFDI for Payroll documents.
 - The electronic ledger accounting XML files don't include the digital stamp.
-- Requirements from states/regions other than those requirements described in the [Mexican localization strategy](#mexican-localization-strategy) section of this topic.
+- Requirements from states/regions other than those requirements described in the [Mexican localization strategy](#mexican-localization-strategy) section of this article.
 - Requirements from regulatory agencies or autarchies other than SAT.
 
 ### Modules

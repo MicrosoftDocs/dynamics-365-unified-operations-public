@@ -1,10 +1,10 @@
 ---
 title: Preview of Dynamics 365 Supply Chain Management 10.0.27 (July 2022)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.27. 
+description: This article describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.27. 
 author: kamaybac
 ms.date: 04/22/2022
 ms.topic: article
-# ms.search.form: [Operations AOT form name to tie this topic to]
+# ms.search.form: [Operations AOT form name to tie this article to]
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
@@ -18,7 +18,7 @@ ms.dyn365.ops.version: 10.0.27
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management preview version 10.0.27. This version has a build number of 10.0.1227 and is available on the following schedule:
+This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management preview version 10.0.27. This version has a build number of 10.0.1227 and is available on the following schedule:
 
 - **Preview of release:** April 2022
 - **General availability of release (self-update):** June 2022
@@ -26,11 +26,11 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 
 ## Features included in this release
 
-The following table lists the features that are included in this release. We might update this topic to include features that were added to the build after this topic was originally published.
+The following table lists the features that are included in this release. We might update this article to include features that were added to the build after this article was originally published.
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
-| Inventory and logistics | [Inventory allocation for the Inventory Visibility Add-in](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-allocation-inventory-visibility-add-in) | Coming soon | Enabled by default |
+| Inventory and logistics | [Inventory allocation for the Inventory Visibility Add-in](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-allocation-inventory-visibility-add-in) | [Inventory Visibility inventory allocation](../inventory/inventory-visibility-allocation.md) | Enabled by default |
 | Manufacturing | "My day" view for the production floor execution interface | [How workers use the production floor execution interface](../production-control/production-floor-execution-use.md) and [Show vacation balances in the production floor execution interface](../production-control/production-floor-execution-payroll-stats.md) | Feature management:<br>*"My day" view for the production floor execution interface* |
 | Planning | [Planning Optimization support for subcontracting](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-subcontracting) | [Manage subcontracting work in production](../production-control/manage-subcontract-work-production.md) | Enabled by default |
 
@@ -52,9 +52,9 @@ If you want to turn any of these features on or off, you must do so in [feature 
 
 ## New and updated documentation resources
 
-We have recently added or significantly updated the following Help topics. These topics aren't necessarily related to the new features that were added for this release, as listed in the previous sections. However, they might help you get more out of existing features.
+We have recently added or significantly updated the following Help articles. These articles aren't necessarily related to the new features that were added for this release, as listed in the previous sections. However, they might help you get more out of existing features.
 
-| Feature area | New or updated topics |
+| Feature area | New or updated articles |
 |---|---|
 | Cost management | [Weighted average date with Include physical value and marking](../cost-management/weighted-average-date.md) |
 | Distributed hybrid topology | [Try out scale units in a distributed hybrid topology](../cloud-edge/cloud-edge-try-out.md) |
@@ -65,7 +65,7 @@ We have recently added or significantly updated the following Help topics. These
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.27 includes platform updates. To learn more, see [Platform updates for version 10.0.27 of Finance and Operations apps (June 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-27.md).<!-- KFM Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.27 includes platform updates. To learn more, see [Platform updates for version 10.0.27 of Finance and Operations apps (June 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-27.md).
 
 ### Bug fixes
 
@@ -79,12 +79,12 @@ Check out the [Dynamics 365 and industry clouds: 2022 release wave 1 plan](/dyna
 
 ### Removed and deprecated Supply Chain Management features
 
-The [Removed or deprecated features in Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) topic describes features that have been or are scheduled to be removed or deprecated for Supply Chain Management.
+The [Removed or deprecated features in Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) article describes features that have been or are scheduled to be removed or deprecated for Supply Chain Management.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
-Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features in Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) topic 12 months prior to the removal.
+Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features in Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) article 12 months prior to the removal.
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
 

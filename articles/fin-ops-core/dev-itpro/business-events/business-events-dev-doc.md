@@ -2,7 +2,7 @@
 # required metadata
 
 title: Business events developer documentation
-description: This topic walks you through the development process and best practices for implementing business events.
+description: This article walks you through the development process and best practices for implementing business events.
 author: jaredha
 ms.date: 02/09/2022
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
@@ -27,11 +27,11 @@ ms.dyn365.ops.version: 2019-02-28
 
 [!include[banner](../includes/banner.md)]
 
-This topic walks you through the development process and best practices for implementing business events.
+This article walks you through the development process and best practices for implementing business events.
 
 ## What is a business event, and what isn't a business event?
 
-This question comes up every time that we start to think about use cases where business events can help. Is the creation of a vendor a business event? Is confirmation of a purchase order a business event? Is it a business event if you capture the event at the table level? Or should business events be captured only at the business logic level in a business process? These questions aren't just valid, but they are also a key topic of discussion when a solution is planned and architected for integration. The following guidelines can help with this thought process and decision making.
+This question comes up every time that we start to think about use cases where business events can help. Is the creation of a vendor a business event? Is confirmation of a purchase order a business event? Is it a business event if you capture the event at the table level? Or should business events be captured only at the business logic level in a business process? These questions aren't just valid, but they are also a key article of discussion when a solution is planned and architected for integration. The following guidelines can help with this thought process and decision making.
 
 ## Intent
 
@@ -372,7 +372,7 @@ BusinessEventsContract
 
 ## Sending a business event
 
-You must modify application code so that it sends the business event at the appropriate point. Often, you can use a common point in a framework. Documents that extend **SourceDocument** have a common point for creating and sending a business event. For more information, see the [Source document framework support](#source-document-framework-support) section later in this topic.
+You must modify application code so that it sends the business event at the appropriate point. Often, you can use a common point in a framework. Documents that extend **SourceDocument** have a common point for creating and sending a business event. For more information, see the [Source document framework support](#source-document-framework-support) section later in this article.
 
 Other frameworks also provide common points for sending business events. For example, the **CustVendVoucher** class hierarchy in the Application Object Tree (AOT) has a **post** method that is used to send business events that are related to posting customer or vendor vouchers. Overrides of the base class implementation provide specialization of the logic for sending business events. For an example, see **CustVoucher.createBusinessEvent** or **VendVoucher.createBusinessEvent** in the AOT.
 

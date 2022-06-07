@@ -1,6 +1,6 @@
 ---
 title: Run multi-user testing by using the Performance SDK
-description: This topic explains how to run multi-user testing by using Microsoft Visual Studio, the Performance software development kit (SDK), and the Task recorder test scripts.
+description: This article explains how to run multi-user testing by using Microsoft Visual Studio, the Performance software development kit (SDK), and the Task recorder test scripts.
 author: kennysaelen
 ms.date: 06/04/2020
 ms.topic: article
@@ -16,14 +16,14 @@ ms.dyn365.ops.version: AX 10.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to run multi-user testing by using Microsoft Visual Studio, the Performance software development kit (SDK), and the Task recorder test scripts.
+This article explains how to run multi-user testing by using Microsoft Visual Studio, the Performance software development kit (SDK), and the Task recorder test scripts.
 
 > [!IMPORTANT]
 > Visual Studio 2019 will be the last version of Visual Studio that includes web performance and load testing features. If you're using the Visual Studio and Test Controller/Test Agent for on-premises load testing, Visual Studio 2019 will be the last version. You can continue to use it until the end of the support cycle. For more information, see [Cloud-based load testing service end of life](https://devblogs.microsoft.com/devops/cloud-based-load-testing-service-eol/).
 
 ## Prerequisites
 
-Before you complete the steps in this topic, verify that the following prerequisites are met:
+Before you complete the steps in this article, verify that the following prerequisites are met:
 
 - You have **Visual Studio Enterprise edition** in a development environment. Enterprise edition is required to create load tests. If you're deploying your development box as a cloud-hosted environment through Microsoft Dynamics Lifecycle Services (LCS), be sure to select the appropriate Visual Studio version to deploy.
 - The Visual Studio web performance and load testing tools are installed as described in [Install the load testing component](/visualstudio/test/quickstart-create-a-load-test-project#install-the-load-testing-component).

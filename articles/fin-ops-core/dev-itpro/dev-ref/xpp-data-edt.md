@@ -1,6 +1,6 @@
 ---
 title: X++ extended data types
-description: This topic describes extended data types in X++.
+description: This article describes extended data types in X++.
 author: RobinARH
 ms.date: 06/17/2019
 audience: Developer
@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes extended data types in X++. 
+This article describes extended data types in X++. 
 
 *Extended data types* are user-defined types that are based on the **boolean**, **int**, **int64**, **real**, **str**, and **date** primitive data types, and on the **container** composite type. An EDT is a primitive data type or container that has a supplementary name and additional properties. For example, you can create a new EDT that is named **Name** and base it on a string. You can then use the new EDT in variable and field declarations in the development environment. 
 

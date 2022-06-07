@@ -11,12 +11,12 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: weijiesa
@@ -58,7 +58,7 @@ The USMCA certification of origin document contains the following data elements:
 - Certifier signature
 - Number of pages
 
-For more information about each of these elements and how their values are found, see the remaining sections in this topic.
+For more information about each of these elements and how their values are found, see the remaining sections in this article.
 
 ## Print a USMCA certification of origin document
 

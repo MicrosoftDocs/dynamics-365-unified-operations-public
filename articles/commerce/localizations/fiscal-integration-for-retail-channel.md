@@ -2,7 +2,7 @@
 # required metadata
 
 title: Fiscal integration overview for Commerce channels
-description: This topic provides an overview of the fiscal integration capabilities that are available in Dynamics 365 Commerce. 
+description: This article provides an overview of the fiscal integration capabilities that are available in Dynamics 365 Commerce. 
 author: EvgenyPopovMBS
 ms.date: 03/04/2022
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.validFrom: 2017-06-20
 
 [!include [banner](../includes/banner.md)]
 
-This topic is an overview of the fiscal integration capabilities that are available in Dynamics 365 Commerce. 
+This article is an overview of the fiscal integration capabilities that are available in Dynamics 365 Commerce. 
 
 Fiscal integration includes integration with various fiscal devices and services that enable fiscal registration of sales in accordance with local fiscal laws that are aimed at preventing tax fraud in the retail industry. Here are some typical scenarios that can be covered by using fiscal integration:
 

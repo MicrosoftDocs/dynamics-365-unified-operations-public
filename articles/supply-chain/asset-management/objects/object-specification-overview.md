@@ -2,7 +2,7 @@
 # required metadata
 
 title: Asset attribute overview
-description: This topic provides an overview of asset attributes in Asset Management.
+description: This article provides an overview of asset attributes in Asset Management.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: overview
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
  
 
-This topic provides an overview of asset attributes in Asset Management. Asset attributes are properties that are related to an asset type or an asset. If you've set up [attribute types](../setup-for-functional-locations/specification-types.md) and used them on assets, you can get an overview of the attribute values that are set up on the assets. This overview is shown on two pages in Asset Management: **Asset attribute overview** and **Asset attribute**.
+This article provides an overview of asset attributes in Asset Management. Asset attributes are properties that are related to an asset type or an asset. If you've set up [attribute types](../setup-for-functional-locations/specification-types.md) and used them on assets, you can get an overview of the attribute values that are set up on the assets. This overview is shown on two pages in Asset Management: **Asset attribute overview** and **Asset attribute**.
 
 The **Asset attribute overview** page shows a separate line for each asset. The line shows all attribute types that are related to that asset. Follow these steps to open and use the **Asset attribute overview** page.
 

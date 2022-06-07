@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up an e-commerce development environment to debug against a Tier 1 Retail Server virtual machine
-description: This topic explains how to set up an e-commerce development environment to debug against a Tier 1 Retail Server virtual machine (VM).
+description: This article explains how to set up an e-commerce development environment to debug against a Tier 1 Retail Server virtual machine (VM).
 author: Reza-Assadi
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to set up an e-commerce development environment to debug against a Tier 1 Retail Server virtual machine (VM).
+This article explains how to set up an e-commerce development environment to debug against a Tier 1 Retail Server virtual machine (VM).
 
 ## Description
 

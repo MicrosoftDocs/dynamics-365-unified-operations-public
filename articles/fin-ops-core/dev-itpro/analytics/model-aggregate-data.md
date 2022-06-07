@@ -35,7 +35,7 @@ This tutorial will walk you through the process of modeling aggregate data.
 
 ## Prerequisites
 
-This tutorial requires you to access the environment using Remote Desktop, and be provisioned as an administrator. For more information, see the topic named [Deploy and access development environments](../dev-tools/access-instances.md).
+This tutorial requires you to access the environment using Remote Desktop, and be provisioned as an administrator. For more information, see the article named [Deploy and access development environments](../dev-tools/access-instances.md).
 
 ## Key concepts
 - **Aggregate measurements**, similar to **perspectives** and **Cubes** from earlier versions, enable you to model and consume aggregate data.

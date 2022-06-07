@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up rate and percentage tables
-description: This topic explains how to set up rate and percentage tables.
+description: This article explains how to set up rate and percentage tables.
 author: EricWangChen
 ms.date: 03/18/2020
 ms.topic: article

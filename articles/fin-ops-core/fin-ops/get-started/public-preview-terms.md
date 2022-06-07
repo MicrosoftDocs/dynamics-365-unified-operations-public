@@ -2,7 +2,7 @@
 # required metadata
 
 title: Supplemental Terms of Use for Microsoft Dynamics 365 Previews
-description: Topic description
+description: Article description
 author: ShellyBakke
 ms.date: 08/17/2020
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 ROBOTS: NOINDEX, NOFOLLOW
 audience: IT Pro
 # ms.devlang: 

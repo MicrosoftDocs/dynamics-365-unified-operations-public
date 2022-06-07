@@ -2,7 +2,7 @@
 # required metadata
 
 title: Approve and confirm purchase orders
-description: This topic describes the statuses that a purchase order goes through after it has been created, and the effect of enabling change management on POs.
+description: This article describes the statuses that a purchase order goes through after it has been created, and the effect of enabling change management on POs.
 author: GalynaFedorova
 ms.date: 04/02/2020
 ms.topic: article
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the statuses that a purchase order (PO) goes through after it has been created, and the effect of enabling change management on POs.
+This article describes the statuses that a purchase order (PO) goes through after it has been created, and the effect of enabling change management on POs.
 
 After a purchase order (PO) has been created, it might have to go through an approval process. After the vendor has agreed to the order, the PO is set to a status of **Confirmed**.
 

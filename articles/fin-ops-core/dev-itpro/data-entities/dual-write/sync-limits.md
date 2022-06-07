@@ -1,6 +1,6 @@
 ---
 title: Dual-write limits for live synchronization
-description: This topic describes the limits when dual-write is used to write data to Finance and Operations apps and Microsoft Dataverse.
+description: This article describes the limits when dual-write is used to write data to Finance and Operations apps and Microsoft Dataverse.
 author: nhelgren
 ms.date: 08/31/2021
 ms.topic: article
@@ -111,7 +111,7 @@ The following limits apply when data is written from Finance and Operations apps
 | Measure | Limits |
 |---|---|
 | Number of transactions | The total number of transactions that you can perform per day per tenant is governed by service protection API limits that are designed to detect when client applications make extraordinary demands on server resources. For more information, see [Service protection API limits](/powerapps/developer/data-platform/api-limits). |
-| Number of records per single transaction | <p>1,000 records</p><p>If there are more than 1,000 records in a single transaction, consider splitting that transaction into multiple transactions. For more information, see the [Transactions with more than 1,000 records](#transactions-with-more-than-1000-records) section of this topic.</p> |
+| Number of records per single transaction | <p>1,000 records</p><p>If there are more than 1,000 records in a single transaction, consider splitting that transaction into multiple transactions. For more information, see the [Transactions with more than 1,000 records](#transactions-with-more-than-1000-records) section of this article.</p> |
 | Transaction time limit | 2 minutes |
 
 ### From Dataverse to Finance and Operations apps
@@ -121,7 +121,7 @@ The following limits apply when data is written from Dataverse to Finance and Op
 | Measure | Limits |
 |---|---|
 | Number of transactions | The number of transactions might be affected by priority-based throttling limits that are designed to help prevent over-utilization of resources and preserve system responsiveness. For more information, see [Priority-based throttling](../priority-based-throttling.md). |
-| Number of records per single transaction | <p>A payload size limit on Dataverse limits the number of records that can be transferred. The limit is 116.85 megabytes (MB) per transaction. For more information, see [Error: Message size exceeded when sending context to Sandbox](/powerapps/developer/data-platform/troubleshoot-plug-in#error-message-size-exceeded-when-sending-context-to-sandbox). Use of this limit depends on the multiple factors, such entity complexity, the type of columns that is used, and mapped fields. Therefore, the limit can't be expressed as a simple number of records.</p><p>If the limit is exceeded, Dataverse rejects the transaction (referred to as a *message*), and the following error code is used:</p><p>*Error Code: -2147220970 Error Message: Message size exceeded when sending context to Sandbox. Message size: ### MB*</p><p>If the size of the records in a single transaction exceeds 116.65 MB, consider splitting the transaction into multiple transactions. For more information, see the [Transactions with more than 1,000 records](#transactions-with-more-than-1000-records) section of this topic.</p> |
+| Number of records per single transaction | <p>A payload size limit on Dataverse limits the number of records that can be transferred. The limit is 116.85 megabytes (MB) per transaction. For more information, see [Error: Message size exceeded when sending context to Sandbox](/powerapps/developer/data-platform/troubleshoot-plug-in#error-message-size-exceeded-when-sending-context-to-sandbox). Use of this limit depends on the multiple factors, such entity complexity, the type of columns that is used, and mapped fields. Therefore, the limit can't be expressed as a simple number of records.</p><p>If the limit is exceeded, Dataverse rejects the transaction (referred to as a *message*), and the following error code is used:</p><p>*Error Code: -2147220970 Error Message: Message size exceeded when sending context to Sandbox. Message size: ### MB*</p><p>If the size of the records in a single transaction exceeds 116.65 MB, consider splitting the transaction into multiple transactions. For more information, see the [Transactions with more than 1,000 records](#transactions-with-more-than-1000-records) section of this article.</p> |
 | Transaction timeout | 2 minutes |
 
 ## Transactions with more than 1,000 records

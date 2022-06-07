@@ -2,7 +2,7 @@
 # required metadata
 
 title: Ledger account combinations
-description: This topic provides information about combinations of ledger accounts in the dimension framework.
+description: This article provides information about combinations of ledger accounts in the dimension framework.
 author: RyanCCarlson2
 ms.date: 05/01/2019
 ms.topic: article
@@ -37,13 +37,13 @@ In Microsoft Dynamics AX 2009, the number of dimensions was limited to a minimum
 
 ## Part 1: "What happens when I create a ledger account combination?"
 
-This part of the topic describes the various areas of the dimension framework and how they work together. This information will help you better understand what happens when you create a combination of ledger accounts.
+This part of the article describes the various areas of the dimension framework and how they work together. This information will help you better understand what happens when you create a combination of ledger accounts.
 
 The following illustration shows a model of the various areas of the dimension framework.
 
 [![Dimension framework.](./media/DimensionsFrameworkGraph.png)](./media/DimensionsFrameworkGraph.png)
 
-This part of the topic covers the "Dimensions," "Dimension Values," "Categorizations," and "Backing Entities" regions that are highlighted in yellow in the preceding illustration.
+This part of the article covers the "Dimensions," "Dimension Values," "Categorizations," and "Backing Entities" regions that are highlighted in yellow in the preceding illustration.
 
 ### Dimension attributes
 
@@ -91,7 +91,7 @@ In a system where nothing has been referenced by the dimension framework, there 
 
 ## Part 2: Dimension enumerations and default dimensions
 
-This part of the topic covers the "Dimension Enumerations" and "Default Dimensions" regions that are highlighted in yellow in the following illustration.
+This part of the article covers the "Dimension Enumerations" and "Default Dimensions" regions that are highlighted in yellow in the following illustration.
 
 [![Sets in the framework.](./media/SetsInFramework.png)](./media/SetsInFramework.png)
 
@@ -137,7 +137,7 @@ To get to the source of the values, you can follow the link that is stored in th
 
 ## Part 3: Structures and constraints
 
-This part of the topic covers the "Structures" and "Constraints" regions that are highlighted in yellow in the following illustration.
+This part of the article covers the "Structures" and "Constraints" regions that are highlighted in yellow in the following illustration.
 
 [![Structures and constraints in the framework.](./media/StructuresAndConstraintsInFramework.png)](./media/StructuresAndConstraintsInFramework.png)
 
@@ -171,13 +171,13 @@ The following illustration shows the resulting constraint definition.
 
 [![Query results for advanced constraint trees.](./media/AdvancedConstraintTreeSQL.png)](./media/AdvancedConstraintTreeSQL.png)
 
-If a user enters **150-B** for a main account and customer, a specific license plate number must also be entered. However, if the user enters **150-W**, no license plate number is required. In both cases, the user will always see three segments in the ledger account combination, even if one of those segments is left blank. For examples of the effects that these structures, segments, and constraints have when ledger dimension accounts are entered, see the [part 5](#part-5-ledger-dimensions) section of this topic section of this topic that discusses the entry and storage of ledger account combinations.
+If a user enters **150-B** for a main account and customer, a specific license plate number must also be entered. However, if the user enters **150-W**, no license plate number is required. In both cases, the user will always see three segments in the ledger account combination, even if one of those segments is left blank. For examples of the effects that these structures, segments, and constraints have when ledger dimension accounts are entered, see the [part 5](#part-5-ledger-dimensions) section of this article section of this article that discusses the entry and storage of ledger account combinations.
 
 If a user wants to show trailing segments only when they must be entered, advanced rules can be combined with the account structure to provide the additional versatility.
 
 ## Part 4: Advanced rules
 
-This part of the topic covers the "Advanced Rules" region that is highlighted in yellow in the following illustration.
+This part of the article covers the "Advanced Rules" region that is highlighted in yellow in the following illustration.
 
 [![Advanced rules in framework.](./media/AdvancedRulesGraph.png)](./media/AdvancedRulesGraph.png)
 
@@ -218,7 +218,7 @@ The storage of this data uses some of the same tables as the storage of the acco
 
 ## Part 5: Ledger dimensions
 
-This part of the topic covers the "Ledger Dimensions" region that is highlighted in yellow in the following illustration.
+This part of the article covers the "Ledger Dimensions" region that is highlighted in yellow in the following illustration.
 
 [![Ledger dimension storage in framework.](./media/LedgerDimensionStorageInFramework.png)](./media/LedgerDimensionStorageInFramework.png)
 
@@ -228,7 +228,7 @@ After all the configuration data is set up, ledger account combinations can be e
 
 To understand ledger dimensions, you must understand how users enter ledger account combinations.
 
-This section uses the account structure and rule setup from [part 4](#part-4-advanced-rules) of this topic, and explains the user interaction with the account entry control when an account is entered. Here is the account structure, as a reminder.
+This section uses the account structure and rule setup from [part 4](#part-4-advanced-rules) of this article, and explains the user interaction with the account entry control when an account is entered. Here is the account structure, as a reminder.
 
 ![Basic structure and constraints got My Account Structure.](./media/BasicStructureAndConstraintForm.png)
 
@@ -339,11 +339,11 @@ Alternatively, if the structure that is associated with the account rule allows 
 
 This behavior occurs because all the DimensionAttributeValueGroup and DimensionAttributeLevelValue records already exist and can be fully reused on the new combination. Primarily for this reason, data should never be modified directly in the Ledger Dimension storage tables. A change to a single record might affect not only all references to that ledger dimension, but also one or more other ledger dimensions and references to them.
 
-Although it's partially collapsed in the examples shown in this part of the topic, a hash code is assigned to the DimensionAttributeValueCombination and DimensionAttributeValueGroup tables.
+Although it's partially collapsed in the examples shown in this part of the article, a hash code is assigned to the DimensionAttributeValueCombination and DimensionAttributeValueGroup tables.
 
 ## Part 6: Advanced topics
 
-To conclude this topic, this part discusses some advanced topics to explain some of the deeper design and implementation decisions that drive the way that the dimension framework works.
+To conclude this article, this part discusses some advanced topics to explain some of the deeper design and implementation decisions that drive the way that the dimension framework works.
 
 The model in the following illustration shows the various areas in the dimension framework.
 
@@ -384,7 +384,7 @@ Generation of a hash message requires something that uniquely identifies each di
 
 ### Risks of changing data directly
 
-It's important that no data be directly modified outside the application framework (for example, in Microsoft SQL Server Management Studio). This guideline applies to the modification of data in *any* column of the table, not just the columns that have been discussed in this topic. It also applies to the replication of data from one row to another, and to attempts to create "new" sets or combinations outside the dimension framework storage classes.
+It's important that no data be directly modified outside the application framework (for example, in Microsoft SQL Server Management Studio). This guideline applies to the modification of data in *any* column of the table, not just the columns that have been discussed in this article. It also applies to the replication of data from one row to another, and to attempts to create "new" sets or combinations outside the dimension framework storage classes.
 
 It's important that you understand this guideline when you're considering backups and partial restorations of data that might affect referential and hash integrity. For example, if you back up only the Ledger Dimension related records and import them into another partition, you might cause issues unless you also import all the other records in the dimension framework, in addition to all the backing entity records, such as records from the CustTable table or other table that were used to create any combinations. Any attempt to modify the data in these tables, or to synthesize GUIDs or hashes, will cause data to become corrupted, and will require complex, time-consuming analysis to find the source of the corruption and try to fix it.
 

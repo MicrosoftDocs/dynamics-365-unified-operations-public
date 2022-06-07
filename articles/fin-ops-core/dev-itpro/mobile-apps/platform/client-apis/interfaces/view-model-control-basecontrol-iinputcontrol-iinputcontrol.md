@@ -2,7 +2,7 @@
 title: InputControl type
 description: Input control interface with methods and attributes for all input controls.
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/24/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
@@ -12,6 +12,7 @@ ms.author: tfehr
 # InputControl type
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 Input control interface with methods and attributes for all input controls.
 Input controls are typically used on task pages for collecting user input, for example, for a new control.

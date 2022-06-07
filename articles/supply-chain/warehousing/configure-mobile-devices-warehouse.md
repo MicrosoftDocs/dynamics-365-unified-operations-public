@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up mobile devices for warehouse work
-description: This topic describes how to configure the menu items that warehouse workers use to perform work on a mobile device.
+description: This article describes how to configure the menu items that warehouse workers use to perform work on a mobile device.
 author: Mirzaab
 ms.date: 03/23/2020
 ms.topic: article
@@ -31,10 +31,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to configure the menu items that warehouse workers use to perform work on a mobile device.
+This article describes how to configure the menu items that warehouse workers use to perform work on a mobile device.
 
 > [!NOTE]
-> This topic applies to features in Warehouse management. It doesn't apply to features in Inventory management. The menu items that appear on the menus on a warehouse mobile device are configured on the **Mobile device menu items** page. Because the menu items can be put onto different menus, it's easy to configure menu structures so that only specific types of work are exposed to specific users. You can configure menu items to perform the following tasks:
+> This article applies to features in Warehouse management. It doesn't apply to features in Inventory management. The menu items that appear on the menus on a warehouse mobile device are configured on the **Mobile device menu items** page. Because the menu items can be put onto different menus, it's easy to configure menu structures so that only specific types of work are exposed to specific users. You can configure menu items to perform the following tasks:
 
 - Process an inquiry or perform an activity, such as printing a label, generating license plate numbers, starting a production order, or quickly looking up information about items in a location.
 - Create work that will be performed through another process. For example, receiving an item for a purchase order can create put-away work for another worker.
@@ -43,7 +43,7 @@ This topic describes how to configure the menu items that warehouse workers use 
 To create a menu item for an activity or inquiry, set the **Mode** field to **Indirect**. A list of **Activity code** options then becomes available, so that you can select the type of inquiry or activity that the menu item is for. To create a menu item to generate warehouse work, set the **Mode** field to **Work**. A list of **Work creation process** options then becomes available. To create a menu item to process existing warehouse work, set the **Mode** field to **Work**, and then set the **Use existing work** option to **Yes**. 
 
 > [!NOTE]
-> Additional fields might be available for menu items, depending on the mode that you select for the menu item, and whether the menu item is used to perform existing work. For information about the additional field selections, see the “Additional menu item options” section later in this topic.
+> Additional fields might be available for menu items, depending on the mode that you select for the menu item, and whether the menu item is used to perform existing work. For information about the additional field selections, see the “Additional menu item options” section later in this article.
 
 ## Configure menu items for activities and inquiries
 

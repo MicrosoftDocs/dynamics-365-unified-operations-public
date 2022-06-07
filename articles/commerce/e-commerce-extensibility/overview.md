@@ -2,7 +2,7 @@
 # required metadata
 
 title: Online channel extensibility
-description: This topic covers online platform extensibility in Microsoft Dynamics 365 Commerce.
+description: This article covers online platform extensibility in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 09/15/2020
 ms.topic: overview
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic covers online platform extensibility in Microsoft Dynamics 365 Commerce.
+This article covers online platform extensibility in Microsoft Dynamics 365 Commerce.
 
 The Dynamics 365 Commerce platform provides a rich online software development kit (SDK) for developer extensibility. It also provides a module library. The module library provides a set of ready-built modules, data actions, and themes that you can use for your site.
 

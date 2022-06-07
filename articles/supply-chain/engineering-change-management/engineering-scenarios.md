@@ -2,7 +2,7 @@
 # required metadata
 
 title: Engineering change management feature walkthrough
-description: This topic provides an end-to-end walkthrough that shows how to work with engineering change management.
+description: This article provides an end-to-end walkthrough that shows how to work with engineering change management.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -11,12 +11,12 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: benebotg
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.15
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an end-to-end walkthrough that shows how to work with engineering change management. It goes through each of the most important scenarios:
+This article provides an end-to-end walkthrough that shows how to work with engineering change management. It goes through each of the most important scenarios:
 
 - Basic feature configuration
 - How an engineering company creates a new engineering product
@@ -40,13 +40,13 @@ This topic provides an end-to-end walkthrough that shows how to work with engine
 - How to schedule and implement requested changes by creating an engineering change order
 - How to release a product that has been changed
 
-All the exercises in this topic use the standard sample data that is provided for Microsoft Dynamics 365 Supply Chain Management. Additionally, each exercise builds on the previous exercise. Therefore, we recommend that you work through the exercises in order, from beginning to end, especially if you've never used the engineering change management feature before. In this way, you will gain a complete understanding of the feature.
+All the exercises in this article use the standard sample data that is provided for Microsoft Dynamics 365 Supply Chain Management. Additionally, each exercise builds on the previous exercise. Therefore, we recommend that you work through the exercises in order, from beginning to end, especially if you've never used the engineering change management feature before. In this way, you will gain a complete understanding of the feature.
 
 ## Set up for the sample scenario
 
-To follow the sample scenario that is provided in this topic, you must first prepare the feature by making demo data available and adding a few custom records.
+To follow the sample scenario that is provided in this article, you must first prepare the feature by making demo data available and adding a few custom records.
 
-Before you try to do any of the exercises in the rest of this topic, follow the instructions in all the following subsections. These subsections also introduce several important settings pages that you will use when you set up engineering change management for your own organization.
+Before you try to do any of the exercises in the rest of this article, follow the instructions in all the following subsections. These subsections also introduce several important settings pages that you will use when you set up engineering change management for your own organization.
 
 ### Make standard demo data available
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure task management
-description: This topic describes how to configure task management features in Microsoft Dynamics 365 Commerce.
+description: This article describes how to configure task management features in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 02/10/2020
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.9
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to configure task management features in Microsoft Dynamics 365 Commerce.
+This article describes how to configure task management features in Microsoft Dynamics 365 Commerce.
 
 Before Dynamics 365 Commerce managers and employees can use the task management features in Commerce, task management must be configured. Configuration steps include granting permissions to managers and employees, distributing permissions to point of sale (POS) clients, setting up POS notifications, and configuring the **Tasks** tile on the home page of a POS application.
 

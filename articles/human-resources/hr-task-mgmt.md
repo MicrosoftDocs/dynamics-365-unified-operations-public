@@ -2,7 +2,7 @@
 # required metadata
 
 title: Task management
-description: This topic explains the task management functionality that is available in Microsoft Dynamics 365 Human Resources.
+description: This article explains the task management functionality that is available in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 12/20/2021
 ms.topic: article

@@ -1,8 +1,8 @@
 ---
 title: Page design guidelines
-description: This topic provides page design guidelines for mobile apps.
+description: This article provides page design guidelines for mobile apps.
 author: tonyafehr
-ms.date: 04/23/2018
+ms.date: 05/26/2022
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: tfehr
@@ -16,6 +16,7 @@ ms.dyn365.ops.version: Platform update 3
 # Page design guidelines
 
 [!include [banner](../../includes/banner.md)]
+[!include [mobile app deprecated](../../includes/mobile-app-deprecation-banner.md)]
 
 Before you begin to use the designer to build pages and actions, it’s important that you plan the overall design of the mobile workspace that you want to build. We recommend that you orient your design around the entities that you plan to use in the mobile workspace. Don't begin by thinking about the forms that you want to use. From the perspective of the mobile app, the forms are just a mechanism for retrieving data, and the run-time UI behavior of a form isn't applicable to the mobile app. Therefore, you should first identify your entities and the relationships between them. For each entity, the following questions will help you decide how you should design your forms and pages.
 

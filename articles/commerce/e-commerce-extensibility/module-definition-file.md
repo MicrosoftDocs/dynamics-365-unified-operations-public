@@ -2,7 +2,7 @@
 # required metadata
 
 title: Module definition file
-description: This topic covers the module definition file in Microsoft Dynamics 365 Commerce.
+description: This article covers the module definition file in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 01/28/2021
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic covers the module definition file in Microsoft Dynamics 365 Commerce.
+This article covers the module definition file in Microsoft Dynamics 365 Commerce.
 
 A module definition file, MODULE\_NAME.definition.json, is used to register a module and provide metadata to the Dynamics 365 Commerce site builder tool. This metadata includes the module name, description, categories, and configurations.
 
@@ -105,7 +105,7 @@ The page author can configure the settings of a module on a specific page withou
 * **"slots"** – Slots are defined only in container modules. They are exposed in the site builder tool. You can define allow and deny lists for a slot to allow or disallow specific modules from being accepted in that slot.
 * **"attributes"** – Attributes are used to control script injector properties. For more information, see [Script injectors](script-injector.md).
 * **"config"** – The **config** section is used to add module configuration properties. For more information, see [Add module configuration fields](add-module-config-fields.md).
-* **"resources"** – This property is used to localize resources that are used in the module. For more information, see the [Module resource schema](#module-resource-schema) section later in this topic.
+* **"resources"** – This property is used to localize resources that are used in the module. For more information, see the [Module resource schema](#module-resource-schema) section later in this article.
 * **"dependentSchemas"** – The **dependentSchema** section is used to show or hide configuration properties, based on the contextual values of other configuration properties. For more information, see [Configure module properties to display based on context](configure-properties-context.md).
 
 ## Register data actions to a module

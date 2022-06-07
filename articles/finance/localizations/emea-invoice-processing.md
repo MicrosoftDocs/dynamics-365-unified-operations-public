@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Invoice processing
-description: This topic provides information about invoice processing for Eastern Europe.
+description: This article provides information about invoice processing for Eastern Europe.
 author: EvgenyPopovMBS
 ms.date: 02/02/2022
 ms.topic: article
@@ -26,7 +26,7 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This topic briefly describes some country-specific scenarios, such as intra-community value-added tax (VAT) and deferred tax. Legal requirements for some European countries affect the invoicing process. This topic also provides information about how customer and vendor invoices are processed for these countries. 
+This article briefly describes some country-specific scenarios, such as intra-community value-added tax (VAT) and deferred tax. Legal requirements for some European countries affect the invoicing process. This article also provides information about how customer and vendor invoices are processed for these countries. 
 <table>
 <thead>
 <tr>

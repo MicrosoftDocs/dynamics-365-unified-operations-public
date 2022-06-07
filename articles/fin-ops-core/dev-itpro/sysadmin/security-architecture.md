@@ -2,7 +2,7 @@
 # required metadata
 
 title: Security architecture
-description: This topic provides an overview of the security architecture of Finance and Operations.
+description: This article provides an overview of the security architecture of Finance and Operations.
 author: Peakerbl
 ms.date: 11/20/2020
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 # Security architecture
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of the security architecture of Finance and Operations.
+This article provides an overview of the security architecture of Finance and Operations.
 
 When you understand the security architecture, you can more easily customize security to fit the requirements of your business. The following diagram provides a high-level overview of the security architecture. 
 

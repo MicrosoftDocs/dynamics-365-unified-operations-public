@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 9 (July 2017)
-description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 9. This version was released in July 2017.
+description: This article describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 9. This version was released in July 2017.
 author: tonyafehr
 ms.date: 07/27/2017
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 9
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 9. This version was released in July 2017 and has a build number of 7.0.4612.35162.
+This article describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 9. This version was released in July 2017 and has a build number of 7.0.4612.35162.
 
 Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to find supplemental information about new features and learn more about what new features are in development. For information about the bug fixes included in Platform update 9, log in to Lifecycle Services (LCS) and view this [KB article](https://go.microsoft.com/fwlink/?linkid=853624).
 
@@ -95,7 +95,7 @@ The system will find any method that wraps method1. It will randomly execute one
 
 ### Supported versions
 
-The functionality described in this topic is available as of Platform update 9 (CoC and access to protected methods and variables).
+The functionality described in this article is available as of Platform update 9 (CoC and access to protected methods and variables).
 
 However, this functionality requires the class being augmented to be compiled on Platform update 9. Because the current releases of the Dynamics 365 for Finance and Operations, Enterprise edition applications have been compiled on Platform update 8 or earlier, you will need to recompile a base package (like Application Suite) on Platform update 9 or newer in order to wrap a method that is defined in that package.
 

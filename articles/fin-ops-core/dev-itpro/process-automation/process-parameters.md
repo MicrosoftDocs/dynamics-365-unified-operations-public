@@ -1,6 +1,6 @@
 ---
 title: Process parameters
-description: This topic describes how to implement custom parameters in the process automation framework.
+description: This article describes how to implement custom parameters in the process automation framework.
 author: RyanCCarlson2
 ms.date: 09/10/2020
 ms.topic: article

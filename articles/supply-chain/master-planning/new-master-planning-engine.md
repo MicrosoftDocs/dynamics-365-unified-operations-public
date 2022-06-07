@@ -2,7 +2,7 @@
 # required metadata
 
 title: Migration to Planning Optimization for master planning
-description: This topic provides information about the new master planning engine, Planning Optimization, and about migration from the existing engine. 
+description: This article provides information about the new master planning engine, Planning Optimization, and about migration from the existing engine. 
 author: t-benebo
 ms.date: 05/11/2020
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-The built-in master planning engine is scheduled to be made obsolete (deprecated). It's being replaced by the Planning Optimization Add-in for Microsoft Dynamics 365 Supply Chain Management. This topic provides information about the impact on new and existing deployments. It includes information about required actions.
+The built-in master planning engine is scheduled to be made obsolete (deprecated). It's being replaced by the Planning Optimization Add-in for Microsoft Dynamics 365 Supply Chain Management. This article provides information about the impact on new and existing deployments. It includes information about required actions.
 
 Planning Optimization enables master planning calculations to occur outside Supply Chain Management and its Azure SQL database. The benefits that are associated with Planning Optimization include improved performance and minimized impact on the SQL database during master planning runs. Because quick planning runs can be done even during office hours, planners can immediately react to demand or parameter changes.
 
@@ -51,7 +51,7 @@ As has been mentioned, you will receive an error message in version 10.0.16 and 
 
 ### New deployments
 
-Planning Optimization should be considered the default master planning engine for all new deployments in the cloud. In general, Planning Optimization should be used for all new deployments that don't generate planned production orders during master planning. If a new deployment depends on functionality that Planning Optimization doesn't currently support, you can request an exception so that you can continue to use the built-in master planning engine.
+Planning Optimization must be considered the default master planning engine for all new deployments in the cloud. In general, Planning Optimization should be used for all new deployments that don't generate planned production orders during master planning. If a new deployment depends on functionality that Planning Optimization doesn't currently support, you can request an exception so that you can continue to use the built-in master planning engine.
 
 ### Existing deployments
 
@@ -67,7 +67,7 @@ Currently, exceptions for Planning Optimization migration are only relevant if y
 
 After the required features become available, Microsoft will provide a grace period until the exception expires. The environment admin will be informed when the required features have become available and the grace period has started.
 
-The following flowchart summarizes the information provided in this topic so you can quickly find out whether you should request an exception. If you do need to request an exception, please fill out and submit the [Planning Optimization migration and exception questionnaire](https://go.microsoft.com/fwlink/?linkid=2144962).
+The following flowchart summarizes the information provided in this article so you can quickly find out whether you should request an exception. If you do need to request an exception, please fill out and submit the [Planning Optimization migration and exception questionnaire](https://go.microsoft.com/fwlink/?linkid=2144962). The product group is responsible for evaluating and approving each exception request, so please submit your request directly to the product group using the link provided and don't create a support ticket for it. If your request is rejected, please don't create a support ticket because Microsoft Support isn't able to re-evaluate or grant exceptions.
 
 ![Exception flowchart.](media/exception-diagram.png "Exception flowchart")
 

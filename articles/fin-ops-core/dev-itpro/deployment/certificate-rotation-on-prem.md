@@ -2,7 +2,7 @@
 # required metadata
 
 title: Certificate rotation
-description: This topic explains how to place existing certificates and update the references within the environment to use the new certificates.
+description: This article explains how to place existing certificates and update the references within the environment to use the new certificates.
 author: PeterRFriis
 ms.date: 04/07/2022
 ms.topic: article
@@ -12,7 +12,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 25
 
 [!include[banner](../includes/banner.md)]
 
-You may need to rotate the certificates used by your Dynamics 365 Finance + Operations (on-premises) environment as they approach their expiration date. In this topic, you will learn how to replace the existing certificates and update the references within the environment to use the new certificates.
+You may need to rotate the certificates used by your Dynamics 365 Finance + Operations (on-premises) environment as they approach their expiration date. In this article, you will learn how to replace the existing certificates and update the references within the environment to use the new certificates.
 
 > [!WARNING]
 > The certificate rotation process should be initiated well before the certificates expire. This is very important for the Data Encryption certificate, which could cause data loss for encrypted fields. For more information, see [After certificate rotation](#aftercertrotation). 

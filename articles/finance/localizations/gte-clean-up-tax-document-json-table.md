@@ -2,7 +2,7 @@
 # required metadata
 
 title: Clean up the TaxDocumentJSON table 
-description: This topic explains how free up space in the database by removing old data from the TaxDocumentJSON table.
+description: This article explains how free up space in the database by removing old data from the TaxDocumentJSON table.
 author: prabhatb
 ms.date: 10/07/2019
 ms.topic: article
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: 10.0.14
 
 ## Purpose
 
-As the system runs, more and more data is produced, and the database size continues to increase. To free up space in the database, you can clean up old data. During cleanup, if you observe that the TaxDocumentJSON table is using too much space, you can follow the steps in this topic to clean it up.
+As the system runs, more and more data is produced, and the database size continues to increase. To free up space in the database, you can clean up old data. During cleanup, if you observe that the TaxDocumentJSON table is using too much space, you can follow the steps in this article to clean it up.
 
 ## Before you begin
 

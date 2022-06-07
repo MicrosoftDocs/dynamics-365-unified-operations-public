@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Create a new warehouse layout
-description: This topic describes how to set up information about the locations in a warehouse. 
+description: This article describes how to set up information about the locations in a warehouse. 
 author: yufeihuang
 ms.date: 07/29/2019
 ms.topic: business-process 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how to set up information about the locations in a warehouse. This applies only to warehouses created using "basic warehousing" in the Inventory management module, not to warehouses created in the Warehouse management module. You can use this procedure in demo data company USMF, or on your own data.
+This article describes how to set up information about the locations in a warehouse. This applies only to warehouses created using "basic warehousing" in the Inventory management module, not to warehouses created in the Warehouse management module. You can use this procedure in demo data company USMF, or on your own data.
 
 
 ## Set the default location capacity

@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 for Finance and Operations version 8.0 (April 2018)
-description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 8.0. This version was released in April 2018.
+description: This article describes features that are either new or changed in Dynamics 365 for Finance and Operations version 8.0. This version was released in April 2018.
 author: tonyafehr
 ms.date: 10/15/2019
 ms.topic: article
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Release 8.0
 
 
 
-This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 8.0 (April 2018). This version was released in April 2018 and has build numbers 8.0.30 and 8.0.35.
+This article describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 8.0 (April 2018). This version was released in April 2018 and has build numbers 8.0.30 and 8.0.35.
 
 To discover the latest updates to our business applications, as well as a host of new capabilities for building your own applications and extensions on top of our platform, download the [Dynamics 365 Spring '18 release plans](/business-applications-release-notes/April18/release-overview). The release plans provide details about the features that are either new or changed in Dynamics 365 for Finance and Operations.
 

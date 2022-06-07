@@ -1,6 +1,6 @@
 ---
 title: Net requirements and pegging information with built-in master planning
-description: This topic provides information about calculated net requirements and pegging information in built-in master planning.
+description: This article provides information about calculated net requirements and pegging information in built-in master planning.
 author: t-benebo
 ms.date: 04/20/2022
 ms.topic: article

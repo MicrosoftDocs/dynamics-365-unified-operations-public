@@ -2,7 +2,7 @@
 # required metadata
 
 title: Open financial journal templates in Office 
-description: This topic describes issues that might occur when you create custom financial journals by using a Microsoft Excel template.
+description: This article describes issues that might occur when you create custom financial journals by using a Microsoft Excel template.
 author: kweekley
 ms.date: 05/14/2021
 ms.topic: index-page
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.14
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes issues that might occur when you create custom financial journals by using a Microsoft Excel template.
+This article describes issues that might occur when you create custom financial journals by using a Microsoft Excel template.
 
 ## Symptom
 

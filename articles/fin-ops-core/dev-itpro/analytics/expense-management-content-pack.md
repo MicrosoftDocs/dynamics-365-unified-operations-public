@@ -2,7 +2,7 @@
 # required metadata
 
 title: Expense management Power BI content
-description: This topic describes what is included in the Expense management Power BI content pack.
+description: This article describes what is included in the Expense management Power BI content pack.
 author: panolte
 ms.date: 03/18/2019
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes what is included in the Expense management Power BI content. 
+This article describes what is included in the Expense management Power BI content. 
 
 ## Overview
 Two Power BI content packs are available for use with Expense management in version 8.1 and later. 

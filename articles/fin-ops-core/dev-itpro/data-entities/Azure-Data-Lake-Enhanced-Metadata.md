@@ -2,7 +2,7 @@
 # required metadata
 
 title: Data and metadata stored in Azure Data Lake
-description: This topic explains how data and metadata are stored in Microsoft Azure Data Lake.
+description: This article explains how data and metadata are stored in Microsoft Azure Data Lake.
 author: MilindaV2
 ms.date: 03/16/2022
 ms.topic: overview
@@ -69,7 +69,7 @@ When you enable the **Enhanced metadata (preview)** option, the system writes ad
 
 ### Changes introduced by the Enhanced metadata (preview) feature
 
-If you're currently using the Export to Data Lake feature, you will notice the folder structure and metadata in the data lake. When you enable the Enhanced metadata (preview) feature by reinstalling the add-in, you might notice several changes. These changes are described in more detail later in this topic.
+If you're currently using the Export to Data Lake feature, you will notice the folder structure and metadata in the data lake. When you enable the Enhanced metadata (preview) feature by reinstalling the add-in, you might notice several changes. These changes are described in more detail later in this article.
 
 - Data that was previously stored in the Custom folder might be moved to a folder structure that consists of subject areas. These subject areas are based on the metadata that is defined in Dynamics 365. If you're using the metadata files to navigate and find data, you will be able to go to the correct folder structure. However, if you hard-coded the folder structure in consuming tools, you might have to update those tools.
 - In some cases, the folder structure under the Custom folder will remain, together with metadata files. No data files will be present in this folder.

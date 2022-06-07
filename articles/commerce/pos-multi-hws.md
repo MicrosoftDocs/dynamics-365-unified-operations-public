@@ -2,7 +2,7 @@
 # required metadata
 
 title: Dedicated payment terminals and prompts for a printer and cash drawer
-description: This topic provides information about the capability to have a dedicated payment terminal and prompt the user to select a cash drawer and a receipt printer.
+description: This article provides information about the capability to have a dedicated payment terminal and prompt the user to select a cash drawer and a receipt printer.
 author: BrianShook
 ms.date: 05/20/2020
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](includes/banner.md)]
 
-This topic provides information about the capability to have a dedicated payment terminal and prompt the user to select a cash drawer and a receipt printer.
+This article provides information about the capability to have a dedicated payment terminal and prompt the user to select a cash drawer and a receipt printer.
 
 ## Overview
 
@@ -51,7 +51,7 @@ Microsoft Dynamics 365 Commerce supports these trends by enabling a scenario whe
 
 ## Supported POS clients and devices
 
-The functionality that is described in this topic is supported by the Modern POS for Windows and Modern POS for Android POS clients.
+The functionality that is described in this article is supported by the Modern POS for Windows and Modern POS for Android POS clients.
 
 This functionality supports network-enabled payment terminals and receipt printers. You can provide cash drawer support by connecting the cash drawer to the network-enabled receipt printer via the d/k port.
 

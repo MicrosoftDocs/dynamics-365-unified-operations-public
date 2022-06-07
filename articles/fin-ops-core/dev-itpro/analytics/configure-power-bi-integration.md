@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure PowerBI.com integration
-description: This topic describes how to configure a new Finance and Operations environment to support integration with PowerBI.com.
+description: This article describes how to configure a new Finance and Operations environment to support integration with PowerBI.com.
 author: RichdiMSFT
 ms.date: 01/21/2022
 ms.topic: article

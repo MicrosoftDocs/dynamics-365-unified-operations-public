@@ -2,7 +2,7 @@
 # required metadata
 
 title: Asset BOMs
-description: This topic describes asset bills of materials (BOMs) in Asset Management.
+description: This article describes asset bills of materials (BOMs) in Asset Management.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
  
 
-This topic describes asset bills of materials (BOMs) in Asset Management. The **Asset BOM** page shows a list of all items (spare parts and other items) that are used on an asset during its whole lifetime. When you create a new asset, you should consider setting up an asset BOM as a part of the setup procedure. In this way, you can track item history for the asset from the creation date.
+This article describes asset bills of materials (BOMs) in Asset Management. The **Asset BOM** page shows a list of all items (spare parts and other items) that are used on an asset during its whole lifetime. When you create a new asset, you should consider setting up an asset BOM as a part of the setup procedure. In this way, you can track item history for the asset from the creation date.
 
 After you've completed a maintenance job, and item consumption has been registered on a work order, you can track consumption of spare parts and other items that are used on the asset. This functionality lets you keep a complete item consumption record for all your assets. For example, you can use the record to monitor whether a specific spare part is often replaced, or to keep track of the spare parts or other items that are currently used on an asset.
 

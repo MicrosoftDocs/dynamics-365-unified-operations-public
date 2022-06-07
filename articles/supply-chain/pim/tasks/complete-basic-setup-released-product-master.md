@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Complete basic setup of a released product master
-description: This topic shows how to complete the minimum setup that is required before the product master can be used in BOM versions.  
+description: This article shows how to complete the minimum setup that is required before the product master can be used in BOM versions.  
 author: t-benebo
 ms.date: 07/08/2019
 ms.topic: business-process 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic shows how to complete the minimum setup that is required before the product master can be used in BOM versions.
+This article shows how to complete the minimum setup that is required before the product master can be used in BOM versions.
 
 This is the third procedure out of eight which explains how to build combinations for dimension-based configuration. The demo data company used to create this procedure is USMF.
 

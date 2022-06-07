@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure proxies for on-premises environments
-description: This topic describes how you can secure the on-premises environment behind a proxy.
+description: This article describes how you can secure the on-premises environment behind a proxy.
 author: faix
 ms.date: 04/05/2022
 ms.topic: article
@@ -12,7 +12,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks

@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Generate a constrained plan
-description: This topic explains how to create a plan that takes into account both material and capacity constraints. 
+description: This article explains how to create a plan that takes into account both material and capacity constraints. 
 author: t-benebo
 ms.date: 08/02/2019
 ms.topic: business-process 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to create a plan that takes into account both material and capacity constraints. The plan ensures that manufacturing doesn't start before materials are available and resources are not overbooked. 
+This article explains how to create a plan that takes into account both material and capacity constraints. The plan ensures that manufacturing doesn't start before materials are available and resources are not overbooked. 
 
 The demo data company used to create this procedure is USMF. This procedure is intended for the production planner.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Transportation management miscellaneous charges
-description: This topic explains how transportation-generated charges must be associated with a charge code.
+description: This article explains how transportation-generated charges must be associated with a charge code.
 author: Weijiesa
 ms.date: 10/16/2020
 ms.topic: article
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: weijiesa

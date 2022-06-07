@@ -2,7 +2,7 @@
 # required metadata
 
 title: Reverse charge mechanism for VAT/GST scheme
-description: This topic explains how to set up the reverse charge value-added tax (VAT) for European countries, Saudi Arabia, and Singapore.
+description: This article explains how to set up the reverse charge value-added tax (VAT) for European countries, Saudi Arabia, and Singapore.
 author: epodkolz 
 ms.date: 10/05/2020
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes a generic approach for setting up reverse charge functionality for countries/regions that adopt the VAT or GST schemes.
+This article describes a generic approach for setting up reverse charge functionality for countries/regions that adopt the VAT or GST schemes.
                                                                                  
 The country/region availability of the functionality is managed by the following features in the **Feature management** workspace.
 
@@ -39,7 +39,7 @@ The country/region availability of the functionality is managed by the following
 | Reverse   charge for additional countries            | Bahrain  </br>Kuwait  </br>Oman  </br>Qatar                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | Enable   reverse charge mechanism for VAT/GST scheme | All other countries/regions   except:  </br>Brazil  </br>India  </br>Russia                                                                                                                                                                                                                                                                                                                                                                                         |
  
- For more information, see the [Enable Reverse charge mechanism for VAT/GST scheme feature](#enable-reverse-charge) section later in this topic.
+ For more information, see the [Enable Reverse charge mechanism for VAT/GST scheme feature](#enable-reverse-charge) section later in this article.
 
 Reverse Charge is a tax schema that moves the responsibility for the accounting and reporting of VAT from the seller to the buyer of goods and/or services. Therefore, recipients of goods and/or services report both the output VAT (in the role of a seller) and the input VAT (in the role of a purchaser) on their VAT statement.
 

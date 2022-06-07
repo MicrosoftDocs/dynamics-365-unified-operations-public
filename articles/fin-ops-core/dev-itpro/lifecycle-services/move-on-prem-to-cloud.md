@@ -2,7 +2,7 @@
 # required metadata
 
 title: Move LCS implementation projects from on-premises to the cloud
-description: This topic explains how to move your Microsoft Dynamics 365 Finance + Operations (on-premises) environments to the cloud.
+description: This article explains how to move your Microsoft Dynamics 365 Finance + Operations (on-premises) environments to the cloud.
 author: MartinWalkerDynSA
 ms.date: 02/02/2021
 ms.topic: article
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.13
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to move your Microsoft Dynamics 365 Finance + Operations (on-premises) environments that are hosted on your own infrastructure to the Azure cloud.
+This article explains how to move your Microsoft Dynamics 365 Finance + Operations (on-premises) environments that are hosted on your own infrastructure to the Azure cloud.
 
 ## Cloud subscription licenses
 
@@ -45,7 +45,7 @@ After your LCS cloud implementation project has been created, you must fully con
 
 ## Complete development and testing of updated integrations
 
-You will probably have to make some changes to the integration design patterns that you used for interfaces with your Finance + Operations (on-premises) environment. These changes can be substantial, and a detailed discussion of them is beyond the scope of this topic. Nevertheless, you must evaluate all your interfaces and make the appropriate changes to them.
+You will probably have to make some changes to the integration design patterns that you used for interfaces with your Finance + Operations (on-premises) environment. These changes can be substantial, and a detailed discussion of them is beyond the scope of this article. Nevertheless, you must evaluate all your interfaces and make the appropriate changes to them.
 
 You should consider developing your updated interfaces in such a way that they can coexist in the same code base as the original interfaces. This approach will simplify code lifecycle management during the period of your transition from on-premises to cloud. If this approach isn't possible, you must manage a new development branch through your cloud go-live. To simplify management of this new branch during the transition period, we recommend that you freeze other code changes as much as you can. Additionally, in your detailed cut-over plan, you should carefully document the steps for inactivating your old interfaces and activating the new interfaces.
 
@@ -88,7 +88,7 @@ You should consider developing your updated interfaces in such a way that they c
 
 6. Reimport all other users, and assign the appropriate security roles.
 7. Direct printing in a cloud environment is done via the Document Routing Agent (DRA). Set up sandbox DRAs as described in [Install the Document Routing Agent to enable network printing](../analytics/install-document-routing-agent.md), so that regression testing can include your printing scenarios.
-8. Copy document handling attachments to the cloud. Document handling attachments aren't stored in the database. If they must be preserved, you must move them separately. For instructions, see the [Migrate document handling attachments to your sandbox](#migrate-document-handling-attachments-to-your-sandbox) section later in this topic.
+8. Copy document handling attachments to the cloud. Document handling attachments aren't stored in the database. If they must be preserved, you must move them separately. For instructions, see the [Migrate document handling attachments to your sandbox](#migrate-document-handling-attachments-to-your-sandbox) section later in this article.
 9. Run a complete regression test cycle. This cycle should include testing of integrations.
 10. Resolve any issues that are discovered during testing. For each issue, document and keep track of the correcting adjustments that you make in the sandbox, and repeat them in the on-premises source. If any change must not be made in the on-premises environment, because it's incompatible with the correct functioning of that environment, we recommend that you create a DMF data package for it instead of manually applying it for each iteration of the migration process.
 11. Repeat steps 2 through 10 until all tests have been passed, and no further changes are being made to code or the configuration.

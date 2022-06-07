@@ -2,7 +2,7 @@
 # required metadata
 
 title: Business events and Azure Event Grid
-description: This topic explains how to configure a Microsoft Azure Event Grid endpoint, and how to consume a business event from Event Grid.
+description: This article explains how to configure a Microsoft Azure Event Grid endpoint, and how to consume a business event from Event Grid.
 author: Sunil-Garg
 ms.date: 10/30/2019
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
@@ -26,7 +26,7 @@ ms.dyn365.ops.version: 2019-6-30
 # Business events and Azure Event Grid
 [!include[banner](../../includes/banner.md)]
 
-This topic explains how to configure a Microsoft Azure Event Grid endpoint, and how to consume a business event from Event Grid.
+This article explains how to configure a Microsoft Azure Event Grid endpoint, and how to consume a business event from Event Grid.
 
 ## Scenario overview
 
@@ -39,20 +39,20 @@ Here are two of the many benefits of this approach:
 
 Here is an overview of the procedures that you must complete:
 
-1. Create a new event grid topic.
-2. Create a new key vault to store the key for the event grid topic.
+1. Create a new event grid article.
+2. Create a new key vault to store the key for the event grid article.
 3. Register an Azure app that has permission to access the key vault.
 4. Configure the parameters of the endpoint.
 5. Consume the business event.
 
-## Procedure 1: Create a new event grid topic
+## Procedure 1: Create a new event grid article
 
 1. Sign in to the Azure portal.
 2. Select **All services \> Integration \> Event Grid Topics**.
-3. Select **Add** to create a new event grid topic. Set the parameters, and then select **Create**. You can create a new resource group as a container for your lab, or you can use an existing resource group.
+3. Select **Add** to create a new event grid article. Set the parameters, and then select **Create**. You can create a new resource group as a container for your lab, or you can use an existing resource group.
 4. After deployment is completed, select the new event grid. On the property blade, select **Overview**, and make a note of the **Topic Endpoint** value. You will need this value later.
 
-    <img alt="Event grid topic" src="../../media/BEF-Howto-EventGrid-03.png" width="70%">
+    <img alt="Event grid article" src="../../media/BEF-Howto-EventGrid-03.png" width="70%">
 
 5. Back on the property blade, select **Access keys**, and copy the **Key 1** value. You will need this value when you configure the key vault in the next procedure.
 
@@ -126,11 +126,11 @@ The business scenario involves sending an email message whenever a free text inv
 
 1. Select the business event catalog and look for **free text invoice posted** business event.
 2. Then activate the business event for USMF company. Once activated, a test message is sent to validate the configuration and cache the connection.
-3. To verify that the test message has been received, in the Azure portal, select your event grid topic, and then select **Metrics**. Verify that both the **Published Events** metric and the **Unmatched Events** metric show a value of at least **1**. If they don't, wait for the batch job to pick up your message.
+3. To verify that the test message has been received, in the Azure portal, select your event grid article, and then select **Metrics**. Verify that both the **Published Events** metric and the **Unmatched Events** metric show a value of at least **1**. If they don't, wait for the batch job to pick up your message.
 
     <img alt="Event grid metrics" src="../../media/BEF-Howto-EventGrid-08.png" width="70%">
 
-    When both metrics have a value of at least **1**, you will create a new logic app to subscribe to your event grid topic.
+    When both metrics have a value of at least **1**, you will create a new logic app to subscribe to your event grid article.
 
 4. Select **All services \> Integration \> Logic Apps**.
 5. Create a new logic app in your resource group.
@@ -142,7 +142,7 @@ The business scenario involves sending an email message whenever a free text inv
 
     <img alt="Event grid trigger" src="../../media/BEF-Howto-EventGrid-11.png" width="50%">
 
-8. Select your subscription, select **Microsoft.EventGrid.Topics** as the resource type, and select the name of the event grid topic that you created in procedure 1.
+8. Select your subscription, select **Microsoft.EventGrid.Topics** as the resource type, and select the name of the event grid article that you created in procedure 1.
 
     <img alt="Event grid trigger parameters" src="../../media/BEF-Howto-EventGrid-12.png" width="50%">
 

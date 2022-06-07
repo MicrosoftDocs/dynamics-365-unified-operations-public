@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configuration data packages
-description: This topic provides an overview of the configuration data packages for the July 2017 release of Microsoft Dynamics 365 for Finance and Operations.
+description: This article provides an overview of the configuration data packages for the July 2017 release of Microsoft Dynamics 365 for Finance and Operations.
 author: saraschi2
 ms.date: 12/20/2017
 ms.topic: article
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 8
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 > [!IMPORTANT]
-> This topic applies only to the July 2017 release of Microsoft Dynamics 365 for Finance and Operations. If you are running a later release, refer to the topic [Copy configuration data between companies or legal entities overview](copy-configuration.md). 
+> This article applies only to the July 2017 release of Microsoft Dynamics 365 for Finance and Operations. If you are running a later release, refer to the article [Copy configuration data between companies or legal entities overview](copy-configuration.md). 
 
 Configuration data packages are available as process data packages from Microsoft Dynamics Lifecycle Services (LCS). These data packages can help improve the repeatability of implementations and accelerate the configuration.
 
@@ -45,7 +45,7 @@ The entity spreadsheets include three types of data:
 - **Sample data** – The spreadsheet contains data that can be used as an example for business-specific data. This data can be imported and used as an example, but it must be changed for individual business practices.
 - **No data** – The spreadsheet doesn't contain any data. Several areas of the product are unique to each business and its business practices. These areas must be configured specifically for the organization. These spreadsheets should be reviewed and updated for the organization as appropriate.
 
-For more information about the type of data that is included in each entity spreadsheet in the data packages see the [Data packages](#data-packages-system) section of this topic. You can modify individual spreadsheets before you import the data packages, or you can import the data packages as they have been supplied and then update your data in the system.
+For more information about the type of data that is included in each entity spreadsheet in the data packages see the [Data packages](#data-packages-system) section of this article. You can modify individual spreadsheets before you import the data packages, or you can import the data packages as they have been supplied and then update your data in the system.
 
 ## Using configuration data packages
 You can access configuration data packages from LCS. You can either apply them to an LCS environment, or download them so that you can manually import them.

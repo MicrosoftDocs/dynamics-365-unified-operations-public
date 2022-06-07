@@ -2,7 +2,7 @@
 # required metadata
 
 title: Embed canvas apps from Power Apps
-description: This topic explains how to embed canvas apps from Microsoft Power Apps into the client to augment the product's functionality.
+description: This article explains how to embed canvas apps from Microsoft Power Apps into the client to augment the product's functionality.
 author: jasongre
 ms.date: 09/13/2021
 ms.topic: article
@@ -37,7 +37,7 @@ To learn more about embedding canvas apps, watch the short [How to embed canvas 
 
 ## Adding an embedded canvas app from Power Apps to a page
 
-Before you embed a canvas app from Power Apps into the client, you must find or build an app that has the desired visuals or functionality. This topic doesn't include a detailed description of the process for building apps. If you're new to Power Apps, see the [Power Apps documentation](/powerapps/).
+Before you embed a canvas app from Power Apps into the client, you must find or build an app that has the desired visuals or functionality. This article doesn't include a detailed description of the process for building apps. If you're new to Power Apps, see the [Power Apps documentation](/powerapps/).
 
 There are three ways to embed a canvas app into a Finance and Operations app. You can use the approach that best fits your scenario. 
 
@@ -64,7 +64,7 @@ The following procedure shows how to embed a canvas app on an existing page from
 
     - If the app will be accessed by using the **Power Apps** menu button, you can select the **Power Apps** menu button on the standard Action Pane and then select **Add an app**.
 
-3. Configure the embedded app. For more information, see the [Configuring a canvas app](#configuring-a-canvas-app) section later in this topic.
+3. Configure the embedded app. For more information, see the [Configuring a canvas app](#configuring-a-canvas-app) section later in this article.
 4. After you confirm that the configuration is correct, select **Insert**.
 
     - If the **Saved views** feature is turned off, you're prompted to refresh the browser to see the embedded app.
@@ -80,7 +80,7 @@ You might want to embed a canvas app from the dashboard if the app isn't related
 1. Open the dashboard.
 2. Select and hold (or right-click) the page, select **Personalize**, and then select **Add a page**.
 3. In the **Add a page** pane, select **Power Apps**.
-4. Configure the embedded app. For more information, see the [Configuring a canvas app](#configuring-a-canvas-app) section later in this topic.
+4. Configure the embedded app. For more information, see the [Configuring a canvas app](#configuring-a-canvas-app) section later in this article.
 5. Select **Save** to add the app to the dashboard as a new tile.
 6. Select the new tile on the dashboard, and confirm that the canvas app appears as expected.
 
@@ -90,7 +90,7 @@ When you embed a canvas app, you must set the following parameters:
 
 - **Name** – Enter the text that should be shown for the button or tab that will contain the embedded app. Often, you might want to repeat the name of the app in this field.
 - **App ID** – Specify the globally unique identifier (GUID) for the canvas app that you want to embed. To retrieve this value, find the app on [make.powerapps.com](https://make.powerapps.com), and then look in the **App ID** field under **Details**.
-- **Input context for the app** – You can optionally select the field that contains the data that you want to pass to the app as input. For information about how the app can access the data that is sent from Finance and Operations apps, see the [Building an app that leverages data sent from Finance and Operations apps](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps) section later in this topic.
+- **Input context for the app** – You can optionally select the field that contains the data that you want to pass to the app as input. For information about how the app can access the data that is sent from Finance and Operations apps, see the [Building an app that leverages data sent from Finance and Operations apps](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps) section later in this article.
 
     As of version 10.0.19, the current legal entity is also passed to the canvas app as context, via the **cmp** URL parameter. This behavior won't affect on the target canvas app until that app uses that information.
 
@@ -149,7 +149,7 @@ Follow these steps to edit the configuration of an embedded app:
 
 After an app has been embedded onto a page, there are a few ways to remove it if needed:
 
-- Go to the **Edit an app** pane using the instructions from the [Editing an embedded app](#editing-an-embedded-app) section earlier in this topic. Confirm that the pane displays information for the embedded app that you would like to remove, and then click the **Delete** button.
+- Go to the **Edit an app** pane using the instructions from the [Editing an embedded app](#editing-an-embedded-app) section earlier in this article. Confirm that the pane displays information for the embedded app that you would like to remove, and then click the **Delete** button.
 - If the embedded app was added from the dashboard, open the dashboard, select and hold (or right-click) the tile that is associated with the canvas app, select **Personalize**, and then select **Remove page**. 
 - Because the embedded app is saved as personalization data, clearing your page's personalization will also remove any embedded apps on that page. Note that clearing the page's personalization is permanent and cannot be undone. To remove your personalizations on a page, select **Options**, and then **Personalize this page**, and finally the **Clear** button. After refreshing your browser, all the previous personalizations for this page will be removed. See [Personalize the user experience](personalize-user-experience.md) for more information about how to optimize pages using personalization.
 
@@ -157,7 +157,7 @@ After an app has been embedded onto a page, there are a few ways to remove it if
 
 ### [Developer] Modeling a canvas app on a form
 
-While this topic focuses on embedding canvas apps through personalization, developers also have the option to add a canvas app to a form using the Visual Studio development experience. To do this, simply add a PowerAppsHostControl to the form. The metadata properties available on the control provide the same capabilities as the personalization experience.
+While this article focuses on embedding canvas apps through personalization, developers also have the option to add a canvas app to a form using the Visual Studio development experience. To do this, simply add a PowerAppsHostControl to the form. The metadata properties available on the control provide the same capabilities as the personalization experience.
 
 ### [Developer] Specifying where an app can be embedded
 

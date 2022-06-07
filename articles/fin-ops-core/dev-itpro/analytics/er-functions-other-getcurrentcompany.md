@@ -2,7 +2,7 @@
 # required metadata
 
 title: GETCURRENTCOMPANY ER function
-description: This topic provides information about how the GETCURRENTCOMPANY Electronic reporting (ER) function is used.
+description: This article provides information about how the GETCURRENTCOMPANY Electronic reporting (ER) function is used.
 author: NickSelin
 ms.date: 12/17/2019
 ms.prod: 

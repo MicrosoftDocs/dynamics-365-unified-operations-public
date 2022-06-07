@@ -2,7 +2,7 @@
 # required metadata
 
 title: Filtering options
-description: This topic explains the filtering options that are available.
+description: This article explains the filtering options that are available.
 author: jasongre
 ms.date: 03/07/2022
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains the filtering options that are available.
+This article explains the filtering options that are available.
 
 ## Introduction
 

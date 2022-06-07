@@ -1,6 +1,6 @@
 ---
 title: Unified product experience
-description: This topic describes the integration of product data between Finance and Operations apps and Dataverse.
+description: This article describes the integration of product data between Finance and Operations apps and Dataverse.
 author: t-benebo
 ms.date: 12/12/2019
 ms.topic: article
@@ -121,7 +121,7 @@ Finance and operations apps | Customer engagement apps |
 
 ## Default order settings and product-specific default order settings
 
-Default order settings define the site and warehouse where items will be sourced from or stored, the minimum, maximum, multiple and standard quantities that will be used for trading or inventory management, the lead times, the stop flag, and the order promising method. This information is available in Dataverse using the default order settings and product-specific default order settings entity. You can read more information about the functionality in the [Default order settings topic](../../../../supply-chain/production-control/default-order-settings.md).
+Default order settings define the site and warehouse where items will be sourced from or stored, the minimum, maximum, multiple and standard quantities that will be used for trading or inventory management, the lead times, the stop flag, and the order promising method. This information is available in Dataverse using the default order settings and product-specific default order settings entity. You can read more information about the functionality in the [Default order settings article](../../../../supply-chain/production-control/default-order-settings.md).
 
 Finance and operations apps | Customer engagement apps |
 ---|---

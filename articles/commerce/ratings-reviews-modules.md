@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Ratings and reviews modules
-description: This topic covers ratings and reviews modules used on product details pages in Microsoft Dynamics 365 Commerce.
+description: This article covers ratings and reviews modules used on product details pages in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 09/15/2020
 ms.topic: article
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Release 10.0.6
 
 [!include [banner](includes/banner.md)]
 
-This topic covers ratings and reviews modules used on product details pages (PDPs) in Microsoft Dynamics 365 Commerce.
+This article covers ratings and reviews modules used on product details pages (PDPs) in Microsoft Dynamics 365 Commerce.
 
 Ratings and reviews on e-Commerce websites help customers learn about products before they make a purchase decision, and are also a mechanism for collecting customer feedback about products. 
 

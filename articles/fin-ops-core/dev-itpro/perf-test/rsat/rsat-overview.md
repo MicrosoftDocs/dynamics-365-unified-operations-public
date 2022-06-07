@@ -30,7 +30,7 @@ The Regression suite automation tool (RSAT) significantly reduces the time and c
 
 RSAT is fully integrated with Microsoft Azure DevOps for test execution, reporting, and investigation. Test parameters are decoupled from test steps and stored in Microsoft Excel files.
 
-In addition to this topic, RSAT usage is described in these topics:
+In addition to this article, RSAT usage is described in these topics:
 
 + [Regression suite automation tool (RSAT) installation and configuration](rsat-install-configure.md)
 + [Run Regression suite automation tool (RSAT) test cases](rsat-run.md)

@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: VAT declaration (Russia)
-description: This topic provides information about the VAT declaration for Russia.
+description: This article provides information about the VAT declaration for Russia.
 author: anasyash
 ms.date: 04/25/2022
 ms.topic: article
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 10.0.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the the value-added tax (VAT) declaration for Russia. It includes instructions for setting up and generating the VAT declaration.
+This article provides information about the the value-added tax (VAT) declaration for Russia. It includes instructions for setting up and generating the VAT declaration.
 
 ## Set up the VAT declaration
 
@@ -228,7 +228,7 @@ You should define the following names for financial report cells. In this way, t
 
 
 > [!NOTE]
-> Requisites that are marked with an asterisk (\*) in the preceding tables are automatically calculated based on registered documents, as described earlier in this topic. If you set up financial report calculation rules for the report cells for those requisites, the calculated amounts of the financial report will be added to the amounts that are automatically calculated. For information about how to replace the automatic calculation with the financial report cell calculation, see the [Customize section 3 of the VAT declaration](#customize-section-3-of-the-vat-declaration) section of this topic.
+> Requisites that are marked with an asterisk (\*) in the preceding tables are automatically calculated based on registered documents, as described earlier in this article. If you set up financial report calculation rules for the report cells for those requisites, the calculated amounts of the financial report will be added to the amounts that are automatically calculated. For information about how to replace the automatic calculation with the financial report cell calculation, see the [Customize section 3 of the VAT declaration](#customize-section-3-of-the-vat-declaration) section of this article.
 
 The setup of the financial report for the VAT declaration from the **VAT declaration v.5.08 v.5.09 package.zip** data package in the LCS Shared asset library contains the required names of the cells.
 

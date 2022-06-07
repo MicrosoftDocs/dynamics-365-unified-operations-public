@@ -2,7 +2,7 @@
 # required metadata
 
 title: Three-way matching policies
-description: This topic provides examples of three-way matching.
+description: This article provides examples of three-way matching.
 author: abruer
 ms.date: 02/11/2022
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides examples of three-way matching.
+This article provides examples of three-way matching.
 
 ## Example: Three-way matching for items
 

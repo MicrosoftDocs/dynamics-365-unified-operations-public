@@ -2,7 +2,7 @@
 # required metadata
 
 title: Lithuanian Intrastat
-description: This topic contains information about the Lithuanian Intrastat report.
+description: This article contains information about the Lithuanian Intrastat report.
 author: andosip
 ms.date: 05/19/2022
 ms.topic: article

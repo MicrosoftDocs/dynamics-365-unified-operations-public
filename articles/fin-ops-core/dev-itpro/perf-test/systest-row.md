@@ -1,6 +1,6 @@
 ---
 title: SysTestRow attribute for testing multiple values
-description: This topic outlines the SysTestRow attribute that can be used with SysTest methods to test multiple values.
+description: This article outlines the SysTestRow attribute that can be used with SysTest methods to test multiple values.
 author: jorisdg
 ms.date: 01/13/2022
 ms.topic: article

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Customer electronic invoices in Denmark
-description: This topic explains how to set up and process electronic invoices in Denmark.
+description: This article explains how to set up and process electronic invoices in Denmark.
 author: ilkond
 ms.date: 12/20/2021
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.21
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to configure and issue customer electronic invoices in Denmark by using the [OIOUBL](http://www.oioubl.info/Classes/da/Invoice.html) format for electronic invoices.
+This article explains how to configure and issue customer electronic invoices in Denmark by using the [OIOUBL](http://www.oioubl.info/Classes/da/Invoice.html) format for electronic invoices.
 
 ## Prerequisites
 

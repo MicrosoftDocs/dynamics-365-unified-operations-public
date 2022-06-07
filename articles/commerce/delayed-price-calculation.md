@@ -2,7 +2,7 @@
 # required metadata
 
 title: Delay exact price and discount calculation for improved performance
-description: This topic describes the delayed price calculation capability that is available in Microsoft Dynamics 365 Commerce point of sale (POS) and call center.
+description: This article describes the delayed price calculation capability that is available in Microsoft Dynamics 365 Commerce point of sale (POS) and call center.
 author: boycezhu
 ms.date: 09/09/2021
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.validFrom: 2017-06-20
 
 [!include [banner](includes/banner.md)]
 
-This topic describes the delayed price calculation capability that is available in Microsoft Dynamics 365 Commerce point of sale (POS) and call center.
+This article describes the delayed price calculation capability that is available in Microsoft Dynamics 365 Commerce point of sale (POS) and call center.
 
 Dynamics 365 Commerce supports the creation of multiline discounts that are applied when multiple sales lines of a sales order or sales quotation are combined. These discounts include mix and match, threshold, and quantity discounts.
 

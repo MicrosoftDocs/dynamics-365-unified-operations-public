@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create deployable packages
-description: This topic explains how to create a deployable package for Microsoft Dynamics 365 Commerce.
+description: This article explains how to create a deployable package for Microsoft Dynamics 365 Commerce.
 author: mugunthanm
 ms.date: 11/30/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to create a Commerce deployable package (which is a package that contain all the extensions) for the following components and deploy the package to your environment by using Microsoft Dynamics Lifecycle Services (LCS):
+This article explains how to create a Commerce deployable package (which is a package that contain all the extensions) for the following components and deploy the package to your environment by using Microsoft Dynamics Lifecycle Services (LCS):
 
 - Commerce runtime (CRT)
 - Commerce proxy
@@ -55,7 +55,7 @@ The following table lists Commerce package types for deployment:
 
 ## Retail deployable package
 
-Retail deployable package is one combined package that contains all your customizations together with all the metadata that is required for deployment. You can use this deployable package to deploy your customizations to various environments. You can do the deployment by using the automated flow in LCS, or you can do it manually by using the scripts that are provided inside the package. This topic guides you through the process of generating the deployable package.
+Retail deployable package is one combined package that contains all your customizations together with all the metadata that is required for deployment. You can use this deployable package to deploy your customizations to various environments. You can do the deployment by using the automated flow in LCS, or you can do it manually by using the scripts that are provided inside the package. This article guides you through the process of generating the deployable package.
 
 > [!IMPORTANT]
 > All customizations for the Commerce components are packaged as a single deployable package. Separate packages for individual components, such as Modern POS, Cloud POS, Commerce Scale Unit, CRT are not supported. You must package all extensions as a single deployable package, even if you must merge or combine extensions from independent software vendors (ISVs) or various partners.
@@ -121,7 +121,7 @@ To create a payment package, follow the steps in [Create Commerce payment packag
 
 ## Steps to create a combined Retail deployable package
 
-There are two ways to generate a commerce deployable package. You can use the Commerce build automation, or you can generate the package manually by using the build tools in the Retail SDK. This topic focuses on the manual method.
+There are two ways to generate a commerce deployable package. You can use the Commerce build automation, or you can generate the package manually by using the build tools in the Retail SDK. This article focuses on the manual method.
 
 1. Customize or add functionality to the Commerce stack.
 2. Use the build tools to identify the customized installation package, code-sign it, and specify the customized CRT, Commerce Scale Unit, and Hardware station assemblies, and customized database scripts.

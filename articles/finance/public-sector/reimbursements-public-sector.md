@@ -2,7 +2,7 @@
 # required metadata
 
 title: Reimbursements in the public sector
-description: This topic answers common questions related to reimbursements in the public sector. 
+description: This article answers common questions related to reimbursements in the public sector. 
 author: v-kiarnd
 ms.date: 06/20/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic answers common questions related to reimbursements in the public sector. 
+This article answers common questions related to reimbursements in the public sector. 
 
 ## What happens if I create a separate reimbursement transaction for each billing classification?
 

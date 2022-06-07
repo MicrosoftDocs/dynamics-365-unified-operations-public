@@ -2,7 +2,7 @@
 # required metadata
 
 title: Vendor collaboration with external vendors
-description: This topic explains how purchasing agents can collaborate with external vendors to exchange information about purchase orders and consignment inventory.
+description: This article explains how purchasing agents can collaborate with external vendors to exchange information about purchase orders and consignment inventory.
 author: GalynaFedorova
 ms.date: 11/02/2017
 ms.topic: article
@@ -31,12 +31,12 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-The **Vendor collaboration** module is targeted at vendors who don't have electronic data interchange (EDI) integration with Microsoft Dynamics 365 Supply Chain Management. It lets vendors work with purchase orders (POs), invoices, consignment inventory information, and requests for quotation (RFQs), and also lets them access parts of their vendor master data. This topic explains how you can collaborate with external vendors who use the vendor collaboration interface to work with POs, RFQs, and consignment inventory. It also explains how to enable a specific vendor to use vendor collaboration, and how to define the information that all vendors see when they respond to a PO.
+The **Vendor collaboration** module is targeted at vendors who don't have electronic data interchange (EDI) integration with Microsoft Dynamics 365 Supply Chain Management. It lets vendors work with purchase orders (POs), invoices, consignment inventory information, and requests for quotation (RFQs), and also lets them access parts of their vendor master data. This article explains how you can collaborate with external vendors who use the vendor collaboration interface to work with POs, RFQs, and consignment inventory. It also explains how to enable a specific vendor to use vendor collaboration, and how to define the information that all vendors see when they respond to a PO.
 
 For more information about what external vendors can do in the vendor collaboration interface, see [Vendor collaboration with customers](vendor-collaboration-work-customers-dynamics-365-operations.md).
 
 > [!NOTE]
-> The information about vendor collaboration in this topic applies only to the current version of Supply Chain Management. In Microsoft Dynamics AX 7.0 (February 2016) and Microsoft Dynamics AX application version 7.0.1 (May 2016), you collaborate with vendors by using the **Vendor portal** module. For information about the **Vendor portal** module, see [Collaborate with vendors by using the Vendor portal](collaborate-vendors-vendor-portal.md).
+> The information about vendor collaboration in this article applies only to the current version of Supply Chain Management. In Microsoft Dynamics AX 7.0 (February 2016) and Microsoft Dynamics AX application version 7.0.1 (May 2016), you collaborate with vendors by using the **Vendor portal** module. For information about the **Vendor portal** module, see [Collaborate with vendors by using the Vendor portal](collaborate-vendors-vendor-portal.md).
 
 For more information about how vendors can use vendor collaboration in invoicing processes, see [Vendor collaboration invoicing workspace](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md). For information about how to provision new vendor collaboration users, see [Manage vendor collaboration users](manage-vendor-collaboration-users.md).
 
@@ -117,7 +117,7 @@ The PO that was sent to the vendor and that has a status of <strong>In External 
 <li>Substitute an item.</li>
 </ul>
 The vendor can&#39;t change price information and charges. However, the vendor can suggest these changes by using notes.</td>
-<td>The vendor response is recorded as <strong>Accepted with changes</strong>, and the status of the PO remains <strong>In External Review</strong>. The statuses show the types of changes that the vendor has suggested. For information about the automatic consumption of changes, see the &quot;Update the PO when a vendor suggests changes&quot; section later in this topic. </td>
+<td>The vendor response is recorded as <strong>Accepted with changes</strong>, and the status of the PO remains <strong>In External Review</strong>. The statuses show the types of changes that the vendor has suggested. For information about the automatic consumption of changes, see the &quot;Update the PO when a vendor suggests changes&quot; section later in this article. </td>
 </tr>
 </tbody>
 </table>

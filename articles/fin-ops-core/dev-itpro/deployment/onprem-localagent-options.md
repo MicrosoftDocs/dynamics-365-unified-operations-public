@@ -2,7 +2,7 @@
 # required metadata
 
 title: Deployment configurations for the local agent
-description: This topic explains which deployment configurations can be specified, when deploying the local agent, to indicate a special configuration related to the environment.
+description: This article explains which deployment configurations can be specified, when deploying the local agent, to indicate a special configuration related to the environment.
 author: faix
 ms.date: 10/06/2021
 ms.topic: article
@@ -18,7 +18,7 @@ ms.search.validFrom: 2021-08-03
 
 # Deployment configurations for the local agent
 
-This topic explains which deployment configurations can be specified, when deploying the local agent, to indicate a special configuration related to the environment.
+This article explains which deployment configurations can be specified, when deploying the local agent, to indicate a special configuration related to the environment.
 
 There is a section in the localagent-config.json file that is labeled deploymentOptions. This can be modified before installing the local agent.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Reconcile freight in transportation management
-description: This topic describes the freight reconciliation process.
+description: This article describes the freight reconciliation process.
 author: Weijiesa
 ms.date: 06/20/2017
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the freight reconciliation process.
+This article describes the freight reconciliation process.
 
 Freight reconciliation can be done manually, or it can be set up to occur automatically. To use automatic freight reconciliation, you must set up an audit master where you can define criteria that determine which freight bills are matched automatically.
 

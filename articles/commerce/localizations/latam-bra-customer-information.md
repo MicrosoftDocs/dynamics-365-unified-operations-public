@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage customer information in POS for Brazil
-description: This topic describes how to manage customer information in Commerce point of sale (POS) for Brazil.
+description: This article describes how to manage customer information in Commerce point of sale (POS) for Brazil.
 author: akviklis
 manager: annbe
 ms.date: 12/01/2021
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to manage customer information in Commerce point of sale (POS) for Brazil. This information includes CNPJ (Cadastro Nacional da Pessoa Jurídica)/CPF (Cadastro de Pessoas Físicas), CCM (Cadastro de Contribuinte Mobiliário), and IE (Inscrição Estadual) numbers. 
+This article describes how to manage customer information in Commerce point of sale (POS) for Brazil. This information includes CNPJ (Cadastro Nacional da Pessoa Jurídica)/CPF (Cadastro de Pessoas Físicas), CCM (Cadastro de Contribuinte Mobiliário), and IE (Inscrição Estadual) numbers. 
 
 You can specify customer tax registration number, name, and address information when you create or edit a named customer master record and a customer address record in POS. You can also manually enter the minimum required information (including the CNPJ number) for a sales transaction. Customer tax registration numbers can then be used for customer searches in POS, added to the cart, printed on DANFE (Documento Auxiliar de Nota Fiscal Eletrônica) fiscal receipts, and used for invoicing purposes.
 

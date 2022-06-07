@@ -2,7 +2,7 @@
 # required metadata
 
 title: Customer electronic invoices in Germany (DE-00022)
-description: This topic explains how to set up and process customer electronic invoices in Germany.
+description: This article explains how to set up and process customer electronic invoices in Germany.
 author: ilkond
 ms.date: 10/05/2020
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.16
 
 To comply with European Union (EU) Directive 2014/55/EU, the Germany-specific **xRechnung** format, version 1.2, has been implemented.
 
-This topic explains how to set up and process customer electronic invoices in **xRechnung** format.
+This article explains how to set up and process customer electronic invoices in **xRechnung** format.
 
 ## Prerequisites
 

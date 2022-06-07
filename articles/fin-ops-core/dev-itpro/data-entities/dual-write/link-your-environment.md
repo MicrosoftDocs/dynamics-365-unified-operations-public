@@ -1,6 +1,6 @@
 ---
 title: Use the dual-write wizard to link your environments
-description: This topic explains how to use the dual-write wizard to link a Finance and Operations app environment to your Dataverse environment.
+description: This article explains how to use the dual-write wizard to link a Finance and Operations app environment to your Dataverse environment.
 author: nhelgren
 ms.date: 05/08/2020
 ms.topic: article

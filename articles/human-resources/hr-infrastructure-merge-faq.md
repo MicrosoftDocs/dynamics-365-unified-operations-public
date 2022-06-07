@@ -3,7 +3,7 @@
 # required metadata
 
 title: Dynamics 365 Human Resources infrastructure merge FAQ
-description: This topic answers frequently asked questions about the infrastructure merge for Microsoft Dynamics 365 Human Resources and Finance and Operations apps.
+description: This article answers frequently asked questions about the infrastructure merge for Microsoft Dynamics 365 Human Resources and Finance and Operations apps.
 author: twheeloc
 ms.date: 08/13/2021
 ms.topic: article
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Human Resources
 
 
 
-This topic answers frequently asked questions about the infrastructure merge for Microsoft Dynamics 365 Human Resources and Finance and Operations apps.
+This article answers frequently asked questions about the infrastructure merge for Microsoft Dynamics 365 Human Resources and Finance and Operations apps.
 
 ## What is the Dynamics 365 Human Resources infrastructure merge?
 
@@ -138,6 +138,9 @@ It depends on the integration endpoint. For more information about the integrati
 If the Dynamics 365 Human Resources and Finance and Operations environments that will be joined in the environment on the new infrastructure are connected to the same Dataverse environment, the two apps will continue to be connected to the same Dataverse environment after the migration. No migration will be required for any Dataverse extensions.
 
 However, if the Dynamics 365 Human Resources and Finance and Operations environments are currently connected to separate Dataverse environments, the two Dataverse environments will have to be combined so that they are connected to a single environment on the new infrastructure. For this Dataverse migration, the Dataverse tables that are standard to the Human Resources solutions can be connected to and resynchronized with the new Dataverse environment. Any extensions to the Dataverse environment won't be migrated automatically but must be redeployed in the new environment. We recommend that you use managed solutions to manage your Dataverse extensions. For more information, see [Introduction to solutions](/powerapps/developer/data-platform/introduction-solutions).
+
+### We have utilized the custom field functionality within Dynamics 365 Human Resources, will those custom fields migrate automatically?
+Yes, the custom fields that have been added will migrate to the new infrastructure.
 
 ### We have configured Microsoft Power Automate flows and/or Microsoft Power Apps to work with Dynamics 365 Human Resources. Will these Microsoft Power Platform components be migrated and work automatically after the infrastructure change is completed?
 

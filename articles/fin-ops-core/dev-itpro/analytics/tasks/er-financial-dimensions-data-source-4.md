@@ -2,7 +2,7 @@
 # required metadata 
  
 title: ER Use financial dimensions as a data source (Part 4 - Run the report)
-description: This topic describes how to configure an Electronic reporting (ER) model to use financial dimensions as a data source for ER reports. (Part 4)
+description: This article describes how to configure an Electronic reporting (ER) model to use financial dimensions as a data source for ER reports. (Part 4)
 author: NickSelin
 ms.date: 05/27/2020
 ms.topic: business-process 

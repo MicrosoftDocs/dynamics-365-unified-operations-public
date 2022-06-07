@@ -2,7 +2,7 @@
 # required metadata
 
 title: Small parcel shipping
-description: This topic provides information about the small parcel shipping (SPS) feature. This feature enables Microsoft Dynamics 365 Supply Chain Management to submit details about a packed container to the carrier, and then receive a shipping label, shipping rate, and tracking number back from that carrier.
+description: This article provides information about the small parcel shipping (SPS) feature. This feature enables Microsoft Dynamics 365 Supply Chain Management to submit details about a packed container to the carrier, and then receive a shipping label, shipping rate, and tracking number back from that carrier.
 author: Mirzaab
 ms.date: 01/08/2021
 ms.topic: article
@@ -17,7 +17,7 @@ audience: Application User
 ms.reviewer: kamaybac
 
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
@@ -60,7 +60,7 @@ Follow these steps to get the demo rate engine.
 
 #### Create and deploy functional rate engines
 
-For information about how to create and deploy functional rate engines so that they can be used in a production or test environment, see the following topics:
+For information about how to create and deploy functional rate engines so that they can be used in a production or test environment, see the following articles:
 
 - [Create a new transportation management engine](../transportation/create-new-transportation-management-engine.md)
 - [Set up transportation management engines](/dynamicsax-2012/appuser-itpro/set-up-transportation-management-engines)
@@ -83,7 +83,7 @@ After you've created and deployed a rate engine for SPS, follow these steps to s
 
 ## Example scenario
 
-This example scenario shows how to set up and use SPS after you've prepared your system as described earlier in this topic. This scenario uses the previously mentioned demo rate engine.
+This example scenario shows how to set up and use SPS after you've prepared your system as described earlier in this article. This scenario uses the previously mentioned demo rate engine.
 
 ### Make demo data available
 
@@ -153,7 +153,7 @@ Follow these steps to set up a carrier service account.
 
 Follow these steps to set up a container packing policy.
 
-1. If you haven't already set up a ZPL printer definition, use the Document Routing Agent application to set it up. For more information, see [Document printing overview](../../fin-ops-core/dev-itpro/analytics/print-documents.md) and related topics.
+1. If you haven't already set up a ZPL printer definition, use the Document Routing Agent application to set it up. For more information, see [Document printing overview](../../fin-ops-core/dev-itpro/analytics/print-documents.md) and related articles.
 1. Go to **Warehouse Management \> Setup \> Containers \> Container packing policies**.
 1. On the Action Pane, select **New** to add a container packing policy.
 1. On the header of the new policy, set the following values:

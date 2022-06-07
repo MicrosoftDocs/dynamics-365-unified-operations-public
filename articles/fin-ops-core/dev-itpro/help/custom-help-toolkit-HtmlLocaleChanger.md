@@ -2,7 +2,7 @@
 # required metadata
 
 title: Custom Help Toolkit - The HtmlLocaleChanger tool
-description: This topic describes the HtmlLocaleChanger tool that is included in the Custom Help Toolkit for Finance and Operations apps. 
+description: This article describes the HtmlLocaleChanger tool that is included in the Custom Help Toolkit for Finance and Operations apps. 
 author: edupont04
 ms.date: 05/11/2020
 ms.topic: article

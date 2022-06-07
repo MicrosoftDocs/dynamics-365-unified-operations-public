@@ -2,7 +2,7 @@
 # required metadata
 
 title: Section Chart form pattern
-description: This topic provides information about the Section Chart form pattern.
+description: This article provides information about the Section Chart form pattern.
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the Section Chart form pattern. This pattern is primarily used in conjunction with the Operational Workspace pattern, and specifically on forms that contain a chart control.
+This article provides information about the Section Chart form pattern. This pattern is primarily used in conjunction with the Operational Workspace pattern, and specifically on forms that contain a chart control.
 
 ## Usage
 

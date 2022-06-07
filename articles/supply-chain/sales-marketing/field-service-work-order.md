@@ -3,7 +3,7 @@
 # required metadata
 
 title: Synchronize work orders in Field Service to sales orders in Supply Chain Management
-description: This topic discusses the templates and underlying tasks that are used to synchronize work orders in Field Service to sales orders in Supply Chain Management. 
+description: This article discusses the templates and underlying tasks that are used to synchronize work orders in Field Service to sales orders in Supply Chain Management. 
 author: Henrikan
 ms.date: 04/09/2018
 ms.topic: article
@@ -34,7 +34,7 @@ ms.search.validFrom: 2017-07-8
 
 
 
-This topic discusses the templates and underlying tasks that are used to synchronize work orders in Dynamics 365 Field Service to sales order in Dynamics 365 Supply Chain Management.
+This article discusses the templates and underlying tasks that are used to synchronize work orders in Dynamics 365 Field Service to sales order in Dynamics 365 Supply Chain Management.
 
 [![Synchronization of business processes between Supply Chain Management and Field Service.](./media/field-service-integration.png)](./media/field-service-integration.png)
 
@@ -170,7 +170,7 @@ To keep track of sales orders that originate from work orders, you can create a 
 
 By default, the mapping selects the sales origin for the **Work order integration** sales origin type for all sales orders that are created from work orders. This behavior can be useful when you work with the sales order in Supply Chain Management. You must make sure that sales orders that originate from work orders aren't synchronized back to Field Service as work orders.
 
-For details about how to create the correct sales origin setup in Supply Chain Management, see the "Preconditions and mapping setup" section of this topic.
+For details about how to create the correct sales origin setup in Supply Chain Management, see the "Preconditions and mapping setup" section of this article.
 
 ### Status
 

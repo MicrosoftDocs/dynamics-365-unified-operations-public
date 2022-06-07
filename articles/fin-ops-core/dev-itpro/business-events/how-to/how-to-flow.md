@@ -2,7 +2,7 @@
 # required metadata
 
 title: Business events and Microsoft Power Automate
-description: This topic provides information about the business events that are available for consumption in Microsoft Power Automate using the connector.
+description: This article provides information about the business events that are available for consumption in Microsoft Power Automate using the connector.
 author: Sunil-Garg
 ms.date: 10/18/2021
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
@@ -28,14 +28,14 @@ ms.dyn365.ops.version: 2019-6-30
 
 [!include[banner](../../includes/banner.md)]
 
-This topic explains how to configure and consume a business event from a Microsoft Power Automate endpoint by using the **When a Business Event occurs** trigger of the Finance and Operations connector. 
+This article explains how to configure and consume a business event from a Microsoft Power Automate endpoint by using the **When a Business Event occurs** trigger of the Finance and Operations connector. 
 
-This topic shows how to perform the following tasks:
+This article shows how to perform the following tasks:
 
 - Create a new flow in Power Automate.
 - Trigger a business event.
 
-The steps in this topic show how use the Finance and Operations connector. However, they can also be applied to the process of creating flows in Power Automate for Finance and Operations apps business events and data events in the Microsoft Dataverse connector. For more information about Finance and Operations apps business events and data events that have the **When an action is performed** and **When a row is added, modified or deleted** triggers in the Dataverse connector, see [Business events in Microsoft Power Automate](../business-events-flow.md).
+The steps in this article show how use the Finance and Operations connector. However, they can also be applied to the process of creating flows in Power Automate for Finance and Operations apps business events and data events in the Microsoft Dataverse connector. For more information about Finance and Operations apps business events and data events that have the **When an action is performed** and **When a row is added, modified or deleted** triggers in the Dataverse connector, see [Business events in Microsoft Power Automate](../business-events-flow.md).
 
 ## Create a new flow in Power Automate
 
