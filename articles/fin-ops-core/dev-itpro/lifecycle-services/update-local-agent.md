@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 7.3
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to update the local agent. The latest version of the local agent is version 3.1.0, which was released in June 2022.
+This article explains how to update the local agent. The latest version of the local agent is version 3.1.0, which was released in June 2022.
 
 > [!IMPORTANT]
 > Do not update the local agent during a servicing operation, even if the preparation phase has completed. 
@@ -59,7 +59,7 @@ This topic explains how to update the local agent. The latest version of the loc
 
 ## What's new in local agent 3.1.0
 
-- Local agent 3.1.0 introduces a new deployment option to [Specify that an environment should be configured to work with the Regression Suite Automation Tool (RSAT)](../../dev-itpro/deployment/onprem-localagent-options.md#specify-that-an-environment-should-be-configured-to-work-with-the-regression-suite-automation-tool-rsat)
+- Local agent 3.1.0 introduces a new deployment option to [specify that an environment should be configured to work with the Regression Suite Automation Tool (RSAT)](../../dev-itpro/deployment/onprem-localagent-options.md#specify-that-an-environment-should-be-configured-to-work-with-the-regression-suite-automation-tool-rsat).
 
 ## What's new in local agent 3.0.0
 
