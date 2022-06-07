@@ -23,28 +23,28 @@ This article explains which deployment configurations can be specified, when dep
 There is a section in the localagent-config.json file that is labeled deploymentOptions. This can be modified before installing the local agent.
 
 ```json
-    ...
-    "deploymentOptions": {
-				"office365AdfsCompatibility": {
-					"value": "false"
-				},
-				"sqlServerVersion": {
-					"value": "2016"
-				},
-				"isMultiSubnetFailoverEnabled": {
-					"value": "false"
-				},
-				"skipCRLCheck" : {
-					"value": "false"
-				},
-				"rsatEnabled": {
-					"value": "false"
-				},
-				"rsatCertificateThumbprint": {
-					"value":  ""
-				}
-			},
-    ...
+...
+"deploymentOptions": {
+    "office365AdfsCompatibility": {
+        "value": "false"
+    },
+    "sqlServerVersion": {
+        "value": "2016"
+    },
+    "isMultiSubnetFailoverEnabled": {
+        "value": "false"
+    },
+    "skipCRLCheck": {
+        "value": "false"
+    },
+    "rsatEnabled": {
+        "value": "false"
+    },
+    "rsatCertificateThumbprint": {
+        "value": ""
+    }
+},
+...
 ```
 
 ## Specify the version of Microsoft SQL Server
@@ -80,13 +80,12 @@ Support for this option was introduced in version 10.0.21. Additionally, at leas
 > [!IMPORTANT]
 > By disabling the certificate revocation list of a certificate, the security check will not be performed. You bear the risk of disabling it. You should only enable this deployment option if you are fully aware of the security implications of disabling this check.
 
-## Specify that an environment should be configured to work with the Regression Suite Automation Tool (RSAT)
+## Specify that an environment should be configured to work with the Regression suite automation tool
 
-The Regression suite automation tool (RSAT) significantly reduces the time and cost of user acceptance testing (UAT) for Finance and Operations apps. For more information, see [Regression suite automation tool (RSAT)](../perf-test/rsat/rsat-overview.md).
+The Regression suite automation tool (RSAT) significantly reduces the time and cost of user acceptance testing (UAT) for finance and operations apps. For more information, see [Regression suite automation tool (RSAT)](../perf-test/rsat/rsat-overview.md).
 
-To enable this deployment , change **rsatEnabled** from **false** to **true**. Additionally, set **rsatCertificateThumbprint** to the thumbprint of the certificate you want to use for RSAT.
+To enable this deployment, change the value of **rsatEnabled** from **false** to **true**. Additionally, set **rsatCertificateThumbprint** to the thumbprint of the certificate that you want to use for RSAT.
 
-For more information on how to generate and deploy the certificate, see [Enable RSAT in Microsoft Dynamics 365 Finance + Operations (on-premises) environments](./onprem-rsat-configuration.md).
+For more information about how to generate and deploy the certificate, see [Enable RSAT in Microsoft Dynamics 365 Finance + Operations (on-premises) environments](./onprem-rsat-configuration.md).
 
 Support for this option was introduced in version 10.0.28. Additionally, at least local agent 3.1.0 is required to use this option.
-
