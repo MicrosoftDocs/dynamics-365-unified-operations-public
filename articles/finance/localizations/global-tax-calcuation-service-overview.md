@@ -169,6 +169,7 @@ The following countries/regions for a legal entity's primary address are support
 - Germany
 - Hungary
 - Iceland
+- Ireland
 - Italy
 - Latvia
 - Lithuania
