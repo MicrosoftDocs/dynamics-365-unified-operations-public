@@ -28,4 +28,4 @@ For more information about how to apply a deployable package, see [Create deploy
 
 ### Re-activate POS devices
 
-If you use point of sale (POS) devices, after you import a database you must activate the POS devices again. Previously activated devices in the destination environment will no longer function. For more information, see [Point of sale device activation](../../../commerce/dev-itpro/retail-device-activation.md).
+If you use point of sale (POS) devices, you must activate the POS devices again after you import a database. Previously activated devices in the destination environment will no longer function. For more information, see [Point of sale device activation](../../../commerce/dev-itpro/retail-device-activation.md).
