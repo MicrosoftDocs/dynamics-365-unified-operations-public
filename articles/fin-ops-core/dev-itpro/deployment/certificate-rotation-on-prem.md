@@ -440,7 +440,7 @@ After the above commands have been executed, restart your AOS nodes from Service
 
 After generating your updated Service Fabric cluster configuration, run the following PowerShell commands to apply the upgrade to your Service Fabric cluster.
 
-    ```powershell
+```powershell
     # Connect to the Service Fabric Cluster
     Connect-ServiceFabricCluster
 
@@ -458,7 +458,7 @@ After generating your updated Service Fabric cluster configuration, run the foll
     Update-ServiceFabricClusterUpgrade -UpgradeReplicaSetCheckTimeoutSec 30
     
     # When UpgradeState shows RollingForwardCompleted, the upgrade is finished
-    ```
+```
 
 > [!NOTE] 
 > You might receive the following error message: "Upgrading from two different certificates to two different certificates is not allowed." This message indicates that you didn't clean up old Service Fabric certificates on the previous certificate rotation exercise. In this case, see the [Clean up old Service Fabric certificates](certificate-rotation-on-prem.md#cleanupoldsfcerts) section later in this topic, and then repeat the steps in this section.
