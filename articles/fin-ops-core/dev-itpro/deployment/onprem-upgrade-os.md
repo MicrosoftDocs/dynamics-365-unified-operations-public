@@ -4,7 +4,7 @@
 title: Upgrade Windows Server in Microsoft Dynamics 365 Finance + Operations (on-premises) environments
 description: This article explains how to upgrade the Windows Server version that your Microsoft Dynamics 365 Finance + Operations (on-premises) environments are using.
 author: faix
-ms.date: 04/05/2022
+ms.date: 06/07/2022
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
@@ -83,7 +83,7 @@ If you're using a SQL Server database, follow the instructions in [Upgrading to 
 
 ### Post-upgrade actions
 
-1. In order to correctly support authentication with the office add-ins. AD FS on Windows Server 2019 or later requires setting up CORS headers. This information is available in [Configure AD FS](./setup-deploy-on-premises-pu41.md#configureadfs). If you are not sure if you are missing the configuration you can run the following script.
+To correctly support authentication with the Office add-ins, AD FS on Windows Server 2019 or later requires that you set up CORS headers. This information is available in [Configure AD FS](./setup-deploy-on-premises-pu41.md#configureadfs). If you are not sure if you are missing the configuration, run the following script.
 
     ```powershell
     .\Test-ADFSConfiguration.ps1 -ConfigurationJsonFilePath "\\Fileserver\agent\wp\EN10\StandaloneSetup-746342\config.json"
