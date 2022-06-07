@@ -1,6 +1,4 @@
----
-title: Japan consumption tax report
----
+# Japan consumption tax report
 
 This topic explains how to set up and generate the Japan consumption tax report
 for legal entities in Japan.
@@ -19,23 +17,23 @@ For a description of the calculation rules for Table 2-1 and Table 3-(2), see
 [Procedure 1 for preparing a tax
 return](https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigenzeiritsu/pdf/0018008-056_01.pdf).
 
-# Prerequisites
+## Prerequisites
 
 To calculate the consumption tax report that should be submitted from October 1,
 2019, you must enable the **Japanese sales tax report** feature in the **Feature
 management** workspace. For more information, see [Feature management
 overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
 
-# Setup
+## Setup
 
-## Enable the consumption tax report
+### Enable the consumption tax report
 
 1.  Go to **Tax \> Setup \> Parameters \> General ledger parameters**.
 
 2.  On the **Sales tax** tab, on the **Japanese tax reporting** FastTab, set the
     **Consumption tax reports** option to **Yes**.
 
-## Enter Japan reporting information for a legal entity
+### Enter Japan reporting information for a legal entity
 
 1.  Go to **Organization administration \> Organizations \> Legal entities**.
 
@@ -45,7 +43,7 @@ overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-starte
 
 4.  In the **Company representative** field, enter a value.
 
-## Set up sales tax reporting codes for consumption tax reporting
+### Set up sales tax reporting codes for consumption tax reporting
 
 Set up sales tax reporting codes by following the instructions in [Set up sales
 tax reporting
@@ -122,7 +120,7 @@ sales tax code and consumption tax rates on the reports.
 | 8 (reduced)    | 6.24                 | Sales amount including tax × 6.24 ÷ 108   |
 | 10             | 7.8                  | Sales amount including tax × 7.8 ÷ 110    |
 
-## Set up tax reporting accounts for bad debts
+### Set up tax reporting accounts for bad debts
 
 Set up ledger accounts for bad debt and collected bad debt that will be used to
 select the transactions to report.
@@ -137,7 +135,7 @@ select the transactions to report.
 4.  In the **Collected bad debt** field, specify the ledger account. For
     example, in the **JPMF** legal entity, select **84710**.
 
-# Generate the Japan consumption tax report
+## Generate the Japan consumption tax report
 
 1.  Go to **Tax \> Declarations \> Sales tax \> Japanese sales tax report**.
 
@@ -292,7 +290,7 @@ Otherwise, the value of these fields is **0** (zero).
     Print** to print the **Consumption tax calculation sheet** and **Consumption
     tax report** reports.
 
-# Example
+## Example
 
 The following example in the **JPMF** legal entity shows how you can set up
 sales tax codes and sales tax reporting codes, post transactions, and generate
