@@ -4,7 +4,7 @@
 title: Certificate rotation
 description: This article explains how to place existing certificates and update the references within the environment to use the new certificates.
 author: PeterRFriis
-ms.date: 04/07/2022
+ms.date: 06/07/2022
 ms.topic: article
 ms.prod: dynamics-365 
 ms.service:
@@ -152,12 +152,12 @@ In order to ease the certificate rotation process, Microsoft is recommending tha
     ```
 
     > [!NOTE]
-    > To provide defense in depth, we recommend that you restrict who the issuer of the certificates should be. Without this option then any certificate that matches the common name (subject name) defined in the Service Fabric cluster configuration could be used. 
+    > To provide defense in depth, we recommend that you restrict who the issuer of the certificates should be. Without this option, any certificate that matches the common name (subject name) defined in the Service Fabric cluster configuration can be used. 
     > ```powershell
     >   .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -UpgradeToCommonNames -RestrictCertificateIssuers
     > ```
 
-1. See [Appendix A](#appendix-a) below for how to apply the updated configuration to your Service Fabric cluster.
+1. See [Appendix A](#appendix-a) later in this article for information about how to apply the updated configuration to your Service Fabric cluster.
 
 ### <a name=""></a> Service Fabric cluster with certificate common names
 
@@ -178,7 +178,7 @@ If you have changed the certificate common name, then you need to upgrade your s
     >    .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -UpdateCommonNames -UpdateIssuers
     > ```
 
-1. See [Appendix A](#appendix-a) below for how to apply the updated configuration to your Service Fabric cluster.
+1. See [Appendix A](#appendix-a) later in this article for information about how to apply the updated configuration to your Service Fabric cluster.
 
 #### Service Fabric with certificates that are expired
 
@@ -220,7 +220,7 @@ In case you do need to update the list of issuers then you must do this while th
         .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -UpdateIssuers
     ```
 
-1. See [Appendix A](#appendix-a) below for how to apply the updated configuration to your Service Fabric cluster.
+1. See [Appendix A](#appendix-a) later in this article for information about how to apply the updated configuration to your Service Fabric cluster.
 
 ### <a name=""></a> Service Fabric cluster defined with certificate thumbprints
 
@@ -401,22 +401,22 @@ Alternatively, if you also want to rotate the existing credentials, follow these
 
 ## <a name="cleanupoldsfcerts"></a>Clean up old Service Fabric certificates
 
-This procedure should be completed either after a successful certificate rotation or before the next certificate rotation.
+This procedure should be completed after a successful certificate rotation or before the next certificate rotation.
 
 1.  Run the following script to generate an updated cluster configuration file.
     ```powershell
         .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -RemoveOldThumbprints
     ```
 
-1. See [Appendix A](#appendix-a) below for how to apply the updated configuration to your Service Fabric cluster.
+2. See [Appendix A](#appendix-a) later in this article for information about how to apply the updated configuration to your Service Fabric cluster.
 
 ## <a name="aftercertrotation"></a> After certificate rotation
 
 ### Data encryption certificate
 
-This certificate is used to encrypt data stored in the database. By default there are certain fields that are encrypted with this certificate, you can check those fields in [Document the values of encrypted fields](../database/dbmovement-scenario-goldenconfig.md#document-the-values-of-encrypted-fields). However, our API can be used to encrypt other fields that customers deem should be encrypted. 
+This certificate is used to encrypt data stored in the database. By default, there are certain fields that are encrypted with this certificate. You can check those fields in [Document the values of encrypted fields](../database/dbmovement-scenario-goldenconfig.md#document-the-values-of-encrypted-fields). However, our API can be used to encrypt other fields as needed. 
 
-In Platform update 33 and later, the batch job that is named "Encrypted data rotation system job" will use the newly rotated certificate to re-encrypt data. This batch job crawls through your data to re-encrypt all the encrypted data by using the new certificate. It will run for two hours per day until all of the data has been re-encrypted. In order to enable the batch job, a flight and a configuration key need to be enabled. Execute the following commands against your business database (for example, AXDB).
+In Platform update 33 and later, the batch job, **Encrypted data rotation system job** uses the newly rotated certificate to re-encrypt data. This batch job crawls through your data to re-encrypt all the encrypted data by using the new certificate. The job will run for two hours each day until all of the data has been re-encrypted. Toenable the batch job, a flight and a configuration key need to be enabled. Execute the following commands against your business database (for example, AXDB).
 
 ```sql
 IF (EXISTS(SELECT * FROM SYSFLIGHTING WHERE [FLIGHTNAME] = 'EnableEncryptedDataCrawlerRotationTask'))
@@ -430,22 +430,22 @@ ELSE
   INSERT INTO SECURITYCONFIG ([KEY_], [VALUE]) VALUES ('EnableEncryptedDataRotation', 'True')
 ```
 
-After the above commands have been executed, restart your AOS nodes from Service Fabric Explorer. The AOS will detect the new configuration and will schedule the batch job to run during off hours. After the batch job has been created, the schedule can be modified from the user interface.
+After the commands have been executed, restart your AOS nodes from Service Fabric Explorer. The AOS will detect the new configuration and schedule the batch job to run during off hours. After the batch job has been created, the schedule can be modified from the user interface.
 
 > [!WARNING]
-> Make sure that the old Data Encryption certificate is not removed before all encrypted data has been re-encrypted and it has not expired. Otherwise, this could lead to data loss.
+> Make sure the old Data Encryption certificate isn't removed before all encrypted data has been re-encrypted and that it hasn't expired. Otherwise, this could lead to data loss.
 
 
 ## <a name="appendix-a"></a> Appendix A
 
-After generating your updated Service Fabric cluster configuration, run the following PowerShell commands to apply the upgrade to your Service Fabric cluster.
+After you generate the updated Service Fabric cluster configuration, run the following PowerShell commands to apply the upgrade to your Service Fabric cluster.
 
 ```powershell
     # Connect to the Service Fabric Cluster
     Connect-ServiceFabricCluster
 
     # Get path of ClusterConfig.json for following command
-    # Note that after running the following command, you need to manually cancel using the red button (Stop Operation) in Windows PowerShell ISE or Ctrl+C in Windows PowerShell, otherwise you will receive the following notification, "Start-ServiceFabricClusterConfigurationUpgrade : Operation timed out.". Be aware that the upgrade will proceed.
+    # Note that after running the following command, you need to manually cancel using the red button (Stop Operation) in Windows PowerShell ISE or Ctrl+C in Windows PowerShell. Otherwise, you will receive the following notification, "Start-ServiceFabricClusterConfigurationUpgrade : Operation timed out.". Be aware that the upgrade will proceed.
     Start-ServiceFabricClusterConfigurationUpgrade -ClusterConfigPath ClusterConfig.json
 
     # If you are using a single Microsoft SQL Server Reporting Services node, use UpgradeReplicaSetCheckTimeout to skip PreUpgradeSafetyCheck check, otherwise it will timeout
@@ -461,6 +461,6 @@ After generating your updated Service Fabric cluster configuration, run the foll
 ```
 
 > [!NOTE] 
-> You might receive the following error message: "Upgrading from two different certificates to two different certificates is not allowed." This message indicates that you didn't clean up old Service Fabric certificates on the previous certificate rotation exercise. In this case, see the [Clean up old Service Fabric certificates](certificate-rotation-on-prem.md#cleanupoldsfcerts) section later in this topic, and then repeat the steps in this section.
+> You might receive the following error message: **Upgrading from two different certificates to two different certificates is not allowed.** This message indicates that you didn't clean up old Service Fabric certificates on the previous certificate rotation exercise. In this case, see the [Clean up old Service Fabric certificates](certificate-rotation-on-prem.md#cleanupoldsfcerts) section later in this topic, and then repeat the steps in this section.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
