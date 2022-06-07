@@ -37,6 +37,8 @@ This topic provides information that will help you get started with Electronic i
 
 Before you begin the procedures in this topic, complete the following prerequisites:
 
+- The legal entity must be registered as a Taxpayer in Poland and have a valid tax identification number - **NIP** (*Numer identyfikacji podatkowej*).
+- A valid certificate for digital signing must be preliminary obtained from the respective authorities.
 - Become familiar with Electronic invoicing as it's described in [Electronic invoicing overview](e-invoicing-service-overview.md).
 - Sign up for RCS, and set up Electronic invoicing. For more information, see the following topics:
 
@@ -46,7 +48,7 @@ Before you begin the procedures in this topic, complete the following prerequisi
 	
 - Activate the integration between your Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management application and the Electronic Invoicing service as described in [Activate and setup integration with Electronic invoicing](e-invoicing-activate-setup-integration.md).
 - Create a digital certificate secret in Azure Key Vault, and set it up it as described in [Customer certificates and secrets](e-invoicing-customer-certificates-secrets.md). 
-- 
+
 ## Country-specific configuration for the Polish electronic invoice (PL) feature
 
 Some of the parameters from the **Polish electronic invoice (PL)** electronic invoicing feature are published with default values. Before you deploy the electronic invoicing feature to the service environment, review the default values, and update them as required so that they better reflect your business operation.
