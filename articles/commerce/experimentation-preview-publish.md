@@ -3,27 +3,14 @@
 
 title: Preview and publish an experiment
 description: This article describes how to preview and publish an experiment from Dynamics 365 Commerce.
-author:  sushma-rao 
-ms.date: 10/21/2020
+author: sushma-rao 
+ms.date: 06/07/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: global
-ms.search.industry: Retail
+ms.search.region: Global
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
-ms.dyn365.ops.version: AX 10.0.13
 ---
 
 # Preview and publish an experiment
@@ -46,6 +33,8 @@ If you aren't using a publish group to schedule when your experiment goes live a
     
 > [!IMPORTANT]
 > If the page has an unpublished URL, you must first publish the URL or it won't be visible to your website users. For details, see [Save, preview, and publish a page](save-preview-publish-page.md).
+
+Once the experiment is live, you can append the experiment ID and variation ID to the default page URL to force a variation for testing or automation purposes. For example, if the default page URL is `https://fabrikam.com/modern/homepage`, you can force a variation with a URL like `https://fabrikam.com/modern/homepage?exp=18012910471|18024360464`. You can get the experiment ID and variation ID for your experiment variation from the preview URL in the **Preview** experience explained above.
     
 ### Use publish groups to schedule when your experiment goes live
 Variations created in site builder can be scheduled for publishing by using a publish group. Within a publish group, you can connect a page or fragment to your experiment by selecting **Experiments** in the left navigation pane. You can also do this by selecting **Pages** or **Fragments** and following the instructions in [Connect an experiment and edit variations](experimentation-connect-edit.md). For information about publish groups, see [Work with publish groups](publish-groups.md).
