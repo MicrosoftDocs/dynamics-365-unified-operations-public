@@ -4,7 +4,7 @@
 title: Troubleshoot on-premises deployments
 description: This article provides troubleshooting information for deployments of Microsoft Dynamics 365 Finance + Operations (on-premises).
 author: PeterRFriis
-ms.date: 04/05/2022
+ms.date: 06/07/2022
 ms.topic: article
 ms.prod: dynamics-365 
 ms.service:
@@ -895,7 +895,7 @@ You can also use Psping to try to reach the remote server. For information about
 
 ### You get authentication errors
 
-If you are having issues authenticating with the Workflow editor or with the excel add-ins try to verify your configuration with the following script.
+If you are having issues authenticating with the Workflow editor or with the Excel add-ins, use the following script to verify your configuration.
 
 ```powershell
 .\Test-ADFSConfiguration.ps1 -ConfigurationJsonFilePath "\\Fileserver\agent\wp\EN10\StandaloneSetup-746342\config.json"
