@@ -897,9 +897,9 @@ You can also use Psping to try to reach the remote server. For information about
 
 If you are having issues authenticating with the Workflow editor or with the excel add-ins try to verify your configuration with the following script.
 
-    ```powershell
-    .\Test-ADFSConfiguration.ps1 -ConfigurationJsonFilePath "\\Fileserver\agent\wp\EN10\StandaloneSetup-746342\config.json"
-    ```
+```powershell
+.\Test-ADFSConfiguration.ps1 -ConfigurationJsonFilePath "\\Fileserver\agent\wp\EN10\StandaloneSetup-746342\config.json"
+```
 
 ### Redirect sign-in questions and issues
 

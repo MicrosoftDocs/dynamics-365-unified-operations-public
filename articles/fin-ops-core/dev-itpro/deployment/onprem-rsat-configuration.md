@@ -18,7 +18,7 @@ ms.search.validFrom: 2022-06-03
 
 # Enabling RSAT in Microsoft Dynamics 365 Finance + Operations (on-premises) environments
 
-The Regression suite automation tool (RSAT) significantly reduces the time and cost of user acceptance testing (UAT) of Finance and Operations apps. For more information see [Regression suite automation tool (RSAT)](../perf-test/rsat/rsat-overview)
+The Regression suite automation tool (RSAT) significantly reduces the time and cost of user acceptance testing (UAT) of Finance and Operations apps. For more information see [Regression suite automation tool (RSAT)](../perf-test/rsat/rsat-overview.md)
 
 ## Generating and deploying the certificate
 
@@ -69,7 +69,7 @@ The Regression suite automation tool (RSAT) significantly reduces the time and c
 
 ## Deploy or service your environment
 
-1. For new environments that have not been deployed yet, follow [Deploy your Finance + Operations environment from LCS](.\setup-deploy-on-premises-pu41#deploy) to deploy your environment.
+1. For new environments that have not been deployed yet, follow [Deploy your Finance + Operations environment from LCS](.\setup-deploy-on-premises-pu41.md#deploy) to deploy your environment.
 
 1. For existing environments, you need to service the environment to apply the changes. This can be done by deploying a new package or by following the instructions below.
 
