@@ -154,8 +154,6 @@ select the transactions to report.
 
 ![](media/7ce6e142eb379f071cd6cb2866d15b5d.png)
 
->   A screenshot of a computer Description automatically generated
-
 4.  Review the values in the **Item** fields. These values represent the amounts
     that will be entered in the rows of Table 2-1 ("Calculation table of taxable
     sales ratio/deductible purchase tax amount") of the official recommendations
@@ -180,7 +178,14 @@ select the transactions to report.
 | Item11 (Row14)                                                                                  | Amount of consumption tax adjustment (addition and subtraction)                                                                             | The value of this field is **0** (zero).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | Item12 (Row15)                                                                                  | Total amount of taxes on taxable purchases                                                                                                  | The value of this field is calculated as **Item9** + **Item10** + **Item11**.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | Item13 (Row16)                                                                                  | Total amount of taxes on taxable purchases, if **Ratio of taxable sales** is \>= 0.95                                                       | If the value of the **Ratio of taxable sales** field is 0.95 or more, the value of this field equals **Item12**. Otherwise, the value is **0** (zero).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| **Item14**, **Item15**, and **Item16** are calculated if both the following conditions are met: |                                                                                                                                             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+
+**Item14**, **Item15**, and **Item16** are calculated if both the following conditions are met: 
+-   The value of the **Ratio of taxable sales** field is less than 0.95.
+-   **Individual method** is selected in the **Calculation method** field in the  **Consumption tax working sheet** dialog box.
+Otherwise, the value of these fields is **0** (zero).
+
+| Field (Row)                                                                                     | Description                                                                                                                                 | Calculation                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|-------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Item14 (Row17)                                                                                  | Portion of Item12 related to taxable sales only                                                                                             | The value of this field is calculated as the sum of consumption tax amounts of ([208] + [8208] – [9208] – [7208]) by tax rate.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | Item15 (Row18)                                                                                  | Portion of Item12 related to both taxable and nontaxable sales                                                                              | The value of this field is calculated as the sum of consumption tax amounts of ([215] + [8215] – [9215] – [7215]) by tax rate.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | Item16 (Row19)                                                                                  | Amount of deductible taxes on taxable purchases.                                                                                            | The value of this field is calculated as **Item14** + **Item15** × **Ratio of taxable sales**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
@@ -190,20 +195,12 @@ select the transactions to report.
 | Item20 (Row23)                                                                                  | Deductible tax on purchase                                                                                                                  | If the value of the **Ratio of taxable sales** field is 0.95 or more, the value of this field is calculated as **Item13** + **Item18** + **Item19**. If the value of the **Ratio of taxable sales** field is less than 0.95, and **Individual method** is selected in the **Calculation method** field in the **Consumption tax working sheet** dialog box, the value of this field is calculated as **Item16** + **Item18** + **Item19**. If the value of the **Ratio of taxable sales** field is less than 0.95, and **Lump sum method** is selected in the **Calculation method** field in the **Consumption tax working sheet** dialog box, the value of this field is calculated as **Item17** + **Item18** + **Item19**. |
 | Item21 (Row24)                                                                                  | Excess deduction on purchases                                                                                                               | If the value of the **Item20** field is more than 0, the value of this field is **0** (zero). Otherwise, the value of this field is calculated as ABS(Item20), and the **Item20** field is set to **0** (zero).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | Item22 (Row25)                                                                                  | Amount of consumption tax relating to recovered bad debt                                                                                    | The value of this field is calculated as [8310] × 6.3 ÷ 108. **Note:** The amount of reporting code 8310 is related to the ledger account that is set up in the **Collected bad debt** field on the **Tax reporting accounts** page. For more information, see the [Set up tax reporting accounts for bad debts](#set-up-tax-reporting-accounts-for-bad-debts) section of this topic.                                                                                                                                                                                                                                                                                                                                          |
-
--   The value of the **Ratio of taxable sales** field is less than 0.95.
-
--   **Individual method** is selected in the **Calculation method** field in the
-    **Consumption tax working sheet** dialog box.
-
-Otherwise, the value of these fields is **0** (zero).
-
 5.  Select **Finalize** to finalize tax amounts.
 
 6.  After you've finalized tax amounts, select **Consumption tax report** to
     generate amounts on the **Consumption tax report** page.
 
-    ![A screenshot of a cell phone Description automatically generated](media/e8aaba7ef01662b2bd6aaec8be74cc2d.png)
+    ![](media/e8aaba7ef01662b2bd6aaec8be74cc2d.png)
 
 7.  On the **Header** tab, review the header information.
 
@@ -219,15 +216,15 @@ Otherwise, the value of these fields is **0** (zero).
     Table 3-(2) ("Consumption tax return form").
 
 >   **Note:**
-
--   In the "Calculation" column of the following table, brackets ([…]) in the
-    formulas enclose the values of the reporting codes. The values of **Item**
-    fields on the **Consumption tax calculation sheet** page are referenced as
-    **CalcSheet.Item**.
-
--   Fields that are marked with an asterisk (\*) in the "Field (Row)" column
-    aren't used on the **Consumption tax report** report (Table 3-(2)) as of
-    October 1, 2019.
+>
+> -   In the "Calculation" column of the following table, brackets ([…]) in the
+>    formulas enclose the values of the reporting codes. The values of **Item**
+>    fields on the **Consumption tax calculation sheet** page are referenced as
+>    **CalcSheet.Item**.
+>
+> -   Fields that are marked with an asterisk (\*) in the "Field (Row)" column
+>    aren't used on the **Consumption tax report** report (Table 3-(2)) as of
+>    October 1, 2019.
 
 | Field (Row)                                     | Description                                                               | Calculation                                                                                                                                                                                                                                                                                                                                                                 |
 |-------------------------------------------------|---------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -260,7 +257,7 @@ Otherwise, the value of these fields is **0** (zero).
 | Item25\*                                        | Netted tax payment amount (if this declaration is an amended declaration) | The value of this field is zero.                                                                                                                                                                                                                                                                                                                                            |
 | Item26\*                                        | Total consumption tax and local consumption tax (payment or refund)       | If you set the **Amendment** option to **Yes** in the **Consumption tax working sheet** dialog box, the value of this field is calculated as **Item14** + **Item25**. Otherwise, the value is calculated as **Item11** + **Item22** – **Item8** – **Item12** – **Item19** – **Item23**.                                                                                     |
 
-1.  On the **Consumption tax report** page, on the **Additional information**
+9.  On the **Consumption tax report** page, on the **Additional information**
     tab, set the following fields.
 
 | Field                                    | Description                                                                       |
@@ -280,9 +277,9 @@ Otherwise, the value of these fields is **0** (zero).
 | Document submitted law No.30             | Set this option to **Yes** if the document is submitted according to law No.30.   |
 | Document submitted law No.33-2           | Set this option to **Yes** if the document is submitted according to law No.33-2. |
 
-9.  Select **Finalize** to finalize tax amounts.
+10.  Select **Finalize** to finalize tax amounts.
 
-10.  After you've finalized tax amounts, select **Consumption tax report \>
+11.  After you've finalized tax amounts, select **Consumption tax report \>
     Print** to print the **Consumption tax calculation sheet** and **Consumption
     tax report** reports.
 
@@ -330,7 +327,7 @@ and print the Japan consumption tax report.
 | JP ConsEx      |               | 202           |                   |                   |                      |
 | JP ConsNt      |               | 206           |                   |                   |                      |
 
-1.  On the **Sales tax codes** page, on the **Report setup – credit note**
+5.  On the **Sales tax codes** page, on the **Report setup – credit note**
     FastTab, assign reporting codes to sales tax codes.
 
 >   The following table shows how to assign the sales tax reporting codes to
@@ -354,7 +351,7 @@ and print the Japan consumption tax report.
 >   set a relevant sales tax reporting code in one or more fields on the
 >   **Report setup** tab.
 
-1.  Post the following transactions.
+6.  Post the following transactions.
 
     For example, for customer invoices, go to **Accounts receivable \> Invoices
     \> All free text invoices**. For vendor invoices, go to **Accounts payable
@@ -376,9 +373,9 @@ and print the Japan consumption tax report.
 | January 1, 2020 | Customer invoice     | 11,000,000  | 0 (0)                                     | JP ConsEx      | 202 / Not applicable                                 | Item2                                                                |                                                           |
 | January 1, 2020 | Customer invoice     | 7,000,000   | 0 (0)                                     | JP ConsNt      | 206 / Not applicable                                 | Item6                                                                |                                                           |
 
-2.  Go to **Tax \> Declarations \> Sales tax \> Japanese sales tax report**.
+7.  Go to **Tax \> Declarations \> Sales tax \> Japanese sales tax report**.
 
-3.  In the **Consumption tax working sheet** dialog box set the following
+8.  In the **Consumption tax working sheet** dialog box set the following
     values:
 
 -   **From date:** 1/1/2020 (January 1, 2020)
@@ -391,13 +388,9 @@ and print the Japan consumption tax report.
 
 -   **Calculation method:** Individual method
 
-1.  Select **OK**.
-
-2.  Review the **Consumption tax calculation sheet** page.
+9.  Select **OK**. Review the **Consumption tax calculation sheet** page.
 
 ![](media/c2e67870bea8006576606dddb9241bdf.png)
-
->   A screenshot of a computer Description automatically generated
 
 >   Amounts are calculated as shown in the following table.
 
@@ -416,15 +409,11 @@ and print the Japan consumption tax report.
 | Item 13 (Row 13)       | Total amount of taxes on taxable purchases, if **Ratio of taxable sales** is \> 0,95 | 15,446,848                                                                             |
 | Item 20 (Row 20)       | Deductible tax on purchase                                                           | 15,446,848                                                                             |
 
-1.  Select **Finalize**.
+10.  Select **Finalize**.
 
-2.  Select **Consumption tax report**.
-
-3.  On the **Tax calculation** tab, review the data.
+11.  Select **Consumption tax report**.  On the **Tax calculation** tab, review the data.
 
 ![](media/ebc1627ad9422c925c43df3f4aa67070.png)
-
->   A screenshot of a cell phone Description automatically generated
 
 >   Amounts are calculated as shown in the following table.
 
@@ -443,29 +432,25 @@ and print the Japan consumption tax report.
 | Item20                                          | Tax payment amount (Transfer amount)               | 2,333,583 = (5,257,897 × 17 ÷ 63) + (3,243,335 × 22 ÷ 78) |
 | Item22                                          | Tax to be paid                                     | 2,333,583                                                 |
 
-1.  Select **Finalize**.
+12.  Select **Finalize**.
 
-2.  Select **Consumption tax report \> Print**.
+13.  Select **Consumption tax report \> Print**.
 
-3.  Open and review the printed report forms.
+14.  Open and review the printed report forms.
 
->   **Consumption tax calculation sheet**
+**Consumption tax calculation sheet**:
 
 ![](media/ecc300c7be8c9af1c97d482767fa7620.png)
 
->   A screenshot of a cell phone Description automatically generated
 
 ![](media/650d83f8ccfea0ef924aaaf5358a1b6d.png)
 
->   A screenshot of a cell phone Description automatically generated
 
->   **Consumption tax report**
+**Consumption tax report**:
 
 ![](media/ff309474b7f567efe567fd0a5ba36fb9.png)
 
->   A close up of text on a white background Description automatically generated
-
->   Here is an explanation of this report:
+Here is an explanation of this report:
 
 -   Row1 = **Item1** rounded to the thousands
 
