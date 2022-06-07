@@ -3,27 +3,14 @@
 
 title: Experimentation in Dynamics 365 Commerce
 description: Experimentation enables the creation, editing, and management of page layout and content treatments in site builder. End-to-end experimentation support is enabled for e-commerce pages and entities within a page.
-author:  sushma-rao 
-ms.date: 10/21/2020
+author: sushma-rao 
+ms.date: 06/07/2022
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-
-ms.assetid: 
-ms.search.region: global
-ms.search.industry: Retail
+ms.search.region: Global
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
-ms.dyn365.ops.version: AX 10.0.13
 ---
 
 # Experimentation in Dynamics 365 Commerce
@@ -32,15 +19,13 @@ Use experimentation in Dynamics 365 Commerce to validate hypotheses about the ef
 You can create, edit, and manage page and content treatments known as **variations** in Commerce site builder. Commerce integrates with third-party services that you can use to create experiments and treatment assignments. Real-time event streams captured in Commerce enable the analytics that define the experiment results in the third-party service. You can then leverage these analytics to help support or refute your hypothesis.
 
 ## Set up prerequisites
+
 1. **Get the correct version of Commerce** - Upgrade your module library, online channel extensibility software development kit (SDK), and Commerce Scale Unit to Commerce version 10.0.13 or later.
 1. **Set up an experimentation connector** - An experimentation connector allows Commerce to connect with third-party services to retrieve the list of experiments and determine when to show an experiment to a user. You can purchase a third-party connector from [AppSource](https://appsource.microsoft.com). Follow the setup instructions provided by the publisher. You can alternatively use the sample test connector from Commerce to test the experimentation workflow without needing to configure an external service. For more information, see [Configure and enable connectors](e-commerce-extensibility/connectors.md). 
-1. **Turn on the experimentation feature flags in Commerce** - You can enable experimentation at the tenant level by going to **Tenant Settings > Features** or at the site level at **Site Settings > Features**.
-    - Enable the **Experimentation** flag to create experiment variations of modules within a page without affecting or copying other content that isn't part of the experiment. This ensures that ongoing content updates outside the experiment stay in sync during the experiment lifecycle. Disabling this flag stops all experiments from being shown to users and removes all editing functions within site builder.
-    - Enable the **Experiment on pages or fragments** flag to run experiments on a page or fragment. This creates a full instance copy of the entire page or fragment for all modules within the page or fragment. Use this mode when you want to test comprehensive content changes, or where synchronizing ongoing content changes across instances isn't a concern. Disabling this flag prevents creation and editing of new experiments on pages and fragments.
-    > [!NOTE]
-    > The **Experimentation** flag must also be enabled for the **Experiment on pages or fragments** functionality to work.
+1. **Turn on the experimentation feature flag in Commerce** - You can enable experimentation at the tenant level by going to **Tenant Settings \> Features**, or at the site level by going t **Site Settings \> Features**. Turn on the **Experimentation** flag to start creating module variations. Disabling this flag stops all experiments from being shown to users and removes all editing functions within site builder.
     
 ## Experimentation lifecycle
+
 Setting up an experiment, creating variations, and running an experiment is an iterative process. The diagram below illustrates the experimentation lifecycle in Commerce and the third-party service. 
 
 [ ![Experimentation lifecycle.](./media/experimentation_lifecycle.svg) ](./media/experimentation_lifecycle.svg#lightbox)
