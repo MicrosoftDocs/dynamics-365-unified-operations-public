@@ -22,7 +22,7 @@ Companies in France that are registered for value-added tax (VAT), and that trad
 
 You can generate the DEB report in either of two electronic text file formats: SAISUNIC 330 or INTRACOM format.
 
-The following table shows the fields that are included in the French Intrastat declaration in SAISUNIC 330 format. The table also indicates the report level of the field. The field can be **4** (filing of the tax declaration), **1** (fulfilling of the statistical response), or **5** (joint filling).
+The following table shows the fields that are included in the French Intrastat declaration in SAISUNIC 330 format. The table also indicates the report level of the field. The field can be **4** (tax declaration), **1** (statistical response), or **5** (statistical response to shipment and tax declaration, joint filling).
 
 | **Field**                   | **Report level** |
 |-----------------------------|------------------|
@@ -50,7 +50,7 @@ The following table shows the fields that are included in the French Intrastat d
 | Transport Code              | 1, 5                | 
 
 The following table shows the fields that are included in the French Intrastat declaration in INTRACOM format.
-The table also indicates the report level of the field. The field can be **4** (filing of the tax declaration), **1** (filling of the statistical response), or **5** (joint filling).
+The table also indicates the report level of the field. The field can be **4** (tax declaration), **1** (statistical response), or **5** (statistical response to shipment and tax declaration, joint filling).
 
 | **Field**                   | **Report level**   | 
 |-----------------------------|--------------------|
@@ -143,6 +143,7 @@ Go to **Tax** > **Setup** > **Foreign trade** > **Compression of Intrastat**, an
 
 
 ### Set up product parameters for the Intrastat declaration
+
 1. Go to **Product information management** >** Products** > **Released products**.
 2. In the grid, select a product.
 3. On the **Foreign trade** FastTab, in the **Intrastat** section, in the **Commodity** field, select the commodity code. The name of the commodity will be printed in the **Description of commodities** field on the Intrastat report.
@@ -150,6 +151,7 @@ Go to **Tax** > **Setup** > **Foreign trade** > **Compression of Intrastat**, an
 4. On the **Manage inventory** FastTab, in the **Net weight** field, enter the product's weight in kilograms.    
 
 ### Set up warehouse parameters for the Intrastat declaration
+
 Go to **Warehouse management** > **Setup** > **Warehouse** > **Warehouses**, select a warehouse, and then follow these steps:
 1. On the **Addresses** FastTab, select **Add** or **Edit**.
 2. In the dialog box, in the **City** field, select the warehouse's city. The city's state will be used as a county for your DEB report.
@@ -198,7 +200,7 @@ Because the DEB report is a combination of the EU Sales List and the Intrastat r
 
 1. Go to **Tax** > **Declarations** > **Foreign trade** > **Intrastat**.
 2. On the Action Pane, select **Output** > **Report**.
-3. In the **Intrastat Report** dialog box, set the following fields.
+3. In the **Intrastat Report** dialog box, set the following fields:
 
     | Field            | Description                                                                                                                         |
     |------------------|-------------------------------------------------------------------------------------------------------------------------------------|
@@ -211,9 +213,14 @@ Because the DEB report is a combination of the EU Sales List and the Intrastat r
     | Only corrections | Set this option to **Yes** to report only corrections. Set it to **No** to report both normal transactions and corrections.         |
     | Direction        | Select **Arrivals** for a report about intracommunity arrivals. Select **Dispatches** for a report about intracommunity dispatches. |
 
+4. Select OK to close the **Intrastat Report** dialog box.
+5. In the **Electronic report parameters** dialog box, on the **Parameters** FastTab, in the **Report level** field, select the report level. The report level can be **1 - statistical response**, **4 - tax declaration**, or **5 - statistical response to shipment and tax declaration**.
+
 ## Example
 
 The following example shows how to set up French Intrastat and create the DEB report. It uses the **DEMF** legal entity.
+
+### Preliminary setup
 
 1. In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index), in the Shared asset library, download the latest versions of the following ER configurations for the Intrastat declaration format:
 
@@ -238,53 +245,95 @@ The following example shows how to set up French Intrastat and create the DEB re
     5. In the **Code** field, enter **2204 21 42**
     6. On the Action Pane, select **Save**.
 
-4. Go to **Tax** > **Setup** > **Foreign trade** > **Foreign trade parameters**, and follow these steps:
+### Set up NAF codes
 
-    1. On the **Intrastat** tab, on the **General** FastTab, in the **Transaction code** field, select **11**.
-    2. On the **Electronic reporting** FastTab, in the **File format mapping** field, select **Intrastat INTRACOM (FR)**.
-    3. In the **Report format mapping** field, select **Intrastat report**.
-    4. On the **Commodity code hierarchy** FastTab, in the **Category hierarchy** field, select **Intrastat**.
+#### Set up the VAT ID of the data provider for your company
 
-5. Set up an NGP code:
+1. Go to **Organization administration** > **Organizations** > **Legal entities**, select your company, and then follow these steps:
 
-    1. Go to **Tax** > **Setup** > **Foreign trade** > **NGP codes**.
-    2. On the Action Pane, select **New**.
-    3. In the **NGP** field, enter **8**.
-    4. In the **Description name** field enter **NGP 8**.
-    5. On the Action Pane, select **Save**.
+    1. On the **Registration numbers** FastTab, in the **NAF code** field, enter your NAF code.
+    2. On the **Foreign trade and logistics** FastTab, in the **Intrastat** section, set the **VAT exempt number export** and **VAT exempt number import** fields.
+    3. On the **Tax registration** FastTab, in the **Tax registration number** field, enter your company's tax registration number.
 
-6. Assign the NGP code to a product:
+2. To specify NAF codes and tax-exempt numbers for customers, go to **Accounts receivable** > **Customers** > **All customers**, and follow these steps:
 
-    1. Go to **Product information management** > **Products** > **Released products**.
-    2. In the grid, select **0001**.
-    3. On the **Foreign trade** FastTab, in the **NGP** field, select **8**.
-    4. In the **Commodity** field, select **2204 21 42**.
-    5. On the Action Pane, select **Save**.
+    1. Select a customer.
+    2. On the **Invoice and delivery** FastTab, in the **Sales tax** section, in the **Tax exempt number** field, enter the customer's tax-exempt number.
+    3. On the **Sales demographics** FastTab, in the **French Siret** field, enter the company's Siret number.
+    4. In the **NAF code** field, enter the company's NAF code.
+    5. Repeat these steps for other customers.
 
-7. Create a sales order that includes the new product:
+3. To specify NAF codes and tax-exempt numbers for vendors, go to **Accounts payable** > **Vendors** > **All vendors**, and follow these steps:
 
-    1. Go to **Accounts receivable** > **Orders** > **All sales orders**.
-    2. On the Action Pane, select **New**.
-    3. In the **Create** **sales** **order** dialog box, in the **Customer** section, in the **Customer** **account** field, select **100001**.
-    4. In the **Address** section, in the **Delivery address** field, select the plus sign (**+**) to create an address.
-    5. In the **New address** dialog box, in the **Name of description** field, enter **Germany**.
-    6. In the **Country/region** field, select **DEU**.
-    7. Select **OK**.
-    8. In the **Create sales order** dialog box, select **OK**.
-    9. On the **Sales** **order lines** FastTab, in the **Item number** field, select **0001**.
-    10. On the Action Pane, select **Save**.
-    11. On the Action Pane, on the **Invoice** tab, in the **Generate** group, select **Invoice**.
-    12. In the **Posting invoice** dialog box, on the **Parameters** FastTab, in the **Parameter** section, in the **Quantity** field, select **All**. Then select **OK** to post the invoice.
+    1. Select a vendor.
+    2. On the **Invoice and delivery** FastTab, in the **Sales tax** section, in the **Tax exempt number** field, enter the vendor's tax-exempt number.
+    3. On the **Purchasing demographics** FastTab, in the **French Siret** field, enter the company's Siret number.
+    4. In the **NAF code** field, enter the company's NAF code.
+    5. Repeat these steps for other vendors.
 
-8.  Create the DEB report:
 
-    1. Go to **Tax** > **Declarations** > **Foreign trade** > **Intrastat**:
-    2. On the Action Pane. select **Transfer**.
-    3. In the **Intrastat (Transfer)** dialog box, in the **Parameters** section, set the **Customer invoice** option to **Yes**. Then select **OK**.
-    4. Sort transactions by the **Date** field. The top transaction is the result transaction. The **NGP** field is automatically set.
-    5. On the Action Pane, select **Output** &gt; **Report**.
-    6. In the **Intrastat Report** dialog box, on the **Parameters** FastTab, in the **Date** section, select the month of the sales order that you created.
-    7. In the **Export options** section, set the **Generate file** option to **Yes**.
-    8. In the **File name** field, enter the required name.
-    9. Select **OK**, and review the report.
 
+### Set up foreign trade parameters
+
+1. Go to **Tax** > **Setup** > **Foreign trade** > **Foreign trade parameters**.
+2. On the **Intrastat** tab, on the **General** FastTab, in the **Transaction code** field, select **11**.
+3. On the **Electronic reporting** FastTab, in the **File format mapping** field, select **Intrastat INTRACOM (FR)**.
+4. In the **Report format mapping** field, select **Intrastat report**.
+5. On the **Commodity code hierarchy** FastTab, in the **Category hierarchy** field, select **Intrastat**.
+
+### Set up an NGP code
+
+#### Create NGP code
+
+1. Go to **Tax** > **Setup** > **Foreign trade** > **NGP codes**.
+2. On the Action Pane, select **New**.
+3. In the **NGP** field, enter **8**.
+4. In the **Description name** field enter **NGP 8**.
+5. On the Action Pane, select **Save**.
+
+#### Assign the NGP code to a product
+
+1. Go to **Product information management** > **Products** > **Released products**.
+2. In the grid, select **D0001**.
+3. On the **Foreign trade** FastTab, in the **NGP** field, select **8**.
+4. In the **Commodity** field, select **2204 21 42**.
+5. On the Action Pane, select **Save**.
+
+### Change the site address
+
+1. Go to **Warehouse management** > **Setup** > **Warehouse** > **Sites**.
+2. In the grid, select **1**.
+3. On the **Addresses** FastTab, select **Edit**.
+4. In the **Edit address** dialog box, in the **Country/region** field, select **FRA**.
+5. Select **OK**.
+
+### Create a sales order with an EU customer that includes the new product
+
+1. Go to **Accounts receivable** > **Orders** > **All sales orders**.
+2. On the Action Pane, select **New**.
+3. In the **Create** **sales** **order** dialog box, in the **Customer** section, in the **Customer** **account** field, select **100001**.
+4. In the **Address** section, in the **Delivery address** field, select the plus sign (**+**) to create an address.
+5. In the **New address** dialog box, in the **Name of description** field, enter **Germany**.
+6. In the **Country/region** field, select **DEU**.
+7. Select **OK**.
+8. In the **Create sales order** dialog box, select **OK**.
+9. On the **Sales** **order lines** FastTab, in the **Item number** field, select **0001**.
+10. On the Action Pane, select **Save**.
+11. On the Action Pane, on the **Invoice** tab, in the **Generate** group, select **Invoice**.
+12. In the **Posting invoice** dialog box, on the **Parameters** FastTab, in the **Parameter** section, in the **Quantity** field, select **All**. Then select **OK** to post the invoice.
+
+### Transfer the transaction to the Intrastat journal and review the result
+
+1. Go to **Tax** > **Declarations** > **Foreign trade** > **Intrastat**:
+2. On the Action Pane. select **Transfer**.
+3. In the **Intrastat (Transfer)** dialog box, in the **Parameters** section, set the **Customer invoice** option to **Yes**. Then select **OK**.
+4. Sort transactions by the **Date** field. The top transaction is the result transaction. The **NGP** field is automatically set.
+5. On the Action Pane, select **Output** &gt; **Report**.
+6. In the **Intrastat Report** dialog box, on the **Parameters** FastTab, in the **Date** section, select the month of the sales order that you created.
+7. In the **Export options** section, set the **Generate file** option to **Yes**.
+8. In the **File name** field, enter the required name.
+9. Select OK to close the **Intrastat Report** dialog box.
+10. In the **Electronic report parameters** dialog box, on the **Parameters** FastTab, in the **Report level** field, select **5 - statistical response to shipment and tax declaration**, and review the report.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
