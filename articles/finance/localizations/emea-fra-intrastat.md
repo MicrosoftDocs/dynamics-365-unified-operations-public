@@ -249,9 +249,12 @@ The following example shows how to set up French Intrastat and create the DEB re
 
 #### Set up the VAT ID of the data provider for your company
 
-1. Go to **Organization administration** > **Organizations** > **Legal entities**, select your company, and then follow these steps:
+1. Go to **Organization administration** > **Global address book** > **Addresses** > **NAF codes**.
+2. On the Action Pane, select **New**.
+3. In the **NAF code** field, enter **12**
+4. Go to **Organization administration** > **Organizations** > **Legal entities**.
 
-    1. On the **Registration numbers** FastTab, in the **NAF code** field, enter your NAF code.
+    1. On the **Registration numbers** FastTab, in the **NAF code** field, enter your NAF code .
     2. On the **Foreign trade and logistics** FastTab, in the **Intrastat** section, set the **VAT exempt number export** and **VAT exempt number import** fields.
     3. On the **Tax registration** FastTab, in the **Tax registration number** field, enter your company's tax registration number.
 
