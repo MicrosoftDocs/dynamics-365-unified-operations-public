@@ -36,6 +36,12 @@ There is a section in the localagent-config.json file that is labeled deployment
 				},
 				"skipCRLCheck" : {
 					"value": "false"
+				},
+				"rsatEnabled": {
+					"value": "false"
+				},
+				"rsatCertificateThumbprint": {
+					"value":  ""
 				}
 			},
     ...
@@ -73,4 +79,15 @@ Support for this option was introduced in version 10.0.21. Additionally, at leas
 
 > [!IMPORTANT]
 > By disabling the certificate revocation list of a certificate, the security check will not be performed. You bear the risk of disabling it. You should only enable this deployment option if you are fully aware of the security implications of disabling this check.
+
+## Specify that an environment should be configured to work with the Regression Suite Automation Tool (RSAT)
+
+The Regression suite automation tool (RSAT) significantly reduces the time and cost of user acceptance testing (UAT) of Finance and Operations apps. For more information see [Regression suite automation tool (RSAT)
+](../perf-test/rsat/rsat-overview.md)
+
+To enable this deployment option change **rsatEnabled** from **false** to **true**. Additionally, you also need to set **rsatCertificateThumbprint** to the thumbprint of the certificate you want to use for RSAT.
+
+For more information on how to generate and deploy the certificate see [Enable RSAT in Microsoft Dynamics 365 Finance + Operations (on-premises) environments](./onprem-rsat-configuration.md).
+
+Support for this option was introduced in version 10.0.28. Additionally, at least local agent 3.1.0 is required to use this option.
 
