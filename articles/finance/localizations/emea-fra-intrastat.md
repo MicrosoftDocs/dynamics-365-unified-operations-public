@@ -77,6 +77,7 @@ The table also indicates the report level of the field. The field can be **4** (
 | Complementary Code          | 4, 1, 5               |           
 | Period Of Reference         | 4, 1, 5               |         
 
+
 ## Set up Intrastat
 
 1.  In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index), in the Shared asset library, download the latest versions of the following Electronic reporting (ER) configurations for the Intrastat declaration:
@@ -91,6 +92,7 @@ The table also indicates the report level of the field. The field can be **4** (
 ### Set up VAT IDs
 
 #### Set up VAT codes for your company
+
 1. Go to **Tax** > **Setup** > **Sales tax** > **Tax exempt numbers**.
 2. On the Action Pane, select **New**.
 3. In the **Country/region** field, select **FRA**.
@@ -99,7 +101,9 @@ The table also indicates the report level of the field. The field can be **4** (
 6. On the **Foreign trade and logistics** FastTab, in the **Intrastat** section, set the **VAT exempt number export** and **VAT exempt number import** fields with the code created on step 4.
 7. On the **Tax registration** FastTab, in the **Tax registration number** field, enter your company's tax registration number.
 
-#### Create a registration type for the company code
+#### Set up the VAT IDs for trading partners
+
+##### Create a registration type for the company code
 
 You must create VAT ID registration types for all the countries or regions that your company does business with.
 
@@ -109,14 +113,14 @@ You must create VAT ID registration types for all the countries or regions that 
 4. In the **Country/region** field, select the country or region of the trading partner.
 5. Select **Create**.
 
-#### Match the registration type with a registration category
+##### Match the registration type with a registration category
 
 1. Go to **Organization administration** > **Global address book** > **Registration types** > **Registration categories**.
 2. On the Action Pane, select **New** to create a link between a registration type and a registration category.
 3. For the registration type for the VAT ID, select the **VAT ID** registration category.
 4. Repeat steps 2 and 3 for the other registration types that you created for the countries or regions that your company does business with.
 
-#### Set up the VAT number of a trading partner
+##### Set up the VAT number of a trading partner
 
 1. Go to **Accounts receivable** > **Customers** > **All customers.**
 2. In the grid, select a customer.
@@ -125,25 +129,8 @@ You must create VAT ID registration types for all the countries or regions that 
 5. In the **Registration type** field, select the registration type that you created for the company code earlier in this article.
 6. In the **Registration number** field, enter the company's VAT number.
 7. On the Action Pane, select **Save**. Then close the page.
-8. On the **Invoice and delivery** FastTab, in the **Sales tax** section, in the **Tax exempt number** field, select the tax-exempt code that you created earlier.
 
 For more information, see [Registration IDs](emea-registration-ids.md).
-
-2. To specify NAF codes and tax-exempt numbers for customers, go to **Accounts receivable** > **Customers** > **All customers**, and follow these steps:
-
-    1. Select a customer.
-    2. On the **Invoice and delivery** FastTab, in the **Sales tax** section, in the **Tax exempt number** field, enter the customer's tax-exempt number.
-    3. On the **Sales demographics** FastTab, in the **French Siret** field, enter the company's Siret number.
-    4. In the **NAF code** field, enter the company's NAF code.
-    5. Repeat these steps for other customers.
-
-3. To specify NAF codes and tax-exempt numbers for vendors, go to **Accounts payable** > **Vendors** > **All vendors**, and follow these steps:
-
-    1. Select a vendor.
-    2. On the **Invoice and delivery** FastTab, in the **Sales tax** section, in the **Tax exempt number** field, enter the vendor's tax-exempt number.
-    3. On the **Purchasing demographics** FastTab, in the **French Siret** field, enter the company's Siret number.
-    4. In the **NAF code** field, enter the company's NAF code.
-    5. Repeat these steps for other vendors.
 
 ### Set up foreign trade parameters
 
@@ -154,7 +141,6 @@ In Dynamics 365 Finance, go to **Tax** > **Setup** >  **Foreign trade** > **Fore
 3. On the **Commodity code hierarchy** FastTab, in the **Category hierarchy** field, select **Intrastat**.
 4. On the **General** FastTab, in the **Transaction code** field, select the code that is used for transfers of goods.
 5. In the **Credit note** field, select the code that is used for returns of goods.
-
 
 ### Set up compression of Intrastat
 
@@ -173,7 +159,6 @@ Go to **Tax** > **Setup** > **Foreign trade** > **Compression of Intrastat**, an
 - State
 - Transaction code
 - Commodity
-
 
 ### Set up product parameters for the Intrastat declaration
 
@@ -278,35 +263,43 @@ The following example shows how to set up French Intrastat and create the DEB re
     5. In the **Code** field, enter **2204 21 42**
     6. On the Action Pane, select **Save**.
 
-### Set up NAF codes
+### Set up VAT IDs
 
-#### Set up the VAT ID of the data provider for your company
-
-1. Go to **Organization administration** > **Global address book** > **Addresses** > **NAF codes**.
+#### Set up VAT codes for your company
+1. Go to **Tax** > **Setup** > **Sales tax** > **Tax exempt numbers**.
 2. On the Action Pane, select **New**.
-3. In the **NAF code** field, enter **12**
-4. Go to **Organization administration** > **Organizations** > **Legal entities**.
-5. On the **Registration numbers** FastTab, in the **NAF code** field, select **12**.
-6. On the **Foreign trade and logistics** FastTab, in the **Intrastat** section, set the **VAT exempt number export** and **VAT exempt number import** fields.
-7. On the **Tax registration** FastTab, in the **Tax registration number** field, enter your company's tax registration number.
+3. In the **Country/region** field, select **FRA**.
+4. In the **Tax exempt number** field, enter **MS123456**.
+5. Go to **Organization administration** > **Organizations** > **Legal entities** and select **DEMF**.
+6. On the **Foreign trade and logistics** FastTab, in the **Intrastat** section, set the **VAT exempt number export** and **VAT exempt number import** fields with the code created on step 4.
+7. On the **Tax registration** FastTab, in the **Tax registration number** field, enter **123456789**.
 
-2. To specify NAF codes and tax-exempt numbers for customers, go to **Accounts receivable** > **Customers** > **All customers**, and follow these steps:
+#### Set up the VAT IDs for trading partners
 
-    1. Select a customer.
-    2. On the **Invoice and delivery** FastTab, in the **Sales tax** section, in the **Tax exempt number** field, enter the customer's tax-exempt number.
-    3. On the **Sales demographics** FastTab, in the **French Siret** field, enter the company's Siret number.
-    4. In the **NAF code** field, enter the company's NAF code.
-    5. Repeat these steps for other customers.
+##### Create a registration type for the company code
 
-3. To specify NAF codes and tax-exempt numbers for vendors, go to **Accounts payable** > **Vendors** > **All vendors**, and follow these steps:
+1. Go to **Organization administration** > **Global address book** > **Registration types** > **Registration types**.
+2. On the Action Pane, select **New** to create a registration type for the VAT ID.
+3. In the **Enter registration type details** dialog box, in the **Name** field, enter **VAT ID**.
+4. In the **Country/region** field, select **DEU**.
+5. Select **Create**.
 
-    1. Select a vendor.
-    2. On the **Invoice and delivery** FastTab, in the **Sales tax** section, in the **Tax exempt number** field, enter the vendor's tax-exempt number.
-    3. On the **Purchasing demographics** FastTab, in the **French Siret** field, enter the company's Siret number.
-    4. In the **NAF code** field, enter the company's NAF code.
-    5. Repeat these steps for other vendors.
+#### Match the registration type with a registration category
 
+1. Go to **Organization administration** > **Global address book** > **Registration types** > **Registration categories**.
+2. On the Action Pane, select **New** to create a link between the registration type and the registration category.
+3. For the **VAT ID** registration type of the **DEU** country, select the **VAT ID** registration category.
 
+#### Set up the customer's VAT registration number
+
+1. Go to **Accounts receivable** > **Customers** > **All customers**.
+2. In the grid, select **DE-016**.
+3. On the Action Pane, on the **Customer** tab, in the **Registration** group, select **Registration IDs**.
+4. On the **Registration ID** FastTab, select **Add** to create a registration ID.
+5. In the **Registration type** field, select **VAT ID**.
+6. In the **Registration number** field, enter **DE9012**.
+7. On the Action Pane, select **Save**. Then close the page.
+8. On the **Invoice and delivery** FastTab, in the **Sales tax** section, in the **Tax exempt number** field, select **DE9012123456789**.
 
 ### Set up foreign trade parameters
 
@@ -316,9 +309,7 @@ The following example shows how to set up French Intrastat and create the DEB re
 4. In the **Report format mapping** field, select **Intrastat report**.
 5. On the **Commodity code hierarchy** FastTab, in the **Category hierarchy** field, select **Intrastat**.
 
-### Set up an NGP code
-
-#### Create NGP code
+### Create NGP code
 
 1. Go to **Tax** > **Setup** > **Foreign trade** > **NGP codes**.
 2. On the Action Pane, select **New**.
@@ -326,13 +317,20 @@ The following example shows how to set up French Intrastat and create the DEB re
 4. In the **Description name** field enter **NGP 8**.
 5. On the Action Pane, select **Save**.
 
-#### Assign the NGP code to a product
+### Set up product information
 
 1. Go to **Product information management** > **Products** > **Released products**.
 2. In the grid, select **D0001**.
-3. On the **Foreign trade** FastTab, in the **NGP** field, select **8**.
+3. On the **Foreign trade** FastTab, in the **Intrastat** section, in the **NGP** field, select **8**.
 4. In the **Commodity** field, select **2204 21 42**.
-5. On the Action Pane, select **Save**.
+5. In the **Origin** section, in the **Country/region** field, select **FRA**.
+6. On the **Manage inventory** FastTab, in the **Weight measurements** section, in the **Net weight** field, enter **2**.
+7. On the Action Pane, select **Save** and close the form.
+8. In the grid, select **D0003**.
+9. On the **Foreign trade** FastTab, in the **Intrastat** section, in the **Commodity** field, select **100 200 30**.
+10. In the **Origin** section, in the **Country/region** field, select **DEU**.
+11.On the **Manage inventory** FastTab, in the **Weight measurements** section, in the **Net weight** field, enter **5**.
+12.On the Action Pane, select **Save**.
 
 ### Change the site address
 
@@ -341,6 +339,9 @@ The following example shows how to set up French Intrastat and create the DEB re
 3. On the **Addresses** FastTab, select **Edit**.
 4. In the **Edit address** dialog box, in the **Country/region** field, select **FRA**.
 5. Select **OK**.
+6. Go to **Warehouse management** > **Setup** > **Warehouse** > **Warehouses**, select a warehouse.
+7. On the **Addresses** FastTab, select **Add**.
+8. In the **New address** dialog box, in the **City** field, select **Bordeaux**.
 
 ### Create a sales order with an EU customer that includes the new product
 
