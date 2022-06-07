@@ -36,8 +36,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 > The certificate rotation process should be initiated well before the certificates expire. This is very important for the Data Encryption certificate, which could cause data loss for encrypted fields. For more information, see [After certificate rotation](#aftercertrotation). 
 > 
 > Old certificates must remain in place until the certificate rotation process is complete, removing them in advance will cause the rotation process to fail.
-
-> [!WARNING]
+>
 > The certificate rotation process should not be carried out on Service Fabric clusters running 7.0.x and 7.1.x. 
 >
 > Upgrade your Service Fabric cluster to 7.2.x or later before attempting certificate rotation.
@@ -56,14 +55,15 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
     - If the schema versions haven't changed, copy the **ConfigTemplate.xml** file from the **InfrastructureOld** folder to the **Infrastructure** folder.
     - If the schema versions have changed, follow these steps:
 
-        1. In the **Infrastructure** folder rename **ConfigTemplate.xml** to **EmptyConfigTemplate.xml**
+        1. In the **Infrastructure** folder, rename the **ConfigTemplate.xml** file **EmptyConfigTemplate.xml**
         1. Copy the **ConfigTemplate.xml** file from the **InfrastructureOld** folder to the **Infrastructure** folder.
         1. Run the following command.
-        
+
             ```powershell
             .\Update-ConfigTemplate.ps1 -OldConfigTemplate .\ConfigTemplate.xml -NewConfigTemplate .\EmptyConfigTemplate.xml
             ```
-        1. The **ConfigTemplate.xml** file is now upgraded. You need to go through the file and fill in additional information that may be needed.
+
+        1. The **ConfigTemplate.xml** file is now upgraded. You must now go through the file and fill in any additional information that is required.
 
         > [!NOTE]
         > Newer versions of the scripts (version 2.14.0 and later) that introduce changes to the schema of the configuration file will include logic that migrates the configuration file to the new schema.
@@ -82,6 +82,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 
     > [!NOTE]
     > The AD CS scripts need to run on a domain controller, or a Windows Server computer with Remote Server Admin Tools installed.
+    >
     > The AD CS functionality is only available with Infrastructure scripts release 2.7.0 and later. 
 
     Alternatively, if you want to continue to use self-signed certificates, run the following command.
@@ -104,13 +105,13 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 1. Continue to [set up VMs](setup-deploy-on-premises-pu41.md#setupvms). Here are the specific steps that are required for this process:
 
     1. Export the scripts that must be run on each VM.
-    
+
         ```powershell
         # Exports the script files to be executed on each VM into a directory VMs\<VMName>.
         .\Export-Scripts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
         ```
 
-    2. Copy the contents of each `infrastructure\VMs<VMName>` folder into the corresponding VM (if remoting scripts are used, they will automatically copy the content to the target VMs), and then run the following script. Perform this step as an Administrator.
+    2. Copy the contents of each `infrastructure\VMs<VMName>` folder into the corresponding VM (if remoting scripts are used, they will automatically copy the content to the target VMs), and then run the following script. Perform this step as an administrator.
 
         ```powershell
         # If remoting, only execute
@@ -119,7 +120,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
         .\Configure-PreReqs.ps1
         ```
 
-    3. Run the following script to ensure all prerequisites are completed. Perform this step as an administrator.
+    3. Run the following script to ensure that all prerequisites are completed. Perform this step as an administrator.
 
         ```powershell
         # If remoting, only execute
@@ -129,7 +130,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
         ```
 
     4. Run the following script to validate the VM setup.
-    
+
         ```powershell
         # If remoting, only execute
         # .\Test-D365FOConfiguration-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
@@ -144,95 +145,100 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 
 ## Activate new certificates within Service Fabric cluster
 
-In order to ease the certificate rotation process, Microsoft is recommending that certificate common names (subject name) are used instead of thumbprints for your Service Fabric standalone cluster configuration. If you have an existing cluster and want to migrate from using thumbprints to certificate common names you can do so by doing the following steps.
+To make the certificate rotation process easier, Microsoft recommends that you use certificate common names (subject name) instead of thumbprints for your Service Fabric standalone cluster configuration. If you have an existing cluster and want to migrate from using thumbprints to using certificate common names, follow these steps.
 
-1.  Run the following script to generate an updated cluster configuration file.
+1. Run the following script to generate an updated cluster configuration file.
+
     ```powershell
-        .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -UpgradeToCommonNames
+    .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -UpgradeToCommonNames
     ```
 
     > [!NOTE]
-    > To provide defense in depth, we recommend that you restrict who the issuer of the certificates should be. Without this option, any certificate that matches the common name (subject name) defined in the Service Fabric cluster configuration can be used. 
+    > To provide defense in depth, we recommend that you restrict who the issuer of the certificates should be. Otherwise, any certificate that matches the common name (subject name) that is defined in the Service Fabric cluster configuration can be used. 
+    >
     > ```powershell
-    >   .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -UpgradeToCommonNames -RestrictCertificateIssuers
+    > .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -UpgradeToCommonNames -RestrictCertificateIssuers
     > ```
 
-1. See [Appendix A](#appendix-a) later in this article for information about how to apply the updated configuration to your Service Fabric cluster.
+1. Apply the updated configuration to your Service Fabric cluster by using the information in [Appendix A](#appendix-a) later in this article.
 
-### <a name=""></a> Service Fabric cluster with certificate common names
+### <a name=""></a>Service Fabric cluster with certificate common names
 
-#### Service Fabric with certificates that are not expired
+#### Service Fabric with certificates that aren't expired
 
 No further action is required. Service Fabric will automatically detect the new certificates. 
 
-If you have changed the certificate common name, then you need to upgrade your service fabric cluster configuration.
+If you've changed the certificate common name, you must upgrade your Service Fabric cluster configuration.
 
-1.  Run the following script to generate an updated cluster configuration file.
+1. Run the following script to generate an updated cluster configuration file.
+
     ```powershell
-        .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -UpdateCommonNames
+    .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -UpdateCommonNames
     ```
 
-    >[!NOTE]
-    > If the issuers have also changed, use this command instead
+    > [!NOTE]
+    > If the issuers have also changed, use the following command instead.
+    >
     > ```powershell
-    >    .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -UpdateCommonNames -UpdateIssuers
+    > .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -UpdateCommonNames -UpdateIssuers
     > ```
 
-1. See [Appendix A](#appendix-a) later in this article for information about how to apply the updated configuration to your Service Fabric cluster.
+1. Apply the updated configuration to your Service Fabric cluster by using the information in [Appendix A](#appendix-a) later in this article.
 
 #### Service Fabric with certificates that are expired
 
 If your cluster is not available after 10 minutes from when you finished provisioning the new certificates to all of the nodes, consider restarting the nodes where the Service Fabric service is not started.
 
-If you have changed the certificate common name (subject name), then the Service Fabric cluster will not start up. If you can't generate new certificates with the previous common name you will need to cleanup and recreate the cluster.
+If you have changed the certificate common name (subject name), then the Service Fabric cluster will not start up. If you can't generate new certificates with the previous common name, you will need to cleanup and recreate the cluster.
 
 #### Service Fabric with restricted certificate issuers
 
-If your cluster configuration has the sections below defined then it has restricted the allowed certificate issuers. 
+If the following sections are defined for your cluster configuration, the allowed certificate issuers are restricted. 
 
 ```json
-        "ClusterCertificateIssuerStores": [
-          {
-            "IssuerCommonName": "sample-ca",
-            "X509StoreNames": "Root"
-          }
-        ],
-        "ServerCertificateIssuerStores": [
-          {
-            "IssuerCommonName": "sample-ca",
-            "X509StoreNames": "Root"
-          }
-        ],
-        "ClientCertificateIssuerStores": [
-          {
-            "IssuerCommonName": "sample-ca",
-            "X509StoreNames": "Root"
-          }
-        ],
+"ClusterCertificateIssuerStores": [
+    {
+        "IssuerCommonName": "sample-ca",
+        "X509StoreNames": "Root"
+    }
+],
+"ServerCertificateIssuerStores": [
+    {
+        "IssuerCommonName": "sample-ca",
+        "X509StoreNames": "Root"
+    }
+],
+"ClientCertificateIssuerStores": [
+    {
+        "IssuerCommonName": "sample-ca",
+        "X509StoreNames": "Root"
+    }
+],
 ```
 
-In such cases, if your new certificates have a different issuer than is defined in these configurations then you will need to go through a cluster configuration upgrade to add the new issuers. However, keep in mind that if your cluster defines a root CA as the issuer instead of an intermediate certificate, then as long as the certificate chain of your new certificates contains the root CA the certificate will be valid.
+In this case, if the issuer of your new certificates differs from what is defined in these configurations, you must go through a cluster configuration upgrade to add the new issuers. However, if your cluster defines a root CA as the issuer instead of an intermediate certificate, the certificate will be valid, provided that the certificate chain of your new certificates contains the root CA.
 
-In case you do need to update the list of issuers then you must do this while the existing certificates are still valid.
+If you have to update the list of issuers, you must do the update while the existing certificates are still valid.
 
-1.  Run the following script to generate an updated cluster configuration file.
+1. Run the following script to generate an updated cluster configuration file.
+
     ```powershell
-        .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -UpdateIssuers
+    .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -UpdateIssuers
     ```
 
-1. See [Appendix A](#appendix-a) later in this article for information about how to apply the updated configuration to your Service Fabric cluster.
+1. Apply the updated configuration to your Service Fabric cluster by using the information in [Appendix A](#appendix-a) later in this article.
 
-### <a name=""></a> Service Fabric cluster defined with certificate thumbprints
+### <a name=""></a>Service Fabric cluster defined with certificate thumbprints
 
 #### <a name="sfcertrotationnotexpired"></a>Service Fabric with certificates that aren't expired
 
-1. Run the following script from a node belonging to the Service Fabric cluster to generate an updated cluster configuration file.
+1. Run the following script from a node that belongs to the Service Fabric cluster to generate an updated cluster configuration file.
 
     ```powershell
-        .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -UpdateThumbprints
+    .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -UpdateThumbprints
     ```
 
-1. See [Appendix A](#appendix-a) below for how to apply the updated configuration to your Service Fabric cluster.
+1. Apply the updated configuration to your Service Fabric cluster by using the information in [Appendix A](#appendix-a) later in this article.
 
 #### Service Fabric with or without expired certificates (cluster not accessible)
 
@@ -403,64 +409,64 @@ Alternatively, if you also want to rotate the existing credentials, follow these
 
 This procedure should be completed after a successful certificate rotation or before the next certificate rotation.
 
-1.  Run the following script to generate an updated cluster configuration file.
+1. Run the following script to generate an updated cluster configuration file.
+
     ```powershell
-        .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -RemoveOldThumbprints
+    .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -RemoveOldThumbprints
     ```
 
-2. See [Appendix A](#appendix-a) later in this article for information about how to apply the updated configuration to your Service Fabric cluster.
+2. Apply the updated configuration to your Service Fabric cluster by using the information in [Appendix A](#appendix-a) later in this article.
 
-## <a name="aftercertrotation"></a> After certificate rotation
+## <a name="aftercertrotation"></a>After certificate rotation
 
 ### Data encryption certificate
 
-This certificate is used to encrypt data stored in the database. By default, there are certain fields that are encrypted with this certificate. You can check those fields in [Document the values of encrypted fields](../database/dbmovement-scenario-goldenconfig.md#document-the-values-of-encrypted-fields). However, our API can be used to encrypt other fields as needed. 
+This certificate is used to encrypt data that is stored in the database. By default, specific fields are encrypted by using this certificate. You can check those fields in [Document the values of encrypted fields](../database/dbmovement-scenario-goldenconfig.md#document-the-values-of-encrypted-fields). However, you can use our API to encrypt other fields as you require. 
 
-In Platform update 33 and later, the batch job, **Encrypted data rotation system job** uses the newly rotated certificate to re-encrypt data. This batch job crawls through your data to re-encrypt all the encrypted data by using the new certificate. The job will run for two hours each day until all of the data has been re-encrypted. Toenable the batch job, a flight and a configuration key need to be enabled. Execute the following commands against your business database (for example, AXDB).
+In Platform update 33 and later, the **Encrypted data rotation system job** batch job uses the newly rotated certificate to re-encrypt data. This batch job crawls through your data to re-encrypt all the encrypted data by using the new certificate. The job will run for two hours each day until all the data has been re-encrypted. To enable the batch job, you must enable a flight and a configuration key. Run the following commands against your business database (for example, AXDB).
 
 ```sql
 IF (EXISTS(SELECT * FROM SYSFLIGHTING WHERE [FLIGHTNAME] = 'EnableEncryptedDataCrawlerRotationTask'))
-  UPDATE SYSFLIGHTING SET [ENABLED] = 1 WHERE [FLIGHTNAME] = 'EnableEncryptedDataCrawlerRotationTask'
+    UPDATE SYSFLIGHTING SET [ENABLED] = 1 WHERE [FLIGHTNAME] = 'EnableEncryptedDataCrawlerRotationTask'
 ELSE
-  INSERT INTO SYSFLIGHTING ([FLIGHTNAME],[ENABLED],[FLIGHTSERVICEID]) VALUES ('EnableEncryptedDataCrawlerRotationTask', 1, 0)
+    INSERT INTO SYSFLIGHTING ([FLIGHTNAME],[ENABLED],[FLIGHTSERVICEID]) VALUES ('EnableEncryptedDataCrawlerRotationTask', 1, 0)
  
 IF (EXISTS(SELECT * FROM SECURITYCONFIG WHERE [KEY_] = 'EnableEncryptedDataRotation'))
-  UPDATE SECURITYCONFIG SET [VALUE] = 'True' WHERE [KEY_] = 'EnableEncryptedDataRotation'
+    UPDATE SECURITYCONFIG SET [VALUE] = 'True' WHERE [KEY_] = 'EnableEncryptedDataRotation'
 ELSE
-  INSERT INTO SECURITYCONFIG ([KEY_], [VALUE]) VALUES ('EnableEncryptedDataRotation', 'True')
+    INSERT INTO SECURITYCONFIG ([KEY_], [VALUE]) VALUES ('EnableEncryptedDataRotation', 'True')
 ```
 
-After the commands have been executed, restart your AOS nodes from Service Fabric Explorer. The AOS will detect the new configuration and schedule the batch job to run during off hours. After the batch job has been created, the schedule can be modified from the user interface.
+After the commands have been run, restart your AOS nodes from Service Fabric Explorer. AOS will detect the new configuration and schedule the batch job to run during off hours. After the batch job has been created, the schedule can be modified from the user interface.
 
 > [!WARNING]
-> Make sure the old Data Encryption certificate isn't removed before all encrypted data has been re-encrypted and that it hasn't expired. Otherwise, this could lead to data loss.
+> Make sure that the old data encryption certificate isn't removed before all encrypted data has been re-encrypted, and that it hasn't expired. Otherwise, data might be lost.
 
-
-## <a name="appendix-a"></a> Appendix A
+## <a name="appendix-a"></a>Appendix A
 
 After you generate the updated Service Fabric cluster configuration, run the following PowerShell commands to apply the upgrade to your Service Fabric cluster.
 
 ```powershell
-    # Connect to the Service Fabric Cluster
-    Connect-ServiceFabricCluster
+# Connect to the Service Fabric Cluster
+Connect-ServiceFabricCluster
 
-    # Get path of ClusterConfig.json for following command
-    # Note that after running the following command, you need to manually cancel using the red button (Stop Operation) in Windows PowerShell ISE or Ctrl+C in Windows PowerShell. Otherwise, you will receive the following notification, "Start-ServiceFabricClusterConfigurationUpgrade : Operation timed out.". Be aware that the upgrade will proceed.
-    Start-ServiceFabricClusterConfigurationUpgrade -ClusterConfigPath ClusterConfig.json
+# Get path of ClusterConfig.json for following command
+# Note that after running the following command, you need to manually cancel using the red button (Stop Operation) in Windows PowerShell ISE or Ctrl+C in Windows PowerShell. Otherwise, you will receive the following notification, "Start-ServiceFabricClusterConfigurationUpgrade : Operation timed out.". Be aware that the upgrade will proceed.
+Start-ServiceFabricClusterConfigurationUpgrade -ClusterConfigPath ClusterConfig.json
 
-    # If you are using a single Microsoft SQL Server Reporting Services node, use UpgradeReplicaSetCheckTimeout to skip PreUpgradeSafetyCheck check, otherwise it will timeout
-    Update-ServiceFabricClusterUpgrade -UpgradeReplicaSetCheckTimeoutSec 30
-    
-    # To monitor the status of the upgrade, run the following and note UpgradeState and UpgradeReplicaSetCheckTimeout
-    Get-ServiceFabricClusterUpgrade
-    
-    # While monitoring the status of the upgrade, if UpgradeReplicaSetCheckTimeout was reset to the default (example 49710.06:28:15), run the following command again
-    Update-ServiceFabricClusterUpgrade -UpgradeReplicaSetCheckTimeoutSec 30
-    
-    # When UpgradeState shows RollingForwardCompleted, the upgrade is finished
+# If you are using a single Microsoft SQL Server Reporting Services node, use UpgradeReplicaSetCheckTimeout to skip PreUpgradeSafetyCheck check, otherwise it will timeout
+Update-ServiceFabricClusterUpgrade -UpgradeReplicaSetCheckTimeoutSec 30
+
+# To monitor the status of the upgrade, run the following and note UpgradeState and UpgradeReplicaSetCheckTimeout
+Get-ServiceFabricClusterUpgrade
+
+# While monitoring the status of the upgrade, if UpgradeReplicaSetCheckTimeout was reset to the default (example 49710.06:28:15), run the following command again
+Update-ServiceFabricClusterUpgrade -UpgradeReplicaSetCheckTimeoutSec 30
+
+# When UpgradeState shows RollingForwardCompleted, the upgrade is finished
 ```
 
 > [!NOTE] 
-> You might receive the following error message: **Upgrading from two different certificates to two different certificates is not allowed.** This message indicates that you didn't clean up old Service Fabric certificates on the previous certificate rotation exercise. In this case, see the [Clean up old Service Fabric certificates](certificate-rotation-on-prem.md#cleanupoldsfcerts) section later in this topic, and then repeat the steps in this section.
+> You might receive the following error message: "Upgrading from two different certificates to two different certificates is not allowed." This message indicates that you didn't clean up old Service Fabric certificates during the previous certificate rotation exercise. In this case, see the [Clean up old Service Fabric certificates](certificate-rotation-on-prem.md#cleanupoldsfcerts) section earlier in this article, and then repeat the steps in this section.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
