@@ -2,7 +2,7 @@
 # required metadata
 
 title: General ledger statement by main account
-description: This article explains how to generate General ledger statements by main account in Microsoft Excel format.
+description: This article explains how to generate general ledger statements by main account in Microsoft Excel format.
 author: liza-golub
 ms.author: elgolu
 ms.date: 06/02/2022
@@ -27,109 +27,110 @@ ms.search.validFrom: 2022-06-01
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to generate the **General ledger statement by main account** report in Microsoft Excel format using [Electronic Reporting (ER)](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
+This article explains how to use [Electronic Reporting (ER)](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md) to generate the **General ledger statement by main account** report in Microsoft Excel format.
 
-The **General ledger statement by main account** report in Excel format is available in Dynamics 365 Finance starting in version 10.0.27.
+The **General ledger statement by main account** report in Excel format is available in Dynamics 365 Finance as of version 10.0.27.
 
-In addition to the [ledger reports](view-journal-entries-transactions#ledger-reports.md), you can use the **General ledger statement by main account** report in Excel format to view general ledger transactions that are represented with the following details:
+In addition to the [ledger reports](view-journal-entries-transactions#ledger-reports.md), you can use the **General ledger statement by main account** report in Excel format to view general ledger transactions. For each transaction, the report shows the following details.
 
 | Column name | Data source description |
-|----|----|
-| Transaction posting date | The date of posting of the general journal entry: `GeneralJournalEntry.AccountingDate`. |
-| Transaction number       | The voucher number of the general journal entry: `GeneralJournalEntry.SubledgerVoucher`. |
-| Main account             | The main account of the general journal account entry: `GeneralJournalAccountEntry.MainAccount`. |
-| Main account name        | The translation of the main account name into the user preference language of main account from general journal account entry: `MainAccountTranslation.Name` related to `MainAccount.Name`. If no translation is specified for the user preference language, the `MainAccount.Name` is reported. |
-| Counterparty number      | When the posting type of the general journal account entry is one of the following: *Customer balance, Vendor balance, Customer collection letter fee, Penny difference in accounting currency*, the **Counterparty number** column represents Customer or Vendor account ID from related customer or vendor transaction found by Voucher number and transaction date from general journal entry: `CustTrans.AccountNum` or `VendTrans.AccountNum` found by `GeneralJournalEntry.SubledgerVoucher` and `GeneralJournalEntry.AccountingDate`.|
-| Counterparty name        | The name of the customer or vendor from the Global address book related to the Customer or Vendor account ID reported in **Counterparty number** column: `DirPartyTable.Name`.|
-| Ledger account           | The ledger account, including dimensions from the general journal account entry: `GeneralJournalAccountEntry.LedgerAccount`.|
-| Description              | The description from the general journal account entry: `GeneralJournalAccountEntry.Text`.|
-| Transaction currency     | The currency of general journal account entry: `GeneralJournalAccountEntry.TransactionCurrencyCode`.|
-| Debit in transaction currency   | The amount in the source document currency from the general journal account entry where the **IsCredit** property is false: `GeneralJournalAccountEntry.TransactionCurrencyAmount` when `IsCredit = false`.|
-| Credit in transaction currency  | The amount in the source document currency from the general journal account entry where the **IsCredit** property is true: `GeneralJournalAccountEntry.TransactionCurrencyAmount` when `IsCredit = true`.|
-| Debit                    | The amount in the accounting or reporting currency from the general journal account entry where the **IsCredit** property is false: `GeneralJournalAccountEntry. AccountingCurrencyAmount` or `GeneralJournalAccountEntry. ReportingCurrencyAmount` when `IsCredit = false`.|
-| Credit                   | The amount in the accounting or reporting currency from the general journal account entry where the **IsCredit** property is true: `GeneralJournalAccountEntry.AccountingCurrencyAmount` or `GeneralJournalAccountEntry.ReportingCurrencyAmount` when `IsCredit = true`.|
-| Accumulated balance      | The accumulated balance is calculated as the opening balance on the beginning of the reporting period and turnover by main account from the beginning of the reporting period until the current general ledger entry. |
-| Sales tax code           | If a general journal account entry has related sales tax entry of **Profit and loss**, the **Sales tax code** column represents the sales tax codes from the related sales tax entries: `TaxTrans.TaxCode` found by `TaxTransGeneralJournalAccountEntry.TaxTrans` and `TaxTransGeneralJournalAccountEntry.SubledgerJournaalAccountEntry` where `TaxTransGeneralJournalAccountEntry.TaxTransRelationship` = `TaxTransRelationshipType.TransactionLineAccount`.<br>If there are several sales tax entries related to general journal account entry, the sales tax codes will be represented using \“,\” delimiter.|
-| Sales tax amount         | If a general journal account entry has a related sales tax entry of **Profit and loss**, the **Sales tax amount** column represents the aggregated sales tax amount from the related sales tax entries: `TaxTrans.TaxAmount` or `TaxTrans.TaxAmountRep` found by `TaxTransGeneralJournalAccountEntry.TaxTrans` and `TaxTransGeneralJournalAccountEntry.SubledgerJournaalAccountEntry` where `TaxTransGeneralJournalAccountEntry.TaxTransRelationship = TaxTransRelationshipType.TransactionLineAccount`.|
+|---|---|
+| Transaction posting date | The posting date of the general journal entry: `GeneralJournalEntry.AccountingDate`. |
+| Transaction number | The voucher number of the general journal entry: `GeneralJournalEntry.SubledgerVoucher`. |
+| Main account | The main account of the general journal account entry: `GeneralJournalAccountEntry.MainAccount`. |
+| Main account name | The translation of the main account name into the user's preferred language for the main account from the general journal account entry: `MainAccountTranslation.Name` related to `MainAccount.Name`. If no translation is specified for the user's preferred language, `MainAccount.Name` is reported. |
+| Counterparty number | When the posting type of the general journal account entry is **Customer balance**, **Vendor balance**, **Customer collection letter fee**, or **Penny difference in accounting currency**, this column shows the customer or vendor account ID from the related customer or vendor transaction that is found based on the voucher number and transaction date from the general journal entry: `CustTrans.AccountNum` or `VendTrans.AccountNum` found by `GeneralJournalEntry.SubledgerVoucher` and `GeneralJournalEntry.AccountingDate`. |
+| Counterparty name | The name of the customer or vendor from the Global address book that is related to the customer or vendor account ID that is reported in the **Counterparty number** column: `DirPartyTable.Name`. |
+| Ledger account | The ledger account, including dimensions from the general journal account entry: `GeneralJournalAccountEntry.LedgerAccount`. |
+| Description | The description from the general journal account entry: `GeneralJournalAccountEntry.Text`. |
+| Transaction currency | The currency of the general journal account entry: `GeneralJournalAccountEntry.TransactionCurrencyCode`. |
+| Debit in transaction currency | The amount in the source document currency from the general journal account entry where the **IsCredit** property is **false**: `GeneralJournalAccountEntry.TransactionCurrencyAmount` when `IsCredit = false`. |
+| Credit in transaction currency | The amount in the source document currency from the general journal account entry where the **IsCredit** property is **true**: `GeneralJournalAccountEntry.TransactionCurrencyAmount` when `IsCredit = true`. |
+| Debit | The amount in the accounting or reporting currency from the general journal account entry where the **IsCredit** property is **false**: `GeneralJournalAccountEntry. AccountingCurrencyAmount` or `GeneralJournalAccountEntry. ReportingCurrencyAmount` when `IsCredit = false`. |
+| Credit | The amount in the accounting or reporting currency from the general journal account entry where the **IsCredit** property is **true**: `GeneralJournalAccountEntry.AccountingCurrencyAmount` or `GeneralJournalAccountEntry.ReportingCurrencyAmount` when `IsCredit = true`. |
+| Accumulated balance | The accumulated balance is calculated based on the opening balance at the beginning of the reporting period and the turnover by main account from the beginning of the reporting period until the current general ledger entry. |
+| Sales tax code | <p>If a general journal account entry has a related **Profit and loss** sales tax entry, this column represents the sales tax codes from the related sales tax entries: `TaxTrans.TaxCode` found by `TaxTransGeneralJournalAccountEntry.TaxTrans` and `TaxTransGeneralJournalAccountEntry.SubledgerJournaalAccountEntry` where `TaxTransGeneralJournalAccountEntry.TaxTransRelationship` = `TaxTransRelationshipType.TransactionLineAccount`.</p><p>If multiple sales tax entries are related to the general journal account entry, a comma (,) is used as the delimiter between sales tax codes.</p> |
+| Sales tax amount | If a general journal account entry has a related **Profit and loss** sales tax entry, this column represents the aggregated sales tax amount from the related sales tax entries: `TaxTrans.TaxAmount` or `TaxTrans.TaxAmountRep` found by `TaxTransGeneralJournalAccountEntry.TaxTrans` and `TaxTransGeneralJournalAccountEntry.SubledgerJournaalAccountEntry` where `TaxTransGeneralJournalAccountEntry.TaxTransRelationship = TaxTransRelationshipType.TransactionLineAccount`. |
 
-General journal account entries in the report are represented in groups by main accounts. For each main account there is an opening balance reported representing the amount in either accounting or reporting currency at the beginning of the reporting period. Each main account group of general journal account entries is finalized with a line representing the total amount of debit and credit turnover at the end of reporting period as well as the accumulated balance by main account at the end of the reporting period.
+General journal account entries on the report are presented in groups by main account. For each main account, an opening balance is reported that represents the amount in either the accounting currency or the reporting currency at the beginning of the reporting period. Each main account group of general journal account entries is finalized by using a line that presents the total amount of debit and credit turnover at the end of reporting period, and also the accumulated balance by main account at the end of the reporting period.
 
-The format of the report uses the language selected as user preference in user options of Dynamics 365 Finance.
+The format of the report uses the language that has been selected as the user's preferred language in Finance user options.
 
 > [!NOTE]
-> Using the [One voucher](one-voucher.md) functionality introduces a reporting limitation of the counterpart number and name for some scenarios. We recommend that you set the **Allow multiple transactions within one voucher** parameter on the **General ledger parameters** page to **No** in your legal entity to get counterpart number and name properly defined in **General ledger statement by main account** report.
+> Use of the [One voucher](one-voucher.md) functionality introduces a reporting limitation of the counterpart number and name for some scenarios. We recommend that you set the **Allow multiple transactions within one voucher** option to **No** on the **General ledger parameters** page in your legal entity to ensure that the counterpart number and name are correctly defined on the **General ledger statement by main account** report.
 
-## Prepare your environment to generate General ledger statement by main account report
+## Prepare your environment to generate a General ledger statement by main account report
 
-To start to work with the **General ledger statement by main account** report, complete the following steps:
+To start to work with the **General ledger statement by main account** report, complete the following tasks:
 
-1. [Import Electronic reporting configurations.](#import)
-2. [Select the Electronic reporting configuration in General ledger parameters.](#gl-param)
-3. [Enable features in Feature management.](#features)
+1. [Import Electronic reporting (ER) configurations](#import).
+2. [Select the ER configuration in General ledger parameters](#gl-param).
+3. [Enable features in Feature management](#features).
 
-### <a name="import"></a> Import Electronic reporting configurations
+### <a name="import"></a>Import ER configurations
 
-Before you can generate a **General ledger statement by main account** report, you must import the latest versions of the following Electronic reporting (ER) configurations.
+Before you can generate a **General ledger statement by main account** report, you must import the latest versions of the following ER configurations.
 
-| ER configuration name       | Type          | Description |
-|-----------------------------|---------------|--------------------|
-| Standard Audit File (SAF-T) |   Model       |  The common data model for different audit reports.  |
-| SAF-T General model mapping | Model mapping |  The model mapping that provides general data source mapping. |
-| General ledger statement by main account (Excel)  | Format        |  The General ledger statement by main account in Microsoft Excel format. |
+| ER configuration name | Type | Description |
+|-----------------------|------|--------------------|
+| Standard Audit File (SAF-T) | Model | The common data model for different audit reports. |
+| SAF-T General model mapping | Model mapping | The model mapping that provides general data source mapping. |
+| General ledger statement by main account (Excel) | Format | The general ledger statement by main account in Excel format. |
 
 For more information about how to download ER configurations, see [Download ER configurations from the Global repository](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
 Import the most recent versions of the configurations. The version description usually includes the number of the Microsoft Knowledge Base (KB) article that explains the changes that were introduced in the configuration version. Use the **Issue search** section of the [LCS](https://lcs.dynamics.com/v2) portal to find and read information about specific version of ER configuration.
 
 > [!IMPORTANT]
-> After all the ER configurations  are imported, set the **Default for model mapping** option to **Yes** for the **SAF-T General model mapping** configuration.
+> After all the ER configurations are imported, set the **Default for model mapping** option to **Yes** for the **SAF-T General model mapping** configuration.
 
-### <a name="gl-param"></a> Select the Electronic reporting configuration in General ledger parameters
+### <a name="gl-param"></a>Select the ER configuration in General ledger parameters
 
-1. Go to **General ledger** > **Setup** > **General ledger parameters**.
-2. On the **Electronic reporting** FastTab of the **Ledger** tab, in the **General ledger statement by main account** field, select the **General ledger statement by main account (Excel)** format.
+1. Go to **General ledger** \> **Setup** \> **General ledger parameters**.
+2. On the **Ledger** tab, on the **Electronic reporting** FastTab, in the **General ledger statement by main account** field, select the **General ledger statement by main account (Excel)** format.
 
-### <a name="features"></a> Enable features in Feature management
+### <a name="features"></a>Enable features in Feature management
 
-To optimize timing and memory consumption of the report generation, we recommend enabling features in the **Feature management** workspace.
+To optimize the timing and memory consumption of report generation, we recommend that you enable some features in the **Feature management** workspace.
 
-1. Go to **Feature management**, and select the **All** tab.
-2. In the feature list, find and select the following features:
+1. Open the **Feature management** workspace.
+2. On the **All** tab, in the feature list, find and select the following features:
  
-   - **Optimization of query data source creation time during execution of ER reports**
-   - **Optimize datasets memory consumption at ER reports runtime**
+    - Optimization of query data source creation time during execution of ER reports
+    - Optimize datasets memory consumption at ER reports runtime
 
 3. Select **Enable now**.
 
-## Generate General ledger statement by main account report
+## Generate a General ledger statement by main account report
 
-To generate the **General ledger statement by main account** report, go to **General ledger** > **Inquiries and reports** > **Ledger reports** > **General ledger statement by main account**.
+To generate a **General ledger statement by main account** report, follow these steps.
 
-The following table describes the fields in the report dialog box.
+1. Go to **General ledger** \> **Inquiries and reports** \> **Ledger reports** \> **General ledger statement by main account**.
+2. In the report dialog box, set the following fields.
 
-| Parameter | Description |
-| --------- | ----------- |
-| **From date** <br> **To date** | Select dates to specify the date interval for the report. You can select dates within one fiscal year. |
-| **Currency** | Select the **Accounting currency** to report amounts in the **Debit**, **Credit**, and **Accumulated balance** columns of the report in the accounting currency.<br> Select **Reporting currency** to report amounts in the **Debit**, **Credit** and **Accumulated balance** columns of the report in the reporting currency. |
-| **Main financial dimension set** | Select the standard financial dimension set including the **Main account** which is used by the report to calculate the opening balance by main accounts at the beginning of the reporting period. For more information about Financial dimension sets, see [Financial dimension sets](financial-dimension-sets.md). |
-| **Group by main account** | Select this checkbox to report general ledger account entries that are grouped by main account. When this checkbox is marked, the **Ledger account** column is hidden and the amounts of the general ledger account entries reported for each main account are represented as aggregated amounts in the **Transaction posting date** and **Transaction number** columns. |
-| **Include reversed** | Mark this checkbox if reversed transaction must be reported. |
-| **Posting layer(s)** | Select one or more posting layer transactions to include in the report. When no posting layers are selected for the report, all the posting layers are reported. |
-| **Sales tax specification** | Mark this checkbox to include information about the sales tax codes and amounts for each general ledger account entry. This option is available when the option **Group by main account** option isn't selected. |
-| **Settlement period** | Select one settlement period to filter sales tax transactions in the report or leave the field empty. When no settlement period is selected, sales tax transactions from all the settlement periods are included in the report. |
-| **Split file by main accounts** | Mark this checkbox to split the report data into multiple files by main account. |
+    | Field name | Description |
+    | ---------- | ----------- |
+    | From date, To date | Select dates to specify the date interval for the report. You can select dates within one fiscal year. |
+    | Currency | Select **Accounting currency** to report amounts in the **Debit**, **Credit**, and **Accumulated balance** columns of the report in the accounting currency. Select **Reporting currency** to report those amounts in the reporting currency. |
+    | Main financial dimension set | Select the standard financial dimension set, including the main account that the report uses to calculate the opening balance by main account at the beginning of the reporting period. For more information about financial dimension sets, see [Financial dimension sets](financial-dimension-sets.md). |
+    | Group by main account | Select this checkbox to group general ledger account entries by main account on the report. When this checkbox is selected, the **Ledger account** column is hidden, and the amounts of the general ledger account entries that are reported for each main account are represented as aggregated amounts in the **Transaction posting date** and **Transaction number** columns. |
+    | Include reversed | Select this checkbox if reversed transaction must be reported. |
+    | Posting layer(s) | Select one or more posting layer transactions to include on the report. If you leave this field blank, all the posting layers are reported. |
+    | Sales tax specification | Select this checkbox to include information about the sales tax codes and amounts for each general ledger account entry. This option is available only if the **Group by main account** checkbox is cleared. |
+    | Settlement period | Select a settlement period to filter sales tax transactions on the report. If you leave this field blank, sales tax transactions from all settlement periods are included on the report. |
+    | Split file by main accounts | Select this checkbox to split the report data into multiple files by main account. |
 
-In addition to the described fields in the report dialog box, use the **Records to include** option to filter data in the report by one or more main accounts.
+3. You can use the **Records to include** option to filter the data on the report by one or more main accounts.
+4. On the **Run in the background** FastTab, you can specify parameters of the batch job and run the report in batch mode. When an electronic report is generated in batch mode, you can find related batch information and the generated output file as an attachment by going to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**. For more information about how to configure a destination for each ER format configuration and its output component, see [Electronic reporting (ER) destinations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
 
-Use the **Run in the background** FastTab of the report dialog box to specify parameters of the batch job and run the report in batch. When an electronic report is generated in batch, you can find related batch information and generated output file as an attachment by going to **Organization administration** > **Electronic reporting** > **Electronic reporting jobs**. For more information about how to configure a destination for each ER format configuration and its output component, see [Electronic reporting (ER) destinations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
+## Generate a General ledger statements by main account report for a large volume of data
 
-## Generate the General ledger statements by main account report for big volume of data
+The maximum reporting period for the **General ledger statement by main account** report is one fiscal year.
 
-The maximum reporting period for **General ledger statement by main account** report is one fiscal year.
+When you generate the **General ledger statement by main account** report for a reporting period that has more than one million general journal account entries, we recommend that you select the **Split file by main accounts** report option. Then, if the number of general journal account entries for a main account exceeds one million in the reporting period, the first million general journal account entries are reported on the first sheet of the Excel output file when the report is generated. The next million general journal account entries are then reported on the second sheet of the same Excel output file, and so on.
 
-When you generate the **General ledger statement by main account** report for a reporting period with more than one million general journal account entries, we recommend using the report option, **Split file by main accounts**. If you generate the report without selecting the **Split file by main accounts** option and the number of general journal account entries in the reporting period is more then one million, the output file isn't generated and the following message occurs: **File cannot be generated. Number of lines in the report data set exceeds max number of lines on one sheet in Excel file. Use options of the report to reduce the data in the report or \”Split file by main accounts\” parameter.**
+If the **Split file by main accounts** option isn't selected, and the number of general journal account entries in the reporting period exceeds one million, no output file is generated, and you receive the following message:
 
-When you generate the **General ledger statement by main account** report using the **Split file by main accounts** option and the number of general journal account entries for a main account is more then one million in the reporting period, one million of general journal account entries are reported on the first sheet of the Excel output file. The other general journal account entries are be reported on the second sheet of the same Excel output file. The number of general journal account entries that can be reported on the second sheet of Excel output file is also limited to one million general journal account entries.
-
+> File cannot be generated. Number of lines in the report data set exceeds max number of lines on one sheet in Excel file. Use options of the report to reduce the data in the report or "Split file by main accounts" parameter.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
