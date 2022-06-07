@@ -43,7 +43,7 @@ The Warehouse Management mobile app is available for both Windows and Google And
 - Windows 10 (Universal Windows Platform \[UWP\]) October 2018 update 1809 (build 10.0.17763) or later
 - Android 4.4 or later
 
-## Turn Warehouse Management mobile app features or or off in Supply Chain Management
+## Turn Warehouse Management mobile app features on or off in Supply Chain Management
 
 To use the Warehouse Management mobile app, the *User settings, icons, and step titles for the new warehouse app* feature must be turned on in your system. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *User settings, icons, and step titles for the new warehouse app* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
