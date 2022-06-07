@@ -147,20 +147,16 @@ select the transactions to report.
 | Settlement period  | Select the applicable settlement period.                                                                                                                                                                                                                      |
 | Declaration type   | Select **Final** or **Interim**.                                                                                                                                                                                                                              |
 | Calculation method | If you have both taxable and non-taxable sales, select the method that is used to calculate the tax deduction amount:                                                                                                                                         |
-| Amendment          | Set this option to **Yes** if you're printing the amendment report for the previously generated report. This setting changes the formula for Item26 on the **Consumption tax report** report. For more information, see the remaining sections of this topic. |
+| Amendment          | Set this option to **Yes** if you're printing the amendment report for the previously generated report. This setting changes the formula for Item26 on the **Consumption tax report** report. For more information, see the remaining sections of this topic.</br>-   Individual method  </br>-   Lump sum method|
 
--   Individual method
-
--   Lump sum method
-
-1.  Select **OK** to calculate amounts on the **Consumption tax calculation
+3.  Select **OK** to calculate amounts on the **Consumption tax calculation
     sheet** page.
 
 ![](media/7ce6e142eb379f071cd6cb2866d15b5d.png)
 
 >   A screenshot of a computer Description automatically generated
 
-1.  Review the values in the **Item** fields. These values represent the amounts
+4.  Review the values in the **Item** fields. These values represent the amounts
     that will be entered in the rows of Table 2-1 ("Calculation table of taxable
     sales ratio/deductible purchase tax amount") of the official recommendations
     to generate the Consumption tax return form.
@@ -202,14 +198,14 @@ select the transactions to report.
 
 Otherwise, the value of these fields is **0** (zero).
 
-1.  Select **Finalize** to finalize tax amounts.
+5.  Select **Finalize** to finalize tax amounts.
 
-2.  After you've finalized tax amounts, select **Consumption tax report** to
+6.  After you've finalized tax amounts, select **Consumption tax report** to
     generate amounts on the **Consumption tax report** page.
 
     ![A screenshot of a cell phone Description automatically generated](media/e8aaba7ef01662b2bd6aaec8be74cc2d.png)
 
-3.  On the **Header** tab, review the header information.
+7.  On the **Header** tab, review the header information.
 
 | Field                                                                | Description                              |
 |----------------------------------------------------------------------|------------------------------------------|
@@ -218,7 +214,7 @@ Otherwise, the value of these fields is **0** (zero).
 | From date, To date                                                   | The tax calculation period.              |
 | From date for mid term declaration, To date for mid term declaration | The dates for interim sales tax reports. |
 
-4.  On the **Tax calculation** tab, review the tax amounts in the **Items**
+8.  On the **Tax calculation** tab, review the tax amounts in the **Items**
     fields. The values represent the amounts that will be entered in the rows of
     Table 3-(2) ("Consumption tax return form").
 
@@ -284,9 +280,9 @@ Otherwise, the value of these fields is **0** (zero).
 | Document submitted law No.30             | Set this option to **Yes** if the document is submitted according to law No.30.   |
 | Document submitted law No.33-2           | Set this option to **Yes** if the document is submitted according to law No.33-2. |
 
-2.  Select **Finalize** to finalize tax amounts.
+9.  Select **Finalize** to finalize tax amounts.
 
-3.  After you've finalized tax amounts, select **Consumption tax report \>
+10.  After you've finalized tax amounts, select **Consumption tax report \>
     Print** to print the **Consumption tax calculation sheet** and **Consumption
     tax report** reports.
 
