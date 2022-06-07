@@ -120,7 +120,10 @@ This article includes information and links to resources that can help you set u
 -  [Inquiry on deductible expenses](tasks/inquiry-deductible-expenses.md)
 -  [Progressive withholding tax](apac-jpn-progressive-withholding-tax-calculation.md)
 -  [Set up master data for inclusion of deductible expenses for multiple posting layers](tasks/set-up-master-data-inclusion.md)
--  [Setup Japan consumption tax report](tasks/setup-japan-consumption-tax-report.md)
+
+ ### Consumprtion tax report
+ -  [Consumption tax report](apac-jpn-consumption-tax-report.md)   
+ -  [Task: Setup Japan consumption tax report](tasks/setup-japan-consumption-tax-report.md)
 
 ## System administration
 -  [Import postal codes](apac-jpn-import-postal-codes.md) 
