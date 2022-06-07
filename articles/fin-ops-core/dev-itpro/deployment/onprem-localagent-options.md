@@ -4,7 +4,7 @@
 title: Deployment configurations for the local agent
 description: This article explains which deployment configurations can be specified, when deploying the local agent, to indicate a special configuration related to the environment.
 author: faix
-ms.date: 10/06/2021
+ms.date: 06/07/2022
 ms.topic: article
 ms.prod: dynamics-365 
 ms.service:
@@ -82,12 +82,11 @@ Support for this option was introduced in version 10.0.21. Additionally, at leas
 
 ## Specify that an environment should be configured to work with the Regression Suite Automation Tool (RSAT)
 
-The Regression suite automation tool (RSAT) significantly reduces the time and cost of user acceptance testing (UAT) of Finance and Operations apps. For more information see [Regression suite automation tool (RSAT)
-](../perf-test/rsat/rsat-overview.md)
+The Regression suite automation tool (RSAT) significantly reduces the time and cost of user acceptance testing (UAT) for Finance and Operations apps. For more information, see [Regression suite automation tool (RSAT)](../perf-test/rsat/rsat-overview.md).
 
-To enable this deployment option change **rsatEnabled** from **false** to **true**. Additionally, you also need to set **rsatCertificateThumbprint** to the thumbprint of the certificate you want to use for RSAT.
+To enable this deployment , change **rsatEnabled** from **false** to **true**. Additionally, set **rsatCertificateThumbprint** to the thumbprint of the certificate you want to use for RSAT.
 
-For more information on how to generate and deploy the certificate see [Enable RSAT in Microsoft Dynamics 365 Finance + Operations (on-premises) environments](./onprem-rsat-configuration.md).
+For more information on how to generate and deploy the certificate, see [Enable RSAT in Microsoft Dynamics 365 Finance + Operations (on-premises) environments](./onprem-rsat-configuration.md).
 
 Support for this option was introduced in version 10.0.28. Additionally, at least local agent 3.1.0 is required to use this option.
 
