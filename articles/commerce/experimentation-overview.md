@@ -3,27 +3,14 @@
 
 title: Experimentation in Dynamics 365 Commerce
 description: Experimentation enables the creation, editing, and management of page layout and content treatments in site builder. End-to-end experimentation support is enabled for e-commerce pages and entities within a page.
-author:  sushma-rao 
-ms.date: 06/03/2022
+author: sushma-rao 
+ms.date: 06/07/2022
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-
-ms.assetid: 
-ms.search.region: global
-ms.search.industry: Retail
+ms.search.region: Global
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
-ms.dyn365.ops.version: AX 10.0.13
 ---
 
 # Experimentation in Dynamics 365 Commerce
