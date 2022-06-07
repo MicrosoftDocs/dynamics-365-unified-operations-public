@@ -83,11 +83,11 @@ If you're using a SQL Server database, follow the instructions in [Upgrading to 
 
 ### Post-upgrade actions
 
-To correctly support authentication with the Office add-ins, AD FS on Windows Server 2019 or later requires that you set up CORS headers. This information is available in [Configure AD FS](./setup-deploy-on-premises-pu41.md#configureadfs). If you are not sure if you are missing the configuration, run the following script.
+To correctly support authentication with the Office add-ins, AD FS on Windows Server 2019 or later requires that you set up Cross Origin Resource Sharing (CORS) headers. This information is available in [Configure AD FS](./setup-deploy-on-premises-pu41.md#configureadfs). If you aren't sure whether you're missing the configuration, run the following script.
 
-    ```powershell
-    .\Test-ADFSConfiguration.ps1 -ConfigurationJsonFilePath "\\Fileserver\agent\wp\EN10\StandaloneSetup-746342\config.json"
-    ```
+```powershell
+.\Test-ADFSConfiguration.ps1 -ConfigurationJsonFilePath "\\Fileserver\agent\wp\EN10\StandaloneSetup-746342\config.json"
+```
 
 ## Upgrade a node in your Service Fabric cluster
 
