@@ -515,7 +515,7 @@ At C:\Infrastructure\Scripts\Test-D365FOConfiguration.ps1:79 char:9
     + FullyQualifiedErrorId : An unspecified error occurred.,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand" 
 ```
 
-**Reason:** There is a bug in the PowerShell commandlet, Get-LocalGroupMember, which causes it to fail when there are entries that not valid.
+**Reason:** There is a bug in the PowerShell commandlet, Get-LocalGroupMember, which causes it to fail when there are entries that aren't valid.
 
 **Steps:** On the machine where the script is failing, open **local users and groups**. Go to the administrators group and remove any entries that have an entry like the one highlighted in the following image.
 
@@ -893,9 +893,9 @@ In this case, go to the C:\\ProgramData\\SF\\AOS\_1\\Fabric\\work\\Applications\
 
 You can also use Psping to try to reach the remote server. For information about Psping, see [Psping](/sysinternals/downloads/psping).
 
-### You get authentication errors
+### You encounter authentication errors
 
-If you are having issues authenticating with the Workflow editor or with the Excel add-ins, use the following script to verify your configuration.
+If you're having issues during authentication with the Workflow editor or the Excel add-ins, use the following script to verify your configuration.
 
 ```powershell
 .\Test-ADFSConfiguration.ps1 -ConfigurationJsonFilePath "\\Fileserver\agent\wp\EN10\StandaloneSetup-746342\config.json"
@@ -908,9 +908,9 @@ If you're having issues when you sign-in, in Service Fabric Explorer, verify tha
 - **Provisioning\_AdminPrincipalName**: `AXServiceUser@contoso.com`
 - **Provisioning\_AdminIdentityProvider**: `https://DC1.contoso.com/adfs`
 
-If the values aren't valid, you won't be able to proceed, and you must update the admin user information or ADFS information in LCS.
+If the values aren't valid, you won't be able to proceed, and you must update the admin user information or AD FS information in LCS.
 
-If you used Reset-DatabaseUsers.ps1, you must restart the AOS before your changes take effect. If you still have sign-in issues, in the USERINFO table, note the **NETWORKDOMAIN** and **NETWORKALIAS** values. Here is an example:
+If you used Reset-DatabaseUsers.ps1, you must restart the AOS before your changes take effect. If you still have sign-in issues, make a note of the **NETWORKDOMAIN** and **NETWORKALIAS** values in the USERINFO table. Here is an example:
 
 - **NETWORKDOMAIN:** `https://DC1.contoso.com/adfs`
 - **NETWORKALIAS:** `AXServiceUser@contoso.com`
