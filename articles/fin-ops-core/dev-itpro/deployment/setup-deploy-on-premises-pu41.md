@@ -538,8 +538,8 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
 5. Export the certificates into .pfx files. As part of the export process, the following command will check that the correct cryptographic provider is set for your certificates. 
 
     ```powershell
-    # Exports .pfx files into a directory VMs\<VMName>. All the certs will be written to the infrastructure\Certs folder.
-    .\Export-PfxFiles.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+    # Exports certificate files into a directory VMs\<VMName>. All the certs will be written to the infrastructure\Certs folder.
+    .\Export-Certificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
 ### <a name="setupssis"></a>Step 11. Set up SSIS

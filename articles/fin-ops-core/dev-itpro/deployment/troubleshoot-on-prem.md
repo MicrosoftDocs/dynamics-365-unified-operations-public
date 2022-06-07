@@ -1603,7 +1603,7 @@ Microsoft.Dynamics.AX.Framework.Management.Reports.PublishReportCommand
 
     ```powershell
     .\Export-Scripts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
-    .\Export-PfxFiles.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+    .\Export-Certificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
     
 1. Copy the generated VM folder to the BI node if not using the remoting scripts.

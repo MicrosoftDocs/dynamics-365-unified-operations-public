@@ -88,7 +88,7 @@ After the cluster is set up, you can configure your installation. The examples b
     > [!IMPORTANT]
     > If you've already created the Azure Service Fabric cluster, make sure that the nodes are added to it.
     >
-    > Rerun the Export-PfxFiles.ps1 script, and rerun the Complete-Prereqs.ps1 script on the appropriate machines, to ensure that the certificate for the SSRS web server is distributed to all the ReportServer nodes.
+    > Rerun the Export-Certificates.ps1 script, and rerun the Complete-Prereqs.ps1 script on the appropriate machines, to ensure that the certificate for the SSRS web server is distributed to all the ReportServer nodes.
 
 ## High availability with load balancers
 
@@ -109,7 +109,7 @@ Here is a general overview of this scenario:
 > [!IMPORTANT]
 > If you've already created the Service Fabric cluster, make sure that the additional nodes are added to it.
 >
-> Rerun the Export-PfxFiles.ps1 script, and rerun the Complete-Prereqs.ps1 script on the appropriate machines, to ensure that the certificate for the SSRS web server is distributed to all the ReportServer nodes.
+> Rerun the Export-Certificates.ps1 script, and rerun the Complete-Prereqs.ps1 script on the appropriate machines, to ensure that the certificate for the SSRS web server is distributed to all the ReportServer nodes.
 
 ## Deployed environments where the base deployment is earlier than Platform update 41
 

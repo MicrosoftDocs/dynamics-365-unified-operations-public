@@ -97,7 +97,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
     After you've generated the certificates, run the following command.
 
     ```powershell
-    # Exports .pfx files into a directory VMs\<VMName>. All the certs will be written to the infrastructure\Certs folder.
+    # Exports certificates files into a directory VMs\<VMName>. All the certs will be written to the infrastructure\Certs folder.
     .\Export-Certificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 

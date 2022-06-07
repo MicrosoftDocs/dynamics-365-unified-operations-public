@@ -57,9 +57,9 @@ This topic explains how to update the local agent. The latest version of the loc
 | 1.0.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md) for failed deployments. |
 | Null                | This initial version deploys Platform update 8. |
 
-## What's new in local agent 3.0.0
+## What's new in local agent 3.1.0
 
-- Local agent 3.1.0 introduces a new deployment option to [Specify that an environment should be configured to work with the Regression Suite Automation Tool (RSAT)](../../dev-itpro/deployment/onprem-localagent-options.md#)
+- Local agent 3.1.0 introduces a new deployment option to [Specify that an environment should be configured to work with the Regression Suite Automation Tool (RSAT)](../../dev-itpro/deployment/onprem-localagent-options.md#specify-that-an-environment-should-be-configured-to-work-with-the-regression-suite-automation-tool-rsat)
 
 ## What's new in local agent 3.0.0
 
