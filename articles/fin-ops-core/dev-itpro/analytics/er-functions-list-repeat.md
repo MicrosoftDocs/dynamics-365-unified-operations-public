@@ -26,7 +26,7 @@ ms.dyn365.ops.version: AX 10.0.29
 
 [!include [banner](../includes/banner.md)]
 
-The `REPEAT` function builds a record that contains the field with a value that matches the specified input and returns a new *Record list* of a record that is repeated a specified number of times.
+The `REPEAT` function builds a record that contains the field that has a value that matches the specified input. It then returns a new *Record list* of a record that is repeated a specified number of times.
 
 ## Syntax
 
@@ -36,7 +36,7 @@ REPEAT (item, number)
 
 ## Arguments
 
-`item`: any supported [primitive](er-formula-supported-data-types-primitive.md) or [composite](er-formula-supported-data-types-composite.md) data type
+`item`: Any supported [primitive](er-formula-supported-data-types-primitive.md) or [composite](er-formula-supported-data-types-composite.md) data type
 
 The value to repeat.
 
@@ -58,37 +58,36 @@ The list of repeated records that is returned exposes the following fields:
 - The current record index (`Number` field)
 
 > [!NOTE]
-> Because one-based numbering is used for this function, the **Number** field contains the value **1** for the first record of the resulting list.
+> Because one-based numbering is used for this function, the `Number` field has the value **1** for the first record of the resulting list.
 
-You can use this function to multiply existing data for performance and volume testing of ER solutions by using the [RSAT](../perf-test/rsat/rsat-overview.md) tool.
+You can use this function to multiply existing data so that you can do performance and volume testing of [Electronic reporting (ER)](general-electronic-reporting.md) solutions by using the [Regression suite automation tool (RSAT)](../perf-test/rsat/rsat-overview.md).
 
 ## Example
 
-Let's assume that you want to generate a document in XML format that must contain as many `Party` XML elements as you have specified in a data entry field in the dialog box at runtime, before the execution of an ER format begins.
+You want to generate a document in XML format that must contain as many `Party` XML elements as you specify in a data entry field in the dialog box at runtime, before the execution of an ER format begins.
 
-The following illustration shows the [Electronic reporting](general-electronic-reporting.md) (ER) [format](er-overview-components.md#format-component). In this format, the single `Party` XML element is added to expose the properties of a single party.
+The following illustration shows the ER [format](er-overview-components.md#format-component). In this format, the single `Party` XML element is added to expose the properties of a single party.
 
-<a href="./media/er-repeat-function-1.png"><img src="./media/er-repeat-function-1.png" alt="Review the format structure on the Format tab of the Format designer page." class="alignnone size-full" width="929" height="548" /></a>
+<a href="./media/er-repeat-function-1.png"><img src="./media/er-repeat-function-1.png" alt="Format structure on the Format tab of the Format designer page." class="alignnone size-full" width="929" height="548" /></a>
 
 The next illustration shows the following configured data sources:
 
 - The `Party` data source that represents a single party. The `Party.Value` field is used to expose a single text value.
-- The `NumberOfRepeats` [data source](er-user-input-parameter-data-sources.md) that is used to offer you a data entry field in the dialog box at runtime to let you specify the number of parties to be placed to a generated document.
-- The `Party2` data source that repeats the `Party` record as many times as you specified in the `NumberOfRepeats` data source.
+- The `NumberOfRepeats` [data source](er-user-input-parameter-data-sources.md) that is used to offer a data entry field in the dialog box at runtime, so that you can specify the number of parties that should be entered in the generated document.
+- The `Party2` data source that repeats the `Party` record the number of  times that you specified in the `NumberOfRepeats` data source.
 
-<a href="./media/er-repeat-function-2.png"><img src="./media/er-repeat-function-2.png" alt="Review the configured data sources on the Mapping tab of the Format designer page." class="alignnone size-full" width="1044" height="411" /></a>
+<a href="./media/er-repeat-function-2.png"><img src="./media/er-repeat-function-2.png" alt="Configured data sources on the Mapping tab of the Format designer page." class="alignnone size-full" width="1044" height="411" /></a>
 
 The next illustration shows data bindings of the editable ER format that are created to generate output in XML format. This output presents individual parties as enumerated nodes.
 
-<a href="./media/er-repeat-function-3.png"><img src="./media/er-repeat-function-3.png" alt="Review the configured data bindings on the Mapping tab of the Format designer page." class="alignnone size-full" width="1051" height="417" /></a>
+<a href="./media/er-repeat-function-3.png"><img src="./media/er-repeat-function-3.png" alt="Configured data bindings on the Mapping tab of the Format designer page." class="alignnone size-full" width="1051" height="417" /></a>
 
-The following illustration shows the result when the designed format is run and the value of the `NumberOfRepeats` data source is specified as 5.
+The following illustration shows the result when the designed format is run and the value of the `NumberOfRepeats` data source is specified as **5**.
 
-<a href="./media/er-repeat-function-4.png"><img src="./media/er-repeat-function-4.png" alt="Review the Result of running the format on a new tab of using web browser." class="alignnone wp-image-290711 size-full" width="400" height="380" /></a>
+<a href="./media/er-repeat-function-4.png"><img src="./media/er-repeat-function-4.png" alt="Result of running the format on a new web browser tab." class="alignnone wp-image-290711 size-full" width="400" height="380" /></a>
 
 ## Additional resources
 
 [List functions](er-functions-category-list.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
