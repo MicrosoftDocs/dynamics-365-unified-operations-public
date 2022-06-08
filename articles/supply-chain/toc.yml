@@ -2937,7 +2937,7 @@
         href: sales-marketing/trade-allowance.md
       - name: Create a new trade agreement
         href: sales-marketing/tasks/create-new-trade-agreement.md
-      - name: Recalculate line net amounts when importing
+      - name: Recalculate line net amounts on import
         href: sales-marketing/calc-line-net-ammounts-import.md
       - name: Schedule sales history data cleanup
         href: sales-marketing/sales-update-history-cleanup-performance-improvements.md
