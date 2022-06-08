@@ -4,7 +4,7 @@
 title: Update the local agent
 description: This article explains how to update the local agent.
 author: faix
-ms.date: 02/22/2022
+ms.date: 06/08/2022
 ms.topic: article
 ms.prod: dynamics-365
 ms.service:
@@ -31,13 +31,14 @@ ms.dyn365.ops.version: 7.3
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to update the local agent. The latest version of the local agent is version 3.0.0, which was released in November 2021.
+This article explains how to update the local agent. The latest version of the local agent is version 3.1.0, which was released in June 2022.
 
 > [!IMPORTANT]
 > Do not update the local agent during a servicing operation, even if the preparation phase has completed. 
 
 | Local agent version | Capability | 
 |---------------------|------------|
+| 3.1.0               | This version adds a new deployment option. |
 | 3.0.0               | This version includes support for Edge Scale Unit Application Lifecycle Management. |
 | 2.7.2               | This version includes a fix for deploying older application versions. | 
 | 2.7.1               | This version introduces a new deployment option and fixes a bug with a deployment option. |
@@ -55,6 +56,10 @@ This article explains how to update the local agent. The latest version of the l
 | 1.1.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md)  for successful deployments, enables multi-model package deployments, and deploys Platform update 8 and 11. | 
 | 1.0.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md) for failed deployments. |
 | Null                | This initial version deploys Platform update 8. |
+
+## What's new in local agent 3.1.0
+
+- Local agent 3.1.0 introduces a new deployment option to [specify that an environment should be configured to work with the Regression suite automation tool (RSAT)](../../dev-itpro/deployment/onprem-localagent-options.md#specify-that-an-environment-should-be-configured-to-work-with-the-regression-suite-automation-tool).
 
 ## What's new in local agent 3.0.0
 

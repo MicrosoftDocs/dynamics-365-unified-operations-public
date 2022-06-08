@@ -4,7 +4,7 @@
 title: Upgrade from AX 2012 to Finance and Operations 
 description:  This article describes the process that customers who currently run Microsoft Dynamics AX 2012 can use to move their data and code to Finance and Operations.
 author: LaneSwenka
-ms.date: 08/27/2021
+ms.date: 06/07/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -71,6 +71,10 @@ The upgrade analyzer tool runs against your AX 2012 environment and identifies t
 Additionally, as part of this step, you must install a pre-upgrade checklist in your AX 2012 environment. You can use this checklist to enter data that will be required for the upgrade procedure. For example, in one pre-upgrade checklist task, you provide the Microsoft Azure Active Directory (Azure AD) sign-in information for each current AX 2012 user, so that each user will be able to sign in to Finance and Operations. 
 
 - If upgrading from AX 2012 R3, install [KB 4035163](https://go.microsoft.com/fwlink/?linkid=852255).
+   
+   > [!NOTE]
+   > KB 4035163 is already included in Cumulative Update 13. 
+   
 - If upgrading from AX 2012 R2, install [KB 4048614](https://go.microsoft.com/fwlink/?linkid=869025).
 
 The output of the upgrade analyzer tool becomes the workstream in the upgrade project plan for your AX 2012 system administrators. For more information, see [Upgrade from AX 2012 - Plan by using the Upgrade analyzer tool](upgrade-analyzer-tool.md).
@@ -133,7 +137,7 @@ The following illustration shows the process. Just back up the AX 2012 database,
 
 ![Data upgrade in a development environment.](./media/data-upgrade-dev.png)
  
-Data upgrade is done through a special type of deployable package. The same mechanism is used to deploy new code from one environment to another environment.
+Data upgrade is done through a special type of deployable package. 
 
 The underlying framework that is used to convert the data in the database during this process is largely the same as the upgrade framework in AX 2012 that is based on X++ batch jobs that run **ReleaseUpdatexxx** classes.
 
