@@ -4,7 +4,7 @@
 title: Set up an experiment
 description: This article describes how to set up an experiment in a third-party service.
 author: sushma-rao 
-ms.date: 06/07/2022
+ms.date: 06/08/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: josaw
@@ -33,40 +33,48 @@ To set up your success metrics for out-of-the-box modules, follow these steps.
 1. In Commerce site builder, select **Pages** in the left navigation pane, and then select the page that you want to collect metrics for. 
 1. Go to the **Event IDs to track** section in the right property pane of the page or module you want to track.
 1. Select **View**. A list of all click event IDs is displayed. Copy the event that you want to track, and then paste the event key into the designated location in the third-party service. If you need more than one event, copy the keys one at a time. 
-1. For page views, use a combination of the page name in site builder appended with `.PageView`. For example, `Homepage.PageView` or `CheckoutPage.PageView`.
+1. For page views, use the SHA-256 hash value of the page name in site builder appended with `.PageView`. For example, the event ID for `Homepage.PageView` would be `e217eb66c7808ecc43b0f5c517c6a83b39d72b91412fbd54a485da9d8e186a9`.
 1. Take any other steps for tracking metrics as required in the third-party service.
 
 For custom module clicks, follow these steps to instrument the click events:
 
 1. Prepare a **TelemetryContent** object for the module using the function below. This function takes the page name, module name, and SDK-provided default telemetry object as inputs.
-    ```Javascript
+
+    ```TypeScript
     getTelemetryObject(pageName: string, moduleName: string, telemetry: ITelemetry): ITelemetryContent
     ```
+    
     The following is an example: 
-    ```JavaScript
-    private readonly telemetryContent: ITelemetryContent = 
-    getTelemetryObject(this.props.context.request.telemetryPageName!, 
-        this.props.friendlyName, 
-        this.props.telemetry);
+    
+    ```TypeScript
+    private readonly telemetryContent: ITelemetryContent = getTelemetryObject(this.props.context.request.telemetryPageName!, this.props.friendlyName, this.props.telemetry);
     ```
+    
 1. Create the payload data that contains information on what needs to be captured. For buttons and other static controls, you can include **etext** such as “Shop now” or “Search”. And for components with clicks such as clicking on a product card, you can send the **recid** which is the record ID of the product or the product ID.
-    ```JavaScript
+
+    ```TypeScript
     getPayloadObject(eventType: string, telemetryContent: ITelemetryContent, etext: string, recid?: string): IPayLoad
     ```
     As an example for static controls, pass the button text string as shown below:
-    ```JavaScript
+
+    ```TypeScript
     const payLoad = getPayloadObject('click', this.props.telemetryContent, 'Shop Now', '');
     ```
     As an example for product clicks, pass the product recordId as shown below:
-    ```JavaScript
+
+    ```TypeScript
     const payLoad = getPayloadObject('click', telemetryContent!, '', product.RecordId.toString());
     ```
+    
 1. Call the **OnClick** function to register the event.
-    ```Javascript
+
+    ```TypeScript
     onTelemetryClick = (telemetryContent: ITelemetryContent, payLoad: IPayLoad, linkText: string) => () =>
     ```
+
     The following is an example:
-    ```JavaScript
+
+    ```TypeScript
     onClick: onTelemetryClick(this.props.telemetryContent, payLoad, linkText)
     ```
 
