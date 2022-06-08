@@ -42,7 +42,7 @@ To build a mobile experience on top of finance and operations data, follow these
 
 ## Other useful links
 -  [Using the Power Platform to extend finance and operations apps](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-series-using-the-power-platform-to-extend-finance-and-operations-apps) Tech Talk series
--  [Planning your Power Apps project](https://docs.microsoft.com/en-us/power-apps/guidance/planning/introduction)
--  [Building your first model-driven app](https://docs.microsoft.com/en-us/power-apps/maker/model-driven-apps/build-first-model-driven-app)
+-  [Planning your Power Apps project](/power-apps/guidance/planning/introduction)
+-  [Building your first model-driven app](/power-apps/maker/model-driven-apps/build-first-model-driven-app)
 
 
