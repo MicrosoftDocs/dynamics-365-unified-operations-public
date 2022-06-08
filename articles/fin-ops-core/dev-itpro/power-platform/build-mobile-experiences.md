@@ -4,7 +4,7 @@
 title: Building mobile experiences
 description: This article describes the high level steps needed to build mobile experiences in Power Apps using Finance and Operations app data 
 author: jasongre
-ms.date: 05/24/2022
+ms.date: 06/08/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -38,7 +38,7 @@ To build a mobile experience on top of finance and operations data, follow these
 1.  Ensure [virtual tables](virtual-entities-overview.md) exist covering the data and actions needed for your mobile experience. These may exist out-of-the-box, or you may need to create your own virtual table. This is important to allow your mobile experience to fetch the appropriate data from your finance and operations apps and to execute any actions needed for your mobile experience. 
 2.  [Create a new app](/power-apps/maker/) on Power Apps that connects to the desired virtual table(s). 
 3.  Once you have a mobile experience created on Power Apps, you can directly [run your canvas app or model-driven app on Power Apps mobile](/power-apps/mobile/run-powerapps-on-mobile).
-4.  For a seamless mobile experience, you can optionally [wrap your Power Apps application](https://docs.microsoft.com/en-us/power-apps/maker/common/wrap/overview) as a custom-branded Android and iOS app for native distribution to end users. Note this option is currently only available for canvas apps.
+4.  For a seamless mobile experience, you can optionally [wrap your Power Apps application](/power-apps/maker/common/wrap/overview) as a custom-branded Android and iOS app for native distribution to end users. This option is currently only available for canvas apps.
 
 ## Other useful links
 -  [Using the Power Platform to extend finance and operations apps](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-series-using-the-power-platform-to-extend-finance-and-operations-apps) Tech Talk series
