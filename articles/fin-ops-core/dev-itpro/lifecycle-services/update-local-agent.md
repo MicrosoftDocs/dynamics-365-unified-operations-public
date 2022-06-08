@@ -4,7 +4,7 @@
 title: Update the local agent
 description: This article explains how to update the local agent.
 author: faix
-ms.date: 02/22/2022
+ms.date: 06/08/2022
 ms.topic: article
 ms.prod: dynamics-365
 ms.service:
@@ -59,7 +59,7 @@ This article explains how to update the local agent. The latest version of the l
 
 ## What's new in local agent 3.1.0
 
-- Local agent 3.1.0 introduces a new deployment option to [specify that an environment should be configured to work with the Regression suite automation tool (RSAT)](../../dev-itpro/deployment/onprem-localagent-options.md#specify-that-an-environment-should-be-configured-to-work-with-the-regression-suite-automation-tool-rsat).
+- Local agent 3.1.0 introduces a new deployment option to [specify that an environment should be configured to work with the Regression suite automation tool (RSAT)](../../dev-itpro/deployment/onprem-localagent-options.md#specify-that-an-environment-should-be-configured-to-work-with-the-regression-suite-automation-tool).
 
 ## What's new in local agent 3.0.0
 
