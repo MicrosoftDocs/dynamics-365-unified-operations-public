@@ -22,7 +22,7 @@ You can create, edit, and manage page and content treatments known as **variatio
 
 1. **Get the correct version of Commerce** - Upgrade your module library, online channel extensibility software development kit (SDK), and Commerce Scale Unit to Commerce version 10.0.13 or later.
 1. **Set up an experimentation connector** - An experimentation connector allows Commerce to connect with third-party services to retrieve the list of experiments and determine when to show an experiment to a user. You can purchase a third-party connector from [AppSource](https://appsource.microsoft.com). Follow the setup instructions provided by the publisher. You can alternatively use the sample test connector from Commerce to test the experimentation workflow without needing to configure an external service. For more information, see [Configure and enable connectors](e-commerce-extensibility/connectors.md). 
-1. **Turn on the experimentation feature flag in Commerce** - You can enable experimentation at the tenant level by going to **Tenant Settings \> Features**, or at the site level by going t **Site Settings \> Features**. Turn on the **Experimentation** flag to start creating module variations. Disabling this flag stops all experiments from being shown to users and removes all editing functions within site builder.
+1. **Turn on the experimentation feature flag in Commerce** - You can enable experimentation at the tenant level by going to **Tenant Settings \> Features**, or at the site level by going to **Site Settings \> Features**. Turn on the **Experimentation** flag to start creating module variations. Disabling this flag stops all experiments from being shown to users and removes all editing functions within site builder.
     
 ## Experimentation lifecycle
 

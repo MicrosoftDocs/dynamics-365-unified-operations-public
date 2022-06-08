@@ -4,7 +4,7 @@
 title: Preview and publish an experiment
 description: This article describes how to preview and publish an experiment from Dynamics 365 Commerce.
 author: sushma-rao 
-ms.date: 06/07/2022
+ms.date: 06/08/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: josaw
@@ -33,8 +33,6 @@ If you aren't using a publish group to schedule when your experiment goes live a
     
 > [!IMPORTANT]
 > If the page has an unpublished URL, you must first publish the URL or it won't be visible to your website users. For details, see [Save, preview, and publish a page](save-preview-publish-page.md).
-
-Once the experiment is live, you can append the experiment ID and variation ID to the default page URL to force a variation for testing or automation purposes. For example, if the default page URL is `https://fabrikam.com/modern/homepage`, you can force a variation with a URL like `https://fabrikam.com/modern/homepage?exp=18012910471|18024360464`. You can get the experiment ID and variation ID for your experiment variation from the preview URL in the **Preview** experience explained above.
     
 ### Use publish groups to schedule when your experiment goes live
 Variations created in site builder can be scheduled for publishing by using a publish group. Within a publish group, you can connect a page or fragment to your experiment by selecting **Experiments** in the left navigation pane. You can also do this by selecting **Pages** or **Fragments** and following the instructions in [Connect an experiment and edit variations](experimentation-connect-edit.md). For information about publish groups, see [Work with publish groups](publish-groups.md).
@@ -44,6 +42,10 @@ When using publish groups with experiments, there are some important considerati
 - Experiments that are connected to pages in a live site aren't available to pages within publish groups and vice-versa. Similarly, pages that have experiments running on them in a live site aren't available to other experiments in publish groups and vice versa.
 - When you publish or schedule a publish group, all content in the publish group is published, regardless of whether there's an experiment associated with the publish group.
 - Because a publish group continues to persist after it's been published to a live site, experiments in the publish group will also persist. Therefore, you won't be able to associate other experiments with the same page or fragment. To avoid this limitation, delete any publish groups with persisting experiments. Similarly, if you want to delete an experiment in a live site that also exists in a publish group, delete it from the publish group first.
+
+### Force variations for testing
+
+Once the experiment is live, you can append the experiment ID and variation ID to the default page URL to force a variation for testing or automation purposes. For example, if the default page URL is `https://fabrikam.com/modern/homepage`, you can force a variation with a URL like `https://fabrikam.com/modern/homepage?exp=18012910471|18024360464`. You can get the experiment ID and variation ID for your experiment variation from the preview URL in the **Preview** experience explained above.
 
 ## Previous step
 [Connect and edit an experiment](experimentation-connect-edit.md)
