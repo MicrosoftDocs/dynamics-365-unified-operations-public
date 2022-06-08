@@ -33,7 +33,7 @@ To set up your success metrics for out-of-the-box modules, follow these steps.
 1. In Commerce site builder, select **Pages** in the left navigation pane, and then select the page that you want to collect metrics for. 
 1. Go to the **Event IDs to track** section in the right property pane of the page or module you want to track.
 1. Select **View**. A list of all click event IDs is displayed. Copy the event that you want to track, and then paste the event key into the designated location in the third-party service. If you need more than one event, copy the keys one at a time. 
-1. For page views, use the SHA-256 hash value of the page name in site builder appended with `.PageView`. For example, `Homepage.PageView` or `CheckoutPage.PageView`.
+1. For page views, use the SHA-256 hash value of the page name in site builder appended with `.PageView`. For example, the event ID for `Homepage.PageView` would be `e217eb66c7808ecc43b0f5c517c6a83b39d72b91412fbd54a485da9d8e186a9`.
 1. Take any other steps for tracking metrics as required in the third-party service.
 
 For custom module clicks, follow these steps to instrument the click events:
