@@ -145,22 +145,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 
 ## Activate new certificates within Service Fabric cluster
 
-To make the certificate rotation process easier, Microsoft recommends that you use certificate common names (subject name) instead of thumbprints for your Service Fabric standalone cluster configuration. If you have an existing cluster and want to migrate from using thumbprints to using certificate common names, follow these steps.
-
-1. Run the following script to generate an updated cluster configuration file.
-
-    ```powershell
-    .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -UpgradeToCommonNames
-    ```
-
-    > [!NOTE]
-    > To provide defense in depth, we recommend that you restrict who the issuer of the certificates should be. Otherwise, any certificate that matches the common name (subject name) that is defined in the Service Fabric cluster configuration can be used. 
-    >
-    > ```powershell
-    > .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -UpgradeToCommonNames -RestrictCertificateIssuers
-    > ```
-
-1. Apply the updated configuration to your Service Fabric cluster by using the information in [Appendix A](#appendix-a) later in this article.
+To make the certificate rotation process easier, Microsoft highly recommends that you use certificate common names (subject name) instead of thumbprints for your Service Fabric standalone cluster configuration. If you have an existing cluster and want to migrate from using thumbprints to using certificate common names, follow the steps in [Appendix B](#appendix-b) later in this article.
 
 ### <a name=""></a>Service Fabric cluster with certificate common names
 
@@ -290,7 +275,7 @@ You must reinstall the LocalAgent in the following situations:
     - Tenant service principle certificate thumbprint
 
     > [!IMPORTANT]
-    > Do **not** create a new connector in LCS. Update the configuration of your existing connector and download the settings again.
+    > Do **not** create a new connector in LCS. Update the configuration of your existing connector and download the settings file again.
 
 ## Update your current deployment configuration
 
@@ -468,5 +453,24 @@ Update-ServiceFabricClusterUpgrade -UpgradeReplicaSetCheckTimeoutSec 30
 
 > [!NOTE] 
 > You might receive the following error message: "Upgrading from two different certificates to two different certificates is not allowed." This message indicates that you didn't clean up old Service Fabric certificates during the previous certificate rotation exercise. In this case, see the [Clean up old Service Fabric certificates](certificate-rotation-on-prem.md#cleanupoldsfcerts) section earlier in this article, and then repeat the steps in this section.
+
+## <a name="appendix-b"></a>Appendix B
+
+Using certificate common names instead of thumbprints to describe your Service Fabric cluster configuration will ease future certificate rotation operations as the Service Fabric cluster will automatically switch to using new certificates once they are available in the machine. Service Fabric will not accept any certificate however, the certificate that is provided must match the subject name that is defined in the Service Fabric cluster. Additionally, the issuer of the certificate must match the issuer that is also specified in the configuration. For more information on how Service Fabric uses common names see [Common name-based certificate validation declarations](/azure/service-fabric/cluster-security-certificates#common-name-based-certificate-validation-declarations). For more information on how to secure standalone Service Fabric clusters [Secure a standalone cluster on Windows by using X.509 certificates](/azure/service-fabric/service-fabric-windows-cluster-x509-security)
+
+1. Run the following script to generate an updated cluster configuration file.
+
+    ```powershell
+    .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -UpgradeToCommonNames
+    ```
+
+    > [!NOTE]
+    > In some cases, customers may choose to not restrict the issuer of the certificates in the Service Fabric cluster configuration. While this is not recommended, it can be achieved by using the following command.
+    >
+    > ```powershell
+    > .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -UpgradeToCommonNames -DoNotRestrictCertificateIssuers
+    > ```
+
+1. Apply the updated configuration to your Service Fabric cluster by using the information in [Appendix A](#appendix-a) above.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

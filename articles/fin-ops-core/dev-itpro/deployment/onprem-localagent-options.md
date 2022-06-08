@@ -82,9 +82,9 @@ Support for this option was introduced in version 10.0.21. Additionally, at leas
 
 ## Specify that an environment should be configured to work with the Regression suite automation tool
 
-The Regression suite automation tool (RSAT) significantly reduces the time and cost of user acceptance testing (UAT) for finance and operations apps. For more information, see [Regression suite automation tool (RSAT)](../perf-test/rsat/rsat-overview.md).
+The Regression suite automation tool (RSAT) significantly reduces the time and cost of user acceptance testing (UAT) in Finance + Operations (on-premises). For more information, see [Regression suite automation tool (RSAT)](../perf-test/rsat/rsat-overview.md).
 
-To enable this deployment, change the value of **rsatEnabled** from **false** to **true**. Additionally, set **rsatCertificateThumbprint** to the thumbprint of the certificate that you want to use for RSAT.
+To enable this deployment option, change the value of **rsatEnabled** from **false** to **true**. Additionally, set **rsatCertificateThumbprint** to the thumbprint of the certificate that you want to use for RSAT.
 
 For more information about how to generate and deploy the certificate, see [Enable RSAT in Microsoft Dynamics 365 Finance + Operations (on-premises) environments](./onprem-rsat-configuration.md).
 

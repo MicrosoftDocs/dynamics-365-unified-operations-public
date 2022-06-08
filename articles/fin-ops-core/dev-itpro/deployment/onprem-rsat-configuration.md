@@ -76,7 +76,7 @@ Before you begin, make sure that you have at least local agent 3.1.0. Otherwise,
 
 ## Deploy or service your environment
 
-For new environments that haven't been deployed, see [Deploy your Finance and Operations apps environment from LCS](.\setup-deploy-on-premises-pu41.md#deploy) for information about how to deploy your environment.
+For new environments that haven't been deployed, see [Deploy your Finance + Operations environment from LCS](.\setup-deploy-on-premises-pu41.md#deploy) for information about how to deploy your environment.
 
 For existing environments, service the environment to apply the changes by deploying a new package or following these steps.
 
