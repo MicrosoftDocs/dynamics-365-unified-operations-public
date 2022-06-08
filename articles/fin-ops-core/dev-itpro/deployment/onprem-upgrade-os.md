@@ -4,7 +4,7 @@
 title: Upgrade Windows Server in Microsoft Dynamics 365 Finance + Operations (on-premises) environments
 description: This article explains how to upgrade the Windows Server version that your Microsoft Dynamics 365 Finance + Operations (on-premises) environments are using.
 author: faix
-ms.date: 04/05/2022
+ms.date: 06/07/2022
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
@@ -27,7 +27,9 @@ This article explains how to upgrade Windows Server in your Microsoft Dynamics 3
 
 ## Upgrade Active Directory Federation Services
 
-### Upgrade a single AD FS instance
+### Upgrade paths
+
+#### Upgrade a single AD FS instance
 
 1. Schedule enough downtime to complete this operation, because users won't be able to sign in to Finance + Operations (on-premises) while it's occurring.
 1. On your Active Directory Federation Services (AD FS) server, run the following command.
@@ -51,13 +53,13 @@ This article explains how to upgrade Windows Server in your Microsoft Dynamics 3
     .\Publish-ADFSApplicationGroup.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com' -ClientId <"Value of Active Directory->Client ID for AOS application group"> -FinancialReportingClientId <"Client ID for Financial Reporting application group">
     ```
 
-### Upgrade an AD FS farm
+#### Upgrade an AD FS farm
 
 If you're using a Windows Internal Database (WID), follow the instructions in [Upgrading to AD FS in Windows Server 2016 using a WID database](/windows-server/identity/ad-fs/deployment/upgrading-to-ad-fs-in-windows-server).
 
 If you're using a SQL Server database, follow the instructions in [Upgrading to AD FS in Windows Server 2016 with SQL Server](/windows-server/identity/ad-fs/deployment/upgrading-to-ad-fs-in-windows-server-sql).
 
-### Create a new AD FS farm/instance and replace your old AD FS farm/instance
+#### Create a new AD FS farm/instance and replace your old AD FS farm/instance
 
 1. Create a new AD FS federation farm/instance. For information about how to deploy AD FS, see [Windows Server AD FS Deployment Guide](/windows-server/identity/ad-fs/deployment/windows-server-2012-r2-ad-fs-deployment-guide).
 1. Configure AD FS by following the instructions in [Configure AD FS](./setup-deploy-on-premises-pu41.md#configureadfs). However, don't run the **Publish-ADFSApplicationGroup.ps1** script.
@@ -78,6 +80,14 @@ If you're using a SQL Server database, follow the instructions in [Upgrading to 
     Your new farm/instance is now ready to be used by Finance + Operations (on-premises).
 
 1. If your new farm/instance endpoint differs from the old farm/instance endpoint, be sure to update the endpoint in Microsoft Dynamics Lifecycle Services (LCS) by selecting the **Update Settings** option and setting the **ADFS OpenID metadata endpoint** field to the new value.
+
+### Post-upgrade actions
+
+To correctly support authentication with the Office add-ins, AD FS on Windows Server 2019 or later requires that you set up Cross Origin Resource Sharing (CORS) headers. This information is available in [Configure AD FS](./setup-deploy-on-premises-pu41.md#configureadfs). If you aren't sure whether you're missing the configuration, run the following script.
+
+```powershell
+.\Test-ADFSConfiguration.ps1 -ConfigurationJsonFilePath "\\Fileserver\agent\wp\EN10\StandaloneSetup-746342\config.json"
+```
 
 ## Upgrade a node in your Service Fabric cluster
 
