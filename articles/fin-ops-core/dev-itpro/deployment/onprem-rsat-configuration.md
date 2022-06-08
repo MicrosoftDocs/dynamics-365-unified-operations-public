@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enable RSAT in Finance and Operations apps (on-premises) environments
+title: Enable RSAT in Finance + Operations (on-premises) environments
 description: This topic explains the steps that are required to configure and enable your environment so that it can be used with the Regression suite automation tool (RSAT).
 author: faix
 ms.date: 03/06/2022
@@ -16,9 +16,9 @@ ms.search.validFrom: 2022-06-03
 
 ---
 
-# Enable RSAT in Finance and Operations apps (on-premises) environments
+# Enable RSAT in Finance + Operations (on-premises) environments
 
-The Regression suite automation tool (RSAT) significantly reduces the time and cost of user acceptance testing (UAT) in Finance and Operations apps. For more information, see [Regression suite automation tool (RSAT)](../perf-test/rsat/rsat-overview.md).
+The Regression suite automation tool (RSAT) significantly reduces the time and cost of user acceptance testing (UAT) in Finance + Operations (on-premises). For more information, see [Regression suite automation tool (RSAT)](../perf-test/rsat/rsat-overview.md).
 
 ## Generate and deploy the certificate
 
