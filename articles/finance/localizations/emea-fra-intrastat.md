@@ -172,12 +172,6 @@ Go to **Tax** > **Setup** > **Foreign trade** > **Compression of Intrastat**, an
 3. In the **Origin** section, in the **Country/region** field, select the product's country or region of origin.
 4. On the **Manage inventory** FastTab, in the **Net weight** field, enter the product's weight in kilograms.    
 
-### Set up warehouse parameters for the Intrastat declaration
-
-Go to **Warehouse management** > **Setup** > **Warehouse** > **Warehouses**, select a warehouse, and then follow these steps:
-1. On the **Addresses** FastTab, select **Add** or **Edit**.
-2. In the dialog box, in the **City** field, select the warehouse's city. The city's state will be used as a county for your DEB report.
-
 ### NGP codes
 
 On the DEB report, the codification of products consists of the following elements:
@@ -205,6 +199,17 @@ In 2022, the NGP applies to only three types of products:
 1. Go to **Product information management** > **Products** > **Released products**.
 2. In the grid, select a product.
 3. On the **Foreign trade** FastTab, in the **Intrastat** section, in the **NGP** field, select the appropriate NGP code.
+
+### Set up warehouse parameters for the Intrastat declaration
+
+Go to **Warehouse management** > **Setup** > **Warehouse** > **Warehouses**, select a warehouse, and then follow these steps:
+1. On the **Addresses** FastTab, select **Add** or **Edit**.
+2. In the dialog box, in the **City** field, select the warehouse's city. The city's state will be used as a county for your DEB report.
+
+### Set up the transport method
+Go to **Tax** > **Setup** > **Foreign trade** > **Transport method**.
+On the Action Pane, select New.
+In the **Transport** field, enter a unique code. Companies in France use one-digit transport codes.
 
 ### Intrastat journal
 
