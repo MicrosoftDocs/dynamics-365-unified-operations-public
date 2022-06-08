@@ -141,22 +141,26 @@ In Dynamics 365 Finance, go to **Tax** > **Setup** >  **Foreign trade** > **Fore
 3. On the **Commodity code hierarchy** FastTab, in the **Category hierarchy** field, select **Intrastat**.
 4. On the **General** FastTab, in the **Transaction code** field, select the code that is used for transfers of goods.
 5. In the **Credit note** field, select the code that is used for returns of goods.
+6. In the **Worker** field, select the name of the contact person.
+7. On the **Contact** tab, add information about contact person.
+
+    1. In the **Telephone** field, enter the telephone number of the contact person.
+    2. In the **Fax** field, enter the fax number of the contact person.
+
+8. On the **Country/region properties** tab, in the **Country/region** field, list all the countries or regions that your company does business with. For each country that is part of the EU, select **EU** in the **Country/region type** field, so that the country appears on your Intrastat report. For France, select **Domestic** in the **Country/region type** field.
+
 
 ### Set up compression of Intrastat
 
 Go to **Tax** > **Setup** > **Foreign trade** > **Compression of Intrastat**, and select the fields that should be compared when Intrastat information is summarized. For French Intrastat, select the following fields:
 - Statistics procedure
-- State of origin
 - Country/region of origin
-- Delivery terms
 - Transport
 - Correction
 - Country/region
 - County of origin/destination
 - Direction
 - Country/region of sender
-- State of sender
-- State
 - Transaction code
 - Commodity
 
