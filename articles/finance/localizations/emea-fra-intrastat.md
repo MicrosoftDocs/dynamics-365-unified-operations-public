@@ -255,15 +255,7 @@ The following example shows how to set up French Intrastat and create the DEB re
     - Intrastat report
     - Intrastat INTRACOM (FR)
 
-2. In Finance, set up a transaction code:
-
-    1. Go to **Tax** > **Setup** > **Foreign trade** > **Transaction codes**.
-    2. On the Action Pane, select **New**.
-    3. In the **Transaction code** field, enter **11**.
-    4. In the **Name** field, enter **Purchase or Sales**.
-    5. On the Action Pane, select **Save**.
-
-3.  Set up a product hierarchy:
+2.  Set up a product hierarchy:
 
     1. Go to **Product information management** > **Setup** > **Categories and attributes** > **Category hierarchies**.
     2. In the grid, select **Intrastat**. Then, on the Action Pane, on the **Category hierarchy** tab, in the **Maintain** group, select **Edit**.
@@ -340,6 +332,13 @@ The following example shows how to set up French Intrastat and create the DEB re
 10. In the **Origin** section, in the **Country/region** field, select **DEU**.
 11.On the **Manage inventory** FastTab, in the **Weight measurements** section, in the **Net weight** field, enter **5**.
 12.On the Action Pane, select **Save**.
+
+### Set up Regime codes
+
+1. Go to **Tax** > **Setup** > **Foreign trade** > **Statistics procedure**
+2. On the Action Pane, select **New**.
+3. In the **Statistics procedure** field, enter the regime code.
+4. In the **Text 1** field, enter the regime code description.
 
 ### Change the site address
 
