@@ -410,6 +410,8 @@
             href: deployment/onprem-reverseproxy.md
           - name: Configure the Warehousing app for on-premises deployments
             href: deployment/warehousing-for-on-premise-deployments.md
+          - name: Enable RSAT in Finance + Operations (on-premises) environments
+            href: deployment/onprem-rsat-configuration.md
           - name: Install network printer devices in on-premises environments
             href: analytics/install-network-printer-onprem.md
           - name: On-premises diagnostics
