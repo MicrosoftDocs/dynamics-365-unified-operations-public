@@ -2116,6 +2116,8 @@
           href: localizations/emea-cze-intra-community-VAT.md
         - name: Year-end close
           href: localizations/emea-cze-hun-year-end.md
+        - name: EU sales list
+          href: localizations/emea-cze-eu-sales-list.md
       - name: Denmark
         items:
         - name: Denmark overview
