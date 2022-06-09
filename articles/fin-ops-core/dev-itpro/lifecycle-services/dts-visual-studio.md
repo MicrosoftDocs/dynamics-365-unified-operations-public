@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Dynamics 365 Translation Service Visual Studio extension (Private Preview)
+title: Dynamics 365 Translation Service Visual Studio extension (Public Preview)
 description: This topic explains how to integrate the Microsoft Dynamics 365 Translation Service (DTS) extension for Visual Studio into your Visual Studio workflow.
 author: abmotgi
 ms.date: 12/13/2021
@@ -15,18 +15,18 @@ ms.search.validFrom: 2021-12-13
 
 ---
 
-# Dynamics 365 Translation Service Visual Studio extension (Private Preview)
+# Dynamics 365 Translation Service Visual Studio extension (Public Preview)
 
 [!include[banner](../includes/banner.md)]
 [!include[preview banner](../includes/preview-banner.md)]
 
-The Microsoft Dynamics 365 Translation Service (DTS) extension for Visual Studio lets developers perform actions in DTS directly from their Visual Studio integrated development environment (IDE). For example, you can translate user interface (UI) files and regenerate the translations. For more information about the supported functionality, see [Dynamics 365 Translation Service overview](translation-service-overview.md).
+The Microsoft Dynamics 365 Translation Service (DTS) extension for Visual Studio lets Finance & Operations (F&O) developers perform actions in DTS directly from their Visual Studio integrated development environment (IDE). For example, you can translate user interface (UI) files and regenerate the translations. For more information about the supported functionality, see [Dynamics 365 Translation Service overview](translation-service-overview.md).
 
 To use the DTS Visual Studio extension, you must have access to Microsoft Dynamics Lifecycle Services (LCS). Additionally, the extension is intended primarily to support the development workflow for Finance and Operations apps in Visual Studio. For more information, see [Development and administration for Finance and Operations apps](/dynamics365/fin-ops-core/dev-itpro/).
 
 ## Installing the extension
 
-Before you can download the DTS Visual Studio extension, you must request access to the private preview. After access is granted, you can download the Visual Studio extension from [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
+You can download the Visual Studio extension from [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
 
 Download and install the extension to your Visual Studio development environment. After you install the extension, the **Tools** menu should include new commands that were added from DTS.
 
@@ -40,7 +40,7 @@ Before you can start to use the DTS Visual Studio extension, you must authentica
 
 The DTS commands can be accessed in two ways:
 
-- Select **Tools** on the main toolbar, then select Dynamics 365 Translation Service, and then select a DTS command on the menu. Five DTS commands are available: **Translate**, **Regenerate**, **Download translation result**, **Align**, and **Log out**.
+- Select **Tools** on the main toolbar, then select **Dynamics 365 Translation Service**, and then select a DTS command on the menu. Five DTS commands are available: **Translate**, **Regenerate**, **Download translation result**, **Align**, and **Log out**.
 
     ![Tools menu in the Visual Studio IDE.](media/dts-vs-tools-menu.png)
 
@@ -54,7 +54,7 @@ Before you translate any resource files, you should have the resource files for 
 
 ![Add new languages command.](media/dts-vs-new-language.png)
 
-The **Label file** wizard appears. Complete this wizard to create new label files for your desired languages. For guidance on using the label file wizard, see [How to: Create a Label File](/dynamicsax-2012/developer/how-to-create-a-label-file).
+The **Label File Wizard** appears. Complete this wizard to create new label files for your desired languages. For guidance on using the label file wizard, see [How to: Create a Label File](/dynamicsax-2012/developer/how-to-create-a-label-file).
 
 ![Label file wizard.](media/dts-vs-label-wizard.png)
 
@@ -64,13 +64,13 @@ The following table describes the fields in the **Translate with Dynamics 365 Tr
 
 | Field              | Required | Description |
 |--------------------|----------|-------------|
-| Region             | Yes | Select the region. |
+| Region             | Yes | Leave as Default unless it is required to change. |
 | Request name       | Yes | Enter a name for the request. |
 | Product            | Yes | Select the product type. |
 | Project            | Yes | Select the project that contains the resource files. |
 | Source language    | Yes | Select the language of the source files. |
 | Source files       | Yes | Select one or more resource files for translation. This field lists all resource files that are referenced in the selected project. |
-| Target language    | Yes | <p>Select a language to translate the source files into.</p><p><strong>Note:</strong> You can translate only into a target language that a resource file already exists for. Language names that are shown in bold are General Availability (GA) languages for Microsoft Dynamics products. Therefore, product-specific machine translation (MT) models are available in those languages, and the MT model is trained on the terminology for Microsoft Dynamics. For non-GA languages, the MT model uses the general domain training.</p> |
+| Target language    | Yes | <p>Select a language to translate the source files into.</p><p><strong>Note:</strong> You can translate only into a target language that a resource file already exists for. Language names that are shown in bold are General Availability (GA) languages for Microsoft Dynamics products. Therefore, product-specific translation memories (TM) and machine translation (MT) models are available in those languages.  The MT models are trained on the terminology for Microsoft Dynamics. For non-GA languages, the general domain MT models are used.</p> |
 | Translation memory | No | Add the translation memory files for a specific target language. (The value is the zip file that contains translation memories for recycling.) |
 | Create custom MT?  | No | Select whether you want to use the uploaded translation memory to create a custom MT model. |
 
@@ -80,7 +80,7 @@ When you've finished configuring the translation request, select **Submit** to s
 
 ![Confirmation window for the DTS extension.](media/dts-vs-confirmation.png)
 
-After a short time, the **Output** window will show the status of the request. 
+After a short time, the Output window will show the status of the request (unless Create custom MT option is selected). 
 
 ![Output window for the DTS extension.](media/dts-vs-outputwindow.png)
 
@@ -105,20 +105,20 @@ The following table describes the fields in the **Regenerate** dialog box.
 
 ![Regenerate with DTS dialog box.](media/dts-vs-regenerate.png)
 
-When you've finished configuring the regeneration request, select **Submit** to send it to DTS. The **Output** window will show the status of the request. When the request is completed, you will see a Download Translation window stating that output files (translation memory files and target translated files) have been downloaded.
+When you've finished configuring the regeneration request, select **Submit** to send it to DTS. The **Output** window will show the status of the request. When the request is completed, you will see a Download Translation window stating that output files (translation memory files and target translated files) have been downloaded by overwriting the previous outputs.
 
 ![Download Translations window for the DTS extension.](media/dts-vs-downloadtranslations.png)
 
 ### Creating a translation memory (alignment)
 
-If you have files that were previously translated, you can recycle the translated files for a newer version of the source files by creating a translation memory (TM) that uses XLIFF.
+If you have label resource files that were previously translated, you can recycle the translation for a newer version of the source files by creating a translation memory (TM) that uses XLIFF.
 
 On the **Tools** menu, select **Dynamics 365 Translation Services**, and then select **Align**. A dialog box appears, where you can configure the alignment request.
 
 | Field              | Required | Description |
 |--------------------|----------|-------------|
-| Region             | Yes | Select the region. |
-| Source Language    | Yes | Select the language of the source files and upload the file or folder. |
+| Region             | Yes | Leave as Default unless it is required to change. |
+| Source Language    | Yes | Select the language of the source files.  Select a label file or folder containing the label files. |
 | Target Language    | Yes | Select the language of the target files and upload the file or folder. |
 | Output Path        | Yes | Select the output path. |
 
