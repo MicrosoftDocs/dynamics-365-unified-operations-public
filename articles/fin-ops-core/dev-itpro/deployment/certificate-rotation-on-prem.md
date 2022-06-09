@@ -201,7 +201,7 @@ If the following sections are defined for your cluster configuration, the allowe
 ],
 ```
 
-In this case, if the issuer of your new certificates differs from what is defined in these configurations, you must go through a cluster configuration upgrade to add the new issuers. However, if your cluster defines a root CA as the issuer instead of an intermediate certificate, the certificate will be valid, provided that the certificate chain of your new certificates contains the root CA.
+In this case, if the issuer of your new certificates differs from what is defined in these configurations, you must go through a cluster configuration upgrade to add the new issuers.
 
 If you have to update the list of issuers, you must do the update while the existing certificates are still valid.
 
