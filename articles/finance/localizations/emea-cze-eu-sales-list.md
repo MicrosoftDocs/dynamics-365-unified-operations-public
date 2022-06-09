@@ -1,7 +1,34 @@
+---
+# required metadata
+title: EU Sales list for Lithuania
+description: This article provides information about the European Union (EU) sales list report for Czech Republic.
+author: AKroshkina
+ms.date: 06/09/2022
+ms.topic: article
+ms.prod: 
+ms.technology: 
+
+# optional metadata
+
+#ms.search.form:
+audience: IT Pro, Application User
+# ms.devlang: 
+ms.reviewer: kfend
+# ms.suite: 
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: 
+# ms.search.industry: 
+ms.author: anasyash
+ms.dyn365.ops.version: 
+ms.search.validFrom: 
+---
+
+# EU Sales list for Czech Republic
 This topic provides information about the EU sales list report for the Czech Republic. The Czech Republic EU sales list report contains information about the sale of goods and services for reporting in XML format. The following fields are included on the Czech Republic EU sales list report:
 
 -   **EU sales list header:**
--   Reporting period
+    -   Reporting period
     -   Date of the report creation
     -   Existence of a correction
     -   Tax authority ID
@@ -18,7 +45,7 @@ This topic provides information about the EU sales list report for the Czech Rep
     -   Name and role of the person authorizing the report
     -   Name and telephone number of the person submitting the report
 -   **EU sales list lines:**
--   Customer VAT ID
+    -   Customer VAT ID
     -   Transaction type
     -   Number of all invoices by transaction type per customer
     -   Amount of all invoices by transaction type per customer
@@ -27,7 +54,8 @@ This topic provides information about the EU sales list report for the Czech Rep
 
 For general setup information, see [EU Sales list reporting](https://docs.microsoft.com/dynamics365/finance/localizations/emea-eu-sales-list#prerequisites).
 
-[!NOTE] The value from the **Tax registration number** field on the **Tax registration** FastTab of the **Legal entities** page is used in the .xml and .xlsx files for the EU sales list report.
+> [!NOTE] 
+> The value from the **Tax registration number** field on the **Tax registration** FastTab of the **Legal entities** page is used in the .xml and .xlsx files for the EU sales list report.
 
 **Set up the address format**
 
@@ -51,11 +79,11 @@ For general setup information, see [EU Sales list reporting](https://docs.micros
 In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index), import the latest versions of the following Electronic reporting (ER) configurations for the EU sales list:
 
 -   EU Sales list model
-    -   EU Sales list by columns report
-    -   EU Sales list by rows report
-    -   EU Sales list (CZ)
+-   EU Sales list by columns report
+-   EU Sales list by rows report
+-   EU Sales list (CZ)
 
-For more information, see Download Electronic reporting configurations from Lifecycle Services.
+For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 ### Set up a sales tax authority
 
@@ -71,25 +99,25 @@ For more information, see Download Electronic reporting configurations from Life
 3.  On the **Electronic reporting** FastTab, in the **File format mapping** field, select **EU Sales list (CZ)**.
 4.  In the **Report format mapping** field, select **EU Sales list by rows report** or **EU Sales list by columns report**.
 5.  On the **Other** FastTab, set the following fields:
--   In the **Authorized by** field, select the person who is authorizing the report.
+    -   In the **Authorized by** field, select the person who is authorizing the report.
     -   In the **Role** field, enter the role of the person who is authorizing the report.
     -   In the **Filled by** field, select the person who is submitting the report. Note that the main telephone number of the person submitting the report will be shown in the EU sales list report.
-1.  On the **Country/region properties** tab, select **New**, and specify the following information:
--   In the **Country/region** column, select **CZE**.
+6.  On the **Country/region properties** tab, select **New**, and specify the following information:
+    -   In the **Country/region** column, select **CZE**.
     -   In the **Country/region type** column, select **Domestic**.
-1.  List all the countries or regions that your company does business with. For each country that is part of the EU, in the **Country/region type** field, select **EU**.
-2.  On the **Company information** FastTab, set the following fields:
--   In the **Legal entity** field, select your company.
+7.  List all the countries or regions that your company does business with. For each country that is part of the EU, in the **Country/region type** field, select **EU**.
+8.  On the **Company information** FastTab, set the following fields:
+    -   In the **Legal entity** field, select your company.
     -   In the **Authority** field, select the tax authority that you created earlier.
     -   In the **Company name appendix** field, enter an appendix of the company name.
     -   In the **Legal entity address** field, select the address that you created earlier.
-1.  On the Action Pane, select **Save**.
+9.  On the Action Pane, select **Save**.
 
 ### Set up general ledger parameters
 
 1.  Go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
 2.  On the **Sales tax** tab, on the **VAT statement** FastTab, set the following fields. The values will be shown in the XML EU sales list report:
--   In the **Taxpayer type** field, select **Corporation** or **Individual**.
+    -   In the **Taxpayer type** field, select **Corporation** or **Individual**.
     -   In the **Natural person title** field, enter the title of the natural person.
     -   In the **Natural person first name** field, enter the first name of the natural person.
     -   In the **Natural person last name** field, enter the last name of the natural person.
@@ -114,7 +142,7 @@ For general information about which types of transactions are included in the EU
 | Generate report  | Set this option to **Yes** to generate an .xlsx file for your EU sales list report. |
 | Report file name | Enter the name of the .xlsx file.                                                   |
 
-1.  Select **OK**, and review the generated reports.
+5.  Select **OK**, and review the generated reports.
 
 ### Generate a corrective EU sales list report
 
@@ -126,7 +154,7 @@ For general information about which types of transactions are included in the EU
 
 ## Example
 
-For information about how to create a general setup, create postings, and transfer transactions by using the **DEMF** legal entity for the Czech Republic, see Example for generic EU Sales list. However, for this example, create **CZ100200300** as the company's VAT ID.
+For information about how to create a general setup, create postings, and transfer transactions by using the **DEMF** legal entity for the Czech Republic, see [Example for generic EU Sales list](emea-eu-sales-list-example.md). However, for this example, create **CZ100200300** as the company's VAT ID.
 
 **Set up the address format**
 
@@ -159,27 +187,27 @@ For information about how to create a general setup, create postings, and transf
 | District            | 1               |
 | Primary             | Yes             |
 
-1.  Select **OK**.
+6.  Select **OK**.
 
 ### Set up foreign trade parameters
 
 1.  Go to **Tax** \> **Setup** \> **Foreign trade** \> **Foreign trade parameters**.
 2.  On the **EU sales list** tab, on the **Other** FastTab, set the following fields:
--   In the **Authorized by** field, select **Charlie Carson**.
+    -   In the **Authorized by** field, select **Charlie Carson**.
     -   In the **Role** field, enter **Accountant**.
     -   In the **Filled by** field, select **Jodi Christiansen**.
-1.  On the **Company information** FastTab, set the following fields:
--   In the **Legal entity** field, select **DEMF**.
+3.  On the **Company information** FastTab, set the following fields:
+    -   In the **Legal entity** field, select **DEMF**.
     -   In the **Authority** field, select **TA**.
     -   In the **Company name appendix** field, enter **CNAppendix**.
     -   In the **Legal entity address** field, select the address that you created earlier.
-1.  On the Action Pane, select **Save**.
+4.  On the Action Pane, select **Save**.
 
 ### Set up general ledger parameters
 
 1.  Go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
 2.  On the **Sales tax** tab, on the **VAT statement** FastTab, set the following fields:
--   In the **Taxpayer type** field, select **Corporation**.
+    -   In the **Taxpayer type** field, select **Corporation**.
     -   In the **Natural person title** field, enter **Natural person title**.
     -   In the **Natural person first name** field, enter **Aaron**.
     -   In the **Natural person last name** field, enter **Con**.
@@ -197,9 +225,9 @@ For information about how to create a general setup, create postings, and transf
 1.  Go to **Tax** \> **Declarations** \> **Foreign trade** \> **EU sales list**.
 2.  On the Action Pane, select **Reporting**.
 3.  In the **EU sales list reporting** dialog box, on the **Parameters** FastTab, set the following fields:
--   In the **Reporting period** field, select **Monthly**.
+    -   In the **Reporting period** field, select **Monthly**.
     -   In the **From date** field, select **8/1/2021** (August 1, 2021).
-1.  Select **OK**, and review the report in XML format that is generated. The following tables show the values on the example report.
+4.  Select **OK**, and review the report in XML format that is generated. The following tables show the values on the example report.
 
 **EU sales list header**
 
@@ -242,16 +270,16 @@ For information about how to create a general setup, create postings, and transf
 | pln_pocet   | 1            | 1            | The number of all invoices by transaction type per customer.                                                                                                                                             |
 | pln_hodnota | 120          | 240          | The amount of all invoices by transaction type per customer.                                                                                                                                             |
 
-1.  Review the report in Excel format that is generated.
+5.  Review the report in Excel format that is generated.
 
-![A picture containing text Description automatically generated](media/200ad3854fbd8e4d0ef2bb1165727613.png)
+![A picture containing text Description automatically generated](media/EUSL-cze.png)
 
 **Create a corrective EU sales list report**
 
 1.  Go to **Tax** \> **Declarations** \> **Foreign trade** \> **EU sales list**.
 2.  Verify that the grid includes one service line and one item line.
 
-![](media/ce04a99543c9eb42b60a4d043688c160.jpg)
+![](media/EUSL-ex-cze.jpg)
 
 1.  Select a service line, and then, on the Action Pane, select **Mark** \> **Mark as reported**.
 2.  In the **Criteria** field, enter **8/2/2021** (August 2, 2021). Then select **OK**.
@@ -261,10 +289,10 @@ For information about how to create a general setup, create postings, and transf
 6.  On the corrective line that has a positive amount, in the **Services value** field, enter **25**.
 7.  On the Action Pane, select **Reporting**.
 8.  In the **EU sales list reporting** dialog box, on the **Parameters** FastTab, set the following fields:
--   In the **Reporting period** field, select **Monthly**.
+    -   In the **Reporting period** field, select **Monthly**.
     -   In the **From date** field, select **8/1/2021** (August 1, 2021).
     -   Set the **Correction** option to **Yes**.
-1.  Select **OK**, and review the report in XML format that is generated. The following tables show the values on the example report.
+9.  Select **OK**, and review the report in XML format that is generated. The following tables show the values on the example report.
 
 **EU sales list header**
 
