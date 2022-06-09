@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: EU Sales list for Lithuania
+title: EU Sales list for Czech Republic
 description: This article provides information about the European Union (EU) sales list report for Czech Republic.
 author: AKroshkina
 ms.date: 06/09/2022
