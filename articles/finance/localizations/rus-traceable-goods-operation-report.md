@@ -4,7 +4,7 @@
 title: Generate a Traceable goods operation report (Russia)
 description: This article explains how set up and generate a report about operations that involve traceable goods.
 author: v-oskinaolga
-ms.date: 06/06/2022
+ms.date: 06/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -19,7 +19,7 @@ ms.reviewer:
 # ms.custom: 
 ms.search.region: Russia
 # ms.search.industry: 
-ms.author: 
+ms.author: v-olgaoskina
 ms.search.validFrom: 2022-06-04
 ms.dyn365.ops.version: 10.0.27
 
