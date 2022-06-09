@@ -22,7 +22,7 @@ ms.search.validFrom: 2021-12-13
 
 The Microsoft Dynamics 365 Translation Service (DTS) extension for Visual Studio lets Finance & Operations (F&O) developers perform actions in DTS directly from their Visual Studio integrated development environment (IDE). For example, you can translate user interface (UI) files and regenerate the translations. For more information about the supported functionality, see [Dynamics 365 Translation Service overview](translation-service-overview.md).
 
-To use the DTS Visual Studio extension, you must have access to Microsoft Dynamics Lifecycle Services (LCS). Additionally, the extension is intended primarily to support the development workflow for Finance and Operations apps in Visual Studio. For more information, see [Development and administration for Finance and Operations apps](/dynamics365/fin-ops-core/dev-itpro/).
+To use the DTS Visual Studio extension, you must have access to Microsoft Dynamics Lifecycle Services (LCS). Additionally, the extension is intended primarily to support the development workflow for Finance and Operations apps in Visual Studio. For more information, see [Development and administration for Finance and Operations apps](/dynamics365/fin-ops-core/dev-itpro/). 
 
 ## Installing the extension
 
@@ -124,7 +124,7 @@ On the **Tools** menu, select **Dynamics 365 Translation Services**, and then se
 
 ![Align with DTS dialog box.](media/dts-vs-alignment.png)
 
-When you've finished configuring the alignment request, select **Submit** to send it to DTS. You will be notified that the process has started.
+When you have finished configuring the alignment request, select **Submit** to send it to DTS. You will be notified that the process has started.
 
 ![Align with DTS dialog box.](media/dts-vs-alignmentinprocess.png)
 
