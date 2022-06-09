@@ -151,7 +151,7 @@ The table also lists features that were previously in public preview, but have c
 | Warehouse management | [Deferred processing of manual inventory movement operation](../warehousing/deferred-processing-manual-inventory-movement.md) | Mandatory |
 | Warehouse management | Do not allow to create loads, that do not meet wave load building template requirements | Mandatory |
 | Warehouse management | [Enhanced license plate label layouts](../warehousing/document-routing-layout-for-license-plates.md) | Mandatory |
-| Warehouse management | [Evaluate all actions for Multi SKU location directives](../troubleshooting/warehousing/evaluate-multiple-location-directive-actions.md) | Mandatory |
+| Warehouse management | [Evaluate all actions for Multi SKU location directives](/troubleshoot/dynamics-365/supply-chain/warehousing/evaluate-multiple-location-directive-actions) | Mandatory |
 | Warehouse management | Hide the Total Value field on the "All Loads" and "Load Details" pages | Mandatory |
 | Warehouse management | License plate label build configuration | Mandatory |
 | Warehouse management | Load line manual correction for admin or similar trusted users | Mandatory |
