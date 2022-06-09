@@ -75,11 +75,10 @@ For general setup information, see [EU Sales list reporting](https://docs.micros
 ### Import Electronic reporting configurations
 
 In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index), import the latest versions of the following Electronic reporting (ER) configurations for the EU sales list:
-
-    -   EU Sales list model
-    -   EU Sales list by columns report
-    -   EU Sales list by rows report
-    -   EU Sales list (HU)
+-   EU Sales list model
+-   EU Sales list by columns report
+-   EU Sales list by rows report
+-   EU Sales list (HU)
 
 For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
