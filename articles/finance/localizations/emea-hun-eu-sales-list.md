@@ -1,7 +1,35 @@
+---
+# required metadata
+title: EU Sales list for Hungary
+description: This article provides information about the European Union (EU) sales list report for Hungary.
+author: AKroshkina
+ms.date: 06/09/2022
+ms.topic: article
+ms.prod: 
+ms.technology: 
+
+# optional metadata
+
+#ms.search.form:
+audience: IT Pro, Application User
+# ms.devlang: 
+ms.reviewer: kfend
+# ms.suite: 
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: 
+# ms.search.industry: 
+ms.author: anasyash
+ms.dyn365.ops.version: 
+ms.search.validFrom: 
+---
+
+# EU Sales list for Hungary
+
 This topic provides information about the European Union (EU) sales list report for Hungary. The Hungarian EU sales list report contains information about purchases and sales of goods and services for reporting in XML format. The following fields are included on the Hungarian EU sales list report:
 
 -   **EU sales list header:**
--   Company's tax registration number
+    -   Company's tax registration number
     -   Reporting period
     -   Company name
     -   Company postcode
@@ -16,7 +44,7 @@ This topic provides information about the European Union (EU) sales list report 
     -   Number of lines for the sale of services
     -   Number of lines for the purchase of services
 -   **EU sales list lines:**
--   Page and line number
+    -   Page and line number
     -   Customer/vendor VAT ID
     -   Line amount in thousands
     -   Total amount of the section in thousands
@@ -25,7 +53,8 @@ This topic provides information about the European Union (EU) sales list report 
 
 For general setup information, see [EU Sales list reporting](https://docs.microsoft.com/dynamics365/finance/localizations/emea-eu-sales-list#prerequisites).
 
-[!NOTE] The value from the **Tax registration number** field o the **Tax registration** FastTab of the **Legal entities** page will be used in the .xml and .xlsx files for the EU sales list report.
+> [!NOTE] 
+> The value from the **Tax registration number** field o the **Tax registration** FastTab of the **Legal entities** page will be used in the .xml and .xlsx files for the EU sales list report.
 
 **Set up the address format**
 
@@ -47,12 +76,12 @@ For general setup information, see [EU Sales list reporting](https://docs.micros
 
 In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index), import the latest versions of the following Electronic reporting (ER) configurations for the EU sales list:
 
--   EU Sales list model
+    -   EU Sales list model
     -   EU Sales list by columns report
     -   EU Sales list by rows report
     -   EU Sales list (HU)
 
-For more information, see Download Electronic reporting configurations from Lifecycle Services.
+For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 ### Set up foreign trade parameters
 
@@ -62,20 +91,21 @@ For more information, see Download Electronic reporting configurations from Life
 4.  In the **Report format mapping** field, select **EU Sales list by rows report** or **EU Sales list by columns report**.
 5.  On the **Other** FastTab, in the **Filled by** field, select the person who is submitting the report.
 6.  On the **Country/region properties** tab, select **New**, and specify the following information:
--   In the **Country/region** column, select **HUN**.
+    -   In the **Country/region** column, select **HUN**.
     -   In the **Country/region type** column, select **Domestic**.
-1.  List all the countries or regions that your company does business with. For each country that is part of the EU, in the **Country/region type** field, select **EU**.
-2.  On the **Company information** FastTab, set the following fields:
--   In the **Legal entity** field, select your company.
+7.  List all the countries or regions that your company does business with. For each country that is part of the EU, in the **Country/region type** field, select **EU**.
+8.  On the **Company information** FastTab, set the following fields:
+    -   In the **Legal entity** field, select your company.
     -   In the **Legal entity address** field, select the address that you created earlier.
     -   In the **Building number**, **Stairway number**, **Floor number**, and **Door number** fields, enter the appropriate values.
-1.  On the Action Pane, select **Save**.
+9.  On the Action Pane, select **Save**.
 
 ## Work with the EU sales list
 
 For general information about which types of transactions are included in the EU sales list, how to generate the EU sales list report, and how to close the EU sales list reporting period, see [EU Sales list reporting](https://docs.microsoft.com/dynamics365/finance/localizations/emea-eu-sales-list#working-with-the-esl).
 
-[!NOTE] When you create a customer or vendor invoice, in addition using to the main codes in the **List code** field, you can use the **Triangular/intermediate role** code for purchase and sale items. On the EU sales list report, the field that has the **DA** postfix will be set to **B** for sale items if the **List code** field is set to **Triangular/intermediate role** for purchase and sale items. It will be set to **C** if the **List code** field is set to **Triangular/Prod. on toll** or **Triangular/EU trade** for purchase items.
+> [!NOTE] 
+> When you create a customer or vendor invoice, in addition using to the main codes in the **List code** field, you can use the **Triangular/intermediate role** code for purchase and sale items. On the EU sales list report, the field that has the **DA** postfix will be set to **B** for sale items if the **List code** field is set to **Triangular/intermediate role** for purchase and sale items. It will be set to **C** if the **List code** field is set to **Triangular/Prod. on toll** or **Triangular/EU trade** for purchase items.
 
 ### Generate the EU sales list report
 
@@ -99,11 +129,12 @@ For general information about which types of transactions are included in the EU
 1.  Optional: To create correction files, apply a filter on the **Records to include** FastTab to show only corrective lines.
 2.  Select **OK**, and review the generated reports.
 
-[!NOTE] The maximum number of lines per page is 24.
+> [!NOTE]
+> The maximum number of lines per page is 24.
 
 ## Example
 
-For information about how to create a general setup, create postings, and transfer transactions by using the **DEMF** legal entity for Hungary, see Example for generic EU Sales list. However, for the example in this topic, create **HU00088000** as the company's VAT ID.
+For information about how to create a general setup, create postings, and transfer transactions by using the **DEMF** legal entity for Hungary, see [Example for generic EU Sales list](emea-eu-sales-list-example.md). However, for the example in this topic, create **HU00088000** as the company's VAT ID.
 
 For information about how to do the setup for purchases and create vendor invoices, see [Set up purchase transfers](https://docs.microsoft.com/dynamics365/finance/localizations/emea-eu-sales-list-example#set-up-purchase-transfers).
 
@@ -138,7 +169,7 @@ Additionally, for the example in this topic, create a vendor invoice where the a
 | City                | Gorod           |
 | Primary             | Yes             |
 
-1.  Select **OK**.
+6.  Select **OK**.
 
 **Set up the person who submits the report**
 
@@ -146,21 +177,21 @@ Additionally, for the example in this topic, create a vendor invoice where the a
 2.  On the **EU sales list** tab, on the **Other** FastTab, in the **Filled by** field, select **Jodi Christiansen**.
 3.  On the **Company information** FastTab, set the following fields:
     -   In the **Legal entity** field, select **DEMF**.
-        -   In the **Legal entity address** field, select the company address that you created earlier.
+    -   In the **Legal entity address** field, select the company address that you created earlier.
         -   In the **Building number** field, enter **5**.
         -   In the **Stairway number** field, enter **1**.
         -   In the **Floor number** field, enter **2**.
         -   In the **Door number** field, enter **3**.
-1.  On the Action Pane, select **Save**.
+4.  On the Action Pane, select **Save**.
 
 **Create an EU sales list report**
 
 1.  Go to **Tax** \> **Declarations** \> **Foreign trade** \> **EU sales list**.
 2.  On the Action Pane, select **Reporting**.
 3.  In the **EU sales list reporting** dialog box, on the **Parameters** FastTab, set the following fields:
--   In the **Reporting period** field, select **Monthly**.
+    -   In the **Reporting period** field, select **Monthly**.
     -   In the **From date** field, select **8/1/2021** (August 1, 2021).
-1.  Select **OK**, and review the report in XML format that is generated. The following tables show the values on the example report.
+4.  Select **OK**, and review the report in XML format that is generated. The following tables show the values on the example report.
 
 **EU sales list header**
 
@@ -207,6 +238,6 @@ Additionally, for the example in this topic, create a vendor invoice where the a
 | C0001DA (where **0001** is the line number in the section) |                                      |                                      | This field exists only for purchase and sale items. For purchase and sale items, this field is set to **B** if the **List code** field is set to **Triangular/intermediate role**. It's set to **C** if the **List code** field is set to **Triangular/Prod. on toll**.     |
 | C0025CA                                                    | 120                                  | 240                                  | The total amount of the section in thousands.                                                                                                                                                                                                                               |
 
-1.  Review the report in Excel format that is generated.
+5.  Review the report in Excel format that is generated.
 
-![Scatter chart Description automatically generated with medium confidence](media/2d9f41f837bf2162aa960dfb526da40e.png)
+![EU sales list for Hungary](media/EUSL-hun.png)
