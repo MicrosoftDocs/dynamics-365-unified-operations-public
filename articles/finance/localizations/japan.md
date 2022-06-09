@@ -3,8 +3,8 @@
 
 title: Japan overview
 description: This article provides an overview of functionality specific to Japan.
-author: ShylaThompson
-ms.date: 07/25/2019
+author: kfend
+ms.date: 06/09/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 
