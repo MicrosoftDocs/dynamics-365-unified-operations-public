@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create questionnaires
-description: This topic describes the process for creating a questionnaire. 
+description: This article describes the process for creating a questionnaire. 
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form: KCMCollectionType, KMAnswerCollection, KMCollection, HcmLearning
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 17341
 ms.assetid: b27e2f12-c7a0-4a54-b8d8-17819f8a1c72
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This topic describes the process for creating a questionnaire. The first step is to design the questionnaire. When you design a questionnaire, you not only write the questions and answers, but also create the structure that enables answers to be recorded and tabulated. 
+This article describes the process for creating a questionnaire. The first step is to design the questionnaire. When you design a questionnaire, you not only write the questions and answers, but also create the structure that enables answers to be recorded and tabulated. 
 
 A carefully designed questionnaire can help increase the quality of the data that you collect. Through careful design, you can better select the appropriate options at the appropriate time for a questionnaire. The following points can help you plan an effective questionnaire:
 

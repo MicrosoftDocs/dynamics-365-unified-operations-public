@@ -2,7 +2,7 @@
 # required metadata
 
 title: Import a database
-description: This topic explains how to import a database for Finance and Operations apps.
+description: This article explains how to import a database for Finance and Operations apps.
 author: LaneSwenka
 ms.date: 11/01/2021
 ms.topic: article

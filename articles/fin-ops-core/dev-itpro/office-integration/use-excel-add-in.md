@@ -2,9 +2,9 @@
 # required metadata
 
 title: View and update entity data with Excel 
-description: This topic explains how to open entity data in Microsoft Excel, and then view, update, and edit the data by using the Microsoft Dynamics Excel add-in. 
+description: This article explains how to open entity data in Microsoft Excel, and then view, update, and edit the data by using the Microsoft Dynamics Excel add-in. 
 author: jasongre
-ms.date: 10/01/2021
+ms.date: 05/16/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 
-This topic explains how to open entity data in Microsoft Excel, and then view, update, and edit the data by using the Microsoft Dynamics Excel add-in. To open entity data, you can start from either Excel or Finance and Operations apps.
+This article explains how to open entity data in Microsoft Excel, and then view, update, and edit the data by using the Microsoft Dynamics Excel add-in. To open entity data, you can start from either Excel or Finance and Operations apps.
 
 By opening entity data in Excel, you can quickly and easily view and edit the data by using the Excel add-in. This add-in requires Microsoft Excel 2016 or later.
 
@@ -116,7 +116,7 @@ You can use the designer to adjust the columns that are automatically added to t
 5. If you added a field (column), select **Refresh** to pull in an updated set of data.
 
 ## Change the publish batch size
-When users publish changes to data records by using the Excel add-in, the updates are submitted in batches. The default publish batch size is 100 rows. In version 10.0.17 and later, the **Allow configuration of the publish batch size in the Excel add-in** feature gives you flexible control over the publish batch size.
+When users publish changes to data records by using the Excel add-in, the updates are submitted in batches. The default (and maximum) publish batch size is 100 rows; however, the **Allow configuration of the publish batch size in the Excel add-in** feature gives you flexibility in lowering the publish batch size, especially if you are seeing time outs when attempting to publish updates from Excel.
 
 System administrators can specify a system-wide limit on the publish batch size for "Open in Excel" workbooks by setting the **Publish batch limit** field in the **App parameters** section of the **Office app parameters** page.
 

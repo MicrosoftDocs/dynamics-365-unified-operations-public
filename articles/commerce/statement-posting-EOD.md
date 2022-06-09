@@ -2,9 +2,9 @@
 # required metadata
 
 title: Improvements to statement posting functionality
-description: This topic describes improvements that have been made to the statement posting feature.
+description: This article describes improvements that have been made to the statement posting feature.
 author: analpert
-ms.date: 01/31/2022
+ms.date: 05/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -17,7 +17,7 @@ ms.search.validFrom: 2018-04-30
 
 [!include [banner](includes/banner.md)]
 
-This topic describes the first set of improvements that have been made to the statement posting feature. These improvements are available in Microsoft Dynamics 365 for Finance and Operations 7.3.2.
+This article describes the first set of improvements that have been made to the statement posting feature. These improvements are available in Microsoft Dynamics 365 for Finance and Operations 7.3.2.
 
 ## Activation
 
@@ -48,25 +48,6 @@ As part of the improvements to the statement posting feature, three new paramete
 
 > [!NOTE]
 > As of the Commerce version 10.0.14 release, when the **Retail statements - Trickle feed** feature is enabled, the **Post inventory** batch job is no longer applicable and can't be run.
-
-Additionally, the following parameters have been introduced on the **Batch processing** FastTab on the **Posting** tab of the **Commerce parameters** page: 
-
-- **Maximum number of parallel statement posting** – This field defines the number of batch tasks that will be used to post multiple statements. 
-- **Max thread for order processing per statement** – This field represents the maximum number of threads used by the statement posting batch job to create and invoice sales orders for a single statement. The total number of threads that will be used by the statement posting process will be computed based on the value in this parameter multiplied by the value in the **Maximum number of parallel statement posting** parameter. Setting the value of this parameter too high can negatively impact the performance of the statement posting process.
-- **Max transaction lines included in aggregation** – This field defines the number of transaction lines that will be included in a single aggregated transaction before a new one is created. Aggregated transactions are created based on different aggregation criteria such as customer, business date, or financial dimensions. It is important to note that the lines from a single transaction will not be split across different aggregated transactions. This means that there is a possibility that the number of lines in an aggregated transaction is slightly higher or lower based on factors such as number of distinct products.
-- **Maximum number of threads to validate store transactions** – This field defines the number of threads that will be used to validate transactions. Validating transactions is a required step that needs to occur before the transactions can be pulled into the statements. You also need to define a **Gift card product** on the **Gift card** FastTab on the **Posting** tab of the **Commerce parameters** page. This needs to defined even if gift cards are not used by the organization.
-
-The following table lists the recommended values for the preceding parameters. These values should be tested and tailored to the deployment configuration and available infrastructure. Any increase in the recommended values can adversely affect other batch processing and should be validated.
-
-| Parameter | Recommended value | Details |
-|-----------|-------------------|---------|
-| Maximum number of parallel statement posting | <p>Set this parameter to the number of batch tasks that are available for the batch group that is running the **Statement** job.</p><p>**General rule:** Multiply the number of Application Object Server (AOS) virtual servers by the number of batch tasks that are available per AOS virtual server.</p> | This parameter isn't applicable when the **Retail statements - Trickle feed** feature is enabled. |
-| Max thread for order processing per statement | Start to test values at **4**. Typically, the value should not exceed **8**. | This parameter specifies the number of threads that are used to create and post sales orders. It represents the number of threads that are available for posting per statement. |
-| Max transaction lines included in aggregation | Start to test values at **1000**. Depending on the headquarters configuration, smaller orders might be more beneficial to performance. | This parameter determines the number of lines that will be included in each sales order during statement posting. After this number is reached, lines will be split into a new order. Although the number of sales lines won't be exact, because the split occurs at the sales order level, it will be close to the number that is set. This parameter is used to generate sales orders for retail transactions that don't have a named customer. |
-| Maximum number of threads to validate store transactions | We recommend that you set this parameter to **4**, and that you increase it only if you don't attain acceptable performance. The number of threads that this process uses can't exceed the number of processors that are available to the batch server. If you assign too many threads here, you might affect other batch processing. | This parameter controls the number of transactions that can be validated at the same time for a given store. |
-
-> [!NOTE]
-> All settings and parameters that are related to statement postings, and that are defined on stores and on the **Commerce parameters** page, are applicable to the improved statement posting feature.
 
 ## Processing
 
@@ -167,6 +148,9 @@ The aggregated transactions view provides the following benefits:
 - The user has visibility into how transactions are aggregated.
 - The user has a complete audit trail, from transactions, to sales orders, to sales invoices. This audit trail wasn't available in the legacy statement posting feature.
 - Aggregated XML file makes it easier to identify issues during sales order creation and invoicing.
+
+> [!NOTE]
+> When transactions are aggregated, the staff member assigned to the transaction is no longer available to the **Top Staff Sales Report**, meaning that the **Top Staff Sales Report** won't show all transactions. We recommend that you don't use the **Top Staff Sales Report** with aggregated transactions.
 
 ### Journal vouchers
 

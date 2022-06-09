@@ -15,7 +15,7 @@ ms.search.form: AuditPolicyAdditionalOption, AuditPolicyRule
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 12991
 ms.assetid: 8d787017-71dc-418f-b8c2-4ea9763d9978

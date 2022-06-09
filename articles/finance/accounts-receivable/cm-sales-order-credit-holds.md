@@ -2,7 +2,7 @@
 # required metadata
 
 title: Credit holds for sales orders
-description: This topic describes the setup of rules used to place a sales order on credit hold. 
+description: This article describes the setup of rules used to place a sales order on credit hold. 
 author: JodiChristiansen
 ms.date: 07/20/2021
 ms.topic: article
@@ -15,13 +15,13 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschloma
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version:
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes the setup of rules used to place a sales order on credit hold. The credit management blocking rules can apply to an individual customer, or a group of customers. Blocking rules define responses to the following circumstances:
+This article describes the setup of rules used to place a sales order on credit hold. The credit management blocking rules can apply to an individual customer, or a group of customers. Blocking rules define responses to the following circumstances:
 
 1. Number of days overdue
 2. Accounts status
@@ -41,7 +41,7 @@ This topic describes the setup of rules used to place a sales order on credit ho
 6. Sales order amount
 7. Portion of available credit used
 
-In addition, there are two parameters that control additional scenarios that will block a sales order
+In addition, there are two parameters that control additional scenarios that will block a sales order:
 
 1. Change in payment terms
 2. Change in settlement discounts

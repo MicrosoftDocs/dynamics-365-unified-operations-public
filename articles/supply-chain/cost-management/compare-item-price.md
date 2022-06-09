@@ -3,7 +3,7 @@
 
 title: Compare item prices storage report
 description: Learn how to generate a Compare item prices storage report and then browse and/or export the result.
-author: AndersGirke
+author: JennySong-SH
 ms.date: 01/30/2020
 ms.topic: article
 ms.prod:
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: aevengir
+ms.author: yanansong
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: 10.0.9
 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.9
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to run a **Compare item prices storage** report and make the output available digitally, either as an interactive page in Dynamics 365 Supply Chain Management, or as an exported document in any of several formats.
+This article explains how to run a **Compare item prices storage** report and make the output available digitally, either as an interactive page in Dynamics 365 Supply Chain Management, or as an exported document in any of several formats.
 
 When you view the report in your browser, columns and aggregate balances are dynamically adjusted, depending on your configured layout. You can sort the results, filter them, drill down into the data, and more.
 

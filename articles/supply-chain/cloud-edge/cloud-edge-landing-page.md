@@ -1,14 +1,14 @@
 ---
 title: Scale units in a distributed hybrid topology
-description: This topic provides information about cloud and edge scale units for manufacturing and warehouse management workloads.
-author: cabeln
+description: This article provides information about cloud and edge scale units for manufacturing and warehouse management workloads.
+author: Mirzaab
 ms.date: 04/22/2021
 ms.topic: article
 ms.search.form: ScaleUnitWorkloadsWorkspace
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: cabeln
+ms.author: mirzaab
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
 ---
@@ -20,7 +20,7 @@ ms.dyn365.ops.version: 10.0.19
 > [!IMPORTANT]
 > The scale unit capability for Microsoft Dynamics 365 Supply Chain Management is made available to you under the terms that govern the use of the service. For more information, see [Microsoft Dynamics Legal Information](https://go.microsoft.com/fwlink/?LinkID=290927).
 >
-> When you enable cloud and edge scale units, you will be asked to affirm that you understand that some data that is related to the configuration and processing of cloud and edge scale units might be stored in a data center that is located in the United States. To learn more about data processing for cloud and edge scale units, see the [Data processing during management of scale units](#data-processing-management) section later in this topic.
+> When you enable cloud and edge scale units, you will be asked to affirm that you understand that some data that is related to the configuration and processing of cloud and edge scale units might be stored in a data center that is located in the United States. To learn more about data processing for cloud and edge scale units, see the [Data processing during management of scale units](#data-processing-management) section later in this article.
 
 ## Core value proposition for a distributed hybrid topology
 
@@ -43,7 +43,7 @@ Scale units provide resilience, reliability, and scale for the assigned workload
 
 A *workload* is a defined set of business functionality that can be factored out and delegated to a scale unit. Although the workload for warehouse management has been released, the workload for manufacturing execution is still in preview.
 
-You can configure your hub environment and cloud scale units for selected workloads by using the [Scale Unit Manager portal](https://sum.dynamics.com). You can also assign multiple workloads per scale unit. For information about the prerequisites and limitations for cloud scale units in the current release, see the [Prerequisites and limitations for cloud scale units](#cloud-scale-unit-prerequisites) section later in this topic.
+You can configure your hub environment and cloud scale units for selected workloads by using the [Scale Unit Manager portal](https://sum.dynamics.com). You can also assign multiple workloads per scale unit. For information about the prerequisites and limitations for cloud scale units in the current release, see the [Prerequisites and limitations for cloud scale units](#cloud-scale-unit-prerequisites) section later in this article.
 
 ### Dedicated warehouse management workload capabilities in a scale unit
 

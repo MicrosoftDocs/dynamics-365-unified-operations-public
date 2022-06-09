@@ -2,7 +2,7 @@
 # required metadata
 
 title: Milestone templates
-description: This topic explains how to set up the milestone billing funcationality in Subscription billing. 
+description: This article explains how to set up the milestone billing funcationality in Subscription billing. 
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -16,7 +16,7 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: Core, Operations
+
 # ms.tgt_pltfrm: 
 ms.custom: 539093
 ms.search.region: Global
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.24
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to define templates for the milestone billing functionality in Subscription billing. For each line in the milestone template, you can define the allocation percentage or amount. You can then assign the milestone template to billing schedule items that use the milestone billing functionality.
+This article explains how to define templates for the milestone billing functionality in Subscription billing. For each line in the milestone template, you can define the allocation percentage or amount. You can then assign the milestone template to billing schedule items that use the milestone billing functionality.
 
 ## Add a template
 

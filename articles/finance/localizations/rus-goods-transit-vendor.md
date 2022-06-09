@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Goods in transit from vendor
-description: This topic provides information about the settings and actions that are required for the Counting act for goods in transit (INV-6) report.
+description: This article provides information about the settings and actions that are required for the Counting act for goods in transit (INV-6) report.
 author: anasyash
 ms.date: 05/20/2020
 ms.topic: article

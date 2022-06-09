@@ -2,7 +2,7 @@
 # required metadata
 
 title: Model management lifecycle
-description: This topic describes ways to maintain your organization's machine learning models to optimize the predictions that they generate.
+description: This article describes ways to maintain your organization's machine learning models to optimize the predictions that they generate.
 author: ShivamPandey-msft
 ms.date: 07/16/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 10.0.8
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes ways to maintain your organization's machine learning models to optimize the predictions that they generate.
+This article describes ways to maintain your organization's machine learning models to optimize the predictions that they generate.
 
 We recommend that you train the AI model in a sandbox environment and then use managed solutions to deploy it to a production environment. This approach helps ensure that the correct controls are in place for managing the model lifecycle.
 

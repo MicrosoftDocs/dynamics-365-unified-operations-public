@@ -1,6 +1,6 @@
 ---
 title: Attributes that make methods extensible
-description: This topic provides information about attributes that make methods extensible.
+description: This article provides information about attributes that make methods extensible.
 author: MichaelFruergaardPontoppidan
 ms.date: 03/11/2019
 ms.topic: article
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Platform update 20
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the various attributes that can be used to control extensibility capabilities for methods.
+This article describes the various attributes that can be used to control extensibility capabilities for methods.
 
 The following table provides an overview of the default support for extensibility and accessibility on methods. The table also provides guidance on the method signature changes.
 

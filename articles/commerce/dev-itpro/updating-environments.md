@@ -2,7 +2,7 @@
 # required metadata
 
 title: Update code and environments for Commerce projects
-description: This topic describes recommended practices for updating code and environments for Microsoft Dynamics 365 Commerce implementation projects.
+description: This article describes recommended practices for updating code and environments for Microsoft Dynamics 365 Commerce implementation projects.
 author: andreashofmann1
 ms.date: 07/09/2018
 ms.topic: article
@@ -16,7 +16,7 @@ audience: IT Pro
 # ms.devlang: 
 ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: andreash
@@ -56,7 +56,7 @@ Third-party packages resemble application packages, but they are developed by ot
 
 In one useful and typical operation, the whole database is moved from one environment to another. For example, you might move the production database to development environments when you're preparing to develop additional features. Alternatively, you might move the golden setup database to the production database as part of the go-live process.
 
-For more details, see [Copy Database From Azure SQL to SQL Server](/dynamics365/commerce/dev-itpro/dbmovement-operations). If source and destination environments don't have the same binary version, you should also do either a build and a database synchronization (for a development environment), or a deployment (for a sandbox or production environment).
+For more details, see [Copy Database From Azure SQL to SQL Server](/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-operations). If source and destination environments don't have the same binary version, you should also do either a build and a database synchronization (for a development environment), or a deployment (for a sandbox or production environment).
 
 Every time that a database that has been moved from a different environment is restored, specific links in the database can be broken. The Environment reprovisioning tool fixes all these broken links for the default database group, regardless of type of environment that is used. The general guideline is that if the database comes from a different environment, the Environment reprovisioning tool must be run.
 
@@ -132,7 +132,7 @@ Finally, deploy the packages to your test environments.
 
 When all the required tests are passed, you're ready to deploy the same packages to production. After the packages have been deployed and validated in a Tier 2 or higher environment, you must mark them as Release Candidates in the LCS Asset library. You must then plan the deployment and submit it via the LCS environment page.
 
-There are many considerations when you update a production environment, such as downtime, downtime mitigation, data migration, store updates, and mass deployment. It's very important that you have a plan of all the steps that are required for an update, because Commerce projects usually require more than just deployment. For some additional considerations, see the "Tips" section of this topic.
+There are many considerations when you update a production environment, such as downtime, downtime mitigation, data migration, store updates, and mass deployment. It's very important that you have a plan of all the steps that are required for an update, because Commerce projects usually require more than just deployment. For some additional considerations, see the "Tips" section of this article.
 
 It's assumed that the planning for go-live was started much earlier. For more details, see [Implementation lifecycle](../../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md).
 

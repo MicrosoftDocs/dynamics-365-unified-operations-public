@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Process collection letters example
-description: This topic goes through an example that shows the process of creating, printing, and posting collection letters. 
+description: This article goes through an example that shows the process of creating, printing, and posting collection letters. 
 author: JodiChristiansen
 ms.date: 02/03/2021
 ms.topic: business-process 
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: CustPosting, CustCollectionLetterNote
 audience: Application User 
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.16
 
 [!include [banner](../../includes/banner.md)]
 
-This topic goes through an example that shows the process of creating, printing, and posting collection letters. The example is based on the **Ignore payments and credit memos when calculating collection letter code** option in Credit and collections. It uses data in the USMF demo company and a new customer, US-045.
+This article goes through an example that shows the process of creating, printing, and posting collection letters. The example is based on the **Ignore payments and credit memos when calculating collection letter code** option in Credit and collections. It uses data in the USMF demo company and a new customer, US-045.
 
 To begin, go to **Accounts receivable \> Customers \> All customers**, select **New**, and then enter the required information to create customer US-045.
 

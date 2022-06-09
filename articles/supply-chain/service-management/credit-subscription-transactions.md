@@ -2,8 +2,8 @@
 # required metadata
 
 title: Credit subscription transactions  
-description: This topic shows how to credit subscription transactions.
-author: kamaybac
+description: This article shows how to credit subscription transactions.
+author: sorenva
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kamaybac
+ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

@@ -2,8 +2,8 @@
 # required metadata
 
 title: Requests for quotation (RFQs) overview
-description: This topic provides an overview of requests for quotation (RFQs). Organizations issue RFQs when they want to receive competitive offers from several vendors for the items or services that they must purchase.
-author: Henrikan
+description: This article provides an overview of requests for quotation (RFQs). Organizations issue RFQs when they want to receive competitive offers from several vendors for the items or services that they must purchase.
+author: GalynaFedorova
 ms.date: 10/05/2020
 ms.topic: overview
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: ["2154", "intro-internal"]
 ms.assetid: 3936996e-d943-46ca-8385-84c042990f1d
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of requests for quotation (RFQs). Organizations
+This article provides an overview of requests for quotation (RFQs). Organizations
 issue RFQs when they want to receive competitive offers from several vendors for
 the items or services that they must purchase. In an RFQ, you ask vendors to
 provide the prices and delivery times for the item quantities that you specify.
@@ -62,7 +62,7 @@ RFQ journal for each vendor to generate a report that you can send or resend to
 the vendor later. You can also configure the Send action so that it generates a
 reply sheet that the vendor can fill in.
 
-This topic covers the process for handling RFQs when vendor collaboration isn't
+This article covers the process for handling RFQs when vendor collaboration isn't
 used. If your system is set up for vendor collaboration, vendors can enter bids
 directly in Supply Chain Management. For more
 information, see [Vendor collaboration with
@@ -105,7 +105,7 @@ lines on the RFQ case, all of them are **Sent** for one RFQ and **Received** for
 another RFQ. The lowest status will then be **Sent,** and the highest status is
 **Received.**
 
-These statuses will be described in more detail later in this topic.
+These statuses will be described in more detail later in this article.
 
 ## Setting up RFQ functionality
 

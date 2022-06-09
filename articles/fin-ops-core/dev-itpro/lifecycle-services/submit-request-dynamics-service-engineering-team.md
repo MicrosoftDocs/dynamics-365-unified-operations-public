@@ -2,7 +2,7 @@
 # required metadata
 
 title: Submit service requests to the Dynamics Service Engineering team
-description: This topic explains how you can submit service requests directly to the Dynamics Service Engineering team by using Microsoft Dynamics Lifecycle Services (LCS).
+description: This article explains how you can submit service requests directly to the Dynamics Service Engineering team by using Microsoft Dynamics Lifecycle Services (LCS).
 author: laneswenka
 ms.date: 04/15/2021
 ms.topic: article
@@ -36,7 +36,7 @@ A service request is a ticket that you use to request that the Dynamics Service 
 > [!NOTE]
 > Service requests are only required for environments that are **Microsoft-managed**. Most environments are self-service. For more information about environment types, see [Cloud deployment overview](../deployment/cloud-deployment-overview.md).
 
-> Do not use service requests for product issues. If you encounter a situation that doesn't fit into any of the tasks that are described in this topic, submit a support ticket instead. For more information about support tickets, see [Get support for Finance and Operations apps or Lifecycle Services (LCS)](lcs-support.md).
+> Do not use service requests for product issues. If you encounter a situation that doesn't fit into any of the tasks that are described in this article, submit a support ticket instead. For more information about support tickets, see [Get support for Finance and Operations apps or Lifecycle Services (LCS)](lcs-support.md).
 
 You can use Microsoft Dynamics Lifecycle Services (LCS) to submit service requests directly to the DSE team. You can also view which requests have been submitted, executed, and canceled for your environments.
 
@@ -61,7 +61,7 @@ After you submit a request, it has a status of **Requested**. Before the DSE tea
 
 If you signed up for LCS notifications, you receive an email when the status of a service request changes or a comment is entered.
 
-If you submit a service request to the DSE team, and the action is outside the team's scope, the service request will be denied. In this case, the reason for the denial and suggestions for further action are provided. For some typical examples of service requests that the DSE team will deny, see the "Denied service requests" section later in this topic.
+If you submit a service request to the DSE team, and the action is outside the team's scope, the service request will be denied. In this case, the reason for the denial and suggestions for further action are provided. For some typical examples of service requests that the DSE team will deny, see the "Denied service requests" section later in this article.
 
 ## Create service requests
 

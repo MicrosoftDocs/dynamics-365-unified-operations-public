@@ -2,7 +2,7 @@
 # required metadata
 
 title: Dynamics 365 Commerce evaluation environment overview
-description: This topic gives an overview of the Microsoft Dynamics 365 Commerce evaluation environment.
+description: This article gives an overview of the Microsoft Dynamics 365 Commerce evaluation environment.
 author: v-chgri
 ms.date: 07/16/2020
 ms.topic: overview
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic gives an overview of the Microsoft Dynamics 365 Commerce evaluation environment.
+This article gives an overview of the Microsoft Dynamics 365 Commerce evaluation environment.
 
 > [!NOTE]
 > Commerce evaluation environments aren't generally available, and are granted to partners and customers on a per-request basis. For more information, reach out to your Microsoft partner contact.

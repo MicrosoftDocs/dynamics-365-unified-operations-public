@@ -1,14 +1,14 @@
 ---
 title: Integrate with third-party manufacturing execution systems
-description: This topic explains how you can integrate Microsoft Dynamics 365 Supply Chain Management with a third-party manufacturing execution system (MES).
-author: t-benebo
+description: This article explains how you can integrate Microsoft Dynamics 365 Supply Chain Management with a third-party manufacturing execution system (MES).
+author: johanhoffmann
 ms.date: 10/01/2021
 ms.topic: article
 ms.search.form:
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: benebotg
+ms.author: johanho
 ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
 ---
@@ -233,7 +233,7 @@ For the *end production order* message, the `_messageType` value is `ProdProduct
 
 ## Other production information
 
-The messages support actions or events that happen on the shop floor. They are processed using the MES integration framework described in this topic. The design assumes that other reference information to be shared with the MES (such as product-related information, or the bill of materials or route (with its specific setup and configuration times) used in a specific production order) will be retrieved from the system using [data entities](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#data-entities) via file transfer or OData.
+The messages support actions or events that happen on the shop floor. They are processed using the MES integration framework described in this article. The design assumes that other reference information to be shared with the MES (such as product-related information, or the bill of materials or route (with its specific setup and configuration times) used in a specific production order) will be retrieved from the system using [data entities](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#data-entities) via file transfer or OData.
 
 ## Receive feedback about the state of a message
 
@@ -246,7 +246,7 @@ After the MES has sent a message to Supply Chain Management, it might be relevan
 
 In these cases, you can take advantage of the standard alert feature in Supply Chain Management. For information about how standard alerts work, see the following resources:
 
-- Help topic: [Alerts overview](../../fin-ops-core/fin-ops/get-started/alerts-overview.md)
+- Help article: [Alerts overview](../../fin-ops-core/fin-ops/get-started/alerts-overview.md)
 - Video: [Alert rule options in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=cpzimwOjicM&ab_channel=MicrosoftDynamics365)
 
 For example, you might set up the following alerts to provide feedback about the state of a message:

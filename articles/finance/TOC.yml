@@ -12,6 +12,10 @@
         items:
         - name: What's new or changed in Finance home page
           href: get-started/whats-new-home-page.md
+        - name: Finance 10.0.28 (August)
+          href: get-started/whats-new-changed-10-0-28.md
+        - name: Finance 10.0.27 (July)
+          href: get-started/whats-new-changed-10-0-27.md
         - name: Finance 10.0.26 (May)
           href: get-started/whats-new-changed-10-0-26.md
         - name: Finance 10.0.25 (April)
@@ -56,6 +60,8 @@
           href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/finance/toc.json
         - name: Configure service updates
           href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/finance/toc.json
+        - name: Pre-servicing and post-servicing
+          href: ../fin-ops-core/dev-itpro/lifecycle-services/pre-post-servicing.md?toc=/dynamics365/finance/toc.json
         - name: Pause service updates
           href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?toc=/dynamics365/finance/toc.json
         - name: Get notified about service updates
@@ -84,8 +90,6 @@
           href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/finance/toc.json
         - name: Buy Finance + Operations (on-premises)
           href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/finance/toc.json
-        - name: Configure Warehousing for on-premises deployments
-          href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/finance/toc.json
       - name: Documentation resources
         items:
         - name: Help system
@@ -258,6 +262,8 @@
         href: accounts-payable/positive-pay-overview.md
       - name: Set up and generate positive pay files
         href: accounts-payable/set-up-generate-positive-pay-files.md
+      - name: Set up and generate positive pay files using Electronic reporting
+        href: accounts-payable/set-up-positive-pay-ER.md
       - name: Default offset accounts for vendor invoice journals and invoice approval journals
         href: accounts-payable/default-offset-accounts-vendor-invoice-journals.md
       - name: Vendor workflow
@@ -268,8 +274,12 @@
           href: accounts-payable/resolve-invoice-totals-invoice-matching-discrepancies.md
         - name: Research or resolve exceptions
           href: accounts-payable/tasks/research-resolve-exceptions.md
+      - name: Accounts payable posting
+        href: general-ledger/accts-payble-posting.md
       - name: Vendor posting profiles
         href: accounts-payable/vendor-posting-profiles.md
+      - name: Create charges codes
+        href: accounts-receivable/create-charges-codes.md
       - name: Vendor invoice dates
         href: accounts-payable/vendor-invoice-dates.md
       - name: Foreign currency revaluation for Accounts payable and Accounts receivable
@@ -290,6 +300,8 @@
         items:
         - name: Centralized payments for Accounts payable
           href: accounts-payable/centralized-payments-accounts-payable.md
+        - name: Set up and process bridged payments
+          href: accounts-receivable/set-up-and-process-bridged-payments.md
         - name: Configure settlement
           href: cash-bank-management/configure-settlement.md
         - name: Settle remainder
@@ -342,8 +354,12 @@
         href: accounts-receivable/tasks/establish-customer-payment-fees.md
       - name: Customer payment insights (preview)
         href: accounts-receivable/payment-insights-overview.md
+      - name: Accounts receivable posting
+        href: general-ledger/accts-recvble-posting.md 
       - name: Customer posting profiles
         href: accounts-receivable/customer-posting-profiles.md
+      - name: Create charges codes
+        href: accounts-receivable/create-charges-codes.md
       - name: Copy customers by using shared number sequences
         href: accounts-receivable/copy-customer.md
       - name: Customer workflow
@@ -352,8 +368,12 @@
         href: accounts-receivable/set-up-process-recurring-invoices.md
       - name: Accounting distributions and subledger journal entries for free text invoices
         href: accounts-receivable/accounting-distributions-subledger-journal-entries-free-text-invoices.md
+      - name: Accounts receivable posting
+        href: general-ledger/accts-recvble-posting.md
       - name: Customer posting profiles
         href: accounts-receivable/customer-posting-profiles.md
+      - name: Create charges codes
+        href: accounts-receivable/create-charges-codes.md
       - name: SEPA direct debit overview
         href: accounts-receivable/sepa-direct-debit-overview.md
       - name: Set up SEPA direct debit mandate
@@ -412,6 +432,8 @@
           href: accounts-receivable/subscription-billing-summary.md
         - name: Recurring contract billing
           items:
+          - name: Set up recurring contact billing
+            href: accounts-receivable/sb-recur-bill-parameters.md
           - name: Create billing schedules
             href: accounts-receivable/sb-billing-schedules.md
           - name: Copy a billing schedule
@@ -420,22 +442,30 @@
             href: accounts-receivable/sb-schedule-billing-features.md
           - name: Milestone billing
             href: accounts-receivable/sb-milestonebilling.md
+          - name: Revenue allocation
+            href: accounts-receivable/sb-rev-allocation.md
           - name: Support and renewal process
             href: accounts-receivable/sb-support-renewals.md
+          - name: Unbilled revenue
+            href: accounts-receivable/sb-unbilled-revenue.md
           - name: Consumer price index schedules
             href: accounts-receivable/cpischedules.md
           - name: Terminate billing schedules
             href: accounts-receivable/terminate-billing-schedule.md
+          - name: Alignment date scenarios
+            href: accounts-receivable/sb-alignment-date-examples.md
+          - name: Revenue split
+            href: accounts-receivable/sb-revenue-split.md
+          - name: Periodic tasks
+            href: accounts-receivable/sb-periodic-tasks.md
         - name: Revenue and expense deferrals
           items:
           - name: Set up revenue and expense deferrals
             href: accounts-receivable/sb-deferrals.md
-          - name: Deferral schedules
-            items:
-            - name: Create deferral schedules
-              href: accounts-receivable/sb-deferrals-schedules.md
-            - name: Deferral default transactions
-              href: accounts-receivable/sb-deferral-transactions.md
+          - name: Create deferral schedules
+            href: accounts-receivable/sb-deferrals-schedules.md
+          - name: Deferral default transactions
+            href: accounts-receivable/sb-deferral-transactions.md
         - name: Multi-element revenue allocation
           items:
           - name: Set up multiple element revenue allocation
@@ -444,10 +474,14 @@
         items:
         - name: Customer payment overview
           href: cash-bank-management/tasks/customer-payment-overview.md
+        - name: Set up and process bridged payments
+          href: accounts-receivable/set-up-and-process-bridged-payments.md
         - name: Centralized payments for Accounts receivable
           href: accounts-receivable/centralized-payments-accounts-receivable.md
         - name: Deposit customer payments
           href: accounts-receivable/tasks/deposit-customer-payments.md
+        - name: Set up and process bridged payments
+          href: accounts-receivable/set-up-and-process-bridged-payments.md          
         - name: SEPA direct debit overview
           href: accounts-receivable/sepa-direct-debit-overview.md
         - name: SEPA direct debit mandate
@@ -644,6 +678,8 @@
           href: cash-bank-management/configure-advanced-bank-reconciliation.md
         - name: Set up the advanced bank reconciliation import process
           href: cash-bank-management/set-up-advanced-bank-reconciliation-import-process.md
+        - name: Set up advanced bank reconciliation import process using Electronic reporting
+          href: accounts-payable/import-bai2-er.md
         - name: Set up bank reconciliation matching rules
           href: cash-bank-management/set-up-bank-reconciliation-matching-rules.md
         - name: Reconcile bank statements by using advanced bank reconciliation
@@ -1018,6 +1054,22 @@
             href: general-ledger/import-currency-exchange-rates.md
           - name: Dual currency
             href: general-ledger/dual-currency.md
+        - name: Posting profiles
+          items:
+          - name: Posting profiles overview
+            href: general-ledger/pstg-prfles-ovrvw.md
+          - name: Recommended practices for posting profiles
+            href: general-ledger/recommended-practices-pstg-prfles.md
+          - name: Accounts for automatic transations
+            href: general-ledger/accounts-for-auto-transactions.md
+          - name: Accounts payable posting
+            href: general-ledger/accts-payble-posting.md
+          - name: Accounts receivable posting
+            href: general-ledger/accts-recvble-posting.md
+          - name: Asset leasing posting
+            href: asset-leasing/set-up-lease-posting-accts.md
+          - name: Fixed asset posting
+            href: fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md 
         - name: Allocation rules
           items:
           - name: Ledger allocation rules
@@ -1266,6 +1318,8 @@
           href: public-sector/accounts-payable-public-sector.md
         - name: Purchase order codes in the public sector
           href: public-sector/purchase-order-codes-public-sector.md
+        - name: Purchase orders and carry-forward budget 
+          href: public-sector/determine-carry-forward-budget.md
         - name: Create and assign a trading partner code in the public sector
           href: public-sector/tasks/create-assign-trading-partner-code-public-sector.md
         - name: Posting definitions in the public sector
@@ -1289,7 +1343,7 @@
       - name: Accounts receivable in the public sector
         items:
         - name: Accounts receivable in the public sector overview
-          href: public-sector/accounts-receivable-public-sector.md
+          href: public-sector/accounts-receivable-public-sector.md         
         - name: Billing classifications and billing codes in the public sector
           href: public-sector/billing-classifications-billing-codes-public-sector.md
         - name: Create a billing classification in the public sector
@@ -1429,7 +1483,7 @@
               - name: Set up Azure resources for Electronic invoicing
                 href: localizations/e-invoicing-set-up-azure-resources.md?toc=/dynamics365/finance/toc.json
               - name: Create an Azure Key Vault in the Azure portal
-                href: localizations/e-invoicing-create-azure-storage-account-azure-portal.md?toc=/dynamics365/finance/toc.json
+                href: localizations/e-invoicing-create-azure-key-vault-azure-portal.md?toc=/dynamics365/finance/toc.json
               - name: Create an Azure storage account in the Azure portal
                 href: localizations/e-invoicing-create-azure-storage-account-azure-portal.md
               - name: Configure a SharePoint connection
@@ -1460,6 +1514,8 @@
               href: localizations/e-invoicing-complete-publish-deploy-globalization-feature.md?toc=/dynamics365/finance/toc.json
             - name: Share with other organizations
               href: localizations/e-invoicing-share-other-organizations.md?toc=/dynamics365/finance/toc.json
+            - name: Usage management dashboard
+              href: localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/finance/toc.json   
             - name: Process incoming electronic documents
               items: 
               - name: Processing incoming electronic documents
@@ -1468,12 +1524,12 @@
                 href: localizations/e-invoicing-configure-email.md?toc=/dynamics365/finance/toc.json
               - name: Configure a SharePoint channel
                 href: localizations/e-invoicing-configure-sharepoint-channel.md
-            - name: Set up and use Electronic invoicing with Finance and Supply Chain Management
-              items: 
-              - name: Activate and set up integration with Electronic Invoicing
-                href: localizations/e-invoicing-activate-setup-integration.md?toc=/dynamics365/finance/toc.json
-              - name: Set up Electronic Invoicing parameters
-                href: localizations/e-invoicing-set-up-parameters.md?toc=/dynamics365/finance/toc.json
+          - name: Set up and use Electronic invoicing with Finance and Supply Chain Management
+            items: 
+            - name: Activate and set up integration with Electronic Invoicing
+              href: localizations/e-invoicing-activate-setup-integration.md?toc=/dynamics365/finance/toc.json
+            - name: Set up Electronic Invoicing parameters
+              href: localizations/e-invoicing-set-up-parameters.md?toc=/dynamics365/finance/toc.json
             - name: Work with Electronic Invoicing
               items:
               - name: Submit electronic documents to Electronic Invoicing
@@ -1486,12 +1542,6 @@
             items:
             - name: Availability of Electronic Invoicing features
               href: localizations/e-invoicing-country-specific-availability.md?toc=/dynamics365/finance/toc.json
-            - name: Get started with Electronic Invoicing service administration
-              href: localizations/e-invoicing-get-started-service-administration.md?toc=/dynamics365/finance/toc.json
-            - name: Get started with Electronic Invoicing
-              href: localizations/e-invoicing-get-started.md?toc=/dynamics365/finance/toc.json
-            - name: Create a new Electronic invoicing feature
-              href: localizations/e-invoicing-create-new-e-invoicing-feature.md
             - name: Get started with Electronic Invoicing for Brazil
               href: localizations/e-invoicing-bra-get-started.md?toc=/dynamics365/finance/toc.json
             - name: Get started with Electronic Invoicing for Egypt
@@ -1504,10 +1554,6 @@
               href: localizations/e-invoicing-ita-fatturapa-get-started.md
             - name: Use the electronic invoicing service to import vendor invoices
               href: localizations/e-invoicing-get-started-import-vendor-invoices.md
-            - name: Set up Electronic Invoicing
-              href: localizations/e-invoicing-setup.md?toc=/dynamics365/finance/toc.json
-            - name: Power Platform plug-in admin reference
-              href: localizations/e-invoicing-power-platform-plug-in.md
           - name: Electronic Invoicing FAQ
             href: localizations/e-invoicing-faq.md?toc=/dynamics365/finance/toc.json
         - name: Tax Calculation
@@ -1618,6 +1664,12 @@
               href: localizations/tcs-troubleshooting-failed-access-tax-service.md
             - name: Empty tax feature list in Tax calculation parameters
               href: localizations/tcs-troubleshooting-tax-feature-list-empty-tax-calculation-parameter.md
+            - name: Tax code cannot be determined
+              href: localizations/tcs-troubleshooting-tax-code-cannot-be-determined.md
+            - name: No matching result could be found
+              href: localizations/tcs-troubleshooting-no-matching-result.md
+            - name: Enable debug mode in the Tax Calculation service
+              href: localizations/tcs-troubleshooting-enable-debug-mode.md
           - name: Tax Calculation FAQ
             href: localizations/global-tax-calcuation-service-faq.md?toc=/dynamics365/finance/toc.json              
       - name: Tax
@@ -1634,6 +1686,8 @@
             href: general-ledger/sales-tax-calculation-methods-origin-field.md
           - name: Whole amount and interval calculation options for sales tax codes
             href: general-ledger/whole-amount-interval-options-sales-tax-codes.md
+          - name: Sales tax calculation and rounding
+            href: general-ledger/sales-tax-calculation-rounding.md
           - name: Sales tax calculation on general journal lines
             href: general-ledger/sales-tax-calculation-on-general-journal.md          
           - name: Calculate and adjust sales tax on a vendor invoice
@@ -1753,7 +1807,9 @@
         - name: Create and transfer transactions to the BLWI
           href: localizations/tasks/be-00011-create-transfer-blwi.md
         - name: Export ledger transactions
-          href: localizations/emea-bel-export-ledger-transactions.md          
+          href: localizations/emea-bel-export-ledger-transactions.md  
+        - name: EU sales list
+          href: localizations/emea-bel-eu-sales-list.md    
         - name: INTERVAT tax declaration
           href: localizations/emea-bel-intervat-tax-declaration.md
         - name: Reconciliation reports
@@ -1768,6 +1824,8 @@
           href: localizations/emea-bel-annual-vat-listing-of-domestic-sales.md
         - name: Belgium Intrastat
           href: localizations/emea-bel-intrastat.md
+        - name: VAT declaration
+          href: localizations/emea-bel-vat-declaration-belgium.md
       - name: Brazil
         items:
         - name: Brazil overview
@@ -2058,6 +2116,8 @@
           href: localizations/emea-cze-intra-community-VAT.md
         - name: Year-end close
           href: localizations/emea-cze-hun-year-end.md
+        - name: EU sales list
+          href: localizations/emea-cze-eu-sales-list.md
       - name: Denmark
         items:
         - name: Denmark overview
@@ -2070,6 +2130,8 @@
           href: localizations/tasks/create-post-free-text-invoice-public-sector-customer.md
         - name: Create and post a project invoice for a public sector customer
           href: localizations/tasks/create-post-project-invoice-public-sector-customer.md
+        - name: EU sales list
+          href: localizations/emea-dnk-eu-sales-list.md
         - name: Import OIOUBL electronic invoicing configurations
           href: localizations/tasks/import-oioubl-electronic-invoicing-configurations.md
         - name: Post a free text invoice with a payment slip
@@ -2111,7 +2173,9 @@
         - name: VAT statement
           href: localizations/emea-est-vat-statement-details.md
         - name: Estonian Intrastat
-          href: localizations/emea-est-intrastat.md         
+          href: localizations/emea-est-intrastat.md  
+        - name: EU sales list
+          href: localizations/emea-est-eu-sales-list.md
       - name: Europe
         items:
         - name: Europe overview
@@ -2272,6 +2336,8 @@
           href: localizations/emea-fin-intrastat.md
         - name: VAT declaration
           href: localizations/emea-fin-vat-declaration.md
+        - name: EU sales list
+          href: localizations/emea-fin-eu-sales-list.md
       - name: France
         items:
         - name: France overview
@@ -2394,6 +2460,8 @@
           href: localizations/emea-hun-online-invoicing.md
         - name: Sales tax reports for Hungary
           href: localizations/emea-hun-sales-tax-reports.md
+        - name: Hungarian Intrastat
+          href: localizations/emea-hun-intrastat.md
         - name: Deferred sales tax calculations
           href: localizations/emea-hun-deferred-vat.md
       - name: Iceland
@@ -3054,6 +3122,8 @@
           href: localizations/emea-lva-vat-statement-details.md
         - name: Latvian Intrastat
           href: localizations/emea-lva-intrastat.md
+        - name: EU sales list
+          href: localizations/emea-lva-eu-sales-list.md
       - name: Lithuania
         items:
         - name: Lithuania overview
@@ -3064,12 +3134,16 @@
           href: localizations/tasks/lt-00003-fixed-asset-transfer.md
         - name: VAT statement details
           href: localizations/emea-ltu-vat-statement-details.md
+        - name: Lithuanian Intrastat
+          href: localizations/emea-ltu-intrastat.md
         - name: i.SAF reporting for Lithuania
           href: localizations/emea-ltu-isaf.md
         - name: Standard Audit File for Tax (SAF-T) for Lithuania
           href: localizations/emea-ltu-saf-t.md
         - name: Set up the transfer documents for goods movement inside a company
           href: localizations/tasks/set-up-transfer-documents-goods-movement-inside-company.md
+        - name: EU sales list
+          href: localizations/emea-ltu-eu-sales-list.md
       - name: Malaysia
         items:
         - name: Malaysia overview
@@ -3206,6 +3280,8 @@
           href: localizations/emea-pol-correction-notes.md
         - name: Duplicate sales invoice numbering
           href: localizations/emea-pol-sales-invoice-duplicates-numbering.md
+        - name: EU sales list
+          href: localizations/emea-pol-eu-sales-list.md
         - name: Fixed asset depreciation
           href: localizations/emea-pol-fixed-assets-depreciation.md
         - name: Fixed asset disposal functionality extension
@@ -3446,6 +3522,8 @@
             href: localizations/rus-land-tax-declaration.md
           - name: Profit tax declaration
             href: localizations/rus-profit-tax-declaration.md
+          - name: Report about operations with traceable goods
+            href: localizations/rus-traceable-goods-operation-report.md
         - name: Organization administration
           items:    
           - name: Tax registration info related to address
@@ -3528,6 +3606,8 @@
           href: localizations/emea-esp-conditional-sales-tax.md
         - name: Credit invoicing
           href: localizations/tasks/emea-esp-credit-invoicing.md
+        - name: EU sales list
+          href: localizations/emea-esp-sales-list.md
         - name: Fiscal data invoice account
           href: localizations/emea-esp-fiscal-data-invoice-account.md
         - name: Fixed asset group revaluation
@@ -3646,6 +3726,8 @@
             href: localizations/emea-gbr-mtd-vat-integration-vat100.md
         - name: Statistics on payment practices report
           href: localizations/emea-gbr-statistics-on-payment-practices-report.md
+        - name: EU sales list
+          href: localizations/emea-uk-eu-sales-list.md
       - name: United States
         items:
         - name: United States overview
@@ -3725,6 +3807,8 @@
           href: ../fin-ops-core/dev-itpro/analytics/recruiting-analysis-power-bi-content-pack.md?toc=/dynamics365/finance/toc.json
         - name: Sales and profitability performance
           href: ../fin-ops-core/dev-itpro/analytics/sales-profitability-performance-content-pack.md?toc=/dynamics365/finance/toc.json
+        - name: Subscription billing Power BI content
+          href: accounts-receivable/sub-bill-power-bi.md
         - name: Vendor payments
           href: accounts-payable/Vendor-payments-workspace.md
         - name: Workforce metrics
@@ -4313,6 +4397,8 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-lookup-data-sources.md?toc=/dynamics365/finance/toc.json 
           - name: Use DATA COLLECTION data sources in ER formats
             href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/finance/toc.json 
+          - name: Use USER INPUT PARAMETER data sources to specify parameters for a report that you want to generate
+            href: ../fin-ops-core/dev-itpro/analytics/er-user-input-parameter-data-sources.md?toc=/dynamics365/finance/toc.json 
           - name: Debug data sources
             href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/finance/toc.json
         - name: Configure data models
@@ -4413,6 +4499,8 @@
             href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
           - name: Troubleshoot performance issues in ER configurations
             href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/finance/toc.json
+          - name: Reduce the number of table fields that are fetched at runtime
+            href: ../fin-ops-core/dev-itpro/analytics/er-reduce-fetched-fields-number.md?toc=/dynamics365/finance/toc.json
         - name: Business document management (BDM)
           items:
           - name: BDM overview

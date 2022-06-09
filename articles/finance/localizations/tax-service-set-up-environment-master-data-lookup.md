@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enable master data lookup for tax calculation configuration
-description: This topic explains how to set up and enable the tax calculation master data lookup functionality.
+description: This article explains how to set up and enable the tax calculation master data lookup functionality.
 author: kai-cloud
 ms.date: 11/22/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Global
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up and enable the tax calculation master data lookup functionality. A drop-down list is available to select values in the tax calculation configuration for fields such as **Legal entity**, **Vendor account**, **Item code**, and **Delivery term**. These values come from the connected Microsoft Dynamics 365 Finance environment using the Microsoft Dataverse datasource.
+This article explains how to set up and enable the tax calculation master data lookup functionality. A drop-down list is available to select values in the tax calculation configuration for fields such as **Legal entity**, **Vendor account**, **Item code**, and **Delivery term**. These values come from the connected Microsoft Dynamics 365 Finance environment using the Microsoft Dataverse datasource.
 
 > [!NOTE] 
 > The tax calculation master data lookup functionality is optional functionality. You can skip the following steps if you disable the **Tax Service Dataverse datasourcese support** feature in Regulatory Configuration Service (RCS). However, in that case, the drop-down list won't be available in the tax calculation configuration.

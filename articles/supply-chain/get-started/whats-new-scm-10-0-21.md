@@ -1,10 +1,10 @@
 ---
 title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.21 (October 2021) 
-description: This topic describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.21. 
+description: This article describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.21. 
 author: kamaybac
 ms.date: 10/28/2021
 ms.topic: article
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
 ms.search.region: Global
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.21
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management version 10.0.21. This version has a build number of 10.0.960 and is available as follows:
+This article lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management version 10.0.21. This version has a build number of 10.0.960 and is available as follows:
 
 - **Preview of release:** August 2021
 - **General availability of release (self-update):** September 2021
@@ -115,9 +115,9 @@ The following table lists the features that are turned on by default in 10.0.21.
 
 ## New and updated documentation resources
 
-We have recently added or significantly updated the following help topics. They aren't necessarily related to the new features added for this release, as listed in the previous section, but they may help you to get more out of existing features.
+We have recently added or significantly updated the following help articles. They aren't necessarily related to the new features added for this release, as listed in the previous section, but they may help you to get more out of existing features.
 
-| Feature area | New or updated topics |
+| Feature area | New or updated articles |
 |---|---|
 | Master planning | [Inventory forecasts](../master-planning/inventory-forecast.md) |
 | Master planning | [Parameters not used by Planning Optimization](../master-planning/planning-optimization/not-used-parameters.md) |
@@ -126,7 +126,7 @@ We have recently added or significantly updated the following help topics. They 
 | Master planning | [View plan history and planning logs](../master-planning/planning-optimization/plan-history-logs.md) |
 | Warehouse management | [Container packing strategies](../warehousing/container-packing-strategy-overview.md) |
 | Warehouse management | [Cycle counting example scenarios](../warehousing/cycle-counting-scenarios.md) |
-| Warehouse management | [Import inbound ASNs through the V2 data entity](../warehousing/import-asn-v2-data-entity.md) |
+| Warehouse management | [Import inbound ASNs through the V3 data entity](../warehousing/import-asn-data-entity.md) |
 | Warehouse management | [Over-picking for sales orders and transfer orders](../warehousing/over-picking-for-sales-and-transfer-orders.md) |
 | Warehouse management | [Schedule wave label printing during wave](../warehousing/configure-task-based-wave-label-printing.md) |
 | Warehouse management | [What's new or changed in the Warehouse Management mobile app](../warehousing/whats-new-wma.md) |
@@ -149,12 +149,12 @@ Check out the [Dynamics 365 and industry clouds: 2021 release wave 2 plan](/dyna
 
 ### Removed and deprecated Supply Chain Management features
 
-The [Removed or deprecated features in Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) topic describes features that have been or are scheduled to be removed or deprecated for Supply Chain Management.
+The [Removed or deprecated features in Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) article describes features that have been or are scheduled to be removed or deprecated for Supply Chain Management.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
-Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features in Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) topic 12 months prior to the removal.
+Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features in Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) article 12 months prior to the removal.
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
 

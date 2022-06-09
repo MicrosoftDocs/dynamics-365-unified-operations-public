@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create read-only entities that expose financial dimensions
-description: In this topic, we describe how to build an entity for registered transactions. 
+description: In this article, we describe how to build an entity for registered transactions. 
 author: RyanCCarlson2
 ms.date: 04/10/2017
 ms.topic: article
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: tfehr
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 273653
 ms.assetid: 119610df-3975-43ce-830b-84fe58266321
@@ -34,10 +34,10 @@ ms.search.validFrom: 2016-11-30
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 
-In this topic, we describe how to build an entity for registered transactions that are registered. 
+In this article, we describe how to build an entity for registered transactions that are registered. 
 
 > [!NOTE] 
-> This topic comes from Per Baarsoe Jorgensen of the Solutions Architecture team. It describes a real-world scenario that we have encountered as we work with customers. 
+> This article comes from Per Baarsoe Jorgensen of the Solutions Architecture team. It describes a real-world scenario that we have encountered as we work with customers. 
 
 Imagine a scenario where we must expose all vendor invoice line transactions together with the financial dimensions that were applied through the distributions. Because easy consumption by a third-party tool is essential, we will create an entity for this scenario. As a result, the entity should not have to be joined with other related entities but should be able to provide value on its own.
 

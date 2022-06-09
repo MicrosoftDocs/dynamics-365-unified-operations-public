@@ -1,6 +1,6 @@
 ---
 title: Independent software vendor (ISV) licensing (on-premises)
-description: This topic describes the independent software vendor (ISV) licensing feature for on-premises environments.
+description: This article describes the independent software vendor (ISV) licensing feature for on-premises environments.
 author: jorisdg
 ms.date: 11/29/2021
 ms.topic: article
@@ -21,10 +21,10 @@ ms.dyn365.ops.version: AX 7.3.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to import independent software vendor (ISV) licenses into an on-premises deployment.
+This article explains how to import independent software vendor (ISV) licenses into an on-premises deployment.
 
 > [!IMPORTANT]
-> The process that is described in this topic is available only for customers who have on-premises environments that are deployed with Platform update 12 or later.
+> The process that is described in this article is available only for customers who have on-premises environments that are deployed with Platform update 12 or later.
 
 For general information about the benefits of ISV licensing, information about how to enable licensing for your solution, and other information that is related to self-signed certificates, see [Independent software vendor (ISV) licensing](isv-licensing.md).
 

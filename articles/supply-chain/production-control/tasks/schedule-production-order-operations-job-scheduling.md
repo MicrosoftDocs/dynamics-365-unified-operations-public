@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Schedule a production order with operations and job scheduling
-description: This topic focuses on scheduling a production order with operations scheduling and job scheduling. 
+description: This article focuses on scheduling a production order with operations scheduling and job scheduling. 
 author: johanhoffmann
 ms.date: 08/19/2019
 ms.topic: business-process 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic focuses on scheduling a production order with operations scheduling and job scheduling. No jobs are created with operations scheduling whereas jobs are created with job scheduling. The demo data company used to create this task is USMF. This procedure is intended for the production manager, production planner, or shop floor supervisor working in a discrete manufacturing environment.
+This article focuses on scheduling a production order with operations scheduling and job scheduling. No jobs are created with operations scheduling whereas jobs are created with job scheduling. The demo data company used to create this task is USMF. This procedure is intended for the production manager, production planner, or shop floor supervisor working in a discrete manufacturing environment.
 
 
 ## Create a production order

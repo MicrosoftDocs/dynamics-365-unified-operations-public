@@ -2,8 +2,8 @@
 # required metadata
 
 title: Set different dimensions for packing and storage
-description: This topic shows how to specify which process (packing, storage, or nested packing) each specified dimension is used for.
-author: mirzaab
+description: This article shows how to specify which process (packing, storage, or nested packing) each specified dimension is used for.
+author: Mirzaab
 ms.date: 01/28/2021
 ms.topic: article
 ms.prod: 
@@ -15,9 +15,9 @@ ms.search.form: EcoResPhysicalProductDimensions, WHSPhysDimUOM
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
+
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
@@ -38,7 +38,7 @@ Some items are packed or stored in such a way that you may need to track physica
 *Storage* dimensions are supported even when the *Packaging product dimensions* feature isn't enabled. You set these up using the **Physical dimension** page in Supply Chain Management. These dimensions are used by all processes where the packing and nested packing dimensions aren't specified.
 
 *Packing* and *nested packing* dimensions are set up using the **Physical product dimensions** page, which is added when you enable the *Packaging product dimensions* feature.
-This topic provides a scenario that illustrates how to use this feature.
+This article provides a scenario that illustrates how to use this feature.
 
 ## Turn on the packaging product dimensions feature
 

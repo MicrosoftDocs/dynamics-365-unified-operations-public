@@ -1,6 +1,6 @@
 ---
 title: Create an LCS connection in Azure Pipelines
-description: This topic explains how to set up a connection to Microsoft Dynamics Lifecycle Services (LCS) from Azure DevOps.
+description: This article explains how to set up a connection to Microsoft Dynamics Lifecycle Services (LCS) from Azure DevOps.
 author: jorisdg
 ms.date: 03/05/2020
 ms.topic: article
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 The [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension for Microsoft Azure DevOps has several pipeline tasks that let you perform actions in Microsoft Dynamics Lifecycle Services (LCS). For example, you can upload assets, download assets, and service an environment. For the connection with LCS to work, you must set up a new service connection in Azure DevOps. This service connection provides the authentication details that are required to connect to LCS. For more information about service connections in Azure DevOps, see [Service connections](/azure/devops/pipelines/library/service-endpoints).
 
-This topic assumes that you have a working knowledge of [Azure Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started).
+This article assumes that you have a working knowledge of [Azure Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started).
 
 > [!NOTE]
 > Before you can add these steps to a pipeline, the [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension for Azure DevOps must be enabled and installed in the Azure DevOps account. For more information about how to install an extension for an organization, see [Install extensions](/azure/devops/marketplace/install-extension).

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Broker contract management
-description: This topic describes broker contract management by automating administrative tasks that comprise it.
+description: This article describes broker contract management by automating administrative tasks that comprise it.
 author: t-benebo
 ms.date: 08/17/2018
 ms.topic: article
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: MCRBrokerContractManagement, MCRCustCategory, MCRCustCategoryHierarchy, PdsRebateAgreementLineInfoPart, MCRRoyaltyTable
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: July 2017 update
 
 Broker contract management helps companies better manage their brokerage agreements by automating tasks that are involved in administering, tracking, and paying the fees that are due to brokers.
 
-This topic provides a broad overview of the typical process for handling broker fees:
+This article provides a broad overview of the typical process for handling broker fees:
 
 - Registering details of the negotiated broker contract
 - Running the negotiated contracts through ongoing sales and generating broker claims
@@ -39,7 +39,7 @@ This topic provides a broad overview of the typical process for handling broker 
 
 ## Audience and purpose
 
-The information in this topic is intended for business decision makers in enterprise companies, in capacities such as sales manager, accounting manager, and A/P manager, who have the following responsibilities:
+The information in this article is intended for business decision makers in enterprise companies, in capacities such as sales manager, accounting manager, and A/P manager, who have the following responsibilities:
 
 - Negotiating contracts with brokers
 - Managing staff that processes broker claims and makes fee payments

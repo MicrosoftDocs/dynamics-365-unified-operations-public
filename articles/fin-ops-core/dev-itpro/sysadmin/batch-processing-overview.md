@@ -2,7 +2,7 @@
 # required metadata
 
 title: Batch processing overview
-description: This topic provides an overview of batch processing.
+description: This article provides an overview of batch processing.
 author: Peakerbl
 ms.date: 07/23/2019
 ms.topic: overview
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of batch processing.
+This article provides an overview of batch processing.
 
 Many tasks in Finance and Operations can be run as part of batch jobs. For example, batch jobs can include tasks for printing reports, performing maintenance, or sending electronic documents. By using batch jobs, you can avoid slowing down your computer or the server during typical working hours. 
 

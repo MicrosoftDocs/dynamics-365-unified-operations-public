@@ -2,7 +2,7 @@
 # required metadata
 
 title: Products and categories are missing after environment copy
-description: This topic provides troubleshooting guidance that can help when products and categories are missing after a site is copied between environments or within the same environment.
+description: This article provides troubleshooting guidance that can help when products and categories are missing after a site is copied between environments or within the same environment.
 author: Reza-Assadi
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../../includes/banner.md)]
 
-This topic provides troubleshooting guidance that can help when products and categories are missing after a site is copied between environments or within the same environment.
+This article provides troubleshooting guidance that can help when products and categories are missing after a site is copied between environments or within the same environment.
 
 ## Description
 

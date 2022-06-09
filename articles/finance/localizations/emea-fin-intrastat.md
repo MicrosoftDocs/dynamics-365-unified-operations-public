@@ -2,14 +2,14 @@
 # required metadata
 
 title: Finnish Intrastat
-description: This topic contains information about the Finnish Intrastat report.
+description: This article contains information about the Finnish Intrastat report.
 author: andosip
 ms.date: 12/14/2021
 ms.topic: article
 audience: 
 ms.reviewer: kfend 
 ms.search.region: Global
-ms.author: v-aosipov
+ms.author: anasyash
 ms.search.validFrom: 
 ---
 # Finnish Intrastat
@@ -73,7 +73,7 @@ For more information, see [Download ER configurations from the Global repository
 2. In the grid, select your company.
 3. On the Action Pane, select **Registration IDs**.
 4. On the **Registration ID** FastTab, select **Add**.
-5. In the **Registration type** field, select the registration type that you created for the company code earlier in this topic.
+5. In the **Registration type** field, select the registration type that you created for the company code earlier in this article.
 6. Enter the VAT ID of your company's data provider.
 
 #### Set up the VAT number of a trading partner
@@ -84,7 +84,7 @@ For more information, see [Download ER configurations from the Global repository
 2. In the grid, select a customer.
 3. On the Action Pane, on the **Customer** tab, in the **Registration** group, select **Registration IDs**.
 4. On the **Registration ID** FastTab, select **Add** to create a registration ID.
-5. In the **Registration type** field, select the registration type that you created for the company code earlier in this topic.
+5. In the **Registration type** field, select the registration type that you created for the company code earlier in this article.
 6. In the **Registration number** field, enter the company's VAT number.
 7. On the Action Pane, select **Save**. Then close the page.
 

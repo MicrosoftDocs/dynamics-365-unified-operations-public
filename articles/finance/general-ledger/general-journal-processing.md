@@ -2,7 +2,7 @@
 # required metadata
 
 title: General journal processing
-description: This topic describes capabilities in Microsoft Dynamics 365 Finance that can help make general journal processing easier, and that can also help ensure that correct data is captured and internal control isn't compromised.  
+description: This article describes capabilities in Microsoft Dynamics 365 Finance that can help make general journal processing easier, and that can also help ensure that correct data is captured and internal control isn't compromised.  
 author: kweekley
 ms.date: 02/28/2022
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form: LedgerJournalSetup, LedgerJournalTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes capabilities that can help make general journal processing easier, and that can also help ensure that correct data is captured and internal control isn't compromised.  
+This article describes capabilities that can help make general journal processing easier, and that can also help ensure that correct data is captured and internal control isn't compromised.  
 
 ## Journal names
 

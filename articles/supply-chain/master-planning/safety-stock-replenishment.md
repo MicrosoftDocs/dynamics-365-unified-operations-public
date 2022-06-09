@@ -1,14 +1,14 @@
 ---
 title: Safety stock fulfillment for items
-description: This topic discusses safety stock fulfillment and how to set up safety stock quantity for items. 
-author: thethehelga
+description: This article discusses safety stock fulfillment and how to set up safety stock quantity for items. 
+author: t-benebo
 ms.date: 8/23/2021
 ms.topic: article
 ms.search.form: ReqSafetyKey, ReqItemTableSetup, ReqItemJournalName, ReqItemTable, EcoResProductDetailsExtended, ReqSafetyKeyDefaultDataWizard
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: v-oldolg
+ms.author: benebotg
 ms.dyn365.ops.version: 7.3 
 ms.search.validFrom: 2017-12-31
 ---
@@ -83,7 +83,7 @@ If **Minimum keys** are used, select the **Minimum periods** check box to fulfil
 The following scenario shows how this parameter works and what are the differences between its values.
 
 > [!NOTE]
-> For all the illustrations in this topic, the x-axis represents inventory, the y-axis represents days, the bars represent the inventory level, the arrows represent transactions, such as sales order lines, purchase order lines, or planned orders.
+> For all the illustrations in this article, the x-axis represents inventory, the y-axis represents days, the bars represent the inventory level, the arrows represent transactions, such as sales order lines, purchase order lines, or planned orders.
 
 [![Common scenario for safety stock fulfillment.](media/Scenario1.png)](media/Scenario1.png)
 

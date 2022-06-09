@@ -2,8 +2,8 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Finance version 10.0.9 (April 2020)
-description: This topic describes features that are either new or changed in Dynamics 365 Finance version 10.0.9.
-author: roschlom
+description: This article describes features that are either new or changed in Dynamics 365 Finance version 10.0.9.
+author: kfend
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
@@ -15,13 +15,13 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2019-02-03 
 ms.dyn365.ops.version: 10.0.9
 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.9
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists features that are new or changed for Microsoft Dynamics 365 Finance, version 10.0.9. This version has a build number of 10.0.383 and is available as follows:
+This article lists features that are new or changed for Microsoft Dynamics 365 Finance, version 10.0.9. This version has a build number of 10.0.383 and is available as follows:
 
 - **Preview release:** February 2020
 - **General availability (self-update):** March 2020
@@ -88,12 +88,12 @@ Check out the [Dynamics 365: 2020 release wave 1 plan](/dynamics365-release-plan
 
 ### Removed and deprecated features
 
-The [Removed or deprecated features](removed-deprecated-features-finance.md) topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
+The [Removed or deprecated features](removed-deprecated-features-finance.md) article describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
-Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
+Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) article 12 months prior to the removal.
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
 

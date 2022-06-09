@@ -2,7 +2,7 @@
 # required metadata
 
 title: Authentication in Dynamics 365 Finance + Operations (on-premises)
-description: This topic provides background information about how the authentication process works so that if you have issues you can work to resolve them.
+description: This article provides background information about how the authentication process works so that if you have issues you can work to resolve them.
 author: faix
 ms.date: 11/18/2020
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.15
 
 [!include[banner](../includes/banner.md)]
 
-This topic explains authentication in Dynamics 365 Finance + Operations (on-premises). This topic also provides background information about how the process works so that if you encounter issues with authentication you can work to resolve them.
+This article explains authentication in Dynamics 365 Finance + Operations (on-premises). This article also provides background information about how the process works so that if you encounter issues with authentication you can work to resolve them.
 
 ## The URL for Active Directory Federation Services (AD FS)
 

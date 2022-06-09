@@ -2,7 +2,7 @@
 # required metadata
 
 title: Role-based security
-description: This topic provides an overview of the elements of role-based security. 
+description: This article provides an overview of the elements of role-based security. 
 author: peakerbl
 ms.date: 01/27/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of the elements of role-based security in Finance and Operations. 
+This article provides an overview of the elements of role-based security in Finance and Operations. 
 
 In role-based security, access is not granted to individual users, only to security roles. Users are assigned to roles. A user who is assigned to a security role has access to the set of privileges that is associated with that role. A user who is not assigned to any role has no privileges. 
 

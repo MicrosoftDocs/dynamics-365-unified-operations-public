@@ -3,7 +3,7 @@
 # required metadata
 
 title: Go-live FAQ
-description: This topic lists frequently asked questions about how to go live with a Dynamics 365 Human Resources implementation project. 
+description: This article lists frequently asked questions about how to go live with a Dynamics 365 Human Resources implementation project. 
 author: rachel-profitt
 ms.date: 10/13/2020
 ms.topic: article
@@ -16,7 +16,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: Human Resources
 
 
 
-This topic lists frequently asked questions about how to go live with a Dynamics 365 Human Resources implementation project. 
+This article lists frequently asked questions about how to go live with a Dynamics 365 Human Resources implementation project. 
 
 ## When can I configure and request my production environment? 
 

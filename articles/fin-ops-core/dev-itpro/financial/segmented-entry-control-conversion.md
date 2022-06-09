@@ -2,7 +2,7 @@
 # required metadata
 
 title: Migrate Segmented Entry controls
-description: This topic describes migration scenarios for the Segmented Entry control.
+description: This article describes migration scenarios for the Segmented Entry control.
 author: RyanCCarlson2
 ms.date: 11/10/2017
 ms.topic: article
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: tfehr
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 25611
 ms.assetid: 82e953d0-878e-4a3f-a91b-7375017a2810

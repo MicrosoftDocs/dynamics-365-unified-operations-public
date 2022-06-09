@@ -2,7 +2,7 @@
 title: LookupDesign type
 description: Lookup design object type.
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/24/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
@@ -12,6 +12,7 @@ ms.author: tfehr
 # LookupDesign type
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 Lookup design object type.
 

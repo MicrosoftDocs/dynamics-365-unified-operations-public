@@ -2,7 +2,7 @@
 # required metadata
 
 title: Import or manually create postal codes
-description: This topic explains how to import and manually create postal codes in the correct format. 
+description: This article explains how to import and manually create postal codes in the correct format. 
 author: EvgenyPopovMBS
 ms.date: 10/31/2017
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to import and manually create postal codes in the correct format. 
+This article explains how to import and manually create postal codes in the correct format. 
 
 The import process lets you update the ZIP/postal codes for a specific country/region. You can also create postal codes manually.
 

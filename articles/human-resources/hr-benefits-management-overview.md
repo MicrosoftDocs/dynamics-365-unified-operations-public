@@ -2,7 +2,7 @@
 # required metadata
 
 title: Benefits management overview
-description: This topic provides an overview of the Benefits management feature in Dynamics 365 Human Resources. 
+description: This article provides an overview of the Benefits management feature in Dynamics 365 Human Resources. 
 author: twheeloc  
 ms.date: 12/06/2021
 ms.topic: overview
@@ -15,7 +15,7 @@ ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 
 ms.assetid: 
@@ -51,7 +51,7 @@ If you would like to access the demo data, you'll need to redeploy your sandbox 
 
 ## Enable Benefits management
 
-This topic describes how to turn on features in Human Resources. It also explains which existing features in Human Resources are replaced by Benefits management and which features are disabled after you turn on Benefits management.
+This article describes how to turn on features in Human Resources. It also explains which existing features in Human Resources are replaced by Benefits management and which features are disabled after you turn on Benefits management.
 
 > [!IMPORTANT]
 > After you enable Benefits management in a **Production** environment, you can't disable it. We recommend enabling and testing Benefits management in a **Sandbox** environment before enabling it in a **Production** environment. There are significant differences between the legacy Benefit functionality and new Benefits management functionality that require additional setup and should be tested prior to being placed into production.

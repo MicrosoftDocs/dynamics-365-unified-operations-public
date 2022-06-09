@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Plan loads and shipments using the Load planning workbench
-description: This topic shows how to use the load planning workbench to create a load for a sales order. 
+description: This article shows how to use the load planning workbench to create a load for a sales order. 
 author: Mirzaab
 ms.date: 07/08/2019
 ms.topic: business-process 
@@ -26,7 +26,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic shows how to use the load planning workbench to create a load for a sales order. As a prerequisite we'll create the sales order first. This procedure is part of the daily work for the transportation coordinator. The demo data company used to create this procedure is USMF.
+This article shows how to use the load planning workbench to create a load for a sales order. As a prerequisite we'll create the sales order first. This procedure is part of the daily work for the transportation coordinator. The demo data company used to create this procedure is USMF.
 
 
 ## Create a sales order

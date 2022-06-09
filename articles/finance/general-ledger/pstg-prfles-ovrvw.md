@@ -2,7 +2,7 @@
 # required metadata
 
 title: Posting profiles overview
-description: This topic explains how posting profiles are used throughout Microsoft Dynamics 365 apps.
+description: This article explains how posting profiles are used throughout Microsoft Dynamics 365 apps.
 author: rachel-profitt
 ms.date: 12/03/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form: LedgerSystemSetup, CustPosting, VendPosting, InventPosting, Asse
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607

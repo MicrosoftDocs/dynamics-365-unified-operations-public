@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed for India GST in 10.0.11 (July 2020)
-description: This topic describes new or changed functionality for India GST features released in Dynamics 365 Finance version 10.0.11.
+description: This article describes new or changed functionality for India GST features released in Dynamics 365 Finance version 10.0.11.
 author: prabhatb
 ms.date: 06/15/2020
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.11
 
 [!include [banner](../includes/banner.md)]
 
-This topic includes a summary of the new features and critical bug fixes released in Dynamics 365 Finance version 10.0.11 for India GST localization. 
+This article includes a summary of the new features and critical bug fixes released in Dynamics 365 Finance version 10.0.11 for India GST localization. 
 
 ## New features
 

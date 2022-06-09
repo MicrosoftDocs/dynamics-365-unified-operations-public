@@ -2,7 +2,7 @@
 # required metadata
 
 title: View posted TDS payments and transactions for a TDS settlement period
-description: This topic explains how to view the Tax Deducted at Source (TDS) payments and transactions that were posted for a settlement period.
+description: This article explains how to view the Tax Deducted at Source (TDS) payments and transactions that were posted for a settlement period.
 author: kailiang
 ms.date: 03/12/2021
 ms.topic: article
@@ -16,8 +16,8 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
+ms.reviewer: kfend
+# 
 # ms.tgt_pltfrm: 
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to view the Tax Deducted at Source (TDS) payments and transactions that were posted for a settlement period.
+This article explains how to view the Tax Deducted at Source (TDS) payments and transactions that were posted for a settlement period.
 
 1. Go to **Tax \> Indirect taxes \> Withholding tax \> Withholding tax settlement periods**.
 

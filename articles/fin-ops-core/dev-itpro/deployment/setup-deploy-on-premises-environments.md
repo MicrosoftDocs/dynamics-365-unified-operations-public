@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up and deploy on-premises environments home page
-description: This topic provides links to topics about how to plan, set up, and deploy an on-premises environment.
+description: This article provides links to topics about how to plan, set up, and deploy an on-premises environment.
 author: sericks007
 ms.date: 11/29/2021
 ms.topic: article

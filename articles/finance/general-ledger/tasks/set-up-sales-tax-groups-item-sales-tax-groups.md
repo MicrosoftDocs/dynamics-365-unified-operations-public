@@ -14,12 +14,12 @@ ms.technology:
 ms.search.form: TaxGroup,  TaxItemGroup   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This task recording walks you through the setup of Sales tax and Item sales tax groups. Sales tax groups are groups of sales tax codes that are attached to customers and vendors. They are also attached to ledger accounts for transactions that are not posted to a particular vendor or customer.  Item sales tax groups are groups of sales tax codes that are attached to resources like products.  The sales taxes that apply to a particular transaction are determined by the sales tax codes that are included both in the sales tax group and in the item sales tax group of the transaction.  Sales tax can be calculated only if a sales tax group and an item sales tax group are selected for each transaction for which sales tax must be calculated or recorded.  
+This task recording walks you through the setup of Sales tax and Item sales tax groups. Sales tax groups are groups of sales tax codes that are attached to customers and vendors. They are also attached to ledger accounts for transactions that are not posted to a particular vendor or customer. Item sales tax groups are groups of sales tax codes that are attached to resources like products. The sales taxes that apply to a particular transaction are determined by the sales tax codes that are included both in the sales tax group and in the item sales tax group of the transaction. Sales tax can be calculated only if a sales tax group and an item sales tax group are selected for each transaction for which sales tax must be calculated or recorded.  
 
 1. Go to **Navigation pane > Modules > Tax > Indirect taxes > Sales tax > Sales tax groups**.
 2. Click **New**.

@@ -1,6 +1,6 @@
 ---
 title: GS1 bar codes
-description: This topic describes how to set up GS1 bar codes and QR codes so that labels can be scanned in a warehouse.
+description: This article describes how to set up GS1 bar codes and QR codes so that labels can be scanned in a warehouse.
 author: Mirzaab
 ms.date: 03/21/2022
 ms.topic: article
@@ -16,8 +16,6 @@ ms.dyn365.ops.version: 10.0.25
 # GS1 bar codes
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!-- Preview until 10.0.25 GA -->
 
 Warehouse workers often have to complete several tasks when they use a mobile device scanner to register movements of an item, palette, or container. These tasks can include both scanning bar codes and manually entering information on the mobile device. The bar codes use a company-specific format that you define and manage by using Microsoft Dynamics 365 Supply Chain Management.
 
@@ -27,11 +25,11 @@ GS1 support in Supply Chain Management dramatically simplifies the scanning proc
 
 Logistics managers must set up the required list of application identifiers and associate each of them with the appropriate mobile device menu items. The application identifiers can then be used across warehouses as a global setting for moving and packing purposes. Therefore, all shipping labels will take a unified form.
 
-Unless otherwise stated, this topic uses the term *bar code* to refer to both linear (1D) bar codes and 2D bar codes.
+Unless otherwise stated, this article uses the term *bar code* to refer to both linear (1D) bar codes and 2D bar codes.
 
 ## The GS1 bar code format
 
-The GS1 General Specifications specify which symbologies can be used for GS1 bar codes and how to encode the data in the bar code. This section provides a short introduction to the topic. For full details, see the [GS1 General Specifications](https://www.gs1.org/docs/barcodes/GS1_General_Specifications.pdf) that are published by GS1. The GS1 specifications document is regularly updated, and the information that it provides is up to date with GS1 General Specifications release 22.0.
+The GS1 General Specifications specify which symbologies can be used for GS1 bar codes and how to encode the data in the bar code. This section provides a short introduction to the article. For full details, see the [GS1 General Specifications](https://www.gs1.org/docs/barcodes/GS1_General_Specifications.pdf) that are published by GS1. The GS1 specifications document is regularly updated, and the information that it provides is up to date with GS1 General Specifications release 22.0.
 
 GS1 bar codes use the following symbologies:
 

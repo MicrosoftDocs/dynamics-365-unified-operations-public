@@ -2,7 +2,7 @@
 # required metadata
 
 title: Consumer price index schedule
-description: This topic explains how to create the list of consumer price index (CPI) schedules that you obtain from the internet to help determine the escalation charge in Subscription billing. 
+description: This article explains how to create the list of consumer price index (CPI) schedules that you obtain from the internet to help determine the escalation charge in Subscription billing. 
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -16,7 +16,7 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: Core, Operations
+
 # ms.tgt_pltfrm: 
 ms.custom: 539093
 ms.search.region: Global
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.24
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to create, delete, review, and process consumer price index (CPI) schedules. A CPI schedule can be used to determine the prices for consumer goods and services that you add as billing schedule lines. The CPI schedule can then be used with escalation and discount pricing on a billing schedule, or it can be manually processed to update the billing amounts on billing schedules. You can manually enter CPI schedules, or you can import them by using the CPI schedule composite entity.
+This article explains how to create, delete, review, and process consumer price index (CPI) schedules. A CPI schedule can be used to determine the prices for consumer goods and services that you add as billing schedule lines. The CPI schedule can then be used with escalation and discount pricing on a billing schedule, or it can be manually processed to update the billing amounts on billing schedules. You can manually enter CPI schedules, or you can import them by using the CPI schedule composite entity.
 
 To add a CPI schedule, follow these steps.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: New GSTR-1 and GSTR-2 return formats
-description: This topic provides information about how to generate GSTR-1 and GSTR-2 reports in Microsoft Dynamics 365 according to the new format that was released by Goods and Services Tax (GST) Suvidha Providers, or GSPs.
+description: This article provides information about how to generate GSTR-1 and GSTR-2 reports in Microsoft Dynamics 365 according to the new format that was released by Goods and Services Tax (GST) Suvidha Providers, or GSPs.
 author: prabhatb
 ms.date: 03/16/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: India
@@ -211,7 +211,7 @@ Import the latest versions of these configurations. The description of each conf
 Follow these steps to load the report configuration into workspaces.
 
 1. Go to **Workspaces \> Electronic reporting**, and select the **Reporting configurations** tile.
-2. On the **Configurations** page, select **Exchange \> Load from XML file**, and import the configuration files in the order that is provided in the first table in the [Import and set up ER configurations](#import-and-set-up-er-configurations) section, earlier in this topic.
+2. On the **Configurations** page, select **Exchange \> Load from XML file**, and import the configuration files in the order that is provided in the first table in the [Import and set up ER configurations](#import-and-set-up-er-configurations) section, earlier in this article.
 
 ![Configurations page.](media/New-GSTR-Format-005.PNG)
 

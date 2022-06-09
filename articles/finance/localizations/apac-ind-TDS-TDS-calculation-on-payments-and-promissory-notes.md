@@ -2,7 +2,7 @@
 # required metadata
 
 title: TDS calculation on payments and promissory notes
-description: This topic provides reference information about the different payment transactions that Tax Deducted at Source (TDS) is calculated on.
+description: This article provides reference information about the different payment transactions that Tax Deducted at Source (TDS) is calculated on.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -16,8 +16,8 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
+ms.reviewer: kfend
+# 
 # ms.tgt_pltfrm: 
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides reference information about the different payment transactions that Tax Deducted at Source (TDS) is calculated on.
+This article provides reference information about the different payment transactions that Tax Deducted at Source (TDS) is calculated on.
 
 | Serial number | Transaction type | Transaction amount | Page name and path | Account type and offset account type |
 |---------------|------------------|--------------------|--------------------|--------------------------------------|

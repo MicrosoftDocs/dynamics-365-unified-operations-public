@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Omni-channel Commerce order payments
-description: This topic describes the omni-channel Commerce order payments feature in Microsoft Dynamics 365 Commerce.
+description: This article describes the omni-channel Commerce order payments feature in Microsoft Dynamics 365 Commerce.
 author: ravimeda
 ms.date: 02/04/2022
 ms.topic: article
@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the omni-channel Commerce order payments feature in Microsoft Dynamics 365 Commerce. This feature lets you edit e-commerce and point of sale (POS) order payments from Commerce headquarters.
+This article describes the omni-channel Commerce order payments feature in Microsoft Dynamics 365 Commerce. This feature lets you edit e-commerce and point of sale (POS) order payments from Commerce headquarters.
 
 Dynamics 365 Commerce consists of three main channels: POS, e-commerce, and call center. In Commerce version 10.0.12 and earlier, the management of payment lines for orders that are created in each channel isn't uniform. For example, when orders are created and edited in the call center, an order completion flow ensures that payments are specified for those orders before fulfillment. However, POS and e-commerce orders don't support call center order completion. To see the lack of uniformity, go to the **Customer service** page in Commerce headquarters, and notice which orders you can access the **Payments** page for by using the **Payments** button.
 

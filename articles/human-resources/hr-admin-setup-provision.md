@@ -2,7 +2,7 @@
 # required metadata
 
 title: Provision Human Resources
-description: This topic explains the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources.
+description: This article explains the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 01/07/2022
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form: SystemAdministrationWorkspaceForm
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -33,20 +33,20 @@ ms.dyn365.ops.version: Human Resources
 
 
 
-This topic explains the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources. 
+This article explains the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources. 
 
 ## Prerequisites
 
 Before you begin provisioning a new production environment, the following prerequisites must be in place:
 
-- You have purchased Human Resources through a Cloud Solution Provider (CSP) or enterprise architecture (EA) agreement. If you have an existing Microsoft Dynamics 365 license that already includes the Human Resources service plan, and you can't complete the steps in this topic, contact Support.
+- You have purchased Human Resources through a Cloud Solution Provider (CSP) or enterprise architecture (EA) agreement. If you have an existing Microsoft Dynamics 365 license that already includes the Human Resources service plan, and you can't complete the steps in this article, contact Support.
 
 - The global administrator has signed in to [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) and created a new Human Resources project. 
 
 ## Provision a Human Resources trial environment
 
 >[!NOTE]
-> Starting April 2022, the Human Resources trial environments will not be available on the stand-alone application. Potential customers who are interested in evaluating the Human Resources capabilities within Finance and Operations apps, can do so using the free 30-day trial along with the demo data. Dynamics 365 Finance will include the Human Resources capabilities brought to the Finance infrastructure through the merge of the stand-alone application. For more information, see [Merging of HR offerings brings capabilities together for customers](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers) For more information about Dynamics 365 Finance trials, see the step-by-step [guide](/fin-ops/get-started/before-you-buy). 
+> Starting April 2022, the Human Resources trial environments will not be available on the stand-alone application. Potential customers who are interested in evaluating the Human Resources capabilities within Finance and Operations apps, can do so using the free 30-day trial along with the demo data. Dynamics 365 Finance will include the Human Resources capabilities brought to the Finance infrastructure through the merge of the stand-alone application. For more information, see [Merging of HR offerings brings capabilities together for customers](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers) For more information about Dynamics 365 Finance trials, see the step-by-step [guide](../fin-ops-core/fin-ops/get-started/before-you-buy.md). 
 
 
 Prior to provisioning your first sandbox or production environment, you may want to provision a [Human Resources trial environment](https://go.microsoft.com/fwlink/p/?LinkId=2115962) to validate Human Resources functionality. Trial environments contain fictitious data that can be used to explore the program in a safe manner. Although a trial environment is owned by the user who requested it, other users can be invited through the system administration experience for Human Resources. 
@@ -149,7 +149,7 @@ Use the following guidance when determining which Power Apps environment to depl
 6. Dual-write capabilities for integrating Human Resources data with the Power Apps environment can only be used if the **Enable Dynamics 365 apps** option is selected for the environment. See [Dual-write home page](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md) for more information on Dual-write.
 
     > [!NOTE]
-    > The **Enable Dynamics 365 apps** option must be selected at the time the Power Apps environment is created. If the option is not selected at the time of provisioning, you won't be able to use Dual-write to integrate data between Dynamics 365 Human Resources and the Power Apps environment, or install Dynamics 365 apps such as Dynamics 365 Sales and Field Service on the environment. This option is not reversible. For more information, see [Some important considerations when creating a new environment](//power-platform/admin/create-environment#some-important-considerations-when-creating-a-new-environment) on the Power Platform documentation site.
+    > The **Enable Dynamics 365 apps** option must be selected at the time the Power Apps environment is created. If the option is not selected at the time of provisioning, you won't be able to use Dual-write to integrate data between Dynamics 365 Human Resources and the Power Apps environment, or install Dynamics 365 apps such as Dynamics 365 Sales and Field Service on the environment. This option is not reversible. For more information, see [Some important considerations when creating a new environment](/power-platform/admin/create-environment#some-important-considerations-when-creating-a-new-environment) on the Power Platform documentation site.
 
 7. After you've determined the correct environment to use, you can continue with the provisioning process. 
 

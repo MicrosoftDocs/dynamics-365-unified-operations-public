@@ -1,6 +1,6 @@
 ---
 title: X++ and C# comparison
-description: This topic compares X++ and C# syntax and programming.
+description: This article compares X++ and C# syntax and programming.
 author: RobinARH
 ms.date: 04/10/2020
 audience: Developer
@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic compares X++ and C# syntax and programming.
+This article compares X++ and C# syntax and programming.
 
 ## X++, C# Comparison: Hello World
 
@@ -1477,7 +1477,7 @@ The following table lists several .NET Framework classes for C\# that are in the
 | WINAPI::createDirectory WINAPI::folderExists WINAPI::removeDirectory| `Directory` `DirectoryInfo` `Path`| X++ can use static methods in the `WINAPI` class for many basic operating system functions that involve directories.|
 | WINAPI::getDriveType| `DriveInfo` `DriveType`| These classes and methods are used to obtain drive related information.|
 | WINAPI::copyFile WINAPI::createFile WINAPI::deleteFile WINAPI::fileExists| `File` `FileAttributes` `FileInfo`| X++ can use static methods in the `WINAPI` class for many basic operating system functions that involve files.|
-| `CommaIo` `Comma7Io`| (No corresponding class.)| These X++ classes can generate files that Microsoft Excel can import. In X++ an <a href="https://epplus.codeplex.com/">EPPlus</a> library reference is available for additional interaction with Excel.|
+| `CommaIo` `Comma7Io`| (No corresponding class.)| These X++ classes can generate files that Microsoft Excel can import. In X++ an <a href="">EPPlus</a> library reference is available for additional interaction with Excel.|
 | `AsciiIo` `TextIo`| `FileStream` `TextReader` `TextWriter`| These classes use different code pages.|
 | `Io`| `Stream` `StreamReader` `StreamWriter` `FileStream`| These are often used as base classes that other classes extend.|
 | `CodeAccessPermission` `FileIoPermission`| `System.Security` `.CodeAccessPermission` The namespace `System.Security.Permissions` includes the following classes:<ul><li>`CodeAccessSecurityAttribute`</li><li>`FileIOPermissionAttribute`</li><li>`FileIOPermission`</li><li>`FileIOPermissionAccess`</li></ul>| The concepts and methods of `assert`, `demand`, and `revertAssert` apply to both languages. However, the `deny` and `revertDeny` methods that are available in C# are not available in X++.|

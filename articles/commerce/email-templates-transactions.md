@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create email templates for transactional events 
-description: This topic describes how to create, upload, and configure email templates for transactional events in Microsoft Dynamics 365 Commerce.
+description: This article describes how to create, upload, and configure email templates for transactional events in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 ms.date: 12/10/2021
 ms.topic: article
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: Release 10.0.8
 [!include [banner](includes/banner.md)]
 
 
-This topic describes how to create, upload, and configure email templates for transactional events in Microsoft Dynamics 365 Commerce.
+This article describes how to create, upload, and configure email templates for transactional events in Microsoft Dynamics 365 Commerce.
 
-Dynamics 365 Commerce provides an out-of-box solution for sending emails that alert customers about transactional events. For example, emails can be sent when an order is placed, is ready for pickup, or has been shipped. This topic describes the steps for creating, uploading, and configuring the email templates that are used to send transactional emails.
+Dynamics 365 Commerce provides an out-of-box solution for sending emails that alert customers about transactional events. For example, emails can be sent when an order is placed, is ready for pickup, or has been shipped. This article describes the steps for creating, uploading, and configuring the email templates that are used to send transactional emails.
 
 ## Notification types
 
@@ -68,8 +68,8 @@ The packing completed notification type supports the following additional email 
 | ------------------- | ------- |
 | `pickupstorename`     | The name of the store where the order is available for pickup. |
 | `pickupstoreaddress`  | The address of the store where the order is available for pickup. |
-| `pickupstorehourfrom` | The opening hour of the pickup store. |
-| `pickupstorehourto`   | The closing hour of the pickup store. |
+| `pickupstoreopenfrom` | The opening hour of the pickup store. |
+| `pickupstoreopento` | The closing hour of the pickup store. |
 | `pickupchannelid`     | The store channel ID of the pickup store. |
 | `packingslipid`      | The ID of the packing slip for the order that will be picked up. |
 | `confirmationid`      | The order confirmation ID of the order that will be picked up. (This ID is sometimes referred to as the channel reference ID.) |
@@ -106,7 +106,7 @@ The issue gift card notification type supports the following additional placehol
 | Placeholder name      | Purpose |
 | --------------------- | ------- |
 | `giftcardnumber`        | The gift card number, for products of the gift card type. |
-| `giftcardbalance`       | The gift card balance, for products of the gift card type. |
+| `availablebalance` | The remaining balance on the gift card. |
 | `giftcardmessage`       | The gift card message, for products of the gift card type. |
 | `giftcardpin`         | The personal identification number (PIN) of the gift card, for products of the gift card type. (This placeholder is specific to external gift cards.) |
 | `giftcardexpiration`    | The expiration date of the gift card, for products of the gift card type. (This placeholder is specific to external gift cards.) |

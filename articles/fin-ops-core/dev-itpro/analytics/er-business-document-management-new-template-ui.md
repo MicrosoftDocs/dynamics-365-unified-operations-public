@@ -2,7 +2,7 @@
 # required metadata
 
 title: Microsoft Office-style user interface in Business document management (contains video)
-description: This topic explains how to use the new user interface in the Business document management feature of Electronic reporting (ER) framework.
+description: This article explains how to use the new user interface in the Business document management feature of Electronic reporting (ER) framework.
 author: v-anamir
 ms.date: 01/05/2022
 ms.topic: article
@@ -37,7 +37,7 @@ The new user interface (UI) is clearer and more comfortable to use. The **Busine
 
 You can use the **New document** button in the **Business document management** workspace to create and edit a template in an [Electronic reporting (ER)](general-electronic-reporting.md) format [configuration](general-electronic-reporting.md#Configuration) that is provided by another provider and located in the current Finance instance, or to upload a new template from an Excel workbook. Additionally, in version 10.0.25 and later, you can use the **New document** button to create and edit a template in an ER format configuration that is stored in the [Global repository](general-electronic-reporting.md#Repository).
 
-In the examples in this topic, the active provider is Contoso, and you use it to create a template that is based on a template that is provided by Microsoft. Alternatively, you can create a template by uploading your own template in Excel format.
+In the examples in this article, the active provider is Contoso, and you use it to create a template that is based on a template that is provided by Microsoft. Alternatively, you can create a template by uploading your own template in Excel format.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWAVQg]
 

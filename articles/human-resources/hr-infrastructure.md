@@ -2,7 +2,7 @@
 # required metadata
 
 title: Dynamics 365 Human Resources infrastructure merge - Release 10.0.25 update
-description: This topic provides information about Microsoft Dynamics 365 Human Resources release 10.0.25, which brings the first wave of capabilities in the infrastructure merge.
+description: This article provides information about Microsoft Dynamics 365 Human Resources release 10.0.25, which brings the first wave of capabilities in the infrastructure merge.
 author: twheeloc
 ms.date: 01/19/2022
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 

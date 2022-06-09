@@ -1,6 +1,6 @@
 ---
 title: Upgrade to the party and global address book model
-description: This topic describes how to upgrade dual-write data to the party and global address book model.
+description: This article describes how to upgrade dual-write data to the party and global address book model.
 author: RamaKrishnamoorthy
 ms.date: 03/10/2022
 ms.topic: article
@@ -35,7 +35,7 @@ At the end of the process, the following comma-separated values (.csv) files are
 | ImportFONewPostalAddress.csv | This file helps create new **Postal Address** records in the Finance and Operations app. |
 | ImportFONewElectronicAddress.csv | This file helps create new **Electronic Address** records in the Finance and Operations app. |
 
-This topic explains how to use the Data Factory templates and upgrade your data. If you don't have any customizations, you can use the templates as they are. However, if you have customizations for **Account**, **Contact**, and **Vendor** data, you must modify the templates as described in this topic.
+This article explains how to use the Data Factory templates and upgrade your data. If you don't have any customizations, you can use the templates as they are. However, if you have customizations for **Account**, **Contact**, and **Vendor** data, you must modify the templates as described in this article.
 
 > [!IMPORTANT]
 > There are special instructions for running the Party postal address and Party electronic address templates. You must run the Party template first, then the Party postal address template, and then the Party electronic address template. Each template is designed to import in a separate data factory.
@@ -276,7 +276,7 @@ This section describes the setup that is required before you run the Party posta
 
     ![Running the Party postal address and Party electronic address templates.](media/ADF-7.png)
 
-10. To update the Finance and Operations app with this data, you must convert the .csv files into an Excel workbook and [import it into the Finance and Operations app](/data-entities/data-import-export-job). Alternatively, if the CSV import works for you, you can import the .csv files directly. This step might take a few hours to be completed, depending on the volume.
+10. To update the Finance and Operations app with this data, you must convert the .csv files into an Excel workbook and [import it into the Finance and Operations app](../data-import-export-job.md). Alternatively, if the CSV import works for you, you can import the .csv files directly. This step might take a few hours to be completed, depending on the volume.
 
     ![Successful import.](media/ADF-8.png)
 

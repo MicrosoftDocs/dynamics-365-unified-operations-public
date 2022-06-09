@@ -12,14 +12,14 @@
         items:
         - name: What's new or changed in Commerce home page
           href: get-started/whats-new-home-page.md
+        - name: Commerce 10.0.28 (July 2022)
+          href: get-started/whats-new-commerce-10-0-28.md
+        - name: Commerce 10.0.27 (July 2022)
+          href: get-started/whats-new-commerce-10-0-27.md
         - name: Commerce 10.0.26 (May 2022)
           href: get-started/whats-new-commerce-10-0-26.md
         - name: Commerce 10.0.25 (April 2022)
           href: get-started/whats-new-commerce-10-0-25.md 
-        - name: Commerce 10.0.24 (February 2022)
-          href: get-started/whats-new-commerce-10-0-24.md 
-        - name: Commerce 10.0.23 (January 2022)
-          href: get-started/whats-new-commerce-10-0-23.md 
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -58,6 +58,8 @@
           href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/commerce/toc.json
         - name: Configure service updates
           href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/commerce/toc.json
+        - name: Pre-servicing and post-servicing
+          href: ../fin-ops-core/dev-itpro/lifecycle-services/pre-post-servicing.md?toc=/dynamics365/commerce/toc.json
         - name: Pause service updates
           href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?toc=/dynamics365/commerce/toc.json
         - name: Get notified about service updates
@@ -356,6 +358,8 @@
               href: tax-exempt-price-inclusive.md
             - name: Configure sales tax for online orders
               href: sales-tax-config.md
+            - name: Hide tax breakup information in order summaries
+              href: hide-taxes-breakup.md
           - name: Set up an email notification profile 
             href: email-notification-profiles.md
           - name: Number sequences 
@@ -392,9 +396,11 @@
           items:
           - name: Store Commerce app
             href: dev-itpro/store-commerce.md
+          - name: Migrate Modern POS to Store Commerce
+            href: dev-itpro/pos-extension/migrate-mpos-store-commerce.md
           - name: Device management implementation guidance
             href: implementation-considerations-devices.md
-          - name: Choose between MPOS and Cloud POS
+          - name: Choose between Store Commerce and Cloud POS
             href: MPOS-or-CPOS.md
           - name: Online and offline POS operations
             href: pos-operations.md
@@ -496,6 +502,8 @@
           href: tasks/configure-functionality-profile-sales-representative.md
         - name: Create financial dimensions for retail channels and configure values on stores 
           href: tasks/create-financial-dimensions-retail-channels.md
+        - name: Set up number sequences for retail statements
+          href: retail-statements-number-sequences.md
         - name: Enable consistent delivery mode handling in e-commerce channels
           href: consistent-delivery-mode-handling.md
       - name: Set up an online channel
@@ -598,6 +606,8 @@
             href: wallets.md
           - name: Enhanced payments in storefront checkout
             href: dev-itpro/enhanced-sca.md
+          - name: Configure express payments for PayPal
+            href: dev-itpro/express-payments-paypal.md
           - name: Payments FAQ 
             href: dev-itpro/payments-retail.md
         - name: Email and notifications
@@ -884,6 +894,8 @@
       items:
       - name: Statements overview
         href: retail-statements.md
+      - name: Commerce posting parameters
+        href: commerce-posting-parameters.md
       - name: Validate store transactions for statement calculation 
         href: valid-checker.md
       - name: Disable rules in retail transaction consistency checker
@@ -954,6 +966,8 @@
         href: online-store-overview.md
       - name: Create an e-commerce site
         items:
+        - name: Map channels to e-commerce sites
+          href: map-channels-sites.md
         - name: Configure your domain name
           href: configure-your-domain-name.md
         - name: Deploy a new e-commerce tenant
@@ -1100,6 +1114,8 @@
             href: adventure-works-theme.md
           - name: Install the Adventure Works theme
             href: install-adventure-works.md
+        - name: Commerce localization guide
+          href: e-commerce-localization-guide.md
       - name: Manage digital assets
         items:
         - name: Digital asset management overview
@@ -1290,6 +1306,10 @@
         items:
         - name: Build custom response pages for 4xx/5xx status code errors
           href: build-pages-400-500-errors.md
+      - name: Service integration
+        items:
+        - name: Integrate Customer Voice into e-commerce site pages
+          href: customer-voice-integration.md
     - name: Fraud protection 
       items:
       - name: Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce 
@@ -1312,6 +1332,14 @@
         href: b2b/payment-method.md
       - name: Set product quantity limits for B2B e-commerce sites
         href: b2b/quantity-limits.md
+      - name: Commerce catalogs for B2B sites
+        items:
+        - name: Create Commerce catalogs for B2B sites
+          href: catalogs-b2b-sites.md
+        - name: Extensibility impact of Commerce catalogs for B2B customizations
+          href: catalogs-b2b-sites-dev.md
+        - name: Commerce catalogs for B2B FAQ
+          href: catalogs-b2b-sites-FAQ.md         
     - name: Monitoring and analysis
       items:
       - name: Monitor sales and margin performance
@@ -2100,6 +2128,8 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-lookup-data-sources.md?toc=/dynamics365/commerce/toc.json 
           - name: Use DATA COLLECTION data sources in ER formats
             href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/commerce/toc.json 
+          - name: Use USER INPUT PARAMETER data sources to specify parameters for a report that you want to generate
+            href: ../fin-ops-core/dev-itpro/analytics/er-user-input-parameter-data-sources.md?toc=/dynamics365/commerce/toc.json 
           - name: Debug data sources
             href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/commerce/toc.json
         - name: Configure data models
@@ -2196,6 +2226,8 @@
             href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/commerce/toc.json
           - name: Troubleshoot performance issues in ER configurations
             href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/commerce/toc.json
+          - name: Reduce the number of table fields that are fetched at runtime
+            href: ../fin-ops-core/dev-itpro/analytics/er-reduce-fetched-fields-number.md?toc=/dynamics365/commerce/toc.json
         - name: Business document management (BDM)
           items:
           - name: BDM overview
@@ -2450,6 +2482,8 @@
             href: dev-itpro/retail-sdk/sdk-github.md
           - name: Legacy Retail SDK migration
             href: dev-itpro/retail-sdk/migrate-commerce-sdk.md
+          - name: Obsolete and removed APIs, classes, and methods
+            href: dev-itpro/obsolete-apis-classes-methods.md
           - name: Modernizing the Commerce in-store technology stack (white paper)
             href: https://www.microsoft.com/download/details.aspx?id=103896
         - name: Environment setup
@@ -2474,13 +2508,17 @@
             href: dev-itpro/extension-resource-localization.md
       - name: Headless Commerce
         items:
+        - name: Overview
+          items:
+          - name: Introduction to Commerce Scale Unit (CSU) Core
+            href: dev-itpro/CSU-core.md
         - name: APIs and reference
           items:
           - name: Commerce Scale Unit customer and consumer APIs
             href: dev-itpro/retail-server-customer-consumer-api.md
           - name: Consume Retail Server APIs in external applications
             href: dev-itpro/consume-retail-server-api.md
-          - name: Typescript and C# proxies for Retail POS
+          - name: TypeScript and C# proxies for Retail POS
             href: dev-itpro/typescript-proxy-retail-pos.md
           - name: Commerce runtime (CRT) architecture and configuration
             href: dev-itpro/commerce-runtime-overview.md
@@ -2528,6 +2566,10 @@
             href: dev-itpro/extensions-shipping-carrier-integration.md
         - name: Packaging and deployment
           items:
+          - name: Create a Cloud Scale Unit extension package
+            href: dev-itpro/CSU-packaging.md
+          - name: Merge Cloud Scale Unit extension packages for deployment
+            href: dev-itpro/merge-csu-extensions.md
           - name: Remove Cloud Scale Unit extensions
             href: dev-itpro/retail-sdk/remove-csu-package.md
       - name: Store Commerce
@@ -2540,16 +2582,20 @@
             href: dev-itpro/pos-extension/pos-extension-basics.md
           - name: Migrate POS Extensions to the Commerce SDK
             href: dev-itpro/pos-extension/migrate-pos-extension.md
+          - name: Create a POS extension package project
+            href: dev-itpro/pos-extension/create-pos-extension-package.md
+          - name: Debug Store Commerce extensions using VS Code
+            href: dev-itpro/sc-debug.md
+          - name: Sealed MPOS and CPOS extensions
+            items:
+              - name: Create an .appx file for a Modern POS extension package
+                href: dev-itpro/pos-extension/create-pos-extension-appx.md
+              - name: Debug MPOS (Sealed) and CPOS extensions
+                href: dev-itpro/pos-extension/debug-pos-extension.md
         - name: Environment setup
           items:
           - name: Local development environment
             href: dev-itpro/setup-local-dev-env.md
-          - name: Create a POS extension package project
-            href: dev-itpro/pos-extension/create-pos-extension-package.md
-          - name: Create an .appx file for a Modern POS extension package
-            href: dev-itpro/pos-extension/create-pos-extension-appx.md
-          - name: Debug POS extensions
-            href: dev-itpro/pos-extension/debug-pos-extension.md
         - name: APIs and reference
           items: 
           - name: View POS extension package information
@@ -2614,6 +2660,8 @@
             href: dev-itpro/pos-extension/mpos-extension-signing.md 
           - name: Create a Cloud POS extension package
             href: dev-itpro/pos-extension/cpos-extension-package.md
+          - name: Create a Store Commerce extension installer package
+            href: dev-itpro/store-comm-extension-installer.md
       - name: E-commerce
         items:
         - name: Overview
@@ -2698,6 +2746,8 @@
                 href: e-commerce-extensibility/interactive-components.md
               - name: Mock the signed-in state during local development
                 href: e-commerce-extensibility/mock-sign-in.md
+              - name: Set up web API authentication transfer using Azure Active Directory B2C
+                href: e-commerce-extensibility/web-api-auth-trans-aad-b2c.md
               - name: Configure module properties to be shown based on context
                 href: e-commerce-extensibility/configure-properties-context.md
               - name: Globalize modules by using the CultureInfoFormatter class
@@ -2810,12 +2860,20 @@
               href: e-commerce-extensibility/instance-cache.md
             - name: Module CSS optimization
               href: e-commerce-extensibility/module-css-optimization.md
+            - name: Optimize images on product details pages
+              href: e-commerce-extensibility/optimize-images-pdp.md
+            - name: Optimize images on search and category pages
+              href: e-commerce-extensibility/optimize-images-search-cat.md
           - name: Telemetry and analytics
             items:
             - name: Telemetry logger
               href: e-commerce-extensibility/telemetry-logger.md
-      - name: Commerce HQ
+      - name: Commerce headquarters
         items:
+        - name: CDX package extension
+          items:       
+          - name: Extend customer CDX package to add custom data
+            href: dev-itpro/extend-customer-CDX-package.md
         - name: Packaging and deployment
           items:
           - name: Create Commerce payment packaging for Finance and Operations deployment
@@ -2860,6 +2918,14 @@
             href: dev-itpro/create-retail-experience-app.md
     - name: Troubleshooting
       items: 
+      - name: Store Commerce
+        items:
+        - name: Setup and installation issues
+          href: troubleshoot/store-commerce-setup-installation.md
+        - name: Performance issues
+          href: troubleshoot/store-commerce-performance.md
+        - name: Extension issues
+          href: troubleshoot/store-commerce-extensions.md
       - name: Order processing
         items:
         - name: Payment type must be credit card error
@@ -2906,6 +2972,8 @@
           href: troubleshoot/items-without-inventory-checked-out.md
         - name: Ratings refiner appears on search results and category pages when the ratings and reviews solution isn't enabled
           href: troubleshoot/hide-ratings-refiner.md
+        - name: Order summary subtotal doesn't include taxes on charges when using customized order summary modules
+          href: troubleshoot/summary-taxes-custom-modules-10.0.27.md
       - name: Customer management
         items:
         - name: Welcome email is not sent when new customers are created

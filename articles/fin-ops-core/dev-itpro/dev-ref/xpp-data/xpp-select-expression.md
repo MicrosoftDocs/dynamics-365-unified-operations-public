@@ -1,6 +1,6 @@
 ---
 title: Write select statements as expressions
-description: This topic explains how you can use a select statement as an expression.
+description: This article explains how you can use a select statement as an expression.
 author: tonyafehr
 ms.date: 06/16/2020
 audience: Developer

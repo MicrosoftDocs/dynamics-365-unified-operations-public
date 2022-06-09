@@ -2,16 +2,16 @@
 # required metadata
 
 title: Company directory mobile workspace
-description: This topic provides information about the Company directory mobile workspace, which lets users view and contact other employees in their organization.
+description: This article provides information about the Company directory mobile workspace, which lets users view and contact other employees in their organization.
 author: jcart1106
-ms.date: 09/17/2019
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application User
 # ms.devlang: 
 ms.reviewer: sericks
@@ -27,8 +27,9 @@ ms.dyn365.ops.version: July 2017 update
 # Company directory mobile workspace
 
 [!include [banner](../includes/banner.md)]
+[!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
-This topic provides information about the **Company directory** mobile workspace. This workspace lets users view and contact other employees in their organization.
+This article provides information about the **Company directory** mobile workspace. This workspace lets users view and contact other employees in their organization.
 
 This mobile workspace can be used with the Finance and Operations mobile app.
 

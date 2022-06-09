@@ -2,7 +2,7 @@
 # required metadata
 
 title: Cash flow forecasting
-description: This topic provides an overview of the cash flow forecasting process. It also explains how cash flow forecasting is integrated with other modules in the system.
+description: This article provides an overview of the cash flow forecasting process. It also explains how cash flow forecasting is integrated with other modules in the system.
 author: panolte
 ms.date: 02/16/2022
 ms.topic: article
@@ -14,12 +14,12 @@ ms.technology:
 ms.search.form:  LedgerCovParameters
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: saraschi 
+ms.author: panolte
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 
@@ -115,7 +115,7 @@ For more information, see [External data in cash flow forecasts](../../finance/f
 
 In version 10.0.17, a new feature enables integration with Project management and accounting and Cash flow forecasting. In the **Feature management** workspace, turn on the **Cash flow Project forecast** feature to include the forecasted costs and revenues in the cash flow forecast. On the **Project management and accounting** tab of the **Cash flow forecast setup** page, select the project types and transaction types that should be included in the cash flow forecast. Then select the project forecast model. A reduction type submodel works best. The liquidity accounts that were entered in the Accounts receivable setup are used as the default liquidity accounts. Therefore, you don't have to enter default liquidity accounts when you set up the cash flow forecast. A budget model can also be used, but only one type can be selected on the **Cash flow forecast setup** page for Project management and accounting. A forecast model provides the most flexibility when Project management and accounting or Project Operations is used.
 
-After Cash flow project forecast feature is turned on, the cash flow forecast can be viewed for each project on the **All projects** page. On the Action Pane, on the **Plan** tab, in the **Forecast** group, select **Cash flow forecast**. In the **Cash overview** workspaces (see the [Reporting](#reporting) section later in this topic), the Project forecast transaction type shows the inflows (project forecast revenue) and the outflows (project forecast costs). The amounts can be included only if the **Project stage** field in the **Cash overview** workspaces is set to **In process**.
+After Cash flow project forecast feature is turned on, the cash flow forecast can be viewed for each project on the **All projects** page. On the Action Pane, on the **Plan** tab, in the **Forecast** group, select **Cash flow forecast**. In the **Cash overview** workspaces (see the [Reporting](#reporting) section later in this article), the Project forecast transaction type shows the inflows (project forecast revenue) and the outflows (project forecast costs). The amounts can be included only if the **Project stage** field in the **Cash overview** workspaces is set to **In process**.
 
 Project transactions are still included in the cash flow forecast in several ways, regardless of whether the **Cash flow project forecast** feature is turned on. Posted project invoices are included in the forecast as part of open customer transactions. Project-initiated sales orders and purchase orders are included in the forecast as open orders after they are entered in the system. You can also transfer project forecasts to a ledger budget model. This ledger budget model is then included in the cash flow forecast as part of the budget register entries. If you've turned on the **Cash flow project forecast** feature, don't transfer project forecasts to a ledger budget model, because this action will cause the project forecasts to be counted two times.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Project accounting with general budget reservations
-description: This topic provides information about project accounting that uses general budget reservations for Public sector.
+description: This article provides information about project accounting that uses general budget reservations for Public sector.
 author: AlexRenney
 ms.date: 04/25/2019
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form: BudgetReservation_PSN
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 

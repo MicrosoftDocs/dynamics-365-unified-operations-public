@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up and process bridged payments
-description: This topic explains how to set up and process bridged customer payments. A bridged payment is a payment that is posted to the general ledger in two steps.
+description: This article explains how to set up and process bridged customer payments. A bridged payment is a payment that is posted to the general ledger in two steps.
 author: rachel-profitt
 ms.date: 12/03/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form: CustPaymMode, VendPaymMode, LedgerJournalTable, LedgerJournalTra
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 A bridged payment is a payment that is posted to the general ledger in two steps. Typically, this approach is used when the method of payment is set to **Bank**, and you must post transactions to the bank account only when the transaction has cleared the bank. However, you can also use it for a ledger account. In this case, the system moves the amount from one main account to another main account when the bridging posting is processed.
 
-You can create bridged payments from either Accounts payable or Accounts receivable. Although this topic explains how to configure bridging posting for Accounts receivable, the steps for Accounts payable transactions are similar.
+You can create bridged payments from either Accounts payable or Accounts receivable. Although this article explains how to configure bridging posting for Accounts receivable, the steps for Accounts payable transactions are similar.
 
 ## Set up bridging posting
 

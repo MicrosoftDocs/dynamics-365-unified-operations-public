@@ -2,7 +2,7 @@
 # required metadata
 
 title: How workers use the production floor execution interface
-description: This topic describes how to use the production floor execution interface from a worker's point of view.
+description: This article describes how to use the production floor execution interface from a worker's point of view.
 author: johanhoffmann
 ms.date: 01/24/2022
 ms.topic: article
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: johanho
@@ -38,7 +38,7 @@ After the device has been prepared, the sign-in page appears on it. This page sh
 
 ![Production floor execution interface sign-in page.](media/pfei-sign-in-page.png "Production floor execution interface sign-in page")
 
-The remaining sections of this topic describe how workers interact with the interface.
+The remaining sections of this article describe how workers interact with the interface.
 
 ## All jobs tab
 
@@ -78,9 +78,9 @@ The active jobs list has the following columns:
 
 ## My jobs tab
 
-The **My jobs** tab lets workers easily view all unstarted and unfinished jobs that are assigned specifically to them. It's useful in companies where jobs are sometimes or always assigned to specific workers (human resources) instead of other types of resources (such as machines). 
+The **My jobs** tab lets workers easily view all unstarted and unfinished jobs that are assigned specifically to them. It's useful in companies where jobs are sometimes or always assigned to specific workers (human resources) instead of other types of resources (such as machines).
 
-The scheduling system automatically assigns each production job to a specific resource record, and each resource record has a type (such as machine or human). When you set up an employee as a production worker, you can associate the worker account with a unique human resource record. 
+The scheduling system automatically assigns each production job to a specific resource record, and each resource record has a type (such as machine or human). When you set up an employee as a production worker, you can associate the worker account with a unique human resource record.
 
 The **My jobs** tab lists all unstarted and unfinished jobs that have been assigned to the human resource record of the signed-in worker, if any worker is signed in. It never lists jobs that have been assigned to a machine or other type of resource, even if the signed-in worker has started to work on those jobs.
 
@@ -91,7 +91,7 @@ To view all jobs that have been started by the signed-in worker, regardless of t
 ## My machine tab
 
 The **My machine** tab lets workers select an asset that is connected to a machine resource within the filter set on the **All jobs** tab. The worker can then view the state and health of the selected asset by reading values for up to four selected counters and lists of recent maintenance requests and registered downtimes. The worker can also request maintenance for the selected asset and register and edit machine downtime. (This tab name is customizable and may be different for your system.)
- 
+
 ![The My machine tab.](media/pfei-my-machine-tab.png "The My machine tab")
 
 The **My machine** tab has the following columns. The numbers correspond to the numbers in the previous illustration.
@@ -206,9 +206,9 @@ The following actions can be performed:
 - If the worker selects **OK**, the picking list isn't deleted. It will be posted when the job is reported in the **Report scrap** or **Report progress** dialog box.
 - If the worker selects **Cancel** in the **Report progress** or **Report scrap** dialog box, the picking list is deleted.
 
-### Adjust material from the toolbar on the right
+### Adjust material from the primary or secondary toolbar
 
-The **Adjust material** button can be configured so that it appears on the toolbar on the right. (For more information, see [Design the production floor execution interface](production-floor-execution-tabs.md).) A worker can select **Adjust material** for a production job that is in progress. In this case, the **Adjust material** dialog box appears, where the worker can make the desired adjustments. When the dialog box is opened, a production picking list that contains lines for the adjusted quantities is created for the production order. If the worker selects **Post now**, the adjustment is confirmed, and the picking list is posted. If the worker selects **Cancel**, the picking list is deleted, and no adjustment is made.
+The **Adjust material** button can be configured so that it appears on the primary or secondary toolbar. (For more information, see [Design the production floor execution interface](production-floor-execution-tabs.md).) A worker can select **Adjust material** for a production job that is in progress. In this case, the **Adjust material** dialog box appears, where the worker can make the desired adjustments. When the dialog box is opened, a production picking list that contains lines for the adjusted quantities is created for the production order. If the worker selects **Post now**, the adjustment is confirmed, and the picking list is posted. If the worker selects **Cancel**, the picking list is deleted, and no adjustment is made.
 
 ### Adjust material consumption for catch weight items
 
@@ -264,6 +264,42 @@ In both scenarios, after Shannon confirms her selection, she goes to either the 
 Workers can register breaks. Breaks can be flexibly defined, as described in [Pay based on registrations](pay-based-on-registrations.md).
 
 A worker registers a break by selecting **Break** and then selecting the card that represents the break type (such as lunch). After the worker confirms the selection, the device shows either the sign-in page or a page that will wait for the worker to confirm that they have returned from the break. The page that appears depends on the configuration of the production floor execution interface. (For more information, see [Configure the production floor execution interface](production-floor-execution-configure.md).)
+
+## View the "My day" dialog
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until 10.0.27 GA -->
+
+The **My day** dialog provides workers with an overview of their registrations and balances. The dialog is divided into the following three sections:
+
+- The main section lists the registrations that the current worker made on a selected date. It opens showing registrations for the current day, and provides a date picker that lets the worker view other days.
+- The **Last calculated daily balance** section shows the worker's current balances for paid time, paid overtime, absence, and paid absence. These values are based on the registrations that have been calculated during the approval process.
+- The **Balances** section provides an overview of the balances within a defined period for selected categories of registrations (such as vacation, standard time, and overtime). These balances are based on the way statistical balances are set up in the **Time and attendance** module. For more information about how to set this up, see [Show vacation balances in the production floor execution interface](production-floor-execution-payroll-stats.md).
+
+Admins can add this feature to the interface by placing the **My day** button on a toolbar for each relevant tab as described in [Design the production floor execution interface](production-floor-execution-tabs.md).
+
+## Working in teams
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until 10.0.27 GA -->
+
+When multiple workers are assigned to the same production job, they can form a team. The team can nominate one worker as a pilot. The remaining workers then automatically become assistants of that pilot. For the resulting team, only the pilot must register job status. Time records apply to all team members.
+
+### Prerequisites
+
+To use teams, an admin must enable the **Assistant** action for the primary toolbar on the **All jobs** tab of the production floor execution interface. For instructions, see [Design the production floor execution interface](production-floor-execution-tabs.md).
+
+### Form a new team that has a pilot and an assistant
+
+A worker can register as an assistant by selecting **Assistant** on the **All jobs** tab. Then, in the **Select an employee to assist** dialog box that appears, the worker can select a pilot in a list of workers who are actively working on a job. After the worker confirms their selection, they become an assistant to the selected worker, who becomes the pilot for the new team.
+
+### Assign a new pilot to an existing team
+
+When a team wants to select a new pilot, the current pilot must nominate another worker in the team as the new pilot. To nominate a new pilot, the current pilot selects **Assistant** on the **All jobs** tab. Then, in the **Change pilot** dialog box that appears, the pilot can select a new pilot in a list of workers who are already on the team. After the current pilot confirms their selection, they are dropped from the team completely. However, they can rejoin the team as they require.
+
+### Assistant clocks out
+
+When a worker who works as an assistant clocks out, they leave the team. If the **Permanent teams** and **Restart at clock in** options are set to *Yes*, a worker who clocks out will automatically rejoin the team the next time that they clock in. You can find these options on the **General** tab of the **Time and attendance parameters** page.
 
 ## Opening instructions
 

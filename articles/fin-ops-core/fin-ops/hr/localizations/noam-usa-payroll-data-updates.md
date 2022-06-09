@@ -2,7 +2,7 @@
 # required metadata
 
 title: Payroll data updates FAQ
-description: This topic lists questions and answers that address changes to payroll data.
+description: This article lists questions and answers that address changes to payroll data.
 author: andreabichsel
 ms.date: 06/20/2017
 ms.topic: article
@@ -31,13 +31,13 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../../includes/banner.md)]
 
-A number of changes can and do happen at the end of a year that require changes to your payroll data. Workers can change their benefit election, or your company might change benefit rates, and benefit balances. Workers who move into different positions also result in changes to payroll data. This topic lists questions and answers that address these kinds of changes.
+A number of changes can and do happen at the end of a year that require changes to your payroll data. Workers can change their benefit election, or your company might change benefit rates, and benefit balances. Workers who move into different positions also result in changes to payroll data. This article lists questions and answers that address these kinds of changes.
 
-This topic describes functionality that is available only if the **Payroll - USA** configuration key is selected.
+This article describes functionality that is available only if the **Payroll - USA** configuration key is selected.
 
 ## How do I prepare payroll for a new fiscal year?
 
-If a pay statement that contains a benefit accrual is generated in one fiscal year and then reversed in the next fiscal year, you might have to adjust the carry-forward balance. You also might have to adjust the carry-forward balance if a pay statement is generated in the new fiscal year before the final pay statement from the previous fiscal year was submitted or posted. For more information about how to adjust benefit accruals, see "Can I adjust the balance in a benefit accrual plan?" later in this topic.
+If a pay statement that contains a benefit accrual is generated in one fiscal year and then reversed in the next fiscal year, you might have to adjust the carry-forward balance. You also might have to adjust the carry-forward balance if a pay statement is generated in the new fiscal year before the final pay statement from the previous fiscal year was submitted or posted. For more information about how to adjust benefit accruals, see "Can I adjust the balance in a benefit accrual plan?" later in this article.
 
 To prepare Payroll for a new fiscal year, you have to set up pay periods and work periods for the year, as described in these steps:
 

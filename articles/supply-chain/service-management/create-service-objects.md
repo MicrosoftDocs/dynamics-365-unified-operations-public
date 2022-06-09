@@ -2,8 +2,8 @@
 # required metadata
 
 title: Create service objects 
-description: This topic provides a procedure that shows how to create service objects. 
-author: kamaybac
+description: This article provides a procedure that shows how to create service objects. 
+author: sorenva
 ms.date: 02/21/2018
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kamaybac
+ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -39,7 +39,7 @@ Service objects are a customer's assets and products for which you can perform a
 4. In the **Service object group** field, select the group that the object belongs to. 
 5. Optional: Select an item for the service object line, or select a template bill of materials (BOM).
 
-## Related topics
+## Related articles
 
 [Service objects overview](service-objects.md)
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Rebate management deal workflows
-description: This topic explains how to set up a Rebate management deal workflow to approve and activate deals.
+description: This article explains how to set up a Rebate management deal workflow to approve and activate deals.
 author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
@@ -15,9 +15,9 @@ ms.search.form: WorkflowTableListPageRnr
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
+
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: chuzheng
@@ -40,7 +40,7 @@ Users can't manually approve deals. The workflow must always be used.
 
 ## Create and manage Rebate management deal workflows
 
-To work with your Rebate management deal workflows, go to **Rebate management \> Setup \> Rebate management workflows**. There, you can view, create, and update workflows as required. Only one workflow of this type can be active at a time. For more information about workflows, how to work with the **Rebate management workflows** page, and how to create workflows, see [Workflow system overview](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md) and its related topics.
+To work with your Rebate management deal workflows, go to **Rebate management \> Setup \> Rebate management workflows**. There, you can view, create, and update workflows as required. Only one workflow of this type can be active at a time. For more information about workflows, how to work with the **Rebate management workflows** page, and how to create workflows, see [Workflow system overview](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md) and its related articles.
 
 ## Use a workflow to activate a deal
 

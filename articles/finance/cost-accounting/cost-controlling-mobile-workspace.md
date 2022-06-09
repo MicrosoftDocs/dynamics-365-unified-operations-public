@@ -2,9 +2,9 @@
 # required metadata
 
 title: Cost controlling mobile workspace
-description: This topic provides information about the Cost controlling mobile workspace. This workspace lets cost center managers view information about cost center performance anytime and anywhere. 
+description: This article provides information about the Cost controlling mobile workspace. This workspace lets cost center managers view information about cost center performance anytime and anywhere. 
 author: AndersGirke
-ms.date: 12/01/2017
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.search.form: CAMMobileCostObjectOverviewDetailsCurrentPeriod, CAMMobileCostOb
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 267114
 ms.assetid: 612f2988-b2b9-420d-9825-40b99dc0e204
@@ -30,10 +30,11 @@ ms.search.validFrom: 2016-11-30
 # Cost controlling mobile workspace
 
 [!include [banner](../includes/banner.md)]
+[!include [mobile app deprecation](../../fin-ops-core/dev-itpro/includes/mobile-app-deprecation-banner.md)]
 
-This topic provides information about the **Cost controlling** mobile workspace. This workspace lets cost center managers view information about cost center performance anytime and anywhere.
+This article provides information about the **Cost controlling** mobile workspace. This workspace lets cost center managers view information about cost center performance anytime and anywhere.
 
-This mobile workspace is intended to be used with the Finance and Operations mobile app.
+This mobile workspace is intended to be used with the Finance and Operations (Dynamics 365) mobile app.
 
 ## Overview
 The **Cost controlling** mobile workspace provides an instant view of the current performance of cost centers by comparing actual costs against the budgeted costs. You can drill down to the status of individual cost elements.
@@ -118,7 +119,7 @@ If version 1611 with Platform update 3 or later has been deployed for your organ
 
 
 ## Download and install the mobile app
-Download and install the Finance and Operations mobile app:
+Download and install the Finance and Operations (Dynamics 365) mobile app:
 
 -   [For Android phones](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [For iPhones](https://go.microsoft.com/fwlink/?linkid=850663)

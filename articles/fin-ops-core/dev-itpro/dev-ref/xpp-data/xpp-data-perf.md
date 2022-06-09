@@ -1,6 +1,6 @@
 ---
 title: Conversion of operations from set-based to record-by-record
-description: This topic describes how to speed up SQL operations in the X++ language.
+description: This article describes how to speed up SQL operations in the X++ language.
 author: RobinARH
 ms.date: 06/16/2020
 audience: Developer

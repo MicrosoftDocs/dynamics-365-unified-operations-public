@@ -2,9 +2,9 @@
 # required metadata
 
 title: Cart module
-description: This topic covers cart modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+description: This article covers cart modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 12/15/2020
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic covers cart modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+This article covers cart modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
 A cart module shows the items that have been added to the cart before the customer proceeds to checkout. The module also shows an order summary and lets the customer apply or remove promotional codes.
 
@@ -79,12 +79,12 @@ The cart module retrieves product information by using Commerce Scale Unit APIs.
 To add a cart module to a new page and set the required properties, follow these steps.
 
 1. Go to **Fragments**, and select **New** to create a new fragment.
-1. In the **New fragment** dialog box, select the **Cart** module.
+1. In the **Select fragment** dialog box, select the **Cart** module.
 1. Under **Fragment name**, enter the name **Cart fragment**, and then select **OK**.
 1. Select the **Cart** slot.
 1. In the properties pane on the right, select the pencil symbol, enter heading text in the field, and then select the check mark symbol.
-1. In the **Cart** slot, select the ellipsis (**...**), and then select **Add Module**.
-1. In the **Add Module** dialog box, select the **Store selector** module, and then select **OK**.
+1. In the **Cart** slot, select the ellipsis (**...**), and then select **Add module**.
+1. In the **Select modules** dialog box, select the **Store selector** module, and then select **OK**.
 1. Select **Save**, select **Finish editing** to check in the fragment, and then select **Publish** to publish it.
 1. Go to **Templates**, and select **New** to create a new template.
 1. In the **New Template** dialog box, under **Template name**, enter a name for the template.

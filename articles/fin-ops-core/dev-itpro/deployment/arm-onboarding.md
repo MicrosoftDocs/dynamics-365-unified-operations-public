@@ -2,7 +2,7 @@
 # required metadata
 
 title: Complete the Azure Resource Manager onboarding process
-description: This topic explains how to complete the Azure Resource Manager onboarding process for your connectors. 
+description: This article explains how to complete the Azure Resource Manager onboarding process for your connectors. 
 author: saurabhsurana
 ms.date: 03/15/2022
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 2
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to complete the Microsoft Azure Resource Manager onboarding process for your connectors. 
+This article explains how to complete the Microsoft Azure Resource Manager onboarding process for your connectors. 
 
 To deploy Azure Resource Manager topologies, you must complete the onboarding process for your connectors. To start the onboarding process, you must have the following items:
 
@@ -113,7 +113,7 @@ Follow these steps to enable the Azure Connector and, as required, add an LCS us
 Complete this procedure only if you didn't complete steps 6 through 8 of the previous procedure, "Enable the Azure connector and add an LCS user." 
 
 1.  In LCS, on the **Microsoft Azure setup** page, select **Download**. Make a note of the location of the certificate file that is downloaded. You will use this information to upload the certificate to the Azure subscription.
-2.  In the [Azure classic portal](https://manage.windowsazure.com/), in the left pane, select **Settings**.
+2.  In the [Azure classic portal](https://ms.portal.azure.com), in the left pane, select **Settings**.
 3.  Filter to the Azure subscription that is used, and then, on the **Management certificates** tab, select **Upload**.
 4.  Select the management certificate that you downloaded in step 1, and then select **OK**.
 
@@ -126,7 +126,7 @@ Complete this procedure only if you didn't complete steps 6 through 8 of the pre
 
 Azure connectors that were created by using management certificates have an expiration date. After the expiration date has passed, the certificate will no longer be valid. Therefore, you won't be able to use the Azure connector or, in turn, manage any resources that have been deployed from LCS via that connector. To renew the connector and reset the expiration date, we recommend that you follow the steps in [Enable the Azure connector and add an LCS user](./arm-onboarding.md#enable-the-azure-connector-and-add-an-lcs-user) to edit the connector.  This will generate a new certificate for download, and reset the expiration date.
 
-An expiration date is shown only for connectors that use management certificates. If you created the connector via an LCS user, as described earlier in this topic, no expiration date will be shown. Instead, the Azure connector will be good for as long as the LCS user has access to the subscription.
+An expiration date is shown only for connectors that use management certificates. If you created the connector via an LCS user, as described earlier in this article, no expiration date will be shown. Instead, the Azure connector will be good for as long as the LCS user has access to the subscription.
 
 ## Known limitations
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Automatic settlement and prioritization
-description: This topic describes how transactions are settled if you select Automatic settlement on the Accounts receivable parameters page. It also explains how automatic settlement can be used in combination with the payment priority.
+description: This article describes how transactions are settled if you select Automatic settlement on the Accounts receivable parameters page. It also explains how automatic settlement can be used in combination with the payment priority.
 author: ShivamPandey-msft
 ms.date: 01/30/2019
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form: CustOpenTrans, CustParameters, LedgerJournalTransCustPaym
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 14531
 ms.assetid: e7837cf6-ec69-44b4-8d47-eba38d5c7b1f
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how transactions are settled if you select Automatic settlement on the Accounts receivable parameters page. It also explains how automatic settlement can be used in combination with the payment priority.
+This article describes how transactions are settled if you select Automatic settlement on the Accounts receivable parameters page. It also explains how automatic settlement can be used in combination with the payment priority.
 
 You have two options when you settle payments with invoices and other transactions. You can manually select the transactions to settle, or the system can select the transactions automatically by using the automatic settlement functionality. You can also customize how automatic settlements are processed by using the **Prioritize settlement** option. All these options are part of the settlement parameters that are defined on the **Accounts receivable parameters** page. The way that transactions are automatically settled can differ, depending on the method that you use for automatic settlement. The following methods are available:
 

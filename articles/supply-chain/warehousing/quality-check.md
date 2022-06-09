@@ -2,8 +2,8 @@
 # required metadata
 
 title: Quality check
-description: This topic provides information about the Quality check feature. This feature lets warehouse workers do quick spot checks for quality while they receive items to the inbound dock area.
-author: mirzaab
+description: This article provides information about the Quality check feature. This feature lets warehouse workers do quick spot checks for quality while they receive items to the inbound dock area.
+author: Mirzaab
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
@@ -45,11 +45,11 @@ This process can also be set up so that all scanned license plates are immediate
 
 ## Turn the Quality check feature on or off
 
-To use the functionality described in this topic, the *Quality check* feature must be turned on for your system. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *Quality check* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+To use the functionality described in this article, the *Quality check* feature must be turned on for your system. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *Quality check* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Set up the feature for the example scenario
 
-This section provides guidelines and an example that shows how to set up the *Quality check* feature and prepare sample data for the example scenario that is provided later in this topic.
+This section provides guidelines and an example that shows how to set up the *Quality check* feature and prepare sample data for the example scenario that is provided later in this article.
 
 ### Make sample data available
 
@@ -274,7 +274,7 @@ Configure a menu item so that mobile devices can perform the **Quality Check** f
 
 ## <a name="example-scenario"></a>Example scenario
 
-After you've made all the previously described sample data available and set it up, you can work through this scenario to try out the *Quality check* feature. The values that are shown in this scenario assume that you're working with the standard demo data, that you selected the **USMF** legal entity, and that you prepared the sample records that are described earlier in this topic. This scenario also serves as an example that shows how the feature can be used in a production setting.
+After you've made all the previously described sample data available and set it up, you can work through this scenario to try out the *Quality check* feature. The values that are shown in this scenario assume that you're working with the standard demo data, that you selected the **USMF** legal entity, and that you prepared the sample records that are described earlier in this article. This scenario also serves as an example that shows how the feature can be used in a production setting.
 
 ### Create a purchase order
 
@@ -361,7 +361,7 @@ For this scenario, pallet 2 will be rejected.
 
 You've now completed the quality check and created a quality order for the rejected pallet. To view the order that was created, go to **Inventory management \> Periodic tasks \> Quality management \> Quality orders**.
 
-Quality order testing can now be processed. Quality testing isn't covered in this topic.
+Quality order testing can now be processed. Quality testing isn't covered in this article.
 
 For more information about quality management, see [Quality management overview](../inventory/enable-quality-management.md)
 

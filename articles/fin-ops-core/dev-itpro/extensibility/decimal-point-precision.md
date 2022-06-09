@@ -1,6 +1,6 @@
 ---
 title: Extending decimal point precision for selected data types
-description: This topic describes how to extend decimal point precision for selected data types.
+description: This article describes how to extend decimal point precision for selected data types.
 author: MichaelFruergaardPontoppidan
 ms.date: 09/24/2019
 ms.topic: article
@@ -26,12 +26,12 @@ ms.dyn365.ops.version: Platform update 21
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to extend the number of decimals for selected data types. You can create extensions of specific extended data types of the type Real, to change the number of decimals for certain scenarios. To change the number of decimals, change the **NoOfDecimals** property as needed.
+This article describes how to extend the number of decimals for selected data types. You can create extensions of specific extended data types of the type Real, to change the number of decimals for certain scenarios. To change the number of decimals, change the **NoOfDecimals** property as needed.
 
 Extended data types are hierarchical and inherit behavior from the data type they extend. When changing the number of decimals for one extended data type, the number of decimals on all derived extended data types will follow. In other words, if you find an extended data type where **NoOfDecimalsIsExtensible** is false, then check the parent extended data type, as the number of decimals might be extensible in this wider scope.
 
 > [!IMPORTANT]
-> Due to database constraints, each of the data types described in this topic can have a maximum precision of six decimals.
+> Due to database constraints, each of the data types described in this article can have a maximum precision of six decimals.
 
 ## Weight
 
@@ -53,7 +53,7 @@ If you require the ability to enter, maintain, and view product quantities with 
 
 Bill of materials, formulas, and production orders allow maintaining quantities with four decimals by default.
 
-If you require more than four decimals, extend the nuymber of decimals for the **BOMProductQuantity** extended data type.
+If you require more than four decimals, extend the number of decimals for the **BOMProductQuantity** extended data type.
 
 ### Related data types
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Example for generic European Union (EU) sales list
-description: This topic provides information on how to set up and transfer a European Union (EU) sales list.
+description: This article provides information on how to set up and transfer a European Union (EU) sales list.
 author: AKroshkina
 ms.date: 02/28/2022
 ms.topic: article
@@ -29,7 +29,7 @@ ms.search.validFrom:
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up and transfer a European Union (EU) sales list. The example uses the **DEMF** legal entity. It also uses Germany as a country of the **Domestic** country/region type, and Spain and Sweden as countries of the **EU** country/region type.
+This article explains how to set up and transfer a European Union (EU) sales list. The example uses the **DEMF** legal entity. It also uses Germany as a country of the **Domestic** country/region type, and Spain and Sweden as countries of the **EU** country/region type.
 
 ## Setup
 

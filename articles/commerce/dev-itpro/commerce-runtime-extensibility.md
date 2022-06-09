@@ -2,9 +2,9 @@
 # required metadata
 
 title: Commerce runtime (CRT) extensibility
-description: This topic describes various ways that you can extend the commerce runtime (CRT) and Retail Server.
+description: This article describes various ways that you can extend the commerce runtime (CRT) and Retail Server.
 author: mugunthanm
-ms.date: 03/16/2022
+ms.date: 06/01/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,13 +31,13 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes various ways that you can extend the commerce runtime (CRT). It explains the concept of extension properties, and shows how to add them to a CRT entity so that they are persistent and so that they aren't persistent.
+This article describes various ways that you can extend the commerce runtime (CRT). It explains the concept of extension properties, and shows how to add them to a CRT entity so that they are persistent and so that they aren't persistent.
 
 CRT contains the core business logic. If you want to add or modify any business logic, you should customize CRT. All the CRT code is developed by using C#, and then it's compiled and released as class libraries (.NET assemblies). Point of sale (POS) is a thin client. All the business logic is done in CRT. POS calls CRT to perform any business logic, and then CRT processes the information and sends it back to POS.
 
 Every CRT service consists of a group of one or more requests and responses. POS sends a request to Retail Server, and Retail Server calls CRT. CRT then processes the request and sends back the response.
 
-For example, the Product service in CRT contains all the product-related requests and responses, each of which is run in a different flow. Likewise, the Customer service in CRT contain all the customer-related requests and responses. The following table shows the requests in the Customer service.
+For example, the Product service in CRT contains all the product-related requests and responses, each of which is run in a different flow. Likewise, the Customer service in CRT contains all the customer-related requests and responses. The following table shows the requests in the Customer service.
 
 | Request                                      | Purpose                                                                          |
 |----------------------------------------------|----------------------------------------------------------------------------------|
@@ -59,7 +59,7 @@ For example, the Product service in CRT contains all the product-related request
 Before you learn about the CRT extension patterns, you should understand how a CRT extension can be created. CRT is just a collection of C# class libraries (.NET assemblies). You can create a class library project in C# and do all the CRT extension by using the patterns that are shown in the following subsections. Always use the samples that Microsoft provides as templates for your extension, because these samples have the correct assembly references, Microsoft .NET Framework version, output type, and build parameters. Additionally, all the other required parameters are preconfigured. You can find the CRT sample extension in the Retail software development kit (SDK), at …\\RetailSDK\\SampleExtensions\\CommerceRuntime.
 
 > [!NOTE]
-> As of version 10.0.16 of Finance and Operations apps, all class libraries for CRT extension projects must use .NET Standard 2.0 for the target framework.
+> As of version 10.0.19, all class libraries for CRT extension projects must use .NET Standard 2.0 as the target framework.
 
 ### Create a new CRT service
 
@@ -89,7 +89,7 @@ For example, you can search for a **Product** using the out-of-box Azure Search 
 
 ### NotHandledResponse
 
-If in the the overridden handler, you want to run the base handler and return the base response instead of custom logic, then return **NotHandledResponse()**. If **NotHandledResponse** is returned, the CRT framework will run the out-of-box handler. **NotHandledResponse** can be used in scenarios where you want to run custom logic only on certain conditions (otherwise, run the base handler logic).
+If in the overridden handler, you want to run the base handler and return the base response instead of custom logic, then return **NotHandledResponse()**. If **NotHandledResponse** is returned, the CRT framework will run the out-of-box handler. **NotHandledResponse** can be used in scenarios where you want to run custom logic only on certain conditions (otherwise, run the base handler logic).
 
 ### CRT data service and data service with entities
 
@@ -121,14 +121,14 @@ All CRT entities, such as products, customers, transactions, and parameters, sup
 > [!NOTE]
 > Attributes are also supported (configuration-driven development). For extension properties, you must create a custom table and store the data. However, attributes are configuration driven and aren't required to create table fields. Therefore, no code is required for read and update operations.
 
-For details about the attributes, see the following topics:
+For details about the attributes, see the following articles:
 
 + [Order attributes](order-attributes.md)
 + [Customer attributes](customer-attributes.md)
 
 ### Extend Commerce Data Exchange - Real-time Service classes
 
-You can do synchronous call from CRT to Commerce headquarters.
+You can do synchronous calls from CRT to Commerce headquarters.
 
 For information about how to extend Commerce Data Exchange - Real-time service, see [Extend Commerce Data Exchange - Real-time Service](extend-commerce-data-exchange.md).
 
@@ -138,7 +138,7 @@ For information about how to create new Retail Server APIs, see [Create a new Re
 
 ## Exception handling
 
-You can add a `try...catch` statement to your extension code to handle an exception and log it to Application Insights or propagate it to the client application. Don’t return an aggregated exception from CRT or Retail Server if you want to propagate the error message to the client. Instead, catch the exception at the individual task level and rethrow it. For more information, see these topics:
+You can add a `try...catch` statement to your extension code to handle an exception and log it to Application Insights or propagate it to the client application. Don’t return an aggregated exception from CRT or Retail Server if you want to propagate the error message to the client. Instead, catch the exception at the individual task level and rethrow it. For more information, see these articles:
 
 + [Exception handling (Task Parallel Library)](/dotnet/standard/parallel-programming/exception-handling-task-parallel-library).
 + [Log extension events to Application Insights](commerce-application-insights.md)
@@ -218,7 +218,8 @@ Implement the following classes for a new CRT service:
 For serialization to work, the new request type must implement the **\[DataContract\]** and **\[DataMember\]** attributes.
 
 > [!NOTE]
-> We recommend that for the extension code, you use ConfigureAwait(false) when executing the request.
+> - We recommend that for the extension code, you use **ConfigureAwait(false)** when executing the request.
+> - Using Microsoft Distributed Transaction Coordinator (MSDTC) in a CRT database extension is not supported.
 
 
 ### Request class
@@ -360,7 +361,7 @@ Next, you must create a new CRT service that uses the request and response types
             }
     ```
 
-3. Register the CRT extension as described earlier in this topic.
+3. Register the CRT extension as described earlier in this article.
 
 The preceding sample code is missing the implementation of **UpdateStoreDayHoursDataRequest** and **UpdateStoreDayHoursDataResponse**. The full sample code is available in the Retail SDK, at **RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.StoreHoursSample**.
 
@@ -680,7 +681,7 @@ public class StoreDayHours : CommerceEntity
 }
 ```
 
-When you want to use the new entity in a service, the process is straightforward. As was described earlier in this topic, you create a new service that is derived from **IRequestHandler**. You then either use or return the new entity. The following example shows how to read the entity from the database and return it as part of the response.
+When you want to use the new entity in a service, the process is straightforward. As was described earlier in this article, you create a new service that is derived from **IRequestHandler**. You then either use or return the new entity. The following example shows how to read the entity from the database and return it as part of the response.
 
 ```C#
 private async Task<Response> GetStoreDayHoursAsync(GetStoreHoursDataRequest request)

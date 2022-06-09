@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 for Operations version 1611 (November 2016)
-description: This topic describes features that are either new or changed in Dynamics 365 for Operations version 1611.
+description: This article describes features that are either new or changed in Dynamics 365 for Operations version 1611.
 author: sericks007
 ms.date: 10/15/2019
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes features that are either new or changed in Dynamics 365 for Operations version 1611.
+This article describes features that are either new or changed in Dynamics 365 for Operations version 1611.
 
 ## Cost accounting
 

@@ -1,35 +1,24 @@
 ---
 # required metadata
 
-title: Sign MPOS with a code signing certificate
-description: This topic explains how to sign MPOS with a code signing certificate.
+title: Sign the MPOS .appx file with a code signing certificate
+description: This article explains how to sign MPOS with a code signing certificate.
 author: mugunthanm
-ms.date: 10/21/2021
+ms.date: 05/27/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
+audience: Application User, Developer, IT Pro
 ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
 ms.custom: 28021
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: mumani
 ms.search.validFrom: 2019-09-2019
-ms.dyn365.ops.version: AX 10.0.5
 
 ---
 
-# Sign MPOS appx with a code signing certificate
+# Sign the MPOS .appx file with a code signing certificate
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 To install Modern POS (MPOS) you must sign the MPOS app with a code signing certificate from a trusted provider and install the same certificate on all the machines where MPOS is installed under the trusted root folder for the current user.
 
@@ -52,7 +41,7 @@ Using a Secure File task is the recommended approach for Universal Windows Platf
 ![MPOS app signing flow.](media/POSSigningFlow.png)
 
 > [!NOTE]
-> Currently the OOB packaging supports signing only the appx file, the different self-service installers like MPOIS, RSSU, and HWS are not signed by this process. You need to manually sign it using SignTool or other signing tools. The certificate used for signing the appx file must be installed in the machine where Modern POS is installed.
+> Currently the OOB packaging supports signing only the .appx file, the different self-service installers like MPOIS, RSSU, and HWS are not signed by this process. You need to manually sign it using SignTool or other signing tools. The certificate used for signing the .appx file must be installed in the machine where Modern POS is installed.
 
 ## Steps to configure the certificate for signing in Azure Pipelines
 
@@ -61,21 +50,22 @@ Using a Secure File task is the recommended approach for Universal Windows Platf
 Download the [DownloadFile task](/visualstudio/msbuild/downloadfile-task) and add it as the first step in the build process. The advantage of using the Secure File task is that the file is encrypted and placed in the disk during build no matter if the build pipeline succeeds, fails, or is canceled. The file is deleted from the download location after the build process is completed.
 
 1. Download and add the Secure File task as the first step in the Azure build pipeline. You can download the Secure File task from [DownloadFile](https://marketplace.visualstudio.com/items?itemName=automagically.DownloadFile).
-2. Upload the certificate to the Secure File task and set the Reference name under Output Variables, as shown in the following image.
+1. Upload the certificate to the Secure File task and set the Reference name under Output Variables, as shown in the following image.
     > [!div class="mx-imgBorder"]
     > ![Secure file task.](media/SecureFile.png)
-3. Create a new variable in Azure Pipelines by selecting **New Variable** under the **Variables** tab.
-4. Provide a name for the variable in the value field, for example, **MySigningCert**.
-5. Save the variable.
-6. Open the **Customization.settings** file from **RetailSDK\\BuildTools** and update the **ModernPOSPackageCertificateKeyFile** with the variable name created in the pipeline (step 3). For example:
+1. Create a new variable in Azure Pipelines by selecting **New Variable** under the **Variables** tab.
+1. Provide a name for the variable in the value field, for example, **MySigningCert**.
+1. Save the variable.
+1. Open the **Customization.settings** file from **RetailSDK\\BuildTools** and update the **ModernPOSPackageCertificateKeyFile** with the variable name created in the pipeline (step 3). For example:
 
     ```Xml
     <ModernPOSPackageCertificateKeyFile Condition="'$(ModernPOSPackageCertificateKeyFile)' ==''">$(MySigningCert)</ModernPOSPackageCertificateKeyFile>
     ```
     This step is required if the certificate is not password protected. If the certificate is password protected, continue with the following steps.
- 
-7. On the pipeline’s **Variables** tab, add a new secure-text variable. Set the name to **MySigningCert.secret** and set the value of the password for the certificate. Select the lock icon to secure the variable.
-8. Add a **Powershell Script** task to the pipeline (after the Download Secure File and before the Build step). Provide the **Display** name and set the Type as **Inline**. Copy and paste the following into the script section.
+    
+1. If you want to timestamp the MPOS .appx file when signing it with a certificate, open the **Retail SDK\\Build tool\\Customization.settings** file and update the **ModernPOSPackageCertificateTimestamp** variable with the timestamp provider (for example, `http://timestamp.digicert.com`).
+1. On the pipeline’s **Variables** tab, add a new secure-text variable. Set the name to **MySigningCert.secret** and set the value of the password for the certificate. Select the lock icon to secure the variable.
+1. Add a **Powershell Script** task to the pipeline (after the Download Secure File and before the Build step). Provide the **Display** name and set the Type as **Inline**. Copy and paste the following into the script section.
 
     ```powershell
     Write-Host "Start adding the PFX file to the certificate store."
@@ -84,7 +74,7 @@ Download the [DownloadFile task](/visualstudio/msbuild/downloadfile-task) and ad
     Import-PfxCertificate -FilePath $pfxpath -CertStoreLocation Cert:\CurrentUser\My -Password $secureString
     ```
 
-9. Open the **Customization.settings** file from **RetailSDK\\BuildTools** and update the **ModernPOSPackageCertificateThumbprint** with the certificate thumbprint value.
+1. Open the **Customization.settings** file from **RetailSDK\\BuildTools** and update the **ModernPOSPackageCertificateThumbprint** with the certificate thumbprint value.
 
     ```Xml
        <ModernPOSPackageCertificateThumbprint Condition="'$(ModernPOSPackageCertificateThumbprint)' == ''"></ModernPOSPackageCertificateThumbprint>
@@ -92,7 +82,6 @@ Download the [DownloadFile task](/visualstudio/msbuild/downloadfile-task) and ad
  
 For details about how to get the thumbprint for a certificate, see [retrieve a certificate's thumbprint](/dotnet/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate#to-retrieve-a-certificates-thumbprint). 
 
- 
 ## Download or generate a certificate to sign the MPOS app manually using msbuild in SDK
 
 If a downloaded or generated certificate is used to sign the MPOS app, then the update the **ModernPOSPackageCertificateKeyFile** node in the **BuildTools\\Customization.settings** file to point to the pfx file location (**$(SdkReferencesPath)\\appxsignkey.pfx**). For example:
@@ -141,7 +130,7 @@ It is highly recommended that you renew the previously used certificate. We stro
  
 - **Preferred** - Obtain a code signing certificate from a trusted certificate authority.
 
-- **Preferred** - Generate a self-signed code signing certificate to use. This is typically used when within a domain.
+- **Not Preferred** - Generate a self-signed code signing certificate to use. This is typically used only for development purposes within a domain and is not recommended for production. 
 
 - **Available as a temporary Solution** - Use the renewed Contoso code signing certificate. This is typically used for testing purposes, so it's not recommended that it be deployed in production.
  

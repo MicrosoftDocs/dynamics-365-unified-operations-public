@@ -2,7 +2,7 @@
 # required metadata
 
 title: Batch OData API
-description: This topic provides information about the Batch OData application programming interface (API) and explains how you can use Open Data Protocol (OData) to reschedule a job.
+description: This article provides information about the Batch OData application programming interface (API) and explains how you can use Open Data Protocol (OData) to reschedule a job.
 author: matapg007
 ms.date: 01/10/2022
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.validFrom: 2021-10-21
 
 [!include[banner](../includes/banner.md)]
 
-This topic provides information about the batch Open Data Protocol (OData) application programming interface (API) and explains how you can use OData to reschedule a job.
+This article provides information about the batch Open Data Protocol (OData) application programming interface (API) and explains how you can use OData to reschedule a job.
 
 In the existing [batch processing](batch-processing-overview.md) functionality, if some types of job failures have to be retried, either with or without any changes, based on the interpretation of the error, they must be manually retried. For jobs that are scheduled to be run during off-peak times to avoid active business hours for customers, monitoring failures and re-triggering the jobs requires either 24/7 support or a wait time until users resume work during normal business hours.
 

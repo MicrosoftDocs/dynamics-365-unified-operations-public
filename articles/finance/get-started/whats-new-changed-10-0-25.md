@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Finance 10.0.25 
-description: This topic describes features that are either new or changed in the Dynamics 365 Finance version 10.0.25 preview release.
+description: This article describes features that are either new or changed in the Dynamics 365 Finance version 10.0.25 preview release.
 author: kfend
 ms.date: 01/31/2022
 ms.topic: article
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.25
 
 [!include [banner](../includes/preview-banner.md)]
 
-This topic lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.25. This version has a build number of 10.0.1149 and is available as follows:
+This article lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.25. This version has a build number of 10.0.1149 and is available as follows:
 
 - **Preview of release**: January 2022
 - **General availability of release (self-update)**: March 2022
@@ -41,7 +41,7 @@ This topic lists features that are new or changed for Microsoft Dynamics 365 Fin
 
 ## Features included in this release
 
-The following table lists the features that are included in this release. We might update this topic to include features that made it into the build after this topic was initially published.
+The following table lists the features that are included in this release. We might update this article to include features that made it into the build after this article was initially published.
 
 | Feature area | Feature | More information | Enabled by  |
 |----|----|----|----|
@@ -58,6 +58,7 @@ The following table lists the features that are included in this release. We mig
 | Accounts payable  | Apply payment schedule to invoice journal  | This feature enables a payment schedule on the vendor invoice journal. When you create a new invoice journal, if the payment term is maintained on the vendor master data and the payment schedule is configured for that payment term, then the payment schedule is automatically filled in the new field **Payment schedule** on the **Invoice journal** page. If necessary, the default payment schedule can be manually changed according to business needs. During vendor invoice journal posting, the system automatically generates several vendor payment lines according to payment schedule.  | Feature management   |
 | Accounts payable  | Bypass vendor invoice workflow for intercompany vendor invoices parameter   | This feature eliminates an old limitation in the [Intercompany sales process](/dynamicsax-2012/appuser-itpro/create-and-invoice-an-intercompany-sales-order-for-an-external-customer). In the past, if vendor invoice workflow is configured in the intercompany purchasing company, then the intercompany sales order can't be invoiced.    | Parameter  |
 | Budgeting   | Update budget plans with Excel template upload  | A parameter has been added to each budget plan layout that uses a data management framework (DMF) upload approach to be used when enabled. This parameter creates the DMF project and enables the mass update budget plan lines menu item found in the budget plans. You can open the worksheet and publish with the Microsoft Excel add-in tools or save the worksheet to be uploaded using the mass update tools.   |  Parameter  |
+| General ledger | Awareness between ledger settlement and year-end close | This functionality enhances both ledger settlement and year-end close to be more aware of what is settled within general ledger. When the year-end close is run, only unsettled ledger transactions will be included in the opening balance. A new option is also added to allow an organization to bring the transaction detail forward as the opening balances, making it easier to settle ledger transactions in the next fiscal year. Before you enable the feature, some cleanup may be required within ledger settlement if the ledger reaches across fiscal years. For more information, see [Awareness between ledger settlement and year-end close](../general-ledger/awareness-between-ledger-settlement-year-end-close.md). | Feature management|
 
 
 ## Feature enhancements included in this release
@@ -90,12 +91,12 @@ Check out [Dynamics 365 and industry clouds: 2022 release wave 1 plan](/dynamics
 
 ### Removed and deprecated features
 
-The [Removed or deprecated features in Dynamics 365 Finance](removed-deprecated-features-finance.md) topic describes features that have been removed or deprecated for Dynamics 365 Finance.
+The [Removed or deprecated features in Dynamics 365 Finance](removed-deprecated-features-finance.md) article describes features that have been removed or deprecated for Dynamics 365 Finance.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
-Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features in Dynamics 365 Finance](removed-deprecated-features-finance.md) topic 12 months prior to the removal.
+Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features in Dynamics 365 Finance](removed-deprecated-features-finance.md) article 12 months prior to the removal.
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Document reporting preview options 
-description: This topic provides information about the options available in the embedded document reporting previewer.
+description: This article provides information about the options available in the embedded document reporting previewer.
 author: RichdiMSFT
 ms.date: 09/11/2020
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 34
 [!include[banner](../includes/banner.md)]
 
 
-Finance and Operations apps offer an expanded collection of options to use while previewing documents within the embedded PDF viewer. This topic describes the **Export** and **Network Printer** options.
+Finance and Operations apps offer an expanded collection of options to use while previewing documents within the embedded PDF viewer. This article describes the **Export** and **Network Printer** options.
 
 ## Overview
 The efficient publication and distribution of documents is not only a key component to many operations, but it’s also critical to daily business functions. Documents are used to capture transaction details and may represent an agreement between two parties. From quotations to sales invoices used in the packing slip process, which ultimately produces receipts and customer statements, business documents come in many forms. The document reporting preview options empower you to quickly take the appropriate action on documents.

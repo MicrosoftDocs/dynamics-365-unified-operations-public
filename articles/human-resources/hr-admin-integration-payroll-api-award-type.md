@@ -2,7 +2,7 @@
 # required metadata
 
 title: Award type
-description: This topic describes the Award type option set for Dynamics 365 Human Resources.
+description: This article describes the Award type option set for Dynamics 365 Human Resources.
 author: marcelbf
 ms.date: 06/25/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This topic describes the Award type option set for Dynamics 365 Human Resources.
+This article describes the Award type option set for Dynamics 365 Human Resources.
 
 ## Option set: Award type
 

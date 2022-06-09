@@ -2,7 +2,7 @@
 # required metadata
 
 title:  Set up interest distribution for cash accounts
-description: This topic explains how to set up your participating cash accounts on the Interest distribution rules page. You must complete this setup before you distribute the interest.
+description: This article explains how to set up your participating cash accounts on the Interest distribution rules page. You must complete this setup before you distribute the interest.
 author: v-kiarnd
 ms.date: 12/03/2021
 ms.topic: article
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: PSNLedgerInterestDistributionRules, PSNLedgerInterestDistributionResults
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global

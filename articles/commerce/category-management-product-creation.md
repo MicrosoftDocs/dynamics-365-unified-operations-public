@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage product categories and products
-description: This topic describes how merchandising managers can use product categories to manage relationships between the Commerce product hierarchy and released product details. 
+description: This article describes how merchandising managers can use product categories to manage relationships between the Commerce product hierarchy and released product details. 
 author: ashishmsft
 ms.date: 10/23/2017
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](./includes/banner.md)]
 
-This topic describes an enhanced way to manage product categories and products in Dynamics 365 Commerce. The enhancements let merchandising managers view a structure of product properties that is shared between the product hierarchy and released product details.
+This article describes an enhanced way to manage product categories and products in Dynamics 365 Commerce. The enhancements let merchandising managers view a structure of product properties that is shared between the product hierarchy and released product details.
 
 To learn more about how to manage product categories, in the **Category and product management** workspace, select the **Commerce product hierarchy** tile.
 

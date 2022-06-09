@@ -2,7 +2,7 @@
 # required metadata
 
 title: Work with configurations
-description: This topic provides an overview of the main scenario for working with Electronic reporting (ER) configurations from the Globalization features workspace.
+description: This article provides an overview of the main scenario for working with Electronic reporting (ER) configurations from the Globalization features workspace.
 author: dkalyuzh
 ms.date: 01/26/2022
 ms.topic: article

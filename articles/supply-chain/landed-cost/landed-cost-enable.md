@@ -1,14 +1,14 @@
 ---
 title: Turn on the Landed cost module for your system
-description: This topic describes how to turn on the Landed cost module for your system.
-author: sherry-zheng
+description: This article describes how to turn on the Landed cost module for your system.
+author: Weijiesa
 ms.date: 09/24/2021
 ms.topic: article
 ms.search.form:
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: chuzheng
+ms.author: weijiesa
 ms.search.validFrom: 2021-09-24
 ms.dyn365.ops.version: 10.0.17
 ---

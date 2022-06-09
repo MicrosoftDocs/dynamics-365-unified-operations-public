@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Suppress Word content controls in generated reports
-description: This topic explains how to configure an Electronic reporting (ER) format to generate reports as Microsoft Word files where content controls are suppressed. 
+description: This article explains how to configure an Electronic reporting (ER) format to generate reports as Microsoft Word files where content controls are suppressed. 
 author: NickSelin
 ms.date: 02/11/2021
 ms.topic: business-process 
@@ -51,7 +51,7 @@ When you complete the steps of these task guides, the following items are prepar
 
 You must also download and save the following template for the sample report:
 
-- [Bounded Template 2 of Payment Report (SampleVendPaymDocReportBounded2.docx)](https://download.microsoft.com/download/a/1/2/a126cb43-6281-4f7b-bde0-25e03ff9bc1e/SampleVendPaymDocReportBounded2.docx)
+- [Bounded Template 2 of Payment Report (SampleVendPaymDocReportBounded2.docx)](https://download.microsoft.com/download/1/9/b/19b36e39-861a-414e-9150-9880d9d2487c/SampleVendPaymDocReportBounded2.docx)
 
 ## <a id="tag-control"></a>Review the downloaded Word template
 

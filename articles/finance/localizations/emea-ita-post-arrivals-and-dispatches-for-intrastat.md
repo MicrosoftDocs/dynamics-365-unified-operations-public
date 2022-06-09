@@ -2,14 +2,14 @@
 # required metadata
 
 title: Post arrivals and dispatches for Intrastat
-description: This topic provides an example that shows how to post arrivals and dispatches for Intrastat.
-author: andosip
+description: This article provides an example that shows how to post arrivals and dispatches for Intrastat.
+author: anasyash
 ms.date: 8/23/2021
 ms.topic: article
 audience: Application User
-ms.reviewer: kfender
+ms.reviewer: kfend
 ms.search.region: Global
-ms.author: v-aosipov
+ms.author: anasyash
 ms.search.validFrom: 
 ---
 
@@ -17,7 +17,7 @@ ms.search.validFrom:
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an example that shows how to post arrivals and dispatches for Intrastat. The example uses the **ITCO** legal entity.
+This article provides an example that shows how to post arrivals and dispatches for Intrastat. The example uses the **ITCO** legal entity.
 
 ## Setup
 

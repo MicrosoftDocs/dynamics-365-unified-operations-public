@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up TDS ledger accounts
-description: This topic explains how to set up ledger accounts for the Tax Deducted at Source (TDS) feature.
+description: This article explains how to set up ledger accounts for the Tax Deducted at Source (TDS) feature.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -16,8 +16,8 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
+ms.reviewer: kfend
+# 
 # ms.tgt_pltfrm: 
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up ledger accounts for the Tax Deducted at Source (TDS) feature. You use the **Chart of accounts** page to set up ledger accounts for TDS.
+This article explains how to set up ledger accounts for the Tax Deducted at Source (TDS) feature. You use the **Chart of accounts** page to set up ledger accounts for TDS.
 
 1. Go to **General ledger \> Chart of accounts \> Accounts \> Main accounts**.
 2. On the **Overview** tab, select **Alt+N** to create a TDS ledger account, and enter the required details.

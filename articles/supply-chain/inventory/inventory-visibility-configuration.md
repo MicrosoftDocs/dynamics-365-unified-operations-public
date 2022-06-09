@@ -1,8 +1,8 @@
 ---
 title: Configure Inventory Visibility
-description: This topic describes how to configure Inventory Visibility.
+description: This article describes how to configure Inventory Visibility.
 author: yufeihuang
-ms.date: 12/09/2021
+ms.date: 05/27/2022
 ms.topic: article
 ms.search.form:
 audience: Application User
@@ -18,11 +18,11 @@ ms.dyn365.ops.version: 10.0.21
 [!include [banner](../includes/banner.md)]
 
 
-This topic describes how to configure Inventory Visibility using the Inventory Visibility app in Power Apps.
+This article describes how to configure Inventory Visibility using the Inventory Visibility app in Power Apps.
 
 ## <a name="introduction"></a>Introduction
 
-Before you start to work with Inventory Visibility, you must complete the following configuration as described in this topic:
+Before you start to work with Inventory Visibility, you must complete the following configuration as described in this article:
 
 - [Data source configuration](#data-source-configuration)
 - [Partition configuration](#partition-configuration)
@@ -36,7 +36,7 @@ Before you begin, install and set up the Inventory Visibility Add-in as describe
 
 ## <a name="configuration"></a>The Configuration page of the Inventory Visibility app
 
-In Power Apps, the **Configuration** page of the [Inventory Visibility app](inventory-visibility-power-platform.md) helps you set up the on-hand configuration and soft reservation configuration. After the add-in is installed, the default configuration includes the value from Microsoft Dynamics 365 Supply Chain Management (the `fno` data source). You can review the default settings. Additionally, based on your business requirements and the inventory posting requirements of your external system, you can modify the configuration to standardize the way that inventory changes can be posted, organized, and queried across the multiple systems. The remaining sections of this topic explain how to use each part of the **Configuration** page.
+In Power Apps, the **Configuration** page of the [Inventory Visibility app](inventory-visibility-power-platform.md) helps you set up the on-hand configuration and soft reservation configuration. After the add-in is installed, the default configuration includes the value from Microsoft Dynamics 365 Supply Chain Management (the `fno` data source). You can review the default settings. Additionally, based on your business requirements and the inventory posting requirements of your external system, you can modify the configuration to standardize the way that inventory changes can be posted, organized, and queried across the multiple systems. The remaining sections of this article explain how to use each part of the **Configuration** page.
 
 After the configuration is completed, be sure to select **Update Configuration** in the app.
 
@@ -49,13 +49,14 @@ The Inventory Visibility Add-in adds several new features to your Power Apps ins
 | *OnHandReservation* | This feature lets you create reservations, consume reservations, and/or unreserve specified inventory quantities by using Inventory Visibility. For more information, see [Inventory Visibility reservations](inventory-visibility-reservations.md). |
 | *OnHandMostSpecificBackgroundService* | This feature provides an inventory summary for products, together with all dimensions. The inventory summary data will periodically be synced from Inventory Visibility. For more information, see [Inventory summary](inventory-visibility-power-platform.md#inventory-summary). |
 | *OnhandChangeSchedule* | This optional feature enables the on-hand change schedule and available to promise (ATP) features. For more information, see [Inventory Visibility on-hand change schedule and available to promise](inventory-visibility-available-to-promise.md). |
+| *Allocation* | This optional feature enables Inventory Visibility to have the ability for inventory protection (ringfencing) and oversell control. For more information, see [Inventory Visibility inventory allocation](inventory-visibility-allocation.md). |
 | *Enable warehouse items in Inventory Visibility* | This optional feature enables Inventory Visibility to support items that are enabled for advanced warehouse processes (WHS items). For more information, see [Inventory Visibility support for WHS items](inventory-visibility-whs-support.md). |
 
 ## <a name="get-service-endpoint"></a>Find the service endpoint
 
 If you don't know the correct Inventory Visibility service endpoint, open the **Configuration** page in Power Apps, and then select **Show Service Endpoint** in the upper-right corner. The page will show the correct service endpoint.
 
-## Data source configuration
+## <a name="data-source-configuration"></a>Data source configuration
 
 Each data source represents a system that your data comes from. Example data source names include `fno` (which stands for "Dynamics 365 Finance and Operations apps") and `pos` (which stands for "point of sale"). By default, Supply Chain Management is set up as a default data source (`fno`) in Inventory Visibility.
 
@@ -111,7 +112,7 @@ The purpose of the dimension configuration is to standardize the multi-system in
 >
 > Inventory (custom) dimensions might be reserved for Supply Chain Management. In that case, you can use the extended dimensions instead.
 
-External systems can access Inventory Visibility through its RESTful APIs. For the integration, Inventory Visibility lets you configure the _external data source_ and the mapping from the _external dimensions_ to the _base dimensions_. Here is an example of a dimension mapping table.
+External systems can access Inventory Visibility through its RESTful APIs. For the integration, Inventory Visibility lets you configure the _external data source_ and the mapping from the _external dimensions_ to the _base dimensions_. Here's an example of a dimension mapping table.
 
 | External dimension | Base dimension |
 |---|---|
@@ -136,7 +137,7 @@ To add dimension mappings, follow these steps.
 
 For example, if your data source includes a product color dimension, you can map it to the `ColorId` base dimension to add a `ProductColor` custom dimension in the `exterchannel` data source. It's then mapped to the `ColorId` base dimension.
 
-### Physical measures
+### <a name="data-source-configuration-physical-measures"></a>Physical measures
 
 When a data source posts an inventory change to Inventory Visibility, it posts that change by using *physical measures*. Physical measures modify the quantity and reflect the inventory status. You can define your own physical measures, based on your requirements. Queries can be based on the physical measures.
 
@@ -170,6 +171,9 @@ If the data source is Supply Chain Management, you don't have to re-create the d
 ### Calculated measures
 
 You can use Inventory Visibility to query on both inventory physical measures and *custom calculated measures*. Calculated measures provide a customized computation formula that consists of a combination of physical measures. This functionality lets you define a set of physical measures that will be added, and/or a set of physical measures that will be subtracted, to form the customized measurement.
+
+> [!IMPORTANT]
+> A calculated measure is a composition of physical measures. Its formula can include only physical measures without duplicates, not calculated measures.
 
 The configuration lets you define a set of modifiers that are added or subtracted to get the total aggregated output quantity.
 
@@ -292,7 +296,7 @@ The solution includes this partition configuration by default. Therefore, *you d
 
 ## <a name="index-configuration"></a>Product index hierarchy configuration
 
-Most of the time, the inventory on-hand query won't be only at the highest "total" level. Instead, you might want also to see results that are aggregated based on the inventory dimensions.
+Most of the time, the inventory on-hand query won't be only at the highest "total" level. Instead, you might also want to see results that are aggregated based on the inventory dimensions.
 
 Inventory Visibility provides flexibility by letting you set up the _indexes_. These indexes are based on a dimension or a combination of dimensions. An index consists of a *set number*, a *dimension*, and a *hierarchy*, as defined in the following table.
 
@@ -310,7 +314,14 @@ To set up your product hierarchy index, follow these steps.
 1. By default, a list of indexes is provided. To modify an existing index, select **Edit** or **Add** in the section for the relevant index. To create a new index set, select **New index set**. For each row in every index set, in the **Dimension** field, select from the list of base dimensions. Values for the following fields are automatically generated:
 
     - **Set number** – Dimensions that belong to the same group (index) will be grouped together, and the same set number will be allocated to them.
-    - **Hierarchy** – The hierarchy is used to define the supported dimension combinations that can be queried in a dimension group (index). For example, if you set up a dimension group that has a hierarchy sequency of *Style*, *Color*, and *Size*, the system supports the result of three query groups. The first group is style only. The second group is a combination of style and color. And the third group is a combination of style, color, and size. The other combinations aren't supported.
+    - **Hierarchy** – The hierarchy is used to define the supported dimension combinations that can be queried in a dimension group (index). For example, if you set up a dimension group that has a hierarchy sequence of *Style*, *Color*, and *Size*, the system supports the result of three query groups. The first group is style only. The second group is a combination of style and color. And the third group is a combination of style, color, and size. The other combinations aren't supported.
+
+> [!TIP]
+> Here are a few tips to keep in mind when setting up your index hierarchy:
+>
+> - Base dimensions that are defined in the partition configuration shouldn't be defined in index configurations. If a base dimension is defined again in the index configuration, you won't be able to query by this index.
+> - If you only need to query inventory that is aggregated by all dimension combinations, then set up a single index that contains the base dimension `Empty`.
+> - You must have at least one index hierarchy (for example, containing the base dimension `Empty`), otherwise queries will fail with the error "No index hierarchy has been set."
 
 ### Example
 
@@ -364,11 +375,6 @@ The index lets you query the on-hand inventory in the following ways:
     - T-shirt, Red, Small, Regular, 6
     - T-shirt, Red, Large, Regular, 7
 
-> [!NOTE]
-> Base dimensions that are defined in the partition configuration should not be defined in index configurations.
-> 
-> If you must query only inventory that is aggregated by all dimension combinations, you can set up a single index that contains the base dimension `Empty`.
-
 ## <a name="reservation-configuration"></a>Reservation configuration (optional)
 
 Reservation configuration is required if you want to use the soft reservation feature. The configuration consists of two fundamental parts:
@@ -382,7 +388,7 @@ When you make a reservation, you might want to know whether on-hand inventory is
 
 By setting up the mapping from the physical measure to the calculated measure, you enable the Inventory Visibility service to automatically validate reservation availability, based on the physical measure.
 
-Before you set up this mapping, the physical measures, calculated measures, and their data sources must be defined on the **Data source** and **Calculated measure** tabs of the **Configuration** page in Power Apps (as described earlier in this topic).
+Before you set up this mapping, the physical measures, calculated measures, and their data sources must be defined on the **Data source** and **Calculated measure** tabs of the **Configuration** page in Power Apps (as described earlier in this article).
 
 To define the soft reservation mapping, follow these steps.
 
@@ -452,7 +458,7 @@ The reservation hierarchy describes the sequence of dimensions that must be spec
 
 The reservation hierarchy is independent of the product index hierarchy. This independence lets you implement category management where users can break down the dimensions into details to specify the requirements for making more precise reservations. Your soft reservation hierarchy should contain `SiteId` and `LocationId` as components, because they construct the partition configuration. When you do the reservation, you must specify a partition for the product.
 
-Here is an example of a soft reservation hierarchy.
+Here's an example of a soft reservation hierarchy.
 
 | Base dimension | Hierarchy |
 |---|---|
@@ -500,7 +506,7 @@ During its initialization stage, Inventory Visibility sets up a default configur
 
 This section describes how the `iv` data source is configured.
 
-##### Physical measures configured for the iv data source
+##### Physical measures configured for the "iv" data source
 
 The following physical measures are configured for the `iv` data source:
 
@@ -643,11 +649,11 @@ The `InventoryDemand` calculated measure is configured for the `iv` data source 
 | Addition | `iv` | `ReservPhysical` |
 | Addition | `iv` | `ReservOrdered` |
 
-#### Configuration of the fno data source
+#### Configuration of the "fno" data source
 
 This section describes how the `fno` data source is configured.
 
-##### Dimension mappings for the fno data source
+##### Dimension mappings for the "fno" data source
 
 The dimension mappings that are listed in the following table are configured for the `fno` data source.
 
@@ -679,7 +685,7 @@ The dimension mappings that are listed in the following table are configured for
 | `InventDimension11` | `CustomDimension11` |
 | `InventDimension12` | `CustomDimension12` |
 
-##### Physical measures configured for the fno data source
+##### Physical measures configured for the "fno" data source
 
 The following physical measures are configured for the `fno` data source:
 
@@ -691,11 +697,11 @@ The following physical measures are configured for the `fno` data source:
 - `ReservOrdered`
 - `OnOrder`
 
-#### Configuration of the pos data source
+#### Configuration of the "pos" data source
 
 This section describes how the data source `pos` is configured.
 
-##### Physical measures for the pos data source
+##### Physical measures for the "pos" data source
 
 The following physical measures are configured for the `pos` data source:
 
@@ -712,14 +718,14 @@ The `AvailQuantity` calculated measure is configured for the `pos` data source a
 | Addition | `pos` | `PosInbound` |
 | Subtraction | `pos` | `PosOutbound` |
 
-#### Configuration of the iom data source
+#### Configuration of the "iom" data source
 
 The following physical measures are configured for the `iom` (intelligent order management) data source:
 
 - `OnOrder`
 - `OnHand`
 
-#### Configuration of the erp data source
+#### Configuration of the "erp" data source
 
 The following physical measures are configured for the `erp` (enterprise resource planning) data source:
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: MICROSOFT PREVIEW SOFTWARE LICENSE TERMS
-description: Full description that appears in the search results. Often the first paragraph of your topic.
+description: Full description that appears in the search results. Often the first paragraph of your article.
 author: ShellyBakke
 ms.date: 04/18/2019
 ms.topic: article
@@ -11,12 +11,12 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: IT Pro
 # ms.devlang: 
 ROBOTS: NOINDEX, NOFOLLOW 
 ms.reviewer: sericks
-ms.search.scope: Operations 
+
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global

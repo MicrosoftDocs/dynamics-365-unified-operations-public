@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Configure consolidated invoice parameters and setup for accounts payable
-description: This topic explains how to set up and configure consolidated invoices. 
+description: This article explains how to set up and configure consolidated invoices. 
 author: ShylaThompson
 ms.date: 08/29/2018
 ms.topic: business-process 

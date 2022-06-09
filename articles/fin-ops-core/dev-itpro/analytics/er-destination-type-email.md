@@ -2,7 +2,7 @@
 # required metadata
 
 title: Email ER destination type
-description: This topic explains how to configure an email destination for each FOLDER or FILE component of an Electronic reporting (ER) format.
+description: This article explains how to configure an email destination for each FOLDER or FILE component of an Electronic reporting (ER) format.
 author: NickSelin
 ms.date: 08/03/2021
 ms.topic: article
@@ -167,7 +167,7 @@ The following illustration shows the structure of an ER format that was configur
 
 [![Structure of an ER format that generates outbound documents.](./media/ER_Destinations-Email-Grouping1.png)](./media/ER_Destinations-Email-Grouping1.png)
 
-The following illustration shows the process, as described in this topic, of grouping individual components and enabling the **Email** destination for the new group, so that a collection letter note is sent together with appropriate customer invoices as email attachments.
+The following illustration shows the process, as described in this article, of grouping individual components and enabling the **Email** destination for the new group, so that a collection letter note is sent together with appropriate customer invoices as email attachments.
 
 [![Grouping individual components and enabling the Email destination.](./media/ER_Destinations-Email-Grouping2.gif)](./media/ER_Destinations-Email-Grouping2.gif)
 

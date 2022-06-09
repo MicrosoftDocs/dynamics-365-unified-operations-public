@@ -2,7 +2,7 @@
 # required metadata
 
 title: Generate earnings for workers
-description: This topic describes the various ways that you can generate earnings for workers.
+description: This article describes the various ways that you can generate earnings for workers.
 author: andreabichsel
 ms.date: 06/20/2017
 ms.topic: article
@@ -31,14 +31,14 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes the various ways that you can generate earnings for workers. You can automatically generate earnings for salaried positions, for positions that use a schedule, and for recurring earnings, premium earnings, and retroactive earnings. You can also enter earnings manually.
+This article describes the various ways that you can generate earnings for workers. You can automatically generate earnings for salaried positions, for positions that use a schedule, and for recurring earnings, premium earnings, and retroactive earnings. You can also enter earnings manually.
 
 You can automatically generate earnings for salaried positions, for positions that use a schedule, and for recurring earnings, premium earnings, and retroactive earnings. You can also enter earnings manually.
 
 When you automatically generate earnings, we recommend that you use the batch processing mode to improve performance. You must manually enter some earnings, such as sick time and paid time off. You can enter these earnings either before or after you use the automated process to generate the standard earning lines. If you use the automated process first, you must manually add and remove earning lines until the earnings statement is correct.
 
 > [!NOTE]
-> This topic describes how to generate earnings for a worker pay period for the first time. If you've already generated earnings, and you want to change them or take additional action on them, see [Process existing earnings](noam-usa-existing-earnings.md).
+> This article describes how to generate earnings for a worker pay period for the first time. If you've already generated earnings, and you want to change them or take additional action on them, see [Process existing earnings](noam-usa-existing-earnings.md).
 
 ## Automatically generate earnings
 
@@ -82,7 +82,7 @@ To manually enter earnings that are based on pieces and earnings for exceptions,
     3. Select the tax region.
     4. Select the earning code that represents the type of earning. When you select the earning code, the default description, quantity, unit type, and rate are entered from the earning code. Enter a quantity that is appropriate for the unit type. You can also change the rate. However, the that you enter must be a flat rate and must not be calculated by the system.
 
-4. If you didn't use the automated process to generate earnings before you began to enter lines manually, you can click **Generate earnings** to use the default values on the remaining lines of the worker's earnings statement. The lines that you entered manually aren't affected. You can also automatically generate earnings statements by using the process that is described earlier in this topic. In that case, the lines that you entered manually *are* affected.
+4. If you didn't use the automated process to generate earnings before you began to enter lines manually, you can click **Generate earnings** to use the default values on the remaining lines of the worker's earnings statement. The lines that you entered manually aren't affected. You can also automatically generate earnings statements by using the process that is described earlier in this article. In that case, the lines that you entered manually *are* affected.
 
     > [!NOTE]
     > You can complete this step regardless of whether the worker is paid a salary or paid hourly.

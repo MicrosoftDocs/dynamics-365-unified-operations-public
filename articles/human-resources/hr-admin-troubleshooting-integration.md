@@ -2,7 +2,7 @@
 # required metadata
 
 title: Integration with Finance FAQ
-description: This topic explains what data is synchronized in a Human Resources and Finance integration.
+description: This article explains what data is synchronized in a Human Resources and Finance integration.
 author: twheeloc
 ms.date: 08/19/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Human Resources
 
 
 
-This topic answers common questions associated about what data is synchronized when Dynamics 365 Human Resources is integrated with Dynamics 365 Finance.
+This article answers common questions associated about what data is synchronized when Dynamics 365 Human Resources is integrated with Dynamics 365 Finance.
 
 ## Can I edit the Dynamics 365 Talent application user in Power Apps?
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Use cases for business events
-description: This topic lists use cases for business events.
+description: This article lists use cases for business events.
 author: Sunil-Garg
 ms.date: 10/14/2019
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks

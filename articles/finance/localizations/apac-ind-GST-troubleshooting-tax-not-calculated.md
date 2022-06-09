@@ -2,7 +2,7 @@
 # required metadata
 
 title: Tax isn't calculated
-description: This topic provides troubleshooting information that can help when tax isn't calculated on tax documents.
+description: This article provides troubleshooting information that can help when tax isn't calculated on tax documents.
 author: peter-xu
 manager: beya
 ms.date: 04/29/2021
@@ -17,7 +17,7 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: India
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.1
 
 [!include [banner](../includes/banner.md)]
 
-If you discover that tax component lines or tax document lines are missing from a tax document, follow the steps in this topic to troubleshoot the issue. The procedures use a purchase order as an example to show the troubleshooting process.
+If you discover that tax component lines or tax document lines are missing from a tax document, follow the steps in this article to troubleshoot the issue. The procedures use a purchase order as an example to show the troubleshooting process.
 
 For more information about the Tax engine (also referred to as GTE) or components, see [Tax engine overview](../general-ledger/tax-engine.md).
 

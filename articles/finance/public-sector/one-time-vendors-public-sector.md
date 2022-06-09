@@ -2,7 +2,7 @@
 # required metadata
 
 title: One-time vendors in the public sector
-description: This topic provides information about how to create a one-time vendor and invoice, and how to import and create multiple one-time vendors and invoices. 
+description: This article provides information about how to create a one-time vendor and invoice, and how to import and create multiple one-time vendors and invoices. 
 author: v-kiarnd
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,13 +15,13 @@ ms.search.form: LedgerTransVoucher, SysConfiguration, Tax1099Summary, VendTableL
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 19801
 ms.assetid: 403857a3-bebb-4ff7-b1b5-c88f41fc18ae
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about how to create a one-time vendor and invoice, and how to import and create multiple one-time vendors and invoices. 
+This article provides information about how to create a one-time vendor and invoice, and how to import and create multiple one-time vendors and invoices. 
 
 Occasionally, you might have to create an invoice for a new vendor that you have no regular relationship with. In Dynamics 365 Finance, if approval or a contract in the form of a purchase order isn't required, you can quickly create an invoice at the same time that you create a record for the vendor. For example, you have to pay referees or refunds, but a master vendor record doesn't exist. Alternatively, you might have to create multiple invoices for new vendors that you have no regular relationship with. If neither approval nor a purchase order is required, you can quickly create invoices at the same time that you create records for the vendors. For example, you want to support vendor payments for jury duty, registration payments, and customer refunds or other payments, but master vendor records don't exist. For more information, see [Plan for one-time vendors in the public-sector](plan-one-time-vendors-public-sector.md).
 

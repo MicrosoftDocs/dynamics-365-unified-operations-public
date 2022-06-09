@@ -2,9 +2,9 @@
 # required metadata
 
 title: Configure high availability for SQL Server Reporting Services (SSRS) nodes
-description: This topic explains how to configure Microsoft SQL Server Reporting Services (SSRS) nodes for Dynamics 365 Finance + Operations (on-premises) deployments.
+description: This article explains how to configure Microsoft SQL Server Reporting Services (SSRS) nodes for Dynamics 365 Finance + Operations (on-premises) deployments.
 author: faix
-ms.date: 02/22/2022
+ms.date: 06/07/2022
 ms.topic: article
 ms.prod: dynamics-365 
 ms.service:
@@ -29,13 +29,13 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include[banner](../includes/banner.md)]
 
-This topic explains how to configure multiple Microsoft SQL Server Reporting Services (SSRS) nodes for Dynamics 365 Finance + Operations (on-premises) deployments.
+This article explains how to configure multiple Microsoft SQL Server Reporting Services (SSRS) nodes for Dynamics 365 Finance + Operations (on-premises) deployments.
 
 ## High availability with Windows failover clusters
 
 This scenario uses Windows failover clusters. Therefore, you will have one active node that receives all requests and one passive node that is idle. If the active node becomes unavailable, the cluster will detect this event, and the passive node will start to receive all network traffic.
 
-This topic doesn't cover the setup of Windows failover clusters. For information, see [Create a failover cluster](/windows-server/failover-clustering/create-failover-cluster).
+This article doesn't cover the setup of Windows failover clusters. For information, see [Create a failover cluster](/windows-server/failover-clustering/create-failover-cluster).
 
 After the cluster is set up, you can configure your installation. The examples below will be based on the information displayed in the following illustration.
 
@@ -88,7 +88,7 @@ After the cluster is set up, you can configure your installation. The examples b
     > [!IMPORTANT]
     > If you've already created the Azure Service Fabric cluster, make sure that the nodes are added to it.
     >
-    > Rerun the Export-PfxFiles.ps1 script, and rerun the Complete-Prereqs.ps1 script on the appropriate machines, to ensure that the certificate for the SSRS web server is distributed to all the ReportServer nodes.
+    > Rerun the Export-Certificates.ps1 script, and rerun the Complete-Prereqs.ps1 script on the appropriate machines, to ensure that the certificate for the SSRS web server is distributed to all the ReportServer nodes.
 
 ## High availability with load balancers
 
@@ -96,7 +96,7 @@ In this scenario, a load balancer is configured to distribute requests among the
 
 When you set up this configuration, note that you must set up session affinity. The solution that you select **must** support this requirement. The type of session affinity that is required depends on the client. When the Application Object Server (AOS) node makes a request, the load balancer should direct all requests for that AOS node to the same SSRS node.
 
-This topic doesn't include instructions for setting up a specific software load balancer or hardware load balancer.
+This article doesn't include instructions for setting up a specific software load balancer or hardware load balancer.
 
 Here is a general overview of this scenario:
 
@@ -109,7 +109,7 @@ Here is a general overview of this scenario:
 > [!IMPORTANT]
 > If you've already created the Service Fabric cluster, make sure that the additional nodes are added to it.
 >
-> Rerun the Export-PfxFiles.ps1 script, and rerun the Complete-Prereqs.ps1 script on the appropriate machines, to ensure that the certificate for the SSRS web server is distributed to all the ReportServer nodes.
+> Rerun the Export-Certificates.ps1 script, and rerun the Complete-Prereqs.ps1 script on the appropriate machines, to ensure that the certificate for the SSRS web server is distributed to all the ReportServer nodes.
 
 ## Deployed environments where the base deployment is earlier than Platform update 41
 

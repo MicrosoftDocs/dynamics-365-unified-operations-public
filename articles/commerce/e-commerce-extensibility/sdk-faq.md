@@ -2,9 +2,9 @@
 # required metadata
 
 title: Dynamics 365 Commerce online SDK FAQ
-description: This topic summarizes answers to questions frequently asked by users of the Dynamics 365 Commerce online software development kit (SDK).
+description: This article summarizes answers to questions frequently asked by users of the Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
-ms.date: 03/11/2022
+ms.date: 04/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -28,8 +28,17 @@ ms.dyn365.ops.version: Release 10.0.5
 # Dynamics 365 Commerce online SDK FAQ
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
-This topic summarizes answers to questions frequently asked by users of the Dynamics 365 Commerce online software development kit (SDK).
+This article summarizes answers to questions frequently asked by users of the Dynamics 365 Commerce online software development kit (SDK).
+
+### Why does my e-commerce extension package fail to build due to an incompatible version of Node.js?
+
+If you updated to version 1.37 or higher of the online SDK package, you may experience a build break if you are using Node version 12.x since version 1.37 has been updated to support Node.js version 16.x. You will see the following error message:
+
+`The engine "node" is incompatible with this module. Expected version ">=16.x.x". Got "12.22.6".` 
+
+To resolve this issue you must update Node.js to version 16.x on local build environments and any automated build environments such as Azure DevOps pipelines. 
 
 ### How do I resolve heap out of memory errors?
 

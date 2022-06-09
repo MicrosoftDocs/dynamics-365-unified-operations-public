@@ -2,7 +2,7 @@
 # required metadata
 
 title: Tax isn't calculated or the tax amount is zero
-description: This topic provides troubleshooting information that can help when the tax amount is 0 (zero) or tax isn't calculated.
+description: This article provides troubleshooting information that can help when the tax amount is 0 (zero) or tax isn't calculated.
 author: shtao
 ms.date: 04/01/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global

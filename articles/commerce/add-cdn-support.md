@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add support for a content delivery network (CDN)
-description: This topic describes how to add a content delivery network (CDN) to your Microsoft Dynamics 365 Commerce environment.
+description: This article describes how to add a content delivery network (CDN) to your Microsoft Dynamics 365 Commerce environment.
 author: brianshook
 ms.date: 03/17/2021
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to add a content delivery network (CDN) to your Microsoft Dynamics 365 Commerce environment.
+This article describes how to add a content delivery network (CDN) to your Microsoft Dynamics 365 Commerce environment.
 
 When you set up an e-commerce environment in Dynamics 365 Commerce, you can configure it to work with your CDN service. 
 
@@ -65,7 +65,7 @@ The CDN setup process consists of these general steps:
 
 ### Add a front-end host
 
-Any CDN service can be used, but for the example in this topic, Azure Front Door Service is used. 
+Any CDN service can be used, but for the example in this article, Azure Front Door Service is used. 
 
 For information about how to set up Azure Front Door Service, see [Quickstart: Create a Front Door for a highly available global web application](/azure/frontdoor/quickstart-create-front-door).
 

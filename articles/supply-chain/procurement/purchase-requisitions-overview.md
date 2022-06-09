@@ -2,8 +2,8 @@
 # required metadata
 
 title: Purchase requisition overview
-description: This topic describes the purchase requisition workflow and the different statuses that a purchase requisition can have.
-author: Henrikan
+description: This article describes the purchase requisition workflow and the different statuses that a purchase requisition can have.
+author: GalynaFedorova
 ms.date: 11/02/2017
 ms.topic: overview
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: ["2174", "intro-internal"]
 ms.assetid: 77d07119-4d9f-4c0e-acbe-d319203571ab
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the purchase requisition workflow and the different statuses that a purchase requisition can have.
+This article describes the purchase requisition workflow and the different statuses that a purchase requisition can have.
 
 Depending on the setup of your organization, you can create purchase requisitions for products that your organization uses. A purchase requisition is an internal document that authorizes the Purchasing department to buy items or services.  
 

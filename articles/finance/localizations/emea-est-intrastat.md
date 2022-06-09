@@ -2,14 +2,14 @@
 # required metadata
 
 title: Estonian Intrastat
-description: This topic contains information about the Estonian Intrastat report.
+description: This article contains information about the Estonian Intrastat report.
 author: andosip
 ms.date: 01/11/2022
 ms.topic: article
 audience: 
 ms.reviewer: kfend 
 ms.search.region: Global
-ms.author: v-aosipov
+ms.author: anasyash
 ms.search.validFrom: 
 ---
 
@@ -79,7 +79,7 @@ You must create VAT ID registration types for all the countries or regions that 
 2. In the grid, select a customer.
 3. On the Action Pane, on the **Customer** tab, in the **Registration** group, select **Registration IDs**.
 4. On the **Registration ID** FastTab, select **Add** to create a registration ID.
-5. In the **Registration type** field, select the registration type that you created for the company code earlier in this topic.
+5. In the **Registration type** field, select the registration type that you created for the company code earlier in this article.
 6. In the **Registration number** field, enter the company's VAT number.
 7. On the Action Pane, select **Save**. Then close the page.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up a subsidiary legal entity for consolidation
-description: This topic explains how to work with charts of accounts for consolidation companies.
+description: This article explains how to work with charts of accounts for consolidation companies.
 author: jinniew
 ms.date: 10/30/2020
 ms.topic: article
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 

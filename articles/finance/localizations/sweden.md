@@ -2,7 +2,7 @@
 # required metadata
 
 title: Sweden overview
-description: This topic provides links to documentation resources for Sweden. 
+description: This article provides links to documentation resources for Sweden. 
 author: kfend
 ms.date: 03/04/2022
 ms.topic: overview
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides links to documentation resources for Sweden. 
+This article provides links to documentation resources for Sweden. 
 
 - [Export financial information for auditors in Sweden](emea-swe-sie-standard-report.md)
 - [Import payment formats](emea-swe-payment-formats-import.md)

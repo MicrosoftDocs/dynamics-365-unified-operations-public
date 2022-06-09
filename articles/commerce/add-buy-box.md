@@ -2,9 +2,9 @@
 # required metadata
 
 title: Buy box module
-description: This topic covers buy box modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+description: This article covers buy box modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/08/2021
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic covers buy box modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+This article covers buy box modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
 The term *buy box* typically refers to the area of a product details page (PDP) that is "above the fold," and that hosts all the most important information that is required to make a product purchase. (An area that is "above the fold" is visible when the page is first loaded, so that users don't have to scroll down to see it.)
 
@@ -94,22 +94,25 @@ To add a buy box module to a new page and set the required properties, follow th
 1. Go to **Fragments**, and select **New** to create a new fragment.
 1. In the **New fragment** dialog box, select the **Buy box** module.
 1. Under **Fragment name**, enter the name **Buy box fragment**, and then select **OK**.
-1. In the **Media Gallery** slot of the buy box module, select the ellipsis (**...**), and then select **Add Module**.
-1. In the **Add Module** dialog box, select the **Media gallery** module, and then select **OK**.
-1. In the **Store selector** slot of the buy box module, select the ellipsis (**...**), and then select **Add Module**.
-1. In the **Add Module** dialog box, select the **Store selector** module, and then select **OK**.
+1. In the **Media Gallery** slot of the buy box module, select the ellipsis (**...**), and then select **Add module**.
+1. In the **Select modules** dialog box, select the **Media gallery** module, and then select **OK**.
+1. In the **Store selector** slot of the buy box module, select the ellipsis (**...**), and then select **Add module**.
+1. In the **Select modules** dialog box, select the **Store selector** module, and then select **OK**.
 1. Select **Save**, select **Finish editing** to check in the fragment, and then select **Publish** to publish it.
 1. Go to **Templates**, and select **New** to create a new template.
-1. In the **New Template** dialog box, under **Template name**, enter **PDP template**, and then select **OK**.
-1. In the **Body** slot, select the ellipsis (**...**), and then select **Add Module**.
-1. In the **Add Module** dialog box, select the **Default Page** module, and then select **OK**.
+1. In the **New template** dialog box, under **Template name**, enter **PDP template**, and then select **OK**.
+1. In the **Body** slot, select the ellipsis (**...**), and then select **Add module**.
+1. In the **Select modules** dialog box, select the **Default Page** module, and then select **OK**.
 1. In the **Main** slot of the default page, select the ellipsis (**...**), and then select **Add fragment**.
-1. In the **Select fragment** dialog box, select the **Buy box fragment** fragment that you created earlier, and then select **OK**.
+1. In the **Select a fragment** dialog box, select the **Buy box fragment** fragment that you created, and then select **OK**.
 1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it.
 1. Go to **Pages**, and select **New** to create a new page.
-1. In the **Choose a template** dialog box, select the **PDP template** template. Under **Page name**, enter **PDP page**, and then select **OK**.
+1. In the **Create a new page** dialog box, under **Page name**, enter a **PDP page**, and then select **Next**.
+1. Under **Choose a template**, select **PDP template**, and then select **Next**.
+1. Under **Choose a layout**, select a page layout (for example, **Flexible layout**), and then select **Next**.
+1. Under **Review and finish**, review the page configuration. If you need to edit the page information, select **Back**. If the page information is correct, select **Create page**.
 1. In the **Main** slot of the new page, select the ellipsis (**...**), and then select **Add fragment**.
-1. In the **Select fragment** dialog box, select the **Buy box fragment** fragment that you created earlier, and then select **OK**.
+1. In the **Select a fragment** dialog box, select the **Buy box fragment** fragment that you created, and then select **OK**.
 1. Save and preview the page. Add the **?productid=&lt;product id&gt;** query string parameter to the URL of the preview page. In that way, the product context is used to load and render the preview page.
 1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it. A buy box should appear on the product details page.
 

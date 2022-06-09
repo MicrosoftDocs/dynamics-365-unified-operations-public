@@ -2,7 +2,7 @@
 # required metadata
 
 title: Lease termination proposal
-description: This topic explains how to propose a lease for termination.
+description: This article explains how to propose a lease for termination.
 author: moaamer
 ms.date: 07/16/2021
 ms.topic: article
@@ -15,8 +15,8 @@ ms.search.form: AssetLeaseTerminateLeaseListPage
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
-# ms.search.scope: Core, Operations, Finance
+ms.reviewer: kfend
+# 
 
 # ms.tgt_pltfrm: 
 ms.custom: 4464
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-If a lease is terminated early, Asset leasing can record a termination journal entry to write off the lease liability, right-of-use (ROU) asset, and accumulated depreciation, and book a gain or loss. The early termination process terminates a lease and its associated lease books. It doesn't terminate individual lease books. This topic describes the functionality that lets you propose a lease for termination and process the lease termination journal entry.
+If a lease is terminated early, Asset leasing can record a termination journal entry to write off the lease liability, right-of-use (ROU) asset, and accumulated depreciation, and book a gain or loss. The early termination process terminates a lease and its associated lease books. It doesn't terminate individual lease books. This article describes the functionality that lets you propose a lease for termination and process the lease termination journal entry.
 
 If a lease isn't classified as a deferred rent treatment lease and isn't associated with a fixed asset, Asset leasing produces the following termination journal entry.
 
@@ -128,7 +128,7 @@ The following tables show the values that are set on the **General** and **Payme
 
 ### Steps for terminating the lease
 
-1. After you create the lease as described earlier in this topic, go to the lease book, and confirm the payment schedule. Then post the initial recognition journal entry. The initial ROU asset is $71,235.81, and lease liability should be $70,235.81. For this example, the lease was classified as an operating lease under Accounting Standards Codification Topic 842 (ASC 842).
+1. After you create the lease as described earlier in this article, go to the lease book, and confirm the payment schedule. Then post the initial recognition journal entry. The initial ROU asset is $71,235.81, and lease liability should be $70,235.81. For this example, the lease was classified as an operating lease under Accounting Standards Codification Topic 842 (ASC 842).
 2. Run the batch journal process three times to simulate the passage of three years for the lease payments, interest expenses, and depreciation expenses.
 3. After you've finished running all three batch jobs, go back to the lease book, and open the Liability and Asset transactions tables to view the current carrying value of the ROU asset and lease liability. After three years, the value of the liability should be approximately $-53,893.00, and the value of the asset should be approximately $54,593.00.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Warehouse location status
-description: This topic provides an overview of the Warehouse location status feature.
+description: This article provides an overview of the Warehouse location status feature.
 author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: perlynne
+ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
 

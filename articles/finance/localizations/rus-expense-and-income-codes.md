@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Expense and income codes
-description: This topic provides information about the expense and income codes available for Russia.
+description: This article provides information about the expense and income codes available for Russia.
 author: anasyash
 ms.date: 08/05/2020
 ms.topic: article

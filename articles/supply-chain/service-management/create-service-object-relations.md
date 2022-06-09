@@ -2,8 +2,8 @@
 # required metadata
 
 title: Create service object relations   
-description: This topic describes how to create service object relations for a service agreement and a service order.
-author: kamaybac
+description: This article describes how to create service object relations for a service agreement and a service order.
+author: sorenva
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kamaybac
+ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 
-This topic describes how to create service object relations for a service agreement and a service order. When you a create service object relation, you associate the service object to a service agreement or service order. When a customer requests service for an item that is a service object, you can select the service object from the list of service object relations.
+This article describes how to create service object relations for a service agreement and a service order. When you a create service object relation, you associate the service object to a service agreement or service order. When a customer requests service for an item that is a service object, you can select the service object from the list of service object relations.
 
 ## Create a service object relation for a service agreement
 

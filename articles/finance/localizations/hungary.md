@@ -2,8 +2,8 @@
 # required metadata
 
 title: Hungary overview
-description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for Hungary. 
-author: ShylaThompson
+description: This article provides links to Microsoft Dynamics 365 Finance documentation resources for Hungary. 
+author: kfend
 ms.date: 09/04/2020
 ms.topic: overview
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 
 ms.search.region: Hungary
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides links to documentation resources for Hungary. 
+This article provides links to documentation resources for Hungary. 
 
 
 - [Average and daily exchange rate calculation](emea-hun-average-daily-exchange-rate-calculation.md)
@@ -40,6 +40,7 @@ This topic provides links to documentation resources for Hungary.
 - [Year-end close](emea-cze-hun-year-end.md)
 - [Online invoicing system](emea-hun-online-invoicing.md)
 - [Sales tax reports for Hungary](emea-hun-sales-tax-reports.md)
+- [Intrastat report](emea-hun-intrastat.md)
 - [Deferred sales tax calculations](emea-hun-deferred-vat.md)
 
 

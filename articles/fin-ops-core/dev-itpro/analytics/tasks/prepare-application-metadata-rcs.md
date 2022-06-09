@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Prepare application metadata to be used in RCS
-description: This topic describes how to create a new reporting configuration that contains application metadata.
+description: This article describes how to create a new reporting configuration that contains application metadata.
 author: NickSelin
 ms.date: 06/28/2019
 ms.topic: business-process 
@@ -26,7 +26,7 @@ ms.dyn365.ops.version: Version 7.0.0
 # Prepare application metadata to be used in RCS
 [!include [banner](../../includes/banner.md)]
 
-The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can create a new Electronic reporting (ER) configuration that contains application metadata for designing ER model mapping configurations in Regulatory configuration service (RCS). This configuration will be used for designing a sample ER model mapping configuration to access foreign trade transactions. In this example, you will create a configuration for sample company, Litware, Inc. These steps can be performed in any company. To complete these steps, you must first complete the steps in the topic, [Create configuration providers and mark them as active](er-configuration-provider-mark-it-active-2016-11.md).
+The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can create a new Electronic reporting (ER) configuration that contains application metadata for designing ER model mapping configurations in Regulatory configuration service (RCS). This configuration will be used for designing a sample ER model mapping configuration to access foreign trade transactions. In this example, you will create a configuration for sample company, Litware, Inc. These steps can be performed in any company. To complete these steps, you must first complete the steps in the article, [Create configuration providers and mark them as active](er-configuration-provider-mark-it-active-2016-11.md).
 
 ## Prerequisites
 1.    Go to **Organization administration** > **Workspaces** > **Electronic reporting**. 

@@ -2,14 +2,14 @@
 # required metadata
 
 title: Netherlands Intrastat
-description: This topic contains information about the Netherlands Intrastat report.
+description: This article contains information about the Netherlands Intrastat report.
 author: andosip
 ms.date: 10/19/2021
 ms.topic: article
 audience: 
 ms.reviewer: kfend 
 ms.search.region: Global
-ms.author: v-aosipov
+ms.author: anasyash
 ms.search.validFrom: 
 ---
 # Netherlands Intrastat

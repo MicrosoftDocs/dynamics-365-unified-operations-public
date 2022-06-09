@@ -2,7 +2,7 @@
 # required metadata
 
 title: Revenue recognition overview  (contains video)
-description: This topic provides information about the Revenue recognition feature. This feature provides a flexible framework that lets you define company-specific rules for recognizing both the revenue price and the revenue schedule for multi-element orders.
+description: This article provides information about the Revenue recognition feature. This feature provides a flexible framework that lets you define company-specific rules for recognizing both the revenue price and the revenue schedule for multi-element orders.
 author: kweekley
 ms.date: 03/15/2022
 ms.topic: overview
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form:  Customer
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 
 ms.search.region: Global 

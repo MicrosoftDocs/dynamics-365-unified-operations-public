@@ -2,7 +2,7 @@
 # required metadata
 
 title: Accounting distributions
-description: This topic provides information about accounting distributions and describes the options that are available for processing them.
+description: This article provides information about accounting distributions and describes available processing options.
 author: sunfzam
 ms.date: 09/17/2020
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form: AccountingDistribution
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 17231
 ms.assetid: 9030355d-8e6e-408b-9e7d-7b346eaa652c
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about accounting distributions and describes the options that are available for processing them. Accounting distributions are used to allocate monetary amounts for a source document to specific ledger accounts. 
+This article provides information about accounting distributions and describes the options that are available for processing them. Accounting distributions are used to allocate monetary amounts for a source document to specific ledger accounts. 
 
 Accounting distributions are a program-wide capability that is used and extended by each source document, such as a purchase order, vendor invoice, expense report, and free text invoice. By default, a default accounting distribution is generated for each source document line and monetary amount, and is conditionally enabled for modification. 
 

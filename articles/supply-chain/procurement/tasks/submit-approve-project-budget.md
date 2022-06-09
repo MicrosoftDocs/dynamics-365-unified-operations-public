@@ -1,14 +1,14 @@
 ---
 title: Create and submit a project budget workflow  
 description: This procedure shows you how to create and submit the budget for a project. 
-author: Henrikan
+author: GalynaFedorova
 ms.date: 11/22/2021
 ms.topic: article
 ms.search.form: ProjProjectsListPage, ProjTable, ProjBudget, WorkflowSubmitDialog   
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---

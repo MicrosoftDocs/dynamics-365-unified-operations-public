@@ -2,7 +2,7 @@
 # required metadata
 
 title: Reporting options
-description: This topic explains how to customize Microsoft Dynamics 365 Human Resources reports or create new reports.
+description: This article explains how to customize Microsoft Dynamics 365 Human Resources reports or create new reports.
 author: twheeloc
 ms.date: 08/19/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 

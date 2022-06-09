@@ -1,6 +1,6 @@
 ---
 title: Application Explorer properties
-description: This topic describes the properties that appear in the Properties window of Microsoft Visual Studio for items in Application Explorer.
+description: This article describes the properties that appear in the Properties window of Microsoft Visual Studio for items in Application Explorer.
 author: RobinARH
 ms.date: 11/03/2017
 audience: Developer
@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the properties that appear in the Properties window of Microsoft Visual Studio for items in Application Explorer.
+This article describes the properties that appear in the Properties window of Microsoft Visual Studio for items in Application Explorer.
 
 Many nodes in Application Explorer represent elements that have properties associated with them. You can read or modify these properties in the **Properties** window of Microsoft Visual Studio.
 
@@ -1900,7 +1900,7 @@ The default value is <strong>Auto</strong>.</td>
 </tr>
 <tr class="odd">
 <td>HelpText</td>
-<td>Create a Help string for the menu item. The text appears on the status bar when you select the object that is opened by the menu item (for example, a form). <strong>Note:</strong> To write a Help topic for the menu item, in Application Explorer, in the <strong>Application Documentation/Menu Items</strong> node, find the topic that has the same name as your menu item. This topic will then be shown instead of any Help topic that was written about the object that is opened by the menu item.</td>
+<td>Create a Help string for the menu item. The text appears on the status bar when you select the object that is opened by the menu item (for example, a form). <strong>Note:</strong> To write a Help article for the menu item, in Application Explorer, in the <strong>Application Documentation/Menu Items</strong> node, find the article that has the same name as your menu item. This article will then be shown instead of any Help article that was written about the object that is opened by the menu item.</td>
 </tr>
 <tr class="even">
 <td>ImageLocation</td>

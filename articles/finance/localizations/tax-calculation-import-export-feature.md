@@ -2,7 +2,7 @@
 # required metadata
 
 title: Import and export tax calculations
-description: This topic provides information about the import and export functionality of the tax calculation service.
+description: This article provides information about the import and export functionality of the tax calculation service.
 author: Kai-Cloud
 ms.date: 11/22/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Global
@@ -26,7 +26,7 @@ ms.dyn365.ops.version: 10.0.23
 ---
 # Import and export tax calculations
 
-This topic provides information about the import and export functionality of the tax calculation service. This functionality helps ensure a flexible and efficient configuration experience.
+This article provides information about the import and export functionality of the tax calculation service. This functionality helps ensure a flexible and efficient configuration experience.
 
 ## Import and export tax codes
 

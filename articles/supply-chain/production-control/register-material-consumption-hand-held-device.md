@@ -2,7 +2,7 @@
 # required metadata
 
 title: Register material consumption using a mobile device
-description: This topic describes a workflow that enables registration of raw material consumption in production by using a handheld device.
+description: This article describes a workflow that enables registration of raw material consumption in production by using a handheld device.
 author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes a workflow that enables registration of raw material consumption in production by using a handheld device.
+This article describes a workflow that enables registration of raw material consumption in production by using a handheld device.
 
 ## Introduction
 

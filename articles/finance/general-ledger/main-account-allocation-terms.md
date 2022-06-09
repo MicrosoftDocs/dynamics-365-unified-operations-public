@@ -2,7 +2,7 @@
 # required metadata
 
 title: Allocation terms
-description: This topic provides information about using allocation terms on a main account. 
+description: This article provides information about using allocation terms on a main account. 
 author: rachel-profitt
 ms.date: 06/15/2020
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form: AccountingDistribution, LedgerAllocationRule, MainAccount, Alloc
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 17361
 ms.assetid: 04c8548a-0af9-492b-954b-946b4f8ca023
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about using allocation terms on a main account. Allocation terms are used to distribute amounts across multiple ledger account combinations. They help ensure that expenses or revenues are charged to the correct object in accounting.
+This article provides information about using allocation terms on a main account. Allocation terms are used to distribute amounts across multiple ledger account combinations. They help ensure that expenses or revenues are charged to the correct object in accounting.
 
 Each allocation term that you create on a main account defines the percentage of a voucher to be allocated from a single-source main account and a combination of financial dimensions. In addition, you define the destination main account and financial dimensions where the amount will be allocated. 
 

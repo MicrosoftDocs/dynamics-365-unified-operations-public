@@ -2,7 +2,7 @@
 # required metadata
 
 title: Financial dimensions and main accounts in right-to-left languages
-description: This topic describes decisions that you need to make when you use a right-to-left language, and you must set up financial dimensions and main accounts.
+description: This article describes decisions that you need to make when you use a right-to-left language, and you must set up financial dimensions and main accounts.
 author: RyanCCarlson2
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: tfehr
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 222564
 ms.assetid: 875dcebb-1bbb-4841-a8c6-9e134da07e96
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes some of the implementation decisions that you should consider when you use a right-to-left language, and you must set up financial dimensions and main accounts.
+This article describes some of the implementation decisions that you should consider when you use a right-to-left language, and you must set up financial dimensions and main accounts.
 
 Financial dimensions and main accounts are key components of the planning phase for an implementation. After financial dimensions and main accounts are created in the system, they are used on the **Configure account structures**, **Advanced rule structures**, and **Financial dimension configuration for integrating applications** pages. The order that is defined on those pages is used in the system for data entry and consumption. In some places in the system, the financial dimensions and main accounts appear in separate fields. In other places, such as journals, the financial dimensions and main accounts appear as a single string.
 

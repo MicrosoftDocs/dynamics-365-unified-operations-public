@@ -2,7 +2,7 @@
 # required metadata
 
 title: Cash position inquiry
-description: This topic provides information about how to determine the corresponding cash positions for financial dimension sets that contain self-balancing dimensions.
+description: This article provides information about how to determine the corresponding cash positions for financial dimension sets that contain self-balancing dimensions.
 author: velofog
 ms.date: 10/24/2019
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: [Operations AOT form name to tie this topic to]
+# ms.search.form: [Operations AOT form name to tie this article to]
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 ms.search.industry: public sector
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2019-10-24
 ms.dyn365.ops.version: 10.0.7
 

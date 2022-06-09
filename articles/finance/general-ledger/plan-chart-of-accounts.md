@@ -2,7 +2,7 @@
 # required metadata
 
 title: Plan your chart of accounts
-description: This topic provides information that will help you plan the chart of accounts for your organization.
+description: This article provides information that will help you plan the chart of accounts for your organization.
 author: aprilolson
 ms.date: 04/02/2018
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form: DimensionConfigureAccountStructure, LedgerChartOfAccounts
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 14051
 ms.assetid: 10edb129-33f0-4cf9-b2a7-4b7ffa09b229
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information that will help you plan the chart of accounts for your organization.
+This article provides information that will help you plan the chart of accounts for your organization.
 
 To track and maintain financial information in an organization, you can set up a chart of accounts. A chart of accounts is a collection of accounts that define a financial framework. To further track the transactions in these accounts, you can add segments. These segments are known as financial dimensions. For example, an expense account might include financial dimensions that are named Department, Cost center, and Purpose. User-defined rules determine how financial dimensions are attached to the main accounts and to other financial dimensions, and also how transactions are entered. These user-defined rules are known as account structures and advanced rules.
 

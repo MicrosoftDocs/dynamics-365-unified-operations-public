@@ -2,8 +2,8 @@
 # required metadata
 
 title: Schedule work creation during wave
-description: This topic describes how to set up and use the Schedule work creation wave processing method.
-author: perlynne
+description: This article describes how to set up and use the Schedule work creation wave processing method.
+author: Mirzaab
 ms.date: 01/14/2021
 ms.topic: article
 ms.prod:
@@ -17,7 +17,7 @@ ms.search.form: WHSPostMethod, WHSWavePostMethodTaskConfig, WHSWaveTemplateTable
 audience: Application User
 # ms.devlang:
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
+
 # ms.tgt_pltfrm:
 # ms.custom:
 ms.search.region: Global
@@ -38,7 +38,7 @@ When the functionality is enabled, planned work will automatically get created, 
 
 ## Turn on the scheduled work creation features in feature management
 
-To use the features described in this topic, they must be turned on for your system. Use [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to turn on the following features in the following order:
+To use the features described in this article, they must be turned on for your system. Use [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to turn on the following features in the following order:
 
 1. **Organization-wide work blocking** - Required for both manual and automatic configuration of scheduled work creation. (As of Supply Chain Management version 10.0.21, this feature is mandatory, so it is turned on by default and can't be turned off again.)
 1. **Schedule work creation** - Required for both manual and automatic configuration of scheduled work creation.

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure Electronic invoicing in Regulatory Configuration Services (RCS)
-description: This topic explains how to configure Electronic invoicing in Dynamics 365 Regulatory Configuration Services (RCS). 
+description: This article explains how to configure Electronic invoicing in Dynamics 365 Regulatory Configuration Services (RCS). 
 author: gionoder
 ms.date: 11/08/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 10.0.12
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the configuration capabilities of Electronic invoicing in Dynamics 365 Regulatory Configuration Services (RCS).
+This article provides information about the configuration capabilities of Electronic invoicing in Dynamics 365 Regulatory Configuration Services (RCS).
 
 It is through the configuration capabilities that Electronic invoicing helps you meet business and regulatory requirements of electronic invoices without having to do any coding. And in the scenarios where electronic invoices must be electronically approved by a web service, the configuration capabilities also help you meet the requirements for exchanging messages with a web service, without doing any code.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Fixed asset depreciation
-description: This topic provides an overview of depreciation in Fixed assets.
+description: This article provides an overview of depreciation in Fixed assets.
 author: moaamer
 ms.date: 12/03/2021
 ms.topic: article
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic provides an overview of depreciation in Fixed assets.
+This article provides an overview of depreciation in Fixed assets.
 
 Depreciation is a periodic transaction that typically reduces the value of the fixed asset on the balance sheet, and is charged as an expenditure to a profit and loss account. Therefore, a main account is typically used to credit the periodic depreciation on the balance sheet. An offset account is an account in the profit and loss part of the chart of accounts.
 

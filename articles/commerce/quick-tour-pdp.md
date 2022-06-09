@@ -2,7 +2,7 @@
 # required metadata
 
 title: Product details pages overview
-description: This topic provides an overview of product details pages (PDPs) in Microsoft Dynamics 365 Commerce.
+description: This article provides an overview of product details pages (PDPs) in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 01/23/2020
 ms.topic: overview
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic provides an overview of product details pages (PDPs) in Microsoft Dynamics 365 Commerce.
+This article provides an overview of product details pages (PDPs) in Microsoft Dynamics 365 Commerce.
 
 A PDP provides detailed information about a product, and lets customers select product options such as a size, style, and color. A PDP should showcase all the product information that a customer requires to make a purchase decision.
 
@@ -38,7 +38,7 @@ The following illustration shows an example of a PDP.
 
 ## Header and footer modules
 
-The top of a PDP has a header that shows all the product categories and other pages that the retailer wants customers to browse. The bottom of the page has a footer that contains quick links to various topics that might interest customers.
+The top of a PDP has a header that shows all the product categories and other pages that the retailer wants customers to browse. The bottom of the page has a footer that contains quick links to various articles that might interest customers.
 
 ## Buy box module
 

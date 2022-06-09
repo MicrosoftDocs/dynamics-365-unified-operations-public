@@ -2,7 +2,7 @@
 # required metadata
 
 title: Dynamics 365 Commerce evaluation environment FAQ
-description: This topic provides answers to frequently asked questions about the Microsoft Dynamics 365 Commerce evaluation environment.
+description: This article provides answers to frequently asked questions about the Microsoft Dynamics 365 Commerce evaluation environment.
 author: v-chgri
 ms.date: 07/16/2020
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic provides answers to frequently asked questions about the Microsoft Dynamics 365 Commerce evaluation environment.
+This article provides answers to frequently asked questions about the Microsoft Dynamics 365 Commerce evaluation environment.
 
 ## Can we use the Commerce evaluation environment as an e-Commerce storefront for customers that currently implement Retail?
 

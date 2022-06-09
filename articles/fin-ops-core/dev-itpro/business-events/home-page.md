@@ -2,16 +2,16 @@
 # required metadata
 
 title: Business events overview
-description: This topic provides information about business events, which allow external systems to receive notifications from Finance and Operations apps.
+description: This article provides information about business events, which allow external systems to receive notifications from Finance and Operations apps.
 author: Sunil-Garg
-ms.date: 11/09/2021
+ms.date: 04/22/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
@@ -26,6 +26,7 @@ ms.dyn365.ops.version: 2019-02-28
 # Business events overview
 
 [!include[banner](../includes/banner.md)]
+[!include[preview banner](../includes/preview-banner.md)]
 
 Business events provide a mechanism that lets external systems receive notifications from Finance and Operations applications. In this way, the systems can perform business actions in response to the business events.
 
@@ -63,19 +64,32 @@ In scenarios where external integration systems require the schema of the payloa
 In summary, the business event catalog helps identify the business events that are required for an implementation. It also helps identify the schema for each business event.
 
 The next step is to manage the endpoints.
-## Business events parameters and processing
-The application allocates dedicated batch threads to process business events in near real time. The maximum number of threads cannot exceed the total threads available in the system (**System administration > Server configuration**). Because threads are a shared resource for all batch processing, care must be taken when deciding to change the thread allocation for business events. The total threads allocated for business events is controlled using a parameter in the business events parameter table. This setting is not exposed from the user interface (UI), so a support case must be created to get this count changed in production environments as this will need database access.
 
-> [!IMPORTANT]
-> There may be reliability issues with dedicated batch threads. Microsoft is working to resolve this issue and as a result, we recommend that you schedule the manual batch job to process business events, as explained below. We will update this topic when this issue is resolved.
+## Business events parameters
 
-The business events batch processing job is available as a workaround to mitigate issues with the dedicated processing, if needed. The batch job can be enabled and scheduled from the **Business events parameters** page. 
+### General
 
-In the event of an error while sending business events to its end point, the system retries to send the business events three times with an interval of one second per retry. This is the default setting that can be changed on the **Business events parameters** page.
+The **General** tab of the **Business events parameters** page provides general settings that are applied to business events.
 
-The number of endpoints that can subscribe to the same business event in a legal entity is limited to ten by default. This can be changed on the **Business events parameters** page.
+- **Retry count** – The number of times that the system will try again to send business events to an endpoint if an error occurs. The default value is **3**.
+- **Wait time between retries** – The interval, in milliseconds, between attempts to send a business event to its endpoint. The default value is **1000** milliseconds.
+- **Endpoints allowed per event** – The maximum number of endpoints that can subscribe to the same business event in a legal entity. The default value is **10**.
+- **Use business events batch job** – The business events batch processing job is available when a workaround is required to mitigate issues with dedicated processing. If you enable this option, select the **Business events batch job** action to select settings for the batch job processor. For more information about the settings for dedicated processing, see the description of the **Performance** tab in the next section.
+- **Key vault secret cache interval** – The number of minutes that the key vault secrets that are used for business events will be cached in memory before they are read and cached again from the configured key vault. The default value is **5** minutes.
 
-The out-of-the-box default settings for the above described parameters can be restored on the **Business events parameters** page.
+### Performance
+
+The business events framework has two primary settings that can affect performance: **Processing threads** and **Bundle size**. The application allocates dedicated batch threads to process business events in near-real time. Because threads are a shared resource for all batch processing, you must take care when you decide to change the thread allocation for business events.
+
+- **Processing threads** – The number of threads to use to process business events. The maximum value is **4**.
+
+    - If you're using dedicated processing for business events, the thread count is the number per Batch Application Object Server (AOS) instance.
+    - If you're using a batch job, the thread count is the total number of additional batch tasks that will be used to process events.
+
+- **Bundle size** – The number of events to group together at a time for processing by a thread.
+
+    - By increasing the number, you produce fewer bundles and reduce the ability to distribute the events to parallel threads.
+    - By decreasing the number, you produce more bundles and increase the ability to distribute the events to parallel threads. However, if you make the number too small, you will cause unnecessary parallelization on small bundles.
 
 ## Activating business events
 
@@ -130,7 +144,7 @@ The integration requirements and integration solution design for implementations
 Business events enable idempotent behavior on the consuming side by having a control number in the payload. The control number is an upwardly increasing number, which can be tracked by the consuming application to detect duplication and/or out of order delivery. The control number cannot be misread as the sequence number because the control number cannot be sequential. There can be gaps in the numbering space.
 
 ## Filtering in Azure Event Grid and Azure Service Bus
-Azure Service Bus and Azure Event Grid supports subscribing to topics by
+Azure Service Bus and Azure Event Grid support subscribing to topics by
 specifying criteria on the incoming message. For more information, see [Topic filters and actions](/azure/service-bus-messaging/topic-filters) and [Understand event filtering for Event Grid subscriptions](/azure/event-grid/event-filtering).
 
 A business event that is sent to an Azure Service Bus or Azure Event Grid
@@ -139,7 +153,7 @@ this information to subscribe to more specific topics as required.
 
 -   **Category** – This is the business event category as displayed in the
     business event catalog. This is useful as a filter criterion when a common
-    topic is used for receiving business events from multiple categories and
+    article is used for receiving business events from multiple categories and
     subscribers want to only receive business events for the category that they are
     interested in.
 
@@ -150,7 +164,7 @@ this information to subscribe to more specific topics as required.
     ensure the expected business event is what is being received and processed.
 
 -   **Legal entity** – This is the legal entity in which the business event
-    happened. This is a useful information to base the consuming logic on if
+    happened. This is useful information to base the consuming logic on if
     the processing and distribution of business events on the consumption side
     must be driven by a legal entity.
 
@@ -205,7 +219,7 @@ To ensure backward compatibility, the following behavior must be understood.
 
 -   Role-based security must be explicitly enabled in the business events catalog via the **Security** menu.
 
--   After role-based security is enabled completely, security will be enforced henceforth. This will mean that any user with administration role will not notice any change in behavior. However, any non-admin users will either only see business events to which their roles were assigned to in the business events catalog security configuration or they will not see any business events because their roles were not assigned to any business events.
+-   After role-based security is enabled completely, security will be enforced henceforth. This will mean that any user with an administration role will not notice any change in behavior. However, any non-admin users either will see only business events that their roles were assigned to in the business events catalog security configuration or won't see any business events because their roles were not assigned to any business events.
 
 
 > [!NOTE]

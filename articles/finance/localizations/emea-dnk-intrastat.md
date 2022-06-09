@@ -2,14 +2,14 @@
 # required metadata
 
 title: Danish Intrastat
-description: This topic contains information about the Danish Intrastat report.
+description: This article contains information about the Danish Intrastat report.
 author: andosip
 ms.date: 01/11/2022
 ms.topic: article
 audience: 
 ms.reviewer: kfend 
 ms.search.region: Global
-ms.author: v-aosipov
+ms.author: anasyash
 ms.search.validFrom: 
 ---
 # Danish Intrastat

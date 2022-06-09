@@ -2,7 +2,7 @@
 # required metadata
 
 title: Asset event history
-description: This topic explains how to access asset event history in Asset Management.
+description: This article explains how to access asset event history in Asset Management.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
  
 
-This topic explains how to access asset event history in Asset Management. The **Asset event history** page shows the registration history that has been made during the lifetime of an asset. You can access this page from the **All assets**, **Active assets**, and **My active assets** menu items. Select an asset, and then select **Event history**.
+This article explains how to access asset event history in Asset Management. The **Asset event history** page shows the registration history that has been made during the lifetime of an asset. You can access this page from the **All assets**, **Active assets**, and **My active assets** menu items. Select an asset, and then select **Event history**.
 
 On the **Details** FastTab of the **Asset event history** page, you can do a search on all the available information. For example, you can use the asset event history to find the following information:
 

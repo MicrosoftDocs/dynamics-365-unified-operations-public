@@ -2,7 +2,7 @@
 # required metadata
 
 title: Import features from the Global repository
-description: This topic explains how to import Globalization features from the Global repository.
+description: This article explains how to import Globalization features from the Global repository.
 author: dkalyuzh
 ms.date: 02/11/2022
 ms.topic: article

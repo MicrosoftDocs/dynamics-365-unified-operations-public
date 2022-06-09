@@ -2,7 +2,7 @@
 # required metadata
 
 title: Bring your own database (BYOD)
-description: This topic explains how to export entities to your own Azure SQL database.
+description: This article explains how to export entities to your own Azure SQL database.
 author: peakerbl
 ms.date: 10/21/2021
 ms.topic: article
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 2
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-This topic explains how administrators can export data entities from the application into their own Microsoft Azure SQL database. This feature is also known as *bring your own database* (BYOD). 
+This article explains how administrators can export data entities from the application into their own Microsoft Azure SQL database. This feature is also known as *bring your own database* (BYOD). 
 
 The BYOD feature lets administrators configure their own database, and then export one or more data entities that are available in the application into the database. (Currently, more than 1,700 data entities are available.) Specifically, this feature lets you complete these tasks:
 
@@ -190,7 +190,7 @@ To create a cross-company entity:
 > Use of recurring exports in **Manage > Manage recurring data jobs** for BYOD is not supported. You must use the **Export in batch** option.
 
 ### Incremental export
-When you add an entity for data export, you can select to do an incremental export (which is also known as incremental push) or a full push. For incremental push to work, you must enable the **Change tracking** option in the database and specify an appropriate change tracking option, as described earlier in this topic.
+When you add an entity for data export, you can select to do an incremental export (which is also known as incremental push) or a full push. For incremental push to work, you must enable the **Change tracking** option in the database and specify an appropriate change tracking option, as described earlier in this article.
 
 >[!NOTE]
 > A full push deletes all existing records from an entity and then inserts the current set of records from the selected entity.

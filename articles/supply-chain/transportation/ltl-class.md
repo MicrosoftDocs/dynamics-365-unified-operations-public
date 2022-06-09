@@ -1,14 +1,14 @@
 ---
 title: Less than truckload (LTL) classes
-description: This topic explains what less than truckload (LTL) classes are and describes how to set them up in Microsoft Dynamics 365 Supply Chain Management.
-author: Henrikan
+description: This article explains what less than truckload (LTL) classes are and describes how to set them up in Microsoft Dynamics 365 Supply Chain Management.
+author: Weijiesa
 ms.date: 04/05/2021
 ms.topic: article
 ms.search.form: WHSLTLClass
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: weijiesa
 ms.search.validFrom: 2021-04-05
 ms.dyn365.ops.version: 10.0.8
 ---
@@ -28,7 +28,7 @@ This feature lets you use your system to perform the following tasks:
 - Determine packing requirements for each LTL class by checking the international LTL standards. In this way, you ensure that your products will be well protected and safely shipped.
 - Get accurate shipping estimates, based on the LTL freight class for each product.
 
-This topic describes how to create LTL classes in Microsoft Dynamics 365 Supply Chain Management.
+This article describes how to create LTL classes in Microsoft Dynamics 365 Supply Chain Management.
 
 ## Create an LTL class
 

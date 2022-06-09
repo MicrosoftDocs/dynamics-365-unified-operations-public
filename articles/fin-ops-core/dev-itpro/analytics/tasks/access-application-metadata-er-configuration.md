@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Access application metadata by using ER configuration
-description: The topic describes how a Regulatory configuration service user can design a new Electronic reporting model mapping by using the metadata.
+description: The article describes how a Regulatory configuration service user can design a new Electronic reporting model mapping by using the metadata.
 author: NickSelin
 ms.date: 06/28/2019
 ms.topic: business-process 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-The following steps explain how a Regulatory configuration service (RCS) user in the System Administrator or Electronic Reporting Developer role can design a new Electronic reporting (ER) model mapping by using the application metadata. Application metadata will be accessed by using an ER metadata configuration that contains a sample set of metadata to access foreign trade transactions. To complete these steps, in RCS you must first complete the steps in the topic, [Create configuration providers and mark them as active](er-configuration-provider-mark-it-active-2016-11.md) procedure. Then complete the steps in the topic, [Prepare application metadata to be used in RCS](prepare-application-metadata-rcs.md).
+The following steps explain how a Regulatory configuration service (RCS) user in the System Administrator or Electronic Reporting Developer role can design a new Electronic reporting (ER) model mapping by using the application metadata. Application metadata will be accessed by using an ER metadata configuration that contains a sample set of metadata to access foreign trade transactions. To complete these steps, in RCS you must first complete the steps in the article, [Create configuration providers and mark them as active](er-configuration-provider-mark-it-active-2016-11.md) procedure. Then complete the steps in the article, [Prepare application metadata to be used in RCS](prepare-application-metadata-rcs.md).
 
 ## Prerequisites
 1. Go to **All workspaces** > **Electronic reporting**. 

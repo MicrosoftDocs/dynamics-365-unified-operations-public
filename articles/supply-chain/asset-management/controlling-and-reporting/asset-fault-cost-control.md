@@ -2,7 +2,7 @@
 # required metadata
 
 title: Asset fault cost control
-description: This topic explains asset fault cost control in Asset Management.
+description: This article explains asset fault cost control in Asset Management.
 author: johanhoffmann
 ms.date: 08/23/2019
 ms.topic: article
@@ -63,7 +63,7 @@ This example shows an asset fault cost control calculation.
 
     ![Figure 1.](media/05-controlling-and-reporting.png)
 
-For information about how to set up faults, see the [Fault management](../setup-for-work-orders/fault-management.md) topic.
+For information about how to set up faults, see the [Fault management](../setup-for-work-orders/fault-management.md) article.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

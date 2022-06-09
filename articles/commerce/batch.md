@@ -2,7 +2,7 @@
 # required metadata
 
 title: Improved handling of batch-tracked items
-description: This topic describes the improved handling of batch-tracked items during the statement posting process in Microsoft Dynamics 365 Commerce.
+description: This article describes the improved handling of batch-tracked items during the statement posting process in Microsoft Dynamics 365 Commerce.
 author: josaw1
 ms.date: 09/09/2021
 ms.topic: index-page
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0
 
 [!include [banner](includes/banner.md)]
 
-This topic describes the improved handling of batch-tracked items during the statement posting process in Microsoft Dynamics 365 Commerce.
+This article describes the improved handling of batch-tracked items during the statement posting process in Microsoft Dynamics 365 Commerce.
 
 In Dynamics 365 Commerce point of sale (POS), batch numbers can't be captured for batch-tracked items at the time of sale. However, for specific configurations when sales are posted in Commerce headquarters through customer orders or statement posting, Commerce expects that valid batch numbers for batch-tracked items exist and will be used during the invoicing process.
 

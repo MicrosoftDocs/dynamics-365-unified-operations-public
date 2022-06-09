@@ -2,9 +2,9 @@
 # required metadata
 
 title: Configure a Dynamics 365 Commerce evaluation environment
-description: This topic explains how to configure a Microsoft Dynamics 365 Commerce evaluation environment after it's provisioned.
+description: This article explains how to configure a Microsoft Dynamics 365 Commerce evaluation environment after it's provisioned.
 author: psimolin
-ms.date: 12/10/2021
+ms.date: 05/12/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,9 +29,9 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic explains how to configure a Microsoft Dynamics 365 Commerce evaluation environment after it's provisioned.
+This article explains how to configure a Microsoft Dynamics 365 Commerce evaluation environment after it's provisioned.
 
-Complete the procedures in this topic only after your Commerce evaluation environment has been provisioned. For information about how to provision your Commerce evaluation environment, see [Provision a Commerce evaluation environment](provisioning-guide.md).
+Complete the procedures in this article only after your Commerce evaluation environment has been provisioned. For information about how to provision your Commerce evaluation environment, see [Provision a Commerce evaluation environment](provisioning-guide.md).
 
 After your Commerce evaluation environment has been provisioned end to end, additional post-provisioning configuration steps must be completed before you can start to evaluate the environment. To complete these steps, you must use Microsoft Dynamics Lifecycle Services (LCS) and Dynamics 365 Commerce.
 
@@ -43,7 +43,9 @@ After your Commerce evaluation environment has been provisioned end to end, addi
 1. Select your environment in the list.
 1. In the environment information on the right, select **Log on to environment**. You will be sent to Commerce headquarters.
 1. Make sure that the **USRT** legal entity is selected in the upper-right corner.
-2. Go to **Commerce parameters > Configuration parameters** and make sure there's an entry for **ProductSearch.UseAzureSearch** set to **true**. If this entry is missing, you can add this entry and run **Channel Database > Full Sync** for the Commerce Scale unit associated with your eCommerce website.
+1. Go to **Commerce parameters \> Configuration parameters** and ensure that there's an entry for **ProductSearch.UseAzureSearch** and that the value is set to **true**. If this entry is missing, you can add it, set the value to **true**, and then select **Channel Database \> Full data sync** for the Commerce Scale Unit associated with your e-commerce website.
+1. Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Initialize Commerce scheduler**. On the **Initialize commerce scheduler** flyout menu, set the **Delete existing configuration** option to **Yes**, and then select **OK**.
+1. To add channels to the Commerce Scale Unit, go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \>Channel database**, and then in the left pane select the Commerce Scale Unit. On the **Retail channel** FastTab, add the **AW online store**, **AW Business online store**, and **Fabrikam extended online store** channels. Optionally, you can also add retail stores if you will be using POS (for example, **Seattle**, **San Francisco**, and **San Jose**).
 
 During post-provisioning activities in Commerce headquarters, make sure that the **USRT** legal entity is always selected.
 
@@ -89,6 +91,7 @@ To start to set up your evaluation site in Commerce, follow these steps.
 1. Select **en-us** as the default language.
 1. Leave the value of the **Path** field as it is.
 1. Select **OK**. The list of pages on the site appears.
+1. Repeat steps 2-7 for the **AdventureWorks** site (which maps to the **AW online store** channel) and the **AdventureWorks Business** site (which maps to the **AW Business online store** channel). If the **Path** field for the Fabrikam site is empty, then you must to add paths for the two AdventureWorks sites (for example, "aw" and "awbusiness").
 
 ## Enable jobs
 
@@ -153,6 +156,28 @@ To configure optional features for your Commerce evaluation environment, see [Co
 
 > [!NOTE]
 > Commerce evaluation environments come with a preloaded Azure Active Directory (Azure AD) business-to-consumer (B2C) tenant for demonstration purposes. Configuring your own Azure AD B2C tenant is not required for evaluation environments. However, if you are configuring the evaluation environment to use your own Azure AD B2C tenant, please make sure to add ``https://login.commerce.dynamics.com/_msdyn365/authresp`` as a reply URL in the Azure AD B2C application via the Azure Portal.
+
+## Troubleshooting
+
+### Site builder channel list is empty when configuring site
+
+If site builder does not show any online store channels, in headquarters ensure that the channels have been added to the Commerce Scale Unit as described in the [Before you start](#before-you-start) section above. Also, run **Initialize commerce scheduler** with the **Delete existing configuration** value set to **Yes**.  Once these are steps are completed, on the **Channel database** page (**Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Channel database**), run the **9999** job on the Commerce Scale Unit.
+
+### Color swatches are not rendering on the category page, but are rendering on the product details page (PDP) page
+
+Follow these steps to ensure that the color and size swatches are set to be refinable.
+
+1. In headquarters, go to **Retail and Commerce \> Channel setup \> Channel categories and product attributes**.
+1. In the left pane, select the online store channel, and then select **Set attribute metadata**.
+1. Set the **Show attribute on channel** option to **Yes**, set the **Can be refined** option to **Yes**, and then select **Save**. 
+1. Return to the online store channel page, and then select **Publish channel updates**.
+1. Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Channel database** and run the **9999** job on the Commerce Scale Unit.
+
+### Business features don't appear to be turned on for the AdventureWorks business site
+
+In headquarters, ensure that the online store channel is configured with the **Customer type** set to **B2B**. If the **Customer type** is set to **B2C**, a new channel must be created since the existing channel can't be edited. 
+
+Demo data shipped in Commerce version 10.0.26 and earlier had a bug where the **AW Business online store** channel was misconfigured. The workaround is to create a new channel with the same settings and configurations except for **Customer type**, which should be set to **B2B**.
 
 ## Additional resources
 

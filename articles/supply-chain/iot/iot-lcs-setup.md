@@ -2,8 +2,8 @@
 # required metadata
 
 title: Install the IoT Intelligence add-in in LCS
-description: This topic explains how to install the IoT Intelligence add-in in Microsoft Dynamics Lifecycle Services (LCS).
-author: tonyafehr
+description: This article explains how to install the IoT Intelligence add-in in Microsoft Dynamics Lifecycle Services (LCS).
+author: johanhoffmann
 ms.date: 07/07/2020
 ms.topic: article
 ms.prod: 
@@ -15,12 +15,12 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: tfehr
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr
+ms.author: johanho
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
 
@@ -30,7 +30,16 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to install the IoT Intelligence add-in in Microsoft Dynamics Lifecycle Services (LCS). Note that add-ins cannot be installed on a demo/trial environment. Before you can install the add-in, you must [create the Azure resources](iot-azure-setup.md).
+This article explains how to install the IoT Intelligence add-in in Microsoft Dynamics Lifecycle Services (LCS). Note that add-ins cannot be installed on a demo/trial environment. Before you can install the add-in, you must [create the Azure resources](iot-azure-setup.md).
+
+You can set up and configure IoT Intelligence without writing any code. Here are the basic steps.
+
+1. [Set up Azure resources](iot-azure-setup.md) – Create an IoT hub, a Redis cache, and a key vault that can be accessed from Supply Chain Management.
+2. [Message schema formats for IoT Hub](iot-schema-format.md) – Configure your devices to send messages to IoT Hub, and define the JavaScript Object Notation (JSON) message format.
+3. In Feature Management, enable the IoT Intelligence feature flag.
+4. Install the IoT Intelligence add-in in Microsoft Dynamics Lifecycle Services (LCS) – Install the add-in in LCS, and configure the Azure secrets (as described in this article).
+5. [Set up metrics](iot-metrics-setup.md) – Set up metrics in Supply Chain Management.
+6. [Scenario setup](iot-scenario-setup.md) – Set up the scenarios in Supply Chain Management.
 
 ## Set up the LCS environment
 

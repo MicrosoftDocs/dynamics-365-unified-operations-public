@@ -1,6 +1,6 @@
 ---
 title: Style the production floor execution interface
-description: The topic explains how to configure form controls so that the default production floor execution styles are applied to them.
+description: The article explains how to configure form controls so that the default production floor execution styles are applied to them.
 author: johanhoffmann
 ms.date: 11/08/2021
 ms.topic: article
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.15
 
 [!include [banner](../includes/banner.md)]
 
-The topic explains how to configure form controls so that the default production floor execution styles are applied to them.
+The article explains how to configure form controls so that the default production floor execution styles are applied to them.
 
 ## Forms and dialogs
 
@@ -26,7 +26,7 @@ Styles can be applied to a form or dialog only if the following requirements are
 - If the form should resemble the existing report progress form, the name of your form or dialog must start with `JmgProductionFloorExecutionCustomInputDialog`.
 - The form or dialog can contain a detail form part. To apply styles to it, the name of the detail form part must start with `JmgProductionFloorExecutionCustomDetailsDialog`.
 - If the form or dialog should have a simple view, then the name of the simple view must start with `JmgProductionFloorExecutionCustomDialog`. Examples of forms that have a simple view include the start form and the indirect activity form.
-- All the controls in the dialog must be configured as described in this topic.
+- All the controls in the dialog must be configured as described in this article.
 
 > [!IMPORTANT]
 > The features mentioned in the first two bullet points of this list require Supply Chain Management version 10.0.19 or later.

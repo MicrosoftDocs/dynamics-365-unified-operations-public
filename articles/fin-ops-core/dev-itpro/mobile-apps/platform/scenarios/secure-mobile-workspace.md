@@ -2,9 +2,9 @@
 # required metadata
 
 title: Help secure mobile workspaces
-description: This topic describes how to limit a user's access to a workspace.
+description: This article describes how to limit a user's access to a workspace.
 author: tonyafehr
-ms.date: 11/10/2017
+ms.date: 05/26/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,8 +30,9 @@ ms.dyn365.ops.version: Platform update 3
 # Help secure mobile workspaces
 
 [!include [banner](../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../includes/mobile-app-deprecation-banner.md)]
 
-This topic describes how to limit a user's access to a workspace.
+This article describes how to limit a user's access to a workspace.
 
 ## Assign a menu item to workspace
 Workspaces can be tied to a menu item. Users who don't have access to the menu item can't use the workspace, because the workspace is shown only to users who have rights to the menu item.

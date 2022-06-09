@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Manage email templates
-description: This topic explains how to manage email templates.  
+description: This article explains how to manage email templates.  
 author: andreabichsel
 ms.date: 08/02/2019
 ms.topic: business-process 

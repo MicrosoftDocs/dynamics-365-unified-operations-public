@@ -2,9 +2,9 @@
 # required metadata
 
 title: Formula designer in Electronic reporting (ER)
-description: This topic provides information about how to use the formula designer in Electronic reporting (ER).
+description: This article provides information about how to use the formula designer in Electronic reporting (ER).
 author: NickSelin
-ms.date: 12/05/2019
+ms.date: 04/08/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to use the formula designer in Electronic reporting (ER). When you design a format for a specific electronic document in ER, you can use formulas to transform data so that it meets the requirements for the document's fulfillment and formatting. These formulas resemble formulas in Microsoft Excel. Various types of functions are supported in the formulas: text, date and time, mathematical, logical, information, and data type conversion functions, and also other, business domain–specific functions.
+This article explains how to use the formula designer in Electronic reporting (ER). When you design a format for a specific electronic document in ER, you can use formulas to transform data so that it meets the requirements for the document's fulfillment and formatting. These formulas resemble formulas in Microsoft Excel. Various types of functions are supported in the formulas: text, date and time, mathematical, logical, information, and data type conversion functions, and also other, business domain–specific functions.
 
 ## Formula designer overview
 
@@ -46,7 +46,8 @@ You can open the **Formula designer** page when you perform any of the following
 - Bind data source items to data model components.
 - Bind data source items to format components.
 - Complete maintenance of calculated fields that are part of data sources.
-- Define the visibility conditions for user input parameters.
+- Define the visibility and editability conditions for user input parameters.
+- Define the default values for user input parameters.
 - Design a format's transformations.
 - Define the enabling conditions for the format's components.
 - Define the file names for the format's FILE components.

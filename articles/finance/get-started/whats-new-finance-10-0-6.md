@@ -2,8 +2,8 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Finance 10.0.6 (November 2019)
-description: This topic describes features that are either new or changed in Dynamics 365 Finance 10.0.6.
-author: roschlom
+description: This article describes features that are either new or changed in Dynamics 365 Finance 10.0.6.
+author: kfend
 ms.date: 10/09/2019
 ms.topic: article
 ms.prod: 
@@ -15,13 +15,13 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2019-10-31 
 ms.dyn365.ops.version: 10.0.6
 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.6
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes features that are either new or changed in Microsoft Dynamics 365 Finance 10.0.6. This version has a build number of 10.0.234. While the general availability date is in November, the new features are available for early release in October. For more information about version 10.0.6, see [Additional resources](whats-new-finance-10-0-6.md#additional-resources).
+This article describes features that are either new or changed in Microsoft Dynamics 365 Finance 10.0.6. This version has a build number of 10.0.234. While the general availability date is in November, the new features are available for early release in October. For more information about version 10.0.6, see [Additional resources](whats-new-finance-10-0-6.md#additional-resources).
 
 ## Feature management enhancements
 Feature management now allows you to enable all new features by default, require confirmation to enable a feature, and enable all features that have not already been enabled. 
@@ -101,12 +101,12 @@ Wondering about upcoming and recently released capabilities in any of our busine
 Check out the [Dynamics 365: 2019 release wave 2 plan](/dynamics365-release-plan/2019wave2/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
-The [Removed or deprecated features for Finance and Operations](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated for Dynamics 365 forfin-ops-core/ Finance and Operations.
+The [Removed or deprecated features for Finance and Operations](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) article describes features that have been removed or deprecated for Dynamics 365 forfin-ops-core/ Finance and Operations.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
-Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
+Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) article 12 months prior to the removal.
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure account structures
-description: This topic provides information about account structures and financial dimensions.
+description: This article provides information about account structures and financial dimensions.
 author: aprilolson
 ms.date: 06/03/2019
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form: LedgerEliminationRule
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 13131
 ms.assetid: 08fd46ef-2eb8-4942-985d-40fd757b74a8

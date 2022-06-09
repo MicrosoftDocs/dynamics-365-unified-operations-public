@@ -2,7 +2,7 @@
 # required metadata
 
 title: Daylight saving time support for active batch periods
-description: This topic provides information about daylight saving time support for active batch periods.
+description: This article provides information about daylight saving time support for active batch periods.
 author: Peakerbl
 ms.date: 07/08/2020
 ms.topic: article

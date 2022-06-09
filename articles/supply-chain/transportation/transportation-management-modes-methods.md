@@ -2,8 +2,8 @@
 # required metadata
 
 title: Transportation management modes and methods
-description: This topic shows how to set up Transportation management modes and methods.
-author: Henrikan
+description: This article shows how to set up Transportation management modes and methods.
+author: Weijiesa
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: 
@@ -16,10 +16,10 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: henrikan
+ms.author: weijiesa
 ms.search.validFrom: 2020-10-16
 ms.dyn365.ops.version: 10.0.14
 ---

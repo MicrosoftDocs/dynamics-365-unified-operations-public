@@ -2,7 +2,7 @@
 # required metadata
 
 title: Close Accounts receivable
-description: The following topic lists the pages that support the close Accounts receivable business process.
+description: The following article lists the pages that support the close Accounts receivable business process.
 author: ShivamPandey-msft
 ms.date: 10/26/2017
 ms.topic: article
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 59372
 ms.assetid: c18d83e5-4adb-422a-91be-82a665d8288b

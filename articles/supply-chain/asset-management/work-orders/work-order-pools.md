@@ -2,7 +2,7 @@
 # required metadata
 
 title: Work order pools
-description: This topic describes how to work with work order pools in Asset Management.
+description: This article describes how to work with work order pools in Asset Management.
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article

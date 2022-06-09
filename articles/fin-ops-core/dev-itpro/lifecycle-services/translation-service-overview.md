@@ -2,7 +2,7 @@
 # required metadata
 
 title: Dynamics 365 Translation Service overview
-description: This topic provides information about the Microsoft Dynamics 365 Translation Service (DTS).
+description: This article provides information about the Microsoft Dynamics 365 Translation Service (DTS).
 author: abmotgi
 ms.date: 10/25/2021
 ms.topic: overview

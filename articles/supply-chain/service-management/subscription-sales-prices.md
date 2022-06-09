@@ -3,7 +3,7 @@
 
 title: Subscription sales prices  
 description: When you create a subscription, the sales price is derived from the sales price setup that was created in the Sales price (subscription) form.
-author: kamaybac
+author: sorenva
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kamaybac
+ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

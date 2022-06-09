@@ -1,13 +1,13 @@
 ---
 title: What's new or changed in dual-write
-description: This topic provides links to the release plans, major announcements, and documentation for dual-write.
-author: tonyafehr
-ms.date: 04/11/2022
+description: This article provides links to the release plans, major announcements, and documentation for dual-write.
+author: RamaKrishnamoorthy
+ms.date: 05/05/2022
 ms.topic: article
 audience: Developer, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: Global
-ms.author: tfehr
+ms.author: ramasri
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.8
 ---
@@ -20,27 +20,36 @@ Dual-write is an out-of-box infrastructure that provides near-real-time interact
 
 ## April 2022 release
 
-The April 2022 release of the [Dual-write Supply Chain solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwscm) contains the following changes.
+The April release of Dual-write Party and Global Address Book Solutions 3.5.0.1 contains the following features and bug fixes.
 
 | Feature | Description | Status |
 |---|---|---|
-| Bug fix | In customer engagement apps, opportunities with write-in product lines can't generate a sales quotation because the sales product category isn't mapped. | General availability |
-| Bug fix | In finance and operations apps, if the delivery postal address is not passed from the Dataverse side, or if no address is assigned to a party/customer, the `SalesOrderHeaderCDSEntity` entity creates one and automatically assigns it to the sales order. This is not standard behavior and creates unnecessary addresses. | General availability |
+| Address roles dropdown | Addresses can be classified as invoice addresses, business addresses, home addresses, and so on, through address purposes or roles. In this release, we are replacing the address roles text field with a Power Apps Component Framework (PCF) control that is a multi-select option set. This new control lets you select one or more address roles to assign to a given address. The drop-down list is available for both postal addresses and electronic addresses. | General availability |
+| Bug fix | Updates to electronic address fields on the Account table (email, phone, fax) should update the primary electronic address in the msdyn_partyelectronicaddress table. | General availability |
+| Bug fix | Updates to electronic address fields on the Contact table (email, phone, fax) should update the primary electronic address in the msdyn_partyelectronicaddress table. | General availability |
+| Bug fix | Show the primary contact name for the primary contact that is selected on the **Associated contacts** tab on account, contact, and vendor pages. | General availability |
+| Bug fix | Initial synchronization of accounts/contacts isn't creating electronic addresses in accounts/contacts tables, even though electronic addresses are created on the **Electronic addresses** tab (msdyn_partyelectronicaddress table). | General availability |
+| Bug fix | Addresses of accounts aren't available under **Ship To/Bill To address** on the quote page after the address is updated for the accounts in Finance and Operations apps. | General availability |
+| Bug fix | Fix the duplicate address record error that occurs while new addresses are created in the Customer Address table in Dataverse. | General availability |
+| Bug fix | Fix a language transformation issue that occurs on party records when the **en-us** language is selected in Dataverse. | General availability |
+| Bug fix | Fixed the error ("The length of the 'msdyn_firstname' attribute of the 'msdyn_vendor' entity exceeded the maximum allowed") that occurred during update of account records if the workflows for data synchronization between the accounts and msdyn_vendor tables are activated. | General availability |
+| Bug fix | Fixed the error ("The 'customeraddress' entity must be in the default (null) or unchanged state") that occurred when the address for an account was created from CRM portals. | General availability |
 
 ### Solution details
 
-|Solution name | Has new changes? | Previous version | New version |
+| Solution name | Has new changes? | Previous version | New version |
 |---|---|---|---|
-| CurrencyExchangeRates | No | 2.2.2.5 | 2.2.2.5 |
-| Dynamics365Company | No | 2.2.2.5 | 2.2.2.5 |
-| Dynamics365FinanceAndOperationsCommon | No | 2.2.2.50 | 2.2.2.50 |
-| Dynamics365FinanceExtended | No | 2.3.1.15 | 2.3.1.15 |
-| Dynamics365SupplyChainExtended | Yes | 2.3.4.3 | 2.3.4.11 |
-| Dynamics365AssetManagement | No | 2.0.777.68 | 2.0.777.68 |
-| Dynamics365AssetManagementApp | No | 2.2.1.23 | 2.2.1.23 |
-| Dynamics365Notes | No | 2.2.2.23 | 2.2.2.23 |
-| Dynamics365FinanceAndOperationsDualWriteMaps | Yes | 2.3.0.36 | 2.3.4.11 |
-| Dynamics365FinanceAndOperationsAnchor | No (version number only) | 2.3.4.3 | 2.3.4.11 |
+| Party | Yes | 3.3.0.5 | 3.5.0.1 |
+| Dynamics365GABExtended | Yes | 3.3.0.5 | 3.5.0.1 |
+| Dynamics365GABDualWriteEntityMaps | Yes | 3.3.0.5 | 3.5.0.1 |
+| Dynamics365GABPartyAnchor | Yes | 3.3.0.5 | 3.5.0.1 |
+| Dynamics365GABPartyCommon | Yes | 3.3.0.5 | 3.5.0.1 |
+
+This release includes the following map changes:
+
++ Apply the latest map version 1.0.0.2 for the CDS Parties - msdyn_parties map.
++ Run the initial synchronization of the CDS Address roles - msdyn_addressroles map so that all the address role information will be synced from Finance and Operations apps to Dataverse. This map is a new dual-write map that was added as part of this release. Note that no subsequent updates/additions are allowed with this map, because the Finance and Operations entity for address roles is read only.
+
 
 ## March 2022 release
 

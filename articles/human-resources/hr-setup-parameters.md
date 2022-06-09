@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure Human resources parameters
-description: This topic explains how to set up company-specific parameters in Dynamics 365 Human Resources.
+description: This article explains how to set up company-specific parameters in Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 11/03/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form: HRMParameters, HcmPersonnelManagementWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 51941
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-The settings of some Human resources parameters are shared across companies, while the settings of other parameters are company-specific. This topic explains how to set up company-specific Human resources parameters.
+The settings of some Human resources parameters are shared across companies, while the settings of other parameters are company-specific. This article explains how to set up company-specific Human resources parameters.
 
 Two pages are used to set Human resources parameters. For parameters that are shared across companies, you use the **Human resources shared parameters** page. For parameters that are company-specific (in other words, the settings apply to a single company), you use the **Human resource parameters** page.
 

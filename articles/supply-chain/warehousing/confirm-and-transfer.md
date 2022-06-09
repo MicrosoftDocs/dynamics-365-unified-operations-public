@@ -2,8 +2,8 @@
 # required metadata
 
 title: Confirm and transfer
-description: This topic explains how to use the Confirm and transfer feature, which lets users ship loads out of the warehouse before they complete all the work that is associated with those loads.
-author: mirzaab
+description: This article explains how to use the Confirm and transfer feature, which lets users ship loads out of the warehouse before they complete all the work that is associated with those loads.
+author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: 
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
@@ -59,11 +59,11 @@ You can split only loads that meet all the following criteria:
 
 ## Turn the confirm and transfer feature on or off
 
-To use the functionality described in this topic, the *Confirm and transfer* feature must be turned on for your system. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *Confirm and transfer* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+To use the functionality described in this article, the *Confirm and transfer* feature must be turned on for your system. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *Confirm and transfer* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Set up confirm and transfer
 
-To use the *Confirm and transfer* feature, you must turn it on in every relevant load template. In addition, depending on your requirements, you might want to prepare your work templates to support the feature. If you want to work through the example scenario that is provided later in this topic, set up your system as described in this section. (That scenario is based on **USMF** demo data.)
+To use the *Confirm and transfer* feature, you must turn it on in every relevant load template. In addition, depending on your requirements, you might want to prepare your work templates to support the feature. If you want to work through the example scenario that is provided later in this article, set up your system as described in this section. (That scenario is based on **USMF** demo data.)
 
 ### Prepare your load templates
 
@@ -73,7 +73,7 @@ To use the *Confirm and transfer* feature, you must turn it on in every relevant
 
 ### Prepare your work templates
 
-This setup isn't required in all situations. The example that is shown here ensures that work can be broken by shipment to support the example scenario that is provided later in this topic. There are also other ways to achieve this result.
+This setup isn't required in all situations. The example that is shown here ensures that work can be broken by shipment to support the example scenario that is provided later in this article. There are also other ways to achieve this result.
 
 1. Go to **Warehouse management \> Setup \> Work \> Work templates**.
 1. In the grid in the upper part of the page, select an existing work template where you want to set up the *Confirm and transfer* feature. (If you're working with the **USMF** demo data, select the **51 Pick to stage** work template.) Alternatively, create a new work template.

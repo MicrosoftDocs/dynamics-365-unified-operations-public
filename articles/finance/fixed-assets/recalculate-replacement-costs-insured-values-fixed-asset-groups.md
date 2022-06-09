@@ -2,7 +2,7 @@
 # required metadata
 
 title: Recalculate replacement costs and insured values for fixed asset groups
-description: This topic explains the process to update the replacement costs and insured values for fixed assets.
+description: This article explains the process to update the replacement costs and insured values for fixed assets.
 author: moaamer
 ms.date: 01/12/2018
 ms.topic: article
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 3261
 ms.assetid: b8876f83-8772-4f2a-b277-12724e2a0c44
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains the process to update the replacement costs and insured values for fixed assets.
+This article explains the process to update the replacement costs and insured values for fixed assets.
 
 Periodically, you might be notified that the cost to replace or insure specific fixed assets has changed. For example, your manager might inform you that inflation was 3 percent last year, so you need to increase the replacement cost of all fixed assets by 3 percent. 
 

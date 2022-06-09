@@ -2,9 +2,9 @@
 # required metadata
 
 title: Create a data integration project
-description: This topic explains how to create a data integration project.
+description: This article explains how to create a data integration project.
 author: ShivamPandey-msft
-ms.date: 02/09/2022
+ms.date: 05/06/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 10.0.13
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to create a data integration project.
+This article explains how to create a data integration project.
 
 1. Sign in to Microsoft Dynamics 365 Finance.
 2. Go to **Workspaces \> Data management**, and select **Data entities**. Wait until all the data entities have been refreshed before you move on to the next step.
@@ -59,11 +59,14 @@ This topic explains how to create a data integration project.
 
 5. Open the [Power Apps environments](https://admin.powerapps.com/environments), and follow these steps:  
 
-    1. Create data integration projects for the following templates by using the connection set that you just created:
+    1. Create a single data integration project for each of the following templates by using the connection set that you just created:
 
         - Customer payment insights result (CDS to Fin and Ops 10.0.17+)
         - Cash flow time series results (CDS to Fin and Ops)
         - Budget time series results (CDS to Fin and Ops)
+
+      > [!NOTE]
+      > Creating multiple data integration projects for each template may cause errors that will block the updates.
 
     2. Set the appropriate scheduling for each project.
 

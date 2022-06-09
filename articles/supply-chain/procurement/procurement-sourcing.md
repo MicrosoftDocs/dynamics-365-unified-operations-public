@@ -2,8 +2,8 @@
 # required metadata
 
 title: Procurement and sourcing home page
-description: This topic provides a list of the help topics and other resources that are available for Procurement and sourcing.
-author: Henrikan
+description: This article provides a list of the help articles and other resources that are available for Procurement and sourcing.
+author: GalynaFedorova
 ms.date: 09/27/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: ["50651", "intro-internal"]
 ms.assetid: 17f06036-cac2-4c28-8dc6-1dff6b81a7cc
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides a list of the help topics and other resources that are available for Procurement and sourcing.
+This article provides a list of the help articles and other resources that are available for Procurement and sourcing.
 
 Procurement and sourcing covers all steps from identifying a need for product and services, through procuring the product, receipt, invoice, and processing payment with vendors. Procurement processes can be configured toward specific business needs by defining purchasing policies and workflows. For general information, see [Procurement and sourcing overview](procurement-sourcing-overview.md). Additional resources are listed below.
 

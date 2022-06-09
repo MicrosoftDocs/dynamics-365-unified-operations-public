@@ -2,7 +2,7 @@
 # required metadata
 
 title: Formula designer for TDS calculations
-description: This topic provides an example of how Tax Deducted at Source (TDS) is calculated based on the formula defined for each TDS tax code in the TDS group that's attached to the transaction.
+description: This article provides an example of how Tax Deducted at Source (TDS) is calculated based on the formula defined for each TDS tax code in the TDS group that's attached to the transaction.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -16,8 +16,8 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
+ms.reviewer: kfend
+# 
 # ms.tgt_pltfrm: 
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an example of how Tax Deducted at Source (TDS) is calculated based on the formula defined for each TDS tax code. TDS tax codes are defined in the TDS group that's attached to the transaction. Before designing TDS formulas, complete the basic setup required for TDS as listed in the following steps. 
+This article provides an example of how Tax Deducted at Source (TDS) is calculated based on the formula defined for each TDS tax code. TDS tax codes are defined in the TDS group that's attached to the transaction. Before designing TDS formulas, complete the basic setup required for TDS as listed in the following steps. 
 
 - Set up TDS component groups using the **Withholding tax component groups** page. 
 - Set up TDS components and attach TDS component group to the TDS components using the **Withholding tax components** page. 

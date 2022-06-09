@@ -2,7 +2,7 @@
 # required metadata
 
 title: Maintenance operations for deployments
-description: This topic explains how to perform maintenance operations for an environment that was deployed by using the self-service deployment experience.
+description: This article explains how to perform maintenance operations for an environment that was deployed by using the self-service deployment experience.
 author: laneswenka
 ms.date: 03/16/2022
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 8.1.1
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/limited-availability.md)]
 
-This topic explains how to perform maintenance operations for an environment that was deployed by using the [self-service deployment](infrastructure-stack.md) experience.
+This article explains how to perform maintenance operations for an environment that was deployed by using the [self-service deployment](infrastructure-stack.md) experience.
 
 ## Restart services
 

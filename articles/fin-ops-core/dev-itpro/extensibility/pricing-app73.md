@@ -1,7 +1,7 @@
 ---
 
 title: Price and discount extensibility
-description: This topic describes how to extend pricing functionality.
+description: This article describes how to extend pricing functionality.
 author: smithanataraj
 ms.date: 12/21/2017
 ms.topic: article

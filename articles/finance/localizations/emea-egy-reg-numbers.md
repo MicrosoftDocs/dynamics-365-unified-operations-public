@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure registration numbers in Egypt
-description: This topic explains how to configure and use registration numbers in Egypt. 
+description: This article explains how to configure and use registration numbers in Egypt. 
 author: ilkond
 ms.date: 09/15/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Operations
+# 
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Egypt
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-There are different types of registration numbers that are used in Egypt. This topic explains how to configure and use **Commercial registration numbers**, **National numbers**, and **File tax numbers**.
+There are different types of registration numbers that are used in Egypt. This article explains how to configure and use **Commercial registration numbers**, **National numbers**, and **File tax numbers**.
 
 ## Prerequisites
 

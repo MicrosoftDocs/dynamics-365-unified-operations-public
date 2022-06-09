@@ -1,19 +1,19 @@
 ---
 title: Learning catalog for Dynamics 365 Supply Chain Management solution architects
 description: Find all the training options for Dynamics 365 Supply Chain Management solution architects.
-author: margoc
+author: kamaybac
 ms.topic: article
 ms.date: 07/27/2020
-ms.author: margoc
+ms.author: kamaybac
 
 ms.prod:
 ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Developer, IT Pro
-ms.reviewer: margoc
+ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.1
@@ -45,7 +45,7 @@ The following catalog is organized from core knowledge to specific domains, and 
 | [Demo Data Packages (DYN443PAL)](https://community.dynamics.com/365/b/techtalks/posts/demo-data-packages-february-14-2018) | Join us for this tech talk on the recently released demo data packages. You can use them to customize the demo data you need for your scenarios, and then load just what you need into an environment. | Free recording of a web conference | 40 minutes |
 | [On-Premises (Local Business Data) Deployment (DYN382PAL2)](https://community.dynamics.com/365/b/techtalks/posts/on-premises-local-business-data-deployment-october-19-2017) | Join this tech talk for an overview of the on-premises deployment option for Dynamics 365 for Finance and Operations, Enterprise Edition. In this session, we will look at the solution architecture of an on-premises deployment, ALM aspects, system requirements, and how to provision the Life Cycle Services project. | Free recording of a web conference | 48 minutes |
 | [Reduce Data Import and Export Time Using Configurations (DYN315PAL)](https://community.dynamics.com/365/b/techtalks/posts/reduce-data-import-and-export-time-using-configurations-june-13-2017) | In this Tech Talk, we will discuss the new configuration feature in Dynamics 365 for Finance and Operations, Enterprise edition. We will show how you can set up configurations using predefined templates, copy configuration data from a legal entity to a data project and export it, and then import it into another legal entity. | Free recording of a web conference | 52 minutes |
-| [Analytics & Reporting Options: Printing and the Document Routing Agent](https://community.dynamics.com/365/b/techtalks/posts/analytics-amp-reporting-options-printing-and-the-document-routing-agent-february-8-2018)| Join us for this tech talk on two related topics. First we will discuss Analytics and Reporting solution patterns and tools for Dynamics 365 for Finance and Operations, Enterprise Edition. Secondly, we will discuss printing scenarios and the Document Routing Agent. | Free recording of a web conference | 45 minutes|
+| [Analytics & Reporting Options: Printing and the Document Routing Agent](https://community.dynamics.com/365/b/techtalks/posts/analytics-amp-reporting-options-printing-and-the-document-routing-agent-february-8-2018)| Join us for this tech talk on two related articles. First we will discuss Analytics and Reporting solution patterns and tools for Dynamics 365 for Finance and Operations, Enterprise Edition. Secondly, we will discuss printing scenarios and the Document Routing Agent. | Free recording of a web conference | 45 minutes|
 
 ## Core development concepts<a name="core-development-concepts"></a>
 

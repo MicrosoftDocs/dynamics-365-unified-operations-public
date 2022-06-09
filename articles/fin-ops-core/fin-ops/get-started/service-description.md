@@ -2,9 +2,9 @@
 # required metadata
 
 title: Service description for Finance and Operations apps
-description: This topic provides the service description for Finance and Operations apps.
+description: This article provides the service description for Finance and Operations apps.
 author: tomhig
-ms.date: 01/05/2022
+ms.date: 04/27/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -130,9 +130,9 @@ This section describes some typical environment and data management events that 
 
 LCS provides [self-service tools](../../dev-itpro/deployment/infrastructure-stack.md) and [database movement operations](../../dev-itpro/database/dbmovement-operations.md) that are used to perform environment and data management tasks. Here are some examples:
 
-**Event:** [Requesting a production instance](../imp-lifecycle/prepare-go-live.md#requesting-the-production-environment)
+**Event:** [Requesting a production instance](../imp-lifecycle/go-live-faq.md#when-can-i-configure-and-request-my-production-environment)
 
-- Complete the [Go-live checklist](../imp-lifecycle/prepare-go-live.md), and submit it to the [Microsoft FastTrack](/dynamics365/fasttrack/) team.
+- Complete the [Go-live readiness review](../imp-lifecycle/prepare-go-live.md), and submit it to the [Microsoft FastTrack](/dynamics365/fasttrack/) team.
 - Complete the [LCS Subscription estimator](../../dev-itpro/lifecycle-services/subscription-estimator.md) before you request a production instance.
 - Complete all the implementation tasks that are specified in the [LCS methodology](../../dev-itpro/lifecycle-services/create-methodology.md).
 
@@ -263,7 +263,7 @@ The customer's tenant administrator can access production instances or non-produ
 |---|---|---|
 | **Non-production**<br>Tier 1 sandbox | A non-production environment that customers deploy for development, demonstration, or training purposes. | A Tier 1 sandbox (also referred to as a cloud-hosted environment) is a customer-managed VM that is deployed to the customer's Azure subscription from LCS. Because it is a VM in the customer's Azure subscription, the customer has full administrative access to the environment via Remote Desktop. |
 | **Non-production**<br>Tier 2 (or higher) sandbox | A non-production environment that customers deploy for user acceptance testing, integration testing, training, staging, or any other pre-production scenario. | Tier 2 and higher sandboxes are deployed to the Finance and Operations SaaS subscription. Access to Azure SQL databases that are associated with the non-production environment is granted via [just-in-time access](../../dev-itpro/database/database-just-in-time-jit-access.md). Remote Desktop access isn't available. |
-| **Production** | A production environment is deployed when the project is [ready for initial go-live](/imp-lifecycle/environment-planning.md#production-system-readiness). | Production environments are deployed to the SaaS subscription. All access is through the browser, service endpoints, or LCS. |
+| **Production** | A production environment is deployed when the project is [ready for initial go-live](../imp-lifecycle/environment-planning.md#production-system-readiness). | Production environments are deployed to the SaaS subscription. All access is through the browser, service endpoints, or LCS. |
 
 ### Microsoft administrative access
 
@@ -284,7 +284,7 @@ Microsoft has invested in an extensive toolset to monitor and diagnose customers
 |---|---|
 | <ul><li>Monitor availability of the service.</li><li>Continuously monitor and alert through health metrics and watchdogs for critical components such as Application Object Server (AOS), Batch, Data Import/Export Framework (DIXF), Commerce, and Management Reporter.</li><li>Monitor for performance degradation that is caused by infrastructure services (such as Azure Active Directory \[Azure AD\] and Azure SQL).</li><li>If Microsoft determines that a single process or batch job is causing aberrations, that process or job will be terminated after communication with the customer.</li></ul> | <ul><li>Monitor changes to application configurations and extensions that can cause functional and performance issues.</li><li>Application errors must be diagnosed by using the monitoring tools. Use these tools to diagnose user-reported performance aberrations.</li><li>Inform Microsoft if there is expected load on the system beyond projected peak usage.</li><li>If the applicable service is unavailable in the production instance, the customer can use LCS to report a [production outage](../../dev-itpro/lifecycle-services/report-production-outage.md).</li></ul> |
 
-By submitting support requests online, via LCS, customers enable Microsoft to deliver fast and deep technical expertise in the most effective and efficient manner. Although a phone option is available, it should only be used  if the online option is not available. For more information, see [Phone support options](/power-platform/admin/support-overview.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json#is-there-a-phone-number-i-can-call-to-contact-support).
+By submitting support requests online, via LCS, customers enable Microsoft to deliver fast and deep technical expertise in the most effective and efficient manner. Although a phone option is available, it should only be used  if the online option is not available. For more information, see [Phone support options](/power-platform/admin/support-overview?toc=%2Fdynamics365%2Ffin-ops-core%2Fdev-itpro%2Ftoc.json&bc=%2Fdynamics365%2Fbreadcrumb%2Ftoc.json#is-there-a-phone-number-i-can-call-to-contact-support).
 
 ## Incident management
 
@@ -294,7 +294,7 @@ For more information about severity levels, see [this severity table](/power-pla
 
 ## Business continuity through high availability and disaster recovery 
 
-Microsoft provides business continuity and disaster recovery for production instances of Finance and Operations apps in the event of Azure region–wide outages. For more information, see [Business continuity and disaster recovery](../../dev-itpro/sysadmin/business-continuity-disaster-recovery.md).
+Microsoft provides business continuity and disaster recovery for production instances of Finance and Operations apps in the event of Azure region–wide outages. For more information, including service Recovery Time Objective (RTO) and Recovery Point Objective (RPO), see [Business continuity and disaster recovery](../../dev-itpro/sysadmin/business-continuity-disaster-recovery.md).
 
 - **High availability** – HA functionality provides ways to prevent downtime that is caused by the failure of a single node in an Azure datacenter. Each service's cloud architecture uses Azure availability sets for the compute tier to prevent single-point-of-failure events. HA for databases is provided through [Azure SQL HA features](/azure/azure-sql/database/high-availability-sla).
 - **Disaster recovery** – [Azure disaster recovery features](/azure/best-practices-availability-paired-regions) protect each service against outages that broadly affect an entire Azure datacenter. Here are some of these features:
@@ -303,18 +303,9 @@ Microsoft provides business continuity and disaster recovery for production inst
     - Geo-redundant copies of Azure Blob Storage (which contains document attachments) in other Azure regions.
     - Secondary region for the Azure SQL and Azure Blob Storage replications.
 
-The primary data stores are supported for replication. Therefore, components for each service, such as Management Reporter and entity store, use transformed data from the primary database. This data must be generated after the recovery site has been set up and the service has been started. Customer code artifacts and recovered data stores are used to redeploy the site. The redeployment enables state replication of the compute nodes, together with networking and other components, to use the recovered data stores to set up the secondary site. If disaster recovery is used to recover the customer's production instance, Microsoft and the customer will meet their [incident management](service-description.md#incident-management) responsibilities.
+If disaster recovery is used to recover the customer's production instance, Microsoft and the customer will meet their [incident management](service-description.md#incident-management) responsibilities.
 
 Microsoft's Disaster Recovery plans and procedures are examined regularly through System and Organization Controls (SOC) audits. These compliance audits attest to the technical and procedural process of Microsoft's DR, including Dynamics 365 Finance and Operations apps. [SOC compliance](/compliance/regulatory/offering-soc-2) audit reports and all other Compliance Reports are available on [Microsoft Trust Center Compliance Offerings](/compliance/regulatory/offering-home).
-
-| Microsoft responsibilities | Customer responsibilities |
-|---|---|
-| Microsoft provisions a secondary environment in the Azure paired datacenter when the primary production instance is deployed. For more information, see [Business continuity and disaster recovery (BCDR): Azure Paired Regions](/azure/best-practices-availability-paired-regions). | None |
-| Microsoft enables geo-redundancy of Azure SQL and Azure Blob Storage when the primary production instance is deployed. | None |
-| Microsoft enables automatic backup on the Azure SQL databases. | None |
-| <p>When an outage occurs, Microsoft determines whether a failover must be performed for the customer, and whether there will be data loss. Customers might experience data loss of up to 15 minutes, depending on the nature and timing of the outage. | In the event of data loss, the customer may have to provide written signoff to trigger the failover. |
-| When a failover occurs, the applicable service works in limited mode. Update maintenance can't be triggered in failover mode. | The customer can't request package deployments or other regular maintenance requests in failover mode. |
-| When the datacenter becomes operational, Microsoft fails back to the production instance in the primary Azure region. Normal operations resume. | The customer may have to signoff on failback to the production instance in the primary Azure region. |
 
 ## Finance and Operations support offerings
 

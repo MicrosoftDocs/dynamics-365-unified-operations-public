@@ -2,9 +2,9 @@
 # required metadata
 
 title: Standard audit file (SAF) for Poland
-description: Users in legal entities in Poland can generate a Standard Audit File for Tax (SAF-T) in XML format. This topic provides information about the formats for Poland. 
+description: Users in legal entities in Poland can generate a Standard Audit File for Tax (SAF-T) in XML format. This article provides information about the formats for Poland. 
 author: LizaGolub
-ms.date: 02/05/2021
+ms.date: 05/19/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,9 +31,13 @@ ms.search.validFrom: 2016-11-30
 
 [!include [banner](../includes/banner.md)]
 
-Users in legal entities in Poland can generate a Standard Audit File for Tax (SAF-T) in XML format. This topic provides information about the formats for Poland. 
+Users in legal entities in Poland can generate a Standard Audit File for Tax (SAF-T) in XML format. This article provides information about the formats for Poland. 
 
-Users in legal entities in Poland can generate a Standard Audit File for Tax (SAF-T) in XML format. This document provides information about the formats for Poland. This document refers to functionality that has not yet been released.
+-  [SAF Accounting books - JPK_KR](#jpk-kr)
+-  [SAF Bank statements - JPK_WB](#jpk-wb)
+-  [SAF Inventory - JPK_MAG](#jpk-mag)
+-  [SAF VAT sale and purchase registers - JPK_VAT](#jpk-vat)
+-  [SAF VAT invoices - JPK_FA](#jpk-fa)
 
 ## Set up the Standard Audit File for Tax for Poland
 
@@ -56,7 +60,7 @@ Import the latest versions of these configurations. The version description usua
 
 For more information about how to download ER configurations from the Microsoft global repository, see [Download ER configurations from the Global repository](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
-## Generate a SAF Accounting books file
+## <a id="jpk-kr"></a>Generate a SAF Accounting books file (JPK_KR)
 
 A SAF Accounting books file must be provided upon request. The file must include accounting data for the reporting period. It must also include the selected posting layers for all the main accounts that have non-zero aggregated turnover or transactions during the reporting period.
 
@@ -153,7 +157,7 @@ The **RodzajDowodu** field under the **Dziennik** node of the report must repres
 9. As the last two lines, add lines that have the conditions **Not blank** and **Blank**.
 10. In the **State** field, select **Completed**, and save the configuration.
 
-## Generate a SAF Bank statement file
+## <a id="jpk-wb"></a>Generate a SAF Bank statement file (JPK_WB)
 
 To generate a SAF Bank statement file, click **General ledger > Inquiries and reports > Standard Audit File for Tax (SAF-T) > SAF Bank statement**, and set the following parameters.
 
@@ -166,7 +170,7 @@ To generate a SAF Bank statement file, click **General ledger > Inquiries and re
 
 The **SAF Bank statement** file includes information about transactions posted during the specified period of time for the bank account selected on the report's dialog. The name of the counterparty reported in the **NazwaPodmiotu** element is collected from the **Customers** (**Accounts receivable** > **Customers** > **All customers**) and **Vendors** (**Accounts payable** > **Vendors** > **All vendors**) master data of the system registered in the legal entity as it relates to the posted bank transaction. The operation description reported in the **OpisOperacji** element is collected from the **Description** field of the bank transaction.
 
-## Generate a SAF Inventory file
+## <a id="jpk-mag"></a>Generate a SAF Inventory file (JPK_MAG)
 
 To generate a SAF Inventory file, click **General ledger > Inquiries and reports > Standard Audit File for Tax (SAF-T) > SAF Inventory**, and set the following parameters.
 
@@ -177,7 +181,7 @@ To generate a SAF Inventory file, click **General ledger > Inquiries and reports
 | Authority identification | In the list, select the identifier of the tax authority to use in the export file. |
 | Warehouse                | Specify the warehouse to export transactions for.                                  |
 
-## Generate a SAF VAT sales and purchase register
+## <a id="jpk-vat"></a>Generate a SAF VAT sales and purchase register (JPK_VAT)
 
 Before you can generate a SAF value-added tax (VAT) sales and purchase register, you must complete the following setup.
 
@@ -448,6 +452,18 @@ The following table shows the sales tax codes and sales tax reporting codes for 
 <td>-</td>
 </tr>
 <tr>
+<td rowspan="2">SpecialProc-XII</td>
+<td>11303</td>
+<td>Sales tax payable</td>
+<td>Not applicable, JPK_FA only</td>
+<td>-</td>
+</tr>
+<tr>
+<td>11306</td>
+<td>Sales tax on sales credit note</td>
+<td>Not applicable, JPK_FA only</td>
+<td>-</td>
+</tr><tr>
 <td rowspan="4">ImportOfGoodsART33</td>
 <td>20207</td>
 <td>Taxable import</td>
@@ -662,7 +678,7 @@ To generate a SAF VAT sales and purchase register, click **General ledger > Inqu
 
 You can specify additional selection parameters by using the **Filter** functionality on the **Records to include** tab.
 
-## Generate a SAF VAT invoices file
+## <a id="jpk-fa"></a>Generate a SAF VAT invoices file (JPK_FA)
 
 Before you can generate a SAF VAT invoices file, you must complete the following setup.
 
@@ -681,15 +697,15 @@ Starting with version **128.60.76** of the **VAT Invoices (PL)** ER, the improve
 	> [!NOTE]
 	> When you turn on or turn off the **(Poland) SAF VAT invoices (JPK_FA) report improvement** feature, the ER format setup in the **SAF VAT invoices** field on the **General Ledger parameters** page will be cleaned up. Make sure you fill in the **SAF VAT invoices** field in **General Ledger parameters** before you run the **SAF VAT invoices** report. When you enable the **(Poland) SAF VAT invoices (JPK_FA) report improvement** feature, import and use version 128.60.76 of the **VAT Invoices (PL)** ER format.
 	
-2. Import the following into your Electronic reporting workspace:
-	- **VAT Invoices (PL)** ER format: Version **128.60.76** or higher 
-	- **Standard Audit File model mapping**: Version **128.255** or higher
+2. Import the latest versions of the following ER configurations into your Electronic reporting workspace:
+
+	- **VAT Invoices (PL)** ER format 
+	- **Standard Audit File model mapping**
 	
 3. Go to **General ledger** > **Ledger setup** > **General ledger parameters**.
 4. On the **Standard Audit File for Tax (SAT-T)** tab, in the **SAF VAT invoices** field, select the ER format, **VAT Invoices (PL)**. 
 	
 When the **(Poland) SAF VAT invoices (JPK_FA) report improvement** feature is enabled, you will see the **VAT Invoices (PL)** ER format in the list only if you previously imported version 128.60.76 or higher from the Global repository.
-
 
 ### Configure the ER model and format for the report
 
@@ -699,7 +715,7 @@ To review or change the configuration for the SAF VAT sales and purchase registe
 - [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 - [Localization requirements - Create an ER configuration](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md)
 
-Initially, the configuration is an example of the VAT register based on the reporting codes described in table above. If you need to adopt the configuration to another set of reporting codes, use the configuration to derive the format. 
+Initially, the configuration is an example of the VAT Invoices report (JPK_FA) based on the reporting codes that are described in table earlier in this article. If you have to adapt the configuration to another set of reporting codes, use the configuration to derive the format. 
 
 1. Select the format in the configuration's tree and then, in the **Main menu**, select **Create configuration**. 
 2. Mark **Derive from name:...**, enter the name and description of the new format and then select **Create configuration**. The created format is a copy of the parent format. 
@@ -713,18 +729,19 @@ Initially, the configuration is an example of the VAT register based on the repo
 
 ### Configure Application-specific parameters for the format of the report
 
-To correctly report some of the important tags in the report, define the application-specific parameters (for versions of the **VAT Invoices (PL)** format starting from 48.36.58). 
+To correctly report some of the important tags in the report, define the application-specific parameters. 
 
 1. Open **Configurations** \> **Application specific parameters**, and then, on the Action Pane, select **Setup**.
-2. Select the version of the format that you're going to use (for example, **48.36.58**), and then set up the values for each lookup in the list on the right.
+2. Select the version of the format that you're going to use, and then set up the values for each lookup in the list on the right.
 
     | Name            | Short description (English) | Short description (Polish) | Description (English) | Description (Polish) |
     |-----------------|-----------------------|-----------------------|-----------------|-----------------|
-    | TaxFree_LOOKUP | Tax-free | Tax free | Non-taxable transactions for the supply of goods and services outside the country, exempt from taxation. | Niepodlegające opodatkowaniu-transakcje dostawy towarów oraz świadczenia usług poza terytorium kraju; zwolnione z opodatkowania. |
-    | TaxExemptReason_LOOKUP | Tax-exempt reason | Przyczyna lub podstawa zwolnienia z podatku lub jego zmniejszenia | When the delivery of goods or the provision of services are exempt from tax in accordance with article 43, paragraph 1; article 113, sections 1 and 9; or provisions that are issued on the basis of article 82, paragraph 3. | W przypadku dostawy towarów lub świadczenia usług zwolnionych od podatku na podstawie art. 43 ust. 1, art. 113 ust. 1 i 9 albo przepisów wydanych na podstawie art. 82 ust. 3. |
-    | ItemType_LOOKUP | Type of item | Rodzaj przedmiotu | Delivery of second-hand goods, works of art, collector's items, and antiques for which the tax base is constituted in accordance with article 120, paragraph four, margin five. New means of transport are the subject of intra-community supply. | Dostawy towarów używanych, dzieł sztuki, przedmiotów kolekcjonerskich i antyków, dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 i 5 marża; W przypadku gdy przedmiotem wewnątrzwspólnotowej dostawy są nowe środki transportu. |
-
-#### TaxFree_LOOKUP
+    | [TaxFree_LOOKUP](#tax-free-lookup) | Tax-free | Tax free | Non-taxable transactions for the supply of goods and services outside the country. These transactions are exempt from taxation. | Niepodlegające opodatkowaniu-transakcje dostawy towarów oraz świadczenia usług poza terytorium kraju; zwolnione z opodatkowania. |
+    | [TaxExemptReason_LOOKUP](#tax-exempt-lookup) | Tax-exempt reason | Przyczyna lub podstawa zwolnienia z podatku lub jego zmniejszenia | When the delivery of goods or the provision of services is exempt from tax in accordance with article 43, paragraph 1; article 113, sections 1 and 9; or provisions that are issued on the basis of article 82, paragraph 3. | W przypadku dostawy towarów lub świadczenia usług zwolnionych od podatku na podstawie art. 43 ust. 1, art. 113 ust. 1 i 9 albo przepisów wydanych na podstawie art. 82 ust. 3. |
+    | [ItemType_LOOKUP](#item-type-lookup) | Type of item | Rodzaj przedmiotu | Delivery of second-hand goods, works of art, collector's items, and antiques for which the tax base is constituted in accordance with article 120, paragraph 4, margin 5. New means of transport are the subject of intra-community supply. | Dostawy towarów używanych, dzieł sztuki, przedmiotów kolekcjonerskich i antyków, dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 i 5 marża; W przypadku gdy przedmiotem wewnątrzwspólnotowej dostawy są nowe środki transportu. |
+    | [SpecialProcedures_LOOKUP](#special-procedures-lookup) | Special procedures referred to in section XII | Procedury specjalne, o których mowa w sekcji XII | A case of special procedures that are referred to in section XII in chapters 6a, 7, and 9 of the VAT Act. | Stawka podatku od wartości dodanej w przypadku procedur szczególnych, o których mowa w dziale XII w rozdziałach 6a, 7 i 9 ustawy VAT |
+    
+#### <a id="tax-free-lookup"></a>TaxFree_LOOKUP
 
 Starting in JPK_FA v.2, the value of the **P_12** field can report the following values in addition to the tax rate and **zw** (reverse charge): 
 
@@ -743,7 +760,7 @@ Set up and use specific exempt codes (**Tax \> Setup \> Sales tax \> Sales tax e
 
 When you've completed the setup for the **TaxFree_LOOKUP** lookup field and are ready to set up the next lookup field, select **Save**.
 
-#### TaxExemptReason_LOOKUP
+#### <a id="tax-exempt-lookup"></a>TaxExemptReason_LOOKUP
 
 Conditions for **TaxExemptReason_LOOKUP** are sales tax exempt codes that are defined in Finance (**Tax** \> **Setup** \> **Sales tax** \> **Sales tax exempt codes**) and used in sales tax groups when tax transactions are posted. If no lines on an invoice have sales tax exemptions, the **P_19** field will be reported with a value of **False**, and the **P_19A**, **P_19B**, and **P_19C** tags will be omitted.
 
@@ -755,7 +772,7 @@ Specify as the last condition in the list, an **Inne** or **Other** result with 
 
 When you've completed the setup for the **TaxExemptReason_LOOKUP** lookup field and are ready to set up the next lookup field, select **Save**.
 
-#### ItemType_LOOKUP
+#### <a id="item-type-lookup"></a>ItemType_LOOKUP
 
 Conditions for **ItemType_LOOKUP** are sales tax codes that are defined in Finance (**Tax** \> **Setup** \> **Sales tax** \> **Sales tax codes**) and then used when tax transactions are posted. This lookup setup affects the reporting of **P_106E_3A** and **P_22** elements.
 
@@ -767,6 +784,21 @@ The following values are available for setup of **ItemType_LOOKUP**.
 | ArtWorks | Deliveries of works of art for which the tax base is constituted in accordance with article 120, paragraph four, margin five | Dostawy dzieł sztuk dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 i 5 marża | Specify the sales tax codes that are used for transactions that are related to works of art. After this setup is completed, an invoice that has tax transactions that use the specified **procedura marży - dzieła sztuki** tax code will be reported in **P_106E_3A**. |
 | CollectorAntiques | Deliveries of collector's items and antiques, for which the tax base is constituted in accordance with article 120, paragraph four, margin five | Dostawy przedmiotów kolekcjonerskich i antyków, dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 i 5 marża | Specify the sales tax codes that are used for transactions that are related to collector's items, and antiques. After this setup is completed, an invoice that has tax transactions that use the specified **procedura marży - przedmioty kolekcjonerskie i antyki** tax code will be reported in **P_106E_3A**. |
 | Transport | Intra-community delivery of new means of transport | Wewnątrzwspólnotowa dostawa nowych środków transportu | Specify the sales tax codes that are used for transactions that are related to intra-community delivery of new means of transport. After this setup is completed, an invoice that has tax transactions that use the specified **P_22** tax code will be reported with a value of **True**. |
+| Other | Other | Inne | Specify **Not blank** in the **Tax code** field. This value must be the last in the list of values. This value must be mandatory for this lookup. |
+
+When you finish configuring the values of the lookup fields, set the **State** field to **Completed**, save your changes, and then close the page. 
+
+If any lookup field doesn't have at least one **Not blank** value, an error will occur when the report is run. The error message will state that the application-specific parameters are missing.
+
+#### <a id="special-procedures-lookup"></a>SpecialProcedures_LOOKUP
+
+Conditions for **SpecialProcedures_LOOKUP** are sales tax codes that are defined in Finance (**Tax** \> **Setup** \> **Sales tax** \> **Sales tax codes**). The codes are then used when tax transactions are posted. This lookup setup affects the reporting of **FakturaWiersz \> P_12_XII** and **Zamowienie \> P_12Z_XII** elements.
+
+The following values are available for setup of **SpecialProcedures_LOOKUP**.
+
+| Name | Description (English) | Description (Polish) | Setup |
+|------|------------------|------------------|-------|
+| SpecialProc (XII) | Special procedures referred to in section XII | Procedury specjalne, o których mowa w sekcji XII | Specify the sales tax codes that are used for transactions that are related to the special procedures that are referred to in section XII in chapters 6a, 7, and 9 of the VAT Act. After this setup is completed, an invoice that has tax transactions that use the specified tax code is reported with a tax rate in the **\<P_12_XII\>** and **\<P_12Z_XII\>** fields of the report. |
 | Other | Other | Inne | Specify **Not blank** in the **Tax code** field. This value must be the last in the list of values. This value must be mandatory for this lookup. |
 
 When you finish configuring the values of the lookup fields, set the **State** field to **Completed**, save your changes, and then close the page. 
@@ -797,9 +829,7 @@ According to the requirements of version 3 of the **JPK_FA** report, when an inv
 
 #### <P_18A> tag
 
-KB #4339927 ("A country-specific update for Poland for Split payments in Dynamics 365 for Finance and Operations apps") introduces the setup of methods of payments as split payments in the **Accounts receivable** module.
-
-According to the requirements of version 3 of the **JPK_FA** report, the **<P_18A>** tag for an invoice must be reported as **True** when the split payment mechanism is applied for that invoice. To determine whether the split payment mechanism was applied to the invoice, the system checks the **Split payment** parameter of the method of payment that was used during invoice posting. The parameter is reflected in the corresponding customer transaction in the CustTrans table. Keep the setup of the **Split payment** parameter for the methods of payment stable to ensure correct reporting.
+According to the requirements of the **JPK_FA** report, the **<P_18A>** tag for an invoice must be reported as **True** when the split payment mechanism is applied for that invoice on a mandatory basis. To determine whether the split payment mechanism was applied to the invoice, the system checks the **Split payment** and **Voluntary split payment** properties of the customer's posted transactions (**CustTrans** table). Transactions where the **Split payment** is applied but the **Voluntary split payment** property is false will be reported with a **True** value in the **<P_18A>** tag of the report. For more information about the **Split payment** and **Voluntary split payment** properties, see [KB4584165](https://support.microsoft.com/topic/a-country-specific-update-for-poland-to-support-split-payments-automation-0441375f-8b0e-24f7-370e-f8dc5d0760ec).
 
 #### <P_22> tag
 

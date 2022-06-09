@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure job card for devices
-description: This topic describes the various options for configuring the job card device.
+description: This article describes the various options for configuring the job card device.
 author: johanhoffmann
 ms.date: 05/29/2020
 ms.topic: article
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: johanho
@@ -28,11 +28,11 @@ ms.dyn365.ops.version: 10.0.12
 
 [!include [banner](../includes/banner.md)]
 
-The job card device is used by the shop floor workers to register their daily work, such as when jobs are started, reporting feedback on jobs, registering indirect activities, and reporting absence. These registrations are the basis for tracking progress and cost on production orders and for calculating the basis for the workers' pay. This topic describes the various options for configuring job card devices.
+The job card device is used by the shop floor workers to register their daily work, such as when jobs are started, reporting feedback on jobs, registering indirect activities, and reporting absence. These registrations are the basis for tracking progress and cost on production orders and for calculating the basis for the workers' pay. This article describes the various options for configuring job card devices.
 
 ## Enable new features in feature management
 
-A few of the settings described in this topic must be enabled on your system before they will be available to you. Use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to enable any or all of the following features as required.
+A few of the settings described in this article must be enabled on your system before they will be available to you. Use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to enable any or all of the following features as required.
 
 ### Generate license plate
 

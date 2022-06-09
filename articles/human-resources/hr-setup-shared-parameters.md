@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure shared parameters
-description: This topic explains how to set up Human resources parameters across legal entities.
+description: This article explains how to set up Human resources parameters across legal entities.
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form: HcmSharedParameters, HcmPersonnelManagementWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 51891
 ms.assetid: c7d8f58c-d78a-4035-abbf-2b0ce16109fe
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-You must set up shared parameters for records that are shared across companies, such as **Position** records. This topic explains how to set up Human resources parameters across legal entities.
+You must set up shared parameters for records that are shared across companies, such as **Position** records. This article explains how to set up Human resources parameters across legal entities.
 
 Some types of records, such as **Position** records, are shared across companies. For these records, you must set up shared parameters. For example, the **Human resources shared parameters** page is used to set up Human resources parameters across legal entities. 
 

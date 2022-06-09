@@ -2,7 +2,7 @@
 # required metadata
 
 title: Fixed asset disposal posting accounts
-description: This topic explains how to set up General ledger posting accounts for disposing of assets.
+description: This article explains how to set up General ledger posting accounts for disposing of assets.
 author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form: AssetPosting
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 3461
 ms.assetid: dfdc0730-e030-48cc-8d93-15bdc7b23776
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up General ledger posting accounts when you're disposing assets.
+This article explains how to set up General ledger posting accounts when you're disposing assets.
 
 To set up General ledger posting accounts to use when you're disposing of an asset, select **Disposal - sale** and **Disposal - scrap** in the **Ledger accounts** FastTab on the **Fixed assets posting profiles** page.
 

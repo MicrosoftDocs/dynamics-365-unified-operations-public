@@ -2,8 +2,8 @@
 # required metadata
 
 title: Prepare to maintain standard costs for manufactured items
-description: This topic describes the steps for preparing to maintain costs for manufactured items. 
-author: AndersGirke
+description: This article describes the steps for preparing to maintain costs for manufactured items. 
+author: JennySong-SH
 ms.date: 01/17/2018
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: global
 ms.industry: Manufacturing 
-ms.author: aevengir
+ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the steps for preparing to maintain costs for manufactured items. The steps for manufactured items differ slightly from the steps for purchased items.
+This article describes the steps for preparing to maintain costs for manufactured items. The steps for manufactured items differ slightly from the steps for purchased items.
 
 Policies that are assigned to manufactured items can affect the cost calculations for the parent manufactured items. To prepare to maintain costs for manufactured items, follow these steps.
 
@@ -68,7 +68,7 @@ Policies that are assigned to manufactured items can affect the cost calculation
 
 If you want to use routing information for costing purposes, additional preparation steps are required. For example, the cost categories that are assigned to routing operations must be correct and completed.
 
-## Related topics
+## Related articles
 
 [Amortize constant costs for a manufactured item](amortize-constant-costs-manufactured-item.md)
 

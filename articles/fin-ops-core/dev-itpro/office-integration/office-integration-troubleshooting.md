@@ -2,7 +2,7 @@
 # required metadata
 
 title: Troubleshoot the Office integration
-description: This topic provides answers to questions, tips, and troubleshooting information for the Microsoft Office integration capabilities.
+description: This article provides answers to questions, tips, and troubleshooting information for the Microsoft Office integration capabilities.
 author: jasongre
 ms.date: 04/12/2022
 ms.topic: article
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 
-This topic provides answers to questions, tips, and troubleshooting information about the capabilities of the Microsoft Office integration. The questions and issues that are discussed range across user, administration, and development scenarios.
+This article provides answers to questions, tips, and troubleshooting information about the capabilities of the Microsoft Office integration. The questions and issues that are discussed range across user, administration, and development scenarios.
 
 ## Frequently asked questions
 
@@ -55,7 +55,7 @@ No. The Office JavaScript (JS) APIs work differently in Apple Safari and Microso
 
 ### What version of Office is required for the Excel Add-in to support AD FS?
 
-For more information, see the "Troubleshooting issue" section later in this topic.
+For more information, see the "Troubleshooting issue" section later in this article.
 
 ### How can I force an update of Office?
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage subcontracting work in production
-description: This topic explains how subcontracted operations are managed in Dynamics 365 Supply Chain Management. In other words, it explains how production operations that are allocated to a resource are managed by a vendor.
+description: This article explains how subcontracted operations are managed in Dynamics 365 Supply Chain Management. In other words, it explains how production operations that are allocated to a resource are managed by a vendor.
 author: johanhoffmann
 ms.date: 11/03/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how subcontracted operations are managed in Dynamics 365 Supply Chain Management. In other words, it explains how production operations that are allocated to a resource are managed by a vendor.
+This article explains how subcontracted operations are managed in Dynamics 365 Supply Chain Management. In other words, it explains how production operations that are allocated to a resource are managed by a vendor.
 
 In [production processes](production-process-overview.md), work can be done by resources that are owned or administered by vendors. Typically, vendor resources are used to level periodic excess demand that surpasses the available capacity of a company's own resources. The vendor might also be able to offer specific [resource capabilities](resource-capabilities.md) or resources at a lower price.  
 
@@ -67,7 +67,7 @@ When this configuration is used, a purchase order is created for the related ser
 A production order can have many operations, and each operation can be allocated to a different vendor. Therefore, an end-to-end production order might trigger multiple purchase orders.
 
 ## Subcontracting of production flow activities
-The [lean manufacturing](lean-manufacturing-overview.md) solution models the subcontracting work as a service that is related to an activity of a [production flow](tasks/create-production-flow-version.md) (Task guide topic). Therefore, this type of subcontracting is also referred to as [activity-based subcontracting.](activity-based-subcontracting.md) A special cost group type, **Direct outsourcing**, has been introduced, and the subcontracting services aren't part of the BOM of the finished goods. When you use lean manufacturing, all activities are defined by kanbans that can be related to one or multiple production flow activities. So far, that explanation sounds just like an explanation of production orders. However, whereas production orders must always end with a finished product, you can create kanbans to supply a semi-finished product. You don't have to introduce a new product and BOM level.  
+The [lean manufacturing](lean-manufacturing-overview.md) solution models the subcontracting work as a service that is related to an activity of a [production flow](tasks/create-production-flow-version.md) (Task guide article). Therefore, this type of subcontracting is also referred to as [activity-based subcontracting.](activity-based-subcontracting.md) A special cost group type, **Direct outsourcing**, has been introduced, and the subcontracting services aren't part of the BOM of the finished goods. When you use lean manufacturing, all activities are defined by kanbans that can be related to one or multiple production flow activities. So far, that explanation sounds just like an explanation of production orders. However, whereas production orders must always end with a finished product, you can create kanbans to supply a semi-finished product. You don't have to introduce a new product and BOM level.  
 
 Because kanban rules can be very dynamic, you can model different variants of supply for the same product on a production flow. When you use lean subcontracting, the material flow and the financial flow are strictly separated. All material flow is represented by kanban activities. The purchase orders for the service products and the receipt postings of those services can be automated, based on the status of kanban jobs in the production flow. Kanban jobs can be started and completed even before the purchase orders are created. The subcontracting documents (purchase order and purchase receipt of the service) can be aggregated by period and service. Therefore, the number of purchase documents and lines can be kept small, even in highly repetitive operations where vendors provide subcontracted services in a single-piece flow.
 

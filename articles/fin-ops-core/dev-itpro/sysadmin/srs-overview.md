@@ -2,7 +2,7 @@
 # required metadata
 
 title: Cross-company data sharing overview
-description: This topic provides an overview of cross-company data sharing. This is a mechanism for sharing reference and group data among companies in a deployment.
+description: This article provides an overview of cross-company data sharing. This is a mechanism for sharing reference and group data among companies in a deployment.
 author: ramasri
 ms.date: 02/15/2022
 ms.topic: article
@@ -83,7 +83,7 @@ Master company sharing should be considered only if there's a need to share:
 | What table data sharing types are supported? | Duplicate   | Duplicate and single   |
 | Can companies have existing records in a table before sharing is enabled? | Yes   | Only master company   |
 | Is it required to select copy data and to validate sharing issues after enabling or updating a policy? |  Yes  |  No  |
-| List of officially supported tables |  [Supported tables](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/SRS-27Jan2022/articles/fin-ops-core/dev-itpro/sysadmin/drs-srs-tables.md#tables-officially-supported-for-duplicate-record-data-sharing)  | [Supported tables](https://github.com/MicrosoftDocs/Dynamics-365-Operations/edit/SRS-27Jan2022/articles/fin-ops-core/dev-itpro/sysadmin/drs-srs-tables.md#tables-officially-supported-for-master-company-data-sharing)   |
+| List of officially supported tables |  [Supported tables](/dynamics365/fin-ops-core/dev-itpro/sysadmin/drs-srs-tables)  | [Supported tables](/dynamics365/fin-ops-core/dev-itpro/sysadmin/drs-srs-tables#tables-supported-for-master-company-data-sharing)   |
 | Are Microsoft-provided policy templates available?  |  Yes  |  No  |
 
 It is possible to combine duplicate record sharing and master company sharing for the same set of companies by using different policies. It's important to always select all applicable tables and optional foreign key fields in the duplicate record policy and enable the policy before the master company sharing policy is enabled. This way you can share, for example, the customer groups and terms of payment tables, using duplicate record sharing and the customer table using master Company sharing for scenarios where it's only the number of customer records that exceeds the limit and the number of companies do not exceed 300.

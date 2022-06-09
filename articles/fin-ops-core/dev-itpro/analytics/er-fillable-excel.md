@@ -2,9 +2,9 @@
 # required metadata
 
 title: Design a configuration for generating documents in Excel format
-description: This topic describes how to design an Electronic reporting (ER) format to fill in an Excel template, and then generate outbound Excel format documents.
+description: This article describes how to design an Electronic reporting (ER) format to fill in an Excel template, and then generate outbound Excel format documents.
 author: NickSelin
-ms.date: 02/28/2022
+ms.date: 05/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 You can design an [Electronic reporting (ER)](general-electronic-reporting.md) format configuration that has an ER format component that you can configure to generate an outbound document in a Microsoft Excel workbook format. Specific ER format components must be used for this purpose.
 
-To learn more about this feature, follow the steps in the topic, [Design a configuration for generating reports in OPENXML format](tasks/er-design-reports-openxml-2016-11.md).
+To learn more about this feature, follow the steps in the article, [Design a configuration for generating reports in OPENXML format](tasks/er-design-reports-openxml-2016-11.md).
 
 ## Add a new ER format
 
@@ -146,7 +146,12 @@ You can configure your Excel template to use cells to present textual data. To e
 > [!NOTE]
 > Because of a known [Excel limitation](https://support.microsoft.com/topic/you-cannot-use-the-autofit-feature-for-rows-or-columns-that-contain-merged-cells-in-excel-34b54dd7-9bfc-6c8f-5ee3-2715d7db4353), even if you configure cells to wrap text, and you configure the rows that contain those cells to automatically adjust their height to fit the wrapped text, you might not be able to use the **AutoFit** and **Wrap text** Excel features for merged cells and the rows that contain them. 
 
-As of Dynamics 365 Finance version 10.0.23, you can force ER to calculate, in a generated document, the height of every row that was configured to automatically fit its height to the content of nested cells whenever that row contains at least one merged cell that was configured to wrap the text inside it. The calculated height is then used to resize the row to ensure that all the cells in the row are visible in the generated document. To start to use this functionality when you run any ER formats that were configured to use Excel templates to generate outbound documents, follow these steps.
+As of Dynamics 365 Finance version 10.0.23, when you're working in a generated document, you can force ER to calculate the height of every row that was configured to automatically fit its height to the content of nested cells whenever that row contains at least one merged cell that was configured to wrap the text inside it. The calculated height is then used to resize the row to ensure that all cells in the row are visible in the generated document.
+
+> [!NOTE]
+> Be aware that this functionality might not work as expected when a custom font is used to format a merged cell. Because Excel doesn't embed custom fonts, it doesn't provide information about custom font size. Therefore, the size of the merged cell can be incorrectly estimated.
+
+To start to use this functionality when you run any ER formats that were configured to use Excel templates to generate outbound documents, follow these steps.
 
 1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
 2. On the **Localization configurations** page, in the **Related links** section, select **Electronic reporting parameters**.
@@ -263,7 +268,7 @@ For a single **Sheet** component, you can add several **Footer** components, eac
 
 Under the added **Footer** component, add the required nested components of the **Text\\String**, **Text\\DateTime**, or other type. Configure the bindings for those components to specify how your page footer is filled in.
 
-You can also use special [formatting codes](/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) to correctly format the content of a generated footer. To learn how to use this approach, follow the steps in [Example 1](#example-1), later in this topic.
+You can also use special [formatting codes](/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) to correctly format the content of a generated footer. To learn how to use this approach, follow the steps in [Example 1](#example-1), later in this article.
 
 > [!NOTE]
 > When you configure ER formats, be sure to consider the Excel [limit](https://support.microsoft.com/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3) and the maximum number of characters for a single header or footer.
@@ -287,6 +292,16 @@ You can select **Update from Excel** on the **Import** tab of the Action Pane to
 > If the editable ER format originally contained **Sheet** elements, we recommend that you set the **Create Excel Sheet format element** option to **Yes** when you import an updated template. Otherwise, all nested elements of the original **Sheet** element will be created from scratch. Therefore, all bindings of the re-created format elements will be lost in the updated ER format.
 
 ![Create Excel Sheet format element option in the Update from Excel dialog box.](./media/er-excel-format-update-template.png)
+
+In version 10.0.28 and later, you can use the **Update Excel Header and Excel Footer format elements** option.
+
+- When you set this option to **No**, the Excel Header and Excel Footer format elements remain unchanged, even if the corresponding headers or footers have been updated in the worksheets of the imported template in the Excel workbook format.
+- When you set this option to **Yes**, Excel Header and Excel Footer format elements will change when the corresponding headers or footers are updated in worksheets of the imported template in the Excel workbook format.
+
+    - If the structure of a worksheet header or footer hasn't been changed, or if it has only been appended, the structure of the corresponding Excel Header or Excel Footer format element is updated. Bindings of format elements that are nested under this Excel Header or Excel Footer format element will be preserved.
+    - If the structure of a worksheet header or footer has been changed, the corresponding Excel Header or Excel Footer format element is re-created. Bindings of format elements that are nested under this Excel Header or Excel Footer format element will be removed.
+
+![Update Excel Header and Excel Footer format elements option in the Update from Excel dialog box.](./media/er-excel-format-update-template2.png)
 
 To learn more about this feature, follow the steps in [Modify Electronic reporting formats by reapplying Excel templates](modify-electronic-reporting-format-reapply-excel-template.md).
 
@@ -355,7 +370,7 @@ When an outbound document in a Microsoft Excel workbook format is generated, som
 
 ## <a name="example-2"></a>Example 2: Fixing the merged cells EPPlus issue
 
-You can run an ER format to generate an outbound document in an Excel workbook format. When the **Enable usage of EPPlus library in Electronic reporting framework** feature is enabled in the **Feature management** workspace, the [EPPlus library](https://www.nuget.org/packages/epplus/4.5.2.1) is used to make Excel output. However, because of known [Excel behavior](https://answers.microsoft.com/msoffice/forum/all/deleting-a-range-of-cells-that-includes-merged/8601462c-4e2c-48e0-bd23-848eecb872a9) and a limitation of the EPPlus library, you might encounter the following exception: "Can't delete/overwrite merged cells. A range is partly merged with the another merged range." To learn what kind of Excel templates might cause this exception and how you can fix the issue, complete the following example.
+You can run an ER format to generate an outbound document in an Excel workbook format. When the **Enable usage of EPPlus library in Electronic reporting framework** feature is enabled in the **Feature management** workspace, the [EPPlus library](https://www.nuget.org/packages/epplus/4.5.2.1) is used to make Excel output. However, because of known [Excel behavior](https://answers.microsoft.com/en-us/msoffice/forum/all/deleting-a-range-of-cells-that-includes-merged/8601462c-4e2c-48e0-bd23-848eecb872a9) and a limitation of the EPPlus library, you might encounter the following exception: "Can't delete/overwrite merged cells. A range is partly merged with the another merged range." To learn what kind of Excel templates might cause this exception and how you can fix the issue, complete the following example.
 
 1. In the Excel desktop application, create a new Excel workbook.
 2. On worksheet **Sheet1**, add the **ReportTitle** name for cell **A2**.

@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Manage ER model mapping in separate ER configurations
-description: This topic describes how to manage Electronic reporting (ER) model mappings in separate ER configurations. 
+description: This article describes how to manage Electronic reporting (ER) model mappings in separate ER configurations. 
 author: NickSelin
 ms.date: 06/19/2017
 ms.topic: business-process 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up lease posting accounts
-description: This topic lists the posting accounts that are required for Asset leasing transactions and explains how to define posting accounts on the Lease posting parameters page.
+description: This article lists the posting accounts that are required for Asset leasing transactions and explains how to define posting accounts on the Lease posting parameters page.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form: AssetLeasePostingAccounts
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 
 # ms.tgt_pltfrm: 
 ms.custom: 4464
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.14
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists the posting accounts that are required for Asset leasing transactions and explains how to define posting accounts on the **Lease posting parameters** page.
+This article lists the posting accounts that are required for Asset leasing transactions and explains how to define posting accounts on the **Lease posting parameters** page.
 
 To comply with Accounting Standards Codification Topic 842 (ASC 842) and International Financial Reporting Standard 16 (IFRS 16), you might have to create accounts in your chart of accounts. However, any accounts that you create to comply with ASC and IFRS standards aren't fixed asset accounts. Under ASC 842, a right-of-use (ROU) asset is recorded for both finance and operating leases. These leases are separate from fixed assets. (You can still maintain an ROU asset by using Fixed assets.)
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Catch weight product processing with warehouse management
-description: This topic describes how to use work templates and location directives to determine how and where work is done in the warehouse.
+description: This article describes how to use work templates and location directives to determine how and where work is done in the warehouse.
 author: perlynne
 ms.date: 08/13/2020
 ms.topic: article

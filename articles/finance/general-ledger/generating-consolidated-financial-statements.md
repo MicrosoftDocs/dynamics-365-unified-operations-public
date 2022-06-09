@@ -2,7 +2,7 @@
 # required metadata
 
 title: Generate consolidated financial statements
-description: This topic describes the various scenarios where you might generate consolidated financial statements.
+description: This article describes the various scenarios where you might generate consolidated financial statements.
 author: aprilolson
 ms.date: 07/09/2018
 ms.topic: article
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 8.0.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the various scenarios where you might generate consolidated financial statements.
+This article describes the various scenarios where you might generate consolidated financial statements.
 
 ## Single-level and multilevel consolidations across legal entities
 The simplest method for consolidating by using Financial reporting is to use reporting trees to aggregate data across companies that have the same chart of accounts and fiscal periods. Here are the high-level steps to consolidate by using a reporting tree.
@@ -159,7 +159,7 @@ The following illustration shows the options in the report definition that let y
 ![Options report definition period number.](./media/options-report-definition-period-number.png "Options report definition period number")
 
 ## Business unit consolidations
-This topic has focused on using reporting tree definitions and organization hierarchies in Financial reporting for consolidation purposes. You can also use the reporting tree to create business unit consolidation reports, such as reports about worldwide sales or operations. These reports are a common requirement. To create them, select a company and a dimension for each unit that you want to consolidate on. For example, in the following illustration, the business unit roll-up is accomplished by repeating each company in the **Company** column (column A) and identifying a group of Department dimension values per company in the **Dimensions** column (column D).
+This article has focused on using reporting tree definitions and organization hierarchies in Financial reporting for consolidation purposes. You can also use the reporting tree to create business unit consolidation reports, such as reports about worldwide sales or operations. These reports are a common requirement. To create them, select a company and a dimension for each unit that you want to consolidate on. For example, in the following illustration, the business unit roll-up is accomplished by repeating each company in the **Company** column (column A) and identifying a group of Department dimension values per company in the **Dimensions** column (column D).
 
 ![Business unit consolidation reports.](./media/business-unit-consolidation-reports.png "Business unit consolidation reports")
 
@@ -224,7 +224,7 @@ To get correctly translated amounts when currencies are used, Financial reportin
 
 ## Additional resources
 
-For more information about consolidation and currency translations, see the parent topic of this topic, [Financial consolidations and currency translation overview](./financial-consolidations-currency-translation.md).
+For more information about consolidation and currency translations, see the parent article of this article, [Financial consolidations and currency translation overview](./financial-consolidations-currency-translation.md).
 
 For more information about how to enter details of consolidations online, see [Online financial consolidations](./consolidate-online.md).
 

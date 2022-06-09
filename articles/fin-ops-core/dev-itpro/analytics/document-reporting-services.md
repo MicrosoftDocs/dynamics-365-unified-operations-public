@@ -2,7 +2,7 @@
 # required metadata
 
 title: Document Reporting Services
-description: This topic describes the reporting solution that simplifies service administration, increases developer productivity, and provides enhanced report viewing.
+description: This article describes the reporting solution that simplifies service administration, increases developer productivity, and provides enhanced report viewing.
 author: RichdiMSFT
 ms.date: 06/20/2017
 ms.topic: article

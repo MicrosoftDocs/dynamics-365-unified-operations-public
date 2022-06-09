@@ -2,7 +2,7 @@
 # required metadata
 
 title: Support and renewals
-description: This topic explains how to set up and use the support and renewal process on sales orders to create a billing schedule for renewal items.
+description: This article explains how to set up and use the support and renewal process on sales orders to create a billing schedule for renewal items.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -16,7 +16,7 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: Core, Operations
+
 # ms.tgt_pltfrm: 
 ms.custom: 539093
 ms.search.region: Global
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.24
 
 # Support and renewals 
 
-This topic explains how to enter support items or renewal items when you enter sales orders. These items are used to calculate the charge amount for the original support contract and/or the renewal amount that is used when a billing schedule is created in Subscription billing. For example, your company sells a server to a customer, and you offer a data backup subscription for the first year and the option to renew that subscription every year. The *support item* is the subscription for the first year, and the *renewal item* is the renewal for every successive year.
+This article explains how to enter support items or renewal items when you enter sales orders. These items are used to calculate the charge amount for the original support contract and/or the renewal amount that is used when a billing schedule is created in Subscription billing. For example, your company sells a server to a customer, and you offer a data backup subscription for the first year and the option to renew that subscription every year. The *support item* is the subscription for the first year, and the *renewal item* is the renewal for every successive year.
 
 You can enter information for the support contract, the renewal contract, or both. When you enter the support contract information, only the support item is added to the sales order. When you enter the renewal contract information, the renewal item is used to create a billing schedule.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Tax Calculation overview
-description: This topic explains the overall scope and features of the Tax Calculation capability.
+description: This article explains the overall scope and features of the Tax Calculation capability.
 author: wangchen
 ms.date: 03/02/2022
 ms.topic: overview
@@ -15,7 +15,7 @@ ms.search.form: TaxIntegrationTaxServiceParameters
 audience: Application user
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+
 # ms.tgt_pltfrm: 
 
 ms.search.region: Global
@@ -84,6 +84,8 @@ We recommend that you import and set up your Tax Calculation configuration with 
 | 10.0.24         | Tax Calculation Configuration 40.50.225 |
 | 10.0.25         | Tax Calculation Configuration 40.50.225 |
 | 10.0.26         | Tax Calculation Configuration 40.54.234 |
+| 10.0.27         | Tax Calculation Configuration 40.54.234 |
+| 10.0.28         | Tax Calculation Configuration 40.54.234 |
 
 
 ## Data flow
@@ -148,6 +150,11 @@ The following transactions are supported in version 10.0.26:
 - General journals
 - Vendor invoice journal
 
+The following transactions are supported in version 10.0.28: 
+
+- Vendor payment journal
+- Customer payment journal
+
 ## Supported countries/regions
 
 Tax Calculation can be enabled by legal entity. 
@@ -163,6 +170,7 @@ The following countries/regions for a legal entity's primary address are support
 - Germany
 - Hungary
 - Iceland
+- Ireland
 - Italy
 - Latvia
 - Lithuania

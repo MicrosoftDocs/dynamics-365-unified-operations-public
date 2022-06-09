@@ -2,7 +2,7 @@
 # required metadata
 
 title: Use cash control limits
-description: This topic explains how to use cash control to define transaction limits when there is no cash balance or a transaction will cause the cash balance to fall below a predefined amount.
+description: This article explains how to use cash control to define transaction limits when there is no cash balance or a transaction will cause the cash balance to fall below a predefined amount.
 author: v-kiarnd
 ms.date: 09/21/2020
 ms.topic: article
@@ -11,10 +11,10 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: [Operations AOT form name to tie this topic to]
+# ms.search.form: [Operations AOT form name to tie this article to]
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.5
 [!include [banner](../includes/banner.md)]
 
 
-This topic explains how to use cash control to define transaction limits when there is no cash balance or a transaction will cause the cash balance to fall below a predefined amount.
+This article explains how to use cash control to define transaction limits when there is no cash balance or a transaction will cause the cash balance to fall below a predefined amount.
 
 Cash control allows you to define a limit (threshold) to prevent transactions from being posted if no cash balance is available, or if the transaction will cause the balance to fall below the defined limit. The account defined on the consumed posting definition is evaluated when transactions are created, edited, and posted. If there is no generated entry, then the matching account is used. If posting the transaction will cause the related cash account's balance to fall below the limit that's defined for the account, an error message is displayed and you must change the account to continue. .
 

@@ -4,7 +4,7 @@
 title: US Payroll overview
 description: Payroll provides full gross-to-net processing for employees in the United States.
 author: twheeloc
-ms.date: 07/25/2019
+ms.date: 05/05/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -31,16 +31,16 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../../includes/banner.md)]
 
-Payroll provides gross-to-net processing for employees in the United States. With Payroll you can set up, enter, and maintain all payroll records and transactions. The comprehensive earnings and pay statement process covers federal, state, and local taxes, flexible deduction and benefits processing, and support for garnishments and tax levies. Payroll provides full reporting and inquires for W2 processing, and 940 and 941 reporting. It also lets you view current and historical payroll information for individual employees or for groups of employees.
+US payroll provides gross-to-net processing for employees in the United States. With Payroll you can set up, enter, and maintain all payroll records and transactions. The comprehensive earnings and pay statement process covers federal, state, and local taxes, flexible deduction and benefits processing, and support for garnishments and tax levies. US payroll provides full reporting and inquires for W2 processing, and 940 and 941 reporting. It also lets you view current and historical payroll information for individual employees or for groups of employees.
 
 > [!NOTE]
 > Tax updates are being retired for the US payroll feature in Microsoft Dynamics 365 for Finance and Operations starting July 31, 2024. Tax updates were originally scheduled to be removed as of October 2021, however this was extended to July 2024. For more information, see [Support date extended for tax updates](https://cloudblogs.microsoft.com/dynamics365/it/2020/10/02/support-date-extended-for-tax-updates-in-us-payroll-feature-in-dynamics-365-finance).
 
 ## Payroll setup
 
-Basic setup for Payroll involves setting pay cycles and pay periods, calculation frequencies, and setting work schedules. The pay cycle frequency determines how often a pay cycle is run. Pay periods and pay dates are defined as part of the pay cycle. You use the payroll calculation frequency to select the specific pay periods when you want certain earnings or other payroll entities to be processed.
+Basic setup for US payroll involves setting pay cycles and pay periods, calculation frequencies, and setting work schedules. The pay cycle frequency determines how often a pay cycle is run. Pay periods and pay dates are defined as part of the pay cycle. You use the payroll calculation frequency to select the specific pay periods when you want certain earnings or other payroll entities to be processed.
 
-Configuring Payroll also includes setting up earning codes and creating earning code groups, and entering information for tax withholding, benefit accrual, and setting beginning balances.
+Configuring US payroll also includes setting up earning codes and creating earning code groups, and entering information for tax withholding, benefit accrual, and setting beginning balances.
 
 ### Frequencies and cycles
 
@@ -72,7 +72,7 @@ Topics related to benefits describe how to set up current and future benefits th
 
 ## Garnishments, tax levies, and premium earnings
 
-Premium earnings, garnishments, and tax levies won't be used by all employees. If your organization needs to pay premium earnings or garnish an employee's pay, Payroll includes a framework that can help ensure that the impact of these transactions is handled correctly.
+Premium earnings, garnishments, and tax levies won't be used by all employees. If your organization needs to pay premium earnings or garnish an employee's pay, US payroll includes a framework that can help ensure that the impact of these transactions is handled correctly.
 
 - [Set up garnishments and tax levies](noam-usa-garnishment-tax-levy-set-up-tasks.md)
 - [Enroll workers in garnishments or tax levies](noam-usa-garnishment-tax-levy-enrollment-tasks.md)

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Tax Calculation FAQ
-description: This topic answers frequently asked questions about the functionality of the Tax Calculation service.
+description: This article answers frequently asked questions about the functionality of the Tax Calculation service.
 author: epodkolz
 ms.date: 10/26/2021
 ms.topic: article
@@ -16,7 +16,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations, global
+
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region:
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 10.0.21
 
 # Tax Calculation FAQ
 
-This topic answers frequently asked questions about the functionality of the Tax Calculation service.
+This article answers frequently asked questions about the functionality of the Tax Calculation service.
 
 ## When will the Tax Calculation service be generally available?
 

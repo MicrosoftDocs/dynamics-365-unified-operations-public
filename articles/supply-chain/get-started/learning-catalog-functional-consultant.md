@@ -1,19 +1,19 @@
 ---
 title: Learning Catalog for Dynamics 365 Supply Chain Management functional consultants
 description: Find all the training options for functional consultants who work with Dynamics 365 Supply Chain Management.
-author: margoc
+author: kamaybac
 ms.topic: article
 ms.date: 07/27/2020
-ms.author: margoc
+ms.author: kamaybac
 
 ms.prod:
 ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application user
-ms.reviewer: margoc
+ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.1
@@ -68,7 +68,7 @@ For functional consultants, our job-task analysis research showed that everyone 
 | [Course MB-300T01-A: Core common features of Dynamics 365 for Finance and Operations](https://www.microsoft.com/learning/course.aspx?cid=MB-300T01) | This course discusses core common features of Microsoft Dynamics 365 for Finance and Operations. | Instructor-led in person or online training, cost varies by region and partner | 1 day |
 | [Course MB-300T02-A: Core configuration in Dynamics 365 for Finance and Operations](https://www.microsoft.com/learning/course.aspx?cid=MB-300T02) | This course discusses core configuration tasks for Microsoft Dynamics 365 for Finance and Operations. | Instructor-led in person or online training, cost varies by region and partner | 1 day |
 | [Course MB-300T03-A: Data migration and preparing for go-live with Dynamics 365 for Finance and Operations](https://www.microsoft.com/learning/course.aspx?cid=MB-300T03) | This course discusses data migration and go-live preparation for Microsoft Dynamics 365 for Finance and Operations. | Instructor-led in person or online training, cost varies by region and partner | 1 day |
-| [Implementation Lifecycle home page](/dynamics365/unified-operations/fin-and-ops/imp-lifecycle/implementation-lifecycle) | These topics describe the programs, tools, and processes available related to the implementation lifecycle of your Microsoft Dynamics 365 for Finance and Operations project. | Documentation | |
+| [Implementation Lifecycle home page](/dynamics365/unified-operations/fin-and-ops/imp-lifecycle/implementation-lifecycle) | These articles describe the programs, tools, and processes available related to the implementation lifecycle of your Microsoft Dynamics 365 for Finance and Operations project. | Documentation | |
 
 ## Migration and upgrade<a name="migration"></a>
 
@@ -105,7 +105,7 @@ For functional consultants, our job-task analysis research showed that everyone 
 | [Warehousing Mobile App (VIR816PAL)](https://community.dynamics.com/365/b/techtalks/posts/warehousing-mobile-app-march-22-2017) | This Tech Talk will discuss the Advanced Warehousing system in Dynamics 365 for Operations and what the future holds for the advanced warehousing mobile interface. We will examine the new mobile application that has been released and how it compares to the legacy WMDP. We will learn what is required to install, configure, and operate this mobile application and how it can be used to benefit your implementations. | Free recording of a web conference | 54 minutes |
 | [Vendor Collaboration (DYN327PAL)](https://community.dynamics.com/365/b/techtalks/posts/vendor-collaboration-july-25-2017) | This Tech Talk will provide a walk through on the Vendor Collaboration feature including the Consumption of Response from Vendor feature that is included in the July (spring) release. | Free recording of a web conference | 58 minutes |
 | [Item And Warehouse Migration Process To Use Advanced Warehouse Management (DYN316PAL)](https://community.dynamics.com/365/b/techtalks/posts/item-and-warehouse-migration-process-to-use-advanced-warehouse-management-june-27-2017) | In this Tech Talk, we will teach you how to migrate existing warehouse setup and items with open transactions to the advance warehouse management, by using the new capabilities to change the storage dimension group for items and enable warehouses to use the advanced warehouse management processes. | Free recording of a web conference | 54 minutes |
-| [Supply chain management home page](/dynamics365/unified-operations/supply-chain/) | This topic provides a list of the help topics and other resources for the supply chain management features in Microsoft Dynamics 365 for Finance and Operations. | Documentation | |
+| [Supply chain management home page](/dynamics365/unified-operations/supply-chain/) | This article provides a list of the help articles and other resources for the supply chain management features in Microsoft Dynamics 365 for Finance and Operations. | Documentation | |
 | [Demand Replenishment for Raw Material Picking (DYN333PAL2)](https://community.dynamics.com/365/b/techtalks/posts/demand-replenishment-for-raw-material-picking-september-28-2017) | This TechTalk will cover raw material picking and demand replenishment for raw material picking. | Free recording of a web conference | 38 minutes |
 | [Course MB-330T01-A: Configure and use supply chain management in Dynamics 365 for Finance and Operations](https://www.microsoft.com/learning/course.aspx?cid=MB-330T01) | This course discusses how to configure and use supply chain management in Dynamics 365 for Finance and Operations. | Instructor-led in person or online training, cost varies by region and partner | 2 days |
 | [Course MB-330T02-A: Use quality management, Intercompany trading and master planning in Dynamics 365 for Finance and Operations](https://www.microsoft.com/learning/course.aspx?cid=MB-330T02) | This course discusses how to use quality management, intercompany trading and master planning in Dynamics 365 for Finance and Operations. | Instructor-led in person or online training, cost varies by region and partner | 1 day |

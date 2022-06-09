@@ -1,7 +1,7 @@
 ---
 
 title: Class extension - Method wrapping and Chain of Command
-description: This topic discusses how to extend the business logic of public and protected methods by using method wrapping.
+description: This article discusses how to extend the business logic of public and protected methods by using method wrapping.
 author: jorisdg
 ms.date: 12/18/2018
 ms.topic: article
@@ -71,7 +71,7 @@ When this code is run, the system finds any method that wraps the **doSomething*
 
 ## Supported versions
 > [!IMPORTANT]
-> The functionality that is described in this topic (CoC and access to protected methods and variables) is available in Platform update 9. However, the class that is being augmented must also be compiled on Platform update 9 or later. As of August 2017, all current releases of the applications for Finance and Operations have been compiled on Platform update 8 or earlier. Therefore, to wrap a method that is defined in a base package (such as Application Suite), you must recompile that base package on Platform update 9 or later.
+> The functionality that is described in this article (CoC and access to protected methods and variables) is available in Platform update 9. However, the class that is being augmented must also be compiled on Platform update 9 or later. As of August 2017, all current releases of the applications for Finance and Operations have been compiled on Platform update 8 or earlier. Therefore, to wrap a method that is defined in a base package (such as Application Suite), you must recompile that base package on Platform update 9 or later.
 As an example: If you create your own extension model that is augmenting a class that exists in the Application Suite model, and if you are using CoC or accessing protected methods/variables, you will need to build both Application Suite and your extension model. You will also need to create a deployable package that includes both models in order to deploy this functionality on a runtime environment.
 
 ## Capabilities
@@ -421,7 +421,7 @@ In a CoC extension method, the next call must not be called conditionally. Howev
         try
         {
             //...
-            next updateBalances();
+            next someMethod();
             //...
         }
         catch(Exception::Error)
@@ -438,7 +438,7 @@ Currently, only methods that are defined in regular classes can be wrapped. Meth
 Constructors cannot be extended. A **new** method that is defined on an extension class will define a constructor for the extension class itself. Additionally, the **new** method has to be public, and it can't have any arguments. For more information, see [Constructors](class-extensions.md#constructors).
 
 ### Tooling
-For the features that are described in this topic, the Microsoft Visual Studio X++ editor doesn't yet offer complete support for cross-references and Microsoft IntelliSense.
+For the features that are described in this article, the Microsoft Visual Studio X++ editor doesn't yet offer complete support for cross-references and Microsoft IntelliSense.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,9 +2,9 @@
 # required metadata
 
 title: Saved views
-description: This topic describes how to use the saved views features.
+description: This article describes how to use the saved views features.
 author: jasongre
-ms.date: 09/13/2021
+ms.date: 04/25/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -50,7 +50,7 @@ After views have been made available for an environment, the top of any page tha
 
 There are two size variations to the view selector: 
 
-- **Large view selectors** – Pages that prominently feature a list will have a larger view selector for a few reasons. Most importantly, the larger view selector indicates the pages where the view can include user-defined filters. Because filters are included in the views, the larger selector size is also warranted as the view names will often be the best description of the data shown on the screen and the expectation is that users will switch between views more often on these page types.
+- **Large view selectors** – Pages that prominently feature a list will have a larger view selector for a few reasons. Most importantly, the larger view selector indicates the pages where the view can include user-defined filters and sorts. Because filters and sorts are included in the views, the larger selector size is also warranted as the view names will often be the best description of the data shown on the screen and the expectation is that users will switch between views more often on these page types. Grouping in a grid can also be saved to views on a page with large view selectors. 
 - **Small view selectors** – All other full-screen pages (except workspaces and the dashboard) have a smaller view selector that appears next to the page caption. Views on these pages include only personalizations, not user-defined filters. On these pages, the caption or record title is often the most important information at the top of the page. The smaller size of the view selector also reflects the lower frequency of view switching that is expected on these pages. 
  
 If you select the view name, the view selector is opened and shows the list of available views for the page.
@@ -201,7 +201,7 @@ For the list of all published views for the page, the following set of actions a
 
 ## Managing views globally
 
-Although some management capabilities are surfaced on every page, as indicated in this topic, **system administrators** and **saved view administrators** can manage views more holistically for the system via the **Personalization** page. In particular, this page has the following sections and capabilities: 
+Although some management capabilities are surfaced on every page, as indicated in this article, **system administrators** and **saved view administrators** can manage views more holistically for the system via the **Personalization** page. In particular, this page has the following sections and capabilities: 
 
 - **Published views** – This section lists all views that have been published for your organization. From here, you can republish a view after you adjust the security roles or legal entities that the view targets. You can also export, delete, or unpublish views. You can use the **Save as personal** action to create a personal copy of a view, so that you can update the view or gain a better understanding of its contents. 
 - **Unpublished views** – This section lists all the organization views in your system that aren't currently published. These views most often come into the system through the import capability. You can publish, export, or delete these views. The **Quick publish** action that was added in version 10.0.12 enables multiple views from this section to be published in one action, by using the existing security role and legal entity configurations. You can use the **Save as personal** action to create personal copies of these views, so that you can gain a better understand their contents.

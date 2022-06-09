@@ -2,7 +2,7 @@
 # required metadata
 
 title: Remove an instance
-description: This topic walks you through the process of removing a test drive or production environment for Microsoft Dynamics 365 Human Resources.
+description: This article walks you through the process of removing a test drive or production environment for Microsoft Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 08/11/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form: SystemAdministrationWorkspaceForm
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This topic explains the process of removing a test drive or production environment for Microsoft Dynamics 365 Human Resources.
+This article explains the process of removing a test drive or production environment for Microsoft Dynamics 365 Human Resources.
 
 ## Remove a test drive environment
 
@@ -46,7 +46,7 @@ The existing test drive environment will be removed. When it is removed, you can
 
 ## Remove a production environment
 
-This topic assumes that you've purchased Human Resources through a Cloud Solution Provider (CSP) or an enterprise architecture (EA) agreement. 
+This article assumes that you've purchased Human Resources through a Cloud Solution Provider (CSP) or an enterprise architecture (EA) agreement. 
 
 Since a single Human Resources environment is contained within a single Power Apps environment, there are two options to consider. The first option involves removing the entire Power Apps environment; the second option involves removing only Human Resources. The first option is preferred when you have created a Power Apps environment expressly for the purpose of provisioning Human Resources, and you've just begun implementation, or you don’t have any established integrations. The second option is appropriate when you have an established Power Apps environment populated with rich data that's leveraged in Power Apps and Power Automate.
 

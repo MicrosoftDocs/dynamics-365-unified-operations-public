@@ -2,7 +2,7 @@
 # required metadata
 
 title: Financial performance PowerBI.com solution
-description: This topic describes the Financial performance PowerBI.com solution. 
+description: This article describes the Financial performance PowerBI.com solution. 
 author: kweekley
 ms.date: 05/09/2018
 ms.topic: article
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 > [!NOTE]
 > This PowerBI.com solution has been deprecated as documented in [Removed or deprecated features for Finance and Operations](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
-This topic describes the **Financial performance** PowerBI.com solution. It describes the dashboard and reports that are included, and provides information about the data model and entities that were used to build the solution.
+This article describes the **Financial performance** PowerBI.com solution. It describes the dashboard and reports that are included, and provides information about the data model and entities that were used to build the solution.
 
 ## Main account setup
 Because organizations want liabilities and revenue amounts to appear as positive amounts on reports, the setup of the main accounts is important. For these main accounts to appear as positive amounts, the main account type must be set to **Liability** or **Revenue**. When these account types are used, reporting through Power BI will reverse the signs and show the amounts as positive.

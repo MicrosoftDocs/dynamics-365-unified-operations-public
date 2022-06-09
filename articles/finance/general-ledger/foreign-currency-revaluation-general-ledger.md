@@ -2,7 +2,7 @@
 # required metadata
 
 title: Foreign currency revaluation for General ledger
-description: This topic provides an overview of the following for the general ledger foreign currency revaluation process -  setup, running the process, calculation for the process, and how to reverse the revaluation transactions, if necessary. 
+description: This article provides an overview of the following for the general ledger foreign currency revaluation process -  setup, running the process, calculation for the process, and how to reverse the revaluation transactions, if necessary. 
 author: kweekley
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form: CurrencyLedgerGainLossAccount
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 62153
 ms.assetid: 842e8561-560f-4cc6-8668-70cca60b1ba3
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of the following for the general ledger foreign currency revaluation process -  setup, running the process, calculation for the process, and how to reverse the revaluation transactions, if necessary. 
+This article provides an overview of the following for the general ledger foreign currency revaluation process -  setup, running the process, calculation for the process, and how to reverse the revaluation transactions, if necessary. 
 
 As part of a period-end, accounting conventions require general ledger account balances in foreign currencies to be revalued using different exchange rate types (current, historical, average, etc.). For example, one accounting convention requires assets and liabilities to be revalued at the current exchange rate, fixed assets at the historical exchange rate, and profit and loss accounts at the monthly average. The General ledger foreign currency revaluation can be used to revalue the balance sheet and profit and loss accounts. 
 

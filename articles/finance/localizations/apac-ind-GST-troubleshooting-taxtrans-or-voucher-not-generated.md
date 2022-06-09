@@ -2,7 +2,7 @@
 # required metadata
 
 title: TaxTrans or voucher isn't generated
-description: This topic provides troubleshooting information to help resolve this issue when TaxTrans or voucher isn't generated.
+description: This article provides troubleshooting information to help resolve this issue when TaxTrans or voucher isn't generated.
 author: shaoling
 manager: beya
 ms.date: 04/30/2021
@@ -17,7 +17,7 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: India
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.1
 
 [!include [banner](../includes/banner.md)]
 
-Complete the steps in this topic if after posting tax there are records missing when you check the voucher and posted sales tax.
+Complete the steps in this article if after posting tax there are records missing when you check the voucher and posted sales tax.
 
 ## Check if the subledger journal transferred. 
 

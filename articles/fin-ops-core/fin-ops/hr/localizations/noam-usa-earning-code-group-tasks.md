@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up earning codes and earning code groups
-description: This topic explains how to set up earning codes and earning code groups.
+description: This article explains how to set up earning codes and earning code groups.
 author: andreabichsel
 ms.date: 08/21/2019
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to set up earning codes and earning code groups. Earning codes uniquely identify every type of earning that workers receive. They include parameters that are related to earnings, such as accounting rules, tax laws, reporting requirements, and gross-up capability. You also use earning codes to calculate various amounts that are used by the payroll system. For example, earning codes are required in order to determine the following amounts:
+This article explains how to set up earning codes and earning code groups. Earning codes uniquely identify every type of earning that workers receive. They include parameters that are related to earnings, such as accounting rules, tax laws, reporting requirements, and gross-up capability. You also use earning codes to calculate various amounts that are used by the payroll system. For example, earning codes are required in order to determine the following amounts:
 
 - Deductions and contributions for certain benefits
 - Balances in benefit accrual plans
@@ -61,7 +61,7 @@ Because earning codes are used to uniquely identify every type of earning that w
 - **Retroactive earnings** – We recommend that you create a retroactive earning code for every type of earning that can be paid retroactively. It's helpful if the names of the two codes resemble each other. For example, if the regular earning code is named **Hourly union 1st shift**, the retroactive earning code might be named **Hourly union 1st shift retro**.
 - **Miscellaneous or occasional earnings** – Many organizations provide car allowances, reimbursement of relocation expenses, and other miscellaneous earnings. You must have a separate earning code for each type of miscellaneous or occasional earning.
 
-Earning codes are shared across legal entities. However, the information on the **Accounting** tab isn't shared. That information applies only to the legal entity that you specify when you enter the information on the tab. For details, see the later sections of this topic.
+Earning codes are shared across legal entities. However, the information on the **Accounting** tab isn't shared. That information applies only to the legal entity that you specify when you enter the information on the tab. For details, see the later sections of this article.
 
 ## Create earning codes
 

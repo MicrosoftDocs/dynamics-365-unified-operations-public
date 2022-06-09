@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure theme style presets
-description: This topic explains how to add style variables that are known as style presets to custom themes in Microsoft Dynamics 365 Commerce site builder.
+description: This article explains how to add style variables that are known as style presets to custom themes in Microsoft Dynamics 365 Commerce site builder.
 author: samjarawan
 ms.date: 06/29/2020
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to add style variables that are known as style presets to custom themes in Microsoft Dynamics 365 Commerce site builder.
+This article explains how to add style variables that are known as style presets to custom themes in Microsoft Dynamics 365 Commerce site builder.
 
 A style preset is a stored set of all authorable style values across a site theme. Style presets can be used to immediately change the look of a site from within site builder. Style presets let site builder authors quickly change, preview, and activate a set of style values across their site, without having to use Cascading Style Sheets (CSS) or deploy new themes. Font styles, button styles, and site colors are typical examples of style variables that can be managed through style presets.
 

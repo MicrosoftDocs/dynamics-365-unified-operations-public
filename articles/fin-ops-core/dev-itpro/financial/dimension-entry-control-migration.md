@@ -2,7 +2,7 @@
 # required metadata
 
 title: Migrate default dimensions controls to Dimension Entry controls
-description: This topic describes the steps necessary to migrate default dimensions controls to Dimension Entry controls after code upgrade is run.
+description: This article describes the steps necessary to migrate default dimensions controls to Dimension Entry controls after code upgrade is run.
 author: RyanCCarlson2
 ms.date: 10/26/2018
 ms.topic: article
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: tfehr
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 25531
 ms.assetid: 05e85771-44e1-4b0a-8dd2-a878be5a3309
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the steps necessary to migrate default dimensions controls to Dimension Entry controls after code upgrade is run. It uses the PurchTable form as an example.
+This article describes the steps necessary to migrate default dimensions controls to Dimension Entry controls after code upgrade is run. It uses the PurchTable form as an example.
 
 ## Simple migration scenario - PurchTable form
 

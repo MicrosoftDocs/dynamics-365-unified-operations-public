@@ -2,7 +2,7 @@
 # required metadata
 
 title: Tax configuration errors
-description: This topic provides troubleshooting information that can help with tax configuration errors.
+description: This article provides troubleshooting information that can help with tax configuration errors.
 author: peter-xu
 ms.date: 04/28/2021
 ms.topic: article
@@ -16,7 +16,7 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: India

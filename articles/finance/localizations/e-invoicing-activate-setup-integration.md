@@ -2,7 +2,7 @@
 # required metadata
 
 title: Activate and set up integration with Electronic invoicing
-description: This topic explains how to activate and set up the integration of Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management with Electronic invoicing.
+description: This article explains how to activate and set up the integration of Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management with Electronic invoicing.
 author: dkalyuzh
 ms.date: 01/21/2022
 ms.topic: article

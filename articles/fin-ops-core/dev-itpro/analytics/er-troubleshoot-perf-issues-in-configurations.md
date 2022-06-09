@@ -2,9 +2,9 @@
 # required metadata
 
 title: Troubleshooting performance issues in ER configurations
-description: This topic explains how to find and fix performance issues in Electronic reporting (ER) configurations.
+description: This article explains how to find and fix performance issues in Electronic reporting (ER) configurations.
 author: NickSelin
-ms.date: 06/08/2021
+ms.date: 05/12/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.1
 
 # Troubleshooting performance issues in ER configurations
 
-This topic explains how to find and solve performance issues in [Electronic reporting](general-electronic-reporting.md) (ER) [configurations](general-electronic-reporting.md#Configuration).
+This article explains how to find and solve performance issues in [Electronic reporting](general-electronic-reporting.md) (ER) [configurations](general-electronic-reporting.md#Configuration).
 
 Typically, performance investigation consists of several steps.
 
@@ -60,7 +60,7 @@ Sometimes, performance issues aren't caused by an ER format configuration that i
 
 Prepare a small example, or collect several traces during random parts of the report generation.
 
-Then, in [Trace parser](#trace-parser), do a standard bottom-to-up analysis, and answer the following questions:
+Then, in [Trace parser](#trace-parser), do a standard bottom-up analysis, and answer the following questions:
 
 - What are the top methods in terms of time consumption?
 - What part of the overall time do those methods use?
@@ -87,7 +87,7 @@ Then open the trace in the ER model mapping designer, and look at the bottom of 
 
 - Does the number of queries and fetched records correspond to the overall amount of data? For example, if a document has 10 lines, do the statistics show that the report extracts 10 lines or 1,000 lines? If you have a substantial number of fetched records, consider one of the following fixes:
 
-    - [Use the **FILTER** function instead of the **WHERE** function](#filter) to process data on the SQL Server side.
+    - [Use the **FILTER** function instead of the **WHERE** function](#filter) to process data on the Microsoft SQL Server side.
     - Use caching to avoid fetching the same data.
     - [Use collected data functions](#collected-data) to avoid fetching the same data for summarization.
 
@@ -196,6 +196,10 @@ There are a few limitations to this approach. You must have administrative acces
 
 Although caching reduces the amount of time that is required to fetch data again, it costs memory. Use caching in cases where the amount of fetched data isn't very large. For more information and an example that shows how to use caching, see [Improve the model mapping based on information from the execution trace](trace-execution-er-troubleshoot-perf.md#improve-the-model-mapping-based-on-information-from-the-execution-trace).
 
+#### <a name="reduce-fetched-data"></a>Reduce volume of data fetched
+
+You can reduce memory consumption for caching by limiting the number of fields in the records of an application table that you fetch at runtime. In this case, you will fetch only those field values of an application table that you need in your ER model mapping. Other fields in that table won't be fetched. Therefore, the volume of memory that is required to cache fetched records is reduced. For more information, see [Improve performance of ER solutions by reducing the number of table fields that are fetched at runtime](er-reduce-fetched-fields-number.md).
+
 #### <a name="cached-parameterized"></a>Use a cached, parameterized calculated field
 
 Sometimes, values must be looked up repeatedly. Examples include account names and account numbers. To help save time, you can create a calculated field that has parameters on the top level, and then add the field to the cache.
@@ -223,4 +227,4 @@ ER can consume data from the following sources:
 - Classes (**object** and **class** data sources)
 - Tables (**table** and **table records** data sources)
 
-The [ER API](er-apis-app73.md#how-to-access-internal-x-objects-by-using-erobjectsfactory) also provides a way to send precalculated data from the calling code. The application suite contains numerous examples of this approach.
+The [ER application programming interface (API)](er-apis-app73.md#how-to-access-internal-x-objects-by-using-erobjectsfactory) also provides a way to send precalculated data from the calling code. The application suite contains numerous examples of this approach.

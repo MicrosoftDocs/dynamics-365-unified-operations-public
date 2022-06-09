@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Accounting reporting in electronic format (Russia)
-description: This topic explains how to set up accounting reporting for Russia.
+description: This article explains how to set up accounting reporting for Russia.
 author: Anasyash
 ms.date: 09/03/2020
 ms.topic: article

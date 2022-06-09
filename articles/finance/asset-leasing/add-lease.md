@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add or copy leases (Preview)
-description: This topic describes how to create a new lease by entering information for it in Asset leasing or copying information from an existing lease.
+description: This article describes how to create a new lease by entering information for it in Asset leasing or copying information from an existing lease.
 author: moaamer
 ms.date: 01/11/2022
 ms.topic: article
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.14
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to create a lease from scratch in Asset leasing, and also how to create a lease by copying an existing lease. The process for creating a lease from scratch involves entering information for the new lease and then creating a lease schedule. After at least one lease has been set up, you might find it easier to copy the information from an existing lease and then edit that information as you require to create a new lease.
+This article explains how to create a lease from scratch in Asset leasing, and also how to create a lease by copying an existing lease. The process for creating a lease from scratch involves entering information for the new lease and then creating a lease schedule. After at least one lease has been set up, you might find it easier to copy the information from an existing lease and then edit that information as you require to create a new lease.
 
 ## Create a lease
 

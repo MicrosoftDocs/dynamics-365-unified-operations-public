@@ -2,7 +2,7 @@
 # required metadata
 
 title: Server-to-server authentication for the ATS integration API
-description: This topic describes how to set up server-to-server authentication for integrations against the Dynamics 365 Human Resources Applicant Tracking System (ATS) integration API.
+description: This article describes how to set up server-to-server authentication for integrations against the Dynamics 365 Human Resources Applicant Tracking System (ATS) integration API.
 author: jaredha
 ms.date: 06/30/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This topic describes how to set up server-to-server authentication for application integrations against the Dynamics 365 Human Resources Applicant Tracking System (ATS) integration API. There are a couple of layers of security that need to be managed for the service principal to get access to the Microsoft Dataverse virtual table and associated data. The user needs to be granted access to the Dataverse virtual table in Microsoft Power Platform, and access to the data in Dynamics 365 Human Resources.
+This article describes how to set up server-to-server authentication for application integrations against the Dynamics 365 Human Resources Applicant Tracking System (ATS) integration API. There are a couple of layers of security that need to be managed for the service principal to get access to the Microsoft Dataverse virtual table and associated data. The user needs to be granted access to the Dataverse virtual table in Microsoft Power Platform, and access to the data in Dynamics 365 Human Resources.
 
 ## Enable access to Dataverse virtual tables in Power Platform
 
@@ -93,7 +93,7 @@ For the new role, appropriate access must be assigned to, at a minimum, the foll
 
 The second step is to ensure that the application is granted appropriate permissions to the data in Human Resources by linking it to a user in the Human Resources application. For an application user, the server-to-server calls through Dataverse virtual tables are done in the context of the identity of the user (app) in Dataverse that is invoking the action. The virtual table adapter service then looks up the associated user in Human Resources and runs the query in the context of that user. This means that a user must be created in Human Resources with the correct roles assigned in order to provide access to the data that the integrating application will need.
 
-The Human Resources user will also need to be assigned the correct permissions to the data in Human Resources. The **Recruiting Application** (HcmRecruitingIntegrator) role is available with privileges to the primary entities required for integrating with recruiting data. This role can be assigned to the application user in the **Users** page to grant appropriate access to the data. For more information about Human Resources security roles, see [Role-based security](/fin-ops-core/dev-itpro/sysadmin/role-based-security).
+The Human Resources user will also need to be assigned the correct permissions to the data in Human Resources. The **Recruiting Application** (HcmRecruitingIntegrator) role is available with privileges to the primary entities required for integrating with recruiting data. This role can be assigned to the application user in the **Users** page to grant appropriate access to the data. For more information about Human Resources security roles, see [Role-based security](/dynamics365/fin-ops-core/dev-itpro/sysadmin/role-based-security).
 
 ### Set up the new user with appropriate permissions
 

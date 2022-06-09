@@ -2,8 +2,8 @@
 # required metadata
 
 title: Add an address to a service order   
-description: This topic describes how to add a customer address to a service order.
-author: kamaybac
+description: This article describes how to add a customer address to a service order.
+author: sorenva
 ms.date: 05/02/2018
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kamaybac
+ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 
-This topic describes how to add a customer address to a service order. When you create a service order, the address information is transferred from the project that the service order is attached to. However, you can select an alternative location from addresses that are already entered in Microsoft Dynamics AX for customers, vendors, sites, warehouses, service orders, and projects.
+This article describes how to add a customer address to a service order. When you create a service order, the address information is transferred from the project that the service order is attached to. However, you can select an alternative location from addresses that are already entered in Microsoft Dynamics AX for customers, vendors, sites, warehouses, service orders, and projects.
 
 You can also create a new address. By default, the new address is transferred to the project. However, you can specify that the new address is only relevant for this instance of the service. If you do, the new address is not transferred to the project.
 

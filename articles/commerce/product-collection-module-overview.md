@@ -2,9 +2,9 @@
 # required metadata
 
 title: Product collection modules
-description: This topic provides an overview of product collection modules in Microsoft Dynamics 365 Commerce.
+description: This article provides an overview of product collection modules in Microsoft Dynamics 365 Commerce.
 author: v-chgri
-ms.date: 01/28/2021
+ms.date: 05/18/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic provides an overview of product collection modules in Microsoft Dynamics 365 Commerce.
+This article provides an overview of product collection modules in Microsoft Dynamics 365 Commerce.
 
 Product discovery is a primary tool that retailers use to engage with their customers on an e-Commerce website. Product collection modules help retailers build compelling shopping experiences by providing an intuitive visual interface that can be used to quickly author product collections.
 
@@ -75,11 +75,14 @@ The product collection module supports the [quick view module](quick-view-module
 To add a product collection module to a category page, follow these steps.
 
 1. Go to **Pages**, and select **New** to create a new page.
-1. In the **Choose a template** dialog box, select the same template as that used by your default category page. Under **Page name**, enter an appropriate name, and then select **OK**.
-1. In the **Sub footer** slot, select the ellipsis (**...**), and then select **Add Module**.
-1. In the **Add Module** dialog box, select the **Container** module, and then select **OK**.
-1. In the **Container** slot, select the ellipsis (**...**), and then select **Add Module**.
-1. In the **Add Module** dialog box, select the **Product collection** module, and then select **OK**.  
+1. In the **Create a new page** dialog box, under **Page name**, enter an appropriate page name, and then select **Next**.
+1. Under **Choose a template**, select the same template as that used by your default category page, and then select **Next**.
+1. Under **Choose a layout**, select a page layout (for example, **Flexible layout**), and then select **Next**.
+1. Under **Review and finish**, review the page configuration. If you need to edit the page information, select **Back**. If the page information is correct, select **Create page**. 
+1. In the **Sub footer** slot, select the ellipsis (**...**), and then select **Add module**.
+1. In the **Select modules** dialog box, select the **Container** module, and then select **OK**.
+1. In the **Container** slot, select the ellipsis (**...**), and then select **Add module**.
+1. In the **Select modules** dialog box, select the **Product collection** module, and then select **OK**.  
 1. In the properties pane for the product collection module, select **Add a product list**.
 1. In the **Select product list configuration** dialog box, select the type of list, the list source, and enter the number of items. Configure any other options that are available for the list type. For more information about list types, see the table that follows. 
 1. Select **OK**.

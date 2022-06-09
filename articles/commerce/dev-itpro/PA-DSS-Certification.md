@@ -2,7 +2,7 @@
 # required metadata
 
 title: Payment Application Data Security Standards (PA-DSS) certification
-description: This topic explains the past, current, and pending listings of PA-DSS certification.
+description: This article explains the past, current, and pending listings of PA-DSS certification.
 author: BrianShook
 ms.date: 10/13/2021
 ms.topic: article
@@ -16,7 +16,7 @@ audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: brshoo
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 8
 > [!IMPORTANT]
 > If a version of Microsoft Dynamics 365 is implemented and the PA-DSS certification has not yet been completed by Microsoft, there may be potential impact to the retailer's Payment Card Industry (PCI) audit and certification. Specifically, until the PA-DSS certification is complete for the associated version, PCI certification can become more difficult and involved as the payment application may come into scope of testing during the certification.
 
-This topic explains the current and past listings of PA-DSS certification for Microsoft Dynamics 365. To view the current certifications, see [PCI PA-DSS certified payment applications](https://www.pcisecuritystandards.org/assessors_and_solutions/payment_applications).
+This article explains the current and past listings of PA-DSS certification for Microsoft Dynamics 365. To view the current certifications, see [PCI PA-DSS certified payment applications](https://www.pcisecuritystandards.org/assessors_and_solutions/payment_applications).
 
 ## Current certification
 PA-DSS implementation guides are linked to in the **Version** column in the following table.

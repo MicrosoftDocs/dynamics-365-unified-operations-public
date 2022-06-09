@@ -2,7 +2,7 @@
 # required metadata
 
 title: Coverage time fences
-description: This topic describes how to set up coverage time fences when you're using Planning Optimization. A coverage time fence indicates your planning horizon and limit.
+description: This article describes how to set up coverage time fences when you're using Planning Optimization. A coverage time fence indicates your planning horizon and limit.
 author: t-benebo
 ms.date: 01/18/2021
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how to set up *coverage time fences* when you're using Planning Optimization. Planners can define the planning horizon (the coverage time fence in days), and exclude supply and demand that falls beyond that horizon. Therefore, coverage time fences help prevent "noise" that is caused by supply suggestions that you don't have to react to for months. Examples include next year's forecast and customer orders that are placed far beyond the normal lead time.
+This article describes how to set up *coverage time fences* when you're using Planning Optimization. Planners can define the planning horizon (the coverage time fence in days), and exclude supply and demand that falls beyond that horizon. Therefore, coverage time fences help prevent "noise" that is caused by supply suggestions that you don't have to react to for months. Examples include next year's forecast and customer orders that are placed far beyond the normal lead time.
 
 A coverage time fence is the number of days after today's date (or, more precisely, the date when you do the planning run) that supply and demand is excluded. To help avoid delays, you must ensure that the coverage time fence is longer that the total lead time. The default system value is 100 days.
 

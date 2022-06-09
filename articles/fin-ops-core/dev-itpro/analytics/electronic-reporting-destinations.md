@@ -2,9 +2,9 @@
 # required metadata
 
 title: Electronic reporting (ER) destinations
-description: This topic provides information about the management of Electronic reporting destinations, the types of supported destinations, and security considerations.
+description: This article provides information about the management of Electronic reporting destinations, the types of supported destinations, and security considerations.
 author: nselin
-ms.date: 09/16/2021
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](../includes/banner.md)]
 
-You can configure a destination for each Electronic reporting (ER) format configuration and its output component (a folder or a file). Users who have appropriate access rights can also modify destination settings at runtime. This topic explains ER destination management, the types of destinations that are supported, and security considerations.
+You can configure a destination for each Electronic reporting (ER) format configuration and its output component (a folder or a file). Users who have appropriate access rights can also modify destination settings at runtime. This article explains ER destination management, the types of destinations that are supported, and security considerations.
 
 ER format configurations usually contain at least one output component: a file. Typically, configurations contain multiple file output components of different types (for example, XML, TXT, XLSX, DOCX, or PDF) that are grouped into either a single folder or multiple folders. ER destination management lets you preconfigure what occurs when each component is run. By default, when a configuration is run, a dialog box appears that lets you save or open the file. The same behavior also occurs when you import an ER configuration and don't configure any specific destinations for it. After a destination is created for a main output component, that destination overrides the default behavior, and the folder or file is sent according to the destination's settings.
 
@@ -178,11 +178,11 @@ In versions of Finance **before version 10.0.18**, the PDF conversion option can
 
 ### Limitations
 
-The PDF conversion option is available only for cloud deployments.
+As of Finance **version 10.0.9**, the PDF conversion option is available only for cloud deployments. Starting in Finance version **10.0.27**, the PDF conversion option is available for any on-premises deployment that has [Internet connectivity](../user-interface/client-disconnected.md) enabled.
 
 The PDF document that is produced is limited to a maximum length of 300 pages.
 
-In Finance **version 10.0.9**, only landscape page orientation is supported in the PDF document that is produced from Excel output. In Finance **version 10.0.10 (May 2020) and later**, you can [specify the page orientation](#SelectPdfPageOrientation) of the PDF document that is produced from Excel output while you configure an ER destination.
+As of Finance **version 10.0.9**, only landscape page orientation is supported in the PDF document that is produced from Excel output. Starting in Finance **version 10.0.10**, you can [specify the page orientation](#SelectPdfPageOrientation) of the PDF document that is produced from Excel output while you configure an ER destination.
 
 Only the common system fonts of the Window operating system are used to convert output that contains no embedded fonts.
 

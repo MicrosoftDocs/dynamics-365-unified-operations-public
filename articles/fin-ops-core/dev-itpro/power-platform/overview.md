@@ -2,9 +2,9 @@
 # required metadata
 
 title: Microsoft Power Platform integration with Finance and Operations apps
-description: This topic provides an overview for Microsoft Power Platform integration via Microsoft Dynamics Lifecycle Services for Finance and Operations apps and Microsoft Dataverse.
+description: This article provides an overview for Microsoft Power Platform integration via Microsoft Dynamics Lifecycle Services for Finance and Operations apps and Microsoft Dataverse.
 author: Sunil-Garg
-ms.date: 03/02/2022
+ms.date: 05/19/2022
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -40,7 +40,7 @@ By default, all Finance and Operations apps environments that are managed by LCS
 
 This environment can't be deleted or reset, and a Dataverse database can't be manually added to it. To add Dataverse and fully set up the Microsoft Power Platform integration, follow the instructions in [Enable the Microsoft Power Platform integration](enable-power-platform-integration.md).
 
-Alternatively, if you want to reuse an existing Dataverse environment for your Microsoft Power Platform integration scenarios (virtual entities, add-ins, dual-write functionality, and more), follow the instructions in [Set up dual-write for an existing Dataverse environment](../data-entities/dual-write/lcs-setup.md#set-up-dual-write-for-an-existing-dataverse-environment).
+Alternatively, if you want to reuse an existing Dataverse environment for your Microsoft Power Platform integration scenarios (virtual entities, add-ins, dual-write functionality, and more), follow the instructions in [Enable integration with an existing Power Platform environment](enable-power-platform-integration.md#connect-to-existing-dataverse).
 
 ## Prerequisite reading
 

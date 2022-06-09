@@ -2,7 +2,7 @@
 # required metadata
 
 title: Define and manage a benefits program
-description: Human resources provides a set of tools that can be used to set up and maintain benefits, deductions, and workers' compensation plans that an organization offers or processes for its workers. This topic provides information about how to set up and manage benefits.
+description: Human resources provides a set of tools that can be used to set up and maintain benefits, deductions, and workers' compensation plans that an organization offers or processes for its workers. This article provides information about how to set up and manage benefits.
 author: twheeloc
 ms.date: 08/23/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form: HcmBenefitEligibilityDetail, HcmBenefitSelection, SysPolicyListP
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 15681
 ms.assetid: 6aee97ac-29f7-4b3c-8aa1-c65810de3090
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Human Resources provides a set of tools that can be used to set up and maintain benefits, deductions, and workers' compensation plans that an organization offers or processes for its workers. This topic provides information about how to set up and manage benefits.
+Human Resources provides a set of tools that can be used to set up and maintain benefits, deductions, and workers' compensation plans that an organization offers or processes for its workers. This article provides information about how to set up and manage benefits.
 
 ## Benefit setup
 

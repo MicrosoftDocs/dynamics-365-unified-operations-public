@@ -1,10 +1,10 @@
 ---
 title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.20 (August 2021) 
-description: This topic describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.20. 
+description: This article describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.20. 
 author: kamaybac
 ms.date: 05/28/2021
 ms.topic: article
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
 ms.search.region: Global
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.20
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management version 10.0.20. This version has a build number of 10.0.886 and is available as follows:
+This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management version 10.0.20. This version has a build number of 10.0.886 and is available as follows:
 
 - **Preview of release:** May 2021
 - **General availability of release (self-update):** July 2021
@@ -55,12 +55,12 @@ The following table lists the feature enhancements included in this release. Eac
 
 ## New and updated documentation resources
 
-We have recently added or significantly updated the following help topics. They aren't necessarily related to the new features added for this release, as listed in the previous section, but they may help you to get more out of existing features.
+We have recently added or significantly updated the following help articles. They aren't necessarily related to the new features added for this release, as listed in the previous section, but they may help you to get more out of existing features.
 
-| Feature area | New or updated topics |
+| Feature area | New or updated articles |
 |---|---|
 | Engineering change management | [Product lifecycle states and transactions](../engineering-change-management/product-lifecycle-state-transactions.md) |
-| Inventory management | [Inventory Visibility Add-in](../inventory/inventory-visibility.md)<br><br>[Quality and nonconformance management overview](../inventory/quality-management-processes.md) (plus all related quality-management topics) |
+| Inventory management | [Inventory Visibility Add-in](../inventory/inventory-visibility.md)<br><br>[Quality and nonconformance management overview](../inventory/quality-management-processes.md) (plus all related quality-management articles) |
 | Procurement and sourcing | [Maintain vendor certification](../../finance/public-sector/manage-vendor-certification.md) |
 | Production control | [Style the production floor execution interface](../production-control/production-floor-execution-styles.md) |
 | Warehouse management | [Assign step icons and titles for the Warehouse Management mobile app](../warehousing/step-icons-titles.md)<br><br>[Deferred processing of manual inventory movement](../warehousing/deferred-processing-manual-inventory-movement.md) |
@@ -83,12 +83,12 @@ Check out the [Dynamics 365: 2021 release wave 1 plan](/dynamics365-release-plan
 
 ### Removed and deprecated Supply Chain Management features
 
-The [Removed or deprecated features in Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) topic describes features that have been or are scheduled to be removed or deprecated for Supply Chain Management.
+The [Removed or deprecated features in Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) article describes features that have been or are scheduled to be removed or deprecated for Supply Chain Management.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
-Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features in Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) topic 12 months prior to the removal.
+Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features in Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) article 12 months prior to the removal.
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
 

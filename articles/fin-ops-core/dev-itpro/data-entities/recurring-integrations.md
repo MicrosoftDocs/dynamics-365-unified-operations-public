@@ -2,7 +2,7 @@
 # required metadata
 
 title: Recurring integrations
-description: This topic describes recurring integrations, including the process of data migration and the movement into and out of any enterprise system.
+description: This article describes recurring integrations, including the process of data migration and the movement into and out of any enterprise system.
 author: peakerbl
 ms.date: 10/07/2021
 ms.topic: article

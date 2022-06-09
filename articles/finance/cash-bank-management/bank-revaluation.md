@@ -2,8 +2,8 @@
 # required metadata
 
 title: Bank foreign currency revaluation 
-description: This topic provides an overview of the process of bank foreign currency revaluation. It includes information about setup, running the process, the calculation for the process, and reversal of revaluation transactions.
-author: roschlom
+description: This article provides an overview of the process of bank foreign currency revaluation. It includes information about setup, running the process, the calculation for the process, and reversal of revaluation transactions.
+author: kweekley
 ms.date: 05/16/2019
 ms.topic: article
 ms.prod: 
@@ -15,13 +15,13 @@ ms.search.form: BankCurrencyRevalHistory
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: kweekley
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: 10.0
 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0
 [!include [banner](../includes/banner.md)]
 
 
-This topic provides an overview of the process of bank foreign currency revaluation. It explains how to set up and run the process, and provides information about the calculation for the process. It also explains how to reverse revaluation transactions, if reversal is required.
+This article provides an overview of the process of bank foreign currency revaluation. It explains how to set up and run the process, and provides information about the calculation for the process. It also explains how to reverse revaluation transactions, if reversal is required.
 
 As part of a period end, accounting conventions require that bank account balances in foreign currencies be revalued by using different exchange rate types (current, historical, average, and so on). The bank foreign currency revaluation feature can be used to revalue one or more bank accounts. The feature is also a global feature. Therefore, from a single page, you can revalue banks across all the legal entities that you have access to.
 

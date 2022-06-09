@@ -2,7 +2,7 @@
 # required metadata
 
 title: Czech Intrastat
-description: This topic contains information about the Czech Intrastat report.
+description: This article contains information about the Czech Intrastat report.
 author: anasyash
 ms.date: 01/18/2022
 ms.topic: article

@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Dispose of deferrals (Russia)
-description: This topic explains how to dispose of deferrals.
+description: This article explains how to dispose of deferrals.
 author: anasyash
 ms.date: 06/28/2019
 ms.topic: article

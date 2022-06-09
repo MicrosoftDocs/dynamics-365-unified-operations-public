@@ -2,7 +2,7 @@
 # required metadata
 
 title: Finland overview
-description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for Finland. 
+description: This article provides links to Microsoft Dynamics 365 Finance documentation resources for Finland. 
 author: kfend
 ms.date: 03/22/2022
 ms.topic: overview
@@ -29,13 +29,18 @@ ms.dyn365.ops.version: AX 10.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic includes information and links to resources that can help you set up legal entities with a primary address in Finland.
+This article includes information and links to resources that can help you set up legal entities with a primary address in Finland.
 
 - [Sales tax payment report for Finland](emea-fin-sales-tax-payment-report-finland.md)
 - [VAT declaration (Finland)](emea-fin-vat-declaration.md)
 
-This topic contains information about the Finnish Intrastat report.
+This article contains information about the Finnish Intrastat report.
 
 - [Finnish Intrastat](emea-fin-intrastat.md)
+
+This article contains information about the EU sales list for Finland.
+
+- [EU sales list for Finland](emea-fin-eu-sales-list.md)
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -15,7 +15,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
@@ -48,7 +48,7 @@ Before you can use the *Zone threshold replenishment* feature, it must be turned
 
 ## <a name="setup"></a>Set up zone-based replenishment
 
-To set up zone-based replenishment, you must configure several parts of the system. This section introduces the various settings and provides demo data values that you can enter if you want to work through the scenario at the end of this topic.
+To set up zone-based replenishment, you must configure several parts of the system. This section introduces the various settings and provides demo data values that you can enter if you want to work through the scenario at the end of this article.
 
 ### Set up directive codes
 
@@ -60,7 +60,7 @@ To view or edit your directive codes, go to **Warehouse management \> Setup \> D
 
 #### Prepare demo data directive codes
 
-This example shows how to prepare a directive code. If you're planning to work through the scenario at the end of this topic, use the demo data values that are provided here. Otherwise, use your own values.
+This example shows how to prepare a directive code. If you're planning to work through the scenario at the end of this article, use the demo data values that are provided here. Otherwise, use your own values.
 
 1. Select the **USMF** legal entity to work with the demo data.
 1. Go to **Warehouse management \> Setup \> Directive codes**.
@@ -82,7 +82,7 @@ A replenishment template is a set of rules that control when and how a location 
 
 #### Prepare a demo data replenishment template
 
-This example shows how to prepare a replenishment template. If you're planning to work through the scenario at the end of this topic, use the demo data values that are provided here. Otherwise, use your own values.
+This example shows how to prepare a replenishment template. If you're planning to work through the scenario at the end of this article, use the demo data values that are provided here. Otherwise, use your own values.
 
 1. Select the **USMF** legal entity to work with the demo data.
 1. Go to **Warehouse management \> Setup \> Replenishment \> Replenishment templates**.
@@ -147,7 +147,7 @@ For examples that show how to use the settings to create the required pick locat
 
 #### Prepare demo data location directives
 
-To prepare demo data so that it can be used in the scenario at the end of this topic, you must create two location directives: one for pick and one for put.
+To prepare demo data so that it can be used in the scenario at the end of this article, you must create two location directives: one for pick and one for put.
 
 ##### Create a replenishment pick directive
 
@@ -261,7 +261,7 @@ This section provides a sample scenario that shows how to work with the feature.
 
 ### Prepare the sample data that is required for the sample scenario
 
-Before you start to work through the scenario, you must activate sample data and set up the feature as described in this section and in the previous sections of this topic.
+Before you start to work through the scenario, you must activate sample data and set up the feature as described in this section and in the previous sections of this article.
 
 #### Use the USMF legal entity
 
@@ -269,7 +269,7 @@ To work through the scenario by using the sample records and values that are spe
 
 #### Prepare additional sample data
 
-After you've selected the **USMF** legal entity, add the additional sample data that is required, as described in the [Set up zone-based replenishment](#setup) section earlier in this topic.
+After you've selected the **USMF** legal entity, add the additional sample data that is required, as described in the [Set up zone-based replenishment](#setup) section earlier in this article.
 
 #### Check your on-hand inventory
 

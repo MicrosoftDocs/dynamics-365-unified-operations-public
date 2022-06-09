@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add payment amount types
-description: This topic explains how to set up payment amount types in Asset leasing.
+description: This article explains how to set up payment amount types in Asset leasing.
 author: moaamer
 ms.date: 01/11/2022
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.14
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to set up payment amount types in Asset leasing. In this way, you can itemize the lease payment amount instead of adding the lump sum amount on the payment schedule lines.
+This article describes how to set up payment amount types in Asset leasing. In this way, you can itemize the lease payment amount instead of adding the lump sum amount on the payment schedule lines.
 
 To add payment amount types, follow these steps.
 

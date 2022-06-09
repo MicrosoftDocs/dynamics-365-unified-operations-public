@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Human Resources (June 25, 2020)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for June 23, 2020.
+description: This article describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for June 23, 2020.
 author: andreabichsel
 ms.date: 06/25/2020
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Human Resources
 
 
 
-This topic describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3347. The numbers in parentheses in some headings refer to LCS support numbers for reference.
+This article describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3347. The numbers in parentheses in some headings refer to LCS support numbers for reference.
 
 ## When an enrollment is expired for a terminated employee, the leave type, balance, and amount are all cleared in the Leave enrollment form (444867)
 

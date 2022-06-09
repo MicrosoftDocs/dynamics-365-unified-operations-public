@@ -3,7 +3,7 @@
 
 title: Work with customer service overview 
 description: Customer service supports professional, service-based companies and manufacturing service organizations.
-author: kamaybac
+author: sorenva
 ms.date: 07/25/2019
 ms.topic: overview
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kamaybac
+ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -46,7 +46,7 @@ Customer service includes the following functionality:
 
   - Service-level agreements that support a differentiated customer base
 
-The topics in this section provide an overview of the Customer service business process and each business process component. They also list the forms that are associated with each business process component, and they discuss the tasks that are associated with each business process component.
+The articles in this section provide an overview of the Customer service business process and each business process component. They also list the forms that are associated with each business process component, and they discuss the tasks that are associated with each business process component.
 
 
 

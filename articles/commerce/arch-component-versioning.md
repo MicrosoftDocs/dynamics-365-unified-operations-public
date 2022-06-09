@@ -2,9 +2,9 @@
 # required metadata
 
 title: Dynamics 365 Commerce component versioning requirements
-description: This topic provides an overview of the component versioning requirements and dependencies for all components in the Microsoft Dynamics 365 Commerce ecosystem.
+description: This article provides an overview of the component versioning requirements and dependencies for all components in the Microsoft Dynamics 365 Commerce ecosystem.
 author: rezaassadi
-ms.date: 04/13/2022
+ms.date: 05/04/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.11
 
 [!include [banner](includes/banner.md)]
 
-This topic provides an overview of the component versioning requirements and dependencies for all components in the Microsoft Dynamics 365 Commerce ecosystem.
+This article provides an overview of the component versioning requirements and dependencies for all components in the Microsoft Dynamics 365 Commerce ecosystem.
 
 The following illustration shows an overview of Dynamics 365 Commerce components and corresponding versioning requirements and dependencies.
 
@@ -74,7 +74,7 @@ The following table describes the current supported versions of various Commerce
 
 ## One Version requirements
 
-Commerce components follow the same [One Version service updates](https://cloudblogs.microsoft.com/dynamics365/bdm/2018/07/06/modernizing-the-way-we-update-dynamics-365/) that were announced in July 2018, and also the subsequently published [flexible service updates for Finance and Operations apps](https://cloudblogs.microsoft.com/dynamics365/bdm/2019/06/03/new-flexible-service-updates-for-dynamics-365-for-finance-and-operations/) that were announced in June 2019. For more information, see [One Version service updates FAQ](../fin-ops-core/fin-ops/get-started/one-version.md).
+Commerce components follow the One Version service updates. For more information, see [One Version service updates FAQ](../fin-ops-core/fin-ops/get-started/one-version.md).
 
 ### Cloud components
 
@@ -88,34 +88,25 @@ For example, customers who are currently on version 10.0.23 can pause updates to
 
 ### In-store components
 
-Customers can pause up to seven consecutive updates across the following components. (Seven updates correspond to approximately twelve calendar months.)
+Customers can pause up to seven consecutive updates across the following components:
+- Commerce Scale Unit (self-hosted)
+- Modern POS or Store Commerce
+- Hardware station
 
-- Commerce Scale Unit (in-store hosted)
-- Modern POS
-- Hardware Station
-
-For example, customers who are currently on version 10.0.23 can pause updates to versions 10.0.24, 10.0.25, and 10.0.26. However, they must then update to version 10.0.27. In this scenario, after version 10.0.28 becomes available, version 10.0.23 is no longer supported.
+For example, customers who are currently on version 10.0.23 can pause updates for the released versions 10.0.24, 10.0.25, 10.0.26, 10.0.27, 10.0.28, 10.0.29 and 10.0.30. However, they must then update to version 10.0.31. In this scenario, after version 10.0.31 becomes available, version 10.0.23 is no longer supported.
 
 ## Additional resources
 
-### One Version service updates
-
-For more information about One Version service updates, see the following resources:
-
-- [One Version service updates FAQ](../fin-ops-core/fin-ops/get-started/one-version.md)
-- [Modernizing the way we update Dynamics 365](https://cloudblogs.microsoft.com/dynamics365/bdm/2018/07/06/modernizing-the-way-we-update-dynamics-365/)
-- [New flexible service updates for Finance and Operations apps](https://cloudblogs.microsoft.com/dynamics365/bdm/2019/06/03/new-flexible-service-updates-for-dynamics-365-for-finance-and-operations/)
-
 ### Component selection
 
-For more information about how to select the correct components to meet your needs, see the following topics:
+For more information about how to select the correct components to meet your needs, see the following articles:
 
 - [Select an in-store topology](./dev-itpro/retail-in-store-topology.md)
 - [Choose between Modern POS (MPOS) and Cloud POS (CPOS)](mpos-or-cpos.md)
 
 ### Servicing instructions
 
-For more information about how to service individual components that are described in this topic, see the following topics:
+For more information about how to service individual components that are described in this article, see the following articles:
 
 - [Configure and install Commerce Scale Unit](./dev-itpro/retail-store-scale-unit-configuration-installation.md)
 - [Apply updates and extensions to Retail Cloud Scale Unit](../fin-ops-core/dev-itpro/deployment/update-retail-channel.md)

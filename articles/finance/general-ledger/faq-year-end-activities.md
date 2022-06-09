@@ -2,7 +2,7 @@
 # required metadata
 
 title: Year-end activities FAQ 
-description: This topic lists questions that can arise when closing a year, and the answers that can assist with year-end closing activities.
+description: This article lists questions that can arise when closing a year, and the answers that can assist with year-end closing activities.
 author: moaamer
 ms.date: 12/21/2021
 ms.topic: index-page
@@ -14,12 +14,12 @@ ms.technology:
 ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global 
 # ms.search.industry: 
-ms.author: kweekley
+ms.author: moaamer
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.14
 
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.14
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists questions that can arise when closing a year, and the answers that can assist with year-end closing activities. The information in this topic primarily focuses on questions concerning year-end closing activities for General ledger and Accounts payable.
+This article lists questions that can arise when closing a year, and the answers that can assist with year-end closing activities. The information in this article primarily focuses on questions concerning year-end closing activities for General ledger and Accounts payable.
 
 ## General ledger year-end enhancements 
 Version 10.0.20 introduced a year-end close enhancement, which is enabled by default starting with version 10.0.25. If your organization uses a version earlier than 10.0.25, we recommend enabling this feature before beginning the year-end close process. Before you can use this feature, it must be turned on in your system. Admins can use the Feature management workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
@@ -80,7 +80,7 @@ The unnecessary dimension sets also impact the batch job **BudgetDimensionFocusI
 [![Financial dimension sets.](./media/faq-2020-yr-end-04.png)](./media/faq-2020-yr-end-04.png)
 
 ### Year-end close template configuration
-The year-end close template lets organizations select the financial dimension level to maintain when transferring profit and loss balances to retained earnings. The settings allow an organization to maintain the detailed financial dimensions (**Close all**) when moving the balances to retained earnings or choose to summarize the amounts to a single dimension value (**Close single**). This can be defined for each financial dimension. For more information on these settings, see the [Year-end close](year-end-close.md) topic.
+The year-end close template lets organizations select the financial dimension level to maintain when transferring profit and loss balances to retained earnings. The settings allow an organization to maintain the detailed financial dimensions (**Close all**) when moving the balances to retained earnings or choose to summarize the amounts to a single dimension value (**Close single**). This can be defined for each financial dimension. For more information on these settings, see the [Year-end close](year-end-close.md) article.
 
 We recommend that you evaluate your organization's requirements and if possible, close as many dimensions as possible using the **Close single** year-end option to improve performance. By closing to a single dimension value (which can also be a blank value), the system calculates less detail when determining the balances for retained earnings account entries.
 

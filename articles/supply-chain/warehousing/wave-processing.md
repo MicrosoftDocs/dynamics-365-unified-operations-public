@@ -2,7 +2,7 @@
 # required metadata
 
 title: Wave creation and processing
-description: This topic describes how to create, process, and release a wave to create picking work for a load, shipment, production order, or kanban order.
+description: This article describes how to create, process, and release a wave to create picking work for a load, shipment, production order, or kanban order.
 author: Mirzaab
 ms.date: 03/08/2021
 ms.topic: article
@@ -15,9 +15,9 @@ ms.search.form:  WHSWaveTemplateTable, WHSParameters, whswavetablecreatenew, WHS
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
+
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to create, process, and release a wave to create picking work for a load, shipment, production order, or kanban order. You can create waves for the following types of orders:
+This article describes how to create, process, and release a wave to create picking work for a load, shipment, production order, or kanban order. You can create waves for the following types of orders:
 
 - **Sales orders** – Use shipping waves to include lines from sales orders. When a sales order is released to the warehouse, the sales order lines can be included in the wave.
 - **Production orders** – Use production waves to include lines from the bill of materials (BOM) for a product.

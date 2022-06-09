@@ -3,7 +3,7 @@
 
 title: General ledger and Financial reporting overview
 description: Use General ledger to define and manage the legal entity’s financial records.  
-author: ShylaThompson
+author: kfend
 ms.date: 08/14/2020
 ms.topic: overview
 ms.prod: 
@@ -15,13 +15,13 @@ ms.search.form: GeneralJournalEntryWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: ["65431", "intro-internal"]
 ms.assetid: d2c604df-daae-42cd-82d9-c80e3dee4a60
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -67,7 +67,7 @@ your tax authorities require.
 Go to the [Microsoft Dynamics 365 release plans](/dynamics365/release-plans/) to see what new features have been planned. 
 
 #### Financial reporting
-Go to the [Financial reporting overview](../../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md) topic for information about financial reports.
+Go to the [Financial reporting overview](../../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md) article for information about financial reports.
 
 #### Blogs
 

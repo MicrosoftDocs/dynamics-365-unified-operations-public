@@ -2,8 +2,8 @@
 # required metadata
 
 title: Warehouse slotting
-description: This topic provides information about warehouse slotting. Warehouse slotting lets you consolidate demand by item and unit of measure from orders that have a status of Ordered, Reserved, or Released. It helps warehouse managers intelligently plan picking locations before they release orders to the warehouse and create picking work.
-author: mirzaab
+description: This article provides information about warehouse slotting. Warehouse slotting lets you consolidate demand by item and unit of measure from orders that have a status of Ordered, Reserved, or Released. It helps warehouse managers intelligently plan picking locations before they release orders to the warehouse and create picking work.
+author: Mirzaab
 ms.date: 11/13/2020
 ms.topic: article
 ms.prod: 
@@ -15,7 +15,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
@@ -159,7 +159,7 @@ For each sales order template that you create, follow these steps to add a line 
 
     - **Unit of Measure Tier:** _EaBoxPl_
 
-        This field defines the units of measure of demand that are valid for the line. (For more information, see the [Set up unit-of-measure tiers for slotting](#unit-tiers) section earlier in this topic.)
+        This field defines the units of measure of demand that are valid for the line. (For more information, see the [Set up unit-of-measure tiers for slotting](#unit-tiers) section earlier in this article.)
 
     - **Assign slot criteria:** _Consider qty_
 

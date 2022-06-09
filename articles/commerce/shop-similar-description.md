@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enable "shop similar description" recommendations
-description: This topic describes how to enable "shop similar description" product recommendations in Microsoft Dynamics 365 Commerce.
+description: This article describes how to enable "shop similar description" product recommendations in Microsoft Dynamics 365 Commerce.
 author: bsokolov
 ms.date: 01/13/2021
 ms.topic: article
@@ -16,7 +16,7 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-#ms.search.scope: 
+#
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.16
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to enable "shop similar description" product recommendations in Microsoft Dynamics 365 Commerce.
+This article describes how to enable "shop similar description" product recommendations in Microsoft Dynamics 365 Commerce.
 
 The "shop similar description" recommendations feature in Dynamics 365 Commerce uses artificial intelligence and machine learning (AI-ML) to deliver recommendations for products that have descriptions that are similar to what the customer is looking for. By making "shop similar description" recommendations available for all retail channels in Commerce, retailers can help customers easily find what they want.
 

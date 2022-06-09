@@ -1,6 +1,6 @@
 ---
 title: Getting started with POS extensions
-description: This topic explains how to create a Point of Sale (POS) extension development environment and get started with POS extensions.
+description: This article explains how to create a Point of Sale (POS) extension development environment and get started with POS extensions.
 author: mugunthanm
 ms.date: 04/13/2021
 ms.topic: article
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: AX 10.0.18
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to create a Point of Sale (POS) extension development environment and get started with POS extensions. It applies to version 10.0.18 and later of the Retail software development kit (SDK).
+This article explains how to create a Point of Sale (POS) extension development environment and get started with POS extensions. It applies to version 10.0.18 and later of the Retail software development kit (SDK).
 
 ## Independent POS extension model
 

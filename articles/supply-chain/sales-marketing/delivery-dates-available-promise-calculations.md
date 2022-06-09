@@ -2,7 +2,7 @@
 # required metadata
 
 title: Order promising
-description: This topic provides information about order promising. Order promising helps you reliably promise delivery dates to your customers and gives you flexibility so that you can meet those dates.
+description: This article provides information about order promising. Order promising helps you reliably promise delivery dates to your customers and gives you flexibility so that you can meet those dates.
 author: Henrikan
 ms.date: 04/17/2020
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about order promising. Order promising helps you reliably promise delivery dates to your customers and gives you flexibility so that you can meet those dates.
+This article provides information about order promising. Order promising helps you reliably promise delivery dates to your customers and gives you flexibility so that you can meet those dates.
 
 Order promising calculates the earliest ship and receipt dates, and is based on the delivery date control method and transport days. You can select among four delivery date control methods:
 

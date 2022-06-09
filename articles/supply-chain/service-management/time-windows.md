@@ -3,7 +3,7 @@
 
 title: Time windows 
 description: You can use time windows to optimize the scheduling of service order lines.
-author: kamaybac
+author: sorenva
 ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kamaybac
+ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -52,7 +52,7 @@ If you do not specify a time window for a service agreement line, the service
 order line that is derived from the service agreement must be on the exact date
 for which it was originally scheduled.
 
-## Related topics
+## Related articles
 
 [Create time windows](create-time-windows.md)
 

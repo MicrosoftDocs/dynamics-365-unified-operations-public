@@ -1,14 +1,14 @@
 ---
 title: Synchronize intercompany charges
-description: This topic explains synchronization of intercompany charges
-author: GalynaFedorova
+description: This article explains synchronization of intercompany charges
+author: Henrikan
 ms.date: 09/01/2021
 ms.topic: article
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: v-gfedorova
+ms.author: henrikan
 ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
 ---

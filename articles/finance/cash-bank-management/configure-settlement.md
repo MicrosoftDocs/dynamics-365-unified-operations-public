@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure settlement
-description: How and when transactions are settled can be complex subjects, so it's essential that you understand and correctly define the parameters to meet your business requirements. This topic describes the parameters that are used for settlement for both Accounts payable and Accounts receivable. 
+description: How and when transactions are settled can be complex subjects, so it's essential that you understand and correctly define the parameters to meet your business requirements. This article describes the parameters that are used for settlement for both Accounts payable and Accounts receivable. 
 author: kweekley
 ms.date: 05/16/2018
 ms.topic: article
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: CustOpenTrans, CustParameters, VendOpenTrans, VendParameters
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 14601
 ms.assetid: 6b61e08c-aa8b-40c0-b904-9bca4e8096e7
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-How and when transactions are settled can be complex subjects, so it's essential that you understand and correctly define the parameters to meet your business requirements. This topic describes the parameters that are used for settlement for both Accounts payable and Accounts receivable. 
+How and when transactions are settled can be complex subjects, so it's essential that you understand and correctly define the parameters to meet your business requirements. This article describes the parameters that are used for settlement for both Accounts payable and Accounts receivable. 
 
 The following parameters affect how settlements are processed in Microsoft Dynamics 365 Finance. Settlement is the process of settling an invoice against a payment or credit note. These parameters are located in the **Settlement** area of the **Accounts receivable parameters** and **Accounts payable parameters** pages.
 

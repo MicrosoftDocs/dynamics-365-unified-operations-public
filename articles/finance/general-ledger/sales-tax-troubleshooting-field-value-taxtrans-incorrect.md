@@ -2,7 +2,7 @@
 # required metadata
 
 title: Incorrect field value in TaxTrans
-description: This topic provides information about troubleshooting incorrect field values in TaxTrans.
+description: This article provides information about troubleshooting incorrect field values in TaxTrans.
 author: EricWangChen
 ms.date: 04/27/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.1
 
 [!include [banner](../includes/banner.md)]
 
-If a field value in **TaxTrans** is incorrect, use the information in this topic to try to resolve the issue.
+If a field value in **TaxTrans** is incorrect, use the information in this article to try to resolve the issue.
 
 ## Overview of values
 The following list shows how **TaxTrans**, **TaxUncommitted**, and **TmpTaxWorkTrans** are similar data sets, but in work differently.

@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Key invoice data into accounts payable using an approval journal
-description: This topic explains how to use the invoice register to create invoices and then use the approval journal to update the expense accounts. 
+description: This article explains how to use the invoice register to create invoices and then use the approval journal to update the expense accounts. 
 author: abruer
 ms.date: 02/11/2022
 ms.topic: business-process 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to use the invoice register to create invoices and then use the approval journal to update the expense accounts.
+This article explains how to use the invoice register to create invoices and then use the approval journal to update the expense accounts.
 
 ## Create and post and invoice
 1. In the navigation pane, go to **Modules > Accounts payable > Invoices > Invoice register**.

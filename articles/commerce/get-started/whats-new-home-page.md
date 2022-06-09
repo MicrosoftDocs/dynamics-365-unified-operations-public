@@ -2,9 +2,9 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Commerce 
-description: This topic points to topics that describe the new and changed features in each release of Dynamics 365 Commerce.
+description: This article points to articles that describe the new and changed features in each release of Dynamics 365 Commerce.
 author: josaw1
-ms.date: 03/04/2022
+ms.date: 04/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,11 +31,11 @@ ms.dyn365.ops.version: 10.0.9
 [!include [banner](../includes/banner.md)]
 
 ## Releases of Dynamics 365 Commerce
-Dynamics 365 Commerce released to public preview in October 2019. To see what's new or changed in each release of Commerce, see the following topics.
+Dynamics 365 Commerce released to public preview in October 2019. To see what's new or changed in each release of Commerce, see the following articles.
 
 | Version | Build number | Auto-update availability | Learn more |
 |---------|--------------|--------------|-------------|
-| 10.0.26 | 10.0.XXXX | May 2022 | [What's new or changed in Dynamics 365 Commerce 10.0.26](whats-new-commerce-10-0-26.md) |
+| 10.0.26 | 10.0.119 | May 2022 | [What's new or changed in Dynamics 365 Commerce 10.0.26](whats-new-commerce-10-0-26.md) |
 | 10.0.25 | 10.0.1149 | April 2022 | [What's new or changed in Dynamics 365 Commerce 10.0.25](whats-new-commerce-10-0-25.md) |
 | 10.0.24 |   10.0.1084     | February 2022 | [What's new or changed in Dynamics 365 Commerce version 10.0.24](whats-new-commerce-10-0-24.md) |
 | 10.0.23 |   10.0.1037     | January 2022 | [What's new or changed in Dynamics 365 Commerce version 10.0.23](whats-new-commerce-10-0-23.md) |
@@ -57,7 +57,7 @@ Dynamics 365 Commerce released to public preview in October 2019. To see what's 
 
 
 ## Releases before February 2020
-To see what's new or changed in releases before February 2020, see the following topics.
+To see what's new or changed in releases before February 2020, see the following articles.
 
 
  **Release**                                                           | **Version** | **Build number** | **Availability** | **Learn more**                                                                                                                                                                                                           |

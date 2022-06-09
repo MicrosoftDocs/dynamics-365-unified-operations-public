@@ -1,6 +1,6 @@
 ---
 title: Supported composite data types for Electronic reporting formulas
-description: This topic provides information about the composite data types that are supported in Electronic reporting (ER) formulas.
+description: This article provides information about the composite data types that are supported in Electronic reporting (ER) formulas.
 author: NickSelin
 ms.date: 06/02/2021
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the composite data types that are supported in [Electronic reporting (ER)](general-electronic-reporting.md) expressions. The composite data types are [class](#class), [container](#container), [record](#record), [record list](#record-list), and [object](#object).
+This article provides information about the composite data types that are supported in [Electronic reporting (ER)](general-electronic-reporting.md) expressions. The composite data types are [class](#class), [container](#container), [record](#record), [record list](#record-list), and [object](#object).
 
 ## <a name="class"></a>Class
 
@@ -76,7 +76,7 @@ A *record list* is a list of items of the *record* type. Usually, a *record list
 
 By default, records of a *record list* are accessed sequentially. To access a specific record, you can use the [INDEX](er-functions-list-index.md) function and specify the *integer* index.
 
-The default value of a *record list* is **empty**. You can use the [ISEMPTY](/er-functions-list-isempty.md) function to evaluate whether a *record list* is empty.
+The default value of a *record list* is **empty**. You can use the [ISEMPTY](er-functions-list-isempty.md) function to evaluate whether a *record list* is empty.
 
 > [!NOTE]
 > If a *record list* is empty, any attempt to get a field value for a *record* in it causes an exception to be thrown at runtime. To learn how you can help prevent runtime exceptions of this type, see [Consideration of empty list cases](er-components-inspections.md#i9).

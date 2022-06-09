@@ -2,8 +2,8 @@
 # Delivery information setup
 
 title: Delivery information setup
-description: This topic describes how to set up delivery information for the Landed cost module.
-author: sherry-zheng
+description: This article describes how to set up delivery information for the Landed cost module.
+author: Weijiesa
 ms.date: 12/09/2020
 ms.topic: article
 ms.prod: 
@@ -15,12 +15,12 @@ ms.search.form: ITMPortTable, ITMLeadTimeTable, ITMLegTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
+
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: chuzheng
+ms.author: weijiesa
 ms.search.validFrom: 2020-12-09
 ms.dyn365.ops.version: 10.0.17
 ---
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how to set up delivery information for the **Landed cost** module.
+This article describes how to set up delivery information for the **Landed cost** module.
 
 ## Shipping ports
 

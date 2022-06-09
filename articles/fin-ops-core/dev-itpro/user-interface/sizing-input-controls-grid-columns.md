@@ -2,7 +2,7 @@
 # required metadata
 
 title: Input controls and grid column sizes
-description: This topic describes how to create a consistent look and feel for forms by controlling the size of controls and grids.
+description: This article describes how to create a consistent look and feel for forms by controlling the size of controls and grids.
 author: jasongre 
 ms.date: 12/01/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to create a consistent look and feel for forms by controlling the size of controls and grids.
+This article describes how to create a consistent look and feel for forms by controlling the size of controls and grids.
 
 ## Overview
 

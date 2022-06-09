@@ -2,7 +2,7 @@
 # required metadata
 
 title: List of ER functions in the list category
-description: This topic provides information about the list functions that are supported in Electronic reporting (ER).
+description: This article provides information about the list functions that are supported in Electronic reporting (ER).
 author: NickSelin
 ms.date: 04/01/2020
 ms.prod: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-Electronic reporting (ER) list functions can be used to extract information from, and perform operations on, data sources of the *Record list* and *Container (record)* data types. This topic provides a summary of these functions.
+Electronic reporting (ER) list functions can be used to extract information from, and perform operations on, data sources of the *Record list* and *Container (record)* data types. This article provides a summary of these functions.
 
 ## List of supported functions
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: 175 percent reducing balance depreciation
-description: This topic presents an overview of the 175 percent reducing balance method of depreciation.
+description: This article presents an overview of the 175 percent reducing balance method of depreciation.
 author: moaamer
 ms.date: 10/30/2017
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form: AssetDepreciationProfile
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 13911
 ms.assetid: cc5d001f-bcfe-4602-9ec1-9e265e9fd188
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic presents an overview of the 175 percent reducing balance method of depreciation.
+This article presents an overview of the 175 percent reducing balance method of depreciation.
 
 When you set up a fixed asset depreciation profile and select **175% reducing balance** in the **Method** field on the **Depreciation profiles** page, fixed assets that are assigned the depreciation profile are depreciated by the same percentage in each depreciation period. 
 
@@ -46,7 +46,7 @@ Your selection determines the options that are available in the **Period frequen
 
 You can keep the default value in the **Depreciation year** field, **Calendar**. 
 
-The **Calendar** option updates the depreciation base on January 1 of each year. Typically, the depreciation base is the net book value minus the scrap value. In the examples later in this topic, the depreciation base is the numerator in the first expression in the calculations column. 
+The **Calendar** option updates the depreciation base on January 1 of each year. Typically, the depreciation base is the net book value minus the scrap value. In the examples later in this article, the depreciation base is the numerator in the first expression in the calculations column. 
 
 If you select **Calendar** as the depreciation year, the following options are available in the **Period frequency** field:
 

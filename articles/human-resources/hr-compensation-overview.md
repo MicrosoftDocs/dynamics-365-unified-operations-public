@@ -2,7 +2,7 @@
 # required metadata
 
 title: Compensation plans
-description: This topic describes how to use compensation management to manage and process compensation plans.
+description: This article describes how to use compensation management to manage and process compensation plans.
 author: twheeloc
 ms.date: 08/25/2021
 ms.topic: overview
@@ -15,7 +15,7 @@ ms.search.form: HcmCompensationLevel, HRCCompGrid, HRMCompFixedAction, HRMCompFi
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8

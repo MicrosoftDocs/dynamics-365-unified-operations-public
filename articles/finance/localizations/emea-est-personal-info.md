@@ -2,7 +2,7 @@
 # required metadata
 
 title: Personal information requests for Estonia
-description: This topic provides information about personal information requests for Estonia.
+description: This article provides information about personal information requests for Estonia.
 author: ShylaThompson
 ms.date: 03/26/2018
 ms.topic: article

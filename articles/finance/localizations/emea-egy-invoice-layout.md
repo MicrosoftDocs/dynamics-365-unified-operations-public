@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure invoice layout for Egypt
-description: This topic explains how to configure the invoice layout for Egypt.
+description: This article explains how to configure the invoice layout for Egypt.
 author: ilkond
 ms.date: 02/01/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
+# 
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Egypt
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.17
 [!include [banner](../includes/banner.md)]
 
 
-This topic explains how to configure printable invoice layouts to ensure compliance with Egyptian legal requirements. Egypt-specific invoice layouts are implemented by using the concept of *configurable business documents*. For more information about configurable business documents, see [Business document management overview](../../fin-ops-core/dev-itpro/analytics/er-business-document-management.md). 
+This article explains how to configure printable invoice layouts to ensure compliance with Egyptian legal requirements. Egypt-specific invoice layouts are implemented by using the concept of *configurable business documents*. For more information about configurable business documents, see [Business document management overview](../../fin-ops-core/dev-itpro/analytics/er-business-document-management.md). 
 
 ## Prerequisites
 
@@ -111,7 +111,7 @@ In the **Electronic reporting** workspace, select the **Project invoice model ma
 
 ## Generate invoices
 
-After you complete all the procedures in this topic, you can print invoices that are based on sales orders, free text invoices, and project invoices, in accordance with Egyptian legal requirements.
+After you complete all the procedures in this article, you can print invoices that are based on sales orders, free text invoices, and project invoices, in accordance with Egyptian legal requirements.
 
 
 

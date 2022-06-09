@@ -2,8 +2,8 @@
 # required metadata
 
 title: Manage voyages
-description: This topic describes how to work with voyages. A voyage typically represents a vessel. However, depending on your practices and procedures, it can represent a vendor, a purchase order, or some other item that makes sense for your organization.
-author: sherry-zheng
+description: This article describes how to work with voyages. A voyage typically represents a vessel. However, depending on your practices and procedures, it can represent a vendor, a purchase order, or some other item that makes sense for your organization.
+author: Weijiesa
 ms.date: 12/14/2020
 ms.topic: article
 ms.prod: 
@@ -15,12 +15,12 @@ ms.search.form: ITMTableListPage, ITMTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
+
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: chuzheng
+ms.author: weijiesa
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
 ---
@@ -101,7 +101,7 @@ To open the **Lines** view, open a voyage, and then select the **Lines** tab in 
 
 ### Information on the Voyage header FastTab
 
-The **Voyage header** FastTab in the **Lines** view of a voyage contains basic information that describes the voyage. Many of the fields that appear on this FastTab also appear in the **Header** view, as described later in this topic.
+The **Voyage header** FastTab in the **Lines** view of a voyage contains basic information that describes the voyage. Many of the fields that appear on this FastTab also appear in the **Header** view, as described later in this article.
 
 ### Information on the Voyage lines FastTab
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Dynamics 365 Translation Service Visual Studio extension (Public Preview)
-description: This topic explains how to integrate the Microsoft Dynamics 365 Translation Service (DTS) extension for Visual Studio into your Visual Studio workflow.
+description: This article explains how to integrate the Microsoft Dynamics 365 Translation Service (DTS) extension for Visual Studio into your Visual Studio workflow.
 author: abmotgi
 ms.date: 12/13/2021
 ms.topic: article

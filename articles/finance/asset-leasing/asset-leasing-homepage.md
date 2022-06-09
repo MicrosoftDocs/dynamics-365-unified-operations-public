@@ -2,7 +2,7 @@
 # required metadata
 
 title: Asset leasing home page
-description: This topic provides an overview of Asset leasing documentation, and links to specific topics.
+description: This article provides an overview of Asset leasing documentation, and links to specific topics.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form: AssetLeaseLeasingWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 
 # ms.tgt_pltfrm: 
 ms.custom: ["4464", "intro-internal"]
@@ -31,16 +31,16 @@ ms.dyn365.ops.version: 10.0.14
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists the help topics that are available for Asset leasing, and includes links to specific topics. 
+This article lists the help topics that are available for Asset leasing, and includes links to specific topics. 
 
 Asset leasing is an advanced capability for managing, tracking, and automating financial transactions for leased assets in Microsoft Dynamics 365 Finance. Asset leasing complies with International accounting standards (IFRS 16) and US GAAP standards (ASC 842). Asset leasing captures and processes information about the leases and helps generate journal entries throughout the lifecycle of the lease, from initial recognition, monthly journal entries, to impairment and termination of the lease.
 
 Before you can use this feature, it must be turned on in your system. Admins can use the **Feature management** workspace to check the status of the feature and turn it on if it's required. In the **Feature management** workspace, find and select the feature that's named **Asset leasing**, and then click the **Enable now** button.
 
 ## Asset leasing topics
-The following topic is available to help configure and use Asset leasing. 
+The following article is available to help configure and use Asset leasing. 
 
- - [Asset leasing get started](asset-leasing-quick-start.md) - This topic describes the general capabilities of Asset leasing, and lists and defines the terms used in the software and in the documentation.
+ - [Asset leasing get started](asset-leasing-quick-start.md) - This article describes the general capabilities of Asset leasing, and lists and defines the terms used in the software and in the documentation.
  
  ### Set up Asset leasing
  This group of topics can help you configure Asset leasing in a manner that's optimal for your organizations' business situation.  
@@ -80,7 +80,7 @@ This group of topics describes the process for adding leases, creating payment i
  - [Manage lease through the Lease import framework](manage-leases-thru-imprt-framewrk.md)
  
 ### Asset leasing reporting
-This topic describes the reports that are available for asset leases. 
+This article describes the reports that are available for asset leases. 
 
  - [Asset leasing reports](asset-leasing-rprts.md)
  

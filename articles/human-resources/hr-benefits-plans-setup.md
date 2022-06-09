@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create a benefits plan
-description: This topic shows how to set up benefit plans in Dynamics 365 Human Resources.
+description: This article shows how to set up benefit plans in Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 08/23/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form: BenefitPlanListPage, BenefitWorkspace, HcmBenefitSummaryPart
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This topic shows how to set up benefit plans in Dynamics 365 Human Resources.
+This article shows how to set up benefit plans in Dynamics 365 Human Resources.
 
 1. In the **Benefits management** workspace, under **Plans**, select **Benefit plans**.
 

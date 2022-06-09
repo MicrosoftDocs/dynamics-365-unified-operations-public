@@ -2,7 +2,7 @@
 # required metadata
 
 title: Dispatch work order
-description: This topic explains how to dispatch a work order in Asset Management.
+description: This article explains how to dispatch a work order in Asset Management.
 author: johanhoffmann
 ms.date: 08/19/2019
 ms.topic: article

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage leave requests in Teams
-description: This topic shows how to request time off in the Dynamics 365 Human Resources app in Microsoft Teams.
+description: This article shows how to request time off in the Dynamics 365 Human Resources app in Microsoft Teams.
 author: twheeloc
 ms.date: 12/15/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form: LeaveAbsenceWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 

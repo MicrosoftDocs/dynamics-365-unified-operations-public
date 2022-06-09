@@ -1,19 +1,19 @@
 ---
 title: Learning catalog for Dynamics 365 Supply Chain Management administrators
 description: Find all the training options for Supply Chain Management administrators.
-author: margoc
+author: kamaybac
 ms.topic: article
 ms.date: 07/23/2020
-ms.author: margoc
+ms.author: kamaybac
 
 ms.prod:
 ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application user
-ms.reviewer: margoc
+ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.1
@@ -42,7 +42,7 @@ The following catalog is organized from core knowledge to specific domains, and 
 | [Migrate data and go live with Finance and Operations apps](/learn/paths/migrate-data-go-live-finance-operations/) | As a functional consultant, you must understand how to prepare your customer's data for migration, work with data management, and perform user acceptance testing to go live with Finance and Operations apps. | Free, self-paced online learning path | 4 hours |
 | [Work with analytics and reporting in Finance and Operation](/learn/modules/work-with-analytics-reporting-in-dynamics-365-finance-ops/) | Business leaders can make important decisions in their company if they have accurate insight into the underlying financial and operational data. Without data visibility, business leaders are challenged with a nearly impossible task. By using analytics and reporting in Finance and Operations apps, you can empower every business user, depending on their security rights, to get the insights they need to make those important decisions. | Free, self-paced online learning path | 1.5 hours |
 | [Manage an implementation project for Finance and Operations](/learn/paths/implement-finance-operations/) | Learn the most important elements and the best practices to manage a successful Finance and Operations implementation project. From the first step where you are planning and designing your project methodology, the use of FastTrack services, the development strategy, data management and more, to the best ways for maintaining and monitoring your operations after Go-live. | Free, self-paced online learning path | 11.5 hours |
-| [System administration home page](/dynamics365/unified-operations/dev-itpro/sysadmin/system-administration-home-page) | This topic points to content for system administrators of Microsoft Dynamics 365 for Finance and Operations. This content will help you configure the system so that it works smoothly and effectively for your organization. | Documentation | |
+| [System administration home page](/dynamics365/unified-operations/dev-itpro/sysadmin/system-administration-home-page) | This article points to content for system administrators of Microsoft Dynamics 365 for Finance and Operations. This content will help you configure the system so that it works smoothly and effectively for your organization. | Documentation | |
 | [Finance and Operations: Onboarding to Dynamics 365 (DYN542PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-onboarding-to-dynamics-365-1-10-19) | FastTrack offers an Onboarding service to every Dynamics 365 for Finance and Operations project. In this TechTalk, we will explain the Onboarding process, walk through the content of the Onboarding session with you, and unveil how we are making Onboarding more efficient and convenient in the near future. This session is especially relevant to everybody who works with customers in the early stages of a project, between closing the license deal and initiation of the implementation project. | Free recording of a web conference | 62 minutes |
 | [On-Premises (Local Business Data) Deployment (DYN382PAL2)](https://community.dynamics.com/365/b/techtalks/posts/on-premises-local-business-data-deployment-october-19-2017) | Please join this tech talk for an overview of the on-premises deployment option for Dynamics 365 for Finance and Operations, Enterprise Edition. In this session, we will look at the solution architecture of an on-premises deployment, ALM aspects, system requirements, and how to provision the Life Cycle Services project. | Free recording of a web conference | 48 minutes |
 | [Copy Into Legal Entity (DYN383PAL)](https://community.dynamics.com/365/b/techtalks/posts/copy-into-legal-entity-october-24-2017) | In this session, we will discuss a new feature in the data management framework, Copy into legal entity. We will first briefly review the new features added to the data management framework in platform 8 for the workspace, templates, and data projects and then discuss the additional functionality added for Copy into legal entity. | Free recording of a web conference | 54 minutes |

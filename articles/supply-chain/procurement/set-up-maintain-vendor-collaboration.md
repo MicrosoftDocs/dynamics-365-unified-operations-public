@@ -2,8 +2,8 @@
 # required metadata
 
 title: Set up and maintain vendor collaboration
-description: This topic explains how to set up vendor collaboration in Dynamics 365 Supply Chain Management. It also explains how to provision new vendor collaboration users and manage the security roles for those users.
-author: Henrikan
+description: This article explains how to set up vendor collaboration in Dynamics 365 Supply Chain Management. It also explains how to provision new vendor collaboration users and manage the security roles for those users.
+author: GalynaFedorova
 ms.date: 12/03/2018
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 220774
 ms.assetid: 69d05e8b-7dc2-48ea-bc24-bea9ac963579
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Version 1611
 
 The vendor collaboration interface exposes a limited set of information about purchase orders, invoices, and consignment stock to external vendor users. From this interface, a vendor can also reply to requests for quotation (RFQs), and view and edit basic company information.
 
-This topic explains how to set up vendor collaboration in Dynamics 365 Supply Chain Management. It also explains how to set up a workflow to provision new vendor collaboration users, and how to manage the security roles for those users.
+This article explains how to set up vendor collaboration in Dynamics 365 Supply Chain Management. It also explains how to set up a workflow to provision new vendor collaboration users, and how to manage the security roles for those users.
 
 > [!NOTE]
 > The information about the setup of security roles for vendor collaboration applies only to the current version of Finance and Operations. In Microsoft Dynamics AX 7.0 (February 2016) and Microsoft Dynamics AX application version 7.0.1 (May 2016), you collaborate with vendors by using the **Vendor portal** module. For information about user permissions for the Vendor portal in Microsoft Dynamics AX, see [Vendor portal user security](configure-security-vendor-portal-users.md).
@@ -82,7 +82,7 @@ The **Vendor (external) role** can be used for external vendors that will work w
 
 ## Set up security roles that are used when prospective vendors are onboarded
 
-To onboard vendors that are initiated via a prospective vendor registration request, you must set up an external security role. This role will be assigned to new users during the provisioning process that is controlled by the workflow of the **User request workflow (platform)** type. For more information, see the [Set up workflows to process vendor collaboration user requests](#set-up-workflows-to-process-vendor-collaboration-user-requests) section later in this topic.
+To onboard vendors that are initiated via a prospective vendor registration request, you must set up an external security role. This role will be assigned to new users during the provisioning process that is controlled by the workflow of the **User request workflow (platform)** type. For more information, see the [Set up workflows to process vendor collaboration user requests](#set-up-workflows-to-process-vendor-collaboration-user-requests) section later in this article.
 
 For information about how to onboard prospective vendors, see [Onboard vendors](vendor-onboarding.md).
 
