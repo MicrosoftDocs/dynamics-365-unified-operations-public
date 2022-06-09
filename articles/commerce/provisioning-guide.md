@@ -50,6 +50,7 @@ The following prerequisites must be in place before you can provision your Comme
 - You have your Azure Active Directory (Azure AD) tenant ID available.
 - You have created an Azure AD security group that can be used as an e-Commerce system admin group, and you have its ID available.
 - You have created an Azure AD security group that can be used as a Ratings and Reviews moderator group, and you have its ID available. (This security group can be the same as the e-Commerce system admin group.)
+- You have deployed a headquarters instance within LCS. See the [Deploy a new environment](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/deployenvironment-newinfrastructure) topic for more details.
 
 Note that this list isn't exhaustive. If you experience any issues, reach out to your Microsoft partner contact for assistance.
 
@@ -57,18 +58,13 @@ Note that this list isn't exhaustive. If you experience any issues, reach out to
 
 These procedures explain how to provision a Commerce environment. After you successfully complete them, the Commerce environment will be ready for configuration. All the activities that are described here occur in the LCS portal.
 
-### Deploy headquarters
-
-See the [Deploy a new environment](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/deployenvironment-newinfrastructure) topic to deploy headquarters within LCS.
-
-
 ### Initialize the Commerce Scale Unit (cloud)
 
 To initialize the CSU, follow these steps.
 
-1. In the **Cloud-hosted environments** view, select your environment in the list.
-1. In the environment view on the right, select **Full details**. The environment details view appears.
-1. Under **Environment features**, select **Manage**.
+1. In LCS, select your environment from the list.
+1. In the **ENVIRONMENTS** view on the right, select **Full details**. The environment details view appears.
+1. Under the **Manage environment** section under **ENVIRONMENT FEAUTRES**, select **Manage**.
 1. On the **Commerce** tab, select **Initialize**. The CSU initialization parameters view appears.
 1. In the **Region** field, select the region that is the same or close to the region that you deployed the environment to.
 1. Leave the **Version** field as it is.
