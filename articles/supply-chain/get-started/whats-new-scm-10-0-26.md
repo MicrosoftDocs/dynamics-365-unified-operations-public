@@ -57,7 +57,6 @@ We have recently added or significantly updated the following help articles. The
 | Feature area | New or updated articles |
 |---|---|
 | Cost management | Updated examples and diagrams were added to each of the following articles:<ul><li>[FIFO with physical value and marking](../cost-management/fifo-physical-value-marking.md)</li><li>[LIFO with physical value and marking](../cost-management/lifo-physical-value-marking.md)</li><li>[LIFO Date with physical value and marking](../cost-management/lifo-date-physical-value-marking.md)</li><li>[Running average cost price](../cost-management/running-average-cost-price.md)</li><li>[Weighted average with physical value and marking](../cost-management/weighted-average-physical-value-marking.md)</li></ul> |
-| Procurement and sourcing | [Purchase order line data discrepancies](../troubleshooting/procurement/purchase-order-line-data-issues.md) |
 
 ## Additional resources
 
