@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 262034
 ms.assetid: 9db38b3f-26b3-436e-8449-7ff243568a18
@@ -35,14 +35,14 @@ Mobile capabilities let a business user design mobile experiences. For advanced 
 
 ## Prerequisites
 
-| Prerequisite                                                                                            | Description                                                                                                                                                          |
-|---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Prerequisite                                                                                            | Description                       |
+|---------------------------------------------------------------------------------------------------------|--------------------------------------------|
 | Mobile handbook pre-read                                                                                |[Mobile platform](../../fin-ops-core/dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)                                                                                                  |
 | Dynamics 365 Finance                                                                              | An environment that has version 1611 and Platform update 3 (November 2016)                   |
 | Install hotfix KB 3204341.                                                                              | Task recorder can erroneously record two Close commands for dropdown dialogs; this is included in Platform update 3 (November 2016 update). |
 | Install hotfix KB 3207800.                                                                              | This hotfix enables attachments to be viewed on the mobile client; this is included in Platform update 3 (November 2016 update).           |
 | Install hotfix KB 3208224.                                                                              | Application code for the mobile vendor invoice approval application; this is included in version 7.0.1 (May 2016).                          |
-| An Android or iOS or a Windows device that has the mobile app installed. | Search for the app in the appropriate app store.                                                                                                                     |
+| An Android or iOS or a Windows device that has the mobile app installed. | Search for the app in the appropriate app store.                            |
 
 ## Introduction
 Mobile approvals for vendor invoices require the three hotfixes that are mentioned in the “Prerequisites” section. These hotfixes don’t provide a workspace for the invoice approvals. To learn what a workspace is in the context of mobile, read the mobile handbook that is mentioned in the “Prerequisites” section. The invoice approvals workspace must be designed. 
