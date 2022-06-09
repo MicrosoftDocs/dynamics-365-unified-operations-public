@@ -45,7 +45,7 @@ For information about how to configure your Commerce evaluation environment afte
 The following prerequisites must be in place before you can provision your Commerce environment:
 
 - You have access to the Microsoft Dynamics Lifecycle Services (LCS) portal.
-- You are an existing Microsoft Dynamics 365 partner or customer and have a project already created and available to use in LCS.  
+- You are an existing Microsoft Dynamics 365 partner or customer and have an implementation project already created and available to use in LCS.  
 - You have administrator access to your Microsoft Azure subscription, or you're in contact with a subscription administrator who can assist you if required.
 - You have your Azure Active Directory (Azure AD) tenant ID available.
 - You have created an Azure AD security group that can be used as an e-Commerce system admin group, and you have its ID available.
@@ -55,45 +55,18 @@ Note that this list isn't exhaustive. If you experience any issues, reach out to
 
 ## Provision your Commerce environment
 
-These procedures explain how to provision a Commerce environment. After you successfully complete them, the Commerce evaluation environment will be ready for configuration. All the activities that are described here occur in the LCS portal.
-
-### Create a new project
-
-To create a new project in LCS, follow these steps.
-
-1. On the LCS home page, select the plus sign (**+**) to create a project.
-1. In the right pane, follow one of these steps:
-
-    - If you're a partner, select **Migrate, create solutions, and learn**.
-    - If you're a customer, select **Prospective presales**.
-
-1. Enter a name, description, and industry.
-1. In the **Product name** field, select **Dynamics 365 Commerce**.
-1. In the **Product version** field, select **Dynamics 365 Commerce**.
-1. In the **Methodology** field, select **Dynamics Retail implementation methodology**.
-1. Optional: You can import roles and users from an existing project.
-1. Select **Create**. The project view appears.
-
-### Add the Azure Connector
-
-To add the Azure Connector to your LCS project, follow the steps in [Complete the Azure Resource Manager (ARM) onboarding process](../fin-ops-core/dev-itpro/deployment/arm-onboarding.md).
+These procedures explain how to provision a Commerce environment. After you successfully complete them, the Commerce environment will be ready for configuration. All the activities that are described here occur in the LCS portal.
 
 ### Deploy the environment
 
-To deploy the environment, follow these steps.
+To deploy the environment, follow the general steps below or for more information see the [Deploy a new environment](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/deployenvironment-newinfrastructure) topic.
 
-> [!NOTE]
-> You might not have to complete steps 6, 7, and/or 8, because pages that have a single option are skipped. When you're in the **Environment parameters** view, confirm that the text **Dynamics 365 Commerce - Demo (10.0.*x* with Platform update *xx*)** appears directly above the **Environment name** field. For details, see the illustration that appears after step 8.
-
-1. On the top menu, select **Cloud-hosted environments**.
-1. Select **Add** to add an environment.
-1. In the **Application version** field, select the most current version. If you have a specific need to select an application version other than the most current version, do not select a version prior to **10.0.14**.
+From within the selected LCS project add a new environment envrionments:
+1. Select **+** to add a new environment topology.
+1. In the **Application version** field, select the most current version.
 1. In the **Platform version** field, use the platform version that is automatically chosen for the application version you selected. 
-
-    ![Selecting application and platform versions.](./media/project1.png)
-
 1. Select **Next**.
-1. Select **Demo** as the environment topology.
+1. Select **DEMO** as the environment topology.
 
     ![Selecting the environment topology 1.](./media/project2.png)
 
