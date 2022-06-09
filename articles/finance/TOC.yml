@@ -2462,6 +2462,8 @@
           href: localizations/emea-hun-intrastat.md
         - name: Deferred sales tax calculations
           href: localizations/emea-hun-deferred-vat.md
+        - name: EU sales list
+          href: localizations/emea-hun-eu-sales-list.md
       - name: Iceland
         items:
         - name: Iceland overview
