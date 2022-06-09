@@ -62,13 +62,13 @@ To initialize the CSU, follow these steps.
 
 1. In LCS, select your environment from the list.
 1. In the **ENVIRONMENTS** view on the right, select **Full details**. The environment details view appears.
-1. Under the **Manage environment** section under **ENVIRONMENT FEAUTRES**, select **Manage**.
-1. On the **Commerce** tab, select **Initialize**. The CSU initialization parameters view appears.
-1. In the **Region** field, select the region that is the same or close to the region that you deployed the environment to.
-1. Leave the **Version** field as it is.
+1. Under the **Manage environment** section under **ENVIRONMENT FEATURES**, select **Manage**.
+1. On the **Commerce scale units** tab, select **Initialize**. The **Add scale unit** view appears.
+1. In the **REGION** field, select the region that is the same or close to the region that you deployed the environment to.
+1. Select the latest version available in the **Version** drop down field.
 1. Select **Initialize**.
-1. On the deployment confirmation page, verify that the details are correct, and then select **Yes**. The **Commerce management** view displays again, where the **Commerce** tab is selected. Your CSU has been queued for provisioning.
-1. Before you continue, make sure that the status of your CSU is **Success**. Initialization takes approximately two to five hours.
+1. You will get a warning dialog to confirm the Commerce scale unit initialization, select **Yes**. The CSU has now been queued for provisioning.
+1. Before you continue, make sure that the status of your CSU is **SUCCESS**. Initialization takes approximately two to five hours.
 
 If you can't find the **Manage** link in the environment details view, reach out to your Microsoft contact for assistance.
 
