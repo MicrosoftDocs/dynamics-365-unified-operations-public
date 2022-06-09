@@ -45,12 +45,11 @@ For information about how to configure your Commerce evaluation environment afte
 The following prerequisites must be in place before you can provision your Commerce environment:
 
 - You have access to the Microsoft Dynamics Lifecycle Services (LCS) portal.
-- You are an existing Microsoft Dynamics 365 partner or customer and are able to create a Dynamics 365 Commerce project.
+- You are an existing Microsoft Dynamics 365 partner or customer and have a project already created and available to use in LCS.  
 - You have administrator access to your Microsoft Azure subscription, or you're in contact with a subscription administrator who can assist you if required.
 - You have your Azure Active Directory (Azure AD) tenant ID available.
 - You have created an Azure AD security group that can be used as an e-Commerce system admin group, and you have its ID available.
 - You have created an Azure AD security group that can be used as a Ratings and Reviews moderator group, and you have its ID available. (This security group can be the same as the e-Commerce system admin group.)
-- You have a project already created and available to use in LCS.  
 
 Note that this list isn't exhaustive. If you experience any issues, reach out to your Microsoft partner contact for assistance.
 
