@@ -35,8 +35,8 @@ In Platform update 31, you can turn on the **Batch priority-based scheduling** f
 
 > [!IMPORTANT]
 > - This feature is available with version 10.0.25.
-> - This feature is enabled by default for all new intances with version 10.0.28.
-> - This feature will be enabled by default for all existing intances with version 10.0.29.
+> - This feature is enabled by default for all new instances with version 10.0.28.
+> - This feature will be enabled by default for all existing instances with version 10.0.29.
 
 A scheduling priority is defined for batch groups, but it can be overridden for specific batch jobs. The scheduling priority classifications are used to declare relative priorities, and to determine the processing order of jobs and business processes. The available values for the scheduling priority are **Low**, **Normal**, **High**, **Critical**, and **Reserved capacity**. 
 
