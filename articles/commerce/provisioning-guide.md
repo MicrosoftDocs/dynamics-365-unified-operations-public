@@ -57,31 +57,10 @@ Note that this list isn't exhaustive. If you experience any issues, reach out to
 
 These procedures explain how to provision a Commerce environment. After you successfully complete them, the Commerce environment will be ready for configuration. All the activities that are described here occur in the LCS portal.
 
-### Deploy the environment
+### Deploy headquarters
 
-To deploy the environment, follow the general steps below or for more information see the [Deploy a new environment](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/deployenvironment-newinfrastructure) topic.
+See the [Deploy a new environment](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/deployenvironment-newinfrastructure) topic to deploy headquarters within LCS.
 
-From within the selected LCS project add a new environment envrionments:
-1. Select **+** to add a new environment topology.
-1. In the **Application version** field, select the most current version.
-1. In the **Platform version** field, use the platform version that is automatically chosen for the application version you selected. 
-1. Select **Next**.
-1. Select **DEMO** as the environment topology.
-
-    ![Selecting the environment topology 1.](./media/project2.png)
-
-1. On the **Deploy environment** page, enter an environment name. Leave the advanced settings as they are.
-
-    ![Deploy environment page.](./media/project4.png)
-
-1. Adjust the VM size as required. (We recommend VM stock keeping unit \[SKU\] **D13 v2**.)
-1. Review the pricing and licensing terms, and then select the check box to indicate that you agree to them.
-1. Select **Next**.
-1. On the deployment confirmation page, verify that the details are correct, and then select **Deploy**. You're returned to the **Cloud-hosted environments** view, and your environment should appear in the list.
-
-    Your requested environment will appear as queued and then deploying. The environment workflows will take some time to be completed. Therefore, check back after approximately six to nine hours.
-
-1. Before you continue, make sure that the status of your environment is **Deployed**.
 
 ### Initialize the Commerce Scale Unit (cloud)
 
