@@ -96,7 +96,7 @@ To initialize e-Commerce, follow these steps.
 
 ## Next steps
 
-To continue the process of provisioning and configuring your Commerce environment, see [Configure a Commerce evaluation environment](cpe-post-provisioning.md).
+To continue the process of provisioning and configuring your Commerce environment, see [Configure a Commerce environment](cpe-post-provisioning.md).
 
 ## Additional resources
 
