@@ -26,40 +26,37 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 
 ---
 
-# Provision a Dynamics 365 Commerce evaluation environment
+# Provision a Dynamics 365 Commerce demo or sandbox environment
 
 [!include [banner](includes/banner.md)]
 
-This article explains how to provision a Microsoft Dynamics 365 Commerce evaluation environment.
+This article explains how to provision a Microsoft Dynamics 365 Commerce environment for demo or sandbox usage with built in demo data.  The process for setting up a production environment is similar however more involved since many of the pre-requisites are already provided in demo data.
 
 Before you begin, we recommend that you take a quick scan through this article to get an idea of what the process requires.
 
-> [!NOTE]
-> Commerce evaluation environments aren't generally available, and are granted to partners and customers on a per-request basis. For more information, reach out to your Microsoft partner contact.
+To successfully provision a Commerce environment, you must create a project that has a specific product name and type. The environment and Commerce Scale Unit (CSU) also have some specific parameters that you must use when you expect to provision e-Commerce later. The instructions in this article describe all the steps that are required to complete provisioning and the parameters that you must use.
 
-To successfully provision a Commerce evaluation environment, you must create a project that has a specific product name and type. The environment and Commerce Scale Unit (CSU) also have some specific parameters that you must use when you expect to provision e-Commerce later. The instructions in this article describe all the steps that are required to complete provisioning and the parameters that you must use.
+After you successfully provision your Commerce environment, you must complete a few post-provisioning steps to prepare it for use. Some steps are optional, depending on the aspects of the system that you want to use. You can always complete the optional steps later.
 
-After you successfully provision your Commerce evaluation environment, you must complete a few post-provisioning steps to prepare it for use. Some steps are optional, depending on the aspects of the system that you want to evaluate. You can always complete the optional steps later.
-
-For information about how to configure your Commerce evaluation environment after you provision it, see [Configure a Commerce evaluation environment](cpe-post-provisioning.md). For information about how to configure optional features for your Commerce evaluation environment, see [Configure optional features for a Commerce evaluation environment](cpe-optional-features.md).
+For information about how to configure your Commerce evaluation environment after you provision it, see [Configure a Commerce environment](cpe-post-provisioning.md). For information about how to configure optional features for your Commerce environment, see [Configure optional features for a Commerce environment](cpe-optional-features.md).
 
 ## Prerequisites
 
-The following prerequisites must be in place before you can provision your Commerce evaluation environment:
+The following prerequisites must be in place before you can provision your Commerce environment:
 
-- You have been onboarded into the evaluation program and granted capacity for an evaluation environment.
 - You have access to the Microsoft Dynamics Lifecycle Services (LCS) portal.
 - You are an existing Microsoft Dynamics 365 partner or customer and are able to create a Dynamics 365 Commerce project.
 - You have administrator access to your Microsoft Azure subscription, or you're in contact with a subscription administrator who can assist you if required.
 - You have your Azure Active Directory (Azure AD) tenant ID available.
-- You've created an Azure AD security group that can be used as an e-Commerce system admin group, and you have its ID available.
-- You've created an Azure AD security group that can be used as a Ratings and Reviews moderator group, and you have its ID available. (This security group can be the same as the e-Commerce system admin group.)
+- You have created an Azure AD security group that can be used as an e-Commerce system admin group, and you have its ID available.
+- You have created an Azure AD security group that can be used as a Ratings and Reviews moderator group, and you have its ID available. (This security group can be the same as the e-Commerce system admin group.)
+- You have a project already created and available to use in LCS.  
 
 Note that this list isn't exhaustive. If you experience any issues, reach out to your Microsoft partner contact for assistance.
 
-## Provision your Commerce evaluation environment
+## Provision your Commerce environment
 
-These procedures explain how to provision a Commerce evaluation environment. After you successfully complete them, the Commerce evaluation environment will be ready for configuration. All the activities that are described here occur in the LCS portal.
+These procedures explain how to provision a Commerce environment. After you successfully complete them, the Commerce evaluation environment will be ready for configuration. All the activities that are described here occur in the LCS portal.
 
 ### Create a new project
 
