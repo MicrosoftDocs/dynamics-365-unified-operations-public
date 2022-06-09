@@ -28,7 +28,7 @@ To use the DTS Visual Studio extension, you must have access to Microsoft Dynami
 
 You can download the Visual Studio extension from [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
 
-Download and install the extension to your Visual Studio development environment. After you install the extension, the **Tools** menu should include new commands that were added from DTS.
+Download and install the extension to your Visual Studio development environment. After you install the extension, the **Tools** menu should include new commands that were added from DTS. This extension only supports F&O app localization.
 
 ## Using the extension
 
