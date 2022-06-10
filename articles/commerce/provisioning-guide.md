@@ -30,7 +30,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](includes/banner.md)]
 
-This article explains how to provision a Microsoft Dynamics 365 Commerce environment for demo or sandbox usage with built in demo data.  The process for setting up a production environment is similar however more involved since many of the pre-requisites are already provided in demo data.
+This article explains how to provision a Microsoft Dynamics 365 Commerce sandbox environment for demo usage with built in demo data.  The process for setting up a production environment is similar however more involved since many of the pre-requisites are already provided in demo data.
 
 Before you begin, we recommend that you take a quick scan through this article to get an idea of what the process requires.
 
@@ -38,7 +38,7 @@ To successfully provision a Commerce environment, the environment and Commerce S
 
 After you successfully provision your Commerce environment, you must complete a few post-provisioning steps to prepare it for use. Some steps are optional, depending on the aspects of the system that you want to use. You can always complete the optional steps later.
 
-For information about how to configure your Commerce environment after you provision it, see [Configure a Commerce environment](cpe-post-provisioning.md). For information about how to configure optional features for your Commerce environment, see [Configure optional features for a Commerce environment](cpe-optional-features.md).
+For information about how to configure your Commerce environment after you provision it, see [Configure a Commerce sandbox environment](cpe-post-provisioning.md). For information about how to configure optional features for your Commerce environment, see [Configure optional features for a Commerce sandbox environment](cpe-optional-features.md).
 
 ## Prerequisites
 
@@ -96,15 +96,15 @@ To initialize e-Commerce, follow these steps.
 
 ## Next steps
 
-To continue the process of provisioning and configuring your Commerce environment, see [Configure a Commerce environment](cpe-post-provisioning.md).
+To continue the process of provisioning and configuring your Commerce environment, see [Configure a Commerce sandbox environment](cpe-post-provisioning.md).
 
 ## Additional resources
 
-[Configure a Dynamics 365 Commerce environment](cpe-post-provisioning.md)
+[Configure a Dynamics 365 Commerce sandbox environment](cpe-post-provisioning.md)
 
-[Configure BOPIS in a Dynamics 365 Commerce environment](cpe-bopis.md)
+[Configure BOPIS in a Dynamics 365 Commerce sandbox environment](cpe-bopis.md)
 
-[Configure optional features for a Dynamics 365 Commerce environment](cpe-optional-features.md)
+[Configure optional features for a Dynamics 365 Commerce sandbox environment](cpe-optional-features.md)
 
 [Dynamics 365 Commerce environment FAQ](cpe-faq.md)
 
