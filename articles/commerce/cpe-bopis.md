@@ -150,8 +150,6 @@ For all general issues, you should always consult the Modern POS or Internet Inf
 
 [Configure optional features for a Dynamics 365 Commerce sandbox environment](cpe-optional-features.md)
 
-[Dynamics 365 Commerce sandbox environment FAQ](cpe-faq.md)
-
 [Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
 [Retail Cloud Scale Unit (RCSU)](/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
