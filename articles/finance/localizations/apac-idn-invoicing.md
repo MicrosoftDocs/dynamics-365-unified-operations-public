@@ -177,13 +177,13 @@ Before you complete the procedures in this section, follow the steps in [Get sta
 ### RCS setup
 
 During RCS setup, complete the following tasks:
-
-1. Import the Electronic Invoicing feature to process invoice exports and importing vendor invoices.
-2. Review the format configurations that are required to generate and export sales invoices.
-3. Review or configure the actions in the processing pipeline that support the sales invoice export and import scenarios.
-4. Publish the Electronic Invoicing feature for export sales invoices, and import vendor invoices.
-5. Import **Invoices communication Dataverse mapping** configuration.
-6. Create a connected aplications to dataverse.
+1. Enable the **Electronic reporting Microsoft Dataverse datasources support** feature in feature management.
+2. Import the Electronic Invoicing feature to process invoice exports and importing vendor invoices.
+3. Review the format configurations that are required to generate and export sales invoices.
+4. Review or configure the actions in the processing pipeline that support the sales invoice export and import scenarios.
+5. Publish the Electronic Invoicing feature for export sales invoices, and import vendor invoices.
+6. Import **Invoices communication Dataverse mapping** configuration.
+7. Create a connected aplications to dataverse.
 
 #### Import the Electronic Invoicing feature
 
@@ -222,13 +222,13 @@ You can review the configuration and customize it as you require. Use the **Form
 
 To import **Invoices communication Dataverse mapping** configuration go to RCS Home page and click **Electronic reporting**. Then click **Repositoies**, find and import **Invoices communication Dataverse mapping** configuration.
 
-## Create a connected aplication for datavers
+## Create a connected aplication for Dataverse
 - Sign in to your RCS account.
-In RCS Home page, click **Electronic reporting**. Then click **Connected application** under **Related links** FastTab at the bottom of the page then click New to create a new connected application.  Fill in the fields:
+- In RCS Home page, click **Electronic reporting**. Then click **Connected application** under **Related links** FastTab at the bottom of the page then click New to create a new connected application.  Fill in the fields:
 - Name: any name of the dataverse, for example, **UAT Dataverse**
 - Type: select **Dataverse**
-- Application: Dataverse endpoint URL on the Customers LCS application page
-- Tenant:  the tenant of the application.
+- Application: Dataverse endpoint URL (can be found on the Customers LCS application page)
+- Tenant:  the customer tenant.
 - Custom URL: Dataverse endpoint URL+"api/data/v9.1/", for example, "https://operations-dgxtest-uat.crm.dynamics.com/api/data/v9.1/"  
 
 Select Save.
