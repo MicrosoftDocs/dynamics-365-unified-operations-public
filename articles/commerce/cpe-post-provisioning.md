@@ -154,8 +154,7 @@ After the provisioning and configuration steps are completed, you can start to u
 
 To configure optional features for your Commerce sandbox environment, see [Configure optional features for a Commerce sandbox environment](cpe-optional-features.md).
 
-> [!NOTE]
-> Commerce sandbox environments come with a preloaded Azure Active Directory (Azure AD) business-to-consumer (B2C) tenant for demonstration purposes. Configuring your own Azure AD B2C tenant is not required for sandbox environments. However, if you are configuring the sandbox environment to use your own Azure AD B2C tenant, please make sure to add ``https://login.commerce.dynamics.com/_msdyn365/authresp`` as a reply URL in the Azure AD B2C application via the Azure Portal.
+To be able e-commerce users to sign into the e-commerce site, additional configuration is required to enable site authentication via Azure Active Directory B2C, follow the instructions within the [Set up a B2C tenant in Commerce](set-up-b2c-tenant.md) topic.
 
 ## Troubleshooting
 
