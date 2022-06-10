@@ -180,8 +180,6 @@ Demo data shipped in Commerce version 10.0.26 and earlier had a bug where the **
 
 ## Additional resources
 
-[Dynamics 365 Commerce sandbox environment overview](cpe-overview.md)
-
 [Provision a Dynamics 365 Commerce sandbox environment](provisioning-guide.md)
 
 [Configure optional features for a Dynamics 365 Commerce sandbox environment](cpe-optional-features.md)
