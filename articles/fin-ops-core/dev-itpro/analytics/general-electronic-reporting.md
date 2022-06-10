@@ -81,7 +81,7 @@ The ER engine has the following capabilities:
 
 [![ER main data flow.](./media/ger-main-data-flow.jpg)](./media/ger-main-data-flow.jpg)
 
-### Components
+### Component
 
 ER supports the following types of components:
 
@@ -92,32 +92,7 @@ ER supports the following types of components:
 
 For more information, see [Electronic reporting components](er-overview-components.md).
 
-
-#### Component versioning
-
-Versioning is supported for ER components. The following workflow is provided to manage changes in ER components:
-
-1. The version that is originally created is marked as a **Draft** version. This version can be edited and is available for test runs.
-2. The **Draft** version can be converted to a **Completed** version. This version can be used in local reporting processes.
-3. The **Completed** version can be converted to a **Shared** version. This version is published on LCS and can be used in global reporting processes.
-4. The **Shared** version can be converted to a **Discontinued** version. This version can then be deleted.
-
-Versions that have either **Completed** or **Shared** status are available for other data interchange. The following actions can be performed on a component that has these statuses:
-
-- The component can be serialized in XML format and exported as a file in XML format.
-- The component can be reserialized from an XML file and imported into the application as a new version of an ER component.
-
-#### Component date effectivity
-
-ER component versions are date-effective. You can set the **Effective from** date for an ER component to specify the date that the component becomes effective for reporting processes. The application session date is used to define whether a component is valid for execution. If more than one version is valid for a particular date, the latest version is used for reporting processes.
-
-#### Component access
-
-Access to ER format components depends on the setting for the ISO country/region code. When this setting is blank for a selected version of a format configuration, a format component can be accessed from any company at run time. When this setting contains ISO country/region codes, a format component is available only from companies that have a primary address that is defined for one of a format component's ISO country/region codes.
-
-Different versions of a data format component can have different settings for ISO country/region codes.
-
-#### <a name="Configuration"></a>Configuration
+### <a name="Configuration"></a>Configuration
 
 An ER configuration is the wrapper of a particular ER component. That component can be either a data model component or a format component. A configuration can include different versions of an ER component. Each configuration is marked as owned by a specific configuration provider. The **Draft** version of a component of a configuration can be edited when the owner of the configuration has been selected as an active provider in the ER settings in the application.
 
@@ -127,13 +102,13 @@ The format configuration that is created contains a format component. The data m
 
 An ER configuration is shared for application companies.
 
-#### <a name="Provider"></a>Provider
+### <a name="Provider"></a>Provider
 
 The ER provider is the party identifier that is used to indicate the author (owner) of each ER configuration. ER lets you manage the list of configuration providers. Format configurations that are released for electronic documents as part of the Finance and Operations solution are marked as owned by the **Microsoft** configuration provider.
 
 To learn how to register a new ER provider, play the task guide, **ER Create a configuration provider and mark it as active** (part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process).
 
-#### <a name="Repository"></a>Repository
+### <a name="Repository"></a>Repository
 
 An ER repository stores ER configurations. The following types of ER repositories are currently supported: 
 
@@ -268,6 +243,7 @@ The list of ER configurations for Finance is constantly updated. Open the [Globa
 
 ## Additional resources
 
+- [Electronic reporting components](er-overview-components.md)
 - [Create Electronic reporting (ER) configurations](electronic-reporting-configuration.md)
 - [Manage the Electronic reporting (ER) configuration lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md)
 
