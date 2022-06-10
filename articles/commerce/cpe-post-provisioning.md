@@ -188,8 +188,6 @@ Demo data shipped in Commerce version 10.0.26 and earlier had a bug where the **
 
 [Configure BOPIS in a Dynamics 365 Commerce sandbox environment](cpe-bopis.md)
 
-[Dynamics 365 Commerce sandbox environment FAQ](cpe-faq.md)
-
 [Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
 [Retail Cloud Scale Unit (RCSU)](/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
