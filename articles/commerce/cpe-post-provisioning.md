@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Configure a Dynamics 365 Commerce evaluation environment
-description: This article explains how to configure a Microsoft Dynamics 365 Commerce evaluation environment after it's provisioned.
+title: Configure a Dynamics 365 Commerce sandbox environment
+description: This article explains how to configure a Microsoft Dynamics 365 Commerce sandbox environment after it's provisioned.
 author: psimolin
 ms.date: 05/12/2022
 ms.topic: article
@@ -25,27 +25,27 @@ ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
 ---
 
-# Configure a Dynamics 365 Commerce evaluation environment
+# Configure a Dynamics 365 Commerce sandbox environment
 
 [!include [banner](includes/banner.md)]
 
-This article explains how to configure a Microsoft Dynamics 365 Commerce evaluation environment after it's provisioned.
+This article explains how to configure a Microsoft Dynamics 365 Commerce sandbox environment after it's provisioned.
 
-Complete the procedures in this article only after your Commerce evaluation environment has been provisioned. For information about how to provision your Commerce evaluation environment, see [Provision a Commerce evaluation environment](provisioning-guide.md).
+Complete the procedures in this article only after your Commerce sandbox environment has been provisioned. For information about how to provision your Commerce evaluation environment, see [Provision a Commerce sandbox environment](provisioning-guide.md).
 
-After your Commerce evaluation environment has been provisioned end to end, additional post-provisioning configuration steps must be completed before you can start to evaluate the environment. To complete these steps, you must use Microsoft Dynamics Lifecycle Services (LCS) and Dynamics 365 Commerce.
+After your Commerce sandobx environment has been provisioned end to end, additional post-provisioning configuration steps must be completed before you can start to use the environment. To complete these steps, you must use Microsoft Dynamics Lifecycle Services (LCS) and Dynamics 365 Commerce.
 
 ## Before you start
 
 1. Sign in to the [LCS portal](https://lcs.dynamics.com).
 1. Go to your project.
-1. On the top menu, select **Cloud-hosted environments**.
 1. Select your environment in the list.
 1. In the environment information on the right, select **Log on to environment**. You will be sent to Commerce headquarters.
-1. Make sure that the **USRT** legal entity is selected in the upper-right corner.
-1. Go to **Commerce parameters \> Configuration parameters** and ensure that there's an entry for **ProductSearch.UseAzureSearch** and that the value is set to **true**. If this entry is missing, you can add it, set the value to **true**, and then select **Channel Database \> Full data sync** for the Commerce Scale Unit associated with your e-commerce website.
+1. Make sure that the **USRT** legal entity is selected in the upper-right corner. This legal entity has been pre-configured in the demo data.
+1. Go to **Commerce parameters \> Configuration parameters** and ensure that there's an entry for **ProductSearch.UseAzureSearch** and that the value is set to **true**. If this entry is missing, you can add it, set the value to **true**.
 1. Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Initialize Commerce scheduler**. On the **Initialize commerce scheduler** flyout menu, set the **Delete existing configuration** option to **Yes**, and then select **OK**.
-1. To add channels to the Commerce Scale Unit, go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \>Channel database**, and then in the left pane select the Commerce Scale Unit. On the **Retail channel** FastTab, add the **AW online store**, **AW Business online store**, and **Fabrikam extended online store** channels. Optionally, you can also add retail stores if you will be using POS (for example, **Seattle**, **San Francisco**, and **San Jose**).
+1. For the store and e-commerce channels to properly work, they will need to be added to the Commerce Scale Unit.  Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \>Channel database**, and then in the left pane select the Commerce Scale Unit. On the **Retail channel** FastTab, add the **AW online store**, **AW Business online store**, and **Fabrikam extended online store** channels if you plan to use those e-commerce channels. Optionally, you can also add retail stores if you will be using POS (for example, **Seattle**, **San Francisco**, and **San Jose**).
+1. To ensure all changes are in sync with the channel database, select **Channel Database \> Full data sync** for the Commerce scale unit.
 
 During post-provisioning activities in Commerce headquarters, make sure that the **USRT** legal entity is always selected.
 
@@ -56,7 +56,7 @@ During post-provisioning activities in Commerce headquarters, make sure that the
 To associate a worker with your identity, follow these steps in Commerce headquarters.
 
 1. Use the menu on the left to go to **Modules \> Retail and commerce \> Employees \> Workers**.
-1. In the list, find and select the following record: **000713 - Andrew Collette**.
+1. In the list, find and select the following record: **000713 - Andrew Collette**. This user is associated with the San Francisco store used in the next section.
 1. On the Action Pane, select **Commerce**.
 1. Select **Associate existing identity**.
 1. In the **Email** field to the right of **Search using email**, enter your email address.
@@ -80,24 +80,24 @@ To activate Cloud POS, follow these steps in LCS.
 1. Select **Activate**. You're signed out and taken to the POS sign-in page.
 1. You can now sign in to the Cloud POS experience by using operator ID **000713** and password **123**.
 
-## Set up your site in Commerce
+## Set up your e-commerce sites
 
-To start to set up your evaluation site in Commerce, follow these steps.
+There are three available e-commerce demo sites: Fabrikam, Adventure Works and Adventure Works Business. Gollow the steps below to configure each one.
 
 1. Sign in to site builder by using the URL that you made a note of when you initialized e-Commerce during provisioning (see [Initialize e-Commerce](provisioning-guide.md#initialize-e-commerce)).
-1. Select the **Fabrikam** site to open the site setup dialog box.
+1. Select the site (**Fabrikam, Adventure Works or Adventure Works Business**), to open the site setup dialog box.
 1. Select the domain that you entered when you initialized e-Commerce.
-1. Select **Fabrikam extended online store** as the default channel. (Make sure that you select the **extended** online store.)
+1. Select the corresponding headquarters pre-configured online store channel (**Fabrikam extended online store**, **AW online store** or **AW Business online store**) as the default channel.
 1. Select **en-us** as the default language.
-1. Leave the value of the **Path** field as it is.
+1. Configure the path fields, this can be left blank for one site but will need to be configured if using the same domain name for other sites.  For example if the domain name is https://www.constoso.com, you can use a blank path for Fabrikam (https://contoso.com), then use "aw" for Adventure Works (https://contoso.com/aw) and the "awbusiness" for the Adventure Works business site (https://contoso.com/awbusiness).
 1. Select **OK**. The list of pages on the site appears.
-1. Repeat steps 2-7 for the **AdventureWorks** site (which maps to the **AW online store** channel) and the **AdventureWorks Business** site (which maps to the **AW Business online store** channel). If the **Path** field for the Fabrikam site is empty, then you must to add paths for the two AdventureWorks sites (for example, "aw" and "awbusiness").
+1. Repeat steps 2-7 to configure the other two sites if desired.
 
 ## Enable jobs
 
 To enable jobs in Commerce, follow these steps.
 
-1. Sign in to the environment (HQ).
+1. Sign in to the headquarters environment.
 1. Use the menu on the left to go to **Retail and commerce \> Inquiries and reports \> Batch jobs**.
 
     The remaining steps of this procedure must be completed for each of the following jobs:
@@ -150,12 +150,12 @@ To perform test transactions on the site, you can use the following test credit 
 
 ## Next steps
 
-After the provisioning and configuration steps are completed, you can start to use your evaluation environment. Use the Commerce site builder URL to go to the authoring experience. Use the Commerce site URL to go to the retail customer site experience.
+After the provisioning and configuration steps are completed, you can start to use your sandbox environment. Use the Commerce site builder URL to go to the authoring experience. Use the Commerce site URL to go to the retail customer site experience.
 
-To configure optional features for your Commerce evaluation environment, see [Configure optional features for a Commerce evaluation environment](cpe-optional-features.md).
+To configure optional features for your Commerce sandbox environment, see [Configure optional features for a Commerce sandbox environment](cpe-optional-features.md).
 
 > [!NOTE]
-> Commerce evaluation environments come with a preloaded Azure Active Directory (Azure AD) business-to-consumer (B2C) tenant for demonstration purposes. Configuring your own Azure AD B2C tenant is not required for evaluation environments. However, if you are configuring the evaluation environment to use your own Azure AD B2C tenant, please make sure to add ``https://login.commerce.dynamics.com/_msdyn365/authresp`` as a reply URL in the Azure AD B2C application via the Azure Portal.
+> Commerce sandbox environments come with a preloaded Azure Active Directory (Azure AD) business-to-consumer (B2C) tenant for demonstration purposes. Configuring your own Azure AD B2C tenant is not required for sandbox environments. However, if you are configuring the sandbox environment to use your own Azure AD B2C tenant, please make sure to add ``https://login.commerce.dynamics.com/_msdyn365/authresp`` as a reply URL in the Azure AD B2C application via the Azure Portal.
 
 ## Troubleshooting
 
@@ -181,15 +181,15 @@ Demo data shipped in Commerce version 10.0.26 and earlier had a bug where the **
 
 ## Additional resources
 
-[Dynamics 365 Commerce evaluation environment overview](cpe-overview.md)
+[Dynamics 365 Commerce sandbox environment overview](cpe-overview.md)
 
-[Provision a Dynamics 365 Commerce evaluation environment](provisioning-guide.md)
+[Provision a Dynamics 365 Commerce sandbox environment](provisioning-guide.md)
 
-[Configure optional features for a Dynamics 365 Commerce evaluation environment](cpe-optional-features.md)
+[Configure optional features for a Dynamics 365 Commerce sandbox environment](cpe-optional-features.md)
 
-[Configure BOPIS in a Dynamics 365 Commerce evaluation environment](cpe-bopis.md)
+[Configure BOPIS in a Dynamics 365 Commerce sandbox environment](cpe-bopis.md)
 
-[Dynamics 365 Commerce evaluation environment FAQ](cpe-faq.md)
+[Dynamics 365 Commerce sandbox environment FAQ](cpe-faq.md)
 
 [Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
