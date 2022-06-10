@@ -43,7 +43,7 @@ If you want to demo the transactional email features, the following prerequisite
 ### Find your media base URL
 
 > [!NOTE]
-> Before you can complete this procedure, you must complete the steps in [Set up your site in Commerce](cpe-post-provisioning.md#set-up-your-site-in-commerce).
+> Before you can complete this procedure, you must complete the steps in [Set up your site in Commerce](cpe-post-provisioning.md#set-up-your-e-commerce-sites).
 
 1. Sign in to the Commerce site builder by using the URL you made a note of when you initialized e-Commerce during provisioning (see [Initialize e-Commerce](provisioning-guide.md#initialize-e-commerce)).
 1. Open the **Fabrikam**, **Adventure Works**, or **Adventure Works Business** site you want to work with.
@@ -170,8 +170,6 @@ The following tokens are replaced with values for each product in the order.
 | Sales unit of the line | %lineunit% |
 
 ## Additional resources
-
-[Dynamics 365 Commerce sandbox environment overview](cpe-overview.md)
 
 [Provision a Dynamics 365 Commerce sandbox environment](provisioning-guide.md)
 
