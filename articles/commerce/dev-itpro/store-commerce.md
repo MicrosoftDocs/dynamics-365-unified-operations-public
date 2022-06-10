@@ -79,6 +79,8 @@ Store Commerce has full functional parity with MPOS. Store Commerce currently do
 
 The Store Commerce App does not support UWP peripherals that are [Point of Service devices](https://docs.microsoft.com/en-us/windows/uwp/devices-sensors/pos-get-started). If you are currently using a USB scanner or magnetic stripe reader in plug-and-play mode, you will need to install OPOS drivers and configure these devices in your hardware profile for them to work with the Store Commerce app. For more information about Store Commerce peripheral support refer the [Commerce peripherals doc](../retail-peripherals-overview.md).
 
+To migrate from MPOS to Store Commerce, refer the [Migrate Modern POS to Store Commerce](pos-extension/migrate-mpos-store-commerce.md)
+
 ## Store Commerce and CPOS parity
 
 Store Commerce has full functional parity with CPOS. In addition, Store Commerce supports dedicated hardware station and offline deployment.
