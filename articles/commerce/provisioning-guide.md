@@ -76,7 +76,7 @@ If you can't find the **Manage** link in the environment details view, reach out
 
 To initialize e-Commerce, follow these steps.
 
-1. On the **e-Commerce** tab, review the evaluation consent, and then select **Setup**.
+1. On the **e-Commerce** tab, select **Setup**.
 1. In the **e-Commerce environment name** field, enter a name. Be aware that this name will appear in some of the URLs that point to your e-Commerce instance.
 1. In the **Commerce Scale Unit name** field, select your CSU in the list. (The list should have only one option.)
 
@@ -100,15 +100,13 @@ To continue the process of provisioning and configuring your Commerce environmen
 
 ## Additional resources
 
-[Dynamics 365 Commerce evaluation environment overview](cpe-overview.md)
+[Configure a Dynamics 365 Commerce environment](cpe-post-provisioning.md)
 
-[Configure a Dynamics 365 Commerce evaluation environment](cpe-post-provisioning.md)
+[Configure BOPIS in a Dynamics 365 Commerce environment](cpe-bopis.md)
 
-[Configure BOPIS in a Dynamics 365 Commerce evaluation environment](cpe-bopis.md)
+[Configure optional features for a Dynamics 365 Commerce environment](cpe-optional-features.md)
 
-[Configure optional features for a Dynamics 365 Commerce evaluation environment](cpe-optional-features.md)
-
-[Dynamics 365 Commerce evaluation environment FAQ](cpe-faq.md)
+[Dynamics 365 Commerce environment FAQ](cpe-faq.md)
 
 [Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
