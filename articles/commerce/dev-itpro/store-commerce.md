@@ -2,7 +2,7 @@
 title: Store Commerce app
 description: This article explains how to set up and configure the Microsoft Dynamics 365 Commerce Store Commerce app.
 author: mugunthanm
-ms.date: 06/01/2022
+ms.date: 06/10/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -77,11 +77,11 @@ To update Store Commerce, just update the CSU. Store Commerce will then automati
 
 Store Commerce has full functional parity with MPOS. Store Commerce currently doesn't support dual display. For more information about the different POS applications and topologies, see [Choose between Modern POS (MPOS) and Cloud POS](../mpos-or-cpos.md).
 
-**Hardware parity between MPOS and Store Commerce**
+## Hardware parity between MPOS and Store Commerce
 
-The Store Commerce App does not support UWP peripherals that are [Point of Service devices](https://docs.microsoft.com/en-us/windows/uwp/devices-sensors/pos-get-started). If you are currently using a USB scanner or magnetic stripe reader in plug-and-play mode, you will need to install OPOS drivers and configure these devices in your hardware profile for them to work with the Store Commerce app. For more information about Store Commerce peripheral support refer the [Commerce peripherals doc](../retail-peripherals-overview.md).
+The Store Commerce app does not support Universal Windows Platform (UWP) peripherals that are [Point of Service devices](/windows/uwp/devices-sensors/pos-get-started.md). If you are currently using a Universal Serial Bus (USB) scanner or magnetic stripe reader in plug-and-play mode, you will need to install OLE for Retail POS (OPOS) drivers and configure these devices in your hardware profile so they work with the Store Commerce app. For more information about Store Commerce peripheral support, refer to the [Commerce peripherals](../retail-peripherals-overview.md) article.
 
-To migrate from MPOS to Store Commerce, refer the [Migrate Modern POS to Store Commerce](pos-extension/migrate-mpos-store-commerce.md)
+To migrate from MPOS to Store Commerce, refer the [Migrate Modern POS to Store Commerce](pos-extension/migrate-mpos-store-commerce.md) article.
 
 ## Store Commerce and CPOS parity
 
