@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Configure optional features for a Dynamics 365 Commerce evaluation environment
-description: This article explains how to configure optional features for a Microsoft Dynamics 365 Commerce evaluation environment.
+title: Configure optional features for a Dynamics 365 Commerce sandbox environment
+description: This article explains how to configure optional features for a Microsoft Dynamics 365 Commerce sandbox environment.
 author: psimolin
 ms.date: 07/16/2020
 ms.topic: article
@@ -25,17 +25,17 @@ ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
 ---
 
-# Configure optional features for a Dynamics 365 Commerce evaluation environment
+# Configure optional features for a Dynamics 365 Commerce sandbox environment
 
 [!include [banner](includes/banner.md)]
 
-This article explains how to configure optional features for a Microsoft Dynamics 365 Commerce evaluation environment.
+This article explains how to configure optional features for a Microsoft Dynamics 365 Commerce sandbox environment.
 
 ## Prerequisites
 
-If you want to evaluate the transactional email features, the following prerequisites must be met:
+If you want to demo the transactional email features, the following prerequisites must be met:
 
-- You have an available email server (Simple Mail Transfer Protocol \[SMTP\] server) that can be used from the Microsoft Azure subscription where you provisioned the evaluation environment.
+- You have an available email server (Simple Mail Transfer Protocol \[SMTP\] server) that can be used from the Microsoft Azure subscription where you provisioned the sandbox environment.
 - You have the server's fully qualified domain name (FQDN)/IP address, SMTP port number, and authentication details available.
 
 ## Configure the image back end
@@ -46,7 +46,7 @@ If you want to evaluate the transactional email features, the following prerequi
 > Before you can complete this procedure, you must complete the steps in [Set up your site in Commerce](cpe-post-provisioning.md#set-up-your-site-in-commerce).
 
 1. Sign in to the Commerce site builder by using the URL you made a note of when you initialized e-Commerce during provisioning (see [Initialize e-Commerce](provisioning-guide.md#initialize-e-commerce)).
-1. Open the **Fabrikam** site.
+1. Open the **Fabrikam**, **Adventure Works** or **Adventure Works Business** site you want to work with.
 1. On the menu on the left, select **Media Library**.
 1. Select any single image asset.
 1. In the property inspector on the right, find the **Public URL** property. The value is a URL. Here is an example:
@@ -102,9 +102,9 @@ For each transactional event that you want to send emails for, you must update t
 
 ## Customize email templates
 
-You might want to customize the email templates so that they use different images. Or you might want to update the links in the templates so that they go to your evaluation environment. This procedure explains how to download the default templates, customize them, and update the templates in the system.
+You might want to customize the email templates so that they use different images. Or you might want to update the links in the templates so that they go to your sandbox environment. This procedure explains how to download the default templates, customize them, and update the templates in the system.
 
-1. In a web browser, download the [Microsoft Dynamics 365 Commerce Evaluation default email templates zip file](https://download.microsoft.com/download/d/7/b/d7b6c4d4-fe09-4922-9551-46bbb29d202d/Commerce.Preview.Default.Email.Templates.zip) to your local computer. This file contains the following HTML documents:
+1. In a web browser, download the [Microsoft Dynamics 365 Commerce demo default email templates zip file](https://download.microsoft.com/download/d/7/b/d7b6c4d4-fe09-4922-9551-46bbb29d202d/Commerce.Preview.Default.Email.Templates.zip) to your local computer. This file contains the following HTML documents:
 
     - Order confirmation template
     - Issue gift card template
@@ -171,15 +171,15 @@ The following tokens are replaced with values for each product in the order.
 
 ## Additional resources
 
-[Dynamics 365 Commerce evaluation environment overview](cpe-overview.md)
+[Dynamics 365 Commerce sandbox environment overview](cpe-overview.md)
 
-[Provision a Dynamics 365 Commerce evaluation environment](provisioning-guide.md)
+[Provision a Dynamics 365 Commerce sandbox environment](provisioning-guide.md)
 
-[Configure a Dynamics 365 Commerce evaluation environment](cpe-post-provisioning.md)
+[Configure a Dynamics 365 Commerce sandbox environment](cpe-post-provisioning.md)
 
-[Configure BOPIS in a Dynamics 365 Commerce evaluation environment](cpe-bopis.md)
+[Configure BOPIS in a Dynamics 365 Commerce sandbox environment](cpe-bopis.md)
 
-[Dynamics 365 Commerce evaluation environment FAQ](cpe-faq.md)
+[Dynamics 365 Commerce sandbox environment FAQ](cpe-faq.md)
 
 [Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
