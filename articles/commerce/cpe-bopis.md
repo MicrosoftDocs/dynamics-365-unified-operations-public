@@ -2,9 +2,9 @@
 # required metadata
 
 title: Configure BOPIS in a Dynamics 365 Commerce sandbox environment
-description: This article explains how to configure buy online, pick up in store (BOPIS) in a Microsoft Dynamics 365 Commerce sadnbox environment after it has been provisioned.
+description: This article explains how to configure buy online, pick up in store (BOPIS) in a Microsoft Dynamics 365 Commerce sandbox environment after it has been provisioned.
 author: BrianShook
-ms.date: 07/16/2020
+ms.date: 06/14/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
