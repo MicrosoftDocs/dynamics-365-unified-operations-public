@@ -222,8 +222,17 @@ You can review the configuration and customize it as you require. Use the **Form
 
 To import **Invoices communication Dataverse mapping** configuration go to RCS Home page and click **Electronic reporting**. Then click **Repositoies**, find and import **Invoices communication Dataverse mapping** configuration.
 
-## Add the application URL in connected aplications
+## Create aconnected aplication for datavers
+- Sign in to your RCS account.
+In RCS Home page, click **Electronic reporting**. Then click **Connected application** under **Related links** FastTab at the bottom of the page then click New to create a new connected application.  Fill in the fields:
+- Name: any name of the dataverse, for example, **UAT Dataverse**
+- Type: select **Dataverse**
+- Application: Dataverse endpoint URL on the Customers LCS application page
+- Tenant:  the tenant of the application.
+- Custom URL: Dataverse endpoint URL+"api/data/v9.1/", for example, "https://operations-dgxtest-uat.crm.dynamics.com/api/data/v9.1/"  
 
+Select Save.
+On the Action Pane, select Check connection to test the connection with the environment. Then close the page.
 
 ### Configure the application-specific parameters
 
