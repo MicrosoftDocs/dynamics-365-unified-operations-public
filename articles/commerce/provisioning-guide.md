@@ -48,7 +48,7 @@ The following prerequisites must be in place before you can provision your Comme
 - You are an existing Microsoft Dynamics 365 partner or customer and have an implementation project already created and available to use in LCS.  
 - You have created an Azure AD security group that can be used as an e-Commerce system admin group, and you have its ID available.
 - You have created an Azure AD security group that can be used as a Ratings and Reviews moderator group, and you have its ID available. (This security group can be the same as the e-Commerce system admin group.)
-- You have deployed a headquarters instance within LCS. See the [Deploy a new environment](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/deployenvironment-newinfrastructure) topic for more details.
+- You have deployed a headquarters instance within LCS. For more information, see [Deploy a new environment](/dynamics365/fin-ops-core/dev-itpro/deployment/deployenvironment-newinfrastructure).
 
 Note that this list isn't exhaustive. If you experience any issues, reach out to your Microsoft partner contact for assistance.
 
