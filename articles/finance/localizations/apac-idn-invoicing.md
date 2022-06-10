@@ -183,7 +183,7 @@ During RCS setup, complete the following tasks:
 3. Review or configure the actions in the processing pipeline that support the sales invoice export and import scenarios.
 4. Publish the Electronic Invoicing feature for export sales invoices, and import vendor invoices.
 5. Import **Invoices communication Dataverse mapping** configuration.
-6. Add the application URL in connected aplications.
+6. Create a connected aplications to dataverse.
 
 #### Import the Electronic Invoicing feature
 
@@ -222,7 +222,7 @@ You can review the configuration and customize it as you require. Use the **Form
 
 To import **Invoices communication Dataverse mapping** configuration go to RCS Home page and click **Electronic reporting**. Then click **Repositoies**, find and import **Invoices communication Dataverse mapping** configuration.
 
-## Create aconnected aplication for datavers
+## Create a connected aplication for datavers
 - Sign in to your RCS account.
 In RCS Home page, click **Electronic reporting**. Then click **Connected application** under **Related links** FastTab at the bottom of the page then click New to create a new connected application.  Fill in the fields:
 - Name: any name of the dataverse, for example, **UAT Dataverse**
@@ -238,7 +238,7 @@ On the Action Pane, select Check connection to test the connection with the envi
 
 > [!NOTE] A user who set up aplication specific parameter should check connection in the **Connected applications** page. 
 > Go to RCS Home page and click **Electronic reporting**. Then click **Connected application** at the bottom of the page and click **Check connection**. 
->
+
 To enable the system to determine which the sales tax code in Finance correspond to the tax code for luxury goods (PPnBM) when invoices are exported, follow these steps to set the application-specific parameters for the luxury sales tax.
 
 1. In the **Lookups** grid, select the row for **TaxTypeLookup**.
