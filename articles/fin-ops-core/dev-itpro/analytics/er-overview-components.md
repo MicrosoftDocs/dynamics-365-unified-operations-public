@@ -118,7 +118,7 @@ To run a single ER format configuration to import data from an incoming electron
 
 Versioning is supported for ER components. The following workflow is provided to manage changes in ER components:
 
-1. The version that is originally created is marked as a **Draft** version. This version can be edited and is available for test runs.
+1. The version that was originally created is marked as a **Draft** version. This version can be edited and is available for test runs.
 2. The **Draft** version can be converted to a **Completed** version. This version can be used in local reporting processes.
 3. The **Completed** version can be converted to a **Shared** version. This version is published in Microsoft Dynamics Lifecycle Services (LCS) and can be used in global reporting processes.
 4. The **Shared** version can be converted to a **Discontinued** version. This version can be deleted.
@@ -128,15 +128,37 @@ Versions that have either **Completed** or **Shared** status are available for o
 - The component can be serialized in XML format and exported as a file in XML format.
 - The component can be reserialized from an XML file and imported into the application as a new version of an ER component.
 
+For more information, see [Import a new data model configuration](er-quick-start1-new-solution.md#ImportDataModel) and [Export completed version of a derived format](er-calculated-field-type.md#export-completed-version-of-a-derived-format).
+
+### Draft versions at runtime
+
+You can change your personal user parameters of the ER framework to enable the option that allows you to specify whether the draft version of a particular ER configuration must be used at runtime. Complete the steps of the [Mark a custom format as runnable](er-quick-start2-customize-report.md#MarkFormatRunnable) procedure to learn how you can make visible the **Run Draft** option for your ER configurations.
+
+> [!TIP]
+> Notice that ER user parameters are company and user specific.
+
+### Draft format version at runtime
+
+By default, when you run an ER solution the draft versions of its format components are ignored. Instead of it, the only relevant version in the other than **Draft** status is used. Sometimes, you want to force ER to use the draft version of your ER format configuration at runtime. For example, you can introduce necessary changes in your draft version and decide to do the test run by using the draft version to validate the correctness of your changes. To start using the draft format version, [set](er-quick-start2-customize-report.md#MarkFormatRunnable) the **Run Draft** option of the relevant ER configuration to **Yes**.
+
+## Draft model mapping version at runtime
+
+By default, when you run an ER solution the draft versions of its model mapping components are always used. Sometimes, you want to force ER to ignore the draft version of your ER model mapping configuration at runtime. In **version 10.0.29 and later**, you can enable the **Always take into consideration the "Run draft" option for ER model mappings** feature to control the model mapping version that is used at runtime. With this feature enabled, the following behavior occurs:
+
+- When the **Run Draft** option is set to **No** for a model mapping configuration, the highest non-draft version of this configuration is used at runtime. An exception is thrown when it is not available in the current Finance instance.
+- When the **Run Draft** option is set to **Yes** for a model mapping configuration, the draft version of this configuration is used at runtime.
+
 ## Component date effectivity
 
-ER component versions are date-effective. You can set the "effective from" date for an ER component to specify the date when the component becomes effective for reporting processes. The application session date is used to define whether a component is valid for execution. If more than one version is valid for a specific date, the latest version is used for reporting processes.
+ER format component versions are date-effective. You can set the "effective from" date for an ER format component to specify the date when the component becomes effective for reporting processes. The application session date is used to define whether a component is valid for execution. If more than one version is valid for a specific date, the latest version is used for reporting processes.
 
 ## Component access
 
-Access to ER format components depends on the setting for the International Organization for Standardization (ISO) country/region code. If this setting is blank for a selected version of a format configuration, a format component can be accessed from any company at runtime. If the setting contains ISO country/region codes, a format component is available only from companies that have a primary address defined for one of a format component's ISO country/region codes.
+Access to ER format and model mapping components at runtime depends on the setting for the International Organization for Standardization (ISO) country/region code. If this setting is blank for a selected version of a format or model mapping configuration, a format or model mapping component can be accessed from any company at runtime. If the setting contains ISO country/region codes, a format or model mapping component is available only from companies that have a primary address defined for one of a format component's ISO country/region codes.
 
-Different versions of a data format component can have different settings for ISO country/region codes.
+Different versions of a format or a model mapping component can have different settings for ISO country/region codes.
+
+For more information, see [Configure country context dependent ER model mappings](er-country-dependent-model-mapping.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 
