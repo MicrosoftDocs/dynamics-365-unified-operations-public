@@ -144,8 +144,6 @@ For all general issues, you should always consult the Modern POS or Internet Inf
 
 ## Additional resources
 
-[Dynamics 365 Commerce sandbox environment overview](cpe-overview.md)
-
 [Provision a Dynamics 365 Commerce sandbox environment](provisioning-guide.md)
 
 [Configure optional features for a Dynamics 365 Commerce sandbox environment](cpe-optional-features.md)
