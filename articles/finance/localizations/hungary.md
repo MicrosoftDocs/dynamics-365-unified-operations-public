@@ -42,6 +42,7 @@ This article provides links to documentation resources for Hungary.
 - [Sales tax reports for Hungary](emea-hun-sales-tax-reports.md)
 - [Intrastat report](emea-hun-intrastat.md)
 - [Deferred sales tax calculations](emea-hun-deferred-vat.md)
+- [EU sales list for Hungary](emea-hun-eu-sales-list.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
