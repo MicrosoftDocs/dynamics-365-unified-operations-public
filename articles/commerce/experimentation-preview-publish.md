@@ -3,27 +3,14 @@
 
 title: Preview and publish an experiment
 description: This article describes how to preview and publish an experiment from Dynamics 365 Commerce.
-author:  sushma-rao 
-ms.date: 10/21/2020
+author: sushma-rao 
+ms.date: 06/08/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: global
-ms.search.industry: Retail
+ms.search.region: Global
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
-ms.dyn365.ops.version: AX 10.0.13
 ---
 
 # Preview and publish an experiment
@@ -55,6 +42,10 @@ When using publish groups with experiments, there are some important considerati
 - Experiments that are connected to pages in a live site aren't available to pages within publish groups and vice-versa. Similarly, pages that have experiments running on them in a live site aren't available to other experiments in publish groups and vice versa.
 - When you publish or schedule a publish group, all content in the publish group is published, regardless of whether there's an experiment associated with the publish group.
 - Because a publish group continues to persist after it's been published to a live site, experiments in the publish group will also persist. Therefore, you won't be able to associate other experiments with the same page or fragment. To avoid this limitation, delete any publish groups with persisting experiments. Similarly, if you want to delete an experiment in a live site that also exists in a publish group, delete it from the publish group first.
+
+### Force variations for testing
+
+Once the experiment is live, you can append the experiment ID and variation ID to the default page URL to force a variation for testing or automation purposes. For example, if the default page URL is `https://fabrikam.com/modern/homepage`, you can force a variation with a URL like `https://fabrikam.com/modern/homepage?exp=18012910471|18024360464`. You can get the experiment ID and variation ID for your experiment variation from the preview URL in the **Preview** experience explained above.
 
 ## Previous step
 [Connect and edit an experiment](experimentation-connect-edit.md)

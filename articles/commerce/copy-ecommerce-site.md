@@ -4,7 +4,7 @@
 title: Copy an e-commerce site
 description: This article describes how to copy an existing e-commerce site within or between e-commerce environments in Microsoft Dynamics 365 Commerce site builder.
 author: psimolin
-ms.date: 03/03/2022
+ms.date: 06/03/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -37,23 +37,23 @@ To copy a site within an e-commerce environment, follow these steps.
 1. Sign in to site builder for the environment where you want to perform the copy operation.
 1. Open the site list view by selecting **Site switcher** in the upper-right corner and then selecting **Manage sites**.
 1. Find the site that you want to copy or clone, and select it by selecting the checkbox next to the site name.
-1. On the Action Pane, select **Copy site**.
-1. In the **Copy site** dialog box, in the **New site name** field, enter a name for the new site. The new site name must be unique in the e-commerce environment. The **Source tenant** and **Source site** fields are automatically set to the information for the current tenant and the selected site.
+1. On the command bar, select **Copy site**.
+1. In the **Copy site** flyout menu, in the **New site name** field, enter a name for the new site. The new site name must be unique in the e-commerce environment. The **Source tenant** and **Source site** fields are automatically set to the information for the current tenant and the selected site.
 1. Select **Create copy**.
 
 After the information has been validated, a notification indicates that a new site copy job has been created. You can monitor the progress of the job in the [right pane of the **Tenant jobs** page](#monitor-the-site-copy-operation). When the copy operation has been successfully completed, the new site appears in the list of sites in site list view.
 
-The following illustration shows an example of the **Copy site** dialog box in site builder.
+The following illustration shows an example of the **Copy site** flyout menu in site builder.
 
-![Copy site dialog box in site builder.](media/site-copy_1.png)
+![Copy site flyout menu in site builder.](media/site-copy_1.png)
 
 ## Copy a site between two e-commerce environments
 
 To copy a site between two e-commerce environments, follow these steps.
 
 1. Sign in to site builder for the destination e-commerce environment.
-1. On the Action Pane, select **Copy site**.
-1. In the **Copy site** dialog box, in the **New site name** field, enter a name for the new site. The new site name must be unique in the e-commerce environment.
+1. On the command bar, select **Copy site**.
+1. In the **Copy site** flyout menu, in the **New site name** field, enter a name for the new site. The new site name must be unique in the e-commerce environment.
 1. In the **Source tenant** field, select the name of the source tenant.
 1. In the **Source site** field, select the source site.
 1. Select **Create copy**.
@@ -63,6 +63,32 @@ To copy a site between two e-commerce environments, follow these steps.
 
 After the information has been validated, a notification indicates that a new site copy job has been created. You can monitor the progress of the job in the [right pane of the **Tenant jobs** page](#monitor-the-site-copy-operation). When the copy operation has been successfully completed, the new site appears in the list of sites in site list view.
 
+## Map channels during the site copy operation (optional)
+
+Source channels and locales can be mapped to destination channels and locales as part of the site copy operation. If the channel mapping is done as part of the site copy operation, initializing the site using the FRE process and configuring the channels in site settings are not required. 
+
+To map all the channels and locales "as is" (1-to-1) in site builder, follow these steps.
+
+1. Open the site list view by selecting **Site switcher** in the upper-right corner and then selecting **Manage sites**.
+1. Find the site that you want to copy or clone, and select it by selecting the checkbox next to the site name.
+1. On the command bar, select **Copy site**.
+1. In the **Copy site** flyout menu, enter values for **New site name**, **Source tenant**, and **Source site** (if not present already).
+1. Select **Add channel mappings**.
+1. In the **Configure site channels and locales** flyout menu, select **Source channel**, and then select the source channel.  
+1. Select **Destination channel** and then select the same channel as the source channel. 
+1. Select **Add locale**.
+1. Select **Source locale**, and then select the source locale.
+1. Select **Destination locale**, and then select the same locale as the source locale. 
+1. For **URL path**, enter a unique URL path that is not currently used in the destination environment.
+1. Repeat steps 8-11 for each locale to be mapped for the channel.
+1. Select **Apply**.
+1. Repeat steps 6-11 for each source channel.
+1. Select **Close**.
+1. Review the configuration for accuracy, and then select **Copy site**.
+
+> [!NOTE]
+> All source channels and locales must be mapped, and can only be mapped once.
+
 ## Monitor the site copy operation
 
 To monitor the progress of the site copy operation, follow these steps.
@@ -71,9 +97,9 @@ To monitor the progress of the site copy operation, follow these steps.
 1. In the left pane, select **Tenant jobs**.
 1. On the **Tenant jobs** page, find and select the site copy job in the list. A pane appears on the right, and shows the status and details of the selected job.
 
-You can cancel a job that has a status of **In progress**. Select the job in the list, and then select **Cancel** on the Action Pane.
+You can cancel a job that has a status of **In progress**. Select the job in the list, and then select **Cancel** on the command bar.
 
-You can retry a job that has a status of **Failed** or **Completed with errors**. Select the job in the list, and then select **Retry** on the Action Pane.
+You can retry a job that has a status of **Failed** or **Completed with errors**. Select the job in the list, and then select **Retry** on the command bar.
 
 > [!NOTE]
 > Processing of video assets might continue after a site copy job is completed.

@@ -4,7 +4,7 @@
 title: Deployment configurations for the local agent
 description: This article explains which deployment configurations can be specified, when deploying the local agent, to indicate a special configuration related to the environment.
 author: faix
-ms.date: 10/06/2021
+ms.date: 06/07/2022
 ms.topic: article
 ms.prod: dynamics-365 
 ms.service:
@@ -23,22 +23,28 @@ This article explains which deployment configurations can be specified, when dep
 There is a section in the localagent-config.json file that is labeled deploymentOptions. This can be modified before installing the local agent.
 
 ```json
-    ...
-    "deploymentOptions": {
-				"office365AdfsCompatibility": {
-					"value": "false"
-				},
-				"sqlServerVersion": {
-					"value": "2016"
-				},
-				"isMultiSubnetFailoverEnabled": {
-					"value": "false"
-				},
-				"skipCRLCheck" : {
-					"value": "false"
-				}
-			},
-    ...
+...
+"deploymentOptions": {
+    "office365AdfsCompatibility": {
+        "value": "false"
+    },
+    "sqlServerVersion": {
+        "value": "2016"
+    },
+    "isMultiSubnetFailoverEnabled": {
+        "value": "false"
+    },
+    "skipCRLCheck": {
+        "value": "false"
+    },
+    "rsatEnabled": {
+        "value": "false"
+    },
+    "rsatCertificateThumbprint": {
+        "value": ""
+    }
+},
+...
 ```
 
 ## Specify the version of Microsoft SQL Server
@@ -74,3 +80,12 @@ Support for this option was introduced in version 10.0.21. Additionally, at leas
 > [!IMPORTANT]
 > By disabling the certificate revocation list of a certificate, the security check will not be performed. You bear the risk of disabling it. You should only enable this deployment option if you are fully aware of the security implications of disabling this check.
 
+## Specify that an environment should be configured to work with the Regression suite automation tool
+
+The Regression suite automation tool (RSAT) significantly reduces the time and cost of user acceptance testing (UAT) in Finance + Operations (on-premises). For more information, see [Regression suite automation tool (RSAT)](../perf-test/rsat/rsat-overview.md).
+
+To enable this deployment option, change the value of **rsatEnabled** from **false** to **true**. Additionally, set **rsatCertificateThumbprint** to the thumbprint of the certificate that you want to use for RSAT.
+
+For more information about how to generate and deploy the certificate, see [Enable RSAT in Microsoft Dynamics 365 Finance + Operations (on-premises) environments](./onprem-rsat-configuration.md).
+
+Support for this option was introduced in version 10.0.28. Additionally, at least local agent 3.1.0 is required to use this option.

@@ -85,6 +85,7 @@ We recommend that you import and set up your Tax Calculation configuration with 
 | 10.0.25         | Tax Calculation Configuration 40.50.225 |
 | 10.0.26         | Tax Calculation Configuration 40.54.234 |
 | 10.0.27         | Tax Calculation Configuration 40.54.234 |
+| 10.0.28         | Tax Calculation Configuration 40.54.234 |
 
 
 ## Data flow
@@ -169,6 +170,7 @@ The following countries/regions for a legal entity's primary address are support
 - Germany
 - Hungary
 - Iceland
+- Ireland
 - Italy
 - Latvia
 - Lithuania

@@ -1,7 +1,7 @@
 ---
 title: Fixed receipt price
 description: This article explains how you can configure and use fixed receipt prices in Microsoft Dynamics 365 Supply Chain Management. 
-author: raprofit
+author: rachel-profitt
 ms.date: 04/25/2022
 ms.topic: article
 ms.search.form: InventPosting, InventItemGroup, InventModelGroup

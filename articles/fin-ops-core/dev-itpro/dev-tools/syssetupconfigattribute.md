@@ -2,7 +2,7 @@
 title: SysSetupConfigAttribute attribute
 description: This article describes how to use the SysSetupConfigAttribute attribute on classes that implement the SysSetup interface.
 author: tonyafehr
-ms.date: 01/03/2022
+ms.date: 06/03/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -63,5 +63,25 @@ class DemoClass extends SysSetupAsync implements SysSetup
     // Class code here.
 }
 ```
+## Versioning SysSetup classes
+
+SysSetup classes can be versioned and run only once, not on every DBSync execution. For example, whenever there is a change in the version, DBSync runs the X++ class.
+
+As of version 10.0.27, the versioning feature is available for SysSetup classes.
+
+### How does versioning work for SysSetup classes?
+
+A new `_version` parameter of the **Version** type is added to the `SysSetupConfigAttribute` attribute. It accepts values in the format \[Major\].\[Minor\], such as **1.0**, **2.1**, **4.5**, and **10.4**.
+
+DBSync reads the value of the `_version` parameter, and whenever there is a change in the version, the scripts are run. This parameter is optional. The default value is **1.0**. Therefore, if the X++ classes that are onboarded to SysSetup don't have the `_version` parameter, the X++ class will have a default version value of **1.0** when it runs.
+
+> [!NOTE]
+> A versioned class (default) will successfully run only once, unless the version number is updated again. For example, a script that has a version value of **1.0** won't be rerun on every DBSync request.
+
+The version value **0.0** is dedicated to the execution of X++ classes on every DBSync execution. Therefore, to run X++ classes on every DBSync operation, you must set the `_version` parameter for the `SysSetupConfigAttribute` attribute to **0.0**.
+
+### Onboarding the X++ class to SysSetup
+
+SysSetup classes should start to use the `_version` parameter in the `SysSetupConfigAttribute` attribute. Otherwise, the default behavior is used when the X++ class runs. In other words, the version value is **1.0**, and the class runs only once per version.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

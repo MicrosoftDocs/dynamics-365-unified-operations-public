@@ -63,6 +63,9 @@ When a purchase invoice is posted, the receivable VAT and payable VAT are posted
 ## Intrastat declaration
 For information about the Czech Intrastat report, see [Czech Intrastat](emea-cze-intrastat.md).
 
+## EU sales list
+For information about the Czech EU sales list, see [EU sales list for the Czech Republic](emea-cze-eu-sales-list.md).
+
 ## Credit note on cash discount
 For information about creating, posting, and printing credit notes for cash discounts that are given to customers, see [Credit note on cash discount](emea-cze-credit-note-cash-discount.md).
 
