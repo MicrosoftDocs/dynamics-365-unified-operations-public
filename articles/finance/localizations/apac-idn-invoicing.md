@@ -50,10 +50,11 @@ Before you can use the invoicing functionality, the following prerequisites must
     - (Indonesia) Enable generation of tax invoice numbers for invoices
     - Chronological numbering
     - Credit invoicing layout for sales and project invoice reports
+    - Electronic Invoicing integration using Microsoft Dataverse (for export/import invoices)
   
   For information about how to enable features, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-- Enable Electronic Invoicing for Indonesia
 - [Configure Electronic invoicing solution in Microsoft Dataverse](e-invoicing-power-platform-plug-in.md)
+- Enable Electronic Invoicing for Indonesia
 
 ## Tax invoice numbering
 
