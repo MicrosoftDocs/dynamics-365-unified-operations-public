@@ -77,6 +77,8 @@ To update Store Commerce, just update the CSU. Store Commerce will then automati
 
 Store Commerce has full functional parity with MPOS. Store Commerce currently doesn't support dual display. For more information about the different POS applications and topologies, see [Choose between Modern POS (MPOS) and Cloud POS](../mpos-or-cpos.md).
 
+The Store Commerce App does not support UWP peripherals that are [Point of Service devices](https://docs.microsoft.com/en-us/windows/uwp/devices-sensors/pos-get-started). If you are currently using a USB scanner or magnetic stripe reader in plug-and-play mode, you will need to install OPOS drivers and configure these devices in your hardware profile for them to work with the Store Commerce app. For more information about Store Commerce peripheral support refer the [Commerce peripherals doc](../retail-peripherals-overview.md).
+
 ## Store Commerce and CPOS parity
 
 Store Commerce has full functional parity with CPOS. In addition, Store Commerce supports dedicated hardware station and offline deployment.
@@ -118,7 +120,7 @@ We recommend that you use Store Commerce or CPOS for all new deployments. Existi
 </tr>
 <tr>
 <th scope="row">Support for local hardware station</th>
-<td>Yes</td>
+<td>Yes, but does not support UWP peripherals that are Point of Service devices. For more information about Store Commerce peripheral support refer the Commerce peripherals doc.</td>
 <td>Yes</td>
 </tr>
 <tr>
