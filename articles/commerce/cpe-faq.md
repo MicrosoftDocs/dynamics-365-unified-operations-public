@@ -4,7 +4,7 @@
 title: Dynamics 365 Commerce evaluation environment FAQ
 description: This article provides answers to frequently asked questions about the Microsoft Dynamics 365 Commerce evaluation environment.
 author: v-chgri
-ms.date: 07/16/2020
+ms.date: 06/14/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -62,8 +62,6 @@ The Commerce evaluation environment has a 30-day time limit from the date when S
 Extension of the time limit is an exception to the norm and is considered on a case-by-case basis. You should reach out to your Microsoft partner contact for assistance.
 
 ## Additional resources
-
-[Dynamics 365 Commerce evaluation environment overview](cpe-overview.md)
 
 [Provision a Dynamics 365 Commerce evaluation environment](provisioning-guide.md)
 
