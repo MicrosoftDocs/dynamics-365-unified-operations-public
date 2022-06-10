@@ -385,8 +385,9 @@ The following example in the **JPMF** legal entity shows how you can set up sale
 
 **Consumption tax calculation sheet**:
 
-![](media/ecc300c7be8c9af1c97d482767fa7620.png)
+![Consumption tax calculation sheet part 1.](media/ecc300c7be8c9af1c97d482767fa7620.png)
 
+![Consumption tax calculation sheet part 2.](media/650d83f8ccfea0ef924aaaf5358a1b6d.png)
 
 **Consumption tax report**:
 
