@@ -124,7 +124,7 @@ We recommend that you use Store Commerce or CPOS for all new deployments. Existi
 </tr>
 <tr>
 <th scope="row">Support for local hardware station</th>
-<td>Yes, but does not support UWP peripherals that are Point of Service devices. For more information about Store Commerce peripheral support refer the Commerce peripherals doc.</td>
+<td>Yes, but does not support UWP peripherals that are Point of Service devices. For more information about Store Commerce peripheral support, refer the [Commerce peripherals](../retail-peripherals-overview.md) article.</td>
 <td>Yes</td>
 </tr>
 <tr>
