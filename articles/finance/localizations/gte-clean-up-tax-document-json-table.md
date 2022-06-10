@@ -48,7 +48,7 @@ Before you begin the cleanup, complete the following tasks:
 
 ## Clean up the database
 
-1. Verify that you've turned on the following flighted feature: **TaxRemoveDependenciesOnTaxDocumentJSONFlighting**.
+1. By default the Cleanup options would not be available, it's a one-time task to compress old data from versions that are earlier than 10.0.9. If you want to use Remove option, please contact Microsoft to enable the flight: **TaxRemoveDependenciesOnTaxDocumentJSONFlighting**.
 2. Go to **Tax** \> **Periodic tasks** \> **Tax document JSON cleanup**. 
 3. Select the **Remove** option.
 
@@ -61,7 +61,7 @@ Before you begin the cleanup, complete the following tasks:
     > 1\. Confirm with technical consultant or administrator that no customization depends on tax document object.  
     > 2\. Specify conditions in 'Records to include' tab. It's recommended to only remove the data prior to current fiscal year.
 
-4. On the **Records to include** FastTab, specify the conditions that you confirmed with the customer's business department. For example, you've agreed to remove the tax document JSON before March 31, 2018. In this case, in the **Tax document extension information for India** section, in the **Transaction date** field, specify **31/3/2018**.
+4. On the **Records to include** FastTab, specify the conditions that you confirmed with the customer's business department. For example, you've agreed to remove the tax document JSON before March 31, 2018. In this case, in the **Tax document extension information for India** section, in the **Transaction date** field, specify **.."31/3/2018"**. For more detail about query filter, please see [Advanced filtering and query syntax](../../fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md).
 
     ![Transaction date field in the Tax document extension information for India section.](media/tax-document-json-02.png)
 
