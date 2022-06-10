@@ -4,7 +4,7 @@
 title: Configure a Dynamics 365 Commerce sandbox environment
 description: This article explains how to configure a Microsoft Dynamics 365 Commerce sandbox environment after it's provisioned.
 author: psimolin
-ms.date: 05/12/2022
+ms.date: 06/14/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -41,11 +41,11 @@ After your Commerce sandbox environment has been provisioned end to end, additio
 1. Go to your project.
 1. Select your environment in the list.
 1. In the environment information on the right, select **Log on to environment**. You will be sent to Commerce headquarters.
-1. Make sure that the **USRT** legal entity is selected in the upper-right corner. This legal entity has been pre-configured in the demo data.
-1. Go to **Commerce parameters \> Configuration parameters** and ensure that there's an entry for **ProductSearch.UseAzureSearch** and that the value is set to **true**. If this entry is missing, you can add it, set the value to **true**.
+1. Make sure that the **USRT** legal entity is selected in the upper-right corner. This legal entity has been preconfigured in the demo data.
+1. Go to **Commerce parameters \> Configuration parameters** and ensure that there's an entry for **ProductSearch.UseAzureSearch** and that the value is set to **true**. If this entry is missing, add it and set the value to **true**.
 1. Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Initialize Commerce scheduler**. On the **Initialize commerce scheduler** flyout menu, set the **Delete existing configuration** option to **Yes**, and then select **OK**.
-1. For the store and e-commerce channels to properly work, they will need to be added to the Commerce Scale Unit.  Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \>Channel database**, and then in the left pane select the Commerce Scale Unit. On the **Retail channel** FastTab, add the **AW online store**, **AW Business online store**, and **Fabrikam extended online store** channels if you plan to use those e-commerce channels. Optionally, you can also add retail stores if you will be using POS (for example, **Seattle**, **San Francisco**, and **San Jose**).
-1. To ensure all changes are in sync with the channel database, select **Channel Database \> Full data sync** for the Commerce scale unit.
+1. For the store and e-commerce channels to work properly, they must be added to the Commerce Scale Unit. Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Channel database**, and then in the left pane select the Commerce Scale Unit. On the **Retail channel** FastTab, add the **AW online store**, **AW Business online store**, and **Fabrikam extended online store** channels if you plan to use those e-commerce channels. Optionally, you can also add retail stores if you will be using point of sale (POS) (for example, **Seattle**, **San Francisco**, and **San Jose**).
+1. To ensure that all changes are synchronized with the channel database, select **Channel Database \> Full data sync** for the Commerce Scale Unit.
 
 During post-provisioning activities in Commerce headquarters, make sure that the **USRT** legal entity is always selected.
 
@@ -56,7 +56,7 @@ During post-provisioning activities in Commerce headquarters, make sure that the
 To associate a worker with your identity, follow these steps in Commerce headquarters.
 
 1. Use the menu on the left to go to **Modules \> Retail and commerce \> Employees \> Workers**.
-1. In the list, find and select the following record: **000713 - Andrew Collette**. This user is associated with the San Francisco store used in the next section.
+1. In the list, find and select the following record: **000713 - Andrew Collette**. This example user is associated with the San Francisco store that will be used in the next section.
 1. On the Action Pane, select **Commerce**.
 1. Select **Associate existing identity**.
 1. In the **Email** field to the right of **Search using email**, enter your email address.
@@ -82,16 +82,16 @@ To activate Cloud POS, follow these steps in LCS.
 
 ## Set up your e-commerce sites
 
-There are three available e-commerce demo sites: Fabrikam, Adventure Works and Adventure Works Business. Gollow the steps below to configure each one.
+There are three available e-commerce demo sites: Fabrikam, Adventure Works, and Adventure Works Business. Follow the steps below to configure each demo site.
 
 1. Sign in to site builder by using the URL that you made a note of when you initialized e-Commerce during provisioning (see [Initialize e-Commerce](provisioning-guide.md#initialize-e-commerce)).
-1. Select the site (**Fabrikam, Adventure Works or Adventure Works Business**), to open the site setup dialog box.
-1. Select the domain that you entered when you initialized e-Commerce.
-1. Select the corresponding headquarters pre-configured online store channel (**Fabrikam extended online store**, **AW online store** or **AW Business online store**) as the default channel.
+1. Select the site (**Fabrikam**, **Adventure Works**, or **Adventure Works Business**), to open the site setup dialog box.
+1. Select the domain that you entered when you initialized e-commerce.
+1. In headquarters, select the preconfigured online store channel (**Fabrikam extended online store**, **AW online store**, or **AW Business online store**) that corresponds to the default channel.
 1. Select **en-us** as the default language.
-1. Configure the path fields, this can be left blank for one site but will need to be configured if using the same domain name for other sites.  For example if the domain name is https://www.constoso.com, you can use a blank path for Fabrikam (https://contoso.com), then use "aw" for Adventure Works (https://contoso.com/aw) and the "awbusiness" for the Adventure Works business site (https://contoso.com/awbusiness).
+1. Configure the path fields. This can be left blank for a single site but will need to be configured if using the same domain name for multiple sites. For example, if the domain name is `https://www.constoso.com`, you can use a blank path for Fabrikam (`https://contoso.com`), and then use "aw" for Adventure Works (`https://contoso.com/aw`) and "awbusiness" for the Adventure Works business site (`https://contoso.com/awbusiness`).
 1. Select **OK**. The list of pages on the site appears.
-1. Repeat steps 2-7 to configure the other two sites if desired.
+1. Optionally, repeat steps 2-7 to configure the other demo sites as needed.
 
 ## Enable jobs
 
@@ -154,7 +154,7 @@ After the provisioning and configuration steps are completed, you can start to u
 
 To configure optional features for your Commerce sandbox environment, see [Configure optional features for a Commerce sandbox environment](cpe-optional-features.md).
 
-To be able e-commerce users to sign into the e-commerce site, additional configuration is required to enable site authentication via Azure Active Directory B2C, follow the instructions within the [Set up a B2C tenant in Commerce](set-up-b2c-tenant.md) topic.
+To enable e-commerce users to sign into the e-commerce site, additional configuration is required to enable site authentication via Azure Active Directory business-to-consumer (B2C), follow the instructions in [Set up a B2C tenant in Commerce](set-up-b2c-tenant.md).
 
 ## Troubleshooting
 
