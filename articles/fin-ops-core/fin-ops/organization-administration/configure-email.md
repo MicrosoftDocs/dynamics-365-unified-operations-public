@@ -277,125 +277,218 @@ If troubleshooting is needed, ensure that it’s possible to sign in to the curr
 
 There are a few standard processes that can help you troubleshoot the configuration of email settings. 
 
-#### Verify email settings and send a test email
-
-1. Go to **System administration** \> **Setup** \> **Email** \> **Email parameters**.
-2. Verify that SMTP is enabled.
-3. Verify the settings of the SMTP mail server.
-4. Sign in to the SMTP account in a separate window to make sure that the account and password are correct.
-5. Send a test email using **System administration** \> **Setup** \> **Email** \> **Email parameters** \> **Test email**.
-
-#### Verify that the email batch process is running
-
-1. Go to **System administration** \> **Periodic tasks** \> **Email processing** \> **Batch**.
-2. Make sure that the **Batch processing** option is set to **Yes**.
-3. Review the recurrence of the email process:
-    1. Select **No end date** to adjust all recurrences of the email batch process.
-    2. Adjust the count as needed.
-
-#### Review the status of batch emails
-
-1.  Go to **System administration** > **Periodic tasks** > **Email processing** > **Batch email sending status**.
-2. Verify that emails are being sent from the correct account. 
-    -  If the account is incorrect, you need to adjust settings such as user options, system templates, or organization templates, as needed.
-3. Verify that all email user accounts have been granted permission to **Send As** for the configured SMTP account (see the section titled **Verify all email accounts have appropriate permissions**).
-    
-#### Review any errors on the **Email history** page
-
-1.  Go to **System administration** /> **Setup** /> **Email** /> **Email history**. 
-    -  This page allows administrators to review all sent emails, including any errors that might have prevented an email from being sent. The **Email history** page will show interactive as well as non-interactive/batch emails. 
-2.  For any emails with an **Email status** of **Failed**, review the error message on the **Failure details** tab and determine if corrective actions should be taken. Some pf these errors are covered later in this topic.  
-
-#### Verify all email accounts have appropriate Send as permissions
-In the Microsoft 365 admin center, verify that all user mail accounts that will be used to send emails have **Send As** and **Send On Behalf Of** permissions for the configured SMTP account. For more information, see [Give mailbox permissions to another user in Microsoft 365](/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user).
-
-#### Verify user mailboxes
-Consider signing in to the affected (or all) user mailboxes to verify that they are valid and can be accessed using sign in.
-
+<table>
+  <tr>
+    <th>Verify email settings and send a test email</th>
+    <td>
+      <ol>
+        <li>Go to <b>System administration > Setup > Email > Email parameters</b>.</li>
+        <li>Verify that SMTP is enabled.</li>
+        <li>Verify the settings of the SMTP mail server.</li>
+        <li>Sign in to the SMTP account in a separate window to make sure that the account and password are correct.</li>
+        <li>Send a test email using <b>System administration > Setup > Email > Email parameters > Test email</b>.</li>
+      </ol>
+    </td>
+  </tr>
+  <tr>
+    <th>Verify that the email batch process is running</th>
+    <td>
+      <ol>
+        <li>Go to <b>System administration > Periodic tasks > Email processing > Batch</b></li>
+        <li>Make sure that the <b>Batch processing</b> option is set to <b>Yes</b>.</li>
+        <li>Review the recurrence of the email process:
+          <ol>
+            <li>Select <b>No end date</b> to adjust all recurrences of the email batch process.</li>
+            <li>Adjust the count as needed.</li>
+          </ol>
+        </li>
+      </ol>
+    </td>
+  </tr>
+  <tr>
+    <th>Review the status of batch emails</th>
+    <td>
+      <ol>
+        <li>Go to <b>System administration > Periodic tasks > Email processing > Batch email sending status</b>.</li>
+        <li>Verify that emails are being sent from the correct account.
+          <ul>
+            <li>If the account is incorrect, you need to adjust settings such as user options, system templates, or organization templates, as needed.</li>
+          </ul>
+        </li>
+        <li>Verify that all email user accounts have been granted permission to <b>Send As</b> for the configured SMTP account (see the section titled <b>Verify all email accounts have appropriate permissions</b>).</li>
+      </ol>
+    </td>
+  </tr>
+  <tr>
+    <th>Review any errors on the <b>Email history</b> page</th>
+    <td>
+      <ol>        
+        <li>Go to <b>System administration > Setup > Email > Email history</b>.
+          <ul>
+            <li>This page allows administrators to review all sent emails, including any errors that might have prevented an email from being sent. The <b>Email history</b> page will show interactive as well as non-interactive/batch emails.</li>
+          </ul>
+        </li>
+        <li>For any emails with an <b>Email status</b> of <b>Failed</b>, review the error message on the <b>Failure details</b> tab and determine if corrective actions should be taken. Some of these errors are covered later in this topic.</li>
+      </ol>
+    </td>
+  </tr>
+  <tr>
+    <th>Verify all email accounts have appropriate Send as permissions</th>
+    <td>In the Microsoft 365 admin center, verify that all user mail accounts that will be used to send emails have <b>Send As</b> and <b>Send On Behalf Of</b> permissions for the configured SMTP account. For more information, see <a href="/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user">Give mailbox permissions to another user in Microsoft 365</a>.</td>
+  </tr>
+  <tr>
+    <th>Verify user mailboxes</th>
+    <td>Consider signing in to the affected (or all) user mailboxes to verify that they are valid and can be accessed using sign in.</td>
+  </tr>
+</table>
+ 
 ### Specific Exchange email issues
 
-#### Issue: (401) Unauthorized or (403) Forbidden error when sending email via Exchange 
+-  ***(401) Unauthorized** or **(403) Forbidden** error when sending email via Exchange*
 
-**Explanation**: This issue may indicate an invalid or improperly set up mailbox in Office 365. To get more information about the specific error, do the following:
+    <table>
+      <tr>
+        <th>Explanation</th>
+        <td>This issue may indicate an invalid or improperly set up mailbox in Office 365</td>
+      </tr>
+      <tr>
+        <th>Fix</th>
+        <td>To resolve this issue, make sure that the specified user exists in Office 365 with appropriate permissions. <br><br>To find the impacted user(s), do the following:
+          <ol>
+            <li>Navigate to the <b>Email history</b> page.</li>
+            <li>Add a filter to the <b>Email status</b> field for <b>Failed</b> emails.</li>
+            <li>Note the value in the <b>Email sender</b> field, as that is the user that Exchange is indicating isn't a valid or properly permissed user in Office 365.</li> 
+          </ol>        
+        </td>
+      </tr>
+    </table>
 
-**Fix**: To resolve this issue, make sure that the specified user exists in Office 365 with appropriate permissions. To find the impacted user(s), do the following: 
+-  ***(404) "Not found"** error when sending email via Exchange*
 
-1.  Navigate to the **Email history** page.
-2.  Add a filter to **Email status** field for **Failed** emails. 
-3.  Note the value in the **Email sender** field, as that is the user that Exchange is indicating isn't a valid or properly permissed user in Office 365. 
-
-#### Issue: (404) "Not found" error when sending email via Exchange 
-
-**Explanation**: This issues indicates that no mailbox exists for the user account in Exchange.
-
-**Fix**: To resolve this issue, make sure that the specified user exists in Office 365 with appropriate permissions or use alternate user accounts with valid Exchange mailboxes. To find the impacted user(s), do the following: 
-
-1.  Navigate to the **Email history** page.
-2.  Add a filter to **Email status** field for **Failed** emails. 
-3.  Note the value in the **Email sender** field, as that is the user that doesn't have a mailbox in Exchange.
+    <table>
+      <tr>
+        <th>Explanation</th>
+        <td>This issues indicates that no mailbox exists for the user account in Exchange.</td>
+      </tr>
+      <tr>
+        <th>Fix</th>
+        <td>To resolve this issue, make sure that the specified user exists in Office 365 with appropriate permissions or use alternate user accounts with valid Exchange mailboxes. <br><br>To find the impacted user(s), do the following: 
+          <ol>
+            <li>Navigate to the <b>Email history</b> page.</li>
+            <li>Add a filter to the <b>Email status</b> field for <b>Failed</b> emails.</li>
+            <li>Note the value in the <b>Email sender</b> field, as that is the user that doesn't have a mailbox in Exchange.</li> 
+          </ol>        
+        </td>
+      </tr>
+    </table>
 
 ### Specific SMTP email issues 
 
 If you continue to experience issues when email is sent via SMTP, you may be running into one of the specific errors below. If not, consider entering the SMTP account information in a tool such as [SMTPer.net](https://www.smtper.net/) to verify that the SMTP server and account are valid and working correctly.
 
-#### Issue: SMTP emails fail to send with "Recipient addresses in single label domains not accepted"
+-  *SMTP emails fail to send with "**Recipient addresses in single label domains not accepted**"*
 
-**Explanation:** Your email failed to send because a recipient is using a single label domain, which is not supported by O365. Single label domains are DNS names that don't contain a suffix, such as .com, .corp, .net, or .org. For example, contoso would be an SLD. However, contoso.com, contoso.net, or contoso.local would not be an SLD.
+    <table>
+      <tr>
+        <th>Explanation</th>
+        <td>Your email failed to send because a recipient is using a single label domain, which is not supported by O365. Single label domains are DNS names that don't contain a suffix, such as .com, .corp, .net, or .org. For example, contoso would be an SLD. However, contoso.com, contoso.net, or contoso.local would not be an SLD.</td>
+      </tr>
+      <tr>
+        <th>Fix</th>
+        <td>Specify alternate addresses for email recipients that are not single label domains.</td>
+      </tr>
+    </table>
 
-**Fix:** Specify alternate addresses for email recipients that are not single label domains.  
+-  *SMTP emails fail to send with "**Mailbox full**"*
 
-#### Issue: SMTP emails fail to send with "Mailbox full"
+    <table>
+      <tr>
+        <th>Explanation</th>
+        <td>An email failed to send because at least one recipient's mailbox is full. See <a href="https://docs.microsoft.com/en-us/exchange/troubleshoot/email-delivery/cannot-send-mail-mepf">Error (554 5.2.2 mailbox full) when sending email to mail-enabled public folders in Office 365</a> for more details.</td>
+      </tr>
+      <tr>
+        <th>Fix</th>
+        <td>Use an alternate address for the recipient or contact the recipient using alternate means before trying again.</td>
+      </tr>
+    </table>
 
-**Explanation:** An email failed to send because at least one recipient's mailbox is full. See [Error (554 5.2.2 mailbox full) when sending email to mail-enabled public folders in Office 365](https://docs.microsoft.com/en-us/exchange/troubleshoot/email-delivery/cannot-send-mail-mepf) for more details. 
+-  *SMTP emails fail to send with "**Authentication unsuccessful, the request did not meet the criteria to be authenticated successfully**"*
 
-**Fix:** Use an alternate address for the recipient or contact the recipient using alternate means before trying again.  
+    <table>
+      <tr>
+        <th>Explanation</th>
+        <td>An email failed to send because the SMTP user account requires additional criteria to be authenticated successfully. This may be because multifactor authentication is configured, which is not currently supported within the Finance and Operations apps.</td>
+      </tr>
+      <tr>
+        <th>Fix</th>
+        <td>Adjust the user account configuration appropriately in Office 365 before trying again. See <a href="https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/fix-issues-with-printers-scanners-and-lob-applications-that-send-email-using-off#error-authentication-unsuccessful">Fix issues with printers, scanners, and LOB applications that send email using Microsoft 365 or Office 365</a> for more details.</td>
+      </tr>
+    </table>
 
-#### Issue: SMTP emails fail to send with "Authentication unsuccessful, the request did not meet the criteria to be authenticated successfully"
+-  *SMTP emails fail to send with "**Authentication unsuccessful, SmtpClientAuthentication is disabled for the Mailbox**"*
 
-**Explanation:** An email failed to send because the SMTP user account requires additional criteria to be authenticated successfully. This may be because multifactor authentication is configured, which is not currently supported within the Finance and Operations apps. 
+    <table>
+      <tr>
+        <th>Explanation</th>
+        <td>An email failed to send because SMTP client authentication is disabled for the SMTP user account.</td>
+      </tr>
+      <tr>
+        <th>Fix</th>
+        <td>Enable SMTP client authentication in Office 365 for the user account before trying again. See <a href="https://aka.ms/smtp_auth_disabled">Enable or disable authenticated client SMTP submission</a> for more details.</td>
+      </tr>
+    </table>
 
-**Fix:** Adjust the user account configuration appropriately in Office 365 before trying again. See [Fix issues with printers, scanners, and LOB applications that send email using Microsoft 365 or Office 365](https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/fix-issues-with-printers-scanners-and-lob-applications-that-send-email-using-off#error-authentication-unsuccessful) for more details. 
+- *SMTP emails fail to send with "**If your SMTP server doesn't support authentication, please clear the SMTP user name and password**"*
 
-#### Issue: SMTP emails fail to send with "Authentication unsuccessful, SmtpClientAuthentication is disabled for the Mailbox"
+    <table>
+      <tr>
+        <th>Explanation</th>
+        <td>This is related to a migration from the .NET SMTP mail client (which is now obsolete) to MailKit per Microsoft recommendations. A result of this migration is a change in behavior regarding the handling of SMTP user name and password in situations where the mail server didn't support authentication. Previously, if a SMTP user name was provided but the server didn't support authentication, the .NET SMTP mail client would ignore the provided user name and password and continue without authentication. This behavior may have lead customers to the false belief they were using an authenticated mail server. With MailKit, if a user name is provided, authentication is required, which will trigger an error for mail servers that don't support authentication and will cause emails to fail to send.</td>
+      </tr>
+      <tr>
+        <th>Fix</th>
+        <td>The user needs to go to the <b>Email parameters</b> page (under <b>System administration > Setup > Email</b>), and clear the <b>User name</b> and <b>Password</b> fields on the <b>SMTP settings</b> tab page.</td>
+      </tr>
+    </table>
 
-**Explanation:** An email failed to send because SMTP client authentication is disabled for the SMTP user account. 
+- *SMTP emails fail to send with "**5.7.57 SMTP**" error or an indication that **you're not authenticated or authentication is required***
 
-**Fix:** Enable SMTP client authentication in Office 365 for the user account before trying again. See [Enable or disable authenticated client SMTP submission](https://aka.ms/smtp_auth_disabled) for more details.
+    <table>
+      <tr>
+        <th>Explanation</th>
+        <td>The mail server is indicating that the SMTP user credentials are invalid.</td>
+      </tr>
+      <tr>
+        <th>Fix</th>
+        <td>Verify that the SMTP user credentials are correct.</td>
+      </tr>
+    </table>
 
-#### Issue: SMTP emails fail to send with "If your SMTP server doesn't support authentication, please clear the SMTP user name and password"
+- *SMTP emails fail to send with "**Microsoft.Dynamics.Ax.Xpp.Security.CryptoEncryptionException: Encryption error occurred with exception**"*
 
-**Issue:** After moving to version 10.0.19/Platform update 39 or later, SMTP emails may fail to send and are accompanied by the following message: "If your SMTP server doesn't support authentication, please clear the SMTP user name and password"
+    <table>
+      <tr>
+        <th>Explanation</th>
+        <td>The SMTP password is encrypted using a key specific to a single environment.  This error typically surfaces when the password can no longer be decrypted after a database migration between environments.</td>
+      </tr>
+      <tr>
+        <th>Fix</th>
+        <td>Clear and reenter the SMTP password on the [SMTP settings tab](#smtp-settings-tab) on the <b>Email parameters</b> page.</td>
+      </tr>
+    </table>
 
-**Explanation:** This is related to a migration from the .NET SMTP mail client (which is now obsolete) to MailKit per Microsoft recommendations. A result of this migration is a change in behavior regarding the handling of SMTP user name and password in situations where the mail server didn't support authentication. Previously, if a SMTP user name was provided but the server didn't support authentication, the .NET SMTP mail client would ignore the provided user name and password and continue without authentication. This behavior may have lead customers to the false belief they were using an authenticated mail server. With MailKit, if a user name is provided, authentication is required, which will trigger an error for mail servers that don't support authentication and will cause emails to fail to send. 
+-  *SMTP emails fail to send with "**Client does not have permissions to send as this sender**"*
 
-**Fix:** The user needs to go to the **Email parameters** page (under **System administration > Setup > Email**), and clear the **User name** and **Password** fields on the **SMTP settings** tab page.
-
-#### Issue: SMTP emails fail to send with "5.7.57 SMTP" error or an indication that you're not authenticated or authentication is required
-
-**Issue:** Emails sent via SMTP fail to send for one of the following reasons: 
--  An "5.5.57 SMTP" exception
--  The user is not authenticated
--  User authentication is required 
-
-**Explanation:** The mail server is indicating that the SMTP user credentials are invalid.   
-
-**Fix:** Verify that the SMTP user credentials are correct.  
-
-#### Issue: SMTP emails fail to send with "Microsoft.Dynamics.Ax.Xpp.Security.CryptoEncryptionException: Encryption error occurred with exception"
-
-**Issue:** Emails sent via SMTP fail to send and trigger the following exception: "Microsoft.Dynamics.Ax.Xpp.Security.CryptoEncryptionException: Encryption error occurred with exception"
-
-**Explanation:** The SMTP password is encrypted using a key specific to a single environment.  This error typically surfaces when the password can no longer be decrypted after a database migration between environments.
-
-**Fix:** Clear and reenter the SMTP password on the [SMTP settings tab](#smtp-settings-tab) on the **Email parameters** page. 
-
-#### Issue: SMTP emails fail to send with "Client does not have permissions to send as this sender"
-
-**Issue:** When sending email using SMTP, some emails may fail to send with the following error: "Client does not have permissions to send as this sender."  
-
-**Explanation:** This issue is usually caused by incorrect setup of the **Send As** permissions for the email account. 
-
-**Fix:** Ensure there are appropriate **Send As** permissions for the email account. For details, see [Verify all email accounts have appropriate Send as permissions](#verify-all-email-accounts-have-appropriate-send-as-permissions).
+    <table>
+      <tr>
+        <th>Explanation</th>
+        <td>This issue is usually caused by incorrect setup of the <b>Send As</b> permissions for the email account.</td>
+      </tr>
+      <tr>
+        <th>Fix</th>
+        <td>Ensure there are appropriate <b>Send As</b> permissions for the email account. For details, see <a href="#verify-all-email-accounts-have-appropriate-send-as-permissions">Verify all email accounts have appropriate Send as permissions</a>.</td>
+      </tr>
+    </table>
 
 ## Frequently asked questions
 
