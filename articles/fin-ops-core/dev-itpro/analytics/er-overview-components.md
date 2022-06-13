@@ -132,21 +132,21 @@ For more information, see [Import a new data model configuration](er-quick-start
 
 ### Draft versions at runtime
 
-You can change your personal user parameters of the ER framework to enable the option that allows you to specify whether the draft version of a particular ER configuration must be used at runtime. Complete the steps in the procedure, [Mark a custom format as runnable](er-quick-start2-customize-report.md#MarkFormatRunnable) to learn how you can make the **Run Draft** option available for your ER configurations.
+In your personal user parameters for the ER framework, you can enable the option that lets you specify whether the draft version of an ER configuration must be used at runtime. For information about how to make the **Run Draft** option available for your ER configurations, see [Mark a custom format as runnable](er-quick-start2-customize-report.md#MarkFormatRunnable).
 
-> [!TIP]
-> Notice that the ER user parameters are company- and user-specific.
+> [!NOTE]
+> The ER user parameters are company-specific and user-specific.
 
-### Draft format version at runtime
+### Draft format versions at runtime
 
-Wen you run an ER solution, the draft versions of the solution's format components are ignored by default. Instead, the only relevant version in that's has a status other than **Draft** is used. Sometimes, you might want to force ER to use the draft version of your ER format configuration at runtime. For example, you can introduce necessary changes in your draft version and decide to do the test run by using the draft version to validate the correctness of your changes. To start using the draft format version, [set](er-quick-start2-customize-report.md#MarkFormatRunnable) the **Run Draft** option of the relevant ER configuration to **Yes**.
+By default, when you run an ER solution, the draft versions of its format components are ignored. Instead, only the relevant version that has a status other than **Draft** is used. Sometimes, you might want to force ER to use the draft version of your ER format configuration at runtime. For example, after you introduce necessary changes in your draft version, you can use that draft version to do the test run. In this way, you can validate the correctness of your changes. To start to use the draft format version, you must [set](er-quick-start2-customize-report.md#MarkFormatRunnable) the **Run Draft** option of the relevant ER configuration to **Yes**.
 
-## Draft model mapping version at runtime
+### Draft model mapping versions at runtime
 
-By default, when you run an ER solution, the draft versions of its model mapping components are always used. Sometimes, you want to force ER to ignore the draft version of your ER model mapping configuration at runtime. In **version 10.0.29 and later**, you can enable the **Always take into consideration the "Run draft" option for ER model mappings** feature to control the model mapping version that is used at runtime. With this feature enabled, the following behavior occurs:
+By default, when you run an ER solution, the draft versions of its model mapping components are always used. Sometimes, you might want to force ER to ignore the draft version of your ER model mapping configuration at runtime. In **version 10.0.29 and later**, you can enable the **Always take into consideration the "Run draft" option for ER model mappings** feature to control the model mapping version that is used at runtime. When this feature is enabled, the following behavior occurs:
 
-- When the **Run Draft** option is set to **No** for a model mapping configuration, the highest non-draft version of this configuration is used at runtime. An exception is thrown when it's not available in the current Finance instance.
-- When the **Run Draft** option is set to **Yes** for a model mapping configuration, the draft version of this configuration is used at runtime.
+- When the **Run Draft** option is set to **No** for a model mapping configuration, the highest non-draft version of that configuration is used at runtime. An exception is thrown if the configuration isn't available in the current Finance instance.
+- When the **Run Draft** option is set to **Yes** for a model mapping configuration, the draft version of that configuration is used at runtime.
 
 ## Component date effectivity
 
