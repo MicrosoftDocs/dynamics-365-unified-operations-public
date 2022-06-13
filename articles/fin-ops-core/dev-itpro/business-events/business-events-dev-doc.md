@@ -135,7 +135,7 @@ The process of implementing an extension of the **BusinessEventsBase** class is 
 5. Implement the **buildContract** method. Note that you need an **EventContract** stub for this step.
 
     ```xpp
-    [Wrappable(true), Replaceable(true)]
+    [Wrappable(false), Replaceable(false)]
     public BusinessEventsContract buildContract()
     {
         return
@@ -143,7 +143,7 @@ The process of implementing an extension of the **BusinessEventsBase** class is 
     }
     ```
 
-    For extensibility, the **buildContract** method must have the **Wrappable(true)** and **Replaceable(true)** attributes. The **buildContract** method is called only when a business event is enabled for a company.
+    The **buildContract** method is called only when a business event is enabled for a company.
 
 Here is the complete implementation of the "Sales order invoice posted" business event.
 
@@ -180,7 +180,7 @@ public class SalesInvoicePostedBusinessEvent extends BusinessEventsBase
     private void new()
     {
     }
-    [Wrappable(true), Replaceable(true)]
+    [Wrappable(false), Replaceable(false)]
     public BusinessEventsContract buildContract()
     {
         return SalesInvoicePostedBusinessEventContract::newFromCustInvoiceJour(custInvoiceJour);
@@ -217,10 +217,10 @@ The process of implementing a business event contract involves extending the **B
     private LegalEntityDataAreaId legalEntity;
     ```
 
-3. Implement a private initialization method.
+3. Implement a protected initialization method.
 
     ```xpp
-    private void initialize(CustInvoiceJour _custInvoiceJour)
+    protected void initialize(CustInvoiceJour _custInvoiceJour)
     {
         invoiceAccount = _custInvoiceJour.InvoiceAccount;
         invoiceId = _custInvoiceJour.InvoiceId;
@@ -233,7 +233,7 @@ The process of implementing a business event contract involves extending the **B
     }
     ```
 
-    The **initialize** method is responsible for setting the private state of the business event contract class, based on data that is provided through the static constructor method.
+    The **initialize** method is responsible for setting the private state of the business event contract class, based on data that is provided through the static constructor method. It should be protected so that a CoC class extension can be used to extend the contract class.
 
 4. Implement a static constructor method.
 
@@ -247,7 +247,7 @@ The process of implementing a business event contract involves extending the **B
     }
     ```
 
-    The static constructor method calls a private **initialize** method to initialize the private class state.
+    The static constructor method calls the **initialize** method to initialize the private class state.
 
 5. Implement **parm** methods to access the contract state.
 
@@ -302,7 +302,7 @@ BusinessEventsContract
         contract.initialize(_custInvoiceJour);
         return contract;
     }
-    private void initialize(CustInvoiceJour _custInvoiceJour)
+    protected void initialize(CustInvoiceJour _custInvoiceJour)
     {
         invoiceAccount = _custInvoiceJour.InvoiceAccount;
         invoiceId = _custInvoiceJour.InvoiceId;
@@ -409,77 +409,37 @@ You might want to publish additional information as part of the payload of a bus
 
 This example shows how to extend the **CustFreeTextInvoicePostedBusinessEventContract** class so that it includes a customer classification. This customer classification is an industry-based custom classification.
 
-#### Step 1: Create an extended business event contract
+#### Step 1: Create an extension class for the business event contract
 
-Create a contract that consists of the standard business event contract plus any additional information that must be included in the payload.
+Create an extension class of the contract class you are extending to add information that must be included in the payload.
 
 ```xpp
-[DataContract]
-public class CustFreeTextInvoicePostedBusinessEventExtendedContract
-extends BusinessEventsContract
+[ExtensionOf(classStr(CustFreeTextInvoicePostedBusinessEventContract))]
+internal final class CustFreeTextInvoicePostedBusinessEventContractMyModel_Extension
 {
-    // standard contract
-    private CustFreeTextInvoicePostedBusinessEventContract
-    custFreeTextInvoicePostedBusinessEventContract;
-    // contract extensions
+    // contract extension state
     private str customerClassification;
 }
 ```
 
-#### Step 2: Create an initialize method
+#### Step 2: Extend the initialize method through CoC
 
-Create an **initialize** method that initializes the value of the private contract.
+Create a CoC extension of the **initialize** method that initializes the value of the private contract.
 
 ```xpp
-private void initialize(CustFreeTextInvoicePostedBusinessEventContract
-_custFreeTextInvoicePostedBusinessEventContract)
+protected void initialize(CustInvoiceJour _custInvoiceJour)
 {
-    custFreeTextInvoicePostedBusinessEventContract =
-    _custFreeTextInvoicePostedBusinessEventContract;
+    next initialize(_custInvoiceJour);
+    
+    customerClassification = 'StandardCustomer';
 }
 ```
-
-#### Step 3: Create a static newFrom method
-
-Create a static **newFrom** method that takes the standard contract as an argument and calls the **initialize** method.
+#### Step 3: Add parm methods for additional fields you want to add to the payload
 
 ```xpp
-public static CustFreeTextInvoicePostedBusinessEventExtendedContract
-newFromCustFreeTextInvoicePostedBusinessEventContract(CustFreeTextInvoicePostedBusinessEventContract
-_custFreeTextInvoicePostedBusinessEventContract)
-{
-    var contract = new CustFreeTextInvoicePostedBusinessEventExtendedContract();
-    contract.initialize(_custFreeTextInvoicePostedBusinessEventContract);
-    return contract;
-}
-```
-
-#### Step 4: Map parm methods
-
-Copy the **parm** methods from the standard data contract, and modify each method so that it gets and sets values in the class's standard contract instance.
-
-```xpp
-[DataMember('InvoiceAccount')]
-public CustInvoiceAccount parmInvoiceAccount(CustInvoiceAccount _invoiceAccount
-= custFreeTextInvoicePostedBusinessEventContract.parmInvoiceAccount())
-{
-    return
-    custFreeTextInvoicePostedBusinessEventContract.parmInvoiceAccount(_invoiceAccount);
-}
-[DataMember('InvoiceId')]
-public CustInvoiceId parmInvoiceId(CustInvoiceId _invoiceId =
-custFreeTextInvoicePostedBusinessEventContract.parmInvoiceId())
-{
-    return custFreeTextInvoicePostedBusinessEventContract.parmInvoiceId(_invoiceId);
-}
-```
-
-#### Step 5: Add parm methods for additional payload data
-
-```xpp
-[DataMember('CustomerClassification')]
-public CustomerClassification parmCustomerClassification(CustomerClassification
-_customerClassification = customerClassification)
+// contract extension data members
+[DataMember('MyModelCustomerClassification')]
+public str parmMyModelCustomerClassification(str _customerClassification = customerClassification)
 {
     customerClassification = _customerClassification;
     return customerClassification;
@@ -489,117 +449,24 @@ _customerClassification = customerClassification)
 Here is the complete implementation of the extended business contract.
 
 ```xpp
-[DataContract]
-public class CustFreeTextInvoicePostedBusinessEventExtendedContract
-extends BusinessEventsContract
+[ExtensionOf(classStr(CustFreeTextInvoicePostedBusinessEventContract))]
+internal final class CustFreeTextInvoicePostedBusinessEventContractMyModel_Extension
 {
-    // standard contract
-    private CustFreeTextInvoicePostedBusinessEventContract
-    custFreeTextInvoicePostedBusinessEventContract;
-    // contract extensions
+    // contract extension private state
     private str customerClassification;
-    public static CustFreeTextInvoicePostedBusinessEventExtendedContract
-    newFromCustFreeTextInvoicePostedBusinessEventContract(CustFreeTextInvoicePostedBusinessEventContract
-    _custFreeTextInvoicePostedBusinessEventContract)
+    protected void initialize(CustInvoiceJour _custInvoiceJour)
     {
-        var contract = new CustFreeTextInvoicePostedBusinessEventExtendedContract();
-        contract.initialize(_custFreeTextInvoicePostedBusinessEventContract);
-        return contract;
+        next initialize(_custInvoiceJour);
+
+        customerClassification = 'StandardCustomer';
     }
-    private void initialize(CustFreeTextInvoicePostedBusinessEventContract
-    _custFreeTextInvoicePostedBusinessEventContract)
-    {
-        custFreeTextInvoicePostedBusinessEventContract =
-        _custFreeTextInvoicePostedBusinessEventContract;
-    }
-    private void new()
-    {
-    }
-    [DataMember('InvoiceAccount')]
-    public CustInvoiceAccount parmInvoiceAccount(CustInvoiceAccount _invoiceAccount
-    = custFreeTextInvoicePostedBusinessEventContract.parmInvoiceAccount())
-    {
-        return
-        custFreeTextInvoicePostedBusinessEventContract.parmInvoiceAccount(_invoiceAccount);
-    }
-    [DataMember('InvoiceId')]
-    public CustInvoiceId parmInvoiceId(CustInvoiceId _invoiceId =
-    custFreeTextInvoicePostedBusinessEventContract.parmInvoiceId())
-    {
-        return custFreeTextInvoicePostedBusinessEventContract.parmInvoiceId(_invoiceId);
-    }
-    [DataMember('InvoiceDate')]
-    public TransDate parmInvoiceDate(TransDate _invoiceDate =
-    custFreeTextInvoicePostedBusinessEventContract.parmInvoiceDate())
-    {
-        return
-        custFreeTextInvoicePostedBusinessEventContract.parmInvoiceDate(_invoiceDate);
-    }
-    [DataMember('InvoiceDueDate')]
-    public DueDate parmInvoiceDueDate(DueDate _invoiceDueDate =
-    custFreeTextInvoicePostedBusinessEventContract.parmInvoiceDueDate())
-    {
-        return
-        custFreeTextInvoicePostedBusinessEventContract.parmInvoiceDueDate(_invoiceDueDate);
-    }
-    [DataMember('InvoiceAmountInAccountingCurrency')]
-    public AmountMST parmInvoiceAmount(AmountMST _invoiceAmount =
-    custFreeTextInvoicePostedBusinessEventContract.parmInvoiceAmount())
-    {
-        return
-        custFreeTextInvoicePostedBusinessEventContract.parmInvoiceAmount(_invoiceAmount);
-    }
-    [DataMember('InvoiceTaxAmount')]
-    public TaxAmount parmInvoiceTaxAmount(TaxAmount _invoiceTaxAmount =
-    custFreeTextInvoicePostedBusinessEventContract.parmInvoiceTaxAmount())
-    {
-        return
-        custFreeTextInvoicePostedBusinessEventContract.parmInvoiceTaxAmount(_invoiceTaxAmount);
-    }
-    [DataMember('LegalEntity')]
-    public LegalEntityDataAreaId parmLegalEntity(LegalEntityDataAreaId _legalEntity
-    = custFreeTextInvoicePostedBusinessEventContract.parmLegalEntity())
-    {
-        return
-        custFreeTextInvoicePostedBusinessEventContract.parmLegalEntity(_legalEntity);
-    }
-    // contract extensions
-    [DataMember('CustomerClassification')]
-    public CustomerClassification parmCustomerClassification(CustomerClassification
-    _customerClassification = customerClassification)
+
+    // contract extension data members
+    [DataMember('MyModelCustomerClassification')]
+    public str parmMyModelCustomerClassification(str _customerClassification = customerClassification)
     {
         customerClassification = _customerClassification;
         return customerClassification;
-    }
-}
-```
-
-#### Step 6: Extend the business event class to wrap the buildContract and getExtendedBusinessEventsContractName methods
-
-Provide a **buildContract** implementation that calls **next** to load the standard business event contract and populates any payload extensions. 
-
-Provide a **getExtendedBusinessEventsContractName** implementation that returns the name of your new extended contract class. This will allow the new contract name and fields to be present in the UI of the Business Events catalog.
-
-Here is the complete class.
-
-```xpp
-[ExtensionOf(classStr(CustFreeTextInvoicePostedBusinessEvent))]
-public final class CustFreeTextInvoicePostedBusinessEvent_Extension
-{
-    public BusinessEventsContract buildContract()
-    {
-        var businessEventContract =
-        CustFreeTextInvoicePostedBusinessEventExtendedContract::newFromCustFreeTextInvoicePostedBusinessEventContract(next
-        buildContract());
-        businessEventContract.parmCustomerClassification(CustomerClassifier::deriveCustomerClassification(businessEventContract.parmInvoiceAccount()));
-        return businessEventContract;
-    }
-    
-    public BusinessEventsContractEDT getExtendedBusinessEventsContractName()
-    {
-        next getExtendedBusinessEventsContractName();
-
-        return classStr(CustFreeTextInvoicePostedBusinessEventExtendedContract);
     }
 }
 ```
