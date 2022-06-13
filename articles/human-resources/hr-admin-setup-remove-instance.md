@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
+>[!NOTE]
+> Starting June 2022, Human Resources evnrionments can only be deployed on the finance and operations app infrastrcuture. For more information, see [Provision Human Resources on the finance and operations infrastrcuture](/hr-admin-setup-provision-fo.md).
+
 This article explains the process of removing a test drive or production environment for Microsoft Dynamics 365 Human Resources.
 
 ## Remove a test drive environment
