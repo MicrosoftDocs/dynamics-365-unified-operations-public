@@ -196,7 +196,7 @@ During RCS setup, complete the following tasks:
 
 When you import the **Indonesian electronic invoice (ID)** feature from the Global repository, all the feature settings are imported. These settings include the configurations and actions of the processing pipeline.
 
-### Create a new version of the Indonesian electronic invoice (ID) feature
+#### Create a new version of the Indonesian electronic invoice (ID) feature
 
 You can create a new feature version by using your configuration provider.
 
@@ -204,7 +204,7 @@ You can create a new feature version by using your configuration provider.
 2. On the **Electronic invoicing features** page, on the **Versions** tab, select **New**.
 
 
-### Update the configuration version
+#### Update the configuration version
 
 1. In the **Globalization features** workspace, select the **Electronic Invoicing** title.
 2. On the **Electronic Invoicing Features** page, on the **Configurations** tab, select **Add** or **Delete** to manage the configuration versions.
@@ -218,11 +218,11 @@ In the list, select a configuration version, and then select **Edit** or **View*
 
 You can review the configuration and customize it as you require. Use the **Format designer** page to edit and view the ER format file configurations. For more information, see [Create electronic document configurations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md).
 
-### Import Invoices communication Dataverse mapping configuration.
+#### Import Invoices communication Dataverse mapping configuration.
 
 To import **Invoices communication Dataverse mapping** configuration go to RCS Home page and click **Electronic reporting**. Then click **Repositoies**, find and import **Invoices communication Dataverse mapping** configuration.
 
-## Create a connected aplication for Dataverse
+#### Create a connected aplication for Dataverse
 - Sign in to your RCS account.
 - In RCS Home page, click **Electronic reporting**. Then click **Connected application** under **Related links** FastTab at the bottom of the page and click **New** to create a new connected application.  Fill in the fields:
 - **Name**: any name of the Dataverse, for example, **UAT Dataverse**
