@@ -2896,6 +2896,8 @@
             href: dev-itpro/cloud-dev-box.md
           - name: Retail SDK build pipeline
             href: dev-itpro/retail-sdk/sdk-build-pipeline.md
+          - name: Set up a Visual Studio 2017 build agent to build MPOS
+            href: dev-itpro/retail-sdk/mpos-build-agent.md
           - name: Run POS samples
             href: dev-itpro/pos-run-samples.md
         - name: Reference
