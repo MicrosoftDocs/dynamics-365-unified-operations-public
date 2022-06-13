@@ -3452,6 +3452,8 @@
             items:
             - name: Not valuable fixed assets (NVFAs) (Russia)
               href: localizations/rus-not-valuable-assets.md
+            - name: Primary forms for NVFA, working clothes, and special riggings (Russia)
+              href: localizations/rus-nvfa.md
             - name: Working clothes/special rigging accounting (Russia)
               href: localizations/rus-working-clothes-instruments-accounting.md
           - name: Integration of fixed assets with Asset management module
