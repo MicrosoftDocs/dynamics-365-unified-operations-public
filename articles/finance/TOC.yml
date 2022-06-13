@@ -3424,6 +3424,8 @@
               href: localizations/rus-register-acquisition.md
             - name: Acquiring fixed assets and putting them into operation
               href: localizations/rus-fixed-asset-acquisition.md
+            - name: Vehicles and realty as fixed assets 
+              href: localizations/rus-vehicles-realty.md
             - name: Calculate depreciation
               href: localizations/rus-depreciation-calculation.md
             - name: Partial fixed asset disassembly (liquidation)
