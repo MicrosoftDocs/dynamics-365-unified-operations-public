@@ -62,8 +62,20 @@ An administrator configures the general settings for vendor collaboration, such 
 
 Before user accounts can be created for an external vendor, you must configure the vendor account so that vendor can use vendor collaboration. On the **Vendors** page, on the **General** tab, set the **Collaboration activation** field. The following options are available:
 
-- **Active (PO is auto-confirmed)** – POs are automatically confirmed if the vendor accepts them without changes.
+- **Active (PO is auto-confirmed)** – POs are automatically confirmed if the vendor accepts them without changes. If you use this option, be sure to schedule the *Confirm accepted purchase orders from vendor collaboration* batch job, which is required in order for confirmations to be processed automatically. See the following section for instructions.
 - **Active (PO is not auto-confirmed)** – Your organization must manually confirm POs after the vendor has accepted them.
+
+### Scheduling the auto-confirmation batch job
+
+If you use the **Active (PO is auto-confirmed)** option for one or more of your vendors (as described in the previous section), then you must schedule the *Confirm accepted purchase orders from vendor collaboration* batch job, which is responsible for processing and confirming your POs. Otherwise, auto confirmations will never occur. Use the following procedure to schedule this job.
+
+1. Go to **Procurement and sourcing \> Purchase orders \> Purchase order confirmation \> Confirm accepted purchase orders from vendor collaboration**.
+1. The **Confirm accepted purchase orders from vendor collaboration** dialog opens. Expand the **Run in the background** FastTab.
+1. Select **Recurrence** to open the **Define recurrence** dialog. Use the setting here to establish the schedule by which the job should run. <!-- KFM: Can we offer any advice? What would be typic? Every minute? Every day? Every year? -->
+1. Select **OK** to apply your schedule and return to the **Confirm accepted purchase orders from vendor collaboration** dialog.
+1. Set additional background options as needed. The dialog provides the usual options for setting up batch jobs in Supply Chain Management.  <!-- KFM: Can we offer any specific advice regarding the settings here as they apply to this specific job or type of job? Are any of the settings here required or recommended for this use case? -->
+
+For more information about batch jobs, see [Batch processing overview](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md).
 
 ### Specifying whether the vendor should see price information
 

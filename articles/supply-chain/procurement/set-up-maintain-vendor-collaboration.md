@@ -143,13 +143,7 @@ Create a workflow of the **Inactivate user request workflow platform** type, and
 
 ## Enable vendor collaboration for a specific vendor
 
-Before you create a user account for someone who will use vendor collaboration, you must set up the vendor so that it can use vendor collaboration. On the **Vendors** page, on the **General** tab, set the **Collaboration activation** field. The following options are available:
-
-- **Active (PO is auto-confirmed)** – Purchase orders are automatically confirmed if the vendor accepts them without requesting changes.
-- **Active (PO is not auto-confirmed)** – Your organization must manually confirm purchase orders after the vendor has accepted them.
-
-> [!NOTE]
-> Procurement professionals in your company can also complete this task.
+Before you create a user account for someone who will use vendor collaboration, you must set up the vendor so that it can use vendor collaboration. For details on how to do this, see [Vendor collaboration with external vendors](vendor-collaboration-work-external-vendors.md).
 
 ## Troubleshoot the provisioning of new vendor collaboration users
 
