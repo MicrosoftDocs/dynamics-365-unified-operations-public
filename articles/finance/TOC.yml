@@ -1976,6 +1976,8 @@
           href: localizations/tasks/br-00066-2-calculate-interest-fines-customer-payments.md
         - name: Set up bank account numbers for Brazil
           href: localizations/latam-bra-bank-account-number-setup-brazil-localization.md
+        - name: Transfer orders
+          href: localizations/latam-bra-about-transfer-orders.md
         - name: Taxes
           items:
           - name: Brazil taxes overview
