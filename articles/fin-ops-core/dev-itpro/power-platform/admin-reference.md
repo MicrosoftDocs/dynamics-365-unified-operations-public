@@ -62,6 +62,9 @@ When updates are available for the virtual entity solution, they can be manually
 
 After the solutions are imported into the Dataverse environment, both environments must be set up to connect to each other. Dataverse will call Finance and Operations apps by using Service-to-Service (S2S) authentication, based on an Azure Active Directory (Azure AD) application. This new Azure AD application represents the single instance of the Dataverse environment. If you have multiple pairs of Dataverse and Finance and Operations apps environments, separate Azure AD applications must be created for each pair to ensure that connections are established between the correct pair of Finance and Operations apps and Microsoft Power Platform environments. 
 
+> [!NOTE]
+> Virtual entities are not supported across tenants. The Microsoft Power Platform environment must be on the same Azure AD tenant as the Finance and Operations apps environment.
+
 ### Register the app in the Azure portal
 
 The following procedure explains how to create the Azure AD application.
