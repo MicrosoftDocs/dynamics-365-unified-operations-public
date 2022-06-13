@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.24
 
 # Deferral posting methods
 
-This article explains the Deferral posting options in **Revenue and expense deferral parameters** in Subscription billing. 
+This article explains the **Deferral posting options** in **Revenue and expense deferral parameters** in Subscription billing. 
 
 On the **Revenue and expense deferral parameters** page, the **Deferral posting options** are **Balance sheet** and **Profit and loss**. This example will help explain the differences and why you may use one method or the other. 
 
@@ -40,13 +40,15 @@ The **Balance sheet** method uses only two accounts, so less setup is involved. 
 Sales invoice 1 totals $3000 and has deferred revenue. These are the distributions when the sales invoice is posted. 
 
 **Balance sheet method**
-| Type | Account |  |  |
+
+| Type | Account | 
 |------|---------|--------|--------|
 | Debit | Accounts receivable | 3000.00 | |
 | Credit | Deferred revenue | | 3000.00 |
 
 **Profit and loss method**
-| Type | Account |  |  |
+
+| Type | Account | 
 |------|---------|--------|--------|
 | Debit | Accounts receivable | 3000.00 | |
 | Debit | Revenue recognition offset | 3000.00 | |
@@ -55,12 +57,13 @@ Sales invoice 1 totals $3000 and has deferred revenue. These are the distributio
 
 Sales invoice 2 doesn't have deferred revenue with a total of $2000. Since it doesn't use deferred revenue these are the distributions. 
 
-| Type | Account |  |  |
+| Type | Account |
 |------|---------|--------|--------|
 | Debit | Accounts receivable | 3000.00 | |
 | Credit | Revenue | | 3000.00 |
 
 **Balance sheet method totals for sales invoice 1 and 2 combined**:
+
 | Account | Debit | Credit |
 |---------|--------|--------|
 | Accounts receivable | 5000.00 | |
