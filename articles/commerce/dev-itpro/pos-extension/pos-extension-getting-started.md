@@ -1,5 +1,5 @@
 ---
-title: Getting started with POS extensions
+title: Get started with POS extensions
 description: This article explains how to create a Point of Sale (POS) extension development environment and get started with POS extensions.
 author: mugunthanm
 ms.date: 04/13/2021
@@ -13,7 +13,7 @@ ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
 ---
 
-# Getting started with POS extensions
+# Get started with POS extensions
 
 [!include [banner](../../includes/banner.md)]
 
