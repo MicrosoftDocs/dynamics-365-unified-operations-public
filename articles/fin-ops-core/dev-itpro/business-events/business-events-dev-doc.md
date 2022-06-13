@@ -448,6 +448,8 @@ public str parmMyModelCustomerClassification(str _customerClassification = custo
 
 Here is the complete implementation of the extended business contract.
 
+Note to follow the [standard naming guidelines for extensions](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/extensibility/naming-guidelines-extensions) when creating your class to avoid collisions with your newly added fields.
+
 ```xpp
 [ExtensionOf(classStr(CustFreeTextInvoicePostedBusinessEventContract))]
 internal final class CustFreeTextInvoicePostedBusinessEventContractMyModel_Extension
