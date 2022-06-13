@@ -2220,6 +2220,8 @@
             href: localizations/emea-ISO20022-file-formats.md
           - name: Import ISO20022 direct debit configuration
             href: localizations/tasks/import-iso20022-direct-debit-configuration.md
+          - name: Prerequisites for ISO 20022 credit transfer format
+            href: localizations/emea-fra-ISO20022-international.md
           - name: Import ISO20022 credit transfer configuration
             href: localizations/tasks/import-iso20022-credit-transfer-configuration.md
           - name: Set up company bank accounts for ISO20022 credit transfers
