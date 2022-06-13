@@ -2130,8 +2130,8 @@
           href: localizations/tasks/create-post-project-invoice-public-sector-customer.md
         - name: EU sales list
           href: localizations/emea-dnk-eu-sales-list.md
-        - name: Import OIOUBL electronic invoicing configurations
-          href: localizations/tasks/import-oioubl-electronic-invoicing-configurations.md
+        - name: Customer electronic invoices in Denmark
+          href: localizations/emea-dnk-e-invoices.md
         - name: Post a free text invoice with a payment slip
           href: localizations/tasks/post-free-text-invoice-payment-slip.md
         - name: Post a project invoice with a payment slip
