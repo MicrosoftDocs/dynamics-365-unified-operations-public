@@ -11,11 +11,6 @@
       "redirect_document_id": "false"
     },
     {
-      "source_path": "articles/commerce/dev-itpro/retail-sdk/mpos-build-agent.md",
-      "redirect_url": "/dynamics365/commerce/retail-modern-pos-device-activation",
-      "redirect_document_id": "false"
-    },
-    {
       "source_path": "articles/commerce/dev-itpro/pos-api-extension.md",
       "redirect_url": "/dynamics365/commerce/dev-itpro/pos-extension/pos-extension-overview",
       "redirect_document_id": "false"
