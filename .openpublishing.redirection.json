@@ -6,6 +6,11 @@
       "redirect_document_id": "false"
     },
     {
+      "source_path": "articles/commerce/dev-itpro/pos-extension/pos-extension-getting-started.md",
+      "redirect_url": "pos-extension-overview",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/commerce/dev-itpro/pos-api-extension.md",
       "redirect_url": "/dynamics365/commerce/dev-itpro/pos-extension/pos-extension-overview",
       "redirect_document_id": "false"
