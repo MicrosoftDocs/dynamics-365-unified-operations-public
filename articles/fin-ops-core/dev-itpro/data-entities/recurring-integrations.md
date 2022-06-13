@@ -85,6 +85,8 @@ The integration REST API uses the same OAuth 2.0 authentication model as the ot
 
 7. Select **OK**, and then select **Yes** in the confirmation message box.
 
+For more information, see [Process and consume data packages in the finance and operations solutions](../lcs-solutions/process-data-packages-lcs-solutions.md).
+
 ## Manage recurring data jobs
 1. In the **System administration** workspace (not the **System administration** module), select the **Data Management IT** workspace.
 2. In the workspace, on the **Recurring data job** tab, select the recurring job to view the details. The **Manage scheduled data jobs** page contains a grid that lists any messages that are waiting in the queue. Therefore, you can monitor messages and the processing status.

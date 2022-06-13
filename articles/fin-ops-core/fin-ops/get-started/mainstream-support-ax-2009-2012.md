@@ -4,7 +4,7 @@
 title: End of mainstream support for Microsoft Dynamics AX 2009, Dynamics AX 2012, Dynamics AX 2012 R2, and Dynamics AX 2012 R3
 description: This article provides details about the end of  mainstream support for Microsoft Dynamics AX 2009, Dynamics AX 2012, Dynamics AX 2012 R2, and Dynamics AX 2012 R3.
 author: sericks007
-ms.date: 05/03/2022
+ms.date: 06/13/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 8.1
 
 Mainstream support for Dynamics AX 2009 Service Pack 1 (SP1), Dynamics AX 2012, and Dynamics AX 2012 R2 ended on October 9, 2018. Security hotfixes were provided for those three versions through the extended support period, which ended on April 12, 2022. For more information, see [Microsoft Lifecycle Policy](/lifecycle/products/?terms=Dynamics%20AX).
 
-Mainstream support for Dynamics AX 2012 R3 ended on October 12, 2021.  After that date, only security hotfixes will continue to be provided through the extended support period that continues until January 10, 2023.  For more information, see [Microsoft Lifecycle Policy](/lifecycle/products/?terms=Dynamics%20AX).
+Mainstream support for Dynamics AX 2012 R3 ended on October 12, 2021.  Only security hotfixes will continue to be provided through the extended support period that continues until January 10, 2023.  For more information, see [Microsoft Lifecycle Policy](/lifecycle/products/?terms=Dynamics%20AX).
 
 Customers are advised to upgrade to the latest version of Finance and Operations apps, such as Dynamics 365 Finance, Supply Chain Management, Commerce, and Project Operations:
 
