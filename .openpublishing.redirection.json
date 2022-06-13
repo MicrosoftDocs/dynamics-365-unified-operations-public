@@ -16,6 +16,11 @@
       "redirect_document_id": "false"
     },
     {
+      "source_path": "articles/commerce/define-maintain-retail-channels.md",
+      "redirect_url": "channels-overview",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/finance/localizations/e-invoicing-setup.md",
       "redirect_url": "e-invoicing-working-globalization-features",
       "redirect_document_id": "false"
