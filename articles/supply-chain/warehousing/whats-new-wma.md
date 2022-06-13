@@ -26,7 +26,7 @@ This version introduces the following new features, fixes, and improvements:
 - Increased performance.
 - Increased stability.
 - Improved the **Inquiry** page to support longer texts in subheaders.
-- Introduced the ability to immediately cancel a flow with a single tap or click (when "Cancel" is the only action available under "More actions").
+- Introduced the ability to immediately cancel a flow with a single tap or click (when **Cancel** is the only action available under **More actions**).
 - Fixed an issue where focus could sometimes be lost between entry controls on the **Edit connection** page and custom pages.
 - Fixed an issue where buttons could sometimes become irresponsive and remain shown as selected when included in a scrolling view.
 - Fixed an issue where the wrong layout could sometimes be used on the main page.
