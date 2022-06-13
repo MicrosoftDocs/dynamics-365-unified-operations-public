@@ -123,7 +123,7 @@ An **LCS shared library** repository provides access to the list of configuratio
 
 An **LCS project** repository provides access to the list of configurations of a specific LCS project (LCS project assets library) that was selected when the repository was registered. ER lets you upload shared configurations from the current instance to a specific **LCS project** repository. You can also import configurations from an **LCS project** repository into the current instance of your Finance and Operations apps.
 
-A **File system** repository provides access to the list of configurations that are located as xml files in the specific folder of the local file system of the machine where the AOS service is hosted. Required folder is selected at the repository registration stage. You can import configurations from a **File system** repository into the current instance. 
+A **File system** repository provides access to the list of configurations that are located as XML files in the specific folder of the local file system of the machine where the AOS service is hosted. The required folder is selected at the repository registration stage. You can import configurations from a **File system** repository into the current instance. 
 
 Note that this repository type is accessible in the following environments:
 
@@ -140,7 +140,7 @@ A **Global repository** repository provides access to the list of configurations
 
 For more information, see [Import Electronic reporting (ER) configurations from Global repository of Configuration service](./er-download-configurations-global-repo.md).
 
-An **Operations resources** repository provides access to the list of configurations that Microsoft, as an ER configuration provider, initially releases as part of the application solution. These configurations can be imported into the current instance and used for electronic reporting or playing sample task guides. They can also be used for additional localizations and customizations. Note that the latest versions provided by Microsoft ER configurations must be imported from the LCS Shared asset library by using corresponding the ER repository.
+An **Operations resources** repository provides access to the list of configurations that Microsoft, as an ER configuration provider, initially releases as part of the application solution. These configurations can be imported into the current instance and used for electronic reporting or playing sample task guides. They can also be used for additional localizations and customizations. Note that the latest versions provided by Microsoft ER configurations must be imported from the LCS Shared asset library by using the corresponding ER repository.
 
 Required **LCS project**, **File system**, and **Regulatory Configuration Services (RCS)** repositories can be registered individually for each configuration provider of the current instance. Each repository can be dedicated to a specific configuration provider.
 
