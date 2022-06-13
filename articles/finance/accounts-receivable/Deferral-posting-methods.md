@@ -50,9 +50,8 @@ The following are the distributions when the sales invoice is posted:
 
 **Profit and loss method**
 
-| Type | Account | 
-
-|------|---------|--------|--------|
+| Type | Account | Amount  |
+|--------------|--------------|---------------------------|--------------|
 | Debit | Accounts receivable | 3000.00 | |
 | Debit | Revenue recognition offset | 3000.00 | |
 | Credit | Deferred revenue | | 3000.00 |
@@ -60,17 +59,15 @@ The following are the distributions when the sales invoice is posted:
 
 Sales invoice 2 doesn't have deferred revenue with a total of $2000.   
 
-| Type | Account |
-
-|------|---------|--------|--------|
-| Debit | Accounts receivable | 3000.00 | |
-| Credit | Revenue | | 3000.00 |
+| Type | Account | Amount |
+|--------------|--------------|---------------------------|
+| Debit | Accounts receivable | 3000.00 | 
+| Credit | Revenue | 3000 |
 
 **Balance sheet method totals for sales invoice 1 and 2 combined**:
 
 | Account | Debit | Credit |
-
-|---------|--------|--------|
+|--------------|--------------|---------------------------|
 | Accounts receivable | 5000.00 | |
 | Revenue | | 2000.00 |
 | Deferred revenue | | 3000.00 |
@@ -80,8 +77,7 @@ When using the **Balance sheet** method, it is not as easy to see the gross reve
 **Profit and loss method totals for sales invoice 1 and 2 combined**:
 
 | Account | Debit | Credit |
-
-|---------|--------|--------|
+|--------------|--------------|-------------------|
 | Accounts receivable | 5000.00 | |
 | Revenue | | 5000.00 |
 | Revenue offset | 3000.00 | |
