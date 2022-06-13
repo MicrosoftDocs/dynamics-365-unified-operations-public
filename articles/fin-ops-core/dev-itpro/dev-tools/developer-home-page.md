@@ -2,7 +2,7 @@
 title: Develop and customize home page
 description: This article provides links to topics about development.
 author: RobinARH
-ms.date: 06/13/202s
+ms.date: 06/13/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
