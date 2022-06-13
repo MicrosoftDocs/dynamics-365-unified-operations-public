@@ -43,14 +43,14 @@ The following are the distributions when the sales invoice is posted:
 
 **Balance sheet method**
 
-| Type | Account | Amount |
+| Type | Account | 
 |--------------|--------------|---------------------------|
 | Debit | Accounts receivable | 3000.00 | |
 | Credit | Deferred revenue | | 3000.00 |
 
 **Profit and loss method**
 
-| Type | Account | Amount |
+| Type | Account | 
 |--------------|--------------|---------------------------|
 | Debit | Accounts receivable | 3000.00 | |
 | Debit | Revenue recognition offset | 3000.00 | |
