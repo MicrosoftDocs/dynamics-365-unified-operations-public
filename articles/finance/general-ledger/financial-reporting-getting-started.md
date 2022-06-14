@@ -33,9 +33,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article describes where to access Financial reporting and how to use the financial reporting capabilities. It also includes a description of the default financial reports that are provided.
 
-## Accessing financial reporting
+## Enabling Financial Reporting
+To begin using the financial reporting service for your organization, a Lifecycle Services (LCS) administrator must enable this service in the LCS portal for your organization. If Financial Reporting has not been provisioned for your environment,  please contact your LCS administrator in order to enable the service. 
 
-You can find the **Financial reporting** menu in the following locations:
+## Accessing Financial Reporting
+
+You can find the **Financial Reporting** menu in the following locations:
 
 - **General Ledger** &gt; **Inquiries and reports**
 - **Budgeting** &gt; **Inquires and reports** &gt; **Basic budgeting**
@@ -52,7 +55,7 @@ To create and generate financial reports for a legal entity, you must set up the
 - Post a transaction to at least one account
 - MainAccount is listed in the **Selected** column on the **Financial reporting setup** page (**General ledger > Ledger setup > Financial reporting setup**)
 
-## Granting security access to Financial reporting
+## Granting security access to Financial Reporting
 
 The financial reporting functions are available to users who have the appropriate privileges and duties assigned to them through their security roles. The following sections list these privileges and duties, together with the associated roles.
 
