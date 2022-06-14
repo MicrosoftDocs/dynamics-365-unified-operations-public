@@ -338,6 +338,7 @@ When you select *Azure Machine Learning Service* as your forecast generation str
 - [Demand forecasting overview](introduction-demand-forecasting.md)
 - [Generate a statistical baseline forecast](generate-statistical-baseline-forecast.md)
 - [Make manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md)
+- [Demand Forecasting with Azure Machine Learning Series](https://aka.ms/DemandForecastingwithAzureMachineLearningSeries)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
