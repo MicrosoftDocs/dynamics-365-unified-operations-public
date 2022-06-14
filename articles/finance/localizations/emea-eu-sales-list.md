@@ -168,24 +168,21 @@ When you've completed the reporting process for a specific period (for example, 
 
 | Country          | Link      |
 |------------------|-----------|
-| Austria          | [EU Sales list for Austria](emea-aut-eu-sales-list.md)| [EU sales list for Belgium](emea-bel-eu-sales-list.md)|
-[EU Sales list for Czech Republic](emea-cze-eu-sales-list.md)|
-[EU Sales list for Denmark](emea-dnk-eu-sales-list.md)|
-[EU Sales list for Estonia](emea-est-eu-sales-list.md)|
-[EU Sales list for Estonia](emea-est-eu-sales-list.md)|
-[EU Sales list for Finland](emea-fin-eu-sales-list.md)|
-[EU Sales list for France](emea-fra-eu-sales-list.md)|
-[EU Sales list for Germany](emea-deu-eu-sales-list.md)|
-[EU Sales list for Hungary](emea-hun-eu-sales-list.md)|
-[EU Sales list for Latvia](emea-lva-eu-sales-list.md)|
-[EU Sales list for Lithuania](emea-ltu-eu-sales-list.md)|
-[EU sales list for Netherlands](emea-nl-eu-sales-list.md)|
-[EU Sales list for Poland](emea-pol-eu-sales-list.md)|
-[EU sales list for Spain (Report 349)](emea-esp-sales-list.md)|
-[EU Sales list for Sweden](emea-swe-eu-sales-list.md)|
-[EU Sales list for UK (Northern Ireland)](emea-uk-eu-sales-list.md)|
-
-| Belgium          |        
+| Austria          | [EU Sales list for Austria](emea-aut-eu-sales-list.md)| | Austria          |[EU sales list for Belgium](emea-bel-eu-sales-list.md)|
+| Czech Republic          |[EU Sales list for Czech Republic](emea-cze-eu-sales-list.md)|
+| Denmark          |[EU Sales list for Denmark](emea-dnk-eu-sales-list.md)|
+| Estonia          |[EU Sales list for Estonia](emea-est-eu-sales-list.md)|
+| Finland          |[EU Sales list for Finland](emea-fin-eu-sales-list.md)|
+| France          |[EU Sales list for France](emea-fra-eu-sales-list.md)|
+| Germany          |[EU Sales list for Germany](emea-deu-eu-sales-list.md)|
+| Hungary          |[EU Sales list for Hungary](emea-hun-eu-sales-list.md)|
+| Latvia          |[EU Sales list for Latvia](emea-lva-eu-sales-list.md)|
+| Lithuania          |[EU Sales list for Lithuania](emea-ltu-eu-sales-list.md)|
+| Netherlands          |[EU sales list for Netherlands](emea-nl-eu-sales-list.md)|
+| Poland          |[EU Sales list for Poland](emea-pol-eu-sales-list.md)|
+| Spain          |[EU sales list for Spain (Report 349)](emea-esp-sales-list.md)|
+| Sweden          |[EU Sales list for Sweden](emea-swe-eu-sales-list.md)|
+| UK (Northern Ireland)          |[EU Sales list for UK (Northern Ireland)](emea-uk-eu-sales-list.md)|
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
