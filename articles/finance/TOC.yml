@@ -462,7 +462,7 @@
           items:
           - name: Set up revenue and expense deferrals
             href: accounts-receivable/sb-deferrals.md
-            name: Deferral posting method example
+          - name: Deferral posting method example
             href: accounts-receivable/Deferral-posting-methods.md
           - name: Create deferral schedules
             href: accounts-receivable/sb-deferrals-schedules.md
