@@ -4,7 +4,7 @@
 title: Configure Dataverse virtual entities
 description: This article explains how to configure virtual entities for Finance and Operations apps in Microsoft Dataverse.
 author: Sunil-Garg
-ms.date: 12/10/2021
+ms.date: 06/14/2022
 ms.topic: article
 ms.prod:
 ms.technology: 
