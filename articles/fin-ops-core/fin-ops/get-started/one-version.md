@@ -171,11 +171,11 @@ Automatic updates for the production environment and all additional sandbox envi
  
 The default sandbox environment update will be cancelled. 
 
-### What if the default sandbox environment is manually updated to a higher version than the automatic update version?
+### What if the default sandbox environment is manually updated to a newer version than the automatic update version?
 
 Automatic updates for the default sandbox environment, production environment, and all additional sandbox environments will be canceled. 
 
-### What if the default sandbox environment is manually updated to a lower version than the automatic update version? 
+### What if the default sandbox environment is manually updated to an older version than the automatic update version? 
  
 The default sandbox environment, production environment, and all additional sandbox environments will be updated to the current N version.
 
