@@ -165,10 +165,27 @@ You can generate an **EU Sales list** report by using the **Reporting** function
 When you've completed the reporting process for a specific period (for example, when tax authorities have accepted the **EU Sales list** report), you can mark the ESL records that are included on the report for the period by setting the **Reporting status** value to **Closed**. To set this status, use the **Mark as closed** function on the **EU Sales list** page. If you revert the closing of the period, you can mark ESL records by setting the **Reporting status** value to **Included**. These records can then be included on an **EU Sales list** report again. To set this status, use the **Mark as** **included** function on the **EU Sales list** page.
 
 ## List of country-specific topics
-    | Country          | Link      |
-    |------------------|-----------|
-    | Austria          |       |
-    | Austria          |       |
+
+| Country          | Link      |
+|------------------|-----------|
+| Austria          | [EU Sales list for Austria](emea-aut-eu-sales-list.md)| [EU sales list for Belgium](emea-bel-eu-sales-list.md)|
+[EU Sales list for Czech Republic](emea-cze-eu-sales-list.md)|
+[EU Sales list for Denmark](emea-dnk-eu-sales-list.md)|
+[EU Sales list for Estonia](emea-est-eu-sales-list.md)|
+[EU Sales list for Estonia](emea-est-eu-sales-list.md)|
+[EU Sales list for Finland](emea-fin-eu-sales-list.md)|
+[EU Sales list for France](emea-fra-eu-sales-list.md)|
+[EU Sales list for Germany](emea-deu-eu-sales-list.md)|
+[EU Sales list for Hungary](emea-hun-eu-sales-list.md)|
+[EU Sales list for Latvia](emea-lva-eu-sales-list.md)|
+[EU Sales list for Lithuania](emea-ltu-eu-sales-list.md)|
+[EU sales list for Netherlands](emea-nl-eu-sales-list.md)|
+[EU Sales list for Poland](emea-pol-eu-sales-list.md)|
+[EU sales list for Spain (Report 349)](emea-esp-sales-list.md)|
+[EU Sales list for Sweden](emea-swe-eu-sales-list.md)|
+[EU Sales list for UK (Northern Ireland)](emea-uk-eu-sales-list.md)|
+
+| Belgium          |        
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
