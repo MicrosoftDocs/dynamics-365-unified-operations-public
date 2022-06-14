@@ -1,5 +1,6 @@
 {
-  "redirections": [    {
+  "redirections": [
+    {
       "source_path": "articles/finance/localizations/can-set-up-gst-hst-internet-file-transfer.md",
       "redirect_url": "can-gst-hst-internet-file-transfer",
       "redirect_document_id": "false"
@@ -31,7 +32,7 @@
     },
     {
       "source_path": "articles/finance/localizations/emea-aut-vat-statement-details.md",
-      "redirect_url": "localizations/emea-aut-vat-declaration-austria",
+      "redirect_url": "emea-aut-vat-declaration-austria",
       "redirect_document_id": "false"
     },
     {
