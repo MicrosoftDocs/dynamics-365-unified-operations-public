@@ -44,13 +44,12 @@ want to consider making any changes to the **HcmPersonGender** as well. For exam
 
 ## HcmPersonGenderTranformUtil (Class)
 A new class was created to allow for translation between the two base enumerators. In this class there are two methods: **convertGenderToHcmPersonGender** and 
-**convertHcmPersonGenderToGender**. You'll want to create an extension or **Chain of Command** class and extend both methods to map new values that are added to 
-either base enumeration.
+**convertHcmPersonGenderToGender**. You'll want to create an extension using the **Chain of Command** class or **Event Handlers** and extend both methods to map new values that are added to either base enumeration.
 
 ## PayrollStateWageTaxPrepDP (Class)
-The **PayrollStateWageTaxPrepDP** is the data provider class for the **Payroll State Wage Tax Prep** SSRS report. For the United States, there are three values available: **Male**, **Female**, and **Unspecified**. In the **populatePayrollStateWageTaxPrepTmp** method, there's a switch statement to map the value of the **HcmPersonGender** enum to one of three fields: **IsMale**, **IsFemale**, **IsUnspecifiedGender**. The default value for the switch statement is **IsUnspecifiedGender**. If you add any values to the **HcmPersonGender** to map differently, you would need to create an extension or **Chain of Command** extension over the **populatePayrollStateWageTaxPrepTmp** method to change the value as needed.
+The **PayrollStateWageTaxPrepDP** is the data provider class for the **Payroll State Wage Tax Prep** SSRS report. For the United States, there are three values available: **Male**, **Female**, and **Unspecified**. In the **populatePayrollStateWageTaxPrepTmp** method, there's a switch statement to map the value of the **HcmPersonGender** enum to one of three fields: **IsMale**, **IsFemale**, **IsUnspecifiedGender**. The default value for the switch statement is **IsUnspecifiedGender**. If you add any values to the **HcmPersonGender** to map differently, you would need to create an extension using the **Chain of Command** extension over the **populatePayrollStateWageTaxPrepTmp** method to change the value as needed.
 
 ## smmOutlookSync_Contact (Class)
 This integration class ties values to/from **Outlook** and **Contact persons**. **Outlook** supports three values: **Male**, **Female**, **Unspecified**. The class has 
 two methods to help map **Genders** to **OutlookGenders**. The default is **NonSpecific/UnSpecified**. If you create additional values for the **Gender** enum, you'll 
-want to **Create extension** or **Chain of Command** over both methods and map as needed. 
+want to create an extension using the **Chain of Command** class over both methods and map as needed. 
