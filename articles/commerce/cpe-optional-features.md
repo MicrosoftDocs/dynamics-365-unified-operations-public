@@ -46,7 +46,7 @@ If you want to demo the transactional email features, the following prerequisite
 > Before you can complete this procedure, you must complete the steps in [Set up your site in Commerce](cpe-post-provisioning.md#set-up-your-e-commerce-sites).
 
 1. Sign in to the Commerce site builder by using the URL you made a note of when you initialized e-Commerce during provisioning (see [Initialize e-Commerce](provisioning-guide.md#initialize-e-commerce)).
-1. Open the **Fabrikam**, **Adventure Works**, or **Adventure Works Business** site you want to work with.
+1. Open the **Fabrikam**, **Adventure Works**, or **Adventure Works Business** site that you want to work with.
 1. On the menu on the left, select **Media Library**.
 1. Select any single image asset.
 1. In the property inspector on the right, find the **Public URL** property. The value is a URL. Here is an example:
