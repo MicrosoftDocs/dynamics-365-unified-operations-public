@@ -33,7 +33,7 @@ This article explains how to configure buy online, pickup in store (BOPIS) in a 
 
 ## Prerequisite
 
-Complete the procedures in this article only after your Commerce evaluation environment has been provisioned and configured. For information about how to provision and configure your environment, see [Provision a Dynamics 365 Commerce sandbox environment](provisioning-guide.md) and [Configure a Dynamics 365 Commerce sandbox environment](./cpe-post-provisioning.md).
+Complete the procedures in this article only after your Commerce sandbox environment has been provisioned and configured. For information about how to provision and configure your environment, see [Provision a Dynamics 365 Commerce sandbox environment](provisioning-guide.md) and [Configure a Dynamics 365 Commerce sandbox environment](./cpe-post-provisioning.md).
 
 After your Commerce environment has been provisioned and configured end to end, you can use this article to enable BOPIS scenarios.
 
