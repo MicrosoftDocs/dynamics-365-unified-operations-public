@@ -1212,6 +1212,8 @@
         href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/dynamics365/finance/toc.json
       - name: Financial report components
         href: ../fin-ops-core/dev-itpro/analytics/financial-report-components.md?toc=/dynamics365/finance/toc.json
+      - name: View and design financial reports
+        href: ../fin-ops-core/dev-itpro/analytics/design-financial-reports.md
       - name: Currency capabilities in financial reporting
         href: general-ledger/financial-reporting-currency-capability.md
       - name: Retained earnings calculation in Financial reporting
