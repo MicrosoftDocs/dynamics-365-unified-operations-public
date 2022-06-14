@@ -74,22 +74,20 @@ Follow these steps to install the add-in so that you can use Global Inventory Ac
 1. Go to **Full details**.
 1. Go to **Power Platform Integration**, and select **Setup**.
 1. In the **Power platform environment setup** dialog box, select the checkbox, and then select **Setup**. Typically, setup takes between 60 and 90 minutes.
-1. After setup of the Microsoft Power Platform environment is completed, sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) to install the **Global Inventory Accounting** add-in by doing the following steps:
+1. After the setup of the Microsoft Power Platform environment is complete, sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and then install the Global Inventory Accounting add-in by doing the following steps:
    - Select the environment where you want to install the add-in.
    - Select **Dynamics 365 apps**.
    - Select **Install App**.
    - Select **Dynamics 365 Global Inventory Accounting**.
-   - Click **Next** to install.
-1. Go back to LCS environment, on the **Environment add-ins** FastTab, select **Install a new add-in**.
+   - Select **Next** to install.
+1. Go back to LCS environment. On the **Environment add-ins** FastTab, select **Install a new add-in**.
 1. Select **Global inventory accounting**.
 1. Follow the installation guide, and agree to the terms and conditions.
 1. Select **Install**.
 1. On the **Environment add-ins** FastTab, you should see that Global Inventory Accounting is being installed. After a few minutes, the status should change from *Installing* to *Installed*. (You might have to refresh the page to see this change.) At that point, Global Inventory Accounting is ready to use.
-
-Note: If the default language of your Dataverse installation isn't English, follow these steps.
-
-1. Go to **Advanced Setting \> Administration \> Languages**.
-1. Select *English* (*LanguageCode=1033*), and then select **Apply**.
+1. If the default language of your Dataverse installation isn't English, follow these steps:
+    1. Go to **Advanced Setting \> Administration \> Languages**.
+    1. Select *English* (*LanguageCode=1033*), and then select **Apply**.
 
 ## Set up the integration
 
