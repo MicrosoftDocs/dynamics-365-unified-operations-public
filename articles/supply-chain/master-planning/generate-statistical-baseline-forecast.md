@@ -81,5 +81,4 @@ If the forecast is not generated for a big set of items, but, for example, for o
 
 - [Demand Forecasting with Azure Machine Learning Series](https://aka.ms/DemandForecastingwithAzureMachineLearningSeries)
 
-
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
