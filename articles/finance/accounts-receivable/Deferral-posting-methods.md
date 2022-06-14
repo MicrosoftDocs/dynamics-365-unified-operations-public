@@ -33,9 +33,7 @@ This article describes the differences between the deferral posting methods for 
 
 On the **Revenue and expense deferral parameters** page, the options for deferral posting methods are **Balance sheet** and **Profit and loss**. The example in this article will help explain the differences between the two methods and the reasons why you might use one method or the other.
 
-The **Balance sheet** method uses only two accounts. Therefore, less setup is involved. The **Profit and loss** method has two additional accounts, **Initial recognition** and **Recognition offset**, for revenue, discounts, and costs, depending on the transaction type. These accounts are set up on the **Deferral defaults** page (**Subscription billing \> Revenue and expense deferrals \> Setup**).
-
-The example that follows is focused on deferred revenue. However, the same concept can be applied to deferred discounts and deferred costs.
+The **Balance sheet** method uses only two accounts. Therefore, less setup is involved. The **Profit and loss** method has two additional accounts, **Initial recognition** and **Recognition offset**, for revenue, discounts, and costs, depending on the transaction type. These accounts are set up on the **Deferral defaults** page (**Subscription billing \> Revenue and expense deferrals \> Setup**). Although the example is focused on deferred revenue, the same concept can be applied to deferred discounts and deferred costs.
 
 ## Example
 
